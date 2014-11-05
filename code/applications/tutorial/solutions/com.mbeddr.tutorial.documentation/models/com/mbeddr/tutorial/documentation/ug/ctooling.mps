@@ -851,7 +851,42 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030800760131" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". It is split into three parts:\n" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801116516" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801116517" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116518" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="BuildConfiguration" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116515" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is responsible for generation of the " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801116538" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801116539" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116540" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Makefile" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116537" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and holds paramerters for the various parts of mbeddr generators.\n" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="6002249030801130350" nodeInfo="ng">
+        <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+        <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="6002249030801130351" nodeInfo="ng">
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6002249030801130533" nodeInfo="ng">
+            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.5777244129531618669" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6002249030801131360" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801131361" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801131362" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="It is split into three sections:" />
           </node>
         </node>
       </node>
@@ -884,15 +919,253 @@
           </node>
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="6002249030800760277" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
-      </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6002249030800760365" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030800760366" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030800760367" nodeInfo="ng" />
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030800760367" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="In this section a platform can be referenced. A platform specifies the used compiler and the options passed to the compiler. By default mbeddr ships with two predefined platforms " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801116411" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801116412" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116413" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Desktop" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116414" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801116425" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801116426" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116427" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Nothing" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116428" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801116447" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801116448" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116449" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Desktop" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116450" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" platform will use GCC to compile the C code and is recomended for trying out mbeddr on you PC. The " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801116477" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801116478" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116479" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Nothing" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116480" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" platform, as the name implies, does nothing. It does not compile anything and does not generate a " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801116567" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801116568" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116569" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Makefile" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116570" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". It is possible to define additional platforms for other compiler toolchains in the settings: " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="6002249030801116613" nodeInfo="ng">
+            <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801116614" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116615" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="bild" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116616" nodeInfo="ng" />
         </node>
         <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="6002249030800760368" nodeInfo="ng">
           <property name="text" nameId="2c95.5185579450379273119" value="Platform" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6002249030801116784" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801116785" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116786" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801117762" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801117763" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801117764" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Configuration Items" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801117765" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" sections configures the generators of mbeddr. For example the " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801128669" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801128670" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801128671" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="reporting" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801128672" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" item configures what the " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801129081" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801129082" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801129083" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="report" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801129084" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Statement should be gernerated to. If it is set to " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801129427" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801129428" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801129429" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="printf" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801129430" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" the generator will create " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801129465" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801129466" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801129467" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="printf" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801129468" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" statements for them. There are various configuration items for generators in mbeddr. These configuration items are discussed latter in the user guide." />
+          </node>
+        </node>
+        <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="6002249030801116787" nodeInfo="ng">
+          <property name="text" nameId="2c95.5185579450379273119" value="Configuration Items" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="6002249030801129260" nodeInfo="ng">
+        <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+        <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+        <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="6002249030801129261" nodeInfo="ng">
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6002249030801129413" nodeInfo="ng">
+            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.5777244129531618669" />
+          </node>
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6002249030801129421" nodeInfo="ng">
+            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.2286331641389332124" resolveInfo="reporting" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6002249030801130168" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801130169" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801130170" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The last section is " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801131967" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801131968" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801131969" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Binaries" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801131970" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is configures with mbeddr modules are compiled as a single compilation unit. By default it can be either " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801131981" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801131982" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801131983" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Executable" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801131984" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" or " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801132003" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801132004" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801132005" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Library" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801132006" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The first one tells the " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801132033" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801132034" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801132035" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Makefile" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801132036" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to create a ELF binary the later one just creates a linkable that can be used in further compilation. An " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801132536" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801132537" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801132538" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Executable" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801132535" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" can also be marked as a test. This way it will be included in a target called " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801132581" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801132582" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801132583" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="test" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801132584" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" inside the resulting makefile. If the tests should be run on the command line " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="6002249030801132957" nodeInfo="ng">
+            <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801132958" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801132959" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="ref" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801132960" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" this flag has to be true. mbeddr will also check if all the moduls that are used in the code that should be compiled as a single compilation unit are included in the " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801133019" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801133020" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801133021" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Binary" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801133022" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". If not mbeddr will prevent you from generating a broken " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801133089" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801133090" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801133091" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Makefile" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801133092" nodeInfo="ng" />
+        </node>
+        <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="6002249030801130171" nodeInfo="ng">
+          <property name="text" nameId="2c95.5185579450379273119" value="Binaries" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="6002249030801132294" nodeInfo="ng">
+        <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+        <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="6002249030801132295" nodeInfo="ng">
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6002249030801132521" nodeInfo="ng">
+            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.5777244129531618669" />
+          </node>
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6002249030801132529" nodeInfo="ng">
+            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.5777244129531800781" resolveInfo="HelloWorld" />
+          </node>
         </node>
       </node>
     </node>
