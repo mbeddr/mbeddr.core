@@ -1868,7 +1868,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2805811593282190301" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593282190302" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593282190303" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="A trace is a pointer from some implementation artifact to one or more requirement " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="A trace is a pointer from some implementation artifact to one or more requirements " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.FootnoteWord" typeId="2c95.2728443031450669962" id="2805811593282191984" nodeInfo="ng">
             <node role="text" roleId="2c95.2728443031450670151" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593282191985" nodeInfo="ng">
@@ -2071,7 +2071,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4424988308477167231" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4424988308477167232" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4424988308477167233" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To attach a trace to any given requirement, the requirements module that contains the target requirement must be imported to the client module (using the regular module imports). You can then use the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To attach a trace to any given requirement, the requirements module, that contains the target requirement, must be imported to the client module (using the regular module imports). You can then use the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="4424988308477169006" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4424988308477169009" nodeInfo="ng">
@@ -2091,7 +2091,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4424988308477169019" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" trace kind will be used, and you can then use regular code completion to select a target requirement. Note that if you use the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" trace kind will be used and you can then use regular code completion to select a target requirement. Note that if you use the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4424988308477169029" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4424988308477169030" nodeInfo="ng">
@@ -2281,6 +2281,41 @@
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="4424988308481648988" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3231021218602645813" resolveInfo="C_Asssessments" />
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="909032631832417434" nodeInfo="ng">
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="909032631832417435" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 5, 2014 12:33:53 PM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="ReadOnlyModelAccessor_7loawg_a" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="2805811593282964052" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="909032631832417436" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="909032631832417437" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Can't find that. And I am lazy. A picture would be nice." />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="909032631832510687" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 5, 2014 12:48:32 PM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word0" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="2805811593284570451" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="909032631832510688" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="909032631832510689" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="I can't imagine how that would look like. A picture is worth a thousand words." />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="909032631832547741" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 5, 2014 12:57:41 PM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="ReadOnlyModelAccessor_7loawg_a" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="2805811593284570834" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="909032631832547742" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="909032631832547743" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="This mysterious StateMachines module again." />
+          </node>
+        </node>
+      </node>
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="4424988308481661406" nodeInfo="ng">
