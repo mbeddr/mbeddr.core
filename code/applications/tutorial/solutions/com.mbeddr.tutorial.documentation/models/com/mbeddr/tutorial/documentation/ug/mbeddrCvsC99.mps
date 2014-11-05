@@ -131,7 +131,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5110473669961101571" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" types. Ignore the physical units (the things behing the slashes after the types) for now." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" types. Ignore the physical units (the things behind the slashes after the types) for now." />
             </node>
           </node>
         </node>
@@ -197,7 +197,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5110473669961559155" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5110473669961559156" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5110473669961559157" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Other functions with the same signature may process the data in some specific way; We can generalize those into a function type using a " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Other functions with the same signature may process the data in some specific way. We can generalize those into a function type using a " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5110473669961561001" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5110473669961561002" nodeInfo="ng">
