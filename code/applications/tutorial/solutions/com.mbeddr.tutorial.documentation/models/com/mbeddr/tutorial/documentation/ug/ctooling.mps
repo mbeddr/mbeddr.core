@@ -3,10 +3,12 @@
   <persistence version="8" />
   <language namespace="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
+  <import index="zxcx" modelUID="r:af51c5c3-b54b-4a75-a1e6-409757d1a380(com.mbeddr.tutorial.documentation.code)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="16" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="2637267020265430784" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Config" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
@@ -565,9 +567,20 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="7979854108176621641" nodeInfo="ng">
-          <property name="language" nameId="2c95.8730648445434044905" value="mbeddr" />
-          <property name="text" nameId="2c95.8730648445434044906" value="// external module contents are exported by default &#10;external module stdio_stub imports nothing resources nothing { &#10;}" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="6002249030799907816" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="6002249030799956951" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="x27k.6116558314501417952" resolveInfo="HeaderDescriptor" />
+          </node>
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="6002249030799907817" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6002249030799914475" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.6002249030799838349" resolveInfo="stdlib_stub" />
+            </node>
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="6002249030799914488" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="x27k.6437088627575723997" resolveInfo="FunctionSignature" />
+          </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176627261" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176627262" nodeInfo="ng">
@@ -577,7 +590,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176654317" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176654318" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176654319" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="stdio_stub" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="stdlib_stub" />
                 </node>
               </node>
             </node>
@@ -587,7 +600,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176654326" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176654327" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176654328" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="stdio.h" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="stdlib.h" />
                 </node>
               </node>
             </node>
@@ -596,9 +609,17 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="7979854108176659920" nodeInfo="ng">
-          <property name="language" nameId="2c95.8730648445434044905" value="mbeddr" />
-          <property name="text" nameId="2c95.8730648445434044906" value="// external module contents are exported by default &#10;external module stdio_stub imports nothing resources header &lt;stdio.h&gt; { &#10;}" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="6002249030799970876" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="6002249030799970878" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6002249030799970879" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.6002249030799838349" resolveInfo="stdlib_stub" />
+            </node>
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="6002249030799970880" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="x27k.6437088627575723997" resolveInfo="FunctionSignature" />
+          </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176665603" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176665604" nodeInfo="ng">
@@ -648,7 +669,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176665691" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176665692" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176665693" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="stdio.h" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="stdlib.h" />
                 </node>
               </node>
             </node>
@@ -677,9 +698,14 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="7979854108176671430" nodeInfo="ng">
-          <property name="language" nameId="2c95.8730648445434044905" value="mbeddr" />
-          <property name="text" nameId="2c95.8730648445434044906" value="// external module contents are exported by default &#10;external module stdio_stub imports nothing resources header: &lt;stdio.h&gt; { &#10;  void printf(const char* format, ...); &#10;}" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="6002249030799985691" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="6002249030799985693" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6002249030799985694" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.6002249030799838349" resolveInfo="stdlib_stub" />
+            </node>
+          </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176674338" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176674339" nodeInfo="ng">
@@ -754,209 +780,27 @@
         <property name="text" nameId="2c95.3350625596580064225" value="Automatic Header Import" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176683609" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176683610" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176683611" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Later we will need " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176700479" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176700480" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176700481" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="malloc" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176700478" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176700488" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176700489" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176700490" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="free" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176700487" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" so we can work with dynamic memory. We could create a " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176700501" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176700502" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176700503" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="stdlib_stub" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176700500" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" external module with these two functions manually, like we did it for " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176700518" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176700519" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176700520" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="stdio" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176700517" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" above. However, for the sake of example, we use the automatic import here." />
-            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176683611" nodeInfo="ng" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176689220" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176689221" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176689222" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="First make sure the " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176703339" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176703340" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176703341" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="com.mbeddr.core.cstub" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176703338" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" language is configured for your model. Then create a new " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176711748" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176711749" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176711750" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="HeaderImportSpecHFile" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176711747" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in your model. Once created, you can specify an import path. This directly should contain all header files that need to be imported. Note that you should " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="7979854108176711761" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176711762" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176711763" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="not" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176711760" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" just point it to " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176711778" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176711779" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176711780" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="use/include" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176711777" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", because importing all of these headers can take a long time! Instead copy the headers you need into a separate directly and specify that one in the import spec. This tutorial comes with a directory " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176711799" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176711800" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176711801" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="headers" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176711798" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" that contains only " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176711824" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176711825" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176711826" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="stdlib.h" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176711823" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". You can now press the " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176711853" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176711854" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176711855" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Re-)Import Headers" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176711852" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" button. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
             </node>
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176697638" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176697639" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176697640" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Two things will happen. First, a dialog will open up that reports problems with the import. You can ignore the errors for now. Second, a new external module named " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176717486" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176717487" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176717488" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="stdlib" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176717485" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is added to the model. Double-click it to open, and rename it to " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176717495" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176717496" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176717497" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="stdlib_stub" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176717494" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Once open, you will notice that there are a lof or errors in the file. This is for two reasons. The first one is that this header imports other headers that are not accessible --- they were not in the " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176717508" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176717509" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176717510" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="headers" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176717507" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" directory. Consequently all kinds of symbols referred to from the " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176717525" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176717526" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176717527" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="stdlib" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176717524" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" headers are not defined. The second reason is that parsing and importing header files is generally a delicate operation, and for reasons that are beyond this tutorial, it is very likely that some things cannot be parsed. We discuss details " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="7979854108176717546" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176717547" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176717548" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="todo(ref)" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176717545" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". However, for our purposes the import is successful --- " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176717571" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176717572" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176717573" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="malloc" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176717570" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176717600" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176717601" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176717602" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="free" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176717599" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" are correctly imported." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
             </node>
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176700462" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176700463" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176700464" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="==&gt; This part of the tutorial only provided a few examples of Textual C Code. For a full discussion of Textual C Code see Section xxx. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
             </node>
           </node>
         </node>
