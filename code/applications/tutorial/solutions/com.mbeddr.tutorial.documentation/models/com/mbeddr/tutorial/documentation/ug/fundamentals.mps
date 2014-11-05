@@ -3584,7 +3584,7 @@
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727863030" resolveInfo="F_VersionControl" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1195021413141455474" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1195021413141453989" resolveInfo="G_TextInterOp" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1195021413141453989" resolveInfo="G_Utilities" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1481709176728354848" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1481709176727863070" resolveInfo="I_CheatSheet" />
@@ -3619,7 +3619,7 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1195021413141455509" nodeInfo="ng">
         <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1195021413141455527" nodeInfo="ng">
-          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1195021413141453989" resolveInfo="G_TextInterOp" />
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="1195021413141453989" resolveInfo="G_Utilities" />
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176728354972" nodeInfo="ng">
@@ -3631,7 +3631,7 @@
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1195021413141453989" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
-    <property name="name" nameId="tpck.1169194664001" value="G_TextInterOp" />
+    <property name="name" nameId="tpck.1169194664001" value="G_Utilities" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1195021413141455458" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="utiltites" />
@@ -3851,6 +3851,10 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="1418902825862783757" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="4424988308481613119" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="findUsages" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Find Usages" />
       </node>
     </node>
   </root>
