@@ -9351,7 +9351,7 @@
     </node>
   </root>
   <root type="vs0r.AssessmentContainer" typeId="vs0r.865293814733114043" id="3815661793603772411" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Assessments" />
+    <property name="name" nameId="tpck.1169194664001" value="Visualizations" />
     <node role="assessments" roleId="vs0r.865293814733114045" type="vs0r.Assessment" typeId="vs0r.865293814733114044" id="3815661793603772412" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="AllVisualizations" />
       <property name="sorted" nameId="vs0r.8691429746170824734" value="true" />
