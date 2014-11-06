@@ -1441,7 +1441,7 @@
     <property name="name" nameId="tpck.1169194664001" value="C_VerificationTool" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2564556814935137124" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="otherTools" />
+      <property name="name" nameId="tpck.1169194664001" value="VerificationTools" />
       <property name="text" nameId="2c95.3350625596580064225" value="Verification Tools" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2564556814935137278" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814935137279" nodeInfo="ng">
@@ -1478,7 +1478,7 @@
             <link role="target" roleId="2c95.3350625596580108719" targetNodeId="4711768717894380508" resolveInfo="ChangingPath" />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894408683" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". CBMC uses gcc for preprocessing the C files, so please make sure that you have gcc installed on your machine.\n" />
           </node>
         </node>
       </node>
