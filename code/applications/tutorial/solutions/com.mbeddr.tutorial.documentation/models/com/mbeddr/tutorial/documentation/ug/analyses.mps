@@ -120,59 +120,6 @@
           </node>
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ItemList" typeId="2c95.5378658552262893169" id="9020927825193691680" nodeInfo="ng">
-        <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="9020927825193691681" nodeInfo="ng">
-          <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="9020927825193691682" nodeInfo="ng">
-            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691683" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691684" nodeInfo="ng" />
-              <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="9020927825193691685" nodeInfo="ng">
-                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691686" nodeInfo="ng">
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691687" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Feature models:" />
-                  </node>
-                </node>
-              </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691688" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" are used to define the variation space for the product line - the so called 200 % configuration. They define which features exist, how are they arranged in a feature-sub-feature hierarchy, what are the relations between a feature and its sub-features (e.g. are sub-features mandatory, optional, or is a sub-feature excluding others), or what are the relations among different features in the hierarchy (e.g. a feature A might require another feature B or conflict with it)." />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="9020927825193691689" nodeInfo="ng">
-          <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="9020927825193691690" nodeInfo="ng">
-            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691691" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691692" nodeInfo="ng" />
-              <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="9020927825193691693" nodeInfo="ng">
-                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691694" nodeInfo="ng">
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691695" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Configuration models:" />
-                  </node>
-                </node>
-              </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691696" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" are used to define single configurations of the product by selecting a subset of features from a feature model. " />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="9020927825193691697" nodeInfo="ng">
-          <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="9020927825193691698" nodeInfo="ng">
-            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691699" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691700" nodeInfo="ng" />
-              <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="9020927825193691701" nodeInfo="ng">
-                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691702" nodeInfo="ng">
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691703" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Presence conditions:" />
-                  </node>
-                </node>
-              </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691704" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" are logical expressions based on features that define when an artifact (e.g. a piece of code) is included in the build.  " />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="9020927825193691706" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691707" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691708" nodeInfo="ng">
@@ -283,7 +230,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="9020927825193691746" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691747" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691748" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The FM-Analyzer can be started by right-clicking on the feature model node and selecting the corresponding menu entry. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The FM-Analyzer can be started by right-clicking on the feature model name and selecting the corresponding menu entry. " />
             </node>
           </node>
         </node>
@@ -371,7 +318,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="9020927825193691776" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691777" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691778" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The CM-Analyzer can be started by right-clicking on the feature model node and selecting the corresponding menu entry. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The CM-Analyzer can be started by right-clicking on the feature model name and selecting the corresponding menu entry. " />
             </node>
           </node>
         </node>
@@ -459,7 +406,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="9020927825193705491" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193705492" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193705493" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The Modules-Analyzer can be started by right-clicking on the feature model node and selecting the corresponding menu entry. It checks whether the implementation module is consistent with respect to the feature model. Example of inconsistencies are cases when for a function (or variable) declaration we have a presence condition, however, for the calls (or references) to this function (or variable) we do not have any presence condition. In this case, if the code generation is performed, we can get a compile error.  " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The Modules-Analyzer can be started by right-clicking on the implementation module name and selecting the corresponding menu entry. It checks whether the implementation module is consistent with respect to the feature model. Example of inconsistencies are cases when for a function (or variable) declaration we have a presence condition, however, for the calls (or references) to this function (or variable) we do not have any presence condition. In this case, if the code generation is performed, we can get a compile error.  " />
             </node>
           </node>
         </node>
@@ -543,9 +490,8 @@
           <property name="name" nameId="tpck.1169194664001" value="starting_variability_checks_on_models" />
           <property name="center" nameId="2c95.8730648445434174368" value="true" />
           <property name="border" nameId="2c95.4755612053022517119" value="true" />
-          <property name="showImage" nameId="2c95.6386504476136358630" value="true" />
           <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="5724023611138376252" nodeInfo="ng">
-            <property name="fileName" nameId="2c95.6386504476136521408" value="analyses\variability_verification_for_models.png" />
+            <property name="fileName" nameId="2c95.6386504476136521408" value="analyses/variability_verification_for_models.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
           </node>
           <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5724023611138376253" nodeInfo="ng">
@@ -570,9 +516,8 @@
           <property name="name" nameId="tpck.1169194664001" value="starting_variability_checks_on_solutions" />
           <property name="center" nameId="2c95.8730648445434174368" value="true" />
           <property name="border" nameId="2c95.4755612053022517119" value="true" />
-          <property name="showImage" nameId="2c95.6386504476136358630" value="true" />
           <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="5724023611138382781" nodeInfo="ng">
-            <property name="fileName" nameId="2c95.6386504476136521408" value="analyses\variability_verification_for_solutions.png" />
+            <property name="fileName" nameId="2c95.6386504476136521408" value="analyses/variability_verification_for_solutions.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
           </node>
           <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5724023611138382782" nodeInfo="ng">
@@ -594,74 +539,7 @@
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="5724023611136698962" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="vi23.536680812409687143" resolveInfo="F_ProductLineVariability" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="3115042184192836690" nodeInfo="ng">
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="3115042184192836691" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 9:17:25 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word0" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="9020927825193691687" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="3115042184192836692" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3115042184192836693" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Do we really want to repeat this description here? I think it should be in the section on product line variability." />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="3115042184192836701" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 9:19:47 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word11" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="9020927825193691748" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="3115042184192836702" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3115042184192836703" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="node is quite unspecific. Without seeing the images, I guessed it's the node in logical view. How about \&quot;heading\&quot; or \&quot;title\&quot;? Same at two more places below." />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="3115042184192836710" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 9:20:36 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word11" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="9020927825193691778" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="3115042184192836711" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3115042184192836712" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="second place same thing" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="3115042184192836722" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 9:21:26 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word11" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="9020927825193705493" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="3115042184192836723" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3115042184192836724" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="third place same thing" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="3115042184192836737" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 9:22:28 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="Constant_oluhd8_a0c0" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5724023611138376251" resolveInfo="starting_variability_checks_on_models" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="3115042184192836738" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3115042184192836739" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="invalid path?" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="3115042184192836755" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 9:22:36 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="Constant_oluhd8_a0c0" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5724023611138382780" resolveInfo="starting_variability_checks_on_solutions" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="3115042184192836756" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3115042184192836757" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="invalid path?" />
-          </node>
-        </node>
-      </node>
-    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="3115042184192836690" nodeInfo="ng" />
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="9020927825193793093" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="C_FormalVerification" />
