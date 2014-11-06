@@ -59,9 +59,9 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7863625513831639444" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7863625513831639445" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7863625513831639446" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The mbeddr debugger behaves like a regular C debugger, but on the abstraction level  of mbeddr: shows the call stack and watchables and allows stepping and setting of  breakpoints. This way, you don't need to know any details about the generated C code. In addition, the debugger can be extended to enable debugging of code written with user-defined  language extensions. Currently, the debugger uses " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The mbeddr debugger behaves like a regular C debugger, but on the abstraction level of mbeddr and its extensions: it shows the call stack and watchables and allows stepping and setting of breakpoints. This way, you don't need to know any details about the generated C code. In addition, the debugger can be extended to enable debugging of code written with user-defined  language extensions. Currently, the debugger uses " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="7863625513831639451" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1987049260899785752" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7863625513831639452" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7863625513831639453" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="gdb" />
@@ -69,9 +69,9 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7863625513831639454" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" as debug backend and only supports  local debugging. However, in future releases of mbeddr, we plan to support debugging on the target device.  In the tutorial, you find inside the solution " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" as debug backend and only supports  local debugging. However, in future releases of mbeddr, we plan to support debugging on the target device. In the tutorial, you find in the solution " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="7863625513831639455" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1987049260899785768" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7863625513831639456" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7863625513831639457" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr.tutorial.main" />
@@ -81,7 +81,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7863625513831639458" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" a model named " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="7863625513831639459" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1987049260899785784" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7863625513831639460" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7863625513831639461" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="plainC" />
@@ -102,7 +102,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7788280986208222188" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Before you can debug your program, you have to make sure the C code for the program has been generated. Therefore, click on the model " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="3458196166300143606" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1987049260899785800" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458196166300143607" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300143608" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="plainC" />
@@ -112,9 +112,9 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300143605" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=", open the context menu and select " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="3458196166300143593" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458196166300143594" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300143595" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.MenuFormattedText" typeId="2c95.2286331641392318852" id="1987049260899785864" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1987049260899785867" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1987049260899785868" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="Rebuild Model 'm.t.main.plainC'" />
                 </node>
               </node>
@@ -122,17 +122,17 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300143592" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="or press " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="3458196166300143517" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458196166300143518" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300143519" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="1987049260899785842" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1987049260899785845" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1987049260899785846" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="Ctrl-F9" />
                 </node>
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300143516" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=".  Next, set a breakpoint in the first line of the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Next, set a breakpoint in the first line of the " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="3458196166300147117" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1987049260899785886" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458196166300147118" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300147119" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="main" />
@@ -140,7 +140,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300147116" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" function. This is achieved by clicking into the gutter of the editor. The result should look like this:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" function. This is done by clicking into the gutter of the editor. The result should look like this:" />
             </node>
           </node>
         </node>
@@ -170,24 +170,29 @@
               <link role="target" roleId="2c95.3350625596580108719" targetNodeId="7863625513831639756" resolveInfo="LaunchConfiguration" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985454246" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and run it by pressing " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and run it in debug mode by pressing " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="3458196166300190700" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458196166300190701" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300190702" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="1987049260901153968" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1987049260901153971" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1987049260901153972" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="Shift-F9" />
                 </node>
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300190699" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" or by clicking on the debug button in MPS' toolbar (see next figure)." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" or by clicking on the debug button in MPS' toolbar (see " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="1987049260901197153" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="7788280986208260432" resolveInfo="RunDebugger" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1987049260901197152" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="). " />
             </node>
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="7788280986208260432" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="RunDebugger" />
           <property name="center" nameId="2c95.8730648445434174368" value="true" />
-          <property name="showImage" nameId="2c95.6386504476136358630" value="true" />
           <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="7788280986208265299" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="debugger/debugger5.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
@@ -204,7 +209,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7788280986208279526" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7788280986208279527" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7788280986208279528" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The debugger UI should now appear at the bottom of the MPS window. In the lower left corner of this UI,  you should see two activated buttons: a green (arrow) and a red (square) one. This indicates,  that the debugger is now connected to the underlying C debugger. You can now start program  execution by clicking on the green (arrow) button. This will suspend the debugger on the first line of the main function, on your previously created breakoint:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The debugger UI should now appear at the bottom of the MPS window. In the lower left corner of this UI,  you can see two activated buttons: a green (arrow) and a red (square) one. This indicates,  that the debugger is now connected to the underlying C debugger. You can now start program execution by clicking on the green (arrow) button. This will suspend the debugger on the first line of the main function, on your previously created breakoint:" />
             </node>
           </node>
         </node>
@@ -230,20 +235,14 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7788280986208289247" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Next, press " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="7788280986208289543" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7788280986208289544" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7788280986208289554" nodeInfo="ng" />
-                <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="7788280986208289551" nodeInfo="ng">
-                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7788280986208289552" nodeInfo="ng">
-                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7788280986208289553" nodeInfo="ng">
-                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="F7" />
-                    </node>
-                  </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="1987049260901197228" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1987049260901197229" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1987049260901197230" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="F7" />
                 </node>
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7788280986208289555" nodeInfo="ng" />
               </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7788280986208289542" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1987049260901197227" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="7788280986208289563" nodeInfo="ng">
@@ -254,9 +253,9 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7788280986208289562" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" the current line, this will suspend the debugger  in the called function " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" the current line, this will suspend the debugger in the called function " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="3458196166300201548" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1987049260901197266" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458196166300201549" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300201550" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="add" />
@@ -266,7 +265,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300201547" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=". For returning to the calling function " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="3458196166300203350" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1987049260901197304" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458196166300203351" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300203352" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="main" />
@@ -274,11 +273,11 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300203349" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=",  press " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", press " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="3458196166300203409" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458196166300203410" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300203411" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="1987049260901197342" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1987049260901197345" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1987049260901197346" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="Shift-F8" />
                 </node>
               </node>
@@ -286,7 +285,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300203412" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Once the debugger is suspended there, you can see the stack frame " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="3458196166300203655" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1987049260901197382" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458196166300203656" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300203657" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="main" />
@@ -296,14 +295,24 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300203654" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in the call stack and the local variables " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="3458196166300203752" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1987049260901197420" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458196166300203753" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300203754" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="p, argc" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="p" />
                 </node>
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300203751" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1987049260901197459" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1987049260901197460" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1987049260901197461" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="argc" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1987049260901197458" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="3458196166300205717" nodeInfo="ng">
@@ -314,7 +323,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300205716" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in the watchables view (" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in the watchables view (see " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="3458196166300205818" nodeInfo="ng">
               <link role="image" roleId="2c95.6386504476136420174" targetNodeId="7788280986208289326" resolveInfo="SuspendedInMain" />
