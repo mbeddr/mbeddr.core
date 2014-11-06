@@ -38,7 +38,7 @@
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="620304030110802052" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="C-040-Debugging" />
+    <property name="name" nameId="tpck.1169194664001" value="D_Debugging" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="4" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="2900587364561785336" nodeInfo="ng">
@@ -346,7 +346,7 @@
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="7979854108176562614" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="C-080-LegacyCode" />
+    <property name="name" nameId="tpck.1169194664001" value="F_LegacyCode" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="8" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="2900587364561787377" nodeInfo="ng">
@@ -661,38 +661,62 @@
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <property name="name" nameId="tpck.1169194664001" value="Z_CHAPTER_CTooling" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
-    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="2045083395009031354" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="2045083395009023200" resolveInfo="C-010-Build" />
-    </node>
-    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="2045083395009031360" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="620304030110802052" resolveInfo="C-040-Debugging" />
-    </node>
-    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="2045083395009031368" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7979854108176562614" resolveInfo="C-080-LegacyCode" />
-    </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="2101724341003970566" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="ctooling" />
       <property name="text" nameId="2c95.3350625596580064225" value="C Tooling" />
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="2045083395009031384" nodeInfo="ng">
-        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="2045083395009031385" nodeInfo="ng">
-          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="2045083395009023200" resolveInfo="C-010-Build" />
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576565955293" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="6002249030800732580" resolveInfo="A_BuildConfig" />
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="2045083395009031418" nodeInfo="ng">
-        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="2045083395009031446" nodeInfo="ng">
-          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="620304030110802052" resolveInfo="C-040-Debugging" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="85256576565955298" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576565955348" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="2045083395009023200" resolveInfo="B_BuildingCode" />
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="2045083395009031431" nodeInfo="ng">
-        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="2045083395009031449" nodeInfo="ng">
-          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7979854108176562614" resolveInfo="C-080-LegacyCode" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="85256576565955304" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576565955351" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4376803293067553112" resolveInfo="C_RunConfiguration" />
         </node>
       </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="85256576565955312" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576565955354" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="620304030110802052" resolveInfo="D_Debugging" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="85256576565955322" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576565955357" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="85256576565955263" resolveInfo="E_HelloWorld" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="85256576565955334" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576565955360" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7979854108176562614" resolveInfo="F_LegacyCode" />
+        </node>
+      </node>
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576565955281" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="620304030110802052" resolveInfo="D_Debugging" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576565955282" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7979854108176562614" resolveInfo="F_LegacyCode" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576565955283" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="6002249030800732580" resolveInfo="A_BuildConfig" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576565955284" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="2045083395009023200" resolveInfo="B_BuildingCode" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576565955285" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4376803293067553112" resolveInfo="C_RunConfiguration" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576565955286" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="85256576565955263" resolveInfo="E_HelloWorld" />
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="6002249030800732580" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
-    <property name="name" nameId="tpck.1169194664001" value="A-BuildConfig" />
+    <property name="name" nameId="tpck.1169194664001" value="A_BuildConfig" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="6002249030800732328" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="BuildConfig" />
@@ -1031,7 +1055,7 @@
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="2045083395009023200" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
-    <property name="name" nameId="tpck.1169194664001" value="C-010-Build" />
+    <property name="name" nameId="tpck.1169194664001" value="B_BuildingCode" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2045083395009024011" nodeInfo="ng">
       <property name="text" nameId="2c95.3350625596580064225" value="Building Applications from Command-Line" />
@@ -1116,7 +1140,7 @@
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="4376803293067553112" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
-    <property name="name" nameId="tpck.1169194664001" value="C-020-RunConfiguration" />
+    <property name="name" nameId="tpck.1169194664001" value="C_RunConfiguration" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="7863625513831639756" nodeInfo="ng">
       <property name="text" nameId="2c95.3350625596580064225" value="Creating a Debug Configuration" />
@@ -1292,6 +1316,15 @@
     <node role="authors" roleId="2c95.126932837435370865" type="2c95.Author" typeId="2c95.126932837435370850" id="4376803293067596004" nodeInfo="ng">
       <property name="name" nameId="2c95.126932837435370851" value="Tamas Szabo" />
       <property name="email" nameId="2c95.126932837435370852" value="tamas.szabo@itemis.de" />
+    </node>
+  </root>
+  <root type="2c95.Document" typeId="2c95.3350625596579911728" id="85256576565955263" nodeInfo="ng">
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
+    <property name="name" nameId="tpck.1169194664001" value="E_HelloWorld" />
+    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="85256576565955264" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="helloWorld" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Hello, World" />
     </node>
   </root>
 </model>
