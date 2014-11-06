@@ -403,7 +403,7 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="7979854108176613196" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="manualLibraryImport" />
-        <property name="text" nameId="2c95.3350625596580064225" value="Manual Library Import" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Manual Header Import" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176613216" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176613217" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176613218" nodeInfo="ng">
