@@ -44,7 +44,7 @@
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="4" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8694947709985454255" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4376803293067553112" resolveInfo="C-LaunchConfiguration" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4376803293067553112" resolveInfo="C_LaunchConfiguration" />
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="2900587364561785336" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="debugging" />
@@ -675,7 +675,7 @@
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="2045083395009023200" resolveInfo="B_CommandLineBuild" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576565955285" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4376803293067553112" resolveInfo="C-LaunchConfiguration" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4376803293067553112" resolveInfo="C_LaunchConfiguration" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576565955286" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="85256576565955263" resolveInfo="E_HelloWorld" />
@@ -695,7 +695,7 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="85256576565955304" nodeInfo="ng">
         <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576565955351" nodeInfo="ng">
-          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4376803293067553112" resolveInfo="C-LaunchConfiguration" />
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4376803293067553112" resolveInfo="C_LaunchConfiguration" />
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="85256576565955312" nodeInfo="ng">
@@ -720,7 +720,7 @@
     <property name="name" nameId="tpck.1169194664001" value="A_BuildingInTheIDE" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576565999753" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4376803293067553112" resolveInfo="C-LaunchConfiguration" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4376803293067553112" resolveInfo="C_LaunchConfiguration" />
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="85256576565990694" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="building" />
@@ -1385,7 +1385,7 @@
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="4376803293067553112" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
-    <property name="name" nameId="tpck.1169194664001" value="C-LaunchConfiguration" />
+    <property name="name" nameId="tpck.1169194664001" value="C_LaunchConfiguration" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="7863625513831639756" nodeInfo="ng">
       <property name="text" nameId="2c95.3350625596580064225" value="Launch Configuration" />
