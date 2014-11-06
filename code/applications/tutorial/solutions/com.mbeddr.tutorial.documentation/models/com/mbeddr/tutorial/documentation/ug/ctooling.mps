@@ -49,7 +49,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7863625513830893146" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7863625513830893147" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7863625513830893148" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr comes with a debugger for core C. This chapter describes how to use this\ndebugger to debug C programs written with mbeddr." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr comes with a debugger for core C. This chapter describes how to use this debugger to debug C programs written with mbeddr." />
           </node>
         </node>
       </node>
@@ -59,7 +59,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7863625513831639444" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7863625513831639445" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7863625513831639446" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The mbeddr debugger behaves like a regular C debugger, but on the abstraction level \nof mbeddr: shows the call stack and watchables and allows stepping and setting of \nbreakpoints. This way, you don't need to know any details about the generated C code.\nIn addition, the debugger can be extended to enable debugging of code written with user-defined \nlanguage extensions. Currently, the debugger uses " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The mbeddr debugger behaves like a regular C debugger, but on the abstraction level  of mbeddr: shows the call stack and watchables and allows stepping and setting of  breakpoints. This way, you don't need to know any details about the generated C code. In addition, the debugger can be extended to enable debugging of code written with user-defined  language extensions. Currently, the debugger uses " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="7863625513831639451" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7863625513831639452" nodeInfo="ng">
@@ -69,7 +69,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7863625513831639454" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" as debug backend and only supports \nlocal debugging. However, in future releases of mbeddr, we plan to support debugging on the target device.\n\nIn the tutorial, you find inside the solution " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" as debug backend and only supports  local debugging. However, in future releases of mbeddr, we plan to support debugging on the target device.  In the tutorial, you find inside the solution " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="7863625513831639455" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7863625513831639456" nodeInfo="ng">
@@ -89,7 +89,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7863625513831639462" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". We \nuse the contained mbeddr code to illustrate debugging mbeddr programs in MPS." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". We  use the contained mbeddr code to illustrate debugging mbeddr programs in MPS." />
             </node>
           </node>
         </node>
@@ -100,7 +100,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7788280986208222186" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7788280986208222187" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7788280986208222188" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Before you can debug your program, you have to make sure the C code for the program\nhas been generated. Therefore, click on the model " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Before you can debug your program, you have to make sure the C code for the program has been generated. Therefore, click on the model " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="3458196166300143606" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458196166300143607" nodeInfo="ng">
@@ -110,7 +110,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300143605" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", open the context\nmenu and select " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", open the context menu and select " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="3458196166300143593" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458196166300143594" nodeInfo="ng">
@@ -130,7 +130,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300143516" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=".\n\nNext, set a breakpoint in the first line of the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=".  Next, set a breakpoint in the first line of the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="3458196166300147117" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458196166300147118" nodeInfo="ng">
@@ -140,7 +140,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300147116" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" function. This is achieved\nby clicking into the gutter of the editor. The result should look like this:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" function. This is achieved by clicking into the gutter of the editor. The result should look like this:" />
             </node>
           </node>
         </node>
@@ -204,7 +204,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7788280986208279526" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7788280986208279527" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7788280986208279528" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The debugger UI should now appear at the bottom of the MPS window. In the lower left corner of this UI, \nyou should see two activated buttons: a green (arrow) and a red (square) one. This indicates, \nthat the debugger is now connected to the underlying C debugger. You can now start program \nexecution by clicking on the green (arrow) button. This will suspend the debugger on the first\nline of the main function, on your previously created breakoint:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The debugger UI should now appear at the bottom of the MPS window. In the lower left corner of this UI,  you should see two activated buttons: a green (arrow) and a red (square) one. This indicates,  that the debugger is now connected to the underlying C debugger. You can now start program  execution by clicking on the green (arrow) button. This will suspend the debugger on the first line of the main function, on your previously created breakoint:" />
             </node>
           </node>
         </node>
@@ -254,7 +254,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7788280986208289562" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" the current line, this will suspend the debugger \nin the called function " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" the current line, this will suspend the debugger  in the called function " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="3458196166300201548" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458196166300201549" nodeInfo="ng">
@@ -274,7 +274,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300203349" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", \npress " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=",  press " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="3458196166300203409" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458196166300203410" nodeInfo="ng">
@@ -294,7 +294,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458196166300203654" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nin the call stack and the local variables " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in the call stack and the local variables " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="3458196166300203752" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458196166300203753" nodeInfo="ng">
@@ -356,7 +356,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176590723" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176590724" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176590725" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="So far we have not accessed any functions external to the mbeddr program - everything was self-contained. Let us now look at how to access external code. We start with the simplest possible example. We would like to be able to write the following code:" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="So far we have not accessed any functions external to the mbeddr program -- everything was self-contained. Let us now look at how to access external code. We start with the simplest possible example. We would like to be able to write the following code:" />
           </node>
         </node>
       </node>
@@ -429,7 +429,34 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176627261" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176627262" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176627263" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="An external module is always associated with one or more \&quot;real\&quot; header files. The trick is that when an implementation module imports an external module in mbeddr, upon generation of the C code, the referenced real header is included into the C file. So the first thing we need to do is to express that this " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="An external module is always associated with one or more \&quot;real\&quot; header files. The trick is that when an implementation module imports an external module in mbeddr, upon generation of the textual C code, the referenced real header is included into the C file. This also means that, even if you " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8155094434703826985" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8155094434703826986" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8155094434703826987" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="stdio.h" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8155094434703826989" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" requires all kinds of additional definitions for it to work, these do " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="8155094434703826996" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8155094434703826997" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8155094434703826998" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="not" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8155094434703827000" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" have to be imported into mbeddr. Only the function prototype must be imported so it can called from mbeddr C. " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8155094434703826870" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8155094434703826871" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8155094434703826872" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="So the first thing we need to do is to express that this " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176654317" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176654318" nodeInfo="ng">
@@ -518,7 +545,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176665690" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", we don't have to specify this - gcc somehow does this automatically. So what remains to do is to write the actual " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", we don't have to specify this because gcc somehow does this automatically. So what remains to do is to write the actual " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176665716" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176665717" nodeInfo="ng">
@@ -619,40 +646,22 @@
           </node>
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6002249030800723971" nodeInfo="ng">
-        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030800723972" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030800723973" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
-          </node>
-        </node>
-      </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="7979854108176683431" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="automaticHeaderImport" />
         <property name="text" nameId="2c95.3350625596580064225" value="Automatic Header Import" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176683609" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176683610" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030800723678" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr has support for importing existing C code. But this is a comercial extension that has to be installed seperately.\nFor futher information please contact mbeddr@itemis.de" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr has support for importing existing C code. But this is a comercial extension that has to be installed seperately. For futher information please contact " />
             </node>
-          </node>
-        </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176689220" nodeInfo="ng">
-          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176689221" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030800723660" nodeInfo="ng" />
-          </node>
-        </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176697638" nodeInfo="ng">
-          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176697639" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176697640" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="8155094434703828477" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8155094434703828478" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8155094434703828479" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="mailto:mbeddr@itemis.de" />
+                </node>
+              </node>
             </node>
-          </node>
-        </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176700462" nodeInfo="ng">
-          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176700463" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176700464" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
-            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8155094434703828480" nodeInfo="ng" />
           </node>
         </node>
       </node>
