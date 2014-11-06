@@ -166,14 +166,10 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7788280986208260306" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Next, create a run configuration as explained in " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="2045083395016402523" nodeInfo="ng">
-              <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="2045083395016402524" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395016402525" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="add reference to section with run configuration" />
-                </node>
-              </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="8694947709985454247" nodeInfo="ng">
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="7863625513831639756" resolveInfo="DebugConfiguration" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395016402492" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985454246" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and run it by pressing " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="3458196166300190700" nodeInfo="ng">
@@ -345,6 +341,9 @@
           <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7788280986208289331" nodeInfo="ng" />
         </node>
       </node>
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8694947709985454255" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4376803293067553112" resolveInfo="C_RunConfiguration" />
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="7979854108176562614" nodeInfo="ng">
