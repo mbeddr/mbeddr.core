@@ -611,7 +611,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2723638869557403977" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". A chunk has a name as well as a set of dependencies, i.e., references of chunks it depends on. Chunks come in many differenet kinds. " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". A chunk has a name as well as a set of dependencies, i.e., references of chunks it depends on. Chunks come in many different kinds. " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2723638869557404092" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2723638869557404093" nodeInfo="ng">
@@ -691,7 +691,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576563801054" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=") content are referencable; see below)." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" content are referencable; see below)." />
           </node>
         </node>
         <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="2723638869557403856" nodeInfo="ng">
@@ -701,7 +701,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="993292703731046389" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="993292703731046390" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="993292703731046391" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Modules are the chunks that contain C code (as opposed to, for example, build configuratins or requirements). mbeddr has two different kinds of modules. The most common one is the " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Modules are the chunks that contain C code (as opposed to, for example, build configurations or requirements). mbeddr has two different kinds of modules. The most common one is the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="993292703731046627" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="993292703731046628" nodeInfo="ng">
@@ -741,7 +741,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="993292703731048263" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="s always have to declare a header files that is included in the generated C code (the files for which they are a proxy)." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="s always have to declare a header file that is included in the generated C code (the files for which they are a proxy)." />
           </node>
         </node>
         <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="993292703731046392" nodeInfo="ng">
@@ -875,7 +875,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="85256576563803187" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576563803188" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576563803189" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr supports all of C99's data types in principle, but it changes a few detauls. We discuss these details here." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr supports all of C99's data types in principle, but it changes a few defaults. We discuss these details here." />
           </node>
         </node>
       </node>
@@ -1719,7 +1719,7 @@
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="85256576563898281" nodeInfo="ng">
             <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576563898282" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576563898283" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Also reference the Run COnfig stuff so we can hightlight the hyperlinks in the console." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Also reference the Run Config stuff, so we can highlight the hyperlinks in the console." />
               </node>
             </node>
           </node>
@@ -1732,7 +1732,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="85256576563897278" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576563897279" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576563897280" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Some of mbeddr's extensions (such as components or state machines) come with their own extensions of the testing language to make it more efficient to unit-test these abstractions. These extensions are discussed togetehr with the respective language extensions." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Some of mbeddr's extensions (such as components or state machines) come with their own extensions of the testing language to make it more efficient to unit-test these abstractions. These extensions are discussed together with the respective language extensions." />
           </node>
         </node>
         <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="85256576563897281" nodeInfo="ng">
