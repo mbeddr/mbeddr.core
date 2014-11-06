@@ -1250,7 +1250,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863768778" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" menu) and take a look how the user guide is built. We'll explain some basics in this chapter but otherwise recommend you just look at the user guide." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" menu) and take a look how the user guide is built. We'll explain some basics in this chapter but otherwise recommend you to just look at the user guide." />
             </node>
           </node>
         </node>
@@ -1309,12 +1309,12 @@
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="5479545238863769850" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863769851" nodeInfo="ng">
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863769852" nodeInfo="ng">
-                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Latex:" />
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="LaTeX:" />
                     </node>
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863769854" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" A generator create a Latex sources from documentation language Documents. While this works well in principle, there are several layouting problems with image sizes. After the sources have been generated they have to be processed by Latex manually (e.g., by invoking " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" A generator creates LaTeX sources from documentation language Documents. While this works well in principle, there are several layouting problems with image sizes. After the sources have been generated they have to be processed by Latex manually (e.g., by invoking " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863769861" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863769862" nodeInfo="ng">
@@ -1351,7 +1351,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863769927" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Similar to Latex, we can also generate HTML sources. The approach has some of the same issues. Will be discussed in more detail soon. " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Similar to LaTeX, we can also generate HTML sources. The approach has some of the same issues. Will be discussed in more detail soon. " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="5479545238863770940" nodeInfo="ng">
                   <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863770941" nodeInfo="ng">
@@ -1397,7 +1397,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238865062825" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Documents are the main roots in which documentation language content lives. As usual in mbeddr, Documents can express depedencies on other Documents." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Documents are the main roots in which documentation language content lives. As usual in mbeddr, Documents can express dependencies on other Documents." />
                 </node>
               </node>
             </node>
@@ -1414,7 +1414,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238865062851" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" A document contains sections. Sections have a name (used for referencing them) as well as a title. Sections can be nested. They are also automatically assigned number (even though this does not work correctly in Presentation Mode). A reference to a section is created via the " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" A document contains sections. Sections have a name (used for referencing them) as well as a title. Sections can be nested. They are also automatically assigned a number (even though this does not work correctly in Presentation Mode). A reference to a section is created via the " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238865062857" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238865062858" nodeInfo="ng">
@@ -1441,7 +1441,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238865062934" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" There is also a kind of \&quot;special section\&quot;, the Chapter. Is is simlar in all respects to sections except that " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" There is also a kind of \&quot;special section\&quot;, the Chapter. It is simlar in all respects to sections except that it " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="5479545238865062940" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238865062941" nodeInfo="ng">
@@ -1468,7 +1468,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238865062959" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Inside sections, there are all kinds of paragraphs. " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Inside sections there are all kinds of paragraphs. " />
                 </node>
               </node>
             </node>
@@ -1478,7 +1478,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238865063252" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238865063253" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238865063254" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The paragraph is an abstract concept of which many many subconcepts exist. They hold the meat of the document:" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The paragraph is an abstract concept of which many subconcepts exist. They hold the meat of the document:" />
           </node>
         </node>
         <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="5479545238865065180" nodeInfo="ng">
@@ -1532,7 +1532,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238866351839" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" similar to the previous one, but the code is rendered as an image (screenshot) when serialized to Latex or HTML." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Similar to the previous one, but the code is rendered as an image (screenshot) when serialized to Latex or HTML." />
               </node>
             </node>
           </node>
@@ -1549,7 +1549,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238866355193" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" references a program node that has a visualization. When rendered out, the visualization is created in real time and embedded." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" References a program node that has a visualization. When rendered out, the visualization is created in real time and embedded." />
               </node>
             </node>
           </node>
@@ -1558,7 +1558,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238865065322" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238865065323" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238865065324" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Inside text paragraphs, you can use various differnet special words. Those that start with a backslash are used for formatting. Those that start with a " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Inside text paragraphs, you can use various different special words. Those that start with a backslash are used for formatting. Those that start with an " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238866358851" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238866358852" nodeInfo="ng">
@@ -1568,7 +1568,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238866358854" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" are referenecs. They can be entered by pressing " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" are references. They can be entered by pressing " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="5479545238866359276" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238866359277" nodeInfo="ng">
@@ -1698,7 +1698,7 @@
           <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5479545238866363371" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238866363372" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238866363373" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="You can point to other resources is the file system using " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="You can point to other resources in the file system using " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238866363454" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238866363455" nodeInfo="ng">
@@ -1783,7 +1783,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238865065564" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238865065565" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238865065566" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Every document must refer to a Configuration node. It is mostly used in the context of Latex or HTML rendering. However, it also defines the default path where the visualizations store their temporary images. Most importantly, it defines the path prefixes where images (and other attachments) are searched. The path is " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Every document must refer to a Configuration node. It is mostly used in the context of LaTeX or HTML rendering. However, it also defines the default path where the visualizations store their temporary images. Most importantly, it defines the path prefixes where images (and other attachments) are searched. The path is " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="5479545238866363463" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238866363464" nodeInfo="ng">
@@ -1793,7 +1793,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238866363467" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" relative to the current solution root directory. When defining image paragraphs or attachments, you use one of the paths defined in the Config as the path prefix and select an image \&quot;below\&quot; this path prefix. This is supported with code completion." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" relative to the current solutions root directory. When defining image paragraphs or attachments, you use one of the paths defined in the Config as the path prefix and select an image \&quot;below\&quot; this path prefix. This is supported with code completion." />
           </node>
         </node>
         <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="5479545238865065567" nodeInfo="ng">
@@ -1803,7 +1803,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238865066067" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238865066068" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238865066069" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="For consuming documents inside MPS using the presentation mode, no build is necessary. However, in case of generating Latex or HTML, a " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="For consuming documents inside MPS using the presentation mode, no build is necessary. However, in case of generating LaTeX or HTML, a " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238866523098" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238866523099" nodeInfo="ng">
@@ -1829,6 +1829,19 @@
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="5479545238865063053" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="5918211902452395838" nodeInfo="ng">
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="5918211902452395839" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 9:04:53 AM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word9" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5479545238865063573" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="5918211902452395840" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5918211902452395841" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="A missing period or missing content" />
+          </node>
+        </node>
+      </node>
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="3231021218602645813" nodeInfo="ng">
