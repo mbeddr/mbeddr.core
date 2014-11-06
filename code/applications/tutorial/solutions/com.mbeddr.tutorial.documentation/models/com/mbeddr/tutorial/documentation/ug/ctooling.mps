@@ -141,6 +141,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="7863625513832309832" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="RunConfiguration" />
           <property name="center" nameId="2c95.8730648445434174368" value="true" />
+          <property name="showImage" nameId="2c95.6386504476136358630" value="true" />
           <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="7863625513832319352" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="debugger/debugger2.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
@@ -230,6 +231,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="7788280986207946689" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="DebugConfiguration" />
           <property name="center" nameId="2c95.8730648445434174368" value="true" />
+          <property name="showImage" nameId="2c95.6386504476136358630" value="true" />
           <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="7788280986208178104" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="debugger/debugger8.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
@@ -331,7 +333,17 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7788280986208260304" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7788280986208260305" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7788280986208260306" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Next, run the previously created Run Configuration by pressing " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Next, create a run configuration as explained in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="2045083395016402523" nodeInfo="ng">
+              <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="2045083395016402524" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395016402525" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="add section" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395016402492" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and run it by pressing " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="3458196166300190700" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458196166300190701" nodeInfo="ng">
@@ -347,6 +359,7 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="7788280986208260432" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="RunDebugger" />
+          <property name="center" nameId="2c95.8730648445434174368" value="true" />
           <property name="showImage" nameId="2c95.6386504476136358630" value="true" />
           <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="7788280986208265299" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="debugger/debugger5.png" />
@@ -486,6 +499,7 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="7788280986208289326" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="SuspendedInMain" />
+          <property name="showImage" nameId="2c95.6386504476136358630" value="true" />
           <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="7788280986208289327" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="debugger/debugger11.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
