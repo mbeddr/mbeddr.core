@@ -137,7 +137,7 @@
               <link role="image" roleId="2c95.6386504476136420174" targetNodeId="5479545238858017740" resolveInfo="featureModel" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238858018378" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". A feature is simply a named entity. Features can have children (subfeatures). A feature specifies a constraint over the subfeatures that determine how the can be selected. The following four tree constraints exist:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". A feature is simply a named entity. Features can have children (subfeatures). A feature specifies a constraint over the subfeatures that determine how they can be selected. The following four tree constraints exist:" />
             </node>
           </node>
           <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="5479545238858016910" nodeInfo="ng">
@@ -275,7 +275,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238859295496" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238859295497" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238859295498" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Once a feature models is defined, you can specify " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Once a feature model is defined, you can specify " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="5479545238859300371" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238859300372" nodeInfo="ng">
@@ -295,7 +295,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238859300383" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". A configuration has a name and a selects any valid (in terms of the constraints discussed above) subset of the feature defined in the referenced feature model. The example has three configurations: " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". A configuration has a name and selects any valid (in terms of the constraints discussed above) subset of the features defined in the referenced feature model. The example has three configurations: " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="5479545238859300871" nodeInfo="ng">
               <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="5479545238859300872" nodeInfo="ng">
@@ -370,7 +370,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.GreyBoxParagraph" typeId="2c95.7992580511422656150" id="5479545238861132424" nodeInfo="ng">
           <node role="text" roleId="2c95.7992580511422656152" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238861132425" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238861132426" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Note that in order for the stuff described below to work (static and runtime variability), you need to make sure that the featuere models on which the variability relies are actually imported into the respective implementation modules." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Note that, in order for the stuff described below to work (static and runtime variability), you need to make sure that the feature models, on which the variability relies, are actually imported into the respective implementation modules." />
             </node>
           </node>
         </node>
@@ -502,7 +502,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238859341668" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is a statement, it can only be used in statement context -- so it cannot be used to vary arbirary behaviors, as expressed, for example, with state machines. Of course, additional, similar language constructs could be built to use with other DSLs." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is a statement, it can only be used in statement context -- so it cannot be used to vary arbirary behaviors as expressed, for example, with state machines. Of course, additional similar language constructs could be built to use with other DSLs." />
             </node>
           </node>
         </node>
@@ -522,7 +522,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238859341844" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" attribute and use it as a regular expression. Note that only attributes of selected features can be used! Othewise no value may be specified." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" attribute and use it as a normal expression. Note that only attributes of selected features can be used! Otherwise, no value may be specified." />
             </node>
           </node>
         </node>
@@ -562,7 +562,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238861079712" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" statement to store a specific configuration into the variable. We then call the above meantioned function where we then use the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" statement to store a specific configuration into the variable. We then call the above mentioned function where we then use the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238861079741" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238861079742" nodeInfo="ng">
@@ -596,7 +596,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238861098076" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238861098077" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238861098078" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="A presence condition is a Boolean expression over features attached to any program element. During transformation, the program element is deleted if, based on the selected configuration, the Boolean expression evaluates to false. Presence conditions are essentially a kind of \&quot;structure #ifdef\&quot;. In the two functions " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="A presence condition is a Boolean expression over features attached to any program element. During transformation, the program element is deleted if, based on the selected configuration, the Boolean expression evaluates to false. Presence conditions are essentially a kind of \&quot;structured #ifdef\&quot;. In the two functions " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="5479545238862430973" nodeInfo="ng">
               <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="5479545238862430974" nodeInfo="ng">
@@ -733,7 +733,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238861098090" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238861098091" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238861098092" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Presence conditions are useful for blocks, or statemetns, or other structural parts of programs. However, sometimes you only want to change the value of expressions. Exchanging the complete statement (e.g., in case of a variable declaration) has the problem of changing the identities of the variables which leads to all kinds of downstream problems. It is hence much better to change the value of a variable by exchanging an expression. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Presence conditions are useful for blocks, or statements, or other structural parts of programs. However, sometimes you only want to change the value of expressions. Exchanging the complete statement (e.g., in case of a variable declaration) has the problem of changing the identities of the variables, which leads to all kinds of downstream problems. It is hence much better to change the value of a variable by exchanging an expression. " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863081791" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863081792" nodeInfo="ng">
@@ -789,7 +789,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863082181" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" we exhange the value " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" we exchange the value " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863082214" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863082215" nodeInfo="ng">
@@ -829,7 +829,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863087377" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" other one, based on a feature condition. It's a bit like an " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" other expression, based on a feature condition. It's a bit like an " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863087432" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863087433" nodeInfo="ng">
@@ -944,7 +944,7 @@
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5479545238863714605" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863714606" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863714607" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="You then write one ore more alternative functions. Each is marked as a " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="You then write one or more alternative functions. Each is marked as a " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863719774" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863719775" nodeInfo="ng">
@@ -1007,7 +1007,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863742177" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Note that you will get errors in the build configuration and sometimes during generation itself if no configutation is specified for a feature model used in the system." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Note that you will get errors in the build configuration and sometimes during generation itself, if no configuration is specified for a feature model used in the system." />
             </node>
           </node>
           <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="5479545238861131954" nodeInfo="ng">
@@ -1124,6 +1124,41 @@
         <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
       </node>
     </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="5918211902451746478" nodeInfo="ng">
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="5918211902451746479" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 5, 2014 4:19:30 PM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word8" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="536680812409754438" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="5918211902451746480" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5918211902451746481" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="When do I use which one? What are the trade-offs?" />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="5918211902452302845" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 8:40:32 AM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word53" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5479545238861098092" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="5918211902452302846" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5918211902452302847" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="But why does it work with conditional alternatives?" />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="5918211902452339568" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 8:48:40 AM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_text" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="536680812409754434" resolveInfo="productlinevariability" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="5918211902452339569" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5918211902452339570" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="I would prefer to have the example code inlined instead of referenced. It is a bit annoying to jump between the documentation and the code." />
+          </node>
+        </node>
+      </node>
+    </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="2101724341003962934" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
@@ -1215,7 +1250,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863768778" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" menu) and take a look how the user guide is built. We'll explain some basics in this chapter but otherwise recommend you just look at the user guide." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" menu) and take a look how the user guide is built. We'll explain some basics in this chapter but otherwise recommend you to just look at the user guide." />
             </node>
           </node>
         </node>
@@ -1274,12 +1309,12 @@
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="5479545238863769850" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863769851" nodeInfo="ng">
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863769852" nodeInfo="ng">
-                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Latex:" />
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="LaTeX:" />
                     </node>
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863769854" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" A generator create a Latex sources from documentation language Documents. While this works well in principle, there are several layouting problems with image sizes. After the sources have been generated they have to be processed by Latex manually (e.g., by invoking " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" A generator creates LaTeX sources from documentation language Documents. While this works well in principle, there are several layouting problems with image sizes. After the sources have been generated they have to be processed by Latex manually (e.g., by invoking " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238863769861" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863769862" nodeInfo="ng">
@@ -1316,7 +1351,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863769927" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Similar to Latex, we can also generate HTML sources. The approach has some of the same issues. Will be discussed in more detail soon. " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Similar to LaTeX, we can also generate HTML sources. The approach has some of the same issues. Will be discussed in more detail soon. " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="5479545238863770940" nodeInfo="ng">
                   <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238863770941" nodeInfo="ng">
@@ -1362,7 +1397,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238865062825" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Documents are the main roots in which documentation language content lives. As usual in mbeddr, Documents can express depedencies on other Documents." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Documents are the main roots in which documentation language content lives. As usual in mbeddr, Documents can express dependencies on other Documents." />
                 </node>
               </node>
             </node>
@@ -1379,7 +1414,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238865062851" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" A document contains sections. Sections have a name (used for referencing them) as well as a title. Sections can be nested. They are also automatically assigned number (even though this does not work correctly in Presentation Mode). A reference to a section is created via the " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" A document contains sections. Sections have a name (used for referencing them) as well as a title. Sections can be nested. They are also automatically assigned a number (even though this does not work correctly in Presentation Mode). A reference to a section is created via the " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238865062857" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238865062858" nodeInfo="ng">
@@ -1406,7 +1441,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238865062934" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" There is also a kind of \&quot;special section\&quot;, the Chapter. Is is simlar in all respects to sections except that " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" There is also a kind of \&quot;special section\&quot;, the Chapter. It is simlar in all respects to sections except that it " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="5479545238865062940" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238865062941" nodeInfo="ng">
@@ -1433,7 +1468,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238865062959" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Inside sections, there are all kinds of paragraphs. " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Inside sections there are all kinds of paragraphs. " />
                 </node>
               </node>
             </node>
@@ -1443,7 +1478,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238865063252" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238865063253" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238865063254" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The paragraph is an abstract concept of which many many subconcepts exist. They hold the meat of the document:" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The paragraph is an abstract concept of which many subconcepts exist. They hold the meat of the document:" />
           </node>
         </node>
         <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="5479545238865065180" nodeInfo="ng">
@@ -1497,7 +1532,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238866351839" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" similar to the previous one, but the code is rendered as an image (screenshot) when serialized to Latex or HTML." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Similar to the previous one, but the code is rendered as an image (screenshot) when serialized to Latex or HTML." />
               </node>
             </node>
           </node>
@@ -1514,7 +1549,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238866355193" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" references a program node that has a visualization. When rendered out, the visualization is created in real time and embedded." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" References a program node that has a visualization. When rendered out, the visualization is created in real time and embedded." />
               </node>
             </node>
           </node>
@@ -1523,7 +1558,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238865065322" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238865065323" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238865065324" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Inside text paragraphs, you can use various differnet special words. Those that start with a backslash are used for formatting. Those that start with a " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Inside text paragraphs, you can use various different special words. Those that start with a backslash are used for formatting. Those that start with an " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238866358851" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238866358852" nodeInfo="ng">
@@ -1533,7 +1568,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238866358854" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" are referenecs. They can be entered by pressing " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" are references. They can be entered by pressing " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="5479545238866359276" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238866359277" nodeInfo="ng">
@@ -1663,7 +1698,7 @@
           <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5479545238866363371" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238866363372" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238866363373" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="You can point to other resources is the file system using " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="You can point to other resources in the file system using " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238866363454" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238866363455" nodeInfo="ng">
@@ -1748,7 +1783,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238865065564" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238865065565" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238865065566" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Every document must refer to a Configuration node. It is mostly used in the context of Latex or HTML rendering. However, it also defines the default path where the visualizations store their temporary images. Most importantly, it defines the path prefixes where images (and other attachments) are searched. The path is " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Every document must refer to a Configuration node. It is mostly used in the context of LaTeX or HTML rendering. However, it also defines the default path where the visualizations store their temporary images. Most importantly, it defines the path prefixes where images (and other attachments) are searched. The path is " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="5479545238866363463" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238866363464" nodeInfo="ng">
@@ -1758,7 +1793,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238866363467" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" relative to the current solution root directory. When defining image paragraphs or attachments, you use one of the paths defined in the Config as the path prefix and select an image \&quot;below\&quot; this path prefix. This is supported with code completion." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" relative to the current solutions root directory. When defining image paragraphs or attachments, you use one of the paths defined in the Config as the path prefix and select an image \&quot;below\&quot; this path prefix. This is supported with code completion." />
           </node>
         </node>
         <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="5479545238865065567" nodeInfo="ng">
@@ -1768,7 +1803,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238865066067" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238865066068" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238865066069" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="For consuming documents inside MPS using the presentation mode, no build is necessary. However, in case of generating Latex or HTML, a " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="For consuming documents inside MPS using the presentation mode, no build is necessary. However, in case of generating LaTeX or HTML, a " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238866523098" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238866523099" nodeInfo="ng">
@@ -1794,6 +1829,19 @@
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="5479545238865063053" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="5918211902452395838" nodeInfo="ng">
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="5918211902452395839" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 9:04:53 AM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word9" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5479545238865063573" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="5918211902452395840" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5918211902452395841" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="A missing period or missing content" />
+          </node>
+        </node>
+      </node>
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="3231021218602645813" nodeInfo="ng">
