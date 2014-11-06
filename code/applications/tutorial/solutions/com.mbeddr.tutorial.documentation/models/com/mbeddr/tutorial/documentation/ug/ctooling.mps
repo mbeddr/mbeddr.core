@@ -730,7 +730,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116537" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and holds paramerters for the various parts of mbeddr generators.\n" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and holds parameters for the various parts of mbeddr generators.\n" />
           </node>
         </node>
       </node>
