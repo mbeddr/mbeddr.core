@@ -14,8 +14,6 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="oqy7" modelUID="r:5355e160-db68-4e93-9241-257192f43eed(com.mbeddr.mpsutil.review.annotation.structure)" version="-1" implicit="yes" />
-  <import index="elym" modelUID="r:ab11cd4e-3f49-4307-8d3a-82afd3a5de48(com.mbeddr.mpsutil.margincell.structure)" version="0" implicit="yes" />
-  <import index="7krq" modelUID="r:bb3fd8a9-1cdd-4b54-9700-375a64081041(com.mbeddr.mpsutil.review.structure)" version="0" implicit="yes" />
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="2637267020265430784" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Config" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
@@ -75,6 +73,13 @@
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="536680812409770449" nodeInfo="ng">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value=" makes the decision before program execution. In particular, the MPS generators remove all the program code that is not part of a particular variant. The binary is tailored, and the mechanism is generic -- the target language does not have to be aware of the variability. We discuss both approaches in this chapter." />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="85256576553538226" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576553538227" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576553538228" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="A discussion of the trade-offs between static and runtime variability is beyond the scope of this user guide: it is not a tutorial on product line engineering in general, but only a tutorial on how to do it with mbeddr." />
           </node>
         </node>
       </node>
@@ -360,7 +365,13 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238859302881" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" feature." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" feature. An example configuration is also shown in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="85256576553537263" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="85256576553537121" resolveInfo="cfgNullifyMaxAt200" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576553537264" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
             </node>
           </node>
           <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="5479545238859295499" nodeInfo="ng">
@@ -373,6 +384,26 @@
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Note that, in order for the stuff described below to work (static and runtime variability), you need to make sure that the feature models, on which the variability relies, are actually imported into the respective implementation modules." />
             </node>
           </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="85256576553537121" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="cfgNullifyMaxAt200" />
+          <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="85256576553537122" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576553537123" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576553537124" nodeInfo="ng" />
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.6955693250238922833" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="85256576553537128" nodeInfo="ng" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="85256576553537129" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="85256576553537130" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5441227754062389703" resolveInfo="FlightVariability" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="85256576553537131" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5441227754062477139" resolveInfo="cfgNullifyMaxAt200" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="85256576553536997" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="536680812410060453" nodeInfo="ng">
@@ -753,7 +784,17 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238863081808" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" can be used for this. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" can be used for this. You can also use " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="85256576553534419" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576553534420" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576553534421" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Conditional Alternatives" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576553534422" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", as discussed below." />
             </node>
           </node>
           <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="5479545238861098093" nodeInfo="ng">
@@ -1124,41 +1165,6 @@
         <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
       </node>
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="5918211902451746478" nodeInfo="ng">
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="5918211902451746479" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 5, 2014 4:19:30 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word8" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="536680812409754438" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="5918211902451746480" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5918211902451746481" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="When do I use which one? What are the trade-offs?" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="5918211902452302845" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 8:40:32 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word53" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5479545238861098092" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="5918211902452302846" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5918211902452302847" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="But why does it work with conditional alternatives?" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="5918211902452339568" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 8:48:40 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_text" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="536680812409754434" resolveInfo="productlinevariability" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="5918211902452339569" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5918211902452339570" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="I would prefer to have the example code inlined instead of referenced. It is a bit annoying to jump between the documentation and the code." />
-          </node>
-        </node>
-      </node>
-    </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="2101724341003962934" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
@@ -1224,19 +1230,7 @@
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <property name="name" nameId="tpck.1169194664001" value="D_Documentation" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="5918211902452395838" nodeInfo="ng">
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="5918211902452395839" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 9:04:53 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word9" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5479545238865063573" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="5918211902452395840" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5918211902452395841" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="A missing period or missing content" />
-          </node>
-        </node>
-      </node>
-    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="5918211902452395838" nodeInfo="ng" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="3231021218602638869" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="doc" />
       <property name="text" nameId="2c95.3350625596580064225" value="Documentation Language" />
@@ -1511,7 +1505,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238865063573" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" This represents an embedded image. You specify a path " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" This represents an embedded image. You specify a path prefix (see Configuration and Resources below), and then you can use code completion to select an image file under that path that should be shown in the editor." />
               </node>
             </node>
           </node>
@@ -1848,19 +1842,7 @@
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <property name="name" nameId="tpck.1169194664001" value="C_Assessments" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="5918211902451643265" nodeInfo="ng">
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="5918211902451643266" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 5, 2014 3:33:58 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word15" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5479545238857002942" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="5918211902451643267" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5918211902451643268" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Why is this checkbox only visible in this case. I still see the blue coloring and can toggle the OK state via an intention." />
-          </node>
-        </node>
-      </node>
-    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="5918211902451643265" nodeInfo="ng" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="3231021218602645814" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="assess" />
       <property name="text" nameId="2c95.3350625596580064225" value="Assessments" />
@@ -2113,30 +2095,10 @@
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <property name="name" nameId="tpck.1169194664001" value="A_Requirements" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="8280358843927224705" nodeInfo="ng">
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="8280358843927224706" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 4:25:18 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word1" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="1195021413141386850" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="8280358843927224707" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8280358843927224708" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Does the user know where to select projection modes?" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="8280358843927225658" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 4, 2014 4:27:54 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="Constant_xqq90p_a0" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="1195021413141389610" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="8280358843927225659" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8280358843927225660" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Is this broken? I don't see anything" />
-          </node>
-        </node>
-      </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576552140328" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="bmc6.1481709176727862912" resolveInfo="C_Editor" />
     </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="8280358843927224705" nodeInfo="ng" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1195021413140175530" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="req" />
       <property name="text" nameId="2c95.3350625596580064225" value="Requirements" />
@@ -2545,7 +2507,13 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1195021413141386850" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" that projects buttons into a requirements module to add child requirements, data or change the nesting hierarchy." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" that projects buttons into a requirements module to add child requirements, data or change the nesting hierarchy (see " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="85256576552141721" nodeInfo="ng">
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="bmc6.2101724341004008376" resolveInfo="projectionModes" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576552141720" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" on how to swich Projection Modes)." />
             </node>
           </node>
         </node>
@@ -2610,41 +2578,7 @@
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <property name="name" nameId="tpck.1169194664001" value="B_Tracing" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="909032631832417434" nodeInfo="ng">
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="909032631832417435" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 5, 2014 12:33:53 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="ReadOnlyModelAccessor_7loawg_a" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="2805811593282964052" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="909032631832417436" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="909032631832417437" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Can't find that. And I am lazy. A picture would be nice." />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="909032631832510687" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 5, 2014 12:48:32 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word0" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="2805811593284570451" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="909032631832510688" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="909032631832510689" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="I can't imagine how that would look like. A picture is worth a thousand words." />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="909032631832547741" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 5, 2014 12:57:41 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="ReadOnlyModelAccessor_7loawg_a" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="2805811593284570834" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="909032631832547742" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="909032631832547743" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="This mysterious StateMachines module again." />
-          </node>
-        </node>
-      </node>
-    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="909032631832417434" nodeInfo="ng" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2805811593275579771" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="tracing" />
       <property name="text" nameId="2c95.3350625596580064225" value="Tracing" />
@@ -2698,7 +2632,13 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593282964054" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" module. It has traces attached to a number of C constants and to various parts of the state machine. Make sure you select a projection mode that lets you actually see the traces (see below)." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" module. It has traces attached to a number of C constants and to various parts of the state machine (make sure you select a projection mode that actually shows the traces); an example is also shown in " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="85256576553523353" nodeInfo="ng">
+            <link role="image" roleId="2c95.6386504476136420174" targetNodeId="85256576553522975" resolveInfo="detailedTraces" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576553523352" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Make sure you select a projection mode that lets you actually see the traces (see below)." />
           </node>
         </node>
       </node>
@@ -2771,7 +2711,13 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593284569990" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=": The trace kind and the trace target(s) are shown on the right side of the traced node" />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=": The trace kind and the trace target(s) are shown on the right side of the traced node (see " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="85256576553523161" nodeInfo="ng">
+                <link role="image" roleId="2c95.6386504476136420174" targetNodeId="85256576553522975" resolveInfo="detailedTraces" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576553523162" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=")." />
               </node>
             </node>
           </node>
@@ -2798,7 +2744,13 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593284570452" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is shown on the right side of the traced node. A tooltip shows the first of the traces elements and the trace kind. The kind and targets can be changed in the inspector of the " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is shown on the right side of the traced node (see " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="85256576552176554" nodeInfo="ng">
+                <link role="image" roleId="2c95.6386504476136420174" targetNodeId="85256576552176368" resolveInfo="littleTs" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576552176553" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="). A tooltip shows the first of the traces elements and the trace kind. The kind and targets can be changed in the inspector of the " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2805811593284570471" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593284570472" nodeInfo="ng">
@@ -2831,6 +2783,32 @@
           </node>
         </node>
       </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="85256576553522975" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="detailedTraces" />
+        <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="85256576553522976" nodeInfo="ng">
+          <property name="fileName" nameId="2c95.6386504476136521408" value="detailedTraces.png" />
+          <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+        </node>
+        <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="85256576553522977" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576553522978" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576553522979" nodeInfo="ng" />
+          </node>
+        </node>
+        <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="85256576553522980" nodeInfo="ng" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="85256576552176368" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="littleTs" />
+        <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="85256576552176550" nodeInfo="ng">
+          <property name="fileName" nameId="2c95.6386504476136521408" value="littleTTraces.png" />
+          <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+        </node>
+        <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="85256576552176372" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576552176373" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576552176374" nodeInfo="ng" />
+          </node>
+        </node>
+        <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="85256576552176376" nodeInfo="ng" />
+      </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2805811593284570664" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2805811593284570665" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593284570666" nodeInfo="ng">
@@ -2844,7 +2822,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2805811593284570836" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" module." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" module which contains traces to requirements." />
           </node>
         </node>
       </node>
@@ -3070,6 +3048,7 @@
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <property name="name" nameId="tpck.1169194664001" value="E_CodeReview" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="5918211902452680128" nodeInfo="ng" />
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576550581272" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3231021218602645813" resolveInfo="C_Assessments" />
     </node>
@@ -3082,7 +3061,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="85256576547062652" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576547062653" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576547062654" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Code reviews are an important ingredient of many development processes. The idea is that in addition to writing the code, the code is also reviewed by another person as a means of quality assurance and joint learning. To this end, it must be tracked which parts of the code are ready for review, which parts have been reviewed (and by whom), and which parts have changed since the review (and hence need to be re-reviewed). In mbeddr, we support this process with the following appraoch:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Code reviews are an important ingredient of many development processes. The idea is that in addition to writing the code, the code is also reviewed by another person as a means of quality assurance and joint learning. To this end, it must be tracked which parts of the code are ready for review, which parts have been reviewed (and by whom), and which parts have changed since the review (and hence need to be re-reviewed). In mbeddr, we support this process with the following approach:" />
             </node>
           </node>
         </node>
@@ -3112,6 +3091,37 @@
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="Intentions are used to change the review states." />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="85256576547949366" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="projectionModes" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Projection Modes" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="85256576550575767" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576550575768" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575769" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The code review data is shown with the review state annotation and a custom background color. Sometimes, however, you don't want to see this stuff in the code. Hence there are two projection modes: the review state and the background colors are only shown if you check the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="85256576550575817" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576550575818" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575819" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Review State" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575820" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" option in the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.MenuFormattedText" typeId="2c95.2286331641392318852" id="85256576550575831" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576550575832" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575833" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Code-&gt;Projection Mode" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575834" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" menu. Make sure you enable the display of the review state so you can follow the next subsections. " />
             </node>
           </node>
         </node>
@@ -3229,7 +3239,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550313190" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The code gets a gree background. Check out this node " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The code gets a green background. Check out this node " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="85256576550342053" nodeInfo="ng">
                   <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="85256576550342054" nodeInfo="ng">
@@ -3350,37 +3360,6 @@
           </node>
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="85256576547949366" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="projectionModes" />
-        <property name="text" nameId="2c95.3350625596580064225" value="Projection Modes" />
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="85256576550575767" nodeInfo="ng">
-          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576550575768" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575769" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The code review data is shown with the review state annotation and a custom background color. Sometimes, hwoever, you don't want to see this stuff in the code. Hence there are two projection modes: the review state and the background colors are only shown if you check the " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="85256576550575817" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576550575818" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575819" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Review State" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575820" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" option in the " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.MenuFormattedText" typeId="2c95.2286331641392318852" id="85256576550575831" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576550575832" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575833" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Code-&gt;Projection Mode" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575834" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" menu." />
-            </node>
-          </node>
-        </node>
-      </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="85256576547059029" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="assessment" />
         <property name="text" nameId="2c95.3350625596580064225" value="Assessments" />
@@ -3437,7 +3416,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576551944934" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". In the query you can set the scope to either a single chunk, a single model, or a model includings its imports. The results show the state of the review for the various revieable nodes (incl. the color code); the second column is clickable, so you can directly jump to the mentioned section of code." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". In the query you can set the scope to either a single chunk, a single model, or a model includings its imports. The results show the state of the review for the various reviewable nodes (incl. the color code); the second column is clickable, so you can directly jump to the mentioned section of code." />
             </node>
           </node>
         </node>
