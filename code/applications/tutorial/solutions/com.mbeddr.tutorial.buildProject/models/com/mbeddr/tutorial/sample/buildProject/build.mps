@@ -11,7 +11,7 @@
   <import index="kdzh" modelUID="r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)" version="3" implicit="yes" />
   <root type="3ior.BuildProject" typeId="3ior.5617550519002745363" id="6002249030800991566" nodeInfo="ng">
     <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="." />
-    <property name="name" nameId="tpck.1169194664001" value="build" />
+    <property name="name" nameId="tpck.1169194664001" value="build-example" />
     <node role="macros" roleId="3ior.5617550519002745378" type="3ior.BuildFolderMacro" typeId="3ior.7389400916848136194" id="6002249030801095286" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="mps.home" />
     </node>
