@@ -10264,7 +10264,7 @@
         <node role="anchor" roleId="q3j0.9185659875393569181" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="293752265165412445" nodeInfo="nn">
           <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="293752265165415568" nodeInfo="nn" />
           <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="498292997618203627" nodeInfo="nn">
-            <property name="text" nameId="tpc2.1073389577007" value="[ Code is" />
+            <property name="text" nameId="tpc2.1073389577007" value="[review:" />
             <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="498292997618340865" resolveInfo="deleteReview" />
           </node>
           <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_ReadOnlyModelAccessor" typeId="tpc2.1225900081164" id="6786338284920158025" nodeInfo="ng">
@@ -10287,7 +10287,7 @@
             </node>
           </node>
           <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="279511073606999570" nodeInfo="nn">
-            <property name="text" nameId="tpc2.1073389577007" value="  Was reviewed" />
+            <property name="text" nameId="tpc2.1073389577007" value="as of" />
             <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="279511073607160448" nodeInfo="nn">
               <property name="style" nameId="tpc2.1186403771423" value="ITALIC" />
             </node>
@@ -10328,7 +10328,7 @@
             </node>
           </node>
           <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5167603879042908822" nodeInfo="nn">
-            <property name="text" nameId="tpc2.1073389577007" value="and has changed since that!" />
+            <property name="text" nameId="tpc2.1073389577007" value="and has changed since." />
             <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="279511073607161778" nodeInfo="nn">
               <property name="style" nameId="tpc2.1186403771423" value="ITALIC" />
             </node>
@@ -10354,6 +10354,9 @@
           </node>
           <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="293752265166786507" nodeInfo="nn">
             <property name="text" nameId="tpc2.1073389577007" value="]" />
+            <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="85256576549448475" nodeInfo="nn">
+              <property name="flag" nameId="tpc2.1186414551515" value="true" />
+            </node>
           </node>
         </node>
       </node>
