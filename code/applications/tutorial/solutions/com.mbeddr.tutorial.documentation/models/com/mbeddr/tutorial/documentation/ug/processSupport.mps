@@ -14,8 +14,6 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="oqy7" modelUID="r:5355e160-db68-4e93-9241-257192f43eed(com.mbeddr.mpsutil.review.annotation.structure)" version="-1" implicit="yes" />
-  <import index="elym" modelUID="r:ab11cd4e-3f49-4307-8d3a-82afd3a5de48(com.mbeddr.mpsutil.margincell.structure)" version="0" implicit="yes" />
-  <import index="7krq" modelUID="r:bb3fd8a9-1cdd-4b54-9700-375a64081041(com.mbeddr.mpsutil.review.structure)" version="0" implicit="yes" />
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="2637267020265430784" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Config" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
@@ -3050,19 +3048,7 @@
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <property name="name" nameId="tpck.1169194664001" value="E_CodeReview" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="5918211902452680128" nodeInfo="ng">
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="5918211902452680129" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 12:03:33 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="ReadOnlyModelAccessor_7loawg_a" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="85256576548034097" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="5918211902452680130" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5918211902452680131" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="At this point it helps to know that there is a projection mode that I have to enable. Move Section 1.3 up or reference to it here." />
-          </node>
-        </node>
-      </node>
-    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="5918211902452680128" nodeInfo="ng" />
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576550581272" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3231021218602645813" resolveInfo="C_Assessments" />
     </node>
@@ -3105,6 +3091,37 @@
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="Intentions are used to change the review states." />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="85256576547949366" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="projectionModes" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Projection Modes" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="85256576550575767" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576550575768" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575769" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The code review data is shown with the review state annotation and a custom background color. Sometimes, however, you don't want to see this stuff in the code. Hence there are two projection modes: the review state and the background colors are only shown if you check the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="85256576550575817" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576550575818" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575819" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Review State" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575820" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" option in the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.MenuFormattedText" typeId="2c95.2286331641392318852" id="85256576550575831" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576550575832" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575833" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Code-&gt;Projection Mode" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575834" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" menu. Make sure you enable the display of the review state so you can follow the next subsections. " />
             </node>
           </node>
         </node>
@@ -3339,37 +3356,6 @@
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576551997422" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="85256576547949366" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="projectionModes" />
-        <property name="text" nameId="2c95.3350625596580064225" value="Projection Modes" />
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="85256576550575767" nodeInfo="ng">
-          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576550575768" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575769" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The code review data is shown with the review state annotation and a custom background color. Sometimes, however, you don't want to see this stuff in the code. Hence there are two projection modes: the review state and the background colors are only shown if you check the " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="85256576550575817" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576550575818" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575819" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Review State" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575820" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" option in the " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.MenuFormattedText" typeId="2c95.2286331641392318852" id="85256576550575831" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576550575832" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575833" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Code-&gt;Projection Mode" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575834" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" menu." />
             </node>
           </node>
         </node>
