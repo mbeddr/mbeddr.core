@@ -14,6 +14,8 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="oqy7" modelUID="r:5355e160-db68-4e93-9241-257192f43eed(com.mbeddr.mpsutil.review.annotation.structure)" version="-1" implicit="yes" />
+  <import index="elym" modelUID="r:ab11cd4e-3f49-4307-8d3a-82afd3a5de48(com.mbeddr.mpsutil.margincell.structure)" version="0" implicit="yes" />
+  <import index="7krq" modelUID="r:bb3fd8a9-1cdd-4b54-9700-375a64081041(com.mbeddr.mpsutil.review.structure)" version="0" implicit="yes" />
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="2637267020265430784" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Config" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
@@ -2095,6 +2097,9 @@
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <property name="name" nameId="tpck.1169194664001" value="A_Requirements" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576552140328" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="bmc6.1481709176727862912" resolveInfo="C_Editor" />
+    </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="8280358843927224705" nodeInfo="ng" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1195021413140175530" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="req" />
@@ -2569,9 +2574,6 @@
           <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="1195021413141415810" nodeInfo="ng" />
         </node>
       </node>
-    </node>
-    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576552140328" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="bmc6.1481709176727862912" resolveInfo="C_Editor" />
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="2805811593275538934" nodeInfo="ng">
@@ -3048,6 +3050,19 @@
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <property name="name" nameId="tpck.1169194664001" value="E_CodeReview" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="5918211902452680128" nodeInfo="ng">
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="5918211902452680129" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="slisson" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 12:03:33 PM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="ReadOnlyModelAccessor_7loawg_a" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="85256576548034097" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="5918211902452680130" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5918211902452680131" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="At this point it helps to know that there is a projection mode that I have to enable. Move Section 1.3 up or reference to it here." />
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576550581272" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="3231021218602645813" resolveInfo="C_Assessments" />
     </node>
@@ -3060,7 +3075,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="85256576547062652" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576547062653" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576547062654" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Code reviews are an important ingredient of many development processes. The idea is that in addition to writing the code, the code is also reviewed by another person as a means of quality assurance and joint learning. To this end, it must be tracked which parts of the code are ready for review, which parts have been reviewed (and by whom), and which parts have changed since the review (and hence need to be re-reviewed). In mbeddr, we support this process with the following appraoch:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Code reviews are an important ingredient of many development processes. The idea is that in addition to writing the code, the code is also reviewed by another person as a means of quality assurance and joint learning. To this end, it must be tracked which parts of the code are ready for review, which parts have been reviewed (and by whom), and which parts have changed since the review (and hence need to be re-reviewed). In mbeddr, we support this process with the following approach:" />
             </node>
           </node>
         </node>
@@ -3207,7 +3222,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550313190" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The code gets a gree background. Check out this node " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The code gets a green background. Check out this node " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="85256576550342053" nodeInfo="ng">
                   <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="85256576550342054" nodeInfo="ng">
@@ -3334,7 +3349,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="85256576550575767" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576550575768" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576550575769" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The code review data is shown with the review state annotation and a custom background color. Sometimes, hwoever, you don't want to see this stuff in the code. Hence there are two projection modes: the review state and the background colors are only shown if you check the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The code review data is shown with the review state annotation and a custom background color. Sometimes, however, you don't want to see this stuff in the code. Hence there are two projection modes: the review state and the background colors are only shown if you check the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="85256576550575817" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576550575818" nodeInfo="ng">
@@ -3415,7 +3430,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576551944934" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". In the query you can set the scope to either a single chunk, a single model, or a model includings its imports. The results show the state of the review for the various revieable nodes (incl. the color code); the second column is clickable, so you can directly jump to the mentioned section of code." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". In the query you can set the scope to either a single chunk, a single model, or a model includings its imports. The results show the state of the review for the various reviewable nodes (incl. the color code); the second column is clickable, so you can directly jump to the mentioned section of code." />
             </node>
           </node>
         </node>
