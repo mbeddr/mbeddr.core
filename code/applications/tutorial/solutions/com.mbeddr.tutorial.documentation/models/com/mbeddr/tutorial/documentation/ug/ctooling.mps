@@ -512,13 +512,13 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176590723" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176590724" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176590725" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="So far we have not accessed any functions external to the mbeddr program --- everything was self-contained. Let us now look at how to access external code. We start with the simplest possible example. We would like to be able to write the following code:" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="So far we have not accessed any functions external to the mbeddr program - everything was self-contained. Let us now look at how to access external code. We start with the simplest possible example. We would like to be able to write the following code:" />
           </node>
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="7979854108176599134" nodeInfo="ng">
         <property name="language" nameId="2c95.8730648445434044905" value="mbeddr" />
-        <property name="text" nameId="2c95.8730648445434044906" value="module LibraryAccess imports nothing { &#10;  exported test case testPrintf { &#10;&#9;printf(&quot;Hello, World\n&quot;); &#10;    int8 i = 10; &#10;    printf(&quot;i = %i\n&quot;, i);  } &#10;  }" />
+        <property name="text" nameId="2c95.8730648445434044906" value="module LibraryAccess imports nothing { &#10;  exported test case testPrintf { &#10;    printf(&quot;Hello, World\n&quot;); &#10;    int8 i = 10; &#10;    printf(&quot;i = %i\n&quot;, i);  } &#10;  }" />
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176601946" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176601947" nodeInfo="ng">
@@ -674,7 +674,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176665690" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", we don't have to specify this --- gcc somehow does this automatically.  So what remains to do is to write the actual " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", we don't have to specify this - gcc somehow does this automatically. So what remains to do is to write the actual " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176665716" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176665717" nodeInfo="ng">
@@ -710,7 +710,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176674338" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176674339" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7979854108176674340" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To be able write the test case, we have to import the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To be able to write the test case, we have to import the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7979854108176677255" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176677256" nodeInfo="ng">
@@ -788,16 +788,8 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176683609" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7979854108176683610" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030800723678" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr has support for importing existing C code. But this is a comercial extension that has to be installed seperately.\nFor futher information please contact " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr has support for importing existing C code. But this is a comercial extension that has to be installed seperately.\nFor futher information please contact mbeddr@itemis.de" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="6002249030800731744" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030800731745" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030800731746" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr@itemis.de" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030800731747" nodeInfo="ng" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7979854108176689220" nodeInfo="ng">
