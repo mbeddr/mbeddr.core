@@ -13,6 +13,9 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="oqy7" modelUID="r:5355e160-db68-4e93-9241-257192f43eed(com.mbeddr.mpsutil.review.annotation.structure)" version="-1" implicit="yes" />
+  <import index="elym" modelUID="r:ab11cd4e-3f49-4307-8d3a-82afd3a5de48(com.mbeddr.mpsutil.margincell.structure)" version="0" implicit="yes" />
+  <import index="7krq" modelUID="r:bb3fd8a9-1cdd-4b54-9700-375a64081041(com.mbeddr.mpsutil.review.structure)" version="0" implicit="yes" />
+  <import index="4kwm" modelUID="r:5ff4e1a0-ec5b-4e83-a849-9e8c2c4adf79(com.mbeddr.tutorial.documentation.ug.ctooling)" version="-1" implicit="yes" />
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="2637267020265430784" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Config" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
@@ -480,7 +483,6 @@
     <property name="name" nameId="tpck.1169194664001" value="A_c99VsMbeddr" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="2" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="8280358843927173381" nodeInfo="ng" />
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="4770972444967673852" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="us0v.9020927825193793093" resolveInfo="C_FormalVerification" />
     </node>
@@ -489,6 +491,9 @@
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576563891815" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="vi23.536680812409687143" resolveInfo="F_ProductLineVariability" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="1987049260901396739" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4kwm.4376803293067553112" resolveInfo="C_LaunchConfiguration" />
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2723638869557430314" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="ModuleSystem" />
@@ -609,7 +614,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2723638869557403977" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". A chunk has a name as well as a set of dependencies, i.e., references of chunks it depends on. Chunks come in many differenet kinds. " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". A chunk has a name as well as a set of dependencies, i.e., references of chunks it depends on. Chunks come in many different kinds. " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2723638869557404092" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2723638869557404093" nodeInfo="ng">
@@ -689,7 +694,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576563801054" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=") content are referencable; see below)." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" content are referencable; see below)." />
           </node>
         </node>
         <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="2723638869557403856" nodeInfo="ng">
@@ -699,7 +704,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="993292703731046389" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="993292703731046390" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="993292703731046391" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Modules are the chunks that contain C code (as opposed to, for example, build configuratins or requirements). mbeddr has two different kinds of modules. The most common one is the " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Modules are the chunks that contain C code (as opposed to, for example, build configurations or requirements). mbeddr has two different kinds of modules. The most common one is the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="993292703731046627" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="993292703731046628" nodeInfo="ng">
@@ -739,7 +744,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="993292703731048263" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="s always have to declare a header files that is included in the generated C code (the files for which they are a proxy)." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="s always have to declare a header file that is included in the generated C code (the files for which they are a proxy)." />
           </node>
         </node>
         <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="993292703731046392" nodeInfo="ng">
@@ -873,7 +878,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="85256576563803187" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576563803188" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576563803189" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr supports all of C99's data types in principle, but it changes a few detauls. We discuss these details here." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr supports all of C99's data types in principle, but it changes a few defaults. We discuss these details here." />
           </node>
         </node>
       </node>
@@ -1597,7 +1602,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2723638869555190795" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2723638869555190796" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2723638869555190797" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The test executable can then be run like any other executable, as discussed in " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The test executable can then be run like any other executable, as  " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="4770972444967787293" nodeInfo="ng">
             <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="4770972444967787294" nodeInfo="ng">
@@ -1717,7 +1722,7 @@
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="85256576563898281" nodeInfo="ng">
             <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576563898282" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576563898283" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Also reference the Run COnfig stuff so we can hightlight the hyperlinks in the console." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Also reference the Run Config stuff, so we can highlight the hyperlinks in the console." />
               </node>
             </node>
           </node>
@@ -1730,7 +1735,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="85256576563897278" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576563897279" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576563897280" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Some of mbeddr's extensions (such as components or state machines) come with their own extensions of the testing language to make it more efficient to unit-test these abstractions. These extensions are discussed togetehr with the respective language extensions." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Some of mbeddr's extensions (such as components or state machines) come with their own extensions of the testing language to make it more efficient to unit-test these abstractions. These extensions are discussed together with the respective language extensions." />
           </node>
         </node>
         <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="85256576563897281" nodeInfo="ng">
@@ -1789,7 +1794,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="85256576539952866" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576539952867" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576539952868" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr supports several kinds of comments. We discuss all of them in this section. All of them have in common that they you so-called richtext blocks. This means that you can edit the multi-line comments in a way that resembles a regular text editor: pressing " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr supports several kinds of comments. We discuss all of them in this section. All of them have in common that they are so-called richtext blocks. This means that you can edit the multi-line comments in a way that resembles a regular text editor: pressing " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="85256576540005311" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576540005312" nodeInfo="ng">
@@ -1971,7 +1976,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="85256576542261060" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576542261061" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576542261062" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Statement comments are comments that are used in statement context (i.e., places where you write \&quot;procedural\&quot; C code). Examples can be seen in the following two examples:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Statement comments are comments that are used in statement context (i.e., places where you write \&quot;procedural\&quot; C code). Examples can be seen in the following two code fragments:" />
             </node>
           </node>
         </node>
@@ -2009,7 +2014,9 @@
                 </node>
               </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576543084041" nodeInfo="ng" />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576543084041" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            </node>
           </node>
         </node>
       </node>
@@ -2029,14 +2036,14 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576543084193" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to program nodes. This means that if you move/cut/copy/paste the program node, the documentation moves along with it. In addition, while statement comments can only be used in statement context, element documentation can be attached to all (coarse-grained) program nodes (functions, components, operations, states, transitions, unit declarations, etc). " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to program nodes. This means that if you move/cut/copy/paste the program node, the documentation moves along with it. In addition, while statement comments can only be used in statement context, element documentations can be attached to all (coarse-grained) program nodes (functions, components, operations, states, transitions, unit declarations, etc). " />
             </node>
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="85256576543114906" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576543114907" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576543114908" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To attach an element documetnation, you can use the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To attach an element documentation, you can use the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="85256576543114920" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576543114921" nodeInfo="ng">
@@ -2091,7 +2098,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576543510910" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" intention. Once there, they can be replied to or deleted using context menu items. The color of the comment outline depends on the commenter (as determined by the currently loggied in user name). " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" intention. Once there, they can be replied to or deleted using context menu items. The color of the comment outline depends on the commenter (as determined by the currently logged in user name). " />
             </node>
           </node>
         </node>
@@ -2231,6 +2238,52 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576544790123" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="3115042184193186463" nodeInfo="ng">
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="3115042184193186469" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 1:24:38 PM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word4" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="85256576542260973" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="3115042184193186470" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3115042184193186471" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="\&quot;references\&quot;?" />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="3115042184193186479" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 1:27:34 PM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word1" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="85256576543510910" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="3115042184193186480" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3115042184193186481" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="we need to add the right used languages first" />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="3115042184193186488" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 1:27:57 PM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word24" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="85256576543510910" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="3115042184193186489" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3115042184193186490" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="maybe mention the reason (helps distinguishing commenters); would make it more clear also" />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="3115042184193186500" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 1:29:15 PM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word63" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="85256576543581804" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="3115042184193186501" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3115042184193186502" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="we don't mention \&quot;text\&quot; comments before. Maybe rephrase \&quot;statement/margin/\&quot;" />
           </node>
         </node>
       </node>
