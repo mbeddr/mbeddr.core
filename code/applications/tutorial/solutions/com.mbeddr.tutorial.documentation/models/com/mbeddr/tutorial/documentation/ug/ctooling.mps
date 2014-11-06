@@ -720,7 +720,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116515" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is responsible for generation of the " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is responsible for the generation of the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801116538" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801116539" nodeInfo="ng">
@@ -931,7 +931,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801131970" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is configures with mbeddr modules are compiled as a single compilation unit. By default it can be either " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". It configures which mbeddr modules are compiled as a single compilation unit. By default it can be either " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801131981" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801131982" nodeInfo="ng">
@@ -961,7 +961,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801132036" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to create a ELF binary the later one just creates a linkable that can be used in further compilation. An " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to create an ELF binary the later one just creates a linkable that can be used in further compilation. An " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801132536" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801132537" nodeInfo="ng">
@@ -991,7 +991,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801132960" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" this flag has to be true. mbeddr will also check if all the moduls that are used in the code that should be compiled as a single compilation unit are included in the " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" this flag has to be true. mbeddr will also check if all the modules that are used in the code, that should be compiled as a single compilation unit, are included in the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801133019" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801133020" nodeInfo="ng">
@@ -1001,7 +1001,7 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801133022" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". If not mbeddr will prevent you from generating a broken " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". If not, mbeddr will prevent you from generating a broken " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801133089" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801133090" nodeInfo="ng">
