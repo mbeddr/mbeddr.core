@@ -262,6 +262,9 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030110993497" nodeInfo="ng">
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="4808973746553643416" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Units on Literals" />
+          </node>
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110993498" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110993499" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Adding these units may result in errors in the existing code (depending on whether you had added them in previous tutorial steps) because you cannot simply assign a plain number to a variable or member whose type includes a physical unit (" />
@@ -276,9 +279,6 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553643387" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is illegal). Instead you have to add units to the literals as well. You can simply type the unit  name after the literal to get to the following:" />
             </node>
-          </node>
-          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="4808973746553643416" nodeInfo="ng">
-            <property name="text" nameId="2c95.5185579450379273119" value="Units on Literals" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="620304030111005927" nodeInfo="ng">
@@ -447,13 +447,13 @@
           <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2219633145657368068" nodeInfo="ng">
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="4808973746553645999" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Editing Composite Units" />
+          </node>
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2219633145657368069" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145657368070" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="When you edit an expression with composite units you may encounter the problem that multiple side transformations are available at a given place and so you need to make the choice by hand. Consider the following code example:" />
             </node>
-          </node>
-          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="4808973746553645999" nodeInfo="ng">
-            <property name="text" nameId="2c95.5185579450379273119" value="Editing Composite Units" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="2219633145657290089" nodeInfo="ng">
@@ -625,13 +625,13 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2219633145657632766" nodeInfo="ng">
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="4808973746553698543" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Using Conversions" />
+          </node>
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2219633145657632767" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145657632502" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="You can now invoke this conversion within a convert expression:" />
             </node>
-          </node>
-          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="4808973746553698543" nodeInfo="ng">
-            <property name="text" nameId="2c95.5185579450379273119" value="Using Conversions" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="6955693250245236301" nodeInfo="ng">
