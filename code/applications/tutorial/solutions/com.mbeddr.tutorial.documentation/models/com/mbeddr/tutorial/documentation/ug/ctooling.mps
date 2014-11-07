@@ -9,13 +9,16 @@
   <import index="7qwm" modelUID="r:5bb9f839-879d-4d8b-98b1-43aac3dcfbee(mbeddr.tutorial.main.plainC)" version="-1" />
   <import index="4kwm" modelUID="r:5ff4e1a0-ec5b-4e83-a849-9e8c2c4adf79(com.mbeddr.tutorial.documentation.ug.ctooling)" version="-1" />
   <import index="cji1" modelUID="r:8ee4f4fa-3aa5-4db1-a73c-16bbfa7fe849(com.mbeddr.tutorial.sample.buildProject.build)" version="-1" />
-  <import index="orbb" modelUID="r:f440e167-2cf6-4609-a4e7-2d2c3fda0805(com.mbeddr.tutorial.sample.HelloWorld.main)" version="-1" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" />
+  <import index="orbb" modelUID="r:f440e167-2cf6-4609-a4e7-2d2c3fda0805(com.mbeddr.tutorial.sample.HelloWorld.main)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="16" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
+  <import index="oqy7" modelUID="r:5355e160-db68-4e93-9241-257192f43eed(com.mbeddr.mpsutil.review.annotation.structure)" version="-1" implicit="yes" />
+  <import index="elym" modelUID="r:ab11cd4e-3f49-4307-8d3a-82afd3a5de48(com.mbeddr.mpsutil.margincell.structure)" version="0" implicit="yes" />
+  <import index="7krq" modelUID="r:bb3fd8a9-1cdd-4b54-9700-375a64081041(com.mbeddr.mpsutil.review.structure)" version="0" implicit="yes" />
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="2637267020265430784" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Config" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
@@ -54,9 +57,6 @@
     <property name="name" nameId="tpck.1169194664001" value="D_Debugging" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="4" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
-    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8694947709985454255" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4376803293067553112" resolveInfo="C_LaunchConfiguration" />
-    </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="2900587364561785336" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="debugging" />
       <property name="text" nameId="2c95.3350625596580064225" value="Debugging" />
@@ -364,6 +364,9 @@
           <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7788280986208289331" nodeInfo="ng" />
         </node>
       </node>
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8694947709985454255" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4376803293067553112" resolveInfo="C_LaunchConfiguration" />
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="7979854108176562614" nodeInfo="ng">
@@ -1195,17 +1198,18 @@
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <property name="name" nameId="tpck.1169194664001" value="B_CommandLineBuild" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
-    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8694947709985878719" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="xojk.1560676800020893685" resolveInfo="D_Mbeddr" />
-    </node>
-    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8694947709985878720" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4376803293067553112" resolveInfo="C_LaunchConfiguration" />
-    </node>
-    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8694947709985878721" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="xojk.2045083395016239943" resolveInfo="G_ToolsAndVersions" />
-    </node>
-    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8694947709985879670" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4376803293067553112" resolveInfo="C_LaunchConfiguration" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="554428873500106214" nodeInfo="ng">
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="554428873500106220" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="kdummann" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 9:29:41 PM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word15" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="8694947709985876515" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="554428873500106221" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="554428873500106222" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Irgendwie ist das hier doppelt? wof\u00FCr braucht man die sourcen?" />
+          </node>
+        </node>
+      </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8694947709985848141" nodeInfo="ng">
       <property name="text" nameId="2c95.3350625596580064225" value="Building Binaries from the Command-Line" />
@@ -1564,7 +1568,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848288" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nin case you build artifacts (e.g., plugins or zip files), you can declare their structure here. Since we just want to run code generation and execute make, we do not need to list anything here." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nin case your build has artifacts (e.g., plugins or zip files), you can declare their structure here. Since we just want to run code generation and execute make, we do not need to list anything here." />
                 </node>
               </node>
             </node>
@@ -1758,11 +1762,26 @@
         <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
       </node>
     </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8694947709985878719" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="xojk.1560676800020893685" resolveInfo="D_Mbeddr" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8694947709985878720" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4376803293067553112" resolveInfo="C_LaunchConfiguration" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8694947709985878721" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="xojk.2045083395016239943" resolveInfo="G_ToolsAndVersions" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8694947709985879670" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4376803293067553112" resolveInfo="C_LaunchConfiguration" />
+    </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="4376803293067553112" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <property name="name" nameId="tpck.1169194664001" value="C_LaunchConfiguration" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="4376803293071895587" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="620304030110802052" resolveInfo="D_Debugging" />
+    </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="7863625513831639756" nodeInfo="ng">
       <property name="text" nameId="2c95.3350625596580064225" value="Running Applications from MPS/mbeddr" />
       <property name="name" nameId="tpck.1169194664001" value="LaunchConfiguration" />
@@ -2373,9 +2392,6 @@
     <node role="authors" roleId="2c95.126932837435370865" type="2c95.Author" typeId="2c95.126932837435370850" id="4376803293067596004" nodeInfo="ng">
       <property name="name" nameId="2c95.126932837435370851" value="Tamas Szabo" />
       <property name="email" nameId="2c95.126932837435370852" value="tamas.szabo@itemis.de" />
-    </node>
-    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="4376803293071895587" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="620304030110802052" resolveInfo="D_Debugging" />
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="85256576565955263" nodeInfo="ng">
