@@ -1198,7 +1198,30 @@
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <property name="name" nameId="tpck.1169194664001" value="B_CommandLineBuild" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="554428873500106214" nodeInfo="ng" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="554428873500106214" nodeInfo="ng">
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="4663555749197550876" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 11:39:26 AM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word12" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="7998242023567310856" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="4663555749197550877" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4663555749197550878" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="off-the-shelf?" />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="4663555749197553766" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 11:40:13 AM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word11" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="8694947709985848336" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="4663555749197553767" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4663555749197553768" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="maybe explicitly state where to point to on other platforms?" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8694947709985848141" nodeInfo="ng">
       <property name="text" nameId="2c95.3350625596580064225" value="Building Binaries from the Command-Line" />
       <property name="name" nameId="tpck.1169194664001" value="Building" />
@@ -1455,7 +1478,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848244" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nthe file system location to which the ant file is generated. " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nthe file system location to which the ant file is generated." />
                 </node>
               </node>
             </node>
@@ -1472,7 +1495,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848252" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="\na list of MPS plugins that are required while executing the script. When building mbeddr-based applications, you just need those two. " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="\na list of MPS plugins that are required while executing the script. When building mbeddr-based applications, you just need those two." />
                 </node>
               </node>
             </node>
@@ -1506,7 +1529,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848268" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nbuilds scripts, i.e., artifacts on which our build script depends on during generation-time. Since we use " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nbuilds scripts, i.e., artifacts on which our build script depends at generation-time. Since we use " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="8694947709985848269" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8694947709985848270" nodeInfo="ng">
@@ -1516,7 +1539,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848272" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" (and depend on other langauges as well), its plugins should be available while generating code for our application. " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" (and depend on other languages as well), its plugins should be available while generating code for our application." />
                 </node>
               </node>
             </node>
