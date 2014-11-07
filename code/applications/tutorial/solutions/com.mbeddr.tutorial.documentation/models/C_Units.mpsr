@@ -766,7 +766,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1383658449039_29" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="5000085652829103984" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="c4ys.5110473669961000550" resolveInfo="C-030-FunctionPointers" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="c4ys.5110473669961000550" resolveInfo="B_FunctionPointers" />
     </node>
     <node role="authors" roleId="2c95.126932837435370865" type="2c95.Author" typeId="2c95.126932837435370850" id="2219633145657695859" nodeInfo="ng">
       <property name="name" nameId="2c95.126932837435370851" value="Tamas Szabo" />
