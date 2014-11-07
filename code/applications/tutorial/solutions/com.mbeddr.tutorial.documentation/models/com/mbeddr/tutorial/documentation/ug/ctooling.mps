@@ -2690,7 +2690,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5607395629656605302" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5607395629656605303" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5607395629656605304" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Inside the module we now write a text case that (wrongfully) asserts that " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Inside the module we now write a test case that (wrongfully) asserts that " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5607395629656993719" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5607395629656993720" nodeInfo="ng">
@@ -2728,7 +2728,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5607395629656993920" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=": this expands to a fully parametrized main function. It also already contains a " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=": this expands to a fully parameterized main function. It also already contains a " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5607395629656997843" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5607395629656997844" nodeInfo="ng">
@@ -3067,7 +3067,7 @@
               <link role="image" roleId="2c95.6386504476136420174" targetNodeId="5607395629657116377" resolveInfo="running" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5607395629657117663" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Note how it contains clickable lins for the test(s) that have run as well as for the failed assertions." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Note how it contains clickable lines for the test(s) that have run as well as for the failed assertions." />
             </node>
           </node>
         </node>
@@ -3089,6 +3089,63 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5607395629657117730" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="This concludes the Hello, World." />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="9171873527588141341" nodeInfo="ng">
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527588141406" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:28:54 AM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_name_1" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629656569313" resolveInfo="newProjectWizard" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527588141407" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527588141408" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="invalid path" />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527588142643" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:29:29 AM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_name_1" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629656581603" resolveInfo="newModel" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527588142644" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527588142645" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="invalid path" />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527588146609" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:30:21 AM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word0" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629656586685" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527588146610" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527588146611" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="is this a key? strange semantics" />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527588146621" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:30:47 AM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_name_1" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629656587859" resolveInfo="modelprops" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527588146622" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527588146623" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="invalid path" />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527594224449" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:41:58 AM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_name_1" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629657116377" resolveInfo="running" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527594224450" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527594224451" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="invalid path" />
           </node>
         </node>
       </node>
