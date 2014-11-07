@@ -11,6 +11,9 @@
     <dependency reexport="false">97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)</dependency>
     <dependency reexport="false">36a565f1-3fa0-42d6-baac-f87e209c9789(com.mbeddr.ext.components.mock)</dependency>
     <dependency reexport="false">0d04a6cc-773e-4069-b9b0-11884b2ff1c8(com.mbeddr.ext.units)</dependency>
+    <dependency reexport="false">2bd5059a-12b0-4f35-8cc0-1327110664f0(com.mbeddr.tutorial.sample.CProject)</dependency>
+    <dependency reexport="false">f2ffa5de-cbad-48d1-82d2-18de456b46be(com.mbeddr.tutorial.sample.HelloWorld)</dependency>
+    <dependency reexport="false">c0c8a343-7b6c-4182-b027-e640e8d3bed3(com.mbeddr.tutorial.sample.buildProject)</dependency>
     <dependency reexport="false">b87ff58e-456e-4d51-9ed6-4090f4e7b51c(mbeddr.tutorial.main)</dependency>
   </dependencies>
   <usedLanguages>

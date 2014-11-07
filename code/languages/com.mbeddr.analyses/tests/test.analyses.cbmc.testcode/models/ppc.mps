@@ -48,6 +48,7 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="c4ml" modelUID="r:965f5cbb-2e6c-4aa6-8166-554f0fb0053f(com.mbeddr.analyses.cbmc.components.structure)" version="1" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="13" implicit="yes" />
+  <import index="q46j" modelUID="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" version="2" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="9120591063517985681" nodeInfo="ng">
     <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="9120591063517985682" nodeInfo="ng">
       <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
@@ -3036,5 +3037,6 @@
       </node>
     </node>
   </root>
+  <root type="q46j.ModelUsedForAnalysesTestsMarker" typeId="q46j.1246687699869804428" id="1246687699870346164" nodeInfo="ng" />
 </model>
 
