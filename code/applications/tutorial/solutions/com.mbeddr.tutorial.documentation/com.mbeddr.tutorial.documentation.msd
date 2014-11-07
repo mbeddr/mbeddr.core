@@ -10,6 +10,7 @@
     <dependency reexport="false">e865cad2-7cc8-437a-951a-665bcbcb8b1a(com.mbeddr.cc.requirements)</dependency>
     <dependency reexport="false">97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)</dependency>
     <dependency reexport="false">36a565f1-3fa0-42d6-baac-f87e209c9789(com.mbeddr.ext.components.mock)</dependency>
+    <dependency reexport="false">564e97d6-8fb7-41f5-bfc1-c7ed376efd62(com.mbeddr.ext.statemachines)</dependency>
     <dependency reexport="false">0d04a6cc-773e-4069-b9b0-11884b2ff1c8(com.mbeddr.ext.units)</dependency>
     <dependency reexport="false">2bd5059a-12b0-4f35-8cc0-1327110664f0(com.mbeddr.tutorial.sample.CProject)</dependency>
     <dependency reexport="false">f2ffa5de-cbad-48d1-82d2-18de456b46be(com.mbeddr.tutorial.sample.HelloWorld)</dependency>
