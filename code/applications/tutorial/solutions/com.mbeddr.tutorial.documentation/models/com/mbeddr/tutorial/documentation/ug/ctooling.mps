@@ -2376,13 +2376,16 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="4376803293072173622" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="LaunchConfiguration_Tests" />
           <property name="center" nameId="2c95.8730648445434174368" value="true" />
+          <property name="showImage" nameId="2c95.6386504476136358630" value="true" />
           <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="4376803293072173708" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="ctooling/launchconfig_tests.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
           </node>
           <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4376803293072173626" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4376803293072173627" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4376803293072173628" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4376803293072173628" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Running a test from MPS lets you directly click on tests and failed assertions." />
+              </node>
             </node>
           </node>
           <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="4376803293072173630" nodeInfo="ng" />
@@ -2452,13 +2455,16 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="5607395629656569313" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="newProjectWizard" />
+          <property name="showImage" nameId="2c95.6386504476136358630" value="true" />
           <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="5607395629656569345" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="newProjWizard.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="5607395629656569339" resolveInfo="hwimages" />
           </node>
           <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5607395629656569317" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5607395629656569318" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5607395629656569319" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5607395629656569319" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="MPS' dialog for creating new projects." />
+              </node>
             </node>
           </node>
           <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="5607395629656569321" nodeInfo="ng" />
@@ -2519,13 +2525,16 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="5607395629656581603" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="newModel" />
+          <property name="showImage" nameId="2c95.6386504476136358630" value="true" />
           <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="5607395629656581604" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="newModel.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="5607395629656569339" resolveInfo="hwimages" />
           </node>
           <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5607395629656581605" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5607395629656581606" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5607395629656581607" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5607395629656581607" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The dialog to create a new model in MPS." />
+              </node>
             </node>
           </node>
           <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="5607395629656581608" nodeInfo="ng" />
@@ -2595,13 +2604,16 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="5607395629656587859" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="modelprops" />
+          <property name="showImage" nameId="2c95.6386504476136358630" value="true" />
           <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="5607395629656587860" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="modelprops.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="5607395629656569339" resolveInfo="hwimages" />
           </node>
           <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5607395629656587861" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5607395629656587862" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5607395629656587863" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5607395629656587863" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The MPS dialog for setting the languages used in a model." />
+              </node>
             </node>
           </node>
           <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="5607395629656587864" nodeInfo="ng" />
@@ -3073,13 +3085,16 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="5607395629657116377" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="running" />
+          <property name="showImage" nameId="2c95.6386504476136358630" value="true" />
           <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="5607395629657116424" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="running.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="5607395629656569339" resolveInfo="hwimages" />
           </node>
           <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5607395629657116381" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5607395629657116382" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5607395629657116383" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5607395629657116383" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Running a test lets you directly click (and then open in the editor) on tests and failed assertions." />
+              </node>
             </node>
           </node>
           <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="5607395629657116385" nodeInfo="ng" />
@@ -3089,63 +3104,6 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5607395629657117730" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="This concludes the Hello, World." />
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="9171873527588141341" nodeInfo="ng">
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527588141406" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:28:54 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_name_1" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629656569313" resolveInfo="newProjectWizard" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527588141407" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527588141408" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="invalid path" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527588142643" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:29:29 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_name_1" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629656581603" resolveInfo="newModel" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527588142644" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527588142645" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="invalid path" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527588146609" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:30:21 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word0" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629656586685" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527588146610" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527588146611" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="is this a key? strange semantics" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527588146621" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:30:47 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_name_1" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629656587859" resolveInfo="modelprops" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527588146622" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527588146623" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="invalid path" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527594224449" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:41:58 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_name_1" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629657116377" resolveInfo="running" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527594224450" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527594224451" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="invalid path" />
           </node>
         </node>
       </node>
