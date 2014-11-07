@@ -8,13 +8,11 @@
   <import index="us0v" modelUID="r:22b9d29d-483d-4f08-8d1b-4e6567157caf(com.mbeddr.tutorial.documentation.ug.analyses)" version="-1" />
   <import index="bmc6" modelUID="r:4ac377c2-0a54-4908-ae24-f86f1bad7e73(com.mbeddr.tutorial.documentation.ug.fundamentals)" version="-1" />
   <import index="vi23" modelUID="r:9b94efb1-dbce-417f-b1ad-19c6a396d423(com.mbeddr.tutorial.documentation.ug.processSupport)" version="-1" />
+  <import index="4kwm" modelUID="r:5ff4e1a0-ec5b-4e83-a849-9e8c2c4adf79(com.mbeddr.tutorial.documentation.ug.ctooling)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="16" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
-  <import index="oqy7" modelUID="r:5355e160-db68-4e93-9241-257192f43eed(com.mbeddr.mpsutil.review.annotation.structure)" version="-1" implicit="yes" />
-  <import index="elym" modelUID="r:ab11cd4e-3f49-4307-8d3a-82afd3a5de48(com.mbeddr.mpsutil.margincell.structure)" version="0" implicit="yes" />
-  <import index="7krq" modelUID="r:bb3fd8a9-1cdd-4b54-9700-375a64081041(com.mbeddr.mpsutil.review.structure)" version="0" implicit="yes" />
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="2637267020265430784" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Config" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
@@ -482,7 +480,6 @@
     <property name="name" nameId="tpck.1169194664001" value="A_c99VsMbeddr" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="2" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="8280358843927173381" nodeInfo="ng" />
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="4770972444967673852" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="us0v.9020927825193793093" resolveInfo="C_FormalVerification" />
     </node>
@@ -491,6 +488,12 @@
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576563891815" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="vi23.536680812409687143" resolveInfo="F_ProductLineVariability" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="677389874856825755" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4kwm.85256576565955263" resolveInfo="E_HelloWorld" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="677389874856830222" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4kwm.4376803293067553112" resolveInfo="C_LaunchConfiguration" />
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2723638869557430314" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="ModuleSystem" />
@@ -1577,7 +1580,13 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2723638869555190789" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" function, and the result is returned to the OS; this way, the whole process fails if there are assertion failures." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" function, and the result is returned to the OS; this way, the whole process fails if there are assertion failures. The test output will also be printed to the Console in MPS with links pointing to the individual test cases in the C code. You can read more about this in " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="677389874856830159" nodeInfo="ng">
+            <link role="target" roleId="2c95.3350625596580108719" targetNodeId="4kwm.7863625513831639756" resolveInfo="LaunchConfiguration" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="677389874856830160" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
           </node>
         </node>
         <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="2723638869555190790" nodeInfo="ng">
@@ -1599,16 +1608,22 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2723638869555190795" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2723638869555190796" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2723638869555190797" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The test executable can then be run like any other executable, as discussed in " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The test executable can then be run like any other executable, as, for example, the " />
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="4770972444967787293" nodeInfo="ng">
-            <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="4770972444967787294" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4770972444967787295" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="link to HelloWorld executable running" />
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622971069647" nodeInfo="ng">
+            <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622971069648" nodeInfo="ng">
+              <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622971069675" nodeInfo="ng">
+                <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.949722786950959234" resolveInfo="HelloWorld" />
               </node>
             </node>
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4770972444967787292" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622971069646" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" example in " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="677389874856826875" nodeInfo="ng">
+            <link role="target" roleId="2c95.3350625596580108719" targetNodeId="4kwm.5607395629657104236" resolveInfo="buildAndRun" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="677389874856826874" nodeInfo="ng">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Note that you can set the " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2723638869559783612" nodeInfo="ng">
@@ -1716,14 +1731,6 @@
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4770972444967673855" nodeInfo="ng">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value=". " />
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ToDoWord" typeId="2c95.4220250885135199523" id="85256576563898281" nodeInfo="ng">
-            <node role="text" roleId="2c95.4220250885135204208" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576563898282" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576563898283" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Also reference the Run Config stuff, so we can highlight the hyperlinks in the console." />
-              </node>
-            </node>
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576563898284" nodeInfo="ng" />
         </node>
         <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="4770972444967303654" nodeInfo="ng">
           <property name="text" nameId="2c95.5185579450379273119" value="Parameterized unit tests" />
@@ -1953,7 +1960,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="85256576542260971" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576542260972" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576542260973" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="There are several context-specific words available, for example, a comment in a state machine can use " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="There are several context-specific references available, for example, a comment in a state machine can use " />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="85256576542261051" nodeInfo="ng">
             <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576542261052" nodeInfo="ng">
@@ -2123,7 +2130,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="85256576543581802" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576543581803" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576543581804" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The comments described so far were all text comments: their contents was unstructured text. This is totally different from commenting out code, because in this case, even though the code has been commented out, the structure of the code (concepts, nodes, tree, references) must be retained so it can be commented back in. This is why commenting out code is treated differently than text/documentation comments. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The comments described so far were all text comments: their contents was unstructured text. This is totally different from commenting out code, because in this case, even though the code has been commented out, the structure of the code (concepts, nodes, tree, references) must be retained so it can be commented back in. This is why commenting out code is treated differently than the comments discussed above which contain text (as opposed to code). " />
             </node>
           </node>
         </node>
@@ -2235,52 +2242,6 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576544790123" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="3115042184193186463" nodeInfo="ng">
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="3115042184193186469" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 1:24:38 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word4" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="85256576542260973" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="3115042184193186470" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3115042184193186471" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="\&quot;references\&quot;?" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="3115042184193186479" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 1:27:34 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word1" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="85256576543510910" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="3115042184193186480" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3115042184193186481" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="we need to add the right used languages first" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="3115042184193186488" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 1:27:57 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word24" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="85256576543510910" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="3115042184193186489" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3115042184193186490" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="maybe mention the reason (helps distinguishing commenters); would make it more clear also" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="3115042184193186500" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 1:29:15 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word63" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="85256576543581804" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="3115042184193186501" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3115042184193186502" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="we don't mention \&quot;text\&quot; comments before. Maybe rephrase \&quot;statement/margin/\&quot;" />
           </node>
         </node>
       </node>

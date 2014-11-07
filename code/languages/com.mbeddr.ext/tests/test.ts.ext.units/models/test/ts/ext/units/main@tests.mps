@@ -17,8 +17,8 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="40" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="35" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="36" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="qlb5" modelUID="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" version="5" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" implicit="yes" />
@@ -2187,6 +2187,16 @@
                 <node role="specification" roleId="qlb5.8337440621611353453" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="8414886092092158034" nodeInfo="ng">
                   <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="8414886092092158035" nodeInfo="ng">
                     <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="8414886092092158041" resolveInfo="A" />
+                    <node role="exponent" roleId="qlb5.8337440621611297534" type="qlb5.FractionalExponent" typeId="qlb5.3802033421901431993" id="1514561171427731378" nodeInfo="ng">
+                      <node role="fraction" roleId="qlb5.3802033421901461982" type="cetu.FractionExpression" typeId="cetu.5098456557381793727" id="1514561171427731379" nodeInfo="ng">
+                        <node role="left" roleId="cetu.5098456557382006592" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1514561171427731380" nodeInfo="ng">
+                          <property name="value" nameId="mj1l.2212975673976043696" value="1" />
+                        </node>
+                        <node role="right" roleId="cetu.5098456557382006631" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1514561171427731381" nodeInfo="ng">
+                          <property name="value" nameId="mj1l.2212975673976043696" value="2" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -2196,6 +2206,16 @@
             <node role="specification" roleId="qlb5.8337440621611401032" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="8414886092092158037" nodeInfo="ng">
               <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="8414886092092158038" nodeInfo="ng">
                 <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="8414886092092158041" resolveInfo="A" />
+                <node role="exponent" roleId="qlb5.8337440621611297534" type="qlb5.FractionalExponent" typeId="qlb5.3802033421901431993" id="1514561171427632764" nodeInfo="ng">
+                  <node role="fraction" roleId="qlb5.3802033421901461982" type="cetu.FractionExpression" typeId="cetu.5098456557381793727" id="1514561171427632765" nodeInfo="ng">
+                    <node role="left" roleId="cetu.5098456557382006592" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1514561171427632766" nodeInfo="ng">
+                      <property name="value" nameId="mj1l.2212975673976043696" value="1" />
+                    </node>
+                    <node role="right" roleId="cetu.5098456557382006631" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1514561171427632767" nodeInfo="ng">
+                      <property name="value" nameId="mj1l.2212975673976043696" value="2" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node role="valueType" roleId="mj1l.7336544617004013388" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8414886092092158039" nodeInfo="ng">
@@ -2214,9 +2234,6 @@
               <node role="specification" roleId="qlb5.8337440621611401032" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="8414886092092158044" nodeInfo="ng">
                 <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="8414886092092158045" nodeInfo="ng">
                   <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="8414886092092158041" resolveInfo="A" />
-                  <node role="exponent" roleId="qlb5.8337440621611297534" type="qlb5.IntegerExponent" typeId="qlb5.8337440621611273670" id="8414886092092158046" nodeInfo="ng">
-                    <property name="value" nameId="qlb5.8337440621611273671" value="2" />
-                  </node>
                 </node>
               </node>
               <node role="valueType" roleId="mj1l.7336544617004013388" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8414886092092158047" nodeInfo="ng">

@@ -87,7 +87,7 @@
       <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="6002249030800810979" nodeInfo="ng">
-      <property name="isTest" nameId="51wr.3431613015799084476" value="false" />
+      <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="Main" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="6002249030800810981" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="6002249030800799113" resolveInfo="Main" />

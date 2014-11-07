@@ -3740,13 +3740,12 @@
           </node>
           <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1418902825863412963" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1418902825863412964" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1418902825863412965" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1418902825863412965" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The mbeddr full text search dialog." />
+              </node>
             </node>
           </node>
           <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="1418902825863412966" nodeInfo="ng" />
-        </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="1418902825863412930" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1418902825862775310" nodeInfo="ng">
@@ -3774,7 +3773,9 @@
         </node>
         <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="1418902825862783828" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="1418902825862783829" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1418902825862783830" nodeInfo="ng" />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1418902825862783830" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The menu options for opening the search dialog and the terminals" />
+            </node>
           </node>
         </node>
         <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="1418902825862783832" nodeInfo="ng" />
