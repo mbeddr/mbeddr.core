@@ -1198,19 +1198,7 @@
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <property name="name" nameId="tpck.1169194664001" value="B_CommandLineBuild" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="554428873500106214" nodeInfo="ng">
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="554428873500106220" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="kdummann" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 6, 2014 9:29:41 PM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word15" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="8694947709985876515" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="554428873500106221" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="554428873500106222" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Irgendwie ist das hier doppelt? wof\u00FCr braucht man die sourcen?" />
-          </node>
-        </node>
-      </node>
-    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="554428873500106214" nodeInfo="ng" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="8694947709985848141" nodeInfo="ng">
       <property name="text" nameId="2c95.3350625596580064225" value="Building Binaries from the Command-Line" />
       <property name="name" nameId="tpck.1169194664001" value="Building" />
@@ -1229,13 +1217,7 @@
             <link role="target" roleId="2c95.3350625596580108719" targetNodeId="xojk.1560676800018098638" resolveInfo="PluginDistributionInstallation" />
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985876515" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="). When building your mbeddr-based applications, we recommend using any of the two installation methods. In addition, you should have a local copy of the mbeddr repository (see " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="8694947709985848149" nodeInfo="ng">
-            <link role="target" roleId="2c95.3350625596580108719" targetNodeId="xojk.1560676800018098647" resolveInfo="sourceInstallation" />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848150" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" on how to clone it). When building your mbeddr-based applications, we recommend using any of the two installation methods.  " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="). When building your mbeddr-based applications, we recommend using any of the two installation methods." />
           </node>
         </node>
       </node>
@@ -1382,7 +1364,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8694947709985848202" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8694947709985848203" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848204" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In software projects, you often want to build and test your software automatically. To achieve this for our example application, this section will show you a corresponding script will look like. MPS comes already with a language for writing these scripts. Scripts written with this language are translated to regular " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In software projects, you often want to build and test your software automatically. To achieve this for our example application, this section will show you how a corresponding script will look like. MPS comes already with a language for writing these scripts. Scripts written with this language are translated to regular " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8694947709985848205" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8694947709985848206" nodeInfo="ng">
@@ -1551,7 +1533,17 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848280" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="\ncontains solutions or languages you want to build. In our case, we just list the solution that contains our example application." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="\ncontains plugin descriptors and solutions/languages you want to build. In our case, we have a " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="7998242023567613523" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7998242023567613524" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7998242023567613525" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="dummy" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7998242023567613522" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" plugin descriptor that causes classes from MPS' debugger api to be loaded during generation and the solution that contains our example application." />
                 </node>
               </node>
             </node>
@@ -1591,7 +1583,17 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848296" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" on the build solution will cause generation of an ant file. This section describes how we can invoke this file for building and testing our application from command-line. For just building the application, we could directly invoke the scripts from command-line. But, we will write a wrapper script in ant, that calls the generated file. Reason is, we will use a custom ant task from mbeddr, that will execute the tests written with mbeddr. MPS itself doesn't provide off-the shell support for that, therefore we have to do it this way. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" on the build solution will cause generation of an ant file. This section describes how we can invoke this file for building and testing our application from command-line. For just building the application, we could directly invoke the scripts from command-line. But, we will write a wrapper script in ant, that calls the generated file. Reason is, this wrapper script will invoke " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7998242023567310857" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7998242023567310858" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7998242023567310859" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="make test" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7998242023567310856" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", which executes the tests written with mbeddr. MPS itself doesn't provide off-the shell support for that, therefore we have to do it this way. " />
             </node>
           </node>
         </node>
@@ -1623,33 +1625,6 @@
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ItemList" typeId="2c95.5378658552262893169" id="8694947709985848308" nodeInfo="ng">
-          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="8694947709985848309" nodeInfo="ng">
-            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8694947709985848310" nodeInfo="ng">
-              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8694947709985848311" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848312" nodeInfo="ng" />
-                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8694947709985848313" nodeInfo="ng">
-                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8694947709985848314" nodeInfo="ng">
-                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848315" nodeInfo="ng">
-                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr.github.core.home" />
-                    </node>
-                  </node>
-                </node>
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848316" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=": points to the " />
-                </node>
-                <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="8694947709985848317" nodeInfo="ng">
-                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8694947709985848318" nodeInfo="ng">
-                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848319" nodeInfo="ng">
-                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr.core" />
-                    </node>
-                  </node>
-                </node>
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848320" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" folder of your local mbeddr repository." />
-                </node>
-              </node>
-            </node>
-          </node>
           <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="8694947709985848321" nodeInfo="ng">
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8694947709985848322" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8694947709985848323" nodeInfo="ng">
@@ -1662,7 +1637,17 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848328" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=": points to the folder where your appplication solution is located." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=": points to the folder where the generated files of your appplication solution are located (inside folder " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="7998242023567621262" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7998242023567621263" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7998242023567621264" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="source_gen" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7998242023567621261" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=")." />
                 </node>
               </node>
             </node>
@@ -1679,7 +1664,17 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848336" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=": points to the directory where your MPS is installed." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=": points to the directory where your MPS is installed. On Mac, this property should point to the " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="7998242023567622496" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7998242023567622497" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7998242023567622498" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Contents" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7998242023567622499" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" folder, located inside MPS' installation directory." />
                 </node>
               </node>
             </node>
@@ -1709,7 +1704,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="8694947709985848346" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8694947709985848347" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848348" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="build.xml" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="wrapper.xml" />
                 </node>
               </node>
             </node>
@@ -1719,7 +1714,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8694947709985848350" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8694947709985848351" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848352" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="ant build" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="ant -f wrapper.xml build" />
                 </node>
               </node>
             </node>
@@ -1729,7 +1724,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8694947709985848354" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8694947709985848355" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848356" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="ant test" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="ant -f wrapper.xml test" />
                 </node>
               </node>
             </node>
@@ -1740,7 +1735,7 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="8694947709985848358" nodeInfo="ng">
           <property name="language" nameId="2c95.8730648445434044905" value="xml" />
-          <property name="text" nameId="2c95.8730648445434044906" value="&lt;project name=&quot;build and test helloworld&quot; default=&quot;build&quot; &gt;&#10;    &lt;taskdef name=&quot;make-tests&quot; classname=&quot;com.mbeddr.tools.ant.MakeTestsTask&quot;  classpath=&quot;${mbeddr.github.core.home}/tools/ant/tasks/MakeTestsTask.jar&quot; /&gt;&#10;    &lt;property name=&quot;mbeddr.github.core.home&quot; location=&quot;/Users/peter/mbeddr.core&quot; /&gt;&#10;    &lt;property name=&quot;source.location&quot; location=&quot;...&quot; /&gt;&#10;    &lt;property name=&quot;mps.home&quot; location=&quot;&quot; /&gt;&#10;    &#10;    &lt;target name=&quot;build&quot;&gt;&#10;        &lt;ant antfile=&quot;build-helloworld.xml&quot; target=&quot;clean&quot; /&gt;&#10;        &lt;ant antfile=&quot;build-helloworld.xml&quot; target=&quot;generate&quot; /&gt;&#10;        &lt;ant antfile=&quot;build-helloworld.xml&quot; target=&quot;build&quot; /&gt;&#9; &#9;&#10;    &lt;/target&gt; &#10;    &#10;    &lt;target name=&quot;test&quot;&gt;&#9;  &#10;        &lt;ant antfile=&quot;test-helloworld.xml&quot; target=&quot;clean&quot; /&gt;&#10;        &lt;ant antfile=&quot;test-helloworld.xml&quot; target=&quot;generate&quot;/&gt;&#10;        &lt;ant antfile=&quot;test-helloworld.xml&quot; target=&quot;build&quot; /&gt;&#10;        &lt;antcall target=&quot;make-tests&quot;&gt;&#10;            &lt;param name=&quot;make-tests.dir&quot; value=&quot;${source.location}&quot;/&gt;&#10;        &lt;/antcall&gt;&#10;    &lt;/target&gt; &#10;&lt;/project&gt;" />
+          <property name="text" nameId="2c95.8730648445434044906" value="&lt;project name=&quot;build and test helloworld&quot; default=&quot;build&quot; &gt;&#10;    &lt;property name=&quot;base.path&quot; location=&quot;/Users/domenik/repositories/mbeddr.core/code/applications/tutorial/solutions&quot; /&gt;&#10;    &lt;property name=&quot;source.location&quot; location=&quot;${base.path}/com.mbeddr.tutorial.sample.CProject/source_gen/com/mbeddr/tutorial/sample/CProject/main&quot; /&gt;&#10;    &lt;property name=&quot;mps.home&quot; location=&quot;/Users/domenik/MPS/MPS-135.1441.app/Contents&quot; /&gt;&#10;    &#10;    &lt;target name=&quot;build&quot;&gt;&#10;        &lt;ant antfile=&quot;build.xml&quot; target=&quot;clean&quot; /&gt;&#10;        &lt;ant antfile=&quot;build.xml&quot; target=&quot;generate&quot; /&gt;&#10;        &lt;ant antfile=&quot;build.xml&quot; target=&quot;build&quot; /&gt;&#9; &#9;&#9;&#10;    &lt;/target&gt; &#10;    &#10;    &lt;target name=&quot;test&quot;&gt;&#9;  &#10;        &lt;ant antfile=&quot;build.xml&quot; target=&quot;clean&quot; /&gt;&#10;        &lt;ant antfile=&quot;build.xml&quot; target=&quot;generate&quot;/&gt;&#10;        &lt;ant antfile=&quot;build.xml&quot; target=&quot;build&quot; /&gt;&#10;        &lt;exec executable=&quot;make&quot; dir=&quot;${source.location}&quot;&gt;&#10;            &lt;arg value=&quot;test&quot;/&gt;&#10;        &lt;/exec&gt;&#9;&#9;&#10;    &lt;/target&gt; &#10;&lt;/project&gt;" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8694947709985848359" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8694947709985848360" nodeInfo="ng">
@@ -1750,7 +1745,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8694947709985848362" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8694947709985848363" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8694947709985848364" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nant -Dmbeddr.github.core.home=&lt;path to mbeddr&gt; -Dsource.location=&lt;path to solution&gt; -Dmps.home=&lt;path to mps&gt;  build" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nant -Dsource.location=&lt;path to solution&gt; -Dmps.home=&lt;path to mps&gt; -f wrapper.xml build" />
                 </node>
               </node>
             </node>
@@ -2398,6 +2393,63 @@
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <property name="name" nameId="tpck.1169194664001" value="E_HelloWorld" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="9171873527588141341" nodeInfo="ng">
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527588141406" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:28:54 AM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_name_1" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629656569313" resolveInfo="newProjectWizard" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527588141407" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527588141408" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="invalid path" />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527588142643" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:29:29 AM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_name_1" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629656581603" resolveInfo="newModel" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527588142644" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527588142645" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="invalid path" />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527588146609" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:30:21 AM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word0" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629656586685" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527588146610" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527588146611" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="is this a key? strange semantics" />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527588146621" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:30:47 AM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_name_1" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629656587859" resolveInfo="modelprops" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527588146622" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527588146623" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="invalid path" />
+          </node>
+        </node>
+      </node>
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527594224449" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:41:58 AM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_name_1" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629657116377" resolveInfo="running" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527594224450" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527594224451" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="invalid path" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="85256576565955264" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="helloWorld" />
       <property name="text" nameId="2c95.3350625596580064225" value="Hello, World" />
@@ -3089,63 +3141,6 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5607395629657117730" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="This concludes the Hello, World." />
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="9171873527588141341" nodeInfo="ng">
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527588141406" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:28:54 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_name_1" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629656569313" resolveInfo="newProjectWizard" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527588141407" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527588141408" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="invalid path" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527588142643" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:29:29 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_name_1" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629656581603" resolveInfo="newModel" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527588142644" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527588142645" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="invalid path" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527588146609" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:30:21 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word0" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629656586685" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527588146610" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527588146611" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="is this a key? strange semantics" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527588146621" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:30:47 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_name_1" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629656587859" resolveInfo="modelprops" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527588146622" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527588146623" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="invalid path" />
-          </node>
-        </node>
-      </node>
-      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="9171873527594224449" nodeInfo="ng">
-        <property name="creator" nameId="7krq.5652920968054438487" value="nikostotz" />
-        <property name="created" nameId="7krq.5652920968054438504" value="Nov 7, 2014 9:41:58 AM" />
-        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_name_1" />
-        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5607395629657116377" resolveInfo="running" />
-        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="9171873527594224450" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9171873527594224451" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="invalid path" />
           </node>
         </node>
       </node>
