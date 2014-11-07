@@ -8,7 +8,6 @@
   <import index="cmgk" modelUID="r:679066bc-2da8-4932-a09c-5d2b3d47b911(com.mbeddr.ext.units.siunits)" implicit="yes" />
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
-  <import index="oqy7" modelUID="r:5355e160-db68-4e93-9241-257192f43eed(com.mbeddr.mpsutil.review.annotation.structure)" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="620304030110860646" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="C_Units" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="5" />
@@ -19,7 +18,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5000085652827867735" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5000085652827867736" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5000085652827867737" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The purpose of physical units is to annotate types and variables with additional information - units - used to improve type checking. Many embedded systems work with real-world quantities, and many of those have a physical unit associated with them. " />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The purpose of physical units is to annotate types and literals with additional information - units - used to improve type checking. Many embedded systems work with real-world quantities, and many of those have a physical unit associated with them. " />
           </node>
         </node>
       </node>
@@ -45,11 +44,11 @@
               <link role="target" roleId="2c95.3350625596580108719" targetNodeId="c4ys.2900587364561784776" resolveInfo="functionPointers" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5000085652829103968" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and make it more useful. Our application is supposed to work with tracking data (captured from a bike computer or a flight logger). For the examples until now we were not interested in the physical units. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and make it more useful. Our application is supposed to work with tracking data (captured from a bike computer or a flight logger). For the examples so far we were not interested in the physical units. " />
             </node>
           </node>
           <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="5000085652829104178" nodeInfo="ng">
-            <property name="text" nameId="2c95.5185579450379273119" value="Defining and Attaching Units" />
+            <property name="text" nameId="2c95.5185579450379273119" value="Defining and Attaching Units to Types" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030110925047" nodeInfo="ng">
@@ -65,17 +64,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145656721077" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit or the " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2219633145656721197" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2219633145656721198" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145656721199" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="com.mbeddr.ext.units" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145656721196" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" language. After the import we can add units for the types by simply pressing the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit. After the import we can add units for the types by simply pressing the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="5000085652829103987" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5000085652829103990" nodeInfo="ng">
@@ -102,7 +91,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3018985626178271468" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". There is an extra " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". It can be imported into any implementation module. There is an extra " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2219633145656561278" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2219633145656561279" nodeInfo="ng">
@@ -132,7 +121,14 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931497" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" will be immediately available. For the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" will be immediately available. " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4808973746553643103" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4808973746553643104" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553643105" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="For the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931498" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931499" nodeInfo="ng">
@@ -142,7 +138,17 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931502" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" member we need to add " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" member of the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4808973746553643042" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4808973746553643043" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553643044" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Trackpoint" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553643041" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" struct we need to add " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110931503" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110931504" nodeInfo="ng">
@@ -152,7 +158,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110931507" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Since this is not an SI base unit we first have to define it, which can be done either in the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Since this is not an SI base unit, we first have to define it, which can be done either in the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7644849806586945445" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7644849806586945446" nodeInfo="ng">
@@ -172,7 +178,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7644849806586945619" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" (like " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" (such as " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="3626429504011671482" nodeInfo="ng">
               <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="3626429504011671483" nodeInfo="ng">
@@ -192,7 +198,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182584485197" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The specification of the derived units can simply be typed in after the name of the unit.  If you want to compose more units together than you can use multiplication between them, simply type " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The specification of the derived units can be typed in after the name of the unit.  If you want to compose more units together than you can use multiplication between them, type " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2219633145656580118" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2219633145656580119" nodeInfo="ng">
@@ -212,7 +218,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182584184520" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" (cap symbol), or you can also do this from an intention on the unit. Exponents can either be simple integer numbers or you can also use fractions as exponents, by simply typing " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" (cap symbol), or you can also do this with an intention on the unit. Exponents can either be simple integer numbers or fractions by simply typing " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2219633145656580220" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2219633145656580221" nodeInfo="ng">
@@ -260,14 +266,19 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110993499" nodeInfo="ng">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="Adding these units may result in errors in the existing code (depending on whether you had added them in previous tutorial steps) because you cannot simply assign a plain number to a variable or member whose type includes a physical unit (" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="620304030110995663" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030110995664" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030110995666" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="int8/m/ length = 3; is illegal). Instead you have to add units to the literals as well. You can simply type the unit  name after the literal to get to the following:" />
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4808973746553643388" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4808973746553643389" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553643390" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="int8/m/ length = 3;" />
                 </node>
               </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145656668019" nodeInfo="ng" />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553643387" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is illegal). Instead you have to add units to the literals as well. You can simply type the unit  name after the literal to get to the following:" />
+            </node>
+          </node>
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="4808973746553643416" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Units on Literals" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="620304030111005927" nodeInfo="ng">
@@ -307,21 +318,14 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030111063127" nodeInfo="ng">
-          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111063128" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111063129" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Now if you try to rebuild the model, you will get an error message, saying that you need to add the " />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4808973746553643603" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4808973746553643604" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553643605" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="If we were to write the following code, we would get an error:" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8859928641209659616" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8859928641209659617" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8859928641209659618" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="units" />
-                </node>
-              </node>
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8859928641209659615" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" configuration item to the build configuration. If you have added this item, the build should be successful and we should be able to run the test again. Nothing should have changed so far. However, if we were to write the following code, we would get an error:" />
-            </node>
+          </node>
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="4808973746553645997" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Operators" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ListingParagraph" typeId="2c95.8730648445434044903" id="620304030111063333" nodeInfo="ng">
@@ -445,8 +449,11 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2219633145657368068" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2219633145657368069" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145657368070" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="When you are editing an expression with composite units you may encounter the problem that multiple side transformations are available at a given place and so you need to make the choice by hand. Consider the following code example:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="When you edit an expression with composite units you may encounter the problem that multiple side transformations are available at a given place and so you need to make the choice by hand. Consider the following code example:" />
             </node>
+          </node>
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="4808973746553645999" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Editing Composite Units" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="2219633145657290089" nodeInfo="ng">
@@ -468,6 +475,26 @@
             </node>
           </node>
         </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="620304030111063127" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="620304030111063128" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="620304030111063129" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="If you try to rebuild the model, you will get an error message, saying that you need to add the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="8859928641209659616" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8859928641209659617" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8859928641209659618" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="units" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8859928641209659615" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" configuration item to the build configuration. If you have added this item, the build should be successful and we should be able to run the test again. " />
+            </node>
+          </node>
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="4808973746553643789" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Build Configuration" />
+          </node>
+        </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5000085652830089862" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="UnitConversions" />
@@ -480,7 +507,7 @@
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6955693250244950056" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6955693250244950057" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250244950058" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="meters per second" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="m/s" />
                 </node>
               </node>
             </node>
@@ -490,48 +517,57 @@
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6955693250244950070" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6955693250244950071" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250244950072" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="kilometers per hour" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="km/h" />
                 </node>
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250244950073" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". For this purpose you can define conversion rules between the units. The " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". For this purpose you can define conversion rules between the units.  " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7644849806589032014" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7644849806589032015" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7644849806589032016" nodeInfo="ng">
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4808973746553698415" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4808973746553698416" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553698417" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4808973746553698426" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4808973746553698427" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553698428" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="conversion rule" />
                 </node>
               </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7644849806589032013" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" must define a source and a target unit (the conversion will happen between these units) and it must contain 1 or more conversion specifiers. A conversion specifier defines the conversion expression for a given type. Inside the conversion expression one can use the " />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553698429" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" must define a source and a target unit (the conversion will happen between these units) and it must contain one or more conversion specifiers. A conversion specifier defines the conversion expression for a given type. Inside the conversion expression one can use the " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2219633145657578851" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2219633145657578852" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145657578853" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4808973746553698430" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4808973746553698431" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553698432" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="val" />
                 </node>
               </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145657578850" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" expression as a placeholder, which will be substituted with the value that is passed to the conversion rule. The type that you define for the specifier is the type that the val expression will have. Additionally, it is also possible to omit the definition of a type, in this case the specifier works as a generic one, where the expression may be applied to any types (the type of the " />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553698433" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" expression as a placeholder for the to-be-converted value. It will be substituted with the value that is passed to the conversion rule. The type that you define for the specifier is the type that the val expression will have. Additionally, it is also possible to omit the type: in this case the specifier works as a generic one, where the expression may be applied to any types (the type of the " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2219633145657578889" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2219633145657578890" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145657578891" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4808973746553698434" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4808973746553698435" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553698436" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="val" />
                 </node>
               </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145657578888" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" expression will be double in this case, but this is just a trick that is needed for the typesystem to work properly). The conversion specifiers are checked and redundant specifiers will be marked as erroneous (the ones that are covered by some other specifier due to its type being the supertype of the original type). " />
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553698437" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" expression will be double in this case, but this is just a trick that is needed for the typesystem to work properly). The conversion specifiers are checked, and redundant specifiers will be marked as erroneous (the ones that are covered by some other specifier due to its type being the supertype of the original type). " />
             </node>
+          </node>
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="4808973746553698438" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Defining Conversions" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="6955693250244985439" nodeInfo="ng">
           <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
-          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
           <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="6955693250244985440" nodeInfo="ng">
             <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6955693250244985441" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.6657613005452170119" resolveInfo="UnitDeclarations" />
@@ -544,7 +580,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6955693250245156504" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6955693250245156505" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250245156506" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Conversion rules can be either lazy or eager. The default behavior is the lazy evaluation, you can switch to eager from the corresponding intetion on the conversion rule itself." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Conversion rules can be either lazy or eager. The default behavior is the lazy evaluation, you can switch to eager from the corresponding intention on the conversion rule itself." />
             </node>
           </node>
         </node>
@@ -553,7 +589,17 @@
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2219633145657634643" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2219633145657634644" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145657634645" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Lazy conversion rule: the val expression inside the conversion specifier has no unit, and the expression must evaluate to a type without units. During the usage of the conversion rule, the type system will just simply append the rule's target unit to the evaluated expression. " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="4808973746553646001" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4808973746553646002" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553646003" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Lazy conversion rule:" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553646005" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" the val expression inside the conversion specifier has no unit, and the expression must evaluate to a type without units. During the usage of the conversion rule, the type system will just simply append the rule's target unit to the evaluated expression. " />
                 </node>
               </node>
             </node>
@@ -562,7 +608,17 @@
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2219633145657634655" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2219633145657634656" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145657634657" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Eager conversion rule: the val expression has the same unit as the rule's source unit. The expression in the conversion specifier must evaluate to a type with the rule's target unit. During the usage of the conversion rule, the expression will be simply evaluated and the resulting type will be used (which must match the target unit)." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="4808973746553646012" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4808973746553646013" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553646014" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Eager conversion rule:" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553646016" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" the val expression has the same unit as the rule's source unit. The expression in the conversion specifier must evaluate to a type with the rule's target unit. During the usage of the conversion rule, the expression will be simply evaluated and the resulting type will be used (which must match the target unit)." />
                 </node>
               </node>
             </node>
@@ -574,10 +630,12 @@
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="You can now invoke this conversion within a convert expression:" />
             </node>
           </node>
+          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="4808973746553698543" nodeInfo="ng">
+            <property name="text" nameId="2c95.5185579450379273119" value="Using Conversions" />
+          </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="6955693250245236301" nodeInfo="ng">
           <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
-          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
           <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="6955693250245236302" nodeInfo="ng">
             <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="6955693250245236303" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
@@ -590,7 +648,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6955693250245236377" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6955693250245236378" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250245236379" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The convert expression does not explicitly refer to any specific conversion rule, you only need to define the target unit of the conversion, while the source unit is known from the type of the original expression. The system will try to find a matching conversion specifier (where both the units and the types match). Here comes the conversion specifier with no specific type handy, because it can be applied to any expression if the units match. \n\nThe conversion specifier can be set manually too in the Inspector View of the convert expression. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The convert expression does not explicitly refer to any specific conversion rule, you only need to define the target unit of the conversion, while the source unit is known from the type of the original expression. The system will try to find a matching conversion specifier (where both the units and the types match). Here comes the conversion specifier with no specific type handy, because it can be applied to any expression if the units match. \n\nThe conversion specifier can be set manually too in the Inspector of the convert expression. " />
             </node>
           </node>
         </node>
@@ -601,7 +659,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6955693250245262733" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6955693250245262734" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250245262745" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Generic units can be used to enhance the type-safety for function calls by also providing the possibility to specify the function in a general way with respect to the used type annotations. The following code snippets show some use cases of generic units:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Generic units can be used to enhance the type safety for function calls by also providing the possibility to specify the function in a generic way with respect to the used type annotations. The following code snippets show some use cases of generic units:" />
             </node>
           </node>
         </node>
@@ -644,7 +702,27 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3018985626171451831" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3018985626171451832" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3018985626171451833" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="First you need to create generic units by invoking the Add Generic Unit Declaration intention on the function. You can specify multiple generic units once the first one has been created by just simply pressing ENTER in the unit list. These newly created generic units can then be used for the type annotation just like the already available non-generic units. The substitutions will be computed based on the input parameters of the function call. One can also combine a generic unit with additional arbitrary non-generic units for the type annotations of the parameters and the return type. Additionally it is also possible to invoke the function with bare types, but be aware that once at least one substitution is present, the function call will be type checked also for matching units. Naturally, the generic units can also have exponents (even as fractions) and the same type-checks also apply to them as it was described for the non-generic units. An example shows how this could be done for a square root function:" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="First you need to create generic units by invoking the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4808973746553698547" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4808973746553698548" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553698549" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Add Generic Unit Declaration" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553698551" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" intention on the function. You can specify multiple generic units once the first one has been created by just simply pressing " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="4808973746553698573" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4808973746553698576" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553698577" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Enter" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553698562" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in the unit list. These newly created generic units can then be used for the type annotation just like any other unit. The substitutions will be computed based on the input parameters of the function call. One can also combine a generic unit with additional arbitrary non-generic units for the type annotations of the parameters and the return type. In addition, it is also possible to invoke the function with bare types, but be aware that once at least one substitution is present, the function call will be type checked also for matching units. The generic units can also have exponents (even as fractions) and the same type-checks also apply to them as it was described for the non-generic units. An example shows how this could be done for a square root function:" />
             </node>
           </node>
         </node>
@@ -690,7 +768,7 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5000085652829236414" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="GettingRidOfUnits" />
-        <property name="text" nameId="2c95.3350625596580064225" value="Getting Rid of Units" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Stripping and Reintroducing Units" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5000085652830349029" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5000085652830349030" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5000085652830349031" nodeInfo="ng">
@@ -726,26 +804,18 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6955693250244559762" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="6955693250244559763" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6955693250244559764" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To be able to call this function with arguments that are unit types, we have to strip away the units before we call the function. This can be achieved by selecting the corresponding expression and invoking the Strip Unit intention. The type of this stripped expression will be simply the type of the original expression but without units. When needed, the unit can be simply introduced by annotating the expression with the desired unit. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To be able to call this function with arguments that have units, we have to strip away the units before we call the function. This can be achieved by selecting the corresponding expression and invoking the " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="7644849806588902116" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7644849806588902117" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7644849806588902118" nodeInfo="ng" />
-                <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="7644849806588902171" nodeInfo="ng">
-                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7644849806588902172" nodeInfo="ng">
-                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7644849806588902173" nodeInfo="ng" />
-                  </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4808973746553698587" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4808973746553698588" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553698589" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Strip Unit" />
                 </node>
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7644849806588902174" nodeInfo="ng" />
               </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7644849806588902119" nodeInfo="ng" />
-            <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="7644849806588902074" nodeInfo="ng">
-              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7644849806588902075" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7644849806588902076" nodeInfo="ng" />
-              </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553698591" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" intention. The type of this stripped expression will be simply the type of the original expression but without units." />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7644849806588902073" nodeInfo="ng" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="6955693250244748521" nodeInfo="ng">
@@ -760,19 +830,35 @@
             </node>
           </node>
         </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4808973746553712756" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4808973746553712757" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553712758" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The opposite direction (i.e., adding a unit to a value that has no unit) is also supported. The " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4808973746553712786" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4808973746553712787" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553712788" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="introduceunit" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4808973746553712789" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" operator is available for this. It takes an expression plus the to-be-introduced unit as arguments." />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="620304030110860653" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1383658449039_29" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="5000085652829103984" nodeInfo="ng">
-      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="c4ys.5110473669961000550" resolveInfo="C-030-FunctionPointers" />
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="c4ys.5110473669961000550" resolveInfo="B_FunctionPointers" />
     </node>
     <node role="authors" roleId="2c95.126932837435370865" type="2c95.Author" typeId="2c95.126932837435370850" id="2219633145657695859" nodeInfo="ng">
       <property name="name" nameId="2c95.126932837435370851" value="Tamas Szabo" />
       <property name="email" nameId="2c95.126932837435370852" value="tamas.szabo@itemis.de" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="7697861917660746292" nodeInfo="ng" />
   </root>
 </model>
 
