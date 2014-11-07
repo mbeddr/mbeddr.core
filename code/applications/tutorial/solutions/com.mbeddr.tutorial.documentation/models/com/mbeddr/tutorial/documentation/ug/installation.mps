@@ -99,7 +99,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6403595147461164859" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" folder and edit, depending on wether you are running mbeddr on a 32- or 64-bit machine, either " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" folder and edit, depending on weather you are running mbeddr on a 32- or 64-bit machine, either " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1560676800018059321" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1560676800018059322" nodeInfo="ng">
@@ -742,7 +742,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1560676800018135554" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" sufficien, if  you want to use mbeddr, but not change or extend it. The mbeddr IDE is a stripped-down version of MPS, which just provides the UI facilities required for using mbeddr. It already comes with the mbeddr distribution and is the easiest way to get mbeddr running on your machine." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" sufficient, if  you want to use mbeddr, but not change or extend it. The mbeddr IDE is a stripped-down version of MPS, which just provides the UI facilities required for using mbeddr. It already comes with the mbeddr distribution and is the easiest way to get mbeddr running on your machine." />
               </node>
             </node>
           </node>
@@ -856,7 +856,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="85256576562641824" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576562641825" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576562641826" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To install the distribution, please download the distribtion ZIP file from the mbeddr GitHub release page:\n" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To install the distribution, please download the distribution ZIP file from the mbeddr GitHub release page:\n" />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2564556814934565399" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814934565400" nodeInfo="ng">
@@ -1015,7 +1015,7 @@
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4711768717894480257" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4711768717894480258" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4711768717894480259" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Secondm you will need an Apache ant installation (see " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Second, you will need an Apache ant installation (see " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="2045083395016274798" nodeInfo="ng">
                   <link role="target" roleId="2c95.3350625596580108719" targetNodeId="2045083395016240670" resolveInfo="ToolsAndVersions" />
@@ -1071,7 +1071,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1560676800018181511" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=", the repository URLs to be used for cloning (for various prototocols) can also be found at this URL." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=", the repository URLs to be used for cloning (for various protocols) can also be found at this URL." />
                 </node>
               </node>
             </node>
@@ -1842,7 +1842,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395008937969" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" variable. However, the way how this is done depends on your actual operating sytem and the shell you are using. Since nowadays almost every Unix system comes with a " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" variable. However, the way how this is done depends on your actual operating system and the shell you are using. Since nowadays almost every Unix system comes with a " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2045083395008938749" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2045083395008938750" nodeInfo="ng">
@@ -1852,7 +1852,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395008938748" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shell, we describe the processs just for tis scenario. In case you using a different shell, please refer to the vendor's documentation. \n\nFirst, create or open your existing " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shell, we describe the process just for tis scenario. In case you using a different shell, please refer to the vendor's documentation. \n\nFirst, create or open your existing " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2045083395008938001" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2045083395008938002" nodeInfo="ng">
