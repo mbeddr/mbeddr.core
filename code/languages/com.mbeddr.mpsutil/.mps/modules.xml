@@ -24,6 +24,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.mpl" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.margincell.sandbox/com.mbeddr.mpsutil.margincell.sandbox.mpl" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.margincell/com.mbeddr.mpsutil.margincell.mpl" folder="margincell_review" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.nodes_tracing/com.mbeddr.mpsutil.nodes_tracing.mpl" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.nodeviewer/com.mbeddr.mpsutil.nodeviewer.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.mpl" folder="plantuml" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.mpl" folder="preferenceform" />
@@ -51,6 +52,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.margincell.runtime/com.mbeddr.mpsutil.margincell.runtime.msd" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.modelcache/com.mbeddr.mpsutil.modelcache.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodes_tracing.pluginSolution/com.mbeddr.mpsutil.nodes_tracing.pluginSolution.msd" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/pluginSolution.msd" folder="plantuml" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime.msd" folder="preferenceform" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.print.pluginSolution/com.mbeddr.mpsutil.print.pluginSolution.msd" folder="" />
