@@ -11,6 +11,7 @@
   <import index="t8u7" modelUID="r:a5052470-ba99-483d-a4ef-5948a23c78fa(com.mbeddr.tutorial.documentation.ug.complexProjects)" version="-1" />
   <import index="4kwm" modelUID="r:5ff4e1a0-ec5b-4e83-a849-9e8c2c4adf79(com.mbeddr.tutorial.documentation.ug.ctooling)" version="-1" />
   <import index="xojk" modelUID="r:ec4f318b-4ee4-4063-b222-8a04b6ed816c(com.mbeddr.tutorial.documentation.ug.installation)" version="-1" />
+  <import index="xojl" modelUID="r:ec4f318b-4ee4-4063-b222-8a04b6ed816d(com.mbeddr.tutorial.documentation.ug.installationZaur)" version="-1" />
   <import index="c4ys" modelUID="r:4fb22f91-1e13-48a0-a300-21fa004a07ef(com.mbeddr.tutorial.documentation.ug.mbeddrCvsC99)" version="-1" />
   <import index="vi23" modelUID="r:9b94efb1-dbce-417f-b1ad-19c6a396d423(com.mbeddr.tutorial.documentation.ug.processSupport)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -52,7 +53,7 @@
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639347814820" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="9w7i.1481709176727861442" resolveInfo="Z_CHAPTER_Concepts" />
     </node>
-    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="2101724341003954418" nodeInfo="ng">
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="5171616132446827364" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="xojk.2101724341003947138" resolveInfo="Z_CHAPTER_Installation" />
     </node>
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="2101724341003962854" nodeInfo="ng">
@@ -173,7 +174,7 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="324047639345542615" nodeInfo="ng">
         <property name="referenceOnly" nameId="2c95.324047639344492301" value="true" />
-        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="2101724341003954449" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="5171616132446827376" nodeInfo="ng">
           <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="xojk.2101724341003947138" resolveInfo="Z_CHAPTER_Installation" />
         </node>
       </node>
