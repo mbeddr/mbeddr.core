@@ -3337,7 +3337,7 @@
                     </node>
                   </node>
                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1819488472665758404" nodeInfo="nn">
-                    <property name="value" nameId="tpee.1070475926801" value="state " />
+                    <property name="value" nameId="tpee.1070475926801" value="junction " />
                   </node>
                 </node>
               </node>
@@ -3608,6 +3608,22 @@
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
       </node>
+    </node>
+  </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1891280913627368627" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="machine.asTable" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="clqz.1819488472664929103" resolveInfo="JunctionState" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1891280913627370113" nodeInfo="nn">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="1891280913627370120" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1891280913627370116" nodeInfo="nn" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1891280913627370126" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="&lt;j&gt;" />
+      </node>
+    </node>
+    <node role="contextHints" roleId="tpc2.2597348684684069742" type="tpc2.ConceptEditorHintDeclarationReference" typeId="tpc2.6822301196700715228" id="1891280913627370130" nodeInfo="ig">
+      <link role="hint" roleId="tpc2.5944657839026714445" targetNodeId="373648484609180247" resolveInfo="table" />
     </node>
   </root>
 </model>

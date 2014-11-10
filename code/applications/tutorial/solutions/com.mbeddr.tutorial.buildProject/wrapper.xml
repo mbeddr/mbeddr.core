@@ -1,0 +1,20 @@
+<project name="build and test helloworld" default="build" >
+	<property name="base.path" location="/Users/domenik/repositories/mbeddr.core/code/applications/tutorial/solutions" />
+    <property name="source.location" location="${base.path}/com.mbeddr.tutorial.sample.CProject/source_gen/com/mbeddr/tutorial/sample/CProject/main" />
+    <property name="mps.home" location="/Users/domenik/MPS/MPS-135.1441.app/Contents" />
+    
+    <target name="build">
+        <ant antfile="build.xml" target="clean" />
+        <ant antfile="build.xml" target="generate" />
+        <ant antfile="build.xml" target="build" />	 		
+    </target> 
+    
+    <target name="test">	  
+        <ant antfile="build.xml" target="clean" />
+        <ant antfile="build.xml" target="generate"/>
+        <ant antfile="build.xml" target="build" />
+		<exec executable="make" dir="${source.location}">
+            <arg value="test"/>
+        </exec>		
+    </target> 
+</project>

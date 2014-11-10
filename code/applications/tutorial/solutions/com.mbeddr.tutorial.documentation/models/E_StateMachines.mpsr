@@ -1,0 +1,1680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model modelUID="r:38897e08-83fd-42c7-91d3-65b102721940(com.mbeddr.tutorial.documentation.ug.cextensions)" content="root">
+  <persistence version="8" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" implicit="yes" />
+  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="yes" />
+  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="yes" />
+  <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
+  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" implicit="yes" />
+  <import index="us0v" modelUID="r:22b9d29d-483d-4f08-8d1b-4e6567157caf(com.mbeddr.tutorial.documentation.ug.analyses)" implicit="yes" />
+  <import index="zxcx" modelUID="r:af51c5c3-b54b-4a75-a1e6-409757d1a380(com.mbeddr.tutorial.documentation.code)" implicit="yes" />
+  <root type="2c95.Document" typeId="2c95.3350625596579911728" id="3458996998996953631" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="E_StateMachines" />
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="9" />
+    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="authors" roleId="2c95.126932837435370865" type="2c95.Author" typeId="2c95.126932837435370850" id="6159972464849879971" nodeInfo="ng">
+      <property name="name" nameId="2c95.126932837435370851" value="Tamas Szabo" />
+      <property name="email" nameId="2c95.126932837435370852" value="tamas.szabo@itemis.de" />
+    </node>
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="2900587364561787741" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="statemachines" />
+      <property name="text" nameId="2c95.3350625596580064225" value="State Machines" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997039525" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997039526" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997039527" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Next to components and units, state machines are one of the main C extensions available in mbeddr. They can be used directly in C programs, or alternatively, embedded into components. To keep the overall complexity of the example manageable, we will show how state machines can be used directly in C. \n\nState machines can either be viewed and edited with the textual notation or with the table based projection. You can switch between the two modes with the " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2219633145658991590" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2219633145658991591" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145658991592" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Code -&gt; Projection Mode -&gt; Statemachines as Tables" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145658991589" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" option. \n\nThis section will give a brief overview on state machines; how they can be defined, how one could interact with C code when using the state machines and we will also give details about hierarchical state machines and their visualizations with the help of the PlantUML tool. " />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="3458996998997039536" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="implementingStateMachine" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Implementing a State machine" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997052438" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997052439" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997052440" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Import the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3421495546383415936" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3421495546383415937" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3421495546383415938" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="com.mbeddr.statemachines" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3421495546383415935" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit into your model and create a new " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="3421495546383459525" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="3421495546383468185" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="3421495546383847516" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="x27k.6437088627575722830" resolveInfo="ImplementationModule" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3421495546383459524" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" (the example module is  called also " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968412690" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968412691" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968413060" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968412689" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Then you can create the state machine in this module and add the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="3421495546383851461" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="3421495546383851519" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="3421495546383851525" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="x27k.6437088627575722830" resolveInfo="ImplementationModule" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3421495546383851460" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to the build configuration. This section will guide you through an example that creates a state machine for a flight judgement system. This system has 5 states which describe the behavior of the plane and also give the semantics for awarding the points for a given flight. We will create these states and see how they can be connected with transitions. We will also explore how one could specify guard conditions for the transitions. The informal rules for judging flights are as follows:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ItemList" typeId="2c95.5378658552262893169" id="3458996998997052528" nodeInfo="ng">
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="3458996998997052550" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3458996998997052551" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997052552" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997052553" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Once a flight lifts off, you get 100 points" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="3458996998997059006" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3458996998997059007" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997059008" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997059009" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="For each trackpoint where you go more than 100 mps, you get 10 points" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="3458996998997065466" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3458996998997065467" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997065468" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997065469" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="For each trackpoint where you go more than 200 mps, you get 20 points" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="3458996998997071930" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3458996998997071931" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997071932" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997071933" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="You should land as short as possible; for each trackpoint where you are on the ground, rolling, you get 1 point deducted." />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="3458996998997078398" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3458996998997078399" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997078400" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997078401" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Once you land successfully, you get another 100 points." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997088136" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997088137" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997088138" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="In order to create the state machine in the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="3421495546384021894" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="3421495546384021904" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="3421495546384021910" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="x27k.6437088627575722830" resolveInfo="ImplementationModule" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3421495546384021893" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" simply type in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3421495546384021915" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3421495546384021916" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3421495546384021917" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1891280913626333837" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913626333838" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626333839" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="statemachine" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626333841" nodeInfo="ng" />
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3421495546384021914" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="at the top level in implementation modules. This will create a new state machine with an initial state and one event already defined. You can leave the event there, we will come back to that later. We know that the airplane will be in various states: " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968773257" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968773258" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773296" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773301" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773309" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687762901" resolveInfo="beforeFlight" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968773259" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968773386" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968773387" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773388" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773389" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773445" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687762902" resolveInfo="airborne" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968773385" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968773461" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968773462" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773463" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773464" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773505" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687762903" resolveInfo="landing" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968773465" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" (and still rolling), " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968773521" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968773522" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773523" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773524" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773567" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687762904" resolveInfo="landed" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968773525" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968773583" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968773584" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773585" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773586" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773631" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687763117" resolveInfo="crashed" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968773587" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". You can just rename the already existing initial state to " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968773647" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968773648" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773649" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773650" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773390" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687762901" resolveInfo="beforeFlight" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968773651" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and add the other states to the state machine. In the end you should have the following states: " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="677389874856902739" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="677389874856902740" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="677389874856902926" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="677389874857176512" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+            </node>
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="677389874856907955" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.5778488248013533883" resolveInfo="Transition" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="677389874857178367" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.1786180596061219795" resolveInfo="Event" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="677389874857194413" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.5633981208992643165" resolveInfo="StatemachineVariableDeclaration" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="677389874857228684" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.8409287311039031605" resolveInfo="AbstractAction" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="114074622968258129" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.1819488472664929103" resolveInfo="JunctionState" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997141863" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997141864" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997141865" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The state machine will accept two kinds of events. The first one is the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968773708" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968773709" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773710" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773711" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773737" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687762906" resolveInfo="next" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968773713" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" event, which takes the next trackpoint submitted for evaluation. Note how an event can have arguments of arbitrary C types, a pointer to a " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968773753" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968773754" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773787" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968773793" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968773758" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in this example. The " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1891280913626407061" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913626407062" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626407063" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Trackpoint" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626407065" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" struct is already defined in the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968786854" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968786855" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787405" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968786859" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" module. The other event, " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968787436" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968787437" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787438" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787439" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787468" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687762945" resolveInfo="reset" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968787441" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", resets the state machine back to its initial state. " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="677389874858022678" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="677389874858022679" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="677389874858023059" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="677389874858023067" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+            </node>
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="677389874858023417" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.5778488248013533883" resolveInfo="Transition" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="677389874858024459" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.5633981208992643165" resolveInfo="StatemachineVariableDeclaration" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="677389874858025505" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.8409287311039031605" resolveInfo="AbstractAction" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="677389874858026551" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.4249345261280334498" resolveInfo="AbstractState" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="677389874858040817" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.4643433264760980254" resolveInfo="OutEvent" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997161485" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997161486" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997161487" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We also need a variable in the state machine to keep track of the points we have accumulated during the flight. In order to create a new variable simply type " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3421495546384114643" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3421495546384114644" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3421495546384114645" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="var" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3421495546384114642" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in the state machine. This creates a new variable, you need to specify its name and the type. The newly created variable is invisible from outside by default, you can change this to " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1891280913626442202" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913626442203" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626442204" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="readable" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626442206" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" or " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1891280913626442221" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913626442222" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626442223" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="writable" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626442225" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" with the corresponding intentions. Readable variables may be read from outside of the state machine, while writable variables can also be modified from the interacting C code (you will have to create a state machine instance first; we explain this below). In the end you should have a " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3421495546384133361" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3421495546384133362" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3421495546384133363" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="points" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3421495546384133360" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" variable in the state machine which is readable only:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="677389874858045448" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="677389874858045449" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="677389874858045845" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="677389874858045853" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+            </node>
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="677389874858045862" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.5778488248013533883" resolveInfo="Transition" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="677389874858045884" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.8409287311039031605" resolveInfo="AbstractAction" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="677389874858045901" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.4249345261280334498" resolveInfo="AbstractState" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="677389874858045922" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.1786180596061219795" resolveInfo="Event" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997181130" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997181131" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997181132" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can now implement the rules outlined above using transitions and actions. Let us start with some simple ones. Whenever we enter " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968787484" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968787485" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787486" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787487" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787488" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687762901" resolveInfo="beforeFlight" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968787489" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" we reset the points to 0. We can achieve this with an entry action in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968787512" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968787513" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787514" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787515" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787516" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687762901" resolveInfo="beforeFlight" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968787517" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=":" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="677389874858048727" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <property name="removeEmpties" nameId="2c95.6955693250238922824" value="true" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="677389874858048728" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="677389874858049138" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="677389874858049146" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+            </node>
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="677389874858117364" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.5778488248013533883" resolveInfo="Transition" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="677389874858118401" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.1786180596061219795" resolveInfo="Event" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="677389874858119443" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.5633981208992643165" resolveInfo="StatemachineVariableDeclaration" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="677389874858135102" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.4753668641245545020" resolveInfo="ExitAction" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="677389874858136156" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.7727566415687762902" resolveInfo="airborne" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="677389874858137062" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.7727566415687762904" resolveInfo="landed" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="677389874858137968" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.7727566415687763117" resolveInfo="crashed" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="677389874858138880" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.7727566415687762903" resolveInfo="landing" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="114074622968259204" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.1819488472664929103" resolveInfo="JunctionState" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997191160" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997191161" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997191162" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="There are some additional rules for taking off, landing and conditions for crashing." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ItemList" typeId="2c95.5378658552262893169" id="114074622967891097" nodeInfo="ng">
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="114074622967891098" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="114074622967891099" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="114074622967891100" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622967891101" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="All states other than " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968787542" nodeInfo="ng">
+                  <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968787543" nodeInfo="ng">
+                    <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787544" nodeInfo="ng">
+                      <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                    </node>
+                    <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787546" nodeInfo="ng">
+                      <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687762901" resolveInfo="beforeFlight" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968787547" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" must have a transition triggered by the " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968787656" nodeInfo="ng">
+                  <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968787657" nodeInfo="ng">
+                    <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787658" nodeInfo="ng">
+                      <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                    </node>
+                    <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787659" nodeInfo="ng">
+                      <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+                    </node>
+                    <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787687" nodeInfo="ng">
+                      <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687762945" resolveInfo="reset" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968787661" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" event to go back to the " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968787616" nodeInfo="ng">
+                  <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968787617" nodeInfo="ng">
+                    <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787618" nodeInfo="ng">
+                      <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                    </node>
+                    <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787619" nodeInfo="ng">
+                      <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+                    </node>
+                    <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787620" nodeInfo="ng">
+                      <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687762901" resolveInfo="beforeFlight" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968787621" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state. Note, that as a consequence of the entry action in the " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968787578" nodeInfo="ng">
+                  <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968787579" nodeInfo="ng">
+                    <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787580" nodeInfo="ng">
+                      <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                    </node>
+                    <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787581" nodeInfo="ng">
+                      <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+                    </node>
+                    <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787582" nodeInfo="ng">
+                      <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687762901" resolveInfo="beforeFlight" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968787583" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state, the points get reset in all three cases." />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="114074622967895696" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="114074622967895697" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="114074622967895698" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622967895699" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="As soon as we submit a trackpoint where the altitude is greater than zero we can transition to the airborne state. This means we have successfully taken off, and we should get 100 points in bonus. " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968787703" nodeInfo="ng">
+                  <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968787704" nodeInfo="ng">
+                    <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968787705" nodeInfo="ng">
+                      <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                    </node>
+                    <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968833499" nodeInfo="ng">
+                      <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687762962" resolveInfo="TAKEOFF" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968787708" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is a global constant representing 100 (" />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="114074622967896072" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="114074622967896073" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622967896074" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="#constant TAKEOFF = 100;" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622967896075" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="). We also make use of the physical units extension (see " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="114074622967911161" nodeInfo="ng">
+                  <link role="target" roleId="2c95.3350625596580108719" targetNodeId="2900587364561785343" resolveInfo="units" />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622967911160" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=") and annotate the speed and altitude with the appropriate unit." />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="114074622967912426" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="114074622967912427" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="114074622967912428" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622967912429" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Events while we are in the air: when we are airborne and we receive a trackpoint with zero altitude and zero speed (without going through an orderly landing process), we have crashed. If we are at altitude zero with a speed greater than zero, we are in the process of landing. The other two cases deal with flying at over 200 and over 100 mps. In this case we stay in the " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968884835" nodeInfo="ng">
+                  <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968884836" nodeInfo="ng">
+                    <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968884837" nodeInfo="ng">
+                      <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                    </node>
+                    <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968884838" nodeInfo="ng">
+                      <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+                    </node>
+                    <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968884848" nodeInfo="ng">
+                      <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687762902" resolveInfo="airborne" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968884840" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state (by transitioning to itself) but we increase the points." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="114074622967920664" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="114074622967920665" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622967920666" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The complete set of transitions is as follows:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="114074622967841870" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622967841871" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622967842088" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622967843009" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+            </node>
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="114074622967843358" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.1786180596061219795" resolveInfo="Event" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="114074622967845437" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.5633981208992643165" resolveInfo="StatemachineVariableDeclaration" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="114074622968260279" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.1819488472664929103" resolveInfo="JunctionState" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997326432" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997326433" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997326434" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Note that the transitions are checked in the order of their appearance in the state machine; if several of them are ready to fire (based on the received event and the evaluation of the guard conditions), the first one is picked. Actually this kind of nondeterminism is usually not wanted and mbeddr provides support for the verification of state machines, which you can read more about in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="3421495546384308713" nodeInfo="ng">
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="us0v.4315280228447176921" resolveInfo="state_machines" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3421495546384308712" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4131552358980713173" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4131552358980713174" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4131552358980713175" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Junction states (influenced by Simulink) can also be created in the state machine in mbeddr. A junction state can only contain epsilon-transitions, meaning these transitions are immediately ready to fire when the state is entered, they don't need a triggering event. Having multiple epsilon-transitions clearly introduces nondeterminism, so one typically specifies guards for these transitions. The following example uses the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1891280913626447028" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913626447029" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626447030" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="points" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626447032" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" variable to select the state transition that should be applied. The example junction state makes a decision based on the points and immediately fires. " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="114074622968261570" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968261571" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968262151" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968262795" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+            </node>
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="114074622968264061" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.1786180596061219795" resolveInfo="Event" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="114074622968265660" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.5778488248013533839" resolveInfo="State" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="114074622968281857" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.5633981208992643165" resolveInfo="StatemachineVariableDeclaration" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1891280913626447397" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913626447398" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626447399" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Junctions are essentially branching points in a statemachine and help modularize complex guards (especially if several guards in one state have common subexpressions):" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="3458996998997358129" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="interactingWithOtherCodeOutbound" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Interacting with Other Code -- Outbound" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997358324" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997358325" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997358326" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="So how do we deal with the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968884864" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968884865" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968884866" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968884867" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968884881" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687763117" resolveInfo="crashed" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968884869" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state? Assume this flight analyzer runs on a server, analyzing flights that are submitted via the web. If we detect a crash, we want to send notifications or perform other kinds of error handling. In any case, this would involve the invocation of some external code. This can be performed in two ways: " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1891280913626449290" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913626449291" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626449292" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The first one is to simply invoke a C function from an entry or exit action. Another alternative, which is more suitable for formal analysis (as we will see below and in " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="1891280913626453711" nodeInfo="ng">
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="us0v.4315280228447176921" resolveInfo="state_machines" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626453710" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=") involves out events. From the entry action we " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="114074622968382979" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="114074622968382980" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968382981" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="send" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968382978" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" an out event, which we have defined in the state machine. The following code example shows how the latter one would look like. " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="114074622968317855" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <property name="removeEmpties" nameId="2c95.6955693250238922824" value="true" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968317856" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968318243" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+            </node>
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622968319822" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.8528611498588547081" resolveInfo="HierarchicalFlightAnalyzer" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622968322445" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.7727566415687767140" resolveInfo="makeTP" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="114074622968325068" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="x27k.3788988821851860886" resolveInfo="GlobalConstantDeclaration" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622968342378" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.7727566415687697331" resolveInfo="testFlightAnalyzer" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="114074622968364059" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.4643433264760980253" resolveInfo="InEvent" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622968366690" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.7727566415687762902" resolveInfo="airborne" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622968369171" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.7727566415687762904" resolveInfo="landed" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622968371650" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.7727566415687762903" resolveInfo="landing" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="114074622968374372" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.1819488472664929103" resolveInfo="JunctionState" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622968376941" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.7727566415687762901" resolveInfo="beforeFlight" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.ConceptCodeRemoval" typeId="2c95.2179458690439382890" id="114074622968379433" nodeInfo="ng">
+            <link role="conceptDecl" roleId="2c95.2179458690439403347" targetNodeId="clqz.5633981208992643165" resolveInfo="StatemachineVariableDeclaration" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1891280913627249568" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="114074622968389586" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968389587" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We create an out event called " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968892937" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968892938" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968892939" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968892940" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968892964" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687763159" resolveInfo="crashNotification" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968892942" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" (which will be sent when we enter the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968410002" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968410003" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968410374" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968411019" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968411668" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687763117" resolveInfo="crashed" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968410001" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state). We then specify a binding to the out event; the binding is part of the out event definition: simply add the name of the function as the target of the arrow (in the example this is the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968893031" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968893032" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968893050" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968893069" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687763153" resolveInfo="raiseAlarm" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968893033" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" function). \n\nThe benefit of this approach compared to the previous one is that formal verification can check whether the notification was sent at all during the execution of the state machine. The effect is the best of both worlds: in the generated code we do call the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968893112" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968893113" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968893114" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968893115" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687763153" resolveInfo="raiseAlarm" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968893111" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" function, but on the state machine level we have abstracted the implementation from the intent. See " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="1891280913627254396" nodeInfo="ng">
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="us0v.4315280228447176921" resolveInfo="state_machines" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627254395" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" for a discussion of state machine verification. " />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="3458996998997410421" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="interactonWithOtherCodeInbound" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Interaction with Other Code -- Inbound" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997417046" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997417047" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997417048" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let us write some test code that interacts with a state machine. To write a meaningful test, we will have to create a whole lot of trackpoints. So to do this we create helper functions. These in turn need " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997423502" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997423503" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997423504" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="malloc" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997423501" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997423511" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997423512" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997423513" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="free" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997423510" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", so we first create an additional external module that represents " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997423524" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997423525" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997423526" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="stdlib.h" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997423523" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=":" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="114074622968904852" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968904853" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968906003" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.6002249030799838349" resolveInfo="stdlib_stub" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997467384" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997467385" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997467386" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can now create a helper function that creates a new " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622968907590" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622968907591" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968907962" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622968908607" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622968907589" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" based on an altitude and speed passed in as arguments:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="3458996998997491853" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958149" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958150" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958151" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687767140" resolveInfo="makeTP" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997498368" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997498369" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997498370" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We can now start writing (and running!) the test. We first create an instance of the state machine (state machines act as types and must be instantiated). We then initialize the state machine by using the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997498420" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997498421" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997498422" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="init" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997498419" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" operation:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="114074622969515694" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622969515695" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622969523999" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622969524163" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687697331" resolveInfo="testFlightAnalyzer" />
+            </node>
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622969524413" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969223447" resolveInfo="sm_test_1a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622969524995" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969227936" resolveInfo="sm_test_1b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622969525425" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969238660" resolveInfo="sm_test_2a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622969526035" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969257585" resolveInfo="sm_test_2b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622969526554" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969268311" resolveInfo="sm_test_3a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622969527077" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969287956" resolveInfo="sm_test_3b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622969527513" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969171531" resolveInfo="sm_test_4a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622969528105" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969468353" resolveInfo="sm_test_4b" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997504965" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997504966" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997504967" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Initially we should be in the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622970944494" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622970944495" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622970944500" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622970944505" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622970944513" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687762901" resolveInfo="beforeFlight" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622970944493" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state. We can check this with an assertion:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="114074622970944806" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622970944807" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622970944808" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622970944809" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687697331" resolveInfo="testFlightAnalyzer" />
+            </node>
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970944811" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969227936" resolveInfo="sm_test_1b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970944812" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969238660" resolveInfo="sm_test_2a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970944813" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969257585" resolveInfo="sm_test_2b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970944814" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969268311" resolveInfo="sm_test_3a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970944815" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969287956" resolveInfo="sm_test_3b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970944816" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969171531" resolveInfo="sm_test_4a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970944817" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969468353" resolveInfo="sm_test_4b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970945663" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.7727566415687767302" resolveInfo="f" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970946242" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969189586" resolveInfo="sm_init" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997518018" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997518019" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997518020" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="We also want to make sure that the value of " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997524510" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997524511" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997524512" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="points" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997524509" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is zero initially. Since we have declared the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1891280913627257273" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913627257274" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627257275" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="points" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627257277" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" variable to be writable above, we can write: " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="114074622970947343" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622970947344" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622970947345" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622970947346" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687697331" resolveInfo="testFlightAnalyzer" />
+            </node>
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970947347" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969223447" resolveInfo="sm_test_1a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970947348" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969238660" resolveInfo="sm_test_2a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970947349" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969257585" resolveInfo="sm_test_2b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970947350" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969268311" resolveInfo="sm_test_3a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970947351" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969287956" resolveInfo="sm_test_3b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970947352" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969171531" resolveInfo="sm_test_4a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970947353" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969468353" resolveInfo="sm_test_4b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970947354" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.7727566415687767302" resolveInfo="f" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970947355" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969189586" resolveInfo="sm_init" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997537605" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997537606" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997537607" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Let us now create the first trackpoint and pass it in. This one has speed, but no altitude, so we are in the take-off run. We assume that we remain in the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997537665" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997537666" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997537667" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="beforeFlight" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997537664" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state and that we still have 0 points. Notice how we use the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1891280913627259722" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913627259723" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627259724" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="trigger" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627259726" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="  operation on the state machine instance. It takes the event as well as its arguments (if any):" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="114074622970949283" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622970949284" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622970949285" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622970949286" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687697331" resolveInfo="testFlightAnalyzer" />
+            </node>
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970949287" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969227936" resolveInfo="sm_test_1b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970950758" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969223447" resolveInfo="sm_test_1a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970949290" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969268311" resolveInfo="sm_test_3a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970949291" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969287956" resolveInfo="sm_test_3b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970949292" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969171531" resolveInfo="sm_test_4a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970949293" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969468353" resolveInfo="sm_test_4b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970949294" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.7727566415687767302" resolveInfo="f" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970949295" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969189586" resolveInfo="sm_init" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997547676" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997547677" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997547678" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Now we lift off by setting the alt to 100 meters:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="114074622970952829" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622970952830" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622970952831" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622970952832" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687697331" resolveInfo="testFlightAnalyzer" />
+            </node>
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970952833" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969227936" resolveInfo="sm_test_1b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970952834" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969238660" resolveInfo="sm_test_2a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970952835" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969257585" resolveInfo="sm_test_2b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970953973" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969223447" resolveInfo="sm_test_1a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970952838" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969171531" resolveInfo="sm_test_4a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970952839" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969468353" resolveInfo="sm_test_4b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970952840" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.7727566415687767302" resolveInfo="f" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970952841" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969189586" resolveInfo="sm_init" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997557640" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997557641" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997557642" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="So as you can see it is easy to interact from regular C code with a state machine. For testing, we have special support that checks if the state machine transitions to the desired state if a specific event is triggered. Here is some example code (note that you can use the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3458996998997564168" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997564169" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997564170" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="test statemachine}" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997564167" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" construct only within test cases):" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="114074622970955447" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622970955448" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622970955449" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622970955450" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.7727566415687697331" resolveInfo="testFlightAnalyzer" />
+            </node>
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970956614" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969223447" resolveInfo="sm_test_1a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970955451" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969227936" resolveInfo="sm_test_1b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970955452" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969238660" resolveInfo="sm_test_2a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970955453" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969257585" resolveInfo="sm_test_2b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970955454" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969268311" resolveInfo="sm_test_3a" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970955455" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969287956" resolveInfo="sm_test_3b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970955457" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969468353" resolveInfo="sm_test_4b" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970955458" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.7727566415687767302" resolveInfo="f" />
+          </node>
+          <node role="removals" roleId="2c95.6955693250238922821" type="2c95.NodeCodeRemoval" typeId="2c95.6955693250238922840" id="114074622970955459" nodeInfo="ng">
+            <link role="removedNode" roleId="2c95.6955693250238922841" targetNodeId="e1tx.114074622969189586" resolveInfo="sm_init" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997574090" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997574091" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997574092" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="You may have noticed that the helper function allocates the new " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622970958254" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622970958255" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622970958501" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587993" resolveInfo="DataStructures" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622970958915" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.1731059994647587994" resolveInfo="Trackpoint" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="114074622970958253" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="s on the heap, without releasing the memory. You could simply call " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2219633145657927349" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2219633145657927350" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145657927351" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="free" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2219633145657927348" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" on these newly created structures after the test statement has been executed or allocate the trackpoints on the stack to solve this problem." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="3458996998997836692" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="hierarchicalStateMachines" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Hierarchical State Machines" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997843582" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997843583" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997843584" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="State machines can also be hierarchical. This means that a state may contain essentially a sub-state machine. The following piece of code shows an example. It was derived from the previous flight judgement example, but the three " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622969093133" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622969093134" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622969093505" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622969094154" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.8528611498588547081" resolveInfo="HierarchicalFlightAnalyzer" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622969094716" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.8528611498588547128" resolveInfo="flying" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627280228" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622969095756" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622969095757" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622969095758" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622969095759" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.8528611498588547081" resolveInfo="HierarchicalFlightAnalyzer" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622969096541" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.8528611498588547180" resolveInfo="landing" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627280229" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622969096156" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622969096157" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622969096158" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622969096159" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.8528611498588547081" resolveInfo="HierarchicalFlightAnalyzer" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622969096900" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.8528611498588547199" resolveInfo="landed" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627280230" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" states are now nested inside the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="114074622969097711" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="114074622969097712" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622969097713" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622969097714" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.8528611498588547081" resolveInfo="HierarchicalFlightAnalyzer" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="114074622969098184" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.8528611498588547062" resolveInfo="airborne" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627280231" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" composite state. Composite states can be created in the state machine by typing " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3421495546384169835" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3421495546384169836" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3421495546384169837" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="composite state" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627280232" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". " />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="3458996998997880975" nodeInfo="ng">
+          <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="2286331641399958032" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="2286331641399958033" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5160057464295358354" resolveInfo="StateMachines" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="4131552358982549998" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.8528611498588547081" resolveInfo="HierarchicalFlightAnalyzer" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1891280913627260121" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913627260122" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627260123" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here are the semantics:" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ItemList" typeId="2c95.5378658552262893169" id="3458996998997843594" nodeInfo="ng">
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="3458996998997843600" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3458996998997843601" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997843602" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997843603" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="When a transition from outside a composite state targets a composite state, the initial state in that composite state is activated." />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="3458996998997850056" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3458996998997850057" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997850058" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997850059" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="A composite state can have its own transitions. These act as if they were defined for each of the states of the composite state." />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="3458996998997856516" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3458996998997856517" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997856518" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997856519" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="If a transition from an inner state " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1891280913627274446" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913627274447" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627274448" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="A" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627274450" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" crosses a composite state-boundary " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1891280913627274840" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913627274841" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627274842" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="B" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627274844" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=", then the actions happen in the following order: exit actions of " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1891280913627275238" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913627275239" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627275240" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="A" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627275242" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=", exit actions of " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1891280913627275640" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913627275641" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627275642" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="B" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627275644" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=", transition action, and entry action of the transition's target (which is outside of the composite state)." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="1891280913627286661" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="tabularNotation" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Tabular Notation" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1891280913627287266" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913627287267" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913627287268" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="State machines can also be rendered and edited as a table: the events become the column headers, and the states become the row headers. " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="5450602153900838535" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="5450602153900837513" resolveInfo="smtable" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5450602153900838536" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows an example. You can switch projection modes the usual way via the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.MenuFormattedText" typeId="2c95.2286331641392318852" id="5450602153900838540" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5450602153900838541" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5450602153900838542" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Code-&gt;Projection Modes" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5450602153900838543" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="5450602153900837513" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="smtable" />
+          <property name="showImage" nameId="2c95.6386504476136358630" value="true" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="5450602153900837532" nodeInfo="ng">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="smtable.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="5450602153900796689" resolveInfo="smimages" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5450602153900837517" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5450602153900837518" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5450602153900837519" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5450602153900838563" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5450602153900838564" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5450602153900838565" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="FlightAnalyzer" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5450602153900838567" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" state machine shown as a table." />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="5450602153900837521" nodeInfo="ng" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="3458996998997887919" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="stateMachineDiagrams" />
+        <property name="text" nameId="2c95.3350625596580064225" value="State Machine Diagrams" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3458996998997888378" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997888379" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997888380" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="State machines can also be visualized with PlantUML (a graphical editor will be done soon). The visualization can be generated from the context menu of the state machine. You may want to use the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4131552358982689975" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4131552358982689976" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4131552358982689977" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="statechart" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4131552358982689974" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" or " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4131552358982702512" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4131552358982702513" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4131552358982702514" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="statechart (short)" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4131552358982702511" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", the former one displays all information for the transitions while the latter one will only print the event's name which triggers the given transition.\n\n" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="3421495546384201692" nodeInfo="ng">
+              <link role="image" roleId="2c95.6386504476136420174" targetNodeId="3458996998997894837" resolveInfo="vsm" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3421495546384201691" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows an example visualization for the hierarchical state machine that was described in the previous section." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="3458996998997894837" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="vsm" />
+          <property name="center" nameId="2c95.8730648445434174368" value="true" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="3458996998997901304" nodeInfo="ng">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="tutorial/v_sm.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3458996998997894841" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3458996998997894842" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3458996998997894843" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="A visualization of a state machine in mbeddr. You can click on the states and transitions to select the respective element in the editor." />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="3458996998997907754" nodeInfo="ng">
+            <property name="percentage" nameId="2c95.8624890525767637977" value="40" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3421495546384147422" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="620304030110860646" resolveInfo="C_Units" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="3421495546384147430" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="7979854108176280683" resolveInfo="B_DecisionTables" />
+    </node>
+  </root>
+</model>
+

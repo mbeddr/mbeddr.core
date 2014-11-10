@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model modelUID="r:38897e08-83fd-42c7-91d3-65b102721940(com.mbeddr.tutorial.documentation.ug.cextensions)" content="root">
+  <persistence version="8" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" implicit="yes" />
+  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="yes" />
+  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
+  <import index="zxcx" modelUID="r:af51c5c3-b54b-4a75-a1e6-409757d1a380(com.mbeddr.tutorial.documentation.code)" implicit="yes" />
+  <root type="2c95.Document" typeId="2c95.3350625596579911728" id="7088286182578613178" nodeInfo="ng">
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
+    <property name="name" nameId="tpck.1169194664001" value="A_StaticEvaluation" />
+    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="7088286182578654527" nodeInfo="ng">
+      <property name="text" nameId="2c95.3350625596580064225" value="Static Evaluation" />
+      <property name="name" nameId="tpck.1169194664001" value="staticEvaluation" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7088286182578694002" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7088286182578694003" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182578694004" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr can calculate the static value of an expression if all children of that expression are statically evaluable. This is the case if the leaf nodes of the expression tree consist of literals, references to " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7088286182579275764" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7088286182579275765" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182579275766" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="#constant" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182579275763" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" or references to " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7088286182579275773" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7088286182579275774" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182579275775" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="#macro" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182579275772" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" (function macro calls). Whether an expression is statically evaluatable, as well as as its calculated static value, is shown in the inspector. " />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1891280913625979307" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913625979308" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913625979309" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The interpreter which calculates the static value works with a precision of 100 decimal places. The 101st place is rounded half up. " />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1891280913625979466" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913625979467" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913625979468" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="By default the interpreter has no effect on the code generated by mbeddr. However by using the " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7088286182580480233" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7088286182580480234" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182580480235" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="staticValueOf" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182580480236" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" expression you can ask mbeddr's code generator to first use the interpreter to calculate the static value and use this value then in the generated code. This functionality was introduced so that your code readability does not need to be sacrificed for performance reasons (in traditional C code you would typically see \&quot;magic numbers\&quot; where " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7088286182581553940" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7088286182581553941" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182581553942" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="staticValueOf" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182581554017" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is used in mbeddr). The expression can be inserted into your code using the " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1891280913626023360" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913626023361" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626023362" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="staticValueOf" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626023359" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" alias or by using a surround-with intention on a statically evaluable expression (" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.KeyPressFormattedText" typeId="2c95.2286331641391049225" id="7088286182581555189" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7088286182581555190" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182581555191" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="CTRL+ALT+T" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182581555188" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="). " />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="7088286182581556449" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="staticEval" />
+        <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+        <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7088286182581556451" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7088286182581556452" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182581556453" nodeInfo="ng" />
+          </node>
+        </node>
+        <node role="sizeSpec" roleId="2c95.6955693250238922833" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7088286182581556455" nodeInfo="ng" />
+        <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="7088286182581556457" nodeInfo="ng">
+          <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="7088286182581556562" nodeInfo="ng">
+            <link role="node" roleId="2c95.2286331641395252233" targetNodeId="zxcx.7088286182578695560" resolveInfo="StaticEval" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="1891280913626023389" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913626023390" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626023391" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="In addition to the pure static value calculation mbeddr can perform various rounding operations before the static value is inserted into your code (an example is shown in " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.ImgRefWord" typeId="2c95.6386504476136420159" id="1891280913626024720" nodeInfo="ng">
+            <link role="image" roleId="2c95.6386504476136420174" targetNodeId="7088286182581556449" resolveInfo="staticEval" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626024719" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="). These rounding operations can be added via an intention on the " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7088286182581555160" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7088286182581555161" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182581555162" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="staticValueOf" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182581555159" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" expression (" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="1891280913626023541" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913626023542" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626023543" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Add rounding operation" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626023545" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=") or it can be selected in the inspector of the " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7088286182581555110" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7088286182581555111" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182581555112" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="staticValueOf" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182581555109" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" expression. The following rounding operations are available:" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ItemList" typeId="2c95.5378658552262893169" id="7088286182581485357" nodeInfo="ng">
+        <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="7088286182581485380" nodeInfo="ng">
+          <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7088286182581485381" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7088286182581485382" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182581544725" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="1891280913626023650" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913626023651" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626023652" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="none:" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626023654" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" (default) no rounding operation will be performed. The resulting type might be a floating point type." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="7088286182581497907" nodeInfo="ng">
+          <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7088286182581497908" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7088286182581497909" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182581497910" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="1891280913626023661" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913626023662" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626023663" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="ceil:" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626023665" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" rounds torwards positive infinity. The result is an integer." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="7088286182581519745" nodeInfo="ng">
+          <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7088286182581519746" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7088286182581519747" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182581519748" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="1891280913626023672" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913626023673" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626023674" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="floor:" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626023676" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" rounds torwards negative infinity. The result is an integer." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="7088286182581498115" nodeInfo="ng">
+          <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7088286182581498116" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7088286182581498117" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182581498118" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="1891280913626023683" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913626023684" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626023685" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="round:" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626023687" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" rounds towards \&quot;nearest neighbor\&quot; unless both neighbors are equidistant, in which case it rounds up. The result is an integer." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="7088286182581498155" nodeInfo="ng">
+          <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7088286182581498156" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7088286182581498157" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7088286182581498158" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="1891280913626023694" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="1891280913626023695" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626023696" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="trunc:" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="1891280913626023698" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" rounds torwards zero. The result is an integer." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+</model>
+

@@ -2,12 +2,16 @@
 <model modelUID="r:22b9d29d-483d-4f08-8d1b-4e6567157caf(com.mbeddr.tutorial.documentation.ug.analyses)">
   <persistence version="8" />
   <language namespace="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
+  <language namespace="623c9ff8-1203-4890-b33e-cba29dd6cdc6(spellcheck)" />
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="1yl6" modelUID="r:9bae0493-3d57-4bb7-af86-c94f4734b531(com.mbeddr.tutorial.documentation.analyses_code)" version="-1" />
+  <import index="vi23" modelUID="r:9b94efb1-dbce-417f-b1ad-19c6a396d423(com.mbeddr.tutorial.documentation.ug.processSupport)" version="-1" />
+  <import index="xojk" modelUID="r:ec4f318b-4ee4-4063-b222-8a04b6ed816c(com.mbeddr.tutorial.documentation.ug.installation)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="16" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
+  <import index="oqy7" modelUID="r:5355e160-db68-4e93-9241-257192f43eed(com.mbeddr.mpsutil.review.annotation.structure)" version="-1" implicit="yes" />
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="2637267020265430784" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Config" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
@@ -37,7 +41,7 @@
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="4574736324932010379" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="A-010-Introduction" />
+    <property name="name" nameId="tpck.1169194664001" value="A_Introduction" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="4574736324932019985" nodeInfo="ng">
@@ -46,7 +50,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4574736324932019988" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4574736324932019989" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4574736324932019990" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Besides increasing the programmers productivity, domain specific languages allow the definition of advanced analyses. In mbeddr we have integrated different formal verification techniques aiming that they are used on a continuous basis in the everyday work of practicing engineers. As of today, we have implemented two different kinds of analyses:" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Besides increasing the programmers productivity, domain specific languages allow the definition of advanced, user friendly and domain specific analyses. One special kind of analyses is formal verification, which uses mathematical precise methods for checking properties of mbeddr code. In mbeddr we have integrated different formal verification techniques aiming on being used on a continuous basis in everyday's work of practicing engineers. As of today, we have implemented two different kinds of analyses:" />
           </node>
         </node>
       </node>
@@ -55,7 +59,7 @@
           <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4574736324932020387" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4574736324932020388" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4574736324932020389" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Analyses of variability: mbeddr features advanced support for the definition of product lines using feature models, configuration models and annotation of artefacts with advanced presence conditions. We analyze the consistency of feature models, of configuration models and of the annotated artefacts. To do this we use the SAT4J SAT-solver " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Formal verification of variability: mbeddr features advanced support for the definition of product lines using feature models, configuration models and annotation of artifacts with advanced presence conditions. We analyze the consistency of feature models, of configuration models and of the annotated artifacts. To do this we use the SAT4J SAT-solver " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="4574736324932030101" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4574736324932030102" nodeInfo="ng">
@@ -74,7 +78,17 @@
           <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4574736324932020399" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4574736324932020400" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4574736324932020401" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Formal verification of mbeddr-C programs: once programs are written in mbeddr, we enable developers to use advanced formal verification techniques. Our focus is on user-friendlyness of the verification. Besides analyzing the C code we support the analyses of all mbeddr-C extensions." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Formal verification of mbeddr-C programs: once programs are written in mbeddr, we enable developers to use advanced formal verification techniques to prove absence of bugs, or, when the analyses are incomplete, to search for cumbersome bugs. Our focus is on user-friendliness of the verification: all analyses are targeted to practicing embedded engineers. For verification we use the CBMC C-level model checker " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="5724023611136673257" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611136673258" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611136673259" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://www.cprover.org/cbmc/" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611136673256" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
               </node>
             </node>
           </node>
@@ -86,7 +100,7 @@
     </node>
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="9020927825193691657" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="A-020-VariabilityVerification" />
+    <property name="name" nameId="tpck.1169194664001" value="B_VariabilityVerification" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="9020927825193691658" nodeInfo="ng">
@@ -95,65 +109,15 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="9020927825193691677" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691678" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691679" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr allows the defition of product lines with the help of feature models, configuration models and attaching advanced presence conditions to the produced artefacts (e.g. programs code, requirements). Feature" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr allows the definition of product lines with the help of feature models, configuration models and attaching advanced presence conditions to the produced artifacts (e.g. programs code, requirements). Defining and using product lines in mbeddr is described in Section " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="5724023611136699901" nodeInfo="ng">
+            <link role="target" roleId="2c95.3350625596580108719" targetNodeId="vi23.536680812409754434" resolveInfo="productlinevariability" />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611136699902" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
           </node>
         </node>
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ItemList" typeId="2c95.5378658552262893169" id="9020927825193691680" nodeInfo="ng">
-        <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="9020927825193691681" nodeInfo="ng">
-          <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="9020927825193691682" nodeInfo="ng">
-            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691683" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691684" nodeInfo="ng" />
-              <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="9020927825193691685" nodeInfo="ng">
-                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691686" nodeInfo="ng">
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691687" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Feature models:" />
-                  </node>
-                </node>
-              </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691688" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" are used to define the variation space for the product line - the so called 200% configuration. They define which features exist, how are they arranged in a feature-sub-feature hierarchy, what are the relations between a feature and its sub-features (e.g. are sub-features mandatory, optional, or is a sub-feature excluding others), or what are the relations among different features in the hierarchy (e.g. a feature A might require or conflict with another feature B)." />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="9020927825193691689" nodeInfo="ng">
-          <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="9020927825193691690" nodeInfo="ng">
-            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691691" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691692" nodeInfo="ng" />
-              <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="9020927825193691693" nodeInfo="ng">
-                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691694" nodeInfo="ng">
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691695" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Configuration models:" />
-                  </node>
-                </node>
-              </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691696" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" are used to define single configurations of the product by selecting a subset of features from a feature model. " />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="9020927825193691697" nodeInfo="ng">
-          <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="9020927825193691698" nodeInfo="ng">
-            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691699" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691700" nodeInfo="ng" />
-              <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="9020927825193691701" nodeInfo="ng">
-                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691702" nodeInfo="ng">
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691703" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Presence conditions:" />
-                  </node>
-                </node>
-              </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691704" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" are logical expressions based on features that define when an artefact (e.g. a piece of code) is included. " />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="9020927825193691705" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="empty_1400651424586_8" />
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="9020927825193691706" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691707" nodeInfo="ng">
@@ -194,7 +158,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691725" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" checks whether a configuration model is consistent with the feature model that it configures. Examples of inconsistencies are when not all mandatory features are selected, when conflicting features are selected." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" checks whether a configuration model is consistent with the feature model that it configures. Examples of inconsistencies are when not all mandatory features are selected or when conflicting features are selected." />
               </node>
             </node>
           </node>
@@ -213,7 +177,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691733" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" checks whether a mbeddr-C program whose parts are annotated with presence conditions is consistent. Examples of inconsistencies are when a declaration is annotated with a presence condition  and there exist calls to this function that are not annotated with a presence condition - in this case the function is called when the function itself is not included in the generated code and thereby a compile error will be caused." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" checks whether a mbeddr-C program whose parts are annotated with presence conditions is consistent. Examples of inconsistencies are when a function declaration is annotated with a presence condition  and there exist calls to this function that are not annotated with a presence condition - in this case the function is called when the function itself is not included in the generated code and thereby generator or compile errors will be caused." />
               </node>
             </node>
           </node>
@@ -221,6 +185,13 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="9020927825193691734" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="empty_1400653131561_12" />
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5724023611136706501" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611136706502" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611136706503" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Variability analyses are enabled both fine-granular on feature models and configuration models as well as on models and solutions that use variability support. " />
+          </node>
+        </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="9020927825193691735" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="fm_analyzer" />
@@ -236,6 +207,7 @@
           <property name="name" nameId="tpck.1169194664001" value="fm_example" />
           <property name="center" nameId="2c95.8730648445434174368" value="true" />
           <property name="border" nameId="2c95.4755612053022517119" value="true" />
+          <property name="showImage" nameId="2c95.6386504476136358630" value="true" />
           <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="9020927825193691740" nodeInfo="ng">
             <property name="fileName" nameId="2c95.6386504476136521408" value="analyses/fm_example.png" />
             <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
@@ -257,7 +229,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="9020927825193691746" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691747" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691748" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The FM-Analyzer can be started by right-clicking on the feature model node and selecting the corresponding menu entry. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The FM-Analyzer can be started by right-clicking on the feature model name and selecting the corresponding menu entry. " />
             </node>
           </node>
         </node>
@@ -345,7 +317,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="9020927825193691776" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193691777" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193691778" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The CM-Analyzer can be started by right-clicking on the feature model node and selecting the corresponding menu entry. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The CM-Analyzer can be started by right-clicking on the feature model name and selecting the corresponding menu entry. " />
             </node>
           </node>
         </node>
@@ -433,7 +405,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="9020927825193705491" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193705492" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193705493" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The Modules-Analyzer can be started by right-clicking on the feature model node and selecting the corresponding menu entry. It checks whether the implementation module is consistent with respect to the feature model. Example of inconsistencies are cases when for a function (or variable) declaration we have a presence condition, however, for the calls (or references) to this function (or variable) we do not have any presence condition. In this case, if the code generation is performed, we can get a compile error.  " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The Modules-Analyzer can be started by right-clicking on the implementation module name and selecting the corresponding menu entry. It checks whether the implementation module is consistent with respect to the feature model. Example of inconsistencies are cases when for a function (or variable) declaration we have a presence condition, however, for the calls (or references) to this function (or variable) we do not have any presence condition. In this case, if the code generation is performed, we can get a compile error.  " />
             </node>
           </node>
         </node>
@@ -458,7 +430,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="9020927825193705500" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193705501" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193705502" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Module-Analyzer will open a window with the results of the analysis. In the case when the analysis fails, Mo-Analyzer provides an explanation about the cause of failure by giving a possible configuraton (selecting concrete features) that would cause the failure. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Module-Analyzer will open a window with the results of the analysis. In the case when the analysis fails, Mo-Analyzer provides an explanation about the cause of failure by giving a possible configuration (selecting concrete features) that would cause the failure. " />
             </node>
           </node>
         </node>
@@ -483,10 +455,93 @@
         </node>
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="9020927825193692526" nodeInfo="ng" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5724023611138131897" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="models_and_solutions_variability_analyzer" />
+        <property name="text" nameId="2c95.3350625596580064225" value="Modules and Solutions Variability Analyzer" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5724023611138133053" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611138133054" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611138133055" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Whenever a model contains a root node of type " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5724023611138133065" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611138133066" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611138133067" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="VariabilitySupport" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611138133068" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=", by right-clicking on this model we can check the consistency of variability definition. Whenever a model contains an " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5724023611138371978" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611138371979" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611138371980" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="ImplementationModule" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611138371981" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" which is referencing a feature model, by right-clicking on this model we can check the consistency of variability use." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="5724023611138376251" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="starting_variability_checks_on_models" />
+          <property name="center" nameId="2c95.8730648445434174368" value="true" />
+          <property name="border" nameId="2c95.4755612053022517119" value="true" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="5724023611138376252" nodeInfo="ng">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="analyses/variability_verification_for_models.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5724023611138376253" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611138376254" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611138376255" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Direct start of 'variability definition' and 'variability use' checks for models." />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="5724023611138376256" nodeInfo="ng">
+            <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8624890525768078255" resolveInfo="width80" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5724023611138376317" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611138376318" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611138376319" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="When a solution contains models that define feature models, then we can check the variability consistency (both definition and use) for the entire solution." />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="5724023611138382780" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="starting_variability_checks_on_solutions" />
+          <property name="center" nameId="2c95.8730648445434174368" value="true" />
+          <property name="border" nameId="2c95.4755612053022517119" value="true" />
+          <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="5724023611138382781" nodeInfo="ng">
+            <property name="fileName" nameId="2c95.6386504476136521408" value="analyses/variability_verification_for_solutions.png" />
+            <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+          </node>
+          <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5724023611138382782" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611138382783" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611138382784" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="One-click start of both variability definition and variability use checks for solutions." />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="5724023611138382785" nodeInfo="ng">
+            <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8624890525768078255" resolveInfo="width80" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="5724023611138376150" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
+        </node>
+      </node>
     </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="5724023611136698962" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="vi23.536680812409687143" resolveInfo="F_ProductLineVariability" />
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="3115042184192836690" nodeInfo="ng" />
   </root>
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="9020927825193793093" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="A-030-FormalVerification" />
+    <property name="name" nameId="tpck.1169194664001" value="C_FormalVerification" />
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="9020927825193793094" nodeInfo="ng">
@@ -505,7 +560,17 @@
             </node>
           </node>
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193793115" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" C-level model-checker which is free under a BSD-4-clause license. Below we reproduce the advertising requirements of this license for CBMC:\n\n\&quot;This product includes software developed by Daniel Kroening, ETH Zurich and Edmund Clarke, Computer Science Department, Carnegie Mellon University.\&quot;\n\nThe focus in mbeddr is on bugs hunting at the sub-sub-system level in a continuous and user-friendly manner. We do NOT prove correctness of a system but rather help users to find bugs. Each run of an analysis can provide one of the results: SUCCESS (colored GREEN) - meaning that no bug could be found; or FAIL (colored RED) - meaning that a bug could be found. When a bug is found, we have a trace through the system (counterexample) that leads to that failure.\n\nWe distinguish between the following kinds of analyses:" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" C-level model-checker which is free under a BSD-4-clause license. Below we reproduce the 'advertising requirements' of the  CBMC license:\n\n\&quot;This product includes software developed by Daniel Kroening, ETH Zurich and Edmund Clarke, Computer Science Department, Carnegie Mellon University.\&quot;\n\nThe focus in mbeddr is on hunting bugs at the unit level in a continuous and user-friendly manner. In general, we  " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="2c95.BoldFormattedText" typeId="2c95.620304030119138923" id="7347601989643071867" nodeInfo="ng">
+            <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7347601989643071868" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7347601989643071869" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" do not" />
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7347601989643071866" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="aim to prove correctness of a system but rather help users to find bugs. Each run of an analysis can provide one of the results: SUCCESS (colored GREEN) - meaning that no bug could be found; FAIL (colored RED) - meaning that a bug could be found, or DON'T KNOW (colored orange) meaning that no bug could be found but the verification is incomplete. When a bug is found, most of the times we have a trace through the system (counterexample) that leads to that failure.\n\nWe distinguish between the following kinds of analyses:" />
           </node>
         </node>
       </node>
@@ -522,7 +587,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193818267" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" mbeddr allows the checking of robustness properties on a code like: absence of null pointer dereferencing, absence of div-by-zero, etc. A more in-depth presentation of robustness checks is given in " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" allows checking of robustness properties like: absence of null pointer dereferencing, absence of div-by-zero, absence of overflows, absence of arrays-out-of-bounds accesses, etc. A more in-depth presentation of robustness checks is given in " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="9020927825193819685" nodeInfo="ng">
                 <link role="target" roleId="2c95.3350625596580108719" targetNodeId="9020927825193818808" resolveInfo="robustness_checks_at_c_level" />
@@ -547,7 +612,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193818303" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" some of the mbeddr-extensions provide verification conditions that can be automatically checked and which can be understood as high-level robustness checks. For example, given a state-machine, a robustness check for it is to make sure that all states of the state machine can be reached and all transitions can be fired. More details are provided in " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" allows automatic checking of the robustness of several mbeddr-extensions (similar to C-code robustness checks, we can check the robustness of extensions). For example, given a state-machine, a robustness check for it ensures that all states of the state machine can be reached and all transitions can be fired. More details are provided in " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="9020927825193819662" nodeInfo="ng">
                 <link role="target" roleId="2c95.3350625596580108719" targetNodeId="9020927825193819314" resolveInfo="robustness_checks_at_mbeddr_level" />
@@ -570,7 +635,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193818359" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" mbeddr users can define themselves the business-domain specific properties to be checked on a given program. Such properties can be given in code either as assertions or attached to higher level constructs. More details are provided in " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" mbeddr users can define themselves the business-domain specific properties to be checked on a given program; such properties originate usually from functional requirements. Such properties can be given in code either as assertions or attached to higher level constructs like components interfaces. More details are provided in " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="9020927825193818376" nodeInfo="ng">
                 <link role="target" roleId="2c95.3350625596580108719" targetNodeId="9020927825193819488" resolveInfo="functional_verification" />
@@ -591,7 +656,17 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3799250884624555736" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3799250884624555737" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3799250884624555738" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The verification tool that we are using is run on the generated C code (not on the mbeddr models themselves). Thereby, it assumes that from your models you can generate valid C code (otherwise, CBMC will complain and no verification will be performed)." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="The verification tool that we are using is run on the generated C code (not on the mbeddr models themselves). Thereby, it assumes that from your models you can generate valid C code " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.FootnoteWord" typeId="2c95.2728443031450669962" id="5724023611140943514" nodeInfo="ng">
+              <node role="text" roleId="2c95.2728443031450670151" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611140943515" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140943516" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="If advanced environments specification is used, the generated C code might contain also CBMC specific macros, so it does not need to compile." />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140943513" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" (otherwise, CBMC will complain and no verification will be performed)." />
             </node>
           </node>
           <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="3799250884624555739" nodeInfo="ng">
@@ -618,7 +693,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193817478" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" The first step is to be aware about what properties will be checked and what properties will not be checked :-) Also, be sure that you understand what sub-system will be verified.\nFor example, when performing robustness analyses of C-code (e.g. searching for div-by-zero) from a function as entry point, only those division operations will be checked for div-by-zero that can be reached from that entry point." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" The first step is to be aware about what properties will be checked and what properties will not be checked :-) Also, be sure to understand what sub-system will be verified.\nFor example, when performing robustness analyses of C-code (e.g. searching for div-by-zero) from a function as entry point, only those division operations will be checked for div-by-zero that can be reached from that entry point (see below). " />
                 </node>
               </node>
             </node>
@@ -647,7 +722,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193817761" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=". Code not reachable from the entry point will not be checked at all!" />
                 </node>
               </node>
             </node>
@@ -666,7 +741,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193817841" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Each subsystem (e.g. function, component) on which a verification is performed, is embedded in a bigger system from where it gets the data. Usually, the data types used in the code are much more permissive than the actual values that a parameter can take (e.g. for a function that computes a distance that a car can travel in a certain time period given a parameter " />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Each sub-system (e.g. function, component) on which a verification is performed, is embedded in a bigger system from where it gets the data. Usually, the data types used in the code are much more permissive than the actual values that a parameter can take (e.g. for a function that computes a distance that a car can travel in a certain time period given a parameter " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="9020927825193817852" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193817853" nodeInfo="ng">
@@ -681,7 +756,7 @@
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="9020927825193817874" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193817875" nodeInfo="ng">
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193817876" nodeInfo="ng">
-                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="int16" />
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="int32" />
                     </node>
                   </node>
                 </node>
@@ -691,12 +766,12 @@
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="9020927825193818139" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825193818140" nodeInfo="ng">
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193818141" nodeInfo="ng">
-                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="int16" />
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="int32" />
                     </node>
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193818142" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is relevant." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is relevant since cars cannot travel very fast or have high negative speeds)." />
                 </node>
               </node>
             </node>
@@ -715,20 +790,58 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825193819805" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" CBMC takes a big number of parameters that directly affect the results of the verification. The most important parameter is related to the loops unwinding - CBMC performs a stepwise symbolic execution of the code and needs to know how many times loops should be unwound." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" CBMC takes a big number of parameters that directly affect the results of the verification. The most important parameter is related to the loops unwinding " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.FootnoteWord" typeId="2c95.2728443031450669962" id="7347601989643071898" nodeInfo="ng">
+                  <node role="text" roleId="2c95.2728443031450670151" type="87nw.Text" typeId="87nw.2557074442922380897" id="7347601989643071899" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7347601989643071900" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="loops unwinding is also known as loops unrolling" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7347601989643071897" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" - CBMC performs a stepwise symbolic execution of the code and needs to know how many times loops should be unwound." />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4315280228446945274" nodeInfo="ng">
-          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228446945275" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228446945276" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr allows the definition of higher-level, domain specific properties. Our approach to check them is to generate C-level labels for each of them and to check the reachability of these labels. In some cases, if a label is reachable then the property is violated (e.g. for decision tables); in other cases labels that are not rechable represent property violations (e.g. for state-machines states reachibility verification, if a label corresponding to a state is not reachable, then that state is not reachable).  " />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="3946864811253507509" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="3946864811253508142" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="behind_the_courtain" />
+          <property name="text" nameId="2c95.3350625596580064225" value="Behind the Courtain" />
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3946864811253508568" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3946864811253508569" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3946864811253508570" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr allows the definition of higher-level, domain specific properties. Our approach to check them is to generate C-level labels (or asserts) for each of them and to check the reachability of these labels (or violation of asserts). In some cases, if a label is reachable then the property is violated (e.g. for decision tables); in other cases labels that are not rechable represent property violations (e.g. for state-machines states reachability verification, if a label corresponding to a state is not reachable, then that state is not reachable).  Encoding of high-level properties as labels (or assertions) and lifting the verification results is done automatically and transparent for the user." />
+              </node>
             </node>
           </node>
-          <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="4315280228446945508" nodeInfo="ng">
-            <property name="text" nameId="2c95.5185579450379273119" value="Behind the courtain" />
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3946864811253508669" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3946864811253508670" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3946864811253508671" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="In order not to clutter the production code with unnecessary lines, the labels used for the verification are generated only when a model 'rebuild' which is started by an analysis action is performed - please make sure that the code you analyze gets rebuilt before the analysis starts." />
+              </node>
+            </node>
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="5724023611140947022" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="global_settings" />
+            <property name="center" nameId="2c95.8730648445434174368" value="true" />
+            <property name="border" nameId="2c95.4755612053022517119" value="true" />
+            <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="5724023611140947023" nodeInfo="ng">
+              <property name="fileName" nameId="2c95.6386504476136521408" value="analyses/verification_process_at_a_glance.png" />
+              <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
+            </node>
+            <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5724023611140947024" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611140947025" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947026" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="An intuitive overview about how we integrate CBMC in mbeddr: users write high-level functional properties, they are translated into low-level C checks, CBMC is run and then the produced result is lifted back at the domain level." />
+                </node>
+              </node>
+            </node>
+            <node role="sizeSpec" roleId="2c95.8624890525767908695" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="5724023611140947027" nodeInfo="ng" />
           </node>
         </node>
       </node>
@@ -755,7 +868,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825194462704" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Analyses are provided through a series of devkits that need to be enabled for the model where the analysis is run. Without these devkits enabled, either some analyses are not possible at all or the interpretation of the program trace will not be lifted at the mbeddr level." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" Analyses are provided through a series of devkits that need to be enabled for the model where the analysis is run. Without these devkits enabled, either some analyses are not possible at all or the interpretation of the program trace will not be lifted at the DSL level." />
                 </node>
               </node>
             </node>
@@ -774,7 +887,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825194462712" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" The verification is performed directly on the generated C code. Thereby, if no valid C code is generated from your models, then no verification will be done. Make sure that all implementation modules are added to a build configuration." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" The verification is performed directly on the generated C code. Thereby, if no valid C code is generated from your models, then no verification will be done. Do not forget to add all implementation modules to the build configuration." />
                 </node>
               </node>
             </node>
@@ -786,7 +899,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="3799250884624557167" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="3799250884624557168" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3799250884624557169" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Global settings for CBMC-based analyses can be changed via \&quot;File-&gt;Settings\&quot; menu and then selecting \&quot;CProver preference\&quot; tab as shown below." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Global settings for CBMC-based analyses can be changed via \&quot;File-&gt;Settings\&quot; menu and then selecting \&quot;CProver preference\&quot; tab as shown below. " />
             </node>
           </node>
         </node>
@@ -801,7 +914,7 @@
           <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3799250884624557172" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3799250884624557173" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3799250884624557174" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Global settings for running CBMC." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="CBMC global settings." />
               </node>
             </node>
           </node>
@@ -818,8 +931,16 @@
           <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="3799250884624569067" nodeInfo="ng">
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3799250884624569068" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3799250884624569069" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3799250884624569070" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Number of parallel threads defines the maximum number of instances of CBMC that will be started simultaneously." />
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947337" nodeInfo="ng" />
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="5724023611140947334" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611140947335" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947336" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Number of parallel threads" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947333" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" defines the maximum number of instances of CBMC that will be started simultaneously." />
                 </node>
               </node>
             </node>
@@ -827,8 +948,26 @@
           <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="3799250884624569075" nodeInfo="ng">
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3799250884624569076" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3799250884624569077" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3799250884624569078" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Timeout represents the time budget allocated for an analysis. After the timeut expires, the CBMC process will be killed and the analysis will be stopped. In the case when a high-level analysis starts several instances of CBMC (e.g. in case of robustness analyses, we will start one instance of CBMC for each atomic robustness check), then users can define timeout for atomic analyses." />
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947352" nodeInfo="ng" />
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="5724023611140947349" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611140947350" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947351" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Timeout" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947348" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" represents the time budget allocated for an analysis. After the timeout expires, the CBMC process will be killed and the analysis will be stopped. In the case when a high-level analysis starts several instances of CBMC (e.g. in case of robustness analyses, we will start one instance of CBMC for each atomic robustness check), then users can define timeout for atomic analyses - denoted as " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="5724023611140948939" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611140948940" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140948941" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="partial timeout" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140948938" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="." />
                 </node>
               </node>
             </node>
@@ -837,7 +976,23 @@
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3799250884624569088" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3799250884624569089" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3799250884624569090" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Use of VCC/GCC under Windows. If VCC is used then mbeddr should be started from the Visual Studio console." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Use of " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="5724023611140947366" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611140947367" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947368" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="VCC/GCC" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947365" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" under Windows. If VCC is used then mbeddr should be started from the Visual Studio console. If GCC is used, then 'gcc' should be in path (see " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="7347601989643073807" nodeInfo="ng">
+                  <link role="target" roleId="2c95.3350625596580108719" targetNodeId="xojk.2564556814935137124" resolveInfo="VerificationTools" />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7347601989643073806" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=")." />
                 </node>
               </node>
             </node>
@@ -845,8 +1000,16 @@
           <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="3799250884624569103" nodeInfo="ng">
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3799250884624569104" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3799250884624569105" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3799250884624569106" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Rebuild models before analysis instructs mbeddr to perform a full \&quot;MPS rebuild\&quot; of the analyzed model before each analysis (otherwise only an \&quot;MPS make\&quot; will be run)." />
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947385" nodeInfo="ng" />
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="5724023611140947382" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611140947383" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947384" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Rebuild models" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947381" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" before analysis instructs mbeddr to perform a full \&quot;MPS rebuild\&quot; of the analyzed model before each analysis (otherwise only an \&quot;MPS make\&quot; will be run; in MPS, 'just make' is not always functioning properly)." />
                 </node>
               </node>
             </node>
@@ -854,8 +1017,16 @@
           <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="3799250884624569738" nodeInfo="ng">
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3799250884624569739" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3799250884624569740" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3799250884624569741" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Slice formula instructs CBMC to perform program slicing. The analyses will run faster, however, in the case when the analysis fails, the returned counterexample might not contain all intermediate steps." />
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947402" nodeInfo="ng" />
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="5724023611140947399" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611140947400" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947401" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Slice formula" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947398" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" instructs CBMC to perform program slicing. The analyses will run faster, however, in the case when the analysis fails, the returned counterexample might not contain all intermediate steps." />
                 </node>
               </node>
             </node>
@@ -863,8 +1034,16 @@
           <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="3799250884624569762" nodeInfo="ng">
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3799250884624569763" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3799250884624569764" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3799250884624569765" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Unwinding depth instructs CBMC how many times it should unwind loops. If generate unwinding assertions is selected, then CBMC will explicitly check that each loop was unwound enough. For more details about the loops unwinding in CBMC, please look here: " />
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947419" nodeInfo="ng" />
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="5724023611140947416" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611140947417" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947418" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Unwinding depth" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947415" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" instructs CBMC how many times it should unwind loops. If generate unwinding assertions is selected, then CBMC will explicitly check that each loop was unwound enough. For more details about the loops unwinding in CBMC, please look here: " />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="3799250884624570469" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3799250884624570470" nodeInfo="ng">
@@ -882,8 +1061,33 @@
           <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="5187744200053905479" nodeInfo="ng">
             <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5187744200053905480" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5187744200053905481" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5187744200053905482" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Partial loops instructs CBMC to continue the analysis even if unwinding is not enough. Enabling partial loops, increases the number of bugs that can be found, however, it might introduce false positives (properties reported as SUCCESS even if they should FAIL) and false negatives (properties reported as FAILS even if they should be SUCCESS; in these cases, provided counterexamples are not feasible). Unfeasible conterexamples can be returned also in the case when the property FAILS indeed." />
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947444" nodeInfo="ng" />
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="5724023611140947441" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611140947442" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947443" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Partial loops" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140947440" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" instructs CBMC to continue the analysis even if unwinding is not enough. Enabling partial loops, increases the number of bugs that can be found, however, it might introduce false positives (properties reported as SUCCESS even if they should FAIL) and false negatives (properties reported as FAILS even if they should be SUCCESS; in these cases, provided counterexamples are not feasible). Unfeasible counterexamples can be returned also in the case when the property FAILS indeed." />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="5724023611140947479" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5724023611140947480" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611140947481" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140948926" nodeInfo="ng" />
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="5724023611140948923" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611140948924" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140948925" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Use refinement" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5724023611140948927" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" instructs CBMC to use refinement procedure. If checked, this setting speeds-up some analyses. However, it should be used with case since it is still marked as 'experimental' in CBMC 4.9." />
                 </node>
               </node>
             </node>
@@ -907,11 +1111,10 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825194463121" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit as shown in the following figure." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit as shown in the following figure. C programs are called to be 'robust' if no run-time errors (e.g. division by zero, null pointers dereferencing) can occur. To search for these errors, CBMC will check each place in the generated C code where the error can occur (e.g. each division operation, each dereferencing of pointers). The properties to be checked in this case are automatically generated by CBMC and mean for example that all divisions have divisors that are not zero." />
             </node>
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="9020927825194463132" nodeInfo="ng" />
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="9020927825194463212" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="verification_core_devkit" />
           <property name="center" nameId="2c95.8730648445434174368" value="true" />
@@ -943,7 +1146,33 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="9020927825194463320" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825194463321" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825194463322" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To start the robustness checks for a given function (and transitively for the other functions that are called from it) you can either open a pop-up menu on the function node or define an robustness analysis configuration and start the analysis from there." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="To start the robustness checks for a given function " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.FootnoteWord" typeId="2c95.2728443031450669962" id="7347601989643077086" nodeInfo="ng">
+              <node role="text" roleId="2c95.2728443031450670151" type="87nw.Text" typeId="87nw.2557074442922380897" id="7347601989643077087" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7347601989643077088" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="All analyses re performed on the code from the function set as entry point and transitively for the functions that are called from it" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7347601989643077085" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" you can either open a pop-up menu on the function or define an robustness analysis configuration " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.FootnoteWord" typeId="2c95.2728443031450669962" id="3946864811251264799" nodeInfo="ng">
+              <node role="text" roleId="2c95.2728443031450670151" type="87nw.Text" typeId="87nw.2557074442922380897" id="3946864811251264800" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3946864811251264801" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Most analyses can be either run with one click (in that case the global settings (see  " />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="3946864811251748219" nodeInfo="ng">
+                  <link role="target" roleId="2c95.3350625596580108719" targetNodeId="9020927825194462692" resolveInfo="basic_configuration" />
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3946864811251748218" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=") will be used and the entry point in the analysis is 'main' or can be run via checking 'analysis configurations'.  An analysis configuration enables the specification of entry points (e.g. verification environments) and fine granular definition of CBMC parameters." />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3946864811251264798" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=".  " />
             </node>
           </node>
         </node>
@@ -1023,7 +1252,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="9020927825194724992" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="9020927825194724993" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9020927825194724994" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="When the analysis is started from the popup menu, all robustness properties will be checked. Below we summarize the robustness properties (details about these propertie can be found on the webpage of CBMC " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="When the analysis is started from the pop-up menu, all robustness properties will be checked. Below we summarize the robustness properties (details about these propertie can be found on the web-page of CBMC " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="8229866791076676119" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="8229866791076676120" nodeInfo="ng">
@@ -1050,7 +1279,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8229866791076694003" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" check that each array access is within bounds (aka. buffer overflow)" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" check that each array access is within bounds (aka. buffer overflow)." />
                 </node>
               </node>
             </node>
@@ -1067,7 +1296,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8229866791076694036" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" check that for each division the divisor is not zero" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" check that for each division the divisor is not zero." />
                 </node>
               </node>
             </node>
@@ -1086,7 +1315,7 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8229866791076694070" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" check whether the floating-point computations can result in NaN" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" check whether the floating-point computations can result in NaN." />
                 </node>
               </node>
             </node>
@@ -1124,7 +1353,24 @@
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8229866791076694187" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" check that no signed (or unsigned) over- underflow can occur." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" check that no signed/unsigned/float over- or underflow can occur." />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="items" roleId="2c95.5378658552262986137" type="2c95.Item" typeId="2c95.5378658552262903588" id="3946864811251264808" nodeInfo="ng">
+            <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3946864811251264811" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3946864811251264812" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3946864811251264865" nodeInfo="ng" />
+                <node role="words" roleId="87nw.2557074442922392302" type="2c95.EmphFormattedText" typeId="2c95.4400783559374052800" id="3946864811251264862" nodeInfo="ng">
+                  <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3946864811251264863" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3946864811251264864" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="memory leak" />
+                    </node>
+                  </node>
+                </node>
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3946864811251264866" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value=" check that all memory allocated within the run code is also deallocated before exit." />
                 </node>
               </node>
             </node>
@@ -1137,7 +1383,7 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4315280228446701688" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228446701689" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228446701690" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Higher-level language constructs carry with them higher-level properties that can be checked. For example, when programming using decision tables, we might ask ourselves if the decision table is complete (have we covered all cases?) or if it is consistent (do we have cases where multiple cells could be active at the same time?). Another example are state-machines about which we might ask ourselves if all states are reachable (we do not have superfluous states) and all transitions can be fired (no transition is completely shadowed by previous transitions)." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Higher-level language constructs carry with them higher-level properties that can be checked. For example, when programming using decision tables, we might ask ourselves if the decision table is complete (have we covered all cases?) or if it is consistent (do we have cases where multiple cells could be active at the same time?). Another example are state-machines about which we might ask ourselves if all states are reachable (i.e. we do not have superfluous states) and if all transitions can be fired (i.e. no transition is completely shadowed by previous transitions)." />
             </node>
           </node>
         </node>
@@ -1202,7 +1448,13 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228447133087" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" method as entry point; in the case when analysis configurations are used then we can specify another entry point." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" method as entry point; in the case when analysis configurations are used then we can specify another entry point (usually a harness - see " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="3946864811251748230" nodeInfo="ng">
+                <link role="target" roleId="2c95.3350625596580108719" targetNodeId="2496896684167180661" resolveInfo="verification_environment" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3946864811251748229" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=")." />
               </node>
             </node>
           </node>
@@ -1245,7 +1497,7 @@
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4315280228447133262" nodeInfo="ng">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228447133263" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228447133264" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="After the verification is finished, the results (have we covered all cases, do we have cases where two cells of the table are active at the same time) are automatically shown. When a result fails then a trace through the system is given that shows an example of values that could cause the failure. " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="After the verification is finished, the results (i.e. have we missed cases?, do we have cases where two cells of the table are active at the same time?) are automatically shown. When a result fails then a trace through the system is given that shows an example of values that could cause the failure. " />
               </node>
             </node>
           </node>
@@ -1286,7 +1538,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228448025481" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit to the model containing the statemachine. This devkit enables actions in the menu and the lifting of counterexamples such that they are aware of state-machines.\n\nLet's consider a state-machine that implements a simple counter. After the state-machine is started (with the start event), it counts up or down." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit to the model containing the state machine. This devkit enables actions in context menus and the lifting of counterexamples such that they are aware of state-machines.\n\nLet's consider a state-machine that implements a simple counter. After the state-machine is started (with the start event), it counts up or down." />
               </node>
             </node>
           </node>
@@ -1307,7 +1559,13 @@
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4315280228448025155" nodeInfo="ng">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228448025156" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228448025157" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="A state-machine can be verified only if the 'checked' annotation is enabled as shown below. The checked flag is enabled via an intention on the state-machine. This flag will instruct the C-code generator to generate labels for each of the properties to be checked. " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="A state-machine can be verified only if the 'checked' annotation is enabled as shown below. The checked flag is enabled via an intention on the state-machine. This flag will instruct the C-code generator to generate labels for each of the properties to be checked (see " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="3946864811253505855" nodeInfo="ng">
+                <link role="target" roleId="2c95.3350625596580108719" targetNodeId="3946864811253508142" resolveInfo="behind_the_courtain" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3946864811253505854" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="). " />
               </node>
             </node>
           </node>
@@ -1335,7 +1593,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228448025170" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" method as entry point; in the case when analysis configurations are used then we can specify another entry point." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" method as entry point and global settings for CBMC; in the case when analysis configurations are used then we can specify another entry point and fine-tune the settings." />
               </node>
             </node>
           </node>
@@ -1344,7 +1602,7 @@
             <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4315280228448025178" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228448025179" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228448025180" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="A configuration item for verifying the state-machine." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="A configuration item for verifying state-machines." />
                 </node>
               </node>
             </node>
@@ -1361,7 +1619,7 @@
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4315280228448025185" nodeInfo="ng">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228448025186" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228448025187" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="After the verification is finished, the results are automatically shown. If a state cannot be reached or a transition cannot be fired then the result is marked with FAIL. Since the generated labels cannot be reached, we do not have any trace through the system. " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="After the verification is finished, the results are automatically shown - i.e. if a state cannot be reached or a transition cannot be fired then the result is marked with FAIL. Since the generated labels cannot be reached, we do not have any trace through the system. " />
               </node>
             </node>
           </node>
@@ -1376,7 +1634,7 @@
             <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4315280228448025190" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4315280228448025191" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4315280228448025192" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Results of the statemachine verification. Two transitions cannot be fired since they are shadowed by previous transitions." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Results of the state machine verification. Two transitions cannot be fired since they are shadowed by previous transitions." />
                 </node>
               </node>
             </node>
@@ -1390,12 +1648,9 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7590231220342167531" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342167532" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342167533" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Many times we want to check properties in the code that are relevant to the business domain of our application. In order to do so, we need to be able to write such properties in the code. In mbeddr one can use plain old assertions or can attach properties to higher level constructs like for example pre/post conditions to components." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Many times we want to check properties in the code that are relevant to the business domain of our application and originate from requirements. In order to do so, we need to be able to write such properties in the code. In mbeddr one can use plain C-level assertions, extended assertions or can attach properties to higher level constructs like for example pre/post conditions to components." />
             </node>
           </node>
-        </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="7590231220342090912" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="7590231220342167555" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="verifying_assertions" />
@@ -1426,10 +1681,40 @@
               </node>
             </node>
           </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7347601989637382897" nodeInfo="ng">
+            <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7347601989637382898" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7347601989637382899" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Many times using simple assertions to encode more complex properties that represent the evolution of the system in time (e.g. 'after Q then P', 'before Q must P') is cumbersome. As usual, mbeddr provides a set of first class language constructs that allow users to directly express such properties. By clicking on these constructs, you can find in the 'Inspector' information about how the code will be generated - basically C-level assertions wrapped in small monitors. " />
+              </node>
+            </node>
+            <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="7347601989637382900" nodeInfo="ng">
+              <property name="text" nameId="2c95.5185579450379273119" value="Extended assertions" />
+            </node>
+          </node>
+          <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="7347601989637382983" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="extended_assertions_example" />
+            <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+            <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7347601989637382985" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7347601989637382986" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7347601989637382987" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Examples of extended assertions." />
+                </node>
+              </node>
+            </node>
+            <node role="sizeSpec" roleId="2c95.6955693250238922833" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7347601989637382989" nodeInfo="ng" />
+            <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="7347601989637382991" nodeInfo="ng">
+              <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="7347601989637471932" nodeInfo="ng">
+                <link role="node" roleId="2c95.2286331641395252233" targetNodeId="1yl6.7590231220342169711" resolveInfo="Assertions" />
+              </node>
+              <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="7347601989637471938" nodeInfo="ng">
+                <link role="node" roleId="2c95.2286331641395252233" targetNodeId="1yl6.7347601989637427761" resolveInfo="computeMaximalSpeed" />
+              </node>
+            </node>
+          </node>
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7590231220342202681" nodeInfo="ng">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342202682" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342202683" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The assertions verification can be started either with one-click from the popup menu of the function, or by defining an analysis configuration item. Doth ways are illustrated below." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The assertions verification can be started either with one-click from the pop-up menu of the function, or by defining an analysis configuration item. Both ways are illustrated below." />
               </node>
             </node>
           </node>
@@ -1455,7 +1740,7 @@
             <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7590231220342213924" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342213925" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342213926" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="An assertion analysis configuration item allows mbeddr users to fine tune different verification parameters." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="As any other analysis configuration items, assertion analysis configuration items allow mbeddr users to fine tune different verification parameters." />
                 </node>
               </node>
             </node>
@@ -1489,7 +1774,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342883325" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit to the current model.\n\nmbeddr allows its users to define interfaces and components that implement them. To each of the runnables of an interface, we can attach pre/post conditions. Furthermore, the expected ordering of calls to functions of an interface can be defined using a protocol specification. Pre-/postconditions and protocol together we call the contract of the interface." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" devkit to the current model.\n\nmbeddr allows its users to define interfaces and components that implement them. To each of the runnables of an interface, we can attach pre/post conditions. Furthermore, the expected ordering of calls to functions of an interface can be defined using a protocol specification. Pre-/post-conditions and protocol together we call the contract of the interface." />
               </node>
             </node>
           </node>
@@ -1498,7 +1783,7 @@
             <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7590231220342733650" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342733651" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342733652" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Example of an interface with pre-/postconditions and protocol attached to its functions." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Example of an interface with pre-/post-conditions and protocol attached to its functions." />
                 </node>
               </node>
             </node>
@@ -1524,7 +1809,7 @@
             <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7590231220342733814" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342733815" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342733816" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="A component implements all methods of the interface. The contracts defined by all interfaces are automatically transfered to the component." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="A component implements all methods of the interface. The contracts defined by all interfaces are automatically transferred to the component." />
                 </node>
               </node>
             </node>
@@ -1541,7 +1826,7 @@
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7590231220342733879" nodeInfo="ng">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342733880" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342733881" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Having specified the contract of an interface, we would like to verify if the clients of the components implementing this interface comply with the specified preconditions and call the interface functions in an appropriate order. Furthermore, we would like to check that the implementation of the methods fo the interface fulfilly the specified postconditions." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Having specified the contract of an interface, we would like to verify if the clients of the components implementing this interface comply with the specified preconditions and call the interface functions in an appropriate order. Furthermore, we would like to check that the implementation of the methods fo the interface fulfills the specified post-conditions." />
               </node>
             </node>
           </node>
@@ -1567,7 +1852,7 @@
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7590231220342736983" nodeInfo="ng">
             <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7590231220342736984" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7590231220342736985" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="To check the component, we firstly need to add the attribute 'checked' via an intention (having this attribute enabled, we can generate labels for the cases where pre-/postconditions are violated). \n\nThe verification is started either by one-click from the components pop-up menu or via an analysis configuration item which allows to specify an arbitrary entry point. Both of these ways are illustrated below. " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="To check the component, we firstly need to add the attribute 'checked' via an intention (having this attribute enabled, we can generate labels for the cases where pre-/post-conditions are violated). \n\nThe verification is started either by one-click from the components pop-up menu or via an analysis configuration item which allows to specify an arbitrary entry point. Both of these ways are illustrated below. " />
               </node>
             </node>
           </node>
@@ -1626,7 +1911,7 @@
             <node role="description" roleId="2c95.6386504476136278696" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2496896684166576299" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2496896684166576300" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2496896684166576301" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="The results of the verification of each pre-/postcondition and protocol are displayed in the results window." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="The results of the verification of each pre-/post-condition and protocol are displayed in the results window." />
                 </node>
               </node>
             </node>
@@ -1638,13 +1923,10 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="2496896684167180661" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="verification_environment" />
         <property name="text" nameId="2c95.3350625596580064225" value="Defining the Environment for Verification" />
-        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="2496896684167181416" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
-        </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2496896684167181407" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2496896684167181408" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2496896684167181409" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Most of the software modules we develop (e.g. functions, statemachines, components) are included within bigger systems. Other systems, that are neighboring with our module that we verify are called the environment of the system. Most of the times, the data types of the inputs of the to-be-verified system are too permissive and in practice, the sub-system we are veryfying should work under much tighter constraints." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Most of the software modules we develop (e.g. functions, state machines, components) are included within bigger systems. Other systems, that are neighboring with our module that we verify are called the environment of the system. Most of the time, the data types of the inputs of the to-be-verified system are too permissive and in practice, the sub-system we are verifying should work under much tighter constraints." />
             </node>
           </node>
         </node>
@@ -1720,7 +2002,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2496896684167202747" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" to belong to the desired intervals. In the first nondet assignment we use an explicit construct to specify the interval, in the second assignment we use classical C inequalities. When we use the 'in range expression' (as opposed to explicit inequalities), then the harness is generated in an optimal manner and this increases the running efficiency of CBMC." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=") to belong to the desired intervals. In the first nondeterministic assignment we use an explicit construct to specify the interval, in the second assignment we use classical C inequalities. When we use the 'in range expression' (as opposed to explicit inequalities), then the harness is generated in an optimal manner and this increases the running efficiency of CBMC." />
               </node>
             </node>
           </node>
@@ -1734,7 +2016,104 @@
             </node>
           </node>
         </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7347601989637722684" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7347601989637722685" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7347601989637722686" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Furthermore, the sequence in which different operations are called can be modeled as well using the harness. For doing this, we can use the " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7347601989637722877" nodeInfo="ng">
+              <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7347601989637722878" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7347601989637722879" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="nondeterministic_choice" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7347601989637722880" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" construct that will choose nondeterministically one of the defined cases.\n" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="7347601989637725721" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="calls_sequence" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
+          <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="7347601989637725722" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="7347601989637725723" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7347601989637725724" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="We define traces with size 5 (using the for loop) and at each step either " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7347601989637725725" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7347601989637725726" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7347601989637725727" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="fun1" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7347601989637725728" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" or " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="7347601989637934788" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="7347601989637934789" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7347601989637934790" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="fun2" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7347601989637934787" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" are called that compute some value. We check that for 5 calls in either order to these functions, a specific property holds. In this manner we can for example model a sequence of external events, each event triggering a function where it is handled." />
+              </node>
+            </node>
+          </node>
+          <node role="sizeSpec" roleId="2c95.6955693250238922833" type="2c95.ScaleDownNotUp100" typeId="2c95.4317007310193476045" id="7347601989637725733" nodeInfo="ng" />
+          <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="7347601989637725734" nodeInfo="ng">
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="7347601989637725735" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="1yl6.2496896684167181425" resolveInfo="VerificationEnvironment" />
+            </node>
+            <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="7347601989637931362" nodeInfo="ng">
+              <link role="node" roleId="2c95.2286331641395252233" targetNodeId="1yl6.7347601989637735054" resolveInfo="sequenceOfCalls" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="7347601989637725573" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
+        </node>
       </node>
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="3115042184192841804" nodeInfo="ng" />
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="7347601989643075874" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="xojk.1560676800020889717" resolveInfo="C_VerificationTool" />
+    </node>
+  </root>
+  <root type="2c95.Document" typeId="2c95.3350625596579911728" id="1481709176727863071" nodeInfo="ng">
+    <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
+    <property name="name" nameId="tpck.1169194664001" value="Z_CHAPTER_Analyses" />
+    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="2637267020265430784" resolveInfo="Config" />
+    <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Chapter" typeId="2c95.4208238404730191274" id="1481709176728354858" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="fundamentals" />
+      <property name="text" nameId="2c95.3350625596580064225" value="Analyses" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176728354860" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639357824547" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4574736324932010379" resolveInfo="A_Introduction" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176728354867" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639357824550" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="9020927825193691657" resolveInfo="B_VariabilityVerification" />
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.DocumentInclude" typeId="2c95.6165313375056012512" id="1481709176728354873" nodeInfo="ng">
+        <node role="ref" roleId="2c95.6165313375056012515" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639357824553" nodeInfo="ng">
+          <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="9020927825193793093" resolveInfo="C_FormalVerification" />
+        </node>
+      </node>
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639357824529" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4574736324932010379" resolveInfo="A_Introduction" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639357824534" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="9020927825193691657" resolveInfo="B_VariabilityVerification" />
+    </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="324047639357824542" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="9020927825193793093" resolveInfo="C_FormalVerification" />
     </node>
   </root>
 </model>

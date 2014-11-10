@@ -324,7 +324,7 @@
         <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="1652833456517264695" resolveInfo="deleteFMC" />
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="661141253149262132" nodeInfo="nn" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="661141253149262130" nodeInfo="nn">
-          <property name="text" nameId="tpc2.1073389577007" value="Feature Model Configuration:" />
+          <property name="text" nameId="tpc2.1073389577007" value="Variant Selection:" />
           <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="661141253149231556" resolveInfo="presenceCondition" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="661141253149262134" nodeInfo="ng">
