@@ -13,6 +13,12 @@
         <property name="path" nameId="vs0r.6156524541422553710" value="images" />
       </node>
     </node>
+    <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="5450602153900796689" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="smimages" />
+      <node role="pathPicker" roleId="2c95.2642765975824057986" type="vs0r.SolutionRelativeDirPicker" typeId="vs0r.2642765975824060179" id="5450602153900796690" nodeInfo="ng">
+        <property name="path" nameId="vs0r.6156524541422553710" value="images/cextensions/statemachines" />
+      </node>
+    </node>
     <node role="sizeSpecs" roleId="2c95.8624890525767800998" type="2c95.NamedSizeSpec" typeId="2c95.8624890525767800825" id="8624890525768078251" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="width100" />
       <node role="spec" roleId="2c95.8624890525767800827" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8624890525768078253" nodeInfo="ng">
