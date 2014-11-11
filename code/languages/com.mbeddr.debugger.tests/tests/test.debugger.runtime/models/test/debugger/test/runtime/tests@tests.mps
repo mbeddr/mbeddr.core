@@ -147,6 +147,17 @@
                             </node>
                           </node>
                         </node>
+                        <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="4959622125997593724" nodeInfo="igu">
+                          <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
+                          <property name="name" nameId="tpck.1169194664001" value="showUnmappedVariables" />
+                          <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4959622125997593725" nodeInfo="in" />
+                          <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4959622125997593726" nodeInfo="nn" />
+                          <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4959622125997593729" nodeInfo="sn">
+                            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4959622125997593731" nodeInfo="nn">
+                              <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="4959622125997593730" nodeInfo="nn" />
+                            </node>
+                          </node>
+                        </node>
                         <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="5911927611423344878" nodeInfo="igu">
                           <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
                           <property name="name" nameId="tpck.1169194664001" value="getBinaryPath" />
@@ -5658,6 +5669,7 @@
                     </node>
                   </node>
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="4657762697059128262" nodeInfo="nn">
+                    <property name="left_transform_hint" value="true" />
                     <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="k35w.~EasyMock" resolveInfo="EasyMock" />
                     <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="k35w.~EasyMock%danyObject(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="anyObject" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="4657762697059144081" nodeInfo="nn">
@@ -8671,6 +8683,17 @@
                                       </node>
                                     </node>
                                   </node>
+                                  <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="4959622125997466439" nodeInfo="igu">
+                                    <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
+                                    <property name="name" nameId="tpck.1169194664001" value="showUnmappedVariables" />
+                                    <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4959622125997466440" nodeInfo="in" />
+                                    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4959622125997466441" nodeInfo="nn" />
+                                    <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4959622125997466444" nodeInfo="sn">
+                                      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4959622125997466446" nodeInfo="nn">
+                                        <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="4959622125997466445" nodeInfo="nn" />
+                                      </node>
+                                    </node>
+                                  </node>
                                   <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="5911927611423552511" nodeInfo="igu">
                                     <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
                                     <property name="name" nameId="tpck.1169194664001" value="getModules" />
@@ -10011,6 +10034,17 @@
                                               <node role="createdType" roleId="tp25.1145567471833" type="tp25.SNodeListType" typeId="tp25.1145383075378" id="5911927611424224316" nodeInfo="in" />
                                             </node>
                                           </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="4959622125997498959" nodeInfo="igu">
+                                      <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
+                                      <property name="name" nameId="tpck.1169194664001" value="showUnmappedVariables" />
+                                      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4959622125997498960" nodeInfo="in" />
+                                      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4959622125997498961" nodeInfo="nn" />
+                                      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4959622125997498964" nodeInfo="sn">
+                                        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4959622125997498966" nodeInfo="nn">
+                                          <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="4959622125997498965" nodeInfo="nn" />
                                         </node>
                                       </node>
                                     </node>
@@ -11750,6 +11784,17 @@
                                         </node>
                                       </node>
                                     </node>
+                                    <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="4959622125997522925" nodeInfo="igu">
+                                      <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
+                                      <property name="name" nameId="tpck.1169194664001" value="showUnmappedVariables" />
+                                      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4959622125997522926" nodeInfo="in" />
+                                      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4959622125997522927" nodeInfo="nn" />
+                                      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4959622125997522930" nodeInfo="sn">
+                                        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4959622125997522932" nodeInfo="nn">
+                                          <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="4959622125997522931" nodeInfo="nn" />
+                                        </node>
+                                      </node>
+                                    </node>
                                     <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="5911927611424177843" nodeInfo="igu">
                                       <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
                                       <property name="name" nameId="tpck.1169194664001" value="getBinaryPath" />
@@ -13060,6 +13105,17 @@
                                           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5911927611424140563" nodeInfo="nn">
                                             <property name="value" nameId="tpee.1070475926801" value="" />
                                           </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="4959622125997546983" nodeInfo="igu">
+                                      <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
+                                      <property name="name" nameId="tpck.1169194664001" value="showUnmappedVariables" />
+                                      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4959622125997546984" nodeInfo="in" />
+                                      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4959622125997546985" nodeInfo="nn" />
+                                      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4959622125997546988" nodeInfo="sn">
+                                        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4959622125997546990" nodeInfo="nn">
+                                          <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="4959622125997546989" nodeInfo="nn" />
                                         </node>
                                       </node>
                                     </node>
@@ -14447,6 +14503,17 @@
                                           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5911927611424312377" nodeInfo="nn">
                                             <property name="value" nameId="tpee.1070475926801" value="" />
                                           </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="4959622125997572246" nodeInfo="igu">
+                                      <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
+                                      <property name="name" nameId="tpck.1169194664001" value="showUnmappedVariables" />
+                                      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4959622125997572247" nodeInfo="in" />
+                                      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4959622125997572248" nodeInfo="nn" />
+                                      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4959622125997572251" nodeInfo="sn">
+                                        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4959622125997572253" nodeInfo="nn">
+                                          <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="4959622125997572252" nodeInfo="nn" />
                                         </node>
                                       </node>
                                     </node>
@@ -15955,6 +16022,17 @@
                                           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5911927611424368451" nodeInfo="nn">
                                             <property name="value" nameId="tpee.1070475926801" value="" />
                                           </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="4959622125997591425" nodeInfo="igu">
+                                      <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
+                                      <property name="name" nameId="tpck.1169194664001" value="showUnmappedVariables" />
+                                      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4959622125997591426" nodeInfo="in" />
+                                      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4959622125997591427" nodeInfo="nn" />
+                                      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4959622125997591430" nodeInfo="sn">
+                                        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4959622125997591432" nodeInfo="nn">
+                                          <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="4959622125997591431" nodeInfo="nn" />
                                         </node>
                                       </node>
                                     </node>
