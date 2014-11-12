@@ -48,27 +48,14 @@
   </root>
   <root type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="3231021218604078677" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="userGuideInHelpMenu" />
-    <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="3231021218604078679" nodeInfo="ng">
-      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="3231021218604078682" nodeInfo="ng">
-        <link role="action" roleId="tp4k.1203088061055" targetNodeId="3231021218604072689" resolveInfo="openUserGUide" />
-      </node>
-      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="3231021218604087877" nodeInfo="ng" />
-    </node>
+    <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="3231021218604078679" nodeInfo="ng" />
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="3231021218604078684" nodeInfo="ng">
       <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="tprs.1215012355384" resolveInfo="IDEAHelp" />
     </node>
   </root>
   <root type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="85256576539622611" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="userGuideInToolbar" />
-    <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="85256576539622612" nodeInfo="ng">
-      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="85256576539658042" nodeInfo="ng" />
-      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="85256576539918459" nodeInfo="ng" />
-      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="85256576539918464" nodeInfo="ng" />
-      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="85256576539622613" nodeInfo="ng">
-        <link role="action" roleId="tp4k.1203088061055" targetNodeId="3231021218604072689" resolveInfo="openUserGUide" />
-      </node>
-      <node role="reference" roleId="tp4k.1207145201301" type="tp4k.Separator" typeId="tp4k.1204908117386" id="85256576539622614" nodeInfo="ng" />
-    </node>
+    <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="85256576539622612" nodeInfo="ng" />
     <node role="modifier" roleId="tp4k.1204991552650" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="85256576539622616" nodeInfo="ng">
       <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="tprs.1087177419518270657" resolveInfo="IDEAToolBar" />
     </node>
