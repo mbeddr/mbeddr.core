@@ -50,7 +50,7 @@
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="4574736324932019988" nodeInfo="ng">
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="4574736324932019989" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4574736324932019990" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Besides increasing the programmers productivity, domain specific languages allow the definition of advanced, user friendly and domain specific analyses. One special kind of analyses is formal verification, which uses mathematical precise methods for checking properties of mbeddr code. In mbeddr we have integrated different formal verification techniques aiming on being used on a continuous basis in everyday's work of practicing engineers. As of today, we have implemented two different kinds of analyses:" />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Besides increasing the programmers productivity, domain specific languages allow the definition of advanced, user friendly and domain specific analyses. One special kind of analyses is formal verification, which uses mathematical precise methods for checking properties of mbeddr code. In mbeddr we have integrated different formal verification techniques aiming to be used on a continuous basis in everyday work of practicing engineers. As of today, we have implemented two different kinds of analyses:" />
           </node>
         </node>
       </node>
@@ -78,7 +78,7 @@
           <node role="text" roleId="2c95.5378658552262903589" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4574736324932020399" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4574736324932020400" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4574736324932020401" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Formal verification of mbeddr-C programs: once programs are written in mbeddr, we enable developers to use advanced formal verification techniques to prove absence of bugs, or, when the analyses are incomplete, to search for cumbersome bugs. Our focus is on user-friendliness of the verification: all analyses are targeted to practicing embedded engineers. For verification we use the CBMC C-level model checker " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Formal verification of mbeddr-C programs: once programs are written in mbeddr, we enable developers to use advanced formal verification techniques to prove absence of bugs, or, when the analyses are incomplete, to search for cumbersome bugs. Our focus is on user-friendliness of the verification: all analyses are targeted to practicing embedded engineers. For verification we use the CBMC C-level model checker. " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="5724023611136673257" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5724023611136673258" nodeInfo="ng">

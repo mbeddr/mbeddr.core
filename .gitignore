@@ -157,3 +157,4 @@ code/plugins/sl-all
 # Generated visualizations
 *.puml
 _vis/*.png
+code/applications/tutorial/solutions/com.mbeddr.tutorial.documentation/_vis
