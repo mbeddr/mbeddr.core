@@ -4,6 +4,7 @@
   <language namespace="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
   <language namespace="c788b046-2019-4656-8b60-8bb9bbb177b5(com.mbeddr.mpsutil.review)" />
   <language namespace="7a060fae-09e0-4372-be36-6696d6554c0e(com.mbeddr.mpsutil.review.annotation)" />
+  <language namespace="623c9ff8-1203-4890-b33e-cba29dd6cdc6(spellcheck)" />
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" version="-1" />
   <import index="iwll" modelUID="r:79ed4c17-66fc-4c5a-bff7-46990b4e0c5d(mbeddr.tutorial.main.req)" version="-1" />
@@ -533,7 +534,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238859341668" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is a statement, it can only be used in statement context -- so it cannot be used to vary arbirary behaviors as expressed, for example, with state machines. Of course, additional similar language constructs could be built to use with other DSLs." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is a statement, it can only be used in statement context -- so it cannot be used to vary arbitrary behaviors as expressed, for example, with state machines. Of course, additional similar language constructs could be built to use with other DSLs." />
             </node>
           </node>
         </node>
@@ -707,7 +708,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238862438346" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows the presence conditions inline in the code (above the annotated node). The " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" shows the presence conditions in-line in the code (above the annotated node). The " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238862438365" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238862438366" nodeInfo="ng">
@@ -717,7 +718,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238862438368" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" just shows small markers in the code. Hovering over the marker shows the presence condition in a tooltip. The third mode shows the program as it would look for a given variant (as if the transformation would be executed directly in the editor). For this to work, the system has to know which variant should be rendered. To do this, a so-called " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" just shows small markers in the code. Hovering over the marker shows the presence condition in a tool-tip. The third mode shows the program as it would look for a given variant (as if the transformation would be executed directly in the editor). For this to work, the system has to know which variant should be rendered. To do this, a so-called " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238862893761" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238862893762" nodeInfo="ng">
