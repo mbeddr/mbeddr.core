@@ -554,7 +554,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238859341668" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is a statement, it can only be used in statement context -- so it cannot be used to vary arbitrary behaviors as expressed, for example, with state machines. Of course, additional similar language constructs could be built to use with other DSLs." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is a statement, it can only be used in statement context -- so it cannot be used to vary arbitrary behavior as expressed, for example, with state machines. Of course, additional similar language constructs could be built to use with other DSLs." />
             </node>
           </node>
         </node>
