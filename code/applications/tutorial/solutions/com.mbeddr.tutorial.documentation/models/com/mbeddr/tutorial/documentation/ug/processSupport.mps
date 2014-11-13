@@ -554,7 +554,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238859341668" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is a statement, it can only be used in statement context -- so it cannot be used to vary arbitrary behavior as expressed, for example, with state machines. Of course, additional similar language constructs could be built to use with other DSLs." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" is a statement, it can only be used in statement context -- so it cannot be used to vary arbitrary behavior as expressed, for example, with state machines. Of course, additional similar language constructs could be built for other DSLs." />
             </node>
           </node>
         </node>
@@ -614,7 +614,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238861079712" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" statement to store a specific configuration into the variable. We then call the above mentioned function where we then use the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" statement to store a specific configuration into the variable. We then call the abovementioned function where we then use the " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238861079741" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238861079742" nodeInfo="ng">
