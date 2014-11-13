@@ -209,5 +209,13 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="all dependencies macro" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8794027157967696219" resolveInfo="Macro" />
   </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3963667026127028824" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="IMakePathProvider" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="pathProvider" />
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3963667026127207597" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="IMakePathProviderContainer" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="pathProvider" />
+  </root>
 </model>
 
