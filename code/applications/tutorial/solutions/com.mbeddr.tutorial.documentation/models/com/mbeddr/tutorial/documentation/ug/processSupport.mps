@@ -15,6 +15,8 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="oqy7" modelUID="r:5355e160-db68-4e93-9241-257192f43eed(com.mbeddr.mpsutil.review.annotation.structure)" version="-1" implicit="yes" />
+  <import index="elym" modelUID="r:ab11cd4e-3f49-4307-8d3a-82afd3a5de48(com.mbeddr.mpsutil.margincell.structure)" version="0" implicit="yes" />
+  <import index="7krq" modelUID="r:bb3fd8a9-1cdd-4b54-9700-375a64081041(com.mbeddr.mpsutil.review.structure)" version="0" implicit="yes" />
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="2637267020265430784" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Config" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
@@ -388,6 +390,7 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeAsImageParagraph" typeId="2c95.6955693250238922827" id="85256576553537121" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="cfgNullifyMaxAt200" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
           <node role="description" roleId="2c95.6955693250238922832" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="85256576553537122" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="85256576553537123" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="85256576553537124" nodeInfo="ng" />
@@ -1164,6 +1167,19 @@
       </node>
       <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="536680812410060276" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="empty_-1" />
+      </node>
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="oqy7.CommentAnnotationContainer" typeId="oqy7.8455208232410333108" id="186515901118092639" nodeInfo="ng">
+      <node role="comments" roleId="oqy7.8455208232410333109" type="7krq.ReviewNote" typeId="7krq.1159656764133526267" id="186515901118092640" nodeInfo="ng">
+        <property name="creator" nameId="7krq.5652920968054438487" value="zaur" />
+        <property name="created" nameId="7krq.5652920968054438504" value="Nov 13, 2014 5:25:12 PM" />
+        <property name="attachedCellId" nameId="elym.8039098920897639409" value="property_escapedValue_word4" />
+        <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5479545238859294783" />
+        <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="186515901118092641" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="186515901118092642" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here it could be not bad to give an example." />
+          </node>
+        </node>
       </node>
     </node>
   </root>
