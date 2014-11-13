@@ -276,7 +276,23 @@
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5479545238859294781" nodeInfo="ng">
           <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238859294782" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238859294783" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Features can also have attributes. These are (more or less primitively) typed attribute declarations. In a valid configuration, all attributes of all selected features must have a value. " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Features can also have attributes. For and example see " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="186515901118096962" nodeInfo="ng">
+              <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="186515901118096963" nodeInfo="ng">
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="186515901118137786" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5441227754062389703" resolveInfo="FlightVariability" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="186515901118137791" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.8473958930090124544" resolveInfo="FlightProcessor_root" />
+                </node>
+                <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="186515901118137799" nodeInfo="ng">
+                  <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5441227754062512675" resolveInfo="maxSpeed" />
+                </node>
+              </node>
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="186515901118096961" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" below. These are (more or less primitively) typed attribute declarations. In a valid configuration, all attributes of all selected features must have a value. " />
             </node>
           </node>
         </node>
@@ -303,7 +319,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238859300383" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". A configuration has a name and selects any valid (in terms of the constraints discussed above) subset of the features defined in the referenced feature model. The example has three configurations: " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=". A configuration has a name and selects any valid (in terms of the constraints discussed above) subset of the features defined in the referenced feature model. The example below has three configurations: " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeRefWord" typeId="2c95.6955693250238922838" id="5479545238859300871" nodeInfo="ng">
               <node role="codeptr" roleId="2c95.6955693250238922839" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="5479545238859300872" nodeInfo="ng">
@@ -1177,7 +1193,7 @@
         <link role="attachedNode" roleId="elym.8039098920897680033" targetNodeId="5479545238859294783" />
         <node role="note" roleId="7krq.5652920968054438510" type="87nw.Text" typeId="87nw.2557074442922380897" id="186515901118092641" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="186515901118092642" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Here it could be not bad to give an example." />
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Obsolete comment: Here it could be not bad to give an example." />
           </node>
         </node>
       </node>
