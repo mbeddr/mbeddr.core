@@ -451,6 +451,7 @@
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.CCodeParagraph" typeId="2c95.6955693250238922834" id="5479545238859316526" nodeInfo="ng">
           <property name="language" nameId="2c95.6955693250238922836" value="mbeddr" />
+          <property name="showCode" nameId="2c95.6955693250238922823" value="true" />
           <node role="codeptr" roleId="2c95.6955693250238922822" type="2c95.CodePointer" typeId="2c95.2286331641395238583" id="5479545238859316527" nodeInfo="ng">
             <node role="elements" roleId="2c95.2286331641395252236" type="2c95.CPNamedNodeElement" typeId="2c95.2286331641395252232" id="5479545238859316653" nodeInfo="ng">
               <link role="node" roleId="2c95.2286331641395252233" targetNodeId="e1tx.5441227754062389682" resolveInfo="RuntimeVariability" />
@@ -523,7 +524,7 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5479545238859341284" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" parts only allow access to features defined in the feature model mentioned in the " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" parts only allow to access the features defined in by feature model mentioned in the embracing " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="5479545238859341313" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5479545238859341314" nodeInfo="ng">
