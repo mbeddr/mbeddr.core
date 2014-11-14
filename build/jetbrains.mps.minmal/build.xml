@@ -431,7 +431,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.3.2.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.3.2.jar" />        
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/asm4-all.jar" />
