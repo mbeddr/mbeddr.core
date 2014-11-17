@@ -8041,7 +8041,6 @@
             <link role="featureModel" roleId="yvrq.8882953773355826086" targetNodeId="5441227754062477034" resolveInfo="FlightProcessor" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5441227754062498805" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="yvrq.StoreRtConfigStatement" typeId="yvrq.8882953773355830195" id="8000796061689805920" nodeInfo="ng">
           <link role="rtFeatureModel" roleId="yvrq.8000796061690159789" targetNodeId="5441227754062477034" resolveInfo="FlightProcessor" />
           <link role="configModel" roleId="yvrq.8000796061690159814" targetNodeId="5441227754062477136" resolveInfo="cfgDoNothing" />
@@ -8049,6 +8048,7 @@
             <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5441227754062498734" resolveInfo="cfg" />
           </node>
         </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="186515901118279977" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5441227754062477164" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="res1" />
           <node role="type" roleId="mj1l.318113533128716676" type="clbe.StructType" typeId="clbe.6394819151180597816" id="5441227754062477165" nodeInfo="ng">
