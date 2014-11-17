@@ -646,6 +646,10 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4509600423770348974" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value="desktop (gnu)" />
       </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8288445932932298086" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="paths are not checked" />
+        <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="r4b4.2964657368046274228" resolveInfo="readOnly" />
+      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5323740605968447044" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value="make:" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutIndentStyleClassItem" typeId="tpc2.1237307900041" id="5323740605968447045" nodeInfo="nn">
