@@ -8,11 +8,11 @@
     <node role="templates" roleId="51wr.8719112291174072694" type="51wr.PlatformTemplate" typeId="51wr.8719112291174069759" id="3698240896411207054" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Desktop Platform" />
       <node role="template" roleId="51wr.8719112291174069823" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="3698240896411207053" nodeInfo="ng">
-        <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
+        <property name="compiler" nameId="51wr.5323740605968447024" value="${gcc.home}/gcc" />
         <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
         <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
-        <property name="make" nameId="51wr.3963667026125442676" value="make" />
-        <property name="gdb" nameId="51wr.3963667026125442601" value="gdb" />
+        <property name="make" nameId="51wr.3963667026125442676" value="${make.home}/make" />
+        <property name="gdb" nameId="51wr.3963667026125442601" value="${gdb.home}/gdb" />
       </node>
     </node>
   </root>

@@ -1709,6 +1709,8 @@
           <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
           <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
           <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
+          <property name="make" nameId="51wr.3963667026125442676" value="make" />
+          <property name="gdb" nameId="51wr.3963667026125442601" value="gdb" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="5249744164295484023" nodeInfo="nn">
             <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="5249744164295484024" nodeInfo="nn">
               <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5249744164295484025" nodeInfo="sn">
