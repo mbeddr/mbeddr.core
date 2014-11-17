@@ -827,9 +827,9 @@
             </node>
           </node>
           <node role="contents" roleId="2c95.3350625596580064250" type="2c95.ImageParagraph" typeId="2c95.6386504476136263187" id="5724023611140947022" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="global_settings" />
             <property name="center" nameId="2c95.8730648445434174368" value="true" />
             <property name="border" nameId="2c95.4755612053022517119" value="true" />
+            <property name="name" nameId="tpck.1169194664001" value="verification_process_at_a_glance" />
             <node role="resource" roleId="2c95.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="5724023611140947023" nodeInfo="ng">
               <property name="fileName" nameId="2c95.6386504476136521408" value="analyses/verification_process_at_a_glance.png" />
               <link role="path" roleId="2c95.6386504476136521409" targetNodeId="4715820023543670791" resolveInfo="images" />
