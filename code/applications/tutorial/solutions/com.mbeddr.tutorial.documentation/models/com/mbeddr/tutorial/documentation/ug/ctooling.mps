@@ -11,6 +11,7 @@
   <import index="cji1" modelUID="r:8ee4f4fa-3aa5-4db1-a73c-16bbfa7fe849(com.mbeddr.tutorial.sample.buildProject.build)" version="-1" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" />
   <import index="orbb" modelUID="r:f440e167-2cf6-4609-a4e7-2d2c3fda0805(com.mbeddr.tutorial.sample.HelloWorld.main)" version="-1" />
+  <import index="bmc6" modelUID="r:4ac377c2-0a54-4908-ae24-f86f1bad7e73(com.mbeddr.tutorial.documentation.ug.fundamentals)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="16" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
@@ -751,6 +752,9 @@
     <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="85256576565999753" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4376803293067553112" resolveInfo="C_LaunchConfiguration" />
     </node>
+    <node role="dependsOn" roleId="2c95.8730648445433290694" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="8288445932932850876" nodeInfo="ng">
+      <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="bmc6.1481709176727862900" resolveInfo="B_ProjectStructure" />
+    </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="85256576565990694" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="building" />
       <property name="text" nameId="2c95.3350625596580064225" value="Building Binaries in the IDE" />
@@ -871,7 +875,13 @@
               </node>
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6002249030801116450" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" platform will use GCC to compile the C code and is recomended for trying out mbeddr on you PC. The " />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value=" platform will use Make for building, GCC for compiling, GDB for debugging. Per default, mbeddr will expect these tools to be on your global PATH (see paths in build config above). However, you can specify their locations by providing an absolute path or using a path macro (see " />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="8288445932932689715" nodeInfo="ng">
+              <link role="target" roleId="2c95.3350625596580108719" targetNodeId="bmc6.1481709176729756657" resolveInfo="pathsAndLibs" />
+            </node>
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8288445932932689714" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="): e.g., specifying the location of make via ${make.home}/make. Latter makes sense if you are working in a team with people, each having these tools installed at different locations. The " />
             </node>
             <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="6002249030801116477" nodeInfo="ng">
               <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="6002249030801116478" nodeInfo="ng">
@@ -904,6 +914,16 @@
           </node>
           <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="6002249030800760368" nodeInfo="ng">
             <property name="text" nameId="2c95.5185579450379273119" value="Platform" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8288445932932672144" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8288445932932672145" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8288445932932672146" nodeInfo="ng" />
+          </node>
+        </node>
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="8288445932932671997" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="8288445932932671998" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8288445932932671999" nodeInfo="ng" />
           </node>
         </node>
         <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="6002249030801116784" nodeInfo="ng">
