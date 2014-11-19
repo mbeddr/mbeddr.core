@@ -18978,9 +18978,6 @@
       <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="295213795664246603" resolveInfo="mbeddrPlatformProjectionModeGroup" />
       <link role="point" roleId="tp4k.1204992316090" targetNodeId="295213795664246606" resolveInfo="mbeddrPlatformProjectionModes" />
     </node>
-    <node role="checkIcon" roleId="4w5v.8575378964583031301" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="8962234166180743227" nodeInfo="ng">
-      <property name="path" nameId="1oap.8974276187400029899" value="${module}/icons/check.png" />
-    </node>
   </root>
   <root type="4w5v.ProjectionModeSwitcher" typeId="4w5v.3897771026684493688" id="5761107734913230252" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="codereview" />
@@ -18993,9 +18990,6 @@
     <node role="modification" roleId="4w5v.8575378964581617586" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="5761107734913230254" nodeInfo="ng">
       <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="295213795664246603" resolveInfo="mbeddrPlatformProjectionModeGroup" />
       <link role="point" roleId="tp4k.1204992316090" targetNodeId="295213795664246606" resolveInfo="mbeddrPlatformProjectionModes" />
-    </node>
-    <node role="checkIcon" roleId="4w5v.8575378964583031301" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="5761107734913230255" nodeInfo="ng">
-      <property name="path" nameId="1oap.8974276187400029899" value="${module}/icons/check.png" />
     </node>
   </root>
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7230769188915022800" nodeInfo="ig">
