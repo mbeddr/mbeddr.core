@@ -1446,7 +1446,7 @@
   <root type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="1611636138415080827" nodeInfo="ng" />
   <root type="4w5v.ProjectionModeSwitcher" typeId="4w5v.3897771026684493688" id="1180267467524284332" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="graphicalComponents" />
-    <link role="requiredConcept" roleId="4w5v.8575378964582005791" targetNodeId="v7ag.4491876417845649024" resolveInfo="InstanceConfiguration" />
+    <link role="requiredConcept" roleId="4w5v.8575378964582005791" targetNodeId="v7ag.7780999115923942144" resolveInfo="AbstractInstanceConfiguration" />
     <node role="options" roleId="4w5v.8575378964581602954" type="4w5v.PushHintOption" typeId="4w5v.3897771026684496949" id="1180267467524284333" nodeInfo="ng">
       <property name="menuLabel" nameId="4w5v.3897771026684565063" value="Component Wiring as Diagram" />
       <link role="hintCollection" roleId="4w5v.3897771026684508452" targetNodeId="okc0.984913113810098310" resolveInfo="componentsStuff" />
