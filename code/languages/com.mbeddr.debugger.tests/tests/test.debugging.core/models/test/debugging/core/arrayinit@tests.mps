@@ -15,6 +15,7 @@
   <language namespace="ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)" />
   <language namespace="daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)" />
   <language namespace="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" />
+  <import index="q9ah" modelUID="r:881cd106-b9c3-33d3-8c69-9a76f591f92a(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)" version="-1" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="40" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
@@ -1067,11 +1068,6 @@
     </node>
   </root>
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="5580547245468787095" nodeInfo="ng">
-    <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="5580547245468787096" nodeInfo="ng">
-      <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
-      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
-      <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
-    </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="5580547245468787097" nodeInfo="ng">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="5580547245468787098" nodeInfo="ng" />
     </node>
@@ -1080,6 +1076,9 @@
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5580547245468787101" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="36486875645774046" resolveInfo="ArrayInitTest" />
       </node>
+    </node>
+    <node role="target" roleId="51wr.5323740605968447026" type="51wr.PlatformReference" typeId="51wr.8719112291175211294" id="7476948223417588927" nodeInfo="ng">
+      <link role="template" roleId="51wr.8719112291175211414" targetNodeId="q9ah.8589448133356038649" resolveInfo="Desktop Platform" />
     </node>
   </root>
   <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693057696534" nodeInfo="ng">

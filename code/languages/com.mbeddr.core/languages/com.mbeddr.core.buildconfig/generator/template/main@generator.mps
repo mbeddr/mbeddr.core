@@ -1336,8 +1336,8 @@
                     </node>
                   </node>
                 </node>
-                <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="4459718605983316981" nodeInfo="nn">
-                  <link role="property" roleId="tp25.1138056395725" targetNodeId="51wr.5323740605968447024" resolveInfo="compiler" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="8288445932929988320" nodeInfo="nn">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="ahli.8288445932929181129" resolveInfo="getResolvedPathToCompiler" />
                 </node>
               </node>
             </node>
@@ -1709,6 +1709,8 @@
           <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
           <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
           <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
+          <property name="make" nameId="51wr.3963667026125442676" value="make" />
+          <property name="gdb" nameId="51wr.3963667026125442601" value="gdb" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="5249744164295484023" nodeInfo="nn">
             <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="5249744164295484024" nodeInfo="nn">
               <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5249744164295484025" nodeInfo="sn">
