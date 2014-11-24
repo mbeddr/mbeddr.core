@@ -2169,7 +2169,7 @@
     <property name="name" nameId="tpck.1169194664001" value="preventNameManglingFlag" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.6437088627575722831" resolveInfo="IModuleContent" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6708182213627106153" nodeInfo="nn">
-      <property name="text" nameId="tpc2.1073389577007" value="prevent name mangling" />
+      <property name="text" nameId="tpc2.1073389577007" value="@prevent name mangling" />
       <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="5806551411806877523" resolveInfo="removePreventNameMangling" />
       <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="r4b4.3038320686445010607" resolveInfo="Metadata" />
       <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="6708182213627106154" nodeInfo="nn">
