@@ -308,7 +308,7 @@
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.StackFramesDeclaration" typeId="rpmx.1218249513292774460" id="2797211287100628821" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="inTrans" />
       <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="2797211287100628827" nodeInfo="ng">
-        <property name="name" nameId="rpmx.4550138447368290430" value="_2._2_1._2_1_1:seitch" />
+        <property name="name" nameId="rpmx.4550138447368290430" value="SM" />
       </node>
       <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="2797211287100628826" nodeInfo="ng">
         <property name="name" nameId="rpmx.4550138447368290430" value="testCase1" />
@@ -320,7 +320,7 @@
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.StackFramesDeclaration" typeId="rpmx.1218249513292774460" id="2797211287100628824" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="inEntryOf_2_2_1" />
       <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="2797211287100628907" nodeInfo="ng">
-        <property name="name" nameId="rpmx.4550138447368290430" value="_2._2_2._2_2_1:EntryAction" />
+        <property name="name" nameId="rpmx.4550138447368290430" value="SM" />
       </node>
       <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="2797211287100628908" nodeInfo="ng">
         <property name="name" nameId="rpmx.4550138447368290430" value="testCase1" />
@@ -332,7 +332,7 @@
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.StackFramesDeclaration" typeId="rpmx.1218249513292774460" id="3571263511440507325" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="inEntryOf_2_1_1" />
       <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="3571263511440507326" nodeInfo="ng">
-        <property name="name" nameId="rpmx.4550138447368290430" value="_2._2_1._2_1_1:EntryAction" />
+        <property name="name" nameId="rpmx.4550138447368290430" value="SM" />
       </node>
       <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="3571263511440507327" nodeInfo="ng">
         <property name="name" nameId="rpmx.4550138447368290430" value="testCase1" />
