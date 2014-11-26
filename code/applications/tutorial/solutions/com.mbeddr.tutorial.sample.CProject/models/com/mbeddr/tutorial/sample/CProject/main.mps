@@ -85,6 +85,8 @@
       <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
       <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
       <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
+      <property name="make" nameId="51wr.3963667026125442676" value="make" />
+      <property name="gdb" nameId="51wr.3963667026125442601" value="gdb" />
     </node>
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="6002249030800810979" nodeInfo="ng">
       <property name="isTest" nameId="51wr.3431613015799084476" value="true" />

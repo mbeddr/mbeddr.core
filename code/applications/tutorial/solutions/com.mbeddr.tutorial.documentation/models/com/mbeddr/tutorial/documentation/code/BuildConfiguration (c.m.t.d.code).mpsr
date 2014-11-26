@@ -23,6 +23,8 @@
       <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
       <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
       <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
+      <property name="make" nameId="51wr.3963667026125442676" value="make" />
+      <property name="gdb" nameId="51wr.3963667026125442601" value="gdb" />
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2c95.NameAnnotation" typeId="2c95.4208238404719201400" id="5777244129531800797" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="platform" />
       </node>

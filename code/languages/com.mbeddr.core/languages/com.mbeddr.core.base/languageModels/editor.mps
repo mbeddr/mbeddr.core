@@ -10427,7 +10427,7 @@
     <node role="hints" roleId="tpc2.5944657839000877563" type="tpc2.ConceptEditorHintDeclaration" typeId="tpc2.5944657839003601246" id="5761107734912208459" nodeInfo="ig">
       <property name="showInUI" nameId="tpc2.168363875802087287" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="showReviewState" />
-      <property name="presentation" nameId="tpc2.5944657839012629576" value="showReviewState" />
+      <property name="presentation" nameId="tpc2.5944657839012629576" value="Show Review State" />
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5761107734912211791" nodeInfo="ng">

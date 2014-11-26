@@ -414,18 +414,28 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814933925213" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" We recommend installing cygwin (see " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" We recommend installing MinGW (see " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.SectRefWord" typeId="2c95.3350625596580108709" id="2045083395016276010" nodeInfo="ng">
                 <link role="target" roleId="2c95.3350625596580108719" targetNodeId="2045083395016240670" resolveInfo="ToolsAndVersions" />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395016276009" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="), a Unix-like environment for Windows. When selecting the packages to be installed, make sure " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="), a port of the GNU tools to Windows.  When selecting the packages to be installed (only Class (" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="4707256704523106620" nodeInfo="ng">
+                <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="4707256704523106621" nodeInfo="ng">
+                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4707256704523106622" nodeInfo="ng">
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="bin" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4707256704523132862" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="), make sure " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2564556814933925710" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814933925711" nodeInfo="ng">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814933925712" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="gcc-core" />
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="mingw32-gcc" />
                   </node>
                 </node>
               </node>
@@ -435,7 +445,7 @@
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2564556814933925727" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814933925728" nodeInfo="ng">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814933925729" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="gdb" />
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="mingw32-gdb" />
                   </node>
                 </node>
               </node>
@@ -445,7 +455,7 @@
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2564556814933925748" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814933925749" nodeInfo="ng">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814933925750" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="make" />
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="mingw32-make" />
                   </node>
                 </node>
               </node>
@@ -455,7 +465,7 @@
               <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="2564556814933925773" nodeInfo="ng">
                 <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2564556814933925774" nodeInfo="ng">
                   <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2564556814933925775" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Devel" />
+                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="All Packages" />
                   </node>
                 </node>
               </node>
@@ -2170,7 +2180,7 @@
             <node role="text" roleId="2c95.5785245534400277707" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2045083395016240686" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2045083395016240687" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395016240688" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Cygwin" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="MinGW" />
                 </node>
               </node>
             </node>
@@ -2197,7 +2207,7 @@
             <node role="text" roleId="2c95.5785245534400277707" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2045083395016263750" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2045083395016263751" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395016263752" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="gcc-core, make and gdb" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="mingw32-gcc (v 4.8.1), \nmingw32-make (v 3.82.90-2) and \nmingw32-gdb (v 7.6.1)" />
                 </node>
               </node>
             </node>
@@ -2209,7 +2219,7 @@
                 <node role="words" roleId="87nw.2557074442922392302" type="2c95.UrlFormattedText" typeId="2c95.4208238404723595132" id="2045083395016273268" nodeInfo="ng">
                   <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="2045083395016273269" nodeInfo="ng">
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395016273270" nodeInfo="ng">
-                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://www.cygwin.com" />
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="http://http://www.mingw.org/" />
                     </node>
                   </node>
                 </node>
@@ -2688,7 +2698,7 @@
             <node role="text" roleId="2c95.5785245534400277707" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2045083395016255111" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2045083395016255112" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2045083395016255113" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="3.1.4 or 3.1.5 (MPS 3.2 not yet supported)" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="3.1.4 or 3.1.5 \n(MPS 3.2 not yet supported)" />
                 </node>
               </node>
             </node>

@@ -51,7 +51,6 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="tgbt" modelUID="r:c70ee934-afb1-4c02-b6a9-1c4d1908a792(jetbrains.mps.lang.plugin.standalone.structure)" version="1" implicit="yes" />
   <import index="nx1" modelUID="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.actionSystem(MPS.IDEA/com.intellij.openapi.actionSystem@java_stub)" version="-1" implicit="yes" />
-  <import index="1oap" modelUID="r:03d44d4c-3d65-461c-9085-0f48e9569e59(jetbrains.mps.lang.resources.structure)" version="0" implicit="yes" />
   <import index="4w5v" modelUID="r:18d75373-a465-46d0-9749-aacc22a947bc(com.mbeddr.mpsutil.refactoring.structure)" version="-1" implicit="yes" />
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="2808756344206465415" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="GoToImplementation" />
@@ -1447,14 +1446,11 @@
   <root type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="1611636138415080827" nodeInfo="ng" />
   <root type="4w5v.ProjectionModeSwitcher" typeId="4w5v.3897771026684493688" id="1180267467524284332" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="graphicalComponents" />
-    <link role="requiredConcept" roleId="4w5v.8575378964582005791" targetNodeId="v7ag.4491876417845649024" resolveInfo="InstanceConfiguration" />
+    <link role="requiredConcept" roleId="4w5v.8575378964582005791" targetNodeId="v7ag.7780999115923942144" resolveInfo="AbstractInstanceConfiguration" />
     <node role="options" roleId="4w5v.8575378964581602954" type="4w5v.PushHintOption" typeId="4w5v.3897771026684496949" id="1180267467524284333" nodeInfo="ng">
       <property name="menuLabel" nameId="4w5v.3897771026684565063" value="Component Wiring as Diagram" />
       <link role="hintCollection" roleId="4w5v.3897771026684508452" targetNodeId="okc0.984913113810098310" resolveInfo="componentsStuff" />
       <link role="hint" roleId="4w5v.3897771026684508454" targetNodeId="okc0.984913113810105760" resolveInfo="graphicalWiring" />
-    </node>
-    <node role="checkIcon" roleId="4w5v.8575378964583031301" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="1180267467524284335" nodeInfo="ng">
-      <property name="path" nameId="1oap.8974276187400029899" value="${module}/icons/check.png" />
     </node>
     <node role="modification" roleId="4w5v.8575378964581617586" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="3897771026690269634" nodeInfo="ng">
       <link role="point" roleId="tp4k.1204992316090" targetNodeId="d244.295213795664246606" resolveInfo="mbeddrPlatformProjectionModes" />
