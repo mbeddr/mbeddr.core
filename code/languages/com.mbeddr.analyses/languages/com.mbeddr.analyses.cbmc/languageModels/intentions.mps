@@ -15,6 +15,7 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <root type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="2161187783549671078" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="toggleCDecTabCheck" />
+    <property name="isAvailableInChildNodes" nameId="tp3j.2522969319638091386" value="true" />
     <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="k146.6209595569797584861" resolveInfo="DecTab" />
     <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="2161187783549671079" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2161187783549671080" nodeInfo="sn">
