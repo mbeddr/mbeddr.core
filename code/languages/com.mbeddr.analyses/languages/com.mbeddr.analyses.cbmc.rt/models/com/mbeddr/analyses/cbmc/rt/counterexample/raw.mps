@@ -4730,7 +4730,7 @@
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5229283268961121753" resolveInfo="reason" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5229283268961121779" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dequals(java%dlang%dObject)%cboolean" resolveInfo="equals" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dstartsWith(java%dlang%dString)%cboolean" resolveInfo="startsWith" />
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5229283268961121780" nodeInfo="nn">
                         <property name="value" nameId="tpee.1070475926801" value="division by zero" />
                       </node>
