@@ -417,8 +417,9 @@
       </node>
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="2536856479943573975" nodeInfo="ng">
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="2536856479943573976" nodeInfo="ng">
-          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2536856479943573978" nodeInfo="ng">
-            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2536856479943573977" resolveInfo="callingTests" />
+          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2561113571598849727" nodeInfo="ng">
+            <property name="name" nameId="rpmx.105850086903157559" value="marker" />
+            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8326082845994236793" resolveInfo="triggering2ndTrans" />
           </node>
         </node>
       </node>

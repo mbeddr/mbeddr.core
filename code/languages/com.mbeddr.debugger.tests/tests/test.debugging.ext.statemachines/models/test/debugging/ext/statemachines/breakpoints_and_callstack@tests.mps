@@ -48,7 +48,7 @@
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesValidationList" typeId="rpmx.4550138447368300128" id="3450485464477023593" nodeInfo="ng">
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="3450485464477023595" nodeInfo="ng">
-            <property name="name" nameId="rpmx.4550138447368290430" value="red:DoAction" />
+            <property name="name" nameId="rpmx.4550138447368290430" value="SM" />
           </node>
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="3450485464477023596" nodeInfo="ng">
             <property name="name" nameId="rpmx.4550138447368290430" value="testCase1" />
@@ -78,7 +78,7 @@
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesValidationList" typeId="rpmx.4550138447368300128" id="3450485464477275701" nodeInfo="ng">
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="3450485464477275702" nodeInfo="ng">
-            <property name="name" nameId="rpmx.4550138447368290430" value="red:DoAction" />
+            <property name="name" nameId="rpmx.4550138447368290430" value="SM" />
           </node>
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="3450485464477275703" nodeInfo="ng">
             <property name="name" nameId="rpmx.4550138447368290430" value="testCase1" />
@@ -108,7 +108,7 @@
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesValidationList" typeId="rpmx.4550138447368300128" id="3450485464477023607" nodeInfo="ng">
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="3450485464477023608" nodeInfo="ng">
-            <property name="name" nameId="rpmx.4550138447368290430" value="red:ExitAction" />
+            <property name="name" nameId="rpmx.4550138447368290430" value="SM" />
           </node>
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="3450485464477023609" nodeInfo="ng">
             <property name="name" nameId="rpmx.4550138447368290430" value="testCase1" />
@@ -138,7 +138,7 @@
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesValidationList" typeId="rpmx.4550138447368300128" id="3450485464477275717" nodeInfo="ng">
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="3450485464477275718" nodeInfo="ng">
-            <property name="name" nameId="rpmx.4550138447368290430" value="red:ExitAction" />
+            <property name="name" nameId="rpmx.4550138447368290430" value="SM" />
           </node>
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="3450485464477275719" nodeInfo="ng">
             <property name="name" nameId="rpmx.4550138447368290430" value="testCase1" />
@@ -168,7 +168,7 @@
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesValidationList" typeId="rpmx.4550138447368300128" id="3450485464477023626" nodeInfo="ng">
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="3450485464477023627" nodeInfo="ng">
-            <property name="name" nameId="rpmx.4550138447368290430" value="green:EntryAction" />
+            <property name="name" nameId="rpmx.4550138447368290430" value="SM" />
           </node>
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="3450485464477023628" nodeInfo="ng">
             <property name="name" nameId="rpmx.4550138447368290430" value="testCase1" />
@@ -198,7 +198,7 @@
         </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesValidationList" typeId="rpmx.4550138447368300128" id="3450485464477275733" nodeInfo="ng">
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="3450485464477275734" nodeInfo="ng">
-            <property name="name" nameId="rpmx.4550138447368290430" value="green:EntryAction" />
+            <property name="name" nameId="rpmx.4550138447368290430" value="SM" />
           </node>
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="3450485464477275735" nodeInfo="ng">
             <property name="name" nameId="rpmx.4550138447368290430" value="testCase1" />
@@ -222,7 +222,7 @@
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="2032275818418839678" nodeInfo="ng">
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesValidationList" typeId="rpmx.4550138447368300128" id="2032275818418839679" nodeInfo="ng">
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="2032275818418839680" nodeInfo="ng">
-            <property name="name" nameId="rpmx.4550138447368290430" value="red:seitch" />
+            <property name="name" nameId="rpmx.4550138447368290430" value="SM" />
           </node>
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="2032275818418839681" nodeInfo="ng">
             <property name="name" nameId="rpmx.4550138447368290430" value="testCase1" />
@@ -251,7 +251,7 @@
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="2032275818418839683" nodeInfo="ng">
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesValidationList" typeId="rpmx.4550138447368300128" id="2032275818418839684" nodeInfo="ng">
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="2032275818418839685" nodeInfo="ng">
-            <property name="name" nameId="rpmx.4550138447368290430" value="red:seitch" />
+            <property name="name" nameId="rpmx.4550138447368290430" value="SM" />
           </node>
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="2032275818418839686" nodeInfo="ng">
             <property name="name" nameId="rpmx.4550138447368290430" value="testCase1" />
@@ -280,7 +280,7 @@
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="2032275818418839701" nodeInfo="ng">
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.StackFramesValidationList" typeId="rpmx.4550138447368300128" id="2032275818418839702" nodeInfo="ng">
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="2032275818418839703" nodeInfo="ng">
-            <property name="name" nameId="rpmx.4550138447368290430" value="green:seitch" />
+            <property name="name" nameId="rpmx.4550138447368290430" value="SM" />
           </node>
           <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="2032275818418839704" nodeInfo="ng">
             <property name="name" nameId="rpmx.4550138447368290430" value="testCase1" />
@@ -534,7 +534,6 @@
         </node>
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.ExitAction" typeId="clqz.4753668641245545020" id="3450485464476995025" nodeInfo="ng">
           <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="3450485464476995026" nodeInfo="ng">
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7798099075967776977" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3450485464476995027" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="7798099075967776978" nodeInfo="ng">
                 <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="7798099075967776979" nodeInfo="ng">
