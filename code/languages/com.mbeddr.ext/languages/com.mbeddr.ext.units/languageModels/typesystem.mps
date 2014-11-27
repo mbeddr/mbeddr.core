@@ -6592,10 +6592,10 @@
   </root>
   <root type="tpd4.InequationReplacementRule" typeId="tpd4.1201607707634" id="3311850549211942449" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="definition.subtyping.annotatedtype" />
-    <property name="name" nameId="tpck.1169194664001" value="subtype_PointerType_PointerType" />
+    <property name="name" nameId="tpck.1169194664001" value="subtype__ITypeContainingType_ITypeContainingType" />
     <node role="supertypeNode" roleId="tpd4.1201607798918" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="3311850549211942487" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="sup" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="yq40.279446265608459824" resolveInfo="PointerType" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="c4fa.7763322639126652757" resolveInfo="ITypeContainingType" />
     </node>
     <node role="body" roleId="tpd4.1175147624276" type="tpee.StatementList" typeId="tpee.1068580123136" id="3311850549211942451" nodeInfo="sn">
       <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateLessThanInequationStatement" typeId="tpd4.1174663118805" id="3276687228360954367" nodeInfo="nn">
@@ -6624,7 +6624,7 @@
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="3311850549211942453" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="sub" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="yq40.279446265608459824" resolveInfo="PointerType" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="c4fa.7763322639126652757" resolveInfo="ITypeContainingType" />
     </node>
     <node role="isApplicableClause" roleId="tpd4.3592071576955708909" type="tpd4.IsReplacementRuleApplicable_ConceptFunction" typeId="tpd4.3592071576955708904" id="3311850549211942521" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3311850549211942522" nodeInfo="sn">
