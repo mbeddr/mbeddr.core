@@ -1272,7 +1272,7 @@
                   <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3934196245406631589" nodeInfo="ng">
                     <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3934196245406631590" nodeInfo="ng">
                       <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3934196245406631591" nodeInfo="ng">
-                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="rebuildLanguagesAfterCheckout" />
+                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="buildLanguages" />
                       </node>
                     </node>
                   </node>
@@ -1392,7 +1392,7 @@
                   <node role="words" roleId="87nw.2557074442922392302" type="2c95.CodeFormattedText" typeId="2c95.4457500422381571986" id="3934196245406631637" nodeInfo="ng">
                     <node role="text" roleId="2c95.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="3934196245406631638" nodeInfo="ng">
                       <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3934196245406631639" nodeInfo="ng">
-                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="rebuildLanguagesAfterCheckout" />
+                        <property name="escapedValue" nameId="87nw.2557074442922438158" value="buildLanguages" />
                       </node>
                     </node>
                   </node>
