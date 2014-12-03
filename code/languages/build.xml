@@ -1,7 +1,7 @@
   <project name="mbeddr download and deploy plugins" default="clean-and-build" >
 	
   <property file="build.properties"/>  
-  <taskdef name="make-tests" classname="com.mbeddr.tools.ant.MakeTestsTask" classpath="${mbeddr.github.core.home}/tools/ant/tasks/MakeTestsTask.jar" />
+  <taskdef name="make-tests" classname="com.mbeddr.tools.ant.MakeTestsTask" classpath="${mbeddr.github.core.home}/tools/ant/tasks/TeamcityMakeTests.jar" />
   
   <!-- url/mps properties -->
   <property name="plugins.folder.name" value="plugins"/>
@@ -298,7 +298,6 @@
 	  <antcall target="make-tests">
 	      <param name="make-tests.dir" value="${com.mbeddr.core.working-dir}/tests/aLibrary/source_gen/aLibrary/lib"/>
 	  </antcall>
-	  
 	  
 	  <ant antfile="${com.mbeddr.core.ex-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.core.ex-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${build-plugin.task}" />
