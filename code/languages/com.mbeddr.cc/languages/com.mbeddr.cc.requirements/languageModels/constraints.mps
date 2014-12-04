@@ -386,5 +386,9 @@
       </node>
     </node>
   </root>
+  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2851923306476971483" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="links" />
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="75wo.1165432222362123724" resolveInfo="RefinesLink" />
+  </root>
 </model>
 
