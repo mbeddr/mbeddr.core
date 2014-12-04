@@ -1617,5 +1617,24 @@
       <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="talm.8328524084371399529" resolveInfo="variableKind" />
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6187261311435796417" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="watches.type-translation" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="talm.6187261311435765927" resolveInfo="ParseNumberExpression" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6187261311435810147" nodeInfo="nn">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6187261311435810157" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="parse number from" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="6187261311435810179" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="talm.6187261311435795457" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6187261311435810238" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="of type" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="6187261311435810166" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="talm.6187261311435795448" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6187261311435810150" nodeInfo="nn" />
+    </node>
+  </root>
 </model>
 
