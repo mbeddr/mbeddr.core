@@ -234,12 +234,20 @@
       <ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${generate-code.task}" />
       <ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${build-plugin.task}" />	  
   </target>  
-
+  
+  <target name="build-debugger-testing" >
+	  <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
+	  <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />
+	  <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${run-tests.task}" />
+  </target>	
+  
   <target name="build-languages" >
-        <antcall target="build-sl-all" />
-        <antcall target="build-platform" />
-	  <antcall target="build-mbeddr" />  	  
+	  <antcall target="build-sl-all" />
+		<antcall target="build-platform" />
+		<antcall target="build-mbeddr" />  
+		<antcall target="build-debugger-testing" />
   </target>	 
+  
 
   <target name="build-and-run-tests" >
  	   <antcall target="test-debugger" />
@@ -253,9 +261,8 @@
        <!-- <antcall target="test-debugging" /> -->
   </target>	        
     	  
-  <target name="test-debugging">	
-	  <ant antfile="${com.mbeddr.debugger.testing.runtime-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
-	  <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
+  <target name="test-debugging">	 	  
+  	  <ant antfile="${com.mbeddr.debugger.testing.runtime-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
 	  <ant antfile="${com.mbeddr.debugger.testing.cross-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
 	  <ant antfile="${com.mbeddr.debugger.testing.core-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
 	  <ant antfile="${com.mbeddr.debugger.testing.statemachine-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
@@ -268,9 +275,7 @@
 	  <ant antfile="${com.mbeddr.debugger.testing.statemachine-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-generated-code.task}" />
 	  <ant antfile="${com.mbeddr.debugger.testing.physical-units-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-generated-code.task}" />
 	  <ant antfile="${com.mbeddr.debugger.testing.components-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-generated-code.task}" />
-	   
-      <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
-      <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" /> 	  
+	         	  
 	  <ant antfile="${com.mbeddr.debugger.testing.cross-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.debugger.testing.cross-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" />	  
 	  <ant antfile="${com.mbeddr.debugger.testing.core-tests-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
@@ -316,10 +321,10 @@
     <ant antfile="${com.mbeddr.core.performance-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${run-tests.task}" />
   </target>
 	  
-  <target name="test-debugger">
-	  <ant antfile="${com.mbeddr.debugger.tests-build-file.name}" dir="${com.mbeddr.debugger.build-file.location}" target="${generate-code.task}" />
-	  <ant antfile="${com.mbeddr.debugger.tests-build-file.name}" dir="${com.mbeddr.debugger.build-file.location}" target="${build-plugin.task}" />
-	  <ant antfile="${com.mbeddr.debugger.tests-build-file.name}" dir="${com.mbeddr.debugger.build-file.location}" target="${run-tests.task}" />
+  <target name="test-debugger">  
+	  <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${clean-plugins.task}" />
+      <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${generate-code.task}" />
+      <ant antfile="${com.mbeddr.debugger.testing.runtime-build-file.name}" dir="${com.mbeddr.debugger.testing.build-file.location}" target="${build-plugin.task}" /> 
   </target>
 	
   <target name="test-cc">	  
