@@ -699,7 +699,7 @@
     </node>
     <node role="aspects" roleId="3ior.3542413272732620719" type="kdzh.BuildMpsAspect" typeId="kdzh.6503355885715333289" id="651821299948807944" nodeInfo="ng">
       <property name="bootstrap" nameId="kdzh.6503355885715353788" value="true" />
-      <property name="generationMaxHeapSizeInMb" nameId="kdzh.7981469545489178349" value="3072" />
+      <property name="generationMaxHeapSizeInMb" nameId="kdzh.7981469545489178349" value="4096" />
       <property name="generationMaxPermSizeInMb" nameId="kdzh.353547257300482730" value="512" />
     </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_GeneratorOptions" typeId="kdzh.4297162197620964123" id="3008937229056436034" nodeInfo="ng">
