@@ -25,6 +25,7 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7634203028839870183" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="AnalysesCoreTestingFacade" />
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="219628915417196215" nodeInfo="ngu" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="7634203028839880822" nodeInfo="igu">
       <property name="name" nameId="tpck.1169194664001" value="checkRobustness" />
       <node role="returnType" roleId="tpee.1068580123133" type="tp2q.ListType" typeId="tp2q.1151688443754" id="7634203028839880823" nodeInfo="in">
@@ -809,6 +810,9 @@
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="7634203028839871762" nodeInfo="ngu" />
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7634203028839870184" nodeInfo="nn" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MethodLineDoc" typeId="hba4.6451706574539345403" id="219628915417198114" nodeInfo="ng">
+      <property name="text" nameId="hba4.6451706574539345425" value="Facade for tests of core analyses." />
+    </node>
   </root>
 </model>
 
