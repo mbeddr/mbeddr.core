@@ -238,6 +238,30 @@
           </node>
         </node>
       </node>
+      <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="9173408019491599587" nodeInfo="ng">
+        <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
+        <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.mpsutil.test.util" />
+        <property name="uuid" nameId="kdzh.322010710375892619" value="fdfc256f-c0b4-4ea1-9ada-e6e752358eb7" />
+        <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
+        <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="9173408019491599588" nodeInfo="ng">
+          <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8628756186118380627" resolveInfo="mpsutil" />
+          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="9173408019491599589" nodeInfo="nn">
+            <property name="head" nameId="3ior.8618885170173601779" value="solutions" />
+            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="9173408019491599590" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.mpsutil.test.util" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="9173408019491615118" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="com.mbeddr.mpsutil.test.util.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="9173408019491623662" nodeInfo="nn">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="9173408019491623663" nodeInfo="ng">
+            <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
+            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="6573709714627816456" resolveInfo="com.mbeddr.mpsutil.common" />
+          </node>
+        </node>
+      </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="6534474553344888164" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
         <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.mpsutil.blutil.rt" />
@@ -309,12 +333,6 @@
             <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="4106978568938728963" resolveInfo="com.mbeddr.mpsutil.lib" />
           </node>
         </node>
-        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="6573709714627829033" nodeInfo="nn">
-          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="6573709714627829034" nodeInfo="ng">
-            <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
-            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="6573709714627816456" resolveInfo="com.mbeddr.mpsutil.common" />
-          </node>
-        </node>
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="6573709714627829035" nodeInfo="nn">
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="6573709714627829036" nodeInfo="ng">
             <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
@@ -325,6 +343,12 @@
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="7252306587715459871" nodeInfo="ng">
             <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
             <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="90a9.3480045216712472389" resolveInfo="org.apache.commons" />
+          </node>
+        </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="9173408019491623688" nodeInfo="nn">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="9173408019491623689" nodeInfo="ng">
+            <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
+            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="6573709714627816456" resolveInfo="com.mbeddr.mpsutil.common" />
           </node>
         </node>
       </node>
@@ -1075,15 +1099,15 @@
             <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="ffeo.8939513996048536244" resolveInfo="jetbrains.mps.lang.structure" />
           </node>
         </node>
-        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="6573709714627829242" nodeInfo="nn">
-          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="6573709714627829243" nodeInfo="ng">
-            <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
-            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="6573709714627816456" resolveInfo="com.mbeddr.mpsutil.common" />
-          </node>
-        </node>
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="2395879868825866982" nodeInfo="nn">
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="2395879868825866983" nodeInfo="ng">
             <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="ffeo.8939513996048535924" resolveInfo="jetbrains.mps.lang.extension" />
+          </node>
+        </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="9173408019491623927" nodeInfo="nn">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="9173408019491623928" nodeInfo="ng">
+            <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
+            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="6573709714627816456" resolveInfo="com.mbeddr.mpsutil.common" />
           </node>
         </node>
       </node>
@@ -5076,12 +5100,6 @@
             <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="ffeo.8939513996048536126" resolveInfo="jetbrains.mps.lang.project" />
           </node>
         </node>
-        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="3031379074725974987" nodeInfo="nn">
-          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="3031379074725974988" nodeInfo="ng">
-            <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
-            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="6573709714627816456" resolveInfo="com.mbeddr.mpsutil.common" />
-          </node>
-        </node>
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="1493771523582447903" nodeInfo="nn">
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="1493771523582447904" nodeInfo="ng">
             <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="ffeo.8939513996048535420" resolveInfo="jetbrains.mps.lang.core" />
@@ -5100,6 +5118,12 @@
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="35689190611781319" nodeInfo="nn">
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="35689190611781320" nodeInfo="ng">
             <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="35689190611756416" resolveInfo="com.mbeddr.doc" />
+          </node>
+        </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="9173408019491625177" nodeInfo="nn">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="9173408019491625178" nodeInfo="ng">
+            <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
+            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="6573709714627816456" resolveInfo="com.mbeddr.mpsutil.common" />
           </node>
         </node>
       </node>

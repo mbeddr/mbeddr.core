@@ -1765,9 +1765,13 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9102031102126889202" nodeInfo="nn" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="9102031102126889204" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="9102031102126889206" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="9102031102127206645" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="9102031102127206644" nodeInfo="nn">
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9102031102127172245" resolveInfo="enableContextSidebarTool" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="9173408019494938785" nodeInfo="nn">
+          <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.StatementCommentPart" typeId="tpee.6329021646629175143" id="9173408019494938786" nodeInfo="nn">
+            <node role="commentedStatement" roleId="tpee.6329021646629175144" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="9102031102127206645" nodeInfo="nn">
+              <node role="expression" roleId="tpee.1068580123156" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="9102031102127206644" nodeInfo="nn">
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="9102031102127172245" resolveInfo="enableContextSidebarTool" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="9102031102127160581" nodeInfo="nn">
