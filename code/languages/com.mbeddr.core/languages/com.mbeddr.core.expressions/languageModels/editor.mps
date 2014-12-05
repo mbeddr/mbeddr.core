@@ -288,6 +288,9 @@
           <property name="labelName" nameId="tpc2.1238091709220" value="par2" />
         </node>
       </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="2851923306474924189" nodeInfo="nn">
+        <property name="flag" nameId="tpc2.1186414551515" value="true" />
+      </node>
     </node>
     <node role="inspectedCellModel" roleId="tpc2.1078153129734" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="6496796267915438515" nodeInfo="ng">
       <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="6496796267915420283" resolveInfo="staticValueComponent" />
