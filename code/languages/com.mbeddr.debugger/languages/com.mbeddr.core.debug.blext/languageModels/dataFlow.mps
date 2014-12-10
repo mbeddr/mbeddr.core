@@ -112,5 +112,21 @@
       </node>
     </node>
   </root>
+  <root type="tp41.DataFlowBuilderDeclaration" typeId="tp41.1206442055221" id="6905740559596028882" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="watches.type-translation" />
+    <link role="conceptDeclaration" roleId="tp41.1206442096288" targetNodeId="talm.4172743831448892235" resolveInfo="MapTypeFromNodeExpr" />
+    <node role="builderBlock" roleId="tp41.1206442812839" type="tp41.BuilderBlock" typeId="tp41.1206442659665" id="6905740559596030696" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6905740559596055391" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tp41.EmitCodeForStatement" typeId="tp41.1206454052847" id="6905740559596140124" nodeInfo="nn">
+          <node role="codeFor" roleId="tp41.1206454079161" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6905740559596140266" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tp41.NodeParameter" typeId="tp41.1206442747519" id="6905740559596140152" nodeInfo="nn" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6905740559596141665" nodeInfo="nn">
+              <link role="link" roleId="tp25.1138056516764" targetNodeId="talm.4172743831448892236" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
 </model>
 
