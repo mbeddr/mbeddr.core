@@ -7,9 +7,9 @@
   <import index="flbw" modelUID="r:e2a5a0f1-a4a9-37f5-82d2-429bae822a23(com.mbeddr.core.__spreferences.PlatformTemplates)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="40" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="35" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="36" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" implicit="yes" />
@@ -76,7 +76,11 @@
               <node role="init" roleId="c4fa.4185783222026502647" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="5654854927664367899" nodeInfo="ng">
                 <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226119727" resolveInfo="M1a" />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="5654854927664389512" nodeInfo="ng">
-                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="5654854927664389513" nodeInfo="ng" />
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeConstraintsErrorCheckOperation" typeId="tp5g.8333855927540283103" id="4588874999147399098" nodeInfo="ng">
+                    <node role="errorRef" roleId="tp5g.8333855927548182241" type="tp5g.UnknownRuleReference" typeId="tp5g.7691029917083831655" id="4588874999147399099" nodeInfo="ng">
+                      <link role="declaration" roleId="tp5g.7691029917083846666" targetNodeId="3mvl.6610873504380357367" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -100,7 +104,11 @@
               <node role="init" roleId="c4fa.4185783222026502647" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="5654854927664385085" nodeInfo="ng">
                 <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226119799" resolveInfo="M2x" />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="5654854927664395393" nodeInfo="ng">
-                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="5654854927664395394" nodeInfo="ng" />
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeConstraintsErrorCheckOperation" typeId="tp5g.8333855927540283103" id="4588874999145013767" nodeInfo="ng">
+                    <node role="errorRef" roleId="tp5g.8333855927548182241" type="tp5g.UnknownRuleReference" typeId="tp5g.7691029917083831655" id="4588874999145013768" nodeInfo="ng">
+                      <link role="declaration" roleId="tp5g.7691029917083846666" targetNodeId="3mvl.6610873504380357367" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -113,7 +121,11 @@
               <node role="init" roleId="c4fa.4185783222026502647" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="5654854927664385509" nodeInfo="ng">
                 <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226119802" resolveInfo="M2y" />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="5654854927664399810" nodeInfo="ng">
-                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="5654854927664399811" nodeInfo="ng" />
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeConstraintsErrorCheckOperation" typeId="tp5g.8333855927540283103" id="4588874999145342681" nodeInfo="ng">
+                    <node role="errorRef" roleId="tp5g.8333855927548182241" type="tp5g.UnknownRuleReference" typeId="tp5g.7691029917083831655" id="4588874999145342682" nodeInfo="ng">
+                      <link role="declaration" roleId="tp5g.7691029917083846666" targetNodeId="3mvl.6610873504380357367" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -127,7 +139,11 @@
               <node role="init" roleId="c4fa.4185783222026502647" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="5654854927664382186" nodeInfo="ng">
                 <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226145568" resolveInfo="M3g" />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="5654854927664404227" nodeInfo="ng">
-                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="5654854927664404228" nodeInfo="ng" />
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeConstraintsErrorCheckOperation" typeId="tp5g.8333855927540283103" id="4588874999146207854" nodeInfo="ng">
+                    <node role="errorRef" roleId="tp5g.8333855927548182241" type="tp5g.UnknownRuleReference" typeId="tp5g.7691029917083831655" id="4588874999146207855" nodeInfo="ng">
+                      <link role="declaration" roleId="tp5g.7691029917083846666" targetNodeId="3mvl.6610873504380357367" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -151,7 +167,11 @@
               <node role="init" roleId="c4fa.4185783222026502647" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="5654854927664384243" nodeInfo="ng">
                 <link role="var" roleId="x27k.6610873504380357355" targetNodeId="7475861851226252614" resolveInfo="M4p" />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="5654854927664409448" nodeInfo="ng">
-                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="5654854927664409449" nodeInfo="ng" />
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeConstraintsErrorCheckOperation" typeId="tp5g.8333855927540283103" id="4588874999147399094" nodeInfo="ng">
+                    <node role="errorRef" roleId="tp5g.8333855927548182241" type="tp5g.UnknownRuleReference" typeId="tp5g.7691029917083831655" id="4588874999147399095" nodeInfo="ng">
+                      <link role="declaration" roleId="tp5g.7691029917083846666" targetNodeId="3mvl.6610873504380357367" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
