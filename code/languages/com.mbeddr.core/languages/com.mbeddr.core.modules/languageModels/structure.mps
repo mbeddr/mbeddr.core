@@ -191,6 +191,12 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2613571464701599541" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2613571464700060476" resolveInfo="IFunctionLikeReducedToSingleFunction" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2225810280734428369" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="c4fa.2225810280727984117" resolveInfo="IDataFlowEntryPointProvider" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2225810280734428423" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="c4fa.2225810280727943030" resolveInfo="IDataFlowExceptionProvider" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7892328519581704407" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="functions" />
