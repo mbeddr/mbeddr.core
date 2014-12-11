@@ -41,40 +41,13 @@
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="3105925081592911190" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="b" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="3105925081592911188" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-          </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="3105925081592983611" nodeInfo="ng">
-            <link role="var" roleId="x27k.6610873504380357355" targetNodeId="3105925081586446330" resolveInfo="g" />
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3105925081592960605" nodeInfo="ng" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ForStatement" typeId="c4fa.7254843406768596598" id="3105925081592961017" nodeInfo="ng">
-          <node role="iterator" roleId="c4fa.7254843406768606784" type="c4fa.ForVarDecl" typeId="c4fa.7254843406768606755" id="3105925081592961429" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="i" />
-            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="3105925081592961427" nodeInfo="ng">
-              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5782768392141142229" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.DirectPlusAssignmentExpression" typeId="mj1l.3820836583575227340" id="5782768392141142624" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5782768392141142961" nodeInfo="ng">
+              <property name="value" nameId="mj1l.2212975673976043696" value="3" />
             </node>
-            <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3105925081592962430" nodeInfo="ng">
-              <property name="value" nameId="mj1l.2212975673976043696" value="0" />
-            </node>
-          </node>
-          <node role="body" roleId="c4fa.7254843406768606771" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3105925081592961019" nodeInfo="ng" />
-          <node role="condition" roleId="c4fa.7254843406768606787" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="3105925081592963128" nodeInfo="ng">
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3105925081592963131" nodeInfo="ng">
-              <property name="value" nameId="mj1l.2212975673976043696" value="10" />
-            </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3105925081592963105" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3105925081592961429" resolveInfo="i" />
-            </node>
-          </node>
-          <node role="incr" roleId="c4fa.7254843406768606790" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="3105925081592966422" nodeInfo="ng">
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3105925081592965914" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3105925081592961429" resolveInfo="i" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5782768392141142227" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3105925081592906237" resolveInfo="a" />
             </node>
           </node>
         </node>
