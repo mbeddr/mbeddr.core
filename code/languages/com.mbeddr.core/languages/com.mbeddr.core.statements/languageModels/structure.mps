@@ -732,11 +732,5 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="tpck.1234971358450" resolveInfo="IType" />
     </node>
   </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2225810280727943030" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="IDataFlowExceptionProvider" />
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2225810280727984117" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="IDataFlowEntryPointProvider" />
-  </root>
 </model>
 
