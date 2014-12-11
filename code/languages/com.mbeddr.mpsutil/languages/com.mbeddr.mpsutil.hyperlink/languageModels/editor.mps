@@ -1,36 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:db2c041e-54bd-4fbb-9087-056c7a8ef247(com.mbeddr.mpsutil.hyperlink.editor)">
-  <persistence version="8" />
-  <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
-  <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="ag3p" modelUID="r:4f3facd2-2d6c-40e4-a229-cdeb0a5137d8(com.mbeddr.mpsutil.hyperlink.runtime)" version="-1" />
-  <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="35" implicit="yes" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
-  <import index="djae" modelUID="r:37f50128-ed0b-4a8e-8eb6-28a9121943e9(com.mbeddr.mpsutil.hyperlink.structure)" version="-1" implicit="yes" />
-  <root type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="144279664517332990" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="HyperlinkStyleAttribute" />
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleAttributeDeclaration" typeId="tpc2.3982520150113085419" id="144279664517345904" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="hyperlink-reference" />
-      <property name="inherited" nameId="tpc2.8714766435264464176" value="true" />
-      <node role="valueType" roleId="tpc2.3982520150113092206" type="tpee.BooleanType" typeId="tpee.1070534644030" id="144279664517345928" nodeInfo="in" />
-      <node role="defaultValue" roleId="tpc2.3982520150113147643" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="144279664517345932" nodeInfo="nn">
-        <property name="value" nameId="tpee.1068580123138" value="false" />
+<model ref="r:db2c041e-54bd-4fbb-9087-056c7a8ef247(com.mbeddr.mpsutil.hyperlink.editor)">
+  <persistence version="9" />
+  <languages>
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+  </languages>
+  <imports>
+    <import index="ag3p" ref="r:4f3facd2-2d6c-40e4-a229-cdeb0a5137d8(com.mbeddr.mpsutil.hyperlink.runtime)" />
+    <import index="djae" ref="r:37f50128-ed0b-4a8e-8eb6-28a9121943e9(com.mbeddr.mpsutil.hyperlink.structure)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
+        <child id="1080736633877" name="cellModel" index="2wV5jI" />
+      </concept>
+      <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
+        <child id="1186402402630" name="styleClass" index="V601i" />
+      </concept>
+      <concept id="3982520150113085419" name="jetbrains.mps.lang.editor.structure.StyleAttributeDeclaration" flags="ig" index="3t5Usi">
+        <property id="8714766435264464176" name="inherited" index="iBDjm" />
+        <child id="3982520150113147643" name="defaultValue" index="3t49C2" />
+        <child id="3982520150113092206" name="valueType" index="3t5Oan" />
+      </concept>
+      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
+        <property id="1073389577007" name="text" index="3F0ifm" />
+      </concept>
+      <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
+        <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
+      </concept>
+    </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="V5hpn" id="80_psBRzZY">
+    <property role="TrG5h" value="HyperlinkStyleAttribute" />
+    <node concept="3t5Usi" id="80_psBRB9K" role="V601i">
+      <property role="TrG5h" value="hyperlink-reference" />
+      <property role="iBDjm" value="true" />
+      <node concept="10P_77" id="80_psBRBa8" role="3t5Oan" />
+      <node concept="3clFbT" id="80_psBRBac" role="3t49C2">
+        <property role="3clFbU" value="false" />
       </node>
     </node>
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleAttributeDeclaration" typeId="tpc2.3982520150113085419" id="6459847791818188336" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="hyperlink-handler" />
-      <property name="inherited" nameId="tpc2.8714766435264464176" value="true" />
-      <node role="valueType" roleId="tpc2.3982520150113092206" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6459847791820108531" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="ag3p.6459847791820108173" resolveInfo="HyperlinkHandler" />
+    <node concept="3t5Usi" id="5A_Zlt6qyoK" role="V601i">
+      <property role="TrG5h" value="hyperlink-handler" />
+      <property role="iBDjm" value="true" />
+      <node concept="3uibUv" id="5A_Zlt6xRbN" role="3t5Oan">
+        <ref role="3uigEE" to="ag3p:5A_Zlt6xR6d" resolve="HyperlinkHandler" />
       </node>
     </node>
-  </root>
-  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="144279664520986068" nodeInfo="ng">
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="djae.144279664520985993" resolveInfo="DummyConcept" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="144279664520986121" nodeInfo="nn">
-      <property name="text" nameId="tpc2.1073389577007" value="dummy concept" />
+  </node>
+  <node concept="24kQdi" id="80_psC5vRk">
+    <ref role="1XX52x" to="djae:80_psC5vQ9" resolve="DummyConcept" />
+    <node concept="3F0ifn" id="80_psC5vS9" role="2wV5jI">
+      <property role="3F0ifm" value="dummy concept" />
     </node>
-  </root>
+  </node>
 </model>
 
