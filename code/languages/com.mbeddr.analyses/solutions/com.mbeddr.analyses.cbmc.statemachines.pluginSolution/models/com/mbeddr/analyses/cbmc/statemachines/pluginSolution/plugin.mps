@@ -27,7 +27,7 @@
   <import index="tp4f" modelUID="r:00000000-0000-4000-0000-011c89590373(jetbrains.mps.baseLanguage.classifiers.structure)" version="0" implicit="yes" />
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="4799680529825274265" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="CbmcVerifyStatemachineAction" />
-    <property name="caption" nameId="tp4k.1205250923097" value="Check state-machine starting from the 'main' function" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Check state-machine (starting from 'main')" />
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="4799680529825274266" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="project" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="nx1.~CommonDataKeys%dPROJECT" resolveInfo="PROJECT" />
