@@ -524,10 +524,13 @@
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="4053481679314392319" nodeInfo="ngu" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="9055620077724012940" nodeInfo="igu">
-      <property name="name" nameId="tpck.1169194664001" value="currentOrder" />
+      <property name="name" nameId="tpck.1169194664001" value="currentOrderOfNondetExp" />
       <property name="isFinal" nameId="tpee.1176718929932" value="false" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="9055620077724012941" nodeInfo="nn" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="9055620077724012943" nodeInfo="in" />
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MethodLineDoc" typeId="hba4.6451706574539345403" id="7671737631437480411" nodeInfo="ng">
+        <property name="text" nameId="hba4.6451706574539345425" value="The order number of the current nondet expression." />
+      </node>
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="9055620077724008466" nodeInfo="ngu" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="4053481679314392320" nodeInfo="igu">
@@ -988,7 +991,7 @@
                   <property name="value" nameId="tpee.1068580320021" value="0" />
                 </node>
                 <node role="lValue" roleId="tpee.1068498886295" type="tpee.VariableReference" typeId="tpee.1068498886296" id="9055620077724030029" nodeInfo="nn">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9055620077724012940" resolveInfo="currentOrder" />
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9055620077724012940" resolveInfo="currentOrderOfNondetExp" />
                 </node>
               </node>
             </node>
@@ -1027,6 +1030,18 @@
                         <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="9055620077724001040" nodeInfo="in" />
                         <node role="initializer" roleId="tpee.1068431790190" type="tpee.VariableReference" typeId="tpee.1068498886296" id="9055620077724006123" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4053481679314392605" resolveInfo="j" />
+                        </node>
+                      </node>
+                    </node>
+                    <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7671737631437488315" nodeInfo="nn">
+                      <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7671737631437488313" nodeInfo="nr">
+                        <property name="isFinal" nameId="tpee.1176718929932" value="true" />
+                        <property name="name" nameId="tpck.1169194664001" value="currentOrder" />
+                        <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="7671737631437490855" nodeInfo="in" />
+                        <node role="initializer" roleId="tpee.1068431790190" type="tpee.PostfixIncrementExpression" typeId="tpee.1214918800624" id="7671737631437524754" nodeInfo="nn">
+                          <node role="expression" roleId="tpee.1239714902950" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7671737631437524756" nodeInfo="nn">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9055620077724012940" resolveInfo="currentOrderOfNondetExp" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -1069,10 +1084,8 @@
                                             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4629688722138455435" nodeInfo="nn">
                                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4053481679314392347" resolveInfo="decTab" />
                                             </node>
-                                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.PostfixIncrementExpression" typeId="tpee.1214918800624" id="4629688722138455436" nodeInfo="nn">
-                                              <node role="expression" roleId="tpee.1239714902950" type="tpee.VariableReference" typeId="tpee.1068498886296" id="9055620077724040550" nodeInfo="nn">
-                                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9055620077724012940" resolveInfo="currentOrder" />
-                                              </node>
+                                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7671737631437531490" nodeInfo="nn">
+                                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7671737631437488313" resolveInfo="currentOrder" />
                                             </node>
                                           </node>
                                         </node>
