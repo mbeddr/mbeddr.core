@@ -282,6 +282,21 @@
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="1291243701588722902" resolveInfo="signum" />
       <link role="decTabContainer" roleId="hj5x.4053481679317021365" targetNodeId="1291243701588722902" resolveInfo="signum" />
     </node>
+    <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.DecTabCBMCAnalysis" typeId="hj5x.4053481679317021364" id="7671737631436951990" nodeInfo="ng">
+      <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
+      <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="true" />
+      <property name="partialLoops" nameId="q5q6.786222485499368246" value="false" />
+      <property name="useRefinement" nameId="q5q6.923137795053030927" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="showUnwindingDepthInfo" nameId="q5q6.1015192564308444976" value="true" />
+      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="none" />
+      <property name="hasSpecifiedTimeout" nameId="q5q6.5889520553258812025" value="false" />
+      <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="none" />
+      <property name="timeoutForSingleAnalysis" nameId="q5q6.5889520553258614000" value="none" />
+      <property name="sliceFormula" nameId="q5q6.9134944440162076206" value="false" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="3904487267560743958" resolveInfo="twoDecTabs" />
+      <link role="decTabContainer" roleId="hj5x.4053481679317021365" targetNodeId="3904487267560743958" resolveInfo="twoDecTabs" />
+    </node>
     <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="1291243701589965298" nodeInfo="ng">
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1291243701588721704" resolveInfo="simple_dectabs" />
     </node>
