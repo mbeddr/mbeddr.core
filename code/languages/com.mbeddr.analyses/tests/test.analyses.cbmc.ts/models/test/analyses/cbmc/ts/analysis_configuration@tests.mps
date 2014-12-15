@@ -15,7 +15,11 @@
       <node role="nodeToCheck" roleId="tp5g.1216989461394" type="q46j.AnalysisConfiguration" typeId="q46j.6472990431939580591" id="5594952247539831647" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="AC" />
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="5594952247539831649" nodeInfo="ng">
-          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="5594952247539831650" nodeInfo="ng" />
+          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="4588874999150411355" nodeInfo="ng">
+            <node role="errorRef" roleId="tp5g.8489045168660938517" type="tp5g.ReportErrorStatementReference" typeId="tp5g.4531408400484511853" id="4588874999150411356" nodeInfo="ng">
+              <link role="declaration" roleId="tp5g.4531408400484511854" targetNodeId="6aju.5594952247539650700" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
