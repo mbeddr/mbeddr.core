@@ -1772,8 +1772,8 @@
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8450565023512198683" nodeInfo="in">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="tzyt.7671737631438116798" resolveInfo="CBMCAnalysisConfig.WORD_WIDTH" />
       </node>
-      <node role="initializer" roleId="tpee.1068431790190" type="tpee.EnumConstantReference" typeId="tpee.1083260308424" id="8450565023512251603" nodeInfo="nn">
-        <link role="enumConstantDeclaration" roleId="tpee.1083260308426" targetNodeId="tzyt.7671737631440493325" resolveInfo="W64" />
+      <node role="initializer" roleId="tpee.1068431790190" type="tpee.EnumConstantReference" typeId="tpee.1083260308424" id="7059814484145196029" nodeInfo="nn">
+        <link role="enumConstantDeclaration" roleId="tpee.1083260308426" targetNodeId="tzyt.7059814484145091120" resolveInfo="NONE" />
         <link role="enumClass" roleId="tpee.1144432896254" targetNodeId="tzyt.7671737631438116798" resolveInfo="CBMCAnalysisConfig.WORD_WIDTH" />
       </node>
     </node>

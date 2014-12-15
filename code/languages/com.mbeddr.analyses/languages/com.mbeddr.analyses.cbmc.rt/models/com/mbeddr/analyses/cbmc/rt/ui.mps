@@ -4706,6 +4706,10 @@
         </node>
       </node>
       <node role="initializer" roleId="tpee.1068431790190" type="tpee.ArrayLiteral" typeId="tpee.1188220165133" id="7671737631440113328" nodeInfo="nn">
+        <node role="item" roleId="tpee.1188220173759" type="tpee.EnumConstantReference" typeId="tpee.1083260308424" id="7059814484145278092" nodeInfo="nn">
+          <link role="enumConstantDeclaration" roleId="tpee.1083260308426" targetNodeId="tzyt.7059814484145091120" resolveInfo="NONE" />
+          <link role="enumClass" roleId="tpee.1144432896254" targetNodeId="tzyt.7671737631438116798" resolveInfo="CBMCAnalysisConfig.WORD_WIDTH" />
+        </node>
         <node role="item" roleId="tpee.1188220173759" type="tpee.EnumConstantReference" typeId="tpee.1083260308424" id="7671737631440810234" nodeInfo="nn">
           <link role="enumConstantDeclaration" roleId="tpee.1083260308426" targetNodeId="tzyt.7671737631440493325" resolveInfo="W64" />
           <link role="enumClass" roleId="tpee.1144432896254" targetNodeId="tzyt.7671737631438116798" resolveInfo="CBMCAnalysisConfig.WORD_WIDTH" />
