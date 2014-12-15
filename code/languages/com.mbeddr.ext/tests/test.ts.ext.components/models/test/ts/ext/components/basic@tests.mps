@@ -545,7 +545,7 @@
         </node>
         <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="4429602430543145342" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="def" />
-          <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4429602430543145344" nodeInfo="ng">
+          <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="574651508527794053" nodeInfo="ng">
             <property name="value" nameId="mj1l.2212975673976043696" value="0" />
           </node>
         </node>
