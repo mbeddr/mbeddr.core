@@ -1209,5 +1209,33 @@
       </node>
     </node>
   </root>
+  <root type="bj1v.Rule" typeId="bj1v.430844094082168520" id="574651508527798834" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="uninitializedread" />
+    <property name="name" nameId="tpck.1169194664001" value="GlobalConstantRefInitialization" />
+    <link role="analyzer" roleId="bj1v.4130591939054429248" targetNodeId="8632391654063314363" resolveInfo="UninitializedReadAnalyzer" />
+    <node role="condition" roleId="bj1v.3325264799421290838" type="bj1v.ConceptCondition" typeId="bj1v.4943044633101449694" id="574651508527799405" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="ref" />
+      <link role="concept" roleId="bj1v.4943044633101738901" targetNodeId="x27k.3788988821852026523" resolveInfo="GlobalConstantRef" />
+    </node>
+    <node role="actions" roleId="bj1v.4943044633101742986" type="tpee.StatementList" typeId="tpee.1068580123136" id="574651508527799437" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="bj1v.EmitInstruction" typeId="bj1v.4217760266503579796" id="574651508527799434" nodeInfo="nn">
+        <node role="instructionRef" roleId="bj1v.4217760266503650651" type="bj1v.InstructionReference" typeId="bj1v.4217760266503638748" id="574651508527799452" nodeInfo="ng">
+          <link role="instruction" roleId="bj1v.4217760266503638757" targetNodeId="8632391654063359389" resolveInfo="implicitInitialization" />
+          <node role="argument" roleId="bj1v.4217760266503638749" type="tpee.DotExpression" typeId="tpee.1197027756228" id="574651508527799714" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="bj1v.ApplicableNodeReference" typeId="bj1v.4943044633102057744" id="574651508527799477" nodeInfo="nn">
+              <link role="applicableNode" roleId="bj1v.4943044633102057745" targetNodeId="574651508527799405" resolveInfo="ref" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="574651508527802361" nodeInfo="nn">
+              <link role="link" roleId="tp25.1138056516764" targetNodeId="x27k.3376775282622611130" />
+            </node>
+          </node>
+        </node>
+        <node role="position" roleId="bj1v.24089196731087404" type="tp3t.InsertBeforePosition" typeId="tp3t.1649655856141352250" id="574651508527802529" nodeInfo="ng" />
+        <node role="target" roleId="bj1v.323410281720600578" type="bj1v.ApplicableNodeReference" typeId="bj1v.4943044633102057744" id="574651508527802534" nodeInfo="nn">
+          <link role="applicableNode" roleId="bj1v.4943044633102057745" targetNodeId="574651508527799405" resolveInfo="ref" />
+        </node>
+      </node>
+    </node>
+  </root>
 </model>
 
