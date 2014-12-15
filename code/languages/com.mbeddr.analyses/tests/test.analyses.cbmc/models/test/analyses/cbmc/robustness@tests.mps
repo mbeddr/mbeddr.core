@@ -722,25 +722,22 @@
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="c4fa.4185783222026475238" resolveInfo="LocalVariableDeclaration" />
             </node>
           </node>
-          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="8408742697210338325" nodeInfo="ng">
-            <property name="nodeKind" nameId="o23b.4791280061046124024" value="getchar_result" />
-            <property name="nodeValue" nameId="o23b.4791280061046139065" value="0" />
-            <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8408742697210338368" nodeInfo="in">
-              <link role="concept" roleId="tp25.1138405853777" targetNodeId="c4fa.7254843406768833938" resolveInfo="ExpressionStatement" />
-            </node>
-          </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046336108" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="input_var" />
             <property name="nodeValue" nameId="o23b.4791280061046139065" value="0" />
+            <property name="hasAlternativeSteps" nameId="o23b.5665549241468854500" value="true" />
+            <property name="alternativeSteps" nameId="o23b.5665549241468834974" value="3,4,5,6,7,8" />
             <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="4791280061046336109" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="c4fa.7254843406768833938" resolveInfo="ExpressionStatement" />
             </node>
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="4791280061046336114" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="FAIL" />
-            <property name="nodeValue" nameId="o23b.4791280061046139065" value="*" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="Division by Zero" />
+            <property name="hasAlternativeSteps" nameId="o23b.5665549241468854500" value="true" />
+            <property name="alternativeSteps" nameId="o23b.5665549241468834974" value="3,4,5,6,7,8" />
             <node role="node" roleId="o23b.4791280061046189368" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5100948292879529868" nodeInfo="in">
-              <link role="concept" roleId="tp25.1138405853777" targetNodeId="c4fa.2093108837558113914" resolveInfo="LocalVarRef" />
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="c4fa.7254843406768833938" resolveInfo="ExpressionStatement" />
             </node>
           </node>
           <node role="liftedResult" roleId="o23b.156369466847981785" type="tpee.VariableReference" typeId="tpee.1068498886296" id="156369466848736808" nodeInfo="nn">
