@@ -1758,7 +1758,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1401696083105_17" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1219198797543168895" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="client" />
+      <property name="name" nameId="tpck.1169194664001" value="entryPointComp5" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1219198797543168897" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="v7ag.InitializeConfiguration" typeId="v7ag.591155063063570513" id="1219198797543170054" nodeInfo="ng">
