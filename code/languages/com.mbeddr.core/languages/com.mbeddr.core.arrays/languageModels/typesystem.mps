@@ -5096,16 +5096,29 @@
             </node>
           </node>
         </node>
-        <node role="condition" roleId="tpee.1068580123160" type="tpee.NotExpression" typeId="tpee.1081516740877" id="2780428631945165933" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1081516765348" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2780428631945361606" nodeInfo="nn">
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="bt5b.2780428631945314228" resolveInfo="canUseReferenceOperator" />
-            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="bt5b.2780428631945314105" resolveInfo="PointerOperatorsUtils" />
-            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2780428631945362016" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2780428631945361640" nodeInfo="nn">
+        <node role="condition" roleId="tpee.1068580123160" type="tpee.AndExpression" typeId="tpee.1080120340718" id="8594403343813574848" nodeInfo="nn">
+          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="8594403343813640712" nodeInfo="nn">
+            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="8594403343813640828" nodeInfo="nn" />
+            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8594403343813584715" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="8594403343813584321" nodeInfo="nn">
                 <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="8297969787987802281" resolveInfo="referenceExpr" />
               </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2780428631945365855" nodeInfo="nn">
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8594403343813638937" nodeInfo="nn">
                 <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.7254843406768839760" />
+              </node>
+            </node>
+          </node>
+          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NotExpression" typeId="tpee.1081516740877" id="2780428631945165933" nodeInfo="nn">
+            <node role="expression" roleId="tpee.1081516765348" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2780428631945361606" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="bt5b.2780428631945314228" resolveInfo="canUseReferenceOperator" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="bt5b.2780428631945314105" resolveInfo="PointerOperatorsUtils" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2780428631945362016" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2780428631945361640" nodeInfo="nn">
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="8297969787987802281" resolveInfo="referenceExpr" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2780428631945365855" nodeInfo="nn">
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1l.7254843406768839760" />
+                </node>
               </node>
             </node>
           </node>

@@ -1233,8 +1233,68 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="3120969404906987982" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1406700138034_2" />
     </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="3904487267561202801" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="enumIsNotStronglyTyped" />
+      <property name="extern" nameId="x27k.6708182213627045681" value="false" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3904487267561202802" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.Assert" typeId="q5q6.6973658835837826905" id="3904487267561202806" nodeInfo="ng">
+          <node role="exp" roleId="q5q6.6973658835837826906" type="mj1l.NotEqualsExpression" typeId="mj1l.7615572890648529894" id="3904487267561202807" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3904487267561202808" nodeInfo="ng">
+              <property name="value" nameId="mj1l.2212975673976043696" value="11" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.CastExpression" typeId="mj1l.6610873504380029780" id="3904487267561202809" nodeInfo="ng">
+              <node role="expr" roleId="mj1l.6610873504380029782" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="3904487267561207359" nodeInfo="ng">
+                <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="3904487267561202813" resolveInfo="e" />
+              </node>
+              <node role="targetType" roleId="mj1l.6610873504380029790" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="3904487267561202811" nodeInfo="ng">
+                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3904487267561202812" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="3904487267561202813" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="e" />
+        <node role="type" roleId="mj1l.318113533128716676" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="3904487267561202814" nodeInfo="ng">
+          <link role="enum" roleId="clbe.8811614583515725894" targetNodeId="6004315309919804236" resolveInfo="AN_ENUM" />
+        </node>
+      </node>
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2669954551538172272" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1347023250327_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="3904487267561209635" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="enumIsNotStronglyTypedCall" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3904487267561209637" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3904487267561483341" nodeInfo="ng">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3904487267561483343" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3904487267561483344" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3904487267561483345" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="this is a valid call at C level - since enums are not strongly typed" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3904487267561210190" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="3904487267561210188" nodeInfo="ng">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="3904487267561202801" resolveInfo="enumIsNotStronglyTyped" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3904487267561354579" nodeInfo="ng">
+              <property name="value" nameId="mj1l.2212975673976043696" value="11" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="3904487267561208768" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="2669954551538171772" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1387037608932_1" />

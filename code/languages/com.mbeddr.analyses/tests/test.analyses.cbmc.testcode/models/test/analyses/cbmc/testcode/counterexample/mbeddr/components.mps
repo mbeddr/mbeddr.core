@@ -1487,7 +1487,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1401720091205_2" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1219198797543086450" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="entry" />
+      <property name="name" nameId="tpck.1169194664001" value="entryPointComp4" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1219198797543086452" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="v7ag.InitializeConfiguration" typeId="v7ag.591155063063570513" id="1219198797543088859" nodeInfo="ng">
@@ -1526,6 +1526,9 @@
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1219198797543141078" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Comp5" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8455119001799752936" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1418654042131_1" />
+    </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="1219198797543150021" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="ml" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
@@ -1637,8 +1640,8 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
         <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="1219198797543147044" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmAnyState" typeId="v7ag.6209278014151449959" id="1219198797543174432" nodeInfo="ng" />
           <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmInitState" typeId="v7ag.6209278014151449953" id="1219198797543147058" nodeInfo="ng" />
+          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmAnyState" typeId="v7ag.6209278014151449959" id="8455119001799730055" nodeInfo="ng" />
         </node>
       </node>
     </node>
@@ -1736,6 +1739,15 @@
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
       </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8455119001799760579" nodeInfo="ng">
+        <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8455119001799760580" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8455119001799760581" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8455119001799760582" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="- init calls\n- interface with pre/post implementation" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="1219198797543147060" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1401695714770_11" />
@@ -1758,7 +1770,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1401696083105_17" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="1219198797543168895" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="client" />
+      <property name="name" nameId="tpck.1169194664001" value="entryPointComp5" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="1219198797543168897" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="v7ag.InitializeConfiguration" typeId="v7ag.591155063063570513" id="1219198797543170054" nodeInfo="ng">
@@ -1783,6 +1795,9 @@
               <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="1219198797543165467" resolveInfo="fstream" />
             </node>
           </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.Assert" typeId="q5q6.6973658835837826905" id="8455119001799590892" nodeInfo="ng">
+          <node role="exp" roleId="q5q6.6973658835837826906" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="8455119001799590913" nodeInfo="ng" />
         </node>
       </node>
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="1219198797543167720" nodeInfo="ng">
@@ -1984,7 +1999,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1343897023445_11" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="6656616888322350658" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="clientComp6" />
+      <property name="name" nameId="tpck.1169194664001" value="entryPointComp6" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6656616888322350659" nodeInfo="ng">
         <node role="statements" roleId="c4fa.4185783222026475862" type="v7ag.InitializeConfiguration" typeId="v7ag.591155063063570513" id="6656616888322350660" nodeInfo="ng">

@@ -234,7 +234,7 @@
   </root>
   <root type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="4053481679314419699" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="CbmcVerifyDecisionTableAction" />
-    <property name="caption" nameId="tp4k.1205250923097" value="Verify decision table (starting from main)" />
+    <property name="caption" nameId="tp4k.1205250923097" value="Verify decision table (starting from 'main')" />
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="4053481679314419700" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="project" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="nx1.~CommonDataKeys%dPROJECT" resolveInfo="PROJECT" />
