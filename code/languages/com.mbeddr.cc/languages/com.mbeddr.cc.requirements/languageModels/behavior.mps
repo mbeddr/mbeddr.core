@@ -7931,9 +7931,7 @@
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="7750719112885623697" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="requirementsKind" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7750719112886463893" nodeInfo="in">
-          <link role="concept" roleId="tp25.1138405853777" targetNodeId="75wo.8921256082857728247" resolveInfo="RequirementsKind" />
-        </node>
+        <node role="type" roleId="tpee.5680397130376446158" type="tp25.SConceptType" typeId="tp25.1172420572800" id="1432421021330749273" nodeInfo="in" />
       </node>
     </node>
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="7750719112885679067" nodeInfo="ng">
