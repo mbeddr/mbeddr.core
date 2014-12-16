@@ -56,6 +56,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1430983428341687598" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.5095889050031055796" resolveInfo="IContainerOfUniqueNames" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6088504579991415884" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6088504579991348354" resolveInfo="IComponentIDAware" />
+    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6041318036221669720" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="contents" />
@@ -318,6 +321,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6088504579989534161" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6088504579989317749" resolveInfo="IComponentInstanceAware" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6088504579991348454" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6088504579991348354" resolveInfo="IComponentIDAware" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845641673" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.runnable" />
@@ -521,6 +527,9 @@
     </node>
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8515777736166913819" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229556133800" resolveInfo="ICommentable" />
+    </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6088504579995433832" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6088504579991348354" resolveInfo="IComponentIDAware" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8105003328815039001" nodeInfo="ig">
@@ -1622,6 +1631,9 @@
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6088504579989317749" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="comp.instances" />
     <property name="name" nameId="tpck.1169194664001" value="IComponentInstanceAware" />
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6088504579991348354" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="IComponentIDAware" />
   </root>
 </model>
 
