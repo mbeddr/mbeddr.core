@@ -73,5 +73,26 @@
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5892636569029424449" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="GSwitchExpressionCheckAttribute" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="5892636569029424465" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="checked" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="5892636569029424469" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="k146.6209595569797561318" resolveInfo="GSwitchExpression" />
+      </node>
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8697457845339756478" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="configuration.cbmc" />
+    <property name="name" nameId="tpck.1169194664001" value="GSwitchAnalysis" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="GSwitch Expression Completeness Analysis" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="q5q6.8780453576634979155" resolveInfo="CProverBasedMbeddrAnalysis" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8697457845339756479" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="gswitchContainer" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="x27k.8105003328814797298" resolveInfo="IFunctionLike" />
+    </node>
+  </root>
 </model>
 
