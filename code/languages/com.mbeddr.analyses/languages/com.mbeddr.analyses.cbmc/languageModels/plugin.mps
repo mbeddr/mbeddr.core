@@ -43,5 +43,11 @@
       </node>
     </node>
   </root>
+  <root type="v54s.ExtensionPointDeclaration" typeId="v54s.3729007189729192406" id="5892636569024714761" nodeInfo="ng">
+    <property name="extensionName" nameId="v54s.5911785528834333590" value="FailuresLifterProvider" />
+    <node role="objectType" roleId="v54s.8029776554053057803" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5892636569024766619" nodeInfo="in">
+      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8ear.8408742697213586631" resolveInfo="CounterexampleLifterBase" />
+    </node>
+  </root>
 </model>
 
