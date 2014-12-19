@@ -13,6 +13,7 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="ua2a" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.typesystem.inference(MPS.Core/jetbrains.mps.typesystem.inference@java_stub)" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -229,6 +230,7 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -1791,8 +1793,8 @@
                       </node>
                       <node concept="3NT_Vc" id="7XSydr9IXv" role="2OqNvi" />
                     </node>
-                    <node concept="3TrcHB" id="7XSydr9Kz$" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpck:gOOYy9I" resolve="alias" />
+                    <node concept="3TrcHB" id="7XIXMBMYN22" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpce:4qF2Hm2r7ja" resolve="conceptAlias" />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="7XSydr9Hm$" role="3uHU7B">
@@ -1824,7 +1826,7 @@
                         <node concept="1YBJjd" id="7XSydr9Cc$" role="2Oq$k0">
                           <ref role="1YBMHb" node="7XSydr9rRn" resolve="c" />
                         </node>
-                        <node concept="3NT_Vc" id="7XSydr9D5b" role="2OqNvi" />
+                        <node concept="2yIwOk" id="7XIXMBMYMeU" role="2OqNvi" />
                       </node>
                     </node>
                   </node>
