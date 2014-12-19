@@ -675,7 +675,7 @@
                           <node concept="3clFbF" id="5Qe0B1Kysvw" role="3cqZAp">
                             <node concept="2OqwBi" id="5Qe0B1KytAz" role="3clFbG">
                               <node concept="liA8E" id="5Qe0B1KyuW2" role="2OqNvi">
-                                <ref role="37wK5l" to="88zw:~ModelAccess.runWriteAction(java.lang.Runnable):void" resolve="runWriteAction" />
+                                <ref role="37wK5l" to="88zw:~ModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
                                 <node concept="2ShNRf" id="1m7X3OEDIJ$" role="37wK5m">
                                   <node concept="YeOm9" id="1m7X3OEDJaW" role="2ShVmc">
                                     <node concept="1Y3b0j" id="1m7X3OEDJaZ" role="YeSDq">
