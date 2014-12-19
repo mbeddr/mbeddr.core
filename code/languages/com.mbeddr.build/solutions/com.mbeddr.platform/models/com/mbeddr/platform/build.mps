@@ -1395,6 +1395,12 @@
         <node concept="1E0d5M" id="tZiUABOeue" role="1E1XAP">
           <ref role="1E0d5P" node="5IpIYYkrzsE" resolve="com.mbeddr.mpsutil.refactoring.rt" />
         </node>
+        <node concept="1SiIV0" id="2axASQ$5Fk2" role="3bR37C">
+          <node concept="3bR9La" id="2axASQ$5Fk3" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="5IpIYYkrzsE" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -5800,6 +5806,12 @@
           <property role="TrG5h" value="com.mbeddr.mpsutil.uniquenames#135300383108724098" />
           <property role="3LESm3" value="c580df0e-8eef-4422-97d2-4fffc42fb9b7" />
           <property role="2GAjPV" value="false" />
+        </node>
+        <node concept="1SiIV0" id="2axASQ$5HFn" role="3bR37C">
+          <node concept="3bR9La" id="2axASQ$5HFo" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
+          </node>
         </node>
       </node>
     </node>

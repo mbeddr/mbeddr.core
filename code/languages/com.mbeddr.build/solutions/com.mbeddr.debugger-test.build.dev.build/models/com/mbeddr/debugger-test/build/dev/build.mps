@@ -775,12 +775,6 @@
               <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
             </node>
           </node>
-          <node concept="1SiIV0" id="29so9VbJ8UR" role="3bR37C">
-            <node concept="3bR9La" id="29so9VbJ8US" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg$" resolve="jetbrains.mps.traceInfo" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="29so9VbJ8UT" role="3bR37C">
             <node concept="3bR9La" id="29so9VbJ8UU" role="1SiIV1">
               <property role="3bR36h" value="false" />

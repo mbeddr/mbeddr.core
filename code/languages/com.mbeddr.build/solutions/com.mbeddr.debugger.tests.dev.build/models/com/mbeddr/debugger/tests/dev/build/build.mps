@@ -486,12 +486,6 @@
             <ref role="3bR37D" to="ffeo:7gdoTYdo$et" resolve="jetbrains.mps.debugger.api.api" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7eF9rfAuv5q" role="3bR37C">
-          <node concept="3bR9La" id="7eF9rfAuv5r" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg$" resolve="jetbrains.mps.traceInfo" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="7eF9rfAuv5s" role="3bR37C">
           <node concept="3bR9La" id="7eF9rfAuv5t" role="1SiIV1">
             <property role="3bR36h" value="false" />
