@@ -1,76 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:1a049e14-8968-4d30-aa40-26e8cf9127df(test.lang.hierchicalstructure.behavior)">
-  <persistence version="8" />
-  <language namespace="af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)" />
-  <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="14" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
-  <import index="1i04" modelUID="r:3270011d-8b2d-4938-8dff-d256a759e017(jetbrains.mps.lang.behavior.structure)" version="-1" implicit="yes" />
-  <import index="nm5n" modelUID="r:efe730f6-11b1-4178-b6ef-cb812b43cfe4(test.lang.hierchicalstructure.structure)" version="-1" implicit="yes" />
-  <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="1609581366353555272" nodeInfo="ng">
-    <link role="concept" roleId="1i04.1225194240799" targetNodeId="nm5n.1609581366353531325" resolveInfo="TestHierarchicalStructureHidden" />
-    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="1609581366353555273" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1609581366353555274" nodeInfo="sn" />
+<model ref="r:1a049e14-8968-4d30-aa40-26e8cf9127df(test.lang.hierchicalstructure.behavior)">
+  <persistence version="9" />
+  <languages>
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+  </languages>
+  <imports>
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="nm5n" ref="r:efe730f6-11b1-4178-b6ef-cb812b43cfe4(test.lang.hierchicalstructure.structure)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
+        <reference id="1225194240799" name="concept" index="13h7C2" />
+        <child id="1225194240805" name="method" index="13h7CS" />
+        <child id="1225194240801" name="constructor" index="13h7CW" />
+      </concept>
+      <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
+      <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
+        <property id="1225194472832" name="isVirtual" index="13i0it" />
+        <property id="1225194472834" name="isAbstract" index="13i0iv" />
+        <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
+      </concept>
+    </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
+        <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123135" name="body" index="3clF47" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+        <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="13h7C7" id="1pmorAa_QX8">
+    <ref role="13h7C2" to="nm5n:1pmorAa_L6X" resolve="TestHierarchicalStructureHidden" />
+    <node concept="13hLZK" id="1pmorAa_QX9" role="13h7CW">
+      <node concept="3clFbS" id="1pmorAa_QXa" role="2VODD2" />
     </node>
-    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="1609581366353555275" nodeInfo="ng">
-      <property name="isAbstract" nameId="1i04.1225194472834" value="false" />
-      <property name="isVirtual" nameId="1i04.1225194472832" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="showInHierchicalStructure" />
-      <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="hwgx.1609581366351475188" resolveInfo="showInHierchicalStructure" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="1609581366353555276" nodeInfo="nn" />
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="1609581366353555281" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1609581366353555390" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="1609581366353555389" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="false" />
+    <node concept="13i0hz" id="1pmorAa_QXb" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="showInHierchicalStructure" />
+      <ref role="13i0hy" to="hwgx:1pmorAatV7O" resolve="showInHierchicalStructure" />
+      <node concept="3Tm1VV" id="1pmorAa_QXc" role="1B3o_S" />
+      <node concept="3clFbS" id="1pmorAa_QXh" role="3clF47">
+        <node concept="3clFbF" id="1pmorAa_QYY" role="3cqZAp">
+          <node concept="3clFbT" id="1pmorAa_QYX" role="3clFbG">
+            <property role="3clFbU" value="false" />
           </node>
         </node>
       </node>
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="1609581366353555282" nodeInfo="in" />
+      <node concept="10P_77" id="1pmorAa_QXi" role="3clF45" />
     </node>
-  </root>
-  <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4116723029815409433" nodeInfo="ng">
-    <link role="concept" roleId="1i04.1225194240799" targetNodeId="nm5n.1609581366353528130" resolveInfo="TestHierarchicalStructureWithIcon" />
-    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="4116723029815409434" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4116723029815409435" nodeInfo="sn" />
+  </node>
+  <node concept="13h7C7" id="3$xysz6OjGp">
+    <ref role="13h7C2" to="nm5n:1pmorAa_Kl2" resolve="TestHierarchicalStructureWithIcon" />
+    <node concept="13hLZK" id="3$xysz6OjGq" role="13h7CW">
+      <node concept="3clFbS" id="3$xysz6OjGr" role="2VODD2" />
     </node>
-    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="4116723029815409436" nodeInfo="ng">
-      <property name="isAbstract" nameId="1i04.1225194472834" value="false" />
-      <property name="isVirtual" nameId="1i04.1225194472832" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="showInHierchicalStructure" />
-      <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="hwgx.1609581366351475188" resolveInfo="showInHierchicalStructure" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4116723029815409437" nodeInfo="nn" />
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4116723029815409442" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4116723029815409613" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="4116723029815409612" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="true" />
+    <node concept="13i0hz" id="3$xysz6OjGs" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="showInHierchicalStructure" />
+      <ref role="13i0hy" to="hwgx:1pmorAatV7O" resolve="showInHierchicalStructure" />
+      <node concept="3Tm1VV" id="3$xysz6OjGt" role="1B3o_S" />
+      <node concept="3clFbS" id="3$xysz6OjGy" role="3clF47">
+        <node concept="3clFbF" id="3$xysz6OjJd" role="3cqZAp">
+          <node concept="3clFbT" id="3$xysz6OjJc" role="3clFbG">
+            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4116723029815409443" nodeInfo="in" />
+      <node concept="10P_77" id="3$xysz6OjGz" role="3clF45" />
     </node>
-  </root>
-  <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4116723029815421353" nodeInfo="ng">
-    <link role="concept" roleId="1i04.1225194240799" targetNodeId="nm5n.1609581366353531284" resolveInfo="TestHierarchicalStructureWithoutIcon" />
-    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="4116723029815421374" nodeInfo="ng">
-      <property name="isAbstract" nameId="1i04.1225194472834" value="false" />
-      <property name="isVirtual" nameId="1i04.1225194472832" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="showInHierchicalStructure" />
-      <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="hwgx.1609581366351475188" resolveInfo="showInHierchicalStructure" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4116723029815421375" nodeInfo="nn" />
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4116723029815421376" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4116723029815421377" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="4116723029815421378" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="true" />
+  </node>
+  <node concept="13h7C7" id="3$xysz6OmAD">
+    <ref role="13h7C2" to="nm5n:1pmorAa_L6k" resolve="TestHierarchicalStructureWithoutIcon" />
+    <node concept="13i0hz" id="3$xysz6OmAY" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="showInHierchicalStructure" />
+      <ref role="13i0hy" to="hwgx:1pmorAatV7O" resolve="showInHierchicalStructure" />
+      <node concept="3Tm1VV" id="3$xysz6OmAZ" role="1B3o_S" />
+      <node concept="3clFbS" id="3$xysz6OmB0" role="3clF47">
+        <node concept="3clFbF" id="3$xysz6OmB1" role="3cqZAp">
+          <node concept="3clFbT" id="3$xysz6OmB2" role="3clFbG">
+            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4116723029815421379" nodeInfo="in" />
+      <node concept="10P_77" id="3$xysz6OmB3" role="3clF45" />
     </node>
-    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="4116723029815421354" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4116723029815421355" nodeInfo="sn" />
+    <node concept="13hLZK" id="3$xysz6OmAE" role="13h7CW">
+      <node concept="3clFbS" id="3$xysz6OmAF" role="2VODD2" />
     </node>
-  </root>
+  </node>
 </model>
 

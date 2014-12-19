@@ -1,36 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:0b1fc0f2-af3d-4e30-9c8f-29996ba66152(com.mbeddr.core.statements.pluginSolution.plugin)">
-  <persistence version="8" />
-  <language namespace="1fc20ffe-f35b-4791-a0b7-d706bad5c49a(com.mbeddr.mpsutil.refactoring)" />
-  <language namespace="28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)" />
-  <language namespace="ef7bf5ac-d06c-4342-b11d-e42104eb9343(jetbrains.mps.lang.plugin.standalone)" />
-  <import index="3wza" modelUID="r:a9905b71-2008-43fe-aad2-87e6170f8cdf(com.mbeddr.core.statements.refactorings)" version="-1" />
-  <import index="tgbt" modelUID="r:c70ee934-afb1-4c02-b6a9-1c4d1908a792(jetbrains.mps.lang.plugin.standalone.structure)" version="1" implicit="yes" />
-  <import index="tp4k" modelUID="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" version="35" implicit="yes" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="4w5v" modelUID="r:18d75373-a465-46d0-9749-aacc22a947bc(com.mbeddr.mpsutil.refactoring.structure)" version="-1" implicit="yes" />
-  <root type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="412995133202385093" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Introduce Local Variable" />
-    <link role="refactoring" roleId="4w5v.7518061998923573138" targetNodeId="3wza.1582169519237927131" resolveInfo="introduceLocalVariable" />
-    <node role="parameters" roleId="4w5v.7518061998923573158" type="4w5v.RefactoringParameter" typeId="4w5v.7518061998923573140" id="412995133202385095" nodeInfo="ng">
-      <link role="param" roleId="4w5v.7518061998923573141" targetNodeId="3wza.1582169519237927155" resolveInfo="varName" />
-      <node role="chooser" roleId="4w5v.7518061998923573142" type="4w5v.StringChooser" typeId="4w5v.7518061998923713757" id="412995133202385098" nodeInfo="ng">
-        <property name="title" nameId="4w5v.7518061998923720371" value="Variable Name" />
+<model ref="r:0b1fc0f2-af3d-4e30-9c8f-29996ba66152(com.mbeddr.core.statements.pluginSolution.plugin)">
+  <persistence version="9" />
+  <languages>
+    <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
+  </languages>
+  <imports>
+    <import index="3wza" ref="r:a9905b71-2008-43fe-aad2-87e6170f8cdf(com.mbeddr.core.statements.refactorings)" />
+  </imports>
+  <registry>
+    <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="1207318242772" name="jetbrains.mps.lang.plugin.structure.KeyMapKeystroke" flags="ng" index="pLAjd">
+        <property id="1207318242773" name="modifiers" index="pLAjc" />
+        <property id="1207318242774" name="keycode" index="pLAjf" />
+      </concept>
+    </language>
+    <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
+      <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring">
+      <concept id="7518061998923713757" name="com.mbeddr.mpsutil.refactoring.structure.StringChooser" flags="ng" index="1loS_j" />
+      <concept id="7518061998923713755" name="com.mbeddr.mpsutil.refactoring.structure.Chooser" flags="ng" index="1loS_l">
+        <property id="7518061998923720371" name="title" index="1loUcX" />
+      </concept>
+      <concept id="7518061998923573140" name="com.mbeddr.mpsutil.refactoring.structure.RefactoringParameter" flags="ng" index="1lpA8q">
+        <reference id="7518061998923573141" name="param" index="1lpA8r" />
+        <child id="7518061998923573142" name="chooser" index="1lpA8o" />
+      </concept>
+      <concept id="7518061998923573137" name="com.mbeddr.mpsutil.refactoring.structure.RefactoringAction" flags="ng" index="1lpA8v">
+        <reference id="7518061998923573138" name="refactoring" index="1lpA8s" />
+        <child id="7518061998923573139" name="shortcut" index="1lpA8t" />
+        <child id="7518061998923573158" name="parameters" index="1lpA8C" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1lpA8v" id="mVgeaKv$z5">
+    <property role="TrG5h" value="Introduce Local Variable" />
+    <ref role="1lpA8s" to="3wza:1nOZGI8C93r" resolve="introduceLocalVariable" />
+    <node concept="1lpA8q" id="mVgeaKv$z7" role="1lpA8C">
+      <ref role="1lpA8r" to="3wza:1nOZGI8C93N" resolve="varName" />
+      <node concept="1loS_j" id="mVgeaKv$za" role="1lpA8o">
+        <property role="1loUcX" value="Variable Name" />
       </node>
     </node>
-    <node role="shortcut" roleId="4w5v.7518061998923573139" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="412995133202385099" nodeInfo="ng">
-      <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
-      <property name="keycode" nameId="tp4k.1207318242774" value="VK_V" />
+    <node concept="pLAjd" id="mVgeaKv$zb" role="1lpA8t">
+      <property role="pLAjc" value="ctrl+alt" />
+      <property role="pLAjf" value="VK_V" />
     </node>
-  </root>
-  <root type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="412995133202385094" nodeInfo="ng" />
-  <root type="4w5v.RefactoringAction" typeId="4w5v.7518061998923573137" id="6568414116582508109" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Inline Local Variable" />
-    <link role="refactoring" roleId="4w5v.7518061998923573138" targetNodeId="3wza.6568414116582507559" resolveInfo="inlineLocalVariable" />
-    <node role="shortcut" roleId="4w5v.7518061998923573139" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="6568414116582508112" nodeInfo="ng">
-      <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
-      <property name="keycode" nameId="tp4k.1207318242774" value="VK_I" />
+  </node>
+  <node concept="2DaZZR" id="mVgeaKv$z6" />
+  <node concept="1lpA8v" id="5GBGtqczWpd">
+    <property role="TrG5h" value="Inline Local Variable" />
+    <ref role="1lpA8s" to="3wza:5GBGtqczWgB" resolve="inlineLocalVariable" />
+    <node concept="pLAjd" id="5GBGtqczWpg" role="1lpA8t">
+      <property role="pLAjc" value="ctrl+alt" />
+      <property role="pLAjf" value="VK_I" />
     </node>
-  </root>
+  </node>
 </model>
 

@@ -1,484 +1,503 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:01121b77-9ee1-4d1d-b176-2bf33a697c8b(test.lang.hierchicalstructure.sandbox)">
-  <persistence version="8" />
-  <language namespace="818a6981-aa97-4390-8f39-1c98ce66bd6c(test.lang.hierchicalstructure)" />
-  <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
-  <language namespace="a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="nm5n" modelUID="r:efe730f6-11b1-4178-b6ef-cb812b43cfe4(test.lang.hierchicalstructure.structure)" version="-1" implicit="yes" />
-  <root type="nm5n.TestHierarchicalStructureRoot" typeId="nm5n.1609581366353528038" id="1609581366353670164" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="My Test Root With Icons" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="1609581366353670388" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353670393" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353670399" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+<model ref="r:01121b77-9ee1-4d1d-b176-2bf33a697c8b(test.lang.hierchicalstructure.sandbox)">
+  <persistence version="9" />
+  <languages>
+    <use id="818a6981-aa97-4390-8f39-1c98ce66bd6c" name="test.lang.hierchicalstructure" version="-1" />
+    <use id="a482b416-d0c9-473f-8f67-725ed642b3f3" name="com.mbeddr.mpsutil.breadcrumb" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+  </languages>
+  <imports />
+  <registry>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="818a6981-aa97-4390-8f39-1c98ce66bd6c" name="test.lang.hierchicalstructure">
+      <concept id="1609581366353555709" name="test.lang.hierchicalstructure.structure.TestHierarchicalStructureRootWithoutIcons" flags="ng" index="2sKh54" />
+      <concept id="1609581366353528130" name="test.lang.hierchicalstructure.structure.TestHierarchicalStructureWithIcon" flags="ng" index="2sKmjV" />
+      <concept id="1609581366353528038" name="test.lang.hierchicalstructure.structure.TestHierarchicalStructureRoot" flags="ng" index="2sKmlv">
+        <child id="1609581366353531466" name="hierarchicalChildren" index="2sKnfN" />
+      </concept>
+      <concept id="1609581366353531325" name="test.lang.hierchicalstructure.structure.TestHierarchicalStructureHidden" flags="ng" index="2sKn04">
+        <child id="1609581366353531631" name="hierarchicalChildren" index="2sKndm" />
+      </concept>
+      <concept id="1609581366353531284" name="test.lang.hierchicalstructure.structure.TestHierarchicalStructureWithoutIcon" flags="ng" index="2sKn0H" />
+    </language>
+  </registry>
+  <node concept="2sKmlv" id="1pmorAaAj0k">
+    <property role="TrG5h" value="My Test Root With Icons" />
+    <node concept="2sKn04" id="1pmorAaAj3O" role="2sKnfN" />
+    <node concept="2sKmjV" id="1pmorAaAj3T" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="1pmorAaAj3Z" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="1609581366353670407" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="1pmorAaAj47" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353670419" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="1pmorAaAj4j" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="1609581366353723994" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723992" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723993" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="1pmorAaAw9q" role="2sKnfN" />
+    <node concept="2sKmjV" id="1pmorAaAw9o" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="1pmorAaAw9p" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="1609581366353723991" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="1609581366353724085" nodeInfo="ng" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353724086" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="a" />
-        <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353724087" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="b" />
-          <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="1609581366353724110" nodeInfo="ng" />
-          <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353724111" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="a" />
-            <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353724112" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn0H" id="1pmorAaAw9n" role="2sKnfN">
+      <property role="TrG5h" value="c" />
+      <node concept="2sKn04" id="1pmorAaAwaP" role="2sKndm" />
+      <node concept="2sKmjV" id="1pmorAaAwaQ" role="2sKndm">
+        <property role="TrG5h" value="a" />
+        <node concept="2sKmjV" id="1pmorAaAwaR" role="2sKndm">
+          <property role="TrG5h" value="b" />
+          <node concept="2sKn04" id="1pmorAaAwbe" role="2sKndm" />
+          <node concept="2sKmjV" id="1pmorAaAwbf" role="2sKndm">
+            <property role="TrG5h" value="a" />
+            <node concept="2sKmjV" id="1pmorAaAwbg" role="2sKndm">
+              <property role="TrG5h" value="b" />
             </node>
           </node>
-          <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="1609581366353724113" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="c" />
+          <node concept="2sKn0H" id="1pmorAaAwbh" role="2sKndm">
+            <property role="TrG5h" value="c" />
           </node>
-          <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353724114" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="b" />
-            <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="1609581366353724135" nodeInfo="ng" />
-            <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353724136" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="a" />
-              <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353724137" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="b" />
-                <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="1609581366353724160" nodeInfo="ng" />
-                <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353724161" nodeInfo="ng">
-                  <property name="name" nameId="tpck.1169194664001" value="a" />
-                  <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353724162" nodeInfo="ng">
-                    <property name="name" nameId="tpck.1169194664001" value="b" />
+          <node concept="2sKmjV" id="1pmorAaAwbi" role="2sKndm">
+            <property role="TrG5h" value="b" />
+            <node concept="2sKn04" id="1pmorAaAwbB" role="2sKndm" />
+            <node concept="2sKmjV" id="1pmorAaAwbC" role="2sKndm">
+              <property role="TrG5h" value="a" />
+              <node concept="2sKmjV" id="1pmorAaAwbD" role="2sKndm">
+                <property role="TrG5h" value="b" />
+                <node concept="2sKn04" id="1pmorAaAwc0" role="2sKndm" />
+                <node concept="2sKmjV" id="1pmorAaAwc1" role="2sKndm">
+                  <property role="TrG5h" value="a" />
+                  <node concept="2sKmjV" id="1pmorAaAwc2" role="2sKndm">
+                    <property role="TrG5h" value="b" />
                   </node>
                 </node>
-                <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="1609581366353724163" nodeInfo="ng">
-                  <property name="name" nameId="tpck.1169194664001" value="c" />
+                <node concept="2sKn0H" id="1pmorAaAwc3" role="2sKndm">
+                  <property role="TrG5h" value="c" />
                 </node>
-                <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353724164" nodeInfo="ng">
-                  <property name="name" nameId="tpck.1169194664001" value="b" />
+                <node concept="2sKmjV" id="1pmorAaAwc4" role="2sKndm">
+                  <property role="TrG5h" value="b" />
                 </node>
               </node>
             </node>
-            <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="1609581366353724138" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="c" />
+            <node concept="2sKn0H" id="1pmorAaAwbE" role="2sKndm">
+              <property role="TrG5h" value="c" />
             </node>
-            <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353724139" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="b" />
+            <node concept="2sKmjV" id="1pmorAaAwbF" role="2sKndm">
+              <property role="TrG5h" value="b" />
             </node>
           </node>
         </node>
       </node>
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="1609581366353724088" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="c" />
+      <node concept="2sKn0H" id="1pmorAaAwaS" role="2sKndm">
+        <property role="TrG5h" value="c" />
       </node>
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353724089" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
-      </node>
-    </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723990" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
-    </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="1609581366353723924" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723922" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723923" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+      <node concept="2sKmjV" id="1pmorAaAwaT" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="1609581366353723921" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKmjV" id="1pmorAaAw9m" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723920" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
-    </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="1609581366353723859" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723857" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723858" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="1pmorAaAw8k" role="2sKnfN" />
+    <node concept="2sKmjV" id="1pmorAaAw8i" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="1pmorAaAw8j" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="1609581366353723856" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="1pmorAaAw8h" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723855" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="1pmorAaAw8g" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="1609581366353723799" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723797" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723798" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="1pmorAaAw7j" role="2sKnfN" />
+    <node concept="2sKmjV" id="1pmorAaAw7h" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="1pmorAaAw7i" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="1609581366353723796" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="1pmorAaAw7g" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723795" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="1pmorAaAw7f" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="1609581366353723744" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723742" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723743" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="1pmorAaAw6n" role="2sKnfN" />
+    <node concept="2sKmjV" id="1pmorAaAw6l" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="1pmorAaAw6m" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="1609581366353723741" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="1pmorAaAw6k" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723740" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="1pmorAaAw6j" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="1609581366353723694" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723692" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723693" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="1pmorAaAw5w" role="2sKnfN" />
+    <node concept="2sKmjV" id="1pmorAaAw5u" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="1pmorAaAw5v" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="1609581366353723691" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="1pmorAaAw5t" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723690" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="1pmorAaAw5s" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="1609581366353723649" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723647" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723648" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="1pmorAaAw4I" role="2sKnfN" />
+    <node concept="2sKmjV" id="1pmorAaAw4G" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="1pmorAaAw4H" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="1609581366353723646" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="1pmorAaAw4F" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723645" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="1pmorAaAw4E" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="1609581366353723609" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723607" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723608" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="1pmorAaAw41" role="2sKnfN" />
+    <node concept="2sKmjV" id="1pmorAaAw3Z" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="1pmorAaAw40" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="1609581366353723606" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="1pmorAaAw3Y" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723605" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="1pmorAaAw3X" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="1609581366353723574" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723572" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723573" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="1pmorAaAw3p" role="2sKnfN" />
+    <node concept="2sKmjV" id="1pmorAaAw3n" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="1pmorAaAw3o" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="1609581366353723571" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="1pmorAaAw3m" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723570" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="1pmorAaAw3l" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="1609581366353723544" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723542" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723543" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="1pmorAaAw2Q" role="2sKnfN" />
+    <node concept="2sKmjV" id="1pmorAaAw2O" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="1pmorAaAw2P" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="1609581366353723541" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="1pmorAaAw2N" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723540" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="1pmorAaAw2M" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="1609581366353723519" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723517" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723518" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="1pmorAaAw2o" role="2sKnfN" />
+    <node concept="2sKmjV" id="1pmorAaAw2m" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="1pmorAaAw2n" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="1609581366353723516" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="1pmorAaAw2l" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723515" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="1pmorAaAw2k" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="1609581366353723499" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723497" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723498" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="1pmorAaAw1Z" role="2sKnfN" />
+    <node concept="2sKmjV" id="1pmorAaAw1X" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="1pmorAaAw1Y" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="1609581366353723496" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="1pmorAaAw1W" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723495" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="1pmorAaAw1V" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="1609581366353723484" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723482" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723483" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="1pmorAaAw1F" role="2sKnfN" />
+    <node concept="2sKmjV" id="1pmorAaAw1D" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="1pmorAaAw1E" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="1609581366353723481" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="1pmorAaAw1C" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="1609581366353723480" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="1pmorAaAw1B" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-  </root>
-  <root type="nm5n.TestHierarchicalStructureRootWithoutIcons" typeId="nm5n.1609581366353555709" id="1609581366353670387" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="My Test Root Without Icons" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="4116723029815764924" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764925" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764926" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="1pmorAaAw1s" role="2sKnfN" />
+    <node concept="2sKmjV" id="1pmorAaAw1q" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="1pmorAaAw1r" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="4116723029815764927" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="1pmorAaAw1p" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764928" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="1pmorAaAw1o" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="4116723029815764929" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764930" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764931" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+  </node>
+  <node concept="2sKh54" id="1pmorAaAj3N">
+    <property role="TrG5h" value="My Test Root Without Icons" />
+    <node concept="2sKn04" id="3$xysz6PEuW" role="2sKnfN" />
+    <node concept="2sKmjV" id="3$xysz6PEuX" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="3$xysz6PEuY" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="4116723029815764932" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="4116723029815764933" nodeInfo="ng" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764934" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="a" />
-        <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764935" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="b" />
-          <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="4116723029815764936" nodeInfo="ng" />
-          <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764937" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="a" />
-            <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764938" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn0H" id="3$xysz6PEuZ" role="2sKnfN">
+      <property role="TrG5h" value="c" />
+    </node>
+    <node concept="2sKmjV" id="3$xysz6PEv0" role="2sKnfN">
+      <property role="TrG5h" value="b" />
+    </node>
+    <node concept="2sKn04" id="3$xysz6PEv1" role="2sKnfN" />
+    <node concept="2sKmjV" id="3$xysz6PEv2" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="3$xysz6PEv3" role="2sKndm">
+        <property role="TrG5h" value="b" />
+      </node>
+    </node>
+    <node concept="2sKn0H" id="3$xysz6PEv4" role="2sKnfN">
+      <property role="TrG5h" value="c" />
+      <node concept="2sKn04" id="3$xysz6PEv5" role="2sKndm" />
+      <node concept="2sKmjV" id="3$xysz6PEv6" role="2sKndm">
+        <property role="TrG5h" value="a" />
+        <node concept="2sKmjV" id="3$xysz6PEv7" role="2sKndm">
+          <property role="TrG5h" value="b" />
+          <node concept="2sKn04" id="3$xysz6PEv8" role="2sKndm" />
+          <node concept="2sKmjV" id="3$xysz6PEv9" role="2sKndm">
+            <property role="TrG5h" value="a" />
+            <node concept="2sKmjV" id="3$xysz6PEva" role="2sKndm">
+              <property role="TrG5h" value="b" />
             </node>
           </node>
-          <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="4116723029815764939" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="c" />
+          <node concept="2sKn0H" id="3$xysz6PEvb" role="2sKndm">
+            <property role="TrG5h" value="c" />
           </node>
-          <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764940" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="b" />
-            <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="4116723029815764941" nodeInfo="ng" />
-            <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764942" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="a" />
-              <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764943" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="b" />
-                <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="4116723029815764944" nodeInfo="ng" />
-                <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764945" nodeInfo="ng">
-                  <property name="name" nameId="tpck.1169194664001" value="a" />
-                  <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764946" nodeInfo="ng">
-                    <property name="name" nameId="tpck.1169194664001" value="b" />
+          <node concept="2sKmjV" id="3$xysz6PEvc" role="2sKndm">
+            <property role="TrG5h" value="b" />
+            <node concept="2sKn04" id="3$xysz6PEvd" role="2sKndm" />
+            <node concept="2sKmjV" id="3$xysz6PEve" role="2sKndm">
+              <property role="TrG5h" value="a" />
+              <node concept="2sKmjV" id="3$xysz6PEvf" role="2sKndm">
+                <property role="TrG5h" value="b" />
+                <node concept="2sKn04" id="3$xysz6PEvg" role="2sKndm" />
+                <node concept="2sKmjV" id="3$xysz6PEvh" role="2sKndm">
+                  <property role="TrG5h" value="a" />
+                  <node concept="2sKmjV" id="3$xysz6PEvi" role="2sKndm">
+                    <property role="TrG5h" value="b" />
                   </node>
                 </node>
-                <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="4116723029815764947" nodeInfo="ng">
-                  <property name="name" nameId="tpck.1169194664001" value="c" />
+                <node concept="2sKn0H" id="3$xysz6PEvj" role="2sKndm">
+                  <property role="TrG5h" value="c" />
                 </node>
-                <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764948" nodeInfo="ng">
-                  <property name="name" nameId="tpck.1169194664001" value="b" />
+                <node concept="2sKmjV" id="3$xysz6PEvk" role="2sKndm">
+                  <property role="TrG5h" value="b" />
                 </node>
               </node>
             </node>
-            <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="4116723029815764949" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="c" />
+            <node concept="2sKn0H" id="3$xysz6PEvl" role="2sKndm">
+              <property role="TrG5h" value="c" />
             </node>
-            <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764950" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="b" />
+            <node concept="2sKmjV" id="3$xysz6PEvm" role="2sKndm">
+              <property role="TrG5h" value="b" />
             </node>
           </node>
         </node>
       </node>
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="4116723029815764951" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="c" />
+      <node concept="2sKn0H" id="3$xysz6PEvn" role="2sKndm">
+        <property role="TrG5h" value="c" />
       </node>
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764952" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
-      </node>
-    </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764953" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
-    </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="4116723029815764954" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764955" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764956" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+      <node concept="2sKmjV" id="3$xysz6PEvo" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="4116723029815764957" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKmjV" id="3$xysz6PEvp" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764958" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
-    </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="4116723029815764959" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764960" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764961" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="3$xysz6PEvq" role="2sKnfN" />
+    <node concept="2sKmjV" id="3$xysz6PEvr" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="3$xysz6PEvs" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="4116723029815764962" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="3$xysz6PEvt" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764963" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="3$xysz6PEvu" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="4116723029815764964" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764965" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764966" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="3$xysz6PEvv" role="2sKnfN" />
+    <node concept="2sKmjV" id="3$xysz6PEvw" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="3$xysz6PEvx" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="4116723029815764967" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="3$xysz6PEvy" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764968" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="3$xysz6PEvz" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="4116723029815764969" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764970" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764971" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="3$xysz6PEv$" role="2sKnfN" />
+    <node concept="2sKmjV" id="3$xysz6PEv_" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="3$xysz6PEvA" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="4116723029815764972" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="3$xysz6PEvB" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764973" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="3$xysz6PEvC" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="4116723029815764974" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764975" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764976" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="3$xysz6PEvD" role="2sKnfN" />
+    <node concept="2sKmjV" id="3$xysz6PEvE" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="3$xysz6PEvF" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="4116723029815764977" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="3$xysz6PEvG" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764978" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="3$xysz6PEvH" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="4116723029815764979" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764980" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764981" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="3$xysz6PEvI" role="2sKnfN" />
+    <node concept="2sKmjV" id="3$xysz6PEvJ" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="3$xysz6PEvK" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="4116723029815764982" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="3$xysz6PEvL" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764983" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="3$xysz6PEvM" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="4116723029815764984" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764985" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764986" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="3$xysz6PEvN" role="2sKnfN" />
+    <node concept="2sKmjV" id="3$xysz6PEvO" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="3$xysz6PEvP" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="4116723029815764987" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="3$xysz6PEvQ" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764988" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="3$xysz6PEvR" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="4116723029815764989" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764990" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764991" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="3$xysz6PEvS" role="2sKnfN" />
+    <node concept="2sKmjV" id="3$xysz6PEvT" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="3$xysz6PEvU" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="4116723029815764992" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="3$xysz6PEvV" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764993" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="3$xysz6PEvW" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="4116723029815764994" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764995" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764996" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="3$xysz6PEvX" role="2sKnfN" />
+    <node concept="2sKmjV" id="3$xysz6PEvY" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="3$xysz6PEvZ" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="4116723029815764997" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="3$xysz6PEw0" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815764998" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="3$xysz6PEw1" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="4116723029815764999" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815765000" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815765001" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="3$xysz6PEw2" role="2sKnfN" />
+    <node concept="2sKmjV" id="3$xysz6PEw3" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="3$xysz6PEw4" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="4116723029815765002" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="3$xysz6PEw5" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815765003" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="3$xysz6PEw6" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="4116723029815765004" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815765005" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815765006" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="3$xysz6PEw7" role="2sKnfN" />
+    <node concept="2sKmjV" id="3$xysz6PEw8" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="3$xysz6PEw9" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="4116723029815765007" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="3$xysz6PEwa" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815765008" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="3$xysz6PEwb" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureHidden" typeId="nm5n.1609581366353531325" id="4116723029815765009" nodeInfo="ng" />
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815765010" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="a" />
-      <node role="hierarchicalChildren" roleId="nm5n.1609581366353531631" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815765011" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKn04" id="3$xysz6PEwc" role="2sKnfN" />
+    <node concept="2sKmjV" id="3$xysz6PEwd" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="3$xysz6PEwe" role="2sKndm">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithoutIcon" typeId="nm5n.1609581366353531284" id="4116723029815765012" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="c" />
+    <node concept="2sKn0H" id="3$xysz6PEwf" role="2sKnfN">
+      <property role="TrG5h" value="c" />
     </node>
-    <node role="hierarchicalChildren" roleId="nm5n.1609581366353531466" type="nm5n.TestHierarchicalStructureWithIcon" typeId="nm5n.1609581366353528130" id="4116723029815765013" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="b" />
+    <node concept="2sKmjV" id="3$xysz6PEwg" role="2sKnfN">
+      <property role="TrG5h" value="b" />
     </node>
-  </root>
+    <node concept="2sKn04" id="3$xysz6PEwh" role="2sKnfN" />
+    <node concept="2sKmjV" id="3$xysz6PEwi" role="2sKnfN">
+      <property role="TrG5h" value="a" />
+      <node concept="2sKmjV" id="3$xysz6PEwj" role="2sKndm">
+        <property role="TrG5h" value="b" />
+      </node>
+    </node>
+    <node concept="2sKn0H" id="3$xysz6PEwk" role="2sKnfN">
+      <property role="TrG5h" value="c" />
+    </node>
+    <node concept="2sKmjV" id="3$xysz6PEwl" role="2sKnfN">
+      <property role="TrG5h" value="b" />
+    </node>
+  </node>
 </model>
 
