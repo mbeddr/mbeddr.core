@@ -1,110 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:27f6515e-36f1-4566-93ac-af92dd58218d(test.analyses.var.testcode.cm)">
-  <persistence version="8" />
-  <language namespace="e401b447-8019-4ccd-a72c-bfb0230f5782(com.mbeddr.cc.var.fm)" />
-  <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="8" implicit="yes" />
-  <root type="qqyh.VariabilitySupport" typeId="qqyh.6825476687691337712" id="4339520093129768973" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="SimpleConfigurationModels" />
-    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="2912335823209235904" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="MandatoryFeatures" />
-      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="1328910530793185682" nodeInfo="ng">
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="538267308516328292" nodeInfo="ng" />
-        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235907" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="mandatoryChild1" />
-          <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="2912335823209235908" nodeInfo="ng" />
+<model ref="r:27f6515e-36f1-4566-93ac-af92dd58218d(test.analyses.var.testcode.cm)">
+  <persistence version="9" />
+  <languages>
+    <use id="e401b447-8019-4ccd-a72c-bfb0230f5782" name="com.mbeddr.cc.var.fm" version="-1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
+  </languages>
+  <imports />
+  <registry>
+    <language id="e401b447-8019-4ccd-a72c-bfb0230f5782" name="com.mbeddr.cc.var.fm">
+      <concept id="8473958930087782177" name="com.mbeddr.cc.var.fm.structure.RootFeature" flags="ng" index="28I2Iu" />
+      <concept id="6825476687691297416" name="com.mbeddr.cc.var.fm.structure.ConfigurationModel" flags="ng" index="Id4hE">
+        <reference id="6825476687691297418" name="configures" index="Id4hC" />
+        <child id="6825476687691297417" name="rootFeature" index="Id4hF" />
+      </concept>
+      <concept id="6825476687691297422" name="com.mbeddr.cc.var.fm.structure.SelectedFeature" flags="ng" index="Id4hG">
+        <reference id="6825476687691297425" name="feature" index="Id4hN" />
+        <child id="6825476687691297423" name="children" index="Id4hH" />
+      </concept>
+      <concept id="6825476687691297426" name="com.mbeddr.cc.var.fm.structure.Feature" flags="ng" index="Id4hK">
+        <child id="6825476687691297427" name="constraint" index="Id4hL" />
+        <child id="6825476687691297428" name="children" index="Id4hQ" />
+      </concept>
+      <concept id="6825476687691297434" name="com.mbeddr.cc.var.fm.structure.FeatureModel" flags="ng" index="Id4hS">
+        <child id="6825476687691297435" name="root" index="Id4hT" />
+      </concept>
+      <concept id="6825476687691337712" name="com.mbeddr.cc.var.fm.structure.VariabilitySupport" flags="ng" index="Idr$i">
+        <child id="6825476687691337713" name="contents" index="Idr$j" />
+      </concept>
+      <concept id="6825476687691317633" name="com.mbeddr.cc.var.fm.structure.XorConstraint" flags="ng" index="Idvtz" />
+      <concept id="6825476687691317625" name="com.mbeddr.cc.var.fm.structure.MandatoryConstraint" flags="ng" index="Idvur" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="Idr$i" id="3KT4CxIES0d">
+    <property role="TrG5h" value="SimpleConfigurationModels" />
+    <node concept="Id4hS" id="2xEGw1120n0" role="Idr$j">
+      <property role="TrG5h" value="MandatoryFeatures" />
+      <node concept="28I2Iu" id="19LfhoYd26i" role="Id4hT">
+        <node concept="Idvur" id="tSjOfAk$d$" role="Id4hL" />
+        <node concept="Id4hK" id="2xEGw1120n3" role="Id4hQ">
+          <property role="TrG5h" value="mandatoryChild1" />
+          <node concept="Idvur" id="2xEGw1120n4" role="Id4hL" />
         </node>
-        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="2912335823209235909" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="mandatoryChild2" />
-        </node>
-      </node>
-    </node>
-    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="4339520093129768974" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="ConfigModelWithMandatoryFeatures" />
-      <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="2912335823209235904" resolveInfo="MandatoryFeatures" />
-      <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4339520093129770034" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="1328910530793185682" resolveInfo="MandatoryFeatures_root" />
-        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4339520093129770036" nodeInfo="ng">
-          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="2912335823209235907" resolveInfo="mandatoryChild1" />
-        </node>
-        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4339520093129770041" nodeInfo="ng">
-          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="2912335823209235909" resolveInfo="mandatoryChild2" />
-        </node>
-      </node>
-    </node>
-    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="4339520093129768978" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="ConfigModelWithoutMandatoryFeatures" />
-      <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="2912335823209235904" resolveInfo="MandatoryFeatures" />
-      <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4339520093129770044" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="1328910530793185682" resolveInfo="MandatoryFeatures_root" />
-        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4339520093129770046" nodeInfo="ng">
-          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="2912335823209235907" resolveInfo="mandatoryChild1" />
-        </node>
-      </node>
-    </node>
-    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="4339520093129771926" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="XorFeatures" />
-      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.RootFeature" typeId="qqyh.8473958930087782177" id="4339520093129771927" nodeInfo="ng">
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.XorConstraint" typeId="qqyh.6825476687691317633" id="4339520093129771960" nodeInfo="ng" />
-        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4339520093129771929" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="xorChild1" />
-          <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.MandatoryConstraint" typeId="qqyh.6825476687691317625" id="4339520093129771930" nodeInfo="ng" />
-        </node>
-        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4339520093129771931" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="xorChild2" />
-        </node>
-        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="4339520093129771963" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="xorChild3" />
+        <node concept="Id4hK" id="2xEGw1120n5" role="Id4hQ">
+          <property role="TrG5h" value="mandatoryChild2" />
         </node>
       </node>
     </node>
-    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="4339520093129872055" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="ConfigModelForXorPositive" />
-      <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="4339520093129771926" resolveInfo="XorFeatures" />
-      <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4339520093129872056" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="4339520093129771927" resolveInfo="XorFeatures_root" />
-        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4339520093129872057" nodeInfo="ng">
-          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="4339520093129771929" resolveInfo="xorChild1" />
+    <node concept="Id4hE" id="3KT4CxIES0e" role="Idr$j">
+      <property role="TrG5h" value="ConfigModelWithMandatoryFeatures" />
+      <ref role="Id4hC" node="2xEGw1120n0" resolve="MandatoryFeatures" />
+      <node concept="Id4hG" id="3KT4CxIESgM" role="Id4hF">
+        <ref role="Id4hN" node="19LfhoYd26i" resolve="MandatoryFeatures_root" />
+        <node concept="Id4hG" id="3KT4CxIESgO" role="Id4hH">
+          <ref role="Id4hN" node="2xEGw1120n3" resolve="mandatoryChild1" />
+        </node>
+        <node concept="Id4hG" id="3KT4CxIESgT" role="Id4hH">
+          <ref role="Id4hN" node="2xEGw1120n5" resolve="mandatoryChild2" />
         </node>
       </node>
     </node>
-    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="4339520093129872135" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="ConfigModelForXorNegative1" />
-      <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="4339520093129771926" resolveInfo="XorFeatures" />
-      <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4339520093129872136" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="4339520093129771927" resolveInfo="XorFeatures_root" />
-      </node>
-    </node>
-    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="4339520093129872188" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="ConfigModelForXorNegative2" />
-      <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="4339520093129771926" resolveInfo="XorFeatures" />
-      <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4339520093129872189" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="4339520093129771927" resolveInfo="XorFeatures_root" />
-        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4339520093129872190" nodeInfo="ng">
-          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="4339520093129771929" resolveInfo="xorChild1" />
-        </node>
-        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4339520093129872191" nodeInfo="ng">
-          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="4339520093129771931" resolveInfo="xorChild2" />
+    <node concept="Id4hE" id="3KT4CxIES0i" role="Idr$j">
+      <property role="TrG5h" value="ConfigModelWithoutMandatoryFeatures" />
+      <ref role="Id4hC" node="2xEGw1120n0" resolve="MandatoryFeatures" />
+      <node concept="Id4hG" id="3KT4CxIESgW" role="Id4hF">
+        <ref role="Id4hN" node="19LfhoYd26i" resolve="MandatoryFeatures_root" />
+        <node concept="Id4hG" id="3KT4CxIESgY" role="Id4hH">
+          <ref role="Id4hN" node="2xEGw1120n3" resolve="mandatoryChild1" />
         </node>
       </node>
     </node>
-    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="4339520093129771932" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="ConfigModelForXorNegative3" />
-      <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="4339520093129771926" resolveInfo="XorFeatures" />
-      <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4339520093129771933" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="4339520093129771927" resolveInfo="XorFeatures_root" />
-        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4339520093129771934" nodeInfo="ng">
-          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="4339520093129771929" resolveInfo="xorChild1" />
+    <node concept="Id4hS" id="3KT4CxIESIm" role="Idr$j">
+      <property role="TrG5h" value="XorFeatures" />
+      <node concept="28I2Iu" id="3KT4CxIESIn" role="Id4hT">
+        <node concept="Idvtz" id="3KT4CxIESIS" role="Id4hL" />
+        <node concept="Id4hK" id="3KT4CxIESIp" role="Id4hQ">
+          <property role="TrG5h" value="xorChild1" />
+          <node concept="Idvur" id="3KT4CxIESIq" role="Id4hL" />
         </node>
-        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4339520093129771935" nodeInfo="ng">
-          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="4339520093129771931" resolveInfo="xorChild2" />
+        <node concept="Id4hK" id="3KT4CxIESIr" role="Id4hQ">
+          <property role="TrG5h" value="xorChild2" />
         </node>
-        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="4339520093129771996" nodeInfo="ng">
-          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="4339520093129771963" resolveInfo="xorChild3" />
+        <node concept="Id4hK" id="3KT4CxIESIV" role="Id4hQ">
+          <property role="TrG5h" value="xorChild3" />
         </node>
       </node>
     </node>
-  </root>
+    <node concept="Id4hE" id="3KT4CxIFhaR" role="Idr$j">
+      <property role="TrG5h" value="ConfigModelForXorPositive" />
+      <ref role="Id4hC" node="3KT4CxIESIm" resolve="XorFeatures" />
+      <node concept="Id4hG" id="3KT4CxIFhaS" role="Id4hF">
+        <ref role="Id4hN" node="3KT4CxIESIn" resolve="XorFeatures_root" />
+        <node concept="Id4hG" id="3KT4CxIFhaT" role="Id4hH">
+          <ref role="Id4hN" node="3KT4CxIESIp" resolve="xorChild1" />
+        </node>
+      </node>
+    </node>
+    <node concept="Id4hE" id="3KT4CxIFhc7" role="Idr$j">
+      <property role="TrG5h" value="ConfigModelForXorNegative1" />
+      <ref role="Id4hC" node="3KT4CxIESIm" resolve="XorFeatures" />
+      <node concept="Id4hG" id="3KT4CxIFhc8" role="Id4hF">
+        <ref role="Id4hN" node="3KT4CxIESIn" resolve="XorFeatures_root" />
+      </node>
+    </node>
+    <node concept="Id4hE" id="3KT4CxIFhcW" role="Idr$j">
+      <property role="TrG5h" value="ConfigModelForXorNegative2" />
+      <ref role="Id4hC" node="3KT4CxIESIm" resolve="XorFeatures" />
+      <node concept="Id4hG" id="3KT4CxIFhcX" role="Id4hF">
+        <ref role="Id4hN" node="3KT4CxIESIn" resolve="XorFeatures_root" />
+        <node concept="Id4hG" id="3KT4CxIFhcY" role="Id4hH">
+          <ref role="Id4hN" node="3KT4CxIESIp" resolve="xorChild1" />
+        </node>
+        <node concept="Id4hG" id="3KT4CxIFhcZ" role="Id4hH">
+          <ref role="Id4hN" node="3KT4CxIESIr" resolve="xorChild2" />
+        </node>
+      </node>
+    </node>
+    <node concept="Id4hE" id="3KT4CxIESIs" role="Idr$j">
+      <property role="TrG5h" value="ConfigModelForXorNegative3" />
+      <ref role="Id4hC" node="3KT4CxIESIm" resolve="XorFeatures" />
+      <node concept="Id4hG" id="3KT4CxIESIt" role="Id4hF">
+        <ref role="Id4hN" node="3KT4CxIESIn" resolve="XorFeatures_root" />
+        <node concept="Id4hG" id="3KT4CxIESIu" role="Id4hH">
+          <ref role="Id4hN" node="3KT4CxIESIp" resolve="xorChild1" />
+        </node>
+        <node concept="Id4hG" id="3KT4CxIESIv" role="Id4hH">
+          <ref role="Id4hN" node="3KT4CxIESIr" resolve="xorChild2" />
+        </node>
+        <node concept="Id4hG" id="3KT4CxIESJs" role="Id4hH">
+          <ref role="Id4hN" node="3KT4CxIESIV" resolve="xorChild3" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

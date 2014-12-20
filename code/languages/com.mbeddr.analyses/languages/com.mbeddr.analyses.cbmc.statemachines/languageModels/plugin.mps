@@ -1,54 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:7d4809fd-b0ba-4900-964e-98a34c04a632(com.mbeddr.analyses.cbmc.statemachines.plugin)">
-  <persistence version="8" />
-  <language namespace="28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)" />
-  <language namespace="c0080a47-7e37-4558-bee9-9ae18e690549(jetbrains.mps.lang.extension)" />
-  <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="4pdp" modelUID="r:60051af9-b174-4776-bea6-8ff622317104(com.mbeddr.analyses.cbmc.plugin)" version="-1" />
-  <import index="irjt" modelUID="r:b0443557-eb80-47bb-b801-2cdf54bd38ca(com.mbeddr.analyses.cbmc.statemachines.rt.counterexample.lifted.builder)" version="-1" />
-  <import index="v54s" modelUID="r:2a0fe383-d602-4f5b-813c-e41afdbbb97e(jetbrains.mps.lang.extension.structure)" version="-1" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
-  <root type="v54s.ExtensionDeclaration" typeId="v54s.3729007189729192404" id="5924512713690565372" nodeInfo="ng">
-    <link role="extensionPoint" roleId="v54s.3729007189729192405" targetNodeId="4pdp.5924512713690056983" resolveInfo="AssignmentsLifterProvider" />
-    <node role="objectGetter" roleId="v54s.8029776554053057811" type="v54s.ExtensionObjectGetter" typeId="v54s.8029776554053043557" id="5924512713690565373" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5924512713690565374" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5924512713690566216" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5924512713690566214" nodeInfo="nn">
-            <node role="creator" roleId="tpee.1145553007750" type="tpee.DefaultClassCreator" typeId="tpee.2820489544401957797" id="5924512713690567128" nodeInfo="nn">
-              <link role="classifier" roleId="tpee.2820489544401957798" targetNodeId="irjt.4799680529822706406" resolveInfo="AssignmentsLifterStateMachines" />
+<model ref="r:7d4809fd-b0ba-4900-964e-98a34c04a632(com.mbeddr.analyses.cbmc.statemachines.plugin)">
+  <persistence version="9" />
+  <languages>
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
+    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+  </languages>
+  <imports>
+    <import index="4pdp" ref="r:60051af9-b174-4776-bea6-8ff622317104(com.mbeddr.analyses.cbmc.plugin)" />
+    <import index="irjt" ref="r:b0443557-eb80-47bb-b801-2cdf54bd38ca(com.mbeddr.analyses.cbmc.statemachines.rt.counterexample.lifted.builder)" />
+  </imports>
+  <registry>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+    </language>
+    <language id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension">
+      <concept id="8029776554053043557" name="jetbrains.mps.lang.extension.structure.ExtensionObjectGetter" flags="in" index="lufDu" />
+      <concept id="3729007189729192404" name="jetbrains.mps.lang.extension.structure.ExtensionDeclaration" flags="ng" index="vrV6s">
+        <reference id="3729007189729192405" name="extensionPoint" index="vrV6t" />
+        <child id="8029776554053057811" name="objectGetter" index="luc8C" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="vrV6s" id="58S6eLQNWFW">
+    <ref role="vrV6t" to="4pdp:58S6eLQM0$n" resolve="AssignmentsLifterProvider" />
+    <node concept="lufDu" id="58S6eLQNWFX" role="luc8C">
+      <node concept="3clFbS" id="58S6eLQNWFY" role="2VODD2">
+        <node concept="3clFbF" id="58S6eLQNWT8" role="3cqZAp">
+          <node concept="2ShNRf" id="58S6eLQNWT6" role="3clFbG">
+            <node concept="HV5vD" id="58S6eLQNX7o" role="2ShVmc">
+              <ref role="HV5vE" to="irjt:4arT0cnseFA" resolve="AssignmentsLifterStateMachines" />
             </node>
           </node>
         </node>
       </node>
     </node>
-  </root>
-  <root type="v54s.ExtensionDeclaration" typeId="v54s.3729007189729192404" id="5924512713690926834" nodeInfo="ng">
-    <link role="extensionPoint" roleId="v54s.3729007189729192405" targetNodeId="4pdp.5924512713690560667" resolveInfo="FunctionCallsLifterProvider" />
-    <node role="objectGetter" roleId="v54s.8029776554053057811" type="v54s.ExtensionObjectGetter" typeId="v54s.8029776554053043557" id="5924512713690926835" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5924512713690926836" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5924512713690927137" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5924512713690927135" nodeInfo="nn">
-            <node role="creator" roleId="tpee.1145553007750" type="tpee.DefaultClassCreator" typeId="tpee.2820489544401957797" id="5924512713690927641" nodeInfo="nn">
-              <link role="classifier" roleId="tpee.2820489544401957798" targetNodeId="irjt.4799680529822711731" resolveInfo="FunctionCallsLifterStateMachines" />
+  </node>
+  <node concept="vrV6s" id="58S6eLQPkVM">
+    <ref role="vrV6t" to="4pdp:58S6eLQNVyr" resolve="FunctionCallsLifterProvider" />
+    <node concept="lufDu" id="58S6eLQPkVN" role="luc8C">
+      <node concept="3clFbS" id="58S6eLQPkVO" role="2VODD2">
+        <node concept="3clFbF" id="58S6eLQPl0x" role="3cqZAp">
+          <node concept="2ShNRf" id="58S6eLQPl0v" role="3clFbG">
+            <node concept="HV5vD" id="58S6eLQPl8p" role="2ShVmc">
+              <ref role="HV5vE" to="irjt:4arT0cnsfYN" resolve="FunctionCallsLifterStateMachines" />
             </node>
           </node>
         </node>
       </node>
     </node>
-  </root>
-  <root type="v54s.ExtensionDeclaration" typeId="v54s.3729007189729192404" id="5924512713690927744" nodeInfo="ng">
-    <link role="extensionPoint" roleId="v54s.3729007189729192405" targetNodeId="4pdp.5924512713690560995" resolveInfo="FunctionReturnsLifterProvider" />
-    <node role="objectGetter" roleId="v54s.8029776554053057811" type="v54s.ExtensionObjectGetter" typeId="v54s.8029776554053043557" id="5924512713690927745" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5924512713690927746" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5924512713690927987" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5924512713690927985" nodeInfo="nn">
-            <node role="creator" roleId="tpee.1145553007750" type="tpee.DefaultClassCreator" typeId="tpee.2820489544401957797" id="5924512713690928491" nodeInfo="nn">
-              <link role="classifier" roleId="tpee.2820489544401957798" targetNodeId="irjt.4799680529822716930" resolveInfo="FunctionReturnsLifterStateMachines" />
+  </node>
+  <node concept="vrV6s" id="58S6eLQPla0">
+    <ref role="vrV6t" to="4pdp:58S6eLQNVBz" resolve="FunctionReturnsLifterProvider" />
+    <node concept="lufDu" id="58S6eLQPla1" role="luc8C">
+      <node concept="3clFbS" id="58S6eLQPla2" role="2VODD2">
+        <node concept="3clFbF" id="58S6eLQPldN" role="3cqZAp">
+          <node concept="2ShNRf" id="58S6eLQPldL" role="3clFbG">
+            <node concept="HV5vD" id="58S6eLQPllF" role="2ShVmc">
+              <ref role="HV5vE" to="irjt:4arT0cnshg2" resolve="FunctionReturnsLifterStateMachines" />
             </node>
           </node>
         </node>
       </node>
     </node>
-  </root>
+  </node>
 </model>
 
