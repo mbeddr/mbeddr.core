@@ -24,7 +24,6 @@
     <import index="pry4" ref="r:0a0d7eec-6e5a-412b-8e16-e3ee5ed7fb95(jetbrains.mps.debug.api.programState)" />
     <import index="rw00" ref="r:d910d08e-4a00-41f9-ac8b-b7c374586874(jetbrains.mps.debug.api.breakpoints)" />
     <import index="cu2c" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
-    <import index="4hf9" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.traceInfo(MPS.Core/jetbrains.mps.traceInfo@java_stub)" />
     <import index="zwkq" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#org.jdom(MPS.Core/org.jdom@java_stub)" />
     <import index="5ths" ref="r:0cf7389f-e174-4742-a3d2-15c79317838a(jetbrains.mps.debug.api.run)" />
     <import index="gcfa" ref="f:java_stub#86441d7a-e194-42da-81a5-2161ec62a379#jetbrains.mps.ide.projectPane(MPS.Workbench/jetbrains.mps.ide.projectPane@java_stub)" />
@@ -63,6 +62,8 @@
     <import index="eibu" ref="r:49e72ff8-8ace-42fd-8f9f-5961eed9792e(jetbrains.mps.execution.api.configurations)" />
     <import index="b2mh" ref="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.project(MPS.IDEA/com.intellij.openapi.project@java_stub)" />
     <import index="blwm" ref="r:61a45d85-604a-4af4-8729-16a36d455774(com.mbeddr.core.debug.plugin)" />
+    <import index="ierg" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.textgen.trace(MPS.Core/jetbrains.mps.textgen.trace@java_stub)" />
+    <import index="dd55" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.cache(MPS.Core/jetbrains.mps.generator.cache@java_stub)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -5574,7 +5575,7 @@
             <property role="TrG5h" value="traces" />
             <node concept="2hMVRd" id="2cOIosl6kL_" role="1tU5fm">
               <node concept="3uibUv" id="2cOIosl6kLA" role="2hN53Y">
-                <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
               </node>
             </node>
             <node concept="2OqwBi" id="2cOIosl6kMf" role="33vP2m">
@@ -5638,7 +5639,7 @@
                     <ref role="2Gs0qQ" node="2cOIosl5W34" resolve="trace" />
                   </node>
                   <node concept="liA8E" id="2cOIosl6kQY" role="2OqNvi">
-                    <ref role="37wK5l" to="4hf9:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
+                    <ref role="37wK5l" to="ierg:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
                   </node>
                 </node>
               </node>
@@ -5652,7 +5653,7 @@
                     <ref role="2Gs0qQ" node="2cOIosl5W34" resolve="trace" />
                   </node>
                   <node concept="liA8E" id="2cOIosl6kR4" role="2OqNvi">
-                    <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                    <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                   </node>
                 </node>
               </node>
@@ -5666,7 +5667,7 @@
                     <ref role="2Gs0qQ" node="2cOIosl5W34" resolve="trace" />
                   </node>
                   <node concept="liA8E" id="6fmd53iSGII" role="2OqNvi">
-                    <ref role="37wK5l" to="4hf9:~PositionInfo.getEndLine():int" resolve="getEndLine" />
+                    <ref role="37wK5l" to="ierg:~PositionInfo.getEndLine():int" resolve="getEndLine" />
                   </node>
                 </node>
               </node>
@@ -9971,18 +9972,18 @@
             <property role="TrG5h" value="traces" />
             <node concept="3uibUv" id="7EUokiVl653" role="1tU5fm">
               <ref role="3uigEE" to="k7g3:~Set" resolve="Set" />
-              <node concept="3uibUv" id="7EUokiVl654" role="11_B2D">
-                <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+              <node concept="3uibUv" id="2IABk5_2Xbq" role="11_B2D">
+                <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
               </node>
             </node>
             <node concept="2OqwBi" id="7EUokiVl655" role="33vP2m">
               <node concept="2OqwBi" id="7EUokiVl656" role="2Oq$k0">
                 <node concept="2YIFZM" id="7EUokiVl657" role="2Oq$k0">
-                  <ref role="1Pybhc" to="9m56:~TraceInfoCache" resolve="TraceInfoCache" />
-                  <ref role="37wK5l" to="9m56:~TraceInfoCache.getInstance():jetbrains.mps.generator.traceInfo.TraceInfoCache" resolve="getInstance" />
+                  <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
+                  <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                 </node>
                 <node concept="liA8E" id="7EUokiVl658" role="2OqNvi">
-                  <ref role="37wK5l" to="9m56:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.traceInfo.DebugInfo" resolve="get" />
+                  <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
                   <node concept="2OqwBi" id="7Hpw6GdUaxh" role="37wK5m">
                     <node concept="2YIFZM" id="7Hpw6GdUaxi" role="2Oq$k0">
                       <ref role="37wK5l" node="7Hpw6GdT1O$" resolve="getInstance" />
@@ -9995,7 +9996,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="7EUokiVl65e" role="2OqNvi">
-                <ref role="37wK5l" to="4hf9:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
+                <ref role="37wK5l" to="ierg:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
                 <node concept="37vLTw" id="5HxjapvQZkt" role="37wK5m">
                   <ref role="3cqZAo" node="7EUokiVl64M" resolve="tmp" />
                 </node>
@@ -10034,7 +10035,7 @@
                     <ref role="2Gs0qQ" node="7EUokiVl65x" resolve="trace" />
                   </node>
                   <node concept="liA8E" id="7EUokiVl65C" role="2OqNvi">
-                    <ref role="37wK5l" to="4hf9:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
+                    <ref role="37wK5l" to="ierg:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
                   </node>
                 </node>
                 <node concept="liA8E" id="7EUokiVl65D" role="2OqNvi">
@@ -10068,7 +10069,7 @@
                         <ref role="2Gs0qQ" node="7EUokiVl65x" resolve="trace" />
                       </node>
                       <node concept="liA8E" id="7EUokiVl65N" role="2OqNvi">
-                        <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                        <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                       </node>
                     </node>
                   </node>
@@ -10080,7 +10081,7 @@
                             <ref role="2Gs0qQ" node="7EUokiVl65x" resolve="trace" />
                           </node>
                           <node concept="liA8E" id="7EUokiVl65T" role="2OqNvi">
-                            <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                            <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                           </node>
                         </node>
                         <node concept="3cpWsa" id="7EUokiVl65U" role="37vLTJ">
@@ -10095,7 +10096,7 @@
                             <ref role="2Gs0qQ" node="7EUokiVl65x" resolve="trace" />
                           </node>
                           <node concept="liA8E" id="7EUokiVl65Z" role="2OqNvi">
-                            <ref role="37wK5l" to="4hf9:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
+                            <ref role="37wK5l" to="ierg:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
                           </node>
                         </node>
                         <node concept="37vLTw" id="5HxjapvQZnV" role="37vLTJ">
@@ -13533,16 +13534,16 @@
           <node concept="3cpWsn" id="4KP9FoHGvE1" role="3cpWs9">
             <property role="TrG5h" value="trace" />
             <node concept="3uibUv" id="4KP9FoHGvGs" role="1tU5fm">
-              <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+              <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
             </node>
             <node concept="2OqwBi" id="4KP9FoHGvGa" role="33vP2m">
               <node concept="2OqwBi" id="4KP9FoHGvFN" role="2Oq$k0">
                 <node concept="2YIFZM" id="4KP9FoHGvFM" role="2Oq$k0">
-                  <ref role="1Pybhc" to="9m56:~TraceInfoCache" resolve="TraceInfoCache" />
-                  <ref role="37wK5l" to="9m56:~TraceInfoCache.getInstance():jetbrains.mps.generator.traceInfo.TraceInfoCache" resolve="getInstance" />
+                  <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
+                  <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                 </node>
                 <node concept="liA8E" id="4KP9FoHGvFT" role="2OqNvi">
-                  <ref role="37wK5l" to="9m56:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.traceInfo.DebugInfo" resolve="get" />
+                  <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
                   <node concept="2OqwBi" id="7Hpw6GdU0_7" role="37wK5m">
                     <node concept="2YIFZM" id="7Hpw6GdU0_8" role="2Oq$k0">
                       <ref role="37wK5l" node="7Hpw6GdT1O$" resolve="getInstance" />
@@ -13555,7 +13556,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="4KP9FoHGvGe" role="2OqNvi">
-                <ref role="37wK5l" to="4hf9:~DebugInfo.getPositionForNode(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.traceInfo.TraceablePositionInfo" resolve="getPositionForNode" />
+                <ref role="37wK5l" to="ierg:~DebugInfo.getPositionForNode(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.textgen.trace.TraceablePositionInfo" resolve="getPositionForNode" />
                 <node concept="2OqwBi" id="4KP9FoHGvGg" role="37wK5m">
                   <node concept="Xjq3P" id="4KP9FoHGvGf" role="2Oq$k0" />
                   <node concept="2OwXpG" id="4KP9FoHGvGk" role="2OqNvi">
@@ -13623,7 +13624,7 @@
                 <ref role="3cqZAo" node="4KP9FoHGvE1" resolve="trace" />
               </node>
               <node concept="liA8E" id="4KP9FoHGvEU" role="2OqNvi">
-                <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
               </node>
             </node>
           </node>
@@ -13637,7 +13638,7 @@
                 <ref role="3cqZAo" node="4KP9FoHGvE1" resolve="trace" />
               </node>
               <node concept="liA8E" id="4KP9FoHGvF0" role="2OqNvi">
-                <ref role="37wK5l" to="4hf9:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
+                <ref role="37wK5l" to="ierg:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
               </node>
             </node>
           </node>
@@ -15594,16 +15595,16 @@
           <node concept="3cpWsn" id="4xjhOsalzFM" role="3cpWs9">
             <property role="TrG5h" value="trace" />
             <node concept="3uibUv" id="4xjhOsalzFN" role="1tU5fm">
-              <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+              <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
             </node>
             <node concept="2OqwBi" id="4xjhOsalzFx" role="33vP2m">
               <node concept="2OqwBi" id="4xjhOsalzFp" role="2Oq$k0">
                 <node concept="2YIFZM" id="4xjhOsalzFq" role="2Oq$k0">
-                  <ref role="1Pybhc" to="9m56:~TraceInfoCache" resolve="TraceInfoCache" />
-                  <ref role="37wK5l" to="9m56:~TraceInfoCache.getInstance():jetbrains.mps.generator.traceInfo.TraceInfoCache" resolve="getInstance" />
+                  <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
+                  <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                 </node>
                 <node concept="liA8E" id="4xjhOsalzFr" role="2OqNvi">
-                  <ref role="37wK5l" to="9m56:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.traceInfo.DebugInfo" resolve="get" />
+                  <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
                   <node concept="2OqwBi" id="7Hpw6GdU0Tm" role="37wK5m">
                     <node concept="2YIFZM" id="7Hpw6GdU0Tn" role="2Oq$k0">
                       <ref role="37wK5l" node="7Hpw6GdT1O$" resolve="getInstance" />
@@ -15616,7 +15617,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="4xjhOsalzFB" role="2OqNvi">
-                <ref role="37wK5l" to="4hf9:~DebugInfo.getPositionForNode(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.traceInfo.TraceablePositionInfo" resolve="getPositionForNode" />
+                <ref role="37wK5l" to="ierg:~DebugInfo.getPositionForNode(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.textgen.trace.TraceablePositionInfo" resolve="getPositionForNode" />
                 <node concept="2N2G$s" id="4xjhOsalzFC" role="37wK5m">
                   <ref role="3cqZAo" node="4xjhOsalhnI" resolve="targetNode" />
                 </node>
@@ -15633,7 +15634,7 @@
                 <ref role="3cqZAo" node="4xjhOsalzFM" resolve="trace" />
               </node>
               <node concept="liA8E" id="4xjhOsalzFZ" role="2OqNvi">
-                <ref role="37wK5l" to="4hf9:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
+                <ref role="37wK5l" to="ierg:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
               </node>
             </node>
           </node>
@@ -15647,7 +15648,7 @@
                 <ref role="3cqZAo" node="4xjhOsalzFM" resolve="trace" />
               </node>
               <node concept="liA8E" id="4xjhOsalzGf" role="2OqNvi">
-                <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
               </node>
             </node>
           </node>
@@ -16486,17 +16487,17 @@
                 <node concept="3uibUv" id="27NTXkFkQRb" role="1tU5fm">
                   <ref role="3uigEE" to="k7g3:~Set" resolve="Set" />
                   <node concept="3uibUv" id="27NTXkFkQRc" role="11_B2D">
-                    <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                    <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="27NTXkFkQRd" role="33vP2m">
                   <node concept="2OqwBi" id="27NTXkFkQRe" role="2Oq$k0">
                     <node concept="2YIFZM" id="27NTXkFkQRf" role="2Oq$k0">
-                      <ref role="37wK5l" to="9m56:~TraceInfoCache.getInstance():jetbrains.mps.generator.traceInfo.TraceInfoCache" resolve="getInstance" />
-                      <ref role="1Pybhc" to="9m56:~TraceInfoCache" resolve="TraceInfoCache" />
+                      <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
+                      <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                     </node>
                     <node concept="liA8E" id="27NTXkFkQRg" role="2OqNvi">
-                      <ref role="37wK5l" to="9m56:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.traceInfo.DebugInfo" resolve="get" />
+                      <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
                       <node concept="2OqwBi" id="7Hpw6GdTZuz" role="37wK5m">
                         <node concept="2YIFZM" id="7Hpw6GdTZu$" role="2Oq$k0">
                           <ref role="37wK5l" node="7Hpw6GdT1O$" resolve="getInstance" />
@@ -16509,7 +16510,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="27NTXkFkQRm" role="2OqNvi">
-                    <ref role="37wK5l" to="4hf9:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
+                    <ref role="37wK5l" to="ierg:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
                     <node concept="37vLTw" id="5HxjapvQZnP" role="37wK5m">
                       <ref role="3cqZAo" node="27NTXkFkQQU" resolve="root" />
                     </node>
@@ -16548,7 +16549,7 @@
                         <ref role="2Gs0qQ" node="27NTXkFkQRz" resolve="trace" />
                       </node>
                       <node concept="liA8E" id="27NTXkFkQRE" role="2OqNvi">
-                        <ref role="37wK5l" to="4hf9:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
+                        <ref role="37wK5l" to="ierg:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
                       </node>
                     </node>
                     <node concept="liA8E" id="27NTXkFkQRF" role="2OqNvi">
@@ -16579,7 +16580,7 @@
                             <ref role="2Gs0qQ" node="27NTXkFkQRz" resolve="trace" />
                           </node>
                           <node concept="liA8E" id="27NTXkFkQRP" role="2OqNvi">
-                            <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                            <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                           </node>
                         </node>
                       </node>
@@ -16591,7 +16592,7 @@
                                 <ref role="2Gs0qQ" node="27NTXkFkQRz" resolve="trace" />
                               </node>
                               <node concept="liA8E" id="27NTXkFkQRV" role="2OqNvi">
-                                <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                                <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                               </node>
                             </node>
                             <node concept="37vLTw" id="5HxjapvQZlc" role="37vLTJ">
@@ -16606,7 +16607,7 @@
                                 <ref role="2Gs0qQ" node="27NTXkFkQRz" resolve="trace" />
                               </node>
                               <node concept="liA8E" id="27NTXkFkQS1" role="2OqNvi">
-                                <ref role="37wK5l" to="4hf9:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
+                                <ref role="37wK5l" to="ierg:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
                               </node>
                             </node>
                             <node concept="3cpWsa" id="27NTXkFkQS2" role="37vLTJ">
@@ -16638,7 +16639,7 @@
                               <ref role="2Gs0qQ" node="2biXVDFLVdC" resolve="trace" />
                             </node>
                             <node concept="liA8E" id="2biXVDFLVdJ" role="2OqNvi">
-                              <ref role="37wK5l" to="4hf9:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
+                              <ref role="37wK5l" to="ierg:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
                             </node>
                           </node>
                           <node concept="liA8E" id="2biXVDFLVdK" role="2OqNvi">
@@ -16664,7 +16665,7 @@
                               <ref role="2Gs0qQ" node="2biXVDFLVdC" resolve="trace" />
                             </node>
                             <node concept="liA8E" id="2biXVDFLVey" role="2OqNvi">
-                              <ref role="37wK5l" to="4hf9:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
+                              <ref role="37wK5l" to="ierg:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
                             </node>
                           </node>
                           <node concept="liA8E" id="2biXVDFLVez" role="2OqNvi">
@@ -16696,7 +16697,7 @@
                                 <ref role="2Gs0qQ" node="2biXVDFLVdC" resolve="trace" />
                               </node>
                               <node concept="liA8E" id="2biXVDFLVdU" role="2OqNvi">
-                                <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                                <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                               </node>
                             </node>
                           </node>
@@ -16719,7 +16720,7 @@
                                     <ref role="2Gs0qQ" node="2biXVDFLVdC" resolve="trace" />
                                   </node>
                                   <node concept="liA8E" id="2biXVDFLVe0" role="2OqNvi">
-                                    <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                                    <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                                   </node>
                                 </node>
                                 <node concept="37vLTw" id="5HxjapvQZHw" role="37vLTJ">
@@ -16734,7 +16735,7 @@
                                     <ref role="2Gs0qQ" node="2biXVDFLVdC" resolve="trace" />
                                   </node>
                                   <node concept="liA8E" id="2biXVDFLVe6" role="2OqNvi">
-                                    <ref role="37wK5l" to="4hf9:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
+                                    <ref role="37wK5l" to="ierg:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
                                   </node>
                                 </node>
                                 <node concept="37vLTw" id="5HxjapvQZ7p" role="37vLTJ">
@@ -27950,17 +27951,17 @@
                               <node concept="3uibUv" id="6ey1bOhyFYV" role="1tU5fm">
                                 <ref role="3uigEE" to="k7g3:~Set" resolve="Set" />
                                 <node concept="3uibUv" id="6ey1bOhyFYW" role="11_B2D">
-                                  <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                                  <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
                                 </node>
                               </node>
                               <node concept="2OqwBi" id="6ey1bOhyFYX" role="33vP2m">
                                 <node concept="2OqwBi" id="6ey1bOhyFYY" role="2Oq$k0">
                                   <node concept="2YIFZM" id="6ey1bOhyFYZ" role="2Oq$k0">
-                                    <ref role="37wK5l" to="9m56:~TraceInfoCache.getInstance():jetbrains.mps.generator.traceInfo.TraceInfoCache" resolve="getInstance" />
-                                    <ref role="1Pybhc" to="9m56:~TraceInfoCache" resolve="TraceInfoCache" />
+                                    <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
+                                    <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                                   </node>
                                   <node concept="liA8E" id="6ey1bOhyFZ0" role="2OqNvi">
-                                    <ref role="37wK5l" to="9m56:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.traceInfo.DebugInfo" resolve="get" />
+                                    <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
                                     <node concept="2OqwBi" id="7Hpw6GdUklI" role="37wK5m">
                                       <node concept="37vLTw" id="7Hpw6GdUk7c" role="2Oq$k0">
                                         <ref role="3cqZAo" node="7Hpw6GdTqP3" resolve="debugSessionConfiguration" />
@@ -27972,7 +27973,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="6ey1bOhyFZ6" role="2OqNvi">
-                                  <ref role="37wK5l" to="4hf9:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
+                                  <ref role="37wK5l" to="ierg:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
                                   <node concept="37vLTw" id="5HxjapvTdFw" role="37wK5m">
                                     <ref role="3cqZAo" node="6ey1bOhyFYE" resolve="root" />
                                   </node>
@@ -28011,7 +28012,7 @@
                                       <ref role="2Gs0qQ" node="6ey1bOhyFZh" resolve="trace" />
                                     </node>
                                     <node concept="liA8E" id="6ey1bOhyFZo" role="2OqNvi">
-                                      <ref role="37wK5l" to="4hf9:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
+                                      <ref role="37wK5l" to="ierg:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="6ey1bOhyFZp" role="2OqNvi">
@@ -28044,7 +28045,7 @@
                                           <ref role="2Gs0qQ" node="6ey1bOhyFZh" resolve="trace" />
                                         </node>
                                         <node concept="liA8E" id="6ey1bOhyFZz" role="2OqNvi">
-                                          <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                                          <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                                         </node>
                                       </node>
                                     </node>
@@ -28056,7 +28057,7 @@
                                               <ref role="2Gs0qQ" node="6ey1bOhyFZh" resolve="trace" />
                                             </node>
                                             <node concept="liA8E" id="6ey1bOhyFZD" role="2OqNvi">
-                                              <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                                              <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                                             </node>
                                           </node>
                                           <node concept="3cpWsa" id="6ey1bOhyFZE" role="37vLTJ">
@@ -28071,7 +28072,7 @@
                                               <ref role="2Gs0qQ" node="6ey1bOhyFZh" resolve="trace" />
                                             </node>
                                             <node concept="liA8E" id="6ey1bOhyFZJ" role="2OqNvi">
-                                              <ref role="37wK5l" to="4hf9:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
+                                              <ref role="37wK5l" to="ierg:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
                                             </node>
                                           </node>
                                           <node concept="37vLTw" id="5HxjapvQZ6o" role="37vLTJ">
@@ -29028,17 +29029,17 @@
                 <property role="TrG5h" value="traces" />
                 <node concept="2hMVRd" id="7kJURBeXxtE" role="1tU5fm">
                   <node concept="3uibUv" id="7kJURBeXxtM" role="2hN53Y">
-                    <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                    <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="7kJURBeXxtc" role="33vP2m">
                   <node concept="2OqwBi" id="7kJURBeXxtd" role="2Oq$k0">
                     <node concept="2YIFZM" id="7kJURBeXxte" role="2Oq$k0">
-                      <ref role="1Pybhc" to="9m56:~TraceInfoCache" resolve="TraceInfoCache" />
-                      <ref role="37wK5l" to="9m56:~TraceInfoCache.getInstance():jetbrains.mps.generator.traceInfo.TraceInfoCache" resolve="getInstance" />
+                      <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
+                      <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                     </node>
                     <node concept="liA8E" id="7kJURBeXxtf" role="2OqNvi">
-                      <ref role="37wK5l" to="9m56:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.traceInfo.DebugInfo" resolve="get" />
+                      <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
                       <node concept="2OqwBi" id="7Hpw6GdTU_i" role="37wK5m">
                         <node concept="37vLTw" id="7Hpw6GdTUpw" role="2Oq$k0">
                           <ref role="3cqZAo" node="7Hpw6GdTRKK" resolve="debugSessionConfiguration" />
@@ -29050,7 +29051,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="7kJURBeXxtq" role="2OqNvi">
-                    <ref role="37wK5l" to="4hf9:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
+                    <ref role="37wK5l" to="ierg:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
                     <node concept="37vLTw" id="5HxjapvTdDb" role="37wK5m">
                       <ref role="3cqZAo" node="7kJURBeXxqQ" resolve="root" />
                     </node>
@@ -29063,13 +29064,13 @@
                 <property role="TrG5h" value="filteredTraces" />
                 <node concept="_YKpA" id="7kJURBeXxuw" role="1tU5fm">
                   <node concept="3uibUv" id="7kJURBeXR5S" role="_ZDj9">
-                    <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                    <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
                   </node>
                 </node>
                 <node concept="2ShNRf" id="7kJURBeXxuN" role="33vP2m">
                   <node concept="Tc6Ow" id="7kJURBeXR1U" role="2ShVmc">
                     <node concept="3uibUv" id="7kJURBeXR5Z" role="HW$YZ">
-                      <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                      <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
                     </node>
                   </node>
                 </node>
@@ -29090,7 +29091,7 @@
                         <ref role="2Gs0qQ" node="7kJURBeXR2g" resolve="trace" />
                       </node>
                       <node concept="liA8E" id="7kJURBeXR33" role="2OqNvi">
-                        <ref role="37wK5l" to="4hf9:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
+                        <ref role="37wK5l" to="ierg:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
                       </node>
                     </node>
                     <node concept="liA8E" id="7kJURBeXR3y" role="2OqNvi">
@@ -29323,7 +29324,7 @@
             <property role="TrG5h" value="tracedNodes" />
             <node concept="2hMVRd" id="2cOIosl6WgG" role="1tU5fm">
               <node concept="3uibUv" id="2cOIosl6WgI" role="2hN53Y">
-                <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
               </node>
             </node>
             <node concept="2OqwBi" id="2cOIosl6Wen" role="33vP2m">
@@ -29366,7 +29367,7 @@
                               <ref role="2Gs0qQ" node="2cOIosl6WgK" resolve="trace" />
                             </node>
                             <node concept="liA8E" id="2cOIosl6WdE" role="2OqNvi">
-                              <ref role="37wK5l" to="4hf9:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
+                              <ref role="37wK5l" to="ierg:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="2cOIosl6WdF" role="37wK5m">
@@ -29374,7 +29375,7 @@
                               <ref role="2Gs0qQ" node="2cOIosl6WgK" resolve="trace" />
                             </node>
                             <node concept="liA8E" id="2cOIosl6WdH" role="2OqNvi">
-                              <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                              <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                             </node>
                           </node>
                         </node>
@@ -29394,7 +29395,7 @@
                     <ref role="2Gs0qQ" node="2cOIosl6WgK" resolve="trace" />
                   </node>
                   <node concept="liA8E" id="42zGBUYhdt1" role="2OqNvi">
-                    <ref role="37wK5l" to="4hf9:~TraceablePositionInfo.getConceptFqName():java.lang.String" resolve="getConceptFqName" />
+                    <ref role="37wK5l" to="ierg:~TraceablePositionInfo.getConceptFqName():java.lang.String" resolve="getConceptFqName" />
                   </node>
                 </node>
               </node>
@@ -29435,16 +29436,16 @@
           <node concept="3cpWsn" id="7W4QWPKD_Dn" role="3cpWs9">
             <property role="TrG5h" value="trace" />
             <node concept="3uibUv" id="7W4QWPKD_Do" role="1tU5fm">
-              <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+              <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
             </node>
             <node concept="2OqwBi" id="7W4QWPKD_CU" role="33vP2m">
               <node concept="2OqwBi" id="7W4QWPKD_zQ" role="2Oq$k0">
                 <node concept="2YIFZM" id="7W4QWPKD_zx" role="2Oq$k0">
-                  <ref role="37wK5l" to="9m56:~TraceInfoCache.getInstance():jetbrains.mps.generator.traceInfo.TraceInfoCache" resolve="getInstance" />
-                  <ref role="1Pybhc" to="9m56:~TraceInfoCache" resolve="TraceInfoCache" />
+                  <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
+                  <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                 </node>
                 <node concept="liA8E" id="7W4QWPKD_zW" role="2OqNvi">
-                  <ref role="37wK5l" to="9m56:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.traceInfo.DebugInfo" resolve="get" />
+                  <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
                   <node concept="2OqwBi" id="7Hpw6GdTTJr" role="37wK5m">
                     <node concept="37vLTw" id="7Hpw6GdTT_Q" role="2Oq$k0">
                       <ref role="3cqZAo" node="7Hpw6GdTRKK" resolve="debugSessionConfiguration" />
@@ -29456,7 +29457,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="7W4QWPKD_Df" role="2OqNvi">
-                <ref role="37wK5l" to="4hf9:~DebugInfo.getPositionForNode(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.traceInfo.TraceablePositionInfo" resolve="getPositionForNode" />
+                <ref role="37wK5l" to="ierg:~DebugInfo.getPositionForNode(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.textgen.trace.TraceablePositionInfo" resolve="getPositionForNode" />
                 <node concept="2OqwBi" id="7W4QWPKEzmO" role="37wK5m">
                   <node concept="3cpWs2" id="7W4QWPKD_Dh" role="2Oq$k0">
                     <ref role="3cqZAo" node="7W4QWPKD_zo" resolve="nodeProxy" />
@@ -29479,7 +29480,7 @@
                     <ref role="3cqZAo" node="7W4QWPKD_Dn" resolve="trace" />
                   </node>
                   <node concept="liA8E" id="7W4QWPKEzou" role="2OqNvi">
-                    <ref role="37wK5l" to="4hf9:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
+                    <ref role="37wK5l" to="ierg:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="7W4QWPKEzp1" role="37wK5m">
@@ -29487,7 +29488,7 @@
                     <ref role="3cqZAo" node="7W4QWPKD_Dn" resolve="trace" />
                   </node>
                   <node concept="liA8E" id="7W4QWPKEzpa" role="2OqNvi">
-                    <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                    <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                   </node>
                 </node>
               </node>
@@ -29674,7 +29675,7 @@
         <property role="2RkwnN" value="trace" />
         <node concept="3Tm1VV" id="42zGBUYgPCP" role="1B3o_S" />
         <node concept="3uibUv" id="42zGBUYgPCQ" role="2RkE6I">
-          <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+          <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
         </node>
         <node concept="2RoN1w" id="42zGBUYgPCR" role="2RnVtd">
           <node concept="3wEZqW" id="42zGBUYgPCS" role="3wFrgM" />
@@ -29688,7 +29689,7 @@
         <node concept="3Tm1VV" id="42zGBUYgPCW" role="1B3o_S" />
         <node concept="_YKpA" id="42zGBUYgPCX" role="2RkE6I">
           <node concept="3uibUv" id="42zGBUYgPCY" role="_ZDj9">
-            <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+            <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
           </node>
         </node>
         <node concept="2RoN1w" id="42zGBUYgPCZ" role="2RnVtd">
@@ -29709,7 +29710,7 @@
         <node concept="37vLTG" id="42zGBUYgDvA" role="3clF46">
           <property role="TrG5h" value="trace" />
           <node concept="3uibUv" id="42zGBUYgDvB" role="1tU5fm">
-            <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+            <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
           </node>
         </node>
         <node concept="3cqZAl" id="42zGBUYgDvC" role="3clF45" />
@@ -29754,7 +29755,7 @@
           <property role="TrG5h" value="traces" />
           <node concept="_YKpA" id="42zGBUYgDvV" role="1tU5fm">
             <node concept="3uibUv" id="42zGBUYgDvW" role="_ZDj9">
-              <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+              <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
             </node>
           </node>
         </node>
@@ -31029,7 +31030,7 @@
             <property role="TrG5h" value="firsTraces" />
             <node concept="_YKpA" id="7kJURBeXRcw" role="1tU5fm">
               <node concept="3uibUv" id="7kJURBeXRcx" role="_ZDj9">
-                <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
               </node>
             </node>
             <node concept="2OqwBi" id="7kJURBeXRcS" role="33vP2m">
@@ -31073,7 +31074,7 @@
             <property role="TrG5h" value="secondTraces" />
             <node concept="_YKpA" id="7kJURBeXRd2" role="1tU5fm">
               <node concept="3uibUv" id="7kJURBeXRd3" role="_ZDj9">
-                <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
               </node>
             </node>
             <node concept="2OqwBi" id="7kJURBeXRd4" role="33vP2m">
@@ -31157,7 +31158,7 @@
                             <ref role="2Gs0qQ" node="7kJURBeXR8C" resolve="firstTrace" />
                           </node>
                           <node concept="liA8E" id="42zGBUYlrcY" role="2OqNvi">
-                            <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                            <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                           </node>
                         </node>
                         <node concept="2OqwBi" id="7kJURBeXRdC" role="3uHU7w">
@@ -31165,7 +31166,7 @@
                             <ref role="2Gs0qQ" node="7kJURBeXR9j" resolve="secondTrace" />
                           </node>
                           <node concept="liA8E" id="42zGBUYll_Q" role="2OqNvi">
-                            <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                            <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                           </node>
                         </node>
                       </node>
@@ -31296,7 +31297,7 @@
       <node concept="37vLTG" id="7kJURBeXthU" role="3clF46">
         <property role="TrG5h" value="posInfo" />
         <node concept="3uibUv" id="7kJURBeXtjW" role="1tU5fm">
-          <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+          <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
         </node>
       </node>
       <node concept="37vLTG" id="7kJURBeXtiq" role="3clF46">
@@ -31317,7 +31318,7 @@
                   <ref role="3cqZAo" node="7kJURBeXthU" resolve="posInfo" />
                 </node>
                 <node concept="liA8E" id="7kJURBeXti7" role="2OqNvi">
-                  <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                  <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                 </node>
               </node>
             </node>
@@ -31330,7 +31331,7 @@
                   <ref role="3cqZAo" node="7kJURBeXthU" resolve="posInfo" />
                 </node>
                 <node concept="liA8E" id="7kJURBeXtie" role="2OqNvi">
-                  <ref role="37wK5l" to="4hf9:~PositionInfo.getEndLine():int" resolve="getEndLine" />
+                  <ref role="37wK5l" to="ierg:~PositionInfo.getEndLine():int" resolve="getEndLine" />
                 </node>
               </node>
             </node>
@@ -34373,7 +34374,7 @@
                     <node concept="3cpWsn" id="31LexW00y8U" role="3cpWs9">
                       <property role="TrG5h" value="trace" />
                       <node concept="3uibUv" id="31LexW00y8V" role="1tU5fm">
-                        <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                        <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
                       </node>
                       <node concept="10Nm6u" id="6QA19Wm$lD$" role="33vP2m" />
                     </node>
@@ -34386,11 +34387,11 @@
                       <node concept="2OqwBi" id="6QA19Wm$lER" role="37vLTx">
                         <node concept="2OqwBi" id="6QA19Wm$lES" role="2Oq$k0">
                           <node concept="2YIFZM" id="6QA19Wm$lET" role="2Oq$k0">
-                            <ref role="1Pybhc" to="9m56:~TraceInfoCache" resolve="TraceInfoCache" />
-                            <ref role="37wK5l" to="9m56:~TraceInfoCache.getInstance():jetbrains.mps.generator.traceInfo.TraceInfoCache" resolve="getInstance" />
+                            <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
+                            <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                           </node>
                           <node concept="liA8E" id="6QA19Wm$lEU" role="2OqNvi">
-                            <ref role="37wK5l" to="9m56:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.traceInfo.DebugInfo" resolve="get" />
+                            <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
                             <node concept="2OqwBi" id="7Hpw6GdUz51" role="37wK5m">
                               <node concept="37vLTw" id="7Hpw6GdUz52" role="2Oq$k0">
                                 <ref role="3cqZAo" node="7Hpw6GdUvqm" resolve="debugSessionConfiguration" />
@@ -34402,7 +34403,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="6QA19Wm$lF3" role="2OqNvi">
-                          <ref role="37wK5l" to="4hf9:~DebugInfo.getPositionForNode(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.traceInfo.TraceablePositionInfo" resolve="getPositionForNode" />
+                          <ref role="37wK5l" to="ierg:~DebugInfo.getPositionForNode(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.textgen.trace.TraceablePositionInfo" resolve="getPositionForNode" />
                           <node concept="2OqwBi" id="6QA19Wm$lF4" role="37wK5m">
                             <node concept="2GrUjf" id="6QA19Wm$lF5" role="2Oq$k0">
                               <ref role="2Gs0qQ" node="6EW69Px1GXX" resolve="frameMapping" />
@@ -34425,11 +34426,11 @@
                           <node concept="2OqwBi" id="SDguXU4EBW" role="37vLTx">
                             <node concept="2OqwBi" id="SDguXU4EBX" role="2Oq$k0">
                               <node concept="2YIFZM" id="SDguXU4EBY" role="2Oq$k0">
-                                <ref role="37wK5l" to="9m56:~TraceInfoCache.getInstance():jetbrains.mps.generator.traceInfo.TraceInfoCache" resolve="getInstance" />
-                                <ref role="1Pybhc" to="9m56:~TraceInfoCache" resolve="TraceInfoCache" />
+                                <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
+                                <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                               </node>
                               <node concept="liA8E" id="SDguXU4EBZ" role="2OqNvi">
-                                <ref role="37wK5l" to="9m56:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.traceInfo.DebugInfo" resolve="get" />
+                                <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
                                 <node concept="2OqwBi" id="7Hpw6GdUydB" role="37wK5m">
                                   <node concept="37vLTw" id="7Hpw6GdUxWF" role="2Oq$k0">
                                     <ref role="3cqZAo" node="7Hpw6GdUvqm" resolve="debugSessionConfiguration" />
@@ -34441,7 +34442,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="SDguXU4EC3" role="2OqNvi">
-                              <ref role="37wK5l" to="4hf9:~DebugInfo.getPositionForNode(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.traceInfo.TraceablePositionInfo" resolve="getPositionForNode" />
+                              <ref role="37wK5l" to="ierg:~DebugInfo.getPositionForNode(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.textgen.trace.TraceablePositionInfo" resolve="getPositionForNode" />
                               <node concept="37vLTw" id="5HxjapvQZ6_" role="37wK5m">
                                 <ref role="3cqZAo" node="1P7tsoXeZyy" resolve="currentNode" />
                               </node>
@@ -34464,7 +34465,7 @@
                           <ref role="3cqZAo" node="31LexW00y8U" resolve="trace" />
                         </node>
                         <node concept="liA8E" id="31LexW00y9E" role="2OqNvi">
-                          <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                          <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                         </node>
                       </node>
                       <node concept="2OqwBi" id="31LexW00tfy" role="37vLTJ">
@@ -34492,7 +34493,7 @@
                           <ref role="3cqZAo" node="31LexW00y8U" resolve="trace" />
                         </node>
                         <node concept="liA8E" id="31LexW00y9L" role="2OqNvi">
-                          <ref role="37wK5l" to="4hf9:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
+                          <ref role="37wK5l" to="ierg:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
                         </node>
                       </node>
                     </node>
@@ -34562,11 +34563,11 @@
               <node concept="2OqwBi" id="4DC8Sn_X97m" role="2Oq$k0">
                 <node concept="2OqwBi" id="4DC8Sn_X97n" role="2Oq$k0">
                   <node concept="2YIFZM" id="4DC8Sn_X97o" role="2Oq$k0">
-                    <ref role="37wK5l" to="9m56:~TraceInfoCache.getInstance():jetbrains.mps.generator.traceInfo.TraceInfoCache" resolve="getInstance" />
-                    <ref role="1Pybhc" to="9m56:~TraceInfoCache" resolve="TraceInfoCache" />
+                    <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
+                    <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                   </node>
                   <node concept="liA8E" id="4DC8Sn_X97p" role="2OqNvi">
-                    <ref role="37wK5l" to="9m56:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.traceInfo.DebugInfo" resolve="get" />
+                    <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
                     <node concept="2OqwBi" id="7Hpw6GdUzu2" role="37wK5m">
                       <node concept="37vLTw" id="7Hpw6GdUzu3" role="2Oq$k0">
                         <ref role="3cqZAo" node="7Hpw6GdUvqm" resolve="debugSessionConfiguration" />
@@ -34578,14 +34579,14 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="4DC8Sn_X97w" role="2OqNvi">
-                  <ref role="37wK5l" to="4hf9:~DebugInfo.getPositionForNode(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.traceInfo.TraceablePositionInfo" resolve="getPositionForNode" />
+                  <ref role="37wK5l" to="ierg:~DebugInfo.getPositionForNode(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.textgen.trace.TraceablePositionInfo" resolve="getPositionForNode" />
                   <node concept="3cpWs2" id="4DC8Sn_X97x" role="37wK5m">
                     <ref role="3cqZAo" node="4DC8Sn_X93n" resolve="node" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="4DC8Sn_X97H" role="2OqNvi">
-                <ref role="37wK5l" to="4hf9:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
+                <ref role="37wK5l" to="ierg:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
               </node>
             </node>
           </node>
@@ -56062,13 +56063,13 @@
             <property role="TrG5h" value="filteredTraces" />
             <node concept="2hMVRd" id="$zo7noTD6U" role="1tU5fm">
               <node concept="3uibUv" id="$zo7noTD6V" role="2hN53Y">
-                <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
               </node>
             </node>
             <node concept="2ShNRf" id="$zo7noTD6W" role="33vP2m">
               <node concept="34wSKj" id="$zo7noTD6X" role="2ShVmc">
                 <node concept="3uibUv" id="$zo7noTD6Y" role="HW$YZ">
-                  <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                  <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
                 </node>
               </node>
             </node>
@@ -56132,8 +56133,8 @@
                   <property role="Xl_RC" value="gInst: " />
                 </node>
                 <node concept="2YIFZM" id="7SijymUTy5s" role="3uHU7w">
-                  <ref role="37wK5l" to="9m56:~TraceInfoCache.getInstance():jetbrains.mps.generator.traceInfo.TraceInfoCache" resolve="getInstance" />
-                  <ref role="1Pybhc" to="9m56:~TraceInfoCache" resolve="TraceInfoCache" />
+                  <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
+                  <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                 </node>
               </node>
             </node>
@@ -56153,11 +56154,11 @@
                 </node>
                 <node concept="2OqwBi" id="7SijymUT_Gp" role="3uHU7w">
                   <node concept="2YIFZM" id="7SijymUT_Gq" role="2Oq$k0">
-                    <ref role="37wK5l" to="9m56:~TraceInfoCache.getInstance():jetbrains.mps.generator.traceInfo.TraceInfoCache" resolve="getInstance" />
-                    <ref role="1Pybhc" to="9m56:~TraceInfoCache" resolve="TraceInfoCache" />
+                    <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
+                    <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                   </node>
                   <node concept="liA8E" id="7SijymUT_Gr" role="2OqNvi">
-                    <ref role="37wK5l" to="9m56:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.traceInfo.DebugInfo" resolve="get" />
+                    <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
                     <node concept="2OqwBi" id="7SijymUT_Gs" role="37wK5m">
                       <node concept="2YIFZM" id="7SijymUT_Gt" role="2Oq$k0">
                         <ref role="1Pybhc" node="3cLA2s_Tjxu" resolve="MDebugSessionConfiguration" />
@@ -56178,17 +56179,17 @@
             <property role="TrG5h" value="allTraces" />
             <node concept="2hMVRd" id="$zo7noTD5L" role="1tU5fm">
               <node concept="3uibUv" id="$zo7noTD5M" role="2hN53Y">
-                <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
               </node>
             </node>
             <node concept="2OqwBi" id="$zo7noTD4c" role="33vP2m">
               <node concept="2OqwBi" id="$zo7noTD4d" role="2Oq$k0">
                 <node concept="2YIFZM" id="$zo7noTD4e" role="2Oq$k0">
-                  <ref role="1Pybhc" to="9m56:~TraceInfoCache" resolve="TraceInfoCache" />
-                  <ref role="37wK5l" to="9m56:~TraceInfoCache.getInstance():jetbrains.mps.generator.traceInfo.TraceInfoCache" resolve="getInstance" />
+                  <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
+                  <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                 </node>
                 <node concept="liA8E" id="$zo7noTD4f" role="2OqNvi">
-                  <ref role="37wK5l" to="9m56:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.traceInfo.DebugInfo" resolve="get" />
+                  <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
                   <node concept="2OqwBi" id="7Hpw6GdU4pD" role="37wK5m">
                     <node concept="2YIFZM" id="7Hpw6GdU4pE" role="2Oq$k0">
                       <ref role="37wK5l" node="7Hpw6GdT1O$" resolve="getInstance" />
@@ -56201,7 +56202,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="$zo7noTD4p" role="2OqNvi">
-                <ref role="37wK5l" to="4hf9:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
+                <ref role="37wK5l" to="ierg:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
                 <node concept="2OqwBi" id="$zo7noTD4q" role="37wK5m">
                   <node concept="3cpWs2" id="$zo7noTD4r" role="2Oq$k0">
                     <ref role="3cqZAo" node="$zo7noTD4U" resolve="rootNode" />
@@ -56244,7 +56245,7 @@
                     <ref role="2Gs0qQ" node="$zo7noTD4u" resolve="trace" />
                   </node>
                   <node concept="liA8E" id="$zo7noTD4F" role="2OqNvi">
-                    <ref role="37wK5l" to="4hf9:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
+                    <ref role="37wK5l" to="ierg:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
                   </node>
                 </node>
                 <node concept="liA8E" id="$zo7noTD4G" role="2OqNvi">
@@ -56282,7 +56283,7 @@
       </node>
       <node concept="2hMVRd" id="$zo7noTD47" role="3clF45">
         <node concept="3uibUv" id="$zo7noTD48" role="2hN53Y">
-          <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+          <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
         </node>
       </node>
     </node>
@@ -56304,7 +56305,7 @@
       <node concept="3Tm1VV" id="2cOIosl6kOh" role="1B3o_S" />
       <node concept="2hMVRd" id="2cOIosl6kOi" role="3clF45">
         <node concept="3uibUv" id="2cOIosl6kOj" role="2hN53Y">
-          <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+          <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
         </node>
       </node>
       <node concept="3clFbS" id="2cOIosl6kOk" role="3clF47">
@@ -56313,13 +56314,13 @@
             <property role="TrG5h" value="filteredTraces" />
             <node concept="2hMVRd" id="2cOIosl6kOJ" role="1tU5fm">
               <node concept="3uibUv" id="2cOIosl6kQm" role="2hN53Y">
-                <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
               </node>
             </node>
             <node concept="2ShNRf" id="2cOIosl6kOO" role="33vP2m">
               <node concept="34wSKj" id="2cOIosl6kOQ" role="2ShVmc">
                 <node concept="3uibUv" id="2cOIosl6kQn" role="HW$YZ">
-                  <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                  <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
                 </node>
               </node>
             </node>
@@ -56410,7 +56411,7 @@
       <node concept="3Tm1VV" id="6peY0n88aqp" role="1B3o_S" />
       <node concept="2hMVRd" id="6peY0n88aqr" role="3clF45">
         <node concept="3uibUv" id="6peY0n88aqs" role="2hN53Y">
-          <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+          <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
         </node>
       </node>
       <node concept="3clFbS" id="6peY0n88aqt" role="3clF47">
@@ -56419,7 +56420,7 @@
             <property role="TrG5h" value="allTracesForNode" />
             <node concept="2hMVRd" id="6peY0n88q3T" role="1tU5fm">
               <node concept="3uibUv" id="6peY0n88q3W" role="2hN53Y">
-                <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
               </node>
             </node>
             <node concept="2OqwBi" id="6peY0n88q3Z" role="33vP2m">
@@ -56441,13 +56442,13 @@
             <property role="TrG5h" value="result" />
             <node concept="2hMVRd" id="6peY0n88_vG" role="1tU5fm">
               <node concept="3uibUv" id="6peY0n88TYM" role="2hN53Y">
-                <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
               </node>
             </node>
             <node concept="2ShNRf" id="6peY0n88EME" role="33vP2m">
               <node concept="2i4dXS" id="6peY0n88EM_" role="2ShVmc">
                 <node concept="3uibUv" id="6peY0n88Wup" role="HW$YZ">
-                  <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                  <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
                 </node>
               </node>
             </node>
@@ -56487,7 +56488,7 @@
                     <ref role="2Gs0qQ" node="6peY0n894Yi" resolve="trace" />
                   </node>
                   <node concept="liA8E" id="6peY0n8LGur" role="2OqNvi">
-                    <ref role="37wK5l" to="4hf9:~TraceablePositionInfo.getConceptFqName():java.lang.String" resolve="getConceptFqName" />
+                    <ref role="37wK5l" to="ierg:~TraceablePositionInfo.getConceptFqName():java.lang.String" resolve="getConceptFqName" />
                   </node>
                 </node>
               </node>
@@ -56525,7 +56526,7 @@
       <node concept="3clFbS" id="2cOIosl5D9T" role="3clF47" />
       <node concept="2hMVRd" id="2cOIosl5D9Y" role="3clF45">
         <node concept="3uibUv" id="2cOIosl5QHs" role="2hN53Y">
-          <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+          <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
         </node>
       </node>
     </node>
@@ -56552,7 +56553,7 @@
       <node concept="3clFbS" id="6peY0n883s8" role="3clF47" />
       <node concept="2hMVRd" id="6peY0n883s9" role="3clF45">
         <node concept="3uibUv" id="6peY0n883sa" role="2hN53Y">
-          <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+          <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
         </node>
       </node>
     </node>
@@ -56710,17 +56711,17 @@
             <node concept="3uibUv" id="6fmd53k3aar" role="1tU5fm">
               <ref role="3uigEE" to="k7g3:~Set" resolve="Set" />
               <node concept="3uibUv" id="6fmd53k3aas" role="11_B2D">
-                <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
               </node>
             </node>
             <node concept="2OqwBi" id="6fmd53k3aat" role="33vP2m">
               <node concept="2OqwBi" id="6fmd53k3aau" role="2Oq$k0">
                 <node concept="2YIFZM" id="6fmd53k3aav" role="2Oq$k0">
-                  <ref role="37wK5l" to="9m56:~TraceInfoCache.getInstance():jetbrains.mps.generator.traceInfo.TraceInfoCache" resolve="getInstance" />
-                  <ref role="1Pybhc" to="9m56:~TraceInfoCache" resolve="TraceInfoCache" />
+                  <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
+                  <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                 </node>
                 <node concept="liA8E" id="6fmd53k3aaw" role="2OqNvi">
-                  <ref role="37wK5l" to="9m56:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.traceInfo.DebugInfo" resolve="get" />
+                  <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
                   <node concept="2OqwBi" id="6fmd53k3aax" role="37wK5m">
                     <node concept="2YIFZM" id="6fmd53k3aay" role="2Oq$k0">
                       <ref role="37wK5l" node="7Hpw6GdT1O$" resolve="getInstance" />
@@ -56733,7 +56734,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="6fmd53k3aa$" role="2OqNvi">
-                <ref role="37wK5l" to="4hf9:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
+                <ref role="37wK5l" to="ierg:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
                 <node concept="37vLTw" id="6fmd53k6CPi" role="37wK5m">
                   <ref role="3cqZAo" node="6fmd53k6Bje" resolve="rootNode" />
                 </node>
@@ -56783,7 +56784,7 @@
                           <ref role="2Gs0qQ" node="6fmd53k3aaB" resolve="trace" />
                         </node>
                         <node concept="liA8E" id="6fmd53k477T" role="2OqNvi">
-                          <ref role="37wK5l" to="4hf9:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
+                          <ref role="37wK5l" to="ierg:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
                         </node>
                       </node>
                     </node>
@@ -56800,7 +56801,7 @@
                           <ref role="2Gs0qQ" node="6fmd53k3aaB" resolve="trace" />
                         </node>
                         <node concept="liA8E" id="6fmd53k3yNA" role="2OqNvi">
-                          <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                          <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                         </node>
                       </node>
                     </node>
@@ -56815,7 +56816,7 @@
                         <ref role="2Gs0qQ" node="6fmd53k3aaB" resolve="trace" />
                       </node>
                       <node concept="liA8E" id="6fmd53k3EuO" role="2OqNvi">
-                        <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                        <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                       </node>
                     </node>
                   </node>
@@ -56848,7 +56849,7 @@
                         <ref role="2Gs0qQ" node="6fmd53k3aaB" resolve="trace" />
                       </node>
                       <node concept="liA8E" id="6fmd53k3GSF" role="2OqNvi">
-                        <ref role="37wK5l" to="4hf9:~PositionInfo.getEndLine():int" resolve="getEndLine" />
+                        <ref role="37wK5l" to="ierg:~PositionInfo.getEndLine():int" resolve="getEndLine" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="6fmd53k3K8v" role="3uHU7B">
@@ -56863,7 +56864,7 @@
                     <ref role="2Gs0qQ" node="6fmd53k3aaB" resolve="trace" />
                   </node>
                   <node concept="liA8E" id="6fmd53k8S9x" role="2OqNvi">
-                    <ref role="37wK5l" to="4hf9:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
+                    <ref role="37wK5l" to="ierg:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
                   </node>
                 </node>
                 <node concept="liA8E" id="6fmd53k8S9y" role="2OqNvi">
@@ -56987,17 +56988,17 @@
             <node concept="3uibUv" id="SDguXU4IK5" role="1tU5fm">
               <ref role="3uigEE" to="k7g3:~Set" resolve="Set" />
               <node concept="3uibUv" id="SDguXU4IK6" role="11_B2D">
-                <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
               </node>
             </node>
             <node concept="2OqwBi" id="SDguXU4IK7" role="33vP2m">
               <node concept="2OqwBi" id="SDguXU4IK8" role="2Oq$k0">
                 <node concept="2YIFZM" id="SDguXU4IK9" role="2Oq$k0">
-                  <ref role="1Pybhc" to="9m56:~TraceInfoCache" resolve="TraceInfoCache" />
-                  <ref role="37wK5l" to="9m56:~TraceInfoCache.getInstance():jetbrains.mps.generator.traceInfo.TraceInfoCache" resolve="getInstance" />
+                  <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
+                  <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                 </node>
                 <node concept="liA8E" id="SDguXU4IKa" role="2OqNvi">
-                  <ref role="37wK5l" to="9m56:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.traceInfo.DebugInfo" resolve="get" />
+                  <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
                   <node concept="2OqwBi" id="7Hpw6GdUdg9" role="37wK5m">
                     <node concept="2YIFZM" id="7Hpw6GdUdga" role="2Oq$k0">
                       <ref role="37wK5l" node="7Hpw6GdT1O$" resolve="getInstance" />
@@ -57010,7 +57011,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="SDguXU4IKg" role="2OqNvi">
-                <ref role="37wK5l" to="4hf9:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
+                <ref role="37wK5l" to="ierg:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
                 <node concept="3cpWsa" id="SDguXU4IKh" role="37wK5m">
                   <ref role="3cqZAo" node="SDguXU4IJO" resolve="root" />
                 </node>
@@ -57033,7 +57034,7 @@
                     <ref role="2Gs0qQ" node="SDguXU4IKr" resolve="trace" />
                   </node>
                   <node concept="liA8E" id="SDguXU4IKy" role="2OqNvi">
-                    <ref role="37wK5l" to="4hf9:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
+                    <ref role="37wK5l" to="ierg:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
                   </node>
                 </node>
                 <node concept="liA8E" id="SDguXU4IKz" role="2OqNvi">
@@ -57068,7 +57069,7 @@
                               <ref role="2Gs0qQ" node="SDguXU4IKr" resolve="trace" />
                             </node>
                             <node concept="liA8E" id="SDguXU4IKG" role="2OqNvi">
-                              <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                              <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                             </node>
                           </node>
                           <node concept="3$87h9" id="SDguXU4IZk" role="37wK5m">
@@ -57078,7 +57079,7 @@
                                 <ref role="2Gs0qQ" node="SDguXU4IKr" resolve="trace" />
                               </node>
                               <node concept="liA8E" id="SDguXU4IZL" role="2OqNvi">
-                                <ref role="37wK5l" to="4hf9:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
+                                <ref role="37wK5l" to="ierg:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
                               </node>
                             </node>
                           </node>
@@ -58122,17 +58123,17 @@
                 <node concept="3uibUv" id="1rtLOiybRdz" role="1tU5fm">
                   <ref role="3uigEE" to="k7g3:~Set" resolve="Set" />
                   <node concept="3uibUv" id="1rtLOiybRd$" role="11_B2D">
-                    <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                    <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="1rtLOiybRd_" role="33vP2m">
                   <node concept="2OqwBi" id="1rtLOiybRdA" role="2Oq$k0">
                     <node concept="2YIFZM" id="1rtLOiybRdB" role="2Oq$k0">
-                      <ref role="37wK5l" to="9m56:~TraceInfoCache.getInstance():jetbrains.mps.generator.traceInfo.TraceInfoCache" resolve="getInstance" />
-                      <ref role="1Pybhc" to="9m56:~TraceInfoCache" resolve="TraceInfoCache" />
+                      <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
+                      <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                     </node>
                     <node concept="liA8E" id="1rtLOiybRdC" role="2OqNvi">
-                      <ref role="37wK5l" to="9m56:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.traceInfo.DebugInfo" resolve="get" />
+                      <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
                       <node concept="2OqwBi" id="7Hpw6GdU2CS" role="37wK5m">
                         <node concept="2YIFZM" id="7Hpw6GdU2CT" role="2Oq$k0">
                           <ref role="37wK5l" node="7Hpw6GdT1O$" resolve="getInstance" />
@@ -58145,7 +58146,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="1rtLOiybRdG" role="2OqNvi">
-                    <ref role="37wK5l" to="4hf9:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
+                    <ref role="37wK5l" to="ierg:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
                     <node concept="37vLTw" id="1rtLOiybRdH" role="37wK5m">
                       <ref role="3cqZAo" node="1rtLOiybRdj" resolve="root" />
                     </node>
@@ -58184,7 +58185,7 @@
                         <ref role="2Gs0qQ" node="1rtLOiybRdR" resolve="trace" />
                       </node>
                       <node concept="liA8E" id="1rtLOiybRdY" role="2OqNvi">
-                        <ref role="37wK5l" to="4hf9:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
+                        <ref role="37wK5l" to="ierg:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
                       </node>
                     </node>
                     <node concept="liA8E" id="1rtLOiybRdZ" role="2OqNvi">
@@ -58215,7 +58216,7 @@
                             <ref role="2Gs0qQ" node="1rtLOiybRdR" resolve="trace" />
                           </node>
                           <node concept="liA8E" id="1rtLOiybReb" role="2OqNvi">
-                            <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                            <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                           </node>
                         </node>
                       </node>
@@ -58227,7 +58228,7 @@
                                 <ref role="2Gs0qQ" node="1rtLOiybRdR" resolve="trace" />
                               </node>
                               <node concept="liA8E" id="1rtLOiybReh" role="2OqNvi">
-                                <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                                <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                               </node>
                             </node>
                             <node concept="37vLTw" id="1rtLOiybRei" role="37vLTJ">
@@ -58242,7 +58243,7 @@
                                 <ref role="2Gs0qQ" node="1rtLOiybRdR" resolve="trace" />
                               </node>
                               <node concept="liA8E" id="1rtLOiybRen" role="2OqNvi">
-                                <ref role="37wK5l" to="4hf9:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
+                                <ref role="37wK5l" to="ierg:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
                               </node>
                             </node>
                             <node concept="3cpWsa" id="1rtLOiybReo" role="37vLTJ">
@@ -58274,7 +58275,7 @@
                               <ref role="2Gs0qQ" node="1rtLOiybRes" resolve="trace" />
                             </node>
                             <node concept="liA8E" id="1rtLOiybRe$" role="2OqNvi">
-                              <ref role="37wK5l" to="4hf9:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
+                              <ref role="37wK5l" to="ierg:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
                             </node>
                           </node>
                           <node concept="liA8E" id="1rtLOiybRe_" role="2OqNvi">
@@ -58300,7 +58301,7 @@
                               <ref role="2Gs0qQ" node="1rtLOiybRes" resolve="trace" />
                             </node>
                             <node concept="liA8E" id="1rtLOiybReI" role="2OqNvi">
-                              <ref role="37wK5l" to="4hf9:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
+                              <ref role="37wK5l" to="ierg:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
                             </node>
                           </node>
                           <node concept="liA8E" id="1rtLOiybReJ" role="2OqNvi">
@@ -58332,7 +58333,7 @@
                                 <ref role="2Gs0qQ" node="1rtLOiybRes" resolve="trace" />
                               </node>
                               <node concept="liA8E" id="1rtLOiybReV" role="2OqNvi">
-                                <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                                <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                               </node>
                             </node>
                           </node>
@@ -58355,7 +58356,7 @@
                                     <ref role="2Gs0qQ" node="1rtLOiybRes" resolve="trace" />
                                   </node>
                                   <node concept="liA8E" id="1rtLOiybRf5" role="2OqNvi">
-                                    <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                                    <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                                   </node>
                                 </node>
                                 <node concept="37vLTw" id="1rtLOiybRf6" role="37vLTJ">
@@ -58370,7 +58371,7 @@
                                     <ref role="2Gs0qQ" node="1rtLOiybRes" resolve="trace" />
                                   </node>
                                   <node concept="liA8E" id="1rtLOiybRfb" role="2OqNvi">
-                                    <ref role="37wK5l" to="4hf9:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
+                                    <ref role="37wK5l" to="ierg:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
                                   </node>
                                 </node>
                                 <node concept="37vLTw" id="1rtLOiybRfc" role="37vLTJ">
@@ -58848,17 +58849,17 @@
             <node concept="3uibUv" id="wlA5s7hLcC" role="1tU5fm">
               <ref role="3uigEE" to="k7g3:~Set" resolve="Set" />
               <node concept="3uibUv" id="wlA5s7hLcD" role="11_B2D">
-                <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
               </node>
             </node>
             <node concept="2OqwBi" id="wlA5s7hLcE" role="33vP2m">
               <node concept="2OqwBi" id="wlA5s7hLcF" role="2Oq$k0">
                 <node concept="2YIFZM" id="wlA5s7hLcG" role="2Oq$k0">
-                  <ref role="1Pybhc" to="9m56:~TraceInfoCache" resolve="TraceInfoCache" />
-                  <ref role="37wK5l" to="9m56:~TraceInfoCache.getInstance():jetbrains.mps.generator.traceInfo.TraceInfoCache" resolve="getInstance" />
+                  <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
+                  <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                 </node>
                 <node concept="liA8E" id="wlA5s7hLcH" role="2OqNvi">
-                  <ref role="37wK5l" to="9m56:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.traceInfo.DebugInfo" resolve="get" />
+                  <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
                   <node concept="2OqwBi" id="7Hpw6GdTXr1" role="37wK5m">
                     <node concept="2YIFZM" id="7Hpw6GdTXr2" role="2Oq$k0">
                       <ref role="37wK5l" node="7Hpw6GdT1O$" resolve="getInstance" />
@@ -58871,7 +58872,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="wlA5s7hLcP" role="2OqNvi">
-                <ref role="37wK5l" to="4hf9:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
+                <ref role="37wK5l" to="ierg:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
                 <node concept="37vLTw" id="5Hxjapweqjt" role="37wK5m">
                   <ref role="3cqZAo" node="wlA5s7hLcn" resolve="rootNode" />
                 </node>
@@ -59072,7 +59073,7 @@
         <node concept="3uibUv" id="1brT1dA5VXN" role="1tU5fm">
           <ref role="3uigEE" to="k7g3:~Set" resolve="Set" />
           <node concept="3uibUv" id="1brT1dA5VXO" role="11_B2D">
-            <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+            <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
           </node>
         </node>
       </node>
@@ -59138,7 +59139,7 @@
                       <ref role="2Gs0qQ" node="1brT1dA5Vaj" resolve="trace" />
                     </node>
                     <node concept="liA8E" id="1brT1dA5Var" role="2OqNvi">
-                      <ref role="37wK5l" to="4hf9:~TraceablePositionInfo.getConceptFqName():java.lang.String" resolve="getConceptFqName" />
+                      <ref role="37wK5l" to="ierg:~TraceablePositionInfo.getConceptFqName():java.lang.String" resolve="getConceptFqName" />
                     </node>
                   </node>
                   <node concept="liA8E" id="1brT1dA5Vas" role="2OqNvi">
@@ -59154,7 +59155,7 @@
                       <ref role="2Gs0qQ" node="1brT1dA5Vaj" resolve="trace" />
                     </node>
                     <node concept="liA8E" id="1brT1dA5Vax" role="2OqNvi">
-                      <ref role="37wK5l" to="4hf9:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
+                      <ref role="37wK5l" to="ierg:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
                     </node>
                   </node>
                   <node concept="liA8E" id="1brT1dA5Vay" role="2OqNvi">
@@ -59177,7 +59178,7 @@
                           <ref role="2Gs0qQ" node="1brT1dA5Vaj" resolve="trace" />
                         </node>
                         <node concept="liA8E" id="1brT1dA5VaJ" role="2OqNvi">
-                          <ref role="37wK5l" to="4hf9:~TraceablePositionInfo.getPropertyString():java.lang.String" resolve="getPropertyString" />
+                          <ref role="37wK5l" to="ierg:~TraceablePositionInfo.getPropertyString():java.lang.String" resolve="getPropertyString" />
                         </node>
                       </node>
                     </node>
@@ -59480,7 +59481,7 @@
             <property role="TrG5h" value="traces" />
             <node concept="A3Dl8" id="EAFuLEskmL" role="1tU5fm">
               <node concept="3uibUv" id="EAFuLEskmN" role="A3Ik2">
-                <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
               </node>
             </node>
             <node concept="1rXfSq" id="EAFuLEsh7k" role="33vP2m">
@@ -59520,7 +59521,7 @@
                                   <ref role="3cqZAo" node="EAFuLEso9E" resolve="trace" />
                                 </node>
                                 <node concept="liA8E" id="EAFuLEsolJ" role="2OqNvi">
-                                  <ref role="37wK5l" to="4hf9:~TraceablePositionInfo.getConceptFqName():java.lang.String" resolve="getConceptFqName" />
+                                  <ref role="37wK5l" to="ierg:~TraceablePositionInfo.getConceptFqName():java.lang.String" resolve="getConceptFqName" />
                                 </node>
                               </node>
                               <node concept="liA8E" id="EAFuLEsolK" role="2OqNvi">
@@ -59537,7 +59538,7 @@
                                     <ref role="3cqZAo" node="EAFuLEso9E" resolve="trace" />
                                   </node>
                                   <node concept="liA8E" id="EAFuLEsolQ" role="2OqNvi">
-                                    <ref role="37wK5l" to="4hf9:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
+                                    <ref role="37wK5l" to="ierg:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="EAFuLEsolR" role="2OqNvi">
@@ -59579,7 +59580,7 @@
                             <ref role="3cqZAo" node="EAFuLEsqK7" resolve="trace" />
                           </node>
                           <node concept="liA8E" id="EAFuLEsttd" role="2OqNvi">
-                            <ref role="37wK5l" to="4hf9:~TraceablePositionInfo.getPropertyString():java.lang.String" resolve="getPropertyString" />
+                            <ref role="37wK5l" to="ierg:~TraceablePositionInfo.getPropertyString():java.lang.String" resolve="getPropertyString" />
                           </node>
                         </node>
                       </node>
@@ -59618,7 +59619,7 @@
                                       <ref role="3cqZAo" node="EAFuLEsCmv" resolve="trace" />
                                     </node>
                                     <node concept="liA8E" id="3gXIijCHJdX" role="2OqNvi">
-                                      <ref role="37wK5l" to="4hf9:~TraceablePositionInfo.getConceptFqName():java.lang.String" resolve="getConceptFqName" />
+                                      <ref role="37wK5l" to="ierg:~TraceablePositionInfo.getConceptFqName():java.lang.String" resolve="getConceptFqName" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="3gXIijCHJdY" role="2OqNvi">
@@ -59635,7 +59636,7 @@
                                         <ref role="3cqZAo" node="EAFuLEsCmv" resolve="trace" />
                                       </node>
                                       <node concept="liA8E" id="3gXIijCHJel" role="2OqNvi">
-                                        <ref role="37wK5l" to="4hf9:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
+                                        <ref role="37wK5l" to="ierg:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="3gXIijCHJem" role="2OqNvi">
@@ -59675,7 +59676,7 @@
                                 <ref role="3cqZAo" node="EAFuLEsCmC" resolve="trace" />
                               </node>
                               <node concept="liA8E" id="EAFuLEsCmB" role="2OqNvi">
-                                <ref role="37wK5l" to="4hf9:~TraceablePositionInfo.getPropertyString():java.lang.String" resolve="getPropertyString" />
+                                <ref role="37wK5l" to="ierg:~TraceablePositionInfo.getPropertyString():java.lang.String" resolve="getPropertyString" />
                               </node>
                             </node>
                           </node>
@@ -59729,17 +59730,17 @@
             <property role="TrG5h" value="allTraces" />
             <node concept="2hMVRd" id="EAFuLErVK7" role="1tU5fm">
               <node concept="3uibUv" id="EAFuLErVK8" role="2hN53Y">
-                <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
               </node>
             </node>
             <node concept="2OqwBi" id="EAFuLErVK9" role="33vP2m">
               <node concept="2OqwBi" id="EAFuLErVKa" role="2Oq$k0">
                 <node concept="2YIFZM" id="EAFuLErVKb" role="2Oq$k0">
-                  <ref role="37wK5l" to="9m56:~TraceInfoCache.getInstance():jetbrains.mps.generator.traceInfo.TraceInfoCache" resolve="getInstance" />
-                  <ref role="1Pybhc" to="9m56:~TraceInfoCache" resolve="TraceInfoCache" />
+                  <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
+                  <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
                 </node>
                 <node concept="liA8E" id="EAFuLErVKc" role="2OqNvi">
-                  <ref role="37wK5l" to="9m56:~TraceInfoCache.get(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.traceInfo.DebugInfo" resolve="get" />
+                  <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
                   <node concept="2OqwBi" id="7Hpw6GdTWbi" role="37wK5m">
                     <node concept="2YIFZM" id="7Hpw6GdTW77" role="2Oq$k0">
                       <ref role="37wK5l" node="7Hpw6GdT1O$" resolve="getInstance" />
@@ -59752,7 +59753,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="EAFuLErVKg" role="2OqNvi">
-                <ref role="37wK5l" to="4hf9:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
+                <ref role="37wK5l" to="ierg:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
                 <node concept="37vLTw" id="EAFuLErYEv" role="37wK5m">
                   <ref role="3cqZAo" node="EAFuLErWeY" resolve="rootNode" />
                 </node>
@@ -59775,7 +59776,7 @@
                           <ref role="3cqZAo" node="EAFuLEs1iC" resolve="trace" />
                         </node>
                         <node concept="liA8E" id="EAFuLEs1AY" role="2OqNvi">
-                          <ref role="37wK5l" to="4hf9:~TraceablePositionInfo.getConceptFqName():java.lang.String" resolve="getConceptFqName" />
+                          <ref role="37wK5l" to="ierg:~TraceablePositionInfo.getConceptFqName():java.lang.String" resolve="getConceptFqName" />
                         </node>
                       </node>
                       <node concept="liA8E" id="EAFuLEs1AZ" role="2OqNvi">
@@ -59810,7 +59811,7 @@
       </node>
       <node concept="A3Dl8" id="EAFuLEs79r" role="3clF45">
         <node concept="3uibUv" id="EAFuLEs9e3" role="A3Ik2">
-          <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+          <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
         </node>
       </node>
       <node concept="3Tm6S6" id="EAFuLEscQM" role="1B3o_S" />

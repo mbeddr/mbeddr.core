@@ -28,7 +28,6 @@
     <import index="f655" ref="f:java_stub#85d9f97b-1654-4692-b61c-fcc40db03653#com.google.inject.name(Eclipse.Debugger/com.google.inject.name@java_stub)" />
     <import index="b2mh" ref="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.project(MPS.IDEA/com.intellij.openapi.project@java_stub)" />
     <import index="xqpa" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang.reflect(JDK/java.lang.reflect@java_stub)" />
-    <import index="4hf9" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.traceInfo(MPS.Core/jetbrains.mps.traceInfo@java_stub)" />
     <import index="rw00" ref="r:d910d08e-4a00-41f9-ac8b-b7c374586874(jetbrains.mps.debug.api.breakpoints)" />
     <import index="5ths" ref="r:0cf7389f-e174-4742-a3d2-15c79317838a(jetbrains.mps.debug.api.run)" />
     <import index="1l1h" ref="r:c02662c0-67c5-4c3a-8d3a-cd7ffe189340(jetbrains.mps.debug.api)" />
@@ -46,6 +45,7 @@
     <import index="9e9y" ref="f:java_stub#85d9f97b-1654-4692-b61c-fcc40db03653#org.eclipse.cdt.debug.mi.core.cdi.model(Eclipse.Debugger/org.eclipse.cdt.debug.mi.core.cdi.model@java_stub)" />
     <import index="blwm" ref="r:61a45d85-604a-4af4-8729-16a36d455774(com.mbeddr.core.debug.plugin)" />
     <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="ierg" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.textgen.trace(MPS.Core/jetbrains.mps.textgen.trace@java_stub)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -15331,14 +15331,14 @@
         <node concept="3cpWs8" id="5XU7UUGbbyd" role="3cqZAp">
           <node concept="3cpWsn" id="5XU7UUGbbye" role="3cpWs9">
             <property role="TrG5h" value="posInfo" />
-            <node concept="3uibUv" id="2cOIosl5QJF" role="1tU5fm">
-              <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+            <node concept="3uibUv" id="2IABk5_7whG" role="1tU5fm">
+              <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
             </node>
             <node concept="2YIFZM" id="5XU7UUGbbyg" role="33vP2m">
               <ref role="1Pybhc" to="s0qc:~EasyMock" resolve="EasyMock" />
               <ref role="37wK5l" to="s0qc:~EasyMock.createMock(java.lang.Class):java.lang.Object" resolve="createMock" />
               <node concept="3VsKOn" id="2cOIosl5QJH" role="37wK5m">
-                <ref role="3VsUkX" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                <ref role="3VsUkX" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
               </node>
             </node>
           </node>
@@ -15378,13 +15378,13 @@
             <property role="TrG5h" value="pos" />
             <node concept="2hMVRd" id="2cOIosl5DhE" role="1tU5fm">
               <node concept="3uibUv" id="2cOIosl5QJD" role="2hN53Y">
-                <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
               </node>
             </node>
             <node concept="2ShNRf" id="2cOIosl5Dil" role="33vP2m">
               <node concept="34wSKj" id="2cOIosl5HL1" role="2ShVmc">
                 <node concept="3uibUv" id="2cOIosl5QJE" role="HW$YZ">
-                  <ref role="3uigEE" to="4hf9:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
+                  <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
                 </node>
               </node>
             </node>
@@ -15457,7 +15457,7 @@
                     <ref role="3cqZAo" node="5XU7UUGbbye" resolve="posInfo" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGbbyz" role="2OqNvi">
-                    <ref role="37wK5l" to="4hf9:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
+                    <ref role="37wK5l" to="ierg:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
                   </node>
                 </node>
               </node>
@@ -15484,7 +15484,7 @@
                     <ref role="3cqZAo" node="5XU7UUGbbye" resolve="posInfo" />
                   </node>
                   <node concept="liA8E" id="5XU7UUGbbyH" role="2OqNvi">
-                    <ref role="37wK5l" to="4hf9:~PositionInfo.getStartLine():int" resolve="getStartLine" />
+                    <ref role="37wK5l" to="ierg:~PositionInfo.getStartLine():int" resolve="getStartLine" />
                   </node>
                 </node>
               </node>
@@ -15511,7 +15511,7 @@
                     <ref role="3cqZAo" node="5XU7UUGbbye" resolve="posInfo" />
                   </node>
                   <node concept="liA8E" id="4jk7wJvTDyt" role="2OqNvi">
-                    <ref role="37wK5l" to="4hf9:~PositionInfo.getEndLine():int" resolve="getEndLine" />
+                    <ref role="37wK5l" to="ierg:~PositionInfo.getEndLine():int" resolve="getEndLine" />
                   </node>
                 </node>
               </node>
