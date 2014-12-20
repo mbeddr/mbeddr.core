@@ -1,88 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:a46446ad-54c2-4490-b87d-d88cb0378823(com.mbeddr.doc.slides.sandbox.main)">
-  <persistence version="8" />
-  <language namespace="94daa6eb-e6a4-4b9f-90b6-4b23682ca120(com.mbeddr.slides)" />
-  <language namespace="2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)" />
-  <language namespace="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
-  <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="apd" modelUID="r:3f86baf5-195f-493c-8564-191d759abee5(com.mbeddr.slides.structure)" version="-1" implicit="yes" />
-  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="13" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
-  <root type="apd.SlideDeck" typeId="apd.5455967284188316026" id="5455967284188342716" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="HelloWorld" />
-    <link role="config" roleId="2c95.6657644269295214800" targetNodeId="5455967284188430857" resolveInfo="wSlideConfig" />
-    <node role="slides" roleId="apd.5455967284188316028" type="apd.Slide" typeId="apd.5455967284188316027" id="5455967284188407761" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Cover" />
-      <node role="content" roleId="apd.5455967284188341775" type="apd.ImageSlideContent" typeId="apd.5455967284188416495" id="5455967284188430855" nodeInfo="ng">
-        <property name="showImage" nameId="apd.6386504476136358630" value="false" />
-        <property name="alternateText" nameId="apd.5455967284188453272" value="Mbeddr Logo" />
-        <node role="resource" roleId="apd.6386504476136531838" type="2c95.Resource" typeId="2c95.6386504476136521407" id="5455967284188430866" nodeInfo="ng">
-          <property name="fileName" nameId="2c95.6386504476136521408" value="mbeddr.png" />
-          <link role="path" roleId="2c95.6386504476136521409" targetNodeId="5455967284188430860" resolveInfo="images" />
+<model ref="r:a46446ad-54c2-4490-b87d-d88cb0378823(com.mbeddr.doc.slides.sandbox.main)">
+  <persistence version="9" />
+  <languages>
+    <use id="94daa6eb-e6a4-4b9f-90b6-4b23682ca120" name="com.mbeddr.slides" version="-1" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="-1" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
+    <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
+  </languages>
+  <imports />
+  <registry>
+    <language id="94daa6eb-e6a4-4b9f-90b6-4b23682ca120" name="com.mbeddr.slides">
+      <concept id="5455967284188437895" name="com.mbeddr.slides.structure.AbstractParagraphSlideContent" flags="ng" index="33wM3h">
+        <child id="5455967284188451079" name="text" index="33wYLh" />
+      </concept>
+      <concept id="5455967284188416495" name="com.mbeddr.slides.structure.ImageSlideContent" flags="ng" index="33wRiT">
+        <property id="6386504476136358630" name="showImage" index="2Sbq$t" />
+        <property id="5455967284188453272" name="alternateText" index="33wYje" />
+        <child id="6386504476136531838" name="resource" index="2SbwM5" />
+      </concept>
+      <concept id="5455967284188413420" name="com.mbeddr.slides.structure.LinkWord" flags="ng" index="33x82U">
+        <property id="5455967284188413423" name="url" index="33x82T" />
+      </concept>
+      <concept id="5455967284188346757" name="com.mbeddr.slides.structure.SmallWord" flags="ng" index="33xojj" />
+      <concept id="5455967284188346755" name="com.mbeddr.slides.structure.SlideWord" flags="ng" index="33xojl">
+        <child id="6165313375055797477" name="text" index="$DsGW" />
+      </concept>
+      <concept id="5455967284188347166" name="com.mbeddr.slides.structure.H3" flags="ng" index="33xop8" />
+      <concept id="5455967284188347162" name="com.mbeddr.slides.structure.H1" flags="ng" index="33xopc" />
+      <concept id="5455967284188343706" name="com.mbeddr.slides.structure.TextSlideContent" flags="ng" index="33xp3c" />
+      <concept id="5455967284188316026" name="com.mbeddr.slides.structure.SlideDeck" flags="ng" index="33xvKG">
+        <child id="5455967284188316028" name="slides" index="33xvKE" />
+      </concept>
+      <concept id="5455967284188316027" name="com.mbeddr.slides.structure.Slide" flags="ng" index="33xvKH">
+        <child id="5455967284188341775" name="content" index="33xpHp" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
+        <reference id="6657644269295214800" name="config" index="G9hjw" />
+      </concept>
+      <concept id="6386504476136521407" name="com.mbeddr.doc.structure.Resource" flags="ng" index="2Sb_l4">
+        <property id="6386504476136521408" name="fileName" index="2Sb_kV" />
+        <reference id="6386504476136521409" name="path" index="2Sb_kU" />
+      </concept>
+      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
+        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
+      </concept>
+      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
+        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
+        <child id="6386504476136472817" name="paths" index="2SbYGa" />
+      </concept>
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="33xvKG" id="4IRvlq8cIAW">
+    <property role="TrG5h" value="HelloWorld" />
+    <ref role="G9hjw" node="4IRvlq8d489" resolve="wSlideConfig" />
+    <node concept="33xvKH" id="4IRvlq8cYvh" role="33xvKE">
+      <property role="TrG5h" value="Cover" />
+      <node concept="33wRiT" id="4IRvlq8d487" role="33xpHp">
+        <property role="2Sbq$t" value="false" />
+        <property role="33wYje" value="Mbeddr Logo" />
+        <node concept="2Sb_l4" id="4IRvlq8d48i" role="2SbwM5">
+          <property role="2Sb_kV" value="mbeddr.png" />
+          <ref role="2Sb_kU" node="4IRvlq8d48c" resolve="images" />
         </node>
       </node>
-      <node role="content" roleId="apd.5455967284188341775" type="apd.H1" typeId="apd.5455967284188347162" id="5455967284188410637" nodeInfo="ng">
-        <node role="text" roleId="apd.5455967284188451079" type="87nw.Text" typeId="87nw.2557074442922380897" id="5455967284188410638" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5455967284188410639" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="mbeddr" />
+      <node concept="33xopc" id="4IRvlq8cZcd" role="33xpHp">
+        <node concept="19SGf9" id="4IRvlq8cZce" role="33wYLh">
+          <node concept="19SUe$" id="4IRvlq8cZcf" role="19SJt6">
+            <property role="19SUeA" value="mbeddr" />
           </node>
         </node>
       </node>
-      <node role="content" roleId="apd.5455967284188341775" type="apd.H3" typeId="apd.5455967284188347166" id="5455967284188413401" nodeInfo="ng">
-        <node role="text" roleId="apd.5455967284188451079" type="87nw.Text" typeId="87nw.2557074442922380897" id="5455967284188413402" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5455967284188413403" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="Writing embedded software for the next decade" />
+      <node concept="33xop8" id="4IRvlq8cZRp" role="33xpHp">
+        <node concept="19SGf9" id="4IRvlq8cZRq" role="33wYLh">
+          <node concept="19SUe$" id="4IRvlq8cZRr" role="19SJt6">
+            <property role="19SUeA" value="Writing embedded software for the next decade" />
           </node>
         </node>
       </node>
-      <node role="content" roleId="apd.5455967284188341775" type="apd.TextSlideContent" typeId="apd.5455967284188343706" id="5455967284188413405" nodeInfo="ng">
-        <node role="text" roleId="apd.5455967284188451079" type="87nw.Text" typeId="87nw.2557074442922380897" id="5455967284188413406" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5455967284188413416" nodeInfo="ng" />
-          <node role="words" roleId="87nw.2557074442922392302" type="apd.SmallWord" typeId="apd.5455967284188346757" id="5455967284188413415" nodeInfo="ng">
-            <node role="text" roleId="apd.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5455967284188413418" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5455967284188413419" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Bernd Kolb, " />
+      <node concept="33xp3c" id="4IRvlq8cZRt" role="33xpHp">
+        <node concept="19SGf9" id="4IRvlq8cZRu" role="33wYLh">
+          <node concept="19SUe$" id="4IRvlq8cZRC" role="19SJt6" />
+          <node concept="33xojj" id="4IRvlq8cZRB" role="19SJt6">
+            <node concept="19SGf9" id="4IRvlq8cZRE" role="$DsGW">
+              <node concept="19SUe$" id="4IRvlq8cZRF" role="19SJt6">
+                <property role="19SUeA" value="Bernd Kolb, " />
               </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="apd.LinkWord" typeId="apd.5455967284188413420" id="5455967284188416487" nodeInfo="ng">
-                <property name="url" nameId="apd.5455967284188413423" value="mailto:kolb@itemis.de" />
-                <node role="text" roleId="apd.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5455967284188416489" nodeInfo="ng">
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5455967284188416490" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="kolb@itemis.de" />
+              <node concept="33x82U" id="4IRvlq8d0BB" role="19SJt6">
+                <property role="33x82T" value="mailto:kolb@itemis.de" />
+                <node concept="19SGf9" id="4IRvlq8d0BD" role="$DsGW">
+                  <node concept="19SUe$" id="4IRvlq8d0BE" role="19SJt6">
+                    <property role="19SUeA" value="kolb@itemis.de" />
                   </node>
                 </node>
               </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5455967284188416488" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" \/ " />
+              <node concept="19SUe$" id="4IRvlq8d0BC" role="19SJt6">
+                <property role="19SUeA" value=" \/ " />
               </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="apd.LinkWord" typeId="apd.5455967284188413420" id="5455967284188416491" nodeInfo="ng">
-                <node role="text" roleId="apd.6165313375055797477" type="87nw.Text" typeId="87nw.2557074442922380897" id="5455967284188416493" nodeInfo="ng">
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5455967284188416494" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="+ Bernd Kolb" />
+              <node concept="33x82U" id="4IRvlq8d0BF" role="19SJt6">
+                <node concept="19SGf9" id="4IRvlq8d0BH" role="$DsGW">
+                  <node concept="19SUe$" id="4IRvlq8d0BI" role="19SJt6">
+                    <property role="19SUeA" value="+ Bernd Kolb" />
                   </node>
                 </node>
               </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5455967284188416492" nodeInfo="ng" />
+              <node concept="19SUe$" id="4IRvlq8d0BG" role="19SJt6" />
             </node>
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5455967284188413417" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
+          <node concept="19SUe$" id="4IRvlq8cZRD" role="19SJt6">
+            <property role="19SUeA" value="" />
           </node>
         </node>
       </node>
     </node>
-  </root>
-  <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="5455967284188430857" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="wSlideConfig" />
-    <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="5455967284188430860" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="images" />
-      <node role="pathPicker" roleId="2c95.2642765975824057986" type="vs0r.SolutionRelativeDirPicker" typeId="vs0r.2642765975824060179" id="2642765975826548522" nodeInfo="ng" />
+  </node>
+  <node concept="2SbYGP" id="4IRvlq8d489">
+    <property role="TrG5h" value="wSlideConfig" />
+    <node concept="2SbYGw" id="4IRvlq8d48c" role="2SbYGa">
+      <property role="TrG5h" value="images" />
+      <node concept="9PVaO" id="2iGZqsHCksE" role="9PVG_" />
     </node>
-    <node role="defaultTempPath" roleId="2c95.5785245534401182264" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="5455967284188430858" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="temp" />
-      <node role="pathPicker" roleId="2c95.2642765975824057986" type="vs0r.SolutionRelativeDirPicker" typeId="vs0r.2642765975824060179" id="2642765975826548518" nodeInfo="ng" />
+    <node concept="2SbYGw" id="4IRvlq8d48a" role="Cbewh">
+      <property role="TrG5h" value="temp" />
+      <node concept="9PVaO" id="2iGZqsHCksA" role="9PVG_" />
     </node>
-  </root>
+  </node>
 </model>
 
