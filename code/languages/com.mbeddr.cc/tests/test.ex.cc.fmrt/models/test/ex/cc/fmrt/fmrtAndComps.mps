@@ -1,256 +1,454 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:4d3656a2-df6d-4546-b073-1ef8a0bd09d7(test.ex.cc.fmrt.fmrtAndComps)">
-  <persistence version="8" />
-  <language namespace="3fa5cffb-e29d-4e5d-9b63-66e0f087cb60(com.mbeddr.cc.var.rt.comp)" />
-  <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-  <devkit namespace="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
-  <devkit namespace="b31efd26-898e-4b0e-b5dc-2d7ced06e7f7(com.mbeddr.cc.variability)" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="36" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" implicit="yes" />
-  <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
-  <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
-  <import index="yvrq" modelUID="r:2217bb25-9695-4af2-948e-8d9b31dd5a1a(com.mbeddr.cc.var.rt.structure)" version="2" implicit="yes" />
-  <import index="7pum" modelUID="r:18f5097e-f68a-4ea7-9bcf-c691e28486d6(com.mbeddr.cc.var.rt.comp.structure)" version="-1" implicit="yes" />
-  <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="8" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
-  <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="4" implicit="yes" />
-  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8000796061690129290" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="FmRtAndComps" />
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8000796061690129354" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1350922594622_1" />
+<model ref="r:4d3656a2-df6d-4546-b073-1ef8a0bd09d7(test.ex.cc.fmrt.fmrtAndComps)">
+  <persistence version="9" />
+  <languages>
+    <use id="3fa5cffb-e29d-4e5d-9b63-66e0f087cb60" name="com.mbeddr.cc.var.rt.comp" version="-1" />
+    <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
+    <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
+    <devkit ref="b31efd26-898e-4b0e-b5dc-2d7ced06e7f7(com.mbeddr.cc.variability)" />
+  </languages>
+  <imports />
+  <registry>
+    <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
+      <concept id="7024921229556134722" name="com.mbeddr.core.statements.structure.CommentedStatement" flags="ng" index="vHFJx" />
+      <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
+        <child id="7254843406768833939" name="expr" index="1_9egR" />
+      </concept>
+      <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
+        <child id="4185783222026502647" name="init" index="3XIe9u" />
+      </concept>
+      <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
+        <child id="4185783222026475862" name="statements" index="3XIRFZ" />
+      </concept>
+      <concept id="2093108837558113914" name="com.mbeddr.core.statements.structure.LocalVarRef" flags="ng" index="3ZVu4v">
+        <reference id="2093108837558124071" name="var" index="3ZVs_2" />
+      </concept>
+    </language>
+    <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
+      <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
+      </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
+        <property id="3431613015799084476" name="isTest" index="iO3LB" />
+      </concept>
+      <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
+        <child id="5046689135694070731" name="binaries" index="2ePNbc" />
+        <child id="5323740605968447026" name="target" index="2AWWZH" />
+      </concept>
+      <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
+        <reference id="7717755763392524108" name="module" index="2v9HqP" />
+      </concept>
+      <concept id="5323740605968447022" name="com.mbeddr.core.buildconfig.structure.DesktopPlatform" flags="ng" index="2AWWZL">
+        <property id="5323740605968447025" name="compilerOptions" index="2AWWZI" />
+        <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
+        <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
+        <property id="3963667026125442676" name="make" index="3r8Kxs" />
+      </concept>
+      <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
+        <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
+      </concept>
+    </language>
+    <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
+      <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL" />
+    </language>
+    <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
+      <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
+        <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
+      </concept>
+      <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
+    </language>
+    <language id="3fa5cffb-e29d-4e5d-9b63-66e0f087cb60" name="com.mbeddr.cc.var.rt.comp">
+      <concept id="8000796061690145833" name="com.mbeddr.cc.var.rt.comp.structure.CreateConfigExpr" flags="ng" index="2Aqym9">
+        <reference id="8000796061690159814" name="configModel" index="2AqAHA" />
+      </concept>
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="7024921229556133803" name="com.mbeddr.core.base.structure.ICommentedCode" flags="ng" index="vHEs8">
+        <child id="7024921229556133804" name="commentedCode" index="vHEsf" />
+      </concept>
+      <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
+        <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
+      </concept>
+    </language>
+    <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
+      <concept id="7024921229556176022" name="com.mbeddr.core.modules.structure.CommentedModuleContent" flags="ng" index="vH_KP" />
+      <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
+        <child id="8967919205527146150" name="expression" index="2BFjQA" />
+      </concept>
+      <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
+        <child id="6437088627575722833" name="contents" index="N3F5h" />
+      </concept>
+      <concept id="6437088627575722830" name="com.mbeddr.core.modules.structure.ImplementationModule" flags="ng" index="N3F5e" />
+      <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
+        <property id="1317894735999272944" name="exported" index="2OOxQR" />
+      </concept>
+      <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
+        <child id="4185783222026475860" name="body" index="3XIRFX" />
+      </concept>
+      <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
+    </language>
+    <language id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest">
+      <concept id="6275792049641586523" name="com.mbeddr.core.unittest.structure.TestCase" flags="ng" index="c0Qz5">
+        <child id="6275792049641586525" name="body" index="c0Qz3" />
+      </concept>
+      <concept id="6275792049641587287" name="com.mbeddr.core.unittest.structure.AssertStatement" flags="ng" index="c0Tn9">
+        <child id="6275792049641587288" name="expr" index="c0Tn6" />
+      </concept>
+      <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
+        <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
+      </concept>
+      <concept id="186853311768094629" name="com.mbeddr.core.unittest.structure.ExecuteTestExpression" flags="ng" index="3rBj6X">
+        <child id="5686538669182341016" name="tests" index="3cM6Hi" />
+      </concept>
+    </language>
+    <language id="41911c23-eb23-4ee6-872f-bc7f7ebce290" name="com.mbeddr.ext.components.test">
+      <concept id="8230733038424928674" name="com.mbeddr.ext.components.test.structure.DirectRunnableCall" flags="ng" index="1AmG6P">
+        <reference id="6105672464781003798" name="runnable" index="2YB7zn" />
+      </concept>
+    </language>
+    <language id="e401b447-8019-4ccd-a72c-bfb0230f5782" name="com.mbeddr.cc.var.fm">
+      <concept id="6825476687691297416" name="com.mbeddr.cc.var.fm.structure.ConfigurationModel" flags="ng" index="Id4hE">
+        <reference id="6825476687691297418" name="configures" index="Id4hC" />
+        <child id="6825476687691297417" name="rootFeature" index="Id4hF" />
+      </concept>
+      <concept id="6825476687691297422" name="com.mbeddr.cc.var.fm.structure.SelectedFeature" flags="ng" index="Id4hG">
+        <reference id="6825476687691297425" name="feature" index="Id4hN" />
+        <child id="6825476687691297423" name="children" index="Id4hH" />
+      </concept>
+      <concept id="6825476687691297426" name="com.mbeddr.cc.var.fm.structure.Feature" flags="ng" index="Id4hK">
+        <child id="6825476687691297427" name="constraint" index="Id4hL" />
+        <child id="6825476687691297428" name="children" index="Id4hQ" />
+      </concept>
+      <concept id="6825476687691297434" name="com.mbeddr.cc.var.fm.structure.FeatureModel" flags="ng" index="Id4hS">
+        <child id="6825476687691297435" name="root" index="Id4hT" />
+      </concept>
+      <concept id="6825476687691337712" name="com.mbeddr.cc.var.fm.structure.VariabilitySupport" flags="ng" index="Idr$i">
+        <child id="6825476687691337713" name="contents" index="Idr$j" />
+      </concept>
+      <concept id="6825476687691317627" name="com.mbeddr.cc.var.fm.structure.OptionalConstraint" flags="ng" index="Idvup" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components">
+      <concept id="7780999115923942144" name="com.mbeddr.ext.components.structure.AbstractInstanceConfiguration" flags="ng" index="5Js9S">
+        <child id="7780999115923944213" name="contents" index="5JtDH" />
+      </concept>
+      <concept id="5308710777891512019" name="com.mbeddr.ext.components.structure.Field" flags="ng" index="EbCE0">
+        <property id="785275130114861516" name="initField" index="3R_39t" />
+      </concept>
+      <concept id="5308710777891565561" name="com.mbeddr.ext.components.structure.FieldRef" flags="ng" index="EbZIE">
+        <reference id="5308710777891565562" name="field" index="EbZID" />
+      </concept>
+      <concept id="4491876417845649024" name="com.mbeddr.ext.components.structure.InstanceConfiguration" flags="ng" index="2EWCtd" />
+      <concept id="4491876417845649014" name="com.mbeddr.ext.components.structure.ComponentInstance" flags="ng" index="2EWCuV">
+        <reference id="4491876417845649015" name="component" index="2EWCuU" />
+        <child id="785275130114861567" name="initializers" index="3R_39I" />
+      </concept>
+      <concept id="4491876417845649011" name="com.mbeddr.ext.components.structure.AtomicComponent" flags="ng" index="2EWCuY" />
+      <concept id="4491876417845641670" name="com.mbeddr.ext.components.structure.Runnable" flags="ng" index="2EWDwb">
+        <child id="4491876417845689763" name="body" index="2EWMhI" />
+      </concept>
+      <concept id="4491876417845474761" name="com.mbeddr.ext.components.structure.Component" flags="ng" index="2EX6K4">
+        <child id="6041318036221669720" name="contents" index="2RW2fA" />
+      </concept>
+      <concept id="2103658896110121032" name="com.mbeddr.ext.components.structure.ComponentsConfigItem" flags="ng" index="3i2$bm">
+        <child id="2103658896110238743" name="genStrategy" index="3i30U9" />
+      </concept>
+      <concept id="591155063063570513" name="com.mbeddr.ext.components.structure.InitializeConfiguration" flags="ng" index="3t9XKO">
+        <reference id="591155063063570514" name="config" index="3t9XKR" />
+      </concept>
+      <concept id="8473757169836531451" name="com.mbeddr.ext.components.structure.DirectRunnableCallable" flags="ng" index="1KB$IV" />
+      <concept id="785275130114861597" name="com.mbeddr.ext.components.structure.InitFieldInitializer" flags="ng" index="3R_36c">
+        <reference id="785275130114861598" name="field" index="3R_36f" />
+        <child id="785275130114861599" name="value" index="3R_36e" />
+      </concept>
+      <concept id="1482737808881210672" name="com.mbeddr.ext.components.structure.IReferencesInstance" flags="ng" index="1XX6Gu">
+        <reference id="1482737808881210674" name="instance" index="1XX6Gs" />
+        <reference id="1482737808881210673" name="config" index="1XX6Gv" />
+      </concept>
+    </language>
+    <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
+      <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
+      <concept id="8463282783691618426" name="com.mbeddr.core.expressions.structure.Int8tType" flags="ng" index="26Vqqz" />
+      <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
+        <property id="2212975673976043696" name="value" index="2hmy$m" />
+      </concept>
+      <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
+        <child id="318113533128716676" name="type" index="2C2TGm" />
+      </concept>
+      <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
+      <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
+      <concept id="8860443239512129322" name="com.mbeddr.core.expressions.structure.EqualsExpression" flags="ng" index="3TlM44" />
+      <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
+        <property id="2941277002445651368" name="const" index="2c7vTL" />
+        <property id="2941277002448691247" name="volatile" index="2caQfQ" />
+      </concept>
+      <concept id="8860443239512128052" name="com.mbeddr.core.expressions.structure.BinaryExpression" flags="ng" index="3TlMgq">
+        <child id="8860443239512128064" name="left" index="3TlMhI" />
+        <child id="8860443239512128065" name="right" index="3TlMhJ" />
+      </concept>
+      <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
+    </language>
+    <language id="b8eeb935-038d-48d8-ae7f-0c6768b8d4fc" name="com.mbeddr.cc.var.rt">
+      <concept id="8882953773355826085" name="com.mbeddr.cc.var.rt.structure.RtFeatureModelType" flags="ng" index="3yk6N1">
+        <reference id="8882953773355826086" name="featureModel" index="3yk6N2" />
+      </concept>
+      <concept id="8882953773355868305" name="com.mbeddr.cc.var.rt.structure.VariantSwitch" flags="ng" index="3ykjvP">
+        <child id="8882953773355868310" name="options" index="3ykjvM" />
+        <child id="8882953773355868317" name="fmconfig" index="3ykjvT" />
+      </concept>
+      <concept id="8882953773355868306" name="com.mbeddr.cc.var.rt.structure.VariantCase" flags="ng" index="3ykjvQ">
+        <child id="8882953773355868337" name="featureExpression" index="3ykjvl" />
+      </concept>
+      <concept id="8882953773355868307" name="com.mbeddr.cc.var.rt.structure.VariantOption" flags="ng" index="3ykjvR">
+        <child id="8882953773355868344" name="body" index="3ykjvs" />
+      </concept>
+      <concept id="8882953773355884814" name="com.mbeddr.cc.var.rt.structure.FeatureRef" flags="ng" index="3yknpE">
+        <reference id="8882953773355884815" name="feature" index="3yknpF" />
+      </concept>
+      <concept id="8882953773355574483" name="com.mbeddr.cc.var.rt.structure.RtFeatureModel" flags="ng" index="3ylreR">
+        <reference id="8882953773355584900" name="featureModel" index="3yltFw" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="N3F5e" id="6W8yq39oAIa">
+    <property role="TrG5h" value="FmRtAndComps" />
+    <node concept="2NXPZ9" id="6W8yq39oAJa" role="N3F5h">
+      <property role="TrG5h" value="empty_1350922594622_1" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.CommentedModuleContent" typeId="x27k.7024921229556176022" id="8306217617074545761" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="zzz-commented-RtFeatureModel-1" />
-      <node role="commentedCode" roleId="vs0r.7024921229556133804" type="yvrq.RtFeatureModel" typeId="yvrq.8882953773355574483" id="8000796061690132530" nodeInfo="ng">
-        <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-        <link role="featureModel" roleId="yvrq.8882953773355584900" targetNodeId="8000796061690132523" resolveInfo="CompFeatures" />
+    <node concept="vH_KP" id="7d5BeCsOuhx" role="N3F5h">
+      <property role="TrG5h" value="zzz-commented-RtFeatureModel-1" />
+      <node concept="3ylreR" id="6W8yq39oBwM" role="vHEsf">
+        <property role="2OOxQR" value="true" />
+        <ref role="3yltFw" node="6W8yq39oBwF" resolve="CompFeatures" />
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8000796061690132529" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1350922765274_6" />
+    <node concept="2NXPZ9" id="6W8yq39oBwL" role="N3F5h">
+      <property role="TrG5h" value="empty_1350922765274_6" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.CommentedModuleContent" typeId="x27k.7024921229556176022" id="8306217617074545760" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="zzz-commented-AtomicComponent-3" />
-      <node role="commentedCode" roleId="vs0r.7024921229556133804" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="8000796061690129358" nodeInfo="ng">
-        <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="C" />
-        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Field" typeId="v7ag.5308710777891512019" id="8000796061690132531" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="config" />
-          <property name="initField" nameId="v7ag.785275130114861516" value="true" />
-          <node role="type" roleId="mj1l.318113533128716676" type="yvrq.RtFeatureModelType" typeId="yvrq.8882953773355826085" id="8000796061690132532" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-            <link role="featureModel" roleId="yvrq.8882953773355826086" targetNodeId="8000796061690132530" resolveInfo="CompFeatures" />
+    <node concept="vH_KP" id="7d5BeCsOuhw" role="N3F5h">
+      <property role="TrG5h" value="zzz-commented-AtomicComponent-3" />
+      <node concept="2EWCuY" id="6W8yq39oAJe" role="vHEsf">
+        <property role="2OOxQR" value="true" />
+        <property role="TrG5h" value="C" />
+        <node concept="EbCE0" id="6W8yq39oBwN" role="2RW2fA">
+          <property role="TrG5h" value="config" />
+          <property role="3R_39t" value="true" />
+          <node concept="3yk6N1" id="6W8yq39oBwO" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="3yk6N2" node="6W8yq39oBwM" resolve="CompFeatures" />
           </node>
         </node>
-        <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="8000796061690132536" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="getNumber" />
-          <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8000796061690132537" nodeInfo="ng">
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8000796061690170725" nodeInfo="ng">
-              <property name="name" nameId="tpck.1169194664001" value="x" />
-              <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8000796061690170726" nodeInfo="ng">
-                <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-                <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <node concept="2EWDwb" id="6W8yq39oBwS" role="2RW2fA">
+          <property role="TrG5h" value="getNumber" />
+          <node concept="3XIRFW" id="6W8yq39oBwT" role="2EWMhI">
+            <node concept="3XIRlf" id="6W8yq39oKP_" role="3XIRFZ">
+              <property role="TrG5h" value="x" />
+              <node concept="26Vqqz" id="6W8yq39oKPA" role="2C2TGm">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
               </node>
-              <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8000796061690170728" nodeInfo="ng">
-                <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+              <node concept="3TlMh9" id="6W8yq39oKPC" role="3XIe9u">
+                <property role="2hmy$m" value="0" />
               </node>
             </node>
-            <node role="statements" roleId="c4fa.4185783222026475862" type="yvrq.VariantSwitch" typeId="yvrq.8882953773355868305" id="8000796061690132541" nodeInfo="ng">
-              <node role="options" roleId="yvrq.8882953773355868310" type="yvrq.VariantCase" typeId="yvrq.8882953773355868306" id="8000796061690132542" nodeInfo="ng">
-                <node role="body" roleId="yvrq.8882953773355868344" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8000796061690132543" nodeInfo="ng">
-                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="8000796061690170731" nodeInfo="ng">
-                    <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="8000796061690170736" nodeInfo="ng">
-                      <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8000796061690170740" nodeInfo="ng">
-                        <property name="value" nameId="mj1l.2212975673976043696" value="10" />
+            <node concept="3ykjvP" id="6W8yq39oBwX" role="3XIRFZ">
+              <node concept="3ykjvQ" id="6W8yq39oBwY" role="3ykjvM">
+                <node concept="3XIRFW" id="6W8yq39oBwZ" role="3ykjvs">
+                  <node concept="1_9egQ" id="6W8yq39oKPF" role="3XIRFZ">
+                    <node concept="3pqW6w" id="6W8yq39oKPK" role="1_9egR">
+                      <node concept="3TlMh9" id="6W8yq39oKPO" role="3TlMhJ">
+                        <property role="2hmy$m" value="10" />
                       </node>
-                      <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8000796061690170732" nodeInfo="ng">
-                        <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8000796061690170725" resolveInfo="x" />
+                      <node concept="3ZVu4v" id="6W8yq39oKPG" role="3TlMhI">
+                        <ref role="3ZVs_2" node="6W8yq39oKP_" resolve="x" />
                       </node>
                     </node>
                   </node>
                 </node>
-                <node role="featureExpression" roleId="yvrq.8882953773355868337" type="yvrq.FeatureRef" typeId="yvrq.8882953773355884814" id="8000796061690132552" nodeInfo="ng">
-                  <link role="feature" roleId="yvrq.8882953773355884815" targetNodeId="8000796061690132540" resolveInfo="returnTheBigNumber" />
+                <node concept="3yknpE" id="6W8yq39oBx8" role="3ykjvl">
+                  <ref role="3yknpF" node="6W8yq39oBwW" resolve="returnTheBigNumber" />
                 </node>
               </node>
-              <node role="fmconfig" roleId="yvrq.8882953773355868317" type="v7ag.FieldRef" typeId="v7ag.5308710777891565561" id="8000796061690132549" nodeInfo="ng">
-                <link role="field" roleId="v7ag.5308710777891565562" targetNodeId="8000796061690132531" resolveInfo="config" />
+              <node concept="EbZIE" id="6W8yq39oBx5" role="3ykjvT">
+                <ref role="EbZID" node="6W8yq39oBwN" resolve="config" />
               </node>
             </node>
-            <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="8000796061690170742" nodeInfo="ng">
-              <node role="expression" roleId="x27k.8967919205527146150" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8000796061690170744" nodeInfo="ng">
-                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8000796061690170725" resolveInfo="x" />
+            <node concept="2BFjQ_" id="6W8yq39oKPQ" role="3XIRFZ">
+              <node concept="3ZVu4v" id="6W8yq39oKPS" role="2BFjQA">
+                <ref role="3ZVs_2" node="6W8yq39oKP_" resolve="x" />
               </node>
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8000796061690170743" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          <node concept="26Vqqz" id="6W8yq39oKPR" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="v7ag.DirectRunnableCallable" typeId="v7ag.8473757169836531451" id="8473757169833560590" nodeInfo="ng" />
+          <node concept="1KB$IV" id="7moPk04QkCe" role="lGtFl" />
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8000796061690129355" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1350922594633_2" />
+    <node concept="2NXPZ9" id="6W8yq39oAJb" role="N3F5h">
+      <property role="TrG5h" value="empty_1350922594633_2" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.CommentedModuleContent" typeId="x27k.7024921229556176022" id="8306217617074545759" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="zzz-commented-InstanceConfiguration-5" />
-      <node role="commentedCode" roleId="vs0r.7024921229556133804" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="8000796061690132558" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="instances" />
-        <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="8000796061690132559" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="cbig" />
-          <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="8000796061690129358" resolveInfo="C" />
-          <node role="initializers" roleId="v7ag.785275130114861567" type="v7ag.InitFieldInitializer" typeId="v7ag.785275130114861597" id="8000796061690176384" nodeInfo="ng">
-            <link role="field" roleId="v7ag.785275130114861598" targetNodeId="8000796061690132531" resolveInfo="config" />
-            <node role="value" roleId="v7ag.785275130114861599" type="7pum.CreateConfigExpr" typeId="7pum.8000796061690145833" id="7890665228157417091" nodeInfo="ng">
-              <link role="configModel" roleId="7pum.8000796061690159814" targetNodeId="8000796061690169848" resolveInfo="CfgBig" />
+    <node concept="vH_KP" id="7d5BeCsOuhv" role="N3F5h">
+      <property role="TrG5h" value="zzz-commented-InstanceConfiguration-5" />
+      <node concept="2EWCtd" id="6W8yq39oBxe" role="vHEsf">
+        <property role="TrG5h" value="instances" />
+        <node concept="2EWCuV" id="6W8yq39oBxf" role="5JtDH">
+          <property role="TrG5h" value="cbig" />
+          <ref role="2EWCuU" node="6W8yq39oAJe" resolve="C" />
+          <node concept="3R_36c" id="6W8yq39oMe0" role="3R_39I">
+            <ref role="3R_36f" node="6W8yq39oBwN" resolve="config" />
+            <node concept="2Aqym9" id="6Q1hzvHQnq3" role="3R_36e">
+              <ref role="2AqAHA" node="6W8yq39oKBS" resolve="CfgBig" />
             </node>
           </node>
         </node>
-        <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="8000796061690170748" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="csmall" />
-          <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="8000796061690129358" resolveInfo="C" />
-          <node role="initializers" roleId="v7ag.785275130114861567" type="v7ag.InitFieldInitializer" typeId="v7ag.785275130114861597" id="8000796061690170749" nodeInfo="ng">
-            <link role="field" roleId="v7ag.785275130114861598" targetNodeId="8000796061690132531" resolveInfo="config" />
-            <node role="value" roleId="v7ag.785275130114861599" type="7pum.CreateConfigExpr" typeId="7pum.8000796061690145833" id="7890665228157417092" nodeInfo="ng">
-              <link role="configModel" roleId="7pum.8000796061690159814" targetNodeId="8000796061690170745" resolveInfo="CfgSmall" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8000796061690129356" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1350922594722_3" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.CommentedModuleContent" typeId="x27k.7024921229556176022" id="8306217617074545758" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="zzz-commented-TestCase-7" />
-      <node role="commentedCode" roleId="vs0r.7024921229556133804" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="8000796061690129303" nodeInfo="ng">
-        <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="testTwoInstances" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="8000796061690129304" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8000796061690129305" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8000796061690170753" nodeInfo="ng">
-            <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8000796061690170757" nodeInfo="ng">
-              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8000796061690170760" nodeInfo="ng">
-                <property name="value" nameId="mj1l.2212975673976043696" value="10" />
-              </node>
-              <node role="left" roleId="mj1l.8860443239512128064" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="8000796061690170752" nodeInfo="ng">
-                <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="8000796061690132559" resolveInfo="cbig" />
-                <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="8000796061690132536" resolveInfo="getNumber" />
-                <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="8000796061690132558" resolveInfo="instances" />
-              </node>
-            </node>
-          </node>
-          <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8000796061690170761" nodeInfo="ng">
-            <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8000796061690170762" nodeInfo="ng">
-              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8000796061690170763" nodeInfo="ng">
-                <property name="value" nameId="mj1l.2212975673976043696" value="0" />
-              </node>
-              <node role="left" roleId="mj1l.8860443239512128064" type="v0r9.DirectRunnableCall" typeId="v0r9.8230733038424928674" id="8000796061690170764" nodeInfo="ng">
-                <link role="runnable" roleId="v0r9.6105672464781003798" targetNodeId="8000796061690132536" resolveInfo="getNumber" />
-                <link role="config" roleId="v7ag.1482737808881210673" targetNodeId="8000796061690132558" resolveInfo="instances" />
-                <link role="instance" roleId="v7ag.1482737808881210674" targetNodeId="8000796061690170748" resolveInfo="csmall" />
-              </node>
+        <node concept="2EWCuV" id="6W8yq39oKPW" role="5JtDH">
+          <property role="TrG5h" value="csmall" />
+          <ref role="2EWCuU" node="6W8yq39oAJe" resolve="C" />
+          <node concept="3R_36c" id="6W8yq39oKPX" role="3R_39I">
+            <ref role="3R_36f" node="6W8yq39oBwN" resolve="config" />
+            <node concept="2Aqym9" id="6Q1hzvHQnq4" role="3R_36e">
+              <ref role="2AqAHA" node="6W8yq39oKPT" resolve="CfgSmall" />
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8000796061690132556" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1350922849748_7" />
+    <node concept="2NXPZ9" id="6W8yq39oAJc" role="N3F5h">
+      <property role="TrG5h" value="empty_1350922594722_3" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8000796061690129291" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="main" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="1547996354246496979" nodeInfo="ng">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-      </node>
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8000796061690129292" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentedStatement" typeId="c4fa.7024921229556134722" id="8306217617074545756" nodeInfo="ng">
-          <node role="commentedCode" roleId="vs0r.7024921229556133804" type="v7ag.InitializeConfiguration" typeId="v7ag.591155063063570513" id="8000796061690170766" nodeInfo="ng">
-            <link role="config" roleId="v7ag.591155063063570514" targetNodeId="8000796061690132558" resolveInfo="instances" />
-          </node>
+    <node concept="vH_KP" id="7d5BeCsOuhu" role="N3F5h">
+      <property role="TrG5h" value="zzz-commented-TestCase-7" />
+      <node concept="c0Qz5" id="6W8yq39oAIn" role="vHEsf">
+        <property role="2OOxQR" value="true" />
+        <property role="TrG5h" value="testTwoInstances" />
+        <node concept="19Rifw" id="6W8yq39oAIo" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentedStatement" typeId="c4fa.7024921229556134722" id="8306217617074545757" nodeInfo="ng">
-          <node role="commentedCode" roleId="vs0r.7024921229556133804" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="8000796061690129293" nodeInfo="ng">
-            <node role="expression" roleId="x27k.8967919205527146150" type="yz9a.ExecuteTestExpression" typeId="yz9a.186853311768094629" id="8000796061690129294" nodeInfo="ng">
-              <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="8000796061690129295" nodeInfo="ng">
-                <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="8000796061690129303" resolveInfo="testTwoInstances" />
+        <node concept="3XIRFW" id="6W8yq39oAIp" role="c0Qz3">
+          <node concept="c0Tn9" id="6W8yq39oKQ1" role="3XIRFZ">
+            <node concept="3TlM44" id="6W8yq39oKQ5" role="c0Tn6">
+              <node concept="3TlMh9" id="6W8yq39oKQ8" role="3TlMhJ">
+                <property role="2hmy$m" value="10" />
+              </node>
+              <node concept="1AmG6P" id="6W8yq39oKQ0" role="3TlMhI">
+                <ref role="1XX6Gs" node="6W8yq39oBxf" resolve="cbig" />
+                <ref role="2YB7zn" node="6W8yq39oBwS" resolve="getNumber" />
+                <ref role="1XX6Gv" node="6W8yq39oBxe" resolve="instances" />
+              </node>
+            </node>
+          </node>
+          <node concept="c0Tn9" id="6W8yq39oKQ9" role="3XIRFZ">
+            <node concept="3TlM44" id="6W8yq39oKQa" role="c0Tn6">
+              <node concept="3TlMh9" id="6W8yq39oKQb" role="3TlMhJ">
+                <property role="2hmy$m" value="0" />
+              </node>
+              <node concept="1AmG6P" id="6W8yq39oKQc" role="3TlMhI">
+                <ref role="2YB7zn" node="6W8yq39oBwS" resolve="getNumber" />
+                <ref role="1XX6Gv" node="6W8yq39oBxe" resolve="instances" />
+                <ref role="1XX6Gs" node="6W8yq39oKPW" resolve="csmall" />
               </node>
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="8306217617074545754" nodeInfo="ng">
-          <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8306217617074545755" nodeInfo="ng">
-            <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="6W8yq39oBxc" role="N3F5h">
+      <property role="TrG5h" value="empty_1350922849748_7" />
+    </node>
+    <node concept="N3Fnx" id="6W8yq39oAIb" role="N3F5h">
+      <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
+      <node concept="26Vqph" id="1lV_BI8t_bj" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="6W8yq39oAIc" role="3XIRFX">
+        <node concept="vHFJx" id="7d5BeCsOuhs" role="3XIRFZ">
+          <node concept="3t9XKO" id="6W8yq39oKQe" role="vHEsf">
+            <ref role="3t9XKR" node="6W8yq39oBxe" resolve="instances" />
+          </node>
+        </node>
+        <node concept="vHFJx" id="7d5BeCsOuht" role="3XIRFZ">
+          <node concept="2BFjQ_" id="6W8yq39oAId" role="vHEsf">
+            <node concept="3rBj6X" id="6W8yq39oAIe" role="2BFjQA">
+              <node concept="3cM6IN" id="6W8yq39oAIf" role="3cM6Hi">
+                <ref role="3cM6IK" node="6W8yq39oAIn" resolve="testTwoInstances" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2BFjQ_" id="7d5BeCsOuhq" role="3XIRFZ">
+          <node concept="3TlMh9" id="7d5BeCsOuhr" role="2BFjQA">
+            <property role="2hmy$m" value="0" />
           </node>
         </node>
       </node>
     </node>
-  </root>
-  <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="8000796061690129348" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="dummy" />
-    <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="8000796061690129349" nodeInfo="ng">
-      <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
-      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
-      <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
-      <property name="make" nameId="51wr.3963667026125442676" value="make" />
-      <property name="gdb" nameId="51wr.3963667026125442601" value="gdb" />
+  </node>
+  <node concept="2v9HqL" id="6W8yq39oAJ4">
+    <property role="TrG5h" value="dummy" />
+    <node concept="2AWWZL" id="6W8yq39oAJ5" role="2AWWZH">
+      <property role="2AWWZJ" value="gcc" />
+      <property role="2AWWZI" value="-std=c99" />
+      <property role="1FkSt$" value="-g" />
+      <property role="3r8Kxs" value="make" />
+      <property role="3r8Kw1" value="gdb" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="8000796061690129350" nodeInfo="ng">
-      <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="8000796061690129351" nodeInfo="ng" />
+    <node concept="2Q9Fgs" id="6W8yq39oAJ6" role="2Q9xDr">
+      <node concept="2Q9FjX" id="6W8yq39oAJ7" role="2Q9FjI" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="v7ag.ComponentsConfigItem" typeId="v7ag.2103658896110121032" id="8000796061690141677" nodeInfo="ng">
-      <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="8000796061690141679" nodeInfo="ng" />
+    <node concept="3i2$bm" id="6W8yq39oDJH" role="2Q9xDr">
+      <node concept="3i3YCL" id="6W8yq39oDJJ" role="3i30U9" />
     </node>
-    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="8000796061690129352" nodeInfo="ng">
-      <property name="isTest" nameId="51wr.3431613015799084476" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="FmRtAndComps" />
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="8000796061690129353" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="8000796061690129290" resolveInfo="FmRtAndComps" />
+    <node concept="2eOfOl" id="6W8yq39oAJ8" role="2ePNbc">
+      <property role="iO3LB" value="true" />
+      <property role="TrG5h" value="FmRtAndComps" />
+      <node concept="2v9HqM" id="6W8yq39oAJ9" role="2eOfOg">
+        <ref role="2v9HqP" node="6W8yq39oAIa" resolve="FmRtAndComps" />
       </node>
     </node>
-  </root>
-  <root type="qqyh.VariabilitySupport" typeId="qqyh.6825476687691337712" id="8000796061690129359" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="ComponentConfigurations" />
-    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.FeatureModel" typeId="qqyh.6825476687691297434" id="8000796061690132523" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="CompFeatures" />
-      <node role="root" roleId="qqyh.6825476687691297435" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="8000796061690132524" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="f1" />
-        <node role="constraint" roleId="qqyh.6825476687691297427" type="qqyh.OptionalConstraint" typeId="qqyh.6825476687691317627" id="8000796061690132539" nodeInfo="ng" />
-        <node role="children" roleId="qqyh.6825476687691297428" type="qqyh.Feature" typeId="qqyh.6825476687691297426" id="8000796061690132540" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="returnTheBigNumber" />
+  </node>
+  <node concept="Idr$i" id="6W8yq39oAJf">
+    <property role="TrG5h" value="ComponentConfigurations" />
+    <node concept="Id4hS" id="6W8yq39oBwF" role="Idr$j">
+      <property role="TrG5h" value="CompFeatures" />
+      <node concept="Id4hK" id="6W8yq39oBwG" role="Id4hT">
+        <property role="TrG5h" value="f1" />
+        <node concept="Idvup" id="6W8yq39oBwV" role="Id4hL" />
+        <node concept="Id4hK" id="6W8yq39oBwW" role="Id4hQ">
+          <property role="TrG5h" value="returnTheBigNumber" />
         </node>
       </node>
     </node>
-    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="8000796061690169848" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="CfgBig" />
-      <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="8000796061690132523" resolveInfo="CompFeatures" />
-      <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="8000796061690169850" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="8000796061690132524" resolveInfo="f1" />
-        <node role="children" roleId="qqyh.6825476687691297423" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="8000796061690169851" nodeInfo="ng">
-          <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="8000796061690132540" resolveInfo="returnTheBigNumber" />
+    <node concept="Id4hE" id="6W8yq39oKBS" role="Idr$j">
+      <property role="TrG5h" value="CfgBig" />
+      <ref role="Id4hC" node="6W8yq39oBwF" resolve="CompFeatures" />
+      <node concept="Id4hG" id="6W8yq39oKBU" role="Id4hF">
+        <ref role="Id4hN" node="6W8yq39oBwG" resolve="f1" />
+        <node concept="Id4hG" id="6W8yq39oKBV" role="Id4hH">
+          <ref role="Id4hN" node="6W8yq39oBwW" resolve="returnTheBigNumber" />
         </node>
       </node>
     </node>
-    <node role="contents" roleId="qqyh.6825476687691337713" type="qqyh.ConfigurationModel" typeId="qqyh.6825476687691297416" id="8000796061690170745" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="CfgSmall" />
-      <link role="configures" roleId="qqyh.6825476687691297418" targetNodeId="8000796061690132523" resolveInfo="CompFeatures" />
-      <node role="rootFeature" roleId="qqyh.6825476687691297417" type="qqyh.SelectedFeature" typeId="qqyh.6825476687691297422" id="8000796061690170746" nodeInfo="ng">
-        <link role="feature" roleId="qqyh.6825476687691297425" targetNodeId="8000796061690132524" resolveInfo="f1" />
+    <node concept="Id4hE" id="6W8yq39oKPT" role="Idr$j">
+      <property role="TrG5h" value="CfgSmall" />
+      <ref role="Id4hC" node="6W8yq39oBwF" resolve="CompFeatures" />
+      <node concept="Id4hG" id="6W8yq39oKPU" role="Id4hF">
+        <ref role="Id4hN" node="6W8yq39oBwG" resolve="f1" />
       </node>
     </node>
-  </root>
+  </node>
 </model>
 

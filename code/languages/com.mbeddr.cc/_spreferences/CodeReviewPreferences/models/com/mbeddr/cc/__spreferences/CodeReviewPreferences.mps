@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:9b8fb566-fbd5-3561-b5ab-ee0419c73faa(com.mbeddr.cc.__spreferences.CodeReviewPreferences)">
-  <persistence version="8" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
-  <root type="vs0r.CodeReviewConfig" typeId="vs0r.293752265167076767" id="614750605557299198" nodeInfo="ng" />
+<model ref="r:82c6b700-d98e-4223-9aa7-460ecb49c230(com.mbeddr.cc.__spreferences.CodeReviewPreferences)">
+  <persistence version="9" />
+  <languages />
+  <imports />
+  <registry>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="293752265167076767" name="com.mbeddr.core.base.structure.CodeReviewConfig" flags="ng" index="3Xb6eZ" />
+    </language>
+  </registry>
+  <node concept="3Xb6eZ" id="3PC_f$W7ZJv" />
 </model>
 
