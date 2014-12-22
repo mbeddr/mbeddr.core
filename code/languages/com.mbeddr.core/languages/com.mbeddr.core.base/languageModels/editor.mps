@@ -12429,5 +12429,12 @@
       </node>
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6277307617439377499" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment.scope" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="vs0r.6277307617439377002" resolveInfo="ProjectScope" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6277307617439382948" nodeInfo="nn">
+      <property name="text" nameId="tpc2.1073389577007" value="project" />
+    </node>
+  </root>
 </model>
 

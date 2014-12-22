@@ -1461,5 +1461,11 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="806361095879159361" resolveInfo="IExtRef" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6277307617439377002" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="assessment.scope" />
+    <property name="name" nameId="tpck.1169194664001" value="ProjectScope" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="project" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8490595898229124356" resolveInfo="AssessmentScope" />
+  </root>
 </model>
 
