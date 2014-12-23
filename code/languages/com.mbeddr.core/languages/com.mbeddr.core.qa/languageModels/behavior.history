@@ -2,18 +2,6 @@
 <history>
   <StructureModification>
     <dependencies>
-      <model index="79wq" modelUID="r:ad7435e2-263f-4d16-a250-c987f2fa9599(com.mbeddr.core.qa.structure)" version="0" />
-    </dependencies>
-    <rename id="79wq.4455560581543810794" type="CONCEPT" from="RedundantConstraints" to="RedundantConstraintsAssessment" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
-      <model index="79wq" modelUID="r:ad7435e2-263f-4d16-a250-c987f2fa9599(com.mbeddr.core.qa.structure)" version="1" />
-    </dependencies>
-    <rename id="79wq.4455560581543810794" type="CONCEPT" from="RedundantConstraintsAssessment" to="RedundancyAssessment" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
       <model index="r4b4" modelUID="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" version="4" />
       <model index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="14" />
       <model index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" />
