@@ -164,9 +164,9 @@
     <property role="TrG5h" value="com.mbeddr.platform" />
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.platform" />
     <node concept="2_Ic$z" id="7OyG8hrcgea" role="3989C9">
-      <property role="2_Ic$$" value="true" />
       <property role="2_GNG2" value="2048" />
       <property role="TZNOO" value="1.6" />
+      <property role="2_Ic$$" value="true" />
     </node>
     <node concept="1wNqPr" id="3AVJcIMlF8m" role="3989C9">
       <property role="1wNuhc" value="true" />

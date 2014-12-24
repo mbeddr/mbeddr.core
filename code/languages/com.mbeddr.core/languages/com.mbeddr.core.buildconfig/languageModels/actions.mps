@@ -262,7 +262,7 @@
                     <ref role="3cqZAo" node="4zqPC3auGXX" resolve="module" />
                   </node>
                   <node concept="liA8E" id="4zqPC3auybo" role="2OqNvi">
-                    <ref role="37wK5l" to="vsqj:~AbstractModule.addDependency(org.jetbrains.mps.openapi.module.SModuleReference,boolean):void" resolve="addDependency" />
+                    <ref role="37wK5l" to="vsqj:~AbstractModule.addDependency(org.jetbrains.mps.openapi.module.SModuleReference,boolean):jetbrains.mps.project.structure.modules.Dependency" resolve="addDependency" />
                     <node concept="2OqwBi" id="4zqPC3av2OH" role="37wK5m">
                       <node concept="2OqwBi" id="4zqPC3av2lr" role="2Oq$k0">
                         <node concept="37vLTw" id="4zqPC3av2b2" role="2Oq$k0">
