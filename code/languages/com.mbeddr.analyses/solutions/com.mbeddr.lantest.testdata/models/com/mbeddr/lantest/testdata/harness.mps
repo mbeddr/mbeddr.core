@@ -4,16 +4,11 @@
   <languages>
     <use id="5ef691b5-60ce-4ece-a04e-25e642dfa128" name="com.mbeddr.mpsutil.lantest" version="-1" />
     <use id="0316e52b-aaa9-47f4-9c0b-ca0d60cdc961" name="com.mbeddr.analyses.lantest" version="-1" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-    <devkit ref="1a986be1-0ef0-4f9f-9d8a-81c3ea7227ae(com.mbeddr.physicalunits)" />
   </languages>
   <imports>
-    <import index="5z2a" ref="r:3f7465f3-614b-4941-b3e1-bd22812e1152(com.mbeddr.lantest.results.c_compiler_alignment_bugs)" />
-    <import index="439q" ref="r:e38f3b38-944f-4527-bfa1-5b21e722e4b0(com.mbeddr.lantest.results.generation_failures_bugs)" />
     <import index="glmp" ref="r:6db31ce2-3d66-43be-aeff-a6d733d7a40a(com.mbeddr.lantest.testdata.temp)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
-    <import index="ym4j" ref="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" />
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">

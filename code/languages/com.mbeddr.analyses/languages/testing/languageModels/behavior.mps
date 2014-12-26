@@ -14,6 +14,7 @@
     <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
     <import index="88zw" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" />
     <import index="cu2c" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
+    <import index="qx6n" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/org.jetbrains.mps.openapi.persistence@java_stub)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -39,9 +40,6 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
-      </concept>
-      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
-        <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -90,7 +88,6 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -182,21 +179,20 @@
                       <ref role="1Pybhc" to="cu2c:~SModelRepository" resolve="SModelRepository" />
                     </node>
                     <node concept="liA8E" id="v3WHCwUiIe" role="2OqNvi">
-                      <ref role="37wK5l" to="cu2c:~SModelRepository.getModelDescriptor(org.jetbrains.mps.openapi.model.SModelReference):org.jetbrains.mps.openapi.model.SModel" resolve="getModelDescriptor" />
-                      <node concept="2ShNRf" id="v3WHCwUiIf" role="37wK5m">
-                        <node concept="1pGfFk" id="v3WHCwUjHE" role="2ShVmc">
-                          <ref role="37wK5l" to="cu2c:~SModelReference.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="SModelReference" />
-                          <node concept="2OqwBi" id="45MV7VGIwOR" role="37wK5m">
-                            <node concept="13iPFW" id="45MV7VGIvC4" role="2Oq$k0" />
-                            <node concept="3TrcHB" id="45MV7VGIxEy" role="2OqNvi">
-                              <ref role="3TsBF5" to="o23b:v3WHCwUiHA" resolve="name" />
-                            </node>
+                      <ref role="37wK5l" to="cu2c:~SModelRepository.getModelDescriptor(java.lang.String):org.jetbrains.mps.openapi.model.SModel" resolve="getModelDescriptor" />
+                      <node concept="2YIFZM" id="3ki2u9fMbqI" role="37wK5m">
+                        <ref role="37wK5l" to="cu2c:~SModelStereotype.withStereotype(java.lang.String,java.lang.String):java.lang.String" resolve="withStereotype" />
+                        <ref role="1Pybhc" to="cu2c:~SModelStereotype" resolve="SModelStereotype" />
+                        <node concept="2OqwBi" id="3ki2u9fMc7M" role="37wK5m">
+                          <node concept="13iPFW" id="3ki2u9fMc4K" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="3ki2u9fMckY" role="2OqNvi">
+                            <ref role="3TsBF5" to="o23b:v3WHCwUiHA" resolve="name" />
                           </node>
-                          <node concept="2OqwBi" id="45MV7VGIzdD" role="37wK5m">
-                            <node concept="13iPFW" id="45MV7VGIz3u" role="2Oq$k0" />
-                            <node concept="3TrcHB" id="45MV7VGI$ix" role="2OqNvi">
-                              <ref role="3TsBF5" to="o23b:v3WHCwUjHJ" resolve="stereotype" />
-                            </node>
+                        </node>
+                        <node concept="2OqwBi" id="3ki2u9fMcOG" role="37wK5m">
+                          <node concept="13iPFW" id="3ki2u9fMcDM" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="3ki2u9fMdg4" role="2OqNvi">
+                            <ref role="3TsBF5" to="o23b:v3WHCwUjHJ" resolve="stereotype" />
                           </node>
                         </node>
                       </node>
