@@ -2,8 +2,8 @@
 <solution name="aLibrary" uuid="ac9da4f2-d564-40a2-a35a-213ed1655172" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
-      <sourceRoot location="." />
       <sourceRoot location="models" />
+      <sourceRoot location="aLibrary" />
     </modelRoot>
   </models>
   <sourcePath />

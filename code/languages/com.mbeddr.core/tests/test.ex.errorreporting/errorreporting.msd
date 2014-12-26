@@ -2,8 +2,8 @@
 <solution name="test.ex.errorreporting" uuid="c07b5f13-ad5f-4d20-8135-e779258a1721" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
-      <sourceRoot location="." />
       <sourceRoot location="models" />
+      <sourceRoot location="test" />
     </modelRoot>
   </models>
   <sourcePath />
