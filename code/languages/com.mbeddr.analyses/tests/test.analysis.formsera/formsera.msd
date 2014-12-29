@@ -2,7 +2,6 @@
 <solution name="test.analysis.formsera" uuid="d23b59ca-f643-49ec-ae67-3f4488570639" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
-      <sourceRoot location="." />
       <sourceRoot location="models" />
     </modelRoot>
   </models>
