@@ -2,7 +2,6 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.spawner.dev.build/debugger.msd" folder="" />
       <modulePath path="${mbeddr.github.core.home}/tools/Eclipse.Debugger/Debugger.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.spawner/spawner.msd" folder="" />
     </projectModules>
