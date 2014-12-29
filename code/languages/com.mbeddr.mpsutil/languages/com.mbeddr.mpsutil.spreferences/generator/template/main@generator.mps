@@ -1069,12 +1069,8 @@
                               </node>
                               <node concept="2OqwBi" id="5uVY_XEw0Cb" role="2Oq$k0">
                                 <node concept="2OqwBi" id="5uVY_XEw0Cc" role="2Oq$k0">
-                                  <node concept="2YIFZM" id="5uVY_XEw0Cd" role="2Oq$k0">
-                                    <ref role="37wK5l" to="pt5l:~ProjectHelper.toMPSProject(com.intellij.openapi.project.Project):jetbrains.mps.project.Project" resolve="toMPSProject" />
-                                    <ref role="1Pybhc" to="pt5l:~ProjectHelper" resolve="ProjectHelper" />
-                                    <node concept="37vLTw" id="5uVY_XEw0Ce" role="37wK5m">
-                                      <ref role="3cqZAo" node="5aAhNV7I$6" resolve="project" />
-                                    </node>
+                                  <node concept="37vLTw" id="2vNzjxqDNTw" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="1m7X3OECMUP" resolve="mpsProject" />
                                   </node>
                                   <node concept="liA8E" id="5uVY_XEw0Cf" role="2OqNvi">
                                     <ref role="37wK5l" to="vsqj:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
