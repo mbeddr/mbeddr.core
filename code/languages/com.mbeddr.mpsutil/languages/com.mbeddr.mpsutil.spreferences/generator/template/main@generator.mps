@@ -674,6 +674,19 @@
                           <node concept="3clFbH" id="1MMv7Xp_cRQ" role="3cqZAp" />
                           <node concept="3clFbF" id="5Qe0B1Kysvw" role="3cqZAp">
                             <node concept="2OqwBi" id="5Qe0B1KytAz" role="3clFbG">
+                              <node concept="2OqwBi" id="5uVY_XEw0Cb" role="2Oq$k0">
+                                <node concept="2OqwBi" id="5uVY_XEw0Cc" role="2Oq$k0">
+                                  <node concept="37vLTw" id="5RKiL6g5vVn" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="1m7X3OECMUP" resolve="mpsProject" />
+                                  </node>
+                                  <node concept="liA8E" id="5uVY_XEw0Cf" role="2OqNvi">
+                                    <ref role="37wK5l" to="vsqj:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="5uVY_XEw0Cg" role="2OqNvi">
+                                  <ref role="37wK5l" to="88zw:~SRepository.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
+                                </node>
+                              </node>
                               <node concept="liA8E" id="5Qe0B1KyuW2" role="2OqNvi">
                                 <ref role="37wK5l" to="88zw:~ModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
                                 <node concept="2ShNRf" id="1m7X3OEDIJ$" role="37wK5m">
@@ -999,21 +1012,6 @@
                                               </node>
                                             </node>
                                           </node>
-                                          <node concept="3clFbH" id="5hBYkCKoYM9" role="3cqZAp" />
-                                          <node concept="3clFbF" id="48T8gyHwQXQ" role="3cqZAp">
-                                            <node concept="2OqwBi" id="48T8gyHwSfh" role="3clFbG">
-                                              <node concept="2YIFZM" id="48T8gyHwRAZ" role="2Oq$k0">
-                                                <ref role="37wK5l" to="cu2c:~UndoHelper.getInstance():jetbrains.mps.smodel.UndoHelper" resolve="getInstance" />
-                                                <ref role="1Pybhc" to="cu2c:~UndoHelper" resolve="UndoHelper" />
-                                              </node>
-                                              <node concept="liA8E" id="48T8gyHwSzc" role="2OqNvi">
-                                                <ref role="37wK5l" to="cu2c:~UndoHelper.flushCommand(jetbrains.mps.project.Project):void" resolve="flushCommand" />
-                                                <node concept="37vLTw" id="48T8gyHwSTj" role="37wK5m">
-                                                  <ref role="3cqZAo" node="1m7X3OECMUP" resolve="mpsProject" />
-                                                </node>
-                                              </node>
-                                            </node>
-                                          </node>
                                         </node>
                                       </node>
                                       <node concept="3clFb_" id="5f$4wDDvIeR" role="jymVt">
@@ -1065,19 +1063,6 @@
                                       </node>
                                     </node>
                                   </node>
-                                </node>
-                              </node>
-                              <node concept="2OqwBi" id="5uVY_XEw0Cb" role="2Oq$k0">
-                                <node concept="2OqwBi" id="5uVY_XEw0Cc" role="2Oq$k0">
-                                  <node concept="37vLTw" id="2vNzjxqDNTw" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="1m7X3OECMUP" resolve="mpsProject" />
-                                  </node>
-                                  <node concept="liA8E" id="5uVY_XEw0Cf" role="2OqNvi">
-                                    <ref role="37wK5l" to="vsqj:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                                  </node>
-                                </node>
-                                <node concept="liA8E" id="5uVY_XEw0Cg" role="2OqNvi">
-                                  <ref role="37wK5l" to="88zw:~SRepository.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
                                 </node>
                               </node>
                             </node>
