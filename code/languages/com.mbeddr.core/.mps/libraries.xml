@@ -19,6 +19,14 @@
             </Library>
           </value>
         </entry>
+        <entry key="mbeddr.ext">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.ext" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext" />
+            </Library>
+          </value>
+        </entry>
         <entry key="mbeddr.mpsutil">
           <value>
             <Library>
@@ -39,4 +47,3 @@
     </option>
   </component>
 </project>
-
