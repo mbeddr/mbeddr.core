@@ -1,95 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:b5ef41ef-8594-459c-bc08-a7e214c6fb43(com.mbeddr.ext.components.statemachine.structure)" version="0">
-  <persistence version="8" />
-  <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
-  <import index="2gv2" modelUID="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" version="13" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" />
-  <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="17" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8663730687027689188" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="StatemachineComponentAdapter" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="statemachine" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8663730687027689238" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="machine" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="clqz.5778488248013533809" resolveInfo="Statemachine" />
+<model ref="r:b5ef41ef-8594-459c-bc08-a7e214c6fb43(com.mbeddr.ext.components.statemachine.structure)">
+  <persistence version="9" />
+  <languages>
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+  </languages>
+  <imports>
+    <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
+    <import index="v7ag" ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" />
+    <import index="clqz" ref="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+      </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
+      <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
+        <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
+        <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <reference id="1071599976176" name="target" index="20lvS9" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1TIwiD" id="7wVKixdVVr$">
+    <property role="TrG5h" value="StatemachineComponentAdapter" />
+    <property role="34LRSv" value="statemachine" />
+    <property role="R4oN_" value="--" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7wVKixdVVsm" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="machine" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="clqz:50Lk78xBr9L" resolve="Statemachine" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8663730687027689237" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="v7ag.8105003328814473408" resolveInfo="IComponentContent" />
+    <node concept="PrWs8" id="7wVKixdVVsl" role="PzmwI">
+      <ref role="PrY4T" to="v7ag:71UKpntm630" resolve="IComponentContent" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4643433264761178082" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7139820346887661189" resolveInfo="IVisibleElementAdapter" />
+    <node concept="PrWs8" id="41KMvfckCvy" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6clJcrKm6q5" resolve="IVisibleElementAdapter" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1656687801206574232" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.1656687801206572012" resolveInfo="IRequiresConfigItem" />
+    <node concept="PrWs8" id="1rXJcsmD0Mo" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6151459193021482568" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="clqz.6151459193021482242" resolveInfo="IStatemachineNamePrefixProvider" />
+    <node concept="PrWs8" id="5lunSHimOp8" role="PzmwI">
+      <ref role="PrY4T" to="clqz:5lunSHimOk2" resolve="IStatemachineNamePrefixProvider" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1598382569875775232" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="InternalRunnableBinding" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1598382569875775234" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="runnable" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="v7ag.4491876417845641670" resolveInfo="Runnable" />
+  </node>
+  <node concept="1TIwiD" id="1oIA7EcBLW0">
+    <property role="TrG5h" value="InternalRunnableBinding" />
+    <property role="R4oN_" value="--" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1oIA7EcBLW2" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="runnable" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1598382569875775233" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="clqz.567269909073788506" resolveInfo="IOutEventBinding" />
+    <node concept="PrWs8" id="1oIA7EcBLW1" role="PzmwI">
+      <ref role="PrY4T" to="clqz:vvmfCe77Tq" resolve="IOutEventBinding" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5211587564239522241" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.3298295153090251326" resolveInfo="IStepIntoable" />
+    <node concept="PrWs8" id="4xjhOsalKB1" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:2R5TvtOl$CY" resolve="IStepIntoable" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1656687801206464316" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="StatemachineInCompsConfigItem" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="statemachines in components" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="use state machine in components" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1656687801206464451" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.4459718605982007336" resolveInfo="IConfigurationItem" />
+  </node>
+  <node concept="1TIwiD" id="1rXJcsmC_WW">
+    <property role="TrG5h" value="StatemachineInCompsConfigItem" />
+    <property role="34LRSv" value="statemachines in components" />
+    <property role="R4oN_" value="use state machine in components" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1rXJcsmC_Z3" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4514118643320650007" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="ProvidedOperationBinding" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="op" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="triggered by operation call" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4514118643320650262" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="clqz.4643433264760980255" resolveInfo="IInEventBinding" />
+  </node>
+  <node concept="1TIwiD" id="3U_nJP167$n">
+    <property role="TrG5h" value="ProvidedOperationBinding" />
+    <property role="34LRSv" value="op" />
+    <property role="R4oN_" value="triggered by operation call" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3U_nJP167Cm" role="PzmwI">
+      <ref role="PrY4T" to="clqz:41KMvfcjScv" resolve="IInEventBinding" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4514118643321712827" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="v7ag.4514118643321588318" resolveInfo="IOperationTriggerLike" />
+    <node concept="PrWs8" id="3U_nJP1ab2V" role="PzmwI">
+      <ref role="PrY4T" to="v7ag:3U_nJP19GDu" resolve="IOperationTriggerLike" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7525936201958402473" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="RequiredOperationBinding" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="op" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="calls operation" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7525936201958402476" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="port" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="v7ag.4491876417845628841" resolveInfo="RequiredPort" />
+  </node>
+  <node concept="1TIwiD" id="6xLvLBZYUAD">
+    <property role="TrG5h" value="RequiredOperationBinding" />
+    <property role="34LRSv" value="op" />
+    <property role="R4oN_" value="calls operation" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6xLvLBZYUAG" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="port" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v7ag:3TmmsQkD8YD" resolve="RequiredPort" />
     </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7525936201958402478" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="operation" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="v7ag.4491876417845484924" resolveInfo="Operation" />
+    <node concept="1TJgyj" id="6xLvLBZYUAI" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="operation" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v7ag:3TmmsQkC_PW" resolve="Operation" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7525936201958402474" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="clqz.567269909073788506" resolveInfo="IOutEventBinding" />
+    <node concept="PrWs8" id="6xLvLBZYUAE" role="PzmwI">
+      <ref role="PrY4T" to="clqz:vvmfCe77Tq" resolve="IOutEventBinding" />
     </node>
-  </root>
+  </node>
 </model>
 

@@ -1,120 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:34a46663-c408-427f-8f72-90db466b797d(com.mbeddr.ext.compositecomponents.structure)">
-  <persistence version="8" />
-  <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
-  <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="36" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="g88q" modelUID="r:34a46663-c408-427f-8f72-90db466b797d(com.mbeddr.ext.compositecomponents.structure)" version="-1" implicit="yes" />
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7780999115923829680" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="CompositeComponent" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="composite component" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/compositeComp.png" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="v7ag.4491876417845474761" resolveInfo="Component" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7780999115923947731" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="CompositeComponentInstanceConfig" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="internal instances" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="v7ag.7780999115923942144" resolveInfo="AbstractInstanceConfiguration" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7780999115924309094" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="initParameters" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7780999115924346816" resolveInfo="CompositeComponentInstanceParam" />
+<model ref="r:34a46663-c408-427f-8f72-90db466b797d(com.mbeddr.ext.compositecomponents.structure)">
+  <persistence version="9" />
+  <languages>
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+  </languages>
+  <imports>
+    <import index="v7ag" ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
+    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+      </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
+      <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1160488491229" name="iconPath" index="MwhBj" />
+        <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
+        <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
+        <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <reference id="1071599976176" name="target" index="20lvS9" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1TIwiD" id="6JVEnxIhbeK">
+    <property role="TrG5h" value="CompositeComponent" />
+    <property role="34LRSv" value="composite component" />
+    <property role="MwhBj" value="${module}/icons/compositeComp.png" />
+    <ref role="1TJDcQ" to="v7ag:3TmmsQkCzn9" resolve="Component" />
+  </node>
+  <node concept="1TIwiD" id="6JVEnxIhC3j">
+    <property role="TrG5h" value="CompositeComponentInstanceConfig" />
+    <property role="34LRSv" value="internal instances" />
+    <ref role="1TJDcQ" to="v7ag:6JVEnxIhAG0" resolve="AbstractInstanceConfiguration" />
+    <node concept="1TJgyj" id="6JVEnxIj0hA" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="initParameters" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6JVEnxIj9v0" resolve="CompositeComponentInstanceParam" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7780999115924020491" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="v7ag.8105003328814473408" resolveInfo="IComponentContent" />
+    <node concept="PrWs8" id="6JVEnxIhTOb" role="PzmwI">
+      <ref role="PrY4T" to="v7ag:71UKpntm630" resolve="IComponentContent" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7780999115924218270" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="DelegatingConnector" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="delegate" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7780999115924272957" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="internalInstance" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="v7ag.4491876417845649014" resolveInfo="ComponentInstance" />
+  </node>
+  <node concept="1TIwiD" id="6JVEnxIiE6u">
+    <property role="TrG5h" value="DelegatingConnector" />
+    <property role="34LRSv" value="delegate" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6JVEnxIiRsX" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="internalInstance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
     </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7780999115924272958" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="internalPort" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="v7ag.4491876417845484930" resolveInfo="Port" />
+    <node concept="1TJgyj" id="6JVEnxIiRsY" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="internalPort" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
     </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7780999115924218311" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="outsidePort" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="v7ag.4491876417845484930" resolveInfo="Port" />
+    <node concept="1TJgyj" id="6JVEnxIiE77" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="outsidePort" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v7ag:3TmmsQkC_Q2" resolve="Port" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7780999115924218271" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="v7ag.6041318036222235015" resolveInfo="InstanceConfigContents" />
+    <node concept="PrWs8" id="6JVEnxIiE6v" role="PzmwI">
+      <ref role="PrY4T" to="v7ag:5fn4FV$bX67" resolve="InstanceConfigContents" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7780999115924277023" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="v7ag.7780999115924276745" resolveInfo="ISatisfiesPort" />
+    <node concept="PrWs8" id="6JVEnxIiSsv" role="PzmwI">
+      <ref role="PrY4T" to="v7ag:6JVEnxIiSo9" resolve="ISatisfiesPort" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7780999115924346816" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="CompositeComponentInstanceParam" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7780999115924346817" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.8444296659257696249" resolveInfo="IArgumentLike" />
+  </node>
+  <node concept="1TIwiD" id="6JVEnxIj9v0">
+    <property role="TrG5h" value="CompositeComponentInstanceParam" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6JVEnxIj9v1" role="PzmwI">
+      <ref role="PrY4T" to="x27k:7kKaL9x4DZT" resolve="IArgumentLike" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7780999115924351522" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="CompositeComponentInstanceParamRef" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7780999115924351545" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="param" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7780999115924346816" resolveInfo="CompositeComponentInstanceParam" />
+  </node>
+  <node concept="1TIwiD" id="6JVEnxIjaCy">
+    <property role="TrG5h" value="CompositeComponentInstanceParamRef" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="6JVEnxIjaCT" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="param" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6JVEnxIj9v0" resolve="CompositeComponentInstanceParam" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7780999115924356938" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="InitializeInternalInstances" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="initialize internal instances" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7780999115924356964" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="params" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+  </node>
+  <node concept="1TIwiD" id="6JVEnxIjbXa">
+    <property role="TrG5h" value="InitializeInternalInstances" />
+    <property role="34LRSv" value="initialize internal instances" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="6JVEnxIjbX$" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="params" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7780999115924363431" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.8011039602902827386" resolveInfo="ICallLike" />
+    <node concept="PrWs8" id="6JVEnxIjdyB" role="PzmwI">
+      <ref role="PrY4T" to="x27k:6WGVxckB05U" resolve="ICallLike" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7540109328385923714" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="CompositeComponentsConfigItem" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="composite components" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="use components that contain other instances" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7540109328385923716" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.4459718605982007336" resolveInfo="IConfigurationItem" />
+  </node>
+  <node concept="1TIwiD" id="6yzQnKA3lE2">
+    <property role="TrG5h" value="CompositeComponentsConfigItem" />
+    <property role="34LRSv" value="composite components" />
+    <property role="R4oN_" value="use components that contain other instances" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6yzQnKA3lE4" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4859596973183806269" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="ComponentRefExpr" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4859596973183806321" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="instance" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="v7ag.4491876417845649014" resolveInfo="ComponentInstance" />
+  </node>
+  <node concept="1TIwiD" id="4dKKrcEbMGX">
+    <property role="TrG5h" value="ComponentRefExpr" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="4dKKrcEbMHL" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="instance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
     </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4859596973185114238" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="providedPort" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="v7ag.4491876417845628840" resolveInfo="ProvidedPort" />
+    <node concept="1TJgyj" id="4dKKrcEgM1Y" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="providedPort" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v7ag:3TmmsQkD8YC" resolve="ProvidedPort" />
     </node>
-  </root>
+  </node>
 </model>
 
