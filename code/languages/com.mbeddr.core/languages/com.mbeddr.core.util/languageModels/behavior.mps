@@ -17,29 +17,25 @@
     <import index="x30c" ref="r:04a32be8-7074-4c9c-b2f8-77d4a01a19dc(com.mbeddr.core.debug.debugger)" />
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
     <import index="pry4" ref="r:0a0d7eec-6e5a-412b-8e16-e3ee5ed7fb95(jetbrains.mps.debug.api.programState)" />
-    <import index="21is" ref="r:48edee5d-2586-4224-ae5d-181c80fe8d51(jetbrains.mps.traceInfo)" />
     <import index="lom1" ref="r:41bf31ae-8e87-4132-b404-f244ad8a3001(jetbrains.mps.generator.traceInfo)" />
-    <import index="b8v4" ref="r:853e47da-9d90-42d3-98a2-73e5663fc94c(com.mbeddr.core.expressions.dataFlow)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
-    <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="4hf9" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.traceInfo(MPS.Core/jetbrains.mps.traceInfo@java_stub)" />
-    <import index="9m56" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.traceInfo(MPS.Core/jetbrains.mps.generator.traceInfo@java_stub)" />
     <import index="p15z" ref="r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil.behavior)" />
     <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="2rho" ref="r:4e770e63-2ef5-4a0d-b2e8-c5c1a1565703(com.mbeddr.core.udt.behavior)" />
+    <import index="ierg" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.textgen.trace(MPS.Core/jetbrains.mps.textgen.trace@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="dd55" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.cache(MPS.Core/jetbrains.mps.generator.cache@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -1405,15 +1401,15 @@
             <property role="TrG5h" value="debugInfo" />
             <property role="3TUv4t" value="false" />
             <node concept="3uibUv" id="74nKSDp1YLe" role="1tU5fm">
-              <ref role="3uigEE" to="21is:2wPxRIVmnv9" resolve="DebugInfo" />
+              <ref role="3uigEE" to="ierg:~DebugInfo" resolve="DebugInfo" />
             </node>
             <node concept="2OqwBi" id="74nKSDp1YLf" role="33vP2m">
               <node concept="2YIFZM" id="74nKSDp1YLg" role="2Oq$k0">
-                <ref role="1Pybhc" to="lom1:6xym8k6eHIC" resolve="TraceInfoCache" />
-                <ref role="37wK5l" to="lom1:6xym8k6eHIS" resolve="getInstance" />
+                <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
+                <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="74nKSDp1YLh" role="2OqNvi">
-                <ref role="37wK5l" to="lom1:6xym8k6eHK0" resolve="get" />
+                <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
                 <node concept="2JrnkZ" id="74nKSDp1YLj" role="37wK5m">
                   <node concept="2OqwBi" id="74nKSDp1YLk" role="2JrQYb">
                     <node concept="3cpWsa" id="4dVT39Gzk17" role="2Oq$k0">
@@ -1439,7 +1435,7 @@
                 <property role="TrG5h" value="posInfos" />
                 <node concept="2hMVRd" id="4dVT39GziEB" role="1tU5fm">
                   <node concept="3uibUv" id="4dVT39GziED" role="2hN53Y">
-                    <ref role="3uigEE" to="21is:4csPbYD7h9s" resolve="TraceablePositionInfo" />
+                    <ref role="3uigEE" to="ierg:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="4dVT39GziEe" role="33vP2m">
@@ -1447,7 +1443,7 @@
                     <ref role="3cqZAo" node="74nKSDp1YLd" resolve="debugInfo" />
                   </node>
                   <node concept="liA8E" id="4dVT39GziEo" role="2OqNvi">
-                    <ref role="37wK5l" to="21is:2AXeLzQwHlH" resolve="getPositions" />
+                    <ref role="37wK5l" to="ierg:~DebugInfo.getPositions(org.jetbrains.mps.openapi.model.SNode):java.util.Set" resolve="getPositions" />
                     <node concept="3cpWsa" id="77eI44NkD_t" role="37wK5m">
                       <ref role="3cqZAo" node="4dVT39GzjkT" resolve="root" />
                     </node>
@@ -1470,7 +1466,7 @@
                         <ref role="2Gs0qQ" node="5PTtg25EKg3" resolve="positionInfo" />
                       </node>
                       <node concept="liA8E" id="5PTtg25EKga" role="2OqNvi">
-                        <ref role="37wK5l" to="21is:2wPxRIVmncN" resolve="getNodeId" />
+                        <ref role="37wK5l" to="ierg:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
                       </node>
                     </node>
                     <node concept="liA8E" id="5PTtg25EKgb" role="2OqNvi">
@@ -1500,7 +1496,7 @@
                               <ref role="2Gs0qQ" node="4dVT39Gzs3O" resolve="pposInfo" />
                             </node>
                             <node concept="liA8E" id="4dVT39Gzs3U" role="2OqNvi">
-                              <ref role="37wK5l" to="21is:4csPbYD7hbr" resolve="getPropertyString" />
+                              <ref role="37wK5l" to="ierg:~TraceablePositionInfo.getPropertyString():java.lang.String" resolve="getPropertyString" />
                             </node>
                           </node>
                         </node>
@@ -1511,7 +1507,7 @@
                               <ref role="2Gs0qQ" node="4dVT39Gzs3O" resolve="pposInfo" />
                             </node>
                             <node concept="liA8E" id="4dVT39Gzs3Y" role="2OqNvi">
-                              <ref role="37wK5l" to="21is:4csPbYD7hax" resolve="getConceptFqName" />
+                              <ref role="37wK5l" to="ierg:~TraceablePositionInfo.getConceptFqName():java.lang.String" resolve="getConceptFqName" />
                             </node>
                           </node>
                         </node>
