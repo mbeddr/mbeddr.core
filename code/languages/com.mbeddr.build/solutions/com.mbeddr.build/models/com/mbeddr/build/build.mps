@@ -4545,6 +4545,9 @@
           <property role="TrG5h" value="com.mbeddr.ext.math#971707942815264354" />
           <property role="3LESm3" value="85a28967-1d70-4301-b6af-2fac82ee8295" />
           <property role="2GAjPV" value="false" />
+          <node concept="3bR9La" id="42U0nMizEyF" role="3bR37C">
+            <ref role="3bR37D" node="7uZw0yZ43JW" resolve="com.mbeddr.core.util" />
+          </node>
         </node>
         <node concept="1SiIV0" id="20rWHx3yZaL" role="3bR37C">
           <node concept="3bR9La" id="20rWHx3yZaM" role="1SiIV1">
