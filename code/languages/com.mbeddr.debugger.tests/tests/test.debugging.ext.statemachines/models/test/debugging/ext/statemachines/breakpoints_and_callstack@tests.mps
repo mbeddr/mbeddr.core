@@ -26,7 +26,7 @@
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" implicit="yes" />
   <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="100" implicit="yes" />
   <import index="q9ah" modelUID="r:881cd106-b9c3-33d3-8c69-9a76f591f92a(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)" version="-1" implicit="yes" />
-  <root type="rpmx.DebuggerTest" typeId="rpmx.7048220250905867886" id="3450485464476995017" nodeInfo="ng">
+  <root type="rpmx.DebuggerTest" typeId="rpmx.7048220250905867886" id="3450485464476995017" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="BreakpointsTest" />
     <node role="debuggerBackend" roleId="rpmx.6289137936867385367" type="rpmx.GdbDebuggerBackend" typeId="rpmx.6289137936867337325" id="6289137936877192729" nodeInfo="ng" />
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="3450485464476995019" nodeInfo="ng" />

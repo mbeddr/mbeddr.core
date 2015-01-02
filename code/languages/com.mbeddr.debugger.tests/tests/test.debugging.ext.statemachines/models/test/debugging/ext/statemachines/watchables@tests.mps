@@ -369,7 +369,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1370345416473_1" />
     </node>
   </root>
-  <root type="rpmx.DebuggerTest" typeId="rpmx.7048220250905867886" id="3450485464476995017" nodeInfo="ng">
+  <root type="rpmx.DebuggerTest" typeId="rpmx.7048220250905867886" id="3450485464476995017" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="WatchablesSMTest" />
     <node role="debuggerBackend" roleId="rpmx.6289137936867385367" type="rpmx.GdbDebuggerBackend" typeId="rpmx.6289137936867337325" id="6289137936877190143" nodeInfo="ng" />
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.WatchablesDeclaration" typeId="rpmx.1218249513292256529" id="9082533278988822671" nodeInfo="ng">

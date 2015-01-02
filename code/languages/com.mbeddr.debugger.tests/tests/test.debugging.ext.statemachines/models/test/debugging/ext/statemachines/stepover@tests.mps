@@ -45,7 +45,7 @@
       <link role="template" roleId="51wr.8719112291175211414" targetNodeId="q9ah.8589448133356038649" resolveInfo="Desktop Platform" />
     </node>
   </root>
-  <root type="rpmx.DebuggerTest" typeId="rpmx.7048220250905867886" id="3450485464476995017" nodeInfo="ng">
+  <root type="rpmx.DebuggerTest" typeId="rpmx.7048220250905867886" id="3450485464476995017" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="StepOverInSMTest" />
     <node role="debuggerBackend" roleId="rpmx.6289137936867385367" type="rpmx.GdbDebuggerBackend" typeId="rpmx.6289137936867337325" id="6289137936877190044" nodeInfo="ng" />
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="3450485464476995019" nodeInfo="ng" />

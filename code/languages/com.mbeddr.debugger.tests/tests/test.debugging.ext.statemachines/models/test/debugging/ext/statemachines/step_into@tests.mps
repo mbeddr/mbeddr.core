@@ -306,7 +306,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1370871358754_3" />
     </node>
   </root>
-  <root type="rpmx.DebuggerTest" typeId="rpmx.7048220250905867886" id="2536856479943206802" nodeInfo="ng">
+  <root type="rpmx.DebuggerTest" typeId="rpmx.7048220250905867886" id="2536856479943206802" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="StepIntoSM" />
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="2536856479943206804" nodeInfo="ng" />
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.DebuggerTestcase" typeId="rpmx.105850086902839305" id="2536856479943206807" nodeInfo="ng">

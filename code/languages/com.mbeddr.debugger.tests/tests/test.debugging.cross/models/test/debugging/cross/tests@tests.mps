@@ -1,30 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:0052eeda-86db-45e8-9a6b-3d8faf11e9a3(test.debugging.cross.tests@tests)">
-  <persistence version="8" />
-  <language namespace="f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)" />
-  <language namespace="8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)" />
-  <language namespace="89c70b13-7f9c-47c3-b3c2-c218b52ed82c(com.mbeddr.core.debug.test)" />
-  <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="40" implicit="yes" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="rpmx" modelUID="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" version="100" implicit="yes" />
-  <root type="rpmx.DebuggerTestLibrary" typeId="rpmx.5710167937130873101" id="5710167937131101473" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Main" />
-    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.WatchablesDeclaration" typeId="rpmx.1218249513292256529" id="5710167937131122858" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="mainParameters" />
-      <property name="exported" nameId="rpmx.8924761790439057805" value="true" />
+<model ref="r:0052eeda-86db-45e8-9a6b-3d8faf11e9a3(test.debugging.cross.tests@tests)">
+  <persistence version="9" />
+  <languages>
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
+  </languages>
+  <imports />
+  <registry>
+    <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
+        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test">
+      <concept id="4550138447368290426" name="com.mbeddr.core.debug.test.structure.StackFrame" flags="ng" index="1l6lqP">
+        <property id="4550138447368290430" name="name" index="1l6lqL" />
+      </concept>
+      <concept id="105850086901771260" name="com.mbeddr.core.debug.test.structure.EmptyDebuggerContent" flags="ng" index="3sgmnF" />
+      <concept id="105850086900151263" name="com.mbeddr.core.debug.test.structure.IDebuggerTestContent" flags="ng" index="3smbR8">
+        <property id="8924761790439057805" name="exported" index="1rKBot" />
+      </concept>
+      <concept id="1218249513292774460" name="com.mbeddr.core.debug.test.structure.StackFramesDeclaration" flags="ng" index="1vsUH6" />
+      <concept id="1218249513292774578" name="com.mbeddr.core.debug.test.structure.IStackFrameList" flags="ng" index="1vsUJ8">
+        <child id="1218249513292774579" name="stackFrames" index="1vsUJ9" />
+      </concept>
+      <concept id="1218249513292256529" name="com.mbeddr.core.debug.test.structure.WatchablesDeclaration" flags="ng" index="1vuW9F" />
+      <concept id="5710167937130873101" name="com.mbeddr.core.debug.test.structure.DebuggerTestLibrary" flags="ng" index="1zJ5pL" />
+      <concept id="5710167937130927554" name="com.mbeddr.core.debug.test.structure.IDebuggerTest" flags="ng" index="1zJgaY">
+        <child id="5710167937130937944" name="contents" index="1zJi$$" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1zJ5pL" id="4WY_RKGxzOx">
+    <property role="TrG5h" value="Main" />
+    <node concept="1vuW9F" id="4WY_RKGxD2E" role="1zJi$$">
+      <property role="TrG5h" value="mainParameters" />
+      <property role="1rKBot" value="true" />
     </node>
-    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="5710167937131122861" nodeInfo="ng" />
-    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.StackFramesDeclaration" typeId="rpmx.1218249513292774460" id="5710167937131122862" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="inMain" />
-      <property name="exported" nameId="rpmx.8924761790439057805" value="true" />
-      <node role="stackFrames" roleId="rpmx.1218249513292774579" type="rpmx.StackFrame" typeId="rpmx.4550138447368290426" id="5710167937131122863" nodeInfo="ng">
-        <property name="name" nameId="rpmx.4550138447368290430" value="main" />
+    <node concept="3sgmnF" id="4WY_RKGxD2H" role="1zJi$$" />
+    <node concept="1vsUH6" id="4WY_RKGxD2I" role="1zJi$$">
+      <property role="TrG5h" value="inMain" />
+      <property role="1rKBot" value="true" />
+      <node concept="1l6lqP" id="4WY_RKGxD2J" role="1vsUJ9">
+        <property role="1l6lqL" value="main" />
       </node>
     </node>
-    <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="5710167937131122853" nodeInfo="ng" />
-  </root>
-  <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="8165847842702726628" nodeInfo="ng">
-    <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/debugger-tests.mpr" />
-  </root>
+    <node concept="3sgmnF" id="4WY_RKGxD2_" role="1zJi$$" />
+  </node>
+  <node concept="2XOHcx" id="75iUP$MbTn$">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/debugger-tests.mpr" />
+  </node>
 </model>
 

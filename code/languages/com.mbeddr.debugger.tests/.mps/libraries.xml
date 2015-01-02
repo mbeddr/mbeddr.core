@@ -35,6 +35,14 @@
             </Library>
           </value>
         </entry>
+        <entry key="eclipse.debugger">
+          <value>
+            <Library>
+              <option name="name" value="eclipse.debugger" />
+              <option name="path" value="${mbeddr.github.core.home}/tools/Eclipse.Debugger" />
+            </Library>
+          </value>
+        </entry>
         <entry key="ext">
           <value>
             <Library>
@@ -63,4 +71,3 @@
     </option>
   </component>
 </project>
-

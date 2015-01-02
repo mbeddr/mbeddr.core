@@ -317,7 +317,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1365771331771_10" />
     </node>
   </root>
-  <root type="rpmx.DebuggerTest" typeId="rpmx.7048220250905867886" id="6713970538440410238" nodeInfo="ng">
+  <root type="rpmx.DebuggerTest" typeId="rpmx.7048220250905867886" id="6713970538440410238" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="Statemachine" />
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.EmptyDebuggerContent" typeId="rpmx.105850086901771260" id="6713970538440410240" nodeInfo="ng" />
     <node role="contents" roleId="rpmx.5710167937130937944" type="rpmx.WatchablesDeclaration" typeId="rpmx.1218249513292256529" id="2468281964189331571" nodeInfo="ng">
