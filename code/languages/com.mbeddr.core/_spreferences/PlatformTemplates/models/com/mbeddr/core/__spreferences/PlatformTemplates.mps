@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:09ea9bac-62d9-4b50-b41f-292b10d7272e(com.mbeddr.core.__spreferences.PlatformTemplates)">
+<model ref="r:a604a9bb-58f8-4cf0-a289-ef69bb1576bb(com.mbeddr.core.__spreferences.PlatformTemplates)">
   <persistence version="9" />
   <languages>
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
@@ -29,10 +29,10 @@
       </concept>
     </language>
   </registry>
-  <node concept="2xbcct" id="5yoD4QOCk1D">
-    <node concept="2xbbuh" id="5yoD4QOCk2g" role="2xbcco">
+  <node concept="2xbcct" id="5qSgLsRR2lr">
+    <node concept="2xbbuh" id="5qSgLsRR2m2" role="2xbcco">
       <property role="TrG5h" value="Desktop Platform" />
-      <node concept="2AWWZL" id="5yoD4QOCk1E" role="2xbbhh">
+      <node concept="2AWWZL" id="5qSgLsRR2ls" role="2xbbhh">
         <property role="2AWWZJ" value="gcc" />
         <property role="3r8Kw1" value="gdb" />
         <property role="3r8Kxs" value="make" />
