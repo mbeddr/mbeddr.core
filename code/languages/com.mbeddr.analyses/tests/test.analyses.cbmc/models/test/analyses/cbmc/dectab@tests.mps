@@ -134,13 +134,17 @@
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="k146.6209595569797584861" resolveInfo="DecTab" />
             </node>
           </node>
-          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="8697457845344067015" nodeInfo="ng">
-            <property name="nodeKind" nameId="o23b.4791280061046124024" value="y" />
-            <property name="nodeValue" nameId="o23b.4791280061046139065" value="1" />
-          </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="8697457845344073134" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="x" />
             <property name="nodeValue" nameId="o23b.4791280061046139065" value="0" />
+            <property name="hasAlternativeSteps" nameId="o23b.5665549241468854500" value="true" />
+            <property name="alternativeSteps" nameId="o23b.5665549241468834974" value="5,6" />
+          </node>
+          <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="8697457845344067015" nodeInfo="ng">
+            <property name="nodeKind" nameId="o23b.4791280061046124024" value="y" />
+            <property name="nodeValue" nameId="o23b.4791280061046139065" value="1" />
+            <property name="hasAlternativeSteps" nameId="o23b.5665549241468854500" value="true" />
+            <property name="alternativeSteps" nameId="o23b.5665549241468834974" value="5,6" />
           </node>
           <node role="states" roleId="o23b.4791280061046137595" type="o23b.CBMCCounterexampleStateTest" typeId="o23b.4791280061046124023" id="8697457845344073400" nodeInfo="ng">
             <property name="nodeKind" nameId="o23b.4791280061046124024" value="FAIL" />

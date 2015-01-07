@@ -6,7 +6,7 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="45" implicit="yes" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="56" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="hj5x" modelUID="r:51d4e66d-7bef-4322-a125-0efcf6898af6(com.mbeddr.analyses.cbmc.core.structure)" version="2" implicit="yes" />
@@ -142,17 +142,17 @@
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="5892636569029073208" resolveInfo="simple_gswitch" />
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.GSwitchAnalysis" typeId="hj5x.8697457845339756478" id="8697457845339845282" nodeInfo="ng">
-      <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
-      <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="true" />
-      <property name="partialLoops" nameId="q5q6.786222485499368246" value="false" />
-      <property name="useRefinement" nameId="q5q6.923137795053030927" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
-      <property name="showUnwindingDepthInfo" nameId="q5q6.1015192564308444976" value="true" />
-      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="none" />
-      <property name="hasSpecifiedTimeout" nameId="q5q6.5889520553258812025" value="false" />
-      <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="none" />
-      <property name="timeoutForSingleAnalysis" nameId="q5q6.5889520553258614000" value="none" />
-      <property name="sliceFormula" nameId="q5q6.9134944440162076206" value="false" />
+      <property name="useCbmc" value="true" />
+      <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="true" />
+      <property name="partialLoops" nameId="q5q6.8327535879610145463" value="false" />
+      <property name="useRefinement" nameId="q5q6.8327535879610145521" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="25" />
+      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="none" />
+      <property name="hasSpecifiedTimeout" value="false" />
+      <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
+      <property name="timeoutForSingleAnalysis" nameId="q5q6.8327535879610783188" value="none" />
+      <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
+      <property name="hasUnwindingDepth" nameId="q5q6.8327535879610145347" value="true" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="5892636569029073209" resolveInfo="signum_gswitch" />
       <link role="gswitchContainer" roleId="hj5x.8697457845339756479" targetNodeId="5892636569029073209" resolveInfo="signum_gswitch" />
     </node>
