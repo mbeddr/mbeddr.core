@@ -721,6 +721,21 @@
         </node>
       </node>
     </node>
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="151435140526267396" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="allowEverythingExceptWhitespace" />
+      <property name="isStatic" nameId="1i04.5864038008284099149" value="true" />
+      <property name="isVirtual" nameId="1i04.1225194472832" value="true" />
+      <property name="isPrivate" nameId="1i04.1225194472833" value="false" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="151435140526267397" nodeInfo="nn" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="151435140526267398" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="151435140526267399" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="151435140526267400" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068581517676" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="151435140526267401" nodeInfo="nn">
+            <property name="value" nameId="tpee.1068580123138" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="5095889050031059920" nodeInfo="ng">
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="vs0r.5095889050031055796" resolveInfo="IContainerOfUniqueNames" />
