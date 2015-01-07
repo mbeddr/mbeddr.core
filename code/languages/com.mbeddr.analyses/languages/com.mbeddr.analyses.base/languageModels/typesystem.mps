@@ -51,6 +51,15 @@
           </node>
         </node>
       </node>
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="1122496468960933587" nodeInfo="nn" />
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="1122496468960938965" nodeInfo="nn">
+        <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1122496468960939019" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="This concept is deprecated. Please apply migration 'MBEDDR 2015-01-07: Migrate analyses configurations' " />
+        </node>
+        <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="1122496468960948609" nodeInfo="nn">
+          <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5594952247539457115" resolveInfo="ac" />
+        </node>
+      </node>
     </node>
   </root>
 </model>
