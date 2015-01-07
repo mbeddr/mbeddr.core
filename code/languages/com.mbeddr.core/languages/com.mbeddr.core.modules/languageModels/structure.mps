@@ -9,10 +9,11 @@
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" />
   <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="16" />
   <import index="kwxp" modelUID="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" version="-1" />
+  <import index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" version="0" />
+  <import index="79wq" modelUID="r:ad7435e2-263f-4d16-a250-c987f2fa9599(com.mbeddr.core.qa.structure)" version="3" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
-  <import index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" version="0" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6437088627575722813" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Module" />
     <property name="rootable" nameId="tpce.1096454100552" value="false" />
@@ -1117,6 +1118,24 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="c4fa.4185783222026475238" resolveInfo="LocalVariableDeclaration" />
     </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5277057488628077040" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="FunctionStatementMetric" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="metrics" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="statements in IFunctionLike" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="vs0r.5277057488631769179" resolveInfo="Metric" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5277057488649265580" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="CyclomaticComplexity" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="metrics" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="cyclomatic complexity" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="vs0r.5277057488631769179" resolveInfo="Metric" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5277057488651146805" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="ExpressionDepth" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="metrics" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="expression depth" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="vs0r.5277057488631769179" resolveInfo="Metric" />
   </root>
 </model>
 
