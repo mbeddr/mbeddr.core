@@ -30,6 +30,9 @@
                 <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="9125142491355884610" nodeInfo="ng">
                   <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="9125142491355884618" resolveInfo="testCase1" />
                 </node>
+                <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6513535385981977485" nodeInfo="ng">
+                  <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="4313713241686249640" resolveInfo="arrayTest" />
+                </node>
               </node>
             </node>
           </node>
@@ -141,43 +144,26 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4313713241686262308" nodeInfo="ng" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4313713241686266518" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="res" />
-          <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="4313713241686266519" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-            <node role="baseType" roleId="c4fa.7763322639126652758" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="4313713241686266520" nodeInfo="ng">
-              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-            </node>
-            <node role="sizeExpr" roleId="yq40.1452920870317474611" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4313713241686266521" nodeInfo="ng">
-              <property name="value" nameId="mj1l.2212975673976043696" value="5" />
-            </node>
-          </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="4313713241686266522" nodeInfo="ng">
-            <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4313713241686266523" nodeInfo="ng">
-              <property name="value" nameId="mj1l.2212975673976043696" value="1" />
-            </node>
-            <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4313713241686266524" nodeInfo="ng">
-              <property name="value" nameId="mj1l.2212975673976043696" value="2" />
-            </node>
-            <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4313713241686266525" nodeInfo="ng">
-              <property name="value" nameId="mj1l.2212975673976043696" value="3" />
-            </node>
-            <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4313713241686266526" nodeInfo="ng">
-              <property name="value" nameId="mj1l.2212975673976043696" value="4" />
-            </node>
-            <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4313713241686266527" nodeInfo="ng">
-              <property name="value" nameId="mj1l.2212975673976043696" value="5" />
-            </node>
-          </node>
-        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertEquals" typeId="yz9a.7755897872837082045" id="4313713241686263220" nodeInfo="ng">
-          <node role="expected" roleId="yz9a.7755897872837031764" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4313713241686270484" nodeInfo="ng">
-            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4313713241686266518" resolveInfo="res" />
-          </node>
           <node role="actual" roleId="yz9a.7755897872837031765" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4313713241686264098" nodeInfo="ng">
             <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4313713241686253125" resolveInfo="expct" />
+          </node>
+          <node role="expected" roleId="yz9a.7755897872837031764" type="c4fa.InitExpression" typeId="c4fa.8850915533694634145" id="6513535385980636823" nodeInfo="ng">
+            <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6513535385980638501" nodeInfo="ng">
+              <property name="value" nameId="mj1l.2212975673976043696" value="1" />
+            </node>
+            <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6513535385980639781" nodeInfo="ng">
+              <property name="value" nameId="mj1l.2212975673976043696" value="2" />
+            </node>
+            <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6513535385980642211" nodeInfo="ng">
+              <property name="value" nameId="mj1l.2212975673976043696" value="3" />
+            </node>
+            <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6513535385980643495" nodeInfo="ng">
+              <property name="value" nameId="mj1l.2212975673976043696" value="4" />
+            </node>
+            <node role="elements" roleId="c4fa.8850915533694634146" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6513535385980644781" nodeInfo="ng">
+              <property name="value" nameId="mj1l.2212975673976043696" value="5" />
+            </node>
           </node>
         </node>
       </node>
