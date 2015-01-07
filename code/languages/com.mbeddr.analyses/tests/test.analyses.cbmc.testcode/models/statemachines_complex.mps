@@ -1676,23 +1676,6 @@
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="cmgk.624957442821420128" resolveInfo="SIUnits" />
     </node>
   </root>
-  <root type="q46j.AnalysisConfiguration" typeId="q46j.6472990431939580591" id="955060170563691560" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="ComplexSMs" />
-    <node role="analyses" roleId="q46j.6472990431939692464" type="lcpc.StatemachineCBMCAnalysis" typeId="lcpc.6085839724192268104" id="955060170563691561" nodeInfo="ng">
-      <property name="useCbmc" value="true" />
-      <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="5" />
-      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="-1" />
-      <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
-      <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
-      <property name="hasUnwindingDepth" nameId="q5q6.8327535879610145347" value="true" />
-      <link role="satemachine" roleId="lcpc.6085839724192268105" targetNodeId="9099045060857699996" resolveInfo="ACCController" />
-      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="9099045060860348611" resolveInfo="verifyACCRobustness" />
-    </node>
-    <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="955060170564431254" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="955060170563533893" resolveInfo="ACCEnvironment" />
-    </node>
-  </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="923137795043411366" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="MyUnits" />
     <node role="contents" roleId="x27k.6437088627575722833" type="qlb5.Unit" typeId="qlb5.8337440621611267903" id="2230076513944666412" nodeInfo="ng">
@@ -1713,6 +1696,36 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="923137795043411468" nodeInfo="ng">
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="cmgk.624957442821420128" resolveInfo="SIUnits" />
+    </node>
+  </root>
+  <root type="q5q6.CBMCAnalysisConfiguration" typeId="q5q6.2135612507694884868" id="1122496468963519402" nodeInfo="ng">
+    <property name="hasLocalCbmcSettings" nameId="q5q6.8327535879613056020" value="false" />
+    <property name="hasLocalTimeout" nameId="q5q6.8327535879610783118" value="false" />
+    <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
+    <property name="timeoutForSingleAnalysis" nameId="q5q6.8327535879610783188" value="none" />
+    <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="true" />
+    <property name="partialLoops" nameId="q5q6.8327535879610145463" value="false" />
+    <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="25" />
+    <property name="hasUnwindingDepth" nameId="q5q6.8327535879610145347" value="true" />
+    <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="none" />
+    <property name="useRefinement" nameId="q5q6.8327535879610145521" value="false" />
+    <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
+    <property name="name" nameId="tpck.1169194664001" value="ComplexSMs" />
+    <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="955060170564431254" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="955060170563533893" resolveInfo="ACCEnvironment" />
+    </node>
+    <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="1122496468963960000" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="955060170562769560" resolveInfo="ACCStatemachine" />
+    </node>
+    <node role="analyses" roleId="q46j.6472990431939692464" type="lcpc.StatemachineCBMCAnalysis" typeId="lcpc.6085839724192268104" id="955060170563691561" nodeInfo="ng">
+      <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="5" />
+      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="-1" />
+      <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
+      <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
+      <property name="hasUnwindingDepth" nameId="q5q6.8327535879610145347" value="true" />
+      <link role="satemachine" roleId="lcpc.6085839724192268105" targetNodeId="9099045060857699996" resolveInfo="ACCController" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="9099045060860348611" resolveInfo="verifyACCRobustness" />
     </node>
   </root>
 </model>

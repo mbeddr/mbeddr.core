@@ -11,6 +11,7 @@
   <language namespace="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
   <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <language namespace="0a02a8f9-14d0-4970-9bd2-ca35a097c80d(com.mbeddr.analyses.cbmc.core)" />
+  <language namespace="42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)" />
   <import index="q46j" modelUID="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" version="2" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
@@ -18,7 +19,7 @@
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="5" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="45" implicit="yes" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="56" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
@@ -81,18 +82,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </root>
-  <root type="q46j.AnalysisConfiguration" typeId="q46j.6472990431939580591" id="1851541427583187797" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="AC" />
-    <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.AssertionsCBMCAnalysis" typeId="hj5x.4053481679317021363" id="1851541427583187798" nodeInfo="ng">
-      <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="100" />
-      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1120" />
-      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="1851541427583188157" resolveInfo="Recursion_caller" />
-    </node>
-    <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="1328910530789380907" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1851541427583187802" resolveInfo="simulink_tutorial" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="1851541427583187802" nodeInfo="ng">
@@ -345,6 +334,29 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root type="q5q6.CBMCAnalysisConfiguration" typeId="q5q6.2135612507694884868" id="1122496468963519409" nodeInfo="ng">
+    <property name="hasLocalCbmcSettings" nameId="q5q6.8327535879613056020" value="false" />
+    <property name="hasLocalTimeout" nameId="q5q6.8327535879610783118" value="false" />
+    <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
+    <property name="timeoutForSingleAnalysis" nameId="q5q6.8327535879610783188" value="none" />
+    <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="true" />
+    <property name="partialLoops" nameId="q5q6.8327535879610145463" value="false" />
+    <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="25" />
+    <property name="hasUnwindingDepth" nameId="q5q6.8327535879610145347" value="true" />
+    <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="none" />
+    <property name="useRefinement" nameId="q5q6.8327535879610145521" value="false" />
+    <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
+    <property name="name" nameId="tpck.1169194664001" value="AC" />
+    <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="1328910530789380907" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="1851541427583187802" resolveInfo="simulink_tutorial" />
+    </node>
+    <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.AssertionsCBMCAnalysis" typeId="hj5x.4053481679317021363" id="1851541427583187798" nodeInfo="ng">
+      <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="100" />
+      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="1120" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="1851541427583188157" resolveInfo="Recursion_caller" />
     </node>
   </root>
 </model>

@@ -13,8 +13,8 @@
   <devkit namespace="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   <import index="qdv7" modelUID="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" version="10" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="35" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="36" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="qqyh" modelUID="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" version="8" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" implicit="yes" />
@@ -47,6 +47,9 @@
                 <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="4689096352578563322" resolveInfo="first1" />
               </node>
             </node>
+          </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1122496468964007382" nodeInfo="ng">
+            <property name="value" nameId="mj1l.2212975673976043696" value="0" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4689096352578564525" nodeInfo="ng" />
@@ -177,6 +180,9 @@
               </node>
             </node>
           </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1122496468964012993" nodeInfo="ng">
+            <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+          </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4689096352580227601" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4689096352580248183" nodeInfo="ng" />
@@ -260,6 +266,9 @@
               </node>
             </node>
           </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1122496468964024565" nodeInfo="ng">
+            <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+          </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4689096352580276496" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4689096352580276497" nodeInfo="ng" />
@@ -342,6 +351,9 @@
                 <link role="feature" roleId="qqyh.7642065485959505458" targetNodeId="4689096352578563322" resolveInfo="first1" />
               </node>
             </node>
+          </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1122496468964029655" nodeInfo="ng">
+            <property name="value" nameId="mj1l.2212975673976043696" value="0" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4689096352580400104" nodeInfo="ng" />
@@ -679,6 +691,9 @@
           <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4689096352587521865" nodeInfo="ng">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1122496468964019095" nodeInfo="ng">
+            <property name="value" nameId="mj1l.2212975673976043696" value="0" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4689096352587521869" nodeInfo="ng" />
