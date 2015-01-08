@@ -13,7 +13,7 @@
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
   </languages>
   <imports>
-    <import index="flbw" ref="r:e2a5a0f1-a4a9-37f5-82d2-429bae822a23(com.mbeddr.core.__spreferences.PlatformTemplates)" />
+    <import index="1ok9" ref="r:a604a9bb-58f8-4cf0-a289-ef69bb1576bb(com.mbeddr.core.__spreferences.PlatformTemplates)" />
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -232,7 +232,7 @@
   </registry>
   <node concept="2v9HqL" id="5CQ$U_OAkXY">
     <node concept="2xfidK" id="1WKZBvBXE1z" role="2AWWZH">
-      <ref role="2xfifS" to="flbw:3diMC1cqome" resolve="Desktop Platform" />
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
     </node>
     <node concept="2eOfOl" id="5CQ$U_OAkXZ" role="2ePNbc">
       <property role="TrG5h" value="ExpressionsTest" />
