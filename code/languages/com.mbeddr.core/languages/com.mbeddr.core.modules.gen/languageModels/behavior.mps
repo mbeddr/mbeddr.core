@@ -17,7 +17,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
   </imports>
@@ -436,6 +436,21 @@
       </node>
       <node concept="3cqZAl" id="94IdDK_3pl" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="2n$6b5$5Zo8" role="13h7CS">
+      <property role="TrG5h" value="isImplementationArtifact" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="hwgx:7Vd878ENIh6" resolve="isImplementationArtifact" />
+      <node concept="3Tm1VV" id="2n$6b5$5Zo9" role="1B3o_S" />
+      <node concept="3clFbS" id="2n$6b5$5Zoe" role="3clF47">
+        <node concept="3clFbF" id="2n$6b5$5ZwS" role="3cqZAp">
+          <node concept="3clFbT" id="2n$6b5$5ZwR" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="2n$6b5$5Zof" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="1oIA7EcBtRm">
     <property role="3GE5qa" value="module" />
@@ -606,6 +621,21 @@
       </node>
       <node concept="3cqZAl" id="94IdDK_5YO" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="2n$6b5$6bXv" role="13h7CS">
+      <property role="TrG5h" value="isImplementationArtifact" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="hwgx:7Vd878ENIh6" resolve="isImplementationArtifact" />
+      <node concept="3Tm1VV" id="2n$6b5$6bXw" role="1B3o_S" />
+      <node concept="3clFbS" id="2n$6b5$6bX_" role="3clF47">
+        <node concept="3clFbF" id="2n$6b5$6c7k" role="3cqZAp">
+          <node concept="3clFbT" id="2n$6b5$6c7j" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="2n$6b5$6bXA" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="5jmmCdxFimw">
     <property role="3GE5qa" value="module" />
@@ -733,6 +763,21 @@
         </node>
       </node>
       <node concept="3cqZAl" id="94IdDK$Pay" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="2n$6b5$5Xjy" role="13h7CS">
+      <property role="TrG5h" value="isImplementationArtifact" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="hwgx:7Vd878ENIh6" resolve="isImplementationArtifact" />
+      <node concept="3Tm1VV" id="2n$6b5$5Xjz" role="1B3o_S" />
+      <node concept="3clFbS" id="2n$6b5$5XjC" role="3clF47">
+        <node concept="3clFbF" id="2n$6b5$5YD0" role="3cqZAp">
+          <node concept="3clFbT" id="2n$6b5$5YCZ" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="2n$6b5$5XjD" role="3clF45" />
     </node>
   </node>
   <node concept="312cEu" id="6Dsu9vjKyej">
