@@ -245,14 +245,6 @@
       <concept id="1217970068025" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowInfoMessage" flags="nn" index="2kF5Gy" />
       <concept id="1216860049633" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextType" flags="in" index="1iwH7U" />
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167228628751" name="hasException" index="34fQS0" />
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-        <child id="1167227561449" name="exception" index="34bMjA" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -3634,20 +3626,6 @@
       </node>
       <node concept="3Tm1VV" id="78Ts1skpCfB" role="1B3o_S" />
       <node concept="3clFbS" id="78Ts1skpCfC" role="3clF47">
-        <node concept="34ab3g" id="5trRmmGXA20" role="3cqZAp">
-          <property role="35gtTG" value="error" />
-          <node concept="3cpWs3" id="5trRmmGXAT7" role="34bqiv">
-            <node concept="2OqwBi" id="5trRmmGXB26" role="3uHU7w">
-              <node concept="37vLTw" id="5trRmmGXAYL" role="2Oq$k0">
-                <ref role="3cqZAo" node="78Ts1skpCfU" resolve="m" />
-              </node>
-              <node concept="2RRcyG" id="5trRmmGXBc7" role="2OqNvi" />
-            </node>
-            <node concept="Xl_RD" id="5trRmmGXA22" role="3uHU7B">
-              <property role="Xl_RC" value="allRoots: " />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="78Ts1skpCfD" role="3cqZAp">
           <node concept="3cpWsn" id="78Ts1skpCfE" role="3cpWs9">
             <property role="TrG5h" value="buildConfigurations" />
@@ -3662,32 +3640,6 @@
                 <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="34ab3g" id="5trRmmGXB$O" role="3cqZAp">
-          <property role="35gtTG" value="error" />
-          <property role="34fQS0" value="true" />
-          <node concept="3cpWs3" id="5trRmmGXBTZ" role="34bqiv">
-            <node concept="37vLTw" id="5trRmmGXC3n" role="3uHU7w">
-              <ref role="3cqZAo" node="78Ts1skpCfE" resolve="buildConfigurations" />
-            </node>
-            <node concept="Xl_RD" id="5trRmmGXB$Q" role="3uHU7B">
-              <property role="Xl_RC" value="buildConfigs: " />
-            </node>
-          </node>
-          <node concept="2ShNRf" id="5trRmmGZcQ6" role="34bMjA">
-            <node concept="1pGfFk" id="5trRmmGZdfB" role="2ShVmc">
-              <ref role="37wK5l" to="e2lb:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-              <node concept="Xl_RD" id="5trRmmGZdkt" role="37wK5m">
-                <property role="Xl_RC" value="Current Stack" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="34ab3g" id="5trRmmGXCtd" role="3cqZAp">
-          <property role="35gtTG" value="error" />
-          <node concept="Xl_RD" id="5trRmmGXCtf" role="34bqiv">
-            <property role="Xl_RC" value="---------------------" />
           </node>
         </node>
         <node concept="3clFbJ" id="78Ts1skpCfJ" role="3cqZAp">
