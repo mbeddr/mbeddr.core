@@ -10,11 +10,6 @@
     <import index="e4lm" ref="r:c755b11f-9748-4805-b200-626b0b4dd0bb(com.mbeddr.mpsutil.margincell.sandbox.structure)" />
   </imports>
   <registry>
-    <language id="00000000-0000-0000-0000-000000000000" name="">
-      <concept id="0" name="" flags="ng" index="00000">
-        <child id="0" name="childCell" index="00000" />
-      </concept>
-    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -29,13 +24,15 @@
       </concept>
     </language>
     <language id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell">
-      <concept id="3020585710860926251" name="com.mbeddr.mpsutil.margincell.structure.MarginCell" flags="ng" index="1G_NIo" />
+      <concept id="3020585710860926251" name="com.mbeddr.mpsutil.margincell.structure.MarginCell" flags="ng" index="1G_NIo">
+        <child id="8455208232401975764" name="content" index="2f4tr2" />
+      </concept>
     </language>
   </registry>
   <node concept="24kQdi" id="10nVqVftPiE">
     <ref role="1XX52x" to="e4lm:10nVqVftMLr" resolve="TestConcept" />
-    <node concept="1G_NIo" id="10nVqVftPjI" role="2wV5jI">
-      <node concept="3F2HdR" id="10nVqVf_1IU" role="00000">
+    <node concept="1G_NIo" id="7sRtXoEkHd" role="2wV5jI">
+      <node concept="3F2HdR" id="7sRtXoEkI4" role="2f4tr2">
         <ref role="1NtTu8" to="e4lm:10nVqVftMMh" />
       </node>
     </node>
