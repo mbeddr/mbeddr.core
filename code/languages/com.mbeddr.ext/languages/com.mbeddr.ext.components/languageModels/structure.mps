@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19">
+<model modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="20">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
@@ -22,10 +22,10 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="36" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" />
   <import index="kwxp" modelUID="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" version="-1" />
+  <import index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" version="0" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="22" implicit="yes" />
-  <import index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" version="0" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="20" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4491876417845474761" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Component" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="comp" />
@@ -58,6 +58,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6088504579991415884" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6088504579991348354" resolveInfo="IComponentIDAware" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3413022832393043313" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8823664720004818712" resolveInfo="IComponentWatchableResolver" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6041318036221669720" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -217,9 +220,6 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="services provided by component" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="provides" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4491876417845484930" resolveInfo="Port" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4826423066066194410" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.9057217260024409663" resolveInfo="IWatchablesProvider" />
-    </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6165117700225770773" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="singleClientOnly" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
@@ -237,9 +237,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="requires" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="services used by component" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4491876417845484930" resolveInfo="Port" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7599526456373379090" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.9057217260024409663" resolveInfo="IWatchablesProvider" />
-    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3457272138385423181" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="cardinality" />
@@ -530,6 +527,15 @@
     </node>
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6088504579995433832" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6088504579991348354" resolveInfo="IComponentIDAware" />
+    </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3413022832392825176" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8823664720004818712" resolveInfo="IComponentWatchableResolver" />
+    </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="224549505255547097" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.4474148880361719194" resolveInfo="IWatchablesProviderContext" />
+    </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="224549505255568770" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.9057217260024409663" resolveInfo="IWatchablesProvider" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8105003328815039001" nodeInfo="ig">
@@ -1634,6 +1640,9 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6088504579991348354" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IComponentIDAware" />
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8823664720004818712" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="IComponentWatchableResolver" />
   </root>
 </model>
 
