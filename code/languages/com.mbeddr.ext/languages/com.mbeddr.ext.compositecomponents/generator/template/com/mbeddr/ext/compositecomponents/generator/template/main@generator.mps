@@ -2980,6 +2980,29 @@
                   </node>
                 </node>
                 <node concept="3clFbH" id="2qwvqnUCyGL" role="3cqZAp" />
+                <node concept="3SKdUt" id="6S3R3RbHl6x" role="3cqZAp">
+                  <node concept="3SKdUq" id="6S3R3RbHluo" role="3SKWNk">
+                    <property role="3SKdUp" value="temporary varaible needed becuase of https://youtrack.jetbrains.com/issue/MPS-21211" />
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="6S3R3RbFxuC" role="3cqZAp">
+                  <node concept="3cpWsn" id="6S3R3RbFxuD" role="3cpWs9">
+                    <property role="TrG5h" value="port" />
+                    <node concept="3Tqbb2" id="6S3R3RbFxsE" role="1tU5fm">
+                      <ref role="ehGHo" to="v7ag:3TmmsQkD8YC" resolve="ProvidedPort" />
+                    </node>
+                    <node concept="2OqwBi" id="6S3R3RbFxuE" role="33vP2m">
+                      <node concept="2GrUjf" id="6S3R3RbFxuF" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="3ejBUtVm4oY" resolve="ipr" />
+                      </node>
+                      <node concept="3TrEf2" id="6S3R3RbFxuG" role="2OqNvi">
+                        <ref role="3Tt5mk" to="v7ag:5JgQ5vqXSDS" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="6S3R3RbEuJi" role="3cqZAp" />
+                <node concept="3clFbH" id="6S3R3RbEuKg" role="3cqZAp" />
                 <node concept="3SKdUt" id="2qwvqnUFH11" role="3cqZAp">
                   <node concept="3SKdUq" id="2qwvqnUFH_N" role="3SKWNk">
                     <property role="3SKdUp" value="we need to replace the AdapterInstancePortRef with a new one to prevent MPS from trying to resolve the old " />
@@ -3019,15 +3042,12 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbH" id="6S3R3RbDabt" role="3cqZAp" />
+                <node concept="3clFbH" id="6S3R3RbDaDQ" role="3cqZAp" />
                 <node concept="3clFbF" id="2qwvqnUENWx" role="3cqZAp">
                   <node concept="37vLTI" id="2qwvqnUERri" role="3clFbG">
-                    <node concept="2OqwBi" id="2qwvqnUESjv" role="37vLTx">
-                      <node concept="2GrUjf" id="2qwvqnUERve" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="3ejBUtVm4oY" resolve="ipr" />
-                      </node>
-                      <node concept="3TrEf2" id="2qwvqnUEUVb" role="2OqNvi">
-                        <ref role="3Tt5mk" to="v7ag:5JgQ5vqXSDS" />
-                      </node>
+                    <node concept="37vLTw" id="6S3R3RbFyAK" role="37vLTx">
+                      <ref role="3cqZAo" node="6S3R3RbFxuD" resolve="port" />
                     </node>
                     <node concept="2OqwBi" id="2qwvqnUEPw4" role="37vLTJ">
                       <node concept="37vLTw" id="2qwvqnUENWw" role="2Oq$k0">
