@@ -134,14 +134,6 @@
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
       </concept>
     </language>
-    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
-      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
-        <child id="2557074442922392302" name="words" index="19SJt6" />
-      </concept>
-      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
-        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
-      </concept>
-    </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="1595838349830846141" name="com.mbeddr.core.pointers.structure.ReferenceExpr" flags="ng" index="YInwV" />
       <concept id="279446265608459824" name="com.mbeddr.core.pointers.structure.PointerType" flags="ng" index="3wxxNl" />
@@ -239,14 +231,6 @@
       </concept>
       <concept id="5686538669182273028" name="com.mbeddr.core.util.structure.BlockExpression" flags="ng" index="3cMQbe">
         <child id="5686538669182273029" name="body" index="3cMQbf" />
-      </concept>
-    </language>
-    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
-        <child id="8375407818529178007" name="text" index="OjmMu" />
-      </concept>
-      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
-        <child id="4052432714772608243" name="text" index="1w35rA" />
       </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
@@ -1961,31 +1945,6 @@
                   <node concept="30H73N" id="7RiewQ_lMxc" role="2Oq$k0" />
                   <node concept="3TrcHB" id="7RiewQ_lMxh" role="2OqNvi">
                     <ref role="3TsBF5" to="x27k:19a6$uAA0vK" resolve="exported" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1z9TsT" id="1teBndx3D4a" role="lGtFl">
-          <node concept="OjmMv" id="3mjVpLdxLzb" role="1w35rA">
-            <node concept="19SGf9" id="3mjVpLdxLze" role="OjmMu">
-              <node concept="19SUe$" id="3mjVpLdxLzg" role="19SJt6">
-                <property role="19SUeA" value="- -" />
-                <node concept="17Uvod" id="2KCwlldx2uG" role="lGtFl">
-                  <property role="P4ACc" value="92d2ea16-5a42-4fdf-a676-c7604efe3504/2557074442922438156/2557074442922438158" />
-                  <property role="2qtEX9" value="escapedValue" />
-                  <node concept="3zFVjK" id="2KCwlldx2uH" role="3zH0cK">
-                    <node concept="3clFbS" id="2KCwlldx2uI" role="2VODD2">
-                      <node concept="3clFbF" id="2KCwlldx2R6" role="3cqZAp">
-                        <node concept="2OqwBi" id="2KCwlldx34m" role="3clFbG">
-                          <node concept="30H73N" id="2KCwlldx2R5" role="2Oq$k0" />
-                          <node concept="2qgKlT" id="2KCwlldx4hs" role="2OqNvi">
-                            <ref role="37wK5l" to="hwgx:3m8H$lmFM62" resolve="getDocTextOrEmpty" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
                   </node>
                 </node>
               </node>
