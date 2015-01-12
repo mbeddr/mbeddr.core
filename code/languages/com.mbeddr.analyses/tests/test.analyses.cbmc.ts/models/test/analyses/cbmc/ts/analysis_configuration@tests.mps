@@ -8,18 +8,25 @@
   <import index="6aju" modelUID="r:724cc566-d774-473f-8057-7531582dca82(com.mbeddr.analyses.base.typesystem)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="40" implicit="yes" />
-  <import index="q46j" modelUID="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" version="2" implicit="yes" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="56" implicit="yes" />
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="5594952247539830264" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="TestBuildConfiguration" />
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="5594952247539831645" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="q46j.AnalysisConfiguration" typeId="q46j.6472990431939580591" id="5594952247539831647" nodeInfo="ng">
+      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="q5q6.CBMCAnalysisConfiguration" typeId="q5q6.2135612507694884868" id="1122496468964034690" nodeInfo="ng">
+        <property name="hasLocalCbmcSettings" nameId="q5q6.8327535879613056020" value="false" />
+        <property name="hasLocalTimeout" nameId="q5q6.8327535879610783118" value="false" />
+        <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
+        <property name="timeoutForSingleAnalysis" nameId="q5q6.8327535879610783188" value="none" />
+        <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="true" />
+        <property name="partialLoops" nameId="q5q6.8327535879610145463" value="false" />
+        <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="25" />
+        <property name="hasUnwindingDepth" nameId="q5q6.8327535879610145347" value="true" />
+        <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="none" />
+        <property name="useRefinement" nameId="q5q6.8327535879610145521" value="false" />
+        <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
         <property name="name" nameId="tpck.1169194664001" value="AC" />
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="5594952247539831649" nodeInfo="ng">
-          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="4588874999150411355" nodeInfo="ng">
-            <node role="errorRef" roleId="tp5g.8489045168660938517" type="tp5g.ReportErrorStatementReference" typeId="tp5g.4531408400484511853" id="4588874999150411356" nodeInfo="ng">
-              <link role="declaration" roleId="tp5g.4531408400484511854" targetNodeId="6aju.5594952247539650700" />
-            </node>
-          </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="1122496468964034696" nodeInfo="ng">
+          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="1122496468964034697" nodeInfo="ng" />
         </node>
       </node>
     </node>

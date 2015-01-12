@@ -10,13 +10,13 @@
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="45" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="56" />
   <import index="tzyt" modelUID="r:b35b0dd8-a38e-4607-ba37-cc8f7410b705(com.mbeddr.analyses.cbmc.rt.run)" version="7" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" />
-  <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="14" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="35" />
-  <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="9" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" />
+  <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="15" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="36" />
+  <import index="ywuz" modelUID="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" version="10" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="tp3r" modelUID="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" version="0" implicit="yes" />
@@ -257,7 +257,7 @@
               <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="2263984427998442317" resolveInfo="analysis" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2263984427998442357" nodeInfo="nn">
-              <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.2263984427998442258" resolveInfo="timeoutInSeconds" />
+              <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.8327535879610783176" resolveInfo="timeoutInSeconds" />
             </node>
           </node>
           <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2263984427998443065" nodeInfo="nn">
@@ -286,7 +286,7 @@
                     <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="2263984427998442317" resolveInfo="analysis" />
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2263984427998443128" nodeInfo="nn">
-                    <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.2263984427998442258" resolveInfo="timeoutInSeconds" />
+                    <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.8327535879610783176" resolveInfo="timeoutInSeconds" />
                   </node>
                 </node>
               </node>
@@ -364,7 +364,7 @@
               <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="2263984427998442317" resolveInfo="analysis" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="4159232546981948106" nodeInfo="nn">
-              <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.5889520553258614000" resolveInfo="timeoutForSingleAnalysis" />
+              <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.8327535879610783188" resolveInfo="timeoutForSingleAnalysis" />
             </node>
           </node>
         </node>
@@ -377,7 +377,7 @@
               <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="2263984427998442317" resolveInfo="analysis" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="6401356680189501246" nodeInfo="nn">
-              <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.5889520553258614000" resolveInfo="timeoutForSingleAnalysis" />
+              <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.8327535879610783188" resolveInfo="timeoutForSingleAnalysis" />
             </node>
           </node>
           <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6401356680189498936" nodeInfo="nn">
@@ -406,7 +406,7 @@
                     <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="2263984427998442317" resolveInfo="analysis" />
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="6401356680189502350" nodeInfo="nn">
-                    <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.5889520553258614000" resolveInfo="timeoutForSingleAnalysis" />
+                    <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.8327535879610783188" resolveInfo="timeoutForSingleAnalysis" />
                   </node>
                 </node>
               </node>
@@ -480,7 +480,7 @@
               <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="2263984427998442317" resolveInfo="analysis" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="6401356680189164715" nodeInfo="nn">
-              <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.441761995014974059" resolveInfo="analysisDepth" />
+              <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.8327535879610145579" resolveInfo="analysisDepth" />
             </node>
           </node>
           <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="6401356680189160285" nodeInfo="nn">
@@ -509,7 +509,7 @@
                     <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="2263984427998442317" resolveInfo="analysis" />
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="6401356680189317121" nodeInfo="nn">
-                    <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.441761995014974059" resolveInfo="analysisDepth" />
+                    <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.8327535879610145579" resolveInfo="analysisDepth" />
                   </node>
                 </node>
               </node>
@@ -1043,7 +1043,7 @@
                 <link role="quickFixArgument" roleId="tpd4.1216390348810" targetNodeId="6401356680189479252" resolveInfo="analysis" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="6401356680189483825" nodeInfo="nn">
-                <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.441761995014974059" resolveInfo="analysisDepth" />
+                <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.8327535879610145579" resolveInfo="analysisDepth" />
               </node>
             </node>
           </node>
@@ -1073,7 +1073,7 @@
                 <link role="quickFixArgument" roleId="tpd4.1216390348810" targetNodeId="6401356680189492068" resolveInfo="analysis" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="6401356680189494590" nodeInfo="nn">
-                <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.2263984427998442258" resolveInfo="timeoutInSeconds" />
+                <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.8327535879610783176" resolveInfo="timeoutInSeconds" />
               </node>
             </node>
           </node>
@@ -1103,7 +1103,7 @@
                 <link role="quickFixArgument" roleId="tpd4.1216390348810" targetNodeId="6401356680189502859" resolveInfo="analysis" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="6401356680189504217" nodeInfo="nn">
-                <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.5889520553258614000" resolveInfo="timeoutForSingleAnalysis" />
+                <link role="property" roleId="tp25.1138056395725" targetNodeId="q5q6.8327535879610783188" resolveInfo="timeoutForSingleAnalysis" />
               </node>
             </node>
           </node>
