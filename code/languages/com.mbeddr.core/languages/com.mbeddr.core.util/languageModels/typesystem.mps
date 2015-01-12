@@ -5319,5 +5319,33 @@
       <ref role="1YaFvo" to="k146:4itX8XUPebW" resolve="DataItem" />
     </node>
   </node>
+  <node concept="1YbPZF" id="6S3R3Rb0TvM">
+    <property role="TrG5h" value="typeof_FlagTestNot" />
+    <property role="3GE5qa" value="flags" />
+    <node concept="3clFbS" id="6S3R3Rb0TvN" role="18ibNy">
+      <node concept="1Z5TYs" id="6S3R3Rb0TvO" role="3cqZAp">
+        <node concept="mw_s8" id="6S3R3Rb0TvP" role="1ZfhKB">
+          <node concept="2ShNRf" id="6S3R3Rb0TvQ" role="mwGJk">
+            <node concept="3zrR0B" id="6S3R3Rb0TvR" role="2ShVmc">
+              <node concept="3Tqbb2" id="6S3R3Rb0TvS" role="3zrR0E">
+                <ref role="ehGHo" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6S3R3Rb0TvT" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6S3R3Rb0TvU" role="mwGJk">
+            <node concept="1YBJjd" id="6S3R3Rb0TvV" role="1Z2MuG">
+              <ref role="1YBMHb" node="6S3R3Rb0TvW" resolve="flagTestNot" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6S3R3Rb0TvW" role="1YuTPh">
+      <property role="TrG5h" value="flagTestNot" />
+      <ref role="1YaFvo" to="k146:MEgWBzPAcP" resolve="FlagTestNot" />
+    </node>
+  </node>
 </model>
 
