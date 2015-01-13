@@ -144,6 +144,9 @@
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8847483947589574443" nodeInfo="in">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="x609.~ProgressMonitorAdapter" resolveInfo="ProgressMonitorAdapter" />
       </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MethodLineDoc" typeId="hba4.6451706574539345403" id="6312602702196494406" nodeInfo="ng">
+        <property name="text" nameId="hba4.6451706574539345425" value="Progress indicator which will be passed to the analysis runner to check for CANCEL." />
+      </node>
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="8406164770761235150" nodeInfo="ngu" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="887250128671801142" nodeInfo="igu">
@@ -909,6 +912,9 @@
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8406164770769755010" nodeInfo="in">
           <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8406164770761728874" resolveInfo="AtomicAnalysisJob" />
         </node>
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MethodLineDoc" typeId="hba4.6451706574539345403" id="6312602702196590577" nodeInfo="ng">
+        <property name="text" nameId="hba4.6451706574539345425" value="Submits an analysis job to the analyis executor. " />
       </node>
     </node>
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7665911526053861928" nodeInfo="nn" />
