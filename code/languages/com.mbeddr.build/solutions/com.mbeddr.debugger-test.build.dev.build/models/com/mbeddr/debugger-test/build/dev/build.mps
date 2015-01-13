@@ -1499,6 +1499,12 @@
             <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="p6ld.8628756186118765569" resolveInfo="com.mbeddr.core.debug" />
           </node>
         </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="2311905882273174030" nodeInfo="nn">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="2311905882273174031" nodeInfo="ng">
+            <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
+            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="7476948223417635363" resolveInfo="com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
+          </node>
+        </node>
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="7476948223417635363" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
@@ -1518,7 +1524,7 @@
                   <property name="head" nameId="3ior.8618885170173601779" value="_spreferences" />
                   <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7476948223417635369" nodeInfo="nn">
                     <property name="head" nameId="3ior.8618885170173601779" value="PlatformTemplates" />
-                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="7476948223417635370" nodeInfo="nn">
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="2311905882273229940" nodeInfo="nn">
                       <property name="head" nameId="3ior.8618885170173601779" value="module.msd" />
                     </node>
                   </node>
@@ -1699,6 +1705,9 @@
     <node role="layout" roleId="3ior.5617550519002745372" type="3ior.BuildLayout" typeId="3ior.5617550519002745364" id="6970948587880936852" nodeInfo="ng">
       <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="427722866531137425" nodeInfo="ng">
         <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="6970948587880936809" resolveInfo="test.debugging.ext.components" />
+      </node>
+      <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="2311905882273229973" nodeInfo="ng">
+        <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="7476948223417635363" resolveInfo="com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
       </node>
     </node>
     <node role="aspects" roleId="3ior.3542413272732620719" type="5tjl.BuildMpsLayout_TestModules" typeId="5tjl.4560297596904469357" id="2475960130292816086" nodeInfo="nn">

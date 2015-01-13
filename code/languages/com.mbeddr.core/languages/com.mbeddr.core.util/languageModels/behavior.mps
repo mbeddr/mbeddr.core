@@ -4016,13 +4016,19 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6321794478502972579" nodeInfo="nn" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6321794478502972580" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="talm.HideById" typeId="talm.8483575004407054697" id="6321794478502972581" nodeInfo="ng">
-          <node role="varName" roleId="talm.8483575004407054700" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6321794478502972582" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="__c" />
+          <node role="varName" roleId="talm.8483575004407054700" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6088504579981301080" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="6088504579981300733" nodeInfo="nn" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="6088504579981302996" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="6088504579981291071" resolveInfo="counterVarName" />
+            </node>
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="talm.MapByNameStatement" typeId="talm.8483575004407084862" id="6321794478502972583" nodeInfo="ng">
-          <node role="unmappedName" roleId="talm.8483575004407084863" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6321794478502972584" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="__it" />
+          <node role="unmappedName" roleId="talm.8483575004407084863" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6088504579984333617" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="6088504579984333144" nodeInfo="nn" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="6088504579984335703" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="6088504579981377460" resolveInfo="iteratorVarName" />
+            </node>
           </node>
           <node role="mappedName" roleId="talm.8483575004407084865" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6321794478502972585" nodeInfo="nn">
             <property name="value" nameId="tpee.1070475926801" value="it" />
@@ -4034,7 +4040,7 @@
           <node role="iconProvider" roleId="talm.8236113172499130991" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="6321794478502972588" nodeInfo="nn" />
           <node role="typeExpr" roleId="talm.8483575004407084864" type="tpee.CastExpression" typeId="tpee.1070534934090" id="6321794478502972589" nodeInfo="nn">
             <node role="type" roleId="tpee.1070534934091" type="tp25.SNodeType" typeId="tp25.1138055754698" id="6321794478502972590" nodeInfo="in">
-              <link role="concept" roleId="tp25.1138405853777" targetNodeId="2gv2.2513598210665148633" resolveInfo="IMappableType" />
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8860443239512128054" resolveInfo="Type" />
             </node>
             <node role="expression" roleId="tpee.1070534934092" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6321794478502972591" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="6321794478502972592" nodeInfo="nn">
@@ -4114,6 +4120,30 @@
         </node>
       </node>
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="6321794478502972627" nodeInfo="in" />
+    </node>
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="6088504579981291071" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="counterVarName" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6088504579981291072" nodeInfo="nn" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.StringType" typeId="tpee.1225271177708" id="6088504579981300695" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6088504579981291074" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6088504579981300701" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6088504579981300700" nodeInfo="nn">
+            <property name="value" nameId="tpee.1070475926801" value="__c" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="6088504579981377460" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="iteratorVarName" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6088504579981377461" nodeInfo="nn" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.StringType" typeId="tpee.1225271177708" id="6088504579981377462" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6088504579981377463" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6088504579981377464" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6088504579981377465" nodeInfo="nn">
+            <property name="value" nameId="tpee.1070475926801" value="__it" />
+          </node>
+        </node>
+      </node>
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3643500611636150888" nodeInfo="ng">

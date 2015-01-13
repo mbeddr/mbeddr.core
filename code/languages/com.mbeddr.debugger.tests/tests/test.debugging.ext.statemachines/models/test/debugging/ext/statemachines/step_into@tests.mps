@@ -259,6 +259,7 @@
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="2536856479943208755" nodeInfo="ng">
           <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="2536856479943206756" resolveInfo="red" />
           <node role="actions" roleId="clqz.1270667558200946447" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2536856479943208756" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="317989123622385851" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2536856479943208782" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="2536856479943208786" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="2536856479943208789" nodeInfo="ng" />
@@ -416,10 +417,30 @@
         </node>
       </node>
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="2536856479943573975" nodeInfo="ng">
-        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="2536856479943573976" nodeInfo="ng">
-          <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2561113571598849727" nodeInfo="ng">
-            <property name="name" nameId="rpmx.105850086903157559" value="marker" />
-            <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8326082845994236793" resolveInfo="triggering2ndTrans" />
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.OnPlatform" typeId="rpmx.5641871277849447479" id="317989123622485030" nodeInfo="ng">
+          <node role="children" roleId="rpmx.5641871277849477942" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="317989123622485035" nodeInfo="ng">
+            <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="317989123622485037" nodeInfo="ng">
+              <property name="name" nameId="rpmx.105850086903157559" value="marker" />
+              <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8888276536873765358" resolveInfo="lastStmntInTestcase" />
+            </node>
+          </node>
+          <node role="elseOnPart" roleId="rpmx.5641871277850143726" type="rpmx.ElseOnPlatform" typeId="rpmx.5641871277850133578" id="317989123622485039" nodeInfo="ng">
+            <property name="platform" nameId="rpmx.5641871277852618466" value="nux" />
+            <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="317989123622486447" nodeInfo="ng">
+              <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="317989123622486448" nodeInfo="ng">
+                <property name="name" nameId="rpmx.105850086903157559" value="marker" />
+                <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8326082845994236793" resolveInfo="triggering2ndTrans" />
+              </node>
+            </node>
+            <node role="elseOn" roleId="rpmx.5641871277850163791" type="rpmx.ElseOnPlatform" typeId="rpmx.5641871277850133578" id="317989123622485041" nodeInfo="ng">
+              <property name="platform" nameId="rpmx.5641871277852618466" value="win" />
+              <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="2536856479943573976" nodeInfo="ng">
+                <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="2561113571598849727" nodeInfo="ng">
+                  <property name="name" nameId="rpmx.105850086903157559" value="marker" />
+                  <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8326082845994236793" resolveInfo="triggering2ndTrans" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

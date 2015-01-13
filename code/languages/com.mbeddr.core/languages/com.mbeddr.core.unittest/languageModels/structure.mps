@@ -6,8 +6,8 @@
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" />
   <import index="356a" modelUID="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" version="0" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="36" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="35" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
@@ -45,6 +45,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6937839081833780724" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6937839081833780722" resolveInfo="ITestContext" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6088504579966026475" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6088504579966012354" resolveInfo="IFailuresAware" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6275792049641587287" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="AssertStatement" />
@@ -69,6 +72,9 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1061857790208796423" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.1061857790208788243" resolveInfo="IRealStackFrameContributor" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6088504579967159378" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6088504579966012354" resolveInfo="IFailuresAware" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5686538669182341016" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -157,12 +163,18 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3387987015204930493" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3387987015204930488" resolveInfo="IRestrictToTests" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6088504579968443916" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6088504579966012354" resolveInfo="IFailuresAware" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8230733038425966121" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="TestHelperFunctionAnnotation" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8237788667541741070" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.9057217260024409663" resolveInfo="IWatchablesProvider" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6088504579966014761" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6088504579966012354" resolveInfo="IFailuresAware" />
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="6569298311080470283" nodeInfo="ng">
       <property name="role" nameId="tpce.7588428831955550663" value="testHelperFunction" />
@@ -268,6 +280,9 @@
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7314623653246297110" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2gv2.8811944678849085924" resolveInfo="IBreakpointSupport" />
     </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6088504579967327935" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6088504579966012354" resolveInfo="IFailuresAware" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7755897872837031762" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="StructuredBinOpAssertStatement" />
@@ -337,6 +352,9 @@
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6937839081833930175" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="x27k.2495970976313195581" resolveInfo="ICodeLocationContext" />
     </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="6088504579966012354" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="IFailuresAware" />
   </root>
 </model>
 
