@@ -350,43 +350,52 @@
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="786222485499530743" resolveInfo="Main" />
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.AssertionsCBMCAnalysis" typeId="hj5x.4053481679317021363" id="786222485500873714" nodeInfo="ng">
-      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="25" />
-      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="-1" />
+      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="31" />
+      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="none" />
       <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
       <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
       <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="true" />
-      <property name="partialLoops" nameId="q5q6.8327535879610145463" value="true" />
+      <property name="partialLoops" nameId="q5q6.8327535879610145463" value="false" />
       <property name="hasUnwindingDepth" nameId="q5q6.8327535879610145347" value="true" />
+      <property name="hasLocalCbmcSettings" nameId="q5q6.8327535879613056020" value="true" />
+      <property name="useRefinement" nameId="q5q6.8327535879610145521" value="false" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="786222485499530776" resolveInfo="loopTo30False" />
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.AssertionsCBMCAnalysis" typeId="hj5x.4053481679317021363" id="786222485499530809" nodeInfo="ng">
-      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="31" />
-      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="-1" />
+      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="25" />
+      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="none" />
       <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
       <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
-      <property name="partialLoops" nameId="q5q6.8327535879610145463" value="true" />
+      <property name="partialLoops" nameId="q5q6.8327535879610145463" value="false" />
       <property name="hasUnwindingDepth" nameId="q5q6.8327535879610145347" value="true" />
+      <property name="hasLocalCbmcSettings" nameId="q5q6.8327535879613056020" value="true" />
+      <property name="useRefinement" nameId="q5q6.8327535879610145521" value="false" />
+      <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="true" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="786222485499530776" resolveInfo="loopTo30False" />
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.AssertionsCBMCAnalysis" typeId="hj5x.4053481679317021363" id="5209683618601313284" nodeInfo="ng">
-      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="25" />
-      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="-1" />
+      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="31" />
+      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="none" />
       <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
       <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
-      <property name="partialLoops" nameId="q5q6.8327535879610145463" value="true" />
+      <property name="partialLoops" nameId="q5q6.8327535879610145463" value="false" />
       <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="true" />
       <property name="hasUnwindingDepth" nameId="q5q6.8327535879610145347" value="true" />
+      <property name="hasLocalCbmcSettings" nameId="q5q6.8327535879613056020" value="true" />
+      <property name="useRefinement" nameId="q5q6.8327535879610145521" value="false" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="5209683618601062690" resolveInfo="loopTo30True" />
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.AssertionsCBMCAnalysis" typeId="hj5x.4053481679317021363" id="6849740290424967782" nodeInfo="ng">
       <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="true" />
       <property name="partialLoops" nameId="q5q6.8327535879610145463" value="true" />
-      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="25" />
+      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="35" />
       <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="none" />
       <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
       <property name="timeoutForSingleAnalysis" nameId="q5q6.8327535879610783188" value="none" />
       <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
       <property name="hasUnwindingDepth" nameId="q5q6.8327535879610145347" value="true" />
+      <property name="hasLocalCbmcSettings" nameId="q5q6.8327535879613056020" value="true" />
+      <property name="useRefinement" nameId="q5q6.8327535879610145521" value="false" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="6849740290424876437" resolveInfo="loopTo30_GreaterThan31" />
     </node>
     <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.AssertionsCBMCAnalysis" typeId="hj5x.4053481679317021363" id="5510460030228245365" nodeInfo="ng">
@@ -396,8 +405,10 @@
       <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
       <property name="timeoutForSingleAnalysis" nameId="q5q6.8327535879610783188" value="none" />
       <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="10" />
+      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="15" />
       <property name="hasUnwindingDepth" nameId="q5q6.8327535879610145347" value="true" />
+      <property name="hasLocalCbmcSettings" nameId="q5q6.8327535879613056020" value="true" />
+      <property name="useRefinement" nameId="q5q6.8327535879610145521" value="false" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="5510460030228234500" resolveInfo="loopTo30_GreaterThan20" />
     </node>
   </root>
