@@ -3081,10 +3081,10 @@
                                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3833020533088772613" nodeInfo="nn">
                                       <property name="value" nameId="tpee.1070475926801" value="Fatal Error while Running CBMC!" />
                                     </node>
-                                    <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="4245322156327252191" nodeInfo="nn">
-                                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4245322156327200126" resolveInfo="computeErrorMessage" />
+                                    <node role="actualArgument" roleId="tpee.1068499141038" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="7251885914868357736" nodeInfo="ng">
                                       <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="4245322156327199737" resolveInfo="ErrorMessageUtils" />
-                                      <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4245322156327252275" nodeInfo="nn">
+                                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4245322156327200126" resolveInfo="computeErrorMessage" />
+                                      <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7251885914868357737" nodeInfo="nn">
                                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3483530767714192252" resolveInfo="result" />
                                       </node>
                                     </node>
@@ -3111,10 +3111,10 @@
                                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4245322156327396670" nodeInfo="nn">
                                       <property name="value" nameId="tpee.1070475926801" value="Incomplete Analysis" />
                                     </node>
-                                    <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="4245322156327396671" nodeInfo="nn">
+                                    <node role="actualArgument" roleId="tpee.1068499141038" type="hba4.ShortStaticMethodCall" typeId="hba4.6451706574537082687" id="7251885914868361746" nodeInfo="ng">
                                       <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="4245322156327199737" resolveInfo="ErrorMessageUtils" />
                                       <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4245322156327200126" resolveInfo="computeErrorMessage" />
-                                      <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4245322156327396672" nodeInfo="nn">
+                                      <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7251885914868361747" nodeInfo="nn">
                                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3483530767714192252" resolveInfo="result" />
                                       </node>
                                     </node>
