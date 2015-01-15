@@ -7948,7 +7948,7 @@
                       </node>
                     </node>
                     <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4245322156327280520" nodeInfo="nn">
-                      <property name="value" nameId="tpee.1070475926801" value="The external tool returned the following errors:\n" />
+                      <property name="value" nameId="tpee.1070475926801" value="'cbmc' returned the following error:\n" />
                     </node>
                   </node>
                   <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4245322156327216189" nodeInfo="nn">
