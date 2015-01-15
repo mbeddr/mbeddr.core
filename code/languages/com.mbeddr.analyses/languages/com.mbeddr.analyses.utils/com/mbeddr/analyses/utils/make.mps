@@ -1055,7 +1055,7 @@
           <node role="type" roleId="tpee.5680397130376446158" type="tpee.LongType" typeId="tpee.1068581242867" id="140104230559979248" nodeInfo="in" />
         </node>
         <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="140104230559979249" nodeInfo="ir">
-          <property name="name" nameId="tpck.1169194664001" value="unit" />
+          <property name="name" nameId="tpck.1169194664001" value="u" />
           <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="140104230559979250" nodeInfo="in">
             <link role="classifier" roleId="tpee.1107535924139" targetNodeId="53gy.~TimeUnit" resolveInfo="TimeUnit" />
           </node>
