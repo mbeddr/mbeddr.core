@@ -40,10 +40,8 @@ public class TestInvoker implements MakeExecutor {
 				}
 				if(returnCode != 0) {
 					logger.log(new TestFailedMessage(testSuiteName,"Testsuite Failed with return code: "+ returnCode));
-				} else {
-					logger.log(new TestSuiteFinishedMessage(testSuiteName,
-							returnCode));
 				}
+				logger.log(new TestSuiteFinishedMessage(testSuiteName,returnCode));
 			} else {
 				throw new BuildException(
 						"Directory that should contain Makefile doesn't exist: "
