@@ -16,7 +16,7 @@
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
   </languages>
   <imports>
-    <import index="q9ah" ref="r:881cd106-b9c3-33d3-8c69-9a76f591f92a(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)" implicit="true" />
+    <import index="3fet" ref="r:0afa1dc8-debe-4a54-a50d-d0015a8bc258(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -283,8 +283,8 @@
         <ref role="2v9HqP" node="7iVTLWv2q1A" resolve="CompositeSM" />
       </node>
     </node>
-    <node concept="2xfidK" id="6v3tcHGMLOz" role="2AWWZH">
-      <ref role="2xfifS" to="q9ah:7sNQp65l2BT" resolve="Desktop Platform" />
+    <node concept="2xfidK" id="2nospmWkT90" role="2AWWZH">
+      <ref role="2xfifS" to="3fet:378vUkgqJC$" resolve="Desktop Platform" />
     </node>
   </node>
   <node concept="N3F5e" id="7iVTLWv2q1A">

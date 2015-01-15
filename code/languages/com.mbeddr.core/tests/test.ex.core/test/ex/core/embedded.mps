@@ -6,7 +6,6 @@
   </languages>
   <imports>
     <import index="1ok9" ref="r:a604a9bb-58f8-4cf0-a289-ef69bb1576bb(com.mbeddr.core.__spreferences.PlatformTemplates)" />
-    <import index="flbw" ref="r:e2a5a0f1-a4a9-37f5-82d2-429bae822a23(com.mbeddr.core.__spreferences.PlatformTemplates)" implicit="true" />
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -326,8 +325,8 @@
     </node>
   </node>
   <node concept="2v9HqL" id="7uAyNpAB9h4">
-    <node concept="2xfidK" id="1WKZBvBXE1w" role="2AWWZH">
-      <ref role="2xfifS" to="flbw:3diMC1cqome" resolve="Desktop Platform" />
+    <node concept="2xfidK" id="2KPTuNu7kLE" role="2AWWZH">
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
     </node>
     <node concept="2Q9Fgs" id="7uAyNpAB9h6" role="2Q9xDr">
       <node concept="2Q9FjX" id="7uAyNpAB9h7" role="2Q9FjI" />

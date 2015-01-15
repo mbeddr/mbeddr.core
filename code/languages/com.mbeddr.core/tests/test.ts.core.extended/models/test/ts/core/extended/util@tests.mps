@@ -8,7 +8,7 @@
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
-    <import index="flbw" ref="r:e2a5a0f1-a4a9-37f5-82d2-429bae822a23(com.mbeddr.core.__spreferences.PlatformTemplates)" />
+    <import index="1ok9" ref="r:a604a9bb-58f8-4cf0-a289-ef69bb1576bb(com.mbeddr.core.__spreferences.PlatformTemplates)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -639,8 +639,8 @@
     <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
   </node>
   <node concept="2v9HqL" id="4bc29_mroOt">
-    <node concept="2xfidK" id="1WKZBvBXE1A" role="2AWWZH">
-      <ref role="2xfifS" to="flbw:3diMC1cqome" resolve="Desktop Platform" />
+    <node concept="2xfidK" id="2KPTuNu7udR" role="2AWWZH">
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
     </node>
     <node concept="2Q9Fgs" id="4bc29_mroOv" role="2Q9xDr">
       <node concept="2Q9FjX" id="4bc29_mroOw" role="2Q9FjI" />

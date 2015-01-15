@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="3mvl" ref="r:dfbb97c1-bcef-47dd-a044-a2503489b0dd(com.mbeddr.core.modules.constraints)" />
-    <import index="flbw" ref="r:e2a5a0f1-a4a9-37f5-82d2-429bae822a23(com.mbeddr.core.__spreferences.PlatformTemplates)" />
+    <import index="1ok9" ref="r:a604a9bb-58f8-4cf0-a289-ef69bb1576bb(com.mbeddr.core.__spreferences.PlatformTemplates)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -355,8 +355,8 @@
     </node>
   </node>
   <node concept="2v9HqL" id="4ifG318a7qu">
-    <node concept="2xfidK" id="1WKZBvBXE1F" role="2AWWZH">
-      <ref role="2xfifS" to="flbw:3diMC1cqome" resolve="Desktop Platform" />
+    <node concept="2xfidK" id="2nospmWkMyC" role="2AWWZH">
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
     </node>
     <node concept="2Q9Fgs" id="3R$6B6bNgP7" role="2Q9xDr">
       <node concept="2Q9FjX" id="3R$6B6bNgP8" role="2Q9FjI" />

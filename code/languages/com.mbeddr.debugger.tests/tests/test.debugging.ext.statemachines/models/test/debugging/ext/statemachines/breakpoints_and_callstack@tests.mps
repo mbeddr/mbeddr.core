@@ -16,7 +16,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
-    <import index="q9ah" ref="r:881cd106-b9c3-33d3-8c69-9a76f591f92a(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)" implicit="true" />
+    <import index="3fet" ref="r:0afa1dc8-debe-4a54-a50d-d0015a8bc258(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -532,8 +532,8 @@
         <ref role="2v9HqP" node="3_UUdaFlgO6" resolve="breakpointsSMTest" />
       </node>
     </node>
-    <node concept="2xfidK" id="6v3tcHGMLNX" role="2AWWZH">
-      <ref role="2xfifS" to="q9ah:7sNQp65l2BT" resolve="Desktop Platform" />
+    <node concept="2xfidK" id="2nospmWkTbA" role="2AWWZH">
+      <ref role="2xfifS" to="3fet:378vUkgqJC$" resolve="Desktop Platform" />
     </node>
   </node>
   <node concept="2XOHcx" id="75iUP$MbTn$">
