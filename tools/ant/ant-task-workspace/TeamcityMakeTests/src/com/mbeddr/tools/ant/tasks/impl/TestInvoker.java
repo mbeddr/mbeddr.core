@@ -11,6 +11,7 @@ import org.apache.tools.ant.BuildException;
 import org.apache.tools.ant.Project;
 
 import com.mbeddr.tools.ant.tasks.MakeExecutor;
+import com.mbeddr.tools.ant.tasks.teamcity.TestFailedMessage;
 import com.mbeddr.tools.ant.tasks.teamcity.TestSuiteFinishedMessage;
 import com.mbeddr.tools.ant.tasks.teamcity.TestSuiteStartedMessage;
 import com.mbeddr.tools.ant.util.Util;
@@ -37,8 +38,12 @@ public class TestInvoker implements MakeExecutor {
 							"Invoking 'make' failed in the following directory:"
 									+ makeDirectory.getAbsolutePath());
 				}
-				logger.log(new TestSuiteFinishedMessage(testSuiteName,
-						returnCode));
+				if(returnCode != 0) {
+					logger.log(new TestFailedMessage(testSuiteName,"Testsuite Failed with return code: "+ returnCode));
+				} else {
+					logger.log(new TestSuiteFinishedMessage(testSuiteName,
+							returnCode));
+				}
 			} else {
 				throw new BuildException(
 						"Directory that should contain Makefile doesn't exist: "
