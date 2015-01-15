@@ -950,6 +950,23 @@
             </node>
           </node>
         </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="5894912397713861672" nodeInfo="nn">
+          <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="5894912397713864730" nodeInfo="nn">
+            <property name="text" nameId="tpee.6329021646629104958" value="default result of CBMC if 'nothing' is output is that everything is OK" />
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="5894912397713838893" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5894912397713838894" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="defaultResult" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5894912397713838891" nodeInfo="in">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7364716885853585230" resolveInfo="RAW_RESULT_KIND" />
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.EnumConstantReference" typeId="tpee.1083260308424" id="5894912397713838895" nodeInfo="nn">
+              <link role="enumConstantDeclaration" roleId="tpee.1083260308426" targetNodeId="7364716885853590852" resolveInfo="PROPERTY_HOLDS" />
+              <link role="enumClass" roleId="tpee.1144432896254" targetNodeId="7364716885853585230" resolveInfo="RAW_RESULT_KIND" />
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7251885914858194989" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7251885914858194990" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="parsedResultStub" />
@@ -962,9 +979,8 @@
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7251885914858202691" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7395897388325500963" resolveInfo="delayInMillis" />
                 </node>
-                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.EnumConstantReference" typeId="tpee.1083260308424" id="7251885914858203624" nodeInfo="nn">
-                  <link role="enumConstantDeclaration" roleId="tpee.1083260308426" targetNodeId="7364716885853590847" resolveInfo="RUNTIME_ERROR" />
-                  <link role="enumClass" roleId="tpee.1144432896254" targetNodeId="7364716885853585230" resolveInfo="RAW_RESULT_KIND" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5894912397713838896" nodeInfo="nn">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5894912397713838894" resolveInfo="defaultResult" />
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7251885914858208754" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7251885914857817128" resolveInfo="rawCBMCOutput" />
