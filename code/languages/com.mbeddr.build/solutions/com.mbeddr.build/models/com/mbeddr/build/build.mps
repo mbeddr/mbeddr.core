@@ -289,6 +289,9 @@
       <node concept="m$_yC" id="2OnSXAPwYlu" role="m$_yJ">
         <ref role="m$_y1" to="90a9:2Xjt3l57iTJ" resolve="de.slisson.mps.hacks" />
       </node>
+      <node concept="m$_yC" id="ox0Ney8TJg" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:7klUZA6XM5S" resolve="de.slisson.mps.conditionalEditor" />
+      </node>
       <node concept="m$_yC" id="6ZkC5gOr4_O" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
       </node>
