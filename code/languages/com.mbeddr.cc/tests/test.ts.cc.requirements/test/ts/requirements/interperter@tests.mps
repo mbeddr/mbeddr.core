@@ -545,7 +545,7 @@
                     <ref role="3cqZAo" node="5x8uHKB7B_u" resolve="myFindCellWithId" />
                   </node>
                   <node concept="liA8E" id="2BbcAuJ5Xzg" role="2OqNvi">
-                    <ref role="37wK5l" to="jsgz:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+                    <ref role="37wK5l" to="nu8v:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
                   </node>
                 </node>
               </node>
@@ -624,7 +624,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="2BbcAuJfq3Q" role="2OqNvi">
-                        <ref role="37wK5l" to="jsgz:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+                        <ref role="37wK5l" to="nu8v:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
                       </node>
                     </node>
                   </node>
@@ -661,7 +661,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="5x8uHKBbALm" role="2OqNvi">
-                    <ref role="37wK5l" to="jsgz:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+                    <ref role="37wK5l" to="nu8v:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
                   </node>
                 </node>
               </node>
