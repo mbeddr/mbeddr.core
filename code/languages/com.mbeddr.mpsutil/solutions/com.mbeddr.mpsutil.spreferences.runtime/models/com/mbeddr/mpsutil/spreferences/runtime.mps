@@ -2609,6 +2609,16 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="6ge03WkgtYX" role="3cqZAp">
+          <node concept="2OqwBi" id="6ge03Wkguov" role="3clFbG">
+            <node concept="37vLTw" id="6ge03WkgtYV" role="2Oq$k0">
+              <ref role="3cqZAo" node="MCpgxY92_X" resolve="solution" />
+            </node>
+            <node concept="liA8E" id="6ge03WkgvE7" role="2OqNvi">
+              <ref role="37wK5l" to="vsqj:~AbstractModule.setChanged():void" resolve="setChanged" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="MCpgxYaZnq" role="3cqZAp" />
         <node concept="3cpWs8" id="MCpgxYb1Wp" role="3cqZAp">
           <node concept="3cpWsn" id="MCpgxYb1Wq" role="3cpWs9">
