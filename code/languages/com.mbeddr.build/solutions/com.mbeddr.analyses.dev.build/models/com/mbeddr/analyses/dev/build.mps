@@ -345,6 +345,31 @@
     </node>
     <node concept="2G$12M" id="3bBV0dtdsXG" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.analyses.ex.tests" />
+      <node concept="1E1JtA" id="6xmuwaxgjMu" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.analyses.cbmc.ts" />
+        <property role="3LESm3" value="442a4e82-a129-41ad-b27c-6d57089d3c83" />
+        <property role="2GAjPV" value="false" />
+        <property role="aoJFB" value="sources and tests" />
+        <node concept="398BVA" id="6xmuwaxgjMv" role="3LF7KH">
+          <ref role="398BVh" node="2coa6Xmo$UL" resolve="mbeddr.analyses" />
+          <node concept="2Ry0Ak" id="6xmuwaxgjMw" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="6xmuwaxgjMx" role="2Ry0An">
+              <property role="2Ry0Am" value="test.analyses.cbmc.ts" />
+              <node concept="2Ry0Ak" id="6xmuwaxgjMy" role="2Ry0An">
+                <property role="2Ry0Am" value="test.analyses.cbmc.ts.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6xmuwaxgjMz" role="3bR37C">
+          <node concept="3bR9La" id="6xmuwaxgjM$" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:4gFRqcy1Vdg" resolve="com.mbeddr.analyses.cbmc.core" />
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="5Lx3sEEsJEw" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="test.analyses.base.testcode" />
@@ -408,6 +433,12 @@
           <node concept="3bR9La" id="1Fm2OOqE86Z" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="p6ld:7uZw0yZ43LZ" resolve="com.mbeddr.core.embedded" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6xmuwaxgjPP" role="3bR37C">
+          <node concept="3bR9La" id="6xmuwaxgjPQ" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="6xmuwaxgjMu" resolve="test.analyses.cbmc.ts" />
           </node>
         </node>
       </node>
@@ -941,6 +972,12 @@
           <node concept="3bR9La" id="2coa6Xmo$Ek" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="p6ld:7eF9rfAuAO0" resolve="com.mbeddr.ext.components" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6xmuwaxg8k5" role="3bR37C">
+          <node concept="3bR9La" id="6xmuwaxg8k6" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1vdVyJtyMHG" resolve="test.analyses.cbmc.ts" />
           </node>
         </node>
       </node>
