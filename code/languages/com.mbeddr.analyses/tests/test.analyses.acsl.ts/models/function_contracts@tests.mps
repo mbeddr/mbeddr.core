@@ -86,6 +86,16 @@
                 </node>
               </node>
             </node>
+            <node role="atomicContract" roleId="97v6.3793213301909617373" type="97v6.Requires" typeId="97v6.3793213301909615745" id="1156681608090948596" nodeInfo="ng">
+              <node role="exp" roleId="97v6.3793213301910272299" type="97v6.Valid" typeId="97v6.1156681608090939298" id="1156681608091016223" nodeInfo="ng">
+                <node role="var" roleId="97v6.1156681608090939353" type="x27k.ArgumentRef" typeId="x27k.2093108837558505658" id="1156681608091016260" nodeInfo="ng">
+                  <link role="arg" roleId="x27k.2093108837558505659" targetNodeId="1156681608087928894" resolveInfo="x" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="1156681608091017786" nodeInfo="ng">
+                    <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="1156681608091017787" nodeInfo="ng" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node role="atomicContract" roleId="97v6.3793213301909617373" type="97v6.Requires" typeId="97v6.3793213301909615745" id="1156681608087970421" nodeInfo="ng">
               <node role="exp" roleId="97v6.3793213301910272299" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1156681608087972690" nodeInfo="ng">
                 <link role="var" roleId="x27k.6610873504380357355" targetNodeId="1156681608087926395" resolveInfo="g" />
@@ -119,6 +129,18 @@
                   <property name="value" nameId="mj1l.2212975673976043696" value="0" />
                 </node>
                 <node role="left" roleId="mj1l.8860443239512128064" type="97v6.Result" typeId="97v6.3793213301909798351" id="1156681608090832748" nodeInfo="ng" />
+              </node>
+            </node>
+            <node role="atomicContract" roleId="97v6.3793213301909617373" type="97v6.Ensures" typeId="97v6.3793213301910271541" id="1156681608090931165" nodeInfo="ng">
+              <node role="exp" roleId="97v6.3793213301910272299" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="1156681608090934188" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1156681608090936691" nodeInfo="ng">
+                  <link role="var" roleId="x27k.6610873504380357355" targetNodeId="1156681608087926395" resolveInfo="g" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="97v6.Old" typeId="97v6.1156681608090854095" id="1156681608090933693" nodeInfo="ng">
+                  <node role="var" roleId="97v6.1156681608090856601" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="1156681608090933716" nodeInfo="ng">
+                    <link role="var" roleId="x27k.6610873504380357355" targetNodeId="1156681608087926395" resolveInfo="g" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

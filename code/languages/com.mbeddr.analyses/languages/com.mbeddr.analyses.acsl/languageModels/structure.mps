@@ -49,6 +49,9 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\result" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="contract.expressions" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1156681608090856592" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1156681608090854143" resolveInfo="IContractSpecificExpression" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3793213301910271541" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="contract" />
@@ -57,6 +60,40 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3793213301910272312" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3793213301909615744" resolveInfo="IAtomicContract" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1156681608090854095" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="contract.expressions" />
+    <property name="name" nameId="tpck.1169194664001" value="Old" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\old" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1156681608090856595" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1156681608090854143" resolveInfo="IContractSpecificExpression" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1156681608090856601" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="var" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.2047364827736357258" resolveInfo="IVariableReference" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1156681608090854143" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="contract.expressions" />
+    <property name="name" nameId="tpck.1169194664001" value="IContractSpecificExpression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1156681608090939298" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="contract.expressions" />
+    <property name="name" nameId="tpck.1169194664001" value="Valid" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\valid" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1156681608090939353" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="var" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.2047364827736357258" resolveInfo="IVariableReference" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1156681608090939350" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1156681608090854143" resolveInfo="IContractSpecificExpression" />
     </node>
   </root>
 </model>
