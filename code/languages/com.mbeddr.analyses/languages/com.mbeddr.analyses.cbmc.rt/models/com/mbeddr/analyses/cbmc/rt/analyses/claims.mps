@@ -251,7 +251,7 @@
         <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7327349313008836947" nodeInfo="in" />
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="7327349313008851252" nodeInfo="ir">
-        <property name="name" nameId="tpck.1169194664001" value="userFriendlyMessage" />
+        <property name="name" nameId="tpck.1169194664001" value="claimDescription" />
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="7327349313008879754" nodeInfo="in" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="hba4.MethodLineDoc" typeId="hba4.6451706574539345403" id="7327349313007620263" nodeInfo="ng">
