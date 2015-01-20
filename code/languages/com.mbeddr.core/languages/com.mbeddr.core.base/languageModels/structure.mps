@@ -1478,5 +1478,8 @@
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
   </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7461599630140238044" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="ISuppressStaticEvalWarnings" />
+  </root>
 </model>
 
