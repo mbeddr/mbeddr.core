@@ -453,7 +453,7 @@
   <target name="java.compile.com.mbeddr.debugger.testing.build.dev.build" depends="java.compile.com.mbeddr.build, java.compile.com.mbeddr.platform, java.compile.de.slisson.mps.all.build">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.debugger-test.build.dev.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.debugger.testing.build.dev.build" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.debugger.testing.build.dev.build" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.debugger.testing.build.dev.build" fork="true" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.build}/solutions/com.mbeddr.debugger-test.build.dev.build/source_gen" />
@@ -464,12 +464,17 @@
         <pathelement path="${build.tmp}/java/out/de.slisson.mps.all.build" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.debugger.testing.build.dev.build">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.debugger-test.build.dev.build/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.tests.build" depends="java.compile.com.mbeddr.build, java.compile.com.mbeddr.platform, java.compile.de.slisson.mps.all.build">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.tests.build" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.tests.build" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.tests.build" fork="true" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.build}/solutions/com.mbeddr.core.tests.build/source_gen" />
@@ -480,12 +485,17 @@
         <pathelement path="${build.tmp}/java/out/de.slisson.mps.all.build" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.tests.build">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.build/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.core.tests.performance.build" depends="java.compile.com.mbeddr.build, java.compile.com.mbeddr.platform, java.compile.de.slisson.mps.all.build">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.performance.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.core.tests.performance.build" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.tests.performance.build" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.core.tests.performance.build" fork="true" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.build}/solutions/com.mbeddr.core.tests.performance.build/source_gen" />
@@ -496,12 +506,17 @@
         <pathelement path="${build.tmp}/java/out/de.slisson.mps.all.build" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.core.tests.performance.build">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.performance.build/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.debugger.tests.dev.build" depends="java.compile.com.mbeddr.build, java.compile.com.mbeddr.platform, java.compile.de.slisson.mps.all.build">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.debugger.tests.dev.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.debugger.tests.dev.build" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.debugger.tests.dev.build" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.debugger.tests.dev.build" fork="true" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.build}/solutions/com.mbeddr.debugger.tests.dev.build/source_gen" />
@@ -512,12 +527,17 @@
         <pathelement path="${build.tmp}/java/out/de.slisson.mps.all.build" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.debugger.tests.dev.build">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.debugger.tests.dev.build/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.cc.tests.dev.build" depends="java.compile.com.mbeddr.build, java.compile.com.mbeddr.platform, java.compile.de.slisson.mps.all.build">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.cc.tests.dev.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.cc.tests.dev.build" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.cc.tests.dev.build" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.cc.tests.dev.build" fork="true" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.build}/solutions/com.mbeddr.cc.tests.dev.build/source_gen" />
@@ -528,12 +548,17 @@
         <pathelement path="${build.tmp}/java/out/de.slisson.mps.all.build" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.cc.tests.dev.build">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.cc.tests.dev.build/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.ext.tests.build" depends="java.compile.com.mbeddr.build, java.compile.com.mbeddr.platform, java.compile.de.slisson.mps.all.build">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.ext.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.ext.tests.build" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.tests.build" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.ext.tests.build" fork="true" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.build}/solutions/com.mbeddr.ext.build/source_gen" />
@@ -544,12 +569,17 @@
         <pathelement path="${build.tmp}/java/out/de.slisson.mps.all.build" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.ext.tests.build">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.ext.build/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.analyses.tests.dev.build" depends="java.compile.com.mbeddr.build, java.compile.com.mbeddr.platform, java.compile.de.slisson.mps.all.build">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.analyses.dev.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.analyses.tests.dev.build" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.analyses.tests.dev.build" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.analyses.tests.dev.build" fork="true" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.build}/solutions/com.mbeddr.analyses.dev.build/source_gen" />
@@ -560,12 +590,17 @@
         <pathelement path="${build.tmp}/java/out/de.slisson.mps.all.build" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.analyses.tests.dev.build">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.analyses.dev.build/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.tutorial.dev.build" depends="java.compile.com.mbeddr.build, java.compile.com.mbeddr.platform, java.compile.de.slisson.mps.all.build">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.build.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.tutorial.dev.build" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.tutorial.dev.build" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.tutorial.dev.build" fork="true" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.build}/solutions/com.mbeddr.build.build/source_gen" />
@@ -576,12 +611,17 @@
         <pathelement path="${build.tmp}/java/out/de.slisson.mps.all.build" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.tutorial.dev.build">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.build.build/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.allInOne" depends="java.compile.com.mbeddr.build, java.compile.com.mbeddr.platform, java.compile.de.slisson.mps.all.build">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.allInOne/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.allInOne" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.allInOne" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.allInOne" fork="true" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.build}/solutions/com.mbeddr.allInOne/source_gen" />
@@ -592,36 +632,51 @@
         <pathelement path="${build.tmp}/java/out/de.slisson.mps.all.build" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.allInOne">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.allInOne/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.platform" depends="java.compile.de.slisson.mps.all.build">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.platform/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.platform" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.platform" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.platform" fork="true" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.build}/solutions/com.mbeddr.platform/source_gen" />
       </src>
       <classpath path="${build.tmp}/java/out/de.slisson.mps.all.build" />
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.platform">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.platform/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="java.compile.jetbrains.mps.minimal">
     <mkdir dir="${mbeddr.build}/solutions/jetbrains.mps.minimal/source_gen" />
     <mkdir dir="${build.tmp}/java/out/jetbrains.mps.minimal" />
-    <javac destdir="${build.tmp}/java/out/jetbrains.mps.minimal" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/jetbrains.mps.minimal" fork="true" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.build}/solutions/jetbrains.mps.minimal/source_gen" />
       </src>
       <classpath />
     </javac>
+    <copy todir="${build.tmp}/java/out/jetbrains.mps.minimal">
+      <fileset dir="${mbeddr.build}/solutions/jetbrains.mps.minimal/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.rcp" depends="java.compile.com.mbeddr.allInOne, java.compile.com.mbeddr.build, java.compile.com.mbeddr.platform">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.rcp/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.rcp" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.rcp" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.rcp" fork="true" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.build}/solutions/com.mbeddr.rcp/source_gen" />
@@ -632,12 +687,17 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.rcp">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.rcp/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.build" depends="java.compile.com.mbeddr.platform, java.compile.de.slisson.mps.all.build">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.build" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.build" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.build" fork="true" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.build}/solutions/com.mbeddr.build/source_gen" />
@@ -647,18 +707,28 @@
         <pathelement path="${build.tmp}/java/out/de.slisson.mps.all.build" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.build">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.build/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="java.compile.de.slisson.mps.all.build">
     <mkdir dir="${mbeddr.github.core.home}/code/plugins/sl-all/solutions/de.slisson.mps.all.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.slisson.mps.all.build" />
-    <javac destdir="${build.tmp}/java/out/de.slisson.mps.all.build" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/de.slisson.mps.all.build" fork="true" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.github.core.home}/code/plugins/sl-all/solutions/de.slisson.mps.all.build/source_gen" />
       </src>
       <classpath />
     </javac>
+    <copy todir="${build.tmp}/java/out/de.slisson.mps.all.build">
+      <fileset dir="${mbeddr.github.core.home}/code/plugins/sl-all/solutions/de.slisson.mps.all.build/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="cleanSources">
