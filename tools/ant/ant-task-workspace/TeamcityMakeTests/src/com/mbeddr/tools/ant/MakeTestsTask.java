@@ -34,7 +34,7 @@ public class MakeTestsTask extends Task {
 		return result;
 	}
 
-	public void execute() {		
+	public void execute() {
 		File currentWorkingDirectory = new File(workingDirectory);
 		if (!currentWorkingDirectory.exists())
 			throw new BuildException(

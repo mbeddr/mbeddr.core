@@ -2,20 +2,19 @@ package com.mbeddr.tools.ant.util;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
+import org.apache.tools.ant.BuildException;
 import org.apache.tools.ant.Project;
 
-import com.mbeddr.tools.ant.tasks.impl.ITeamcityLogger;
-import com.mbeddr.tools.ant.tasks.teamcity.TeamcityStdOutMessage;
-import com.mbeddr.tools.ant.tasks.teamcity.TestFailedMessage;
-import com.mbeddr.tools.ant.tasks.teamcity.TestFinishedMessage;
-import com.mbeddr.tools.ant.tasks.teamcity.TestStartedMessage;
+import com.mbeddr.tools.ant.tasks.impl.ProcessResult;
+import com.mbeddr.tools.ant.tasks.teamcity.ITeamcityLogger;
+import com.mbeddr.tools.ant.tasks.teamcity.messages.TeamcityStdOutMessage;
 
 public class Util {
 
@@ -41,59 +40,11 @@ public class Util {
 	}
 
 	public Process createProcess(File workingDirectory,
-			ProcessBuilder processBuilder, ITeamcityLogger logger) throws IOException {
+			ProcessBuilder processBuilder, ITeamcityLogger logger)
+			throws IOException {
 		logger.log(new TeamcityStdOutMessage("working in: " + workingDirectory));
 		processBuilder.directory(workingDirectory);
 		return processBuilder.start();
-	}
-
-	public void logProcessOutput(final Process process,
-			final CountDownLatch latch, final ITeamcityLogger logger) {
-		new Thread(new Runnable() {
-
-			@Override
-			public void run() {
-				try {
-					BufferedReader reader = new BufferedReader(
-							new InputStreamReader(process.getInputStream()));
-					String currentTestName = null;
-					String line = reader.readLine();
-					while (line != null) {
-						if (line.startsWith("$$runningTest:")) {
-							if (currentTestName != null) {
-								logger.log(new TestFinishedMessage(currentTestName));
-							}
-							Pattern pattern = Pattern.compile("@.+\\?");
-							Matcher matcher = pattern.matcher(line);
-							matcher.find();
-							String extractedString = matcher.group(0);
-							currentTestName = extractedString.substring(1,
-									extractedString.length() - 1);
-							logger.log(new TestStartedMessage(currentTestName, true));
-						} else if (line.startsWith("$$FAILED:")) {
-							logger.log(new TestFailedMessage(currentTestName, line));
-						} else {
-							logger.log(new TeamcityStdOutMessage(line));
-						}
-						line = reader.readLine();
-					}
-					if (currentTestName != null) {
-						logger.log(new TestFinishedMessage(currentTestName));
-					}
-				} catch (Exception e) {
-					e.printStackTrace();
-				} finally {
-					latch.countDown();
-				}
-			}
-		}).start();
-	}
-
-	public int waitForProcess(Process process, ITeamcityLogger logger) throws InterruptedException {
-		CountDownLatch latch = new CountDownLatch(1);
-		logProcessOutput(process, latch, logger);
-		latch.await();
-		return process.waitFor();
 	}
 
 	public boolean isInClassGenFolder(File file) {
@@ -112,5 +63,100 @@ public class Util {
 	public void logDirectory(File makeFilePath) {
 		project.log("Building: " + extractTestSuiteName(makeFilePath));
 		project.log(" ");
+	}
+
+	public void logFooter(int failures) {
+		project.log(" ");
+		project.log("FAILURES: " + failures);
+		project.log("--------------------------------------------------------------------------");
+	}
+
+	public Process createMakeTestProcess(File workingDirectory,
+			ITeamcityLogger logger) throws IOException {
+		List<String> commandList = new ArrayList<String>();
+		commandList.add("make");
+		commandList.add("test");
+		return this.createProcess(workingDirectory,
+				this.createPlatformSpecificProcessBuilder(commandList), logger);
+	}
+
+	public List<File> filterTests(List<File> makeFiles) {
+		List<File> result = new ArrayList<File>();
+		for (File makeFile : makeFiles) {
+			if (this.containsTestTarget(makeFile)
+					&& this.isInClassGenFolder(makeFile)) {
+				result.add(makeFile.getParentFile());
+			}
+		}
+		return result;
+	}
+
+	public void printHeader(int amount) {
+		String binaryBinaries = amount > 1 ? "Binaries" : "Binary";
+		project.log(" ");
+		project.log(" ");
+		project.log("======================================================");
+		project.log("              Testing " + amount + " " + binaryBinaries);
+		project.log("======================================================");
+		project.log(" ");
+		project.log(" ");
+	}
+
+	public boolean containsTestTarget(File file) throws BuildException {
+		boolean result = false;
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(file));
+			String currentLine = reader.readLine();
+			while (currentLine != null) {
+				if (currentLine.contains("test: ")) {
+					result = true;
+					break;
+				}
+				currentLine = reader.readLine();
+			}
+		} catch (Exception e) {
+			throw new BuildException("Could not read Makefile: "
+					+ file.getAbsolutePath());
+		}
+		return result;
+	}
+
+	public void logProcessOutput(final Process process, final  CountDownLatch latch,
+			final  ProcessResult processResult) {
+		new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				try {
+					System.out.println("1");
+					BufferedReader reader = new BufferedReader(new InputStreamReader(
+							process.getInputStream()));
+					String line = reader.readLine();
+					while (line != null) {
+						processResult.addMessage(line);
+						line = reader.readLine();
+					}
+				} catch (Exception e) {
+					e.printStackTrace();
+				} finally {
+					System.out.println("2");
+					latch.countDown();
+				}
+			}
+		}).start();
+		
+	}
+
+	public ProcessResult waitForProcess(Process process)
+			throws InterruptedException {
+		CountDownLatch latch = new CountDownLatch(1);
+		ProcessResult result = new ProcessResult();
+		logProcessOutput(process, latch, result);
+		int returnCode = process.waitFor();
+		System.out.println("3");
+		latch.await();
+		System.out.println("3b");
+		result.setReturnCode(returnCode);
+		return result;
 	}
 }

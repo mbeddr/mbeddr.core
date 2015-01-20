@@ -1,4 +1,4 @@
-package com.mbeddr.tools.ant.tasks.teamcity;
+package com.mbeddr.tools.ant.tasks.teamcity.messages;
 
 public class TeamcityStdOutMessage implements ITeamcityMessage {
 	protected String text;
