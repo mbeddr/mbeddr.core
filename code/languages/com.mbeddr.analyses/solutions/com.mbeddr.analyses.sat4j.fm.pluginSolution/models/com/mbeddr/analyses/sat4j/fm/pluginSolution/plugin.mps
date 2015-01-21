@@ -17,7 +17,7 @@
   <import index="ky9n" modelUID="r:02fd962e-fdec-4ce8-ac08-1e36622f718b(com.mbeddr.analyses.sat4j.fm.model)" version="-1" />
   <import index="vsqj" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" version="-1" />
   <import index="i6v0" modelUID="r:2614f5fc-e90d-4f99-b5fb-05bc371282e5(com.mbeddr.analyses.sat4j.fm.solution)" version="-1" />
-  <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="14" />
+  <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="15" />
   <import index="jwd7" modelUID="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.tools(MPS.Platform/jetbrains.mps.ide.tools@java_stub)" version="-1" />
   <import index="nx1" modelUID="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.actionSystem(MPS.IDEA/com.intellij.openapi.actionSystem@java_stub)" version="-1" />
   <import index="b2mh" modelUID="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.project(MPS.IDEA/com.intellij.openapi.project@java_stub)" version="-1" />
@@ -1216,6 +1216,30 @@
     </node>
     <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="2254150758338143841" nodeInfo="ng">
       <property name="path" nameId="1oap.8974276187400029899" value="${module}/icons/verify.png" />
+    </node>
+  </root>
+  <root type="tp4k.KeymapChangesDeclaration" typeId="tp4k.1562714432501166197" id="7573793015746742514" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="VariabilityAnalyses" />
+    <node role="shortcutChange" roleId="tp4k.1562714432501166199" type="tp4k.SimpleShortcutChange" typeId="tp4k.1562714432501166198" id="7573793015746746360" nodeInfo="ng">
+      <link role="action" roleId="tp4k.6193305307616734326" targetNodeId="4689096352578878852" resolveInfo="ModuleConsistencyAction" />
+      <node role="keystroke" roleId="tp4k.1562714432501166206" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="7573793015746746361" nodeInfo="ng">
+        <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
+        <property name="keycode" nameId="tp4k.1207318242774" value="VK_V" />
+      </node>
+    </node>
+    <node role="shortcutChange" roleId="tp4k.1562714432501166199" type="tp4k.SimpleShortcutChange" typeId="tp4k.1562714432501166198" id="7573793015746966982" nodeInfo="ng">
+      <link role="action" roleId="tp4k.6193305307616734326" targetNodeId="2254150758335551070" resolveInfo="SolutionVariabilityConsistencyAction" />
+      <node role="keystroke" roleId="tp4k.1562714432501166206" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="7573793015746966984" nodeInfo="ng">
+        <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
+        <property name="keycode" nameId="tp4k.1207318242774" value="VK_V" />
+      </node>
+    </node>
+    <node role="shortcutChange" roleId="tp4k.1562714432501166199" type="tp4k.SimpleShortcutChange" typeId="tp4k.1562714432501166198" id="7573793015747012749" nodeInfo="ng">
+      <link role="action" roleId="tp4k.6193305307616734326" targetNodeId="2254150758338143782" resolveInfo="ModelVariabilityDefConsistencyAction" />
+      <node role="keystroke" roleId="tp4k.1562714432501166206" type="tp4k.KeyMapKeystroke" typeId="tp4k.1207318242772" id="7573793015747012751" nodeInfo="ng">
+        <property name="modifiers" nameId="tp4k.1207318242773" value="ctrl+alt" />
+        <property name="keycode" nameId="tp4k.1207318242774" value="VK_V" />
+      </node>
     </node>
   </root>
 </model>

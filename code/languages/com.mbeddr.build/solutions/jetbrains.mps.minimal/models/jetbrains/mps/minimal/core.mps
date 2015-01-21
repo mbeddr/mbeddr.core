@@ -413,6 +413,9 @@
               <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412545" nodeInfo="ng">
                 <property name="pattern" nameId="3ior.5248329904288051112" value="mps-execution-configurations/**" />
               </node>
+              <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="7461599630153086485" nodeInfo="ng">
+                <property name="pattern" nameId="3ior.5248329904288051112" value="mps-java/**" />
+              </node>
               <node role="selectors" roleId="3ior.6789562173791401562" type="3ior.BuildFileExcludeSelector" typeId="3ior.5248329904288051111" id="524212760093412547" nodeInfo="ng">
                 <property name="pattern" nameId="3ior.5248329904288051112" value="mps-make/**" />
               </node>

@@ -10,7 +10,6 @@
   <language namespace="06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)" />
   <language namespace="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" />
   <language namespace="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
-  <language namespace="fb853ce7-1235-4635-99f2-8ca7447fa202(com.mbeddr.ext.physicalunits)" />
   <language namespace="efda956e-491e-4f00-ba14-36af2f213ecf(com.mbeddr.core.udt)" />
   <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
   <import index="cmgk" modelUID="r:679066bc-2da8-4932-a09c-5d2b3d47b911(com.mbeddr.ext.units.siunits)" version="-1" />
@@ -23,7 +22,6 @@
   <import index="qlb5" modelUID="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" version="5" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" implicit="yes" />
-  <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="13" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="5" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="8414886092091724964" nodeInfo="ng">
@@ -387,7 +385,6 @@
   </root>
   <root type="qlb5.UnitContainer" typeId="qlb5.8337440621611267900" id="8414886092091741118" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="DefaultUnits" />
-    <node role="contents" roleId="qlb5.8337440621611267904" type="ym4j.EmptyUnitContainerContents" typeId="ym4j.6870096341748575352" id="8414886092091741119" nodeInfo="ng" />
     <node role="contents" roleId="qlb5.8337440621611267904" type="qlb5.ConversionRule" typeId="qlb5.1069230850837260491" id="8414886092091741120" nodeInfo="ng">
       <property name="isEager" nameId="qlb5.1741902046312150368" value="false" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
@@ -431,7 +428,7 @@
         </node>
       </node>
     </node>
-    <node role="contents" roleId="qlb5.8337440621611267904" type="ym4j.EmptyUnitContainerContents" typeId="ym4j.6870096341748575352" id="8414886092091741134" nodeInfo="ng" />
+    <node role="contents" roleId="qlb5.8337440621611267904" type="qlb5.EmptyUnitContainerContent" typeId="qlb5.6111466015651074424" id="987657903310161199" nodeInfo="ng" />
     <node role="contents" roleId="qlb5.8337440621611267904" type="qlb5.Unit" typeId="qlb5.8337440621611267903" id="8414886092091741135" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="C" />
       <property name="description" nameId="qlb5.8337440621611269512" value="temperature" />
@@ -857,10 +854,10 @@
         </node>
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qlb5.MetaUnitDeclaration" typeId="qlb5.8337440621613065018" id="8414886092091767406" nodeInfo="ng">
-        <node role="units" roleId="qlb5.8337440621613065019" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="8414886092091767407" nodeInfo="ng">
+        <node role="units" roleId="qlb5.8869906162335096109" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="8414886092091767407" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="T" />
         </node>
-        <node role="units" roleId="qlb5.8337440621613065019" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="8414886092091767408" nodeInfo="ng">
+        <node role="units" roleId="qlb5.8869906162335096109" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="8414886092091767408" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="U" />
         </node>
       </node>
@@ -974,10 +971,10 @@
         </node>
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qlb5.MetaUnitDeclaration" typeId="qlb5.8337440621613065018" id="8414886092091767448" nodeInfo="ng">
-        <node role="units" roleId="qlb5.8337440621613065019" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="8414886092091767449" nodeInfo="ng">
+        <node role="units" roleId="qlb5.8869906162335096109" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="8414886092091767449" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="T" />
         </node>
-        <node role="units" roleId="qlb5.8337440621613065019" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="8414886092091767450" nodeInfo="ng">
+        <node role="units" roleId="qlb5.8869906162335096109" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="8414886092091767450" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="U" />
         </node>
       </node>
@@ -1050,10 +1047,10 @@
         </node>
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qlb5.MetaUnitDeclaration" typeId="qlb5.8337440621613065018" id="8414886092091767473" nodeInfo="ng">
-        <node role="units" roleId="qlb5.8337440621613065019" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="8414886092091767474" nodeInfo="ng">
+        <node role="units" roleId="qlb5.8869906162335096109" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="8414886092091767474" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="U" />
         </node>
-        <node role="units" roleId="qlb5.8337440621613065019" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="8414886092091767475" nodeInfo="ng">
+        <node role="units" roleId="qlb5.8869906162335096109" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="8414886092091767475" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="T" />
         </node>
       </node>

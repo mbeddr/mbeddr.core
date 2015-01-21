@@ -19,9 +19,7 @@
     <usedLanguage>efda956e-491e-4f00-ba14-36af2f213ecf(com.mbeddr.core.udt)</usedLanguage>
     <usedLanguage>06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)</usedLanguage>
     <usedLanguage>2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)</usedLanguage>
-    <usedLanguage>fb853ce7-1235-4635-99f2-8ca7447fa202(com.mbeddr.ext.physicalunits)</usedLanguage>
     <usedLanguage>0d04a6cc-773e-4069-b9b0-11884b2ff1c8(com.mbeddr.ext.units)</usedLanguage>
-    <usedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</usedLanguage>
     <usedLanguage>f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)</usedLanguage>
   </usedLanguages>
 </solution>
