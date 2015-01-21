@@ -836,10 +836,10 @@
         </node>
         <node role="specification" roleId="qlb5.8337440621611401032" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="7644849806589657279" nodeInfo="ng">
           <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="7644849806589657435" nodeInfo="ng">
-            <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="7644849806589657198" resolveInfo="A" />
+            <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="7644849806589657198" resolveInfo="U1" />
           </node>
           <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="3018985626169902396" nodeInfo="ng">
-            <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="3018985626169897672" resolveInfo="B" />
+            <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="3018985626169897672" resolveInfo="U2" />
           </node>
         </node>
       </node>
@@ -852,7 +852,7 @@
           </node>
           <node role="specification" roleId="qlb5.8337440621611401032" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="7644849806589657901" nodeInfo="ng">
             <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="7644849806589658355" nodeInfo="ng">
-              <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="7644849806589657198" resolveInfo="A" />
+              <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="7644849806589657198" resolveInfo="U1" />
             </node>
           </node>
         </node>
@@ -866,17 +866,17 @@
           </node>
           <node role="specification" roleId="qlb5.8337440621611401032" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="3018985626169897720" nodeInfo="ng">
             <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="3018985626169897774" nodeInfo="ng">
-              <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="3018985626169897672" resolveInfo="B" />
+              <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="3018985626169897672" resolveInfo="U2" />
             </node>
           </node>
         </node>
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qlb5.MetaUnitDeclaration" typeId="qlb5.8337440621613065018" id="7644849806589657197" nodeInfo="ng">
-        <node role="units" roleId="qlb5.8337440621613065019" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="7644849806589657198" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="A" />
+        <node role="units" roleId="qlb5.8869906162335096109" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="7644849806589657198" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="U1" />
         </node>
-        <node role="units" roleId="qlb5.8337440621613065019" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="3018985626169897672" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="B" />
+        <node role="units" roleId="qlb5.8869906162335096109" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="3018985626169897672" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="U2" />
         </node>
       </node>
     </node>
@@ -905,7 +905,7 @@
         </node>
         <node role="specification" roleId="qlb5.8337440621611401032" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="3018985626169964408" nodeInfo="ng">
           <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="3018985626169964652" nodeInfo="ng">
-            <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="3018985626169964385" resolveInfo="A" />
+            <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="3018985626169964385" resolveInfo="U1" />
           </node>
         </node>
       </node>
@@ -918,7 +918,7 @@
           </node>
           <node role="specification" roleId="qlb5.8337440621611401032" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="3018985626169964997" nodeInfo="ng">
             <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="3018985626169965359" nodeInfo="ng">
-              <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="3018985626169964385" resolveInfo="A" />
+              <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="3018985626169964385" resolveInfo="U1" />
             </node>
           </node>
         </node>
@@ -932,14 +932,14 @@
           </node>
           <node role="specification" roleId="qlb5.8337440621611401032" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="3018985626169995871" nodeInfo="ng">
             <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="3018985626169996391" nodeInfo="ng">
-              <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="3018985626169964385" resolveInfo="A" />
+              <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="3018985626169964385" resolveInfo="U1" />
             </node>
           </node>
         </node>
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qlb5.MetaUnitDeclaration" typeId="qlb5.8337440621613065018" id="3018985626169964384" nodeInfo="ng">
-        <node role="units" roleId="qlb5.8337440621613065019" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="3018985626169964385" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="A" />
+        <node role="units" roleId="qlb5.8869906162335096109" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="3018985626169964385" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="U1" />
         </node>
       </node>
     </node>
@@ -959,7 +959,7 @@
             </node>
             <node role="specification" roleId="qlb5.8337440621611401032" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="2219633145658828463" nodeInfo="ng">
               <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="2219633145658829405" nodeInfo="ng">
-                <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="2219633145658660358" resolveInfo="A" />
+                <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="2219633145658660358" resolveInfo="U1" />
                 <node role="exponent" roleId="qlb5.8337440621611297534" type="qlb5.FractionalExponent" typeId="qlb5.3802033421901431993" id="2219633145658831104" nodeInfo="ng">
                   <node role="fraction" roleId="qlb5.3802033421901461982" type="cetu.FractionExpression" typeId="cetu.5098456557381793727" id="2219633145658831105" nodeInfo="ng">
                     <node role="left" roleId="cetu.5098456557382006592" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2219633145658831106" nodeInfo="ng">
@@ -979,7 +979,7 @@
             </node>
             <node role="specification" roleId="qlb5.8337440621611353453" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="2219633145658840677" nodeInfo="ng">
               <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="2219633145658840678" nodeInfo="ng">
-                <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="2219633145658660358" resolveInfo="A" />
+                <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="2219633145658660358" resolveInfo="U1" />
                 <node role="exponent" roleId="qlb5.8337440621611297534" type="qlb5.FractionalExponent" typeId="qlb5.3802033421901431993" id="2219633145658853513" nodeInfo="ng">
                   <node role="fraction" roleId="qlb5.3802033421901461982" type="cetu.FractionExpression" typeId="cetu.5098456557381793727" id="2219633145658853514" nodeInfo="ng">
                     <node role="left" roleId="cetu.5098456557382006592" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2219633145658853515" nodeInfo="ng">
@@ -1016,7 +1016,7 @@
         </node>
         <node role="specification" roleId="qlb5.8337440621611401032" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="2219633145658660401" nodeInfo="ng">
           <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="2219633145658660573" nodeInfo="ng">
-            <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="2219633145658660358" resolveInfo="A" />
+            <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="2219633145658660358" resolveInfo="U1" />
             <node role="exponent" roleId="qlb5.8337440621611297534" type="qlb5.FractionalExponent" typeId="qlb5.3802033421901431993" id="2219633145658660964" nodeInfo="ng">
               <node role="fraction" roleId="qlb5.3802033421901461982" type="cetu.FractionExpression" typeId="cetu.5098456557381793727" id="2219633145658660965" nodeInfo="ng">
                 <node role="left" roleId="cetu.5098456557382006592" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2219633145658660966" nodeInfo="ng">
@@ -1039,14 +1039,14 @@
           </node>
           <node role="specification" roleId="qlb5.8337440621611401032" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="2219633145658682984" nodeInfo="ng">
             <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="2219633145658683660" nodeInfo="ng">
-              <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="2219633145658660358" resolveInfo="A" />
+              <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="2219633145658660358" resolveInfo="U1" />
             </node>
           </node>
         </node>
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="qlb5.MetaUnitDeclaration" typeId="qlb5.8337440621613065018" id="2219633145658660357" nodeInfo="ng">
-        <node role="units" roleId="qlb5.8337440621613065019" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="2219633145658660358" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="A" />
+        <node role="units" roleId="qlb5.8869906162335096109" type="qlb5.MetaUnit" typeId="qlb5.8337440621613064925" id="2219633145658660358" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="U1" />
         </node>
       </node>
     </node>
@@ -10710,8 +10710,15 @@
             </node>
           </node>
         </node>
-        <node role="initValue" roleId="k146.3267857377793644829" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1187244948807655192" nodeInfo="ng">
-          <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+        <node role="initValue" roleId="k146.3267857377793644829" type="qlb5.AnnotatedExpression" typeId="qlb5.8337440621611212272" id="3978189422528981698" nodeInfo="ng">
+          <node role="innerExpression" roleId="qlb5.8337440621611267898" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3978189422528981697" nodeInfo="ng">
+            <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+          </node>
+          <node role="specification" roleId="qlb5.8337440621611353453" type="qlb5.UnitSpecification" typeId="qlb5.8337440621611270429" id="3978189422528981699" nodeInfo="ng">
+            <node role="components" roleId="qlb5.8337440621611297539" type="qlb5.UnitReference" typeId="qlb5.8337440621611273669" id="3978189422528981700" nodeInfo="ng">
+              <link role="unit" roleId="qlb5.8337440621611297532" targetNodeId="cmgk.624957442821420404" resolveInfo="m" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -11391,10 +11398,6 @@
         <property name="ok" nameId="vs0r.671216505796623806" value="0" />
       </node>
     </node>
-  </root>
-  <root type="vs0r.CodeReviewConfig" typeId="vs0r.293752265167076767" id="293752265167397570" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
-    <node role="concepts" roleId="vs0r.293752265167408155" type="vs0r.ConceptDeclarationReference" typeId="vs0r.293752265167408099" id="5167603879045904990" nodeInfo="ng" />
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="4859596973178881200" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="examples" />
