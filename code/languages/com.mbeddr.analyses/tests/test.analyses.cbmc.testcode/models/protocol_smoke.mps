@@ -1,2678 +1,2889 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:1ec3107b-123d-4426-af3e-bc24b0567931(protocol_smoke)">
-  <persistence version="8" />
-  <language namespace="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" />
-  <language namespace="97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)" />
-  <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
-  <language namespace="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" />
-  <language namespace="2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)" />
-  <language namespace="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" />
-  <language namespace="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606(com.mbeddr.ext.components.gen_nomw)" />
-  <language namespace="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
-  <language namespace="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
-  <language namespace="c9a5ade7-5f6a-41ae-a703-5d94a418cf4f(com.mbeddr.analyses.cbmc.components)" />
-  <language namespace="5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)" />
-  <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="36" implicit="yes" />
-  <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="5" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" implicit="yes" />
-  <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="11" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
-  <import index="c4ml" modelUID="r:965f5cbb-2e6c-4aa6-8166-554f0fb0053f(com.mbeddr.analyses.cbmc.components.structure)" version="1" implicit="yes" />
-  <import index="q46j" modelUID="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" version="2" implicit="yes" />
-  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9120591063517986776" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="ATM" />
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517986777" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1353068231675_1" />
+<model ref="r:1ec3107b-123d-4426-af3e-bc24b0567931(protocol_smoke)">
+  <persistence version="9" />
+  <languages>
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
+    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="-1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
+    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
+    <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="-1" />
+    <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
+    <use id="c9a5ade7-5f6a-41ae-a703-5d94a418cf4f" name="com.mbeddr.analyses.cbmc.components" version="-1" />
+    <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="-1" />
+  </languages>
+  <imports />
+  <registry>
+    <language id="c9a5ade7-5f6a-41ae-a703-5d94a418cf4f" name="com.mbeddr.analyses.cbmc.components">
+      <concept id="6638119994895244601" name="com.mbeddr.analyses.cbmc.components.structure.VerificationConfigurationAttribute" flags="ng" index="1cekJe">
+        <property id="6638119994895244606" name="analysisDepth" index="1cekJ9" />
+        <property id="6638119994895244604" name="unwindingDepth" index="1cekJb" />
+        <reference id="6638119994895244607" name="verificationEntryPoint" index="1cekJ8" />
+      </concept>
+    </language>
+    <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
+      <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
+        <child id="7763322639126652758" name="baseType" index="2umbIo" />
+      </concept>
+      <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
+        <child id="7254843406768833939" name="expr" index="1_9egR" />
+      </concept>
+      <concept id="7254843406768596598" name="com.mbeddr.core.statements.structure.ForStatement" flags="ng" index="1_a8vi">
+        <child id="7254843406768606771" name="body" index="1_amYn" />
+        <child id="7254843406768606790" name="incr" index="1_amZy" />
+        <child id="7254843406768606784" name="iterator" index="1_amZ$" />
+        <child id="7254843406768606787" name="condition" index="1_amZB" />
+      </concept>
+      <concept id="7254843406768606755" name="com.mbeddr.core.statements.structure.ForVarDecl" flags="ng" index="1_amY7" />
+      <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
+        <child id="4185783222026502647" name="init" index="3XIe9u" />
+      </concept>
+      <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
+        <child id="4185783222026475862" name="statements" index="3XIRFZ" />
+      </concept>
+      <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
+      <concept id="2093108837558113914" name="com.mbeddr.core.statements.structure.LocalVarRef" flags="ng" index="3ZVu4v">
+        <reference id="2093108837558124071" name="var" index="3ZVs_2" />
+      </concept>
+    </language>
+    <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
+      <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
+      </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
+      <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
+        <child id="5046689135694070731" name="binaries" index="2ePNbc" />
+        <child id="5323740605968447026" name="target" index="2AWWZH" />
+      </concept>
+      <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
+        <reference id="7717755763392524108" name="module" index="2v9HqP" />
+      </concept>
+      <concept id="5323740605968447022" name="com.mbeddr.core.buildconfig.structure.DesktopPlatform" flags="ng" index="2AWWZL">
+        <property id="5323740605968447025" name="compilerOptions" index="2AWWZI" />
+        <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
+        <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
+        <property id="3963667026125442676" name="make" index="3r8Kxs" />
+      </concept>
+      <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
+        <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
+      </concept>
+    </language>
+    <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
+      <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO" />
+      <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
+      <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
+    </language>
+    <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
+      <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
+        <property id="1553713790141527405" name="wireStatically" index="35zhco" />
+        <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
+      </concept>
+    </language>
+    <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
+      <concept id="767515563077204464" name="com.mbeddr.core.util.structure.MessageProperty" flags="ng" index="2qqzEA" />
+      <concept id="2688792604367903085" name="com.mbeddr.core.util.structure.MessageDefinitionTable" flags="ng" index="2vmPJd">
+        <child id="2688792604367903095" name="messages" index="2vmPJn" />
+      </concept>
+      <concept id="2688792604367903087" name="com.mbeddr.core.util.structure.MessageDefinition" flags="ng" index="2vmPJf">
+        <property id="2688792604367903089" name="text" index="2vmPJh" />
+        <property id="2688792604367947988" name="active" index="2vn0DO" />
+        <child id="767515563077204474" name="properties" index="2qqzEG" />
+      </concept>
+      <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
+        <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
+      </concept>
+      <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
+        <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
+      </concept>
+      <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
+        <property id="747084250476874891" name="reexport" index="3GEa6x" />
+        <reference id="747084250476878887" name="chunk" index="3GEb4d" />
+      </concept>
+    </language>
+    <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
+      <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
+        <child id="8967919205527146150" name="expression" index="2BFjQA" />
+      </concept>
+      <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
+        <child id="5708867820623310661" name="arguments" index="1UOdpc" />
+      </concept>
+      <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
+        <child id="6437088627575722833" name="contents" index="N3F5h" />
+        <child id="1317894735999304826" name="imports" index="2OODSX" />
+      </concept>
+      <concept id="6437088627575722830" name="com.mbeddr.core.modules.structure.ImplementationModule" flags="ng" index="N3F5e" />
+      <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
+        <property id="1317894735999272944" name="exported" index="2OOxQR" />
+      </concept>
+      <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
+        <child id="4185783222026475860" name="body" index="3XIRFX" />
+      </concept>
+      <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
+      <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
+      <concept id="5950410542643524492" name="com.mbeddr.core.modules.structure.FunctionCall" flags="ng" index="3O_q_g">
+        <reference id="5950410542643524493" name="function" index="3O_q_h" />
+      </concept>
+    </language>
+    <language id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base">
+      <concept id="1246687699869804428" name="com.mbeddr.analyses.base.structure.ModelUsedForAnalysesTestsMarker" flags="ng" index="29QVxn" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components">
+      <concept id="6616025724454668918" name="com.mbeddr.ext.components.structure.AdapterInstancePortRef" flags="ng" index="219P8x">
+        <reference id="6616025724454668919" name="instance" index="219P8w" />
+        <reference id="6616025724454668920" name="port" index="219P8J" />
+      </concept>
+      <concept id="5172178961828157634" name="com.mbeddr.ext.components.structure.PortAdapter" flags="ng" index="21gPQu">
+        <child id="6616025724454701213" name="portRef" index="21ad3a" />
+      </concept>
+      <concept id="7780999115923942144" name="com.mbeddr.ext.components.structure.AbstractInstanceConfiguration" flags="ng" index="5Js9S">
+        <child id="7780999115923944213" name="contents" index="5JtDH" />
+      </concept>
+      <concept id="1302968767135003933" name="com.mbeddr.ext.components.structure.InternalRunnableCall" flags="ng" index="2$_UoH">
+        <reference id="1302968767135003934" name="runnable" index="2$_UoI" />
+      </concept>
+      <concept id="4491876417845649024" name="com.mbeddr.ext.components.structure.InstanceConfiguration" flags="ng" index="2EWCtd" />
+      <concept id="4491876417845649014" name="com.mbeddr.ext.components.structure.ComponentInstance" flags="ng" index="2EWCuV">
+        <reference id="4491876417845649015" name="component" index="2EWCuU" />
+      </concept>
+      <concept id="4491876417845649011" name="com.mbeddr.ext.components.structure.AtomicComponent" flags="ng" index="2EWCuY" />
+      <concept id="4491876417845641677" name="com.mbeddr.ext.components.structure.OperationTrigger" flags="ng" index="2EWDw0" />
+      <concept id="4491876417845641670" name="com.mbeddr.ext.components.structure.Runnable" flags="ng" index="2EWDwb">
+        <child id="4491876417845643892" name="trigger" index="2EWDeT" />
+        <child id="4491876417845689763" name="body" index="2EWMhI" />
+      </concept>
+      <concept id="4491876417845628840" name="com.mbeddr.ext.components.structure.ProvidedPort" flags="ng" index="2EWHp_" />
+      <concept id="4491876417845484930" name="com.mbeddr.ext.components.structure.Port" flags="ng" index="2EX0hf">
+        <reference id="4491876417845484932" name="intf" index="2EX0h9" />
+      </concept>
+      <concept id="4491876417845484924" name="com.mbeddr.ext.components.structure.Operation" flags="ng" index="2EX0iL">
+        <child id="6209278014151449991" name="protocols" index="3Z21jN" />
+      </concept>
+      <concept id="4491876417845484922" name="com.mbeddr.ext.components.structure.ClientServerInterface" flags="ng" index="2EX0iR">
+        <reference id="6209278014151498295" name="protocolErrorMsgTable" index="3Z3Pd3" />
+        <reference id="6209278014151498296" name="protocolErrorMsgDef" index="3Z3Pdc" />
+        <child id="4491876417845484926" name="contents" index="2EX0iN" />
+      </concept>
+      <concept id="4491876417845474761" name="com.mbeddr.ext.components.structure.Component" flags="ng" index="2EX6K4">
+        <child id="6041318036221669720" name="contents" index="2RW2fA" />
+      </concept>
+      <concept id="8105003328815071749" name="com.mbeddr.ext.components.structure.InterfaceOperationCallExpr" flags="ng" index="2H6Oeg">
+        <reference id="8105003328815071752" name="operation" index="2H6Oet" />
+      </concept>
+      <concept id="8105003328815039001" name="com.mbeddr.ext.components.structure.PortAdapterRefExpr" flags="ng" index="2H6Wec">
+        <reference id="8105003328815039002" name="portAdater" index="2H6Wef" />
+      </concept>
+      <concept id="1089269900847289701" name="com.mbeddr.ext.components.structure.EmptyInstanceConfigContent" flags="ng" index="JAGxh" />
+      <concept id="466603768608410221" name="com.mbeddr.ext.components.structure.PortAdapterOpCallExpr" flags="ng" index="30IJZa" />
+      <concept id="2103658896110121032" name="com.mbeddr.ext.components.structure.ComponentsConfigItem" flags="ng" index="3i2$bm">
+        <child id="2103658896110238743" name="genStrategy" index="3i30U9" />
+      </concept>
+      <concept id="591155063063570513" name="com.mbeddr.ext.components.structure.InitializeConfiguration" flags="ng" index="3t9XKO">
+        <reference id="591155063063570514" name="config" index="3t9XKR" />
+      </concept>
+      <concept id="8515777736166878876" name="com.mbeddr.ext.components.structure.EmptyComponentContent" flags="ng" index="3Khz0B" />
+      <concept id="6209278014151449980" name="com.mbeddr.ext.components.structure.PsmRefState" flags="ng" index="3Z21g8">
+        <reference id="6209278014151449981" name="ref" index="3Z21g9" />
+      </concept>
+      <concept id="6209278014151449953" name="com.mbeddr.ext.components.structure.PsmInitState" flags="ng" index="3Z21gl" />
+      <concept id="6209278014151449940" name="com.mbeddr.ext.components.structure.ProtocolSpec" flags="ng" index="3Z21gw">
+        <child id="6209278014151449964" name="from" index="3Z21go" />
+        <child id="6209278014151449965" name="to" index="3Z21gp" />
+      </concept>
+      <concept id="6209278014151449943" name="com.mbeddr.ext.components.structure.PsmNewState" flags="ng" index="3Z21gz" />
+      <concept id="4514118643321588318" name="com.mbeddr.ext.components.structure.IOperationTriggerLike" flags="ng" index="1ZwTiz">
+        <reference id="4514118643321619583" name="calledOperation" index="1ZwxE2" />
+        <reference id="4514118643321592184" name="providedPort" index="1ZwSu5" />
+      </concept>
+    </language>
+    <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
+      <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
+      <concept id="8463282783691618435" name="com.mbeddr.core.expressions.structure.Int16tType" flags="ng" index="26Vqpq" />
+      <concept id="8463282783691618426" name="com.mbeddr.core.expressions.structure.Int8tType" flags="ng" index="26Vqqz" />
+      <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
+        <child id="7254843406768839760" name="expression" index="1_9fRO" />
+      </concept>
+      <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
+        <property id="2212975673976043696" name="value" index="2hmy$m" />
+      </concept>
+      <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
+        <child id="318113533128716676" name="type" index="2C2TGm" />
+      </concept>
+      <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
+      <concept id="8860443239512147449" name="com.mbeddr.core.expressions.structure.LessExpression" flags="ng" index="3Tl9Jn" />
+      <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
+        <property id="2941277002445651368" name="const" index="2c7vTL" />
+        <property id="2941277002448691247" name="volatile" index="2caQfQ" />
+      </concept>
+      <concept id="8860443239512128052" name="com.mbeddr.core.expressions.structure.BinaryExpression" flags="ng" index="3TlMgq">
+        <child id="8860443239512128064" name="left" index="3TlMhI" />
+        <child id="8860443239512128065" name="right" index="3TlMhJ" />
+      </concept>
+      <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
+      <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
+    </language>
+  </registry>
+  <node concept="N3F5e" id="7UiQjZi_RZo">
+    <property role="TrG5h" value="ATM" />
+    <node concept="2NXPZ9" id="7UiQjZi_RZp" role="N3F5h">
+      <property role="TrG5h" value="empty_1353068231675_1" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="9120591063517986778" nodeInfo="ng">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="ATMInterface" />
-      <link role="protocolErrorMsgTable" roleId="v7ag.6209278014151498295" targetNodeId="9120591063517986881" resolveInfo="Messages" />
-      <link role="protocolErrorMsgDef" roleId="v7ag.6209278014151498296" targetNodeId="9120591063517986882" resolveInfo="protocolFails" />
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517986779" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="startOperation" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986780" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+    <node concept="2EX0iR" id="7UiQjZi_RZq" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="ATMInterface" />
+      <ref role="3Z3Pd3" node="7UiQjZi_S11" resolve="Messages" />
+      <ref role="3Z3Pdc" node="7UiQjZi_S12" resolve="protocolFails" />
+      <node concept="2EX0iL" id="7UiQjZi_RZr" role="2EX0iN">
+        <property role="TrG5h" value="startOperation" />
+        <node concept="19Rifw" id="7UiQjZi_RZs" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517986781" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmInitState" typeId="v7ag.6209278014151449953" id="9120591063517986782" nodeInfo="ng" />
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmNewState" typeId="v7ag.6209278014151449943" id="9120591063517986783" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="Locked" />
+        <node concept="3Z21gw" id="7UiQjZi_RZt" role="3Z21jN">
+          <node concept="3Z21gl" id="7UiQjZi_RZu" role="3Z21go" />
+          <node concept="3Z21gz" id="7UiQjZi_RZv" role="3Z21gp">
+            <property role="TrG5h" value="Locked" />
           </node>
         </node>
       </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517986784" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="insertPIN" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986785" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <node concept="2EX0iL" id="7UiQjZi_RZw" role="2EX0iN">
+        <property role="TrG5h" value="insertPIN" />
+        <node concept="19Rifw" id="7UiQjZi_RZx" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517986786" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517986787" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517986783" resolveInfo="Locked" />
+        <node concept="3Z21gw" id="7UiQjZi_RZy" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_RZz" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_RZv" resolve="Locked" />
           </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmNewState" typeId="v7ag.6209278014151449943" id="9120591063517986788" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="Unlocked" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517986789" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="checkAmount" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986790" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517986791" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517986792" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517986788" resolveInfo="Unlocked" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517986793" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517986788" resolveInfo="Unlocked" />
+          <node concept="3Z21gz" id="7UiQjZi_RZ$" role="3Z21gp">
+            <property role="TrG5h" value="Unlocked" />
           </node>
         </node>
       </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517986794" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="withdraw" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986795" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <node concept="2EX0iL" id="7UiQjZi_RZ_" role="2EX0iN">
+        <property role="TrG5h" value="checkAmount" />
+        <node concept="19Rifw" id="7UiQjZi_RZA" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517986796" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517986797" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517986788" resolveInfo="Unlocked" />
+        <node concept="3Z21gw" id="7UiQjZi_RZB" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_RZC" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_RZ$" resolve="Unlocked" />
           </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517986798" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517986788" resolveInfo="Unlocked" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517986799" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="deposit" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986800" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517986801" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517986802" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517986788" resolveInfo="Unlocked" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517986803" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517986788" resolveInfo="Unlocked" />
+          <node concept="3Z21g8" id="7UiQjZi_RZD" role="3Z21gp">
+            <ref role="3Z21g9" node="7UiQjZi_RZ$" resolve="Unlocked" />
           </node>
         </node>
       </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517986804" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="endOperation" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986805" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <node concept="2EX0iL" id="7UiQjZi_RZE" role="2EX0iN">
+        <property role="TrG5h" value="withdraw" />
+        <node concept="19Rifw" id="7UiQjZi_RZF" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517986806" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517986807" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517986788" resolveInfo="Unlocked" />
+        <node concept="3Z21gw" id="7UiQjZi_RZG" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_RZH" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_RZ$" resolve="Unlocked" />
           </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmInitState" typeId="v7ag.6209278014151449953" id="9120591063517986808" nodeInfo="ng" />
+          <node concept="3Z21g8" id="7UiQjZi_RZI" role="3Z21gp">
+            <ref role="3Z21g9" node="7UiQjZi_RZ$" resolve="Unlocked" />
+          </node>
         </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517986809" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517986810" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517986783" resolveInfo="Locked" />
+      </node>
+      <node concept="2EX0iL" id="7UiQjZi_RZJ" role="2EX0iN">
+        <property role="TrG5h" value="deposit" />
+        <node concept="19Rifw" id="7UiQjZi_RZK" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_RZL" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_RZM" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_RZ$" resolve="Unlocked" />
           </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmInitState" typeId="v7ag.6209278014151449953" id="9120591063517986811" nodeInfo="ng" />
+          <node concept="3Z21g8" id="7UiQjZi_RZN" role="3Z21gp">
+            <ref role="3Z21g9" node="7UiQjZi_RZ$" resolve="Unlocked" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EX0iL" id="7UiQjZi_RZO" role="2EX0iN">
+        <property role="TrG5h" value="endOperation" />
+        <node concept="19Rifw" id="7UiQjZi_RZP" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_RZQ" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_RZR" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_RZ$" resolve="Unlocked" />
+          </node>
+          <node concept="3Z21gl" id="7UiQjZi_RZS" role="3Z21gp" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_RZT" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_RZU" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_RZv" resolve="Locked" />
+          </node>
+          <node concept="3Z21gl" id="7UiQjZi_RZV" role="3Z21gp" />
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517986812" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1353585759334_1" />
+    <node concept="2NXPZ9" id="7UiQjZi_RZW" role="N3F5h">
+      <property role="TrG5h" value="empty_1353585759334_1" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="9120591063517986813" nodeInfo="ng">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="ATMPass_Component" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="9120591063517986814" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="ATM" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="9120591063517986778" resolveInfo="ATMInterface" />
+    <node concept="2EWCuY" id="7UiQjZi_RZX" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="ATMPass_Component" />
+      <node concept="2EWHp_" id="7UiQjZi_RZY" role="2RW2fA">
+        <property role="TrG5h" value="ATM" />
+        <ref role="2EX0h9" node="7UiQjZi_RZq" resolve="ATMInterface" />
       </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="9120591063517986815" nodeInfo="ng" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986816" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="ATM_startOperation" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986817" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914048694" nodeInfo="ng" />
+      <node concept="3Khz0B" id="7UiQjZi_RZZ" role="2RW2fA" />
+      <node concept="2EWDwb" id="7UiQjZi_S00" role="2RW2fA">
+        <property role="TrG5h" value="ATM_startOperation" />
+        <node concept="3XIRFW" id="7UiQjZi_S01" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjwG2Q" role="3XIRFZ" />
         </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986818" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986814" resolveInfo="ATM" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986779" resolveInfo="startOperation" />
+        <node concept="2EWDw0" id="7UiQjZi_S02" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_RZY" resolve="ATM" />
+          <ref role="1ZwxE2" node="7UiQjZi_RZr" resolve="startOperation" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845426223" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986820" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="ATM_insertPIN" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986821" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914049657" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986823" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986814" resolveInfo="ATM" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986784" resolveInfo="insertPIN" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986824" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <node concept="19Rifw" id="3T2UJ1quuSJ" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
       </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986825" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="ATM_checkAmount" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986826" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914049671" nodeInfo="ng" />
+      <node concept="2EWDwb" id="7UiQjZi_S04" role="2RW2fA">
+        <property role="TrG5h" value="ATM_insertPIN" />
+        <node concept="3XIRFW" id="7UiQjZi_S05" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjwGhT" role="3XIRFZ" />
         </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986827" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986814" resolveInfo="ATM" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986789" resolveInfo="checkAmount" />
+        <node concept="2EWDw0" id="7UiQjZi_S07" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_RZY" resolve="ATM" />
+          <ref role="1ZwxE2" node="7UiQjZi_RZw" resolve="insertPIN" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986828" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <node concept="19Rifw" id="7UiQjZi_S08" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
       </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986829" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="ATM_withdraw" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986830" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517986831" nodeInfo="ng">
-            <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="9120591063517986832" nodeInfo="ng">
-              <link role="runnable" roleId="v7ag.1302968767135003934" targetNodeId="9120591063517986825" resolveInfo="ATM_checkAmount" />
+      <node concept="2EWDwb" id="7UiQjZi_S09" role="2RW2fA">
+        <property role="TrG5h" value="ATM_checkAmount" />
+        <node concept="3XIRFW" id="7UiQjZi_S0a" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjwGi7" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S0b" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_RZY" resolve="ATM" />
+          <ref role="1ZwxE2" node="7UiQjZi_RZ_" resolve="checkAmount" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_S0c" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S0d" role="2RW2fA">
+        <property role="TrG5h" value="ATM_withdraw" />
+        <node concept="3XIRFW" id="7UiQjZi_S0e" role="2EWMhI">
+          <node concept="1_9egQ" id="7UiQjZi_S0f" role="3XIRFZ">
+            <node concept="2$_UoH" id="7UiQjZi_S0g" role="1_9egR">
+              <ref role="2$_UoI" node="7UiQjZi_S09" resolve="ATM_checkAmount" />
             </node>
           </node>
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914049691" nodeInfo="ng" />
+          <node concept="2BFjQ_" id="2tzgwZjwGir" role="3XIRFZ" />
         </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986833" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986814" resolveInfo="ATM" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986794" resolveInfo="withdraw" />
+        <node concept="2EWDw0" id="7UiQjZi_S0h" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_RZY" resolve="ATM" />
+          <ref role="1ZwxE2" node="7UiQjZi_RZE" resolve="withdraw" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986834" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <node concept="19Rifw" id="7UiQjZi_S0i" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
       </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986835" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="ATM_deposit" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986836" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517986837" nodeInfo="ng">
-            <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.InternalRunnableCall" typeId="v7ag.1302968767135003933" id="9120591063517986838" nodeInfo="ng">
-              <link role="runnable" roleId="v7ag.1302968767135003934" targetNodeId="9120591063517986825" resolveInfo="ATM_checkAmount" />
+      <node concept="2EWDwb" id="7UiQjZi_S0j" role="2RW2fA">
+        <property role="TrG5h" value="ATM_deposit" />
+        <node concept="3XIRFW" id="7UiQjZi_S0k" role="2EWMhI">
+          <node concept="1_9egQ" id="7UiQjZi_S0l" role="3XIRFZ">
+            <node concept="2$_UoH" id="7UiQjZi_S0m" role="1_9egR">
+              <ref role="2$_UoI" node="7UiQjZi_S09" resolve="ATM_checkAmount" />
             </node>
           </node>
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914049716" nodeInfo="ng" />
+          <node concept="2BFjQ_" id="2tzgwZjwGiO" role="3XIRFZ" />
         </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986839" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986814" resolveInfo="ATM" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986799" resolveInfo="deposit" />
+        <node concept="2EWDw0" id="7UiQjZi_S0n" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_RZY" resolve="ATM" />
+          <ref role="1ZwxE2" node="7UiQjZi_RZJ" resolve="deposit" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986840" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986841" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="ATM_endOperation" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986842" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914049735" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986844" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986814" resolveInfo="ATM" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986804" resolveInfo="endOperation" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845426221" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <node concept="19Rifw" id="7UiQjZi_S0o" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="c4ml.VerificationConfigurationAttribute" typeId="c4ml.6638119994895244601" id="4138212153603185943" nodeInfo="ng">
-        <property name="unwindingDepth" nameId="c4ml.6638119994895244604" value="10" />
-        <property name="analysisDepth" nameId="c4ml.6638119994895244606" value="1000" />
-        <link role="verificationEntryPoint" roleId="c4ml.6638119994895244607" targetNodeId="9120591063517987128" resolveInfo="ATMPass" />
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517986846" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1353586420795_5" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="9120591063517986847" nodeInfo="ng">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="ATMFail_Component" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="9120591063517986848" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="ATM" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="9120591063517986778" resolveInfo="ATMInterface" />
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="9120591063517986849" nodeInfo="ng" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986850" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="ATM_startOperation" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986851" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914049749" nodeInfo="ng" />
+      <node concept="2EWDwb" id="7UiQjZi_S0p" role="2RW2fA">
+        <property role="TrG5h" value="ATM_endOperation" />
+        <node concept="3XIRFW" id="7UiQjZi_S0q" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjwGj7" role="3XIRFZ" />
         </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986852" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986848" resolveInfo="ATM" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986779" resolveInfo="startOperation" />
+        <node concept="2EWDw0" id="7UiQjZi_S0s" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_RZY" resolve="ATM" />
+          <ref role="1ZwxE2" node="7UiQjZi_RZO" resolve="endOperation" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845426191" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <node concept="19Rifw" id="3T2UJ1quuSH" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
       </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986854" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="ATM_insertPIN" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986855" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914049762" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986857" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986848" resolveInfo="ATM" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986784" resolveInfo="insertPIN" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986858" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986859" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="ATM_checkAmount" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986860" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914049776" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986862" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986848" resolveInfo="ATM" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986789" resolveInfo="checkAmount" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986863" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986864" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="ATM_withdraw" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986865" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914049790" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986867" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986848" resolveInfo="ATM" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986794" resolveInfo="withdraw" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986868" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986869" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="ATM_deposit" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986870" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914049804" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986872" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986848" resolveInfo="ATM" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986799" resolveInfo="deposit" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986873" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986874" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="ATM_endOperation" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986875" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914049818" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986877" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986848" resolveInfo="ATM" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986804" resolveInfo="endOperation" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845425238" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="c4ml.VerificationConfigurationAttribute" typeId="c4ml.6638119994895244601" id="4138212153603185952" nodeInfo="ng">
-        <property name="unwindingDepth" nameId="c4ml.6638119994895244604" value="10" />
-        <property name="analysisDepth" nameId="c4ml.6638119994895244606" value="1000" />
-        <link role="verificationEntryPoint" roleId="c4ml.6638119994895244607" targetNodeId="9120591063517987166" resolveInfo="ATMFail" />
+      <node concept="1cekJe" id="3_HSwtcIdOn" role="lGtFl">
+        <property role="1cekJb" value="10" />
+        <property role="1cekJ9" value="1000" />
+        <ref role="1cekJ8" node="7UiQjZi_S4S" resolve="ATMPass" />
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517986879" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1354282004422_2" />
+    <node concept="2NXPZ9" id="7UiQjZi_S0u" role="N3F5h">
+      <property role="TrG5h" value="empty_1353586420795_5" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="4138212153603174345" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="ATMInstances" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="4138212153603174354" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="atmFail" />
-        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="9120591063517986847" resolveInfo="ATMFail_Component" />
+    <node concept="2EWCuY" id="7UiQjZi_S0v" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="ATMFail_Component" />
+      <node concept="2EWHp_" id="7UiQjZi_S0w" role="2RW2fA">
+        <property role="TrG5h" value="ATM" />
+        <ref role="2EX0h9" node="7UiQjZi_RZq" resolve="ATMInterface" />
       </node>
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="4138212153603174355" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="atmFailAdapt" />
-        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4138212153603174356" nodeInfo="ng">
-          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="4138212153603174354" resolveInfo="atmFail" />
-          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="9120591063517986848" resolveInfo="ATM" />
+      <node concept="3Khz0B" id="7UiQjZi_S0x" role="2RW2fA" />
+      <node concept="2EWDwb" id="7UiQjZi_S0y" role="2RW2fA">
+        <property role="TrG5h" value="ATM_startOperation" />
+        <node concept="3XIRFW" id="7UiQjZi_S0z" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjwGjl" role="3XIRFZ" />
         </node>
-      </node>
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.EmptyInstanceConfigContent" typeId="v7ag.1089269900847289701" id="4138212153603174357" nodeInfo="ng" />
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="4138212153603174358" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="atmPass" />
-        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="9120591063517986813" resolveInfo="ATMPass_Component" />
-      </node>
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="4138212153603174359" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="atmPassAdapt" />
-        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4138212153603174360" nodeInfo="ng">
-          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="4138212153603174358" resolveInfo="atmPass" />
-          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="9120591063517986814" resolveInfo="ATM" />
+        <node concept="2EWDw0" id="7UiQjZi_S0$" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S0w" resolve="ATM" />
+          <ref role="1ZwxE2" node="7UiQjZi_RZr" resolve="startOperation" />
+        </node>
+        <node concept="19Rifw" id="3T2UJ1quuSf" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
       </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517986880" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1353068234443_2" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4138212153603173084" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1399748107413_1" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9120591063517987128" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="ATMPass" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987129" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="v7ag.InitializeConfiguration" typeId="v7ag.591155063063570513" id="4138212153603172849" nodeInfo="ng">
-          <link role="config" roleId="v7ag.591155063063570514" targetNodeId="4138212153603174345" resolveInfo="ATMInstances" />
+      <node concept="2EWDwb" id="7UiQjZi_S0A" role="2RW2fA">
+        <property role="TrG5h" value="ATM_insertPIN" />
+        <node concept="3XIRFW" id="7UiQjZi_S0B" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjwGjy" role="3XIRFZ" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987130" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987131" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986779" resolveInfo="startOperation" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987132" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603174359" resolveInfo="atmPassAdapt" />
-            </node>
-          </node>
+        <node concept="2EWDw0" id="7UiQjZi_S0D" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S0w" resolve="ATM" />
+          <ref role="1ZwxE2" node="7UiQjZi_RZw" resolve="insertPIN" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987133" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987134" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986784" resolveInfo="insertPIN" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987135" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603174359" resolveInfo="atmPassAdapt" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987136" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987137" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986794" resolveInfo="withdraw" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987138" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603174359" resolveInfo="atmPassAdapt" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987139" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987140" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986794" resolveInfo="withdraw" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987141" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603174359" resolveInfo="atmPassAdapt" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987142" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987143" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986789" resolveInfo="checkAmount" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987144" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603174359" resolveInfo="atmPassAdapt" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987145" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987146" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986799" resolveInfo="deposit" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987147" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603174359" resolveInfo="atmPassAdapt" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987148" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987149" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986799" resolveInfo="deposit" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987150" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603174359" resolveInfo="atmPassAdapt" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987151" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987152" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986799" resolveInfo="deposit" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987153" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603174359" resolveInfo="atmPassAdapt" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987154" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987155" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986804" resolveInfo="endOperation" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987156" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603174359" resolveInfo="atmPassAdapt" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9120591063517987157" nodeInfo="ng" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987158" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987159" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986779" resolveInfo="startOperation" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987160" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603174359" resolveInfo="atmPassAdapt" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987161" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987162" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986804" resolveInfo="endOperation" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987163" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603174359" resolveInfo="atmPassAdapt" />
-            </node>
-          </node>
+        <node concept="19Rifw" id="7UiQjZi_S0E" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987164" nodeInfo="ng">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517987165" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1355494764157_6" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9120591063517987166" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="ATMFail" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987167" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="v7ag.InitializeConfiguration" typeId="v7ag.591155063063570513" id="4138212153603179011" nodeInfo="ng">
-          <link role="config" roleId="v7ag.591155063063570514" targetNodeId="4138212153603174345" resolveInfo="ATMInstances" />
+      <node concept="2EWDwb" id="7UiQjZi_S0F" role="2RW2fA">
+        <property role="TrG5h" value="ATM_checkAmount" />
+        <node concept="3XIRFW" id="7UiQjZi_S0G" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjwGjK" role="3XIRFZ" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987168" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987169" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986779" resolveInfo="startOperation" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987170" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603174355" resolveInfo="atmFailAdapt" />
-            </node>
-          </node>
+        <node concept="2EWDw0" id="7UiQjZi_S0I" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S0w" resolve="ATM" />
+          <ref role="1ZwxE2" node="7UiQjZi_RZ_" resolve="checkAmount" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987171" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987172" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986804" resolveInfo="endOperation" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987173" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603174355" resolveInfo="atmFailAdapt" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987174" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987175" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986799" resolveInfo="deposit" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987176" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603174355" resolveInfo="atmFailAdapt" />
-            </node>
-          </node>
+        <node concept="19Rifw" id="7UiQjZi_S0J" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987177" nodeInfo="ng">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <node concept="2EWDwb" id="7UiQjZi_S0K" role="2RW2fA">
+        <property role="TrG5h" value="ATM_withdraw" />
+        <node concept="3XIRFW" id="7UiQjZi_S0L" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjwGjY" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S0N" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S0w" resolve="ATM" />
+          <ref role="1ZwxE2" node="7UiQjZi_RZE" resolve="withdraw" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_S0O" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S0P" role="2RW2fA">
+        <property role="TrG5h" value="ATM_deposit" />
+        <node concept="3XIRFW" id="7UiQjZi_S0Q" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjwGkc" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S0S" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S0w" resolve="ATM" />
+          <ref role="1ZwxE2" node="7UiQjZi_RZJ" resolve="deposit" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_S0T" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S0U" role="2RW2fA">
+        <property role="TrG5h" value="ATM_endOperation" />
+        <node concept="3XIRFW" id="7UiQjZi_S0V" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjwGkq" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S0X" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S0w" resolve="ATM" />
+          <ref role="1ZwxE2" node="7UiQjZi_RZO" resolve="endOperation" />
+        </node>
+        <node concept="19Rifw" id="3T2UJ1quuDm" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1cekJe" id="3_HSwtcIdOw" role="lGtFl">
+        <property role="1cekJb" value="10" />
+        <property role="1cekJ9" value="1000" />
+        <ref role="1cekJ8" node="7UiQjZi_S5u" resolve="ATMFail" />
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4138212153603173307" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1399748107600_2" />
+    <node concept="2NXPZ9" id="7UiQjZi_S0Z" role="N3F5h">
+      <property role="TrG5h" value="empty_1354282004422_2" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4138212153603173988" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1399748108035_5" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="9120591063517986881" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Messages" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="9120591063517986882" nodeInfo="ng">
-        <property name="active" nameId="k146.2688792604367947988" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="protocolFails" />
-        <property name="text" nameId="k146.2688792604367903089" value="Protocol fails" />
-        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="9120591063517986883" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="id1" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="9120591063517986884" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-          </node>
+    <node concept="2EWCtd" id="3_HSwtcIaZ9" role="N3F5h">
+      <property role="TrG5h" value="ATMInstances" />
+      <property role="2OOxQR" value="true" />
+      <node concept="2EWCuV" id="3_HSwtcIaZi" role="5JtDH">
+        <property role="TrG5h" value="atmFail" />
+        <ref role="2EWCuU" node="7UiQjZi_S0v" resolve="ATMFail_Component" />
+      </node>
+      <node concept="21gPQu" id="3_HSwtcIaZj" role="5JtDH">
+        <property role="TrG5h" value="atmFailAdapt" />
+        <node concept="219P8x" id="3_HSwtcIaZk" role="21ad3a">
+          <ref role="219P8w" node="3_HSwtcIaZi" resolve="atmFail" />
+          <ref role="219P8J" node="7UiQjZi_S0w" resolve="ATM" />
         </node>
-        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="9120591063517986885" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="id2" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="9120591063517986886" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-          </node>
+      </node>
+      <node concept="JAGxh" id="3_HSwtcIaZl" role="5JtDH" />
+      <node concept="2EWCuV" id="3_HSwtcIaZm" role="5JtDH">
+        <property role="TrG5h" value="atmPass" />
+        <ref role="2EWCuU" node="7UiQjZi_RZX" resolve="ATMPass_Component" />
+      </node>
+      <node concept="21gPQu" id="3_HSwtcIaZn" role="5JtDH">
+        <property role="TrG5h" value="atmPassAdapt" />
+        <node concept="219P8x" id="3_HSwtcIaZo" role="21ad3a">
+          <ref role="219P8w" node="3_HSwtcIaZm" resolve="atmPass" />
+          <ref role="219P8J" node="7UiQjZi_RZY" resolve="ATM" />
         </node>
       </node>
     </node>
-  </root>
-  <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="9120591063517986887" nodeInfo="ng">
-    <node role="target" roleId="51wr.5323740605968447026" type="51wr.DesktopPlatform" typeId="51wr.5323740605968447022" id="9120591063517986888" nodeInfo="ng">
-      <property name="compiler" nameId="51wr.5323740605968447024" value="gcc" />
-      <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
-      <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
-      <property name="make" nameId="51wr.3963667026125442676" value="make" />
-      <property name="gdb" nameId="51wr.3963667026125442601" value="gdb" />
+    <node concept="2NXPZ9" id="7UiQjZi_S10" role="N3F5h">
+      <property role="TrG5h" value="empty_1353068234443_2" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="9120591063517986889" nodeInfo="ng">
-      <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="9120591063517986890" nodeInfo="ng" />
+    <node concept="2NXPZ9" id="3_HSwtcIaFs" role="N3F5h">
+      <property role="TrG5h" value="empty_1399748107413_1" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="v7ag.ComponentsConfigItem" typeId="v7ag.2103658896110121032" id="9120591063517986891" nodeInfo="ng">
-      <node role="genStrategy" roleId="v7ag.2103658896110238743" type="p7vm.NoMwComponentsGenStrategy" typeId="p7vm.2103658896110278831" id="9120591063517986892" nodeInfo="ng">
-        <property name="wireStatically" nameId="p7vm.1553713790141527405" value="false" />
-        <property name="generateContracts" nameId="p7vm.4768833643347725006" value="true" />
-      </node>
-    </node>
-    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="9120591063517986893" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="HelloWorld" />
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="9120591063517986894" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="9120591063517986776" resolveInfo="ATM" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="9120591063517986895" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="9120591063517986900" resolveInfo="Car" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="9120591063517986896" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="9120591063517987600" resolveInfo="Stream" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="9120591063517986897" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="9120591063517986994" resolveInfo="Main" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="9120591063517986898" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="9120591063517987328" resolveInfo="MultiProvider" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="9120591063517986899" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="9120591063517987389" resolveInfo="MultiUserSystem" />
-      </node>
-    </node>
-  </root>
-  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9120591063517986900" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Car" />
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517986901" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1353068231675_1" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="9120591063517986902" nodeInfo="ng">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="Car" />
-      <link role="protocolErrorMsgTable" roleId="v7ag.6209278014151498295" targetNodeId="9120591063517986988" resolveInfo="Messages" />
-      <link role="protocolErrorMsgDef" roleId="v7ag.6209278014151498296" targetNodeId="9120591063517986989" resolveInfo="protocolFails" />
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517986903" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="engineOn" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986904" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+    <node concept="N3Fnx" id="7UiQjZi_S4S" role="N3F5h">
+      <property role="TrG5h" value="ATMPass" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="7UiQjZi_S4T" role="3XIRFX">
+        <node concept="3t9XKO" id="3_HSwtcIaBL" role="3XIRFZ">
+          <ref role="3t9XKR" node="3_HSwtcIaZ9" resolve="ATMInstances" />
         </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517986905" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmInitState" typeId="v7ag.6209278014151449953" id="9120591063517986906" nodeInfo="ng" />
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmNewState" typeId="v7ag.6209278014151449943" id="9120591063517986907" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="Running" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517986908" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="drive" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986909" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517986910" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517986911" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517986907" resolveInfo="Running" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmNewState" typeId="v7ag.6209278014151449943" id="9120591063517986912" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="Forward" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517986913" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="stop" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986914" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517986915" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517986916" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517986912" resolveInfo="Forward" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517986917" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517986907" resolveInfo="Running" />
-          </node>
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517986918" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517986919" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517986925" resolveInfo="Reverse" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517986920" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517986907" resolveInfo="Running" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517986921" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="reverse" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986922" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517986923" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517986924" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517986907" resolveInfo="Running" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmNewState" typeId="v7ag.6209278014151449943" id="9120591063517986925" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="Reverse" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517986926" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="engineOff" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517986927" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517986928" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517986929" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517986907" resolveInfo="Running" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmInitState" typeId="v7ag.6209278014151449953" id="9120591063517986930" nodeInfo="ng" />
-        </node>
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517986931" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1353586420795_5" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="9120591063517986932" nodeInfo="ng">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="CarPass" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="9120591063517986933" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="automobile" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="9120591063517986902" resolveInfo="Car" />
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="9120591063517986934" nodeInfo="ng" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986935" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="automobile_engineOn" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986936" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914237770" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986937" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986933" resolveInfo="automobile" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986903" resolveInfo="engineOn" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5141052472248570196" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986939" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="automobile_drive" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986940" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914237783" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986942" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986933" resolveInfo="automobile" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986908" resolveInfo="drive" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5141052472248570162" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986944" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="automobile_stop" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986945" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914237797" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986947" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986933" resolveInfo="automobile" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986913" resolveInfo="stop" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5141052472248570080" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986949" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="automobile_reverse" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986950" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914237811" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986952" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986933" resolveInfo="automobile" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986921" resolveInfo="reverse" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5141052472248570165" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986954" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="automobile_engineOff" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986955" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914237825" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986957" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986933" resolveInfo="automobile" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986926" resolveInfo="engineOff" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5141052472248569109" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="c4ml.VerificationConfigurationAttribute" typeId="c4ml.6638119994895244601" id="4138212153603586058" nodeInfo="ng">
-        <property name="unwindingDepth" nameId="c4ml.6638119994895244604" value="10" />
-        <property name="analysisDepth" nameId="c4ml.6638119994895244606" value="1000" />
-        <link role="verificationEntryPoint" roleId="c4ml.6638119994895244607" targetNodeId="9120591063517987038" resolveInfo="carProtocolRespected" />
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517986959" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1355481452465_5" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="9120591063517986960" nodeInfo="ng">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="CarFail" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="9120591063517986961" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="automobile" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="9120591063517986902" resolveInfo="Car" />
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="9120591063517986962" nodeInfo="ng" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986963" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="automobile_engineOn" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986964" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914237895" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986965" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986961" resolveInfo="automobile" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986903" resolveInfo="engineOn" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5141052472248881146" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986967" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="automobile_drive" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986968" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914237881" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986970" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986961" resolveInfo="automobile" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986908" resolveInfo="drive" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5141052472248570104" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986972" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="automobile_stop" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986973" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914237867" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986975" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986961" resolveInfo="automobile" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986913" resolveInfo="stop" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5141052472248570131" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986977" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="automobile_reverse" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986978" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914237853" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986980" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986961" resolveInfo="automobile" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986921" resolveInfo="reverse" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5141052472248570128" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517986982" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="automobile_engineOff" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517986983" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914237839" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517986985" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517986961" resolveInfo="automobile" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986926" resolveInfo="engineOff" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5141052472248569655" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="c4ml.VerificationConfigurationAttribute" typeId="c4ml.6638119994895244601" id="4138212153603586049" nodeInfo="ng">
-        <property name="unwindingDepth" nameId="c4ml.6638119994895244604" value="10" />
-        <property name="analysisDepth" nameId="c4ml.6638119994895244606" value="1000" />
-        <link role="verificationEntryPoint" roleId="c4ml.6638119994895244607" targetNodeId="9120591063517987060" resolveInfo="carProtocolNotRespected" />
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517986987" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1353068234443_2" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="4138212153603583351" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="CarInstances" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="4138212153603583352" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="_carPass" />
-        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="9120591063517986932" resolveInfo="CarPass" />
-      </node>
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="4138212153603583353" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="carPass" />
-        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4138212153603583354" nodeInfo="ng">
-          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="4138212153603583352" resolveInfo="_carPass" />
-          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="9120591063517986933" resolveInfo="automobile" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.EmptyInstanceConfigContent" typeId="v7ag.1089269900847289701" id="4138212153603583355" nodeInfo="ng" />
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="4138212153603583356" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="_carFail" />
-        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="9120591063517986960" resolveInfo="CarFail" />
-      </node>
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="4138212153603583357" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="carFail" />
-        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4138212153603583358" nodeInfo="ng">
-          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="4138212153603583356" resolveInfo="_carFail" />
-          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="9120591063517986961" resolveInfo="automobile" />
-        </node>
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4138212153603582950" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1399756423584_9" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9120591063517987038" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="carProtocolRespected" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987039" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="v7ag.InitializeConfiguration" typeId="v7ag.591155063063570513" id="4138212153603596897" nodeInfo="ng">
-          <link role="config" roleId="v7ag.591155063063570514" targetNodeId="4138212153603583351" resolveInfo="CarInstances" />
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987040" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987041" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986903" resolveInfo="engineOn" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603584916" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603583353" resolveInfo="carPass" />
+        <node concept="1_9egQ" id="7UiQjZi_S4U" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S4V" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_RZr" resolve="startOperation" />
+            <node concept="2H6Wec" id="7UiQjZi_S4W" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcIaZn" resolve="atmPassAdapt" />
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987043" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987044" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986908" resolveInfo="drive" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603584963" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603583353" resolveInfo="carPass" />
+        <node concept="1_9egQ" id="7UiQjZi_S4X" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S4Y" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_RZw" resolve="insertPIN" />
+            <node concept="2H6Wec" id="7UiQjZi_S4Z" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcIaZn" resolve="atmPassAdapt" />
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987046" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987047" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986913" resolveInfo="stop" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603585010" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603583353" resolveInfo="carPass" />
+        <node concept="1_9egQ" id="7UiQjZi_S50" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S51" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_RZE" resolve="withdraw" />
+            <node concept="2H6Wec" id="7UiQjZi_S52" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcIaZn" resolve="atmPassAdapt" />
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987049" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987050" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986921" resolveInfo="reverse" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603585071" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603583353" resolveInfo="carPass" />
+        <node concept="1_9egQ" id="7UiQjZi_S53" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S54" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_RZE" resolve="withdraw" />
+            <node concept="2H6Wec" id="7UiQjZi_S55" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcIaZn" resolve="atmPassAdapt" />
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987052" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987053" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986913" resolveInfo="stop" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603585118" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603583353" resolveInfo="carPass" />
+        <node concept="1_9egQ" id="7UiQjZi_S56" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S57" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_RZ_" resolve="checkAmount" />
+            <node concept="2H6Wec" id="7UiQjZi_S58" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcIaZn" resolve="atmPassAdapt" />
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987055" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987056" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986926" resolveInfo="engineOff" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603585179" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603583353" resolveInfo="carPass" />
+        <node concept="1_9egQ" id="7UiQjZi_S59" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S5a" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_RZJ" resolve="deposit" />
+            <node concept="2H6Wec" id="7UiQjZi_S5b" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcIaZn" resolve="atmPassAdapt" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S5c" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S5d" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_RZJ" resolve="deposit" />
+            <node concept="2H6Wec" id="7UiQjZi_S5e" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcIaZn" resolve="atmPassAdapt" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S5f" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S5g" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_RZJ" resolve="deposit" />
+            <node concept="2H6Wec" id="7UiQjZi_S5h" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcIaZn" resolve="atmPassAdapt" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S5i" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S5j" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_RZO" resolve="endOperation" />
+            <node concept="2H6Wec" id="7UiQjZi_S5k" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcIaZn" resolve="atmPassAdapt" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="7UiQjZi_S5l" role="3XIRFZ" />
+        <node concept="1_9egQ" id="7UiQjZi_S5m" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S5n" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_RZr" resolve="startOperation" />
+            <node concept="2H6Wec" id="7UiQjZi_S5o" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcIaZn" resolve="atmPassAdapt" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S5p" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S5q" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_RZO" resolve="endOperation" />
+            <node concept="2H6Wec" id="7UiQjZi_S5r" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcIaZn" resolve="atmPassAdapt" />
             </node>
           </node>
         </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987058" nodeInfo="ng">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <node concept="19Rifw" id="7UiQjZi_S5s" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517987059" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1355481368782_3" />
+    <node concept="2NXPZ9" id="7UiQjZi_S5t" role="N3F5h">
+      <property role="TrG5h" value="empty_1355494764157_6" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9120591063517987060" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="carProtocolNotRespected" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987061" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="v7ag.InitializeConfiguration" typeId="v7ag.591155063063570513" id="4138212153603596970" nodeInfo="ng">
-          <link role="config" roleId="v7ag.591155063063570514" targetNodeId="4138212153603583351" resolveInfo="CarInstances" />
+    <node concept="N3Fnx" id="7UiQjZi_S5u" role="N3F5h">
+      <property role="TrG5h" value="ATMFail" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="7UiQjZi_S5v" role="3XIRFX">
+        <node concept="3t9XKO" id="3_HSwtcIc83" role="3XIRFZ">
+          <ref role="3t9XKR" node="3_HSwtcIaZ9" resolve="ATMInstances" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987062" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987063" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986903" resolveInfo="engineOn" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603585226" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603583357" resolveInfo="carFail" />
+        <node concept="1_9egQ" id="7UiQjZi_S5w" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S5x" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_RZr" resolve="startOperation" />
+            <node concept="2H6Wec" id="7UiQjZi_S5y" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcIaZj" resolve="atmFailAdapt" />
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987065" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987066" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986908" resolveInfo="drive" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603585273" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603583357" resolveInfo="carFail" />
+        <node concept="1_9egQ" id="7UiQjZi_S5z" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S5$" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_RZO" resolve="endOperation" />
+            <node concept="2H6Wec" id="7UiQjZi_S5_" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcIaZj" resolve="atmFailAdapt" />
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987068" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987069" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986921" resolveInfo="reverse" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603585320" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603583357" resolveInfo="carFail" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987071" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987072" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986913" resolveInfo="stop" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603585367" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603583357" resolveInfo="carFail" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987074" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987075" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986926" resolveInfo="engineOff" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603585428" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603583357" resolveInfo="carFail" />
+        <node concept="1_9egQ" id="7UiQjZi_S5A" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S5B" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_RZJ" resolve="deposit" />
+            <node concept="2H6Wec" id="7UiQjZi_S5C" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcIaZj" resolve="atmFailAdapt" />
             </node>
           </node>
         </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987077" nodeInfo="ng">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <node concept="19Rifw" id="7UiQjZi_S5D" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4138212153603577355" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1399756377858_8" />
+    <node concept="2NXPZ9" id="3_HSwtcIaIV" role="N3F5h">
+      <property role="TrG5h" value="empty_1399748107600_2" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="9120591063517986988" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Messages" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="9120591063517986989" nodeInfo="ng">
-        <property name="active" nameId="k146.2688792604367947988" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="protocolFails" />
-        <property name="text" nameId="k146.2688792604367903089" value="Protocol fails" />
-        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="9120591063517986990" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="id1" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="9120591063517986991" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+    <node concept="2NXPZ9" id="3_HSwtcIaT$" role="N3F5h">
+      <property role="TrG5h" value="empty_1399748108035_5" />
+    </node>
+    <node concept="2vmPJd" id="7UiQjZi_S11" role="N3F5h">
+      <property role="TrG5h" value="Messages" />
+      <property role="2OOxQR" value="true" />
+      <node concept="2vmPJf" id="7UiQjZi_S12" role="2vmPJn">
+        <property role="2vn0DO" value="true" />
+        <property role="TrG5h" value="protocolFails" />
+        <property role="2vmPJh" value="Protocol fails" />
+        <node concept="2qqzEA" id="7UiQjZi_S13" role="2qqzEG">
+          <property role="TrG5h" value="id1" />
+          <node concept="26Vqqz" id="7UiQjZi_S14" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
           </node>
         </node>
-        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="9120591063517986992" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="id2" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="9120591063517986993" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <node concept="2qqzEA" id="7UiQjZi_S15" role="2qqzEG">
+          <property role="TrG5h" value="id2" />
+          <node concept="26Vqqz" id="7UiQjZi_S16" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
           </node>
         </node>
       </node>
     </node>
-  </root>
-  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9120591063517986994" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Main" />
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517986995" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1353068231675_1" />
+  </node>
+  <node concept="2v9HqL" id="7UiQjZi_S17">
+    <node concept="2AWWZL" id="7UiQjZi_S18" role="2AWWZH">
+      <property role="2AWWZJ" value="gcc" />
+      <property role="2AWWZI" value="-std=c99" />
+      <property role="1FkSt$" value="-g" />
+      <property role="3r8Kxs" value="make" />
+      <property role="3r8Kw1" value="gdb" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="9120591063517986996" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="StreamInstances" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="9120591063517987013" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="astream" />
-        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="9120591063517987618" resolveInfo="AStream" />
-      </node>
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="9120591063517987014" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="streamAdapt" />
-        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="9120591063517987015" nodeInfo="ng">
-          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="9120591063517987013" resolveInfo="astream" />
-          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="9120591063517987619" resolveInfo="stream" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.EmptyInstanceConfigContent" typeId="v7ag.1089269900847289701" id="9120591063517987016" nodeInfo="ng" />
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="9120591063517987017" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="_reopenStream" />
-        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="9120591063517987637" resolveInfo="OpenAfterCloseStream" />
-      </node>
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="9120591063517987018" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="reopenStream" />
-        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="9120591063517987019" nodeInfo="ng">
-          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="9120591063517987017" resolveInfo="_reopenStream" />
-          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="9120591063517987638" resolveInfo="stream" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.EmptyInstanceConfigContent" typeId="v7ag.1089269900847289701" id="9120591063517987020" nodeInfo="ng" />
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="9120591063517987021" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="_failStream" />
-        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="9120591063517987656" resolveInfo="FailDueToCloseTwiceStream" />
-      </node>
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="9120591063517987022" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="failStream" />
-        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="9120591063517987023" nodeInfo="ng">
-          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="9120591063517987021" resolveInfo="_failStream" />
-          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="9120591063517987657" resolveInfo="stream" />
-        </node>
+    <node concept="2Q9Fgs" id="7UiQjZi_S19" role="2Q9xDr">
+      <node concept="2Q9FjX" id="7UiQjZi_S1a" role="2Q9FjI" />
+    </node>
+    <node concept="3i2$bm" id="7UiQjZi_S1b" role="2Q9xDr">
+      <node concept="3i3YCL" id="7UiQjZi_S1c" role="3i30U9">
+        <property role="35zhco" value="false" />
+        <property role="3Ewwow" value="true" />
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517987078" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1354281431254_1" />
+    <node concept="2eOfOl" id="7UiQjZi_S1d" role="2ePNbc">
+      <property role="TrG5h" value="HelloWorld" />
+      <node concept="2v9HqM" id="7UiQjZi_S1e" role="2eOfOg">
+        <ref role="2v9HqP" node="7UiQjZi_RZo" resolve="ATM" />
+      </node>
+      <node concept="2v9HqM" id="7UiQjZi_S1f" role="2eOfOg">
+        <ref role="2v9HqP" node="7UiQjZi_S1k" resolve="Car" />
+      </node>
+      <node concept="2v9HqM" id="7UiQjZi_S1g" role="2eOfOg">
+        <ref role="2v9HqP" node="7UiQjZi_Scg" resolve="Stream" />
+      </node>
+      <node concept="2v9HqM" id="7UiQjZi_S1h" role="2eOfOg">
+        <ref role="2v9HqP" node="7UiQjZi_S2M" resolve="Main" />
+      </node>
+      <node concept="2v9HqM" id="7UiQjZi_S1i" role="2eOfOg">
+        <ref role="2v9HqP" node="7UiQjZi_S80" resolve="MultiProvider" />
+      </node>
+      <node concept="2v9HqM" id="7UiQjZi_S1j" role="2eOfOg">
+        <ref role="2v9HqP" node="7UiQjZi_S8X" resolve="MultiUserSystem" />
+      </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9120591063517987079" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="streamProtocolRespected" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987080" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987081" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987082" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987603" resolveInfo="open" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987083" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="9120591063517987014" resolveInfo="streamAdapt" />
+  </node>
+  <node concept="N3F5e" id="7UiQjZi_S1k">
+    <property role="TrG5h" value="Car" />
+    <node concept="2NXPZ9" id="7UiQjZi_S1l" role="N3F5h">
+      <property role="TrG5h" value="empty_1353068231675_1" />
+    </node>
+    <node concept="2EX0iR" id="7UiQjZi_S1m" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="Car" />
+      <ref role="3Z3Pd3" node="7UiQjZi_S2G" resolve="Messages" />
+      <ref role="3Z3Pdc" node="7UiQjZi_S2H" resolve="protocolFails" />
+      <node concept="2EX0iL" id="7UiQjZi_S1n" role="2EX0iN">
+        <property role="TrG5h" value="engineOn" />
+        <node concept="19Rifw" id="7UiQjZi_S1o" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S1p" role="3Z21jN">
+          <node concept="3Z21gl" id="7UiQjZi_S1q" role="3Z21go" />
+          <node concept="3Z21gz" id="7UiQjZi_S1r" role="3Z21gp">
+            <property role="TrG5h" value="Running" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EX0iL" id="7UiQjZi_S1s" role="2EX0iN">
+        <property role="TrG5h" value="drive" />
+        <node concept="19Rifw" id="7UiQjZi_S1t" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S1u" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_S1v" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S1r" resolve="Running" />
+          </node>
+          <node concept="3Z21gz" id="7UiQjZi_S1w" role="3Z21gp">
+            <property role="TrG5h" value="Forward" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EX0iL" id="7UiQjZi_S1x" role="2EX0iN">
+        <property role="TrG5h" value="stop" />
+        <node concept="19Rifw" id="7UiQjZi_S1y" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S1z" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_S1$" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S1w" resolve="Forward" />
+          </node>
+          <node concept="3Z21g8" id="7UiQjZi_S1_" role="3Z21gp">
+            <ref role="3Z21g9" node="7UiQjZi_S1r" resolve="Running" />
+          </node>
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S1A" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_S1B" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S1H" resolve="Reverse" />
+          </node>
+          <node concept="3Z21g8" id="7UiQjZi_S1C" role="3Z21gp">
+            <ref role="3Z21g9" node="7UiQjZi_S1r" resolve="Running" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EX0iL" id="7UiQjZi_S1D" role="2EX0iN">
+        <property role="TrG5h" value="reverse" />
+        <node concept="19Rifw" id="7UiQjZi_S1E" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S1F" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_S1G" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S1r" resolve="Running" />
+          </node>
+          <node concept="3Z21gz" id="7UiQjZi_S1H" role="3Z21gp">
+            <property role="TrG5h" value="Reverse" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EX0iL" id="7UiQjZi_S1I" role="2EX0iN">
+        <property role="TrG5h" value="engineOff" />
+        <node concept="19Rifw" id="7UiQjZi_S1J" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S1K" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_S1L" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S1r" resolve="Running" />
+          </node>
+          <node concept="3Z21gl" id="7UiQjZi_S1M" role="3Z21gp" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7UiQjZi_S1N" role="N3F5h">
+      <property role="TrG5h" value="empty_1353586420795_5" />
+    </node>
+    <node concept="2EWCuY" id="7UiQjZi_S1O" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="CarPass" />
+      <node concept="2EWHp_" id="7UiQjZi_S1P" role="2RW2fA">
+        <property role="TrG5h" value="automobile" />
+        <ref role="2EX0h9" node="7UiQjZi_S1m" resolve="Car" />
+      </node>
+      <node concept="3Khz0B" id="7UiQjZi_S1Q" role="2RW2fA" />
+      <node concept="2EWDwb" id="7UiQjZi_S1R" role="2RW2fA">
+        <property role="TrG5h" value="automobile_engineOn" />
+        <node concept="3XIRFW" id="7UiQjZi_S1S" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxqda" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S1T" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S1P" resolve="automobile" />
+          <ref role="1ZwxE2" node="7UiQjZi_S1n" resolve="engineOn" />
+        </node>
+        <node concept="19Rifw" id="4toFZKG1h5k" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S1V" role="2RW2fA">
+        <property role="TrG5h" value="automobile_drive" />
+        <node concept="3XIRFW" id="7UiQjZi_S1W" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxqdn" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S1Y" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S1P" resolve="automobile" />
+          <ref role="1ZwxE2" node="7UiQjZi_S1s" resolve="drive" />
+        </node>
+        <node concept="19Rifw" id="4toFZKG1h4M" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S20" role="2RW2fA">
+        <property role="TrG5h" value="automobile_stop" />
+        <node concept="3XIRFW" id="7UiQjZi_S21" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxqd_" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S23" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S1P" resolve="automobile" />
+          <ref role="1ZwxE2" node="7UiQjZi_S1x" resolve="stop" />
+        </node>
+        <node concept="19Rifw" id="4toFZKG1h3w" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S25" role="2RW2fA">
+        <property role="TrG5h" value="automobile_reverse" />
+        <node concept="3XIRFW" id="7UiQjZi_S26" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxqdN" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S28" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S1P" resolve="automobile" />
+          <ref role="1ZwxE2" node="7UiQjZi_S1D" resolve="reverse" />
+        </node>
+        <node concept="19Rifw" id="4toFZKG1h4P" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S2a" role="2RW2fA">
+        <property role="TrG5h" value="automobile_engineOff" />
+        <node concept="3XIRFW" id="7UiQjZi_S2b" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxqe1" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S2d" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S1P" resolve="automobile" />
+          <ref role="1ZwxE2" node="7UiQjZi_S1I" resolve="engineOff" />
+        </node>
+        <node concept="19Rifw" id="4toFZKG1gOl" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1cekJe" id="3_HSwtcJJwa" role="lGtFl">
+        <property role="1cekJb" value="10" />
+        <property role="1cekJ9" value="1000" />
+        <ref role="1cekJ8" node="7UiQjZi_S3u" resolve="carProtocolRespected" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7UiQjZi_S2f" role="N3F5h">
+      <property role="TrG5h" value="empty_1355481452465_5" />
+    </node>
+    <node concept="2EWCuY" id="7UiQjZi_S2g" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="CarFail" />
+      <node concept="2EWHp_" id="7UiQjZi_S2h" role="2RW2fA">
+        <property role="TrG5h" value="automobile" />
+        <ref role="2EX0h9" node="7UiQjZi_S1m" resolve="Car" />
+      </node>
+      <node concept="3Khz0B" id="7UiQjZi_S2i" role="2RW2fA" />
+      <node concept="2EWDwb" id="7UiQjZi_S2j" role="2RW2fA">
+        <property role="TrG5h" value="automobile_engineOn" />
+        <node concept="3XIRFW" id="7UiQjZi_S2k" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxqf7" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S2l" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S2h" resolve="automobile" />
+          <ref role="1ZwxE2" node="7UiQjZi_S1n" resolve="engineOn" />
+        </node>
+        <node concept="19Rifw" id="4toFZKG2sZU" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S2n" role="2RW2fA">
+        <property role="TrG5h" value="automobile_drive" />
+        <node concept="3XIRFW" id="7UiQjZi_S2o" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxqeT" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S2q" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S2h" resolve="automobile" />
+          <ref role="1ZwxE2" node="7UiQjZi_S1s" resolve="drive" />
+        </node>
+        <node concept="19Rifw" id="4toFZKG1h3S" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S2s" role="2RW2fA">
+        <property role="TrG5h" value="automobile_stop" />
+        <node concept="3XIRFW" id="7UiQjZi_S2t" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxqeF" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S2v" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S2h" resolve="automobile" />
+          <ref role="1ZwxE2" node="7UiQjZi_S1x" resolve="stop" />
+        </node>
+        <node concept="19Rifw" id="4toFZKG1h4j" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S2x" role="2RW2fA">
+        <property role="TrG5h" value="automobile_reverse" />
+        <node concept="3XIRFW" id="7UiQjZi_S2y" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxqet" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S2$" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S2h" resolve="automobile" />
+          <ref role="1ZwxE2" node="7UiQjZi_S1D" resolve="reverse" />
+        </node>
+        <node concept="19Rifw" id="4toFZKG1h4g" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S2A" role="2RW2fA">
+        <property role="TrG5h" value="automobile_engineOff" />
+        <node concept="3XIRFW" id="7UiQjZi_S2B" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxqef" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S2D" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S2h" resolve="automobile" />
+          <ref role="1ZwxE2" node="7UiQjZi_S1I" resolve="engineOff" />
+        </node>
+        <node concept="19Rifw" id="4toFZKG1gWR" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1cekJe" id="3_HSwtcJJw1" role="lGtFl">
+        <property role="1cekJb" value="10" />
+        <property role="1cekJ9" value="1000" />
+        <ref role="1cekJ8" node="7UiQjZi_S3O" resolve="carProtocolNotRespected" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7UiQjZi_S2F" role="N3F5h">
+      <property role="TrG5h" value="empty_1353068234443_2" />
+    </node>
+    <node concept="2EWCtd" id="3_HSwtcJIPR" role="N3F5h">
+      <property role="TrG5h" value="CarInstances" />
+      <property role="2OOxQR" value="true" />
+      <node concept="2EWCuV" id="3_HSwtcJIPS" role="5JtDH">
+        <property role="TrG5h" value="_carPass" />
+        <ref role="2EWCuU" node="7UiQjZi_S1O" resolve="CarPass" />
+      </node>
+      <node concept="21gPQu" id="3_HSwtcJIPT" role="5JtDH">
+        <property role="TrG5h" value="carPass" />
+        <node concept="219P8x" id="3_HSwtcJIPU" role="21ad3a">
+          <ref role="219P8w" node="3_HSwtcJIPS" resolve="_carPass" />
+          <ref role="219P8J" node="7UiQjZi_S1P" resolve="automobile" />
+        </node>
+      </node>
+      <node concept="JAGxh" id="3_HSwtcJIPV" role="5JtDH" />
+      <node concept="2EWCuV" id="3_HSwtcJIPW" role="5JtDH">
+        <property role="TrG5h" value="_carFail" />
+        <ref role="2EWCuU" node="7UiQjZi_S2g" resolve="CarFail" />
+      </node>
+      <node concept="21gPQu" id="3_HSwtcJIPX" role="5JtDH">
+        <property role="TrG5h" value="carFail" />
+        <node concept="219P8x" id="3_HSwtcJIPY" role="21ad3a">
+          <ref role="219P8w" node="3_HSwtcJIPW" resolve="_carFail" />
+          <ref role="219P8J" node="7UiQjZi_S2h" resolve="automobile" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3_HSwtcJIJA" role="N3F5h">
+      <property role="TrG5h" value="empty_1399756423584_9" />
+    </node>
+    <node concept="N3Fnx" id="7UiQjZi_S3u" role="N3F5h">
+      <property role="TrG5h" value="carProtocolRespected" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="7UiQjZi_S3v" role="3XIRFX">
+        <node concept="3t9XKO" id="3_HSwtcJM9x" role="3XIRFZ">
+          <ref role="3t9XKR" node="3_HSwtcJIPR" resolve="CarInstances" />
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S3w" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S3x" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S1n" resolve="engineOn" />
+            <node concept="2H6Wec" id="3_HSwtcJJek" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJIPT" resolve="carPass" />
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ForStatement" typeId="c4fa.7254843406768596598" id="9120591063517987084" nodeInfo="ng">
-          <node role="body" roleId="c4fa.7254843406768606771" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987085" nodeInfo="ng">
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987086" nodeInfo="ng">
-              <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987087" nodeInfo="ng">
-                <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987608" resolveInfo="read" />
-                <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987088" nodeInfo="ng">
-                  <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="9120591063517987014" resolveInfo="streamAdapt" />
+        <node concept="1_9egQ" id="7UiQjZi_S3z" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S3$" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S1s" resolve="drive" />
+            <node concept="2H6Wec" id="3_HSwtcJJf3" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJIPT" resolve="carPass" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S3A" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S3B" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S1x" resolve="stop" />
+            <node concept="2H6Wec" id="3_HSwtcJJfM" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJIPT" resolve="carPass" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S3D" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S3E" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S1D" resolve="reverse" />
+            <node concept="2H6Wec" id="3_HSwtcJJgJ" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJIPT" resolve="carPass" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S3G" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S3H" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S1x" resolve="stop" />
+            <node concept="2H6Wec" id="3_HSwtcJJhu" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJIPT" resolve="carPass" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S3J" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S3K" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S1I" resolve="engineOff" />
+            <node concept="2H6Wec" id="3_HSwtcJJir" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJIPT" resolve="carPass" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="7UiQjZi_S3M" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7UiQjZi_S3N" role="N3F5h">
+      <property role="TrG5h" value="empty_1355481368782_3" />
+    </node>
+    <node concept="N3Fnx" id="7UiQjZi_S3O" role="N3F5h">
+      <property role="TrG5h" value="carProtocolNotRespected" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="7UiQjZi_S3P" role="3XIRFX">
+        <node concept="3t9XKO" id="3_HSwtcJMaE" role="3XIRFZ">
+          <ref role="3t9XKR" node="3_HSwtcJIPR" resolve="CarInstances" />
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S3Q" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S3R" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S1n" resolve="engineOn" />
+            <node concept="2H6Wec" id="3_HSwtcJJja" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJIPX" resolve="carFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S3T" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S3U" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S1s" resolve="drive" />
+            <node concept="2H6Wec" id="3_HSwtcJJjT" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJIPX" resolve="carFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S3W" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S3X" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S1D" resolve="reverse" />
+            <node concept="2H6Wec" id="3_HSwtcJJkC" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJIPX" resolve="carFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S3Z" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S40" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S1x" resolve="stop" />
+            <node concept="2H6Wec" id="3_HSwtcJJln" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJIPX" resolve="carFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S42" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S43" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S1I" resolve="engineOff" />
+            <node concept="2H6Wec" id="3_HSwtcJJmk" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJIPX" resolve="carFail" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="7UiQjZi_S45" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3_HSwtcJHob" role="N3F5h">
+      <property role="TrG5h" value="empty_1399756377858_8" />
+    </node>
+    <node concept="2vmPJd" id="7UiQjZi_S2G" role="N3F5h">
+      <property role="TrG5h" value="Messages" />
+      <property role="2OOxQR" value="true" />
+      <node concept="2vmPJf" id="7UiQjZi_S2H" role="2vmPJn">
+        <property role="2vn0DO" value="true" />
+        <property role="TrG5h" value="protocolFails" />
+        <property role="2vmPJh" value="Protocol fails" />
+        <node concept="2qqzEA" id="7UiQjZi_S2I" role="2qqzEG">
+          <property role="TrG5h" value="id1" />
+          <node concept="26Vqqz" id="7UiQjZi_S2J" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="2qqzEA" id="7UiQjZi_S2K" role="2qqzEG">
+          <property role="TrG5h" value="id2" />
+          <node concept="26Vqqz" id="7UiQjZi_S2L" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="N3F5e" id="7UiQjZi_S2M">
+    <property role="TrG5h" value="Main" />
+    <node concept="2NXPZ9" id="7UiQjZi_S2N" role="N3F5h">
+      <property role="TrG5h" value="empty_1353068231675_1" />
+    </node>
+    <node concept="2EWCtd" id="7UiQjZi_S2O" role="N3F5h">
+      <property role="TrG5h" value="StreamInstances" />
+      <property role="2OOxQR" value="true" />
+      <node concept="2EWCuV" id="7UiQjZi_S35" role="5JtDH">
+        <property role="TrG5h" value="astream" />
+        <ref role="2EWCuU" node="7UiQjZi_Scy" resolve="AStream" />
+      </node>
+      <node concept="21gPQu" id="7UiQjZi_S36" role="5JtDH">
+        <property role="TrG5h" value="streamAdapt" />
+        <node concept="219P8x" id="7UiQjZi_S37" role="21ad3a">
+          <ref role="219P8w" node="7UiQjZi_S35" resolve="astream" />
+          <ref role="219P8J" node="7UiQjZi_Scz" resolve="stream" />
+        </node>
+      </node>
+      <node concept="JAGxh" id="7UiQjZi_S38" role="5JtDH" />
+      <node concept="2EWCuV" id="7UiQjZi_S39" role="5JtDH">
+        <property role="TrG5h" value="_reopenStream" />
+        <ref role="2EWCuU" node="7UiQjZi_ScP" resolve="OpenAfterCloseStream" />
+      </node>
+      <node concept="21gPQu" id="7UiQjZi_S3a" role="5JtDH">
+        <property role="TrG5h" value="reopenStream" />
+        <node concept="219P8x" id="7UiQjZi_S3b" role="21ad3a">
+          <ref role="219P8w" node="7UiQjZi_S39" resolve="_reopenStream" />
+          <ref role="219P8J" node="7UiQjZi_ScQ" resolve="stream" />
+        </node>
+      </node>
+      <node concept="JAGxh" id="7UiQjZi_S3c" role="5JtDH" />
+      <node concept="2EWCuV" id="7UiQjZi_S3d" role="5JtDH">
+        <property role="TrG5h" value="_failStream" />
+        <ref role="2EWCuU" node="7UiQjZi_Sd8" resolve="FailDueToCloseTwiceStream" />
+      </node>
+      <node concept="21gPQu" id="7UiQjZi_S3e" role="5JtDH">
+        <property role="TrG5h" value="failStream" />
+        <node concept="219P8x" id="7UiQjZi_S3f" role="21ad3a">
+          <ref role="219P8w" node="7UiQjZi_S3d" resolve="_failStream" />
+          <ref role="219P8J" node="7UiQjZi_Sd9" resolve="stream" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7UiQjZi_S46" role="N3F5h">
+      <property role="TrG5h" value="empty_1354281431254_1" />
+    </node>
+    <node concept="N3Fnx" id="7UiQjZi_S47" role="N3F5h">
+      <property role="TrG5h" value="streamProtocolRespected" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="7UiQjZi_S48" role="3XIRFX">
+        <node concept="1_9egQ" id="7UiQjZi_S49" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S4a" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_Scj" resolve="open" />
+            <node concept="2H6Wec" id="7UiQjZi_S4b" role="1_9fRO">
+              <ref role="2H6Wef" node="7UiQjZi_S36" resolve="streamAdapt" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_a8vi" id="7UiQjZi_S4c" role="3XIRFZ">
+          <node concept="3XIRFW" id="7UiQjZi_S4d" role="1_amYn">
+            <node concept="1_9egQ" id="7UiQjZi_S4e" role="3XIRFZ">
+              <node concept="30IJZa" id="7UiQjZi_S4f" role="1_9egR">
+                <ref role="2H6Oet" node="7UiQjZi_Sco" resolve="read" />
+                <node concept="2H6Wec" id="7UiQjZi_S4g" role="1_9fRO">
+                  <ref role="2H6Wef" node="7UiQjZi_S36" resolve="streamAdapt" />
                 </node>
               </node>
             </node>
           </node>
-          <node role="iterator" roleId="c4fa.7254843406768606784" type="c4fa.ForVarDecl" typeId="c4fa.7254843406768606755" id="9120591063517987089" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="i" />
-            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="9120591063517987090" nodeInfo="ng">
-              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          <node concept="1_amY7" id="7UiQjZi_S4h" role="1_amZ$">
+            <property role="TrG5h" value="i" />
+            <node concept="26Vqpq" id="7UiQjZi_S4i" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
             </node>
-            <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9120591063517987091" nodeInfo="ng">
-              <property name="value" nameId="mj1l.2212975673976043696" value="0" />
-            </node>
-          </node>
-          <node role="condition" roleId="c4fa.7254843406768606787" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="9120591063517987092" nodeInfo="ng">
-            <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="9120591063517987093" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="9120591063517987089" resolveInfo="i" />
-            </node>
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9120591063517987094" nodeInfo="ng">
-              <property name="value" nameId="mj1l.2212975673976043696" value="9" />
+            <node concept="3TlMh9" id="7UiQjZi_S4j" role="3XIe9u">
+              <property role="2hmy$m" value="0" />
             </node>
           </node>
-          <node role="incr" roleId="c4fa.7254843406768606790" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="9120591063517987095" nodeInfo="ng">
-            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="9120591063517987096" nodeInfo="ng">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="9120591063517987089" resolveInfo="i" />
+          <node concept="3Tl9Jn" id="7UiQjZi_S4k" role="1_amZB">
+            <node concept="3ZVu4v" id="7UiQjZi_S4l" role="3TlMhI">
+              <ref role="3ZVs_2" node="7UiQjZi_S4h" resolve="i" />
+            </node>
+            <node concept="3TlMh9" id="7UiQjZi_S4m" role="3TlMhJ">
+              <property role="2hmy$m" value="9" />
+            </node>
+          </node>
+          <node concept="3TM6Ey" id="7UiQjZi_S4n" role="1_amZy">
+            <node concept="3ZVu4v" id="7UiQjZi_S4o" role="1_9fRO">
+              <ref role="3ZVs_2" node="7UiQjZi_S4h" resolve="i" />
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987097" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987098" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987613" resolveInfo="close" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987099" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="9120591063517987014" resolveInfo="streamAdapt" />
+        <node concept="1_9egQ" id="7UiQjZi_S4p" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S4q" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_Sct" resolve="close" />
+            <node concept="2H6Wec" id="7UiQjZi_S4r" role="1_9fRO">
+              <ref role="2H6Wef" node="7UiQjZi_S36" resolve="streamAdapt" />
             </node>
           </node>
         </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987100" nodeInfo="ng">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <node concept="19Rifw" id="7UiQjZi_S4s" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517987101" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1355481920462_14" />
+    <node concept="2NXPZ9" id="7UiQjZi_S4t" role="N3F5h">
+      <property role="TrG5h" value="empty_1355481920462_14" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9120591063517987102" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="reopenStreamAfterClose" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987103" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987104" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987105" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987603" resolveInfo="open" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987106" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="9120591063517987018" resolveInfo="reopenStream" />
+    <node concept="N3Fnx" id="7UiQjZi_S4u" role="N3F5h">
+      <property role="TrG5h" value="reopenStreamAfterClose" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="7UiQjZi_S4v" role="3XIRFX">
+        <node concept="1_9egQ" id="7UiQjZi_S4w" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S4x" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_Scj" resolve="open" />
+            <node concept="2H6Wec" id="7UiQjZi_S4y" role="1_9fRO">
+              <ref role="2H6Wef" node="7UiQjZi_S3a" resolve="reopenStream" />
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987107" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987108" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987613" resolveInfo="close" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987109" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="9120591063517987018" resolveInfo="reopenStream" />
+        <node concept="1_9egQ" id="7UiQjZi_S4z" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S4$" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_Sct" resolve="close" />
+            <node concept="2H6Wec" id="7UiQjZi_S4_" role="1_9fRO">
+              <ref role="2H6Wef" node="7UiQjZi_S3a" resolve="reopenStream" />
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987110" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987111" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987603" resolveInfo="open" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987112" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="9120591063517987018" resolveInfo="reopenStream" />
+        <node concept="1_9egQ" id="7UiQjZi_S4A" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S4B" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_Scj" resolve="open" />
+            <node concept="2H6Wec" id="7UiQjZi_S4C" role="1_9fRO">
+              <ref role="2H6Wef" node="7UiQjZi_S3a" resolve="reopenStream" />
             </node>
           </node>
         </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987113" nodeInfo="ng">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517987114" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1355482562961_19" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9120591063517987115" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="closeTwiceStreamFail" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987116" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987117" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987118" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987603" resolveInfo="open" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987119" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="9120591063517987022" resolveInfo="failStream" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987120" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987121" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987613" resolveInfo="close" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987122" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="9120591063517987022" resolveInfo="failStream" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987123" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987124" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987613" resolveInfo="close" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="9120591063517987125" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="9120591063517987022" resolveInfo="failStream" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987126" nodeInfo="ng">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <node concept="19Rifw" id="7UiQjZi_S4D" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517987127" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1355494628868_2" />
+    <node concept="2NXPZ9" id="7UiQjZi_S4E" role="N3F5h">
+      <property role="TrG5h" value="empty_1355482562961_19" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517987284" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1355494574020_1" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9120591063517987285" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="main" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987286" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="v7ag.InitializeConfiguration" typeId="v7ag.591155063063570513" id="9120591063517987287" nodeInfo="ng">
-          <link role="config" roleId="v7ag.591155063063570514" targetNodeId="9120591063517986996" resolveInfo="StreamInstances" />
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9120591063517987288" nodeInfo="ng" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987294" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="9120591063517987295" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="9120591063517987079" resolveInfo="streamProtocolRespected" />
+    <node concept="N3Fnx" id="7UiQjZi_S4F" role="N3F5h">
+      <property role="TrG5h" value="closeTwiceStreamFail" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="7UiQjZi_S4G" role="3XIRFX">
+        <node concept="1_9egQ" id="7UiQjZi_S4H" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S4I" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_Scj" resolve="open" />
+            <node concept="2H6Wec" id="7UiQjZi_S4J" role="1_9fRO">
+              <ref role="2H6Wef" node="7UiQjZi_S3e" resolve="failStream" />
+            </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987296" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="9120591063517987297" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="9120591063517987102" resolveInfo="reopenStreamAfterClose" />
+        <node concept="1_9egQ" id="7UiQjZi_S4K" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S4L" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_Sct" resolve="close" />
+            <node concept="2H6Wec" id="7UiQjZi_S4M" role="1_9fRO">
+              <ref role="2H6Wef" node="7UiQjZi_S3e" resolve="failStream" />
+            </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987298" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="9120591063517987299" nodeInfo="ng">
-            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="9120591063517987115" resolveInfo="closeTwiceStreamFail" />
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9120591063517987300" nodeInfo="ng" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="9120591063517987314" nodeInfo="ng">
-          <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9120591063517987315" nodeInfo="ng">
-            <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+        <node concept="1_9egQ" id="7UiQjZi_S4N" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S4O" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_Sct" resolve="close" />
+            <node concept="2H6Wec" id="7UiQjZi_S4P" role="1_9fRO">
+              <ref role="2H6Wef" node="7UiQjZi_S3e" resolve="failStream" />
+            </node>
           </node>
         </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="9120591063517987316" nodeInfo="ng">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-      </node>
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="9120591063517987317" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="argc" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="9120591063517987318" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="9120591063517987319" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="argv" />
-        <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="4138212153603618990" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-          <node role="baseType" roleId="c4fa.7763322639126652758" type="yq40.StringType" typeId="yq40.6113173064528067332" id="9120591063517987322" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-          </node>
-        </node>
+      <node concept="19Rifw" id="7UiQjZi_S4Q" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
       </node>
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="1328910530789830822" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="9120591063517987389" resolveInfo="MultiUserSystem" />
+    <node concept="2NXPZ9" id="7UiQjZi_S4R" role="N3F5h">
+      <property role="TrG5h" value="empty_1355494628868_2" />
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="4138212153603153186" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="9120591063517987600" resolveInfo="Stream" />
+    <node concept="2NXPZ9" id="7UiQjZi_S7k" role="N3F5h">
+      <property role="TrG5h" value="empty_1355494574020_1" />
     </node>
-  </root>
-  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9120591063517987328" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="MultiProvider" />
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="9120591063517987329" nodeInfo="ng">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="multiProvider" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="9120591063517987330" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="atm" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="9120591063517986778" resolveInfo="ATMInterface" />
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="9120591063517987331" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="car" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="9120591063517986902" resolveInfo="Car" />
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987332" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="atm_startOperation" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987333" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914276787" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987335" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987330" resolveInfo="atm" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986779" resolveInfo="startOperation" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845594383" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987337" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="atm_insertPIN" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987338" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914276801" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987340" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987330" resolveInfo="atm" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986784" resolveInfo="insertPIN" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845594338" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987342" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="atm_checkAmount" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987343" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914276815" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987345" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987330" resolveInfo="atm" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986789" resolveInfo="checkAmount" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845594375" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987347" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="atm_withdraw" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987348" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914276829" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987350" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987330" resolveInfo="atm" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986794" resolveInfo="withdraw" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845594381" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987352" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="atm_deposit" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987353" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914276843" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987355" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987330" resolveInfo="atm" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986799" resolveInfo="deposit" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845594377" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987357" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="atm_endOperation" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987358" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914276857" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987360" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987330" resolveInfo="atm" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986804" resolveInfo="endOperation" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="4486406496845594379" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987362" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="car_engineOn" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987363" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914276871" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987365" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987331" resolveInfo="car" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986903" resolveInfo="engineOn" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987366" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987367" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="car_drive" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987368" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914276885" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987370" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987331" resolveInfo="car" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986908" resolveInfo="drive" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987371" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987372" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="car_stop" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987373" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914276899" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987375" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987331" resolveInfo="car" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986913" resolveInfo="stop" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987376" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987377" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="car_reverse" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987378" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914276913" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987380" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987331" resolveInfo="car" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986921" resolveInfo="reverse" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987381" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987382" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="car_engineOff" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987383" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914276927" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987385" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987331" resolveInfo="car" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517986926" resolveInfo="engineOff" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987386" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="c4ml.VerificationConfigurationAttribute" typeId="c4ml.6638119994895244601" id="4138212153603603198" nodeInfo="ng">
-        <property name="unwindingDepth" nameId="c4ml.6638119994895244604" value="10" />
-        <property name="analysisDepth" nameId="c4ml.6638119994895244606" value="1000" />
-        <link role="verificationEntryPoint" roleId="c4ml.6638119994895244607" targetNodeId="9120591063517987179" resolveInfo="multiProviderTestFail" />
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4138212153603602624" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1399756916191_11" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="4138212153603613696" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="MultiproviderInstances" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="4138212153603613709" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiProvider" />
-        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="9120591063517987329" resolveInfo="multiProvider" />
-      </node>
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="4138212153603613710" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiProviderCar" />
-        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4138212153603613711" nodeInfo="ng">
-          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="4138212153603613709" resolveInfo="multiProvider" />
-          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="9120591063517987331" resolveInfo="car" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="4138212153603613712" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiProivderAtm" />
-        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4138212153603613713" nodeInfo="ng">
-          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="4138212153603613709" resolveInfo="multiProvider" />
-          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="9120591063517987330" resolveInfo="atm" />
-        </node>
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4138212153603613485" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1399757032193_13" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9120591063517987179" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="multiProviderTestFail" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987180" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987181" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987182" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986779" resolveInfo="startOperation" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603613940" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603613712" resolveInfo="multiProivderAtm" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987184" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987185" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986903" resolveInfo="engineOn" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603613973" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603613710" resolveInfo="multiProviderCar" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987187" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987188" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986804" resolveInfo="endOperation" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603614006" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603613712" resolveInfo="multiProivderAtm" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9120591063517987190" nodeInfo="ng" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987191" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987192" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517986913" resolveInfo="stop" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603614039" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603613710" resolveInfo="multiProviderCar" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987194" nodeInfo="ng">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4138212153603602743" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1399756916630_12" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="1328910530789830825" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="true" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="9120591063517986776" resolveInfo="ATM" />
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="1328910530789830824" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="true" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="9120591063517986900" resolveInfo="Car" />
-    </node>
-  </root>
-  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9120591063517987389" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="MultiUserSystem" />
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517987390" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1353068231675_1" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="9120591063517987391" nodeInfo="ng">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="ACLInterface" />
-      <link role="protocolErrorMsgTable" roleId="v7ag.6209278014151498295" targetNodeId="9120591063517987594" resolveInfo="Messages" />
-      <link role="protocolErrorMsgDef" roleId="v7ag.6209278014151498296" targetNodeId="9120591063517987595" resolveInfo="protocolFails" />
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517987392" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="startOperation" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987393" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987394" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmInitState" typeId="v7ag.6209278014151449953" id="9120591063517987395" nodeInfo="ng" />
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmNewState" typeId="v7ag.6209278014151449943" id="9120591063517987396" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="LoggedOut" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517987397" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="loginUser" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987398" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987399" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987400" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987396" resolveInfo="LoggedOut" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmNewState" typeId="v7ag.6209278014151449943" id="9120591063517987401" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="LoggedInUser" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517987402" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="loginAdmin" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987403" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987404" nodeInfo="ng">
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmNewState" typeId="v7ag.6209278014151449943" id="9120591063517987405" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="LoggedInAdmin" />
-          </node>
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987406" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987396" resolveInfo="LoggedOut" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517987407" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="loginRoot" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987408" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987409" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987410" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987396" resolveInfo="LoggedOut" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmNewState" typeId="v7ag.6209278014151449943" id="9120591063517987411" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="LoggedInRoot" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517987412" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="read" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987413" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987414" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987415" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987401" resolveInfo="LoggedInUser" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987416" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987401" resolveInfo="LoggedInUser" />
-          </node>
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987417" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987418" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987405" resolveInfo="LoggedInAdmin" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987419" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987405" resolveInfo="LoggedInAdmin" />
-          </node>
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987420" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987421" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987411" resolveInfo="LoggedInRoot" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987422" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987411" resolveInfo="LoggedInRoot" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517987423" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="write" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987424" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987425" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987426" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987405" resolveInfo="LoggedInAdmin" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987427" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987405" resolveInfo="LoggedInAdmin" />
-          </node>
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987428" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987429" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987411" resolveInfo="LoggedInRoot" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987430" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987411" resolveInfo="LoggedInRoot" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517987431" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="changeRights" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987432" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987433" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987434" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987411" resolveInfo="LoggedInRoot" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987435" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987411" resolveInfo="LoggedInRoot" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517987436" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="createProfile" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987437" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987438" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987439" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987401" resolveInfo="LoggedInUser" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987440" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987401" resolveInfo="LoggedInUser" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517987441" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="suAdmin" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987442" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987443" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987444" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987401" resolveInfo="LoggedInUser" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987445" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987405" resolveInfo="LoggedInAdmin" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517987446" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="administrate" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987447" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987448" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987449" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987405" resolveInfo="LoggedInAdmin" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987450" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987405" resolveInfo="LoggedInAdmin" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517987451" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="logout" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987452" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987453" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987454" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987405" resolveInfo="LoggedInAdmin" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987455" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987396" resolveInfo="LoggedOut" />
-          </node>
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987456" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987457" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987411" resolveInfo="LoggedInRoot" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987458" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987396" resolveInfo="LoggedOut" />
-          </node>
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987459" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987460" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987401" resolveInfo="LoggedInUser" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987461" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987396" resolveInfo="LoggedOut" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517987462" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="exit" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987463" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987464" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987465" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987396" resolveInfo="LoggedOut" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmInitState" typeId="v7ag.6209278014151449953" id="9120591063517987466" nodeInfo="ng" />
-        </node>
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517987467" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1353586420795_5" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="9120591063517987468" nodeInfo="ng">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="MultiUserSystemPass" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="9120591063517987469" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="9120591063517987391" resolveInfo="ACLInterface" />
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987470" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_startOperation" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987471" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914154215" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987473" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987469" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987392" resolveInfo="startOperation" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987474" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987475" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_loginUser" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987476" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914162808" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987478" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987469" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987397" resolveInfo="loginUser" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987479" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987480" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_loginAdmin" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987481" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914162848" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987483" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987469" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987402" resolveInfo="loginAdmin" />
+    <node concept="N3Fnx" id="7UiQjZi_S7l" role="N3F5h">
+      <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="7UiQjZi_S7m" role="3XIRFX">
+        <node concept="3t9XKO" id="7UiQjZi_S7n" role="3XIRFZ">
+          <ref role="3t9XKR" node="7UiQjZi_S2O" resolve="StreamInstances" />
         </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987484" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987485" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_loginRoot" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987486" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914162888" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987488" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987469" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987407" resolveInfo="loginRoot" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987489" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987490" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_read" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987491" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914162928" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987493" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987469" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987412" resolveInfo="read" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987494" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987495" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_write" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987496" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914162968" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987498" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987469" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987423" resolveInfo="write" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987499" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987500" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_changeRights" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987501" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914163008" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987503" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987469" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987431" resolveInfo="changeRights" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987504" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987505" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_createProfile" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987506" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914163048" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987508" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987469" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987436" resolveInfo="createProfile" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987509" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987510" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_suAdmin" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987511" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914163088" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987513" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987469" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987441" resolveInfo="suAdmin" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987514" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987515" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_logout" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987516" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914163128" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987518" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987469" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987451" resolveInfo="logout" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987519" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987520" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_exit" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987521" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914163168" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987523" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987469" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987462" resolveInfo="exit" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987524" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987525" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_administrate" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987526" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914163208" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987528" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987469" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987446" resolveInfo="administrate" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987529" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="c4ml.VerificationConfigurationAttribute" typeId="c4ml.6638119994895244601" id="4138212153603598114" nodeInfo="ng">
-        <property name="unwindingDepth" nameId="c4ml.6638119994895244604" value="10" />
-        <property name="analysisDepth" nameId="c4ml.6638119994895244606" value="1000" />
-        <link role="verificationEntryPoint" roleId="c4ml.6638119994895244607" targetNodeId="9120591063517987196" resolveInfo="multiUserSystemPassTest" />
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="4138212153603597484" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1399756774388_10" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="9120591063517987530" nodeInfo="ng">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="MultiUserSystemFail" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="9120591063517987531" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="9120591063517987391" resolveInfo="ACLInterface" />
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987532" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_startOperation" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987533" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914163248" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987535" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987531" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987392" resolveInfo="startOperation" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987536" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987537" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_loginUser" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987538" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914163288" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987540" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987531" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987397" resolveInfo="loginUser" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987541" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987542" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_loginAdmin" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987543" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914163328" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987545" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987531" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987402" resolveInfo="loginAdmin" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987546" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987547" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_loginRoot" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987548" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914163608" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987550" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987531" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987407" resolveInfo="loginRoot" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987551" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987552" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_read" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987553" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914163568" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987555" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987531" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987412" resolveInfo="read" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987556" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987557" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_write" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987558" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914163528" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987560" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987531" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987423" resolveInfo="write" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987561" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987562" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_changeRights" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987563" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914163488" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987565" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987531" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987431" resolveInfo="changeRights" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987566" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987567" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_createProfile" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987568" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914163448" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987570" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987531" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987436" resolveInfo="createProfile" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987571" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987572" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_suAdmin" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987573" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914163408" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987575" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987531" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987441" resolveInfo="suAdmin" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987576" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987577" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_logout" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987578" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914163368" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987580" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987531" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987451" resolveInfo="logout" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987581" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987582" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_exit" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987583" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914163688" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987585" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987531" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987462" resolveInfo="exit" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987586" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987587" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystem_administrate" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987588" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="2838184825914163648" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987590" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987531" resolveInfo="multiUserSystem" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987446" resolveInfo="administrate" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987591" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="c4ml.VerificationConfigurationAttribute" typeId="c4ml.6638119994895244601" id="4138212153603598105" nodeInfo="ng">
-        <property name="unwindingDepth" nameId="c4ml.6638119994895244604" value="10" />
-        <property name="analysisDepth" nameId="c4ml.6638119994895244606" value="1000" />
-        <link role="verificationEntryPoint" roleId="c4ml.6638119994895244607" targetNodeId="9120591063517987233" resolveInfo="multiUserSystemFailTest" />
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517987592" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1354282004422_2" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.InstanceConfiguration" typeId="v7ag.4491876417845649024" id="4138212153603593868" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="MultiUserInstances" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="4138212153603593895" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="musPass" />
-        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="9120591063517987468" resolveInfo="MultiUserSystemPass" />
-      </node>
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="4138212153603593896" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystemPass" />
-        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4138212153603593897" nodeInfo="ng">
-          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="4138212153603593895" resolveInfo="musPass" />
-          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="9120591063517987469" resolveInfo="multiUserSystem" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.EmptyInstanceConfigContent" typeId="v7ag.1089269900847289701" id="4138212153603593898" nodeInfo="ng" />
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.ComponentInstance" typeId="v7ag.4491876417845649014" id="4138212153603593899" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="musFail" />
-        <link role="component" roleId="v7ag.4491876417845649015" targetNodeId="9120591063517987530" resolveInfo="MultiUserSystemFail" />
-      </node>
-      <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.PortAdapter" typeId="v7ag.5172178961828157634" id="4138212153603593900" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="multiUserSystemFail" />
-        <node role="portRef" roleId="v7ag.6616025724454701213" type="v7ag.AdapterInstancePortRef" typeId="v7ag.6616025724454668918" id="4138212153603593901" nodeInfo="ng">
-          <link role="instance" roleId="v7ag.6616025724454668919" targetNodeId="4138212153603593899" resolveInfo="musFail" />
-          <link role="port" roleId="v7ag.6616025724454668920" targetNodeId="9120591063517987531" resolveInfo="multiUserSystem" />
-        </node>
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517987195" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1355506926583_18" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9120591063517987196" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="multiUserSystemPassTest" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987197" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="v7ag.InitializeConfiguration" typeId="v7ag.591155063063570513" id="4138212153603596374" nodeInfo="ng">
-          <link role="config" roleId="v7ag.591155063063570514" targetNodeId="4138212153603593868" resolveInfo="MultiUserInstances" />
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987198" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987199" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987392" resolveInfo="startOperation" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603594630" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593896" resolveInfo="multiUserSystemPass" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987201" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987202" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987397" resolveInfo="loginUser" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603594677" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593896" resolveInfo="multiUserSystemPass" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987204" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987205" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987412" resolveInfo="read" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603594724" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593896" resolveInfo="multiUserSystemPass" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987207" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987208" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987441" resolveInfo="suAdmin" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603594799" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593896" resolveInfo="multiUserSystemPass" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987210" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987211" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987423" resolveInfo="write" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603594860" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593896" resolveInfo="multiUserSystemPass" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987213" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987214" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987412" resolveInfo="read" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603594907" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593896" resolveInfo="multiUserSystemPass" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987216" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987217" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987451" resolveInfo="logout" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603594982" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593896" resolveInfo="multiUserSystemPass" />
-            </node>
+        <node concept="3XISUE" id="7UiQjZi_S7o" role="3XIRFZ" />
+        <node concept="1_9egQ" id="7UiQjZi_S7u" role="3XIRFZ">
+          <node concept="3O_q_g" id="7UiQjZi_S7v" role="1_9egR">
+            <ref role="3O_q_h" node="7UiQjZi_S47" resolve="streamProtocolRespected" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987219" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987220" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987407" resolveInfo="loginRoot" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603595071" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593896" resolveInfo="multiUserSystemPass" />
-            </node>
+        <node concept="1_9egQ" id="7UiQjZi_S7w" role="3XIRFZ">
+          <node concept="3O_q_g" id="7UiQjZi_S7x" role="1_9egR">
+            <ref role="3O_q_h" node="7UiQjZi_S4u" resolve="reopenStreamAfterClose" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987222" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987223" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987431" resolveInfo="changeRights" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603595132" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593896" resolveInfo="multiUserSystemPass" />
-            </node>
+        <node concept="1_9egQ" id="7UiQjZi_S7y" role="3XIRFZ">
+          <node concept="3O_q_g" id="7UiQjZi_S7z" role="1_9egR">
+            <ref role="3O_q_h" node="7UiQjZi_S4F" resolve="closeTwiceStreamFail" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987225" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987226" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987451" resolveInfo="logout" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603595179" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593896" resolveInfo="multiUserSystemPass" />
-            </node>
+        <node concept="3XISUE" id="7UiQjZi_S7$" role="3XIRFZ" />
+        <node concept="2BFjQ_" id="7UiQjZi_S7M" role="3XIRFZ">
+          <node concept="3TlMh9" id="7UiQjZi_S7N" role="2BFjQA">
+            <property role="2hmy$m" value="0" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987228" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987229" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987462" resolveInfo="exit" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603595268" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593896" resolveInfo="multiUserSystemPass" />
-            </node>
-          </node>
-        </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987231" nodeInfo="ng">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <node concept="26Vqph" id="7UiQjZi_S7O" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
       </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517987232" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1355507209457_20" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="9120591063517987233" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="multiUserSystemFailTest" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987234" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="v7ag.InitializeConfiguration" typeId="v7ag.591155063063570513" id="4138212153603596543" nodeInfo="ng">
-          <link role="config" roleId="v7ag.591155063063570514" targetNodeId="4138212153603593868" resolveInfo="MultiUserInstances" />
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987235" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987236" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987392" resolveInfo="startOperation" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603595315" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593900" resolveInfo="multiUserSystemFail" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987238" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987239" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987397" resolveInfo="loginUser" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603595362" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593900" resolveInfo="multiUserSystemFail" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987241" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987242" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987412" resolveInfo="read" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603595409" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593900" resolveInfo="multiUserSystemFail" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987244" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987245" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987441" resolveInfo="suAdmin" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603595484" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593900" resolveInfo="multiUserSystemFail" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987247" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987248" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987423" resolveInfo="write" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603595545" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593900" resolveInfo="multiUserSystemFail" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987250" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987251" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987436" resolveInfo="createProfile" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603595592" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593900" resolveInfo="multiUserSystemFail" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987253" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987254" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987412" resolveInfo="read" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603595625" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593900" resolveInfo="multiUserSystemFail" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987256" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987257" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987451" resolveInfo="logout" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603595700" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593900" resolveInfo="multiUserSystemFail" />
-            </node>
-          </node>
+      <node concept="19RgSI" id="7UiQjZi_S7P" role="1UOdpc">
+        <property role="TrG5h" value="argc" />
+        <node concept="26Vqph" id="7UiQjZi_S7Q" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987259" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987260" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987407" resolveInfo="loginRoot" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603595789" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593900" resolveInfo="multiUserSystemFail" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987262" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987263" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987431" resolveInfo="changeRights" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603595850" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593900" resolveInfo="multiUserSystemFail" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987265" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987266" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987451" resolveInfo="logout" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603595897" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593900" resolveInfo="multiUserSystemFail" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987268" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987269" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987407" resolveInfo="loginRoot" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603595986" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593900" resolveInfo="multiUserSystemFail" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987271" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987272" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987441" resolveInfo="suAdmin" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603596047" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593900" resolveInfo="multiUserSystemFail" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987274" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987275" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987446" resolveInfo="administrate" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603596108" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593900" resolveInfo="multiUserSystemFail" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987277" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987278" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987451" resolveInfo="logout" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603596141" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593900" resolveInfo="multiUserSystemFail" />
-            </node>
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="9120591063517987280" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.PortAdapterOpCallExpr" typeId="v7ag.466603768608410221" id="9120591063517987281" nodeInfo="ng">
-            <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="9120591063517987462" resolveInfo="exit" />
-            <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortAdapterRefExpr" typeId="v7ag.8105003328815039001" id="4138212153603596230" nodeInfo="ng">
-              <link role="portAdater" roleId="v7ag.8105003328815039002" targetNodeId="4138212153603593900" resolveInfo="multiUserSystemFail" />
-            </node>
-          </node>
-        </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987283" nodeInfo="ng">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517987593" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1353068234443_2" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="9120591063517987594" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Messages" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="9120591063517987595" nodeInfo="ng">
-        <property name="active" nameId="k146.2688792604367947988" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="protocolFails" />
-        <property name="text" nameId="k146.2688792604367903089" value="Protocol fails" />
-        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="9120591063517987596" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="id1" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="9120591063517987597" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-          </node>
-        </node>
-        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="9120591063517987598" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="id2" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="9120591063517987599" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <node concept="19RgSI" id="7UiQjZi_S7R" role="1UOdpc">
+        <property role="TrG5h" value="argv" />
+        <node concept="3J0A42" id="3_HSwtcJRyI" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="Pu267" id="7UiQjZi_S7U" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
           </node>
         </node>
       </node>
     </node>
-  </root>
-  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9120591063517987600" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Stream" />
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517987601" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1353068231675_1" />
+    <node concept="3GEVxB" id="19LfhoY0f2A" role="2OODSX">
+      <property role="3GEa6x" value="false" />
+      <ref role="3GEb4d" node="7UiQjZi_S8X" resolve="MultiUserSystem" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.ClientServerInterface" typeId="v7ag.4491876417845484922" id="9120591063517987602" nodeInfo="ng">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="Stream" />
-      <link role="protocolErrorMsgTable" roleId="v7ag.6209278014151498295" targetNodeId="9120591063517987675" resolveInfo="Messages" />
-      <link role="protocolErrorMsgDef" roleId="v7ag.6209278014151498296" targetNodeId="9120591063517987676" resolveInfo="protocolFails" />
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517987603" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="open" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987604" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+    <node concept="3GEVxB" id="3_HSwtcI5Oy" role="2OODSX">
+      <property role="3GEa6x" value="false" />
+      <ref role="3GEb4d" node="7UiQjZi_Scg" resolve="Stream" />
+    </node>
+  </node>
+  <node concept="N3F5e" id="7UiQjZi_S80">
+    <property role="TrG5h" value="MultiProvider" />
+    <node concept="2EWCuY" id="7UiQjZi_S81" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="multiProvider" />
+      <node concept="2EWHp_" id="7UiQjZi_S82" role="2RW2fA">
+        <property role="TrG5h" value="atm" />
+        <ref role="2EX0h9" node="7UiQjZi_RZq" resolve="ATMInterface" />
+      </node>
+      <node concept="2EWHp_" id="7UiQjZi_S83" role="2RW2fA">
+        <property role="TrG5h" value="car" />
+        <ref role="2EX0h9" node="7UiQjZi_S1m" resolve="Car" />
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S84" role="2RW2fA">
+        <property role="TrG5h" value="atm_startOperation" />
+        <node concept="3XIRFW" id="7UiQjZi_S85" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxzIN" role="3XIRFZ" />
         </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987605" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmInitState" typeId="v7ag.6209278014151449953" id="9120591063517987606" nodeInfo="ng" />
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmNewState" typeId="v7ag.6209278014151449943" id="9120591063517987607" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="Opened" />
-          </node>
+        <node concept="2EWDw0" id="7UiQjZi_S87" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S82" resolve="atm" />
+          <ref role="1ZwxE2" node="7UiQjZi_RZr" resolve="startOperation" />
+        </node>
+        <node concept="19Rifw" id="3T2UJ1qv7Wf" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
       </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517987608" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="read" />
-        <node role="type" roleId="mj1l.318113533128716676" type="yq40.StringType" typeId="yq40.6113173064528067332" id="9120591063517987609" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <node concept="2EWDwb" id="7UiQjZi_S89" role="2RW2fA">
+        <property role="TrG5h" value="atm_insertPIN" />
+        <node concept="3XIRFW" id="7UiQjZi_S8a" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxzJ1" role="3XIRFZ" />
         </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987610" nodeInfo="ng">
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987611" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987607" resolveInfo="Opened" />
-          </node>
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987612" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987607" resolveInfo="Opened" />
-          </node>
+        <node concept="2EWDw0" id="7UiQjZi_S8c" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S82" resolve="atm" />
+          <ref role="1ZwxE2" node="7UiQjZi_RZw" resolve="insertPIN" />
+        </node>
+        <node concept="19Rifw" id="3T2UJ1qv7Vy" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
       </node>
-      <node role="contents" roleId="v7ag.4491876417845484926" type="v7ag.Operation" typeId="v7ag.4491876417845484924" id="9120591063517987613" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="close" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987614" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <node concept="2EWDwb" id="7UiQjZi_S8e" role="2RW2fA">
+        <property role="TrG5h" value="atm_checkAmount" />
+        <node concept="3XIRFW" id="7UiQjZi_S8f" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxzJf" role="3XIRFZ" />
         </node>
-        <node role="protocols" roleId="v7ag.6209278014151449991" type="v7ag.ProtocolSpec" typeId="v7ag.6209278014151449940" id="9120591063517987615" nodeInfo="ng">
-          <node role="to" roleId="v7ag.6209278014151449965" type="v7ag.PsmNewState" typeId="v7ag.6209278014151449943" id="9120591063517987616" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="Closed" />
-          </node>
-          <node role="from" roleId="v7ag.6209278014151449964" type="v7ag.PsmRefState" typeId="v7ag.6209278014151449980" id="9120591063517987617" nodeInfo="ng">
-            <link role="ref" roleId="v7ag.6209278014151449981" targetNodeId="9120591063517987607" resolveInfo="Opened" />
-          </node>
+        <node concept="2EWDw0" id="7UiQjZi_S8h" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S82" resolve="atm" />
+          <ref role="1ZwxE2" node="7UiQjZi_RZ_" resolve="checkAmount" />
         </node>
+        <node concept="19Rifw" id="3T2UJ1qv7W7" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S8j" role="2RW2fA">
+        <property role="TrG5h" value="atm_withdraw" />
+        <node concept="3XIRFW" id="7UiQjZi_S8k" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxzJt" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S8m" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S82" resolve="atm" />
+          <ref role="1ZwxE2" node="7UiQjZi_RZE" resolve="withdraw" />
+        </node>
+        <node concept="19Rifw" id="3T2UJ1qv7Wd" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S8o" role="2RW2fA">
+        <property role="TrG5h" value="atm_deposit" />
+        <node concept="3XIRFW" id="7UiQjZi_S8p" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxzJF" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S8r" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S82" resolve="atm" />
+          <ref role="1ZwxE2" node="7UiQjZi_RZJ" resolve="deposit" />
+        </node>
+        <node concept="19Rifw" id="3T2UJ1qv7W9" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S8t" role="2RW2fA">
+        <property role="TrG5h" value="atm_endOperation" />
+        <node concept="3XIRFW" id="7UiQjZi_S8u" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxzJT" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S8w" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S82" resolve="atm" />
+          <ref role="1ZwxE2" node="7UiQjZi_RZO" resolve="endOperation" />
+        </node>
+        <node concept="19Rifw" id="3T2UJ1qv7Wb" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S8y" role="2RW2fA">
+        <property role="TrG5h" value="car_engineOn" />
+        <node concept="3XIRFW" id="7UiQjZi_S8z" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxzK7" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S8_" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S83" resolve="car" />
+          <ref role="1ZwxE2" node="7UiQjZi_S1n" resolve="engineOn" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_S8A" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S8B" role="2RW2fA">
+        <property role="TrG5h" value="car_drive" />
+        <node concept="3XIRFW" id="7UiQjZi_S8C" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxzKl" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S8E" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S83" resolve="car" />
+          <ref role="1ZwxE2" node="7UiQjZi_S1s" resolve="drive" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_S8F" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S8G" role="2RW2fA">
+        <property role="TrG5h" value="car_stop" />
+        <node concept="3XIRFW" id="7UiQjZi_S8H" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxzKz" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S8J" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S83" resolve="car" />
+          <ref role="1ZwxE2" node="7UiQjZi_S1x" resolve="stop" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_S8K" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S8L" role="2RW2fA">
+        <property role="TrG5h" value="car_reverse" />
+        <node concept="3XIRFW" id="7UiQjZi_S8M" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxzKL" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S8O" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S83" resolve="car" />
+          <ref role="1ZwxE2" node="7UiQjZi_S1D" resolve="reverse" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_S8P" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_S8Q" role="2RW2fA">
+        <property role="TrG5h" value="car_engineOff" />
+        <node concept="3XIRFW" id="7UiQjZi_S8R" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjxzKZ" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_S8T" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_S83" resolve="car" />
+          <ref role="1ZwxE2" node="7UiQjZi_S1I" resolve="engineOff" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_S8U" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1cekJe" id="3_HSwtcJNFY" role="lGtFl">
+        <property role="1cekJb" value="10" />
+        <property role="1cekJ9" value="1000" />
+        <ref role="1cekJ8" node="7UiQjZi_S5F" resolve="multiProviderTestFail" />
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="9120591063517987618" nodeInfo="ng">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="AStream" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="9120591063517987619" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="stream" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="9120591063517987602" resolveInfo="Stream" />
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="9120591063517987620" nodeInfo="ng" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987621" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="stream_open" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987622" nodeInfo="ng" />
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987623" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987603" resolveInfo="open" />
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987619" resolveInfo="stream" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987624" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987625" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="stream_read" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987626" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="9120591063517987627" nodeInfo="ng">
-            <node role="expression" roleId="x27k.8967919205527146150" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="9120591063517987628" nodeInfo="ng" />
-          </node>
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987629" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987608" resolveInfo="read" />
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987619" resolveInfo="stream" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="yq40.StringType" typeId="yq40.6113173064528067332" id="9120591063517987630" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987631" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="stream_close" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987632" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9120591063517987633" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987634" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987613" resolveInfo="close" />
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987619" resolveInfo="stream" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987635" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
+    <node concept="2NXPZ9" id="3_HSwtcJNz0" role="N3F5h">
+      <property role="TrG5h" value="empty_1399756916191_11" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517987636" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1355481659505_12" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="9120591063517987637" nodeInfo="ng">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="OpenAfterCloseStream" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="9120591063517987638" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="stream" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="9120591063517987602" resolveInfo="Stream" />
+    <node concept="2EWCtd" id="3_HSwtcJQg0" role="N3F5h">
+      <property role="TrG5h" value="MultiproviderInstances" />
+      <property role="2OOxQR" value="true" />
+      <node concept="2EWCuV" id="3_HSwtcJQgd" role="5JtDH">
+        <property role="TrG5h" value="multiProvider" />
+        <ref role="2EWCuU" node="7UiQjZi_S81" resolve="multiProvider" />
       </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="9120591063517987639" nodeInfo="ng" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987640" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="stream_open" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987641" nodeInfo="ng" />
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987642" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987603" resolveInfo="open" />
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987638" resolveInfo="stream" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987643" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <node concept="21gPQu" id="3_HSwtcJQge" role="5JtDH">
+        <property role="TrG5h" value="multiProviderCar" />
+        <node concept="219P8x" id="3_HSwtcJQgf" role="21ad3a">
+          <ref role="219P8w" node="3_HSwtcJQgd" resolve="multiProvider" />
+          <ref role="219P8J" node="7UiQjZi_S83" resolve="car" />
         </node>
       </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987644" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="stream_read" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987645" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="9120591063517987646" nodeInfo="ng">
-            <node role="expression" roleId="x27k.8967919205527146150" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="9120591063517987647" nodeInfo="ng" />
-          </node>
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987648" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987608" resolveInfo="read" />
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987638" resolveInfo="stream" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="yq40.StringType" typeId="yq40.6113173064528067332" id="9120591063517987649" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987650" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="stream_close" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987651" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9120591063517987652" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987653" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987613" resolveInfo="close" />
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987638" resolveInfo="stream" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987654" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517987655" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1355482501397_18" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="9120591063517987656" nodeInfo="ng">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="FailDueToCloseTwiceStream" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.ProvidedPort" typeId="v7ag.4491876417845628840" id="9120591063517987657" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="stream" />
-        <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="9120591063517987602" resolveInfo="Stream" />
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.EmptyComponentContent" typeId="v7ag.8515777736166878876" id="9120591063517987658" nodeInfo="ng" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987659" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="stream_open" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987660" nodeInfo="ng" />
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987661" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987603" resolveInfo="open" />
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987657" resolveInfo="stream" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987662" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987663" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="stream_read" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987664" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="9120591063517987665" nodeInfo="ng">
-            <node role="expression" roleId="x27k.8967919205527146150" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="9120591063517987666" nodeInfo="ng" />
-          </node>
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987667" nodeInfo="ng">
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987657" resolveInfo="stream" />
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987608" resolveInfo="read" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="yq40.StringType" typeId="yq40.6113173064528067332" id="9120591063517987668" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-        </node>
-      </node>
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.Runnable" typeId="v7ag.4491876417845641670" id="9120591063517987669" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="stream_close" />
-        <node role="body" roleId="v7ag.4491876417845689763" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="9120591063517987670" nodeInfo="ng">
-          <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="9120591063517987671" nodeInfo="ng" />
-        </node>
-        <node role="trigger" roleId="v7ag.4491876417845643892" type="v7ag.OperationTrigger" typeId="v7ag.4491876417845641677" id="9120591063517987672" nodeInfo="ng">
-          <link role="calledOperation" roleId="v7ag.4514118643321619583" targetNodeId="9120591063517987613" resolveInfo="close" />
-          <link role="providedPort" roleId="v7ag.4514118643321592184" targetNodeId="9120591063517987657" resolveInfo="stream" />
-        </node>
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="9120591063517987673" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <node concept="21gPQu" id="3_HSwtcJQgg" role="5JtDH">
+        <property role="TrG5h" value="multiProivderAtm" />
+        <node concept="219P8x" id="3_HSwtcJQgh" role="21ad3a">
+          <ref role="219P8w" node="3_HSwtcJQgd" resolve="multiProvider" />
+          <ref role="219P8J" node="7UiQjZi_S82" resolve="atm" />
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="9120591063517987674" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1355485783676_21" />
+    <node concept="2NXPZ9" id="3_HSwtcJQcH" role="N3F5h">
+      <property role="TrG5h" value="empty_1399757032193_13" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="k146.MessageDefinitionTable" typeId="k146.2688792604367903085" id="9120591063517987675" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Messages" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="messages" roleId="k146.2688792604367903095" type="k146.MessageDefinition" typeId="k146.2688792604367903087" id="9120591063517987676" nodeInfo="ng">
-        <property name="active" nameId="k146.2688792604367947988" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="protocolFails" />
-        <property name="text" nameId="k146.2688792604367903089" value="Protocol fails" />
-        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="9120591063517987677" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="id1" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="9120591063517987678" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+    <node concept="N3Fnx" id="7UiQjZi_S5F" role="N3F5h">
+      <property role="TrG5h" value="multiProviderTestFail" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="7UiQjZi_S5G" role="3XIRFX">
+        <node concept="1_9egQ" id="7UiQjZi_S5H" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S5I" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_RZr" resolve="startOperation" />
+            <node concept="2H6Wec" id="3_HSwtcJQjO" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJQgg" resolve="multiProivderAtm" />
+            </node>
           </node>
         </node>
-        <node role="properties" roleId="k146.767515563077204474" type="k146.MessageProperty" typeId="k146.767515563077204464" id="9120591063517987679" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="id2" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="9120591063517987680" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        <node concept="1_9egQ" id="7UiQjZi_S5K" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S5L" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S1n" resolve="engineOn" />
+            <node concept="2H6Wec" id="3_HSwtcJQkl" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJQge" resolve="multiProviderCar" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S5N" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S5O" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_RZO" resolve="endOperation" />
+            <node concept="2H6Wec" id="3_HSwtcJQkQ" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJQgg" resolve="multiProivderAtm" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="7UiQjZi_S5Q" role="3XIRFZ" />
+        <node concept="1_9egQ" id="7UiQjZi_S5R" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S5S" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S1x" resolve="stop" />
+            <node concept="2H6Wec" id="3_HSwtcJQln" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJQge" resolve="multiProviderCar" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="7UiQjZi_S5U" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3_HSwtcJN$R" role="N3F5h">
+      <property role="TrG5h" value="empty_1399756916630_12" />
+    </node>
+    <node concept="3GEVxB" id="19LfhoY0f2D" role="2OODSX">
+      <property role="3GEa6x" value="true" />
+      <ref role="3GEb4d" node="7UiQjZi_RZo" resolve="ATM" />
+    </node>
+    <node concept="3GEVxB" id="19LfhoY0f2C" role="2OODSX">
+      <property role="3GEa6x" value="true" />
+      <ref role="3GEb4d" node="7UiQjZi_S1k" resolve="Car" />
+    </node>
+  </node>
+  <node concept="N3F5e" id="7UiQjZi_S8X">
+    <property role="TrG5h" value="MultiUserSystem" />
+    <node concept="2NXPZ9" id="7UiQjZi_S8Y" role="N3F5h">
+      <property role="TrG5h" value="empty_1353068231675_1" />
+    </node>
+    <node concept="2EX0iR" id="7UiQjZi_S8Z" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="ACLInterface" />
+      <ref role="3Z3Pd3" node="7UiQjZi_Sca" resolve="Messages" />
+      <ref role="3Z3Pdc" node="7UiQjZi_Scb" resolve="protocolFails" />
+      <node concept="2EX0iL" id="7UiQjZi_S90" role="2EX0iN">
+        <property role="TrG5h" value="startOperation" />
+        <node concept="19Rifw" id="7UiQjZi_S91" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S92" role="3Z21jN">
+          <node concept="3Z21gl" id="7UiQjZi_S93" role="3Z21go" />
+          <node concept="3Z21gz" id="7UiQjZi_S94" role="3Z21gp">
+            <property role="TrG5h" value="LoggedOut" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EX0iL" id="7UiQjZi_S95" role="2EX0iN">
+        <property role="TrG5h" value="loginUser" />
+        <node concept="19Rifw" id="7UiQjZi_S96" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S97" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_S98" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S94" resolve="LoggedOut" />
+          </node>
+          <node concept="3Z21gz" id="7UiQjZi_S99" role="3Z21gp">
+            <property role="TrG5h" value="LoggedInUser" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EX0iL" id="7UiQjZi_S9a" role="2EX0iN">
+        <property role="TrG5h" value="loginAdmin" />
+        <node concept="19Rifw" id="7UiQjZi_S9b" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S9c" role="3Z21jN">
+          <node concept="3Z21gz" id="7UiQjZi_S9d" role="3Z21gp">
+            <property role="TrG5h" value="LoggedInAdmin" />
+          </node>
+          <node concept="3Z21g8" id="7UiQjZi_S9e" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S94" resolve="LoggedOut" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EX0iL" id="7UiQjZi_S9f" role="2EX0iN">
+        <property role="TrG5h" value="loginRoot" />
+        <node concept="19Rifw" id="7UiQjZi_S9g" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S9h" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_S9i" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S94" resolve="LoggedOut" />
+          </node>
+          <node concept="3Z21gz" id="7UiQjZi_S9j" role="3Z21gp">
+            <property role="TrG5h" value="LoggedInRoot" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EX0iL" id="7UiQjZi_S9k" role="2EX0iN">
+        <property role="TrG5h" value="read" />
+        <node concept="19Rifw" id="7UiQjZi_S9l" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S9m" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_S9n" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S99" resolve="LoggedInUser" />
+          </node>
+          <node concept="3Z21g8" id="7UiQjZi_S9o" role="3Z21gp">
+            <ref role="3Z21g9" node="7UiQjZi_S99" resolve="LoggedInUser" />
+          </node>
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S9p" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_S9q" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S9d" resolve="LoggedInAdmin" />
+          </node>
+          <node concept="3Z21g8" id="7UiQjZi_S9r" role="3Z21gp">
+            <ref role="3Z21g9" node="7UiQjZi_S9d" resolve="LoggedInAdmin" />
+          </node>
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S9s" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_S9t" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S9j" resolve="LoggedInRoot" />
+          </node>
+          <node concept="3Z21g8" id="7UiQjZi_S9u" role="3Z21gp">
+            <ref role="3Z21g9" node="7UiQjZi_S9j" resolve="LoggedInRoot" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EX0iL" id="7UiQjZi_S9v" role="2EX0iN">
+        <property role="TrG5h" value="write" />
+        <node concept="19Rifw" id="7UiQjZi_S9w" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S9x" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_S9y" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S9d" resolve="LoggedInAdmin" />
+          </node>
+          <node concept="3Z21g8" id="7UiQjZi_S9z" role="3Z21gp">
+            <ref role="3Z21g9" node="7UiQjZi_S9d" resolve="LoggedInAdmin" />
+          </node>
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S9$" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_S9_" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S9j" resolve="LoggedInRoot" />
+          </node>
+          <node concept="3Z21g8" id="7UiQjZi_S9A" role="3Z21gp">
+            <ref role="3Z21g9" node="7UiQjZi_S9j" resolve="LoggedInRoot" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EX0iL" id="7UiQjZi_S9B" role="2EX0iN">
+        <property role="TrG5h" value="changeRights" />
+        <node concept="19Rifw" id="7UiQjZi_S9C" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S9D" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_S9E" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S9j" resolve="LoggedInRoot" />
+          </node>
+          <node concept="3Z21g8" id="7UiQjZi_S9F" role="3Z21gp">
+            <ref role="3Z21g9" node="7UiQjZi_S9j" resolve="LoggedInRoot" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EX0iL" id="7UiQjZi_S9G" role="2EX0iN">
+        <property role="TrG5h" value="createProfile" />
+        <node concept="19Rifw" id="7UiQjZi_S9H" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S9I" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_S9J" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S99" resolve="LoggedInUser" />
+          </node>
+          <node concept="3Z21g8" id="7UiQjZi_S9K" role="3Z21gp">
+            <ref role="3Z21g9" node="7UiQjZi_S99" resolve="LoggedInUser" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EX0iL" id="7UiQjZi_S9L" role="2EX0iN">
+        <property role="TrG5h" value="suAdmin" />
+        <node concept="19Rifw" id="7UiQjZi_S9M" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S9N" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_S9O" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S99" resolve="LoggedInUser" />
+          </node>
+          <node concept="3Z21g8" id="7UiQjZi_S9P" role="3Z21gp">
+            <ref role="3Z21g9" node="7UiQjZi_S9d" resolve="LoggedInAdmin" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EX0iL" id="7UiQjZi_S9Q" role="2EX0iN">
+        <property role="TrG5h" value="administrate" />
+        <node concept="19Rifw" id="7UiQjZi_S9R" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S9S" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_S9T" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S9d" resolve="LoggedInAdmin" />
+          </node>
+          <node concept="3Z21g8" id="7UiQjZi_S9U" role="3Z21gp">
+            <ref role="3Z21g9" node="7UiQjZi_S9d" resolve="LoggedInAdmin" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EX0iL" id="7UiQjZi_S9V" role="2EX0iN">
+        <property role="TrG5h" value="logout" />
+        <node concept="19Rifw" id="7UiQjZi_S9W" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_S9X" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_S9Y" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S9d" resolve="LoggedInAdmin" />
+          </node>
+          <node concept="3Z21g8" id="7UiQjZi_S9Z" role="3Z21gp">
+            <ref role="3Z21g9" node="7UiQjZi_S94" resolve="LoggedOut" />
+          </node>
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_Sa0" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_Sa1" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S9j" resolve="LoggedInRoot" />
+          </node>
+          <node concept="3Z21g8" id="7UiQjZi_Sa2" role="3Z21gp">
+            <ref role="3Z21g9" node="7UiQjZi_S94" resolve="LoggedOut" />
+          </node>
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_Sa3" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_Sa4" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S99" resolve="LoggedInUser" />
+          </node>
+          <node concept="3Z21g8" id="7UiQjZi_Sa5" role="3Z21gp">
+            <ref role="3Z21g9" node="7UiQjZi_S94" resolve="LoggedOut" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EX0iL" id="7UiQjZi_Sa6" role="2EX0iN">
+        <property role="TrG5h" value="exit" />
+        <node concept="19Rifw" id="7UiQjZi_Sa7" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_Sa8" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_Sa9" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_S94" resolve="LoggedOut" />
+          </node>
+          <node concept="3Z21gl" id="7UiQjZi_Saa" role="3Z21gp" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7UiQjZi_Sab" role="N3F5h">
+      <property role="TrG5h" value="empty_1353586420795_5" />
+    </node>
+    <node concept="2EWCuY" id="7UiQjZi_Sac" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="MultiUserSystemPass" />
+      <node concept="2EWHp_" id="7UiQjZi_Sad" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem" />
+        <ref role="2EX0h9" node="7UiQjZi_S8Z" resolve="ACLInterface" />
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_Sae" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_startOperation" />
+        <node concept="3XIRFW" id="7UiQjZi_Saf" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx5NB" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_Sah" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sad" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S90" resolve="startOperation" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_Sai" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_Saj" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_loginUser" />
+        <node concept="3XIRFW" id="7UiQjZi_Sak" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx7TS" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_Sam" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sad" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S95" resolve="loginUser" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_San" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_Sao" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_loginAdmin" />
+        <node concept="3XIRFW" id="7UiQjZi_Sap" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx7Uw" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_Sar" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sad" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S9a" resolve="loginAdmin" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_Sas" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_Sat" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_loginRoot" />
+        <node concept="3XIRFW" id="7UiQjZi_Sau" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx7V8" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_Saw" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sad" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S9f" resolve="loginRoot" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_Sax" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_Say" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_read" />
+        <node concept="3XIRFW" id="7UiQjZi_Saz" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx7VK" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_Sa_" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sad" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S9k" resolve="read" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_SaA" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_SaB" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_write" />
+        <node concept="3XIRFW" id="7UiQjZi_SaC" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx7Wo" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_SaE" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sad" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S9v" resolve="write" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_SaF" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_SaG" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_changeRights" />
+        <node concept="3XIRFW" id="7UiQjZi_SaH" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx7X0" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_SaJ" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sad" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S9B" resolve="changeRights" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_SaK" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_SaL" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_createProfile" />
+        <node concept="3XIRFW" id="7UiQjZi_SaM" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx7XC" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_SaO" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sad" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S9G" resolve="createProfile" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_SaP" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_SaQ" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_suAdmin" />
+        <node concept="3XIRFW" id="7UiQjZi_SaR" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx7Yg" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_SaT" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sad" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S9L" resolve="suAdmin" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_SaU" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_SaV" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_logout" />
+        <node concept="3XIRFW" id="7UiQjZi_SaW" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx7YS" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_SaY" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sad" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S9V" resolve="logout" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_SaZ" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_Sb0" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_exit" />
+        <node concept="3XIRFW" id="7UiQjZi_Sb1" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx7Zw" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_Sb3" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sad" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_Sa6" resolve="exit" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_Sb4" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_Sb5" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_administrate" />
+        <node concept="3XIRFW" id="7UiQjZi_Sb6" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx808" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_Sb8" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sad" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S9Q" resolve="administrate" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_Sb9" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1cekJe" id="3_HSwtcJMsy" role="lGtFl">
+        <property role="1cekJb" value="10" />
+        <property role="1cekJ9" value="1000" />
+        <ref role="1cekJ8" node="7UiQjZi_S5W" resolve="multiUserSystemPassTest" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3_HSwtcJMiG" role="N3F5h">
+      <property role="TrG5h" value="empty_1399756774388_10" />
+    </node>
+    <node concept="2EWCuY" id="7UiQjZi_Sba" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="MultiUserSystemFail" />
+      <node concept="2EWHp_" id="7UiQjZi_Sbb" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem" />
+        <ref role="2EX0h9" node="7UiQjZi_S8Z" resolve="ACLInterface" />
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_Sbc" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_startOperation" />
+        <node concept="3XIRFW" id="7UiQjZi_Sbd" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx80K" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_Sbf" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sbb" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S90" resolve="startOperation" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_Sbg" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_Sbh" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_loginUser" />
+        <node concept="3XIRFW" id="7UiQjZi_Sbi" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx81o" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_Sbk" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sbb" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S95" resolve="loginUser" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_Sbl" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_Sbm" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_loginAdmin" />
+        <node concept="3XIRFW" id="7UiQjZi_Sbn" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx820" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_Sbp" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sbb" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S9a" resolve="loginAdmin" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_Sbq" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_Sbr" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_loginRoot" />
+        <node concept="3XIRFW" id="7UiQjZi_Sbs" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx86o" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_Sbu" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sbb" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S9f" resolve="loginRoot" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_Sbv" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_Sbw" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_read" />
+        <node concept="3XIRFW" id="7UiQjZi_Sbx" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx85K" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_Sbz" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sbb" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S9k" resolve="read" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_Sb$" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_Sb_" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_write" />
+        <node concept="3XIRFW" id="7UiQjZi_SbA" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx858" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_SbC" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sbb" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S9v" resolve="write" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_SbD" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_SbE" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_changeRights" />
+        <node concept="3XIRFW" id="7UiQjZi_SbF" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx84w" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_SbH" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sbb" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S9B" resolve="changeRights" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_SbI" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_SbJ" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_createProfile" />
+        <node concept="3XIRFW" id="7UiQjZi_SbK" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx83S" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_SbM" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sbb" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S9G" resolve="createProfile" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_SbN" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_SbO" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_suAdmin" />
+        <node concept="3XIRFW" id="7UiQjZi_SbP" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx83g" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_SbR" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sbb" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S9L" resolve="suAdmin" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_SbS" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_SbT" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_logout" />
+        <node concept="3XIRFW" id="7UiQjZi_SbU" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx82C" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_SbW" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sbb" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S9V" resolve="logout" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_SbX" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_SbY" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_exit" />
+        <node concept="3XIRFW" id="7UiQjZi_SbZ" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx87C" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_Sc1" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sbb" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_Sa6" resolve="exit" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_Sc2" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_Sc3" role="2RW2fA">
+        <property role="TrG5h" value="multiUserSystem_administrate" />
+        <node concept="3XIRFW" id="7UiQjZi_Sc4" role="2EWMhI">
+          <node concept="2BFjQ_" id="2tzgwZjx870" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_Sc6" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sbb" resolve="multiUserSystem" />
+          <ref role="1ZwxE2" node="7UiQjZi_S9Q" resolve="administrate" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_Sc7" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1cekJe" id="3_HSwtcJMsp" role="lGtFl">
+        <property role="1cekJb" value="10" />
+        <property role="1cekJ9" value="1000" />
+        <ref role="1cekJ8" node="7UiQjZi_S6x" resolve="multiUserSystemFailTest" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7UiQjZi_Sc8" role="N3F5h">
+      <property role="TrG5h" value="empty_1354282004422_2" />
+    </node>
+    <node concept="2EWCtd" id="3_HSwtcJLqc" role="N3F5h">
+      <property role="TrG5h" value="MultiUserInstances" />
+      <property role="2OOxQR" value="true" />
+      <node concept="2EWCuV" id="3_HSwtcJLqB" role="5JtDH">
+        <property role="TrG5h" value="musPass" />
+        <ref role="2EWCuU" node="7UiQjZi_Sac" resolve="MultiUserSystemPass" />
+      </node>
+      <node concept="21gPQu" id="3_HSwtcJLqC" role="5JtDH">
+        <property role="TrG5h" value="multiUserSystemPass" />
+        <node concept="219P8x" id="3_HSwtcJLqD" role="21ad3a">
+          <ref role="219P8w" node="3_HSwtcJLqB" resolve="musPass" />
+          <ref role="219P8J" node="7UiQjZi_Sad" resolve="multiUserSystem" />
+        </node>
+      </node>
+      <node concept="JAGxh" id="3_HSwtcJLqE" role="5JtDH" />
+      <node concept="2EWCuV" id="3_HSwtcJLqF" role="5JtDH">
+        <property role="TrG5h" value="musFail" />
+        <ref role="2EWCuU" node="7UiQjZi_Sba" resolve="MultiUserSystemFail" />
+      </node>
+      <node concept="21gPQu" id="3_HSwtcJLqG" role="5JtDH">
+        <property role="TrG5h" value="multiUserSystemFail" />
+        <node concept="219P8x" id="3_HSwtcJLqH" role="21ad3a">
+          <ref role="219P8w" node="3_HSwtcJLqF" resolve="musFail" />
+          <ref role="219P8J" node="7UiQjZi_Sbb" resolve="multiUserSystem" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7UiQjZi_S5V" role="N3F5h">
+      <property role="TrG5h" value="empty_1355506926583_18" />
+    </node>
+    <node concept="N3Fnx" id="7UiQjZi_S5W" role="N3F5h">
+      <property role="TrG5h" value="multiUserSystemPassTest" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="7UiQjZi_S5X" role="3XIRFX">
+        <node concept="3t9XKO" id="3_HSwtcJM1m" role="3XIRFZ">
+          <ref role="3t9XKR" node="3_HSwtcJLqc" resolve="MultiUserInstances" />
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S5Y" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S5Z" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S90" resolve="startOperation" />
+            <node concept="2H6Wec" id="3_HSwtcJLA6" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqC" resolve="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S61" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S62" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S95" resolve="loginUser" />
+            <node concept="2H6Wec" id="3_HSwtcJLAP" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqC" resolve="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S64" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S65" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9k" resolve="read" />
+            <node concept="2H6Wec" id="3_HSwtcJLB$" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqC" resolve="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S67" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S68" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9L" resolve="suAdmin" />
+            <node concept="2H6Wec" id="3_HSwtcJLCJ" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqC" resolve="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S6a" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S6b" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9v" resolve="write" />
+            <node concept="2H6Wec" id="3_HSwtcJLDG" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqC" resolve="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S6d" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S6e" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9k" resolve="read" />
+            <node concept="2H6Wec" id="3_HSwtcJLEr" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqC" resolve="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S6g" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S6h" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9V" resolve="logout" />
+            <node concept="2H6Wec" id="3_HSwtcJLFA" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqC" resolve="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S6j" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S6k" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9f" resolve="loginRoot" />
+            <node concept="2H6Wec" id="3_HSwtcJLGZ" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqC" resolve="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S6m" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S6n" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9B" resolve="changeRights" />
+            <node concept="2H6Wec" id="3_HSwtcJLHW" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqC" resolve="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S6p" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S6q" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9V" resolve="logout" />
+            <node concept="2H6Wec" id="3_HSwtcJLIF" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqC" resolve="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S6s" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S6t" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_Sa6" resolve="exit" />
+            <node concept="2H6Wec" id="3_HSwtcJLK4" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqC" resolve="multiUserSystemPass" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="7UiQjZi_S6v" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7UiQjZi_S6w" role="N3F5h">
+      <property role="TrG5h" value="empty_1355507209457_20" />
+    </node>
+    <node concept="N3Fnx" id="7UiQjZi_S6x" role="N3F5h">
+      <property role="TrG5h" value="multiUserSystemFailTest" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="7UiQjZi_S6y" role="3XIRFX">
+        <node concept="3t9XKO" id="3_HSwtcJM3Z" role="3XIRFZ">
+          <ref role="3t9XKR" node="3_HSwtcJLqc" resolve="MultiUserInstances" />
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S6z" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S6$" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S90" resolve="startOperation" />
+            <node concept="2H6Wec" id="3_HSwtcJLKN" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqG" resolve="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S6A" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S6B" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S95" resolve="loginUser" />
+            <node concept="2H6Wec" id="3_HSwtcJLLy" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqG" resolve="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S6D" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S6E" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9k" resolve="read" />
+            <node concept="2H6Wec" id="3_HSwtcJLMh" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqG" resolve="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S6G" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S6H" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9L" resolve="suAdmin" />
+            <node concept="2H6Wec" id="3_HSwtcJLNs" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqG" resolve="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S6J" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S6K" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9v" resolve="write" />
+            <node concept="2H6Wec" id="3_HSwtcJLOp" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqG" resolve="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S6M" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S6N" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9G" resolve="createProfile" />
+            <node concept="2H6Wec" id="3_HSwtcJLP8" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqG" resolve="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S6P" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S6Q" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9k" resolve="read" />
+            <node concept="2H6Wec" id="3_HSwtcJLPD" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqG" resolve="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S6S" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S6T" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9V" resolve="logout" />
+            <node concept="2H6Wec" id="3_HSwtcJLQO" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqG" resolve="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S6V" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S6W" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9f" resolve="loginRoot" />
+            <node concept="2H6Wec" id="3_HSwtcJLSd" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqG" resolve="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S6Y" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S6Z" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9B" resolve="changeRights" />
+            <node concept="2H6Wec" id="3_HSwtcJLTa" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqG" resolve="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S71" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S72" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9V" resolve="logout" />
+            <node concept="2H6Wec" id="3_HSwtcJLTT" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqG" resolve="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S74" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S75" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9f" resolve="loginRoot" />
+            <node concept="2H6Wec" id="3_HSwtcJLVi" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqG" resolve="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S77" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S78" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9L" resolve="suAdmin" />
+            <node concept="2H6Wec" id="3_HSwtcJLWf" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqG" resolve="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S7a" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S7b" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9Q" resolve="administrate" />
+            <node concept="2H6Wec" id="3_HSwtcJLXc" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqG" resolve="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S7d" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S7e" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_S9V" resolve="logout" />
+            <node concept="2H6Wec" id="3_HSwtcJLXH" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqG" resolve="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="7UiQjZi_S7g" role="3XIRFZ">
+          <node concept="30IJZa" id="7UiQjZi_S7h" role="1_9egR">
+            <ref role="2H6Oet" node="7UiQjZi_Sa6" resolve="exit" />
+            <node concept="2H6Wec" id="3_HSwtcJLZ6" role="1_9fRO">
+              <ref role="2H6Wef" node="3_HSwtcJLqG" resolve="multiUserSystemFail" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="7UiQjZi_S7j" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7UiQjZi_Sc9" role="N3F5h">
+      <property role="TrG5h" value="empty_1353068234443_2" />
+    </node>
+    <node concept="2vmPJd" id="7UiQjZi_Sca" role="N3F5h">
+      <property role="TrG5h" value="Messages" />
+      <property role="2OOxQR" value="true" />
+      <node concept="2vmPJf" id="7UiQjZi_Scb" role="2vmPJn">
+        <property role="2vn0DO" value="true" />
+        <property role="TrG5h" value="protocolFails" />
+        <property role="2vmPJh" value="Protocol fails" />
+        <node concept="2qqzEA" id="7UiQjZi_Scc" role="2qqzEG">
+          <property role="TrG5h" value="id1" />
+          <node concept="26Vqqz" id="7UiQjZi_Scd" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="2qqzEA" id="7UiQjZi_Sce" role="2qqzEG">
+          <property role="TrG5h" value="id2" />
+          <node concept="26Vqqz" id="7UiQjZi_Scf" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
           </node>
         </node>
       </node>
     </node>
-  </root>
-  <root type="q46j.ModelUsedForAnalysesTestsMarker" typeId="q46j.1246687699869804428" id="1246687699870346164" nodeInfo="ng" />
+  </node>
+  <node concept="N3F5e" id="7UiQjZi_Scg">
+    <property role="TrG5h" value="Stream" />
+    <node concept="2NXPZ9" id="7UiQjZi_Sch" role="N3F5h">
+      <property role="TrG5h" value="empty_1353068231675_1" />
+    </node>
+    <node concept="2EX0iR" id="7UiQjZi_Sci" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="Stream" />
+      <ref role="3Z3Pd3" node="7UiQjZi_Sdr" resolve="Messages" />
+      <ref role="3Z3Pdc" node="7UiQjZi_Sds" resolve="protocolFails" />
+      <node concept="2EX0iL" id="7UiQjZi_Scj" role="2EX0iN">
+        <property role="TrG5h" value="open" />
+        <node concept="19Rifw" id="7UiQjZi_Sck" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_Scl" role="3Z21jN">
+          <node concept="3Z21gl" id="7UiQjZi_Scm" role="3Z21go" />
+          <node concept="3Z21gz" id="7UiQjZi_Scn" role="3Z21gp">
+            <property role="TrG5h" value="Opened" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EX0iL" id="7UiQjZi_Sco" role="2EX0iN">
+        <property role="TrG5h" value="read" />
+        <node concept="Pu267" id="7UiQjZi_Scp" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_Scq" role="3Z21jN">
+          <node concept="3Z21g8" id="7UiQjZi_Scr" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_Scn" resolve="Opened" />
+          </node>
+          <node concept="3Z21g8" id="7UiQjZi_Scs" role="3Z21gp">
+            <ref role="3Z21g9" node="7UiQjZi_Scn" resolve="Opened" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EX0iL" id="7UiQjZi_Sct" role="2EX0iN">
+        <property role="TrG5h" value="close" />
+        <node concept="19Rifw" id="7UiQjZi_Scu" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3Z21gw" id="7UiQjZi_Scv" role="3Z21jN">
+          <node concept="3Z21gz" id="7UiQjZi_Scw" role="3Z21gp">
+            <property role="TrG5h" value="Closed" />
+          </node>
+          <node concept="3Z21g8" id="7UiQjZi_Scx" role="3Z21go">
+            <ref role="3Z21g9" node="7UiQjZi_Scn" resolve="Opened" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2EWCuY" id="7UiQjZi_Scy" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="AStream" />
+      <node concept="2EWHp_" id="7UiQjZi_Scz" role="2RW2fA">
+        <property role="TrG5h" value="stream" />
+        <ref role="2EX0h9" node="7UiQjZi_Sci" resolve="Stream" />
+      </node>
+      <node concept="3Khz0B" id="7UiQjZi_Sc$" role="2RW2fA" />
+      <node concept="2EWDwb" id="7UiQjZi_Sc_" role="2RW2fA">
+        <property role="TrG5h" value="stream_open" />
+        <node concept="3XIRFW" id="7UiQjZi_ScA" role="2EWMhI" />
+        <node concept="2EWDw0" id="7UiQjZi_ScB" role="2EWDeT">
+          <ref role="1ZwxE2" node="7UiQjZi_Scj" resolve="open" />
+          <ref role="1ZwSu5" node="7UiQjZi_Scz" resolve="stream" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_ScC" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_ScD" role="2RW2fA">
+        <property role="TrG5h" value="stream_read" />
+        <node concept="3XIRFW" id="7UiQjZi_ScE" role="2EWMhI">
+          <node concept="2BFjQ_" id="7UiQjZi_ScF" role="3XIRFZ">
+            <node concept="PhEJO" id="7UiQjZi_ScG" role="2BFjQA" />
+          </node>
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_ScH" role="2EWDeT">
+          <ref role="1ZwxE2" node="7UiQjZi_Sco" resolve="read" />
+          <ref role="1ZwSu5" node="7UiQjZi_Scz" resolve="stream" />
+        </node>
+        <node concept="Pu267" id="7UiQjZi_ScI" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_ScJ" role="2RW2fA">
+        <property role="TrG5h" value="stream_close" />
+        <node concept="3XIRFW" id="7UiQjZi_ScK" role="2EWMhI">
+          <node concept="3XISUE" id="7UiQjZi_ScL" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_ScM" role="2EWDeT">
+          <ref role="1ZwxE2" node="7UiQjZi_Sct" resolve="close" />
+          <ref role="1ZwSu5" node="7UiQjZi_Scz" resolve="stream" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_ScN" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7UiQjZi_ScO" role="N3F5h">
+      <property role="TrG5h" value="empty_1355481659505_12" />
+    </node>
+    <node concept="2EWCuY" id="7UiQjZi_ScP" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="OpenAfterCloseStream" />
+      <node concept="2EWHp_" id="7UiQjZi_ScQ" role="2RW2fA">
+        <property role="TrG5h" value="stream" />
+        <ref role="2EX0h9" node="7UiQjZi_Sci" resolve="Stream" />
+      </node>
+      <node concept="3Khz0B" id="7UiQjZi_ScR" role="2RW2fA" />
+      <node concept="2EWDwb" id="7UiQjZi_ScS" role="2RW2fA">
+        <property role="TrG5h" value="stream_open" />
+        <node concept="3XIRFW" id="7UiQjZi_ScT" role="2EWMhI" />
+        <node concept="2EWDw0" id="7UiQjZi_ScU" role="2EWDeT">
+          <ref role="1ZwxE2" node="7UiQjZi_Scj" resolve="open" />
+          <ref role="1ZwSu5" node="7UiQjZi_ScQ" resolve="stream" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_ScV" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_ScW" role="2RW2fA">
+        <property role="TrG5h" value="stream_read" />
+        <node concept="3XIRFW" id="7UiQjZi_ScX" role="2EWMhI">
+          <node concept="2BFjQ_" id="7UiQjZi_ScY" role="3XIRFZ">
+            <node concept="PhEJO" id="7UiQjZi_ScZ" role="2BFjQA" />
+          </node>
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_Sd0" role="2EWDeT">
+          <ref role="1ZwxE2" node="7UiQjZi_Sco" resolve="read" />
+          <ref role="1ZwSu5" node="7UiQjZi_ScQ" resolve="stream" />
+        </node>
+        <node concept="Pu267" id="7UiQjZi_Sd1" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_Sd2" role="2RW2fA">
+        <property role="TrG5h" value="stream_close" />
+        <node concept="3XIRFW" id="7UiQjZi_Sd3" role="2EWMhI">
+          <node concept="3XISUE" id="7UiQjZi_Sd4" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_Sd5" role="2EWDeT">
+          <ref role="1ZwxE2" node="7UiQjZi_Sct" resolve="close" />
+          <ref role="1ZwSu5" node="7UiQjZi_ScQ" resolve="stream" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_Sd6" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7UiQjZi_Sd7" role="N3F5h">
+      <property role="TrG5h" value="empty_1355482501397_18" />
+    </node>
+    <node concept="2EWCuY" id="7UiQjZi_Sd8" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="FailDueToCloseTwiceStream" />
+      <node concept="2EWHp_" id="7UiQjZi_Sd9" role="2RW2fA">
+        <property role="TrG5h" value="stream" />
+        <ref role="2EX0h9" node="7UiQjZi_Sci" resolve="Stream" />
+      </node>
+      <node concept="3Khz0B" id="7UiQjZi_Sda" role="2RW2fA" />
+      <node concept="2EWDwb" id="7UiQjZi_Sdb" role="2RW2fA">
+        <property role="TrG5h" value="stream_open" />
+        <node concept="3XIRFW" id="7UiQjZi_Sdc" role="2EWMhI" />
+        <node concept="2EWDw0" id="7UiQjZi_Sdd" role="2EWDeT">
+          <ref role="1ZwxE2" node="7UiQjZi_Scj" resolve="open" />
+          <ref role="1ZwSu5" node="7UiQjZi_Sd9" resolve="stream" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_Sde" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_Sdf" role="2RW2fA">
+        <property role="TrG5h" value="stream_read" />
+        <node concept="3XIRFW" id="7UiQjZi_Sdg" role="2EWMhI">
+          <node concept="2BFjQ_" id="7UiQjZi_Sdh" role="3XIRFZ">
+            <node concept="PhEJO" id="7UiQjZi_Sdi" role="2BFjQA" />
+          </node>
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_Sdj" role="2EWDeT">
+          <ref role="1ZwSu5" node="7UiQjZi_Sd9" resolve="stream" />
+          <ref role="1ZwxE2" node="7UiQjZi_Sco" resolve="read" />
+        </node>
+        <node concept="Pu267" id="7UiQjZi_Sdk" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EWDwb" id="7UiQjZi_Sdl" role="2RW2fA">
+        <property role="TrG5h" value="stream_close" />
+        <node concept="3XIRFW" id="7UiQjZi_Sdm" role="2EWMhI">
+          <node concept="3XISUE" id="7UiQjZi_Sdn" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="7UiQjZi_Sdo" role="2EWDeT">
+          <ref role="1ZwxE2" node="7UiQjZi_Sct" resolve="close" />
+          <ref role="1ZwSu5" node="7UiQjZi_Sd9" resolve="stream" />
+        </node>
+        <node concept="19Rifw" id="7UiQjZi_Sdp" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7UiQjZi_Sdq" role="N3F5h">
+      <property role="TrG5h" value="empty_1355485783676_21" />
+    </node>
+    <node concept="2vmPJd" id="7UiQjZi_Sdr" role="N3F5h">
+      <property role="TrG5h" value="Messages" />
+      <property role="2OOxQR" value="true" />
+      <node concept="2vmPJf" id="7UiQjZi_Sds" role="2vmPJn">
+        <property role="2vn0DO" value="true" />
+        <property role="TrG5h" value="protocolFails" />
+        <property role="2vmPJh" value="Protocol fails" />
+        <node concept="2qqzEA" id="7UiQjZi_Sdt" role="2qqzEG">
+          <property role="TrG5h" value="id1" />
+          <node concept="26Vqqz" id="7UiQjZi_Sdu" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="2qqzEA" id="7UiQjZi_Sdv" role="2qqzEG">
+          <property role="TrG5h" value="id2" />
+          <node concept="26Vqqz" id="7UiQjZi_Sdw" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="29QVxn" id="15d7XIoBIIO" />
 </model>
 
