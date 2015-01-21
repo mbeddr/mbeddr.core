@@ -539,109 +539,6 @@
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="qlb5.UnitConfigItem" typeId="qlb5.5348704582971040037" id="8859928641209551031" nodeInfo="ng" />
   </root>
-  <root type="q46j.AnalysisConfiguration" typeId="q46j.6472990431939580591" id="9020927825194463376" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="DemoAnalysesConfigurations" />
-    <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.RobustnessCBMCAnalysis" typeId="hj5x.4053481679317021366" id="9020927825194463394" nodeInfo="ng">
-      <property name="useCbmc" value="true" />
-      <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="-1" />
-      <property name="showUnwindingDepthInfo" value="false" />
-      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="-1" />
-      <property name="hasSpecifiedTimeout" value="false" />
-      <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
-      <property name="timeoutForSingleAnalysis" nameId="q5q6.8327535879610783188" value="none" />
-      <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
-      <property name="check_array_bounds" nameId="hj5x.4053481679317021369" value="true" />
-      <property name="check_div_by_zero" nameId="hj5x.4053481679317021367" value="true" />
-      <property name="check_nan" nameId="hj5x.4053481679317021372" value="true" />
-      <property name="check_pointer" nameId="hj5x.4053481679317021368" value="true" />
-      <property name="check_signed_overflow" nameId="hj5x.4053481679317021370" value="true" />
-      <property name="check_unsigned_overflow" nameId="hj5x.4053481679317021371" value="true" />
-      <property name="check_memory_leak" nameId="hj5x.9020927825194549928" value="true" />
-      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="9020927825193932118" resolveInfo="computeAverage1" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2c95.NameAnnotation" typeId="2c95.4208238404719201400" id="4315280228448010635" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="aRobustnessCBMCAnalysis" />
-      </node>
-    </node>
-    <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.DecTabCBMCAnalysis" typeId="hj5x.4053481679317021364" id="4315280228447720594" nodeInfo="ng">
-      <property name="useCbmc" value="true" />
-      <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="-1" />
-      <property name="showUnwindingDepthInfo" value="false" />
-      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="-1" />
-      <property name="hasSpecifiedTimeout" value="false" />
-      <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
-      <property name="timeoutForSingleAnalysis" nameId="q5q6.8327535879610783188" value="none" />
-      <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
-      <link role="decTabContainer" roleId="hj5x.4053481679317021365" targetNodeId="4006179876939558560" resolveInfo="computeBreakingDistance" />
-      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="4315280228447792252" resolveInfo="controlLoop" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2c95.NameAnnotation" typeId="2c95.4208238404719201400" id="4315280228448009977" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="aDecTabCBMCAnalysis" />
-      </node>
-    </node>
-    <node role="analyses" roleId="q46j.6472990431939692464" type="lcpc.StatemachineCBMCAnalysis" typeId="lcpc.6085839724192268104" id="4315280228447811862" nodeInfo="ng">
-      <property name="useCbmc" value="true" />
-      <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="25" />
-      <property name="showUnwindingDepthInfo" value="true" />
-      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="-1" />
-      <property name="hasSpecifiedTimeout" value="false" />
-      <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
-      <property name="timeoutForSingleAnalysis" nameId="q5q6.8327535879610783188" value="none" />
-      <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
-      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="4315280228447818144" resolveInfo="stateMachineVerificationEntry" />
-      <link role="satemachine" roleId="lcpc.6085839724192268105" targetNodeId="4315280228447482279" resolveInfo="Counter" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2c95.NameAnnotation" typeId="2c95.4208238404719201400" id="4315280228448010632" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="aStatemachineCBMCAnalysis" />
-      </node>
-    </node>
-    <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.AssertionsCBMCAnalysis" typeId="hj5x.4053481679317021363" id="7590231220342212120" nodeInfo="ng">
-      <property name="useCbmc" value="true" />
-      <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="-1" />
-      <property name="showUnwindingDepthInfo" value="false" />
-      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="-1" />
-      <property name="hasSpecifiedTimeout" value="false" />
-      <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
-      <property name="timeoutForSingleAnalysis" nameId="q5q6.8327535879610783188" value="none" />
-      <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
-      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="7590231220342174523" resolveInfo="clientCode" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2c95.NameAnnotation" typeId="2c95.4208238404719201400" id="7590231220342213919" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="aAssertionsAnalysis" />
-      </node>
-    </node>
-    <node role="analyses" roleId="q46j.6472990431939692464" type="c4ml.ComponentsCBMCAnalysis" typeId="c4ml.807751914255908947" id="7590231220342750056" nodeInfo="ng">
-      <property name="useCbmc" value="true" />
-      <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="-1" />
-      <property name="showUnwindingDepthInfo" value="false" />
-      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="-1" />
-      <property name="hasSpecifiedTimeout" value="false" />
-      <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
-      <property name="timeoutForSingleAnalysis" nameId="q5q6.8327535879610783188" value="none" />
-      <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
-      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="2161187783549496759" resolveInfo="emitCurrentSpeed" />
-      <link role="analyzedComponent" roleId="c4ml.807751914255908948" targetNodeId="2161187783549496738" resolveInfo="PlauzibilizedSpeedComputer" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2c95.NameAnnotation" typeId="2c95.4208238404719201400" id="7590231220344597218" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="aComponentsCBMCAnalysis" />
-      </node>
-    </node>
-    <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="9020927825194463398" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="9020927825193820093" resolveInfo="RobustnessExamples" />
-    </node>
-    <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="4315280228447720616" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="4006179876939558559" resolveInfo="RobustnessExtensionsExamples" />
-    </node>
-    <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="4315280228447720628" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="4315280228447482213" resolveInfo="RobustnessStatemachinedExamples" />
-    </node>
-    <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7590231220342212145" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7590231220342169711" resolveInfo="Assertions" />
-    </node>
-    <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7590231220344598795" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="2161187783549496715" resolveInfo="ComponentsContracts" />
-    </node>
-  </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="4006179876939558559" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="RobustnessExtensionsExamples" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="4315280228442228183" nodeInfo="ng">
@@ -2514,6 +2411,105 @@
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5187744200052196165" nodeInfo="ng">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+  </root>
+  <root type="q5q6.CBMCAnalysisConfiguration" typeId="q5q6.2135612507694884868" id="3978189422528365849" nodeInfo="ng">
+    <property name="hasLocalCbmcSettings" nameId="q5q6.8327535879613056020" value="false" />
+    <property name="hasLocalTimeout" nameId="q5q6.8327535879610783118" value="false" />
+    <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
+    <property name="timeoutForSingleAnalysis" nameId="q5q6.8327535879610783188" value="none" />
+    <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="true" />
+    <property name="partialLoops" nameId="q5q6.8327535879610145463" value="false" />
+    <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="25" />
+    <property name="hasUnwindingDepth" nameId="q5q6.8327535879610145347" value="true" />
+    <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="none" />
+    <property name="useRefinement" nameId="q5q6.8327535879610145521" value="false" />
+    <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
+    <property name="name" nameId="tpck.1169194664001" value="DemoAnalysesConfigurations" />
+    <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="9020927825194463398" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="9020927825193820093" resolveInfo="RobustnessExamples" />
+    </node>
+    <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="4315280228447720616" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="4006179876939558559" resolveInfo="RobustnessExtensionsExamples" />
+    </node>
+    <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="4315280228447720628" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="4315280228447482213" resolveInfo="RobustnessStatemachinedExamples" />
+    </node>
+    <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7590231220342212145" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7590231220342169711" resolveInfo="Assertions" />
+    </node>
+    <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7590231220344598795" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="2161187783549496715" resolveInfo="ComponentsContracts" />
+    </node>
+    <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.RobustnessCBMCAnalysis" typeId="hj5x.4053481679317021366" id="9020927825194463394" nodeInfo="ng">
+      <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="-1" />
+      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="-1" />
+      <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
+      <property name="timeoutForSingleAnalysis" nameId="q5q6.8327535879610783188" value="none" />
+      <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
+      <property name="check_array_bounds" nameId="hj5x.4053481679317021369" value="true" />
+      <property name="check_div_by_zero" nameId="hj5x.4053481679317021367" value="true" />
+      <property name="check_nan" nameId="hj5x.4053481679317021372" value="true" />
+      <property name="check_pointer" nameId="hj5x.4053481679317021368" value="true" />
+      <property name="check_signed_overflow" nameId="hj5x.4053481679317021370" value="true" />
+      <property name="check_unsigned_overflow" nameId="hj5x.4053481679317021371" value="true" />
+      <property name="check_memory_leak" nameId="hj5x.9020927825194549928" value="true" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="9020927825193932118" resolveInfo="computeAverage1" />
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2c95.NameAnnotation" typeId="2c95.4208238404719201400" id="4315280228448010635" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="aRobustnessCBMCAnalysis" />
+      </node>
+    </node>
+    <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.DecTabCBMCAnalysis" typeId="hj5x.4053481679317021364" id="4315280228447720594" nodeInfo="ng">
+      <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="-1" />
+      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="-1" />
+      <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
+      <property name="timeoutForSingleAnalysis" nameId="q5q6.8327535879610783188" value="none" />
+      <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
+      <link role="decTabContainer" roleId="hj5x.4053481679317021365" targetNodeId="4006179876939558560" resolveInfo="computeBreakingDistance" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="4315280228447792252" resolveInfo="controlLoop" />
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2c95.NameAnnotation" typeId="2c95.4208238404719201400" id="4315280228448009977" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="aDecTabCBMCAnalysis" />
+      </node>
+    </node>
+    <node role="analyses" roleId="q46j.6472990431939692464" type="lcpc.StatemachineCBMCAnalysis" typeId="lcpc.6085839724192268104" id="4315280228447811862" nodeInfo="ng">
+      <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="25" />
+      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="-1" />
+      <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
+      <property name="timeoutForSingleAnalysis" nameId="q5q6.8327535879610783188" value="none" />
+      <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="4315280228447818144" resolveInfo="stateMachineVerificationEntry" />
+      <link role="satemachine" roleId="lcpc.6085839724192268105" targetNodeId="4315280228447482279" resolveInfo="Counter" />
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2c95.NameAnnotation" typeId="2c95.4208238404719201400" id="4315280228448010632" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="aStatemachineCBMCAnalysis" />
+      </node>
+    </node>
+    <node role="analyses" roleId="q46j.6472990431939692464" type="hj5x.AssertionsCBMCAnalysis" typeId="hj5x.4053481679317021363" id="7590231220342212120" nodeInfo="ng">
+      <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="-1" />
+      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="-1" />
+      <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
+      <property name="timeoutForSingleAnalysis" nameId="q5q6.8327535879610783188" value="none" />
+      <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="7590231220342174523" resolveInfo="clientCode" />
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2c95.NameAnnotation" typeId="2c95.4208238404719201400" id="7590231220342213919" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="aAssertionsAnalysis" />
+      </node>
+    </node>
+    <node role="analyses" roleId="q46j.6472990431939692464" type="c4ml.ComponentsCBMCAnalysis" typeId="c4ml.807751914255908947" id="7590231220342750056" nodeInfo="ng">
+      <property name="unwindingAssertions" nameId="q5q6.8327535879610145405" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.8327535879610142482" value="-1" />
+      <property name="analysisDepth" nameId="q5q6.8327535879610145579" value="-1" />
+      <property name="timeoutInSeconds" nameId="q5q6.8327535879610783176" value="none" />
+      <property name="timeoutForSingleAnalysis" nameId="q5q6.8327535879610783188" value="none" />
+      <property name="sliceFormula" nameId="q5q6.8327535879610783060" value="false" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="2161187783549496759" resolveInfo="emitCurrentSpeed" />
+      <link role="analyzedComponent" roleId="c4ml.807751914255908948" targetNodeId="2161187783549496738" resolveInfo="PlauzibilizedSpeedComputer" />
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="2c95.NameAnnotation" typeId="2c95.4208238404719201400" id="7590231220344597218" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="aComponentsCBMCAnalysis" />
       </node>
     </node>
   </root>

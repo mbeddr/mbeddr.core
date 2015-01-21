@@ -517,7 +517,6 @@
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="9141254329931944282" nodeInfo="ng">
       <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="9141254329931944283" nodeInfo="ng" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type=".com.mbeddr.ext.physicalunits.c.structure.PhysicalUnitsConfigItem" id="7308356872494809783" nodeInfo="ng" />
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="nbyu.RegisterConfigurationItem" typeId="nbyu.6847490852669234129" id="2894788280922751308" nodeInfo="ng">
       <node role="kind" roleId="nbyu.6847490852670616471" type="nbyu.EmulatedRegisterKind" typeId="nbyu.6847490852670653132" id="2894788280922767865" nodeInfo="ng" />
     </node>
