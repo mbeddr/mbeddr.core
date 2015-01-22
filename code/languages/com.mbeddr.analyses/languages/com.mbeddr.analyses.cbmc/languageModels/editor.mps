@@ -2088,7 +2088,7 @@
               <property role="3F0ifm" value="total timeout (seconds)" />
             </node>
             <node concept="3F0A7n" id="3x0R1LJfFfG" role="3EZMnx">
-              <ref role="1NtTu8" to="q5q6:1XFitunRfci" resolve="timeoutInSeconds" />
+              <ref role="1NtTu8" to="q5q6:7ehmsbAxln8" resolve="timeoutInSeconds" />
             </node>
             <node concept="2iRfu4" id="2cCHKvAKrNk" role="2iSdaV" />
           </node>
@@ -2100,7 +2100,7 @@
               <property role="3F0ifm" value="partial timeout (seconds)" />
             </node>
             <node concept="3F0A7n" id="56VLVOUmBR$" role="3EZMnx">
-              <ref role="1NtTu8" to="q5q6:56VLVOUlRNK" resolve="timeoutForSingleAnalysis" />
+              <ref role="1NtTu8" to="q5q6:7ehmsbAxlnk" resolve="timeoutForSingleAnalysis" />
             </node>
             <node concept="2iRfu4" id="56VLVOUmBR_" role="2iSdaV" />
           </node>
@@ -2114,8 +2114,8 @@
           <node concept="3clFbF" id="56VLVOUqDpG" role="3cqZAp">
             <node concept="2OqwBi" id="56VLVOUqDuf" role="3clFbG">
               <node concept="pncrf" id="56VLVOUqDpF" role="2Oq$k0" />
-              <node concept="3TrcHB" id="56VLVOUqDWw" role="2OqNvi">
-                <ref role="3TsBF5" to="q5q6:56VLVOUmC9T" resolve="hasSpecifiedTimeout" />
+              <node concept="3TrcHB" id="2jyWgCyNthF" role="2OqNvi">
+                <ref role="3TsBF5" to="q5q6:7ehmsbAxlme" resolve="hasLocalTimeout" />
               </node>
             </node>
           </node>
@@ -2191,8 +2191,8 @@
           <node concept="3clFbF" id="3SmHfhJ0u6f" role="3cqZAp">
             <node concept="2OqwBi" id="3SmHfhJ0uaM" role="3clFbG">
               <node concept="pncrf" id="3SmHfhJ0u6e" role="2Oq$k0" />
-              <node concept="3TrcHB" id="3SmHfhJ0uD3" role="2OqNvi">
-                <ref role="3TsBF5" to="q5q6:56VLVOUmC9T" resolve="hasSpecifiedTimeout" />
+              <node concept="3TrcHB" id="2jyWgCyNuud" role="2OqNvi">
+                <ref role="3TsBF5" to="q5q6:7ehmsbAxlme" resolve="hasLocalTimeout" />
               </node>
             </node>
           </node>

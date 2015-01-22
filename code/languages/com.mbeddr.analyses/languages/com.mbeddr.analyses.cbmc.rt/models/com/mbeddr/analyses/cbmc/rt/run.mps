@@ -232,6 +232,9 @@
       <concept id="1068581242867" name="jetbrains.mps.baseLanguage.structure.LongType" flags="in" index="3cpWsb" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
@@ -3423,17 +3426,19 @@
             </node>
           </node>
           <node concept="3fqX7Q" id="67TvXTFCTXK" role="3clFbw">
-            <node concept="3clFbC" id="67TvXTFCULE" role="3fr31v">
-              <node concept="Rm8GO" id="67TvXTFCV0w" role="3uHU7w">
-                <ref role="Rm8GQ" node="67TvXTFC38K" resolve="NONE" />
-                <ref role="1Px2BO" node="6DRvbEFRpuY" resolve="CBMCAnalysisConfig.WORD_WIDTH" />
-              </node>
-              <node concept="2OqwBi" id="67TvXTFCUm8" role="3uHU7B">
-                <node concept="37vLTw" id="67TvXTFCUfb" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2UdJgvCXO1M" resolve="configuration" />
+            <node concept="1eOMI4" id="2jyWgCyRB7M" role="3fr31v">
+              <node concept="3clFbC" id="67TvXTFCULE" role="1eOMHV">
+                <node concept="Rm8GO" id="67TvXTFCV0w" role="3uHU7w">
+                  <ref role="Rm8GQ" node="67TvXTFC38K" resolve="NONE" />
+                  <ref role="1Px2BO" node="6DRvbEFRpuY" resolve="CBMCAnalysisConfig.WORD_WIDTH" />
                 </node>
-                <node concept="2S8uIT" id="67TvXTFCUut" role="2OqNvi">
-                  <ref role="2S8YL0" node="6DRvbEFSzJH" resolve="wordWidth" />
+                <node concept="2OqwBi" id="67TvXTFCUm8" role="3uHU7B">
+                  <node concept="37vLTw" id="67TvXTFCUfb" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2UdJgvCXO1M" resolve="configuration" />
+                  </node>
+                  <node concept="2S8uIT" id="67TvXTFCUut" role="2OqNvi">
+                    <ref role="2S8YL0" node="6DRvbEFSzJH" resolve="wordWidth" />
+                  </node>
                 </node>
               </node>
             </node>
