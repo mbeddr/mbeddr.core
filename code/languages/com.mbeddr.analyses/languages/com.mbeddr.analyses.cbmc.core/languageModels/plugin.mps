@@ -131,5 +131,19 @@
       </node>
     </node>
   </node>
+  <node concept="vrV6s" id="576QrOJdwYi">
+    <ref role="vrV6t" to="4pdp:576QrOJctw9" resolve="FailuresLifterProvider" />
+    <node concept="lufDu" id="576QrOJdwYj" role="luc8C">
+      <node concept="3clFbS" id="576QrOJdwYk" role="2VODD2">
+        <node concept="3clFbF" id="576QrOJdwYl" role="3cqZAp">
+          <node concept="2ShNRf" id="576QrOJdwYm" role="3clFbG">
+            <node concept="HV5vD" id="576QrOJdxwS" role="2ShVmc">
+              <ref role="HV5vE" to="qeyn:576QrOJcWkT" resolve="FailuresLifterCore" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

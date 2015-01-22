@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0afa1dc8-debe-4a54-a50d-d0015a8bc258(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)">
+<model ref="r:881cd106-b9c3-33d3-8c69-9a76f591f92a(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)">
   <persistence version="9" />
   <languages>
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
@@ -29,6 +29,18 @@
       </concept>
     </language>
   </registry>
+  <node concept="2xbcct" id="7sNQp65l2BR">
+    <node concept="2xbbuh" id="7sNQp65l2BT" role="2xbcco">
+      <property role="TrG5h" value="Desktop Platform" />
+      <node concept="2AWWZL" id="4PM5ysqsU6o" role="2xbbhh">
+        <property role="2AWWZJ" value="/usr/bin/gcc-4.2" />
+        <property role="2AWWZI" value="-std=c99" />
+        <property role="1FkSt$" value="-g" />
+        <property role="3r8Kxs" value="make" />
+        <property role="3r8Kw1" value="/usr/local/Cellar/gdb/7.6.1/bin/gdb" />
+      </node>
+    </node>
+  </node>
   <node concept="2xbcct" id="378vUkgqJCy">
     <node concept="2xbbuh" id="378vUkgqJC$" role="2xbcco">
       <property role="TrG5h" value="Desktop Platform" />

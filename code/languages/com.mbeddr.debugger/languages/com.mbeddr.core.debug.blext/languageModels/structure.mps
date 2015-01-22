@@ -146,6 +146,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="1dTx1UKi0mI" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="variablesList" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
     <node concept="PrWs8" id="7mVHCj34sv8" role="PzmwI">
       <ref role="PrY4T" node="2by6456KadQ" resolve="IWatchStuff" />
     </node>
@@ -968,6 +973,22 @@
     <node concept="1TJgyi" id="7ekR8t0fydD" role="1TKVEl">
       <property role="TrG5h" value="variableKind" />
       <ref role="AX2Wp" node="79czkGCIx5H" resolve="VariableKind" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5nt$m6oDnyB">
+    <property role="3GE5qa" value="watches.type-translation" />
+    <property role="TrG5h" value="ParseNumberExpression" />
+    <property role="34LRSv" value="parse-number" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="5nt$m6oDuJS" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5nt$m6oDuK1" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="variable" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
 </model>

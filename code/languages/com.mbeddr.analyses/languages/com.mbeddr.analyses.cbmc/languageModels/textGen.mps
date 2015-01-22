@@ -213,5 +213,18 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="6KXBYUqAHxK">
+    <property role="3GE5qa" value="types" />
+    <ref role="WuzLi" to="q5q6:6KXBYUqABWL" resolve="CPROVERbool" />
+    <node concept="11bSqf" id="6KXBYUqAHxL" role="11c4hB">
+      <node concept="3clFbS" id="6KXBYUqAHxM" role="2VODD2">
+        <node concept="lc7rE" id="6KXBYUqAHyh" role="3cqZAp">
+          <node concept="la8eA" id="6KXBYUqAHyi" role="lcghm">
+            <property role="lacIc" value="__CPROVER_bool" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

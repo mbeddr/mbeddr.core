@@ -165,6 +165,9 @@
     <node concept="PrWs8" id="2XRfpKWz6$1" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
+    <node concept="PrWs8" id="5hYHEwZIwI_" role="PzmwI">
+      <ref role="PrY4T" to="v7ag:5hYHEwZIii2" resolve="IComponentIDAware" />
+    </node>
     <node concept="1TJgyj" id="4usdeMNUWcE" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />

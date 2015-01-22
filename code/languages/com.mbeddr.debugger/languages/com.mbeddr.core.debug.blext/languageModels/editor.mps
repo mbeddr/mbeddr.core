@@ -4,8 +4,8 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
   </languages>
   <imports>
     <import index="talm" ref="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" />
@@ -194,6 +194,27 @@
   <node concept="24kQdi" id="7mVHCj34jt5">
     <property role="3GE5qa" value="watches.mapping" />
     <ref role="1XX52x" to="talm:7mVHCj34jsY" resolve="MapByNameStatement" />
+    <node concept="3EZMnI" id="1dTx1UKi0$h" role="6VMZX">
+      <node concept="3EZMnI" id="5qoH1yxiz2o" role="3EZMnx">
+        <node concept="3F0ifn" id="5qoH1yxiz2M" role="3EZMnx">
+          <property role="3F0ifm" value="can be optimized:" />
+        </node>
+        <node concept="3F0A7n" id="5qoH1yxiz2Y" role="3EZMnx">
+          <ref role="1NtTu8" to="talm:5qoH1yxiz1m" resolve="canBeOptimized" />
+        </node>
+        <node concept="2iRfu4" id="5qoH1yxiz2u" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="1dTx1UKi0_2" role="3EZMnx">
+        <node concept="3F0ifn" id="1dTx1UKi0_3" role="3EZMnx">
+          <property role="3F0ifm" value="variables list (def. unmappedVariables):" />
+        </node>
+        <node concept="3F1sOY" id="1dTx1UKi0_o" role="3EZMnx">
+          <ref role="1NtTu8" to="talm:1dTx1UKi0mI" />
+        </node>
+        <node concept="2iRfu4" id="1dTx1UKi0_5" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="1dTx1UKi0$i" role="2iSdaV" />
+    </node>
     <node concept="3EZMnI" id="7mVHCj34jt8" role="2wV5jI">
       <node concept="l2Vlx" id="7mVHCj34jt9" role="2iSdaV" />
       <node concept="3F0ifn" id="7mVHCj34jt7" role="3EZMnx">
@@ -297,15 +318,6 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-    </node>
-    <node concept="3EZMnI" id="5qoH1yxiz2o" role="6VMZX">
-      <node concept="3F0ifn" id="5qoH1yxiz2M" role="3EZMnx">
-        <property role="3F0ifm" value="can be optimized:" />
-      </node>
-      <node concept="3F0A7n" id="5qoH1yxiz2Y" role="3EZMnx">
-        <ref role="1NtTu8" to="talm:5qoH1yxiz1m" resolve="canBeOptimized" />
-      </node>
-      <node concept="2iRfu4" id="5qoH1yxiz2u" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="1JD0ifcGwKd">
@@ -1761,6 +1773,25 @@
     <ref role="1XX52x" to="talm:7ekR8t0fydC" resolve="VariableKindExpression" />
     <node concept="3F0A7n" id="7ekR8t0fydM" role="2wV5jI">
       <ref role="1NtTu8" to="talm:7ekR8t0fydD" resolve="variableKind" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5nt$m6oDuZ1">
+    <property role="3GE5qa" value="watches.type-translation" />
+    <ref role="1XX52x" to="talm:5nt$m6oDnyB" resolve="ParseNumberExpression" />
+    <node concept="3EZMnI" id="5nt$m6oDylz" role="2wV5jI">
+      <node concept="3F0ifn" id="5nt$m6oDylH" role="3EZMnx">
+        <property role="3F0ifm" value="parse number from" />
+      </node>
+      <node concept="3F1sOY" id="5nt$m6oDym3" role="3EZMnx">
+        <ref role="1NtTu8" to="talm:5nt$m6oDuK1" />
+      </node>
+      <node concept="3F0ifn" id="5nt$m6oDymY" role="3EZMnx">
+        <property role="3F0ifm" value="of type" />
+      </node>
+      <node concept="3F1sOY" id="5nt$m6oDylQ" role="3EZMnx">
+        <ref role="1NtTu8" to="talm:5nt$m6oDuJS" />
+      </node>
+      <node concept="l2Vlx" id="5nt$m6oDylA" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -22,10 +22,12 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
@@ -53,55 +55,14 @@
     <property role="TrG5h" value="CProverBasedAnalysis" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="q46j:5BkFC2yh8uL" resolve="Analysis" />
+    <node concept="PrWs8" id="7ehmsbAuQhC" role="PzmwI">
+      <ref role="PrY4T" node="7ehmsbAuQbH" resolve="ICbmcSettings" />
+    </node>
     <node concept="1TJgyj" id="5BkFC2yhyH$" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="entryPoint" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
-    </node>
-    <node concept="1TJgyi" id="5BkFC2yhyH_" role="1TKVEl">
-      <property role="TrG5h" value="unwindingDepth" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="SmG48IegsK" role="1TKVEl">
-      <property role="TrG5h" value="showUnwindingDepthInfo" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="5BkFC2yhyHA" role="1TKVEl">
-      <property role="TrG5h" value="unwindingAssertions" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="FDeiXqBlcQ" role="1TKVEl">
-      <property role="TrG5h" value="partialLoops" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="NfDeW0RSSf" role="1TKVEl">
-      <property role="TrG5h" value="useRefinement" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="oxt36$8EDF" role="1TKVEl">
-      <property role="TrG5h" value="analysisDepth" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="40PV5hA2jDp" role="1TKVEl">
-      <property role="TrG5h" value="useCbmc" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="7V5PT6YM$oI" role="1TKVEl">
-      <property role="TrG5h" value="sliceFormula" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="56VLVOUmC9T" role="1TKVEl">
-      <property role="TrG5h" value="hasSpecifiedTimeout" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="1XFitunRfci" role="1TKVEl">
-      <property role="TrG5h" value="timeoutInSeconds" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="56VLVOUlRNK" role="1TKVEl">
-      <property role="TrG5h" value="timeoutForSingleAnalysis" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="4fjBjwDqlY2">
@@ -343,6 +304,70 @@
     <node concept="1TJgyi" id="4DO4XHFbf0X" role="1TKVEl">
       <property role="TrG5h" value="mantissaSize" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7ehmsbAuQbH">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="ICbmcSettings" />
+    <node concept="1TJgyi" id="7ehmsbAE0gk" role="1TKVEl">
+      <property role="TrG5h" value="hasLocalCbmcSettings" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7ehmsbAuSWi" role="1TKVEl">
+      <property role="TrG5h" value="unwindingDepth" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7ehmsbAuTDX" role="1TKVEl">
+      <property role="TrG5h" value="unwindingAssertions" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7ehmsbAuTER" role="1TKVEl">
+      <property role="TrG5h" value="partialLoops" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7ehmsbAuTGF" role="1TKVEl">
+      <property role="TrG5h" value="analysisDepth" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7ehmsbAuTD3" role="1TKVEl">
+      <property role="TrG5h" value="hasUnwindingDepth" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7ehmsbAuTFL" role="1TKVEl">
+      <property role="TrG5h" value="useRefinement" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7ehmsbAxllk" role="1TKVEl">
+      <property role="TrG5h" value="sliceFormula" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7ehmsbAxlme" role="1TKVEl">
+      <property role="TrG5h" value="hasLocalTimeout" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7ehmsbAxln8" role="1TKVEl">
+      <property role="TrG5h" value="timeoutInSeconds" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7ehmsbAxlnk" role="1TKVEl">
+      <property role="TrG5h" value="timeoutForSingleAnalysis" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6KXBYUqABWL">
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="CPROVERbool" />
+    <property role="34LRSv" value="bool" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
+  </node>
+  <node concept="1TIwiD" id="1Qze4b32ew4">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="CBMCAnalysisConfiguration" />
+    <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="cbmc analysis configuration" />
+    <ref role="1TJDcQ" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
+    <node concept="PrWs8" id="1Qze4b32ew5" role="PzmwI">
+      <ref role="PrY4T" node="7ehmsbAuQbH" resolve="ICbmcSettings" />
     </node>
   </node>
 </model>

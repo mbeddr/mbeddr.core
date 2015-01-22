@@ -9734,5 +9734,47 @@
       <ref role="1YaFvo" to="v7ag:71UKpntoTuE" resolve="PortRefExpr" />
     </node>
   </node>
+  <node concept="18kY7G" id="1_dsrLe$ifO">
+    <property role="3GE5qa" value="intf.cs.ppc" />
+    <property role="TrG5h" value="check_PrePostConditions" />
+    <node concept="3clFbS" id="1_dsrLe$ifP" role="18ibNy">
+      <node concept="3clFbJ" id="1_dsrLe$jbq" role="3cqZAp">
+        <node concept="3clFbS" id="1_dsrLe$jbr" role="3clFbx">
+          <node concept="2MkqsV" id="1_dsrLe$kxx" role="3cqZAp">
+            <node concept="Xl_RD" id="1_dsrLe$kxT" role="2MkJ7o">
+              <property role="Xl_RC" value="Expressions of pre/postconditions must be side-effects free." />
+            </node>
+            <node concept="2OqwBi" id="1_dsrLe$kFT" role="2OEOjV">
+              <node concept="1YBJjd" id="1_dsrLe$kDT" role="2Oq$k0">
+                <ref role="1YBMHb" node="1_dsrLe$jb9" resolve="prePostCondition" />
+              </node>
+              <node concept="3TrEf2" id="1_dsrLe$l3h" role="2OqNvi">
+                <ref role="3Tt5mk" to="v7ag:5HTuIUP_k1S" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="1_dsrLe$jbM" role="3clFbw">
+          <node concept="2OqwBi" id="1_dsrLe$jYA" role="3fr31v">
+            <node concept="2OqwBi" id="1_dsrLe$jeQ" role="2Oq$k0">
+              <node concept="1YBJjd" id="1_dsrLe$jci" role="2Oq$k0">
+                <ref role="1YBMHb" node="1_dsrLe$jb9" resolve="prePostCondition" />
+              </node>
+              <node concept="3TrEf2" id="1_dsrLe$jz8" role="2OqNvi">
+                <ref role="3Tt5mk" to="v7ag:5HTuIUP_k1S" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="1_dsrLe$ku1" role="2OqNvi">
+              <ref role="37wK5l" to="ywuz:6SENleF$SRD" resolve="isSideeffectFree" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1_dsrLe$jb9" role="1YuTPh">
+      <property role="TrG5h" value="prePostCondition" />
+      <ref role="1YaFvo" to="v7ag:5HTuIUP_k1N" resolve="PrePostCondition" />
+    </node>
+  </node>
 </model>
 

@@ -759,6 +759,9 @@
         </node>
         <node concept="3XIRlf" id="5N4UbPS85Io" role="3XIRFZ">
           <property role="TrG5h" value="sum" />
+          <node concept="3TlMh9" id="hUWpPwNVMQ" role="3XIe9u">
+            <property role="2hmy$m" value="0" />
+          </node>
           <node concept="26Vqpq" id="5N4UbPS86kI" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
@@ -910,6 +913,9 @@
         </node>
         <node concept="3XIRlf" id="5N4UbPS8rGH" role="3XIRFZ">
           <property role="TrG5h" value="aVariableThatIsReferenced" />
+          <node concept="3TlMh9" id="hUWpPwNWqW" role="3XIe9u">
+            <property role="2hmy$m" value="0" />
+          </node>
           <node concept="26Vqqz" id="5N4UbPS8rGF" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />

@@ -3,10 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -1787,14 +1787,14 @@
               <node concept="2MkqsV" id="7XSydr9Hc0" role="3cqZAp">
                 <node concept="3cpWs3" id="7XSydr9HLy" role="2MkJ7o">
                   <node concept="2OqwBi" id="7XSydr9JEV" role="3uHU7w">
+                    <node concept="3TrcHB" id="7XIXMBMYN22" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpce:4qF2Hm2r7ja" resolve="conceptAlias" />
+                    </node>
                     <node concept="2OqwBi" id="7XSydr9I1e" role="2Oq$k0">
                       <node concept="1YBJjd" id="7XSydr9HL_" role="2Oq$k0">
                         <ref role="1YBMHb" node="7XSydr9rRn" resolve="c" />
                       </node>
                       <node concept="3NT_Vc" id="7XSydr9IXv" role="2OqNvi" />
-                    </node>
-                    <node concept="3TrcHB" id="7XIXMBMYN22" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpce:4qF2Hm2r7ja" resolve="conceptAlias" />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="7XSydr9Hm$" role="3uHU7B">
@@ -1823,10 +1823,10 @@
                   <node concept="v3k3i" id="7XSydr9BTs" role="2OqNvi">
                     <node concept="25Kdxt" id="7XSydr9C2h" role="v3oSu">
                       <node concept="2OqwBi" id="7XSydr9Chl" role="25KhWn">
+                        <node concept="2yIwOk" id="7XIXMBMYMeU" role="2OqNvi" />
                         <node concept="1YBJjd" id="7XSydr9Cc$" role="2Oq$k0">
                           <ref role="1YBMHb" node="7XSydr9rRn" resolve="c" />
                         </node>
-                        <node concept="2yIwOk" id="7XIXMBMYMeU" role="2OqNvi" />
                       </node>
                     </node>
                   </node>

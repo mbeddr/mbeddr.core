@@ -3,6 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="-1" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
@@ -11,8 +13,6 @@
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -95,15 +95,6 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
-      </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
       </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
@@ -200,54 +191,45 @@
           </node>
         </node>
         <node concept="3clFbH" id="4kJ3EIm6bHl" role="3cqZAp" />
-        <node concept="3SKdUt" id="3f3CxMdvYwy" role="3cqZAp">
-          <node concept="3SKdUq" id="3f3CxMdvY$K" role="3SKWNk">
-            <property role="3SKdUp" value="TODO cex commented out due to problems in lifting the trace (NodesLiftingInfo ... MPS and mbeddr bugs)" />
+        <node concept="38rL1p" id="8FyjeteY5C" role="3cqZAp">
+          <node concept="38rIoz" id="8FyjeteYek" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="aFunCallingComponentRunnable" />
           </node>
-        </node>
-        <node concept="3SKdUt" id="3f3CxMdvYju" role="3cqZAp">
-          <node concept="3SKWN0" id="3f3CxMdvYjF" role="3SKWNk">
-            <node concept="38rL1p" id="8FyjeteY5C" role="3SKWNf">
-              <node concept="38rIoz" id="8FyjeteYek" role="38rM$J">
-                <property role="38rIoG" value="call" />
-                <property role="38rMdH" value="aFunCallingComponentRunnable" />
-              </node>
-              <node concept="38rIoz" id="8FyjeteYel" role="38rM$J">
-                <property role="38rIoG" value="enter instance config" />
-                <property role="38rMdH" value="comp" />
-                <node concept="3Tqbb2" id="8FyjeteYem" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="8FyjeteYen" role="38rM$J">
-                <property role="38rIoG" value="leave instance config" />
-                <property role="38rMdH" value="comp" />
-                <node concept="3Tqbb2" id="8FyjeteYeo" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="8FyjeteYep" role="38rM$J">
-                <property role="38rIoG" value="call" />
-                <property role="38rMdH" value="aFun" />
-                <node concept="3Tqbb2" id="8FyjeteYeq" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:pTHqv6KODH" resolve="PortAdapterOpCallExpr" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="8FyjeteYer" role="38rM$J">
-                <property role="38rIoG" value="aPar" />
-                <property role="38rMdH" value="2" />
-              </node>
-              <node concept="38rIoz" id="8FyjeteYes" role="38rM$J">
-                <property role="38rIoG" value="FAIL" />
-                <property role="38rMdH" value="*" />
-                <node concept="3Tqbb2" id="8FyjeteYet" role="38rYrG">
-                  <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
-                </node>
-              </node>
-              <node concept="37vLTw" id="8FyjeteYag" role="2v6RBE">
-                <ref role="3cqZAo" node="4kJ3EIm6bH5" resolve="res" />
-              </node>
+          <node concept="38rIoz" id="8FyjeteYel" role="38rM$J">
+            <property role="38rIoG" value="enter instance config" />
+            <property role="38rMdH" value="comp" />
+            <node concept="3Tqbb2" id="8FyjeteYem" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
             </node>
+          </node>
+          <node concept="38rIoz" id="8FyjeteYen" role="38rM$J">
+            <property role="38rIoG" value="leave instance config" />
+            <property role="38rMdH" value="comp" />
+            <node concept="3Tqbb2" id="8FyjeteYeo" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="8FyjeteYep" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="aFun" />
+            <node concept="3Tqbb2" id="8FyjeteYeq" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:pTHqv6KODH" resolve="PortAdapterOpCallExpr" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="8FyjeteYer" role="38rM$J">
+            <property role="38rIoG" value="aPar" />
+            <property role="38rMdH" value="2" />
+          </node>
+          <node concept="38rIoz" id="8FyjeteYes" role="38rM$J">
+            <property role="38rIoG" value="FAIL" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="8FyjeteYet" role="38rYrG">
+              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+            </node>
+          </node>
+          <node concept="37vLTw" id="8FyjeteYag" role="2v6RBE">
+            <ref role="3cqZAo" node="4kJ3EIm6bH5" resolve="res" />
           </node>
         </node>
         <node concept="3clFbH" id="4kJ3EIm6bHy" role="3cqZAp" />
@@ -301,131 +283,106 @@
           </node>
         </node>
         <node concept="3clFbH" id="4kJ3EIm6bJP" role="3cqZAp" />
-        <node concept="3SKdUt" id="3f3CxMdvZ6q" role="3cqZAp">
-          <node concept="3SKdUq" id="3f3CxMdvZ6r" role="3SKWNk">
-            <property role="3SKdUp" value="TODO cex commented out due to problems in lifting the trace (NodesLiftingInfo ... MPS and mbeddr bugs)" />
+        <node concept="38rL1p" id="8FyjeteYz7" role="3cqZAp">
+          <node concept="38rIoz" id="4Y$LvVOrnb7" role="38rM$J">
+            <property role="38rIoG" value="*" />
+            <property role="38rMdH" value="*" />
           </node>
-        </node>
-        <node concept="3SKdUt" id="3f3CxMdvYVp" role="3cqZAp">
-          <node concept="3SKWN0" id="3f3CxMdvYVV" role="3SKWNk">
-            <node concept="38rL1p" id="8FyjeteYz7" role="3SKWNf">
-              <node concept="38rIoz" id="4Y$LvVOrnb7" role="38rM$J">
-                <property role="38rIoG" value="*" />
-                <property role="38rMdH" value="*" />
-              </node>
-              <node concept="38rIoz" id="4Y$LvVOrney" role="38rM$J">
-                <property role="38rIoG" value="*" />
-                <property role="38rMdH" value="*" />
-              </node>
-              <node concept="38rIoz" id="k5g7iqvJyX" role="38rM$J">
-                <property role="38rIoG" value="*" />
-                <property role="38rMdH" value="*" />
-              </node>
-              <node concept="38rIoz" id="4Y$LvVOrni2" role="38rM$J">
-                <property role="38rIoG" value="*" />
-                <property role="38rMdH" value="*" />
-              </node>
-              <node concept="38rIoz" id="k5g7iqvJFA" role="38rM$J">
-                <property role="38rIoG" value="*" />
-                <property role="38rMdH" value="*" />
-              </node>
-              <node concept="38rIoz" id="8FyjeteYFL" role="38rM$J">
-                <property role="38rIoG" value="call" />
-                <property role="38rMdH" value="main" />
-              </node>
-              <node concept="38rIoz" id="4Y$LvVOrns$" role="38rM$J">
-                <property role="38rIoG" value="*" />
-                <property role="38rMdH" value="*" />
-              </node>
-              <node concept="38rIoz" id="4Y$LvVOrnl_" role="38rM$J">
-                <property role="38rIoG" value="*" />
-                <property role="38rMdH" value="*" />
-              </node>
-              <node concept="38rIoz" id="8FyjeteYFM" role="38rM$J">
-                <property role="38rIoG" value="call" />
-                <property role="38rMdH" value="testDecTabInPpc" />
-                <node concept="3Tqbb2" id="8FyjeteYFN" role="38rYrG">
-                  <ref role="ehGHo" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="4Y$LvVOrnUB" role="38rM$J">
-                <property role="38rIoG" value="enter instance config" />
-                <property role="38rMdH" value="AllInstances" />
-                <node concept="3Tqbb2" id="4Y$LvVOro1C" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="4Y$LvVOrnY7" role="38rM$J">
-                <property role="38rIoG" value="leave instance config" />
-                <property role="38rMdH" value="AllInstances" />
-                <node concept="3Tqbb2" id="4Y$LvVOro3m" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="4Y$LvVOrob4" role="38rM$J">
-                <property role="38rIoG" value="call" />
-                <property role="38rMdH" value="oneFunction" />
-                <node concept="3Tqbb2" id="4Y$LvVOrojV" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:pTHqv6KODH" resolve="PortAdapterOpCallExpr" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="4Y$LvVOroeC" role="38rM$J">
-                <property role="38rIoG" value="oneArg" />
-                <property role="38rMdH" value="3" />
-                <node concept="3Tqbb2" id="4Y$LvVOroid" role="38rYrG">
-                  <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="4Y$LvVOrolD" role="38rM$J">
-                <property role="38rIoG" value="call" />
-                <property role="38rMdH" value="onePreconditionFunction" />
-                <node concept="3Tqbb2" id="4Y$LvVOrp60" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:3TmmsQkDdTN" resolve="AtomicComponent" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="4Y$LvVOrp2n" role="38rM$J">
-                <property role="38rIoG" value="arg1" />
-                <property role="38rMdH" value="2" />
-              </node>
-              <node concept="38rIoz" id="4Y$LvVOrp9s" role="38rM$J">
-                <property role="38rIoG" value="enter decision table" />
-                <property role="38rMdH" value="*" />
-                <node concept="3Tqbb2" id="4Y$LvVOrpd7" role="38rYrG">
-                  <ref role="ehGHo" to="k146:5oGU$loBXvt" resolve="DecTab" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="4Y$LvVOrpeP" role="38rM$J">
-                <property role="38rIoG" value="arg1" />
-                <property role="38rMdH" value="2" />
-                <node concept="3Tqbb2" id="4Y$LvVOrpiy" role="38rYrG">
-                  <ref role="ehGHo" to="x27k:7LOsK3rQkU_" resolve="ReturnStatement" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="4Y$LvVOrpkg" role="38rM$J">
-                <property role="38rIoG" value="leave decision table" />
-                <property role="38rMdH" value="*" />
-                <node concept="3Tqbb2" id="4Y$LvVOrpnZ" role="38rYrG">
-                  <ref role="ehGHo" to="k146:5oGU$loBXvt" resolve="DecTab" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="4Y$LvVOrppH" role="38rM$J">
-                <property role="38rIoG" value="return" />
-                <property role="38rMdH" value="onePreconditionFunction" />
-                <node concept="3Tqbb2" id="4Y$LvVOrptu" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:3TmmsQkDdTN" resolve="AtomicComponent" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="4Y$LvVOrpvc" role="38rM$J">
-                <property role="38rIoG" value="FAIL" />
-                <property role="38rMdH" value="Error Label Reached" />
-                <node concept="3Tqbb2" id="4Y$LvVOrpyZ" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
-                </node>
-              </node>
-              <node concept="37vLTw" id="8FyjeteYBJ" role="2v6RBE">
-                <ref role="3cqZAo" node="4kJ3EIm6bJ$" resolve="res" />
-              </node>
+          <node concept="38rIoz" id="4Y$LvVOrney" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="main" />
+          </node>
+          <node concept="38rIoz" id="k5g7iqvJyX" role="38rM$J">
+            <property role="38rIoG" value="argc" />
+            <property role="38rMdH" value="*" />
+          </node>
+          <node concept="38rIoz" id="4Y$LvVOrni2" role="38rM$J">
+            <property role="38rIoG" value="argv" />
+            <property role="38rMdH" value="*" />
+          </node>
+          <node concept="38rIoz" id="8FyjeteYFM" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="testDecTabInPpc" />
+            <node concept="3Tqbb2" id="8FyjeteYFN" role="38rYrG">
+              <ref role="ehGHo" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
             </node>
+          </node>
+          <node concept="38rIoz" id="4Y$LvVOrnUB" role="38rM$J">
+            <property role="38rIoG" value="enter instance config" />
+            <property role="38rMdH" value="AllInstances" />
+            <node concept="3Tqbb2" id="4Y$LvVOro1C" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="4Y$LvVOrnY7" role="38rM$J">
+            <property role="38rIoG" value="leave instance config" />
+            <property role="38rMdH" value="AllInstances" />
+            <node concept="3Tqbb2" id="4Y$LvVOro3m" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="4Y$LvVOrob4" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="oneFunction" />
+            <node concept="3Tqbb2" id="4Y$LvVOrojV" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:pTHqv6KODH" resolve="PortAdapterOpCallExpr" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="4Y$LvVOroeC" role="38rM$J">
+            <property role="38rIoG" value="oneArg" />
+            <property role="38rMdH" value="3" />
+            <node concept="3Tqbb2" id="4Y$LvVOroid" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="4Y$LvVOrolD" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="onePreconditionFunction" />
+            <node concept="3Tqbb2" id="4Y$LvVOrp60" role="38rYrG">
+              <ref role="ehGHo" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="4Y$LvVOrp2n" role="38rM$J">
+            <property role="38rIoG" value="arg1" />
+            <property role="38rMdH" value="2" />
+          </node>
+          <node concept="38rIoz" id="4Y$LvVOrp9s" role="38rM$J">
+            <property role="38rIoG" value="enter decision table" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="4Y$LvVOrpd7" role="38rYrG">
+              <ref role="ehGHo" to="k146:5oGU$loBXvt" resolve="DecTab" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="4Y$LvVOrpeP" role="38rM$J">
+            <property role="38rIoG" value="arg1" />
+            <property role="38rMdH" value="2" />
+            <node concept="3Tqbb2" id="4Y$LvVOrpiy" role="38rYrG">
+              <ref role="ehGHo" to="x27k:7LOsK3rQkU_" resolve="ReturnStatement" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="4Y$LvVOrpkg" role="38rM$J">
+            <property role="38rIoG" value="leave decision table" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="4Y$LvVOrpnZ" role="38rYrG">
+              <ref role="ehGHo" to="k146:5oGU$loBXvt" resolve="DecTab" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="4Y$LvVOrppH" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="onePreconditionFunction" />
+            <node concept="3Tqbb2" id="4Y$LvVOrptu" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:3TmmsQkDdTN" resolve="AtomicComponent" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="4Y$LvVOrpvc" role="38rM$J">
+            <property role="38rIoG" value="FAIL" />
+            <property role="38rMdH" value="Error Label Reached" />
+            <node concept="3Tqbb2" id="4Y$LvVOrpyZ" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
+            </node>
+          </node>
+          <node concept="37vLTw" id="8FyjeteYBJ" role="2v6RBE">
+            <ref role="3cqZAo" node="4kJ3EIm6bJ$" resolve="res" />
           </node>
         </node>
         <node concept="3clFbH" id="4Y$LvVOro54" role="3cqZAp" />
@@ -520,123 +477,100 @@
           </node>
         </node>
         <node concept="3clFbH" id="3jtKiJDjpox" role="3cqZAp" />
-        <node concept="3SKdUt" id="3f3CxMdvZuk" role="3cqZAp">
-          <node concept="3SKdUq" id="3f3CxMdvZul" role="3SKWNk">
-            <property role="3SKdUp" value="TODO cex commented out due to problems in lifting the trace (NodesLiftingInfo ... MPS and mbeddr bugs)" />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="3f3CxMdvZld" role="3cqZAp">
-          <node concept="3SKWN0" id="3f3CxMdvZlI" role="3SKWNk">
-            <node concept="38rL1p" id="8FyjeteZ36" role="3SKWNf">
-              <node concept="38rIoz" id="4arT0cnpG80" role="38rM$J">
-                <property role="38rIoG" value="as.inner.a" />
-                <property role="38rMdH" value="0" />
-                <node concept="3Tqbb2" id="4arT0cnpG81" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="4arT0cnpG82" role="38rM$J">
-                <property role="38rIoG" value="as.inner.b" />
-                <property role="38rMdH" value="*" />
-                <node concept="3Tqbb2" id="4arT0cnpG83" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="8FyjeteZdv" role="38rM$J">
-                <property role="38rIoG" value="call" />
-                <property role="38rMdH" value="entry" />
-                <node concept="3Tqbb2" id="8FyjeteZdw" role="38rYrG">
-                  <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="8FyjeteZdx" role="38rM$J">
-                <property role="38rIoG" value="as.inner.a" />
-                <property role="38rMdH" value="2" />
-                <node concept="3Tqbb2" id="8FyjeteZdy" role="38rYrG">
-                  <ref role="ehGHo" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="8FyjeteZdz" role="38rM$J">
-                <property role="38rIoG" value="as.inner.b" />
-                <property role="38rMdH" value="*" />
-                <node concept="3Tqbb2" id="8FyjeteZd$" role="38rYrG">
-                  <ref role="ehGHo" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="8FyjeteZd_" role="38rM$J">
-                <property role="38rIoG" value="enter instance config" />
-                <property role="38rMdH" value="comp" />
-                <node concept="3Tqbb2" id="8FyjeteZdA" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="8FyjeteZdB" role="38rM$J">
-                <property role="38rIoG" value="leave instance config" />
-                <property role="38rMdH" value="comp" />
-                <node concept="3Tqbb2" id="8FyjeteZdC" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="8FyjeteZdD" role="38rM$J">
-                <property role="38rIoG" value="call" />
-                <property role="38rMdH" value="set" />
-                <node concept="3Tqbb2" id="8FyjeteZdE" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:pTHqv6KODH" resolve="PortAdapterOpCallExpr" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="8FyjeteZdF" role="38rM$J">
-                <property role="38rIoG" value="aPar" />
-                <property role="38rMdH" value="2" />
-                <node concept="3Tqbb2" id="7MMcIPlkV$T" role="38rYrG">
-                  <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="8FyjeteZdH" role="38rM$J">
-                <property role="38rIoG" value="as.inner.a" />
-                <property role="38rMdH" value="2" />
-                <node concept="3Tqbb2" id="4arT0cnpGkz" role="38rYrG">
-                  <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="8FyjeteZdJ" role="38rM$J">
-                <property role="38rIoG" value="return" />
-                <property role="38rMdH" value="set" />
-                <node concept="3Tqbb2" id="8FyjeteZdK" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:pTHqv6KODH" resolve="PortAdapterOpCallExpr" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="8FyjeteZdL" role="38rM$J">
-                <property role="38rIoG" value="call" />
-                <property role="38rMdH" value="aFun" />
-                <node concept="3Tqbb2" id="8FyjeteZdM" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:pTHqv6KODH" resolve="PortAdapterOpCallExpr" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="8FyjeteZdN" role="38rM$J">
-                <property role="38rIoG" value="aPar" />
-                <property role="38rMdH" value="2" />
-                <node concept="3Tqbb2" id="76de8fhp6Zc" role="38rYrG">
-                  <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="8FyjeteZdP" role="38rM$J">
-                <property role="38rIoG" value="as.inner.b" />
-                <property role="38rMdH" value="*" />
-                <node concept="3Tqbb2" id="8FyjeteZdQ" role="38rYrG">
-                  <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="8FyjeteZdR" role="38rM$J">
-                <property role="38rIoG" value="FAIL" />
-                <property role="38rMdH" value="Assertion Violated" />
-                <node concept="3Tqbb2" id="8FyjeteZdS" role="38rYrG">
-                  <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
-                </node>
-              </node>
-              <node concept="37vLTw" id="8FyjeteZ8o" role="2v6RBE">
-                <ref role="3cqZAo" node="3jtKiJDjpoh" resolve="res" />
-              </node>
+        <node concept="38rL1p" id="8FyjeteZ36" role="3cqZAp">
+          <node concept="38rIoz" id="8FyjeteZdv" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="entry" />
+            <node concept="3Tqbb2" id="8FyjeteZdw" role="38rYrG">
+              <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
             </node>
+          </node>
+          <node concept="38rIoz" id="8FyjeteZdx" role="38rM$J">
+            <property role="38rIoG" value="as.inner.a" />
+            <property role="38rMdH" value="2" />
+            <node concept="3Tqbb2" id="8FyjeteZdy" role="38rYrG">
+              <ref role="ehGHo" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="8FyjeteZdz" role="38rM$J">
+            <property role="38rIoG" value="as.inner.b" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="8FyjeteZd$" role="38rYrG">
+              <ref role="ehGHo" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="8FyjeteZd_" role="38rM$J">
+            <property role="38rIoG" value="enter instance config" />
+            <property role="38rMdH" value="comp" />
+            <node concept="3Tqbb2" id="8FyjeteZdA" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="8FyjeteZdB" role="38rM$J">
+            <property role="38rIoG" value="leave instance config" />
+            <property role="38rMdH" value="comp" />
+            <node concept="3Tqbb2" id="8FyjeteZdC" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="8FyjeteZdD" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="set" />
+            <node concept="3Tqbb2" id="8FyjeteZdE" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:pTHqv6KODH" resolve="PortAdapterOpCallExpr" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="8FyjeteZdF" role="38rM$J">
+            <property role="38rIoG" value="aPar" />
+            <property role="38rMdH" value="2" />
+            <node concept="3Tqbb2" id="7MMcIPlkV$T" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="8FyjeteZdH" role="38rM$J">
+            <property role="38rIoG" value="as.inner.a" />
+            <property role="38rMdH" value="2" />
+            <node concept="3Tqbb2" id="4arT0cnpGkz" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="8FyjeteZdJ" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="set" />
+            <node concept="3Tqbb2" id="8FyjeteZdK" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:pTHqv6KODH" resolve="PortAdapterOpCallExpr" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="8FyjeteZdL" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="aFun" />
+            <node concept="3Tqbb2" id="8FyjeteZdM" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:pTHqv6KODH" resolve="PortAdapterOpCallExpr" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="8FyjeteZdN" role="38rM$J">
+            <property role="38rIoG" value="aPar" />
+            <property role="38rMdH" value="2" />
+            <node concept="3Tqbb2" id="76de8fhp6Zc" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="8FyjeteZdP" role="38rM$J">
+            <property role="38rIoG" value="as.inner.b" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="8FyjeteZdQ" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="8FyjeteZdR" role="38rM$J">
+            <property role="38rIoG" value="FAIL" />
+            <property role="38rMdH" value="Assertion Violated" />
+            <node concept="3Tqbb2" id="8FyjeteZdS" role="38rYrG">
+              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+            </node>
+          </node>
+          <node concept="37vLTw" id="8FyjeteZ8o" role="2v6RBE">
+            <ref role="3cqZAo" node="3jtKiJDjpoh" resolve="res" />
           </node>
         </node>
         <node concept="3clFbH" id="3jtKiJDjpoH" role="3cqZAp" />
@@ -690,113 +624,90 @@
           </node>
         </node>
         <node concept="3clFbH" id="57Wj6IPetoL" role="3cqZAp" />
-        <node concept="3SKdUt" id="3f3CxMdvZR6" role="3cqZAp">
-          <node concept="3SKdUq" id="3f3CxMdvZR7" role="3SKWNk">
-            <property role="3SKdUp" value="TODO cex commented out due to problems in lifting the trace (NodesLiftingInfo ... MPS and mbeddr bugs)" />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="3f3CxMdvZGF" role="3cqZAp">
-          <node concept="3SKWN0" id="3f3CxMdvZH9" role="3SKWNk">
-            <node concept="38rL1p" id="57Wj6IPetoM" role="3SKWNf">
-              <node concept="38rIoz" id="57Wj6IPetSI" role="38rM$J">
-                <property role="38rIoG" value="c" />
-                <property role="38rMdH" value="*" />
-                <node concept="3Tqbb2" id="57Wj6IPeu13" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="57Wj6IPeu2D" role="38rM$J">
-                <property role="38rIoG" value="value" />
-                <property role="38rMdH" value="0" />
-                <node concept="3Tqbb2" id="57Wj6IPeu5X" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="57Wj6IPetoN" role="38rM$J">
-                <property role="38rIoG" value="call" />
-                <property role="38rMdH" value="entryComponentTypes" />
-                <node concept="3Tqbb2" id="57Wj6IPeuc$" role="38rYrG">
-                  <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="57Wj6IPeuea" role="38rM$J">
-                <property role="38rIoG" value="call" />
-                <property role="38rMdH" value="testComponentTypes" />
-                <node concept="3Tqbb2" id="57Wj6IPeum$" role="38rYrG">
-                  <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="57Wj6IPetoO" role="38rM$J">
-                <property role="38rIoG" value="enter instance config" />
-                <property role="38rMdH" value="wiring" />
-                <node concept="3Tqbb2" id="57Wj6IPetoP" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="57Wj6IPetoQ" role="38rM$J">
-                <property role="38rIoG" value="leave instance config" />
-                <property role="38rMdH" value="wiring" />
-                <node concept="3Tqbb2" id="57Wj6IPetoR" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="57Wj6IPeuzX" role="38rM$J">
-                <property role="38rIoG" value="vl" />
-                <property role="38rMdH" value="0" />
-                <node concept="3Tqbb2" id="57Wj6IPeuFM" role="38rYrG">
-                  <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="57Wj6IPeuHo" role="38rM$J">
-                <property role="38rIoG" value="call" />
-                <property role="38rMdH" value="getValueOfCallable" />
-                <node concept="3Tqbb2" id="57Wj6IPeuPQ" role="38rYrG">
-                  <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="57Wj6IPeuU$" role="38rM$J">
-                <property role="38rIoG" value="value" />
-                <property role="38rMdH" value="42" />
-                <node concept="3Tqbb2" id="57Wj6IPev6x" role="38rYrG">
-                  <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="57Wj6IPetoS" role="38rM$J">
-                <property role="38rIoG" value="call" />
-                <property role="38rMdH" value="callable" />
-                <node concept="3Tqbb2" id="57Wj6IPev87" role="38rYrG">
-                  <ref role="ehGHo" to="x27k:7LOsK3rQkU_" resolve="ReturnStatement" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="57Wj6IPeuY1" role="38rM$J">
-                <property role="38rIoG" value="return" />
-                <property role="38rMdH" value="callable" />
-                <node concept="3Tqbb2" id="57Wj6IPev9H" role="38rYrG">
-                  <ref role="ehGHo" to="x27k:7LOsK3rQkU_" resolve="ReturnStatement" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="57Wj6IPetoU" role="38rM$J">
-                <property role="38rIoG" value="vl" />
-                <property role="38rMdH" value="42" />
-              </node>
-              <node concept="38rIoz" id="57Wj6IPexJM" role="38rM$J">
-                <property role="38rIoG" value="return" />
-                <property role="38rMdH" value="getValueOfCallable" />
-                <node concept="3Tqbb2" id="57Wj6IPexSm" role="38rYrG">
-                  <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="57Wj6IPetoV" role="38rM$J">
-                <property role="38rIoG" value="FAIL" />
-                <property role="38rMdH" value="*" />
-                <node concept="3Tqbb2" id="57Wj6IPetoW" role="38rYrG">
-                  <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
-                </node>
-              </node>
-              <node concept="37vLTw" id="57Wj6IPetoX" role="2v6RBE">
-                <ref role="3cqZAo" node="57Wj6IPetoz" resolve="res" />
-              </node>
+        <node concept="38rL1p" id="57Wj6IPetoM" role="3cqZAp">
+          <node concept="38rIoz" id="57Wj6IPetoN" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="entryComponentTypes" />
+            <node concept="3Tqbb2" id="57Wj6IPeuc$" role="38rYrG">
+              <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
             </node>
+          </node>
+          <node concept="38rIoz" id="57Wj6IPeuea" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="testComponentTypes" />
+            <node concept="3Tqbb2" id="57Wj6IPeum$" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="57Wj6IPetoO" role="38rM$J">
+            <property role="38rIoG" value="enter instance config" />
+            <property role="38rMdH" value="wiring" />
+            <node concept="3Tqbb2" id="57Wj6IPetoP" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="57Wj6IPetoQ" role="38rM$J">
+            <property role="38rIoG" value="leave instance config" />
+            <property role="38rMdH" value="wiring" />
+            <node concept="3Tqbb2" id="57Wj6IPetoR" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="57Wj6IPeuzX" role="38rM$J">
+            <property role="38rIoG" value="vl" />
+            <property role="38rMdH" value="0" />
+            <node concept="3Tqbb2" id="57Wj6IPeuFM" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="57Wj6IPeuHo" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="getValueOfCallable" />
+            <node concept="3Tqbb2" id="57Wj6IPeuPQ" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="57Wj6IPeuU$" role="38rM$J">
+            <property role="38rIoG" value="c.value" />
+            <property role="38rMdH" value="42" />
+            <node concept="3Tqbb2" id="57Wj6IPev6x" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="57Wj6IPetoS" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="callable" />
+            <node concept="3Tqbb2" id="57Wj6IPev87" role="38rYrG">
+              <ref role="ehGHo" to="x27k:7LOsK3rQkU_" resolve="ReturnStatement" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="57Wj6IPeuY1" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="callable" />
+            <node concept="3Tqbb2" id="57Wj6IPev9H" role="38rYrG">
+              <ref role="ehGHo" to="x27k:7LOsK3rQkU_" resolve="ReturnStatement" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="57Wj6IPexJM" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="getValueOfCallable" />
+            <node concept="3Tqbb2" id="57Wj6IPexSm" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="57Wj6IPetoU" role="38rM$J">
+            <property role="38rIoG" value="vl" />
+            <property role="38rMdH" value="42" />
+          </node>
+          <node concept="38rIoz" id="57Wj6IPetoV" role="38rM$J">
+            <property role="38rIoG" value="FAIL" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="57Wj6IPetoW" role="38rYrG">
+              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+            </node>
+          </node>
+          <node concept="37vLTw" id="57Wj6IPetoX" role="2v6RBE">
+            <ref role="3cqZAo" node="57Wj6IPetoz" resolve="res" />
           </node>
         </node>
         <node concept="3clFbH" id="57Wj6IPetoY" role="3cqZAp" />
@@ -850,116 +761,430 @@
           </node>
         </node>
         <node concept="3clFbH" id="13FtHz69kyV" role="3cqZAp" />
-        <node concept="3SKdUt" id="3f3CxMdw0fM" role="3cqZAp">
-          <node concept="3SKdUq" id="3f3CxMdw0fN" role="3SKWNk">
-            <property role="3SKdUp" value="TODO cex commented out due to problems in lifting the trace (NodesLiftingInfo ... MPS and mbeddr bugs)" />
+        <node concept="38rL1p" id="13FtHz69kyW" role="3cqZAp">
+          <node concept="38rIoz" id="13FtHz69kz1" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="entryPointComp3" />
+            <node concept="3Tqbb2" id="13FtHz69kz2" role="38rYrG">
+              <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7UyXkgBEv5e" role="38rM$J">
+            <property role="38rIoG" value="r" />
+            <property role="38rMdH" value="0" />
+            <node concept="3Tqbb2" id="7UyXkgBEvHJ" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="13FtHz69kz3" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="testCase1" />
+            <node concept="3Tqbb2" id="13FtHz69kz4" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="13FtHz69kz5" role="38rM$J">
+            <property role="38rIoG" value="enter instance config" />
+            <property role="38rMdH" value="SrTestConfig" />
+            <node concept="3Tqbb2" id="13FtHz69kz6" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7UyXkgBKnRT" role="38rM$J">
+            <property role="38rIoG" value="anInternalField" />
+            <property role="38rMdH" value="0" />
+            <node concept="3Tqbb2" id="7UyXkgBKow4" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:4AGl5dzwHVj" resolve="Field" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7UyXkgBKow8" role="38rM$J">
+            <property role="38rIoG" value="anInternalField" />
+            <property role="38rMdH" value="0" />
+            <node concept="3Tqbb2" id="7UyXkgBKo$8" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:4AGl5dzwHVj" resolve="Field" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="13FtHz69kz7" role="38rM$J">
+            <property role="38rIoG" value="leave instance config" />
+            <property role="38rMdH" value="SrTestConfig" />
+            <node concept="3Tqbb2" id="13FtHz69kz8" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7UyXkgBEwQn" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="updateCarDataDrehzahl" />
+            <node concept="3Tqbb2" id="7UyXkgBExuY" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7UyXkgBEy6Y" role="38rM$J">
+            <property role="38rIoG" value="value" />
+            <property role="38rMdH" value="10" />
+            <node concept="3Tqbb2" id="7UyXkgBEyaG" role="38rYrG">
+              <ref role="ehGHo" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7UyXkgBEyaK" role="38rM$J">
+            <property role="38rIoG" value="value" />
+            <property role="38rMdH" value="11" />
+            <node concept="3Tqbb2" id="7UyXkgBEyMQ" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
+            </node>
+          </node>
+          <node concept="37vLTw" id="13FtHz69kzo" role="2v6RBE">
+            <ref role="3cqZAo" node="13FtHz69kyH" resolve="res" />
           </node>
         </node>
-        <node concept="3SKdUt" id="3f3CxMdw05n" role="3cqZAp">
-          <node concept="3SKWN0" id="3f3CxMdw05P" role="3SKWNk">
-            <node concept="38rL1p" id="13FtHz69kyW" role="3SKWNf">
-              <node concept="38rIoz" id="13FtHz69kyX" role="38rM$J">
-                <property role="38rIoG" value="c" />
-                <property role="38rMdH" value="*" />
-                <node concept="3Tqbb2" id="13FtHz69kyY" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+        <node concept="3clFbH" id="13FtHz69kzp" role="3cqZAp" />
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="7UyXkgB5zC_">
+    <property role="TrG5h" value="Comp5" />
+    <node concept="1LZb2c" id="7UyXkgB5zCA" role="1SL9yI">
+      <property role="TrG5h" value="testComp5" />
+      <node concept="3cqZAl" id="7UyXkgB5zCB" role="3clF45" />
+      <node concept="3clFbS" id="7UyXkgB5zCC" role="3clF47">
+        <node concept="3cpWs8" id="7UyXkgB5zCD" role="3cqZAp">
+          <node concept="3cpWsn" id="7UyXkgB5zCE" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="7UyXkgB5zCF" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="2OqwBi" id="7UyXkgB5zCG" role="33vP2m">
+              <node concept="NRdvd" id="7UyXkgB5zCH" role="2Oq$k0">
+                <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
+                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+                <node concept="2YIFZM" id="7UyXkgB5zCI" role="37wK5m">
+                  <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
+                  <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
+                </node>
+                <node concept="Xl_RD" id="7UyXkgB5zCJ" role="37wK5m">
+                  <property role="Xl_RC" value="Comp5" />
+                </node>
+                <node concept="Xl_RD" id="7UyXkgB5zCK" role="37wK5m">
+                  <property role="Xl_RC" value="entryPointComp5" />
                 </node>
               </node>
-              <node concept="38rIoz" id="13FtHz69kyZ" role="38rM$J">
-                <property role="38rIoG" value="value" />
-                <property role="38rMdH" value="0" />
-                <node concept="3Tqbb2" id="13FtHz69kz0" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+              <node concept="34jXtK" id="7UyXkgB5zCL" role="2OqNvi">
+                <node concept="3cmrfG" id="7UyXkgB5zCM" role="25WWJ7">
+                  <property role="3cmrfH" value="0" />
                 </node>
-              </node>
-              <node concept="38rIoz" id="13FtHz69kz1" role="38rM$J">
-                <property role="38rIoG" value="call" />
-                <property role="38rMdH" value="entryComponentTypes" />
-                <node concept="3Tqbb2" id="13FtHz69kz2" role="38rYrG">
-                  <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="13FtHz69kz3" role="38rM$J">
-                <property role="38rIoG" value="call" />
-                <property role="38rMdH" value="testComponentTypes" />
-                <node concept="3Tqbb2" id="13FtHz69kz4" role="38rYrG">
-                  <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="13FtHz69kz5" role="38rM$J">
-                <property role="38rIoG" value="enter instance config" />
-                <property role="38rMdH" value="wiring" />
-                <node concept="3Tqbb2" id="13FtHz69kz6" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="13FtHz69kz7" role="38rM$J">
-                <property role="38rIoG" value="leave instance config" />
-                <property role="38rMdH" value="wiring" />
-                <node concept="3Tqbb2" id="13FtHz69kz8" role="38rYrG">
-                  <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="13FtHz69kz9" role="38rM$J">
-                <property role="38rIoG" value="vl" />
-                <property role="38rMdH" value="0" />
-                <node concept="3Tqbb2" id="13FtHz69kza" role="38rYrG">
-                  <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="13FtHz69kzb" role="38rM$J">
-                <property role="38rIoG" value="call" />
-                <property role="38rMdH" value="getValueOfCallable" />
-                <node concept="3Tqbb2" id="13FtHz69kzc" role="38rYrG">
-                  <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="13FtHz69kzd" role="38rM$J">
-                <property role="38rIoG" value="value" />
-                <property role="38rMdH" value="42" />
-                <node concept="3Tqbb2" id="13FtHz69kze" role="38rYrG">
-                  <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="13FtHz69kzf" role="38rM$J">
-                <property role="38rIoG" value="call" />
-                <property role="38rMdH" value="callable" />
-                <node concept="3Tqbb2" id="13FtHz69kzg" role="38rYrG">
-                  <ref role="ehGHo" to="x27k:7LOsK3rQkU_" resolve="ReturnStatement" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="13FtHz69kzh" role="38rM$J">
-                <property role="38rIoG" value="return" />
-                <property role="38rMdH" value="callable" />
-                <node concept="3Tqbb2" id="13FtHz69kzi" role="38rYrG">
-                  <ref role="ehGHo" to="x27k:7LOsK3rQkU_" resolve="ReturnStatement" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="13FtHz69kzj" role="38rM$J">
-                <property role="38rIoG" value="vl" />
-                <property role="38rMdH" value="42" />
-              </node>
-              <node concept="38rIoz" id="13FtHz69kzk" role="38rM$J">
-                <property role="38rIoG" value="return" />
-                <property role="38rMdH" value="getValueOfCallable" />
-                <node concept="3Tqbb2" id="13FtHz69kzl" role="38rYrG">
-                  <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-                </node>
-              </node>
-              <node concept="38rIoz" id="13FtHz69kzm" role="38rM$J">
-                <property role="38rIoG" value="FAIL" />
-                <property role="38rMdH" value="*" />
-                <node concept="3Tqbb2" id="13FtHz69kzn" role="38rYrG">
-                  <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
-                </node>
-              </node>
-              <node concept="37vLTw" id="13FtHz69kzo" role="2v6RBE">
-                <ref role="3cqZAo" node="13FtHz69kyH" resolve="res" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="13FtHz69kzp" role="3cqZAp" />
+        <node concept="3clFbH" id="7UyXkgB5zCN" role="3cqZAp" />
+        <node concept="3vwNmj" id="7UyXkgB5zCO" role="3cqZAp">
+          <node concept="2OqwBi" id="7UyXkgB5zCP" role="3vwVQn">
+            <node concept="3cpWsa" id="7UyXkgB5zCQ" role="2Oq$k0">
+              <ref role="3cqZAo" node="7UyXkgB5zCE" resolve="res" />
+            </node>
+            <node concept="liA8E" id="7UyXkgB5zCR" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7UyXkgB5zCS" role="3cqZAp" />
+        <node concept="38rL1p" id="7UyXkgB5zCX" role="3cqZAp">
+          <node concept="38rIoz" id="7UyXkgB5zCY" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="entryPointComp5" />
+            <node concept="3Tqbb2" id="7UyXkgB5zCZ" role="38rYrG">
+              <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7UyXkgB5zD6" role="38rM$J">
+            <property role="38rIoG" value="enter instance config" />
+            <property role="38rMdH" value="file_stream" />
+            <node concept="3Tqbb2" id="7UyXkgB5zD7" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrV$P8" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="init" />
+            <node concept="3Tqbb2" id="7lmBuXrV_r$" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrV$S_" role="38rM$J">
+            <property role="38rIoG" value="fileContent" />
+            <property role="38rMdH" value="&quot;some content&quot;" />
+            <node concept="3Tqbb2" id="7lmBuXrV_rA" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrV$W3" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="init" />
+            <node concept="3Tqbb2" id="7lmBuXrV_ux" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7UyXkgB5zD8" role="38rM$J">
+            <property role="38rIoG" value="leave instance config" />
+            <property role="38rMdH" value="file_stream" />
+            <node concept="3Tqbb2" id="7UyXkgB5zD9" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7UyXkgB5zDc" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="read" />
+            <node concept="3Tqbb2" id="7UyXkgB5zDd" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:pTHqv6KODH" resolve="PortAdapterOpCallExpr" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7UyXkgB5zDe" role="38rM$J">
+            <property role="38rIoG" value="numOfChars" />
+            <property role="38rMdH" value="22" />
+            <node concept="3Tqbb2" id="7UyXkgB5zDf" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7UyXkgB5zDi" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="read" />
+            <node concept="3Tqbb2" id="7UyXkgB5zDj" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:pTHqv6KODH" resolve="PortAdapterOpCallExpr" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7UyXkgB5zDk" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="close" />
+            <node concept="3Tqbb2" id="7lmBuXrVCdn" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:pTHqv6KODH" resolve="PortAdapterOpCallExpr" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7UyXkgB5zDl" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="close" />
+            <node concept="3Tqbb2" id="7lmBuXrVCds" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:pTHqv6KODH" resolve="PortAdapterOpCallExpr" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7UyXkgB5zDn" role="38rM$J">
+            <property role="38rIoG" value="FAIL" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="7UyXkgB5zDo" role="38rYrG">
+              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+            </node>
+          </node>
+          <node concept="37vLTw" id="7UyXkgB5zDp" role="2v6RBE">
+            <ref role="3cqZAo" node="7UyXkgB5zCE" resolve="res" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="7lmBuXrWBeA">
+    <property role="TrG5h" value="Comp6" />
+    <node concept="1LZb2c" id="7lmBuXrWBeB" role="1SL9yI">
+      <property role="TrG5h" value="testComp6" />
+      <node concept="3cqZAl" id="7lmBuXrWBeC" role="3clF45" />
+      <node concept="3clFbS" id="7lmBuXrWBeD" role="3clF47">
+        <node concept="3cpWs8" id="7lmBuXrWBeE" role="3cqZAp">
+          <node concept="3cpWsn" id="7lmBuXrWBeF" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="7lmBuXrWBeG" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="2OqwBi" id="7lmBuXrWBeH" role="33vP2m">
+              <node concept="NRdvd" id="7lmBuXrWBeI" role="2Oq$k0">
+                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+                <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
+                <node concept="2YIFZM" id="7lmBuXrWBeJ" role="37wK5m">
+                  <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
+                  <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
+                </node>
+                <node concept="Xl_RD" id="7lmBuXrWBeK" role="37wK5m">
+                  <property role="Xl_RC" value="Comp6" />
+                </node>
+                <node concept="Xl_RD" id="7lmBuXrWBeL" role="37wK5m">
+                  <property role="Xl_RC" value="entryPointComp6" />
+                </node>
+              </node>
+              <node concept="34jXtK" id="7lmBuXrWBeM" role="2OqNvi">
+                <node concept="3cmrfG" id="7lmBuXrWBeN" role="25WWJ7">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7lmBuXrWBeO" role="3cqZAp" />
+        <node concept="3vwNmj" id="7lmBuXrWBeP" role="3cqZAp">
+          <node concept="2OqwBi" id="7lmBuXrWBeQ" role="3vwVQn">
+            <node concept="3cpWsa" id="7lmBuXrWBeR" role="2Oq$k0">
+              <ref role="3cqZAo" node="7lmBuXrWBeF" resolve="res" />
+            </node>
+            <node concept="liA8E" id="7lmBuXrWBeS" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7lmBuXrWBeT" role="3cqZAp" />
+        <node concept="38rL1p" id="7lmBuXrWBeU" role="3cqZAp">
+          <node concept="38rIoz" id="7lmBuXrWBeV" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="entryPointComp6" />
+            <node concept="3Tqbb2" id="7lmBuXrWBeW" role="38rYrG">
+              <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWBeX" role="38rM$J">
+            <property role="38rIoG" value="enter instance config" />
+            <property role="38rMdH" value="instances" />
+            <node concept="3Tqbb2" id="7lmBuXrWBeY" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWBf5" role="38rM$J">
+            <property role="38rIoG" value="leave instance config" />
+            <property role="38rMdH" value="instances" />
+            <node concept="3Tqbb2" id="7lmBuXrWBf6" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWDos" role="38rM$J">
+            <property role="38rIoG" value="direct" />
+            <property role="38rMdH" value="0" />
+            <node concept="3Tqbb2" id="7lmBuXrWE9a" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWBf7" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="add" />
+            <node concept="3Tqbb2" id="7lmBuXrWBf8" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:pTHqv6KODH" resolve="PortAdapterOpCallExpr" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWFzO" role="38rM$J">
+            <property role="38rIoG" value="x" />
+            <property role="38rMdH" value="2" />
+            <node concept="3Tqbb2" id="7lmBuXrWFBg" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWFBi" role="38rM$J">
+            <property role="38rIoG" value="y" />
+            <property role="38rMdH" value="3" />
+            <node concept="3Tqbb2" id="7lmBuXrWFEK" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWBfb" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="add" />
+            <node concept="3Tqbb2" id="7lmBuXrWBfc" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:pTHqv6KODH" resolve="PortAdapterOpCallExpr" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWFIe" role="38rM$J">
+            <property role="38rIoG" value="direct" />
+            <property role="38rMdH" value="5" />
+            <node concept="3Tqbb2" id="7lmBuXrWGv0" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWGv2" role="38rM$J">
+            <property role="38rIoG" value="indirect" />
+            <property role="38rMdH" value="0" />
+            <node concept="3Tqbb2" id="7lmBuXrWGyy" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWBfd" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="add" />
+            <node concept="3Tqbb2" id="7lmBuXrWBfe" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:pTHqv6KODH" resolve="PortAdapterOpCallExpr" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWHie" role="38rM$J">
+            <property role="38rIoG" value="x" />
+            <property role="38rMdH" value="2" />
+            <node concept="3Tqbb2" id="7lmBuXrWI8X" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWHlK" role="38rM$J">
+            <property role="38rIoG" value="y" />
+            <property role="38rMdH" value="3" />
+            <node concept="3Tqbb2" id="7lmBuXrWI93" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWI95" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="anExternalFunction" />
+            <node concept="3Tqbb2" id="7lmBuXrWITZ" role="38rYrG">
+              <ref role="ehGHo" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWIU1" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="add" />
+            <node concept="3Tqbb2" id="7lmBuXrWKrn" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:3yeYUb95Uqi" resolve="InterfaceTypeOpCallExpr" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWKrp" role="38rM$J">
+            <property role="38rIoG" value="x" />
+            <property role="38rMdH" value="10" />
+            <node concept="3Tqbb2" id="7lmBuXrWLio" role="38rYrG">
+              <ref role="ehGHo" to="x27k:7LOsK3rQkU_" resolve="ReturnStatement" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWKv3" role="38rM$J">
+            <property role="38rIoG" value="y" />
+            <property role="38rMdH" value="11" />
+            <node concept="3Tqbb2" id="7lmBuXrWLiq" role="38rYrG">
+              <ref role="ehGHo" to="x27k:7LOsK3rQkU_" resolve="ReturnStatement" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWBff" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="add" />
+            <node concept="3Tqbb2" id="7lmBuXrWBfg" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:3yeYUb95Uqi" resolve="InterfaceTypeOpCallExpr" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWLZK" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="anExternalFunction" />
+            <node concept="3Tqbb2" id="7lmBuXrWMN8" role="38rYrG">
+              <ref role="ehGHo" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWMNa" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="add" />
+            <node concept="3Tqbb2" id="7lmBuXrWN$e" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:pTHqv6KODH" resolve="PortAdapterOpCallExpr" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWOjU" role="38rM$J">
+            <property role="38rIoG" value="indirect" />
+            <property role="38rMdH" value="22" />
+            <node concept="3Tqbb2" id="7lmBuXrWP50" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="7lmBuXrWBfh" role="38rM$J">
+            <property role="38rIoG" value="FAIL" />
+            <property role="38rMdH" value="Assertion Violated" />
+            <node concept="3Tqbb2" id="7lmBuXrWBfi" role="38rYrG">
+              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+            </node>
+          </node>
+          <node concept="37vLTw" id="7lmBuXrWBfj" role="2v6RBE">
+            <ref role="3cqZAo" node="7lmBuXrWBeF" resolve="res" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

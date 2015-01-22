@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
   </languages>
   <imports>
     <import index="talm" ref="r:98c60105-1d91-4aab-8dfe-5ef258ec8eb6(com.mbeddr.core.debug.blext.structure)" />
@@ -152,6 +152,22 @@
             <node concept="3__QtB" id="5vye6PraE9j" role="2Oq$k0" />
             <node concept="3TrEf2" id="5vye6PraEtm" role="2OqNvi">
               <ref role="3Tt5mk" to="talm:3BC$6wjgjx5" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3_zdsH" id="5Zm7Bd_ICfi">
+    <property role="3GE5qa" value="watches.type-translation" />
+    <ref role="3_znuS" to="talm:3BC$6wkdFdb" resolve="MapTypeFromNodeExpr" />
+    <node concept="3__wT9" id="5Zm7Bd_ICFC" role="3_A6iZ">
+      <node concept="3clFbS" id="5Zm7Bd_IIHv" role="2VODD2">
+        <node concept="3AgYrR" id="5Zm7Bd_J3ps" role="3cqZAp">
+          <node concept="2OqwBi" id="5Zm7Bd_J3rE" role="3Ah4Yx">
+            <node concept="3__QtB" id="5Zm7Bd_J3pS" role="2Oq$k0" />
+            <node concept="3TrEf2" id="5Zm7Bd_J3Lx" role="2OqNvi">
+              <ref role="3Tt5mk" to="talm:3BC$6wkdFdc" />
             </node>
           </node>
         </node>

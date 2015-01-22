@@ -4419,13 +4419,19 @@
       <node concept="3Tm1VV" id="5uVxDlUcwMz" role="1B3o_S" />
       <node concept="3clFbS" id="5uVxDlUcwM$" role="3clF47">
         <node concept="2QERvH" id="5uVxDlUcwM_" role="3cqZAp">
-          <node concept="Xl_RD" id="5uVxDlUcwMA" role="2QERvC">
-            <property role="Xl_RC" value="__c" />
+          <node concept="2OqwBi" id="5hYHEwZ7Xlo" role="2QERvC">
+            <node concept="13iPFW" id="5hYHEwZ7XfX" role="2Oq$k0" />
+            <node concept="2qgKlT" id="5hYHEwZ7XNk" role="2OqNvi">
+              <ref role="37wK5l" node="5hYHEwZ7USZ" resolve="counterVarName" />
+            </node>
           </node>
         </node>
         <node concept="2QEC6U" id="5uVxDlUcwMB" role="3cqZAp">
-          <node concept="Xl_RD" id="5uVxDlUcwMC" role="2QEC6V">
-            <property role="Xl_RC" value="__it" />
+          <node concept="2OqwBi" id="5hYHEwZjxGL" role="2QEC6V">
+            <node concept="13iPFW" id="5hYHEwZjx_o" role="2Oq$k0" />
+            <node concept="2qgKlT" id="5hYHEwZjydn" role="2OqNvi">
+              <ref role="37wK5l" node="5hYHEwZ8fYO" resolve="iteratorVarName" />
+            </node>
           </node>
           <node concept="Xl_RD" id="5uVxDlUcwMD" role="2QEC75">
             <property role="Xl_RC" value="it" />
@@ -4437,7 +4443,7 @@
           <node concept="13iPFW" id="5uVxDlUcwMG" role="1qXms$" />
           <node concept="10QFUN" id="5uVxDlUcwMH" role="2QEC74">
             <node concept="3Tqbb2" id="5uVxDlUcwMI" role="10QFUM">
-              <ref role="ehGHo" to="2gv2:2by6456Kf3p" resolve="IMappableType" />
+              <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
             </node>
             <node concept="2OqwBi" id="5uVxDlUcwMJ" role="10QFUP">
               <node concept="1PxgMI" id="5uVxDlUcwMK" role="2Oq$k0">
@@ -4517,6 +4523,30 @@
         </node>
       </node>
       <node concept="3cqZAl" id="5uVxDlUcwNj" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="5hYHEwZ7USZ" role="13h7CS">
+      <property role="TrG5h" value="counterVarName" />
+      <node concept="3Tm1VV" id="5hYHEwZ7UT0" role="1B3o_S" />
+      <node concept="17QB3L" id="5hYHEwZ7Xfn" role="3clF45" />
+      <node concept="3clFbS" id="5hYHEwZ7UT2" role="3clF47">
+        <node concept="3clFbF" id="5hYHEwZ7Xft" role="3cqZAp">
+          <node concept="Xl_RD" id="5hYHEwZ7Xfs" role="3clFbG">
+            <property role="Xl_RC" value="__c" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5hYHEwZ8fYO" role="13h7CS">
+      <property role="TrG5h" value="iteratorVarName" />
+      <node concept="3Tm1VV" id="5hYHEwZ8fYP" role="1B3o_S" />
+      <node concept="17QB3L" id="5hYHEwZ8fYQ" role="3clF45" />
+      <node concept="3clFbS" id="5hYHEwZ8fYR" role="3clF47">
+        <node concept="3clFbF" id="5hYHEwZ8fYS" role="3cqZAp">
+          <node concept="Xl_RD" id="5hYHEwZ8fYT" role="3clFbG">
+            <property role="Xl_RC" value="__it" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="3agk82fvs9C">

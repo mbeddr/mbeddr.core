@@ -16493,8 +16493,8 @@
                 <node concept="2OqwBi" id="27NTXkFkQRd" role="33vP2m">
                   <node concept="2OqwBi" id="27NTXkFkQRe" role="2Oq$k0">
                     <node concept="2YIFZM" id="27NTXkFkQRf" role="2Oq$k0">
-                      <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                       <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
+                      <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                     </node>
                     <node concept="liA8E" id="27NTXkFkQRg" role="2OqNvi">
                       <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
@@ -19934,167 +19934,6 @@
         <ref role="3uigEE" node="35BAyTmXoAX" resolve="WVariable" />
       </node>
       <node concept="3clFbS" id="3$YgGAUVTx1" role="3clF47">
-        <node concept="3clFbF" id="r$RbHd4aRr" role="3cqZAp">
-          <node concept="2OqwBi" id="r$RbHd4aRs" role="3clFbG">
-            <node concept="10M0yZ" id="r$RbHd4aRt" role="2Oq$k0">
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="r$RbHd4aRu" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="r$RbHd4aRv" role="37wK5m">
-                <node concept="3cpWs3" id="r$RbHd4aRw" role="3uHU7B">
-                  <node concept="Xl_RD" id="r$RbHd4aRx" role="3uHU7w">
-                    <property role="Xl_RC" value=": " />
-                  </node>
-                  <node concept="2OqwBi" id="r$RbHd4aRy" role="3uHU7B">
-                    <node concept="37vLTw" id="r$RbHd4aRz" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3$YgGAUVTA1" resolve="variable" />
-                    </node>
-                    <node concept="liA8E" id="r$RbHd4aR$" role="2OqNvi">
-                      <ref role="37wK5l" to="3t10:~ICDIVariableDescriptor.getName():java.lang.String" resolve="getName" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="r$RbHd4aRA" role="3uHU7w">
-                  <node concept="3cpWs2" id="r$RbHd4aRB" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3$YgGAUVTA1" resolve="variable" />
-                  </node>
-                  <node concept="liA8E" id="r$RbHd4vT2" role="2OqNvi">
-                    <ref role="37wK5l" to="3t10:~ICDIVariableDescriptor.getName():java.lang.String" resolve="getName" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="58boHrZSl6r" role="3cqZAp">
-          <node concept="2OqwBi" id="58boHrZSl6n" role="3clFbG">
-            <node concept="10M0yZ" id="58boHrZSl6o" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="58boHrZSl6p" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="58boHrZSpCc" role="37wK5m">
-                <node concept="3cpWs3" id="58boHrZSvKl" role="3uHU7B">
-                  <node concept="Xl_RD" id="58boHrZSvPu" role="3uHU7w">
-                    <property role="Xl_RC" value=": " />
-                  </node>
-                  <node concept="2OqwBi" id="58boHrZSubq" role="3uHU7B">
-                    <node concept="37vLTw" id="58boHrZStZb" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3$YgGAUVTA1" resolve="variable" />
-                    </node>
-                    <node concept="liA8E" id="58boHrZSuSN" role="2OqNvi">
-                      <ref role="37wK5l" to="3t10:~ICDIVariableDescriptor.getName():java.lang.String" resolve="getName" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="58boHrZS4wr" role="3uHU7w">
-                  <node concept="2OqwBi" id="58boHrZS4ws" role="2Oq$k0">
-                    <node concept="3cpWs2" id="58boHrZS4wt" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3$YgGAUVTA1" resolve="variable" />
-                    </node>
-                    <node concept="liA8E" id="58boHrZS4wu" role="2OqNvi">
-                      <ref role="37wK5l" to="3t10:~ICDIVariable.getValue():org.eclipse.cdt.debug.core.cdi.model.ICDIValue" resolve="getValue" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="58boHrZS4wv" role="2OqNvi">
-                    <ref role="37wK5l" to="3t10:~ICDIValue.getValueString():java.lang.String" resolve="getValueString" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="58boHs0boIE" role="3cqZAp">
-          <node concept="2OqwBi" id="58boHs0boIF" role="3clFbG">
-            <node concept="10M0yZ" id="58boHs0boIG" role="2Oq$k0">
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="58boHs0boIH" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="58boHs0boII" role="37wK5m">
-                <node concept="3cpWs3" id="58boHs0boIJ" role="3uHU7B">
-                  <node concept="Xl_RD" id="58boHs0boIK" role="3uHU7w">
-                    <property role="Xl_RC" value=": " />
-                  </node>
-                  <node concept="2OqwBi" id="58boHs0boIL" role="3uHU7B">
-                    <node concept="37vLTw" id="58boHs0boIM" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3$YgGAUVTA1" resolve="variable" />
-                    </node>
-                    <node concept="liA8E" id="58boHs0boIN" role="2OqNvi">
-                      <ref role="37wK5l" to="3t10:~ICDIVariableDescriptor.getName():java.lang.String" resolve="getName" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="58boHs0bukE" role="3uHU7w">
-                  <node concept="2OqwBi" id="58boHs0boIO" role="2Oq$k0">
-                    <node concept="2OqwBi" id="58boHs0boIP" role="2Oq$k0">
-                      <node concept="3cpWs2" id="58boHs0boIQ" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3$YgGAUVTA1" resolve="variable" />
-                      </node>
-                      <node concept="liA8E" id="58boHs0boIR" role="2OqNvi">
-                        <ref role="37wK5l" to="3t10:~ICDIVariable.getValue():org.eclipse.cdt.debug.core.cdi.model.ICDIValue" resolve="getValue" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="58boHs0bu5i" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="58boHs0bwh5" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~Class.getName():java.lang.String" resolve="getName" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1wedq8R3Z$W" role="3cqZAp">
-          <node concept="2OqwBi" id="1wedq8R3Z$X" role="3clFbG">
-            <node concept="10M0yZ" id="1wedq8R3Z$Y" role="2Oq$k0">
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="1wedq8R3Z$Z" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="1wedq8R3Z_0" role="37wK5m">
-                <node concept="3cpWs3" id="1wedq8R3Z_1" role="3uHU7B">
-                  <node concept="Xl_RD" id="1wedq8R3Z_2" role="3uHU7w">
-                    <property role="Xl_RC" value=": " />
-                  </node>
-                  <node concept="2OqwBi" id="1wedq8R3Z_3" role="3uHU7B">
-                    <node concept="37vLTw" id="1wedq8R3Z_4" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3$YgGAUVTA1" resolve="variable" />
-                    </node>
-                    <node concept="liA8E" id="1wedq8R3Z_5" role="2OqNvi">
-                      <ref role="37wK5l" to="3t10:~ICDIVariableDescriptor.getName():java.lang.String" resolve="getName" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="1wedq8R3Z_6" role="3uHU7w">
-                  <node concept="2OqwBi" id="1wedq8R3Z_7" role="2Oq$k0">
-                    <node concept="2OqwBi" id="1wedq8R3Z_8" role="2Oq$k0">
-                      <node concept="3cpWs2" id="1wedq8R3Z_9" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3$YgGAUVTA1" resolve="variable" />
-                      </node>
-                      <node concept="liA8E" id="1wedq8R3Z_a" role="2OqNvi">
-                        <ref role="37wK5l" to="3t10:~ICDIVariableDescriptor.getType():org.eclipse.cdt.debug.core.cdi.model.type.ICDIType" resolve="getType" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="1wedq8R3Z_b" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="1wedq8R3Z_c" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~Class.getName():java.lang.String" resolve="getName" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="5rV3dCuc$Mz" role="3cqZAp" />
         <node concept="3clFbH" id="5rV3dCucB4M" role="3cqZAp" />
         <node concept="3cpWs8" id="3$YgGAUVTx8" role="3cqZAp">
@@ -27957,8 +27796,8 @@
                               <node concept="2OqwBi" id="6ey1bOhyFYX" role="33vP2m">
                                 <node concept="2OqwBi" id="6ey1bOhyFYY" role="2Oq$k0">
                                   <node concept="2YIFZM" id="6ey1bOhyFYZ" role="2Oq$k0">
-                                    <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                                     <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
+                                    <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                                   </node>
                                   <node concept="liA8E" id="6ey1bOhyFZ0" role="2OqNvi">
                                     <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
@@ -29441,8 +29280,8 @@
             <node concept="2OqwBi" id="7W4QWPKD_CU" role="33vP2m">
               <node concept="2OqwBi" id="7W4QWPKD_zQ" role="2Oq$k0">
                 <node concept="2YIFZM" id="7W4QWPKD_zx" role="2Oq$k0">
-                  <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                   <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
+                  <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                 </node>
                 <node concept="liA8E" id="7W4QWPKD_zW" role="2OqNvi">
                   <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
@@ -34426,8 +34265,8 @@
                           <node concept="2OqwBi" id="SDguXU4EBW" role="37vLTx">
                             <node concept="2OqwBi" id="SDguXU4EBX" role="2Oq$k0">
                               <node concept="2YIFZM" id="SDguXU4EBY" role="2Oq$k0">
-                                <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                                 <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
+                                <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                               </node>
                               <node concept="liA8E" id="SDguXU4EBZ" role="2OqNvi">
                                 <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
@@ -34563,8 +34402,8 @@
               <node concept="2OqwBi" id="4DC8Sn_X97m" role="2Oq$k0">
                 <node concept="2OqwBi" id="4DC8Sn_X97n" role="2Oq$k0">
                   <node concept="2YIFZM" id="4DC8Sn_X97o" role="2Oq$k0">
-                    <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                     <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
+                    <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                   </node>
                   <node concept="liA8E" id="4DC8Sn_X97p" role="2OqNvi">
                     <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
@@ -56133,8 +55972,8 @@
                   <property role="Xl_RC" value="gInst: " />
                 </node>
                 <node concept="2YIFZM" id="7SijymUTy5s" role="3uHU7w">
-                  <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                   <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
+                  <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                 </node>
               </node>
             </node>
@@ -56154,8 +55993,8 @@
                 </node>
                 <node concept="2OqwBi" id="7SijymUT_Gp" role="3uHU7w">
                   <node concept="2YIFZM" id="7SijymUT_Gq" role="2Oq$k0">
-                    <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                     <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
+                    <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                   </node>
                   <node concept="liA8E" id="7SijymUT_Gr" role="2OqNvi">
                     <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
@@ -56717,8 +56556,8 @@
             <node concept="2OqwBi" id="6fmd53k3aat" role="33vP2m">
               <node concept="2OqwBi" id="6fmd53k3aau" role="2Oq$k0">
                 <node concept="2YIFZM" id="6fmd53k3aav" role="2Oq$k0">
-                  <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                   <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
+                  <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                 </node>
                 <node concept="liA8E" id="6fmd53k3aaw" role="2OqNvi">
                   <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
@@ -58129,8 +57968,8 @@
                 <node concept="2OqwBi" id="1rtLOiybRd_" role="33vP2m">
                   <node concept="2OqwBi" id="1rtLOiybRdA" role="2Oq$k0">
                     <node concept="2YIFZM" id="1rtLOiybRdB" role="2Oq$k0">
-                      <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                       <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
+                      <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                     </node>
                     <node concept="liA8E" id="1rtLOiybRdC" role="2OqNvi">
                       <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
@@ -59736,8 +59575,8 @@
             <node concept="2OqwBi" id="EAFuLErVK9" role="33vP2m">
               <node concept="2OqwBi" id="EAFuLErVKa" role="2Oq$k0">
                 <node concept="2YIFZM" id="EAFuLErVKb" role="2Oq$k0">
-                  <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                   <ref role="37wK5l" to="ierg:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
+                  <ref role="1Pybhc" to="ierg:~TraceInfoCache" resolve="TraceInfoCache" />
                 </node>
                 <node concept="liA8E" id="EAFuLErVKc" role="2OqNvi">
                   <ref role="37wK5l" to="dd55:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />

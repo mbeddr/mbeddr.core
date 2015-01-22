@@ -32,6 +32,10 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -44,6 +48,9 @@
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -64,11 +71,14 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
+        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
+      </concept>
+      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -121,6 +131,9 @@
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" to="th2u:4arT0cnAVru" resolve="createAnalyzer" />
+      <node concept="3uibUv" id="5uqRFp96ZSr" role="3clF45">
+        <ref role="3uigEE" to="tzyt:3_HSwtcWh0_" resolve="CProverAnalyzerFactory" />
+      </node>
       <node concept="3Tm1VV" id="5LoFa4GcVG$" role="1B3o_S" />
       <node concept="3clFbS" id="5LoFa4GcVGH" role="3clF47">
         <node concept="3clFbF" id="5LoFa4GcXrp" role="3cqZAp">
@@ -141,17 +154,38 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5LoFa4GcY8s" role="3cqZAp">
-          <node concept="2ShNRf" id="5LoFa4GcY8o" role="3clFbG">
-            <node concept="1pGfFk" id="5LoFa4Gd4VF" role="2ShVmc">
-              <ref role="37wK5l" to="iehc:4arT0cnsk1K" resolve="StatemachinesAnalyzer" />
-              <node concept="37vLTw" id="5LoFa4Gd4Yq" role="37wK5m">
+        <node concept="3cpWs8" id="5uqRFp971cX" role="3cqZAp">
+          <node concept="3cpWsn" id="5uqRFp971cY" role="3cpWs9">
+            <property role="TrG5h" value="factory" />
+            <node concept="3uibUv" id="5uqRFp971cZ" role="1tU5fm">
+              <ref role="3uigEE" to="iehc:3_HSwtcYpiz" resolve="StatemachinesAnalyzerFactory" />
+            </node>
+            <node concept="2ShNRf" id="5uqRFp973_c" role="33vP2m">
+              <node concept="HV5vD" id="5uqRFp97462" role="2ShVmc">
+                <ref role="HV5vE" to="iehc:3_HSwtcYpiz" resolve="StatemachinesAnalyzerFactory" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5uqRFp974Xe" role="3cqZAp">
+          <node concept="2OqwBi" id="5uqRFp975rN" role="3clFbG">
+            <node concept="37vLTw" id="5uqRFp974Xc" role="2Oq$k0">
+              <ref role="3cqZAo" node="5uqRFp971cY" resolve="factory" />
+            </node>
+            <node concept="liA8E" id="5uqRFp9767C" role="2OqNvi">
+              <ref role="37wK5l" to="tzyt:5uqRFp90Ty4" resolve="setParameters" />
+              <node concept="37vLTw" id="5uqRFp976xw" role="37wK5m">
                 <ref role="3cqZAo" node="5LoFa4GcVGI" resolve="config" />
               </node>
-              <node concept="37vLTw" id="5LoFa4Gd54n" role="37wK5m">
+              <node concept="37vLTw" id="5uqRFp977lH" role="37wK5m">
                 <ref role="3cqZAo" node="5LoFa4GcVGK" resolve="tool" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5uqRFp978d0" role="3cqZAp">
+          <node concept="37vLTw" id="5uqRFp978cY" role="3clFbG">
+            <ref role="3cqZAo" node="5uqRFp971cY" resolve="factory" />
           </node>
         </node>
       </node>
@@ -166,9 +200,6 @@
         <node concept="3uibUv" id="5LoFa4GcVGL" role="1tU5fm">
           <ref role="3uigEE" to="ood5:5A94f9EE$RB" resolve="MPSToolAdapter" />
         </node>
-      </node>
-      <node concept="3uibUv" id="5LoFa4GcVGM" role="3clF45">
-        <ref role="3uigEE" to="tzyt:2UdJgvCT1yk" resolve="CProverAnalyzerBase" />
       </node>
     </node>
   </node>

@@ -834,6 +834,24 @@
             <ref role="3bR37D" to="p6ld:4gFRqcy1Vdg" resolve="com.mbeddr.analyses.cbmc.core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3YIXnYN2fOj" role="3bR37C">
+          <node concept="3bR9La" id="3YIXnYN2fOk" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3YIXnYN2fOl" role="3bR37C">
+          <node concept="3bR9La" id="3YIXnYN2fOm" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:ymnOULAU0H" resolve="jetbrains.mps.lang.test" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3YIXnYN2fOn" role="3bR37C">
+          <node concept="3bR9La" id="3YIXnYN2fOo" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:7uZw0yZ43JW" resolve="com.mbeddr.core.util" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3C6_kMLzz1t" role="2G$12L">
         <property role="BnDLt" value="true" />

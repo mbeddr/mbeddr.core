@@ -262,8 +262,9 @@
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.OnPlatform" typeId="rpmx.5641871277849447479" id="8548777266774156281" nodeInfo="ng">
           <property name="platform" nameId="rpmx.5641871277852618466" value="mac" />
           <node role="children" roleId="rpmx.5641871277849477942" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8924761790438006453" nodeInfo="ng">
-            <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="1617520389139202886" nodeInfo="ng">
-              <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8165847842702599932" resolveInfo="functionCallToHelperFunc" />
+            <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="317989123600065247" nodeInfo="ng">
+              <property name="name" nameId="rpmx.105850086903157559" value="marker" />
+              <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="2812390151932454156" resolveInfo="returnAfterFunctionCall" />
             </node>
           </node>
           <node role="elseOnPart" roleId="rpmx.5641871277850143726" type="rpmx.ElseOnPlatform" typeId="rpmx.5641871277850133578" id="8548777266774172148" nodeInfo="ng">

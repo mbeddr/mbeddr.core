@@ -22,6 +22,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="rmg4" ref="r:18211265-1331-48c8-8298-565ed01be497(com.mbeddr.core.unittest.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -312,7 +313,7 @@
             <property role="TrG5h" value="aFunction" />
             <node concept="3XIRFW" id="78Ts1skrPXl" role="3XIRFX">
               <node concept="3XIRlf" id="eSkzRgLzuB" role="3XIRFZ">
-                <property role="TrG5h" value="___failures" />
+                <property role="TrG5h" value="failures" />
                 <node concept="3wxxNl" id="eSkzRgLzv7" role="2C2TGm">
                   <property role="2caQfQ" value="false" />
                   <property role="2c7vTL" value="false" />
@@ -343,7 +344,34 @@
                     </node>
                   </node>
                   <node concept="3ZVu4v" id="eSkzRgLzuH" role="3O_q_j">
-                    <ref role="3ZVs_2" node="eSkzRgLzuB" resolve="___failures" />
+                    <ref role="3ZVs_2" node="eSkzRgLzuB" resolve="failures" />
+                    <node concept="1ZhdrF" id="5hYHEwYlmOR" role="lGtFl">
+                      <property role="2qtEX8" value="var" />
+                      <node concept="3$xsQk" id="5hYHEwYlmOS" role="3$ytzL">
+                        <node concept="3clFbS" id="5hYHEwYlmOT" role="2VODD2">
+                          <node concept="3clFbF" id="5hYHEwYlnJa" role="3cqZAp">
+                            <node concept="2OqwBi" id="5hYHEwYlsby" role="3clFbG">
+                              <node concept="2OqwBi" id="5hYHEwYlqdM" role="2Oq$k0">
+                                <node concept="2OqwBi" id="5hYHEwYlnPb" role="2Oq$k0">
+                                  <node concept="30H73N" id="5hYHEwYlnJ9" role="2Oq$k0" />
+                                  <node concept="3TrEf2" id="5hYHEwYlpuH" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="v0r9:5iVHc7E9WKm" />
+                                  </node>
+                                </node>
+                                <node concept="3CFZ6_" id="5hYHEwYlrMp" role="2OqNvi">
+                                  <node concept="3CFYIy" id="5hYHEwYlrXm" role="3CFYIz">
+                                    <ref role="3CFYIx" to="yz9a:78Ts1sksSoD" resolve="TestHelperFunctionAnnotation" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="2qgKlT" id="5hYHEwYlsPV" role="2OqNvi">
+                                <ref role="37wK5l" to="rmg4:5hYHEwYdCRV" resolve="pointerOnNumOfFailsVarName" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                   </node>
                   <node concept="YInwV" id="78Ts1skrQ0S" role="3O_q_j">
                     <node concept="1S7827" id="78Ts1skrQ11" role="1_9fRO">
@@ -859,8 +887,20 @@
                             </node>
                             <node concept="1snrkl" id="eSkzRgLzvj" role="1sne05">
                               <ref role="1snrk2" to="tpck:h0TrG11" resolve="name" />
-                              <node concept="Xl_RD" id="eSkzRgLzvk" role="1snq_E">
-                                <property role="Xl_RC" value="___failures" />
+                              <node concept="2OqwBi" id="5hYHEwYlGUd" role="1snq_E">
+                                <node concept="2OqwBi" id="5hYHEwYl_Ci" role="2Oq$k0">
+                                  <node concept="37vLTw" id="5hYHEwYlzxx" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="eSkzRgLx3M" resolve="it" />
+                                  </node>
+                                  <node concept="3CFZ6_" id="5hYHEwYlFg8" role="2OqNvi">
+                                    <node concept="3CFYIy" id="5hYHEwYlG3s" role="3CFYIz">
+                                      <ref role="3CFYIx" to="yz9a:78Ts1sksSoD" resolve="TestHelperFunctionAnnotation" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="2qgKlT" id="5hYHEwYlJuw" role="2OqNvi">
+                                  <ref role="37wK5l" to="rmg4:5hYHEwYdCRV" resolve="pointerOnNumOfFailsVarName" />
+                                </node>
                               </node>
                             </node>
                           </node>

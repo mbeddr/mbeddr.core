@@ -188,6 +188,7 @@
         <child id="5641871277849477942" name="children" index="16YnsZ" />
       </concept>
       <concept id="4193597469137492644" name="com.mbeddr.core.debug.test.structure.MarkerRef" flags="ng" index="3cQ7K9">
+        <property id="105850086903157559" name="name" index="3sdDOw" />
         <reference id="4193597469137492645" name="marker" index="3cQ7K8" />
       </concept>
       <concept id="4193597469137492628" name="com.mbeddr.core.debug.test.structure.MarkerAnnotation" flags="ng" index="3cQ7KT" />
@@ -254,6 +255,9 @@
   </registry>
   <node concept="2v9HqL" id="3_UUdaFlgP0">
     <property role="TrG5h" value="dummy" />
+    <node concept="2xfidK" id="2nospmWkRWS" role="2AWWZH">
+      <ref role="2xfifS" to="3fet:378vUkgqJC$" resolve="Desktop Platform" />
+    </node>
     <node concept="2Q9Fgs" id="3_UUdaFlgP2" role="2Q9xDr">
       <node concept="2Q9FjX" id="3_UUdaFlgP3" role="2Q9FjI" />
     </node>
@@ -266,9 +270,6 @@
       <node concept="2v9HqM" id="3_UUdaFlgP5" role="2eOfOg">
         <ref role="2v9HqP" node="3_UUdaFlgO6" resolve="StepOutSMTest" />
       </node>
-    </node>
-    <node concept="2xfidK" id="2nospmWkRWS" role="2AWWZH">
-      <ref role="2xfifS" to="3fet:378vUkgqJC$" resolve="Desktop Platform" />
     </node>
   </node>
   <node concept="309jyn" id="2Zy_zYsNcR9">
@@ -284,8 +285,9 @@
         <node concept="16YvwY" id="7qzmU5U0xUa" role="3F5Y$9">
           <property role="16EpFF" value="mac" />
           <node concept="30a7bf" id="3wYrwRBNg0r" role="16YnsZ">
-            <node concept="3cQ7K9" id="3wYrwRBNhpr" role="30a7be">
-              <ref role="3cQ7K8" node="7ecc3KAs1eG" resolve="transitionFromRedToGreen" />
+            <node concept="3cQ7K9" id="hDImLkg_OQ" role="30a7be">
+              <property role="3sdDOw" value="marker" />
+              <ref role="3cQ7K8" node="7ecc3KAs2gc" resolve="transitionFromGreenToBlue" />
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0yx_" role="16XPZB">

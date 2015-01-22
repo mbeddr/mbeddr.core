@@ -12,6 +12,7 @@
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="0a02a8f9-14d0-4970-9bd2-ca35a097c80d" name="com.mbeddr.analyses.cbmc.core" version="-1" />
+    <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -80,10 +81,21 @@
       <concept id="4053481679317021363" name="com.mbeddr.analyses.cbmc.core.structure.AssertionsCBMCAnalysis" flags="ng" index="1nvAUJ" />
     </language>
     <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
+      <concept id="8327535879610131181" name="com.mbeddr.analyses.cbmc.structure.ICbmcSettings" flags="ng" index="2lUzGJ">
+        <property id="8327535879610783176" name="timeoutInSeconds" index="2l50Ka" />
+        <property id="8327535879610783188" name="timeoutForSingleAnalysis" index="2l50Km" />
+        <property id="8327535879610783118" name="hasLocalTimeout" index="2l50Lc" />
+        <property id="8327535879610783060" name="sliceFormula" index="2l50Mm" />
+        <property id="8327535879613056020" name="hasLocalCbmcSettings" index="2lelRm" />
+        <property id="8327535879610145579" name="analysisDepth" index="2lUGbD" />
+        <property id="8327535879610145521" name="useRefinement" index="2lUGcN" />
+        <property id="8327535879610145463" name="partialLoops" index="2lUGdP" />
+        <property id="8327535879610145347" name="hasUnwindingDepth" index="2lUGe1" />
+        <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
+        <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
+      </concept>
+      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
       <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
-        <property id="441761995014974059" name="analysisDepth" index="2y0XTq" />
-        <property id="6472990431939799909" name="unwindingDepth" index="3V$Cn_" />
-        <property id="6472990431939799910" name="unwindingAssertions" index="3V$CnA" />
         <reference id="6472990431939799908" name="entryPoint" index="3V$Cn$" />
       </concept>
     </language>
@@ -237,18 +249,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="3V_BKJ" id="1ALZLTm0ZHl">
-    <property role="TrG5h" value="AC" />
-    <node concept="1nvAUJ" id="1ALZLTm0ZHm" role="3V$2$K">
-      <property role="3V$CnA" value="false" />
-      <property role="3V$Cn_" value="100" />
-      <property role="2y0XTq" value="1120" />
-      <ref role="3V$Cn$" node="1ALZLTm0ZMX" resolve="Recursion_caller" />
-    </node>
-    <node concept="3GEVxB" id="19LfhoXYxcF" role="3W6d8T">
-      <ref role="3GEb4d" node="1ALZLTm0ZHq" resolve="simulink_tutorial" />
     </node>
   </node>
   <node concept="N3F5e" id="1ALZLTm0ZHq">
@@ -501,6 +501,29 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="3uEX16" id="YjU9tucQIL">
+    <property role="2lelRm" value="false" />
+    <property role="2l50Lc" value="false" />
+    <property role="2l50Ka" value="none" />
+    <property role="2l50Km" value="none" />
+    <property role="2lUGeZ" value="true" />
+    <property role="2lUGdP" value="false" />
+    <property role="2lUHrg" value="25" />
+    <property role="2lUGe1" value="true" />
+    <property role="2lUGbD" value="none" />
+    <property role="2lUGcN" value="false" />
+    <property role="2l50Mm" value="false" />
+    <property role="TrG5h" value="AC" />
+    <node concept="3GEVxB" id="19LfhoXYxcF" role="3W6d8T">
+      <ref role="3GEb4d" node="1ALZLTm0ZHq" resolve="simulink_tutorial" />
+    </node>
+    <node concept="1nvAUJ" id="1ALZLTm0ZHm" role="3V$2$K">
+      <property role="2lUGeZ" value="false" />
+      <property role="2lUHrg" value="100" />
+      <property role="2lUGbD" value="1120" />
+      <ref role="3V$Cn$" node="1ALZLTm0ZMX" resolve="Recursion_caller" />
     </node>
   </node>
 </model>

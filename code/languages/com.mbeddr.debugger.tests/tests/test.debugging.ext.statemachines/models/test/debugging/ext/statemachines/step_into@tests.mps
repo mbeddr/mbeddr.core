@@ -40,6 +40,7 @@
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
+      <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
       <concept id="2093108837558113914" name="com.mbeddr.core.statements.structure.LocalVarRef" flags="ng" index="3ZVu4v">
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
       </concept>
@@ -165,6 +166,17 @@
       <concept id="7048220250906049590" name="com.mbeddr.core.debug.test.structure.ValidateDebuggerSuspended" flags="ng" index="30a7bf">
         <child id="7048220250906049591" name="marker" index="30a7be" />
       </concept>
+      <concept id="5641871277852617673" name="com.mbeddr.core.debug.test.structure.PlatformValidationElement" flags="ng" index="16EpZ0">
+        <property id="5641871277852618466" name="platform" index="16EpFF" />
+      </concept>
+      <concept id="5641871277850133578" name="com.mbeddr.core.debug.test.structure.ElseOnPlatform" flags="ng" index="16XR13">
+        <child id="5641871277850163791" name="elseOn" index="16XKT6" />
+        <child id="5641871277850143723" name="children" index="16XPZy" />
+      </concept>
+      <concept id="5641871277849447479" name="com.mbeddr.core.debug.test.structure.OnPlatform" flags="ng" index="16YvwY">
+        <child id="5641871277850143726" name="elseOnPart" index="16XPZB" />
+        <child id="5641871277849477942" name="children" index="16YnsZ" />
+      </concept>
       <concept id="4193597469137492644" name="com.mbeddr.core.debug.test.structure.MarkerRef" flags="ng" index="3cQ7K9">
         <property id="105850086903157559" name="name" index="3sdDOw" />
         <reference id="4193597469137492645" name="marker" index="3cQ7K8" />
@@ -231,6 +243,9 @@
   </registry>
   <node concept="2v9HqL" id="2cOIoslaqtc">
     <property role="TrG5h" value="dummy" />
+    <node concept="2xfidK" id="2nospmWkS02" role="2AWWZH">
+      <ref role="2xfifS" to="3fet:378vUkgqJC$" resolve="Desktop Platform" />
+    </node>
     <node concept="2Q9Fgs" id="2cOIoslaqte" role="2Q9xDr">
       <node concept="2Q9FjX" id="2cOIoslaqtf" role="2Q9FjI" />
     </node>
@@ -243,9 +258,6 @@
       <node concept="2v9HqM" id="2cOIoslaqth" role="2eOfOg">
         <ref role="2v9HqP" node="2cOIoslaqsi" resolve="StepIntoSM" />
       </node>
-    </node>
-    <node concept="2xfidK" id="2nospmWkS02" role="2AWWZH">
-      <ref role="2xfifS" to="3fet:378vUkgqJC$" resolve="Desktop Platform" />
     </node>
   </node>
   <node concept="N3F5e" id="2cOIoslaqsi">
@@ -462,6 +474,7 @@
         <node concept="1LFeb9" id="2cOIoslaqWN" role="1KoBSX">
           <ref role="1zztin" node="2cOIoslaqt$" resolve="red" />
           <node concept="3XIRFW" id="2cOIoslaqWO" role="1zz7TA">
+            <node concept="3XISUE" id="hDImLjWNyV" role="3XIRFZ" />
             <node concept="1_9egQ" id="2cOIoslaqXe" role="3XIRFZ">
               <node concept="3pqW6w" id="2cOIoslaqXi" role="1_9egR">
                 <node concept="3TlMhd" id="2cOIoslaqXl" role="3TlMhJ" />
@@ -619,10 +632,30 @@
         </node>
       </node>
       <node concept="3F5Y_J" id="2cOIoslbO7n" role="3F5AM1">
-        <node concept="30a7bf" id="2cOIoslbO7o" role="3F5Y$9">
-          <node concept="3cQ7K9" id="2eaTN_o_dqZ" role="30a7be">
-            <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" node="7ecc3K_XrHT" resolve="triggering2ndTrans" />
+        <node concept="16YvwY" id="hDImLjXbKA" role="3F5Y$9">
+          <node concept="30a7bf" id="hDImLjXbKF" role="16YnsZ">
+            <node concept="3cQ7K9" id="hDImLjXbKH" role="30a7be">
+              <property role="3sdDOw" value="marker" />
+              <ref role="3cQ7K8" node="7Hpw6GdNcBI" resolve="lastStmntInTestcase" />
+            </node>
+          </node>
+          <node concept="16XR13" id="hDImLjXbKJ" role="16XPZB">
+            <property role="16EpFF" value="nux" />
+            <node concept="30a7bf" id="hDImLjXc6J" role="16XPZy">
+              <node concept="3cQ7K9" id="hDImLjXc6K" role="30a7be">
+                <property role="3sdDOw" value="marker" />
+                <ref role="3cQ7K8" node="7ecc3K_XrHT" resolve="triggering2ndTrans" />
+              </node>
+            </node>
+            <node concept="16XR13" id="hDImLjXbKL" role="16XKT6">
+              <property role="16EpFF" value="win" />
+              <node concept="30a7bf" id="2cOIoslbO7o" role="16XPZy">
+                <node concept="3cQ7K9" id="2eaTN_o_dqZ" role="30a7be">
+                  <property role="3sdDOw" value="marker" />
+                  <ref role="3cQ7K8" node="7ecc3K_XrHT" resolve="triggering2ndTrans" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

@@ -2,10 +2,10 @@
 <model ref="r:55cd9c3d-79d3-4468-8abe-65d809c76fa4(com.mbeddr.analyses.cbmc.core.rt.analyses.reachability)">
   <persistence version="9" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
   </languages>
   <imports>
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
@@ -15,6 +15,7 @@
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="ood5" ref="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" />
     <import index="x609" ref="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.progress(MPS.Platform/jetbrains.mps.progress@java_stub)" />
+    <import index="fw3h" ref="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.progress(MPS.IDEA/com.intellij.openapi.progress@java_stub)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -191,38 +192,9 @@
       <node concept="3Tm1VV" id="3x0R1LJ5H3a" role="1B3o_S" />
       <node concept="3clFbS" id="3x0R1LJ5H3b" role="3clF47">
         <node concept="XkiVB" id="3x0R1LJ5H3c" role="3cqZAp">
-          <ref role="37wK5l" to="eqhl:54VWoniifzb" resolve="CBMCLiftedResult" />
-          <node concept="2OqwBi" id="3x0R1LJ5H3d" role="37wK5m">
-            <node concept="3cpWs2" id="3x0R1LJ5H3e" role="2Oq$k0">
-              <ref role="3cqZAo" node="3x0R1LJ5H35" resolve="liftedResult" />
-            </node>
-            <node concept="2S8uIT" id="3x0R1LJ5H3f" role="2OqNvi">
-              <ref role="2S8YL0" to="eqhl:7N0A15Xmnw0" resolve="delayInMillis" />
-            </node>
-          </node>
-          <node concept="2OqwBi" id="3x0R1LJ5H3g" role="37wK5m">
-            <node concept="3cpWs2" id="3x0R1LJ5H3h" role="2Oq$k0">
-              <ref role="3cqZAo" node="3x0R1LJ5H35" resolve="liftedResult" />
-            </node>
-            <node concept="liA8E" id="3x0R1LJ5H3i" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:54VWoniify$" resolve="getResultKind" />
-            </node>
-          </node>
-          <node concept="2OqwBi" id="3x0R1LJ5H3j" role="37wK5m">
-            <node concept="3cpWs2" id="3x0R1LJ5H3k" role="2Oq$k0">
-              <ref role="3cqZAo" node="3x0R1LJ5H35" resolve="liftedResult" />
-            </node>
-            <node concept="liA8E" id="3x0R1LJ5H3l" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:54VWoniifyM" resolve="getCounterexampleStates" />
-            </node>
-          </node>
-          <node concept="2OqwBi" id="3x0R1LJ5H3m" role="37wK5m">
-            <node concept="3cpWs2" id="3x0R1LJ5H3n" role="2Oq$k0">
-              <ref role="3cqZAo" node="3x0R1LJ5H35" resolve="liftedResult" />
-            </node>
-            <node concept="2S8uIT" id="3x0R1LJ5H3o" role="2OqNvi">
-              <ref role="2S8YL0" to="eqhl:47YXc$vgOwL" resolve="analyzedConcept" />
-            </node>
+          <ref role="37wK5l" to="eqhl:4XbM$YHffxN" resolve="CBMCLiftedResult" />
+          <node concept="3cpWs2" id="3x0R1LJ5H3e" role="37wK5m">
+            <ref role="3cqZAo" node="3x0R1LJ5H35" resolve="liftedResult" />
           </node>
         </node>
         <node concept="3clFbF" id="3x0R1LJ5H3p" role="3cqZAp">
@@ -397,8 +369,8 @@
       </node>
       <node concept="37vLTG" id="3x0R1LJ5H4$" role="3clF46">
         <property role="TrG5h" value="progress" />
-        <node concept="3uibUv" id="3x0R1LJ5H4_" role="1tU5fm">
-          <ref role="3uigEE" to="x609:~ProgressMonitorAdapter" resolve="ProgressMonitorAdapter" />
+        <node concept="3uibUv" id="5uqRFp91Kqo" role="1tU5fm">
+          <ref role="3uigEE" to="fw3h:~ProgressIndicator" resolve="ProgressIndicator" />
         </node>
       </node>
       <node concept="3cqZAl" id="3x0R1LJ5H4A" role="3clF45" />
@@ -410,6 +382,9 @@
           </node>
           <node concept="37vLTw" id="3x0R1LJ5H4E" role="37wK5m">
             <ref role="3cqZAo" node="3x0R1LJ5H4w" resolve="tool" />
+          </node>
+          <node concept="37vLTw" id="5uqRFp91KyI" role="37wK5m">
+            <ref role="3cqZAo" node="3x0R1LJ5H4$" resolve="progress" />
           </node>
         </node>
         <node concept="3clFbF" id="3x0R1LJ5H4F" role="3cqZAp">
@@ -434,32 +409,6 @@
               <node concept="Xjq3P" id="3x0R1LJ5H4P" role="2Oq$k0" />
               <node concept="2OwXpG" id="3x0R1LJ5H4Q" role="2OqNvi">
                 <ref role="2Oxat5" node="3x0R1LJ5H4n" resolve="higherLevelAnalysisName" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="3x0R1LJ5H4R" role="3cqZAp">
-          <node concept="37vLTI" id="3x0R1LJ5H4S" role="3clFbG">
-            <node concept="3clFbT" id="3x0R1LJ5H4T" role="37vLTx">
-              <property role="3clFbU" value="false" />
-            </node>
-            <node concept="2OqwBi" id="3x0R1LJ5H4U" role="37vLTJ">
-              <node concept="Xjq3P" id="3x0R1LJ5H4V" role="2Oq$k0" />
-              <node concept="2OwXpG" id="3x0R1LJ5H4W" role="2OqNvi">
-                <ref role="2Oxat5" to="ood5:Lg9kEapJWQ" resolve="hasProperProgress" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="3x0R1LJ5H4X" role="3cqZAp">
-          <node concept="37vLTI" id="3x0R1LJ5H4Y" role="3clFbG">
-            <node concept="37vLTw" id="3x0R1LJ5H4Z" role="37vLTx">
-              <ref role="3cqZAo" node="3x0R1LJ5H4$" resolve="progress" />
-            </node>
-            <node concept="2OqwBi" id="3x0R1LJ5H50" role="37vLTJ">
-              <node concept="Xjq3P" id="3x0R1LJ5H51" role="2Oq$k0" />
-              <node concept="2OwXpG" id="3x0R1LJ5H52" role="2OqNvi">
-                <ref role="2Oxat5" to="ood5:7F8$WoW31WD" resolve="progress" />
               </node>
             </node>
           </node>

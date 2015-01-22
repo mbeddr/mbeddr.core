@@ -3,6 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
@@ -12,8 +14,6 @@
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -84,12 +84,6 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
-      </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
@@ -813,7 +807,7 @@
             <property role="38rIoG" value="iPar" />
             <property role="38rMdH" value="2" />
             <node concept="3Tqbb2" id="4PqBjXXxwKy" role="38rYrG">
-              <ref role="ehGHo" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
+              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
             </node>
           </node>
           <node concept="38rIoz" id="1hCIBtjelqJ" role="38rM$J">
@@ -831,7 +825,7 @@
             <property role="38rIoG" value="iPar" />
             <property role="38rMdH" value="1" />
             <node concept="3Tqbb2" id="4PqBjXXxwZw" role="38rYrG">
-              <ref role="ehGHo" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
+              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
             </node>
           </node>
           <node concept="38rIoz" id="1hCIBtjeraw" role="38rM$J">
@@ -1046,7 +1040,7 @@
             <property role="38rIoG" value="arg" />
             <property role="38rMdH" value="100" />
             <node concept="3Tqbb2" id="7jUHbYgmCkV" role="38rYrG">
-              <ref role="ehGHo" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
+              <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
             </node>
           </node>
           <node concept="38rIoz" id="1hCIBtjePFJ" role="38rM$J">
@@ -1165,11 +1159,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="1hCIBtjePOa" role="3cqZAp" />
-        <node concept="3SKdUt" id="3f3CxMdvdGW" role="3cqZAp">
-          <node concept="3SKdUq" id="3f3CxMdvdMs" role="3SKWNk">
-            <property role="3SKdUp" value="TODO some steps from below are commented out due to bugs in lifting the cex" />
-          </node>
-        </node>
         <node concept="38rL1p" id="1hCIBtjePOb" role="3cqZAp">
           <node concept="38rIoz" id="1hCIBtjePOg" role="38rM$J">
             <property role="38rIoG" value="call" />
@@ -1287,11 +1276,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="1fLSIrNnaW5" role="3cqZAp" />
-        <node concept="3SKdUt" id="3f3CxMdve5o" role="3cqZAp">
-          <node concept="3SKdUq" id="3f3CxMdve5p" role="3SKWNk">
-            <property role="3SKdUp" value="TODO some steps from below are commented out due to bugs in lifting the cex" />
-          </node>
-        </node>
         <node concept="38rL1p" id="1fLSIrNnaW6" role="3cqZAp">
           <node concept="38rIoz" id="1fLSIrNnaW7" role="38rM$J">
             <property role="38rIoG" value="call" />
@@ -1345,9 +1329,9 @@
           </node>
           <node concept="38rIoz" id="1fLSIrNnaWg" role="38rM$J">
             <property role="38rIoG" value="state" />
-            <property role="38rMdH" value="S3" />
+            <property role="38rMdH" value="S1" />
             <node concept="3Tqbb2" id="1fLSIrNnaWh" role="38rYrG">
-              <ref role="ehGHo" to="clqz:50Lk78xBraf" resolve="State" />
+              <ref role="ehGHo" to="clqz:1_07M0Q77df" resolve="JunctionState" />
             </node>
           </node>
           <node concept="37vLTw" id="1fLSIrNnaWm" role="2v6RBE">

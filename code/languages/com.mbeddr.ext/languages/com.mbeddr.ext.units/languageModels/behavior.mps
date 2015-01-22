@@ -4,7 +4,7 @@
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -245,6 +245,7 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -1207,7 +1208,21 @@
       <node concept="10P_77" id="2Jcs$lvbsWi" role="3clF45" />
     </node>
     <node concept="13hLZK" id="20xYXnqpIJ5" role="13h7CW">
-      <node concept="3clFbS" id="20xYXnqpIJ6" role="2VODD2" />
+      <node concept="3clFbS" id="20xYXnqpIJ6" role="2VODD2">
+        <node concept="3clFbF" id="1PGiWCEzXAE" role="3cqZAp">
+          <node concept="37vLTI" id="1PGiWCE$0ig" role="3clFbG">
+            <node concept="3clFbT" id="1PGiWCE$0iC" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="1PGiWCEzXFW" role="37vLTJ">
+              <node concept="13iPFW" id="1PGiWCEzXAD" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1PGiWCEzYxg" role="2OqNvi">
+                <ref role="3TsBF5" to="x27k:19a6$uAA0vK" resolve="exported" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="1wGuEUvX$YR" role="13h7CS">
       <property role="TrG5h" value="genName" />
@@ -2554,6 +2569,17 @@
                 <ref role="3TsBF5" to="x27k:19a6$uAA0vK" resolve="exported" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4kWdVQT0nMe" role="3cqZAp">
+          <node concept="2OqwBi" id="4kWdVQT0pqC" role="3clFbG">
+            <node concept="2OqwBi" id="4kWdVQT0o2J" role="2Oq$k0">
+              <node concept="13iPFW" id="4kWdVQT0nMc" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4kWdVQT0oVE" role="2OqNvi">
+                <ref role="3Tt5mk" to="qlb5:7eOyx9r3k4r" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="4kWdVQT0q09" role="2OqNvi" />
           </node>
         </node>
       </node>

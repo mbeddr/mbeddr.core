@@ -56,6 +56,9 @@
         <child id="7254843406768606787" name="condition" index="1_amZB" />
       </concept>
       <concept id="7254843406768606755" name="com.mbeddr.core.statements.structure.ForVarDecl" flags="ng" index="1_amY7" />
+      <concept id="1679452829930336984" name="com.mbeddr.core.statements.structure.CommentStatement" flags="ng" index="1QiMYF">
+        <child id="8624890525768479139" name="textblock" index="3SJzmv" />
+      </concept>
       <concept id="8132151755547066635" name="com.mbeddr.core.statements.structure.ContinueStatement" flags="ng" index="3Safn$" />
       <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
         <child id="4185783222026502647" name="init" index="3XIe9u" />
@@ -319,6 +322,7 @@
       <concept id="4620120465980402700" name="com.mbeddr.core.expressions.structure.GenericDotExpression" flags="ng" index="2qmXGp">
         <child id="7034214596252529803" name="target" index="1ESnxz" />
       </concept>
+      <concept id="5763383285156373022" name="com.mbeddr.core.expressions.structure.DivExpression" flags="ng" index="2BOcih" />
       <concept id="5763383285156373020" name="com.mbeddr.core.expressions.structure.MultiExpression" flags="ng" index="2BOcij" />
       <concept id="5763383285156373018" name="com.mbeddr.core.expressions.structure.MinusExpression" flags="ng" index="2BOcil" />
       <concept id="5763383285156373013" name="com.mbeddr.core.expressions.structure.PlusExpression" flags="ng" index="2BOciq" />
@@ -817,6 +821,90 @@
     </node>
     <node concept="2NXPZ9" id="_qCyBYNzwe" role="N3F5h">
       <property role="TrG5h" value="empty_1399618165539_2" />
+    </node>
+    <node concept="N3Fnx" id="576QrOJmsHS" role="N3F5h">
+      <property role="TrG5h" value="failureWithinDT" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="576QrOJmsHT" role="3XIRFX">
+        <node concept="2BFjQ_" id="576QrOJmsHU" role="3XIRFZ">
+          <node concept="eGNQo" id="576QrOJmsHV" role="2BFjQA">
+            <node concept="3Tl9Jn" id="576QrOJmsHW" role="eGNQr">
+              <node concept="3TlMh9" id="576QrOJmsHX" role="3TlMhJ">
+                <property role="2hmy$m" value="0" />
+              </node>
+              <node concept="3ZUYvv" id="576QrOJmsHY" role="3TlMhI">
+                <ref role="3ZUYvu" node="576QrOJmsIf" resolve="x" />
+              </node>
+            </node>
+            <node concept="3Tl9Jp" id="576QrOJmFo_" role="eGNQr">
+              <node concept="3ZUYvv" id="576QrOJmFoC" role="3TlMhI">
+                <ref role="3ZUYvu" node="576QrOJmsIf" resolve="x" />
+              </node>
+              <node concept="3TlMh9" id="576QrOJmFoB" role="3TlMhJ">
+                <property role="2hmy$m" value="0" />
+              </node>
+            </node>
+            <node concept="3Tl9Jl" id="576QrOJmsI2" role="eGNQq">
+              <node concept="3TlMh9" id="576QrOJmsI3" role="3TlMhJ">
+                <property role="2hmy$m" value="0" />
+              </node>
+              <node concept="3ZUYvv" id="576QrOJmsI4" role="3TlMhI">
+                <ref role="3ZUYvu" node="576QrOJmsIh" resolve="y" />
+              </node>
+            </node>
+            <node concept="3Tl9Jp" id="576QrOJmsI5" role="eGNQq">
+              <node concept="3TlMh9" id="576QrOJmsI6" role="3TlMhJ">
+                <property role="2hmy$m" value="0" />
+              </node>
+              <node concept="3ZUYvv" id="576QrOJmsI7" role="3TlMhI">
+                <ref role="3ZUYvu" node="576QrOJmsIh" resolve="y" />
+              </node>
+            </node>
+            <node concept="3TlMh9" id="576QrOJmsI8" role="eGNQ_">
+              <property role="2hmy$m" value="1" />
+            </node>
+            <node concept="2BOcih" id="576QrOJn5eC" role="eGNQ_">
+              <node concept="3ZUYvv" id="576QrOJn5eF" role="3TlMhJ">
+                <ref role="3ZUYvu" node="576QrOJmsIf" resolve="x" />
+              </node>
+              <node concept="3ZUYvv" id="576QrOJn4lO" role="3TlMhI">
+                <ref role="3ZUYvu" node="576QrOJmsIh" resolve="y" />
+              </node>
+            </node>
+            <node concept="3TlMh9" id="576QrOJmsIa" role="eGNQ_">
+              <property role="2hmy$m" value="-1" />
+            </node>
+            <node concept="3TlMh9" id="576QrOJmsIb" role="eGNQ_">
+              <property role="2hmy$m" value="1" />
+            </node>
+            <node concept="3TlMh9" id="576QrOJmsIc" role="34rlYt">
+              <property role="2hmy$m" value="0" />
+            </node>
+            <node concept="1nuNDJ" id="576QrOJmsId" role="lGtFl" />
+          </node>
+        </node>
+      </node>
+      <node concept="26Vqqz" id="576QrOJmsIe" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="19RgSI" id="576QrOJmsIf" role="1UOdpc">
+        <property role="TrG5h" value="x" />
+        <node concept="26Vqqz" id="576QrOJmsIg" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="576QrOJmsIh" role="1UOdpc">
+        <property role="TrG5h" value="y" />
+        <node concept="26Vqqz" id="576QrOJmsIi" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="576QrOJmTZE" role="N3F5h">
+      <property role="TrG5h" value="empty_1418826890038_317" />
     </node>
     <node concept="N3Fnx" id="1Qmd1NTMLA" role="N3F5h">
       <property role="TrG5h" value="decTabInReturn" />
@@ -1584,8 +1672,68 @@
     <node concept="2NXPZ9" id="2HfUidulY7e" role="N3F5h">
       <property role="TrG5h" value="empty_1406700138034_2" />
     </node>
+    <node concept="N3Fnx" id="3oJxBI_1mhL" role="N3F5h">
+      <property role="TrG5h" value="enumIsNotStronglyTyped" />
+      <property role="3mNisv" value="false" />
+      <property role="2OOxQR" value="false" />
+      <node concept="3XIRFW" id="3oJxBI_1mhM" role="3XIRFX">
+        <node concept="Y9XUq" id="3oJxBI_1mhQ" role="3XIRFZ">
+          <node concept="25Bbzn" id="3oJxBI_1mhR" role="Y9XUp">
+            <node concept="3TlMh9" id="3oJxBI_1mhS" role="3TlMhJ">
+              <property role="2hmy$m" value="11" />
+            </node>
+            <node concept="1S8S4T" id="3oJxBI_1mhT" role="3TlMhI">
+              <node concept="3ZUYvv" id="3oJxBI_1noZ" role="1S8S4V">
+                <ref role="3ZUYvu" node="3oJxBI_1mhX" resolve="e" />
+              </node>
+              <node concept="26Vqp4" id="3oJxBI_1mhV" role="1S8S4N">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="3oJxBI_1mhW" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="19RgSI" id="3oJxBI_1mhX" role="1UOdpc">
+        <property role="TrG5h" value="e" />
+        <node concept="1AkAi2" id="3oJxBI_1mhY" role="2C2TGm">
+          <ref role="1AkAi1" node="5djBfpfdpHc" resolve="AN_ENUM" />
+        </node>
+      </node>
+    </node>
     <node concept="2NXPZ9" id="2kd_oj2RG5K" role="N3F5h">
       <property role="TrG5h" value="empty_1347023250327_1" />
+    </node>
+    <node concept="N3Fnx" id="3oJxBI_1nWz" role="N3F5h">
+      <property role="TrG5h" value="enumIsNotStronglyTypedCall" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="3oJxBI_1nW_" role="3XIRFX">
+        <node concept="1QiMYF" id="3oJxBI_2qLd" role="3XIRFZ">
+          <node concept="OjmMv" id="3oJxBI_2qLf" role="3SJzmv">
+            <node concept="19SGf9" id="3oJxBI_2qLg" role="OjmMu">
+              <node concept="19SUe$" id="3oJxBI_2qLh" role="19SJt6">
+                <property role="19SUeA" value="this is a valid call at C level - since enums are not strongly typed" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="3oJxBI_1o5e" role="3XIRFZ">
+          <node concept="3O_q_g" id="3oJxBI_1o5c" role="1_9egR">
+            <ref role="3O_q_h" node="3oJxBI_1mhL" resolve="enumIsNotStronglyTyped" />
+            <node concept="3TlMh9" id="3oJxBI_1Vlj" role="3O_q_j">
+              <property role="2hmy$m" value="11" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="3oJxBI_1nJ0" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
     </node>
     <node concept="2NXPZ9" id="2kd_oj2RFXW" role="N3F5h">
       <property role="TrG5h" value="empty_1387037608932_1" />

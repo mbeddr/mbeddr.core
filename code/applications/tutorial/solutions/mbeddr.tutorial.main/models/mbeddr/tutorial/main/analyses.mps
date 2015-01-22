@@ -122,6 +122,19 @@
         <child id="8985851583396455257" name="varRef" index="2c3wGY" />
       </concept>
       <concept id="8985851583396455243" name="com.mbeddr.analyses.cbmc.structure.HarnessModule" flags="ng" index="2c3wGG" />
+      <concept id="8327535879610131181" name="com.mbeddr.analyses.cbmc.structure.ICbmcSettings" flags="ng" index="2lUzGJ">
+        <property id="8327535879610783176" name="timeoutInSeconds" index="2l50Ka" />
+        <property id="8327535879610783188" name="timeoutForSingleAnalysis" index="2l50Km" />
+        <property id="8327535879610783118" name="hasLocalTimeout" index="2l50Lc" />
+        <property id="8327535879610783060" name="sliceFormula" index="2l50Mm" />
+        <property id="8327535879613056020" name="hasLocalCbmcSettings" index="2lelRm" />
+        <property id="8327535879610145579" name="analysisDepth" index="2lUGbD" />
+        <property id="8327535879610145521" name="useRefinement" index="2lUGcN" />
+        <property id="8327535879610145463" name="partialLoops" index="2lUGdP" />
+        <property id="8327535879610145347" name="hasUnwindingDepth" index="2lUGe1" />
+        <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
+        <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
+      </concept>
       <concept id="7573444803550855446" name="com.mbeddr.analyses.cbmc.structure.VerificationConditionBase" flags="ng" index="wHKrU">
         <property id="8330520303445148918" name="disabled" index="1aBf3y" />
       </concept>
@@ -135,18 +148,9 @@
         <child id="6876648630975719720" name="q" index="2L5iDm" />
         <child id="6876648630975719718" name="p" index="2L5iDo" />
       </concept>
+      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
       <concept id="8361725885982646993" name="com.mbeddr.analyses.cbmc.structure.AfterQUntilRMustP" flags="ng" index="1z9veP" />
       <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
-        <property id="2263984427998442258" name="timeoutInSeconds" index="28HVF5" />
-        <property id="1015192564308444976" name="showUnwindingDepthInfo" index="wbVtM" />
-        <property id="441761995014974059" name="analysisDepth" index="2y0XTq" />
-        <property id="4626864039426341465" name="useCbmc" index="Afdod" />
-        <property id="9134944440162076206" name="sliceFormula" index="303T6Z" />
-        <property id="786222485499368246" name="partialLoops" index="1gt6Cp" />
-        <property id="5889520553258812025" name="hasSpecifiedTimeout" index="1FSkn4" />
-        <property id="5889520553258614000" name="timeoutForSingleAnalysis" index="1FVbHd" />
-        <property id="6472990431939799909" name="unwindingDepth" index="3V$Cn_" />
-        <property id="6472990431939799910" name="unwindingAssertions" index="3V$CnA" />
         <reference id="6472990431939799908" name="entryPoint" index="3V$Cn$" />
       </concept>
     </language>
@@ -335,57 +339,6 @@
     </node>
     <node concept="3C_SZV" id="7uQ0U6v9zoz" role="2Q9xDr" />
     <node concept="2eh4Hv" id="7FOMyx2$6Ep" role="2Q9xDr" />
-  </node>
-  <node concept="3V_BKJ" id="16gulW_kO31">
-    <property role="TrG5h" value="FlightAnalyzer" />
-    <node concept="1nvAUJ" id="16gulW_kO32" role="3V$2$K">
-      <property role="3V$CnA" value="false" />
-      <property role="3V$Cn_" value="-1" />
-      <property role="2y0XTq" value="1000" />
-      <property role="28HVF5" value="none" />
-      <property role="Afdod" value="true" />
-      <property role="wbVtM" value="false" />
-      <property role="1FVbHd" value="none" />
-      <property role="1FSkn4" value="false" />
-      <ref role="3V$Cn$" node="3iuCLRa88fs" resolve="flightAnalyzerVerification" />
-    </node>
-    <node concept="1W1s6O" id="2h3YlM50qg2" role="3V$2$K">
-      <property role="3V$CnA" value="false" />
-      <property role="3V$Cn_" value="40" />
-      <property role="2y0XTq" value="1000" />
-      <property role="28HVF5" value="44" />
-      <property role="Afdod" value="true" />
-      <ref role="1W1s6P" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
-      <ref role="3V$Cn$" to="e1tx:6GXPbpLjseN" resolve="testFlightAnalyzer" />
-    </node>
-    <node concept="1W1s6O" id="7QgqANUBM9x" role="3V$2$K">
-      <property role="3V$CnA" value="false" />
-      <property role="3V$Cn_" value="40" />
-      <property role="2y0XTq" value="-1" />
-      <property role="28HVF5" value="44" />
-      <property role="Afdod" value="true" />
-      <ref role="1W1s6P" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
-      <ref role="3V$Cn$" node="3iuCLRa88fs" resolve="flightAnalyzerVerification" />
-    </node>
-    <node concept="1nvAUE" id="6Yp7wjcdWRd" role="3V$2$K">
-      <property role="3V$CnA" value="false" />
-      <property role="3V$Cn_" value="25" />
-      <property role="2y0XTq" value="1000" />
-      <property role="1nvAU_" value="true" />
-      <property role="1nvAUF" value="true" />
-      <property role="1nvAU$" value="true" />
-      <property role="1nvAUA" value="true" />
-      <property role="28HVF5" value="55" />
-      <property role="1FVbHd" value="60" />
-      <property role="Afdod" value="true" />
-      <ref role="3V$Cn$" node="3iuCLRa88fs" resolve="flightAnalyzerVerification" />
-    </node>
-    <node concept="3GEVxB" id="5dSPU6qbPli" role="3W6d8T">
-      <ref role="3GEb4d" node="3iuCLRa88fo" resolve="FlightAnalyzerVerification" />
-    </node>
-    <node concept="3GEVxB" id="5dSPU6qc0s9" role="3W6d8T">
-      <ref role="3GEb4d" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
-    </node>
   </node>
   <node concept="N3F5e" id="3iuCLRa88fo">
     <property role="TrG5h" value="FlightAnalyzerVerification" />
@@ -987,19 +940,30 @@
       </node>
     </node>
   </node>
-  <node concept="3V_BKJ" id="1yZWpD4uVja">
+  <node concept="3uEX16" id="3sPnzfj1gko">
+    <property role="2lelRm" value="false" />
+    <property role="2l50Lc" value="false" />
+    <property role="2l50Ka" value="none" />
+    <property role="2l50Km" value="none" />
+    <property role="2lUGeZ" value="true" />
+    <property role="2lUGdP" value="false" />
+    <property role="2lUHrg" value="25" />
+    <property role="2lUGe1" value="true" />
+    <property role="2lUGbD" value="none" />
+    <property role="2lUGcN" value="false" />
+    <property role="2l50Mm" value="false" />
     <property role="TrG5h" value="BasicVerificationConfiguration" />
+    <node concept="3GEVxB" id="1yZWpD4x5E7" role="3W6d8T">
+      <ref role="3GEb4d" node="1yZWpD4uVdu" resolve="BasicVerification" />
+    </node>
     <node concept="1nvAUE" id="1yZWpD4x5Ed" role="3V$2$K">
-      <property role="Afdod" value="true" />
-      <property role="3V$CnA" value="true" />
-      <property role="1gt6Cp" value="false" />
-      <property role="3V$Cn_" value="25" />
-      <property role="wbVtM" value="true" />
-      <property role="2y0XTq" value="none" />
-      <property role="1FSkn4" value="false" />
-      <property role="28HVF5" value="none" />
-      <property role="1FVbHd" value="none" />
-      <property role="303T6Z" value="false" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2l50Mm" value="false" />
       <property role="1nvAU_" value="true" />
       <property role="1nvAUF" value="true" />
       <property role="1nvAUw" value="true" />
@@ -1010,21 +974,71 @@
       <ref role="3V$Cn$" node="1yZWpD4v1fN" resolve="addv" />
     </node>
     <node concept="1nvAUC" id="3j3yk3gTBE3" role="3V$2$K">
-      <property role="Afdod" value="true" />
-      <property role="3V$CnA" value="true" />
-      <property role="1gt6Cp" value="false" />
-      <property role="3V$Cn_" value="25" />
-      <property role="wbVtM" value="true" />
-      <property role="2y0XTq" value="none" />
-      <property role="1FSkn4" value="false" />
-      <property role="28HVF5" value="none" />
-      <property role="1FVbHd" value="none" />
-      <property role="303T6Z" value="false" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2l50Mm" value="false" />
       <ref role="3V$Cn$" node="3j3yk3gTswO" resolve="dectab" />
       <ref role="1nvAUD" node="3j3yk3gTswO" resolve="dectab" />
     </node>
-    <node concept="3GEVxB" id="1yZWpD4x5E7" role="3W6d8T">
-      <ref role="3GEb4d" node="1yZWpD4uVdu" resolve="BasicVerification" />
+  </node>
+  <node concept="3uEX16" id="3sPnzfj1gkn">
+    <property role="2lelRm" value="false" />
+    <property role="2l50Lc" value="false" />
+    <property role="2l50Ka" value="none" />
+    <property role="2l50Km" value="none" />
+    <property role="2lUGeZ" value="true" />
+    <property role="2lUGdP" value="false" />
+    <property role="2lUHrg" value="25" />
+    <property role="2lUGe1" value="true" />
+    <property role="2lUGbD" value="none" />
+    <property role="2lUGcN" value="false" />
+    <property role="2l50Mm" value="false" />
+    <property role="TrG5h" value="FlightAnalyzer" />
+    <node concept="3GEVxB" id="5dSPU6qbPli" role="3W6d8T">
+      <ref role="3GEb4d" node="3iuCLRa88fo" resolve="FlightAnalyzerVerification" />
+    </node>
+    <node concept="3GEVxB" id="5dSPU6qc0s9" role="3W6d8T">
+      <ref role="3GEb4d" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+    </node>
+    <node concept="1nvAUJ" id="16gulW_kO32" role="3V$2$K">
+      <property role="2lUGeZ" value="false" />
+      <property role="2lUHrg" value="-1" />
+      <property role="2lUGbD" value="1000" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <ref role="3V$Cn$" node="3iuCLRa88fs" resolve="flightAnalyzerVerification" />
+    </node>
+    <node concept="1W1s6O" id="2h3YlM50qg2" role="3V$2$K">
+      <property role="2lUGeZ" value="false" />
+      <property role="2lUHrg" value="40" />
+      <property role="2lUGbD" value="1000" />
+      <property role="2l50Ka" value="44" />
+      <ref role="1W1s6P" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+      <ref role="3V$Cn$" to="e1tx:6GXPbpLjseN" resolve="testFlightAnalyzer" />
+    </node>
+    <node concept="1W1s6O" id="7QgqANUBM9x" role="3V$2$K">
+      <property role="2lUGeZ" value="false" />
+      <property role="2lUHrg" value="40" />
+      <property role="2lUGbD" value="-1" />
+      <property role="2l50Ka" value="44" />
+      <ref role="1W1s6P" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+      <ref role="3V$Cn$" node="3iuCLRa88fs" resolve="flightAnalyzerVerification" />
+    </node>
+    <node concept="1nvAUE" id="6Yp7wjcdWRd" role="3V$2$K">
+      <property role="2lUGeZ" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="1000" />
+      <property role="1nvAU_" value="true" />
+      <property role="1nvAUF" value="true" />
+      <property role="1nvAU$" value="true" />
+      <property role="1nvAUA" value="true" />
+      <property role="2l50Ka" value="55" />
+      <property role="2l50Km" value="60" />
+      <ref role="3V$Cn$" node="3iuCLRa88fs" resolve="flightAnalyzerVerification" />
     </node>
   </node>
 </model>

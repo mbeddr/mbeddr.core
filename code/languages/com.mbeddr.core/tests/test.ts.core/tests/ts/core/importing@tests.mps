@@ -2,7 +2,7 @@
 <model ref="r:ac11ea24-ba0f-4e43-93bd-726a7671bbc7(tests.ts.core.importing@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -11,13 +11,19 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
       <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
+      <concept id="7691029917083831655" name="jetbrains.mps.lang.test.structure.UnknownRuleReference" flags="ng" index="2u4KIi" />
+      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
+        <reference id="8333855927540250453" name="declaration" index="39XzEq" />
+      </concept>
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
+      </concept>
+      <concept id="8333855927540283103" name="jetbrains.mps.lang.test.structure.NodeConstraintsErrorCheckOperation" flags="ng" index="39XrGg">
+        <child id="8333855927548182241" name="errorRef" index="39rjcI" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
@@ -165,7 +171,11 @@
               <node concept="1S7827" id="4TU59yjNk$r" role="3XIe9u">
                 <ref role="1S7826" node="6uZAbUKexSJ" resolve="M1a" />
                 <node concept="7CXmI" id="4TU59yjNpQ8" role="lGtFl">
-                  <node concept="1TM$A" id="4TU59yjNpQ9" role="7EUXB" />
+                  <node concept="39XrGg" id="3YIXnYMQwuU" role="7EUXB">
+                    <node concept="2u4KIi" id="3YIXnYMQwuV" role="39rjcI">
+                      <ref role="39XzEq" to="3mvl:5IYyAOzCwFR" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -189,7 +199,11 @@
               <node concept="1S7827" id="4TU59yjNoKX" role="3XIe9u">
                 <ref role="1S7826" node="6uZAbUKexTR" resolve="M2x" />
                 <node concept="7CXmI" id="4TU59yjNri1" role="lGtFl">
-                  <node concept="1TM$A" id="4TU59yjNri2" role="7EUXB" />
+                  <node concept="39XrGg" id="3YIXnYMHq87" role="7EUXB">
+                    <node concept="2u4KIi" id="3YIXnYMHq88" role="39rjcI">
+                      <ref role="39XzEq" to="3mvl:5IYyAOzCwFR" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -202,7 +216,11 @@
               <node concept="1S7827" id="4TU59yjNoR_" role="3XIe9u">
                 <ref role="1S7826" node="6uZAbUKexTU" resolve="M2y" />
                 <node concept="7CXmI" id="4TU59yjNsn2" role="lGtFl">
-                  <node concept="1TM$A" id="4TU59yjNsn3" role="7EUXB" />
+                  <node concept="39XrGg" id="3YIXnYMIErp" role="7EUXB">
+                    <node concept="2u4KIi" id="3YIXnYMIErq" role="39rjcI">
+                      <ref role="39XzEq" to="3mvl:5IYyAOzCwFR" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -216,7 +234,11 @@
               <node concept="1S7827" id="4TU59yjNo3E" role="3XIe9u">
                 <ref role="1S7826" node="6uZAbUKeCcw" resolve="M3g" />
                 <node concept="7CXmI" id="4TU59yjNts3" role="lGtFl">
-                  <node concept="1TM$A" id="4TU59yjNts4" role="7EUXB" />
+                  <node concept="39XrGg" id="3YIXnYMLXDI" role="7EUXB">
+                    <node concept="2u4KIi" id="3YIXnYMLXDJ" role="39rjcI">
+                      <ref role="39XzEq" to="3mvl:5IYyAOzCwFR" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -240,7 +262,11 @@
               <node concept="1S7827" id="4TU59yjNozN" role="3XIe9u">
                 <ref role="1S7826" node="6uZAbUKf2l6" resolve="M4p" />
                 <node concept="7CXmI" id="4TU59yjNuHC" role="lGtFl">
-                  <node concept="1TM$A" id="4TU59yjNuHD" role="7EUXB" />
+                  <node concept="39XrGg" id="3YIXnYMQwuQ" role="7EUXB">
+                    <node concept="2u4KIi" id="3YIXnYMQwuR" role="39rjcI">
+                      <ref role="39XzEq" to="3mvl:5IYyAOzCwFR" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>

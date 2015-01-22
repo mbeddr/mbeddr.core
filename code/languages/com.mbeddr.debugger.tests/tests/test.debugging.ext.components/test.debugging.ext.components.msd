@@ -8,6 +8,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)</dependency>
+    <dependency reexport="false">~_PreferencesModule#com.mbeddr.debugger.tests.__spreferences.PlatformTemplates(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)</dependency>
     <dependency reexport="false">09415d0e-8820-47a4-a923-f3216224ac46(test.debugging.cross)</dependency>
   </dependencies>
   <usedLanguages>

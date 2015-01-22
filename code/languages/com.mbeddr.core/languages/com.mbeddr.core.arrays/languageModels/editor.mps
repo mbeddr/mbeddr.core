@@ -70,6 +70,7 @@
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1235728439575" name="jetbrains.mps.lang.editor.structure.BaseLineCell" flags="ln" index="2R9Tw8" />
+      <concept id="4323500428121233431" name="jetbrains.mps.lang.editor.structure.EditorCellId" flags="ng" index="2SqB2G" />
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
@@ -101,6 +102,7 @@
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
+        <child id="4323500428121274054" name="id" index="2SqHTX" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -534,6 +536,9 @@
         <property role="3F0ifm" value="[" />
         <ref role="1ERwB7" node="4qSf1u1TJhO" resolve="deleteArrayType" />
         <ref role="1k5W1q" to="r4b4:2CEi94dhjGU" resolve="Brackets" />
+        <node concept="2SqB2G" id="4$UH3h$TeZy" role="2SqHTX">
+          <property role="TrG5h" value="openbracket" />
+        </node>
         <node concept="11L4FC" id="4VhroexOKMs" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

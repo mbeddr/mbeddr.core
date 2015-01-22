@@ -5,8 +5,8 @@
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -2883,12 +2883,14 @@
           <property role="1EzhhJ" value="false" />
           <node concept="37vLTG" id="6hPjX47175m" role="3clF46">
             <property role="TrG5h" value="context" />
+            <property role="3TUv4t" value="true" />
             <node concept="3uibUv" id="6hPjX47175n" role="1tU5fm">
               <ref role="3uigEE" to="srng:~EditorContext" resolve="EditorContext" />
             </node>
           </node>
           <node concept="37vLTG" id="6hPjX47175o" role="3clF46">
             <property role="TrG5h" value="node" />
+            <property role="3TUv4t" value="true" />
             <node concept="3Tqbb2" id="6hPjX47175p" role="1tU5fm" />
             <node concept="2AHcQZ" id="6hPjX47175q" role="2AJF6D">
               <ref role="2AI5Lk" to="as9o:~NotNull" resolve="NotNull" />

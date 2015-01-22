@@ -5,7 +5,7 @@
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="79685937-8b0a-4e7d-8f8c-0888f1581774" name="com.mbeddr.mpsutil.nodeviewer" version="-1" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1651,6 +1651,38 @@
     <node concept="M4N5e" id="1tDstbgKlCv" role="M5hS2">
       <property role="1uS6qo" value="reviewed" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5stuwjVkYpE">
+    <property role="3GE5qa" value="assessment.scope" />
+    <property role="TrG5h" value="ProjectScope" />
+    <property role="34LRSv" value="project" />
+    <ref role="1TJDcQ" node="7nkDZJXluO4" resolve="AssessmentScope" />
+  </node>
+  <node concept="1TIwiD" id="4$VRXeHdyxr">
+    <property role="3GE5qa" value="metrics" />
+    <property role="TrG5h" value="Metric" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4$VRXeGZSJ1" role="1TKVEl">
+      <property role="TrG5h" value="data" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1JcbkuyFcOM">
+    <property role="3GE5qa" value="pathAndFile" />
+    <property role="TrG5h" value="SolutionRelativeHashedFilePicker" />
+    <ref role="1TJDcQ" node="5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
+    <node concept="1TJgyi" id="1JcbkuyFVAG" role="1TKVEl">
+      <property role="TrG5h" value="descr" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="1JcbkuyFnZT" role="PzmwI">
+      <ref role="PrY4T" node="GKLijS$AT1" resolve="IExtRef" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6ucVliiGuzs">
+    <property role="TrG5h" value="ISuppressStaticEvalWarnings" />
   </node>
 </model>
 

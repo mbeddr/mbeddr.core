@@ -557,6 +557,9 @@
               <node concept="3LWZYq" id="t6obDo64N1" role="1juEy9">
                 <property role="3LWZYl" value="mps-execution-configurations/**" />
               </node>
+              <node concept="3LWZYq" id="6ucVlijtvol" role="1juEy9">
+                <property role="3LWZYl" value="mps-java/**" />
+              </node>
               <node concept="3LWZYq" id="t6obDo64N3" role="1juEy9">
                 <property role="3LWZYl" value="mps-make/**" />
               </node>

@@ -134,6 +134,7 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
+      <concept id="7350547698093816046" name="com.mbeddr.core.modules.structure.PureFunctionAnnotation" flags="ng" index="2Bs1N1" />
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
       </concept>
@@ -699,6 +700,7 @@
     <node concept="N3Fnx" id="4kJ3EIm6jxp" role="N3F5h">
       <property role="TrG5h" value="onePreconditionFunction" />
       <property role="2OOxQR" value="true" />
+      <node concept="2Bs1N1" id="32RREvGR95A" role="lGtFl" />
       <node concept="3XIRFW" id="4kJ3EIm6jxq" role="3XIRFX">
         <node concept="2BFjQ_" id="4kJ3EIm6jxr" role="3XIRFZ">
           <node concept="eGNQo" id="4kJ3EIm6jxs" role="2BFjQA">
@@ -1869,7 +1871,7 @@
       <property role="TrG5h" value="empty_1401720091205_2" />
     </node>
     <node concept="N3Fnx" id="13FtHz68T_M" role="N3F5h">
-      <property role="TrG5h" value="entry" />
+      <property role="TrG5h" value="entryPointComp4" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="13FtHz68T_O" role="3XIRFX">
         <node concept="3t9XKO" id="13FtHz68Ubr" role="3XIRFZ">
@@ -1908,6 +1910,9 @@
   </node>
   <node concept="N3F5e" id="13FtHz696Vm">
     <property role="TrG5h" value="Comp5" />
+    <node concept="2NXPZ9" id="7lmBuXrVvNC" role="N3F5h">
+      <property role="TrG5h" value="empty_1418654042131_1" />
+    </node>
     <node concept="2vmPJd" id="13FtHz69975" role="N3F5h">
       <property role="TrG5h" value="ml" />
       <property role="2OOxQR" value="true" />
@@ -2019,7 +2024,7 @@
           <property role="2c7vTL" value="false" />
         </node>
         <node concept="3Z21gw" id="13FtHz698o$" role="3Z21jN">
-          <node concept="3Z21gj" id="13FtHz69f4w" role="3Z21go" />
+          <node concept="3Z21gj" id="7lmBuXrVqe7" role="3Z21go" />
           <node concept="3Z21gl" id="13FtHz698oM" role="3Z21gp" />
         </node>
       </node>
@@ -2030,6 +2035,15 @@
     <node concept="2EWCuY" id="13FtHz69bas" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="FileStreamImpl" />
+      <node concept="1z9TsT" id="7lmBuXrVxF3" role="lGtFl">
+        <node concept="OjmMv" id="7lmBuXrVxF4" role="1w35rA">
+          <node concept="19SGf9" id="7lmBuXrVxF5" role="OjmMu">
+            <node concept="19SUe$" id="7lmBuXrVxF6" role="19SJt6">
+              <property role="19SUeA" value="- init calls\n- interface with pre/post implementation" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="2EWHp_" id="13FtHz69bq5" role="2RW2fA">
         <property role="TrG5h" value="fileStream" />
         <ref role="2EX0h9" node="13FtHz696Vn" resolve="FileStream" />
@@ -2140,7 +2154,7 @@
       <property role="TrG5h" value="empty_1401696083105_17" />
     </node>
     <node concept="N3Fnx" id="13FtHz69dHZ" role="N3F5h">
-      <property role="TrG5h" value="client" />
+      <property role="TrG5h" value="entryPointComp5" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="13FtHz69dI1" role="3XIRFX">
         <node concept="3t9XKO" id="13FtHz69e06" role="3XIRFZ">
@@ -2165,6 +2179,9 @@
               <ref role="2H6Wef" node="13FtHz69cSr" resolve="fstream" />
             </node>
           </node>
+        </node>
+        <node concept="Y9XUq" id="7lmBuXrUSfG" role="3XIRFZ">
+          <node concept="3TlMhd" id="7lmBuXrUSg1" role="Y9XUp" />
         </node>
       </node>
       <node concept="19Rifw" id="13FtHz69drC" role="2C2TGm">
@@ -2366,7 +2383,7 @@
       <property role="TrG5h" value="empty_1343897023445_11" />
     </node>
     <node concept="N3Fnx" id="5Lx3sEEktT2" role="N3F5h">
-      <property role="TrG5h" value="clientComp6" />
+      <property role="TrG5h" value="entryPointComp6" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="5Lx3sEEktT3" role="3XIRFX">
         <node concept="3t9XKO" id="5Lx3sEEktT4" role="3XIRFZ">

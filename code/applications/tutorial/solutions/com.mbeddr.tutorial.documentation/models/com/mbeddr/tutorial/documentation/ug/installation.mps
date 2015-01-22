@@ -1792,7 +1792,14 @@
             <ref role="1_0GAl" node="45z$aXlT6Js" resolve="ChangingPath" />
           </node>
           <node concept="19SUe$" id="45z$aXlTdBF" role="19SJt6">
-            <property role="19SUeA" value=". CBMC uses gcc for preprocessing the C files, so please make sure that you have gcc installed on your machine.\n" />
+            <property role="19SUeA" value=". CBMC uses gcc for preprocessing the C files, so please make sure that you have gcc installed on your machine." />
+          </node>
+        </node>
+      </node>
+      <node concept="1_0LV8" id="7Quig7_Vc3G" role="1_0VJ0">
+        <node concept="19SGf9" id="7Quig7_Vc3H" role="1_0LWR">
+          <node concept="19SUe$" id="7Quig7_Vc3I" role="19SJt6">
+            <property role="19SUeA" value="You can check that a proper version of CBMC is correctly installed on your machine by clicking on the 'Test CBMC Installation' button from File -&gt; Settings -&gt; CProver Preferences. " />
           </node>
         </node>
       </node>

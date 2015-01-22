@@ -112,5 +112,26 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7yN$Xh8qhuY">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="GSwitchAnalysis" />
+    <property role="34LRSv" value="GSwitch Expression Completeness Analysis" />
+    <ref role="1TJDcQ" to="q5q6:7Bqs07i8Hdj" resolve="CProverBasedMbeddrAnalysis" />
+    <node concept="1TJgyj" id="7yN$Xh8qhuZ" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="gswitchContainer" />
+      <ref role="20lvS9" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="576QrOJurl1">
+    <property role="TrG5h" value="GSwitchExpressionCheckAttribute" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="576QrOJurlh" role="lGtFl">
+      <property role="Hh88m" value="checked" />
+      <node concept="trNpa" id="576QrOJurll" role="EQaZv">
+        <ref role="trN6q" to="k146:5oGU$loBRJA" resolve="GSwitchExpression" />
+      </node>
+    </node>
+  </node>
 </model>
 

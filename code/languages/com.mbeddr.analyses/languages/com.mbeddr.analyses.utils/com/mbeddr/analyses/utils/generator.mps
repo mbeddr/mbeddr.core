@@ -13,6 +13,7 @@
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="88zw" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" />
     <import index="qh45" ref="r:f908bdad-115d-4765-b796-2646eba0b9ab(com.mbeddr.analyses.utils.make)" />
+    <import index="q9jj" ref="r:9bb65e44-f83e-4e38-ac95-7e443359a2f7(com.mbeddr.analyses.utils.log)" />
     <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -124,6 +125,9 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
@@ -416,6 +420,29 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="5dSPU6qgafE" role="3clF47">
+        <node concept="3clFbJ" id="5pNvrIDcl6D" role="3cqZAp">
+          <node concept="3clFbS" id="5pNvrIDcl6G" role="3clFbx">
+            <node concept="3clFbF" id="5pNvrIDclgk" role="3cqZAp">
+              <node concept="2YIFZM" id="5pNvrIDcli$" role="3clFbG">
+                <ref role="37wK5l" to="q9jj:SWpRmW$KWu" resolve="logError" />
+                <ref role="1Pybhc" to="q9jj:SWpRmW$Kvn" resolve="Logger" />
+                <node concept="3VsKOn" id="5pNvrIDcllZ" role="37wK5m">
+                  <ref role="3VsUkX" node="55cMrg_8q$w" resolve="GeneratorUtils" />
+                </node>
+                <node concept="Xl_RD" id="5pNvrIDclrT" role="37wK5m">
+                  <property role="Xl_RC" value="Major error: 'lastOutputModel' is null!!!" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="5pNvrIDclbT" role="3clFbw">
+            <node concept="10Nm6u" id="5pNvrIDcld_" role="3uHU7w" />
+            <node concept="10M0yZ" id="5pNvrIDcl9K" role="3uHU7B">
+              <ref role="1PxDUh" to="qh45:6SYIklyM6Mg" resolve="MakeUtils" />
+              <ref role="3cqZAo" to="qh45:68pU13V1MV$" resolve="lastOutputModel" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="68pU13V1Xuo" role="3cqZAp">
           <node concept="2OqwBi" id="68pU13V21yR" role="3cqZAk">
             <node concept="10M0yZ" id="68pU13V203f" role="2Oq$k0">

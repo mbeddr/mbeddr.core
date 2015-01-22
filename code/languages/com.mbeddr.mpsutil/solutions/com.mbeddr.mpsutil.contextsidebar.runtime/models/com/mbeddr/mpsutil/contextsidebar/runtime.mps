@@ -2044,9 +2044,13 @@
       <node concept="3Tm1VV" id="7TgUh0gP9zM" role="1B3o_S" />
       <node concept="3cqZAl" id="7TgUh0gP9zO" role="3clF45" />
       <node concept="3clFbS" id="7TgUh0gP9zQ" role="3clF47">
-        <node concept="3clFbF" id="7TgUh0gQn3P" role="3cqZAp">
-          <node concept="1rXfSq" id="7TgUh0gQn3O" role="3clFbG">
-            <ref role="37wK5l" node="7TgUh0gQeEl" resolve="enableContextSidebarTool" />
+        <node concept="3SKdUt" id="7XevvQHHMyx" role="3cqZAp">
+          <node concept="3SKWN0" id="7XevvQHHMyy" role="3SKWNk">
+            <node concept="3clFbF" id="7TgUh0gQn3P" role="3SKWNf">
+              <node concept="1rXfSq" id="7TgUh0gQn3O" role="3clFbG">
+                <ref role="37wK5l" node="7TgUh0gQeEl" resolve="enableContextSidebarTool" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="7TgUh0gQbO5" role="3cqZAp">

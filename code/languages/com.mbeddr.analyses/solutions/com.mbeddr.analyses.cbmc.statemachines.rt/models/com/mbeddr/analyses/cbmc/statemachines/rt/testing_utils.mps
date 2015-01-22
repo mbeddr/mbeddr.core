@@ -2,12 +2,12 @@
 <model ref="r:040c5e7a-c584-4bab-a098-633832b4c444(com.mbeddr.analyses.cbmc.statemachines.rt.testing_utils)">
   <persistence version="9" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
   </languages>
   <imports>
     <import index="iehc" ref="r:a88a6004-6899-496e-945f-3e0df069d4b7(com.mbeddr.analyses.cbmc.statemachines.rt.analyses.statemachines)" />
@@ -532,24 +532,14 @@
                       <node concept="37vLTw" id="3f3CxMd$cYm" role="37wK5m">
                         <ref role="3cqZAo" node="3f3CxMd$cY7" resolve="conf" />
                       </node>
-                      <node concept="2YIFZM" id="3f3CxMd$cYn" role="37wK5m">
+                      <node concept="NRdvd" id="5uqRFp956XW" role="37wK5m">
                         <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
                         <ref role="37wK5l" to="fxhk:3hNQKr2vxFw" resolve="emptyToolAdapter" />
                       </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="3f3CxMd$cYo" role="3cqZAp">
-                <node concept="2OqwBi" id="3f3CxMd$cYp" role="3clFbG">
-                  <node concept="37vLTw" id="3f3CxMd$cYq" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3f3CxMd$cYi" resolve="sa" />
-                  </node>
-                  <node concept="liA8E" id="3f3CxMd$cYr" role="2OqNvi">
-                    <ref role="37wK5l" to="ood5:2UdJgvFrg6a" resolve="setProgressIndicator" />
-                    <node concept="2ShNRf" id="3f3CxMd$cYs" role="37wK5m">
-                      <node concept="1pGfFk" id="3f3CxMd$cYt" role="2ShVmc">
-                        <ref role="37wK5l" to="fw3h:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+                      <node concept="2ShNRf" id="5uqRFp957o2" role="37wK5m">
+                        <node concept="1pGfFk" id="5uqRFp957o3" role="2ShVmc">
+                          <ref role="37wK5l" to="fw3h:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+                        </node>
                       </node>
                     </node>
                   </node>

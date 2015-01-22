@@ -12,7 +12,8 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="hba4" ref="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" />
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
-    <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" implicit="true" />
+    <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
+    <import index="79wq" ref="r:ad7435e2-263f-4d16-a250-c987f2fa9599(com.mbeddr.core.qa.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1168,6 +1169,24 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4$VRXeIntoP">
+    <property role="TrG5h" value="ExpressionDepth" />
+    <property role="3GE5qa" value="metrics" />
+    <property role="34LRSv" value="expression depth" />
+    <ref role="1TJDcQ" to="vs0r:4$VRXeHdyxr" resolve="Metric" />
+  </node>
+  <node concept="1TIwiD" id="4$VRXeIgi6G">
+    <property role="TrG5h" value="CyclomaticComplexity" />
+    <property role="3GE5qa" value="metrics" />
+    <property role="34LRSv" value="cyclomatic complexity" />
+    <ref role="1TJDcQ" to="vs0r:4$VRXeHdyxr" resolve="Metric" />
+  </node>
+  <node concept="1TIwiD" id="4$VRXeGZt7K">
+    <property role="TrG5h" value="FunctionStatementMetric" />
+    <property role="3GE5qa" value="metrics" />
+    <property role="34LRSv" value="statements in IFunctionLike" />
+    <ref role="1TJDcQ" to="vs0r:4$VRXeHdyxr" resolve="Metric" />
   </node>
 </model>
 

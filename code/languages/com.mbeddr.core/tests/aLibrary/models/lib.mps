@@ -112,6 +112,9 @@
     </language>
   </registry>
   <node concept="2v9HqL" id="2kkumeGQeCr">
+    <node concept="2xfidK" id="2KPTuNu5u2Y" role="2AWWZH">
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
+    </node>
     <node concept="2eOfOl" id="58DJDcMiPJx" role="2ePNbc">
       <property role="iO3LB" value="true" />
       <property role="TrG5h" value="MathLibLib" />
@@ -121,9 +124,6 @@
       <node concept="2v9HqM" id="58DJDcMiPvv" role="2eOfOg">
         <ref role="2v9HqP" node="58DJDcMiMVu" resolve="Dummy" />
       </node>
-    </node>
-    <node concept="2xfidK" id="2KPTuNu5u2Y" role="2AWWZH">
-      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
     </node>
     <node concept="2Q9Fgs" id="3R$6B6bNgaa" role="2Q9xDr">
       <node concept="2Q9FjX" id="3R$6B6bNgab" role="2Q9FjI" />

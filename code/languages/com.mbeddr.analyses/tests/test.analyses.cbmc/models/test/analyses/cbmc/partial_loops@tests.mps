@@ -3,11 +3,11 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -53,6 +53,9 @@
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
@@ -138,6 +141,16 @@
           </node>
         </node>
         <node concept="3clFbH" id="4xcwUoATNVT" role="3cqZAp" />
+        <node concept="3clFbF" id="3y5ubmcrYKX" role="3cqZAp">
+          <node concept="2YIFZM" id="3y5ubmcrZeR" role="3clFbG">
+            <ref role="37wK5l" to="fxhk:17FqOSBEPPO" resolve="prettyPrintResults" />
+            <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+            <node concept="37vLTw" id="3y5ubmcrZfm" role="37wK5m">
+              <ref role="3cqZAo" node="4xcwUoATNVO" resolve="res" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3y5ubmcrZgr" role="3cqZAp" />
         <node concept="3SKdUt" id="4LT5zeEJQ6S" role="3cqZAp">
           <node concept="3SKdUq" id="4LT5zeEJQwe" role="3SKWNk">
             <property role="3SKdUp" value="always fails" />
@@ -249,6 +262,27 @@
             </node>
             <node concept="liA8E" id="4xcwUoATNX3" role="2OqNvi">
               <ref role="37wK5l" to="eqhl:54VWoniify$" resolve="getResultKind" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="3y5ubmcs85N" role="3cqZAp">
+          <node concept="Rm8GO" id="3y5ubmcs8C9" role="3tpDZB">
+            <ref role="Rm8GQ" to="rbq9:tGR6edUoVw" resolve="UNWINDING" />
+            <ref role="1Px2BO" to="rbq9:658if_wttbX" resolve="RAW_FAIL_KIND" />
+          </node>
+          <node concept="2OqwBi" id="3y5ubmcs85P" role="3tpDZA">
+            <node concept="2OqwBi" id="3y5ubmcs85Q" role="2Oq$k0">
+              <node concept="37vLTw" id="3y5ubmcs85R" role="2Oq$k0">
+                <ref role="3cqZAo" node="4xcwUoATNVO" resolve="res" />
+              </node>
+              <node concept="34jXtK" id="3y5ubmcs85S" role="2OqNvi">
+                <node concept="3cmrfG" id="3y5ubmcuj5h" role="25WWJ7">
+                  <property role="3cmrfH" value="1" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="3y5ubmcs85U" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:126LgZ0NBax" resolve="getFailKind" />
             </node>
           </node>
         </node>

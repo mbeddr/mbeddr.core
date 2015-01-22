@@ -14,6 +14,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="bt5b" ref="r:10548ca1-8094-4342-a65a-87d986241875(com.mbeddr.core.pointers.utils)" />
+    <import index="g6jk" ref="r:9a326681-7a8d-435d-989e-2781eecc297d(com.mbeddr.core.pointers.editor)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -22,6 +23,9 @@
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="3547227755871693971" name="jetbrains.mps.lang.editor.structure.PredefinedSelector" flags="ng" index="2B6iha">
         <property id="2162403111523065396" name="cellId" index="1lyBwo" />
+      </concept>
+      <concept id="4323500428136740385" name="jetbrains.mps.lang.editor.structure.CellIdReferenceSelector" flags="ng" index="2TlHUq">
+        <reference id="4323500428136742952" name="id" index="2TlMyj" />
       </concept>
       <concept id="3647146066980922272" name="jetbrains.mps.lang.editor.structure.SelectInEditorOperation" flags="nn" index="1OKiuA">
         <child id="1948540814633499358" name="editorContext" index="lBI5i" />
@@ -390,10 +394,24 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="6PYNGEvjBnQ" role="3cqZAp">
-                <node concept="37vLTw" id="6PYNGEvjBnP" role="3clFbG">
-                  <ref role="3cqZAo" node="4VhroexOKML" resolve="at" />
+              <node concept="3clFbF" id="4$UH3h$Tqvy" role="3cqZAp">
+                <node concept="2OqwBi" id="4$UH3h$TqLD" role="3clFbG">
+                  <node concept="37vLTw" id="4$UH3h$Tqvw" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4VhroexOKML" resolve="at" />
+                  </node>
+                  <node concept="1OKiuA" id="4$UH3h$TtHq" role="2OqNvi">
+                    <node concept="1XNTG" id="4$UH3h$TtZ_" role="lBI5i" />
+                    <node concept="2TlHUq" id="4$UH3h$Tur1" role="lGT1i">
+                      <ref role="2TlMyj" to="g6jk:4$UH3h$TeZy" resolve="openbracket" />
+                    </node>
+                    <node concept="3cmrfG" id="4$UH3h$TuNJ" role="3dN3m$">
+                      <property role="3cmrfH" value="-1" />
+                    </node>
+                  </node>
                 </node>
+              </node>
+              <node concept="3clFbF" id="6PYNGEvjBnQ" role="3cqZAp">
+                <node concept="10Nm6u" id="4$UH3h$TxnA" role="3clFbG" />
               </node>
             </node>
           </node>

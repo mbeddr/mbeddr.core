@@ -37,6 +37,10 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -91,7 +95,6 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -368,6 +371,9 @@
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" to="th2u:4arT0cnAVru" resolve="createAnalyzer" />
+      <node concept="3uibUv" id="5uqRFp96UNo" role="3clF45">
+        <ref role="3uigEE" to="tzyt:3_HSwtcWh0_" resolve="CProverAnalyzerFactory" />
+      </node>
       <node concept="3Tm1VV" id="GPHxorRo3_" role="1B3o_S" />
       <node concept="3clFbS" id="GPHxorRo3A" role="3clF47">
         <node concept="3clFbF" id="GPHxorRo3B" role="3cqZAp">
@@ -388,17 +394,38 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="GPHxorRo3J" role="3cqZAp">
-          <node concept="2ShNRf" id="GPHxorRo3K" role="3clFbG">
-            <node concept="1pGfFk" id="GPHxorRo3L" role="2ShVmc">
-              <ref role="37wK5l" to="cxn8:4arT0cntK1T" resolve="ComponentsAnalyzer" />
-              <node concept="37vLTw" id="GPHxorRo3M" role="37wK5m">
+        <node concept="3cpWs8" id="5uqRFp96WEe" role="3cqZAp">
+          <node concept="3cpWsn" id="5uqRFp96WEf" role="3cpWs9">
+            <property role="TrG5h" value="factory" />
+            <node concept="3uibUv" id="5uqRFp96WEd" role="1tU5fm">
+              <ref role="3uigEE" to="cxn8:3_HSwtcWHI9" resolve="ComponentsAnalyzerFactory" />
+            </node>
+            <node concept="2ShNRf" id="5uqRFp96WEg" role="33vP2m">
+              <node concept="HV5vD" id="5uqRFp96WEh" role="2ShVmc">
+                <ref role="HV5vE" to="cxn8:3_HSwtcWHI9" resolve="ComponentsAnalyzerFactory" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5uqRFp96VFw" role="3cqZAp">
+          <node concept="2OqwBi" id="5uqRFp96XaF" role="3clFbG">
+            <node concept="37vLTw" id="5uqRFp96WEi" role="2Oq$k0">
+              <ref role="3cqZAo" node="5uqRFp96WEf" resolve="factory" />
+            </node>
+            <node concept="liA8E" id="5uqRFp96XP4" role="2OqNvi">
+              <ref role="37wK5l" to="tzyt:5uqRFp90Ty4" resolve="setParameters" />
+              <node concept="37vLTw" id="5uqRFp96YeW" role="37wK5m">
                 <ref role="3cqZAo" node="GPHxorRo3O" resolve="config" />
               </node>
-              <node concept="37vLTw" id="GPHxorRo3N" role="37wK5m">
+              <node concept="37vLTw" id="5uqRFp96Z39" role="37wK5m">
                 <ref role="3cqZAo" node="GPHxorRo3Q" resolve="tool" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5uqRFp96Z$Q" role="3cqZAp">
+          <node concept="37vLTw" id="5uqRFp96Z$O" role="3clFbG">
+            <ref role="3cqZAo" node="5uqRFp96WEf" resolve="factory" />
           </node>
         </node>
       </node>
@@ -413,9 +440,6 @@
         <node concept="3uibUv" id="GPHxorRo3R" role="1tU5fm">
           <ref role="3uigEE" to="ood5:5A94f9EE$RB" resolve="MPSToolAdapter" />
         </node>
-      </node>
-      <node concept="3uibUv" id="GPHxorRo3S" role="3clF45">
-        <ref role="3uigEE" to="tzyt:2UdJgvCT1yk" resolve="CProverAnalyzerBase" />
       </node>
     </node>
   </node>

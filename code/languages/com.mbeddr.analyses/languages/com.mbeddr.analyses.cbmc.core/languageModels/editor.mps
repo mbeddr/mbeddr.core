@@ -111,7 +111,7 @@
       <node concept="2SsqMj" id="3x0R1LJeYpV" role="3EZMnx" />
       <node concept="l2Vlx" id="3x0R1LJeYpW" role="2iSdaV" />
       <node concept="3F0ifn" id="3x0R1LJeYpX" role="3EZMnx">
-        <property role="3F0ifm" value="checked" />
+        <property role="3F0ifm" value=" checked " />
         <ref role="1k5W1q" to="srwo:1qK_mmzoiNT" resolve="verification" />
         <node concept="3vyZuw" id="3x0R1LJeYpY" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -619,6 +619,137 @@
         <ref role="PMmxG" to="b4h4:3SmHfhIZc__" resolve="TimeoutSettingsDoc" />
       </node>
       <node concept="PMmxH" id="3SmHfhJ6TdA" role="3EZMnx">
+        <ref role="PMmxG" to="b4h4:3SmHfhJ39aB" resolve="CBMCSpecificSettingsDoc" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="576QrOJurmn">
+    <ref role="1XX52x" to="hj5x:576QrOJurl1" resolve="GSwitchExpressionCheckAttribute" />
+    <node concept="3EZMnI" id="576QrOJurqp" role="2wV5jI">
+      <node concept="2SsqMj" id="576QrOJurqq" role="3EZMnx" />
+      <node concept="l2Vlx" id="576QrOJurqr" role="2iSdaV" />
+      <node concept="3F0ifn" id="576QrOJurqs" role="3EZMnx">
+        <property role="3F0ifm" value="checked" />
+        <ref role="1k5W1q" to="srwo:1qK_mmzoiNT" resolve="verification" />
+        <node concept="3vyZuw" id="576QrOJurqt" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7yN$Xh8qhy9">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <ref role="1XX52x" to="hj5x:7yN$Xh8qhuY" resolve="GSwitchAnalysis" />
+    <node concept="3EZMnI" id="7yN$Xh8qhC9" role="2wV5jI">
+      <node concept="2iRkQZ" id="7yN$Xh8qhCa" role="2iSdaV" />
+      <node concept="3EZMnI" id="7yN$Xh8qhCb" role="3EZMnx">
+        <node concept="VPM3Z" id="7yN$Xh8qhCc" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="l2Vlx" id="7yN$Xh8qhCd" role="2iSdaV" />
+        <node concept="PMmxH" id="7yN$Xh8qhCe" role="3EZMnx">
+          <ref role="PMmxG" to="b4h4:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
+        </node>
+        <node concept="3F0ifn" id="7yN$Xh8qhCf" role="3EZMnx">
+          <property role="3F0ifm" value="GSwitchExpression Analysis" />
+        </node>
+        <node concept="3F0ifn" id="7yN$Xh8qhCg" role="3EZMnx">
+          <property role="3F0ifm" value="-&gt;" />
+        </node>
+        <node concept="1iCGBv" id="7yN$Xh8qhCh" role="3EZMnx">
+          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" />
+          <node concept="1sVBvm" id="7yN$Xh8qhCi" role="1sWHZn">
+            <node concept="3F0A7n" id="7yN$Xh8qhCj" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="gc7cB" id="7yN$Xh8qhCk" role="3EZMnx">
+        <node concept="3VJUX4" id="7yN$Xh8qhCl" role="3YsKMw">
+          <node concept="3clFbS" id="7yN$Xh8qhCm" role="2VODD2">
+            <node concept="3clFbF" id="7yN$Xh8qhCn" role="3cqZAp">
+              <node concept="2ShNRf" id="7yN$Xh8qhCo" role="3clFbG">
+                <node concept="1pGfFk" id="7yN$Xh8qhCp" role="2ShVmc">
+                  <ref role="37wK5l" to="r4b4:5gTlpakv6nY" resolve="HorizLineCell" />
+                  <node concept="pncrf" id="7yN$Xh8qhCq" role="37wK5m" />
+                  <node concept="10M0yZ" id="7yN$Xh8qhCr" role="37wK5m">
+                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="1t7x:~Color.gray" resolve="gray" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7yN$Xh8qhCs" role="3EZMnx">
+        <property role="S$Qs1" value="true" />
+        <node concept="VPM3Z" id="7yN$Xh8qhCt" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="2iRkQZ" id="7yN$Xh8qhCu" role="2iSdaV" />
+        <node concept="3EZMnI" id="7yN$Xh8qhCv" role="3EZMnx">
+          <node concept="VPM3Z" id="7yN$Xh8qhCw" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="2iRfu4" id="7yN$Xh8qhCx" role="2iSdaV" />
+          <node concept="3F0ifn" id="7yN$Xh8qhCy" role="3EZMnx">
+            <property role="3F0ifm" value="GSwitch container" />
+          </node>
+          <node concept="1iCGBv" id="7yN$Xh8qhCz" role="3EZMnx">
+            <ref role="1NtTu8" to="hj5x:7yN$Xh8qhuZ" />
+            <node concept="1sVBvm" id="7yN$Xh8qhC$" role="1sWHZn">
+              <node concept="3F0A7n" id="7yN$Xh8qhC_" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="PMmxH" id="7yN$Xh8qhCA" role="3EZMnx">
+          <ref role="PMmxG" to="b4h4:56VLVOUm_Oq" resolve="TimeoutSettings" />
+        </node>
+        <node concept="PMmxH" id="7yN$Xh8qhCB" role="3EZMnx">
+          <ref role="PMmxG" to="b4h4:fjZ33TpCB9" resolve="CBMCSpecificSettings" />
+        </node>
+      </node>
+    </node>
+    <node concept="3EZMnI" id="7yN$Xh8qi3W" role="6VMZX">
+      <node concept="2iRkQZ" id="7yN$Xh8qi3X" role="2iSdaV" />
+      <node concept="3EZMnI" id="7yN$Xh8qi3Y" role="3EZMnx">
+        <node concept="VPM3Z" id="7yN$Xh8qi3Z" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="7yN$Xh8qi40" role="3EZMnx">
+          <property role="3F0ifm" value="Summary:" />
+        </node>
+        <node concept="3F0ifn" id="7yN$Xh8qi41" role="3EZMnx">
+          <property role="3F0ifm" value="check whether from the entry point a GSwitchExpression is complete." />
+          <node concept="Vb9p2" id="7yN$Xh8qi42" role="3F10Kt" />
+        </node>
+        <node concept="l2Vlx" id="7yN$Xh8qi43" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="7yN$Xh8qi44" role="3EZMnx" />
+      <node concept="3EZMnI" id="7yN$Xh8qi45" role="3EZMnx">
+        <node concept="VPM3Z" id="7yN$Xh8qi46" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="7yN$Xh8qi47" role="3EZMnx">
+          <property role="3F0ifm" value="complete            " />
+        </node>
+        <node concept="3F0ifn" id="7yN$Xh8qi48" role="3EZMnx">
+          <property role="3F0ifm" value="- are all cases explicitly covered?" />
+          <node concept="Vb9p2" id="7yN$Xh8qi49" role="3F10Kt" />
+        </node>
+        <node concept="l2Vlx" id="7yN$Xh8qi4a" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="7yN$Xh8qi4h" role="3EZMnx" />
+      <node concept="PMmxH" id="7yN$Xh8qi4i" role="3EZMnx">
+        <ref role="PMmxG" to="b4h4:3SmHfhIZc__" resolve="TimeoutSettingsDoc" />
+      </node>
+      <node concept="PMmxH" id="7yN$Xh8qi4j" role="3EZMnx">
         <ref role="PMmxG" to="b4h4:3SmHfhJ39aB" resolve="CBMCSpecificSettingsDoc" />
       </node>
     </node>

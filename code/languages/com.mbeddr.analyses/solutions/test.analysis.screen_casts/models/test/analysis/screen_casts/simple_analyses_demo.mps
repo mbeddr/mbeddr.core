@@ -69,12 +69,6 @@
         <child id="6973658835837826906" name="exp" index="Y9XUp" />
       </concept>
       <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
-        <property id="2263984427998442258" name="timeoutInSeconds" index="28HVF5" />
-        <property id="441761995014974059" name="analysisDepth" index="2y0XTq" />
-        <property id="4626864039426341465" name="useCbmc" index="Afdod" />
-        <property id="9134944440162076206" name="sliceFormula" index="303T6Z" />
-        <property id="6472990431939799909" name="unwindingDepth" index="3V$Cn_" />
-        <property id="6472990431939799910" name="unwindingAssertions" index="3V$CnA" />
         <reference id="6472990431939799908" name="entryPoint" index="3V$Cn$" />
       </concept>
     </language>
@@ -432,27 +426,10 @@
   <node concept="3V_BKJ" id="Uv2CpYx1NO">
     <property role="TrG5h" value="Config" />
     <node concept="1nvAUE" id="Uv2CpYx1NP" role="3V$2$K">
-      <property role="Afdod" value="true" />
-      <property role="3V$CnA" value="false" />
-      <property role="3V$Cn_" value="25" />
-      <property role="2y0XTq" value="1000" />
-      <property role="28HVF5" value="none" />
       <ref role="3V$Cn$" node="Uv2CpYwTiv" resolve="inc50" />
     </node>
-    <node concept="1nvAUJ" id="Uv2CpYx6B5" role="3V$2$K">
-      <property role="Afdod" value="true" />
-      <property role="3V$CnA" value="false" />
-      <property role="3V$Cn_" value="25" />
-      <property role="2y0XTq" value="1000" />
-      <property role="28HVF5" value="none" />
-    </node>
+    <node concept="1nvAUJ" id="Uv2CpYx6B5" role="3V$2$K" />
     <node concept="1W1s6O" id="6DXNk$hQu4Z" role="3V$2$K">
-      <property role="Afdod" value="true" />
-      <property role="3V$CnA" value="false" />
-      <property role="3V$Cn_" value="25" />
-      <property role="2y0XTq" value="10000" />
-      <property role="28HVF5" value="none" />
-      <property role="303T6Z" value="false" />
       <ref role="1W1s6P" node="6DXNk$hQryX" resolve="Counter" />
       <ref role="3V$Cn$" node="6DXNk$hQt8b" resolve="harness" />
     </node>

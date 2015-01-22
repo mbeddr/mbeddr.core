@@ -17,8 +17,6 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components/solutions/pluginSolution/pluginSolution.msd" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.compositecomponents/compositecomponents.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.math/com.mbeddr.ext.math.mpl" folder="math" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.physicalunits.c/c.mpl" folder="units" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.physicalunits/physicalunits.mpl" folder="units" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.statemachines/pluginSolution/com.mbeddr.ext.statemachines.pluginSolution.msd" folder="statemachine" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.statemachines/statemachines.mpl" folder="statemachine" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.units/com.mbeddr.ext.units.mpl" folder="units" />

@@ -342,6 +342,9 @@
     </node>
   </node>
   <node concept="2v9HqL" id="EAKPqgNv5R">
+    <node concept="2xfidK" id="2KPTuNu7nCa" role="2AWWZH">
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
+    </node>
     <node concept="2eOfOl" id="EAKPqgNv5T" role="2ePNbc">
       <property role="TrG5h" value="TestErrorReporting" />
       <property role="iO3LB" value="true" />
@@ -354,9 +357,6 @@
     </node>
     <node concept="2Q9Fgs" id="3R$6B6bKOLL" role="2Q9xDr">
       <node concept="2Q9Fjw" id="3R$6B6bM3Rk" role="2Q9FjI" />
-    </node>
-    <node concept="2xfidK" id="2KPTuNu7nCa" role="2AWWZH">
-      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
     </node>
   </node>
 </model>

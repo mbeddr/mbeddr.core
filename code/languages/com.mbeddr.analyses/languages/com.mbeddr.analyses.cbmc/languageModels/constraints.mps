@@ -234,5 +234,36 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="6KXBYUqDo_V">
+    <property role="3GE5qa" value="types" />
+    <ref role="1M2myG" to="q5q6:6KXBYUqABWL" resolve="CPROVERbool" />
+    <node concept="nKS2y" id="6KXBYUqDoHZ" role="1MLUbF">
+      <node concept="3clFbS" id="6KXBYUqDoI0" role="2VODD2">
+        <node concept="3clFbF" id="6KXBYUqDoSH" role="3cqZAp">
+          <node concept="22lmx$" id="6KXBYUqDoSI" role="3clFbG">
+            <node concept="2OqwBi" id="6KXBYUqDoSJ" role="3uHU7w">
+              <node concept="2OqwBi" id="6KXBYUqDoSK" role="2Oq$k0">
+                <node concept="nLn13" id="6KXBYUqDoSL" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="6KXBYUqDoSM" role="2OqNvi">
+                  <node concept="1xMEDy" id="6KXBYUqDoSN" role="1xVPHs">
+                    <node concept="chp4Y" id="6KXBYUqDoSO" role="ri$Ld">
+                      <ref role="cht4Q" to="q5q6:7MOa6vKIydb" resolve="HarnessModule" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3x8VRR" id="6KXBYUqDoSP" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="6KXBYUqDoSQ" role="3uHU7B">
+              <node concept="nLn13" id="6KXBYUqDoSR" role="2Oq$k0" />
+              <node concept="2qgKlT" id="6KXBYUqDoSS" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

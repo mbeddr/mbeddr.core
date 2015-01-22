@@ -20,28 +20,9 @@
         <reference id="6085839724192268105" name="satemachine" index="1W1s6P" />
       </concept>
     </language>
-    <language id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell">
-      <concept id="1159656764131926609" name="com.mbeddr.mpsutil.margincell.structure.IMarginCellContent" flags="ng" index="3vooZZ">
-        <property id="8039098920897639409" name="attachedCellId" index="19LeSh" />
-        <reference id="8039098920897680033" name="attachedNode" index="19LoX1" />
-      </concept>
-    </language>
     <language id="c9a5ade7-5f6a-41ae-a703-5d94a418cf4f" name="com.mbeddr.analyses.cbmc.components">
       <concept id="807751914255908947" name="com.mbeddr.analyses.cbmc.components.structure.ComponentsCBMCAnalysis" flags="ng" index="gU3p5">
         <reference id="807751914255908948" name="analyzedComponent" index="gU3p2" />
-      </concept>
-    </language>
-    <language id="7a060fae-09e0-4372-be36-6696d6554c0e" name="com.mbeddr.mpsutil.review.annotation">
-      <concept id="8455208232410333108" name="com.mbeddr.mpsutil.review.annotation.structure.CommentAnnotationContainer" flags="ng" index="2f$52y">
-        <child id="8455208232410333109" name="comments" index="2f$52z" />
-      </concept>
-    </language>
-    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
-      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
-        <child id="2557074442922392302" name="words" index="19SJt6" />
-      </concept>
-      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
-        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
@@ -81,16 +62,21 @@
       <concept id="4053481679317021363" name="com.mbeddr.analyses.cbmc.core.structure.AssertionsCBMCAnalysis" flags="ng" index="1nvAUJ" />
     </language>
     <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
+      <concept id="8327535879610131181" name="com.mbeddr.analyses.cbmc.structure.ICbmcSettings" flags="ng" index="2lUzGJ">
+        <property id="8327535879610783176" name="timeoutInSeconds" index="2l50Ka" />
+        <property id="8327535879610783188" name="timeoutForSingleAnalysis" index="2l50Km" />
+        <property id="8327535879610783118" name="hasLocalTimeout" index="2l50Lc" />
+        <property id="8327535879610783060" name="sliceFormula" index="2l50Mm" />
+        <property id="8327535879613056020" name="hasLocalCbmcSettings" index="2lelRm" />
+        <property id="8327535879610145579" name="analysisDepth" index="2lUGbD" />
+        <property id="8327535879610145521" name="useRefinement" index="2lUGcN" />
+        <property id="8327535879610145463" name="partialLoops" index="2lUGdP" />
+        <property id="8327535879610145347" name="hasUnwindingDepth" index="2lUGe1" />
+        <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
+        <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
+      </concept>
+      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
       <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
-        <property id="2263984427998442258" name="timeoutInSeconds" index="28HVF5" />
-        <property id="1015192564308444976" name="showUnwindingDepthInfo" index="wbVtM" />
-        <property id="441761995014974059" name="analysisDepth" index="2y0XTq" />
-        <property id="4626864039426341465" name="useCbmc" index="Afdod" />
-        <property id="9134944440162076206" name="sliceFormula" index="303T6Z" />
-        <property id="5889520553258812025" name="hasSpecifiedTimeout" index="1FSkn4" />
-        <property id="5889520553258614000" name="timeoutForSingleAnalysis" index="1FVbHd" />
-        <property id="6472990431939799909" name="unwindingDepth" index="3V$Cn_" />
-        <property id="6472990431939799910" name="unwindingAssertions" index="3V$CnA" />
         <reference id="6472990431939799908" name="entryPoint" index="3V$Cn$" />
       </concept>
     </language>
@@ -126,17 +112,7 @@
         <property id="4709703140582114945" name="triggerAsConst" index="3yF7Mc" />
       </concept>
     </language>
-    <language id="c788b046-2019-4656-8b60-8bb9bbb177b5" name="com.mbeddr.mpsutil.review">
-      <concept id="1159656764133526267" name="com.mbeddr.mpsutil.review.structure.ReviewNote" flags="ng" index="3vAitl">
-        <property id="5652920968054438504" name="created" index="3ajGZ3" />
-        <property id="5652920968054438487" name="creator" index="3ajGZW" />
-        <child id="5652920968054438510" name="note" index="3ajGZ5" />
-      </concept>
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -190,60 +166,19 @@
       <property role="3yF7Mc" value="true" />
     </node>
   </node>
-  <node concept="3V_BKJ" id="5BkFC2yhvhH">
+  <node concept="3uEX16" id="YjU9tucQID">
+    <property role="2lelRm" value="false" />
+    <property role="2l50Lc" value="false" />
+    <property role="2l50Ka" value="none" />
+    <property role="2l50Km" value="none" />
+    <property role="2lUGeZ" value="true" />
+    <property role="2lUGdP" value="false" />
+    <property role="2lUHrg" value="25" />
+    <property role="2lUGe1" value="true" />
+    <property role="2lUGbD" value="none" />
+    <property role="2lUGcN" value="false" />
+    <property role="2l50Mm" value="false" />
     <property role="TrG5h" value="smoke" />
-    <node concept="gU3p5" id="5BkFC2yhvhI" role="3V$2$K">
-      <property role="3V$Cn_" value="25" />
-      <property role="2y0XTq" value="1000" />
-      <property role="28HVF5" value="10" />
-      <property role="Afdod" value="true" />
-      <ref role="gU3p2" to="4ysy:5BkFC2yhuw9" resolve="ReaderImpls" />
-      <ref role="3V$Cn$" to="4ysy:5BkFC2yhuxn" resolve="client" />
-    </node>
-    <node concept="1nvAUJ" id="5IjQP6cspOR" role="3V$2$K">
-      <property role="3V$CnA" value="false" />
-      <property role="3V$Cn_" value="25" />
-      <property role="2y0XTq" value="1000" />
-      <property role="Afdod" value="true" />
-      <property role="28HVF5" value="20" />
-      <ref role="3V$Cn$" to="4ysy:5BkFC2yjiqW" resolve="assertedCode" />
-    </node>
-    <node concept="1nvAUC" id="5IjQP6csqbZ" role="3V$2$K">
-      <property role="3V$CnA" value="false" />
-      <property role="3V$Cn_" value="25" />
-      <property role="2y0XTq" value="1000" />
-      <property role="28HVF5" value="20" />
-      <property role="Afdod" value="true" />
-      <ref role="1nvAUD" to="4ysy:5IjQP6csqaI" resolve="funWithDT" />
-      <ref role="3V$Cn$" to="4ysy:5IjQP6csqaI" resolve="funWithDT" />
-    </node>
-    <node concept="1W1s6O" id="7h0Zhz7xCsC" role="3V$2$K">
-      <property role="3V$CnA" value="false" />
-      <property role="3V$Cn_" value="25" />
-      <property role="2y0XTq" value="1000" />
-      <property role="28HVF5" value="20" />
-      <property role="Afdod" value="true" />
-      <ref role="1W1s6P" to="4ysy:7h0Zhz7xtox" resolve="STM" />
-      <ref role="3V$Cn$" to="4ysy:7h0Zhz7xCsH" resolve="statemachineClient" />
-    </node>
-    <node concept="1nvAUE" id="3f3CxMdueDq" role="3V$2$K">
-      <property role="Afdod" value="true" />
-      <property role="3V$CnA" value="false" />
-      <property role="3V$Cn_" value="25" />
-      <property role="wbVtM" value="true" />
-      <property role="2y0XTq" value="-1" />
-      <property role="1FSkn4" value="false" />
-      <property role="28HVF5" value="none" />
-      <property role="1FVbHd" value="none" />
-      <property role="303T6Z" value="false" />
-      <property role="1nvAU_" value="true" />
-      <property role="1nvAUF" value="true" />
-      <property role="1nvAUw" value="true" />
-      <property role="1nvAUA" value="true" />
-      <property role="1nvAUB" value="true" />
-      <property role="2o64iB" value="true" />
-      <ref role="3V$Cn$" to="4ysy:3f3CxMduaan" resolve="robustnessEntry" />
-    </node>
     <node concept="3GEVxB" id="19LfhoXZr0L" role="3W6d8T">
       <ref role="3GEb4d" to="4ysy:5BkFC2yjiq2" resolve="functions" />
     </node>
@@ -259,18 +194,51 @@
     <node concept="3GEVxB" id="3f3CxMdueDA" role="3W6d8T">
       <ref role="3GEb4d" to="4ysy:3f3CxMduaai" resolve="robustness" />
     </node>
-    <node concept="2f$52y" id="3AVkDTgItaD" role="lGtFl">
-      <node concept="3vAitl" id="3AVkDTgItaJ" role="2f$52z">
-        <property role="3ajGZW" value="z003cemm" />
-        <property role="3ajGZ3" value="13.06.2014 21:14:56" />
-        <property role="19LeSh" value="Constant_nooo61_a2b1a2a" />
-        <ref role="19LoX1" node="3f3CxMdueDq" />
-        <node concept="19SGf9" id="3AVkDTgItaK" role="3ajGZ5">
-          <node concept="19SUe$" id="3AVkDTgItaL" role="19SJt6">
-            <property role="19SUeA" value="this is disabled due to the difference in claims generation between cbmc 4.6 and cbmc 4.7 in the case of pointers" />
-          </node>
-        </node>
-      </node>
+    <node concept="gU3p5" id="5BkFC2yhvhI" role="3V$2$K">
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="1000" />
+      <property role="2l50Ka" value="10" />
+      <ref role="gU3p2" to="4ysy:5BkFC2yhuw9" resolve="ReaderImpls" />
+      <ref role="3V$Cn$" to="4ysy:5BkFC2yhuxn" resolve="client" />
+    </node>
+    <node concept="1nvAUJ" id="5IjQP6cspOR" role="3V$2$K">
+      <property role="2lUGeZ" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="1000" />
+      <property role="2l50Ka" value="20" />
+      <ref role="3V$Cn$" to="4ysy:5BkFC2yjiqW" resolve="assertedCode" />
+    </node>
+    <node concept="1nvAUC" id="5IjQP6csqbZ" role="3V$2$K">
+      <property role="2lUGeZ" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="1000" />
+      <property role="2l50Ka" value="20" />
+      <ref role="1nvAUD" to="4ysy:5IjQP6csqaI" resolve="funWithDT" />
+      <ref role="3V$Cn$" to="4ysy:5IjQP6csqaI" resolve="funWithDT" />
+    </node>
+    <node concept="1W1s6O" id="7h0Zhz7xCsC" role="3V$2$K">
+      <property role="2lUGeZ" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="1000" />
+      <property role="2l50Ka" value="20" />
+      <ref role="1W1s6P" to="4ysy:7h0Zhz7xtox" resolve="STM" />
+      <ref role="3V$Cn$" to="4ysy:7h0Zhz7xCsH" resolve="statemachineClient" />
+    </node>
+    <node concept="1nvAUE" id="3f3CxMdueDq" role="3V$2$K">
+      <property role="2lUGeZ" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="-1" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2l50Mm" value="false" />
+      <property role="1nvAU_" value="true" />
+      <property role="1nvAUF" value="true" />
+      <property role="1nvAUw" value="true" />
+      <property role="1nvAUA" value="true" />
+      <property role="1nvAUB" value="true" />
+      <property role="2o64iB" value="true" />
+      <property role="2lUGe1" value="true" />
+      <ref role="3V$Cn$" to="4ysy:3f3CxMduaan" resolve="robustnessEntry" />
     </node>
   </node>
 </model>

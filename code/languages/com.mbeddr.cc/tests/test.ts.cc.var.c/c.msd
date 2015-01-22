@@ -6,6 +6,11 @@
     </modelRoot>
   </models>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">017fba0e-af15-4a23-b0a8-02b5c1141e75(com.mbeddr.cc.var.annotations)</dependency>
+    <dependency reexport="false">634736cf-ea73-4eb1-abe9-d2ecc5fcf837(com.mbeddr.cc.var.c)</dependency>
+    <dependency reexport="false">8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)</dependency>
+  </dependencies>
   <usedLanguages>
     <usedLanguage>017fba0e-af15-4a23-b0a8-02b5c1141e75(com.mbeddr.cc.var.annotations)</usedLanguage>
     <usedLanguage>634736cf-ea73-4eb1-abe9-d2ecc5fcf837(com.mbeddr.cc.var.c)</usedLanguage>

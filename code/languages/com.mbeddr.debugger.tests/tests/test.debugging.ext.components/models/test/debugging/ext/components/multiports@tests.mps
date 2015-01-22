@@ -19,7 +19,7 @@
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="40" implicit="yes" />
   <import index="v0r9" modelUID="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" version="4" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
-  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="19" implicit="yes" />
+  <import index="v7ag" modelUID="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" version="20" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
   <import index="p7vm" modelUID="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" version="0" implicit="yes" />
@@ -74,17 +74,16 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="v7ag.AtomicComponent" typeId="v7ag.4491876417845649011" id="3457272138385408503" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="Subject" />
-      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="3457272138385408504" nodeInfo="ng">
+      <node role="contents" roleId="v7ag.6041318036221669720" type="v7ag.RequiredPort" typeId="v7ag.4491876417845628841" id="224549505262014663" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="observers" />
-        <property name="multiple" value="true" />
+        <property name="optional" nameId="v7ag.349917904115138509" value="false" />
         <link role="intf" roleId="v7ag.4491876417845484932" targetNodeId="3457272138385338540" resolveInfo="ObserverIf" />
-        <node role="cardinality" roleId="v7ag.3457272138385423181" type="v7ag.ReqPortCardinality" typeId="v7ag.3457272138385423166" id="3457272138385490488" nodeInfo="ng">
-          <property name="count" value="2" />
-          <node role="upperBound" roleId="v7ag.2742494070477836211" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2742494070477941420" nodeInfo="ng">
-            <property name="value" nameId="mj1l.2212975673976043696" value="2" />
-          </node>
-          <node role="lowerBound" roleId="v7ag.2798845822163873817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2580867847991199500" nodeInfo="ng">
+        <node role="cardinality" roleId="v7ag.3457272138385423181" type="v7ag.ReqPortCardinality" typeId="v7ag.3457272138385423166" id="224549505262014877" nodeInfo="ng">
+          <node role="lowerBound" roleId="v7ag.2798845822163873817" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="224549505262014878" nodeInfo="ng">
             <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+          </node>
+          <node role="upperBound" roleId="v7ag.2742494070477836211" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="224549505262014879" nodeInfo="ng">
+            <property name="value" nameId="mj1l.2212975673976043696" value="2" />
           </node>
         </node>
       </node>
@@ -105,7 +104,7 @@
             <node role="expr" roleId="c4fa.7254843406768833939" type="v7ag.RequiredPortOpCallExpr" typeId="v7ag.466603768608442377" id="6165117700225749565" nodeInfo="ng">
               <link role="operation" roleId="v7ag.8105003328815071752" targetNodeId="3457272138385408505" resolveInfo="notify" />
               <node role="expression" roleId="mj1l.7254843406768839760" type="v7ag.PortRefExpr" typeId="v7ag.8105003328815208362" id="6165117700225749562" nodeInfo="ng">
-                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="3457272138385408504" resolveInfo="observers" />
+                <link role="port" roleId="v7ag.8105003328815208363" targetNodeId="224549505262014663" resolveInfo="observers" />
               </node>
             </node>
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="rpmx.MarkerAnnotation" typeId="rpmx.4193597469137492628" id="8885587964580294509" nodeInfo="ng">
@@ -223,8 +222,8 @@
       </node>
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.AssemblyConnector" typeId="v7ag.4491876417845649016" id="3457272138385408536" nodeInfo="ng">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="3457272138385408537" nodeInfo="ng">
-          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="3457272138385408504" resolveInfo="observers" />
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="3457272138385408532" resolveInfo="s" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="224549505262014663" resolveInfo="observers" />
         </node>
         <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="3457272138385408538" nodeInfo="ng">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="3457272138385408534" resolveInfo="o1" />
@@ -234,7 +233,7 @@
       <node role="contents" roleId="v7ag.7780999115923944213" type="v7ag.AssemblyConnector" typeId="v7ag.4491876417845649016" id="3457272138385408539" nodeInfo="ng">
         <node role="source" roleId="v7ag.4491876417845649020" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="3457272138385408540" nodeInfo="ng">
           <link role="instance" roleId="v7ag.4491876417845649018" targetNodeId="3457272138385408532" resolveInfo="s" />
-          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="3457272138385408504" resolveInfo="observers" />
+          <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="224549505262014663" resolveInfo="observers" />
         </node>
         <node role="target" roleId="v7ag.4491876417845649021" type="v7ag.InstancePortRef" typeId="v7ag.4491876417845649017" id="3457272138385408541" nodeInfo="ng">
           <link role="port" roleId="v7ag.3444913373458569211" targetNodeId="3457272138385408519" resolveInfo="notification" />
@@ -454,6 +453,44 @@
         </node>
       </node>
       <node role="validation" roleId="rpmx.4360423713604451010" type="rpmx.ValidationConfiguration" typeId="rpmx.4360423713604419372" id="8885587964580294524" nodeInfo="ng">
+        <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="8885587964580482095" nodeInfo="ng">
+          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580482097" nodeInfo="ng">
+            <property name="name" nameId="tpck.1169194664001" value="bla" />
+          </node>
+          <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964580482099" nodeInfo="ng">
+            <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580482100" nodeInfo="ng">
+              <property name="name" nameId="tpck.1169194664001" value="observers" />
+            </node>
+            <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="8885587964580482101" nodeInfo="ng">
+              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964580482102" nodeInfo="ng">
+                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580482103" nodeInfo="ng">
+                  <property name="name" nameId="tpck.1169194664001" value="observers[0]" />
+                </node>
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964580482104" nodeInfo="ng">
+                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964580482105" nodeInfo="ng">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                  </node>
+                </node>
+              </node>
+              <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964580482106" nodeInfo="ng">
+                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580482107" nodeInfo="ng">
+                  <property name="name" nameId="tpck.1169194664001" value="observers[1]" />
+                </node>
+                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964580482108" nodeInfo="ng">
+                  <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964580482109" nodeInfo="ng">
+                    <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
+                  </node>
+                </node>
+              </node>
+              <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964580482110" nodeInfo="ng">
+                <property name="value" nameId="rpmx.6894131567068111701" value="ObserverIf[2]" />
+              </node>
+            </node>
+          </node>
+          <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="8885587964580482096" nodeInfo="ng">
+            <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="8885587964580294530" resolveInfo="globals" />
+          </node>
+        </node>
         <node role="validations" roleId="rpmx.4360423713604419402" type="rpmx.OnPlatform" typeId="rpmx.5641871277849447479" id="8548777266774152435" nodeInfo="ng">
           <property name="platform" nameId="rpmx.5641871277852618466" value="mac" />
           <node role="children" roleId="rpmx.5641871277849477942" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="496875465993606940" nodeInfo="ng">
@@ -461,54 +498,11 @@
               <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8885587964580294509" resolveInfo="notifyingObservers" />
             </node>
           </node>
-          <node role="children" roleId="rpmx.5641871277849477942" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="496875465993728113" nodeInfo="ng">
-            <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="496875465993728121" nodeInfo="ng">
-              <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="8885587964580294530" resolveInfo="globals" />
-            </node>
-          </node>
           <node role="elseOnPart" roleId="rpmx.5641871277850143726" type="rpmx.ElseOnPlatform" typeId="rpmx.5641871277850133578" id="8548777266774163536" nodeInfo="ng">
             <property name="platform" nameId="rpmx.5641871277852618466" value="win" />
             <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.ValidateDebuggerSuspended" typeId="rpmx.7048220250906049590" id="8885587964580294525" nodeInfo="ng">
               <node role="marker" roleId="rpmx.7048220250906049591" type="rpmx.MarkerRef" typeId="rpmx.4193597469137492644" id="8885587964580294526" nodeInfo="ng">
                 <link role="marker" roleId="rpmx.4193597469137492645" targetNodeId="8885587964580294509" resolveInfo="notifyingObservers" />
-              </node>
-            </node>
-            <node role="children" roleId="rpmx.5641871277850143723" type="rpmx.WatchablesValidationList" typeId="rpmx.4550138447367847233" id="8885587964580482095" nodeInfo="ng">
-              <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580482097" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="bla" />
-              </node>
-              <node role="watchables" roleId="rpmx.4550138447367880227" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964580482099" nodeInfo="ng">
-                <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580482100" nodeInfo="ng">
-                  <property name="name" nameId="tpck.1169194664001" value="observers" />
-                </node>
-                <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.ComplexValueExpression" typeId="rpmx.6894131567068077383" id="8885587964580482101" nodeInfo="ng">
-                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964580482102" nodeInfo="ng">
-                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580482103" nodeInfo="ng">
-                      <property name="name" nameId="tpck.1169194664001" value="observers[0]" />
-                    </node>
-                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964580482104" nodeInfo="ng">
-                      <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964580482105" nodeInfo="ng">
-                        <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
-                      </node>
-                    </node>
-                  </node>
-                  <node role="childern" roleId="rpmx.6894131567068077386" type="rpmx.WatchableWithValueExpression" typeId="rpmx.6894131567067751707" id="8885587964580482106" nodeInfo="ng">
-                    <node role="name" roleId="rpmx.6894131567067751708" type="rpmx.WatchableNameExpression" typeId="rpmx.6894131567067751702" id="8885587964580482107" nodeInfo="ng">
-                      <property name="name" nameId="tpck.1169194664001" value="observers[1]" />
-                    </node>
-                    <node role="value" roleId="rpmx.6894131567067751709" type="rpmx.PrimitiveValueExpression" typeId="rpmx.6894131567067751726" id="8885587964580482108" nodeInfo="ng">
-                      <node role="value" roleId="rpmx.6894131567068111705" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964580482109" nodeInfo="ng">
-                        <property name="value" nameId="rpmx.6894131567068111701" value="&lt;connected&gt;" />
-                      </node>
-                    </node>
-                  </node>
-                  <node role="value" roleId="rpmx.6894131567068111706" type="rpmx.LiteralValue" typeId="rpmx.6894131567068111611" id="8885587964580482110" nodeInfo="ng">
-                    <property name="value" nameId="rpmx.6894131567068111701" value="ObserverIf[2]" />
-                  </node>
-                </node>
-              </node>
-              <node role="extends" roleId="rpmx.1218249513292277448" type="rpmx.WatchableDeclarationReference" typeId="rpmx.1218249513292277439" id="8885587964580482096" nodeInfo="ng">
-                <link role="declaration" roleId="rpmx.1218249513292301610" targetNodeId="8885587964580294530" resolveInfo="globals" />
               </node>
             </node>
           </node>

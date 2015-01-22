@@ -1416,6 +1416,18 @@
     <property role="TrG5h" value="ConsistencyCheckerBase" />
     <property role="1sVAO0" value="true" />
     <property role="3GE5qa" value="base" />
+    <node concept="2tJIrI" id="6$rx9V1M30n" role="jymVt" />
+    <node concept="312cEg" id="6$rx9V1LZSU" role="jymVt">
+      <property role="TrG5h" value="ROOT_FEATURE_AVAILABILITY_MARKER" />
+      <node concept="3Tm6S6" id="6$rx9V1LZSS" role="1B3o_S" />
+      <node concept="17QB3L" id="6$rx9V1LZST" role="1tU5fm" />
+      <node concept="Xl_RD" id="6$rx9V1M7xm" role="33vP2m">
+        <property role="Xl_RC" value="Root feature: " />
+      </node>
+      <node concept="NWlO9" id="6$rx9V1M886" role="lGtFl">
+        <property role="NWlVz" value="Marker that the root feature is available." />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="tSjOfAhAHf" role="1B3o_S" />
     <node concept="3uibUv" id="tSjOfAhAH_" role="1zkMxy">
       <ref role="3uigEE" to="hj0y:6i3Vykmb142" resolve="Sat4JAnalyzerBase" />
@@ -1589,6 +1601,12 @@
               </node>
             </node>
             <node concept="3cpWs3" id="tSjOfAf6XH" role="37wK5m">
+              <node concept="2OqwBi" id="6$rx9V1LZT7" role="3uHU7B">
+                <node concept="Xjq3P" id="6$rx9V1LZT8" role="2Oq$k0" />
+                <node concept="2OwXpG" id="6$rx9V1LZT9" role="2OqNvi">
+                  <ref role="2Oxat5" node="6$rx9V1LZSU" resolve="ROOT_FEATURE_AVAILABILITY_MARKER" />
+                </node>
+              </node>
               <node concept="2OqwBi" id="tSjOfAf8Hm" role="3uHU7w">
                 <node concept="2OqwBi" id="tSjOfAf7sA" role="2Oq$k0">
                   <node concept="37vLTw" id="tSjOfAf7bS" role="2Oq$k0">
@@ -1601,9 +1619,6 @@
                 <node concept="3TrcHB" id="tSjOfAf9Aw" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
-              </node>
-              <node concept="Xl_RD" id="tSjOfAdvqr" role="3uHU7B">
-                <property role="Xl_RC" value="Root feature: " />
               </node>
             </node>
           </node>
@@ -1665,18 +1680,44 @@
             <ref role="3cqZAo" node="tSjOfAevJ$" resolve="explanation" />
           </node>
           <node concept="3clFbS" id="tSjOfAeB1T" role="2LFqv$">
-            <node concept="3clFbF" id="tSjOfAeBtt" role="3cqZAp">
-              <node concept="2OqwBi" id="tSjOfAeBHw" role="3clFbG">
-                <node concept="37vLTw" id="tSjOfAeBts" role="2Oq$k0">
-                  <ref role="3cqZAo" node="tSjOfAeyYj" resolve="res" />
+            <node concept="3cpWs8" id="6$rx9V1M8r1" role="3cqZAp">
+              <node concept="3cpWsn" id="6$rx9V1M8r2" role="3cpWs9">
+                <property role="TrG5h" value="msg" />
+                <node concept="17QB3L" id="6$rx9V1M8qL" role="1tU5fm" />
+                <node concept="3EllGN" id="6$rx9V1M8r3" role="33vP2m">
+                  <node concept="2GrUjf" id="6$rx9V1M8r4" role="3ElVtu">
+                    <ref role="2Gs0qQ" node="tSjOfAeB1P" resolve="e" />
+                  </node>
+                  <node concept="37vLTw" id="6$rx9V1M8r5" role="3ElQJh">
+                    <ref role="3cqZAo" to="hj0y:tSjOfAd1HZ" resolve="desc2UserFriendlyMsg" />
+                  </node>
                 </node>
-                <node concept="TSZUe" id="tSjOfAeDA6" role="2OqNvi">
-                  <node concept="3EllGN" id="tSjOfAeE6T" role="25WWJ7">
-                    <node concept="2GrUjf" id="tSjOfAeEdA" role="3ElVtu">
-                      <ref role="2Gs0qQ" node="tSjOfAeB1P" resolve="e" />
+              </node>
+            </node>
+            <node concept="3clFbJ" id="6$rx9V1M99O" role="3cqZAp">
+              <node concept="3clFbS" id="6$rx9V1M99R" role="3clFbx">
+                <node concept="3clFbF" id="tSjOfAeBtt" role="3cqZAp">
+                  <node concept="2OqwBi" id="tSjOfAeBHw" role="3clFbG">
+                    <node concept="37vLTw" id="tSjOfAeBts" role="2Oq$k0">
+                      <ref role="3cqZAo" node="tSjOfAeyYj" resolve="res" />
                     </node>
-                    <node concept="37vLTw" id="tSjOfAe_HA" role="3ElQJh">
-                      <ref role="3cqZAo" to="hj0y:tSjOfAd1HZ" resolve="desc2UserFriendlyMsg" />
+                    <node concept="TSZUe" id="tSjOfAeDA6" role="2OqNvi">
+                      <node concept="37vLTw" id="6$rx9V1M8r6" role="25WWJ7">
+                        <ref role="3cqZAo" node="6$rx9V1M8r2" resolve="msg" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="6$rx9V1M9jd" role="3clFbw">
+                <node concept="2OqwBi" id="6$rx9V1M9Bt" role="3fr31v">
+                  <node concept="37vLTw" id="6$rx9V1M9kV" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6$rx9V1M8r2" resolve="msg" />
+                  </node>
+                  <node concept="liA8E" id="6$rx9V1Mbbs" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                    <node concept="37vLTw" id="6$rx9V1MbdN" role="37wK5m">
+                      <ref role="3cqZAo" node="6$rx9V1LZSU" resolve="ROOT_FEATURE_AVAILABILITY_MARKER" />
                     </node>
                   </node>
                 </node>

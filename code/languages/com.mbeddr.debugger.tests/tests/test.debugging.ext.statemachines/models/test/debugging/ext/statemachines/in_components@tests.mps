@@ -46,6 +46,7 @@
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
+      <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
@@ -310,6 +311,9 @@
   </registry>
   <node concept="2v9HqL" id="3_UUdaFlgP0">
     <property role="TrG5h" value="dummy" />
+    <node concept="2xfidK" id="2nospmWkSkO" role="2AWWZH">
+      <ref role="2xfifS" to="3fet:378vUkgqJC$" resolve="Desktop Platform" />
+    </node>
     <node concept="2Q9Fgs" id="3_UUdaFlgP2" role="2Q9xDr">
       <node concept="2Q9FjX" id="3_UUdaFlgP3" role="2Q9FjI" />
     </node>
@@ -328,9 +332,6 @@
       <node concept="2v9HqM" id="3_UUdaFlgP5" role="2eOfOg">
         <ref role="2v9HqP" node="3_UUdaFlgO6" resolve="SMInComponent" />
       </node>
-    </node>
-    <node concept="2xfidK" id="2nospmWkSkO" role="2AWWZH">
-      <ref role="2xfifS" to="3fet:378vUkgqJC$" resolve="Desktop Platform" />
     </node>
   </node>
   <node concept="N3F5e" id="3_UUdaFlgO6">
@@ -607,6 +608,7 @@
             </node>
             <node concept="OCETd" id="2Zy_zYsNcRh" role="1KoBSX">
               <node concept="2xGTIE" id="2Zy_zYsNcRi" role="S7lxW">
+                <node concept="3XISUE" id="hDImLjXf1p" role="3XIRFZ" />
                 <node concept="1_9egQ" id="2Zy_zYsNcRj" role="3XIRFZ">
                   <node concept="3pqW6w" id="6KSqsGync$D" role="1_9egR">
                     <node concept="349IfM" id="6KSqsGync$E" role="3TlMhI">

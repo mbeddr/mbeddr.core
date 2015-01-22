@@ -94,6 +94,9 @@
     <node concept="PrWs8" id="6189YbXx_nO" role="PzmwI">
       <ref role="PrY4T" node="6189YbXx_nM" resolve="ITestContext" />
     </node>
+    <node concept="PrWs8" id="5hYHEwYdGbF" role="PzmwI">
+      <ref role="PrY4T" node="5hYHEwYdCJ2" resolve="IFailuresAware" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5so5TTr6S9n">
     <property role="TrG5h" value="AssertStatement" />
@@ -118,6 +121,9 @@
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="PrWs8" id="UWuwz3o6s7" role="PzmwI">
       <ref role="PrY4T" to="2gv2:UWuwz3o4sj" resolve="IRealStackFrameContributor" />
+    </node>
+    <node concept="PrWs8" id="5hYHEwYi0Li" role="PzmwI">
+      <ref role="PrY4T" node="5hYHEwYdCJ2" resolve="IFailuresAware" />
     </node>
     <node concept="1TJgyj" id="4VEDcE28GYo" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -206,12 +212,18 @@
     <node concept="PrWs8" id="2W4z3PKVgeX" role="PzmwI">
       <ref role="PrY4T" node="2W4z3PKVgeS" resolve="IRestrictToTests" />
     </node>
+    <node concept="PrWs8" id="5hYHEwYmUoc" role="PzmwI">
+      <ref role="PrY4T" node="5hYHEwYdCJ2" resolve="IFailuresAware" />
+    </node>
   </node>
   <node concept="1TIwiD" id="78Ts1sksSoD">
     <property role="TrG5h" value="TestHelperFunctionAnnotation" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="PrWs8" id="79iwimZ$5Se" role="PzmwI">
       <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
+    </node>
+    <node concept="PrWs8" id="5hYHEwYdDkD" role="PzmwI">
+      <ref role="PrY4T" node="5hYHEwYdCJ2" resolve="IFailuresAware" />
     </node>
     <node concept="M6xJ_" id="5GEPw8vxAsb" role="lGtFl">
       <property role="Hh88m" value="testHelperFunction" />
@@ -317,6 +329,9 @@
     <node concept="PrWs8" id="6m2KRl5qAgm" role="PrDN$">
       <ref role="PrY4T" to="2gv2:7DakfXFco7$" resolve="IBreakpointSupport" />
     </node>
+    <node concept="PrWs8" id="5hYHEwYiDUZ" role="PrDN$">
+      <ref role="PrY4T" node="5hYHEwYdCJ2" resolve="IFailuresAware" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6Iyv0noEbti">
     <property role="TrG5h" value="StructuredBinOpAssertStatement" />
@@ -337,6 +352,9 @@
     </node>
     <node concept="PrWs8" id="6Iyv0noEK$a" role="PzmwI">
       <ref role="PrY4T" to="x27k:2lgwE2U4_F1" resolve="ICodeLocationAware" />
+    </node>
+    <node concept="PrWs8" id="3JtoPqpBal3" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:7oI7FI6oqPw" resolve="IInitializationContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="6Iyv0noEnIX">
@@ -386,6 +404,9 @@
     <node concept="PrWs8" id="6189YbXy9QZ" role="PrDN$">
       <ref role="PrY4T" to="x27k:2azu63OPjKX" resolve="ICodeLocationContext" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="5hYHEwYdCJ2">
+    <property role="TrG5h" value="IFailuresAware" />
   </node>
 </model>
 

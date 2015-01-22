@@ -8,9 +8,9 @@
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -254,6 +254,126 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="part" />
       <ref role="20lvS9" to="tpck:19gBtYEAf4C" resolve="InterfacePart" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5stuwjV5gv7">
+    <property role="TrG5h" value="InstanceCounterAssessment" />
+    <property role="34LRSv" value="instance counter" />
+    <property role="3GE5qa" value="assessments.counter" />
+    <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
+    <node concept="1TJgyi" id="5stuwjV5hee" role="1TKVEl">
+      <property role="TrG5h" value="modelNameFilter" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="5stuwjV5heg" role="1TKVEl">
+      <property role="TrG5h" value="negateModelNameFilter" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="5stuwjV5hec" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="scope" />
+      <ref role="20lvS9" to="vs0r:7nkDZJXluO4" resolve="AssessmentScope" />
+    </node>
+    <node concept="1TJgyj" id="5stuwjVbufo" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="conceptFilter" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="5stuwjVbudS" resolve="ConceptFilter" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5stuwjVbuaJ">
+    <property role="3GE5qa" value="assessments.counter" />
+    <property role="TrG5h" value="ConceptRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5stuwjVslDM" role="1TKVEl">
+      <property role="TrG5h" value="separateSubconcepts" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="5stuwjVbubz" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4$VRXeHdIp8">
+    <property role="3GE5qa" value="metrics" />
+    <property role="TrG5h" value="MetricResult" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
+    <node concept="1TJgyi" id="4$VRXeHdIp9" role="1TKVEl">
+      <property role="TrG5h" value="label" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4$VRXeHdIpd" role="1TKVEl">
+      <property role="TrG5h" value="count" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4$VRXeHdIpb" role="1TKVEl">
+      <property role="TrG5h" value="min" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4$VRXeHdIpc" role="1TKVEl">
+      <property role="TrG5h" value="max" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4$VRXeHdIpa" role="1TKVEl">
+      <property role="TrG5h" value="avg" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4$VRXeIv1oZ" role="1TKVEl">
+      <property role="TrG5h" value="sigma" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5stuwjV5NQe">
+    <property role="3GE5qa" value="assessments.counter" />
+    <property role="TrG5h" value="InstanceCounterResult" />
+    <ref role="1TJDcQ" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
+    <node concept="1TJgyi" id="5stuwjV5NRH" role="1TKVEl">
+      <property role="TrG5h" value="concept" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="5stuwjV5NRJ" role="1TKVEl">
+      <property role="TrG5h" value="count" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5stuwjVbudS">
+    <property role="3GE5qa" value="assessments.counter" />
+    <property role="TrG5h" value="ConceptFilter" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5stuwjVbudW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="refs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5stuwjVbuaJ" resolve="ConceptRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4$VRXeHFrax">
+    <property role="3GE5qa" value="metrics" />
+    <property role="TrG5h" value="MetricAssessmentQuery" />
+    <property role="34LRSv" value="metrics" />
+    <ref role="1TJDcQ" to="vs0r:K292flwD4r" resolve="AssessmentQuery" />
+    <node concept="1TJgyj" id="4$VRXeHFray" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="scope" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="vs0r:7nkDZJXluO4" resolve="AssessmentScope" />
+    </node>
+    <node concept="1TJgyj" id="4$VRXeHLF0k" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="filter" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="5stuwjVbudS" resolve="ConceptFilter" />
+    </node>
+    <node concept="1TJgyj" id="4$VRXeHFra$" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="metrics" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="vs0r:4$VRXeHdyxr" resolve="Metric" />
     </node>
   </node>
 </model>

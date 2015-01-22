@@ -2577,10 +2577,21 @@
         </node>
         <node concept="3clFbJ" id="61lw97FulOR" role="3cqZAp">
           <node concept="3clFbS" id="61lw97FulOS" role="3clFbx">
-            <node concept="3cpWs6" id="61lw97FulPl" role="3cqZAp">
-              <node concept="2OqwBi" id="61lw97FulPQ" role="3cqZAk">
-                <node concept="13iAh5" id="61lw97FulPx" role="2Oq$k0" />
-                <node concept="2qgKlT" id="61lw97FulPV" role="2OqNvi">
+            <node concept="3SKdUt" id="2HXSBpcNKfE" role="3cqZAp">
+              <node concept="3SKdUq" id="2HXSBpcNKA1" role="3SKWNk">
+                <property role="3SKdUp" value="according to the c spec arrays without size will return the size of the pointer " />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="2HXSBpcNQXw" role="3cqZAp">
+              <node concept="2OqwBi" id="2HXSBpcNQXy" role="3cqZAk">
+                <node concept="2ShNRf" id="2HXSBpcNQXz" role="2Oq$k0">
+                  <node concept="3zrR0B" id="2HXSBpcNQX$" role="2ShVmc">
+                    <node concept="3Tqbb2" id="2HXSBpcNQX_" role="3zrR0E">
+                      <ref role="ehGHo" to="mj1l:5f3TY1$JAfm" resolve="PtrDiffT" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="2HXSBpcNQXA" role="2OqNvi">
                   <ref role="37wK5l" to="ywuz:61lw97FtLtJ" resolve="getUsedBytes" />
                 </node>
               </node>

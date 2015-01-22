@@ -97,18 +97,24 @@
       <concept id="4053481679317021363" name="com.mbeddr.analyses.cbmc.core.structure.AssertionsCBMCAnalysis" flags="ng" index="1nvAUJ" />
     </language>
     <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
+      <concept id="8327535879610131181" name="com.mbeddr.analyses.cbmc.structure.ICbmcSettings" flags="ng" index="2lUzGJ">
+        <property id="8327535879610783176" name="timeoutInSeconds" index="2l50Ka" />
+        <property id="8327535879610783188" name="timeoutForSingleAnalysis" index="2l50Km" />
+        <property id="8327535879610783118" name="hasLocalTimeout" index="2l50Lc" />
+        <property id="8327535879610783060" name="sliceFormula" index="2l50Mm" />
+        <property id="8327535879613056020" name="hasLocalCbmcSettings" index="2lelRm" />
+        <property id="8327535879610145579" name="analysisDepth" index="2lUGbD" />
+        <property id="8327535879610145521" name="useRefinement" index="2lUGcN" />
+        <property id="8327535879610145463" name="partialLoops" index="2lUGdP" />
+        <property id="8327535879610145347" name="hasUnwindingDepth" index="2lUGe1" />
+        <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
+        <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
+      </concept>
       <concept id="6973658835837826905" name="com.mbeddr.analyses.cbmc.structure.Assert" flags="ng" index="Y9XUq">
         <child id="6973658835837826906" name="exp" index="Y9XUp" />
       </concept>
+      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
       <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
-        <property id="2263984427998442258" name="timeoutInSeconds" index="28HVF5" />
-        <property id="1015192564308444976" name="showUnwindingDepthInfo" index="wbVtM" />
-        <property id="441761995014974059" name="analysisDepth" index="2y0XTq" />
-        <property id="4626864039426341465" name="useCbmc" index="Afdod" />
-        <property id="9134944440162076206" name="sliceFormula" index="303T6Z" />
-        <property id="5889520553258614000" name="timeoutForSingleAnalysis" index="1FVbHd" />
-        <property id="6472990431939799909" name="unwindingDepth" index="3V$Cn_" />
-        <property id="6472990431939799910" name="unwindingAssertions" index="3V$CnA" />
         <reference id="6472990431939799908" name="entryPoint" index="3V$Cn$" />
       </concept>
     </language>
@@ -958,51 +964,6 @@
       <property role="rcWEL" value="&quot;../../external_headers/hw_interface.h&quot;" />
     </node>
   </node>
-  <node concept="3V_BKJ" id="4LZvqgKpjZN">
-    <property role="TrG5h" value="DemoConfig" />
-    <node concept="1nvAUJ" id="2dcV_8R54JL" role="3V$2$K">
-      <property role="Afdod" value="true" />
-      <property role="3V$CnA" value="false" />
-      <property role="3V$Cn_" value="25" />
-      <property role="2y0XTq" value="-1" />
-      <property role="28HVF5" value="none" />
-      <property role="303T6Z" value="false" />
-      <ref role="3V$Cn$" node="4LZvqgKpjZT" resolve="interruptHandler" />
-    </node>
-    <node concept="1nvAUE" id="51RbMlWiE6j" role="3V$2$K">
-      <property role="Afdod" value="true" />
-      <property role="3V$CnA" value="false" />
-      <property role="3V$Cn_" value="25" />
-      <property role="2y0XTq" value="-1" />
-      <property role="28HVF5" value="none" />
-      <property role="1FVbHd" value="60" />
-      <property role="1nvAUF" value="true" />
-      <property role="1nvAU$" value="true" />
-      <property role="1nvAUA" value="true" />
-      <property role="1nvAUB" value="true" />
-      <property role="wbVtM" value="true" />
-      <ref role="3V$Cn$" node="4LZvqgKpjZT" resolve="interruptHandler" />
-    </node>
-    <node concept="gU3p5" id="4LZvqgKpjZO" role="3V$2$K">
-      <property role="3V$Cn_" value="25" />
-      <property role="2y0XTq" value="200" />
-      <property role="28HVF5" value="60" />
-      <property role="Afdod" value="true" />
-      <ref role="gU3p2" node="4LZvqgKpjWl" resolve="PlauzibilizedSpeedComputer" />
-      <ref role="3V$Cn$" node="4LZvqgKpjY2" resolve="emitCurrentSpeed" />
-    </node>
-    <node concept="gU3p5" id="4LZvqgKpjZP" role="3V$2$K">
-      <property role="3V$CnA" value="true" />
-      <property role="3V$Cn_" value="25" />
-      <property role="2y0XTq" value="200" />
-      <property role="28HVF5" value="60" />
-      <ref role="gU3p2" node="4LZvqgKpjWl" resolve="PlauzibilizedSpeedComputer" />
-      <ref role="3V$Cn$" node="4LZvqgKpjYs" resolve="main" />
-    </node>
-    <node concept="3GEVxB" id="1wtt6Vx9Ihv" role="3W6d8T">
-      <ref role="3GEb4d" node="4LZvqgKpjZQ" resolve="AssertionsAndDivByZero" />
-    </node>
-  </node>
   <node concept="N3F5e" id="4LZvqgKpjZQ">
     <property role="TrG5h" value="AssertionsAndDivByZero" />
     <node concept="2NXPZ9" id="4LZvqgKpjZR" role="N3F5h">
@@ -1116,6 +1077,58 @@
     <node concept="3GEVxB" id="19LfhoY3iDu" role="2OODSX">
       <property role="3GEa6x" value="false" />
       <ref role="3GEb4d" node="4LZvqgKpjZH" resolve="hw_interface" />
+    </node>
+  </node>
+  <node concept="3uEX16" id="YjU9tucQIF">
+    <property role="2lelRm" value="false" />
+    <property role="2l50Lc" value="false" />
+    <property role="2l50Ka" value="none" />
+    <property role="2l50Km" value="none" />
+    <property role="2lUGeZ" value="true" />
+    <property role="2lUGdP" value="false" />
+    <property role="2lUHrg" value="25" />
+    <property role="2lUGe1" value="true" />
+    <property role="2lUGbD" value="none" />
+    <property role="2lUGcN" value="false" />
+    <property role="2l50Mm" value="false" />
+    <property role="TrG5h" value="DemoConfig" />
+    <node concept="3GEVxB" id="1wtt6Vx9Ihv" role="3W6d8T">
+      <ref role="3GEb4d" node="4LZvqgKpjZQ" resolve="AssertionsAndDivByZero" />
+    </node>
+    <node concept="1nvAUJ" id="2dcV_8R54JL" role="3V$2$K">
+      <property role="2lUGeZ" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="-1" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Mm" value="false" />
+      <ref role="3V$Cn$" node="4LZvqgKpjZT" resolve="interruptHandler" />
+    </node>
+    <node concept="1nvAUE" id="51RbMlWiE6j" role="3V$2$K">
+      <property role="2lUGeZ" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="-1" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="60" />
+      <property role="1nvAUF" value="true" />
+      <property role="1nvAU$" value="true" />
+      <property role="1nvAUA" value="true" />
+      <property role="1nvAUB" value="true" />
+      <ref role="3V$Cn$" node="4LZvqgKpjZT" resolve="interruptHandler" />
+    </node>
+    <node concept="gU3p5" id="4LZvqgKpjZO" role="3V$2$K">
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="200" />
+      <property role="2l50Ka" value="60" />
+      <ref role="gU3p2" node="4LZvqgKpjWl" resolve="PlauzibilizedSpeedComputer" />
+      <ref role="3V$Cn$" node="4LZvqgKpjY2" resolve="emitCurrentSpeed" />
+    </node>
+    <node concept="gU3p5" id="4LZvqgKpjZP" role="3V$2$K">
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="200" />
+      <property role="2l50Ka" value="60" />
+      <ref role="gU3p2" node="4LZvqgKpjWl" resolve="PlauzibilizedSpeedComputer" />
+      <ref role="3V$Cn$" node="4LZvqgKpjYs" resolve="main" />
     </node>
   </node>
 </model>

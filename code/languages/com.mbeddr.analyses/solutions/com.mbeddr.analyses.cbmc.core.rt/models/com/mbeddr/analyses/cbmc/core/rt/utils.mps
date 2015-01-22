@@ -3,10 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
   </languages>
   <imports>
     <import index="hj5x" ref="r:51d4e66d-7bef-4322-a125-0efcf6898af6(com.mbeddr.analyses.cbmc.core.structure)" />
@@ -80,6 +80,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -276,6 +277,50 @@
             <ref role="3cqZAo" node="6dhI$530gF1" resolve="aNode" />
           </node>
         </node>
+        <node concept="Jncv_" id="7yN$Xh8p$O$" role="3cqZAp">
+          <ref role="JncvD" to="k146:5oGU$loBRJA" resolve="GSwitchExpression" />
+          <node concept="3clFbS" id="7yN$Xh8p$O_" role="Jncv$">
+            <node concept="3clFbJ" id="7yN$Xh8p$OA" role="3cqZAp">
+              <node concept="2OqwBi" id="7yN$Xh8p$OB" role="3clFbw">
+                <node concept="2OqwBi" id="7yN$Xh8p$OC" role="2Oq$k0">
+                  <node concept="Jnkvi" id="7yN$Xh8p$OD" role="2Oq$k0">
+                    <ref role="1M0zk5" node="7yN$Xh8p$ON" resolve="gse" />
+                  </node>
+                  <node concept="3CFZ6_" id="7yN$Xh8p$OE" role="2OqNvi">
+                    <node concept="3CFYIy" id="7yN$Xh8pQOZ" role="3CFYIz">
+                      <ref role="3CFYIx" to="hj5x:576QrOJurl1" resolve="GSwitchExpressionCheckAttribute" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3w_OXm" id="7yN$Xh8p$OG" role="2OqNvi" />
+              </node>
+              <node concept="3clFbS" id="7yN$Xh8p$OH" role="3clFbx">
+                <node concept="3clFbF" id="7yN$Xh8p$OI" role="3cqZAp">
+                  <node concept="2YIFZM" id="7yN$Xh8p$OJ" role="3clFbG">
+                    <ref role="1Pybhc" to="uipx:3kLBXRrt32s" resolve="Dialogs" />
+                    <ref role="37wK5l" to="uipx:3kLBXRrtfvu" resolve="displayConfigError" />
+                    <node concept="Xl_RD" id="7yN$Xh8p$OK" role="37wK5m">
+                      <property role="Xl_RC" value="Cannot verify the GSwitchExpression. Please enable the 'checked' attribute." />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs6" id="7yN$Xh8p$OL" role="3cqZAp">
+                  <node concept="3clFbT" id="7yN$Xh8p$OM" role="3cqZAk">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="7yN$Xh8p$ON" role="JncvA">
+            <property role="TrG5h" value="gse" />
+            <node concept="2jxLKc" id="7yN$Xh8p$OO" role="1tU5fm" />
+          </node>
+          <node concept="3cpWs2" id="7yN$Xh8p$OP" role="JncvB">
+            <ref role="3cqZAo" node="6dhI$530gF1" resolve="aNode" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="7yN$Xh8p$LA" role="3cqZAp" />
         <node concept="3cpWs6" id="6BM8NjX8HmY" role="3cqZAp">
           <node concept="2YIFZM" id="6BM8NjX8Mo1" role="3cqZAk">
             <ref role="37wK5l" to="tzyt:6dhI$530gEU" resolve="performConfigurationChecks" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0b285e7c-815b-4852-93d7-e2dfca61558b(com.mbeddr.debugger.tests.__spreferences.CodeReviewPreferences)">
+<model ref="r:045e08d6-75a6-3230-8018-f2f446c9a7dd(com.mbeddr.debugger.tests.__spreferences.CodeReviewPreferences)">
   <persistence version="9" />
   <languages />
   <imports />

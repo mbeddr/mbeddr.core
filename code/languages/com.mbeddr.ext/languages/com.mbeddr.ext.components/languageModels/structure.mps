@@ -12,8 +12,8 @@
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -25,7 +25,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
-    <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" implicit="true" />
+    <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -110,6 +110,12 @@
     </node>
     <node concept="PrWs8" id="1frRXyHLIkI" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
+    <node concept="PrWs8" id="5hYHEwZIyLc" role="PzmwI">
+      <ref role="PrY4T" node="5hYHEwZIii2" resolve="IComponentIDAware" />
+    </node>
+    <node concept="PrWs8" id="2XtvyVv5rPL" role="PzmwI">
+      <ref role="PrY4T" node="7DNX50_2aso" resolve="IComponentWatchableResolver" />
     </node>
     <node concept="1TJgyj" id="5fn4FV$9N5o" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -269,9 +275,6 @@
     <property role="R4oN_" value="services provided by component" />
     <property role="34LRSv" value="provides" />
     <ref role="1TJDcQ" node="3TmmsQkC_Q2" resolve="Port" />
-    <node concept="PrWs8" id="4bUTzk4C8ZE" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
-    </node>
     <node concept="1TJgyi" id="5meTu9orykl" role="1TKVEl">
       <property role="TrG5h" value="singleClientOnly" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
@@ -289,9 +292,6 @@
     <property role="34LRSv" value="requires" />
     <property role="R4oN_" value="services used by component" />
     <ref role="1TJDcQ" node="3TmmsQkC_Q2" resolve="Port" />
-    <node concept="PrWs8" id="6_QWgLdko0i" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
-    </node>
     <node concept="1TJgyj" id="2ZUGF54knHd" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="cardinality" />
@@ -369,6 +369,12 @@
     </node>
     <node concept="PrWs8" id="1Ga0ybi0KKb" role="PzmwI">
       <ref role="PrY4T" to="570t:3JrMqIyfmMY" resolve="IBreadcrumb" />
+    </node>
+    <node concept="PrWs8" id="5hYHEwZBnnh" role="PzmwI">
+      <ref role="PrY4T" node="5hYHEwZAyxP" resolve="IComponentInstanceAware" />
+    </node>
+    <node concept="PrWs8" id="5hYHEwZIijA" role="PzmwI">
+      <ref role="PrY4T" node="5hYHEwZIii2" resolve="IComponentIDAware" />
     </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkDc79">
@@ -452,6 +458,9 @@
     </node>
     <node concept="PrWs8" id="62XMcUobYrf" role="PzmwI">
       <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
+    </node>
+    <node concept="PrWs8" id="5hYHEwZB5os" role="PzmwI">
+      <ref role="PrY4T" node="5hYHEwZAyxP" resolve="IComponentInstanceAware" />
     </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkDdTS">
@@ -540,6 +549,9 @@
     <node concept="PrWs8" id="2h5hmpsJSwC" role="PzmwI">
       <ref role="PrY4T" to="x27k:2h5hmpsyQcW" resolve="IFunctionLikeReducedToSingleFunction" />
     </node>
+    <node concept="PrWs8" id="5hYHEwZAL_o" role="PzmwI">
+      <ref role="PrY4T" node="5hYHEwZAyxP" resolve="IComponentInstanceAware" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkDmpO">
     <property role="3GE5qa" value="intf.cs" />
@@ -567,6 +579,18 @@
     </node>
     <node concept="PrWs8" id="7oI7FI6qbsr" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
+    </node>
+    <node concept="PrWs8" id="5hYHEwZXRHC" role="PrDN$">
+      <ref role="PrY4T" node="5hYHEwZIii2" resolve="IComponentIDAware" />
+    </node>
+    <node concept="PrWs8" id="2XtvyVv4A_o" role="PrDN$">
+      <ref role="PrY4T" node="7DNX50_2aso" resolve="IComponentWatchableResolver" />
+    </node>
+    <node concept="PrWs8" id="ctKDnnfM3p" role="PrDN$">
+      <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
+    </node>
+    <node concept="PrWs8" id="ctKDnnfRm2" role="PrDN$">
+      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="71UKpntog8p">
@@ -1664,6 +1688,16 @@
         <property role="tnX3d" value="false" />
       </node>
     </node>
+  </node>
+  <node concept="PlHQZ" id="5hYHEwZIii2">
+    <property role="TrG5h" value="IComponentIDAware" />
+  </node>
+  <node concept="PlHQZ" id="5hYHEwZAyxP">
+    <property role="3GE5qa" value="comp.instances" />
+    <property role="TrG5h" value="IComponentInstanceAware" />
+  </node>
+  <node concept="PlHQZ" id="7DNX50_2aso">
+    <property role="TrG5h" value="IComponentWatchableResolver" />
   </node>
 </model>
 
