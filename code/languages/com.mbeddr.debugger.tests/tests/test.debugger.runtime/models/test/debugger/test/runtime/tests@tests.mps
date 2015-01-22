@@ -37,7 +37,7 @@
   <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="1423209693057696534" nodeInfo="ng">
     <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/" />
   </root>
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="3463450091879734012" nodeInfo="ng">
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="3463450091879734012" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="TestRuntime" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="integration" />
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="3463450091879734015" nodeInfo="ng">
@@ -231,7 +231,7 @@
       </node>
     </node>
   </root>
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585282264" nodeInfo="ng">
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585282264" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="Stepper" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="unit-tests" />
     <node role="methods" roleId="tp5g.1216993439383" type="tp4f.DefaultClassifierMethodDeclaration" typeId="tp4f.1205769003971" id="8801582929585282926" nodeInfo="ng">
@@ -4501,7 +4501,7 @@
       </node>
     </node>
   </root>
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585018616" nodeInfo="ng">
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585018616" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="BreakpointLocation" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="unit-tests" />
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="8801582929585018630" nodeInfo="ng">
@@ -4636,7 +4636,7 @@
       </node>
     </node>
   </root>
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585019909" nodeInfo="ng">
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585019909" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="Breakpoint" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="unit-tests" />
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="8801582929585019920" nodeInfo="ng">
@@ -4783,7 +4783,7 @@
       </node>
     </node>
   </root>
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585021765" nodeInfo="ng">
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585021765" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="BreakpointManager" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="unit-tests" />
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="8801582929585023146" nodeInfo="ng">
@@ -5600,7 +5600,7 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2536856479943201517" resolveInfo="lineLoc" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="2536856479943201552" nodeInfo="nn">
-              <node role="argument" roleId="tp2q.1160612519549" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5700075390590532285" nodeInfo="nn">
+              <node role="argument" roleId="tp2q.540871147943773366" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5700075390590532285" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9152682018128689206" resolveInfo="lineLocationMock" />
               </node>
             </node>
@@ -5669,7 +5669,6 @@
                     </node>
                   </node>
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="4657762697059128262" nodeInfo="nn">
-                    <property name="left_transform_hint" value="true" />
                     <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="k35w.~EasyMock" resolveInfo="EasyMock" />
                     <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="k35w.~EasyMock%danyObject(java%dlang%dClass)%cjava%dlang%dObject" resolveInfo="anyObject" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ClassifierClassExpression" typeId="tpee.1116615150612" id="4657762697059144081" nodeInfo="nn">
@@ -5807,7 +5806,7 @@
       </node>
     </node>
   </root>
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585282266" nodeInfo="ng">
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585282266" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="MapperListener" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="unit-tests" />
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="8801582929585306648" nodeInfo="ng">
@@ -6175,7 +6174,7 @@
       </node>
     </node>
   </root>
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585261177" nodeInfo="ng">
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585261177" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="ProgramState" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="unit-tests" />
     <node role="methods" roleId="tp5g.1216993439383" type="tp4f.DefaultClassifierMethodDeclaration" typeId="tp4f.1205769003971" id="8801582929585262056" nodeInfo="ng">
@@ -7781,7 +7780,7 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4550138447367825194" resolveInfo="stackFrames" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="4550138447367842416" nodeInfo="nn">
-              <node role="argument" roleId="tp2q.1160612519549" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5700075390590531083" nodeInfo="nn">
+              <node role="argument" roleId="tp2q.540871147943773366" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5700075390590531083" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4550138447367825210" resolveInfo="stackFrameMock" />
               </node>
             </node>
@@ -7902,7 +7901,7 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4550138447367825064" resolveInfo="watchables" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="4550138447367828046" nodeInfo="nn">
-              <node role="argument" roleId="tp2q.1160612519549" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5700075390590532503" nodeInfo="nn">
+              <node role="argument" roleId="tp2q.540871147943773366" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5700075390590532503" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4550138447367827926" resolveInfo="firstWatchableMock" />
               </node>
             </node>
@@ -7914,7 +7913,7 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4550138447367825064" resolveInfo="watchables" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="4550138447367828052" nodeInfo="nn">
-              <node role="argument" roleId="tp2q.1160612519549" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5700075390590530827" nodeInfo="nn">
+              <node role="argument" roleId="tp2q.540871147943773366" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5700075390590530827" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4550138447367827942" resolveInfo="secondWatchableMock" />
               </node>
             </node>
@@ -8012,7 +8011,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4550138447367828153" resolveInfo="watchableNames" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="5911927611423016677" nodeInfo="nn">
-                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5911927611423026135" nodeInfo="nn">
+                <node role="argument" roleId="tp2q.540871147943773366" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5911927611423026135" nodeInfo="nn">
                   <property name="value" nameId="tpee.1068580320021" value="0" />
                 </node>
               </node>
@@ -8032,7 +8031,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4550138447367828153" resolveInfo="watchableNames" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="5911927611423030290" nodeInfo="nn">
-                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5911927611423030300" nodeInfo="nn">
+                <node role="argument" roleId="tp2q.540871147943773366" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5911927611423030300" nodeInfo="nn">
                   <property name="value" nameId="tpee.1068580320021" value="1" />
                 </node>
               </node>
@@ -8263,7 +8262,7 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4550138447368275475" resolveInfo="stackFrames" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="4550138447368275497" nodeInfo="nn">
-              <node role="argument" roleId="tp2q.1160612519549" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5700075390590531104" nodeInfo="nn">
+              <node role="argument" roleId="tp2q.540871147943773366" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5700075390590531104" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4550138447368275490" resolveInfo="firstStackFrameMock" />
               </node>
             </node>
@@ -8275,7 +8274,7 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4550138447368275475" resolveInfo="stackFrames" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="4550138447368285440" nodeInfo="nn">
-              <node role="argument" roleId="tp2q.1160612519549" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5700075390590530644" nodeInfo="nn">
+              <node role="argument" roleId="tp2q.540871147943773366" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5700075390590530644" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4550138447368275700" resolveInfo="secondStackFrameMock" />
               </node>
             </node>
@@ -8498,7 +8497,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4550138447368275576" resolveInfo="stackFrameNames" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="5911927611422979325" nodeInfo="nn">
-                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5911927611422998848" nodeInfo="nn">
+                <node role="argument" roleId="tp2q.540871147943773366" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5911927611422998848" nodeInfo="nn">
                   <property name="value" nameId="tpee.1068580320021" value="0" />
                 </node>
               </node>
@@ -8518,7 +8517,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4550138447368275576" resolveInfo="stackFrameNames" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetElementOperation" typeId="tp2q.1162934736510" id="5911927611423003187" nodeInfo="nn">
-                <node role="argument" roleId="tp2q.1162934736511" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5911927611423003197" nodeInfo="nn">
+                <node role="argument" roleId="tp2q.540871147943773366" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5911927611423003197" nodeInfo="nn">
                   <property name="value" nameId="tpee.1068580320021" value="1" />
                 </node>
               </node>
@@ -8589,7 +8588,7 @@
       </node>
     </node>
   </root>
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585076248" nodeInfo="ng">
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585076248" nodeInfo="lg">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="unit-tests" />
     <property name="name" nameId="tpck.1169194664001" value="Session" />
     <node role="methods" roleId="tp5g.1216993439383" type="tp4f.DefaultClassifierMethodDeclaration" typeId="tp4f.1205769003971" id="8801582929585150046" nodeInfo="ng">
@@ -9790,7 +9789,7 @@
       </node>
     </node>
   </root>
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585119730" nodeInfo="ng">
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585119730" nodeInfo="lg">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="unit-tests" />
     <property name="name" nameId="tpck.1169194664001" value="SessionAttached" />
     <node role="methods" roleId="tp5g.1216993439383" type="tp4f.DefaultClassifierMethodDeclaration" typeId="tp4f.1205769003971" id="8801582929585129339" nodeInfo="ng">
@@ -11428,7 +11427,7 @@
       </node>
     </node>
   </root>
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585152169" nodeInfo="ng">
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585152169" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="SessionNotAttached" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="unit-tests" />
     <node role="methods" roleId="tp5g.1216993439383" type="tp4f.DefaultClassifierMethodDeclaration" typeId="tp4f.1205769003971" id="8801582929585152170" nodeInfo="ng">
@@ -12752,7 +12751,7 @@
       </node>
     </node>
   </root>
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585158356" nodeInfo="ng">
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585158356" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="SessionRunning" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="unit-tests" />
     <node role="methods" roleId="tp5g.1216993439383" type="tp4f.DefaultClassifierMethodDeclaration" typeId="tp4f.1205769003971" id="8801582929585158357" nodeInfo="ng">
@@ -14137,7 +14136,7 @@
       </node>
     </node>
   </root>
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585221758" nodeInfo="ng">
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8801582929585221758" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="SessionSuspended" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="unit-tests" />
     <node role="methods" roleId="tp5g.1216993439383" type="tp4f.DefaultClassifierMethodDeclaration" typeId="tp4f.1205769003971" id="8801582929585221759" nodeInfo="ng">
@@ -15669,7 +15668,7 @@
       </node>
     </node>
   </root>
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="3463450091879801047" nodeInfo="ng">
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="3463450091879801047" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="SessionTerminated" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="unit-tests" />
     <node role="methods" roleId="tp5g.1216993439383" type="tp4f.DefaultClassifierMethodDeclaration" typeId="tp4f.1205769003971" id="8801582929585133599" nodeInfo="ng">

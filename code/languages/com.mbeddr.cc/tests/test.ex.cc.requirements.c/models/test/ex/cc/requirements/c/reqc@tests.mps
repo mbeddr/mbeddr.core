@@ -18,11 +18,6 @@
   </languages>
   <imports />
   <registry>
-    <language id="00000000-0000-0000-0000-000000000000" name="">
-      <concept id="0" name="" flags="ng" index="00000">
-        <property id="0" name="descr" index="00000" />
-      </concept>
-    </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
@@ -200,6 +195,7 @@
         <property id="3534497005926949331" name="description" index="3gY2Yv" />
       </concept>
       <concept id="3534497005926949315" name="com.mbeddr.cc.requirements.c.structure.RCalculation" flags="ng" index="3gY2Yf">
+        <child id="1711211267079259366" name="doc" index="2EmblM" />
         <child id="3562422675424033877" name="tests" index="1d0Bzp" />
         <child id="3534497005926949336" name="expr" index="3gY2Yk" />
         <child id="3534497005926949334" name="params" index="3gY2Yq" />
@@ -385,7 +381,6 @@
       <node concept="22Mrfp" id="34d3$NxXj6i" role="22Mr8z" />
       <node concept="3gY2Yf" id="34d3$NxXj6j" role="3faCKd">
         <property role="TrG5h" value="rebatedPrice" />
-        <property role="00000" value="calculates the rebated price" />
         <node concept="2BOcij" id="34d3$NxXj6s" role="3gY2Yk">
           <node concept="3gY2Kx" id="34d3$NxXj6p" role="3TlMhI">
             <ref role="3gY2Ky" node="34d3$NxXj6l" resolve="rebate" />
@@ -418,6 +413,13 @@
             <property role="2hmy$m" value="5" />
           </node>
         </node>
+        <node concept="OjmMv" id="7hPD5_a9cd4" role="2EmblM">
+          <node concept="19SGf9" id="7hPD5_a9cd5" role="OjmMu">
+            <node concept="19SUe$" id="7hPD5_a9cd6" role="19SJt6">
+              <property role="19SUeA" value="calculater the rebated price" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="GmGrk" id="3X7ZQFcqJEa" role="GmGcz">
         <node concept="1_0LV8" id="3X7ZQFcqJEb" role="1_0VJ0">
@@ -445,7 +447,6 @@
       </node>
       <node concept="3gY2Yf" id="35Kh8LWt48_" role="3faCKd">
         <property role="TrG5h" value="priceForCall" />
-        <property role="00000" value="calculates the price" />
         <node concept="3gY2Y8" id="35Kh8LWt48B" role="3gY2Yq">
           <property role="TrG5h" value="duration" />
           <property role="3gY2Yv" value="Dauer in ms" />
@@ -563,6 +564,13 @@
           </node>
           <node concept="3TlMh9" id="35Kh8LWtaIA" role="1d7X3i">
             <property role="2hmy$m" value="120" />
+          </node>
+        </node>
+        <node concept="OjmMv" id="7hPD5_a9f1L" role="2EmblM">
+          <node concept="19SGf9" id="7hPD5_a9f1M" role="OjmMu">
+            <node concept="19SUe$" id="7hPD5_a9f1N" role="19SJt6">
+              <property role="19SUeA" value="calculates the price" />
+            </node>
           </node>
         </node>
       </node>

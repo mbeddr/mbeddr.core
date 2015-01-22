@@ -17,7 +17,7 @@
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
   </languages>
   <imports>
-    <import index="3fet" ref="r:0afa1dc8-debe-4a54-a50d-d0015a8bc258(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)" />
+    <import index="q9ah" ref="r:881cd106-b9c3-33d3-8c69-9a76f591f92a(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -277,8 +277,8 @@
         <ref role="2v9HqP" node="3_UUdaFlgO6" resolve="WatchablesSM" />
       </node>
     </node>
-    <node concept="2xfidK" id="2nospmWkRI2" role="2AWWZH">
-      <ref role="2xfifS" to="3fet:378vUkgqJC$" resolve="Desktop Platform" />
+    <node concept="2xfidK" id="7hPD5_a7bzh" role="2AWWZH">
+      <ref role="2xfifS" to="q9ah:7sNQp65l2BT" resolve="Desktop Platform" />
     </node>
   </node>
   <node concept="2XOHcx" id="75iUP$MbTn$">
