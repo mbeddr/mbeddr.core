@@ -12,7 +12,7 @@
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7483173130815597950" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="MyConcept" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7483173130815597958" resolveInfo="Supe" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7483173130815597958" resolveInfo="Super" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7483173130815597951" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7483173130815597955" resolveInfo="MyIface" />
     </node>
@@ -22,7 +22,7 @@
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7483173130815597953" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="roleSome" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7483173130815597958" resolveInfo="Supe" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7483173130815597958" resolveInfo="Super" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7483173130815597954" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -39,9 +39,15 @@
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7483173130815597957" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7483173130815597962" resolveInfo="SuperIface2" />
     </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7483173130817877821" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="externalIface" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7483173130815597961" resolveInfo="SuperIface1" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7483173130815597958" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Supe" />
+    <property name="name" nameId="tpck.1169194664001" value="Super" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7483173130815597959" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="referencing" />
@@ -176,24 +182,24 @@
         <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="7483173130815597999" nodeInfo="ng">
           <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="7483173130815598000" nodeInfo="ng">
             <property name="type" nameId="suqv.4767615435799372759" value="label" />
-            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130816946234" nodeInfo="ng">
-              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816946235" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="226.19590256931264" />
-                <property name="y" nameId="suqv.2319506556913310863" value="25.0" />
+            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130818854367" nodeInfo="ng">
+              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854368" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="250.7094457207313" />
+                <property name="y" nameId="suqv.2319506556913310863" value="-50.5" />
               </node>
-              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816946236" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="483.67348547884234" />
-                <property name="y" nameId="suqv.2319506556913310863" value="120.0" />
+              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854369" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="541.2905542792687" />
+                <property name="y" nameId="suqv.2319506556913310863" value="204.0" />
               </node>
             </node>
           </node>
           <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815598004" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="709.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="120.0" />
+            <property name="x" nameId="suqv.2319506556913310861" value="208.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="204.0" />
           </node>
           <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815598005" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="192.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="120.0" />
+            <property name="x" nameId="suqv.2319506556913310861" value="791.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="204.0" />
           </node>
         </node>
       </node>
@@ -211,24 +217,16 @@
         <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="7483173130815598009" nodeInfo="ng">
           <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="7483173130815598010" nodeInfo="ng">
             <property name="type" nameId="suqv.4767615435799372759" value="label" />
-            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130816946237" nodeInfo="ng">
-              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816946238" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="25.695902569312693" />
-                <property name="y" nameId="suqv.2319506556913310863" value="-42.0" />
+            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130818854370" nodeInfo="ng">
+              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854371" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="1.0" />
+                <property name="y" nameId="suqv.2319506556913310863" value="-8.5" />
               </node>
-              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816946239" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="800.4245224985561" />
-                <property name="y" nameId="suqv.2319506556913310863" value="187.0" />
+              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854372" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="208.0" />
+                <property name="y" nameId="suqv.2319506556913310863" value="162.0" />
               </node>
             </node>
-          </node>
-          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815598014" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="709.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="187.0" />
-          </node>
-          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815598015" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="825.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="187.0" />
           </node>
         </node>
       </node>
@@ -255,13 +253,13 @@
         <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="7483173130815598023" nodeInfo="ng">
           <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="7483173130815598024" nodeInfo="ng">
             <property name="type" nameId="suqv.4767615435799372759" value="label" />
-            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130816946231" nodeInfo="ng">
-              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816946232" nodeInfo="ng">
+            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130816969334" nodeInfo="ng">
+              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816969335" nodeInfo="ng">
                 <property name="x" nameId="suqv.2319506556913310861" value="1.0" />
                 <property name="y" nameId="suqv.2319506556913310863" value="-21.0" />
               </node>
-              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816946233" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="397.0" />
+              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816969336" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="398.0" />
                 <property name="y" nameId="suqv.2319506556913310863" value="599.5" />
               </node>
             </node>
@@ -550,45 +548,45 @@
       <node role="entries" roleId="suqv.8963411245960991904" type="suqv.LayoutMapEntry" typeId="suqv.8963411245960991903" id="7483173130815600112" nodeInfo="ng">
         <property name="key" nameId="suqv.8963411245960998400" value="7483173130815597950" />
         <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="7483173130815600111" nodeInfo="ng">
-          <property name="bounds_x" nameId="suqv.6720495385597071501" value="350.0" />
-          <property name="bounds_y" nameId="suqv.6720495385597071502" value="691.0" />
-          <property name="bounds_width" nameId="suqv.6720495385597071503" value="96.0" />
+          <property name="bounds_x" nameId="suqv.6720495385597071501" value="456.0" />
+          <property name="bounds_y" nameId="suqv.6720495385597071502" value="708.0" />
+          <property name="bounds_width" nameId="suqv.6720495385597071503" value="94.0" />
           <property name="bounds_height" nameId="suqv.6720495385597071504" value="59.0" />
         </node>
       </node>
       <node role="entries" roleId="suqv.8963411245960991904" type="suqv.LayoutMapEntry" typeId="suqv.8963411245960991903" id="7483173130815600114" nodeInfo="ng">
         <property name="key" nameId="suqv.8963411245960998400" value="7483173130815597955" />
         <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="7483173130815600113" nodeInfo="ng">
-          <property name="bounds_x" nameId="suqv.6720495385597071501" value="653.0" />
-          <property name="bounds_y" nameId="suqv.6720495385597071502" value="224.0" />
-          <property name="bounds_width" nameId="suqv.6720495385597071503" value="112.0" />
+          <property name="bounds_x" nameId="suqv.6720495385597071501" value="153.0" />
+          <property name="bounds_y" nameId="suqv.6720495385597071502" value="241.0" />
+          <property name="bounds_width" nameId="suqv.6720495385597071503" value="110.0" />
           <property name="bounds_height" nameId="suqv.6720495385597071504" value="59.0" />
         </node>
       </node>
       <node role="entries" roleId="suqv.8963411245960991904" type="suqv.LayoutMapEntry" typeId="suqv.8963411245960991903" id="7483173130815600116" nodeInfo="ng">
         <property name="key" nameId="suqv.8963411245960998400" value="7483173130815597958" />
         <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="7483173130815600115" nodeInfo="ng">
-          <property name="bounds_x" nameId="suqv.6720495385597071501" value="350.0" />
-          <property name="bounds_y" nameId="suqv.6720495385597071502" value="449.0" />
-          <property name="bounds_width" nameId="suqv.6720495385597071503" value="96.0" />
+          <property name="bounds_x" nameId="suqv.6720495385597071501" value="456.0" />
+          <property name="bounds_y" nameId="suqv.6720495385597071502" value="441.0" />
+          <property name="bounds_width" nameId="suqv.6720495385597071503" value="94.0" />
           <property name="bounds_height" nameId="suqv.6720495385597071504" value="59.0" />
         </node>
       </node>
       <node role="entries" roleId="suqv.8963411245960991904" type="suqv.LayoutMapEntry" typeId="suqv.8963411245960991903" id="7483173130815600118" nodeInfo="ng">
         <property name="key" nameId="suqv.8963411245960998400" value="7483173130815597961" />
         <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="7483173130815600117" nodeInfo="ng">
-          <property name="bounds_x" nameId="suqv.6720495385597071501" value="136.0" />
+          <property name="bounds_x" nameId="suqv.6720495385597071501" value="736.0" />
           <property name="bounds_y" nameId="suqv.6720495385597071502" value="24.0" />
-          <property name="bounds_width" nameId="suqv.6720495385597071503" value="112.0" />
+          <property name="bounds_width" nameId="suqv.6720495385597071503" value="110.0" />
           <property name="bounds_height" nameId="suqv.6720495385597071504" value="59.0" />
         </node>
       </node>
       <node role="entries" roleId="suqv.8963411245960991904" type="suqv.LayoutMapEntry" typeId="suqv.8963411245960991903" id="7483173130815600120" nodeInfo="ng">
         <property name="key" nameId="suqv.8963411245960998400" value="7483173130815597962" />
         <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="7483173130815600119" nodeInfo="ng">
-          <property name="bounds_x" nameId="suqv.6720495385597071501" value="769.0" />
+          <property name="bounds_x" nameId="suqv.6720495385597071501" value="153.0" />
           <property name="bounds_y" nameId="suqv.6720495385597071502" value="24.0" />
-          <property name="bounds_width" nameId="suqv.6720495385597071503" value="112.0" />
+          <property name="bounds_width" nameId="suqv.6720495385597071503" value="110.0" />
           <property name="bounds_height" nameId="suqv.6720495385597071504" value="59.0" />
         </node>
       </node>
@@ -596,46 +594,46 @@
         <property name="key" nameId="suqv.8963411245960998400" value="7483173130815597953" />
         <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="7483173130815600130" nodeInfo="ng">
           <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815600132" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="491.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="711.0" />
+            <property name="x" nameId="suqv.2319506556913310861" value="632.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="728.0" />
           </node>
           <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815600133" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="491.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="629.0" />
+            <property name="x" nameId="suqv.2319506556913310861" value="632.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="621.0" />
           </node>
           <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815600134" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="278.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="629.0" />
-          </node>
-          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815600135" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="278.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="449.0" />
+            <property name="x" nameId="suqv.2319506556913310861" value="383.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="621.0" />
           </node>
           <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="7483173130815600136" nodeInfo="ng">
             <property name="type" nameId="suqv.4767615435799372759" value="label" />
-            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130816946240" nodeInfo="ng">
-              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816946241" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="-35.92814409825155" />
+            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130818854373" nodeInfo="ng">
+              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854374" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="-106.25" />
                 <property name="y" nameId="suqv.2319506556913310863" value="-59.0" />
               </node>
-              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816946242" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="315.92814409825155" />
-                <property name="y" nameId="suqv.2319506556913310863" value="629.0" />
+              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854375" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="490.25" />
+                <property name="y" nameId="suqv.2319506556913310863" value="621.0" />
               </node>
             </node>
           </node>
           <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="7483173130815600140" nodeInfo="ng">
             <property name="type" nameId="suqv.4767615435799372759" value="endRole" />
-            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130816608569" nodeInfo="ng">
-              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816608570" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="-22.928948327202647" />
-                <property name="y" nameId="suqv.2319506556913310863" value="-32.24086646377066" />
+            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130818854376" nodeInfo="ng">
+              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854377" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="-22.50999999999999" />
+                <property name="y" nameId="suqv.2319506556913310863" value="-18.0" />
               </node>
-              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816608571" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="335.92894832720265" />
-                <property name="y" nameId="suqv.2319506556913310863" value="463.24086646377066" />
+              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854378" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="429.51" />
+                <property name="y" nameId="suqv.2319506556913310863" value="470.5" />
               </node>
             </node>
+          </node>
+          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130817879484" nodeInfo="ng">
+            <property name="x" nameId="suqv.2319506556913310861" value="383.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="470.5" />
           </node>
         </node>
       </node>
@@ -643,38 +641,46 @@
         <property name="key" nameId="suqv.8963411245960998400" value="7483173130815597954" />
         <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="7483173130815600144" nodeInfo="ng">
           <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815600146" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="549.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="730.0" />
+            <property name="x" nameId="suqv.2319506556913310861" value="597.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="747.0" />
           </node>
           <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815600147" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="549.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="224.0" />
+            <property name="x" nameId="suqv.2319506556913310861" value="597.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="671.0" />
           </node>
           <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="7483173130815600148" nodeInfo="ng">
             <property name="type" nameId="suqv.4767615435799372759" value="label" />
-            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130816946243" nodeInfo="ng">
-              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816946244" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="1.0" />
-                <property name="y" nameId="suqv.2319506556913310863" value="0.37646126822403403" />
+            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130818854379" nodeInfo="ng">
+              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854380" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="-82.25" />
+                <property name="y" nameId="suqv.2319506556913310863" value="-209.0" />
               </node>
-              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816946245" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="549.0" />
-                <property name="y" nameId="suqv.2319506556913310863" value="470.62353873177597" />
+              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854381" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="131.25" />
+                <property name="y" nameId="suqv.2319506556913310863" value="671.0" />
               </node>
             </node>
           </node>
           <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="7483173130815600152" nodeInfo="ng">
             <property name="type" nameId="suqv.4767615435799372759" value="endRole" />
-            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130816608575" nodeInfo="ng">
-              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816608576" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="-22.750181046007356" />
-                <property name="y" nameId="suqv.2319506556913310863" value="-34.54768963035761" />
+            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130818854382" nodeInfo="ng">
+              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854383" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="-22.510000000000005" />
+                <property name="y" nameId="suqv.2319506556913310863" value="-18.0" />
               </node>
-              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816608577" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="638.7501810460074" />
-                <property name="y" nameId="suqv.2319506556913310863" value="240.5476896303576" />
+              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854384" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="126.51" />
+                <property name="y" nameId="suqv.2319506556913310863" value="270.5" />
               </node>
             </node>
+          </node>
+          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130817877883" nodeInfo="ng">
+            <property name="x" nameId="suqv.2319506556913310861" value="48.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="671.0" />
+          </node>
+          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130817879491" nodeInfo="ng">
+            <property name="x" nameId="suqv.2319506556913310861" value="48.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="270.5" />
           </node>
         </node>
       </node>
@@ -682,46 +688,38 @@
         <property name="key" nameId="suqv.8963411245960998400" value="7483173130815597959" />
         <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="7483173130815600156" nodeInfo="ng">
           <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815600158" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="491.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="478.5" />
-          </node>
-          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815600159" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="491.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="387.0" />
-          </node>
-          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815600160" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="48.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="387.0" />
-          </node>
-          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815600161" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="48.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="24.0" />
+            <property name="x" nameId="suqv.2319506556913310861" value="674.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="470.5" />
           </node>
           <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="7483173130815600162" nodeInfo="ng">
             <property name="type" nameId="suqv.4767615435799372759" value="label" />
-            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130816946246" nodeInfo="ng">
-              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816946247" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="-56.33619151195006" />
-                <property name="y" nameId="suqv.2319506556913310863" value="-142.0" />
+            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130818854391" nodeInfo="ng">
+              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854392" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="1.0" />
+                <property name="y" nameId="suqv.2319506556913310863" value="-35.75" />
               </node>
-              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816946248" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="106.33619151195006" />
-                <property name="y" nameId="suqv.2319506556913310863" value="387.0" />
+              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854393" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="674.0" />
+                <property name="y" nameId="suqv.2319506556913310863" value="297.75" />
               </node>
             </node>
           </node>
           <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="7483173130815600166" nodeInfo="ng">
             <property name="type" nameId="suqv.4767615435799372759" value="endRole" />
-            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130816608581" nodeInfo="ng">
-              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816608582" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="-22.804811004401188" />
-                <property name="y" nameId="suqv.2319506556913310863" value="-33.11973558770718" />
+            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130818854394" nodeInfo="ng">
+              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854395" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="-22.50999999999999" />
+                <property name="y" nameId="suqv.2319506556913310863" value="-18.0" />
               </node>
-              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816608583" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="121.80481100440119" />
-                <property name="y" nameId="suqv.2319506556913310863" value="39.11973558770718" />
+              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854396" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="709.51" />
+                <property name="y" nameId="suqv.2319506556913310863" value="63.0" />
               </node>
             </node>
+          </node>
+          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130817879505" nodeInfo="ng">
+            <property name="x" nameId="suqv.2319506556913310861" value="674.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="63.0" />
           </node>
         </node>
       </node>
@@ -729,23 +727,23 @@
         <property name="key" nameId="suqv.8963411245960998400" value="7483173130815597951" />
         <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="7483173130815600170" nodeInfo="ng">
           <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815600172" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="398.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="654.0" />
+            <property name="x" nameId="suqv.2319506556913310861" value="503.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="646.0" />
           </node>
           <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815600173" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="709.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="654.0" />
+            <property name="x" nameId="suqv.2319506556913310861" value="208.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="646.0" />
           </node>
           <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="7483173130815600174" nodeInfo="ng">
             <property name="type" nameId="suqv.4767615435799372759" value="label" />
-            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130816946249" nodeInfo="ng">
-              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816946250" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="1.1846928966074302" />
-                <property name="y" nameId="suqv.2319506556913310863" value="-64.26451545638395" />
+            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130818854397" nodeInfo="ng">
+              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854398" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="-4.633787152960281" />
+                <property name="y" nameId="suqv.2319506556913310863" value="-75.5" />
               </node>
-              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816946251" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="708.78269014953" />
-                <property name="y" nameId="suqv.2319506556913310863" value="642.6688435112058" />
+              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854399" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="213.63378715296028" />
+                <property name="y" nameId="suqv.2319506556913310863" value="646.0" />
               </node>
             </node>
           </node>
@@ -754,26 +752,34 @@
       <node role="entries" roleId="suqv.8963411245960991904" type="suqv.LayoutMapEntry" typeId="suqv.8963411245960991903" id="7483173130815600179" nodeInfo="ng">
         <property name="key" nameId="suqv.8963411245960998400" value="7483173130815597952" />
         <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="7483173130815600178" nodeInfo="ng">
-          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815600180" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="398.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="654.0" />
-          </node>
-          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815600181" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="192.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="654.0" />
-          </node>
           <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="7483173130815600182" nodeInfo="ng">
             <property name="type" nameId="suqv.4767615435799372759" value="label" />
-            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130816946252" nodeInfo="ng">
-              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816946253" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="2.7386093174192183" />
-                <property name="y" nameId="suqv.2319506556913310863" value="-145.280955943023" />
+            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130818854400" nodeInfo="ng">
+              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854401" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="1.0" />
+                <property name="y" nameId="suqv.2319506556913310863" value="-177.37260227681054" />
               </node>
-              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816946254" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="189.97051055968385" />
-                <property name="y" nameId="suqv.2319506556913310863" value="490.1912094601956" />
+              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854402" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="907.0" />
+                <property name="y" nameId="suqv.2319506556913310863" value="539.3726022768105" />
               </node>
             </node>
+          </node>
+          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818829055" nodeInfo="ng">
+            <property name="x" nameId="suqv.2319506556913310861" value="503.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="646.0" />
+          </node>
+          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818829056" nodeInfo="ng">
+            <property name="x" nameId="suqv.2319506556913310861" value="907.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="646.0" />
+          </node>
+          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818829057" nodeInfo="ng">
+            <property name="x" nameId="suqv.2319506556913310861" value="907.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="120.0" />
+          </node>
+          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818829058" nodeInfo="ng">
+            <property name="x" nameId="suqv.2319506556913310861" value="791.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="120.0" />
           </node>
         </node>
       </node>
@@ -781,33 +787,82 @@
         <property name="key" nameId="suqv.8963411245960998400" value="7483173130815597960" />
         <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="7483173130815600186" nodeInfo="ng">
           <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815600188" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="398.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="412.0" />
+            <property name="x" nameId="suqv.2319506556913310861" value="503.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="337.0" />
           </node>
           <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815600189" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="760.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="412.0" />
-          </node>
-          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815600190" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="760.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="320.0" />
-          </node>
-          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130815600191" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="709.0" />
-            <property name="y" nameId="suqv.2319506556913310863" value="320.0" />
+            <property name="x" nameId="suqv.2319506556913310861" value="208.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="337.0" />
           </node>
           <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="7483173130815600192" nodeInfo="ng">
             <property name="type" nameId="suqv.4767615435799372759" value="label" />
-            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130816946255" nodeInfo="ng">
-              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816946256" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="110.5" />
-                <property name="y" nameId="suqv.2319506556913310863" value="-67.0" />
+            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130818854403" nodeInfo="ng">
+              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854404" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="115.19590256931264" />
+                <property name="y" nameId="suqv.2319506556913310863" value="25.0" />
               </node>
-              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130816946257" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="650.6899301139631" />
-                <property name="y" nameId="suqv.2319506556913310863" value="412.0" />
+              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854405" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="388.80409743068736" />
+                <property name="y" nameId="suqv.2319506556913310863" value="337.0" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+      <node role="entries" roleId="suqv.8963411245960991904" type="suqv.LayoutMapEntry" typeId="suqv.8963411245960991903" id="7483173130817877547" nodeInfo="ng">
+        <property name="key" nameId="suqv.8963411245960998400" value="[MyConcept, Super]" />
+        <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="7483173130817877546" nodeInfo="ng">
+          <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="7483173130817877548" nodeInfo="ng">
+            <property name="type" nameId="suqv.4767615435799372759" value="label" />
+            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130818854364" nodeInfo="ng">
+              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854365" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="1.0" />
+                <property name="y" nameId="suqv.2319506556913310863" value="-33.5" />
+              </node>
+              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854366" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="503.0" />
+                <property name="y" nameId="suqv.2319506556913310863" value="604.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="entries" roleId="suqv.8963411245960991904" type="suqv.LayoutMapEntry" typeId="suqv.8963411245960991903" id="7483173130817877892" nodeInfo="ng">
+        <property name="key" nameId="suqv.8963411245960998400" value="7483173130817877821" />
+        <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="7483173130817877891" nodeInfo="ng">
+          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130817877893" nodeInfo="ng">
+            <property name="x" nameId="suqv.2319506556913310861" value="335.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="270.5" />
+          </node>
+          <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="7483173130817877895" nodeInfo="ng">
+            <property name="type" nameId="suqv.4767615435799372759" value="label" />
+            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130818854385" nodeInfo="ng">
+              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854386" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="-50.25" />
+                <property name="y" nameId="suqv.2319506556913310863" value="101.0" />
+              </node>
+              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854387" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="386.25" />
+                <property name="y" nameId="suqv.2319506556913310863" value="44.0" />
+              </node>
+            </node>
+          </node>
+          <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="7483173130817877899" nodeInfo="ng">
+            <property name="type" nameId="suqv.4767615435799372759" value="endRole" />
+            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="7483173130818854388" nodeInfo="ng">
+              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854389" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="1.490000000000009" />
+                <property name="y" nameId="suqv.2319506556913310863" value="-18.0" />
+              </node>
+              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130818854390" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="709.51" />
+                <property name="y" nameId="suqv.2319506556913310863" value="44.0" />
+              </node>
+            </node>
+          </node>
+          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="7483173130817879498" nodeInfo="ng">
+            <property name="x" nameId="suqv.2319506556913310861" value="335.0" />
+            <property name="y" nameId="suqv.2319506556913310863" value="44.0" />
           </node>
         </node>
       </node>
@@ -816,7 +871,7 @@
       <link role="concept" roleId="45ke.2634829965779416712" targetNodeId="7483173130815597955" resolveInfo="MyIface" />
     </node>
     <node role="contents" roleId="45ke.2634829965775258652" type="45ke.AbstractConceptDeclarationRef" typeId="45ke.2634829965779416711" id="7483173130815598113" nodeInfo="ng">
-      <link role="concept" roleId="45ke.2634829965779416712" targetNodeId="7483173130815597958" resolveInfo="Supe" />
+      <link role="concept" roleId="45ke.2634829965779416712" targetNodeId="7483173130815597958" resolveInfo="Super" />
     </node>
     <node role="contents" roleId="45ke.2634829965775258652" type="45ke.AbstractConceptDeclarationRef" typeId="45ke.2634829965779416711" id="7483173130815598114" nodeInfo="ng">
       <link role="concept" roleId="45ke.2634829965779416712" targetNodeId="7483173130815597961" resolveInfo="SuperIface1" />
