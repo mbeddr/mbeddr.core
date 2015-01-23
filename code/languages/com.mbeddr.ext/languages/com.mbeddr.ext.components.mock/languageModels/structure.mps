@@ -79,6 +79,9 @@
     <node concept="PrWs8" id="5fn4FV$bI24" role="PzmwI">
       <ref role="PrY4T" to="v7ag:71UKpntm630" resolve="IComponentContent" />
     </node>
+    <node concept="PrWs8" id="6towh06ue_F" role="PzmwI">
+      <ref role="PrY4T" to="x27k:2lgwE2U4_F1" resolve="ICodeLocationAware" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1Rr52SXzvm4">
     <property role="TrG5h" value="ExpectNoCall" />
@@ -227,6 +230,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="WMIrWR4jaM" role="PzmwI">
       <ref role="PrY4T" to="2gv2:vymDPxT3Jf" resolve="ISteppable" />
+    </node>
+    <node concept="PrWs8" id="6towh06nLnx" role="PzmwI">
+      <ref role="PrY4T" to="x27k:2lgwE2U4_F1" resolve="ICodeLocationAware" />
     </node>
     <node concept="1TJgyj" id="3Krj9Itj2Y4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
