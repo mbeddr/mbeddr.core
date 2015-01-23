@@ -381,6 +381,9 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1154546950173" name="jetbrains.mps.lang.smodel.structure.ConceptReference" flags="ng" index="3gn64h">
         <reference id="1154546997487" name="concept" index="3gnhBz" />
       </concept>
@@ -4154,13 +4157,13 @@
           <node concept="3Tqbb2" id="1iwpWaOx0Ob" role="1tU5fm">
             <ref role="ehGHo" to="mj1l:2TbP0WsJvOO" resolve="TypeSizeConfiguration" />
           </node>
-          <node concept="2OqwBi" id="1iwpWaOx0Oc" role="33vP2m">
-            <node concept="3TUQnm" id="1iwpWaOx0Od" role="2Oq$k0">
-              <ref role="3TV0OU" to="mj1l:2TbP0WsJvOO" resolve="TypeSizeConfiguration" />
+          <node concept="2OqwBi" id="5i_p6zAgBxH" role="33vP2m">
+            <node concept="35c_gC" id="5i_p6zAgBxI" role="2Oq$k0">
+              <ref role="35c_gD" to="mj1l:2TbP0WsJvOO" resolve="TypeSizeConfiguration" />
             </node>
-            <node concept="2qgKlT" id="1iwpWaOx0Oe" role="2OqNvi">
+            <node concept="2qgKlT" id="5i_p6zAgBxJ" role="2OqNvi">
               <ref role="37wK5l" to="ywuz:3LaV6lLNTR2" resolve="findTypeSizeConfig" />
-              <node concept="1YBJjd" id="1iwpWaOx0Of" role="37wK5m">
+              <node concept="1YBJjd" id="5i_p6zAgDAu" role="37wK5m">
                 <ref role="1YBMHb" node="3ccihsockZm" resolve="type" />
               </node>
             </node>
