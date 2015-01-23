@@ -532,11 +532,8 @@
           </node>
         </node>
         <node concept="lc7rE" id="7D99css6PlC" role="3cqZAp">
-          <node concept="la8eA" id="7D99css6Z7z" role="lcghm">
-            <property role="lacIc" value="typedef " />
-          </node>
           <node concept="la8eA" id="7D99css6PlE" role="lcghm">
-            <property role="lacIc" value="enum ___" />
+            <property role="lacIc" value="enum " />
           </node>
           <node concept="l9hG8" id="7D99css6Z7C" role="lcghm">
             <node concept="2OqwBi" id="7D99css6Z7D" role="lb14g">
@@ -712,6 +709,9 @@
       <node concept="3clFbS" id="7D99css6Pnh" role="2VODD2">
         <node concept="3clFbH" id="1exqRp8zx1" role="3cqZAp" />
         <node concept="lc7rE" id="7D99css6Pni" role="3cqZAp">
+          <node concept="la8eA" id="6towh06b4JF" role="lcghm">
+            <property role="lacIc" value="enum " />
+          </node>
           <node concept="l9hG8" id="7D99css6Pnk" role="lcghm">
             <node concept="2OqwBi" id="7D99css6Pnt" role="lb14g">
               <node concept="2OqwBi" id="7D99css6Pnn" role="2Oq$k0">
