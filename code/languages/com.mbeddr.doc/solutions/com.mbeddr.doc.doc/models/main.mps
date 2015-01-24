@@ -16,11 +16,6 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
   </imports>
   <registry>
-    <language id="00000000-0000-0000-0000-000000000000" name="">
-      <concept id="0" name="" flags="ng" index="00000">
-        <reference id="0" name="visualizable" index="00000" />
-      </concept>
-    </language>
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
       <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB">
         <property id="4457500422381329081" name="stylesheet" index="1jVmeX" />
@@ -41,6 +36,7 @@
         <reference id="2588579461812060096" name="path" index="tKoie" />
         <child id="2588579461812060100" name="sizeSpec" index="tKoia" />
         <child id="2588579461812060099" name="description" index="tKoid" />
+        <child id="6669194810533249758" name="codeptr" index="ZeNY6" />
       </concept>
       <concept id="6165313375056012512" name="com.mbeddr.doc.structure.DocumentInclude" flags="ng" index="$CzcT">
         <child id="6165313375056012515" name="ref" index="$CzcU" />
@@ -1332,7 +1328,6 @@
         <node concept="tKojO" id="7$DvC4gTG_S" role="1_0VJ0">
           <property role="tKoif" value="statechart (2D)" />
           <property role="TrG5h" value="tl" />
-          <ref role="00000" to="bskg:7$DvC4gTGAe" resolve="TrafficLights" />
           <ref role="tKoie" node="7$DvC4gPWka" resolve="imgTemp" />
           <node concept="OjmMv" id="7$DvC4gTG_T" role="tKoid">
             <node concept="19SGf9" id="7$DvC4gTG_U" role="OjmMu">
@@ -1343,6 +1338,14 @@
           </node>
           <node concept="3SG1Pu" id="7$DvC4gUbuR" role="tKoia">
             <property role="3SG1Pv" value="60" />
+          </node>
+          <node concept="2NCZwO" id="8K5lDO6dgo" role="ZeNY6">
+            <node concept="2NCMab" id="8K5lDO6gOn" role="2NCMaf">
+              <ref role="2NCMaa" to="bskg:7$DvC4gRxWW" resolve="ExampleCode" />
+            </node>
+            <node concept="2NCMab" id="8K5lDO6h39" role="2NCMaf">
+              <ref role="2NCMaa" to="bskg:7$DvC4gTGAe" resolve="TrafficLights" />
+            </node>
           </node>
         </node>
         <node concept="1Ae1f2" id="7$DvC4gTG_M" role="1_0VJ0">
@@ -1800,7 +1803,6 @@
       <node concept="tKojO" id="2nGCZEu8Nx$" role="1_0VJ0">
         <property role="tKoif" value="term dependencies" />
         <property role="TrG5h" value="termDeps" />
-        <ref role="00000" node="7rXn3flJGna" resolve="Car" />
         <ref role="tKoie" node="7$DvC4gPWka" resolve="imgTemp" />
         <node concept="OjmMv" id="2nGCZEu8Nx_" role="tKoid">
           <node concept="19SGf9" id="2nGCZEu8NxA" role="OjmMu">
@@ -1811,6 +1813,14 @@
         </node>
         <node concept="3SGHZ$" id="2nGCZEu8NxC" role="tKoia">
           <property role="3SGHZ_" value="100" />
+        </node>
+        <node concept="2NCZwO" id="8K5lDO6hcP" role="ZeNY6">
+          <node concept="2NCMab" id="8K5lDO6hcT" role="2NCMaf">
+            <ref role="2NCMaa" node="7rXn3flJCi4" resolve="Z_Glossary" />
+          </node>
+          <node concept="2NCMab" id="8K5lDO6hcZ" role="2NCMaf">
+            <ref role="2NCMaa" node="7rXn3flJGna" resolve="Car" />
+          </node>
         </node>
       </node>
     </node>
