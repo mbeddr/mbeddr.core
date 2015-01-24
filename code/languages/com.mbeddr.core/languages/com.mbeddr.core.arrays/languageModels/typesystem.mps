@@ -334,6 +334,9 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1154546950173" name="jetbrains.mps.lang.smodel.structure.ConceptReference" flags="ng" index="3gn64h">
         <reference id="1154546997487" name="concept" index="3gnhBz" />
       </concept>
@@ -441,18 +444,18 @@
     <node concept="3clFbS" id="fwMInzpjqA" role="18ibNy">
       <node concept="3cpWs8" id="3LaV6lLOzV1" role="3cqZAp">
         <node concept="3cpWsn" id="3LaV6lLOzV2" role="3cpWs9">
-          <property role="TrG5h" value="tsc" />
+          <property role="TrG5h" value="config" />
           <node concept="3Tqbb2" id="3LaV6lLOzV3" role="1tU5fm">
             <ref role="ehGHo" to="mj1l:2TbP0WsJvOO" resolve="TypeSizeConfiguration" />
           </node>
           <node concept="2OqwBi" id="3LaV6lLOzV4" role="33vP2m">
-            <node concept="3TUQnm" id="3LaV6lLOzV5" role="2Oq$k0">
-              <ref role="3TV0OU" to="mj1l:2TbP0WsJvOO" resolve="TypeSizeConfiguration" />
+            <node concept="35c_gC" id="21vEdUvcqUR" role="2Oq$k0">
+              <ref role="35c_gD" to="mj1l:2TbP0WsJvOO" resolve="TypeSizeConfiguration" />
             </node>
             <node concept="2qgKlT" id="3LaV6lLOzV6" role="2OqNvi">
               <ref role="37wK5l" to="ywuz:3LaV6lLNTR2" resolve="findTypeSizeConfig" />
               <node concept="1YBJjd" id="3LaV6lM_Evz" role="37wK5m">
-                <ref role="1YBMHb" node="fwMInzpjqB" resolve="soe" />
+                <ref role="1YBMHb" node="fwMInzpjqB" resolve="exp" />
               </node>
             </node>
           </node>
@@ -460,14 +463,14 @@
       </node>
       <node concept="3cpWs8" id="4ioi0JBk4S7" role="3cqZAp">
         <node concept="3cpWsn" id="4ioi0JBk4Sa" role="3cpWs9">
-          <property role="TrG5h" value="tpe" />
+          <property role="TrG5h" value="type" />
           <node concept="3Tqbb2" id="4ioi0JBk4S5" role="1tU5fm">
             <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
           </node>
           <node concept="2OqwBi" id="4ioi0JBk5vl" role="33vP2m">
             <node concept="2OqwBi" id="4ioi0JBk516" role="2Oq$k0">
               <node concept="37vLTw" id="4ioi0JBk4X$" role="2Oq$k0">
-                <ref role="3cqZAo" node="3LaV6lLOzV2" resolve="tsc" />
+                <ref role="3cqZAo" node="3LaV6lLOzV2" resolve="config" />
               </node>
               <node concept="3TrEf2" id="4ioi0JBk5eC" role="2OqNvi">
                 <ref role="3Tt5mk" to="mj1l:7FZLineUJnj" />
@@ -484,7 +487,7 @@
           </node>
           <node concept="2OqwBi" id="4ioi0JBk5Ss" role="37vLTJ">
             <node concept="37vLTw" id="4ioi0JBk5NY" role="2Oq$k0">
-              <ref role="3cqZAo" node="4ioi0JBk4Sa" resolve="tpe" />
+              <ref role="3cqZAo" node="4ioi0JBk4Sa" resolve="type" />
             </node>
             <node concept="3TrcHB" id="4ioi0JBk6kb" role="2OqNvi">
               <ref role="3TsBF5" to="mj1l:2zhwXA$N7QC" resolve="const" />
@@ -495,20 +498,20 @@
       <node concept="1Z5TYs" id="7FZLineUVgZ" role="3cqZAp">
         <node concept="mw_s8" id="4ioi0JBk6Jk" role="1ZfhKB">
           <node concept="37vLTw" id="4ioi0JBk6Jj" role="mwGJk">
-            <ref role="3cqZAo" node="4ioi0JBk4Sa" resolve="tpe" />
+            <ref role="3cqZAo" node="4ioi0JBk4Sa" resolve="type" />
           </node>
         </node>
         <node concept="mw_s8" id="7FZLineUVh2" role="1ZfhK$">
           <node concept="1Z2H0r" id="7FZLineUVgW" role="mwGJk">
             <node concept="1YBJjd" id="7FZLineVhFu" role="1Z2MuG">
-              <ref role="1YBMHb" node="fwMInzpjqB" resolve="soe" />
+              <ref role="1YBMHb" node="fwMInzpjqB" resolve="exp" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="fwMInzpjqB" role="1YuTPh">
-      <property role="TrG5h" value="soe" />
+      <property role="TrG5h" value="exp" />
       <ref role="1YaFvo" to="yq40:fwMInzpji7" resolve="SizeOfExpr" />
     </node>
   </node>

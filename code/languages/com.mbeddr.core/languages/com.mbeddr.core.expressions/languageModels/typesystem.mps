@@ -4172,16 +4172,16 @@
       </node>
       <node concept="3cpWs8" id="1iwpWaOx0Og" role="3cqZAp">
         <node concept="3cpWsn" id="1iwpWaOx0Oh" role="3cpWs9">
-          <property role="TrG5h" value="mapping" />
+          <property role="TrG5h" value="mappedType" />
           <node concept="3Tqbb2" id="1iwpWaOx0Oi" role="1tU5fm">
-            <ref role="ehGHo" to="mj1l:2TbP0WsJvOP" resolve="TypeSizeSpecification" />
+            <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
           </node>
           <node concept="2OqwBi" id="1iwpWaOx0Oj" role="33vP2m">
             <node concept="37vLTw" id="1iwpWaOx0Ok" role="2Oq$k0">
               <ref role="3cqZAo" node="1iwpWaOx0Oa" resolve="config" />
             </node>
             <node concept="2qgKlT" id="1iwpWaOx0Ol" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:2TbP0WsLhcG" resolve="mapBasicType" />
+              <ref role="37wK5l" to="ywuz:3_pf_GQk$5P" resolve="mapBasicType" />
               <node concept="1YBJjd" id="1iwpWaOx0Om" role="37wK5m">
                 <ref role="1YBMHb" node="3ccihsockZm" resolve="type" />
               </node>
@@ -4212,7 +4212,7 @@
         <node concept="3clFbC" id="1iwpWaOxyPt" role="3clFbw">
           <node concept="10Nm6u" id="1iwpWaOxyPS" role="3uHU7w" />
           <node concept="37vLTw" id="1iwpWaOxyG$" role="3uHU7B">
-            <ref role="3cqZAo" node="1iwpWaOx0Oh" resolve="mapping" />
+            <ref role="3cqZAo" node="1iwpWaOx0Oh" resolve="mappedType" />
           </node>
         </node>
         <node concept="9aQIb" id="1iwpWaOxz6a" role="9aQIa">
@@ -4228,13 +4228,8 @@
               </node>
               <node concept="mw_s8" id="1iwpWaOx0Or" role="1ZfhKB">
                 <node concept="1Z2H0r" id="1iwpWaOx0Os" role="mwGJk">
-                  <node concept="2OqwBi" id="1iwpWaOx0Ot" role="1Z2MuG">
-                    <node concept="37vLTw" id="1iwpWaOx0Ou" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1iwpWaOx0Oh" resolve="mapping" />
-                    </node>
-                    <node concept="3TrEf2" id="1iwpWaOx0Ov" role="2OqNvi">
-                      <ref role="3Tt5mk" to="mj1l:6w9JOkHS6zb" />
-                    </node>
+                  <node concept="37vLTw" id="1iwpWaOx0Ou" role="1Z2MuG">
+                    <ref role="3cqZAo" node="1iwpWaOx0Oh" resolve="mappedType" />
                   </node>
                 </node>
               </node>
