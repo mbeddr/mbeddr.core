@@ -320,6 +320,7 @@
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptTypeSConcept" flags="in" index="3bZ5Sz" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -2312,17 +2313,17 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm1VV" id="7d9zFs_$DP2" role="1B3o_S" />
       <node concept="3rvAFt" id="7d9zFs_$E6q" role="1tU5fm">
-        <node concept="3THzug" id="7d9zFs_$E6E" role="3rvQeY" />
         <node concept="3uibUv" id="7d9zFs_$IhN" role="3rvSg0">
           <ref role="3uigEE" node="7d9zFs_$HfD" resolve="MarkerType" />
         </node>
+        <node concept="3bZ5Sz" id="6si$VEknhaq" role="3rvQeY" />
       </node>
       <node concept="2ShNRf" id="7d9zFs_$EGv" role="33vP2m">
         <node concept="3rGOSV" id="7d9zFs_$EGm" role="2ShVmc">
-          <node concept="3THzug" id="7d9zFs_$EGn" role="3rHrn6" />
           <node concept="3uibUv" id="7d9zFs_$Is5" role="3rHtpV">
             <ref role="3uigEE" node="7d9zFs_$HfD" resolve="MarkerType" />
           </node>
+          <node concept="3bZ5Sz" id="6si$VEknhqT" role="3rHrn6" />
         </node>
       </node>
       <node concept="z59LJ" id="7d9zFs_$J0g" role="lGtFl">

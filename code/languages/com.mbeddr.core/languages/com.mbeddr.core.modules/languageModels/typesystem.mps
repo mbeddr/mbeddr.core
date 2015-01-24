@@ -339,6 +339,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
@@ -6570,7 +6571,7 @@
                               <node concept="37vLTw" id="7d9zFs_$OLl" role="2Oq$k0">
                                 <ref role="3cqZAo" node="7t5t4TspDeN" resolve="source" />
                               </node>
-                              <node concept="3NT_Vc" id="7d9zFs_$OLm" role="2OqNvi" />
+                              <node concept="2yIwOk" id="6si$VEkmZN0" role="2OqNvi" />
                             </node>
                             <node concept="10M0yZ" id="7d9zFs_$OLn" role="3ElQJh">
                               <ref role="1PxDUh" to="9xhd:7d9zFs_pkq2" resolve="UninitializedReadAnalyzerHelper" />
@@ -6585,31 +6586,18 @@
                           <node concept="17QB3L" id="7d9zFs_$RdB" role="1tU5fm" />
                           <node concept="3cpWs3" id="32AEfLiUmS6" role="33vP2m">
                             <node concept="Xl_RD" id="2GqtAvzatbu" role="3uHU7w">
-                              <property role="Xl_RC" value=")!" />
+                              <property role="Xl_RC" value="!" />
                             </node>
-                            <node concept="3cpWs3" id="32AEfLiUnpv" role="3uHU7B">
-                              <node concept="2OqwBi" id="32AEfLiUnAg" role="3uHU7w">
-                                <node concept="37vLTw" id="32AEfLiUnxV" role="2Oq$k0">
+                            <node concept="3cpWs3" id="2GqtAvzas_A" role="3uHU7B">
+                              <node concept="Xl_RD" id="2GqtAvzasoa" role="3uHU7B">
+                                <property role="Xl_RC" value="Reading from uninitialized variable " />
+                              </node>
+                              <node concept="2OqwBi" id="2GqtAvzasGh" role="3uHU7w">
+                                <node concept="37vLTw" id="2GqtAvzasA3" role="2Oq$k0">
                                   <ref role="3cqZAo" node="2GqtAvzamvw" resolve="variable" />
                                 </node>
-                                <node concept="3NT_Vc" id="32AEfLiUnUu" role="2OqNvi" />
-                              </node>
-                              <node concept="3cpWs3" id="2GqtAvzat5g" role="3uHU7B">
-                                <node concept="3cpWs3" id="2GqtAvzas_A" role="3uHU7B">
-                                  <node concept="Xl_RD" id="2GqtAvzasoa" role="3uHU7B">
-                                    <property role="Xl_RC" value="Reading from uninitialized variable " />
-                                  </node>
-                                  <node concept="2OqwBi" id="2GqtAvzasGh" role="3uHU7w">
-                                    <node concept="37vLTw" id="2GqtAvzasA3" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="2GqtAvzamvw" resolve="variable" />
-                                    </node>
-                                    <node concept="2qgKlT" id="2GqtAvzasN5" role="2OqNvi">
-                                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="Xl_RD" id="32AEfLiUn67" role="3uHU7w">
-                                  <property role="Xl_RC" value=" (" />
+                                <node concept="2qgKlT" id="2GqtAvzasN5" role="2OqNvi">
+                                  <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                                 </node>
                               </node>
                             </node>
