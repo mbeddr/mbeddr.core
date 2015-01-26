@@ -2485,16 +2485,6 @@
         <ref role="3uigEE" to="dbrf:~JCheckBox" resolve="JCheckBox" />
       </node>
     </node>
-    <node concept="312cEg" id="3Ymokd9Jk1l" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="rawCounterexample" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="3Ymokd9Jk1m" role="1B3o_S" />
-      <node concept="3uibUv" id="3Ymokd9Jk1n" role="1tU5fm">
-        <ref role="3uigEE" to="dbrf:~JCheckBox" resolve="JCheckBox" />
-      </node>
-    </node>
     <node concept="312cEg" id="3_HSwtcTkD3" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
