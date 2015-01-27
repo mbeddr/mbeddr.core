@@ -9,6 +9,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+    <use id="5e845763-f4ca-40bf-b31f-74e236ffed75" name="com.mbeddr.mpsutil.spreferences.context" version="-1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -206,6 +207,11 @@
         <child id="1452920870317474611" name="sizeExpr" index="1YbSNA" />
       </concept>
     </language>
+    <language id="5e845763-f4ca-40bf-b31f-74e236ffed75" name="com.mbeddr.mpsutil.spreferences.context">
+      <concept id="877857976371880700" name="com.mbeddr.mpsutil.spreferences.context.structure.SPreferencesContext" flags="ng" index="2wNmnh">
+        <child id="877857976371881842" name="redirectToModel" index="2wNm1v" />
+      </concept>
+    </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="3073566081777391256" name="com.mbeddr.core.util.structure.WithMemberAssignment" flags="ng" index="8C5q9">
         <reference id="3073566081777391258" name="element" index="8C5qb" />
@@ -401,6 +407,10 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
+        <property id="559557797393021807" name="stereotype" index="BaGAP" />
+        <property id="559557797393017702" name="name" index="BaHAW" />
+      </concept>
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -22724,6 +22734,12 @@
       <node concept="3xLA65" id="3CDxr3A4io5" role="lGtFl">
         <property role="TrG5h" value="toCheck" />
       </node>
+    </node>
+  </node>
+  <node concept="2wNmnh" id="KILMQH1yKg">
+    <node concept="BaHAS" id="KILMQH1yKh" role="2wNm1v">
+      <property role="BaHAW" value="tests.ts.core.tests1" />
+      <property role="BaGAP" value="tests" />
     </node>
   </node>
 </model>
