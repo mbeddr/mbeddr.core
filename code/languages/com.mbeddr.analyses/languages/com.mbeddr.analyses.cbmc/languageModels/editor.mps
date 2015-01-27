@@ -2015,6 +2015,30 @@
               </node>
             </node>
           </node>
+          <node concept="3EZMnI" id="jmYEA6F59B" role="3EZMnx">
+            <node concept="pkWqt" id="jmYEA6F59C" role="pqm2j">
+              <node concept="3clFbS" id="jmYEA6F59D" role="2VODD2">
+                <node concept="3clFbF" id="jmYEA6F59E" role="3cqZAp">
+                  <node concept="2OqwBi" id="jmYEA6F59F" role="3clFbG">
+                    <node concept="pncrf" id="jmYEA6F59G" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="jmYEA6F5Qg" role="2OqNvi">
+                      <ref role="3TsBF5" to="q5q6:jmYEA6F408" resolve="hasLocalArchitectureSettings" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="VPM3Z" id="jmYEA6F59I" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="2iRfu4" id="jmYEA6F59J" role="2iSdaV" />
+            <node concept="3F0ifn" id="jmYEA6F59K" role="3EZMnx">
+              <property role="3F0ifm" value="word width" />
+            </node>
+            <node concept="3F0A7n" id="jmYEA6HCW$" role="3EZMnx">
+              <ref role="1NtTu8" to="q5q6:jmYEA6F41F" resolve="wordWidth" />
+            </node>
+          </node>
           <node concept="2EHx9g" id="2hmLFg9MHIY" role="2iSdaV" />
         </node>
       </node>
