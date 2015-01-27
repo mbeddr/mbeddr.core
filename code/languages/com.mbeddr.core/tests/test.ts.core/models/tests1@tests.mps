@@ -53,10 +53,14 @@
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
       </concept>
+      <concept id="1214846310980" name="jetbrains.mps.lang.test.structure.AbstractNodeAssert" flags="nn" index="3quTHu">
+        <child id="1214846370530" name="nodeToCheck" index="3qv8fS" />
+      </concept>
       <concept id="1210673684636" name="jetbrains.mps.lang.test.structure.TestNodeAnnotation" flags="ng" index="3xLA65" />
       <concept id="1210674524691" name="jetbrains.mps.lang.test.structure.TestNodeReference" flags="nn" index="3xONca">
         <reference id="1210674534086" name="declaration" index="3xOPvv" />
       </concept>
+      <concept id="1215075719096" name="jetbrains.mps.lang.test.structure.CheckNodeForErrors" flags="nn" index="3Ca1qy" />
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -22592,6 +22596,17 @@
   </node>
   <node concept="1lH9Xt" id="12K3RfpFMGE">
     <property role="TrG5h" value="Operators_ExternalTest" />
+    <node concept="1LZb2c" id="3CDxr3A4ibx" role="1SL9yI">
+      <property role="TrG5h" value="doCheck" />
+      <node concept="3cqZAl" id="3CDxr3A4iby" role="3clF45" />
+      <node concept="3clFbS" id="3CDxr3A4ibA" role="3clF47">
+        <node concept="3Ca1qy" id="3CDxr3A4zXt" role="3cqZAp">
+          <node concept="3xONca" id="3CDxr3A4$2z" role="3qv8fS">
+            <ref role="3xOPvv" node="3CDxr3A4io5" resolve="toCheck" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1qefOq" id="12K3RfpFMIx" role="1SKRRt">
       <node concept="N3F5e" id="12K3RfpFMIz" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -22705,6 +22720,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3xLA65" id="3CDxr3A4io5" role="lGtFl">
+        <property role="TrG5h" value="toCheck" />
       </node>
     </node>
   </node>
