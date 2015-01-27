@@ -81,9 +81,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -106,11 +103,6 @@
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
-      <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
-        <child id="8427750732757990725" name="actual" index="3tpDZA" />
-        <child id="8427750732757990724" name="expected" index="3tpDZB" />
-      </concept>
-      <concept id="1171978097730" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertEquals" flags="nn" index="3vlDli" />
       <concept id="1171981022339" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertTrue" flags="nn" index="3vwNmj">
         <child id="1171981057159" name="condition" index="3vwVQn" />
       </concept>
@@ -143,7 +135,7 @@
   <node concept="1lH9Xt" id="NfDeW0OmlD">
     <property role="TrG5h" value="WordWidth" />
     <node concept="1LZb2c" id="NfDeW0OmlE" role="1SL9yI">
-      <property role="TrG5h" value="testOverflow_W16" />
+      <property role="TrG5h" value="test_W16" />
       <node concept="3cqZAl" id="NfDeW0OmlF" role="3clF45" />
       <node concept="3clFbS" id="NfDeW0OmlG" role="3clF47">
         <node concept="3cpWs8" id="NfDeW0OmlH" role="3cqZAp">
@@ -155,21 +147,6 @@
             <node concept="2ShNRf" id="NfDeW0OmlK" role="33vP2m">
               <node concept="1pGfFk" id="NfDeW0OmlL" role="2ShVmc">
                 <ref role="37wK5l" to="tzyt:tGR6edUFtG" resolve="CBMCAnalysisConfig" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="NfDeW0OmlM" role="3cqZAp">
-          <node concept="37vLTI" id="NfDeW0OmlN" role="3clFbG">
-            <node concept="3clFbT" id="NfDeW0OmlO" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
-            <node concept="2OqwBi" id="NfDeW0OmlP" role="37vLTJ">
-              <node concept="37vLTw" id="NfDeW0OmlQ" role="2Oq$k0">
-                <ref role="3cqZAo" node="NfDeW0OmlI" resolve="config" />
-              </node>
-              <node concept="2S8uIT" id="6DRvbEG5Jn1" role="2OqNvi">
-                <ref role="2S8YL0" to="tzyt:7QgqANUCWGQ" resolve="checkSignedOverflow" />
               </node>
             </node>
           </node>
@@ -198,21 +175,21 @@
                 <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
               </node>
             </node>
-            <node concept="NRdvd" id="6KXBYUq_AW5" role="33vP2m">
+            <node concept="NRdvd" id="jmYEA6IHTk" role="33vP2m">
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
-              <ref role="37wK5l" to="3h46:6BM8NjXd_xQ" resolve="checkRobustness" />
-              <node concept="BaHAS" id="6KXBYUq_AW6" role="37wK5m">
+              <ref role="37wK5l" to="3h46:6BM8NjXdCCl" resolve="checkAsserts" />
+              <node concept="BaHAS" id="jmYEA6IHTl" role="37wK5m">
                 <property role="BaBD8" value="pro" />
                 <property role="BaHAW" value="architecture" />
                 <property role="BaGAP" value="" />
               </node>
-              <node concept="Xl_RD" id="6KXBYUq_AW7" role="37wK5m">
+              <node concept="Xl_RD" id="jmYEA6IHTm" role="37wK5m">
                 <property role="Xl_RC" value="word_width" />
               </node>
-              <node concept="Xl_RD" id="6KXBYUq_AW8" role="37wK5m">
-                <property role="Xl_RC" value="adder" />
+              <node concept="Xl_RD" id="jmYEA6IHTn" role="37wK5m">
+                <property role="Xl_RC" value="word_width_16" />
               </node>
-              <node concept="3cpWsa" id="6KXBYUq_AW9" role="37wK5m">
+              <node concept="3cpWsa" id="jmYEA6IHTo" role="37wK5m">
                 <ref role="3cqZAo" node="NfDeW0OmlI" resolve="config" />
               </node>
             </node>
@@ -252,27 +229,14 @@
               <ref role="3cqZAo" node="NfDeW0Omml" resolve="res0" />
             </node>
             <node concept="liA8E" id="NfDeW0Ommu" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
-            </node>
-          </node>
-        </node>
-        <node concept="3vlDli" id="NfDeW0Ommv" role="3cqZAp">
-          <node concept="Xl_RD" id="NfDeW0Ommw" role="3tpDZB">
-            <property role="Xl_RC" value="arithmetic overflow on signed + in x + y" />
-          </node>
-          <node concept="2OqwBi" id="NfDeW0Ommx" role="3tpDZA">
-            <node concept="37vLTw" id="NfDeW0Ommy" role="2Oq$k0">
-              <ref role="3cqZAo" node="NfDeW0Omml" resolve="res0" />
-            </node>
-            <node concept="liA8E" id="NfDeW0Ommz" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:3FNuzGa2mmQ" resolve="getUserFriendlyMessage" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="1LZb2c" id="6DRvbEG5Snt" role="1SL9yI">
-      <property role="TrG5h" value="testOverflow_W32" />
+      <property role="TrG5h" value="test_W32" />
       <node concept="3cqZAl" id="6DRvbEG5Snu" role="3clF45" />
       <node concept="3clFbS" id="6DRvbEG5Snv" role="3clF47">
         <node concept="3cpWs8" id="6DRvbEG5Snw" role="3cqZAp">
@@ -284,21 +248,6 @@
             <node concept="2ShNRf" id="6DRvbEG5Snz" role="33vP2m">
               <node concept="1pGfFk" id="6DRvbEG5Sn$" role="2ShVmc">
                 <ref role="37wK5l" to="tzyt:tGR6edUFtG" resolve="CBMCAnalysisConfig" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6DRvbEG5Sn_" role="3cqZAp">
-          <node concept="37vLTI" id="6DRvbEG5SnA" role="3clFbG">
-            <node concept="3clFbT" id="6DRvbEG5SnB" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
-            <node concept="2OqwBi" id="6DRvbEG5SnC" role="37vLTJ">
-              <node concept="37vLTw" id="6DRvbEG5SnD" role="2Oq$k0">
-                <ref role="3cqZAo" node="6DRvbEG5Snx" resolve="config" />
-              </node>
-              <node concept="2S8uIT" id="6DRvbEG5SnE" role="2OqNvi">
-                <ref role="2S8YL0" to="tzyt:7QgqANUCWGQ" resolve="checkSignedOverflow" />
               </node>
             </node>
           </node>
@@ -327,21 +276,21 @@
                 <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
               </node>
             </node>
-            <node concept="NRdvd" id="6KXBYUq_B1r" role="33vP2m">
+            <node concept="NRdvd" id="jmYEA6IHNN" role="33vP2m">
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
-              <ref role="37wK5l" to="3h46:6BM8NjXd_xQ" resolve="checkRobustness" />
-              <node concept="BaHAS" id="6KXBYUq_B1s" role="37wK5m">
+              <ref role="37wK5l" to="3h46:6BM8NjXdCCl" resolve="checkAsserts" />
+              <node concept="BaHAS" id="jmYEA6IHNO" role="37wK5m">
                 <property role="BaBD8" value="pro" />
                 <property role="BaHAW" value="architecture" />
                 <property role="BaGAP" value="" />
               </node>
-              <node concept="Xl_RD" id="6KXBYUq_B1t" role="37wK5m">
+              <node concept="Xl_RD" id="jmYEA6IHNP" role="37wK5m">
                 <property role="Xl_RC" value="word_width" />
               </node>
-              <node concept="Xl_RD" id="6KXBYUq_B1u" role="37wK5m">
-                <property role="Xl_RC" value="adder" />
+              <node concept="Xl_RD" id="jmYEA6IHNQ" role="37wK5m">
+                <property role="Xl_RC" value="word_width_32" />
               </node>
-              <node concept="3cpWsa" id="6KXBYUq_B1v" role="37wK5m">
+              <node concept="3cpWsa" id="jmYEA6IHNR" role="37wK5m">
                 <ref role="3cqZAo" node="6DRvbEG5Snx" resolve="config" />
               </node>
             </node>
@@ -381,27 +330,14 @@
               <ref role="3cqZAo" node="6DRvbEG5SnZ" resolve="res0" />
             </node>
             <node concept="liA8E" id="6DRvbEG5So8" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
-            </node>
-          </node>
-        </node>
-        <node concept="3vlDli" id="6DRvbEG5So9" role="3cqZAp">
-          <node concept="Xl_RD" id="6DRvbEG5Soa" role="3tpDZB">
-            <property role="Xl_RC" value="arithmetic overflow on signed + in x + y" />
-          </node>
-          <node concept="2OqwBi" id="6DRvbEG5Sob" role="3tpDZA">
-            <node concept="37vLTw" id="6DRvbEG5Soc" role="2Oq$k0">
-              <ref role="3cqZAo" node="6DRvbEG5SnZ" resolve="res0" />
-            </node>
-            <node concept="liA8E" id="6DRvbEG5Sod" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:3FNuzGa2mmQ" resolve="getUserFriendlyMessage" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="1LZb2c" id="6DRvbEG5SQo" role="1SL9yI">
-      <property role="TrG5h" value="testOverflow_W64" />
+      <property role="TrG5h" value="test_W64" />
       <node concept="3cqZAl" id="6DRvbEG5SQp" role="3clF45" />
       <node concept="3clFbS" id="6DRvbEG5SQq" role="3clF47">
         <node concept="3cpWs8" id="6DRvbEG5SQr" role="3cqZAp">
@@ -413,21 +349,6 @@
             <node concept="2ShNRf" id="6DRvbEG5SQu" role="33vP2m">
               <node concept="1pGfFk" id="6DRvbEG5SQv" role="2ShVmc">
                 <ref role="37wK5l" to="tzyt:tGR6edUFtG" resolve="CBMCAnalysisConfig" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6DRvbEG5SQw" role="3cqZAp">
-          <node concept="37vLTI" id="6DRvbEG5SQx" role="3clFbG">
-            <node concept="3clFbT" id="6DRvbEG5SQy" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
-            <node concept="2OqwBi" id="6DRvbEG5SQz" role="37vLTJ">
-              <node concept="37vLTw" id="6DRvbEG5SQ$" role="2Oq$k0">
-                <ref role="3cqZAo" node="6DRvbEG5SQs" resolve="config" />
-              </node>
-              <node concept="2S8uIT" id="6DRvbEG5SQ_" role="2OqNvi">
-                <ref role="2S8YL0" to="tzyt:7QgqANUCWGQ" resolve="checkSignedOverflow" />
               </node>
             </node>
           </node>
@@ -456,21 +377,21 @@
                 <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
               </node>
             </node>
-            <node concept="NRdvd" id="6KXBYUq_B6L" role="33vP2m">
+            <node concept="NRdvd" id="jmYEA6IIgE" role="33vP2m">
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
-              <ref role="37wK5l" to="3h46:6BM8NjXd_xQ" resolve="checkRobustness" />
-              <node concept="BaHAS" id="6KXBYUq_B6M" role="37wK5m">
+              <ref role="37wK5l" to="3h46:6BM8NjXdCCl" resolve="checkAsserts" />
+              <node concept="BaHAS" id="jmYEA6IIgF" role="37wK5m">
                 <property role="BaBD8" value="pro" />
                 <property role="BaHAW" value="architecture" />
                 <property role="BaGAP" value="" />
               </node>
-              <node concept="Xl_RD" id="6KXBYUq_B6N" role="37wK5m">
+              <node concept="Xl_RD" id="jmYEA6IIgG" role="37wK5m">
                 <property role="Xl_RC" value="word_width" />
               </node>
-              <node concept="Xl_RD" id="6KXBYUq_B6O" role="37wK5m">
-                <property role="Xl_RC" value="adder" />
+              <node concept="Xl_RD" id="jmYEA6ICCC" role="37wK5m">
+                <property role="Xl_RC" value="word_width_64" />
               </node>
-              <node concept="3cpWsa" id="6KXBYUq_B6P" role="37wK5m">
+              <node concept="3cpWsa" id="jmYEA6IIgI" role="37wK5m">
                 <ref role="3cqZAo" node="6DRvbEG5SQs" resolve="config" />
               </node>
             </node>
@@ -511,19 +432,6 @@
             </node>
             <node concept="liA8E" id="6DRvbEG5SR3" role="2OqNvi">
               <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
-            </node>
-          </node>
-        </node>
-        <node concept="3vlDli" id="6DRvbEG5SR4" role="3cqZAp">
-          <node concept="Xl_RD" id="6DRvbEG5SR5" role="3tpDZB">
-            <property role="Xl_RC" value="arithmetic overflow on signed + in (signed int)x + (signed int)y" />
-          </node>
-          <node concept="2OqwBi" id="6DRvbEG5SR6" role="3tpDZA">
-            <node concept="37vLTw" id="6DRvbEG5SR7" role="2Oq$k0">
-              <ref role="3cqZAo" node="6DRvbEG5SQU" resolve="res0" />
-            </node>
-            <node concept="liA8E" id="6DRvbEG5SR8" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:3FNuzGa2mmQ" resolve="getUserFriendlyMessage" />
             </node>
           </node>
         </node>

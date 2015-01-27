@@ -15,6 +15,17 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <reference id="1083241965437" name="defaultMember" index="Qgau1" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1192116978809" name="javaIdentifier" index="2fHolG" />
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
@@ -354,6 +365,14 @@
       <property role="TrG5h" value="timeoutForSingleAnalysis" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="jmYEA6F408" role="1TKVEl">
+      <property role="TrG5h" value="hasLocalArchitectureSettings" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="jmYEA6F41F" role="1TKVEl">
+      <property role="TrG5h" value="wordWidth" />
+      <ref role="AX2Wp" node="jmYEA6H9sv" resolve="WordWidth" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6KXBYUqABWL">
     <property role="3GE5qa" value="types" />
@@ -374,6 +393,33 @@
   <node concept="1TIwiD" id="jmYEA6_9mJ">
     <property role="TrG5h" value="CProverPlatform" />
     <ref role="1TJDcQ" to="51wr:4BxItZJ4BoI" resolve="DesktopPlatform" />
+  </node>
+  <node concept="AxPO7" id="jmYEA6H9sv">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="WordWidth" />
+    <property role="3lZH7k" value="custom" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <ref role="Qgau1" node="jmYEA6IXdz" />
+    <node concept="M4N5e" id="jmYEA6IXdz" role="M5hS2">
+      <property role="2fHolG" value="none" />
+      <property role="1uS6qv" value="none" />
+      <property role="1uS6qo" value="none" />
+    </node>
+    <node concept="M4N5e" id="jmYEA6H9sC" role="M5hS2">
+      <property role="1uS6qo" value="64 bits" />
+      <property role="1uS6qv" value="64 bits" />
+      <property role="2fHolG" value="64 bits" />
+    </node>
+    <node concept="M4N5e" id="jmYEA6H9sx" role="M5hS2">
+      <property role="1uS6qo" value="32 bits" />
+      <property role="1uS6qv" value="32 bits" />
+      <property role="2fHolG" value="32 bits" />
+    </node>
+    <node concept="M4N5e" id="jmYEA6H9sw" role="M5hS2">
+      <property role="1uS6qo" value="16 bits" />
+      <property role="1uS6qv" value="16 bits" />
+      <property role="2fHolG" value="16 bits" />
+    </node>
   </node>
 </model>
 

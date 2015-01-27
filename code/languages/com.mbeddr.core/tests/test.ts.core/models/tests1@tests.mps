@@ -9,6 +9,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+    <use id="5e845763-f4ca-40bf-b31f-74e236ffed75" name="com.mbeddr.mpsutil.spreferences.context" version="-1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -53,10 +54,14 @@
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
       </concept>
+      <concept id="1214846310980" name="jetbrains.mps.lang.test.structure.AbstractNodeAssert" flags="nn" index="3quTHu">
+        <child id="1214846370530" name="nodeToCheck" index="3qv8fS" />
+      </concept>
       <concept id="1210673684636" name="jetbrains.mps.lang.test.structure.TestNodeAnnotation" flags="ng" index="3xLA65" />
       <concept id="1210674524691" name="jetbrains.mps.lang.test.structure.TestNodeReference" flags="nn" index="3xONca">
         <reference id="1210674534086" name="declaration" index="3xOPvv" />
       </concept>
+      <concept id="1215075719096" name="jetbrains.mps.lang.test.structure.CheckNodeForErrors" flags="nn" index="3Ca1qy" />
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -200,6 +205,11 @@
       <concept id="279446265608463015" name="com.mbeddr.core.pointers.structure.DerefExpr" flags="ng" index="3wxyx2" />
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42">
         <child id="1452920870317474611" name="sizeExpr" index="1YbSNA" />
+      </concept>
+    </language>
+    <language id="5e845763-f4ca-40bf-b31f-74e236ffed75" name="com.mbeddr.mpsutil.spreferences.context">
+      <concept id="877857976371880700" name="com.mbeddr.mpsutil.spreferences.context.structure.SPreferencesContext" flags="ng" index="2wNmnh">
+        <child id="877857976371881842" name="redirectToModel" index="2wNm1v" />
       </concept>
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
@@ -397,6 +407,10 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
+        <property id="559557797393021807" name="stereotype" index="BaGAP" />
+        <property id="559557797393017702" name="name" index="BaHAW" />
+      </concept>
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -22592,6 +22606,17 @@
   </node>
   <node concept="1lH9Xt" id="12K3RfpFMGE">
     <property role="TrG5h" value="Operators_ExternalTest" />
+    <node concept="1LZb2c" id="3CDxr3A4ibx" role="1SL9yI">
+      <property role="TrG5h" value="doCheck" />
+      <node concept="3cqZAl" id="3CDxr3A4iby" role="3clF45" />
+      <node concept="3clFbS" id="3CDxr3A4ibA" role="3clF47">
+        <node concept="3Ca1qy" id="3CDxr3A4zXt" role="3cqZAp">
+          <node concept="3xONca" id="3CDxr3A4$2z" role="3qv8fS">
+            <ref role="3xOPvv" node="3CDxr3A4io5" resolve="toCheck" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1qefOq" id="12K3RfpFMIx" role="1SKRRt">
       <node concept="N3F5e" id="12K3RfpFMIz" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -22706,6 +22731,15 @@
           </node>
         </node>
       </node>
+      <node concept="3xLA65" id="3CDxr3A4io5" role="lGtFl">
+        <property role="TrG5h" value="toCheck" />
+      </node>
+    </node>
+  </node>
+  <node concept="2wNmnh" id="KILMQH1yKg">
+    <node concept="BaHAS" id="KILMQH1yKh" role="2wNm1v">
+      <property role="BaHAW" value="tests.ts.core.tests1" />
+      <property role="BaGAP" value="tests" />
     </node>
   </node>
 </model>
