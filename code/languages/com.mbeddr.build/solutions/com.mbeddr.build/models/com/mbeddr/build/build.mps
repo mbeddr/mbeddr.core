@@ -3456,12 +3456,6 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
             </node>
           </node>
-          <node concept="1SiIV0" id="HiHZpX4D2Q" role="3bR37C">
-            <node concept="3bR9La" id="HiHZpX4D2R" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" node="7uZw0yZ43JH" resolve="com.mbeddr.core.unittest" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="HiHZpX4D2S" role="3bR37C">
             <node concept="3bR9La" id="HiHZpX4D2T" role="1SiIV1">
               <property role="3bR36h" value="false" />
