@@ -23,6 +23,8 @@
     <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(java.awt@java_stub)" />
     <import index="q46j" ref="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
+    <import index="p70l" ref="r:03a6131a-45fb-41fe-997e-86ce9462eaef(com.mbeddr.core.buildconfig.editor)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -6892,6 +6894,58 @@
     <ref role="1XX52x" to="q5q6:6KXBYUqABWL" resolve="CPROVERbool" />
     <node concept="3F0ifn" id="6KXBYUqAHlV" role="2wV5jI">
       <property role="3F0ifm" value="__CPROVERbool" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="jmYEA6_hgT">
+    <ref role="1XX52x" to="q5q6:jmYEA6_9mJ" resolve="CProverPlatform" />
+    <node concept="3EZMnI" id="4BxItZJ4BoY" role="2wV5jI">
+      <node concept="l2Vlx" id="4BxItZJ4Bp0" role="2iSdaV" />
+      <node concept="3F0ifn" id="3Ulkr59M5QI" role="3EZMnx">
+        <property role="3F0ifm" value="cprover" />
+      </node>
+      <node concept="3F0ifn" id="7c6uq_OtvlA" role="3EZMnx">
+        <property role="3F0ifm" value="paths are not checked" />
+        <ref role="1k5W1q" to="r4b4:2$$_2GR98qO" resolve="readOnly" />
+      </node>
+      <node concept="3F0ifn" id="3s1LyzG8Jy5" role="3EZMnx">
+        <property role="3F0ifm" value="compiler:" />
+        <node concept="lj46D" id="3s1LyzG8Jy6" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="3s1LyzG8Jy7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="jmYEA6_rHB" role="3EZMnx">
+        <property role="3F0ifm" value="goto-cc" />
+        <node concept="VechU" id="jmYEA6_teZ" role="3F10Kt">
+          <property role="Vb096" value="lightGray" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="3s1LyzGERJE" role="3EZMnx">
+        <node concept="VPM3Z" id="3s1LyzGERJG" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="lj46D" id="3s1LyzGERKJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="3s1LyzGERKK" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="4BxItZJ4Bp9" role="3EZMnx">
+          <property role="3F0ifm" value="compiler options:" />
+          <node concept="lj46D" id="4BxItZJ4Bpa" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="4BxItZJ4Bpb" role="3EZMnx">
+          <ref role="1NtTu8" to="51wr:4BxItZJ4BoL" resolve="compilerOptions" />
+          <node concept="ljvvj" id="4BxItZJ4Bpc" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="3s1LyzGERJJ" role="2iSdaV" />
+      </node>
     </node>
   </node>
 </model>

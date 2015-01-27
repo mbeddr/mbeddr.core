@@ -14,6 +14,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="ood5" ref="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" />
     <import index="p8vh" ref="r:774ac595-6c08-4ec5-a945-c0e06119d39d(com.mbeddr.analyses.cbmc.rt.ui)" />
+    <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -1829,6 +1830,39 @@
             <node concept="13iPFW" id="1Qze4b2RtDF" role="2Oq$k0" />
             <node concept="2qgKlT" id="1Qze4b2RtVp" role="2OqNvi">
               <ref role="37wK5l" node="1Qze4b2Rtje" resolve="initGenericSettings" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="jmYEA6_tGC">
+    <ref role="13h7C2" to="q5q6:jmYEA6_9mJ" resolve="CProverPlatform" />
+    <node concept="13hLZK" id="jmYEA6_tGD" role="13h7CW">
+      <node concept="3clFbS" id="jmYEA6_tGE" role="2VODD2">
+        <node concept="3clFbF" id="34x64NyRAM5" role="3cqZAp">
+          <node concept="37vLTI" id="34x64NyRAM6" role="3clFbG">
+            <node concept="Xl_RD" id="34x64NyRAM7" role="37vLTx">
+              <property role="Xl_RC" value="goto-cc" />
+            </node>
+            <node concept="2OqwBi" id="34x64NyRAM8" role="37vLTJ">
+              <node concept="13iPFW" id="34x64NyRAM9" role="2Oq$k0" />
+              <node concept="3TrcHB" id="34x64NyRAMa" role="2OqNvi">
+                <ref role="3TsBF5" to="51wr:4BxItZJ4BoK" resolve="compiler" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="34x64NyRAMb" role="3cqZAp">
+          <node concept="37vLTI" id="34x64NyRAMc" role="3clFbG">
+            <node concept="Xl_RD" id="34x64NyRAMd" role="37vLTx">
+              <property role="Xl_RC" value="-std=c99" />
+            </node>
+            <node concept="2OqwBi" id="34x64NyRAMe" role="37vLTJ">
+              <node concept="13iPFW" id="34x64NyRAMf" role="2Oq$k0" />
+              <node concept="3TrcHB" id="34x64NyRAMg" role="2OqNvi">
+                <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="compilerOptions" />
+              </node>
             </node>
           </node>
         </node>
