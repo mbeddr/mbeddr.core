@@ -2,7 +2,6 @@
 <model ref="r:f908bdad-115d-4765-b796-2646eba0b9ab(com.mbeddr.analyses.utils.make)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
@@ -10,6 +9,7 @@
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
   </languages>
   <imports>
     <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" />
@@ -906,12 +906,12 @@
               <node concept="3cpWs8" id="68pU13V29p5" role="3cqZAp">
                 <node concept="3cpWsn" id="68pU13V29p6" role="3cpWs9">
                   <property role="TrG5h" value="textGenHandler" />
-                  <node concept="3uibUv" id="68pU13V2u$2" role="1tU5fm">
-                    <ref role="3uigEE" to="wmh4:~TextGenerationHandler" resolve="TextGenerationHandler" />
+                  <node concept="3uibUv" id="1XaymyqIMYr" role="1tU5fm">
+                    <ref role="3uigEE" node="68pU13V151W" resolve="MakeUtils.LastTransientModelHandler" />
                   </node>
                   <node concept="2ShNRf" id="68pU13V29p8" role="33vP2m">
                     <node concept="HV5vD" id="68pU13V2sgO" role="2ShVmc">
-                      <ref role="HV5vE" node="68pU13V151W" resolve="MakeUtils.TextGenerationHandlerWrapper" />
+                      <ref role="HV5vE" node="68pU13V151W" resolve="MakeUtils.LastTransientModelHandler" />
                     </node>
                   </node>
                 </node>
@@ -1143,10 +1143,7 @@
               <node concept="2OqwBi" id="47xghtTLh_o" role="33vP2m">
                 <node concept="2ShNRf" id="47xghtTLh_p" role="2Oq$k0">
                   <node concept="1pGfFk" id="47xghtTLh_q" role="2ShVmc">
-                    <ref role="37wK5l" to="fn29:6gLh390EkrL" resolve="ModelsToResources" />
-                    <node concept="3cpWs2" id="47xghtTLh_r" role="37wK5m">
-                      <ref role="3cqZAo" node="47xghtTLhAO" resolve="ctx" />
-                    </node>
+                    <ref role="37wK5l" to="fn29:6zsZmIC0WqK" resolve="ModelsToResources" />
                     <node concept="3cpWsa" id="47xghtTLh_s" role="37wK5m">
                       <ref role="3cqZAo" node="47xghtTLh_9" resolve="seq" />
                     </node>
@@ -1263,7 +1260,6 @@
           <property role="NWlVz" value="Rebuilds the project." />
         </node>
       </node>
-      <node concept="2tJIrI" id="4FpLBMtUgpS" role="jymVt" />
       <node concept="2tJIrI" id="7kEiJU7BkUl" role="jymVt" />
       <node concept="312cEu" id="7Z4mKjkrVLB" role="jymVt">
         <property role="2bfB8j" value="false" />
@@ -1469,7 +1465,10 @@
       <property role="2bfB8j" value="false" />
       <property role="1sVAO0" value="false" />
       <property role="1EXbeo" value="false" />
-      <property role="TrG5h" value="TextGenerationHandlerWrapper" />
+      <property role="TrG5h" value="LastTransientModelHandler" />
+      <node concept="3uibUv" id="1XaymyqIFVh" role="1zkMxy">
+        <ref role="3uigEE" to="wmh4:~GenerationHandlerBase" resolve="GenerationHandlerBase" />
+      </node>
       <node concept="2tJIrI" id="68pU13V17i4" role="jymVt" />
       <node concept="3clFb_" id="68pU13V17GB" role="jymVt">
         <property role="TrG5h" value="handleOutput" />
@@ -1529,24 +1528,9 @@
               </node>
             </node>
           </node>
-          <node concept="3cpWs6" id="68pU13V1Cw4" role="3cqZAp">
-            <node concept="3nyPlj" id="68pU13V1c4i" role="3cqZAk">
-              <ref role="37wK5l" to="wmh4:~TextGenerationHandler.handleOutput(org.jetbrains.mps.openapi.module.SModule,org.jetbrains.mps.openapi.model.SModel,jetbrains.mps.generator.GenerationStatus,jetbrains.mps.smodel.IOperationContext,org.jetbrains.mps.openapi.util.ProgressMonitor):boolean" resolve="handleOutput" />
-              <node concept="37vLTw" id="68pU13V1dB_" role="37wK5m">
-                <ref role="3cqZAo" node="68pU13V17GD" resolve="m" />
-              </node>
-              <node concept="37vLTw" id="68pU13V1Haw" role="37wK5m">
-                <ref role="3cqZAo" node="68pU13V17GF" resolve="im" />
-              </node>
-              <node concept="37vLTw" id="68pU13V1dML" role="37wK5m">
-                <ref role="3cqZAo" node="68pU13V17GH" resolve="s" />
-              </node>
-              <node concept="37vLTw" id="68pU13V1dX2" role="37wK5m">
-                <ref role="3cqZAo" node="68pU13V17GJ" resolve="ctx" />
-              </node>
-              <node concept="37vLTw" id="68pU13V1I95" role="37wK5m">
-                <ref role="3cqZAo" node="68pU13V17GL" resolve="pm" />
-              </node>
+          <node concept="3cpWs6" id="1XaymyqIIAS" role="3cqZAp">
+            <node concept="3clFbT" id="1XaymyqIIYS" role="3cqZAk">
+              <property role="3clFbU" value="true" />
             </node>
           </node>
         </node>
@@ -1558,9 +1542,6 @@
       </node>
       <node concept="2tJIrI" id="68pU13V17i7" role="jymVt" />
       <node concept="3Tm6S6" id="68pU13V13Dz" role="1B3o_S" />
-      <node concept="3uibUv" id="68pU13V16uc" role="1zkMxy">
-        <ref role="3uigEE" to="wmh4:~TextGenerationHandler" resolve="TextGenerationHandler" />
-      </node>
       <node concept="3clFb_" id="EINAMTznkd" role="jymVt">
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="canHandle" />
@@ -1589,6 +1570,21 @@
         </node>
         <node concept="NWlO9" id="7kEiJU7BPwg" role="lGtFl">
           <property role="NWlVz" value="{@inheritDoc}" />
+        </node>
+      </node>
+      <node concept="3clFb_" id="1XaymyqIJxD" role="jymVt">
+        <property role="1EzhhJ" value="false" />
+        <property role="TrG5h" value="estimateCompilationMillis" />
+        <property role="DiZV1" value="false" />
+        <property role="IEkAT" value="false" />
+        <node concept="3Tm1VV" id="1XaymyqIJxE" role="1B3o_S" />
+        <node concept="10Oyi0" id="1XaymyqIJxG" role="3clF45" />
+        <node concept="3clFbS" id="1XaymyqIJxJ" role="3clF47">
+          <node concept="3cpWs6" id="1XaymyqIJQw" role="3cqZAp">
+            <node concept="3cmrfG" id="1XaymyqIJRo" role="3cqZAk">
+              <property role="3cmrfH" value="0" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="NWlO9" id="7kEiJU7BOZY" role="lGtFl">
