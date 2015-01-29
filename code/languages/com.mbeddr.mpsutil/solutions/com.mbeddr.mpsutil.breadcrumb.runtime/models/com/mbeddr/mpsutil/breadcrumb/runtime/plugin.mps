@@ -4629,6 +4629,7 @@
   </root>
   <root type="3iid.PreferenceForm" typeId="3iid.145956936283289547" id="532006479112945340" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Breadcrumb Preferences" />
+    <property name="scope" nameId="3iid.1101080154068563577" value="0" />
     <node role="properties" roleId="3iid.145956936283569518" type="3iid.CheckBoxPreferenceFormProperty" typeId="3iid.145956936284219644" id="532006479112945341" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="showBreadcrumb" />
       <property name="label" nameId="3iid.145956936284103527" value="Show Breadcrumb" />
