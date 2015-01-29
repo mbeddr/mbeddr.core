@@ -314,15 +314,28 @@
       <ref role="1N5Vy1" to="qdv7:5JmNU9PAaLi" />
       <node concept="1MUpDS" id="5JmNU9PAaLK" role="1N6uqs">
         <node concept="3clFbS" id="5JmNU9PAaLL" role="2VODD2">
+          <node concept="3cpWs8" id="4Z2KgTfAXjb" role="3cqZAp">
+            <node concept="3cpWsn" id="4Z2KgTfAXjc" role="3cpWs9">
+              <property role="TrG5h" value="visibleFeatureModels" />
+              <node concept="A3Dl8" id="4Z2KgTfAXj7" role="1tU5fm">
+                <node concept="3Tqbb2" id="4Z2KgTfAXja" role="A3Ik2">
+                  <ref role="ehGHo" to="qqyh:5USXI9Kzbaq" resolve="FeatureModel" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4Z2KgTfAXjd" role="33vP2m">
+                <node concept="1PxgMI" id="4Z2KgTfAXje" role="2Oq$k0">
+                  <ref role="1PxNhF" to="qdv7:5DBke2vwmTj" resolve="VariabilityConfigItem" />
+                  <node concept="21POm0" id="4Z2KgTfAXjf" role="1PxMeX" />
+                </node>
+                <node concept="2qgKlT" id="4Z2KgTfAXjg" role="2OqNvi">
+                  <ref role="37wK5l" to="rpdm:3yKJMlzsams" resolve="visibleFeatureModels" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3clFbF" id="6ixWMIzv$BO" role="3cqZAp">
-            <node concept="2OqwBi" id="8HsTufywu4" role="3clFbG">
-              <node concept="1PxgMI" id="8HsTufywu5" role="2Oq$k0">
-                <ref role="1PxNhF" to="qdv7:5DBke2vwmTj" resolve="VariabilityConfigItem" />
-                <node concept="21POm0" id="8HsTufywu6" role="1PxMeX" />
-              </node>
-              <node concept="2qgKlT" id="8HsTufywu7" role="2OqNvi">
-                <ref role="37wK5l" to="rpdm:3yKJMlzsams" resolve="visibleFeatureModels" />
-              </node>
+            <node concept="37vLTw" id="4Z2KgTfAXjh" role="3clFbG">
+              <ref role="3cqZAo" node="4Z2KgTfAXjc" resolve="visibleFeatureModels" />
             </node>
           </node>
         </node>

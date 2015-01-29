@@ -6,6 +6,7 @@
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
@@ -17,7 +18,6 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
   </languages>
   <imports>
     <import index="x30c" ref="r:04a32be8-7074-4c9c-b2f8-77d4a01a19dc(com.mbeddr.core.debug.debugger)" />
@@ -4967,6 +4967,11 @@
     <node concept="2tJIrI" id="4VxYGcHhkBY" role="jymVt" />
     <node concept="2YIFZL" id="4VxYGcHhkSI" role="jymVt">
       <property role="TrG5h" value="makeDebugBinary" />
+      <node concept="37vLTG" id="1dHU0G8GPXo" role="3clF46">
+        <property role="TrG5h" value="pathToMake" />
+        <property role="3TUv4t" value="true" />
+        <node concept="17QB3L" id="1dHU0G8GQ9Z" role="1tU5fm" />
+      </node>
       <node concept="37vLTG" id="4VxYGcHhkSJ" role="3clF46">
         <property role="TrG5h" value="myBinary" />
         <property role="3TUv4t" value="true" />
@@ -5042,8 +5047,8 @@
                             <node concept="2YIFZM" id="4VxYGcHhkTm" role="37vLTx">
                               <ref role="37wK5l" node="6YlqNFRdST5" resolve="executeTool" />
                               <ref role="1Pybhc" node="6YlqNFRc4Xg" resolve="CMDExecutor" />
-                              <node concept="Xl_RD" id="4VxYGcHhkTn" role="37wK5m">
-                                <property role="Xl_RC" value="make" />
+                              <node concept="37vLTw" id="1dHU0G8GQwy" role="37wK5m">
+                                <ref role="3cqZAo" node="1dHU0G8GPXo" resolve="pathToMake" />
                               </node>
                               <node concept="2ShNRf" id="4VxYGcHhkTo" role="37wK5m">
                                 <node concept="3g6Rrh" id="4VxYGcHhkTp" role="2ShVmc">
@@ -5184,6 +5189,48 @@
                       </node>
                       <node concept="3clFbT" id="39w1fgPwzZ9" role="37wK5m">
                         <property role="3clFbU" value="false" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs8" id="1dHU0G8JKMr" role="3cqZAp">
+                <node concept="3cpWsn" id="1dHU0G8JKMs" role="3cpWs9">
+                  <property role="TrG5h" value="pathToMake" />
+                  <property role="3TUv4t" value="true" />
+                  <node concept="3uibUv" id="1dHU0G8JKMt" role="1tU5fm">
+                    <ref role="3uigEE" to="vft3:~AtomicReference" resolve="AtomicReference" />
+                    <node concept="17QB3L" id="1dHU0G8JKMu" role="11_B2D" />
+                  </node>
+                  <node concept="2ShNRf" id="1dHU0G8JKMv" role="33vP2m">
+                    <node concept="1pGfFk" id="1dHU0G8JKMw" role="2ShVmc">
+                      <ref role="37wK5l" to="vft3:~AtomicReference.&lt;init&gt;(java.lang.Object)" resolve="AtomicReference" />
+                      <node concept="17QB3L" id="1dHU0G8JKMx" role="1pMfVU" />
+                      <node concept="Xl_RD" id="1dHU0G8JKMy" role="37wK5m">
+                        <property role="Xl_RC" value="make" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1QHqEK" id="1dHU0G8JKMz" role="3cqZAp">
+                <node concept="1QHqEC" id="1dHU0G8JKM$" role="1QHqEI">
+                  <node concept="3clFbS" id="1dHU0G8JKM_" role="1bW5cS">
+                    <node concept="3clFbF" id="1dHU0G8JKMA" role="3cqZAp">
+                      <node concept="2OqwBi" id="1dHU0G8JKMB" role="3clFbG">
+                        <node concept="37vLTw" id="1dHU0G8JKMC" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1dHU0G8JKMs" resolve="pathToMake" />
+                        </node>
+                        <node concept="liA8E" id="1dHU0G8JKMD" role="2OqNvi">
+                          <ref role="37wK5l" to="vft3:~AtomicReference.set(java.lang.Object):void" resolve="set" />
+                          <node concept="2YIFZM" id="1dHU0G8JKME" role="37wK5m">
+                            <ref role="37wK5l" node="4yKXwoLiGaI" resolve="getPathToMake" />
+                            <ref role="1Pybhc" node="1of4CbC22VD" resolve="BuildConfigHelper" />
+                            <node concept="yYjwu" id="1dHU0G8JMSQ" role="37wK5m">
+                              <ref role="3cqZAo" node="VxJcPvDZAW" resolve="myBinary" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -5664,6 +5711,14 @@
                                                                   <node concept="2YIFZM" id="4VxYGcHh9VH" role="37wK5m">
                                                                     <ref role="1Pybhc" node="2HqSUW$y6dr" resolve="MakeExecutor" />
                                                                     <ref role="37wK5l" node="4VxYGcHhkSI" resolve="makeDebugBinary" />
+                                                                    <node concept="2OqwBi" id="1dHU0G8JNPV" role="37wK5m">
+                                                                      <node concept="37vLTw" id="1dHU0G8GP37" role="2Oq$k0">
+                                                                        <ref role="3cqZAo" node="1dHU0G8JKMs" resolve="pathToMake" />
+                                                                      </node>
+                                                                      <node concept="liA8E" id="1dHU0G8JOQW" role="2OqNvi">
+                                                                        <ref role="37wK5l" to="vft3:~AtomicReference.get():java.lang.Object" resolve="get" />
+                                                                      </node>
+                                                                    </node>
                                                                     <node concept="yYjwu" id="4VxYGcHh9VI" role="37wK5m">
                                                                       <ref role="3cqZAo" node="VxJcPvDZAW" resolve="myBinary" />
                                                                     </node>
@@ -9841,6 +9896,48 @@
                   </node>
                 </node>
               </node>
+              <node concept="3cpWs8" id="1dHU0G8JlTO" role="3cqZAp">
+                <node concept="3cpWsn" id="1dHU0G8JlTP" role="3cpWs9">
+                  <property role="TrG5h" value="pathToMake" />
+                  <property role="3TUv4t" value="true" />
+                  <node concept="3uibUv" id="1dHU0G8JlTQ" role="1tU5fm">
+                    <ref role="3uigEE" to="vft3:~AtomicReference" resolve="AtomicReference" />
+                    <node concept="17QB3L" id="1dHU0G8JGlR" role="11_B2D" />
+                  </node>
+                  <node concept="2ShNRf" id="1dHU0G8JlTS" role="33vP2m">
+                    <node concept="1pGfFk" id="1dHU0G8JlTT" role="2ShVmc">
+                      <ref role="37wK5l" to="vft3:~AtomicReference.&lt;init&gt;(java.lang.Object)" resolve="AtomicReference" />
+                      <node concept="17QB3L" id="1dHU0G8JHtJ" role="1pMfVU" />
+                      <node concept="Xl_RD" id="1dHU0G8JHV7" role="37wK5m">
+                        <property role="Xl_RC" value="make" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1QHqEK" id="1dHU0G8H6EX" role="3cqZAp">
+                <node concept="1QHqEC" id="1dHU0G8H6EZ" role="1QHqEI">
+                  <node concept="3clFbS" id="1dHU0G8H6F1" role="1bW5cS">
+                    <node concept="3clFbF" id="1dHU0G8JD7x" role="3cqZAp">
+                      <node concept="2OqwBi" id="1dHU0G8JDbz" role="3clFbG">
+                        <node concept="37vLTw" id="1dHU0G8JD7v" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1dHU0G8JlTP" resolve="pathToMake" />
+                        </node>
+                        <node concept="liA8E" id="1dHU0G8JEXU" role="2OqNvi">
+                          <ref role="37wK5l" to="vft3:~AtomicReference.set(java.lang.Object):void" resolve="set" />
+                          <node concept="2YIFZM" id="1dHU0G8Haof" role="37wK5m">
+                            <ref role="1Pybhc" node="1of4CbC22VD" resolve="BuildConfigHelper" />
+                            <ref role="37wK5l" node="4yKXwoLiGaI" resolve="getPathToMake" />
+                            <node concept="37vLTw" id="1dHU0G8HapR" role="37wK5m">
+                              <ref role="3cqZAo" node="Orr3VbvOty" resolve="myBinary" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbH" id="Orr3VbvORS" role="3cqZAp" />
               <node concept="3SKdUt" id="Orr3VbvORT" role="3cqZAp">
                 <node concept="3SKdUq" id="Orr3VbvORU" role="3SKWNk">
@@ -10259,6 +10356,14 @@
                                                     <node concept="2YIFZM" id="Orr3VbvOUS" role="37wK5m">
                                                       <ref role="37wK5l" node="4VxYGcHhkSI" resolve="makeDebugBinary" />
                                                       <ref role="1Pybhc" node="2HqSUW$y6dr" resolve="MakeExecutor" />
+                                                      <node concept="2OqwBi" id="1dHU0G8JQyC" role="37wK5m">
+                                                        <node concept="37vLTw" id="1dHU0G8JQfC" role="2Oq$k0">
+                                                          <ref role="3cqZAo" node="1dHU0G8JlTP" resolve="pathToMake" />
+                                                        </node>
+                                                        <node concept="liA8E" id="1dHU0G8JRhD" role="2OqNvi">
+                                                          <ref role="37wK5l" to="vft3:~AtomicReference.get():java.lang.Object" resolve="get" />
+                                                        </node>
+                                                      </node>
                                                       <node concept="37vLTw" id="Orr3VbvYyZ" role="37wK5m">
                                                         <ref role="3cqZAo" node="Orr3VbvOty" resolve="myBinary" />
                                                       </node>

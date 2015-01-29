@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:501977cd-eeca-4fc7-9c0a-86fc5d784284(com.mbeddr.core.__spreferences.TypeSizeConfiguration)">
+<model ref="r:05f1d9f0-d1b7-3d93-a90a-8615301d96d2(com.mbeddr.core.__spreferences.TypeSizeConfiguration)">
   <persistence version="9" />
   <languages>
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
