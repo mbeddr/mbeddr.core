@@ -4637,6 +4637,19 @@
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.BooleanType" typeId="tpee.1070534644030" id="532006479112945342" nodeInfo="in" />
       <node role="initializer" roleId="tpee.1068431790190" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="532006479112945343" nodeInfo="nn" />
     </node>
+    <node role="properties" roleId="3iid.145956936283569518" type="3iid.TextFieldPreferenceFormProperty" typeId="3iid.145956936284064820" id="3057648661795861587" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="someNewTextField" />
+      <property name="label" nameId="3iid.145956936284103527" value="This is my label" />
+      <property name="defaultValue" nameId="3iid.145956936284064821" value="default value is strange" />
+      <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="3057648661795861588" nodeInfo="in" />
+      <node role="initializer" roleId="tpee.1068431790190" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3057648661795861589" nodeInfo="nn" />
+    </node>
+    <node role="properties" roleId="3iid.145956936283569518" type="3iid.CheckBoxPreferenceFormProperty" typeId="3iid.145956936284219644" id="4762040620996505332" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="showSomething" />
+      <property name="label" nameId="3iid.145956936284103527" value="My newest label" />
+      <node role="type" roleId="tpee.5680397130376446158" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4762040620996505333" nodeInfo="in" />
+      <node role="initializer" roleId="tpee.1068431790190" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="4762040620996505334" nodeInfo="nn" />
+    </node>
   </root>
   <root type="tgbt.ApplicationPluginDeclaration" typeId="tgbt.481983775135178840" id="6975072000855091232" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="BreadcrumbPlugin" />
