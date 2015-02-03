@@ -104,11 +104,8 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="preferenceForm&lt;&lt;{formDeclaration}&gt;&gt;" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="getter" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tp4k.3339131993542057767" resolveInfo="BaseProjectOperation" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="145956936287604889" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="formDeclaration" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="145956936283289547" resolveInfo="PreferenceForm" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3057648661793083875" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3057648661793083867" resolveInfo="IPreferenceFormExpression" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="145956936287670670" nodeInfo="ig">
@@ -167,6 +164,25 @@
     <property name="staticScope" nameId="tpce.5404671619616246344" value="none" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="before write" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1137021947720" resolveInfo="ConceptFunction" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6899278682012146628" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="getter" />
+    <property name="name" nameId="tpck.1169194664001" value="GetPreferenceFormInApplicationExpression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="preferenceForm&lt;&lt;{formDeclaration}&gt;&gt;" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3057648661793083879" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3057648661793083867" resolveInfo="IPreferenceFormExpression" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3057648661793083867" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="getter" />
+    <property name="name" nameId="tpck.1169194664001" value="IPreferenceFormExpression" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="145956936287604889" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="formDeclaration" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="145956936283289547" resolveInfo="PreferenceForm" />
+    </node>
   </root>
 </model>
 
