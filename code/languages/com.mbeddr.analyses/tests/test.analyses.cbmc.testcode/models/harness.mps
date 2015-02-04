@@ -11,10 +11,29 @@
     <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="-1" />
     <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="-1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
+    <use id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units" version="-1" />
     <devkit ref="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="cmgk" ref="r:679066bc-2da8-4932-a09c-5d2b3d47b911(com.mbeddr.ext.units.siunits)" implicit="true" />
+  </imports>
   <registry>
+    <language id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units">
+      <concept id="5348704582971040037" name="com.mbeddr.ext.units.structure.UnitConfigItem" flags="ng" index="2eh4Hv" />
+      <concept id="8337440621611212272" name="com.mbeddr.ext.units.structure.AnnotatedExpression" flags="ng" index="CIdvy">
+        <child id="8337440621611267898" name="innerExpression" index="CIrOC" />
+        <child id="8337440621611353453" name="specification" index="CIwXZ" />
+      </concept>
+      <concept id="8337440621611273669" name="com.mbeddr.ext.units.structure.UnitReference" flags="ng" index="CIsvn">
+        <reference id="8337440621611297532" name="unit" index="CIi3I" />
+      </concept>
+      <concept id="8337440621611270429" name="com.mbeddr.ext.units.structure.UnitSpecification" flags="ng" index="CIsGf">
+        <child id="8337440621611297539" name="components" index="CIi4h" />
+      </concept>
+      <concept id="8337440621611400980" name="com.mbeddr.ext.units.structure.AnnotatedType" flags="ng" index="CIVk6">
+        <child id="8337440621611401032" name="specification" index="CIVlq" />
+      </concept>
+    </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="8441331188640771826" name="com.mbeddr.core.statements.structure.WhileStatement" flags="ng" index="27v$Wf">
         <child id="8441331188640771828" name="body" index="27v$W9" />
@@ -123,6 +142,9 @@
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
+      <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
+        <reference id="747084250476878887" name="chunk" index="3GEb4d" />
+      </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
@@ -133,6 +155,7 @@
       </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
+        <child id="1317894735999304826" name="imports" index="2OODSX" />
       </concept>
       <concept id="6437088627575722830" name="com.mbeddr.core.modules.structure.ImplementationModule" flags="ng" index="N3F5e" />
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
@@ -236,6 +259,9 @@
       <concept id="3820836583575227340" name="com.mbeddr.core.expressions.structure.DirectPlusAssignmentExpression" flags="ng" index="TPXPH" />
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
+      <concept id="743779816742251347" name="com.mbeddr.core.expressions.structure.ITypeDecorator" flags="ng" index="1Ml8iu">
+        <child id="7336544617004013388" name="valueType" index="UxbcT" />
+      </concept>
       <concept id="6610873504380029780" name="com.mbeddr.core.expressions.structure.CastExpression" flags="ng" index="1S8S4T">
         <child id="6610873504380029790" name="targetType" index="1S8S4N" />
         <child id="6610873504380029782" name="expr" index="1S8S4V" />
@@ -267,6 +293,7 @@
     <node concept="3yF7LM" id="5psiJWP$jrB" role="2Q9xDr">
       <property role="3yF7Mc" value="true" />
     </node>
+    <node concept="2eh4Hv" id="615cGN$okrN" role="2Q9xDr" />
     <node concept="22gAW6" id="jmYEA6ABH8" role="2AWWZH">
       <property role="2AWWZJ" value="goto-cc" />
       <property role="3r8Kw1" value="gdb" />
@@ -302,6 +329,9 @@
       </node>
       <node concept="2v9HqM" id="7CSU6RS0fpB" role="2eOfOg">
         <ref role="2v9HqP" node="7CSU6RRYpbc" resolve="implies" />
+      </node>
+      <node concept="2v9HqM" id="615cGN$nor3" role="2eOfOg">
+        <ref role="2v9HqP" node="615cGN$mzaf" resolve="types_with_physicalunits" />
       </node>
     </node>
   </node>
@@ -2297,6 +2327,122 @@
     </node>
     <node concept="2NXPZ9" id="7CSU6RRYpcS" role="N3F5h">
       <property role="TrG5h" value="empty_1398884530107_2" />
+    </node>
+  </node>
+  <node concept="N3F5e" id="615cGN$mzaf">
+    <property role="TrG5h" value="types_with_physicalunits" />
+    <node concept="N3Fnx" id="615cGN$m_lU" role="N3F5h">
+      <property role="TrG5h" value="simpleUnitsPrimitiveTypes" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="615cGN$m_lV" role="3XIRFX">
+        <node concept="3XIRlf" id="615cGN$m_lW" role="3XIRFZ">
+          <property role="TrG5h" value="x" />
+          <node concept="CIdvy" id="615cGN$mR5s" role="3XIe9u">
+            <node concept="3TlMh9" id="615cGN$mR5r" role="CIrOC">
+              <property role="2hmy$m" value="10" />
+            </node>
+            <node concept="CIsGf" id="615cGN$mR5t" role="CIwXZ">
+              <node concept="CIsvn" id="615cGN$mSrR" role="CIi4h">
+                <ref role="CIi3I" to="cmgk:yGiRIF6RlO" resolve="m" />
+              </node>
+            </node>
+          </node>
+          <node concept="CIVk6" id="615cGN$mBKa" role="2C2TGm">
+            <node concept="26Vqp4" id="615cGN$mBK9" role="UxbcT">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+            <node concept="CIsGf" id="615cGN$mBKb" role="CIVlq">
+              <node concept="CIsvn" id="615cGN$mO32" role="CIi4h">
+                <ref role="CIi3I" to="cmgk:yGiRIF6RlO" resolve="m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="615cGN$m_lZ" role="3XIRFZ" />
+        <node concept="2c3wGG" id="615cGN$m_m0" role="3XIRFZ">
+          <node concept="2c3wGE" id="615cGN$m_m1" role="3XIRFZ">
+            <property role="2xg5V6" value="true" />
+            <node concept="3ZVu4v" id="615cGN$m_m2" role="2c3wGY">
+              <ref role="3ZVs_2" node="615cGN$m_lW" resolve="x" />
+            </node>
+            <node concept="2EHzL6" id="615cGN$n7oR" role="2c3wGU">
+              <node concept="3Tl9Jn" id="615cGN$n9xn" role="3TlMhJ">
+                <node concept="CIdvy" id="615cGN$nbO9" role="3TlMhJ">
+                  <node concept="3TlMh9" id="615cGN$nbO8" role="CIrOC">
+                    <property role="2hmy$m" value="22" />
+                  </node>
+                  <node concept="CIsGf" id="615cGN$nbOa" role="CIwXZ">
+                    <node concept="CIsvn" id="615cGN$nbOb" role="CIi4h">
+                      <ref role="CIi3I" to="cmgk:yGiRIF6RlO" resolve="m" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3ZVu4v" id="615cGN$n8os" role="3TlMhI">
+                  <ref role="3ZVs_2" node="615cGN$m_lW" resolve="x" />
+                </node>
+              </node>
+              <node concept="3Tl9Jr" id="615cGN$n3wA" role="3TlMhI">
+                <node concept="CIdvy" id="615cGN$n5R8" role="3TlMhJ">
+                  <node concept="3TlMh9" id="615cGN$n5R7" role="CIrOC">
+                    <property role="2hmy$m" value="1" />
+                  </node>
+                  <node concept="CIsGf" id="615cGN$n5R9" role="CIwXZ">
+                    <node concept="CIsvn" id="615cGN$n5Ra" role="CIi4h">
+                      <ref role="CIi3I" to="cmgk:yGiRIF6RlO" resolve="m" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3ZVu4v" id="615cGN$m_m7" role="3TlMhI">
+                  <ref role="3ZVs_2" node="615cGN$m_lW" resolve="x" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="615cGN$m_m8" role="3XIRFZ" />
+        <node concept="Y9XUq" id="615cGN$m_m9" role="3XIRFZ">
+          <node concept="2EHzL6" id="615cGN$m_ma" role="Y9XUp">
+            <node concept="3Tl9Jn" id="615cGN$nd9O" role="3TlMhJ">
+              <node concept="3ZVu4v" id="615cGN$nd9Q" role="3TlMhI">
+                <ref role="3ZVs_2" node="615cGN$m_lW" resolve="x" />
+              </node>
+              <node concept="CIdvy" id="615cGN$nii8" role="3TlMhJ">
+                <node concept="3TlMh9" id="615cGN$nii7" role="CIrOC">
+                  <property role="2hmy$m" value="22" />
+                </node>
+                <node concept="CIsGf" id="615cGN$nii9" role="CIwXZ">
+                  <node concept="CIsvn" id="615cGN$niia" role="CIi4h">
+                    <ref role="CIi3I" to="cmgk:yGiRIF6RlO" resolve="m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3Tl9Jr" id="615cGN$m_me" role="3TlMhI">
+              <node concept="CIdvy" id="615cGN$neOo" role="3TlMhJ">
+                <node concept="3TlMh9" id="615cGN$neOn" role="CIrOC">
+                  <property role="2hmy$m" value="1" />
+                </node>
+                <node concept="CIsGf" id="615cGN$neOp" role="CIwXZ">
+                  <node concept="CIsvn" id="615cGN$neOq" role="CIi4h">
+                    <ref role="CIi3I" to="cmgk:yGiRIF6RlO" resolve="m" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3ZVu4v" id="615cGN$m_mg" role="3TlMhI">
+                <ref role="3ZVs_2" node="615cGN$m_lW" resolve="x" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="615cGN$m_mK" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="3GEVxB" id="615cGN$mMqQ" role="2OODSX">
+      <ref role="3GEb4d" to="cmgk:yGiRIF6Rhw" resolve="SIUnits" />
     </node>
   </node>
 </model>
