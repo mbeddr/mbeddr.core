@@ -2633,12 +2633,6 @@
             <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2pU2RDE5g3E" role="3bR37C">
-          <node concept="3bR9La" id="2pU2RDE5g3F" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="yklW1G3HMa" resolve="com.mbeddr.ext.units" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="7uZw0yZ43JM" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -2799,6 +2793,12 @@
           <node concept="3bR9La" id="6bsjiY4bhls" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:44LXwdzyvTi" resolve="Annotations" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1rKed4oJlak" role="3bR37C">
+          <node concept="3bR9La" id="1rKed4oJlal" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:61Pvu7KHtlo" resolve="com.mbeddr.mpsutil.breadcrumb" />
           </node>
         </node>
       </node>
@@ -4497,11 +4497,11 @@
         <node concept="3LEDTy" id="7tgCHAyOuII" role="3LEDUa">
           <ref role="3LEDTV" node="7tgCHAyOtFQ" resolve="com.mbeddr.ext.compositecomponents" />
         </node>
-        <node concept="3LEDTy" id="6pKxPRIMrL$" role="3LEDUa">
-          <ref role="3LEDTV" to="90a9:4be$WTb1CbJ" resolve="de.itemis.mps.editor.diagram" />
-        </node>
         <node concept="3LEz8M" id="2dIdn4o5UQl" role="3LEz9a">
           <ref role="3LEz8N" node="7uZw0yZ43Kv" resolve="com.mbeddr.core" />
+        </node>
+        <node concept="3LEDTy" id="4aG$ZHJ7grV" role="3LEDUa">
+          <ref role="3LEDTV" to="90a9:56Tfdun3uan" resolve="de.itemis.mps.editor.diagram.layout" />
         </node>
       </node>
     </node>
