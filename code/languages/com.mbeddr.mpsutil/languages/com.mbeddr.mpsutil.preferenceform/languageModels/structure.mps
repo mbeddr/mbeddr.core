@@ -184,5 +184,15 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="145956936283289547" resolveInfo="PreferenceForm" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4728279602824475247" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="property" />
+    <property name="name" nameId="tpck.1169194664001" value="IntegerFieldPreferenceFormProperty" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="integer field" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="145956936284064811" resolveInfo="AbstractPreferenceFormProperty" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="4728279602824496322" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="defaultValue" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
+  </root>
 </model>
 
