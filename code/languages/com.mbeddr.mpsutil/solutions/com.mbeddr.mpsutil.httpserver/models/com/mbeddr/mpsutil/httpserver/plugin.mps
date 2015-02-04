@@ -6,7 +6,6 @@
   <language namespace="c0080a47-7e37-4558-bee9-9ae18e690549(jetbrains.mps.lang.extension)" />
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <language namespace="443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)" />
-  <language namespace="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265(com.mbeddr.mpsutil.preferenceform)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="vkwc" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.concurrent.locks(JDK/java.util.concurrent.locks@java_stub)" version="-1" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
@@ -17,7 +16,7 @@
   <import index="xmho" modelUID="f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#javax.servlet(com.mbeddr.mpsutil.httpsupport.rt/javax.servlet@java_stub)" version="-1" />
   <import index="tp05" modelUID="f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#org.eclipse.jetty.server(com.mbeddr.mpsutil.httpsupport.rt/org.eclipse.jetty.server@java_stub)" version="-1" />
   <import index="vtsz" modelUID="f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#org.eclipse.jetty.util.component(com.mbeddr.mpsutil.httpsupport.rt/org.eclipse.jetty.util.component@java_stub)" version="-1" />
-  <import index="2pm2" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#org.apache.log4j.spi(MPS.Core/org.apache.log4j.spi@java_stub)" version="-1" />
+  <import index="r85u" modelUID="r:1bdd2911-4cda-43fc-8696-c8fb6475ff04(com.mbeddr.mpsutil.httpsupport.rt.plugin)" version="-1" />
   <import index="tgbt" modelUID="r:c70ee934-afb1-4c02-b6a9-1c4d1908a792(jetbrains.mps.lang.plugin.standalone.structure)" version="1" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="tpib" modelUID="r:00000000-0000-4000-0000-011c8959057f(jetbrains.mps.baseLanguage.logging.structure)" version="0" implicit="yes" />
@@ -26,7 +25,6 @@
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="v54s" modelUID="r:2a0fe383-d602-4f5b-813c-e41afdbbb97e(jetbrains.mps.lang.extension.structure)" version="-1" implicit="yes" />
   <import index="tp4f" modelUID="r:00000000-0000-4000-0000-011c89590373(jetbrains.mps.baseLanguage.classifiers.structure)" version="0" implicit="yes" />
-  <import index="3iid" modelUID="r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform.structure)" version="2" implicit="yes" />
   <root type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="5573986434797969211" nodeInfo="ng" />
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="4599114268639106038" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ServerUtil" />
@@ -62,17 +60,13 @@
       <property name="isFinal" nameId="tpee.1181808852946" value="false" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8874081127443881043" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8874081127443883151" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="8874081127443885375" nodeInfo="nn">
-            <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="8874081127443885376" nodeInfo="nn">
-              <node role="expression" roleId="tpee.1070534934092" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8874081127443885372" nodeInfo="nn">
-                <node role="operand" roleId="tpee.1197027771414" type="3iid.GetPreferenceFormInApplicationExpression" typeId="3iid.6899278682012146628" id="8874081127443885373" nodeInfo="ng">
-                  <link role="formDeclaration" roleId="3iid.145956936287604889" targetNodeId="4728279602826996204" resolveInfo="HTTP Support" />
-                </node>
-                <node role="operation" roleId="tpee.1197027833540" type="3iid.PreferenceFormPropertyReference" typeId="3iid.145956936288329552" id="8874081127443885374" nodeInfo="ng">
-                  <link role="member" roleId="tp4f.1205756909548" targetNodeId="4728279602826996208" resolveInfo="port" />
-                </node>
-              </node>
-              <node role="type" roleId="tpee.1070534934091" type="tpee.IntegerType" typeId="tpee.1070534370425" id="8874081127443885824" nodeInfo="in" />
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2390635895363546393" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2390635895363546331" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="r85u.2390635895363461725" resolveInfo="getCurrentConfig" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="r85u.4034631491841903707" resolveInfo="HttpServerConfig" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2390635895363548740" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="r85u.4034631491841903749" resolveInfo="getPort" />
             </node>
           </node>
         </node>
@@ -432,12 +426,13 @@
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4034631491841659632" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4034631491841659596" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="4034631491841659611" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068581517676" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4034631491841659612" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="3iid.GetPreferenceFormInApplicationExpression" typeId="3iid.6899278682012146628" id="4034631491841659613" nodeInfo="ng">
-              <link role="formDeclaration" roleId="3iid.145956936287604889" targetNodeId="4728279602826996204" resolveInfo="HTTP Support" />
+          <node role="expression" roleId="tpee.1068581517676" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2390635895363548805" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2390635895363548806" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="r85u.2390635895363461725" resolveInfo="getCurrentConfig" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="r85u.4034631491841903707" resolveInfo="HttpServerConfig" />
             </node>
-            <node role="operation" roleId="tpee.1197027833540" type="3iid.PreferenceFormPropertyReference" typeId="3iid.145956936288329552" id="4034631491841659614" nodeInfo="ng">
-              <link role="member" roleId="tp4f.1205756909548" targetNodeId="4728279602826996205" resolveInfo="enabled" />
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2390635895363548807" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="r85u.4034631491841903754" resolveInfo="isEnabled" />
             </node>
           </node>
         </node>
@@ -620,6 +615,12 @@
       <property name="name" nameId="tpck.1169194664001" value="updateServerStatus" />
       <property name="isSynchronized" nameId="tpee.4276006055363816570" value="false" />
       <property name="isFinal" nameId="tpee.1181808852946" value="false" />
+      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="2390635895363445513" nodeInfo="ir">
+        <property name="name" nameId="tpck.1169194664001" value="serverConfig" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2390635895364103528" nodeInfo="in">
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="r85u.4034631491841903707" resolveInfo="HttpServerConfig" />
+        </node>
+      </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="4034631491841615697" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="wrapper" />
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4034631491841615698" nodeInfo="in">
@@ -681,8 +682,13 @@
               <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4034631491841659067" nodeInfo="nr">
                 <property name="name" nameId="tpck.1169194664001" value="enabled" />
                 <node role="type" roleId="tpee.5680397130376446158" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4034631491841659062" nodeInfo="in" />
-                <node role="initializer" roleId="tpee.1068431790190" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="4034631491841662547" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4034631491841659630" resolveInfo="isServerEnabled" />
+                <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2390635895364103873" nodeInfo="nn">
+                  <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2390635895364103583" nodeInfo="nn">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2390635895363445513" resolveInfo="serverConfig" />
+                  </node>
+                  <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2390635895364104462" nodeInfo="nn">
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="r85u.4034631491841903754" resolveInfo="isEnabled" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -717,8 +723,13 @@
                           <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="tp05.~Connector%dgetLocalPort()%cint" resolveInfo="getLocalPort" />
                         </node>
                       </node>
-                      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="4034631491841730388" nodeInfo="nn">
-                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="8874081127443881040" resolveInfo="getPort" />
+                      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2390635895364107153" nodeInfo="nn">
+                        <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2390635895364104758" nodeInfo="nn">
+                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2390635895363445513" resolveInfo="serverConfig" />
+                        </node>
+                        <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2390635895364107790" nodeInfo="nn">
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="r85u.4034631491841903749" resolveInfo="getPort" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -1399,34 +1410,78 @@
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="8389425109076013590" nodeInfo="ngu" />
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8389425109076013238" nodeInfo="nn" />
   </root>
-  <root type="3iid.PreferenceForm" typeId="3iid.145956936283289547" id="4728279602826996204" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="HTTP Support" />
-    <property name="scope" nameId="3iid.1101080154068563577" value="1" />
-    <node role="properties" roleId="3iid.145956936283569518" type="3iid.CheckBoxPreferenceFormProperty" typeId="3iid.145956936284219644" id="4728279602826996205" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="enabled" />
-      <property name="label" nameId="3iid.145956936284103527" value="Enabled" />
-      <property name="defaultValue" nameId="3iid.145956936284219645" value="true" />
-      <node role="type" roleId="tpee.5680397130376446158" type="tpee.BooleanType" typeId="tpee.1070534644030" id="4728279602826996206" nodeInfo="in" />
-      <node role="initializer" roleId="tpee.1068431790190" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="4728279602826996207" nodeInfo="nn">
-        <property name="value" nameId="tpee.1068580123138" value="true" />
+  <root type="v54s.ExtensionDeclaration" typeId="v54s.3729007189729192404" id="4034631491842019718" nodeInfo="ng">
+    <link role="extensionPoint" roleId="v54s.3729007189729192405" targetNodeId="r85u.4034631491841903631" resolveInfo="HttpServerConfigChangeListener" />
+    <node role="fieldDeclaration" roleId="v54s.7036359038356115164" type="v54s.ExtensionFieldDeclaration" typeId="v54s.7036359038356115097" id="2390635895363980579" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="listener" />
+      <node role="fieldType" roleId="v54s.7036359038356115101" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2390635895363981019" nodeInfo="in">
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="4034631491842020022" resolveInfo="MpsHttpServerConfigChangeListener" />
       </node>
     </node>
-    <node role="properties" roleId="3iid.145956936283569518" type="3iid.IntegerFieldPreferenceFormProperty" typeId="3iid.4728279602824475247" id="4728279602826996208" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="port" />
-      <property name="label" nameId="3iid.145956936284103527" value="Port" />
-      <property name="defaultValue" nameId="3iid.4728279602824496322" value="8089" />
-      <node role="type" roleId="tpee.5680397130376446158" type="tpee.LongType" typeId="tpee.1068581242867" id="4728279602826996209" nodeInfo="in" />
-      <node role="initializer" roleId="tpee.1068431790190" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5461098221433949129" nodeInfo="nn">
-        <property name="value" nameId="tpee.1068580320021" value="8089" />
+    <node role="objectGetter" roleId="v54s.8029776554053057811" type="v54s.ExtensionObjectGetter" typeId="v54s.8029776554053043557" id="4034631491842019719" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4034631491842019720" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2390635895364092320" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="v54s.ExtensionFieldReference" typeId="v54s.7036359038356115102" id="2390635895364092319" nodeInfo="nn">
+            <link role="declaration" roleId="v54s.7036359038356115103" targetNodeId="2390635895363980579" resolveInfo="listener" />
+          </node>
+        </node>
       </node>
     </node>
-    <node role="beforeWriteBlockApplication" roleId="3iid.1101080154069038442" type="3iid.OnBeforeWriteBlockApplication" typeId="3iid.1210676672555" id="4034631491840896597" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4034631491840921292" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4034631491840984458" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="4034631491841681784" nodeInfo="nn">
+    <node role="activator" roleId="v54s.7036359038356050926" type="v54s.ExtensionFunction" typeId="v54s.7036359038356050927" id="2390635895363981026" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2390635895363981027" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2390635895363981483" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2390635895363981641" nodeInfo="nn">
+            <node role="rValue" roleId="tpee.1068498886297" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="2390635895363981657" nodeInfo="nn">
+              <node role="creator" roleId="tpee.1145553007750" type="tpee.DefaultClassCreator" typeId="tpee.2820489544401957797" id="2390635895364091302" nodeInfo="nn">
+                <link role="classifier" roleId="tpee.2820489544401957798" targetNodeId="4034631491842020022" resolveInfo="MpsHttpServerConfigChangeListener" />
+              </node>
+            </node>
+            <node role="lValue" roleId="tpee.1068498886295" type="v54s.ExtensionFieldReference" typeId="v54s.7036359038356115102" id="2390635895363981482" nodeInfo="nn">
+              <link role="declaration" roleId="v54s.7036359038356115103" targetNodeId="2390635895363980579" resolveInfo="listener" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="deactivator" roleId="v54s.7036359038356050934" type="v54s.ExtensionFunction" typeId="v54s.7036359038356050927" id="2390635895364091469" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2390635895364091470" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2390635895364091926" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2390635895364092084" nodeInfo="nn">
+            <node role="rValue" roleId="tpee.1068498886297" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="2390635895364092106" nodeInfo="nn" />
+            <node role="lValue" roleId="tpee.1068498886295" type="v54s.ExtensionFieldReference" typeId="v54s.7036359038356115102" id="2390635895364091925" nodeInfo="nn">
+              <link role="declaration" roleId="v54s.7036359038356115103" targetNodeId="2390635895363980579" resolveInfo="listener" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="4034631491842020022" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="MpsHttpServerConfigChangeListener" />
+    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4034631491842020023" nodeInfo="nn" />
+    <node role="implementedInterface" roleId="tpee.1095933932569" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2390635895363283704" nodeInfo="in">
+      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="r85u.4034631491841903360" resolveInfo="IHttpServerConfigChangeListener" />
+    </node>
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="2390635895363283719" nodeInfo="igu">
+      <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="serverChanged" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="2390635895363283720" nodeInfo="in" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2390635895363283721" nodeInfo="nn" />
+      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="2390635895363283723" nodeInfo="ir">
+        <property name="name" nameId="tpck.1169194664001" value="serverInfo" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2390635895363283724" nodeInfo="in">
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="r85u.4034631491841903707" resolveInfo="HttpServerConfig" />
+        </node>
+      </node>
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2390635895363283725" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2390635895363302555" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2390635895363302586" nodeInfo="nn">
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4034631491841602678" resolveInfo="updateServerStatus" />
             <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="4599114268639106038" resolveInfo="ServerUtil" />
-            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="4034631491841681785" nodeInfo="nn">
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2390635895363315363" nodeInfo="nn">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2390635895363283723" resolveInfo="serverInfo" />
+            </node>
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2390635895363302121" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4034631491841068393" resolveInfo="getInstance" />
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="8389425109076013237" resolveInfo="MPSHttpServerWrapper" />
             </node>
