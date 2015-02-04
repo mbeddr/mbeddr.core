@@ -1685,9 +1685,9 @@
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="3051167946407079818" nodeInfo="nn">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dstartsWith(java%dlang%dString)%cboolean" resolveInfo="startsWith" />
-                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="3051167946407080112" nodeInfo="nn">
-                    <link role="classifier" roleId="tpee.1144433057691" targetNodeId="gzvg.4599114268639106038" resolveInfo="ServerUtil" />
-                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="gzvg.3051167946407065195" resolveInfo="LOCAL_ADDRESS" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6969075308831800701" nodeInfo="nn">
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="gzvg.6969075308831777851" resolveInfo="concatLocalAddress" />
+                    <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="gzvg.4599114268639106038" resolveInfo="ServerUtil" />
                   </node>
                 </node>
               </node>
