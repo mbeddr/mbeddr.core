@@ -21,6 +21,15 @@
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <reference id="1083241965437" name="defaultMember" index="Qgau1" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
       <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
         <property id="7588428831955550663" name="role" index="Hh88m" />
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
@@ -682,6 +691,10 @@
   </node>
   <node concept="PlHQZ" id="7kKaL9x4DZT">
     <property role="TrG5h" value="IArgumentLike" />
+    <node concept="1TJgyi" id="1MdOvoQdDVD" role="1TKVEl">
+      <property role="TrG5h" value="kind" />
+      <ref role="AX2Wp" node="3_CPcn39dht" resolve="ArgumentKind" />
+    </node>
     <node concept="PrWs8" id="4k0bDztzB$z" role="PrDN$">
       <ref role="PrY4T" to="vs0r:2GIWVTRH8Wo" resolve="IControlledNamedConcept" />
     </node>
@@ -1187,6 +1200,24 @@
     <property role="3GE5qa" value="metrics" />
     <property role="34LRSv" value="statements in IFunctionLike" />
     <ref role="1TJDcQ" to="vs0r:4$VRXeHdyxr" resolve="Metric" />
+  </node>
+  <node concept="AxPO7" id="3_CPcn39dht">
+    <property role="3GE5qa" value="functions" />
+    <property role="TrG5h" value="ArgumentKind" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <ref role="Qgau1" node="3_CPcn39dwy" />
+    <node concept="M4N5e" id="3_CPcn39dwy" role="M5hS2">
+      <property role="1uS6qo" value="IN" />
+      <property role="1uS6qv" value="0" />
+    </node>
+    <node concept="M4N5e" id="3_CPcn39d$G" role="M5hS2">
+      <property role="1uS6qo" value="OUT" />
+      <property role="1uS6qv" value="1" />
+    </node>
+    <node concept="M4N5e" id="3_CPcn39d$L" role="M5hS2">
+      <property role="1uS6qo" value="INOUT" />
+      <property role="1uS6qv" value="2" />
+    </node>
   </node>
 </model>
 
