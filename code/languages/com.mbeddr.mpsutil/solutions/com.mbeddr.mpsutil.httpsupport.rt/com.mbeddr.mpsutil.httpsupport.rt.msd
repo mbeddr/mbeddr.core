@@ -11,6 +11,8 @@
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/javax.servlet-3.0.0.v201112011016.jar" />
     <stubModelEntry path="${module}/lib/jetty-all-8.1.14.v20131031.jar" />
+    <stubModelEntry path="${module}/lib/slf4j-api-1.7.10.jar" />
+    <stubModelEntry path="${module}/lib/slf4j-log4j12-1.7.10.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
