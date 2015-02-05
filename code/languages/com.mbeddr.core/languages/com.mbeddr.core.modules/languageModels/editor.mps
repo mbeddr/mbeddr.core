@@ -908,6 +908,7 @@
         <ref role="PMmxG" to="j4gk:52l0VUuN8lr" resolve="IStoreInRegisterComponent" />
       </node>
       <node concept="1HlG4h" id="WlkN2oQGWz" role="3EZMnx">
+        <ref role="1ERwB7" node="L2WnbR8bP4" resolve="Argument_ActionMap" />
         <node concept="1HfYo3" id="WlkN2oQGW_" role="1HlULh">
           <node concept="3TQlhw" id="WlkN2oQGWB" role="1Hhtcw">
             <node concept="3clFbS" id="WlkN2oQGWD" role="2VODD2">
@@ -4150,6 +4151,29 @@
       </node>
       <node concept="VPxyj" id="L2WnbR5T0K" role="3F10Kt">
         <property role="VOm3f" value="false" />
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="L2WnbR8bP4">
+    <property role="3GE5qa" value="functions" />
+    <property role="TrG5h" value="Argument_ActionMap" />
+    <ref role="1h_SK9" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
+    <node concept="1hA7zw" id="L2WnbR8ccH" role="1h_SK8">
+      <property role="1hAc7j" value="backspace_action_id" />
+      <node concept="1hAIg9" id="L2WnbR8ccI" role="1hA7z_">
+        <node concept="3clFbS" id="L2WnbR8ccJ" role="2VODD2">
+          <node concept="3clFbF" id="L2WnbR8ccQ" role="3cqZAp">
+            <node concept="2OqwBi" id="L2WnbR8dgB" role="3clFbG">
+              <node concept="2OqwBi" id="L2WnbR8chQ" role="2Oq$k0">
+                <node concept="0IXxy" id="L2WnbR8ccP" role="2Oq$k0" />
+                <node concept="3TrEf2" id="L2WnbR8cKM" role="2OqNvi">
+                  <ref role="3Tt5mk" to="x27k:L2WnbQO2tQ" />
+                </node>
+              </node>
+              <node concept="1PgB_6" id="L2WnbR8dsf" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
