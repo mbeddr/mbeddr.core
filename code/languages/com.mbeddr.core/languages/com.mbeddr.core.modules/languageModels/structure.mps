@@ -691,9 +691,10 @@
   </node>
   <node concept="PlHQZ" id="7kKaL9x4DZT">
     <property role="TrG5h" value="IArgumentLike" />
-    <node concept="1TJgyi" id="1MdOvoQdDVD" role="1TKVEl">
-      <property role="TrG5h" value="kind" />
-      <ref role="AX2Wp" node="3_CPcn39dht" resolve="ArgumentKind" />
+    <node concept="1TJgyj" id="L2WnbQO2tQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="kind" />
+      <ref role="20lvS9" node="L2WnbQO1DI" resolve="ArgumentKindContainer" />
     </node>
     <node concept="PrWs8" id="4k0bDztzB$z" role="PrDN$">
       <ref role="PrY4T" to="vs0r:2GIWVTRH8Wo" resolve="IControlledNamedConcept" />
@@ -1217,6 +1218,15 @@
     <node concept="M4N5e" id="3_CPcn39d$L" role="M5hS2">
       <property role="1uS6qo" value="INOUT" />
       <property role="1uS6qv" value="2" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="L2WnbQO1DI">
+    <property role="3GE5qa" value="functions" />
+    <property role="TrG5h" value="ArgumentKindContainer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="L2WnbQO1I2" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" node="3_CPcn39dht" resolve="ArgumentKind" />
     </node>
   </node>
 </model>
