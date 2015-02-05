@@ -2430,7 +2430,7 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="project" />
       <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="JsaLOcoVnu" role="1tU5fm">
+      <node concept="3uibUv" id="7uk5GW4N9VO" role="1tU5fm">
         <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
       </node>
       <node concept="3Tm1VV" id="JsaLOcr6IU" role="1B3o_S" />
@@ -3643,7 +3643,7 @@
                                           <node concept="2ShNRf" id="5lGPWESfMrF" role="33vP2m">
                                             <node concept="1pGfFk" id="5lGPWESfMrG" role="2ShVmc">
                                               <ref role="37wK5l" to="1d7m:~MPSEditorOpener.&lt;init&gt;(com.intellij.openapi.project.Project)" resolve="MPSEditorOpener" />
-                                              <node concept="2N2G$s" id="4_pSipqUKK8" role="37wK5m">
+                                              <node concept="37vLTw" id="7uk5GW4NiBP" role="37wK5m">
                                                 <ref role="3cqZAo" node="JsaLOcqBeI" resolve="project" />
                                               </node>
                                             </node>
@@ -3672,10 +3672,10 @@
                                                   <ref role="37wK5l" to="ec5l:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
                                                 </node>
                                               </node>
-                                              <node concept="2YIFZM" id="3ki2u9fLV4Z" role="37wK5m">
+                                              <node concept="2YIFZM" id="7uk5GW4NiY3" role="37wK5m">
                                                 <ref role="37wK5l" to="pt5l:~ProjectHelper.toMPSProject(com.intellij.openapi.project.Project):jetbrains.mps.project.Project" resolve="toMPSProject" />
                                                 <ref role="1Pybhc" to="pt5l:~ProjectHelper" resolve="ProjectHelper" />
-                                                <node concept="37vLTw" id="3ki2u9fLVmg" role="37wK5m">
+                                                <node concept="37vLTw" id="7uk5GW4NiY4" role="37wK5m">
                                                   <ref role="3cqZAo" node="JsaLOcqBeI" resolve="project" />
                                                 </node>
                                               </node>
@@ -3903,7 +3903,7 @@
                                           <node concept="2ShNRf" id="3ki2u9fM2U$" role="33vP2m">
                                             <node concept="1pGfFk" id="3ki2u9fM2U_" role="2ShVmc">
                                               <ref role="37wK5l" to="1d7m:~MPSEditorOpener.&lt;init&gt;(com.intellij.openapi.project.Project)" resolve="MPSEditorOpener" />
-                                              <node concept="2N2G$s" id="3ki2u9fM2UA" role="37wK5m">
+                                              <node concept="37vLTw" id="7uk5GW4Njgt" role="37wK5m">
                                                 <ref role="3cqZAo" node="JsaLOcqBeI" resolve="project" />
                                               </node>
                                             </node>
@@ -3932,10 +3932,10 @@
                                                   <ref role="37wK5l" to="ec5l:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
                                                 </node>
                                               </node>
-                                              <node concept="2YIFZM" id="3ki2u9fM2UM" role="37wK5m">
-                                                <ref role="1Pybhc" to="pt5l:~ProjectHelper" resolve="ProjectHelper" />
+                                              <node concept="2YIFZM" id="7uk5GW4NjAI" role="37wK5m">
                                                 <ref role="37wK5l" to="pt5l:~ProjectHelper.toMPSProject(com.intellij.openapi.project.Project):jetbrains.mps.project.Project" resolve="toMPSProject" />
-                                                <node concept="37vLTw" id="3ki2u9fM2UN" role="37wK5m">
+                                                <ref role="1Pybhc" to="pt5l:~ProjectHelper" resolve="ProjectHelper" />
+                                                <node concept="37vLTw" id="7uk5GW4NjAJ" role="37wK5m">
                                                   <ref role="3cqZAo" node="JsaLOcqBeI" resolve="project" />
                                                 </node>
                                               </node>
@@ -4728,7 +4728,7 @@
       <node concept="37vLTG" id="4_pSipqVBnB" role="3clF46">
         <property role="TrG5h" value="proj" />
         <property role="3TUv4t" value="false" />
-        <node concept="3uibUv" id="4_pSipqVBnZ" role="1tU5fm">
+        <node concept="3uibUv" id="7uk5GW4N9DU" role="1tU5fm">
           <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
         </node>
       </node>

@@ -743,22 +743,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="6mJYm3jC8ra" role="3cqZAp">
-              <node concept="3cpWsn" id="6mJYm3jC8rb" role="3cpWs9">
-                <property role="TrG5h" value="poc" />
-                <node concept="3uibUv" id="6mJYm3jC8rc" role="1tU5fm">
-                  <ref role="3uigEE" to="vsqj:~ProjectOperationContext" resolve="ProjectOperationContext" />
-                </node>
-                <node concept="2ShNRf" id="6mJYm3jC8rd" role="33vP2m">
-                  <node concept="1pGfFk" id="6mJYm3jC8re" role="2ShVmc">
-                    <ref role="37wK5l" to="vsqj:~ProjectOperationContext.&lt;init&gt;(jetbrains.mps.project.Project)" resolve="ProjectOperationContext" />
-                    <node concept="37vLTw" id="6mJYm3jC8rf" role="37wK5m">
-                      <ref role="3cqZAo" node="6mJYm3jC8r6" resolve="project" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="6mJYm3jC8rg" role="3cqZAp">
               <node concept="3cpWsn" id="6mJYm3jC8rh" role="3cpWs9">
                 <property role="TrG5h" value="makeProject" />
@@ -768,8 +752,8 @@
                 <node concept="2YIFZM" id="4Uw4Kib5vLv" role="33vP2m">
                   <ref role="37wK5l" to="qh45:4Uw4Kib5evV" resolve="makeLastGeneratedModelsAvailable" />
                   <ref role="1Pybhc" to="qh45:6SYIklyM6Mg" resolve="MakeUtils" />
-                  <node concept="37vLTw" id="4Uw4Kib5vLw" role="37wK5m">
-                    <ref role="3cqZAo" node="6mJYm3jC8rb" resolve="poc" />
+                  <node concept="37vLTw" id="7uk5GW4ZizP" role="37wK5m">
+                    <ref role="3cqZAo" node="6mJYm3jC8r6" resolve="project" />
                   </node>
                   <node concept="37vLTw" id="4Uw4Kib5vLx" role="37wK5m">
                     <ref role="3cqZAo" node="6mJYm3jC8rz" resolve="model" />
