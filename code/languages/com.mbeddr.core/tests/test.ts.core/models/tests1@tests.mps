@@ -22794,6 +22794,17 @@
   </node>
   <node concept="1lH9Xt" id="12K3RfpFMGE">
     <property role="TrG5h" value="Operators_ExternalTest" />
+    <node concept="1LZb2c" id="4zFXTqpGlss" role="1SL9yI">
+      <property role="TrG5h" value="doCheck" />
+      <node concept="3cqZAl" id="4zFXTqpGlst" role="3clF45" />
+      <node concept="3clFbS" id="4zFXTqpGlsx" role="3clF47">
+        <node concept="3Ca1qy" id="4zFXTqpGmlk" role="3cqZAp">
+          <node concept="3xONca" id="4zFXTqpGnQC" role="3qv8fS">
+            <ref role="3xOPvv" node="4zFXTqpGiR9" resolve="doCheck" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1qefOq" id="12K3RfpFMIx" role="1SKRRt">
       <node concept="N3F5e" id="12K3RfpFMIz" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -22907,6 +22918,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3xLA65" id="4zFXTqpGiR9" role="lGtFl">
+        <property role="TrG5h" value="doCheck" />
       </node>
     </node>
   </node>
