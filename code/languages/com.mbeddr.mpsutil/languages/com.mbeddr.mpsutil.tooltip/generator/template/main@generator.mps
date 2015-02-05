@@ -394,6 +394,9 @@
                     <node concept="37vLTw" id="2a194$KrpJr" role="37wK5m">
                       <ref role="3cqZAo" node="fYh_FQ2" resolve="editorContext" />
                     </node>
+                    <node concept="37vLTw" id="4WvEEB$8QYS" role="37wK5m">
+                      <ref role="3cqZAo" node="fYh_FQ7" resolve="node" />
+                    </node>
                   </node>
                 </node>
               </node>
