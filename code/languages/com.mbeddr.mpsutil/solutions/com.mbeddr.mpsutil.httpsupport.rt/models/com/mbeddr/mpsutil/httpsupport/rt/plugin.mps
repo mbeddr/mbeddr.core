@@ -197,10 +197,10 @@
     <node role="properties" roleId="3iid.145956936283569518" type="3iid.IntegerFieldPreferenceFormProperty" typeId="3iid.4728279602824475247" id="4034631491841910054" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="port" />
       <property name="label" nameId="3iid.145956936284103527" value="Port" />
-      <property name="defaultValue" nameId="3iid.4728279602824496322" value="8089" />
+      <property name="defaultValue" nameId="3iid.4728279602824496322" value="8080" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.LongType" typeId="tpee.1068581242867" id="4034631491841910055" nodeInfo="in" />
-      <node role="initializer" roleId="tpee.1068431790190" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4034631491841910056" nodeInfo="nn">
-        <property name="value" nameId="tpee.1068580320021" value="8089" />
+      <node role="initializer" roleId="tpee.1068431790190" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="3768475585269170298" nodeInfo="nn">
+        <property name="value" nameId="tpee.1068580320021" value="8080" />
       </node>
     </node>
     <node role="beforeWriteBlockApplication" roleId="3iid.1101080154069038442" type="3iid.OnBeforeWriteBlockApplication" typeId="3iid.1210676672555" id="4034631491841910057" nodeInfo="nn">
