@@ -52,6 +52,9 @@
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1177326519037" name="jetbrains.mps.baseLanguage.structure.CommentedStatementsBlock" flags="nn" index="u8gfJ">
+        <child id="1177326540772" name="statement" index="u8lrQ" />
+      </concept>
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -6644,55 +6647,57 @@
             </node>
           </node>
           <node concept="3clFbH" id="7PgKJZviTp2" role="3cqZAp" />
-          <node concept="2Gpval" id="321ojDtvtaL" role="3cqZAp">
-            <node concept="2GrKxI" id="321ojDtvtaN" role="2Gsz3X">
-              <property role="TrG5h" value="instruction" />
-            </node>
-            <node concept="3clFbS" id="321ojDtvtaP" role="2LFqv$">
-              <node concept="3clFbF" id="321ojDtvwqJ" role="3cqZAp">
-                <node concept="2OqwBi" id="321ojDtvwuZ" role="3clFbG">
-                  <node concept="10M0yZ" id="321ojDtvwqI" role="2Oq$k0">
-                    <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                    <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-                  </node>
-                  <node concept="liA8E" id="321ojDtvwSO" role="2OqNvi">
-                    <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-                    <node concept="3cpWs3" id="321ojDtvxyt" role="37wK5m">
-                      <node concept="2OqwBi" id="321ojDtvyii" role="3uHU7w">
-                        <node concept="37vLTw" id="321ojDtvy01" role="2Oq$k0">
-                          <ref role="3cqZAo" node="321ojDtvopa" resolve="pointerAnalyzerResult" />
-                        </node>
-                        <node concept="liA8E" id="321ojDtvy_e" role="2OqNvi">
-                          <ref role="37wK5l" to="hxuy:~AnalysisResult.get(jetbrains.mps.lang.dataFlow.framework.instructions.Instruction):java.lang.Object" resolve="get" />
-                          <node concept="2GrUjf" id="321ojDtvy_X" role="37wK5m">
-                            <ref role="2Gs0qQ" node="321ojDtvtaN" resolve="instruction" />
+          <node concept="u8gfJ" id="4zFXTqqSv8C" role="3cqZAp">
+            <node concept="2Gpval" id="321ojDtvtaL" role="u8lrQ">
+              <node concept="2GrKxI" id="321ojDtvtaN" role="2Gsz3X">
+                <property role="TrG5h" value="instruction" />
+              </node>
+              <node concept="3clFbS" id="321ojDtvtaP" role="2LFqv$">
+                <node concept="3clFbF" id="321ojDtvwqJ" role="3cqZAp">
+                  <node concept="2OqwBi" id="321ojDtvwuZ" role="3clFbG">
+                    <node concept="10M0yZ" id="321ojDtvwqI" role="2Oq$k0">
+                      <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                      <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                    </node>
+                    <node concept="liA8E" id="321ojDtvwSO" role="2OqNvi">
+                      <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <node concept="3cpWs3" id="321ojDtvxyt" role="37wK5m">
+                        <node concept="2OqwBi" id="321ojDtvyii" role="3uHU7w">
+                          <node concept="37vLTw" id="321ojDtvy01" role="2Oq$k0">
+                            <ref role="3cqZAo" node="321ojDtvopa" resolve="pointerAnalyzerResult" />
+                          </node>
+                          <node concept="liA8E" id="321ojDtvy_e" role="2OqNvi">
+                            <ref role="37wK5l" to="hxuy:~AnalysisResult.get(jetbrains.mps.lang.dataFlow.framework.instructions.Instruction):java.lang.Object" resolve="get" />
+                            <node concept="2GrUjf" id="321ojDtvy_X" role="37wK5m">
+                              <ref role="2Gs0qQ" node="321ojDtvtaN" resolve="instruction" />
+                            </node>
                           </node>
                         </node>
-                      </node>
-                      <node concept="3cpWs3" id="321ojDtvx4G" role="3uHU7B">
-                        <node concept="2GrUjf" id="321ojDtvwTB" role="3uHU7B">
-                          <ref role="2Gs0qQ" node="321ojDtvtaN" resolve="instruction" />
-                        </node>
-                        <node concept="Xl_RD" id="321ojDtvxfL" role="3uHU7w">
-                          <property role="Xl_RC" value=" " />
+                        <node concept="3cpWs3" id="321ojDtvx4G" role="3uHU7B">
+                          <node concept="2GrUjf" id="321ojDtvwTB" role="3uHU7B">
+                            <ref role="2Gs0qQ" node="321ojDtvtaN" resolve="instruction" />
+                          </node>
+                          <node concept="Xl_RD" id="321ojDtvxfL" role="3uHU7w">
+                            <property role="Xl_RC" value=" " />
+                          </node>
                         </node>
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="2OqwBi" id="321ojDtvvPL" role="2GsD0m">
-              <node concept="2OqwBi" id="321ojDtvuLp" role="2Oq$k0">
-                <node concept="37vLTw" id="321ojDtvuEB" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7PgKJZviVLK" resolve="pointerAnalyzer" />
+              <node concept="2OqwBi" id="321ojDtvvPL" role="2GsD0m">
+                <node concept="2OqwBi" id="321ojDtvuLp" role="2Oq$k0">
+                  <node concept="37vLTw" id="321ojDtvuEB" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7PgKJZviVLK" resolve="pointerAnalyzer" />
+                  </node>
+                  <node concept="liA8E" id="321ojDtvvJZ" role="2OqNvi">
+                    <ref role="37wK5l" to="mu20:1lfJxt4aCKl" resolve="getProgram" />
+                  </node>
                 </node>
-                <node concept="liA8E" id="321ojDtvvJZ" role="2OqNvi">
-                  <ref role="37wK5l" to="mu20:1lfJxt4aCKl" resolve="getProgram" />
+                <node concept="liA8E" id="321ojDtvwiP" role="2OqNvi">
+                  <ref role="37wK5l" to="hxuy:~Program.getInstructions():java.util.List" resolve="getInstructions" />
                 </node>
-              </node>
-              <node concept="liA8E" id="321ojDtvwiP" role="2OqNvi">
-                <ref role="37wK5l" to="hxuy:~Program.getInstructions():java.util.List" resolve="getInstructions" />
               </node>
             </node>
           </node>
@@ -6715,7 +6720,7 @@
                 </node>
               </node>
               <node concept="2v6lVJ" id="3ivm4e3BU9U" role="33vP2m">
-                <ref role="2v6lVI" to="9xhd:7vcqB$mvpmV" resolve="UninitializedReadAnalyzer" />
+                <ref role="2v6lVI" to="9xhd:7vcqB$mvpmV" resolve="InitializedVariablesAnalyzer" />
                 <node concept="1YBJjd" id="2GqtAvyMzld" role="3vVDej">
                   <ref role="1YBMHb" node="2GqtAvyKZ4G" resolve="statements" />
                 </node>
@@ -6888,7 +6893,7 @@
                               <node concept="2yIwOk" id="6si$VEkmZN0" role="2OqNvi" />
                             </node>
                             <node concept="10M0yZ" id="7d9zFs_$OLn" role="3ElQJh">
-                              <ref role="1PxDUh" to="9xhd:7d9zFs_pkq2" resolve="UninitializedReadAnalyzerHelper" />
+                              <ref role="1PxDUh" to="9xhd:7d9zFs_pkq2" resolve="InitializedVariablesAnalyzerHelper" />
                               <ref role="3cqZAo" to="9xhd:7d9zFs_$E6J" resolve="markerSpecifications" />
                             </node>
                           </node>
