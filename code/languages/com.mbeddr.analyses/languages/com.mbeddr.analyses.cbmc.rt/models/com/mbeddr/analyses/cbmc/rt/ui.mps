@@ -6876,13 +6876,13 @@
                         <node concept="3clFbJ" id="7GloF9XUu8G" role="3cqZAp">
                           <node concept="3clFbS" id="7GloF9XUu8J" role="3clFbx">
                             <node concept="3clFbF" id="7Quig7_QIC7" role="3cqZAp">
-                              <node concept="2YIFZM" id="7Quig7_QICR" role="3clFbG">
-                                <ref role="37wK5l" to="uipx:7Quig7_QtUI" resolve="displayInfoDialog" />
+                              <node concept="2YIFZM" id="615cGN$MPmz" role="3clFbG">
+                                <ref role="37wK5l" to="uipx:615cGN$MG9i" resolve="displayInfoDialogWithHTML" />
                                 <ref role="1Pybhc" to="uipx:3kLBXRrt32s" resolve="Dialogs" />
-                                <node concept="Xl_RD" id="7GloF9XUDhi" role="37wK5m">
+                                <node concept="Xl_RD" id="615cGN$MPm$" role="37wK5m">
                                   <property role="Xl_RC" value="CBMC is correctly installed" />
                                 </node>
-                                <node concept="37vLTw" id="7Quig7_QIGc" role="37wK5m">
+                                <node concept="37vLTw" id="615cGN$MPm_" role="37wK5m">
                                   <ref role="3cqZAo" node="7Quig7_QiAF" resolve="messages" />
                                 </node>
                               </node>
@@ -6894,13 +6894,13 @@
                           <node concept="9aQIb" id="7GloF9XUDcG" role="9aQIa">
                             <node concept="3clFbS" id="7GloF9XUDcH" role="9aQI4">
                               <node concept="3clFbF" id="7GloF9XUCNb" role="3cqZAp">
-                                <node concept="2YIFZM" id="7GloF9XUCNd" role="3clFbG">
+                                <node concept="2YIFZM" id="615cGN$N3Yb" role="3clFbG">
+                                  <ref role="37wK5l" to="uipx:615cGN$MQRg" resolve="displayErrorDialogWithHTML" />
                                   <ref role="1Pybhc" to="uipx:3kLBXRrt32s" resolve="Dialogs" />
-                                  <ref role="37wK5l" to="uipx:7Quig7_QJQD" resolve="displayErrorDialog" />
-                                  <node concept="Xl_RD" id="7GloF9XUCNe" role="37wK5m">
+                                  <node concept="Xl_RD" id="615cGN$N3Yc" role="37wK5m">
                                     <property role="Xl_RC" value="Errors found with the installation of CBMC" />
                                   </node>
-                                  <node concept="37vLTw" id="7Quig7_QISt" role="37wK5m">
+                                  <node concept="37vLTw" id="615cGN$N3Yd" role="37wK5m">
                                     <ref role="3cqZAo" node="7Quig7_QiAF" resolve="messages" />
                                   </node>
                                 </node>

@@ -176,6 +176,57 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7Quig7_QtRQ" role="jymVt" />
+    <node concept="2YIFZL" id="615cGN$MG9i" role="jymVt">
+      <property role="TrG5h" value="displayInfoDialogWithHTML" />
+      <node concept="3cqZAl" id="615cGN$MG9j" role="3clF45" />
+      <node concept="3Tm1VV" id="615cGN$MG9k" role="1B3o_S" />
+      <node concept="3clFbS" id="615cGN$MG9l" role="3clF47">
+        <node concept="3cpWs8" id="615cGN$MG9m" role="3cqZAp">
+          <node concept="3cpWsn" id="615cGN$MG9n" role="3cpWs9">
+            <property role="TrG5h" value="msg" />
+            <node concept="17QB3L" id="615cGN$MG9o" role="1tU5fm" />
+            <node concept="2YIFZM" id="615cGN$MG9p" role="33vP2m">
+              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="v2t1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
+              <node concept="37vLTw" id="615cGN$MG9q" role="37wK5m">
+                <ref role="3cqZAo" node="615cGN$MG9$" resolve="messages" />
+              </node>
+              <node concept="Xl_RD" id="615cGN$MHWd" role="37wK5m">
+                <property role="Xl_RC" value="&lt;br&gt;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="615cGN$MG9s" role="3cqZAp">
+          <node concept="2YIFZM" id="615cGN$MG9t" role="3clFbG">
+            <ref role="37wK5l" to="dbrf:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+            <ref role="1Pybhc" to="dbrf:~JOptionPane" resolve="JOptionPane" />
+            <node concept="10Nm6u" id="615cGN$MG9u" role="37wK5m" />
+            <node concept="37vLTw" id="615cGN$MG9v" role="37wK5m">
+              <ref role="3cqZAo" node="615cGN$MG9n" resolve="msg" />
+            </node>
+            <node concept="37vLTw" id="615cGN$MG9w" role="37wK5m">
+              <ref role="3cqZAo" node="615cGN$MG9y" resolve="title" />
+            </node>
+            <node concept="10M0yZ" id="615cGN$MG9x" role="37wK5m">
+              <ref role="3cqZAo" to="dbrf:~JOptionPane.INFORMATION_MESSAGE" resolve="INFORMATION_MESSAGE" />
+              <ref role="1PxDUh" to="dbrf:~JOptionPane" resolve="JOptionPane" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="615cGN$MG9y" role="3clF46">
+        <property role="TrG5h" value="title" />
+        <node concept="17QB3L" id="615cGN$MG9z" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="615cGN$MG9$" role="3clF46">
+        <property role="TrG5h" value="messages" />
+        <node concept="_YKpA" id="615cGN$MG9_" role="1tU5fm">
+          <node concept="17QB3L" id="615cGN$MG9A" role="_ZDj9" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="615cGN$MG49" role="jymVt" />
     <node concept="2YIFZL" id="7Quig7_QJQD" role="jymVt">
       <property role="TrG5h" value="displayErrorDialog" />
       <node concept="3cqZAl" id="7Quig7_QJQE" role="3clF45" />
@@ -223,6 +274,57 @@
         <property role="TrG5h" value="messages" />
         <node concept="_YKpA" id="7Quig7_QJQW" role="1tU5fm">
           <node concept="17QB3L" id="7Quig7_QJQX" role="_ZDj9" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="615cGN$MRpg" role="jymVt" />
+    <node concept="2YIFZL" id="615cGN$MQRg" role="jymVt">
+      <property role="TrG5h" value="displayErrorDialogWithHTML" />
+      <node concept="3cqZAl" id="615cGN$MQRh" role="3clF45" />
+      <node concept="3Tm1VV" id="615cGN$MQRi" role="1B3o_S" />
+      <node concept="3clFbS" id="615cGN$MQRj" role="3clF47">
+        <node concept="3cpWs8" id="615cGN$MQRk" role="3cqZAp">
+          <node concept="3cpWsn" id="615cGN$MQRl" role="3cpWs9">
+            <property role="TrG5h" value="msg" />
+            <node concept="17QB3L" id="615cGN$MQRm" role="1tU5fm" />
+            <node concept="2YIFZM" id="615cGN$MQRn" role="33vP2m">
+              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="v2t1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
+              <node concept="37vLTw" id="615cGN$MQRo" role="37wK5m">
+                <ref role="3cqZAo" node="615cGN$MQRy" resolve="messages" />
+              </node>
+              <node concept="Xl_RD" id="615cGN$MStB" role="37wK5m">
+                <property role="Xl_RC" value="&lt;br&gt;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="615cGN$MQRq" role="3cqZAp">
+          <node concept="2YIFZM" id="615cGN$MQRr" role="3clFbG">
+            <ref role="37wK5l" to="dbrf:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+            <ref role="1Pybhc" to="dbrf:~JOptionPane" resolve="JOptionPane" />
+            <node concept="10Nm6u" id="615cGN$MQRs" role="37wK5m" />
+            <node concept="37vLTw" id="615cGN$MQRt" role="37wK5m">
+              <ref role="3cqZAo" node="615cGN$MQRl" resolve="msg" />
+            </node>
+            <node concept="37vLTw" id="615cGN$MQRu" role="37wK5m">
+              <ref role="3cqZAo" node="615cGN$MQRw" resolve="title" />
+            </node>
+            <node concept="10M0yZ" id="615cGN$MQRv" role="37wK5m">
+              <ref role="3cqZAo" to="dbrf:~JOptionPane.ERROR_MESSAGE" resolve="ERROR_MESSAGE" />
+              <ref role="1PxDUh" to="dbrf:~JOptionPane" resolve="JOptionPane" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="615cGN$MQRw" role="3clF46">
+        <property role="TrG5h" value="title" />
+        <node concept="17QB3L" id="615cGN$MQRx" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="615cGN$MQRy" role="3clF46">
+        <property role="TrG5h" value="messages" />
+        <node concept="_YKpA" id="615cGN$MQRz" role="1tU5fm">
+          <node concept="17QB3L" id="615cGN$MQR$" role="_ZDj9" />
         </node>
       </node>
     </node>
