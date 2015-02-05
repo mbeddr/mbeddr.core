@@ -19,6 +19,7 @@
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="i9so" ref="r:9e5578e0-37f0-4c9b-a301-771bcb453678(jetbrains.mps.make.script)" />
     <import index="uipx" ref="r:e7b58802-36b0-4e17-a1f6-eb5c442b040c(com.mbeddr.analyses.utils.ui)" />
+    <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
     <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -154,7 +155,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -1516,7 +1516,7 @@
                                     <ref role="1Pybhc" to="e2lb:~Thread" resolve="Thread" />
                                     <ref role="37wK5l" to="e2lb:~Thread.sleep(long):void" resolve="sleep" />
                                     <node concept="3cmrfG" id="505H3_WY3PG" role="37wK5m">
-                                      <property role="3cmrfH" value="100" />
+                                      <property role="3cmrfH" value="30" />
                                     </node>
                                   </node>
                                 </node>
@@ -1570,17 +1570,12 @@
                     <node concept="2YIFZM" id="505H3_WY3PY" role="37wK5m">
                       <ref role="37wK5l" to="pt5l:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
                       <ref role="1Pybhc" to="pt5l:~ProjectHelper" resolve="ProjectHelper" />
-                      <node concept="2OqwBi" id="505H3_WY3PZ" role="37wK5m">
-                        <node concept="3cpWs2" id="505H3_WY3Q0" role="2Oq$k0">
-                          <ref role="3cqZAo" node="505H3_WY3Q4" resolve="ctx" />
-                        </node>
-                        <node concept="liA8E" id="505H3_WY3Q1" role="2OqNvi">
-                          <ref role="37wK5l" to="cu2c:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
-                        </node>
+                      <node concept="37vLTw" id="7uk5GW4LUgb" role="37wK5m">
+                        <ref role="3cqZAo" node="47xghtTLhAO" resolve="proj" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="505H3_WY3Q2" role="37wK5m">
-                      <property role="Xl_RC" value="Starting analysis ..." />
+                      <property role="Xl_RC" value="Generating code ..." />
                     </node>
                     <node concept="3clFbT" id="505H3_WY3Q3" role="37wK5m">
                       <property role="3clFbU" value="true" />
@@ -1592,11 +1587,11 @@
           </node>
         </node>
       </node>
-      <node concept="37vLTG" id="505H3_WY3Q4" role="3clF46">
-        <property role="TrG5h" value="ctx" />
+      <node concept="37vLTG" id="47xghtTLhAO" role="3clF46">
+        <property role="TrG5h" value="proj" />
         <property role="3TUv4t" value="true" />
-        <node concept="3uibUv" id="505H3_WY3Q5" role="1tU5fm">
-          <ref role="3uigEE" to="cu2c:~IOperationContext" resolve="IOperationContext" />
+        <node concept="3uibUv" id="7uk5GW4JJfx" role="1tU5fm">
+          <ref role="3uigEE" to="vsqj:~Project" resolve="Project" />
         </node>
       </node>
       <node concept="37vLTG" id="505H3_WY3Q6" role="3clF46">

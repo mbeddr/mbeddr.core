@@ -42,6 +42,9 @@
     <import index="v2t1" ref="f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons/org.apache.commons.lang3@java_stub)" />
     <import index="p73q" ref="f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.io(org.apache.commons/org.apache.commons.io@java_stub)" />
     <import index="fw3h" ref="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.progress(com.intellij.openapi.progress@java_stub)" />
+    <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
+    <import index="b2mh" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.project(MPS.IDEA/com.intellij.openapi.project@java_stub)" />
+    <import index="pt5l" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.project(MPS.Platform/jetbrains.mps.ide.project@java_stub)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -5822,14 +5825,14 @@
     <node concept="2tJIrI" id="2UdJgvFpFi8" role="jymVt" />
     <node concept="Wx3nA" id="3_HSwtcSy$M" role="jymVt">
       <property role="IEkAT" value="false" />
-      <property role="TrG5h" value="lastCtx" />
+      <property role="TrG5h" value="lastProj" />
       <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="3_HSwtcSvm1" role="1tU5fm">
-        <ref role="3uigEE" to="cu2c:~IOperationContext" resolve="IOperationContext" />
+      <node concept="3uibUv" id="7uk5GW4OHFI" role="1tU5fm">
+        <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
       </node>
       <node concept="3Tm6S6" id="3_HSwtcSve4" role="1B3o_S" />
       <node concept="NWlO9" id="3_HSwtcSyAq" role="lGtFl">
-        <property role="NWlVz" value="Last context of the run analysis." />
+        <property role="NWlVz" value="Last project of the run analysis." />
       </node>
     </node>
     <node concept="2tJIrI" id="3_HSwtcSvL$" role="jymVt" />
@@ -5895,11 +5898,11 @@
       <node concept="3clFbS" id="2UdJgvFqtPs" role="3clF47">
         <node concept="3clFbF" id="3_HSwtcSzpK" role="3cqZAp">
           <node concept="37vLTI" id="3_HSwtcSzua" role="3clFbG">
-            <node concept="37vLTw" id="3_HSwtcSzwM" role="37vLTx">
-              <ref role="3cqZAo" node="2UdJgvFq_fV" resolve="ctx" />
+            <node concept="37vLTw" id="7uk5GW4OHzR" role="37vLTx">
+              <ref role="3cqZAo" node="47xghtTLhAO" resolve="proj" />
             </node>
             <node concept="37vLTw" id="3_HSwtcSzpJ" role="37vLTJ">
-              <ref role="3cqZAo" node="3_HSwtcSy$M" resolve="lastCtx" />
+              <ref role="3cqZAo" node="3_HSwtcSy$M" resolve="lastProj" />
             </node>
           </node>
         </node>
@@ -5975,6 +5978,21 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="7uk5GW4OOBd" role="3cqZAp">
+          <node concept="3cpWsn" id="7uk5GW4OOBe" role="3cpWs9">
+            <property role="TrG5h" value="mpsProject" />
+            <node concept="3uibUv" id="7uk5GW4OOBf" role="1tU5fm">
+              <ref role="3uigEE" to="vsqj:~Project" resolve="Project" />
+            </node>
+            <node concept="2YIFZM" id="7uk5GW4NjAI" role="33vP2m">
+              <ref role="1Pybhc" to="pt5l:~ProjectHelper" resolve="ProjectHelper" />
+              <ref role="37wK5l" to="pt5l:~ProjectHelper.toMPSProject(com.intellij.openapi.project.Project):jetbrains.mps.project.Project" resolve="toMPSProject" />
+              <node concept="37vLTw" id="7uk5GW4OOKU" role="37wK5m">
+                <ref role="3cqZAo" node="47xghtTLhAO" resolve="proj" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="4arT0cnzgZT" role="3cqZAp">
           <node concept="3cpWsn" id="4arT0cnzgZU" role="3cpWs9">
             <property role="TrG5h" value="make" />
@@ -5985,8 +6003,8 @@
             <node concept="2YIFZM" id="4arT0cnzgZW" role="33vP2m">
               <ref role="1Pybhc" to="qh45:6SYIklyM6Mg" resolve="MakeUtils" />
               <ref role="37wK5l" to="qh45:4FpLBMtUK3m" resolve="makeProject" />
-              <node concept="37vLTw" id="3_HSwtcNEJJ" role="37wK5m">
-                <ref role="3cqZAo" node="2UdJgvFq_fV" resolve="ctx" />
+              <node concept="37vLTw" id="7uk5GW4OOM3" role="37wK5m">
+                <ref role="3cqZAo" node="7uk5GW4OOBe" resolve="mpsProject" />
               </node>
               <node concept="37vLTw" id="3_HSwtcNG4r" role="37wK5m">
                 <ref role="3cqZAo" node="2UdJgvFqBep" resolve="model" />
@@ -6023,8 +6041,8 @@
           <node concept="2YIFZM" id="2H5doxugIMV" role="3clFbG">
             <ref role="37wK5l" to="ood5:505H3_WY3P2" resolve="doMakeAndRunAnalysis" />
             <ref role="1Pybhc" to="ood5:505H3_WY3P0" resolve="AnalyzerMPSRunner" />
-            <node concept="37vLTw" id="2H5doxugIV5" role="37wK5m">
-              <ref role="3cqZAo" node="2UdJgvFq_fV" resolve="ctx" />
+            <node concept="37vLTw" id="7uk5GW4OOP7" role="37wK5m">
+              <ref role="3cqZAo" node="7uk5GW4OOBe" resolve="mpsProject" />
             </node>
             <node concept="37vLTw" id="5uqRFp90XDE" role="37wK5m">
               <ref role="3cqZAo" node="2UdJgvFqCjL" resolve="analyzerFactory" />
@@ -6037,10 +6055,11 @@
       </node>
       <node concept="3Tm1VV" id="2UdJgvFqtIE" role="1B3o_S" />
       <node concept="3cqZAl" id="2UdJgvFqtPg" role="3clF45" />
-      <node concept="37vLTG" id="2UdJgvFq_fV" role="3clF46">
-        <property role="TrG5h" value="ctx" />
-        <node concept="3uibUv" id="2UdJgvFq_fU" role="1tU5fm">
-          <ref role="3uigEE" to="cu2c:~IOperationContext" resolve="IOperationContext" />
+      <node concept="37vLTG" id="47xghtTLhAO" role="3clF46">
+        <property role="TrG5h" value="proj" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="7uk5GW4OHSe" role="1tU5fm">
+          <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
         </node>
       </node>
       <node concept="37vLTG" id="2UdJgvFqBep" role="3clF46">
@@ -6100,7 +6119,7 @@
           <node concept="1rXfSq" id="3_HSwtcSCVY" role="3clFbG">
             <ref role="37wK5l" node="2UdJgvFqtPp" resolve="performAnalysis" />
             <node concept="37vLTw" id="3_HSwtcSCYl" role="37wK5m">
-              <ref role="3cqZAo" node="3_HSwtcSy$M" resolve="lastCtx" />
+              <ref role="3cqZAo" node="3_HSwtcSy$M" resolve="lastProj" />
             </node>
             <node concept="37vLTw" id="3_HSwtcSD1I" role="37wK5m">
               <ref role="3cqZAo" node="3_HSwtcSxMQ" resolve="lastModel" />
