@@ -88,9 +88,6 @@
                 <mapping-set-element>
                   <mapping-node modelUID="r:769ad9a0-f26a-4d17-9cc6-f3ae937bc774(com.mbeddr.ext.components.gen_nomw.generator.template.main@generator)" nodeID="6209278014150444389" />
                 </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:769ad9a0-f26a-4d17-9cc6-f3ae937bc774(com.mbeddr.ext.components.gen_nomw.generator.template.main@generator)" nodeID="1539255704408506110" />
-                </mapping-set-element>
               </mapping-set>
             </external-mapping>
           </lesser-priority-mapping>

@@ -216,6 +216,9 @@
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="5279705229678483897" name="jetbrains.mps.baseLanguage.structure.FloatingPointFloatConstant" flags="nn" index="2$xPTn">
+        <property id="5279705229678483899" name="value" index="2$xPTl" />
+      </concept>
       <concept id="1188220165133" name="jetbrains.mps.baseLanguage.structure.ArrayLiteral" flags="nn" index="2BsdOp">
         <child id="1188220173759" name="item" index="2BsfMF" />
       </concept>
@@ -5210,8 +5213,8 @@
                   </node>
                 </node>
                 <node concept="2xDkLB" id="3diMC1cb$0Z" role="37wK5m" />
-                <node concept="3b6qkQ" id="3diMC1clHBW" role="37wK5m">
-                  <property role="$nhwW" value="0.08f" />
+                <node concept="2$xPTn" id="4UHO8tvDder" role="37wK5m">
+                  <property role="2$xPTl" value="0.08f" />
                 </node>
               </node>
             </node>
