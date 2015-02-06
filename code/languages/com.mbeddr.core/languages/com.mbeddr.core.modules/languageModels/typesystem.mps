@@ -6430,39 +6430,51 @@
           <node concept="3clFbH" id="1MdOvoQHQoh" role="3cqZAp" />
           <node concept="3cpWs8" id="1MdOvoQHRCN" role="3cqZAp">
             <node concept="3cpWsn" id="1MdOvoQHRCO" role="3cpWs9">
-              <property role="TrG5h" value="written" />
+              <property role="TrG5h" value="markedOutVariables" />
               <node concept="2hMVRd" id="1MdOvoQHRCP" role="1tU5fm">
-                <node concept="3Tqbb2" id="1MdOvoQHRCQ" role="2hN53Y" />
+                <node concept="3uibUv" id="56zXiDvfAvR" role="2hN53Y">
+                  <ref role="3uigEE" to="9xhd:4zFXTqpFLST" resolve="VariableWrapper" />
+                </node>
               </node>
               <node concept="2ShNRf" id="1MdOvoQHRCR" role="33vP2m">
                 <node concept="2i4dXS" id="1MdOvoQHRCS" role="2ShVmc">
-                  <node concept="3Tqbb2" id="1MdOvoQHRCT" role="HW$YZ" />
+                  <node concept="3uibUv" id="56zXiDvfBMz" role="HW$YZ">
+                    <ref role="3uigEE" to="9xhd:4zFXTqpFLST" resolve="VariableWrapper" />
+                  </node>
                 </node>
               </node>
             </node>
           </node>
           <node concept="3cpWs8" id="1MdOvoQttu7" role="3cqZAp">
             <node concept="3cpWsn" id="1MdOvoQttua" role="3cpWs9">
-              <property role="TrG5h" value="mustBeWritten" />
+              <property role="TrG5h" value="outVariables" />
               <node concept="2hMVRd" id="1MdOvoQttu3" role="1tU5fm">
-                <node concept="3Tqbb2" id="1MdOvoQttW1" role="2hN53Y" />
+                <node concept="3uibUv" id="56zXiDvfAxd" role="2hN53Y">
+                  <ref role="3uigEE" to="9xhd:4zFXTqpFLST" resolve="VariableWrapper" />
+                </node>
               </node>
               <node concept="2ShNRf" id="1MdOvoQtuh3" role="33vP2m">
                 <node concept="2i4dXS" id="1MdOvoQtugY" role="2ShVmc">
-                  <node concept="3Tqbb2" id="1MdOvoQtugZ" role="HW$YZ" />
+                  <node concept="3uibUv" id="56zXiDvfBO5" role="HW$YZ">
+                    <ref role="3uigEE" to="9xhd:4zFXTqpFLST" resolve="VariableWrapper" />
+                  </node>
                 </node>
               </node>
             </node>
           </node>
           <node concept="3cpWs8" id="1MdOvoQtuIE" role="3cqZAp">
             <node concept="3cpWsn" id="1MdOvoQtuIF" role="3cpWs9">
-              <property role="TrG5h" value="mustNotBeWritten" />
+              <property role="TrG5h" value="inVariables" />
               <node concept="2hMVRd" id="1MdOvoQtuIG" role="1tU5fm">
-                <node concept="3Tqbb2" id="1MdOvoQu97Z" role="2hN53Y" />
+                <node concept="3uibUv" id="56zXiDvfBiL" role="2hN53Y">
+                  <ref role="3uigEE" to="9xhd:4zFXTqpFLST" resolve="VariableWrapper" />
+                </node>
               </node>
               <node concept="2ShNRf" id="1MdOvoQtuII" role="33vP2m">
                 <node concept="2i4dXS" id="1MdOvoQtuIJ" role="2ShVmc">
-                  <node concept="3Tqbb2" id="1MdOvoQtuIK" role="HW$YZ" />
+                  <node concept="3uibUv" id="56zXiDvfCs_" role="HW$YZ">
+                    <ref role="3uigEE" to="9xhd:4zFXTqpFLST" resolve="VariableWrapper" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -6483,17 +6495,33 @@
                   <node concept="3clFbS" id="1MdOvoQtBws" role="1bW5cS">
                     <node concept="3clFbJ" id="L2WnbQQlxO" role="3cqZAp">
                       <node concept="3clFbS" id="L2WnbQQlxR" role="3clFbx">
+                        <node concept="3cpWs8" id="56zXiDvfH6z" role="3cqZAp">
+                          <node concept="3cpWsn" id="56zXiDvfH6$" role="3cpWs9">
+                            <property role="TrG5h" value="var" />
+                            <node concept="3uibUv" id="56zXiDvfH6o" role="1tU5fm">
+                              <ref role="3uigEE" to="9xhd:4zFXTqpFLST" resolve="VariableWrapper" />
+                            </node>
+                            <node concept="2ShNRf" id="56zXiDvfH6_" role="33vP2m">
+                              <node concept="1pGfFk" id="56zXiDvfH6A" role="2ShVmc">
+                                <ref role="37wK5l" to="9xhd:4zFXTqpFMGR" resolve="VariableWrapper" />
+                                <node concept="37vLTw" id="56zXiDvfH6B" role="37wK5m">
+                                  <ref role="3cqZAo" node="1MdOvoQtBwt" resolve="it" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                         <node concept="3clFbJ" id="1MdOvoQtBzy" role="3cqZAp">
                           <node concept="3clFbS" id="1MdOvoQtBzz" role="3clFbx">
                             <node concept="3clFbF" id="1MdOvoQtE1B" role="3cqZAp">
                               <node concept="2OqwBi" id="1MdOvoQtEmE" role="3clFbG">
                                 <node concept="TSZUe" id="1MdOvoQtFza" role="2OqNvi">
-                                  <node concept="37vLTw" id="1MdOvoQtG7i" role="25WWJ7">
-                                    <ref role="3cqZAo" node="1MdOvoQtBwt" resolve="it" />
+                                  <node concept="37vLTw" id="56zXiDvfH6C" role="25WWJ7">
+                                    <ref role="3cqZAo" node="56zXiDvfH6$" resolve="var" />
                                   </node>
                                 </node>
                                 <node concept="37vLTw" id="1MdOvoQtYA6" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="1MdOvoQtuIF" resolve="mustNotBeWritten" />
+                                  <ref role="3cqZAo" node="1MdOvoQtuIF" resolve="inVariables" />
                                 </node>
                               </node>
                             </node>
@@ -6523,11 +6551,11 @@
                               <node concept="3clFbF" id="1MdOvoQu0rY" role="3cqZAp">
                                 <node concept="2OqwBi" id="1MdOvoQu10F" role="3clFbG">
                                   <node concept="37vLTw" id="1MdOvoQu0rX" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="1MdOvoQttua" resolve="mustBeWritten" />
+                                    <ref role="3cqZAo" node="1MdOvoQttua" resolve="outVariables" />
                                   </node>
                                   <node concept="TSZUe" id="1MdOvoQu2jN" role="2OqNvi">
-                                    <node concept="37vLTw" id="1MdOvoQu2R7" role="25WWJ7">
-                                      <ref role="3cqZAo" node="1MdOvoQtBwt" resolve="it" />
+                                    <node concept="37vLTw" id="56zXiDvfH6D" role="25WWJ7">
+                                      <ref role="3cqZAo" node="56zXiDvfH6$" resolve="var" />
                                     </node>
                                   </node>
                                 </node>
@@ -6832,7 +6860,7 @@
                   </node>
                   <node concept="3cpWs8" id="2GqtAvzamvv" role="3cqZAp">
                     <node concept="3cpWsn" id="2GqtAvzamvw" role="3cpWs9">
-                      <property role="TrG5h" value="variableWrapper" />
+                      <property role="TrG5h" value="var" />
                       <node concept="3uibUv" id="4zFXTqpMIEI" role="1tU5fm">
                         <ref role="3uigEE" to="9xhd:4zFXTqpFLST" resolve="VariableWrapper" />
                       </node>
@@ -6914,7 +6942,7 @@
                               <node concept="2OqwBi" id="2GqtAvzasGh" role="3uHU7w">
                                 <node concept="2OqwBi" id="4zFXTqpMJhR" role="2Oq$k0">
                                   <node concept="37vLTw" id="2GqtAvzasA3" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="2GqtAvzamvw" resolve="variableWrapper" />
+                                    <ref role="3cqZAo" node="2GqtAvzamvw" resolve="var" />
                                   </node>
                                   <node concept="2OwXpG" id="4zFXTqpMJN6" role="2OqNvi">
                                     <ref role="2Oxat5" to="9xhd:4zFXTqpFMFo" resolve="variable" />
@@ -7016,7 +7044,7 @@
                           <node concept="liA8E" id="2GqtAvzasjq" role="2OqNvi">
                             <ref role="37wK5l" to="k7g3:~Set.contains(java.lang.Object):boolean" resolve="contains" />
                             <node concept="37vLTw" id="2GqtAvzasjr" role="37wK5m">
-                              <ref role="3cqZAo" node="2GqtAvzamvw" resolve="variableWrapper" />
+                              <ref role="3cqZAo" node="2GqtAvzamvw" resolve="var" />
                             </node>
                           </node>
                         </node>
@@ -7030,6 +7058,170 @@
                   </node>
                   <node concept="37vLTw" id="2GqtAvz8Lmf" role="2ZW6bz">
                     <ref role="3cqZAo" node="2GqtAvyV0S1" resolve="instruction" />
+                  </node>
+                </node>
+                <node concept="3eNFk2" id="56zXiDvf_o7" role="3eNLev">
+                  <node concept="1Wc70l" id="56zXiDvsVsL" role="3eO9$A">
+                    <node concept="2ZW3vV" id="56zXiDvf_QM" role="3uHU7B">
+                      <node concept="3uibUv" id="56zXiDvf_Tr" role="2ZW6by">
+                        <ref role="3uigEE" to="flgp:~WriteInstruction" resolve="WriteInstruction" />
+                      </node>
+                      <node concept="37vLTw" id="56zXiDvf_IP" role="2ZW6bz">
+                        <ref role="3cqZAo" node="2GqtAvyV0S1" resolve="instruction" />
+                      </node>
+                    </node>
+                    <node concept="3y3z36" id="56zXiDvsWhG" role="3uHU7w">
+                      <node concept="10Nm6u" id="56zXiDvsWib" role="3uHU7w" />
+                      <node concept="2OqwBi" id="56zXiDvsVCP" role="3uHU7B">
+                        <node concept="1eOMI4" id="56zXiDvsVyS" role="2Oq$k0">
+                          <node concept="10QFUN" id="56zXiDvsVyT" role="1eOMHV">
+                            <node concept="3uibUv" id="56zXiDvsVyU" role="10QFUM">
+                              <ref role="3uigEE" to="flgp:~WriteInstruction" resolve="WriteInstruction" />
+                            </node>
+                            <node concept="37vLTw" id="56zXiDvsVyV" role="10QFUP">
+                              <ref role="3cqZAo" node="2GqtAvyV0S1" resolve="instruction" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="56zXiDvsWfK" role="2OqNvi">
+                          <ref role="37wK5l" to="flgp:~WriteInstruction.getVariable():java.lang.Object" resolve="getVariable" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="56zXiDvf_o9" role="3eOfB_">
+                    <node concept="3cpWs8" id="56zXiDvf_Y_" role="3cqZAp">
+                      <node concept="3cpWsn" id="56zXiDvf_YA" role="3cpWs9">
+                        <property role="TrG5h" value="write" />
+                        <node concept="3uibUv" id="56zXiDvfA1L" role="1tU5fm">
+                          <ref role="3uigEE" to="flgp:~WriteInstruction" resolve="WriteInstruction" />
+                        </node>
+                        <node concept="1eOMI4" id="56zXiDvf_YC" role="33vP2m">
+                          <node concept="10QFUN" id="56zXiDvf_YD" role="1eOMHV">
+                            <node concept="3uibUv" id="56zXiDvfApd" role="10QFUM">
+                              <ref role="3uigEE" to="flgp:~WriteInstruction" resolve="WriteInstruction" />
+                            </node>
+                            <node concept="37vLTw" id="56zXiDvf_YF" role="10QFUP">
+                              <ref role="3cqZAo" node="2GqtAvyV0S1" resolve="instruction" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cpWs8" id="56zXiDvfIk_" role="3cqZAp">
+                      <node concept="3cpWsn" id="56zXiDvfIkA" role="3cpWs9">
+                        <property role="TrG5h" value="var" />
+                        <node concept="3uibUv" id="56zXiDvfIkB" role="1tU5fm">
+                          <ref role="3uigEE" to="9xhd:4zFXTqpFLST" resolve="VariableWrapper" />
+                        </node>
+                        <node concept="2ShNRf" id="56zXiDvfIkC" role="33vP2m">
+                          <node concept="1pGfFk" id="56zXiDvfIkD" role="2ShVmc">
+                            <ref role="37wK5l" to="9xhd:4zFXTqpFMGR" resolve="VariableWrapper" />
+                            <node concept="10QFUN" id="56zXiDvfIkE" role="37wK5m">
+                              <node concept="2OqwBi" id="56zXiDvfIkF" role="10QFUP">
+                                <node concept="37vLTw" id="56zXiDvfILx" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="56zXiDvf_YA" resolve="write" />
+                                </node>
+                                <node concept="liA8E" id="56zXiDvfIkH" role="2OqNvi">
+                                  <ref role="37wK5l" to="flgp:~WriteInstruction.getVariable():java.lang.Object" resolve="getVariable" />
+                                </node>
+                              </node>
+                              <node concept="3Tqbb2" id="56zXiDvfIkI" role="10QFUM" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="56zXiDvfAs9" role="3cqZAp" />
+                    <node concept="3clFbJ" id="56zXiDvfJgb" role="3cqZAp">
+                      <node concept="3clFbS" id="56zXiDvfJge" role="3clFbx">
+                        <node concept="2MkqsV" id="56zXiDvfLPL" role="3cqZAp">
+                          <node concept="Xl_RD" id="56zXiDvfLQ6" role="2MkJ7o">
+                            <property role="Xl_RC" value="The variable must not be written!" />
+                          </node>
+                          <node concept="10QFUN" id="56zXiDvfMvp" role="2OEOjV">
+                            <node concept="3Tqbb2" id="56zXiDvfMvW" role="10QFUM" />
+                            <node concept="2OqwBi" id="56zXiDvfMdl" role="10QFUP">
+                              <node concept="37vLTw" id="56zXiDvfM82" role="2Oq$k0">
+                                <ref role="3cqZAo" node="56zXiDvf_YA" resolve="write" />
+                              </node>
+                              <node concept="liA8E" id="56zXiDvfMu0" role="2OqNvi">
+                                <ref role="37wK5l" to="flgp:~Instruction.getSource():java.lang.Object" resolve="getSource" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="56zXiDvfJGi" role="3clFbw">
+                        <node concept="37vLTw" id="56zXiDvfJlY" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1MdOvoQtuIF" resolve="inVariables" />
+                        </node>
+                        <node concept="3JPx81" id="56zXiDvfLMp" role="2OqNvi">
+                          <node concept="37vLTw" id="56zXiDvfLNZ" role="25WWJ7">
+                            <ref role="3cqZAo" node="56zXiDvfIkA" resolve="var" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3eNFk2" id="56zXiDvgztW" role="3eNLev">
+                  <node concept="2ZW3vV" id="56zXiDvg$fb" role="3eO9$A">
+                    <node concept="3uibUv" id="56zXiDvgZTZ" role="2ZW6by">
+                      <ref role="3uigEE" to="flgp:~EndInstruction" resolve="EndInstruction" />
+                    </node>
+                    <node concept="37vLTw" id="56zXiDvg$7V" role="2ZW6bz">
+                      <ref role="3cqZAo" node="2GqtAvyV0S1" resolve="instruction" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="56zXiDvgztY" role="3eOfB_">
+                    <node concept="3SKdUt" id="56zXiDvgZYH" role="3cqZAp">
+                      <node concept="3SKdUq" id="56zXiDvgZYK" role="3SKWNk">
+                        <property role="3SKdUp" value="all the out variables must be initialized at this point" />
+                      </node>
+                    </node>
+                    <node concept="1DcWWT" id="56zXiDvgZZ2" role="3cqZAp">
+                      <node concept="3clFbS" id="56zXiDvgZZ5" role="2LFqv$">
+                        <node concept="3clFbJ" id="56zXiDvh1ci" role="3cqZAp">
+                          <node concept="3clFbS" id="56zXiDvh1cj" role="3clFbx">
+                            <node concept="3clFbF" id="56zXiDvh3BW" role="3cqZAp">
+                              <node concept="2OqwBi" id="56zXiDvh3Pw" role="3clFbG">
+                                <node concept="37vLTw" id="56zXiDvh3BV" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1MdOvoQHRCO" resolve="markedOutVariables" />
+                                </node>
+                                <node concept="TSZUe" id="56zXiDvh4Hd" role="2OqNvi">
+                                  <node concept="37vLTw" id="56zXiDvh4Tz" role="25WWJ7">
+                                    <ref role="3cqZAo" node="56zXiDvgZZ8" resolve="outVariable" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3fqX7Q" id="56zXiDvh3zi" role="3clFbw">
+                            <node concept="2OqwBi" id="56zXiDvh3zk" role="3fr31v">
+                              <node concept="37vLTw" id="56zXiDvh3zl" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2GqtAvz8HZA" resolve="variables" />
+                              </node>
+                              <node concept="liA8E" id="56zXiDvh3zm" role="2OqNvi">
+                                <ref role="37wK5l" to="k7g3:~Set.contains(java.lang.Object):boolean" resolve="contains" />
+                                <node concept="37vLTw" id="56zXiDvh3zn" role="37wK5m">
+                                  <ref role="3cqZAo" node="56zXiDvgZZ8" resolve="outVariable" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3cpWsn" id="56zXiDvgZZ8" role="1Duv9x">
+                        <property role="TrG5h" value="outVariable" />
+                        <node concept="3uibUv" id="56zXiDvh0c9" role="1tU5fm">
+                          <ref role="3uigEE" to="9xhd:4zFXTqpFLST" resolve="VariableWrapper" />
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="56zXiDvh0Qc" role="1DdaDG">
+                        <ref role="3cqZAo" node="1MdOvoQttua" resolve="outVariables" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -7052,6 +7244,33 @@
               <node concept="liA8E" id="2GqtAvyV0Sa" role="2OqNvi">
                 <ref role="37wK5l" to="hxuy:~Program.getInstructions():java.util.List" resolve="getInstructions" />
               </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="56zXiDvh75a" role="3cqZAp" />
+          <node concept="1DcWWT" id="56zXiDvh9$c" role="3cqZAp">
+            <node concept="3clFbS" id="56zXiDvh9$f" role="2LFqv$">
+              <node concept="2MkqsV" id="56zXiDvhcF8" role="3cqZAp">
+                <node concept="2OqwBi" id="56zXiDvhcKn" role="2OEOjV">
+                  <node concept="37vLTw" id="56zXiDvhcJi" role="2Oq$k0">
+                    <ref role="3cqZAo" node="56zXiDvh9$i" resolve="outVariable" />
+                  </node>
+                  <node concept="2OwXpG" id="56zXiDvhcRD" role="2OqNvi">
+                    <ref role="2Oxat5" to="9xhd:4zFXTqpFMFo" resolve="variable" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="56zXiDvhcFt" role="2MkJ7o">
+                  <property role="Xl_RC" value="The variable is not written on all execution paths!" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWsn" id="56zXiDvh9$i" role="1Duv9x">
+              <property role="TrG5h" value="outVariable" />
+              <node concept="3uibUv" id="56zXiDvhbWR" role="1tU5fm">
+                <ref role="3uigEE" to="9xhd:4zFXTqpFLST" resolve="VariableWrapper" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="56zXiDvqC6k" role="1DdaDG">
+              <ref role="3cqZAo" node="1MdOvoQHRCO" resolve="markedOutVariables" />
             </node>
           </node>
         </node>
