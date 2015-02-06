@@ -184,7 +184,7 @@
       </node>
       <node concept="3_J27D" id="2coa6Xmdl5Y" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NmSL" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="version" />
+          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$_yC" id="2coa6Xmdl60" role="m$_yJ">
@@ -244,7 +244,7 @@
       </node>
       <node concept="3_J27D" id="5qO$P$Prhtd" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2N$Ve" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="version" />
+          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$_yC" id="FO2MHUhOC2" role="m$_yJ">
@@ -277,7 +277,7 @@
       </node>
       <node concept="3_J27D" id="7uZw0yZ43JA" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NBpM" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="version" />
+          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="WadEn6EeV7" role="m$_yh">
@@ -353,7 +353,7 @@
       </node>
       <node concept="3_J27D" id="7eF9rfAuANj" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NCfe" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="version" />
+          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="7eF9rfAuANl" role="m$_yh">
@@ -386,7 +386,7 @@
       </node>
       <node concept="3_J27D" id="4i9pOwKZpph" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2ND4D" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="version" />
+          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="4i9pOwKZppj" role="m$_yh">
@@ -407,7 +407,7 @@
       </node>
       <node concept="3_J27D" id="7eF9rfAu$ox" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NDU4" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="version" />
+          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="7eF9rfAu$oz" role="m$_yh">
@@ -431,6 +431,9 @@
       <node concept="m$_yC" id="$bJ0jgDl0V" role="m$_yJ">
         <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />
       </node>
+      <node concept="m$_yC" id="7$cwLzjgYEV" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4be$WTb1MZD" resolve="de.itemis.mps.editor.diagram" />
+      </node>
       <node concept="3_J27D" id="7eF9rfAu$oF" role="m_cZH">
         <node concept="3Mxwew" id="7eF9rfAu$oG" role="3MwsjC">
           <property role="3MwjfP" value="mbeddr.statemachine" />
@@ -446,7 +449,7 @@
       </node>
       <node concept="3_J27D" id="7eF9rfAuyUu" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NEJv" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="version" />
+          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="7eF9rfAuyUw" role="m$_yh">
@@ -491,7 +494,7 @@
       </node>
       <node concept="3_J27D" id="7eF9rfAuv$Y" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NF$U" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="version" />
+          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="7eF9rfAuv_0" role="m$_yh">
@@ -536,7 +539,7 @@
       </node>
       <node concept="3_J27D" id="7eF9rfAnuiD" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NGql" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="version" />
+          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="7eF9rfAnuiF" role="m$_yh">
@@ -582,7 +585,7 @@
       </node>
       <node concept="3_J27D" id="5qO$P$PrHai" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NHfK" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="version" />
+          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="5qO$P$PrHak" role="m$_yh">
@@ -619,7 +622,7 @@
       </node>
       <node concept="3_J27D" id="2$$_2GRaiCa" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NI5b" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="version" />
+          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="2$$_2GRalCA" role="m$_yh">
@@ -662,7 +665,7 @@
       </node>
       <node concept="3_J27D" id="7eF9rfAuDVk" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NIUA" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="version" />
+          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="4hvHh3R1BO9" role="m$_yh">
@@ -720,7 +723,7 @@
       </node>
       <node concept="3_J27D" id="7eF9rfAuFwa" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NJK1" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="version" />
+          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="58S6eLQIvi8" role="m$_yh">
@@ -778,7 +781,7 @@
       </node>
       <node concept="3_J27D" id="7eF9rfAuSOa" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NK_s" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="version" />
+          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="7eF9rfAuSOc" role="m$_yh">
@@ -847,7 +850,7 @@
       </node>
       <node concept="3_J27D" id="5dchr4Qj2b9" role="m$_w8">
         <node concept="3Mxwey" id="5dchr4Qj69H" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="version" />
+          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="5dchr4QjmVv" role="m$_yh">
@@ -4763,6 +4766,18 @@
           <node concept="3bR9La" id="23po6SqT7xB" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LeP" resolve="jetbrains.mps.analyzers.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1TeN3vKu34E" role="3bR37C">
+          <node concept="3bR9La" id="1TeN3vKu34F" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1TeN3vKu34G" role="3bR37C">
+          <node concept="3bR9La" id="1TeN3vKu34H" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:4be$WTb1AQa" resolve="de.itemis.mps.editor.diagram.runtime" />
           </node>
         </node>
       </node>
