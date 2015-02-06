@@ -5542,20 +5542,6 @@
       <ref role="13i0hy" to="ln2k:5yCuRHcaxm8" resolve="getGraph" />
       <node concept="3Tm1VV" id="5yCuRHcfsI9" role="1B3o_S" />
       <node concept="3clFbS" id="5yCuRHcfsIc" role="3clF47">
-        <node concept="3clFbF" id="5yCuRHcz0a0" role="3cqZAp">
-          <node concept="2OqwBi" id="5yCuRHcz09X" role="3clFbG">
-            <node concept="10M0yZ" id="5yCuRHcz09Y" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="5yCuRHcz09Z" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="5yCuRHcz0wq" role="37wK5m">
-                <property role="Xl_RC" value="4" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="5yCuRHcixnB" role="3cqZAp">
           <node concept="3cpWsn" id="5yCuRHcixnC" role="3cpWs9">
             <property role="TrG5h" value="graph" />
@@ -5565,8 +5551,16 @@
             <node concept="2ShNRf" id="5yCuRHcixnD" role="33vP2m">
               <node concept="1pGfFk" id="5yCuRHcixnE" role="2ShVmc">
                 <ref role="37wK5l" to="ln2k:5yCuRHcc8L3" resolve="JNGraph" />
-                <node concept="Xl_RD" id="5yCuRHcixnF" role="37wK5m">
-                  <property role="Xl_RC" value="dependencies" />
+                <node concept="3cpWs3" id="31BFsd5v$TT" role="37wK5m">
+                  <node concept="2OqwBi" id="31BFsd5vG$5" role="3uHU7w">
+                    <node concept="13iPFW" id="31BFsd5vGsF" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="31BFsd5vI18" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="31BFsd5v$_T" role="3uHU7B">
+                    <property role="Xl_RC" value="dependencies: " />
+                  </node>
                 </node>
               </node>
             </node>
@@ -5607,24 +5601,11 @@
               <node concept="liA8E" id="5yCuRHciw5r" role="2OqNvi">
                 <ref role="37wK5l" to="ln2k:5yCuRHcaEcV" resolve="createVertex" />
                 <node concept="13iPFW" id="5yCuRHciw5s" role="37wK5m" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="5yCuRHcqE8Q" role="3cqZAp">
-          <node concept="2OqwBi" id="5yCuRHcqE8N" role="3clFbG">
-            <node concept="10M0yZ" id="5yCuRHcqE8O" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="5yCuRHcqE8P" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="5yCuRHcqEBi" role="37wK5m">
-                <node concept="37vLTw" id="5yCuRHcqECZ" role="3uHU7w">
-                  <ref role="3cqZAo" node="5yCuRHciw5o" resolve="vsource" />
-                </node>
-                <node concept="Xl_RD" id="5yCuRHcqEnG" role="3uHU7B">
-                  <property role="Xl_RC" value="vsource: " />
+                <node concept="2OqwBi" id="16Fq3WQrehx" role="37wK5m">
+                  <node concept="13iPFW" id="16Fq3WQrduQ" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="16Fq3WQrfiK" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -5647,28 +5628,49 @@
                         <ref role="3cqZAo" node="5yCuRHcimEj" resolve="g" />
                       </node>
                       <node concept="liA8E" id="5yCuRHcirPm" role="2OqNvi">
-                        <ref role="37wK5l" to="ln2k:5yCuRHcaH_T" resolve="createEdge" />
-                        <node concept="37vLTw" id="5yCuRHciwET" role="37wK5m">
-                          <ref role="3cqZAo" node="5yCuRHciqNb" resolve="it" />
+                        <ref role="37wK5l" to="ln2k:fDXG_g8mLj" resolve="createDirectedEdge" />
+                        <node concept="2OqwBi" id="55lcM3HDW1W" role="37wK5m">
+                          <node concept="13iPFW" id="55lcM3HDVPU" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="55lcM3HDXAR" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                          </node>
                         </node>
-                        <node concept="37vLTw" id="5yCuRHciwOS" role="37wK5m">
-                          <ref role="3cqZAo" node="5yCuRHciw5o" resolve="vsource" />
-                        </node>
-                        <node concept="2OqwBi" id="5T9R7Per5HJ" role="37wK5m">
-                          <node concept="2OqwBi" id="5T9R7Per577" role="2Oq$k0">
-                            <node concept="37vLTw" id="5T9R7Per52n" role="2Oq$k0">
+                        <node concept="2OqwBi" id="55lcM3HDZ8S" role="37wK5m">
+                          <node concept="2OqwBi" id="55lcM3HDYnx" role="2Oq$k0">
+                            <node concept="37vLTw" id="5yCuRHciwET" role="2Oq$k0">
                               <ref role="3cqZAo" node="5yCuRHciqNb" resolve="it" />
                             </node>
-                            <node concept="2qgKlT" id="5T9R7Per5uK" role="2OqNvi">
+                            <node concept="2qgKlT" id="55lcM3HDZ11" role="2OqNvi">
                               <ref role="37wK5l" node="6clJcrJZN1z" resolve="chunk" />
                             </node>
                           </node>
-                          <node concept="2qgKlT" id="5T9R7Per6Je" role="2OqNvi">
-                            <ref role="37wK5l" node="5yCuRHcifye" resolve="buildDependencyGraph" />
-                            <node concept="37vLTw" id="5T9R7Per6UJ" role="37wK5m">
-                              <ref role="3cqZAo" node="5yCuRHcimEj" resolve="g" />
-                            </node>
+                          <node concept="3TrcHB" id="55lcM3HE0x2" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                           </node>
+                        </node>
+                        <node concept="37vLTw" id="55lcM3HE16d" role="37wK5m">
+                          <ref role="3cqZAo" node="5yCuRHciqNb" resolve="it" />
+                        </node>
+                        <node concept="Xl_RD" id="55lcM3HE1iI" role="37wK5m">
+                          <property role="Xl_RC" value="imports" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="55lcM3HE25a" role="3cqZAp">
+                    <node concept="2OqwBi" id="55lcM3HE4xI" role="3clFbG">
+                      <node concept="2OqwBi" id="55lcM3HE3IR" role="2Oq$k0">
+                        <node concept="37vLTw" id="55lcM3HE3$x" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5yCuRHciqNb" resolve="it" />
+                        </node>
+                        <node concept="2qgKlT" id="55lcM3HE4fX" role="2OqNvi">
+                          <ref role="37wK5l" node="6clJcrJZN1z" resolve="chunk" />
+                        </node>
+                      </node>
+                      <node concept="2qgKlT" id="55lcM3HE5_R" role="2OqNvi">
+                        <ref role="37wK5l" node="5yCuRHcifye" resolve="buildDependencyGraph" />
+                        <node concept="37vLTw" id="55lcM3HE5Nm" role="37wK5m">
+                          <ref role="3cqZAo" node="5yCuRHcimEj" resolve="g" />
                         </node>
                       </node>
                     </node>
