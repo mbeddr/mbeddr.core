@@ -60,8 +60,9 @@
     <import index="p73q" ref="f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.io(org.apache.commons.io@java_stub)" />
     <import index="jrbx" ref="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.project(jetbrains.mps.project@java_stub)" />
     <import index="79wq" ref="r:ad7435e2-263f-4d16-a250-c987f2fa9599(com.mbeddr.core.qa.structure)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="ln2k" ref="r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung.behavior)" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -5531,6 +5532,169 @@
       <node concept="A3Dl8" id="59HbAIP5xBO" role="3clF45">
         <node concept="3Tqbb2" id="59HbAIP5xBP" role="A3Ik2">
           <ref role="ehGHo" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5yCuRHcfsI8" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getGraph" />
+      <ref role="13i0hy" to="ln2k:5yCuRHcaxm8" resolve="getGraph" />
+      <node concept="3Tm1VV" id="5yCuRHcfsI9" role="1B3o_S" />
+      <node concept="3clFbS" id="5yCuRHcfsIc" role="3clF47">
+        <node concept="3clFbF" id="5yCuRHcz0a0" role="3cqZAp">
+          <node concept="2OqwBi" id="5yCuRHcz09X" role="3clFbG">
+            <node concept="10M0yZ" id="5yCuRHcz09Y" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="5yCuRHcz09Z" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="5yCuRHcz0wq" role="37wK5m">
+                <property role="Xl_RC" value="4" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5yCuRHcixnB" role="3cqZAp">
+          <node concept="3cpWsn" id="5yCuRHcixnC" role="3cpWs9">
+            <property role="TrG5h" value="graph" />
+            <node concept="3uibUv" id="5yCuRHcixnA" role="1tU5fm">
+              <ref role="3uigEE" to="ln2k:5yCuRHcaxfZ" resolve="JNGraph" />
+            </node>
+            <node concept="2ShNRf" id="5yCuRHcixnD" role="33vP2m">
+              <node concept="1pGfFk" id="5yCuRHcixnE" role="2ShVmc">
+                <ref role="37wK5l" to="ln2k:5yCuRHcc8L3" resolve="JNGraph" />
+                <node concept="Xl_RD" id="5yCuRHcixnF" role="37wK5m">
+                  <property role="Xl_RC" value="dependencies" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5yCuRHcimGr" role="3cqZAp">
+          <node concept="BsUDl" id="5yCuRHcimGp" role="3clFbG">
+            <ref role="37wK5l" node="5yCuRHcifye" resolve="buildDependencyGraph" />
+            <node concept="37vLTw" id="5yCuRHcixnG" role="37wK5m">
+              <ref role="3cqZAo" node="5yCuRHcixnC" resolve="graph" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5yCuRHcixrD" role="3cqZAp">
+          <node concept="37vLTw" id="5yCuRHcixrB" role="3clFbG">
+            <ref role="3cqZAo" node="5yCuRHcixnC" resolve="graph" />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="5yCuRHcfsId" role="3clF45">
+        <ref role="3uigEE" to="ln2k:5yCuRHcaxfZ" resolve="JNGraph" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="5yCuRHcifye" role="13h7CS">
+      <property role="TrG5h" value="buildDependencyGraph" />
+      <node concept="3Tm1VV" id="5yCuRHcifyf" role="1B3o_S" />
+      <node concept="3clFbS" id="5yCuRHcifyg" role="3clF47">
+        <node concept="3cpWs8" id="5yCuRHciw5n" role="3cqZAp">
+          <node concept="3cpWsn" id="5yCuRHciw5o" role="3cpWs9">
+            <property role="TrG5h" value="vsource" />
+            <node concept="3uibUv" id="5yCuRHciw5l" role="1tU5fm">
+              <ref role="3uigEE" to="ln2k:5yCuRHcav6I" resolve="JNNode" />
+            </node>
+            <node concept="2OqwBi" id="5yCuRHciw5p" role="33vP2m">
+              <node concept="37vLTw" id="5yCuRHciw5q" role="2Oq$k0">
+                <ref role="3cqZAo" node="5yCuRHcimEj" resolve="g" />
+              </node>
+              <node concept="liA8E" id="5yCuRHciw5r" role="2OqNvi">
+                <ref role="37wK5l" to="ln2k:5yCuRHcaEcV" resolve="createVertex" />
+                <node concept="13iPFW" id="5yCuRHciw5s" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5yCuRHcqE8Q" role="3cqZAp">
+          <node concept="2OqwBi" id="5yCuRHcqE8N" role="3clFbG">
+            <node concept="10M0yZ" id="5yCuRHcqE8O" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="5yCuRHcqE8P" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="5yCuRHcqEBi" role="37wK5m">
+                <node concept="37vLTw" id="5yCuRHcqECZ" role="3uHU7w">
+                  <ref role="3cqZAo" node="5yCuRHciw5o" resolve="vsource" />
+                </node>
+                <node concept="Xl_RD" id="5yCuRHcqEnG" role="3uHU7B">
+                  <property role="Xl_RC" value="vsource: " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5yCuRHcipsV" role="3cqZAp">
+          <node concept="2OqwBi" id="5yCuRHcipIf" role="3clFbG">
+            <node concept="2OqwBi" id="5yCuRHciozq" role="2Oq$k0">
+              <node concept="13iPFW" id="5yCuRHciozr" role="2Oq$k0" />
+              <node concept="2qgKlT" id="5yCuRHciozs" role="2OqNvi">
+                <ref role="37wK5l" node="6clJcrJYPM5" resolve="dependencies" />
+              </node>
+            </node>
+            <node concept="2es0OD" id="5yCuRHciqN7" role="2OqNvi">
+              <node concept="1bVj0M" id="5yCuRHciqN9" role="23t8la">
+                <node concept="3clFbS" id="5yCuRHciqNa" role="1bW5cS">
+                  <node concept="3clFbF" id="5yCuRHcirzI" role="3cqZAp">
+                    <node concept="2OqwBi" id="5yCuRHcirA9" role="3clFbG">
+                      <node concept="37vLTw" id="5yCuRHcirzG" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5yCuRHcimEj" resolve="g" />
+                      </node>
+                      <node concept="liA8E" id="5yCuRHcirPm" role="2OqNvi">
+                        <ref role="37wK5l" to="ln2k:5yCuRHcaH_T" resolve="createEdge" />
+                        <node concept="37vLTw" id="5yCuRHciwET" role="37wK5m">
+                          <ref role="3cqZAo" node="5yCuRHciqNb" resolve="it" />
+                        </node>
+                        <node concept="37vLTw" id="5yCuRHciwOS" role="37wK5m">
+                          <ref role="3cqZAo" node="5yCuRHciw5o" resolve="vsource" />
+                        </node>
+                        <node concept="2OqwBi" id="5T9R7Per5HJ" role="37wK5m">
+                          <node concept="2OqwBi" id="5T9R7Per577" role="2Oq$k0">
+                            <node concept="37vLTw" id="5T9R7Per52n" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5yCuRHciqNb" resolve="it" />
+                            </node>
+                            <node concept="2qgKlT" id="5T9R7Per5uK" role="2OqNvi">
+                              <ref role="37wK5l" node="6clJcrJZN1z" resolve="chunk" />
+                            </node>
+                          </node>
+                          <node concept="2qgKlT" id="5T9R7Per6Je" role="2OqNvi">
+                            <ref role="37wK5l" node="5yCuRHcifye" resolve="buildDependencyGraph" />
+                            <node concept="37vLTw" id="5T9R7Per6UJ" role="37wK5m">
+                              <ref role="3cqZAo" node="5yCuRHcimEj" resolve="g" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="5yCuRHciqNb" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="5yCuRHciqNc" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5yCuRHciy7i" role="3cqZAp">
+          <node concept="37vLTw" id="5yCuRHciy7g" role="3clFbG">
+            <ref role="3cqZAo" node="5yCuRHciw5o" resolve="vsource" />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="5yCuRHcix98" role="3clF45">
+        <ref role="3uigEE" to="ln2k:5yCuRHcav6I" resolve="JNNode" />
+      </node>
+      <node concept="37vLTG" id="5yCuRHcimEj" role="3clF46">
+        <property role="TrG5h" value="g" />
+        <node concept="3uibUv" id="5yCuRHcimEi" role="1tU5fm">
+          <ref role="3uigEE" to="ln2k:5yCuRHcaxfZ" resolve="JNGraph" />
         </node>
       </node>
     </node>
