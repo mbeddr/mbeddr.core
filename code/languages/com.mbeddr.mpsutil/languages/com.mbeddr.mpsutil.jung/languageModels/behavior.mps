@@ -452,6 +452,24 @@
         <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="6oEyA7nnF05" role="jymVt" />
+    <node concept="3clFb_" id="6oEyA7nnGx8" role="jymVt">
+      <property role="TrG5h" value="getNodePtr" />
+      <node concept="3uibUv" id="6oEyA7nnH5R" role="3clF45">
+        <ref role="3uigEE" to="cu2c:~SNodePointer" resolve="SNodePointer" />
+      </node>
+      <node concept="3Tm1VV" id="6oEyA7nnGxb" role="1B3o_S" />
+      <node concept="3clFbS" id="6oEyA7nnGxc" role="3clF47">
+        <node concept="3clFbF" id="6oEyA7nnHio" role="3cqZAp">
+          <node concept="2OqwBi" id="6oEyA7nnHju" role="3clFbG">
+            <node concept="Xjq3P" id="6oEyA7nnHin" role="2Oq$k0" />
+            <node concept="2OwXpG" id="6oEyA7nnHC4" role="2OqNvi">
+              <ref role="2Oxat5" node="5yCuRHcav$5" resolve="nodeptr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="5yCuRHcav7h" role="jymVt" />
     <node concept="3Tm1VV" id="5yCuRHcav6J" role="1B3o_S" />
   </node>
