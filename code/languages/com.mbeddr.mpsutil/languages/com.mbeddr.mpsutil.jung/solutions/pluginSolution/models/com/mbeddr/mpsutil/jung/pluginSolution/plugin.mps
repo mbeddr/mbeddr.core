@@ -128,6 +128,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
+      </concept>
       <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
         <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
         <reference id="1144432896254" name="enumClass" index="1Px2BO" />
@@ -231,6 +234,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -749,6 +753,59 @@
           </node>
         </node>
         <node concept="3clFbH" id="16Fq3WQpbrk" role="3cqZAp" />
+        <node concept="3clFbJ" id="6lxu1nkZweY" role="3cqZAp">
+          <node concept="3clFbS" id="6lxu1nkZwf1" role="3clFbx">
+            <node concept="3clFbF" id="2xRw1E1vInJ" role="3cqZAp">
+              <node concept="2OqwBi" id="2xRw1E1vInG" role="3clFbG">
+                <node concept="10M0yZ" id="2xRw1E1vInH" role="2Oq$k0">
+                  <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                  <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+                </node>
+                <node concept="liA8E" id="2xRw1E1vInI" role="2OqNvi">
+                  <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="Xl_RD" id="2xRw1E1vIyJ" role="37wK5m">
+                    <property role="Xl_RC" value="set transformer" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6lxu1nkZ$Qu" role="3cqZAp">
+              <node concept="2OqwBi" id="6lxu1nkZEB4" role="3clFbG">
+                <node concept="2OqwBi" id="6lxu1nkZ_5T" role="2Oq$k0">
+                  <node concept="37vLTw" id="6lxu1nkZ$Qt" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4mGNV$rd5lR" resolve="vv" />
+                  </node>
+                  <node concept="liA8E" id="6lxu1nkZEul" role="2OqNvi">
+                    <ref role="37wK5l" to="ry6u:~BasicVisualizationServer.getRenderContext():edu.uci.ics.jung.visualization.RenderContext" resolve="getRenderContext" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6lxu1nkZG0p" role="2OqNvi">
+                  <ref role="37wK5l" to="ry6u:~RenderContext.setVertexFillPaintTransformer(org.apache.commons.collections15.Transformer):void" resolve="setVertexFillPaintTransformer" />
+                  <node concept="2OqwBi" id="6lxu1nkZGuW" role="37wK5m">
+                    <node concept="37vLTw" id="6lxu1nkZGhC" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5yCuRHcaCGp" resolve="graph" />
+                    </node>
+                    <node concept="2OwXpG" id="6lxu1nkZGUL" role="2OqNvi">
+                      <ref role="2Oxat5" to="ln2k:6lxu1nkY1ZH" resolve="vertexColorTransformer" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="6lxu1nkZzFr" role="3clFbw">
+            <node concept="10Nm6u" id="6lxu1nkZ$Jl" role="3uHU7w" />
+            <node concept="2OqwBi" id="6lxu1nkZydB" role="3uHU7B">
+              <node concept="37vLTw" id="6lxu1nkZxGl" role="2Oq$k0">
+                <ref role="3cqZAo" node="5yCuRHcaCGp" resolve="graph" />
+              </node>
+              <node concept="2OwXpG" id="6lxu1nkZzql" role="2OqNvi">
+                <ref role="2Oxat5" to="ln2k:6lxu1nkY1ZH" resolve="vertexColorTransformer" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6lxu1nkZrTb" role="3cqZAp" />
         <node concept="3cpWs8" id="1_ot465mwHI" role="3cqZAp">
           <node concept="3cpWsn" id="1_ot465mwHJ" role="3cpWs9">
             <property role="TrG5h" value="dm" />
