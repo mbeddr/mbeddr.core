@@ -13,13 +13,16 @@
           <sourceRoot path="${module}/generator/template" />
         </modelRoot>
       </models>
-      <external-templates />
+      <external-templates>
+        <generator generatorUID="91d766cf-18d1-4f70-95a0-4b4d47c5f176(com.mbeddr.analyses.cbmc.core#6638119994895101710)" />
+      </external-templates>
       <dependencies>
         <dependency reexport="false">42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)</dependency>
         <dependency reexport="false">61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</dependency>
         <dependency reexport="false">3c648e74-bfd0-47ab-a27b-a7ece174dc55(com.mbeddr.analyses.acsl)</dependency>
         <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
         <dependency reexport="false">f47ddd18-d113-4647-938b-1d9b2e1910dc(com.mbeddr.analyses.acsl.cbmc.gen)</dependency>
+        <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>f47ddd18-d113-4647-938b-1d9b2e1910dc(com.mbeddr.analyses.acsl.cbmc.gen)</usedLanguage>
@@ -93,7 +96,22 @@
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
         <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
       </languageVersions>
-      <mapping-priorities />
+      <mapping-priorities>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="714c68b8-d70a-44a6-b267-c8f74accb1a7(com.mbeddr.analyses.acsl.cbmc.gen#1156681608091029189)" />
+            <external-mapping>
+              <all-local-mappings />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="91d766cf-18d1-4f70-95a0-4b4d47c5f176(com.mbeddr.analyses.cbmc.core#6638119994895101710)" />
+            <external-mapping>
+              <all-local-mappings />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+      </mapping-priorities>
     </generator>
   </generators>
   <sourcePath />
