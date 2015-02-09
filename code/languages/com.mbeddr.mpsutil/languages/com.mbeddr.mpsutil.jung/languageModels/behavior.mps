@@ -1224,6 +1224,47 @@
         </node>
       </node>
     </node>
+    <node concept="312cEg" id="3$hq2nXuFsG" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="edgeColor" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="3$hq2nXuFsH" role="1B3o_S" />
+      <node concept="1ajhzC" id="3$hq2nXuFsI" role="1tU5fm">
+        <node concept="3uibUv" id="3$hq2nXuQ3e" role="1ajl9A">
+          <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+        </node>
+        <node concept="3uibUv" id="3$hq2nXuQ1H" role="1ajw0F">
+          <ref role="3uigEE" node="5yCuRHcavmW" resolve="JNEdge" />
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="3$hq2nXuQ57" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="edgeWidth" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="3$hq2nXuQ58" role="1B3o_S" />
+      <node concept="1ajhzC" id="3$hq2nXuQ59" role="1tU5fm">
+        <node concept="10OMs4" id="3$hq2nXuSmg" role="1ajl9A" />
+        <node concept="3uibUv" id="3$hq2nXuQ5b" role="1ajw0F">
+          <ref role="3uigEE" node="5yCuRHcavmW" resolve="JNEdge" />
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="3$hq2nXuRdS" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="edgeDash" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="3$hq2nXuRdT" role="1B3o_S" />
+      <node concept="1ajhzC" id="3$hq2nXuRdU" role="1tU5fm">
+        <node concept="10Oyi0" id="3$hq2nXuSlV" role="1ajl9A" />
+        <node concept="3uibUv" id="3$hq2nXuRdW" role="1ajw0F">
+          <ref role="3uigEE" node="5yCuRHcavmW" resolve="JNEdge" />
+        </node>
+      </node>
+    </node>
     <node concept="312cEg" id="UgXl$mRBPm" role="jymVt">
       <property role="TrG5h" value="layout" />
       <node concept="3Tm6S6" id="UgXl$mRBPn" role="1B3o_S" />
