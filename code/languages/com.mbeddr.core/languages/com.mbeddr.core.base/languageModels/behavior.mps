@@ -5,8 +5,6 @@
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
-    <use id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -56,12 +54,7 @@
     <import index="39al" ref="r:5bc020f2-590a-4818-ae68-fa483b92486f(com.mbeddr.mpsutil.serializer.xml.serializer)" />
     <import index="a2je" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.image(JDK/java.awt.image@java_stub)" />
     <import index="srng" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
-    <import index="lgzw" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.regex(JDK/java.util.regex@java_stub)" />
-    <import index="p73q" ref="f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.io(org.apache.commons.io@java_stub)" />
-    <import index="jrbx" ref="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.project(jetbrains.mps.project@java_stub)" />
-    <import index="79wq" ref="r:ad7435e2-263f-4d16-a250-c987f2fa9599(com.mbeddr.core.qa.structure)" />
     <import index="ln2k" ref="r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung.behavior)" />
-    <import index="cl95" ref="1338ba73-5059-479b-a929-de86597a62b8/f:java_stub#1338ba73-5059-479b-a929-de86597a62b8#org.apache.commons.collections15(com.mbeddr.mpsutil.jung.pluginSolution/org.apache.commons.collections15@java_stub)" />
     <import index="ar19" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.geom(JDK/java.awt.geom@java_stub)" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
@@ -5571,54 +5564,31 @@
                     <ref role="37wK5l" to="ln2k:3diqXd_4QjT" resolve="JNSpringLayout" />
                     <node concept="1bVj0M" id="3diqXd_6uWA" role="37wK5m">
                       <node concept="3clFbS" id="3diqXd_6uWC" role="1bW5cS">
-                        <node concept="3cpWs8" id="4Y8ZcE_K9EM" role="3cqZAp">
-                          <node concept="3cpWsn" id="4Y8ZcE_K9EN" role="3cpWs9">
-                            <property role="TrG5h" value="w" />
-                            <node concept="10Oyi0" id="4Y8ZcE_K9EG" role="1tU5fm" />
-                            <node concept="1eOMI4" id="1UAns39Z08y" role="33vP2m">
-                              <node concept="10QFUN" id="1UAns39Z08z" role="1eOMHV">
-                                <node concept="1eOMI4" id="1UAns39Z08$" role="10QFUP">
-                                  <node concept="17qRlL" id="1UAns39Z08r" role="1eOMHV">
-                                    <node concept="3cmrfG" id="1UAns39Z08s" role="3uHU7w">
-                                      <property role="3cmrfH" value="30" />
+                        <node concept="3clFbF" id="5mfd1_i1LWJ" role="3cqZAp">
+                          <node concept="1eOMI4" id="1UAns39Z08y" role="3clFbG">
+                            <node concept="10QFUN" id="1UAns39Z08z" role="1eOMHV">
+                              <node concept="1eOMI4" id="1UAns39Z08$" role="10QFUP">
+                                <node concept="17qRlL" id="1UAns39Z08r" role="1eOMHV">
+                                  <node concept="3cmrfG" id="1UAns39Z08s" role="3uHU7w">
+                                    <property role="3cmrfH" value="30" />
+                                  </node>
+                                  <node concept="2OqwBi" id="1UAns39Z08t" role="3uHU7B">
+                                    <node concept="2OqwBi" id="1UAns39Z08u" role="2Oq$k0">
+                                      <node concept="37vLTw" id="1UAns39Z08v" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="3diqXd_6vMD" resolve="edge" />
+                                      </node>
+                                      <node concept="liA8E" id="1UAns39Z08w" role="2OqNvi">
+                                        <ref role="37wK5l" to="ln2k:5yCuRHcbQeE" resolve="to" />
+                                      </node>
                                     </node>
-                                    <node concept="2OqwBi" id="1UAns39Z08t" role="3uHU7B">
-                                      <node concept="2OqwBi" id="1UAns39Z08u" role="2Oq$k0">
-                                        <node concept="37vLTw" id="1UAns39Z08v" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="3diqXd_6vMD" resolve="edge" />
-                                        </node>
-                                        <node concept="liA8E" id="1UAns39Z08w" role="2OqNvi">
-                                          <ref role="37wK5l" to="ln2k:5yCuRHcbQeE" resolve="to" />
-                                        </node>
-                                      </node>
-                                      <node concept="liA8E" id="1UAns39Z08x" role="2OqNvi">
-                                        <ref role="37wK5l" to="ln2k:113XM8cbGfL" resolve="relativeEdgeNumber" />
-                                      </node>
+                                    <node concept="liA8E" id="1UAns39Z08x" role="2OqNvi">
+                                      <ref role="37wK5l" to="ln2k:113XM8cbGfL" resolve="relativeEdgeNumber" />
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="10Oyi0" id="1UAns39Z08q" role="10QFUM" />
                               </node>
+                              <node concept="10Oyi0" id="1UAns39Z08q" role="10QFUM" />
                             </node>
-                          </node>
-                        </node>
-                        <node concept="3clFbF" id="4Y8ZcE_KsMQ" role="3cqZAp">
-                          <node concept="2OqwBi" id="4Y8ZcE_KsMN" role="3clFbG">
-                            <node concept="10M0yZ" id="4Y8ZcE_KsMO" role="2Oq$k0">
-                              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
-                            </node>
-                            <node concept="liA8E" id="4Y8ZcE_KsMP" role="2OqNvi">
-                              <ref role="37wK5l" to="fxg7:~PrintStream.println(int):void" resolve="println" />
-                              <node concept="37vLTw" id="4Y8ZcE_KtDx" role="37wK5m">
-                                <ref role="3cqZAo" node="4Y8ZcE_K9EN" resolve="w" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3clFbF" id="3diqXd_6z2v" role="3cqZAp">
-                          <node concept="37vLTw" id="4Y8ZcE_K9EX" role="3clFbG">
-                            <ref role="3cqZAo" node="4Y8ZcE_K9EN" resolve="w" />
                           </node>
                         </node>
                       </node>
@@ -5774,6 +5744,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="5UEj3dMs$qm" role="3cqZAp" />
         <node concept="3clFbF" id="5yCuRHcimGr" role="3cqZAp">
           <node concept="BsUDl" id="5yCuRHcimGp" role="3clFbG">
             <ref role="37wK5l" node="5yCuRHcifye" resolve="buildDependencyGraph" />
