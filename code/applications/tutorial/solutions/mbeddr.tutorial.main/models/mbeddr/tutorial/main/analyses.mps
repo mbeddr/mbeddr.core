@@ -986,17 +986,17 @@
     </node>
   </node>
   <node concept="3uEX16" id="3sPnzfj1gkn">
-    <property role="2lelRm" value="false" />
+    <property role="2lelRm" value="true" />
     <property role="2l50Lc" value="false" />
     <property role="2l50Ka" value="none" />
     <property role="2l50Km" value="none" />
     <property role="2lUGeZ" value="true" />
     <property role="2lUGdP" value="false" />
-    <property role="2lUHrg" value="25" />
+    <property role="2lUHrg" value="11" />
     <property role="2lUGe1" value="true" />
     <property role="2lUGbD" value="none" />
     <property role="2lUGcN" value="false" />
-    <property role="2l50Mm" value="false" />
+    <property role="2l50Mm" value="true" />
     <property role="TrG5h" value="FlightAnalyzer" />
     <node concept="3GEVxB" id="5dSPU6qbPli" role="3W6d8T">
       <ref role="3GEb4d" node="3iuCLRa88fo" resolve="FlightAnalyzerVerification" />

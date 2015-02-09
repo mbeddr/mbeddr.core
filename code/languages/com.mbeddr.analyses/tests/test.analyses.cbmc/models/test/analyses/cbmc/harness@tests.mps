@@ -1736,5 +1736,78 @@
       </node>
     </node>
   </node>
+  <node concept="1lH9Xt" id="615cGN$npkN">
+    <property role="TrG5h" value="TypesWithPhysicalUnits" />
+    <node concept="1LZb2c" id="615cGN$npkO" role="1SL9yI">
+      <property role="TrG5h" value="testPrimitiveTypesSimpleUnits" />
+      <node concept="3cqZAl" id="615cGN$npkP" role="3clF45" />
+      <node concept="3clFbS" id="615cGN$npkQ" role="3clF47">
+        <node concept="3cpWs8" id="615cGN$npkR" role="3cqZAp">
+          <node concept="3cpWsn" id="615cGN$npkS" role="3cpWs9">
+            <property role="TrG5h" value="results" />
+            <node concept="_YKpA" id="615cGN$npkT" role="1tU5fm">
+              <node concept="3uibUv" id="615cGN$npkU" role="_ZDj9">
+                <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+              </node>
+            </node>
+            <node concept="NRdvd" id="615cGN$nw3o" role="33vP2m">
+              <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
+              <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+              <node concept="BaHAS" id="615cGN$nw3p" role="37wK5m">
+                <property role="BaBD8" value="hppc" />
+                <property role="BaHAW" value="harness" />
+                <property role="BaGAP" value="" />
+              </node>
+              <node concept="Xl_RD" id="615cGN$nw3q" role="37wK5m">
+                <property role="Xl_RC" value="types_with_physicalunits" />
+              </node>
+              <node concept="Xl_RD" id="615cGN$nw3r" role="37wK5m">
+                <property role="Xl_RC" value="simpleUnitsPrimitiveTypes" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="615cGN$nwcQ" role="3cqZAp" />
+        <node concept="3clFbF" id="615cGN$nxme" role="3cqZAp">
+          <node concept="2YIFZM" id="615cGN$nx$F" role="3clFbG">
+            <ref role="37wK5l" to="fxhk:17FqOSBEPPO" resolve="prettyPrintResults" />
+            <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+            <node concept="37vLTw" id="615cGN$ny1Y" role="37wK5m">
+              <ref role="3cqZAo" node="615cGN$npkS" resolve="results" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="615cGN$npkZ" role="3cqZAp" />
+        <node concept="3cpWs8" id="615cGN$npl0" role="3cqZAp">
+          <node concept="3cpWsn" id="615cGN$npl1" role="3cpWs9">
+            <property role="TrG5h" value="res0" />
+            <node concept="3uibUv" id="615cGN$npl2" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="615cGN$npl3" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <node concept="37vLTw" id="615cGN$npl4" role="37wK5m">
+                <ref role="3cqZAo" node="615cGN$npkS" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="615cGN$npl5" role="37wK5m">
+                <property role="Xl_RC" value="Assert: x &gt; 1 m &amp;&amp; x &lt; 22 m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="615cGN$npl6" role="3cqZAp">
+          <node concept="2OqwBi" id="615cGN$npl7" role="3vwVQn">
+            <node concept="3cpWsa" id="615cGN$npl8" role="2Oq$k0">
+              <ref role="3cqZAo" node="615cGN$npl1" resolve="res0" />
+            </node>
+            <node concept="liA8E" id="615cGN$npl9" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

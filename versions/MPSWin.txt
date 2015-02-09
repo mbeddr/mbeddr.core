@@ -1,1 +1,1 @@
-http://download.jetbrains.com/mps/31/MPS-3.1.5.exe
+http://download.jetbrains.com/mps/32/MPS-3.2-RC1-139.1717.exe
