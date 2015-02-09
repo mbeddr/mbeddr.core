@@ -297,6 +297,7 @@
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
+      <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
       <concept id="8974276187400348183" name="jetbrains.mps.lang.access.structure.ExecuteWriteActionStatement" flags="nn" index="1QHqEM" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -358,6 +359,13 @@
     <property role="TrG5h" value="GraphViewer" />
     <property role="2XNbzY" value="Graph Viewer" />
     <property role="2bmUCM" value="RIGHT" />
+    <node concept="2BZ0e9" id="3t8MFY9FdIt" role="2XNbBz">
+      <property role="TrG5h" value="provider" />
+      <node concept="3Tm6S6" id="3t8MFY9FdIu" role="1B3o_S" />
+      <node concept="3Tqbb2" id="3t8MFY9Fk8s" role="1tU5fm">
+        <ref role="ehGHo" to="10jo:5yCuRHcawFz" resolve="IJGraphProvider" />
+      </node>
+    </node>
     <node concept="2BZ0e9" id="5yCuRHcaCGD" role="2XNbBz">
       <property role="TrG5h" value="graph" />
       <node concept="3Tm6S6" id="5yCuRHcaCGE" role="1B3o_S" />
@@ -553,6 +561,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3t8MFY9FmXl" role="3cqZAp">
+          <node concept="37vLTI" id="3t8MFY9Foi7" role="3clFbG">
+            <node concept="37vLTw" id="3t8MFY9Fo$s" role="37vLTx">
+              <ref role="3cqZAo" node="3t8MFY9FkkF" resolve="provider" />
+            </node>
+            <node concept="2OqwBi" id="3t8MFY9Fn94" role="37vLTJ">
+              <node concept="2WthIp" id="3t8MFY9FmXj" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="3t8MFY9Fo4r" role="2OqNvi">
+                <ref role="2WH_rO" node="3t8MFY9FdIt" resolve="provider" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="7BlpHgbxcvS" role="3cqZAp" />
         <node concept="3cpWs8" id="464XNr7EkiJ" role="3cqZAp">
           <node concept="3cpWsn" id="464XNr7EkiK" role="3cpWs9">
@@ -575,7 +596,7 @@
           <node concept="2OqwBi" id="7P$SxBYKuTR" role="3clFbG">
             <node concept="2WthIp" id="7P$SxBYKuTU" role="2Oq$k0" />
             <node concept="2XshWL" id="7P$SxBYKuTW" role="2OqNvi">
-              <ref role="2WH_rO" node="7P$SxBYKdAH" resolve="setGraph" />
+              <ref role="2WH_rO" node="7P$SxBYKdAH" resolve="updateGraph" />
               <node concept="37vLTw" id="7P$SxBYKvs1" role="2XxRq1">
                 <ref role="3cqZAo" node="5yCuRHcaCGp" resolve="graph" />
               </node>
@@ -778,6 +799,12 @@
       </node>
       <node concept="3cqZAl" id="5yCuRHcaCAr" role="3clF45" />
       <node concept="3Tm1VV" id="5yCuRHcaCzs" role="1B3o_S" />
+      <node concept="37vLTG" id="3t8MFY9FkkF" role="3clF46">
+        <property role="TrG5h" value="provider" />
+        <node concept="3Tqbb2" id="3t8MFY9Flvd" role="1tU5fm">
+          <ref role="ehGHo" to="10jo:5yCuRHcawFz" resolve="IJGraphProvider" />
+        </node>
+      </node>
       <node concept="37vLTG" id="5yCuRHcaCGp" role="3clF46">
         <property role="TrG5h" value="graph" />
         <property role="3TUv4t" value="true" />
@@ -793,7 +820,7 @@
       </node>
     </node>
     <node concept="2XrIbr" id="7P$SxBYKdAH" role="2XNbBy">
-      <property role="TrG5h" value="setGraph" />
+      <property role="TrG5h" value="updateGraph" />
       <node concept="3clFbS" id="7P$SxBYKdAI" role="3clF47">
         <node concept="3clFbF" id="7P$SxBYKdAJ" role="3cqZAp">
           <node concept="37vLTI" id="7P$SxBYKdAK" role="3clFbG">
@@ -3565,7 +3592,7 @@
                               <ref role="32nkFo" node="4mGNV$r8Mai" resolve="GraphViewer" />
                             </node>
                             <node concept="2XshWL" id="7P$SxBYKKTc" role="2OqNvi">
-                              <ref role="2WH_rO" node="7P$SxBYKdAH" resolve="setGraph" />
+                              <ref role="2WH_rO" node="7P$SxBYKdAH" resolve="updateGraph" />
                               <node concept="2OqwBi" id="7P$SxBYKL18" role="2XxRq1">
                                 <node concept="2WthIp" id="7P$SxBYKKYD" role="2Oq$k0" />
                                 <node concept="2BZ7hE" id="7P$SxBYKLri" role="2OqNvi">
@@ -3611,65 +3638,102 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="5mfd1_i38Sy" role="3cqZAp">
-          <node concept="3cpWsn" id="5mfd1_i38Sz" role="3cpWs9">
-            <property role="TrG5h" value="resetButton" />
-            <node concept="3uibUv" id="5mfd1_i38S$" role="1tU5fm">
+        <node concept="3clFbH" id="3t8MFY9EmfH" role="3cqZAp" />
+        <node concept="3clFbH" id="3t8MFY9Emmh" role="3cqZAp" />
+        <node concept="3cpWs8" id="3t8MFY9Em_5" role="3cqZAp">
+          <node concept="3cpWsn" id="3t8MFY9Em_6" role="3cpWs9">
+            <property role="TrG5h" value="refreshButton" />
+            <node concept="3uibUv" id="3t8MFY9Em_7" role="1tU5fm">
               <ref role="3uigEE" to="dbrf:~JButton" resolve="JButton" />
             </node>
-            <node concept="2ShNRf" id="5mfd1_i39xi" role="33vP2m">
-              <node concept="1pGfFk" id="5mfd1_i39vD" role="2ShVmc">
+            <node concept="2ShNRf" id="3t8MFY9Em_8" role="33vP2m">
+              <node concept="1pGfFk" id="3t8MFY9Em_9" role="2ShVmc">
                 <ref role="37wK5l" to="dbrf:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
-                <node concept="Xl_RD" id="5mfd1_i3n8z" role="37wK5m">
-                  <property role="Xl_RC" value="Reset" />
+                <node concept="Xl_RD" id="3t8MFY9Em_a" role="37wK5m">
+                  <property role="Xl_RC" value="Refresh" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5mfd1_i3o2c" role="3cqZAp">
-          <node concept="2OqwBi" id="5mfd1_i3owz" role="3clFbG">
-            <node concept="37vLTw" id="5mfd1_i3o2a" role="2Oq$k0">
-              <ref role="3cqZAo" node="5mfd1_i38Sz" resolve="resetButton" />
+        <node concept="3clFbF" id="3t8MFY9Em_b" role="3cqZAp">
+          <node concept="2OqwBi" id="3t8MFY9Em_c" role="3clFbG">
+            <node concept="37vLTw" id="3t8MFY9Em_d" role="2Oq$k0">
+              <ref role="3cqZAo" node="3t8MFY9Em_6" resolve="refreshButton" />
             </node>
-            <node concept="liA8E" id="5mfd1_i3ta0" role="2OqNvi">
+            <node concept="liA8E" id="3t8MFY9Em_e" role="2OqNvi">
               <ref role="37wK5l" to="dbrf:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
-              <node concept="2ShNRf" id="5mfd1_i3tb4" role="37wK5m">
-                <node concept="YeOm9" id="5mfd1_i3uai" role="2ShVmc">
-                  <node concept="1Y3b0j" id="5mfd1_i3ual" role="YeSDq">
+              <node concept="2ShNRf" id="3t8MFY9Em_f" role="37wK5m">
+                <node concept="YeOm9" id="3t8MFY9Em_g" role="2ShVmc">
+                  <node concept="1Y3b0j" id="3t8MFY9Em_h" role="YeSDq">
                     <property role="2bfB8j" value="true" />
                     <ref role="1Y3XeK" to="8q6x:~ActionListener" resolve="ActionListener" />
                     <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
-                    <node concept="3Tm1VV" id="5mfd1_i3uam" role="1B3o_S" />
-                    <node concept="3clFb_" id="5mfd1_i3uan" role="jymVt">
+                    <node concept="3Tm1VV" id="3t8MFY9Em_i" role="1B3o_S" />
+                    <node concept="3clFb_" id="3t8MFY9Em_j" role="jymVt">
                       <property role="1EzhhJ" value="false" />
                       <property role="TrG5h" value="actionPerformed" />
                       <property role="DiZV1" value="false" />
                       <property role="IEkAT" value="false" />
-                      <node concept="3Tm1VV" id="5mfd1_i3uao" role="1B3o_S" />
-                      <node concept="3cqZAl" id="5mfd1_i3uaq" role="3clF45" />
-                      <node concept="37vLTG" id="5mfd1_i3uar" role="3clF46">
+                      <node concept="3Tm1VV" id="3t8MFY9Em_k" role="1B3o_S" />
+                      <node concept="3cqZAl" id="3t8MFY9Em_l" role="3clF45" />
+                      <node concept="37vLTG" id="3t8MFY9Em_m" role="3clF46">
                         <property role="TrG5h" value="p0" />
-                        <node concept="3uibUv" id="5mfd1_i3uas" role="1tU5fm">
+                        <node concept="3uibUv" id="3t8MFY9Em_n" role="1tU5fm">
                           <ref role="3uigEE" to="8q6x:~ActionEvent" resolve="ActionEvent" />
                         </node>
                       </node>
-                      <node concept="3clFbS" id="5mfd1_i3uat" role="3clF47">
-                        <node concept="3clFbF" id="5mfd1_i3uuS" role="3cqZAp">
-                          <node concept="2OqwBi" id="5mfd1_i3uw9" role="3clFbG">
-                            <node concept="2WthIp" id="5mfd1_i3uuR" role="2Oq$k0" />
-                            <node concept="2XshWL" id="5mfd1_i3uTX" role="2OqNvi">
-                              <ref role="2WH_rO" node="5yCuRHcaBDm" resolve="setNewGraph" />
-                              <node concept="2OqwBi" id="5mfd1_i3uYC" role="2XxRq1">
-                                <node concept="2WthIp" id="5mfd1_i3uW3" role="2Oq$k0" />
-                                <node concept="2BZ7hE" id="5mfd1_i3voS" role="2OqNvi">
-                                  <ref role="2WH_rO" node="5yCuRHcaCGD" resolve="graph" />
+                      <node concept="3clFbS" id="3t8MFY9Em_o" role="3clF47">
+                        <node concept="1QHqEK" id="3cwnPDZAQwx" role="3cqZAp">
+                          <node concept="1QHqEC" id="3cwnPDZAQwz" role="1QHqEI">
+                            <node concept="3clFbS" id="3cwnPDZAQw_" role="1bW5cS">
+                              <node concept="3clFbF" id="3t8MFY9EEHn" role="3cqZAp">
+                                <node concept="37vLTI" id="3t8MFY9GAJ8" role="3clFbG">
+                                  <node concept="2OqwBi" id="3t8MFY9GBu9" role="37vLTx">
+                                    <node concept="2OqwBi" id="3t8MFY9GANs" role="2Oq$k0">
+                                      <node concept="2WthIp" id="3t8MFY9GAKO" role="2Oq$k0" />
+                                      <node concept="2BZ7hE" id="3t8MFY9GBdM" role="2OqNvi">
+                                        <ref role="2WH_rO" node="3t8MFY9FdIt" resolve="provider" />
+                                      </node>
+                                    </node>
+                                    <node concept="2qgKlT" id="3t8MFY9GBN7" role="2OqNvi">
+                                      <ref role="37wK5l" to="ln2k:5yCuRHcaxm8" resolve="getGraph" />
+                                    </node>
+                                  </node>
+                                  <node concept="2OqwBi" id="3t8MFY9EF3j" role="37vLTJ">
+                                    <node concept="2WthIp" id="3t8MFY9EEHl" role="2Oq$k0" />
+                                    <node concept="2BZ7hE" id="3t8MFY9EFt7" role="2OqNvi">
+                                      <ref role="2WH_rO" node="5yCuRHcaCGD" resolve="graph" />
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
-                              <node concept="2OqwBi" id="5mfd1_i3vvs" role="2XxRq1">
-                                <node concept="2WthIp" id="5mfd1_i3vs_" role="2Oq$k0" />
-                                <node concept="2BZ7hE" id="5mfd1_i3vTX" role="2OqNvi">
-                                  <ref role="2WH_rO" node="6oEyA7no7kr" resolve="project" />
+                              <node concept="3clFbF" id="3t8MFY9Em_p" role="3cqZAp">
+                                <node concept="2OqwBi" id="3t8MFY9Em_q" role="3clFbG">
+                                  <node concept="2WthIp" id="3t8MFY9Em_r" role="2Oq$k0" />
+                                  <node concept="2XshWL" id="3t8MFY9Em_s" role="2OqNvi">
+                                    <ref role="2WH_rO" node="7P$SxBYKdAH" resolve="updateGraph" />
+                                    <node concept="2OqwBi" id="3t8MFY9Em_t" role="2XxRq1">
+                                      <node concept="2WthIp" id="3t8MFY9Em_u" role="2Oq$k0" />
+                                      <node concept="2BZ7hE" id="3t8MFY9Em_v" role="2OqNvi">
+                                        <ref role="2WH_rO" node="5yCuRHcaCGD" resolve="graph" />
+                                      </node>
+                                    </node>
+                                    <node concept="2OqwBi" id="3t8MFY9Em_w" role="2XxRq1">
+                                      <node concept="2WthIp" id="3t8MFY9Em_x" role="2Oq$k0" />
+                                      <node concept="2BZ7hE" id="3t8MFY9Em_y" role="2OqNvi">
+                                        <ref role="2WH_rO" node="6oEyA7no7kr" resolve="project" />
+                                      </node>
+                                    </node>
+                                    <node concept="2OqwBi" id="3t8MFY9Evvk" role="2XxRq1">
+                                      <node concept="2WthIp" id="3t8MFY9Evvl" role="2Oq$k0">
+                                        <ref role="32nkFo" node="4mGNV$r8Mai" resolve="GraphViewer" />
+                                      </node>
+                                      <node concept="2XshWL" id="3t8MFY9Evvm" role="2OqNvi">
+                                        <ref role="2WH_rO" node="oylM8o_QqA" resolve="getSelectedLayout" />
+                                      </node>
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -3683,19 +3747,20 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5mfd1_i3wNf" role="3cqZAp">
-          <node concept="2OqwBi" id="5mfd1_i3xin" role="3clFbG">
-            <node concept="37vLTw" id="5mfd1_i3wNd" role="2Oq$k0">
+        <node concept="3clFbF" id="3t8MFY9Em_z" role="3cqZAp">
+          <node concept="2OqwBi" id="3t8MFY9Em_$" role="3clFbG">
+            <node concept="37vLTw" id="3t8MFY9Em__" role="2Oq$k0">
               <ref role="3cqZAo" node="4OYqP6zZePs" resolve="buttonPanel" />
             </node>
-            <node concept="liA8E" id="5mfd1_i3zB2" role="2OqNvi">
+            <node concept="liA8E" id="3t8MFY9Em_A" role="2OqNvi">
               <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
-              <node concept="37vLTw" id="5mfd1_i3zD7" role="37wK5m">
-                <ref role="3cqZAo" node="5mfd1_i38Sz" resolve="resetButton" />
+              <node concept="37vLTw" id="3t8MFY9Em_B" role="37wK5m">
+                <ref role="3cqZAo" node="3t8MFY9Em_6" resolve="refreshButton" />
               </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="3t8MFY9EmsQ" role="3cqZAp" />
         <node concept="3clFbH" id="rSPb5BvBAG" role="3cqZAp" />
         <node concept="3cpWs8" id="rSPb5BvE54" role="3cqZAp">
           <node concept="3cpWsn" id="rSPb5BvE55" role="3cpWs9">
@@ -3817,7 +3882,7 @@
                           <node concept="2OqwBi" id="6ZglzKtDbXc" role="3clFbG">
                             <node concept="2WthIp" id="6ZglzKtDbXd" role="2Oq$k0" />
                             <node concept="2XshWL" id="6ZglzKtDbXe" role="2OqNvi">
-                              <ref role="2WH_rO" node="7P$SxBYKdAH" resolve="setGraph" />
+                              <ref role="2WH_rO" node="7P$SxBYKdAH" resolve="updateGraph" />
                               <node concept="2OqwBi" id="6ZglzKtDbXf" role="2XxRq1">
                                 <node concept="2WthIp" id="6ZglzKtDbXg" role="2Oq$k0" />
                                 <node concept="2BZ7hE" id="6ZglzKtDbXh" role="2OqNvi">
@@ -3957,7 +4022,7 @@
                           <node concept="2OqwBi" id="6ZglzKtD2kM" role="3clFbG">
                             <node concept="2WthIp" id="6ZglzKtD2kN" role="2Oq$k0" />
                             <node concept="2XshWL" id="6ZglzKtD2kO" role="2OqNvi">
-                              <ref role="2WH_rO" node="7P$SxBYKdAH" resolve="setGraph" />
+                              <ref role="2WH_rO" node="7P$SxBYKdAH" resolve="updateGraph" />
                               <node concept="2OqwBi" id="6ZglzKtD2kP" role="2XxRq1">
                                 <node concept="2WthIp" id="6ZglzKtD2kQ" role="2Oq$k0" />
                                 <node concept="2BZ7hE" id="6ZglzKtD2kR" role="2OqNvi">
@@ -4210,6 +4275,99 @@
           </node>
         </node>
         <node concept="3clFbH" id="40J$2Dk3$N_" role="3cqZAp" />
+        <node concept="3clFbH" id="3t8MFY9Ejld" role="3cqZAp" />
+        <node concept="3cpWs8" id="5mfd1_i38Sy" role="3cqZAp">
+          <node concept="3cpWsn" id="5mfd1_i38Sz" role="3cpWs9">
+            <property role="TrG5h" value="resetButton" />
+            <node concept="3uibUv" id="5mfd1_i38S$" role="1tU5fm">
+              <ref role="3uigEE" to="dbrf:~JButton" resolve="JButton" />
+            </node>
+            <node concept="2ShNRf" id="5mfd1_i39xi" role="33vP2m">
+              <node concept="1pGfFk" id="5mfd1_i39vD" role="2ShVmc">
+                <ref role="37wK5l" to="dbrf:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
+                <node concept="Xl_RD" id="5mfd1_i3n8z" role="37wK5m">
+                  <property role="Xl_RC" value="Reset" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5mfd1_i3o2c" role="3cqZAp">
+          <node concept="2OqwBi" id="5mfd1_i3owz" role="3clFbG">
+            <node concept="37vLTw" id="5mfd1_i3o2a" role="2Oq$k0">
+              <ref role="3cqZAo" node="5mfd1_i38Sz" resolve="resetButton" />
+            </node>
+            <node concept="liA8E" id="5mfd1_i3ta0" role="2OqNvi">
+              <ref role="37wK5l" to="dbrf:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+              <node concept="2ShNRf" id="5mfd1_i3tb4" role="37wK5m">
+                <node concept="YeOm9" id="5mfd1_i3uai" role="2ShVmc">
+                  <node concept="1Y3b0j" id="5mfd1_i3ual" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <ref role="1Y3XeK" to="8q6x:~ActionListener" resolve="ActionListener" />
+                    <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+                    <node concept="3Tm1VV" id="5mfd1_i3uam" role="1B3o_S" />
+                    <node concept="3clFb_" id="5mfd1_i3uan" role="jymVt">
+                      <property role="1EzhhJ" value="false" />
+                      <property role="TrG5h" value="actionPerformed" />
+                      <property role="DiZV1" value="false" />
+                      <property role="IEkAT" value="false" />
+                      <node concept="3Tm1VV" id="5mfd1_i3uao" role="1B3o_S" />
+                      <node concept="3cqZAl" id="5mfd1_i3uaq" role="3clF45" />
+                      <node concept="37vLTG" id="5mfd1_i3uar" role="3clF46">
+                        <property role="TrG5h" value="p0" />
+                        <node concept="3uibUv" id="5mfd1_i3uas" role="1tU5fm">
+                          <ref role="3uigEE" to="8q6x:~ActionEvent" resolve="ActionEvent" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="5mfd1_i3uat" role="3clF47">
+                        <node concept="3clFbF" id="5mfd1_i3uuS" role="3cqZAp">
+                          <node concept="2OqwBi" id="5mfd1_i3uw9" role="3clFbG">
+                            <node concept="2WthIp" id="5mfd1_i3uuR" role="2Oq$k0" />
+                            <node concept="2XshWL" id="5mfd1_i3uTX" role="2OqNvi">
+                              <ref role="2WH_rO" node="5yCuRHcaBDm" resolve="setNewGraph" />
+                              <node concept="2OqwBi" id="3t8MFY9FoEz" role="2XxRq1">
+                                <node concept="2WthIp" id="3t8MFY9FoC3" role="2Oq$k0" />
+                                <node concept="2BZ7hE" id="3t8MFY9Fpi2" role="2OqNvi">
+                                  <ref role="2WH_rO" node="3t8MFY9FdIt" resolve="provider" />
+                                </node>
+                              </node>
+                              <node concept="2OqwBi" id="5mfd1_i3uYC" role="2XxRq1">
+                                <node concept="2WthIp" id="5mfd1_i3uW3" role="2Oq$k0" />
+                                <node concept="2BZ7hE" id="5mfd1_i3voS" role="2OqNvi">
+                                  <ref role="2WH_rO" node="5yCuRHcaCGD" resolve="graph" />
+                                </node>
+                              </node>
+                              <node concept="2OqwBi" id="5mfd1_i3vvs" role="2XxRq1">
+                                <node concept="2WthIp" id="5mfd1_i3vs_" role="2Oq$k0" />
+                                <node concept="2BZ7hE" id="5mfd1_i3vTX" role="2OqNvi">
+                                  <ref role="2WH_rO" node="6oEyA7no7kr" resolve="project" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5mfd1_i3wNf" role="3cqZAp">
+          <node concept="2OqwBi" id="5mfd1_i3xin" role="3clFbG">
+            <node concept="37vLTw" id="5mfd1_i3wNd" role="2Oq$k0">
+              <ref role="3cqZAo" node="4OYqP6zZePs" resolve="buttonPanel" />
+            </node>
+            <node concept="liA8E" id="5mfd1_i3zB2" role="2OqNvi">
+              <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <node concept="37vLTw" id="5mfd1_i3zD7" role="37wK5m">
+                <ref role="3cqZAo" node="5mfd1_i38Sz" resolve="resetButton" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3t8MFY9Ek1e" role="3cqZAp" />
         <node concept="3clFbH" id="40J$2Dk3$T4" role="3cqZAp" />
         <node concept="3clFbH" id="40J$2Dk3$Y$" role="3cqZAp" />
         <node concept="3clFbF" id="1jxQo4qfxnF" role="3cqZAp">
@@ -4343,6 +4501,12 @@
             </node>
             <node concept="2XshWL" id="5yCuRHct76u" role="2OqNvi">
               <ref role="2WH_rO" node="5yCuRHcaBDm" resolve="setNewGraph" />
+              <node concept="2OqwBi" id="3t8MFY9FqB8" role="2XxRq1">
+                <node concept="2WthIp" id="3t8MFY9FqBb" role="2Oq$k0" />
+                <node concept="3gHZIF" id="3t8MFY9FqBd" role="2OqNvi">
+                  <ref role="2WH_rO" node="5yCuRHca$Lq" resolve="provider" />
+                </node>
+              </node>
               <node concept="2OqwBi" id="5T9R7PeqHke" role="2XxRq1">
                 <node concept="2OqwBi" id="5yCuRHct77_" role="2Oq$k0">
                   <node concept="2WthIp" id="5yCuRHct77C" role="2Oq$k0" />

@@ -190,7 +190,10 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -2656,6 +2659,32 @@
       <node concept="3Tm1VV" id="1mVSOo2RxiX" role="1B3o_S" />
       <node concept="3uibUv" id="3iB9oFXceHV" role="3clF45">
         <ref role="3uigEE" node="3iB9oFXaXFf" resolve="JNHighlightMode" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3t8MFY9EQKX" role="jymVt" />
+    <node concept="3clFb_" id="3t8MFY9ETdy" role="jymVt">
+      <property role="TrG5h" value="refresh" />
+      <node concept="3uibUv" id="3t8MFY9EUpJ" role="3clF45">
+        <ref role="3uigEE" node="5yCuRHcaxfZ" resolve="JNGraph" />
+      </node>
+      <node concept="3Tm1VV" id="3t8MFY9ETd_" role="1B3o_S" />
+      <node concept="3clFbS" id="3t8MFY9ETdA" role="3clF47">
+        <node concept="3cpWs6" id="3t8MFY9EZCs" role="3cqZAp">
+          <node concept="2OqwBi" id="3t8MFY9F1eW" role="3cqZAk">
+            <node concept="37vLTw" id="3t8MFY9F0GO" role="2Oq$k0">
+              <ref role="3cqZAo" node="3t8MFY9EYub" resolve="provider" />
+            </node>
+            <node concept="2qgKlT" id="3t8MFY9F2_7" role="2OqNvi">
+              <ref role="37wK5l" node="5yCuRHcaxm8" resolve="getGraph" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3t8MFY9EYub" role="3clF46">
+        <property role="TrG5h" value="provider" />
+        <node concept="3Tqbb2" id="3t8MFY9EYua" role="1tU5fm">
+          <ref role="ehGHo" to="10jo:5yCuRHcawFz" resolve="IJGraphProvider" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1mVSOo2Rw3M" role="jymVt" />
