@@ -1,36 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:eec9fdff-7d49-4d97-a04e-350ceb9ae0b0(com.mbeddr.tutorial.documentation.tutorial)" content="root">
-  <persistence version="8" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" implicit="yes" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="yes" />
-  <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="2637267020265430784" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Config" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
-    <node role="paths" roleId="2c95.6386504476136472817" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="4715820023543670791" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="images" />
-      <node role="pathPicker" roleId="2c95.2642765975824057986" type="vs0r.SolutionRelativeDirPicker" typeId="vs0r.2642765975824060179" id="8265078645305017932" nodeInfo="ng">
-        <property name="path" nameId="vs0r.6156524541422553710" value="images" />
+<model ref="r:eec9fdff-7d49-4d97-a04e-350ceb9ae0b0(com.mbeddr.tutorial.documentation.tutorial)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
+        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
+      </concept>
+      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
+        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
+        <child id="6386504476136472817" name="paths" index="2SbYGa" />
+        <child id="8624890525767800998" name="sizeSpecs" index="3SH5Mq" />
+      </concept>
+      <concept id="8624890525767637976" name="com.mbeddr.doc.structure.PageWidthSizeSpec" flags="ng" index="3SGHZ$">
+        <property id="8624890525767637977" name="percentage" index="3SGHZ_" />
+      </concept>
+      <concept id="8624890525767800825" name="com.mbeddr.doc.structure.NamedSizeSpec" flags="ng" index="3SH5f5">
+        <child id="8624890525767800827" name="spec" index="3SH5f7" />
+      </concept>
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractFilePicker" flags="ng" index="3N1QpV">
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2SbYGP" id="2ipt67gLxW0">
+    <property role="TrG5h" value="Config" />
+    <property role="3GE5qa" value="config" />
+    <node concept="2SbYGw" id="45LXldJZEw7" role="2SbYGa">
+      <property role="TrG5h" value="images" />
+      <node concept="9PVaO" id="7aNtjNm4Cpc" role="9PVG_">
+        <property role="3N1Lgt" value="images" />
       </node>
     </node>
-    <node role="sizeSpecs" roleId="2c95.8624890525767800998" type="2c95.NamedSizeSpec" typeId="2c95.8624890525767800825" id="8624890525768078251" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="width100" />
-      <node role="spec" roleId="2c95.8624890525767800827" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8624890525768078253" nodeInfo="ng">
-        <property name="percentage" nameId="2c95.8624890525767637977" value="100" />
+    <node concept="3SH5f5" id="7uLL3Mf2teF" role="3SH5Mq">
+      <property role="TrG5h" value="width100" />
+      <node concept="3SGHZ$" id="7uLL3Mf2teH" role="3SH5f7">
+        <property role="3SGHZ_" value="100" />
       </node>
     </node>
-    <node role="sizeSpecs" roleId="2c95.8624890525767800998" type="2c95.NamedSizeSpec" typeId="2c95.8624890525767800825" id="8624890525768078255" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="width80" />
-      <node role="spec" roleId="2c95.8624890525767800827" type="2c95.PageWidthSizeSpec" typeId="2c95.8624890525767637976" id="8624890525768078256" nodeInfo="ng">
-        <property name="percentage" nameId="2c95.8624890525767637977" value="80" />
+    <node concept="3SH5f5" id="7uLL3Mf2teJ" role="3SH5Mq">
+      <property role="TrG5h" value="width80" />
+      <node concept="3SGHZ$" id="7uLL3Mf2teK" role="3SH5f7">
+        <property role="3SGHZ_" value="80" />
       </node>
     </node>
-    <node role="defaultTempPath" roleId="2c95.5785245534401182264" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="6119416551720820600" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="vis" />
-      <node role="pathPicker" roleId="2c95.2642765975824057986" type="vs0r.SolutionRelativeDirPicker" typeId="vs0r.2642765975824060179" id="8265078645305017929" nodeInfo="ng">
-        <property name="path" nameId="vs0r.6156524541422553710" value="_vis" />
+    <node concept="2SbYGw" id="5jGyeU5XLXS" role="Cbewh">
+      <property role="TrG5h" value="vis" />
+      <node concept="9PVaO" id="7aNtjNm4Cp9" role="9PVG_">
+        <property role="3N1Lgt" value="_vis" />
       </node>
     </node>
-  </root>
+  </node>
 </model>
 
