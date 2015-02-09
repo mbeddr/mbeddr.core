@@ -1,1 +1,1 @@
-http://download.jetbrains.com/mps/32/MPS-3.2-EAP3-139.987-macos.dmg
+http://download.jetbrains.com/mps/32/MPS-3.2-RC1-139.1717-macos.dmg
