@@ -28,6 +28,7 @@
     <import index="p15z" ref="r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil.behavior)" />
     <import index="epq1" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.math(JDK/java.math@java_stub)" />
     <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="bt5b" ref="r:10548ca1-8094-4342-a65a-87d986241875(com.mbeddr.core.pointers.utils)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -294,6 +295,9 @@
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
+      </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -2921,6 +2925,21 @@
       <node concept="17QB3L" id="2JIP8cA02kA" role="3clF45" />
       <node concept="3Tm1VV" id="2JIP8cA02kB" role="1B3o_S" />
     </node>
+    <node concept="13i0hz" id="5ZDGpDS1ZF0" role="13h7CS">
+      <property role="TrG5h" value="isLValue" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="ywuz:6iIoqg1yDKH" resolve="isLValue" />
+      <node concept="3Tm1VV" id="5ZDGpDS1ZF1" role="1B3o_S" />
+      <node concept="3clFbS" id="5ZDGpDS1ZFC" role="3clF47">
+        <node concept="3cpWs6" id="5ZDGpDS2aes" role="3cqZAp">
+          <node concept="3clFbT" id="5ZDGpDS2aeH" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="5ZDGpDS23nH" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="6X5Wphz0RoC" role="13h7CW">
       <node concept="3clFbS" id="6X5Wphz0RoD" role="2VODD2" />
     </node>
@@ -3553,9 +3572,24 @@
       <ref role="13i0hy" to="ywuz:6iIoqg1yDKH" resolve="isLValue" />
       <node concept="3Tm1VV" id="7$cwLzjlbYW" role="1B3o_S" />
       <node concept="3clFbS" id="7$cwLzjlbZz" role="3clF47">
-        <node concept="3clFbF" id="7$cwLzjlbZC" role="3cqZAp">
-          <node concept="3clFbT" id="7$cwLzjlozX" role="3clFbG">
-            <property role="3clFbU" value="false" />
+        <node concept="3SKdUt" id="5ZDGpDSz4Px" role="3cqZAp">
+          <node concept="3SKdUq" id="5ZDGpDSz4Tz" role="3SKWNk">
+            <property role="3SKdUp" value="it may be an lvalue if there is a nested deref expression in the subtree" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5ZDGpDSseUj" role="3cqZAp">
+          <node concept="2YIFZM" id="5ZDGpDSsfTK" role="3cqZAk">
+            <ref role="37wK5l" to="bt5b:5ZDGpDSrEDS" resolve="hasNestedChild" />
+            <ref role="1Pybhc" to="bt5b:2qm4hK2rfWT" resolve="PointerOperatorsUtils" />
+            <node concept="2OqwBi" id="5ZDGpDSyf_s" role="37wK5m">
+              <node concept="13iPFW" id="5ZDGpDSsfUs" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5ZDGpDSyfXz" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+              </node>
+            </node>
+            <node concept="35c_gC" id="5ZDGpDSz4nq" role="37wK5m">
+              <ref role="35c_gD" to="yq40:fwMInzpIaB" resolve="DerefExpr" />
+            </node>
           </node>
         </node>
       </node>
