@@ -190,6 +190,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -1488,6 +1489,126 @@
           </node>
         </node>
         <node concept="3clFbH" id="3XsK4wOYLO7" role="3cqZAp" />
+        <node concept="3clFbF" id="3kciUheOlxf" role="3cqZAp">
+          <node concept="2OqwBi" id="3kciUheOAtR" role="3clFbG">
+            <node concept="37vLTw" id="3kciUheO_he" role="2Oq$k0">
+              <ref role="3cqZAo" node="7P$SxBYKdE5" resolve="vv" />
+            </node>
+            <node concept="liA8E" id="3kciUheOFaw" role="2OqNvi">
+              <ref role="37wK5l" to="ry6u:~VisualizationViewer.setVertexToolTipTransformer(org.apache.commons.collections15.Transformer):void" resolve="setVertexToolTipTransformer" />
+              <node concept="2ShNRf" id="3kciUheOFLq" role="37wK5m">
+                <node concept="YeOm9" id="3kciUheOH9V" role="2ShVmc">
+                  <node concept="1Y3b0j" id="3kciUheOH9Y" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <ref role="1Y3XeK" to="cl95:~Transformer" resolve="Transformer" />
+                    <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+                    <node concept="3Tm1VV" id="3kciUheOH9Z" role="1B3o_S" />
+                    <node concept="3clFb_" id="3kciUheOHa0" role="jymVt">
+                      <property role="1EzhhJ" value="false" />
+                      <property role="TrG5h" value="transform" />
+                      <property role="DiZV1" value="false" />
+                      <property role="IEkAT" value="false" />
+                      <node concept="3Tm1VV" id="3kciUheOHa1" role="1B3o_S" />
+                      <node concept="17QB3L" id="78j9QLk6b2M" role="3clF45" />
+                      <node concept="37vLTG" id="3kciUheOHa4" role="3clF46">
+                        <property role="TrG5h" value="vertex" />
+                        <node concept="3uibUv" id="3kciUheOHcn" role="1tU5fm">
+                          <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="3kciUheOHa6" role="3clF47">
+                        <node concept="3clFbF" id="3kciUheOIld" role="3cqZAp">
+                          <node concept="2OqwBi" id="3kciUheOIA6" role="3clFbG">
+                            <node concept="1eOMI4" id="3kciUheOIoe" role="2Oq$k0">
+                              <node concept="10QFUN" id="3kciUheOIof" role="1eOMHV">
+                                <node concept="37vLTw" id="3kciUheOIod" role="10QFUP">
+                                  <ref role="3cqZAo" node="3kciUheOHa4" resolve="vertex" />
+                                </node>
+                                <node concept="3uibUv" id="3kciUheOIwb" role="10QFUM">
+                                  <ref role="3uigEE" to="ln2k:5yCuRHcav6I" resolve="JNNode" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="3kciUheOIRK" role="2OqNvi">
+                              <ref role="37wK5l" to="ln2k:5ateHxVz3r_" resolve="getTooltip" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3uibUv" id="3kciUheOHcm" role="2Ghqu4">
+                      <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                    </node>
+                    <node concept="3uibUv" id="3kciUheOHco" role="2Ghqu4">
+                      <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="78j9QLk5Jdo" role="3cqZAp" />
+        <node concept="3clFbF" id="78j9QLk5X1h" role="3cqZAp">
+          <node concept="2OqwBi" id="78j9QLk5Z5G" role="3clFbG">
+            <node concept="37vLTw" id="78j9QLk5X1f" role="2Oq$k0">
+              <ref role="3cqZAo" node="7P$SxBYKdE5" resolve="vv" />
+            </node>
+            <node concept="liA8E" id="78j9QLk6aSM" role="2OqNvi">
+              <ref role="37wK5l" to="ry6u:~VisualizationViewer.setEdgeToolTipTransformer(org.apache.commons.collections15.Transformer):void" resolve="setEdgeToolTipTransformer" />
+              <node concept="2ShNRf" id="78j9QLk7_DY" role="37wK5m">
+                <node concept="YeOm9" id="78j9QLk7_DZ" role="2ShVmc">
+                  <node concept="1Y3b0j" id="78j9QLk7_E0" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <ref role="1Y3XeK" to="cl95:~Transformer" resolve="Transformer" />
+                    <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+                    <node concept="3Tm1VV" id="78j9QLk7_E1" role="1B3o_S" />
+                    <node concept="3clFb_" id="78j9QLk7_E2" role="jymVt">
+                      <property role="1EzhhJ" value="false" />
+                      <property role="TrG5h" value="transform" />
+                      <property role="DiZV1" value="false" />
+                      <property role="IEkAT" value="false" />
+                      <node concept="3Tm1VV" id="78j9QLk7_E3" role="1B3o_S" />
+                      <node concept="17QB3L" id="78j9QLk7_E4" role="3clF45" />
+                      <node concept="37vLTG" id="78j9QLk7_E5" role="3clF46">
+                        <property role="TrG5h" value="edge" />
+                        <node concept="3uibUv" id="78j9QLk7_E6" role="1tU5fm">
+                          <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="78j9QLk7_E7" role="3clF47">
+                        <node concept="3clFbF" id="78j9QLk7_E8" role="3cqZAp">
+                          <node concept="2OqwBi" id="78j9QLk7_E9" role="3clFbG">
+                            <node concept="1eOMI4" id="78j9QLk7_Ea" role="2Oq$k0">
+                              <node concept="10QFUN" id="78j9QLk7_Eb" role="1eOMHV">
+                                <node concept="37vLTw" id="78j9QLk7_Ec" role="10QFUP">
+                                  <ref role="3cqZAo" node="78j9QLk7_E5" resolve="edge" />
+                                </node>
+                                <node concept="3uibUv" id="78j9QLk7A$I" role="10QFUM">
+                                  <ref role="3uigEE" to="ln2k:5yCuRHcavmW" resolve="JNEdge" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="78j9QLk7_Ee" role="2OqNvi">
+                              <ref role="37wK5l" to="ln2k:78j9QLk7oUm" resolve="getTooltip" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3uibUv" id="78j9QLk7_Ef" role="2Ghqu4">
+                      <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                    </node>
+                    <node concept="3uibUv" id="78j9QLk7_Eg" role="2Ghqu4">
+                      <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3kciUheOhP6" role="3cqZAp" />
         <node concept="3clFbJ" id="6mhgMEfqtll" role="3cqZAp">
           <node concept="3clFbS" id="6mhgMEfqtlo" role="3clFbx">
             <node concept="3clFbF" id="6mhgMEfqU4X" role="3cqZAp">
@@ -3102,8 +3223,17 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7P$SxBYKdH4" role="3cqZAp" />
-        <node concept="3clFbH" id="7P$SxBYKdH5" role="3cqZAp" />
+        <node concept="3clFbF" id="3kciUheNCPO" role="3cqZAp">
+          <node concept="2OqwBi" id="3kciUheNRCW" role="3clFbG">
+            <node concept="37vLTw" id="3kciUheNOW0" role="2Oq$k0">
+              <ref role="3cqZAo" node="7P$SxBYKdE5" resolve="vv" />
+            </node>
+            <node concept="liA8E" id="3kciUheNZ4X" role="2OqNvi">
+              <ref role="37wK5l" to="ry6u:~BasicVisualizationServer.getRenderingHints():java.util.Map" resolve="getRenderingHints" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3kciUheMRnl" role="3cqZAp" />
         <node concept="3clFbF" id="7P$SxBYKdH6" role="3cqZAp">
           <node concept="2OqwBi" id="7P$SxBYKdH7" role="3clFbG">
             <node concept="37vLTw" id="7P$SxBYKdH8" role="2Oq$k0">
