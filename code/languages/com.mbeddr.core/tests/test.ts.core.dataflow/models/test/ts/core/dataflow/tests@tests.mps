@@ -15,6 +15,7 @@
       <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
         <child id="8489045168660938517" name="errorRef" index="3lydEf" />
       </concept>
+      <concept id="1215511704609" name="jetbrains.mps.lang.test.structure.NodeWarningCheckOperation" flags="ng" index="29bkU" />
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
@@ -648,7 +649,13 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="7CXmI" id="61Cvdf7tYGG" role="lGtFl">
+                          <node concept="29bkU" id="61Cvdf7tYGH" role="7EUXB" />
+                        </node>
                       </node>
+                    </node>
+                    <node concept="7CXmI" id="61Cvdf7tYv1" role="lGtFl">
+                      <node concept="29bkU" id="61Cvdf7tYv2" role="7EUXB" />
                     </node>
                   </node>
                 </node>
