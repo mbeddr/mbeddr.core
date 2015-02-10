@@ -46,6 +46,10 @@
       <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
         <child id="1207145201301" name="reference" index="ftvYc" />
       </concept>
+      <concept id="1207318242772" name="jetbrains.mps.lang.plugin.structure.KeyMapKeystroke" flags="ng" index="pLAjd">
+        <property id="1207318242773" name="modifiers" index="pLAjc" />
+        <property id="1207318242774" name="keycode" index="pLAjf" />
+      </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
@@ -76,6 +80,15 @@
         <child id="8096638938275469614" name="toolInitBlock" index="uR5cp" />
         <child id="6547237850567462848" name="methodDeclaration" index="2XNbBy" />
         <child id="6547237850567462849" name="fieldDeclaration" index="2XNbBz" />
+      </concept>
+      <concept id="1562714432501166198" name="jetbrains.mps.lang.plugin.structure.SimpleShortcutChange" flags="lg" index="Zd509">
+        <child id="1562714432501166206" name="keystroke" index="Zd501" />
+      </concept>
+      <concept id="1562714432501166197" name="jetbrains.mps.lang.plugin.structure.KeymapChangesDeclaration" flags="ng" index="Zd50a">
+        <child id="1562714432501166199" name="shortcutChange" index="Zd508" />
+      </concept>
+      <concept id="6193305307616715384" name="jetbrains.mps.lang.plugin.structure.ShortcutChange" flags="lg" index="1bYyw_">
+        <reference id="6193305307616734326" name="action" index="1bYAoF" />
       </concept>
       <concept id="1206092561075" name="jetbrains.mps.lang.plugin.structure.ActionParameterReferenceOperation" flags="nn" index="3gHZIF" />
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
@@ -619,6 +632,20 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2w9vwtE5wKM" role="3cqZAp">
+          <node concept="2OqwBi" id="2w9vwtE5yzb" role="3clFbG">
+            <node concept="37vLTw" id="2w9vwtE5wKK" role="2Oq$k0">
+              <ref role="3cqZAo" node="6fsjz0_mzAV" resolve="titlePanel" />
+            </node>
+            <node concept="liA8E" id="2w9vwtE5Cw8" role="2OqNvi">
+              <ref role="37wK5l" to="dbrf:~JLabel.setVerticalAlignment(int):void" resolve="setVerticalAlignment" />
+              <node concept="10M0yZ" id="2w9vwtE5Cya" role="37wK5m">
+                <ref role="1PxDUh" to="dbrf:~JLabel" resolve="JLabel" />
+                <ref role="3cqZAo" to="dbrf:~SwingConstants.TOP" resolve="TOP" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="MHH8WyuZTx" role="3cqZAp">
           <node concept="2OqwBi" id="MHH8Wyv06G" role="3clFbG">
             <node concept="37vLTw" id="MHH8WyuZTv" role="2Oq$k0">
@@ -860,19 +887,6 @@
     <node concept="2XrIbr" id="5yCuRHcaBDm" role="2XNbBy">
       <property role="TrG5h" value="setNewGraph" />
       <node concept="3clFbS" id="5yCuRHcaBDn" role="3clF47">
-        <node concept="3clFbF" id="6ZglzKtDbhT" role="3cqZAp">
-          <node concept="37vLTI" id="6ZglzKtDbhU" role="3clFbG">
-            <node concept="3cmrfG" id="6ZglzKtDbDY" role="37vLTx">
-              <property role="3cmrfH" value="500" />
-            </node>
-            <node concept="2OqwBi" id="6ZglzKtDbi4" role="37vLTJ">
-              <node concept="2WthIp" id="6ZglzKtDbi5" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="6ZglzKtDbi6" role="2OqNvi">
-                <ref role="2WH_rO" node="6ZglzKtCTOA" resolve="layoutSize" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="3t8MFY9FmXl" role="3cqZAp">
           <node concept="37vLTI" id="3t8MFY9Foi7" role="3clFbG">
             <node concept="37vLTw" id="3t8MFY9Fo$s" role="37vLTx">
@@ -900,6 +914,27 @@
               <node concept="2WthIp" id="78j9QLk9VVd" role="2Oq$k0" />
               <node concept="2BZ7hE" id="78j9QLk9WE$" role="2OqNvi">
                 <ref role="2WH_rO" node="5yCuRHcaCGD" resolve="graph" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6ZglzKtDbhT" role="3cqZAp">
+          <node concept="37vLTI" id="6ZglzKtDbhU" role="3clFbG">
+            <node concept="2OqwBi" id="3q2etGPyBbw" role="37vLTx">
+              <node concept="2OqwBi" id="3q2etGPyh_S" role="2Oq$k0">
+                <node concept="2WthIp" id="3q2etGPyh_V" role="2Oq$k0" />
+                <node concept="2BZ7hE" id="3q2etGPyh_X" role="2OqNvi">
+                  <ref role="2WH_rO" node="5yCuRHcaCGD" resolve="graph" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3q2etGPyBGB" role="2OqNvi">
+                <ref role="37wK5l" to="ln2k:3q2etGPylph" resolve="getInitialSize" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6ZglzKtDbi4" role="37vLTJ">
+              <node concept="2WthIp" id="6ZglzKtDbi5" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="6ZglzKtDbi6" role="2OqNvi">
+                <ref role="2WH_rO" node="6ZglzKtCTOA" resolve="layoutSize" />
               </node>
             </node>
           </node>
@@ -1860,6 +1895,23 @@
                     <ref role="3cqZAo" to="1t7x:~FlowLayout.LEFT" resolve="LEFT" />
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6KLAcl1DARN" role="3cqZAp">
+          <node concept="2OqwBi" id="6KLAcl1DCS8" role="3clFbG">
+            <node concept="2OqwBi" id="6KLAcl1DBt4" role="2Oq$k0">
+              <node concept="2WthIp" id="6KLAcl1DARL" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="6KLAcl1DCwt" role="2OqNvi">
+                <ref role="2WH_rO" node="vBdzUQqzQx" resolve="buttonPanel" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6KLAcl1DFlw" role="2OqNvi">
+              <ref role="37wK5l" to="dbrf:~JComponent.setAlignmentY(float):void" resolve="setAlignmentY" />
+              <node concept="10M0yZ" id="6KLAcl1DFoG" role="37wK5m">
+                <ref role="1PxDUh" to="dbrf:~JPanel" resolve="JPanel" />
+                <ref role="3cqZAo" to="1t7x:~Component.TOP_ALIGNMENT" resolve="TOP_ALIGNMENT" />
               </node>
             </node>
           </node>
@@ -6453,7 +6505,7 @@
   </node>
   <node concept="sE7Ow" id="4mGNV$raQvF">
     <property role="TrG5h" value="OpenGraphViewer" />
-    <property role="2uzpH1" value="Open Graph Viewer" />
+    <property role="2uzpH1" value="Show Graph Viewer" />
     <node concept="1DS2jV" id="7NyyyjNHi27" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="nx1:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -6947,6 +6999,16 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="vBdzUQqhoj" role="1B3o_S" />
+    </node>
+  </node>
+  <node concept="Zd50a" id="5JtAam0YcFM">
+    <property role="TrG5h" value="graphKeymapping" />
+    <node concept="Zd509" id="5JtAam0YcFT" role="Zd508">
+      <ref role="1bYAoF" node="4mGNV$raQvF" resolve="OpenGraphViewer" />
+      <node concept="pLAjd" id="5JtAam0YcFU" role="Zd501">
+        <property role="pLAjc" value="ctrl+alt" />
+        <property role="pLAjf" value="VK_J" />
+      </node>
     </node>
   </node>
 </model>
