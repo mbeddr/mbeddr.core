@@ -2221,6 +2221,22 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2g0OLEqYmyH" role="3cqZAp">
+          <node concept="2OqwBi" id="2g0OLEqYntp" role="3clFbG">
+            <node concept="2OqwBi" id="2g0OLEqYmyB" role="2Oq$k0">
+              <node concept="2WthIp" id="2g0OLEqYmyE" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="2g0OLEqYmyG" role="2OqNvi">
+                <ref role="2WH_rO" node="40J$2Dk3P5n" resolve="selectIn" />
+              </node>
+            </node>
+            <node concept="liA8E" id="2g0OLEqYt2k" role="2OqNvi">
+              <ref role="37wK5l" to="dbrf:~JComponent.setToolTipText(java.lang.String):void" resolve="setToolTipText" />
+              <node concept="Xl_RD" id="2g0OLEqYt5h" role="37wK5m">
+                <property role="Xl_RC" value="Select Incoming Edges" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="78j9QLk9JRJ" role="3cqZAp">
           <node concept="37vLTI" id="78j9QLk9JRK" role="3clFbG">
             <node concept="2ShNRf" id="78j9QLk9JRL" role="37vLTx">
@@ -2235,6 +2251,22 @@
               <node concept="2WthIp" id="78j9QLk9JRP" role="2Oq$k0" />
               <node concept="2BZ7hE" id="78j9QLk9JRQ" role="2OqNvi">
                 <ref role="2WH_rO" node="40J$2Dk3Jh2" resolve="selectOut" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2g0OLEqYtwB" role="3cqZAp">
+          <node concept="2OqwBi" id="2g0OLEqYtwC" role="3clFbG">
+            <node concept="2OqwBi" id="2g0OLEqYtwD" role="2Oq$k0">
+              <node concept="2WthIp" id="2g0OLEqYtwE" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="2g0OLEqYwIX" role="2OqNvi">
+                <ref role="2WH_rO" node="40J$2Dk3Jh2" resolve="selectOut" />
+              </node>
+            </node>
+            <node concept="liA8E" id="2g0OLEqYtwG" role="2OqNvi">
+              <ref role="37wK5l" to="dbrf:~JComponent.setToolTipText(java.lang.String):void" resolve="setToolTipText" />
+              <node concept="Xl_RD" id="2g0OLEqYtwH" role="37wK5m">
+                <property role="Xl_RC" value="Select Outgoing Edges" />
               </node>
             </node>
           </node>
@@ -2257,6 +2289,22 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2g0OLEqYuyI" role="3cqZAp">
+          <node concept="2OqwBi" id="2g0OLEqYuyJ" role="3clFbG">
+            <node concept="2OqwBi" id="2g0OLEqYuyK" role="2Oq$k0">
+              <node concept="2WthIp" id="2g0OLEqYuyL" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="2g0OLEqYx6M" role="2OqNvi">
+                <ref role="2WH_rO" node="40J$2Dk3QWT" resolve="selectNodes" />
+              </node>
+            </node>
+            <node concept="liA8E" id="2g0OLEqYuyN" role="2OqNvi">
+              <ref role="37wK5l" to="dbrf:~JComponent.setToolTipText(java.lang.String):void" resolve="setToolTipText" />
+              <node concept="Xl_RD" id="2g0OLEqYuyO" role="37wK5m">
+                <property role="Xl_RC" value="Also Select In/Out Nodes" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="78j9QLk9JRZ" role="3cqZAp">
           <node concept="37vLTI" id="78j9QLk9JS0" role="3clFbG">
             <node concept="2ShNRf" id="78j9QLk9JS1" role="37vLTx">
@@ -2271,6 +2319,22 @@
               <node concept="2WthIp" id="78j9QLk9JS5" role="2Oq$k0" />
               <node concept="2BZ7hE" id="78j9QLk9JS6" role="2OqNvi">
                 <ref role="2WH_rO" node="40J$2Dk3RJP" resolve="selectTansitively" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2g0OLEqYvoI" role="3cqZAp">
+          <node concept="2OqwBi" id="2g0OLEqYvoJ" role="3clFbG">
+            <node concept="2OqwBi" id="2g0OLEqYvoK" role="2Oq$k0">
+              <node concept="2WthIp" id="2g0OLEqYvoL" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="2g0OLEqYxsQ" role="2OqNvi">
+                <ref role="2WH_rO" node="40J$2Dk3RJP" resolve="selectTansitively" />
+              </node>
+            </node>
+            <node concept="liA8E" id="2g0OLEqYvoN" role="2OqNvi">
+              <ref role="37wK5l" to="dbrf:~JComponent.setToolTipText(java.lang.String):void" resolve="setToolTipText" />
+              <node concept="Xl_RD" id="2g0OLEqYvoO" role="37wK5m">
+                <property role="Xl_RC" value="Select Transitively" />
               </node>
             </node>
           </node>
@@ -3514,13 +3578,45 @@
                         <node concept="3clFbS" id="78j9QLkdKoC" role="3clF47">
                           <node concept="3clFbJ" id="78j9QLkdKoD" role="3cqZAp">
                             <node concept="3clFbS" id="78j9QLkdKoE" role="3clFbx">
-                              <node concept="3cpWs6" id="78j9QLkdKoF" role="3cqZAp">
-                                <node concept="2OqwBi" id="78j9QLkdKoG" role="3cqZAk">
-                                  <node concept="37vLTw" id="78j9QLkdKpr" role="2Oq$k0">
+                              <node concept="3clFbJ" id="2g0OLEr18zB" role="3cqZAp">
+                                <node concept="3clFbS" id="2g0OLEr18zD" role="3clFbx">
+                                  <node concept="3cpWs6" id="78j9QLkdKoF" role="3cqZAp">
+                                    <node concept="2OqwBi" id="78j9QLkdKoG" role="3cqZAk">
+                                      <node concept="37vLTw" id="78j9QLkdKpr" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="78j9QLkdKpk" resolve="gr" />
+                                      </node>
+                                      <node concept="liA8E" id="78j9QLkdKoI" role="2OqNvi">
+                                        <ref role="37wK5l" to="ln2k:3r5oqoHfM3Z" resolve="getPrimarSelectionColor" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="2OqwBi" id="2g0OLEr1xyO" role="3clFbw">
+                                  <node concept="37vLTw" id="2g0OLEr18V2" role="2Oq$k0">
                                     <ref role="3cqZAo" node="78j9QLkdKpk" resolve="gr" />
                                   </node>
-                                  <node concept="liA8E" id="78j9QLkdKoI" role="2OqNvi">
-                                    <ref role="37wK5l" to="ln2k:3r5oqoHfM3Z" resolve="getSelectionColor" />
+                                  <node concept="liA8E" id="2g0OLEr1JRR" role="2OqNvi">
+                                    <ref role="37wK5l" to="ln2k:2g0OLEr1iKm" resolve="isPrimarySelection" />
+                                    <node concept="1eOMI4" id="2g0OLEr1LUM" role="37wK5m">
+                                      <node concept="10QFUN" id="2g0OLEr1LUN" role="1eOMHV">
+                                        <node concept="37vLTw" id="2g0OLEr1LUL" role="10QFUP">
+                                          <ref role="3cqZAo" node="78j9QLkdKoA" resolve="node" />
+                                        </node>
+                                        <node concept="3uibUv" id="2g0OLEr1LUG" role="10QFUM">
+                                          <ref role="3uigEE" to="ln2k:5yCuRHcav6I" resolve="JNNode" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3cpWs6" id="2g0OLEr1NOj" role="3cqZAp">
+                                <node concept="2OqwBi" id="2g0OLEr1OCG" role="3cqZAk">
+                                  <node concept="37vLTw" id="2g0OLEr1OtN" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="78j9QLkdKpk" resolve="gr" />
+                                  </node>
+                                  <node concept="liA8E" id="2g0OLEr1Pch" role="2OqNvi">
+                                    <ref role="37wK5l" to="ln2k:2g0OLEqY$UG" resolve="getSecondarySelectionColor" />
                                   </node>
                                 </node>
                               </node>
@@ -4001,7 +4097,7 @@
                                 <ref role="3cqZAo" node="78j9QLke6_v" resolve="gr" />
                               </node>
                               <node concept="liA8E" id="78j9QLke6$I" role="2OqNvi">
-                                <ref role="37wK5l" to="ln2k:3r5oqoHfM3Z" resolve="getSelectionColor" />
+                                <ref role="37wK5l" to="ln2k:2g0OLEqY$UG" resolve="getSecondarySelectionColor" />
                               </node>
                             </node>
                           </node>
@@ -4337,6 +4433,19 @@
                                     </node>
                                     <node concept="liA8E" id="78j9QLkelmT" role="2OqNvi">
                                       <ref role="37wK5l" to="n5zd:~PickedState.clear():void" resolve="clear" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3clFbF" id="2g0OLEr211o" role="3cqZAp">
+                                  <node concept="2OqwBi" id="2g0OLEr215_" role="3clFbG">
+                                    <node concept="37vLTw" id="2g0OLEr211m" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="78j9QLkelqm" resolve="gr" />
+                                    </node>
+                                    <node concept="liA8E" id="2g0OLEr21lf" role="2OqNvi">
+                                      <ref role="37wK5l" to="ln2k:2g0OLEr1dYW" resolve="setPrimarySelectedNode" />
+                                      <node concept="37vLTw" id="2g0OLEr21ni" role="37wK5m">
+                                        <ref role="3cqZAo" node="78j9QLkelmE" resolve="n" />
+                                      </node>
                                     </node>
                                   </node>
                                 </node>
