@@ -772,9 +772,7 @@
       <node concept="3Tm1VV" id="2duwjmVz0EA" role="1B3o_S" />
       <node concept="3clFbS" id="2duwjmVz0EB" role="3clF47">
         <node concept="3clFbF" id="2duwjmVz0EH" role="3cqZAp">
-          <node concept="3clFbT" id="2duwjmVz0EI" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
+          <node concept="3clFbT" id="2duwjmVz0EI" role="3clFbG" />
         </node>
       </node>
       <node concept="10P_77" id="2duwjmVz0EC" role="3clF45" />
