@@ -125,7 +125,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -783,54 +783,6 @@
           <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
         </node>
       </node>
-    </node>
-    <node concept="13i0hz" id="21cGQ$gTphe" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="rebindToProxy" />
-      <ref role="13i0hy" to="hwgx:7jSUHHvkApb" resolve="rebindToProxy" />
-      <node concept="3Tm1VV" id="21cGQ$gTphf" role="1B3o_S" />
-      <node concept="3clFbS" id="21cGQ$gTphk" role="3clF47">
-        <node concept="3clFbF" id="21cGQ$gT_n7" role="3cqZAp">
-          <node concept="37vLTI" id="21cGQ$gTA40" role="3clFbG">
-            <node concept="1PxgMI" id="21cGQ$gTAe$" role="37vLTx">
-              <ref role="1PxNhF" to="qlb5:7eOyx9r3jsZ" resolve="Unit" />
-              <node concept="37vLTw" id="21cGQ$gTA6F" role="1PxMeX">
-                <ref role="3cqZAo" node="21cGQ$gTphl" resolve="proxyElement" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="21cGQ$gT_pn" role="37vLTJ">
-              <node concept="13iPFW" id="21cGQ$gT_n6" role="2Oq$k0" />
-              <node concept="3TrEf2" id="21cGQ$gT_M_" role="2OqNvi">
-                <ref role="3Tt5mk" to="qlb5:7eOyx9r3qFW" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="21cGQ$gTphl" role="3clF46">
-        <property role="TrG5h" value="proxyElement" />
-        <node concept="3Tqbb2" id="21cGQ$gTphm" role="1tU5fm" />
-      </node>
-      <node concept="3cqZAl" id="21cGQ$gTphn" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="21cGQ$gTpho" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="referencedModuleContent" />
-      <ref role="13i0hy" to="hwgx:7jSUHHvkAph" resolve="referencedModuleContent" />
-      <node concept="3Tm1VV" id="21cGQ$gTphp" role="1B3o_S" />
-      <node concept="3clFbS" id="21cGQ$gTphs" role="3clF47">
-        <node concept="3clFbF" id="21cGQ$gT$li" role="3cqZAp">
-          <node concept="2OqwBi" id="21cGQ$gT$F6" role="3clFbG">
-            <node concept="13iPFW" id="21cGQ$gT$lh" role="2Oq$k0" />
-            <node concept="3TrEf2" id="21cGQ$gT_4k" role="2OqNvi">
-              <ref role="3Tt5mk" to="qlb5:7eOyx9r3qFW" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="21cGQ$gTpht" role="3clF45" />
     </node>
     <node concept="13hLZK" id="4jkbLB5WgVX" role="13h7CW">
       <node concept="3clFbS" id="4jkbLB5WgVY" role="2VODD2" />

@@ -203,9 +203,6 @@
     <node concept="PrWs8" id="4CUqBF4xMRo" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
     </node>
-    <node concept="PrWs8" id="21cGQ$gToXo" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
-    </node>
     <node concept="1TJgyj" id="7eOyx9r3qFY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="exponent" />
