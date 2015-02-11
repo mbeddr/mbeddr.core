@@ -135,6 +135,9 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -145,9 +148,6 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -199,7 +199,7 @@
             </node>
             <node concept="2YIFZM" id="7d9zFs_pBLl" role="37vLTx">
               <ref role="37wK5l" to="9xhd:7d9zFs_pktq" resolve="getAnalyzerConstructors" />
-              <ref role="1Pybhc" to="9xhd:7d9zFs_pkq2" resolve="UninitializedReadAnalyzerHelper" />
+              <ref role="1Pybhc" to="9xhd:7d9zFs_pkq2" resolve="InitializedVariablesAnalyzerHelper" />
             </node>
           </node>
         </node>
@@ -222,10 +222,10 @@
                 <node concept="liA8E" id="2Tv6FmNX1Ix" role="2OqNvi">
                   <ref role="37wK5l" to="k7g3:~Set.add(java.lang.Object):boolean" resolve="add" />
                   <node concept="2YIFZM" id="2Tv6FmNX3tC" role="37wK5m">
-                    <ref role="1Pybhc" to="9xhd:7d9zFs_pdjb" resolve="RuntimeUninitializedReadAnalyzerRule" />
+                    <ref role="1Pybhc" to="9xhd:7d9zFs_pdjb" resolve="RuntimeInitializedVariablesAnalyzerRule" />
                     <ref role="37wK5l" to="9xhd:7d9zFs_pdjD" resolve="create" />
-                    <node concept="3TUQnm" id="23po6SqV7Nh" role="37wK5m">
-                      <ref role="3TV0OU" to="clqz:1z9MsBsVMCV" resolve="StatemachineVarRef" />
+                    <node concept="35c_gC" id="4zFXTqqSINu" role="37wK5m">
+                      <ref role="35c_gD" to="clqz:1z9MsBsVMCV" resolve="StatemachineVarRef" />
                     </node>
                     <node concept="2ShNRf" id="w9gljl8r_Z" role="37wK5m">
                       <node concept="YeOm9" id="w9gljl8$MX" role="2ShVmc">
@@ -326,10 +326,10 @@
                 <node concept="liA8E" id="2vgBKozkPtT" role="2OqNvi">
                   <ref role="37wK5l" to="k7g3:~Set.add(java.lang.Object):boolean" resolve="add" />
                   <node concept="2YIFZM" id="2vgBKozkPtU" role="37wK5m">
-                    <ref role="1Pybhc" to="9xhd:7d9zFs_pdjb" resolve="RuntimeUninitializedReadAnalyzerRule" />
+                    <ref role="1Pybhc" to="9xhd:7d9zFs_pdjb" resolve="RuntimeInitializedVariablesAnalyzerRule" />
                     <ref role="37wK5l" to="9xhd:7d9zFs_pdjD" resolve="create" />
-                    <node concept="3TUQnm" id="2vgBKozkPtV" role="37wK5m">
-                      <ref role="3TV0OU" to="mj1l:3k6lE4cOoJa" resolve="DirectAssignmentExpression" />
+                    <node concept="35c_gC" id="4zFXTqqSJRh" role="37wK5m">
+                      <ref role="35c_gD" to="mj1l:3k6lE4cOoJa" resolve="DirectAssignmentExpression" />
                     </node>
                     <node concept="2ShNRf" id="2vgBKozkPtW" role="37wK5m">
                       <node concept="YeOm9" id="2vgBKozkPtX" role="2ShVmc">
@@ -438,9 +438,9 @@
                   <ref role="37wK5l" to="k7g3:~Set.add(java.lang.Object):boolean" resolve="add" />
                   <node concept="2YIFZM" id="5uSTG$Q0Z9k" role="37wK5m">
                     <ref role="37wK5l" to="9xhd:7d9zFs_pdjD" resolve="create" />
-                    <ref role="1Pybhc" to="9xhd:7d9zFs_pdjb" resolve="RuntimeUninitializedReadAnalyzerRule" />
-                    <node concept="3TUQnm" id="5uSTG$Q0Zge" role="37wK5m">
-                      <ref role="3TV0OU" to="c4fa:1OcdQnyStpU" resolve="LocalVarRef" />
+                    <ref role="1Pybhc" to="9xhd:7d9zFs_pdjb" resolve="RuntimeInitializedVariablesAnalyzerRule" />
+                    <node concept="35c_gC" id="4zFXTqqSL4U" role="37wK5m">
+                      <ref role="35c_gD" to="c4fa:1OcdQnyStpU" resolve="LocalVarRef" />
                     </node>
                     <node concept="2ShNRf" id="5uSTG$Q0ZF0" role="37wK5m">
                       <node concept="YeOm9" id="5uSTG$Q16pn" role="2ShVmc">
@@ -546,9 +546,9 @@
                   <ref role="37wK5l" to="k7g3:~Set.add(java.lang.Object):boolean" resolve="add" />
                   <node concept="2YIFZM" id="UsFCYPuYuH" role="37wK5m">
                     <ref role="37wK5l" to="9xhd:7d9zFs_pdjD" resolve="create" />
-                    <ref role="1Pybhc" to="9xhd:7d9zFs_pdjb" resolve="RuntimeUninitializedReadAnalyzerRule" />
-                    <node concept="3TUQnm" id="UsFCYPuYuI" role="37wK5m">
-                      <ref role="3TV0OU" to="clqz:1z9MsBsVkji" resolve="EventArgRef" />
+                    <ref role="1Pybhc" to="9xhd:7d9zFs_pdjb" resolve="RuntimeInitializedVariablesAnalyzerRule" />
+                    <node concept="35c_gC" id="4zFXTqqSM53" role="37wK5m">
+                      <ref role="35c_gD" to="clqz:1z9MsBsVkji" resolve="EventArgRef" />
                     </node>
                     <node concept="10Nm6u" id="UsFCYPvbQK" role="37wK5m" />
                     <node concept="2ShNRf" id="UsFCYPuYv3" role="37wK5m">

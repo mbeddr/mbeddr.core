@@ -638,40 +638,82 @@
     <property role="TrG5h" value="check_DerefExpr" />
     <property role="3GE5qa" value="pointers" />
     <node concept="3clFbS" id="fwMInzpIcH" role="18ibNy">
-      <node concept="3clFbJ" id="fwMInzpIcJ" role="3cqZAp">
-        <node concept="3fqX7Q" id="fwMInzpId8" role="3clFbw">
-          <node concept="2YIFZM" id="2qm4hK2y5td" role="3fr31v">
-            <ref role="37wK5l" to="bt5b:2qm4hK2xZH3" resolve="canUseDereferenceOperator" />
-            <ref role="1Pybhc" to="bt5b:2qm4hK2rfWT" resolve="PointerOperatorsUtils" />
-            <node concept="2OqwBi" id="2qm4hK2y5$d" role="37wK5m">
-              <node concept="1YBJjd" id="2qm4hK2y5tK" role="2Oq$k0">
-                <ref role="1YBMHb" node="fwMInzpIcI" resolve="de" />
+      <node concept="3clFbJ" id="5ZDGpDSzaEw" role="3cqZAp">
+        <node concept="3clFbS" id="5ZDGpDSzaEz" role="3clFbx">
+          <node concept="3clFbJ" id="fwMInzpIcJ" role="3cqZAp">
+            <node concept="3fqX7Q" id="fwMInzpId8" role="3clFbw">
+              <node concept="2YIFZM" id="2qm4hK2y5td" role="3fr31v">
+                <ref role="37wK5l" to="bt5b:2qm4hK2xZH3" resolve="canUseDereferenceOperator" />
+                <ref role="1Pybhc" to="bt5b:2qm4hK2rfWT" resolve="PointerOperatorsUtils" />
+                <node concept="2OqwBi" id="2qm4hK2y5$d" role="37wK5m">
+                  <node concept="1YBJjd" id="2qm4hK2y5tK" role="2Oq$k0">
+                    <ref role="1YBMHb" node="fwMInzpIcI" resolve="expression" />
+                  </node>
+                  <node concept="3TrEf2" id="2qm4hK2y61$" role="2OqNvi">
+                    <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                  </node>
+                </node>
               </node>
-              <node concept="3TrEf2" id="2qm4hK2y61$" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+            </node>
+            <node concept="3clFbS" id="fwMInzpIcL" role="3clFbx">
+              <node concept="2MkqsV" id="fwMInzpIdb" role="3cqZAp">
+                <node concept="2OqwBi" id="4VhroexOCLy" role="2OEOjV">
+                  <node concept="3TrEf2" id="2APHWiztFnc" role="2OqNvi">
+                    <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                  </node>
+                  <node concept="1YBJjd" id="fwMInzpIdk" role="2Oq$k0">
+                    <ref role="1YBMHb" node="fwMInzpIcI" resolve="expression" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="fwMInzpIdj" role="2MkJ7o">
+                  <property role="Xl_RC" value="* can only be applied to pointer types" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="5ZDGpDSzbZM" role="3cqZAp">
+            <node concept="3clFbS" id="5ZDGpDSzbZN" role="3clFbx">
+              <node concept="a7r0C" id="5ZDGpDSzbZO" role="3cqZAp">
+                <node concept="Xl_RD" id="5ZDGpDSzbZP" role="a7wSD">
+                  <property role="Xl_RC" value="Superfluous operators in sequence!" />
+                </node>
+                <node concept="1YBJjd" id="5ZDGpDSzbZQ" role="2OEOjV">
+                  <ref role="1YBMHb" node="fwMInzpIcI" resolve="expression" />
+                </node>
+              </node>
+            </node>
+            <node concept="2YIFZM" id="5ZDGpDSzbZR" role="3clFbw">
+              <ref role="1Pybhc" to="bt5b:2qm4hK2rfWT" resolve="PointerOperatorsUtils" />
+              <ref role="37wK5l" to="bt5b:5ZDGpDSrEDS" resolve="hasNestedChild" />
+              <node concept="2OqwBi" id="5ZDGpDSzbZS" role="37wK5m">
+                <node concept="1YBJjd" id="5ZDGpDSzbZT" role="2Oq$k0">
+                  <ref role="1YBMHb" node="fwMInzpIcI" resolve="expression" />
+                </node>
+                <node concept="3TrEf2" id="5ZDGpDSzbZU" role="2OqNvi">
+                  <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                </node>
+              </node>
+              <node concept="35c_gC" id="5ZDGpDSzbZV" role="37wK5m">
+                <ref role="35c_gD" to="yq40:1o_zCoCBfqX" resolve="ReferenceExpr" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbS" id="fwMInzpIcL" role="3clFbx">
-          <node concept="2MkqsV" id="fwMInzpIdb" role="3cqZAp">
-            <node concept="2OqwBi" id="4VhroexOCLy" role="2OEOjV">
-              <node concept="3TrEf2" id="2APHWiztFnc" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
-              </node>
-              <node concept="1YBJjd" id="fwMInzpIdk" role="2Oq$k0">
-                <ref role="1YBMHb" node="fwMInzpIcI" resolve="de" />
-              </node>
+        <node concept="3y3z36" id="5ZDGpDSzbz5" role="3clFbw">
+          <node concept="10Nm6u" id="5ZDGpDSzb$5" role="3uHU7w" />
+          <node concept="2OqwBi" id="5ZDGpDSzaLQ" role="3uHU7B">
+            <node concept="1YBJjd" id="5ZDGpDSzaGv" role="2Oq$k0">
+              <ref role="1YBMHb" node="fwMInzpIcI" resolve="expression" />
             </node>
-            <node concept="Xl_RD" id="fwMInzpIdj" role="2MkJ7o">
-              <property role="Xl_RC" value="* can only be applied to pointer types" />
+            <node concept="3TrEf2" id="5ZDGpDSzb9N" role="2OqNvi">
+              <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="fwMInzpIcI" role="1YuTPh">
-      <property role="TrG5h" value="de" />
+      <property role="TrG5h" value="expression" />
       <ref role="1YaFvo" to="yq40:fwMInzpIaB" resolve="DerefExpr" />
     </node>
   </node>
@@ -5560,44 +5602,73 @@
     <property role="3GE5qa" value="pointers" />
     <node concept="3clFbS" id="7cCjSV1VVyB" role="18ibNy">
       <node concept="3clFbJ" id="5R06_X_KrTc" role="3cqZAp">
-        <node concept="1Wc70l" id="7t5t4Tss030" role="3clFbw">
-          <node concept="3y3z36" id="7t5t4Tssg88" role="3uHU7B">
-            <node concept="10Nm6u" id="7t5t4Tssg9W" role="3uHU7w" />
-            <node concept="2OqwBi" id="7t5t4Tss2tb" role="3uHU7B">
-              <node concept="1YBJjd" id="7t5t4Tss2n1" role="2Oq$k0">
-                <ref role="1YBMHb" node="7cCjSV1VVyD" resolve="referenceExpr" />
-              </node>
-              <node concept="3TrEf2" id="7t5t4TssfGp" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
-              </node>
+        <node concept="3y3z36" id="7t5t4Tssg88" role="3clFbw">
+          <node concept="10Nm6u" id="7t5t4Tssg9W" role="3uHU7w" />
+          <node concept="2OqwBi" id="7t5t4Tss2tb" role="3uHU7B">
+            <node concept="1YBJjd" id="7t5t4Tss2n1" role="2Oq$k0">
+              <ref role="1YBMHb" node="7cCjSV1VVyD" resolve="expression" />
             </node>
-          </node>
-          <node concept="3fqX7Q" id="2qm4hK2qFLH" role="3uHU7w">
-            <node concept="2YIFZM" id="2qm4hK2rrz6" role="3fr31v">
-              <ref role="37wK5l" to="bt5b:2qm4hK2rfYO" resolve="canUseReferenceOperator" />
-              <ref role="1Pybhc" to="bt5b:2qm4hK2rfWT" resolve="PointerOperatorsUtils" />
-              <node concept="2OqwBi" id="2qm4hK2rrDw" role="37wK5m">
-                <node concept="1YBJjd" id="2qm4hK2rrzC" role="2Oq$k0">
-                  <ref role="1YBMHb" node="7cCjSV1VVyD" resolve="referenceExpr" />
-                </node>
-                <node concept="3TrEf2" id="2qm4hK2rs_v" role="2OqNvi">
-                  <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
-                </node>
-              </node>
+            <node concept="3TrEf2" id="7t5t4TssfGp" role="2OqNvi">
+              <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
             </node>
           </node>
         </node>
         <node concept="3clFbS" id="5R06_X_KrTd" role="3clFbx">
-          <node concept="2MkqsV" id="5R06_X_KIU8" role="3cqZAp">
-            <node concept="Xl_RD" id="5R06_X_KIYM" role="2MkJ7o">
-              <property role="Xl_RC" value="cannot reference this object" />
-            </node>
-            <node concept="2OqwBi" id="5R06_X_KJem" role="2OEOjV">
-              <node concept="1YBJjd" id="7cCjSV1VY23" role="2Oq$k0">
-                <ref role="1YBMHb" node="7cCjSV1VVyD" resolve="referenceExpr" />
+          <node concept="3clFbJ" id="5ZDGpDSz8f_" role="3cqZAp">
+            <node concept="3clFbS" id="5ZDGpDSz8fC" role="3clFbx">
+              <node concept="2MkqsV" id="5R06_X_KIU8" role="3cqZAp">
+                <node concept="Xl_RD" id="5R06_X_KIYM" role="2MkJ7o">
+                  <property role="Xl_RC" value="cannot reference this object" />
+                </node>
+                <node concept="2OqwBi" id="5R06_X_KJem" role="2OEOjV">
+                  <node concept="1YBJjd" id="7cCjSV1VY23" role="2Oq$k0">
+                    <ref role="1YBMHb" node="7cCjSV1VVyD" resolve="expression" />
+                  </node>
+                  <node concept="3TrEf2" id="5R06_X_KNeR" role="2OqNvi">
+                    <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                  </node>
+                </node>
               </node>
-              <node concept="3TrEf2" id="5R06_X_KNeR" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+            </node>
+            <node concept="3fqX7Q" id="2qm4hK2qFLH" role="3clFbw">
+              <node concept="2YIFZM" id="2qm4hK2rrz6" role="3fr31v">
+                <ref role="37wK5l" to="bt5b:2qm4hK2rfYO" resolve="canUseReferenceOperator" />
+                <ref role="1Pybhc" to="bt5b:2qm4hK2rfWT" resolve="PointerOperatorsUtils" />
+                <node concept="2OqwBi" id="2qm4hK2rrDw" role="37wK5m">
+                  <node concept="1YBJjd" id="2qm4hK2rrzC" role="2Oq$k0">
+                    <ref role="1YBMHb" node="7cCjSV1VVyD" resolve="expression" />
+                  </node>
+                  <node concept="3TrEf2" id="2qm4hK2rs_v" role="2OqNvi">
+                    <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="5ZDGpDSz8pU" role="3cqZAp">
+            <node concept="3clFbS" id="5ZDGpDSz8pX" role="3clFbx">
+              <node concept="a7r0C" id="5ZDGpDSz9CU" role="3cqZAp">
+                <node concept="Xl_RD" id="5ZDGpDSz9Do" role="a7wSD">
+                  <property role="Xl_RC" value="Superfluous operators in sequence!" />
+                </node>
+                <node concept="1YBJjd" id="5ZDGpDSzar$" role="2OEOjV">
+                  <ref role="1YBMHb" node="7cCjSV1VVyD" resolve="expression" />
+                </node>
+              </node>
+            </node>
+            <node concept="2YIFZM" id="5ZDGpDSz8tn" role="3clFbw">
+              <ref role="37wK5l" to="bt5b:5ZDGpDSrEDS" resolve="hasNestedChild" />
+              <ref role="1Pybhc" to="bt5b:2qm4hK2rfWT" resolve="PointerOperatorsUtils" />
+              <node concept="2OqwBi" id="5ZDGpDSz8y6" role="37wK5m">
+                <node concept="1YBJjd" id="5ZDGpDSz8tK" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7cCjSV1VVyD" resolve="expression" />
+                </node>
+                <node concept="3TrEf2" id="5ZDGpDSz8Ur" role="2OqNvi">
+                  <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                </node>
+              </node>
+              <node concept="35c_gC" id="5ZDGpDSz9wI" role="37wK5m">
+                <ref role="35c_gD" to="yq40:fwMInzpIaB" resolve="DerefExpr" />
               </node>
             </node>
           </node>
@@ -5605,7 +5676,7 @@
       </node>
     </node>
     <node concept="1YaCAy" id="7cCjSV1VVyD" role="1YuTPh">
-      <property role="TrG5h" value="referenceExpr" />
+      <property role="TrG5h" value="expression" />
       <ref role="1YaFvo" to="yq40:1o_zCoCBfqX" resolve="ReferenceExpr" />
     </node>
   </node>
