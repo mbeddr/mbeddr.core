@@ -95,6 +95,7 @@
       <concept id="1147467790433" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyGetter" flags="in" index="Eqf_E" />
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
       <concept id="7855321458717464197" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAnAncestor" flags="in" index="Um2eU" />
+      <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <reference id="1213106917431" name="defaultConcreteConcept" index="1MND4H" />
@@ -178,20 +179,43 @@
       <node concept="1MUpDS" id="7_tU7IQtN5L" role="1N6uqs">
         <node concept="3clFbS" id="7_tU7IQtN5M" role="2VODD2">
           <node concept="3clFbF" id="7_tU7IQtN5N" role="3cqZAp">
-            <node concept="2OqwBi" id="10GsATRFXTb" role="3clFbG">
-              <node concept="2OqwBi" id="10GsATRFXT2" role="2Oq$k0">
-                <node concept="21POm0" id="10GsATRFXT1" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="10GsATRFXT6" role="2OqNvi">
-                  <node concept="1xMEDy" id="10GsATRFXT7" role="1xVPHs">
-                    <node concept="chp4Y" id="10GsATRFXTa" role="ri$Ld">
-                      <ref role="cht4Q" to="75wo:7_tU7IQsFfx" resolve="RequirementsModule" />
+            <node concept="2OqwBi" id="veUazBNbHo" role="3clFbG">
+              <node concept="2OqwBi" id="10GsATRFXTb" role="2Oq$k0">
+                <node concept="2OqwBi" id="10GsATRFXT2" role="2Oq$k0">
+                  <node concept="21POm0" id="10GsATRFXT1" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="10GsATRFXT6" role="2OqNvi">
+                    <node concept="1xMEDy" id="10GsATRFXT7" role="1xVPHs">
+                      <node concept="chp4Y" id="10GsATRFXTa" role="ri$Ld">
+                        <ref role="cht4Q" to="75wo:7_tU7IQsFfx" resolve="RequirementsModule" />
+                      </node>
                     </node>
+                    <node concept="1xIGOp" id="10GsATRFXTh" role="1xVPHs" />
                   </node>
-                  <node concept="1xIGOp" id="10GsATRFXTh" role="1xVPHs" />
+                </node>
+                <node concept="2qgKlT" id="10GsATRFXTf" role="2OqNvi">
+                  <ref role="37wK5l" to="xvsr:10GsATRFXRJ" resolve="allRequirementsInModule" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="10GsATRFXTf" role="2OqNvi">
-                <ref role="37wK5l" to="xvsr:10GsATRFXRJ" resolve="allRequirementsInModule" />
+              <node concept="3zZkjj" id="veUazBNcE0" role="2OqNvi">
+                <node concept="1bVj0M" id="veUazBNcE2" role="23t8la">
+                  <node concept="3clFbS" id="veUazBNcE3" role="1bW5cS">
+                    <node concept="3clFbF" id="veUazBNg_N" role="3cqZAp">
+                      <node concept="2OqwBi" id="veUazBNgRh" role="3clFbG">
+                        <node concept="3kakTB" id="veUazBNg_M" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="veUazBNhe8" role="2OqNvi">
+                          <ref role="37wK5l" to="xvsr:veUazBMZRY" resolve="canTargetRequirement" />
+                          <node concept="37vLTw" id="veUazBNhu_" role="37wK5m">
+                            <ref role="3cqZAo" node="veUazBNcE4" resolve="it" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="veUazBNcE4" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="veUazBNcE5" role="1tU5fm" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -601,6 +625,10 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="veUazBN8y3">
+    <property role="3GE5qa" value="data" />
+    <ref role="1M2myG" to="75wo:7_tU7IQtN5G" resolve="RequirementsData" />
   </node>
 </model>
 

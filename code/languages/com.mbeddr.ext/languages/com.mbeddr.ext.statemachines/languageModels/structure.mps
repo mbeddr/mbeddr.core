@@ -934,6 +934,9 @@
     <node concept="PrWs8" id="2XRfpKWsPsP" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
+    <node concept="PrWs8" id="6V6S12cB3o0" role="PzmwI">
+      <ref role="PrY4T" to="x27k:6V6S12clNH$" resolve="IDataFlowAnalyzerEntryPoint" />
+    </node>
     <node concept="1TJgyj" id="16ykm_MbyjB" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="guard" />

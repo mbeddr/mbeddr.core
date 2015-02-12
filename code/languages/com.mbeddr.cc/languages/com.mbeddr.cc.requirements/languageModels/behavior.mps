@@ -9184,5 +9184,51 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="veUazBMRZ3">
+    <property role="3GE5qa" value="links" />
+    <ref role="13h7C2" to="75wo:7_tU7IQtN5z" resolve="RequirementsLink" />
+    <node concept="13i0hz" id="veUazBMRZ6" role="13h7CS">
+      <property role="TrG5h" value="canBeUsedUnderRequirement" />
+      <property role="13i0it" value="true" />
+      <property role="2Ki8OM" value="false" />
+      <node concept="3Tm1VV" id="veUazBMRZ7" role="1B3o_S" />
+      <node concept="3clFbS" id="veUazBMRZ8" role="3clF47">
+        <node concept="3clFbF" id="veUazBMZRK" role="3cqZAp">
+          <node concept="3clFbT" id="veUazBMZRJ" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="veUazBMZlA" role="3clF45" />
+      <node concept="37vLTG" id="veUazBMZBm" role="3clF46">
+        <property role="TrG5h" value="req" />
+        <node concept="3Tqbb2" id="veUazBN6q6" role="1tU5fm">
+          <ref role="ehGHo" to="75wo:7_tU7IQsCy_" resolve="Requirement" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="veUazBMZRY" role="13h7CS">
+      <property role="TrG5h" value="canTargetRequirement" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="veUazBMZRZ" role="1B3o_S" />
+      <node concept="3clFbS" id="veUazBMZS0" role="3clF47">
+        <node concept="3clFbF" id="veUazBMZS1" role="3cqZAp">
+          <node concept="3clFbT" id="veUazBMZS2" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="veUazBMZS3" role="3clF45" />
+      <node concept="37vLTG" id="veUazBMZS4" role="3clF46">
+        <property role="TrG5h" value="target" />
+        <node concept="3Tqbb2" id="veUazBMZS5" role="1tU5fm">
+          <ref role="ehGHo" to="75wo:7_tU7IQsCy_" resolve="Requirement" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="veUazBMRZ4" role="13h7CW">
+      <node concept="3clFbS" id="veUazBMRZ5" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

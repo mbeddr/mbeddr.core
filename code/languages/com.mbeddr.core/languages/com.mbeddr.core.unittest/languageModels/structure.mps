@@ -97,6 +97,9 @@
     <node concept="PrWs8" id="5hYHEwYdGbF" role="PzmwI">
       <ref role="PrY4T" node="5hYHEwYdCJ2" resolve="IFailuresAware" />
     </node>
+    <node concept="PrWs8" id="6V6S12czXIf" role="PzmwI">
+      <ref role="PrY4T" to="x27k:6V6S12clNH$" resolve="IDataFlowAnalyzerEntryPoint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5so5TTr6S9n">
     <property role="TrG5h" value="AssertStatement" />

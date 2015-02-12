@@ -416,21 +416,35 @@
     <property role="3GE5qa" value="links" />
     <property role="TrG5h" value="check_Link" />
     <node concept="3clFbS" id="5bWzw_i4LWC" role="18ibNy">
+      <node concept="3cpWs8" id="veUazBNieY" role="3cqZAp">
+        <node concept="3cpWsn" id="veUazBNieZ" role="3cpWs9">
+          <property role="TrG5h" value="req" />
+          <node concept="3Tqbb2" id="veUazBNieW" role="1tU5fm">
+            <ref role="ehGHo" to="75wo:7_tU7IQsCy_" resolve="Requirement" />
+          </node>
+          <node concept="1PxgMI" id="veUazBNivV" role="33vP2m">
+            <ref role="1PxNhF" to="75wo:7_tU7IQsCy_" resolve="Requirement" />
+            <node concept="2OqwBi" id="veUazBNif0" role="1PxMeX">
+              <node concept="1YBJjd" id="veUazBNif1" role="2Oq$k0">
+                <ref role="1YBMHb" node="5bWzw_i4LWE" resolve="link" />
+              </node>
+              <node concept="1mfA1w" id="veUazBNif2" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3clFbJ" id="5bWzw_i4LWF" role="3cqZAp">
         <node concept="3clFbC" id="5bWzw_i4TMH" role="3clFbw">
           <node concept="2OqwBi" id="5bWzw_i4LWJ" role="3uHU7B">
             <node concept="1YBJjd" id="5bWzw_i4LWI" role="2Oq$k0">
-              <ref role="1YBMHb" node="5bWzw_i4LWE" resolve="requirementsLink" />
+              <ref role="1YBMHb" node="5bWzw_i4LWE" resolve="link" />
             </node>
             <node concept="3TrEf2" id="5bWzw_i4TMG" role="2OqNvi">
               <ref role="3Tt5mk" to="75wo:7_tU7IQtN5I" />
             </node>
           </node>
-          <node concept="2OqwBi" id="5bWzw_i4TML" role="3uHU7w">
-            <node concept="1YBJjd" id="5bWzw_i4TMK" role="2Oq$k0">
-              <ref role="1YBMHb" node="5bWzw_i4LWE" resolve="requirementsLink" />
-            </node>
-            <node concept="1mfA1w" id="5bWzw_i4TMP" role="2OqNvi" />
+          <node concept="37vLTw" id="veUazBNif3" role="3uHU7w">
+            <ref role="3cqZAo" node="veUazBNieZ" resolve="req" />
           </node>
         </node>
         <node concept="3clFbS" id="5bWzw_i4LWH" role="3clFbx">
@@ -439,7 +453,7 @@
               <property role="Xl_RC" value="cannot link to itself" />
             </node>
             <node concept="1YBJjd" id="5bWzw_i4TMU" role="2OEOjV">
-              <ref role="1YBMHb" node="5bWzw_i4LWE" resolve="requirementsLink" />
+              <ref role="1YBMHb" node="5bWzw_i4LWE" resolve="link" />
             </node>
             <node concept="2OE7Q9" id="5bWzw_i4TMV" role="2OEWyd">
               <ref role="2OEe5H" to="75wo:7_tU7IQtN5I" />
@@ -447,9 +461,34 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbJ" id="veUazBNhVn" role="3cqZAp">
+        <node concept="3clFbS" id="veUazBNhVp" role="3clFbx">
+          <node concept="2MkqsV" id="veUazBNiD7" role="3cqZAp">
+            <node concept="Xl_RD" id="veUazBNiDs" role="2MkJ7o">
+              <property role="Xl_RC" value="cannot be used under this requirement" />
+            </node>
+            <node concept="1YBJjd" id="veUazBNiFi" role="2OEOjV">
+              <ref role="1YBMHb" node="5bWzw_i4LWE" resolve="link" />
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="veUazBNiby" role="3clFbw">
+          <node concept="2OqwBi" id="veUazBNib$" role="3fr31v">
+            <node concept="1YBJjd" id="veUazBNib_" role="2Oq$k0">
+              <ref role="1YBMHb" node="5bWzw_i4LWE" resolve="link" />
+            </node>
+            <node concept="2qgKlT" id="veUazBNibA" role="2OqNvi">
+              <ref role="37wK5l" to="xvsr:veUazBMRZ6" resolve="canBeUsedUnderRequirement" />
+              <node concept="37vLTw" id="veUazBNiAJ" role="37wK5m">
+                <ref role="3cqZAo" node="veUazBNieZ" resolve="req" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="5bWzw_i4LWE" role="1YuTPh">
-      <property role="TrG5h" value="requirementsLink" />
+      <property role="TrG5h" value="link" />
       <ref role="1YaFvo" to="75wo:7_tU7IQtN5z" resolve="RequirementsLink" />
     </node>
   </node>
