@@ -278,6 +278,9 @@
     <node concept="PrWs8" id="7FgMBfg9sEu" role="PzmwI">
       <ref role="PrY4T" to="x27k:2h5hmpsyQcW" resolve="IFunctionLikeReducedToSingleFunction" />
     </node>
+    <node concept="PrWs8" id="6V6S12czTZ7" role="PzmwI">
+      <ref role="PrY4T" to="x27k:6V6S12clNH$" resolve="IDataFlowAnalyzerEntryPoint" />
+    </node>
     <node concept="1TJgyj" id="SwwM9UHwwO" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="interrupt" />

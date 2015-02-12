@@ -251,6 +251,9 @@
     <node concept="PrWs8" id="2h5hmpsCHWP" role="PzmwI">
       <ref role="PrY4T" node="2h5hmpsyQcW" resolve="IFunctionLikeReducedToSingleFunction" />
     </node>
+    <node concept="PrWs8" id="6V6S12clNLY" role="PzmwI">
+      <ref role="PrY4T" node="6V6S12clNH$" resolve="IDataFlowAnalyzerEntryPoint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6Q7bJ$$my3n">
     <property role="3GE5qa" value="functions" />
@@ -1228,6 +1231,9 @@
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" node="3_CPcn39dht" resolve="ArgumentKind" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="6V6S12clNH$">
+    <property role="TrG5h" value="IDataFlowAnalyzerEntryPoint" />
   </node>
 </model>
 
