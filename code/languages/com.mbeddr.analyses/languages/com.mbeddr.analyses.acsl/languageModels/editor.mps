@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="97v6" ref="r:cdcd02c7-c183-4a14-baf5-bd6025a1a5a1(com.mbeddr.analyses.acsl.structure)" implicit="true" />
+    <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -63,7 +64,7 @@
         <property role="3F0ifm" value="  @ requires:" />
       </node>
       <node concept="3F1sOY" id="3i$cQqpAZFn" role="3EZMnx">
-        <ref role="1NtTu8" to="97v6:3i$cQqpDv$F" />
+        <ref role="1NtTu8" to="q5q6:637qsduSbtq" />
       </node>
       <node concept="l2Vlx" id="3i$cQqpAZF4" role="2iSdaV" />
     </node>
@@ -110,7 +111,7 @@
         <property role="3F0ifm" value="  @ ensures:" />
       </node>
       <node concept="3F1sOY" id="3i$cQqpDvqv" role="3EZMnx">
-        <ref role="1NtTu8" to="97v6:3i$cQqpDv$F" />
+        <ref role="1NtTu8" to="q5q6:637qsduSbtq" />
       </node>
       <node concept="l2Vlx" id="3i$cQqpDvqw" role="2iSdaV" />
     </node>

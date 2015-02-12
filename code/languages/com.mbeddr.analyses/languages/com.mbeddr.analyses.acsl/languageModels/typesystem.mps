@@ -9,6 +9,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="97v6" ref="r:cdcd02c7-c183-4a14-baf5-bd6025a1a5a1(com.mbeddr.analyses.acsl.structure)" implicit="true" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
+    <import index="xm1x" ref="r:d7418a24-8686-4285-a6d5-12aaaa6d68ee(com.mbeddr.analyses.acsl.behavior)" implicit="true" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -178,8 +179,8 @@
               <node concept="1YBJjd" id="3i$cQqpBFUX" role="2Oq$k0">
                 <ref role="1YBMHb" node="3i$cQqpBFTp" resolve="contr" />
               </node>
-              <node concept="3TrEf2" id="3i$cQqpD$9A" role="2OqNvi">
-                <ref role="3Tt5mk" to="97v6:3i$cQqpDv$F" />
+              <node concept="2qgKlT" id="5GEvLp_R6$3" role="2OqNvi">
+                <ref role="37wK5l" to="xm1x:5GEvLp_R4Ek" resolve="exp" />
               </node>
             </node>
           </node>
@@ -243,8 +244,8 @@
               <node concept="1YBJjd" id="10dmWHgkVOl" role="2Oq$k0">
                 <ref role="1YBMHb" node="10dmWHgkq18" resolve="iAtomicContract" />
               </node>
-              <node concept="3TrEf2" id="10dmWHgkW7y" role="2OqNvi">
-                <ref role="3Tt5mk" to="97v6:3i$cQqpDv$F" />
+              <node concept="2qgKlT" id="5GEvLp_R6a0" role="2OqNvi">
+                <ref role="37wK5l" to="xm1x:5GEvLp_R4Ek" resolve="exp" />
               </node>
             </node>
           </node>
@@ -255,8 +256,8 @@
               <node concept="1YBJjd" id="10dmWHgkq84" role="2Oq$k0">
                 <ref role="1YBMHb" node="10dmWHgkq18" resolve="iAtomicContract" />
               </node>
-              <node concept="3TrEf2" id="10dmWHgkElS" role="2OqNvi">
-                <ref role="3Tt5mk" to="97v6:3i$cQqpDv$F" />
+              <node concept="2qgKlT" id="5GEvLp_R5Rd" role="2OqNvi">
+                <ref role="37wK5l" to="xm1x:5GEvLp_R4Ek" resolve="exp" />
               </node>
             </node>
             <node concept="2qgKlT" id="10dmWHgkVEe" role="2OqNvi">
