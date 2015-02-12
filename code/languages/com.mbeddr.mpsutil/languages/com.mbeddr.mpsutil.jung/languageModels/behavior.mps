@@ -1278,6 +1278,27 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="595ZbraDA$4" role="jymVt" />
+    <node concept="3clFb_" id="595ZbraD$$u" role="jymVt">
+      <property role="TrG5h" value="hasOutEdges" />
+      <node concept="10P_77" id="595ZbraDKaf" role="3clF45" />
+      <node concept="3Tm1VV" id="595ZbraD$$x" role="1B3o_S" />
+      <node concept="3clFbS" id="595ZbraD$$y" role="3clF47">
+        <node concept="3clFbF" id="595ZbraDFMu" role="3cqZAp">
+          <node concept="3eOSWO" id="595ZbraDH6B" role="3clFbG">
+            <node concept="3cmrfG" id="595ZbraDH7o" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+            <node concept="2OqwBi" id="595ZbraDFUj" role="3uHU7B">
+              <node concept="1rXfSq" id="595ZbraDFMt" role="2Oq$k0">
+                <ref role="37wK5l" node="1mVSOo2R3Mz" resolve="outEdges" />
+              </node>
+              <node concept="34oBXx" id="595ZbraDGjx" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="2RWKP1E_smI" role="jymVt" />
     <node concept="3clFb_" id="2RWKP1E_qFo" role="jymVt">
       <property role="TrG5h" value="outNeighbors" />
@@ -3401,6 +3422,24 @@
         <property role="TrG5h" value="n" />
         <node concept="3uibUv" id="2g0OLEr1RrZ" role="1tU5fm">
           <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="19KGnIUsLEx" role="jymVt" />
+    <node concept="3clFb_" id="19KGnIUsIXA" role="jymVt">
+      <property role="TrG5h" value="getPrimarySelectedNode" />
+      <node concept="3uibUv" id="19KGnIUsSwS" role="3clF45">
+        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+      </node>
+      <node concept="3Tm1VV" id="19KGnIUsIXC" role="1B3o_S" />
+      <node concept="3clFbS" id="19KGnIUsIXD" role="3clF47">
+        <node concept="3clFbF" id="19KGnIUsIXE" role="3cqZAp">
+          <node concept="2OqwBi" id="19KGnIUsIXH" role="3clFbG">
+            <node concept="Xjq3P" id="19KGnIUsIXI" role="2Oq$k0" />
+            <node concept="2OwXpG" id="19KGnIUsIXJ" role="2OqNvi">
+              <ref role="2Oxat5" node="2g0OLEr1blm" resolve="primarySelection" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
