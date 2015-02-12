@@ -1036,7 +1036,7 @@
           <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
           <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="6573709714627799035" nodeInfo="nn">
             <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="6573709714627799036" nodeInfo="ng">
-              <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
+              <property name="reexport" nameId="kdzh.5253498789149547713" value="true" />
               <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="2515196518058050327" resolveInfo="com.mbeddr.mpsutil.interpreter.rt" />
             </node>
           </node>
