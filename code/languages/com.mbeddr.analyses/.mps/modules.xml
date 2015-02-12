@@ -35,8 +35,9 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.lantest.results/com.mbeddr.lantest.results.msd" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.lantest.testdata/com.mbeddr.lantest.testdata.msd" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/test.analysis.screen_casts/test.analysis.screen_casts.msd" folder="test.examples" />
-      <modulePath path="$PROJECT_DIR$/tests/test.analyses.acsl.testcode/test.analyses.acsl.testcode.msd" folder="test" />
-      <modulePath path="$PROJECT_DIR$/tests/test.analyses.acsl.ts/test.analyses.acsl.ts.msd" folder="test" />
+      <modulePath path="$PROJECT_DIR$/tests/test.analyses.acsl.testcode/test.analyses.acsl.testcode.msd" folder="test.acsl" />
+      <modulePath path="$PROJECT_DIR$/tests/test.analyses.acsl.ts/test.analyses.acsl.ts.msd" folder="test.acsl" />
+      <modulePath path="$PROJECT_DIR$/tests/test.analyses.acsl/test.analyses.acsl.msd" folder="test.acsl" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.base.testcode/test.analyses.base.testcode.msd" folder="test.base" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.base/test.analyses.base.msd" folder="test.base" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.testcode/testcode.msd" folder="test.cbmc" />
