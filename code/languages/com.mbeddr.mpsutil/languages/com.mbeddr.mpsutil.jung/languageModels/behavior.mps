@@ -3898,6 +3898,51 @@
       </node>
       <node concept="3Tm1VV" id="2$2HGUewAur" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="veUazBUlkl" role="jymVt" />
+    <node concept="2YIFZL" id="veUazBUkDg" role="jymVt">
+      <property role="TrG5h" value="square" />
+      <property role="IEkAT" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="veUazBUkDh" role="3clF47">
+        <node concept="3clFbF" id="veUazBUnnk" role="3cqZAp">
+          <node concept="2ShNRf" id="veUazBUnnl" role="3clFbG">
+            <node concept="1pGfFk" id="veUazBUnnm" role="2ShVmc">
+              <ref role="37wK5l" to="ar19:~Rectangle2D$Float.&lt;init&gt;(float,float,float,float)" resolve="Rectangle2D.Float" />
+              <node concept="1ZRNhn" id="veUazBUnnn" role="37wK5m">
+                <node concept="37vLTw" id="veUazBUnno" role="2$L3a6">
+                  <ref role="3cqZAo" node="veUazBUkDS" resolve="size" />
+                </node>
+              </node>
+              <node concept="FJ1c_" id="veUazBUnnp" role="37wK5m">
+                <node concept="2$xPTn" id="veUazBUnnq" role="3uHU7w">
+                  <property role="2$xPTl" value="2.0F" />
+                </node>
+                <node concept="1ZRNhn" id="veUazBUnnr" role="3uHU7B">
+                  <node concept="37vLTw" id="veUazBUnns" role="2$L3a6">
+                    <ref role="3cqZAo" node="veUazBUkDS" resolve="size" />
+                  </node>
+                </node>
+              </node>
+              <node concept="37vLTw" id="veUazBUnnt" role="37wK5m">
+                <ref role="3cqZAo" node="veUazBUkDS" resolve="size" />
+              </node>
+              <node concept="37vLTw" id="veUazBUnnu" role="37wK5m">
+                <ref role="3cqZAo" node="veUazBUkDS" resolve="size" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="veUazBUkDS" role="3clF46">
+        <property role="TrG5h" value="size" />
+        <node concept="10Oyi0" id="veUazBUkDT" role="1tU5fm" />
+      </node>
+      <node concept="3uibUv" id="veUazBUkDW" role="3clF45">
+        <ref role="3uigEE" to="1t7x:~Shape" resolve="Shape" />
+      </node>
+      <node concept="3Tm1VV" id="veUazBUkDX" role="1B3o_S" />
+    </node>
     <node concept="2tJIrI" id="2$2HGUewEF7" role="jymVt" />
     <node concept="2YIFZL" id="2$2HGUewE1x" role="jymVt">
       <property role="TrG5h" value="circle" />
