@@ -123,9 +123,6 @@
       <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
         <child id="4052432714772608243" name="text" index="1w35rA" />
       </concept>
-      <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
-        <reference id="747084250476878887" name="chunk" index="3GEb4d" />
-      </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
@@ -136,7 +133,6 @@
       </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
-        <child id="1317894735999304826" name="imports" index="2OODSX" />
       </concept>
       <concept id="6437088627575722830" name="com.mbeddr.core.modules.structure.ImplementationModule" flags="ng" index="N3F5e" />
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
@@ -248,11 +244,6 @@
     <node concept="N3Fnx" id="AO_S936VPx" role="N3F5h">
       <property role="TrG5h" value="add" />
       <node concept="3XIRFW" id="AO_S936VPz" role="3XIRFX">
-        <node concept="1_9egQ" id="49Pc$RE0lci" role="3XIRFZ">
-          <node concept="3O_q_g" id="49Pc$RE0lcg" role="1_9egR">
-            <ref role="3O_q_h" node="49Pc$RE0icI" resolve="f" />
-          </node>
-        </node>
         <node concept="2BFjQ_" id="AO_S936VPE" role="3XIRFZ">
           <node concept="2BOciq" id="AO_S936VPJ" role="2BFjQA">
             <node concept="3ZUYvv" id="AO_S936VPM" role="3TlMhJ">
@@ -507,9 +498,6 @@
     </node>
     <node concept="2NXPZ9" id="bhVSeGUgzZ" role="N3F5h">
       <property role="TrG5h" value="empty_1394961427320_2" />
-    </node>
-    <node concept="3GEVxB" id="49Pc$RE0i_p" role="2OODSX">
-      <ref role="3GEb4d" node="49Pc$RE0bjK" resolve="M2" />
     </node>
   </node>
   <node concept="2v9HqL" id="AO_S936VPj">
@@ -1133,20 +1121,6 @@
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
-      </node>
-    </node>
-  </node>
-  <node concept="N3F5e" id="49Pc$RE0bjK">
-    <property role="TrG5h" value="M2" />
-    <node concept="N3Fnx" id="49Pc$RE0icI" role="N3F5h">
-      <property role="TrG5h" value="f" />
-      <property role="2OOxQR" value="true" />
-      <node concept="3XIRFW" id="49Pc$RE0icK" role="3XIRFX">
-        <node concept="3XISUE" id="49Pc$RE0icL" role="3XIRFZ" />
-      </node>
-      <node concept="19Rifw" id="49Pc$RE0ich" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
       </node>
     </node>
   </node>
