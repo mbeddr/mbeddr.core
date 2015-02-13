@@ -5325,6 +5325,18 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1JjMe_3nYb3" role="3bR37C">
+          <node concept="3bR9La" id="1JjMe_3nYb4" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7eF9rfAnuj$" resolve="com.mbeddr.cc.var.fm" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1JjMe_3nYb5" role="3bR37C">
+          <node concept="3bR9La" id="1JjMe_3nYb6" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7eF9rfAnujP" role="2G$12L">
         <property role="BnDLt" value="true" />
