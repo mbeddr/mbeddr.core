@@ -190,6 +190,7 @@
         <child id="6825476687691337713" name="contents" index="Idr$j" />
       </concept>
       <concept id="6825476687691317627" name="com.mbeddr.cc.var.fm.structure.OptionalConstraint" flags="ng" index="Idvup" />
+      <concept id="6825476687691317629" name="com.mbeddr.cc.var.fm.structure.OrConstraint" flags="ng" index="Idvuv" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -270,6 +271,13 @@
         </node>
         <node concept="Id4hK" id="5JmNU9PAoEQ" role="Id4hQ">
           <property role="TrG5h" value="test" />
+          <node concept="Idvuv" id="1Hrx$eAyynb" role="Id4hL" />
+          <node concept="Id4hK" id="1Hrx$eAyrBq" role="Id4hQ">
+            <property role="TrG5h" value="o1" />
+          </node>
+          <node concept="Id4hK" id="1Hrx$eAyyne" role="Id4hQ">
+            <property role="TrG5h" value="o2" />
+          </node>
         </node>
         <node concept="Id4hK" id="2qCeyL$LuVk" role="Id4hQ">
           <property role="TrG5h" value="valueTest" />

@@ -17,8 +17,8 @@
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="grvc" ref="r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -147,6 +147,7 @@
         <child id="1206060644605" name="statementList" index="3eOfB_" />
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -1130,8 +1131,37 @@
       <property role="TrG5h" value="validateChildrenConfiguration" />
       <ref role="13i0hy" node="5USXI9Kzg64" resolve="validateChildrenConfiguration" />
       <node concept="3clFbS" id="5USXI9Kzg7n" role="3clF47">
-        <node concept="3cpWs6" id="5USXI9Kzg7o" role="3cqZAp">
-          <node concept="10Nm6u" id="5USXI9Kzg7p" role="3cqZAk" />
+        <node concept="3clFbJ" id="1Hrx$eAzm6I" role="3cqZAp">
+          <node concept="3eOVzh" id="1Hrx$eAznaR" role="3clFbw">
+            <node concept="2OqwBi" id="1Hrx$eAzm6L" role="3uHU7B">
+              <node concept="2OqwBi" id="1Hrx$eAzm6M" role="2Oq$k0">
+                <node concept="3cpWs2" id="1Hrx$eAzm6N" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5USXI9Kzg7q" resolve="selectedFeature" />
+                </node>
+                <node concept="3Tsc0h" id="1Hrx$eAzm6O" role="2OqNvi">
+                  <ref role="3TtcxE" to="qqyh:5USXI9Kzbaf" />
+                </node>
+              </node>
+              <node concept="34oBXx" id="1Hrx$eAzm6P" role="2OqNvi" />
+            </node>
+            <node concept="3cmrfG" id="1Hrx$eAzm6K" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="1Hrx$eAzm6Q" role="3clFbx">
+            <node concept="3cpWs6" id="1Hrx$eAzm6R" role="3cqZAp">
+              <node concept="Xl_RD" id="1Hrx$eAzm6S" role="3cqZAk">
+                <property role="Xl_RC" value="or: at least one child feature must be selected" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="1Hrx$eAzm6T" role="9aQIa">
+            <node concept="3clFbS" id="1Hrx$eAzm6U" role="9aQI4">
+              <node concept="3cpWs6" id="1Hrx$eAzm6V" role="3cqZAp">
+                <node concept="10Nm6u" id="1Hrx$eAzm6W" role="3cqZAk" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="37vLTG" id="5USXI9Kzg7q" role="3clF46">
