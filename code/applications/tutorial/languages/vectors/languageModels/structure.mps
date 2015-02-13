@@ -8,6 +8,7 @@
   <imports>
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -17,7 +18,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -110,15 +113,33 @@
   </node>
   <node concept="PlHQZ" id="WxZteubh6W">
     <property role="TrG5h" value="IMatrixType" />
-    <node concept="1TJgyj" id="4LP87XufLdY" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="baseType" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpck:hYa1RjM" resolve="IType" />
-    </node>
     <node concept="1TJgyi" id="WxZteubncR" role="1TKVEl">
       <property role="TrG5h" value="dimensionsRows" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="PrWs8" id="3yoEvFpCXWW" role="PrDN$">
+      <ref role="PrY4T" to="c4fa:6IWRcVPT6tl" resolve="ITypeContainingType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3yoEvFpCNm0">
+    <property role="3GE5qa" value="matrix" />
+    <property role="TrG5h" value="MatrixAccessExpression" />
+    <property role="R4oN_" value="matrix access" />
+    <ref role="1TJDcQ" to="mj1l:2APHWiztz8M" resolve="UnaryExpression" />
+    <node concept="1TJgyj" id="3yoEvFpCOE9" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="index" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="7C830Ec4S3g" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:7C830Ec4S3e" resolve="IStopReshuffling" />
+    </node>
+    <node concept="PrWs8" id="5HxjapwgqQC" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="PrWs8" id="6mzZsELoBOI" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:6mzZsELnskC" resolve="IBinaryLike" />
     </node>
   </node>
 </model>
