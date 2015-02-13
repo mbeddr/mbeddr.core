@@ -19502,7 +19502,7 @@
                 <ref role="3cqZAo" node="1OJ4NX2Domv" resolve="graph" />
               </node>
               <node concept="2OwXpG" id="1OJ4NX2Don6" role="2OqNvi">
-                <ref role="2Oxat5" to="ln2k:7sO1cHMdZDd" resolve="vertexColor" />
+                <ref role="2Oxat5" to="ln2k:7sO1cHMdZDd" resolve="vertexFillColor" />
               </node>
             </node>
             <node concept="1bVj0M" id="1OJ4NX2Don7" role="37vLTx">
@@ -19592,6 +19592,9 @@
                       <node concept="2YIFZM" id="2QWptevlXeh" role="3cqZAk">
                         <ref role="37wK5l" to="ln2k:2QWptevlCln" resolve="rectangle" />
                         <ref role="1Pybhc" to="ln2k:2QWptevlCjR" resolve="ShapeFactory" />
+                        <node concept="37vLTw" id="13o1gUiUesb" role="37wK5m">
+                          <ref role="3cqZAo" node="1OJ4NX2ZTlQ" resolve="n" />
+                        </node>
                         <node concept="1eOMI4" id="2QWptevlRRK" role="37wK5m">
                           <node concept="10QFUN" id="2QWptevlRRL" role="1eOMHV">
                             <node concept="1eOMI4" id="2QWptevlRRM" role="10QFUP">
@@ -19636,8 +19639,11 @@
                 </node>
                 <node concept="3cpWs6" id="2QWptevlPn2" role="3cqZAp">
                   <node concept="2YIFZM" id="2QWptevlQqg" role="3cqZAk">
-                    <ref role="37wK5l" to="ln2k:2QWptevlClF" resolve="ellipse" />
+                    <ref role="37wK5l" to="ln2k:2QWptevlClF" resolve="circle" />
                     <ref role="1Pybhc" to="ln2k:2QWptevlCjR" resolve="ShapeFactory" />
+                    <node concept="37vLTw" id="13o1gUiUg8f" role="37wK5m">
+                      <ref role="3cqZAo" node="1OJ4NX2ZTlQ" resolve="n" />
+                    </node>
                     <node concept="3cmrfG" id="2QWptevlYxf" role="37wK5m">
                       <property role="3cmrfH" value="10" />
                     </node>
