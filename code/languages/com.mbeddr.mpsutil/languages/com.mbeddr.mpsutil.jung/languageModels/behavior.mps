@@ -10,7 +10,9 @@
     <import index="cl95" ref="1338ba73-5059-479b-a929-de86597a62b8/f:java_stub#1338ba73-5059-479b-a929-de86597a62b8#org.apache.commons.collections15(com.mbeddr.mpsutil.jung.pluginSolution/org.apache.commons.collections15@java_stub)" />
     <import index="1t7x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
     <import index="ar19" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.geom(JDK/java.awt.geom@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="abg0" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.font(JDK/java.awt.font@java_stub)" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="xei" ref="1338ba73-5059-479b-a929-de86597a62b8/f:java_stub#1338ba73-5059-479b-a929-de86597a62b8#edu.uci.ics.jung.visualization.util(com.mbeddr.mpsutil.jung.pluginSolution/edu.uci.ics.jung.visualization.util@java_stub)" />
     <import index="10jo" ref="r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung.structure)" implicit="true" />
   </imports>
   <registry>
@@ -40,6 +42,9 @@
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
+      <concept id="1219920932475" name="jetbrains.mps.baseLanguage.structure.VariableArityType" flags="in" index="8X2XB">
+        <child id="1219921048460" name="componentType" index="8Xvag" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -164,7 +169,9 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk">
+        <child id="1212687122400" name="typeParameter" index="1pMfVU" />
+      </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -3723,6 +3730,12 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="13o1gUiQUkN" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3uibUv" id="13o1gUiQUqg" role="1tU5fm">
+          <ref role="3uigEE" node="5yCuRHcav6I" resolve="JNNode" />
+        </node>
+      </node>
       <node concept="37vLTG" id="2QWptevlCl0" role="3clF46">
         <property role="TrG5h" value="size" />
         <node concept="10Oyi0" id="2QWptevlCkZ" role="1tU5fm" />
@@ -3732,7 +3745,55 @@
       </node>
       <node concept="3Tm1VV" id="2QWptevlCkx" role="1B3o_S" />
     </node>
-    <node concept="2tJIrI" id="2QWptevlCma" role="jymVt" />
+    <node concept="2tJIrI" id="13o1gUiPweS" role="jymVt" />
+    <node concept="2YIFZL" id="13o1gUiPw7d" role="jymVt">
+      <property role="TrG5h" value="polygon" />
+      <property role="IEkAT" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="13o1gUiPw7e" role="3clF47">
+        <node concept="3clFbF" id="13o1gUiQMH0" role="3cqZAp">
+          <node concept="2OqwBi" id="13o1gUiQSMx" role="3clFbG">
+            <node concept="2ShNRf" id="13o1gUiQMGY" role="2Oq$k0">
+              <node concept="1pGfFk" id="13o1gUiQSf2" role="2ShVmc">
+                <ref role="37wK5l" to="xei:~VertexShapeFactory.&lt;init&gt;()" resolve="VertexShapeFactory" />
+                <node concept="3uibUv" id="13o1gUiQSJt" role="1pMfVU">
+                  <ref role="3uigEE" node="5yCuRHcav6I" resolve="JNNode" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="13o1gUiQT4S" role="2OqNvi">
+              <ref role="37wK5l" to="xei:~VertexShapeFactory.getRegularPolygon(java.lang.Object,int):java.awt.Shape" resolve="getRegularPolygon" />
+              <node concept="37vLTw" id="13o1gUiQUi6" role="37wK5m">
+                <ref role="3cqZAo" node="13o1gUiQUd5" resolve="node" />
+              </node>
+              <node concept="37vLTw" id="13o1gUiQTDP" role="37wK5m">
+                <ref role="3cqZAo" node="13o1gUiQAWS" resolve="numSides" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="13o1gUiQUd5" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3uibUv" id="13o1gUiQUgW" role="1tU5fm">
+          <ref role="3uigEE" node="5yCuRHcav6I" resolve="JNNode" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="13o1gUiPw7s" role="3clF46">
+        <property role="TrG5h" value="size" />
+        <node concept="10Oyi0" id="13o1gUiPw7t" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="13o1gUiQAWS" role="3clF46">
+        <property role="TrG5h" value="numSides" />
+        <node concept="10Oyi0" id="13o1gUiQBX7" role="1tU5fm" />
+      </node>
+      <node concept="3uibUv" id="13o1gUiPw7u" role="3clF45">
+        <ref role="3uigEE" to="1t7x:~Shape" resolve="Shape" />
+      </node>
+      <node concept="3Tm1VV" id="13o1gUiPw7v" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="2H0DgtbcWnA" role="jymVt" />
     <node concept="2YIFZL" id="2QWptevlClF" role="jymVt">
       <property role="TrG5h" value="circle" />
       <property role="IEkAT" value="false" />
@@ -3773,6 +3834,12 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="13o1gUiQUuM" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3uibUv" id="13o1gUiQU$d" role="1tU5fm">
+          <ref role="3uigEE" node="5yCuRHcav6I" resolve="JNNode" />
+        </node>
+      </node>
       <node concept="37vLTG" id="2QWptevlClH" role="3clF46">
         <property role="TrG5h" value="size" />
         <node concept="10Oyi0" id="2QWptevlClI" role="1tU5fm" />
@@ -3782,6 +3849,75 @@
       </node>
       <node concept="3Tm1VV" id="2QWptevlClK" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="2H0Dgtbd3R_" role="jymVt" />
+    <node concept="2YIFZL" id="2H0Dgtbd3JQ" role="jymVt">
+      <property role="TrG5h" value="composite" />
+      <property role="IEkAT" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="2H0Dgtbd3JR" role="3clF47">
+        <node concept="3cpWs8" id="2H0Dgtbd4l5" role="3cqZAp">
+          <node concept="3cpWsn" id="2H0Dgtbd4l6" role="3cpWs9">
+            <property role="TrG5h" value="a" />
+            <node concept="3uibUv" id="2H0Dgtbd4l7" role="1tU5fm">
+              <ref role="3uigEE" to="ar19:~Area" resolve="Area" />
+            </node>
+            <node concept="2ShNRf" id="2H0Dgtbd4m0" role="33vP2m">
+              <node concept="1pGfFk" id="2H0Dgtbd4CH" role="2ShVmc">
+                <ref role="37wK5l" to="ar19:~Area.&lt;init&gt;()" resolve="Area" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="2H0Dgtbd54g" role="3cqZAp">
+          <node concept="2GrKxI" id="2H0Dgtbd54i" role="2Gsz3X">
+            <property role="TrG5h" value="s" />
+          </node>
+          <node concept="3clFbS" id="2H0Dgtbd54k" role="2LFqv$">
+            <node concept="3clFbF" id="2H0Dgtbd5aK" role="3cqZAp">
+              <node concept="2OqwBi" id="2H0Dgtbd5c9" role="3clFbG">
+                <node concept="37vLTw" id="2H0Dgtbd5aJ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2H0Dgtbd4l6" resolve="a" />
+                </node>
+                <node concept="liA8E" id="2H0Dgtbd5lB" role="2OqNvi">
+                  <ref role="37wK5l" to="ar19:~Area.add(java.awt.geom.Area):void" resolve="add" />
+                  <node concept="2ShNRf" id="2H0Dgtbd5n7" role="37wK5m">
+                    <node concept="1pGfFk" id="2H0Dgtbd5F7" role="2ShVmc">
+                      <ref role="37wK5l" to="ar19:~Area.&lt;init&gt;(java.awt.Shape)" resolve="Area" />
+                      <node concept="2GrUjf" id="2H0Dgtbd5II" role="37wK5m">
+                        <ref role="2Gs0qQ" node="2H0Dgtbd54i" resolve="s" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="2H0Dgtbd57P" role="2GsD0m">
+            <ref role="3cqZAo" node="2H0Dgtbd4gV" resolve="shapes" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2H0Dgtbd4Dr" role="3cqZAp">
+          <node concept="37vLTw" id="2H0Dgtbd4Dp" role="3clFbG">
+            <ref role="3cqZAo" node="2H0Dgtbd4l6" resolve="a" />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="2H0Dgtbd3K7" role="3clF45">
+        <ref role="3uigEE" to="1t7x:~Shape" resolve="Shape" />
+      </node>
+      <node concept="3Tm1VV" id="2H0Dgtbd3K8" role="1B3o_S" />
+      <node concept="37vLTG" id="2H0Dgtbd4gV" role="3clF46">
+        <property role="TrG5h" value="shapes" />
+        <node concept="8X2XB" id="2H0Dgtbd4kf" role="1tU5fm">
+          <node concept="3uibUv" id="2H0Dgtbd4gU" role="8Xvag">
+            <ref role="3uigEE" to="1t7x:~Shape" resolve="Shape" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2H0Dgtbd3G$" role="jymVt" />
+    <node concept="2tJIrI" id="2H0Dgtbd3I7" role="jymVt" />
     <node concept="2tJIrI" id="2QWptevlCkj" role="jymVt" />
     <node concept="3Tm1VV" id="2QWptevlCjS" role="1B3o_S" />
   </node>
