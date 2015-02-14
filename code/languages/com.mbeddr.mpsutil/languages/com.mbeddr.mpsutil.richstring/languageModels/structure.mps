@@ -106,6 +106,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561505" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561410" resolveInfo="IFormatConversionFlagDateTime" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532375436913" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532375436894" resolveInfo="IFormatConversionFlagNeedsWidth" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337560381" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversionflag" />
@@ -141,11 +144,14 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561661" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561280" resolveInfo="IFormatConversionFlagFloatingPoint" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532375502571" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532375502563" resolveInfo="IFormatConversionFlagPrefixesValue" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337560518" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversionflag" />
     <property name="name" nameId="tpck.1169194664001" value="ConversionFlagLeadingSpace" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="leading-space" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value=" " />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="include a leading space for positive values " />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337560519" nodeInfo="ig">
@@ -156,6 +162,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561683" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561280" resolveInfo="IFormatConversionFlagFloatingPoint" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532375502582" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532375502563" resolveInfo="IFormatConversionFlagPrefixesValue" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337560608" nodeInfo="ig">
@@ -172,6 +181,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561699" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561280" resolveInfo="IFormatConversionFlagFloatingPoint" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532375436927" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532375436894" resolveInfo="IFormatConversionFlagNeedsWidth" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337560734" nodeInfo="ig">
@@ -460,6 +472,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337564137" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337563283" resolveInfo="IFormatConversionFloatingPoint" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8393429337722691361" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8393429337722681950" resolveInfo="IFormatConversionFloatingPointNoBigDecimal" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337564254" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.floatingpoint" />
@@ -469,6 +484,9 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337564255" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337563283" resolveInfo="IFormatConversionFloatingPoint" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8393429337722703154" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8393429337722681950" resolveInfo="IFormatConversionFloatingPointNoBigDecimal" />
     </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3354025285337564478" nodeInfo="ig">
@@ -553,11 +571,6 @@
     <property name="final" nameId="tpce.4628067390765956807" value="false" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="%" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7716961532366897857" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="category" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpce.1169125787135" resolveInfo="AbstractConceptDeclaration" />
-    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7716961532366136821" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="flags" />
@@ -611,7 +624,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532366204306" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="format.category" />
-    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryIntegral" />
+    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryIntegralInt" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532366204315" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532366204282" resolveInfo="IInlineFormatCategory" />
@@ -619,7 +632,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532366204348" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="format.category" />
-    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryGeneral" />
+    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryGeneralObject" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532366204349" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532366204282" resolveInfo="IInlineFormatCategory" />
@@ -627,7 +640,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532366204358" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="format.category" />
-    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryFloatingPoint" />
+    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryFloatingPointDouble" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532366204359" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532366204282" resolveInfo="IInlineFormatCategory" />
@@ -1020,6 +1033,59 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373437700" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373434507" resolveInfo="IDateTimeCompositionConversion" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7716961532375436894" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversionflag" />
+    <property name="name" nameId="tpck.1169194664001" value="IFormatConversionFlagNeedsWidth" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532375436895" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560145" resolveInfo="IFormatConversionFlag" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7716961532375502563" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversionflag" />
+    <property name="name" nameId="tpck.1169194664001" value="IFormatConversionFlagPrefixesValue" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532375502564" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560145" resolveInfo="IFormatConversionFlag" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6473098541522083696" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.category" />
+    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryIntegralLong" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6473098541522083697" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532366204282" resolveInfo="IInlineFormatCategory" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6473098541524116846" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.category" />
+    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryGeneralBool" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6473098541524116847" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532366204282" resolveInfo="IInlineFormatCategory" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6473098541525717825" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.category" />
+    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryIntegralBigInt" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6473098541525717826" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532366204282" resolveInfo="IInlineFormatCategory" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8393429337719318150" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.category" />
+    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryFloatingPointBigDecimal" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8393429337719318151" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532366204282" resolveInfo="IInlineFormatCategory" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8393429337722681950" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion" />
+    <property name="name" nameId="tpck.1169194664001" value="IFormatConversionFloatingPointNoBigDecimal" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8393429337722681951" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337563283" resolveInfo="IFormatConversionFloatingPoint" />
     </node>
   </root>
 </model>
