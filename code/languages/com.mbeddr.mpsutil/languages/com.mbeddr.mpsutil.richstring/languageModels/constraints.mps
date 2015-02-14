@@ -48,5 +48,9 @@
       </node>
     </node>
   </root>
+  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7716961532368764952" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.format" />
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="spci.3354025285337569334" resolveInfo="InlineFormat" />
+  </root>
 </model>
 
