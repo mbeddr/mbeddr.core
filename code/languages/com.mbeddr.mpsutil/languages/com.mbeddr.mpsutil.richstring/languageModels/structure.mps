@@ -487,6 +487,12 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="t" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="date and time conversion characters" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7716961532373442892" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="specificConversion" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7716961532373406518" resolveInfo="IDateTimeSpecificConversion" />
+    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337564713" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337564478" resolveInfo="IFormatConversionDateTime" />
     </node>
@@ -496,7 +502,7 @@
     <property name="name" nameId="tpck.1169194664001" value="ConversionDateTimeUpperCase" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="T" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="(uppercased) date and time conversion characters" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3354025285337564600" resolveInfo="ConversionDateTime" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337564837" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337564478" resolveInfo="IFormatConversionDateTime" />
     </node>
@@ -676,6 +682,344 @@
     <property name="name" nameId="tpck.1169194664001" value="IInlineFormatDescendantsIntegral" />
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532372061836" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285339224139" resolveInfo="IInlineFormatDescendants" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7716961532373406518" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime" />
+    <property name="name" nameId="tpck.1169194664001" value="IDateTimeSpecificConversion" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373407054" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532372061805" resolveInfo="IInlineFormatDescendantsDateTime" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7716961532373406679" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
+    <property name="name" nameId="tpck.1169194664001" value="ITimeSpecificConversion" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373406680" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406518" resolveInfo="IDateTimeSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373420368" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
+    <property name="name" nameId="tpck.1169194664001" value="TimeConversionHour24hPadded" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="H" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Hour of the day for the 24-hour clock, formatted as two digits with a leading zero as necessary i.e. 00 - 23. " />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373420369" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373420677" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
+    <property name="name" nameId="tpck.1169194664001" value="TimeConversionHour12hPadded" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="I" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Hour for the 12-hour clock, formatted as two digits with a leading zero as necessary, i.e. 01 - 12. " />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373420678" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373421023" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
+    <property name="name" nameId="tpck.1169194664001" value="TimeConversionHour24h" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="k" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Hour of the day for the 24-hour clock, i.e. 0 - 23. " />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373421024" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373421373" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
+    <property name="name" nameId="tpck.1169194664001" value="TimeConversionHour12h" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Hour for the 12-hour clock, i.e. 1 - 12. " />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="l" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373421374" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373421727" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
+    <property name="name" nameId="tpck.1169194664001" value="TimeConversionMinutePadded" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Minute within the hour formatted as two digits with a leading zero as necessary, i.e. 00 - 59. " />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="M" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373421728" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373422085" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
+    <property name="name" nameId="tpck.1169194664001" value="TimeConversionSecondPadded" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Seconds within the minute, formatted as two digits with a leading zero as necessary, i.e. 00 - 60." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="S" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373422086" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373422447" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
+    <property name="name" nameId="tpck.1169194664001" value="TimeConversionMillisecondPadded" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Millisecond within the second formatted as three digits with leading zeros as necessary, i.e. 000 - 999. " />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="L" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373422448" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373422813" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
+    <property name="name" nameId="tpck.1169194664001" value="TimeConversionNanosecondPadded" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Nanosecond within the second, formatted as nine digits with leading zeros as necessary, i.e. 000000000 - 999999999." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="N" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373422814" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373423363" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
+    <property name="name" nameId="tpck.1169194664001" value="TimeConversionAmPm" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Locale-specific morning or afternoon marker in lower case, e.g.&quot;am&quot; or &quot;pm&quot;." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="p" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373423364" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373423919" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
+    <property name="name" nameId="tpck.1169194664001" value="TimeConversionTimeZoneOffset" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="RFC 822 style numeric time zone offset from GMT, e.g. -0800." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="z" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373423920" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373424297" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
+    <property name="name" nameId="tpck.1169194664001" value="TimeConversionTimeZoneAbbreviation" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="A string representing the abbreviation for the time zone." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Z" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373424298" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373424679" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
+    <property name="name" nameId="tpck.1169194664001" value="TimeConversionSecondSinceEpoch" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Seconds since the beginning of the epoch starting at 1 January 1970 00:00:00 UTC." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="s" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373424680" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373425065" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
+    <property name="name" nameId="tpck.1169194664001" value="TimeConversionMillisecondSinceEpoch" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Milliseconds since the beginning of the epoch starting at 1 January 1970 00:00:00 UTC." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Q" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373425066" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7716961532373426926" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
+    <property name="name" nameId="tpck.1169194664001" value="IDateSpecificConversion" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373426927" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406518" resolveInfo="IDateTimeSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373428847" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
+    <property name="name" nameId="tpck.1169194664001" value="DateConversionMonthNameFull" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Locale-specific full month name, e.g. &quot;January&quot;, &quot;February&quot;. " />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="B" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373428848" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373429245" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
+    <property name="name" nameId="tpck.1169194664001" value="DateConversionMonthNameAbbreviated" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Locale-specific abbreviated month name, e.g. &quot;Jan&quot;, &quot;Feb&quot;. " />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="b" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373429246" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373429647" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
+    <property name="name" nameId="tpck.1169194664001" value="DateConversionMonthNameAbbreviatedAlt" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Locale-specific abbreviated month name, e.g. &quot;Jan&quot;, &quot;Feb&quot;. " />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="h" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373429648" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373429855" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
+    <property name="name" nameId="tpck.1169194664001" value="DateConversionDayOfWeekNameFull" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Locale-specific full name of the day of the week, e.g. &quot;Sunday&quot;, &quot;Monday&quot;." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="A" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373429856" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373430265" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
+    <property name="name" nameId="tpck.1169194664001" value="DateConversionDayOfWeekNameShort" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value=" \tLocale-specific short name of the day of the week, e.g. &quot;Sun&quot;, &quot;Mon&quot;." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="a" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373430266" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373430881" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
+    <property name="name" nameId="tpck.1169194664001" value="DateConversionYear2digitPadded" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Last two digits of the year, formatted with leading zeros as necessary, i.e. 00 - 99." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="y" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373430882" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373431503" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
+    <property name="name" nameId="tpck.1169194664001" value="DateConversionYear4digitPadded" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Year, formatted as at least four digits with leading zeros as necessary, e.g. 0092." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Y" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373431504" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373432131" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
+    <property name="name" nameId="tpck.1169194664001" value="DateConversionYear2digitDividedPadded" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Four-digit year divided by 100, formatted as two digits with leading zero as necessary, i.e. 00 - 99." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="C" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373432132" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373432765" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
+    <property name="name" nameId="tpck.1169194664001" value="DateConversionDayOfYearPadded" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Day of year, formatted as three digits with leading zeros as necessary, e.g. 001 - 366." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="j" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373432766" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373433405" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
+    <property name="name" nameId="tpck.1169194664001" value="DateConversionMonthPadded" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Month, formatted as two digits with leading zeros as necessary, i.e. 01 - 13. " />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="m" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373433406" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373433627" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
+    <property name="name" nameId="tpck.1169194664001" value="DateConversionDayOfMonthPadded" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Day of month, formatted as two digits with leading zeros as necessary, i.e. 01 - 31." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="d" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373433628" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373434065" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
+    <property name="name" nameId="tpck.1169194664001" value="DateConversionDayOfMonth" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Day of month, formatted as two digits, i.e. 1 - 31." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="e" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373434066" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7716961532373434507" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.composition" />
+    <property name="name" nameId="tpck.1169194664001" value="IDateTimeCompositionConversion" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373434508" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406518" resolveInfo="IDateTimeSpecificConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373434957" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.composition" />
+    <property name="name" nameId="tpck.1169194664001" value="DateConversionCompositionHourMinute24h" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Time formatted for the 24-hour clock as &quot;%tH:%tM&quot;." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="R" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373434958" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373434507" resolveInfo="IDateTimeCompositionConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373435407" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.composition" />
+    <property name="name" nameId="tpck.1169194664001" value="DateConversionCompositionHourMinuteSecond24h" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Time formatted for the 24-hour clock as &quot;%tH:%tM:%tS&quot;." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="T" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373435408" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373434507" resolveInfo="IDateTimeCompositionConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373435861" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.composition" />
+    <property name="name" nameId="tpck.1169194664001" value="DateConversionCompositionHourMinuteSecond12h" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Time formatted for the 12-hour clock as &quot;%tI:%tM:%tS %Tp&quot;." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="r" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373435862" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373434507" resolveInfo="IDateTimeCompositionConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373436543" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.composition" />
+    <property name="name" nameId="tpck.1169194664001" value="DateConversionCompositionYearMonthDayAmerican" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Date formatted as &quot;%tm/%td/%ty&quot;." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="D" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373436544" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373434507" resolveInfo="IDateTimeCompositionConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373437005" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.composition" />
+    <property name="name" nameId="tpck.1169194664001" value="DateConversionCompositionYearMonthDayISO" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="ISO 8601 complete date formatted as &quot;%tY-%tm-%td&quot;." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="F" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373437006" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373434507" resolveInfo="IDateTimeCompositionConversion" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373437699" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.composition" />
+    <property name="name" nameId="tpck.1169194664001" value="DateConversionCompositionYearMonthDayRFC" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Date and time formatted as &quot;%ta %tb %td %tT %tZ %tY&quot;, e.g. &quot;Sun Jul 20 16:17:00 EDT 1969&quot;." />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="c" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373437700" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373434507" resolveInfo="IDateTimeCompositionConversion" />
     </node>
   </root>
 </model>
