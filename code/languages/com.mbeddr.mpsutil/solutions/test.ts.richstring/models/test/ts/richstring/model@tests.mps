@@ -4961,5 +4961,319 @@
       </node>
     </node>
   </root>
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="8393429337723630899" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="PositiveTests" />
+    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="8393429337723633365" nodeInfo="ng">
+      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8393429337723633367" nodeInfo="ig">
+        <property name="nonStatic" nameId="tpee.521412098689998745" value="true" />
+        <property name="name" nameId="tpck.1169194664001" value="TestClass" />
+        <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="8393429337723653258" nodeInfo="igu">
+          <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
+          <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
+          <property name="name" nameId="tpck.1169194664001" value="obj" />
+          <property name="isFinal" nameId="tpee.1176718929932" value="false" />
+          <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8393429337723653238" nodeInfo="in">
+            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Object" resolveInfo="Object" />
+          </node>
+          <node role="initializer" roleId="tpee.1068431790190" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8393429337723653302" nodeInfo="nn">
+            <property name="value" nameId="tpee.1070475926801" value="" />
+          </node>
+        </node>
+        <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="8393429337723643284" nodeInfo="igu">
+          <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
+          <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
+          <property name="name" nameId="tpck.1169194664001" value="general1" />
+          <property name="isFinal" nameId="tpee.1176718929932" value="false" />
+          <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8393429337723638326" nodeInfo="nn" />
+          <node role="type" roleId="tpee.5680397130376446158" type="spci.RichStringType" typeId="spci.3354025285337211097" id="8393429337723638350" nodeInfo="ig" />
+          <node role="initializer" roleId="tpee.1068431790190" type="spci.RichString" typeId="spci.3354025285337049262" id="8393429337723643320" nodeInfo="ng">
+            <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="8393429337723643322" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723666557" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="8393429337723666556" nodeInfo="ng">
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagLeftJustified" typeId="spci.3354025285337560355" id="8393429337723708446" nodeInfo="ng" />
+                <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralHashCode" typeId="spci.3354025285337562128" id="8393429337723690454" nodeInfo="ng" />
+                <node role="width" roleId="spci.7716961532366136822" type="spci.ConversionWidthInteger" typeId="spci.3354025285337570946" id="8393429337723691020" nodeInfo="ng">
+                  <property name="width" nameId="spci.3354025285337570949" value="10" />
+                </node>
+                <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337723692663" nodeInfo="nn">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337723653258" resolveInfo="obj" />
+                </node>
+                <node role="precision" roleId="spci.3354025285337570729" type="spci.ConversionPrecisionInteger" typeId="spci.3354025285337570884" id="8393429337723714992" nodeInfo="ng">
+                  <property name="precision" nameId="spci.3354025285337570887" value="5" />
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723666558" nodeInfo="ng" />
+            </node>
+          </node>
+        </node>
+        <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="8393429337723719417" nodeInfo="ngu" />
+        <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="8393429337723720044" nodeInfo="igu">
+          <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
+          <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
+          <property name="name" nameId="tpck.1169194664001" value="c" />
+          <property name="isFinal" nameId="tpee.1176718929932" value="false" />
+          <node role="type" roleId="tpee.5680397130376446158" type="tpee.CharType" typeId="tpee.1070534555686" id="8393429337723719747" nodeInfo="in" />
+          <node role="initializer" roleId="tpee.1068431790190" type="tpee.CharConstant" typeId="tpee.1200397529627" id="8393429337723720364" nodeInfo="nn">
+            <property name="charConstant" nameId="tpee.1200397540847" value="c" />
+          </node>
+        </node>
+        <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="8393429337723720980" nodeInfo="igu">
+          <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
+          <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
+          <property name="name" nameId="tpck.1169194664001" value="character1" />
+          <property name="isFinal" nameId="tpee.1176718929932" value="false" />
+          <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8393429337723720981" nodeInfo="nn" />
+          <node role="type" roleId="tpee.5680397130376446158" type="spci.RichStringType" typeId="spci.3354025285337211097" id="8393429337723720982" nodeInfo="ig" />
+          <node role="initializer" roleId="tpee.1068431790190" type="spci.RichString" typeId="spci.3354025285337049262" id="8393429337723720983" nodeInfo="ng">
+            <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="8393429337723720984" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723720985" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="8393429337723720986" nodeInfo="ng">
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagLeftJustified" typeId="spci.3354025285337560355" id="8393429337723778515" nodeInfo="ng" />
+                <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionCharacterUnicodeUpperCase" typeId="spci.3354025285337562800" id="8393429337723740855" nodeInfo="ng" />
+                <node role="width" roleId="spci.7716961532366136822" type="spci.ConversionWidthInteger" typeId="spci.3354025285337570946" id="8393429337723720989" nodeInfo="ng">
+                  <property name="width" nameId="spci.3354025285337570949" value="10" />
+                </node>
+                <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337723724804" nodeInfo="nn">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337723720044" resolveInfo="c" />
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723720992" nodeInfo="ng" />
+            </node>
+          </node>
+        </node>
+        <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="8393429337723781787" nodeInfo="ngu" />
+        <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="8393429337723785952" nodeInfo="igu">
+          <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
+          <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
+          <property name="name" nameId="tpck.1169194664001" value="l" />
+          <property name="isFinal" nameId="tpee.1176718929932" value="false" />
+          <node role="type" roleId="tpee.5680397130376446158" type="tpee.LongType" typeId="tpee.1068581242867" id="8393429337723783951" nodeInfo="in" />
+          <node role="initializer" roleId="tpee.1068431790190" type="tpee.LongLiteral" typeId="tpee.4269842503726207156" id="8393429337723788096" nodeInfo="nn">
+            <property name="value" nameId="tpee.4269842503726207157" value="31337L" />
+          </node>
+        </node>
+        <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="8393429337723788116" nodeInfo="igu">
+          <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
+          <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
+          <property name="name" nameId="tpck.1169194664001" value="integral1" />
+          <property name="isFinal" nameId="tpee.1176718929932" value="false" />
+          <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8393429337723788117" nodeInfo="nn" />
+          <node role="type" roleId="tpee.5680397130376446158" type="spci.RichStringType" typeId="spci.3354025285337211097" id="8393429337723788118" nodeInfo="ig" />
+          <node role="initializer" roleId="tpee.1068431790190" type="spci.RichString" typeId="spci.3354025285337049262" id="8393429337723788119" nodeInfo="ng">
+            <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="8393429337723788120" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723788121" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="8393429337723788122" nodeInfo="ng">
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagAlwaysIncludeSign" typeId="spci.3354025285337560434" id="8393429337723968276" nodeInfo="ng" />
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagZeroPadding" typeId="spci.3354025285337560608" id="8393429337723865967" nodeInfo="ng" />
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagLocaleGroupingSeparators" typeId="spci.3354025285337560734" id="8393429337723987058" nodeInfo="ng" />
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagEncloseNegativeInParentheses" typeId="spci.3354025285337560770" id="8393429337723995756" nodeInfo="ng" />
+                <node role="width" roleId="spci.7716961532366136822" type="spci.ConversionWidthInteger" typeId="spci.3354025285337570946" id="8393429337723788125" nodeInfo="ng">
+                  <property name="width" nameId="spci.3354025285337570949" value="10" />
+                </node>
+                <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337723797154" nodeInfo="nn">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337723785952" resolveInfo="l" />
+                </node>
+                <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionIntegralDecimal" typeId="spci.3354025285337562900" id="8393429337723814477" nodeInfo="ng" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723788127" nodeInfo="ng" />
+            </node>
+          </node>
+        </node>
+        <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="8393429337724012080" nodeInfo="igu">
+          <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
+          <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
+          <property name="name" nameId="tpck.1169194664001" value="integral2" />
+          <property name="isFinal" nameId="tpee.1176718929932" value="false" />
+          <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8393429337724012081" nodeInfo="nn" />
+          <node role="type" roleId="tpee.5680397130376446158" type="spci.RichStringType" typeId="spci.3354025285337211097" id="8393429337724012082" nodeInfo="ig" />
+          <node role="initializer" roleId="tpee.1068431790190" type="spci.RichString" typeId="spci.3354025285337049262" id="8393429337724012083" nodeInfo="ng">
+            <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="8393429337724012084" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337724012085" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="8393429337724012086" nodeInfo="ng">
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagLeftJustified" typeId="spci.3354025285337560355" id="8393429337724145106" nodeInfo="ng" />
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagLeadingSpace" typeId="spci.3354025285337560518" id="8393429337724079842" nodeInfo="ng" />
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagLocaleGroupingSeparators" typeId="spci.3354025285337560734" id="8393429337724177983" nodeInfo="ng" />
+                <node role="width" roleId="spci.7716961532366136822" type="spci.ConversionWidthInteger" typeId="spci.3354025285337570946" id="8393429337724012091" nodeInfo="ng">
+                  <property name="width" nameId="spci.3354025285337570949" value="10" />
+                </node>
+                <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337724012092" nodeInfo="nn">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337723785952" resolveInfo="l" />
+                </node>
+                <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionIntegralDecimal" typeId="spci.3354025285337562900" id="8393429337724012093" nodeInfo="ng" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337724012094" nodeInfo="ng" />
+            </node>
+          </node>
+        </node>
+        <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="8393429337724191760" nodeInfo="igu">
+          <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
+          <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
+          <property name="name" nameId="tpck.1169194664001" value="integral3" />
+          <property name="isFinal" nameId="tpee.1176718929932" value="false" />
+          <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8393429337724191761" nodeInfo="nn" />
+          <node role="type" roleId="tpee.5680397130376446158" type="spci.RichStringType" typeId="spci.3354025285337211097" id="8393429337724191762" nodeInfo="ig" />
+          <node role="initializer" roleId="tpee.1068431790190" type="spci.RichString" typeId="spci.3354025285337049262" id="8393429337724191763" nodeInfo="ng">
+            <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="8393429337724191764" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337724191765" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="8393429337724191766" nodeInfo="ng">
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagAlternateForm" typeId="spci.3354025285337560381" id="8393429337724342756" nodeInfo="ng" />
+                <node role="width" roleId="spci.7716961532366136822" type="spci.ConversionWidthInteger" typeId="spci.3354025285337570946" id="8393429337724191770" nodeInfo="ng">
+                  <property name="width" nameId="spci.3354025285337570949" value="10" />
+                </node>
+                <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337724191771" nodeInfo="nn">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337723785952" resolveInfo="l" />
+                </node>
+                <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionIntegralHexadecimal" typeId="spci.3354025285337563082" id="8393429337724310518" nodeInfo="ng" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337724191773" nodeInfo="ng" />
+            </node>
+          </node>
+        </node>
+        <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="8393429337723720385" nodeInfo="ngu" />
+        <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="8393429337724375462" nodeInfo="igu">
+          <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
+          <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
+          <property name="name" nameId="tpck.1169194664001" value="d" />
+          <property name="isFinal" nameId="tpee.1176718929932" value="false" />
+          <node role="type" roleId="tpee.5680397130376446158" type="tpee.DoubleType" typeId="tpee.1070534513062" id="8393429337724369416" nodeInfo="in" />
+          <node role="initializer" roleId="tpee.1068431790190" type="tpee.FloatingPointConstant" typeId="tpee.1111509017652" id="8393429337724381703" nodeInfo="nn">
+            <property name="value" nameId="tpee.1113006610751" value="3.14D" />
+          </node>
+        </node>
+        <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="8393429337724381803" nodeInfo="igu">
+          <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
+          <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
+          <property name="name" nameId="tpck.1169194664001" value="floatingPoint1" />
+          <property name="isFinal" nameId="tpee.1176718929932" value="false" />
+          <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8393429337724381804" nodeInfo="nn" />
+          <node role="type" roleId="tpee.5680397130376446158" type="spci.RichStringType" typeId="spci.3354025285337211097" id="8393429337724381805" nodeInfo="ig" />
+          <node role="initializer" roleId="tpee.1068431790190" type="spci.RichString" typeId="spci.3354025285337049262" id="8393429337724381806" nodeInfo="ng">
+            <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="8393429337724381807" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337724381808" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="8393429337724381809" nodeInfo="ng">
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagAlwaysIncludeSign" typeId="spci.3354025285337560434" id="8393429337724381810" nodeInfo="ng" />
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagZeroPadding" typeId="spci.3354025285337560608" id="8393429337724381811" nodeInfo="ng" />
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagLocaleGroupingSeparators" typeId="spci.3354025285337560734" id="8393429337724381812" nodeInfo="ng" />
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagEncloseNegativeInParentheses" typeId="spci.3354025285337560770" id="8393429337724381813" nodeInfo="ng" />
+                <node role="width" roleId="spci.7716961532366136822" type="spci.ConversionWidthInteger" typeId="spci.3354025285337570946" id="8393429337724381814" nodeInfo="ng">
+                  <property name="width" nameId="spci.3354025285337570949" value="20" />
+                </node>
+                <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337724430853" nodeInfo="nn">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337724375462" resolveInfo="d" />
+                </node>
+                <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionFloatingPointDecimal" typeId="spci.3354025285337563602" id="8393429337724529564" nodeInfo="ng" />
+                <node role="precision" roleId="spci.3354025285337570729" type="spci.ConversionPrecisionInteger" typeId="spci.3354025285337570884" id="8393429337724542883" nodeInfo="ng">
+                  <property name="precision" nameId="spci.3354025285337570887" value="3" />
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337724381817" nodeInfo="ng" />
+            </node>
+          </node>
+        </node>
+        <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="8393429337724559128" nodeInfo="igu">
+          <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
+          <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
+          <property name="name" nameId="tpck.1169194664001" value="floatingPoint2" />
+          <property name="isFinal" nameId="tpee.1176718929932" value="false" />
+          <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8393429337724559129" nodeInfo="nn" />
+          <node role="type" roleId="tpee.5680397130376446158" type="spci.RichStringType" typeId="spci.3354025285337211097" id="8393429337724559130" nodeInfo="ig" />
+          <node role="initializer" roleId="tpee.1068431790190" type="spci.RichString" typeId="spci.3354025285337049262" id="8393429337724559131" nodeInfo="ng">
+            <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="8393429337724559132" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337724559133" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="8393429337724559134" nodeInfo="ng">
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagLeftJustified" typeId="spci.3354025285337560355" id="8393429337724596595" nodeInfo="ng" />
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagLeadingSpace" typeId="spci.3354025285337560518" id="8393429337724632855" nodeInfo="ng" />
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagLocaleGroupingSeparators" typeId="spci.3354025285337560734" id="8393429337724559137" nodeInfo="ng" />
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagEncloseNegativeInParentheses" typeId="spci.3354025285337560770" id="8393429337724559138" nodeInfo="ng" />
+                <node role="width" roleId="spci.7716961532366136822" type="spci.ConversionWidthInteger" typeId="spci.3354025285337570946" id="8393429337724559139" nodeInfo="ng">
+                  <property name="width" nameId="spci.3354025285337570949" value="10" />
+                </node>
+                <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337724559140" nodeInfo="nn">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337724375462" resolveInfo="d" />
+                </node>
+                <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionFloatingPointDecimal" typeId="spci.3354025285337563602" id="8393429337724559141" nodeInfo="ng" />
+                <node role="precision" roleId="spci.3354025285337570729" type="spci.ConversionPrecisionInteger" typeId="spci.3354025285337570884" id="8393429337724559142" nodeInfo="ng">
+                  <property name="precision" nameId="spci.3354025285337570887" value="3" />
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337724559143" nodeInfo="ng" />
+            </node>
+          </node>
+        </node>
+        <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="8393429337724560123" nodeInfo="igu">
+          <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
+          <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
+          <property name="name" nameId="tpck.1169194664001" value="floatingPoint3" />
+          <property name="isFinal" nameId="tpee.1176718929932" value="false" />
+          <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8393429337724560124" nodeInfo="nn" />
+          <node role="type" roleId="tpee.5680397130376446158" type="spci.RichStringType" typeId="spci.3354025285337211097" id="8393429337724560125" nodeInfo="ig" />
+          <node role="initializer" roleId="tpee.1068431790190" type="spci.RichString" typeId="spci.3354025285337049262" id="8393429337724560126" nodeInfo="ng">
+            <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="8393429337724560127" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337724560128" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="8393429337724560129" nodeInfo="ng">
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagAlternateForm" typeId="spci.3354025285337560381" id="8393429337724713779" nodeInfo="ng" />
+                <node role="width" roleId="spci.7716961532366136822" type="spci.ConversionWidthInteger" typeId="spci.3354025285337570946" id="8393429337724560134" nodeInfo="ng">
+                  <property name="width" nameId="spci.3354025285337570949" value="10" />
+                </node>
+                <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337724560135" nodeInfo="nn">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337724375462" resolveInfo="d" />
+                </node>
+                <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionFloatingPointDecimal" typeId="spci.3354025285337563602" id="8393429337724560136" nodeInfo="ng" />
+                <node role="precision" roleId="spci.3354025285337570729" type="spci.ConversionPrecisionInteger" typeId="spci.3354025285337570884" id="8393429337724560137" nodeInfo="ng">
+                  <property name="precision" nameId="spci.3354025285337570887" value="3" />
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337724560138" nodeInfo="ng" />
+            </node>
+          </node>
+        </node>
+        <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="8393429337724772718" nodeInfo="ngu" />
+        <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="8393429337724792093" nodeInfo="igu">
+          <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
+          <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
+          <property name="name" nameId="tpck.1169194664001" value="gc" />
+          <property name="isFinal" nameId="tpee.1176718929932" value="false" />
+          <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8393429337724782470" nodeInfo="in">
+            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="k7g3.~GregorianCalendar" resolveInfo="GregorianCalendar" />
+          </node>
+          <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="8393429337724801740" nodeInfo="nn">
+            <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="8393429337724802438" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="k7g3.~GregorianCalendar%d&lt;init&gt;()" resolveInfo="GregorianCalendar" />
+            </node>
+          </node>
+        </node>
+        <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="8393429337724802468" nodeInfo="igu">
+          <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
+          <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
+          <property name="name" nameId="tpck.1169194664001" value="dateTime1" />
+          <property name="isFinal" nameId="tpee.1176718929932" value="false" />
+          <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8393429337724802469" nodeInfo="nn" />
+          <node role="type" roleId="tpee.5680397130376446158" type="spci.RichStringType" typeId="spci.3354025285337211097" id="8393429337724802470" nodeInfo="ig" />
+          <node role="initializer" roleId="tpee.1068431790190" type="spci.RichString" typeId="spci.3354025285337049262" id="8393429337724802471" nodeInfo="ng">
+            <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="8393429337724802472" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337724802473" nodeInfo="ng" />
+              <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="8393429337724802474" nodeInfo="ng">
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagLeftJustified" typeId="spci.3354025285337560355" id="8393429337724884193" nodeInfo="ng" />
+                <node role="width" roleId="spci.7716961532366136822" type="spci.ConversionWidthInteger" typeId="spci.3354025285337570946" id="8393429337724802479" nodeInfo="ng">
+                  <property name="width" nameId="spci.3354025285337570949" value="20" />
+                </node>
+                <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337724866012" nodeInfo="nn">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337724792093" resolveInfo="gc" />
+                </node>
+                <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionDateTimeUpperCase" typeId="spci.3354025285337564836" id="8393429337724870689" nodeInfo="ng">
+                  <node role="specificConversion" roleId="spci.7716961532373442892" type="spci.DateConversionCompositionYearMonthDayRFC" typeId="spci.7716961532373437699" id="8393429337724872175" nodeInfo="ng" />
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337724802483" nodeInfo="ng" />
+            </node>
+          </node>
+        </node>
+        <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8393429337723633368" nodeInfo="nn" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="8393429337724906926" nodeInfo="ng">
+          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="8393429337724916889" nodeInfo="ng" />
+        </node>
+      </node>
+    </node>
+  </root>
 </model>
 
