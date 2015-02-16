@@ -614,7 +614,7 @@
         <node concept="lc7rE" id="7D99css6Pm4" role="3cqZAp">
           <node concept="l8MVK" id="7D99css6Pm8" role="lcghm" />
           <node concept="la8eA" id="7D99css6Pm6" role="lcghm">
-            <property role="lacIc" value="} " />
+            <property role="lacIc" value="}" />
           </node>
           <node concept="la8eA" id="7D99css6Z7A" role="lcghm">
             <property role="lacIc" value=";" />
