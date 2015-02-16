@@ -170,17 +170,13 @@
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
-        <child id="5753587520027644759" name="body" index="3kxCCa" />
-      </concept>
-    </language>
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
+      <concept id="8974276187400348183" name="jetbrains.mps.lang.access.structure.ExecuteWriteActionStatement" flags="nn" index="1QHqEM" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -757,9 +753,9 @@
                             </node>
                             <node concept="3clFbJ" id="5lGPWESfMrz" role="3cqZAp">
                               <node concept="3clFbS" id="5lGPWESfMr$" role="3clFbx">
-                                <node concept="3kxDZ6" id="40ZXlOnI$Jy" role="3cqZAp">
-                                  <node concept="9aQIb" id="40ZXlOnI$Jz" role="3kxCCa">
-                                    <node concept="3clFbS" id="5lGPWESfMrB" role="9aQI4">
+                                <node concept="1QHqEM" id="4$3mDZ0ow6O" role="3cqZAp">
+                                  <node concept="1QHqEC" id="4$3mDZ0ow6Q" role="1QHqEI">
+                                    <node concept="3clFbS" id="4$3mDZ0ow6S" role="1bW5cS">
                                       <node concept="3cpWs8" id="3ki2u9fM2Ux" role="3cqZAp">
                                         <node concept="3cpWsn" id="3ki2u9fM2Uy" role="3cpWs9">
                                           <property role="TrG5h" value="editorOpener" />

@@ -316,6 +316,9 @@
         <node concept="L2wRC" id="44QTgQqXlpg" role="39821P">
           <ref role="L2wRA" node="44QTgQqTlJu" resolve="mbeddr.tutorial.vectors" />
         </node>
+        <node concept="L2wRC" id="5o7xQ5zpN7n" role="39821P">
+          <ref role="L2wRA" node="1JjMe_3nVlY" resolve="mbeddr.tutorial.shonan.complexNumberVector" />
+        </node>
         <node concept="L2wRC" id="4OELnlseYMX" role="39821P">
           <ref role="L2wRA" node="GKLijSCUTH" resolve="mbeddr.tutorial.extreqref" />
         </node>

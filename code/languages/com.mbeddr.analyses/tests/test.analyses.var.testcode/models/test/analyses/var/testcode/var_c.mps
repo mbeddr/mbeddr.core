@@ -595,7 +595,7 @@
     </node>
     <node concept="N3Fnx" id="44j14BHp6Q9" role="N3F5h">
       <property role="TrG5h" value="boo" />
-      <property role="2OOxQR" value="false" />
+      <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="44j14BHp6Qb" role="3XIRFX">
         <node concept="3XISUE" id="44j14BHp6Qc" role="3XIRFZ" />
       </node>
@@ -1027,6 +1027,27 @@
   </node>
   <node concept="N3F5e" id="3ws79lb9vpN">
     <property role="TrG5h" value="AnotherModule" />
+    <node concept="N3Fnx" id="4$3mDZ0mVSd" role="N3F5h">
+      <property role="TrG5h" value="funCalling" />
+      <property role="2OOxQR" value="false" />
+      <node concept="3XIRFW" id="4$3mDZ0mVSf" role="3XIRFX">
+        <node concept="1_9egQ" id="4$3mDZ0mVZV" role="3XIRFZ">
+          <node concept="3O_q_g" id="4$3mDZ0mVZT" role="1_9egR">
+            <ref role="3O_q_h" node="44j14BHp6Q9" resolve="boo" />
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="4$3mDZ0mVQ2" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="3GEVxB" id="4$3mDZ0mVSD" role="2OODSX">
+      <ref role="3GEb4d" node="44j14BHp5_1" resolve="FM1_04" />
+    </node>
+    <node concept="2dvl_R" id="4$3mDZ0mWhj" role="lGtFl">
+      <ref role="2dvl_Q" node="44j14BH1ANL" resolve="FM1" />
+    </node>
   </node>
 </model>
 
