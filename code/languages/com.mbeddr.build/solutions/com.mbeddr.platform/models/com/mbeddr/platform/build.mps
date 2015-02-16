@@ -5831,17 +5831,38 @@
           <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.mpsutil.richstring#3354025285337048382" />
           <property name="uuid" nameId="kdzh.322010710375892619" value="20aa65c0-ca77-414d-a54b-5afd064cf585" />
           <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
-        </node>
-        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="8393429337731555987" nodeInfo="nn">
-          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="8393429337731555988" nodeInfo="ng">
-            <property name="reexport" nameId="kdzh.5253498789149547713" value="true" />
-            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="90a9.1671983567912265703" resolveInfo="de.slisson.mps.richtext" />
+          <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="736640147398100367" nodeInfo="nn">
+            <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="736640147398100368" nodeInfo="ng">
+              <property name="reexport" nameId="kdzh.5253498789149547713" value="true" />
+              <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="90a9.3480045216712472389" resolveInfo="org.apache.commons" />
+            </node>
+          </node>
+          <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="736640147398100369" nodeInfo="nn">
+            <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="736640147398100370" nodeInfo="ng">
+              <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
+              <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="8393429337731538904" resolveInfo="com.mbeddr.mpsutil.richstring" />
+            </node>
+          </node>
+          <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="736640147398100371" nodeInfo="nn">
+            <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="736640147398100372" nodeInfo="ng">
+              <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
+              <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="90a9.1671983567912265703" resolveInfo="de.slisson.mps.richtext" />
+            </node>
           </node>
         </node>
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="8393429337731555989" nodeInfo="nn">
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyExtendLanguage" typeId="kdzh.4278635856200794926" id="8393429337731555990" nodeInfo="ng">
             <link role="language" roleId="kdzh.4278635856200794928" targetNodeId="90a9.1671983567912265703" resolveInfo="de.slisson.mps.richtext" />
           </node>
+        </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="736640147398100364" nodeInfo="nn">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="736640147398100365" nodeInfo="ng">
+            <property name="reexport" nameId="kdzh.5253498789149547713" value="true" />
+            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="90a9.3480045216712472389" resolveInfo="org.apache.commons" />
+          </node>
+        </node>
+        <node role="runtime" roleId="kdzh.3189788309731917348" type="kdzh.BuildMps_ModuleSolutionRuntime" typeId="kdzh.3189788309731981027" id="736640147398100366" nodeInfo="ng">
+          <link role="solution" roleId="kdzh.3189788309731981028" targetNodeId="90a9.3480045216712472389" resolveInfo="org.apache.commons" />
         </node>
       </node>
     </node>

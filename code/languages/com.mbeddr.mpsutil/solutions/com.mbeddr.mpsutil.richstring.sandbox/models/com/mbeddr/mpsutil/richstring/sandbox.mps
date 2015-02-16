@@ -101,7 +101,6 @@
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="\n" />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="7716961532368760959" nodeInfo="ng">
-                  <link role="category" roleId="spci.7716961532366897857" targetNodeId="spci.7716961532366204382" resolveInfo="FormatCategoryUnknown" />
                   <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagLeftJustified" typeId="spci.3354025285337560355" id="7716961532374750117" nodeInfo="ng" />
                   <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionDateTimeUpperCase" typeId="spci.3354025285337564836" id="7716961532373213408" nodeInfo="ng">
                     <node role="specificConversion" roleId="spci.7716961532373442892" type="spci.DateConversionCompositionYearMonthDayRFC" typeId="spci.7716961532373437699" id="7716961532374158416" nodeInfo="ng" />
