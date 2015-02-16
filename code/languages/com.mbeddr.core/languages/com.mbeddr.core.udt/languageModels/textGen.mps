@@ -616,14 +616,6 @@
           <node concept="la8eA" id="7D99css6Pm6" role="lcghm">
             <property role="lacIc" value="} " />
           </node>
-          <node concept="l9hG8" id="7D99css6PlG" role="lcghm">
-            <node concept="2OqwBi" id="7D99css6PlJ" role="lb14g">
-              <node concept="117lpO" id="7D99css6PlI" role="2Oq$k0" />
-              <node concept="2qgKlT" id="7D99css6Yl7" role="2OqNvi">
-                <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="mangledName" />
-              </node>
-            </node>
-          </node>
           <node concept="la8eA" id="7D99css6Z7A" role="lcghm">
             <property role="lacIc" value=";" />
           </node>
