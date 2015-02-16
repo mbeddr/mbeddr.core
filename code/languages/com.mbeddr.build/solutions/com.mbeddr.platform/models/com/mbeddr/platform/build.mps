@@ -11,6 +11,11 @@
   <root type="3ior.BuildProject" typeId="3ior.5617550519002745363" id="4160126263863194133" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.platform" />
     <property name="internalBaseDirectory" nameId="3ior.5204048710541015587" value="../../../../../build/com.mbeddr.platform" />
+    <node role="aspects" roleId="3ior.3542413272732620719" type="kdzh.BuildMpsAspect" typeId="kdzh.6503355885715333289" id="651821299948807944" nodeInfo="ng">
+      <property name="bootstrap" nameId="kdzh.6503355885715353788" value="true" />
+      <property name="generationMaxHeapSizeInMb" nameId="kdzh.7981469545489178349" value="4096" />
+      <property name="generationMaxPermSizeInMb" nameId="kdzh.353547257300482730" value="1024" />
+    </node>
     <node role="parts" roleId="3ior.7389400916848080626" type="3ior.BuildSource_JavaOptions" typeId="3ior.927724900262033858" id="9016963486461264778" nodeInfo="ng">
       <property name="generateDebugInfo" nameId="3ior.927724900262033861" value="true" />
       <property name="heapSize" nameId="3ior.927724900262398947" value="2048" />
