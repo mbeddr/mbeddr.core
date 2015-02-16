@@ -512,7 +512,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="targetType" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7D99css6O15" resolve="EnumType" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     </node>
     <node concept="1TJgyj" id="1frRXyHUCFC" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
