@@ -361,6 +361,7 @@
         <property name="name" nameId="tpck.1169194664001" value="test.ts.richstring" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="9dc1a5e9-95eb-4eda-9aa7-fa55c4ee8c31" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
+        <property name="sourcesKind" nameId="kdzh.269707337715731330" value="sources and tests" />
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="8393429337731955051" nodeInfo="ng">
           <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="8393429337731953066" resolveInfo="mbeddr.mpsutil" />
           <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="8393429337731955754" nodeInfo="nn">
@@ -391,6 +392,9 @@
       </node>
       <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="8334796989973544672" nodeInfo="nn">
         <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="8334796989973544654" resolveInfo="test.ts.requirements" />
+      </node>
+      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="6894640095064513818" nodeInfo="nn">
+        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="8393429337731954436" resolveInfo="test.ts.richstring" />
       </node>
     </node>
   </root>
