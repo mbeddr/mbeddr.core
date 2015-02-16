@@ -51,6 +51,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7716961532384080110" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7716961532384023403" resolveInfo="obj" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095061972297" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095061972334" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7716961532378542135" nodeInfo="ng" />
             </node>
@@ -70,6 +73,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralBooleanUpperCase" typeId="spci.3354025285337562053" id="7716961532378885567" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7716961532384080143" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7716961532384023403" resolveInfo="obj" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095061972977" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095061973014" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7716961532378800731" nodeInfo="ng" />
@@ -91,6 +97,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7716961532384080175" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7716961532384023403" resolveInfo="obj" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095061974368" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095061974405" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7716961532378800785" nodeInfo="ng" />
             </node>
@@ -110,6 +119,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralHashCodeUpperCase" typeId="spci.3354025285337562210" id="7716961532379178266" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7716961532384094049" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7716961532384023403" resolveInfo="obj" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095061975048" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095061975085" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7716961532378800859" nodeInfo="ng" />
@@ -131,6 +143,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7716961532384094081" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7716961532384023403" resolveInfo="obj" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095061975728" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095061975765" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7716961532378800923" nodeInfo="ng" />
             </node>
@@ -150,6 +165,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralStringUpperCase" typeId="spci.3354025285337562375" id="7716961532379235596" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7716961532384094113" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7716961532384023403" resolveInfo="obj" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095061976408" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095061976445" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7716961532378800997" nodeInfo="ng" />
@@ -546,6 +564,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541523572360" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541523559647" resolveInfo="bool" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095061983424" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095061983525" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541523559645" nodeInfo="ng" />
             </node>
@@ -565,6 +586,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralBooleanUpperCase" typeId="spci.3354025285337562053" id="6473098541523559633" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541523572404" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541523559647" resolveInfo="bool" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095061990504" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095061990605" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541523559635" nodeInfo="ng" />
@@ -586,6 +610,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541523572448" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541523559647" resolveInfo="bool" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095061997584" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095061997685" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541523559625" nodeInfo="ng" />
             </node>
@@ -605,6 +632,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralHashCodeUpperCase" typeId="spci.3354025285337562210" id="6473098541523559613" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541523572492" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541523559647" resolveInfo="bool" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062011640" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062011741" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541523559615" nodeInfo="ng" />
@@ -626,6 +656,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541523572536" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541523559647" resolveInfo="bool" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062018720" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062018821" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541523559605" nodeInfo="ng" />
             </node>
@@ -645,6 +678,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralStringUpperCase" typeId="spci.3354025285337562375" id="6473098541523559593" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541523572645" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541523559647" resolveInfo="bool" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062025800" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062025892" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541523559595" nodeInfo="ng" />
@@ -1050,6 +1086,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526283265" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526283253" resolveInfo="c" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095061657573" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095061701189" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526283266" nodeInfo="ng" />
             </node>
@@ -1069,6 +1108,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionCharacterUnicodeUpperCase" typeId="spci.3354025285337562800" id="6473098541526283274" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526283275" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526283253" resolveInfo="c" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095061713848" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095061713981" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526283276" nodeInfo="ng" />
@@ -1091,6 +1133,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526283286" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526283253" resolveInfo="c" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095061717148" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095061717283" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526283287" nodeInfo="ng" />
             </node>
@@ -1110,6 +1155,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralBooleanUpperCase" typeId="spci.3354025285337562053" id="6473098541526283295" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526283296" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526283253" resolveInfo="c" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095061726778" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095061726913" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526283297" nodeInfo="ng" />
@@ -1131,6 +1179,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526283306" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526283253" resolveInfo="c" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062146560" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062146695" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526283307" nodeInfo="ng" />
             </node>
@@ -1150,6 +1201,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralHashCodeUpperCase" typeId="spci.3354025285337562210" id="6473098541526283315" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526283316" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526283253" resolveInfo="c" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062149862" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062149997" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526283317" nodeInfo="ng" />
@@ -1171,6 +1225,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526283326" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526283253" resolveInfo="c" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062153164" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062153299" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526283327" nodeInfo="ng" />
             </node>
@@ -1190,6 +1247,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralStringUpperCase" typeId="spci.3354025285337562375" id="6473098541526283335" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526283336" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526283253" resolveInfo="c" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062161212" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062161347" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526283337" nodeInfo="ng">
@@ -1548,6 +1608,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339649" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339637" resolveInfo="i" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062419561" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062419860" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339650" nodeInfo="ng" />
             </node>
@@ -1567,6 +1630,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionIntegralOctal" typeId="spci.3354025285337562990" id="6473098541526339658" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339659" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339637" resolveInfo="i" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062430015" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062430314" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339660" nodeInfo="ng" />
@@ -1588,6 +1654,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339669" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339637" resolveInfo="i" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062440469" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062440834" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339670" nodeInfo="ng" />
             </node>
@@ -1607,6 +1676,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionIntegralHexadecimalUpperCase" typeId="spci.3354025285337563184" id="6473098541526339678" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339679" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339637" resolveInfo="i" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062447605" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062447904" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339680" nodeInfo="ng" />
@@ -1629,6 +1701,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339690" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339637" resolveInfo="i" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062458059" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062458358" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339691" nodeInfo="ng" />
             </node>
@@ -1648,6 +1723,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralBooleanUpperCase" typeId="spci.3354025285337562053" id="6473098541526339699" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339700" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339637" resolveInfo="i" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062465169" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062465486" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339701" nodeInfo="ng" />
@@ -1669,6 +1747,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339710" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339637" resolveInfo="i" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062472257" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062472556" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339711" nodeInfo="ng" />
             </node>
@@ -1688,6 +1769,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralHashCodeUpperCase" typeId="spci.3354025285337562210" id="6473098541526339719" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339720" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339637" resolveInfo="i" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062482729" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062483028" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339721" nodeInfo="ng" />
@@ -1709,6 +1793,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339730" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339637" resolveInfo="i" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062489799" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062490098" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339731" nodeInfo="ng" />
             </node>
@@ -1728,6 +1815,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralStringUpperCase" typeId="spci.3354025285337562375" id="6473098541526339739" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339740" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339637" resolveInfo="i" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062496887" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062497186" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339741" nodeInfo="ng" />
@@ -1750,6 +1840,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339751" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339637" resolveInfo="i" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062503993" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062504292" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339752" nodeInfo="ng" />
             </node>
@@ -1769,6 +1862,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionCharacterUnicodeUpperCase" typeId="spci.3354025285337562800" id="6473098541526339760" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339761" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339637" resolveInfo="i" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062511085" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062511384" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339762" nodeInfo="ng" />
@@ -2021,6 +2117,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339887" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339875" resolveInfo="l" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062521497" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062521792" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339888" nodeInfo="ng" />
             </node>
@@ -2040,6 +2139,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionIntegralOctal" typeId="spci.3354025285337562990" id="6473098541526339896" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339897" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339875" resolveInfo="l" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062531951" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062532249" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339898" nodeInfo="ng" />
@@ -2061,6 +2163,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339907" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339875" resolveInfo="l" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062542363" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062604955" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339908" nodeInfo="ng" />
             </node>
@@ -2080,6 +2185,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionIntegralHexadecimalUpperCase" typeId="spci.3354025285337563184" id="6473098541526339916" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339917" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339875" resolveInfo="l" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062552771" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062553066" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339918" nodeInfo="ng" />
@@ -2102,6 +2210,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339928" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339875" resolveInfo="l" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062563179" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062563474" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339929" nodeInfo="ng" />
             </node>
@@ -2121,6 +2232,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralBooleanUpperCase" typeId="spci.3354025285337562053" id="6473098541526339937" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339938" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339875" resolveInfo="l" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062570217" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062570512" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339939" nodeInfo="ng" />
@@ -2142,6 +2256,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339948" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339875" resolveInfo="l" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062580625" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062580920" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339949" nodeInfo="ng" />
             </node>
@@ -2161,6 +2278,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralHashCodeUpperCase" typeId="spci.3354025285337562210" id="6473098541526339957" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339958" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339875" resolveInfo="l" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062587663" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062604959" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339959" nodeInfo="ng" />
@@ -2182,6 +2302,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339968" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339875" resolveInfo="l" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062615073" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062615386" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339969" nodeInfo="ng" />
             </node>
@@ -2201,6 +2324,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralStringUpperCase" typeId="spci.3354025285337562375" id="6473098541526339977" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339978" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339875" resolveInfo="l" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062625499" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062625812" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339979" nodeInfo="ng" />
@@ -2225,6 +2351,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526339990" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339875" resolveInfo="l" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062643483" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062643802" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526339991" nodeInfo="ng" />
             </node>
@@ -2246,6 +2375,9 @@
                 </node>
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526340001" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526339875" resolveInfo="l" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062660655" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062660974" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526340002" nodeInfo="ng" />
@@ -2503,6 +2635,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526340127" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526340113" resolveInfo="bi" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062668957" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062669126" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526340128" nodeInfo="ng" />
             </node>
@@ -2522,6 +2657,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionIntegralOctal" typeId="spci.3354025285337562990" id="6473098541526340136" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526340137" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526340113" resolveInfo="bi" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062674449" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062676032" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526340138" nodeInfo="ng" />
@@ -2543,6 +2681,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526340147" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526340113" resolveInfo="bi" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062684015" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062684184" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526340148" nodeInfo="ng" />
             </node>
@@ -2562,6 +2703,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionIntegralHexadecimalUpperCase" typeId="spci.3354025285337563184" id="6473098541526340156" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526340157" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526340113" resolveInfo="bi" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062689507" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062689676" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526340158" nodeInfo="ng" />
@@ -2584,6 +2728,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526340168" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526340113" resolveInfo="bi" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062694999" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062695168" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526340169" nodeInfo="ng" />
             </node>
@@ -2603,6 +2750,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralBooleanUpperCase" typeId="spci.3354025285337562053" id="6473098541526340177" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526340178" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526340113" resolveInfo="bi" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062700491" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062700660" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526340179" nodeInfo="ng" />
@@ -2624,6 +2774,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526340188" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526340113" resolveInfo="bi" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062705983" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062707706" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526340189" nodeInfo="ng" />
             </node>
@@ -2643,6 +2796,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralHashCodeUpperCase" typeId="spci.3354025285337562210" id="6473098541526340197" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526340198" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526340113" resolveInfo="bi" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062721539" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062721808" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526340199" nodeInfo="ng" />
@@ -2664,6 +2820,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526340208" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526340113" resolveInfo="bi" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062729791" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062729960" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526340209" nodeInfo="ng" />
             </node>
@@ -2684,6 +2843,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526340218" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526340113" resolveInfo="bi" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062735283" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062735572" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526340219" nodeInfo="ng" />
             </node>
@@ -2703,6 +2865,9 @@
               <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="6473098541526340227" nodeInfo="ng">
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionDateTime" typeId="spci.3354025285337564600" id="6473098541526340228" nodeInfo="ng">
                   <node role="specificConversion" roleId="spci.7716961532373442892" type="spci.DateConversionDayOfWeekNameFull" typeId="spci.7716961532373429855" id="6473098541526340229" nodeInfo="ng" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095063559286" nodeInfo="ng">
+                    <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="6894640095063559287" nodeInfo="ng" />
+                  </node>
                 </node>
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526340230" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526340113" resolveInfo="bi" />
@@ -2725,6 +2890,9 @@
               <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="6473098541526340238" nodeInfo="ng">
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionDateTimeUpperCase" typeId="spci.3354025285337564836" id="6473098541526340239" nodeInfo="ng">
                   <node role="specificConversion" roleId="spci.7716961532373442892" type="spci.DateConversionDayOfWeekNameFull" typeId="spci.7716961532373429855" id="6473098541526340240" nodeInfo="ng" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095063581624" nodeInfo="ng">
+                    <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="6894640095063581625" nodeInfo="ng" />
+                  </node>
                 </node>
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526340241" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526340113" resolveInfo="bi" />
@@ -2987,6 +3155,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526393707" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526393695" resolveInfo="d" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062190677" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062190874" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526393708" nodeInfo="ng" />
             </node>
@@ -3006,6 +3177,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionFloatingPointScientificUpperCase" typeId="spci.3354025285337563497" id="6473098541526393716" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526393717" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526393695" resolveInfo="d" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062196709" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062196906" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526393718" nodeInfo="ng" />
@@ -3027,6 +3201,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526393727" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526393695" resolveInfo="d" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062202741" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062202938" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526393728" nodeInfo="ng" />
             </node>
@@ -3046,6 +3223,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionFloatingPointDynamic" typeId="spci.3354025285337563706" id="6473098541526393736" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526393737" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526393695" resolveInfo="d" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062208773" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062208970" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526393738" nodeInfo="ng" />
@@ -3067,6 +3247,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526393747" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526393695" resolveInfo="d" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062214805" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062215002" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526393748" nodeInfo="ng" />
             </node>
@@ -3087,6 +3270,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526393757" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526393695" resolveInfo="d" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062223753" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062226764" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526393758" nodeInfo="ng" />
             </node>
@@ -3106,6 +3292,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionFloatingPointHexadecimalUpperCase" typeId="spci.3354025285337564254" id="6473098541526393766" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526393767" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526393695" resolveInfo="d" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062232599" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062235610" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526393768" nodeInfo="ng" />
@@ -3128,6 +3317,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526481471" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526393695" resolveInfo="d" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062241445" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062241648" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526481472" nodeInfo="ng" />
             </node>
@@ -3147,6 +3339,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralBooleanUpperCase" typeId="spci.3354025285337562053" id="6473098541526509486" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526483445" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526393695" resolveInfo="d" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062247483" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062247686" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526483446" nodeInfo="ng" />
@@ -3168,6 +3363,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526483574" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526393695" resolveInfo="d" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062256437" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062256640" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526483575" nodeInfo="ng" />
             </node>
@@ -3187,6 +3385,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralHashCodeUpperCase" typeId="spci.3354025285337562210" id="6473098541526521588" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526484536" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526393695" resolveInfo="d" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062265391" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062265594" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526484537" nodeInfo="ng" />
@@ -3208,6 +3409,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526485122" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526393695" resolveInfo="d" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062274345" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062274548" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526485123" nodeInfo="ng" />
             </node>
@@ -3227,6 +3431,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralStringUpperCase" typeId="spci.3354025285337562375" id="6473098541526533690" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6473098541526485762" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6473098541526393695" resolveInfo="d" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062280383" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062280586" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526485763" nodeInfo="ng" />
@@ -3461,6 +3668,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337719919123" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337719905570" resolveInfo="bd" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062288157" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062288326" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337719905568" nodeInfo="ng" />
             </node>
@@ -3480,6 +3690,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionFloatingPointScientificUpperCase" typeId="spci.3354025285337563497" id="8393429337719905556" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337719920006" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337719905570" resolveInfo="bd" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062295897" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062296066" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337719905558" nodeInfo="ng" />
@@ -3501,6 +3714,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337719920889" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337719905570" resolveInfo="bd" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062303637" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062304540" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337719905548" nodeInfo="ng" />
             </node>
@@ -3521,6 +3737,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337719921772" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337719905570" resolveInfo="bd" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062312111" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062312982" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337719905538" nodeInfo="ng" />
             </node>
@@ -3540,6 +3759,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionFloatingPointDynamicUpperCase" typeId="spci.3354025285337564025" id="8393429337719905526" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337719921947" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337719905570" resolveInfo="bd" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062320553" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062321424" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337719905528" nodeInfo="ng" />
@@ -3562,6 +3784,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337719927528" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337719905570" resolveInfo="bd" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062328995" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062329264" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337719905497" nodeInfo="ng" />
             </node>
@@ -3581,6 +3806,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralBooleanUpperCase" typeId="spci.3354025285337562053" id="8393429337719905485" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337719927809" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337719905570" resolveInfo="bd" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062336835" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062337104" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337719905487" nodeInfo="ng" />
@@ -3602,6 +3830,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337719928090" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337719905570" resolveInfo="bd" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062344675" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062344944" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337719905477" nodeInfo="ng" />
             </node>
@@ -3621,6 +3852,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralHashCodeUpperCase" typeId="spci.3354025285337562210" id="8393429337719905465" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337719928371" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337719905570" resolveInfo="bd" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062352515" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062352684" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337719905467" nodeInfo="ng" />
@@ -3642,6 +3876,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337719928652" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337719905570" resolveInfo="bd" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062362075" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062362364" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337719905457" nodeInfo="ng" />
             </node>
@@ -3661,6 +3898,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralStringUpperCase" typeId="spci.3354025285337562375" id="8393429337719905445" nodeInfo="ng" />
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337719928933" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337719905570" resolveInfo="bd" />
+                </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062369935" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062370204" nodeInfo="ng" />
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337719905447" nodeInfo="ng" />
@@ -3911,56 +4151,6 @@
             </node>
           </node>
         </node>
-        <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="8393429337719905339" nodeInfo="ngu" />
-        <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="6473098541526498466" nodeInfo="ngu" />
-        <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="6473098541526393769" nodeInfo="igu">
-          <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
-          <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
-          <property name="name" nameId="tpck.1169194664001" value="dateTime_t" />
-          <property name="isFinal" nameId="tpee.1176718929932" value="false" />
-          <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6473098541526393770" nodeInfo="nn" />
-          <node role="type" roleId="tpee.5680397130376446158" type="spci.RichStringType" typeId="spci.3354025285337211097" id="6473098541526393771" nodeInfo="ig" />
-          <node role="initializer" roleId="tpee.1068431790190" type="spci.RichString" typeId="spci.3354025285337049262" id="6473098541526393772" nodeInfo="ng">
-            <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="6473098541526393773" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526393774" nodeInfo="ng" />
-              <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="6473098541526393775" nodeInfo="ng">
-                <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionDateTime" typeId="spci.3354025285337564600" id="6473098541526393776" nodeInfo="ng">
-                  <node role="specificConversion" roleId="spci.7716961532373442892" type="spci.DateConversionDayOfWeekNameFull" typeId="spci.7716961532373429855" id="6473098541526393777" nodeInfo="ng" />
-                </node>
-                <node role="expression" roleId="spci.7716961532366136824" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="6473098541526393778" nodeInfo="nn">
-                  <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="6473098541526393779" nodeInfo="nn">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="k7g3.~GregorianCalendar%d&lt;init&gt;()" resolveInfo="GregorianCalendar" />
-                  </node>
-                </node>
-              </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526393780" nodeInfo="ng" />
-            </node>
-          </node>
-        </node>
-        <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="6473098541526393781" nodeInfo="igu">
-          <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
-          <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
-          <property name="name" nameId="tpck.1169194664001" value="dateTime_T" />
-          <property name="isFinal" nameId="tpee.1176718929932" value="false" />
-          <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6473098541526393782" nodeInfo="nn" />
-          <node role="type" roleId="tpee.5680397130376446158" type="spci.RichStringType" typeId="spci.3354025285337211097" id="6473098541526393783" nodeInfo="ig" />
-          <node role="initializer" roleId="tpee.1068431790190" type="spci.RichString" typeId="spci.3354025285337049262" id="6473098541526393784" nodeInfo="ng">
-            <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="6473098541526393785" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526393786" nodeInfo="ng" />
-              <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="6473098541526393787" nodeInfo="ng">
-                <node role="expression" roleId="spci.7716961532366136824" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="6473098541526393788" nodeInfo="nn">
-                  <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="6473098541526393789" nodeInfo="nn">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="k7g3.~GregorianCalendar%d&lt;init&gt;()" resolveInfo="GregorianCalendar" />
-                  </node>
-                </node>
-                <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionDateTimeUpperCase" typeId="spci.3354025285337564836" id="6473098541526393790" nodeInfo="ng">
-                  <node role="specificConversion" roleId="spci.7716961532373442892" type="spci.DateConversionDayOfWeekNameFull" typeId="spci.7716961532373429855" id="6473098541526393791" nodeInfo="ng" />
-                </node>
-              </node>
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6473098541526393792" nodeInfo="ng" />
-            </node>
-          </node>
-        </node>
         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6473098541526393793" nodeInfo="nn" />
       </node>
     </node>
@@ -4003,6 +4193,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337723327395" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337723320664" resolveInfo="d" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062116284" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062116357" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723249965" nodeInfo="ng" />
             </node>
@@ -4025,6 +4218,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionDateTimeUpperCase" typeId="spci.3354025285337564836" id="8393429337723249975" nodeInfo="ng">
                   <node role="specificConversion" roleId="spci.7716961532373442892" type="spci.DateConversionDayOfWeekNameFull" typeId="spci.7716961532373429855" id="8393429337723249976" nodeInfo="ng" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062116392" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062116505" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723249977" nodeInfo="ng" />
             </node>
@@ -4046,6 +4242,9 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337723320664" resolveInfo="d" />
                 </node>
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralBoolean" typeId="spci.3354025285337561869" id="8393429337723387985" nodeInfo="ng" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062116556" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062116683" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723347353" nodeInfo="ng" />
             </node>
@@ -4066,6 +4265,9 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337723320664" resolveInfo="d" />
                 </node>
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralBooleanUpperCase" typeId="spci.3354025285337562053" id="8393429337723388176" nodeInfo="ng" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062116734" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062116861" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723360884" nodeInfo="ng" />
             </node>
@@ -4086,6 +4288,9 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337723320664" resolveInfo="d" />
                 </node>
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralHashCode" typeId="spci.3354025285337562128" id="8393429337723388368" nodeInfo="ng" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062116896" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062117023" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723361217" nodeInfo="ng" />
             </node>
@@ -4106,6 +4311,9 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337723320664" resolveInfo="d" />
                 </node>
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralHashCodeUpperCase" typeId="spci.3354025285337562210" id="8393429337723388560" nodeInfo="ng" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062117058" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062117185" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723361561" nodeInfo="ng" />
             </node>
@@ -4126,6 +4334,9 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337723320664" resolveInfo="d" />
                 </node>
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralString" typeId="spci.3354025285337562289" id="8393429337723388752" nodeInfo="ng" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062117236" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062117363" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723361916" nodeInfo="ng" />
             </node>
@@ -4146,6 +4357,9 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337723320664" resolveInfo="d" />
                 </node>
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralStringUpperCase" typeId="spci.3354025285337562375" id="8393429337723388944" nodeInfo="ng" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062117494" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062117621" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723362282" nodeInfo="ng" />
             </node>
@@ -4497,6 +4711,9 @@
                 <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8393429337723346342" nodeInfo="nn">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337723328419" resolveInfo="gc" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062118404" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062118893" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723328417" nodeInfo="ng" />
             </node>
@@ -4519,6 +4736,9 @@
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionDateTimeUpperCase" typeId="spci.3354025285337564836" id="8393429337723328404" nodeInfo="ng">
                   <node role="specificConversion" roleId="spci.7716961532373442892" type="spci.DateConversionDayOfWeekNameFull" typeId="spci.7716961532373429855" id="8393429337723328405" nodeInfo="ng" />
                 </node>
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062119676" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062120165" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723328406" nodeInfo="ng" />
             </node>
@@ -4540,6 +4760,9 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337723328419" resolveInfo="gc" />
                 </node>
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralBoolean" typeId="spci.3354025285337561869" id="8393429337723431772" nodeInfo="ng" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062120948" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062121103" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723431773" nodeInfo="ng" />
             </node>
@@ -4560,6 +4783,9 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337723328419" resolveInfo="gc" />
                 </node>
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralBooleanUpperCase" typeId="spci.3354025285337562053" id="8393429337723431782" nodeInfo="ng" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062121886" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062122041" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723431783" nodeInfo="ng" />
             </node>
@@ -4580,6 +4806,9 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337723328419" resolveInfo="gc" />
                 </node>
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralHashCode" typeId="spci.3354025285337562128" id="8393429337723431792" nodeInfo="ng" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062122824" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062122979" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723431793" nodeInfo="ng" />
             </node>
@@ -4600,6 +4829,9 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337723328419" resolveInfo="gc" />
                 </node>
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralHashCodeUpperCase" typeId="spci.3354025285337562210" id="8393429337723431802" nodeInfo="ng" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062123762" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062123917" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723431803" nodeInfo="ng" />
             </node>
@@ -4620,6 +4852,9 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337723328419" resolveInfo="gc" />
                 </node>
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralString" typeId="spci.3354025285337562289" id="8393429337723431812" nodeInfo="ng" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062124700" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062124855" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723431813" nodeInfo="ng" />
             </node>
@@ -4640,6 +4875,9 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8393429337723328419" resolveInfo="gc" />
                 </node>
                 <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralStringUpperCase" typeId="spci.3354025285337562375" id="8393429337723431822" nodeInfo="ng" />
+                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6894640095062125638" nodeInfo="ng">
+                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="6894640095062125793" nodeInfo="ng" />
+                </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8393429337723431823" nodeInfo="ng" />
             </node>
