@@ -64,6 +64,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -94,6 +97,7 @@
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="1203001093456" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAParent" flags="in" index="osYL8" />
       <concept id="1203001236505" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_childConcept" flags="nn" index="otxO1" />
+      <concept id="1203009604308" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_link" flags="nn" index="oXsJc" />
       <concept id="3906442776579556545" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Presentation" flags="in" index="Bn3R3" />
       <concept id="3906442776579549644" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parameterNode" flags="nn" index="Bn53e" />
       <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
@@ -130,6 +134,10 @@
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1226359078165" name="jetbrains.mps.lang.smodel.structure.LinkRefExpression" flags="nn" index="28GBK8">
+        <reference id="1226359078166" name="conceptDeclaration" index="28GBKb" />
+        <reference id="1226359192215" name="linkDeclaration" index="28H3Ia" />
+      </concept>
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -1509,6 +1517,22 @@
     <ref role="1M2myG" to="clqz:1_07M0Q77df" resolve="JunctionState" />
     <node concept="osYL8" id="17MIiXaOn20" role="1MLXOK">
       <node concept="3clFbS" id="17MIiXaOn21" role="2VODD2">
+        <node concept="3clFbJ" id="11FSXkDLCqD" role="3cqZAp">
+          <node concept="3clFbS" id="11FSXkDLCqF" role="3clFbx">
+            <node concept="3cpWs6" id="11FSXkDLF1I" role="3cqZAp">
+              <node concept="3clFbT" id="11FSXkDLFpB" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="11FSXkDLFG4" role="3clFbw">
+            <node concept="oXsJc" id="11FSXkDLFTr" role="3uHU7w" />
+            <node concept="28GBK8" id="11FSXkDLGq8" role="3uHU7B">
+              <ref role="28GBKb" to="tpck:gw2VY9q" resolve="BaseConcept" />
+              <ref role="28H3Ia" to="tpck:4uZwTti3__2" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="1_07M0QbV9R" role="3cqZAp">
           <node concept="22lmx$" id="2FZRWG9cdIw" role="3clFbG">
             <node concept="2OqwBi" id="2FZRWG9ceU4" role="3uHU7w">
