@@ -207,7 +207,7 @@
         <node concept="38rL1p" id="7yN$Xh8CIs8" role="3cqZAp">
           <node concept="38rIoz" id="7yN$Xh8CIsa" role="38rM$J">
             <property role="38rIoG" value="call" />
-            <property role="38rMdH" value="gswitch" />
+            <property role="38rMdH" value="signum_gswitch" />
             <node concept="3Tqbb2" id="7yN$Xh8CI$l" role="38rYrG">
               <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
             </node>

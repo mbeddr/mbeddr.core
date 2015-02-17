@@ -197,6 +197,9 @@
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
+      </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -6120,6 +6123,51 @@
         <property role="NWlVz" value="If res is null (which means a bug), we return an empty list, if res is not null then a singleton list." />
       </node>
     </node>
+    <node concept="2tJIrI" id="5A4xqPJUrLZ" role="jymVt" />
+    <node concept="3clFb_" id="2yoYFV_JgMf" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="debug" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2yoYFV_JgMi" role="3clF47">
+        <node concept="3clFbJ" id="2yoYFV_JsUk" role="3cqZAp">
+          <node concept="3clFbS" id="2yoYFV_JsUm" role="3clFbx">
+            <node concept="3clFbF" id="2yoYFV_Jm91" role="3cqZAp">
+              <node concept="2OqwBi" id="2yoYFV_Jm8Y" role="3clFbG">
+                <node concept="10M0yZ" id="2yoYFV_Jm8Z" role="2Oq$k0">
+                  <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                  <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+                </node>
+                <node concept="liA8E" id="2yoYFV_Jm90" role="2OqNvi">
+                  <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="37vLTw" id="2yoYFV_Jmd$" role="37wK5m">
+                    <ref role="3cqZAo" node="2yoYFV_JjBA" resolve="s" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="5A4xqPJUaAX" role="3clFbw">
+            <ref role="3cqZAo" node="5A4xqPJU0KZ" resolve="shouldDebug" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="2yoYFV_JeAg" role="3clF45" />
+      <node concept="37vLTG" id="2yoYFV_JjBA" role="3clF46">
+        <property role="TrG5h" value="s" />
+        <node concept="17QB3L" id="2yoYFV_JjB_" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5A4xqPJU0KZ" role="3clF46">
+        <property role="TrG5h" value="shouldDebug" />
+        <node concept="10P_77" id="5A4xqPJU8RZ" role="1tU5fm" />
+      </node>
+      <node concept="3Tmbuc" id="5A4xqPJUmOf" role="1B3o_S" />
+      <node concept="NWlO9" id="5A4xqPJUtav" role="lGtFl">
+        <property role="NWlVz" value="Debugging" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5A4xqPJUrOW" role="jymVt" />
     <node concept="3Tm1VV" id="7iLQIU34QN8" role="1B3o_S" />
     <node concept="NWlO9" id="7iLQIU34QWH" role="lGtFl">
       <property role="NWlVz" value="Base class for counterexamples lifter." />
