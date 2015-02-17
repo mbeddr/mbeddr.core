@@ -348,6 +348,7 @@
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
+      <concept id="8974276187400348179" name="jetbrains.mps.lang.access.structure.ExecuteEDTCommandStatement" flags="nn" index="1QHqEQ" />
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -644,45 +645,95 @@
     <node concept="2BZ0e9" id="1ptFCtLqsns" role="2uRRBG">
       <property role="TrG5h" value="myDebugger" />
       <node concept="3Tm6S6" id="1ptFCtLqsnt" role="1B3o_S" />
-      <node concept="3uibUv" id="1ptFCtLqsnu" role="1tU5fm">
-        <ref role="3uigEE" to="x30c:6WfZQfTHrjQ" resolve="MbeddrDebugger" />
+      <node concept="3uibUv" id="6N7ktxtQtwO" role="1tU5fm">
+        <ref role="3uigEE" to="vft3:~AtomicReference" resolve="AtomicReference" />
+        <node concept="3uibUv" id="6N7ktxtQtUC" role="11_B2D">
+          <ref role="3uigEE" to="x30c:6WfZQfTHrjQ" resolve="MbeddrDebugger" />
+        </node>
+      </node>
+      <node concept="2ShNRf" id="6N7ktxtQuVr" role="33vP2m">
+        <node concept="1pGfFk" id="6N7ktxtQw3X" role="2ShVmc">
+          <ref role="37wK5l" to="vft3:~AtomicReference.&lt;init&gt;()" resolve="AtomicReference" />
+          <node concept="3uibUv" id="6N7ktxtRWcx" role="1pMfVU">
+            <ref role="3uigEE" to="x30c:6WfZQfTHrjQ" resolve="MbeddrDebugger" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2uRRBj" id="1ptFCtLqsnv" role="2uRRBE">
       <node concept="3clFbS" id="1ptFCtLqsnw" role="2VODD2">
-        <node concept="3clFbF" id="1ptFCtLqsnz" role="3cqZAp">
-          <node concept="37vLTI" id="1ptFCtLqsn$" role="3clFbG">
-            <node concept="2OqwBi" id="1ptFCtLqsn_" role="37vLTJ">
-              <node concept="2WthIp" id="1ptFCtLqsnA" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="1ptFCtLqsnB" role="2OqNvi">
-                <ref role="2WH_rO" node="1ptFCtLqsns" resolve="myDebugger" />
-              </node>
+        <node concept="3clFbF" id="5C6ntc7Gu4Y" role="3cqZAp">
+          <node concept="2OqwBi" id="5C6ntc7Gu4V" role="3clFbG">
+            <node concept="10M0yZ" id="5C6ntc7Gu4W" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
             </node>
-            <node concept="2ShNRf" id="1ptFCtLqsnC" role="37vLTx">
-              <node concept="1pGfFk" id="1ptFCtLqsnD" role="2ShVmc">
-                <ref role="37wK5l" to="x30c:6WfZQfTHrkn" resolve="MbeddrDebugger" />
-                <node concept="2YIFZM" id="1ptFCtLqsnE" role="37wK5m">
-                  <ref role="1Pybhc" to="1l1h:3SnNvqCaJc8" resolve="Debuggers" />
-                  <ref role="37wK5l" to="1l1h:3SnNvqCaJeC" resolve="getInstance" />
+            <node concept="liA8E" id="5C6ntc7Gu4X" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="5C6ntc7GwPw" role="37wK5m">
+                <node concept="2OqwBi" id="5C6ntc7GzXz" role="3uHU7w">
+                  <node concept="2YIFZM" id="5C6ntc7Gzo3" role="2Oq$k0">
+                    <ref role="37wK5l" to="e2lb:~Thread.currentThread():java.lang.Thread" resolve="currentThread" />
+                    <ref role="1Pybhc" to="e2lb:~Thread" resolve="Thread" />
+                  </node>
+                  <node concept="liA8E" id="5C6ntc7G_4c" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~Thread.getName():java.lang.String" resolve="getName" />
+                  </node>
                 </node>
-                <node concept="2YIFZM" id="1ptFCtLqsnF" role="37wK5m">
-                  <ref role="1Pybhc" to="rw00:3SnNvqCaK4d" resolve="BreakpointProvidersManager" />
-                  <ref role="37wK5l" to="rw00:3SnNvqCaK4A" resolve="getInstance" />
+                <node concept="Xl_RD" id="5C6ntc7GveR" role="3uHU7B">
+                  <property role="Xl_RC" value="Init Thread: " />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1ptFCtLqsnG" role="3cqZAp">
-          <node concept="2OqwBi" id="1ptFCtLqsnH" role="3clFbG">
-            <node concept="2OqwBi" id="1ptFCtLqsnI" role="2Oq$k0">
-              <node concept="2WthIp" id="1ptFCtLqsnJ" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="1ptFCtLqsnK" role="2OqNvi">
-                <ref role="2WH_rO" node="1ptFCtLqsns" resolve="myDebugger" />
+        <node concept="1QHqEQ" id="5C6ntc7L9yF" role="3cqZAp">
+          <node concept="1QHqEC" id="5C6ntc7L9yH" role="1QHqEI">
+            <node concept="3clFbS" id="5C6ntc7L9yJ" role="1bW5cS">
+              <node concept="3clFbF" id="6N7ktxtQy2R" role="3cqZAp">
+                <node concept="2OqwBi" id="6N7ktxtQw$d" role="3clFbG">
+                  <node concept="2OqwBi" id="6N7ktxtOfP$" role="2Oq$k0">
+                    <node concept="2WthIp" id="6N7ktxtOfP_" role="2Oq$k0" />
+                    <node concept="2BZ7hE" id="6N7ktxtOfPA" role="2OqNvi">
+                      <ref role="2WH_rO" node="1ptFCtLqsns" resolve="myDebugger" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6N7ktxtQwWa" role="2OqNvi">
+                    <ref role="37wK5l" to="vft3:~AtomicReference.set(java.lang.Object):void" resolve="set" />
+                    <node concept="2ShNRf" id="6N7ktxtOfPB" role="37wK5m">
+                      <node concept="1pGfFk" id="6N7ktxtOfPC" role="2ShVmc">
+                        <ref role="37wK5l" to="x30c:6WfZQfTHrkn" resolve="MbeddrDebugger" />
+                        <node concept="2YIFZM" id="6N7ktxtOfPD" role="37wK5m">
+                          <ref role="37wK5l" to="1l1h:3SnNvqCaJeC" resolve="getInstance" />
+                          <ref role="1Pybhc" to="1l1h:3SnNvqCaJc8" resolve="Debuggers" />
+                        </node>
+                        <node concept="2YIFZM" id="6N7ktxtOfPE" role="37wK5m">
+                          <ref role="37wK5l" to="rw00:3SnNvqCaK4A" resolve="getInstance" />
+                          <ref role="1Pybhc" to="rw00:3SnNvqCaK4d" resolve="BreakpointProvidersManager" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
-            </node>
-            <node concept="liA8E" id="1ptFCtLqsnL" role="2OqNvi">
-              <ref role="37wK5l" to="x30c:6WfZQfTHrkf" resolve="init" />
+              <node concept="3clFbF" id="6N7ktxtOfPF" role="3cqZAp">
+                <node concept="2OqwBi" id="6N7ktxtQyK3" role="3clFbG">
+                  <node concept="2OqwBi" id="6N7ktxtOfPG" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6N7ktxtOfPH" role="2Oq$k0">
+                      <node concept="2WthIp" id="6N7ktxtOfPI" role="2Oq$k0" />
+                      <node concept="2BZ7hE" id="6N7ktxtOfPJ" role="2OqNvi">
+                        <ref role="2WH_rO" node="1ptFCtLqsns" resolve="myDebugger" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6N7ktxtQyEk" role="2OqNvi">
+                      <ref role="37wK5l" to="vft3:~AtomicReference.get():java.lang.Object" resolve="get" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6N7ktxtQzpT" role="2OqNvi">
+                    <ref role="37wK5l" to="x30c:6WfZQfTHrkf" resolve="init" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -690,16 +741,52 @@
     </node>
     <node concept="2uRRBI" id="1ptFCtLqsnM" role="2uRRBF">
       <node concept="3clFbS" id="1ptFCtLqsnN" role="2VODD2">
-        <node concept="3clFbF" id="1ptFCtLqsnO" role="3cqZAp">
-          <node concept="2OqwBi" id="1ptFCtLqsnP" role="3clFbG">
-            <node concept="2OqwBi" id="1ptFCtLqsnQ" role="2Oq$k0">
-              <node concept="2WthIp" id="1ptFCtLqsnR" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="1ptFCtLqsnS" role="2OqNvi">
-                <ref role="2WH_rO" node="1ptFCtLqsns" resolve="myDebugger" />
+        <node concept="3clFbF" id="5C6ntc7JsaF" role="3cqZAp">
+          <node concept="2OqwBi" id="5C6ntc7JsaG" role="3clFbG">
+            <node concept="10M0yZ" id="5C6ntc7JsaH" role="2Oq$k0">
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="5C6ntc7JsaI" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="5C6ntc7JsaJ" role="37wK5m">
+                <node concept="2OqwBi" id="5C6ntc7JsaK" role="3uHU7w">
+                  <node concept="2YIFZM" id="5C6ntc7JsaL" role="2Oq$k0">
+                    <ref role="1Pybhc" to="e2lb:~Thread" resolve="Thread" />
+                    <ref role="37wK5l" to="e2lb:~Thread.currentThread():java.lang.Thread" resolve="currentThread" />
+                  </node>
+                  <node concept="liA8E" id="5C6ntc7JsaM" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~Thread.getName():java.lang.String" resolve="getName" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="5C6ntc7JsaN" role="3uHU7B">
+                  <property role="Xl_RC" value="Dispose Thread: " />
+                </node>
               </node>
             </node>
-            <node concept="liA8E" id="1ptFCtLqsnT" role="2OqNvi">
-              <ref role="37wK5l" to="1l1h:3SnNvqCaJCl" resolve="dispose" />
+          </node>
+        </node>
+        <node concept="1QHqEQ" id="5C6ntc7KUbL" role="3cqZAp">
+          <node concept="1QHqEC" id="5C6ntc7KUbN" role="1QHqEI">
+            <node concept="3clFbS" id="5C6ntc7KUbP" role="1bW5cS">
+              <node concept="3clFbF" id="6N7ktxtOg42" role="3cqZAp">
+                <node concept="2OqwBi" id="6N7ktxtOg43" role="3clFbG">
+                  <node concept="2OqwBi" id="6N7ktxtQzBH" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6N7ktxtOg44" role="2Oq$k0">
+                      <node concept="2WthIp" id="6N7ktxtOg45" role="2Oq$k0" />
+                      <node concept="2BZ7hE" id="6N7ktxtOg46" role="2OqNvi">
+                        <ref role="2WH_rO" node="1ptFCtLqsns" resolve="myDebugger" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6N7ktxtQ_04" role="2OqNvi">
+                      <ref role="37wK5l" to="vft3:~AtomicReference.get():java.lang.Object" resolve="get" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6N7ktxtRWXj" role="2OqNvi">
+                    <ref role="37wK5l" to="1l1h:3SnNvqCaJCl" resolve="dispose" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
