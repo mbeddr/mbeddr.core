@@ -662,31 +662,6 @@
     </node>
     <node concept="2uRRBj" id="1ptFCtLqsnv" role="2uRRBE">
       <node concept="3clFbS" id="1ptFCtLqsnw" role="2VODD2">
-        <node concept="3clFbF" id="5C6ntc7Gu4Y" role="3cqZAp">
-          <node concept="2OqwBi" id="5C6ntc7Gu4V" role="3clFbG">
-            <node concept="10M0yZ" id="5C6ntc7Gu4W" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="5C6ntc7Gu4X" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="5C6ntc7GwPw" role="37wK5m">
-                <node concept="2OqwBi" id="5C6ntc7GzXz" role="3uHU7w">
-                  <node concept="2YIFZM" id="5C6ntc7Gzo3" role="2Oq$k0">
-                    <ref role="37wK5l" to="e2lb:~Thread.currentThread():java.lang.Thread" resolve="currentThread" />
-                    <ref role="1Pybhc" to="e2lb:~Thread" resolve="Thread" />
-                  </node>
-                  <node concept="liA8E" id="5C6ntc7G_4c" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~Thread.getName():java.lang.String" resolve="getName" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="5C6ntc7GveR" role="3uHU7B">
-                  <property role="Xl_RC" value="Init Thread: " />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1QHqEQ" id="5C6ntc7L9yF" role="3cqZAp">
           <node concept="1QHqEC" id="5C6ntc7L9yH" role="1QHqEI">
             <node concept="3clFbS" id="5C6ntc7L9yJ" role="1bW5cS">
@@ -741,31 +716,6 @@
     </node>
     <node concept="2uRRBI" id="1ptFCtLqsnM" role="2uRRBF">
       <node concept="3clFbS" id="1ptFCtLqsnN" role="2VODD2">
-        <node concept="3clFbF" id="5C6ntc7JsaF" role="3cqZAp">
-          <node concept="2OqwBi" id="5C6ntc7JsaG" role="3clFbG">
-            <node concept="10M0yZ" id="5C6ntc7JsaH" role="2Oq$k0">
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="5C6ntc7JsaI" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="5C6ntc7JsaJ" role="37wK5m">
-                <node concept="2OqwBi" id="5C6ntc7JsaK" role="3uHU7w">
-                  <node concept="2YIFZM" id="5C6ntc7JsaL" role="2Oq$k0">
-                    <ref role="1Pybhc" to="e2lb:~Thread" resolve="Thread" />
-                    <ref role="37wK5l" to="e2lb:~Thread.currentThread():java.lang.Thread" resolve="currentThread" />
-                  </node>
-                  <node concept="liA8E" id="5C6ntc7JsaM" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~Thread.getName():java.lang.String" resolve="getName" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="5C6ntc7JsaN" role="3uHU7B">
-                  <property role="Xl_RC" value="Dispose Thread: " />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1QHqEQ" id="5C6ntc7KUbL" role="3cqZAp">
           <node concept="1QHqEC" id="5C6ntc7KUbN" role="1QHqEI">
             <node concept="3clFbS" id="5C6ntc7KUbP" role="1bW5cS">
