@@ -21071,7 +21071,7 @@
               <node concept="YS8fn" id="1jRCtZT5i$h" role="3cqZAp">
                 <node concept="2ShNRf" id="1jRCtZT5i$j" role="YScLw">
                   <node concept="1pGfFk" id="1jRCtZT5i$l" role="2ShVmc">
-                    <ref role="37wK5l" node="2RztF93bP8P" resolve="WResolvingChildrenFailedExcepton" />
+                    <ref role="37wK5l" node="3up2Jm_AgW_" resolve="WResolvingChildrenFailedExcepton" />
                     <node concept="3cpWs3" id="1jRCtZT5i$p" role="37wK5m">
                       <node concept="2OqwBi" id="1jRCtZT5i$v" role="3uHU7w">
                         <node concept="3cpWs2" id="1jRCtZT5i$s" role="2Oq$k0">
@@ -21084,6 +21084,9 @@
                       <node concept="Xl_RD" id="1jRCtZT5i$m" role="3uHU7B">
                         <property role="Xl_RC" value="Could not resolve children of " />
                       </node>
+                    </node>
+                    <node concept="37vLTw" id="3up2Jm_AgEG" role="37wK5m">
+                      <ref role="3cqZAo" node="1jRCtZT5i$d" resolve="e" />
                     </node>
                   </node>
                 </node>
@@ -30366,6 +30369,37 @@
         <node concept="17QB3L" id="2RztF93bP8W" role="1tU5fm" />
       </node>
     </node>
+    <node concept="3clFbW" id="3up2Jm_AgW_" role="jymVt">
+      <node concept="3cqZAl" id="3up2Jm_AgWA" role="3clF45" />
+      <node concept="3Tm1VV" id="3up2Jm_AgWB" role="1B3o_S" />
+      <node concept="3clFbS" id="3up2Jm_AgWC" role="3clF47">
+        <node concept="XkiVB" id="3up2Jm_AgWD" role="3cqZAp">
+          <ref role="37wK5l" node="3$1iqG0sfOO" resolve="DebuggerException" />
+          <node concept="3cpWs3" id="3up2Jm_AgWE" role="37wK5m">
+            <node concept="3cpWs2" id="3up2Jm_AgWF" role="3uHU7w">
+              <ref role="3cqZAo" node="3up2Jm_AgWH" resolve="identifier" />
+            </node>
+            <node concept="Xl_RD" id="3up2Jm_AgWG" role="3uHU7B">
+              <property role="Xl_RC" value="Could not resolve pointer " />
+            </node>
+          </node>
+          <node concept="37vLTw" id="3up2Jm_AhnV" role="37wK5m">
+            <ref role="3cqZAo" node="3up2Jm_Ah95" resolve="e" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3up2Jm_AgWH" role="3clF46">
+        <property role="TrG5h" value="identifier" />
+        <node concept="17QB3L" id="3up2Jm_AgWI" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3up2Jm_Ah95" role="3clF46">
+        <property role="TrG5h" value="e" />
+        <node concept="3uibUv" id="3up2Jm_AheQ" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3up2Jm_AgQl" role="jymVt" />
   </node>
   <node concept="3HP615" id="2RztF93bQ_T">
     <property role="3GE5qa" value="mapper.state.callstackconstructor" />

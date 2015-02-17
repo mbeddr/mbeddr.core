@@ -218,7 +218,7 @@
     </node>
   </node>
   <node concept="2XOHcx" id="2s7Bv57Qofu">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/debugger-tests.mpr" />
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/" />
   </node>
   <node concept="N3F5e" id="2s7Bv57Qoc5">
     <property role="TrG5h" value="TestStatements" />

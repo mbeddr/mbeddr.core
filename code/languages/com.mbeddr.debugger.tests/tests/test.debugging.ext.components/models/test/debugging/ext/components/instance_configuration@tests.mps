@@ -1098,7 +1098,7 @@
     </node>
   </node>
   <node concept="2XOHcx" id="75iUP$MbTn$">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/debugger-tests.mpr" />
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/" />
   </node>
 </model>
 
