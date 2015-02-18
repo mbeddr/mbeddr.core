@@ -183,7 +183,9 @@
         <child id="4491876417845689763" name="body" index="2EWMhI" />
         <child id="4429602430543939826" name="implements" index="PJ_c3" />
       </concept>
-      <concept id="4491876417845628841" name="com.mbeddr.ext.components.structure.RequiredPort" flags="ng" index="2EWHp$" />
+      <concept id="4491876417845628841" name="com.mbeddr.ext.components.structure.RequiredPort" flags="ng" index="2EWHp$">
+        <property id="349917904115138509" name="optional" index="3jzXuR" />
+      </concept>
       <concept id="4491876417845628840" name="com.mbeddr.ext.components.structure.ProvidedPort" flags="ng" index="2EWHp_" />
       <concept id="4491876417845484930" name="com.mbeddr.ext.components.structure.Port" flags="ng" index="2EX0hf">
         <reference id="4491876417845484932" name="intf" index="2EX0h9" />
@@ -1290,6 +1292,7 @@
       <property role="TrG5h" value="BaseOfBase" />
       <node concept="2EWHp$" id="7HfWMO9lJsn" role="2RW2fA">
         <property role="TrG5h" value="baseOfBase" />
+        <property role="3jzXuR" value="true" />
         <ref role="2EX0h9" node="3PT6Z48KN_u" resolve="Intf" />
       </node>
       <node concept="2EWDwb" id="7HfWMO9lJsq" role="2RW2fA">
@@ -1520,16 +1523,6 @@
         </node>
         <node concept="2EWCuO" id="7HfWMO9l4H2" role="2EWCuK">
           <ref role="2EWCuR" node="7HfWMO9l4GZ" resolve="s2" />
-          <ref role="XcPQd" node="3PT6Z48KIbh" resolve="i" />
-        </node>
-      </node>
-      <node concept="2EWCuP" id="7HfWMO9lJsD" role="5JtDH">
-        <node concept="2EWCuO" id="7HfWMO9lJsE" role="2EWCuL">
-          <ref role="2EWCuR" node="3PT6Z48KTTM" resolve="s1" />
-          <ref role="XcPQd" node="7HfWMO9lJsn" resolve="baseOfBase" />
-        </node>
-        <node concept="2EWCuO" id="7HfWMO9lJsF" role="2EWCuK">
-          <ref role="2EWCuR" node="3PT6Z48KTTM" resolve="s1" />
           <ref role="XcPQd" node="3PT6Z48KIbh" resolve="i" />
         </node>
       </node>

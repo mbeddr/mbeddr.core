@@ -2006,6 +2006,12 @@
             <ref role="3bR37D" node="5jdSgR7UUMt" resolve="com.mbeddr.core.debugger.gdb" />
           </node>
         </node>
+        <node concept="1SiIV0" id="17FCEM7ip1J" role="3bR37C">
+          <node concept="3bR9La" id="17FCEM7ip1K" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LgV" resolve="jetbrains.mps.make.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7uZw0yZ43L$" role="2G$12L">
         <property role="BnDLt" value="true" />

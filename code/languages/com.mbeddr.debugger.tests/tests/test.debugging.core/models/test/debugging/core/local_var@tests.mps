@@ -258,7 +258,10 @@
               <property role="2hmy$m" value="2" />
             </node>
           </node>
-          <node concept="26Vqqz" id="4qazcyJOfly" role="2C2TGm" />
+          <node concept="26Vqph" id="5C6ntc8neDp" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
           <node concept="3cQ7KT" id="4PM5ysqt_Lr" role="lGtFl">
             <property role="TrG5h" value="firstVarDeclarationWithInit" />
           </node>
@@ -351,14 +354,20 @@
                 <node concept="3ZVu4v" id="6CslLwlSIv0" role="3XIe9u">
                   <ref role="3ZVs_2" node="6CslLwlSIug" resolve="x" />
                 </node>
-                <node concept="26Vqqz" id="4qazcyJOfnq" role="2C2TGm" />
+                <node concept="26Vqph" id="5C6ntc8nyaB" role="2C2TGm">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                </node>
               </node>
               <node concept="3XIRlf" id="6CslLwlSIv1" role="3XIRFZ">
                 <property role="TrG5h" value="y" />
                 <node concept="3ZVu4v" id="6CslLwlSIv3" role="3XIe9u">
                   <ref role="3ZVs_2" node="6CslLwlSIuY" resolve="x" />
                 </node>
-                <node concept="26Vqqz" id="4qazcyJOfqo" role="2C2TGm" />
+                <node concept="26Vqph" id="5C6ntc8nyqq" role="2C2TGm">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                </node>
               </node>
               <node concept="1_9egQ" id="6CslLwlSIv4" role="3XIRFZ">
                 <node concept="3TM6Ey" id="2rpMtTR8zOb" role="1_9egR">

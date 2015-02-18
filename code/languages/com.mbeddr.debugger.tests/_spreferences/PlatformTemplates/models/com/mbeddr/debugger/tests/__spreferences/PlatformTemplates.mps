@@ -35,9 +35,9 @@
       <node concept="2AWWZL" id="4PM5ysqsU6o" role="2xbbhh">
         <property role="2AWWZJ" value="/usr/bin/gcc-4.2" />
         <property role="2AWWZI" value="-std=c99" />
-        <property role="1FkSt$" value="-g" />
+        <property role="1FkSt$" value="-ggdb3" />
         <property role="3r8Kxs" value="make" />
-        <property role="3r8Kw1" value="/usr/local/Cellar/gdb/7.6.1/bin/gdb" />
+        <property role="3r8Kw1" value="/opt/local/bin/gdb" />
       </node>
     </node>
   </node>

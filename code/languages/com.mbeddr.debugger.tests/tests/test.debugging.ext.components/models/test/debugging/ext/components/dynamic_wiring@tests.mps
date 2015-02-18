@@ -210,6 +210,7 @@
         <child id="7048220250906049591" name="marker" index="30a7be" />
       </concept>
       <concept id="4193597469137492644" name="com.mbeddr.core.debug.test.structure.MarkerRef" flags="ng" index="3cQ7K9">
+        <property id="105850086903157559" name="name" index="3sdDOw" />
         <reference id="4193597469137492645" name="marker" index="3cQ7K8" />
       </concept>
       <concept id="4193597469137492628" name="com.mbeddr.core.debug.test.structure.MarkerAnnotation" flags="ng" index="3cQ7KT" />
@@ -396,19 +397,22 @@
       <node concept="2EWDwb" id="7HfWMO9iLe4" role="2RW2fA">
         <property role="TrG5h" value="callI" />
         <node concept="3XIRFW" id="7HfWMO9iLe5" role="2EWMhI">
-          <node concept="1_9egQ" id="7HfWMO9iLed" role="3XIRFZ">
-            <node concept="30IBQI" id="7HfWMO9iLeh" role="1_9egR">
-              <ref role="2H6Oet" node="1ijJyTDpE9S" resolve="getValue" />
-              <node concept="2H6loZ" id="7HfWMO9iLee" role="1_9fRO">
-                <ref role="2H6loY" node="7HfWMO9iLec" resolve="i" />
-              </node>
-            </node>
-          </node>
           <node concept="1_9egQ" id="7HfWMO9iLeo" role="3XIRFZ">
             <node concept="3TM6Ey" id="7HfWMO9iLes" role="1_9egR">
               <node concept="EbZIE" id="7HfWMO9iLep" role="1_9fRO">
                 <ref role="EbZID" node="7HfWMO9iLej" resolve="callCounter" />
               </node>
+            </node>
+          </node>
+          <node concept="2BFjQ_" id="5C6ntc8mOSA" role="3XIRFZ">
+            <node concept="30IBQI" id="7HfWMO9iLeh" role="2BFjQA">
+              <ref role="2H6Oet" node="1ijJyTDpE9S" resolve="getValue" />
+              <node concept="2H6loZ" id="7HfWMO9iLee" role="1_9fRO">
+                <ref role="2H6loY" node="7HfWMO9iLec" resolve="i" />
+              </node>
+            </node>
+            <node concept="3cQ7KT" id="3up2JmAhMGl" role="lGtFl">
+              <property role="TrG5h" value="inCallIOp" />
             </node>
           </node>
         </node>
@@ -446,7 +450,7 @@
         <ref role="2EWCuU" node="7HfWMO9iLe2" resolve="C" />
       </node>
       <node concept="21gPQu" id="1ijJyTDpEah" role="5JtDH">
-        <property role="TrG5h" value="a" />
+        <property role="TrG5h" value="a1" />
         <property role="1XXhMb" value="true" />
         <node concept="219P8x" id="1ijJyTDpEai" role="21ad3a">
           <ref role="219P8w" node="1ijJyTDpEac" resolve="a" />
@@ -493,7 +497,7 @@
             <node concept="30IJZa" id="1ijJyTDpEau" role="3TlMhI">
               <ref role="2H6Oet" node="1ijJyTDpE9S" resolve="getValue" />
               <node concept="2H6Wec" id="1ijJyTDpEar" role="1_9fRO">
-                <ref role="2H6Wef" node="1ijJyTDpEah" resolve="a" />
+                <ref role="2H6Wef" node="1ijJyTDpEah" resolve="a1" />
               </node>
             </node>
           </node>
@@ -506,7 +510,7 @@
           <ref role="1XX6Gv" node="1ijJyTDpEab" resolve="instances" />
           <ref role="1XX6Gs" node="1ijJyTDpEae" resolve="b" />
           <node concept="2H6Wec" id="1ijJyTDpUyc" role="1XX9tj">
-            <ref role="2H6Wef" node="1ijJyTDpEah" resolve="a" />
+            <ref role="2H6Wef" node="1ijJyTDpEah" resolve="a1" />
           </node>
         </node>
         <node concept="c0Tn9" id="1ijJyTDqJc6" role="3XIRFZ">
@@ -514,7 +518,7 @@
             <node concept="30IJZa" id="1ijJyTDqJcb" role="3TlMhI">
               <ref role="2H6Oet" node="1ijJyTDpE9S" resolve="getValue" />
               <node concept="2H6Wec" id="1ijJyTDqJc8" role="1_9fRO">
-                <ref role="2H6Wef" node="1ijJyTDpEah" resolve="a" />
+                <ref role="2H6Wef" node="1ijJyTDpEah" resolve="a1" />
               </node>
             </node>
             <node concept="3TlMh9" id="4GyojwycaXd" role="3TlMhJ">
@@ -569,6 +573,20 @@
       </node>
     </node>
     <node concept="3sgmnF" id="7HfWMO9iOfX" role="1zJi$$" />
+    <node concept="1vsUH6" id="3up2JmAhN3h" role="1zJi$$">
+      <property role="TrG5h" value="inCallI" />
+      <node concept="1l6lqP" id="3up2JmAhN3j" role="1vsUJ9">
+        <property role="1l6lqL" value="callI" />
+      </node>
+      <node concept="1l6lqP" id="3up2JmAhN3k" role="1vsUJ9">
+        <property role="1l6lqL" value="testCase1" />
+      </node>
+      <node concept="1l6lqP" id="3up2JmAhN3l" role="1vsUJ9">
+        <property role="1l6lqL" value="main" />
+      </node>
+    </node>
+    <node concept="3sgmnF" id="3up2JmAhN4e" role="1zJi$$" />
+    <node concept="3sgmnF" id="3up2JmAhN2e" role="1zJi$$" />
     <node concept="1vsUH6" id="7HfWMO9iKjs" role="1zJi$$">
       <property role="TrG5h" value="inConnectedOp" />
       <node concept="1l6lqP" id="7HfWMO9iKjv" role="1vsUJ9">
@@ -662,12 +680,13 @@
       </node>
       <node concept="3F5Y_J" id="7HfWMO9iLHW" role="3F5AM1">
         <node concept="30a7bf" id="7HfWMO9iLHX" role="3F5Y$9">
-          <node concept="3cQ7K9" id="7HfWMO9iLHY" role="30a7be">
-            <ref role="3cQ7K8" node="7HfWMO9iKiX" resolve="inConnectedOp" />
+          <node concept="3cQ7K9" id="3up2JmAhN26" role="30a7be">
+            <property role="3sdDOw" value="marker" />
+            <ref role="3cQ7K8" node="3up2JmAhMGl" resolve="inCallIOp" />
           </node>
         </node>
         <node concept="1vtf2i" id="7HfWMO9iLI2" role="3F5Y$9">
-          <ref role="1vtf2j" node="7HfWMO9iOfY" resolve="inConnectedOpFromUsingComponent" />
+          <ref role="1vtf2j" node="3up2JmAhN3h" resolve="inCallI" />
         </node>
       </node>
     </node>
