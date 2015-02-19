@@ -57,8 +57,8 @@
     <import index="ln2k" ref="r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung.behavior)" />
     <import index="ar19" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.geom(JDK/java.awt.geom@java_stub)" />
     <import index="xei" ref="1338ba73-5059-479b-a929-de86597a62b8/f:java_stub#1338ba73-5059-479b-a929-de86597a62b8#edu.uci.ics.jung.visualization.util(com.mbeddr.mpsutil.jung.pluginSolution/edu.uci.ics.jung.visualization.util@java_stub)" />
-    <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -6366,6 +6366,18 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5oJ9AK5Fggy" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="handleDeletion" />
+      <node concept="3Tm1VV" id="5oJ9AK5Fggz" role="1B3o_S" />
+      <node concept="3cqZAl" id="5oJ9AK5FgjA" role="3clF45" />
+      <node concept="3clFbS" id="5oJ9AK5Fgg_" role="3clF47" />
+      <node concept="37vLTG" id="5oJ9AK5FgjF" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="5oJ9AK5FgjE" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="13hLZK" id="2GIWVTRHKAQ" role="13h7CW">
       <node concept="3clFbS" id="2GIWVTRHKAR" role="2VODD2" />
     </node>
@@ -6621,6 +6633,33 @@
         <node concept="3cpWs6" id="7X9GfVcgj5k" role="3cqZAp">
           <node concept="10Nm6u" id="7X9GfVcgjlV" role="3cqZAk" />
         </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5oJ9AK5Fdpm" role="13h7CS">
+      <property role="TrG5h" value="genHandleDeletion" />
+      <node concept="3Tm1VV" id="5oJ9AK5Fdpn" role="1B3o_S" />
+      <node concept="3cqZAl" id="5oJ9AK5FdsA" role="3clF45" />
+      <node concept="3clFbS" id="5oJ9AK5Fdpp" role="3clF47">
+        <node concept="3clFbF" id="5oJ9AK5FeYY" role="3cqZAp">
+          <node concept="2OqwBi" id="5oJ9AK5FfAz" role="3clFbG">
+            <node concept="2OqwBi" id="5oJ9AK5Ff0U" role="2Oq$k0">
+              <node concept="13iPFW" id="5oJ9AK5FeYX" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5oJ9AK5FfoB" role="2OqNvi">
+                <ref role="3Tt5mk" to="vs0r:2GIWVTRHgZp" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="5oJ9AK5FgCN" role="2OqNvi">
+              <ref role="37wK5l" node="5oJ9AK5Fggy" resolve="handleDeletion" />
+              <node concept="37vLTw" id="5oJ9AK5FgH9" role="37wK5m">
+                <ref role="3cqZAo" node="5oJ9AK5FeYF" resolve="node" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5oJ9AK5FeYF" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="5oJ9AK5FeYE" role="1tU5fm" />
       </node>
     </node>
     <node concept="13hLZK" id="7ii2FhSG_gj" role="13h7CW">
