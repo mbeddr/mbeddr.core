@@ -58,9 +58,6 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
-      <concept id="1188220165133" name="jetbrains.mps.baseLanguage.structure.ArrayLiteral" flags="nn" index="2BsdOp">
-        <child id="1188220173759" name="item" index="2BsfMF" />
-      </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
@@ -120,9 +117,6 @@
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
-      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
-        <child id="1070534760952" name="componentType" index="10Q1$1" />
-      </concept>
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -5103,37 +5097,24 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7xDyb4Pkq7z" role="jymVt" />
-    <node concept="312cEg" id="6DRvbEFVaQO" role="jymVt">
+    <node concept="312cEg" id="3aaxnh60hTz" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="wordWidthModel" />
+      <property role="TrG5h" value="wordWidthComboModel" />
       <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="6DRvbEFVaQP" role="1B3o_S" />
-      <node concept="10Q1$e" id="6DRvbEFYQkx" role="1tU5fm">
-        <node concept="3uibUv" id="6DRvbEG13AN" role="10Q1$1">
-          <ref role="3uigEE" to="tzyt:6DRvbEFRpuY" resolve="CBMCAnalysisConfig.WORD_WIDTH" />
-        </node>
+      <node concept="3Tm6S6" id="3aaxnh600Vx" role="1B3o_S" />
+      <node concept="3uibUv" id="3aaxnh60hTv" role="1tU5fm">
+        <ref role="3uigEE" to="dbrf:~DefaultComboBoxModel" resolve="DefaultComboBoxModel" />
       </node>
-      <node concept="2BsdOp" id="6DRvbEFZ0UK" role="33vP2m">
-        <node concept="Rm8GO" id="67TvXTFCKMc" role="2BsfMF">
-          <ref role="Rm8GQ" to="tzyt:67TvXTFC38K" resolve="NONE" />
-          <ref role="1Px2BO" to="tzyt:6DRvbEFRpuY" resolve="CBMCAnalysisConfig.WORD_WIDTH" />
-        </node>
-        <node concept="Rm8GO" id="6DRvbEG1F3U" role="2BsfMF">
-          <ref role="Rm8GQ" to="tzyt:6DRvbEG0tGd" resolve="W64" />
-          <ref role="1Px2BO" to="tzyt:6DRvbEFRpuY" resolve="CBMCAnalysisConfig.WORD_WIDTH" />
-        </node>
-        <node concept="Rm8GO" id="6DRvbEG1uEw" role="2BsfMF">
-          <ref role="Rm8GQ" to="tzyt:6DRvbEG0pcM" resolve="W32" />
-          <ref role="1Px2BO" to="tzyt:6DRvbEFRpuY" resolve="CBMCAnalysisConfig.WORD_WIDTH" />
-        </node>
-        <node concept="Rm8GO" id="6DRvbEG1f0K" role="2BsfMF">
-          <ref role="Rm8GQ" to="tzyt:6DRvbEFRtaw" resolve="W16" />
-          <ref role="1Px2BO" to="tzyt:6DRvbEFRpuY" resolve="CBMCAnalysisConfig.WORD_WIDTH" />
+      <node concept="2ShNRf" id="3ODZMtRlGEN" role="33vP2m">
+        <node concept="1pGfFk" id="3ODZMtRlS4D" role="2ShVmc">
+          <ref role="37wK5l" to="dbrf:~DefaultComboBoxModel.&lt;init&gt;(java.lang.Object[])" resolve="DefaultComboBoxModel" />
+          <node concept="uiWXb" id="3ODZMtRlSkC" role="37wK5m">
+            <ref role="uiZuM" to="tzyt:6DRvbEFRpuY" resolve="CBMCAnalysisConfig.WORD_WIDTH" />
+          </node>
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="3Ymokd9JE2t" role="jymVt" />
     <node concept="312cEg" id="6DRvbEFVaRE" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -5499,31 +5480,6 @@
       </node>
       <node concept="2ShNRf" id="FDeiXqA2LD" role="33vP2m">
         <node concept="1pGfFk" id="FDeiXqA2LE" role="2ShVmc">
-          <ref role="37wK5l" to="dbrf:~JCheckBox.&lt;init&gt;()" resolve="JCheckBox" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="FDeiXq_ZVb" role="jymVt" />
-    <node concept="312cEg" id="29$2IGZltn9" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="showOnlyReachableProperties" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="29$2IGZltna" role="1B3o_S" />
-      <node concept="10P_77" id="29$2IGZltnb" role="1tU5fm" />
-      <node concept="3clFbT" id="29$2IGZltnc" role="33vP2m" />
-    </node>
-    <node concept="312cEg" id="29$2IGZltnd" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="showOnlyReachablePropertiesCheckbox" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="29$2IGZltne" role="1B3o_S" />
-      <node concept="3uibUv" id="29$2IGZltnf" role="1tU5fm">
-        <ref role="3uigEE" to="dbrf:~JCheckBox" resolve="JCheckBox" />
-      </node>
-      <node concept="2ShNRf" id="29$2IGZltng" role="33vP2m">
-        <node concept="1pGfFk" id="29$2IGZltnh" role="2ShVmc">
           <ref role="37wK5l" to="dbrf:~JCheckBox.&lt;init&gt;()" resolve="JCheckBox" />
         </node>
       </node>
@@ -6509,102 +6465,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="7GloF9XRHx1" role="3cqZAp" />
-        <node concept="3clFbF" id="29$2IGZl$GG" role="3cqZAp">
-          <node concept="2OqwBi" id="29$2IGZl$GH" role="3clFbG">
-            <node concept="37vLTw" id="29$2IGZl$GI" role="2Oq$k0">
-              <ref role="3cqZAo" node="7xDyb4Plki0" resolve="advancedPanel" />
-            </node>
-            <node concept="liA8E" id="29$2IGZl$GJ" role="2OqNvi">
-              <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
-              <node concept="2ShNRf" id="29$2IGZl$GK" role="37wK5m">
-                <node concept="1pGfFk" id="29$2IGZl$GL" role="2ShVmc">
-                  <ref role="37wK5l" to="dbrf:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
-                  <node concept="Xl_RD" id="29$2IGZl$GM" role="37wK5m">
-                    <property role="Xl_RC" value="Only reachable properties (experimental): " />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="29$2IGZl$GN" role="3cqZAp">
-          <node concept="2OqwBi" id="29$2IGZl$GO" role="3clFbG">
-            <node concept="37vLTw" id="29$2IGZl$GP" role="2Oq$k0">
-              <ref role="3cqZAo" node="7xDyb4Plki0" resolve="advancedPanel" />
-            </node>
-            <node concept="liA8E" id="29$2IGZl$GQ" role="2OqNvi">
-              <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
-              <node concept="37vLTw" id="29$2IGZlKLk" role="37wK5m">
-                <ref role="3cqZAo" node="29$2IGZltnd" resolve="showOnlyReachablePropertiesCheckbox" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="29$2IGZl$GS" role="3cqZAp">
-          <node concept="2OqwBi" id="29$2IGZl$GT" role="3clFbG">
-            <node concept="37vLTw" id="29$2IGZlQ7q" role="2Oq$k0">
-              <ref role="3cqZAo" node="29$2IGZltnd" resolve="showOnlyReachablePropertiesCheckbox" />
-            </node>
-            <node concept="liA8E" id="29$2IGZl$GV" role="2OqNvi">
-              <ref role="37wK5l" to="dbrf:~JComponent.setToolTipText(java.lang.String):void" resolve="setToolTipText" />
-              <node concept="Xl_RD" id="29$2IGZl$GW" role="37wK5m">
-                <property role="Xl_RC" value="Use CBMC option --show-reachable-properties instead of --show-properties. " />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="29$2IGZl$GX" role="3cqZAp">
-          <node concept="2OqwBi" id="29$2IGZl$GY" role="3clFbG">
-            <node concept="37vLTw" id="29$2IGZlQ$w" role="2Oq$k0">
-              <ref role="3cqZAo" node="29$2IGZltnd" resolve="showOnlyReachablePropertiesCheckbox" />
-            </node>
-            <node concept="liA8E" id="29$2IGZl$H0" role="2OqNvi">
-              <ref role="37wK5l" to="dbrf:~AbstractButton.addChangeListener(javax.swing.event.ChangeListener):void" resolve="addChangeListener" />
-              <node concept="2ShNRf" id="29$2IGZl$H1" role="37wK5m">
-                <node concept="YeOm9" id="29$2IGZl$H2" role="2ShVmc">
-                  <node concept="1Y3b0j" id="29$2IGZl$H3" role="YeSDq">
-                    <property role="2bfB8j" value="true" />
-                    <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
-                    <ref role="1Y3XeK" to="lcqf:~ChangeListener" resolve="ChangeListener" />
-                    <node concept="3Tm1VV" id="29$2IGZl$H4" role="1B3o_S" />
-                    <node concept="3clFb_" id="29$2IGZl$H5" role="jymVt">
-                      <property role="1EzhhJ" value="false" />
-                      <property role="TrG5h" value="stateChanged" />
-                      <property role="DiZV1" value="false" />
-                      <property role="IEkAT" value="false" />
-                      <node concept="3Tm1VV" id="29$2IGZl$H6" role="1B3o_S" />
-                      <node concept="3cqZAl" id="29$2IGZl$H7" role="3clF45" />
-                      <node concept="37vLTG" id="29$2IGZl$H8" role="3clF46">
-                        <property role="TrG5h" value="p0" />
-                        <node concept="3uibUv" id="29$2IGZl$H9" role="1tU5fm">
-                          <ref role="3uigEE" to="lcqf:~ChangeEvent" resolve="ChangeEvent" />
-                        </node>
-                      </node>
-                      <node concept="3clFbS" id="29$2IGZl$Ha" role="3clF47">
-                        <node concept="3clFbF" id="29$2IGZl$Hb" role="3cqZAp">
-                          <node concept="37vLTI" id="29$2IGZl$Hc" role="3clFbG">
-                            <node concept="2OqwBi" id="29$2IGZl$Hd" role="37vLTx">
-                              <node concept="37vLTw" id="29$2IGZlQJy" role="2Oq$k0">
-                                <ref role="3cqZAo" node="29$2IGZltnd" resolve="showOnlyReachablePropertiesCheckbox" />
-                              </node>
-                              <node concept="liA8E" id="29$2IGZl$Hf" role="2OqNvi">
-                                <ref role="37wK5l" to="dbrf:~AbstractButton.isSelected():boolean" resolve="isSelected" />
-                              </node>
-                            </node>
-                            <node concept="37vLTw" id="29$2IGZlQPD" role="37vLTJ">
-                              <ref role="3cqZAo" node="29$2IGZltn9" resolve="showOnlyReachableProperties" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="29$2IGZlyn3" role="3cqZAp" />
         <node concept="3cpWs8" id="6DRvbEG2Ttk" role="3cqZAp">
           <node concept="3cpWsn" id="6DRvbEG2Ttl" role="3cpWs9">
             <property role="3TUv4t" value="false" />
@@ -6666,13 +6526,8 @@
             </node>
             <node concept="liA8E" id="3ODZMtRlGAl" role="2OqNvi">
               <ref role="37wK5l" to="dbrf:~JComboBox.setModel(javax.swing.ComboBoxModel):void" resolve="setModel" />
-              <node concept="2ShNRf" id="3ODZMtRlGEN" role="37wK5m">
-                <node concept="1pGfFk" id="3ODZMtRlS4D" role="2ShVmc">
-                  <ref role="37wK5l" to="dbrf:~DefaultComboBoxModel.&lt;init&gt;(java.lang.Object[])" resolve="DefaultComboBoxModel" />
-                  <node concept="uiWXb" id="3ODZMtRlSkC" role="37wK5m">
-                    <ref role="uiZuM" to="tzyt:6DRvbEFRpuY" resolve="CBMCAnalysisConfig.WORD_WIDTH" />
-                  </node>
-                </node>
+              <node concept="37vLTw" id="3aaxnh60x0R" role="37wK5m">
+                <ref role="3cqZAo" node="3aaxnh60hTz" resolve="wordWidthComboModel" />
               </node>
             </node>
           </node>
@@ -7819,22 +7674,6 @@
       <node concept="10P_77" id="NfDeW0PIxw" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="NfDeW0PMnu" role="jymVt" />
-    <node concept="3clFb_" id="29$2IGZmnhl" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="getShowOnlyReachableProperties" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <node concept="3clFbS" id="29$2IGZmnhm" role="3clF47">
-        <node concept="3cpWs6" id="29$2IGZmnhn" role="3cqZAp">
-          <node concept="37vLTw" id="29$2IGZmWpp" role="3cqZAk">
-            <ref role="3cqZAo" node="29$2IGZltn9" resolve="showOnlyReachableProperties" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="29$2IGZmnhp" role="1B3o_S" />
-      <node concept="10P_77" id="29$2IGZmnhq" role="3clF45" />
-    </node>
-    <node concept="2tJIrI" id="29$2IGZmkwm" role="jymVt" />
     <node concept="3clFb_" id="3Ymokd9JT8o" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getPresentRawOutput" />
@@ -7976,39 +7815,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="NfDeW0QlJM" role="jymVt" />
-    <node concept="3clFb_" id="29$2IGZn1a5" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="setShowOnlyReachableProperties" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <node concept="3clFbS" id="29$2IGZn1a6" role="3clF47">
-        <node concept="3clFbF" id="29$2IGZn1a7" role="3cqZAp">
-          <node concept="37vLTI" id="29$2IGZn1a8" role="3clFbG">
-            <node concept="37vLTw" id="29$2IGZn1a9" role="37vLTx">
-              <ref role="3cqZAo" node="29$2IGZn1ah" resolve="showOnlyReachableProperties" />
-            </node>
-            <node concept="2OqwBi" id="29$2IGZn1aa" role="37vLTJ">
-              <node concept="Xjq3P" id="29$2IGZn1ab" role="2Oq$k0" />
-              <node concept="2OwXpG" id="29$2IGZnxRc" role="2OqNvi">
-                <ref role="2Oxat5" node="29$2IGZltn9" resolve="showOnlyReachableProperties" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="29$2IGZn1ad" role="3cqZAp">
-          <node concept="1rXfSq" id="29$2IGZn1ae" role="3clFbG">
-            <ref role="37wK5l" node="7xDyb4PkmxH" resolve="refresh" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="29$2IGZn1af" role="1B3o_S" />
-      <node concept="3cqZAl" id="29$2IGZn1ag" role="3clF45" />
-      <node concept="37vLTG" id="29$2IGZn1ah" role="3clF46">
-        <property role="TrG5h" value="showOnlyReachableProperties" />
-        <node concept="10P_77" id="29$2IGZn1ai" role="1tU5fm" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="29$2IGZn0gK" role="jymVt" />
     <node concept="3clFb_" id="FDeiXq_Jnh" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getPartialLoops" />
@@ -8121,12 +7927,12 @@
         <node concept="3cpWs6" id="6DRvbEFYqDt" role="3cqZAp">
           <node concept="1eOMI4" id="6DRvbEG29y8" role="3cqZAk">
             <node concept="10QFUN" id="6DRvbEG29y9" role="1eOMHV">
-              <node concept="2OqwBi" id="6DRvbEG29y5" role="10QFUP">
-                <node concept="37vLTw" id="6DRvbEG29y6" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6DRvbEFVaRE" resolve="wordWidthCombo" />
+              <node concept="2OqwBi" id="3aaxnh60C4n" role="10QFUP">
+                <node concept="37vLTw" id="3aaxnh60xnN" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3aaxnh60hTz" resolve="wordWidthComboModel" />
                 </node>
-                <node concept="liA8E" id="6DRvbEG29y7" role="2OqNvi">
-                  <ref role="37wK5l" to="dbrf:~JComboBox.getSelectedItem():java.lang.Object" resolve="getSelectedItem" />
+                <node concept="liA8E" id="3aaxnh60Gi8" role="2OqNvi">
+                  <ref role="37wK5l" to="dbrf:~DefaultComboBoxModel.getSelectedItem():java.lang.Object" resolve="getSelectedItem" />
                 </node>
               </node>
               <node concept="3uibUv" id="6DRvbEG29y4" role="10QFUM">
