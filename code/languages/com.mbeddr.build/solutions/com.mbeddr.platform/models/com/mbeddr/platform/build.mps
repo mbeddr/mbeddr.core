@@ -6743,6 +6743,9 @@
         </node>
       </node>
     </node>
+    <node concept="2kB4xC" id="5oJ9AK5kN9h" role="1l3spd">
+      <property role="TrG5h" value="build" />
+    </node>
     <node concept="2kB4xC" id="2HHioL2Nii3" role="1l3spd">
       <property role="TrG5h" value="mbeddr.version" />
       <node concept="aVJcg" id="2HHioL2NjXU" role="aVJcv">
@@ -6750,8 +6753,17 @@
           <node concept="3Mxwey" id="2HHioL2NjXS" role="3MwsjC">
             <ref role="3Mxwex" node="2HHioL2N8dt" resolve="major.version" />
           </node>
+          <node concept="3Mxwew" id="5oJ9AK5kPbc" role="3MwsjC">
+            <property role="3MwjfP" value="." />
+          </node>
           <node concept="3Mxwey" id="2HHioL2Nm3o" role="3MwsjC">
             <ref role="3Mxwex" node="2HHioL2Ne52" resolve="minor.version" />
+          </node>
+          <node concept="3Mxwew" id="5oJ9AK5l0RD" role="3MwsjC">
+            <property role="3MwjfP" value="_" />
+          </node>
+          <node concept="3Mxwey" id="5oJ9AK5l1Rn" role="3MwsjC">
+            <ref role="3Mxwex" node="5oJ9AK5kN9h" resolve="build" />
           </node>
         </node>
       </node>
