@@ -6760,7 +6760,7 @@
             <ref role="3Mxwex" node="2HHioL2Ne52" resolve="minor.version" />
           </node>
           <node concept="3Mxwew" id="5oJ9AK5l0RD" role="3MwsjC">
-            <property role="3MwjfP" value="_" />
+            <property role="3MwjfP" value="-" />
           </node>
           <node concept="3Mxwey" id="5oJ9AK5l1Rn" role="3MwsjC">
             <ref role="3Mxwex" node="5oJ9AK5kN9h" resolve="build" />
