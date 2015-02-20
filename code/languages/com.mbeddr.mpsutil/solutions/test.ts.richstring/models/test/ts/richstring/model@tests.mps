@@ -8340,6 +8340,101 @@
       <property name="name" nameId="tpck.1169194664001" value="combined" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="6250939834955532968" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6250939834955532969" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5595801776657387364" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="5595801776657387365" nodeInfo="nn">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="k7g3.~Locale%dsetDefault(java%dutil%dLocale)%cvoid" resolveInfo="setDefault" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="k7g3.~Locale" resolveInfo="Locale" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="5595801776657387366" nodeInfo="nn">
+              <link role="classifier" roleId="tpee.1144433057691" targetNodeId="k7g3.~Locale" resolveInfo="Locale" />
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="k7g3.~Locale%dENGLISH" resolveInfo="ENGLISH" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="5595801776657387360" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5595801776657387361" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="i" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="5595801776657387362" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5595801776657387363" nodeInfo="nn">
+              <property name="value" nameId="tpee.1068580320021" value="5" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="5595801776657387354" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5595801776657387355" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="j" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="5595801776657387356" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5595801776657387357" nodeInfo="nn">
+              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5595801776657387358" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5595801776657387361" resolveInfo="i" />
+              </node>
+              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5595801776657387359" nodeInfo="nn">
+                <property name="value" nameId="tpee.1068580320021" value="1" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="5595801776657387350" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5595801776657387351" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="f" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.DoubleType" typeId="tpee.1070534513062" id="5595801776657387352" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.FloatingPointConstant" typeId="tpee.1111509017652" id="5595801776657387353" nodeInfo="nn">
+              <property name="value" nameId="tpee.1113006610751" value="100.00" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="5595801776657387331" nodeInfo="nn">
+          <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5595801776657387332" nodeInfo="nn">
+            <property name="value" nameId="tpee.1070475926801" value="i is 5 and j is 7 and f is 00100.00 in this string" />
+          </node>
+          <node role="actual" roleId="tpe3.8427750732757990725" type="spci.RichString" typeId="spci.3354025285337049262" id="5595801776657387333" nodeInfo="ng">
+            <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="5595801776657387334" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5595801776657387335" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="i is " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineVariableReference" typeId="spci.3354025285337290501" id="5595801776657387336" nodeInfo="ng">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5595801776657387361" resolveInfo="i" />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5595801776657387337" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and j is " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineExpression" typeId="spci.3354025285337528500" id="5595801776657387338" nodeInfo="ng">
+                <node role="expression" roleId="spci.3354025285337528503" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5595801776657387339" nodeInfo="nn">
+                  <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5595801776657387340" nodeInfo="nn">
+                    <property name="value" nameId="tpee.1068580320021" value="1" />
+                  </node>
+                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5595801776657387341" nodeInfo="nn">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5595801776657387355" resolveInfo="j" />
+                  </node>
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5595801776657387342" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and f is " />
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="5595801776657387343" nodeInfo="ng">
+                <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagZeroPadding" typeId="spci.3354025285337560608" id="5595801776657387344" nodeInfo="ng" />
+                <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionFloatingPointDecimal" typeId="spci.3354025285337563602" id="5595801776657387345" nodeInfo="ng" />
+                <node role="width" roleId="spci.7716961532366136822" type="spci.ConversionWidthInteger" typeId="spci.3354025285337570946" id="5595801776657387346" nodeInfo="ng">
+                  <property name="width" nameId="spci.3354025285337570949" value="8" />
+                </node>
+                <node role="precision" roleId="spci.3354025285337570729" type="spci.ConversionPrecisionInteger" typeId="spci.3354025285337570884" id="5595801776657387347" nodeInfo="ng">
+                  <property name="precision" nameId="spci.3354025285337570887" value="2" />
+                </node>
+                <node role="expression" roleId="spci.7716961532366136824" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5595801776657387348" nodeInfo="nn">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5595801776657387351" resolveInfo="f" />
+                </node>
+              </node>
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5595801776657387349" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in this string" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="5595801776657387150" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="multiline" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="5595801776657387151" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5595801776657387155" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="736640147397201724" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="736640147397201725" nodeInfo="nn">
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="k7g3.~Locale%dsetDefault(java%dutil%dLocale)%cvoid" resolveInfo="setDefault" />
@@ -8384,7 +8479,7 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="6250939834955532974" nodeInfo="nn">
           <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6250939834955532975" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="i is 5 and j is 7 and f is 00100.00 in this string" />
+            <property name="value" nameId="tpee.1070475926801" value="i is 5\nand j is 7 \nand f is 00100.00 in this string" />
           </node>
           <node role="actual" roleId="tpe3.8427750732757990725" type="spci.RichString" typeId="spci.3354025285337049262" id="6250939834955532976" nodeInfo="ng">
             <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="6250939834955532977" nodeInfo="ng">
@@ -8395,7 +8490,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6250939834955536075" resolveInfo="i" />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6250939834955536147" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and j is " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="\nand j is " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineExpression" typeId="spci.3354025285337528500" id="6250939834955540992" nodeInfo="ng">
                 <node role="expression" roleId="spci.3354025285337528503" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="6250939834955544861" nodeInfo="nn">
@@ -8408,7 +8503,7 @@
                 </node>
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="6250939834955540991" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and f is " />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value=" \nand f is " />
               </node>
               <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="6250939834955532979" nodeInfo="ng">
                 <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagZeroPadding" typeId="spci.3354025285337560608" id="6250939834955532980" nodeInfo="ng" />
@@ -8429,6 +8524,7 @@
             </node>
           </node>
         </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="5595801776657402307" nodeInfo="nn" />
       </node>
     </node>
   </root>

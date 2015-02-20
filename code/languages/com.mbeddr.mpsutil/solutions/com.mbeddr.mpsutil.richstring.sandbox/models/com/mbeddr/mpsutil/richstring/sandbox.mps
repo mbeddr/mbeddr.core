@@ -9,6 +9,8 @@
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
+  <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" implicit="yes" />
+  <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3354025285337274424" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="RichStringTest" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="3354025285337274512" nodeInfo="igu">
@@ -97,21 +99,22 @@
             <node role="type" roleId="tpee.5680397130376446158" type="spci.RichStringType" typeId="spci.3354025285337211097" id="3354025285339215707" nodeInfo="ig" />
             <node role="initializer" roleId="tpee.1068431790190" type="spci.RichString" typeId="spci.3354025285337049262" id="3354025285339215788" nodeInfo="ng">
               <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="3354025285339215790" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7716961532362378297" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="\n" />
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="902624672035444184" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="swfyxv\nasdf\nasdf\n  \n\n\n" />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="7716961532368760959" nodeInfo="ng">
-                  <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagLeftJustified" typeId="spci.3354025285337560355" id="7716961532374750117" nodeInfo="ng" />
-                  <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionDateTimeUpperCase" typeId="spci.3354025285337564836" id="7716961532373213408" nodeInfo="ng">
-                    <node role="specificConversion" roleId="spci.7716961532373442892" type="spci.DateConversionCompositionYearMonthDayRFC" typeId="spci.7716961532373437699" id="7716961532374158416" nodeInfo="ng" />
+                  <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagAlwaysIncludeSign" typeId="spci.3354025285337560434" id="902624672036066447" nodeInfo="ng" />
+                  <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagEncloseNegativeInParentheses" typeId="spci.3354025285337560770" id="902624672036073615" nodeInfo="ng" />
+                  <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagZeroPadding" typeId="spci.3354025285337560608" id="902624672036080819" nodeInfo="ng" />
+                  <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionFloatingPointDecimal" typeId="spci.3354025285337563602" id="5595801776654717472" nodeInfo="ng" />
+                  <node role="expression" roleId="spci.7716961532366136824" type="tpee.FloatingPointConstant" typeId="tpee.1111509017652" id="5595801776654663947" nodeInfo="nn">
+                    <property name="value" nameId="tpee.1113006610751" value="2.11" />
                   </node>
-                  <node role="expression" roleId="spci.7716961532366136824" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7716961532373192855" nodeInfo="nn">
-                    <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="7716961532373193889" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="k7g3.~GregorianCalendar%d&lt;init&gt;()" resolveInfo="GregorianCalendar" />
-                    </node>
+                  <node role="width" roleId="spci.7716961532366136822" type="spci.ConversionWidthInteger" typeId="spci.3354025285337570946" id="902624672036088058" nodeInfo="ng">
+                    <property name="width" nameId="spci.3354025285337570949" value="1123" />
                   </node>
-                  <node role="width" roleId="spci.7716961532366136822" type="spci.ConversionWidthInteger" typeId="spci.3354025285337570946" id="7716961532375431535" nodeInfo="ng">
-                    <property name="width" nameId="spci.3354025285337570949" value="121" />
+                  <node role="precision" roleId="spci.3354025285337570729" type="spci.ConversionPrecisionInteger" typeId="spci.3354025285337570884" id="902624672036102623" nodeInfo="ng">
+                    <property name="precision" nameId="spci.3354025285337570887" value="12313" />
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7716961532368760958" nodeInfo="ng">
@@ -122,6 +125,32 @@
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3354025285339958100" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="902624672029379188" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="902624672029379342" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="902624672029379345" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="sdf" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="902624672029379340" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="902624672029379440" nodeInfo="nn">
+              <property name="value" nameId="tpee.1070475926801" value="sadfsdf" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="902624672029379273" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="902624672029379594" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="902624672029379590" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="902624672029379591" nodeInfo="nn">
+              <link role="classifier" roleId="tpee.1144433057691" targetNodeId="e2lb.~System" resolveInfo="System" />
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="e2lb.~System%dout" resolveInfo="out" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="902624672029379592" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxg7.~PrintStream%dprintln(java%dlang%dString)%cvoid" resolveInfo="println" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="902624672029379969" nodeInfo="nn">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="902624672029379345" resolveInfo="sdf" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="902624672029379523" nodeInfo="nn" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="3354025285339958221" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3354025285339958224" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="a" />
