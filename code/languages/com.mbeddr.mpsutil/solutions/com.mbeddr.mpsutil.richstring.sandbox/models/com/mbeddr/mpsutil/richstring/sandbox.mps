@@ -103,13 +103,32 @@
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="swfyxv\nasdf\nasdf\n  \n\n\n" />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="7716961532368760959" nodeInfo="ng">
-                  <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionFloatingPointDecimal" typeId="spci.3354025285337563602" id="5595801776654717472" nodeInfo="ng" />
-                  <node role="expression" roleId="spci.7716961532366136824" type="tpee.FloatingPointConstant" typeId="tpee.1111509017652" id="5595801776654663947" nodeInfo="nn">
-                    <property name="value" nameId="tpee.1113006610751" value="2.11" />
+                  <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagZeroPadding" typeId="spci.3354025285337560608" id="4641960180067619450" nodeInfo="ng" />
+                  <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagEncloseNegativeInParentheses" typeId="spci.3354025285337560770" id="4641960180070148760" nodeInfo="ng" />
+                  <node role="expression" roleId="spci.7716961532366136824" type="tpee.UnaryMinus" typeId="tpee.8064396509828172209" id="4641960180069958896" nodeInfo="nn">
+                    <node role="expression" roleId="tpee.1239714902950" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="4641960180069958974" nodeInfo="nn">
+                      <node role="expression" roleId="tpee.1079359253376" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="4641960180069960949" nodeInfo="nn">
+                        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4641960180069960959" nodeInfo="nn">
+                          <property name="value" nameId="tpee.1068580320021" value="3" />
+                        </node>
+                        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="4641960180069959813" nodeInfo="nn">
+                          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4641960180069959037" nodeInfo="nn">
+                            <property name="value" nameId="tpee.1068580320021" value="1" />
+                          </node>
+                          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4641960180069959823" nodeInfo="nn">
+                            <property name="value" nameId="tpee.1068580320021" value="2" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionIntegralDecimal" typeId="spci.3354025285337562900" id="4641960180067583109" nodeInfo="ng" />
+                  <node role="width" roleId="spci.7716961532366136822" type="spci.ConversionWidthInteger" typeId="spci.3354025285337570946" id="4641960180068654335" nodeInfo="ng">
+                    <property name="width" nameId="spci.3354025285337570949" value="5" />
                   </node>
                 </node>
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7716961532368760958" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="\n\n" />
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4641960180067704034" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="\n\n\n" />
                 </node>
               </node>
             </node>
