@@ -103,18 +103,9 @@
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="swfyxv\nasdf\nasdf\n  \n\n\n" />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="7716961532368760959" nodeInfo="ng">
-                  <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagAlwaysIncludeSign" typeId="spci.3354025285337560434" id="902624672036066447" nodeInfo="ng" />
-                  <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagEncloseNegativeInParentheses" typeId="spci.3354025285337560770" id="902624672036073615" nodeInfo="ng" />
-                  <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagZeroPadding" typeId="spci.3354025285337560608" id="902624672036080819" nodeInfo="ng" />
                   <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionFloatingPointDecimal" typeId="spci.3354025285337563602" id="5595801776654717472" nodeInfo="ng" />
                   <node role="expression" roleId="spci.7716961532366136824" type="tpee.FloatingPointConstant" typeId="tpee.1111509017652" id="5595801776654663947" nodeInfo="nn">
                     <property name="value" nameId="tpee.1113006610751" value="2.11" />
-                  </node>
-                  <node role="width" roleId="spci.7716961532366136822" type="spci.ConversionWidthInteger" typeId="spci.3354025285337570946" id="902624672036088058" nodeInfo="ng">
-                    <property name="width" nameId="spci.3354025285337570949" value="1123" />
-                  </node>
-                  <node role="precision" roleId="spci.3354025285337570729" type="spci.ConversionPrecisionInteger" typeId="spci.3354025285337570884" id="902624672036102623" nodeInfo="ng">
-                    <property name="precision" nameId="spci.3354025285337570887" value="12313" />
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7716961532368760958" nodeInfo="ng">

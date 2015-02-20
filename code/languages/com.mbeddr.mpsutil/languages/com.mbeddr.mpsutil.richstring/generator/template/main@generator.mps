@@ -353,10 +353,5 @@
       </node>
     </node>
   </root>
-  <root type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="6894640095064704090" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="case_InlineFormat" />
-    <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="spci.3354025285337569334" resolveInfo="InlineFormat" />
-    <node role="contentNode" roleId="tpf8.1092060348987" type="tpck.BaseConcept" typeId="tpck.1133920641626" id="6894640095064704091" nodeInfo="ng" />
-  </root>
 </model>
 
