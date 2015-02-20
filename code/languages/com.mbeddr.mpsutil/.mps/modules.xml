@@ -20,6 +20,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.interpreter.test/com.mbeddr.mpsutil.interpreter.test.mpl" folder="interpreter" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.mpl" folder="interpreter" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.interpreter/runtime/com.mbeddr.mpsutil.interpreter.runtime.msd" folder="interpreter" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.javainterpreter.test/com.mbeddr.mpsutil.javainterpreter.test.mpl" folder="javainterpreter" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.langstats/langstats.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.mpl" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.margincell.sandbox/com.mbeddr.mpsutil.margincell.sandbox.mpl" folder="margincell_review" />
@@ -47,6 +48,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.querylist.sandbox/com.mbeddr.mpsutil.editor.querylist.sandbox.msd" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.httpserver/com.mbeddr.mpsutil.httpserver.msd" folder="httpSupport" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.httpsupport.rt/com.mbeddr.mpsutil.httpsupport.rt.msd" folder="httpSupport" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.javainterpreter.richstring/com.mbeddr.mpsutil.javainterpreter.richstring.msd" folder="richstring" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.javainterpreter/com.mbeddr.mpsutil.javainterpreter.msd" folder="javainterpreter" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.lantest.pluginSolution/com.mbeddr.mpsutil.lantest.pluginSolution.msd" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.msd" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.make/com.mbeddr.mpsutil.make.msd" folder="" />
@@ -69,6 +72,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.tooltip.runtime/com.mbeddr.mpsutil.tooltip.runtime.msd" folder="tooltip" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.typesystem.rt/com.mbeddr.mpsutil.typesystem.rt.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.uniquenames.sandbox/com.mbeddr.mpsutil.uniquenames.msd" folder="uniqueNames" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.ts.javainterpreter/test.ts.javainterpreter.msd" folder="javainterpreter" />
       <modulePath path="$PROJECT_DIR$/solutions/test.ts.richstring/test.ts.richstring.msd" folder="richstring" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.uniquenames.test/com.mbeddr.mpsutil.uniquenames.test.msd" folder="uniqueNames" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.match/match.msd" folder="" />
