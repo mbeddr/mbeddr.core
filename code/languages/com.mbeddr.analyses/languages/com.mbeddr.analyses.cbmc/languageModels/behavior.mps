@@ -1056,11 +1056,11 @@
               <node concept="3cpWs6" id="7ehmsbAElKA" role="3cqZAp">
                 <node concept="2OqwBi" id="7ehmsbAEya_" role="3cqZAk">
                   <node concept="10M0yZ" id="7l6s1QDNgqb" role="2Oq$k0">
-                    <ref role="3cqZAo" to="p8vh:7xDyb4PkupY" resolve="INSTANCE" />
-                    <ref role="1PxDUh" to="p8vh:7xDyb4Pkmvt" resolve="CProverPreferencePanel" />
+                    <ref role="1PxDUh" to="p8vh:3OhBgB4hwNb" resolve="CProverPreferenceModel" />
+                    <ref role="3cqZAo" to="p8vh:3OhBgB4hwNd" resolve="INSTANCE" />
                   </node>
                   <node concept="liA8E" id="7ehmsbAE$0V" role="2OqNvi">
-                    <ref role="37wK5l" to="p8vh:3JyX84yMdDM" resolve="getSliceFormula" />
+                    <ref role="37wK5l" to="p8vh:3OhBgB4hx32" resolve="getSliceFormula" />
                   </node>
                 </node>
               </node>
@@ -1132,11 +1132,11 @@
               <node concept="3cpWs6" id="1Qze4b3hFPj" role="3cqZAp">
                 <node concept="2OqwBi" id="1Qze4b3hFPk" role="3cqZAk">
                   <node concept="10M0yZ" id="1Qze4b3hFPl" role="2Oq$k0">
-                    <ref role="3cqZAo" to="p8vh:7xDyb4PkupY" resolve="INSTANCE" />
-                    <ref role="1PxDUh" to="p8vh:7xDyb4Pkmvt" resolve="CProverPreferencePanel" />
+                    <ref role="1PxDUh" to="p8vh:3OhBgB4hwNb" resolve="CProverPreferenceModel" />
+                    <ref role="3cqZAo" to="p8vh:3OhBgB4hwNd" resolve="INSTANCE" />
                   </node>
                   <node concept="liA8E" id="1Qze4b3hFPm" role="2OqNvi">
-                    <ref role="37wK5l" to="p8vh:NfDeW0PIx$" resolve="getUseRefinement" />
+                    <ref role="37wK5l" to="p8vh:3OhBgB4hx39" resolve="getUseRefinement" />
                   </node>
                 </node>
               </node>
@@ -1215,12 +1215,12 @@
             <node concept="3clFbS" id="1Qze4b3hRMX" role="9aQI4">
               <node concept="3cpWs6" id="1Qze4b3hRMY" role="3cqZAp">
                 <node concept="2OqwBi" id="1Qze4b3hRMZ" role="3cqZAk">
-                  <node concept="10M0yZ" id="1Qze4b3hRN0" role="2Oq$k0">
-                    <ref role="1PxDUh" to="p8vh:7xDyb4Pkmvt" resolve="CProverPreferencePanel" />
-                    <ref role="3cqZAo" to="p8vh:7xDyb4PkupY" resolve="INSTANCE" />
-                  </node>
                   <node concept="liA8E" id="1Qze4b3hRN1" role="2OqNvi">
-                    <ref role="37wK5l" to="p8vh:FDeiXq_Jnh" resolve="getPartialLoops" />
+                    <ref role="37wK5l" to="p8vh:3OhBgB4hx4e" resolve="getPartialLoops" />
+                  </node>
+                  <node concept="10M0yZ" id="1LaDVhVp2MI" role="2Oq$k0">
+                    <ref role="3cqZAo" to="p8vh:3OhBgB4hwNd" resolve="INSTANCE" />
+                    <ref role="1PxDUh" to="p8vh:3OhBgB4hwNb" resolve="CProverPreferenceModel" />
                   </node>
                 </node>
               </node>
@@ -1299,12 +1299,12 @@
             <node concept="3clFbS" id="1Qze4b3hTd_" role="9aQI4">
               <node concept="3cpWs6" id="1Qze4b3hTdA" role="3cqZAp">
                 <node concept="2OqwBi" id="1Qze4b3hTdB" role="3cqZAk">
-                  <node concept="10M0yZ" id="1Qze4b3hTdC" role="2Oq$k0">
-                    <ref role="3cqZAo" to="p8vh:7xDyb4PkupY" resolve="INSTANCE" />
-                    <ref role="1PxDUh" to="p8vh:7xDyb4Pkmvt" resolve="CProverPreferencePanel" />
-                  </node>
                   <node concept="liA8E" id="1Qze4b3hTdD" role="2OqNvi">
-                    <ref role="37wK5l" to="p8vh:7xDyb4PG8PP" resolve="getUnwindingAssertions" />
+                    <ref role="37wK5l" to="p8vh:3OhBgB4hx4A" resolve="getUnwindingAssertions" />
+                  </node>
+                  <node concept="10M0yZ" id="1LaDVhVp2Ui" role="2Oq$k0">
+                    <ref role="1PxDUh" to="p8vh:3OhBgB4hwNb" resolve="CProverPreferenceModel" />
+                    <ref role="3cqZAo" to="p8vh:3OhBgB4hwNd" resolve="INSTANCE" />
                   </node>
                 </node>
               </node>
@@ -1383,12 +1383,12 @@
             <node concept="3clFbS" id="1Qze4b3i1rA" role="9aQI4">
               <node concept="3cpWs6" id="1Qze4b3i1rB" role="3cqZAp">
                 <node concept="2OqwBi" id="1Qze4b3i1rC" role="3cqZAk">
-                  <node concept="10M0yZ" id="1Qze4b3i1rD" role="2Oq$k0">
-                    <ref role="1PxDUh" to="p8vh:7xDyb4Pkmvt" resolve="CProverPreferencePanel" />
-                    <ref role="3cqZAo" to="p8vh:7xDyb4PkupY" resolve="INSTANCE" />
-                  </node>
                   <node concept="liA8E" id="1Qze4b3i1rE" role="2OqNvi">
-                    <ref role="37wK5l" to="p8vh:7xDyb4PnUsH" resolve="getUnwindingDepth" />
+                    <ref role="37wK5l" to="p8vh:3OhBgB4hx3_" resolve="getUnwindingDepth" />
+                  </node>
+                  <node concept="10M0yZ" id="1LaDVhVp2Xi" role="2Oq$k0">
+                    <ref role="3cqZAo" to="p8vh:3OhBgB4hwNd" resolve="INSTANCE" />
+                    <ref role="1PxDUh" to="p8vh:3OhBgB4hwNb" resolve="CProverPreferenceModel" />
                   </node>
                 </node>
               </node>
@@ -1542,12 +1542,12 @@
                     <property role="Xl_RC" value="" />
                   </node>
                   <node concept="2OqwBi" id="1Qze4b3hKTQ" role="3uHU7w">
-                    <node concept="10M0yZ" id="1Qze4b3hKTR" role="2Oq$k0">
-                      <ref role="3cqZAo" to="p8vh:7xDyb4PkupY" resolve="INSTANCE" />
-                      <ref role="1PxDUh" to="p8vh:7xDyb4Pkmvt" resolve="CProverPreferencePanel" />
-                    </node>
                     <node concept="liA8E" id="1Qze4b3hKTS" role="2OqNvi">
-                      <ref role="37wK5l" to="p8vh:7xDyb4Pkmy_" resolve="getTimeoutInSeconds" />
+                      <ref role="37wK5l" to="p8vh:3OhBgB4hx1j" resolve="getTimeoutInSeconds" />
+                    </node>
+                    <node concept="10M0yZ" id="1LaDVhVp4pZ" role="2Oq$k0">
+                      <ref role="1PxDUh" to="p8vh:3OhBgB4hwNb" resolve="CProverPreferenceModel" />
+                      <ref role="3cqZAo" to="p8vh:3OhBgB4hwNd" resolve="INSTANCE" />
                     </node>
                   </node>
                 </node>
@@ -1623,12 +1623,12 @@
                     <property role="Xl_RC" value="" />
                   </node>
                   <node concept="2OqwBi" id="1Qze4b3hO1X" role="3uHU7w">
-                    <node concept="10M0yZ" id="1Qze4b3hO1Y" role="2Oq$k0">
-                      <ref role="1PxDUh" to="p8vh:7xDyb4Pkmvt" resolve="CProverPreferencePanel" />
-                      <ref role="3cqZAo" to="p8vh:7xDyb4PkupY" resolve="INSTANCE" />
-                    </node>
                     <node concept="liA8E" id="1Qze4b3hO1Z" role="2OqNvi">
-                      <ref role="37wK5l" to="p8vh:7xDyb4PkmyY" resolve="getPartialTimeoutInSeconds" />
+                      <ref role="37wK5l" to="p8vh:3OhBgB4hx1G" resolve="getPartialTimeoutInSeconds" />
+                    </node>
+                    <node concept="10M0yZ" id="1LaDVhVp4qp" role="2Oq$k0">
+                      <ref role="3cqZAo" to="p8vh:3OhBgB4hwNd" resolve="INSTANCE" />
+                      <ref role="1PxDUh" to="p8vh:3OhBgB4hwNb" resolve="CProverPreferenceModel" />
                     </node>
                   </node>
                 </node>
@@ -1777,12 +1777,12 @@
             <node concept="3clFbS" id="jmYEA6F1Y7" role="9aQI4">
               <node concept="3cpWs6" id="jmYEA6F1Y8" role="3cqZAp">
                 <node concept="2OqwBi" id="jmYEA6F1Y9" role="3cqZAk">
-                  <node concept="10M0yZ" id="jmYEA6F1Ya" role="2Oq$k0">
-                    <ref role="3cqZAo" to="p8vh:7xDyb4PkupY" resolve="INSTANCE" />
-                    <ref role="1PxDUh" to="p8vh:7xDyb4Pkmvt" resolve="CProverPreferencePanel" />
-                  </node>
                   <node concept="liA8E" id="jmYEA6F1Yb" role="2OqNvi">
-                    <ref role="37wK5l" to="p8vh:6DRvbEFYmOz" resolve="getWordWidth" />
+                    <ref role="37wK5l" to="p8vh:3OhBgB4hx4V" resolve="getWordWidth" />
+                  </node>
+                  <node concept="10M0yZ" id="1LaDVhVp4qN" role="2Oq$k0">
+                    <ref role="3cqZAo" to="p8vh:3OhBgB4hwNd" resolve="INSTANCE" />
+                    <ref role="1PxDUh" to="p8vh:3OhBgB4hwNb" resolve="CProverPreferenceModel" />
                   </node>
                 </node>
               </node>
