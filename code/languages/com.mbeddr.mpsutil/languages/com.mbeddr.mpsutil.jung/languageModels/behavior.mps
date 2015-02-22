@@ -39,6 +39,7 @@
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
       </concept>
+      <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
@@ -3683,6 +3684,18 @@
   </node>
   <node concept="13h7C7" id="5yCuRHcaxm5">
     <ref role="13h7C2" to="10jo:5yCuRHcawFz" resolve="IJGraphProvider" />
+    <node concept="13i0hz" id="1FqEKJFrYAY" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="inFactAppliesTo" />
+      <node concept="3Tm1VV" id="1FqEKJFrYAZ" role="1B3o_S" />
+      <node concept="3Tqbb2" id="1FqEKJFrYSQ" role="3clF45" />
+      <node concept="3clFbS" id="1FqEKJFrYB1" role="3clF47">
+        <node concept="3clFbF" id="1FqEKJFrYVh" role="3cqZAp">
+          <node concept="13iPFW" id="1FqEKJFrYVg" role="3clFbG" />
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="5yCuRHcaxm8" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
