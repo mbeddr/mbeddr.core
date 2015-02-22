@@ -100,6 +100,7 @@
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534436861" name="jetbrains.mps.baseLanguage.structure.FloatType" flags="in" index="10OMs4" />
+      <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
@@ -128,6 +129,9 @@
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
+      <concept id="1111509017652" name="jetbrains.mps.baseLanguage.structure.FloatingPointConstant" flags="nn" index="3b6qkQ">
+        <property id="1113006610751" name="value" index="$nhwW" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
@@ -1967,6 +1971,17 @@
       <node concept="3cpWsb" id="4YpX4scQSdT" role="1tU5fm" />
       <node concept="3cmrfG" id="4YpX4scSHlF" role="33vP2m">
         <property role="3cmrfH" value="1" />
+      </node>
+    </node>
+    <node concept="312cEg" id="27Rh$syUgQD" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="continuousAxisOneOvermaxFactor" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="27Rh$syUgQE" role="1B3o_S" />
+      <node concept="10P55v" id="27Rh$syUtbl" role="1tU5fm" />
+      <node concept="3b6qkQ" id="27Rh$syUtZb" role="33vP2m">
+        <property role="$nhwW" value="1.01" />
       </node>
     </node>
     <node concept="312cEg" id="UgXl$mRBPm" role="jymVt">
