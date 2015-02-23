@@ -961,6 +961,12 @@
             <ref role="3bR37D" to="p6ld:7eF9rfAuAO0" resolve="com.mbeddr.ext.components" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7HHIhkjakUg" role="3bR37C">
+          <node concept="3bR9La" id="7HHIhkjakUh" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:7eF9rfAuAPa" resolve="com.mbeddr.ext.components.test" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7Vt15sLWjNH" role="2G$12L">
         <property role="BnDLt" value="true" />
