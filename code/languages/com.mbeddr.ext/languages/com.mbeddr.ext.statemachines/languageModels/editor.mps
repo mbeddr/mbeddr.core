@@ -5289,6 +5289,12 @@
         </node>
       </node>
       <node concept="3C0lA2" id="4UHO8tvHzzR" role="3F10Kt" />
+      <node concept="3C0NmR" id="KaB72_8rPz" role="3F10Kt">
+        <property role="3DY3mF" value="2.0" />
+      </node>
+      <node concept="3C0NmK" id="KaB72_8rZv" role="3F10Kt">
+        <property role="Vb096" value="darkGray" />
+      </node>
       <node concept="2fs66k" id="7$cwLzjI9yM" role="1ide8m">
         <node concept="3clFbS" id="7$cwLzjI9yN" role="2VODD2" />
       </node>
