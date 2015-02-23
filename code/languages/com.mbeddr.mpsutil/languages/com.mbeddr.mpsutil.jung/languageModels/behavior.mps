@@ -14,6 +14,7 @@
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="xei" ref="1338ba73-5059-479b-a929-de86597a62b8/f:java_stub#1338ba73-5059-479b-a929-de86597a62b8#edu.uci.ics.jung.visualization.util(com.mbeddr.mpsutil.jung.pluginSolution/edu.uci.ics.jung.visualization.util@java_stub)" />
     <import index="10jo" ref="r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung.structure)" implicit="true" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -640,36 +641,30 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="1cocmT_$KiP" role="3cqZAp">
-          <node concept="3clFbS" id="1cocmT_$KiR" role="3clFbx">
-            <node concept="YS8fn" id="1cocmT_$Kp_" role="3cqZAp">
-              <node concept="2ShNRf" id="1cocmT_$Krv" role="YScLw">
-                <node concept="1pGfFk" id="1cocmT_$KHn" role="2ShVmc">
-                  <ref role="37wK5l" to="e2lb:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="3cpWs3" id="1cocmT_$L$i" role="37wK5m">
-                    <node concept="Xl_RD" id="1cocmT_$L$_" role="3uHU7w">
-                      <property role="Xl_RC" value=" in graph" />
-                    </node>
-                    <node concept="3cpWs3" id="1cocmT_$L2r" role="3uHU7B">
-                      <node concept="Xl_RD" id="1cocmT_$KO2" role="3uHU7B">
-                        <property role="Xl_RC" value="no vertex named " />
-                      </node>
-                      <node concept="2OqwBi" id="1cocmT_$L8u" role="3uHU7w">
-                        <node concept="Xjq3P" id="1cocmT_$L4s" role="2Oq$k0" />
-                        <node concept="2OwXpG" id="1cocmT_$Lga" role="2OqNvi">
-                          <ref role="2Oxat5" node="5yCuRHcavTa" resolve="from" />
-                        </node>
-                      </node>
+        <node concept="3clFbF" id="1P6FB4bs5BZ" role="3cqZAp">
+          <node concept="2OqwBi" id="1P6FB4bs5BW" role="3clFbG">
+            <node concept="10M0yZ" id="1P6FB4bs5BX" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="1P6FB4bs5BY" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="1cocmT_$L$i" role="37wK5m">
+                <node concept="Xl_RD" id="1cocmT_$L$_" role="3uHU7w">
+                  <property role="Xl_RC" value=" in graph" />
+                </node>
+                <node concept="3cpWs3" id="1cocmT_$L2r" role="3uHU7B">
+                  <node concept="Xl_RD" id="1cocmT_$KO2" role="3uHU7B">
+                    <property role="Xl_RC" value="no vertex named " />
+                  </node>
+                  <node concept="2OqwBi" id="1cocmT_$L8u" role="3uHU7w">
+                    <node concept="Xjq3P" id="1cocmT_$L4s" role="2Oq$k0" />
+                    <node concept="2OwXpG" id="1cocmT_$Lga" role="2OqNvi">
+                      <ref role="2Oxat5" node="5yCuRHcavTa" resolve="from" />
                     </node>
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="3clFbC" id="1cocmT_$Ko0" role="3clFbw">
-            <node concept="10Nm6u" id="1cocmT_$KoJ" role="3uHU7w" />
-            <node concept="37vLTw" id="1cocmT_$KmI" role="3uHU7B">
-              <ref role="3cqZAo" node="1cocmT_$JZc" resolve="vertex" />
             </node>
           </node>
         </node>
@@ -710,36 +705,30 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="1cocmT_$MtR" role="3cqZAp">
-          <node concept="3clFbS" id="1cocmT_$MtS" role="3clFbx">
-            <node concept="YS8fn" id="1cocmT_$MtT" role="3cqZAp">
-              <node concept="2ShNRf" id="1cocmT_$MtU" role="YScLw">
-                <node concept="1pGfFk" id="1cocmT_$MtV" role="2ShVmc">
-                  <ref role="37wK5l" to="e2lb:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="3cpWs3" id="1cocmT_$MtW" role="37wK5m">
-                    <node concept="Xl_RD" id="1cocmT_$MtX" role="3uHU7w">
-                      <property role="Xl_RC" value=" in graph" />
-                    </node>
-                    <node concept="3cpWs3" id="1cocmT_$MtY" role="3uHU7B">
-                      <node concept="Xl_RD" id="1cocmT_$MtZ" role="3uHU7B">
-                        <property role="Xl_RC" value="no vertex named " />
-                      </node>
-                      <node concept="2OqwBi" id="1cocmT_$Mu0" role="3uHU7w">
-                        <node concept="Xjq3P" id="1cocmT_$Mu1" role="2Oq$k0" />
-                        <node concept="2OwXpG" id="1cocmT_$N7k" role="2OqNvi">
-                          <ref role="2Oxat5" node="5yCuRHcavXx" resolve="to" />
-                        </node>
-                      </node>
+        <node concept="3clFbF" id="1P6FB4bs9qM" role="3cqZAp">
+          <node concept="2OqwBi" id="1P6FB4bs9qJ" role="3clFbG">
+            <node concept="10M0yZ" id="1P6FB4bs9qK" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="1P6FB4bs9qL" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="1cocmT_$MtW" role="37wK5m">
+                <node concept="Xl_RD" id="1cocmT_$MtX" role="3uHU7w">
+                  <property role="Xl_RC" value=" in graph" />
+                </node>
+                <node concept="3cpWs3" id="1cocmT_$MtY" role="3uHU7B">
+                  <node concept="Xl_RD" id="1cocmT_$MtZ" role="3uHU7B">
+                    <property role="Xl_RC" value="no vertex named " />
+                  </node>
+                  <node concept="2OqwBi" id="1cocmT_$Mu0" role="3uHU7w">
+                    <node concept="Xjq3P" id="1cocmT_$Mu1" role="2Oq$k0" />
+                    <node concept="2OwXpG" id="1cocmT_$N7k" role="2OqNvi">
+                      <ref role="2Oxat5" node="5yCuRHcavXx" resolve="to" />
                     </node>
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="3clFbC" id="1cocmT_$Mu3" role="3clFbw">
-            <node concept="10Nm6u" id="1cocmT_$Mu4" role="3uHU7w" />
-            <node concept="37vLTw" id="1cocmT_$Mu5" role="3uHU7B">
-              <ref role="3cqZAo" node="1cocmT_$MiH" resolve="vertex" />
             </node>
           </node>
         </node>
