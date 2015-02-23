@@ -362,7 +362,6 @@
       </concept>
       <concept id="3462102746004176270" name="de.itemis.mps.editor.diagram.structure.DeleteHandler" flags="ig" index="2fs66k" />
       <concept id="9064581101900867235" name="de.itemis.mps.editor.diagram.structure.IEdgeEditor" flags="ng" index="ljJFv">
-        <child id="5725606875425248008" name="delete" index="1ide8m" />
         <child id="2044706694575458564" name="labelCell" index="3kqczz" />
         <child id="8587703283523592228" name="endpointFrom" index="1PN8q7" />
         <child id="8587703283523592242" name="endpointTo" index="1PN8qh" />
@@ -419,7 +418,9 @@
       <concept id="8587703283523590697" name="de.itemis.mps.editor.diagram.structure.ConnectionEndpoint" flags="ng" index="1PNbMa">
         <child id="9064581101900868073" name="target" index="ljJml" />
         <child id="8587703283523590803" name="shape" index="1PNbKK" />
+        <child id="8587703283523590801" name="setTarget" index="1PNbKM" />
       </concept>
+      <concept id="5712445629353393305" name="de.itemis.mps.editor.diagram.structure.Function_SetConnectionEndpoint" flags="ig" index="3R4teh" />
       <concept id="1981294357061021217" name="de.itemis.mps.editor.diagram.structure.FilteringPaletteSource_FilterQuery" flags="ig" index="1Rplqp" />
       <concept id="1981294357061019414" name="de.itemis.mps.editor.diagram.structure.FilteringPaletteSource" flags="ng" index="1RplYI">
         <child id="1981294357061028835" name="filterQuery" index="1Rpjdr" />
@@ -5263,6 +5264,9 @@
             <property role="$nhwW" value="1.0" />
           </node>
         </node>
+        <node concept="3R4teh" id="KaB72_Le98" role="1PNbKM">
+          <node concept="3clFbS" id="KaB72_Le99" role="2VODD2" />
+        </node>
       </node>
       <node concept="238au4" id="4UHO8tvHzq0" role="3kqczz">
         <node concept="3EZMnI" id="4UHO8tvHzT3" role="2wV5jI">
@@ -5277,6 +5281,7 @@
             </node>
           </node>
           <node concept="3F1sOY" id="4UHO8tvHzyn" role="3EZMnx">
+            <property role="39s7Ar" value="true" />
             <ref role="1NtTu8" to="clqz:16ykm_MbyjB" />
           </node>
           <node concept="3F0ifn" id="4UHO8tvH_OW" role="3EZMnx">
@@ -5288,8 +5293,11 @@
         </node>
       </node>
       <node concept="3C0lA2" id="4UHO8tvHzzR" role="3F10Kt" />
-      <node concept="2fs66k" id="7$cwLzjI9yM" role="1ide8m">
-        <node concept="3clFbS" id="7$cwLzjI9yN" role="2VODD2" />
+      <node concept="3C0NmR" id="KaB72_8rPz" role="3F10Kt">
+        <property role="3DY3mF" value="2.0" />
+      </node>
+      <node concept="3C0NmK" id="KaB72_8rZv" role="3F10Kt">
+        <property role="Vb096" value="darkGray" />
       </node>
     </node>
     <node concept="2aJ2om" id="4UHO8tvHpSe" role="CpUAK">
