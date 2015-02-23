@@ -3164,5 +3164,31 @@
       <node concept="l2Vlx" id="7Mb2akafE8$" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="1IlnVQ9J0V_">
+    <property role="3GE5qa" value="model_access" />
+    <ref role="1XX52x" to="hba4:1IlnVQ9J0Vi" resolve="SafeWriteAction" />
+    <node concept="3EZMnI" id="1IlnVQ9J0VZ" role="2wV5jI">
+      <property role="3EZMnw" value="true" />
+      <node concept="3F0ifn" id="1IlnVQ9J0W0" role="3EZMnx">
+        <property role="3F0ifm" value="safe write action:" />
+        <node concept="Vb9p2" id="1IlnVQ9J0W1" role="3F10Kt">
+          <property role="Vbekb" value="BOLD_ITALIC" />
+        </node>
+        <node concept="VechU" id="1IlnVQ9J0W2" role="3F10Kt">
+          <property role="Vb096" value="DARK_BLUE" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1IlnVQ9J0W3" role="3EZMnx">
+        <ref role="1NtTu8" to="hba4:1IlnVQ9J0Vr" />
+      </node>
+      <node concept="3F0ifn" id="1IlnVQ9J0W4" role="3EZMnx">
+        <property role="3F0ifm" value="end action" />
+        <node concept="VechU" id="1IlnVQ9J0W5" role="3F10Kt">
+          <property role="Vb096" value="lightGray" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1IlnVQ9J0W6" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

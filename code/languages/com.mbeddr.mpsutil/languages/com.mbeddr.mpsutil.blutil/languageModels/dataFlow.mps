@@ -224,5 +224,21 @@
       </node>
     </node>
   </node>
+  <node concept="3_zdsH" id="1IlnVQ9J0ZU">
+    <property role="3GE5qa" value="model_access" />
+    <ref role="3_znuS" to="hba4:1IlnVQ9J0Vi" resolve="SafeWriteAction" />
+    <node concept="3__wT9" id="1IlnVQ9J0ZV" role="3_A6iZ">
+      <node concept="3clFbS" id="1IlnVQ9J0ZW" role="2VODD2">
+        <node concept="3AgYrR" id="1IlnVQ9J10v" role="3cqZAp">
+          <node concept="2OqwBi" id="1IlnVQ9J10w" role="3Ah4Yx">
+            <node concept="3__QtB" id="1IlnVQ9J10x" role="2Oq$k0" />
+            <node concept="3TrEf2" id="1IlnVQ9J1iJ" role="2OqNvi">
+              <ref role="3Tt5mk" to="hba4:1IlnVQ9J0Vr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
