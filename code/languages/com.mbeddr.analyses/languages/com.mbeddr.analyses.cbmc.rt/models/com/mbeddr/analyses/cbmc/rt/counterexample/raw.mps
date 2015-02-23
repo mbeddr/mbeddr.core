@@ -5172,7 +5172,7 @@
                 </node>
                 <node concept="2OqwBi" id="4yi9mPskznA" role="3clFbw">
                   <node concept="liA8E" id="4yi9mPskznB" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                     <node concept="Xl_RD" id="4yi9mPskznC" role="37wK5m">
                       <property role="Xl_RC" value="error label" />
                     </node>
