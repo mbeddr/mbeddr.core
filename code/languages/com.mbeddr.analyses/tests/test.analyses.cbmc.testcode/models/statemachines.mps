@@ -93,6 +93,7 @@
       <concept id="279446265608459824" name="com.mbeddr.core.pointers.structure.PointerType" flags="ng" index="3wxxNl" />
     </language>
     <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
+      <concept id="348741627182093743" name="com.mbeddr.analyses.cbmc.structure.CProverPlatform" flags="ng" index="22gAW6" />
       <concept id="8327535879610131181" name="com.mbeddr.analyses.cbmc.structure.ICbmcSettings" flags="ng" index="2lUzGJ">
         <property id="8327535879610783176" name="timeoutInSeconds" index="2l50Ka" />
         <property id="8327535879610783188" name="timeoutForSingleAnalysis" index="2l50Km" />
@@ -263,13 +264,6 @@
     </language>
   </registry>
   <node concept="2v9HqL" id="55cMrg_7EZQ">
-    <node concept="2AWWZL" id="55cMrg_7EZR" role="2AWWZH">
-      <property role="2AWWZJ" value="gcc" />
-      <property role="2AWWZI" value="-std=c99" />
-      <property role="1FkSt$" value="-g" />
-      <property role="3r8Kxs" value="make" />
-      <property role="3r8Kw1" value="gdb" />
-    </node>
     <node concept="2Q9Fgs" id="55cMrg_7EZS" role="2Q9xDr">
       <node concept="2Q9FjX" id="55cMrg_7EZT" role="2Q9FjI" />
     </node>
@@ -290,6 +284,13 @@
       <node concept="2v9HqM" id="DaB78Dgmxd" role="2eOfOg">
         <ref role="2v9HqP" node="34Ib7$WJwa_" resolve="Main" />
       </node>
+    </node>
+    <node concept="22gAW6" id="7HHIhkjaqUU" role="2AWWZH">
+      <property role="2AWWZJ" value="goto-cc" />
+      <property role="3r8Kw1" value="gdb" />
+      <property role="3r8Kxs" value="make" />
+      <property role="2AWWZI" value="-std=c99" />
+      <property role="1FkSt$" value="-g" />
     </node>
   </node>
   <node concept="N3F5e" id="55cMrg_7EZZ">
