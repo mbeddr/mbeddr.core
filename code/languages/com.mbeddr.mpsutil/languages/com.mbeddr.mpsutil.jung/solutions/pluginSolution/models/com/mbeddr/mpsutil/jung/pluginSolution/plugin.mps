@@ -8572,6 +8572,110 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="r7iC1MQuoC" role="3cqZAp">
+          <node concept="3cpWsn" id="r7iC1MQuoD" role="3cpWs9">
+            <property role="TrG5h" value="min" />
+            <node concept="10Oyi0" id="r7iC1MQuo6" role="1tU5fm" />
+            <node concept="10QFUN" id="r7iC1MQuoE" role="33vP2m">
+              <node concept="1eOMI4" id="r7iC1MQuoF" role="10QFUP">
+                <node concept="FJ1c_" id="r7iC1MQuoG" role="1eOMHV">
+                  <node concept="2OqwBi" id="r7iC1MQuoH" role="3uHU7w">
+                    <node concept="37vLTw" id="r7iC1MQuoI" role="2Oq$k0">
+                      <ref role="3cqZAo" node="vBdzUQqL95" resolve="gr" />
+                    </node>
+                    <node concept="2OwXpG" id="r7iC1MQuoJ" role="2OqNvi">
+                      <ref role="2Oxat5" to="ln2k:4YpX4scQP9J" resolve="continuousAxisOneCalibrationFactor" />
+                    </node>
+                  </node>
+                  <node concept="1LFfDK" id="r7iC1MQuoK" role="3uHU7B">
+                    <node concept="3cmrfG" id="r7iC1MQuoL" role="1LF_Uc">
+                      <property role="3cmrfH" value="0" />
+                    </node>
+                    <node concept="37vLTw" id="r7iC1MQuoM" role="1LFl5Q">
+                      <ref role="3cqZAo" node="4YpX4scQ8Js" resolve="axis" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="10Oyi0" id="r7iC1MQuoN" role="10QFUM" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="r7iC1MQxtt" role="3cqZAp">
+          <node concept="3cpWsn" id="r7iC1MQxtu" role="3cpWs9">
+            <property role="TrG5h" value="max" />
+            <node concept="10Oyi0" id="r7iC1MQxsT" role="1tU5fm" />
+            <node concept="10QFUN" id="r7iC1MQxtw" role="33vP2m">
+              <node concept="1eOMI4" id="r7iC1MQxtA" role="10QFUP">
+                <node concept="FJ1c_" id="r7iC1MQxtB" role="1eOMHV">
+                  <node concept="2OqwBi" id="r7iC1MQxtC" role="3uHU7w">
+                    <node concept="37vLTw" id="r7iC1MQxtD" role="2Oq$k0">
+                      <ref role="3cqZAo" node="vBdzUQqL95" resolve="gr" />
+                    </node>
+                    <node concept="2OwXpG" id="r7iC1MQxtE" role="2OqNvi">
+                      <ref role="2Oxat5" to="ln2k:4YpX4scQP9J" resolve="continuousAxisOneCalibrationFactor" />
+                    </node>
+                  </node>
+                  <node concept="1LFfDK" id="r7iC1MQxtF" role="3uHU7B">
+                    <node concept="3cmrfG" id="r7iC1MQxtG" role="1LF_Uc">
+                      <property role="3cmrfH" value="1" />
+                    </node>
+                    <node concept="37vLTw" id="r7iC1MQxtH" role="1LFl5Q">
+                      <ref role="3cqZAo" node="4YpX4scQ8Js" resolve="axis" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="10Oyi0" id="r7iC1MQxtI" role="10QFUM" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="r7iC1MQS9j" role="3cqZAp">
+          <node concept="3cpWsn" id="r7iC1MQS9m" role="3cpWs9">
+            <property role="TrG5h" value="delta" />
+            <node concept="10Oyi0" id="r7iC1MQS9h" role="1tU5fm" />
+            <node concept="3cpWsd" id="r7iC1MQU96" role="33vP2m">
+              <node concept="37vLTw" id="r7iC1MQU9e" role="3uHU7w">
+                <ref role="3cqZAo" node="r7iC1MQuoD" resolve="min" />
+              </node>
+              <node concept="37vLTw" id="r7iC1MQT_5" role="3uHU7B">
+                <ref role="3cqZAo" node="r7iC1MQxtu" resolve="max" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="r7iC1MQVEP" role="3cqZAp">
+          <node concept="37vLTI" id="r7iC1MQXe1" role="3clFbG">
+            <node concept="3cpWs3" id="r7iC1MSKWD" role="37vLTx">
+              <node concept="37vLTw" id="r7iC1MSL9M" role="3uHU7B">
+                <ref role="3cqZAo" node="r7iC1MQxtu" resolve="max" />
+              </node>
+              <node concept="1eOMI4" id="r7iC1MQZfo" role="3uHU7w">
+                <node concept="10QFUN" id="r7iC1MQZfp" role="1eOMHV">
+                  <node concept="1eOMI4" id="r7iC1MQZfq" role="10QFUP">
+                    <node concept="17qRlL" id="r7iC1MQZfl" role="1eOMHV">
+                      <node concept="2OqwBi" id="r7iC1MQZPf" role="3uHU7w">
+                        <node concept="37vLTw" id="r7iC1MQZNr" role="2Oq$k0">
+                          <ref role="3cqZAo" node="vBdzUQqL95" resolve="gr" />
+                        </node>
+                        <node concept="2OwXpG" id="r7iC1MR0hk" role="2OqNvi">
+                          <ref role="2Oxat5" to="ln2k:27Rh$syUgQD" resolve="continuousAxisOneOvermaxFactor" />
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="r7iC1MSK_K" role="3uHU7B">
+                        <ref role="3cqZAo" node="r7iC1MQS9m" resolve="delta" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="10Oyi0" id="r7iC1MQZfk" role="10QFUM" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="r7iC1MQVEN" role="37vLTJ">
+              <ref role="3cqZAo" node="r7iC1MQxtu" resolve="max" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="4YpX4scQHwx" role="3cqZAp">
           <node concept="2OqwBi" id="4YpX4scQI2u" role="3clFbG">
             <node concept="37vLTw" id="4YpX4scQHwv" role="2Oq$k0">
@@ -8580,28 +8684,8 @@
             <node concept="liA8E" id="4YpX4scQKI7" role="2OqNvi">
               <ref role="37wK5l" to="dbrf:~JSlider.setMinimum(int):void" resolve="setMinimum" />
               <node concept="1eOMI4" id="4YpX4scRx6e" role="37wK5m">
-                <node concept="10QFUN" id="4YpX4scRx6f" role="1eOMHV">
-                  <node concept="1eOMI4" id="4YpX4scRx6g" role="10QFUP">
-                    <node concept="FJ1c_" id="4YpX4scRx67" role="1eOMHV">
-                      <node concept="2OqwBi" id="4YpX4scRx68" role="3uHU7w">
-                        <node concept="37vLTw" id="4YpX4scRx69" role="2Oq$k0">
-                          <ref role="3cqZAo" node="vBdzUQqL95" resolve="gr" />
-                        </node>
-                        <node concept="2OwXpG" id="4YpX4scRx6a" role="2OqNvi">
-                          <ref role="2Oxat5" to="ln2k:4YpX4scQP9J" resolve="continuousAxisOneCalibrationFactor" />
-                        </node>
-                      </node>
-                      <node concept="1LFfDK" id="4YpX4scRx6b" role="3uHU7B">
-                        <node concept="3cmrfG" id="4YpX4scRx6c" role="1LF_Uc">
-                          <property role="3cmrfH" value="0" />
-                        </node>
-                        <node concept="37vLTw" id="4YpX4scRx6d" role="1LFl5Q">
-                          <ref role="3cqZAo" node="4YpX4scQ8Js" resolve="axis" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="10Oyi0" id="4YpX4scRx5U" role="10QFUM" />
+                <node concept="37vLTw" id="r7iC1MQuoO" role="1eOMHV">
+                  <ref role="3cqZAo" node="r7iC1MQuoD" resolve="min" />
                 </node>
               </node>
             </node>
@@ -8614,42 +8698,8 @@
             </node>
             <node concept="liA8E" id="4YpX4scRxoa" role="2OqNvi">
               <ref role="37wK5l" to="dbrf:~JSlider.setMaximum(int):void" resolve="setMaximum" />
-              <node concept="1eOMI4" id="4YpX4scRxob" role="37wK5m">
-                <node concept="10QFUN" id="4YpX4scRxoc" role="1eOMHV">
-                  <node concept="1eOMI4" id="4YcNZtTy8zQ" role="10QFUP">
-                    <node concept="17qRlL" id="4YcNZtTy92T" role="1eOMHV">
-                      <node concept="2OqwBi" id="27Rh$syWhAQ" role="3uHU7w">
-                        <node concept="37vLTw" id="27Rh$syWhAR" role="2Oq$k0">
-                          <ref role="3cqZAo" node="vBdzUQqL95" resolve="gr" />
-                        </node>
-                        <node concept="2OwXpG" id="27Rh$syWhAS" role="2OqNvi">
-                          <ref role="2Oxat5" to="ln2k:27Rh$syUgQD" resolve="continuousAxisOvermaxFactor" />
-                        </node>
-                      </node>
-                      <node concept="1eOMI4" id="4YcNZtTy8zR" role="3uHU7B">
-                        <node concept="FJ1c_" id="4YcNZtTy8zS" role="1eOMHV">
-                          <node concept="2OqwBi" id="4YcNZtTy8zT" role="3uHU7w">
-                            <node concept="37vLTw" id="4YcNZtTy8zU" role="2Oq$k0">
-                              <ref role="3cqZAo" node="vBdzUQqL95" resolve="gr" />
-                            </node>
-                            <node concept="2OwXpG" id="4YcNZtTy8zV" role="2OqNvi">
-                              <ref role="2Oxat5" to="ln2k:4YpX4scQP9J" resolve="continuousAxisOneCalibrationFactor" />
-                            </node>
-                          </node>
-                          <node concept="1LFfDK" id="4YcNZtTy8zW" role="3uHU7B">
-                            <node concept="3cmrfG" id="4YcNZtTy8zX" role="1LF_Uc">
-                              <property role="3cmrfH" value="1" />
-                            </node>
-                            <node concept="37vLTw" id="4YcNZtTy8zY" role="1LFl5Q">
-                              <ref role="3cqZAo" node="4YpX4scQ8Js" resolve="axis" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="10Oyi0" id="4YpX4scRxol" role="10QFUM" />
-                </node>
+              <node concept="37vLTw" id="r7iC1MQxtJ" role="37wK5m">
+                <ref role="3cqZAo" node="r7iC1MQxtu" resolve="max" />
               </node>
             </node>
           </node>
