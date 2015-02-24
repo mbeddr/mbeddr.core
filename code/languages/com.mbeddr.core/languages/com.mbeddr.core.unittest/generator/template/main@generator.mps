@@ -1940,6 +1940,9 @@
                                 <ref role="1f68ZM" node="O5IvPFxS4J" resolve="___indexToCheck" />
                               </node>
                             </node>
+                            <node concept="PhEJO" id="3IOp39kKVPE" role="2qqZAa">
+                              <property role="PhEJT" value="==" />
+                            </node>
                             <node concept="2wJmCr" id="5D$IuLxng8C" role="2qqZAa">
                               <node concept="3ZVu4v" id="5D$IuLxnenk" role="1_9fRO">
                                 <ref role="3ZVs_2" node="O5IvPFxLqa" resolve="___expected" />
