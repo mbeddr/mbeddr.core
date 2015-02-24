@@ -530,10 +530,6 @@
       <property role="20kJfa" value="default" />
       <ref role="20lvS9" node="6a3TZmGxj_x" resolve="TypeSwitchDefault" />
     </node>
-    <node concept="1TJgyi" id="6T8h1s23Q6J" role="1TKVEl">
-      <property role="TrG5h" value="ignoreErrors" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6T8h1s237Ti">
     <property role="3GE5qa" value="typeswitch" />
@@ -541,43 +537,42 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6T8h1s237Tk" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="body" />
+      <property role="20kJfa" value="statements" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:fzclF80" resolve="StatementList" />
     </node>
     <node concept="1TJgyj" id="6T8h1s23tx3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="clsType" />
+      <property role="20kJfa" value="classifierType" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:g7uibYu" resolve="ClassifierType" />
     </node>
     <node concept="1TJgyj" id="6T8h1s23DPr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="var" />
+      <property role="20kJfa" value="variable" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6T8h1s23DMd" resolve="TypeSwitchCaseVariableDeclaration" />
+      <ref role="20lvS9" node="6T8h1s23DMd" resolve="TypeSwitchBaseVariable" />
+    </node>
+    <node concept="1TJgyj" id="6HZ4hJtKcb3" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="mappings" />
+      <ref role="20lvS9" node="6HZ4hJtK9JN" resolve="TypeSwitchCaseMappingContainer" />
     </node>
   </node>
   <node concept="1TIwiD" id="6T8h1s23DMd">
     <property role="3GE5qa" value="typeswitch" />
-    <property role="TrG5h" value="TypeSwitchCaseVariableDeclaration" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6T8h1s23DMn" role="PzmwI">
-      <ref role="PrY4T" to="tpck:hqLv6T6" resolve="IResolveInfo" />
-    </node>
-    <node concept="PrWs8" id="6T8h1s23DMp" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
+    <property role="TrG5h" value="TypeSwitchBaseVariable" />
+    <ref role="1TJDcQ" node="6HZ4hJtXUEI" resolve="TypeSwitchVariable" />
   </node>
   <node concept="1TIwiD" id="6T8h1s23DOq">
     <property role="3GE5qa" value="typeswitch" />
-    <property role="TrG5h" value="TypeSwitchCaseVarRef" />
+    <property role="TrG5h" value="TypeSwitchVariableReference" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="6T8h1s23DOr" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="decl" />
+      <property role="20kJfa" value="variable" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6T8h1s23DMd" resolve="TypeSwitchCaseVariableDeclaration" />
+      <ref role="20lvS9" node="6HZ4hJtXUEI" resolve="TypeSwitchVariable" />
     </node>
   </node>
   <node concept="1TIwiD" id="6a3TZmGxj_x">
@@ -910,6 +905,61 @@
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:fzclF8l" resolve="Statement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6HZ4hJtJnMa">
+    <property role="3GE5qa" value="typeswitch" />
+    <property role="TrG5h" value="TypeSwitchCaseMapping" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6HZ4hJtJnWI" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="variable" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6HZ4hJtMeWO" resolve="TypeSwitchNestedVariable" />
+    </node>
+    <node concept="1TJgyj" id="6HZ4hJtJwDR" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="method" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6HZ4hJtSpVN" resolve="TypeSwitchCaseMappingMethodCall" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6HZ4hJtK9JN">
+    <property role="3GE5qa" value="typeswitch" />
+    <property role="TrG5h" value="TypeSwitchCaseMappingContainer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6HZ4hJtJybK" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="mappings" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="6HZ4hJtJnMa" resolve="TypeSwitchCaseMapping" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6HZ4hJtMeWO">
+    <property role="3GE5qa" value="typeswitch" />
+    <property role="TrG5h" value="TypeSwitchNestedVariable" />
+    <ref role="1TJDcQ" node="6HZ4hJtXUEI" resolve="TypeSwitchVariable" />
+  </node>
+  <node concept="1TIwiD" id="6HZ4hJtSpVN">
+    <property role="3GE5qa" value="typeswitch" />
+    <property role="TrG5h" value="TypeSwitchCaseMappingMethodCall" />
+    <property role="R4oN_" value="instance method call" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6HZ4hJu3qau" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hxndl_i" resolve="IMethodCall" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6HZ4hJtXUEI">
+    <property role="3GE5qa" value="typeswitch" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="TypeSwitchVariable" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6HZ4hJtXUQ$" role="PzmwI">
+      <ref role="PrY4T" to="tpck:hqLv6T6" resolve="IResolveInfo" />
+    </node>
+    <node concept="PrWs8" id="6HZ4hJtXUR_" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>
