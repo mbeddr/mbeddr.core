@@ -18,6 +18,7 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+    <use id="aa6a62c5-a61c-4ec5-94a7-61bc8b137d79" name="com.mbeddr.mpsutil.runconfiguration" version="0" />
   </languages>
   <imports>
     <import index="x30c" ref="r:04a32be8-7074-4c9c-b2f8-77d4a01a19dc(com.mbeddr.core.debug.debugger)" />
@@ -71,6 +72,7 @@
     <import index="y5px" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator(MPS.Core/jetbrains.mps.generator@java_stub)" />
     <import index="i9so" ref="r:9e5578e0-37f0-4c9b-a301-771bcb453678(jetbrains.mps.make.script)" />
     <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" />
+    <import index="exl8" ref="r:9058158e-0926-42f8-8d00-d1d86f1ff722(com.mbeddr.core.debug.behavior)" implicit="true" />
     <import index="vog7" ref="r:eaa106c6-4c8f-4807-a686-9c6a09ced82c(com.mbeddr.core.make.behavior)" implicit="true" />
     <import index="dd55" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.cache(MPS.Core/jetbrains.mps.generator.cache@java_stub)" implicit="true" />
   </imports>
@@ -353,6 +355,9 @@
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
       <concept id="8974276187400348179" name="jetbrains.mps.lang.access.structure.ExecuteEDTCommandStatement" flags="nn" index="1QHqEQ" />
+    </language>
+    <language id="aa6a62c5-a61c-4ec5-94a7-61bc8b137d79" name="com.mbeddr.mpsutil.runconfiguration">
+      <concept id="1074143110309258151" name="com.mbeddr.mpsutil.runconfiguration.structure.debuggableNodeExpression" flags="ng" index="2L0FNg" />
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -1643,14 +1648,65 @@
       </node>
       <node concept="3KmjVa" id="4iuDOPePGWG" role="3KmjVm">
         <node concept="3clFbS" id="4iuDOPePGWH" role="2VODD2">
-          <node concept="3clFbF" id="3_UUdaFpqWR" role="3cqZAp">
-            <node concept="2OqwBi" id="3_UUdaFpqWS" role="3clFbG">
-              <node concept="3KmjVe" id="3_UUdaFpqWT" role="2Oq$k0" />
-              <node concept="2Zo12i" id="3_UUdaFpqWU" role="2OqNvi">
-                <node concept="chp4Y" id="3_UUdaFpqWV" role="2Zo12j">
-                  <ref role="cht4Q" to="2gv2:7DakfXFco7$" resolve="IBreakpointSupport" />
+          <node concept="3clFbF" id="VC7Rv1Xqh$" role="3cqZAp">
+            <node concept="2OqwBi" id="VC7Rv1Xqhx" role="3clFbG">
+              <node concept="10M0yZ" id="VC7Rv1Xqhy" role="2Oq$k0">
+                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              </node>
+              <node concept="liA8E" id="VC7Rv1Xqhz" role="2OqNvi">
+                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="3cpWs3" id="VC7Rv1Xr3$" role="37wK5m">
+                  <node concept="2OqwBi" id="VC7Rv1XrjB" role="3uHU7w">
+                    <node concept="3KmjVe" id="VC7Rv1Xrb6" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="VC7Rv1Xs5q" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="VC7Rv1Xqpi" role="3uHU7B">
+                    <property role="Xl_RC" value="**concept " />
+                  </node>
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="VC7RuZUIBe" role="3cqZAp">
+            <node concept="3cpWsn" id="VC7RuZUIBf" role="3cpWs9">
+              <property role="TrG5h" value="isBreakpointSupport" />
+              <node concept="10P_77" id="VC7RuZUIBb" role="1tU5fm" />
+              <node concept="2OqwBi" id="VC7RuZUIBg" role="33vP2m">
+                <node concept="3KmjVe" id="VC7RuZUIBh" role="2Oq$k0" />
+                <node concept="2Zo12i" id="VC7RuZUIBi" role="2OqNvi">
+                  <node concept="chp4Y" id="VC7RuZUIBj" role="2Zo12j">
+                    <ref role="cht4Q" to="2gv2:7DakfXFco7$" resolve="IBreakpointSupport" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="VC7RuZUJDa" role="3cqZAp">
+            <node concept="3clFbS" id="VC7RuZUJDc" role="3clFbx">
+              <node concept="3cpWs6" id="VC7RuZUMQk" role="3cqZAp">
+                <node concept="2OqwBi" id="VC7RuZUM7u" role="3cqZAk">
+                  <node concept="1eOMI4" id="VC7RuZULOV" role="2Oq$k0">
+                    <node concept="1PxgMI" id="VC7RuZUI10" role="1eOMHV">
+                      <ref role="1PxNhF" to="2gv2:7DakfXFco7$" resolve="IBreakpointSupport" />
+                      <node concept="2L0FNg" id="VC7RuZUHla" role="1PxMeX" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="VC7Rv1VOow" role="2OqNvi">
+                    <ref role="37wK5l" to="exl8:VC7RuZYMH1" resolve="allowsBreakpoint" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="VC7RuZUJOQ" role="3clFbw">
+              <ref role="3cqZAo" node="VC7RuZUIBf" resolve="isBreakpointSupport" />
+            </node>
+          </node>
+          <node concept="3cpWs6" id="VC7RuZUK8Z" role="3cqZAp">
+            <node concept="3clFbT" id="VC7RuZUKqj" role="3cqZAk">
+              <property role="3clFbU" value="false" />
             </node>
           </node>
         </node>
