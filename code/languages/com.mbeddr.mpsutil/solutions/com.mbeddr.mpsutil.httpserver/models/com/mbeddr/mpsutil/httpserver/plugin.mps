@@ -18,6 +18,7 @@
     <import index="1hkh" ref="f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#org.eclipse.jetty.server.handler(com.mbeddr.mpsutil.httpsupport.rt/org.eclipse.jetty.server.handler@java_stub)" />
     <import index="xmho" ref="f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#javax.servlet(com.mbeddr.mpsutil.httpsupport.rt/javax.servlet@java_stub)" />
     <import index="tp05" ref="f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#org.eclipse.jetty.server(com.mbeddr.mpsutil.httpsupport.rt/org.eclipse.jetty.server@java_stub)" />
+    <import index="22fg" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.net(JDK/java.net@java_stub)" />
     <import index="vtsz" ref="f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#org.eclipse.jetty.util.component(com.mbeddr.mpsutil.httpsupport.rt/org.eclipse.jetty.util.component@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -329,6 +330,25 @@
                                       <property role="Xl_RC" value="Starting server on port 8080" />
                                     </node>
                                   </node>
+                                  <node concept="3cpWs8" id="v1nXS808SW" role="3cqZAp">
+                                    <node concept="3cpWsn" id="v1nXS808SX" role="3cpWs9">
+                                      <property role="TrG5h" value="add" />
+                                      <node concept="3uibUv" id="v1nXS808SY" role="1tU5fm">
+                                        <ref role="3uigEE" to="22fg:~InetSocketAddress" resolve="InetSocketAddress" />
+                                      </node>
+                                      <node concept="2ShNRf" id="v1nXS809hM" role="33vP2m">
+                                        <node concept="1pGfFk" id="v1nXS80bIH" role="2ShVmc">
+                                          <ref role="37wK5l" to="22fg:~InetSocketAddress.&lt;init&gt;(java.lang.String,int)" resolve="InetSocketAddress" />
+                                          <node concept="Xl_RD" id="v1nXS80jX_" role="37wK5m">
+                                            <property role="Xl_RC" value="localhost" />
+                                          </node>
+                                          <node concept="3cmrfG" id="v1nXS80lqG" role="37wK5m">
+                                            <property role="3cmrfH" value="8080" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
                                   <node concept="3cpWs8" id="39h1xietdM$" role="3cqZAp">
                                     <node concept="3cpWsn" id="39h1xietdM_" role="3cpWs9">
                                       <property role="TrG5h" value="server" />
@@ -337,9 +357,9 @@
                                       </node>
                                       <node concept="2ShNRf" id="39h1xietdMB" role="33vP2m">
                                         <node concept="1pGfFk" id="39h1xietdMC" role="2ShVmc">
-                                          <ref role="37wK5l" to="tp05:~Server.&lt;init&gt;(int)" resolve="Server" />
-                                          <node concept="3cmrfG" id="39h1xietdMD" role="37wK5m">
-                                            <property role="3cmrfH" value="8080" />
+                                          <ref role="37wK5l" to="tp05:~Server.&lt;init&gt;(java.net.InetSocketAddress)" resolve="Server" />
+                                          <node concept="37vLTw" id="v1nXS80lGe" role="37wK5m">
+                                            <ref role="3cqZAo" node="v1nXS808SX" resolve="add" />
                                           </node>
                                         </node>
                                       </node>
