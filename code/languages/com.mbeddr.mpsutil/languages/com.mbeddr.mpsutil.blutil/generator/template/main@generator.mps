@@ -199,7 +199,9 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk">
+        <child id="1212687122400" name="typeParameter" index="1pMfVU" />
+      </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
@@ -5226,20 +5228,31 @@
             <node concept="3cpWs8" id="6HZ4hJudFtT" role="3cqZAp">
               <node concept="3cpWsn" id="6HZ4hJudFtU" role="3cpWs9">
                 <property role="TrG5h" value="cast_base_variable" />
-                <node concept="3uibUv" id="6HZ4hJudFtV" role="1tU5fm">
-                  <ref role="3uigEE" to="e2lb:~Integer" resolve="Integer" />
+                <node concept="3uibUv" id="4ntz5L1glzE" role="1tU5fm">
+                  <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+                  <node concept="3uibUv" id="4ntz5L1gnHp" role="11_B2D">
+                    <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                  </node>
                 </node>
-                <node concept="3cmrfG" id="6HZ4hJue00l" role="33vP2m">
-                  <property role="3cmrfH" value="1" />
+                <node concept="2ShNRf" id="4ntz5L1gBhM" role="33vP2m">
+                  <node concept="1pGfFk" id="4ntz5L1gVfE" role="2ShVmc">
+                    <ref role="37wK5l" to="k7g3:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
+                    <node concept="3uibUv" id="4ntz5L1gWI4" role="1pMfVU">
+                      <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="4ntz5L1gkhK" role="3cqZAp" />
             <node concept="3cpWs8" id="6HZ4hJudyq6" role="3cqZAp">
               <node concept="3cpWsn" id="6HZ4hJudyq9" role="3cpWs9">
                 <property role="TrG5h" value="cast_nested_variable" />
                 <node concept="3uibUv" id="6HZ4hJudyqa" role="1tU5fm">
-                  <ref role="3uigEE" to="e2lb:~Integer" resolve="Integer" />
-                  <node concept="10Oyi0" id="6HZ4hJutHXa" role="11_B2D" />
+                  <ref role="3uigEE" to="k7g3:~Iterator" resolve="Iterator" />
+                  <node concept="3uibUv" id="4ntz5L1ghQd" role="11_B2D">
+                    <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                  </node>
                   <node concept="29HgVG" id="6HZ4hJutETP" role="lGtFl">
                     <node concept="3NFfHV" id="6HZ4hJutETQ" role="3NFExx">
                       <node concept="3clFbS" id="6HZ4hJutETR" role="2VODD2">
@@ -5305,7 +5318,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="6HZ4hJudyqF" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~Integer.intValue():int" resolve="intValue" />
+                    <ref role="37wK5l" to="k7g3:~List.iterator():java.util.Iterator" resolve="iterator" />
                     <node concept="1ZhdrF" id="6HZ4hJudTsz" role="lGtFl">
                       <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1204053956946/1068499141037" />
                       <property role="2qtEX8" value="baseMethodDeclaration" />
