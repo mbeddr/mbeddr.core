@@ -13,7 +13,7 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="2510545900188478799" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="typeof_MultilingualJavaString" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="baseLanguage" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     <property name="overrides" nameId="tpd4.1195213689297" value="true" />
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="2510545900188478800" nodeInfo="sn">
       <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="2510545900188478801" nodeInfo="nn">
@@ -41,7 +41,7 @@
     </node>
   </root>
   <root type="tpd4.SubtypingRule" typeId="tpd4.1175147670730" id="2510545900188478810" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="baseLanguage" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     <property name="name" nameId="tpck.1169194664001" value="MultilingualJavaString_extends_java_lang_String" />
     <node role="body" roleId="tpd4.1175147624276" type="tpee.StatementList" typeId="tpee.1068580123136" id="2510545900188478811" nodeInfo="sn">
       <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="2510545900188478812" nodeInfo="nn">

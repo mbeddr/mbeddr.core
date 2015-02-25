@@ -13,7 +13,7 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2510545900188478757" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="baseLanguage" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="tnjx.2510545900188478754" resolveInfo="MultilingualJavaString" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2510545900188478758" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Image" typeId="tpc2.1139744628335" id="2510545900188478759" nodeInfo="ng">

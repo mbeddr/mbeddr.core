@@ -20,8 +20,11 @@
     <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="2510545900188479663" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2510545900188479664" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2510545900188479665" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2510545900188479666" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="Convert to multilingual string" />
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="2541463587344830460" nodeInfo="nn">
+            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2541463587344830501" nodeInfo="nn" />
+            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2510545900188479666" nodeInfo="nn">
+              <property name="value" nameId="tpee.1070475926801" value="Convert to multilingual string" />
+            </node>
           </node>
         </node>
       </node>
@@ -34,9 +37,9 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2510545900188479671" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="sxyo.568377005202317270" resolveInfo="MessageKey" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="4802078767697763054" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="tvtb.4802078767697762987" resolveInfo="findOrCreateKey" />
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="tvtb.4802078767697760689" resolveInfo="MultilingualEditorUtil" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2541463587345583902" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.2541463587345583834" resolveInfo="findOrCreateKey" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fw73.2510545900187751408" resolveInfo="MultilingualCommonUtil" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2510545900188479673" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="2510545900188479674" nodeInfo="nn" />
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2510545900188479675" nodeInfo="nn">
@@ -143,9 +146,9 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2510545900188479721" nodeInfo="in">
               <link role="concept" roleId="tp25.1138405853777" targetNodeId="sxyo.568377005202317270" resolveInfo="MessageKey" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="4802078767697763056" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="tvtb.4802078767697762987" resolveInfo="findOrCreateKey" />
-              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="tvtb.4802078767697760689" resolveInfo="MultilingualEditorUtil" />
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2541463587345583900" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.2541463587345583834" resolveInfo="findOrCreateKey" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fw73.2510545900187751408" resolveInfo="MultilingualCommonUtil" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2510545900188479723" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2510545900188479706" resolveInfo="text" />
               </node>

@@ -7,11 +7,11 @@
   <language namespace="d2a1d976-43a2-462f-ac3a-9b258ced839d(com.mbeddr.mpsutil.multilingual.baseLanguage)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="tnjx" modelUID="r:b5a6a0ba-90b8-4839-a0b6-fee9cff5d417(com.mbeddr.mpsutil.multilingual.baseLanguage.structure)" version="0" />
-  <import index="fw73" modelUID="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)" version="0" />
   <import index="sxyo" modelUID="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" version="8" />
   <import index="tp5r" modelUID="r:3ef5075b-89c5-437c-8971-b29ab29bb322(com.mbeddr.mpsutil.multilingual.common.behavior)" version="1" />
   <import index="hh4x" modelUID="r:2d9a5487-08ee-47c6-a43e-9a547268d914(com.i2s.common.multilingual.plugin)" version="-1" />
   <import index="h1po" modelUID="r:0fbaf240-65fb-4f8e-9684-faa176c6e083(com.mbeddr.mpsutil.multilingual.baseLanguage.behavior)" version="0" />
+  <import index="37hr" modelUID="r:f15d2238-026b-4ee3-b0f0-5b3bbfa1934f(com.mbeddr.mpsutil.multilingual.baseLanguage.runtime.plugin)" version="-1" />
   <import index="tpf8" modelUID="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" version="2" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
@@ -22,22 +22,22 @@
   </root>
   <root type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="2510545900188531570" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="baseLanguage" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="2510545900188531571" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="tnjx.2510545900188478754" resolveInfo="MultilingualJavaString" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="2510545900188531572" nodeInfo="ng">
         <node role="contentNode" roleId="tpf8.8900764248744213871" type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2510545900188531573" nodeInfo="ig">
           <property name="nonStatic" nameId="tpee.521412098689998745" value="true" />
-          <property name="name" nameId="tpck.1169194664001" value="asdf" />
+          <property name="name" nameId="tpck.1169194664001" value="DummyClass" />
           <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="2510545900188531574" nodeInfo="igu">
-            <property name="name" nameId="tpck.1169194664001" value="asdfyxcv" />
+            <property name="name" nameId="tpck.1169194664001" value="dummyMethod" />
             <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="2510545900188531575" nodeInfo="in" />
             <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2510545900188531576" nodeInfo="nn" />
             <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2510545900188531577" nodeInfo="sn">
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2510545900188531578" nodeInfo="nn">
-                <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2510545900188531579" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.2510545900187751614" resolveInfo="retrieveTranslation" />
-                  <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fw73.2510545900187751408" resolveInfo="MultilingualKeyHelper" />
-                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="2510545900188531580" nodeInfo="ng" />
+                <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2541463587345562767" nodeInfo="nn">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="37hr.2541463587345562744" resolveInfo="retrieveTranslation" />
+                  <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="37hr.2541463587345562343" resolveInfo="MultilingualBaseLanguageUtil" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2510545900188531581" nodeInfo="nn">
                     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="2510545900188531582" nodeInfo="nn">
                       <property name="propertyName" nameId="tpck.1757699476691236117" value="value" />

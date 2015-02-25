@@ -7,7 +7,8 @@
   <import index="phyx" modelUID="r:d26f1060-b333-4b75-ae0e-82ef2c6fdec3(com.mbeddr.mpsutil.multilingual.concept.structure)" version="3" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" />
   <import index="7eeb" modelUID="r:8eab39cc-a21c-4e39-a256-5af4285965a2(com.mbeddr.mpsutil.multilingual.concept.behavior)" version="1" />
-  <import index="fw73" modelUID="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)" version="0" />
+  <import index="fw73" modelUID="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)" version="1" />
+  <import index="5rbz" modelUID="r:86fa5f44-7382-488b-81e3-2a8da8e2ebdd(com.mbeddr.mpsutil.multilingual.concept.runtime.plugin)" version="1" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="35" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="bbp5" modelUID="r:ea4f2df6-5e5c-49de-8679-6112ec7dd9c3(com.mbeddr.mpsutil.editor.querylist.structure)" version="1" implicit="yes" />
@@ -49,11 +50,11 @@
                   </node>
                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2510545900187060807" nodeInfo="nn">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2510545900187060808" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.2510545900187751342" resolveInfo="getInstance" />
-                      <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fw73.2510545900187751325" resolveInfo="MultilingualLanguageProvider" />
+                      <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="5rbz.4912572611768497477" resolveInfo="MultilingualTranslationProvider" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5rbz.2510545900187751342" resolveInfo="getInstance" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2510545900187060809" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.2510545900187751378" resolveInfo="isShowTranslations" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5rbz.4912572611768531907" resolveInfo="isShowTranslations" />
                     </node>
                   </node>
                 </node>
@@ -83,11 +84,11 @@
                   </node>
                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2510545900187060823" nodeInfo="nn">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2510545900187060824" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.2510545900187751342" resolveInfo="getInstance" />
-                      <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fw73.2510545900187751325" resolveInfo="MultilingualLanguageProvider" />
+                      <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="5rbz.4912572611768497477" resolveInfo="MultilingualTranslationProvider" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5rbz.2510545900187751342" resolveInfo="getInstance" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2510545900187060825" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.2510545900187751378" resolveInfo="isShowTranslations" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5rbz.4912572611768531907" resolveInfo="isShowTranslations" />
                     </node>
                   </node>
                 </node>
@@ -103,11 +104,11 @@
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2510545900187060856" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2510545900187060857" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2510545900187060858" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.2510545900187751342" resolveInfo="getInstance" />
-                  <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fw73.2510545900187751325" resolveInfo="MultilingualLanguageProvider" />
+                  <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="5rbz.4912572611768497477" resolveInfo="MultilingualTranslationProvider" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5rbz.2510545900187751342" resolveInfo="getInstance" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2510545900187060859" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.2510545900187751378" resolveInfo="isShowTranslations" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5rbz.4912572611768531907" resolveInfo="isShowTranslations" />
                 </node>
               </node>
             </node>
@@ -142,17 +143,17 @@
                   <node role="expression" roleId="tpee.1081516765348" type="tpee.AndExpression" typeId="tpee.1080120340718" id="2510545900187060875" nodeInfo="nn">
                     <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2510545900187060876" nodeInfo="nn">
                       <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="2510545900187060877" nodeInfo="nn" />
-                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2510545900187060878" nodeInfo="nn">
-                        <link role="property" roleId="tp25.1138056395725" targetNodeId="phyx.2510545900187060788" resolveInfo="editName" />
+                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="6075112358357555195" nodeInfo="nn">
+                        <link role="property" roleId="tp25.1138056395725" targetNodeId="phyx.3125250773681852552" resolveInfo="editName" />
                       </node>
                     </node>
                     <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2510545900187060879" nodeInfo="nn">
                       <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2510545900187060880" nodeInfo="nn">
-                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.2510545900187751342" resolveInfo="getInstance" />
-                        <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fw73.2510545900187751325" resolveInfo="MultilingualLanguageProvider" />
+                        <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="5rbz.4912572611768497477" resolveInfo="MultilingualTranslationProvider" />
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5rbz.2510545900187751342" resolveInfo="getInstance" />
                       </node>
                       <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2510545900187060881" nodeInfo="nn">
-                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.2510545900187751378" resolveInfo="isShowTranslations" />
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5rbz.4912572611768531907" resolveInfo="isShowTranslations" />
                       </node>
                     </node>
                   </node>
@@ -194,17 +195,17 @@
                   <node role="expression" roleId="tpee.1068580123156" type="tpee.AndExpression" typeId="tpee.1080120340718" id="2510545900187060899" nodeInfo="nn">
                     <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2510545900187060900" nodeInfo="nn">
                       <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="2510545900187060901" nodeInfo="nn" />
-                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2510545900187060902" nodeInfo="nn">
-                        <link role="property" roleId="tp25.1138056395725" targetNodeId="phyx.2510545900187060788" resolveInfo="editName" />
+                      <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="6075112358357556660" nodeInfo="nn">
+                        <link role="property" roleId="tp25.1138056395725" targetNodeId="phyx.3125250773681852552" resolveInfo="editName" />
                       </node>
                     </node>
                     <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2510545900187060903" nodeInfo="nn">
                       <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2510545900187060904" nodeInfo="nn">
-                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.2510545900187751342" resolveInfo="getInstance" />
-                        <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fw73.2510545900187751325" resolveInfo="MultilingualLanguageProvider" />
+                        <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="5rbz.4912572611768497477" resolveInfo="MultilingualTranslationProvider" />
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5rbz.2510545900187751342" resolveInfo="getInstance" />
                       </node>
                       <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2510545900187060905" nodeInfo="nn">
-                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.2510545900187751378" resolveInfo="isShowTranslations" />
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5rbz.4912572611768531907" resolveInfo="isShowTranslations" />
                       </node>
                     </node>
                   </node>
@@ -223,11 +224,11 @@
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2510545900187060937" nodeInfo="nn">
                 <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2510545900187060938" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2510545900187060939" nodeInfo="nn">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.2510545900187751342" resolveInfo="getInstance" />
-                    <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fw73.2510545900187751325" resolveInfo="MultilingualLanguageProvider" />
+                    <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="5rbz.4912572611768497477" resolveInfo="MultilingualTranslationProvider" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5rbz.2510545900187751342" resolveInfo="getInstance" />
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2510545900187060940" nodeInfo="nn">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.2510545900187751378" resolveInfo="isShowTranslations" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5rbz.4912572611768531907" resolveInfo="isShowTranslations" />
                   </node>
                 </node>
               </node>
@@ -265,7 +266,7 @@
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="phyx.2510545900187060760" resolveInfo="TextTranslation" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2510545900187060951" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="2510545900187060952" nodeInfo="ng">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="phyx.2510545900187060764" />
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="phyx.3125250773681852290" />
         <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="2510545900187060953" nodeInfo="ng">
           <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="2510545900187060954" nodeInfo="ng">
             <property name="readOnly" nameId="tpc2.1140017977771" value="true" />

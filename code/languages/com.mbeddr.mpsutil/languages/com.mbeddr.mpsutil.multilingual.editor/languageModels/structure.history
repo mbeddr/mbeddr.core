@@ -144,5 +144,29 @@
     <move id="oqw.2076589957483500223" to="ja3n.2510545900188224121" />
     <move id="oqw.6724029501762427084" to="ja3n.2510545900188224118" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="17ki" modelUID="r:1ca8d4e2-3224-4e70-9a39-8c070c8df907(com.mbeddr.mpsutil.multilingual.editor.structure)" version="0" />
+    </dependencies>
+    <rename id="17ki.2510545900188223988" type="CONCEPT" from="IMultiLangEditorCell" to="IMultilingualEditorCell" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="17ki" modelUID="r:1ca8d4e2-3224-4e70-9a39-8c070c8df907(com.mbeddr.mpsutil.multilingual.editor.structure)" version="1" />
+    </dependencies>
+    <rename id="17ki.2510545900188223989" type="CONCEPT" from="MultiLangAlias" to="MultilingualAlias" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="17ki" modelUID="r:1ca8d4e2-3224-4e70-9a39-8c070c8df907(com.mbeddr.mpsutil.multilingual.editor.structure)" version="2" />
+    </dependencies>
+    <rename id="17ki.2510545900188223991" type="CONCEPT" from="MultiLangConstant" to="MultilingualConstant" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="17ki" modelUID="r:1ca8d4e2-3224-4e70-9a39-8c070c8df907(com.mbeddr.mpsutil.multilingual.editor.structure)" version="3" />
+    </dependencies>
+    <rename id="17ki.2510545900188223991" type="CONCEPT" from="MultiLangConstant" to="MultilingualConstant" />
+  </StructureModification>
 </history>
 
