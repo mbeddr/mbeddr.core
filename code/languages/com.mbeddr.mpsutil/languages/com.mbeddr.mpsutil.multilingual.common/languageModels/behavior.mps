@@ -3,7 +3,7 @@
   <persistence version="8" />
   <language namespace="af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="sxyo" modelUID="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" version="2" />
+  <import index="sxyo" modelUID="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" version="8" />
   <import index="v2t1" modelUID="f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons/org.apache.commons.lang3@java_stub)" version="-1" />
   <import index="ec5l" modelUID="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" version="-1" />
   <import index="l56u" modelUID="f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3.text(org.apache.commons/org.apache.commons.lang3.text@java_stub)" version="-1" />
@@ -16,7 +16,7 @@
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="568377005202726840" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="resourceBundle" />
-    <link role="concept" roleId="1i04.1225194240799" targetNodeId="sxyo.568377005202317270" resolveInfo="MultiLangConstantKey" />
+    <link role="concept" roleId="1i04.1225194240799" targetNodeId="sxyo.568377005202317270" resolveInfo="MessageKey" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="568377005202726841" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="getKey" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="568377005202726842" nodeInfo="nn" />
@@ -30,7 +30,7 @@
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="568377005202726850" nodeInfo="nn">
                   <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="568377005202726851" nodeInfo="ng">
                     <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="568377005202726852" nodeInfo="nn">
-                      <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="sxyo.568377005202317274" resolveInfo="MultiLangResourceBundle" />
+                      <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="sxyo.568377005202317274" resolveInfo="ResourceBundle" />
                     </node>
                   </node>
                   <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Inclusion" typeId="tp25.1144100932627" id="568377005202726853" nodeInfo="ng" />
@@ -200,23 +200,9 @@
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="568377005202726924" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="resourceBundle" />
-    <link role="concept" roleId="1i04.1225194240799" targetNodeId="sxyo.568377005202317274" resolveInfo="MultiLangResourceBundle" />
+    <link role="concept" roleId="1i04.1225194240799" targetNodeId="sxyo.568377005202317274" resolveInfo="ResourceBundle" />
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="568377005202726925" nodeInfo="nn">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="568377005202726926" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="568377005202726927" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="568377005202726928" nodeInfo="nn">
-            <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="568377005202726929" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="Keyword-" />
-            </node>
-            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="568377005202726930" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="568377005202726931" nodeInfo="nn" />
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="568377005202726932" nodeInfo="nn">
-                <link role="property" roleId="tp25.1138056395725" targetNodeId="sxyo.568377005202317275" resolveInfo="keyPrefix" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="568377005202726926" nodeInfo="sn" />
     </node>
   </root>
 </model>

@@ -531,5 +531,17 @@
     <move id="7eeb.2510545900187061061" to="oqw.2510545900187260000" />
     <move id="7eeb.2510545900187061077" to="oqw.2510545900187260016" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="phyx" modelUID="r:d26f1060-b333-4b75-ae0e-82ef2c6fdec3(com.mbeddr.mpsutil.multilingual.concept.structure)" version="1" />
+    </dependencies>
+    <move id="phyx.2510545900187060758" to="phyx.3125250773681852290" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="phyx" modelUID="r:d26f1060-b333-4b75-ae0e-82ef2c6fdec3(com.mbeddr.mpsutil.multilingual.concept.structure)" version="2" />
+    </dependencies>
+    <move id="phyx.2510545900187060783" to="phyx.3125250773681852552" />
+  </StructureModification>
 </history>
 

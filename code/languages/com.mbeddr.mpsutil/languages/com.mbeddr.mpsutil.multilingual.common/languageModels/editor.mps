@@ -4,7 +4,7 @@
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <language namespace="7e450f4e-1ac3-41ef-a851-4598161bdb94(de.slisson.mps.tables)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="sxyo" modelUID="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" version="2" />
+  <import index="sxyo" modelUID="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" version="8" />
   <import index="tpen" modelUID="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" version="-1" />
   <import index="1t7x" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" version="-1" />
   <import index="tp5r" modelUID="r:3ef5075b-89c5-437c-8971-b29ab29bb322(com.mbeddr.mpsutil.multilingual.common.behavior)" version="1" />
@@ -97,14 +97,14 @@
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="568377005202721096" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="resourceBundle" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="sxyo.568377005202317274" resolveInfo="MultiLangResourceBundle" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="sxyo.568377005202317274" resolveInfo="ResourceBundle" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="568377005202721097" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="568377005202721098" nodeInfo="nn">
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="568377005202721099" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="false" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="568377005202721100" nodeInfo="nn">
-          <property name="text" nameId="tpc2.1073389577007" value="Multi-language Resource Bundle" />
+          <property name="text" nameId="tpc2.1073389577007" value="Multilingual Resource Bundle" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="568377005202721101" nodeInfo="ng">
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
@@ -188,7 +188,7 @@
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="568377005202721134" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="resourceBundle" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="sxyo.568377005202317270" resolveInfo="MultiLangConstantKey" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="sxyo.568377005202317270" resolveInfo="MessageKey" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="bnk3.PartialTable" typeId="bnk3.1397920687865593407" id="568377005202721135" nodeInfo="ng">
       <node role="cells" roleId="bnk3.1397920687865593523" type="bnk3.StaticHorizontal" typeId="bnk3.1397920687864997153" id="568377005202721136" nodeInfo="ng">
         <node role="childTableNodes" roleId="bnk3.1397920687864997171" type="bnk3.TableCell" typeId="bnk3.1397920687864997143" id="568377005202721137" nodeInfo="ng">

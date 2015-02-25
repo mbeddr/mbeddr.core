@@ -561,5 +561,41 @@
     <move id="zrjo.7147596757066783579" to="sxyo.2510545900188083932" />
     <move id="zrjo.7147596757066781632" to="sxyo.2510545900188083931" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="sxyo" modelUID="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" version="2" />
+    </dependencies>
+    <rename id="sxyo.568377005202317274" type="CONCEPT" from="MultiLangResourceBundle" to="MultilingualResourceBundle" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="sxyo" modelUID="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" version="3" />
+    </dependencies>
+    <rename id="sxyo.568377005202317270" type="CONCEPT" from="MultiLangConstantKey" to="MultilingualMessageKey" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="sxyo" modelUID="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" version="4" />
+    </dependencies>
+    <rename id="sxyo.2510545900188083931" type="CONCEPT" from="IMultiLangConstantKeyHolder" to="IMultilingualMessageKeyHolder" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="sxyo" modelUID="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" version="5" />
+    </dependencies>
+    <rename id="sxyo.568377005202317274" type="CONCEPT" from="MultilingualResourceBundle" to="ResourceBundle" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="sxyo" modelUID="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" version="6" />
+    </dependencies>
+    <rename id="sxyo.568377005202317270" type="CONCEPT" from="MultilingualMessageKey" to="MessageKey" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="sxyo" modelUID="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" version="7" />
+    </dependencies>
+    <rename id="sxyo.2510545900188083931" type="CONCEPT" from="IMultilingualMessageKeyHolder" to="IMessageKeyHolder" />
+  </StructureModification>
 </history>
 

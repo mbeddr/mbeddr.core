@@ -3,8 +3,8 @@
   <persistence version="8" />
   <language namespace="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="phyx" modelUID="r:d26f1060-b333-4b75-ae0e-82ef2c6fdec3(com.mbeddr.mpsutil.multilingual.concept.structure)" version="1" />
-  <import index="sxyo" modelUID="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" version="2" />
+  <import index="phyx" modelUID="r:d26f1060-b333-4b75-ae0e-82ef2c6fdec3(com.mbeddr.mpsutil.multilingual.concept.structure)" version="3" />
+  <import index="sxyo" modelUID="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" version="8" />
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" />
   <import index="7eeb" modelUID="r:8eab39cc-a21c-4e39-a256-5af4285965a2(com.mbeddr.mpsutil.multilingual.concept.behavior)" version="1" />
   <import index="fw73" modelUID="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)" version="0" />
@@ -67,7 +67,7 @@
             <node role="expression" roleId="tpee.1068581517676" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2510545900187060983" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintsFunctionParameter_node" typeId="tp1t.1147468365020" id="2510545900187060984" nodeInfo="nn" />
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="2510545900187060985" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7eeb.2510545900187061080" resolveInfo="getName" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7eeb.2510545900187061080" resolveInfo="getValue" />
               </node>
             </node>
           </node>
@@ -152,7 +152,7 @@
                       <link role="variable" roleId="tp2q.1153944258490" targetNodeId="2510545900187061004" resolveInfo="value" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2510545900187061022" nodeInfo="nn">
-                      <link role="link" roleId="tp25.1138056516764" targetNodeId="phyx.2510545900187060758" />
+                      <link role="link" roleId="tp25.1138056516764" targetNodeId="phyx.3125250773681852290" />
                     </node>
                   </node>
                 </node>
@@ -191,7 +191,7 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2510545900187061026" resolveInfo="newValue" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2510545900187061038" nodeInfo="nn">
-                  <link role="link" roleId="tp25.1138056516764" targetNodeId="phyx.2510545900187060758" />
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="phyx.3125250773681852290" />
                 </node>
               </node>
             </node>
