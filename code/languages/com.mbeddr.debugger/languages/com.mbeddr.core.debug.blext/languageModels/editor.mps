@@ -1794,5 +1794,30 @@
       <node concept="l2Vlx" id="5nt$m6oDylA" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="VC7Rv3iQpU">
+    <property role="3GE5qa" value="stepping" />
+    <ref role="1XX52x" to="talm:VC7Rv3ia47" resolve="firstExecutable" />
+    <node concept="3EZMnI" id="VC7Rv3iQHE" role="2wV5jI">
+      <node concept="3F0ifn" id="VC7Rv3iQHF" role="3EZMnx">
+        <property role="3F0ifm" value="firstExecutable" />
+      </node>
+      <node concept="3F0ifn" id="VC7Rv3iQHG" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="VC7Rv3iQHH" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="VC7Rv3iQHI" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="VC7Rv3iQHL" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="VC7Rv3iQHM" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="VC7Rv3iQHN" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
