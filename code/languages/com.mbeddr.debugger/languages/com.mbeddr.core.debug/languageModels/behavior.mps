@@ -560,6 +560,25 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="VC7RuZYMH1" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="allowsBreakpoint" />
+      <node concept="3Tm1VV" id="VC7RuZYMH2" role="1B3o_S" />
+      <node concept="10P_77" id="VC7RuZYMN0" role="3clF45" />
+      <node concept="3clFbS" id="VC7RuZYMH4" role="3clF47">
+        <node concept="3SKdUt" id="VC7Rv019so" role="3cqZAp">
+          <node concept="3SKdUq" id="VC7Rv019sB" role="3SKWNk">
+            <property role="3SKdUp" value="wether we can set a breakpoint on the node instance or not" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="VC7RuZYMPO" role="3cqZAp">
+          <node concept="3clFbT" id="VC7RuZYMPN" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="MRHDMi6VAe" role="13h7CW">
       <node concept="3clFbS" id="MRHDMi6VAf" role="2VODD2" />
     </node>
