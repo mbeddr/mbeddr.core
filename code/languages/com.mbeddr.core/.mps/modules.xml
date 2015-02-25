@@ -35,6 +35,7 @@
       <modulePath path="$PROJECT_DIR$/languages/test.lang.hierchicalstructure/test.lang.hierchicalstructure.mpl" folder="tests.hierarchicalstructure" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.debugger.default/com.mbeddr.core.debugger.default.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.interpreterdebugger.rt/com.mbeddr.core.interpreterdebugger.rt.msd" folder="core.solutions" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.stdlib/com.mbeddr.core.stdlib.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/tests/aLibrary/aLibrary.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.editor.core/test.editor.core.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.core/core.msd" folder="tests" />
