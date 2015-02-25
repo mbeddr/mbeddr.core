@@ -116,6 +116,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="3IOp39iz$4n" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expected" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="anPxzp2Iu_">
     <property role="TrG5h" value="ExecuteTestExpression" />
