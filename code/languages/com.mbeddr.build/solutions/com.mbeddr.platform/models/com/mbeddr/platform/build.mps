@@ -7209,8 +7209,17 @@
     </node>
     <node role="aspects" roleId="3ior.3542413272732620719" type="5tjl.BuildMpsLayout_TestModules" typeId="5tjl.4560297596904469357" id="8334796989973544669" nodeInfo="nn">
       <property name="name" nameId="tpck.1169194664001" value="com.mbeddr.platform.tests" />
-      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModuleGroup" typeId="5tjl.4560297596904469355" id="4912572611771104108" nodeInfo="ng">
-        <link role="group" roleId="5tjl.4560297596904469356" targetNodeId="8334796989973544653" resolveInfo="com.mbeddr.platform.tests" />
+      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="4912572611772339523" nodeInfo="nn">
+        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="8393429337731954436" resolveInfo="test.ts.richstring" />
+      </node>
+      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="4912572611772342058" nodeInfo="nn">
+        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="4912572611771099812" resolveInfo="com.mbeddr.mpsutil.uniquenames.test" />
+      </node>
+      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="4912572611772342215" nodeInfo="nn">
+        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="4912572611771099976" resolveInfo="test.ex.match" />
+      </node>
+      <node role="modules" roleId="5tjl.4560297596904469360" type="5tjl.BuildMpsLayout_TestModule" typeId="5tjl.4560297596904469362" id="4912572611772342376" nodeInfo="nn">
+        <link role="module" roleId="5tjl.4560297596904469363" targetNodeId="4912572611771099998" resolveInfo="test.ts.mpsutil.multilingual" />
       </node>
     </node>
   </root>
