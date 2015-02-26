@@ -228,6 +228,9 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
+      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
+        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
@@ -2848,32 +2851,41 @@
           </node>
         </node>
         <node concept="3clFbH" id="15d7XIoFChM" role="3cqZAp" />
+        <node concept="3SKdUt" id="5X8YPZwA1GZ" role="3cqZAp">
+          <node concept="3SKdUq" id="5X8YPZwA1IL" role="3SKWNk">
+            <property role="3SKdUp" value="TODO unclear why do we need the code below" />
+          </node>
+        </node>
         <node concept="3SKdUt" id="15d7XIoFNpl" role="3cqZAp">
           <node concept="3SKdUq" id="15d7XIoFNsG" role="3SKWNk">
             <property role="3SKdUp" value="is there an analysis configuration in our model?" />
           </node>
         </node>
-        <node concept="3clFbJ" id="15d7XIoFN5l" role="3cqZAp">
-          <node concept="3clFbS" id="15d7XIoFN5o" role="3clFbx">
-            <node concept="3cpWs6" id="15d7XIoFNce" role="3cqZAp">
-              <node concept="3clFbT" id="15d7XIoFNdX" role="3cqZAk">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="15d7XIoFE$0" role="3clFbw">
-            <node concept="2OqwBi" id="15d7XIoFDij" role="2Oq$k0">
-              <node concept="2OqwBi" id="15d7XIoFD4U" role="2Oq$k0">
-                <node concept="37vLTw" id="15d7XIoFCNH" role="2Oq$k0">
-                  <ref role="3cqZAo" node="15d7XIo_JC_" resolve="aNode" />
+        <node concept="3SKdUt" id="5X8YPZwA1m6" role="3cqZAp">
+          <node concept="3SKWN0" id="5X8YPZwA1mi" role="3SKWNk">
+            <node concept="3clFbJ" id="15d7XIoFN5l" role="3SKWNf">
+              <node concept="3clFbS" id="15d7XIoFN5o" role="3clFbx">
+                <node concept="3cpWs6" id="15d7XIoFNce" role="3cqZAp">
+                  <node concept="3clFbT" id="15d7XIoFNdX" role="3cqZAk">
+                    <property role="3clFbU" value="true" />
+                  </node>
                 </node>
-                <node concept="I4A8Y" id="15d7XIoFDbz" role="2OqNvi" />
               </node>
-              <node concept="2RRcyG" id="15d7XIoFDsV" role="2OqNvi">
-                <ref role="2RRcyH" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
+              <node concept="2OqwBi" id="15d7XIoFE$0" role="3clFbw">
+                <node concept="2OqwBi" id="15d7XIoFDij" role="2Oq$k0">
+                  <node concept="2OqwBi" id="15d7XIoFD4U" role="2Oq$k0">
+                    <node concept="37vLTw" id="15d7XIoFCNH" role="2Oq$k0">
+                      <ref role="3cqZAo" node="15d7XIo_JC_" resolve="aNode" />
+                    </node>
+                    <node concept="I4A8Y" id="15d7XIoFDbz" role="2OqNvi" />
+                  </node>
+                  <node concept="2RRcyG" id="15d7XIoFDsV" role="2OqNvi">
+                    <ref role="2RRcyH" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
+                  </node>
+                </node>
+                <node concept="3GX2aA" id="15d7XIoFN12" role="2OqNvi" />
               </node>
             </node>
-            <node concept="3GX2aA" id="15d7XIoFN12" role="2OqNvi" />
           </node>
         </node>
         <node concept="3clFbH" id="15d7XIoFNi$" role="3cqZAp" />
