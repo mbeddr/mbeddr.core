@@ -181,5 +181,13 @@
     <node concept="2tJIrI" id="1brT1d_Fqab" role="jymVt" />
     <node concept="3Tm1VV" id="1brT1d_Fq9J" role="1B3o_S" />
   </node>
+  <node concept="PlHQZ" id="7v8$3Aj2hMM">
+    <property role="3GE5qa" value="callstack" />
+    <property role="TrG5h" value="IInjectStackFrameDelegatee" />
+  </node>
+  <node concept="PlHQZ" id="7v8$3Aj2hNr">
+    <property role="3GE5qa" value="callstack" />
+    <property role="TrG5h" value="IStackFrameInjector" />
+  </node>
 </model>
 

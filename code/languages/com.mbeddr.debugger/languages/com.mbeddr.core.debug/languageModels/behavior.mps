@@ -144,6 +144,9 @@
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
+      <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
+        <child id="1151689745422" name="elementType" index="A3Ik2" />
+      </concept>
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1178894719932" name="jetbrains.mps.baseLanguage.collections.structure.DistinctOperation" flags="nn" index="1VAtEI" />
     </language>
@@ -332,6 +335,20 @@
         <node concept="3clFbF" id="5klnWd$lYeW" role="3cqZAp">
           <node concept="3clFbT" id="5klnWd$lYeX" role="3clFbG">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7v8$3Aj2hDN" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="canInjectStackFrame" />
+      <node concept="3Tm1VV" id="7v8$3Aj2hDQ" role="1B3o_S" />
+      <node concept="10P_77" id="7v8$3Aj2hDR" role="3clF45" />
+      <node concept="3clFbS" id="7v8$3Aj2hDS" role="3clF47">
+        <node concept="3clFbF" id="7v8$3Aj2hDT" role="3cqZAp">
+          <node concept="3clFbT" id="7v8$3Aj2hDU" role="3clFbG">
+            <property role="3clFbU" value="false" />
           </node>
         </node>
       </node>
@@ -913,6 +930,84 @@
     </node>
     <node concept="13hLZK" id="2H$DUA8z$lz" role="13h7CW">
       <node concept="3clFbS" id="2H$DUA8z$l$" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7v8$3Aj2hNo">
+    <property role="3GE5qa" value="callstack" />
+    <ref role="13h7C2" to="2gv2:7v8$3Aj2hMM" resolve="IInjectStackFrameDelegatee" />
+    <node concept="13i0hz" id="7v8$3Aj2vsF" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="injectsStackFrameFor" />
+      <node concept="37vLTG" id="7v8$3Aj33Nq" role="3clF46">
+        <property role="TrG5h" value="currentStackFrame" />
+        <node concept="17QB3L" id="7v8$3Aj33Nr" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7v8$3Aj2vsV" role="3clF46">
+        <property role="TrG5h" value="injector" />
+        <node concept="3Tqbb2" id="7v8$3Aj2vt5" role="1tU5fm">
+          <ref role="ehGHo" to="2gv2:7v8$3Aj2hNr" resolve="IStackFrameInjector" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7v8$3Aj2vsG" role="1B3o_S" />
+      <node concept="10P_77" id="7v8$3Aj2vsR" role="3clF45" />
+      <node concept="3clFbS" id="7v8$3Aj2vsI" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="7v8$3Aj2hNp" role="13h7CW">
+      <node concept="3clFbS" id="7v8$3Aj2hNq" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7v8$3Aj2hUm">
+    <property role="3GE5qa" value="callstack" />
+    <ref role="13h7C2" to="2gv2:7v8$3Aj2hNr" resolve="IStackFrameInjector" />
+    <node concept="13i0hz" id="7v8$3AiXVWk" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="injectsStackFrame" />
+      <node concept="37vLTG" id="7v8$3Aj1zaA" role="3clF46">
+        <property role="TrG5h" value="stackFrameName" />
+        <node concept="17QB3L" id="7v8$3Aj2CW9" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7v8$3Aj2CET" role="3clF46">
+        <property role="TrG5h" value="traces" />
+        <node concept="A3Dl8" id="7v8$3Aj2CEU" role="1tU5fm">
+          <node concept="3Tqbb2" id="7v8$3Aj2CEV" role="A3Ik2" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7v8$3AiXVWl" role="1B3o_S" />
+      <node concept="10P_77" id="7v8$3AiXW2Z" role="3clF45" />
+      <node concept="3clFbS" id="7v8$3AiXVWn" role="3clF47">
+        <node concept="3clFbF" id="7v8$3AiXW3r" role="3cqZAp">
+          <node concept="3clFbT" id="7v8$3AiXW3q" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7v8$3AiXW3F" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getNodeForInjectionFromTraces" />
+      <node concept="37vLTG" id="7v8$3Aj2XXO" role="3clF46">
+        <property role="TrG5h" value="currentStackFrame" />
+        <node concept="17QB3L" id="7v8$3Aj2XXP" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7v8$3AiYjPl" role="3clF46">
+        <property role="TrG5h" value="traces" />
+        <node concept="A3Dl8" id="7v8$3AiZ6HQ" role="1tU5fm">
+          <node concept="3Tqbb2" id="7v8$3AiZ6I7" role="A3Ik2" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7v8$3AiXW3G" role="1B3o_S" />
+      <node concept="3Tqbb2" id="7v8$3AiXW5t" role="3clF45" />
+      <node concept="3clFbS" id="7v8$3AiXW3I" role="3clF47">
+        <node concept="3clFbF" id="7v8$3AiXW5y" role="3cqZAp">
+          <node concept="10Nm6u" id="7v8$3AiXW5x" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="7v8$3Aj2hUn" role="13h7CW">
+      <node concept="3clFbS" id="7v8$3Aj2hUo" role="2VODD2" />
     </node>
   </node>
 </model>
