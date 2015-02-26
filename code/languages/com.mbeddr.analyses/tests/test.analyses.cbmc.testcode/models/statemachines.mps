@@ -995,13 +995,16 @@
       <ref role="3GEb4d" node="34Ib7$WJwa_" resolve="Main" />
     </node>
     <node concept="1W1s6O" id="qjOluQk05H" role="3V$2$K">
-      <property role="2lUGeZ" value="false" />
-      <property role="2lUHrg" value="10" />
-      <property role="2lUGbD" value="-1" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
       <property role="2l50Ka" value="none" />
       <property role="2l50Km" value="none" />
-      <property role="2l50Mm" value="true" />
+      <property role="2l50Mm" value="false" />
       <property role="2lUGe1" value="true" />
+      <property role="2lelRm" value="true" />
+      <property role="2lUGcN" value="false" />
+      <property role="2lUGdP" value="false" />
       <ref role="1W1s6P" node="21PlWakTqun" resolve="EpsilonSM" />
       <ref role="3V$Cn$" node="21PlWakTqve" resolve="testEpsilonEntry" />
     </node>

@@ -24,7 +24,7 @@
     <import index="prjo" ref="r:f5e6dfea-4ef7-4231-9ca3-888550b36eea(com.mbeddr.analyses.utils.generator)" />
     <import index="53gy" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.concurrent(JDK/java.util.concurrent@java_stub)" />
     <import index="8ear" ref="r:80dc224f-cfbc-4d66-ab57-5e00bae3bc4a(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.builder)" />
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -977,39 +977,87 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="5E1$geGhDNF" role="3clF47">
-        <node concept="3clFbF" id="5E1$geGhDPH" role="3cqZAp">
-          <node concept="2OqwBi" id="5E1$geGhE_0" role="3clFbG">
-            <node concept="37vLTw" id="5E1$geGhDPG" role="2Oq$k0">
-              <ref role="3cqZAo" node="5E1$geGhDNU" resolve="results" />
+        <node concept="3cpWs8" id="4ZYt1EixLlz" role="3cqZAp">
+          <node concept="3cpWsn" id="4ZYt1EixLl$" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="3uibUv" id="4ZYt1EixLlx" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
-            <node concept="1z4cxt" id="5E1$geGhFR_" role="2OqNvi">
-              <node concept="1bVj0M" id="5E1$geGhFRB" role="23t8la">
-                <node concept="3clFbS" id="5E1$geGhFRC" role="1bW5cS">
-                  <node concept="3clFbF" id="5E1$geGhFVw" role="3cqZAp">
-                    <node concept="2OqwBi" id="5E1$geGhGoF" role="3clFbG">
-                      <node concept="2OqwBi" id="5E1$geGhFXU" role="2Oq$k0">
-                        <node concept="37vLTw" id="5E1$geGhFVv" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5E1$geGhFRD" resolve="it" />
+            <node concept="2OqwBi" id="4ZYt1EixLl_" role="33vP2m">
+              <node concept="37vLTw" id="4ZYt1EixLlA" role="2Oq$k0">
+                <ref role="3cqZAo" node="5E1$geGhDNU" resolve="results" />
+              </node>
+              <node concept="1z4cxt" id="4ZYt1EixLlB" role="2OqNvi">
+                <node concept="1bVj0M" id="4ZYt1EixLlC" role="23t8la">
+                  <node concept="3clFbS" id="4ZYt1EixLlD" role="1bW5cS">
+                    <node concept="3clFbF" id="4ZYt1EixLlE" role="3cqZAp">
+                      <node concept="2OqwBi" id="4ZYt1EixLlF" role="3clFbG">
+                        <node concept="2OqwBi" id="4ZYt1EixLlG" role="2Oq$k0">
+                          <node concept="37vLTw" id="4ZYt1EixLlH" role="2Oq$k0">
+                            <ref role="3cqZAo" node="4ZYt1EixLlL" resolve="it" />
+                          </node>
+                          <node concept="liA8E" id="4ZYt1EixLlI" role="2OqNvi">
+                            <ref role="37wK5l" to="eqhl:3FNuzGa2mmQ" resolve="getUserFriendlyMessage" />
+                          </node>
                         </node>
-                        <node concept="liA8E" id="5E1$geGhG9t" role="2OqNvi">
-                          <ref role="37wK5l" to="eqhl:3FNuzGa2mmQ" resolve="getUserFriendlyMessage" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="5E1$geGhHx2" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                        <node concept="37vLTw" id="5E1$geGhH_W" role="37wK5m">
-                          <ref role="3cqZAo" node="5E1$geGhDOB" resolve="userFriendlyMessage" />
+                        <node concept="liA8E" id="4ZYt1EixLlJ" role="2OqNvi">
+                          <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <node concept="37vLTw" id="4ZYt1EixLlK" role="37wK5m">
+                            <ref role="3cqZAo" node="5E1$geGhDOB" resolve="userFriendlyMessage" />
+                          </node>
                         </node>
                       </node>
                     </node>
                   </node>
-                </node>
-                <node concept="Rh6nW" id="5E1$geGhFRD" role="1bW2Oz">
-                  <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="5E1$geGhFRE" role="1tU5fm" />
+                  <node concept="Rh6nW" id="4ZYt1EixLlL" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="4ZYt1EixLlM" role="1tU5fm" />
+                  </node>
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4ZYt1Eiy134" role="3cqZAp">
+          <node concept="3clFbS" id="4ZYt1Eiy136" role="3clFbx">
+            <node concept="3clFbF" id="4ZYt1Eiy3qb" role="3cqZAp">
+              <node concept="2OqwBi" id="4ZYt1Eiy3q8" role="3clFbG">
+                <node concept="10M0yZ" id="4ZYt1Eiy3q9" role="2Oq$k0">
+                  <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                  <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+                </node>
+                <node concept="liA8E" id="4ZYt1Eiy3qa" role="2OqNvi">
+                  <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="3cpWs3" id="4ZYt1Eiy3Z_" role="37wK5m">
+                    <node concept="37vLTw" id="4ZYt1Eiy43_" role="3uHU7w">
+                      <ref role="3cqZAo" node="5E1$geGhDOB" resolve="userFriendlyMessage" />
+                    </node>
+                    <node concept="Xl_RD" id="4ZYt1Eiy3si" role="3uHU7B">
+                      <property role="Xl_RC" value="FATAL ERROR: result with given message not found. Message: " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4ZYt1Eiy4wx" role="3cqZAp">
+              <node concept="1rXfSq" id="4ZYt1Eiy4wv" role="3clFbG">
+                <ref role="37wK5l" node="17FqOSBEPPO" resolve="prettyPrintResults" />
+                <node concept="37vLTw" id="4ZYt1Eiy4CY" role="37wK5m">
+                  <ref role="3cqZAo" node="5E1$geGhDNU" resolve="results" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="4ZYt1Eiy3mg" role="3clFbw">
+            <node concept="10Nm6u" id="4ZYt1Eiy3oo" role="3uHU7w" />
+            <node concept="37vLTw" id="4ZYt1Eiy16k" role="3uHU7B">
+              <ref role="3cqZAo" node="4ZYt1EixLl$" resolve="result" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5E1$geGhDPH" role="3cqZAp">
+          <node concept="37vLTw" id="4ZYt1EixLlN" role="3clFbG">
+            <ref role="3cqZAo" node="4ZYt1EixLl$" resolve="result" />
           </node>
         </node>
       </node>
