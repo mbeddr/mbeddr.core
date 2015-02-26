@@ -348,6 +348,10 @@
 	  <antcall target="make-tests">
 	      <param name="make-tests.dir" value="${com.mbeddr.cc.working-dir}"/>
 	  </antcall>
+	  
+	  <!-- FIXME: remove when test-platform has been migrated to all branches -->
+	  <antcall target="test-platform" /> 
+
   </target>
 	  
   <target name="test-ext">				  
