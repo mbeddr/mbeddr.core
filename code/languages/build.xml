@@ -96,6 +96,7 @@
   <property name="com.mbeddr.platform.build-path.postfix" value="${mbeddr.github.core.home}/build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform" />  
   <property name="com.mbeddr.platform.build-file.location" value="${mbeddr.github.core.home}/build/com.mbeddr.platform" />    
   <property name="com.mbeddr.platform.build-file.name" value="build.xml" /> 
+  <property name="com.mbeddr.platform.test-build-file.name" value="build-ts-tests.xml" /> 
   <property name="com.mbeddr.platform.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.platform" />  
   
   <!-- mbeddr.allScripts -->
@@ -168,6 +169,9 @@
 	  <ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${clean-plugins.task}" />
 	  <ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${clean-generated-code.task}" />
 	  
+	  <ant antfile="${com.mbeddr.platform.test-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-plugins.task}" />
+	  <ant antfile="${com.mbeddr.platform.test-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-generated-code.task}" />	  
+	  
 	  <ant antfile="${com.mbeddr.debugger.tests-build-file.name}" dir="${com.mbeddr.debugger.build-file.location}" target="${clean-plugins.task}" />
 	  <ant antfile="${com.mbeddr.debugger.tests-build-file.name}" dir="${com.mbeddr.debugger.build-file.location}" target="${clean-generated-code.task}" />
 	  
@@ -199,6 +203,7 @@
 
       <ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-plugins.task}" />
       <ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-generated-code.task}" />   
+
       <ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${clean-plugins.task}" />
 	  <ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${clean-generated-code.task}" />	  
 	 
@@ -250,6 +255,7 @@
   
 
   <target name="build-and-run-tests" >
+   	   <antcall target="test-platform" /> 
  	   <antcall target="test-debugger" />
    	   <antcall target="test-core" /> 
        <antcall target="test-performance" />
@@ -313,6 +319,12 @@
 	  <ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${generate-code.task}" />
 	  <ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${build-plugin.task}" />	  
 	  <ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${run-tests.task}" />
+  </target>
+
+  <target name="test-platform">	  
+	  <ant antfile="${com.mbeddr.platform.test-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${generate-code.task}" />
+	  <ant antfile="${com.mbeddr.platform.test-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${build-plugin.task}" />	  
+	  <ant antfile="${com.mbeddr.platform.test-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${run-tests.task}" />
   </target>
 
    <target name="test-performance">    
