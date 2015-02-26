@@ -308,6 +308,9 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
+      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
+        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -8855,15 +8858,19 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="4fvA6OQXXC5" role="3cqZAp">
-          <node concept="1rXfSq" id="4fvA6OQXXC6" role="3clFbG">
-            <ref role="37wK5l" to="ood5:6fVeF5slN6c" resolve="initializeProgress" />
-            <node concept="3cpWs3" id="7Quig7_Zljm" role="37wK5m">
-              <node concept="1rXfSq" id="4fvA6ORm4z2" role="3uHU7B">
-                <ref role="37wK5l" node="4fvA6OQXXCT" resolve="getAnalysisUserFriendlyName" />
-              </node>
-              <node concept="Xl_RD" id="7Quig7_Znj8" role="3uHU7w">
-                <property role="Xl_RC" value=" - initializing" />
+        <node concept="3SKdUt" id="1Qk2BLgYhyp" role="3cqZAp">
+          <node concept="3SKWN0" id="1Qk2BLgYhyq" role="3SKWNk">
+            <node concept="3clFbF" id="4fvA6OQXXC5" role="3SKWNf">
+              <node concept="1rXfSq" id="4fvA6OQXXC6" role="3clFbG">
+                <ref role="37wK5l" to="ood5:6fVeF5slN6c" resolve="initializeProgress" />
+                <node concept="3cpWs3" id="7Quig7_Zljm" role="37wK5m">
+                  <node concept="1rXfSq" id="4fvA6ORm4z2" role="3uHU7B">
+                    <ref role="37wK5l" node="4fvA6OQXXCT" resolve="getAnalysisUserFriendlyName" />
+                  </node>
+                  <node concept="Xl_RD" id="7Quig7_Znj8" role="3uHU7w">
+                    <property role="Xl_RC" value=" - initializing" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
