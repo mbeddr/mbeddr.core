@@ -1,23 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:2729e4bf-97bd-4f3b-89db-87b5656e9ff5(test.ts.mpsutil.multilingual.concept@tests)">
+<model modelUID="r:df6ec2c5-8d06-4c02-8ef4-ee862fabaabd(test.ts.mpsutil.multilingual.editor.sandbox.editor)">
   <persistence version="8" />
-  <language namespace="f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)" />
-  <language namespace="8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)" />
+  <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
+  <language namespace="13a9e567-3b9e-4ccf-b94c-9155f5e78586(com.mbeddr.mpsutil.multilingual.editor)" />
   <language namespace="23f985f2-965f-4af1-aee8-a32677429514(com.mbeddr.mpsutil.multilingual.common)" />
-  <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
-  <language namespace="c0826d77-5349-4d44-b588-5750e22d096b(test.ts.mpsutil.multilingual.concept.sandbox)" />
-  <language namespace="d0fe2e60-9f9c-4d3c-94aa-de9257b67a6d(com.mbeddr.mpsutil.multilingual.concept)" />
+  <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
-  <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="40" implicit="yes" />
+  <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="35" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="sxyo" modelUID="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" version="8" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
-  <import index="phyx" modelUID="r:d26f1060-b333-4b75-ae0e-82ef2c6fdec3(com.mbeddr.mpsutil.multilingual.concept.structure)" version="3" implicit="yes" />
-  <import index="pq5q" modelUID="r:b65003ed-01fe-4ee7-b5fd-3b325db25b96(test.ts.mpsutil.multilingual.concept.sandbox.structure)" version="-1" implicit="yes" />
-  <import index="sv0f" modelUID="r:28cd7e84-4784-462c-804c-1dae92004ef9(com.mbeddr.mpsutil.multilingual.common.languageRegistry)" version="-1" implicit="yes" />
-  <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="7592664684660172748" nodeInfo="ng">
-    <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
+  <import index="17ki" modelUID="r:1ca8d4e2-3224-4e70-9a39-8c070c8df907(com.mbeddr.mpsutil.multilingual.editor.structure)" version="4" implicit="yes" />
+  <import index="1zxe" modelUID="r:caede5dc-baa4-4c3d-b989-dec0afc53003(test.ts.mpsutil.multilingual.editor.sandbox.structure)" version="-1" implicit="yes" />
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4912572611775891284" nodeInfo="ng">
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="1zxe.4912572611775891186" resolveInfo="TestMultilingualEditorConcept" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4912572611775938373" nodeInfo="nn">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="17ki.MultilingualConstant" typeId="17ki.2510545900188223991" id="4912572611775896718" nodeInfo="ng">
+        <property name="attractsFocus" nameId="tpc2.1130859485024" value="0" />
+        <link role="key" roleId="sxyo.2510545900188083932" targetNodeId="4912572611775896717" resolveInfo="MyConstant" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="17ki.MultilingualAlias" typeId="17ki.2510545900188223989" id="4912572611776069636" nodeInfo="ng">
+        <property name="attractsFocus" nameId="tpc2.1130859485024" value="0" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="4912572611775938374" nodeInfo="nn" />
+    </node>
+  </root>
+  <root type="sxyo.ResourceBundle" typeId="sxyo.568377005202317274" id="4912572611775894971" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="TestMultilingualEditorResourceBundle" />
+    <link role="resourceBundle" roleId="sxyo.568377005202317277" targetNodeId="6724029501762460834" resolveInfo="DummyResourceBundle" />
+    <node role="keys" roleId="sxyo.568377005202317276" type="sxyo.MessageKey" typeId="sxyo.568377005202317270" id="4912572611775896717" nodeInfo="ng">
+      <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
+      <property name="name" nameId="tpck.1169194664001" value="MyConstant" />
+      <property name="default" nameId="sxyo.568377005202317272" value="My Constant" />
+    </node>
   </root>
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6724029501762460834" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="DummyResourceBundle" />
@@ -78,66 +94,6 @@
     <node role="superclass" roleId="tpee.1165602531693" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6724029501762461159" nodeInfo="in">
       <link role="classifier" roleId="tpee.1107535924139" targetNodeId="k7g3.~ResourceBundle" resolveInfo="ResourceBundle" />
     </node>
-  </root>
-  <root type="sxyo.ResourceBundle" typeId="sxyo.568377005202317274" id="7147596757064966648" nodeInfo="ng">
-    <property name="keyPrefix" nameId="sxyo.568377005202317275" value="Keyword-" />
-    <property name="name" nameId="tpck.1169194664001" value="Test Resource Bundle" />
-    <link role="resourceBundle" roleId="sxyo.568377005202317277" targetNodeId="6724029501762460834" resolveInfo="DummyResourceBundle" />
-    <node role="keys" roleId="sxyo.568377005202317276" type="sxyo.MessageKey" typeId="sxyo.568377005202317270" id="7147596757064969081" nodeInfo="ng">
-      <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-      <property name="name" nameId="tpck.1169194664001" value="mySpecialKey" />
-    </node>
-    <node role="keys" roleId="sxyo.568377005202317276" type="sxyo.MessageKey" typeId="sxyo.568377005202317270" id="7147596757066779168" nodeInfo="ng">
-      <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-      <property name="name" nameId="tpck.1169194664001" value="mySpeciaasdflKey" />
-    </node>
-    <node role="keys" roleId="sxyo.568377005202317276" type="sxyo.MessageKey" typeId="sxyo.568377005202317270" id="7147596757067090964" nodeInfo="ng">
-      <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-      <property name="name" nameId="tpck.1169194664001" value="mySpeciaaaöslkdfjsdflKey" />
-    </node>
-    <node role="keys" roleId="sxyo.568377005202317276" type="sxyo.MessageKey" typeId="sxyo.568377005202317270" id="7147596757067451739" nodeInfo="ng">
-      <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-      <property name="name" nameId="tpck.1169194664001" value="testKey" />
-      <property name="default" nameId="sxyo.568377005202317272" value="test string" />
-    </node>
-  </root>
-  <root type="pq5q.TestMultilingualNamedImplementer" typeId="pq5q.4912572611776130072" id="8201243288561038007" nodeInfo="ng">
-    <node role="multiName" roleId="phyx.2510545900187060766" type="phyx.MultilingualString" typeId="phyx.2510545900187060782" id="8201243288561038008" nodeInfo="ng">
-      <node role="values" roleId="phyx.2510545900187060785" type="phyx.StringTranslation" typeId="phyx.2510545900187060757" id="8201243288561038009" nodeInfo="ng">
-        <property name="value" nameId="phyx.2510545900187060759" value="MySpecialName" />
-        <link role="language" roleId="phyx.3125250773681852290" targetNodeId="sv0f.2510545900186946757" resolveInfo="English" />
-      </node>
-    </node>
-  </root>
-  <root type="pq5q.TestMutlilingualNamedContainer" typeId="pq5q.4912572611776130506" id="8201243288561038010" nodeInfo="ng">
-    <node role="multiChild" roleId="pq5q.4912572611776130510" type="pq5q.TestMultilingualNamedImplementer" typeId="pq5q.4912572611776130072" id="8201243288561038011" nodeInfo="ng">
-      <node role="multiName" roleId="phyx.2510545900187060766" type="phyx.MultilingualString" typeId="phyx.2510545900187060782" id="8201243288561038012" nodeInfo="ng">
-        <node role="values" roleId="phyx.2510545900187060785" type="phyx.StringTranslation" typeId="phyx.2510545900187060757" id="8201243288561038013" nodeInfo="ng">
-          <property name="value" nameId="phyx.2510545900187060759" value="MyFirstName" />
-          <link role="language" roleId="phyx.3125250773681852290" targetNodeId="sv0f.2510545900186946757" resolveInfo="English" />
-        </node>
-      </node>
-    </node>
-    <node role="multiChild" roleId="pq5q.4912572611776130510" type="pq5q.TestMultilingualNamedImplementer" typeId="pq5q.4912572611776130072" id="8201243288561038038" nodeInfo="ng">
-      <node role="multiName" roleId="phyx.2510545900187060766" type="phyx.MultilingualString" typeId="phyx.2510545900187060782" id="8201243288561038039" nodeInfo="ng">
-        <node role="values" roleId="phyx.2510545900187060785" type="phyx.StringTranslation" typeId="phyx.2510545900187060757" id="8201243288561038040" nodeInfo="ng">
-          <property name="value" nameId="phyx.2510545900187060759" value="MySecondName" />
-          <link role="language" roleId="phyx.3125250773681852290" targetNodeId="sv0f.2510545900186946757" resolveInfo="English" />
-        </node>
-      </node>
-    </node>
-    <node role="singleChild" roleId="pq5q.4912572611776130507" type="pq5q.TestMultilingualNamedImplementer" typeId="pq5q.4912572611776130072" id="8201243288561038014" nodeInfo="ng">
-      <node role="multiName" roleId="phyx.2510545900187060766" type="phyx.MultilingualString" typeId="phyx.2510545900187060782" id="8201243288561038015" nodeInfo="ng">
-        <node role="values" roleId="phyx.2510545900187060785" type="phyx.StringTranslation" typeId="phyx.2510545900187060757" id="8201243288561038016" nodeInfo="ng">
-          <property name="value" nameId="phyx.2510545900187060759" value="MyNewName" />
-          <link role="language" roleId="phyx.3125250773681852290" targetNodeId="sv0f.2510545900186946757" resolveInfo="English" />
-        </node>
-      </node>
-    </node>
-  </root>
-  <root type="pq5q.TestMultilingualNamedReferrer" typeId="pq5q.4912572611776130573" id="8201243288561038071" nodeInfo="ng">
-    <link role="ref01" roleId="pq5q.4912572611776130574" targetNodeId="8201243288561038007" resolveInfo="MySpecialName" />
-    <link role="ref1" roleId="pq5q.4912572611776130586" targetNodeId="8201243288561038014" resolveInfo="MyNewName" />
   </root>
 </model>
 

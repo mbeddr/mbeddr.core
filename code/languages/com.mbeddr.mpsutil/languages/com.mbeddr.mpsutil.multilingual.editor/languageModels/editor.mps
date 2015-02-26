@@ -67,7 +67,7 @@
     </node>
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2510545900188224018" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Image" typeId="tpc2.1139744628335" id="2510545900188224019" nodeInfo="ng">
-        <property name="imageFile" nameId="tpc2.1139746504291" value="${mbeddr-platform}/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.multilingual.common/icons/multi3.png" />
+        <property name="imageFile" nameId="tpc2.1139746504291" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.multilingual.common/icons/multi3.png" />
         <property name="descent" nameId="tpc2.1139858284555" value="4" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="2510545900188224020" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="false" />
@@ -201,7 +201,7 @@
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="17ki.2510545900188223989" resolveInfo="MultilingualAlias" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2510545900188224082" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Image" typeId="tpc2.1139744628335" id="2510545900188224083" nodeInfo="ng">
-        <property name="imageFile" nameId="tpc2.1139746504291" value="${mbeddr-platform}/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.multilingual.common/icons/multi3.png" />
+        <property name="imageFile" nameId="tpc2.1139746504291" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.multilingual.common/icons/multi3.png" />
         <property name="descent" nameId="tpc2.1139858284555" value="4" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="2510545900188224084" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="false" />
