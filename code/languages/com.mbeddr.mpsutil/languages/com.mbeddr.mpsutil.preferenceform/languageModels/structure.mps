@@ -194,5 +194,69 @@
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8201243288561432125" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="property.combobox" />
+    <property name="name" nameId="tpck.1169194664001" value="AbstractComboBoxPreferenceFormProperty" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="final" nameId="tpce.4628067390765956807" value="false" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="145956936284064811" resolveInfo="AbstractPreferenceFormProperty" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8201243288561455947" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="property.combobox" />
+    <property name="name" nameId="tpck.1169194664001" value="PredefinedComboBoxPreferenceFormProperty" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="predefined combobox" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8201243288561432125" resolveInfo="AbstractComboBoxPreferenceFormProperty" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8201243288561455948" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="entries" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="8201243288561455979" resolveInfo="PredefinedComboBoxEntry" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8201243288561455979" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="property.combobox" />
+    <property name="name" nameId="tpck.1169194664001" value="PredefinedComboBoxEntry" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8201243288561456781" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="key" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8201243288561455980" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8201243288561530716" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="property.combobox" />
+    <property name="name" nameId="tpck.1169194664001" value="DynamicComboBoxPreferenceFormProperty" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="dynamic combobox" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8201243288561432125" resolveInfo="AbstractComboBoxPreferenceFormProperty" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8201243288561544766" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="getEntriesFunction" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="8201243288561530773" resolveInfo="DynamicComboBoxEntriesFunction" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8201243288561545816" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="defaultEntryFunction" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="8201243288561544883" resolveInfo="DynamicComboBoxDefaultEntryFunction" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8201243288561530773" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="property.combobox" />
+    <property name="name" nameId="tpck.1169194664001" value="DynamicComboBoxEntriesFunction" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1137021947720" resolveInfo="ConceptFunction" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8201243288561544883" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="property.combobox" />
+    <property name="name" nameId="tpck.1169194664001" value="DynamicComboBoxDefaultEntryFunction" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1137021947720" resolveInfo="ConceptFunction" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8201243288561546439" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="property.combobox" />
+    <property name="name" nameId="tpck.1169194664001" value="DynamicComboBoxDefaultEntryFunctionParameter" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1107135704075" resolveInfo="ConceptFunctionParameter" />
+  </root>
 </model>
 

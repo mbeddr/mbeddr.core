@@ -28,6 +28,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.multilingual.common/com.mbeddr.mpsutil.multilingual.common.mpl" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.multilingual.concept/com.mbeddr.mpsutil.multilingual.concept.mpl" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.multilingual.editor/com.mbeddr.mpsutil.multilingual.editor.mpl" folder="multilingual" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.multilingual.settings/com.mbeddr.mpsutil.multilingual.settings.mpl" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.nodes_tracing/com.mbeddr.mpsutil.nodes_tracing.mpl" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.nodeviewer/com.mbeddr.mpsutil.nodeviewer.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.mpl" folder="plantuml" />
@@ -59,6 +60,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.multilingual.common.runtime/com.mbeddr.mpsutil.multilingual.common.runtime.msd" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.multilingual.concept.runtime/com.mbeddr.mpsutil.multilingual.concept.runtime.msd" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.multilingual.editor.runtime/com.mbeddr.mpsutil.multilingual.editor.runtime.msd" folder="multilingual" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.multilingual.settings.runtime/com.mbeddr.mpsutil.multilingual.settings.runtime.msd" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodes_tracing.pluginSolution/com.mbeddr.mpsutil.nodes_tracing.pluginSolution.msd" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/pluginSolution.msd" folder="plantuml" />
@@ -79,6 +81,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/test.ts.richstring/test.ts.richstring.msd" folder="richstring" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.uniquenames.test/com.mbeddr.mpsutil.uniquenames.test.msd" folder="uniqueNames" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.match/match.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.mpsutil.multilingual.concept.sandbox/test.ts.mpsutil.multilingual.concept.sandbox.mpl" folder="multilingual" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.mpsutil.multilingual.editor.sandbox/test.ts.mpsutil.multilingual.editor.sandbox.mpl" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.mpsutil.multilingual/test.ts.mpsutil.multilingual.msd" folder="multilingual" />
     </projectModules>
   </component>
