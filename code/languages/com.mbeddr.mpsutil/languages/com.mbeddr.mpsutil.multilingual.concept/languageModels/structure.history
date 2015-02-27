@@ -543,5 +543,11 @@
     </dependencies>
     <move id="phyx.2510545900187060783" to="phyx.3125250773681852552" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="phyx" modelUID="r:d26f1060-b333-4b75-ae0e-82ef2c6fdec3(com.mbeddr.mpsutil.multilingual.concept.structure)" version="3" />
+    </dependencies>
+    <rename id="phyx.3125250773681852552" type="PROPERTY" from="editName" to="showTranslations" />
+  </StructureModification>
 </history>
 

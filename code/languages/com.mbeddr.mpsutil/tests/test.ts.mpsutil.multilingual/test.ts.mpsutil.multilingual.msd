@@ -23,6 +23,7 @@
     <usedLanguage>7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</usedLanguage>
     <usedLanguage>8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)</usedLanguage>
     <usedLanguage>c0826d77-5349-4d44-b588-5750e22d096b(test.ts.mpsutil.multilingual.concept.sandbox)</usedLanguage>
+    <usedLanguage>0eba8d68-ca0c-4113-a9e6-19b359352ecf(test.ts.mpsutil.multilingual.editor.sandbox)</usedLanguage>
   </usedLanguages>
 </solution>
 

@@ -7,6 +7,8 @@
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4912572611775891186" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="TestMultilingualEditorConcept" />
+    <property name="rootable" nameId="tpce.1096454100552" value="true" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="myAlias" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
   </root>
 </model>
