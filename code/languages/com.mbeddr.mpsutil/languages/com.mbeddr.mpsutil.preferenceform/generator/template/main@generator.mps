@@ -53,7 +53,7 @@
   <import index="qff7" modelUID="r:2ba2e307-a81d-4a21-9e0b-de3624e2fb83(jetbrains.mps.lang.access.structure)" version="0" implicit="yes" />
   <root type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="145956936283286627" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="PreferenceForm" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="property.combobox" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     <node role="postMappingScript" roleId="tpf8.1195502346405" type="tpf8.MappingScriptReference" typeId="tpf8.1195502151594" id="2455226402939239514" nodeInfo="ng">
       <link role="mappingScript" roleId="tpf8.1195502167610" targetNodeId="1897057403116277204" resolveInfo="AddStandalonePluginDescriptor" />
     </node>
@@ -924,9 +924,6 @@
               <property name="name" nameId="tpck.1169194664001" value="control" />
               <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8201243288563881878" nodeInfo="in">
                 <link role="classifier" roleId="tpee.1107535924139" targetNodeId="dbrf.~JComboBox" resolveInfo="JComboBox" />
-                <node role="parameter" roleId="tpee.1109201940907" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8201243288565126748" nodeInfo="in">
-                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.8201243288565029854" resolveInfo="DynamicComboBoxEntry" />
-                </node>
               </node>
             </node>
           </node>
@@ -1281,9 +1278,6 @@
               <property name="name" nameId="tpck.1169194664001" value="control" />
               <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8201243288563998098" nodeInfo="in">
                 <link role="classifier" roleId="tpee.1107535924139" targetNodeId="dbrf.~JComboBox" resolveInfo="JComboBox" />
-                <node role="parameter" roleId="tpee.1109201940907" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8201243288565224609" nodeInfo="in">
-                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.8201243288565029854" resolveInfo="DynamicComboBoxEntry" />
-                </node>
               </node>
             </node>
           </node>
@@ -2052,15 +2046,9 @@
                   <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="8201243288562906863" nodeInfo="nn">
                     <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="8201243288562906864" nodeInfo="nn">
                       <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dbrf.~JComboBox%d&lt;init&gt;(java%dutil%dVector)" resolveInfo="JComboBox" />
-                      <node role="typeParameter" roleId="tpee.1212687122400" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8201243288565185939" nodeInfo="in">
-                        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.8201243288565029854" resolveInfo="DynamicComboBoxEntry" />
-                      </node>
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="8201243288563063319" nodeInfo="nn">
                         <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="8201243288563355857" nodeInfo="nn">
                           <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="k7g3.~Vector%d&lt;init&gt;(java%dutil%dCollection)" resolveInfo="Vector" />
-                          <node role="typeParameter" roleId="tpee.1212687122400" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8201243288565182664" nodeInfo="in">
-                            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.8201243288565029854" resolveInfo="DynamicComboBoxEntry" />
-                          </node>
                           <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8201243288563444288" nodeInfo="nn">
                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8201243288563436307" resolveInfo="values" />
                           </node>
@@ -2262,15 +2250,9 @@
                         <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="8201243288563497808" nodeInfo="nn">
                           <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="8201243288563497809" nodeInfo="nn">
                             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dbrf.~JComboBox%d&lt;init&gt;(java%dutil%dVector)" resolveInfo="JComboBox" />
-                            <node role="typeParameter" roleId="tpee.1212687122400" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8201243288565113347" nodeInfo="in">
-                              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.8201243288565029854" resolveInfo="DynamicComboBoxEntry" />
-                            </node>
                             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="8201243288563497813" nodeInfo="nn">
                               <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="8201243288563497814" nodeInfo="nn">
                                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="k7g3.~Vector%d&lt;init&gt;(java%dutil%dCollection)" resolveInfo="Vector" />
-                                <node role="typeParameter" roleId="tpee.1212687122400" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8201243288565107130" nodeInfo="in">
-                                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.8201243288565029854" resolveInfo="DynamicComboBoxEntry" />
-                                </node>
                                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="8201243288563497818" nodeInfo="nn">
                                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8201243288563497768" resolveInfo="values" />
                                 </node>
@@ -2606,9 +2588,6 @@
               <property name="name" nameId="tpck.1169194664001" value="control" />
               <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8201243288563981027" nodeInfo="in">
                 <link role="classifier" roleId="tpee.1107535924139" targetNodeId="dbrf.~JComboBox" resolveInfo="JComboBox" />
-                <node role="parameter" roleId="tpee.1109201940907" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8201243288565204155" nodeInfo="in">
-                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="rh18.8201243288565029854" resolveInfo="DynamicComboBoxEntry" />
-                </node>
               </node>
             </node>
           </node>
