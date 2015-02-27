@@ -120,6 +120,7 @@
       </node>
     </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="6894640095064717783" nodeInfo="ng">
+      <property name="applyToConceptInheritors" nameId="tpf8.1167272244852" value="true" />
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="spci.3354025285337569334" resolveInfo="InlineFormat" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="6894640095064718633" nodeInfo="ng">
         <node role="templateNode" roleId="tpf8.1177093586806" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6894640095064718641" nodeInfo="nn">
@@ -352,11 +353,6 @@
         </node>
       </node>
     </node>
-  </root>
-  <root type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="6894640095064704090" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="case_InlineFormat" />
-    <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="spci.3354025285337569334" resolveInfo="InlineFormat" />
-    <node role="contentNode" roleId="tpf8.1092060348987" type="tpck.BaseConcept" typeId="tpck.1133920641626" id="6894640095064704091" nodeInfo="ng" />
   </root>
 </model>
 
