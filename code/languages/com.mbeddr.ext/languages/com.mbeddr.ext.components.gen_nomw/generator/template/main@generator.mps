@@ -81,9 +81,6 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -525,9 +522,6 @@
       </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
-      </concept>
-      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
-        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
@@ -17856,21 +17850,19 @@
                           <node concept="3zZkjj" id="SH6Kd4oWE7" role="2OqNvi">
                             <node concept="1bVj0M" id="SH6Kd4oWE8" role="23t8la">
                               <node concept="3clFbS" id="SH6Kd4oWE9" role="1bW5cS">
-                                <node concept="3clFbF" id="SH6Kd4oWEa" role="3cqZAp">
-                                  <node concept="3fqX7Q" id="SH6Kd4oWEb" role="3clFbG">
-                                    <node concept="2YIFZM" id="20ezT9ZBU6M" role="3fr31v">
-                                      <ref role="37wK5l" to="ec5l:~SNodeAccessUtil.hasProperty(org.jetbrains.mps.openapi.model.SNode,java.lang.String):boolean" resolve="hasProperty" />
-                                      <ref role="1Pybhc" to="ec5l:~SNodeAccessUtil" resolve="SNodeAccessUtil" />
-                                      <node concept="2JrnkZ" id="20ezT9ZBU6N" role="37wK5m">
-                                        <node concept="3cpWs2" id="20ezT9ZBU6O" role="2JrQYb">
-                                          <ref role="3cqZAo" node="SH6Kd4oWEh" resolve="it" />
+                                <node concept="3clFbF" id="3KKPUg5LvJL" role="3cqZAp">
+                                  <node concept="2OqwBi" id="3KKPUg5LB_7" role="3clFbG">
+                                    <node concept="2OqwBi" id="3KKPUg5Lw2_" role="2Oq$k0">
+                                      <node concept="37vLTw" id="3KKPUg5LvJJ" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="SH6Kd4oWEh" resolve="it" />
+                                      </node>
+                                      <node concept="3CFZ6_" id="3KKPUg5L$SZ" role="2OqNvi">
+                                        <node concept="3CFYIy" id="3KKPUg5LAqf" role="3CFYIz">
+                                          <ref role="3CFYIx" to="v7ag:3KKPUg5FDRy" resolve="PreventConstructorCall" />
                                         </node>
                                       </node>
-                                      <node concept="10M0yZ" id="20ezT9ZBU6P" role="37wK5m">
-                                        <ref role="1PxDUh" to="eup9:ok2QD2nhv_" resolve="ComponentsConstants" />
-                                        <ref role="3cqZAo" to="eup9:ok2QD2nk7w" resolve="PREVENT_CONSTRUCTOR_CALL" />
-                                      </node>
                                     </node>
+                                    <node concept="3w_OXm" id="3KKPUg5LD6$" role="2OqNvi" />
                                   </node>
                                 </node>
                               </node>

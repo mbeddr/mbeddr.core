@@ -58,9 +58,6 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -182,9 +179,6 @@
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
-      </concept>
-      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
-        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -344,23 +338,19 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="6VjJML5_YFM" role="3cqZAp">
-              <node concept="2OqwBi" id="6VjJML5A1nd" role="3clFbG">
-                <node concept="2JrnkZ" id="6VjJML5A1kJ" role="2Oq$k0">
-                  <node concept="37vLTw" id="6VjJML5_YFL" role="2JrQYb">
+            <node concept="3clFbF" id="3KKPUg5LKZ$" role="3cqZAp">
+              <node concept="2OqwBi" id="3KKPUg5LMgC" role="3clFbG">
+                <node concept="2OqwBi" id="3KKPUg5LLEa" role="2Oq$k0">
+                  <node concept="37vLTw" id="3KKPUg5LKZy" role="2Oq$k0">
                     <ref role="3cqZAo" node="3ejBUtVm40Z" resolve="copy" />
                   </node>
-                </node>
-                <node concept="liA8E" id="6VjJML5A1C5" role="2OqNvi">
-                  <ref role="37wK5l" to="ec5l:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
-                  <node concept="10M0yZ" id="6VjJML5A3G4" role="37wK5m">
-                    <ref role="3cqZAo" to="eup9:ok2QD2nk7w" resolve="PREVENT_CONSTRUCTOR_CALL" />
-                    <ref role="1PxDUh" to="eup9:ok2QD2nhv_" resolve="ComponentsConstants" />
-                  </node>
-                  <node concept="Xl_RD" id="6VjJML5A3JY" role="37wK5m">
-                    <property role="Xl_RC" value="(true)" />
+                  <node concept="3CFZ6_" id="3KKPUg5LMcF" role="2OqNvi">
+                    <node concept="3CFYIy" id="3KKPUg5LMdA" role="3CFYIz">
+                      <ref role="3CFYIx" to="v7ag:3KKPUg5FDRy" resolve="PreventConstructorCall" />
+                    </node>
                   </node>
                 </node>
+                <node concept="zfrQC" id="3KKPUg5LMFo" role="2OqNvi" />
               </node>
             </node>
             <node concept="3clFbH" id="6VjJML5_XyM" role="3cqZAp" />

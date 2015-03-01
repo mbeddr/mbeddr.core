@@ -1702,5 +1702,16 @@
   <node concept="PlHQZ" id="7DNX50_2aso">
     <property role="TrG5h" value="IComponentWatchableResolver" />
   </node>
+  <node concept="1TIwiD" id="3KKPUg5FDRy">
+    <property role="TrG5h" value="PreventConstructorCall" />
+    <property role="34LRSv" value="@preventConstructorCall" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="3KKPUg5FDX8" role="lGtFl">
+      <property role="Hh88m" value="preventConstructorCall" />
+      <node concept="trNpa" id="3KKPUg5Gc4z" role="EQaZv">
+        <ref role="trN6q" node="3TmmsQkDdTQ" resolve="ComponentInstance" />
+      </node>
+    </node>
+  </node>
 </model>
 

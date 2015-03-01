@@ -63,7 +63,6 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -3298,20 +3297,19 @@
                           </node>
                         </node>
                         <node concept="3clFbS" id="3ejBUtVm4q8" role="3clFbx">
-                          <node concept="3clFbF" id="3ejBUtVm4q9" role="3cqZAp">
-                            <node concept="2YIFZM" id="2qwvqnUeehg" role="3clFbG">
-                              <ref role="1Pybhc" to="ec5l:~SNodeAccessUtil" resolve="SNodeAccessUtil" />
-                              <ref role="37wK5l" to="ec5l:~SNodeAccessUtil.setProperty(org.jetbrains.mps.openapi.model.SNode,java.lang.String,java.lang.String):void" resolve="setProperty" />
-                              <node concept="2JrnkZ" id="2qwvqnUeehh" role="37wK5m">
-                                <node concept="3cpWs2" id="2qwvqnUeehi" role="2JrQYb">
+                          <node concept="3clFbF" id="3KKPUg5LQQ1" role="3cqZAp">
+                            <node concept="2OqwBi" id="3KKPUg5LT1x" role="3clFbG">
+                              <node concept="2OqwBi" id="3KKPUg5LR0A" role="2Oq$k0">
+                                <node concept="37vLTw" id="3KKPUg5LQPZ" role="2Oq$k0">
                                   <ref role="3cqZAo" node="3ejBUtVm4qM" resolve="it" />
                                 </node>
+                                <node concept="3CFZ6_" id="3KKPUg5LS3O" role="2OqNvi">
+                                  <node concept="3CFYIy" id="3KKPUg5LSxf" role="3CFYIz">
+                                    <ref role="3CFYIx" to="v7ag:3KKPUg5FDRy" resolve="PreventConstructorCall" />
+                                  </node>
+                                </node>
                               </node>
-                              <node concept="10M0yZ" id="2qwvqnUeehj" role="37wK5m">
-                                <ref role="1PxDUh" to="eup9:ok2QD2nhv_" resolve="ComponentsConstants" />
-                                <ref role="3cqZAo" to="eup9:ok2QD2nk7w" resolve="PREVENT_CONSTRUCTOR_CALL" />
-                              </node>
-                              <node concept="10Nm6u" id="2qwvqnUeehk" role="37wK5m" />
+                              <node concept="1PgB_6" id="3KKPUg5LTA8" role="2OqNvi" />
                             </node>
                           </node>
                         </node>
