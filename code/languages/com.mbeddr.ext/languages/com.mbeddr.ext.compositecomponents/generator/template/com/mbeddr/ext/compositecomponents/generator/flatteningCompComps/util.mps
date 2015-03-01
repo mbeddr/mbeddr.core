@@ -190,10 +190,17 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
+      <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
+        <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
+      </concept>
+      <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
+        <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
+      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
         <child id="1140138123956" name="leftExpression" index="1PxMeX" />
@@ -267,15 +274,7 @@
         <property role="Xl_RC" value="TARGET_INSTANCE_NAME" />
       </node>
     </node>
-    <node concept="Wx3nA" id="3ejBUtVm40A" role="jymVt">
-      <property role="TrG5h" value="FIELD_FOR_INTERNAL_INSTANCE" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="3ejBUtVm40B" role="1B3o_S" />
-      <node concept="17QB3L" id="3ejBUtVm40C" role="1tU5fm" />
-      <node concept="Xl_RD" id="3ejBUtVm40D" role="33vP2m">
-        <property role="Xl_RC" value="FIELD_FOR_INTERNAL_INSTANCE" />
-      </node>
-    </node>
+    <node concept="2tJIrI" id="3KKPUg5zT3K" role="jymVt" />
     <node concept="2YIFZL" id="3ejBUtVm40E" role="jymVt">
       <property role="TrG5h" value="flattenCompositeInstances" />
       <node concept="37vLTG" id="3ejBUtVm40F" role="3clF46">
@@ -402,24 +401,24 @@
                 <node concept="3zZkjj" id="3ejBUtVm41u" role="2OqNvi">
                   <node concept="1bVj0M" id="3ejBUtVm41v" role="23t8la">
                     <node concept="3clFbS" id="3ejBUtVm41w" role="1bW5cS">
-                      <node concept="3clFbF" id="3ejBUtVm41x" role="3cqZAp">
-                        <node concept="2OqwBi" id="3ejBUtVm41y" role="3clFbG">
-                          <node concept="2JrnkZ" id="3ejBUtVm41z" role="2Oq$k0">
-                            <node concept="2OqwBi" id="3ejBUtVm41$" role="2JrQYb">
-                              <node concept="3cpWs2" id="3ejBUtVm41_" role="2Oq$k0">
+                      <node concept="3clFbF" id="3KKPUg5zdPc" role="3cqZAp">
+                        <node concept="2OqwBi" id="3KKPUg5zgkr" role="3clFbG">
+                          <node concept="2OqwBi" id="3KKPUg5zf4G" role="2Oq$k0">
+                            <node concept="2OqwBi" id="3KKPUg5zdTw" role="2Oq$k0">
+                              <node concept="37vLTw" id="3KKPUg5zdPa" role="2Oq$k0">
                                 <ref role="3cqZAo" node="3ejBUtVm41D" resolve="it" />
                               </node>
-                              <node concept="3TrEf2" id="3ejBUtVm41A" role="2OqNvi">
+                              <node concept="3TrEf2" id="3KKPUg5zeyu" role="2OqNvi">
                                 <ref role="3Tt5mk" to="v7ag:F_QT7XsuCu" />
                               </node>
                             </node>
-                          </node>
-                          <node concept="liA8E" id="3ejBUtVm41B" role="2OqNvi">
-                            <ref role="37wK5l" to="ec5l:~SNode.hasProperty(java.lang.String):boolean" resolve="hasProperty" />
-                            <node concept="37vLTw" id="2qwvqnUeeBX" role="37wK5m">
-                              <ref role="3cqZAo" node="3ejBUtVm40A" resolve="FIELD_FOR_INTERNAL_INSTANCE" />
+                            <node concept="3CFZ6_" id="3KKPUg5zfK9" role="2OqNvi">
+                              <node concept="3CFYIy" id="3KKPUg5zg1x" role="3CFYIz">
+                                <ref role="3CFYIx" to="g88q:3KKPUg5z4XL" resolve="FieldForInternalInstances" />
+                              </node>
                             </node>
                           </node>
+                          <node concept="3x8VRR" id="3KKPUg5zgV_" role="2OqNvi" />
                         </node>
                       </node>
                     </node>

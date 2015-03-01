@@ -73,6 +73,7 @@
   <node concept="1TIwiD" id="3KKPUg5xkSt">
     <property role="3GE5qa" value="internal" />
     <property role="TrG5h" value="RunnableProcessed" />
+    <property role="34LRSv" value="@runnableProcessed" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="3KKPUg5xkT2" role="lGtFl">
       <property role="Hh88m" value="runnableProcessed" />
