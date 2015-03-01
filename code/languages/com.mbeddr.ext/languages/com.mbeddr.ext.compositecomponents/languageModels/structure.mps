@@ -176,5 +176,23 @@
       </node>
     </node>
   </node>
+  <node concept="1TIwiD" id="3KKPUg5Ah99">
+    <property role="TrG5h" value="TargetInstanceName" />
+    <property role="34LRSv" value="@targetInstanceName" />
+    <property role="3GE5qa" value="internal" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="3KKPUg5Ah9a" role="lGtFl">
+      <property role="Hh88m" value="targetInstanceName" />
+      <node concept="tn0Fv" id="3KKPUg5Ah9b" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="3KKPUg5AqOX" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="3KKPUg5Cu0G" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 
