@@ -3311,5 +3311,16 @@
       <node concept="2SsqMj" id="3KKPUg5AhaR" role="3EZMnx" />
     </node>
   </node>
+  <node concept="24kQdi" id="3KKPUg6o79W">
+    <property role="3GE5qa" value="internal" />
+    <ref role="1XX52x" to="g88q:3KKPUg6o78w" resolve="CompositeComponentName" />
+    <node concept="3EZMnI" id="3KKPUg6o79X" role="2wV5jI">
+      <node concept="2iRkQZ" id="3KKPUg6o79Y" role="2iSdaV" />
+      <node concept="PMmxH" id="3KKPUg6o79Z" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="2SsqMj" id="3KKPUg6o7a0" role="3EZMnx" />
+    </node>
+  </node>
 </model>
 

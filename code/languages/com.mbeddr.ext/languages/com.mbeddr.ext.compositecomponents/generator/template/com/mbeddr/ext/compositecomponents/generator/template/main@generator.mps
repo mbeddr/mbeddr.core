@@ -60,9 +60,6 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -225,9 +222,6 @@
       </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
-      </concept>
-      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
-        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
@@ -1172,17 +1166,19 @@
                             <node concept="3cpWsn" id="2qwvqnUvork" role="3cpWs9">
                               <property role="TrG5h" value="property" />
                               <node concept="17QB3L" id="2qwvqnUvorl" role="1tU5fm" />
-                              <node concept="2YIFZM" id="2qwvqnUvorm" role="33vP2m">
-                                <ref role="37wK5l" to="ec5l:~SNodeAccessUtil.getProperty(org.jetbrains.mps.openapi.model.SNode,java.lang.String):java.lang.String" resolve="getProperty" />
-                                <ref role="1Pybhc" to="ec5l:~SNodeAccessUtil" resolve="SNodeAccessUtil" />
-                                <node concept="2JrnkZ" id="2qwvqnUvorn" role="37wK5m">
-                                  <node concept="3cpWsa" id="2qwvqnUvoro" role="2JrQYb">
+                              <node concept="2OqwBi" id="3KKPUg6owPq" role="33vP2m">
+                                <node concept="2OqwBi" id="3KKPUg6oqpl" role="2Oq$k0">
+                                  <node concept="37vLTw" id="3KKPUg6opKq" role="2Oq$k0">
                                     <ref role="3cqZAo" node="2qwvqnUvorc" resolve="ac" />
                                   </node>
+                                  <node concept="3CFZ6_" id="3KKPUg6osin" role="2OqNvi">
+                                    <node concept="3CFYIy" id="3KKPUg6ot7j" role="3CFYIz">
+                                      <ref role="3CFYIx" to="g88q:3KKPUg6o78w" resolve="CompositeComponentName" />
+                                    </node>
+                                  </node>
                                 </node>
-                                <node concept="10M0yZ" id="2qwvqnUvorp" role="37wK5m">
-                                  <ref role="1PxDUh" to="l32i:5vJvKD7xKqn" resolve="Util" />
-                                  <ref role="3cqZAo" to="l32i:2LSSMkCGZLv" resolve="COMPOSITE_COMPONENT_NAME" />
+                                <node concept="3TrcHB" id="3KKPUg6oyNQ" role="2OqNvi">
+                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                 </node>
                               </node>
                             </node>

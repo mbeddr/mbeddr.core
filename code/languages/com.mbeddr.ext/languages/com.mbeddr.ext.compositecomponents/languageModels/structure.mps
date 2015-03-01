@@ -194,5 +194,23 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3KKPUg6o78w">
+    <property role="TrG5h" value="CompositeComponentName" />
+    <property role="34LRSv" value="@compositeComponentName" />
+    <property role="3GE5qa" value="internal" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="3KKPUg6o78x" role="lGtFl">
+      <property role="Hh88m" value="compositeComponentName" />
+      <node concept="tn0Fv" id="3KKPUg6o78y" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="3KKPUg6odvH" role="EQaZv">
+        <ref role="trN6q" to="v7ag:3TmmsQkCzn9" resolve="Component" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="3KKPUg6o78$" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 
