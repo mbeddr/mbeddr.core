@@ -5389,6 +5389,12 @@
           <property role="3LESm3" value="c580df0e-8eef-4422-97d2-4fffc42fb9b7" />
           <property role="2GAjPV" value="false" />
         </node>
+        <node concept="1SiIV0" id="4Ob7avfdIp$" role="3bR37C">
+          <node concept="3bR9La" id="4Ob7avfdIp_" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7hVsScEP9Zo" role="2G$12L">
         <property role="BnDLt" value="true" />
