@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="tccj" modelUID="r:8e7137f7-9852-41c2-946e-93d112c3ac27(com.i2s.common.multilingual.typesystem)" version="-1" />
+      <model index="h424" modelUID="r:9b1205f1-4400-409f-b523-507cdf98f2de(com.mbeddr.mpsutil.multilingual.editor.typesystem)" version="-1" />
+    </dependencies>
+    <move id="tccj.4299801941287873330" to="h424.2510545900188277454" />
+    <move id="tccj.4299801941287469776" to="h424.2510545900188277450" />
+    <move id="tccj.4299801941287469779" to="h424.2510545900188277459" />
+    <move id="tccj.4299801941287469777" to="h424.2510545900188277451" />
+    <move id="tccj.4299801941287874172" to="h424.2510545900188277457" />
+    <move id="tccj.4299801941287874909" to="h424.2510545900188277456" />
+    <move id="tccj.4299801941287876016" to="h424.2510545900188277458" />
+    <move id="tccj.4299801941287469778" to="h424.2510545900188277452" />
+    <move id="tccj.4299801941287469775" to="h424.2510545900188277449" />
+    <move id="tccj.4299801941287469783" to="h424.2510545900188277463" />
+    <move id="tccj.4299801941287469767" to="h424.2510545900188277446" />
+    <move id="tccj.4299801941287873887" to="h424.2510545900188277455" />
+    <move id="tccj.4299801941287469774" to="h424.2510545900188277448" />
+    <move id="tccj.4299801941287469780" to="h424.2510545900188277460" />
+    <move id="tccj.4299801941287872978" to="h424.2510545900188277453" />
+    <move id="tccj.4299801941287469768" to="h424.2510545900188277447" />
+    <move id="tccj.4299801941287469781" to="h424.2510545900188277461" />
+    <move id="tccj.4299801941287469782" to="h424.2510545900188277462" />
+  </StructureModification>
+</history>
+

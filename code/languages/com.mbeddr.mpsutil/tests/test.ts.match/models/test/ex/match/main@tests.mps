@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:3734b8f4-ef8a-46f3-9666-61760fafcc11(test.ex.match.main)">
+<model modelUID="r:3734b8f4-ef8a-46f3-9666-61760fafcc11(test.ex.match.main@tests)">
   <persistence version="8" />
   <language namespace="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" />
   <language namespace="f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)" />
@@ -1222,7 +1222,7 @@
     </node>
   </root>
   <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="6385915233778751345" nodeInfo="ng">
-    <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/mpsutil.dev.mpr" />
+    <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
   </root>
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="17217465924336636" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="TestFilter" />
