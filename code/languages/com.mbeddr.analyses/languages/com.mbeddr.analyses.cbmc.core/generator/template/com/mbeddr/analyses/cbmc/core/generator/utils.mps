@@ -280,9 +280,6 @@
             <node concept="37vLTw" id="3r65a9FbICf" role="37wK5m">
               <ref role="3cqZAo" node="3r65a9FaXkd" resolve="genContext" />
             </node>
-            <node concept="37vLTw" id="3r65a9Fbw1I" role="37wK5m">
-              <ref role="3cqZAo" node="3r65a9Fbw1C" resolve="origNode" />
-            </node>
           </node>
         </node>
       </node>
@@ -585,9 +582,6 @@
             <ref role="1Pybhc" to="qh45:15d7XIo_IoU" resolve="AnalysesSpecificGenerationEnabler" />
             <node concept="37vLTw" id="576QrOJtUQb" role="37wK5m">
               <ref role="3cqZAo" node="576QrOJtUQg" resolve="genContext" />
-            </node>
-            <node concept="37vLTw" id="576QrOJtUQc" role="37wK5m">
-              <ref role="3cqZAo" node="576QrOJtUQ3" resolve="origNode" />
             </node>
           </node>
         </node>
