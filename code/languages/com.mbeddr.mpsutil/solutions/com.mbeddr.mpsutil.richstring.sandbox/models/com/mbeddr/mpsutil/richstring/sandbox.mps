@@ -7,9 +7,9 @@
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
+  <import index="spci" modelUID="r:f00bea3f-6dce-47ed-ac44-0f6df7d12ced(com.mbeddr.mpsutil.richstring.structure)" version="-1" implicit="yes" />
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
-  <import index="spci" modelUID="r:f00bea3f-6dce-47ed-ac44-0f6df7d12ced(com.mbeddr.mpsutil.richstring.structure)" version="-1" implicit="yes" />
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3354025285337274424" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="RichStringTest" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="3354025285337274512" nodeInfo="igu">
@@ -102,6 +102,10 @@
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="swfyxv\nasdf\nasdf\n  \n\n\n" />
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="spci.InlineFormat" typeId="spci.3354025285337569334" id="7716961532368760959" nodeInfo="ng">
+                  <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionIntegralDecimal" typeId="spci.3354025285337562900" id="4641960180067583109" nodeInfo="ng" />
+                  <node role="width" roleId="spci.7716961532366136822" type="spci.ConversionWidthInteger" typeId="spci.3354025285337570946" id="4641960180068654335" nodeInfo="ng">
+                    <property name="width" nameId="spci.3354025285337570949" value="5" />
+                  </node>
                   <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagZeroPadding" typeId="spci.3354025285337560608" id="4641960180067619450" nodeInfo="ng" />
                   <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagEncloseNegativeInParentheses" typeId="spci.3354025285337560770" id="4641960180070148760" nodeInfo="ng" />
                   <node role="expression" roleId="spci.7716961532366136824" type="tpee.UnaryMinus" typeId="tpee.8064396509828172209" id="4641960180069958896" nodeInfo="nn">
@@ -120,10 +124,6 @@
                         </node>
                       </node>
                     </node>
-                  </node>
-                  <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionIntegralDecimal" typeId="spci.3354025285337562900" id="4641960180067583109" nodeInfo="ng" />
-                  <node role="width" roleId="spci.7716961532366136822" type="spci.ConversionWidthInteger" typeId="spci.3354025285337570946" id="4641960180068654335" nodeInfo="ng">
-                    <property name="width" nameId="spci.3354025285337570949" value="5" />
                   </node>
                 </node>
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4641960180067704034" nodeInfo="ng">

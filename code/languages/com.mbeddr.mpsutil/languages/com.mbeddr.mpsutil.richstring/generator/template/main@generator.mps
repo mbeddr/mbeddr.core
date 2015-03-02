@@ -120,6 +120,7 @@
       </node>
     </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="6894640095064717783" nodeInfo="ng">
+      <property name="applyToConceptInheritors" nameId="tpf8.1167272244852" value="true" />
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="spci.3354025285337569334" resolveInfo="InlineFormat" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplate_RuleConsequence" typeId="tpf8.1177093525992" id="6894640095064718633" nodeInfo="ng">
         <node role="templateNode" roleId="tpf8.1177093586806" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6894640095064718641" nodeInfo="nn">
