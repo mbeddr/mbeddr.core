@@ -25,9 +25,6 @@
       </concept>
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
-      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
-        <child id="1068431790190" name="initializer" index="33vP2m" />
-      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -58,10 +55,6 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
-      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
-        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
-      </concept>
-      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -83,9 +76,6 @@
       </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
-      <concept id="1229477454423" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalCopiedInputByOutput" flags="nn" index="12$id9">
-        <child id="1229477520175" name="outputNode" index="12$y8L" />
-      </concept>
       <concept id="1216860049633" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextType" flags="in" index="1iwH7U" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -177,22 +167,6 @@
               </node>
               <node concept="37vLTw" id="3r65a9Fb1fU" role="37wK5m">
                 <ref role="3cqZAo" node="3r65a9FaXkL" resolve="node" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="3r65a9F9Tv_" role="3cqZAp">
-          <node concept="3cpWsn" id="3r65a9F9TvA" role="3cpWs9">
-            <property role="TrG5h" value="origNode" />
-            <node concept="3Tqbb2" id="3r65a9F9Tvz" role="1tU5fm" />
-            <node concept="2OqwBi" id="3r65a9F9TvB" role="33vP2m">
-              <node concept="37vLTw" id="3r65a9Fb1iy" role="2Oq$k0">
-                <ref role="3cqZAo" node="3r65a9FaXkd" resolve="genContext" />
-              </node>
-              <node concept="12$id9" id="3r65a9F9TvD" role="2OqNvi">
-                <node concept="37vLTw" id="3r65a9Fb1hi" role="12$y8L">
-                  <ref role="3cqZAo" node="3r65a9FaXkL" resolve="node" />
-                </node>
               </node>
             </node>
           </node>

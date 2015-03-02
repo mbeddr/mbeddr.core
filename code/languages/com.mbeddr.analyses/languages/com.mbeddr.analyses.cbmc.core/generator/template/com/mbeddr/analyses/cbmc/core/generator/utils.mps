@@ -177,9 +177,6 @@
       </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
-      <concept id="1229477454423" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalCopiedInputByOutput" flags="nn" index="12$id9">
-        <child id="1229477520175" name="outputNode" index="12$y8L" />
-      </concept>
       <concept id="1216860049633" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextType" flags="in" index="1iwH7U" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -255,22 +252,6 @@
               </node>
             </node>
             <node concept="10Nm6u" id="3r65a9F9Smp" role="3uHU7w" />
-          </node>
-        </node>
-        <node concept="3cpWs8" id="3r65a9Fbw1B" role="3cqZAp">
-          <node concept="3cpWsn" id="3r65a9Fbw1C" role="3cpWs9">
-            <property role="TrG5h" value="origNode" />
-            <node concept="3Tqbb2" id="3r65a9Fbw1D" role="1tU5fm" />
-            <node concept="2OqwBi" id="3r65a9Fbw1E" role="33vP2m">
-              <node concept="37vLTw" id="3r65a9FbIEE" role="2Oq$k0">
-                <ref role="3cqZAo" node="3r65a9FaXkd" resolve="genContext" />
-              </node>
-              <node concept="12$id9" id="3r65a9Fbw1F" role="2OqNvi">
-                <node concept="37vLTw" id="3r65a9FbIDn" role="12$y8L">
-                  <ref role="3cqZAo" node="3r65a9FaXkL" resolve="node" />
-                </node>
-              </node>
-            </node>
           </node>
         </node>
         <node concept="3clFbF" id="3r65a9Fbw1G" role="3cqZAp">
@@ -558,22 +539,6 @@
               </node>
             </node>
             <node concept="10Nm6u" id="576QrOJtUQ1" role="3uHU7w" />
-          </node>
-        </node>
-        <node concept="3cpWs8" id="576QrOJtUQ2" role="3cqZAp">
-          <node concept="3cpWsn" id="576QrOJtUQ3" role="3cpWs9">
-            <property role="TrG5h" value="origNode" />
-            <node concept="3Tqbb2" id="576QrOJtUQ4" role="1tU5fm" />
-            <node concept="2OqwBi" id="576QrOJtUQ5" role="33vP2m">
-              <node concept="37vLTw" id="576QrOJtUQ6" role="2Oq$k0">
-                <ref role="3cqZAo" node="576QrOJtUQg" resolve="genContext" />
-              </node>
-              <node concept="12$id9" id="576QrOJtUQ7" role="2OqNvi">
-                <node concept="37vLTw" id="576QrOJtUQ8" role="12$y8L">
-                  <ref role="3cqZAo" node="576QrOJtUQi" resolve="node" />
-                </node>
-              </node>
-            </node>
           </node>
         </node>
         <node concept="3clFbF" id="576QrOJtUQ9" role="3cqZAp">
