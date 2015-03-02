@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="3iid" modelUID="r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform.structure)" version="0" />
+    </dependencies>
+    <rename id="3iid.1210676907584" type="CHILD" from="afterReadBlock" to="afterReadBlockProject" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3iid" modelUID="r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform.structure)" version="1" />
+    </dependencies>
+    <rename id="3iid.1210676918600" type="CHILD" from="beforeWriteBlock" to="beforeWriteBlockProject" />
+  </StructureModification>
+</history>
+

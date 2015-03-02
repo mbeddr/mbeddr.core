@@ -32,18 +32,16 @@
     <import index="5xh9" ref="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.actions(MPS.Platform/jetbrains.mps.ide.actions@java_stub)" />
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="grvc" ref="r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node.behavior)" />
-    <import index="qub4" ref="f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#org.apache.batik.swing(com.mbeddr.mpsutil.plantuml.pluginSolution/org.apache.batik.swing@java_stub)" />
     <import index="nbb0" ref="f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#org.apache.batik.dom.util(com.mbeddr.mpsutil.plantuml.pluginSolution/org.apache.batik.dom.util@java_stub)" />
     <import index="8e7c" ref="f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#org.w3c.dom.svg(com.mbeddr.mpsutil.plantuml.pluginSolution/org.w3c.dom.svg@java_stub)" />
     <import index="qs12" ref="f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#org.apache.batik.swing.svg(com.mbeddr.mpsutil.plantuml.pluginSolution/org.apache.batik.swing.svg@java_stub)" />
-    <import index="bl4z" ref="f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#org.apache.batik.gvt.event(com.mbeddr.mpsutil.plantuml.pluginSolution/org.apache.batik.gvt.event@java_stub)" />
-    <import index="8ouv" ref="f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#org.apache.batik.bridge(com.mbeddr.mpsutil.plantuml.pluginSolution/org.apache.batik.bridge@java_stub)" />
-    <import index="tu4w" ref="f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#org.apache.batik.util(com.mbeddr.mpsutil.plantuml.pluginSolution/org.apache.batik.util@java_stub)" />
-    <import index="qj53" ref="f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#org.apache.batik.swing.gvt(com.mbeddr.mpsutil.plantuml.pluginSolution/org.apache.batik.swing.gvt@java_stub)" />
-    <import index="a8zf" ref="f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#net.sourceforge.plantuml(com.mbeddr.mpsutil.plantuml.pluginSolution/net.sourceforge.plantuml@java_stub)" />
     <import index="22fg" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.net(JDK/java.net@java_stub)" />
-    <import index="abz6" ref="r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess.plugin)" />
     <import index="gzvg" ref="r:57c6e005-9b69-4d41-a9d6-190f5964c5d7(com.mbeddr.mpsutil.httpserver.plugin)" />
+    <import index="a8zf" ref="f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#net.sourceforge.plantuml(com.mbeddr.plantuml.pluginSolution/net.sourceforge.plantuml@java_stub)" implicit="true" />
+    <import index="qj53" ref="f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#org.apache.batik.swing.gvt(com.mbeddr.plantuml.pluginSolution/org.apache.batik.swing.gvt@java_stub)" implicit="true" />
+    <import index="tu4w" ref="f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#org.apache.batik.util(com.mbeddr.plantuml.pluginSolution/org.apache.batik.util@java_stub)" implicit="true" />
+    <import index="8ouv" ref="f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#org.apache.batik.bridge(com.mbeddr.plantuml.pluginSolution/org.apache.batik.bridge@java_stub)" implicit="true" />
+    <import index="qub4" ref="f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#org.apache.batik.swing(com.mbeddr.plantuml.pluginSolution/org.apache.batik.swing@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -2111,9 +2109,9 @@
                 </node>
                 <node concept="liA8E" id="2DnVhjrDIYa" role="2OqNvi">
                   <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
-                  <node concept="10M0yZ" id="2DnVhjrDJ2K" role="37wK5m">
-                    <ref role="1PxDUh" to="gzvg:3ZjlwXBExfQ" resolve="ServerUtil" />
-                    <ref role="3cqZAo" to="gzvg:2DnVhjrDFpF" resolve="LOCAL_ADDRESS" />
+                  <node concept="2YIFZM" id="62R8h7jRnPX" role="37wK5m">
+                    <ref role="37wK5l" to="gzvg:62R8h7jRigV" resolve="concatLocalAddress" />
+                    <ref role="1Pybhc" to="gzvg:3ZjlwXBExfQ" resolve="ServerUtil" />
                   </node>
                 </node>
               </node>
@@ -5462,7 +5460,6 @@
   </node>
   <node concept="312cEu" id="2aP19v315UQ">
     <property role="TrG5h" value="AbstractChanceCategoryCallback" />
-    <node concept="3Tm1VV" id="2aP19v315UR" role="1B3o_S" />
     <node concept="2RhdJD" id="2aP19v315V6" role="jymVt">
       <property role="2RkwnN" value="enabled" />
       <node concept="3Tm1VV" id="2aP19v315V7" role="1B3o_S" />
@@ -5475,6 +5472,7 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5uVY_XEw66r" role="jymVt" />
+    <node concept="3Tm1VV" id="2aP19v315UR" role="1B3o_S" />
     <node concept="3clFbW" id="2aP19v315US" role="jymVt">
       <node concept="3cqZAl" id="2aP19v315UT" role="3clF45" />
       <node concept="3Tm1VV" id="2aP19v315UU" role="1B3o_S" />

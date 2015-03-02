@@ -13,6 +13,14 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
@@ -28,6 +36,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="5404671619616246344" name="staticScope" index="2_RsDV" />
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
@@ -57,6 +66,18 @@
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="Preference Form" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="X7OD3WvjpT" role="1TKVEl">
+      <property role="TrG5h" value="scope" />
+      <ref role="AX2Wp" node="X7OD3Wvjw1" resolve="PreferenceFormScope" />
+    </node>
+    <node concept="1TJgyi" id="X7OD3Wz5kT" role="1TKVEl">
+      <property role="TrG5h" value="icon" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1msw07ZFuCh" role="1TKVEl">
+      <property role="TrG5h" value="helpTopic" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="86yKXFFVPI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="properties" />
@@ -65,15 +86,25 @@
     </node>
     <node concept="1TJgyj" id="hBxXST0" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="afterReadBlock" />
+      <property role="20kJfa" value="afterReadBlockProject" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="tp4k:hBxXM2A" resolve="OnAfterReadBlock" />
     </node>
     <node concept="1TJgyj" id="hBxXV_8" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="beforeWriteBlock" />
+      <property role="20kJfa" value="beforeWriteBlockProject" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="tp4k:hBxWZwF" resolve="OnBeforeWriteBlock" />
+    </node>
+    <node concept="1TJgyj" id="X7OD3Wx7im" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="afterReadBlockApplication" />
+      <ref role="20lvS9" node="hBxXM2A" resolve="OnAfterReadBlockApplication" />
+    </node>
+    <node concept="1TJgyj" id="X7OD3Wx7lE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="beforeWriteBlockApplication" />
+      <ref role="20lvS9" node="hBxWZwF" resolve="OnBeforeWriteBlockApplication" />
     </node>
     <node concept="PrWs8" id="86yKXFVJi4" role="PzmwI">
       <ref role="PrY4T" to="tp4f:hyWqMFP" resolve="IClassifier" />
@@ -125,11 +156,8 @@
     <property role="34LRSv" value="preferenceForm&lt;&lt;{formDeclaration}&gt;&gt;" />
     <property role="3GE5qa" value="getter" />
     <ref role="1TJDcQ" to="tp4k:2TmYHHddPWB" resolve="BaseProjectOperation" />
-    <node concept="1TJgyj" id="86yKXFVl2p" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="formDeclaration" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="86yKXFERvb" resolve="PreferenceForm" />
+    <node concept="PrWs8" id="2DIWO7Y817z" role="PzmwI">
+      <ref role="PrY4T" node="2DIWO7Y817r" resolve="IPreferenceFormExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="86yKXFV_6e">
@@ -158,6 +186,129 @@
     <node concept="PrWs8" id="86yKXFY5Xh" role="PzmwI">
       <ref role="PrY4T" to="tp4f:hyWEnem" resolve="IMemberOperation" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="77gEP6zgFoX">
+    <property role="3GE5qa" value="property.combobox" />
+    <property role="TrG5h" value="AbstractComboBoxPreferenceFormProperty" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="86yKXFHOKF" resolve="AbstractPreferenceFormProperty" />
+  </node>
+  <node concept="AxPO7" id="X7OD3Wvjw1">
+    <property role="TrG5h" value="PreferenceFormScope" />
+    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="M4N5e" id="X7OD3Wvjw2" role="M5hS2">
+      <property role="1uS6qo" value="project" />
+      <property role="1uS6qv" value="0" />
+    </node>
+    <node concept="M4N5e" id="X7OD3Wvjwr" role="M5hS2">
+      <property role="1uS6qo" value="application" />
+      <property role="1uS6qv" value="1" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="hBxWZwF">
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="OnBeforeWriteBlockApplication" />
+    <property role="3GE5qa" value="Preference.Members" />
+    <property role="2_RsDV" value="none" />
+    <property role="34LRSv" value="before write" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="77gEP6zgLdb">
+    <property role="3GE5qa" value="property.combobox" />
+    <property role="TrG5h" value="PredefinedComboBoxPreferenceFormProperty" />
+    <property role="34LRSv" value="predefined combobox" />
+    <ref role="1TJDcQ" node="77gEP6zgFoX" resolve="AbstractComboBoxPreferenceFormProperty" />
+    <node concept="1TJgyj" id="77gEP6zgLdc" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="entries" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="77gEP6zgLdF" resolve="PredefinedComboBoxEntry" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="77gEP6zgLdF">
+    <property role="3GE5qa" value="property.combobox" />
+    <property role="TrG5h" value="PredefinedComboBoxEntry" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="77gEP6zgLqd" role="1TKVEl">
+      <property role="TrG5h" value="key" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="77gEP6zgLdG" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2DIWO7Y817r">
+    <property role="3GE5qa" value="getter" />
+    <property role="TrG5h" value="IPreferenceFormExpression" />
+    <node concept="1TJgyj" id="86yKXFVl2p" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="formDeclaration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="86yKXFERvb" resolve="PreferenceForm" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="46uejXd4Z9J">
+    <property role="3GE5qa" value="property" />
+    <property role="TrG5h" value="IntegerFieldPreferenceFormProperty" />
+    <property role="34LRSv" value="integer field" />
+    <ref role="1TJDcQ" node="86yKXFHOKF" resolve="AbstractPreferenceFormProperty" />
+    <node concept="1TJgyi" id="46uejXd54j2" role="1TKVEl">
+      <property role="TrG5h" value="defaultValue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="77gEP6zh7j7">
+    <property role="3GE5qa" value="property.combobox" />
+    <property role="TrG5h" value="DynamicComboBoxDefaultEntryFunctionParameter" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="5YZamx7K_J4">
+    <property role="3GE5qa" value="getter" />
+    <property role="TrG5h" value="GetPreferenceFormInApplicationExpression" />
+    <property role="34LRSv" value="preferenceForm&lt;&lt;{formDeclaration}&gt;&gt;" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="PrWs8" id="2DIWO7Y817B" role="PzmwI">
+      <ref role="PrY4T" node="2DIWO7Y817r" resolve="IPreferenceFormExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="77gEP6zh3ts">
+    <property role="3GE5qa" value="property.combobox" />
+    <property role="TrG5h" value="DynamicComboBoxPreferenceFormProperty" />
+    <property role="34LRSv" value="dynamic combobox" />
+    <ref role="1TJDcQ" node="77gEP6zgFoX" resolve="AbstractComboBoxPreferenceFormProperty" />
+    <node concept="1TJgyj" id="77gEP6zh6SY" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="getEntriesFunction" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="77gEP6zh3ul" resolve="DynamicComboBoxEntriesFunction" />
+    </node>
+    <node concept="1TJgyj" id="77gEP6zh79o" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="defaultEntryFunction" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="77gEP6zh6UN" resolve="DynamicComboBoxDefaultEntryFunction" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="77gEP6zh6UN">
+    <property role="3GE5qa" value="property.combobox" />
+    <property role="TrG5h" value="DynamicComboBoxDefaultEntryFunction" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="hBxXM2A">
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="OnAfterReadBlockApplication" />
+    <property role="3GE5qa" value="Preference.Members" />
+    <property role="2_RsDV" value="none" />
+    <property role="34LRSv" value="after read" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="77gEP6zh3ul">
+    <property role="3GE5qa" value="property.combobox" />
+    <property role="TrG5h" value="DynamicComboBoxEntriesFunction" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
 </model>
 

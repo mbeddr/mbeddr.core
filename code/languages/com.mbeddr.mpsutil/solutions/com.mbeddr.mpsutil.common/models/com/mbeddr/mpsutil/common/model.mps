@@ -14,6 +14,7 @@
     <import index="hypd" ref="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" />
     <import index="msyo" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.util(MPS.Core/jetbrains.mps.util@java_stub)" />
     <import index="gct0" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.adapter.structure.concept(MPS.Core/jetbrains.mps.smodel.adapter.structure.concept@java_stub)" />
+    <import index="b2mh" ref="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.project(MPS.IDEA/com.intellij.openapi.project@java_stub)" />
     <import index="vsqj" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
@@ -341,11 +342,11 @@
                 <node concept="2YIFZM" id="5GUwywcupsE" role="37wK5m">
                   <ref role="37wK5l" to="k7g3:~Collections.singleton(java.lang.Object):java.util.Set" resolve="singleton" />
                   <ref role="1Pybhc" to="k7g3:~Collections" resolve="Collections" />
-                  <node concept="37vLTw" id="27wZW$HVftH" role="37wK5m">
-                    <ref role="3cqZAo" node="27wZW$HVeTK" resolve="asConcept" />
-                  </node>
                   <node concept="3uibUv" id="27wZW$HWjh8" role="3PaCim">
                     <ref role="3uigEE" to="t3eg:~SAbstractConcept" resolve="SAbstractConcept" />
+                  </node>
+                  <node concept="37vLTw" id="27wZW$HVftH" role="37wK5m">
+                    <ref role="3cqZAo" node="27wZW$HVeTK" resolve="asConcept" />
                   </node>
                 </node>
                 <node concept="3clFbT" id="5GUwywcupOi" role="37wK5m">

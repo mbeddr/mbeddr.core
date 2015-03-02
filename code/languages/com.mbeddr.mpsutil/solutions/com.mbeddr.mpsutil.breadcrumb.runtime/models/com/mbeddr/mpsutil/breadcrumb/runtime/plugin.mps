@@ -39,6 +39,11 @@
     <import index="pt5l" ref="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.project(MPS.Platform/jetbrains.mps.ide.project@java_stub)" />
   </imports>
   <registry>
+    <language id="00000000-0000-0000-0000-000000000000" name="">
+      <concept id="0" name="" flags="ng" index="00000">
+        <property id="0" name="" index="00000" />
+      </concept>
+    </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="481983775135178851" name="jetbrains.mps.lang.plugin.standalone.structure.ApplicationPluginInitBlock" flags="in" index="2uRRBj" />
       <concept id="481983775135178840" name="jetbrains.mps.lang.plugin.standalone.structure.ApplicationPluginDeclaration" flags="ng" index="2uRRBC">
@@ -5032,12 +5037,15 @@
   </node>
   <node concept="1DFvN4" id="ty4hbPIVUW">
     <property role="TrG5h" value="Breadcrumb Preferences" />
+    <property role="00000" value="0" />
     <node concept="1DJMfN" id="ty4hbPIVUX" role="1DEjpx">
       <property role="TrG5h" value="showBreadcrumb" />
       <property role="1DGmxC" value="Show Breadcrumb" />
       <property role="1DJMfM" value="true" />
+      <node concept="3clFbT" id="42HZhU0cNc1" role="33vP2m">
+        <property role="3clFbU" value="true" />
+      </node>
       <node concept="10P_77" id="ty4hbPIVUY" role="1tU5fm" />
-      <node concept="3clFbT" id="ty4hbPIVUZ" role="33vP2m" />
     </node>
   </node>
   <node concept="2uRRBC" id="63crKtXJqww">

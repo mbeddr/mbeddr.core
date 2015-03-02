@@ -11,8 +11,8 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.contextsidebar/com.mbeddr.mpsutil.contextsidebar.mpl" folder="contextsidebar" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist.demolang/com.mbeddr.mpsutil.editor.querylist.demolang.mpl" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.mpl" folder="querylist" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf.rt/com.mbeddr.mpsutil.emf.rt.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf/com.mbeddr.mpsutil.emf.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf.rt/com.mbeddr.mpsutil.emf.rt.msd" folder="emf" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf/com.mbeddr.mpsutil.emf.mpl" folder="emf" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.genutil/genutil.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.httpsupport/com.mbeddr.mpsutil.httpsupport.mpl" folder="httpSupport" />
@@ -26,20 +26,25 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.mpl" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.margincell.sandbox/com.mbeddr.mpsutil.margincell.sandbox.mpl" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.margincell/com.mbeddr.mpsutil.margincell.mpl" folder="margincell_review" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.mpl" folder="multilingual" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.multilingual.common/com.mbeddr.mpsutil.multilingual.common.mpl" folder="multilingual" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.multilingual.concept/com.mbeddr.mpsutil.multilingual.concept.mpl" folder="multilingual" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.multilingual.editor/com.mbeddr.mpsutil.multilingual.editor.mpl" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.nodes_tracing/com.mbeddr.mpsutil.nodes_tracing.mpl" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.nodeviewer/com.mbeddr.mpsutil.nodeviewer.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.mpl" folder="plantuml" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.mpl" folder="preferenceform" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.refactoring.rt/rt.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.refactoring/refactoring.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.refactoring.rt/rt.msd" folder="refactoring" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.refactoring/refactoring.mpl" folder="refactoring" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.review.annotation/com.mbeddr.mpsutil.review.annotation.mpl" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.review.readonly/com.mbeddr.mpsutil.review.readonly.mpl" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.review/com.mbeddr.mpsutil.review.mpl" folder="margincell_review" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.mpl" folder="richstring" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.settingsform/com.mbeddr.mpsutil.settingsform.mpl" folder="preferenceform" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.spreferences.context/com.mbeddr.mpsutil.spreferences.context.mpl" folder="spreferences" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.mpl" folder="spreferences" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.tooltip/com.mbeddr.mpsutil.tooltip.mpl" folder="tooltip" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.typsystem.trace/com.mbeddr.mpsutil.typsystem.trace.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.typsystem.trace/com.mbeddr.mpsutil.typsystem.trace.mpl" folder="typesystem.trace" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.uniquenames.sandboxlang/com.mbeddr.mpsutil.uniquenames.sandboxlang.mpl" folder="uniqueNames" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.uniquenames/com.mbeddr.mpsutil.uniquenames.mpl" folder="uniqueNames" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.breadcrumb.runtime/com.mbeddr.mpsutil.breadcrumb.runtime.msd" folder="breadcrumb" />
@@ -54,6 +59,11 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.make/com.mbeddr.mpsutil.make.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.margincell.runtime/com.mbeddr.mpsutil.margincell.runtime.msd" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.modelcache/com.mbeddr.mpsutil.modelcache.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.multilingual.baselanguage.runtime/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime.msd" folder="multilingual" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.multilingual.common.runtime/com.mbeddr.mpsutil.multilingual.common.runtime.msd" folder="multilingual" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.multilingual.concept.runtime/com.mbeddr.mpsutil.multilingual.concept.runtime.msd" folder="multilingual" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.multilingual.editor.runtime/com.mbeddr.mpsutil.multilingual.editor.runtime.msd" folder="multilingual" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.multilingual.settings.runtime/com.mbeddr.mpsutil.multilingual.settings.runtime.msd" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodes_tracing.pluginSolution/com.mbeddr.mpsutil.nodes_tracing.pluginSolution.msd" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/pluginSolution.msd" folder="plantuml" />
@@ -62,16 +72,21 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.rcpconfig/com.mbeddr.mpsutil.rcpconfig.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.review.runtime/com.mbeddr.mpsutil.review.runtime.msd" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.review.sandbox/com.mbeddr.mpsutil.review.sandbox.msd" folder="margincell_review" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.richstring.sandbox/com.mbeddr.mpsutil.richstring.sandbox.msd" folder="richstring" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.serializer.xml/com.mbeddr.mpsutil.serializer.xml.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.spreferences.demoplugin/com.mbeddr.mpsutil.spreferences.demoplugin.msd" folder="spreferences" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.spreferences.runtime/com.mbeddr.mpsutil.spreferences.runtime.msd" folder="spreferences" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.test.util/com.mbeddr.mpsutil.test.util.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.test/com.mbeddr.mpsutil.test.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.tooltip.runtime/com.mbeddr.mpsutil.tooltip.runtime.msd" folder="tooltip" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.typesystem.rt/com.mbeddr.mpsutil.typesystem.rt.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.typesystem.rt/com.mbeddr.mpsutil.typesystem.rt.msd" folder="typesystem.trace" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.uniquenames.sandbox/com.mbeddr.mpsutil.uniquenames.msd" folder="uniqueNames" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.ts.richstring/test.ts.richstring.msd" folder="richstring" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.uniquenames.test/com.mbeddr.mpsutil.uniquenames.test.msd" folder="uniqueNames" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.match/match.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.mpsutil.multilingual.concept.sandbox/test.ts.mpsutil.multilingual.concept.sandbox.mpl" folder="multilingual" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.mpsutil.multilingual.editor.sandbox/test.ts.mpsutil.multilingual.editor.sandbox.mpl" folder="multilingual" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.mpsutil.multilingual/test.ts.mpsutil.multilingual.msd" folder="multilingual" />
     </projectModules>
   </component>
 </project>

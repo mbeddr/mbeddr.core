@@ -20,6 +20,7 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
+        <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
       </concept>
@@ -276,6 +277,7 @@
     </node>
     <node concept="13i0hz" id="65E6xpGSh9S" role="13h7CS">
       <property role="TrG5h" value="evaluate" />
+      <property role="13i0it" value="true" />
       <node concept="37vLTG" id="65E6xpGSh9l" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="65E6xpGSh9k" role="1tU5fm" />
@@ -306,12 +308,10 @@
               <node concept="37vLTw" id="65E6xpGSi8s" role="37wK5m">
                 <ref role="3cqZAo" node="65E6xpGSh9l" resolve="node" />
               </node>
-              <node concept="2ShNRf" id="65E6xpGSic7" role="37wK5m">
-                <node concept="1pGfFk" id="65E6xpGSijZ" role="2ShVmc">
-                  <ref role="37wK5l" to="2ahs:27SkbdzdAWl" resolve="ContextImpl" />
-                  <node concept="37vLTw" id="27SkbdzgkVb" role="37wK5m">
-                    <ref role="3cqZAo" node="27Skbdzgkqm" resolve="interpreter" />
-                  </node>
+              <node concept="BsUDl" id="6glrYM_6jra" role="37wK5m">
+                <ref role="37wK5l" node="6glrYM_6jr6" resolve="createContext" />
+                <node concept="37vLTw" id="6glrYM_6jr9" role="37wK5m">
+                  <ref role="3cqZAo" node="27Skbdzgkqm" resolve="interpreter" />
                 </node>
               </node>
             </node>
@@ -346,6 +346,33 @@
         <ref role="3uigEE" to="2ahs:4X7QcQ36WR7" resolve="IInterpreter" />
       </node>
       <node concept="3clFbS" id="65E6xpGShbG" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="6glrYM_6jr6" role="13h7CS">
+      <property role="2Ki8OM" value="false" />
+      <property role="TrG5h" value="createContext" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tmbuc" id="6glrYM_6jr7" role="1B3o_S" />
+      <node concept="3uibUv" id="6glrYM_6jr8" role="3clF45">
+        <ref role="3uigEE" to="2ahs:4X7QcQ31ENp" resolve="IContext" />
+      </node>
+      <node concept="37vLTG" id="6glrYM_6jqK" role="3clF46">
+        <property role="TrG5h" value="interpreter" />
+        <node concept="3uibUv" id="6glrYM_6jqL" role="1tU5fm">
+          <ref role="3uigEE" to="2ahs:4X7QcQ36WR7" resolve="IInterpreter" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6glrYM_6jqp" role="3clF47">
+        <node concept="3cpWs6" id="6glrYM_6jqG" role="3cqZAp">
+          <node concept="2ShNRf" id="6glrYM_6jqH" role="3cqZAk">
+            <node concept="1pGfFk" id="6glrYM_6jqI" role="2ShVmc">
+              <ref role="37wK5l" to="2ahs:27SkbdzdAWl" resolve="ContextImpl" />
+              <node concept="37vLTw" id="6glrYM_6jqM" role="37wK5m">
+                <ref role="3cqZAo" node="6glrYM_6jqK" resolve="interpreter" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
