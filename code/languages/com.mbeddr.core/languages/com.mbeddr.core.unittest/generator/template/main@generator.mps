@@ -470,6 +470,10 @@
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
+      <concept id="1176903168877" name="jetbrains.mps.baseLanguage.collections.structure.UnionOperation" flags="nn" index="4Tj9Z" />
+      <concept id="1176906603202" name="jetbrains.mps.baseLanguage.collections.structure.BinaryOperation" flags="nn" index="56pJg">
+        <child id="1176906787974" name="rightExpression" index="576Qk" />
+      </concept>
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
@@ -2821,10 +2825,20 @@
             </node>
             <node concept="2OqwBi" id="5usoWIKpMnb" role="33vP2m">
               <node concept="2OqwBi" id="5usoWIKpMnc" role="2Oq$k0">
-                <node concept="2OqwBi" id="5usoWIKpMnd" role="2Oq$k0">
-                  <node concept="1Q6Npb" id="5usoWIKpMne" role="2Oq$k0" />
-                  <node concept="2SmgA7" id="5usoWIKpMnf" role="2OqNvi">
-                    <ref role="2SmgA8" to="yz9a:1Rr52SXzYA6" resolve="TestSpecificStatement" />
+                <node concept="2OqwBi" id="5usoWIKLqjp" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5usoWIKpMnd" role="2Oq$k0">
+                    <node concept="1Q6Npb" id="5usoWIKpMne" role="2Oq$k0" />
+                    <node concept="2SmgA7" id="5usoWIKpMnf" role="2OqNvi">
+                      <ref role="2SmgA8" to="yz9a:5so5TTr6RXr" resolve="TestCase" />
+                    </node>
+                  </node>
+                  <node concept="4Tj9Z" id="5usoWIKLLYp" role="2OqNvi">
+                    <node concept="2OqwBi" id="5usoWIKLMBp" role="576Qk">
+                      <node concept="1Q6Npb" id="5usoWIKLMiH" role="2Oq$k0" />
+                      <node concept="2SmgA7" id="5usoWIKLN0x" role="2OqNvi">
+                        <ref role="2SmgA8" to="yz9a:78Ts1sksSoD" resolve="TestHelperFunctionAnnotation" />
+                      </node>
+                    </node>
                   </node>
                 </node>
                 <node concept="3$u5V9" id="5usoWIKpMng" role="2OqNvi">
