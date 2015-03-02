@@ -82,7 +82,7 @@
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
       </concept>
-      <concept id="4459718605982051985" name="com.mbeddr.core.util.structure.DoNothingReportingStrategy" flags="ng" index="2Q9Fjw" />
+      <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
@@ -356,7 +356,7 @@
       </node>
     </node>
     <node concept="2Q9Fgs" id="3R$6B6bKOLL" role="2Q9xDr">
-      <node concept="2Q9Fjw" id="3R$6B6bM3Rk" role="2Q9FjI" />
+      <node concept="2Q9FjX" id="5usoWIJXoBm" role="2Q9FjI" />
     </node>
   </node>
 </model>
