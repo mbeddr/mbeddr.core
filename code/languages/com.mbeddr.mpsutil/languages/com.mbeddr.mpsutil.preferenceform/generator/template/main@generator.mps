@@ -5890,7 +5890,7 @@
       </node>
       <node concept="3clFbS" id="hI3nsvK" role="3clF47">
         <node concept="XkiVB" id="X7OD3WyVHY" role="3cqZAp">
-          <ref role="37wK5l" to="rh18:X7OD3WtC7A" resolve="PreferenceFormProjectConfigurableBase" />
+          <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
           <node concept="37vLTw" id="X7OD3WyVZ8" role="37wK5m">
             <ref role="3cqZAo" node="hI3nsvN" resolve="project" />
           </node>
