@@ -139,6 +139,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -689,6 +690,29 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2odcu8C2lUv" role="3cqZAp">
+          <node concept="3clFbS" id="2odcu8C2lUx" role="3clFbx">
+            <node concept="lc7rE" id="2odcu8C2zfw" role="3cqZAp">
+              <node concept="l9hG8" id="2odcu8C2zfQ" role="lcghm">
+                <node concept="2OqwBi" id="2odcu8C2zmw" role="lb14g">
+                  <node concept="117lpO" id="2odcu8C2zh4" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="2odcu8C2$d$" role="2OqNvi">
+                    <ref role="3Tt5mk" to="c4fa:2I09F8VK$gF" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2odcu8C2yWB" role="3clFbw">
+            <node concept="2OqwBi" id="2odcu8C2mnV" role="2Oq$k0">
+              <node concept="117lpO" id="2odcu8C2lYn" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2odcu8C2yvN" role="2OqNvi">
+                <ref role="3Tt5mk" to="c4fa:2I09F8VK$gF" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="2odcu8C2zbz" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -1389,7 +1413,6 @@
     <ref role="WuzLi" to="c4fa:1iWV611dFzA" resolve="ElsePart" />
     <node concept="11bSqf" id="1iWV611dLHd" role="11c4hB">
       <node concept="3clFbS" id="1iWV611dLHe" role="2VODD2">
-        <node concept="1bpajm" id="1iWV611edGj" role="3cqZAp" />
         <node concept="lc7rE" id="1iWV611dRq0" role="3cqZAp">
           <node concept="la8eA" id="1iWV611dRqk" role="lcghm">
             <property role="lacIc" value=" else" />
