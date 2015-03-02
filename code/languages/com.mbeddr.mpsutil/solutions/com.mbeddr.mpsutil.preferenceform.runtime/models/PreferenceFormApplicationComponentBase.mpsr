@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model modelUID="r:7c73bcc0-050a-46cb-bba5-d10598f1b9f2(com.mbeddr.mpsutil.preferenceform.runtime)" content="root">
+  <persistence version="8" />
+  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="yes" />
+  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="yes" />
+  <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="1101080154068235160" nodeInfo="ig">
+    <property name="abstractClass" nameId="tpee.1075300953594" value="true" />
+    <property name="name" nameId="tpck.1169194664001" value="PreferenceFormApplicationComponentBase" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="component" />
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="1101080154068235207" nodeInfo="igu">
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="1101080154068235209" nodeInfo="in" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.ProtectedVisibility" typeId="tpee.1146644641414" id="1101080154068235218" nodeInfo="nn" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="1101080154068235211" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.SuperConstructorInvocation" typeId="tpee.1070475587102" id="1101080154068235231" nodeInfo="nn">
+          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="~BaseProjectPrefsComponent%d&lt;init&gt;(com%dintellij%dopenapi%dproject%dProject)" resolveInfo="AbstractPreferenceFormComponent" />
+        </node>
+      </node>
+    </node>
+    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="1101080154068235161" nodeInfo="nn" />
+    <node role="superclass" roleId="tpee.1165602531693" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="1101080154068235197" nodeInfo="in">
+      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="~BaseProjectPrefsComponent" resolveInfo="AbstractPreferenceFormComponent" />
+    </node>
+  </root>
+</model>
+
