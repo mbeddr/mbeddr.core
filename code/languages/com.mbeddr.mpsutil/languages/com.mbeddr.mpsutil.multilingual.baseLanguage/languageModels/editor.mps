@@ -247,6 +247,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="richstring" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="tnjx.9087294576174751931" resolveInfo="MultilingualInlineFormat" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3354025285337569587" nodeInfo="nn">
+      <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="qnem.902624672035655042" resolveInfo="RichtextRichContent" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3354025285337569588" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value="%" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="3354025285337569589" nodeInfo="nn">
