@@ -9,5 +9,8 @@
   <dependencies>
     <dependency reexport="true">23f985f2-965f-4af1-aee8-a32677429514(com.mbeddr.mpsutil.multilingual.common)</dependency>
   </dependencies>
+  <languageVersions>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="0" />
+  </languageVersions>
 </solution>
 

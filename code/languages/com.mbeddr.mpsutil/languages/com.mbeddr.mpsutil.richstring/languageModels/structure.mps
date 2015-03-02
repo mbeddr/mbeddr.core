@@ -1,1092 +1,1133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:f00bea3f-6dce-47ed-ac44-0f6df7d12ced(com.mbeddr.mpsutil.richstring.structure)">
-  <persistence version="8" />
-  <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
-  <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" />
-  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="spci" modelUID="r:f00bea3f-6dce-47ed-ac44-0f6df7d12ced(com.mbeddr.mpsutil.richstring.structure)" version="-1" implicit="yes" />
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337049262" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="RichString" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="'''" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3354025285337210729" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="text" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="87nw.2557074442922380897" resolveInfo="Text" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337211097" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="RichStringType" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="richstring" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790189" resolveInfo="Type" />
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3354025285337284188" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="IRichStringContent" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337284240" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="87nw.2557074442922392300" resolveInfo="IWord" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3354025285337287693" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="IInlineExpression" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expression" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337287720" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337284188" resolveInfo="IRichStringContent" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3354025285337287722" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="IInlineFormat" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.format" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337289101" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337284188" resolveInfo="IRichStringContent" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337290501" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="InlineVariableReference" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="${variableDeclaration}" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expression" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068498886296" resolveInfo="VariableReference" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337290502" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337287693" resolveInfo="IInlineExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337528500" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="InlineExpression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="${" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expression" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3354025285337528503" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="expression" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337528501" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337287693" resolveInfo="IInlineExpression" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3354025285337560145" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversionflag" />
-    <property name="name" nameId="tpck.1169194664001" value="IFormatConversionFlag" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285339318171" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285339224139" resolveInfo="IInlineFormatDescendants" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3354025285337560226" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion" />
-    <property name="name" nameId="tpck.1169194664001" value="IFormatConversion" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285339224194" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285339224139" resolveInfo="IInlineFormatDescendants" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337560355" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversionflag" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionFlagLeftJustified" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="-" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="left justified" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337560356" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560145" resolveInfo="IFormatConversionFlag" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561461" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560999" resolveInfo="IFormatConversionFlagGeneral" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561469" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561075" resolveInfo="IFormatConversionFlagCharacter" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561479" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561156" resolveInfo="IFormatConversionFlagIntegral" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561491" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561280" resolveInfo="IFormatConversionFlagFloatingPoint" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561505" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561410" resolveInfo="IFormatConversionFlagDateTime" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532375436913" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532375436894" resolveInfo="IFormatConversionFlagNeedsWidth" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337560381" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversionflag" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionFlagAlternateForm" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="#" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="conversion-dependent alternate form " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337560382" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560145" resolveInfo="IFormatConversionFlag" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561567" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560999" resolveInfo="IFormatConversionFlagGeneral" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561626" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561156" resolveInfo="IFormatConversionFlagIntegral" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561644" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561280" resolveInfo="IFormatConversionFlagFloatingPoint" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337560434" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversionflag" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionFlagAlwaysIncludeSign" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="+" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="always include a sign " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337560435" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560145" resolveInfo="IFormatConversionFlag" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561653" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561156" resolveInfo="IFormatConversionFlagIntegral" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561661" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561280" resolveInfo="IFormatConversionFlagFloatingPoint" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532375502571" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532375502563" resolveInfo="IFormatConversionFlagPrefixesValue" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337560518" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversionflag" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionFlagLeadingSpace" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value=" " />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="include a leading space for positive values " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337560519" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560145" resolveInfo="IFormatConversionFlag" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561675" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561156" resolveInfo="IFormatConversionFlagIntegral" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561683" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561280" resolveInfo="IFormatConversionFlagFloatingPoint" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532375502582" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532375502563" resolveInfo="IFormatConversionFlagPrefixesValue" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337560608" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversionflag" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionFlagZeroPadding" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="0" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="zero-padding" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337560639" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560145" resolveInfo="IFormatConversionFlag" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561691" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561156" resolveInfo="IFormatConversionFlagIntegral" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561699" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561280" resolveInfo="IFormatConversionFlagFloatingPoint" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532375436927" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532375436894" resolveInfo="IFormatConversionFlagNeedsWidth" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337560734" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversionflag" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionFlagLocaleGroupingSeparators" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="," />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="locale-specific grouping separators" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337560735" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560145" resolveInfo="IFormatConversionFlag" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561707" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561156" resolveInfo="IFormatConversionFlagIntegral" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561720" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561280" resolveInfo="IFormatConversionFlagFloatingPoint" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337560770" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversionflag" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionFlagEncloseNegativeInParentheses" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="(" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="enclose negative numbers in parentheses" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337560839" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560145" resolveInfo="IFormatConversionFlag" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561728" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561156" resolveInfo="IFormatConversionFlagIntegral" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561736" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561280" resolveInfo="IFormatConversionFlagFloatingPoint" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3354025285337560999" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversionflag" />
-    <property name="name" nameId="tpck.1169194664001" value="IFormatConversionFlagGeneral" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561036" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560145" resolveInfo="IFormatConversionFlag" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3354025285337561075" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversionflag" />
-    <property name="name" nameId="tpck.1169194664001" value="IFormatConversionFlagCharacter" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561114" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560145" resolveInfo="IFormatConversionFlag" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3354025285337561156" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversionflag" />
-    <property name="name" nameId="tpck.1169194664001" value="IFormatConversionFlagIntegral" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561237" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560145" resolveInfo="IFormatConversionFlag" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3354025285337561280" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversionflag" />
-    <property name="name" nameId="tpck.1169194664001" value="IFormatConversionFlagFloatingPoint" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561365" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560145" resolveInfo="IFormatConversionFlag" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3354025285337561410" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversionflag" />
-    <property name="name" nameId="tpck.1169194664001" value="IFormatConversionFlagDateTime" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561411" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560145" resolveInfo="IFormatConversionFlag" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3354025285337561862" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.general" />
-    <property name="name" nameId="tpck.1169194664001" value="IFormatConversionGeneral" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561863" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560226" resolveInfo="IFormatConversion" />
-    </node>
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532372100731" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532372061827" resolveInfo="IInlineFormatDescendantsGeneral" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337561869" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.general" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionGeneralBoolean" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="b" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="If the argument arg is null, then the result is &quot;false&quot;. If arg is a boolean or Boolean, then the result is the string returned by String.valueOf(arg). Otherwise, the result is &quot;true&quot;. " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337561976" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561862" resolveInfo="IFormatConversionGeneral" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337562053" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.general" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionGeneralBooleanUpperCase" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="B" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="(uppercased) If the argument arg is null, then the result is &quot;false&quot;. If arg is a boolean or Boolean, then the result is the string returned by String.valueOf(arg). Otherwise, the result is &quot;true&quot;. " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337562054" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561862" resolveInfo="IFormatConversionGeneral" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337562128" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.general" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionGeneralHashCode" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="h" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="If the argument arg is null, then the result is &quot;null&quot;. Otherwise, the result is obtained by invoking Integer.toHexString(arg.hashCode()). " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337562129" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561862" resolveInfo="IFormatConversionGeneral" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337562210" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.general" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionGeneralHashCodeUpperCase" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="(uppercased) If the argument arg is null, then the result is &quot;null&quot;. Otherwise, the result is obtained by invoking Integer.toHexString(arg.hashCode()). " />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="H" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337562211" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561862" resolveInfo="IFormatConversionGeneral" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337562289" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.general" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionGeneralString" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="s" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="If the argument arg is null, then the result is &quot;null&quot;. If arg implements Formattable, then arg.formatTo is invoked. Otherwise, the result is obtained by invoking arg.toString(). " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337562290" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561862" resolveInfo="IFormatConversionGeneral" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337562375" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.general" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionGeneralStringUpperCase" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="S" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="(uppercased) If the argument arg is null, then the result is &quot;null&quot;. If arg implements Formattable, then arg.formatTo is invoked. Otherwise, the result is obtained by invoking arg.toString(). " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337562376" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337561862" resolveInfo="IFormatConversionGeneral" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3354025285337562697" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.character" />
-    <property name="name" nameId="tpck.1169194664001" value="IFormatConversionCharacter" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337562698" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560226" resolveInfo="IFormatConversion" />
-    </node>
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532372100710" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532372061794" resolveInfo="IInlineFormatDescendantsCharacter" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337562708" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.character" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionCharacterUnicode" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="c" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="The result is a Unicode character " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337562709" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337562697" resolveInfo="IFormatConversionCharacter" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337562800" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.character" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionCharacterUnicodeUpperCase" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="C" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="(uppercased) The result is a Unicode character " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337562801" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337562697" resolveInfo="IFormatConversionCharacter" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3354025285337562889" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.integral" />
-    <property name="name" nameId="tpck.1169194664001" value="IFormatConversionIntegral" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337562890" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560226" resolveInfo="IFormatConversion" />
-    </node>
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532372100738" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532372061835" resolveInfo="IInlineFormatDescendantsIntegral" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337562900" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.integral" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionIntegralDecimal" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="d" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="The result is formatted as a decimal integer " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337562901" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337562889" resolveInfo="IFormatConversionIntegral" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337562990" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.integral" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionIntegralOctal" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="o" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="The result is formatted as an octal integer " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337562991" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337562889" resolveInfo="IFormatConversionIntegral" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337563082" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.integral" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionIntegralHexadecimal" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="x" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="The result is formatted as a hexadecimal integer " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337563083" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337562889" resolveInfo="IFormatConversionIntegral" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337563184" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.integral" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionIntegralHexadecimalUpperCase" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="X" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="(uppercased) The result is formatted as a hexadecimal integer " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337563185" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337562889" resolveInfo="IFormatConversionIntegral" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3354025285337563283" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.floatingpoint" />
-    <property name="name" nameId="tpck.1169194664001" value="IFormatConversionFloatingPoint" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337563284" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560226" resolveInfo="IFormatConversion" />
-    </node>
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532372100724" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532372061819" resolveInfo="IInlineFormatDescendantsFloatingPoint" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337563389" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.floatingpoint" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionFloatingPointScientific" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="e" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="The result is formatted as a decimal number in computerized scientific notation " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337563390" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337563283" resolveInfo="IFormatConversionFloatingPoint" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337563497" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.floatingpoint" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionFloatingPointScientificUpperCase" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="E" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="(uppercased) The result is formatted as a decimal number in computerized scientific notation " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337563498" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337563283" resolveInfo="IFormatConversionFloatingPoint" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337563602" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.floatingpoint" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionFloatingPointDecimal" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="f" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="The result is formatted as a decimal number " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337563603" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337563283" resolveInfo="IFormatConversionFloatingPoint" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337563706" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.floatingpoint" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionFloatingPointDynamic" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="g" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="The result is formatted using computerized scientific notation or decimal format, depending on the precision and the value after rounding" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337563809" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337563283" resolveInfo="IFormatConversionFloatingPoint" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337564025" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.floatingpoint" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionFloatingPointDynamicUpperCase" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="G" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="(uppercased) The result is formatted using computerized scientific notation or decimal format, depending on the precision and the value after rounding" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337564026" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337563283" resolveInfo="IFormatConversionFloatingPoint" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337564136" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.floatingpoint" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionFloatingPointHexadecimal" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="a" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="The result is formatted as a hexadecimal floating-point number with a significand and an exponent " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337564137" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337563283" resolveInfo="IFormatConversionFloatingPoint" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8393429337722691361" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8393429337722681950" resolveInfo="IFormatConversionFloatingPointNoBigDecimal" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337564254" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.floatingpoint" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionFloatingPointHexadecimalUpperCase" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="A" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="(uppercased) The result is formatted as a hexadecimal floating-point number with a significand and an exponent " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337564255" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337563283" resolveInfo="IFormatConversionFloatingPoint" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8393429337722703154" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8393429337722681950" resolveInfo="IFormatConversionFloatingPointNoBigDecimal" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3354025285337564478" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime" />
-    <property name="name" nameId="tpck.1169194664001" value="IFormatConversionDateTime" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337564479" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560226" resolveInfo="IFormatConversion" />
-    </node>
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532372100717" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532372061805" resolveInfo="IInlineFormatDescendantsDateTime" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337564600" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionDateTime" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="t" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="date and time conversion characters" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7716961532373442892" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="specificConversion" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7716961532373406518" resolveInfo="IDateTimeSpecificConversion" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337564713" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337564478" resolveInfo="IFormatConversionDateTime" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337564836" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionDateTimeUpperCase" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="T" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="(uppercased) date and time conversion characters" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3354025285337564600" resolveInfo="ConversionDateTime" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337564837" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337564478" resolveInfo="IFormatConversionDateTime" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3354025285337570581" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.width" />
-    <property name="name" nameId="tpck.1169194664001" value="IFormatConversionWidth" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285339224191" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285339224139" resolveInfo="IInlineFormatDescendants" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3354025285337570588" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.precision" />
-    <property name="name" nameId="tpck.1169194664001" value="IFormatConversionPrecision" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285339411856" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285339224139" resolveInfo="IInlineFormatDescendants" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337570884" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.precision" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionPrecisionInteger" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="." />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="3354025285337570887" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="precision" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337570885" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337570588" resolveInfo="IFormatConversionPrecision" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337570946" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.width" />
-    <property name="name" nameId="tpck.1169194664001" value="ConversionWidthInteger" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="3354025285337570949" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="width" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3354025285337570947" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337570581" resolveInfo="IFormatConversionWidth" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3354025285337569334" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.format" />
-    <property name="name" nameId="tpck.1169194664001" value="InlineFormat" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
-    <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="%" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7716961532366136821" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="flags" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="3354025285337560145" resolveInfo="IFormatConversionFlag" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7716961532366136822" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="width" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="3354025285337570581" resolveInfo="IFormatConversionWidth" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3354025285337570729" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="precision" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="3354025285337570588" resolveInfo="IFormatConversionPrecision" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7716961532366136823" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="conversion" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="3354025285337560226" resolveInfo="IFormatConversion" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7716961532366136824" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="expression" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532366136803" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337287722" resolveInfo="IInlineFormat" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3354025285339224139" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.descendants" />
-    <property name="name" nameId="tpck.1169194664001" value="IInlineFormatDescendants" />
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7716961532366204282" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.category" />
-    <property name="name" nameId="tpck.1169194664001" value="IInlineFormatCategory" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532366285429" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532366204382" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.category" />
-    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryUnknown" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532366204383" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532366204282" resolveInfo="IInlineFormatCategory" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532366204306" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.category" />
-    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryIntegralInt" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532366204315" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532366204282" resolveInfo="IInlineFormatCategory" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532366204348" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.category" />
-    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryGeneralObject" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532366204349" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532366204282" resolveInfo="IInlineFormatCategory" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532366204358" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.category" />
-    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryFloatingPointDouble" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532366204359" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532366204282" resolveInfo="IInlineFormatCategory" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532366204366" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.category" />
-    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryDateTime" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532366204367" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532366204282" resolveInfo="IInlineFormatCategory" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532366204374" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.category" />
-    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryCharacter" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532366204375" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532366204282" resolveInfo="IInlineFormatCategory" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7716961532372061794" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.descendants" />
-    <property name="name" nameId="tpck.1169194664001" value="IInlineFormatDescendantsCharacter" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532372061795" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285339224139" resolveInfo="IInlineFormatDescendants" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7716961532372061805" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.descendants" />
-    <property name="name" nameId="tpck.1169194664001" value="IInlineFormatDescendantsDateTime" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532372061806" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285339224139" resolveInfo="IInlineFormatDescendants" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7716961532372061819" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.descendants" />
-    <property name="name" nameId="tpck.1169194664001" value="IInlineFormatDescendantsFloatingPoint" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532372061820" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285339224139" resolveInfo="IInlineFormatDescendants" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7716961532372061827" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.descendants" />
-    <property name="name" nameId="tpck.1169194664001" value="IInlineFormatDescendantsGeneral" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532372061828" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285339224139" resolveInfo="IInlineFormatDescendants" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7716961532372061835" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.descendants" />
-    <property name="name" nameId="tpck.1169194664001" value="IInlineFormatDescendantsIntegral" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532372061836" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285339224139" resolveInfo="IInlineFormatDescendants" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7716961532373406518" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime" />
-    <property name="name" nameId="tpck.1169194664001" value="IDateTimeSpecificConversion" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373407054" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532372061805" resolveInfo="IInlineFormatDescendantsDateTime" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7716961532373406679" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
-    <property name="name" nameId="tpck.1169194664001" value="ITimeSpecificConversion" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373406680" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406518" resolveInfo="IDateTimeSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373420368" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
-    <property name="name" nameId="tpck.1169194664001" value="TimeConversionHour24hPadded" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="H" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Hour of the day for the 24-hour clock, formatted as two digits with a leading zero as necessary i.e. 00 - 23. " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373420369" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373420677" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
-    <property name="name" nameId="tpck.1169194664001" value="TimeConversionHour12hPadded" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="I" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Hour for the 12-hour clock, formatted as two digits with a leading zero as necessary, i.e. 01 - 12. " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373420678" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373421023" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
-    <property name="name" nameId="tpck.1169194664001" value="TimeConversionHour24h" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="k" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Hour of the day for the 24-hour clock, i.e. 0 - 23. " />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373421024" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373421373" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
-    <property name="name" nameId="tpck.1169194664001" value="TimeConversionHour12h" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Hour for the 12-hour clock, i.e. 1 - 12. " />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="l" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373421374" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373421727" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
-    <property name="name" nameId="tpck.1169194664001" value="TimeConversionMinutePadded" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Minute within the hour formatted as two digits with a leading zero as necessary, i.e. 00 - 59. " />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="M" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373421728" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373422085" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
-    <property name="name" nameId="tpck.1169194664001" value="TimeConversionSecondPadded" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Seconds within the minute, formatted as two digits with a leading zero as necessary, i.e. 00 - 60." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="S" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373422086" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373422447" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
-    <property name="name" nameId="tpck.1169194664001" value="TimeConversionMillisecondPadded" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Millisecond within the second formatted as three digits with leading zeros as necessary, i.e. 000 - 999. " />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="L" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373422448" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373422813" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
-    <property name="name" nameId="tpck.1169194664001" value="TimeConversionNanosecondPadded" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Nanosecond within the second, formatted as nine digits with leading zeros as necessary, i.e. 000000000 - 999999999." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="N" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373422814" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373423363" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
-    <property name="name" nameId="tpck.1169194664001" value="TimeConversionAmPm" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Locale-specific morning or afternoon marker in lower case, e.g.&quot;am&quot; or &quot;pm&quot;." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="p" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373423364" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373423919" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
-    <property name="name" nameId="tpck.1169194664001" value="TimeConversionTimeZoneOffset" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="RFC 822 style numeric time zone offset from GMT, e.g. -0800." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="z" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373423920" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373424297" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
-    <property name="name" nameId="tpck.1169194664001" value="TimeConversionTimeZoneAbbreviation" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="A string representing the abbreviation for the time zone." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Z" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373424298" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373424679" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
-    <property name="name" nameId="tpck.1169194664001" value="TimeConversionSecondSinceEpoch" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Seconds since the beginning of the epoch starting at 1 January 1970 00:00:00 UTC." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="s" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373424680" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373425065" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.time" />
-    <property name="name" nameId="tpck.1169194664001" value="TimeConversionMillisecondSinceEpoch" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Milliseconds since the beginning of the epoch starting at 1 January 1970 00:00:00 UTC." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Q" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373425066" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406679" resolveInfo="ITimeSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7716961532373426926" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
-    <property name="name" nameId="tpck.1169194664001" value="IDateSpecificConversion" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373426927" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406518" resolveInfo="IDateTimeSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373428847" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
-    <property name="name" nameId="tpck.1169194664001" value="DateConversionMonthNameFull" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Locale-specific full month name, e.g. &quot;January&quot;, &quot;February&quot;. " />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="B" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373428848" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373429245" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
-    <property name="name" nameId="tpck.1169194664001" value="DateConversionMonthNameAbbreviated" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Locale-specific abbreviated month name, e.g. &quot;Jan&quot;, &quot;Feb&quot;. " />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="b" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373429246" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373429647" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
-    <property name="name" nameId="tpck.1169194664001" value="DateConversionMonthNameAbbreviatedAlt" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Locale-specific abbreviated month name, e.g. &quot;Jan&quot;, &quot;Feb&quot;. " />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="h" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373429648" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373429855" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
-    <property name="name" nameId="tpck.1169194664001" value="DateConversionDayOfWeekNameFull" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Locale-specific full name of the day of the week, e.g. &quot;Sunday&quot;, &quot;Monday&quot;." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="A" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373429856" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373430265" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
-    <property name="name" nameId="tpck.1169194664001" value="DateConversionDayOfWeekNameShort" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value=" \tLocale-specific short name of the day of the week, e.g. &quot;Sun&quot;, &quot;Mon&quot;." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="a" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373430266" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373430881" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
-    <property name="name" nameId="tpck.1169194664001" value="DateConversionYear2digitPadded" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Last two digits of the year, formatted with leading zeros as necessary, i.e. 00 - 99." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="y" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373430882" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373431503" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
-    <property name="name" nameId="tpck.1169194664001" value="DateConversionYear4digitPadded" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Year, formatted as at least four digits with leading zeros as necessary, e.g. 0092." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Y" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373431504" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373432131" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
-    <property name="name" nameId="tpck.1169194664001" value="DateConversionYear2digitDividedPadded" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Four-digit year divided by 100, formatted as two digits with leading zero as necessary, i.e. 00 - 99." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="C" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373432132" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373432765" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
-    <property name="name" nameId="tpck.1169194664001" value="DateConversionDayOfYearPadded" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Day of year, formatted as three digits with leading zeros as necessary, e.g. 001 - 366." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="j" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373432766" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373433405" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
-    <property name="name" nameId="tpck.1169194664001" value="DateConversionMonthPadded" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Month, formatted as two digits with leading zeros as necessary, i.e. 01 - 13. " />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="m" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373433406" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373433627" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
-    <property name="name" nameId="tpck.1169194664001" value="DateConversionDayOfMonthPadded" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Day of month, formatted as two digits with leading zeros as necessary, i.e. 01 - 31." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="d" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373433628" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373434065" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.date" />
-    <property name="name" nameId="tpck.1169194664001" value="DateConversionDayOfMonth" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Day of month, formatted as two digits, i.e. 1 - 31." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="e" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373434066" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373426926" resolveInfo="IDateSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7716961532373434507" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.composition" />
-    <property name="name" nameId="tpck.1169194664001" value="IDateTimeCompositionConversion" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373434508" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373406518" resolveInfo="IDateTimeSpecificConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373434957" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.composition" />
-    <property name="name" nameId="tpck.1169194664001" value="DateConversionCompositionHourMinute24h" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Time formatted for the 24-hour clock as &quot;%tH:%tM&quot;." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="R" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373434958" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373434507" resolveInfo="IDateTimeCompositionConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373435407" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.composition" />
-    <property name="name" nameId="tpck.1169194664001" value="DateConversionCompositionHourMinuteSecond24h" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Time formatted for the 24-hour clock as &quot;%tH:%tM:%tS&quot;." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="T" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373435408" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373434507" resolveInfo="IDateTimeCompositionConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373435861" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.composition" />
-    <property name="name" nameId="tpck.1169194664001" value="DateConversionCompositionHourMinuteSecond12h" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Time formatted for the 12-hour clock as &quot;%tI:%tM:%tS %Tp&quot;." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="r" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373435862" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373434507" resolveInfo="IDateTimeCompositionConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373436543" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.composition" />
-    <property name="name" nameId="tpck.1169194664001" value="DateConversionCompositionYearMonthDayAmerican" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Date formatted as &quot;%tm/%td/%ty&quot;." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="D" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373436544" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373434507" resolveInfo="IDateTimeCompositionConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373437005" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.composition" />
-    <property name="name" nameId="tpck.1169194664001" value="DateConversionCompositionYearMonthDayISO" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="ISO 8601 complete date formatted as &quot;%tY-%tm-%td&quot;." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="F" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373437006" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373434507" resolveInfo="IDateTimeCompositionConversion" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7716961532373437699" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion.datetime.composition" />
-    <property name="name" nameId="tpck.1169194664001" value="DateConversionCompositionYearMonthDayRFC" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Date and time formatted as &quot;%ta %tb %td %tT %tZ %tY&quot;, e.g. &quot;Sun Jul 20 16:17:00 EDT 1969&quot;." />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="c" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532373437700" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532373434507" resolveInfo="IDateTimeCompositionConversion" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7716961532375436894" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversionflag" />
-    <property name="name" nameId="tpck.1169194664001" value="IFormatConversionFlagNeedsWidth" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532375436895" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560145" resolveInfo="IFormatConversionFlag" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7716961532375502563" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversionflag" />
-    <property name="name" nameId="tpck.1169194664001" value="IFormatConversionFlagPrefixesValue" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7716961532375502564" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337560145" resolveInfo="IFormatConversionFlag" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6473098541522083696" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.category" />
-    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryIntegralLong" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6473098541522083697" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532366204282" resolveInfo="IInlineFormatCategory" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6473098541524116846" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.category" />
-    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryGeneralBool" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6473098541524116847" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532366204282" resolveInfo="IInlineFormatCategory" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6473098541525717825" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.category" />
-    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryIntegralBigInt" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6473098541525717826" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532366204282" resolveInfo="IInlineFormatCategory" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8393429337719318150" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.category" />
-    <property name="name" nameId="tpck.1169194664001" value="FormatCategoryFloatingPointBigDecimal" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8393429337719318151" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7716961532366204282" resolveInfo="IInlineFormatCategory" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8393429337722681950" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="format.conversion" />
-    <property name="name" nameId="tpck.1169194664001" value="IFormatConversionFloatingPointNoBigDecimal" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8393429337722681951" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3354025285337563283" resolveInfo="IFormatConversionFloatingPoint" />
-    </node>
-  </root>
+<model ref="442d3b7d-fe4a-4293-a7c1-6744d440ecaa/r:f00bea3f-6dce-47ed-ac44-0f6df7d12ced(com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.structure)">
+  <persistence version="9" />
+  <languages>
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+  </languages>
+  <imports>
+    <import index="tpee" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.structure)" />
+    <import index="87nw" ref="92d2ea16-5a42-4fdf-a676-c7604efe3504/r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext/de.slisson.mps.richtext.structure)" />
+    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
+      </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
+      <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
+      </concept>
+      <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
+        <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
+        <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <reference id="1071599976176" name="target" index="20lvS9" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1TIwiD" id="2UbT3C4cmyI">
+    <property role="TrG5h" value="RichString" />
+    <property role="34LRSv" value="'''" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="2UbT3C4cXXD" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4cY3p">
+    <property role="TrG5h" value="RichStringType" />
+    <property role="34LRSv" value="richstring" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+  </node>
+  <node concept="PlHQZ" id="2UbT3C4dfTs">
+    <property role="TrG5h" value="IRichStringContent" />
+    <node concept="PrWs8" id="2UbT3C4dfUg" role="PrDN$">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2UbT3C4dgKd">
+    <property role="TrG5h" value="IInlineExpression" />
+    <property role="3GE5qa" value="expression" />
+    <node concept="PrWs8" id="2UbT3C4dgKC" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4dfTs" resolve="IRichStringContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2UbT3C4dgKE">
+    <property role="TrG5h" value="IInlineFormat" />
+    <property role="3GE5qa" value="format.format" />
+    <node concept="PrWs8" id="2UbT3C4dh6d" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4dfTs" resolve="IRichStringContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4dhs5">
+    <property role="TrG5h" value="InlineVariableReference" />
+    <property role="34LRSv" value="${variableDeclaration}" />
+    <property role="3GE5qa" value="expression" />
+    <ref role="1TJDcQ" to="tpee:fz7vLUo" resolve="VariableReference" />
+    <node concept="PrWs8" id="2UbT3C4dhs6" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4dgKd" resolve="IInlineExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ebyO">
+    <property role="TrG5h" value="InlineExpression" />
+    <property role="34LRSv" value="${" />
+    <property role="3GE5qa" value="expression" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="2UbT3C4ebyR" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ebyP" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4dgKd" resolve="IInlineExpression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2UbT3C4ejhh">
+    <property role="3GE5qa" value="format.conversionflag" />
+    <property role="TrG5h" value="IFormatConversionFlag" />
+    <node concept="PrWs8" id="2UbT3C4l0ur" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4kDxb" resolve="IInlineFormatDescendants" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2UbT3C4ejiy">
+    <property role="3GE5qa" value="format.conversion" />
+    <property role="TrG5h" value="IFormatConversion" />
+    <node concept="PrWs8" id="2UbT3C4kDy2" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4kDxb" resolve="IInlineFormatDescendants" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ejkz">
+    <property role="3GE5qa" value="format.conversionflag" />
+    <property role="TrG5h" value="ConversionFlagLeftJustified" />
+    <property role="34LRSv" value="-" />
+    <property role="R4oN_" value="left justified" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ejk$" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejhh" resolve="IFormatConversionFlag" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ej_P" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejuB" resolve="IFormatConversionFlagGeneral" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ej_X" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejvN" resolve="IFormatConversionFlagCharacter" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ejA7" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejx4" resolve="IFormatConversionFlagIntegral" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ejAj" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejz0" resolve="IFormatConversionFlagFloatingPoint" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ejAx" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ej_2" resolve="IFormatConversionFlagDateTime" />
+    </node>
+    <node concept="PrWs8" id="6Go9U2y_STL" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2y_STu" resolve="IFormatConversionFlagNeedsWidth" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ejkX">
+    <property role="3GE5qa" value="format.conversionflag" />
+    <property role="TrG5h" value="ConversionFlagAlternateForm" />
+    <property role="34LRSv" value="#" />
+    <property role="R4oN_" value="conversion-dependent alternate form " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ejkY" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejhh" resolve="IFormatConversionFlag" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ejBv" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejuB" resolve="IFormatConversionFlagGeneral" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ejCq" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejx4" resolve="IFormatConversionFlagIntegral" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ejCG" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejz0" resolve="IFormatConversionFlagFloatingPoint" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ejlM">
+    <property role="3GE5qa" value="format.conversionflag" />
+    <property role="TrG5h" value="ConversionFlagAlwaysIncludeSign" />
+    <property role="34LRSv" value="+" />
+    <property role="R4oN_" value="always include a sign " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ejlN" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejhh" resolve="IFormatConversionFlag" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ejCP" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejx4" resolve="IFormatConversionFlagIntegral" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ejCX" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejz0" resolve="IFormatConversionFlagFloatingPoint" />
+    </node>
+    <node concept="PrWs8" id="6Go9U2yA8VF" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yA8Vz" resolve="IFormatConversionFlagPrefixesValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ejn6">
+    <property role="3GE5qa" value="format.conversionflag" />
+    <property role="TrG5h" value="ConversionFlagLeadingSpace" />
+    <property role="34LRSv" value=" " />
+    <property role="R4oN_" value="include a leading space for positive values " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ejn7" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejhh" resolve="IFormatConversionFlag" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ejDb" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejx4" resolve="IFormatConversionFlagIntegral" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ejDj" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejz0" resolve="IFormatConversionFlagFloatingPoint" />
+    </node>
+    <node concept="PrWs8" id="6Go9U2yA8VQ" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yA8Vz" resolve="IFormatConversionFlagPrefixesValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ejow">
+    <property role="3GE5qa" value="format.conversionflag" />
+    <property role="TrG5h" value="ConversionFlagZeroPadding" />
+    <property role="34LRSv" value="0" />
+    <property role="R4oN_" value="zero-padding" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ejoZ" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejhh" resolve="IFormatConversionFlag" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ejDr" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejx4" resolve="IFormatConversionFlagIntegral" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ejDz" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejz0" resolve="IFormatConversionFlagFloatingPoint" />
+    </node>
+    <node concept="PrWs8" id="6Go9U2y_STZ" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2y_STu" resolve="IFormatConversionFlagNeedsWidth" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ejqu">
+    <property role="3GE5qa" value="format.conversionflag" />
+    <property role="TrG5h" value="ConversionFlagLocaleGroupingSeparators" />
+    <property role="34LRSv" value="," />
+    <property role="R4oN_" value="locale-specific grouping separators" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ejqv" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejhh" resolve="IFormatConversionFlag" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ejDF" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejx4" resolve="IFormatConversionFlagIntegral" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ejDS" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejz0" resolve="IFormatConversionFlagFloatingPoint" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ejr2">
+    <property role="3GE5qa" value="format.conversionflag" />
+    <property role="TrG5h" value="ConversionFlagEncloseNegativeInParentheses" />
+    <property role="34LRSv" value="(" />
+    <property role="R4oN_" value="enclose negative numbers in parentheses" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ejs7" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejhh" resolve="IFormatConversionFlag" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ejE0" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejx4" resolve="IFormatConversionFlagIntegral" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ejE8" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejz0" resolve="IFormatConversionFlagFloatingPoint" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2UbT3C4ejuB">
+    <property role="3GE5qa" value="format.conversionflag" />
+    <property role="TrG5h" value="IFormatConversionFlagGeneral" />
+    <node concept="PrWs8" id="2UbT3C4ejvc" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4ejhh" resolve="IFormatConversionFlag" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2UbT3C4ejvN">
+    <property role="3GE5qa" value="format.conversionflag" />
+    <property role="TrG5h" value="IFormatConversionFlagCharacter" />
+    <node concept="PrWs8" id="2UbT3C4ejwq" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4ejhh" resolve="IFormatConversionFlag" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2UbT3C4ejx4">
+    <property role="3GE5qa" value="format.conversionflag" />
+    <property role="TrG5h" value="IFormatConversionFlagIntegral" />
+    <node concept="PrWs8" id="2UbT3C4ejyl" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4ejhh" resolve="IFormatConversionFlag" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2UbT3C4ejz0">
+    <property role="3GE5qa" value="format.conversionflag" />
+    <property role="TrG5h" value="IFormatConversionFlagFloatingPoint" />
+    <node concept="PrWs8" id="2UbT3C4ej$l" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4ejhh" resolve="IFormatConversionFlag" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2UbT3C4ej_2">
+    <property role="3GE5qa" value="format.conversionflag" />
+    <property role="TrG5h" value="IFormatConversionFlagDateTime" />
+    <node concept="PrWs8" id="2UbT3C4ej_3" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4ejhh" resolve="IFormatConversionFlag" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2UbT3C4ejG6">
+    <property role="3GE5qa" value="format.conversion.general" />
+    <property role="TrG5h" value="IFormatConversionGeneral" />
+    <node concept="PrWs8" id="2UbT3C4ejG7" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4ejiy" resolve="IFormatConversion" />
+    </node>
+    <node concept="PrWs8" id="6Go9U2ypapV" role="PrDN$">
+      <ref role="PrY4T" node="6Go9U2yp0U3" resolve="IInlineFormatDescendantsGeneral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ejGd">
+    <property role="3GE5qa" value="format.conversion.general" />
+    <property role="TrG5h" value="ConversionGeneralBoolean" />
+    <property role="34LRSv" value="b" />
+    <property role="R4oN_" value="If the argument arg is null, then the result is &quot;false&quot;. If arg is a boolean or Boolean, then the result is the string returned by String.valueOf(arg). Otherwise, the result is &quot;true&quot;. " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ejHS" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejG6" resolve="IFormatConversionGeneral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ejJ5">
+    <property role="3GE5qa" value="format.conversion.general" />
+    <property role="TrG5h" value="ConversionGeneralBooleanUpperCase" />
+    <property role="34LRSv" value="B" />
+    <property role="R4oN_" value="(uppercased) If the argument arg is null, then the result is &quot;false&quot;. If arg is a boolean or Boolean, then the result is the string returned by String.valueOf(arg). Otherwise, the result is &quot;true&quot;. " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ejJ6" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejG6" resolve="IFormatConversionGeneral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ejKg">
+    <property role="3GE5qa" value="format.conversion.general" />
+    <property role="TrG5h" value="ConversionGeneralHashCode" />
+    <property role="34LRSv" value="h" />
+    <property role="R4oN_" value="If the argument arg is null, then the result is &quot;null&quot;. Otherwise, the result is obtained by invoking Integer.toHexString(arg.hashCode()). " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ejKh" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejG6" resolve="IFormatConversionGeneral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ejLy">
+    <property role="3GE5qa" value="format.conversion.general" />
+    <property role="TrG5h" value="ConversionGeneralHashCodeUpperCase" />
+    <property role="R4oN_" value="(uppercased) If the argument arg is null, then the result is &quot;null&quot;. Otherwise, the result is obtained by invoking Integer.toHexString(arg.hashCode()). " />
+    <property role="34LRSv" value="H" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ejLz" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejG6" resolve="IFormatConversionGeneral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ejML">
+    <property role="3GE5qa" value="format.conversion.general" />
+    <property role="TrG5h" value="ConversionGeneralString" />
+    <property role="34LRSv" value="s" />
+    <property role="R4oN_" value="If the argument arg is null, then the result is &quot;null&quot;. If arg implements Formattable, then arg.formatTo is invoked. Otherwise, the result is obtained by invoking arg.toString(). " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ejMM" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejG6" resolve="IFormatConversionGeneral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ejO7">
+    <property role="3GE5qa" value="format.conversion.general" />
+    <property role="TrG5h" value="ConversionGeneralStringUpperCase" />
+    <property role="34LRSv" value="S" />
+    <property role="R4oN_" value="(uppercased) If the argument arg is null, then the result is &quot;null&quot;. If arg implements Formattable, then arg.formatTo is invoked. Otherwise, the result is obtained by invoking arg.toString(). " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ejO8" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejG6" resolve="IFormatConversionGeneral" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2UbT3C4ejT9">
+    <property role="3GE5qa" value="format.conversion.character" />
+    <property role="TrG5h" value="IFormatConversionCharacter" />
+    <node concept="PrWs8" id="2UbT3C4ejTa" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4ejiy" resolve="IFormatConversion" />
+    </node>
+    <node concept="PrWs8" id="6Go9U2ypapA" role="PrDN$">
+      <ref role="PrY4T" node="6Go9U2yp0Ty" resolve="IInlineFormatDescendantsCharacter" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ejTk">
+    <property role="3GE5qa" value="format.conversion.character" />
+    <property role="TrG5h" value="ConversionCharacterUnicode" />
+    <property role="34LRSv" value="c" />
+    <property role="R4oN_" value="The result is a Unicode character " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ejTl" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejT9" resolve="IFormatConversionCharacter" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ejUK">
+    <property role="3GE5qa" value="format.conversion.character" />
+    <property role="TrG5h" value="ConversionCharacterUnicodeUpperCase" />
+    <property role="34LRSv" value="C" />
+    <property role="R4oN_" value="(uppercased) The result is a Unicode character " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ejUL" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejT9" resolve="IFormatConversionCharacter" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2UbT3C4ejW9">
+    <property role="3GE5qa" value="format.conversion.integral" />
+    <property role="TrG5h" value="IFormatConversionIntegral" />
+    <node concept="PrWs8" id="2UbT3C4ejWa" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4ejiy" resolve="IFormatConversion" />
+    </node>
+    <node concept="PrWs8" id="6Go9U2ypaq2" role="PrDN$">
+      <ref role="PrY4T" node="6Go9U2yp0Ub" resolve="IInlineFormatDescendantsIntegral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ejWk">
+    <property role="3GE5qa" value="format.conversion.integral" />
+    <property role="TrG5h" value="ConversionIntegralDecimal" />
+    <property role="34LRSv" value="d" />
+    <property role="R4oN_" value="The result is formatted as a decimal integer " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ejWl" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejW9" resolve="IFormatConversionIntegral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ejXI">
+    <property role="3GE5qa" value="format.conversion.integral" />
+    <property role="TrG5h" value="ConversionIntegralOctal" />
+    <property role="34LRSv" value="o" />
+    <property role="R4oN_" value="The result is formatted as an octal integer " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ejXJ" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejW9" resolve="IFormatConversionIntegral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ejZa">
+    <property role="3GE5qa" value="format.conversion.integral" />
+    <property role="TrG5h" value="ConversionIntegralHexadecimal" />
+    <property role="34LRSv" value="x" />
+    <property role="R4oN_" value="The result is formatted as a hexadecimal integer " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ejZb" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejW9" resolve="IFormatConversionIntegral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ek0K">
+    <property role="3GE5qa" value="format.conversion.integral" />
+    <property role="TrG5h" value="ConversionIntegralHexadecimalUpperCase" />
+    <property role="34LRSv" value="X" />
+    <property role="R4oN_" value="(uppercased) The result is formatted as a hexadecimal integer " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ek0L" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ejW9" resolve="IFormatConversionIntegral" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2UbT3C4ek2j">
+    <property role="3GE5qa" value="format.conversion.floatingpoint" />
+    <property role="TrG5h" value="IFormatConversionFloatingPoint" />
+    <node concept="PrWs8" id="2UbT3C4ek2k" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4ejiy" resolve="IFormatConversion" />
+    </node>
+    <node concept="PrWs8" id="6Go9U2ypapO" role="PrDN$">
+      <ref role="PrY4T" node="6Go9U2yp0TV" resolve="IInlineFormatDescendantsFloatingPoint" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ek3X">
+    <property role="3GE5qa" value="format.conversion.floatingpoint" />
+    <property role="TrG5h" value="ConversionFloatingPointScientific" />
+    <property role="34LRSv" value="e" />
+    <property role="R4oN_" value="The result is formatted as a decimal number in computerized scientific notation " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ek3Y" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ek2j" resolve="IFormatConversionFloatingPoint" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ek5D">
+    <property role="3GE5qa" value="format.conversion.floatingpoint" />
+    <property role="TrG5h" value="ConversionFloatingPointScientificUpperCase" />
+    <property role="34LRSv" value="E" />
+    <property role="R4oN_" value="(uppercased) The result is formatted as a decimal number in computerized scientific notation " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ek5E" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ek2j" resolve="IFormatConversionFloatingPoint" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ek7i">
+    <property role="3GE5qa" value="format.conversion.floatingpoint" />
+    <property role="TrG5h" value="ConversionFloatingPointDecimal" />
+    <property role="34LRSv" value="f" />
+    <property role="R4oN_" value="The result is formatted as a decimal number " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ek7j" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ek2j" resolve="IFormatConversionFloatingPoint" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ek8U">
+    <property role="3GE5qa" value="format.conversion.floatingpoint" />
+    <property role="TrG5h" value="ConversionFloatingPointDynamic" />
+    <property role="34LRSv" value="g" />
+    <property role="R4oN_" value="The result is formatted using computerized scientific notation or decimal format, depending on the precision and the value after rounding" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ekax" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ek2j" resolve="IFormatConversionFloatingPoint" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ekdT">
+    <property role="3GE5qa" value="format.conversion.floatingpoint" />
+    <property role="TrG5h" value="ConversionFloatingPointDynamicUpperCase" />
+    <property role="34LRSv" value="G" />
+    <property role="R4oN_" value="(uppercased) The result is formatted using computerized scientific notation or decimal format, depending on the precision and the value after rounding" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ekdU" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ek2j" resolve="IFormatConversionFloatingPoint" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ekfC">
+    <property role="3GE5qa" value="format.conversion.floatingpoint" />
+    <property role="TrG5h" value="ConversionFloatingPointHexadecimal" />
+    <property role="34LRSv" value="a" />
+    <property role="R4oN_" value="The result is formatted as a hexadecimal floating-point number with a significand and an exponent " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ekfD" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ek2j" resolve="IFormatConversionFloatingPoint" />
+    </node>
+    <node concept="PrWs8" id="7hVsScEjpWx" role="PzmwI">
+      <ref role="PrY4T" node="7hVsScEjnDu" resolve="IFormatConversionFloatingPointNoBigDecimal" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ekhu">
+    <property role="3GE5qa" value="format.conversion.floatingpoint" />
+    <property role="TrG5h" value="ConversionFloatingPointHexadecimalUpperCase" />
+    <property role="34LRSv" value="A" />
+    <property role="R4oN_" value="(uppercased) The result is formatted as a hexadecimal floating-point number with a significand and an exponent " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2UbT3C4ekhv" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ek2j" resolve="IFormatConversionFloatingPoint" />
+    </node>
+    <node concept="PrWs8" id="7hVsScEjsOM" role="PzmwI">
+      <ref role="PrY4T" node="7hVsScEjnDu" resolve="IFormatConversionFloatingPointNoBigDecimal" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2UbT3C4ekkY">
+    <property role="3GE5qa" value="format.conversion.datetime" />
+    <property role="TrG5h" value="IFormatConversionDateTime" />
+    <node concept="PrWs8" id="2UbT3C4ekkZ" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4ejiy" resolve="IFormatConversion" />
+    </node>
+    <node concept="PrWs8" id="6Go9U2ypapH" role="PrDN$">
+      <ref role="PrY4T" node="6Go9U2yp0TH" resolve="IInlineFormatDescendantsDateTime" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ekmS">
+    <property role="3GE5qa" value="format.conversion.datetime" />
+    <property role="TrG5h" value="ConversionDateTime" />
+    <property role="34LRSv" value="t" />
+    <property role="R4oN_" value="date and time conversion characters" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6Go9U2yui5c" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="specificConversion" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6Go9U2yu9cQ" resolve="IDateTimeSpecificConversion" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4ekoD" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ekkY" resolve="IFormatConversionDateTime" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4ekq$">
+    <property role="3GE5qa" value="format.conversion.datetime" />
+    <property role="TrG5h" value="ConversionDateTimeUpperCase" />
+    <property role="34LRSv" value="T" />
+    <property role="R4oN_" value="(uppercased) date and time conversion characters" />
+    <ref role="1TJDcQ" node="2UbT3C4ekmS" resolve="ConversionDateTime" />
+    <node concept="PrWs8" id="2UbT3C4ekq_" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4ekkY" resolve="IFormatConversionDateTime" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2UbT3C4elOl">
+    <property role="3GE5qa" value="format.width" />
+    <property role="TrG5h" value="IFormatConversionWidth" />
+    <node concept="PrWs8" id="2UbT3C4kDxZ" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4kDxb" resolve="IInlineFormatDescendants" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2UbT3C4elOs">
+    <property role="3GE5qa" value="format.precision" />
+    <property role="TrG5h" value="IFormatConversionPrecision" />
+    <node concept="PrWs8" id="2UbT3C4lnmg" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4kDxb" resolve="IInlineFormatDescendants" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4elT4">
+    <property role="3GE5qa" value="format.precision" />
+    <property role="TrG5h" value="ConversionPrecisionInteger" />
+    <property role="34LRSv" value="." />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2UbT3C4elT7" role="1TKVEl">
+      <property role="TrG5h" value="precision" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4elT5" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4elOs" resolve="IFormatConversionPrecision" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4elU2">
+    <property role="3GE5qa" value="format.width" />
+    <property role="TrG5h" value="ConversionWidthInteger" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2UbT3C4elU5" role="1TKVEl">
+      <property role="TrG5h" value="width" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="PrWs8" id="2UbT3C4elU3" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4elOl" resolve="IFormatConversionWidth" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2UbT3C4elwQ">
+    <property role="3GE5qa" value="format.format" />
+    <property role="TrG5h" value="InlineFormat" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="%" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6Go9U2y2qnP" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="flags" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2UbT3C4ejhh" resolve="IFormatConversionFlag" />
+    </node>
+    <node concept="1TJgyj" id="6Go9U2y2qnQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="width" />
+      <ref role="20lvS9" node="2UbT3C4elOl" resolve="IFormatConversionWidth" />
+    </node>
+    <node concept="1TJgyj" id="2UbT3C4elQD" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="precision" />
+      <ref role="20lvS9" node="2UbT3C4elOs" resolve="IFormatConversionPrecision" />
+    </node>
+    <node concept="1TJgyj" id="6Go9U2y2qnR" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="conversion" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2UbT3C4ejiy" resolve="IFormatConversion" />
+    </node>
+    <node concept="1TJgyj" id="6Go9U2y2qnS" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="6Go9U2y2qnz" role="PzmwI">
+      <ref role="PrY4T" node="2UbT3C4dgKE" resolve="IInlineFormat" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2UbT3C4kDxb">
+    <property role="3GE5qa" value="format.descendants" />
+    <property role="TrG5h" value="IInlineFormatDescendants" />
+  </node>
+  <node concept="PlHQZ" id="6Go9U2y2EPU">
+    <property role="3GE5qa" value="format.category" />
+    <property role="TrG5h" value="IInlineFormatCategory" />
+    <node concept="PrWs8" id="6Go9U2y2YDP" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2y2ERu">
+    <property role="3GE5qa" value="format.category" />
+    <property role="TrG5h" value="FormatCategoryUnknown" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2y2ERv" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2y2EPU" resolve="IInlineFormatCategory" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2y2EQi">
+    <property role="3GE5qa" value="format.category" />
+    <property role="TrG5h" value="FormatCategoryIntegralInt" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2y2EQr" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2y2EPU" resolve="IInlineFormatCategory" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2y2EQW">
+    <property role="3GE5qa" value="format.category" />
+    <property role="TrG5h" value="FormatCategoryGeneralObject" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2y2EQX" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2y2EPU" resolve="IInlineFormatCategory" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2y2ER6">
+    <property role="3GE5qa" value="format.category" />
+    <property role="TrG5h" value="FormatCategoryFloatingPointDouble" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2y2ER7" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2y2EPU" resolve="IInlineFormatCategory" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2y2ERe">
+    <property role="3GE5qa" value="format.category" />
+    <property role="TrG5h" value="FormatCategoryDateTime" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2y2ERf" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2y2EPU" resolve="IInlineFormatCategory" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2y2ERm">
+    <property role="3GE5qa" value="format.category" />
+    <property role="TrG5h" value="FormatCategoryCharacter" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2y2ERn" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2y2EPU" resolve="IInlineFormatCategory" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6Go9U2yp0Ty">
+    <property role="3GE5qa" value="format.descendants" />
+    <property role="TrG5h" value="IInlineFormatDescendantsCharacter" />
+    <node concept="PrWs8" id="6Go9U2yp0Tz" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4kDxb" resolve="IInlineFormatDescendants" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6Go9U2yp0TH">
+    <property role="3GE5qa" value="format.descendants" />
+    <property role="TrG5h" value="IInlineFormatDescendantsDateTime" />
+    <node concept="PrWs8" id="6Go9U2yp0TI" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4kDxb" resolve="IInlineFormatDescendants" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6Go9U2yp0TV">
+    <property role="3GE5qa" value="format.descendants" />
+    <property role="TrG5h" value="IInlineFormatDescendantsFloatingPoint" />
+    <node concept="PrWs8" id="6Go9U2yp0TW" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4kDxb" resolve="IInlineFormatDescendants" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6Go9U2yp0U3">
+    <property role="3GE5qa" value="format.descendants" />
+    <property role="TrG5h" value="IInlineFormatDescendantsGeneral" />
+    <node concept="PrWs8" id="6Go9U2yp0U4" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4kDxb" resolve="IInlineFormatDescendants" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6Go9U2yp0Ub">
+    <property role="3GE5qa" value="format.descendants" />
+    <property role="TrG5h" value="IInlineFormatDescendantsIntegral" />
+    <node concept="PrWs8" id="6Go9U2yp0Uc" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4kDxb" resolve="IInlineFormatDescendants" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6Go9U2yu9cQ">
+    <property role="3GE5qa" value="format.conversion.datetime" />
+    <property role="TrG5h" value="IDateTimeSpecificConversion" />
+    <node concept="PrWs8" id="6Go9U2yu9le" role="PrDN$">
+      <ref role="PrY4T" node="6Go9U2yp0TH" resolve="IInlineFormatDescendantsDateTime" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6Go9U2yu9fn">
+    <property role="3GE5qa" value="format.conversion.datetime.time" />
+    <property role="TrG5h" value="ITimeSpecificConversion" />
+    <node concept="PrWs8" id="6Go9U2yu9fo" role="PrDN$">
+      <ref role="PrY4T" node="6Go9U2yu9cQ" resolve="IDateTimeSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yuc_g">
+    <property role="3GE5qa" value="format.conversion.datetime.time" />
+    <property role="TrG5h" value="TimeConversionHour24hPadded" />
+    <property role="34LRSv" value="H" />
+    <property role="R4oN_" value="Hour of the day for the 24-hour clock, formatted as two digits with a leading zero as necessary i.e. 00 - 23. " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yuc_h" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yu9fn" resolve="ITimeSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yucE5">
+    <property role="3GE5qa" value="format.conversion.datetime.time" />
+    <property role="TrG5h" value="TimeConversionHour12hPadded" />
+    <property role="34LRSv" value="I" />
+    <property role="R4oN_" value="Hour for the 12-hour clock, formatted as two digits with a leading zero as necessary, i.e. 01 - 12. " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yucE6" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yu9fn" resolve="ITimeSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yucJv">
+    <property role="3GE5qa" value="format.conversion.datetime.time" />
+    <property role="TrG5h" value="TimeConversionHour24h" />
+    <property role="34LRSv" value="k" />
+    <property role="R4oN_" value="Hour of the day for the 24-hour clock, i.e. 0 - 23. " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yucJw" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yu9fn" resolve="ITimeSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yucOX">
+    <property role="3GE5qa" value="format.conversion.datetime.time" />
+    <property role="TrG5h" value="TimeConversionHour12h" />
+    <property role="R4oN_" value="Hour for the 12-hour clock, i.e. 1 - 12. " />
+    <property role="34LRSv" value="l" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yucOY" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yu9fn" resolve="ITimeSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yucUv">
+    <property role="3GE5qa" value="format.conversion.datetime.time" />
+    <property role="TrG5h" value="TimeConversionMinutePadded" />
+    <property role="R4oN_" value="Minute within the hour formatted as two digits with a leading zero as necessary, i.e. 00 - 59. " />
+    <property role="34LRSv" value="M" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yucUw" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yu9fn" resolve="ITimeSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yud05">
+    <property role="3GE5qa" value="format.conversion.datetime.time" />
+    <property role="TrG5h" value="TimeConversionSecondPadded" />
+    <property role="R4oN_" value="Seconds within the minute, formatted as two digits with a leading zero as necessary, i.e. 00 - 60." />
+    <property role="34LRSv" value="S" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yud06" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yu9fn" resolve="ITimeSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yud5J">
+    <property role="3GE5qa" value="format.conversion.datetime.time" />
+    <property role="TrG5h" value="TimeConversionMillisecondPadded" />
+    <property role="R4oN_" value="Millisecond within the second formatted as three digits with leading zeros as necessary, i.e. 000 - 999. " />
+    <property role="34LRSv" value="L" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yud5K" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yu9fn" resolve="ITimeSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yudbt">
+    <property role="3GE5qa" value="format.conversion.datetime.time" />
+    <property role="TrG5h" value="TimeConversionNanosecondPadded" />
+    <property role="R4oN_" value="Nanosecond within the second, formatted as nine digits with leading zeros as necessary, i.e. 000000000 - 999999999." />
+    <property role="34LRSv" value="N" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yudbu" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yu9fn" resolve="ITimeSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yudk3">
+    <property role="3GE5qa" value="format.conversion.datetime.time" />
+    <property role="TrG5h" value="TimeConversionAmPm" />
+    <property role="R4oN_" value="Locale-specific morning or afternoon marker in lower case, e.g.&quot;am&quot; or &quot;pm&quot;." />
+    <property role="34LRSv" value="p" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yudk4" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yu9fn" resolve="ITimeSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yudsJ">
+    <property role="3GE5qa" value="format.conversion.datetime.time" />
+    <property role="TrG5h" value="TimeConversionTimeZoneOffset" />
+    <property role="R4oN_" value="RFC 822 style numeric time zone offset from GMT, e.g. -0800." />
+    <property role="34LRSv" value="z" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yudsK" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yu9fn" resolve="ITimeSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yudyD">
+    <property role="3GE5qa" value="format.conversion.datetime.time" />
+    <property role="TrG5h" value="TimeConversionTimeZoneAbbreviation" />
+    <property role="R4oN_" value="A string representing the abbreviation for the time zone." />
+    <property role="34LRSv" value="Z" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yudyE" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yu9fn" resolve="ITimeSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yudCB">
+    <property role="3GE5qa" value="format.conversion.datetime.time" />
+    <property role="TrG5h" value="TimeConversionSecondSinceEpoch" />
+    <property role="R4oN_" value="Seconds since the beginning of the epoch starting at 1 January 1970 00:00:00 UTC." />
+    <property role="34LRSv" value="s" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yudCC" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yu9fn" resolve="ITimeSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yudID">
+    <property role="3GE5qa" value="format.conversion.datetime.time" />
+    <property role="TrG5h" value="TimeConversionMillisecondSinceEpoch" />
+    <property role="R4oN_" value="Milliseconds since the beginning of the epoch starting at 1 January 1970 00:00:00 UTC." />
+    <property role="34LRSv" value="Q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yudIE" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yu9fn" resolve="ITimeSpecificConversion" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6Go9U2yuebI">
+    <property role="3GE5qa" value="format.conversion.datetime.date" />
+    <property role="TrG5h" value="IDateSpecificConversion" />
+    <node concept="PrWs8" id="6Go9U2yuebJ" role="PrDN$">
+      <ref role="PrY4T" node="6Go9U2yu9cQ" resolve="IDateTimeSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yueDJ">
+    <property role="3GE5qa" value="format.conversion.datetime.date" />
+    <property role="TrG5h" value="DateConversionMonthNameFull" />
+    <property role="R4oN_" value="Locale-specific full month name, e.g. &quot;January&quot;, &quot;February&quot;. " />
+    <property role="34LRSv" value="B" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yueDK" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yuebI" resolve="IDateSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yueJX">
+    <property role="3GE5qa" value="format.conversion.datetime.date" />
+    <property role="TrG5h" value="DateConversionMonthNameAbbreviated" />
+    <property role="R4oN_" value="Locale-specific abbreviated month name, e.g. &quot;Jan&quot;, &quot;Feb&quot;. " />
+    <property role="34LRSv" value="b" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yueJY" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yuebI" resolve="IDateSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yueQf">
+    <property role="3GE5qa" value="format.conversion.datetime.date" />
+    <property role="TrG5h" value="DateConversionMonthNameAbbreviatedAlt" />
+    <property role="R4oN_" value="Locale-specific abbreviated month name, e.g. &quot;Jan&quot;, &quot;Feb&quot;. " />
+    <property role="34LRSv" value="h" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yueQg" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yuebI" resolve="IDateSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yueTv">
+    <property role="3GE5qa" value="format.conversion.datetime.date" />
+    <property role="TrG5h" value="DateConversionDayOfWeekNameFull" />
+    <property role="R4oN_" value="Locale-specific full name of the day of the week, e.g. &quot;Sunday&quot;, &quot;Monday&quot;." />
+    <property role="34LRSv" value="A" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yueTw" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yuebI" resolve="IDateSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yueZT">
+    <property role="3GE5qa" value="format.conversion.datetime.date" />
+    <property role="TrG5h" value="DateConversionDayOfWeekNameShort" />
+    <property role="R4oN_" value=" \tLocale-specific short name of the day of the week, e.g. &quot;Sun&quot;, &quot;Mon&quot;." />
+    <property role="34LRSv" value="a" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yueZU" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yuebI" resolve="IDateSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yuf9x">
+    <property role="3GE5qa" value="format.conversion.datetime.date" />
+    <property role="TrG5h" value="DateConversionYear2digitPadded" />
+    <property role="R4oN_" value="Last two digits of the year, formatted with leading zeros as necessary, i.e. 00 - 99." />
+    <property role="34LRSv" value="y" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yuf9y" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yuebI" resolve="IDateSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yufjf">
+    <property role="3GE5qa" value="format.conversion.datetime.date" />
+    <property role="TrG5h" value="DateConversionYear4digitPadded" />
+    <property role="R4oN_" value="Year, formatted as at least four digits with leading zeros as necessary, e.g. 0092." />
+    <property role="34LRSv" value="Y" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yufjg" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yuebI" resolve="IDateSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yuft3">
+    <property role="3GE5qa" value="format.conversion.datetime.date" />
+    <property role="TrG5h" value="DateConversionYear2digitDividedPadded" />
+    <property role="R4oN_" value="Four-digit year divided by 100, formatted as two digits with leading zero as necessary, i.e. 00 - 99." />
+    <property role="34LRSv" value="C" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yuft4" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yuebI" resolve="IDateSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yufAX">
+    <property role="3GE5qa" value="format.conversion.datetime.date" />
+    <property role="TrG5h" value="DateConversionDayOfYearPadded" />
+    <property role="R4oN_" value="Day of year, formatted as three digits with leading zeros as necessary, e.g. 001 - 366." />
+    <property role="34LRSv" value="j" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yufAY" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yuebI" resolve="IDateSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yufKX">
+    <property role="3GE5qa" value="format.conversion.datetime.date" />
+    <property role="TrG5h" value="DateConversionMonthPadded" />
+    <property role="R4oN_" value="Month, formatted as two digits with leading zeros as necessary, i.e. 01 - 13. " />
+    <property role="34LRSv" value="m" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yufKY" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yuebI" resolve="IDateSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yufOr">
+    <property role="3GE5qa" value="format.conversion.datetime.date" />
+    <property role="TrG5h" value="DateConversionDayOfMonthPadded" />
+    <property role="R4oN_" value="Day of month, formatted as two digits with leading zeros as necessary, i.e. 01 - 31." />
+    <property role="34LRSv" value="d" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yufOs" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yuebI" resolve="IDateSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yufVh">
+    <property role="3GE5qa" value="format.conversion.datetime.date" />
+    <property role="TrG5h" value="DateConversionDayOfMonth" />
+    <property role="R4oN_" value="Day of month, formatted as two digits, i.e. 1 - 31." />
+    <property role="34LRSv" value="e" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yufVi" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yuebI" resolve="IDateSpecificConversion" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6Go9U2yug2b">
+    <property role="3GE5qa" value="format.conversion.datetime.composition" />
+    <property role="TrG5h" value="IDateTimeCompositionConversion" />
+    <node concept="PrWs8" id="6Go9U2yug2c" role="PrDN$">
+      <ref role="PrY4T" node="6Go9U2yu9cQ" resolve="IDateTimeSpecificConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yug9d">
+    <property role="3GE5qa" value="format.conversion.datetime.composition" />
+    <property role="TrG5h" value="DateConversionCompositionHourMinute24h" />
+    <property role="R4oN_" value="Time formatted for the 24-hour clock as &quot;%tH:%tM&quot;." />
+    <property role="34LRSv" value="R" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yug9e" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yug2b" resolve="IDateTimeCompositionConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yuggf">
+    <property role="3GE5qa" value="format.conversion.datetime.composition" />
+    <property role="TrG5h" value="DateConversionCompositionHourMinuteSecond24h" />
+    <property role="R4oN_" value="Time formatted for the 24-hour clock as &quot;%tH:%tM:%tS&quot;." />
+    <property role="34LRSv" value="T" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yuggg" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yug2b" resolve="IDateTimeCompositionConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yugnl">
+    <property role="3GE5qa" value="format.conversion.datetime.composition" />
+    <property role="TrG5h" value="DateConversionCompositionHourMinuteSecond12h" />
+    <property role="R4oN_" value="Time formatted for the 12-hour clock as &quot;%tI:%tM:%tS %Tp&quot;." />
+    <property role="34LRSv" value="r" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yugnm" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yug2b" resolve="IDateTimeCompositionConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yugxZ">
+    <property role="3GE5qa" value="format.conversion.datetime.composition" />
+    <property role="TrG5h" value="DateConversionCompositionYearMonthDayAmerican" />
+    <property role="R4oN_" value="Date formatted as &quot;%tm/%td/%ty&quot;." />
+    <property role="34LRSv" value="D" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yugy0" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yug2b" resolve="IDateTimeCompositionConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yugDd">
+    <property role="3GE5qa" value="format.conversion.datetime.composition" />
+    <property role="TrG5h" value="DateConversionCompositionYearMonthDayISO" />
+    <property role="R4oN_" value="ISO 8601 complete date formatted as &quot;%tY-%tm-%td&quot;." />
+    <property role="34LRSv" value="F" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yugDe" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yug2b" resolve="IDateTimeCompositionConversion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Go9U2yugO3">
+    <property role="3GE5qa" value="format.conversion.datetime.composition" />
+    <property role="TrG5h" value="DateConversionCompositionYearMonthDayRFC" />
+    <property role="R4oN_" value="Date and time formatted as &quot;%ta %tb %td %tT %tZ %tY&quot;, e.g. &quot;Sun Jul 20 16:17:00 EDT 1969&quot;." />
+    <property role="34LRSv" value="c" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6Go9U2yugO4" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2yug2b" resolve="IDateTimeCompositionConversion" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6Go9U2y_STu">
+    <property role="3GE5qa" value="format.conversionflag" />
+    <property role="TrG5h" value="IFormatConversionFlagNeedsWidth" />
+    <node concept="PrWs8" id="6Go9U2y_STv" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4ejhh" resolve="IFormatConversionFlag" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6Go9U2yA8Vz">
+    <property role="3GE5qa" value="format.conversionflag" />
+    <property role="TrG5h" value="IFormatConversionFlagPrefixesValue" />
+    <node concept="PrWs8" id="6Go9U2yA8V$" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4ejhh" resolve="IFormatConversionFlag" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Bl4dfrxtXK">
+    <property role="3GE5qa" value="format.category" />
+    <property role="TrG5h" value="FormatCategoryIntegralLong" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5Bl4dfrxtXL" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2y2EPU" resolve="IInlineFormatCategory" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Bl4dfrDelI">
+    <property role="3GE5qa" value="format.category" />
+    <property role="TrG5h" value="FormatCategoryGeneralBool" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5Bl4dfrDelJ" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2y2EPU" resolve="IInlineFormatCategory" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Bl4dfrJld1">
+    <property role="3GE5qa" value="format.category" />
+    <property role="TrG5h" value="FormatCategoryIntegralBigInt" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5Bl4dfrJld2" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2y2EPU" resolve="IInlineFormatCategory" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7hVsScE6yq6">
+    <property role="3GE5qa" value="format.category" />
+    <property role="TrG5h" value="FormatCategoryFloatingPointBigDecimal" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7hVsScE6yq7" role="PzmwI">
+      <ref role="PrY4T" node="6Go9U2y2EPU" resolve="IInlineFormatCategory" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7hVsScEjnDu">
+    <property role="3GE5qa" value="format.conversion" />
+    <property role="TrG5h" value="IFormatConversionFloatingPointNoBigDecimal" />
+    <node concept="PrWs8" id="7hVsScEjnDv" role="PrDN$">
+      <ref role="PrY4T" node="2UbT3C4ek2j" resolve="IFormatConversionFloatingPoint" />
+    </node>
+  </node>
 </model>
 

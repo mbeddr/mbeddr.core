@@ -67,7 +67,7 @@
           <greater-priority-mapping>
             <generator generatorUID="fb7be218-610c-4e16-af95-15257cfc0899(com.mbeddr.mpsutil.interpreter#8615074351687299716)" />
             <external-mapping>
-              <mapping-node modelUID="r:bb4764cf-9b44-4239-950c-22ec267d6084(com.mbeddr.mpsutil.interpreter.generator.template.main@generator)" nodeID="8615074351687299717" />
+              <mapping-node modelUID="fb7be218-610c-4e16-af95-15257cfc0899/r:bb4764cf-9b44-4239-950c-22ec267d6084(com.mbeddr.mpsutil.interpreter#8615074351687299716/com.mbeddr.mpsutil.interpreter.generator.template.main@generator)" nodeID="8615074351687299717" />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
@@ -81,13 +81,13 @@
           <greater-priority-mapping>
             <generator generatorUID="fb7be218-610c-4e16-af95-15257cfc0899(com.mbeddr.mpsutil.interpreter#8615074351687299716)" />
             <external-mapping>
-              <mapping-node modelUID="r:bb4764cf-9b44-4239-950c-22ec267d6084(com.mbeddr.mpsutil.interpreter.generator.template.main@generator)" nodeID="8615074351687299717" />
+              <mapping-node modelUID="fb7be218-610c-4e16-af95-15257cfc0899/r:bb4764cf-9b44-4239-950c-22ec267d6084(com.mbeddr.mpsutil.interpreter#8615074351687299716/com.mbeddr.mpsutil.interpreter.generator.template.main@generator)" nodeID="8615074351687299717" />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
             <generator generatorUID="46ef3033-ce72-4166-b19e-6ceed23b6844(jetbrains.mps.baseLanguageInternal#1238251529692)" />
             <external-mapping>
-              <mapping-node modelUID="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" nodeID="1238251532162" />
+              <mapping-node modelUID="46ef3033-ce72-4166-b19e-6ceed23b6844/r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal#1238251529692/jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" nodeID="1238251532162" />
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>

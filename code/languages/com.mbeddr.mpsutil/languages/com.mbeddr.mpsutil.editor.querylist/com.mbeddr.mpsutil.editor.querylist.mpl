@@ -59,13 +59,13 @@
           <greater-priority-mapping>
             <generator generatorUID="42b421d5-5ede-47b4-9f1b-32e2646b4278(com.mbeddr.mpsutil.editor.querylist#6202678563380233173)" />
             <external-mapping>
-              <mapping-node modelUID="r:acfc62a5-11fe-4fd8-af5c-dc9a63e51240(com.mbeddr.mpsutil.editor.querylist.generator.template.main@generator)" nodeID="6202678563380233174" />
+              <mapping-node modelUID="42b421d5-5ede-47b4-9f1b-32e2646b4278/r:acfc62a5-11fe-4fd8-af5c-dc9a63e51240(com.mbeddr.mpsutil.editor.querylist#6202678563380233173/com.mbeddr.mpsutil.editor.querylist.generator.template.main@generator)" nodeID="6202678563380233174" />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
             <generator generatorUID="0647eca7-da98-422a-8a8b-6ebc0bd014ea(jetbrains.mps.lang.editor#1129914002149)" />
             <external-mapping>
-              <mapping-node modelUID="r:00000000-0000-4000-0000-011c8959029f(jetbrains.mps.lang.editor.generator.baseLanguage.template.main@generator)" nodeID="1096629760203" />
+              <mapping-node modelUID="0647eca7-da98-422a-8a8b-6ebc0bd014ea/r:00000000-0000-4000-0000-011c8959029f(jetbrains.mps.lang.editor#1129914002149/jetbrains.mps.lang.editor.generator.baseLanguage.template.main@generator)" nodeID="1096629760203" />
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>

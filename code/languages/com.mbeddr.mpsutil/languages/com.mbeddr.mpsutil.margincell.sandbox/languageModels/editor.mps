@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:de71e888-c9a8-42dd-b5e3-68f24e3102c7(com.mbeddr.mpsutil.margincell.sandbox.editor)">
+<model ref="43068673-523b-46eb-ba12-b963f6b6f12f/r:de71e888-c9a8-42dd-b5e3-68f24e3102c7(com.mbeddr.mpsutil.margincell.sandbox/com.mbeddr.mpsutil.margincell.sandbox.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
@@ -7,7 +7,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="e4lm" ref="r:c755b11f-9748-4805-b200-626b0b4dd0bb(com.mbeddr.mpsutil.margincell.sandbox.structure)" />
+    <import index="e4lm" ref="43068673-523b-46eb-ba12-b963f6b6f12f/r:c755b11f-9748-4805-b200-626b0b4dd0bb(com.mbeddr.mpsutil.margincell.sandbox/com.mbeddr.mpsutil.margincell.sandbox.structure)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">

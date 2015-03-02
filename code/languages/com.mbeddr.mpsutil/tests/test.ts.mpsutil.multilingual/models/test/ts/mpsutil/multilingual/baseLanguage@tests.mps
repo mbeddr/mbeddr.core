@@ -1,839 +1,1029 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:e0813ffc-1acb-4e5b-8178-b9dd9c4ab87a(test.ts.mpsutil.multilingual.baseLanguage@tests)">
-  <persistence version="8" />
-  <language namespace="f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)" />
-  <language namespace="8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)" />
-  <language namespace="23f985f2-965f-4af1-aee8-a32677429514(com.mbeddr.mpsutil.multilingual.common)" />
-  <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
-  <language namespace="d2a1d976-43a2-462f-ac3a-9b258ced839d(com.mbeddr.mpsutil.multilingual.baseLanguage)" />
-  <language namespace="442d3b7d-fe4a-4293-a7c1-6744d440ecaa(com.mbeddr.mpsutil.richstring)" />
-  <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
-  <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
-  <import index="spci" modelUID="r:f00bea3f-6dce-47ed-ac44-0f6df7d12ced(com.mbeddr.mpsutil.richstring.structure)" version="-1" />
-  <import index="d6tz" modelUID="r:b2834b64-265d-4877-941d-d9125f9bc1d6(com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem)" version="0" />
-  <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="40" implicit="yes" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
-  <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
-  <import index="tnjx" modelUID="r:b5a6a0ba-90b8-4839-a0b6-fee9cff5d417(com.mbeddr.mpsutil.multilingual.baseLanguage.structure)" version="0" implicit="yes" />
-  <import index="tpe3" modelUID="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" version="-1" implicit="yes" />
-  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
-  <import index="sxyo" modelUID="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" version="8" implicit="yes" />
-  <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="7592664684660172748" nodeInfo="ng">
-    <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
-  </root>
-  <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6724029501762460834" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="DummyResourceBundle" />
-    <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="6724029501762461163" nodeInfo="ngu" />
-    <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="6724029501762461354" nodeInfo="igu">
-      <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="handleGetObject" />
-      <property name="isFinal" nameId="tpee.1181808852946" value="false" />
-      <property name="isDeprecated" nameId="tpee.1224848525476" value="false" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.ProtectedVisibility" typeId="tpee.1146644641414" id="6724029501762461355" nodeInfo="nn" />
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6724029501762461357" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Object" resolveInfo="Object" />
+<model ref="fcca86e0-64c4-4aef-824c-434589a89382/r:e0813ffc-1acb-4e5b-8178-b9dd9c4ab87a(test.ts.mpsutil.multilingual/test.ts.mpsutil.multilingual.baseLanguage@tests)">
+  <persistence version="9" />
+  <languages>
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="-1" />
+    <use id="442d3b7d-fe4a-4293-a7c1-6744d440ecaa" name="com.mbeddr.mpsutil.richstring" version="-1" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+  </languages>
+  <imports>
+    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="spci" ref="442d3b7d-fe4a-4293-a7c1-6744d440ecaa/r:f00bea3f-6dce-47ed-ac44-0f6df7d12ced(com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.structure)" />
+    <import index="d6tz" ref="d2a1d976-43a2-462f-ac3a-9b258ced839d/r:b2834b64-265d-4877-941d-d9125f9bc1d6(com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem)" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
+        <child id="8489045168660938517" name="errorRef" index="3lydEf" />
+      </concept>
+      <concept id="1215526290564" name="jetbrains.mps.lang.test.structure.NodeTypeCheckOperation" flags="ng" index="30Omv">
+        <child id="1215526393912" name="type" index="31d$z" />
+      </concept>
+      <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
+        <child id="1215604436604" name="nodeOperations" index="7EUXB" />
+      </concept>
+      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
+      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
+        <reference id="8333855927540250453" name="declaration" index="39XzEq" />
+      </concept>
+      <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
+      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
+        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
+      </concept>
+      <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
+        <child id="1217501895093" name="testMethods" index="1SL9yI" />
+      </concept>
+      <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
+        <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
+      </concept>
+      <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
+    </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
+      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
+        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
+      </concept>
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
+      </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
+        <property id="8606350594693632173" name="isTransient" index="eg7rD" />
+        <property id="1240249534625" name="isVolatile" index="34CwA1" />
+      </concept>
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
+        <child id="1165602531693" name="superclass" index="1zkMxy" />
+      </concept>
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
+        <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1068431790191" name="jetbrains.mps.baseLanguage.structure.Expression" flags="nn" index="33vP2n" />
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
+      </concept>
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
+        <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
+      <concept id="1111509017652" name="jetbrains.mps.baseLanguage.structure.FloatingPointConstant" flags="nn" index="3b6qkQ">
+        <property id="1113006610751" name="value" index="$nhwW" />
+      </concept>
+      <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
+        <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
+        <property id="1181808852946" name="isFinal" index="DiZV1" />
+        <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123134" name="parameter" index="3clF46" />
+        <child id="1068580123135" name="body" index="3clF47" />
+      </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
+        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
+        <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
+      </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
+      </concept>
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+        <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage">
+      <concept id="9087294576174751931" name="com.mbeddr.mpsutil.multilingual.baseLanguage.structure.MultilingualInlineFormat" flags="ng" index="109AVY">
+        <property id="9087294576174758668" name="argumentIndex" index="109Bl9" />
+        <reference id="9087294576174785049" name="argumentCategory" index="109YLs" />
+      </concept>
+      <concept id="9087294576173493898" name="com.mbeddr.mpsutil.multilingual.baseLanguage.structure.RichStringMessageKey" flags="ng" index="10eM3f">
+        <child id="9087294576173815031" name="richDefault" index="10c1EM" />
+      </concept>
+      <concept id="9087294576173492452" name="com.mbeddr.mpsutil.multilingual.baseLanguage.structure.MultilingualJavaRichString" flags="ng" index="10eMqx">
+        <child id="9087294576176418090" name="expressions" index="10icdJ" />
+      </concept>
+      <concept id="2510545900188478754" name="com.mbeddr.mpsutil.multilingual.baseLanguage.structure.MultilingualJavaString" flags="ng" index="3ZQQOj" />
+      <concept id="2510545900188478756" name="com.mbeddr.mpsutil.multilingual.baseLanguage.structure.MultilingualJavaStringType" flags="ig" index="3ZQQOl" />
+    </language>
+    <language id="442d3b7d-fe4a-4293-a7c1-6744d440ecaa" name="com.mbeddr.mpsutil.richstring">
+      <concept id="3354025285337563602" name="com.mbeddr.mpsutil.richstring.structure.ConversionFloatingPointDecimal" flags="ng" index="EGEnC" />
+      <concept id="3354025285337570884" name="com.mbeddr.mpsutil.richstring.structure.ConversionPrecisionInteger" flags="ng" index="EGFDY">
+        <property id="3354025285337570887" name="precision" index="EGFDX" />
+      </concept>
+      <concept id="3354025285337570946" name="com.mbeddr.mpsutil.richstring.structure.ConversionWidthInteger" flags="ng" index="EGFES">
+        <property id="3354025285337570949" name="width" index="EGFEZ" />
+      </concept>
+      <concept id="3354025285337569334" name="com.mbeddr.mpsutil.richstring.structure.InlineFormat" flags="ng" index="EGFKc">
+        <child id="3354025285337570729" name="precision" index="EGFAj" />
+        <child id="7716961532366136821" name="flags" index="394o9l" />
+        <child id="7716961532366136822" name="width" index="394o9m" />
+        <child id="7716961532366136823" name="conversion" index="394o9n" />
+        <child id="7716961532366136824" name="expression" index="394o9o" />
+      </concept>
+      <concept id="3354025285337560608" name="com.mbeddr.mpsutil.richstring.structure.ConversionFlagZeroPadding" flags="ng" index="EGH8q" />
+      <concept id="3354025285337560770" name="com.mbeddr.mpsutil.richstring.structure.ConversionFlagEncloseNegativeInParentheses" flags="ng" index="EGHbS" />
+      <concept id="3354025285337562289" name="com.mbeddr.mpsutil.richstring.structure.ConversionGeneralString" flags="ng" index="EGHyb" />
+      <concept id="3354025285337562900" name="com.mbeddr.mpsutil.richstring.structure.ConversionIntegralDecimal" flags="ng" index="EGHGI" />
+      <concept id="3354025285337049262" name="com.mbeddr.mpsutil.richstring.structure.RichString" flags="ng" index="EICMk">
+        <child id="3354025285337210729" name="text" index="EI3Hj" />
+      </concept>
+    </language>
+    <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
+      <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
+        <child id="8427750732757990725" name="actual" index="3tpDZA" />
+        <child id="8427750732757990724" name="expected" index="3tpDZB" />
+      </concept>
+      <concept id="1171978097730" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertEquals" flags="nn" index="3vlDli" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common">
+      <concept id="568377005202317274" name="com.mbeddr.mpsutil.multilingual.common.structure.ResourceBundle" flags="ng" index="3MtHw5">
+        <property id="568377005202317275" name="keyPrefix" index="3MtHw4" />
+        <reference id="568377005202317277" name="resourceBundle" index="3MtHw2" />
+        <child id="568377005202317276" name="keys" index="3MtHw3" />
+      </concept>
+      <concept id="568377005202317270" name="com.mbeddr.mpsutil.multilingual.common.structure.MessageKey" flags="ng" index="3MtHw9">
+        <property id="568377005202317272" name="default" index="3MtHw7" />
+        <property id="568377005202317271" name="technicalKey" index="3MtHw8" />
+      </concept>
+      <concept id="2510545900188083931" name="com.mbeddr.mpsutil.multilingual.common.structure.IMessageKeyHolder" flags="ng" index="3ZOmrE">
+        <reference id="2510545900188083932" name="key" index="3ZOmrH" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2XOHcx" id="6_u$4QjOEvc">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
+  </node>
+  <node concept="312cEu" id="5PgzjjnN5My">
+    <property role="TrG5h" value="DummyResourceBundle" />
+    <node concept="2tJIrI" id="5PgzjjnN5RF" role="jymVt" />
+    <node concept="3clFb_" id="5PgzjjnN5UE" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="handleGetObject" />
+      <property role="DiZV1" value="false" />
+      <property role="IEkAT" value="false" />
+      <node concept="3Tmbuc" id="5PgzjjnN5UF" role="1B3o_S" />
+      <node concept="3uibUv" id="5PgzjjnN5UH" role="3clF45">
+        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
       </node>
-      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="6724029501762461358" nodeInfo="ir">
-        <property name="name" nameId="tpck.1169194664001" value="string" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="6724029501762468992" nodeInfo="in" />
+      <node concept="37vLTG" id="5PgzjjnN5UI" role="3clF46">
+        <property role="TrG5h" value="string" />
+        <node concept="17QB3L" id="5PgzjjnN7M0" role="1tU5fm" />
       </node>
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6724029501762461360" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6724029501762461362" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="6724029501762461361" nodeInfo="nn" />
+      <node concept="3clFbS" id="5PgzjjnN5UK" role="3clF47">
+        <node concept="3clFbF" id="5PgzjjnN5UM" role="3cqZAp">
+          <node concept="10Nm6u" id="5PgzjjnN5UL" role="3clFbG" />
         </node>
       </node>
     </node>
-    <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="6724029501762461363" nodeInfo="igu">
-      <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="getKeys" />
-      <property name="isFinal" nameId="tpee.1181808852946" value="false" />
-      <property name="isDeprecated" nameId="tpee.1224848525476" value="false" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6724029501762461364" nodeInfo="nn" />
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6724029501762461366" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="k7g3.~Enumeration" resolveInfo="Enumeration" />
-        <node role="parameter" roleId="tpee.1109201940907" type="tpee.StringType" typeId="tpee.1225271177708" id="6724029501762468523" nodeInfo="in" />
+    <node concept="3clFb_" id="5PgzjjnN5UN" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getKeys" />
+      <property role="DiZV1" value="false" />
+      <property role="IEkAT" value="false" />
+      <node concept="3Tm1VV" id="5PgzjjnN5UO" role="1B3o_S" />
+      <node concept="3uibUv" id="5PgzjjnN5UQ" role="3clF45">
+        <ref role="3uigEE" to="k7g3:~Enumeration" resolve="Enumeration" />
+        <node concept="17QB3L" id="5PgzjjnN7EF" role="11_B2D" />
       </node>
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6724029501762461368" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6724029501762461370" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="6724029501762461369" nodeInfo="nn" />
+      <node concept="3clFbS" id="5PgzjjnN5US" role="3clF47">
+        <node concept="3clFbF" id="5PgzjjnN5UU" role="3cqZAp">
+          <node concept="10Nm6u" id="5PgzjjnN5UT" role="3clFbG" />
         </node>
       </node>
     </node>
-    <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="6724029501762466638" nodeInfo="ngu" />
-    <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="6724029501762467451" nodeInfo="igu">
-      <property name="name" nameId="tpck.1169194664001" value="get" />
-      <property name="isSynchronized" nameId="tpee.4276006055363816570" value="false" />
-      <property name="isFinal" nameId="tpee.1181808852946" value="false" />
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6724029501762467454" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6724029501762468321" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="6724029501762468320" nodeInfo="nn" />
+    <node concept="2tJIrI" id="5PgzjjnN7de" role="jymVt" />
+    <node concept="2YIFZL" id="5PgzjjnN7pV" role="jymVt">
+      <property role="TrG5h" value="get" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="5PgzjjnN7pY" role="3clF47">
+        <node concept="3clFbF" id="5PgzjjnN7Bx" role="3cqZAp">
+          <node concept="10Nm6u" id="5PgzjjnN7Bw" role="3clFbG" />
         </node>
       </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6724029501762466863" nodeInfo="nn" />
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.StringType" typeId="tpee.1225271177708" id="6724029501762467449" nodeInfo="in" />
-      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="6724029501762468013" nodeInfo="ir">
-        <property name="name" nameId="tpck.1169194664001" value="key" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="6724029501762468012" nodeInfo="in" />
+      <node concept="3Tm1VV" id="5PgzjjnN7gJ" role="1B3o_S" />
+      <node concept="17QB3L" id="5PgzjjnN7pT" role="3clF45" />
+      <node concept="37vLTG" id="5PgzjjnN7yH" role="3clF46">
+        <property role="TrG5h" value="key" />
+        <node concept="17QB3L" id="5PgzjjnN7yG" role="1tU5fm" />
       </node>
     </node>
-    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6724029501762460835" nodeInfo="nn" />
-    <node role="superclass" roleId="tpee.1165602531693" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6724029501762461159" nodeInfo="in">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="k7g3.~ResourceBundle" resolveInfo="ResourceBundle" />
+    <node concept="3Tm1VV" id="5PgzjjnN5Mz" role="1B3o_S" />
+    <node concept="3uibUv" id="5PgzjjnN5RB" role="1zkMxy">
+      <ref role="3uigEE" to="k7g3:~ResourceBundle" resolve="ResourceBundle" />
     </node>
-  </root>
-  <root type="sxyo.ResourceBundle" typeId="sxyo.568377005202317274" id="7147596757064966648" nodeInfo="ng">
-    <property name="keyPrefix" nameId="sxyo.568377005202317275" value="Keyword-" />
-    <property name="name" nameId="tpck.1169194664001" value="Test Resource Bundle" />
-    <link role="resourceBundle" roleId="sxyo.568377005202317277" targetNodeId="6724029501762460834" resolveInfo="DummyResourceBundle" />
-    <node role="keys" roleId="sxyo.568377005202317276" type="sxyo.MessageKey" typeId="sxyo.568377005202317270" id="4912572611774907128" nodeInfo="ng">
-      <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-      <property name="name" nameId="tpck.1169194664001" value="someNewKey" />
+  </node>
+  <node concept="3MtHw5" id="6cLnm66_Q7S">
+    <property role="3MtHw4" value="Keyword-" />
+    <property role="TrG5h" value="Test Resource Bundle" />
+    <ref role="3MtHw2" node="5PgzjjnN5My" resolve="DummyResourceBundle" />
+    <node concept="3MtHw9" id="4gGXGcMa0bS" role="3MtHw3">
+      <property role="3MtHw8" value=" " />
+      <property role="TrG5h" value="someNewKey" />
     </node>
-    <node role="keys" roleId="sxyo.568377005202317276" type="sxyo.MessageKey" typeId="sxyo.568377005202317270" id="7147596757067451739" nodeInfo="ng">
-      <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-      <property name="name" nameId="tpck.1169194664001" value="testKey" />
-      <property name="default" nameId="sxyo.568377005202317272" value="test string" />
+    <node concept="3MtHw9" id="6cLnm66JkPr" role="3MtHw3">
+      <property role="3MtHw8" value=" " />
+      <property role="TrG5h" value="testKey" />
+      <property role="3MtHw7" value="test string" />
     </node>
-    <node role="keys" roleId="sxyo.568377005202317276" type="tnjx.RichStringMessageKey" typeId="tnjx.9087294576173493898" id="9087294576174565558" nodeInfo="ng">
-      <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-      <property name="name" nameId="tpck.1169194664001" value="richKeyEmpty" />
-      <node role="richDefault" roleId="tnjx.9087294576173815031" type="spci.RichString" typeId="spci.3354025285337049262" id="9087294576174565560" nodeInfo="ng">
-        <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="9087294576174565562" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576174566757" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="some empty RichKey" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="keys" roleId="sxyo.568377005202317276" type="tnjx.RichStringMessageKey" typeId="tnjx.9087294576173493898" id="9087294576181051542" nodeInfo="ng">
-      <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-      <property name="name" nameId="tpck.1169194664001" value="richKeySingle" />
-      <node role="richDefault" roleId="tnjx.9087294576173815031" type="spci.RichString" typeId="spci.3354025285337049262" id="9087294576181051544" nodeInfo="ng">
-        <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="9087294576181051546" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576181051547" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="this " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576181055881" nodeInfo="ng">
-            <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="1" />
-            <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204306" resolveInfo="FormatCategoryIntegralInt" />
-            <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576181055882" nodeInfo="nn" />
-            <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionIntegralDecimal" typeId="spci.3354025285337562900" id="9087294576181055898" nodeInfo="ng" />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576181055883" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" number" />
+    <node concept="10eM3f" id="7Ssz$kYe0yQ" role="3MtHw3">
+      <property role="3MtHw8" value=" " />
+      <property role="TrG5h" value="richKeyEmpty" />
+      <node concept="EICMk" id="7Ssz$kYe0yS" role="10c1EM">
+        <node concept="19SGf9" id="7Ssz$kYe0yU" role="EI3Hj">
+          <node concept="19SUe$" id="7Ssz$kYe0P_" role="19SJt6">
+            <property role="19SUeA" value="some empty RichKey" />
           </node>
         </node>
       </node>
     </node>
-    <node role="keys" roleId="sxyo.568377005202317276" type="tnjx.RichStringMessageKey" typeId="tnjx.9087294576173493898" id="9087294576181054593" nodeInfo="ng">
-      <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-      <property name="name" nameId="tpck.1169194664001" value="richKeyDouble" />
-      <node role="richDefault" roleId="tnjx.9087294576173815031" type="spci.RichString" typeId="spci.3354025285337049262" id="9087294576181054594" nodeInfo="ng">
-        <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="9087294576181054595" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576181054596" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="some " />
+    <node concept="10eM3f" id="7Ssz$kYAK2m" role="3MtHw3">
+      <property role="3MtHw8" value=" " />
+      <property role="TrG5h" value="richKeySingle" />
+      <node concept="EICMk" id="7Ssz$kYAK2o" role="10c1EM">
+        <node concept="19SGf9" id="7Ssz$kYAK2q" role="EI3Hj">
+          <node concept="19SUe$" id="7Ssz$kYAK2r" role="19SJt6">
+            <property role="19SUeA" value="this " />
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576181056252" nodeInfo="ng">
-            <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="1" />
-            <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204306" resolveInfo="FormatCategoryIntegralInt" />
-            <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576181056253" nodeInfo="nn" />
-            <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionIntegralDecimal" typeId="spci.3354025285337562900" id="9087294576181056269" nodeInfo="ng" />
+          <node concept="109AVY" id="7Ssz$kYAL69" role="19SJt6">
+            <property role="109Bl9" value="1" />
+            <ref role="109YLs" to="spci:6Go9U2y2EQi" resolve="FormatCategoryIntegralInt" />
+            <node concept="10Nm6u" id="7Ssz$kYAL6a" role="394o9o" />
+            <node concept="EGHGI" id="7Ssz$kYAL6q" role="394o9n" />
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576181056254" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and " />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576181056671" nodeInfo="ng">
-            <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="2" />
-            <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204358" resolveInfo="FormatCategoryFloatingPointDouble" />
-            <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576181056672" nodeInfo="nn" />
-            <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionFloatingPointDecimal" typeId="spci.3354025285337563602" id="9087294576181056762" nodeInfo="ng" />
-          </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576181056673" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" other" />
+          <node concept="19SUe$" id="7Ssz$kYAL6b" role="19SJt6">
+            <property role="19SUeA" value=" number" />
           </node>
         </node>
       </node>
     </node>
-    <node role="keys" roleId="sxyo.568377005202317276" type="tnjx.RichStringMessageKey" typeId="tnjx.9087294576173493898" id="9087294576181057134" nodeInfo="ng">
-      <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-      <property name="name" nameId="tpck.1169194664001" value="richKeyDoubleSwapped" />
-      <node role="richDefault" roleId="tnjx.9087294576173815031" type="spci.RichString" typeId="spci.3354025285337049262" id="9087294576181057135" nodeInfo="ng">
-        <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="9087294576181057136" nodeInfo="ng">
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576181057137" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value="some " />
+    <node concept="10eM3f" id="7Ssz$kYAKM1" role="3MtHw3">
+      <property role="3MtHw8" value=" " />
+      <property role="TrG5h" value="richKeyDouble" />
+      <node concept="EICMk" id="7Ssz$kYAKM2" role="10c1EM">
+        <node concept="19SGf9" id="7Ssz$kYAKM3" role="EI3Hj">
+          <node concept="19SUe$" id="7Ssz$kYAKM4" role="19SJt6">
+            <property role="19SUeA" value="some " />
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576181057138" nodeInfo="ng">
-            <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="2" />
-            <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204306" resolveInfo="FormatCategoryIntegralInt" />
-            <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagZeroPadding" typeId="spci.3354025285337560608" id="3091065834758330673" nodeInfo="ng" />
-            <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576181057139" nodeInfo="nn" />
-            <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionIntegralDecimal" typeId="spci.3354025285337562900" id="9087294576181057140" nodeInfo="ng" />
-            <node role="width" roleId="spci.7716961532366136822" type="spci.ConversionWidthInteger" typeId="spci.3354025285337570946" id="9087294576185358256" nodeInfo="ng">
-              <property name="width" nameId="spci.3354025285337570949" value="10" />
+          <node concept="109AVY" id="7Ssz$kYALbW" role="19SJt6">
+            <property role="109Bl9" value="1" />
+            <ref role="109YLs" to="spci:6Go9U2y2EQi" resolve="FormatCategoryIntegralInt" />
+            <node concept="10Nm6u" id="7Ssz$kYALbX" role="394o9o" />
+            <node concept="EGHGI" id="7Ssz$kYALcd" role="394o9n" />
+          </node>
+          <node concept="19SUe$" id="7Ssz$kYALbY" role="19SJt6">
+            <property role="19SUeA" value=" and " />
+          </node>
+          <node concept="109AVY" id="7Ssz$kYALiv" role="19SJt6">
+            <property role="109Bl9" value="2" />
+            <ref role="109YLs" to="spci:6Go9U2y2ER6" resolve="FormatCategoryFloatingPointDouble" />
+            <node concept="10Nm6u" id="7Ssz$kYALiw" role="394o9o" />
+            <node concept="EGEnC" id="7Ssz$kYALjU" role="394o9n" />
+          </node>
+          <node concept="19SUe$" id="7Ssz$kYALix" role="19SJt6">
+            <property role="19SUeA" value=" other" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="10eM3f" id="7Ssz$kYALpI" role="3MtHw3">
+      <property role="3MtHw8" value=" " />
+      <property role="TrG5h" value="richKeyDoubleSwapped" />
+      <node concept="EICMk" id="7Ssz$kYALpJ" role="10c1EM">
+        <node concept="19SGf9" id="7Ssz$kYALpK" role="EI3Hj">
+          <node concept="19SUe$" id="7Ssz$kYALpL" role="19SJt6">
+            <property role="19SUeA" value="some " />
+          </node>
+          <node concept="109AVY" id="7Ssz$kYALpM" role="19SJt6">
+            <property role="109Bl9" value="2" />
+            <ref role="109YLs" to="spci:6Go9U2y2EQi" resolve="FormatCategoryIntegralInt" />
+            <node concept="EGH8q" id="2F_EZZy7t$L" role="394o9l" />
+            <node concept="10Nm6u" id="7Ssz$kYALpN" role="394o9o" />
+            <node concept="EGHGI" id="7Ssz$kYALpO" role="394o9n" />
+            <node concept="EGFES" id="7Ssz$kYRbuK" role="394o9m">
+              <property role="EGFEZ" value="10" />
             </node>
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576181057141" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and " />
+          <node concept="19SUe$" id="7Ssz$kYALpP" role="19SJt6">
+            <property role="19SUeA" value=" and " />
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576181057142" nodeInfo="ng">
-            <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="1" />
-            <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204358" resolveInfo="FormatCategoryFloatingPointDouble" />
-            <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576181057143" nodeInfo="nn" />
-            <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionFloatingPointDecimal" typeId="spci.3354025285337563602" id="9087294576181057144" nodeInfo="ng" />
-            <node role="precision" roleId="spci.3354025285337570729" type="spci.ConversionPrecisionInteger" typeId="spci.3354025285337570884" id="9087294576185589173" nodeInfo="ng">
-              <property name="precision" nameId="spci.3354025285337570887" value="2" />
+          <node concept="109AVY" id="7Ssz$kYALpQ" role="19SJt6">
+            <property role="109Bl9" value="1" />
+            <ref role="109YLs" to="spci:6Go9U2y2ER6" resolve="FormatCategoryFloatingPointDouble" />
+            <node concept="10Nm6u" id="7Ssz$kYALpR" role="394o9o" />
+            <node concept="EGEnC" id="7Ssz$kYALpS" role="394o9n" />
+            <node concept="EGFDY" id="7Ssz$kYS3QP" role="EGFAj">
+              <property role="EGFDX" value="2" />
             </node>
-            <node role="width" roleId="spci.7716961532366136822" type="spci.ConversionWidthInteger" typeId="spci.3354025285337570946" id="9087294576185589578" nodeInfo="ng">
-              <property name="width" nameId="spci.3354025285337570949" value="10" />
+            <node concept="EGFES" id="7Ssz$kYS3Xa" role="394o9m">
+              <property role="EGFEZ" value="10" />
             </node>
           </node>
-          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576181057145" nodeInfo="ng">
-            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" other" />
+          <node concept="19SUe$" id="7Ssz$kYALpT" role="19SJt6">
+            <property role="19SUeA" value=" other" />
           </node>
         </node>
       </node>
     </node>
-  </root>
-  <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7147596757069209213" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="GenerationTest" />
-    <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="7147596757069209282" nodeInfo="igu">
-      <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
-      <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="myTranslation" />
-      <property name="isFinal" nameId="tpee.1176718929932" value="false" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7147596757071571849" nodeInfo="nn" />
-      <node role="initializer" roleId="tpee.1068431790190" type="tnjx.MultilingualJavaString" typeId="tnjx.2510545900188478754" id="7147596757069209318" nodeInfo="ng">
-        <link role="key" roleId="sxyo.2510545900188083932" targetNodeId="7147596757067451739" resolveInfo="testKey" />
+  </node>
+  <node concept="312cEu" id="6cLnm66Q1TX">
+    <property role="TrG5h" value="GenerationTest" />
+    <node concept="312cEg" id="6cLnm66Q1V2" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="myTranslation" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="6cLnm66Z2I9" role="1B3o_S" />
+      <node concept="3ZQQOj" id="6cLnm66Q1VA" role="33vP2m">
+        <ref role="3ZOmrH" node="6cLnm66JkPr" resolve="testKey" />
       </node>
-      <node role="type" roleId="tpee.5680397130376446158" type="tnjx.MultilingualJavaStringType" typeId="tnjx.2510545900188478756" id="4912572611770512321" nodeInfo="ig" />
+      <node concept="3ZQQOl" id="4gGXGcLTff1" role="1tU5fm" />
     </node>
-    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7147596757069209214" nodeInfo="nn" />
-  </root>
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="7147596757068078120" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="TestMultilingualJavaString" />
-    <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="7147596757068081108" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="MultilingualJavaStringTest" />
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="7147596757068081109" nodeInfo="in" />
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="7147596757068081113" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="7147596757068081128" nodeInfo="nn">
-          <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7147596757068081134" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="test string" />
+    <node concept="3Tm1VV" id="6cLnm66Q1TY" role="1B3o_S" />
+  </node>
+  <node concept="1lH9Xt" id="6cLnm66LHKC">
+    <property role="TrG5h" value="TestMultilingualJavaString" />
+    <node concept="1LZb2c" id="6cLnm66LIvk" role="1SL9yI">
+      <property role="TrG5h" value="MultilingualJavaStringTest" />
+      <node concept="3cqZAl" id="6cLnm66LIvl" role="3clF45" />
+      <node concept="3clFbS" id="6cLnm66LIvp" role="3clF47">
+        <node concept="3vlDli" id="6cLnm66LIvC" role="3cqZAp">
+          <node concept="Xl_RD" id="6cLnm66LIvI" role="3tpDZB">
+            <property role="Xl_RC" value="test string" />
           </node>
-          <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7147596757071108245" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7147596757071097582" nodeInfo="nn">
-              <node role="creator" roleId="tpee.1145553007750" type="tpee.DefaultClassCreator" typeId="tpee.2820489544401957797" id="7147596757071571425" nodeInfo="nn">
-                <link role="classifier" roleId="tpee.2820489544401957798" targetNodeId="7147596757069209213" resolveInfo="GenerationTest" />
+          <node concept="2OqwBi" id="6cLnm66Xhyl" role="3tpDZA">
+            <node concept="2ShNRf" id="6cLnm66XeVI" role="2Oq$k0">
+              <node concept="HV5vD" id="6cLnm66Z2Bx" role="2ShVmc">
+                <ref role="HV5vE" node="6cLnm66Q1TX" resolve="GenerationTest" />
               </node>
             </node>
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.FieldReferenceOperation" typeId="tpee.1197029447546" id="7147596757071572254" nodeInfo="nn">
-              <link role="fieldDeclaration" roleId="tpee.1197029500499" targetNodeId="7147596757069209282" resolveInfo="myTranslation" />
+            <node concept="2OwXpG" id="6cLnm66Z2Ou" role="2OqNvi">
+              <ref role="2Oxat5" node="6cLnm66Q1V2" resolve="myTranslation" />
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="7147596757071588675" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7147596757071588677" nodeInfo="ig">
-        <property name="nonStatic" nameId="tpee.521412098689998745" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="TestClass" />
-        <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="7147596757071690599" nodeInfo="igu">
-          <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
-          <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
-          <property name="name" nameId="tpck.1169194664001" value="translation" />
-          <property name="isFinal" nameId="tpee.1176718929932" value="false" />
-          <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7147596757071690600" nodeInfo="nn" />
-          <node role="initializer" roleId="tpee.1068431790190" type="tnjx.MultilingualJavaString" typeId="tnjx.2510545900188478754" id="7147596757071690602" nodeInfo="ng">
-            <link role="key" roleId="sxyo.2510545900188083932" targetNodeId="7147596757067451739" resolveInfo="testKey" />
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="7147596757071690603" nodeInfo="ng">
-              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeTypeCheckOperation" typeId="tp5g.1215526290564" id="7147596757071690604" nodeInfo="ng">
-                <node role="type" roleId="tp5g.1215526393912" type="tnjx.MultilingualJavaStringType" typeId="tnjx.2510545900188478756" id="4912572611770514725" nodeInfo="ig" />
+    <node concept="1qefOq" id="6cLnm66Z6P3" role="1SKRRt">
+      <node concept="312cEu" id="6cLnm66Z6P5" role="1qenE9">
+        <property role="2bfB8j" value="true" />
+        <property role="TrG5h" value="TestClass" />
+        <node concept="312cEg" id="6cLnm66ZvHB" role="jymVt">
+          <property role="34CwA1" value="false" />
+          <property role="eg7rD" value="false" />
+          <property role="TrG5h" value="translation" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3Tm1VV" id="6cLnm66ZvHC" role="1B3o_S" />
+          <node concept="3ZQQOj" id="6cLnm66ZvHE" role="33vP2m">
+            <ref role="3ZOmrH" node="6cLnm66JkPr" resolve="testKey" />
+            <node concept="7CXmI" id="6cLnm66ZvHF" role="lGtFl">
+              <node concept="30Omv" id="6cLnm66ZvHG" role="7EUXB">
+                <node concept="3ZQQOl" id="4gGXGcLTfO_" role="31d$z" />
               </node>
             </node>
           </node>
-          <node role="type" roleId="tpee.5680397130376446158" type="tnjx.MultilingualJavaStringType" typeId="tnjx.2510545900188478756" id="4912572611770514702" nodeInfo="ig" />
+          <node concept="3ZQQOl" id="4gGXGcLTfOe" role="1tU5fm" />
         </node>
-        <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7147596757071588678" nodeInfo="nn" />
+        <node concept="3Tm1VV" id="6cLnm66Z6P6" role="1B3o_S" />
       </node>
     </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="7147596757071603283" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7147596757071603295" nodeInfo="ig">
-        <property name="nonStatic" nameId="tpee.521412098689998745" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="TestClass" />
-        <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="7147596757071606368" nodeInfo="igu">
-          <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
-          <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
-          <property name="name" nameId="tpck.1169194664001" value="translation" />
-          <property name="isFinal" nameId="tpee.1176718929932" value="false" />
-          <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7147596757071641435" nodeInfo="nn" />
-          <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="7147596757071656619" nodeInfo="in" />
-          <node role="initializer" roleId="tpee.1068431790190" type="tnjx.MultilingualJavaString" typeId="tnjx.2510545900188478754" id="7147596757071656664" nodeInfo="ng">
-            <link role="key" roleId="sxyo.2510545900188083932" targetNodeId="7147596757067451739" resolveInfo="testKey" />
+    <node concept="1qefOq" id="6cLnm66Zapj" role="1SKRRt">
+      <node concept="312cEu" id="6cLnm66Zapv" role="1qenE9">
+        <property role="2bfB8j" value="true" />
+        <property role="TrG5h" value="TestClass" />
+        <node concept="312cEg" id="6cLnm66Zb9w" role="jymVt">
+          <property role="34CwA1" value="false" />
+          <property role="eg7rD" value="false" />
+          <property role="TrG5h" value="translation" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3Tm1VV" id="6cLnm66ZjHr" role="1B3o_S" />
+          <node concept="17QB3L" id="6cLnm66ZnqF" role="1tU5fm" />
+          <node concept="3ZQQOj" id="6cLnm66Znro" role="33vP2m">
+            <ref role="3ZOmrH" node="6cLnm66JkPr" resolve="testKey" />
           </node>
         </node>
-        <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7147596757071603296" nodeInfo="nn" />
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="7147596757071639995" nodeInfo="ng">
-          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="7147596757071640345" nodeInfo="ng" />
+        <node concept="3Tm1VV" id="6cLnm66Zapw" role="1B3o_S" />
+        <node concept="7CXmI" id="6cLnm66ZjmV" role="lGtFl">
+          <node concept="7OXhh" id="6cLnm66Zjsp" role="7EUXB" />
         </node>
       </node>
     </node>
-  </root>
-  <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="9087294576174523711" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="RichGenerationTest" />
-    <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="9087294576185356582" nodeInfo="igu">
-      <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
-      <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="translation" />
-      <property name="isFinal" nameId="tpee.1176718929932" value="false" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9087294576185356524" nodeInfo="nn" />
-      <node role="type" roleId="tpee.5680397130376446158" type="tnjx.MultilingualJavaStringType" typeId="tnjx.2510545900188478756" id="9087294576185356575" nodeInfo="ig" />
-      <node role="initializer" roleId="tpee.1068431790190" type="tnjx.MultilingualJavaRichString" typeId="tnjx.9087294576173492452" id="9087294576185356669" nodeInfo="ng">
-        <link role="key" roleId="tnjx.9087294576173869709" targetNodeId="9087294576181054593" resolveInfo="richKeyDouble" />
-        <node role="expressions" roleId="tnjx.9087294576176418090" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9087294576185356739" nodeInfo="nn">
-          <property name="value" nameId="tpee.1068580320021" value="10" />
+  </node>
+  <node concept="312cEu" id="7Ssz$kYdQkZ">
+    <property role="TrG5h" value="RichGenerationTest" />
+    <node concept="312cEg" id="7Ssz$kYRb4A" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="translation" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="7Ssz$kYRb3G" role="1B3o_S" />
+      <node concept="3ZQQOl" id="7Ssz$kYRb4v" role="1tU5fm" />
+      <node concept="10eMqx" id="7Ssz$kYRb5X" role="33vP2m">
+        <ref role="3ZOmrH" node="7Ssz$kYAKM1" resolve="richKeyDouble" />
+        <node concept="3cmrfG" id="7Ssz$kYRb73" role="10icdJ">
+          <property role="3cmrfH" value="10" />
         </node>
-        <node role="expressions" roleId="tnjx.9087294576176418090" type="tpee.FloatingPointConstant" typeId="tpee.1111509017652" id="9087294576185356884" nodeInfo="nn">
-          <property name="value" nameId="tpee.1113006610751" value="20.0" />
-        </node>
-      </node>
-    </node>
-    <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="9087294576185356959" nodeInfo="igu">
-      <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
-      <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="translation2" />
-      <property name="isFinal" nameId="tpee.1176718929932" value="false" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9087294576185356960" nodeInfo="nn" />
-      <node role="type" roleId="tpee.5680397130376446158" type="tnjx.MultilingualJavaStringType" typeId="tnjx.2510545900188478756" id="9087294576185356961" nodeInfo="ig" />
-      <node role="initializer" roleId="tpee.1068431790190" type="tnjx.MultilingualJavaRichString" typeId="tnjx.9087294576173492452" id="9087294576185356962" nodeInfo="ng">
-        <link role="key" roleId="tnjx.9087294576173869709" targetNodeId="9087294576181057134" resolveInfo="richKeyDoubleSwapped" />
-        <node role="expressions" roleId="tnjx.9087294576176418090" type="tpee.FloatingPointConstant" typeId="tpee.1111509017652" id="9087294576185356964" nodeInfo="nn">
-          <property name="value" nameId="tpee.1113006610751" value="20.0" />
-        </node>
-        <node role="expressions" roleId="tnjx.9087294576176418090" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9087294576185356963" nodeInfo="nn">
-          <property name="value" nameId="tpee.1068580320021" value="10" />
+        <node concept="3b6qkQ" id="7Ssz$kYRb9k" role="10icdJ">
+          <property role="$nhwW" value="20.0" />
         </node>
       </node>
     </node>
-    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9087294576174523712" nodeInfo="nn" />
-  </root>
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="9087294576176795985" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="TestRichStringMessageKey" />
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576176796037" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.RichStringMessageKey" typeId="tnjx.9087294576173493898" id="9087294576176796040" nodeInfo="ng">
-        <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-        <property name="name" nameId="tpck.1169194664001" value="myKey" />
-        <node role="richDefault" roleId="tnjx.9087294576173815031" type="spci.RichString" typeId="spci.3354025285337049262" id="9087294576176796041" nodeInfo="ng">
-          <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="3091065834761822383" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3091065834761822384" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="str " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="3091065834761825330" nodeInfo="ng">
-              <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="1" />
-              <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204348" resolveInfo="FormatCategoryGeneralObject" />
-              <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="3091065834761825331" nodeInfo="nn" />
-              <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralString" typeId="spci.3354025285337562289" id="3091065834761825332" nodeInfo="ng" />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3091065834761825004" nodeInfo="ng" />
-          </node>
+    <node concept="312cEg" id="7Ssz$kYRbav" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="translation2" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="7Ssz$kYRbaw" role="1B3o_S" />
+      <node concept="3ZQQOl" id="7Ssz$kYRbax" role="1tU5fm" />
+      <node concept="10eMqx" id="7Ssz$kYRbay" role="33vP2m">
+        <ref role="3ZOmrH" node="7Ssz$kYALpI" resolve="richKeyDoubleSwapped" />
+        <node concept="3b6qkQ" id="7Ssz$kYRba$" role="10icdJ">
+          <property role="$nhwW" value="20.0" />
+        </node>
+        <node concept="3cmrfG" id="7Ssz$kYRbaz" role="10icdJ">
+          <property role="3cmrfH" value="10" />
         </node>
       </node>
     </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="3091065834761900680" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.RichStringMessageKey" typeId="tnjx.9087294576173493898" id="3091065834761900681" nodeInfo="ng">
-        <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-        <property name="name" nameId="tpck.1169194664001" value="myKey" />
-        <node role="richDefault" roleId="tnjx.9087294576173815031" type="spci.RichString" typeId="spci.3354025285337049262" id="3091065834761900682" nodeInfo="ng">
-          <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="3091065834761900683" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3091065834761900684" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="str " />
+    <node concept="3Tm1VV" id="7Ssz$kYdQl0" role="1B3o_S" />
+  </node>
+  <node concept="1lH9Xt" id="7Ssz$kYmx5h">
+    <property role="TrG5h" value="TestRichStringMessageKey" />
+    <node concept="1qefOq" id="7Ssz$kYmx65" role="1SKRRt">
+      <node concept="10eM3f" id="7Ssz$kYmx68" role="1qenE9">
+        <property role="3MtHw8" value=" " />
+        <property role="TrG5h" value="myKey" />
+        <node concept="EICMk" id="7Ssz$kYmx69" role="10c1EM">
+          <node concept="19SGf9" id="2F_EZZykM2J" role="EI3Hj">
+            <node concept="19SUe$" id="2F_EZZykM2K" role="19SJt6">
+              <property role="19SUeA" value="str " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="3091065834761900685" nodeInfo="ng">
-              <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="1" />
-              <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204348" resolveInfo="FormatCategoryGeneralObject" />
-              <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="3091065834761900686" nodeInfo="nn" />
-              <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralString" typeId="spci.3354025285337562289" id="3091065834761900687" nodeInfo="ng" />
+            <node concept="109AVY" id="2F_EZZykMKM" role="19SJt6">
+              <property role="109Bl9" value="1" />
+              <ref role="109YLs" to="spci:6Go9U2y2EQW" resolve="FormatCategoryGeneralObject" />
+              <node concept="10Nm6u" id="2F_EZZykMKN" role="394o9o" />
+              <node concept="EGHyb" id="2F_EZZykMKO" role="394o9n" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3091065834761900690" nodeInfo="ng" />
+            <node concept="19SUe$" id="2F_EZZykMFG" role="19SJt6" />
           </node>
         </node>
       </node>
     </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="3091065834761899365" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.RichStringMessageKey" typeId="tnjx.9087294576173493898" id="3091065834761899366" nodeInfo="ng">
-        <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-        <property name="name" nameId="tpck.1169194664001" value="myKey" />
-        <node role="richDefault" roleId="tnjx.9087294576173815031" type="spci.RichString" typeId="spci.3354025285337049262" id="3091065834761899367" nodeInfo="ng">
-          <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="3091065834761899368" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3091065834761899369" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="str " />
+    <node concept="1qefOq" id="2F_EZZyl5a8" role="1SKRRt">
+      <node concept="10eM3f" id="2F_EZZyl5a9" role="1qenE9">
+        <property role="3MtHw8" value=" " />
+        <property role="TrG5h" value="myKey" />
+        <node concept="EICMk" id="2F_EZZyl5aa" role="10c1EM">
+          <node concept="19SGf9" id="2F_EZZyl5ab" role="EI3Hj">
+            <node concept="19SUe$" id="2F_EZZyl5ac" role="19SJt6">
+              <property role="19SUeA" value="str " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="3091065834761899370" nodeInfo="ng">
-              <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="1" />
-              <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204348" resolveInfo="FormatCategoryGeneralObject" />
-              <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="3091065834761899371" nodeInfo="nn" />
-              <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralString" typeId="spci.3354025285337562289" id="3091065834761899372" nodeInfo="ng" />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3091065834761899373" nodeInfo="ng">
-                <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="3091065834761899374" nodeInfo="ng">
-                  <node role="errorRef" roleId="tp5g.8489045168660938517" type="tp5g.ReportErrorStatementReference" typeId="tp5g.4531408400484511853" id="3091065834761899375" nodeInfo="ng">
-                    <link role="declaration" roleId="tp5g.4531408400484511854" targetNodeId="d6tz.9087294576176770059" />
+            <node concept="109AVY" id="2F_EZZyl5ad" role="19SJt6">
+              <property role="109Bl9" value="1" />
+              <ref role="109YLs" to="spci:6Go9U2y2EQW" resolve="FormatCategoryGeneralObject" />
+              <node concept="10Nm6u" id="2F_EZZyl5ae" role="394o9o" />
+              <node concept="EGHyb" id="2F_EZZyl5af" role="394o9n" />
+            </node>
+            <node concept="19SUe$" id="2F_EZZyl5ai" role="19SJt6" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="2F_EZZyl4P_" role="1SKRRt">
+      <node concept="10eM3f" id="2F_EZZyl4PA" role="1qenE9">
+        <property role="3MtHw8" value=" " />
+        <property role="TrG5h" value="myKey" />
+        <node concept="EICMk" id="2F_EZZyl4PB" role="10c1EM">
+          <node concept="19SGf9" id="2F_EZZyl4PC" role="EI3Hj">
+            <node concept="19SUe$" id="2F_EZZyl4PD" role="19SJt6">
+              <property role="19SUeA" value="str " />
+            </node>
+            <node concept="109AVY" id="2F_EZZyl4PE" role="19SJt6">
+              <property role="109Bl9" value="1" />
+              <ref role="109YLs" to="spci:6Go9U2y2EQW" resolve="FormatCategoryGeneralObject" />
+              <node concept="10Nm6u" id="2F_EZZyl4PF" role="394o9o" />
+              <node concept="EGHyb" id="2F_EZZyl4PG" role="394o9n" />
+              <node concept="7CXmI" id="2F_EZZyl4PH" role="lGtFl">
+                <node concept="1TM$A" id="2F_EZZyl4PI" role="7EUXB">
+                  <node concept="2PYRI3" id="2F_EZZyl4PJ" role="3lydEf">
+                    <ref role="39XzEq" to="d6tz:7Ssz$kYmqKb" />
                   </node>
                 </node>
               </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3091065834761899376" nodeInfo="ng" />
-            <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="3091065834761899377" nodeInfo="ng">
-              <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="1" />
-              <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204348" resolveInfo="FormatCategoryGeneralObject" />
-              <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="3091065834761899378" nodeInfo="nn" />
-              <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralString" typeId="spci.3354025285337562289" id="3091065834761899379" nodeInfo="ng" />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="3091065834761899380" nodeInfo="ng">
-                <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="3091065834761899381" nodeInfo="ng">
-                  <node role="errorRef" roleId="tp5g.8489045168660938517" type="tp5g.ReportErrorStatementReference" typeId="tp5g.4531408400484511853" id="3091065834761899382" nodeInfo="ng">
-                    <link role="declaration" roleId="tp5g.4531408400484511854" targetNodeId="d6tz.9087294576176770059" />
+            <node concept="19SUe$" id="2F_EZZyl4PK" role="19SJt6" />
+            <node concept="109AVY" id="2F_EZZyl4PL" role="19SJt6">
+              <property role="109Bl9" value="1" />
+              <ref role="109YLs" to="spci:6Go9U2y2EQW" resolve="FormatCategoryGeneralObject" />
+              <node concept="10Nm6u" id="2F_EZZyl4PM" role="394o9o" />
+              <node concept="EGHyb" id="2F_EZZyl4PN" role="394o9n" />
+              <node concept="7CXmI" id="2F_EZZyl4PO" role="lGtFl">
+                <node concept="1TM$A" id="2F_EZZyl4PP" role="7EUXB">
+                  <node concept="2PYRI3" id="2F_EZZyl4PQ" role="3lydEf">
+                    <ref role="39XzEq" to="d6tz:7Ssz$kYmqKb" />
                   </node>
                 </node>
               </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3091065834761899383" nodeInfo="ng" />
+            <node concept="19SUe$" id="2F_EZZyl4PR" role="19SJt6" />
           </node>
         </node>
       </node>
     </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576178463989" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.RichStringMessageKey" typeId="tnjx.9087294576173493898" id="9087294576178463990" nodeInfo="ng">
-        <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-        <property name="name" nameId="tpck.1169194664001" value="myKey" />
-        <node role="richDefault" roleId="tnjx.9087294576173815031" type="spci.RichString" typeId="spci.3354025285337049262" id="9087294576178463991" nodeInfo="ng">
-          <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="9087294576178463992" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576178463993" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="str " />
+    <node concept="1qefOq" id="7Ssz$kYsSjP" role="1SKRRt">
+      <node concept="10eM3f" id="7Ssz$kYsSjQ" role="1qenE9">
+        <property role="3MtHw8" value=" " />
+        <property role="TrG5h" value="myKey" />
+        <node concept="EICMk" id="7Ssz$kYsSjR" role="10c1EM">
+          <node concept="19SGf9" id="7Ssz$kYsSjS" role="EI3Hj">
+            <node concept="19SUe$" id="7Ssz$kYsSjT" role="19SJt6">
+              <property role="19SUeA" value="str " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576178463994" nodeInfo="ng">
-              <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="1" />
-              <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204348" resolveInfo="FormatCategoryGeneralObject" />
-              <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576178463995" nodeInfo="nn" />
-              <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralString" typeId="spci.3354025285337562289" id="9087294576178463996" nodeInfo="ng" />
+            <node concept="109AVY" id="7Ssz$kYsSjU" role="19SJt6">
+              <property role="109Bl9" value="1" />
+              <ref role="109YLs" to="spci:6Go9U2y2EQW" resolve="FormatCategoryGeneralObject" />
+              <node concept="10Nm6u" id="7Ssz$kYsSjV" role="394o9o" />
+              <node concept="EGHyb" id="7Ssz$kYsSjW" role="394o9n" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576178463997" nodeInfo="ng" />
-            <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576178463998" nodeInfo="ng">
-              <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="2" />
-              <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204348" resolveInfo="FormatCategoryGeneralObject" />
-              <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576178463999" nodeInfo="nn" />
-              <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralString" typeId="spci.3354025285337562289" id="9087294576178464000" nodeInfo="ng" />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576178664182" nodeInfo="ng">
-                <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="9087294576178664183" nodeInfo="ng">
-                  <node role="errorRef" roleId="tp5g.8489045168660938517" type="tp5g.ReportErrorStatementReference" typeId="tp5g.4531408400484511853" id="9087294576178664212" nodeInfo="ng">
-                    <link role="declaration" roleId="tp5g.4531408400484511854" targetNodeId="d6tz.9087294576176770059" />
+            <node concept="19SUe$" id="7Ssz$kYsSjX" role="19SJt6" />
+            <node concept="109AVY" id="7Ssz$kYsSjY" role="19SJt6">
+              <property role="109Bl9" value="2" />
+              <ref role="109YLs" to="spci:6Go9U2y2EQW" resolve="FormatCategoryGeneralObject" />
+              <node concept="10Nm6u" id="7Ssz$kYsSjZ" role="394o9o" />
+              <node concept="EGHyb" id="7Ssz$kYsSk0" role="394o9n" />
+              <node concept="7CXmI" id="7Ssz$kYtDbQ" role="lGtFl">
+                <node concept="1TM$A" id="7Ssz$kYtDbR" role="7EUXB">
+                  <node concept="2PYRI3" id="7Ssz$kYtDck" role="3lydEf">
+                    <ref role="39XzEq" to="d6tz:7Ssz$kYmqKb" />
                   </node>
                 </node>
               </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576178464390" nodeInfo="ng" />
-            <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576178464230" nodeInfo="ng">
-              <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="3" />
-              <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204348" resolveInfo="FormatCategoryGeneralObject" />
-              <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576178464231" nodeInfo="nn" />
-              <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralString" typeId="spci.3354025285337562289" id="9087294576178464232" nodeInfo="ng" />
+            <node concept="19SUe$" id="7Ssz$kYsSq6" role="19SJt6" />
+            <node concept="109AVY" id="7Ssz$kYsSnA" role="19SJt6">
+              <property role="109Bl9" value="3" />
+              <ref role="109YLs" to="spci:6Go9U2y2EQW" resolve="FormatCategoryGeneralObject" />
+              <node concept="10Nm6u" id="7Ssz$kYsSnB" role="394o9o" />
+              <node concept="EGHyb" id="7Ssz$kYsSnC" role="394o9n" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576178464735" nodeInfo="ng" />
-            <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576178464263" nodeInfo="ng">
-              <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="2" />
-              <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204348" resolveInfo="FormatCategoryGeneralObject" />
-              <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576178464264" nodeInfo="nn" />
-              <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralString" typeId="spci.3354025285337562289" id="9087294576178464265" nodeInfo="ng" />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576178664215" nodeInfo="ng">
-                <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="9087294576178664216" nodeInfo="ng">
-                  <node role="errorRef" roleId="tp5g.8489045168660938517" type="tp5g.ReportErrorStatementReference" typeId="tp5g.4531408400484511853" id="9087294576178664245" nodeInfo="ng">
-                    <link role="declaration" roleId="tp5g.4531408400484511854" targetNodeId="d6tz.9087294576176770059" />
+            <node concept="19SUe$" id="7Ssz$kYsSvv" role="19SJt6" />
+            <node concept="109AVY" id="7Ssz$kYsSo7" role="19SJt6">
+              <property role="109Bl9" value="2" />
+              <ref role="109YLs" to="spci:6Go9U2y2EQW" resolve="FormatCategoryGeneralObject" />
+              <node concept="10Nm6u" id="7Ssz$kYsSo8" role="394o9o" />
+              <node concept="EGHyb" id="7Ssz$kYsSo9" role="394o9n" />
+              <node concept="7CXmI" id="7Ssz$kYtDcn" role="lGtFl">
+                <node concept="1TM$A" id="7Ssz$kYtDco" role="7EUXB">
+                  <node concept="2PYRI3" id="7Ssz$kYtDcP" role="3lydEf">
+                    <ref role="39XzEq" to="d6tz:7Ssz$kYmqKb" />
                   </node>
                 </node>
               </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576178464001" nodeInfo="ng" />
+            <node concept="19SUe$" id="7Ssz$kYsSk1" role="19SJt6" />
           </node>
         </node>
       </node>
     </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576177656880" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.RichStringMessageKey" typeId="tnjx.9087294576173493898" id="9087294576177656945" nodeInfo="ng">
-        <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-        <property name="name" nameId="tpck.1169194664001" value="myKey" />
-        <node role="richDefault" roleId="tnjx.9087294576173815031" type="spci.RichString" typeId="spci.3354025285337049262" id="9087294576177656946" nodeInfo="ng">
-          <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="9087294576177656947" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576177656948" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="str " />
+    <node concept="1qefOq" id="7Ssz$kYpNgK" role="1SKRRt">
+      <node concept="10eM3f" id="7Ssz$kYpNhL" role="1qenE9">
+        <property role="3MtHw8" value=" " />
+        <property role="TrG5h" value="myKey" />
+        <node concept="EICMk" id="7Ssz$kYpNhM" role="10c1EM">
+          <node concept="19SGf9" id="7Ssz$kYpNhN" role="EI3Hj">
+            <node concept="19SUe$" id="7Ssz$kYpNhO" role="19SJt6">
+              <property role="19SUeA" value="str " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576177656949" nodeInfo="ng">
-              <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="1" />
-              <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204348" resolveInfo="FormatCategoryGeneralObject" />
-              <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576177656950" nodeInfo="nn" />
-              <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralString" typeId="spci.3354025285337562289" id="9087294576177656951" nodeInfo="ng" />
+            <node concept="109AVY" id="7Ssz$kYpNhP" role="19SJt6">
+              <property role="109Bl9" value="1" />
+              <ref role="109YLs" to="spci:6Go9U2y2EQW" resolve="FormatCategoryGeneralObject" />
+              <node concept="10Nm6u" id="7Ssz$kYpNhQ" role="394o9o" />
+              <node concept="EGHyb" id="7Ssz$kYpNhR" role="394o9n" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576177656952" nodeInfo="ng" />
-            <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576177656953" nodeInfo="ng">
-              <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="3" />
-              <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204348" resolveInfo="FormatCategoryGeneralObject" />
-              <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576177656954" nodeInfo="nn" />
-              <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralString" typeId="spci.3354025285337562289" id="9087294576177656955" nodeInfo="ng" />
+            <node concept="19SUe$" id="7Ssz$kYpNhS" role="19SJt6" />
+            <node concept="109AVY" id="7Ssz$kYpNhT" role="19SJt6">
+              <property role="109Bl9" value="3" />
+              <ref role="109YLs" to="spci:6Go9U2y2EQW" resolve="FormatCategoryGeneralObject" />
+              <node concept="10Nm6u" id="7Ssz$kYpNhU" role="394o9o" />
+              <node concept="EGHyb" id="7Ssz$kYpNhV" role="394o9n" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576177656956" nodeInfo="ng" />
+            <node concept="19SUe$" id="7Ssz$kYpNhW" role="19SJt6" />
           </node>
         </node>
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576178664499" nodeInfo="ng">
-          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="9087294576178664500" nodeInfo="ng">
-            <node role="errorRef" roleId="tp5g.8489045168660938517" type="tp5g.ReportErrorStatementReference" typeId="tp5g.4531408400484511853" id="9087294576178664507" nodeInfo="ng">
-              <link role="declaration" roleId="tp5g.4531408400484511854" targetNodeId="d6tz.9087294576176750451" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576178464992" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.RichStringMessageKey" typeId="tnjx.9087294576173493898" id="9087294576178464993" nodeInfo="ng">
-        <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-        <property name="name" nameId="tpck.1169194664001" value="myKey" />
-        <node role="richDefault" roleId="tnjx.9087294576173815031" type="spci.RichString" typeId="spci.3354025285337049262" id="9087294576178464994" nodeInfo="ng">
-          <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="9087294576178464995" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576178464996" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="str " />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576178464997" nodeInfo="ng">
-              <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="1" />
-              <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204348" resolveInfo="FormatCategoryGeneralObject" />
-              <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576178464998" nodeInfo="nn" />
-              <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralString" typeId="spci.3354025285337562289" id="9087294576178464999" nodeInfo="ng" />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576178465000" nodeInfo="ng" />
-            <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576178465001" nodeInfo="ng">
-              <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="8" />
-              <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204348" resolveInfo="FormatCategoryGeneralObject" />
-              <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576178465002" nodeInfo="nn" />
-              <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralString" typeId="spci.3354025285337562289" id="9087294576178465003" nodeInfo="ng" />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576178465004" nodeInfo="ng" />
-          </node>
-        </node>
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576178664510" nodeInfo="ng">
-          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="9087294576178664511" nodeInfo="ng">
-            <node role="errorRef" roleId="tp5g.8489045168660938517" type="tp5g.ReportErrorStatementReference" typeId="tp5g.4531408400484511853" id="9087294576178664518" nodeInfo="ng">
-              <link role="declaration" roleId="tp5g.4531408400484511854" targetNodeId="d6tz.9087294576176750451" />
+        <node concept="7CXmI" id="7Ssz$kYtDgN" role="lGtFl">
+          <node concept="1TM$A" id="7Ssz$kYtDgO" role="7EUXB">
+            <node concept="2PYRI3" id="7Ssz$kYtDgV" role="3lydEf">
+              <ref role="39XzEq" to="d6tz:7Ssz$kYmlXN" />
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576178466444" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.RichStringMessageKey" typeId="tnjx.9087294576173493898" id="9087294576178466445" nodeInfo="ng">
-        <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-        <property name="name" nameId="tpck.1169194664001" value="myKey" />
-        <node role="richDefault" roleId="tnjx.9087294576173815031" type="spci.RichString" typeId="spci.3354025285337049262" id="9087294576178466446" nodeInfo="ng">
-          <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="9087294576178466447" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576178466448" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="str " />
+    <node concept="1qefOq" id="7Ssz$kYsSzw" role="1SKRRt">
+      <node concept="10eM3f" id="7Ssz$kYsSzx" role="1qenE9">
+        <property role="3MtHw8" value=" " />
+        <property role="TrG5h" value="myKey" />
+        <node concept="EICMk" id="7Ssz$kYsSzy" role="10c1EM">
+          <node concept="19SGf9" id="7Ssz$kYsSzz" role="EI3Hj">
+            <node concept="19SUe$" id="7Ssz$kYsSz$" role="19SJt6">
+              <property role="19SUeA" value="str " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576178466449" nodeInfo="ng">
-              <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="1" />
-              <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204348" resolveInfo="FormatCategoryGeneralObject" />
-              <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576178466450" nodeInfo="nn" />
-              <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralString" typeId="spci.3354025285337562289" id="9087294576178466451" nodeInfo="ng" />
+            <node concept="109AVY" id="7Ssz$kYsSz_" role="19SJt6">
+              <property role="109Bl9" value="1" />
+              <ref role="109YLs" to="spci:6Go9U2y2EQW" resolve="FormatCategoryGeneralObject" />
+              <node concept="10Nm6u" id="7Ssz$kYsSzA" role="394o9o" />
+              <node concept="EGHyb" id="7Ssz$kYsSzB" role="394o9n" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576178466452" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="" />
+            <node concept="19SUe$" id="7Ssz$kYsSzC" role="19SJt6" />
+            <node concept="109AVY" id="7Ssz$kYsSzD" role="19SJt6">
+              <property role="109Bl9" value="8" />
+              <ref role="109YLs" to="spci:6Go9U2y2EQW" resolve="FormatCategoryGeneralObject" />
+              <node concept="10Nm6u" id="7Ssz$kYsSzE" role="394o9o" />
+              <node concept="EGHyb" id="7Ssz$kYsSzF" role="394o9n" />
+            </node>
+            <node concept="19SUe$" id="7Ssz$kYsSzG" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="7CXmI" id="7Ssz$kYtDgY" role="lGtFl">
+          <node concept="1TM$A" id="7Ssz$kYtDgZ" role="7EUXB">
+            <node concept="2PYRI3" id="7Ssz$kYtDh6" role="3lydEf">
+              <ref role="39XzEq" to="d6tz:7Ssz$kYmlXN" />
             </node>
           </node>
         </node>
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576178664521" nodeInfo="ng">
-          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="9087294576178664524" nodeInfo="ng" />
-        </node>
       </node>
     </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576178465407" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.RichStringMessageKey" typeId="tnjx.9087294576173493898" id="9087294576178465408" nodeInfo="ng">
-        <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-        <property name="name" nameId="tpck.1169194664001" value="myKey" />
-        <node role="richDefault" roleId="tnjx.9087294576173815031" type="spci.RichString" typeId="spci.3354025285337049262" id="9087294576178465409" nodeInfo="ng">
-          <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="9087294576178465410" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576178465411" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="str " />
+    <node concept="1qefOq" id="7Ssz$kYsSUc" role="1SKRRt">
+      <node concept="10eM3f" id="7Ssz$kYsSUd" role="1qenE9">
+        <property role="3MtHw8" value=" " />
+        <property role="TrG5h" value="myKey" />
+        <node concept="EICMk" id="7Ssz$kYsSUe" role="10c1EM">
+          <node concept="19SGf9" id="7Ssz$kYsSUf" role="EI3Hj">
+            <node concept="19SUe$" id="7Ssz$kYsSUg" role="19SJt6">
+              <property role="19SUeA" value="str " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576178465412" nodeInfo="ng">
-              <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="1" />
-              <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204348" resolveInfo="FormatCategoryGeneralObject" />
-              <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576178465413" nodeInfo="nn" />
-              <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralString" typeId="spci.3354025285337562289" id="9087294576178465414" nodeInfo="ng" />
+            <node concept="109AVY" id="7Ssz$kYsSUh" role="19SJt6">
+              <property role="109Bl9" value="1" />
+              <ref role="109YLs" to="spci:6Go9U2y2EQW" resolve="FormatCategoryGeneralObject" />
+              <node concept="10Nm6u" id="7Ssz$kYsSUi" role="394o9o" />
+              <node concept="EGHyb" id="7Ssz$kYsSUj" role="394o9n" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576178465415" nodeInfo="ng" />
-            <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576178465416" nodeInfo="ng">
-              <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="2" />
-              <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204348" resolveInfo="FormatCategoryGeneralObject" />
-              <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576178465417" nodeInfo="nn" />
-              <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralString" typeId="spci.3354025285337562289" id="9087294576178465418" nodeInfo="ng" />
+            <node concept="19SUe$" id="7Ssz$kYsSUk" role="19SJt6">
+              <property role="19SUeA" value="" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576178465419" nodeInfo="ng" />
           </node>
         </node>
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576178664527" nodeInfo="ng">
-          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="9087294576178664530" nodeInfo="ng" />
+        <node concept="7CXmI" id="7Ssz$kYtDh9" role="lGtFl">
+          <node concept="7OXhh" id="7Ssz$kYtDhc" role="7EUXB" />
         </node>
       </node>
     </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576178467874" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.RichStringMessageKey" typeId="tnjx.9087294576173493898" id="9087294576178467875" nodeInfo="ng">
-        <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-        <property name="name" nameId="tpck.1169194664001" value="myKey" />
-        <node role="richDefault" roleId="tnjx.9087294576173815031" type="spci.RichString" typeId="spci.3354025285337049262" id="9087294576178467876" nodeInfo="ng">
-          <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="9087294576178467877" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576178467878" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="str " />
+    <node concept="1qefOq" id="7Ssz$kYsSDZ" role="1SKRRt">
+      <node concept="10eM3f" id="7Ssz$kYsSE0" role="1qenE9">
+        <property role="3MtHw8" value=" " />
+        <property role="TrG5h" value="myKey" />
+        <node concept="EICMk" id="7Ssz$kYsSE1" role="10c1EM">
+          <node concept="19SGf9" id="7Ssz$kYsSE2" role="EI3Hj">
+            <node concept="19SUe$" id="7Ssz$kYsSE3" role="19SJt6">
+              <property role="19SUeA" value="str " />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576178467879" nodeInfo="ng">
-              <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="1" />
-              <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204348" resolveInfo="FormatCategoryGeneralObject" />
-              <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576178467880" nodeInfo="nn" />
-              <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralString" typeId="spci.3354025285337562289" id="9087294576178467881" nodeInfo="ng" />
+            <node concept="109AVY" id="7Ssz$kYsSE4" role="19SJt6">
+              <property role="109Bl9" value="1" />
+              <ref role="109YLs" to="spci:6Go9U2y2EQW" resolve="FormatCategoryGeneralObject" />
+              <node concept="10Nm6u" id="7Ssz$kYsSE5" role="394o9o" />
+              <node concept="EGHyb" id="7Ssz$kYsSE6" role="394o9n" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576178467882" nodeInfo="ng" />
-            <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576178467883" nodeInfo="ng">
-              <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="2" />
-              <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204306" resolveInfo="FormatCategoryIntegralInt" />
-              <node role="flags" roleId="spci.7716961532366136821" type="spci.ConversionFlagEncloseNegativeInParentheses" typeId="spci.3354025285337560770" id="9087294576187181651" nodeInfo="ng" />
-              <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576178467884" nodeInfo="nn" />
-              <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionIntegralDecimal" typeId="spci.3354025285337562900" id="9087294576187181617" nodeInfo="ng" />
+            <node concept="19SUe$" id="7Ssz$kYsSE7" role="19SJt6" />
+            <node concept="109AVY" id="7Ssz$kYsSE8" role="19SJt6">
+              <property role="109Bl9" value="2" />
+              <ref role="109YLs" to="spci:6Go9U2y2EQW" resolve="FormatCategoryGeneralObject" />
+              <node concept="10Nm6u" id="7Ssz$kYsSE9" role="394o9o" />
+              <node concept="EGHyb" id="7Ssz$kYsSEa" role="394o9n" />
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576178468634" nodeInfo="ng" />
-            <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576178468425" nodeInfo="ng">
-              <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="3" />
-              <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204348" resolveInfo="FormatCategoryGeneralObject" />
-              <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576178468426" nodeInfo="nn" />
-              <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionGeneralString" typeId="spci.3354025285337562289" id="9087294576178468427" nodeInfo="ng" />
-            </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576178467886" nodeInfo="ng" />
+            <node concept="19SUe$" id="7Ssz$kYsSEb" role="19SJt6" />
           </node>
         </node>
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576178664533" nodeInfo="ng">
-          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="9087294576178664536" nodeInfo="ng" />
+        <node concept="7CXmI" id="7Ssz$kYtDhf" role="lGtFl">
+          <node concept="7OXhh" id="7Ssz$kYtDhi" role="7EUXB" />
         </node>
       </node>
     </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576178664539" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.RichStringMessageKey" typeId="tnjx.9087294576173493898" id="9087294576178664788" nodeInfo="ng">
-        <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-        <property name="name" nameId="tpck.1169194664001" value="myKey" />
-        <node role="richDefault" roleId="tnjx.9087294576173815031" type="spci.RichString" typeId="spci.3354025285337049262" id="9087294576178664789" nodeInfo="ng">
-          <node role="text" roleId="spci.3354025285337210729" type="87nw.Text" typeId="87nw.2557074442922380897" id="9087294576178664790" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576178664808" nodeInfo="ng" />
-            <node role="words" roleId="87nw.2557074442922392302" type="tnjx.MultilingualInlineFormat" typeId="tnjx.9087294576174751931" id="9087294576178664806" nodeInfo="ng">
-              <property name="argumentIndex" nameId="tnjx.9087294576174758668" value="1" />
-              <link role="argumentCategory" roleId="tnjx.9087294576174785049" targetNodeId="spci.7716961532366204306" resolveInfo="FormatCategoryIntegralInt" />
-              <node role="expression" roleId="spci.7716961532366136824" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9087294576178664807" nodeInfo="nn" />
-              <node role="conversion" roleId="spci.7716961532366136823" type="spci.ConversionFloatingPointDecimal" typeId="spci.3354025285337563602" id="9087294576178664824" nodeInfo="ng">
-                <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576178664855" nodeInfo="ng">
-                  <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="9087294576178664856" nodeInfo="ng" />
+    <node concept="1qefOq" id="7Ssz$kYsTgy" role="1SKRRt">
+      <node concept="10eM3f" id="7Ssz$kYsTgz" role="1qenE9">
+        <property role="3MtHw8" value=" " />
+        <property role="TrG5h" value="myKey" />
+        <node concept="EICMk" id="7Ssz$kYsTg$" role="10c1EM">
+          <node concept="19SGf9" id="7Ssz$kYsTg_" role="EI3Hj">
+            <node concept="19SUe$" id="7Ssz$kYsTgA" role="19SJt6">
+              <property role="19SUeA" value="str " />
+            </node>
+            <node concept="109AVY" id="7Ssz$kYsTgB" role="19SJt6">
+              <property role="109Bl9" value="1" />
+              <ref role="109YLs" to="spci:6Go9U2y2EQW" resolve="FormatCategoryGeneralObject" />
+              <node concept="10Nm6u" id="7Ssz$kYsTgC" role="394o9o" />
+              <node concept="EGHyb" id="7Ssz$kYsTgD" role="394o9n" />
+            </node>
+            <node concept="19SUe$" id="7Ssz$kYsTgE" role="19SJt6" />
+            <node concept="109AVY" id="7Ssz$kYsTgF" role="19SJt6">
+              <property role="109Bl9" value="2" />
+              <ref role="109YLs" to="spci:6Go9U2y2EQi" resolve="FormatCategoryIntegralInt" />
+              <node concept="EGHbS" id="7Ssz$kYY8Dj" role="394o9l" />
+              <node concept="10Nm6u" id="7Ssz$kYsTgG" role="394o9o" />
+              <node concept="EGHGI" id="7Ssz$kYY8CL" role="394o9n" />
+            </node>
+            <node concept="19SUe$" id="7Ssz$kYsTsq" role="19SJt6" />
+            <node concept="109AVY" id="7Ssz$kYsTp9" role="19SJt6">
+              <property role="109Bl9" value="3" />
+              <ref role="109YLs" to="spci:6Go9U2y2EQW" resolve="FormatCategoryGeneralObject" />
+              <node concept="10Nm6u" id="7Ssz$kYsTpa" role="394o9o" />
+              <node concept="EGHyb" id="7Ssz$kYsTpb" role="394o9n" />
+            </node>
+            <node concept="19SUe$" id="7Ssz$kYsTgI" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="7CXmI" id="7Ssz$kYtDhl" role="lGtFl">
+          <node concept="7OXhh" id="7Ssz$kYtDho" role="7EUXB" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="7Ssz$kYtDhr" role="1SKRRt">
+      <node concept="10eM3f" id="7Ssz$kYtDlk" role="1qenE9">
+        <property role="3MtHw8" value=" " />
+        <property role="TrG5h" value="myKey" />
+        <node concept="EICMk" id="7Ssz$kYtDll" role="10c1EM">
+          <node concept="19SGf9" id="7Ssz$kYtDlm" role="EI3Hj">
+            <node concept="19SUe$" id="7Ssz$kYtDlC" role="19SJt6" />
+            <node concept="109AVY" id="7Ssz$kYtDlA" role="19SJt6">
+              <property role="109Bl9" value="1" />
+              <ref role="109YLs" to="spci:6Go9U2y2EQi" resolve="FormatCategoryIntegralInt" />
+              <node concept="10Nm6u" id="7Ssz$kYtDlB" role="394o9o" />
+              <node concept="EGEnC" id="7Ssz$kYtDlS" role="394o9n">
+                <node concept="7CXmI" id="7Ssz$kYtDmn" role="lGtFl">
+                  <node concept="1TM$A" id="7Ssz$kYtDmo" role="7EUXB" />
                 </node>
               </node>
             </node>
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="9087294576178664809" nodeInfo="ng" />
+            <node concept="19SUe$" id="7Ssz$kYtDlD" role="19SJt6" />
           </node>
         </node>
       </node>
     </node>
-  </root>
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="9087294576179582743" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="TestMultilingualJavaRichString" />
-    <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="3091065834758277096" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="MultilingualJavaRichStringTest1" />
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="3091065834758277097" nodeInfo="in" />
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3091065834758277101" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3091065834761938942" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="3091065834761938968" nodeInfo="nn">
-            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="k7g3.~Locale" resolveInfo="Locale" />
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="k7g3.~Locale%dsetDefault(java%dutil%dLocale)%cvoid" resolveInfo="setDefault" />
-            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="3091065834761938989" nodeInfo="nn">
-              <link role="classifier" roleId="tpee.1144433057691" targetNodeId="k7g3.~Locale" resolveInfo="Locale" />
-              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="k7g3.~Locale%dUS" resolveInfo="US" />
+  </node>
+  <node concept="1lH9Xt" id="7Ssz$kYx9sn">
+    <property role="TrG5h" value="TestMultilingualJavaRichString" />
+    <node concept="1LZb2c" id="2F_EZZy7gvC" role="1SL9yI">
+      <property role="TrG5h" value="MultilingualJavaRichStringTest1" />
+      <node concept="3cqZAl" id="2F_EZZy7gvD" role="3clF45" />
+      <node concept="3clFbS" id="2F_EZZy7gvH" role="3clF47">
+        <node concept="3clFbF" id="2F_EZZylevY" role="3cqZAp">
+          <node concept="2YIFZM" id="2F_EZZylewo" role="3clFbG">
+            <ref role="1Pybhc" to="k7g3:~Locale" resolve="Locale" />
+            <ref role="37wK5l" to="k7g3:~Locale.setDefault(java.util.Locale):void" resolve="setDefault" />
+            <node concept="10M0yZ" id="2F_EZZylewH" role="37wK5m">
+              <ref role="1PxDUh" to="k7g3:~Locale" resolve="Locale" />
+              <ref role="3cqZAo" to="k7g3:~Locale.US" resolve="US" />
             </node>
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="3091065834758282195" nodeInfo="nn">
-          <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3091065834758323504" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="some 10 and 20.000000 other" />
+        <node concept="3vlDli" id="2F_EZZy7hJj" role="3cqZAp">
+          <node concept="Xl_RD" id="2F_EZZy7rOK" role="3tpDZB">
+            <property role="Xl_RC" value="some 10 and 20.000000 other" />
           </node>
-          <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3091065834758321946" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3091065834758282505" nodeInfo="nn">
-              <node role="creator" roleId="tpee.1145553007750" type="tpee.DefaultClassCreator" typeId="tpee.2820489544401957797" id="3091065834758321904" nodeInfo="nn">
-                <link role="classifier" roleId="tpee.2820489544401957798" targetNodeId="9087294576174523711" resolveInfo="RichGenerationTest" />
+          <node concept="2OqwBi" id="2F_EZZy7rsq" role="3tpDZA">
+            <node concept="2ShNRf" id="2F_EZZy7hO9" role="2Oq$k0">
+              <node concept="HV5vD" id="2F_EZZy7rrK" role="2ShVmc">
+                <ref role="HV5vE" node="7Ssz$kYdQkZ" resolve="RichGenerationTest" />
               </node>
             </node>
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.FieldReferenceOperation" typeId="tpee.1197029447546" id="3091065834758322730" nodeInfo="nn">
-              <link role="fieldDeclaration" roleId="tpee.1197029500499" targetNodeId="9087294576185356582" resolveInfo="translation" />
+            <node concept="2OwXpG" id="2F_EZZy7rCE" role="2OqNvi">
+              <ref role="2Oxat5" node="7Ssz$kYRb4A" resolve="translation" />
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="3091065834761663290" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="MultilingualJavaRichStringTest2" />
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="3091065834761663291" nodeInfo="in" />
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3091065834761663292" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3091065834761939059" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="3091065834761939060" nodeInfo="nn">
-            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="k7g3.~Locale" resolveInfo="Locale" />
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="k7g3.~Locale%dsetDefault(java%dutil%dLocale)%cvoid" resolveInfo="setDefault" />
-            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="3091065834761939061" nodeInfo="nn">
-              <link role="classifier" roleId="tpee.1144433057691" targetNodeId="k7g3.~Locale" resolveInfo="Locale" />
-              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="k7g3.~Locale%dUS" resolveInfo="US" />
+    <node concept="1LZb2c" id="2F_EZZykbcU" role="1SL9yI">
+      <property role="TrG5h" value="MultilingualJavaRichStringTest2" />
+      <node concept="3cqZAl" id="2F_EZZykbcV" role="3clF45" />
+      <node concept="3clFbS" id="2F_EZZykbcW" role="3clF47">
+        <node concept="3clFbF" id="2F_EZZylexN" role="3cqZAp">
+          <node concept="2YIFZM" id="2F_EZZylexO" role="3clFbG">
+            <ref role="1Pybhc" to="k7g3:~Locale" resolve="Locale" />
+            <ref role="37wK5l" to="k7g3:~Locale.setDefault(java.util.Locale):void" resolve="setDefault" />
+            <node concept="10M0yZ" id="2F_EZZylexP" role="37wK5m">
+              <ref role="1PxDUh" to="k7g3:~Locale" resolve="Locale" />
+              <ref role="3cqZAo" to="k7g3:~Locale.US" resolve="US" />
             </node>
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="3091065834761663299" nodeInfo="nn">
-          <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3091065834761663300" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="some 0000000010 and      20.00 other" />
+        <node concept="3vlDli" id="2F_EZZykbd3" role="3cqZAp">
+          <node concept="Xl_RD" id="2F_EZZykbd4" role="3tpDZB">
+            <property role="Xl_RC" value="some 0000000010 and      20.00 other" />
           </node>
-          <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3091065834761663301" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3091065834761663302" nodeInfo="nn">
-              <node role="creator" roleId="tpee.1145553007750" type="tpee.DefaultClassCreator" typeId="tpee.2820489544401957797" id="3091065834761663303" nodeInfo="nn">
-                <link role="classifier" roleId="tpee.2820489544401957798" targetNodeId="9087294576174523711" resolveInfo="RichGenerationTest" />
+          <node concept="2OqwBi" id="2F_EZZykbd5" role="3tpDZA">
+            <node concept="2ShNRf" id="2F_EZZykbd6" role="2Oq$k0">
+              <node concept="HV5vD" id="2F_EZZykbd7" role="2ShVmc">
+                <ref role="HV5vE" node="7Ssz$kYdQkZ" resolve="RichGenerationTest" />
               </node>
             </node>
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.FieldReferenceOperation" typeId="tpee.1197029447546" id="3091065834761663304" nodeInfo="nn">
-              <link role="fieldDeclaration" roleId="tpee.1197029500499" targetNodeId="9087294576185356959" resolveInfo="translation2" />
+            <node concept="2OwXpG" id="2F_EZZykbd8" role="2OqNvi">
+              <ref role="2Oxat5" node="7Ssz$kYRbav" resolve="translation2" />
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576179583295" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.MultilingualJavaRichString" typeId="tnjx.9087294576173492452" id="9087294576179726049" nodeInfo="ng">
-        <link role="key" roleId="tnjx.9087294576173869709" targetNodeId="9087294576174565558" resolveInfo="richKeyEmpty" />
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576185222613" nodeInfo="ng">
-          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="9087294576185222622" nodeInfo="ng" />
+    <node concept="1qefOq" id="7Ssz$kYx9$Z" role="1SKRRt">
+      <node concept="10eMqx" id="7Ssz$kYxGrx" role="1qenE9">
+        <ref role="3ZOmrH" node="7Ssz$kYe0yQ" resolve="richKeyEmpty" />
+        <node concept="7CXmI" id="7Ssz$kYQEnl" role="lGtFl">
+          <node concept="7OXhh" id="7Ssz$kYQEnu" role="7EUXB" />
         </node>
       </node>
     </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576181058890" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.MultilingualJavaRichString" typeId="tnjx.9087294576173492452" id="9087294576181058891" nodeInfo="ng">
-        <link role="key" roleId="tnjx.9087294576173869709" targetNodeId="9087294576174565558" resolveInfo="richKeyEmpty" />
-        <node role="expressions" roleId="tnjx.9087294576176418090" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9087294576181058906" nodeInfo="nn">
-          <property name="value" nameId="tpee.1068580320021" value="1" />
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576185222625" nodeInfo="ng">
-            <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="9087294576185222626" nodeInfo="ng" />
+    <node concept="1qefOq" id="7Ssz$kYALPa" role="1SKRRt">
+      <node concept="10eMqx" id="7Ssz$kYALPb" role="1qenE9">
+        <ref role="3ZOmrH" node="7Ssz$kYe0yQ" resolve="richKeyEmpty" />
+        <node concept="3cmrfG" id="7Ssz$kYALPq" role="10icdJ">
+          <property role="3cmrfH" value="1" />
+          <node concept="7CXmI" id="7Ssz$kYQEnx" role="lGtFl">
+            <node concept="1TM$A" id="7Ssz$kYQEny" role="7EUXB" />
           </node>
         </node>
       </node>
     </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576181058921" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.MultilingualJavaRichString" typeId="tnjx.9087294576173492452" id="9087294576181058922" nodeInfo="ng">
-        <link role="key" roleId="tnjx.9087294576173869709" targetNodeId="9087294576174565558" resolveInfo="richKeyEmpty" />
-        <node role="expressions" roleId="tnjx.9087294576176418090" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9087294576181058923" nodeInfo="nn">
-          <property name="value" nameId="tpee.1068580320021" value="1" />
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576185238942" nodeInfo="ng">
-            <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="9087294576185238943" nodeInfo="ng" />
+    <node concept="1qefOq" id="7Ssz$kYALPD" role="1SKRRt">
+      <node concept="10eMqx" id="7Ssz$kYALPE" role="1qenE9">
+        <ref role="3ZOmrH" node="7Ssz$kYe0yQ" resolve="richKeyEmpty" />
+        <node concept="3cmrfG" id="7Ssz$kYALPF" role="10icdJ">
+          <property role="3cmrfH" value="1" />
+          <node concept="7CXmI" id="7Ssz$kYQImu" role="lGtFl">
+            <node concept="1TM$A" id="7Ssz$kYQImv" role="7EUXB" />
           </node>
         </node>
-        <node role="expressions" roleId="tnjx.9087294576176418090" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9087294576181058969" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="" />
+        <node concept="Xl_RD" id="7Ssz$kYALQp" role="10icdJ">
+          <property role="Xl_RC" value="" />
         </node>
       </node>
     </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576181058992" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.MultilingualJavaRichString" typeId="tnjx.9087294576173492452" id="9087294576181058993" nodeInfo="ng">
-        <link role="key" roleId="tnjx.9087294576173869709" targetNodeId="9087294576181051542" resolveInfo="richKeySingle" />
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576185238956" nodeInfo="ng">
-          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="9087294576185238957" nodeInfo="ng" />
+    <node concept="1qefOq" id="7Ssz$kYALQK" role="1SKRRt">
+      <node concept="10eMqx" id="7Ssz$kYALQL" role="1qenE9">
+        <ref role="3ZOmrH" node="7Ssz$kYAK2m" resolve="richKeySingle" />
+        <node concept="7CXmI" id="7Ssz$kYQImG" role="lGtFl">
+          <node concept="1TM$A" id="7Ssz$kYQImH" role="7EUXB" />
         </node>
       </node>
     </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576185222103" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.MultilingualJavaRichString" typeId="tnjx.9087294576173492452" id="9087294576185222104" nodeInfo="ng">
-        <link role="key" roleId="tnjx.9087294576173869709" targetNodeId="9087294576181051542" resolveInfo="richKeySingle" />
-        <node role="expressions" roleId="tnjx.9087294576176418090" type="tpee.Expression" typeId="tpee.1068431790191" id="9087294576185222313" nodeInfo="nn">
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576185238970" nodeInfo="ng">
-            <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="9087294576185238971" nodeInfo="ng" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576181059080" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.MultilingualJavaRichString" typeId="tnjx.9087294576173492452" id="9087294576181059105" nodeInfo="ng">
-        <link role="key" roleId="tnjx.9087294576173869709" targetNodeId="9087294576181051542" resolveInfo="richKeySingle" />
-        <node role="expressions" roleId="tnjx.9087294576176418090" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9087294576181059120" nodeInfo="nn">
-          <property name="value" nameId="tpee.1068580320021" value="1" />
-        </node>
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576185238978" nodeInfo="ng">
-          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="9087294576185239009" nodeInfo="ng" />
-        </node>
-      </node>
-    </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576181059157" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.MultilingualJavaRichString" typeId="tnjx.9087294576173492452" id="9087294576181059158" nodeInfo="ng">
-        <link role="key" roleId="tnjx.9087294576173869709" targetNodeId="9087294576181051542" resolveInfo="richKeySingle" />
-        <node role="expressions" roleId="tnjx.9087294576176418090" type="tpee.FloatingPointConstant" typeId="tpee.1111509017652" id="9087294576181059250" nodeInfo="nn">
-          <property name="value" nameId="tpee.1113006610751" value="1.0" />
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576185239012" nodeInfo="ng">
-            <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="9087294576185239013" nodeInfo="ng" />
+    <node concept="1qefOq" id="7Ssz$kYQEfn" role="1SKRRt">
+      <node concept="10eMqx" id="7Ssz$kYQEfo" role="1qenE9">
+        <ref role="3ZOmrH" node="7Ssz$kYAK2m" resolve="richKeySingle" />
+        <node concept="33vP2n" id="7Ssz$kYQEiD" role="10icdJ">
+          <node concept="7CXmI" id="7Ssz$kYQImU" role="lGtFl">
+            <node concept="1TM$A" id="7Ssz$kYQImV" role="7EUXB" />
           </node>
         </node>
       </node>
     </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576181059299" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.MultilingualJavaRichString" typeId="tnjx.9087294576173492452" id="9087294576181059386" nodeInfo="ng">
-        <link role="key" roleId="tnjx.9087294576173869709" targetNodeId="9087294576181054593" resolveInfo="richKeyDouble" />
-        <node role="expressions" roleId="tnjx.9087294576176418090" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9087294576181059401" nodeInfo="nn">
-          <property name="value" nameId="tpee.1068580320021" value="1" />
+    <node concept="1qefOq" id="7Ssz$kYALS8" role="1SKRRt">
+      <node concept="10eMqx" id="7Ssz$kYALSx" role="1qenE9">
+        <ref role="3ZOmrH" node="7Ssz$kYAK2m" resolve="richKeySingle" />
+        <node concept="3cmrfG" id="7Ssz$kYALSK" role="10icdJ">
+          <property role="3cmrfH" value="1" />
         </node>
-        <node role="expressions" roleId="tnjx.9087294576176418090" type="tpee.FloatingPointConstant" typeId="tpee.1111509017652" id="9087294576184986624" nodeInfo="nn">
-          <property name="value" nameId="tpee.1113006610751" value="1.0" />
-        </node>
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576185239054" nodeInfo="ng">
-          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="9087294576185239097" nodeInfo="ng" />
+        <node concept="7CXmI" id="7Ssz$kYQIn2" role="lGtFl">
+          <node concept="7OXhh" id="7Ssz$kYQInx" role="7EUXB" />
         </node>
       </node>
     </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576181059544" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.MultilingualJavaRichString" typeId="tnjx.9087294576173492452" id="9087294576181059545" nodeInfo="ng">
-        <link role="key" roleId="tnjx.9087294576173869709" targetNodeId="9087294576181054593" resolveInfo="richKeyDouble" />
-        <node role="expressions" roleId="tnjx.9087294576176418090" type="tpee.FloatingPointConstant" typeId="tpee.1111509017652" id="9087294576181059547" nodeInfo="nn">
-          <property name="value" nameId="tpee.1113006610751" value="0.1" />
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576185239100" nodeInfo="ng">
-            <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="9087294576185239101" nodeInfo="ng" />
-          </node>
-        </node>
-        <node role="expressions" roleId="tnjx.9087294576176418090" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9087294576181059787" nodeInfo="nn">
-          <property name="value" nameId="tpee.1068580320021" value="1" />
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576185239158" nodeInfo="ng">
-            <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="9087294576185239159" nodeInfo="ng" />
+    <node concept="1qefOq" id="7Ssz$kYALTl" role="1SKRRt">
+      <node concept="10eMqx" id="7Ssz$kYALTm" role="1qenE9">
+        <ref role="3ZOmrH" node="7Ssz$kYAK2m" resolve="richKeySingle" />
+        <node concept="3b6qkQ" id="7Ssz$kYALUM" role="10icdJ">
+          <property role="$nhwW" value="1.0" />
+          <node concept="7CXmI" id="7Ssz$kYQIn$" role="lGtFl">
+            <node concept="1TM$A" id="7Ssz$kYQIn_" role="7EUXB" />
           </node>
         </node>
       </node>
     </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576181059854" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.MultilingualJavaRichString" typeId="tnjx.9087294576173492452" id="9087294576181060035" nodeInfo="ng">
-        <link role="key" roleId="tnjx.9087294576173869709" targetNodeId="9087294576181057134" resolveInfo="richKeyDoubleSwapped" />
-        <node role="expressions" roleId="tnjx.9087294576176418090" type="tpee.FloatingPointConstant" typeId="tpee.1111509017652" id="9087294576181060050" nodeInfo="nn">
-          <property name="value" nameId="tpee.1113006610751" value="0.1" />
+    <node concept="1qefOq" id="7Ssz$kYALVz" role="1SKRRt">
+      <node concept="10eMqx" id="7Ssz$kYALWU" role="1qenE9">
+        <ref role="3ZOmrH" node="7Ssz$kYAKM1" resolve="richKeyDouble" />
+        <node concept="3cmrfG" id="7Ssz$kYALX9" role="10icdJ">
+          <property role="3cmrfH" value="1" />
         </node>
-        <node role="expressions" roleId="tnjx.9087294576176418090" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9087294576181060100" nodeInfo="nn">
-          <property name="value" nameId="tpee.1068580320021" value="1" />
+        <node concept="3b6qkQ" id="7Ssz$kYPKK0" role="10icdJ">
+          <property role="$nhwW" value="1.0" />
         </node>
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576185239216" nodeInfo="ng">
-          <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.CheckNodeForErrorMessagesOperation" typeId="tp5g.1215607067978" id="9087294576185239259" nodeInfo="ng" />
+        <node concept="7CXmI" id="7Ssz$kYQIoe" role="lGtFl">
+          <node concept="7OXhh" id="7Ssz$kYQIoT" role="7EUXB" />
         </node>
       </node>
     </node>
-    <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576181060157" nodeInfo="ng">
-      <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tnjx.MultilingualJavaRichString" typeId="tnjx.9087294576173492452" id="9087294576181060158" nodeInfo="ng">
-        <link role="key" roleId="tnjx.9087294576173869709" targetNodeId="9087294576181057134" resolveInfo="richKeyDoubleSwapped" />
-        <node role="expressions" roleId="tnjx.9087294576176418090" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9087294576181060441" nodeInfo="nn">
-          <property name="value" nameId="tpee.1068580320021" value="1" />
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="9087294576185239262" nodeInfo="ng">
-            <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="9087294576185239263" nodeInfo="ng" />
+    <node concept="1qefOq" id="7Ssz$kYALZo" role="1SKRRt">
+      <node concept="10eMqx" id="7Ssz$kYALZp" role="1qenE9">
+        <ref role="3ZOmrH" node="7Ssz$kYAKM1" resolve="richKeyDouble" />
+        <node concept="3b6qkQ" id="7Ssz$kYALZr" role="10icdJ">
+          <property role="$nhwW" value="0.1" />
+          <node concept="7CXmI" id="7Ssz$kYQIoW" role="lGtFl">
+            <node concept="1TM$A" id="7Ssz$kYQIoX" role="7EUXB" />
           </node>
         </node>
-        <node role="expressions" roleId="tnjx.9087294576176418090" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9087294576181060160" nodeInfo="nn">
-          <property name="value" nameId="tpee.1068580320021" value="1" />
+        <node concept="3cmrfG" id="7Ssz$kYAM3b" role="10icdJ">
+          <property role="3cmrfH" value="1" />
+          <node concept="7CXmI" id="7Ssz$kYQIpQ" role="lGtFl">
+            <node concept="1TM$A" id="7Ssz$kYQIpR" role="7EUXB" />
+          </node>
         </node>
       </node>
     </node>
-  </root>
+    <node concept="1qefOq" id="7Ssz$kYAM4e" role="1SKRRt">
+      <node concept="10eMqx" id="7Ssz$kYAM73" role="1qenE9">
+        <ref role="3ZOmrH" node="7Ssz$kYALpI" resolve="richKeyDoubleSwapped" />
+        <node concept="3b6qkQ" id="7Ssz$kYAM7i" role="10icdJ">
+          <property role="$nhwW" value="0.1" />
+        </node>
+        <node concept="3cmrfG" id="7Ssz$kYAM84" role="10icdJ">
+          <property role="3cmrfH" value="1" />
+        </node>
+        <node concept="7CXmI" id="7Ssz$kYQIqK" role="lGtFl">
+          <node concept="7OXhh" id="7Ssz$kYQIrr" role="7EUXB" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="7Ssz$kYAM8X" role="1SKRRt">
+      <node concept="10eMqx" id="7Ssz$kYAM8Y" role="1qenE9">
+        <ref role="3ZOmrH" node="7Ssz$kYALpI" resolve="richKeyDoubleSwapped" />
+        <node concept="3cmrfG" id="7Ssz$kYAMdp" role="10icdJ">
+          <property role="3cmrfH" value="1" />
+          <node concept="7CXmI" id="7Ssz$kYQIru" role="lGtFl">
+            <node concept="1TM$A" id="7Ssz$kYQIrv" role="7EUXB" />
+          </node>
+        </node>
+        <node concept="3cmrfG" id="7Ssz$kYAM90" role="10icdJ">
+          <property role="3cmrfH" value="1" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

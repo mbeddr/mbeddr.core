@@ -71,10 +71,10 @@
             <external-mapping>
               <mapping-set>
                 <mapping-set-element>
-                  <mapping-node modelUID="r:836cb6d0-7a03-40c1-8e6a-754de267c44b(com.mbeddr.mpsutil.refactoring.generator.template.main@generator)" nodeID="7518061998923596581" />
+                  <mapping-node modelUID="f47c72c0-b22e-4aef-a0e3-1bd67990c535/r:836cb6d0-7a03-40c1-8e6a-754de267c44b(com.mbeddr.mpsutil.refactoring#7518061998923596540/com.mbeddr.mpsutil.refactoring.generator.template.main@generator)" nodeID="7518061998923596581" />
                 </mapping-set-element>
                 <mapping-set-element>
-                  <mapping-node modelUID="r:836cb6d0-7a03-40c1-8e6a-754de267c44b(com.mbeddr.mpsutil.refactoring.generator.template.main@generator)" nodeID="3897771026685219934" />
+                  <mapping-node modelUID="f47c72c0-b22e-4aef-a0e3-1bd67990c535/r:836cb6d0-7a03-40c1-8e6a-754de267c44b(com.mbeddr.mpsutil.refactoring#7518061998923596540/com.mbeddr.mpsutil.refactoring.generator.template.main@generator)" nodeID="3897771026685219934" />
                 </mapping-set-element>
               </mapping-set>
             </external-mapping>
@@ -82,7 +82,7 @@
           <lesser-priority-mapping>
             <generator generatorUID="1d6e05d7-9de9-40a7-9dad-7b8444280942(jetbrains.mps.lang.plugin#1203080439937)" />
             <external-mapping>
-              <mapping-node modelUID="r:00000000-0000-4000-0000-011c89590369(jetbrains.mps.lang.plugin.generator.baseLanguage.template.main@generator)" nodeID="1204478979997" />
+              <mapping-node modelUID="1d6e05d7-9de9-40a7-9dad-7b8444280942/r:00000000-0000-4000-0000-011c89590369(jetbrains.mps.lang.plugin#1203080439937/jetbrains.mps.lang.plugin.generator.baseLanguage.template.main@generator)" nodeID="1204478979997" />
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>

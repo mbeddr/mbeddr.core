@@ -62,7 +62,7 @@
           <greater-priority-mapping>
             <generator generatorUID="61e59150-761a-49c0-a214-8c839856658b(com.mbeddr.mpsutil.buildutil#6600513366548883903)" />
             <external-mapping>
-              <mapping-node modelUID="r:7d44b6d8-1405-4a1a-a4a6-fe8f86615439(com.mbeddr.mpsutil.buildutil.generator.template.main@generator)" nodeID="6600513366548883904" />
+              <mapping-node modelUID="61e59150-761a-49c0-a214-8c839856658b/r:7d44b6d8-1405-4a1a-a4a6-fe8f86615439(com.mbeddr.mpsutil.buildutil#6600513366548883903/com.mbeddr.mpsutil.buildutil.generator.template.main@generator)" nodeID="6600513366548883904" />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
@@ -76,7 +76,7 @@
           <greater-priority-mapping>
             <generator generatorUID="61e59150-761a-49c0-a214-8c839856658b(com.mbeddr.mpsutil.buildutil#6600513366548883903)" />
             <external-mapping>
-              <mapping-node modelUID="r:dac974ca-e827-4809-a62a-5199eda4a1c2(com.mbeddr.mpsutil.buildutil.generator.buildhack@generator)" nodeID="1812588819720603811" />
+              <mapping-node modelUID="61e59150-761a-49c0-a214-8c839856658b/r:dac974ca-e827-4809-a62a-5199eda4a1c2(com.mbeddr.mpsutil.buildutil#6600513366548883903/com.mbeddr.mpsutil.buildutil.generator.buildhack@generator)" nodeID="1812588819720603811" />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>

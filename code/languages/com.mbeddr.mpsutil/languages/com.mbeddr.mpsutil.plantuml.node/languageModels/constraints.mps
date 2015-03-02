@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:3f85b1df-7ad5-49ef-adbb-c9b6ee6971a7(com.mbeddr.mpsutil.plantuml.node.constraints)">
+<model ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:3f85b1df-7ad5-49ef-adbb-c9b6ee6971a7(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.constraints)">
   <persistence version="9" />
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
