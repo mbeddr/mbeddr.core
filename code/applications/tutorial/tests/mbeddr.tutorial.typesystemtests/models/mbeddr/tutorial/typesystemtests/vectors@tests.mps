@@ -3,12 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
     <use id="3d0be1cf-4156-4c3c-ac37-fef83237d8e2" name="mbeddr.tutorial.vectors" version="-1" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
   </languages>
   <imports />
   <registry>
@@ -18,6 +18,9 @@
       </concept>
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
+      <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
+        <child id="7763322639126652758" name="baseType" index="2umbIo" />
+      </concept>
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
       </concept>
@@ -47,7 +50,6 @@
     <language id="3d0be1cf-4156-4c3c-ac37-fef83237d8e2" name="mbeddr.tutorial.vectors">
       <concept id="1090431670134051260" name="mbeddr.tutorial.vectors.structure.IMatrixType" flags="ng" index="2h3eLJ">
         <property id="1090431670134076215" name="dimensionsRows" index="2h38V$" />
-        <child id="5509345450571797374" name="baseType" index="iizc1" />
       </concept>
       <concept id="5509345450571795940" name="mbeddr.tutorial.vectors.structure.CrossProductExpression" flags="ng" index="iiyQr" />
       <concept id="5509345450571797372" name="mbeddr.tutorial.vectors.structure.MatrixType" flags="ng" index="iizc3">
@@ -108,7 +110,7 @@
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
             <property role="2h38V$" value="3" />
-            <node concept="26Vqpq" id="3zMtnux$4Zl" role="iizc1">
+            <node concept="26Vqpq" id="1iWV611svIP" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>
@@ -144,7 +146,7 @@
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
             <property role="2h38V$" value="3" />
-            <node concept="26Vqpq" id="3zMtnux$4Zy" role="iizc1">
+            <node concept="26Vqpq" id="1iWV611swJS" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>
@@ -166,7 +168,7 @@
             <property role="2c7vTL" value="false" />
             <property role="2h38V$" value="2" />
             <property role="iizc2" value="3" />
-            <node concept="26Vqpq" id="3zMtnux$4ZD" role="iizc1">
+            <node concept="26Vqpq" id="1iWV611sxPG" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>
@@ -216,7 +218,7 @@
             <property role="2c7vTL" value="false" />
             <property role="2h38V$" value="3" />
             <property role="iizc2" value="1" />
-            <node concept="26Vqpq" id="3zMtnux$4ZV" role="iizc1">
+            <node concept="26Vqpq" id="1iWV611sygK" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>
@@ -241,7 +243,7 @@
             <property role="2c7vTL" value="false" />
             <property role="2h38V$" value="1" />
             <property role="iizc2" value="3" />
-            <node concept="26Vqpq" id="3zMtnux$504" role="iizc1">
+            <node concept="26Vqpq" id="1iWV611szhS" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>

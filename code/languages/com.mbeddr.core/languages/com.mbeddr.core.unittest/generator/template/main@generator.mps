@@ -43,8 +43,8 @@
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
     <import index="t6w" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.smodel.generator.smodelAdapter(MPS.Core/jetbrains.mps.lang.smodel.generator.smodelAdapter@java_stub)" />
-    <import index="9g8w" ref="r:5ed6e5dc-ec13-45f6-960b-a889d781d323(com.mbeddr.core.unittest.messages)" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
+    <import index="9g8w" ref="r:5ed6e5dc-ec13-45f6-960b-a889d781d323(com.mbeddr.core.unittest.messages)" />
     <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -93,7 +93,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
@@ -517,6 +517,9 @@
       <node concept="1Koe21" id="2MbfxrZIJeL" role="1lVwrX">
         <node concept="N3F5e" id="2MbfxrZIJeN" role="1Koe22">
           <property role="TrG5h" value="Dummy" />
+          <node concept="3GEVxB" id="5usoWIKsNVe" role="2OODSX">
+            <ref role="3GEb4d" to="9g8w:5usoWIKp1Ew" resolve="UnitTestMessages" />
+          </node>
           <node concept="N3Fnx" id="2MbfxrZJ0wX" role="N3F5h">
             <property role="TrG5h" value="f" />
             <property role="2OOxQR" value="false" />
@@ -636,9 +639,6 @@
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>
-          </node>
-          <node concept="3GEVxB" id="5usoWIKsNVe" role="2OODSX">
-            <ref role="3GEb4d" to="9g8w:5usoWIKp1Ew" resolve="UnitTestMessages" />
           </node>
         </node>
       </node>
@@ -816,6 +816,9 @@
       <node concept="1Koe21" id="3kEjc_WIGzZ" role="1lVwrX">
         <node concept="N3F5e" id="EAKPqgNx4U" role="1Koe22">
           <property role="TrG5h" value="dummy" />
+          <node concept="3GEVxB" id="5usoWIKsLBg" role="2OODSX">
+            <ref role="3GEb4d" to="9g8w:5usoWIKp1Ew" resolve="UnitTestMessages" />
+          </node>
           <node concept="N3Fnx" id="3kEjc_WIG$1" role="N3F5h">
             <property role="TrG5h" value="dummy" />
             <node concept="3XIRFW" id="3kEjc_WIG$3" role="3XIRFX">
@@ -920,9 +923,6 @@
             </node>
             <node concept="19Rifw" id="4WTYg$PQmNQ" role="2C2TGm" />
           </node>
-          <node concept="3GEVxB" id="5usoWIKsLBg" role="2OODSX">
-            <ref role="3GEb4d" to="9g8w:5usoWIKp1Ew" resolve="UnitTestMessages" />
-          </node>
         </node>
       </node>
     </node>
@@ -956,6 +956,9 @@
       <node concept="1Koe21" id="6Iyv0noEGJb" role="1lVwrX">
         <node concept="N3F5e" id="6Iyv0noEGJc" role="1Koe22">
           <property role="TrG5h" value="dummy" />
+          <node concept="3GEVxB" id="5usoWIKsOjO" role="2OODSX">
+            <ref role="3GEb4d" to="9g8w:5usoWIKp1Ew" resolve="UnitTestMessages" />
+          </node>
           <node concept="N3Fnx" id="6Iyv0noEGJh" role="N3F5h">
             <property role="TrG5h" value="dummy" />
             <node concept="3XIRFW" id="6Iyv0noEGJi" role="3XIRFX">
@@ -1167,8 +1170,8 @@
                                     <property role="TrG5h" value="alias" />
                                     <node concept="17QB3L" id="3IOp39jzuq7" role="1tU5fm" />
                                     <node concept="2YIFZM" id="3IOp39jGBb$" role="33vP2m">
-                                      <ref role="1Pybhc" to="t6w:~SConceptOperations" resolve="SConceptOperations" />
                                       <ref role="37wK5l" to="t6w:~SConceptOperations.conceptAlias(org.jetbrains.mps.openapi.language.SConcept):java.lang.String" resolve="conceptAlias" />
+                                      <ref role="1Pybhc" to="t6w:~SConceptOperations" resolve="SConceptOperations" />
                                       <node concept="10QFUN" id="3IOp39jGBb_" role="37wK5m">
                                         <node concept="2OqwBi" id="3IOp39jGBbA" role="10QFUP">
                                           <node concept="2OqwBi" id="3IOp39jGBbB" role="2Oq$k0">
@@ -1413,9 +1416,6 @@
             </node>
             <node concept="19Rifw" id="6Iyv0noEGKw" role="2C2TGm" />
           </node>
-          <node concept="3GEVxB" id="5usoWIKsOjO" role="2OODSX">
-            <ref role="3GEb4d" to="9g8w:5usoWIKp1Ew" resolve="UnitTestMessages" />
-          </node>
         </node>
       </node>
     </node>
@@ -1425,6 +1425,9 @@
       <node concept="1Koe21" id="O5IvPFxKQH" role="1lVwrX">
         <node concept="N3F5e" id="O5IvPFxL8u" role="1Koe22">
           <property role="TrG5h" value="dummy" />
+          <node concept="3GEVxB" id="5usoWIKsUQP" role="2OODSX">
+            <ref role="3GEb4d" to="9g8w:5usoWIKp1Ew" resolve="UnitTestMessages" />
+          </node>
           <node concept="2NXPZ9" id="O5IvPFxLek" role="N3F5h">
             <property role="TrG5h" value="empty_1418914136277_83" />
           </node>
@@ -1613,8 +1616,8 @@
                         <node concept="2vn4wP" id="O5IvPFyV94" role="3XIRFZ">
                           <property role="2vgHxy" value="theAssert" />
                           <node concept="2vn4wR" id="O5IvPFyV95" role="2vn6$T">
-                            <ref role="2vn4wS" to="9g8w:EAKPqgNvnJ" resolve="___testing" />
                             <ref role="2vn4wT" to="9g8w:kUiAaZgCrO" resolve="FAILED_INT_INT" />
+                            <ref role="2vn4wS" to="9g8w:EAKPqgNvnJ" resolve="___testing" />
                             <node concept="3TlMh9" id="O5IvPFyV96" role="2qqZAa">
                               <property role="2hmy$m" value="12" />
                               <node concept="17Uvod" id="O5IvPFyV97" role="lGtFl">
@@ -1846,9 +1849,6 @@
               <property role="2c7vTL" value="false" />
             </node>
           </node>
-          <node concept="3GEVxB" id="5usoWIKsUQP" role="2OODSX">
-            <ref role="3GEb4d" to="9g8w:5usoWIKp1Ew" resolve="UnitTestMessages" />
-          </node>
         </node>
       </node>
       <node concept="30G5F_" id="O5IvPFxG4Y" role="30HLyM">
@@ -1987,6 +1987,9 @@
       <node concept="1Koe21" id="1FzLn6k6pgp" role="1lVwrX">
         <node concept="N3F5e" id="EAKPqgN$jo" role="1Koe22">
           <property role="TrG5h" value="dummy" />
+          <node concept="3GEVxB" id="5usoWIKsYHr" role="2OODSX">
+            <ref role="3GEb4d" to="9g8w:5usoWIKp1Ew" resolve="UnitTestMessages" />
+          </node>
           <node concept="N3Fnx" id="1FzLn6k6pgr" role="N3F5h">
             <property role="TrG5h" value="dummy" />
             <node concept="3XIRFW" id="1FzLn6k6pgt" role="3XIRFX">
@@ -2072,9 +2075,6 @@
               </node>
             </node>
             <node concept="19Rifw" id="4WTYg$PQmMf" role="2C2TGm" />
-          </node>
-          <node concept="3GEVxB" id="5usoWIKsYHr" role="2OODSX">
-            <ref role="3GEb4d" to="9g8w:5usoWIKp1Ew" resolve="UnitTestMessages" />
           </node>
         </node>
       </node>
