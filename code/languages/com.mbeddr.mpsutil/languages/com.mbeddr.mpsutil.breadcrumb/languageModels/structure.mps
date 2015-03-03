@@ -24,13 +24,5 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="tpc2.1073389214265" resolveInfo="EditorCellModel" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5003834500847812161" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="BreadcrumbConfig" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="5003834500847812213" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="showBreadcrumb" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
-    </node>
-  </root>
 </model>
 
