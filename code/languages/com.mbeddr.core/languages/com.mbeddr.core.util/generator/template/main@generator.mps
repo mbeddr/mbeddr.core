@@ -102,7 +102,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -20216,8 +20216,8 @@
                     <node concept="3clFbF" id="5usoWIJrf3i" role="3cqZAp">
                       <node concept="2OqwBi" id="5usoWIJrfa6" role="3clFbG">
                         <node concept="30H73N" id="5usoWIJrf3h" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="5usoWIJrgbe" role="2OqNvi">
-                          <ref role="37wK5l" to="yi43:5usoWIJ3mG7" resolve="genMessageFunctionName" />
+                        <node concept="2qgKlT" id="7AKzm5p3avv" role="2OqNvi">
+                          <ref role="37wK5l" to="yi43:5oFMniD7s1q" resolve="counterVarName" />
                         </node>
                       </node>
                     </node>

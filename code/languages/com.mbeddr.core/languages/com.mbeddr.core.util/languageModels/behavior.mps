@@ -2112,7 +2112,7 @@
     <property role="3GE5qa" value="reporting" />
     <ref role="13h7C2" to="k146:2lgwE2U2X_J" resolve="MessageDefinition" />
     <node concept="13i0hz" id="5oFMniD7s1q" role="13h7CS">
-      <property role="TrG5h" value="counterVarName" />
+      <property role="TrG5h" value="genCounterVarName" />
       <node concept="3Tm1VV" id="5oFMniD7s1r" role="1B3o_S" />
       <node concept="3clFbS" id="5oFMniD7s1t" role="3clF47">
         <node concept="3clFbF" id="5oFMniD7s1v" role="3cqZAp">
