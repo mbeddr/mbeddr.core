@@ -676,6 +676,9 @@
         <property role="2c7vTL" value="false" />
       </node>
       <node concept="3XIRFW" id="3U3EZ$DP1az" role="c0Qz3">
+        <node concept="3t9XKO" id="48bQTSP5Fz$" role="3XIRFZ">
+          <ref role="3t9XKR" node="3U3EZ$DP1aT" resolve="instances" />
+        </node>
         <node concept="3XIRlf" id="3U3EZ$DP1br" role="3XIRFZ">
           <property role="TrG5h" value="res" />
           <node concept="26Vqqz" id="3U3EZ$DP1bs" role="2C2TGm">
