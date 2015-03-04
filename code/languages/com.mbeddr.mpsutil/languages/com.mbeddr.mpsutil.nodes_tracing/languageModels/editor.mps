@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:a0fc75dd-e49f-47a1-b615-f262ed6869ee(com.mbeddr.mpsutil.nodes_tracing.editor)">
+<model ref="6ea97c27-74ad-4032-843d-7b4da446dfc9/r:a0fc75dd-e49f-47a1-b615-f262ed6869ee(com.mbeddr.mpsutil.nodes_tracing/com.mbeddr.mpsutil.nodes_tracing.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="7jff" ref="r:9c151cdd-6b05-4d09-ad63-4b1c2ad6f9d3(com.mbeddr.mpsutil.nodes_tracing.structure)" implicit="true" />
+    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="7jff" ref="6ea97c27-74ad-4032-843d-7b4da446dfc9/r:9c151cdd-6b05-4d09-ad63-4b1c2ad6f9d3(com.mbeddr.mpsutil.nodes_tracing/com.mbeddr.mpsutil.nodes_tracing.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">

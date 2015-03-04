@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:8ca3da2f-40f7-4d57-b0a5-f7cbff2f8802(com.mbeddr.mpsutil.spreferences.context.generator.template.main@generator)">
+<model ref="12a47958-5e24-42f1-bf38-be7850bb6562/r:8ca3da2f-40f7-4d57-b0a5-f7cbff2f8802(com.mbeddr.mpsutil.spreferences.context#877857976372701843/com.mbeddr.mpsutil.spreferences.context.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />

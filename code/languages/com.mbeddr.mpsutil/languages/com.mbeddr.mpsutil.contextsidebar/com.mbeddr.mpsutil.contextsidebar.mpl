@@ -78,7 +78,7 @@
           <greater-priority-mapping>
             <generator generatorUID="b72a9fe8-3ac7-4aa1-b717-c49a212732e0(com.mbeddr.mpsutil.contextsidebar#7069137304558978068)" />
             <external-mapping>
-              <mapping-node modelUID="r:fab6326c-74ea-4663-800e-574f919c6554(com.mbeddr.mpsutil.contextsidebar.generator.template.main@generator)" nodeID="7069137304558978069" />
+              <mapping-node modelUID="b72a9fe8-3ac7-4aa1-b717-c49a212732e0/r:fab6326c-74ea-4663-800e-574f919c6554(com.mbeddr.mpsutil.contextsidebar#7069137304558978068/com.mbeddr.mpsutil.contextsidebar.generator.template.main@generator)" nodeID="7069137304558978069" />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
@@ -111,13 +111,13 @@
           <greater-priority-mapping>
             <generator generatorUID="b72a9fe8-3ac7-4aa1-b717-c49a212732e0(com.mbeddr.mpsutil.contextsidebar#7069137304558978068)" />
             <external-mapping>
-              <mapping-node modelUID="r:fab6326c-74ea-4663-800e-574f919c6554(com.mbeddr.mpsutil.contextsidebar.generator.template.main@generator)" nodeID="7069137304558978069" />
+              <mapping-node modelUID="b72a9fe8-3ac7-4aa1-b717-c49a212732e0/r:fab6326c-74ea-4663-800e-574f919c6554(com.mbeddr.mpsutil.contextsidebar#7069137304558978068/com.mbeddr.mpsutil.contextsidebar.generator.template.main@generator)" nodeID="7069137304558978069" />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
             <generator generatorUID="79a2d464-32b0-48d2-96f9-b40717277a07(jetbrains.mps.lang.intentions#1192798684353)" />
             <external-mapping>
-              <mapping-node modelUID="r:00000000-0000-4000-0000-011c89590354(jetbrains.mps.lang.intentions.generator.baseLanguage.template.main@generator)" nodeID="1192798704064" />
+              <mapping-node modelUID="79a2d464-32b0-48d2-96f9-b40717277a07/r:00000000-0000-4000-0000-011c89590354(jetbrains.mps.lang.intentions#1192798684353/jetbrains.mps.lang.intentions.generator.baseLanguage.template.main@generator)" nodeID="1192798704064" />
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>

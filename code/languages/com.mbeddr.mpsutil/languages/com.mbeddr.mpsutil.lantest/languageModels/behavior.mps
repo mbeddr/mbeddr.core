@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:170ef591-83b8-43a2-8998-a090f5a13f09(com.mbeddr.mpsutil.lantest.behavior)">
+<model ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:170ef591-83b8-43a2-8998-a090f5a13f09(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.behavior)">
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="9n5q" ref="r:b2118c37-6c67-489b-87f9-b422baeb8ff0(com.mbeddr.mpsutil.lantest.rt.gen)" />
-    <import index="gfdq" ref="r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest.structure)" />
-    <import index="cg7n" ref="r:958b1fc2-ce2f-49b5-9a5c-0628d05fdd4c(com.mbeddr.mpsutil.lantest.rt.seed)" />
-    <import index="7ai1" ref="r:b8065b2e-a033-48ba-9ab9-5b1ff3550962(com.mbeddr.mpsutil.lantest.rt.coverage)" />
-    <import index="v5ts" ref="r:d411f908-940a-47de-a6bb-6c4bd57886dd(com.mbeddr.mpsutil.lantest.rt.saver)" />
-    <import index="2l8" ref="r:bcbcc941-b1ce-4077-84a0-535ddfca3377(com.mbeddr.mpsutil.lantest.rt.filter)" />
+    <import index="9n5q" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:b2118c37-6c67-489b-87f9-b422baeb8ff0(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.gen)" />
+    <import index="gfdq" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.structure)" />
+    <import index="cg7n" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:958b1fc2-ce2f-49b5-9a5c-0628d05fdd4c(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.seed)" />
+    <import index="7ai1" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:b8065b2e-a033-48ba-9ab9-5b1ff3550962(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.coverage)" />
+    <import index="v5ts" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:d411f908-940a-47de-a6bb-6c4bd57886dd(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.saver)" />
+    <import index="2l8" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:bcbcc941-b1ce-4077-84a0-535ddfca3377(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.filter)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">

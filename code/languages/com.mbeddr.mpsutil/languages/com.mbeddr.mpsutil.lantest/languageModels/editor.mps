@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c473d4a9-f86e-463a-bf76-f8263f085aec(com.mbeddr.mpsutil.lantest.editor)">
+<model ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:c473d4a9-f86e-463a-bf76-f8263f085aec(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="gfdq" ref="r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="gfdq" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.structure)" />
+    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">

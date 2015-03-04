@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:9fb25e60-8a8f-48ef-ab5f-952b0e307e46(com.mbeddr.mpsutil.buildutil.scripts)">
+<model ref="692e0a46-0d23-4c8a-8ce0-ea4c2266672a/r:9fb25e60-8a8f-48ef-ab5f-952b0e307e46(com.mbeddr.mpsutil.buildutil/com.mbeddr.mpsutil.buildutil.scripts)">
   <persistence version="9" />
   <languages>
     <use id="0eddeefa-c2d6-4437-bc2c-de50fd4ce470" name="jetbrains.mps.lang.script" version="-1" />
@@ -14,9 +14,9 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="3ior" ref="r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="3ior" ref="798100da-4f0a-421a-b991-71f8c50ce5d2/r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build/jetbrains.mps.build.structure)" />
+    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   </imports>
   <registry />
 </model>
