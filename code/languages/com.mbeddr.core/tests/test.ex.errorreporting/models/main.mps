@@ -82,7 +82,7 @@
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
       </concept>
-      <concept id="4459718605982051985" name="com.mbeddr.core.util.structure.DoNothingReportingStrategy" flags="ng" index="2Q9Fjw" />
+      <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
@@ -114,6 +114,7 @@
       <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
+      <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
       <concept id="5950410542643524492" name="com.mbeddr.core.modules.structure.FunctionCall" flags="ng" index="3O_q_g">
         <reference id="5950410542643524493" name="function" index="3O_q_h" />
@@ -121,6 +122,14 @@
       </concept>
       <concept id="2093108837558505658" name="com.mbeddr.core.modules.structure.ArgumentRef" flags="ng" index="3ZUYvv">
         <reference id="2093108837558505659" name="arg" index="3ZUYvu" />
+      </concept>
+    </language>
+    <language id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest">
+      <concept id="6275792049641586523" name="com.mbeddr.core.unittest.structure.TestCase" flags="ng" index="c0Qz5">
+        <child id="6275792049641586525" name="body" index="c0Qz3" />
+      </concept>
+      <concept id="6275792049641587287" name="com.mbeddr.core.unittest.structure.AssertStatement" flags="ng" index="c0Tn9">
+        <child id="6275792049641587288" name="expr" index="c0Tn6" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -141,6 +150,7 @@
       </concept>
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="8860443239512147449" name="com.mbeddr.core.expressions.structure.LessExpression" flags="ng" index="3Tl9Jn" />
+      <concept id="8860443239512129322" name="com.mbeddr.core.expressions.structure.EqualsExpression" flags="ng" index="3TlM44" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
@@ -340,6 +350,32 @@
         <node concept="26Vqqz" id="4WTYg$PM8Cz" role="2C2TGm" />
       </node>
     </node>
+    <node concept="2NXPZ9" id="5usoWIKoRJW" role="N3F5h">
+      <property role="TrG5h" value="empty_1425309719209_9" />
+    </node>
+    <node concept="2NXPZ9" id="5usoWIKoRKu" role="N3F5h">
+      <property role="TrG5h" value="empty_1425309719364_10" />
+    </node>
+    <node concept="c0Qz5" id="5usoWIKoRX5" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="TestXXXXX" />
+      <node concept="19Rifw" id="5usoWIKoRX6" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="5usoWIKoRX8" role="c0Qz3">
+        <node concept="c0Tn9" id="5usoWIKoSa1" role="3XIRFZ">
+          <node concept="3TlM44" id="5usoWIKoSgB" role="c0Tn6">
+            <node concept="3TlMh9" id="5usoWIKoSgI" role="3TlMhJ">
+              <property role="2hmy$m" value="2" />
+            </node>
+            <node concept="3TlMh9" id="5usoWIKoSab" role="3TlMhI">
+              <property role="2hmy$m" value="1" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2v9HqL" id="EAKPqgNv5R">
     <node concept="2xfidK" id="2KPTuNu7nCa" role="2AWWZH">
@@ -356,7 +392,7 @@
       </node>
     </node>
     <node concept="2Q9Fgs" id="3R$6B6bKOLL" role="2Q9xDr">
-      <node concept="2Q9Fjw" id="3R$6B6bM3Rk" role="2Q9FjI" />
+      <node concept="2Q9FjX" id="5usoWIJXoBm" role="2Q9FjI" />
     </node>
   </node>
 </model>
