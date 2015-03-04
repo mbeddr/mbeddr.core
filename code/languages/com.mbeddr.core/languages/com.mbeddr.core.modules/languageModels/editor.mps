@@ -5,6 +5,7 @@
   <language namespace="443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)" />
   <language namespace="f89904fb-9486-43a1-865e-5ad0375a8a88(de.itemis.mps.editor.bool)" />
   <language namespace="a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)" />
+  <language namespace="53a2e8ff-4795-41ec-949d-d5c6bc4895de(com.mbeddr.mpsutil.breadcrumb.editor)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" />
@@ -32,13 +33,13 @@
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tp4f" modelUID="r:00000000-0000-4000-0000-011c89590373(jetbrains.mps.baseLanguage.classifiers.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
-  <import index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" version="0" implicit="yes" />
   <import index="wfif" modelUID="r:ff3199af-19b4-4b1a-8045-000a02c06e38(de.itemis.mps.editor.bool.structure)" version="-1" implicit="yes" />
+  <import index="yv4j" modelUID="r:6a63246b-e5f4-49e4-8474-0744982532d8(com.mbeddr.mpsutil.breadcrumb.editor.structure)" version="0" implicit="yes" />
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6437088627575722855" nodeInfo="ng">
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.6437088627575722830" resolveInfo="ImplementationModule" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="570t.BreadcrumbEditor" typeId="570t.4313262807137635254" id="1948372137355621847" nodeInfo="ng">
-      <property name="showIcons" nameId="570t.6508908841687149034" value="true" />
-      <node role="content" roleId="570t.4313262807137944011" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6437088627575722857" nodeInfo="nn">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="yv4j.BreadcrumbEditor" typeId="yv4j.4317384196709001934" id="1948372137355621847" nodeInfo="ng">
+      <property name="showBreadcrumbIcons" nameId="yv4j.4317384196709001935" value="true" />
+      <node role="content" roleId="yv4j.4317384196709001940" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6437088627575722857" nodeInfo="nn">
         <property name="usesFolding" nameId="tpc2.1160590353935" value="true" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3947421596133662052" nodeInfo="nn">
           <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="3947421596133662053" nodeInfo="nn">
@@ -1072,9 +1073,9 @@
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2591755460548204121" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="external" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.6116558314501417921" resolveInfo="ExternalModule" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="570t.BreadcrumbEditor" typeId="570t.4313262807137635254" id="5954008374098493509" nodeInfo="ng">
-      <property name="showIcons" nameId="570t.6508908841687149034" value="true" />
-      <node role="content" roleId="570t.4313262807137944011" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1006091569937120346" nodeInfo="nn">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="yv4j.BreadcrumbEditor" typeId="yv4j.4317384196709001934" id="5954008374098493509" nodeInfo="ng">
+      <property name="showBreadcrumbIcons" nameId="yv4j.4317384196709001935" value="true" />
+      <node role="content" roleId="yv4j.4317384196709001940" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1006091569937120346" nodeInfo="nn">
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3947421596133749619" nodeInfo="nn">
           <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="3947421596133749620" nodeInfo="nn">
             <property name="flag" nameId="tpc2.1186414551515" value="false" />

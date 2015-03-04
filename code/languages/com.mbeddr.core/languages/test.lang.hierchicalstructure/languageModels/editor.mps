@@ -3,17 +3,18 @@
   <persistence version="8" />
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <language namespace="a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)" />
+  <language namespace="53a2e8ff-4795-41ec-949d-d5c6bc4895de(com.mbeddr.mpsutil.breadcrumb.editor)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+  <import index="nm5n" modelUID="r:efe730f6-11b1-4178-b6ef-cb812b43cfe4(test.lang.hierchicalstructure.structure)" version="-1" />
+  <import index="tpco" modelUID="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" version="-1" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="35" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="nm5n" modelUID="r:efe730f6-11b1-4178-b6ef-cb812b43cfe4(test.lang.hierchicalstructure.structure)" version="-1" implicit="yes" />
-  <import index="tpco" modelUID="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" version="-1" implicit="yes" />
-  <import index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" version="0" implicit="yes" />
+  <import index="yv4j" modelUID="r:6a63246b-e5f4-49e4-8474-0744982532d8(com.mbeddr.mpsutil.breadcrumb.editor.structure)" version="0" implicit="yes" />
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1609581366353531514" nodeInfo="ng">
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="nm5n.1609581366353528038" resolveInfo="TestHierarchicalStructureRoot" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="570t.BreadcrumbEditor" typeId="570t.4313262807137635254" id="1609581366353555515" nodeInfo="ng">
-      <property name="showIcons" nameId="570t.6508908841687149034" value="true" />
-      <node role="content" roleId="570t.4313262807137944011" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="1609581366353647930" nodeInfo="ng">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="yv4j.BreadcrumbEditor" typeId="yv4j.4317384196709001934" id="1609581366353555515" nodeInfo="ng">
+      <property name="showBreadcrumbIcons" nameId="yv4j.4317384196709001935" value="true" />
+      <node role="content" roleId="yv4j.4317384196709001940" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="1609581366353647930" nodeInfo="ng">
         <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="1609581366353555902" resolveInfo="TestHierarchicalStructureRootEditor" />
       </node>
     </node>
@@ -68,8 +69,8 @@
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1609581366353555807" nodeInfo="ng">
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="nm5n.1609581366353555709" resolveInfo="TestHierarchicalStructureRootWithoutIcons" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="570t.BreadcrumbEditor" typeId="570t.4313262807137635254" id="1609581366353555967" nodeInfo="ng">
-      <node role="content" roleId="570t.4313262807137944011" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="1609581366353627703" nodeInfo="ng">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="yv4j.BreadcrumbEditor" typeId="yv4j.4317384196709001934" id="1609581366353555967" nodeInfo="ng">
+      <node role="content" roleId="yv4j.4317384196709001940" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="1609581366353627703" nodeInfo="ng">
         <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="1609581366353555902" resolveInfo="TestHierarchicalStructureRootEditor" />
       </node>
     </node>
