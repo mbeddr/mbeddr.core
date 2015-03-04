@@ -54,6 +54,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -135,6 +136,27 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="qD4yGfoMAZ" role="3cqZAp">
+          <node concept="2OqwBi" id="qD4yGfoNaX" role="3clFbG">
+            <node concept="2OqwBi" id="qD4yGfoMB1" role="2Oq$k0">
+              <node concept="2YIFZM" id="qD4yGfoMB2" role="2Oq$k0">
+                <ref role="1Pybhc" to="mo84:~Extensions" resolve="Extensions" />
+                <ref role="37wK5l" to="mo84:~Extensions.getRootArea():com.intellij.openapi.extensions.ExtensionsArea" resolve="getRootArea" />
+              </node>
+              <node concept="liA8E" id="qD4yGfoMB3" role="2OqNvi">
+                <ref role="37wK5l" to="mo84:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName):com.intellij.openapi.extensions.ExtensionPoint" resolve="getExtensionPoint" />
+                <node concept="37vLTw" id="qD4yGfoMBe" role="37wK5m">
+                  <ref role="3cqZAo" to="k39q:~Configurable.APPLICATION_CONFIGURABLE" resolve="APPLICATION_CONFIGURABLE" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="qD4yGfoOyt" role="2OqNvi">
+              <ref role="37wK5l" to="mo84:~ExtensionPoint.getExtensions():java.lang.Object[]" resolve="getExtensions" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="qD4yGfoMbo" role="3cqZAp" />
+        <node concept="3clFbH" id="qD4yGfmQae" role="3cqZAp" />
       </node>
       <node concept="2AHcQZ" id="5YZamx7JxI6" role="2AJF6D">
         <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />

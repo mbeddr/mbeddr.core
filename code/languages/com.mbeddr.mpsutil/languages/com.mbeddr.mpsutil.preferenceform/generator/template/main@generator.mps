@@ -4194,7 +4194,7 @@
       <node concept="3Tm1VV" id="4vnGofEtmmv" role="1B3o_S" />
       <node concept="3clFbS" id="4vnGofEtmmy" role="3clF47">
         <node concept="XkiVB" id="4vnGofEtmmz" role="3cqZAp">
-          <ref role="37wK5l" to="rh18:X7OD3Wu4e3" resolve="PreferenceFormApplicationConfigurableBase" />
+          <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
           <node concept="37vLTw" id="4vnGofEtmm_" role="37wK5m">
             <ref role="3cqZAo" node="4vnGofEtmmA" resolve="preferenceFormComponent" />
           </node>
