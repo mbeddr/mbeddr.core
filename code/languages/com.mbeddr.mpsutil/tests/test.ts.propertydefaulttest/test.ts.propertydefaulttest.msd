@@ -16,7 +16,6 @@
     <usedLanguage>3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)</usedLanguage>
     <usedLanguage>7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</usedLanguage>
     <usedLanguage>8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)</usedLanguage>
-    <usedLanguage>2720ea68-b58e-4435-aab0-4659362f72b6(test.ts.propertydefault)</usedLanguage>
   </usedLanguages>
 </solution>
 

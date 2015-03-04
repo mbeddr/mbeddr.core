@@ -2,9 +2,7 @@
 <model modelUID="r:3bfc2bd8-b74a-4b66-b482-ae854348e06b(test.ts.propertydefaulttest.instancetest@tests)">
   <persistence version="8" />
   <language namespace="f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)" />
-  <language namespace="3f41734b-72c3-42c8-b22c-bacd5a878e17(com.mbeddr.mpsutil.propertydefault)" />
   <language namespace="8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)" />
-  <language namespace="2720ea68-b58e-4435-aab0-4659362f72b6(test.ts.propertydefault)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
   <import index="26yq" modelUID="r:b37dee53-80e6-4b6e-96ec-6c91bfcbb36e(test.ts.propertydefault.structure)" version="-1" />
