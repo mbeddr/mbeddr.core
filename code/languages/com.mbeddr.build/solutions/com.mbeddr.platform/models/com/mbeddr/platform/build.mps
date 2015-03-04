@@ -8041,9 +8041,6 @@
       <node concept="L2wRC" id="4gGXGcLVuYJ" role="39821P">
         <ref role="L2wRA" node="4gGXGcLVuE$" resolve="com.mbeddr.mpsutil.uniquenames.test" />
       </node>
-      <node concept="L2wRC" id="4gGXGcLVuYM" role="39821P">
-        <ref role="L2wRA" node="4gGXGcLVuH8" resolve="test.ex.match" />
-      </node>
       <node concept="L2wRC" id="4gGXGcLVuYQ" role="39821P">
         <ref role="L2wRA" node="4gGXGcLVuHu" resolve="test.ts.mpsutil.multilingual" />
       </node>
@@ -8124,31 +8121,6 @@
           <node concept="3bR9La" id="4Ob7avfdSMo" role="1SiIV1">
             <property role="3bR36h" value="true" />
             <ref role="3bR37D" node="65ryKW0HDrs" resolve="com.mbeddr.mpsutil.uniquenames" />
-          </node>
-        </node>
-      </node>
-      <node concept="1E1JtA" id="4gGXGcLVuH8" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.ex.match" />
-        <property role="3LESm3" value="bb2d89dd-a4c7-4821-a0c8-7437446fd8d3" />
-        <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources and tests" />
-        <node concept="398BVA" id="4gGXGcLVuH9" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="4gGXGcLVuHa" role="iGT6I">
-            <property role="2Ry0Am" value="tests" />
-            <node concept="2Ry0Ak" id="4gGXGcLVuHb" role="2Ry0An">
-              <property role="2Ry0Am" value="test.ts.match" />
-              <node concept="2Ry0Ak" id="4gGXGcLVuJ1" role="2Ry0An">
-                <property role="2Ry0Am" value="match.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4gGXGcLVuLV" role="3bR37C">
-          <node concept="3bR9La" id="4gGXGcLVuLW" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
       </node>
@@ -8266,9 +8238,6 @@
       </node>
       <node concept="22LTRM" id="4gGXGcM0dWE" role="22LTRK">
         <ref role="22LTRN" node="4gGXGcLVuE$" resolve="com.mbeddr.mpsutil.uniquenames.test" />
-      </node>
-      <node concept="22LTRM" id="4gGXGcM0dZ7" role="22LTRK">
-        <ref role="22LTRN" node="4gGXGcLVuH8" resolve="test.ex.match" />
       </node>
       <node concept="22LTRM" id="4gGXGcM0e1C" role="22LTRK">
         <ref role="22LTRN" node="4gGXGcLVuHu" resolve="test.ts.mpsutil.multilingual" />
