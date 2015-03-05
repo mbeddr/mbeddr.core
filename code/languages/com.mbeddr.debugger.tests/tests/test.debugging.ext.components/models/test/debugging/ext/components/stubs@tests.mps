@@ -6,7 +6,6 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
@@ -18,6 +17,7 @@
     <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="-1" />
     <use id="36a565f1-3fa0-42d6-baac-f87e209c9789" name="com.mbeddr.ext.components.mock" version="-1" />
     <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="-1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
   </languages>
   <imports>
     <import index="q9ah" ref="r:881cd106-b9c3-33d3-8c69-9a76f591f92a(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)" />
@@ -54,6 +54,9 @@
         <child id="6275792049641600984" name="condition" index="c0U16" />
         <child id="6275792049641600985" name="thenPart" index="c0U17" />
         <child id="3134547887598486571" name="elsePart" index="ggAap" />
+      </concept>
+      <concept id="1494329074535282918" name="com.mbeddr.core.statements.structure.ElsePart" flags="ng" index="1ly_i6">
+        <child id="1494329074535283249" name="body" index="1ly_ph" />
       </concept>
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
@@ -1116,10 +1119,12 @@
                 <ref role="2H6loY" node="7$_eEdIcGza" resolve="sensor1" />
               </node>
             </node>
-            <node concept="3XIRFW" id="7$_eEdIde8n" role="ggAap">
-              <node concept="2BFjQ_" id="7$_eEdIde8o" role="3XIRFZ">
-                <node concept="3TlMh9" id="7$_eEdIde8p" role="2BFjQA">
-                  <property role="2hmy$m" value="-1" />
+            <node concept="1ly_i6" id="6J1IxNWHjeM" role="ggAap">
+              <node concept="3XIRFW" id="7$_eEdIde8n" role="1ly_ph">
+                <node concept="2BFjQ_" id="7$_eEdIde8o" role="3XIRFZ">
+                  <node concept="3TlMh9" id="7$_eEdIde8p" role="2BFjQA">
+                    <property role="2hmy$m" value="-1" />
+                  </node>
                 </node>
               </node>
             </node>
