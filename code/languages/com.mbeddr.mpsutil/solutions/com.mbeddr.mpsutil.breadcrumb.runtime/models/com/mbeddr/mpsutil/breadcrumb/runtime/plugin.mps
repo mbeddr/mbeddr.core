@@ -426,6 +426,9 @@
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
     <language id="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265" name="com.mbeddr.mpsutil.preferenceform">
+      <concept id="3057648661793083867" name="com.mbeddr.mpsutil.preferenceform.structure.IPreferenceFormExpression" flags="ng" index="3kjIaq">
+        <reference id="145956936287604889" name="formDeclaration" index="1DUXIm" />
+      </concept>
       <concept id="145956936283289547" name="com.mbeddr.mpsutil.preferenceform.structure.PreferenceForm" flags="ng" index="1DFvN4">
         <child id="145956936283569518" name="properties" index="1DEjpx" />
       </concept>
@@ -435,9 +438,10 @@
       <concept id="145956936284219644" name="com.mbeddr.mpsutil.preferenceform.structure.CheckBoxPreferenceFormProperty" flags="ng" index="1DJMfN">
         <property id="145956936284219645" name="defaultValue" index="1DJMfM" />
       </concept>
-      <concept id="145956936287600982" name="com.mbeddr.mpsutil.preferenceform.structure.GetPreferenceFormInProjectOperation" flags="ng" index="1DUWDp">
-        <reference id="145956936287604889" name="formDeclaration" index="1DUXIm" />
+      <concept id="145956936287670670" name="com.mbeddr.mpsutil.preferenceform.structure.PreferenceFormType" flags="ig" index="1DUdE1">
+        <reference id="145956936287674577" name="preferenceForm" index="1DUeJu" />
       </concept>
+      <concept id="145956936287600982" name="com.mbeddr.mpsutil.preferenceform.structure.GetPreferenceFormInProjectOperation" flags="ng" index="1DUWDp" />
       <concept id="145956936288329552" name="com.mbeddr.mpsutil.preferenceform.structure.PreferenceFormPropertyReference" flags="ng" index="1DZHhv" />
     </language>
   </registry>
@@ -1166,19 +1170,52 @@
           </node>
         </node>
         <node concept="3clFbH" id="4QhMqW45F$p" role="3cqZAp" />
-        <node concept="3clFbF" id="ty4hbPGxQn" role="3cqZAp">
-          <node concept="2OqwBi" id="HmK4D1FeD0" role="3clFbG">
-            <node concept="2OqwBi" id="HmK4D1FeD1" role="2Oq$k0">
+        <node concept="3cpWs8" id="1H8F$X4BPTV" role="3cqZAp">
+          <node concept="3cpWsn" id="1H8F$X4BPTY" role="3cpWs9">
+            <property role="TrG5h" value="form" />
+            <node concept="1DUdE1" id="1H8F$X4BPTT" role="1tU5fm">
+              <ref role="1DUeJu" node="ty4hbPIVUW" resolve="Breadcrumb Preferences" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1H8F$X4BU5v" role="3cqZAp">
+          <node concept="37vLTI" id="1H8F$X4BU84" role="3clFbG">
+            <node concept="37vLTw" id="1H8F$X4BU5t" role="37vLTJ">
+              <ref role="3cqZAo" node="1H8F$X4BPTY" resolve="form" />
+            </node>
+            <node concept="2OqwBi" id="HmK4D1FeD1" role="37vLTx">
               <node concept="37vLTw" id="HmK4D1FeD2" role="2Oq$k0">
                 <ref role="3cqZAo" node="4lLcfuhSLXz" resolve="project" />
               </node>
-              <node concept="1DUWDp" id="HmK4D1FeD3" role="2OqNvi">
+              <node concept="1DUWDp" id="1H8F$X4C2TL" role="2OqNvi">
                 <ref role="1DUXIm" node="ty4hbPIVUW" resolve="Breadcrumb Preferences" />
               </node>
             </node>
-            <node concept="1DZHhv" id="HmK4D1FeD4" role="2OqNvi">
-              <ref role="2WH_rO" node="ty4hbPIVUX" resolve="showBreadcrumb" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1H8F$X4BXoq" role="3cqZAp">
+          <node concept="3clFbS" id="1H8F$X4BXos" role="3clFbx">
+            <node concept="3cpWs6" id="1H8F$X4BXyn" role="3cqZAp">
+              <node concept="2OqwBi" id="1H8F$X4BXyp" role="3cqZAk">
+                <node concept="1DZHhv" id="1H8F$X4BXyq" role="2OqNvi">
+                  <ref role="2WH_rO" node="ty4hbPIVUX" resolve="showBreadcrumb" />
+                </node>
+                <node concept="37vLTw" id="1H8F$X4BXyr" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1H8F$X4BPTY" resolve="form" />
+                </node>
+              </node>
             </node>
+          </node>
+          <node concept="3y3z36" id="1H8F$X4BXqC" role="3clFbw">
+            <node concept="10Nm6u" id="1H8F$X4BXrA" role="3uHU7w" />
+            <node concept="37vLTw" id="1H8F$X4BXpL" role="3uHU7B">
+              <ref role="3cqZAo" node="1H8F$X4BPTY" resolve="form" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="1H8F$X4BZ2c" role="3cqZAp">
+          <node concept="3clFbT" id="1H8F$X4C094" role="3cqZAk">
+            <property role="3clFbU" value="false" />
           </node>
         </node>
       </node>
