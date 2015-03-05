@@ -37,20 +37,12 @@
     <import index="pt5l" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.project(MPS.Platform/jetbrains.mps.ide.project@java_stub)" />
     <import index="8e9v" ref="r:a21516a4-23a5-4dc7-826d-37c3fde5c4e3(com.mbeddr.analyses.utils.tools)" />
     <import index="y0ek" ref="r:4a481070-9069-4483-af8e-37b7cdc689c8(com.mbeddr.analyses.cbmc.pluginSolution.plugin)" />
-    <import index="3161" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.ui.dualView(MPS.IDEA/com.intellij.ui.dualView@java_stub)" />
-    <import index="n3gv" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.ui.treeStructure.treetable(MPS.IDEA/com.intellij.ui.treeStructure.treetable@java_stub)" />
     <import index="osf5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing.tree(JDK/javax.swing.tree@java_stub)" />
-    <import index="vuby" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.util.ui(MPS.IDEA/com.intellij.util.ui@java_stub)" />
-    <import index="as9o" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/f:java_stub#3f233e7f-b8a6-46d2-a57f-795d56775243#org.jetbrains.annotations(Annotations/org.jetbrains.annotations@java_stub)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="ayyu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.ui(MPS.IDEA/com.intellij.ui@java_stub)" />
     <import index="cjpu" ref="a3733d9d-fa94-4706-bdd4-596b968eba8e/f:java_stub#a3733d9d-fa94-4706-bdd4-596b968eba8e#org.jdesktop.swingx(com.mbeddr.analyses.cbmc.rt/org.jdesktop.swingx@java_stub)" />
     <import index="zduc" ref="a3733d9d-fa94-4706-bdd4-596b968eba8e/f:java_stub#a3733d9d-fa94-4706-bdd4-596b968eba8e#org.jdesktop.swingx.treetable(com.mbeddr.analyses.cbmc.rt/org.jdesktop.swingx.treetable@java_stub)" />
     <import index="3ckf" ref="a3733d9d-fa94-4706-bdd4-596b968eba8e/f:java_stub#a3733d9d-fa94-4706-bdd4-596b968eba8e#org.jdesktop.swingx.renderer(com.mbeddr.analyses.cbmc.rt/org.jdesktop.swingx.renderer@java_stub)" />
-    <import index="ai1m" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.icons(MPS.Platform/jetbrains.mps.ide.icons@java_stub)" />
-    <import index="3yfz" ref="a3733d9d-fa94-4706-bdd4-596b968eba8e/f:java_stub#a3733d9d-fa94-4706-bdd4-596b968eba8e#org.jdesktop.swingx.decorator(com.mbeddr.analyses.cbmc.rt/org.jdesktop.swingx.decorator@java_stub)" />
     <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
-    <import index="p8vh" ref="r:774ac595-6c08-4ec5-a945-c0e06119d39d(com.mbeddr.analyses.cbmc.rt.ui)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
