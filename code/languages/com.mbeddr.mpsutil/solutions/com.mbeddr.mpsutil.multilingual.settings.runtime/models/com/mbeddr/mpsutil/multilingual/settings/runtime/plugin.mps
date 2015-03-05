@@ -10,6 +10,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
   </languages>
   <imports>
     <import index="fw73" ref="eedc5a6f-c2e8-4009-a7ab-5fc307bf77ec/r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime/com.mbeddr.mpsutil.multilingual.common.runtime.plugin)" />
@@ -108,6 +109,13 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
+    </language>
+    <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
+      <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
+      <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
+      </concept>
+      <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -491,8 +499,8 @@
             </node>
             <node concept="2OqwBi" id="1FptJtanMir" role="37vLTJ">
               <node concept="2WthIp" id="1FptJtanMgc" role="2Oq$k0" />
-              <node concept="1DZHhv" id="1FptJtanM$_" role="2OqNvi">
-                <ref role="2WH_rO" node="1FptJtanBDD" resolve="showTranslations" />
+              <node concept="1DZHhv" id="3CcRIE6J_Kx" role="2OqNvi">
+                <ref role="2WH_rO" node="77gEP6zfKhn" resolve="showTranslationsIntentionEnabled" />
               </node>
             </node>
           </node>
@@ -515,35 +523,41 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="77gEP6zxKyT" role="3cqZAp">
-          <node concept="37vLTI" id="77gEP6zxL5o" role="3clFbG">
-            <node concept="3cpWs3" id="77gEP6zxOcu" role="37vLTx">
-              <node concept="2OqwBi" id="77gEP6zxOzI" role="3uHU7w">
-                <node concept="37vLTw" id="77gEP6zxOs1" role="2Oq$k0">
-                  <ref role="3cqZAo" node="77gEP6zxMeE" resolve="currentLanguage" />
-                </node>
-                <node concept="3TrcHB" id="77gEP6zxOX4" role="2OqNvi">
-                  <ref role="3TsBF5" to="sxyo:vzhXZP_pYI" resolve="countryCode" />
-                </node>
-              </node>
-              <node concept="3cpWs3" id="77gEP6zxNvr" role="3uHU7B">
-                <node concept="2OqwBi" id="77gEP6zxMwJ" role="3uHU7B">
-                  <node concept="37vLTw" id="77gEP6zxMeI" role="2Oq$k0">
-                    <ref role="3cqZAo" node="77gEP6zxMeE" resolve="currentLanguage" />
+        <node concept="1QHqEK" id="3CcRIE6IA9_" role="3cqZAp">
+          <node concept="1QHqEC" id="3CcRIE6IA9B" role="1QHqEI">
+            <node concept="3clFbS" id="3CcRIE6IA9D" role="1bW5cS">
+              <node concept="3clFbF" id="77gEP6zxKyT" role="3cqZAp">
+                <node concept="37vLTI" id="77gEP6zxL5o" role="3clFbG">
+                  <node concept="3cpWs3" id="77gEP6zxOcu" role="37vLTx">
+                    <node concept="2OqwBi" id="77gEP6zxOzI" role="3uHU7w">
+                      <node concept="37vLTw" id="77gEP6zxOs1" role="2Oq$k0">
+                        <ref role="3cqZAo" node="77gEP6zxMeE" resolve="currentLanguage" />
+                      </node>
+                      <node concept="3TrcHB" id="77gEP6zxOX4" role="2OqNvi">
+                        <ref role="3TsBF5" to="sxyo:vzhXZP_pYI" resolve="countryCode" />
+                      </node>
+                    </node>
+                    <node concept="3cpWs3" id="77gEP6zxNvr" role="3uHU7B">
+                      <node concept="2OqwBi" id="77gEP6zxMwJ" role="3uHU7B">
+                        <node concept="37vLTw" id="77gEP6zxMeI" role="2Oq$k0">
+                          <ref role="3cqZAo" node="77gEP6zxMeE" resolve="currentLanguage" />
+                        </node>
+                        <node concept="3TrcHB" id="77gEP6zxN2$" role="2OqNvi">
+                          <ref role="3TsBF5" to="sxyo:vzhXZP_pYH" resolve="languageCode" />
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="77gEP6zxNvC" role="3uHU7w">
+                        <property role="Xl_RC" value="_" />
+                      </node>
+                    </node>
                   </node>
-                  <node concept="3TrcHB" id="77gEP6zxN2$" role="2OqNvi">
-                    <ref role="3TsBF5" to="sxyo:vzhXZP_pYH" resolve="languageCode" />
+                  <node concept="2OqwBi" id="77gEP6zxKDH" role="37vLTJ">
+                    <node concept="2WthIp" id="77gEP6zxKyR" role="2Oq$k0" />
+                    <node concept="1DZHhv" id="77gEP6zxKPl" role="2OqNvi">
+                      <ref role="2WH_rO" node="77gEP6zkhUH" resolve="currentLanguage" />
+                    </node>
                   </node>
                 </node>
-                <node concept="Xl_RD" id="77gEP6zxNvC" role="3uHU7w">
-                  <property role="Xl_RC" value="_" />
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="77gEP6zxKDH" role="37vLTJ">
-              <node concept="2WthIp" id="77gEP6zxKyR" role="2Oq$k0" />
-              <node concept="1DZHhv" id="77gEP6zxKPl" role="2OqNvi">
-                <ref role="2WH_rO" node="77gEP6zkhUH" resolve="currentLanguage" />
               </node>
             </node>
           </node>
