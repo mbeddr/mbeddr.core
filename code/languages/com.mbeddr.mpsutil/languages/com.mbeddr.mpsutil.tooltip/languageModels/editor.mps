@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:a11cecb4-0caa-4240-8b2e-a340e8903c1b(com.mbeddr.mpsutil.tooltip.editor)">
+<model ref="7a07df55-d34f-4938-9dc9-c19fd71bcb69/r:a11cecb4-0caa-4240-8b2e-a340e8903c1b(com.mbeddr.mpsutil.tooltip/com.mbeddr.mpsutil.tooltip.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="q3j0" ref="r:0c744cd0-0eb0-4544-b9b2-34b0d6c40678(com.mbeddr.mpsutil.tooltip.structure)" implicit="true" />
-    <import index="tpc5" ref="r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor.editor)" implicit="true" />
+    <import index="q3j0" ref="7a07df55-d34f-4938-9dc9-c19fd71bcb69/r:0c744cd0-0eb0-4544-b9b2-34b0d6c40678(com.mbeddr.mpsutil.tooltip/com.mbeddr.mpsutil.tooltip.structure)" implicit="true" />
+    <import index="tpc5" ref="18bc6592-03a6-4e29-a83a-7ff23bde13ba/r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor/jetbrains.mps.lang.editor.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">

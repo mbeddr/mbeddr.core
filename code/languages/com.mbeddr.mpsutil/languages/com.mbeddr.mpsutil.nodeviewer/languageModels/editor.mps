@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:96309bcc-edec-48f9-b9bb-d01ac3e75adc(com.mbeddr.mpsutil.nodeviewer.editor)">
+<model ref="79685937-8b0a-4e7d-8f8c-0888f1581774/r:96309bcc-edec-48f9-b9bb-d01ac3e75adc(com.mbeddr.mpsutil.nodeviewer/com.mbeddr.mpsutil.nodeviewer.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="f19x" ref="r:d02579d5-8c48-4c03-9742-38fb8f18f018(com.mbeddr.mpsutil.nodeviewer.structure)" implicit="true" />
+    <import index="f19x" ref="79685937-8b0a-4e7d-8f8c-0888f1581774/r:d02579d5-8c48-4c03-9742-38fb8f18f018(com.mbeddr.mpsutil.nodeviewer/com.mbeddr.mpsutil.nodeviewer.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">

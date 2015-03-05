@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:4d9df4ee-0f21-4880-9e5f-6275da00a14f(com.mbeddr.mpsutil.nodes_tracing.typesystem)">
+<model ref="6ea97c27-74ad-4032-843d-7b4da446dfc9/r:4d9df4ee-0f21-4880-9e5f-6275da00a14f(com.mbeddr.mpsutil.nodes_tracing/com.mbeddr.mpsutil.nodes_tracing.typesystem)">
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />

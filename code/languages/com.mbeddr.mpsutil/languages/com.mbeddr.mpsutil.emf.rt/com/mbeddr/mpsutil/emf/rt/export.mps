@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:39c4d09b-30c2-4ae8-aed5-9a9409113e62(com.mbeddr.mpsutil.emf.rt.export)">
+<model ref="58436410-8239-4105-b947-336d2bc568a9/r:39c4d09b-30c2-4ae8-aed5-9a9409113e62(com.mbeddr.mpsutil.emf.rt/com.mbeddr.mpsutil.emf.rt.export)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
@@ -7,19 +7,19 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
   </languages>
   <imports>
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
-    <import index="cu2c" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
-    <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
-    <import index="olgp" ref="f:java_stub#58436410-8239-4105-b947-336d2bc568a9#org.eclipse.emf.ecore(com.mbeddr.mpsutil.emf.rt/org.eclipse.emf.ecore@java_stub)" />
-    <import index="o5r" ref="f:java_stub#58436410-8239-4105-b947-336d2bc568a9#org.eclipse.emf.ecore.xmi(com.mbeddr.mpsutil.emf.rt/org.eclipse.emf.ecore.xmi@java_stub)" />
-    <import index="v5oq" ref="f:java_stub#58436410-8239-4105-b947-336d2bc568a9#org.eclipse.emf.common.util(com.mbeddr.mpsutil.emf.rt/org.eclipse.emf.common.util@java_stub)" />
-    <import index="ptgf" ref="f:java_stub#58436410-8239-4105-b947-336d2bc568a9#org.eclipse.emf.ecore.xmi.impl(com.mbeddr.mpsutil.emf.rt/org.eclipse.emf.ecore.xmi.impl@java_stub)" />
-    <import index="g397" ref="f:java_stub#58436410-8239-4105-b947-336d2bc568a9#org.eclipse.emf.ecore.resource.impl(com.mbeddr.mpsutil.emf.rt/org.eclipse.emf.ecore.resource.impl@java_stub)" />
-    <import index="niyb" ref="f:java_stub#58436410-8239-4105-b947-336d2bc568a9#org.eclipse.emf.ecore.resource(com.mbeddr.mpsutil.emf.rt/org.eclipse.emf.ecore.resource@java_stub)" />
+    <import index="tpce" ref="c72da2b9-7cce-4447-8389-f407dc1158b7/r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure/jetbrains.mps.lang.structure.structure)" />
+    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" />
+    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
+    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="olgp" ref="58436410-8239-4105-b947-336d2bc568a9/f:java_stub#58436410-8239-4105-b947-336d2bc568a9#org.eclipse.emf.ecore(com.mbeddr.mpsutil.emf.rt/org.eclipse.emf.ecore@java_stub)" />
+    <import index="o5r" ref="58436410-8239-4105-b947-336d2bc568a9/f:java_stub#58436410-8239-4105-b947-336d2bc568a9#org.eclipse.emf.ecore.xmi(com.mbeddr.mpsutil.emf.rt/org.eclipse.emf.ecore.xmi@java_stub)" />
+    <import index="v5oq" ref="58436410-8239-4105-b947-336d2bc568a9/f:java_stub#58436410-8239-4105-b947-336d2bc568a9#org.eclipse.emf.common.util(com.mbeddr.mpsutil.emf.rt/org.eclipse.emf.common.util@java_stub)" />
+    <import index="ptgf" ref="58436410-8239-4105-b947-336d2bc568a9/f:java_stub#58436410-8239-4105-b947-336d2bc568a9#org.eclipse.emf.ecore.xmi.impl(com.mbeddr.mpsutil.emf.rt/org.eclipse.emf.ecore.xmi.impl@java_stub)" />
+    <import index="g397" ref="58436410-8239-4105-b947-336d2bc568a9/f:java_stub#58436410-8239-4105-b947-336d2bc568a9#org.eclipse.emf.ecore.resource.impl(com.mbeddr.mpsutil.emf.rt/org.eclipse.emf.ecore.resource.impl@java_stub)" />
+    <import index="niyb" ref="58436410-8239-4105-b947-336d2bc568a9/f:java_stub#58436410-8239-4105-b947-336d2bc568a9#org.eclipse.emf.ecore.resource(com.mbeddr.mpsutil.emf.rt/org.eclipse.emf.ecore.resource@java_stub)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
