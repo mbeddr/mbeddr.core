@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ee2d3c8f-a7b7-4025-b0ad-a28a4454e4ed(com.mbeddr.mpsutil.uniquenames.test@tests)">
+<model ref="c6e28a1c-f79e-4f7b-ba82-922edfa68b63/r:ee2d3c8f-a7b7-4025-b0ad-a28a4454e4ed(com.mbeddr.mpsutil.uniquenames.test/com.mbeddr.mpsutil.uniquenames.test@tests)">
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
   </languages>
   <imports>
-    <import index="b0x1" ref="r:8f9f0c80-5aee-4648-9b9d-3c8c43b40821(com.mbeddr.mpsutil.uniquenames.plugin)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="b0x1" ref="fc9fa859-9e8c-4b5f-8a23-d3ba09424d0f/r:8f9f0c80-5aee-4648-9b9d-3c8c43b40821(com.mbeddr.mpsutil.uniquenames/com.mbeddr.mpsutil.uniquenames.plugin)" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">

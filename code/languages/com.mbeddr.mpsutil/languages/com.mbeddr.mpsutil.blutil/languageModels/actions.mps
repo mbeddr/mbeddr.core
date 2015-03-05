@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b91d76bf-d7cf-4298-b0f0-63406c2ddc1a(com.mbeddr.mpsutil.blutil.actions)">
+<model ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:b91d76bf-d7cf-4298-b0f0-63406c2ddc1a(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.actions)">
   <persistence version="9" />
   <languages>
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
@@ -7,7 +7,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
   </languages>
   <imports>
-    <import index="hba4" ref="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" />
+    <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">

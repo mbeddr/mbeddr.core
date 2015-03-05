@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:5f236bd8-eb21-40b6-825a-9e614ca27175(com.mbeddr.mpsutil.editor.querylist.sandbox)">
+<model ref="c58b797b-c53c-4442-abff-4d54c72169ea/r:5f236bd8-eb21-40b6-825a-9e614ca27175(com.mbeddr.mpsutil.editor.querylist.sandbox/com.mbeddr.mpsutil.editor.querylist.sandbox)">
   <persistence version="9" />
   <languages>
     <use id="9b71d0db-bcaf-4144-bb2e-1ddef2b249b9" name="com.mbeddr.mpsutil.editor.querylist.demolang" version="-1" />

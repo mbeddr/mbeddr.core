@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:3c6acf8c-1911-4c08-bc27-b164ec3f3d05(com.mbeddr.mpsutil.emf.editor)">
+<model ref="9e3f6ddb-4034-47f7-acdd-634884e64759/r:3c6acf8c-1911-4c08-bc27-b164ec3f3d05(com.mbeddr.mpsutil.emf/com.mbeddr.mpsutil.emf.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="mwn6" ref="r:c45fab0b-1678-4fc1-9187-107d1188f675(com.mbeddr.mpsutil.emf.structure)" />
-    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
+    <import index="mwn6" ref="9e3f6ddb-4034-47f7-acdd-634884e64759/r:c45fab0b-1678-4fc1-9187-107d1188f675(com.mbeddr.mpsutil.emf/com.mbeddr.mpsutil.emf.structure)" />
+    <import index="tpc2" ref="18bc6592-03a6-4e29-a83a-7ff23bde13ba/r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor/jetbrains.mps.lang.editor.structure)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">

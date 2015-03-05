@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:6c5cca1d-3f93-41ca-9d02-70039dd7722f(com.mbeddr.mpsutil.blutil.rt.mapreduce)" content="root">
+<model ref="360a4e25-e902-4667-a0a6-0e971c4f3177/r:6c5cca1d-3f93-41ca-9d02-70039dd7722f(com.mbeddr.mpsutil.blutil.rt/com.mbeddr.mpsutil.blutil.rt.mapreduce)" content="root">
   <persistence version="9" />
   <imports />
   <registry>

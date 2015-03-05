@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b2e0f29e-b4e7-47f4-9575-7a2036488f0a(com.mbeddr.mpsutil.refactoring.editor)">
+<model ref="1fc20ffe-f35b-4791-a0b7-d706bad5c49a/r:b2e0f29e-b4e7-47f4-9575-7a2036488f0a(com.mbeddr.mpsutil.refactoring/com.mbeddr.mpsutil.refactoring.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="4w5v" ref="r:18d75373-a465-46d0-9749-aacc22a947bc(com.mbeddr.mpsutil.refactoring.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tp1h" ref="r:00000000-0000-4000-0000-011c89590319(jetbrains.mps.lang.refactoring.structure)" implicit="true" />
+    <import index="4w5v" ref="1fc20ffe-f35b-4791-a0b7-d706bad5c49a/r:18d75373-a465-46d0-9749-aacc22a947bc(com.mbeddr.mpsutil.refactoring/com.mbeddr.mpsutil.refactoring.structure)" />
+    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tp1h" ref="3ecd7c84-cde3-45de-886c-135ecc69b742/r:00000000-0000-4000-0000-011c89590319(jetbrains.mps.lang.refactoring/jetbrains.mps.lang.refactoring.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">

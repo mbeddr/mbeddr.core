@@ -4098,6 +4098,27 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="41thbhvCAS$" role="3clF47">
+        <node concept="3SKdUt" id="2inL$G3ftj0" role="3cqZAp">
+          <node concept="3SKdUq" id="2inL$G3ftjC" role="3SKWNk">
+            <property role="3SKdUp" value="make sure that assertions are not checked when searching for label's reachability" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3RNYYaKmt_u" role="3cqZAp">
+          <node concept="37vLTI" id="3RNYYaKmvfc" role="3clFbG">
+            <node concept="3clFbT" id="3RNYYaKmvqK" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="3RNYYaKmu5M" role="37vLTJ">
+              <node concept="37vLTw" id="3RNYYaKmt_s" role="2Oq$k0">
+                <ref role="3cqZAo" node="7F8$WoW31Wz" resolve="config" />
+              </node>
+              <node concept="2S8uIT" id="3RNYYaKmuWf" role="2OqNvi">
+                <ref role="2S8YL0" node="$fduZafTi1" resolve="noAssertions" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2inL$G3ftjE" role="3cqZAp" />
         <node concept="3cpWs8" id="41thbhvCHlV" role="3cqZAp">
           <node concept="3cpWsn" id="41thbhvCHlW" role="3cpWs9">
             <property role="TrG5h" value="args" />
