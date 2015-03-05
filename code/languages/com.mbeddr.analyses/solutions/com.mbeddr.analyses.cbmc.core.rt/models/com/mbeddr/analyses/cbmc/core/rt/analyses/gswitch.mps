@@ -134,6 +134,9 @@
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
+      </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -284,6 +287,24 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="6rPcxxV5eOj" role="jymVt" />
+    <node concept="3clFb_" id="6rPcxxV51LL" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getResultCategory" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6rPcxxV51LO" role="3clF47">
+        <node concept="3clFbF" id="6rPcxxV54ow" role="3cqZAp">
+          <node concept="Xl_RD" id="6rPcxxV54ov" role="3clFbG">
+            <property role="Xl_RC" value="Generic Switch" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6rPcxxV50uR" role="1B3o_S" />
+      <node concept="17QB3L" id="6rPcxxV51L9" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="6rPcxxV5eO_" role="jymVt" />
   </node>
   <node concept="312cEu" id="576QrOJujc7">
     <property role="TrG5h" value="GenericSwitchResultBuilder" />
