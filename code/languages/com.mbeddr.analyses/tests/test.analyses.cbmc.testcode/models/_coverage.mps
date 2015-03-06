@@ -148,7 +148,6 @@
         <node concept="cMvJ_" id="3kL$eo6Qx51" role="3kyFlt">
           <property role="cMvJE" value="com.mbeddr.ext.components.embedded" />
         </node>
-        <node concept="cMvJ_" id="3kL$eo6QOnI" role="3kyFlt" />
         <node concept="cMvJ$" id="1fLSIrNmNnN" role="3kyFlu" />
       </node>
       <node concept="qc_Tx" id="13FtHz69jAR" role="q3PPx">
