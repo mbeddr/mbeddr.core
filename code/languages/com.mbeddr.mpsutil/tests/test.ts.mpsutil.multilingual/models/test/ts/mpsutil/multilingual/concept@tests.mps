@@ -8,13 +8,10 @@
   <language namespace="c0826d77-5349-4d44-b588-5750e22d096b(test.ts.mpsutil.multilingual.concept.sandbox)" />
   <language namespace="d0fe2e60-9f9c-4d3c-94aa-de9257b67a6d(com.mbeddr.mpsutil.multilingual.concept)" />
   <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
-  <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
   <import index="fw73" modelUID="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)" version="1" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="40" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
-  <import index="sxyo" modelUID="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" version="8" implicit="yes" />
-  <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <import index="phyx" modelUID="r:d26f1060-b333-4b75-ae0e-82ef2c6fdec3(com.mbeddr.mpsutil.multilingual.concept.structure)" version="4" implicit="yes" />
   <import index="pq5q" modelUID="r:b65003ed-01fe-4ee7-b5fd-3b325db25b96(test.ts.mpsutil.multilingual.concept.sandbox.structure)" version="-1" implicit="yes" />
   <import index="sv0f" modelUID="r:28cd7e84-4784-462c-804c-1dae92004ef9(com.mbeddr.mpsutil.multilingual.common.languageRegistry)" version="-1" implicit="yes" />
@@ -24,91 +21,9 @@
   <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="7592664684660172748" nodeInfo="ng">
     <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
   </root>
-  <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6724029501762460834" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="DummyResourceBundle" />
-    <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="6724029501762461163" nodeInfo="ngu" />
-    <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="6724029501762461354" nodeInfo="igu">
-      <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="handleGetObject" />
-      <property name="isFinal" nameId="tpee.1181808852946" value="false" />
-      <property name="isDeprecated" nameId="tpee.1224848525476" value="false" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.ProtectedVisibility" typeId="tpee.1146644641414" id="6724029501762461355" nodeInfo="nn" />
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6724029501762461357" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Object" resolveInfo="Object" />
-      </node>
-      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="6724029501762461358" nodeInfo="ir">
-        <property name="name" nameId="tpck.1169194664001" value="string" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="6724029501762468992" nodeInfo="in" />
-      </node>
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6724029501762461360" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6724029501762461362" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="6724029501762461361" nodeInfo="nn" />
-        </node>
-      </node>
-    </node>
-    <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="6724029501762461363" nodeInfo="igu">
-      <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="getKeys" />
-      <property name="isFinal" nameId="tpee.1181808852946" value="false" />
-      <property name="isDeprecated" nameId="tpee.1224848525476" value="false" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6724029501762461364" nodeInfo="nn" />
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6724029501762461366" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="k7g3.~Enumeration" resolveInfo="Enumeration" />
-        <node role="parameter" roleId="tpee.1109201940907" type="tpee.StringType" typeId="tpee.1225271177708" id="6724029501762468523" nodeInfo="in" />
-      </node>
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6724029501762461368" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6724029501762461370" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="6724029501762461369" nodeInfo="nn" />
-        </node>
-      </node>
-    </node>
-    <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="6724029501762466638" nodeInfo="ngu" />
-    <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="6724029501762467451" nodeInfo="igu">
-      <property name="name" nameId="tpck.1169194664001" value="get" />
-      <property name="isSynchronized" nameId="tpee.4276006055363816570" value="false" />
-      <property name="isFinal" nameId="tpee.1181808852946" value="false" />
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6724029501762467454" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6724029501762468321" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="6724029501762468320" nodeInfo="nn" />
-        </node>
-      </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6724029501762466863" nodeInfo="nn" />
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.StringType" typeId="tpee.1225271177708" id="6724029501762467449" nodeInfo="in" />
-      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="6724029501762468013" nodeInfo="ir">
-        <property name="name" nameId="tpck.1169194664001" value="key" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="6724029501762468012" nodeInfo="in" />
-      </node>
-    </node>
-    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6724029501762460835" nodeInfo="nn" />
-    <node role="superclass" roleId="tpee.1165602531693" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6724029501762461159" nodeInfo="in">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="k7g3.~ResourceBundle" resolveInfo="ResourceBundle" />
-    </node>
-  </root>
-  <root type="sxyo.ResourceBundle" typeId="sxyo.568377005202317274" id="7147596757064966648" nodeInfo="ng">
-    <property name="keyPrefix" nameId="sxyo.568377005202317275" value="Keyword-" />
-    <property name="name" nameId="tpck.1169194664001" value="Test Resource Bundle" />
-    <link role="resourceBundle" roleId="sxyo.568377005202317277" targetNodeId="6724029501762460834" resolveInfo="DummyResourceBundle" />
-    <node role="keys" roleId="sxyo.568377005202317276" type="sxyo.MessageKey" typeId="sxyo.568377005202317270" id="7147596757064969081" nodeInfo="ng">
-      <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-      <property name="name" nameId="tpck.1169194664001" value="mySpecialKey" />
-    </node>
-    <node role="keys" roleId="sxyo.568377005202317276" type="sxyo.MessageKey" typeId="sxyo.568377005202317270" id="7147596757066779168" nodeInfo="ng">
-      <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-      <property name="name" nameId="tpck.1169194664001" value="mySpeciaasdflKey" />
-    </node>
-    <node role="keys" roleId="sxyo.568377005202317276" type="sxyo.MessageKey" typeId="sxyo.568377005202317270" id="7147596757067090964" nodeInfo="ng">
-      <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-      <property name="name" nameId="tpck.1169194664001" value="mySpeciaaaöslkdfjsdflKey" />
-    </node>
-    <node role="keys" roleId="sxyo.568377005202317276" type="sxyo.MessageKey" typeId="sxyo.568377005202317270" id="7147596757067451739" nodeInfo="ng">
-      <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-      <property name="name" nameId="tpck.1169194664001" value="testKey" />
-      <property name="default" nameId="sxyo.568377005202317272" value="test string" />
-    </node>
-  </root>
   <root type="pq5q.TestMultilingualNamedImplementer" typeId="pq5q.4912572611776130072" id="8201243288561038007" nodeInfo="ng">
     <node role="multiName" roleId="phyx.2510545900187060766" type="phyx.MultilingualString" typeId="phyx.2510545900187060782" id="8201243288561038008" nodeInfo="ng">
-      <property name="showTranslations" nameId="phyx.3125250773681852552" value="false" />
+      <property name="showTranslations" nameId="phyx.3125250773681852552" value="true" />
       <node role="values" roleId="phyx.2510545900187060785" type="phyx.StringTranslation" typeId="phyx.2510545900187060757" id="8201243288561038009" nodeInfo="ng">
         <property name="value" nameId="phyx.2510545900187060759" value="MySpecialName" />
         <link role="language" roleId="phyx.3125250773681852290" targetNodeId="sv0f.2510545900186946757" resolveInfo="English" />
@@ -146,7 +61,7 @@
         </node>
         <node role="values" roleId="phyx.2510545900187060785" type="phyx.StringTranslation" typeId="phyx.2510545900187060757" id="8201243288566144139" nodeInfo="ng">
           <property name="value" nameId="phyx.2510545900187060759" value="MonDeuxiemeNom" />
-          <link role="language" roleId="phyx.3125250773681852290" targetNodeId="sv0f.2510545900186946766" resolveInfo="Français" />
+          <link role="language" roleId="phyx.3125250773681852290" targetNodeId="sv0f.2510545900186946766" resolveInfo="français" />
         </node>
       </node>
     </node>
@@ -193,11 +108,11 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9087294576173420947" resolveInfo="languageProvider" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="9087294576173418790" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.8201243288565793475" resolveInfo="setCurrentLanguage" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="9087294576173418846" nodeInfo="nn">
-                <link role="classifier" roleId="tpee.1144433057691" targetNodeId="k7g3.~Locale" resolveInfo="Locale" />
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="k7g3.~Locale%dENGLISH" resolveInfo="ENGLISH" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.8201243288565796546" resolveInfo="setCurrentLanguage" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3114159206254173555" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="en" />
               </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="3114159206254182855" nodeInfo="nn" />
             </node>
           </node>
         </node>
@@ -221,11 +136,11 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9087294576173420947" resolveInfo="languageProvider" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="9087294576173422854" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.8201243288565793475" resolveInfo="setCurrentLanguage" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="9087294576173422897" nodeInfo="nn">
-                <link role="classifier" roleId="tpee.1144433057691" targetNodeId="k7g3.~Locale" resolveInfo="Locale" />
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="k7g3.~Locale%dGERMAN" resolveInfo="GERMAN" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.8201243288565796546" resolveInfo="setCurrentLanguage" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3114159206254178094" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="de" />
               </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="3114159206254181819" nodeInfo="nn" />
             </node>
           </node>
         </node>
@@ -242,12 +157,44 @@
             </node>
           </node>
         </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3114159206254183333" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3114159206254182939" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3114159206254182940" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3114159206254182941" nodeInfo="nn">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9087294576173420947" resolveInfo="languageProvider" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="3114159206254182942" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.8201243288565796546" resolveInfo="setCurrentLanguage" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3114159206254182943" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="fr" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="3114159206254182944" nodeInfo="nn" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="3114159206254182934" nodeInfo="nn">
+          <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3114159206254182935" nodeInfo="nn">
+            <property name="value" nameId="tpee.1070475926801" value="MenNaams" />
+          </node>
+          <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3114159206254182936" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tp5g.TestNodeReference" typeId="tp5g.1210674524691" id="3114159206254182937" nodeInfo="nn">
+              <link role="declaration" roleId="tp5g.1210674534086" targetNodeId="9087294576173417874" resolveInfo="testNode" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="3114159206254182938" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="tpcu.1213877396640" resolveInfo="getPresentation" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="9087294576173414327" nodeInfo="ng">
       <node role="nodeToCheck" roleId="tp5g.1216989461394" type="pq5q.TestMultilingualNamedImplementer" typeId="pq5q.4912572611776130072" id="9087294576173414330" nodeInfo="ng">
         <node role="multiName" roleId="phyx.2510545900187060766" type="phyx.MultilingualString" typeId="phyx.2510545900187060782" id="9087294576173414331" nodeInfo="ng">
           <property name="showTranslations" nameId="phyx.3125250773681852552" value="true" />
+          <node role="values" roleId="phyx.2510545900187060785" type="phyx.StringTranslation" typeId="phyx.2510545900187060757" id="3114159206254182929" nodeInfo="ng">
+            <property name="value" nameId="phyx.2510545900187060759" value="MenNaams" />
+            <link role="language" roleId="phyx.3125250773681852290" targetNodeId="sv0f.4305916533225086754" resolveInfo="Dansk" />
+          </node>
           <node role="values" roleId="phyx.2510545900187060785" type="phyx.StringTranslation" typeId="phyx.2510545900187060757" id="9087294576173414332" nodeInfo="ng">
             <property name="value" nameId="phyx.2510545900187060759" value="MyName" />
             <link role="language" roleId="phyx.3125250773681852290" targetNodeId="sv0f.2510545900186946757" resolveInfo="English" />

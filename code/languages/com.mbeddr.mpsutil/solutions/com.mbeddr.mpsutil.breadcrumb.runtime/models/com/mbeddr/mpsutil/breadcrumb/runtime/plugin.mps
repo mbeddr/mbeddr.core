@@ -11004,7 +11004,7 @@
   </root>
   <root type="sxyo.ResourceBundle" typeId="sxyo.568377005202317274" id="8884256830697592578" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="ShowBreadcrumbResourceBundle" />
-    <link role="resourceBundle" roleId="sxyo.568377005202317277" targetNodeId="8884256830697592579" resolveInfo="ShowBreadcrumbResourceBundleClass" />
+    <property name="baseName" nameId="sxyo.6737939145712380461" value="com.mbeddr.mpsutil.breadcrumb.runtime.resource" />
     <node role="keys" roleId="sxyo.568377005202317276" type="sxyo.MessageKey" typeId="sxyo.568377005202317270" id="8884256830697592597" nodeInfo="ng">
       <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
       <property name="name" nameId="tpck.1169194664001" value="ShowBreadcrumb" />
@@ -11014,42 +11014,6 @@
       <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
       <property name="name" nameId="tpck.1169194664001" value="ShowBookmarks" />
       <property name="default" nameId="sxyo.568377005202317272" value="Show Bookmarks" />
-    </node>
-  </root>
-  <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8884256830697592579" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="ShowBreadcrumbResourceBundleClass" />
-    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8884256830697592580" nodeInfo="nn" />
-    <node role="superclass" roleId="tpee.1165602531693" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8884256830697592581" nodeInfo="in">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="k7g3.~ResourceBundle" resolveInfo="ResourceBundle" />
-    </node>
-    <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="8884256830697592582" nodeInfo="igu">
-      <property name="name" nameId="tpck.1169194664001" value="getKeys" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8884256830697592583" nodeInfo="nn" />
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8884256830697592584" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="k7g3.~Enumeration" resolveInfo="Enumeration" />
-        <node role="parameter" roleId="tpee.1109201940907" type="tpee.StringType" typeId="tpee.1225271177708" id="8884256830697592585" nodeInfo="in" />
-      </node>
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8884256830697592586" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8884256830697592587" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="8884256830697592588" nodeInfo="nn" />
-        </node>
-      </node>
-    </node>
-    <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="8884256830697592589" nodeInfo="igu">
-      <property name="name" nameId="tpck.1169194664001" value="handleGetObject" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8884256830697592590" nodeInfo="nn" />
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8884256830697592591" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Object" resolveInfo="Object" />
-      </node>
-      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="8884256830697592592" nodeInfo="ir">
-        <property name="name" nameId="tpck.1169194664001" value="string" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="8884256830697592593" nodeInfo="in" />
-      </node>
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="8884256830697592594" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8884256830697592595" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="8884256830697592596" nodeInfo="nn" />
-        </node>
-      </node>
     </node>
   </root>
 </model>
