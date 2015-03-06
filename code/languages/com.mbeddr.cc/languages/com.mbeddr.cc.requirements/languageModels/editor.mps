@@ -30,12 +30,19 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="hczm" ref="r:b9ee036f-3395-4eab-86f3-44b8517c4f7e(com.mbeddr.mpsutil.test.modelone)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(java.lang@java_stub)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
+    <import index="h23j" ref="r:bbbfeb3c-4321-4879-a3bb-77f1152cdb6b(com.mbeddr.cc.requirements.actions)" />
+    <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
+    <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
+    <import index="oobn" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.navigation(MPS.Editor/jetbrains.mps.openapi.navigation@java_stub)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326896143883" name="jetbrains.mps.lang.editor.structure.CellKeyMap_FunctionParm_selectedNode" flags="nn" index="0GJ7k" />
+      <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
@@ -115,6 +122,15 @@
       <concept id="1103016434866" name="jetbrains.mps.lang.editor.structure.CellModel_JComponent" flags="sg" stub="8104358048506731196" index="3gTLQM">
         <child id="1176475119347" name="componentProvider" index="3FoqZy" />
       </concept>
+      <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
+        <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
+        <child id="1139535219969" name="item" index="1h_SK8" />
+      </concept>
+      <concept id="1139535280617" name="jetbrains.mps.lang.editor.structure.CellActionMapItem" flags="lg" index="1hA7zw">
+        <property id="1139535298778" name="actionId" index="1hAc7j" />
+        <child id="1139535280620" name="executeFunction" index="1hA7z_" />
+      </concept>
+      <concept id="1139535439104" name="jetbrains.mps.lang.editor.structure.CellActionMap_ExecuteFunction" flags="in" index="1hAIg9" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -594,6 +610,7 @@
         </node>
         <node concept="1HlG4h" id="K292flwhaa" role="3EZMnx">
           <ref role="34QXea" node="2PGidvqhYAU" resolve="addNewRequirements" />
+          <ref role="1ERwB7" node="7PQduOXaIAQ" resolve="pasteRequirement" />
           <node concept="1HfYo3" id="K292flwhab" role="1HlULh">
             <node concept="3TQlhw" id="K292flwhac" role="1Hhtcw">
               <node concept="3clFbS" id="K292flwhad" role="2VODD2">
@@ -4476,6 +4493,33 @@
     <ref role="1XX52x" to="75wo:7MGLj3bRN34" resolve="RequirementsClass" />
     <node concept="PMmxH" id="6Ig5vvlodMC" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="1h_SRR" id="7PQduOXaIAQ">
+    <property role="TrG5h" value="pasteRequirement" />
+    <ref role="1h_SK9" to="75wo:7_tU7IQsCy_" resolve="Requirement" />
+    <node concept="1hA7zw" id="7PQduOXaJiv" role="1h_SK8">
+      <property role="1hAc7j" value="paste_action_id" />
+      <node concept="1hAIg9" id="7PQduOXaJiw" role="1hA7z_">
+        <node concept="3clFbS" id="7PQduOXaJix" role="2VODD2">
+          <node concept="3clFbF" id="7PQduOXj4Ue" role="3cqZAp">
+            <node concept="2OqwBi" id="7PQduOXj8hN" role="3clFbG">
+              <node concept="2OqwBi" id="7PQduOXj61u" role="2Oq$k0">
+                <node concept="0IXxy" id="7PQduOXj4Uc" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="7PQduOXj6B2" role="2OqNvi">
+                  <ref role="3TtcxE" to="75wo:7_tU7IQsF75" />
+                </node>
+              </node>
+              <node concept="TSZUe" id="7PQduOXjfP0" role="2OqNvi">
+                <node concept="10M0yZ" id="7PQduOXoFrh" role="25WWJ7">
+                  <ref role="3cqZAo" to="h23j:7PQduOXozFR" resolve="copy" />
+                  <ref role="1PxDUh" to="h23j:1TNmgng13Yo" resolve="ReqCopier" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
