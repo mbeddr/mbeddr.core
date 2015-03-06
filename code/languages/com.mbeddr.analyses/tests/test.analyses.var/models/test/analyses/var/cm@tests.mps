@@ -24,6 +24,9 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
+        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
+      </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -81,6 +84,7 @@
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -270,6 +274,88 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1lH9Xt" id="68jd02E9zDx">
+    <property role="TrG5h" value="ComplexConfigurationModelConsistency" />
+    <node concept="1LZb2c" id="68jd02E9zDy" role="1SL9yI">
+      <property role="TrG5h" value="testDerivedFeatures1" />
+      <node concept="3cqZAl" id="68jd02E9zDz" role="3clF45" />
+      <node concept="3clFbS" id="68jd02E9zD$" role="3clF47">
+        <node concept="3cpWs8" id="68jd02E9zT3" role="3cqZAp">
+          <node concept="3cpWsn" id="68jd02E9zT4" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="68jd02E9zT2" role="1tU5fm" />
+            <node concept="BaHAS" id="68jd02E9zT5" role="33vP2m">
+              <property role="BaBD8" value="test.analyses.var.testcode.cm" />
+              <property role="BaHAW" value="test.analyses.var.testcode.cm" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="68jd02E9zD_" role="3cqZAp">
+          <node concept="3cpWsn" id="68jd02E9zDA" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="10P_77" id="68jd02E9zDB" role="1tU5fm" />
+            <node concept="NRdvd" id="68jd02E9zDC" role="33vP2m">
+              <ref role="37wK5l" to="oe3g:tSjOfAjCHD" resolve="checkConfigurationModelConsistency" />
+              <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
+              <node concept="37vLTw" id="68jd02E9zT6" role="37wK5m">
+                <ref role="3cqZAo" node="68jd02E9zT4" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="68jd02E9zDE" role="37wK5m">
+                <property role="Xl_RC" value="CM1_DerivedFeatures" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="68jd02E9zDG" role="3cqZAp">
+          <node concept="37vLTw" id="68jd02E9zDH" role="3vwVQn">
+            <ref role="3cqZAo" node="68jd02E9zDA" resolve="res" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="68jd02EcGzy" role="1SL9yI">
+      <property role="TrG5h" value="testDerivedFeatures2" />
+      <node concept="3cqZAl" id="68jd02EcGzz" role="3clF45" />
+      <node concept="3clFbS" id="68jd02EcGz$" role="3clF47">
+        <node concept="3cpWs8" id="68jd02EcGz_" role="3cqZAp">
+          <node concept="3cpWsn" id="68jd02EcGzA" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="68jd02EcGzB" role="1tU5fm" />
+            <node concept="BaHAS" id="68jd02EcGzC" role="33vP2m">
+              <property role="BaBD8" value="test.analyses.var.testcode.cm" />
+              <property role="BaHAW" value="test.analyses.var.testcode.cm" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="68jd02EcGzD" role="3cqZAp">
+          <node concept="3cpWsn" id="68jd02EcGzE" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="10P_77" id="68jd02EcGzF" role="1tU5fm" />
+            <node concept="NRdvd" id="68jd02EcGzG" role="33vP2m">
+              <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
+              <ref role="37wK5l" to="oe3g:tSjOfAjCHD" resolve="checkConfigurationModelConsistency" />
+              <node concept="37vLTw" id="68jd02EcGzH" role="37wK5m">
+                <ref role="3cqZAo" node="68jd02EcGzA" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="68jd02EcGzI" role="37wK5m">
+                <property role="Xl_RC" value="CM2_DerivedFeatures" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vFxKo" id="68jd02EcGN5" role="3cqZAp">
+          <node concept="37vLTw" id="68jd02EcGOO" role="3vFALc">
+            <ref role="3cqZAo" node="68jd02EcGzE" resolve="res" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2XOHcx" id="1f0gqNzAccm">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/" />
   </node>
 </model>
 
