@@ -438,6 +438,48 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="68jd02EoUoo" role="3cqZAp">
+          <node concept="2OqwBi" id="68jd02EoUop" role="3clFbG">
+            <node concept="2OqwBi" id="68jd02EoUoq" role="2Oq$k0">
+              <node concept="3cpWsa" id="68jd02EoUor" role="2Oq$k0">
+                <ref role="3cqZAo" node="4_pSipqULG7" resolve="colModel" />
+              </node>
+              <node concept="liA8E" id="68jd02EoUos" role="2OqNvi">
+                <ref role="37wK5l" to="gsmj:~TableColumnModel.getColumn(int):javax.swing.table.TableColumn" resolve="getColumn" />
+                <node concept="3cmrfG" id="68jd02EoUot" role="37wK5m">
+                  <property role="3cmrfH" value="2" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="68jd02EoUou" role="2OqNvi">
+              <ref role="37wK5l" to="gsmj:~TableColumn.setMinWidth(int):void" resolve="setMinWidth" />
+              <node concept="3cmrfG" id="68jd02EoUov" role="37wK5m">
+                <property role="3cmrfH" value="80" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="68jd02Epa4O" role="3cqZAp">
+          <node concept="2OqwBi" id="68jd02Epa4P" role="3clFbG">
+            <node concept="2OqwBi" id="68jd02Epa4Q" role="2Oq$k0">
+              <node concept="3cpWsa" id="68jd02Epa4R" role="2Oq$k0">
+                <ref role="3cqZAo" node="4_pSipqULG7" resolve="colModel" />
+              </node>
+              <node concept="liA8E" id="68jd02Epa4S" role="2OqNvi">
+                <ref role="37wK5l" to="gsmj:~TableColumnModel.getColumn(int):javax.swing.table.TableColumn" resolve="getColumn" />
+                <node concept="3cmrfG" id="68jd02Epa4T" role="37wK5m">
+                  <property role="3cmrfH" value="2" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="68jd02Epa4U" role="2OqNvi">
+              <ref role="37wK5l" to="gsmj:~TableColumn.setMaxWidth(int):void" resolve="setMaxWidth" />
+              <node concept="3cmrfG" id="68jd02Epa4V" role="37wK5m">
+                <property role="3cmrfH" value="100" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="4RSEWODypRr" role="3cqZAp" />
         <node concept="3clFbF" id="31nZcrlJSA6" role="3cqZAp">
           <node concept="37vLTI" id="31nZcrlJSAF" role="3clFbG">
@@ -1374,7 +1416,7 @@
           <node concept="3clFbS" id="68jd02EofVe" role="3Kb1Dw">
             <node concept="3cpWs6" id="44j14BHi99_" role="3cqZAp">
               <node concept="Xl_RD" id="_qCyBYLEFN" role="3cqZAk">
-                <property role="Xl_RC" value="Analysis Result" />
+                <property role="Xl_RC" value="Result" />
               </node>
             </node>
           </node>
