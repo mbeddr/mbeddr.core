@@ -9508,7 +9508,7 @@
             <node concept="liA8E" id="4ngEEZdm80P" role="2OqNvi">
               <ref role="37wK5l" to="gsmj:~TableColumn.setMaxWidth(int):void" resolve="setMaxWidth" />
               <node concept="3cmrfG" id="4ngEEZdm80Q" role="37wK5m">
-                <property role="3cmrfH" value="40" />
+                <property role="3cmrfH" value="60" />
               </node>
             </node>
           </node>
@@ -9529,7 +9529,7 @@
             <node concept="liA8E" id="4ngEEZdm9if" role="2OqNvi">
               <ref role="37wK5l" to="gsmj:~TableColumn.setMaxWidth(int):void" resolve="setMaxWidth" />
               <node concept="3cmrfG" id="4ngEEZdm9ig" role="37wK5m">
-                <property role="3cmrfH" value="50" />
+                <property role="3cmrfH" value="70" />
               </node>
             </node>
           </node>
