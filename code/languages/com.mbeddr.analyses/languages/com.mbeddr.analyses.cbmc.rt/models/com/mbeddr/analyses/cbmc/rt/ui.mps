@@ -9357,7 +9357,7 @@
             <node concept="liA8E" id="4ngEEZdm6HV" role="2OqNvi">
               <ref role="37wK5l" to="gsmj:~TableColumn.setMaxWidth(int):void" resolve="setMaxWidth" />
               <node concept="3cmrfG" id="4ngEEZdm6HW" role="37wK5m">
-                <property role="3cmrfH" value="80" />
+                <property role="3cmrfH" value="100" />
               </node>
             </node>
           </node>
@@ -9468,9 +9468,22 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2SXNNz4YEUr" role="3cqZAp">
-          <node concept="1rXfSq" id="2SXNNz4YEUp" role="3clFbG">
-            <ref role="37wK5l" to="cjpu:~JXTreeTable.expandAll():void" resolve="expandAll" />
+        <node concept="3clFbF" id="68jd02DaEmn" role="3cqZAp">
+          <node concept="1rXfSq" id="68jd02DaEml" role="3clFbG">
+            <ref role="37wK5l" to="cjpu:~JXTreeTable.expandPath(javax.swing.tree.TreePath):void" resolve="expandPath" />
+            <node concept="2ShNRf" id="68jd02DaEDV" role="37wK5m">
+              <node concept="1pGfFk" id="68jd02DaHSL" role="2ShVmc">
+                <ref role="37wK5l" to="osf5:~TreePath.&lt;init&gt;(java.lang.Object)" resolve="TreePath" />
+                <node concept="2OqwBi" id="68jd02DaHTM" role="37wK5m">
+                  <node concept="37vLTw" id="68jd02DaHTN" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7RSjqjskvQ7" resolve="model" />
+                  </node>
+                  <node concept="liA8E" id="68jd02DaHTO" role="2OqNvi">
+                    <ref role="37wK5l" to="zduc:~AbstractTreeTableModel.getRoot():java.lang.Object" resolve="getRoot" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="6A1xE5OrCyW" role="3cqZAp">
@@ -9511,9 +9524,22 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6rPcxxV2dzQ" role="3cqZAp">
-          <node concept="1rXfSq" id="6rPcxxV2dzR" role="3clFbG">
-            <ref role="37wK5l" to="cjpu:~JXTreeTable.expandAll():void" resolve="expandAll" />
+        <node concept="3clFbF" id="68jd02DaI8T" role="3cqZAp">
+          <node concept="1rXfSq" id="68jd02DaI8U" role="3clFbG">
+            <ref role="37wK5l" to="cjpu:~JXTreeTable.expandPath(javax.swing.tree.TreePath):void" resolve="expandPath" />
+            <node concept="2ShNRf" id="68jd02DaI8V" role="37wK5m">
+              <node concept="1pGfFk" id="68jd02DaI8W" role="2ShVmc">
+                <ref role="37wK5l" to="osf5:~TreePath.&lt;init&gt;(java.lang.Object)" resolve="TreePath" />
+                <node concept="2OqwBi" id="68jd02DaI8X" role="37wK5m">
+                  <node concept="37vLTw" id="68jd02DaI8Y" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7RSjqjskvQ7" resolve="model" />
+                  </node>
+                  <node concept="liA8E" id="68jd02DaI8Z" role="2OqNvi">
+                    <ref role="37wK5l" to="zduc:~AbstractTreeTableModel.getRoot():java.lang.Object" resolve="getRoot" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="6A1xE5OrD4v" role="3cqZAp">

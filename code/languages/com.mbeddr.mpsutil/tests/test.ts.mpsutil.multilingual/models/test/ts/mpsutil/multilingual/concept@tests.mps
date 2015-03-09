@@ -3,12 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="c0826d77-5349-4d44-b588-5750e22d096b" name="test.ts.mpsutil.multilingual.concept.sandbox" version="-1" />
     <use id="d0fe2e60-9f9c-4d3c-94aa-de9257b67a6d" name="com.mbeddr.mpsutil.multilingual.concept" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
   </languages>
   <imports>
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
@@ -310,8 +310,8 @@
     </node>
   </node>
   <node concept="1Q5_ze" id="77gEP6zfbbR">
-    <ref role="1Q5_zd" node="77gEP6zfbaR" resolve="MySpecialName" />
-    <ref role="1Q5_zp" node="77gEP6zfbaY" resolve="MyNewName" />
+    <ref role="1Q5_zd" node="77gEP6zfbaR" resolve="MeinName" />
+    <ref role="1Q5_zp" node="77gEP6zfbaY" resolve="MeinNeuerName" />
   </node>
   <node concept="1lH9Xt" id="7Ssz$kY9Bu8">
     <property role="TrG5h" value="TranslatedPresentation" />

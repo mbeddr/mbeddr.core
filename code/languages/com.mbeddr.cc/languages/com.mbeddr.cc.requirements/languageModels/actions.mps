@@ -57,17 +57,12 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
-      <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
-        <child id="1068580123133" name="returnType" index="3clF45" />
-        <child id="1068580123135" name="body" index="3clF47" />
-      </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -76,7 +71,6 @@
       </concept>
       <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -98,6 +92,7 @@
         <child id="5948027493682790175" name="preProcessor" index="21GTLy" />
       </concept>
       <concept id="5948027493682405480" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_nodeToCopyPreProcessOriginal" flags="nn" index="21Iscl" />
+      <concept id="5948027493682405428" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_nodeToCopyPreProcess" flags="nn" index="21Isd9" />
       <concept id="5948027493682321734" name="jetbrains.mps.lang.actions.structure.CopyPreProcessor" flags="ng" index="21IFCV">
         <reference id="5948027493682346893" name="concept" index="21IHzK" />
         <child id="5948027493682325465" name="preProcessFunction" index="21ICi$" />
@@ -245,6 +240,15 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbF" id="7PQduOXozI$" role="3cqZAp">
+            <node concept="37vLTI" id="7PQduOXozI_" role="3clFbG">
+              <node concept="21Isd9" id="7PQduOXo$5b" role="37vLTx" />
+              <node concept="10M0yZ" id="7PQduOXozID" role="37vLTJ">
+                <ref role="1PxDUh" node="1TNmgng13Yo" resolve="ReqCopier" />
+                <ref role="3cqZAo" node="7PQduOXozFR" resolve="copy" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -259,10 +263,12 @@
         <ref role="3uigEE" to="ec5l:~SNodeReference" resolve="SNodeReference" />
       </node>
     </node>
-    <node concept="3clFbW" id="1TNmgng13Yq" role="jymVt">
-      <node concept="3cqZAl" id="1TNmgng13Yr" role="3clF45" />
-      <node concept="3Tm1VV" id="1TNmgng13Ys" role="1B3o_S" />
-      <node concept="3clFbS" id="1TNmgng13Yt" role="3clF47" />
+    <node concept="Wx3nA" id="7PQduOXozFR" role="jymVt">
+      <property role="TrG5h" value="copy" />
+      <node concept="3Tm1VV" id="7PQduOXozFS" role="1B3o_S" />
+      <node concept="3Tqbb2" id="7PQduOXo$pS" role="1tU5fm">
+        <ref role="ehGHo" to="75wo:7_tU7IQsCy_" resolve="Requirement" />
+      </node>
     </node>
   </node>
 </model>

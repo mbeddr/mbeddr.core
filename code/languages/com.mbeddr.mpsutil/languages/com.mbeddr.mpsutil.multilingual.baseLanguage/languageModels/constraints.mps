@@ -52,6 +52,9 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -247,11 +250,13 @@
         <node concept="3clFbF" id="7Ssz$kYbpdi" role="3cqZAp">
           <node concept="1Wc70l" id="7Ssz$kYeIxl" role="3clFbG">
             <node concept="3fqX7Q" id="7Ssz$kYeIHG" role="3uHU7w">
-              <node concept="17R0WA" id="7Ssz$kYeJ7x" role="3fr31v">
-                <node concept="3TUQnm" id="7Ssz$kYeJj7" role="3uHU7w">
-                  <ref role="3TV0OU" to="spci:2UbT3C4elwQ" resolve="InlineFormat" />
+              <node concept="1eOMI4" id="7Fb_pd7WIq_" role="3fr31v">
+                <node concept="17R0WA" id="7Fb_pd7WIqA" role="1eOMHV">
+                  <node concept="3TUQnm" id="7Fb_pd7WIqB" role="3uHU7w">
+                    <ref role="3TV0OU" to="spci:2UbT3C4elwQ" resolve="InlineFormat" />
+                  </node>
+                  <node concept="otxO1" id="7Fb_pd7WIqC" role="3uHU7B" />
                 </node>
-                <node concept="otxO1" id="7Ssz$kYeIT3" role="3uHU7B" />
               </node>
             </node>
             <node concept="3fqX7Q" id="7Ssz$kYbqbM" role="3uHU7B">

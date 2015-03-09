@@ -26,6 +26,9 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
+        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
+      </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1216993439383" name="methods" index="1qtyYc" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -1195,14 +1198,14 @@
         </node>
         <node concept="3clFbH" id="1X8myJOVIWb" role="3cqZAp" />
         <node concept="3vlDli" id="1X8myJOVIWc" role="3cqZAp">
-          <node concept="3cmrfG" id="1X8myJOVIWd" role="3tpDZB">
-            <property role="3cmrfH" value="8" />
-          </node>
           <node concept="2OqwBi" id="1X8myJOVIWe" role="3tpDZA">
             <node concept="37vLTw" id="1X8myJOVIWf" role="2Oq$k0">
               <ref role="3cqZAo" node="1X8myJOVIW6" resolve="r" />
             </node>
             <node concept="34oBXx" id="1X8myJOVIWg" role="2OqNvi" />
+          </node>
+          <node concept="3cmrfG" id="68jd02EnjFZ" role="3tpDZB">
+            <property role="3cmrfH" value="11" />
           </node>
         </node>
         <node concept="3clFbH" id="1X8myJOVIWh" role="3cqZAp" />
@@ -1242,14 +1245,14 @@
           </node>
         </node>
         <node concept="3vlDli" id="1X8myJOVIWx" role="3cqZAp">
-          <node concept="3cmrfG" id="1X8myJOVIWy" role="3tpDZB">
-            <property role="3cmrfH" value="4" />
-          </node>
           <node concept="2OqwBi" id="1X8myJOVIWz" role="3tpDZA">
             <node concept="37vLTw" id="1X8myJOVIW$" role="2Oq$k0">
               <ref role="3cqZAo" node="1X8myJOVIWj" resolve="successfulResults" />
             </node>
             <node concept="34oBXx" id="1X8myJOVIW_" role="2OqNvi" />
+          </node>
+          <node concept="3cmrfG" id="68jd02Enspf" role="3tpDZB">
+            <property role="3cmrfH" value="6" />
           </node>
         </node>
       </node>
@@ -1347,6 +1350,9 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="2XOHcx" id="1f0gqNzAccm">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/" />
   </node>
 </model>
 
