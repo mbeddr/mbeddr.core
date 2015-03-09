@@ -7302,6 +7302,20 @@
       </node>
     </node>
     <node concept="2tJIrI" id="M7_V6u5ysg" role="jymVt" />
+    <node concept="312cEg" id="4$9c1ZyA7DQ" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="ranCommandText" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="4$9c1ZyA7DR" role="1B3o_S" />
+      <node concept="3uibUv" id="4$9c1ZyAb8X" role="1tU5fm">
+        <ref role="3uigEE" to="dbrf:~JTextArea" resolve="JTextArea" />
+      </node>
+      <node concept="NWlO9" id="4$9c1ZyA7DT" role="lGtFl">
+        <property role="NWlVz" value="Text area containing the ran command." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4$9c1ZyA5FH" role="jymVt" />
     <node concept="3clFbW" id="6izRX53q9Aq" role="jymVt">
       <node concept="3cqZAl" id="6izRX53q9Ar" role="3clF45" />
       <node concept="3clFbS" id="6izRX53q9At" role="3clF47">
@@ -7371,7 +7385,7 @@
         </node>
         <node concept="3cpWs8" id="6izRX53ql8H" role="3cqZAp">
           <node concept="3cpWsn" id="6izRX53ql8I" role="3cpWs9">
-            <property role="TrG5h" value="rawTextcroll" />
+            <property role="TrG5h" value="rawTextScroll" />
             <node concept="3uibUv" id="6izRX53ql8J" role="1tU5fm">
               <ref role="3uigEE" to="dbrf:~JScrollPane" resolve="JScrollPane" />
             </node>
@@ -7394,6 +7408,78 @@
           </node>
         </node>
         <node concept="3clFbH" id="6izRX53qsyW" role="3cqZAp" />
+        <node concept="3clFbF" id="4$9c1ZyA9Ey" role="3cqZAp">
+          <node concept="37vLTI" id="4$9c1ZyA9Ez" role="3clFbG">
+            <node concept="2ShNRf" id="4$9c1ZyA9E$" role="37vLTx">
+              <node concept="1pGfFk" id="4$9c1ZyA9E_" role="2ShVmc">
+                <ref role="37wK5l" to="dbrf:~JTextArea.&lt;init&gt;(java.lang.String,int,int)" resolve="JTextArea" />
+                <node concept="Xl_RD" id="4$9c1ZyA9EA" role="37wK5m">
+                  <property role="Xl_RC" value="Please double-click on a lifted-result." />
+                </node>
+                <node concept="3cmrfG" id="4$9c1ZyA9EB" role="37wK5m">
+                  <property role="3cmrfH" value="160" />
+                </node>
+                <node concept="3cmrfG" id="4$9c1ZyA9EC" role="37wK5m">
+                  <property role="3cmrfH" value="580" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="4$9c1ZyAa_O" role="37vLTJ">
+              <ref role="3cqZAo" node="4$9c1ZyA7DQ" resolve="ranCommandText" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6m6BTo4F9gc" role="3cqZAp">
+          <node concept="2OqwBi" id="6m6BTo4FdI3" role="3clFbG">
+            <node concept="37vLTw" id="6m6BTo4F9ga" role="2Oq$k0">
+              <ref role="3cqZAo" node="4$9c1ZyA7DQ" resolve="ranCommandText" />
+            </node>
+            <node concept="liA8E" id="6m6BTo4Fhbr" role="2OqNvi">
+              <ref role="37wK5l" to="dbrf:~JTextArea.setLineWrap(boolean):void" resolve="setLineWrap" />
+              <node concept="3clFbT" id="6m6BTo4FhhW" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4$9c1ZyA9EE" role="3cqZAp">
+          <node concept="2OqwBi" id="4$9c1ZyA9EF" role="3clFbG">
+            <node concept="37vLTw" id="4$9c1ZyAbok" role="2Oq$k0">
+              <ref role="3cqZAo" node="4$9c1ZyA7DQ" resolve="ranCommandText" />
+            </node>
+            <node concept="liA8E" id="4$9c1ZyA9EH" role="2OqNvi">
+              <ref role="37wK5l" to="oj8w:~JTextComponent.setEditable(boolean):void" resolve="setEditable" />
+              <node concept="3clFbT" id="4$9c1ZyA9EI" role="37wK5m">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4$9c1ZyA9EJ" role="3cqZAp">
+          <node concept="3cpWsn" id="4$9c1ZyA9EK" role="3cpWs9">
+            <property role="TrG5h" value="rawCommandScroll" />
+            <node concept="3uibUv" id="4$9c1ZyA9EL" role="1tU5fm">
+              <ref role="3uigEE" to="dbrf:~JScrollPane" resolve="JScrollPane" />
+            </node>
+            <node concept="2ShNRf" id="4$9c1ZyA9EM" role="33vP2m">
+              <node concept="1pGfFk" id="4$9c1ZyA9EN" role="2ShVmc">
+                <ref role="37wK5l" to="dbrf:~JScrollPane.&lt;init&gt;(java.awt.Component,int,int)" resolve="JScrollPane" />
+                <node concept="37vLTw" id="4$9c1ZyAcJv" role="37wK5m">
+                  <ref role="3cqZAo" node="4$9c1ZyA7DQ" resolve="ranCommandText" />
+                </node>
+                <node concept="10M0yZ" id="4$9c1ZyA9EP" role="37wK5m">
+                  <ref role="1PxDUh" to="dbrf:~ScrollPaneConstants" resolve="ScrollPaneConstants" />
+                  <ref role="3cqZAo" to="dbrf:~ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS" resolve="VERTICAL_SCROLLBAR_ALWAYS" />
+                </node>
+                <node concept="10M0yZ" id="4$9c1ZyA9EQ" role="37wK5m">
+                  <ref role="1PxDUh" to="dbrf:~ScrollPaneConstants" resolve="ScrollPaneConstants" />
+                  <ref role="3cqZAo" to="dbrf:~ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER" resolve="HORIZONTAL_SCROLLBAR_NEVER" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4$9c1ZyA8WE" role="3cqZAp" />
         <node concept="3clFbF" id="M7_V6u5_gO" role="3cqZAp">
           <node concept="37vLTI" id="M7_V6u5_gP" role="3clFbG">
             <node concept="2ShNRf" id="M7_V6u5_gQ" role="37vLTx">
@@ -7470,7 +7556,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="M7_V6u5$Qz" role="3cqZAp" />
-        <node concept="3clFbH" id="M7_V6u5v2s" role="3cqZAp" />
         <node concept="3clFbF" id="M7_V6u5BVX" role="3cqZAp">
           <node concept="2OqwBi" id="M7_V6u5CBO" role="3clFbG">
             <node concept="37vLTw" id="M7_V6u5BVV" role="2Oq$k0">
@@ -7498,7 +7583,23 @@
                 <property role="Xl_RC" value="Raw CBMC output" />
               </node>
               <node concept="37vLTw" id="M7_V6u5uFC" role="37wK5m">
-                <ref role="3cqZAo" node="6izRX53ql8I" resolve="rawTextcroll" />
+                <ref role="3cqZAo" node="6izRX53ql8I" resolve="rawTextScroll" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4$9c1ZyAdkB" role="3cqZAp">
+          <node concept="2OqwBi" id="4$9c1ZyAdkC" role="3clFbG">
+            <node concept="37vLTw" id="4$9c1ZyAdkD" role="2Oq$k0">
+              <ref role="3cqZAo" node="M7_V6u5fO1" resolve="tabbed" />
+            </node>
+            <node concept="liA8E" id="4$9c1ZyAdkE" role="2OqNvi">
+              <ref role="37wK5l" to="dbrf:~JTabbedPane.addTab(java.lang.String,java.awt.Component):void" resolve="addTab" />
+              <node concept="Xl_RD" id="4$9c1ZyAdkF" role="37wK5m">
+                <property role="Xl_RC" value="Raw command" />
+              </node>
+              <node concept="37vLTw" id="4$9c1ZyAj94" role="37wK5m">
+                <ref role="3cqZAo" node="4$9c1ZyA9EK" resolve="rawCommandScroll" />
               </node>
             </node>
           </node>
@@ -7553,6 +7654,35 @@
           </node>
         </node>
         <node concept="3clFbH" id="M7_V6u7K0N" role="3cqZAp" />
+        <node concept="3clFbF" id="4$9c1ZyAk_v" role="3cqZAp">
+          <node concept="2OqwBi" id="4$9c1ZyAkZC" role="3clFbG">
+            <node concept="37vLTw" id="4$9c1ZyAk_t" role="2Oq$k0">
+              <ref role="3cqZAo" node="4$9c1ZyA7DQ" resolve="ranCommandText" />
+            </node>
+            <node concept="liA8E" id="4$9c1ZyAo9u" role="2OqNvi">
+              <ref role="37wK5l" to="oj8w:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
+              <node concept="2OqwBi" id="4$9c1ZyAord" role="37wK5m">
+                <node concept="37vLTw" id="4$9c1ZyAojl" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6izRX53qxH4" resolve="rawOutput" />
+                </node>
+                <node concept="liA8E" id="4$9c1ZyAoGj" role="2OqNvi">
+                  <ref role="37wK5l" to="rbq9:4$9c1Zyb0$9" resolve="getRanCommand" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4$9c1ZyAp4f" role="3cqZAp">
+          <node concept="2OqwBi" id="4$9c1ZyApwO" role="3clFbG">
+            <node concept="37vLTw" id="4$9c1ZyAp4d" role="2Oq$k0">
+              <ref role="3cqZAo" node="4$9c1ZyA7DQ" resolve="ranCommandText" />
+            </node>
+            <node concept="liA8E" id="4$9c1ZyAsGC" role="2OqNvi">
+              <ref role="37wK5l" to="oj8w:~JTextComponent.updateUI():void" resolve="updateUI" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4$9c1ZyAsKg" role="3cqZAp" />
         <node concept="3clFbF" id="M7_V6u7Kds" role="3cqZAp">
           <node concept="2OqwBi" id="M7_V6u7KvS" role="3clFbG">
             <node concept="37vLTw" id="M7_V6u7Kdq" role="2Oq$k0">
@@ -9378,7 +9508,7 @@
             <node concept="liA8E" id="4ngEEZdm80P" role="2OqNvi">
               <ref role="37wK5l" to="gsmj:~TableColumn.setMaxWidth(int):void" resolve="setMaxWidth" />
               <node concept="3cmrfG" id="4ngEEZdm80Q" role="37wK5m">
-                <property role="3cmrfH" value="40" />
+                <property role="3cmrfH" value="60" />
               </node>
             </node>
           </node>
@@ -9399,7 +9529,7 @@
             <node concept="liA8E" id="4ngEEZdm9if" role="2OqNvi">
               <ref role="37wK5l" to="gsmj:~TableColumn.setMaxWidth(int):void" resolve="setMaxWidth" />
               <node concept="3cmrfG" id="4ngEEZdm9ig" role="37wK5m">
-                <property role="3cmrfH" value="50" />
+                <property role="3cmrfH" value="70" />
               </node>
             </node>
           </node>

@@ -107,6 +107,7 @@
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
     </language>
     <language id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base">
+      <concept id="1246687699869804428" name="com.mbeddr.analyses.base.structure.ModelUsedForAnalysesTestsMarker" flags="ng" index="29QVxn" />
       <concept id="6472990431939580591" name="com.mbeddr.analyses.base.structure.AnalysisConfiguration" flags="ng" index="3V_BKJ">
         <child id="6472990431939692464" name="analyses" index="3V$2$K" />
         <child id="559958203687603517" name="imports" index="3W6d8T" />
@@ -357,5 +358,6 @@
       <ref role="3GEb4d" node="6DRvbEG5EyI" resolve="word_width" />
     </node>
   </node>
+  <node concept="29QVxn" id="4$9c1ZwB$1d" />
 </model>
 
