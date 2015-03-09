@@ -4500,6 +4500,10 @@
       <property role="IEkAT" value="false" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
+      <node concept="37vLTG" id="4$9c1ZylM6P" role="3clF46">
+        <property role="TrG5h" value="cmdFile" />
+        <node concept="17QB3L" id="4$9c1ZylNlA" role="1tU5fm" />
+      </node>
       <node concept="37vLTG" id="2Ra3lNBhk3D" role="3clF46">
         <property role="TrG5h" value="outputFile" />
         <node concept="17QB3L" id="2Ra3lNBhnu0" role="1tU5fm" />
@@ -4513,6 +4517,15 @@
         <node concept="17QB3L" id="2Ra3lNBi35e" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="2Ra3lNBf8J6" role="3clF47">
+        <node concept="3cpWs8" id="4$9c1ZylQF9" role="3cqZAp">
+          <node concept="3cpWsn" id="4$9c1ZylQFc" role="3cpWs9">
+            <property role="TrG5h" value="cmd" />
+            <node concept="17QB3L" id="4$9c1ZylQF7" role="1tU5fm" />
+            <node concept="Xl_RD" id="4$9c1ZylSq$" role="33vP2m">
+              <property role="Xl_RC" value="UNKNOWN" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="2Ra3lNBfgHT" role="3cqZAp">
           <node concept="3cpWsn" id="2Ra3lNBfgHU" role="3cpWs9">
             <property role="TrG5h" value="output" />
@@ -4550,6 +4563,41 @@
         </node>
         <node concept="SfApY" id="2Ra3lNBfgIb" role="3cqZAp">
           <node concept="3clFbS" id="2Ra3lNBfgIc" role="SfCbr">
+            <node concept="3clFbF" id="4$9c1ZylVNH" role="3cqZAp">
+              <node concept="1rXfSq" id="4$9c1ZylVNI" role="3clFbG">
+                <ref role="37wK5l" node="21F0XZSalVM" resolve="debug" />
+                <node concept="3cpWs3" id="4$9c1ZylVNJ" role="37wK5m">
+                  <node concept="37vLTw" id="4$9c1ZylXYL" role="3uHU7w">
+                    <ref role="3cqZAo" node="4$9c1ZylM6P" resolve="cmdFile" />
+                  </node>
+                  <node concept="Xl_RD" id="4$9c1ZylVNL" role="3uHU7B">
+                    <property role="Xl_RC" value="Reading ran command from: " />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4$9c1ZylVNM" role="3cqZAp">
+              <node concept="37vLTI" id="4$9c1ZylVNN" role="3clFbG">
+                <node concept="37vLTw" id="4$9c1ZylYPA" role="37vLTJ">
+                  <ref role="3cqZAo" node="4$9c1ZylQFc" resolve="cmd" />
+                </node>
+                <node concept="2OqwBi" id="4$9c1ZylZzu" role="37vLTx">
+                  <node concept="NRdvd" id="4$9c1ZylVNP" role="2Oq$k0">
+                    <ref role="37wK5l" node="2Ra3lNBiB3G" resolve="readStringlistFromFile" />
+                    <ref role="1Pybhc" node="2UdJgvD1NnP" resolve="CProverRunner" />
+                    <node concept="37vLTw" id="4$9c1ZylYss" role="37wK5m">
+                      <ref role="3cqZAo" node="4$9c1ZylM6P" resolve="cmdFile" />
+                    </node>
+                  </node>
+                  <node concept="34jXtK" id="4$9c1Zym0xM" role="2OqNvi">
+                    <node concept="3cmrfG" id="4$9c1Zym1Fa" role="25WWJ7">
+                      <property role="3cmrfH" value="0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="4$9c1ZylOSw" role="3cqZAp" />
             <node concept="3clFbF" id="2Ra3lNBfgId" role="3cqZAp">
               <node concept="1rXfSq" id="2Ra3lNBfgIe" role="3clFbG">
                 <ref role="37wK5l" node="21F0XZSalVM" resolve="debug" />
@@ -4749,6 +4797,9 @@
           <node concept="2ShNRf" id="2Ra3lNBfgJi" role="3clFbG">
             <node concept="1pGfFk" id="2Ra3lNBfgJj" role="2ShVmc">
               <ref role="37wK5l" to="8e9v:4CtHBqNlszA" resolve="ToolRunner.ToolRunResult" />
+              <node concept="37vLTw" id="4$9c1ZymbQ2" role="37wK5m">
+                <ref role="3cqZAo" node="4$9c1ZylQFc" resolve="cmd" />
+              </node>
               <node concept="3cpWsa" id="2Ra3lNBfgJk" role="37wK5m">
                 <ref role="3cqZAo" node="2Ra3lNBfgHU" resolve="output" />
               </node>
@@ -4990,6 +5041,30 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="4$9c1ZyluWJ" role="3cqZAp">
+              <node concept="3cpWsn" id="4$9c1ZyluWK" role="3cpWs9">
+                <property role="TrG5h" value="cmdFileName" />
+                <node concept="17QB3L" id="4$9c1ZyluWL" role="1tU5fm" />
+                <node concept="3cpWs3" id="4$9c1ZyluWM" role="33vP2m">
+                  <node concept="Xl_RD" id="4$9c1ZyluWN" role="3uHU7w">
+                    <property role="Xl_RC" value=".txt" />
+                  </node>
+                  <node concept="3cpWs3" id="4$9c1ZyluWO" role="3uHU7B">
+                    <node concept="3cpWs3" id="4$9c1ZyluWP" role="3uHU7B">
+                      <node concept="3cpWsa" id="4$9c1ZyluWQ" role="3uHU7B">
+                        <ref role="3cqZAo" node="2UdJgvD2kh_" resolve="rawOutputFolderPath" />
+                      </node>
+                      <node concept="Xl_RD" id="4$9c1ZyluWR" role="3uHU7w">
+                        <property role="Xl_RC" value="ranCmd_" />
+                      </node>
+                    </node>
+                    <node concept="3cpWsa" id="4$9c1ZyluWS" role="3uHU7w">
+                      <ref role="3cqZAo" node="2UdJgvD2khJ" resolve="fileNameRoot" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="2UdJgvD2kia" role="3cqZAp">
               <node concept="3cpWsn" id="2UdJgvD2kib" role="3cpWs9">
                 <property role="TrG5h" value="outputFileName" />
@@ -5187,6 +5262,38 @@
                   </node>
                 </node>
                 <node concept="3clFbH" id="2UdJgvD2kjc" role="3cqZAp" />
+                <node concept="3cpWs8" id="4$9c1ZylJuT" role="3cqZAp">
+                  <node concept="3cpWsn" id="4$9c1ZylJuW" role="3cpWs9">
+                    <property role="TrG5h" value="ranCmdAsList" />
+                    <node concept="_YKpA" id="4$9c1ZylJuP" role="1tU5fm">
+                      <node concept="17QB3L" id="4$9c1ZylLy5" role="_ZDj9" />
+                    </node>
+                    <node concept="2YIFZM" id="4$9c1ZylLWu" role="33vP2m">
+                      <ref role="37wK5l" to="k7g3:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+                      <ref role="1Pybhc" to="k7g3:~Collections" resolve="Collections" />
+                      <node concept="2OqwBi" id="4$9c1ZylLWv" role="37wK5m">
+                        <node concept="37vLTw" id="4$9c1ZylLWw" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2UdJgvD2kgV" resolve="result" />
+                        </node>
+                        <node concept="2OwXpG" id="4$9c1ZylLWx" role="2OqNvi">
+                          <ref role="2Oxat5" to="8e9v:4$9c1ZxZKdQ" resolve="ranCommand" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="4$9c1ZylCgb" role="3cqZAp">
+                  <node concept="1rXfSq" id="4$9c1ZylCg9" role="3clFbG">
+                    <ref role="37wK5l" node="2Ra3lNBk4mK" resolve="writeStringlistToFile" />
+                    <node concept="37vLTw" id="4$9c1ZylEm7" role="37wK5m">
+                      <ref role="3cqZAo" node="4$9c1ZyluWK" resolve="cmdFileName" />
+                    </node>
+                    <node concept="37vLTw" id="4$9c1ZylLUy" role="37wK5m">
+                      <ref role="3cqZAo" node="4$9c1ZylJuW" resolve="ranCmdAsList" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="4$9c1Zyl$7s" role="3cqZAp" />
                 <node concept="3cpWs8" id="2UdJgvD2kjd" role="3cqZAp">
                   <node concept="3cpWsn" id="2UdJgvD2kje" role="3cpWs9">
                     <property role="TrG5h" value="goodXMLHeader" />
@@ -5416,6 +5523,9 @@
                       </node>
                       <node concept="1rXfSq" id="2Ra3lNBkjE3" role="37vLTx">
                         <ref role="37wK5l" node="2Ra3lNBh6Jt" resolve="readFromFile" />
+                        <node concept="37vLTw" id="4$9c1ZylM4H" role="37wK5m">
+                          <ref role="3cqZAo" node="4$9c1ZyluWK" resolve="cmdFileName" />
+                        </node>
                         <node concept="37vLTw" id="2Ra3lNBkmaY" role="37wK5m">
                           <ref role="3cqZAo" node="2UdJgvD2kib" resolve="outputFileName" />
                         </node>

@@ -280,6 +280,14 @@
   </registry>
   <node concept="312cEu" id="6iM0fX1N0qr">
     <property role="TrG5h" value="CBMCRawResult" />
+    <node concept="312cEg" id="4$9c1ZyaWU1" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="ranCommand" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="4$9c1ZyaVAb" role="1B3o_S" />
+      <node concept="17QB3L" id="4$9c1ZyaWTX" role="1tU5fm" />
+    </node>
     <node concept="312cEg" id="6izRX52HTsZ" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -374,6 +382,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4$9c1ZyaYqq" role="3cqZAp">
+          <node concept="37vLTI" id="4$9c1ZyaZ70" role="3clFbG">
+            <node concept="37vLTw" id="4$9c1ZyaZa7" role="37vLTx">
+              <ref role="3cqZAo" node="4$9c1ZyaTs_" resolve="ranCommand" />
+            </node>
+            <node concept="2OqwBi" id="4$9c1ZyaYCR" role="37vLTJ">
+              <node concept="Xjq3P" id="4$9c1ZyaYqo" role="2Oq$k0" />
+              <node concept="2OwXpG" id="4$9c1ZyaYSK" role="2OqNvi">
+                <ref role="2Oxat5" node="4$9c1ZyaWU1" resolve="ranCommand" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="6izRX52HUyb" role="3cqZAp">
           <node concept="37vLTI" id="6izRX52HUXK" role="3clFbG">
             <node concept="37vLTw" id="6izRX52HV0v" role="37vLTx">
@@ -397,6 +418,10 @@
         <node concept="3uibUv" id="mb65_hoiHG" role="1tU5fm">
           <ref role="3uigEE" node="6oOIJNsBVXe" resolve="RAW_RESULT_KIND" />
         </node>
+      </node>
+      <node concept="37vLTG" id="4$9c1ZyaTs_" role="3clF46">
+        <property role="TrG5h" value="ranCommand" />
+        <node concept="17QB3L" id="4$9c1ZyaUaO" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="6izRX52HUqV" role="3clF46">
         <property role="TrG5h" value="rawCBMCOutput" />
@@ -642,6 +667,25 @@
       <node concept="17QB3L" id="6izRX52HX2l" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="6izRX52HZ73" role="jymVt" />
+    <node concept="3clFb_" id="4$9c1Zyb0$9" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getRanCommand" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="4$9c1Zyb0$a" role="3clF47">
+        <node concept="3clFbF" id="4$9c1Zyb0$b" role="3cqZAp">
+          <node concept="2OqwBi" id="4$9c1Zyb0$c" role="3clFbG">
+            <node concept="Xjq3P" id="4$9c1Zyb0$d" role="2Oq$k0" />
+            <node concept="2OwXpG" id="4$9c1Zyb6Tf" role="2OqNvi">
+              <ref role="2Oxat5" node="4$9c1ZyaWU1" resolve="ranCommand" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4$9c1Zyb0$f" role="1B3o_S" />
+      <node concept="17QB3L" id="4$9c1Zyb0$g" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="4$9c1ZyaZkj" role="jymVt" />
     <node concept="3clFb_" id="7oOvYOv4Kvq" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="toString" />
@@ -787,6 +831,20 @@
       </node>
       <node concept="3Tm1VV" id="WwTuEsuZWT" role="1B3o_S" />
       <node concept="3clFbS" id="WwTuEsuZWU" role="3clF47">
+        <node concept="3cpWs8" id="4$9c1Zybs1O" role="3cqZAp">
+          <node concept="3cpWsn" id="4$9c1Zybs1P" role="3cpWs9">
+            <property role="TrG5h" value="ranCmd" />
+            <node concept="17QB3L" id="4$9c1Zybs1K" role="1tU5fm" />
+            <node concept="2OqwBi" id="4$9c1Zybs1Q" role="33vP2m">
+              <node concept="37vLTw" id="4$9c1Zybs1R" role="2Oq$k0">
+                <ref role="3cqZAo" node="6qzwnPiotjG" resolve="runResult" />
+              </node>
+              <node concept="2OwXpG" id="4$9c1ZykO0a" role="2OqNvi">
+                <ref role="2Oxat5" to="8e9v:4$9c1ZxZKdQ" resolve="ranCommand" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="6qzwnPipxLt" role="3cqZAp">
           <node concept="3clFbS" id="6qzwnPipxLw" role="3clFbx">
             <node concept="3cpWs6" id="mb65_hoFNn" role="3cqZAp">
@@ -799,6 +857,9 @@
                   <node concept="Rm8GO" id="mb65_hoKz3" role="37wK5m">
                     <ref role="1Px2BO" node="6oOIJNsBVXe" resolve="RAW_RESULT_KIND" />
                     <ref role="Rm8GQ" node="6qzwnPipIsl" resolve="LAZY_RESULT" />
+                  </node>
+                  <node concept="37vLTw" id="4$9c1Zybs1T" role="37wK5m">
+                    <ref role="3cqZAo" node="4$9c1Zybs1P" resolve="ranCmd" />
                   </node>
                   <node concept="Xl_RD" id="6izRX52JOST" role="37wK5m">
                     <property role="Xl_RC" value="lazy result" />
@@ -934,7 +995,7 @@
         </node>
         <node concept="3cpWs8" id="6izRX52K$g_" role="3cqZAp">
           <node concept="3cpWsn" id="6izRX52K$gC" role="3cpWs9">
-            <property role="TrG5h" value="rawCBMCOutput" />
+            <property role="TrG5h" value="rawOutput" />
             <node concept="17QB3L" id="6izRX52K$gz" role="1tU5fm" />
             <node concept="2OqwBi" id="6izRX52K_Ij" role="33vP2m">
               <node concept="37vLTw" id="6izRX52K_Bl" role="2Oq$k0">
@@ -965,8 +1026,11 @@
                     <ref role="Rm8GQ" node="6oOIJNsBXl4" resolve="PROPERTY_HOLDS" />
                     <ref role="1Px2BO" node="6oOIJNsBVXe" resolve="RAW_RESULT_KIND" />
                   </node>
+                  <node concept="37vLTw" id="4$9c1ZybtHm" role="37wK5m">
+                    <ref role="3cqZAo" node="4$9c1Zybs1P" resolve="ranCmd" />
+                  </node>
                   <node concept="37vLTw" id="6izRX52KCgI" role="37wK5m">
-                    <ref role="3cqZAo" node="6izRX52K$gC" resolve="rawCBMCOutput" />
+                    <ref role="3cqZAo" node="6izRX52K$gC" resolve="rawOutput" />
                   </node>
                 </node>
               </node>
@@ -1026,8 +1090,11 @@
                     <ref role="Rm8GQ" node="7N0A15XmyUV" resolve="TIMEOUT" />
                     <ref role="1Px2BO" node="6oOIJNsBVXe" resolve="RAW_RESULT_KIND" />
                   </node>
+                  <node concept="37vLTw" id="4$9c1Zybwlm" role="37wK5m">
+                    <ref role="3cqZAo" node="4$9c1Zybs1P" resolve="ranCmd" />
+                  </node>
                   <node concept="37vLTw" id="6izRX52KDFl" role="37wK5m">
-                    <ref role="3cqZAo" node="6izRX52K$gC" resolve="rawCBMCOutput" />
+                    <ref role="3cqZAo" node="6izRX52K$gC" resolve="rawOutput" />
                   </node>
                 </node>
               </node>
@@ -1055,8 +1122,11 @@
                     <ref role="Rm8GQ" node="1d23YaEy6Q6" resolve="CANCELED" />
                     <ref role="1Px2BO" node="6oOIJNsBVXe" resolve="RAW_RESULT_KIND" />
                   </node>
+                  <node concept="37vLTw" id="4$9c1ZybxEm" role="37wK5m">
+                    <ref role="3cqZAo" node="4$9c1Zybs1P" resolve="ranCmd" />
+                  </node>
                   <node concept="37vLTw" id="6izRX52KFGR" role="37wK5m">
-                    <ref role="3cqZAo" node="6izRX52K$gC" resolve="rawCBMCOutput" />
+                    <ref role="3cqZAo" node="6izRX52K$gC" resolve="rawOutput" />
                   </node>
                 </node>
               </node>
@@ -1150,8 +1220,11 @@
                   <node concept="37vLTw" id="69N9a9ZU2yL" role="37wK5m">
                     <ref role="3cqZAo" node="69N9a9ZU2yJ" resolve="rrk" />
                   </node>
+                  <node concept="37vLTw" id="4$9c1Zyb$_D" role="37wK5m">
+                    <ref role="3cqZAo" node="4$9c1Zybs1P" resolve="ranCmd" />
+                  </node>
                   <node concept="37vLTw" id="6izRX52KGYT" role="37wK5m">
-                    <ref role="3cqZAo" node="6izRX52K$gC" resolve="rawCBMCOutput" />
+                    <ref role="3cqZAo" node="6izRX52K$gC" resolve="rawOutput" />
                   </node>
                 </node>
               </node>
@@ -1180,7 +1253,7 @@
           <node concept="1rXfSq" id="3GkK2EEQLhi" role="3clFbG">
             <ref role="37wK5l" node="42G5eOpPNiV" resolve="debug" />
             <node concept="37vLTw" id="6izRX52KIZs" role="37wK5m">
-              <ref role="3cqZAo" node="6izRX52K$gC" resolve="rawCBMCOutput" />
+              <ref role="3cqZAo" node="6izRX52K$gC" resolve="rawOutput" />
             </node>
           </node>
         </node>
@@ -1203,7 +1276,7 @@
               <node concept="1pGfFk" id="WwTuEsv00h" role="2ShVmc">
                 <ref role="37wK5l" to="fxg7:~StringReader.&lt;init&gt;(java.lang.String)" resolve="StringReader" />
                 <node concept="37vLTw" id="6izRX52KJ7d" role="37wK5m">
-                  <ref role="3cqZAo" node="6izRX52K$gC" resolve="rawCBMCOutput" />
+                  <ref role="3cqZAo" node="6izRX52K$gC" resolve="rawOutput" />
                 </node>
               </node>
             </node>
@@ -1259,8 +1332,11 @@
                 <node concept="37vLTw" id="57eVTvnLTcK" role="37wK5m">
                   <ref role="3cqZAo" node="57eVTvnLTcI" resolve="defaultResult" />
                 </node>
+                <node concept="37vLTw" id="4$9c1Zyb_Nv" role="37wK5m">
+                  <ref role="3cqZAo" node="4$9c1Zybs1P" resolve="ranCmd" />
+                </node>
                 <node concept="37vLTw" id="6izRX52M3RM" role="37wK5m">
-                  <ref role="3cqZAo" node="6izRX52K$gC" resolve="rawCBMCOutput" />
+                  <ref role="3cqZAo" node="6izRX52K$gC" resolve="rawOutput" />
                 </node>
               </node>
             </node>
@@ -1425,8 +1501,11 @@
                         <ref role="Rm8GQ" node="6oOIJNsBXkZ" resolve="RUNTIME_ERROR" />
                         <ref role="1Px2BO" node="6oOIJNsBVXe" resolve="RAW_RESULT_KIND" />
                       </node>
+                      <node concept="37vLTw" id="4$9c1ZybB1G" role="37wK5m">
+                        <ref role="3cqZAo" node="4$9c1Zybs1P" resolve="ranCmd" />
+                      </node>
                       <node concept="37vLTw" id="6izRX52KIjz" role="37wK5m">
-                        <ref role="3cqZAo" node="6izRX52K$gC" resolve="rawCBMCOutput" />
+                        <ref role="3cqZAo" node="6izRX52K$gC" resolve="rawOutput" />
                       </node>
                     </node>
                   </node>
