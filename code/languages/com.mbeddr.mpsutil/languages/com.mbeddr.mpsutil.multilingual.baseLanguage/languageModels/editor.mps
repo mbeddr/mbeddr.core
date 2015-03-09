@@ -23,7 +23,7 @@
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="tnjx.2510545900188478754" resolveInfo="MultilingualJavaString" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2510545900188478758" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Image" typeId="tpc2.1139744628335" id="2510545900188478759" nodeInfo="ng">
-        <property name="imageFile" nameId="tpc2.1139746504291" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.multilingual.common/icons/multi3.png" />
+        <property name="imageFile" nameId="tpc2.1139746504291" value="${module}/icons/multi3.png" />
         <property name="descent" nameId="tpc2.1139858284555" value="4" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="2510545900188478760" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="false" />
@@ -147,7 +147,7 @@
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="tnjx.9087294576173492452" resolveInfo="MultilingualJavaRichString" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="9087294576173863404" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Image" typeId="tpc2.1139744628335" id="9087294576173863405" nodeInfo="ng">
-        <property name="imageFile" nameId="tpc2.1139746504291" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.multilingual.common/icons/multi3.png" />
+        <property name="imageFile" nameId="tpc2.1139746504291" value="${module}/icons/multi3.png" />
         <property name="descent" nameId="tpc2.1139858284555" value="4" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="9087294576173863406" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="false" />
