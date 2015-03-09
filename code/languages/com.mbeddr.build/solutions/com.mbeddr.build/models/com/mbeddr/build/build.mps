@@ -8099,6 +8099,12 @@
             <ref role="3bR37D" node="7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6m6BTo4YIJ5" role="3bR37C">
+          <node concept="3bR9La" id="6m6BTo4YIJ6" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7eF9rfAuDV$" resolve="com.mbeddr.analyses.base" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="1LOLPn5p_B1" role="2G$12L">
         <property role="BnDLt" value="true" />

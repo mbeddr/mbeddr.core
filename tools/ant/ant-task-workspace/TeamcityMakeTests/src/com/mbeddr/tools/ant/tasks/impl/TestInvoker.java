@@ -26,10 +26,12 @@ public class TestInvoker implements MakeExecutor {
 					Process process = util.createMakeTestProcess(makeDirectory,
 							logger);
 					ProcessResult processResult = util.waitForProcess(process);
-					System.out.println("4");
 					MessageTranslator translator = new MessageTranslator(processResult, logger, util);
 					translator.translateMessages(makeDirectory);
 				} catch (Exception e) {
+					System.out.println("exception: "+ e.getClass());
+					project.log(e.getMessage());
+					e.printStackTrace();
 					throw new BuildException(
 							"Invoking 'make' failed in the following directory:"
 									+ makeDirectory.getAbsolutePath(),e);
