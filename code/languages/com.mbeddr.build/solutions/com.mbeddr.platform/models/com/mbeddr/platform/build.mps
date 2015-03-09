@@ -7733,9 +7733,6 @@
       <node concept="L2wRC" id="7hVsScEQK2H" role="39821P">
         <ref role="L2wRA" node="7hVsScEQJs4" resolve="test.ts.richstring" />
       </node>
-      <node concept="L2wRC" id="4gGXGcLVuYJ" role="39821P">
-        <ref role="L2wRA" node="4gGXGcLVuE$" resolve="com.mbeddr.mpsutil.uniquenames.test" />
-      </node>
       <node concept="L2wRC" id="4gGXGcLVuYQ" role="39821P">
         <ref role="L2wRA" node="4gGXGcLVuHu" resolve="test.ts.mpsutil.multilingual" />
       </node>
@@ -7916,31 +7913,6 @@
           <property role="TrG5h" value="com.mbeddr.mpsutil.javainterpreter.test#6267356447275018447" />
           <property role="3LESm3" value="da16ac82-9662-4cb8-b6de-3c95e21b838e" />
           <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtA" id="4gGXGcLVuE$" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="com.mbeddr.mpsutil.uniquenames.test" />
-        <property role="3LESm3" value="c6e28a1c-f79e-4f7b-ba82-922edfa68b63" />
-        <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources and tests" />
-        <node concept="1SiIV0" id="4Ob7avfdSMn" role="3bR37C">
-          <node concept="3bR9La" id="4Ob7avfdSMo" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" node="65ryKW0HDrs" resolve="com.mbeddr.mpsutil.uniquenames" />
-          </node>
-        </node>
-        <node concept="398BVA" id="4gGXGcLVuFl" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="4gGXGcLVuFq" role="iGT6I">
-            <property role="2Ry0Am" value="tests" />
-            <node concept="2Ry0Ak" id="4gGXGcLVuFu" role="2Ry0An">
-              <property role="2Ry0Am" value="com.mbeddr.mpsutil.uniquenames.test" />
-              <node concept="2Ry0Ak" id="4gGXGcLVuFy" role="2Ry0An">
-                <property role="2Ry0Am" value="com.mbeddr.mpsutil.uniquenames.test.msd" />
-              </node>
-            </node>
-          </node>
         </node>
       </node>
       <node concept="1E1JtA" id="4gGXGcLVuHu" role="2G$12L">
@@ -8134,9 +8106,6 @@
       <property role="TrG5h" value="com.mbeddr.platform.tests" />
       <node concept="22LTRM" id="4gGXGcM0dl3" role="22LTRK">
         <ref role="22LTRN" node="7hVsScEQJs4" resolve="test.ts.richstring" />
-      </node>
-      <node concept="22LTRM" id="4gGXGcM0dWE" role="22LTRK">
-        <ref role="22LTRN" node="4gGXGcLVuE$" resolve="com.mbeddr.mpsutil.uniquenames.test" />
       </node>
       <node concept="22LTRM" id="4gGXGcM0e1C" role="22LTRK">
         <ref role="22LTRN" node="4gGXGcLVuHu" resolve="test.ts.mpsutil.multilingual" />

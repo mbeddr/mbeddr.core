@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:890ea833-37c9-445e-a04d-3b69ce24aa30(com.mbeddr.core.modules.editor)">
+<model modelUID="r:890ea833-37c9-445e-a04d-3b69ce24aa30(com.mbeddr.core.modules.editor)" version="1">
   <persistence version="8" />
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <language namespace="443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)" />
@@ -35,11 +35,11 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="wfif" modelUID="r:ff3199af-19b4-4b1a-8045-000a02c06e38(de.itemis.mps.editor.bool.structure)" version="-1" implicit="yes" />
   <import index="q3j0" modelUID="7a07df55-d34f-4938-9dc9-c19fd71bcb69/r:0c744cd0-0eb0-4544-b9b2-34b0d6c40678(com.mbeddr.mpsutil.tooltip/com.mbeddr.mpsutil.tooltip.structure)" version="-1" implicit="yes" />
+  <import index="yv4j" modelUID="r:6a63246b-e5f4-49e4-8474-0744982532d8(com.mbeddr.mpsutil.breadcrumb.editor.structure)" version="0" implicit="yes" />
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6437088627575722855" nodeInfo="ig">
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.6437088627575722830" resolveInfo="ImplementationModule" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type=".com.mbeddr.mpsutil.breadcrumb.editor.structure.BreadcrumbEditor" id="1948372137355621847" nodeInfo="ng">
-      <property name="showIcons" value="true" />
-      <node role="content" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6437088627575722857" nodeInfo="sn">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="yv4j.BreadcrumbEditor" typeId="yv4j.4317384196709001934" id="1948372137355621847" nodeInfo="ng">
+      <node role="content" roleId="yv4j.4317384196709001940" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6437088627575722857" nodeInfo="sn">
         <property name="usesFolding" nameId="tpc2.1160590353935" value="true" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3947421596133662052" nodeInfo="sn">
           <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="3947421596133662053" nodeInfo="ln">
@@ -1293,9 +1293,8 @@
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2591755460548204121" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="external" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.6116558314501417921" resolveInfo="ExternalModule" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type=".com.mbeddr.mpsutil.breadcrumb.editor.structure.BreadcrumbEditor" id="5954008374098493509" nodeInfo="ng">
-      <property name="showIcons" value="true" />
-      <node role="content" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1006091569937120346" nodeInfo="sn">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="yv4j.BreadcrumbEditor" typeId="yv4j.4317384196709001934" id="5954008374098493509" nodeInfo="ng">
+      <node role="content" roleId="yv4j.4317384196709001940" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1006091569937120346" nodeInfo="sn">
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3947421596133749619" nodeInfo="sn">
           <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="3947421596133749620" nodeInfo="ln">
             <property name="flag" nameId="tpc2.1186414551515" value="false" />
