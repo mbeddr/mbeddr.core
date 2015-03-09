@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="1c897ba5-9d43-4035-ac7f-0306495743ac/r:5cb76491-cdbe-4d53-958c-9017fcd0ccc6(com.mbeddr.mpsutil.interpreter.test/com.mbeddr.mpsutil.interpreter.test.behavior)">
+<model ref="r:5cb76491-cdbe-4d53-958c-9017fcd0ccc6(com.mbeddr.mpsutil.interpreter.test.behavior)">
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="2ahs" ref="735f86bc-17fb-4d1c-a664-82c2b8e8a34e/r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt/com.mbeddr.mpsutil.interpreter.rt)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="7cx9" ref="1c897ba5-9d43-4035-ac7f-0306495743ac/r:af793ab9-042b-414b-8d5e-765e4059f681(com.mbeddr.mpsutil.interpreter.test/com.mbeddr.mpsutil.interpreter.test.structure)" implicit="true" />
+    <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
+    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="ua2a" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.typesystem.inference(MPS.Core/jetbrains.mps.typesystem.inference@java_stub)" />
+    <import index="7cx9" ref="r:af793ab9-042b-414b-8d5e-765e4059f681(com.mbeddr.mpsutil.interpreter.test.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -246,32 +247,63 @@
           <node concept="9aQIb" id="65E6xpGUYwk" role="9aQIa">
             <node concept="3clFbS" id="65E6xpGUYwl" role="9aQI4">
               <node concept="3cpWs6" id="65E6xpGUYJA" role="3cqZAp">
-                <node concept="3cpWs3" id="65E6xpGV7X_" role="3cqZAk">
-                  <node concept="37vLTw" id="65E6xpGV8$6" role="3uHU7w">
-                    <ref role="3cqZAo" node="65E6xpGUUOz" resolve="actual" />
+                <node concept="BsUDl" id="5Gh6GqGJPUL" role="3cqZAk">
+                  <ref role="37wK5l" node="5Gh6GqGJOLf" resolve="getInvalidMessage" />
+                  <node concept="37vLTw" id="5Gh6GqGJQ7h" role="37wK5m">
+                    <ref role="3cqZAo" node="65E6xpGUT7u" resolve="expected" />
                   </node>
-                  <node concept="3cpWs3" id="65E6xpGV2vx" role="3uHU7B">
-                    <node concept="3cpWs3" id="65E6xpGV1Nl" role="3uHU7B">
-                      <node concept="3cpWs3" id="65E6xpGV9lB" role="3uHU7B">
-                        <node concept="BsUDl" id="65E6xpGVe1U" role="3uHU7B">
-                          <ref role="37wK5l" node="65E6xpGVdh9" resolve="getNodeRendering" />
-                        </node>
-                        <node concept="Xl_RD" id="65E6xpGUZ8X" role="3uHU7w">
-                          <property role="Xl_RC" value=": expected: " />
-                        </node>
-                      </node>
-                      <node concept="37vLTw" id="65E6xpGV23g" role="3uHU7w">
-                        <ref role="3cqZAo" node="65E6xpGUT7u" resolve="expected" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="65E6xpGV2v$" role="3uHU7w">
-                      <property role="Xl_RC" value=" actual: " />
-                    </node>
+                  <node concept="37vLTw" id="5Gh6GqGJQtP" role="37wK5m">
+                    <ref role="3cqZAo" node="65E6xpGUUOz" resolve="actual" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5Gh6GqGJOLf" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getInvalidMessage" />
+      <node concept="3Tmbuc" id="5Gh6GqGJP1p" role="1B3o_S" />
+      <node concept="17QB3L" id="5Gh6GqGJP1t" role="3clF45" />
+      <node concept="3clFbS" id="5Gh6GqGJOLi" role="3clF47">
+        <node concept="3clFbF" id="5Gh6GqGJPA5" role="3cqZAp">
+          <node concept="3cpWs3" id="65E6xpGV7X_" role="3clFbG">
+            <node concept="37vLTw" id="65E6xpGV8$6" role="3uHU7w">
+              <ref role="3cqZAo" node="5Gh6GqGJP22" resolve="actual" />
+            </node>
+            <node concept="3cpWs3" id="65E6xpGV2vx" role="3uHU7B">
+              <node concept="3cpWs3" id="65E6xpGV1Nl" role="3uHU7B">
+                <node concept="3cpWs3" id="65E6xpGV9lB" role="3uHU7B">
+                  <node concept="BsUDl" id="65E6xpGVe1U" role="3uHU7B">
+                    <ref role="37wK5l" node="65E6xpGVdh9" resolve="getNodeRendering" />
+                  </node>
+                  <node concept="Xl_RD" id="65E6xpGUZ8X" role="3uHU7w">
+                    <property role="Xl_RC" value=": expected: " />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="65E6xpGV23g" role="3uHU7w">
+                  <ref role="3cqZAo" node="5Gh6GqGJP1y" resolve="expected" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="65E6xpGV2v$" role="3uHU7w">
+                <property role="Xl_RC" value=" actual: " />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5Gh6GqGJP1y" role="3clF46">
+        <property role="TrG5h" value="expected" />
+        <node concept="3uibUv" id="5Gh6GqGJP1x" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5Gh6GqGJP22" role="3clF46">
+        <property role="TrG5h" value="actual" />
+        <node concept="3uibUv" id="5Gh6GqGJP2g" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
         </node>
       </node>
     </node>
@@ -299,18 +331,18 @@
           </node>
         </node>
         <node concept="3cpWs6" id="65E6xpGShlO" role="3cqZAp">
-          <node concept="2OqwBi" id="65E6xpGShw7" role="3cqZAk">
-            <node concept="37vLTw" id="27Skbdzgkqo" role="2Oq$k0">
+          <node concept="2OqwBi" id="5Gh6GqH2ZWV" role="3cqZAk">
+            <node concept="37vLTw" id="5Gh6GqH2ZWW" role="2Oq$k0">
               <ref role="3cqZAo" node="27Skbdzgkqm" resolve="interpreter" />
             </node>
-            <node concept="liA8E" id="65E6xpGSi7b" role="2OqNvi">
+            <node concept="liA8E" id="5Gh6GqH2ZWX" role="2OqNvi">
               <ref role="37wK5l" to="2ahs:2X4$XGmegKw" resolve="evaluate" />
-              <node concept="37vLTw" id="65E6xpGSi8s" role="37wK5m">
+              <node concept="37vLTw" id="5Gh6GqH2ZWY" role="37wK5m">
                 <ref role="3cqZAo" node="65E6xpGSh9l" resolve="node" />
               </node>
-              <node concept="BsUDl" id="6glrYM_6jra" role="37wK5m">
+              <node concept="BsUDl" id="5Gh6GqH2ZWZ" role="37wK5m">
                 <ref role="37wK5l" node="6glrYM_6jr6" resolve="createContext" />
-                <node concept="37vLTw" id="6glrYM_6jr9" role="37wK5m">
+                <node concept="37vLTw" id="5Gh6GqH2ZX0" role="37wK5m">
                   <ref role="3cqZAo" node="27Skbdzgkqm" resolve="interpreter" />
                 </node>
               </node>
