@@ -14,7 +14,7 @@
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <root type="v54s.ExtensionDeclaration" typeId="v54s.3729007189729192404" id="902624672044181028" nodeInfo="ng">
     <link role="extensionPoint" roleId="v54s.3729007189729192405" targetNodeId="esvi.902624672039902922" resolveInfo="RichstringEvaluator" />
-    <node role="objectGetter" roleId="v54s.8029776554053057811" type="v54s.ExtensionObjectGetter" typeId="v54s.8029776554053043557" id="902624672044181029" nodeInfo="nn">
+    <node role="objectGetter" roleId="v54s.8029776554053057811" type="v54s.ExtensionObjectGetter" typeId="v54s.8029776554053043557" id="902624672044181029" nodeInfo="in">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="902624672044181030" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="902624672044219414" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068581517676" type="v54s.ExtensionFieldReference" typeId="v54s.7036359038356115102" id="902624672044220032" nodeInfo="nn">
@@ -29,7 +29,7 @@
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="902624672044182230" resolveInfo="RichstringJavaEvaluator" />
       </node>
     </node>
-    <node role="activator" roleId="v54s.7036359038356050926" type="v54s.ExtensionFunction" typeId="v54s.7036359038356050927" id="902624672044216886" nodeInfo="nn">
+    <node role="activator" roleId="v54s.7036359038356050926" type="v54s.ExtensionFunction" typeId="v54s.7036359038356050927" id="902624672044216886" nodeInfo="in">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="902624672044216887" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="902624672044217501" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="902624672044217745" nodeInfo="nn">
@@ -45,7 +45,7 @@
         </node>
       </node>
     </node>
-    <node role="deactivator" roleId="v54s.7036359038356050934" type="v54s.ExtensionFunction" typeId="v54s.7036359038356050927" id="902624672044218331" nodeInfo="nn">
+    <node role="deactivator" roleId="v54s.7036359038356050934" type="v54s.ExtensionFunction" typeId="v54s.7036359038356050927" id="902624672044218331" nodeInfo="in">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="902624672044218332" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="902624672044218950" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="902624672044219180" nodeInfo="nn">
@@ -98,14 +98,14 @@
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2ahs.4959846875322600509" resolveInfo="getInterpreterExecutable" />
                   <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="2ahs.4959846875322592632" resolveInfo="InterpreterRegistry" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.NodeRefExpression" typeId="tp25.1219352745532" id="902624672044193670" nodeInfo="nn">
-                    <link role="referentNode" roleId="tp25.1219352800908" targetNodeId="7k10.902624672043046972" resolveInfo="JavaInterpreterIntegral" />
+                    <link role="referentNode" roleId="tp25.1219352800908" targetNodeId="7k10.902624672043046972" resolveInfo="JavaInterpreterLong" />
                   </node>
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="902624672044193888" nodeInfo="nn">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2ahs.4959846875322600509" resolveInfo="getInterpreterExecutable" />
                   <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="2ahs.4959846875322592632" resolveInfo="InterpreterRegistry" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.NodeRefExpression" typeId="tp25.1219352745532" id="902624672044193889" nodeInfo="nn">
-                    <link role="referentNode" roleId="tp25.1219352800908" targetNodeId="7k10.902624672043750076" resolveInfo="JavaInterpreterFloatingPoint" />
+                    <link role="referentNode" roleId="tp25.1219352800908" targetNodeId="7k10.902624672043750076" resolveInfo="JavaInterpreterDouble" />
                   </node>
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="902624672044193898" nodeInfo="nn">

@@ -12,7 +12,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="d5g1" modelUID="r:c2ad9492-0507-4de1-afef-72beefc5831c(com.mbeddr.mpsutil.propertydefault.structure)" version="-1" implicit="yes" />
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="1550432487217247435" nodeInfo="ng">
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="1550432487217247435" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="TestConstraints" />
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="1550432487217247510" nodeInfo="ng">
       <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1550432487217234532" nodeInfo="ng">

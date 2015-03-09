@@ -9,7 +9,7 @@
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="40" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="5ay" modelUID="r:fef3c8cb-43c1-4a85-9226-c4ad6bb9ce39(com.mbeddr.mpsutil.javainterpreter.test.structure)" version="-1" implicit="yes" />
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="6267356447275016480" nodeInfo="ng">
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="6267356447275016480" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="Variables" />
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="6267356447275018317" nodeInfo="ng">
       <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6267356447275018319" nodeInfo="ig">
@@ -406,7 +406,7 @@
   <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="7716961532377981321" nodeInfo="ng">
     <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
   </root>
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="6454482082316192248" nodeInfo="ng">
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="6454482082316192248" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="TypesTest" />
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="6454482082316192422" nodeInfo="ng">
       <node role="nodeToCheck" roleId="tp5g.1216989461394" type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6454482082316192425" nodeInfo="ig">

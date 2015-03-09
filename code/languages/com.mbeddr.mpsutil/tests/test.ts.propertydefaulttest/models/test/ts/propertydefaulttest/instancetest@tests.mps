@@ -14,7 +14,7 @@
   <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="7716961532377981321" nodeInfo="ng">
     <property name="projectPath" nameId="tp5g.5097124989038916363" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
   </root>
-  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="1550432487217262516" nodeInfo="ng">
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="1550432487217262516" nodeInfo="lg">
     <property name="name" nameId="tpck.1169194664001" value="TestDefaults" />
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="1550432487217262526" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="defaultValue" />
