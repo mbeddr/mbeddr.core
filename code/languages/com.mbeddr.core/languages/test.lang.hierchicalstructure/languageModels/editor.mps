@@ -4,14 +4,20 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="a482b416-d0c9-473f-8f67-725ed642b3f3" name="com.mbeddr.mpsutil.breadcrumb" version="-1" />
+    <use id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="nm5n" ref="r:efe730f6-11b1-4178-b6ef-cb812b43cfe4(test.lang.hierchicalstructure.structure)" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="nm5n" ref="r:efe730f6-11b1-4178-b6ef-cb812b43cfe4(test.lang.hierchicalstructure.structure)" implicit="true" />
-    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
+    <language id="00000000-0000-0000-0000-000000000000" name="">
+      <concept id="0" name="" flags="ng" index="00000">
+        <property id="0" name="" index="00000" />
+      </concept>
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
@@ -50,10 +56,9 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
-    <language id="a482b416-d0c9-473f-8f67-725ed642b3f3" name="com.mbeddr.mpsutil.breadcrumb">
-      <concept id="4313262807137635254" name="com.mbeddr.mpsutil.breadcrumb.structure.BreadcrumbEditor" flags="ng" index="2pz08t">
-        <property id="6508908841687149034" name="showIcons" index="12vifL" />
-        <child id="4313262807137944011" name="content" index="2pxOxw" />
+    <language id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor">
+      <concept id="4317384196709001934" name="com.mbeddr.mpsutil.breadcrumb.editor.structure.BreadcrumbEditor" flags="ng" index="1gkWj3">
+        <child id="4317384196709001940" name="content" index="1gkWjp" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -64,9 +69,9 @@
   </registry>
   <node concept="24kQdi" id="1pmorAa_L9U">
     <ref role="1XX52x" to="nm5n:1pmorAa_KjA" resolve="TestHierarchicalStructureRoot" />
-    <node concept="2pz08t" id="1pmorAa_R0V" role="2wV5jI">
-      <property role="12vifL" value="true" />
-      <node concept="PMmxH" id="1pmorAaAd$U" role="2pxOxw">
+    <node concept="1gkWj3" id="1pmorAa_R0V" role="2wV5jI">
+      <property role="00000" value="true" />
+      <node concept="PMmxH" id="1pmorAaAd$U" role="1gkWjp">
         <ref role="PMmxG" node="1pmorAa_R6Y" resolve="TestHierarchicalStructureRootEditor" />
       </node>
     </node>
@@ -121,8 +126,8 @@
   </node>
   <node concept="24kQdi" id="1pmorAa_R5v">
     <ref role="1XX52x" to="nm5n:1pmorAa_R3X" resolve="TestHierarchicalStructureRootWithoutIcons" />
-    <node concept="2pz08t" id="1pmorAa_R7Z" role="2wV5jI">
-      <node concept="PMmxH" id="1pmorAaA8CR" role="2pxOxw">
+    <node concept="1gkWj3" id="1pmorAa_R7Z" role="2wV5jI">
+      <node concept="PMmxH" id="1pmorAaA8CR" role="1gkWjp">
         <ref role="PMmxG" node="1pmorAa_R6Y" resolve="TestHierarchicalStructureRootEditor" />
       </node>
     </node>
