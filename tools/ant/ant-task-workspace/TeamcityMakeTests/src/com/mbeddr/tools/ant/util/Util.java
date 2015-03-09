@@ -128,7 +128,6 @@ public class Util {
 			@Override
 			public void run() {
 				try {
-					System.out.println("1");
 					BufferedReader reader = new BufferedReader(new InputStreamReader(
 							process.getInputStream()));
 					String line = reader.readLine();
@@ -139,7 +138,6 @@ public class Util {
 				} catch (Exception e) {
 					e.printStackTrace();
 				} finally {
-					System.out.println("2");
 					latch.countDown();
 				}
 			}
@@ -153,9 +151,7 @@ public class Util {
 		ProcessResult result = new ProcessResult();
 		logProcessOutput(process, latch, result);
 		int returnCode = process.waitFor();
-		System.out.println("3");
 		latch.await();
-		System.out.println("3b");
 		result.setReturnCode(returnCode);
 		return result;
 	}
