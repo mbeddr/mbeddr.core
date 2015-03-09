@@ -49,7 +49,14 @@ public class MessageTranslator {
 				}
 				currentTest = new TestState(extractTestName(msg));
 				logger.log(new TestStartedMessage(currentTest.getName(), true));
-			} else if (msg.startsWith("$$FAILED:") && !currentTest.isFailed() && processResult.getReturnCode() != 0) {
+			} else if (msg.startsWith("$$FAILED:") && currentTest == null) {
+				String[] path= makeDirectory.getCanonicalPath().split("/");
+				String testName = path[path.length-1];
+				currentTest = new TestState(testName);
+				logger.log(new TestStartedMessage(currentTest.getName(), true));
+				logger.log(new TestFailedMessage(currentTest.getName(), msg));
+				currentTest.setFailed();
+			} else if (msg.startsWith("$$FAILED:") && currentTest != null && !currentTest.isFailed() && processResult.getReturnCode() != 0) {
 				logger.log(new TestFailedMessage(currentTest.getName(), msg));
 				currentTest.setFailed();
 			} else {
