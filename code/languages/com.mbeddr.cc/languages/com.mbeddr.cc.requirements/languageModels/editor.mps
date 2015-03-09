@@ -38,7 +38,7 @@
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="q3j0" modelUID="r:0c744cd0-0eb0-4544-b9b2-34b0d6c40678(com.mbeddr.mpsutil.tooltip.structure)" version="-1" implicit="yes" />
   <import index="bbp5" modelUID="r:ea4f2df6-5e5c-49de-8679-6112ec7dd9c3(com.mbeddr.mpsutil.editor.querylist.structure)" version="1" implicit="yes" />
-  <import index="yv4j" modelUID="r:6a63246b-e5f4-49e4-8474-0744982532d8(com.mbeddr.mpsutil.breadcrumb.editor.structure)" version="0" implicit="yes" />
+  <import index="yv4j" modelUID="r:6a63246b-e5f4-49e4-8474-0744982532d8(com.mbeddr.mpsutil.breadcrumb.editor.structure)" version="3" implicit="yes" />
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8745401669462962631" nodeInfo="ng">
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="75wo.8745401669462952101" resolveInfo="Requirement" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="170293353486776495" nodeInfo="nn">

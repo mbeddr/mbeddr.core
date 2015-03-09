@@ -166,5 +166,11 @@
     <move id="u8e7.5589470366058907383" to="l1u1.4317384196709002048" />
     <move id="u8e7.5589470366058907384" to="l1u1.4317384196709002049" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" version="3" />
+    </dependencies>
+    <rename id="570t.5045317388380240626" type="CONCEPT" from="IBookmark" to="ISectionIndex" />
+  </StructureModification>
 </history>
 

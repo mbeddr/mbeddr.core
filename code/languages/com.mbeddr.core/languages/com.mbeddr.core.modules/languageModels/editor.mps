@@ -34,7 +34,7 @@
   <import index="tp4f" modelUID="r:00000000-0000-4000-0000-011c89590373(jetbrains.mps.baseLanguage.classifiers.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="wfif" modelUID="r:ff3199af-19b4-4b1a-8045-000a02c06e38(de.itemis.mps.editor.bool.structure)" version="-1" implicit="yes" />
-  <import index="yv4j" modelUID="r:6a63246b-e5f4-49e4-8474-0744982532d8(com.mbeddr.mpsutil.breadcrumb.editor.structure)" version="0" implicit="yes" />
+  <import index="yv4j" modelUID="r:6a63246b-e5f4-49e4-8474-0744982532d8(com.mbeddr.mpsutil.breadcrumb.editor.structure)" version="3" implicit="yes" />
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6437088627575722855" nodeInfo="ng">
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="x27k.6437088627575722830" resolveInfo="ImplementationModule" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="yv4j.BreadcrumbEditor" typeId="yv4j.4317384196709001934" id="1948372137355621847" nodeInfo="ng">

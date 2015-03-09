@@ -6,7 +6,7 @@
   <language namespace="b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)" />
   <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="yv4j" modelUID="r:6a63246b-e5f4-49e4-8474-0744982532d8(com.mbeddr.mpsutil.breadcrumb.editor.structure)" version="-1" />
+  <import index="yv4j" modelUID="r:6a63246b-e5f4-49e4-8474-0744982532d8(com.mbeddr.mpsutil.breadcrumb.editor.structure)" version="3" />
   <import index="nu8v" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" version="-1" />
   <import index="tpc3" modelUID="r:00000000-0000-4000-0000-011c8959029f(jetbrains.mps.lang.editor.generator.baseLanguage.template.main@generator)" version="-1" />
   <import index="cu2c" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" version="-1" />
@@ -262,7 +262,7 @@
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4317384196709069116" nodeInfo="nn">
                     <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4317384196709069117" nodeInfo="nn">
                       <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="4317384196709069118" nodeInfo="nn">
-                        <link role="property" roleId="tp25.1138056395725" targetNodeId="yv4j.4317384196709001938" resolveInfo="showBookmarks" />
+                        <link role="property" roleId="tp25.1138056395725" targetNodeId="yv4j.4317384196709001938" resolveInfo="showSectionIndices" />
                       </node>
                       <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4317384196709069119" nodeInfo="nn" />
                     </node>
@@ -287,7 +287,7 @@
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4317384196709069128" nodeInfo="nn">
                           <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4317384196709069129" nodeInfo="nn">
                             <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="4317384196709069130" nodeInfo="nn">
-                              <link role="property" roleId="tp25.1138056395725" targetNodeId="yv4j.4317384196709001936" resolveInfo="showBookmarkIcons" />
+                              <link role="property" roleId="tp25.1138056395725" targetNodeId="yv4j.4317384196709001936" resolveInfo="showSectionIndexIcons" />
                             </node>
                             <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4317384196709069131" nodeInfo="nn" />
                           </node>
@@ -304,7 +304,7 @@
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4317384196709069135" nodeInfo="nn">
                     <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4317384196709069136" nodeInfo="nn">
                       <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="4317384196709069137" nodeInfo="nn">
-                        <link role="property" roleId="tp25.1138056395725" targetNodeId="yv4j.4317384196709001938" resolveInfo="showBookmarks" />
+                        <link role="property" roleId="tp25.1138056395725" targetNodeId="yv4j.4317384196709001938" resolveInfo="showSectionIndices" />
                       </node>
                       <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4317384196709069138" nodeInfo="nn" />
                     </node>
@@ -329,7 +329,7 @@
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4317384196709069147" nodeInfo="nn">
                           <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4317384196709069148" nodeInfo="nn">
                             <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="4317384196709069149" nodeInfo="nn">
-                              <link role="property" roleId="tp25.1138056395725" targetNodeId="yv4j.4317384196709001939" resolveInfo="bookmarkPanelWidth" />
+                              <link role="property" roleId="tp25.1138056395725" targetNodeId="yv4j.4317384196709001939" resolveInfo="SectionIndexPanelWidth" />
                             </node>
                             <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4317384196709069150" nodeInfo="nn" />
                           </node>
@@ -346,7 +346,7 @@
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4317384196709069154" nodeInfo="nn">
                     <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4317384196709069155" nodeInfo="nn">
                       <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="4317384196709069156" nodeInfo="nn">
-                        <link role="property" roleId="tp25.1138056395725" targetNodeId="yv4j.4317384196709001938" resolveInfo="showBookmarks" />
+                        <link role="property" roleId="tp25.1138056395725" targetNodeId="yv4j.4317384196709001938" resolveInfo="showSectionIndices" />
                       </node>
                       <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4317384196709069157" nodeInfo="nn" />
                     </node>
@@ -578,7 +578,7 @@
                                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4317384196709069254" nodeInfo="nn">
                                   <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4317384196709069255" nodeInfo="nn">
                                     <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="4317384196709069256" nodeInfo="nn">
-                                      <link role="property" roleId="tp25.1138056395725" targetNodeId="yv4j.4317384196709001938" resolveInfo="showBookmarks" />
+                                      <link role="property" roleId="tp25.1138056395725" targetNodeId="yv4j.4317384196709001938" resolveInfo="showSectionIndices" />
                                     </node>
                                     <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4317384196709069257" nodeInfo="nn" />
                                   </node>
@@ -812,7 +812,7 @@
                                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4317384196709069354" nodeInfo="nn">
                                   <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4317384196709069355" nodeInfo="nn">
                                     <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="4317384196709069356" nodeInfo="nn">
-                                      <link role="property" roleId="tp25.1138056395725" targetNodeId="yv4j.4317384196709001938" resolveInfo="showBookmarks" />
+                                      <link role="property" roleId="tp25.1138056395725" targetNodeId="yv4j.4317384196709001938" resolveInfo="showSectionIndices" />
                                     </node>
                                     <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="4317384196709069357" nodeInfo="nn" />
                                   </node>

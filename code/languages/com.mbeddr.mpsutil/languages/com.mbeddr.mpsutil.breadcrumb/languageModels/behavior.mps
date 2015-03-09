@@ -4,7 +4,7 @@
   <language namespace="af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="dbrf" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" version="-1" />
-  <import index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" version="3" />
+  <import index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" version="4" />
   <import index="tpcu" modelUID="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" version="-1" />
   <import index="jqcv" modelUID="r:3b5e5c58-5a2a-44f7-840e-bf72f3bd68f2(com.mbeddr.mpsutil.breadcrumb.runtime.plugin)" version="-1" />
   <import index="1t7x" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" version="-1" />
@@ -69,11 +69,11 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="5045317388380241004" nodeInfo="ng">
-    <link role="concept" roleId="1i04.1225194240799" targetNodeId="570t.5045317388380240626" resolveInfo="IBookmark" />
+    <link role="concept" roleId="1i04.1225194240799" targetNodeId="570t.5045317388380240626" resolveInfo="ISectionIndex" />
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="5045317388380241254" nodeInfo="ng">
       <property name="isAbstract" nameId="1i04.1225194472834" value="false" />
       <property name="isVirtual" nameId="1i04.1225194472832" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="getBookmarkText" />
+      <property name="name" nameId="tpck.1169194664001" value="getSectionIndexText" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5045317388380241255" nodeInfo="nn" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.StringType" typeId="tpee.1225271177708" id="5045317388380241256" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5045317388380241257" nodeInfo="sn">
@@ -90,7 +90,7 @@
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="5045317388380241262" nodeInfo="ng">
       <property name="isAbstract" nameId="1i04.1225194472834" value="false" />
       <property name="isVirtual" nameId="1i04.1225194472832" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="getBookmarkIcon" />
+      <property name="name" nameId="tpck.1169194664001" value="getSectionIndexIcon" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5045317388380241263" nodeInfo="nn" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5045317388380241264" nodeInfo="in">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="dbrf.~Icon" resolveInfo="Icon" />
@@ -108,7 +108,7 @@
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="5045317388391069977" nodeInfo="ng">
       <property name="isAbstract" nameId="1i04.1225194472834" value="false" />
       <property name="isVirtual" nameId="1i04.1225194472832" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="getBookmarkColor" />
+      <property name="name" nameId="tpck.1169194664001" value="getSectionIndexColor" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5045317388391069978" nodeInfo="nn" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5045317388391070732" nodeInfo="in">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1t7x.~Color" resolveInfo="Color" />
@@ -120,7 +120,7 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="4317384196705614537" nodeInfo="in" />
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4317384196705614542" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="1i04.LocalBehaviorMethodCall" typeId="1i04.6496299201655527393" id="4317384196705614543" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388380241254" resolveInfo="getBookmarkText" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388380241254" resolveInfo="getSectionIndexText" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="4317384196705614544" nodeInfo="nn">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dhashCode()%cint" resolveInfo="hashCode" />
@@ -185,7 +185,7 @@
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="5045317388380241269" nodeInfo="ng">
       <property name="isAbstract" nameId="1i04.1225194472834" value="false" />
       <property name="isVirtual" nameId="1i04.1225194472832" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="showAsBookmark" />
+      <property name="name" nameId="tpck.1169194664001" value="showAsSectionIndex" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5045317388380241270" nodeInfo="nn" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="5045317388380241271" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5045317388380241272" nodeInfo="sn">

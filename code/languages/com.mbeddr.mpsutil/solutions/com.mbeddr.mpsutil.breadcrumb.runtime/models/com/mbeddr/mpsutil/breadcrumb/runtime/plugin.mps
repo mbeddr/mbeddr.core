@@ -13,7 +13,7 @@
   <language namespace="28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)" />
   <language namespace="23f985f2-965f-4af1-aee8-a32677429514(com.mbeddr.mpsutil.multilingual.common)" />
   <language namespace="d2a1d976-43a2-462f-ac3a-9b258ced839d(com.mbeddr.mpsutil.multilingual.baseLanguage)" />
-  <import index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" version="3" />
+  <import index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" version="4" />
   <import index="u8e7" modelUID="r:4acb4e42-0ef5-487c-a21d-496738d115a6(com.mbeddr.mpsutil.breadcrumb.behavior)" version="1" />
   <import index="vsqj" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" version="-1" />
   <import index="9a8" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" version="-1" />
@@ -92,7 +92,7 @@
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="5045317388381694078" nodeInfo="igu">
       <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
       <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="bookmarkPanels" />
+      <property name="name" nameId="tpck.1169194664001" value="sectionIndexPanels" />
       <property name="isFinal" nameId="tpee.1176718929932" value="true" />
       <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5045317388381694079" nodeInfo="nn">
         <node role="creator" roleId="tpee.1145553007750" type="tp2q.LinkedHashMapCreator" typeId="tp2q.1240216724530" id="5045317388381694080" nodeInfo="nn">
@@ -100,7 +100,7 @@
             <link role="classifier" roleId="tpee.1107535924139" targetNodeId="cu2c.~SNodePointer" resolveInfo="SNodePointer" />
           </node>
           <node role="valueType" roleId="tp2q.1197687035757" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5045317388381694082" nodeInfo="in">
-            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="BookmarkPanel" />
+            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="SectionIndexPanel" />
           </node>
         </node>
       </node>
@@ -109,7 +109,7 @@
           <link role="classifier" roleId="tpee.1107535924139" targetNodeId="cu2c.~SNodePointer" resolveInfo="SNodePointer" />
         </node>
         <node role="valueType" roleId="tp2q.1197683475734" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5045317388381694085" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="BookmarkPanel" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="SectionIndexPanel" />
         </node>
       </node>
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="5045317388381694086" nodeInfo="nn" />
@@ -282,7 +282,7 @@
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="5045317388381912202" nodeInfo="ngu" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="5045317388381978140" nodeInfo="igu">
       <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="getOrCreateBookmarkPanel" />
+      <property name="name" nameId="tpck.1169194664001" value="getOrCreateSectionIndexPanel" />
       <property name="isFinal" nameId="tpee.1181808852946" value="false" />
       <property name="isDeprecated" nameId="tpee.1224848525476" value="false" />
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="5045317388381978141" nodeInfo="ir">
@@ -299,14 +299,14 @@
       </node>
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5045317388381978145" nodeInfo="nn" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5045317388381978146" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="BookmarkPanel" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="SectionIndexPanel" />
       </node>
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5045317388381978147" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="5045317388381978148" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5045317388381978149" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="result" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5045317388381978150" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="BookmarkPanel" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="SectionIndexPanel" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="5045317388381978151" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388381711710" resolveInfo="getOrCreatePanel" />
@@ -316,18 +316,18 @@
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5045317388381978153" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="5045317388381978154" nodeInfo="nn" />
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.FieldReferenceOperation" typeId="tpee.1197029447546" id="5045317388382020084" nodeInfo="nn">
-                  <link role="fieldDeclaration" roleId="tpee.1197029500499" targetNodeId="5045317388381694078" resolveInfo="bookmarkPanels" />
+                  <link role="fieldDeclaration" roleId="tpee.1197029500499" targetNodeId="5045317388381694078" resolveInfo="sectionIndexPanels" />
                 </node>
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ConceptRefExpression" typeId="tp25.1172424058054" id="5045317388381978156" nodeInfo="nn">
-                <link role="conceptDeclaration" roleId="tp25.1172424100906" targetNodeId="570t.5045317388380240626" resolveInfo="IBookmark" />
+                <link role="conceptDeclaration" roleId="tp25.1172424100906" targetNodeId="570t.5045317388380240626" resolveInfo="ISectionIndex" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="5045317388381978157" nodeInfo="nn">
                 <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="5045317388381978158" nodeInfo="sn">
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5045317388381978159" nodeInfo="nn">
                     <node role="expression" roleId="tpee.1068580123156" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5045317388381978160" nodeInfo="nn">
                       <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="5045317388381978161" nodeInfo="nn">
-                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388381635029" resolveInfo="BookmarkPanel" />
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388381635029" resolveInfo="SectionIndexPanel" />
                         <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388381978162" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388381978143" resolveInfo="editorComponent" />
                         </node>
@@ -370,7 +370,7 @@
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="5045317388381978139" nodeInfo="ngu" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="5045317388381978127" nodeInfo="igu">
       <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="removeBookmarkPanel" />
+      <property name="name" nameId="tpck.1169194664001" value="removeSectionIndexPanel" />
       <property name="isSynchronized" nameId="tpee.4276006055363816570" value="false" />
       <property name="isFinal" nameId="tpee.1181808852946" value="false" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5045317388381978128" nodeInfo="sn">
@@ -378,12 +378,12 @@
           <node role="expression" roleId="tpee.1068580123156" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="5045317388381978130" nodeInfo="nn">
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388381927303" resolveInfo="removePanel" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388381978131" nodeInfo="nn">
-              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388381978137" resolveInfo="bookmarkPanel" />
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388381978137" resolveInfo="sectionIndexPanel" />
             </node>
             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5045317388381978132" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="5045317388381978133" nodeInfo="nn" />
               <node role="operation" roleId="tpee.1197027833540" type="tpee.FieldReferenceOperation" typeId="tpee.1197029447546" id="5045317388382097496" nodeInfo="nn">
-                <link role="fieldDeclaration" roleId="tpee.1197029500499" targetNodeId="5045317388381694078" resolveInfo="bookmarkPanels" />
+                <link role="fieldDeclaration" roleId="tpee.1197029500499" targetNodeId="5045317388381694078" resolveInfo="sectionIndexPanels" />
               </node>
             </node>
           </node>
@@ -392,9 +392,9 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5045317388381978135" nodeInfo="nn" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="5045317388381978136" nodeInfo="in" />
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="5045317388381978137" nodeInfo="ir">
-        <property name="name" nameId="tpck.1169194664001" value="bookmarkPanel" />
+        <property name="name" nameId="tpck.1169194664001" value="sectionIndexPanel" />
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5045317388381978138" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="BookmarkPanel" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="SectionIndexPanel" />
         </node>
       </node>
     </node>
@@ -433,7 +433,7 @@
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="5045317388381645082" nodeInfo="ngu" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="5045317388381656068" nodeInfo="igu">
       <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="shouldShowBookmarks" />
+      <property name="name" nameId="tpck.1169194664001" value="shouldShowSectionIndex" />
       <property name="isSynchronized" nameId="tpee.4276006055363816570" value="false" />
       <property name="isFinal" nameId="tpee.1181808852946" value="false" />
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="5045317388381661203" nodeInfo="ir">
@@ -454,7 +454,7 @@
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="3iid.PreferenceFormPropertyReference" typeId="3iid.145956936288329552" id="5045317388381665649" nodeInfo="ng">
-              <link role="member" roleId="tp4f.1205756909548" targetNodeId="5045317388381636366" resolveInfo="showBookmarks" />
+              <link role="member" roleId="tp4f.1205756909548" targetNodeId="5045317388381636366" resolveInfo="showSectionIndices" />
             </node>
           </node>
         </node>
@@ -483,10 +483,10 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="5045317388382182727" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5045317388382182730" nodeInfo="nr">
-            <property name="name" nameId="tpck.1169194664001" value="shouldShowBookmarks" />
+            <property name="name" nameId="tpck.1169194664001" value="shouldShowSectionIndices" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.BooleanType" typeId="tpee.1070534644030" id="5045317388382182725" nodeInfo="in" />
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="5045317388382184257" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388381656068" resolveInfo="shouldShowBookmarks" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388381656068" resolveInfo="shouldShowSectionIndex" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388382184382" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="817051807575276572" resolveInfo="project" />
               </node>
@@ -530,7 +530,7 @@
           <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5045317388382162495" nodeInfo="nn">
             <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5045317388382151753" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388382150065" nodeInfo="nn">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388381694078" resolveInfo="bookmarkPanels" />
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388381694078" resolveInfo="sectionIndexPanels" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetValuesOperation" typeId="tp2q.1237909114519" id="5045317388382156855" nodeInfo="nn" />
             </node>
@@ -545,7 +545,7 @@
                       <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5045317388382180449" nodeInfo="nn">
                         <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dbrf.~JComponent%dsetVisible(boolean)%cvoid" resolveInfo="setVisible" />
                         <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388382184516" nodeInfo="nn">
-                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388382182730" resolveInfo="shouldShowBookmarks" />
+                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388382182730" resolveInfo="shouldShowSectionIndices" />
                         </node>
                       </node>
                     </node>
@@ -1081,7 +1081,7 @@
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5045317388381668799" nodeInfo="nn">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="dbrf.~JComponent%dsetVisible(boolean)%cvoid" resolveInfo="setVisible" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="5045317388381668800" nodeInfo="nn">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388381656068" resolveInfo="shouldShowBookmarks" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388381656068" resolveInfo="shouldShowSectionIndex" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388381668801" nodeInfo="nn">
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388381668815" resolveInfo="project" />
                     </node>
@@ -1118,7 +1118,7 @@
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="5045317388381668813" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="panel" />
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5045317388381668814" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="BookmarkPanel" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="SectionIndexPanel" />
         </node>
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="5045317388381668815" nodeInfo="ir">
@@ -1128,7 +1128,7 @@
         </node>
       </node>
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5045317388381668817" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="BookmarkPanel" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="SectionIndexPanel" />
       </node>
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="5827294371100030774" nodeInfo="ngu" />
@@ -3709,11 +3709,11 @@
       </node>
     </node>
     <node role="properties" roleId="3iid.145956936283569518" type="3iid.CheckBoxPreferenceFormProperty" typeId="3iid.145956936284219644" id="5045317388381636366" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="showBookmarks" />
+      <property name="name" nameId="tpck.1169194664001" value="showSectionIndices" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.BooleanType" typeId="tpee.1070534644030" id="5045317388381636367" nodeInfo="in" />
       <node role="initializer" roleId="tpee.1068431790190" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5045317388381636368" nodeInfo="nn" />
       <node role="label" roleId="3iid.8884256830696181817" type="tnjx.MultilingualJavaString" typeId="tnjx.2510545900188478754" id="8884256830697602743" nodeInfo="ng">
-        <link role="key" roleId="sxyo.2510545900188083932" targetNodeId="8884256830697602744" resolveInfo="ShowBookmarks" />
+        <link role="key" roleId="sxyo.2510545900188083932" targetNodeId="8884256830697602744" resolveInfo="ShowSectionIndices" />
       </node>
     </node>
     <node role="beforeWriteBlockProject" roleId="3iid.1210676918600" type="tp4k.OnBeforeWriteBlock" typeId="tp4k.1210676672555" id="5045317388381636492" nodeInfo="nn">
@@ -7347,8 +7347,8 @@
     </node>
   </root>
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="5045317388380273303" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="BookmarkPanel" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="bookmark" />
+    <property name="name" nameId="tpck.1169194664001" value="SectionIndexPanel" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="sectionIndex" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticFieldDeclaration" typeId="tpee.1070462154015" id="5045317388392592097" nodeInfo="igu">
       <property name="isVolatile" nameId="tpee.6468716278899126575" value="false" />
       <property name="isTransient" nameId="tpee.6468716278899125786" value="false" />
@@ -7381,7 +7381,7 @@
       <property name="nonStatic" nameId="tpee.521412098689998745" value="false" />
       <property name="abstractClass" nameId="tpee.1075300953594" value="false" />
       <property name="isFinal" nameId="tpee.1221565133444" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="Bookmark" />
+      <property name="name" nameId="tpck.1169194664001" value="SectionIndex" />
       <node role="member" roleId="tpee.5375687026011219971" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="5045317388383202466" nodeInfo="igu">
         <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="5045317388383202468" nodeInfo="in" />
         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5045317388383202469" nodeInfo="nn" />
@@ -7389,29 +7389,29 @@
           <node role="statement" roleId="tpee.1068581517665" type="tpee.SuperConstructorInvocation" typeId="tpee.1070475587102" id="5045317388389152264" nodeInfo="nn">
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388388919809" resolveInfo="AbstractNavigationPanel.Entry" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388389152302" nodeInfo="nn">
-              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388383202787" resolveInfo="bookmark" />
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388383202787" resolveInfo="sectionIndex" />
             </node>
           </node>
         </node>
         <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="5045317388383202787" nodeInfo="ir">
-          <property name="name" nameId="tpck.1169194664001" value="bookmark" />
+          <property name="name" nameId="tpck.1169194664001" value="sectionIndex" />
           <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5045317388383202786" nodeInfo="in">
-            <link role="concept" roleId="tp25.1138405853777" targetNodeId="570t.5045317388380240626" resolveInfo="IBookmark" />
+            <link role="concept" roleId="tp25.1138405853777" targetNodeId="570t.5045317388380240626" resolveInfo="ISectionIndex" />
           </node>
         </node>
       </node>
       <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="5045317388383205591" nodeInfo="ngu" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5045317388383196347" nodeInfo="nn" />
       <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="5045317388383205082" nodeInfo="igu">
-        <property name="name" nameId="tpck.1169194664001" value="getBookmark" />
+        <property name="name" nameId="tpck.1169194664001" value="getSectionIndex" />
         <node role="returnType" roleId="tpee.1068580123133" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5045317388383205083" nodeInfo="in">
-          <link role="concept" roleId="tp25.1138405853777" targetNodeId="570t.5045317388380240626" resolveInfo="IBookmark" />
+          <link role="concept" roleId="tp25.1138405853777" targetNodeId="570t.5045317388380240626" resolveInfo="ISectionIndex" />
         </node>
         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5045317388383205084" nodeInfo="nn" />
         <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5045317388383205085" nodeInfo="sn">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5045317388389152550" nodeInfo="nn">
             <node role="expression" roleId="tpee.1068580123156" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="5045317388389152661" nodeInfo="nn">
-              <link role="concept" roleId="tp25.1140138128738" targetNodeId="570t.5045317388380240626" resolveInfo="IBookmark" />
+              <link role="concept" roleId="tp25.1140138128738" targetNodeId="570t.5045317388380240626" resolveInfo="ISectionIndex" />
               <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="5045317388389152548" nodeInfo="nn">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388388922750" resolveInfo="getNode" />
               </node>
@@ -7445,18 +7445,18 @@
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4317384196706415131" resolveInfo="object" />
                         </node>
                         <node role="type" roleId="tpee.1070534934091" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4317384196706449023" nodeInfo="in">
-                          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388383196780" resolveInfo="BookmarkPanel.Bookmark" />
+                          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388383196780" resolveInfo="SectionIndexPanel.SectionIndex" />
                         </node>
                       </node>
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="4317384196706449024" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383205082" resolveInfo="getBookmark" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383205082" resolveInfo="getSectionIndex" />
                     </node>
                   </node>
                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4317384196706449025" nodeInfo="nn">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="4317384196706449026" nodeInfo="nn" />
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="4317384196706449027" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383205082" resolveInfo="getBookmark" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383205082" resolveInfo="getSectionIndex" />
                     </node>
                   </node>
                 </node>
@@ -7464,7 +7464,7 @@
             </node>
             <node role="condition" roleId="tpee.1068580123160" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="4317384196706439191" nodeInfo="nn">
               <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4317384196706439688" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388383196780" resolveInfo="BookmarkPanel.Bookmark" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388383196780" resolveInfo="SectionIndexPanel.SectionIndex" />
               </node>
               <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4317384196706439138" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4317384196706415131" resolveInfo="object" />
@@ -7526,7 +7526,7 @@
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="5045317388388593721" nodeInfo="ngu" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="5045317388388600683" nodeInfo="igu">
       <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="setBookmarks" />
+      <property name="name" nameId="tpck.1169194664001" value="setSectionIndices" />
       <property name="isSynchronized" nameId="tpee.4276006055363816570" value="false" />
       <property name="isFinal" nameId="tpee.1181808852946" value="false" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5045317388388600686" nodeInfo="sn">
@@ -7553,23 +7553,23 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5045317388388676744" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5045317388388677383" nodeInfo="nn">
             <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388388676742" nodeInfo="nn">
-              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388388632764" resolveInfo="bookmarks" />
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388388632764" resolveInfo="sectionIndices" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.VisitAllOperation" typeId="tp2q.1204980550705" id="5045317388388680860" nodeInfo="nn">
               <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="5045317388388680862" nodeInfo="nn">
                 <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="5045317388388680863" nodeInfo="sn">
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="5045317388392727009" nodeInfo="nn">
                     <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5045317388392727010" nodeInfo="nr">
-                      <property name="name" nameId="tpck.1169194664001" value="bookmark" />
+                      <property name="name" nameId="tpck.1169194664001" value="sectionIndex" />
                       <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5045317388392727004" nodeInfo="in">
-                        <link role="concept" roleId="tp25.1138405853777" targetNodeId="570t.5045317388380240626" resolveInfo="IBookmark" />
+                        <link role="concept" roleId="tp25.1138405853777" targetNodeId="570t.5045317388380240626" resolveInfo="ISectionIndex" />
                       </node>
                       <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5045317388392727011" nodeInfo="nn">
                         <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388392727012" nodeInfo="nn">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388388680864" resolveInfo="it" />
                         </node>
                         <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5045317388392727013" nodeInfo="nn">
-                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383205082" resolveInfo="getBookmark" />
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383205082" resolveInfo="getSectionIndex" />
                         </node>
                       </node>
                     </node>
@@ -7584,7 +7584,7 @@
                         <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="5045317388388699583" nodeInfo="nn">
                           <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="cu2c.~SNodePointer%d&lt;init&gt;(org%djetbrains%dmps%dopenapi%dmodel%dSNode)" resolveInfo="SNodePointer" />
                           <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388392727015" nodeInfo="nn">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388392727010" resolveInfo="bookmark" />
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388392727010" resolveInfo="sectionIndex" />
                           </node>
                         </node>
                       </node>
@@ -7628,7 +7628,7 @@
                           <property name="severity" nameId="tpib.1167245565795" value="trace" />
                           <node role="logExpression" roleId="tpib.1167227463056" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5045317388388699607" nodeInfo="nn">
                             <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388392727016" nodeInfo="nn">
-                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388392727010" resolveInfo="bookmark" />
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388392727010" resolveInfo="sectionIndex" />
                             </node>
                             <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5045317388388699611" nodeInfo="nn">
                               <property name="value" nameId="tpee.1070475926801" value="cache hit: " />
@@ -7663,7 +7663,7 @@
                         <property name="severity" nameId="tpib.1167245565795" value="trace" />
                         <node role="logExpression" roleId="tpib.1167227463056" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5045317388388699623" nodeInfo="nn">
                           <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388392727017" nodeInfo="nn">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388392727010" resolveInfo="bookmark" />
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388392727010" resolveInfo="sectionIndex" />
                           </node>
                           <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5045317388388699627" nodeInfo="nn">
                             <property name="value" nameId="tpee.1070475926801" value="cache fail: " />
@@ -7691,20 +7691,20 @@
                                 </node>
                                 <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5045317388389170007" nodeInfo="nn">
                                   <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388392727018" nodeInfo="nn">
-                                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388392727010" resolveInfo="bookmark" />
+                                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388392727010" resolveInfo="sectionIndex" />
                                   </node>
                                   <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="5045317388389173754" nodeInfo="nn">
-                                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="u8e7.5045317388380241254" resolveInfo="getBookmarkText" />
+                                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="u8e7.5045317388380241254" resolveInfo="getSectionIndexText" />
                                   </node>
                                 </node>
                               </node>
                             </node>
                             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5045317388389182084" nodeInfo="nn">
                               <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388392727019" nodeInfo="nn">
-                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388392727010" resolveInfo="bookmark" />
+                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388392727010" resolveInfo="sectionIndex" />
                               </node>
                               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="5045317388389184814" nodeInfo="nn">
-                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="u8e7.5045317388380241262" resolveInfo="getBookmarkIcon" />
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="u8e7.5045317388380241262" resolveInfo="getSectionIndexIcon" />
                               </node>
                             </node>
                           </node>
@@ -7748,10 +7748,10 @@
                                   </node>
                                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5045317388392721460" nodeInfo="nn">
                                     <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388392727014" nodeInfo="nn">
-                                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388392727010" resolveInfo="bookmark" />
+                                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388392727010" resolveInfo="sectionIndex" />
                                     </node>
                                     <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="5045317388392724817" nodeInfo="nn">
-                                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="u8e7.5045317388391069977" resolveInfo="getBookmarkColor" />
+                                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="u8e7.5045317388391069977" resolveInfo="getSectionIndexColor" />
                                     </node>
                                   </node>
                                 </node>
@@ -7901,7 +7901,7 @@
                     </node>
                     <node role="condition" roleId="tpee.1068580123160" type="tpee.NPEEqualsExpression" typeId="tpee.1225271283259" id="4317384196705857096" nodeInfo="nn">
                       <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4317384196705859687" nodeInfo="nn">
-                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388388639308" resolveInfo="selectedBookmark" />
+                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388388639308" resolveInfo="selectedSectionIndex" />
                       </node>
                       <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4317384196705854453" nodeInfo="nn">
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388388680864" resolveInfo="it" />
@@ -8045,17 +8045,17 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5045317388388597278" nodeInfo="nn" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="5045317388388600680" nodeInfo="in" />
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="5045317388388632764" nodeInfo="ir">
-        <property name="name" nameId="tpck.1169194664001" value="bookmarks" />
+        <property name="name" nameId="tpck.1169194664001" value="sectionIndices" />
         <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="5045317388388632762" nodeInfo="in">
           <node role="elementType" roleId="tp2q.1151689745422" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5045317388388638244" nodeInfo="in">
-            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388383196780" resolveInfo="BookmarkPanel.Bookmark" />
+            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388383196780" resolveInfo="SectionIndexPanel.SectionIndex" />
           </node>
         </node>
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="5045317388388639308" nodeInfo="ir">
-        <property name="name" nameId="tpck.1169194664001" value="selectedBookmark" />
+        <property name="name" nameId="tpck.1169194664001" value="selectedSectionIndex" />
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5045317388388644865" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388383196780" resolveInfo="BookmarkPanel.Bookmark" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388383196780" resolveInfo="SectionIndexPanel.SectionIndex" />
         </node>
       </node>
     </node>
@@ -8066,9 +8066,9 @@
       <property name="isSynchronized" nameId="tpee.4276006055363816570" value="false" />
       <property name="isFinal" nameId="tpee.1181808852946" value="false" />
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="5045317388388763345" nodeInfo="ir">
-        <property name="name" nameId="tpck.1169194664001" value="bookmark" />
+        <property name="name" nameId="tpck.1169194664001" value="sectionIndex" />
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5045317388388763346" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388383196780" resolveInfo="BookmarkPanel.Bookmark" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388383196780" resolveInfo="SectionIndexPanel.SectionIndex" />
         </node>
       </node>
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5045317388388763347" nodeInfo="sn">
@@ -8101,10 +8101,10 @@
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="nnaa.~HashCodeBuilder%dappend(java%dlang%dObject)%corg%dapache%dcommons%dlang3%dbuilder%dHashCodeBuilder" resolveInfo="append" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5045317388388763360" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388388763361" nodeInfo="nn">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388388763345" resolveInfo="bookmark" />
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388388763345" resolveInfo="sectionIndex" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5045317388388763362" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383205082" resolveInfo="getBookmark" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383205082" resolveInfo="getSectionIndex" />
                 </node>
               </node>
             </node>
@@ -8366,7 +8366,7 @@
           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="5045317388383262839" nodeInfo="nn">
             <node role="rValue" roleId="tpee.1068498886297" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5045317388383262955" nodeInfo="nn">
               <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="5045317388383352874" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383283833" resolveInfo="BookmarkListener" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383283833" resolveInfo="SectionIndexListener" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="5045317388383353236" nodeInfo="nn" />
               </node>
             </node>
@@ -8470,7 +8470,7 @@
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4313262807135281228" resolveInfo="getInstance" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5045317388383447025" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388381978127" resolveInfo="removeBookmarkPanel" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388381978127" resolveInfo="removeSectionIndexPanel" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="5045317388383447026" nodeInfo="nn" />
             </node>
           </node>
@@ -10397,16 +10397,16 @@
     </node>
   </root>
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="5045317388383264886" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="BookmarkListener" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="bookmark" />
+    <property name="name" nameId="tpck.1169194664001" value="SectionIndexListener" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="sectionIndex" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="5045317388383282651" nodeInfo="igu">
       <property name="isVolatile" nameId="tpee.1240249534625" value="false" />
       <property name="isTransient" nameId="tpee.8606350594693632173" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="bookmarkPanel" />
+      <property name="name" nameId="tpck.1169194664001" value="sectionIndex" />
       <property name="isFinal" nameId="tpee.1176718929932" value="true" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="5045317388383281789" nodeInfo="nn" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5045317388383282409" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="BookmarkPanel" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="SectionIndexPanel" />
       </node>
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="5045317388383281314" nodeInfo="ngu" />
@@ -10417,21 +10417,21 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5045317388383284949" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="5045317388383295839" nodeInfo="nn">
             <node role="rValue" roleId="tpee.1068498886297" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388383297214" nodeInfo="nn">
-              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388383284529" resolveInfo="bookmarkPanel" />
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388383284529" resolveInfo="sectionIndexPanel" />
             </node>
             <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5045317388383285323" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="5045317388383284948" nodeInfo="nn" />
               <node role="operation" roleId="tpee.1197027833540" type="tpee.FieldReferenceOperation" typeId="tpee.1197029447546" id="5045317388383291614" nodeInfo="nn">
-                <link role="fieldDeclaration" roleId="tpee.1197029500499" targetNodeId="5045317388383282651" resolveInfo="bookmarkPanel" />
+                <link role="fieldDeclaration" roleId="tpee.1197029500499" targetNodeId="5045317388383282651" resolveInfo="sectionIndex" />
               </node>
             </node>
           </node>
         </node>
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="5045317388383284529" nodeInfo="ir">
-        <property name="name" nameId="tpck.1169194664001" value="bookmarkPanel" />
+        <property name="name" nameId="tpck.1169194664001" value="sectionIndexPanel" />
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5045317388383284528" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="BookmarkPanel" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="SectionIndexPanel" />
         </node>
       </node>
     </node>
@@ -10452,26 +10452,26 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5045317388383265801" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4317384196706749717" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4317384196706749718" nodeInfo="nr">
-            <property name="name" nameId="tpck.1169194664001" value="bookmarks" />
+            <property name="name" nameId="tpck.1169194664001" value="sectionIndices" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="4317384196706749713" nodeInfo="in">
               <node role="elementType" roleId="tp2q.1151689745422" type="tp25.SNodeType" typeId="tp25.1138055754698" id="4317384196706749716" nodeInfo="in">
-                <link role="concept" roleId="tp25.1138405853777" targetNodeId="570t.5045317388380240626" resolveInfo="IBookmark" />
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="570t.5045317388380240626" resolveInfo="ISectionIndex" />
               </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="4317384196706749719" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4317384196706734017" resolveInfo="collectAllBookmarks" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4317384196706734017" resolveInfo="collectAllSectionIndices" />
             </node>
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4317384196706746042" nodeInfo="nn" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="5045317388388342435" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5045317388388342436" nodeInfo="nr">
-            <property name="name" nameId="tpck.1169194664001" value="bookmarkPanel" />
+            <property name="name" nameId="tpck.1169194664001" value="sectionIndexPanel" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5045317388388342434" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="BookmarkPanel" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="SectionIndexPanel" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="5045317388388342437" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383308918" resolveInfo="getBookmarkPanel" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383308918" resolveInfo="getSectionIndexPanel" />
             </node>
           </node>
         </node>
@@ -10490,12 +10490,12 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5045317388388539631" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="selectedNode" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5045317388388539566" nodeInfo="in">
-              <link role="concept" roleId="tp25.1138405853777" targetNodeId="570t.5045317388380240626" resolveInfo="IBookmark" />
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="570t.5045317388380240626" resolveInfo="ISectionIndex" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5045317388388539632" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5045317388388539633" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388388539634" nodeInfo="nn">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4317384196706749718" resolveInfo="bookmarks" />
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4317384196706749718" resolveInfo="sectionIndices" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp2q.SortOperation" typeId="tp2q.1205679737078" id="5045317388388539635" nodeInfo="nn">
                   <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="5045317388388539636" nodeInfo="nn">
@@ -10581,13 +10581,13 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5045317388388546495" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5045317388388548569" nodeInfo="nn">
             <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388388546493" nodeInfo="nn">
-              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388388342436" resolveInfo="bookmarkPanel" />
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388388342436" resolveInfo="sectionIndexPanel" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5045317388389195478" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388388600683" resolveInfo="setBookmarks" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388388600683" resolveInfo="setSectionIndices" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5045317388389196239" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388389195544" nodeInfo="nn">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4317384196706749718" resolveInfo="bookmarks" />
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4317384196706749718" resolveInfo="sectionIndices" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp2q.SelectOperation" typeId="tp2q.1202128969694" id="5045317388389199385" nodeInfo="nn">
                   <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="5045317388389199387" nodeInfo="nn">
@@ -10595,7 +10595,7 @@
                       <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5045317388389199959" nodeInfo="nn">
                         <node role="expression" roleId="tpee.1068580123156" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5045317388389199957" nodeInfo="nn">
                           <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="5045317388389202704" nodeInfo="nn">
-                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383202466" resolveInfo="BookmarkPanel.Bookmark" />
+                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383202466" resolveInfo="SectionIndexPanel.SectionIndex" />
                             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388389203025" nodeInfo="nn">
                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388389199389" resolveInfo="it" />
                             </node>
@@ -10612,7 +10612,7 @@
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="5045317388389203756" nodeInfo="nn">
                 <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="5045317388389206661" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383202466" resolveInfo="BookmarkPanel.Bookmark" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383202466" resolveInfo="SectionIndexPanel.SectionIndex" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5045317388389207044" nodeInfo="nn">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388388539631" resolveInfo="selectedNode" />
                   </node>
@@ -10652,12 +10652,12 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5045317388383265794" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4317384196706762777" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4317384196706762778" nodeInfo="nr">
-            <property name="name" nameId="tpck.1169194664001" value="bookmarkPanel" />
+            <property name="name" nameId="tpck.1169194664001" value="sectionIndexPanel" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4317384196706762779" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="BookmarkPanel" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="SectionIndexPanel" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="4317384196706762780" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383308918" resolveInfo="getBookmarkPanel" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383308918" resolveInfo="getSectionIndexPanel" />
             </node>
           </node>
         </node>
@@ -10689,14 +10689,14 @@
             <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4317384196706762793" nodeInfo="nn" />
             <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4317384196706780479" nodeInfo="nn">
               <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4317384196706780480" nodeInfo="nr">
-                <property name="name" nameId="tpck.1169194664001" value="bookmarks" />
+                <property name="name" nameId="tpck.1169194664001" value="sectionIndices" />
                 <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="4317384196706780481" nodeInfo="in">
                   <node role="elementType" roleId="tp2q.1151689745422" type="tp25.SNodeType" typeId="tp25.1138055754698" id="4317384196706780482" nodeInfo="in">
-                    <link role="concept" roleId="tp25.1138405853777" targetNodeId="570t.5045317388380240626" resolveInfo="IBookmark" />
+                    <link role="concept" roleId="tp25.1138405853777" targetNodeId="570t.5045317388380240626" resolveInfo="ISectionIndex" />
                   </node>
                 </node>
                 <node role="initializer" roleId="tpee.1068431790190" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="4317384196706780483" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4317384196706734017" resolveInfo="collectAllBookmarks" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4317384196706734017" resolveInfo="collectAllSectionIndices" />
                 </node>
               </node>
             </node>
@@ -10704,13 +10704,13 @@
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4317384196706762806" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4317384196706762807" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4317384196706762808" nodeInfo="nn">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4317384196706762778" resolveInfo="bookmarkPanel" />
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4317384196706762778" resolveInfo="sectionIndexPanel" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="4317384196706797144" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388388600683" resolveInfo="setBookmarks" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388388600683" resolveInfo="setSectionIndices" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4317384196706920851" nodeInfo="nn">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4317384196706797209" nodeInfo="nn">
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4317384196706780480" resolveInfo="bookmarks" />
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4317384196706780480" resolveInfo="sectionIndices" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tp2q.SelectOperation" typeId="tp2q.1202128969694" id="4317384196706924477" nodeInfo="nn">
                       <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="4317384196706924479" nodeInfo="nn">
@@ -10718,7 +10718,7 @@
                           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4317384196706925196" nodeInfo="nn">
                             <node role="expression" roleId="tpee.1068580123156" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="4317384196706925194" nodeInfo="nn">
                               <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="4317384196706928200" nodeInfo="nn">
-                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383202466" resolveInfo="BookmarkPanel.Bookmark" />
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383202466" resolveInfo="SectionIndexPanel.SectionIndex" />
                                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4317384196706928679" nodeInfo="nn">
                                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4317384196706924481" resolveInfo="it" />
                                 </node>
@@ -10736,9 +10736,9 @@
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="4317384196706832477" nodeInfo="nn">
                     <node role="ifTrue" roleId="tpee.1163668922816" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="4317384196706832803" nodeInfo="nn">
                       <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="4317384196706917008" nodeInfo="nn">
-                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383202466" resolveInfo="BookmarkPanel.Bookmark" />
+                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383202466" resolveInfo="SectionIndexPanel.SectionIndex" />
                         <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="4317384196706917182" nodeInfo="nn">
-                          <link role="concept" roleId="tp25.1140138128738" targetNodeId="570t.5045317388380240626" resolveInfo="IBookmark" />
+                          <link role="concept" roleId="tp25.1140138128738" targetNodeId="570t.5045317388380240626" resolveInfo="ISectionIndex" />
                           <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4317384196706917052" nodeInfo="nn">
                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4317384196706762785" resolveInfo="selectedNode" />
                           </node>
@@ -10752,7 +10752,7 @@
                       </node>
                       <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="4317384196706829670" nodeInfo="nn">
                         <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="4317384196706830852" nodeInfo="nn">
-                          <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="570t.5045317388380240626" resolveInfo="IBookmark" />
+                          <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="570t.5045317388380240626" resolveInfo="ISectionIndex" />
                         </node>
                       </node>
                     </node>
@@ -10763,7 +10763,7 @@
           </node>
           <node role="condition" roleId="tpee.1068580123160" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="4317384196706762829" nodeInfo="nn">
             <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4317384196706762830" nodeInfo="nn">
-              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4317384196706762778" resolveInfo="bookmarkPanel" />
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4317384196706762778" resolveInfo="sectionIndexPanel" />
             </node>
             <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="4317384196706762831" nodeInfo="nn" />
           </node>
@@ -10775,7 +10775,7 @@
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="4317384196706725990" nodeInfo="ngu" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="4317384196706734017" nodeInfo="igu">
       <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="collectAllBookmarks" />
+      <property name="name" nameId="tpck.1169194664001" value="collectAllSectionIndices" />
       <property name="isSynchronized" nameId="tpee.4276006055363816570" value="false" />
       <property name="isFinal" nameId="tpee.1181808852946" value="false" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4317384196706734020" nodeInfo="sn">
@@ -10794,10 +10794,10 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4317384196706739874" nodeInfo="nn" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="5045317388388382377" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5045317388388382378" nodeInfo="nr">
-            <property name="name" nameId="tpck.1169194664001" value="bookmarks" />
+            <property name="name" nameId="tpck.1169194664001" value="sectionIndices" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="5045317388388382357" nodeInfo="in">
               <node role="elementType" roleId="tp2q.1151689745422" type="tp25.SNodeType" typeId="tp25.1138055754698" id="5045317388388382360" nodeInfo="in">
-                <link role="concept" roleId="tp25.1138405853777" targetNodeId="570t.5045317388380240626" resolveInfo="IBookmark" />
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="570t.5045317388380240626" resolveInfo="ISectionIndex" />
               </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5045317388388382379" nodeInfo="nn">
@@ -10813,7 +10813,7 @@
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetDescendantsOperation" typeId="tp25.1171305280644" id="5045317388388382385" nodeInfo="nn">
                   <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="5045317388388382386" nodeInfo="ng">
                     <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="5045317388388382387" nodeInfo="nn">
-                      <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="570t.5045317388380240626" resolveInfo="IBookmark" />
+                      <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="570t.5045317388380240626" resolveInfo="ISectionIndex" />
                     </node>
                   </node>
                   <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Inclusion" typeId="tp25.1144100932627" id="5045317388388382388" nodeInfo="ng" />
@@ -10828,7 +10828,7 @@
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388388382396" resolveInfo="it" />
                         </node>
                         <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="5045317388388382395" nodeInfo="nn">
-                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="u8e7.5045317388380241269" resolveInfo="showAsBookmark" />
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="u8e7.5045317388380241269" resolveInfo="showAsSectionIndex" />
                         </node>
                       </node>
                     </node>
@@ -10845,14 +10845,14 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4317384196706740741" nodeInfo="nn" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="4317384196706741153" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068581517676" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4317384196706741324" nodeInfo="nn">
-            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388388382378" resolveInfo="bookmarks" />
+            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388388382378" resolveInfo="sectionIndices" />
           </node>
         </node>
       </node>
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="4317384196706729881" nodeInfo="nn" />
       <node role="returnType" roleId="tpee.1068580123133" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="4317384196706733574" nodeInfo="in">
         <node role="elementType" roleId="tp2q.1151689745422" type="tp25.SNodeType" typeId="tp25.1138055754698" id="4317384196706734013" nodeInfo="in">
-          <link role="concept" roleId="tp25.1138405853777" targetNodeId="570t.5045317388380240626" resolveInfo="IBookmark" />
+          <link role="concept" roleId="tp25.1138405853777" targetNodeId="570t.5045317388380240626" resolveInfo="ISectionIndex" />
         </node>
       </node>
     </node>
@@ -10933,7 +10933,7 @@
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5045317388383342789" resolveInfo="instance" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5045317388383342812" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388381656068" resolveInfo="shouldShowBookmarks" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388381656068" resolveInfo="shouldShowSectionIndex" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="5045317388383342813" nodeInfo="nn">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5767835979494631222" resolveInfo="getIdeaProject" />
                 </node>
@@ -10955,7 +10955,7 @@
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="5045317388383332144" nodeInfo="ngu" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="5045317388383308918" nodeInfo="igu">
       <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="getBookmarkPanel" />
+      <property name="name" nameId="tpck.1169194664001" value="getSectionIndexPanel" />
       <property name="isSynchronized" nameId="tpee.4276006055363816570" value="false" />
       <property name="isFinal" nameId="tpee.1181808852946" value="false" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5045317388383308921" nodeInfo="sn">
@@ -10963,14 +10963,14 @@
           <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5045317388383311227" nodeInfo="nn">
             <node role="operand" roleId="tpee.1197027771414" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="5045317388383310352" nodeInfo="nn" />
             <node role="operation" roleId="tpee.1197027833540" type="tpee.FieldReferenceOperation" typeId="tpee.1197029447546" id="5045317388383317522" nodeInfo="nn">
-              <link role="fieldDeclaration" roleId="tpee.1197029500499" targetNodeId="5045317388383282651" resolveInfo="bookmarkPanel" />
+              <link role="fieldDeclaration" roleId="tpee.1197029500499" targetNodeId="5045317388383282651" resolveInfo="sectionIndex" />
             </node>
           </node>
         </node>
       </node>
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.ProtectedVisibility" typeId="tpee.1146644641414" id="5045317388383307377" nodeInfo="nn" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5045317388383308915" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="BookmarkPanel" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5045317388380273303" resolveInfo="SectionIndexPanel" />
       </node>
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="5045317388383302366" nodeInfo="ngu" />
@@ -10991,7 +10991,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5045317388383318038" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5045317388383321011" nodeInfo="nn">
             <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="5045317388383318036" nodeInfo="nn">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383308918" resolveInfo="getBookmarkPanel" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5045317388383308918" resolveInfo="getSectionIndexPanel" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5045317388383327471" nodeInfo="nn">
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5767835979494068309" resolveInfo="getEditorComponent" />
@@ -11012,8 +11012,8 @@
     </node>
     <node role="keys" roleId="sxyo.568377005202317276" type="sxyo.MessageKey" typeId="sxyo.568377005202317270" id="8884256830697602744" nodeInfo="ng">
       <property name="technicalKey" nameId="sxyo.568377005202317271" value=" " />
-      <property name="name" nameId="tpck.1169194664001" value="ShowBookmarks" />
-      <property name="default" nameId="sxyo.568377005202317272" value="Show Bookmarks" />
+      <property name="name" nameId="tpck.1169194664001" value="ShowSectionIndices" />
+      <property name="default" nameId="sxyo.568377005202317272" value="Show Section Indices" />
     </node>
   </root>
 </model>

@@ -134,5 +134,23 @@
     <move id="u8e7.5589470366058907383" to="l1u1.4317384196709002048" />
     <move id="u8e7.5589470366058907384" to="l1u1.4317384196709002049" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="yv4j" modelUID="r:6a63246b-e5f4-49e4-8474-0744982532d8(com.mbeddr.mpsutil.breadcrumb.editor.structure)" version="0" />
+    </dependencies>
+    <rename id="yv4j.4317384196709001936" type="PROPERTY" from="showBookmarkIcons" to="showSectionIndexIcons" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="yv4j" modelUID="r:6a63246b-e5f4-49e4-8474-0744982532d8(com.mbeddr.mpsutil.breadcrumb.editor.structure)" version="1" />
+    </dependencies>
+    <rename id="yv4j.4317384196709001938" type="PROPERTY" from="showBookmarks" to="showSectionIndices" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="yv4j" modelUID="r:6a63246b-e5f4-49e4-8474-0744982532d8(com.mbeddr.mpsutil.breadcrumb.editor.structure)" version="2" />
+    </dependencies>
+    <rename id="yv4j.4317384196709001939" type="PROPERTY" from="bookmarkPanelWidth" to="SectionIndexPanelWidth" />
+  </StructureModification>
 </history>
 
