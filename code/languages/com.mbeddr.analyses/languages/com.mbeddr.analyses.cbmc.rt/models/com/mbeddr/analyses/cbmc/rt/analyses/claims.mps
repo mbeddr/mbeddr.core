@@ -709,8 +709,11 @@
                                       <ref role="1Px2BO" to="rbq9:6oOIJNsBVXe" resolve="RAW_RESULT_KIND" />
                                       <ref role="Rm8GQ" to="rbq9:6oOIJNsBXkZ" resolve="RUNTIME_ERROR" />
                                     </node>
+                                    <node concept="37vLTw" id="4$9c1ZyckG3" role="37wK5m">
+                                      <ref role="3cqZAo" node="4$9c1ZybNT1" resolve="ranCommand" />
+                                    </node>
                                     <node concept="37vLTw" id="6izRX52O9Ut" role="37wK5m">
-                                      <ref role="3cqZAo" node="6izRX52NSLy" resolve="rawCBMCOutput" />
+                                      <ref role="3cqZAo" node="6izRX52NSLy" resolve="rawOutput" />
                                     </node>
                                   </node>
                                 </node>
@@ -1027,8 +1030,11 @@
                                   <ref role="Rm8GQ" to="rbq9:6oOIJNsBXl4" resolve="PROPERTY_HOLDS" />
                                   <ref role="1Px2BO" to="rbq9:6oOIJNsBVXe" resolve="RAW_RESULT_KIND" />
                                 </node>
+                                <node concept="37vLTw" id="4$9c1ZycnAr" role="37wK5m">
+                                  <ref role="3cqZAo" node="4$9c1ZybNT1" resolve="ranCommand" />
+                                </node>
                                 <node concept="37vLTw" id="6izRX52ObYf" role="37wK5m">
-                                  <ref role="3cqZAo" node="6izRX52NSLy" resolve="rawCBMCOutput" />
+                                  <ref role="3cqZAo" node="6izRX52NSLy" resolve="rawOutput" />
                                 </node>
                               </node>
                             </node>
@@ -1660,7 +1666,7 @@
     <node concept="312cEg" id="6izRX52NSLy" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="rawCBMCOutput" />
+      <property role="TrG5h" value="rawOutput" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="6izRX52NNI7" role="1B3o_S" />
       <node concept="17QB3L" id="6izRX52NSi9" role="1tU5fm" />
@@ -1669,6 +1675,18 @@
       </node>
     </node>
     <node concept="2tJIrI" id="6izRX52NXOI" role="jymVt" />
+    <node concept="312cEg" id="4$9c1ZybNT1" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="ranCommand" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="4$9c1ZybNT2" role="1B3o_S" />
+      <node concept="17QB3L" id="4$9c1ZybNT3" role="1tU5fm" />
+      <node concept="NWlO9" id="4$9c1ZybNT4" role="lGtFl">
+        <property role="NWlVz" value="The command ran for collecting claims." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4$9c1ZybL$M" role="jymVt" />
     <node concept="3clFb_" id="mb65_hzF0v" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="collectClaims" />
@@ -1840,7 +1858,22 @@
                   </node>
                 </node>
                 <node concept="37vLTw" id="6izRX52O4pA" role="37vLTJ">
-                  <ref role="3cqZAo" node="6izRX52NSLy" resolve="rawCBMCOutput" />
+                  <ref role="3cqZAo" node="6izRX52NSLy" resolve="rawOutput" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4$9c1ZybZpx" role="3cqZAp">
+              <node concept="37vLTI" id="4$9c1Zyc54P" role="3clFbG">
+                <node concept="2OqwBi" id="4$9c1Zyc63k" role="37vLTx">
+                  <node concept="37vLTw" id="4$9c1Zyc5O6" role="2Oq$k0">
+                    <ref role="3cqZAo" node="mb65_hzPrl" resolve="rawResult" />
+                  </node>
+                  <node concept="liA8E" id="4$9c1Zyc6xI" role="2OqNvi">
+                    <ref role="37wK5l" to="rbq9:4$9c1Zyb0$9" resolve="getRanCommand" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="4$9c1ZybZpv" role="37vLTJ">
+                  <ref role="3cqZAo" node="4$9c1ZybNT1" resolve="ranCommand" />
                 </node>
               </node>
             </node>
@@ -1870,6 +1903,16 @@
                   </node>
                   <node concept="liA8E" id="mb65_hzXAf" role="2OqNvi">
                     <ref role="37wK5l" to="e2lb:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="4$9c1ZyccSS" role="3cqZAp">
+                <node concept="37vLTI" id="4$9c1Zycirj" role="3clFbG">
+                  <node concept="Xl_RD" id="4$9c1ZyciJB" role="37vLTx">
+                    <property role="Xl_RC" value="UNKNOWN ERROR" />
+                  </node>
+                  <node concept="37vLTw" id="4$9c1ZyccSQ" role="37vLTJ">
+                    <ref role="3cqZAo" node="4$9c1ZybNT1" resolve="ranCommand" />
                   </node>
                 </node>
               </node>
