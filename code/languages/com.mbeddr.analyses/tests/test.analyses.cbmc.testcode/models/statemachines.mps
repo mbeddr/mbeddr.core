@@ -997,7 +997,6 @@
     </node>
     <node concept="1W1s6O" id="qjOluQk05H" role="3V$2$K">
       <property role="2lUGeZ" value="true" />
-      <property role="2lUHrg" value="25" />
       <property role="2lUGbD" value="none" />
       <property role="2l50Ka" value="none" />
       <property role="2l50Km" value="none" />
@@ -1006,6 +1005,7 @@
       <property role="2lelRm" value="true" />
       <property role="2lUGcN" value="false" />
       <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="2" />
       <ref role="1W1s6P" node="21PlWakTqun" resolve="EpsilonSM" />
       <ref role="3V$Cn$" node="21PlWakTqve" resolve="testEpsilonEntry" />
     </node>
