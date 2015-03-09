@@ -17,11 +17,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
-    <language id="00000000-0000-0000-0000-000000000000" name="">
-      <concept id="0" name="" flags="ng" index="00000">
-        <property id="0" name="" index="00000" />
-      </concept>
-    </language>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
@@ -131,6 +126,7 @@
     </language>
     <language id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common">
       <concept id="568377005202317274" name="com.mbeddr.mpsutil.multilingual.common.structure.ResourceBundle" flags="ng" index="3MtHw5">
+        <property id="6737939145712380461" name="baseName" index="1JSPRp" />
         <property id="568377005202317275" name="keyPrefix" index="3MtHw4" />
         <child id="568377005202317276" name="keys" index="3MtHw3" />
       </concept>
@@ -153,7 +149,7 @@
   <node concept="3MtHw5" id="6cLnm66_Q7S">
     <property role="3MtHw4" value="Keyword-" />
     <property role="TrG5h" value="Test Resource Bundle" />
-    <property role="00000" value="test.ts.mpsutil.multilingual.common" />
+    <property role="1JSPRp" value="test.ts.mpsutil.multilingual.common" />
     <node concept="3MtHw9" id="6cLnm66_QHT" role="3MtHw3">
       <property role="3MtHw8" value=" " />
       <property role="TrG5h" value="mySpecialKey" />

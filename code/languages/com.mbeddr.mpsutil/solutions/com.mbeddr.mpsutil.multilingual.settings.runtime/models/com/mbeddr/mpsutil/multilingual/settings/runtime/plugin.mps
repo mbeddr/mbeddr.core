@@ -23,11 +23,6 @@
     <import index="sv0f" ref="r:28cd7e84-4784-462c-804c-1dae92004ef9(com.mbeddr.mpsutil.multilingual.common.languageRegistry)" implicit="true" />
   </imports>
   <registry>
-    <language id="00000000-0000-0000-0000-000000000000" name="">
-      <concept id="0" name="" flags="ng" index="00000">
-        <property id="0" name="" index="00000" />
-      </concept>
-    </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
       <concept id="1210676672555" name="jetbrains.mps.lang.plugin.structure.OnBeforeWriteBlock" flags="in" index="3xWZ$M" />
       <concept id="1210676879526" name="jetbrains.mps.lang.plugin.structure.OnAfterReadBlock" flags="in" index="3xXM6Z" />
@@ -159,6 +154,7 @@
     </language>
     <language id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common">
       <concept id="568377005202317274" name="com.mbeddr.mpsutil.multilingual.common.structure.ResourceBundle" flags="ng" index="3MtHw5">
+        <property id="6737939145712380461" name="baseName" index="1JSPRp" />
         <child id="568377005202317276" name="keys" index="3MtHw3" />
       </concept>
       <concept id="568377005202317270" name="com.mbeddr.mpsutil.multilingual.common.structure.MessageKey" flags="ng" index="3MtHw9">
@@ -594,7 +590,7 @@
   </node>
   <node concept="3MtHw5" id="7Hbe8h755mu">
     <property role="TrG5h" value="ShowTranslationsResourceBundle" />
-    <property role="00000" value="com.mbeddr.mpsutil.multilingual.settings.runtime.resource" />
+    <property role="1JSPRp" value="com.mbeddr.mpsutil.multilingual.settings.runtime.resource" />
     <node concept="3MtHw9" id="7Hbe8h755mL" role="3MtHw3">
       <property role="3MtHw8" value=" " />
       <property role="TrG5h" value="ShowTranslationsGlobally" />

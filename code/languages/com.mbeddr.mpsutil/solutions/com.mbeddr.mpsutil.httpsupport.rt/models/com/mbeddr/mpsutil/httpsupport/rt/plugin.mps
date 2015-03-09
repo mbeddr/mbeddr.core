@@ -13,11 +13,6 @@
   </languages>
   <imports />
   <registry>
-    <language id="00000000-0000-0000-0000-000000000000" name="">
-      <concept id="0" name="" flags="ng" index="00000">
-        <property id="0" name="" index="00000" />
-      </concept>
-    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
@@ -155,6 +150,7 @@
     </language>
     <language id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common">
       <concept id="568377005202317274" name="com.mbeddr.mpsutil.multilingual.common.structure.ResourceBundle" flags="ng" index="3MtHw5">
+        <property id="6737939145712380461" name="baseName" index="1JSPRp" />
         <child id="568377005202317276" name="keys" index="3MtHw3" />
       </concept>
       <concept id="568377005202317270" name="com.mbeddr.mpsutil.multilingual.common.structure.MessageKey" flags="ng" index="3MtHw9">
@@ -495,7 +491,7 @@
   </node>
   <node concept="3MtHw5" id="7Hbe8h753rI">
     <property role="TrG5h" value="EnabledResourceBundle" />
-    <property role="00000" value="com.mbeddr.mpsutil.httpsupport.rt.resource" />
+    <property role="1JSPRp" value="com.mbeddr.mpsutil.hattpsupport.rt.resource" />
     <node concept="3MtHw9" id="7Hbe8h753s1" role="3MtHw3">
       <property role="3MtHw8" value=" " />
       <property role="TrG5h" value="Enabled" />

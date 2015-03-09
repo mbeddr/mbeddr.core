@@ -11,11 +11,6 @@
     <import index="1zxe" ref="r:caede5dc-baa4-4c3d-b989-dec0afc53003(test.ts.mpsutil.multilingual.editor.sandbox.structure)" implicit="true" />
   </imports>
   <registry>
-    <language id="00000000-0000-0000-0000-000000000000" name="">
-      <concept id="0" name="" flags="ng" index="00000">
-        <property id="0" name="" index="00000" />
-      </concept>
-    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -44,6 +39,7 @@
     </language>
     <language id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common">
       <concept id="568377005202317274" name="com.mbeddr.mpsutil.multilingual.common.structure.ResourceBundle" flags="ng" index="3MtHw5">
+        <property id="6737939145712380461" name="baseName" index="1JSPRp" />
         <child id="568377005202317276" name="keys" index="3MtHw3" />
       </concept>
       <concept id="568377005202317270" name="com.mbeddr.mpsutil.multilingual.common.structure.MessageKey" flags="ng" index="3MtHw9">
@@ -70,7 +66,7 @@
   </node>
   <node concept="3MtHw5" id="4gGXGcMdLmV">
     <property role="TrG5h" value="TestMultilingualEditorResourceBundle" />
-    <property role="00000" value="test.ts.mpsutil.multilingual.editor.sandbox" />
+    <property role="1JSPRp" value="test.ts.mpsutil.multilingual.editor.sandbox" />
     <node concept="3MtHw9" id="4gGXGcMdLMd" role="3MtHw3">
       <property role="3MtHw8" value=" " />
       <property role="TrG5h" value="MyConstant" />
