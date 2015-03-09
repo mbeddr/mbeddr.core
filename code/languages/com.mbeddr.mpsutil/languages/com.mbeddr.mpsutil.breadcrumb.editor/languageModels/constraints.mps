@@ -1,45 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:e6545f09-ff5d-4028-998e-3f9a20ebffa7(com.mbeddr.mpsutil.breadcrumb.editor.constraints)" version="0">
-  <persistence version="8" />
-  <language namespace="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)" />
-  <language namespace="3f41734b-72c3-42c8-b22c-bacd5a878e17(com.mbeddr.mpsutil.propertydefault)" />
-  <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="yv4j" modelUID="r:6a63246b-e5f4-49e4-8474-0744982532d8(com.mbeddr.mpsutil.breadcrumb.editor.structure)" version="0" />
-  <import index="tp1t" modelUID="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" version="9" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
-  <import index="d5g1" modelUID="r:c2ad9492-0507-4de1-afef-72beefc5831c(com.mbeddr.mpsutil.propertydefault.structure)" version="-1" implicit="yes" />
-  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4317384196709001966" nodeInfo="ng">
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="yv4j.4317384196709001934" resolveInfo="BreadcrumbEditor" />
-    <node role="property" roleId="tp1t.1213098023997" type="d5g1.NodePropertyConstraintDefault" typeId="d5g1.1550432487216062719" id="1550432487216225687" nodeInfo="ng">
-      <link role="applicableProperty" roleId="tp1t.1147467295099" targetNodeId="yv4j.4317384196709001937" resolveInfo="showBreadcrumb" />
-      <node role="defaultValue" roleId="d5g1.1550432487216060794" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="1550432487216228125" nodeInfo="nn">
-        <property name="value" nameId="tpee.1068580123138" value="true" />
+<model ref="r:e6545f09-ff5d-4028-998e-3f9a20ebffa7(com.mbeddr.mpsutil.breadcrumb.editor.constraints)">
+  <persistence version="9" />
+  <languages>
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
+    <use id="3f41734b-72c3-42c8-b22c-bacd5a878e17" name="com.mbeddr.mpsutil.propertydefault" version="-1" />
+    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+  </languages>
+  <imports>
+    <import index="yv4j" ref="r:6a63246b-e5f4-49e4-8474-0744982532d8(com.mbeddr.mpsutil.breadcrumb.editor.structure)" />
+  </imports>
+  <registry>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
+    </language>
+    <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
+      <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
+        <reference id="1147467295099" name="applicableProperty" index="EomxK" />
+      </concept>
+      <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
+        <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="1213098023997" name="property" index="1MhHOB" />
+      </concept>
+    </language>
+    <language id="3f41734b-72c3-42c8-b22c-bacd5a878e17" name="com.mbeddr.mpsutil.propertydefault">
+      <concept id="1550432487216066866" name="com.mbeddr.mpsutil.propertydefault.structure.IPropertyDefaultValue" flags="ng" index="3_egWj">
+        <child id="1550432487216060794" name="defaultValue" index="3_eitr" />
+      </concept>
+      <concept id="1550432487216062719" name="com.mbeddr.mpsutil.propertydefault.structure.NodePropertyConstraintDefault" flags="ng" index="3_ehVu" />
+    </language>
+  </registry>
+  <node concept="1M2fIO" id="3JErwPFIqFI">
+    <ref role="1M2myG" to="yv4j:3JErwPFIqFe" resolve="BreadcrumbEditor" />
+    <node concept="3_ehVu" id="1m4fy7KJTQn" role="1MhHOB">
+      <ref role="EomxK" to="yv4j:3JErwPFIqFh" resolve="showBreadcrumb" />
+      <node concept="3clFbT" id="1m4fy7KJUst" role="3_eitr">
+        <property role="3clFbU" value="true" />
       </node>
     </node>
-    <node role="property" roleId="tp1t.1213098023997" type="d5g1.NodePropertyConstraintDefault" typeId="d5g1.1550432487216062719" id="1550432487216228138" nodeInfo="ng">
-      <link role="applicableProperty" roleId="tp1t.1147467295099" targetNodeId="yv4j.4317384196709001938" resolveInfo="showBookmarks" />
-      <node role="defaultValue" roleId="d5g1.1550432487216060794" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="1550432487216229787" nodeInfo="nn">
-        <property name="value" nameId="tpee.1068580123138" value="false" />
+    <node concept="3_ehVu" id="1m4fy7KJUsE" role="1MhHOB">
+      <ref role="EomxK" to="yv4j:3JErwPFIqFi" resolve="showBookmarks" />
+      <node concept="3clFbT" id="1m4fy7KJUQr" role="3_eitr">
+        <property role="3clFbU" value="false" />
       </node>
     </node>
-    <node role="property" roleId="tp1t.1213098023997" type="d5g1.NodePropertyConstraintDefault" typeId="d5g1.1550432487216062719" id="1550432487217175602" nodeInfo="ng">
-      <link role="applicableProperty" roleId="tp1t.1147467295099" targetNodeId="yv4j.4317384196709001939" resolveInfo="bookmarkPanelWidth" />
-      <node role="defaultValue" roleId="d5g1.1550432487216060794" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="1550432487217175628" nodeInfo="nn">
-        <property name="value" nameId="tpee.1068580320021" value="200" />
+    <node concept="3_ehVu" id="1m4fy7KNxKM" role="1MhHOB">
+      <ref role="EomxK" to="yv4j:3JErwPFIqFj" resolve="bookmarkPanelWidth" />
+      <node concept="3cmrfG" id="1m4fy7KNxLc" role="3_eitr">
+        <property role="3cmrfH" value="200" />
       </node>
     </node>
-    <node role="property" roleId="tp1t.1213098023997" type="d5g1.NodePropertyConstraintDefault" typeId="d5g1.1550432487216062719" id="1550432487217175670" nodeInfo="ng">
-      <link role="applicableProperty" roleId="tp1t.1147467295099" targetNodeId="yv4j.4317384196709001936" resolveInfo="showBookmarkIcons" />
-      <node role="defaultValue" roleId="d5g1.1550432487216060794" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="1550432487217175700" nodeInfo="nn">
-        <property name="value" nameId="tpee.1068580123138" value="true" />
+    <node concept="3_ehVu" id="1m4fy7KNxLQ" role="1MhHOB">
+      <ref role="EomxK" to="yv4j:3JErwPFIqFg" resolve="showBookmarkIcons" />
+      <node concept="3clFbT" id="1m4fy7KNxMk" role="3_eitr">
+        <property role="3clFbU" value="true" />
       </node>
     </node>
-    <node role="property" roleId="tp1t.1213098023997" type="d5g1.NodePropertyConstraintDefault" typeId="d5g1.1550432487216062719" id="1550432487217175734" nodeInfo="ng">
-      <link role="applicableProperty" roleId="tp1t.1147467295099" targetNodeId="yv4j.4317384196709001935" resolveInfo="showBreadcrumbIcons" />
-      <node role="defaultValue" roleId="d5g1.1550432487216060794" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="1550432487217175768" nodeInfo="nn">
-        <property name="value" nameId="tpee.1068580123138" value="true" />
+    <node concept="3_ehVu" id="1m4fy7KNxMQ" role="1MhHOB">
+      <ref role="EomxK" to="yv4j:3JErwPFIqFf" resolve="showBreadcrumbIcons" />
+      <node concept="3clFbT" id="1m4fy7KNxNo" role="3_eitr">
+        <property role="3clFbU" value="true" />
       </node>
     </node>
-  </root>
+  </node>
 </model>
 
