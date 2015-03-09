@@ -41,11 +41,6 @@
     <import index="1d7m" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.ide.editor(jetbrains.mps.ide.editor@java_stub)" />
   </imports>
   <registry>
-    <language id="00000000-0000-0000-0000-000000000000" name="">
-      <concept id="0" name="" flags="ng" index="00000">
-        <child id="0" name="" index="00000" />
-      </concept>
-    </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
       <concept id="1210676672555" name="jetbrains.mps.lang.plugin.structure.OnBeforeWriteBlock" flags="in" index="3xWZ$M" />
       <concept id="1204478074808" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_MPSProject" flags="nn" index="1KvdUw" />
@@ -480,6 +475,9 @@
         <property id="1101080154068563577" name="scope" index="3NeIjD" />
         <child id="1210676918600" name="beforeWriteBlockProject" index="3xXVxh" />
         <child id="145956936283569518" name="properties" index="1DEjpx" />
+      </concept>
+      <concept id="145956936284064811" name="com.mbeddr.mpsutil.preferenceform.structure.AbstractPreferenceFormProperty" flags="ng" index="1DGss$">
+        <child id="8884256830696181817" name="label" index="XGeyX" />
       </concept>
       <concept id="145956936284219644" name="com.mbeddr.mpsutil.preferenceform.structure.CheckBoxPreferenceFormProperty" flags="ng" index="1DJMfN">
         <property id="145956936284219645" name="defaultValue" index="1DJMfM" />
@@ -4158,19 +4156,19 @@
     <node concept="1DJMfN" id="ty4hbPIVUX" role="1DEjpx">
       <property role="TrG5h" value="showBreadcrumb" />
       <property role="1DJMfM" value="true" />
-      <node concept="3ZQQOj" id="7Hbe8h74ls1" role="00000">
-        <ref role="3ZOmrH" node="7Hbe8h74lsl" resolve="ShowBreadcrumb" />
-      </node>
       <node concept="10P_77" id="ty4hbPIVUY" role="1tU5fm" />
       <node concept="3clFbT" id="42HZhU0cNc1" role="33vP2m">
         <property role="3clFbU" value="true" />
+      </node>
+      <node concept="3ZQQOj" id="4bsUQfPNMSr" role="XGeyX">
+        <ref role="3ZOmrH" node="7Hbe8h74lsl" resolve="ShowBreadcrumb" />
       </node>
     </node>
     <node concept="1DJMfN" id="4o4$mVT_Gse" role="1DEjpx">
       <property role="TrG5h" value="showBookmarks" />
       <node concept="10P_77" id="4o4$mVT_Gsf" role="1tU5fm" />
       <node concept="3clFbT" id="4o4$mVT_Gsg" role="33vP2m" />
-      <node concept="3ZQQOj" id="7Hbe8h74nUR" role="00000">
+      <node concept="3ZQQOj" id="4bsUQfPNO3W" role="XGeyX">
         <ref role="3ZOmrH" node="7Hbe8h74nUS" resolve="ShowBookmarks" />
       </node>
     </node>

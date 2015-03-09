@@ -16,7 +16,6 @@
     <language id="00000000-0000-0000-0000-000000000000" name="">
       <concept id="0" name="" flags="ng" index="00000">
         <property id="0" name="" index="00000" />
-        <child id="0" name="" index="00000" />
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -183,6 +182,9 @@
         <child id="145956936283569518" name="properties" index="1DEjpx" />
         <child id="1101080154069038230" name="afterReadBlockApplication" index="3NKUo6" />
         <child id="1101080154069038442" name="beforeWriteBlockApplication" index="3NKUvU" />
+      </concept>
+      <concept id="145956936284064811" name="com.mbeddr.mpsutil.preferenceform.structure.AbstractPreferenceFormProperty" flags="ng" index="1DGss$">
+        <child id="8884256830696181817" name="label" index="XGeyX" />
       </concept>
       <concept id="145956936284219644" name="com.mbeddr.mpsutil.preferenceform.structure.CheckBoxPreferenceFormProperty" flags="ng" index="1DJMfN">
         <property id="145956936284219645" name="defaultValue" index="1DJMfM" />
@@ -362,23 +364,23 @@
     <node concept="1DJMfN" id="3vXSZsAPQkz" role="1DEjpx">
       <property role="TrG5h" value="enabled" />
       <property role="1DJMfM" value="true" />
-      <node concept="3ZQQOj" id="7Hbe8h753rH" role="00000">
-        <ref role="3ZOmrH" node="7Hbe8h753s1" resolve="Enabled" />
-      </node>
       <node concept="10P_77" id="3vXSZsAPQk$" role="1tU5fm" />
       <node concept="3clFbT" id="3vXSZsAPQk_" role="33vP2m">
         <property role="3clFbU" value="true" />
+      </node>
+      <node concept="3ZQQOj" id="4bsUQfPNOuQ" role="XGeyX">
+        <ref role="3ZOmrH" node="7Hbe8h753s1" resolve="Enabled" />
       </node>
     </node>
     <node concept="czsHg" id="3vXSZsAPQkA" role="1DEjpx">
       <property role="TrG5h" value="port" />
       <property role="cyBRX" value="8080" />
-      <node concept="3ZQQOj" id="7Hbe8h753K$" role="00000">
-        <ref role="3ZOmrH" node="7Hbe8h753K_" resolve="Port" />
-      </node>
       <node concept="3cpWsb" id="3vXSZsAPQkB" role="1tU5fm" />
       <node concept="3cmrfG" id="3hck9gsGS1U" role="33vP2m">
         <property role="3cmrfH" value="8080" />
+      </node>
+      <node concept="3ZQQOj" id="4bsUQfPNP3X" role="XGeyX">
+        <ref role="3ZOmrH" node="7Hbe8h753K_" resolve="Port" />
       </node>
     </node>
     <node concept="3xWZ$M" id="3vXSZsAPQkD" role="3NKUvU">
