@@ -4,7 +4,6 @@
   <languages>
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
@@ -30,6 +29,7 @@
     <use id="223dd778-c44f-4ef3-9535-7aa7d12244a6" name="com.mbeddr.core.debug" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="-1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <devkit ref="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
     <devkit ref="74a1428c-a8b1-49f6-8abb-f4008cf591e6(com.mbeddr.analyses.statemachines)" />
@@ -93,6 +93,7 @@
       <concept id="279446265608459824" name="com.mbeddr.core.pointers.structure.PointerType" flags="ng" index="3wxxNl" />
     </language>
     <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
+      <concept id="348741627182093743" name="com.mbeddr.analyses.cbmc.structure.CProverPlatform" flags="ng" index="22gAW6" />
       <concept id="8327535879610131181" name="com.mbeddr.analyses.cbmc.structure.ICbmcSettings" flags="ng" index="2lUzGJ">
         <property id="8327535879610783176" name="timeoutInSeconds" index="2l50Ka" />
         <property id="8327535879610783188" name="timeoutForSingleAnalysis" index="2l50Km" />
@@ -263,13 +264,6 @@
     </language>
   </registry>
   <node concept="2v9HqL" id="55cMrg_7EZQ">
-    <node concept="2AWWZL" id="55cMrg_7EZR" role="2AWWZH">
-      <property role="2AWWZJ" value="gcc" />
-      <property role="2AWWZI" value="-std=c99" />
-      <property role="1FkSt$" value="-g" />
-      <property role="3r8Kxs" value="make" />
-      <property role="3r8Kw1" value="gdb" />
-    </node>
     <node concept="2Q9Fgs" id="55cMrg_7EZS" role="2Q9xDr">
       <node concept="2Q9FjX" id="55cMrg_7EZT" role="2Q9FjI" />
     </node>
@@ -290,6 +284,13 @@
       <node concept="2v9HqM" id="DaB78Dgmxd" role="2eOfOg">
         <ref role="2v9HqP" node="34Ib7$WJwa_" resolve="Main" />
       </node>
+    </node>
+    <node concept="22gAW6" id="7HHIhkjaqUU" role="2AWWZH">
+      <property role="2AWWZJ" value="goto-cc" />
+      <property role="3r8Kw1" value="gdb" />
+      <property role="3r8Kxs" value="make" />
+      <property role="2AWWZI" value="-std=c99" />
+      <property role="1FkSt$" value="-g" />
     </node>
   </node>
   <node concept="N3F5e" id="55cMrg_7EZZ">
@@ -994,13 +995,16 @@
       <ref role="3GEb4d" node="34Ib7$WJwa_" resolve="Main" />
     </node>
     <node concept="1W1s6O" id="qjOluQk05H" role="3V$2$K">
-      <property role="2lUGeZ" value="false" />
-      <property role="2lUHrg" value="10" />
-      <property role="2lUGbD" value="-1" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
       <property role="2l50Ka" value="none" />
       <property role="2l50Km" value="none" />
-      <property role="2l50Mm" value="true" />
+      <property role="2l50Mm" value="false" />
       <property role="2lUGe1" value="true" />
+      <property role="2lelRm" value="true" />
+      <property role="2lUGcN" value="false" />
+      <property role="2lUGdP" value="false" />
       <ref role="1W1s6P" node="21PlWakTqun" resolve="EpsilonSM" />
       <ref role="3V$Cn$" node="21PlWakTqve" resolve="testEpsilonEntry" />
     </node>

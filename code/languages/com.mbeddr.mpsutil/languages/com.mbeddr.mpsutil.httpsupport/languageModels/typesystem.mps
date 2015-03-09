@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ecdfb599-a916-49c3-acd0-76e9b1710e1e(com.mbeddr.mpsutil.httpsupport.typesystem)">
+<model ref="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9/r:ecdfb599-a916-49c3-acd0-76e9b1710e1e(com.mbeddr.mpsutil.httpsupport/com.mbeddr.mpsutil.httpsupport.typesystem)">
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="m87u" ref="f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#javax.servlet.http(com.mbeddr.mpsutil.httpsupport.rt/javax.servlet.http@java_stub)" />
-    <import index="s4al" ref="r:193e03e1-dca4-4048-aad0-de84622e3490(com.mbeddr.mpsutil.httpsupport.structure)" implicit="true" />
+    <import index="m87u" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#javax.servlet.http(com.mbeddr.mpsutil.httpsupport.rt/javax.servlet.http@java_stub)" />
+    <import index="s4al" ref="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9/r:193e03e1-dca4-4048-aad0-de84622e3490(com.mbeddr.mpsutil.httpsupport/com.mbeddr.mpsutil.httpsupport.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">

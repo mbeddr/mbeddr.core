@@ -143,6 +143,9 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
+      </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -253,20 +256,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LJ5HeG" role="jymVt" />
-    <node concept="312cEg" id="4XJOimFG7H1" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="memoryLeakClaim" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="4XJOimFG3YN" role="1tU5fm">
-        <ref role="3uigEE" to="rbq9:mb65_hnqw$" resolve="CBMCRawClaim" />
-      </node>
-      <node concept="3Tm6S6" id="4XJOimFGbbT" role="1B3o_S" />
-      <node concept="NWlO9" id="4XJOimFGbF2" role="lGtFl">
-        <property role="NWlVz" value="The claim representing memory leak check." />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="4XJOimFG09n" role="jymVt" />
     <node concept="3clFbW" id="3x0R1LJ5HeH" role="jymVt">
       <node concept="37vLTG" id="3x0R1LJ5HeI" role="3clF46">
         <property role="TrG5h" value="config" />
@@ -389,46 +378,6 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="4XJOimFEOLN" role="3clF47">
-        <node concept="3clFbF" id="4XJOimFGcab" role="3cqZAp">
-          <node concept="37vLTI" id="4XJOimFGcad" role="3clFbG">
-            <node concept="2OqwBi" id="4XJOimFFg31" role="37vLTx">
-              <node concept="37vLTw" id="4XJOimFFezs" role="2Oq$k0">
-                <ref role="3cqZAo" node="4XJOimFES0p" resolve="originalClaims" />
-              </node>
-              <node concept="1z4cxt" id="4XJOimFFhZS" role="2OqNvi">
-                <node concept="1bVj0M" id="4XJOimFFhZU" role="23t8la">
-                  <node concept="3clFbS" id="4XJOimFFhZV" role="1bW5cS">
-                    <node concept="3clFbF" id="4XJOimFFi6Z" role="3cqZAp">
-                      <node concept="2OqwBi" id="4XJOimFFiJ9" role="3clFbG">
-                        <node concept="2OqwBi" id="4XJOimFFi9r" role="2Oq$k0">
-                          <node concept="37vLTw" id="4XJOimFFi6Y" role="2Oq$k0">
-                            <ref role="3cqZAo" node="4XJOimFFhZW" resolve="it" />
-                          </node>
-                          <node concept="2S8uIT" id="4XJOimFFilv" role="2OqNvi">
-                            <ref role="2S8YL0" to="rbq9:mb65_hvOOo" resolve="property" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="4XJOimFFngm" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
-                          <node concept="Xl_RD" id="4XJOimFFnNq" role="37wK5m">
-                            <property role="Xl_RC" value="memory-leak" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="Rh6nW" id="4XJOimFFhZW" role="1bW2Oz">
-                    <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="4XJOimFFhZX" role="1tU5fm" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="37vLTw" id="4XJOimFGeUI" role="37vLTJ">
-              <ref role="3cqZAo" node="4XJOimFG7H1" resolve="memoryLeakClaim" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="4XJOimFGkzg" role="3cqZAp">
           <node concept="3nyPlj" id="4XJOimFFvzU" role="3clFbG">
             <ref role="37wK5l" to="xiaw:6mJYm3jz$aC" resolve="filterReachableClaims" />
@@ -792,28 +741,6 @@
               <node concept="37vLTw" id="3x0R1LJ5Hia" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LJ5Hhu" resolve="stage1" />
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="4XJOimFGty2" role="3cqZAp">
-          <node concept="3clFbS" id="4XJOimFGty5" role="3clFbx">
-            <node concept="3clFbF" id="4XJOimFGy7k" role="3cqZAp">
-              <node concept="2OqwBi" id="4XJOimFGynE" role="3clFbG">
-                <node concept="37vLTw" id="4XJOimFG$lC" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3x0R1LJ5Hi6" resolve="stage2" />
-                </node>
-                <node concept="TSZUe" id="4XJOimFG$gm" role="2OqNvi">
-                  <node concept="37vLTw" id="4XJOimFG$pB" role="25WWJ7">
-                    <ref role="3cqZAo" node="4XJOimFG7H1" resolve="memoryLeakClaim" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3y3z36" id="4XJOimFGxjt" role="3clFbw">
-            <node concept="10Nm6u" id="4XJOimFGxxF" role="3uHU7w" />
-            <node concept="37vLTw" id="4XJOimFGw_l" role="3uHU7B">
-              <ref role="3cqZAo" node="4XJOimFG7H1" resolve="memoryLeakClaim" />
             </node>
           </node>
         </node>
@@ -1503,6 +1430,23 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LJ5Hmt" role="jymVt" />
+    <node concept="3clFb_" id="6rPcxxV51LL" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getResultCategory" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6rPcxxV51LO" role="3clF47">
+        <node concept="3clFbF" id="6rPcxxV54ow" role="3cqZAp">
+          <node concept="Xl_RD" id="6rPcxxV54ov" role="3clFbG">
+            <property role="Xl_RC" value="Robustness" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6rPcxxV50uR" role="1B3o_S" />
+      <node concept="17QB3L" id="6rPcxxV51L9" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="6rPcxxV5j1w" role="jymVt" />
     <node concept="3clFb_" id="3x0R1LJ5Hmu" role="jymVt">
       <property role="TrG5h" value="getUserFriendlyMessage" />
       <property role="1EzhhJ" value="false" />

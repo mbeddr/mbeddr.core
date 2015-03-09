@@ -6,7 +6,6 @@
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
     <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
@@ -14,6 +13,7 @@
     <use id="41911c23-eb23-4ee6-872f-bc7f7ebce290" name="com.mbeddr.ext.components.test" version="-1" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
   </languages>
   <imports />
   <registry>
@@ -676,6 +676,9 @@
         <property role="2c7vTL" value="false" />
       </node>
       <node concept="3XIRFW" id="3U3EZ$DP1az" role="c0Qz3">
+        <node concept="3t9XKO" id="48bQTSP5Fz$" role="3XIRFZ">
+          <ref role="3t9XKR" node="3U3EZ$DP1aT" resolve="instances" />
+        </node>
         <node concept="3XIRlf" id="3U3EZ$DP1br" role="3XIRFZ">
           <property role="TrG5h" value="res" />
           <node concept="26Vqqz" id="3U3EZ$DP1bs" role="2C2TGm">

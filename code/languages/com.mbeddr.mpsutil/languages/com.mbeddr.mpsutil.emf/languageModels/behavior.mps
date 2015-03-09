@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:1161bb94-0c8e-46c5-afa4-cd12b23a4d71(com.mbeddr.mpsutil.emf.behavior)">
+<model ref="9e3f6ddb-4034-47f7-acdd-634884e64759/r:1161bb94-0c8e-46c5-afa4-cd12b23a4d71(com.mbeddr.mpsutil.emf/com.mbeddr.mpsutil.emf.behavior)">
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
@@ -7,7 +7,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="mwn6" ref="r:c45fab0b-1678-4fc1-9187-107d1188f675(com.mbeddr.mpsutil.emf.structure)" />
+    <import index="mwn6" ref="9e3f6ddb-4034-47f7-acdd-634884e64759/r:c45fab0b-1678-4fc1-9187-107d1188f675(com.mbeddr.mpsutil.emf/com.mbeddr.mpsutil.emf.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">

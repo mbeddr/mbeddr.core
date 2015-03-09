@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:273d67b5-d0b9-4bc0-b4c9-959f8436cd7c(com.mbeddr.mpsutil.plantuml.node.generator.template.main@generator)">
+<model ref="88b10b27-2427-44ff-8d52-9d45cecef052/r:273d67b5-d0b9-4bc0-b4c9-959f8436cd7c(com.mbeddr.mpsutil.plantuml.node#3225038607917449425/com.mbeddr.mpsutil.plantuml.node.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="b4d28e19-7d2d-47e9-943e-3a41f97a0e52" name="com.mbeddr.mpsutil.plantuml.node" version="-1" />

@@ -9,6 +9,7 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -128,6 +129,9 @@
       <concept id="1812109616120608865" name="jetbrains.mps.lang.intentions.structure.ParameterizedDescriptionBlock" flags="in" index="1jPt1T" />
       <concept id="1812109616120795373" name="jetbrains.mps.lang.intentions.structure.ParameterizedExecuteBlock" flags="in" index="1jPJzP" />
     </language>
+    <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
+      <concept id="767145758118872830" name="jetbrains.mps.lang.actions.structure.NF_Link_SetNewChildOperation" flags="nn" index="2DeJnY" />
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -136,7 +140,6 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
       </concept>
@@ -229,20 +232,19 @@
                 <ref role="3Tt5mk" to="c4fa:2I09F8VK$gF" />
               </node>
             </node>
-            <node concept="zfrQC" id="2I09F8VK$hI" role="2OqNvi" />
+            <node concept="2DeJnY" id="1iWV611sgDJ" role="2OqNvi" />
           </node>
         </node>
-        <node concept="3clFbF" id="2I09F8VKFsf" role="3cqZAp">
-          <node concept="2OqwBi" id="2I09F8VKFsh" role="3clFbG">
-            <node concept="1XNTG" id="2I09F8VKFsg" role="2Oq$k0" />
-            <node concept="liA8E" id="2I09F8VKFsl" role="2OqNvi">
-              <ref role="37wK5l" to="srng:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode):void" resolve="selectWRTFocusPolicy" />
-              <node concept="2OqwBi" id="2I09F8VKFsn" role="37wK5m">
-                <node concept="2Sf5sV" id="2I09F8VKFsm" role="2Oq$k0" />
-                <node concept="3TrEf2" id="2I09F8VKFsr" role="2OqNvi">
-                  <ref role="3Tt5mk" to="c4fa:2I09F8VK$gF" />
-                </node>
+        <node concept="3clFbF" id="1iWV611sh7Y" role="3cqZAp">
+          <node concept="2OqwBi" id="1iWV611siNv" role="3clFbG">
+            <node concept="2OqwBi" id="1iWV611shdJ" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1iWV611sh7W" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1iWV611siih" role="2OqNvi">
+                <ref role="3Tt5mk" to="c4fa:2I09F8VK$gF" />
               </node>
+            </node>
+            <node concept="1OKiuA" id="1iWV611sj6J" role="2OqNvi">
+              <node concept="1XNTG" id="1iWV611sjaD" role="lBI5i" />
             </node>
           </node>
         </node>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:d2e94778-44ef-470b-aea9-bdcae2b233a7(com.mbeddr.mpsutil.plantuml.node.editor)">
+<model ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:d2e94778-44ef-470b-aea9-bdcae2b233a7(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />

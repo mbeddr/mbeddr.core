@@ -521,6 +521,23 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LJ5Diu" role="jymVt" />
+    <node concept="3clFb_" id="6rPcxxV51LL" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getResultCategory" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6rPcxxV51LO" role="3clF47">
+        <node concept="3clFbF" id="6rPcxxV54ow" role="3cqZAp">
+          <node concept="Xl_RD" id="6rPcxxV54ov" role="3clFbG">
+            <property role="Xl_RC" value="Decision Table" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6rPcxxV50uR" role="1B3o_S" />
+      <node concept="17QB3L" id="6rPcxxV51L9" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="6rPcxxV5cpr" role="jymVt" />
     <node concept="3clFb_" id="3x0R1LJ5Div" role="jymVt">
       <property role="TrG5h" value="getAnalyzedDecisionTable" />
       <node concept="3Tqbb2" id="3x0R1LJ5Diw" role="3clF45">

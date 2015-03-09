@@ -258,10 +258,8 @@
       </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
-      <concept id="1229477454423" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalCopiedInputByOutput" flags="nn" index="12$id9">
-        <child id="1229477520175" name="outputNode" index="12$y8L" />
-      </concept>
       <concept id="1216860049633" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextType" flags="in" index="1iwH7U" />
+      <concept id="1217026863835" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalInputModel" flags="nn" index="1st3f0" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -272,7 +270,6 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
-      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -704,6 +701,19 @@
                 <node concept="Xjq3P" id="4Uw4Kib5ipJ" role="2Oq$k0" />
                 <node concept="2OwXpG" id="4Uw4Kib5ipK" role="2OqNvi">
                   <ref role="2Oxat5" node="7LK0SI3XjY" resolve="model" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="3RNYYaJy2ln" role="3cqZAp">
+            <node concept="37vLTI" id="3RNYYaJy3cy" role="3clFbG">
+              <node concept="3clFbT" id="3RNYYaJy3l$" role="37vLTx">
+                <property role="3clFbU" value="true" />
+              </node>
+              <node concept="2OqwBi" id="3RNYYaJy2oo" role="37vLTJ">
+                <node concept="Xjq3P" id="3RNYYaJy2ll" role="2Oq$k0" />
+                <node concept="2OwXpG" id="3RNYYaJy2M8" role="2OqNvi">
+                  <ref role="2Oxat5" node="4FpLBMtUMdh" resolve="shouldRebuild" />
                 </node>
               </node>
             </node>
@@ -2808,22 +2818,6 @@
             <property role="3SKdUp" value="are we in test code for analyses?" />
           </node>
         </node>
-        <node concept="3cpWs8" id="15d7XIoFC34" role="3cqZAp">
-          <node concept="3cpWsn" id="15d7XIoFC35" role="3cpWs9">
-            <property role="TrG5h" value="original" />
-            <node concept="3Tqbb2" id="15d7XIoFC32" role="1tU5fm" />
-            <node concept="2OqwBi" id="15d7XIoFC36" role="33vP2m">
-              <node concept="37vLTw" id="15d7XIoFC37" role="2Oq$k0">
-                <ref role="3cqZAo" node="15d7XIoFksJ" resolve="genContext" />
-              </node>
-              <node concept="12$id9" id="15d7XIoFC38" role="2OqNvi">
-                <node concept="37vLTw" id="15d7XIoFC39" role="12$y8L">
-                  <ref role="3cqZAo" node="15d7XIo_JC_" resolve="aNode" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="15d7XIoFCd5" role="3cqZAp">
           <node concept="3clFbS" id="15d7XIoFCd8" role="3clFbx">
             <node concept="3cpWs6" id="15d7XIoFC$i" role="3cqZAp">
@@ -2834,49 +2828,20 @@
           </node>
           <node concept="2OqwBi" id="15d7XIo_LwN" role="3clFbw">
             <node concept="2OqwBi" id="15d7XIo_Kqq" role="2Oq$k0">
-              <node concept="2OqwBi" id="15d7XIo_JOR" role="2Oq$k0">
-                <node concept="37vLTw" id="15d7XIoFC7d" role="2Oq$k0">
-                  <ref role="3cqZAo" node="15d7XIoFC35" resolve="original" />
-                </node>
-                <node concept="I4A8Y" id="15d7XIo_Kj1" role="2OqNvi" />
-              </node>
               <node concept="2RRcyG" id="15d7XIo_K_i" role="2OqNvi">
                 <ref role="2RRcyH" to="q46j:15d7XIo_Euc" resolve="ModelUsedForAnalysesTestsMarker" />
+              </node>
+              <node concept="2OqwBi" id="3RNYYaJ0PcZ" role="2Oq$k0">
+                <node concept="37vLTw" id="3RNYYaJ0OQl" role="2Oq$k0">
+                  <ref role="3cqZAo" node="15d7XIoFksJ" resolve="genContext" />
+                </node>
+                <node concept="1st3f0" id="3RNYYaJ0Q24" role="2OqNvi" />
               </node>
             </node>
             <node concept="3GX2aA" id="15d7XIo_Nav" role="2OqNvi" />
           </node>
         </node>
         <node concept="3clFbH" id="15d7XIoFChM" role="3cqZAp" />
-        <node concept="3SKdUt" id="15d7XIoFNpl" role="3cqZAp">
-          <node concept="3SKdUq" id="15d7XIoFNsG" role="3SKWNk">
-            <property role="3SKdUp" value="is there an analysis configuration in our model?" />
-          </node>
-        </node>
-        <node concept="3clFbJ" id="15d7XIoFN5l" role="3cqZAp">
-          <node concept="3clFbS" id="15d7XIoFN5o" role="3clFbx">
-            <node concept="3cpWs6" id="15d7XIoFNce" role="3cqZAp">
-              <node concept="3clFbT" id="15d7XIoFNdX" role="3cqZAk">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="15d7XIoFE$0" role="3clFbw">
-            <node concept="2OqwBi" id="15d7XIoFDij" role="2Oq$k0">
-              <node concept="2OqwBi" id="15d7XIoFD4U" role="2Oq$k0">
-                <node concept="37vLTw" id="15d7XIoFCNH" role="2Oq$k0">
-                  <ref role="3cqZAo" node="15d7XIo_JC_" resolve="aNode" />
-                </node>
-                <node concept="I4A8Y" id="15d7XIoFDbz" role="2OqNvi" />
-              </node>
-              <node concept="2RRcyG" id="15d7XIoFDsV" role="2OqNvi">
-                <ref role="2RRcyH" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
-              </node>
-            </node>
-            <node concept="3GX2aA" id="15d7XIoFN12" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="15d7XIoFNi$" role="3cqZAp" />
         <node concept="3cpWs6" id="15d7XIo_JDc" role="3cqZAp">
           <node concept="3clFbT" id="15d7XIoFNtd" role="3cqZAk">
             <property role="3clFbU" value="false" />
@@ -2888,10 +2853,6 @@
       <node concept="37vLTG" id="15d7XIoFksJ" role="3clF46">
         <property role="TrG5h" value="genContext" />
         <node concept="1iwH7U" id="15d7XIoFBlQ" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="15d7XIo_JC_" role="3clF46">
-        <property role="TrG5h" value="aNode" />
-        <node concept="3Tqbb2" id="15d7XIo_JC$" role="1tU5fm" />
       </node>
       <node concept="NWlO9" id="15d7XIo_JCZ" role="lGtFl">
         <property role="NWlVz" value="Returns true if the analyses specific code generation should be enabled (e.g. additional labels)." />

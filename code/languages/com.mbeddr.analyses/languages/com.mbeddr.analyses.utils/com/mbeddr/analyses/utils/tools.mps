@@ -550,7 +550,7 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="1mocVhAGymM" role="3cqZAp" />
+            <node concept="3clFbH" id="73dW7J6QpSl" role="3cqZAp" />
             <node concept="3cpWs8" id="3L_Vuqbn5py" role="3cqZAp">
               <node concept="3cpWsn" id="3L_Vuqbn5pz" role="3cpWs9">
                 <property role="TrG5h" value="outputReaderThread" />
@@ -1983,7 +1983,7 @@
         <node concept="3clFbF" id="4CtHBqN5a_U" role="3cqZAp">
           <node concept="37vLTI" id="4CtHBqN5bwh" role="3clFbG">
             <node concept="37vLTw" id="4CtHBqN5bG9" role="37vLTx">
-              <ref role="3cqZAo" node="4CtHBqN535O" resolve="timeout" />
+              <ref role="3cqZAo" node="4CtHBqN535O" resolve="timeoutInSeconds" />
             </node>
             <node concept="2OqwBi" id="4CtHBqN5aBa" role="37vLTJ">
               <node concept="Xjq3P" id="4CtHBqN5a_T" role="2Oq$k0" />
@@ -1997,11 +1997,11 @@
       <node concept="3Tm1VV" id="4CtHBqN4LK3" role="1B3o_S" />
       <node concept="3cqZAl" id="4CtHBqN4Uqw" role="3clF45" />
       <node concept="37vLTG" id="4CtHBqN535O" role="3clF46">
-        <property role="TrG5h" value="timeout" />
+        <property role="TrG5h" value="timeoutInSeconds" />
         <node concept="10Oyi0" id="4CtHBqN535N" role="1tU5fm" />
       </node>
       <node concept="NWlO9" id="1mocVhADQWV" role="lGtFl">
-        <property role="NWlVz" value="Sets the timeout." />
+        <property role="NWlVz" value="Sets the timeout in seconds." />
       </node>
     </node>
     <node concept="2tJIrI" id="4CtHBqN5bK_" role="jymVt" />

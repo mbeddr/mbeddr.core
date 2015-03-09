@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:9f56fc77-97de-4856-aa47-8a939819ad5a(com.mbeddr.mpsutil.langstats.generator.template.main@generator)">
+<model ref="0f6c0fe5-c781-4e52-8b90-9c53eb42fe3b/r:9f56fc77-97de-4856-aa47-8a939819ad5a(com.mbeddr.mpsutil.langstats#2745981761597146573/com.mbeddr.mpsutil.langstats.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
   </languages>
   <imports>
-    <import index="gbcn" ref="r:ae5422b8-2aa2-4f57-80cb-0636bf6344ae(com.mbeddr.mpsutil.langstats.structure)" />
+    <import index="gbcn" ref="44ad0baa-db6e-4793-9250-f08ab386ec56/r:ae5422b8-2aa2-4f57-80cb-0636bf6344ae(com.mbeddr.mpsutil.langstats/com.mbeddr.mpsutil.langstats.structure)" />
   </imports>
   <registry>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
