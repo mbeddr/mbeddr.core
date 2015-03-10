@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/r:1bdd2911-4cda-43fc-8696-c8fb6475ff04(com.mbeddr.mpsutil.httpsupport.rt/com.mbeddr.mpsutil.httpsupport.rt.plugin)">
+<model ref="r:1bdd2911-4cda-43fc-8696-c8fb6475ff04(com.mbeddr.mpsutil.httpsupport.rt.plugin)">
   <persistence version="9" />
   <languages>
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
@@ -8,8 +8,8 @@
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
+    <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="-1" />
+    <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -134,6 +134,9 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage">
+      <concept id="2510545900188478754" name="com.mbeddr.mpsutil.multilingual.baseLanguage.structure.MultilingualJavaString" flags="ng" index="3ZQQOj" />
+    </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
       <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
@@ -143,6 +146,18 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common">
+      <concept id="568377005202317274" name="com.mbeddr.mpsutil.multilingual.common.structure.ResourceBundle" flags="ng" index="3MtHw5">
+        <property id="6737939145712380461" name="baseName" index="1JSPRp" />
+        <child id="568377005202317276" name="keys" index="3MtHw3" />
+      </concept>
+      <concept id="568377005202317270" name="com.mbeddr.mpsutil.multilingual.common.structure.MessageKey" flags="ng" index="3MtHw9">
+        <property id="568377005202317271" name="technicalKey" index="3MtHw8" />
+      </concept>
+      <concept id="2510545900188083931" name="com.mbeddr.mpsutil.multilingual.common.structure.IMessageKeyHolder" flags="ng" index="3ZOmrE">
+        <reference id="2510545900188083932" name="key" index="3ZOmrH" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -165,7 +180,7 @@
         <child id="1101080154069038442" name="beforeWriteBlockApplication" index="3NKUvU" />
       </concept>
       <concept id="145956936284064811" name="com.mbeddr.mpsutil.preferenceform.structure.AbstractPreferenceFormProperty" flags="ng" index="1DGss$">
-        <property id="145956936284103527" name="label" index="1DGmxC" />
+        <child id="8884256830696181817" name="label" index="XGeyX" />
       </concept>
       <concept id="145956936284219644" name="com.mbeddr.mpsutil.preferenceform.structure.CheckBoxPreferenceFormProperty" flags="ng" index="1DJMfN">
         <property id="145956936284219645" name="defaultValue" index="1DJMfM" />
@@ -344,20 +359,24 @@
     <property role="3NeIjD" value="1" />
     <node concept="1DJMfN" id="3vXSZsAPQkz" role="1DEjpx">
       <property role="TrG5h" value="enabled" />
-      <property role="1DGmxC" value="Enabled" />
       <property role="1DJMfM" value="true" />
       <node concept="10P_77" id="3vXSZsAPQk$" role="1tU5fm" />
       <node concept="3clFbT" id="3vXSZsAPQk_" role="33vP2m">
         <property role="3clFbU" value="true" />
       </node>
+      <node concept="3ZQQOj" id="4bsUQfPNOuQ" role="XGeyX">
+        <ref role="3ZOmrH" node="7Hbe8h753s1" resolve="Enabled" />
+      </node>
     </node>
     <node concept="czsHg" id="3vXSZsAPQkA" role="1DEjpx">
       <property role="TrG5h" value="port" />
-      <property role="1DGmxC" value="Port" />
       <property role="cyBRX" value="8080" />
       <node concept="3cpWsb" id="3vXSZsAPQkB" role="1tU5fm" />
       <node concept="3cmrfG" id="3hck9gsGS1U" role="33vP2m">
         <property role="3cmrfH" value="8080" />
+      </node>
+      <node concept="3ZQQOj" id="4bsUQfPNP3X" role="XGeyX">
+        <ref role="3ZOmrH" node="7Hbe8h753K_" resolve="Port" />
       </node>
     </node>
     <node concept="3xWZ$M" id="3vXSZsAPQkD" role="3NKUvU">
@@ -468,6 +487,18 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="3MtHw5" id="7Hbe8h753rI">
+    <property role="TrG5h" value="EnabledResourceBundle" />
+    <property role="1JSPRp" value="com.mbeddr.mpsutil.hattpsupport.rt.resource" />
+    <node concept="3MtHw9" id="7Hbe8h753s1" role="3MtHw3">
+      <property role="3MtHw8" value=" " />
+      <property role="TrG5h" value="Enabled" />
+    </node>
+    <node concept="3MtHw9" id="7Hbe8h753K_" role="3MtHw3">
+      <property role="3MtHw8" value=" " />
+      <property role="TrG5h" value="Port" />
     </node>
   </node>
 </model>

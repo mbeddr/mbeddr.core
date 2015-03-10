@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="d2a1d976-43a2-462f-ac3a-9b258ced839d/r:bd6eadde-0753-4ee6-b1ba-de5fed34eb94(com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.editor)">
+<model ref="r:bd6eadde-0753-4ee6-b1ba-de5fed34eb94(com.mbeddr.mpsutil.multilingual.baseLanguage.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
@@ -7,16 +7,15 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="tnjx" ref="d2a1d976-43a2-462f-ac3a-9b258ced839d/r:b5a6a0ba-90b8-4839-a0b6-fee9cff5d417(com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.structure)" />
-    <import index="sxyo" ref="23f985f2-965f-4af1-aee8-a32677429514/r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common/com.mbeddr.mpsutil.multilingual.common.structure)" />
-    <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
-    <import index="tpcu" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core/jetbrains.mps.lang.core.behavior)" />
-    <import index="h1po" ref="d2a1d976-43a2-462f-ac3a-9b258ced839d/r:0fbaf240-65fb-4f8e-9684-faa176c6e083(com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.behavior)" />
-    <import index="y1wr" ref="23f985f2-965f-4af1-aee8-a32677429514/r:187f31fe-3d04-4058-81f8-811fd88b2492(com.mbeddr.mpsutil.multilingual.common/com.mbeddr.mpsutil.multilingual.common.editor)" />
-    <import index="spci" ref="442d3b7d-fe4a-4293-a7c1-6744d440ecaa/r:f00bea3f-6dce-47ed-ac44-0f6df7d12ced(com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.structure)" />
-    <import index="qnem" ref="442d3b7d-fe4a-4293-a7c1-6744d440ecaa/r:7c38bd44-8ea3-4ed7-b744-09e999574f84(com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.editor)" />
-    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="xedy" ref="442d3b7d-fe4a-4293-a7c1-6744d440ecaa/r:9d97c467-bd57-46d3-aac0-9569d63248cb(com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.behavior)" implicit="true" />
+    <import index="tnjx" ref="r:b5a6a0ba-90b8-4839-a0b6-fee9cff5d417(com.mbeddr.mpsutil.multilingual.baseLanguage.structure)" />
+    <import index="sxyo" ref="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" />
+    <import index="srng" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
+    <import index="h1po" ref="r:0fbaf240-65fb-4f8e-9684-faa176c6e083(com.mbeddr.mpsutil.multilingual.baseLanguage.behavior)" />
+    <import index="y1wr" ref="r:187f31fe-3d04-4058-81f8-811fd88b2492(com.mbeddr.mpsutil.multilingual.common.editor)" />
+    <import index="spci" ref="r:f00bea3f-6dce-47ed-ac44-0f6df7d12ced(com.mbeddr.mpsutil.richstring.structure)" />
+    <import index="qnem" ref="r:7c38bd44-8ea3-4ed7-b744-09e999574f84(com.mbeddr.mpsutil.richstring.editor)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="xedy" ref="r:9d97c467-bd57-46d3-aac0-9569d63248cb(com.mbeddr.mpsutil.richstring.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -50,6 +49,9 @@
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139744628335" name="jetbrains.mps.lang.editor.structure.CellModel_Image" flags="sg" stub="8104358048506731195" index="1u4HXA">
@@ -163,7 +165,7 @@
     <ref role="1XX52x" to="tnjx:2bng37t32Oy" resolve="MultilingualJavaString" />
     <node concept="3EZMnI" id="2bng37t32OA" role="2wV5jI">
       <node concept="1u4HXA" id="2bng37t32OB" role="3EZMnx">
-        <property role="1ubRXE" value="${i2s.home}/code/languages/com.i2s.common/icons/multi3.png" />
+        <property role="1ubRXE" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.multilingual.common/icons/multi3.png" />
         <property role="1$Qi42" value="4" />
         <node concept="11L4FC" id="2bng37t32OC" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -224,26 +226,21 @@
             <node concept="3TQlhw" id="2bng37t32P1" role="1Hhtcw">
               <node concept="3clFbS" id="2bng37t32P2" role="2VODD2">
                 <node concept="3clFbF" id="2bng37t32P3" role="3cqZAp">
-                  <node concept="2OqwBi" id="2bng37t32P4" role="3clFbG">
-                    <node concept="2OqwBi" id="2bng37t32P5" role="2Oq$k0">
-                      <node concept="2OqwBi" id="2bng37t32P6" role="2Oq$k0">
-                        <node concept="pncrf" id="2bng37t32P7" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="2bng37t32P8" role="2OqNvi">
-                          <ref role="37wK5l" to="h1po:2bng37t32Q8" resolve="getResourceBundle" />
-                          <node concept="2OqwBi" id="2bng37t32P9" role="37wK5m">
-                            <node concept="1Q80Hx" id="2bng37t32Pa" role="2Oq$k0" />
-                            <node concept="liA8E" id="2bng37t32Pb" role="2OqNvi">
-                              <ref role="37wK5l" to="srng:~EditorContext.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
-                            </node>
+                  <node concept="2OqwBi" id="2bng37t32P5" role="3clFbG">
+                    <node concept="2OqwBi" id="2bng37t32P6" role="2Oq$k0">
+                      <node concept="pncrf" id="2bng37t32P7" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="2bng37t32P8" role="2OqNvi">
+                        <ref role="37wK5l" to="h1po:2bng37t32Q8" resolve="getResourceBundle" />
+                        <node concept="2OqwBi" id="2bng37t32P9" role="37wK5m">
+                          <node concept="1Q80Hx" id="2bng37t32Pa" role="2Oq$k0" />
+                          <node concept="liA8E" id="2bng37t32Pb" role="2OqNvi">
+                            <ref role="37wK5l" to="srng:~EditorContext.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
                           </node>
                         </node>
                       </node>
-                      <node concept="3TrEf2" id="2bng37t32Pc" role="2OqNvi">
-                        <ref role="3Tt5mk" to="sxyo:vzhXZP_pZt" />
-                      </node>
                     </node>
-                    <node concept="2qgKlT" id="2bng37t32Pd" role="2OqNvi">
-                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                    <node concept="3TrcHB" id="15QjPzrcTHX" role="2OqNvi">
+                      <ref role="3TsBF5" to="sxyo:5Q1XZgMoECH" resolve="baseName" />
                     </node>
                   </node>
                 </node>
@@ -292,7 +289,7 @@
     <ref role="1XX52x" to="tnjx:7Ssz$kY9Uz$" resolve="MultilingualJavaRichString" />
     <node concept="3EZMnI" id="7Ssz$kYbl7G" role="2wV5jI">
       <node concept="1u4HXA" id="7Ssz$kYbl7H" role="3EZMnx">
-        <property role="1ubRXE" value="${i2s.home}/code/languages/com.i2s.common/icons/multi3.png" />
+        <property role="1ubRXE" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.multilingual.common/icons/multi3.png" />
         <property role="1$Qi42" value="4" />
         <node concept="11L4FC" id="7Ssz$kYbl7I" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -351,26 +348,21 @@
             <node concept="3TQlhw" id="7Ssz$kYblEG" role="1Hhtcw">
               <node concept="3clFbS" id="7Ssz$kYblEH" role="2VODD2">
                 <node concept="3clFbF" id="7Ssz$kYblEI" role="3cqZAp">
-                  <node concept="2OqwBi" id="7Ssz$kYblEJ" role="3clFbG">
-                    <node concept="2OqwBi" id="7Ssz$kYblEK" role="2Oq$k0">
-                      <node concept="2OqwBi" id="7Ssz$kYblEL" role="2Oq$k0">
-                        <node concept="pncrf" id="7Ssz$kYblEM" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="7Ssz$kYblEN" role="2OqNvi">
-                          <ref role="37wK5l" to="h1po:2bng37t32Q8" resolve="getResourceBundle" />
-                          <node concept="2OqwBi" id="7Ssz$kYblEO" role="37wK5m">
-                            <node concept="1Q80Hx" id="7Ssz$kYblEP" role="2Oq$k0" />
-                            <node concept="liA8E" id="7Ssz$kYblEQ" role="2OqNvi">
-                              <ref role="37wK5l" to="srng:~EditorContext.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
-                            </node>
+                  <node concept="2OqwBi" id="7Ssz$kYblEK" role="3clFbG">
+                    <node concept="2OqwBi" id="7Ssz$kYblEL" role="2Oq$k0">
+                      <node concept="pncrf" id="7Ssz$kYblEM" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="7Ssz$kYblEN" role="2OqNvi">
+                        <ref role="37wK5l" to="h1po:2bng37t32Q8" resolve="getResourceBundle" />
+                        <node concept="2OqwBi" id="7Ssz$kYblEO" role="37wK5m">
+                          <node concept="1Q80Hx" id="7Ssz$kYblEP" role="2Oq$k0" />
+                          <node concept="liA8E" id="7Ssz$kYblEQ" role="2OqNvi">
+                            <ref role="37wK5l" to="srng:~EditorContext.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
                           </node>
                         </node>
                       </node>
-                      <node concept="3TrEf2" id="7Ssz$kYblER" role="2OqNvi">
-                        <ref role="3Tt5mk" to="sxyo:vzhXZP_pZt" />
-                      </node>
                     </node>
-                    <node concept="2qgKlT" id="7Ssz$kYblES" role="2OqNvi">
-                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                    <node concept="3TrcHB" id="15QjPzrcW_4" role="2OqNvi">
+                      <ref role="3TsBF5" to="sxyo:5Q1XZgMoECH" resolve="baseName" />
                     </node>
                   </node>
                 </node>
@@ -386,6 +378,7 @@
     <property role="3GE5qa" value="richstring" />
     <ref role="1XX52x" to="tnjx:7Ssz$kYeI2V" resolve="MultilingualInlineFormat" />
     <node concept="3EZMnI" id="2UbT3C4el$N" role="2wV5jI">
+      <ref role="1k5W1q" to="qnem:M6L5Huc4Q2" resolve="RichtextRichContent" />
       <node concept="3F0ifn" id="2UbT3C4el$O" role="3EZMnx">
         <property role="3F0ifm" value="%" />
         <node concept="11LMrY" id="2UbT3C4el$P" role="3F10Kt">

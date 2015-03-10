@@ -18,6 +18,7 @@
     <use id="7a07df55-d34f-4938-9dc9-c19fd71bcb69" name="com.mbeddr.mpsutil.tooltip" version="-1" />
     <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="-1" />
     <use id="b33d119e-196d-4497-977c-5c167b21fe33" name="com.mbeddr.mpsutil.framecell" version="-1" />
+    <use id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -42,12 +43,12 @@
     <import index="7hml" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.smodel.action(MPS.Editor/jetbrains.mps.smodel.action@java_stub)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="ag3p" ref="r:4f3facd2-2d6c-40e4-a229-cdeb0a5137d8(com.mbeddr.mpsutil.hyperlink.runtime)" />
+    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="v2t1" ref="f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons/org.apache.commons.lang3@java_stub)" />
     <import index="23h6" ref="r:7141fd54-a831-41ba-8753-74008b0b9af4(de.slisson.mps.richtext.editor)" />
     <import index="nu8v" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" />
     <import index="jsgz" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
     <import index="mv2y" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cellLayout(MPS.Editor/jetbrains.mps.nodeEditor.cellLayout@java_stub)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(java.lang@java_stub)" implicit="true" />
     <import index="epcs" ref="r:b7f325a3-1f57-46bc-8b14-d2d7c5ff6714(com.mbeddr.mpsutil.framecell.editor)" implicit="true" />
     <import index="18rm" ref="r:32e7668a-cc1d-445f-a538-678c22b2fafb(de.slisson.mps.tables.runtime.substitute)" implicit="true" />
     <import index="6dpw" ref="r:ea653f2d-c829-4182-b311-a544ef1f4c1f(de.slisson.mps.tables.runtime.gridmodel)" implicit="true" />
@@ -426,10 +427,9 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="a482b416-d0c9-473f-8f67-725ed642b3f3" name="com.mbeddr.mpsutil.breadcrumb">
-      <concept id="4313262807137635254" name="com.mbeddr.mpsutil.breadcrumb.structure.BreadcrumbEditor" flags="ng" index="2pz08t">
-        <property id="6508908841687149034" name="showIcons" index="12vifL" />
-        <child id="4313262807137944011" name="content" index="2pxOxw" />
+    <language id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor">
+      <concept id="4317384196709001934" name="com.mbeddr.mpsutil.breadcrumb.editor.structure.BreadcrumbEditor" flags="ng" index="1gkWj3">
+        <child id="4317384196709001940" name="content" index="1gkWjp" />
       </concept>
     </language>
     <language id="b33d119e-196d-4497-977c-5c167b21fe33" name="com.mbeddr.mpsutil.framecell">
@@ -579,9 +579,8 @@
   </registry>
   <node concept="24kQdi" id="2TZO3DbuxwR">
     <ref role="1XX52x" to="2c95:2TZO3DbuxwK" resolve="Document" />
-    <node concept="2pz08t" id="1o2NPvZlZon" role="2wV5jI">
-      <property role="12vifL" value="true" />
-      <node concept="3EZMnI" id="2TZO3DbuxwX" role="2pxOxw">
+    <node concept="1gkWj3" id="1o2NPvZlZon" role="2wV5jI">
+      <node concept="3EZMnI" id="2TZO3DbuxwX" role="1gkWjp">
         <node concept="3EZMnI" id="2TZO3Dbuxx1" role="3EZMnx">
           <node concept="l2Vlx" id="2TZO3Dbuxx2" role="2iSdaV" />
           <node concept="PMmxH" id="2A5UqXKanB$" role="3EZMnx">
@@ -4942,9 +4941,8 @@
     <node concept="2aJ2om" id="7Xmh3iUVH1_" role="CpUAK">
       <ref role="2$4xQ3" to="r4b4:7xesQBpJXuT" resolve="presentationMode" />
     </node>
-    <node concept="2pz08t" id="1o2NPvZmN$m" role="2wV5jI">
-      <property role="12vifL" value="true" />
-      <node concept="3EZMnI" id="7Xmh3iUVsXk" role="2pxOxw">
+    <node concept="1gkWj3" id="1o2NPvZmN$m" role="2wV5jI">
+      <node concept="3EZMnI" id="7Xmh3iUVsXk" role="1gkWjp">
         <node concept="2iRkQZ" id="7Xmh3iUVsXI" role="2iSdaV" />
         <node concept="3F2HdR" id="7Xmh3iUVsXW" role="3EZMnx">
           <ref role="1NtTu8" to="2c95:2TZO3Dbv6JU" />

@@ -98,7 +98,6 @@
       </concept>
     </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
-      <concept id="9101132143320200657" name="com.mbeddr.core.udt.structure.SUContent" flags="ng" index="2mccaB" />
       <concept id="7099329415459817973" name="com.mbeddr.core.udt.structure.SUDeclaration" flags="ng" index="HsMI8">
         <child id="7099329415459888018" name="members" index="HszBJ" />
       </concept>
@@ -234,7 +233,6 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
-      <node concept="2mccaB" id="7qmTwOgKez6" role="HszBJ" />
     </node>
     <node concept="2NXPZ9" id="AO_S936VPt" role="N3F5h">
       <property role="TrG5h" value="empty_1352972365074_5" />

@@ -6696,6 +6696,12 @@
             <ref role="3bR37D" node="7eF9rfAuDWl" resolve="com.mbeddr.analyses.utils" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6m6BTo5i$sY" role="3bR37C">
+          <node concept="3bR9La" id="6m6BTo5i$sZ" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:2VC4eVYcuJ9" resolve="com.mbeddr.mpsutil.blutil" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7eF9rfAuDVV" role="2G$12L">
         <property role="BnDLt" value="true" />
