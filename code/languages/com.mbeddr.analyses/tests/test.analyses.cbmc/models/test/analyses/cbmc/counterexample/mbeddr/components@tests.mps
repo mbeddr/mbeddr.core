@@ -946,6 +946,41 @@
               <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
             </node>
           </node>
+          <node concept="38rIoz" id="2UdC0h0QppY" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="Comp5_ml_protFail" />
+            <node concept="3Tqbb2" id="2UdC0h0QpMh" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="2UdC0h0QpMj" role="38rM$J">
+            <property role="38rIoG" value="opId" />
+            <property role="38rMdH" value="1" />
+            <node concept="3Tqbb2" id="2UdC0h0Qq5c" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:3TmmsQkDdTN" resolve="AtomicComponent" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="2UdC0h0Qq5e" role="38rM$J">
+            <property role="38rIoG" value="protId" />
+            <property role="38rMdH" value="0" />
+            <node concept="3Tqbb2" id="2UdC0h0Qqos" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:3TmmsQkDdTN" resolve="AtomicComponent" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="2UdC0h0Qqou" role="38rM$J">
+            <property role="38rIoG" value="loc" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="2UdC0h0Qqs4" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:3TmmsQkDdTN" resolve="AtomicComponent" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="2UdC0h0Qqs6" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="Comp5_ml_protFail" />
+            <node concept="3Tqbb2" id="2UdC0h0QqJ5" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
+            </node>
+          </node>
           <node concept="38rIoz" id="7UyXkgB5zDi" role="38rM$J">
             <property role="38rIoG" value="return" />
             <property role="38rMdH" value="fileStream_read" />
