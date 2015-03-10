@@ -8,6 +8,7 @@
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
+    <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -58,7 +59,9 @@
     <import index="ar19" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.geom(JDK/java.awt.geom@java_stub)" />
     <import index="xei" ref="1338ba73-5059-479b-a929-de86597a62b8/f:java_stub#1338ba73-5059-479b-a929-de86597a62b8#edu.uci.ics.jung.visualization.util(com.mbeddr.mpsutil.jung.pluginSolution/edu.uci.ics.jung.visualization.util@java_stub)" />
     <import index="ln2k" ref="r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung.behavior)" />
+    <import index="qjdu" ref="r:bc752cbf-8d9b-4442-8e26-e5c87b20b897(com.mbeddr.core.base.plugin)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="d2v9" ref="r:5ea030bf-aef8-4a42-aef3-a15339d8236b(com.mbeddr.mpsutil.valuedebugger.structure)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
   </imports>
   <registry>
@@ -401,6 +404,9 @@
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
+    <language id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage">
+      <concept id="2510545900188478754" name="com.mbeddr.mpsutil.multilingual.baseLanguage.structure.MultilingualJavaString" flags="ng" index="3ZQQOj" />
+    </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
         <property id="1167228628751" name="hasException" index="34fQS0" />
@@ -516,6 +522,11 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common">
+      <concept id="2510545900188083931" name="com.mbeddr.mpsutil.multilingual.common.structure.IMessageKeyHolder" flags="ng" index="3ZOmrE">
+        <reference id="2510545900188083932" name="key" index="3ZOmrH" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -8572,8 +8583,8 @@
         </node>
         <node concept="3clFbH" id="4N5UlZS8vuM" role="3cqZAp" />
         <node concept="3cpWs6" id="4N5UlZS8v$l" role="3cqZAp">
-          <node concept="Xl_RD" id="4N5UlZS8wuD" role="3cqZAk">
-            <property role="Xl_RC" value="(no value source)" />
+          <node concept="3ZQQOj" id="7Hbe8h6SDKK" role="3cqZAk">
+            <ref role="3ZOmrH" to="qjdu:7Hbe8h6SB0B" resolve="noValueSource" />
           </node>
         </node>
       </node>
@@ -8663,7 +8674,7 @@
               </node>
               <node concept="2Rf3mk" id="$bJ0jgQ84k" role="2OqNvi">
                 <node concept="1xMEDy" id="$bJ0jgQ84l" role="1xVPHs">
-                  <node concept="chp4Y" id="$bJ0jgQ84m" role="ri$Ld">
+                  <node concept="chp4Y" id="7Hbe8h6Sr5W" role="ri$Ld">
                     <ref role="cht4Q" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
                   </node>
                 </node>
@@ -9082,7 +9093,7 @@
       <node concept="37vLTG" id="$bJ0jgS5NT" role="3clF46">
         <property role="TrG5h" value="debuggable" />
         <node concept="3Tqbb2" id="$bJ0jgS5NS" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
+          <ref role="ehGHo" to="d2v9:7Hbe8h6OsMm" resolve="IValueDebuggable" />
         </node>
       </node>
     </node>
@@ -9095,7 +9106,7 @@
       <node concept="37vLTG" id="EWig$gxRIK" role="3clF46">
         <property role="TrG5h" value="debuggable" />
         <node concept="3Tqbb2" id="EWig$gxRIJ" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
+          <ref role="ehGHo" to="d2v9:7Hbe8h6OsMm" resolve="IValueDebuggable" />
         </node>
       </node>
     </node>
@@ -9104,7 +9115,7 @@
       <property role="TrG5h" value="listAvailableKeys" />
       <node concept="A3Dl8" id="EWig$j3As4" role="3clF45">
         <node concept="3Tqbb2" id="EWig$j3As6" role="A3Ik2">
-          <ref role="ehGHo" to="vs0r:1PjfO$y0eiY" resolve="DebugKey" />
+          <ref role="ehGHo" to="d2v9:7Hbe8h6OsMk" resolve="DebugKey" />
         </node>
       </node>
       <node concept="3Tm1VV" id="EWig$gxRSJ" role="1B3o_S" />
@@ -9112,7 +9123,7 @@
       <node concept="37vLTG" id="EWig$gxSfH" role="3clF46">
         <property role="TrG5h" value="debuggable" />
         <node concept="3Tqbb2" id="EWig$gxSfG" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
+          <ref role="ehGHo" to="d2v9:7Hbe8h6OsMm" resolve="IValueDebuggable" />
         </node>
       </node>
     </node>
@@ -9125,13 +9136,13 @@
       <node concept="37vLTG" id="EWig$gxTnY" role="3clF46">
         <property role="TrG5h" value="debuggable" />
         <node concept="3Tqbb2" id="EWig$gxTnX" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
+          <ref role="ehGHo" to="d2v9:7Hbe8h6OsMm" resolve="IValueDebuggable" />
         </node>
       </node>
       <node concept="37vLTG" id="EWig$gxTt4" role="3clF46">
         <property role="TrG5h" value="key" />
         <node concept="3Tqbb2" id="EWig$h4xkp" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:1PjfO$y0eiY" resolve="DebugKey" />
+          <ref role="ehGHo" to="d2v9:7Hbe8h6OsMk" resolve="DebugKey" />
         </node>
       </node>
     </node>
@@ -9139,14 +9150,14 @@
       <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getKey" />
       <node concept="3Tqbb2" id="2BbcAuIdFxK" role="3clF45">
-        <ref role="ehGHo" to="vs0r:1PjfO$y0eiY" resolve="DebugKey" />
+        <ref role="ehGHo" to="d2v9:7Hbe8h6OsMk" resolve="DebugKey" />
       </node>
       <node concept="3Tm1VV" id="2BbcAuIdB6O" role="1B3o_S" />
       <node concept="3clFbS" id="2BbcAuIdB6P" role="3clF47" />
       <node concept="37vLTG" id="2BbcAuIdFzS" role="3clF46">
         <property role="TrG5h" value="debuggable" />
         <node concept="3Tqbb2" id="2BbcAuIdFzR" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
+          <ref role="ehGHo" to="d2v9:7Hbe8h6OsMm" resolve="IValueDebuggable" />
         </node>
       </node>
     </node>
@@ -9204,7 +9215,7 @@
               <node concept="13iPFW" id="$bJ0jh_6yd" role="2Oq$k0" />
               <node concept="2Rf3mk" id="$bJ0jh_7cx" role="2OqNvi">
                 <node concept="1xMEDy" id="$bJ0jh_7cz" role="1xVPHs">
-                  <node concept="chp4Y" id="$bJ0jh_7g6" role="ri$Ld">
+                  <node concept="chp4Y" id="7Hbe8h6S_qJ" role="ri$Ld">
                     <ref role="cht4Q" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
                   </node>
                 </node>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="c2788093-51e8-4cfe-943b-eefd5ff309ff/r:57c6e005-9b69-4d41-a9d6-190f5964c5d7(com.mbeddr.mpsutil.httpserver/com.mbeddr.mpsutil.httpserver.plugin)">
+<model ref="r:57c6e005-9b69-4d41-a9d6-190f5964c5d7(com.mbeddr.mpsutil.httpserver.plugin)">
   <persistence version="9" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
@@ -10,16 +10,16 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="vkwc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.concurrent.locks(JDK/java.util.concurrent.locks@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="vkwc" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.concurrent.locks(JDK/java.util.concurrent.locks@java_stub)" />
+    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="znf8" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/r:139b3778-ac9f-4ca9-a48f-e685c023e800(com.mbeddr.mpsutil.httpsupport.rt/com.mbeddr.mpsutil.httpsupport.rt.model)" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
-    <import index="m87u" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#javax.servlet.http(com.mbeddr.mpsutil.httpsupport.rt/javax.servlet.http@java_stub)" />
-    <import index="1hkh" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#org.eclipse.jetty.server.handler(com.mbeddr.mpsutil.httpsupport.rt/org.eclipse.jetty.server.handler@java_stub)" />
-    <import index="xmho" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#javax.servlet(com.mbeddr.mpsutil.httpsupport.rt/javax.servlet@java_stub)" />
-    <import index="tp05" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#org.eclipse.jetty.server(com.mbeddr.mpsutil.httpsupport.rt/org.eclipse.jetty.server@java_stub)" />
+    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="m87u" ref="f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#javax.servlet.http(com.mbeddr.mpsutil.httpsupport.rt/javax.servlet.http@java_stub)" />
+    <import index="1hkh" ref="f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#org.eclipse.jetty.server.handler(com.mbeddr.mpsutil.httpsupport.rt/org.eclipse.jetty.server.handler@java_stub)" />
+    <import index="xmho" ref="f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#javax.servlet(com.mbeddr.mpsutil.httpsupport.rt/javax.servlet@java_stub)" />
+    <import index="tp05" ref="f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#org.eclipse.jetty.server(com.mbeddr.mpsutil.httpsupport.rt/org.eclipse.jetty.server@java_stub)" />
+    <import index="r85u" ref="r:1bdd2911-4cda-43fc-8696-c8fb6475ff04(com.mbeddr.mpsutil.httpsupport.rt.plugin)" />
     <import index="22fg" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.net(JDK/java.net@java_stub)" />
-    <import index="r85u" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/r:1bdd2911-4cda-43fc-8696-c8fb6475ff04(com.mbeddr.mpsutil.httpsupport.rt/com.mbeddr.mpsutil.httpsupport.rt.plugin)" />
     <import index="vtsz" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#org.eclipse.jetty.util.component(com.mbeddr.mpsutil.httpsupport.rt/org.eclipse.jetty.util.component@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -343,6 +343,15 @@
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="2N1CSrznbV9" role="3clF47">
         <node concept="2GUZhq" id="2DnVhjrEKyi" role="3cqZAp">
+          <node concept="TDmWw" id="42PEbb2EW2f" role="TEXxN">
+            <node concept="3clFbS" id="42PEbb2EW2g" role="TDEfX" />
+            <node concept="3cpWsn" id="42PEbb2EW2h" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="42PEbb2EW2i" role="1tU5fm">
+                <ref role="3uigEE" to="e2lb:~InterruptedException" resolve="InterruptedException" />
+              </node>
+            </node>
+          </node>
           <node concept="3clFbS" id="2DnVhjrEKyk" role="2GV8ay">
             <node concept="3clFbF" id="2DnVhjrELbC" role="3cqZAp">
               <node concept="2OqwBi" id="2DnVhjrELhk" role="3clFbG">
@@ -608,15 +617,6 @@
                 <node concept="liA8E" id="2DnVhjrEPNC" role="2OqNvi">
                   <ref role="37wK5l" to="vkwc:~Lock.unlock():void" resolve="unlock" />
                 </node>
-              </node>
-            </node>
-          </node>
-          <node concept="TDmWw" id="42PEbb2EW2f" role="TEXxN">
-            <node concept="3clFbS" id="42PEbb2EW2g" role="TDEfX" />
-            <node concept="3cpWsn" id="42PEbb2EW2h" role="TDEfY">
-              <property role="TrG5h" value="e" />
-              <node concept="3uibUv" id="42PEbb2EW2i" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~InterruptedException" resolve="InterruptedException" />
               </node>
             </node>
           </node>
@@ -1877,40 +1877,6 @@
     <node concept="2tJIrI" id="7hHer08dZ8m" role="jymVt" />
     <node concept="3Tm1VV" id="7hHer08dZ2Q" role="1B3o_S" />
   </node>
-  <node concept="312cEu" id="3vXSZsAQhaQ">
-    <property role="TrG5h" value="MpsHttpServerConfigChangeListener" />
-    <node concept="3Tm1VV" id="3vXSZsAQhaR" role="1B3o_S" />
-    <node concept="3uibUv" id="24HfET2riFS" role="EKbjA">
-      <ref role="3uigEE" to="r85u:3vXSZsAPOG0" resolve="IHttpServerConfigChangeListener" />
-    </node>
-    <node concept="3clFb_" id="24HfET2riG7" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="serverChanged" />
-      <node concept="3cqZAl" id="24HfET2riG8" role="3clF45" />
-      <node concept="3Tm1VV" id="24HfET2riG9" role="1B3o_S" />
-      <node concept="37vLTG" id="24HfET2riGb" role="3clF46">
-        <property role="TrG5h" value="serverInfo" />
-        <node concept="3uibUv" id="24HfET2riGc" role="1tU5fm">
-          <ref role="3uigEE" to="r85u:3vXSZsAPOLr" resolve="HttpServerConfig" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="24HfET2riGd" role="3clF47">
-        <node concept="3clFbF" id="24HfET2rnir" role="3cqZAp">
-          <node concept="2YIFZM" id="24HfET2rniU" role="3clFbG">
-            <ref role="37wK5l" node="3vXSZsAOFhQ" resolve="updateServerStatus" />
-            <ref role="1Pybhc" node="3ZjlwXBExfQ" resolve="ServerUtil" />
-            <node concept="37vLTw" id="24HfET2rqqz" role="37wK5m">
-              <ref role="3cqZAo" node="24HfET2riGb" resolve="serverInfo" />
-            </node>
-            <node concept="2YIFZM" id="24HfET2rnbD" role="37wK5m">
-              <ref role="37wK5l" node="3vXSZsAMCPD" resolve="getInstance" />
-              <ref role="1Pybhc" node="7hHer08dZ2P" resolve="MPSHttpServerWrapper" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="vrV6s" id="3vXSZsAQh66">
     <ref role="vrV6t" to="r85u:3vXSZsAPOKf" resolve="HttpServerConfigChangeListener" />
     <node concept="20Xmnq" id="24HfET2tWOz" role="20Xmmv">
@@ -1951,6 +1917,40 @@
             <node concept="10Nm6u" id="24HfET2uo3a" role="37vLTx" />
             <node concept="20Xmnt" id="24HfET2uo0l" role="37vLTJ">
               <ref role="20Xmns" node="24HfET2tWOz" resolve="listener" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="3vXSZsAQhaQ">
+    <property role="TrG5h" value="MpsHttpServerConfigChangeListener" />
+    <node concept="3Tm1VV" id="3vXSZsAQhaR" role="1B3o_S" />
+    <node concept="3uibUv" id="24HfET2riFS" role="EKbjA">
+      <ref role="3uigEE" to="r85u:3vXSZsAPOG0" resolve="IHttpServerConfigChangeListener" />
+    </node>
+    <node concept="3clFb_" id="24HfET2riG7" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="serverChanged" />
+      <node concept="3cqZAl" id="24HfET2riG8" role="3clF45" />
+      <node concept="3Tm1VV" id="24HfET2riG9" role="1B3o_S" />
+      <node concept="37vLTG" id="24HfET2riGb" role="3clF46">
+        <property role="TrG5h" value="serverInfo" />
+        <node concept="3uibUv" id="24HfET2riGc" role="1tU5fm">
+          <ref role="3uigEE" to="r85u:3vXSZsAPOLr" resolve="HttpServerConfig" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="24HfET2riGd" role="3clF47">
+        <node concept="3clFbF" id="24HfET2rnir" role="3cqZAp">
+          <node concept="2YIFZM" id="24HfET2rniU" role="3clFbG">
+            <ref role="37wK5l" node="3vXSZsAOFhQ" resolve="updateServerStatus" />
+            <ref role="1Pybhc" node="3ZjlwXBExfQ" resolve="ServerUtil" />
+            <node concept="37vLTw" id="24HfET2rqqz" role="37wK5m">
+              <ref role="3cqZAo" node="24HfET2riGb" resolve="serverInfo" />
+            </node>
+            <node concept="2YIFZM" id="24HfET2rnbD" role="37wK5m">
+              <ref role="37wK5l" node="3vXSZsAMCPD" resolve="getInstance" />
+              <ref role="1Pybhc" node="7hHer08dZ2P" resolve="MPSHttpServerWrapper" />
             </node>
           </node>
         </node>

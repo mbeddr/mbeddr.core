@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="398042e9-b575-4f91-8b67-c183f10af03e/r:1c327561-f4e5-4a84-aca2-0b44bd8b1559(com.mbeddr.mpsutil.multilingual.settings.runtime/com.mbeddr.mpsutil.multilingual.settings.runtime.plugin)">
+<model ref="r:1c327561-f4e5-4a84-aca2-0b44bd8b1559(com.mbeddr.mpsutil.multilingual.settings.runtime.plugin)">
   <persistence version="9" />
   <languages>
     <use id="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265" name="com.mbeddr.mpsutil.preferenceform" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
@@ -10,16 +11,16 @@
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="-1" />
   </languages>
   <imports>
-    <import index="fw73" ref="eedc5a6f-c2e8-4009-a7ab-5fc307bf77ec/r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime/com.mbeddr.mpsutil.multilingual.common.runtime.plugin)" />
-    <import index="sxyo" ref="23f985f2-965f-4af1-aee8-a32677429514/r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common/com.mbeddr.mpsutil.multilingual.common.structure)" />
-    <import index="rh18" ref="32addf6f-1f14-40cb-991d-e0fddb7506c1/r:7c73bcc0-050a-46cb-bba5-d10598f1b9f2(com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="5rbz" ref="c038e2c4-0a5f-47e2-a3e8-327c1084f6a1/r:86fa5f44-7382-488b-81e3-2a8da8e2ebdd(com.mbeddr.mpsutil.multilingual.concept.runtime/com.mbeddr.mpsutil.multilingual.concept.runtime.plugin)" />
-    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="sv0f" ref="23f985f2-965f-4af1-aee8-a32677429514/r:28cd7e84-4784-462c-804c-1dae92004ef9(com.mbeddr.mpsutil.multilingual.common/com.mbeddr.mpsutil.multilingual.common.languageRegistry)" implicit="true" />
+    <import index="fw73" ref="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)" />
+    <import index="sxyo" ref="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" />
+    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="5rbz" ref="r:86fa5f44-7382-488b-81e3-2a8da8e2ebdd(com.mbeddr.mpsutil.multilingual.concept.runtime.plugin)" />
+    <import index="nmul" ref="r:66872b3a-f5a9-4cb1-9f58-291bcf0918fd(com.mbeddr.mpsutil.preferenceform.rt)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="sv0f" ref="r:28cd7e84-4784-462c-804c-1dae92004ef9(com.mbeddr.mpsutil.multilingual.common.languageRegistry)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -123,6 +124,9 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage">
+      <concept id="2510545900188478754" name="com.mbeddr.mpsutil.multilingual.baseLanguage.structure.MultilingualJavaString" flags="ng" index="3ZQQOj" />
+    </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
       <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
@@ -148,6 +152,19 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common">
+      <concept id="568377005202317274" name="com.mbeddr.mpsutil.multilingual.common.structure.ResourceBundle" flags="ng" index="3MtHw5">
+        <property id="6737939145712380461" name="baseName" index="1JSPRp" />
+        <child id="568377005202317276" name="keys" index="3MtHw3" />
+      </concept>
+      <concept id="568377005202317270" name="com.mbeddr.mpsutil.multilingual.common.structure.MessageKey" flags="ng" index="3MtHw9">
+        <property id="568377005202317272" name="default" index="3MtHw7" />
+        <property id="568377005202317271" name="technicalKey" index="3MtHw8" />
+      </concept>
+      <concept id="2510545900188083931" name="com.mbeddr.mpsutil.multilingual.common.structure.IMessageKeyHolder" flags="ng" index="3ZOmrE">
+        <reference id="2510545900188083932" name="key" index="3ZOmrH" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
@@ -170,7 +187,7 @@
         <child id="145956936283569518" name="properties" index="1DEjpx" />
       </concept>
       <concept id="145956936284064811" name="com.mbeddr.mpsutil.preferenceform.structure.AbstractPreferenceFormProperty" flags="ng" index="1DGss$">
-        <property id="145956936284103527" name="label" index="1DGmxC" />
+        <child id="8884256830696181817" name="label" index="XGeyX" />
       </concept>
       <concept id="145956936284219644" name="com.mbeddr.mpsutil.preferenceform.structure.CheckBoxPreferenceFormProperty" flags="ng" index="1DJMfN">
         <property id="145956936284219645" name="defaultValue" index="1DJMfM" />
@@ -183,22 +200,25 @@
     <property role="3NeIjD" value="0" />
     <node concept="1DJMfN" id="1FptJtanBDD" role="1DEjpx">
       <property role="TrG5h" value="showTranslations" />
-      <property role="1DGmxC" value="Show Translations Globally" />
       <node concept="10P_77" id="1FptJtanBDE" role="1tU5fm" />
       <node concept="3clFbT" id="1FptJtanBDF" role="33vP2m" />
+      <node concept="3ZQQOj" id="4bsUQfPNRL9" role="XGeyX">
+        <ref role="3ZOmrH" node="7Hbe8h755mL" resolve="ShowTranslationsGlobally" />
+      </node>
     </node>
     <node concept="1DJMfN" id="77gEP6zfKhn" role="1DEjpx">
       <property role="TrG5h" value="showTranslationsIntentionEnabled" />
-      <property role="1DGmxC" value="Enable &quot;Show Translations&quot; Intention" />
       <property role="1DJMfM" value="true" />
       <node concept="10P_77" id="77gEP6zfKho" role="1tU5fm" />
       <node concept="3clFbT" id="77gEP6zfKkI" role="33vP2m">
         <property role="3clFbU" value="true" />
       </node>
+      <node concept="3ZQQOj" id="4bsUQfPNS7C" role="XGeyX">
+        <ref role="3ZOmrH" node="7Hbe8h755_I" resolve="EnableShowTranslationsIntention" />
+      </node>
     </node>
     <node concept="3i_9Kd" id="77gEP6zkhUH" role="1DEjpx">
       <property role="TrG5h" value="currentLanguage" />
-      <property role="1DGmxC" value="Current Language" />
       <node concept="17QB3L" id="77gEP6zkhUI" role="1tU5fm" />
       <node concept="Xl_RD" id="77gEP6zkhUJ" role="33vP2m">
         <property role="Xl_RC" value="" />
@@ -222,7 +242,7 @@
                       <node concept="3clFbF" id="77gEP6zwbyV" role="3cqZAp">
                         <node concept="2ShNRf" id="77gEP6zwbyR" role="3clFbG">
                           <node concept="1pGfFk" id="77gEP6zwcdJ" role="2ShVmc">
-                            <ref role="37wK5l" to="rh18:77gEP6zuqKc" resolve="DynamicComboBoxEntry" />
+                            <ref role="37wK5l" to="nmul:15E$Thfi1SJ" resolve="DynamicComboBoxEntry" />
                             <node concept="3cpWs3" id="77gEP6zkCAf" role="37wK5m">
                               <node concept="2OqwBi" id="77gEP6zkDqO" role="3uHU7w">
                                 <node concept="37vLTw" id="77gEP6zkCB2" role="2Oq$k0">
@@ -315,6 +335,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3ZQQOj" id="4bsUQfPNSJK" role="XGeyX">
+        <ref role="3ZOmrH" node="7Hbe8h756ko" resolve="CurrentLanguage" />
       </node>
     </node>
     <node concept="3xWZ$M" id="77gEP6zxh56" role="3xXVxh">
@@ -498,10 +521,10 @@
               </node>
             </node>
             <node concept="2OqwBi" id="1FptJtanMir" role="37vLTJ">
-              <node concept="2WthIp" id="1FptJtanMgc" role="2Oq$k0" />
               <node concept="1DZHhv" id="3CcRIE6J_Kx" role="2OqNvi">
                 <ref role="2WH_rO" node="77gEP6zfKhn" resolve="showTranslationsIntentionEnabled" />
               </node>
+              <node concept="2WthIp" id="1FptJtanMgc" role="2Oq$k0" />
             </node>
           </node>
         </node>
@@ -563,6 +586,25 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="3MtHw5" id="7Hbe8h755mu">
+    <property role="TrG5h" value="ShowTranslationsResourceBundle" />
+    <property role="1JSPRp" value="com.mbeddr.mpsutil.multilingual.settings.runtime.resource" />
+    <node concept="3MtHw9" id="7Hbe8h755mL" role="3MtHw3">
+      <property role="3MtHw8" value=" " />
+      <property role="TrG5h" value="ShowTranslationsGlobally" />
+      <property role="3MtHw7" value="Show Translations Globally" />
+    </node>
+    <node concept="3MtHw9" id="7Hbe8h755_I" role="3MtHw3">
+      <property role="3MtHw8" value=" " />
+      <property role="TrG5h" value="EnableShowTranslationsIntention" />
+      <property role="3MtHw7" value="Enable &quot;Show Translations&quot; Intention" />
+    </node>
+    <node concept="3MtHw9" id="7Hbe8h756ko" role="3MtHw3">
+      <property role="3MtHw8" value=" " />
+      <property role="TrG5h" value="CurrentLanguage" />
+      <property role="3MtHw7" value="Current Language" />
     </node>
   </node>
 </model>

@@ -1692,12 +1692,12 @@
       </node>
     </node>
   </node>
-  <node concept="PlHQZ" id="5hYHEwZIii2">
-    <property role="TrG5h" value="IComponentIDAware" />
-  </node>
   <node concept="PlHQZ" id="5hYHEwZAyxP">
     <property role="3GE5qa" value="comp.instances" />
     <property role="TrG5h" value="IComponentInstanceAware" />
+  </node>
+  <node concept="PlHQZ" id="5hYHEwZIii2">
+    <property role="TrG5h" value="IComponentIDAware" />
   </node>
   <node concept="PlHQZ" id="7DNX50_2aso">
     <property role="TrG5h" value="IComponentWatchableResolver" />

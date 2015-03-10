@@ -61,7 +61,6 @@
   <node concept="1TIwiD" id="5BkFC2ygHaJ">
     <property role="TrG5h" value="AnalysisConfiguration" />
     <property role="3GE5qa" value="configuration.base" />
-    <property role="19KtqR" value="true" />
     <property role="MwhBj" value="${module}/icons/analysisconfig.png" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="1TJgyj" id="v5nKjVRoOX" role="1TKVEi">
