@@ -7,7 +7,6 @@
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">f44f6b9a-bf30-4f73-866e-fac17c177409(com.mbeddr.doc.gen_latex)</dependency>
     <dependency reexport="false">d2a1d976-43a2-462f-ac3a-9b258ced839d(com.mbeddr.mpsutil.multilingual.baseLanguage)</dependency>
     <dependency reexport="false">23f985f2-965f-4af1-aee8-a32677429514(com.mbeddr.mpsutil.multilingual.common)</dependency>
     <dependency reexport="false">d0fe2e60-9f9c-4d3c-94aa-de9257b67a6d(com.mbeddr.mpsutil.multilingual.concept)</dependency>
@@ -18,7 +17,6 @@
     <usedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</usedLanguage>
     <usedLanguage>2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)</usedLanguage>
     <usedLanguage>f44f6b9a-bf30-4f73-866e-fac17c177409(com.mbeddr.doc.gen_latex)</usedLanguage>
-    <usedLanguage>f8f68d92-c6d2-44b3-8d63-c00ade75ec86(com.mbeddr.doc.latex)</usedLanguage>
     <usedLanguage>e06345c7-da82-4f8b-bd44-1425fe158640(com.mbeddr.doc.meta)</usedLanguage>
     <usedLanguage>d2a1d976-43a2-462f-ac3a-9b258ced839d(com.mbeddr.mpsutil.multilingual.baseLanguage)</usedLanguage>
     <usedLanguage>d0fe2e60-9f9c-4d3c-94aa-de9257b67a6d(com.mbeddr.mpsutil.multilingual.concept)</usedLanguage>
