@@ -65,7 +65,7 @@
           <property name="text" nameId="tpc2.1073389577007" value="show SectionIndex icons:" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4317384196709571265" nodeInfo="ng">
-          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="yv4j.4317384196709001935" resolveInfo="showBreadcrumbIcons" />
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="yv4j.4317384196709001936" resolveInfo="showSectionIndexIcons" />
         </node>
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="4317384196709571266" nodeInfo="nn" />
       </node>
