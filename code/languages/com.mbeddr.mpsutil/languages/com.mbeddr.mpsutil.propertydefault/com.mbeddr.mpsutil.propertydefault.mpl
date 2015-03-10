@@ -16,6 +16,9 @@
       <external-templates>
         <generator generatorUID="e00b808b-8cda-4cba-becc-a390490358b1(jetbrains.mps.lang.constraints#1147476727047)" />
       </external-templates>
+      <dependencies>
+        <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+      </dependencies>
       <usedLanguages>
         <usedLanguage>3f41734b-72c3-42c8-b22c-bacd5a878e17(com.mbeddr.mpsutil.propertydefault)</usedLanguage>
         <usedLanguage>3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)</usedLanguage>
