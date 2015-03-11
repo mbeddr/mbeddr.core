@@ -968,6 +968,9 @@
     <node concept="PrWs8" id="58M63C2eomB" role="PzmwI">
       <ref role="PrY4T" node="IviauXabd" resolve="IMbeddrIDERoot" />
     </node>
+    <node concept="PrWs8" id="6iaOvgbfH65" role="PzmwI">
+      <ref role="PrY4T" node="3Y7ywckEJZi" resolve="IKeepAliveInGeneration" />
+    </node>
   </node>
   <node concept="1TIwiD" id="K292flwCEW">
     <property role="3GE5qa" value="assessment" />
