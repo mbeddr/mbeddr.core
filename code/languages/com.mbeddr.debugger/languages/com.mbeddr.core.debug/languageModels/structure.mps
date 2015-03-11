@@ -25,7 +25,7 @@
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
         <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS" />
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -181,13 +181,17 @@
     <node concept="2tJIrI" id="1brT1d_Fqab" role="jymVt" />
     <node concept="3Tm1VV" id="1brT1d_Fq9J" role="1B3o_S" />
   </node>
+  <node concept="PlHQZ" id="7v8$3Aj2hNr">
+    <property role="3GE5qa" value="callstack" />
+    <property role="TrG5h" value="IStackFrameInjector" />
+  </node>
   <node concept="PlHQZ" id="7v8$3Aj2hMM">
     <property role="3GE5qa" value="callstack" />
     <property role="TrG5h" value="IInjectStackFrameDelegatee" />
   </node>
-  <node concept="PlHQZ" id="7v8$3Aj2hNr">
+  <node concept="PlHQZ" id="7BzY1RqMheT">
     <property role="3GE5qa" value="callstack" />
-    <property role="TrG5h" value="IStackFrameInjector" />
+    <property role="TrG5h" value="ICanBeInlined" />
   </node>
 </model>
 
