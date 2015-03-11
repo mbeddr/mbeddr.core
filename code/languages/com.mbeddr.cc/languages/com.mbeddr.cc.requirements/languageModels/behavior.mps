@@ -338,6 +338,12 @@
       <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
         <reference id="1219352800908" name="referentNode" index="3B5MYn" />
       </concept>
+      <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
+        <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
+      </concept>
+      <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
+        <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
+      </concept>
       <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
@@ -8049,6 +8055,53 @@
                         <ref role="2pJxcJ" to="iuxj:5M4a$b5jfOw" resolve="text" />
                         <node concept="37vLTw" id="30hqvrszuly" role="2pJxcZ">
                           <ref role="3cqZAo" node="30hqvrszsOn" resolve="targetName" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2pIpSj" id="5wChliB04Wq" role="2pJxcM">
+                <ref role="2pIpSl" to="iuxj:5M4a$b5iL2P" />
+                <node concept="2pJPED" id="5wChliB04Wr" role="2pJxcZ">
+                  <ref role="2pJxaS" to="iuxj:5M4a$b5iSRN" resolve="XmlAttribute" />
+                  <node concept="2pJxcG" id="5wChliB04Ws" role="2pJxcM">
+                    <ref role="2pJxcJ" to="iuxj:5M4a$b5iSRQ" resolve="attrName" />
+                    <node concept="Xl_RD" id="5wChliB04Wt" role="2pJxcZ">
+                      <property role="Xl_RC" value="kind" />
+                    </node>
+                  </node>
+                  <node concept="2pIpSj" id="5wChliB04Wu" role="2pJxcM">
+                    <ref role="2pIpSl" to="iuxj:5M4a$b5jfOu" />
+                    <node concept="2pJPED" id="5wChliB04Wv" role="2pJxcZ">
+                      <ref role="2pJxaS" to="iuxj:5M4a$b5jfOv" resolve="XmlTextValue" />
+                      <node concept="2pJxcG" id="5wChliB04Ww" role="2pJxcM">
+                        <ref role="2pJxcJ" to="iuxj:5M4a$b5jfOw" resolve="text" />
+                        <node concept="2OqwBi" id="44jZT9p0LqU" role="2pJxcZ">
+                          <node concept="2OqwBi" id="44jZT9p0LqV" role="2Oq$k0">
+                            <node concept="2OqwBi" id="44jZT9p0LqW" role="2Oq$k0">
+                              <node concept="2OqwBi" id="44jZT9p0LqX" role="2Oq$k0">
+                                <node concept="2OqwBi" id="44jZT9p0LqY" role="2Oq$k0">
+                                  <node concept="13iPFW" id="5wChliB09rm" role="2Oq$k0" />
+                                  <node concept="3TrEf2" id="44jZT9p0Lr0" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="75wo:26F1Swi7Xxb" />
+                                  </node>
+                                </node>
+                                <node concept="3CFZ6_" id="44jZT9p0Lr1" role="2OqNvi">
+                                  <node concept="3CFYIy" id="44jZT9p0Lr2" role="3CFYIz">
+                                    <ref role="3CFYIx" to="26ao:opE5jFg8Hy" resolve="TraceAnnotation" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3TrEf2" id="44jZT9p0Lr3" role="2OqNvi">
+                                <ref role="3Tt5mk" to="26ao:3Y7ywckFJXc" />
+                              </node>
+                            </node>
+                            <node concept="3NT_Vc" id="44jZT9p0Lr4" role="2OqNvi" />
+                          </node>
+                          <node concept="3TrcHB" id="44jZT9p0Lr5" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpce:4qF2Hm2r7ja" resolve="conceptAlias" />
+                          </node>
                         </node>
                       </node>
                     </node>
