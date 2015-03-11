@@ -14,10 +14,12 @@
         </modelRoot>
       </models>
       <external-templates>
+        <generator generatorUID="77f315e4-31be-49f7-a1bb-218419195048(com.mbeddr.mpsutil.multilingual.common#568377005202254018)" />
         <generator generatorUID="985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)" />
       </external-templates>
       <dependencies>
         <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+        <dependency reexport="true">eedc5a6f-c2e8-4009-a7ab-5fc307bf77ec(com.mbeddr.mpsutil.multilingual.common.runtime)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>d2a1d976-43a2-462f-ac3a-9b258ced839d(com.mbeddr.mpsutil.multilingual.baseLanguage)</usedLanguage>
@@ -59,6 +61,20 @@
             <generator generatorUID="985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)" />
             <external-mapping>
               <mapping-node modelUID="985c8c6a-64b4-486d-a91e-7d4112742556/r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage#1129914002933/jetbrains.mps.baseLanguage.generator.java.main@generator)" nodeID="1201381967720" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="after_or_together">
+          <greater-priority-mapping>
+            <generator generatorUID="724a9774-bebb-4a70-8fbf-9391460d9f80(com.mbeddr.mpsutil.multilingual.baseLanguage#568377005202250215)" />
+            <external-mapping>
+              <mapping-node modelUID="r:f3d498a3-6145-4984-ae75-fbefc2ecb27b(com.mbeddr.mpsutil.multilingual.baseLanguage.generator.template.main@generator)" nodeID="2510545900188531570" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="77f315e4-31be-49f7-a1bb-218419195048(com.mbeddr.mpsutil.multilingual.common#568377005202254018)" />
+            <external-mapping>
+              <mapping-node modelUID="r:c786bea3-0279-4249-85d3-b8ac44fb5e9a(com.mbeddr.mpsutil.multilingual.common.generator.template.main@generator)" nodeID="568377005202254019" />
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>

@@ -6,7 +6,7 @@
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
     <use id="a482b416-d0c9-473f-8f67-725ed642b3f3" name="com.mbeddr.mpsutil.breadcrumb" version="-1" />
-    <use id="7a07df55-d34f-4938-9dc9-c19fd71bcb69" name="com.mbeddr.mpsutil.tooltip" version="0" />
+    <use id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -309,10 +309,9 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="a482b416-d0c9-473f-8f67-725ed642b3f3" name="com.mbeddr.mpsutil.breadcrumb">
-      <concept id="4313262807137635254" name="com.mbeddr.mpsutil.breadcrumb.structure.BreadcrumbEditor" flags="ng" index="2pz08t">
-        <property id="6508908841687149034" name="showIcons" index="12vifL" />
-        <child id="4313262807137944011" name="content" index="2pxOxw" />
+    <language id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor">
+      <concept id="4317384196709001934" name="com.mbeddr.mpsutil.breadcrumb.editor.structure.BreadcrumbEditor" flags="ng" index="1gkWj3">
+        <child id="4317384196709001940" name="content" index="1gkWjp" />
       </concept>
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
@@ -410,9 +409,8 @@
   </registry>
   <node concept="24kQdi" id="5_l8w1EmTdB">
     <ref role="1XX52x" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
-    <node concept="2pz08t" id="1Ga0ybhmrnn" role="2wV5jI">
-      <property role="12vifL" value="true" />
-      <node concept="3EZMnI" id="5_l8w1EmTdD" role="2pxOxw">
+    <node concept="1gkWj3" id="1Ga0ybhmrnn" role="2wV5jI">
+      <node concept="3EZMnI" id="5_l8w1EmTdD" role="1gkWjp">
         <property role="S$Qs1" value="true" />
         <node concept="3EZMnI" id="3r83Ks0g9P$" role="3EZMnx">
           <node concept="VPM3Z" id="3r83Ks0g9P_" role="3F10Kt">
@@ -1666,9 +1664,8 @@
   <node concept="24kQdi" id="2fRKXKiDTpp">
     <property role="3GE5qa" value="external" />
     <ref role="1XX52x" to="x27k:5jyom5fOqJ1" resolve="ExternalModule" />
-    <node concept="2pz08t" id="5awSL8fPS15" role="2wV5jI">
-      <property role="12vifL" value="true" />
-      <node concept="3EZMnI" id="RQmJfdBvLq" role="2pxOxw">
+    <node concept="1gkWj3" id="5awSL8fPS15" role="2wV5jI">
+      <node concept="3EZMnI" id="RQmJfdBvLq" role="1gkWjp">
         <node concept="3EZMnI" id="3r83Ks0gvdN" role="3EZMnx">
           <node concept="VPM3Z" id="3r83Ks0gvdO" role="3F10Kt">
             <property role="VOm3f" value="false" />

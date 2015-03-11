@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="442d3b7d-fe4a-4293-a7c1-6744d440ecaa/r:f7af3984-a112-4e63-b8bb-3a0771bf3a31(com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.typesystem)">
+<model ref="r:f7af3984-a112-4e63-b8bb-3a0771bf3a31(com.mbeddr.mpsutil.richstring.typesystem)">
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="tpee" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.structure)" />
-    <import index="ua2a" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.typesystem.inference(MPS.Core/jetbrains.mps.typesystem.inference@java_stub)" />
-    <import index="spci" ref="442d3b7d-fe4a-4293-a7c1-6744d440ecaa/r:f00bea3f-6dce-47ed-ac44-0f6df7d12ced(com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.structure)" />
-    <import index="xedy" ref="442d3b7d-fe4a-4293-a7c1-6744d440ecaa/r:9d97c467-bd57-46d3-aac0-9569d63248cb(com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.behavior)" />
-    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
-    <import index="tpek" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.behavior)" />
-    <import index="tpce" ref="c72da2b9-7cce-4447-8389-f407dc1158b7/r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure/jetbrains.mps.lang.structure.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="ua2a" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.typesystem.inference(MPS.Core/jetbrains.mps.typesystem.inference@java_stub)" />
+    <import index="spci" ref="r:f00bea3f-6dce-47ed-ac44-0f6df7d12ced(com.mbeddr.mpsutil.richstring.structure)" />
+    <import index="xedy" ref="r:9d97c467-bd57-46d3-aac0-9569d63248cb(com.mbeddr.mpsutil.richstring.behavior)" />
+    <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -135,6 +135,9 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
@@ -585,7 +588,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="7Ssz$kYucMC" role="2OqNvi">
-                  <ref role="37wK5l" to="xedy:7Ssz$kYje6C" resolve="getExpressionType" />
+                  <ref role="37wK5l" to="xedy:7Ssz$kYjeZx" resolve="getExpressionType" />
                 </node>
               </node>
               <node concept="37vLTw" id="7Ssz$kYucL9" role="37wK5m">
@@ -761,7 +764,7 @@
                   <node concept="2OqwBi" id="5Bl4dfrk1$C" role="3uHU7B">
                     <node concept="1PxgMI" id="5Bl4dfrk1$D" role="2Oq$k0">
                       <ref role="1PxNhF" to="tpee:g7uibYu" resolve="ClassifierType" />
-                      <node concept="2GrUjf" id="5Bl4dfrk1$E" role="1PxMeX">
+                      <node concept="2GrUjf" id="15E$Thfqfor" role="1PxMeX">
                         <ref role="2Gs0qQ" node="5Bl4dfqWNSP" resolve="typicalType" />
                       </node>
                     </node>
@@ -1541,6 +1544,49 @@
     <node concept="1YaCAy" id="7hVsScEjt5N" role="1YuTPh">
       <property role="TrG5h" value="iFormatConversionFloatingPointNoBigDecimal" />
       <ref role="1YaFvo" to="spci:7hVsScEjnDu" resolve="IFormatConversionFloatingPointNoBigDecimal" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="41Fzz2axGFd">
+    <property role="TrG5h" value="check_ConversionWidthInteger" />
+    <property role="3GE5qa" value="format.width" />
+    <node concept="3clFbS" id="41Fzz2axGFe" role="18ibNy">
+      <node concept="3clFbJ" id="41Fzz2axGOp" role="3cqZAp">
+        <node concept="3clFbS" id="41Fzz2axGOq" role="3clFbx">
+          <node concept="a7r0C" id="41Fzz2azdtW" role="3cqZAp">
+            <node concept="1YBJjd" id="41Fzz2azftb" role="2OEOjV">
+              <ref role="1YBMHb" node="41Fzz2axGFg" resolve="conversionWidthInteger" />
+            </node>
+            <node concept="Xl_RD" id="41Fzz2axIxa" role="a7wSD">
+              <property role="Xl_RC" value="width should not start with 0" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="41Fzz2axHyw" role="3clFbw">
+          <node concept="2OqwBi" id="41Fzz2axGUI" role="2Oq$k0">
+            <node concept="2JrnkZ" id="41Fzz2axGTf" role="2Oq$k0">
+              <node concept="1YBJjd" id="41Fzz2axGOF" role="2JrQYb">
+                <ref role="1YBMHb" node="41Fzz2axGFg" resolve="conversionWidthInteger" />
+              </node>
+            </node>
+            <node concept="liA8E" id="41Fzz2axH7S" role="2OqNvi">
+              <ref role="37wK5l" to="ec5l:~SNode.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+              <node concept="Xl_RD" id="41Fzz2axHdr" role="37wK5m">
+                <property role="Xl_RC" value="width" />
+              </node>
+            </node>
+          </node>
+          <node concept="liA8E" id="41Fzz2axIro" role="2OqNvi">
+            <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+            <node concept="Xl_RD" id="41Fzz2axIsW" role="37wK5m">
+              <property role="Xl_RC" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="41Fzz2axGFg" role="1YuTPh">
+      <property role="TrG5h" value="conversionWidthInteger" />
+      <ref role="1YaFvo" to="spci:2UbT3C4elU2" resolve="ConversionWidthInteger" />
     </node>
   </node>
 </model>

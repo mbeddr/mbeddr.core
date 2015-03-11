@@ -211,6 +211,10 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
+      <concept id="1144195091934" name="jetbrains.mps.lang.smodel.structure.Node_IsRoleOperation" flags="nn" index="1BlSNk">
+        <reference id="1144195362400" name="conceptOfParent" index="1BmUXE" />
+        <reference id="1144195396777" name="linkInParent" index="1Bn3mz" />
+      </concept>
       <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
@@ -308,17 +312,12 @@
                             <node concept="3clFbS" id="2F_EZZy44kF" role="1bW5cS">
                               <node concept="3clFbF" id="2F_EZZy456f" role="3cqZAp">
                                 <node concept="1eOMI4" id="2VBlpE$Qkho" role="3clFbG">
-                                  <node concept="10QFUN" id="2VBlpE$Qkhp" role="1eOMHV">
-                                    <node concept="2OqwBi" id="2VBlpE$Qkhl" role="10QFUP">
-                                      <node concept="37vLTw" id="2VBlpE$Qkhm" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="2F_EZZy44kG" resolve="it" />
-                                      </node>
-                                      <node concept="3Tsc0h" id="2VBlpE$Qkhn" role="2OqNvi">
-                                        <ref role="3TtcxE" to="tpce:f_TKVDF" />
-                                      </node>
+                                  <node concept="2OqwBi" id="2VBlpE$Qkhl" role="1eOMHV">
+                                    <node concept="37vLTw" id="2VBlpE$Qkhm" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="2F_EZZy44kG" resolve="it" />
                                     </node>
-                                    <node concept="A3Dl8" id="2VBlpE$Quaz" role="10QFUM">
-                                      <node concept="3Tqbb2" id="2VBlpE$QxbE" role="A3Ik2" />
+                                    <node concept="3Tsc0h" id="2VBlpE$Qkhn" role="2OqNvi">
+                                      <ref role="3TtcxE" to="tpce:f_TKVDF" />
                                     </node>
                                   </node>
                                 </node>
@@ -335,18 +334,13 @@
                         <node concept="1bVj0M" id="6Go9U2xNesZ" role="23t8la">
                           <node concept="3clFbS" id="6Go9U2xNet0" role="1bW5cS">
                             <node concept="3clFbF" id="6Go9U2xNf10" role="3cqZAp">
-                              <node concept="17R0WA" id="6Go9U2xNjdz" role="3clFbG">
-                                <node concept="2OqwBi" id="6Go9U2xNfet" role="3uHU7B">
-                                  <node concept="37vLTw" id="6Go9U2xNf0Z" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="6Go9U2xNet1" resolve="it" />
-                                  </node>
-                                  <node concept="3TrcHB" id="6Go9U2xNg_5" role="2OqNvi">
-                                    <ref role="3TsBF5" to="tpce:fA0kJcN" resolve="role" />
-                                  </node>
+                              <node concept="2OqwBi" id="6Go9U2xNfet" role="3clFbG">
+                                <node concept="37vLTw" id="6Go9U2xNf0Z" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6Go9U2xNet1" resolve="it" />
                                 </node>
-                                <node concept="prKvN" id="6Go9U2xZSAA" role="3uHU7w">
-                                  <ref role="prhl4" to="spci:2UbT3C4elwQ" resolve="InlineFormat" />
-                                  <ref role="prhl7" to="spci:6Go9U2y2qnP" />
+                                <node concept="1BlSNk" id="o0n7x1mG2Z" role="2OqNvi">
+                                  <ref role="1BmUXE" to="spci:2UbT3C4elwQ" resolve="InlineFormat" />
+                                  <ref role="1Bn3mz" to="spci:6Go9U2y2qnP" />
                                 </node>
                               </node>
                             </node>

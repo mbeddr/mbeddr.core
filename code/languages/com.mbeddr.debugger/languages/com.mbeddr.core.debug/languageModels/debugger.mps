@@ -21218,33 +21218,6 @@
               <ref role="3cqZAo" node="5I6yYB8$zVK" resolve="fileName" />
             </node>
           </node>
-          <node concept="3eNFk2" id="5QfD$m0J4$u" role="3eNLev">
-            <node concept="3clFbS" id="5QfD$m0J4$w" role="3eOfB_">
-              <node concept="YS8fn" id="5QfD$m0J4$D" role="3cqZAp">
-                <node concept="2ShNRf" id="5QfD$m0J4$E" role="YScLw">
-                  <node concept="1pGfFk" id="5QfD$m0J4$F" role="2ShVmc">
-                    <ref role="37wK5l" to="e2lb:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
-                    <node concept="Xl_RD" id="5QfD$m0J4$G" role="37wK5m">
-                      <property role="Xl_RC" value="fileName doesn't end with .c" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3fqX7Q" id="5QfD$m0J4$x" role="3eO9$A">
-              <node concept="2OqwBi" id="5QfD$m0J4$y" role="3fr31v">
-                <node concept="3cpWs2" id="5QfD$m0J4$z" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5I6yYB8$zVK" resolve="fileName" />
-                </node>
-                <node concept="liA8E" id="5QfD$m0J4$$" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
-                  <node concept="Xl_RD" id="5QfD$m0J4$_" role="37wK5m">
-                    <property role="Xl_RC" value=".c" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3eNFk2" id="5QfD$m0J4$A" role="3eNLev">
             <node concept="3clFbS" id="5QfD$m0J4$C" role="3eOfB_">
               <node concept="YS8fn" id="5QfD$m0J4$I" role="3cqZAp">
@@ -30895,31 +30868,7 @@
         </node>
         <node concept="3clFbJ" id="7v8$3AiW$QA" role="3cqZAp">
           <node concept="3clFbS" id="7v8$3AiW$QB" role="3clFbx">
-            <node concept="YS8fn" id="7v8$3AiW$QC" role="3cqZAp">
-              <node concept="2ShNRf" id="7v8$3AiW$QD" role="YScLw">
-                <node concept="1pGfFk" id="7v8$3AiW$QE" role="2ShVmc">
-                  <ref role="37wK5l" node="2PERJEltght" resolve="MMissingTracesException" />
-                  <node concept="3cpWs3" id="7v8$3AiW$QF" role="37wK5m">
-                    <node concept="2OqwBi" id="7v8$3AiW$QG" role="3uHU7w">
-                      <node concept="2OqwBi" id="7v8$3AiW$QH" role="2Oq$k0">
-                        <node concept="37vLTw" id="7v8$3AiWGBv" role="2Oq$k0">
-                          <ref role="3cqZAo" node="7v8$3AiWyKv" resolve="currentFrame" />
-                        </node>
-                        <node concept="liA8E" id="7v8$3AiW$QJ" role="2OqNvi">
-                          <ref role="37wK5l" node="6cg_iZhYFsB" resolve="getStackFrame" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="7v8$3AiW$QK" role="2OqNvi">
-                        <ref role="37wK5l" node="3mhW1SHpSWO" resolve="routineName" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="7v8$3AiW$QL" role="3uHU7B">
-                      <property role="Xl_RC" value="Could not establish the trace for C routine: " />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
+            <node concept="3cpWs6" id="259291WL3eY" role="3cqZAp" />
           </node>
           <node concept="3clFbC" id="7v8$3AiW$QM" role="3clFbw">
             <node concept="10Nm6u" id="7v8$3AiW$QN" role="3uHU7w" />
@@ -30967,16 +30916,7 @@
         </node>
         <node concept="3clFbJ" id="7v8$3AiW$R4" role="3cqZAp">
           <node concept="3clFbS" id="7v8$3AiW$R5" role="3clFbx">
-            <node concept="YS8fn" id="7v8$3AiW$R6" role="3cqZAp">
-              <node concept="2ShNRf" id="7v8$3AiW$R7" role="YScLw">
-                <node concept="1pGfFk" id="7v8$3AiW$R8" role="2ShVmc">
-                  <ref role="37wK5l" node="57r6BQpEWPB" resolve="MInvalidASTException" />
-                  <node concept="Xl_RD" id="7v8$3AiW$R9" role="37wK5m">
-                    <property role="Xl_RC" value="Current Node is not embedded in an IStackFrameContributor" />
-                  </node>
-                </node>
-              </node>
-            </node>
+            <node concept="3cpWs6" id="259291WL3iD" role="3cqZAp" />
           </node>
           <node concept="3clFbC" id="7v8$3AiW$Ra" role="3clFbw">
             <node concept="3cmrfG" id="7v8$3AiW$Rb" role="3uHU7w">
@@ -58057,41 +57997,6 @@
             <ref role="37wK5l" node="150tOsVJc62" resolve="unifyfqFileName" />
           </node>
         </node>
-        <node concept="3clFbJ" id="lbcyKTak6g" role="3cqZAp">
-          <node concept="3clFbS" id="lbcyKTak6j" role="3clFbx">
-            <node concept="YS8fn" id="lbcyKTamkQ" role="3cqZAp">
-              <node concept="2ShNRf" id="lbcyKTamkR" role="YScLw">
-                <node concept="1pGfFk" id="lbcyKTamkS" role="2ShVmc">
-                  <ref role="37wK5l" to="e2lb:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
-                  <node concept="3cpWs3" id="lbcyKTamkT" role="37wK5m">
-                    <node concept="Xl_RD" id="lbcyKTamkU" role="3uHU7w">
-                      <property role="Xl_RC" value=" should be a .c file" />
-                    </node>
-                    <node concept="3cpWs2" id="lbcyKTamkV" role="3uHU7B">
-                      <ref role="3cqZAo" node="lbcyKTaaRd" resolve="fullQualifiedFileName" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3fqX7Q" id="lbcyKTamHQ" role="3clFbw">
-            <node concept="2OqwBi" id="lbcyKTamHS" role="3fr31v">
-              <node concept="2OqwBi" id="1QWipNk8BLk" role="2Oq$k0">
-                <node concept="Xjq3P" id="1QWipNk8Bd$" role="2Oq$k0" />
-                <node concept="2S8uIT" id="1QWipNk8CRH" role="2OqNvi">
-                  <ref role="2S8YL0" node="lbcyKTcrUA" resolve="fullQualifiedFileName" />
-                </node>
-              </node>
-              <node concept="liA8E" id="1QWipNk8EJW" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
-                <node concept="Xl_RD" id="lbcyKTamHV" role="37wK5m">
-                  <property role="Xl_RC" value=".c" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="3Tm1VV" id="lbcyKTaaaN" role="1B3o_S" />
     </node>
@@ -58186,19 +58091,6 @@
                 <node concept="39bAoz" id="lbcyKTeqQY" role="2OqNvi" />
               </node>
               <node concept="1yVyf7" id="lbcyKTeHEn" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-        <node concept="1gVbGN" id="lbcyKTeWKV" role="3cqZAp">
-          <node concept="2OqwBi" id="lbcyKTf10b" role="1gVkn0">
-            <node concept="37vLTw" id="lbcyKTeZpE" role="2Oq$k0">
-              <ref role="3cqZAo" node="lbcyKTeKlv" resolve="fileName" />
-            </node>
-            <node concept="liA8E" id="lbcyKTf3X6" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
-              <node concept="Xl_RD" id="lbcyKTf44P" role="37wK5m">
-                <property role="Xl_RC" value=".c" />
-              </node>
             </node>
           </node>
         </node>

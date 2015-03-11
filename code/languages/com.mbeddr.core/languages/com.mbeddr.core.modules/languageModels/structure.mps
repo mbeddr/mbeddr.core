@@ -1187,10 +1187,10 @@
       <ref role="20lvS9" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4$VRXeIntoP">
-    <property role="TrG5h" value="ExpressionDepth" />
+  <node concept="1TIwiD" id="4$VRXeGZt7K">
+    <property role="TrG5h" value="FunctionStatementMetric" />
     <property role="3GE5qa" value="metrics" />
-    <property role="34LRSv" value="expression depth" />
+    <property role="34LRSv" value="statements in IFunctionLike" />
     <ref role="1TJDcQ" to="vs0r:4$VRXeHdyxr" resolve="Metric" />
   </node>
   <node concept="1TIwiD" id="4$VRXeIgi6G">
@@ -1199,11 +1199,25 @@
     <property role="34LRSv" value="cyclomatic complexity" />
     <ref role="1TJDcQ" to="vs0r:4$VRXeHdyxr" resolve="Metric" />
   </node>
-  <node concept="1TIwiD" id="4$VRXeGZt7K">
-    <property role="TrG5h" value="FunctionStatementMetric" />
+  <node concept="1TIwiD" id="4$VRXeIntoP">
+    <property role="TrG5h" value="ExpressionDepth" />
     <property role="3GE5qa" value="metrics" />
-    <property role="34LRSv" value="statements in IFunctionLike" />
+    <property role="34LRSv" value="expression depth" />
     <ref role="1TJDcQ" to="vs0r:4$VRXeHdyxr" resolve="Metric" />
+  </node>
+  <node concept="1TIwiD" id="T6zAqDO4AQ">
+    <property role="TrG5h" value="CommentModuleContent" />
+    <property role="34LRSv" value="//" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="T6zAqDO5LY" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="vs0r:7gVrg_0tw6m" resolve="TextBlock" />
+    </node>
+    <node concept="PrWs8" id="T6zAqDO5$S" role="PzmwI">
+      <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
   </node>
   <node concept="AxPO7" id="3_CPcn39dht">
     <property role="3GE5qa" value="functions" />
@@ -1234,20 +1248,6 @@
   </node>
   <node concept="PlHQZ" id="6V6S12clNH$">
     <property role="TrG5h" value="IDataFlowAnalyzerEntryPoint" />
-  </node>
-  <node concept="1TIwiD" id="T6zAqDO4AQ">
-    <property role="TrG5h" value="CommentModuleContent" />
-    <property role="34LRSv" value="//" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="T6zAqDO5LY" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="text" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="vs0r:7gVrg_0tw6m" resolve="TextBlock" />
-    </node>
-    <node concept="PrWs8" id="T6zAqDO5$S" role="PzmwI">
-      <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
-    </node>
   </node>
 </model>
 
