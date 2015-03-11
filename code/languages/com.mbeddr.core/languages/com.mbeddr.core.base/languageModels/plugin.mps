@@ -97,15 +97,6 @@
       </node>
     </node>
   </node>
-  <node concept="3MtHw5" id="7Hbe8h6SmvO">
-    <property role="TrG5h" value="CoreBaseResourceBundle" />
-    <ref role="3MtHw2" node="7Hbe8h6SmwC" resolve="CoreBaseResourceBundleClass" />
-    <node concept="3MtHw9" id="7Hbe8h6SB0B" role="3MtHw3">
-      <property role="3MtHw8" value=" " />
-      <property role="TrG5h" value="noValueSource" />
-      <property role="3MtHw7" value="(no value source)" />
-    </node>
-  </node>
   <node concept="312cEu" id="7Hbe8h6SmwC">
     <property role="TrG5h" value="CoreBaseResourceBundleClass" />
     <node concept="3Tm1VV" id="7Hbe8h6SmwD" role="1B3o_S" />
@@ -146,6 +137,15 @@
           <node concept="10Nm6u" id="7Hbe8h6Smxl" role="3clFbG" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="3MtHw5" id="7Hbe8h6SmvO">
+    <property role="TrG5h" value="CoreBaseResourceBundle" />
+    <ref role="3MtHw2" node="7Hbe8h6SmwC" resolve="CoreBaseResourceBundleClass" />
+    <node concept="3MtHw9" id="7Hbe8h6SB0B" role="3MtHw3">
+      <property role="3MtHw8" value=" " />
+      <property role="TrG5h" value="noValueSource" />
+      <property role="3MtHw7" value="(no value source)" />
     </node>
   </node>
 </model>

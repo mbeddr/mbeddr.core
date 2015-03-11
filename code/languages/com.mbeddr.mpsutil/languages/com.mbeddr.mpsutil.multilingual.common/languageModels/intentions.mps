@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="23f985f2-965f-4af1-aee8-a32677429514/r:2a3adbc5-cf99-4b8d-8cf6-7680039dd780(com.mbeddr.mpsutil.multilingual.common/com.mbeddr.mpsutil.multilingual.common.intentions)">
+<model ref="r:2a3adbc5-cf99-4b8d-8cf6-7680039dd780(com.mbeddr.mpsutil.multilingual.common.intentions)">
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
@@ -7,10 +7,10 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="oq9k" ref="371850a9-2c5b-4e1d-a811-70d97e847917/r:f4ae6487-fb1d-418f-8dd3-759f9604156f(com.mbeddr.mpsutil.editor.utils/com.mbeddr.mpsutil.editor.utils.runtime)" />
-    <import index="sxyo" ref="23f985f2-965f-4af1-aee8-a32677429514/r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common/com.mbeddr.mpsutil.multilingual.common.structure)" />
-    <import index="fw73" ref="eedc5a6f-c2e8-4009-a7ab-5fc307bf77ec/r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime/com.mbeddr.mpsutil.multilingual.common.runtime.plugin)" />
-    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="oq9k" ref="r:f4ae6487-fb1d-418f-8dd3-759f9604156f(com.mbeddr.mpsutil.editor.utils.runtime)" />
+    <import index="sxyo" ref="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" />
+    <import index="fw73" ref="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -43,6 +43,7 @@
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -67,6 +68,11 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
@@ -202,19 +208,29 @@
     <node concept="2SaL7w" id="4gGXGcLRwuo" role="2ZfVeh">
       <node concept="3clFbS" id="4gGXGcLRwup" role="2VODD2">
         <node concept="3clFbF" id="4gGXGcLRwuq" role="3cqZAp">
-          <node concept="2OqwBi" id="4gGXGcLRwur" role="3clFbG">
-            <node concept="2OqwBi" id="4gGXGcLRwus" role="2Oq$k0">
-              <node concept="2Sf5sV" id="4gGXGcLRwut" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="4gGXGcLRwuu" role="2OqNvi">
-                <node concept="1xMEDy" id="4gGXGcLRwuv" role="1xVPHs">
-                  <node concept="chp4Y" id="4gGXGcLRwuw" role="ri$Ld">
-                    <ref role="cht4Q" to="sxyo:2bng37t1yrr" resolve="IMessageKeyHolder" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="4gGXGcLRwux" role="1xVPHs" />
+          <node concept="1Wc70l" id="3TSnT3InbJT" role="3clFbG">
+            <node concept="2OqwBi" id="3TSnT3IncKa" role="3uHU7w">
+              <node concept="2YIFZM" id="3TSnT3Inc8D" role="2Oq$k0">
+                <ref role="37wK5l" to="oq9k:4gGXGcLQIk9" resolve="getErrorText" />
+                <ref role="1Pybhc" to="oq9k:4gGXGcLQIk8" resolve="EditorRuntimeUtil" />
+                <node concept="1XNTG" id="3TSnT3Incpm" role="37wK5m" />
               </node>
+              <node concept="17RvpY" id="3TSnT3Inh__" role="2OqNvi" />
             </node>
-            <node concept="3x8VRR" id="4gGXGcLRwuy" role="2OqNvi" />
+            <node concept="2OqwBi" id="4gGXGcLRwur" role="3uHU7B">
+              <node concept="2OqwBi" id="4gGXGcLRwus" role="2Oq$k0">
+                <node concept="2Sf5sV" id="4gGXGcLRwut" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="4gGXGcLRwuu" role="2OqNvi">
+                  <node concept="1xMEDy" id="4gGXGcLRwuv" role="1xVPHs">
+                    <node concept="chp4Y" id="4gGXGcLRwuw" role="ri$Ld">
+                      <ref role="cht4Q" to="sxyo:2bng37t1yrr" resolve="IMessageKeyHolder" />
+                    </node>
+                  </node>
+                  <node concept="1xIGOp" id="4gGXGcLRwux" role="1xVPHs" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="4gGXGcLRwuy" role="2OqNvi" />
+            </node>
           </node>
         </node>
       </node>

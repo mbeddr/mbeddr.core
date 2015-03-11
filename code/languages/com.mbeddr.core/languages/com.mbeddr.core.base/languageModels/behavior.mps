@@ -56,13 +56,12 @@
     <import index="39al" ref="r:5bc020f2-590a-4818-ae68-fa483b92486f(com.mbeddr.mpsutil.serializer.xml.serializer)" />
     <import index="a2je" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.image(JDK/java.awt.image@java_stub)" />
     <import index="srng" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
+    <import index="qjdu" ref="r:bc752cbf-8d9b-4442-8e26-e5c87b20b897(com.mbeddr.core.base.plugin)" />
     <import index="ar19" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.geom(JDK/java.awt.geom@java_stub)" />
     <import index="xei" ref="1338ba73-5059-479b-a929-de86597a62b8/f:java_stub#1338ba73-5059-479b-a929-de86597a62b8#edu.uci.ics.jung.visualization.util(com.mbeddr.mpsutil.jung.pluginSolution/edu.uci.ics.jung.visualization.util@java_stub)" />
     <import index="ln2k" ref="r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung.behavior)" />
-    <import index="qjdu" ref="r:bc752cbf-8d9b-4442-8e26-e5c87b20b897(com.mbeddr.core.base.plugin)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
-    <import index="d2v9" ref="r:5ea030bf-aef8-4a42-aef3-a15339d8236b(com.mbeddr.mpsutil.valuedebugger.structure)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -9093,7 +9092,7 @@
       <node concept="37vLTG" id="$bJ0jgS5NT" role="3clF46">
         <property role="TrG5h" value="debuggable" />
         <node concept="3Tqbb2" id="$bJ0jgS5NS" role="1tU5fm">
-          <ref role="ehGHo" to="d2v9:7Hbe8h6OsMm" resolve="IValueDebuggable" />
+          <ref role="ehGHo" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
         </node>
       </node>
     </node>
@@ -9106,7 +9105,7 @@
       <node concept="37vLTG" id="EWig$gxRIK" role="3clF46">
         <property role="TrG5h" value="debuggable" />
         <node concept="3Tqbb2" id="EWig$gxRIJ" role="1tU5fm">
-          <ref role="ehGHo" to="d2v9:7Hbe8h6OsMm" resolve="IValueDebuggable" />
+          <ref role="ehGHo" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
         </node>
       </node>
     </node>
@@ -9115,7 +9114,7 @@
       <property role="TrG5h" value="listAvailableKeys" />
       <node concept="A3Dl8" id="EWig$j3As4" role="3clF45">
         <node concept="3Tqbb2" id="EWig$j3As6" role="A3Ik2">
-          <ref role="ehGHo" to="d2v9:7Hbe8h6OsMk" resolve="DebugKey" />
+          <ref role="ehGHo" to="vs0r:1PjfO$y0eiY" resolve="DebugKey" />
         </node>
       </node>
       <node concept="3Tm1VV" id="EWig$gxRSJ" role="1B3o_S" />
@@ -9123,7 +9122,7 @@
       <node concept="37vLTG" id="EWig$gxSfH" role="3clF46">
         <property role="TrG5h" value="debuggable" />
         <node concept="3Tqbb2" id="EWig$gxSfG" role="1tU5fm">
-          <ref role="ehGHo" to="d2v9:7Hbe8h6OsMm" resolve="IValueDebuggable" />
+          <ref role="ehGHo" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
         </node>
       </node>
     </node>
@@ -9136,13 +9135,13 @@
       <node concept="37vLTG" id="EWig$gxTnY" role="3clF46">
         <property role="TrG5h" value="debuggable" />
         <node concept="3Tqbb2" id="EWig$gxTnX" role="1tU5fm">
-          <ref role="ehGHo" to="d2v9:7Hbe8h6OsMm" resolve="IValueDebuggable" />
+          <ref role="ehGHo" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
         </node>
       </node>
       <node concept="37vLTG" id="EWig$gxTt4" role="3clF46">
         <property role="TrG5h" value="key" />
         <node concept="3Tqbb2" id="EWig$h4xkp" role="1tU5fm">
-          <ref role="ehGHo" to="d2v9:7Hbe8h6OsMk" resolve="DebugKey" />
+          <ref role="ehGHo" to="vs0r:1PjfO$y0eiY" resolve="DebugKey" />
         </node>
       </node>
     </node>
@@ -9150,14 +9149,14 @@
       <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getKey" />
       <node concept="3Tqbb2" id="2BbcAuIdFxK" role="3clF45">
-        <ref role="ehGHo" to="d2v9:7Hbe8h6OsMk" resolve="DebugKey" />
+        <ref role="ehGHo" to="vs0r:1PjfO$y0eiY" resolve="DebugKey" />
       </node>
       <node concept="3Tm1VV" id="2BbcAuIdB6O" role="1B3o_S" />
       <node concept="3clFbS" id="2BbcAuIdB6P" role="3clF47" />
       <node concept="37vLTG" id="2BbcAuIdFzS" role="3clF46">
         <property role="TrG5h" value="debuggable" />
         <node concept="3Tqbb2" id="2BbcAuIdFzR" role="1tU5fm">
-          <ref role="ehGHo" to="d2v9:7Hbe8h6OsMm" resolve="IValueDebuggable" />
+          <ref role="ehGHo" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
         </node>
       </node>
     </node>
