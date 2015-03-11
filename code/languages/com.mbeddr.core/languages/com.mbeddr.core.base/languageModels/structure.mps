@@ -998,6 +998,10 @@
       <property role="TrG5h" value="lastUdpatedBy" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="30hqvrsTGsn" role="1TKVEl">
+      <property role="TrG5h" value="exportAsXML" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="K292flwD4t" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="query" />

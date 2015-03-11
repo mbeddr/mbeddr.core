@@ -125,9 +125,11 @@
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
       </concept>
+      <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
+        <child id="1167169362365" name="conditionFunction" index="30HLyM" />
       </concept>
       <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="ln" index="17Uvod">
         <child id="1167756362303" name="propertyValueFunction" index="3zH0cK" />
@@ -399,6 +401,18 @@
     <node concept="3lhOvk" id="6iaOvgb52YW" role="3lj3bC">
       <ref role="30HIoZ" to="vs0r:K292flwCEW" resolve="Assessment" />
       <ref role="3lhOvi" node="6iaOvgb5842" resolve="map_Assessment" />
+      <node concept="30G5F_" id="5wChliAF6na" role="30HLyM">
+        <node concept="3clFbS" id="5wChliAF6nb" role="2VODD2">
+          <node concept="3clFbF" id="5wChliAFhdd" role="3cqZAp">
+            <node concept="2OqwBi" id="5wChliAFhBd" role="3clFbG">
+              <node concept="30H73N" id="5wChliAFhdc" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5wChliAFhXy" role="2OqNvi">
+                <ref role="3TsBF5" to="vs0r:30hqvrsTGsn" resolve="exportAsXML" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1puMqW" id="3ZdGyCQXO9j" role="1puA0r">
       <ref role="1puQsG" node="3ZdGyCQXLtL" resolve="deleteControlledNamesANdHandleReexports" />
