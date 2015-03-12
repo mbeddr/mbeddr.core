@@ -90,7 +90,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F0ifn" id="3JErwPFIqFC" role="3EZMnx">
-          <property role="3F0ifm" value="show bookmarks:" />
+          <property role="3F0ifm" value="show SectionIndices:" />
         </node>
         <node concept="3F0A7n" id="3JErwPFIqFD" role="3EZMnx">
           <ref role="1NtTu8" to="yv4j:3JErwPFIqFi" resolve="showBookmarks" />
@@ -102,10 +102,10 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F0ifn" id="3JErwPFK_F0" role="3EZMnx">
-          <property role="3F0ifm" value="show bookmarks icons:" />
+          <property role="3F0ifm" value="show SectionIndex icons:" />
         </node>
         <node concept="3F0A7n" id="3JErwPFK_F1" role="3EZMnx">
-          <ref role="1NtTu8" to="yv4j:3JErwPFIqFf" resolve="showBreadcrumbIcons" />
+          <ref role="1NtTu8" to="yv4j:3JErwPFIqFg" resolve="showBookmarkIcons" />
         </node>
         <node concept="2iRfu4" id="3JErwPFK_F2" role="2iSdaV" />
       </node>
@@ -114,7 +114,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F0ifn" id="3JErwPFK_Gu" role="3EZMnx">
-          <property role="3F0ifm" value="bookmark panel width:" />
+          <property role="3F0ifm" value="SectionIndex panel width:" />
         </node>
         <node concept="3F0A7n" id="3JErwPFK_Gv" role="3EZMnx">
           <ref role="1NtTu8" to="yv4j:3JErwPFIqFj" resolve="bookmarkPanelWidth" />

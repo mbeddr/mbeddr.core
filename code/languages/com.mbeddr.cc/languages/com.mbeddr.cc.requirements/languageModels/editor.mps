@@ -338,6 +338,7 @@
     </language>
     <language id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor">
       <concept id="4317384196709001934" name="com.mbeddr.mpsutil.breadcrumb.editor.structure.BreadcrumbEditor" flags="ng" index="1gkWj3">
+        <property id="4317384196709001935" name="showBreadcrumbIcons" index="1gkWj2" />
         <child id="4317384196709001940" name="content" index="1gkWjp" />
       </concept>
     </language>
@@ -2288,7 +2289,8 @@
   </node>
   <node concept="24kQdi" id="7_tU7IQsFfA">
     <ref role="1XX52x" to="75wo:7_tU7IQsFfx" resolve="RequirementsModule" />
-    <node concept="1gkWj3" id="3skJLyQdEvB" role="2wV5jI">
+    <node concept="1gkWj3" id="PMV5sJrGg1" role="2wV5jI">
+      <property role="1gkWj2" value="true" />
       <node concept="3EZMnI" id="7_tU7IQsFfC" role="1gkWjp">
         <node concept="2iRkQZ" id="3JD5OqKSc89" role="2iSdaV" />
         <node concept="PMmxH" id="2A5UqXKajnQ" role="3EZMnx">
@@ -2605,8 +2607,8 @@
               </node>
               <node concept="3cpWs6" id="4gxFsDiRO6V" role="3cqZAp">
                 <node concept="2YIFZM" id="4Gm$o7XDhrA" role="3cqZAk">
-                  <ref role="1Pybhc" to="xvsr:4Gm$o7XCPca" resolve="FilterHelper" />
                   <ref role="37wK5l" to="xvsr:2S0oKITSfaw" resolve="mustBeShown" />
+                  <ref role="1Pybhc" to="xvsr:4Gm$o7XCPca" resolve="FilterHelper" />
                   <node concept="12_Ws6" id="4Gm$o7XDhrB" role="37wK5m" />
                   <node concept="2OqwBi" id="4Gm$o7XDhrC" role="37wK5m">
                     <node concept="2OqwBi" id="4Gm$o7XDhrD" role="2Oq$k0">
@@ -2714,8 +2716,8 @@
                     <ref role="37wK5l" to="r4b4:3Dgh5aYiKso" resolve="HorizLineCell" />
                     <node concept="pncrf" id="3JD5OqKSc8i" role="37wK5m" />
                     <node concept="10M0yZ" id="3JD5OqKSc8j" role="37wK5m">
-                      <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
                       <ref role="3cqZAo" to="1t7x:~Color.gray" resolve="gray" />
+                      <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
                     </node>
                     <node concept="3cmrfG" id="3JD5OqKSc8k" role="37wK5m">
                       <property role="3cmrfH" value="2" />

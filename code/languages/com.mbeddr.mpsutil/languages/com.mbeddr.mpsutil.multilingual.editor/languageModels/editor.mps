@@ -170,7 +170,7 @@
     </node>
     <node concept="3EZMnI" id="2bng37t24Ci" role="2wV5jI">
       <node concept="1u4HXA" id="2bng37t24Cj" role="3EZMnx">
-        <property role="1ubRXE" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.multilingual.common/icons/multi3.png" />
+        <property role="1ubRXE" value="${module}/icons/multi3.png" />
         <property role="1$Qi42" value="4" />
         <node concept="11LMrY" id="2bng37t24Ck" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -304,7 +304,7 @@
     <ref role="1XX52x" to="17ki:2bng37t24BP" resolve="MultilingualAlias" />
     <node concept="3EZMnI" id="2bng37t24Di" role="2wV5jI">
       <node concept="1u4HXA" id="2bng37t24Dj" role="3EZMnx">
-        <property role="1ubRXE" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.multilingual.common/icons/multi3.png" />
+        <property role="1ubRXE" value="${module}/icons/multi3.png" />
         <property role="1$Qi42" value="4" />
         <node concept="11LMrY" id="2bng37t24Dk" role="3F10Kt">
           <property role="VOm3f" value="false" />

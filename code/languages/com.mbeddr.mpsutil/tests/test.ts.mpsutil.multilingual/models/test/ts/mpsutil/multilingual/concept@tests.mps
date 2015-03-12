@@ -168,7 +168,7 @@
         </node>
         <node concept="3Y8sC$" id="77gEP6zyDMb" role="s3kY8">
           <property role="3Y8sCA" value="MonDeuxiemeNom" />
-          <ref role="s3l27" to="sv0f:2bng37sXcNe" resolve="Français" />
+          <ref role="s3l27" to="sv0f:2bng37sXcNe" resolve="français" />
         </node>
       </node>
     </node>
@@ -187,7 +187,7 @@
     </node>
   </node>
   <node concept="1Q5_ze" id="77gEP6zfbbR">
-    <ref role="1Q5_zd" node="77gEP6zfbaR" resolve="MeinName" />
+    <ref role="1Q5_zd" node="77gEP6zfbaR" resolve="MySpecialName" />
     <ref role="1Q5_zp" node="77gEP6zfbaY" resolve="MeinNeuerName" />
   </node>
   <node concept="1lH9Xt" id="7Ssz$kY9Bu8">

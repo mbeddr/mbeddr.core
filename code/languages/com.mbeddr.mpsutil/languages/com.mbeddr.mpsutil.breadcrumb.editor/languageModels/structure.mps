@@ -44,7 +44,7 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyi" id="3JErwPFIqFg" role="1TKVEl">
-      <property role="TrG5h" value="showBookmarkIcons" />
+      <property role="TrG5h" value="showSectionIndexIcons" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyi" id="3JErwPFIqFh" role="1TKVEl">
@@ -52,11 +52,11 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyi" id="3JErwPFIqFi" role="1TKVEl">
-      <property role="TrG5h" value="showBookmarks" />
+      <property role="TrG5h" value="showSectionIndices" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyi" id="3JErwPFIqFj" role="1TKVEl">
-      <property role="TrG5h" value="bookmarkPanelWidth" />
+      <property role="TrG5h" value="SectionIndexPanelWidth" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyj" id="3JErwPFIqFk" role="1TKVEi">

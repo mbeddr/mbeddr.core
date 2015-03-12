@@ -3,6 +3,7 @@
   <component name="MigrationProperties">
     <entry key="jetbrains.mps.cleanSrc" value="executed" />
     <entry key="jetbrains.mps.name2id_gen" value="executed" />
+    <entry key="jetbrains.mps.name2id_gen_perroot" value="executed" />
     <entry key="jetbrains.mps.obsoletePropsCleanup" value="executed" />
     <entry key="jetbrains.mps.projectJavaVersionMigration" value="executed" />
     <entry key="jetbrains.mps.resaveModules" value="executed" />
