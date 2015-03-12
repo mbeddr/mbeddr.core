@@ -19,6 +19,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -398,6 +399,18 @@
               <node concept="3TrcHB" id="3_fgNoLAJ1X" role="2OqNvi">
                 <ref role="3TsBF5" to="c4fa:3_fgNoLA7XY" resolve="static" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="58TcxRGFcUt" role="2ZfVeh">
+      <node concept="3clFbS" id="58TcxRGFcUu" role="2VODD2">
+        <node concept="3clFbF" id="58TcxRGFda9" role="3cqZAp">
+          <node concept="2OqwBi" id="58TcxRGFdmr" role="3clFbG">
+            <node concept="2Sf5sV" id="58TcxRGFda8" role="2Oq$k0" />
+            <node concept="2qgKlT" id="58TcxRGFf1q" role="2OqNvi">
+              <ref role="37wK5l" to="rj8d:58TcxRGFbfJ" resolve="canBeStatic" />
             </node>
           </node>
         </node>
@@ -913,6 +926,18 @@
               <node concept="3TrcHB" id="52l0VUuN7S$" role="2OqNvi">
                 <ref role="3TsBF5" to="c4fa:52l0VUuN5OB" resolve="storeInRegister" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="58TcxRGHdFC" role="2ZfVeh">
+      <node concept="3clFbS" id="58TcxRGHdFD" role="2VODD2">
+        <node concept="3clFbF" id="58TcxRGHdR7" role="3cqZAp">
+          <node concept="2OqwBi" id="58TcxRGHdVc" role="3clFbG">
+            <node concept="2Sf5sV" id="58TcxRGHdR6" role="2Oq$k0" />
+            <node concept="2qgKlT" id="58TcxRGHemt" role="2OqNvi">
+              <ref role="37wK5l" to="rj8d:58TcxRGHbLy" resolve="canBeStoredInRegister" />
             </node>
           </node>
         </node>

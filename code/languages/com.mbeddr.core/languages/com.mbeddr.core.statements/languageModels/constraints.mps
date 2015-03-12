@@ -142,8 +142,15 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <reference id="1140138128738" name="concept" index="1PxNhF" />
+        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -469,6 +476,36 @@
                 </node>
               </node>
               <node concept="3x8VRR" id="2158NhTHfrb" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="58TcxRGr5pv">
+    <property role="3GE5qa" value="loopsNStuff" />
+    <ref role="1M2myG" to="c4fa:6iIoqg1xIpQ" resolve="ForStatement" />
+  </node>
+  <node concept="1M2fIO" id="58TcxRGr7FA">
+    <property role="3GE5qa" value="loopsNStuff" />
+    <ref role="1M2myG" to="c4fa:3hOuikE_raa" resolve="ForVarRef" />
+    <node concept="nKS2y" id="58TcxRGr7FB" role="1MLUbF">
+      <node concept="3clFbS" id="58TcxRGr7FC" role="2VODD2">
+        <node concept="3clFbF" id="58TcxRGr7FI" role="3cqZAp">
+          <node concept="2OqwBi" id="58TcxRGr94t" role="3clFbG">
+            <node concept="2OqwBi" id="58TcxRGr7Uh" role="2Oq$k0">
+              <node concept="1PxgMI" id="58TcxRGr7Jy" role="2Oq$k0">
+                <ref role="1PxNhF" to="c4fa:6iIoqg1xIpQ" resolve="ForStatement" />
+                <node concept="nLn13" id="58TcxRGr7FH" role="1PxMeX" />
+              </node>
+              <node concept="3TrEf2" id="58TcxRGr8uz" role="2OqNvi">
+                <ref role="3Tt5mk" to="c4fa:6iIoqg1xKT0" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="58TcxRGr9oM" role="2OqNvi">
+              <node concept="chp4Y" id="58TcxRGr9oU" role="cj9EA">
+                <ref role="cht4Q" to="c4fa:3hOuikE_raa" resolve="ForVarRef" />
+              </node>
             </node>
           </node>
         </node>
