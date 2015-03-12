@@ -311,6 +311,7 @@
     </language>
     <language id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor">
       <concept id="4317384196709001934" name="com.mbeddr.mpsutil.breadcrumb.editor.structure.BreadcrumbEditor" flags="ng" index="1gkWj3">
+        <property id="4317384196709001935" name="showBreadcrumbIcons" index="1gkWj2" />
         <child id="4317384196709001940" name="content" index="1gkWjp" />
       </concept>
     </language>
@@ -409,7 +410,8 @@
   </registry>
   <node concept="24kQdi" id="5_l8w1EmTdB">
     <ref role="1XX52x" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
-    <node concept="1gkWj3" id="1Ga0ybhmrnn" role="2wV5jI">
+    <node concept="1gkWj3" id="3pj_nYrpEJc" role="2wV5jI">
+      <property role="1gkWj2" value="true" />
       <node concept="3EZMnI" id="5_l8w1EmTdD" role="1gkWjp">
         <property role="S$Qs1" value="true" />
         <node concept="3EZMnI" id="3r83Ks0g9P$" role="3EZMnx">
@@ -1664,7 +1666,8 @@
   <node concept="24kQdi" id="2fRKXKiDTpp">
     <property role="3GE5qa" value="external" />
     <ref role="1XX52x" to="x27k:5jyom5fOqJ1" resolve="ExternalModule" />
-    <node concept="1gkWj3" id="5awSL8fPS15" role="2wV5jI">
+    <node concept="1gkWj3" id="3pj_nYrpIBc" role="2wV5jI">
+      <property role="1gkWj2" value="true" />
       <node concept="3EZMnI" id="RQmJfdBvLq" role="1gkWjp">
         <node concept="3EZMnI" id="3r83Ks0gvdN" role="3EZMnx">
           <node concept="VPM3Z" id="3r83Ks0gvdO" role="3F10Kt">
@@ -4217,35 +4220,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="L2WnbQO1I9">
-    <property role="3GE5qa" value="functions" />
-    <ref role="1XX52x" to="x27k:L2WnbQO1DI" resolve="ArgumentKindContainer" />
-    <node concept="3F0A7n" id="L2WnbQO2tN" role="2wV5jI">
-      <ref role="1NtTu8" to="x27k:L2WnbQO1I2" resolve="value" />
-    </node>
-  </node>
-  <node concept="V5hpn" id="L2WnbR5T0c">
-    <property role="3GE5qa" value="functions" />
-    <property role="TrG5h" value="ArgumentKindStyleSheet" />
-    <node concept="14StLt" id="L2WnbR5T0f" role="V601i">
-      <property role="TrG5h" value="UNKNOWN" />
-      <node concept="11L4FC" id="L2WnbR5T0u" role="3F10Kt">
-        <property role="VOm3f" value="true" />
-      </node>
-      <node concept="11LMrY" id="L2WnbR5T0$" role="3F10Kt">
-        <property role="VOm3f" value="true" />
-      </node>
-    </node>
-    <node concept="14StLt" id="L2WnbR5T0l" role="V601i">
-      <property role="TrG5h" value="DEFINED" />
-      <node concept="11L4FC" id="L2WnbR5T0E" role="3F10Kt">
-        <property role="VOm3f" value="true" />
-      </node>
-      <node concept="VPxyj" id="L2WnbR5T0K" role="3F10Kt">
-        <property role="VOm3f" value="false" />
-      </node>
-    </node>
-  </node>
   <node concept="1h_SRR" id="L2WnbR8bP4">
     <property role="3GE5qa" value="functions" />
     <property role="TrG5h" value="Argument_ActionMap" />
@@ -4280,6 +4254,35 @@
       <node concept="3F1sOY" id="T6zAqDO6w4" role="3EZMnx">
         <ref role="1NtTu8" to="x27k:T6zAqDO5LY" />
         <ref role="1k5W1q" to="r4b4:2CEi94dprSJ" resolve="TextComment" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="L2WnbQO1I9">
+    <property role="3GE5qa" value="functions" />
+    <ref role="1XX52x" to="x27k:L2WnbQO1DI" resolve="ArgumentKindContainer" />
+    <node concept="3F0A7n" id="L2WnbQO2tN" role="2wV5jI">
+      <ref role="1NtTu8" to="x27k:L2WnbQO1I2" resolve="value" />
+    </node>
+  </node>
+  <node concept="V5hpn" id="L2WnbR5T0c">
+    <property role="3GE5qa" value="functions" />
+    <property role="TrG5h" value="ArgumentKindStyleSheet" />
+    <node concept="14StLt" id="L2WnbR5T0f" role="V601i">
+      <property role="TrG5h" value="UNKNOWN" />
+      <node concept="11L4FC" id="L2WnbR5T0u" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="11LMrY" id="L2WnbR5T0$" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+    <node concept="14StLt" id="L2WnbR5T0l" role="V601i">
+      <property role="TrG5h" value="DEFINED" />
+      <node concept="11L4FC" id="L2WnbR5T0E" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="VPxyj" id="L2WnbR5T0K" role="3F10Kt">
+        <property role="VOm3f" value="false" />
       </node>
     </node>
   </node>

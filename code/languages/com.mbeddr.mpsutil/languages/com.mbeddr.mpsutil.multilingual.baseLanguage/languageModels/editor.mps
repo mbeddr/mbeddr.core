@@ -165,7 +165,7 @@
     <ref role="1XX52x" to="tnjx:2bng37t32Oy" resolve="MultilingualJavaString" />
     <node concept="3EZMnI" id="2bng37t32OA" role="2wV5jI">
       <node concept="1u4HXA" id="2bng37t32OB" role="3EZMnx">
-        <property role="1ubRXE" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.multilingual.common/icons/multi3.png" />
+        <property role="1ubRXE" value="${module}/icons/multi3.png" />
         <property role="1$Qi42" value="4" />
         <node concept="11L4FC" id="2bng37t32OC" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -289,7 +289,7 @@
     <ref role="1XX52x" to="tnjx:7Ssz$kY9Uz$" resolve="MultilingualJavaRichString" />
     <node concept="3EZMnI" id="7Ssz$kYbl7G" role="2wV5jI">
       <node concept="1u4HXA" id="7Ssz$kYbl7H" role="3EZMnx">
-        <property role="1ubRXE" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.multilingual.common/icons/multi3.png" />
+        <property role="1ubRXE" value="${module}/icons/multi3.png" />
         <property role="1$Qi42" value="4" />
         <node concept="11L4FC" id="7Ssz$kYbl7I" role="3F10Kt">
           <property role="VOm3f" value="false" />

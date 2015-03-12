@@ -200,25 +200,28 @@
     <property role="3NeIjD" value="0" />
     <node concept="1DJMfN" id="1FptJtanBDD" role="1DEjpx">
       <property role="TrG5h" value="showTranslations" />
-      <node concept="10P_77" id="1FptJtanBDE" role="1tU5fm" />
-      <node concept="3clFbT" id="1FptJtanBDF" role="33vP2m" />
       <node concept="3ZQQOj" id="4bsUQfPNRL9" role="XGeyX">
         <ref role="3ZOmrH" node="7Hbe8h755mL" resolve="ShowTranslationsGlobally" />
       </node>
+      <node concept="10P_77" id="1FptJtanBDE" role="1tU5fm" />
+      <node concept="3clFbT" id="1FptJtanBDF" role="33vP2m" />
     </node>
     <node concept="1DJMfN" id="77gEP6zfKhn" role="1DEjpx">
       <property role="TrG5h" value="showTranslationsIntentionEnabled" />
       <property role="1DJMfM" value="true" />
+      <node concept="3ZQQOj" id="4bsUQfPNS7C" role="XGeyX">
+        <ref role="3ZOmrH" node="7Hbe8h755_I" resolve="EnableShowTranslationsIntention" />
+      </node>
       <node concept="10P_77" id="77gEP6zfKho" role="1tU5fm" />
       <node concept="3clFbT" id="77gEP6zfKkI" role="33vP2m">
         <property role="3clFbU" value="true" />
       </node>
-      <node concept="3ZQQOj" id="4bsUQfPNS7C" role="XGeyX">
-        <ref role="3ZOmrH" node="7Hbe8h755_I" resolve="EnableShowTranslationsIntention" />
-      </node>
     </node>
     <node concept="3i_9Kd" id="77gEP6zkhUH" role="1DEjpx">
       <property role="TrG5h" value="currentLanguage" />
+      <node concept="3ZQQOj" id="4bsUQfPNSJK" role="XGeyX">
+        <ref role="3ZOmrH" node="7Hbe8h756ko" resolve="CurrentLanguage" />
+      </node>
       <node concept="17QB3L" id="77gEP6zkhUI" role="1tU5fm" />
       <node concept="Xl_RD" id="77gEP6zkhUJ" role="33vP2m">
         <property role="Xl_RC" value="" />
@@ -335,9 +338,6 @@
             </node>
           </node>
         </node>
-      </node>
-      <node concept="3ZQQOj" id="4bsUQfPNSJK" role="XGeyX">
-        <ref role="3ZOmrH" node="7Hbe8h756ko" resolve="CurrentLanguage" />
       </node>
     </node>
     <node concept="3xWZ$M" id="77gEP6zxh56" role="3xXVxh">

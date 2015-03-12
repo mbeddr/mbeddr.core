@@ -20,7 +20,7 @@
     <property role="TrG5h" value="IBreadcrumb" />
   </node>
   <node concept="PlHQZ" id="4o4$mVTwnFM">
-    <property role="TrG5h" value="IBookmark" />
+    <property role="TrG5h" value="ISectionIndex" />
   </node>
 </model>
 
