@@ -86,6 +86,10 @@
       <property role="TrG5h" value="hasAlternativeSteps" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="1eEm1HSFKG_" role="1TKVEl">
+      <property role="TrG5h" value="isRegexBasedComparison" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49Y2Xia4hId">
     <property role="TrG5h" value="CBMCCounterexampleTest" />
