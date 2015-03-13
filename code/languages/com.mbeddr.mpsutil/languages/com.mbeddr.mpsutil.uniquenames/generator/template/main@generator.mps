@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:3ce1c30d-ce1e-4fb8-ad6b-3c3102663c28(com.mbeddr.mpsutil.uniquenames.generator.template.main@generator)">
+<model ref="c580df0e-8eef-4422-97d2-4fffc42fb9b7/r:3ce1c30d-ce1e-4fb8-ad6b-3c3102663c28(com.mbeddr.mpsutil.uniquenames#135300383108724098/com.mbeddr.mpsutil.uniquenames.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />

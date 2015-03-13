@@ -32,6 +32,7 @@
     <import index="ar19" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.geom(JDK/java.awt.geom@java_stub)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -96,6 +97,7 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
         <child id="1186403803051" name="query" index="VblUZ" />
@@ -3285,6 +3287,39 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3KKPUg5z8$y">
+    <property role="3GE5qa" value="internal" />
+    <ref role="1XX52x" to="g88q:3KKPUg5z4XL" resolve="FieldForInternalInstances" />
+    <node concept="3EZMnI" id="3KKPUg5z8Ru" role="2wV5jI">
+      <node concept="2iRkQZ" id="3KKPUg5z8Rv" role="2iSdaV" />
+      <node concept="PMmxH" id="3KKPUg5z8$$" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="2SsqMj" id="3KKPUg5z8RB" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3KKPUg5AhaN">
+    <property role="3GE5qa" value="internal" />
+    <ref role="1XX52x" to="g88q:3KKPUg5Ah99" resolve="TargetInstanceName" />
+    <node concept="3EZMnI" id="3KKPUg5AhaO" role="2wV5jI">
+      <node concept="2iRkQZ" id="3KKPUg5AhaP" role="2iSdaV" />
+      <node concept="PMmxH" id="3KKPUg5AhaQ" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="2SsqMj" id="3KKPUg5AhaR" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3KKPUg6o79W">
+    <property role="3GE5qa" value="internal" />
+    <ref role="1XX52x" to="g88q:3KKPUg6o78w" resolve="CompositeComponentName" />
+    <node concept="3EZMnI" id="3KKPUg6o79X" role="2wV5jI">
+      <node concept="2iRkQZ" id="3KKPUg6o79Y" role="2iSdaV" />
+      <node concept="PMmxH" id="3KKPUg6o79Z" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="2SsqMj" id="3KKPUg6o7a0" role="3EZMnx" />
     </node>
   </node>
 </model>

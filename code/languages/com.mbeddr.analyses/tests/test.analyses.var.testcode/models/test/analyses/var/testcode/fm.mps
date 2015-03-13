@@ -143,6 +143,34 @@
         </node>
       </node>
     </node>
+    <node concept="Id4hS" id="4$3mDZ0lEju" role="Idr$j">
+      <property role="TrG5h" value="AtLeastOneOrSubfeatureMustBeAvailable" />
+      <node concept="28I2Iu" id="4$3mDZ0lEjv" role="Id4hT">
+        <node concept="Idvuv" id="4$3mDZ0lFiU" role="Id4hL" />
+        <node concept="Id4hK" id="4$3mDZ0lEjx" role="Id4hQ">
+          <property role="TrG5h" value="or1" />
+          <node concept="Idvur" id="4$3mDZ0lEjy" role="Id4hL" />
+        </node>
+        <node concept="Id4hK" id="4$3mDZ0lFj2" role="Id4hQ">
+          <property role="TrG5h" value="or2" />
+        </node>
+      </node>
+      <node concept="gY_dk" id="4$3mDZ0lFj9" role="gT3TO">
+        <property role="TrG5h" value="none" />
+        <node concept="2EHzL6" id="4$3mDZ0lI9_" role="gT3TT">
+          <node concept="19$8ne" id="4$3mDZ0lIaa" role="3TlMhJ">
+            <node concept="2qVrgw" id="4$3mDZ0lIb4" role="1_9fRO">
+              <ref role="2qVrgz" node="4$3mDZ0lFj2" resolve="or2" />
+            </node>
+          </node>
+          <node concept="19$8ne" id="4$3mDZ0lGks" role="3TlMhI">
+            <node concept="2qVrgw" id="4$3mDZ0lGkK" role="1_9fRO">
+              <ref role="2qVrgz" node="4$3mDZ0lEjx" resolve="or1" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="Id4hS" id="44j14BGT86R" role="Idr$j">
       <property role="TrG5h" value="XorFeaturesInConflict3" />
       <node concept="28I2Iu" id="44j14BGT86S" role="Id4hT">

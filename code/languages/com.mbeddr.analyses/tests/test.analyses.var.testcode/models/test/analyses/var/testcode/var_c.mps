@@ -6,11 +6,11 @@
     <use id="017fba0e-af15-4a23-b0a8-02b5c1141e75" name="com.mbeddr.cc.var.annotations" version="-1" />
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
     <use id="634736cf-ea73-4eb1-abe9-d2ecc5fcf837" name="com.mbeddr.cc.var.c" version="-1" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <devkit ref="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   </languages>
   <imports />
@@ -595,7 +595,7 @@
     </node>
     <node concept="N3Fnx" id="44j14BHp6Q9" role="N3F5h">
       <property role="TrG5h" value="boo" />
-      <property role="2OOxQR" value="false" />
+      <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="44j14BHp6Qb" role="3XIRFX">
         <node concept="3XISUE" id="44j14BHp6Qc" role="3XIRFZ" />
       </node>
@@ -1027,6 +1027,27 @@
   </node>
   <node concept="N3F5e" id="3ws79lb9vpN">
     <property role="TrG5h" value="AnotherModule" />
+    <node concept="N3Fnx" id="4$3mDZ0mVSd" role="N3F5h">
+      <property role="TrG5h" value="funCalling" />
+      <property role="2OOxQR" value="false" />
+      <node concept="3XIRFW" id="4$3mDZ0mVSf" role="3XIRFX">
+        <node concept="1_9egQ" id="4$3mDZ0mVZV" role="3XIRFZ">
+          <node concept="3O_q_g" id="4$3mDZ0mVZT" role="1_9egR">
+            <ref role="3O_q_h" node="44j14BHp6Q9" resolve="boo" />
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="4$3mDZ0mVQ2" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="3GEVxB" id="4$3mDZ0mVSD" role="2OODSX">
+      <ref role="3GEb4d" node="44j14BHp5_1" resolve="FM1_04" />
+    </node>
+    <node concept="2dvl_R" id="4$3mDZ0mWhj" role="lGtFl">
+      <ref role="2dvl_Q" node="44j14BH1ANL" resolve="FM1" />
+    </node>
   </node>
 </model>
 

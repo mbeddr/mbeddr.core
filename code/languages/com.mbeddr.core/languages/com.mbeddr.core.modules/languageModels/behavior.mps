@@ -30,17 +30,17 @@
     <import index="if8w" ref="r:95397225-9080-48bc-b1aa-0ce7c4f3d2ce(jetbrains.mps.lang.traceable.behavior)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
+    <import index="9m56" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.traceInfo(jetbrains.mps.generator.traceInfo@java_stub)" />
     <import index="t3eg" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(org.jetbrains.mps.openapi.language@java_stub)" />
+    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(java.util@java_stub)" />
+    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(java.lang@java_stub)" />
+    <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="lgzw" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.regex(java.util.regex@java_stub)" />
     <import index="grvc" ref="r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node.behavior)" />
-    <import index="9m56" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.traceInfo(MPS.Core/jetbrains.mps.generator.traceInfo@java_stub)" />
     <import index="u8e7" ref="r:4acb4e42-0ef5-487c-a21d-496738d115a6(com.mbeddr.mpsutil.breadcrumb.behavior)" />
     <import index="epq1" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.math(JDK/java.math@java_stub)" />
     <import index="ierg" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.textgen.trace(MPS.Core/jetbrains.mps.textgen.trace@java_stub)" />
-    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
-    <import index="lgzw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.regex(JDK/java.util.regex@java_stub)" />
-    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(java.lang@java_stub)" implicit="true" />
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
+    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="dd55" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.cache(MPS.Core/jetbrains.mps.generator.cache@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -816,21 +816,53 @@
             <node concept="2HxqBE" id="1H6zsul9qBi" role="2OqNvi">
               <node concept="1bVj0M" id="1H6zsul9qBk" role="23t8la">
                 <node concept="3clFbS" id="1H6zsul9qBl" role="1bW5cS">
-                  <node concept="3clFbF" id="1H6zsul9qBt" role="3cqZAp">
-                    <node concept="2OqwBi" id="1H6zsul9qBu" role="3clFbG">
-                      <node concept="1PxgMI" id="1H6zsul9qSq" role="2Oq$k0">
+                  <node concept="3cpWs8" id="11FSXkD_8hZ" role="3cqZAp">
+                    <node concept="3cpWsn" id="11FSXkD_8i0" role="3cpWs9">
+                      <property role="TrG5h" value="mc" />
+                      <node concept="3Tqbb2" id="11FSXkD_8hT" role="1tU5fm">
+                        <ref role="ehGHo" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+                      </node>
+                      <node concept="1PxgMI" id="11FSXkD_8i1" role="33vP2m">
                         <ref role="1PxNhF" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
-                        <node concept="2OqwBi" id="1H6zsul9qSr" role="1PxMeX">
-                          <node concept="37vLTw" id="1H6zsul9qSs" role="2Oq$k0">
+                        <node concept="2OqwBi" id="11FSXkD_8i2" role="1PxMeX">
+                          <node concept="37vLTw" id="11FSXkD_8i3" role="2Oq$k0">
                             <ref role="3cqZAo" node="1H6zsul9qBx" resolve="it" />
                           </node>
-                          <node concept="2qgKlT" id="1H6zsul9qSt" role="2OqNvi">
+                          <node concept="2qgKlT" id="11FSXkD_8i4" role="2OqNvi">
                             <ref role="37wK5l" to="hwgx:7jSUHHvkAph" resolve="referencedModuleContent" />
                           </node>
                         </node>
                       </node>
-                      <node concept="3TrcHB" id="1H6zsul9qBw" role="2OqNvi">
-                        <ref role="3TsBF5" to="x27k:19a6$uAA0vK" resolve="exported" />
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="1H6zsul9qBt" role="3cqZAp">
+                    <node concept="22lmx$" id="11FSXkD_kXd" role="3clFbG">
+                      <node concept="2OqwBi" id="11FSXkD_nBu" role="3uHU7w">
+                        <node concept="2OqwBi" id="11FSXkD_mbB" role="2Oq$k0">
+                          <node concept="37vLTw" id="11FSXkD_m5a" role="2Oq$k0">
+                            <ref role="3cqZAo" node="11FSXkD_8i0" resolve="mc" />
+                          </node>
+                          <node concept="2Xjw5R" id="11FSXkD_naR" role="2OqNvi">
+                            <node concept="1xMEDy" id="11FSXkD_naT" role="1xVPHs">
+                              <node concept="chp4Y" id="11FSXkD_nlU" role="ri$Ld">
+                                <ref role="cht4Q" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="1mIQ4w" id="11FSXkD_oF4" role="2OqNvi">
+                          <node concept="chp4Y" id="11FSXkD_oST" role="cj9EA">
+                            <ref role="cht4Q" to="x27k:5jyom5fOqJ1" resolve="ExternalModule" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="1H6zsul9qBu" role="3uHU7B">
+                        <node concept="37vLTw" id="11FSXkD_8i5" role="2Oq$k0">
+                          <ref role="3cqZAo" node="11FSXkD_8i0" resolve="mc" />
+                        </node>
+                        <node concept="3TrcHB" id="1H6zsul9qBw" role="2OqNvi">
+                          <ref role="3TsBF5" to="x27k:19a6$uAA0vK" resolve="exported" />
+                        </node>
                       </node>
                     </node>
                   </node>

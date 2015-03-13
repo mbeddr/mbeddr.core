@@ -97,6 +97,9 @@
     <node concept="PrWs8" id="5hYHEwYdGbF" role="PzmwI">
       <ref role="PrY4T" node="5hYHEwYdCJ2" resolve="IFailuresAware" />
     </node>
+    <node concept="PrWs8" id="6V6S12czXIf" role="PzmwI">
+      <ref role="PrY4T" to="x27k:6V6S12clNH$" resolve="IDataFlowAnalyzerEntryPoint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5so5TTr6S9n">
     <property role="TrG5h" value="AssertStatement" />
@@ -111,6 +114,11 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expr" />
       <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3IOp39iz$4n" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expected" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>

@@ -139,6 +139,9 @@
     <node concept="PrWs8" id="1apscrrvEpE" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6xkj9mMr79" resolve="IVisualizationParticipant" />
     </node>
+    <node concept="PrWs8" id="2SinpB2pm7h" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
     <node concept="1TJgyj" id="5USXI9Kzbaj" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="constraint" />

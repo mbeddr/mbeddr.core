@@ -92,5 +92,40 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="1eEm1HSFMil">
+    <property role="TrG5h" value="toggleRegexBasedComparison" />
+    <ref role="2ZfgGC" to="o23b:49Y2Xia4eRR" resolve="CBMCCounterexampleStateTest" />
+    <node concept="2S6ZIM" id="1eEm1HSFMim" role="2ZfVej">
+      <node concept="3clFbS" id="1eEm1HSFMin" role="2VODD2">
+        <node concept="3clFbF" id="1eEm1HSFMio" role="3cqZAp">
+          <node concept="Xl_RD" id="1eEm1HSFMip" role="3clFbG">
+            <property role="Xl_RC" value="Toggle regex based comparison" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1eEm1HSFMiq" role="2ZfgGD">
+      <node concept="3clFbS" id="1eEm1HSFMir" role="2VODD2">
+        <node concept="3clFbF" id="1eEm1HSFMis" role="3cqZAp">
+          <node concept="37vLTI" id="1eEm1HSFMit" role="3clFbG">
+            <node concept="3fqX7Q" id="1eEm1HSFMiu" role="37vLTx">
+              <node concept="2OqwBi" id="1eEm1HSFMiv" role="3fr31v">
+                <node concept="2Sf5sV" id="1eEm1HSFMiw" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1eEm1HSFPIh" role="2OqNvi">
+                  <ref role="3TsBF5" to="o23b:1eEm1HSFKG_" resolve="isRegexBasedComparison" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1eEm1HSFMiy" role="37vLTJ">
+              <node concept="2Sf5sV" id="1eEm1HSFMiz" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1eEm1HSFPoN" role="2OqNvi">
+                <ref role="3TsBF5" to="o23b:1eEm1HSFKG_" resolve="isRegexBasedComparison" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

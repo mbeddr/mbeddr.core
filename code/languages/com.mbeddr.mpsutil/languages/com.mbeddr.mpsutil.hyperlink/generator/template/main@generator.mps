@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:8b25b4e4-924f-4796-9ca0-661e1c5a3a7e(com.mbeddr.mpsutil.hyperlink.generator.template.main@generator)">
+<model ref="f263788a-8d16-4b9c-82d2-2be1a7451248/r:8b25b4e4-924f-4796-9ca0-661e1c5a3a7e(com.mbeddr.mpsutil.hyperlink#144279664517180343/com.mbeddr.mpsutil.hyperlink.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="04e1f940-330e-483b-9a6a-1648b396a81c" name="com.mbeddr.mpsutil.hyperlink" version="-1" />

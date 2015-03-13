@@ -9,11 +9,11 @@
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
     <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
   </languages>
   <imports>
     <import index="q9ah" ref="r:881cd106-b9c3-33d3-8c69-9a76f591f92a(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)" implicit="true" />
@@ -724,9 +724,13 @@
     <node concept="rcJHK" id="5rA0tFk693Z" role="N3F5h">
       <property role="TrG5h" value="functionWithConstTypeDef" />
       <node concept="pFrBc" id="5rA0tFk6941" role="rcJHR">
-        <node concept="3wxxNl" id="5rA0tFk6944" role="pFrBb">
-          <property role="2c7vTL" value="true" />
-          <node concept="26Vqqz" id="5rA0tFk6943" role="2umbIo" />
+        <node concept="3wxxNl" id="5C6ntc8n6P9" role="pFrBb">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="26Vqqz" id="5rA0tFk6943" role="2umbIo">
+            <property role="2c7vTL" value="true" />
+            <property role="2caQfQ" value="false" />
+          </node>
         </node>
         <node concept="26Vqqz" id="5rA0tFk6945" role="pFrBa" />
       </node>
@@ -827,8 +831,10 @@
         </node>
       </node>
       <node concept="3wxxNl" id="1K9b7Eox7v4" role="2C2TGm">
-        <property role="2c7vTL" value="true" />
-        <node concept="26Vqqz" id="1K9b7Eox7uJ" role="2umbIo" />
+        <property role="2c7vTL" value="false" />
+        <node concept="26Vqqz" id="1K9b7Eox7uJ" role="2umbIo">
+          <property role="2c7vTL" value="true" />
+        </node>
       </node>
       <node concept="19RgSI" id="1K9b7Eoxaz4" role="1UOdpc">
         <property role="TrG5h" value="i" />
@@ -1036,8 +1042,8 @@
       <property role="TrG5h" value="main" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="bKKma6GNlK" role="3XIRFX">
-        <node concept="1_9egQ" id="bKKma6GNlX" role="3XIRFZ">
-          <node concept="3rBj6X" id="bKKma6GNlY" role="1_9egR">
+        <node concept="2BFjQ_" id="5C6ntc8n5jM" role="3XIRFZ">
+          <node concept="3rBj6X" id="bKKma6GNlY" role="2BFjQA">
             <node concept="3cM6IN" id="bKKma6GNm5" role="3cM6Hi">
               <ref role="3cM6IK" node="7qHzltJ0oHI" resolve="testFC" />
             </node>

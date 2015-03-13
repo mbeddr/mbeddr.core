@@ -8,6 +8,7 @@
   <imports>
     <import index="vj37" ref="r:4c272460-99ea-4d39-8c9a-f1bc63f0c386(mbeddr.tutorial.vectors.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
+    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -78,7 +79,7 @@
           <node concept="3clFbC" id="WxZteubghN" role="3clFbw">
             <node concept="28GBK8" id="WxZteubghQ" role="3uHU7w">
               <ref role="28GBKb" to="vj37:4LP87XufLdW" resolve="MatrixType" />
-              <ref role="28H3Ia" to="vj37:4LP87XufLdY" />
+              <ref role="28H3Ia" to="c4fa:6IWRcVPT6tm" />
             </node>
             <node concept="oXsJc" id="WxZteubghu" role="3uHU7B" />
           </node>

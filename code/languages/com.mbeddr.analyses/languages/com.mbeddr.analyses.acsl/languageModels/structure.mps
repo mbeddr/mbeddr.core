@@ -1,100 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:cdcd02c7-c183-4a14-baf5-bd6025a1a5a1(com.mbeddr.analyses.acsl.structure)">
-  <persistence version="8" />
-  <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
-  <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
-  <import index="97v6" modelUID="r:cdcd02c7-c183-4a14-baf5-bd6025a1a5a1(com.mbeddr.analyses.acsl.structure)" version="-1" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="36" implicit="yes" />
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3793213301909614895" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="FunctionContract" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="contract" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3793213301909617373" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="atomicContract" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="3793213301909615744" resolveInfo="IAtomicContract" />
+<model ref="r:cdcd02c7-c183-4a14-baf5-bd6025a1a5a1(com.mbeddr.analyses.acsl.structure)">
+  <persistence version="9" />
+  <languages>
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+  </languages>
+  <imports>
+    <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
+        <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+        <child id="7588428831947959310" name="attributed" index="EQaZv" />
+      </concept>
+      <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+      </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
+      <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
+        <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
+        <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <reference id="1071599976176" name="target" index="20lvS9" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1TIwiD" id="3i$cQqpAZ4J">
+    <property role="TrG5h" value="FunctionContract" />
+    <property role="3GE5qa" value="contract" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="3i$cQqpAZFt" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="atomicContract" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3i$cQqpAZi0" resolve="IAtomicContract" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="3793213301909614948" nodeInfo="ng">
-      <property name="role" nameId="tpce.7588428831955550663" value="acslContract" />
-      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="3793213301909615733" nodeInfo="ng">
-        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="x27k.6437088627575724001" resolveInfo="Function" />
+    <node concept="M6xJ_" id="3i$cQqpAZ5$" role="lGtFl">
+      <property role="Hh88m" value="acslContract" />
+      <node concept="trNpa" id="3i$cQqpAZhP" role="EQaZv">
+        <ref role="trN6q" to="x27k:5_l8w1EmTvx" resolve="Function" />
       </node>
     </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3793213301909615744" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="IAtomicContract" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="contract" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3793213301910272299" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="exp" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+  </node>
+  <node concept="PlHQZ" id="3i$cQqpAZi0">
+    <property role="TrG5h" value="IAtomicContract" />
+    <property role="3GE5qa" value="contract" />
+  </node>
+  <node concept="1TIwiD" id="3i$cQqpAZi1">
+    <property role="TrG5h" value="Requires" />
+    <property role="34LRSv" value="requires" />
+    <property role="3GE5qa" value="contract" />
+    <ref role="1TJDcQ" to="q5q6:637qsduSbtp" resolve="Assert" />
+    <node concept="PrWs8" id="3i$cQqpAZi7" role="PzmwI">
+      <ref role="PrY4T" node="3i$cQqpAZi0" resolve="IAtomicContract" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3793213301909615745" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Requires" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="requires" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="contract" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3793213301909615751" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3793213301909615744" resolveInfo="IAtomicContract" />
+  </node>
+  <node concept="1TIwiD" id="3i$cQqpBFRf">
+    <property role="TrG5h" value="Result" />
+    <property role="34LRSv" value="\result" />
+    <property role="3GE5qa" value="contract.expressions" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="10dmWHguUMg" role="PzmwI">
+      <ref role="PrY4T" node="10dmWHguUbZ" resolve="IContractSpecificExpression" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3793213301909798351" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Result" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\result" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="contract.expressions" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1156681608090856592" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1156681608090854143" resolveInfo="IContractSpecificExpression" />
+  </node>
+  <node concept="1TIwiD" id="3i$cQqpDvoP">
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="Ensures" />
+    <property role="34LRSv" value="ensures" />
+    <ref role="1TJDcQ" to="q5q6:637qsduSbtp" resolve="Assert" />
+    <node concept="PrWs8" id="3i$cQqpDv$S" role="PzmwI">
+      <ref role="PrY4T" node="3i$cQqpAZi0" resolve="IAtomicContract" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3793213301910271541" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="contract" />
-    <property name="name" nameId="tpck.1169194664001" value="Ensures" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="ensures" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3793213301910272312" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3793213301909615744" resolveInfo="IAtomicContract" />
+  </node>
+  <node concept="1TIwiD" id="10dmWHguUbf">
+    <property role="3GE5qa" value="contract.expressions" />
+    <property role="TrG5h" value="Old" />
+    <property role="34LRSv" value="\old" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="10dmWHguUMj" role="PzmwI">
+      <ref role="PrY4T" node="10dmWHguUbZ" resolve="IContractSpecificExpression" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1156681608090854095" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="contract.expressions" />
-    <property name="name" nameId="tpck.1169194664001" value="Old" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\old" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1156681608090856595" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1156681608090854143" resolveInfo="IContractSpecificExpression" />
+    <node concept="1TJgyj" id="10dmWHguUMp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
     </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1156681608090856601" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="var" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.2047364827736357258" resolveInfo="IVariableReference" />
+  </node>
+  <node concept="PlHQZ" id="10dmWHguUbZ">
+    <property role="3GE5qa" value="contract.expressions" />
+    <property role="TrG5h" value="IContractSpecificExpression" />
+  </node>
+  <node concept="1TIwiD" id="10dmWHgveYy">
+    <property role="3GE5qa" value="contract.expressions" />
+    <property role="TrG5h" value="Valid" />
+    <property role="34LRSv" value="\valid" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="10dmWHgveZp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
     </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1156681608090854143" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="contract.expressions" />
-    <property name="name" nameId="tpck.1169194664001" value="IContractSpecificExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1156681608090939298" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="contract.expressions" />
-    <property name="name" nameId="tpck.1169194664001" value="Valid" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="\valid" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1156681608090939353" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="var" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.2047364827736357258" resolveInfo="IVariableReference" />
+    <node concept="PrWs8" id="10dmWHgveZm" role="PzmwI">
+      <ref role="PrY4T" node="10dmWHguUbZ" resolve="IContractSpecificExpression" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1156681608090939350" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1156681608090854143" resolveInfo="IContractSpecificExpression" />
-    </node>
-  </root>
+  </node>
 </model>
 

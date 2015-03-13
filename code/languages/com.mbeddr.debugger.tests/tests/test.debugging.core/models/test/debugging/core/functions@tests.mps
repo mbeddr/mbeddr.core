@@ -8,10 +8,10 @@
     <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
   </languages>
   <imports>
     <import index="dan2" ref="r:0052eeda-86db-45e8-9a6b-3d8faf11e9a3(test.debugging.cross.tests@tests)" />
@@ -381,7 +381,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m75" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m76" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m77" role="3sdZbB">
-          <ref role="3sa5fj" node="bKKma6GLDp" resolve="2ndStmntIn2ndCalledFunc" />
+          <ref role="3sa5fj" node="5C6ntc8n9ZM" resolve="2ndStmntIn2ndCalledFunc" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m78" role="3savwP">
@@ -412,7 +412,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m9T" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m9U" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m9V" role="3sdZbB">
-          <ref role="3sa5fj" node="bKKma6GLDp" resolve="2ndStmntIn2ndCalledFunc" />
+          <ref role="3sa5fj" node="5C6ntc8n9ZM" resolve="2ndStmntIn2ndCalledFunc" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m9W" role="3savwP">
@@ -605,16 +605,16 @@
             </node>
           </node>
         </node>
-        <node concept="1_9egQ" id="bKKma6GLDl" role="3XIRFZ">
-          <node concept="2BOciq" id="bKKma6GLDm" role="1_9egR">
-            <node concept="3ZVu4v" id="bKKma6GLDn" role="3TlMhJ">
+        <node concept="2BFjQ_" id="5C6ntc8n8Gp" role="3XIRFZ">
+          <node concept="2BOciq" id="5C6ntc8n9Fb" role="2BFjQA">
+            <node concept="3ZVu4v" id="5C6ntc8n9Fe" role="3TlMhJ">
               <ref role="3ZVs_2" node="bKKma6GLDg" resolve="a" />
             </node>
-            <node concept="3TlMh9" id="bKKma6GLDo" role="3TlMhI">
+            <node concept="3TlMh9" id="5C6ntc8n90O" role="3TlMhI">
               <property role="2hmy$m" value="1" />
             </node>
           </node>
-          <node concept="3cQ7KT" id="bKKma6GLDp" role="lGtFl">
+          <node concept="3cQ7KT" id="5C6ntc8n9ZM" role="lGtFl">
             <property role="TrG5h" value="2ndStmntIn2ndCalledFunc" />
           </node>
         </node>

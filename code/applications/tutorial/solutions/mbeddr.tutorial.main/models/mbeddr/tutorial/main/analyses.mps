@@ -952,9 +952,20 @@
     <property role="2lUGbD" value="none" />
     <property role="2lUGcN" value="false" />
     <property role="2l50Mm" value="false" />
-    <property role="TrG5h" value="BasicVerificationConfiguration" />
+    <property role="TrG5h" value="BasicAnalyses" />
     <node concept="3GEVxB" id="1yZWpD4x5E7" role="3W6d8T">
       <ref role="3GEb4d" node="1yZWpD4uVdu" resolve="BasicVerification" />
+    </node>
+    <node concept="1nvAUC" id="3j3yk3gTBE3" role="3V$2$K">
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2l50Mm" value="false" />
+      <ref role="3V$Cn$" node="3j3yk3gTswO" resolve="dectab" />
+      <ref role="1nvAUD" node="3j3yk3gTswO" resolve="dectab" />
     </node>
     <node concept="1nvAUE" id="1yZWpD4x5Ed" role="3V$2$K">
       <property role="2lUGeZ" value="true" />
@@ -972,17 +983,6 @@
       <property role="1nvAUB" value="true" />
       <property role="2o64iB" value="true" />
       <ref role="3V$Cn$" node="1yZWpD4v1fN" resolve="addv" />
-    </node>
-    <node concept="1nvAUC" id="3j3yk3gTBE3" role="3V$2$K">
-      <property role="2lUGeZ" value="true" />
-      <property role="2lUGdP" value="false" />
-      <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="none" />
-      <property role="2l50Ka" value="none" />
-      <property role="2l50Km" value="none" />
-      <property role="2l50Mm" value="false" />
-      <ref role="3V$Cn$" node="3j3yk3gTswO" resolve="dectab" />
-      <ref role="1nvAUD" node="3j3yk3gTswO" resolve="dectab" />
     </node>
   </node>
   <node concept="3uEX16" id="3sPnzfj1gkn">
@@ -1034,10 +1034,10 @@
       <property role="2lUGbD" value="1000" />
       <property role="1nvAU_" value="true" />
       <property role="1nvAUF" value="true" />
-      <property role="1nvAU$" value="true" />
       <property role="1nvAUA" value="true" />
       <property role="2l50Ka" value="55" />
       <property role="2l50Km" value="60" />
+      <property role="1nvAUB" value="true" />
       <ref role="3V$Cn$" node="3iuCLRa88fs" resolve="flightAnalyzerVerification" />
     </node>
   </node>

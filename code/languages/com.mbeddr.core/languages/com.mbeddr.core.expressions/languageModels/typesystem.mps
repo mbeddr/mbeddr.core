@@ -391,6 +391,7 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -5534,11 +5535,11 @@
                                 <property role="Xl_RC" value="invalid operands to binary " />
                               </node>
                               <node concept="2OqwBi" id="5HxjapwgtFW" role="3uHU7w">
-                                <node concept="3TrcHB" id="5HxjapwgtFX" role="2OqNvi">
+                                <node concept="3TrcHB" id="5ZDGpDSguLK" role="2OqNvi">
                                   <ref role="3TsBF5" to="tpce:4qF2Hm2r7ja" resolve="conceptAlias" />
                                 </node>
                                 <node concept="2OqwBi" id="5HxjapwgtFY" role="2Oq$k0">
-                                  <node concept="3NT_Vc" id="5HxjapwgtFZ" role="2OqNvi" />
+                                  <node concept="3NT_Vc" id="5ZDGpDSgufb" role="2OqNvi" />
                                   <node concept="1YBJjd" id="5HxjapwgtG0" role="2Oq$k0">
                                     <ref role="1YBMHb" node="1exqRp9kgq" resolve="ae" />
                                   </node>
@@ -5559,10 +5560,10 @@
                                   <ref role="3Tt5mk" to="mj1l:7FQByU3CrD0" />
                                 </node>
                               </node>
-                              <node concept="3NT_Vc" id="2TykyszIe2m" role="2OqNvi" />
+                              <node concept="2yIwOk" id="5ZDGpDS2ivL" role="2OqNvi" />
                             </node>
-                            <node concept="3TrcHB" id="2TykyszIe2V" role="2OqNvi">
-                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                            <node concept="liA8E" id="5ZDGpDS2iOW" role="2OqNvi">
+                              <ref role="37wK5l" to="t3eg:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
                             </node>
                           </node>
                         </node>
@@ -5580,10 +5581,10 @@
                               <ref role="3Tt5mk" to="mj1l:7FQByU3CrD1" />
                             </node>
                           </node>
-                          <node concept="3NT_Vc" id="2TykyszIe3o" role="2OqNvi" />
+                          <node concept="2yIwOk" id="5ZDGpDS2jx1" role="2OqNvi" />
                         </node>
-                        <node concept="3TrcHB" id="2TykyszIe43" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        <node concept="liA8E" id="5ZDGpDS2jQc" role="2OqNvi">
+                          <ref role="37wK5l" to="t3eg:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
                         </node>
                       </node>
                     </node>

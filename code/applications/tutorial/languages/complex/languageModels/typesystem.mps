@@ -263,5 +263,32 @@
       </node>
     </node>
   </node>
+  <node concept="1YbPZF" id="3yoEvFpEyqf">
+    <property role="TrG5h" value="typeof_ComplexTypeAccess" />
+    <node concept="3clFbS" id="3yoEvFpEyqg" role="18ibNy">
+      <node concept="1Z5TYs" id="3yoEvFpEyue" role="3cqZAp">
+        <node concept="mw_s8" id="3yoEvFpEyu_" role="1ZfhKB">
+          <node concept="2ShNRf" id="3yoEvFpEyux" role="mwGJk">
+            <node concept="3zrR0B" id="3yoEvFpEySi" role="2ShVmc">
+              <node concept="3Tqbb2" id="3yoEvFpEySk" role="3zrR0E">
+                <ref role="ehGHo" to="mj1l:7G6iUFOh4op" resolve="DoubleType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3yoEvFpEyuh" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3yoEvFpEyqp" role="mwGJk">
+            <node concept="1YBJjd" id="3yoEvFpEys4" role="1Z2MuG">
+              <ref role="1YBMHb" node="3yoEvFpEyqi" resolve="complexTypeAccess" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3yoEvFpEyqi" role="1YuTPh">
+      <property role="TrG5h" value="complexTypeAccess" />
+      <ref role="1YaFvo" to="d47x:3yoEvFpEd7m" resolve="ComplexTypeAccess" />
+    </node>
+  </node>
 </model>
 

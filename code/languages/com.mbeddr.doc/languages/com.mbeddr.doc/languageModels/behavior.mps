@@ -27,9 +27,7 @@
     <import index="tpy3" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.tempmodel(MPS.Core/jetbrains.mps.smodel.tempmodel@java_stub)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="u8e7" ref="r:4acb4e42-0ef5-487c-a21d-496738d115a6(com.mbeddr.mpsutil.breadcrumb.behavior)" />
-    <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
-    <import index="dbrf" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" implicit="true" />
   </imports>
@@ -7538,6 +7536,31 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="aiIotWBg4O">
+    <property role="3GE5qa" value="structure" />
+    <ref role="13h7C2" to="2c95:3DAECxG6nQE" resolve="Chapter" />
+    <node concept="13hLZK" id="aiIotWBg4P" role="13h7CW">
+      <node concept="3clFbS" id="aiIotWBg4Q" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="aiIotWBg4R" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getSectionIndexText" />
+      <ref role="13i0hy" to="u8e7:4o4$mVTwnPA" resolve="getBookmarkText" />
+      <node concept="3Tm1VV" id="aiIotWBg4S" role="1B3o_S" />
+      <node concept="3clFbS" id="aiIotWBg4Z" role="3clF47">
+        <node concept="3clFbF" id="aiIotWBg6u" role="3cqZAp">
+          <node concept="2OqwBi" id="aiIotWBgnx" role="3clFbG">
+            <node concept="13iPFW" id="aiIotWBg6p" role="2Oq$k0" />
+            <node concept="2qgKlT" id="aiIotWBhec" role="2OqNvi">
+              <ref role="37wK5l" to="u8e7:3JrMqIyfmQ4" resolve="getBreadcrumbText" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="aiIotWBg50" role="3clF45" />
     </node>
   </node>
 </model>

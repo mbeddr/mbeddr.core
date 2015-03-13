@@ -42,6 +42,8 @@
     </language>
     <language id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring">
       <concept id="3897771026684493688" name="com.mbeddr.mpsutil.refactoring.structure.ProjectionModeSwitcher" flags="ng" index="33ghlw">
+        <property id="3897771026684496947" name="pushNothing" index="33gmoF" />
+        <property id="6445798029994313462" name="nothingLabel" index="1QNlnu" />
         <reference id="8575378964582005791" name="requiredConcept" index="2hhq6$" />
         <child id="8575378964581617586" name="modification" index="2hfP89" />
         <child id="8575378964581602954" name="options" index="2hfSGL" />
@@ -83,11 +85,18 @@
   </node>
   <node concept="33ghlw" id="3onExzPFzTC">
     <property role="TrG5h" value="statemachineTables" />
+    <property role="33gmoF" value="true" />
+    <property role="1QNlnu" value="Statemachines textually" />
     <ref role="2hhq6$" to="clqz:50Lk78xBr9L" resolve="Statemachine" />
     <node concept="33gmoH" id="3onExzPFzTD" role="2hfSGL">
       <property role="33g7Lv" value="Statemachines as Tables" />
       <ref role="33glcW" to="know:kJtP4FZyTc" resolve="statemachineStuff" />
       <ref role="33glcY" to="know:kJtP4FZ$9n" resolve="table" />
+    </node>
+    <node concept="33gmoH" id="3$Bjl9PYpTD" role="2hfSGL">
+      <property role="33g7Lv" value="Statemachines graphically" />
+      <ref role="33glcW" to="know:kJtP4FZyTc" resolve="statemachineStuff" />
+      <ref role="33glcY" to="know:4UHO8tvAVAD" resolve="graphical" />
     </node>
     <node concept="tT9cl" id="3onExzPFI72" role="2hfP89">
       <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />

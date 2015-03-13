@@ -21,6 +21,15 @@
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <reference id="1083241965437" name="defaultMember" index="Qgau1" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
       <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
         <property id="7588428831955550663" name="role" index="Hh88m" />
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
@@ -241,6 +250,9 @@
     </node>
     <node concept="PrWs8" id="2h5hmpsCHWP" role="PzmwI">
       <ref role="PrY4T" node="2h5hmpsyQcW" resolve="IFunctionLikeReducedToSingleFunction" />
+    </node>
+    <node concept="PrWs8" id="6V6S12clNLY" role="PzmwI">
+      <ref role="PrY4T" node="6V6S12clNH$" resolve="IDataFlowAnalyzerEntryPoint" />
     </node>
   </node>
   <node concept="1TIwiD" id="6Q7bJ$$my3n">
@@ -682,6 +694,11 @@
   </node>
   <node concept="PlHQZ" id="7kKaL9x4DZT">
     <property role="TrG5h" value="IArgumentLike" />
+    <node concept="1TJgyj" id="L2WnbQO2tQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="kind" />
+      <ref role="20lvS9" node="L2WnbQO1DI" resolve="ArgumentKindContainer" />
+    </node>
     <node concept="PrWs8" id="4k0bDztzB$z" role="PrDN$">
       <ref role="PrY4T" to="vs0r:2GIWVTRH8Wo" resolve="IControlledNamedConcept" />
     </node>
@@ -1170,10 +1187,10 @@
       <ref role="20lvS9" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4$VRXeIntoP">
-    <property role="TrG5h" value="ExpressionDepth" />
+  <node concept="1TIwiD" id="4$VRXeGZt7K">
+    <property role="TrG5h" value="FunctionStatementMetric" />
     <property role="3GE5qa" value="metrics" />
-    <property role="34LRSv" value="expression depth" />
+    <property role="34LRSv" value="statements in IFunctionLike" />
     <ref role="1TJDcQ" to="vs0r:4$VRXeHdyxr" resolve="Metric" />
   </node>
   <node concept="1TIwiD" id="4$VRXeIgi6G">
@@ -1182,11 +1199,55 @@
     <property role="34LRSv" value="cyclomatic complexity" />
     <ref role="1TJDcQ" to="vs0r:4$VRXeHdyxr" resolve="Metric" />
   </node>
-  <node concept="1TIwiD" id="4$VRXeGZt7K">
-    <property role="TrG5h" value="FunctionStatementMetric" />
+  <node concept="1TIwiD" id="4$VRXeIntoP">
+    <property role="TrG5h" value="ExpressionDepth" />
     <property role="3GE5qa" value="metrics" />
-    <property role="34LRSv" value="statements in IFunctionLike" />
+    <property role="34LRSv" value="expression depth" />
     <ref role="1TJDcQ" to="vs0r:4$VRXeHdyxr" resolve="Metric" />
+  </node>
+  <node concept="1TIwiD" id="L2WnbQO1DI">
+    <property role="3GE5qa" value="functions" />
+    <property role="TrG5h" value="ArgumentKindContainer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="L2WnbQO1I2" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" node="3_CPcn39dht" resolve="ArgumentKind" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="T6zAqDO4AQ">
+    <property role="TrG5h" value="CommentModuleContent" />
+    <property role="34LRSv" value="//" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="T6zAqDO5LY" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="vs0r:7gVrg_0tw6m" resolve="TextBlock" />
+    </node>
+    <node concept="PrWs8" id="T6zAqDO5$S" role="PzmwI">
+      <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="3_CPcn39dht">
+    <property role="3GE5qa" value="functions" />
+    <property role="TrG5h" value="ArgumentKind" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <ref role="Qgau1" node="3_CPcn39dwy" />
+    <node concept="M4N5e" id="3_CPcn39dwy" role="M5hS2">
+      <property role="1uS6qo" value="IN" />
+      <property role="1uS6qv" value="0" />
+    </node>
+    <node concept="M4N5e" id="3_CPcn39d$G" role="M5hS2">
+      <property role="1uS6qo" value="OUT" />
+      <property role="1uS6qv" value="1" />
+    </node>
+    <node concept="M4N5e" id="3_CPcn39d$L" role="M5hS2">
+      <property role="1uS6qo" value="INOUT" />
+      <property role="1uS6qv" value="2" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6V6S12clNH$">
+    <property role="TrG5h" value="IDataFlowAnalyzerEntryPoint" />
   </node>
 </model>
 

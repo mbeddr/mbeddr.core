@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil.behavior)">
+<model ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.behavior)">
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
@@ -7,14 +7,14 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="hba4" ref="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
-    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" />
+    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="tpce" ref="c72da2b9-7cce-4447-8389-f407dc1158b7/r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure/jetbrains.mps.lang.structure.structure)" />
+    <import index="tp25" ref="7866978e-a0f0-4cc7-81bc-4d213d9375e1/r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel/jetbrains.mps.lang.smodel.structure)" />
+    <import index="tpee" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.structure)" />
+    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -1634,34 +1634,6 @@
       <node concept="3clFbS" id="5yvl18Nb_e8" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="6T8h1s23DT6">
-    <property role="3GE5qa" value="typeswitch" />
-    <ref role="13h7C2" to="hba4:6T8h1s23DMd" resolve="TypeSwitchCaseVariableDeclaration" />
-    <node concept="13hLZK" id="6T8h1s23DT7" role="13h7CW">
-      <node concept="3clFbS" id="6T8h1s23DT8" role="2VODD2">
-        <node concept="3clFbF" id="6T8h1s23DT9" role="3cqZAp">
-          <node concept="37vLTI" id="6T8h1s23DUe" role="3clFbG">
-            <node concept="Xl_RD" id="6T8h1s23DUh" role="37vLTx">
-              <property role="Xl_RC" value="it" />
-            </node>
-            <node concept="2OqwBi" id="6T8h1s23DTN" role="37vLTJ">
-              <node concept="13iPFW" id="6T8h1s23DTa" role="2Oq$k0" />
-              <node concept="3TrcHB" id="6T8h1s23DTS" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="13h7C7" id="6T8h1s23Q8H">
-    <property role="3GE5qa" value="typeswitch" />
-    <ref role="13h7C2" to="hba4:6T8h1s237Tf" resolve="TypeSwitch" />
-    <node concept="13hLZK" id="6T8h1s23Q8I" role="13h7CW">
-      <node concept="3clFbS" id="6T8h1s23Q8J" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="5EJ7vKJwv1M">
     <property role="3GE5qa" value="mr" />
     <ref role="13h7C2" to="hba4:5EJ7vKJ4DcG" resolve="MapOrReducePhase" />
@@ -2085,6 +2057,34 @@
       <node concept="3Tm1VV" id="243ufko$Aus" role="1B3o_S" />
       <node concept="3cqZAl" id="243ufko$Aut" role="3clF45" />
       <node concept="3clFbS" id="243ufko$Auu" role="3clF47" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6HZ4hJtXVuq">
+    <property role="3GE5qa" value="typeswitch" />
+    <ref role="13h7C2" to="hba4:6HZ4hJtXUEI" resolve="TypeSwitchVariable" />
+    <node concept="13hLZK" id="6HZ4hJtXVur" role="13h7CW">
+      <node concept="3clFbS" id="6HZ4hJtXVus" role="2VODD2">
+        <node concept="3clFbF" id="6HZ4hJtXVv_" role="3cqZAp">
+          <node concept="37vLTI" id="6HZ4hJtXVvA" role="3clFbG">
+            <node concept="Xl_RD" id="6HZ4hJtXVvB" role="37vLTx">
+              <property role="Xl_RC" value="it" />
+            </node>
+            <node concept="2OqwBi" id="6HZ4hJtXVvC" role="37vLTJ">
+              <node concept="13iPFW" id="6HZ4hJtXVvD" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6HZ4hJtXVvE" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="6HZ4hJu2hxo">
+    <property role="3GE5qa" value="typeswitch" />
+    <ref role="13h7C2" to="hba4:6HZ4hJtJnMa" resolve="TypeSwitchCaseMapping" />
+    <node concept="13hLZK" id="6HZ4hJu2hxp" role="13h7CW">
+      <node concept="3clFbS" id="6HZ4hJu2hxq" role="2VODD2" />
     </node>
   </node>
 </model>

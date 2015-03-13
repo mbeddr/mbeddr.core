@@ -13,6 +13,7 @@
     <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
     <import index="nu8v" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
+    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -237,7 +238,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4LP87XueIK8" role="3EZMnx">
-        <ref role="1NtTu8" to="vj37:4LP87XufLdY" />
+        <ref role="1NtTu8" to="c4fa:6IWRcVPT6tm" />
       </node>
       <node concept="3F0ifn" id="4LP87XueIKa" role="3EZMnx">
         <property role="3F0ifm" value="," />
@@ -964,7 +965,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="5TPCPz$cJOs" role="3EZMnx">
-        <ref role="1NtTu8" to="vj37:4LP87XufLdY" />
+        <ref role="1NtTu8" to="c4fa:6IWRcVPT6tm" />
       </node>
       <node concept="3F0ifn" id="KfIhkXfM7r" role="3EZMnx">
         <property role="3F0ifm" value="," />
@@ -1015,6 +1016,34 @@
         </node>
         <node concept="2P5D8e" id="5m6Ww85tEq3" role="3F10Kt">
           <property role="2P5D8c" value="SUPERSCRIPT" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3yoEvFpCOEy">
+    <property role="3GE5qa" value="matrix" />
+    <ref role="1XX52x" to="vj37:3yoEvFpCNm0" resolve="MatrixAccessExpression" />
+    <node concept="3EZMnI" id="3yoEvFpCOJK" role="2wV5jI">
+      <node concept="l2Vlx" id="3yoEvFpCOJL" role="2iSdaV" />
+      <node concept="3F1sOY" id="3yoEvFpCOJH" role="3EZMnx">
+        <ref role="1NtTu8" to="mj1l:6iIoqg1yDLg" />
+      </node>
+      <node concept="3F0ifn" id="3yoEvFpCOJT" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11L4FC" id="3yoEvFpCOLT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="3yoEvFpCONA" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="3yoEvFpCOK1" role="3EZMnx">
+        <ref role="1NtTu8" to="vj37:3yoEvFpCOE9" />
+      </node>
+      <node concept="3F0ifn" id="3yoEvFpCOKb" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="11L4FC" id="3yoEvFpCOPi" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
     </node>

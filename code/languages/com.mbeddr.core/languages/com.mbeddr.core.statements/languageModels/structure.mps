@@ -176,6 +176,12 @@
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="3hOuikE$B96" resolve="Iterator" />
     </node>
+    <node concept="1TJgyj" id="58TcxRGjGp_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="additionalIterators" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3hOuikE$B96" resolve="Iterator" />
+    </node>
     <node concept="1TJgyj" id="6iIoqg1xKT3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="condition" />
@@ -185,7 +191,7 @@
     <node concept="1TJgyj" id="6iIoqg1xKT6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="incr" />
-      <property role="20lbJX" value="0..1" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="6iIoqg1xKT8" role="PzmwI">
@@ -258,7 +264,7 @@
     <node concept="1TJgyj" id="2I09F8VK$gF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="elsePart" />
-      <ref role="20lvS9" node="3CmSUB7Fp_l" resolve="StatementList" />
+      <ref role="20lvS9" node="1iWV611dFzA" resolve="ElsePart" />
     </node>
     <node concept="1TJgyj" id="2I09F8VKBez" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -771,6 +777,29 @@
       <property role="20kJfa" value="baseType" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpck:hYa1RjM" resolve="IType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1iWV611dFzA">
+    <property role="3GE5qa" value="if" />
+    <property role="TrG5h" value="ElsePart" />
+    <property role="34LRSv" value="else" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1iWV611dFCL" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="58TcxRGrgC2">
+    <property role="3GE5qa" value="loopsNStuff" />
+    <property role="TrG5h" value="AdditionalForVarDecl" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="58TcxRGrgC3" role="PzmwI">
+      <ref role="PrY4T" node="3hOuikE$B96" resolve="Iterator" />
+    </node>
+    <node concept="PrWs8" id="58TcxRGrgCb" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
   </node>
 </model>

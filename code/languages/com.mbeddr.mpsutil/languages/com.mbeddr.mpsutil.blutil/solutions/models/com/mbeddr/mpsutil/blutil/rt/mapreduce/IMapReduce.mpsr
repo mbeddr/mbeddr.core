@@ -1,50 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:6c5cca1d-3f93-41ca-9d02-70039dd7722f(com.mbeddr.mpsutil.blutil.rt.mapreduce)" content="root">
-  <persistence version="8" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="yes" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="yes" />
-  <root type="tpee.Interface" typeId="tpee.1107796713796" id="6534474553326848473" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="IMapReduce" />
-    <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="6534474553326848564" nodeInfo="igu">
-      <property name="isAbstract" nameId="tpee.1178608670077" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="map" />
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.TypeVariableReference" typeId="tpee.1109283449304" id="6534474553326848586" nodeInfo="in">
-        <link role="typeVariableDeclaration" roleId="tpee.1109283546497" targetNodeId="6534474553326848550" resolveInfo="T" />
+<model ref="360a4e25-e902-4667-a0a6-0e971c4f3177/r:6c5cca1d-3f93-41ca-9d02-70039dd7722f(com.mbeddr.mpsutil.blutil.rt/com.mbeddr.mpsutil.blutil.rt.mapreduce)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1109279763828" name="jetbrains.mps.baseLanguage.structure.TypeVariableDeclaration" flags="ng" index="16euLQ" />
+      <concept id="1109279851642" name="jetbrains.mps.baseLanguage.structure.GenericDeclaration" flags="ng" index="16eOlS">
+        <child id="1109279881614" name="typeVariableDeclaration" index="16eVyc" />
+      </concept>
+      <concept id="1109283449304" name="jetbrains.mps.baseLanguage.structure.TypeVariableReference" flags="in" index="16syzq">
+        <reference id="1109283546497" name="typeVariableDeclaration" index="16sUi3" />
+      </concept>
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
+        <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
+      <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
+        <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123134" name="parameter" index="3clF46" />
+        <child id="1068580123135" name="body" index="3clF47" />
+      </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
+        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS" />
+      <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
+      </concept>
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+        <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
+      <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="3HP615" id="5EJ7vKKS4Bp">
+    <property role="TrG5h" value="IMapReduce" />
+    <node concept="3clFb_" id="5EJ7vKKS4CO" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="map" />
+      <node concept="16syzq" id="5EJ7vKKS4Da" role="3clF45">
+        <ref role="16sUi3" node="5EJ7vKKS4CA" resolve="T" />
       </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6534474553326848567" nodeInfo="nn" />
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6534474553326848568" nodeInfo="sn" />
-      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="6534474553326848590" nodeInfo="ir">
-        <property name="name" nameId="tpck.1169194664001" value="input" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.TypeVariableReference" typeId="tpee.1109283449304" id="6534474553326848589" nodeInfo="in">
-          <link role="typeVariableDeclaration" roleId="tpee.1109283546497" targetNodeId="6534474553326848546" resolveInfo="E" />
+      <node concept="3Tm1VV" id="5EJ7vKKS4CR" role="1B3o_S" />
+      <node concept="3clFbS" id="5EJ7vKKS4CS" role="3clF47" />
+      <node concept="37vLTG" id="5EJ7vKKS4De" role="3clF46">
+        <property role="TrG5h" value="input" />
+        <node concept="16syzq" id="5EJ7vKKS4Dd" role="1tU5fm">
+          <ref role="16sUi3" node="5EJ7vKKS4Cy" resolve="E" />
         </node>
       </node>
     </node>
-    <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="6534474553326848672" nodeInfo="igu">
-      <property name="isAbstract" nameId="tpee.1178608670077" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="reduce" />
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.TypeVariableReference" typeId="tpee.1109283449304" id="6534474553326848707" nodeInfo="in">
-        <link role="typeVariableDeclaration" roleId="tpee.1109283546497" targetNodeId="6534474553326848556" resolveInfo="R" />
+    <node concept="3clFb_" id="5EJ7vKKS4Ew" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="reduce" />
+      <node concept="16syzq" id="5EJ7vKKS4F3" role="3clF45">
+        <ref role="16sUi3" node="5EJ7vKKS4CG" resolve="R" />
       </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6534474553326848675" nodeInfo="nn" />
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6534474553326848676" nodeInfo="sn" />
-      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="6534474553326848711" nodeInfo="ir">
-        <property name="name" nameId="tpck.1169194664001" value="input" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.TypeVariableReference" typeId="tpee.1109283449304" id="6534474553326848710" nodeInfo="in">
-          <link role="typeVariableDeclaration" roleId="tpee.1109283546497" targetNodeId="6534474553326848550" resolveInfo="T" />
+      <node concept="3Tm1VV" id="5EJ7vKKS4Ez" role="1B3o_S" />
+      <node concept="3clFbS" id="5EJ7vKKS4E$" role="3clF47" />
+      <node concept="37vLTG" id="5EJ7vKKS4F7" role="3clF46">
+        <property role="TrG5h" value="input" />
+        <node concept="16syzq" id="5EJ7vKKS4F6" role="1tU5fm">
+          <ref role="16sUi3" node="5EJ7vKKS4CA" resolve="T" />
         </node>
       </node>
     </node>
-    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6534474553326848474" nodeInfo="nn" />
-    <node role="typeVariableDeclaration" roleId="tpee.1109279881614" type="tpee.TypeVariableDeclaration" typeId="tpee.1109279763828" id="6534474553326848546" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="E" />
+    <node concept="3Tm1VV" id="5EJ7vKKS4Bq" role="1B3o_S" />
+    <node concept="16euLQ" id="5EJ7vKKS4Cy" role="16eVyc">
+      <property role="TrG5h" value="E" />
     </node>
-    <node role="typeVariableDeclaration" roleId="tpee.1109279881614" type="tpee.TypeVariableDeclaration" typeId="tpee.1109279763828" id="6534474553326848550" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="T" />
+    <node concept="16euLQ" id="5EJ7vKKS4CA" role="16eVyc">
+      <property role="TrG5h" value="T" />
     </node>
-    <node role="typeVariableDeclaration" roleId="tpee.1109279881614" type="tpee.TypeVariableDeclaration" typeId="tpee.1109279763828" id="6534474553326848556" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="R" />
+    <node concept="16euLQ" id="5EJ7vKKS4CG" role="16eVyc">
+      <property role="TrG5h" value="R" />
     </node>
-  </root>
+  </node>
 </model>
 

@@ -9,10 +9,10 @@
     <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
   </languages>
   <imports>
     <import index="q9ah" ref="r:881cd106-b9c3-33d3-8c69-9a76f591f92a(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)" implicit="true" />
@@ -665,8 +665,8 @@
     <node concept="N3Fnx" id="75iUP$Mbqqs" role="N3F5h">
       <property role="TrG5h" value="lastStatementShouldBeReturned" />
       <node concept="3XIRFW" id="75iUP$Mbqqt" role="3XIRFX">
-        <node concept="1_9egQ" id="75iUP$Mbqqu" role="3XIRFZ">
-          <node concept="3TlMh9" id="75iUP$Mbqqv" role="1_9egR">
+        <node concept="2BFjQ_" id="5C6ntc8n7$U" role="3XIRFZ">
+          <node concept="3TlMh9" id="5C6ntc8n7DH" role="2BFjQA">
             <property role="2hmy$m" value="8" />
           </node>
         </node>

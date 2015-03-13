@@ -2,14 +2,14 @@
 <history>
   <StructureModification>
     <dependencies>
-      <model index="ldid" modelUID="r:7c9c97f3-de46-448b-986d-444ca06ff391(com.mbeddr.mpsutil.scrollhead.typesystem)" version="-1" />
-      <model index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.scrollhead.structure)" version="-1" />
-      <model index="u8e7" modelUID="r:4acb4e42-0ef5-487c-a21d-496738d115a6(com.mbeddr.mpsutil.scrollhead.behavior)" version="-1" />
-      <model index="zyi0" modelUID="r:e4a95998-60f6-40a0-957f-f30b3685ee5b(com.mbeddr.mpsutil.scrollhead.plugin)" version="-1" />
       <model index="bli0" modelUID="r:822372fb-a902-4940-b3d4-c27d0fe8d05e(com.mbeddr.mpsutil.scrollhead.generator.template.main@generator)" version="-1" />
-      <model index="9px7" modelUID="r:a347088e-a34b-41be-9a86-0ca60717f1ed(com.mbeddr.mpsutil.scrollhead.editor)" version="-1" />
-      <model index="sxeu" modelUID="r:1c39470e-9061-457e-86d4-1d6729b44831(com.mbeddr.mpsutil.scrollhead.intentions)" version="-1" />
+      <model index="zyi0" modelUID="r:e4a95998-60f6-40a0-957f-f30b3685ee5b(com.mbeddr.mpsutil.scrollhead.plugin)" version="-1" />
+      <model index="570t" modelUID="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.scrollhead.structure)" version="-1" />
       <model index="99n8" modelUID="r:73a31257-ad48-4dc5-ab35-d4b5e95dfc33(com.mbeddr.mpsutil.scrollhead.constraints)" version="-1" />
+      <model index="u8e7" modelUID="r:4acb4e42-0ef5-487c-a21d-496738d115a6(com.mbeddr.mpsutil.scrollhead.behavior)" version="-1" />
+      <model index="sxeu" modelUID="r:1c39470e-9061-457e-86d4-1d6729b44831(com.mbeddr.mpsutil.scrollhead.intentions)" version="-1" />
+      <model index="9px7" modelUID="r:a347088e-a34b-41be-9a86-0ca60717f1ed(com.mbeddr.mpsutil.scrollhead.editor)" version="-1" />
+      <model index="ldid" modelUID="r:7c9c97f3-de46-448b-986d-444ca06ff391(com.mbeddr.mpsutil.scrollhead.typesystem)" version="-1" />
     </dependencies>
     <RenameModel oldModel="r:a347088e-a34b-41be-9a86-0ca60717f1ed(com.mbeddr.mpsutil.scrollhead.editor)" newModel="r:a347088e-a34b-41be-9a86-0ca60717f1ed(com.mbeddr.mpsutil.breadcrumb.editor)" />
     <RenameModel oldModel="r:e4a95998-60f6-40a0-957f-f30b3685ee5b(com.mbeddr.mpsutil.scrollhead.plugin)" newModel="r:e4a95998-60f6-40a0-957f-f30b3685ee5b(com.mbeddr.mpsutil.breadcrumb.plugin)" />
