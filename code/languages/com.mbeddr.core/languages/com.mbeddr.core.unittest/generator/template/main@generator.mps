@@ -122,12 +122,6 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="4481811096720976618" name="com.mbeddr.mpsutil.blutil.structure.ConceptRef" flags="ng" index="1shVQo">
@@ -1160,34 +1154,25 @@
                             <property role="2qtEX9" value="value" />
                             <node concept="3zFVjK" id="3IOp39iChBl" role="3zH0cK">
                               <node concept="3clFbS" id="3IOp39iChBm" role="2VODD2">
-                                <node concept="3SKdUt" id="3IOp39jORl2" role="3cqZAp">
-                                  <node concept="3SKdUq" id="3IOp39jORBd" role="3SKWNk">
-                                    <property role="3SKdUp" value="this is a ugly hack because conceptAlias generator is broken in 3.2 rc1" />
-                                  </node>
-                                </node>
                                 <node concept="3cpWs8" id="3IOp39jzuqb" role="3cqZAp">
                                   <node concept="3cpWsn" id="3IOp39jzuqc" role="3cpWs9">
                                     <property role="TrG5h" value="alias" />
                                     <node concept="17QB3L" id="3IOp39jzuq7" role="1tU5fm" />
-                                    <node concept="2YIFZM" id="3IOp39jGBb$" role="33vP2m">
-                                      <ref role="37wK5l" to="t6w:~SConceptOperations.conceptAlias(org.jetbrains.mps.openapi.language.SConcept):java.lang.String" resolve="conceptAlias" />
-                                      <ref role="1Pybhc" to="t6w:~SConceptOperations" resolve="SConceptOperations" />
-                                      <node concept="10QFUN" id="3IOp39jGBb_" role="37wK5m">
-                                        <node concept="2OqwBi" id="3IOp39jGBbA" role="10QFUP">
-                                          <node concept="2OqwBi" id="3IOp39jGBbB" role="2Oq$k0">
-                                            <node concept="2OqwBi" id="3IOp39jGBbC" role="2Oq$k0">
-                                              <node concept="30H73N" id="3IOp39jGBbD" role="2Oq$k0" />
-                                              <node concept="2yIwOk" id="3IOp39jGBbE" role="2OqNvi" />
-                                            </node>
-                                            <node concept="2qgKlT" id="3IOp39jGBbF" role="2OqNvi">
-                                              <ref role="37wK5l" to="rmg4:5HxjapwgqL$" resolve="getBinop" />
-                                            </node>
+                                    <node concept="2OqwBi" id="3HrJbrHLOYd" role="33vP2m">
+                                      <node concept="2OqwBi" id="3IOp39jGBbA" role="2Oq$k0">
+                                        <node concept="2OqwBi" id="3IOp39jGBbB" role="2Oq$k0">
+                                          <node concept="2OqwBi" id="3IOp39jGBbC" role="2Oq$k0">
+                                            <node concept="30H73N" id="3IOp39jGBbD" role="2Oq$k0" />
+                                            <node concept="2yIwOk" id="3IOp39jGBbE" role="2OqNvi" />
                                           </node>
-                                          <node concept="1uHKPH" id="3IOp39jGBbG" role="2OqNvi" />
+                                          <node concept="2qgKlT" id="3IOp39jGBbF" role="2OqNvi">
+                                            <ref role="37wK5l" to="rmg4:5HxjapwgqL$" resolve="getBinop" />
+                                          </node>
                                         </node>
-                                        <node concept="3uibUv" id="3IOp39jGBbH" role="10QFUM">
-                                          <ref role="3uigEE" to="t3eg:~SConcept" resolve="SConcept" />
-                                        </node>
+                                        <node concept="1uHKPH" id="3IOp39jGBbG" role="2OqNvi" />
+                                      </node>
+                                      <node concept="liA8E" id="3HrJbrHLQ4_" role="2OqNvi">
+                                        <ref role="37wK5l" to="t3eg:~SAbstractConcept.getConceptAlias():java.lang.String" resolve="getConceptAlias" />
                                       </node>
                                     </node>
                                   </node>
