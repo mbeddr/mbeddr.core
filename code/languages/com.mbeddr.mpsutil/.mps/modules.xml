@@ -12,6 +12,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.conceptdiagram/com.mbeddr.mpsutil.conceptdiagram.mpl" folder="conceptdiagram" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.contextsidebar.sandbox/com.mbeddr.mpsutil.contextsidebar.sandbox.mpl" folder="contextsidebar" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.contextsidebar/com.mbeddr.mpsutil.contextsidebar.mpl" folder="contextsidebar" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.dependenciesdiagram/com.mbeddr.mpsutil.dependenciesdiagram.mpl" folder="dependenciesdiagram" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist.demolang/com.mbeddr.mpsutil.editor.querylist.demolang.mpl" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.mpl" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf.rt/com.mbeddr.mpsutil.emf.rt.msd" folder="emf" />
@@ -53,6 +54,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.breadcrumb.runtime/com.mbeddr.mpsutil.breadcrumb.runtime.msd" folder="breadcrumb" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.common/com.mbeddr.mpsutil.common.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.contextsidebar.runtime/com.mbeddr.mpsutil.contextsidebar.runtime.msd" folder="contextsidebar" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.dependenciesdiagram.sandbox/com.mbeddr.mpsutil.dependenciesdiagram.sandbox.msd" folder="dependenciesdiagram" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.querylist.runtime/com.mbeddr.mpsutil.editor.querylist.runtime.msd" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.querylist.sandbox/com.mbeddr.mpsutil.editor.querylist.sandbox.msd" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.utils/com.mbeddr.mpsutil.editor.utils.msd" folder="" />
@@ -85,9 +87,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.test/com.mbeddr.mpsutil.test.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.tooltip.runtime/com.mbeddr.mpsutil.tooltip.runtime.msd" folder="tooltip" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.typesystem.rt/com.mbeddr.mpsutil.typesystem.rt.msd" folder="typesystem.trace" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.uniquenames.sandbox/com.mbeddr.mpsutil.uniquenames.msd" folder="uniqueNames" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.javainterpreter.test/com.mbeddr.mpsutil.javainterpreter.test.mpl" folder="javainterpreter" />
-      <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.uniquenames.test/com.mbeddr.mpsutil.uniquenames.test.msd" folder="uniqueNames" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.javainterpreter/test.ts.javainterpreter.msd" folder="javainterpreter" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.match/match.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.mpsutil.multilingual.concept.sandbox/test.ts.mpsutil.multilingual.concept.sandbox.mpl" folder="multilingual" />
@@ -99,4 +99,3 @@
     </projectModules>
   </component>
 </project>
-
