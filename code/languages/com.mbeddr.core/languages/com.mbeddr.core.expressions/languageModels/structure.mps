@@ -1444,5 +1444,16 @@
     <property role="TrG5h" value="UnsignedIntegerLiteral" />
     <ref role="1TJDcQ" node="7FQByU3CrDB" resolve="NumberLiteral" />
   </node>
+  <node concept="1TIwiD" id="58TcxRGi40Z">
+    <property role="3GE5qa" value="expr" />
+    <property role="TrG5h" value="ExpressionList" />
+    <ref role="1TJDcQ" node="7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="58TcxRGi7E1" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expressions" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

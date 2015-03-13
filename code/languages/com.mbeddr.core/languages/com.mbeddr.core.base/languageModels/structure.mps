@@ -1689,5 +1689,19 @@
   <node concept="PlHQZ" id="6ucVliiGuzs">
     <property role="TrG5h" value="ISuppressStaticEvalWarnings" />
   </node>
+  <node concept="1TIwiD" id="4eXJ6EO9ZKx">
+    <property role="3GE5qa" value="pathAndFile" />
+    <property role="TrG5h" value="MacroFolderPicker" />
+    <ref role="1TJDcQ" node="5lKnBeAtNw8" resolve="AbstractFilePicker" />
+    <node concept="1TJgyi" id="4eXJ6EO9ZKy" role="1TKVEl">
+      <property role="TrG5h" value="macro" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4eXJ6EOwIAn">
+    <property role="3GE5qa" value="pathAndFile" />
+    <property role="TrG5h" value="FileSystemDirPicker" />
+    <ref role="1TJDcQ" node="5lKnBeAtNw8" resolve="AbstractFilePicker" />
+  </node>
 </model>
 
