@@ -3039,7 +3039,7 @@
             <property role="TrG5h" value="linuxMsg1" />
             <node concept="17QB3L" id="43x69gbF8$g" role="1tU5fm" />
             <node concept="Xl_RD" id="43x69gbF8$h" role="33vP2m">
-              <property role="Xl_RC" value="arithmetic overflow on signed + in return_value_getchar$2 + 1" />
+              <property role="Xl_RC" value="arithmetic overflow on signed + in return_value_getchar$1 + 1" />
             </node>
           </node>
         </node>
