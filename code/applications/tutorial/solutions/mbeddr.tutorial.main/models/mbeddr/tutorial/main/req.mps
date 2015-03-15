@@ -13,6 +13,9 @@
   </languages>
   <imports />
   <registry>
+    <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
+      <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB" />
+    </language>
     <language id="d6714220-402d-48cb-a4a2-88223c6257f6" name="com.mbeddr.cc.requirements.scenarios">
       <concept id="6514529288613812198" name="com.mbeddr.cc.requirements.scenarios.structure.UseCaseKind" flags="ng" index="4R1oT" />
       <concept id="6514529288613812195" name="com.mbeddr.cc.requirements.scenarios.structure.UseCase" flags="ng" index="4R1oW">
@@ -133,6 +136,7 @@
       <concept id="6068976060904002601" name="com.mbeddr.doc.structure.AbstractExport" flags="ng" index="30Gg6V">
         <child id="6068976060904007487" name="renderer" index="30GjaH" />
         <child id="6068976060904007490" name="mappings" index="30Gjbg" />
+        <child id="6068976060904007488" name="inactiveRenderer" index="30Gjbi" />
         <child id="6068976060904007489" name="root" index="30Gjbj" />
       </concept>
       <concept id="6955693250238922838" name="com.mbeddr.doc.structure.CodeRefWord" flags="ng" index="3z_lpY">
@@ -216,6 +220,9 @@
       </concept>
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
+      </concept>
+      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractFilePicker" flags="ng" index="3N1QpV">
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
       </concept>
     </language>
     <language id="7a52ca96-9053-41d2-ae13-8cee05f36698" name="com.mbeddr.cc.requirements.c2doc">
@@ -1739,17 +1746,15 @@
     <property role="TrG5h" value="Config" />
     <node concept="2SbYGw" id="519ky_SpGLu" role="Cbewh">
       <property role="TrG5h" value="temp" />
-      <node concept="9PVaO" id="2iGZqsHPPqc" role="9PVG_" />
+      <node concept="9PVaO" id="2iGZqsHPPqc" role="9PVG_">
+        <property role="3N1Lgt" value="temp" />
+      </node>
     </node>
   </node>
   <node concept="1_08Dk" id="519ky_SmMT8">
     <property role="3GE5qa" value="report" />
     <property role="TrG5h" value="RequirementsReport" />
     <property role="WqcPg" value="Requirements for Flight Judgement" />
-    <node concept="1jVoCB" id="519ky_SmMTc" role="30GjaH">
-      <property role="43dxY" value="mbeddr-prolog.ltx" />
-      <property role="1jVoCx" value="article" />
-    </node>
     <node concept="1_0j5j" id="519ky_SmMTb" role="30Gjbj">
       <ref role="1_0j5g" node="519ky_SmMSS" resolve="requirementsReport" />
     </node>
@@ -1757,6 +1762,11 @@
       <property role="2SbEId" value="_vis" />
       <ref role="2SbEIe" node="519ky_SpGLu" resolve="temp" />
     </node>
+    <node concept="1jVoCB" id="5cV09KeG4gt" role="30GjaH">
+      <property role="43dxY" value="mbeddr-prolog.ltx" />
+      <property role="1jVoCx" value="article" />
+    </node>
+    <node concept="1_07dB" id="5cV09KeG4gu" role="30Gjbi" />
   </node>
   <node concept="2v9HqL" id="519ky_SmMTQ">
     <node concept="2Q9Fgs" id="519ky_Sn93t" role="2Q9xDr">

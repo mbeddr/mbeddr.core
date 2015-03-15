@@ -37,6 +37,10 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -279,6 +283,24 @@
         <ref role="1NtTu8" to="o23b:49Y2Xia4uOS" />
       </node>
       <node concept="l2Vlx" id="49Y2Xia4izf" role="2iSdaV" />
+      <node concept="3F0ifn" id="1eEm1HSG09q" role="3EZMnx">
+        <property role="3F0ifm" value=" (REGEX)" />
+        <node concept="VechU" id="1eEm1HSG6Vs" role="3F10Kt">
+          <property role="Vb096" value="DARK_MAGENTA" />
+        </node>
+        <node concept="pkWqt" id="1eEm1HSG12g" role="pqm2j">
+          <node concept="3clFbS" id="1eEm1HSG12h" role="2VODD2">
+            <node concept="3clFbF" id="1eEm1HSG1Jg" role="3cqZAp">
+              <node concept="2OqwBi" id="1eEm1HSG1Nr" role="3clFbG">
+                <node concept="pncrf" id="1eEm1HSG1Jf" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1eEm1HSG32j" role="2OqNvi">
+                  <ref role="3TsBF5" to="o23b:1eEm1HSFKG_" resolve="isRegexBasedComparison" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3F0ifn" id="4PqBjXXx_Ir" role="3EZMnx">
         <property role="3F0ifm" value=";" />
         <node concept="11L4FC" id="wSZHMclsAJ" role="3F10Kt">

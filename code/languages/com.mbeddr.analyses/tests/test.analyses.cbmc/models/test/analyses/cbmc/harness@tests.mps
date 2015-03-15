@@ -18,6 +18,7 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -89,6 +90,7 @@
       <concept id="4791280061046124023" name="com.mbeddr.analyses.cbmc.testing.structure.CBMCCounterexampleStateTest" flags="ng" index="38rIoz">
         <property id="4791280061046124024" name="nodeKind" index="38rIoG" />
         <property id="4791280061046139065" name="nodeValue" index="38rMdH" />
+        <property id="1417041907773541157" name="isRegexBasedComparison" index="1F1lcY" />
         <child id="4791280061046189368" name="node" index="38rYrG" />
       </concept>
       <concept id="4791280061046135693" name="com.mbeddr.analyses.cbmc.testing.structure.CBMCCounterexampleTest" flags="ng" index="38rL1p">
@@ -722,7 +724,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7MMcIPlQYBY" role="3cqZAp" />
+        <node concept="3clFbH" id="1eEm1HSJvVn" role="3cqZAp" />
         <node concept="38rL1p" id="8Fyjetf2zA" role="3cqZAp">
           <node concept="38rIoz" id="8Fyjetf2GG" role="38rM$J">
             <property role="38rIoG" value="call" />
@@ -732,142 +734,162 @@
             </node>
           </node>
           <node concept="38rIoz" id="8Fyjetf2GI" role="38rM$J">
-            <property role="38rIoG" value="penta.points[0].x" />
-            <property role="38rMdH" value="*" />
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?0\\]\\.x" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="8Fyjetf2GJ" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlRfCZ" role="38rM$J">
-            <property role="38rIoG" value="penta.points[0].y" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlRfD0" role="38rYrG">
+          <node concept="38rIoz" id="1eEm1HSKybI" role="38rM$J">
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?0\\]\\.y" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="1eEm1HSKybJ" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlRfHh" role="38rM$J">
-            <property role="38rIoG" value="penta.points[1].x" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlRfHi" role="38rYrG">
+          <node concept="38rIoz" id="1eEm1HSKypo" role="38rM$J">
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?1\\]\\.x" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="1eEm1HSKypp" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlRfL_" role="38rM$J">
-            <property role="38rIoG" value="penta.points[1].y" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlRfLA" role="38rYrG">
+          <node concept="38rIoz" id="1eEm1HSKyB6" role="38rM$J">
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?1\\]\\.y" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="1eEm1HSKyB7" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlRfPV" role="38rM$J">
-            <property role="38rIoG" value="penta.points[2].x" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlRfPW" role="38rYrG">
+          <node concept="38rIoz" id="1eEm1HSKyP2" role="38rM$J">
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?2\\]\\.x" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="1eEm1HSKyP3" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlRfUj" role="38rM$J">
-            <property role="38rIoG" value="penta.points[2].y" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlRfUk" role="38rYrG">
+          <node concept="38rIoz" id="1eEm1HSKyP4" role="38rM$J">
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?2\\]\\.y" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="1eEm1HSKyP5" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlRfYH" role="38rM$J">
-            <property role="38rIoG" value="penta.points[3].x" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlRfYI" role="38rYrG">
+          <node concept="38rIoz" id="1eEm1HSKz34" role="38rM$J">
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?3\\]\\.x" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="1eEm1HSKz35" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlRg39" role="38rM$J">
-            <property role="38rIoG" value="penta.points[3].y" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlRg3a" role="38rYrG">
+          <node concept="38rIoz" id="1eEm1HSKz36" role="38rM$J">
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?3\\]\\.y" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="1eEm1HSKz37" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlRg7B" role="38rM$J">
-            <property role="38rIoG" value="penta.points[4].x" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlRg7C" role="38rYrG">
+          <node concept="38rIoz" id="1eEm1HSKzhe" role="38rM$J">
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?4\\]\\.x" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="1eEm1HSKzhf" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlRgc7" role="38rM$J">
-            <property role="38rIoG" value="penta.points[4].y" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlRgc8" role="38rYrG">
+          <node concept="38rIoz" id="1eEm1HSKzhg" role="38rM$J">
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?4\\]\\.y" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="1eEm1HSKzhh" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlRh9K" role="38rM$J">
-            <property role="38rIoG" value="penta.points[0].x" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlRh9L" role="38rYrG">
+          <node concept="38rIoz" id="1eEm1HSKzvw" role="38rM$J">
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?0\\]\\.x" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="1eEm1HSKzvx" role="38rYrG">
               <ref role="ehGHo" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlRhec" role="38rM$J">
-            <property role="38rIoG" value="penta.points[0].y" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlRhed" role="38rYrG">
+          <node concept="38rIoz" id="1eEm1HSKzvy" role="38rM$J">
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?0\\]\\.y" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="1eEm1HSKzvz" role="38rYrG">
               <ref role="ehGHo" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlRhiC" role="38rM$J">
-            <property role="38rIoG" value="penta.points[1].x" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlRhiD" role="38rYrG">
+          <node concept="38rIoz" id="1eEm1HSKzHU" role="38rM$J">
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?1\\]\\.x" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="1eEm1HSKzHV" role="38rYrG">
               <ref role="ehGHo" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlRhn6" role="38rM$J">
-            <property role="38rIoG" value="penta.points[1].y" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlRhn7" role="38rYrG">
+          <node concept="38rIoz" id="1eEm1HSKzHW" role="38rM$J">
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?1\\]\\.y" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="1eEm1HSKzHX" role="38rYrG">
               <ref role="ehGHo" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlRhrA" role="38rM$J">
-            <property role="38rIoG" value="penta.points[2].x" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlRhrB" role="38rYrG">
+          <node concept="38rIoz" id="1eEm1HSKzWw" role="38rM$J">
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?2\\]\\.x" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="1eEm1HSKzWx" role="38rYrG">
               <ref role="ehGHo" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlRhw8" role="38rM$J">
-            <property role="38rIoG" value="penta.points[2].y" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlRhw9" role="38rYrG">
+          <node concept="38rIoz" id="1eEm1HSKzWy" role="38rM$J">
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?2\\]\\.y" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="1eEm1HSKzWz" role="38rYrG">
               <ref role="ehGHo" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlRh$G" role="38rM$J">
-            <property role="38rIoG" value="penta.points[3].x" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlRh$H" role="38rYrG">
+          <node concept="38rIoz" id="1eEm1HSK$ba" role="38rM$J">
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?3\\]\\.x" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="1eEm1HSK$bb" role="38rYrG">
               <ref role="ehGHo" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlRhDi" role="38rM$J">
-            <property role="38rIoG" value="penta.points[3].y" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlRhDj" role="38rYrG">
+          <node concept="38rIoz" id="1eEm1HSK$bc" role="38rM$J">
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?3\\]\\.y" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="1eEm1HSK$bd" role="38rYrG">
               <ref role="ehGHo" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlRhHU" role="38rM$J">
-            <property role="38rIoG" value="penta.points[4].x" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlRhHV" role="38rYrG">
+          <node concept="38rIoz" id="1eEm1HSK$pW" role="38rM$J">
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?4\\]\\.x" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="1eEm1HSK$pX" role="38rYrG">
               <ref role="ehGHo" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
             </node>
           </node>
-          <node concept="38rIoz" id="7MMcIPlRhM$" role="38rM$J">
-            <property role="38rIoG" value="penta.points[4].y" />
-            <property role="38rMdH" value="*" />
-            <node concept="3Tqbb2" id="7MMcIPlRhM_" role="38rYrG">
+          <node concept="38rIoz" id="1eEm1HSK$pY" role="38rM$J">
+            <property role="38rIoG" value="penta\\.points\\[(\\(long int\\))?4\\]\\.y" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
+            <node concept="3Tqbb2" id="1eEm1HSK$pZ" role="38rYrG">
               <ref role="ehGHo" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
             </node>
           </node>

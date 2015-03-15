@@ -52,6 +52,10 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="75wo:7_tU7IQsFfx" resolve="RequirementsModule" />
     </node>
+    <node concept="1TJgyi" id="5cV09KeDOx$" role="1TKVEl">
+      <property role="TrG5h" value="onlyAccepted" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2U5fsQeiYtm">
     <property role="TrG5h" value="ReqReportConfigItem" />

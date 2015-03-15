@@ -263,12 +263,6 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -1433,11 +1427,6 @@
     </node>
     <node concept="3xXM6Z" id="7l6s1QDKZTy" role="3xXSXp">
       <node concept="3clFbS" id="7l6s1QDL62t" role="2VODD2">
-        <node concept="3SKdUt" id="7KsplpU9w3r" role="3cqZAp">
-          <node concept="3SKdUq" id="7KsplpU9ws5" role="3SKWNk">
-            <property role="3SKdUp" value="This causes a deadlock (see https://youtrack.jetbrains.com/issue/MPS-21488 )" />
-          </node>
-        </node>
         <node concept="3cpWs8" id="7l6s1QDNgiv" role="3cqZAp">
           <node concept="3cpWsn" id="7l6s1QDNgiw" role="3cpWs9">
             <property role="TrG5h" value="m" />

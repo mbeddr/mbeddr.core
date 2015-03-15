@@ -1116,6 +1116,69 @@
         <node concept="17QB3L" id="6nRVhifDZPY" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2tJIrI" id="1eEm1HSIWwF" role="jymVt" />
+    <node concept="2YIFZL" id="1eEm1HSIXBb" role="jymVt">
+      <property role="TrG5h" value="findResultByUserMsgPrefix" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="1eEm1HSIXBc" role="3clF47">
+        <node concept="3cpWs6" id="1eEm1HSIXBd" role="3cqZAp">
+          <node concept="2OqwBi" id="1eEm1HSIXBe" role="3cqZAk">
+            <node concept="1z4cxt" id="1eEm1HSIXBf" role="2OqNvi">
+              <node concept="1bVj0M" id="1eEm1HSIXBg" role="23t8la">
+                <node concept="3clFbS" id="1eEm1HSIXBh" role="1bW5cS">
+                  <node concept="3clFbF" id="1eEm1HSIXBi" role="3cqZAp">
+                    <node concept="2OqwBi" id="1eEm1HSIXBj" role="3clFbG">
+                      <node concept="2OqwBi" id="1eEm1HSIXBk" role="2Oq$k0">
+                        <node concept="37vLTw" id="1eEm1HSIXBl" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1eEm1HSIXBp" resolve="it" />
+                        </node>
+                        <node concept="liA8E" id="1eEm1HSIXBm" role="2OqNvi">
+                          <ref role="37wK5l" to="eqhl:3FNuzGa2mmQ" resolve="getUserFriendlyMessage" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="1eEm1HSIXBn" role="2OqNvi">
+                        <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                        <node concept="37vLTw" id="1eEm1HSIXBo" role="37wK5m">
+                          <ref role="3cqZAo" node="1eEm1HSIXBy" resolve="userFriendlyMsgPrefix" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="1eEm1HSIXBp" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="1eEm1HSIXBq" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="1eEm1HSIXBr" role="2Oq$k0">
+              <ref role="3cqZAo" node="1eEm1HSIXBv" resolve="results" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1eEm1HSIXBs" role="1B3o_S" />
+      <node concept="3uibUv" id="1eEm1HSIXBt" role="3clF45">
+        <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+      </node>
+      <node concept="NWlO9" id="1eEm1HSIXBu" role="lGtFl">
+        <property role="NWlVz" value="Finds the result with a given prefix for the user friendly message." />
+      </node>
+      <node concept="37vLTG" id="1eEm1HSIXBv" role="3clF46">
+        <property role="TrG5h" value="results" />
+        <node concept="_YKpA" id="1eEm1HSIXBw" role="1tU5fm">
+          <node concept="3uibUv" id="1eEm1HSIXBx" role="_ZDj9">
+            <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="1eEm1HSIXBy" role="3clF46">
+        <property role="TrG5h" value="userFriendlyMsgPrefix" />
+        <node concept="17QB3L" id="1eEm1HSIXBz" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1eEm1HSIWU8" role="jymVt" />
   </node>
   <node concept="312cEu" id="5E1$geGhDJg">
     <property role="TrG5h" value="TestingUtils" />
