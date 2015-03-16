@@ -60,8 +60,9 @@
     <import index="ar19" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.geom(JDK/java.awt.geom@java_stub)" />
     <import index="xei" ref="1338ba73-5059-479b-a929-de86597a62b8/f:java_stub#1338ba73-5059-479b-a929-de86597a62b8#edu.uci.ics.jung.visualization.util(com.mbeddr.mpsutil.jung.pluginSolution/edu.uci.ics.jung.visualization.util@java_stub)" />
     <import index="ln2k" ref="r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung.behavior)" />
-    <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
+    <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -248,7 +249,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -2957,6 +2958,19 @@
       <node concept="37vLTG" id="7hIyKqbGtku" role="3clF46">
         <property role="TrG5h" value="id" />
         <node concept="17QB3L" id="7hIyKqbGtkv" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="6iaOvgbxrZO" role="13h7CS">
+      <property role="TrG5h" value="getXMLRepresentation" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="6iaOvgbxrZP" role="1B3o_S" />
+      <node concept="3clFbS" id="6iaOvgbxrZQ" role="3clF47">
+        <node concept="3clFbF" id="6iaOvgbxs74" role="3cqZAp">
+          <node concept="10Nm6u" id="6iaOvgbxs73" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6iaOvgbxs6L" role="3clF45">
+        <ref role="ehGHo" to="iuxj:5M4a$b5iL2M" resolve="XmlElement" />
       </node>
     </node>
     <node concept="13hLZK" id="K292flwHwc" role="13h7CW">
@@ -6068,6 +6082,21 @@
         </node>
       </node>
       <node concept="10Oyi0" id="58M63C2eosl" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6iaOvgb4psK" role="13h7CS">
+      <property role="TrG5h" value="isImplementationArtifact" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="7Vd878ENIh6" resolve="isImplementationArtifact" />
+      <node concept="3Tm1VV" id="6iaOvgb4psL" role="1B3o_S" />
+      <node concept="3clFbS" id="6iaOvgb4psQ" role="3clF47">
+        <node concept="3clFbF" id="6iaOvgb52YN" role="3cqZAp">
+          <node concept="3clFbT" id="6iaOvgb52YM" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="6iaOvgb4psR" role="3clF45" />
     </node>
   </node>
   <node concept="312cEu" id="4Wn4fzjJqEK">
