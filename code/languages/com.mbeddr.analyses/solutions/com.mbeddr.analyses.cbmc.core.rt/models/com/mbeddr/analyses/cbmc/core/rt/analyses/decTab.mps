@@ -1577,37 +1577,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="M7_V6uB0zt" role="jymVt" />
-    <node concept="3clFb_" id="M7_V6uASuh" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="filterClaims" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <node concept="_YKpA" id="M7_V6uASuj" role="3clF45">
-        <node concept="3uibUv" id="M7_V6uASuk" role="_ZDj9">
-          <ref role="3uigEE" to="rbq9:mb65_hnqw$" resolve="CBMCRawClaim" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="M7_V6uASul" role="3clF46">
-        <property role="TrG5h" value="claims" />
-        <node concept="_YKpA" id="M7_V6uASum" role="1tU5fm">
-          <node concept="3uibUv" id="M7_V6uASun" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:mb65_hnqw$" resolve="CBMCRawClaim" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tmbuc" id="M7_V6uASuo" role="1B3o_S" />
-      <node concept="3clFbS" id="M7_V6uASuq" role="3clF47">
-        <node concept="3clFbF" id="M7_V6uAVq8" role="3cqZAp">
-          <node concept="37vLTw" id="M7_V6uAVq7" role="3clFbG">
-            <ref role="3cqZAo" node="M7_V6uASul" resolve="claims" />
-          </node>
-        </node>
-      </node>
-      <node concept="NWlO9" id="M7_V6uAVG6" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="M7_V6uAPDw" role="jymVt" />
     <node concept="3clFb_" id="M7_V6u$OKw" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="computeArguments" />
