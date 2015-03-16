@@ -21,6 +21,7 @@
     <import index="mv2y" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cellLayout(MPS.Editor/jetbrains.mps.nodeEditor.cellLayout@java_stub)" />
     <import index="y596" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.selection(MPS.Editor/jetbrains.mps.openapi.editor.selection@java_stub)" />
     <import index="tpcb" ref="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" />
+    <import index="1p1s" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps(MPS.Core/jetbrains.mps@java_stub)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -301,26 +302,32 @@
                 </node>
               </node>
             </node>
-            <node concept="22lmx$" id="3JErwPFIF3V" role="3clFbw">
-              <node concept="2YIFZM" id="3JErwPFIF3W" role="3uHU7w">
-                <ref role="37wK5l" to="cu2c:~SModelStereotype.isTestModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isTestModel" />
-                <ref role="1Pybhc" to="cu2c:~SModelStereotype" resolve="SModelStereotype" />
-                <node concept="2OqwBi" id="3JErwPFIF3X" role="37wK5m">
-                  <node concept="37vLTw" id="3JErwPFIF3Y" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3JErwPFIF8X" resolve="node" />
+            <node concept="22lmx$" id="2RawscbPHzP" role="3clFbw">
+              <node concept="22lmx$" id="3JErwPFIF3V" role="3uHU7B">
+                <node concept="2YIFZM" id="3JErwPFIF40" role="3uHU7B">
+                  <ref role="37wK5l" to="cu2c:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isGeneratorModel" />
+                  <ref role="1Pybhc" to="cu2c:~SModelStereotype" resolve="SModelStereotype" />
+                  <node concept="2OqwBi" id="3JErwPFIF41" role="37wK5m">
+                    <node concept="37vLTw" id="3JErwPFIF42" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3JErwPFIF8X" resolve="node" />
+                    </node>
+                    <node concept="I4A8Y" id="3JErwPFIF43" role="2OqNvi" />
                   </node>
-                  <node concept="I4A8Y" id="3JErwPFIF3Z" role="2OqNvi" />
+                </node>
+                <node concept="2YIFZM" id="3JErwPFIF3W" role="3uHU7w">
+                  <ref role="37wK5l" to="cu2c:~SModelStereotype.isTestModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isTestModel" />
+                  <ref role="1Pybhc" to="cu2c:~SModelStereotype" resolve="SModelStereotype" />
+                  <node concept="2OqwBi" id="3JErwPFIF3X" role="37wK5m">
+                    <node concept="37vLTw" id="3JErwPFIF3Y" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3JErwPFIF8X" resolve="node" />
+                    </node>
+                    <node concept="I4A8Y" id="3JErwPFIF3Z" role="2OqNvi" />
+                  </node>
                 </node>
               </node>
-              <node concept="2YIFZM" id="3JErwPFIF40" role="3uHU7B">
-                <ref role="37wK5l" to="cu2c:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isGeneratorModel" />
-                <ref role="1Pybhc" to="cu2c:~SModelStereotype" resolve="SModelStereotype" />
-                <node concept="2OqwBi" id="3JErwPFIF41" role="37wK5m">
-                  <node concept="37vLTw" id="3JErwPFIF42" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3JErwPFIF8X" resolve="node" />
-                  </node>
-                  <node concept="I4A8Y" id="3JErwPFIF43" role="2OqNvi" />
-                </node>
+              <node concept="2YIFZM" id="2RawscbQDb6" role="3uHU7w">
+                <ref role="37wK5l" to="1p1s:~RuntimeFlags.isMergeDriverMode():boolean" resolve="isMergeDriverMode" />
+                <ref role="1Pybhc" to="1p1s:~RuntimeFlags" resolve="RuntimeFlags" />
               </node>
             </node>
           </node>
@@ -434,7 +441,7 @@
               <property role="3TUv4t" value="true" />
               <property role="TrG5h" value="bookmarkPanel" />
               <node concept="3uibUv" id="3JErwPFIF4N" role="1tU5fm">
-                <ref role="3uigEE" to="jqcv:4o4$mVTwvEn" resolve="BookmarkPanel" />
+                <ref role="3uigEE" to="jqcv:4o4$mVTwvEn" resolve="SectionIndexPanel" />
               </node>
               <node concept="2OqwBi" id="3JErwPFIF4O" role="33vP2m">
                 <node concept="2YIFZM" id="3JErwPFIF4P" role="2Oq$k0">
@@ -442,7 +449,7 @@
                   <ref role="1Pybhc" to="jqcv:3JrMqIychZ8" resolve="BreadcrumbManager" />
                 </node>
                 <node concept="liA8E" id="3JErwPFIF4Q" role="2OqNvi">
-                  <ref role="37wK5l" to="jqcv:4o4$mVTAZSs" resolve="getOrCreateBookmarkPanel" />
+                  <ref role="37wK5l" to="jqcv:4o4$mVTAZSs" resolve="getOrCreateSectionIndexPanel" />
                   <node concept="37vLTw" id="3JErwPFIF4R" role="37wK5m">
                     <ref role="3cqZAo" node="3JErwPFIF8X" resolve="node" />
                   </node>
@@ -458,7 +465,7 @@
                   <node concept="3clFbF" id="3JErwPFIF4W" role="3cqZAp">
                     <node concept="2OqwBi" id="3JErwPFIF4X" role="3clFbG">
                       <node concept="3TrcHB" id="3JErwPFIF4Y" role="2OqNvi">
-                        <ref role="3TsBF5" to="yv4j:3JErwPFIqFi" resolve="showBookmarks" />
+                        <ref role="3TsBF5" to="yv4j:3JErwPFIqFi" resolve="showSectionIndices" />
                       </node>
                       <node concept="30H73N" id="3JErwPFIF4Z" role="2Oq$k0" />
                     </node>
@@ -483,7 +490,7 @@
                         <node concept="3clFbF" id="3JErwPFIF58" role="3cqZAp">
                           <node concept="2OqwBi" id="3JErwPFIF59" role="3clFbG">
                             <node concept="3TrcHB" id="3JErwPFIF5a" role="2OqNvi">
-                              <ref role="3TsBF5" to="yv4j:3JErwPFIqFg" resolve="showBookmarkIcons" />
+                              <ref role="3TsBF5" to="yv4j:3JErwPFIqFg" resolve="showSectionIndexIcons" />
                             </node>
                             <node concept="30H73N" id="3JErwPFIF5b" role="2Oq$k0" />
                           </node>
@@ -500,7 +507,7 @@
                   <node concept="3clFbF" id="3JErwPFIF5f" role="3cqZAp">
                     <node concept="2OqwBi" id="3JErwPFIF5g" role="3clFbG">
                       <node concept="3TrcHB" id="3JErwPFIF5h" role="2OqNvi">
-                        <ref role="3TsBF5" to="yv4j:3JErwPFIqFi" resolve="showBookmarks" />
+                        <ref role="3TsBF5" to="yv4j:3JErwPFIqFi" resolve="showSectionIndices" />
                       </node>
                       <node concept="30H73N" id="3JErwPFIF5i" role="2Oq$k0" />
                     </node>
@@ -525,7 +532,7 @@
                         <node concept="3clFbF" id="3JErwPFIF5r" role="3cqZAp">
                           <node concept="2OqwBi" id="3JErwPFIF5s" role="3clFbG">
                             <node concept="3TrcHB" id="3JErwPFIF5t" role="2OqNvi">
-                              <ref role="3TsBF5" to="yv4j:3JErwPFIqFj" resolve="bookmarkPanelWidth" />
+                              <ref role="3TsBF5" to="yv4j:3JErwPFIqFj" resolve="SectionIndexPanelWidth" />
                             </node>
                             <node concept="30H73N" id="3JErwPFIF5u" role="2Oq$k0" />
                           </node>
@@ -542,7 +549,7 @@
                   <node concept="3clFbF" id="3JErwPFIF5y" role="3cqZAp">
                     <node concept="2OqwBi" id="3JErwPFIF5z" role="3clFbG">
                       <node concept="3TrcHB" id="3JErwPFIF5$" role="2OqNvi">
-                        <ref role="3TsBF5" to="yv4j:3JErwPFIqFi" resolve="showBookmarks" />
+                        <ref role="3TsBF5" to="yv4j:3JErwPFIqFi" resolve="showSectionIndices" />
                       </node>
                       <node concept="30H73N" id="3JErwPFIF5_" role="2Oq$k0" />
                     </node>
@@ -774,7 +781,7 @@
                                 <node concept="3clFbF" id="3JErwPFIF76" role="3cqZAp">
                                   <node concept="2OqwBi" id="3JErwPFIF77" role="3clFbG">
                                     <node concept="3TrcHB" id="3JErwPFIF78" role="2OqNvi">
-                                      <ref role="3TsBF5" to="yv4j:3JErwPFIqFi" resolve="showBookmarks" />
+                                      <ref role="3TsBF5" to="yv4j:3JErwPFIqFi" resolve="showSectionIndices" />
                                     </node>
                                     <node concept="30H73N" id="3JErwPFIF79" role="2Oq$k0" />
                                   </node>
@@ -1008,7 +1015,7 @@
                                 <node concept="3clFbF" id="3JErwPFIF8E" role="3cqZAp">
                                   <node concept="2OqwBi" id="3JErwPFIF8F" role="3clFbG">
                                     <node concept="3TrcHB" id="3JErwPFIF8G" role="2OqNvi">
-                                      <ref role="3TsBF5" to="yv4j:3JErwPFIqFi" resolve="showBookmarks" />
+                                      <ref role="3TsBF5" to="yv4j:3JErwPFIqFi" resolve="showSectionIndices" />
                                     </node>
                                     <node concept="30H73N" id="3JErwPFIF8H" role="2Oq$k0" />
                                   </node>
