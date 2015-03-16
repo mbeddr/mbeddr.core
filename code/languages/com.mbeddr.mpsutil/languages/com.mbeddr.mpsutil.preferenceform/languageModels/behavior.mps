@@ -20,7 +20,7 @@
     <import index="tpek" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.behavior)" />
     <import index="dbrf" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
     <import index="tpcu" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core/jetbrains.mps.lang.core.behavior)" />
-    <import index="nmul" ref="r:66872b3a-f5a9-4cb1-9f58-291bcf0918fd(com.mbeddr.mpsutil.preferenceform.rt)" />
+    <import index="rh18" ref="32addf6f-1f14-40cb-991d-e0fddb7506c1/r:7c73bcc0-050a-46cb-bba5-d10598f1b9f2(com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -1036,7 +1036,7 @@
           <node concept="2c44tf" id="77gEP6zh7mZ" role="3clFbG">
             <node concept="_YKpA" id="77gEP6zh7n0" role="2c44tc">
               <node concept="3uibUv" id="77gEP6zu_5C" role="_ZDj9">
-                <ref role="3uigEE" to="nmul:15E$Thfi1SB" resolve="DynamicComboBoxEntry" />
+                <ref role="3uigEE" to="rh18:77gEP6zupJu" resolve="DynamicComboBoxEntry" />
               </node>
             </node>
           </node>
@@ -1081,7 +1081,7 @@
           <node concept="2c44tf" id="77gEP6zh52t" role="3clFbG">
             <node concept="_YKpA" id="77gEP6zgLch" role="2c44tc">
               <node concept="3uibUv" id="77gEP6zuwMX" role="_ZDj9">
-                <ref role="3uigEE" to="nmul:15E$Thfi1SB" resolve="DynamicComboBoxEntry" />
+                <ref role="3uigEE" to="rh18:77gEP6zupJu" resolve="DynamicComboBoxEntry" />
               </node>
             </node>
           </node>

@@ -40,8 +40,7 @@
     <import index="tp4f" ref="443f4c36-fcf5-4eb6-9500-8d06ed259e3e/r:00000000-0000-4000-0000-011c89590373(jetbrains.mps.baseLanguage.classifiers/jetbrains.mps.baseLanguage.classifiers.structure)" />
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="nmul" ref="r:66872b3a-f5a9-4cb1-9f58-291bcf0918fd(com.mbeddr.mpsutil.preferenceform.rt)" />
-    <import index="rh18" ref="32addf6f-1f14-40cb-991d-e0fddb7506c1/r:7c73bcc0-050a-46cb-bba5-d10598f1b9f2(com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime)" implicit="true" />
+    <import index="rh18" ref="32addf6f-1f14-40cb-991d-e0fddb7506c1/r:7c73bcc0-050a-46cb-bba5-d10598f1b9f2(com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime)" />
     <import index="tp4h" ref="443f4c36-fcf5-4eb6-9500-8d06ed259e3e/r:00000000-0000-4000-0000-011c8959036d(jetbrains.mps.baseLanguage.classifiers/jetbrains.mps.baseLanguage.classifiers.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -798,7 +797,7 @@
             <node concept="gft3U" id="36vIONTtA6R" role="UU_$l">
               <node concept="2eloPW" id="36vIONTtA6T" role="gfFT$">
                 <property role="2ely0U" value="Object" />
-                <ref role="3uigEE" to="nmul:2h07kW1J_uu" resolve="AbstractPreferenceFormComponent" />
+                <ref role="3uigEE" to="rh18:~BaseProjectPrefsComponent" resolve="AbstractPreferenceFormComponent" />
                 <node concept="17Uvod" id="36vIONTtA6U" role="lGtFl">
                   <property role="2qtEX9" value="fqClassName" />
                   <node concept="3zFVjK" id="36vIONTtA6V" role="3zH0cK">
@@ -964,6 +963,19 @@
         <node concept="3clFbS" id="ty4hbPHhGk" role="2VODD2">
           <node concept="3clFbF" id="4vnGofExukd" role="3cqZAp">
             <node concept="1Wc70l" id="4vnGofExuke" role="3clFbG">
+              <node concept="2OqwBi" id="4vnGofExukD" role="3uHU7B">
+                <node concept="2OqwBi" id="4vnGofExukE" role="2Oq$k0">
+                  <node concept="30H73N" id="4vnGofExukF" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="4vnGofExukG" role="2OqNvi">
+                    <ref role="3Tt5mk" to="tpee:hqOqNr4" />
+                  </node>
+                </node>
+                <node concept="1mIQ4w" id="4vnGofExukH" role="2OqNvi">
+                  <node concept="chp4Y" id="4vnGofExukI" role="cj9EA">
+                    <ref role="cht4Q" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
+                  </node>
+                </node>
+              </node>
               <node concept="2OqwBi" id="4vnGofExukf" role="3uHU7w">
                 <node concept="2OqwBi" id="4vnGofExukg" role="2Oq$k0">
                   <node concept="2OqwBi" id="4vnGofExukh" role="2Oq$k0">
@@ -1020,34 +1032,6 @@
                 </node>
                 <node concept="3GX2aA" id="4vnGofExukC" role="2OqNvi" />
               </node>
-              <node concept="1Wc70l" id="1BL2OuqE6n6" role="3uHU7B">
-                <node concept="2OqwBi" id="1BL2OuqE8VO" role="3uHU7B">
-                  <node concept="2OqwBi" id="1BL2OuqE7Ov" role="2Oq$k0">
-                    <node concept="30H73N" id="1BL2OuqE7Ia" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="1BL2OuqE8oL" role="2OqNvi">
-                      <ref role="3Tt5mk" to="tpee:hqOq$gm" />
-                    </node>
-                  </node>
-                  <node concept="1mIQ4w" id="1BL2OuqEa5g" role="2OqNvi">
-                    <node concept="chp4Y" id="1BL2OuqEalg" role="cj9EA">
-                      <ref role="cht4Q" to="tp4f:hyWthE1" resolve="ThisClassifierExpression" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="4vnGofExukD" role="3uHU7w">
-                  <node concept="2OqwBi" id="4vnGofExukE" role="2Oq$k0">
-                    <node concept="30H73N" id="4vnGofExukF" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="4vnGofExukG" role="2OqNvi">
-                      <ref role="3Tt5mk" to="tpee:hqOqNr4" />
-                    </node>
-                  </node>
-                  <node concept="1mIQ4w" id="4vnGofExukH" role="2OqNvi">
-                    <node concept="chp4Y" id="4vnGofExukI" role="cj9EA">
-                      <ref role="cht4Q" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
-                    </node>
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -1061,31 +1045,16 @@
       <node concept="30G5F_" id="28iHQuQmEbG" role="30HLyM">
         <node concept="3clFbS" id="28iHQuQmEbH" role="2VODD2">
           <node concept="3clFbF" id="28iHQuQmEp5" role="3cqZAp">
-            <node concept="1Wc70l" id="1BL2OuqEaAT" role="3clFbG">
-              <node concept="2OqwBi" id="1BL2OuqEcR0" role="3uHU7B">
-                <node concept="2OqwBi" id="1BL2OuqEaVN" role="2Oq$k0">
-                  <node concept="30H73N" id="1BL2OuqEaPI" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="1BL2OuqEbHu" role="2OqNvi">
-                    <ref role="3Tt5mk" to="tpee:hqOq$gm" />
-                  </node>
-                </node>
-                <node concept="1mIQ4w" id="1BL2OuqEdrB" role="2OqNvi">
-                  <node concept="chp4Y" id="1BL2OuqEdF3" role="cj9EA">
-                    <ref role="cht4Q" to="tp4f:hyWthE1" resolve="ThisClassifierExpression" />
-                  </node>
+            <node concept="2OqwBi" id="28iHQuQmFGN" role="3clFbG">
+              <node concept="2OqwBi" id="28iHQuQmEuy" role="2Oq$k0">
+                <node concept="30H73N" id="28iHQuQmEp4" role="2Oq$k0" />
+                <node concept="3TrEf2" id="28iHQuQmFcM" role="2OqNvi">
+                  <ref role="3Tt5mk" to="tpee:hqOqNr4" />
                 </node>
               </node>
-              <node concept="2OqwBi" id="28iHQuQmFGN" role="3uHU7w">
-                <node concept="2OqwBi" id="28iHQuQmEuy" role="2Oq$k0">
-                  <node concept="30H73N" id="28iHQuQmEp4" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="28iHQuQmFcM" role="2OqNvi">
-                    <ref role="3Tt5mk" to="tpee:hqOqNr4" />
-                  </node>
-                </node>
-                <node concept="1mIQ4w" id="28iHQuQmFWK" role="2OqNvi">
-                  <node concept="chp4Y" id="28iHQuQmGa_" role="cj9EA">
-                    <ref role="cht4Q" to="3iid:86yKXFVk5m" resolve="GetPreferenceFormInProjectOperation" />
-                  </node>
+              <node concept="1mIQ4w" id="28iHQuQmFWK" role="2OqNvi">
+                <node concept="chp4Y" id="28iHQuQmGa_" role="cj9EA">
+                  <ref role="cht4Q" to="3iid:86yKXFVk5m" resolve="GetPreferenceFormInProjectOperation" />
                 </node>
               </node>
             </node>
@@ -1199,7 +1168,7 @@
             <node concept="3cpWsn" id="86yKXFLyIH" role="3cpWs9">
               <property role="TrG5h" value="preferenceForm" />
               <node concept="3uibUv" id="4vnGofEz1zp" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+                <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
               </node>
             </node>
           </node>
@@ -1215,7 +1184,7 @@
             <node concept="3cpWsn" id="5C8n8D5YRzy" role="3cpWs9">
               <property role="TrG5h" value="stateObject" />
               <node concept="3uibUv" id="5C8n8D5YRzz" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+                <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
               </node>
             </node>
           </node>
@@ -1243,7 +1212,7 @@
                   </node>
                   <node concept="2OqwBi" id="86yKXFMwnN" role="37vLTJ">
                     <node concept="2OwXpG" id="4vnGofEzVhf" role="2OqNvi">
-                      <ref role="2Oxat5" to="nmul:2h07kW1J_vH" resolve="property" />
+                      <ref role="2Oxat5" to="rh18:4vnGofEzf1C" resolve="property" />
                       <node concept="1ZhdrF" id="4vnGofEzVjd" role="lGtFl">
                         <property role="2qtEX8" value="fieldDeclaration" />
                         <node concept="3$xsQk" id="4vnGofEzVje" role="3$ytzL">
@@ -1280,7 +1249,7 @@
             <node concept="3cpWsn" id="fFi6PewEw" role="3cpWs9">
               <property role="TrG5h" value="preferenceForm" />
               <node concept="3uibUv" id="fFi6PewEx" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+                <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
               </node>
             </node>
           </node>
@@ -1296,7 +1265,7 @@
             <node concept="3cpWsn" id="fFi6PewEA" role="3cpWs9">
               <property role="TrG5h" value="stateObject" />
               <node concept="3uibUv" id="fFi6PewEB" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+                <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
               </node>
             </node>
           </node>
@@ -1324,7 +1293,7 @@
                   </node>
                   <node concept="2OqwBi" id="fFi6PewEO" role="37vLTJ">
                     <node concept="2OwXpG" id="fFi6PewEP" role="2OqNvi">
-                      <ref role="2Oxat5" to="nmul:2h07kW1J_vH" resolve="property" />
+                      <ref role="2Oxat5" to="rh18:4vnGofEzf1C" resolve="property" />
                       <node concept="1ZhdrF" id="fFi6PewEQ" role="lGtFl">
                         <property role="2qtEX8" value="fieldDeclaration" />
                         <node concept="3$xsQk" id="fFi6PewER" role="3$ytzL">
@@ -1361,7 +1330,7 @@
             <node concept="3cpWsn" id="4vnGofEzWI1" role="3cpWs9">
               <property role="TrG5h" value="preferenceForm" />
               <node concept="3uibUv" id="4vnGofEzWI2" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+                <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
               </node>
             </node>
           </node>
@@ -1377,7 +1346,7 @@
             <node concept="3cpWsn" id="5C8n8D5YROe" role="3cpWs9">
               <property role="TrG5h" value="stateObject" />
               <node concept="3uibUv" id="5C8n8D5YROf" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+                <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
               </node>
             </node>
           </node>
@@ -1402,7 +1371,7 @@
                 <node concept="37vLTI" id="86yKXFMEvf" role="3clFbG">
                   <node concept="2OqwBi" id="4vnGofEzYgJ" role="37vLTJ">
                     <node concept="2OwXpG" id="4vnGofEzYgL" role="2OqNvi">
-                      <ref role="2Oxat5" to="nmul:2h07kW1J_vH" resolve="property" />
+                      <ref role="2Oxat5" to="rh18:4vnGofEzf1C" resolve="property" />
                       <node concept="1ZhdrF" id="4vnGofEzYgM" role="lGtFl">
                         <property role="2qtEX8" value="fieldDeclaration" />
                         <node concept="3$xsQk" id="4vnGofEzYgN" role="3$ytzL">
@@ -1454,7 +1423,7 @@
             <node concept="3cpWsn" id="46uejXd6Spu" role="3cpWs9">
               <property role="TrG5h" value="preferenceForm" />
               <node concept="3uibUv" id="46uejXd6Spv" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+                <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
               </node>
             </node>
           </node>
@@ -1470,7 +1439,7 @@
             <node concept="3cpWsn" id="46uejXd6Sp$" role="3cpWs9">
               <property role="TrG5h" value="stateObject" />
               <node concept="3uibUv" id="46uejXd6Sp_" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+                <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
               </node>
             </node>
           </node>
@@ -1502,7 +1471,7 @@
                   </node>
                   <node concept="2OqwBi" id="46uejXd6SpM" role="37vLTJ">
                     <node concept="2OwXpG" id="46uejXd6SpN" role="2OqNvi">
-                      <ref role="2Oxat5" to="nmul:2h07kW1J_vH" resolve="property" />
+                      <ref role="2Oxat5" to="rh18:4vnGofEzf1C" resolve="property" />
                       <node concept="1ZhdrF" id="46uejXd6SpO" role="lGtFl">
                         <property role="2qtEX8" value="fieldDeclaration" />
                         <node concept="3$xsQk" id="46uejXd6SpP" role="3$ytzL">
@@ -1540,7 +1509,7 @@
             <node concept="3cpWsn" id="77gEP6zq1ui" role="3cpWs9">
               <property role="TrG5h" value="preferenceForm" />
               <node concept="3uibUv" id="77gEP6zq1uj" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+                <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
               </node>
             </node>
           </node>
@@ -1556,7 +1525,7 @@
             <node concept="3cpWsn" id="77gEP6zq1uo" role="3cpWs9">
               <property role="TrG5h" value="stateObject" />
               <node concept="3uibUv" id="77gEP6zq1up" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+                <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
               </node>
             </node>
           </node>
@@ -1579,12 +1548,12 @@
                           </node>
                         </node>
                         <node concept="3uibUv" id="77gEP6zuLze" role="10QFUM">
-                          <ref role="3uigEE" to="nmul:15E$Thfi1SB" resolve="DynamicComboBoxEntry" />
+                          <ref role="3uigEE" to="rh18:77gEP6zupJu" resolve="DynamicComboBoxEntry" />
                         </node>
                       </node>
                     </node>
                     <node concept="liA8E" id="77gEP6zuNBe" role="2OqNvi">
-                      <ref role="37wK5l" to="nmul:15E$Thfi1T5" resolve="getKey" />
+                      <ref role="37wK5l" to="rh18:77gEP6zurvg" resolve="getKey" />
                     </node>
                   </node>
                 </node>
@@ -1596,7 +1565,7 @@
                   </node>
                   <node concept="2OqwBi" id="77gEP6zq1uA" role="37vLTJ">
                     <node concept="2OwXpG" id="77gEP6zq1uB" role="2OqNvi">
-                      <ref role="2Oxat5" to="nmul:2h07kW1J_vH" resolve="property" />
+                      <ref role="2Oxat5" to="rh18:4vnGofEzf1C" resolve="property" />
                       <node concept="1ZhdrF" id="77gEP6zq1uC" role="lGtFl">
                         <property role="2qtEX8" value="fieldDeclaration" />
                         <node concept="3$xsQk" id="77gEP6zq1uD" role="3$ytzL">
@@ -1645,7 +1614,7 @@
             <node concept="3cpWsn" id="4vnGofE$gM0" role="3cpWs9">
               <property role="TrG5h" value="preferenceForm" />
               <node concept="3uibUv" id="4vnGofE$gM1" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+                <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
               </node>
             </node>
           </node>
@@ -1661,7 +1630,7 @@
             <node concept="3cpWsn" id="5C8n8D5YUE6" role="3cpWs9">
               <property role="TrG5h" value="stateObject" />
               <node concept="3uibUv" id="5C8n8D5YUE7" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+                <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
               </node>
             </node>
           </node>
@@ -1677,7 +1646,7 @@
                   <node concept="10QFUN" id="4vnGofEEyqY" role="1eOMHV">
                     <node concept="2OqwBi" id="4vnGofEEyqL" role="10QFUP">
                       <node concept="2OwXpG" id="4vnGofEEyqM" role="2OqNvi">
-                        <ref role="2Oxat5" to="nmul:2h07kW1J_vH" resolve="property" />
+                        <ref role="2Oxat5" to="rh18:4vnGofEzf1C" resolve="property" />
                         <node concept="1ZhdrF" id="4vnGofEEyqN" role="lGtFl">
                           <property role="2qtEX8" value="fieldDeclaration" />
                           <node concept="3$xsQk" id="4vnGofEEyqO" role="3$ytzL">
@@ -1725,7 +1694,7 @@
             <node concept="3cpWsn" id="fFi6Pf6SI" role="3cpWs9">
               <property role="TrG5h" value="preferenceForm" />
               <node concept="3uibUv" id="fFi6Pf6SJ" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+                <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
               </node>
             </node>
           </node>
@@ -1741,7 +1710,7 @@
             <node concept="3cpWsn" id="fFi6Pf6SO" role="3cpWs9">
               <property role="TrG5h" value="stateObject" />
               <node concept="3uibUv" id="fFi6Pf6SP" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+                <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
               </node>
             </node>
           </node>
@@ -1757,7 +1726,7 @@
                   <node concept="10QFUN" id="fFi6Pf6SW" role="1eOMHV">
                     <node concept="2OqwBi" id="fFi6Pf6SX" role="10QFUP">
                       <node concept="2OwXpG" id="fFi6Pf6SY" role="2OqNvi">
-                        <ref role="2Oxat5" to="nmul:2h07kW1J_vH" resolve="property" />
+                        <ref role="2Oxat5" to="rh18:4vnGofEzf1C" resolve="property" />
                         <node concept="1ZhdrF" id="fFi6Pf6SZ" role="lGtFl">
                           <property role="2qtEX8" value="fieldDeclaration" />
                           <node concept="3$xsQk" id="fFi6Pf6T0" role="3$ytzL">
@@ -1805,7 +1774,7 @@
             <node concept="3cpWsn" id="4vnGofE$jwu" role="3cpWs9">
               <property role="TrG5h" value="preferenceForm" />
               <node concept="3uibUv" id="4vnGofE$jwv" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+                <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
               </node>
             </node>
           </node>
@@ -1821,7 +1790,7 @@
             <node concept="3cpWsn" id="5C8n8D5YVbf" role="3cpWs9">
               <property role="TrG5h" value="stateObject" />
               <node concept="3uibUv" id="5C8n8D5YVbg" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+                <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
               </node>
             </node>
           </node>
@@ -1837,7 +1806,7 @@
                   <node concept="10QFUN" id="4vnGofEEzru" role="1eOMHV">
                     <node concept="2OqwBi" id="4vnGofEEzrh" role="10QFUP">
                       <node concept="2OwXpG" id="4vnGofEEzri" role="2OqNvi">
-                        <ref role="2Oxat5" to="nmul:2h07kW1J_vH" resolve="property" />
+                        <ref role="2Oxat5" to="rh18:4vnGofEzf1C" resolve="property" />
                         <node concept="1ZhdrF" id="4vnGofEEzrj" role="lGtFl">
                           <property role="2qtEX8" value="fieldDeclaration" />
                           <node concept="3$xsQk" id="4vnGofEEzrk" role="3$ytzL">
@@ -1887,7 +1856,7 @@
             <node concept="3cpWsn" id="46uejXd78gn" role="3cpWs9">
               <property role="TrG5h" value="preferenceForm" />
               <node concept="3uibUv" id="46uejXd78go" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+                <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
               </node>
             </node>
           </node>
@@ -1903,7 +1872,7 @@
             <node concept="3cpWsn" id="46uejXd78gt" role="3cpWs9">
               <property role="TrG5h" value="stateObject" />
               <node concept="3uibUv" id="46uejXd78gu" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+                <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
               </node>
             </node>
           </node>
@@ -1923,7 +1892,7 @@
                       <node concept="10QFUN" id="46uejXd78Qr" role="1eOMHV">
                         <node concept="2OqwBi" id="46uejXd78Qg" role="10QFUP">
                           <node concept="2OwXpG" id="46uejXd78Qh" role="2OqNvi">
-                            <ref role="2Oxat5" to="nmul:2h07kW1J_vH" resolve="property" />
+                            <ref role="2Oxat5" to="rh18:4vnGofEzf1C" resolve="property" />
                             <node concept="1ZhdrF" id="46uejXd78Qi" role="lGtFl">
                               <property role="2qtEX8" value="fieldDeclaration" />
                               <node concept="3$xsQk" id="46uejXd78Qj" role="3$ytzL">
@@ -1974,7 +1943,7 @@
             <node concept="3cpWsn" id="77gEP6zqsc_" role="3cpWs9">
               <property role="TrG5h" value="preferenceForm" />
               <node concept="3uibUv" id="77gEP6zqscA" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+                <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
               </node>
             </node>
           </node>
@@ -1990,7 +1959,7 @@
             <node concept="3cpWsn" id="77gEP6zqscF" role="3cpWs9">
               <property role="TrG5h" value="stateObject" />
               <node concept="3uibUv" id="77gEP6zqscG" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+                <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
               </node>
             </node>
           </node>
@@ -2028,7 +1997,7 @@
                     <node concept="10QFUN" id="77gEP6zqscN" role="1eOMHV">
                       <node concept="2OqwBi" id="77gEP6zqscO" role="10QFUP">
                         <node concept="2OwXpG" id="77gEP6zqscP" role="2OqNvi">
-                          <ref role="2Oxat5" to="nmul:2h07kW1J_vH" resolve="property" />
+                          <ref role="2Oxat5" to="rh18:4vnGofEzf1C" resolve="property" />
                           <node concept="1ZhdrF" id="77gEP6zqscQ" role="lGtFl">
                             <property role="2qtEX8" value="fieldDeclaration" />
                             <node concept="3$xsQk" id="77gEP6zqscR" role="3$ytzL">
@@ -2080,12 +2049,12 @@
                             </node>
                           </node>
                           <node concept="3uibUv" id="77gEP6zv9Ym" role="10QFUM">
-                            <ref role="3uigEE" to="nmul:15E$Thfi1SB" resolve="DynamicComboBoxEntry" />
+                            <ref role="3uigEE" to="rh18:77gEP6zupJu" resolve="DynamicComboBoxEntry" />
                           </node>
                         </node>
                       </node>
                       <node concept="3uibUv" id="77gEP6zv9Aw" role="1tU5fm">
-                        <ref role="3uigEE" to="nmul:15E$Thfi1SB" resolve="DynamicComboBoxEntry" />
+                        <ref role="3uigEE" to="rh18:77gEP6zupJu" resolve="DynamicComboBoxEntry" />
                       </node>
                     </node>
                   </node>
@@ -2109,7 +2078,7 @@
                           <ref role="3cqZAo" node="77gEP6zqUir" resolve="item" />
                         </node>
                         <node concept="liA8E" id="77gEP6zvamt" role="2OqNvi">
-                          <ref role="37wK5l" to="nmul:15E$Thfi1T5" resolve="getKey" />
+                          <ref role="37wK5l" to="rh18:77gEP6zurvg" resolve="getKey" />
                         </node>
                       </node>
                       <node concept="37vLTw" id="77gEP6zqVIV" role="3uHU7B">
@@ -2222,8 +2191,8 @@
                   <node concept="liA8E" id="86yKXFJMSA" role="2OqNvi">
                     <ref role="37wK5l" to="dbrf:~JComponent.putClientProperty(java.lang.Object,java.lang.Object):void" resolve="putClientProperty" />
                     <node concept="10M0yZ" id="5YZamx7$lTv" role="37wK5m">
-                      <ref role="1PxDUh" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
-                      <ref role="3cqZAo" to="nmul:2h07kW1J_x2" resolve="CONTROL_CLIENT_PROPERTY_KEY" />
+                      <ref role="1PxDUh" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
+                      <ref role="3cqZAo" to="rh18:4vnGofEqMDb" resolve="CONTROL_CLIENT_PROPERTY_KEY" />
                     </node>
                     <node concept="Xl_RD" id="86yKXFJN0w" role="37wK5m">
                       <property role="Xl_RC" value="" />
@@ -2357,8 +2326,8 @@
                   <node concept="liA8E" id="fFi6Pe_Vh" role="2OqNvi">
                     <ref role="37wK5l" to="dbrf:~JComponent.putClientProperty(java.lang.Object,java.lang.Object):void" resolve="putClientProperty" />
                     <node concept="10M0yZ" id="fFi6Pe_Vi" role="37wK5m">
-                      <ref role="1PxDUh" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
-                      <ref role="3cqZAo" to="nmul:2h07kW1J_x2" resolve="CONTROL_CLIENT_PROPERTY_KEY" />
+                      <ref role="1PxDUh" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
+                      <ref role="3cqZAo" to="rh18:4vnGofEqMDb" resolve="CONTROL_CLIENT_PROPERTY_KEY" />
                     </node>
                     <node concept="Xl_RD" id="fFi6Pe_Vj" role="37wK5m">
                       <property role="Xl_RC" value="" />
@@ -2479,8 +2448,8 @@
                   <node concept="liA8E" id="86yKXFK1CH" role="2OqNvi">
                     <ref role="37wK5l" to="dbrf:~JComponent.putClientProperty(java.lang.Object,java.lang.Object):void" resolve="putClientProperty" />
                     <node concept="10M0yZ" id="5YZamx7$pSH" role="37wK5m">
-                      <ref role="1PxDUh" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
-                      <ref role="3cqZAo" to="nmul:2h07kW1J_x2" resolve="CONTROL_CLIENT_PROPERTY_KEY" />
+                      <ref role="1PxDUh" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
+                      <ref role="3cqZAo" to="rh18:4vnGofEqMDb" resolve="CONTROL_CLIENT_PROPERTY_KEY" />
                     </node>
                     <node concept="Xl_RD" id="86yKXFK1CS" role="37wK5m">
                       <property role="Xl_RC" value="" />
@@ -2681,8 +2650,8 @@
                   <node concept="liA8E" id="46uejXd5bwD" role="2OqNvi">
                     <ref role="37wK5l" to="dbrf:~JComponent.putClientProperty(java.lang.Object,java.lang.Object):void" resolve="putClientProperty" />
                     <node concept="10M0yZ" id="46uejXd5bwE" role="37wK5m">
-                      <ref role="1PxDUh" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
-                      <ref role="3cqZAo" to="nmul:2h07kW1J_x2" resolve="CONTROL_CLIENT_PROPERTY_KEY" />
+                      <ref role="1PxDUh" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
+                      <ref role="3cqZAo" to="rh18:4vnGofEqMDb" resolve="CONTROL_CLIENT_PROPERTY_KEY" />
                     </node>
                     <node concept="Xl_RD" id="46uejXd5bwF" role="37wK5m">
                       <property role="Xl_RC" value="" />
@@ -2800,13 +2769,13 @@
                   <property role="TrG5h" value="values" />
                   <node concept="_YKpA" id="77gEP6zokFJ" role="1tU5fm">
                     <node concept="3uibUv" id="77gEP6zuTsM" role="_ZDj9">
-                      <ref role="3uigEE" to="nmul:15E$Thfi1SB" resolve="DynamicComboBoxEntry" />
+                      <ref role="3uigEE" to="rh18:77gEP6zupJu" resolve="DynamicComboBoxEntry" />
                     </node>
                   </node>
                   <node concept="2ShNRf" id="77gEP6zokGk" role="33vP2m">
                     <node concept="Tc6Ow" id="77gEP6zokGl" role="2ShVmc">
                       <node concept="3uibUv" id="77gEP6zuUxA" role="HW$YZ">
-                        <ref role="3uigEE" to="nmul:15E$Thfi1SB" resolve="DynamicComboBoxEntry" />
+                        <ref role="3uigEE" to="rh18:77gEP6zupJu" resolve="DynamicComboBoxEntry" />
                       </node>
                     </node>
                   </node>
@@ -2820,7 +2789,7 @@
                   <node concept="TSZUe" id="77gEP6zougK" role="2OqNvi">
                     <node concept="2ShNRf" id="77gEP6zuVrw" role="25WWJ7">
                       <node concept="1pGfFk" id="77gEP6zuW72" role="2ShVmc">
-                        <ref role="37wK5l" to="nmul:15E$Thfi1SJ" resolve="DynamicComboBoxEntry" />
+                        <ref role="37wK5l" to="rh18:77gEP6zuqKc" resolve="DynamicComboBoxEntry" />
                         <node concept="Xl_RD" id="77gEP6zuW97" role="37wK5m">
                           <property role="Xl_RC" value="" />
                           <node concept="17Uvod" id="77gEP6zuWgo" role="lGtFl">
@@ -2905,8 +2874,8 @@
                   <node concept="liA8E" id="77gEP6zmjrW" role="2OqNvi">
                     <ref role="37wK5l" to="dbrf:~JComponent.putClientProperty(java.lang.Object,java.lang.Object):void" resolve="putClientProperty" />
                     <node concept="10M0yZ" id="77gEP6zmjrX" role="37wK5m">
-                      <ref role="1PxDUh" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
-                      <ref role="3cqZAo" to="nmul:2h07kW1J_x2" resolve="CONTROL_CLIENT_PROPERTY_KEY" />
+                      <ref role="1PxDUh" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
+                      <ref role="3cqZAo" to="rh18:4vnGofEqMDb" resolve="CONTROL_CLIENT_PROPERTY_KEY" />
                     </node>
                     <node concept="Xl_RD" id="77gEP6zmjrY" role="37wK5m">
                       <property role="Xl_RC" value="" />
@@ -3027,7 +2996,7 @@
                         <property role="TrG5h" value="values" />
                         <node concept="_YKpA" id="77gEP6zozGD" role="1tU5fm">
                           <node concept="3uibUv" id="77gEP6zuwMX" role="_ZDj9">
-                            <ref role="3uigEE" to="nmul:15E$Thfi1SB" resolve="DynamicComboBoxEntry" />
+                            <ref role="3uigEE" to="rh18:77gEP6zupJu" resolve="DynamicComboBoxEntry" />
                           </node>
                         </node>
                         <node concept="2ShNRf" id="77gEP6zozGH" role="33vP2m">
@@ -3039,7 +3008,7 @@
                                     <node concept="2ShNRf" id="77gEP6zpmuL" role="3clFbG">
                                       <node concept="Tc6Ow" id="77gEP6zpnGb" role="2ShVmc">
                                         <node concept="3uibUv" id="77gEP6zuFk0" role="HW$YZ">
-                                          <ref role="3uigEE" to="nmul:15E$Thfi1SB" resolve="DynamicComboBoxEntry" />
+                                          <ref role="3uigEE" to="rh18:77gEP6zupJu" resolve="DynamicComboBoxEntry" />
                                         </node>
                                       </node>
                                     </node>
@@ -3073,7 +3042,7 @@
                               <node concept="1Bd96e" id="77gEP6zpL_H" role="2OqNvi" />
                             </node>
                             <node concept="3uibUv" id="77gEP6zuy$2" role="HW$YZ">
-                              <ref role="3uigEE" to="nmul:15E$Thfi1SB" resolve="DynamicComboBoxEntry" />
+                              <ref role="3uigEE" to="rh18:77gEP6zupJu" resolve="DynamicComboBoxEntry" />
                             </node>
                           </node>
                         </node>
@@ -3108,8 +3077,8 @@
                         <node concept="liA8E" id="77gEP6zozHv" role="2OqNvi">
                           <ref role="37wK5l" to="dbrf:~JComponent.putClientProperty(java.lang.Object,java.lang.Object):void" resolve="putClientProperty" />
                           <node concept="10M0yZ" id="77gEP6zozHw" role="37wK5m">
-                            <ref role="1PxDUh" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
-                            <ref role="3cqZAo" to="nmul:2h07kW1J_x2" resolve="CONTROL_CLIENT_PROPERTY_KEY" />
+                            <ref role="1PxDUh" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
+                            <ref role="3cqZAo" to="rh18:4vnGofEqMDb" resolve="CONTROL_CLIENT_PROPERTY_KEY" />
                           </node>
                           <node concept="Xl_RD" id="77gEP6zozHx" role="37wK5m">
                             <property role="Xl_RC" value="" />
@@ -3192,7 +3161,7 @@
             <node concept="3cpWsn" id="4vnGofE$4jk" role="3cpWs9">
               <property role="TrG5h" value="preferenceForm" />
               <node concept="3uibUv" id="4vnGofE$4jl" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+                <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
               </node>
             </node>
           </node>
@@ -3208,7 +3177,7 @@
             <node concept="3cpWsn" id="5C8n8D5YTFf" role="3cpWs9">
               <property role="TrG5h" value="stateObject" />
               <node concept="3uibUv" id="5C8n8D5YTFg" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+                <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
               </node>
             </node>
           </node>
@@ -3220,7 +3189,7 @@
                   <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
                   <node concept="2OqwBi" id="5YZamx7Fyby" role="37wK5m">
                     <node concept="2OwXpG" id="5YZamx7Fybz" role="2OqNvi">
-                      <ref role="2Oxat5" to="nmul:2h07kW1J_vH" resolve="property" />
+                      <ref role="2Oxat5" to="rh18:4vnGofEzf1C" resolve="property" />
                       <node concept="1ZhdrF" id="5YZamx7Fyb$" role="lGtFl">
                         <property role="2qtEX8" value="fieldDeclaration" />
                         <node concept="3$xsQk" id="5YZamx7Fyb_" role="3$ytzL">
@@ -3266,7 +3235,7 @@
             <node concept="3cpWsn" id="fFi6Pf557" role="3cpWs9">
               <property role="TrG5h" value="preferenceForm" />
               <node concept="3uibUv" id="fFi6Pf558" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+                <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
               </node>
             </node>
           </node>
@@ -3282,7 +3251,7 @@
             <node concept="3cpWsn" id="fFi6Pf55d" role="3cpWs9">
               <property role="TrG5h" value="stateObject" />
               <node concept="3uibUv" id="fFi6Pf55e" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+                <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
               </node>
             </node>
           </node>
@@ -3294,7 +3263,7 @@
                   <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
                   <node concept="2OqwBi" id="fFi6Pf55k" role="37wK5m">
                     <node concept="2OwXpG" id="fFi6Pf55l" role="2OqNvi">
-                      <ref role="2Oxat5" to="nmul:2h07kW1J_vH" resolve="property" />
+                      <ref role="2Oxat5" to="rh18:4vnGofEzf1C" resolve="property" />
                       <node concept="1ZhdrF" id="fFi6Pf55m" role="lGtFl">
                         <property role="2qtEX8" value="fieldDeclaration" />
                         <node concept="3$xsQk" id="fFi6Pf55n" role="3$ytzL">
@@ -3340,7 +3309,7 @@
             <node concept="3cpWsn" id="4vnGofE$b6o" role="3cpWs9">
               <property role="TrG5h" value="preferenceForm" />
               <node concept="3uibUv" id="4vnGofE$b6p" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+                <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
               </node>
             </node>
           </node>
@@ -3356,7 +3325,7 @@
             <node concept="3cpWsn" id="5C8n8D5YU58" role="3cpWs9">
               <property role="TrG5h" value="stateObject" />
               <node concept="3uibUv" id="5C8n8D5YU59" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+                <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
               </node>
             </node>
           </node>
@@ -3365,7 +3334,7 @@
             <node concept="3clFbC" id="5YZamx7FA0r" role="3cqZAk">
               <node concept="2OqwBi" id="5YZamx7FA0G" role="3uHU7w">
                 <node concept="2OwXpG" id="5YZamx7FA0H" role="2OqNvi">
-                  <ref role="2Oxat5" to="nmul:2h07kW1J_vH" resolve="property" />
+                  <ref role="2Oxat5" to="rh18:4vnGofEzf1C" resolve="property" />
                   <node concept="1ZhdrF" id="5YZamx7FA0I" role="lGtFl">
                     <property role="2qtEX8" value="fieldDeclaration" />
                     <node concept="3$xsQk" id="5YZamx7FA0J" role="3$ytzL">
@@ -3414,7 +3383,7 @@
             <node concept="3cpWsn" id="46uejXd6WvL" role="3cpWs9">
               <property role="TrG5h" value="preferenceForm" />
               <node concept="3uibUv" id="46uejXd6WvM" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+                <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
               </node>
             </node>
           </node>
@@ -3430,7 +3399,7 @@
             <node concept="3cpWsn" id="46uejXd6WvR" role="3cpWs9">
               <property role="TrG5h" value="stateObject" />
               <node concept="3uibUv" id="46uejXd6WvS" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+                <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
               </node>
             </node>
           </node>
@@ -3453,7 +3422,7 @@
                   </node>
                   <node concept="2OqwBi" id="46uejXd6WvY" role="3uHU7w">
                     <node concept="2OwXpG" id="46uejXd6WvZ" role="2OqNvi">
-                      <ref role="2Oxat5" to="nmul:2h07kW1J_vH" resolve="property" />
+                      <ref role="2Oxat5" to="rh18:4vnGofEzf1C" resolve="property" />
                       <node concept="1ZhdrF" id="46uejXd6Ww0" role="lGtFl">
                         <property role="2qtEX8" value="fieldDeclaration" />
                         <node concept="3$xsQk" id="46uejXd6Ww1" role="3$ytzL">
@@ -3492,7 +3461,7 @@
             <node concept="3cpWsn" id="77gEP6zqo3g" role="3cpWs9">
               <property role="TrG5h" value="preferenceForm" />
               <node concept="3uibUv" id="77gEP6zqo3h" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+                <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
               </node>
             </node>
           </node>
@@ -3508,7 +3477,7 @@
             <node concept="3cpWsn" id="77gEP6zqo3m" role="3cpWs9">
               <property role="TrG5h" value="stateObject" />
               <node concept="3uibUv" id="77gEP6zqo3n" role="1tU5fm">
-                <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+                <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
               </node>
             </node>
           </node>
@@ -3520,7 +3489,7 @@
                   <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
                   <node concept="2OqwBi" id="77gEP6zqo3t" role="37wK5m">
                     <node concept="2OwXpG" id="77gEP6zqo3u" role="2OqNvi">
-                      <ref role="2Oxat5" to="nmul:2h07kW1J_vH" resolve="property" />
+                      <ref role="2Oxat5" to="rh18:4vnGofEzf1C" resolve="property" />
                       <node concept="1ZhdrF" id="77gEP6zqo3v" role="lGtFl">
                         <property role="2qtEX8" value="fieldDeclaration" />
                         <node concept="3$xsQk" id="77gEP6zqo3w" role="3$ytzL">
@@ -3554,12 +3523,12 @@
                         </node>
                       </node>
                       <node concept="3uibUv" id="77gEP6zv4sN" role="10QFUM">
-                        <ref role="3uigEE" to="nmul:15E$Thfi1SB" resolve="DynamicComboBoxEntry" />
+                        <ref role="3uigEE" to="rh18:77gEP6zupJu" resolve="DynamicComboBoxEntry" />
                       </node>
                     </node>
                   </node>
                   <node concept="liA8E" id="77gEP6zv7fm" role="2OqNvi">
-                    <ref role="37wK5l" to="nmul:15E$Thfi1T5" resolve="getKey" />
+                    <ref role="37wK5l" to="rh18:77gEP6zurvg" resolve="getKey" />
                   </node>
                 </node>
               </node>
@@ -3702,7 +3671,7 @@
       <node concept="3Tm1VV" id="hB4smyD" role="1B3o_S" />
       <node concept="3clFbS" id="hB4smyE" role="3clF47">
         <node concept="XkiVB" id="X7OD3Wwqk5" role="3cqZAp">
-          <ref role="37wK5l" to="nmul:2h07kW1J_wj" resolve="PreferenceFormProjectComponentBase" />
+          <ref role="37wK5l" to="rh18:X7OD3WrUyj" resolve="PreferenceFormProjectComponentBase" />
           <node concept="37vLTw" id="X7OD3Wwqym" role="37wK5m">
             <ref role="3cqZAo" node="hBxVmJo" resolve="project" />
           </node>
@@ -3748,7 +3717,7 @@
                 <ref role="1Pybhc" to="oj08:~PropertiesComponent" resolve="PropertiesComponent" />
                 <ref role="37wK5l" to="oj08:~PropertiesComponent.getInstance(com.intellij.openapi.project.Project):com.intellij.ide.util.PropertiesComponent" resolve="getInstance" />
                 <node concept="1rXfSq" id="5CNjqUbZCKL" role="37wK5m">
-                  <ref role="37wK5l" to="nmul:2h07kW1J_ww" resolve="getProject" />
+                  <ref role="37wK5l" to="rh18:X7OD3Ws27N" resolve="getProject" />
                 </node>
               </node>
               <node concept="liA8E" id="5CNjqUbZCas" role="2OqNvi">
@@ -3820,7 +3789,7 @@
               <node concept="2OqwBi" id="hIjtn$2" role="37wK5m">
                 <node concept="Xjq3P" id="X7OD3WwqMQ" role="2Oq$k0" />
                 <node concept="liA8E" id="hIjtn$3" role="2OqNvi">
-                  <ref role="37wK5l" to="nmul:2h07kW1J_wD" resolve="getMPSProject" />
+                  <ref role="37wK5l" to="rh18:X7OD3WtwNs" resolve="getMPSProject" />
                 </node>
               </node>
             </node>
@@ -3830,7 +3799,7 @@
           <node concept="2OqwBi" id="hIiYZzx" role="2GsD0m">
             <node concept="Xjq3P" id="hIiYZoZ" role="2Oq$k0" />
             <node concept="liA8E" id="hIiZBTW" role="2OqNvi">
-              <ref role="37wK5l" to="nmul:2h07kW1J_uG" resolve="getPages" />
+              <ref role="37wK5l" to="rh18:~BaseProjectPrefsComponent.getPages():java.util.List" resolve="getPages" />
             </node>
           </node>
           <node concept="3clFbS" id="hIiYXx_" role="2LFqv$">
@@ -3868,7 +3837,7 @@
               <node concept="2OqwBi" id="hIjtk$y" role="37wK5m">
                 <node concept="Xjq3P" id="hIjtk$$" role="2Oq$k0" />
                 <node concept="liA8E" id="hIjtk$z" role="2OqNvi">
-                  <ref role="37wK5l" to="nmul:2h07kW1J_wD" resolve="getMPSProject" />
+                  <ref role="37wK5l" to="rh18:X7OD3WtwNs" resolve="getMPSProject" />
                 </node>
               </node>
             </node>
@@ -3900,7 +3869,7 @@
                 <ref role="1Pybhc" to="oj08:~PropertiesComponent" resolve="PropertiesComponent" />
                 <ref role="37wK5l" to="oj08:~PropertiesComponent.getInstance(com.intellij.openapi.project.Project):com.intellij.ide.util.PropertiesComponent" resolve="getInstance" />
                 <node concept="1rXfSq" id="5CNjqUbZG$H" role="37wK5m">
-                  <ref role="37wK5l" to="nmul:2h07kW1J_ww" resolve="getProject" />
+                  <ref role="37wK5l" to="rh18:X7OD3Ws27N" resolve="getProject" />
                 </node>
               </node>
               <node concept="liA8E" id="5CNjqUbZG3j" role="2OqNvi">
@@ -4072,7 +4041,7 @@
       <property role="TrG5h" value="createPages" />
       <node concept="_YKpA" id="i1ABB26" role="3clF45">
         <node concept="3uibUv" id="X7OD3Wwx88" role="_ZDj9">
-          <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+          <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
         </node>
       </node>
       <node concept="3Tm1VV" id="hI36svD" role="1B3o_S" />
@@ -4081,13 +4050,13 @@
           <node concept="2ShNRf" id="hI3iiOC" role="3cqZAk">
             <node concept="Tc6Ow" id="i1ABB8o" role="2ShVmc">
               <node concept="3uibUv" id="X7OD3WwzaS" role="HW$YZ">
-                <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+                <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
               </node>
               <node concept="2ShNRf" id="4vnGofEtSlZ" role="HW$Y0">
                 <node concept="1pGfFk" id="4vnGofEu8Wb" role="2ShVmc">
                   <ref role="37wK5l" node="hI3nsvH" resolve="MyProjectPreferencesConfigurable" />
                   <node concept="1rXfSq" id="4vnGofEuaj6" role="37wK5m">
-                    <ref role="37wK5l" to="nmul:2h07kW1J_ww" resolve="getProject" />
+                    <ref role="37wK5l" to="rh18:X7OD3Ws27N" resolve="getProject" />
                   </node>
                   <node concept="Xjq3P" id="4vnGofEucxw" role="37wK5m" />
                   <node concept="1ZhdrF" id="4vnGofEudD3" role="lGtFl">
@@ -4151,7 +4120,7 @@
         <node concept="3clFbS" id="hI35iLe" role="3clF47" />
       </node>
       <node concept="3uibUv" id="4vnGofEE7w0" role="1zkMxy">
-        <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+        <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
       </node>
     </node>
     <node concept="3Tm1VV" id="hB4myvL" role="1B3o_S" />
@@ -4174,7 +4143,7 @@
       </node>
     </node>
     <node concept="3uibUv" id="X7OD3WwkG2" role="1zkMxy">
-      <ref role="3uigEE" to="nmul:2h07kW1J_we" resolve="PreferenceFormProjectComponentBase" />
+      <ref role="3uigEE" to="rh18:X7OD3WrUxa" resolve="PreferenceFormProjectComponentBase" />
     </node>
   </node>
   <node concept="312cEu" id="X7OD3WwKWK">
@@ -4210,7 +4179,7 @@
       <node concept="3Tm1VV" id="X7OD3WwKWX" role="1B3o_S" />
       <node concept="3clFbS" id="X7OD3WwKWY" role="3clF47">
         <node concept="XkiVB" id="X7OD3WwKWZ" role="3cqZAp">
-          <ref role="37wK5l" to="nmul:2h07kW1J_w7" resolve="PreferenceFormApplicationComponentBase" />
+          <ref role="37wK5l" to="rh18:X7OD3Wu3f7" resolve="PreferenceFormApplicationComponentBase" />
         </node>
         <node concept="3clFbF" id="5MwYr7OpgXn" role="3cqZAp">
           <node concept="37vLTI" id="5MwYr7OpgZo" role="3clFbG">
@@ -4344,7 +4313,7 @@
           <node concept="2OqwBi" id="X7OD3WwKXr" role="2GsD0m">
             <node concept="Xjq3P" id="X7OD3WwKXs" role="2Oq$k0" />
             <node concept="liA8E" id="X7OD3WwKXt" role="2OqNvi">
-              <ref role="37wK5l" to="nmul:2h07kW1J_uG" resolve="getPages" />
+              <ref role="37wK5l" to="rh18:~BaseProjectPrefsComponent.getPages():java.util.List" resolve="getPages" />
             </node>
           </node>
           <node concept="3clFbS" id="X7OD3WwKXu" role="2LFqv$">
@@ -4609,7 +4578,7 @@
       <property role="TrG5h" value="createPages" />
       <node concept="_YKpA" id="4vnGofEuwXy" role="3clF45">
         <node concept="3uibUv" id="4vnGofEuwXz" role="_ZDj9">
-          <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+          <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
         </node>
       </node>
       <node concept="3Tm1VV" id="4vnGofEuwX$" role="1B3o_S" />
@@ -4618,7 +4587,7 @@
           <node concept="2ShNRf" id="4vnGofEuwXB" role="3cqZAk">
             <node concept="Tc6Ow" id="4vnGofEuwXC" role="2ShVmc">
               <node concept="3uibUv" id="4vnGofEuwXD" role="HW$YZ">
-                <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+                <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
               </node>
               <node concept="2ShNRf" id="4vnGofEuwXE" role="HW$Y0">
                 <node concept="1pGfFk" id="4vnGofEuwXF" role="2ShVmc">
@@ -4685,7 +4654,7 @@
         <node concept="3clFbS" id="X7OD3WwKZC" role="3clF47" />
       </node>
       <node concept="3uibUv" id="4vnGofEDXkG" role="1zkMxy">
-        <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+        <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
       </node>
     </node>
     <node concept="3Tm1VV" id="X7OD3WwKZD" role="1B3o_S" />
@@ -4708,7 +4677,7 @@
       </node>
     </node>
     <node concept="3uibUv" id="X7OD3WwOlP" role="1zkMxy">
-      <ref role="3uigEE" to="nmul:2h07kW1J_w6" resolve="PreferenceFormApplicationComponentBase" />
+      <ref role="3uigEE" to="rh18:X7OD3Wu3eo" resolve="PreferenceFormApplicationComponentBase" />
     </node>
   </node>
   <node concept="1pmfR0" id="1DjGUwRhkRk">
@@ -4748,7 +4717,7 @@
       <node concept="3Tm1VV" id="4vnGofEtmmv" role="1B3o_S" />
       <node concept="3clFbS" id="4vnGofEtmmy" role="3clF47">
         <node concept="XkiVB" id="4vnGofEtmmz" role="3cqZAp">
-          <ref role="37wK5l" to="nmul:2h07kW1J_$9" resolve="PreferenceFormApplicationConfigurableBase" />
+          <ref role="37wK5l" to="rh18:X7OD3Wu4e3" resolve="PreferenceFormApplicationConfigurableBase" />
           <node concept="37vLTw" id="4vnGofEtmm_" role="37wK5m">
             <ref role="3cqZAo" node="4vnGofEtmmA" resolve="preferenceFormComponent" />
           </node>
@@ -4757,7 +4726,7 @@
       <node concept="37vLTG" id="4vnGofEtmmA" role="3clF46">
         <property role="TrG5h" value="preferenceFormComponent" />
         <node concept="3uibUv" id="4vnGofEttCL" role="1tU5fm">
-          <ref role="3uigEE" to="nmul:2h07kW1J_w6" resolve="PreferenceFormApplicationComponentBase" />
+          <ref role="3uigEE" to="rh18:X7OD3Wu3eo" resolve="PreferenceFormApplicationComponentBase" />
         </node>
       </node>
     </node>
@@ -4792,7 +4761,7 @@
           <node concept="1eOMI4" id="4vnGofEHhmt" role="3clFbG">
             <node concept="10QFUN" id="4vnGofEHhmu" role="1eOMHV">
               <node concept="3nyPlj" id="4vnGofEHhms" role="10QFUP">
-                <ref role="37wK5l" to="nmul:2h07kW1J_xJ" resolve="getPreferenceFormComponent" />
+                <ref role="37wK5l" to="rh18:~BasePrefsPage.getPrefsComponent():jetbrains.mps.plugins.prefs.BaseProjectPrefsComponent" resolve="getPreferenceFormComponent" />
               </node>
               <node concept="3uibUv" id="4vnGofEHhEf" role="10QFUM">
                 <ref role="3uigEE" node="X7OD3WwKWK" resolve="MyApplicationPreferenceComponent" />
@@ -4867,7 +4836,7 @@
           <node concept="1eOMI4" id="4vnGofEHj8I" role="3clFbG">
             <node concept="10QFUN" id="4vnGofEHj8J" role="1eOMHV">
               <node concept="3nyPlj" id="4vnGofEHj8H" role="10QFUP">
-                <ref role="37wK5l" to="nmul:2h07kW1J_xS" resolve="getStateObject" />
+                <ref role="37wK5l" to="rh18:4vnGofEEpk6" resolve="getStateObject" />
               </node>
               <node concept="3uibUv" id="4vnGofEHjrY" role="10QFUM">
                 <ref role="3uigEE" node="X7OD3WwKZp" resolve="MyApplicationPreferenceComponent.MyState" />
@@ -4971,7 +4940,7 @@
                 <node concept="2OqwBi" id="4vnGofEtmn6" role="37vLTJ">
                   <node concept="Xjq3P" id="4vnGofEtmn7" role="2Oq$k0" />
                   <node concept="2OwXpG" id="4vnGofEtmn8" role="2OqNvi">
-                    <ref role="2Oxat5" to="nmul:2h07kW1J_xe" resolve="icon" />
+                    <ref role="2Oxat5" to="rh18:hI3nmge" resolve="icon" />
                   </node>
                 </node>
                 <node concept="2YIFZM" id="4vnGofEtmn9" role="37vLTx">
@@ -5082,7 +5051,7 @@
             <node concept="2OqwBi" id="4vnGofEtmnM" role="3uHU7B">
               <node concept="Xjq3P" id="4vnGofEtmnN" role="2Oq$k0" />
               <node concept="2OwXpG" id="4vnGofEtmnO" role="2OqNvi">
-                <ref role="2Oxat5" to="nmul:2h07kW1J_xe" resolve="icon" />
+                <ref role="2Oxat5" to="rh18:hI3nmge" resolve="icon" />
               </node>
             </node>
             <node concept="10Nm6u" id="4vnGofEtmnP" role="3uHU7w" />
@@ -5092,7 +5061,7 @@
           <node concept="2OqwBi" id="4vnGofEtmnR" role="3cqZAk">
             <node concept="Xjq3P" id="4vnGofEtmnS" role="2Oq$k0" />
             <node concept="2OwXpG" id="4vnGofEtmnT" role="2OqNvi">
-              <ref role="2Oxat5" to="nmul:2h07kW1J_xe" resolve="icon" />
+              <ref role="2Oxat5" to="rh18:hI3nmge" resolve="icon" />
             </node>
           </node>
         </node>
@@ -5126,7 +5095,7 @@
                 <node concept="2OqwBi" id="42HZhU0dMup" role="10QFUP">
                   <node concept="Xjq3P" id="42HZhU0dMuq" role="2Oq$k0" />
                   <node concept="liA8E" id="42HZhU0dMur" role="2OqNvi">
-                    <ref role="37wK5l" to="nmul:2h07kW1J_zf" resolve="findControl" />
+                    <ref role="37wK5l" to="rh18:4vnGofEqUEE" resolve="findControl" />
                     <node concept="Xl_RD" id="42HZhU0dMus" role="37wK5m">
                       <property role="Xl_RC" value="" />
                       <node concept="17Uvod" id="42HZhU0dMut" role="lGtFl">
@@ -5223,7 +5192,7 @@
         <property role="TrG5h" value="preferenceForm" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="42HZhU0dMv2" role="1tU5fm">
-          <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+          <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
           <node concept="1ZhdrF" id="42HZhU0dMv3" role="lGtFl">
             <property role="2qtEX8" value="classifier" />
             <node concept="3$xsQk" id="42HZhU0dMv4" role="3$ytzL">
@@ -5254,7 +5223,7 @@
       <node concept="37vLTG" id="42HZhU0dMvf" role="3clF46">
         <property role="TrG5h" value="stateObject" />
         <node concept="3uibUv" id="42HZhU0dMvg" role="1tU5fm">
-          <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+          <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
           <node concept="1ZhdrF" id="42HZhU0dMvh" role="lGtFl">
             <property role="2qtEX8" value="classifier" />
             <node concept="3$xsQk" id="42HZhU0dMvi" role="3$ytzL">
@@ -5384,7 +5353,7 @@
                 <node concept="2OqwBi" id="42HZhU0dMwd" role="10QFUP">
                   <node concept="Xjq3P" id="42HZhU0dMwe" role="2Oq$k0" />
                   <node concept="liA8E" id="42HZhU0dMwf" role="2OqNvi">
-                    <ref role="37wK5l" to="nmul:2h07kW1J_zf" resolve="findControl" />
+                    <ref role="37wK5l" to="rh18:4vnGofEqUEE" resolve="findControl" />
                     <node concept="Xl_RD" id="42HZhU0dMwg" role="37wK5m">
                       <property role="Xl_RC" value="" />
                       <node concept="17Uvod" id="42HZhU0dMwh" role="lGtFl">
@@ -5491,7 +5460,7 @@
         <property role="TrG5h" value="preferenceForm" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="42HZhU0dMwP" role="1tU5fm">
-          <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+          <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
           <node concept="1ZhdrF" id="42HZhU0dMwQ" role="lGtFl">
             <property role="2qtEX8" value="classifier" />
             <node concept="3$xsQk" id="42HZhU0dMwR" role="3$ytzL">
@@ -5522,7 +5491,7 @@
       <node concept="37vLTG" id="42HZhU0dMx2" role="3clF46">
         <property role="TrG5h" value="stateObject" />
         <node concept="3uibUv" id="42HZhU0dMx3" role="1tU5fm">
-          <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+          <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
           <node concept="1ZhdrF" id="42HZhU0dMx4" role="lGtFl">
             <property role="2qtEX8" value="classifier" />
             <node concept="3$xsQk" id="42HZhU0dMx5" role="3$ytzL">
@@ -5651,7 +5620,7 @@
                 <node concept="2OqwBi" id="42HZhU0dMy1" role="10QFUP">
                   <node concept="Xjq3P" id="42HZhU0dMy2" role="2Oq$k0" />
                   <node concept="liA8E" id="42HZhU0dMy3" role="2OqNvi">
-                    <ref role="37wK5l" to="nmul:2h07kW1J_zf" resolve="findControl" />
+                    <ref role="37wK5l" to="rh18:4vnGofEqUEE" resolve="findControl" />
                     <node concept="Xl_RD" id="42HZhU0dMy4" role="37wK5m">
                       <property role="Xl_RC" value="" />
                       <node concept="17Uvod" id="42HZhU0dMy5" role="lGtFl">
@@ -5743,7 +5712,7 @@
         <property role="TrG5h" value="preferenceForm" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="42HZhU0dMyC" role="1tU5fm">
-          <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+          <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
           <node concept="1ZhdrF" id="42HZhU0dMyD" role="lGtFl">
             <property role="2qtEX8" value="classifier" />
             <node concept="3$xsQk" id="42HZhU0dMyE" role="3$ytzL">
@@ -5774,7 +5743,7 @@
       <node concept="37vLTG" id="42HZhU0dMyP" role="3clF46">
         <property role="TrG5h" value="stateObject" />
         <node concept="3uibUv" id="42HZhU0dMyQ" role="1tU5fm">
-          <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+          <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
           <node concept="1ZhdrF" id="42HZhU0dMyR" role="lGtFl">
             <property role="2qtEX8" value="classifier" />
             <node concept="3$xsQk" id="42HZhU0dMyS" role="3$ytzL">
@@ -5902,7 +5871,7 @@
             <node concept="2OqwBi" id="42HZhU0dMzM" role="37wK5m">
               <node concept="Xjq3P" id="42HZhU0dMzN" role="2Oq$k0" />
               <node concept="2OwXpG" id="42HZhU0dMzO" role="2OqNvi">
-                <ref role="2Oxat5" to="nmul:2h07kW1J_xj" resolve="jComponent" />
+                <ref role="2Oxat5" to="rh18:4vnGofErdC0" resolve="jComponent" />
               </node>
             </node>
             <node concept="1ZhdrF" id="42HZhU0dMzP" role="lGtFl">
@@ -5955,7 +5924,7 @@
         <property role="TrG5h" value="preferenceForm" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="42HZhU0dM$j" role="1tU5fm">
-          <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+          <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
           <node concept="1ZhdrF" id="42HZhU0dM$k" role="lGtFl">
             <property role="2qtEX8" value="classifier" />
             <node concept="3$xsQk" id="42HZhU0dM$l" role="3$ytzL">
@@ -6101,7 +6070,7 @@
       <ref role="n9lRv" to="3iid:86yKXFERvb" resolve="PreferenceForm" />
     </node>
     <node concept="3uibUv" id="4vnGofEtqs$" role="1zkMxy">
-      <ref role="3uigEE" to="nmul:2h07kW1J_$8" resolve="PreferenceFormApplicationConfigurableBase" />
+      <ref role="3uigEE" to="rh18:X7OD3Wu4do" resolve="PreferenceFormApplicationConfigurableBase" />
     </node>
     <node concept="17Uvod" id="4vnGofEtmpD" role="lGtFl">
       <property role="2qtEX9" value="name" />
@@ -6224,7 +6193,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1DjGUwRhak5" role="2OqNvi">
-              <ref role="37wK5l" to="nmul:2h07kW1J_uQ" resolve="init" />
+              <ref role="37wK5l" to="rh18:~BaseProjectPrefsComponent.init():void" resolve="init" />
             </node>
           </node>
         </node>
@@ -6247,7 +6216,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1DjGUwRhew3" role="2OqNvi">
-              <ref role="37wK5l" to="nmul:2h07kW1J_vj" resolve="dispose" />
+              <ref role="37wK5l" to="rh18:~BaseProjectPrefsComponent.dispose():void" resolve="dispose" />
             </node>
           </node>
         </node>
@@ -6444,7 +6413,7 @@
       </node>
       <node concept="3clFbS" id="hI3nsvK" role="3clF47">
         <node concept="XkiVB" id="X7OD3WyVHY" role="3cqZAp">
-          <ref role="37wK5l" to="nmul:2h07kW1J_$O" resolve="PreferenceFormProjectConfigurableBase" />
+          <ref role="37wK5l" to="rh18:X7OD3WtC7A" resolve="PreferenceFormProjectConfigurableBase" />
           <node concept="37vLTw" id="X7OD3WyVZ8" role="37wK5m">
             <ref role="3cqZAo" node="hI3nsvN" resolve="project" />
           </node>
@@ -6456,7 +6425,7 @@
       <node concept="37vLTG" id="hI3W$p9" role="3clF46">
         <property role="TrG5h" value="preferenceFormComponent" />
         <node concept="3uibUv" id="X7OD3WyTd9" role="1tU5fm">
-          <ref role="3uigEE" to="nmul:2h07kW1J_we" resolve="PreferenceFormProjectComponentBase" />
+          <ref role="3uigEE" to="rh18:X7OD3WrUxa" resolve="PreferenceFormProjectComponentBase" />
         </node>
       </node>
     </node>
@@ -6491,7 +6460,7 @@
           <node concept="1eOMI4" id="4vnGofEIxDK" role="3clFbG">
             <node concept="10QFUN" id="4vnGofEIxDL" role="1eOMHV">
               <node concept="3nyPlj" id="4vnGofEIxDM" role="10QFUP">
-                <ref role="37wK5l" to="nmul:2h07kW1J_xJ" resolve="getPreferenceFormComponent" />
+                <ref role="37wK5l" to="rh18:~BasePrefsPage.getPrefsComponent():jetbrains.mps.plugins.prefs.BaseProjectPrefsComponent" resolve="getPreferenceFormComponent" />
               </node>
               <node concept="3uibUv" id="4vnGofEIxDN" role="10QFUM">
                 <ref role="3uigEE" node="hB4myvK" resolve="MyProjectPreferenceComponent" />
@@ -6566,7 +6535,7 @@
           <node concept="1eOMI4" id="4vnGofEIxEi" role="3clFbG">
             <node concept="10QFUN" id="4vnGofEIxEj" role="1eOMHV">
               <node concept="3nyPlj" id="4vnGofEIxEk" role="10QFUP">
-                <ref role="37wK5l" to="nmul:2h07kW1J_xS" resolve="getStateObject" />
+                <ref role="37wK5l" to="rh18:4vnGofEEpk6" resolve="getStateObject" />
               </node>
               <node concept="3uibUv" id="4vnGofEIxEl" role="10QFUM">
                 <ref role="3uigEE" node="hI35iL9" resolve="MyProjectPreferenceComponent.MyState" />
@@ -6670,7 +6639,7 @@
                 <node concept="2OqwBi" id="hI3np25" role="37vLTJ">
                   <node concept="Xjq3P" id="hI3np27" role="2Oq$k0" />
                   <node concept="2OwXpG" id="hI3np26" role="2OqNvi">
-                    <ref role="2Oxat5" to="nmul:2h07kW1J_xe" resolve="icon" />
+                    <ref role="2Oxat5" to="rh18:hI3nmge" resolve="icon" />
                   </node>
                 </node>
                 <node concept="2YIFZM" id="hI3np1v" role="37vLTx">
@@ -6781,7 +6750,7 @@
             <node concept="2OqwBi" id="hI3np1p" role="3uHU7B">
               <node concept="Xjq3P" id="hI3np1r" role="2Oq$k0" />
               <node concept="2OwXpG" id="hI3np1q" role="2OqNvi">
-                <ref role="2Oxat5" to="nmul:2h07kW1J_xe" resolve="icon" />
+                <ref role="2Oxat5" to="rh18:hI3nmge" resolve="icon" />
               </node>
             </node>
             <node concept="10Nm6u" id="hI3np1o" role="3uHU7w" />
@@ -6791,7 +6760,7 @@
           <node concept="2OqwBi" id="hI3np2i" role="3cqZAk">
             <node concept="Xjq3P" id="hI3np2k" role="2Oq$k0" />
             <node concept="2OwXpG" id="hI3np2j" role="2OqNvi">
-              <ref role="2Oxat5" to="nmul:2h07kW1J_xe" resolve="icon" />
+              <ref role="2Oxat5" to="rh18:hI3nmge" resolve="icon" />
             </node>
           </node>
         </node>
@@ -6825,7 +6794,7 @@
                 <node concept="2OqwBi" id="5C8n8D60nLs" role="10QFUP">
                   <node concept="Xjq3P" id="5C8n8D60nLt" role="2Oq$k0" />
                   <node concept="liA8E" id="5C8n8D60nLu" role="2OqNvi">
-                    <ref role="37wK5l" to="nmul:2h07kW1J_zf" resolve="findControl" />
+                    <ref role="37wK5l" to="rh18:4vnGofEqUEE" resolve="findControl" />
                     <node concept="Xl_RD" id="5C8n8D60nLv" role="37wK5m">
                       <property role="Xl_RC" value="" />
                       <node concept="17Uvod" id="5C8n8D60nLw" role="lGtFl">
@@ -6922,7 +6891,7 @@
         <property role="TrG5h" value="preferenceForm" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="5YZamx7J0Y$" role="1tU5fm">
-          <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+          <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
           <node concept="1ZhdrF" id="5YZamx7J0Y_" role="lGtFl">
             <property role="2qtEX8" value="classifier" />
             <node concept="3$xsQk" id="5YZamx7J0YA" role="3$ytzL">
@@ -6953,7 +6922,7 @@
       <node concept="37vLTG" id="5C8n8D5Y6G7" role="3clF46">
         <property role="TrG5h" value="stateObject" />
         <node concept="3uibUv" id="5C8n8D5YaJH" role="1tU5fm">
-          <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+          <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
           <node concept="1ZhdrF" id="5C8n8D5YaJI" role="lGtFl">
             <property role="2qtEX8" value="classifier" />
             <node concept="3$xsQk" id="5C8n8D5YaJJ" role="3$ytzL">
@@ -7083,7 +7052,7 @@
                 <node concept="2OqwBi" id="5C8n8D60pys" role="10QFUP">
                   <node concept="Xjq3P" id="5C8n8D60pyt" role="2Oq$k0" />
                   <node concept="liA8E" id="5C8n8D60pyu" role="2OqNvi">
-                    <ref role="37wK5l" to="nmul:2h07kW1J_zf" resolve="findControl" />
+                    <ref role="37wK5l" to="rh18:4vnGofEqUEE" resolve="findControl" />
                     <node concept="Xl_RD" id="5C8n8D60pyv" role="37wK5m">
                       <property role="Xl_RC" value="" />
                       <node concept="17Uvod" id="5C8n8D60pyw" role="lGtFl">
@@ -7187,7 +7156,7 @@
         <property role="TrG5h" value="preferenceForm" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="5YZamx7J0Zz" role="1tU5fm">
-          <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+          <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
           <node concept="1ZhdrF" id="5YZamx7J0Z$" role="lGtFl">
             <property role="2qtEX8" value="classifier" />
             <node concept="3$xsQk" id="5YZamx7J0Z_" role="3$ytzL">
@@ -7218,7 +7187,7 @@
       <node concept="37vLTG" id="5C8n8D5YmV$" role="3clF46">
         <property role="TrG5h" value="stateObject" />
         <node concept="3uibUv" id="5C8n8D5YmV_" role="1tU5fm">
-          <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+          <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
           <node concept="1ZhdrF" id="5C8n8D5YmVA" role="lGtFl">
             <property role="2qtEX8" value="classifier" />
             <node concept="3$xsQk" id="5C8n8D5YmVB" role="3$ytzL">
@@ -7347,7 +7316,7 @@
                 <node concept="2OqwBi" id="5C8n8D60rjy" role="10QFUP">
                   <node concept="Xjq3P" id="5C8n8D60rjz" role="2Oq$k0" />
                   <node concept="liA8E" id="5C8n8D60rj$" role="2OqNvi">
-                    <ref role="37wK5l" to="nmul:2h07kW1J_zf" resolve="findControl" />
+                    <ref role="37wK5l" to="rh18:4vnGofEqUEE" resolve="findControl" />
                     <node concept="Xl_RD" id="5C8n8D60rj_" role="37wK5m">
                       <property role="Xl_RC" value="" />
                       <node concept="17Uvod" id="5C8n8D60rjA" role="lGtFl">
@@ -7439,7 +7408,7 @@
         <property role="TrG5h" value="preferenceForm" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="5YZamx7J10y" role="1tU5fm">
-          <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+          <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
           <node concept="1ZhdrF" id="5YZamx7J10z" role="lGtFl">
             <property role="2qtEX8" value="classifier" />
             <node concept="3$xsQk" id="5YZamx7J10$" role="3$ytzL">
@@ -7470,7 +7439,7 @@
       <node concept="37vLTG" id="5C8n8D5Ys5S" role="3clF46">
         <property role="TrG5h" value="stateObject" />
         <node concept="3uibUv" id="5C8n8D5Ys5T" role="1tU5fm">
-          <ref role="3uigEE" to="nmul:2h07kW1J_vG" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
+          <ref role="3uigEE" to="rh18:4vnGofEDThu" resolve="AbstractPreferenceFormComponent.AbstractMyState" />
           <node concept="1ZhdrF" id="5C8n8D5Ys5U" role="lGtFl">
             <property role="2qtEX8" value="classifier" />
             <node concept="3$xsQk" id="5C8n8D5Ys5V" role="3$ytzL">
@@ -7598,7 +7567,7 @@
             <node concept="2OqwBi" id="5YZamx7J11e" role="37wK5m">
               <node concept="Xjq3P" id="5YZamx7J11f" role="2Oq$k0" />
               <node concept="2OwXpG" id="5YZamx7J11g" role="2OqNvi">
-                <ref role="2Oxat5" to="nmul:2h07kW1J_xj" resolve="jComponent" />
+                <ref role="2Oxat5" to="rh18:4vnGofErdC0" resolve="jComponent" />
               </node>
             </node>
             <node concept="1ZhdrF" id="5YZamx7J11h" role="lGtFl">
@@ -7651,7 +7620,7 @@
         <property role="TrG5h" value="preferenceForm" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="5YZamx7J11J" role="1tU5fm">
-          <ref role="3uigEE" to="nmul:2h07kW1J_wQ" resolve="AbstractPreferenceFormConfigurable" />
+          <ref role="3uigEE" to="rh18:~BasePrefsPage" resolve="AbstractPreferenceFormConfigurable" />
           <node concept="1ZhdrF" id="5YZamx7J11K" role="lGtFl">
             <property role="2qtEX8" value="classifier" />
             <node concept="3$xsQk" id="5YZamx7J11L" role="3$ytzL">
@@ -7797,7 +7766,7 @@
       <ref role="n9lRv" to="3iid:86yKXFERvb" resolve="PreferenceForm" />
     </node>
     <node concept="3uibUv" id="X7OD3WyjTv" role="1zkMxy">
-      <ref role="3uigEE" to="nmul:2h07kW1J_$J" resolve="PreferenceFormProjectConfigurableBase" />
+      <ref role="3uigEE" to="rh18:X7OD3WtC6$" resolve="PreferenceFormProjectConfigurableBase" />
     </node>
     <node concept="17Uvod" id="hI3nJa8" role="lGtFl">
       <property role="2qtEX9" value="name" />
@@ -8006,7 +7975,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1DjGUwRh0jE" role="2OqNvi">
-              <ref role="37wK5l" to="nmul:2h07kW1J_uQ" resolve="init" />
+              <ref role="37wK5l" to="rh18:~BaseProjectPrefsComponent.init():void" resolve="init" />
             </node>
           </node>
         </node>
@@ -8029,7 +7998,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1DjGUwRh3QD" role="2OqNvi">
-              <ref role="37wK5l" to="nmul:2h07kW1J_vj" resolve="dispose" />
+              <ref role="37wK5l" to="rh18:~BaseProjectPrefsComponent.dispose():void" resolve="dispose" />
             </node>
           </node>
         </node>
