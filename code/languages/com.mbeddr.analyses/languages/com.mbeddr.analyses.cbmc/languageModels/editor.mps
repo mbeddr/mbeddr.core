@@ -255,6 +255,7 @@
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
       <concept id="1214918975462" name="jetbrains.mps.baseLanguage.structure.PostfixDecrementExpression" flags="nn" index="3uO5VW" />
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -380,6 +381,39 @@
         <property role="3F0ifm" value=");" />
         <node concept="11L4FC" id="7CSU6RRXkuR" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="6RCrcvOtZws" role="3EZMnx">
+        <node concept="VPM3Z" id="6RCrcvOtZwu" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="6RCrcvOtZww" role="3EZMnx">
+          <property role="3F0ifm" value="//" />
+          <node concept="30gYXW" id="6RCrcvOyoh$" role="3F10Kt">
+            <property role="Vb096" value="LIGHT_BLUE" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="6RCrcvOtZxc" role="3EZMnx">
+          <ref role="1NtTu8" to="q5q6:6RCrcvOtNXu" resolve="explanation" />
+          <node concept="30gYXW" id="6RCrcvOyoit" role="3F10Kt">
+            <property role="Vb096" value="LIGHT_BLUE" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="6RCrcvOtZwx" role="2iSdaV" />
+        <node concept="pkWqt" id="6RCrcvOtZxk" role="pqm2j">
+          <node concept="3clFbS" id="6RCrcvOtZxl" role="2VODD2">
+            <node concept="3clFbF" id="6RCrcvOumgX" role="3cqZAp">
+              <node concept="3y3z36" id="6RCrcvOuq8E" role="3clFbG">
+                <node concept="10Nm6u" id="6RCrcvOuqmv" role="3uHU7w" />
+                <node concept="2OqwBi" id="6RCrcvOumow" role="3uHU7B">
+                  <node concept="pncrf" id="6RCrcvOumgW" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="6RCrcvOungw" role="2OqNvi">
+                    <ref role="3TsBF5" to="q5q6:6RCrcvOtNXu" resolve="explanation" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="l2Vlx" id="637qsduSbtv" role="2iSdaV" />

@@ -107,6 +107,10 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
+    <node concept="1TJgyi" id="6RCrcvOtNXu" role="1TKVEl">
+      <property role="TrG5h" value="explanation" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6$qhYL9Fk4m">
     <property role="TrG5h" value="VerificationConditionBase" />
