@@ -423,7 +423,9 @@
       <property role="3TUv4t" value="true" />
       <node concept="3Tm1VV" id="4Ow3NnwT4jw" role="1B3o_S" />
       <node concept="10P_77" id="6GZ1x5GshiV" role="1tU5fm" />
-      <node concept="3clFbT" id="6GZ1x5GshiW" role="33vP2m" />
+      <node concept="3clFbT" id="6GZ1x5GshiW" role="33vP2m">
+        <property role="3clFbU" value="true" />
+      </node>
       <node concept="NWlO9" id="7oz0hCw0QpG" role="lGtFl">
         <property role="NWlVz" value="Should we debug?" />
       </node>
@@ -5111,12 +5113,9 @@
               </node>
             </node>
             <node concept="3clFbJ" id="4a8JajkMaMu" role="3cqZAp">
-              <node concept="1Wc70l" id="4a8JajkMaMv" role="3clFbw">
-                <node concept="3clFbT" id="4a8JajkMaMw" role="3uHU7w" />
-                <node concept="10M0yZ" id="4a8JajkMaMx" role="3uHU7B">
-                  <ref role="1PxDUh" node="6GZ1x5GshiS" resolve="CBMCLiftedResultBuilder" />
-                  <ref role="3cqZAo" node="6GZ1x5GshiT" resolve="DEBUG" />
-                </node>
+              <node concept="10M0yZ" id="4a8JajkMaMx" role="3clFbw">
+                <ref role="1PxDUh" node="6GZ1x5GshiS" resolve="CBMCLiftedResultBuilder" />
+                <ref role="3cqZAo" node="6GZ1x5GshiT" resolve="DEBUG" />
               </node>
               <node concept="3clFbS" id="4a8JajkMaMy" role="3clFbx">
                 <node concept="3clFbF" id="4a8JajkMaMz" role="3cqZAp">
