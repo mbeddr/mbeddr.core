@@ -302,32 +302,38 @@
                 </node>
               </node>
             </node>
-            <node concept="22lmx$" id="2RawscbPHzP" role="3clFbw">
-              <node concept="22lmx$" id="3JErwPFIF3V" role="3uHU7B">
-                <node concept="2YIFZM" id="3JErwPFIF40" role="3uHU7B">
-                  <ref role="37wK5l" to="cu2c:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isGeneratorModel" />
-                  <ref role="1Pybhc" to="cu2c:~SModelStereotype" resolve="SModelStereotype" />
-                  <node concept="2OqwBi" id="3JErwPFIF41" role="37wK5m">
-                    <node concept="37vLTw" id="3JErwPFIF42" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3JErwPFIF8X" resolve="node" />
-                    </node>
-                    <node concept="I4A8Y" id="3JErwPFIF43" role="2OqNvi" />
-                  </node>
-                </node>
-                <node concept="2YIFZM" id="3JErwPFIF3W" role="3uHU7w">
-                  <ref role="37wK5l" to="cu2c:~SModelStereotype.isTestModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isTestModel" />
-                  <ref role="1Pybhc" to="cu2c:~SModelStereotype" resolve="SModelStereotype" />
-                  <node concept="2OqwBi" id="3JErwPFIF3X" role="37wK5m">
-                    <node concept="37vLTw" id="3JErwPFIF3Y" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3JErwPFIF8X" resolve="node" />
-                    </node>
-                    <node concept="I4A8Y" id="3JErwPFIF3Z" role="2OqNvi" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2YIFZM" id="2RawscbQDb6" role="3uHU7w">
-                <ref role="37wK5l" to="1p1s:~RuntimeFlags.isMergeDriverMode():boolean" resolve="isMergeDriverMode" />
+            <node concept="22lmx$" id="263VI$g7NR5" role="3clFbw">
+              <node concept="2YIFZM" id="263VI$g7S4W" role="3uHU7w">
+                <ref role="37wK5l" to="1p1s:~RuntimeFlags.isTestMode():boolean" resolve="isTestMode" />
                 <ref role="1Pybhc" to="1p1s:~RuntimeFlags" resolve="RuntimeFlags" />
+              </node>
+              <node concept="22lmx$" id="2RawscbPHzP" role="3uHU7B">
+                <node concept="22lmx$" id="3JErwPFIF3V" role="3uHU7B">
+                  <node concept="2YIFZM" id="3JErwPFIF40" role="3uHU7B">
+                    <ref role="37wK5l" to="cu2c:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isGeneratorModel" />
+                    <ref role="1Pybhc" to="cu2c:~SModelStereotype" resolve="SModelStereotype" />
+                    <node concept="2OqwBi" id="3JErwPFIF41" role="37wK5m">
+                      <node concept="37vLTw" id="3JErwPFIF42" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3JErwPFIF8X" resolve="node" />
+                      </node>
+                      <node concept="I4A8Y" id="3JErwPFIF43" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="2YIFZM" id="3JErwPFIF3W" role="3uHU7w">
+                    <ref role="37wK5l" to="cu2c:~SModelStereotype.isTestModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isTestModel" />
+                    <ref role="1Pybhc" to="cu2c:~SModelStereotype" resolve="SModelStereotype" />
+                    <node concept="2OqwBi" id="3JErwPFIF3X" role="37wK5m">
+                      <node concept="37vLTw" id="3JErwPFIF3Y" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3JErwPFIF8X" resolve="node" />
+                      </node>
+                      <node concept="I4A8Y" id="3JErwPFIF3Z" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2YIFZM" id="2RawscbQDb6" role="3uHU7w">
+                  <ref role="37wK5l" to="1p1s:~RuntimeFlags.isMergeDriverMode():boolean" resolve="isMergeDriverMode" />
+                  <ref role="1Pybhc" to="1p1s:~RuntimeFlags" resolve="RuntimeFlags" />
+                </node>
               </node>
             </node>
           </node>
