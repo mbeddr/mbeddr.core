@@ -34,6 +34,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -45,6 +46,7 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -715,6 +717,65 @@
             <node concept="3TrcHB" id="jmYEA6FW11" role="2OqNvi">
               <ref role="3TsBF5" to="q5q6:7ehmsbAE0gk" resolve="hasLocalCbmcSettings" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="6RCrcvOuqzZ">
+    <property role="3GE5qa" value="statements" />
+    <property role="TrG5h" value="toggleExplanation" />
+    <ref role="2ZfgGC" to="q5q6:637qsduSbtp" resolve="Assert" />
+    <node concept="2Sbjvc" id="6RCrcvOuq$0" role="2ZfgGD">
+      <node concept="3clFbS" id="6RCrcvOuq$1" role="2VODD2">
+        <node concept="3clFbJ" id="6RCrcvOus4R" role="3cqZAp">
+          <node concept="3clFbS" id="6RCrcvOus4S" role="3clFbx">
+            <node concept="3clFbF" id="6RCrcvOutvm" role="3cqZAp">
+              <node concept="37vLTI" id="6RCrcvOuuJa" role="3clFbG">
+                <node concept="Xl_RD" id="6RCrcvOuuRG" role="37vLTx">
+                  <property role="Xl_RC" value="" />
+                </node>
+                <node concept="2OqwBi" id="6RCrcvOutzj" role="37vLTJ">
+                  <node concept="2Sf5sV" id="6RCrcvOutvl" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="6RCrcvOuuef" role="2OqNvi">
+                    <ref role="3TsBF5" to="q5q6:6RCrcvOtNXu" resolve="explanation" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="6RCrcvOutoH" role="3clFbw">
+            <node concept="10Nm6u" id="6RCrcvOutsg" role="3uHU7w" />
+            <node concept="2OqwBi" id="6RCrcvOusak" role="3uHU7B">
+              <node concept="2Sf5sV" id="6RCrcvOus5p" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6RCrcvOusPk" role="2OqNvi">
+                <ref role="3TsBF5" to="q5q6:6RCrcvOtNXu" resolve="explanation" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="6RCrcvOuuZU" role="9aQIa">
+            <node concept="3clFbS" id="6RCrcvOuuZV" role="9aQI4">
+              <node concept="3clFbF" id="6RCrcvOuv8L" role="3cqZAp">
+                <node concept="37vLTI" id="6RCrcvOuwm3" role="3clFbG">
+                  <node concept="10Nm6u" id="6RCrcvOuwn5" role="37vLTx" />
+                  <node concept="2OqwBi" id="6RCrcvOuvcI" role="37vLTJ">
+                    <node concept="2Sf5sV" id="6RCrcvOuv8K" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="6RCrcvOuvRM" role="2OqNvi">
+                      <ref role="3TsBF5" to="q5q6:6RCrcvOtNXu" resolve="explanation" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2S6ZIM" id="6RCrcvOuq$2" role="2ZfVej">
+      <node concept="3clFbS" id="6RCrcvOuq$3" role="2VODD2">
+        <node concept="3clFbF" id="6RCrcvOur8H" role="3cqZAp">
+          <node concept="Xl_RD" id="6RCrcvOur8G" role="3clFbG">
+            <property role="Xl_RC" value="Toggle Explanation" />
           </node>
         </node>
       </node>

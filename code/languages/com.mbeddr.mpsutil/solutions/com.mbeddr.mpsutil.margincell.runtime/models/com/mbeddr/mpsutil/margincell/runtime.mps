@@ -415,16 +415,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7lmVLrUnqrb" role="3cqZAp">
-          <node concept="2OqwBi" id="7lmVLrUnspv" role="3clFbG">
-            <node concept="37vLTw" id="7lmVLrUntel" role="2Oq$k0">
-              <ref role="3cqZAo" node="7lmVLrUnteg" resolve="contentCell" />
-            </node>
-            <node concept="liA8E" id="7lmVLrUnsHd" role="2OqNvi">
-              <ref role="37wK5l" to="nu8v:~EditorCell.relayout():void" resolve="relayout" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="7lmVLrUntyg" role="3cqZAp">
           <node concept="2OqwBi" id="7lmVLrUnt_S" role="3clFbG">
             <node concept="37vLTw" id="7lmVLrUntyf" role="2Oq$k0">
@@ -448,6 +438,16 @@
                   <ref role="37wK5l" to="nu8v:~EditorCell.getY():int" resolve="getY" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7lmVLrUnqrb" role="3cqZAp">
+          <node concept="2OqwBi" id="7lmVLrUnspv" role="3clFbG">
+            <node concept="37vLTw" id="7lmVLrUntel" role="2Oq$k0">
+              <ref role="3cqZAo" node="7lmVLrUnteg" resolve="contentCell" />
+            </node>
+            <node concept="liA8E" id="7lmVLrUnsHd" role="2OqNvi">
+              <ref role="37wK5l" to="nu8v:~EditorCell.relayout():void" resolve="relayout" />
             </node>
           </node>
         </node>
@@ -1212,6 +1212,16 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="5TB79quqDXK" role="3cqZAp">
+              <node concept="2OqwBi" id="5TB79quqFam" role="3clFbG">
+                <node concept="2GrUjf" id="5TB79quqDXI" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="4A3glljUQI_" resolve="contentCell" />
+                </node>
+                <node concept="liA8E" id="5TB79quqFK6" role="2OqNvi">
+                  <ref role="37wK5l" to="nu8v:~EditorCell.relayout():void" resolve="relayout" />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbH" id="4A3glljUQJL" role="3cqZAp" />
             <node concept="3clFbF" id="4A3glljUQJM" role="3cqZAp">
               <node concept="2OqwBi" id="4A3glljUQJN" role="3clFbG">
@@ -1940,6 +1950,16 @@
               <node concept="37vLTw" id="1ZvNVeO6Okq" role="37wK5m">
                 <ref role="3cqZAo" node="1ZvNVeO6Okk" resolve="y" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5TB79quqFUR" role="3cqZAp">
+          <node concept="2OqwBi" id="5TB79quqG3z" role="3clFbG">
+            <node concept="37vLTw" id="5TB79quqFUP" role="2Oq$k0">
+              <ref role="3cqZAo" node="1NBYsOIpH1U" resolve="editorCell" />
+            </node>
+            <node concept="liA8E" id="5TB79quqGgo" role="2OqNvi">
+              <ref role="37wK5l" to="nu8v:~EditorCell.relayout():void" resolve="relayout" />
             </node>
           </node>
         </node>
