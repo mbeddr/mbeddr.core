@@ -7,7 +7,7 @@
           <value>
             <Library>
               <option name="name" value="mbeddr.core" />
-              <option name="path" value="${mbeddr.github.core.home}/languages" />
+              <option name="path" value="${i2s.home}/source/mbeddr.core/languages" />
             </Library>
           </value>
         </entry>
@@ -15,7 +15,7 @@
           <value>
             <Library>
               <option name="name" value="sl-all" />
-              <option name="path" value="${mbeddr.github.core.home}/code/plugins/sl-all" />
+              <option name="path" value="${i2s.home}/source/mbeddr.core/code/plugins/sl-all" />
             </Library>
           </value>
         </entry>
