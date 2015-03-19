@@ -2776,14 +2776,14 @@
             <node concept="3uibUv" id="4tIZ4QIlkj6" role="1tU5fm">
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
-            <node concept="2OqwBi" id="4tIZ4QIlkj7" role="33vP2m">
-              <node concept="37vLTw" id="4tIZ4QIlkj8" role="2Oq$k0">
+            <node concept="2YIFZM" id="5kHkJcGKfoj" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5kHkJcGJQBv" resolve="findResultByMessagePrefix" />
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <node concept="37vLTw" id="5kHkJcGKfEw" role="37wK5m">
                 <ref role="3cqZAo" node="4tIZ4QIk1sK" resolve="res" />
               </node>
-              <node concept="34jXtK" id="4tIZ4QIlkj9" role="2OqNvi">
-                <node concept="3cmrfG" id="4tIZ4QIllx_" role="25WWJ7">
-                  <property role="3cmrfH" value="0" />
-                </node>
+              <node concept="Xl_RD" id="5kHkJcGKguH" role="37wK5m">
+                <property role="Xl_RC" value="arithmetic overflow on signed +" />
               </node>
             </node>
           </node>
@@ -2905,14 +2905,14 @@
             <node concept="3uibUv" id="4tIZ4QIk1t5" role="1tU5fm">
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
-            <node concept="2OqwBi" id="4tIZ4QIk1t6" role="33vP2m">
-              <node concept="37vLTw" id="4tIZ4QIk1t7" role="2Oq$k0">
+            <node concept="2YIFZM" id="5kHkJcGKhn_" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5kHkJcGJQBv" resolve="findResultByMessagePrefix" />
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <node concept="37vLTw" id="5kHkJcGKhnA" role="37wK5m">
                 <ref role="3cqZAo" node="4tIZ4QIk1sK" resolve="res" />
               </node>
-              <node concept="34jXtK" id="4tIZ4QIk1t8" role="2OqNvi">
-                <node concept="3cmrfG" id="4tIZ4QIlk5C" role="25WWJ7">
-                  <property role="3cmrfH" value="1" />
-                </node>
+              <node concept="Xl_RD" id="5kHkJcGKhnB" role="37wK5m">
+                <property role="Xl_RC" value="arithmetic overflow on signed type conversion" />
               </node>
             </node>
           </node>
@@ -2922,7 +2922,7 @@
             <property role="TrG5h" value="cygwinMsg1" />
             <node concept="17QB3L" id="43x69gbF8$c" role="1tU5fm" />
             <node concept="Xl_RD" id="43x69gbF8$d" role="33vP2m">
-              <property role="Xl_RC" value="arithmetic overflow on signed + in return_value_getc$2 + 1" />
+              <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (char)(return_value_getc$2 + 1)" />
             </node>
           </node>
         </node>
@@ -2931,7 +2931,7 @@
             <property role="TrG5h" value="linuxMsg1" />
             <node concept="17QB3L" id="43x69gbF8$g" role="1tU5fm" />
             <node concept="Xl_RD" id="43x69gbF8$h" role="33vP2m">
-              <property role="Xl_RC" value="arithmetic overflow on signed + in return_value_getchar$1 + 1" />
+              <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (char)(return_value_getchar$1 + 1)" />
             </node>
           </node>
         </node>
@@ -2988,8 +2988,8 @@
                   <node concept="liA8E" id="43x69gbF8$_" role="2OqNvi">
                     <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
                     <node concept="2OqwBi" id="43x69gbF8$A" role="37wK5m">
-                      <node concept="37vLTw" id="43x69gbF8$B" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4tIZ4QIlkj5" resolve="res0" />
+                      <node concept="37vLTw" id="5kHkJcGKjOd" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4tIZ4QIk1t4" resolve="res1" />
                       </node>
                       <node concept="liA8E" id="43x69gbF8$C" role="2OqNvi">
                         <ref role="37wK5l" to="eqhl:3FNuzGa2mmQ" resolve="getUserFriendlyMessage" />
@@ -3004,8 +3004,8 @@
                   <node concept="liA8E" id="43x69gbF8$F" role="2OqNvi">
                     <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
                     <node concept="2OqwBi" id="43x69gbF8$G" role="37wK5m">
-                      <node concept="37vLTw" id="43x69gbF8$H" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4tIZ4QIlkj5" resolve="res0" />
+                      <node concept="37vLTw" id="5kHkJcGKjSD" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4tIZ4QIk1t4" resolve="res1" />
                       </node>
                       <node concept="liA8E" id="43x69gbF8$I" role="2OqNvi">
                         <ref role="37wK5l" to="eqhl:3FNuzGa2mmQ" resolve="getUserFriendlyMessage" />
