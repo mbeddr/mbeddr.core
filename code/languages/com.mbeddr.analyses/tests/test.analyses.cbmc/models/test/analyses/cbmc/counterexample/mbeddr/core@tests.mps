@@ -766,31 +766,55 @@
       <property role="TrG5h" value="testGoingThroughDecTab" />
       <node concept="3cqZAl" id="5pxO7gskNQb" role="3clF45" />
       <node concept="3clFbS" id="5pxO7gskNQc" role="3clF47">
+        <node concept="3cpWs8" id="1kjPA_yM3_9" role="3cqZAp">
+          <node concept="3cpWsn" id="1kjPA_yM3_a" role="3cpWs9">
+            <property role="TrG5h" value="results" />
+            <node concept="_YKpA" id="1kjPA_yM3_3" role="1tU5fm">
+              <node concept="3uibUv" id="1kjPA_yM3_6" role="_ZDj9">
+                <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+              </node>
+            </node>
+            <node concept="NRdvd" id="1kjPA_yM3_b" role="33vP2m">
+              <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
+              <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+              <node concept="2YIFZM" id="1kjPA_yM3_c" role="37wK5m">
+                <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
+                <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
+              </node>
+              <node concept="Xl_RD" id="1kjPA_yM3_d" role="37wK5m">
+                <property role="Xl_RC" value="DecisionTable" />
+              </node>
+              <node concept="Xl_RD" id="1kjPA_yM3_e" role="37wK5m">
+                <property role="Xl_RC" value="functionGoingThroughDecTab" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1kjPA_yM4BU" role="3cqZAp" />
+        <node concept="3clFbF" id="1kjPA_yM4P8" role="3cqZAp">
+          <node concept="2YIFZM" id="1kjPA_yM4X9" role="3clFbG">
+            <ref role="37wK5l" to="fxhk:17FqOSBEPPO" resolve="prettyPrintResults" />
+            <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+            <node concept="37vLTw" id="1kjPA_yM51K" role="37wK5m">
+              <ref role="3cqZAo" node="1kjPA_yM3_a" resolve="results" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1kjPA_yM4IT" role="3cqZAp" />
         <node concept="3cpWs8" id="5pxO7gskNQd" role="3cqZAp">
           <node concept="3cpWsn" id="5pxO7gskNQe" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="3uibUv" id="5pxO7gskNQf" role="1tU5fm">
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
-            <node concept="2OqwBi" id="6mJYm3jtJ23" role="33vP2m">
-              <node concept="NRdvd" id="3eQfn9zxhlX" role="2Oq$k0">
-                <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
-                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
-                <node concept="2YIFZM" id="3eQfn9zxhlY" role="37wK5m">
-                  <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
-                  <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
-                </node>
-                <node concept="Xl_RD" id="3eQfn9zxhlZ" role="37wK5m">
-                  <property role="Xl_RC" value="DecisionTable" />
-                </node>
-                <node concept="Xl_RD" id="3eQfn9zxhm0" role="37wK5m">
-                  <property role="Xl_RC" value="functionGoingThroughDecTab" />
-                </node>
+            <node concept="2YIFZM" id="1kjPA_yRJco" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <node concept="37vLTw" id="1kjPA_yRJdZ" role="37wK5m">
+                <ref role="3cqZAo" node="1kjPA_yM3_a" resolve="results" />
               </node>
-              <node concept="34jXtK" id="6mJYm3jtL9b" role="2OqNvi">
-                <node concept="3cmrfG" id="6mJYm3jtLt6" role="25WWJ7">
-                  <property role="3cmrfH" value="0" />
-                </node>
+              <node concept="Xl_RD" id="1kjPA_yRJis" role="37wK5m">
+                <property role="Xl_RC" value="Assert: var == 11" />
               </node>
             </node>
           </node>
