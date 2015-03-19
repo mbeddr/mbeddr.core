@@ -94,6 +94,7 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+        <child id="4972241301747169160" name="typeArgument" index="3PaCim" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
@@ -173,11 +174,7 @@
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
-      <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
-      <concept id="4611582986551314327" name="jetbrains.mps.baseLanguage.collections.structure.OfTypeOperation" flags="nn" index="UnYns">
-        <child id="4611582986551314344" name="requestedType" index="UnYnz" />
-      </concept>
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
     </language>
   </registry>
@@ -399,22 +396,15 @@
                   <node concept="37vLTw" id="5KvlJsgh9qq" role="37vLTJ">
                     <ref role="3cqZAo" node="5KvlJsgh9pv" resolve="result" />
                   </node>
-                  <node concept="2OqwBi" id="5KvlJsgh9qr" role="37vLTx">
-                    <node concept="2OqwBi" id="5KvlJsgh9qs" role="2Oq$k0">
-                      <node concept="2YIFZM" id="5KvlJsgh9qt" role="2Oq$k0">
-                        <ref role="37wK5l" to="fxhk:2UdJgvFNf_G" resolve="doRun" />
-                        <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
-                        <node concept="37vLTw" id="5KvlJsgh9qu" role="37wK5m">
-                          <ref role="3cqZAo" node="5KvlJsgh9qc" resolve="ca" />
-                        </node>
-                      </node>
-                      <node concept="UnYns" id="5KvlJsgh9qv" role="2OqNvi">
-                        <node concept="3uibUv" id="5KvlJsgh9qw" role="UnYnz">
-                          <ref role="3uigEE" to="cxn8:4arT0cntK8Q" resolve="PPCResult" />
-                        </node>
-                      </node>
+                  <node concept="2YIFZM" id="5KvlJsgh9qt" role="37vLTx">
+                    <ref role="37wK5l" to="fxhk:2UdJgvFNf_G" resolve="doRun" />
+                    <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
+                    <node concept="37vLTw" id="5KvlJsgh9qu" role="37wK5m">
+                      <ref role="3cqZAo" node="5KvlJsgh9qc" resolve="ca" />
                     </node>
-                    <node concept="ANE8D" id="5KvlJsgh9qx" role="2OqNvi" />
+                    <node concept="3uibUv" id="2Gafe2itNzJ" role="3PaCim">
+                      <ref role="3uigEE" to="cxn8:4arT0cntK8Q" resolve="PPCResult" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -657,22 +647,15 @@
                   <node concept="37vLTw" id="5KvlJsghg$n" role="37vLTJ">
                     <ref role="3cqZAo" node="5KvlJsghgz7" resolve="result" />
                   </node>
-                  <node concept="2OqwBi" id="5KvlJsghg$o" role="37vLTx">
-                    <node concept="2OqwBi" id="5KvlJsghg$p" role="2Oq$k0">
-                      <node concept="2YIFZM" id="5KvlJsghg$q" role="2Oq$k0">
-                        <ref role="37wK5l" to="fxhk:2UdJgvFNf_G" resolve="doRun" />
-                        <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
-                        <node concept="37vLTw" id="5KvlJsghg$r" role="37wK5m">
-                          <ref role="3cqZAo" node="5KvlJsghg$9" resolve="ca" />
-                        </node>
-                      </node>
-                      <node concept="UnYns" id="5KvlJsghg$s" role="2OqNvi">
-                        <node concept="3uibUv" id="5KvlJsghg$t" role="UnYnz">
-                          <ref role="3uigEE" to="cxn8:4arT0cntKcd" resolve="ProtocolResult" />
-                        </node>
-                      </node>
+                  <node concept="2YIFZM" id="5KvlJsghg$q" role="37vLTx">
+                    <ref role="37wK5l" to="fxhk:2UdJgvFNf_G" resolve="doRun" />
+                    <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
+                    <node concept="37vLTw" id="5KvlJsghg$r" role="37wK5m">
+                      <ref role="3cqZAo" node="5KvlJsghg$9" resolve="ca" />
                     </node>
-                    <node concept="ANE8D" id="5KvlJsghg$u" role="2OqNvi" />
+                    <node concept="3uibUv" id="2Gafe2itSUl" role="3PaCim">
+                      <ref role="3uigEE" to="cxn8:4arT0cntKcd" resolve="ProtocolResult" />
+                    </node>
                   </node>
                 </node>
               </node>
