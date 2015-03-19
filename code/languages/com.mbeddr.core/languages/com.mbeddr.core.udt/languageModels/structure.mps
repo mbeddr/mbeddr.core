@@ -259,7 +259,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="union" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="56ytRgsLodU" resolve="UnionDeclaration" />
+      <ref role="20lvS9" node="6a5SBPfXGBP" resolve="SUDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="4qSf1u1VWPO">

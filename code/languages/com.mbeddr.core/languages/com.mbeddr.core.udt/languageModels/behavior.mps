@@ -2888,10 +2888,13 @@
       <node concept="3Tm1VV" id="59zzgFRcVn2" role="1B3o_S" />
       <node concept="3clFbS" id="59zzgFRcVn3" role="3clF47">
         <node concept="3clFbF" id="59zzgFRcVn5" role="3cqZAp">
-          <node concept="2OqwBi" id="59zzgFRcVnr" role="3clFbG">
-            <node concept="13iPFW" id="59zzgFRcVn6" role="2Oq$k0" />
-            <node concept="3TrEf2" id="59zzgFRcVnx" role="2OqNvi">
-              <ref role="3Tt5mk" to="clbe:56ytRgsLog7" />
+          <node concept="1PxgMI" id="aIPzLH05hC" role="3clFbG">
+            <ref role="1PxNhF" to="clbe:56ytRgsLodU" resolve="UnionDeclaration" />
+            <node concept="2OqwBi" id="59zzgFRcVnr" role="1PxMeX">
+              <node concept="13iPFW" id="59zzgFRcVn6" role="2Oq$k0" />
+              <node concept="3TrEf2" id="59zzgFRcVnx" role="2OqNvi">
+                <ref role="3Tt5mk" to="clbe:56ytRgsLog7" />
+              </node>
             </node>
           </node>
         </node>

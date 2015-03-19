@@ -602,7 +602,7 @@
                   <node concept="3cpWsn" id="34d3$NxPThP" role="3cpWs9">
                     <property role="TrG5h" value="struct" />
                     <node concept="3Tqbb2" id="34d3$NxPThQ" role="1tU5fm">
-                      <ref role="ehGHo" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
+                      <ref role="ehGHo" to="clbe:6a5SBPfXGBP" resolve="SUDeclaration" />
                     </node>
                     <node concept="2OqwBi" id="34d3$NxPThR" role="33vP2m">
                       <node concept="1PxgMI" id="34d3$NxPThS" role="2Oq$k0">
@@ -645,7 +645,7 @@
                   <node concept="3cpWsn" id="4HCRu5guwTJ" role="3cpWs9">
                     <property role="TrG5h" value="union" />
                     <node concept="3Tqbb2" id="4HCRu5guwTK" role="1tU5fm">
-                      <ref role="ehGHo" to="clbe:56ytRgsLodU" resolve="UnionDeclaration" />
+                      <ref role="ehGHo" to="clbe:6a5SBPfXGBP" resolve="SUDeclaration" />
                     </node>
                     <node concept="2OqwBi" id="4HCRu5guwTL" role="33vP2m">
                       <node concept="1PxgMI" id="4HCRu5guwTM" role="2Oq$k0">
