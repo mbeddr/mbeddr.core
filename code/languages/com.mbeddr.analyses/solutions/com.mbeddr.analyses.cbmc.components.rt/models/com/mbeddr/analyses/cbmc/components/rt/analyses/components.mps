@@ -811,7 +811,7 @@
           <node concept="3clFbS" id="4arT0cntK5p" role="2LFqv$">
             <node concept="3clFbF" id="4arT0cntK5q" role="3cqZAp">
               <node concept="1rXfSq" id="4arT0cntK5r" role="3clFbG">
-                <ref role="37wK5l" node="4arT0cntK6x" resolve="doCheckProtocol" />
+                <ref role="37wK5l" node="4arT0cntK6x" resolve="doCollectProtocolJob" />
                 <node concept="2GrUjf" id="4arT0cntK5s" role="37wK5m">
                   <ref role="2Gs0qQ" node="4arT0cntK5n" resolve="it" />
                 </node>
@@ -887,7 +887,7 @@
         <node concept="17QB3L" id="4arT0cntK5H" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="4arT0cntK5I" role="3clF46">
-        <property role="TrG5h" value="ress" />
+        <property role="TrG5h" value="results" />
         <property role="3TUv4t" value="true" />
         <node concept="_YKpA" id="4arT0cntK5J" role="1tU5fm">
           <node concept="3uibUv" id="4arT0cntK5K" role="_ZDj9">
@@ -1001,7 +1001,7 @@
                         <node concept="3clFbF" id="4arT0cntK6q" role="3cqZAp">
                           <node concept="2OqwBi" id="4arT0cntK6r" role="3clFbG">
                             <node concept="37vLTw" id="4arT0cntK6s" role="2Oq$k0">
-                              <ref role="3cqZAo" node="4arT0cntK5I" resolve="ress" />
+                              <ref role="3cqZAo" node="4arT0cntK5I" resolve="results" />
                             </node>
                             <node concept="TSZUe" id="4arT0cntK6t" role="2OqNvi">
                               <node concept="37vLTw" id="4arT0cntK6u" role="25WWJ7">
@@ -1025,7 +1025,7 @@
     </node>
     <node concept="2tJIrI" id="4arT0cntK6w" role="jymVt" />
     <node concept="3clFb_" id="4arT0cntK6x" role="jymVt">
-      <property role="TrG5h" value="doCheckProtocol" />
+      <property role="TrG5h" value="doCollectProtocolJob" />
       <node concept="3Tm6S6" id="4arT0cntK6y" role="1B3o_S" />
       <node concept="3cqZAl" id="4arT0cntK6z" role="3clF45" />
       <node concept="37vLTG" id="4arT0cntK6$" role="3clF46">
