@@ -1344,6 +1344,136 @@
       </node>
     </node>
     <node concept="2tJIrI" id="17FqOSBEPE$" role="jymVt" />
+    <node concept="2YIFZL" id="5kHkJcGJQBv" role="jymVt">
+      <property role="TrG5h" value="findResultByMessagePrefix" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="5kHkJcGJQBw" role="3clF47">
+        <node concept="3cpWs8" id="5kHkJcGJQBx" role="3cqZAp">
+          <node concept="3cpWsn" id="5kHkJcGJQBy" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="16syzq" id="5kHkJcGJQBz" role="1tU5fm">
+              <ref role="16sUi3" node="5kHkJcGJQCg" resolve="T" />
+            </node>
+            <node concept="2OqwBi" id="5kHkJcGJQB$" role="33vP2m">
+              <node concept="37vLTw" id="5kHkJcGJQB_" role="2Oq$k0">
+                <ref role="3cqZAo" node="5kHkJcGJQCa" resolve="results" />
+              </node>
+              <node concept="1z4cxt" id="5kHkJcGJQBA" role="2OqNvi">
+                <node concept="1bVj0M" id="5kHkJcGJQBB" role="23t8la">
+                  <node concept="3clFbS" id="5kHkJcGJQBC" role="1bW5cS">
+                    <node concept="3clFbF" id="5kHkJcGJQBD" role="3cqZAp">
+                      <node concept="2OqwBi" id="5kHkJcGJQBE" role="3clFbG">
+                        <node concept="2OqwBi" id="5kHkJcGJQBF" role="2Oq$k0">
+                          <node concept="37vLTw" id="5kHkJcGJQBG" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5kHkJcGJQBK" resolve="it" />
+                          </node>
+                          <node concept="liA8E" id="5kHkJcGJQBH" role="2OqNvi">
+                            <ref role="37wK5l" to="eqhl:3FNuzGa2mmQ" resolve="getUserFriendlyMessage" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="5kHkJcGJQBI" role="2OqNvi">
+                          <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                          <node concept="37vLTw" id="5kHkJcGJQBJ" role="37wK5m">
+                            <ref role="3cqZAo" node="5kHkJcGJQCd" resolve="userFriendlyMsgPrefix" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="5kHkJcGJQBK" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="5kHkJcGJQBL" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5kHkJcGJQBM" role="3cqZAp">
+          <node concept="3clFbS" id="5kHkJcGJQBN" role="3clFbx">
+            <node concept="3clFbF" id="5kHkJcGJQBO" role="3cqZAp">
+              <node concept="2OqwBi" id="5kHkJcGJQBP" role="3clFbG">
+                <node concept="10M0yZ" id="5kHkJcGJQBQ" role="2Oq$k0">
+                  <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+                  <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                </node>
+                <node concept="liA8E" id="5kHkJcGJQBR" role="2OqNvi">
+                  <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="3cpWs3" id="5kHkJcGJQBS" role="37wK5m">
+                    <node concept="37vLTw" id="5kHkJcGJQBT" role="3uHU7w">
+                      <ref role="3cqZAo" node="5kHkJcGJQCd" resolve="userFriendlyMsgPrefix" />
+                    </node>
+                    <node concept="Xl_RD" id="5kHkJcGJQBU" role="3uHU7B">
+                      <property role="Xl_RC" value="FATAL ERROR: result with given message prefix not found. Message prefix: " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5kHkJcGJQBV" role="3cqZAp">
+              <node concept="2OqwBi" id="5kHkJcGJQBW" role="3clFbG">
+                <node concept="10M0yZ" id="5kHkJcGJQBX" role="2Oq$k0">
+                  <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                  <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+                </node>
+                <node concept="liA8E" id="5kHkJcGJQBY" role="2OqNvi">
+                  <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="Xl_RD" id="5kHkJcGJQBZ" role="37wK5m">
+                    <property role="Xl_RC" value="Available results are:" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5kHkJcGJQC0" role="3cqZAp">
+              <node concept="1rXfSq" id="5kHkJcGJQC1" role="3clFbG">
+                <ref role="37wK5l" node="17FqOSBEPPO" resolve="prettyPrintResults" />
+                <node concept="37vLTw" id="5kHkJcGJQC2" role="37wK5m">
+                  <ref role="3cqZAo" node="5kHkJcGJQCa" resolve="results" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="5kHkJcGJQC3" role="3clFbw">
+            <node concept="10Nm6u" id="5kHkJcGJQC4" role="3uHU7w" />
+            <node concept="37vLTw" id="5kHkJcGJQC5" role="3uHU7B">
+              <ref role="3cqZAo" node="5kHkJcGJQBy" resolve="result" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5kHkJcGJQC6" role="3cqZAp">
+          <node concept="37vLTw" id="5kHkJcGJQC7" role="3clFbG">
+            <ref role="3cqZAo" node="5kHkJcGJQBy" resolve="result" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5kHkJcGJQC8" role="1B3o_S" />
+      <node concept="16syzq" id="5kHkJcGJQC9" role="3clF45">
+        <ref role="16sUi3" node="5kHkJcGJQCg" resolve="T" />
+      </node>
+      <node concept="37vLTG" id="5kHkJcGJQCa" role="3clF46">
+        <property role="TrG5h" value="results" />
+        <node concept="_YKpA" id="5kHkJcGJQCb" role="1tU5fm">
+          <node concept="16syzq" id="5kHkJcGJQCc" role="_ZDj9">
+            <ref role="16sUi3" node="5kHkJcGJQCg" resolve="T" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5kHkJcGJQCd" role="3clF46">
+        <property role="TrG5h" value="userFriendlyMsgPrefix" />
+        <node concept="17QB3L" id="5kHkJcGJQCe" role="1tU5fm" />
+      </node>
+      <node concept="NWlO9" id="5kHkJcGJQCf" role="lGtFl">
+        <property role="NWlVz" value="Finds the lifted result with a certain user friendly message prefix from a list of results." />
+      </node>
+      <node concept="16euLQ" id="5kHkJcGJQCg" role="16eVyc">
+        <property role="TrG5h" value="T" />
+        <node concept="3uibUv" id="5kHkJcGJQCh" role="3ztrMU">
+          <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5kHkJcGJQ4S" role="jymVt" />
     <node concept="2YIFZL" id="1kjPA_yjrmx" role="jymVt">
       <property role="TrG5h" value="findResultsByMessage" />
       <property role="od$2w" value="false" />

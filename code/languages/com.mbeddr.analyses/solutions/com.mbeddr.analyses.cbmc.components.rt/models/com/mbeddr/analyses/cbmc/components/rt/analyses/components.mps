@@ -43,6 +43,7 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
@@ -965,7 +966,6 @@
                             <node concept="3uibUv" id="4arT0cntK6b" role="1tU5fm">
                               <ref role="3uigEE" node="4arT0cntK8Q" resolve="PPCResult" />
                             </node>
-                            <node concept="10Nm6u" id="4arT0cntK6c" role="33vP2m" />
                           </node>
                         </node>
                         <node concept="3kxDZ6" id="40ZXlOnG61E" role="3cqZAp">
@@ -995,6 +995,25 @@
                             <ref role="37wK5l" to="tzyt:4fvA6OR08Pa" resolve="myPublish" />
                             <node concept="37vLTw" id="cchPmXXi9m" role="37wK5m">
                               <ref role="3cqZAo" node="4arT0cntK6a" resolve="res" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="5kHkJcGLEfK" role="3cqZAp">
+                          <node concept="2OqwBi" id="5kHkJcGLEfH" role="3clFbG">
+                            <node concept="10M0yZ" id="5kHkJcGLEfI" role="2Oq$k0">
+                              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+                            </node>
+                            <node concept="liA8E" id="5kHkJcGLEfJ" role="2OqNvi">
+                              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                              <node concept="3cpWs3" id="5kHkJcGLF7n" role="37wK5m">
+                                <node concept="37vLTw" id="5kHkJcGLIJF" role="3uHU7w">
+                                  <ref role="3cqZAo" node="4arT0cntK6a" resolve="res" />
+                                </node>
+                                <node concept="Xl_RD" id="5kHkJcGLEw7" role="3uHU7B">
+                                  <property role="Xl_RC" value="----- ComponentsAnalyzer: ---- ppc res=" />
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -1138,7 +1157,6 @@
                             <node concept="3uibUv" id="4arT0cntK7i" role="1tU5fm">
                               <ref role="3uigEE" node="4arT0cntKcd" resolve="ProtocolResult" />
                             </node>
-                            <node concept="10Nm6u" id="40ZXlOnG7jI" role="33vP2m" />
                           </node>
                         </node>
                         <node concept="3kxDZ6" id="40ZXlOnG8dP" role="3cqZAp">
@@ -1165,6 +1183,25 @@
                             <ref role="37wK5l" to="tzyt:4fvA6OR08Pa" resolve="myPublish" />
                             <node concept="37vLTw" id="cchPmXXoJl" role="37wK5m">
                               <ref role="3cqZAo" node="4arT0cntK7h" resolve="res" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="5kHkJcGLJgq" role="3cqZAp">
+                          <node concept="2OqwBi" id="5kHkJcGLJgr" role="3clFbG">
+                            <node concept="10M0yZ" id="5kHkJcGLJgs" role="2Oq$k0">
+                              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+                              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                            </node>
+                            <node concept="liA8E" id="5kHkJcGLJgt" role="2OqNvi">
+                              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                              <node concept="3cpWs3" id="5kHkJcGLJgu" role="37wK5m">
+                                <node concept="37vLTw" id="5kHkJcGLJgv" role="3uHU7w">
+                                  <ref role="3cqZAo" node="4arT0cntK7h" resolve="res" />
+                                </node>
+                                <node concept="Xl_RD" id="5kHkJcGLJgw" role="3uHU7B">
+                                  <property role="Xl_RC" value="----- ComponentsAnalyzer: ---- prot res=" />
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
