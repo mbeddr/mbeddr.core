@@ -255,7 +255,7 @@
     <node concept="Wx3nA" id="1kjPA_yq21u" role="jymVt">
       <property role="IEkAT" value="false" />
       <property role="TrG5h" value="MAX_NUMBER_OF_THREADS_FOR_TESTS" />
-      <property role="3TUv4t" value="true" />
+      <property role="3TUv4t" value="false" />
       <node concept="10Oyi0" id="1kjPA_ypYwn" role="1tU5fm" />
       <node concept="3Tm1VV" id="1kjPA_ypYwm" role="1B3o_S" />
       <node concept="3cmrfG" id="1kjPA_ypYwo" role="33vP2m">
