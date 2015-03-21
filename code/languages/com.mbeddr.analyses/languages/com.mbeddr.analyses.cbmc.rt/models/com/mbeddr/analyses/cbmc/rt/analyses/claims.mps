@@ -24,6 +24,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -156,6 +157,7 @@
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
+        <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -178,6 +180,10 @@
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
+        <child id="1206060619838" name="condition" index="3eO9$A" />
+        <child id="1206060644605" name="statementList" index="3eOfB_" />
+      </concept>
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
@@ -215,6 +221,11 @@
       <concept id="1170075670744" name="jetbrains.mps.baseLanguage.structure.SynchronizedStatement" flags="nn" index="1HWtB8">
         <child id="1170075728144" name="expression" index="1HWFw0" />
         <child id="1170075736412" name="block" index="1HWHxc" />
+      </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -595,8 +606,13 @@
             </node>
             <node concept="liA8E" id="2Tj16Eu$cDK" role="2OqNvi">
               <ref role="37wK5l" to="fw3h:~ProgressIndicator.setText(java.lang.String):void" resolve="setText" />
-              <node concept="Xl_RD" id="2Tj16Eu$cQP" role="37wK5m">
-                <property role="Xl_RC" value="Collecting properties to check ..." />
+              <node concept="3cpWs3" id="6ks7ICU8NGh" role="37wK5m">
+                <node concept="37vLTw" id="6ks7ICU8OcZ" role="3uHU7B">
+                  <ref role="3cqZAo" node="6mJYm3jfgk_" resolve="userFriendlyAnalysisName" />
+                </node>
+                <node concept="Xl_RD" id="2Tj16Eu$cQP" role="3uHU7w">
+                  <property role="Xl_RC" value=": collecting properties to check ..." />
+                </node>
               </node>
             </node>
           </node>
@@ -655,6 +671,27 @@
                           <node concept="3Tm1VV" id="4fvA6ORJeoP" role="1B3o_S" />
                           <node concept="3cqZAl" id="4fvA6ORJeoR" role="3clF45" />
                           <node concept="3clFbS" id="4fvA6ORJeoU" role="3clF47">
+                            <node concept="3cpWs8" id="6ks7ICTJMgU" role="3cqZAp">
+                              <node concept="3cpWsn" id="6ks7ICTJMgV" role="3cpWs9">
+                                <property role="TrG5h" value="kind" />
+                                <node concept="3uibUv" id="6ks7ICTJMgW" role="1tU5fm">
+                                  <ref role="3uigEE" to="rbq9:6oOIJNsBVXe" resolve="RAW_RESULT_KIND" />
+                                </node>
+                                <node concept="3K4zz7" id="6ks7ICTJNde" role="33vP2m">
+                                  <node concept="Rm8GO" id="6ks7ICTJO$E" role="3K4GZi">
+                                    <ref role="Rm8GQ" to="rbq9:1d23YaEy6Q6" resolve="CANCELED" />
+                                    <ref role="1Px2BO" to="rbq9:6oOIJNsBVXe" resolve="RAW_RESULT_KIND" />
+                                  </node>
+                                  <node concept="37vLTw" id="6ks7ICTJMQG" role="3K4Cdx">
+                                    <ref role="3cqZAo" node="1iGXuG0bnk4" resolve="runtimeErrorWhileCollectingClaims" />
+                                  </node>
+                                  <node concept="Rm8GO" id="6DZK4Bi_cAC" role="3K4E3e">
+                                    <ref role="Rm8GQ" to="rbq9:6oOIJNsBXkZ" resolve="RUNTIME_ERROR" />
+                                    <ref role="1Px2BO" to="rbq9:6oOIJNsBVXe" resolve="RAW_RESULT_KIND" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
                             <node concept="3cpWs8" id="6DZK4Bi_cAz" role="3cqZAp">
                               <node concept="3cpWsn" id="6DZK4Bi_cA$" role="3cpWs9">
                                 <property role="TrG5h" value="rawErrorResult" />
@@ -667,9 +704,8 @@
                                     <node concept="3cmrfG" id="6DZK4Bi_cAB" role="37wK5m">
                                       <property role="3cmrfH" value="-1" />
                                     </node>
-                                    <node concept="Rm8GO" id="6DZK4Bi_cAC" role="37wK5m">
-                                      <ref role="1Px2BO" to="rbq9:6oOIJNsBVXe" resolve="RAW_RESULT_KIND" />
-                                      <ref role="Rm8GQ" to="rbq9:6oOIJNsBXkZ" resolve="RUNTIME_ERROR" />
+                                    <node concept="37vLTw" id="6ks7ICTJNMT" role="37wK5m">
+                                      <ref role="3cqZAo" node="6ks7ICTJMgV" resolve="kind" />
                                     </node>
                                     <node concept="37vLTw" id="4$9c1ZyckG3" role="37wK5m">
                                       <ref role="3cqZAo" node="4$9c1ZybNT1" resolve="ranCommand" />
@@ -761,8 +797,13 @@
               </node>
             </node>
           </node>
-          <node concept="37vLTw" id="1iGXuG0jRsU" role="3clFbw">
-            <ref role="3cqZAo" node="1iGXuG0bnk4" resolve="runtimeErrorWhileCollectingClaims" />
+          <node concept="22lmx$" id="6ks7ICTfaN5" role="3clFbw">
+            <node concept="37vLTw" id="6ks7ICTfco4" role="3uHU7w">
+              <ref role="3cqZAo" node="6ks7ICTdyTF" resolve="cancelWhileCollectingClaims" />
+            </node>
+            <node concept="37vLTw" id="1iGXuG0jRsU" role="3uHU7B">
+              <ref role="3cqZAo" node="1iGXuG0bnk4" resolve="runtimeErrorWhileCollectingClaims" />
+            </node>
           </node>
         </node>
         <node concept="3clFbH" id="7iCG_8WxXaz" role="3cqZAp" />
@@ -1742,6 +1783,21 @@
       </node>
     </node>
     <node concept="2tJIrI" id="4a8JajkJUDD" role="jymVt" />
+    <node concept="312cEg" id="6ks7ICTdyTF" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="cancelWhileCollectingClaims" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3clFbT" id="6ks7ICTdyTG" role="33vP2m">
+        <property role="3clFbU" value="false" />
+      </node>
+      <node concept="10P_77" id="6ks7ICTdyTH" role="1tU5fm" />
+      <node concept="3Tm6S6" id="6ks7ICTdyTI" role="1B3o_S" />
+      <node concept="NWlO9" id="6ks7ICTdyTJ" role="lGtFl">
+        <property role="NWlVz" value="Do we have cancel when calling CBMC to collect claims?" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6ks7ICTdx4c" role="jymVt" />
     <node concept="312cEg" id="1iGXuG0bnk4" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -1953,6 +2009,38 @@
                 </node>
                 <node concept="liA8E" id="1iGXuG0dHgA" role="2OqNvi">
                   <ref role="37wK5l" to="rbq9:5bSnXVJO9TI" resolve="isRuntimeError" />
+                </node>
+              </node>
+              <node concept="3eNFk2" id="6ks7ICTd_Xx" role="3eNLev">
+                <node concept="2OqwBi" id="6ks7ICTdEiX" role="3eO9$A">
+                  <node concept="37vLTw" id="6ks7ICTdCtn" role="2Oq$k0">
+                    <ref role="3cqZAo" node="mb65_hzPrl" resolve="rawResult" />
+                  </node>
+                  <node concept="liA8E" id="6ks7ICTf7Kh" role="2OqNvi">
+                    <ref role="37wK5l" to="rbq9:6ks7ICTdGnm" resolve="isCancel" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="6ks7ICTd_Xz" role="3eOfB_">
+                  <node concept="3clFbF" id="6ks7ICTf86h" role="3cqZAp">
+                    <node concept="37vLTI" id="6ks7ICTf8xb" role="3clFbG">
+                      <node concept="3clFbT" id="6ks7ICTf8EW" role="37vLTx">
+                        <property role="3clFbU" value="true" />
+                      </node>
+                      <node concept="37vLTw" id="6ks7ICTf86g" role="37vLTJ">
+                        <ref role="3cqZAo" node="6ks7ICTdyTF" resolve="cancelWhileCollectingClaims" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="6ks7ICTf99b" role="3cqZAp">
+                    <node concept="37vLTI" id="6ks7ICTf9zi" role="3clFbG">
+                      <node concept="Xl_RD" id="6ks7ICTf9OZ" role="37vLTx">
+                        <property role="Xl_RC" value="Properties gathering was canceled" />
+                      </node>
+                      <node concept="37vLTw" id="6ks7ICTf999" role="37vLTJ">
+                        <ref role="3cqZAo" node="1iGXuG0dsuf" resolve="errorMsg" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>

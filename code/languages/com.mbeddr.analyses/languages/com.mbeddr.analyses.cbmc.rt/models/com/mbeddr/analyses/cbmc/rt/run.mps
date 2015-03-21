@@ -9057,12 +9057,24 @@
               </node>
             </node>
           </node>
-          <node concept="3eOVzh" id="4fvA6ORO2He" role="2$JKZa">
-            <node concept="37vLTw" id="4fvA6ORO1Pv" role="3uHU7B">
-              <ref role="3cqZAo" node="4fvA6ORp8nJ" resolve="publishedResultsNumber" />
+          <node concept="1Wc70l" id="6ks7ICTUhsR" role="2$JKZa">
+            <node concept="3fqX7Q" id="6ks7ICTUicR" role="3uHU7w">
+              <node concept="2OqwBi" id="6ks7ICTUiyw" role="3fr31v">
+                <node concept="37vLTw" id="6ks7ICTUikN" role="2Oq$k0">
+                  <ref role="3cqZAo" to="ood5:7F8$WoW31Ww" resolve="pi" />
+                </node>
+                <node concept="liA8E" id="6ks7ICTUiR3" role="2OqNvi">
+                  <ref role="37wK5l" to="fw3h:~ProgressIndicator.isCanceled():boolean" resolve="isCanceled" />
+                </node>
+              </node>
             </node>
-            <node concept="37vLTw" id="4fvA6ORO3ce" role="3uHU7w">
-              <ref role="3cqZAo" to="ood5:7F8$WoW5PEY" resolve="stepsNumber" />
+            <node concept="3eOVzh" id="4fvA6ORO2He" role="3uHU7B">
+              <node concept="37vLTw" id="4fvA6ORO1Pv" role="3uHU7B">
+                <ref role="3cqZAo" node="4fvA6ORp8nJ" resolve="publishedResultsNumber" />
+              </node>
+              <node concept="37vLTw" id="4fvA6ORO3ce" role="3uHU7w">
+                <ref role="3cqZAo" to="ood5:7F8$WoW5PEY" resolve="stepsNumber" />
+              </node>
             </node>
           </node>
         </node>
