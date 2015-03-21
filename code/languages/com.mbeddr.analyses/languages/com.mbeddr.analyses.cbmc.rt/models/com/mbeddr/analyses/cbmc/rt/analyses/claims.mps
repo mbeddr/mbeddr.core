@@ -588,6 +588,19 @@
         </node>
       </node>
       <node concept="3clFbS" id="4fvA6ORyAzH" role="3clF47">
+        <node concept="3clFbF" id="2Tj16Eu$8G7" role="3cqZAp">
+          <node concept="2OqwBi" id="2Tj16Eu$c0v" role="3clFbG">
+            <node concept="37vLTw" id="2Tj16Eu$8G5" role="2Oq$k0">
+              <ref role="3cqZAo" to="ood5:7F8$WoW31Ww" resolve="pi" />
+            </node>
+            <node concept="liA8E" id="2Tj16Eu$cDK" role="2OqNvi">
+              <ref role="37wK5l" to="fw3h:~ProgressIndicator.setText(java.lang.String):void" resolve="setText" />
+              <node concept="Xl_RD" id="2Tj16Eu$cQP" role="37wK5m">
+                <property role="Xl_RC" value="Collecting properties to check ..." />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="mb65_hzuiM" role="3cqZAp">
           <node concept="3cpWsn" id="mb65_hzuiP" role="3cpWs9">
             <property role="TrG5h" value="claims" />
