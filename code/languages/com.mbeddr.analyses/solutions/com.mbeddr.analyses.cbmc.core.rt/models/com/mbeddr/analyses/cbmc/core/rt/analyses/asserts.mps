@@ -327,7 +327,7 @@
             <ref role="3cqZAo" node="3x0R1LJ5Cpb" resolve="tool" />
           </node>
           <node concept="Xl_RD" id="3x0R1LJ5Cpj" role="37wK5m">
-            <property role="Xl_RC" value="assertion" />
+            <property role="Xl_RC" value="Assertions Analysis" />
           </node>
           <node concept="37vLTw" id="5uqRFp9415e" role="37wK5m">
             <ref role="3cqZAo" node="5uqRFp940GO" resolve="pi" />
