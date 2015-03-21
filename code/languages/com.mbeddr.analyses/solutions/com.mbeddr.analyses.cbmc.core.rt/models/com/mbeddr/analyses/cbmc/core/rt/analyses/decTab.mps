@@ -1417,6 +1417,37 @@
         <node concept="17QB3L" id="M7_V6uAXCy" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="M7_V6uAXC_" role="3clF47">
+        <node concept="3clFbJ" id="6ks7ICTpYti" role="3cqZAp">
+          <node concept="3clFbS" id="6ks7ICTpYtk" role="3clFbx">
+            <node concept="3cpWs6" id="6ks7ICTpZLt" role="3cqZAp">
+              <node concept="2ShNRf" id="6ks7ICTq0Ay" role="3cqZAk">
+                <node concept="1pGfFk" id="6ks7ICTqa6P" role="2ShVmc">
+                  <ref role="37wK5l" to="eqhl:6ks7ICTqc3A" resolve="CBMCLiftedResult" />
+                  <node concept="37vLTw" id="6ks7ICTqjRy" role="37wK5m">
+                    <ref role="3cqZAo" node="M7_V6uAXCt" resolve="rawResult" />
+                  </node>
+                  <node concept="37vLTw" id="6ks7ICTqmku" role="37wK5m">
+                    <ref role="3cqZAo" node="M7_V6uAXCv" resolve="analyzedNode" />
+                  </node>
+                  <node concept="37vLTw" id="6ks7ICTqHgE" role="37wK5m">
+                    <ref role="3cqZAo" node="M7_V6uAXCx" resolve="claimDescription" />
+                  </node>
+                  <node concept="Xl_RD" id="6ks7ICUjE7v" role="37wK5m">
+                    <property role="Xl_RC" value="Decision Table" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6ks7ICTpZgr" role="3clFbw">
+            <node concept="37vLTw" id="6ks7ICTpYU8" role="2Oq$k0">
+              <ref role="3cqZAo" node="M7_V6uAXCt" resolve="rawResult" />
+            </node>
+            <node concept="liA8E" id="6ks7ICTpZBA" role="2OqNvi">
+              <ref role="37wK5l" to="rbq9:5bSnXVJO9TI" resolve="isRuntimeError" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="M7_V6uBouR" role="3cqZAp">
           <node concept="3cpWsn" id="M7_V6uBouU" role="3cpWs9">
             <property role="TrG5h" value="errorLabel" />
