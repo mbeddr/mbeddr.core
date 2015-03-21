@@ -1124,7 +1124,7 @@
             </node>
           </node>
           <node concept="Xl_RD" id="1iGXuG0l6Uc" role="3tpDZB">
-            <property role="Xl_RC" value="robustness check OK (no Verification Condition found)" />
+            <property role="Xl_RC" value="Robustness Analysis check OK (no Verification Condition found)" />
           </node>
         </node>
       </node>
