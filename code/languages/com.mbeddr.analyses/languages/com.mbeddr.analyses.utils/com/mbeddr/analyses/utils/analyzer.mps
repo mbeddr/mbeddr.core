@@ -32,9 +32,6 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
-        <child id="1076505808688" name="condition" index="2$JKZa" />
-      </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -203,9 +200,6 @@
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -1623,44 +1617,6 @@
                                 </node>
                                 <node concept="liA8E" id="1PA$4Yzx9I$" role="2OqNvi">
                                   <ref role="37wK5l" to="dbrf:~SwingWorker.get():java.lang.Object" resolve="get" />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="3clFbH" id="1PA$4Yzx9I_" role="3cqZAp" />
-                            <node concept="3SKdUt" id="1Qk2BLgJFYP" role="3cqZAp">
-                              <node concept="3SKWN0" id="1Qk2BLgJFYQ" role="3SKWNk">
-                                <node concept="2$JKZl" id="1PA$4Yzx9IA" role="3SKWNf">
-                                  <node concept="3clFbS" id="1PA$4Yzx9IB" role="2LFqv$">
-                                    <node concept="3clFbF" id="1PA$4Yzx9IC" role="3cqZAp">
-                                      <node concept="2YIFZM" id="1PA$4Yzx9ID" role="3clFbG">
-                                        <ref role="37wK5l" to="e2lb:~Thread.sleep(long):void" resolve="sleep" />
-                                        <ref role="1Pybhc" to="e2lb:~Thread" resolve="Thread" />
-                                        <node concept="3cmrfG" id="1PA$4Yzx9IE" role="37wK5m">
-                                          <property role="3cmrfH" value="30" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                  <node concept="1Wc70l" id="1PA$4Yzx9IF" role="2$JKZa">
-                                    <node concept="3fqX7Q" id="1PA$4Yzx9IG" role="3uHU7w">
-                                      <node concept="2OqwBi" id="1PA$4Yzx9IH" role="3fr31v">
-                                        <node concept="37vLTw" id="1PA$4Yzx9II" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="1PA$4Yzx9HZ" resolve="pi" />
-                                        </node>
-                                        <node concept="liA8E" id="1PA$4Yzx9IJ" role="2OqNvi">
-                                          <ref role="37wK5l" to="fw3h:~ProgressIndicator.isCanceled():boolean" resolve="isCanceled" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                    <node concept="2OqwBi" id="1PA$4Yzx9IK" role="3uHU7B">
-                                      <node concept="37vLTw" id="1PA$4Yzx9IL" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="1PA$4Yzx9HZ" resolve="pi" />
-                                      </node>
-                                      <node concept="liA8E" id="1PA$4Yzx9IM" role="2OqNvi">
-                                        <ref role="37wK5l" to="fw3h:~ProgressIndicator.isRunning():boolean" resolve="isRunning" />
-                                      </node>
-                                    </node>
-                                  </node>
                                 </node>
                               </node>
                             </node>
