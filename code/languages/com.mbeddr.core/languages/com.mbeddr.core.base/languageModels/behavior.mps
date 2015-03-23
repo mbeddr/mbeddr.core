@@ -249,7 +249,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -441,6 +441,7 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
@@ -466,6 +467,9 @@
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
       </concept>
@@ -7509,6 +7513,24 @@
               <node concept="Tc6Ow" id="5lKnBeAu_O7" role="2ShVmc">
                 <node concept="17QB3L" id="5lKnBeAu_O8" role="HW$YZ" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3o2OLGuta65" role="3cqZAp">
+          <node concept="3clFbS" id="3o2OLGuta67" role="3clFbx">
+            <node concept="3cpWs6" id="3o2OLGutbB$" role="3cqZAp">
+              <node concept="37vLTw" id="3o2OLGutceV" role="3cqZAk">
+                <ref role="3cqZAo" node="5lKnBeAu_gx" resolve="res" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="3o2OLGutbmb" role="3clFbw">
+            <node concept="35c_gC" id="3o2OLGutb_Y" role="3uHU7w">
+              <ref role="35c_gD" to="vs0r:5lKnBeAtNw8" resolve="AbstractFilePicker" />
+            </node>
+            <node concept="2OqwBi" id="3o2OLGutaIy" role="3uHU7B">
+              <node concept="13iPFW" id="3o2OLGutatP" role="2Oq$k0" />
+              <node concept="2yIwOk" id="3o2OLGutbd0" role="2OqNvi" />
             </node>
           </node>
         </node>
