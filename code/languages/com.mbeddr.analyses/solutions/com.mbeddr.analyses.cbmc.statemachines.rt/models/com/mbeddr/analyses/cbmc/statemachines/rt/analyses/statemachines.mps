@@ -1305,6 +1305,9 @@
                                 </node>
                                 <node concept="1rXfSq" id="4arT0cnsk4h" role="33vP2m">
                                   <ref role="37wK5l" to="tzyt:41thbhvCASx" resolve="computeLabelsReachibilityArguments" />
+                                  <node concept="37vLTw" id="6ks7ICUzXC3" role="37wK5m">
+                                    <ref role="3cqZAo" to="tzyt:7F8$WoW31Wz" resolve="config" />
+                                  </node>
                                   <node concept="37vLTw" id="4arT0cnsk4i" role="37wK5m">
                                     <ref role="3cqZAo" node="4arT0cnsk43" resolve="label" />
                                   </node>
@@ -1502,6 +1505,9 @@
                                 </node>
                                 <node concept="1rXfSq" id="4arT0cnsk5n" role="33vP2m">
                                   <ref role="37wK5l" to="tzyt:41thbhvCASx" resolve="computeLabelsReachibilityArguments" />
+                                  <node concept="37vLTw" id="6ks7ICUzYcE" role="37wK5m">
+                                    <ref role="3cqZAo" to="tzyt:7F8$WoW31Wz" resolve="config" />
+                                  </node>
                                   <node concept="37vLTw" id="4arT0cnsk5o" role="37wK5m">
                                     <ref role="3cqZAo" node="4arT0cnsk59" resolve="label" />
                                   </node>
