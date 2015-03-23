@@ -2190,6 +2190,41 @@
         <property role="NWlVz" value="Collect all claims." />
       </node>
     </node>
+    <node concept="2tJIrI" id="6ks7ICU_FIF" role="jymVt" />
+    <node concept="3clFb_" id="6ks7ICU_MMw" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="computeErrorLabel" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="true" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6ks7ICU_MMz" role="3clF47">
+        <node concept="3clFbF" id="6ks7ICU_VwK" role="3cqZAp">
+          <node concept="2OqwBi" id="M7_V6uBp3m" role="3clFbG">
+            <node concept="37vLTw" id="M7_V6uBoB5" role="2Oq$k0">
+              <ref role="3cqZAo" node="6ks7ICU_P_N" resolve="claimDescription" />
+            </node>
+            <node concept="liA8E" id="M7_V6uBqkl" role="2OqNvi">
+              <ref role="37wK5l" to="e2lb:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+              <node concept="Xl_RD" id="M7_V6uBqpd" role="37wK5m">
+                <property role="Xl_RC" value="error label " />
+              </node>
+              <node concept="Xl_RD" id="M7_V6uBrpE" role="37wK5m">
+                <property role="Xl_RC" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tmbuc" id="6ks7ICU_IvE" role="1B3o_S" />
+      <node concept="17QB3L" id="6ks7ICU_MAu" role="3clF45" />
+      <node concept="37vLTG" id="6ks7ICU_P_N" role="3clF46">
+        <property role="TrG5h" value="claimDescription" />
+        <node concept="17QB3L" id="6ks7ICU_P_M" role="1tU5fm" />
+      </node>
+      <node concept="NWlO9" id="6ks7ICU_Rup" role="lGtFl">
+        <property role="NWlVz" value="Returns the error label for claimDescription - if the claim does not originate from an error label, then null." />
+      </node>
+    </node>
   </node>
   <node concept="3HP615" id="6mJYm3j2KIe">
     <property role="TrG5h" value="ClaimFilter" />
