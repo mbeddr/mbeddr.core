@@ -308,9 +308,6 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -8975,23 +8972,6 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="1Qk2BLgYhyp" role="3cqZAp">
-          <node concept="3SKWN0" id="1Qk2BLgYhyq" role="3SKWNk">
-            <node concept="3clFbF" id="4fvA6OQXXC5" role="3SKWNf">
-              <node concept="1rXfSq" id="4fvA6OQXXC6" role="3clFbG">
-                <ref role="37wK5l" to="ood5:6fVeF5slN6c" resolve="initializeProgress" />
-                <node concept="3cpWs3" id="7Quig7_Zljm" role="37wK5m">
-                  <node concept="1rXfSq" id="4fvA6ORm4z2" role="3uHU7B">
-                    <ref role="37wK5l" node="4fvA6OQXXCT" resolve="getAnalysisUserFriendlyName" />
-                  </node>
-                  <node concept="Xl_RD" id="7Quig7_Znj8" role="3uHU7w">
-                    <property role="Xl_RC" value=" - initializing" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="1eSi_XMYH2u" role="3cqZAp" />
         <node concept="3cpWs8" id="4fvA6OQXXBS" role="3cqZAp">
           <node concept="3cpWsn" id="4fvA6OQXXBT" role="3cpWs9">
@@ -9072,17 +9052,29 @@
                 <ref role="37wK5l" to="e2lb:~Thread.sleep(long):void" resolve="sleep" />
                 <ref role="1Pybhc" to="e2lb:~Thread" resolve="Thread" />
                 <node concept="3cmrfG" id="4fvA6ORO4aw" role="37wK5m">
-                  <property role="3cmrfH" value="250" />
+                  <property role="3cmrfH" value="100" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3eOVzh" id="4fvA6ORO2He" role="2$JKZa">
-            <node concept="37vLTw" id="4fvA6ORO1Pv" role="3uHU7B">
-              <ref role="3cqZAo" node="4fvA6ORp8nJ" resolve="publishedResultsNumber" />
+          <node concept="1Wc70l" id="6ks7ICTUhsR" role="2$JKZa">
+            <node concept="3fqX7Q" id="6ks7ICTUicR" role="3uHU7w">
+              <node concept="2OqwBi" id="6ks7ICTUiyw" role="3fr31v">
+                <node concept="37vLTw" id="6ks7ICTUikN" role="2Oq$k0">
+                  <ref role="3cqZAo" to="ood5:7F8$WoW31Ww" resolve="pi" />
+                </node>
+                <node concept="liA8E" id="6ks7ICTUiR3" role="2OqNvi">
+                  <ref role="37wK5l" to="fw3h:~ProgressIndicator.isCanceled():boolean" resolve="isCanceled" />
+                </node>
+              </node>
             </node>
-            <node concept="37vLTw" id="4fvA6ORO3ce" role="3uHU7w">
-              <ref role="3cqZAo" to="ood5:7F8$WoW5PEY" resolve="stepsNumber" />
+            <node concept="3eOVzh" id="4fvA6ORO2He" role="3uHU7B">
+              <node concept="37vLTw" id="4fvA6ORO1Pv" role="3uHU7B">
+                <ref role="3cqZAo" node="4fvA6ORp8nJ" resolve="publishedResultsNumber" />
+              </node>
+              <node concept="37vLTw" id="4fvA6ORO3ce" role="3uHU7w">
+                <ref role="3cqZAo" to="ood5:7F8$WoW5PEY" resolve="stepsNumber" />
+              </node>
             </node>
           </node>
         </node>

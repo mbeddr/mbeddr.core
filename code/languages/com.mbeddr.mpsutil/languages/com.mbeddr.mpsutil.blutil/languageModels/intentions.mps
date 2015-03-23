@@ -20,8 +20,8 @@
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" />
     <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
     <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
-    <import index="qff7" ref="63650c59-16c8-498a-99c8-005c7ee9515d/r:2ba2e307-a81d-4a21-9e0b-de3624e2fb83(jetbrains.mps.lang.access/jetbrains.mps.lang.access.structure)" implicit="true" />
     <import index="tp2c" ref="fd392034-7849-419d-9071-12563d152375/r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures/jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
+    <import index="qff7" ref="63650c59-16c8-498a-99c8-005c7ee9515d/r:2ba2e307-a81d-4a21-9e0b-de3624e2fb83(jetbrains.mps.lang.access/jetbrains.mps.lang.access.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -911,6 +911,28 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="5w9y1vAFed1" role="2ZfVeh">
+      <node concept="3clFbS" id="5w9y1vAFed2" role="2VODD2">
+        <node concept="3clFbF" id="5w9y1vAFeBE" role="3cqZAp">
+          <node concept="2OqwBi" id="5w9y1vAFfPE" role="3clFbG">
+            <node concept="2OqwBi" id="5w9y1vAFeBG" role="2Oq$k0">
+              <node concept="2OqwBi" id="5w9y1vAFeBH" role="2Oq$k0">
+                <node concept="2Sf5sV" id="5w9y1vAFeBI" role="2Oq$k0" />
+                <node concept="2Rxl7S" id="5w9y1vAFeBJ" role="2OqNvi" />
+              </node>
+              <node concept="2Rf3mk" id="5w9y1vAFeBK" role="2OqNvi">
+                <node concept="1xMEDy" id="5w9y1vAFeBL" role="1xVPHs">
+                  <node concept="chp4Y" id="5w9y1vAFeBM" role="ri$Ld">
+                    <ref role="cht4Q" to="hba4:4U_WvDi7GEK" resolve="LogStatement" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3GX2aA" id="5w9y1vAFlPr" role="2OqNvi" />
           </node>
         </node>
       </node>
