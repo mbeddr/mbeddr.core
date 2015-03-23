@@ -837,9 +837,6 @@
       <node concept="3uibUv" id="cchPmXP13L" role="11_B2D">
         <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
       </node>
-      <node concept="3uibUv" id="3x0R1LJ5DjY" role="11_B2D">
-        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
-      </node>
     </node>
     <node concept="2tJIrI" id="7QG1BHxCC0i" role="jymVt" />
     <node concept="3clFbW" id="3x0R1LJ5Dk0" role="jymVt">
