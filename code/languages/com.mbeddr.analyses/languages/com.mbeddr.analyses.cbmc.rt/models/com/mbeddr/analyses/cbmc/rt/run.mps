@@ -173,7 +173,9 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1109279763828" name="jetbrains.mps.baseLanguage.structure.TypeVariableDeclaration" flags="ng" index="16euLQ" />
+      <concept id="1109279763828" name="jetbrains.mps.baseLanguage.structure.TypeVariableDeclaration" flags="ng" index="16euLQ">
+        <child id="1214996921760" name="bound" index="3ztrMU" />
+      </concept>
       <concept id="1109279851642" name="jetbrains.mps.baseLanguage.structure.GenericDeclaration" flags="ng" index="16eOlS">
         <child id="1109279881614" name="typeVariableDeclaration" index="16eVyc" />
       </concept>
@@ -9400,6 +9402,9 @@
     </node>
     <node concept="16euLQ" id="4fvA6OQXXEb" role="16eVyc">
       <property role="TrG5h" value="T" />
+      <node concept="3uibUv" id="4lR09cg7pvH" role="3ztrMU">
+        <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+      </node>
     </node>
     <node concept="NWlO9" id="4fvA6OQXXEd" role="lGtFl">
       <property role="NWlVz" value="Base class for composite analyses." />
