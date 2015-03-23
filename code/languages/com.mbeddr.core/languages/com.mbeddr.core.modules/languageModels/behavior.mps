@@ -11341,7 +11341,7 @@
       <property role="13i0iv" value="true" />
       <node concept="3Tm1VV" id="59zzgFRcVlO" role="1B3o_S" />
       <node concept="3Tqbb2" id="59zzgFRcVlR" role="3clF45">
-        <ref role="ehGHo" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+        <ref role="ehGHo" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
       </node>
       <node concept="3clFbS" id="59zzgFRcVlQ" role="3clF47" />
     </node>
@@ -13650,6 +13650,22 @@
         <node concept="3Tqbb2" id="4$VRXeIntuk" role="1tU5fm" />
       </node>
       <node concept="3cqZAl" id="4$VRXeIntul" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3o2OLGv7CoO">
+    <ref role="13h7C2" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+    <node concept="13i0hz" id="3o2OLGv7CoR" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="createType" />
+      <node concept="3Tm1VV" id="3o2OLGv7CoS" role="1B3o_S" />
+      <node concept="3Tqbb2" id="3o2OLGv7Cta" role="3clF45">
+        <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+      </node>
+      <node concept="3clFbS" id="3o2OLGv7CoU" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="3o2OLGv7CoP" role="13h7CW">
+      <node concept="3clFbS" id="3o2OLGv7CoQ" role="2VODD2" />
     </node>
   </node>
 </model>

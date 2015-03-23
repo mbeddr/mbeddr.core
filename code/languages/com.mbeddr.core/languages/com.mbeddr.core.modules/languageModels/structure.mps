@@ -1249,5 +1249,11 @@
   <node concept="PlHQZ" id="6V6S12clNH$">
     <property role="TrG5h" value="IDataFlowAnalyzerEntryPoint" />
   </node>
+  <node concept="PlHQZ" id="3o2OLGv6VBP">
+    <property role="TrG5h" value="ITypeDeclaration" />
+    <node concept="PrWs8" id="3o2OLGv6VGb" role="PrDN$">
+      <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+  </node>
 </model>
 

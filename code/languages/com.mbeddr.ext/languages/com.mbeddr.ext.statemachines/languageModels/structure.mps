@@ -138,6 +138,9 @@
     <node concept="PrWs8" id="2eaTN_ohHu8" role="PzmwI">
       <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
     </node>
+    <node concept="PrWs8" id="3o2OLGv737x" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+    </node>
   </node>
   <node concept="1TIwiD" id="50Lk78xBraf">
     <property role="TrG5h" value="State" />
