@@ -4132,18 +4132,6 @@
         <node concept="3kxDZ6" id="40ZXlOnHgJF" role="3cqZAp">
           <node concept="9aQIb" id="40ZXlOnHgJG" role="3kxCCa">
             <node concept="3clFbS" id="41thbhvCHm7" role="9aQI4">
-              <node concept="3clFbF" id="41thbhvCHm8" role="3cqZAp">
-                <node concept="2OqwBi" id="41thbhvCHm9" role="3clFbG">
-                  <node concept="3cpWsa" id="41thbhvCHma" role="2Oq$k0">
-                    <ref role="3cqZAo" node="41thbhvCHlW" resolve="args" />
-                  </node>
-                  <node concept="TSZUe" id="41thbhvCHmb" role="2OqNvi">
-                    <node concept="3P9mCS" id="41thbhvCHmc" role="25WWJ7">
-                      <ref role="37wK5l" node="3L_VuqblMrt" resolve="collectAdditionalPaths" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbF" id="41thbhvCHmd" role="3cqZAp">
                 <node concept="2OqwBi" id="41thbhvCHme" role="3clFbG">
                   <node concept="3cpWsa" id="41thbhvCHmf" role="2Oq$k0">
@@ -4152,8 +4140,8 @@
                   <node concept="X8dFx" id="41thbhvCHmg" role="2OqNvi">
                     <node concept="3P9mCS" id="41thbhvCHmh" role="25WWJ7">
                       <ref role="37wK5l" node="2UdJgvCXO0f" resolve="computeCommonArguments" />
-                      <node concept="37vLTw" id="41thbhvCHmi" role="37wK5m">
-                        <ref role="3cqZAo" node="7F8$WoW31Wz" resolve="config" />
+                      <node concept="37vLTw" id="6ks7ICUzWej" role="37wK5m">
+                        <ref role="3cqZAo" node="6ks7ICUzSJy" resolve="cfg" />
                       </node>
                     </node>
                   </node>
@@ -4176,8 +4164,20 @@
                   <node concept="3cpWsa" id="41thbhvCHmu" role="37wK5m">
                     <ref role="3cqZAo" node="41thbhvCHlW" resolve="args" />
                   </node>
-                  <node concept="37vLTw" id="41thbhvCHmv" role="37wK5m">
-                    <ref role="3cqZAo" node="7F8$WoW31Wz" resolve="config" />
+                  <node concept="37vLTw" id="6ks7ICUzWrS" role="37wK5m">
+                    <ref role="3cqZAo" node="6ks7ICUzSJy" resolve="cfg" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="41thbhvCHm8" role="3cqZAp">
+                <node concept="2OqwBi" id="41thbhvCHm9" role="3clFbG">
+                  <node concept="3cpWsa" id="41thbhvCHma" role="2Oq$k0">
+                    <ref role="3cqZAo" node="41thbhvCHlW" resolve="args" />
+                  </node>
+                  <node concept="TSZUe" id="41thbhvCHmb" role="2OqNvi">
+                    <node concept="3P9mCS" id="41thbhvCHmc" role="25WWJ7">
+                      <ref role="37wK5l" node="3L_VuqblMrt" resolve="collectAdditionalPaths" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -4194,6 +4194,12 @@
       <node concept="_YKpA" id="41thbhvC$nb" role="3clF45">
         <node concept="17QB3L" id="41thbhvC$sz" role="_ZDj9" />
       </node>
+      <node concept="37vLTG" id="6ks7ICUzSJy" role="3clF46">
+        <property role="TrG5h" value="cfg" />
+        <node concept="3uibUv" id="6ks7ICUzSJz" role="1tU5fm">
+          <ref role="3uigEE" node="tGR6edUFtE" resolve="CBMCAnalysisConfig" />
+        </node>
+      </node>
       <node concept="37vLTG" id="41thbhvCELy" role="3clF46">
         <property role="TrG5h" value="label" />
         <node concept="17QB3L" id="41thbhvCELx" role="1tU5fm" />
@@ -4203,6 +4209,138 @@
       </node>
     </node>
     <node concept="2tJIrI" id="4XbM$YHwq1U" role="jymVt" />
+    <node concept="3clFb_" id="6ks7ICUpT0e" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="computeLabelsReachibilityArguments" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="6ks7ICUpT0f" role="3clF47">
+        <node concept="3SKdUt" id="6ks7ICUpT0g" role="3cqZAp">
+          <node concept="3SKdUq" id="6ks7ICUpT0h" role="3SKWNk">
+            <property role="3SKdUp" value="make sure that assertions are not checked when searching for label's reachability" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6ks7ICUpT0i" role="3cqZAp">
+          <node concept="37vLTI" id="6ks7ICUpT0j" role="3clFbG">
+            <node concept="3clFbT" id="6ks7ICUpT0k" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="6ks7ICUpT0l" role="37vLTJ">
+              <node concept="37vLTw" id="6ks7ICUzP$s" role="2Oq$k0">
+                <ref role="3cqZAo" node="6ks7ICUzNi0" resolve="cfg" />
+              </node>
+              <node concept="2S8uIT" id="6ks7ICUpT0n" role="2OqNvi">
+                <ref role="2S8YL0" node="$fduZafTi1" resolve="noAssertions" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6ks7ICUpT0o" role="3cqZAp" />
+        <node concept="3cpWs8" id="6ks7ICUpT0p" role="3cqZAp">
+          <node concept="3cpWsn" id="6ks7ICUpT0q" role="3cpWs9">
+            <property role="TrG5h" value="args" />
+            <node concept="_YKpA" id="6ks7ICUpT0r" role="1tU5fm">
+              <node concept="17QB3L" id="6ks7ICUpT0s" role="_ZDj9" />
+            </node>
+            <node concept="2ShNRf" id="6ks7ICUpT0t" role="33vP2m">
+              <node concept="2Jqq0_" id="6ks7ICUpT0u" role="2ShVmc">
+                <node concept="17QB3L" id="6ks7ICUpT0v" role="HW$YZ" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3kxDZ6" id="6ks7ICUpT0w" role="3cqZAp">
+          <node concept="9aQIb" id="6ks7ICUpT0x" role="3kxCCa">
+            <node concept="3clFbS" id="6ks7ICUpT0y" role="9aQI4">
+              <node concept="3clFbF" id="6ks7ICUpT0C" role="3cqZAp">
+                <node concept="2OqwBi" id="6ks7ICUpT0D" role="3clFbG">
+                  <node concept="3cpWsa" id="6ks7ICUpT0E" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6ks7ICUpT0q" resolve="args" />
+                  </node>
+                  <node concept="X8dFx" id="6ks7ICUpT0F" role="2OqNvi">
+                    <node concept="3P9mCS" id="6ks7ICUpT0G" role="25WWJ7">
+                      <ref role="37wK5l" node="2UdJgvCXO0f" resolve="computeCommonArguments" />
+                      <node concept="37vLTw" id="6ks7ICUzPa3" role="37wK5m">
+                        <ref role="3cqZAo" node="6ks7ICUzNi0" resolve="cfg" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2Gpval" id="6ks7ICUpV4H" role="3cqZAp">
+                <node concept="2GrKxI" id="6ks7ICUpV4J" role="2Gsz3X">
+                  <property role="TrG5h" value="currentLabel" />
+                </node>
+                <node concept="3clFbS" id="6ks7ICUpV4L" role="2LFqv$">
+                  <node concept="3clFbF" id="6ks7ICUpT0I" role="3cqZAp">
+                    <node concept="1rXfSq" id="6ks7ICUpT0J" role="3clFbG">
+                      <ref role="37wK5l" node="41thbhvyedh" resolve="addLabelArgument" />
+                      <node concept="37vLTw" id="6ks7ICUpT0K" role="37wK5m">
+                        <ref role="3cqZAo" node="6ks7ICUpT0q" resolve="args" />
+                      </node>
+                      <node concept="2GrUjf" id="6ks7ICUpVI5" role="37wK5m">
+                        <ref role="2Gs0qQ" node="6ks7ICUpV4J" resolve="currentLabel" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="6ks7ICUpVnV" role="2GsD0m">
+                  <ref role="3cqZAo" node="6ks7ICUpT0V" resolve="labels" />
+                </node>
+              </node>
+              <node concept="3clFbF" id="6ks7ICUpT0M" role="3cqZAp">
+                <node concept="3P9mCS" id="6ks7ICUpT0N" role="3clFbG">
+                  <ref role="37wK5l" node="3L_VuqbmNCC" resolve="addFunctionArgument" />
+                  <node concept="3cpWsa" id="6ks7ICUpT0O" role="37wK5m">
+                    <ref role="3cqZAo" node="6ks7ICUpT0q" resolve="args" />
+                  </node>
+                  <node concept="37vLTw" id="6ks7ICUzPnm" role="37wK5m">
+                    <ref role="3cqZAo" node="6ks7ICUzNi0" resolve="cfg" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="6ks7ICUpT0z" role="3cqZAp">
+                <node concept="2OqwBi" id="6ks7ICUpT0$" role="3clFbG">
+                  <node concept="3cpWsa" id="6ks7ICUpT0_" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6ks7ICUpT0q" resolve="args" />
+                  </node>
+                  <node concept="TSZUe" id="6ks7ICUpT0A" role="2OqNvi">
+                    <node concept="3P9mCS" id="6ks7ICUpT0B" role="25WWJ7">
+                      <ref role="37wK5l" node="3L_VuqblMrt" resolve="collectAdditionalPaths" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6ks7ICUpT0Q" role="3cqZAp">
+          <node concept="37vLTw" id="6ks7ICUpT0R" role="3cqZAk">
+            <ref role="3cqZAo" node="6ks7ICUpT0q" resolve="args" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tmbuc" id="6ks7ICUpT0S" role="1B3o_S" />
+      <node concept="_YKpA" id="6ks7ICUpT0T" role="3clF45">
+        <node concept="17QB3L" id="6ks7ICUpT0U" role="_ZDj9" />
+      </node>
+      <node concept="37vLTG" id="6ks7ICUzNi0" role="3clF46">
+        <property role="TrG5h" value="cfg" />
+        <node concept="3uibUv" id="6ks7ICUzOOM" role="1tU5fm">
+          <ref role="3uigEE" node="tGR6edUFtE" resolve="CBMCAnalysisConfig" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6ks7ICUpT0V" role="3clF46">
+        <property role="TrG5h" value="labels" />
+        <node concept="A3Dl8" id="6ks7ICUw_Oi" role="1tU5fm">
+          <node concept="17QB3L" id="6ks7ICUwArg" role="A3Ik2" />
+        </node>
+      </node>
+      <node concept="NWlO9" id="6ks7ICUpT0X" role="lGtFl">
+        <property role="NWlVz" value="Computes the arguments for labels reachibility." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6ks7ICUpQ0y" role="jymVt" />
     <node concept="3clFb_" id="3L_VuqbmNCC" role="jymVt">
       <property role="TrG5h" value="addFunctionArgument" />
       <node concept="3Tmbuc" id="2UdJgvD10nB" role="1B3o_S" />
