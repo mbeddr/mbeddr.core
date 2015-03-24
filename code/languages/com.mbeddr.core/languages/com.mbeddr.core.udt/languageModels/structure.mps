@@ -19,6 +19,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -99,6 +100,9 @@
     <node concept="PrWs8" id="6uc_WDS6t2D" role="PzmwI">
       <ref role="PrY4T" to="x27k:2ofiXe_tTHX" resolve="ICanMangleNames" />
     </node>
+    <node concept="PrWs8" id="3o2OLGv7388" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+    </node>
     <node concept="1TJgyj" id="5jyom5fO9Cm" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="original" />
@@ -145,6 +149,9 @@
     </node>
     <node concept="PrWs8" id="2ofiXe_tTI6" role="PzmwI">
       <ref role="PrY4T" to="x27k:2ofiXe_tTHX" resolve="ICanMangleNames" />
+    </node>
+    <node concept="PrWs8" id="3o2OLGv6WYM" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="7D99css6O0t">
@@ -437,6 +444,9 @@
     <node concept="PrWs8" id="2ZsiEbEC3" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
+    <node concept="PrWs8" id="3o2OLGv6WZm" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2ZsiEbECc">
     <property role="TrG5h" value="OpaqueType" />
@@ -597,12 +607,17 @@
   <node concept="1TIwiD" id="2CEi94edfgd">
     <property role="3GE5qa" value="su.struct" />
     <property role="TrG5h" value="ModuleContentSUDeclaration" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="6a5SBPfXGBP" resolve="SUDeclaration" />
     <node concept="PrWs8" id="7ya9dte0dzf" role="PzmwI">
       <ref role="PrY4T" to="x27k:2ofiXe_tTHX" resolve="ICanMangleNames" />
     </node>
     <node concept="PrWs8" id="7ya9dte0dzC" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="1dVUzz9f3Wj" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
   </node>
 </model>

@@ -59,6 +59,9 @@
     <node concept="PrWs8" id="7H6_Qip4OQ5" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
+    <node concept="PrWs8" id="3o2OLGv70Oi" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7H6_Qip5FHh">
     <property role="TrG5h" value="VarRTConfigItem" />

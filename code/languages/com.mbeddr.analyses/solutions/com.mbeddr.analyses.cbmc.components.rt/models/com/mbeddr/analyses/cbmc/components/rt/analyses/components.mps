@@ -325,9 +325,6 @@
       <node concept="3uibUv" id="cchPmXWkcP" role="11_B2D">
         <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
       </node>
-      <node concept="3uibUv" id="4arT0cntK1R" role="11_B2D">
-        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
-      </node>
     </node>
     <node concept="2tJIrI" id="4arT0cntK1S" role="jymVt" />
     <node concept="3clFbW" id="4arT0cntK1T" role="jymVt">

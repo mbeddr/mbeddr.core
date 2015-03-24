@@ -720,6 +720,31 @@
       </node>
       <node concept="3Tm1VV" id="3FSHg1aDg8e" role="1B3o_S" />
     </node>
+    <node concept="13i0hz" id="3o2OLGv812s" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="createType" />
+      <ref role="13i0hy" to="qd6m:3o2OLGv7CoR" resolve="createType" />
+      <node concept="3Tm1VV" id="3o2OLGv812t" role="1B3o_S" />
+      <node concept="3clFbS" id="3o2OLGv812w" role="3clF47">
+        <node concept="3clFbF" id="3o2OLGv82oD" role="3cqZAp">
+          <node concept="2pJPEk" id="3o2OLGv82oB" role="3clFbG">
+            <node concept="2pJPED" id="3o2OLGv82oZ" role="2pJPEn">
+              <ref role="2pJxaS" to="clqz:6NQSyUTqXkL" resolve="StatemachineType" />
+              <node concept="2pIpSj" id="3o2OLGv82pw" role="2pJxcM">
+                <ref role="2pIpSl" to="clqz:6NQSyUTqXkM" />
+                <node concept="36biLy" id="3o2OLGv82q5" role="2pJxcZ">
+                  <node concept="13iPFW" id="3o2OLGv82qF" role="36biLW" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3o2OLGv812x" role="3clF45">
+        <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+      </node>
+    </node>
     <node concept="13i0hz" id="7Dny5nFyNOH" role="13h7CS">
       <property role="TrG5h" value="nonCompositeStates" />
       <node concept="3Tm1VV" id="7Dny5nFyNOI" role="1B3o_S" />
@@ -3103,7 +3128,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="7moPk052uxf" role="3clF45">
-        <ref role="ehGHo" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+        <ref role="ehGHo" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
       </node>
     </node>
     <node concept="13hLZK" id="6jjPLM8mPVW" role="13h7CW">

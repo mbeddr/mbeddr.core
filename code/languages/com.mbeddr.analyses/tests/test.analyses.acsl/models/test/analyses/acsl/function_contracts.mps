@@ -182,14 +182,14 @@
             <node concept="3uibUv" id="29$2IGZfW0u" role="1tU5fm">
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
-            <node concept="2OqwBi" id="29$2IGZfW0v" role="33vP2m">
-              <node concept="37vLTw" id="29$2IGZfW0w" role="2Oq$k0">
+            <node concept="2YIFZM" id="43x69gbI3nt" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <node concept="37vLTw" id="43x69gbI3oC" role="37wK5m">
                 <ref role="3cqZAo" node="29$2IGZfW0f" resolve="results" />
               </node>
-              <node concept="34jXtK" id="29$2IGZfW0x" role="2OqNvi">
-                <node concept="3cmrfG" id="29$2IGZfW0y" role="25WWJ7">
-                  <property role="3cmrfH" value="0" />
-                </node>
+              <node concept="Xl_RD" id="43x69gbI3sh" role="37wK5m">
+                <property role="Xl_RC" value="Assert: a &gt; 0" />
               </node>
             </node>
           </node>
@@ -211,14 +211,14 @@
             <node concept="3uibUv" id="29$2IGZgfqD" role="1tU5fm">
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
-            <node concept="2OqwBi" id="29$2IGZgfqE" role="33vP2m">
-              <node concept="37vLTw" id="29$2IGZgfqF" role="2Oq$k0">
+            <node concept="2YIFZM" id="43x69gbI3wi" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <node concept="37vLTw" id="43x69gbI3wj" role="37wK5m">
                 <ref role="3cqZAo" node="29$2IGZfW0f" resolve="results" />
               </node>
-              <node concept="34jXtK" id="29$2IGZgfqG" role="2OqNvi">
-                <node concept="3cmrfG" id="29$2IGZgfyu" role="25WWJ7">
-                  <property role="3cmrfH" value="1" />
-                </node>
+              <node concept="Xl_RD" id="43x69gbI3wk" role="37wK5m">
+                <property role="Xl_RC" value="Assert: b != 0" />
               </node>
             </node>
           </node>
@@ -240,14 +240,14 @@
             <node concept="3uibUv" id="29$2IGZgftT" role="1tU5fm">
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
-            <node concept="2OqwBi" id="29$2IGZgftU" role="33vP2m">
-              <node concept="37vLTw" id="29$2IGZgftV" role="2Oq$k0">
+            <node concept="2YIFZM" id="43x69gbI3DS" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <node concept="37vLTw" id="43x69gbI3DT" role="37wK5m">
                 <ref role="3cqZAo" node="29$2IGZfW0f" resolve="results" />
               </node>
-              <node concept="34jXtK" id="29$2IGZgftW" role="2OqNvi">
-                <node concept="3cmrfG" id="29$2IGZgfyy" role="25WWJ7">
-                  <property role="3cmrfH" value="2" />
-                </node>
+              <node concept="Xl_RD" id="43x69gbI3DU" role="37wK5m">
+                <property role="Xl_RC" value="Assert: a &gt; b" />
               </node>
             </node>
           </node>
@@ -273,19 +273,6 @@
             </node>
             <node concept="liA8E" id="29$2IGZfW0F" role="2OqNvi">
               <ref role="37wK5l" to="eqhl:126LgZ0NBax" resolve="getFailKind" />
-            </node>
-          </node>
-        </node>
-        <node concept="3vlDli" id="29$2IGZfW0G" role="3cqZAp">
-          <node concept="Xl_RD" id="29$2IGZfW0H" role="3tpDZB">
-            <property role="Xl_RC" value="Assert: a &gt; b" />
-          </node>
-          <node concept="2OqwBi" id="29$2IGZfW0I" role="3tpDZA">
-            <node concept="37vLTw" id="29$2IGZgfyB" role="2Oq$k0">
-              <ref role="3cqZAo" node="29$2IGZgftS" resolve="res2" />
-            </node>
-            <node concept="liA8E" id="29$2IGZfW0K" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:3FNuzGa2mmQ" resolve="getUserFriendlyMessage" />
             </node>
           </node>
         </node>
@@ -422,7 +409,7 @@
         </node>
         <node concept="3vlDli" id="6WBmVK646TH" role="3cqZAp">
           <node concept="Xl_RD" id="6WBmVK646TI" role="3tpDZB">
-            <property role="Xl_RC" value="Assert: a &gt; b" />
+            <property role="Xl_RC" value="Assert: \\result in [2..12[" />
           </node>
           <node concept="2OqwBi" id="6WBmVK646TJ" role="3tpDZA">
             <node concept="37vLTw" id="6WBmVK64dFc" role="2Oq$k0">

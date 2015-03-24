@@ -837,7 +837,7 @@
     <node concept="3EZMnI" id="4BxItZJ4BoY" role="2wV5jI">
       <node concept="l2Vlx" id="4BxItZJ4Bp0" role="2iSdaV" />
       <node concept="3F0ifn" id="3Ulkr59M5QI" role="3EZMnx">
-        <property role="3F0ifm" value="desktop (gnu)" />
+        <property role="3F0ifm" value="GNU" />
       </node>
       <node concept="3F0ifn" id="7c6uq_OtvlA" role="3EZMnx">
         <property role="3F0ifm" value="paths are not checked" />

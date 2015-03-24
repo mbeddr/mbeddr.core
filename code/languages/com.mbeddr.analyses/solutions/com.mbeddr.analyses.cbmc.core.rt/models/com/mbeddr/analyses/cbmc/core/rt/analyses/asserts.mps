@@ -227,9 +227,6 @@
       <node concept="3uibUv" id="3x0R1LJ5Cp5" role="11_B2D">
         <ref role="3uigEE" node="3x0R1LJ5Cqx" resolve="CBMCAssertResult" />
       </node>
-      <node concept="3uibUv" id="3x0R1LJ5Cp6" role="11_B2D">
-        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
-      </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LJ5Cp7" role="jymVt" />
     <node concept="Wx3nA" id="42G5eOpSOW9" role="jymVt">
