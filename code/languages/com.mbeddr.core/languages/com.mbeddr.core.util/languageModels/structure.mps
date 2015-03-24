@@ -622,31 +622,6 @@
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2DQOS5H9NX$">
-    <property role="3GE5qa" value="namedStructInit" />
-    <property role="TrG5h" value="NamedArgStructInitExpression" />
-    <property role="R4oN_" value="struct initializer (named args)" />
-    <property role="34LRSv" value="{sn" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="1TJgyj" id="2DQOS5Ha0HZ" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="memberAssigns" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="2EBw14y1Xqo" resolve="WithMemberAssignment" />
-    </node>
-    <node concept="PrWs8" id="34d3$NxQaDg" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:4usdeMNUjj3" resolve="IRequiresTypeToBeInferred" />
-    </node>
-    <node concept="PrWs8" id="34d3$NxQd1S" role="PzmwI">
-      <ref role="PrY4T" to="c4fa:3$tYuge5dpc" resolve="IStructuredInitExpression" />
-    </node>
-    <node concept="PrWs8" id="EzoNb5Pr7k" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="PrWs8" id="2qm4hK36g9U" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2ZUGF54jpqt">
     <property role="TrG5h" value="FlagOp" />
     <property role="3GE5qa" value="flags" />
@@ -1276,6 +1251,11 @@
     <node concept="PrWs8" id="1duwXQeBgFw" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5tbhN$4LlsX">
+    <property role="TrG5h" value="C90CompatibleCode" />
+    <property role="34LRSv" value="c90 compatible code" />
+    <ref role="1TJDcQ" node="3_EX3Wi7Hiy" resolve="ConvertNamedToPositionalStructInit" />
   </node>
 </model>
 
