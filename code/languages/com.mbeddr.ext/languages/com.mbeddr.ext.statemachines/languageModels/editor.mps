@@ -2334,55 +2334,6 @@
       <ref role="PMmxG" to="vrqd:5CDgsyZbE9V" resolve="staticValueComponent" />
     </node>
   </node>
-  <node concept="24kQdi" id="13QNHYGEbqG">
-    <property role="3GE5qa" value="c-integration.deprecated" />
-    <ref role="1XX52x" to="clqz:13QNHYGEbqA" resolve="SetStateStatement" />
-    <node concept="3EZMnI" id="13QNHYGEbqI" role="2wV5jI">
-      <node concept="l2Vlx" id="13QNHYGEbqJ" role="2iSdaV" />
-      <node concept="3F0ifn" id="13QNHYGEbqK" role="3EZMnx">
-        <property role="3F0ifm" value="smSetState(" />
-        <node concept="11LMrY" id="13QNHYGEbqL" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="13QNHYGEbqM" role="3EZMnx">
-        <ref role="1NtTu8" to="clqz:13QNHYGEbqC" />
-      </node>
-      <node concept="3F0ifn" id="13QNHYGEbqN" role="3EZMnx">
-        <property role="3F0ifm" value="," />
-        <node concept="11L4FC" id="13QNHYGEbqO" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="1iCGBv" id="13QNHYGEbqP" role="3EZMnx">
-        <ref role="1NtTu8" to="clqz:13QNHYGEbqB" />
-        <node concept="1sVBvm" id="13QNHYGEbqQ" role="1sWHZn">
-          <node concept="1HlG4h" id="13QNHYGEbqR" role="2wV5jI">
-            <node concept="1HfYo3" id="13QNHYGEbqS" role="1HlULh">
-              <node concept="3TQlhw" id="13QNHYGEbqT" role="1Hhtcw">
-                <node concept="3clFbS" id="13QNHYGEbqU" role="2VODD2">
-                  <node concept="3clFbF" id="13QNHYGEbqV" role="3cqZAp">
-                    <node concept="2OqwBi" id="13QNHYGEbqW" role="3clFbG">
-                      <node concept="pncrf" id="13QNHYGEbqX" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="13QNHYGEbqY" role="2OqNvi">
-                        <ref role="37wK5l" to="ktif:3FSHg1aC13T" resolve="qualifiedStateName" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="13QNHYGEbqZ" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <node concept="11L4FC" id="13QNHYGEbr0" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="325Ffw" id="13QNHYGEV1s">
     <property role="3GE5qa" value="machine" />
     <property role="TrG5h" value="removeVarWritable" />

@@ -3765,53 +3765,6 @@
       <ref role="1YaFvo" to="clqz:16ykm_MbwuV" resolve="AbstractTransition" />
     </node>
   </node>
-  <node concept="18kY7G" id="13QNHYGEjtk">
-    <property role="TrG5h" value="check_SetStateStatement" />
-    <property role="3GE5qa" value="c-integration.deprecated" />
-    <node concept="3clFbS" id="13QNHYGEjtl" role="18ibNy">
-      <node concept="3clFbJ" id="13QNHYGEjtn" role="3cqZAp">
-        <node concept="3fqX7Q" id="13QNHYGEjto" role="3clFbw">
-          <node concept="2OqwBi" id="13QNHYGEjtp" role="3fr31v">
-            <node concept="2OqwBi" id="13QNHYGEjtq" role="2Oq$k0">
-              <node concept="2OqwBi" id="13QNHYGEjtr" role="2Oq$k0">
-                <node concept="1YBJjd" id="13QNHYGEjtB" role="2Oq$k0">
-                  <ref role="1YBMHb" node="13QNHYGEjtm" resolve="sss" />
-                </node>
-                <node concept="3TrEf2" id="13QNHYGEjtD" role="2OqNvi">
-                  <ref role="3Tt5mk" to="clqz:13QNHYGEbqC" />
-                </node>
-              </node>
-              <node concept="3JvlWi" id="13QNHYGEjtu" role="2OqNvi" />
-            </node>
-            <node concept="1mIQ4w" id="13QNHYGEjtv" role="2OqNvi">
-              <node concept="chp4Y" id="13QNHYGEjtw" role="cj9EA">
-                <ref role="cht4Q" to="clqz:6NQSyUTqXkL" resolve="StatemachineType" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbS" id="13QNHYGEjtx" role="3clFbx">
-          <node concept="2MkqsV" id="13QNHYGEjty" role="3cqZAp">
-            <node concept="Xl_RD" id="13QNHYGEjtz" role="2MkJ7o">
-              <property role="Xl_RC" value="state machine must be used here" />
-            </node>
-            <node concept="2OqwBi" id="13QNHYGEjt$" role="2OEOjV">
-              <node concept="1YBJjd" id="13QNHYGEjtE" role="2Oq$k0">
-                <ref role="1YBMHb" node="13QNHYGEjtm" resolve="sss" />
-              </node>
-              <node concept="3TrEf2" id="13QNHYGEjtQ" role="2OqNvi">
-                <ref role="3Tt5mk" to="clqz:13QNHYGEbqC" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="13QNHYGEjtm" role="1YuTPh">
-      <property role="TrG5h" value="sss" />
-      <ref role="1YaFvo" to="clqz:13QNHYGEbqA" resolve="SetStateStatement" />
-    </node>
-  </node>
   <node concept="1YbPZF" id="5jCi3tJ6_0R">
     <property role="TrG5h" value="typeof_SmVarRef" />
     <property role="3GE5qa" value="c-integration" />

@@ -754,31 +754,6 @@
       <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
     </node>
   </node>
-  <node concept="1TIwiD" id="13QNHYGEbqA">
-    <property role="3GE5qa" value="c-integration.deprecated" />
-    <property role="TrG5h" value="SetStateStatement" />
-    <property role="R4oN_" value="sets the state machine into a specific state" />
-    <property role="34LRSv" value="smSetState" />
-    <ref role="1TJDcQ" to="yz9a:1Rr52SXzYA6" resolve="TestSpecificStatement" />
-    <node concept="1TJgyj" id="13QNHYGEbqB" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="state" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3FSHg1aADay" resolve="AbstractState" />
-    </node>
-    <node concept="1TJgyj" id="13QNHYGEbqC" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="7XSydqtCAH" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-    <node concept="PrWs8" id="7XSydqtCAM" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7iNM$5cFA$P">
     <property role="3GE5qa" value="machine.states.actions" />
     <property role="TrG5h" value="AbstractAction" />
