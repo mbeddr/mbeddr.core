@@ -332,6 +332,7 @@
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
       </concept>
       <concept id="6437088627575723997" name="com.mbeddr.core.modules.structure.FunctionSignature" flags="ng" index="N3Fnt">
+        <property id="5095889050033549114" name="__inlinetext" index="34HlcH" />
         <property id="5679441017213716505" name="inline" index="3J7Ymq" />
       </concept>
       <concept id="6437088627575724000" name="com.mbeddr.core.modules.structure.FunctionPrototype" flags="ng" index="N3Fnw" />
@@ -1916,6 +1917,7 @@
     </node>
     <node concept="N3Fnw" id="6Q7bJ$$mvO8" role="13RCb5">
       <property role="TrG5h" value="dummy" />
+      <property role="34HlcH" value=" " />
       <node concept="3IwBUS" id="7BEN_Nebcl$" role="3O7dZk">
         <property role="3IwBUT" value="modifiers" />
         <node concept="2b32R4" id="7BEN_Nebd5L" role="lGtFl">
@@ -2059,6 +2061,22 @@
                   <ref role="3TsBF5" to="x27k:4VhroexNCwp" resolve="inline" />
                 </node>
                 <node concept="30H73N" id="6dhOyaMI2Mx" role="2Oq$k0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17Uvod" id="153V35RWr6D" role="lGtFl">
+        <property role="P4ACc" value="6d11763d-483d-4b2b-8efc-09336c1b0001/6437088627575723997/5095889050033549114" />
+        <property role="2qtEX9" value="__inlinetext" />
+        <node concept="3zFVjK" id="153V35RWr6G" role="3zH0cK">
+          <node concept="3clFbS" id="153V35RWr6H" role="2VODD2">
+            <node concept="3clFbF" id="153V35RWr6N" role="3cqZAp">
+              <node concept="2OqwBi" id="153V35RWr6I" role="3clFbG">
+                <node concept="3TrcHB" id="153V35RWr6L" role="2OqNvi">
+                  <ref role="3TsBF5" to="x27k:4qSf1u23mWU" resolve="__inlinetext" />
+                </node>
+                <node concept="30H73N" id="153V35RWr6M" role="2Oq$k0" />
               </node>
             </node>
           </node>

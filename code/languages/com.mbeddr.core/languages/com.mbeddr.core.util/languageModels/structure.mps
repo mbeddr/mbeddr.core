@@ -886,6 +886,9 @@
     <node concept="PrWs8" id="37VCVodLat_" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
+    <node concept="PrWs8" id="3o2OLGv70vj" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6YDrr9Lxg44">
     <property role="3GE5qa" value="ringbuffer" />
@@ -1127,6 +1130,9 @@
     </node>
     <node concept="PrWs8" id="gaSsNU8JZm" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="3o2OLGv70P3" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="gaSsNU972a">

@@ -117,6 +117,9 @@
     <node concept="PrWs8" id="2XtvyVv5rPL" role="PzmwI">
       <ref role="PrY4T" node="7DNX50_2aso" resolve="IComponentWatchableResolver" />
     </node>
+    <node concept="PrWs8" id="3o2OLGv6WjM" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+    </node>
     <node concept="1TJgyj" id="5fn4FV$9N5o" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="contents" />
@@ -138,6 +141,9 @@
     </node>
     <node concept="PrWs8" id="6RCWEZG4Krh" role="PzmwI">
       <ref role="PrY4T" to="kwxp:2N1CSrzPN_8" resolve="IVisualizable" />
+    </node>
+    <node concept="PrWs8" id="3o2OLGv6WZ7" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
     <node concept="1TJgyi" id="1lsyexBMfX1" role="1TKVEl">
       <property role="TrG5h" value="canBeUsedAsType" />

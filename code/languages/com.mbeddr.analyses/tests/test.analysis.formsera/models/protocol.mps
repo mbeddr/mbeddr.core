@@ -97,9 +97,6 @@
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
-      <concept id="1317894735999299713" name="com.mbeddr.core.modules.structure.ModuleImport" flags="ng" index="2OOAF6">
-        <reference id="1317894735999299714" name="module" index="2OOAF5" />
-      </concept>
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -523,9 +520,6 @@
     <node concept="3GEVxB" id="19LfhoY3iDp" role="2OODSX">
       <property role="3GEa6x" value="false" />
       <ref role="3GEb4d" node="4BIEEuWf5bP" resolve="Car" />
-    </node>
-    <node concept="2OOAF6" id="19LfhoY3uoo" role="2OODSX">
-      <ref role="2OOAF5" node="4BIEEuWf5bP" resolve="Car" />
     </node>
   </node>
 </model>

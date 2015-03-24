@@ -246,7 +246,7 @@
   </node>
   <node concept="1TIwiD" id="4BxItZJ4BoI">
     <property role="TrG5h" value="DesktopPlatform" />
-    <property role="34LRSv" value="desktop" />
+    <property role="34LRSv" value="gnu" />
     <property role="3GE5qa" value="platform" />
     <ref role="1TJDcQ" node="4BxItZJ4BoF" resolve="Platform" />
     <node concept="PrWs8" id="77mJsGsFMiE" role="PzmwI">

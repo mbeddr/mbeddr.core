@@ -283,30 +283,6 @@
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
-  <node concept="1TIwiD" id="19a6$uAA721">
-    <property role="TrG5h" value="ModuleImport" />
-    <property role="R4oN_" value="make the contents of another module available" />
-    <ref role="1TJDcQ" node="7Vd878lGmNr" resolve="ModuleDependency" />
-    <node concept="1TJgyi" id="6uZAbUKexU0" role="1TKVEl">
-      <property role="TrG5h" value="reexport" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="PrWs8" id="5KH1ziO6mZJ" role="PzmwI">
-      <ref role="PrY4T" node="5KH1ziO6mZv" resolve="IReferenceToModule" />
-    </node>
-    <node concept="PrWs8" id="7aNtjNmMTBS" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="PrWs8" id="7aNtjNmMTC4" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-    <node concept="1TJgyj" id="19a6$uAA722" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="module" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5_l8w1EmTcX" resolve="Module" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="19a6$uAAqkn">
     <property role="TrG5h" value="IModuleContentContainer" />
     <node concept="PrWs8" id="19a6$uAAqkM" role="PrDN$">
@@ -1248,6 +1224,12 @@
   </node>
   <node concept="PlHQZ" id="6V6S12clNH$">
     <property role="TrG5h" value="IDataFlowAnalyzerEntryPoint" />
+  </node>
+  <node concept="PlHQZ" id="3o2OLGv6VBP">
+    <property role="TrG5h" value="ITypeDeclaration" />
+    <node concept="PrWs8" id="3o2OLGv6VGb" role="PrDN$">
+      <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
   </node>
 </model>
 
