@@ -985,35 +985,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="686eOfoK4$y">
-    <property role="3GE5qa" value="su" />
-    <ref role="1XX52x" to="clbe:686eOfoK4$u" resolve="SUDotExpression" />
-    <node concept="3EZMnI" id="686eOfoK4$$" role="2wV5jI">
-      <node concept="3F1sOY" id="686eOfoK4$_" role="3EZMnx">
-        <ref role="1NtTu8" to="mj1l:6iIoqg1yDLg" />
-      </node>
-      <node concept="3F0ifn" id="686eOfoK4$A" role="3EZMnx">
-        <property role="3F0ifm" value="." />
-        <ref role="1ERwB7" to="vrqd:4qSf1u1Y$RA" resolve="deleteDotOrArrow" />
-        <ref role="1k5W1q" to="r4b4:y826GHffn9" resolve="Op" />
-        <node concept="11L4FC" id="686eOfoK4$B" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="686eOfoK4$C" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="l2Vlx" id="686eOfoK4$D" role="2iSdaV" />
-      <node concept="3F1sOY" id="686eOfoK4$E" role="3EZMnx">
-        <property role="1cu_pB" value="3" />
-        <ref role="1NtTu8" to="mj1l:1gDNXlE1QKV" />
-        <ref role="1ERwB7" to="vrqd:4qSf1u1Y$RA" resolve="deleteDotOrArrow" />
-      </node>
-    </node>
-    <node concept="PMmxH" id="5CDgsyZcFTg" role="6VMZX">
-      <ref role="PMmxG" to="vrqd:5CDgsyZbE9V" resolve="staticValueComponent" />
-    </node>
-  </node>
   <node concept="24kQdi" id="2EBw14y1HVg">
     <property role="3GE5qa" value="su.union" />
     <ref role="1XX52x" to="clbe:2EBw14y1HVa" resolve="UnionInitExpression" />

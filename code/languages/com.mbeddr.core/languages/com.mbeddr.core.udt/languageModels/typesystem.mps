@@ -178,7 +178,6 @@
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
         <child id="1227096836496" name="messageTarget" index="2OEWyd" />
       </concept>
@@ -213,15 +212,6 @@
         <child id="1236165725858" name="rule" index="3he0YX" />
       </concept>
       <concept id="3592071576955708904" name="jetbrains.mps.lang.typesystem.structure.IsReplacementRuleApplicable_ConceptFunction" flags="in" index="1xSnZT" />
-      <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
-        <property id="1216127910019" name="applyImmediately" index="ARO6o" />
-        <reference id="1216388525179" name="quickFix" index="QpYPw" />
-        <child id="1210784493590" name="actualArgument" index="3Coj4f" />
-      </concept>
-      <concept id="1210784384552" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntentionArgument" flags="ng" index="3CnSsL">
-        <reference id="1216386999476" name="quickFixArgument" index="QkamJ" />
-        <child id="1210784642750" name="value" index="3CoRuB" />
-      </concept>
       <concept id="1176543928247" name="jetbrains.mps.lang.typesystem.structure.IsSubtypeExpression" flags="nn" index="3JuTUA">
         <child id="1176543945045" name="subtypeExpression" index="3JuY14" />
         <child id="1176543950311" name="supertypeExpression" index="3JuZjQ" />
@@ -1696,85 +1686,6 @@
     <node concept="1YaCAy" id="Ug1QzfgWsv" role="1YuTPh">
       <property role="TrG5h" value="sce" />
       <ref role="1YaFvo" to="clbe:Ug1QzfgTyE" resolve="StructCastExpression" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="2DQOS5Hc$3u">
-    <property role="3GE5qa" value="su" />
-    <property role="TrG5h" value="check_arrowForPointers" />
-    <node concept="3clFbS" id="2DQOS5Hc$3v" role="18ibNy">
-      <node concept="3cpWs8" id="2DQOS5Hc$5B" role="3cqZAp">
-        <node concept="3cpWsn" id="2DQOS5Hc$5C" role="3cpWs9">
-          <property role="TrG5h" value="t" />
-          <node concept="3Tqbb2" id="2DQOS5Hc$5D" role="1tU5fm" />
-          <node concept="2OqwBi" id="2DQOS5Hc$5E" role="33vP2m">
-            <node concept="2OqwBi" id="2DQOS5Hc$5F" role="2Oq$k0">
-              <node concept="1YBJjd" id="2DQOS5Hc$5G" role="2Oq$k0">
-                <ref role="1YBMHb" node="2DQOS5Hc$3x" resolve="de" />
-              </node>
-              <node concept="3TrEf2" id="2DQOS5Hc$5H" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
-              </node>
-            </node>
-            <node concept="3JvlWi" id="2DQOS5Hc$5I" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbJ" id="2DQOS5Hc$3y" role="3cqZAp">
-        <node concept="1Wc70l" id="2DQOS5Hc$5$" role="3clFbw">
-          <node concept="2OqwBi" id="2DQOS5Hc$6R" role="3uHU7w">
-            <node concept="2OqwBi" id="2DQOS5Hc$6r" role="2Oq$k0">
-              <node concept="1PxgMI" id="2DQOS5Hc$65" role="2Oq$k0">
-                <ref role="1PxNhF" to="yq40:fwMInzpHoK" resolve="PointerType" />
-                <node concept="37vLTw" id="5HxjapweqdL" role="1PxMeX">
-                  <ref role="3cqZAo" node="2DQOS5Hc$5C" resolve="t" />
-                </node>
-              </node>
-              <node concept="3TrEf2" id="2$xXL4PfDxf" role="2OqNvi">
-                <ref role="3Tt5mk" to="c4fa:6IWRcVPT6tm" />
-              </node>
-            </node>
-            <node concept="1mIQ4w" id="2DQOS5Hc$6X" role="2OqNvi">
-              <node concept="chp4Y" id="2DQOS5Hc$bW" role="cj9EA">
-                <ref role="cht4Q" to="clbe:3bHYGwzt_Ut" resolve="SUType" />
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="2DQOS5Hc$4w" role="3uHU7B">
-            <node concept="3cpWsa" id="2DQOS5Hc$5J" role="2Oq$k0">
-              <ref role="3cqZAo" node="2DQOS5Hc$5C" resolve="t" />
-            </node>
-            <node concept="1mIQ4w" id="2DQOS5Hc$4A" role="2OqNvi">
-              <node concept="chp4Y" id="2DQOS5Hc$5f" role="cj9EA">
-                <ref role="cht4Q" to="yq40:fwMInzpHoK" resolve="PointerType" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbS" id="2DQOS5Hc$3$" role="3clFbx">
-          <node concept="2MkqsV" id="2DQOS5Hc$57" role="3cqZAp">
-            <node concept="Xl_RD" id="2DQOS5Hc$5a" role="2MkJ7o">
-              <property role="Xl_RC" value="for struct* or union*, the arrow operator must be used" />
-            </node>
-            <node concept="1YBJjd" id="2DQOS5Hc$5b" role="2OEOjV">
-              <ref role="1YBMHb" node="2DQOS5Hc$3x" resolve="de" />
-            </node>
-            <node concept="3Cnw8n" id="2DQOS5Hc$70" role="2OEOjU">
-              <property role="ARO6o" value="true" />
-              <ref role="QpYPw" node="2DQOS5Hc$5c" resolve="fix_arrowForPointers" />
-              <node concept="3CnSsL" id="2DQOS5Hc$74" role="3Coj4f">
-                <ref role="QkamJ" node="2DQOS5Hc$71" resolve="dot" />
-                <node concept="1YBJjd" id="2DQOS5Hc$76" role="3CoRuB">
-                  <ref role="1YBMHb" node="2DQOS5Hc$3x" resolve="de" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="2DQOS5Hc$3x" role="1YuTPh">
-      <property role="TrG5h" value="de" />
-      <ref role="1YaFvo" to="clbe:686eOfoK4$u" resolve="SUDotExpression" />
     </node>
   </node>
   <node concept="35pCF_" id="ARxxiZMMeq">
