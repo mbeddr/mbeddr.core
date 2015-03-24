@@ -341,7 +341,7 @@
       <node concept="37vLTG" id="6xlxoSXc0dZ" role="3clF46">
         <property role="TrG5h" value="config" />
         <node concept="3Tqbb2" id="6xlxoSXc0e0" role="1tU5fm">
-          <ref role="ehGHo" to="qdv7:5JmNU9PAaLk" resolve="VariabilityTransformationConfig" />
+          <ref role="ehGHo" to="qdv7:5DBke2vwmTj" resolve="VariabilityConfigItem" />
         </node>
       </node>
     </node>
