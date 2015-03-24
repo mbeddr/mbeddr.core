@@ -223,33 +223,5 @@
     <property role="TrG5h" value="ISelfTypingInArrayAccessExpression" />
     <property role="3GE5qa" value="ClassesSupport" />
   </node>
-  <node concept="1TIwiD" id="6o2p2Z0C9os">
-    <property role="3GE5qa" value="arrays" />
-    <property role="TrG5h" value="ArrayInitExpression" />
-    <property role="34LRSv" value="{a" />
-    <property role="R4oN_" value="array initializer" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="PrWs8" id="6o2p2Z0C9ot" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
-    </node>
-    <node concept="PrWs8" id="6o2p2Z0C9ow" role="PzmwI">
-      <ref role="PrY4T" to="c4fa:3$tYuge5dpc" resolve="IStructuredInitExpression" />
-    </node>
-    <node concept="PrWs8" id="6o2p2Z0C9ox" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:4usdeMNUjj3" resolve="IRequiresTypeToBeInferred" />
-    </node>
-    <node concept="PrWs8" id="EzoNb5Pr99" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="PrWs8" id="2qm4hK379yR" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-    <node concept="1TJgyj" id="6o2p2Z0C9oy" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="exprs" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-  </node>
 </model>
 
