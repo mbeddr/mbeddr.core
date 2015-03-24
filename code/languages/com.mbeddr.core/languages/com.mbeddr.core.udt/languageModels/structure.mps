@@ -269,28 +269,6 @@
       <ref role="20lvS9" node="6a5SBPfXGBP" resolve="SUDeclaration" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4qSf1u1VWPO">
-    <property role="3GE5qa" value="su.struct" />
-    <property role="TrG5h" value="StructInitExpression" />
-    <property role="R4oN_" value="struct initializer (positional)" />
-    <property role="34LRSv" value="{sp" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="1TJgyj" id="4qSf1u1VWPQ" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="elements" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="3$tYuge5dph" role="PzmwI">
-      <ref role="PrY4T" to="c4fa:3$tYuge5dpc" resolve="IStructuredInitExpression" />
-    </node>
-    <node concept="PrWs8" id="EzoNb5PqkV" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="PrWs8" id="2qm4hK379wi" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="5nhrDHCgX5n">
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="UnsignedBitType" />
@@ -331,44 +309,6 @@
       <ref role="20lvS9" node="7TdHRrCvnnh" resolve="SUContent" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6a5SBPfZTJr">
-    <property role="3GE5qa" value="su" />
-    <property role="TrG5h" value="MemberRef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6a5SBPfZTJs" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:4ZVDCZCbbK_" resolve="IMemberReference" />
-    </node>
-    <node concept="1TJgyj" id="6a5SBPfZU7l" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="member" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="56ytRgsLg$o" resolve="Member" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="686eOfoK4$u">
-    <property role="3GE5qa" value="su" />
-    <property role="TrG5h" value="SUDotExpression" />
-    <property role="R4oN_" value="member access" />
-    <ref role="1TJDcQ" to="mj1l:1gDNXlE1Mu$" resolve="AbstractDotExpression" />
-    <node concept="PrWs8" id="4OjSOsh0CHV" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-    <node concept="PrWs8" id="4OjSOsh0CIj" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="686eOfoKeST">
-    <property role="3GE5qa" value="su" />
-    <property role="TrG5h" value="SUArrowExpression" />
-    <property role="R4oN_" value="member access (pointer)" />
-    <ref role="1TJDcQ" to="mj1l:1gDNXlE1Mu$" resolve="AbstractDotExpression" />
-    <node concept="PrWs8" id="4OjSOsh2hqO" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-    <node concept="PrWs8" id="4OjSOsh2hrc" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="3bHYGwzt_Ut">
     <property role="3GE5qa" value="su" />
     <property role="TrG5h" value="SUType" />
@@ -382,40 +322,6 @@
     </node>
     <node concept="PrWs8" id="j_pDIZyT78" role="PzmwI">
       <ref role="PrY4T" node="IPRL99KNBJ" resolve="IValueStructure" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2EBw14y1HVa">
-    <property role="3GE5qa" value="su.union" />
-    <property role="TrG5h" value="UnionInitExpression" />
-    <property role="R4oN_" value="union initializer" />
-    <property role="34LRSv" value="{u" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="1TJgyj" id="2EBw14y1HVf" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="value" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="2EBw14y1HVe" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="member" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="56ytRgsLg$o" resolve="Member" />
-    </node>
-    <node concept="PrWs8" id="7oI7FI6oqTk" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:7oI7FI6oqPw" resolve="IInitializationContext" />
-    </node>
-    <node concept="PrWs8" id="34d3$NxRihJ" role="PzmwI">
-      <ref role="PrY4T" to="c4fa:3$tYuge5dpc" resolve="IStructuredInitExpression" />
-    </node>
-    <node concept="PrWs8" id="34d3$NxRihL" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:4usdeMNUjj3" resolve="IRequiresTypeToBeInferred" />
-    </node>
-    <node concept="PrWs8" id="7r9x9BnaWGF" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="PrWs8" id="2qm4hK39DHK" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="Ug1QzfgTyE">

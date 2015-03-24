@@ -344,7 +344,7 @@
     <node concept="3UNGvq" id="6GXPbpLjCzk" role="3UOs0v">
       <ref role="3UNGvu" to="clqz:16ykm_MbwuV" resolve="AbstractTransition" />
       <node concept="tYCnQ" id="6GXPbpLjCzl" role="_1QTJ">
-        <ref role="uz4UX" to="clqz:6W5EUuUDTTt" resolve="StatemachineExtVarRef" />
+        <ref role="uz4UX" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
         <node concept="Cmt7Y" id="6GXPbpLjCzm" role="uz6Si">
           <node concept="Cnhdc" id="6GXPbpLjCzn" role="Cncma">
             <node concept="3clFbS" id="6GXPbpLjCzo" role="2VODD2">

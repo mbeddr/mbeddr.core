@@ -310,19 +310,6 @@
     <property role="34LRSv" value="refines" />
     <ref role="1TJDcQ" node="7_tU7IQtN5z" resolve="RequirementsLink" />
   </node>
-  <node concept="1TIwiD" id="opE5jFghww">
-    <property role="TrG5h" value="ModuleRef" />
-    <ref role="1TJDcQ" node="7Vd878lwJm8" resolve="RequirementModuleImport" />
-    <node concept="1TJgyj" id="opE5jFghwx" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="module" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7_tU7IQsFfx" resolve="RequirementsModule" />
-    </node>
-    <node concept="PrWs8" id="7aNtjNlqqwb" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="opE5jFgmlt">
     <property role="TrG5h" value="RequirementRef" />
     <ref role="1TJDcQ" to="26ao:opE5jFg8MN" resolve="TraceTargetRef" />

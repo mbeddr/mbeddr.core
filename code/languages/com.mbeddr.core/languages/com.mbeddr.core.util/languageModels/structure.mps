@@ -799,21 +799,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="37VCVodLatv" resolve="RingBufferDeclaration" />
     </node>
-    <node concept="PrWs8" id="5GTca1RFJyF" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:5GTca1RFJyB" resolve="ICanBeUsedInDot" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5GTca1RFJyA">
-    <property role="3GE5qa" value="ringbuffer" />
-    <property role="TrG5h" value="RingBufferDotOrArrowExpression" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="mj1l:1gDNXlE1Mu$" resolve="AbstractDotExpression" />
-    <node concept="PrWs8" id="5HxjapwgqPd" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="PrWs8" id="2z_95LdZzAP" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3agk82fuutJ">
     <property role="3GE5qa" value="ringbuffer" />
@@ -889,16 +874,6 @@
     <node concept="PrWs8" id="3o2OLGv70vj" role="PzmwI">
       <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="6YDrr9Lxg44">
-    <property role="3GE5qa" value="ringbuffer" />
-    <property role="TrG5h" value="RingBufferDotExpression" />
-    <ref role="1TJDcQ" node="5GTca1RFJyA" resolve="RingBufferDotOrArrowExpression" />
-  </node>
-  <node concept="1TIwiD" id="6YDrr9Lxg4h">
-    <property role="3GE5qa" value="ringbuffer" />
-    <property role="TrG5h" value="RingBufferArrowExpression" />
-    <ref role="1TJDcQ" node="5GTca1RFJyA" resolve="RingBufferDotOrArrowExpression" />
   </node>
   <node concept="PlHQZ" id="6viY8n0hYkZ">
     <property role="3GE5qa" value="range" />
@@ -977,27 +952,6 @@
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4itX8XV7$5s">
-    <property role="3GE5qa" value="datalogger" />
-    <property role="TrG5h" value="DataLoggerDotExpr" />
-    <ref role="1TJDcQ" to="mj1l:1gDNXlE1Mu$" resolve="AbstractDotExpression" />
-    <node concept="PrWs8" id="4itX8XV7$70" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="PrWs8" id="7CzZuMWKiI5" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4itX8XV7$fF">
-    <property role="3GE5qa" value="datalogger" />
-    <property role="TrG5h" value="DataLoggerOp" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="4itX8XV7$fG" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:4ZVDCZCbbK_" resolve="IMemberReference" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="4itX8XV7A5P">
     <property role="3GE5qa" value="datalogger" />
     <property role="TrG5h" value="DataLoggerRef" />
@@ -1008,50 +962,8 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
     </node>
-    <node concept="PrWs8" id="4itX8XV7FvW" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:5GTca1RFJyB" resolve="ICanBeUsedInDot" />
-    </node>
     <node concept="PrWs8" id="70kXLV4KGxr" role="PzmwI">
       <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4itX8XVeBiH">
-    <property role="3GE5qa" value="datalogger" />
-    <property role="TrG5h" value="DLFinishOp" />
-    <property role="34LRSv" value="finish" />
-    <ref role="1TJDcQ" node="4itX8XV7$fF" resolve="DataLoggerOp" />
-  </node>
-  <node concept="1TIwiD" id="4itX8XVp9Df">
-    <property role="3GE5qa" value="datalogger" />
-    <property role="TrG5h" value="DLEnterTraceOp" />
-    <ref role="1TJDcQ" node="4itX8XV7$fF" resolve="DataLoggerOp" />
-    <node concept="1TJgyj" id="1jbG5O9wFIt" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="time" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="4itX8XVp9E3" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="tracepoint" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1lBH0hH6D6C" resolve="TracePoint" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4itX8XVxxwj">
-    <property role="3GE5qa" value="datalogger" />
-    <property role="TrG5h" value="DLLogOp" />
-    <ref role="1TJDcQ" node="4itX8XV7$fF" resolve="DataLoggerOp" />
-    <node concept="1TJgyj" id="4itX8XVxxz6" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="value" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="4itX8XVxxwk" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="item" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4itX8XUPebW" resolve="DataItem" />
     </node>
   </node>
   <node concept="1TIwiD" id="1M41OHtH78U">
@@ -1099,18 +1011,6 @@
     <property role="34LRSv" value="do nothing" />
     <ref role="1TJDcQ" node="1M41OHtH7dU" resolve="DLGenStrategy" />
   </node>
-  <node concept="1TIwiD" id="1M41OHusmq7">
-    <property role="3GE5qa" value="datalogger" />
-    <property role="TrG5h" value="DLLeaveTraceOp" />
-    <property role="34LRSv" value="-" />
-    <ref role="1TJDcQ" node="4itX8XV7$fF" resolve="DataLoggerOp" />
-    <node concept="1TJgyj" id="1M41OHusmq8" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="tracepoint" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1lBH0hH6D6C" resolve="TracePoint" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="gaSsNU8JZj">
     <property role="TrG5h" value="StackDeclaration" />
     <property role="3GE5qa" value="stack" />
@@ -1135,15 +1035,6 @@
       <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
   </node>
-  <node concept="1TIwiD" id="gaSsNU972a">
-    <property role="3GE5qa" value="stack" />
-    <property role="TrG5h" value="StackDotOrArrowExpression" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="mj1l:1gDNXlE1Mu$" resolve="AbstractDotExpression" />
-    <node concept="PrWs8" id="gaSsNU972b" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="gaSsNU97gv">
     <property role="3GE5qa" value="stack" />
     <property role="TrG5h" value="StackMember" />
@@ -1152,11 +1043,6 @@
     <node concept="PrWs8" id="2z_95LebRa7" role="PzmwI">
       <ref role="PrY4T" to="mj1l:40tXLnqhXcx" resolve="IGenericDotTarget" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="gaSsNU9bdy">
-    <property role="3GE5qa" value="stack" />
-    <property role="TrG5h" value="StackDotExpression" />
-    <ref role="1TJDcQ" node="gaSsNU972a" resolve="StackDotOrArrowExpression" />
   </node>
   <node concept="1TIwiD" id="gaSsNU9bx9">
     <property role="TrG5h" value="StackType" />
@@ -1168,14 +1054,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="gaSsNU8JZj" resolve="StackDeclaration" />
     </node>
-    <node concept="PrWs8" id="gaSsNU9bxb" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:5GTca1RFJyB" resolve="ICanBeUsedInDot" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="gaSsNU9j7h">
-    <property role="3GE5qa" value="stack" />
-    <property role="TrG5h" value="StackArrowExpression" />
-    <ref role="1TJDcQ" node="gaSsNU972a" resolve="StackDotOrArrowExpression" />
   </node>
   <node concept="1TIwiD" id="gaSsNU9lNu">
     <property role="3GE5qa" value="stack" />
