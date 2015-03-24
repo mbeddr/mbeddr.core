@@ -103,7 +103,6 @@
       </concept>
       <concept id="1147467790433" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyGetter" flags="in" index="Eqf_E" />
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
-      <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="1213098023997" name="property" index="1MhHOB" />
@@ -657,36 +656,6 @@
               <node concept="EsrRn" id="6a5SBPfZlY6" role="2Oq$k0" />
               <node concept="2qgKlT" id="6a5SBPfZlY7" role="2OqNvi">
                 <ref role="37wK5l" to="hwgx:4JF77iuPRBw" resolve="shortDescriptionForCCMenu" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="2EBw14y1HVz">
-    <property role="3GE5qa" value="su.union" />
-    <ref role="1M2myG" to="clbe:2EBw14y1HVa" resolve="UnionInitExpression" />
-    <node concept="1N5Pfh" id="2EBw14y1Ns0" role="1Mr941">
-      <ref role="1N5Vy1" to="clbe:2EBw14y1HVe" />
-      <node concept="1MUpDS" id="2EBw14y1Ns2" role="1N6uqs">
-        <node concept="3clFbS" id="2EBw14y1Ns3" role="2VODD2">
-          <node concept="3clFbF" id="1blaTcuErcw" role="3cqZAp">
-            <node concept="2OqwBi" id="1blaTcuEre4" role="3clFbG">
-              <node concept="2OqwBi" id="1blaTcuErdB" role="2Oq$k0">
-                <node concept="1PxgMI" id="1blaTcuErdh" role="2Oq$k0">
-                  <ref role="1PxNhF" to="clbe:56ytRgsLog5" resolve="UnionType" />
-                  <node concept="2OqwBi" id="1blaTcuErcQ" role="1PxMeX">
-                    <node concept="3kakTB" id="1blaTcuErcx" role="2Oq$k0" />
-                    <node concept="3JvlWi" id="1blaTcuErcV" role="2OqNvi" />
-                  </node>
-                </node>
-                <node concept="3TrEf2" id="1blaTcuErdI" role="2OqNvi">
-                  <ref role="3Tt5mk" to="clbe:56ytRgsLog7" />
-                </node>
-              </node>
-              <node concept="2qgKlT" id="7TdHRrCqFci" role="2OqNvi">
-                <ref role="37wK5l" to="2rho:7TdHRrCpjWZ" resolve="members" />
               </node>
             </node>
           </node>

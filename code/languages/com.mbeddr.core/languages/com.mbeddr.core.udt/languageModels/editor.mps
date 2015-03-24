@@ -743,46 +743,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="2EBw14y1HVg">
-    <property role="3GE5qa" value="su.union" />
-    <ref role="1XX52x" to="clbe:2EBw14y1HVa" resolve="UnionInitExpression" />
-    <node concept="3EZMnI" id="2EBw14y1HVi" role="2wV5jI">
-      <node concept="3F0ifn" id="2EBw14y1HVl" role="3EZMnx">
-        <property role="3F0ifm" value="{" />
-        <ref role="1k5W1q" to="r4b4:2$xXL4IlLmB" resolve="braceMatch" />
-        <node concept="11LMrY" id="2EBw14y1HVt" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="1iCGBv" id="2EBw14y1HVp" role="3EZMnx">
-        <ref role="1NtTu8" to="clbe:2EBw14y1HVe" />
-        <node concept="1sVBvm" id="2EBw14y1HVq" role="1sWHZn">
-          <node concept="3F0A7n" id="2EBw14y1HVs" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="2EBw14y1HVw" role="3EZMnx">
-        <property role="3F0ifm" value="=" />
-        <ref role="1k5W1q" to="r4b4:y826GHffn9" resolve="Op" />
-      </node>
-      <node concept="3F1sOY" id="2EBw14y1HVy" role="3EZMnx">
-        <ref role="1NtTu8" to="clbe:2EBw14y1HVf" />
-      </node>
-      <node concept="3F0ifn" id="2EBw14y1HVn" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
-        <ref role="1k5W1q" to="r4b4:2$xXL4IlLmB" resolve="braceMatch" />
-        <node concept="11L4FC" id="2EBw14y1HVu" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="l2Vlx" id="2EBw14y1HVk" role="2iSdaV" />
-    </node>
-    <node concept="PMmxH" id="5CDgsyZcMz9" role="6VMZX">
-      <ref role="PMmxG" to="vrqd:5CDgsyZbE9V" resolve="staticValueComponent" />
-    </node>
-  </node>
   <node concept="24kQdi" id="Ug1QzfgWkd">
     <property role="3GE5qa" value="su.struct" />
     <ref role="1XX52x" to="clbe:Ug1QzfgTyE" resolve="StructCastExpression" />

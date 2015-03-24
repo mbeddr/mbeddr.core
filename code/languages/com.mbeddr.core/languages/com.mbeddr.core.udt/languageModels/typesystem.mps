@@ -1323,42 +1323,6 @@
       <ref role="1YaFvo" to="clbe:3bHYGwzt_Ut" resolve="SUType" />
     </node>
   </node>
-  <node concept="1YbPZF" id="2EBw14y1HX2">
-    <property role="TrG5h" value="typeof_UnionInitExpression" />
-    <property role="3GE5qa" value="su.union" />
-    <node concept="3clFbS" id="2EBw14y1HX3" role="18ibNy">
-      <node concept="1ZobV4" id="2EBw14y1I0g" role="3cqZAp">
-        <node concept="mw_s8" id="2EBw14y1I0m" role="1ZfhKB">
-          <node concept="1Z2H0r" id="2EBw14y1I0n" role="mwGJk">
-            <node concept="2OqwBi" id="2EBw14y1I0I" role="1Z2MuG">
-              <node concept="1YBJjd" id="2EBw14y1I0p" role="2Oq$k0">
-                <ref role="1YBMHb" node="2EBw14y1HX4" resolve="uie" />
-              </node>
-              <node concept="3TrEf2" id="2EBw14y1I0O" role="2OqNvi">
-                <ref role="3Tt5mk" to="clbe:2EBw14y1HVe" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="2EBw14y1I0j" role="1ZfhK$">
-          <node concept="1Z2H0r" id="2EBw14y1HZt" role="mwGJk">
-            <node concept="2OqwBi" id="2EBw14y1HZP" role="1Z2MuG">
-              <node concept="1YBJjd" id="2EBw14y1HZw" role="2Oq$k0">
-                <ref role="1YBMHb" node="2EBw14y1HX4" resolve="uie" />
-              </node>
-              <node concept="3TrEf2" id="2EBw14y1I0l" role="2OqNvi">
-                <ref role="3Tt5mk" to="clbe:2EBw14y1HVf" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="2EBw14y1HX4" role="1YuTPh">
-      <property role="TrG5h" value="uie" />
-      <ref role="1YaFvo" to="clbe:2EBw14y1HVa" resolve="UnionInitExpression" />
-    </node>
-  </node>
   <node concept="1YbPZF" id="Ug1QzfgWst">
     <property role="TrG5h" value="typeof_StructCastExpression" />
     <property role="3GE5qa" value="su.struct" />

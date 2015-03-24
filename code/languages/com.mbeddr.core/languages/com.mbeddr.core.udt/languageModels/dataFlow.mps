@@ -131,22 +131,6 @@
       </node>
     </node>
   </node>
-  <node concept="3_zdsH" id="7HkFchOWHbu">
-    <property role="3GE5qa" value="su.union" />
-    <ref role="3_znuS" to="clbe:2EBw14y1HVa" resolve="UnionInitExpression" />
-    <node concept="3__wT9" id="7HkFchOWHbv" role="3_A6iZ">
-      <node concept="3clFbS" id="7HkFchOWHbw" role="2VODD2">
-        <node concept="3AgYrR" id="1LDGRqyZkQQ" role="3cqZAp">
-          <node concept="2OqwBi" id="1LDGRqyZlDs" role="3Ah4Yx">
-            <node concept="3__QtB" id="1LDGRqyZlwm" role="2Oq$k0" />
-            <node concept="3TrEf2" id="1LDGRqyZmOi" role="2OqNvi">
-              <ref role="3Tt5mk" to="clbe:2EBw14y1HVf" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="312cEu" id="5lHQMoFTxuI">
     <property role="3GE5qa" value="su.struct" />
     <property role="TrG5h" value="SUInitExpressionMemberHelper" />

@@ -1279,46 +1279,6 @@
       </node>
     </node>
   </node>
-  <node concept="WtQ9Q" id="2EBw14y1I0P">
-    <property role="3GE5qa" value="su.union" />
-    <ref role="WuzLi" to="clbe:2EBw14y1HVa" resolve="UnionInitExpression" />
-    <node concept="11bSqf" id="2EBw14y1I0Q" role="11c4hB">
-      <node concept="3clFbS" id="2EBw14y1I0R" role="2VODD2">
-        <node concept="lc7rE" id="2EBw14y1I0S" role="3cqZAp">
-          <node concept="la8eA" id="2EBw14y1I0U" role="lcghm">
-            <property role="lacIc" value="{." />
-          </node>
-          <node concept="l9hG8" id="2EBw14y1I0Y" role="lcghm">
-            <node concept="2OqwBi" id="2EBw14y1I1L" role="lb14g">
-              <node concept="2OqwBi" id="2EBw14y1I1l" role="2Oq$k0">
-                <node concept="117lpO" id="2EBw14y1I10" role="2Oq$k0" />
-                <node concept="3TrEf2" id="2EBw14y1I1r" role="2OqNvi">
-                  <ref role="3Tt5mk" to="clbe:2EBw14y1HVe" />
-                </node>
-              </node>
-              <node concept="3TrcHB" id="2EBw14y1I1R" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="2EBw14y1I1T" role="lcghm">
-            <property role="lacIc" value=" = " />
-          </node>
-          <node concept="l9hG8" id="2EBw14y1I1W" role="lcghm">
-            <node concept="2OqwBi" id="2EBw14y1I2j" role="lb14g">
-              <node concept="117lpO" id="2EBw14y1I1Y" role="2Oq$k0" />
-              <node concept="3TrEf2" id="2EBw14y1I2p" role="2OqNvi">
-                <ref role="3Tt5mk" to="clbe:2EBw14y1HVf" />
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="2EBw14y1I0W" role="lcghm">
-            <property role="lacIc" value="}" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="WtQ9Q" id="Ug1QzfhRdZ">
     <property role="3GE5qa" value="su.struct" />
     <ref role="WuzLi" to="clbe:Ug1QzfgTyE" resolve="StructCastExpression" />
