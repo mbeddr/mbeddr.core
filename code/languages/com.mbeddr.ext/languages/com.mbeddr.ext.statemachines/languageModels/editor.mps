@@ -1855,37 +1855,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="6W5EUuUDTTw">
-    <property role="3GE5qa" value="c-integration.deprecated" />
-    <ref role="1XX52x" to="clqz:6W5EUuUDTTt" resolve="StatemachineExtVarRef" />
-    <node concept="3EZMnI" id="6W5EUuUDTTy" role="2wV5jI">
-      <node concept="l2Vlx" id="6W5EUuUDTT$" role="2iSdaV" />
-      <node concept="3F1sOY" id="6W5EUuUDTTB" role="3EZMnx">
-        <ref role="1NtTu8" to="clqz:6W5EUuUDTTv" />
-      </node>
-      <node concept="3F0ifn" id="6W5EUuUDTTD" role="3EZMnx">
-        <property role="3F0ifm" value="." />
-        <node concept="11L4FC" id="2IAYTLMUhcn" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="3TE6JCmbZWh" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="1iCGBv" id="6W5EUuUDTTF" role="3EZMnx">
-        <ref role="1NtTu8" to="clqz:6W5EUuUDTTu" />
-        <node concept="1sVBvm" id="6W5EUuUDTTG" role="1sWHZn">
-          <node concept="3F0A7n" id="6W5EUuUDTTI" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="PMmxH" id="5CDgsyZcwFW" role="6VMZX">
-      <ref role="PMmxG" to="vrqd:5CDgsyZbE9V" resolve="staticValueComponent" />
-    </node>
-  </node>
   <node concept="24kQdi" id="65XyadYNfLC">
     <property role="3GE5qa" value="machine" />
     <ref role="1XX52x" to="clqz:65XyadYNfLA" resolve="CommentedStatemachineContent" />

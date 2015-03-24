@@ -492,33 +492,6 @@
     <property role="3GE5qa" value="machine.binding" />
     <property role="TrG5h" value="IInEventBinding" />
   </node>
-  <node concept="1TIwiD" id="6W5EUuUDTTt">
-    <property role="3GE5qa" value="c-integration.deprecated" />
-    <property role="TrG5h" value="StatemachineExtVarRef" />
-    <property role="R4oN_" value="--" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="1TJgyj" id="6W5EUuUDTTv" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="statemachine" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="6W5EUuUDTTu" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="var" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4SJV0WTeRxt" resolve="StatemachineVariableDeclaration" />
-    </node>
-    <node concept="PrWs8" id="20ezT9ZDJa8" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="PrWs8" id="70kXLV5yJDF" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
-    </node>
-    <node concept="PrWs8" id="5jCi3tJJilA" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="65XyadYNfLA">
     <property role="3GE5qa" value="machine" />
     <property role="TrG5h" value="CommentedStatemachineContent" />
