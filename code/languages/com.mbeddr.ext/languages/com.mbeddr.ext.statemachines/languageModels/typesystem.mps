@@ -393,37 +393,6 @@
       <ref role="1YaFvo" to="clqz:6NQSyUTqXkL" resolve="StatemachineType" />
     </node>
   </node>
-  <node concept="1YbPZF" id="6NQSyUTrdzo">
-    <property role="TrG5h" value="typeof_OutEventRef" />
-    <property role="3GE5qa" value="c-integration" />
-    <node concept="3clFbS" id="6NQSyUTrdzp" role="18ibNy">
-      <node concept="1Z5TYs" id="6NQSyUTrdzz" role="3cqZAp">
-        <node concept="mw_s8" id="6NQSyUTrdzB" role="1ZfhKB">
-          <node concept="1Z2H0r" id="6NQSyUTrdzC" role="mwGJk">
-            <node concept="2OqwBi" id="6NQSyUTrdzF" role="1Z2MuG">
-              <node concept="1YBJjd" id="6NQSyUTrdzE" role="2Oq$k0">
-                <ref role="1YBMHb" node="6NQSyUTrdzq" resolve="oer" />
-              </node>
-              <node concept="3TrEf2" id="6NQSyUTrdzJ" role="2OqNvi">
-                <ref role="3Tt5mk" to="clqz:6NQSyUTr8wN" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="6NQSyUTrdzA" role="1ZfhK$">
-          <node concept="1Z2H0r" id="6NQSyUTrdzs" role="mwGJk">
-            <node concept="1YBJjd" id="6NQSyUTrdzu" role="1Z2MuG">
-              <ref role="1YBMHb" node="6NQSyUTrdzq" resolve="oer" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="6NQSyUTrdzq" role="1YuTPh">
-      <property role="TrG5h" value="oer" />
-      <ref role="1YaFvo" to="clqz:6NQSyUTr8wK" resolve="OutEventRef" />
-    </node>
-  </node>
   <node concept="1YbPZF" id="1z9MsBsVq$5">
     <property role="TrG5h" value="typeof_EventArgRef" />
     <property role="3GE5qa" value="machine.states" />

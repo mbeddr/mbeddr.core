@@ -1226,19 +1226,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="6NQSyUTr8wO">
-    <property role="3GE5qa" value="c-integration" />
-    <ref role="1XX52x" to="clqz:6NQSyUTr8wK" resolve="OutEventRef" />
-    <node concept="1iCGBv" id="6NQSyUTr8wQ" role="2wV5jI">
-      <ref role="1NtTu8" to="clqz:6NQSyUTr8wN" />
-      <node concept="1sVBvm" id="6NQSyUTr8wR" role="1sWHZn">
-        <node concept="3F0A7n" id="6NQSyUTr8wT" role="2wV5jI">
-          <property role="1Intyy" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="1z9MsBsVhPS">
     <property role="3GE5qa" value="machine.states" />
     <ref role="1XX52x" to="clqz:1z9MsBsVhPP" resolve="EventArg" />

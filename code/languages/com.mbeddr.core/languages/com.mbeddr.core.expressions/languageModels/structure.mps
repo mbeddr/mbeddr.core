@@ -1244,10 +1244,6 @@
     <property role="TrG5h" value="ISelfTypingInBinaryExpression" />
     <property role="3GE5qa" value="ClassesSupport" />
   </node>
-  <node concept="PlHQZ" id="5GTca1RFJyB">
-    <property role="3GE5qa" value="memberaccess" />
-    <property role="TrG5h" value="ICanBeUsedInDot" />
-  </node>
   <node concept="PlHQZ" id="iknc85$OO0">
     <property role="TrG5h" value="IAssignmentLike" />
   </node>
