@@ -368,9 +368,6 @@
       <node concept="3uibUv" id="576QrOJujd0" role="11_B2D">
         <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
       </node>
-      <node concept="3uibUv" id="576QrOJujd1" role="11_B2D">
-        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
-      </node>
     </node>
     <node concept="2tJIrI" id="576QrOJujd7" role="jymVt" />
     <node concept="3clFbW" id="576QrOJujd8" role="jymVt">

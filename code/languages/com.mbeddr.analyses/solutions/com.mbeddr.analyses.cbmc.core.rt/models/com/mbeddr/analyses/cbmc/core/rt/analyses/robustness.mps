@@ -207,9 +207,6 @@
       <node concept="3uibUv" id="3x0R1LJ5HeE" role="11_B2D">
         <ref role="3uigEE" node="3x0R1LJ5Hlx" resolve="RobustnessResult" />
       </node>
-      <node concept="3uibUv" id="3x0R1LJ5HeF" role="11_B2D">
-        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
-      </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LJ5HeG" role="jymVt" />
     <node concept="3clFbW" id="3x0R1LJ5HeH" role="jymVt">

@@ -27,6 +27,7 @@
     <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="q46j" ref="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" />
+    <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -224,6 +225,7 @@
         <reference id="1216386999476" name="quickFixArgument" index="QkamJ" />
         <child id="1210784642750" name="value" index="3CoRuB" />
       </concept>
+      <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -2100,6 +2102,89 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="72mSD5R_VLD">
+    <property role="TrG5h" value="check_ValidEnumerationValue" />
+    <property role="3GE5qa" value="expressions" />
+    <node concept="3clFbS" id="72mSD5R_VLE" role="18ibNy">
+      <node concept="3cpWs8" id="72mSD5R_Y2o" role="3cqZAp">
+        <node concept="3cpWsn" id="72mSD5R_Y2p" role="3cpWs9">
+          <property role="TrG5h" value="tpe" />
+          <node concept="3Tqbb2" id="72mSD5R_Y2n" role="1tU5fm" />
+          <node concept="2OqwBi" id="72mSD5R_Y2q" role="33vP2m">
+            <node concept="2OqwBi" id="72mSD5R_Y2r" role="2Oq$k0">
+              <node concept="1YBJjd" id="72mSD5R_Y2s" role="2Oq$k0">
+                <ref role="1YBMHb" node="72mSD5R_VLG" resolve="vev" />
+              </node>
+              <node concept="3TrEf2" id="72mSD5R_Y2t" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+              </node>
+            </node>
+            <node concept="3JvlWi" id="72mSD5R_Y2u" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="72mSD5R_Wdc" role="3cqZAp">
+        <node concept="3clFbS" id="72mSD5R_Wdd" role="3clFbx">
+          <node concept="2MkqsV" id="72mSD5R_Ymf" role="3cqZAp">
+            <node concept="1YBJjd" id="72mSD5R_YoG" role="2OEOjV">
+              <ref role="1YBMHb" node="72mSD5R_VLG" resolve="vev" />
+            </node>
+            <node concept="Xl_RD" id="72mSD5R_Ymx" role="2MkJ7o">
+              <property role="Xl_RC" value="Expected an expression with an EnumType" />
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="72mSD5R_Y5n" role="3clFbw">
+          <node concept="2OqwBi" id="72mSD5R_Y6L" role="3fr31v">
+            <node concept="37vLTw" id="72mSD5R_Y5F" role="2Oq$k0">
+              <ref role="3cqZAo" node="72mSD5R_Y2p" resolve="tpe" />
+            </node>
+            <node concept="1mIQ4w" id="72mSD5R_Ykb" role="2OqNvi">
+              <node concept="chp4Y" id="72mSD5R_YkS" role="cj9EA">
+                <ref role="cht4Q" to="clbe:7D99css6O15" resolve="EnumType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="72mSD5R_Zqo" role="3cqZAp">
+        <node concept="3clFbS" id="72mSD5R_Zqp" role="3clFbx">
+          <node concept="2MkqsV" id="72mSD5R_Zqq" role="3cqZAp">
+            <node concept="2OqwBi" id="72mSD5RA1a9" role="2OEOjV">
+              <node concept="1YBJjd" id="72mSD5R_Zqr" role="2Oq$k0">
+                <ref role="1YBMHb" node="72mSD5R_VLG" resolve="vev" />
+              </node>
+              <node concept="3TrEf2" id="72mSD5RA1Wx" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="72mSD5R_Zqs" role="2MkJ7o">
+              <property role="Xl_RC" value="Expression should be side-effects free" />
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="72mSD5R_Zqt" role="3clFbw">
+          <node concept="2OqwBi" id="72mSD5R_Zqu" role="3fr31v">
+            <node concept="2OqwBi" id="72mSD5R_ZzK" role="2Oq$k0">
+              <node concept="1YBJjd" id="72mSD5R_ZtR" role="2Oq$k0">
+                <ref role="1YBMHb" node="72mSD5R_VLG" resolve="vev" />
+              </node>
+              <node concept="3TrEf2" id="72mSD5RA0k1" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="72mSD5RA0XL" role="2OqNvi">
+              <ref role="37wK5l" to="ywuz:6SENleF$SRD" resolve="isSideeffectFree" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="72mSD5R_VLG" role="1YuTPh">
+      <property role="TrG5h" value="vev" />
+      <ref role="1YaFvo" to="q5q6:72mSD5R_OCr" resolve="ValidEnumerationValue" />
     </node>
   </node>
 </model>

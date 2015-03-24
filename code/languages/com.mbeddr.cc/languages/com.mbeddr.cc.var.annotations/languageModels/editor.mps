@@ -1591,62 +1591,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="5JmNU9PAaLm">
-    <property role="3GE5qa" value="trafo" />
-    <ref role="1XX52x" to="qdv7:5JmNU9PAaLk" resolve="VariabilityTransformationConfig" />
-    <node concept="3EZMnI" id="5JmNU9PAaLn" role="2wV5jI">
-      <node concept="2iRfu4" id="4ha9sSdiY50" role="2iSdaV" />
-      <node concept="3F0ifn" id="5JmNU9PAaLw" role="3EZMnx">
-        <property role="3F0ifm" value="variability mappings" />
-      </node>
-      <node concept="gc7cB" id="2hmLFgaUNOr" role="3EZMnx">
-        <node concept="3VJUX4" id="2hmLFgaUNOt" role="3YsKMw">
-          <node concept="3clFbS" id="2hmLFgaUNOv" role="2VODD2">
-            <node concept="3clFbF" id="2hmLFgaUNPo" role="3cqZAp">
-              <node concept="2ShNRf" id="2hmLFgaUNPm" role="3clFbG">
-                <node concept="1pGfFk" id="2hmLFgaUO1M" role="2ShVmc">
-                  <ref role="37wK5l" to="r4b4:6Ce4x7KQbw2" resolve="ColoredVerticalBarCell" />
-                  <node concept="pncrf" id="2hmLFgaUO3p" role="37wK5m" />
-                  <node concept="10M0yZ" id="2hmLFgaUPt4" role="37wK5m">
-                    <ref role="3cqZAo" to="1t7x:~Color.gray" resolve="gray" />
-                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                  </node>
-                  <node concept="3cmrfG" id="2hmLFgaUOaz" role="37wK5m">
-                    <property role="3cmrfH" value="0" />
-                  </node>
-                  <node concept="3cmrfG" id="2hmLFgb0VkU" role="37wK5m">
-                    <property role="3cmrfH" value="2" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3EZMnI" id="4ha9sSdjDdu" role="3EZMnx">
-        <node concept="VPM3Z" id="4ha9sSdjDdw" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="3F2HdR" id="5JmNU9PAaLx" role="3EZMnx">
-          <ref role="1NtTu8" to="qdv7:5JmNU9PAaLl" />
-          <node concept="2iRkQZ" id="5JmNU9PAaLy" role="2czzBx" />
-          <node concept="pVoyu" id="IrwlmWz48U" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="lj46D" id="IrwlmWz48W" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="3F0ifn" id="KfIhkXduBN" role="2czzBI">
-            <property role="3F0ifm" value="" />
-            <node concept="VPxyj" id="KfIhkXduJT" role="3F10Kt">
-              <property role="VOm3f" value="true" />
-            </node>
-          </node>
-        </node>
-        <node concept="2iRfu4" id="4ha9sSdjDdz" role="2iSdaV" />
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="5JmNU9PAaLz">
     <property role="3GE5qa" value="trafo" />
     <ref role="1XX52x" to="qdv7:5JmNU9PAaLg" resolve="ConfigurationMapping" />

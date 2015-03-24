@@ -38,11 +38,6 @@
       <concept id="1237305334312" name="jetbrains.mps.lang.textGen.structure.NodeAppendPart" flags="ng" index="l9hG8">
         <child id="1237305790512" name="value" index="lb14g" />
       </concept>
-      <concept id="1237305491868" name="jetbrains.mps.lang.textGen.structure.CollectionAppendPart" flags="ng" index="l9S2W">
-        <property id="1237306003719" name="separator" index="lbP0B" />
-        <property id="1237983969951" name="withSeparator" index="XA4eZ" />
-        <child id="1237305945551" name="list" index="lbANJ" />
-      </concept>
       <concept id="1237305557638" name="jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart" flags="ng" index="la8eA">
         <property id="1237305576108" name="value" index="lacIc" />
       </concept>
@@ -62,9 +57,6 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
-      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
-        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -361,32 +353,6 @@
                 <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="WtQ9Q" id="6o2p2Z0C9vA">
-    <property role="3GE5qa" value="arrays" />
-    <ref role="WuzLi" to="yq40:6o2p2Z0C9os" resolve="ArrayInitExpression" />
-    <node concept="11bSqf" id="6o2p2Z0C9vB" role="11c4hB">
-      <node concept="3clFbS" id="6o2p2Z0C9vC" role="2VODD2">
-        <node concept="lc7rE" id="6o2p2Z0C9vD" role="3cqZAp">
-          <node concept="la8eA" id="6o2p2Z0C9vE" role="lcghm">
-            <property role="lacIc" value="{" />
-          </node>
-          <node concept="l9S2W" id="6o2p2Z0C9vF" role="lcghm">
-            <property role="XA4eZ" value="true" />
-            <property role="lbP0B" value="," />
-            <node concept="2OqwBi" id="6o2p2Z0C9vG" role="lbANJ">
-              <node concept="117lpO" id="6o2p2Z0C9vH" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="6o2p2Z0C9vI" role="2OqNvi">
-                <ref role="3TtcxE" to="yq40:6o2p2Z0C9oy" />
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="6o2p2Z0C9vJ" role="lcghm">
-            <property role="lacIc" value="}" />
           </node>
         </node>
       </node>

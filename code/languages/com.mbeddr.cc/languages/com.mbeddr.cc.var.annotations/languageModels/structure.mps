@@ -153,22 +153,6 @@
       <ref role="20lvS9" to="qqyh:5USXI9Kzba8" resolve="ConfigurationModel" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5JmNU9PAaLk">
-    <property role="TrG5h" value="VariabilityTransformationConfig" />
-    <property role="3GE5qa" value="trafo" />
-    <node concept="1TJgyj" id="5JmNU9PAaLl" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="mappings" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5JmNU9PAaLg" resolve="ConfigurationMapping" />
-    </node>
-    <node concept="PrWs8" id="5JmNU9PAeUg" role="PzmwI">
-      <ref role="PrY4T" to="qqyh:5USXI9KzkZI" resolve="IMapping" />
-    </node>
-    <node concept="PrWs8" id="2cCHKvAz7zb" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="1Jq6Hv0f2B">
     <property role="3GE5qa" value="programannotations" />
     <property role="TrG5h" value="FeatureAttributeRef" />
