@@ -6481,34 +6481,6 @@
       <node concept="3clFbS" id="3FSHg1aCVUB" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="2JIP8cA02mL">
-    <property role="3GE5qa" value="c-integration" />
-    <ref role="13h7C2" to="clqz:6NQSyUTr8wK" resolve="OutEventRef" />
-    <node concept="13i0hz" id="2JIP8cA02mO" role="13h7CS">
-      <property role="TrG5h" value="renderReadable" />
-      <ref role="13i0hy" to="ywuz:2JIP8cA02hd" resolve="renderReadable" />
-      <node concept="3clFbS" id="2JIP8cA02mR" role="3clF47">
-        <node concept="3clFbF" id="2JIP8cA02mU" role="3cqZAp">
-          <node concept="2OqwBi" id="2JIP8cA02nG" role="3clFbG">
-            <node concept="2OqwBi" id="2JIP8cA02ng" role="2Oq$k0">
-              <node concept="13iPFW" id="2JIP8cA02mV" role="2Oq$k0" />
-              <node concept="3TrEf2" id="2JIP8cA02nm" role="2OqNvi">
-                <ref role="3Tt5mk" to="clqz:6NQSyUTr8wN" />
-              </node>
-            </node>
-            <node concept="3TrcHB" id="2JIP8cA02nM" role="2OqNvi">
-              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="2JIP8cA02mS" role="3clF45" />
-      <node concept="3Tm1VV" id="2JIP8cA02mT" role="1B3o_S" />
-    </node>
-    <node concept="13hLZK" id="2JIP8cA02mM" role="13h7CW">
-      <node concept="3clFbS" id="2JIP8cA02mN" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="4CnBdUFzcHs">
     <property role="3GE5qa" value="machine" />
     <ref role="13h7C2" to="clqz:4CnBdUFzcHr" resolve="ITriggerContext" />

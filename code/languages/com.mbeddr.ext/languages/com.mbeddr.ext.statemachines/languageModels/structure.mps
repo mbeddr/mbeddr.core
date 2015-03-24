@@ -234,21 +234,6 @@
       <ref role="PrY4T" to="2gv2:7oVAz7YD2vL" resolve="IChildrenResolver" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6NQSyUTr8wK">
-    <property role="3GE5qa" value="c-integration" />
-    <property role="TrG5h" value="OutEventRef" />
-    <property role="R4oN_" value="--" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6NQSyUTr8wN" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="outEvent" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1z9MsBsVaJj" resolve="Event" />
-    </node>
-    <node concept="PrWs8" id="6NQSyUTr8wM" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:4ZVDCZCbbK_" resolve="IMemberReference" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="1z9MsBsVaJj">
     <property role="3GE5qa" value="machine" />
     <property role="TrG5h" value="Event" />

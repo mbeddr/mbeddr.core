@@ -870,53 +870,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="3iFvLdApKrF">
-    <property role="3GE5qa" value="c-integration" />
-    <ref role="1M2myG" to="clqz:6NQSyUTr8wK" resolve="OutEventRef" />
-    <node concept="1N5Pfh" id="3iFvLdApKrI" role="1Mr941">
-      <ref role="1N5Vy1" to="clqz:6NQSyUTr8wN" />
-      <node concept="1MUpDS" id="3iFvLdApKrK" role="1N6uqs">
-        <node concept="3clFbS" id="3iFvLdApKrL" role="2VODD2">
-          <node concept="3clFbF" id="3iFvLdApKrM" role="3cqZAp">
-            <node concept="2OqwBi" id="3iFvLdApKsC" role="3clFbG">
-              <node concept="2OqwBi" id="3iFvLdApKs8" role="2Oq$k0">
-                <node concept="21POm0" id="3iFvLdApKrN" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="3iFvLdApKse" role="2OqNvi">
-                  <node concept="1xMEDy" id="3iFvLdApKsf" role="1xVPHs">
-                    <node concept="chp4Y" id="3iFvLdApKsj" role="ri$Ld">
-                      <ref role="cht4Q" to="clqz:50Lk78xBr9L" resolve="Statemachine" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2qgKlT" id="3iFvLdApS9m" role="2OqNvi">
-                <ref role="37wK5l" to="ktif:6MWlM4926uO" resolve="outEvents" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="nKS2y" id="3iFvLdApS9n" role="1MLUbF">
-      <node concept="3clFbS" id="3iFvLdApS9o" role="2VODD2">
-        <node concept="3clFbF" id="3iFvLdApS9p" role="3cqZAp">
-          <node concept="2OqwBi" id="3iFvLdApSae" role="3clFbG">
-            <node concept="2OqwBi" id="3iFvLdApS9J" role="2Oq$k0">
-              <node concept="nLn13" id="3iFvLdApS9q" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="3iFvLdApS9P" role="2OqNvi">
-                <node concept="1xMEDy" id="3iFvLdApS9Q" role="1xVPHs">
-                  <node concept="chp4Y" id="3iFvLdApS9T" role="ri$Ld">
-                    <ref role="cht4Q" to="clqz:50Lk78xBr9L" resolve="Statemachine" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3x8VRR" id="3iFvLdApSak" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="3FSHg1aBvMe">
     <property role="3GE5qa" value="machine.states" />
     <ref role="1M2myG" to="clqz:3FSHg1aADay" resolve="AbstractState" />
