@@ -7006,5 +7006,33 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="72mSD5RNG5d">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="1XX52x" to="q5q6:72mSD5R_OCr" resolve="ValidEnumerationValue" />
+    <node concept="3EZMnI" id="72mSD5RNGNu" role="2wV5jI">
+      <node concept="3F0ifn" id="72mSD5RNGNL" role="3EZMnx">
+        <property role="3F0ifm" value="valid_enum(" />
+        <node concept="11LMrY" id="72mSD5RWa2p" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="72mSD5RNGOa" role="3EZMnx">
+        <ref role="1NtTu8" to="mj1l:6iIoqg1yDLg" />
+        <node concept="11L4FC" id="72mSD5RT6sn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="72mSD5RT6ua" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="72mSD5RNGOy" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="72mSD5RWa46" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="72mSD5RNGNx" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
