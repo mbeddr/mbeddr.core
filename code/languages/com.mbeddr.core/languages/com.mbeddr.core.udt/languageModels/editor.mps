@@ -985,48 +985,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="6a5SBPg0wL$">
-    <property role="3GE5qa" value="su" />
-    <ref role="1XX52x" to="clbe:6a5SBPfZTJr" resolve="MemberRef" />
-    <node concept="1iCGBv" id="6a5SBPg0wLA" role="2wV5jI">
-      <ref role="1NtTu8" to="clbe:6a5SBPfZU7l" />
-      <node concept="1sVBvm" id="6a5SBPg0wLB" role="1sWHZn">
-        <node concept="3F0A7n" id="6a5SBPg0wLC" role="2wV5jI">
-          <property role="1Intyy" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="686eOfoKeSW">
-    <property role="3GE5qa" value="su" />
-    <ref role="1XX52x" to="clbe:686eOfoKeST" resolve="SUArrowExpression" />
-    <node concept="3EZMnI" id="686eOfoKeSY" role="2wV5jI">
-      <node concept="3F1sOY" id="686eOfoKeSZ" role="3EZMnx">
-        <ref role="1NtTu8" to="mj1l:6iIoqg1yDLg" />
-      </node>
-      <node concept="3F0ifn" id="686eOfoKeT0" role="3EZMnx">
-        <property role="3F0ifm" value="-&gt;" />
-        <ref role="1ERwB7" to="vrqd:4qSf1u1Y$RA" resolve="deleteDotOrArrow" />
-        <ref role="1k5W1q" to="r4b4:y826GHffn9" resolve="Op" />
-        <node concept="11L4FC" id="686eOfoKeT1" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="686eOfoKeT2" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="l2Vlx" id="686eOfoKeT3" role="2iSdaV" />
-      <node concept="3F1sOY" id="686eOfoKeT4" role="3EZMnx">
-        <property role="1cu_pB" value="3" />
-        <ref role="1NtTu8" to="mj1l:1gDNXlE1QKV" />
-        <ref role="1ERwB7" to="vrqd:4qSf1u1Y$RA" resolve="deleteDotOrArrow" />
-      </node>
-    </node>
-    <node concept="PMmxH" id="5CDgsyZcFT8" role="6VMZX">
-      <ref role="PMmxG" to="vrqd:5CDgsyZbE9V" resolve="staticValueComponent" />
-    </node>
-  </node>
   <node concept="24kQdi" id="686eOfoK4$y">
     <property role="3GE5qa" value="su" />
     <ref role="1XX52x" to="clbe:686eOfoK4$u" resolve="SUDotExpression" />
