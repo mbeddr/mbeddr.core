@@ -116,6 +116,9 @@
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
         <child id="7763322639126652758" name="baseType" index="2umbIo" />
       </concept>
+      <concept id="8850915533694634145" name="com.mbeddr.core.statements.structure.InitExpression" flags="ng" index="3o3WLD">
+        <child id="8850915533694634146" name="elements" index="3o3WLE" />
+      </concept>
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
       </concept>
@@ -131,9 +134,6 @@
       </concept>
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
-      <concept id="7350547698080060956" name="com.mbeddr.core.pointers.structure.ArrayInitExpression" flags="ng" index="2ACJ8N">
-        <child id="7350547698080060962" name="exprs" index="2ACJ8d" />
-      </concept>
       <concept id="5308710777891643206" name="com.mbeddr.core.pointers.structure.NullExpression" flags="ng" index="Ea8Gl" />
       <concept id="1595838349830846141" name="com.mbeddr.core.pointers.structure.ReferenceExpr" flags="ng" index="YInwV" />
       <concept id="279446265608459824" name="com.mbeddr.core.pointers.structure.PointerType" flags="ng" index="3wxxNl" />
@@ -859,8 +859,8 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="2ACJ8N" id="7qvNMV9dm2h" role="3XIe9u">
-                      <node concept="YInwV" id="7qvNMV9dm2i" role="2ACJ8d">
+                    <node concept="3o3WLD" id="1erouHqGIYQ" role="3XIe9u">
+                      <node concept="YInwV" id="7qvNMV9dm2i" role="3o3WLE">
                         <node concept="1WS0z7" id="7qvNMV9dm2j" role="lGtFl">
                           <node concept="3JmXsc" id="7qvNMV9dm2k" role="3Jn$fo">
                             <node concept="3clFbS" id="7qvNMV9dm2l" role="2VODD2">
@@ -1389,8 +1389,8 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="2ACJ8N" id="1oIA7EcBHcW" role="3XIe9u">
-                      <node concept="YInwV" id="1oIA7EcBHcX" role="2ACJ8d">
+                    <node concept="3o3WLD" id="1erouHqGIYx" role="3XIe9u">
+                      <node concept="YInwV" id="1oIA7EcBHcX" role="3o3WLE">
                         <node concept="1WS0z7" id="1oIA7EcBHcY" role="lGtFl">
                           <node concept="3JmXsc" id="1oIA7EcBHcZ" role="3Jn$fo">
                             <node concept="3clFbS" id="1oIA7EcBHd0" role="2VODD2">
@@ -1863,8 +1863,8 @@
                   </node>
                   <node concept="3XIRlf" id="1nOZGI8C$EL" role="3XIRFZ">
                     <property role="TrG5h" value="___args" />
-                    <node concept="2ACJ8N" id="1nOZGI8C$EM" role="3XIe9u">
-                      <node concept="YInwV" id="1nOZGI8C$EN" role="2ACJ8d">
+                    <node concept="3o3WLD" id="1erouHqGECp" role="3XIe9u">
+                      <node concept="YInwV" id="1nOZGI8C$EN" role="3o3WLE">
                         <node concept="1WS0z7" id="1nOZGI8C$EO" role="lGtFl">
                           <node concept="3JmXsc" id="1nOZGI8C$EP" role="3Jn$fo">
                             <node concept="3clFbS" id="1nOZGI8C$EQ" role="2VODD2">
