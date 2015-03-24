@@ -799,21 +799,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="37VCVodLatv" resolve="RingBufferDeclaration" />
     </node>
-    <node concept="PrWs8" id="5GTca1RFJyF" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:5GTca1RFJyB" resolve="ICanBeUsedInDot" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5GTca1RFJyA">
-    <property role="3GE5qa" value="ringbuffer" />
-    <property role="TrG5h" value="RingBufferDotOrArrowExpression" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="mj1l:1gDNXlE1Mu$" resolve="AbstractDotExpression" />
-    <node concept="PrWs8" id="5HxjapwgqPd" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="PrWs8" id="2z_95LdZzAP" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3agk82fuutJ">
     <property role="3GE5qa" value="ringbuffer" />
@@ -889,16 +874,6 @@
     <node concept="PrWs8" id="3o2OLGv70vj" role="PzmwI">
       <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="6YDrr9Lxg44">
-    <property role="3GE5qa" value="ringbuffer" />
-    <property role="TrG5h" value="RingBufferDotExpression" />
-    <ref role="1TJDcQ" node="5GTca1RFJyA" resolve="RingBufferDotOrArrowExpression" />
-  </node>
-  <node concept="1TIwiD" id="6YDrr9Lxg4h">
-    <property role="3GE5qa" value="ringbuffer" />
-    <property role="TrG5h" value="RingBufferArrowExpression" />
-    <ref role="1TJDcQ" node="5GTca1RFJyA" resolve="RingBufferDotOrArrowExpression" />
   </node>
   <node concept="PlHQZ" id="6viY8n0hYkZ">
     <property role="3GE5qa" value="range" />
