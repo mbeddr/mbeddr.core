@@ -160,7 +160,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -6800,6 +6800,26 @@
   </node>
   <node concept="B7EJo" id="FOUz5rTQYr">
     <property role="B7ECZ" value="true" />
+  </node>
+  <node concept="13h7C7" id="5tbhN$4LrWB">
+    <ref role="13h7C2" to="k146:5tbhN$4LlsX" resolve="C90CompatibleCode" />
+    <node concept="13hLZK" id="5tbhN$4LrWC" role="13h7CW">
+      <node concept="3clFbS" id="5tbhN$4LrWD" role="2VODD2">
+        <node concept="3clFbF" id="5tbhN$4LFLr" role="3cqZAp">
+          <node concept="37vLTI" id="5tbhN$4LIr3" role="3clFbG">
+            <node concept="3clFbT" id="5tbhN$4LIrH" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="5tbhN$4LHfm" role="37vLTJ">
+              <node concept="13iPFW" id="5tbhN$4LFLq" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5tbhN$4LI4a" role="2OqNvi">
+                <ref role="3TsBF5" to="k146:79_VoWRWiUx" resolve="replaceMissingWithDefaultValues" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
