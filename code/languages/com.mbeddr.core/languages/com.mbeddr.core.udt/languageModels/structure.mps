@@ -269,28 +269,6 @@
       <ref role="20lvS9" node="6a5SBPfXGBP" resolve="SUDeclaration" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4qSf1u1VWPO">
-    <property role="3GE5qa" value="su.struct" />
-    <property role="TrG5h" value="StructInitExpression" />
-    <property role="R4oN_" value="struct initializer (positional)" />
-    <property role="34LRSv" value="{sp" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="1TJgyj" id="4qSf1u1VWPQ" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="elements" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="3$tYuge5dph" role="PzmwI">
-      <ref role="PrY4T" to="c4fa:3$tYuge5dpc" resolve="IStructuredInitExpression" />
-    </node>
-    <node concept="PrWs8" id="EzoNb5PqkV" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="PrWs8" id="2qm4hK379wi" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="5nhrDHCgX5n">
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="UnsignedBitType" />
