@@ -1035,15 +1035,6 @@
       <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
   </node>
-  <node concept="1TIwiD" id="gaSsNU972a">
-    <property role="3GE5qa" value="stack" />
-    <property role="TrG5h" value="StackDotOrArrowExpression" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="mj1l:1gDNXlE1Mu$" resolve="AbstractDotExpression" />
-    <node concept="PrWs8" id="gaSsNU972b" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="gaSsNU97gv">
     <property role="3GE5qa" value="stack" />
     <property role="TrG5h" value="StackMember" />
@@ -1052,11 +1043,6 @@
     <node concept="PrWs8" id="2z_95LebRa7" role="PzmwI">
       <ref role="PrY4T" to="mj1l:40tXLnqhXcx" resolve="IGenericDotTarget" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="gaSsNU9bdy">
-    <property role="3GE5qa" value="stack" />
-    <property role="TrG5h" value="StackDotExpression" />
-    <ref role="1TJDcQ" node="gaSsNU972a" resolve="StackDotOrArrowExpression" />
   </node>
   <node concept="1TIwiD" id="gaSsNU9bx9">
     <property role="TrG5h" value="StackType" />
@@ -1068,14 +1054,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="gaSsNU8JZj" resolve="StackDeclaration" />
     </node>
-    <node concept="PrWs8" id="gaSsNU9bxb" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:5GTca1RFJyB" resolve="ICanBeUsedInDot" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="gaSsNU9j7h">
-    <property role="3GE5qa" value="stack" />
-    <property role="TrG5h" value="StackArrowExpression" />
-    <ref role="1TJDcQ" node="gaSsNU972a" resolve="StackDotOrArrowExpression" />
   </node>
   <node concept="1TIwiD" id="gaSsNU9lNu">
     <property role="3GE5qa" value="stack" />
