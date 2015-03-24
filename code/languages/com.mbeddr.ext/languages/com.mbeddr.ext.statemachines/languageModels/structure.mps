@@ -234,40 +234,6 @@
       <ref role="PrY4T" to="2gv2:7oVAz7YD2vL" resolve="IChildrenResolver" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6NQSyUTr1dr">
-    <property role="TrG5h" value="TriggerSMStatement" />
-    <property role="3GE5qa" value="c-integration.deprecated" />
-    <property role="R4oN_" value="fire an event into a state machine" />
-    <property role="34LRSv" value="smtrigger" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
-    <node concept="1TJgyj" id="6NQSyUTr1ds" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="statemachine" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="2e3lhtciuHs" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="args" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="1z9MsBsVdGJ" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="event" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1z9MsBsVaJj" resolve="Event" />
-    </node>
-    <node concept="PrWs8" id="7F$yiCcK4Nj" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
-    </node>
-    <node concept="PrWs8" id="4ZnMRYVfHPT" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="PrWs8" id="4ZnMRYV73Uu" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="6NQSyUTr8wK">
     <property role="3GE5qa" value="c-integration" />
     <property role="TrG5h" value="OutEventRef" />

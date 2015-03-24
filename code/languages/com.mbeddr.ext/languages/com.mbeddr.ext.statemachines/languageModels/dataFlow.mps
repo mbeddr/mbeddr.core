@@ -838,40 +838,5 @@
       </node>
     </node>
   </node>
-  <node concept="3_zdsH" id="5V1fuArwvDd">
-    <property role="3GE5qa" value="c-integration.deprecated" />
-    <ref role="3_znuS" to="clqz:6NQSyUTr1dr" resolve="TriggerSMStatement" />
-    <node concept="3__wT9" id="5V1fuArwvDe" role="3_A6iZ">
-      <node concept="3clFbS" id="5V1fuArwvDf" role="2VODD2">
-        <node concept="3AgYrR" id="1LDGRqz1DAk" role="3cqZAp">
-          <node concept="2OqwBi" id="1LDGRqz1Eph" role="3Ah4Yx">
-            <node concept="3__QtB" id="1LDGRqz1Epi" role="2Oq$k0" />
-            <node concept="3TrEf2" id="1LDGRqz1Epj" role="2OqNvi">
-              <ref role="3Tt5mk" to="clqz:6NQSyUTr1ds" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1LDGRqz1Eva" role="3cqZAp" />
-        <node concept="2Gpval" id="1LDGRqz1ED4" role="3cqZAp">
-          <node concept="2GrKxI" id="1LDGRqz1ED6" role="2Gsz3X">
-            <property role="TrG5h" value="a" />
-          </node>
-          <node concept="3clFbS" id="1LDGRqz1EDa" role="2LFqv$">
-            <node concept="3AgYrR" id="1LDGRqz1Gd7" role="3cqZAp">
-              <node concept="2GrUjf" id="1LDGRqz1Gdz" role="3Ah4Yx">
-                <ref role="2Gs0qQ" node="1LDGRqz1ED6" resolve="a" />
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="1LDGRqz1EQQ" role="2GsD0m">
-            <node concept="3__QtB" id="1LDGRqz1EQR" role="2Oq$k0" />
-            <node concept="3Tsc0h" id="1LDGRqz1FQf" role="2OqNvi">
-              <ref role="3TtcxE" to="clqz:2e3lhtciuHs" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
 </model>
 
