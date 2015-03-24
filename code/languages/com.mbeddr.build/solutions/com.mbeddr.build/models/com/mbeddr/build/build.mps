@@ -3495,6 +3495,12 @@
               <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
             </node>
           </node>
+          <node concept="1SiIV0" id="5qJgyBfUVZY" role="3bR37C">
+            <node concept="3bR9La" id="5qJgyBfUVZZ" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="7uZw0yZ43K6" resolve="com.mbeddr.core.modules.gen" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="6VZWrurt77O" role="3bR37C">
           <node concept="3bR9La" id="6VZWrurt77P" role="1SiIV1">
