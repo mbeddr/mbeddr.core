@@ -2301,37 +2301,6 @@
       <ref role="1YaFvo" to="mj1l:477NaqBEMuv" resolve="FloatType" />
     </node>
   </node>
-  <node concept="1YbPZF" id="5IyGbwWXmuu">
-    <property role="TrG5h" value="typeof_AbstractDotExpression" />
-    <property role="3GE5qa" value="memberaccess" />
-    <node concept="3clFbS" id="5IyGbwWXmuv" role="18ibNy">
-      <node concept="1Z5TYs" id="5IyGbwWXmuD" role="3cqZAp">
-        <node concept="mw_s8" id="5IyGbwWXmuH" role="1ZfhKB">
-          <node concept="1Z2H0r" id="5IyGbwWXmuI" role="mwGJk">
-            <node concept="2OqwBi" id="5IyGbwWXmuL" role="1Z2MuG">
-              <node concept="1YBJjd" id="5IyGbwWXmuK" role="2Oq$k0">
-                <ref role="1YBMHb" node="5IyGbwWXmuw" resolve="ade" />
-              </node>
-              <node concept="3TrEf2" id="1gDNXlE1QKZ" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:1gDNXlE1QKV" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="5IyGbwWXmuG" role="1ZfhK$">
-          <node concept="1Z2H0r" id="5IyGbwWXmuy" role="mwGJk">
-            <node concept="1YBJjd" id="5IyGbwWXmu$" role="1Z2MuG">
-              <ref role="1YBMHb" node="5IyGbwWXmuw" resolve="ade" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="5IyGbwWXmuw" role="1YuTPh">
-      <property role="TrG5h" value="ade" />
-      <ref role="1YaFvo" to="mj1l:1gDNXlE1Mu$" resolve="AbstractDotExpression" />
-    </node>
-  </node>
   <node concept="3hdX5o" id="7igR0Vu9L3s">
     <property role="TrG5h" value="binaryLogicalOperation" />
     <node concept="3ciAk0" id="7igR0Vu9L3t" role="3he0YX">

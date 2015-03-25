@@ -1131,24 +1131,6 @@
   <node concept="PlHQZ" id="7C830Ec4S3e">
     <property role="TrG5h" value="IStopReshuffling" />
   </node>
-  <node concept="1TIwiD" id="1gDNXlE1Mu$">
-    <property role="3GE5qa" value="memberaccess" />
-    <property role="TrG5h" value="AbstractDotExpression" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" node="2APHWiztz8M" resolve="UnaryExpression" />
-    <node concept="1TJgyj" id="1gDNXlE1QKV" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="member" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4ZVDCZCbbK_" resolve="IMemberReference" />
-    </node>
-    <node concept="PrWs8" id="2z_95Le9TNX" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-    <node concept="PrWs8" id="6mzZsELouXB" role="PzmwI">
-      <ref role="PrY4T" node="6mzZsELnskC" resolve="IBinaryLike" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="1exqRp9kgd">
     <property role="3GE5qa" value="expr" />
     <property role="TrG5h" value="AssignmentExpr" />
