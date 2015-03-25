@@ -150,6 +150,9 @@
       <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz">
         <child id="2771264470558526601" name="init" index="1cecVj" />
       </concept>
+      <concept id="2093108837558505658" name="com.mbeddr.core.modules.structure.ArgumentRef" flags="ng" index="3ZUYvv">
+        <reference id="2093108837558505659" name="arg" index="3ZUYvu" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -177,6 +180,7 @@
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
       <concept id="8399455261460717642" name="com.mbeddr.core.expressions.structure.OrExpression" flags="ng" index="2EHzL4" />
+      <concept id="8399455261460717640" name="com.mbeddr.core.expressions.structure.AndExpression" flags="ng" index="2EHzL6" />
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="4739982148980385695" name="com.mbeddr.core.expressions.structure.FloatType" flags="ng" index="3AreGT" />
@@ -278,6 +282,7 @@
         <node concept="1_9egQ" id="5qJgyBhcoNW" role="3XIRFZ">
           <node concept="3O_q_g" id="5qJgyBhcoNU" role="1_9egR">
             <ref role="3O_q_h" node="5tbhN$4MrQL" resolve="boolStuff" />
+            <node concept="3TlMhd" id="7vESzaIqvfJ" role="3O_q_j" />
           </node>
         </node>
         <node concept="1_9egQ" id="5qJgyBhcvK3" role="3XIRFZ">
@@ -699,11 +704,23 @@
               </node>
             </node>
           </node>
-          <node concept="3ZVu4v" id="4KGODGI8wLU" role="c0U16">
-            <ref role="3ZVs_2" node="5tbhN$4Msab" resolve="a" />
+          <node concept="2EHzL6" id="7vESzaIqvdE" role="c0U16">
+            <node concept="3ZUYvv" id="7vESzaIqveF" role="3TlMhJ">
+              <ref role="3ZUYvu" node="7vESzaIqsBr" resolve="b" />
+            </node>
+            <node concept="3ZVu4v" id="4KGODGI8wLU" role="3TlMhI">
+              <ref role="3ZVs_2" node="5tbhN$4Msab" resolve="a" />
+            </node>
           </node>
         </node>
         <node concept="3XISUE" id="4KGODGI8wMR" role="3XIRFZ" />
+      </node>
+      <node concept="19RgSI" id="7vESzaIqsBr" role="1UOdpc">
+        <property role="TrG5h" value="b" />
+        <node concept="3TlMgk" id="7vESzaIqsBq" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
       </node>
     </node>
     <node concept="2NXPZ9" id="5tbhN$4Msd9" role="N3F5h">
