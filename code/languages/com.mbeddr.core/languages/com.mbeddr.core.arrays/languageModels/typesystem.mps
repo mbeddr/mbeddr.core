@@ -81,6 +81,9 @@
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -147,6 +150,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -3862,6 +3866,40 @@
                   </node>
                   <node concept="3cmrfG" id="3ewEEwfgMyT" role="3uHU7w">
                     <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+                <node concept="3eNFk2" id="5LQ__EQokH" role="3eNLev">
+                  <node concept="3clFbS" id="5LQ__EQokJ" role="3eOfB_">
+                    <node concept="2MkqsV" id="5LQ__EQHsl" role="3cqZAp">
+                      <node concept="2OqwBi" id="5LQ__EQHzw" role="2OEOjV">
+                        <node concept="1YBJjd" id="5LQ__EQHuW" role="2Oq$k0">
+                          <ref role="1YBMHb" node="VuCligKmQs" resolve="aae" />
+                        </node>
+                        <node concept="3TrEf2" id="5LQ__EQIzj" role="2OqNvi">
+                          <ref role="3Tt5mk" to="yq40:5sJgLFR$y$3" />
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="5LQ__EQHs$" role="2MkJ7o">
+                        <property role="Xl_RC" value="index can't be smaller than zero" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3eOSWO" id="5LQ__ETxXz" role="3eO9$A">
+                    <node concept="2OqwBi" id="5LQ__EQDcY" role="3uHU7B">
+                      <node concept="10M0yZ" id="5LQ__EQH7m" role="2Oq$k0">
+                        <ref role="1PxDUh" to="epq1:~BigInteger" resolve="BigInteger" />
+                        <ref role="3cqZAo" to="epq1:~BigInteger.ZERO" resolve="ZERO" />
+                      </node>
+                      <node concept="liA8E" id="5LQ__EQE6k" role="2OqNvi">
+                        <ref role="37wK5l" to="epq1:~BigInteger.compareTo(java.math.BigInteger):int" resolve="compareTo" />
+                        <node concept="37vLTw" id="5LQ__ESe8$" role="37wK5m">
+                          <ref role="3cqZAo" node="VuCligKq0k" resolve="staticIndex" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cmrfG" id="5LQ__EQEG9" role="3uHU7w">
+                      <property role="3cmrfH" value="0" />
+                    </node>
                   </node>
                 </node>
               </node>
