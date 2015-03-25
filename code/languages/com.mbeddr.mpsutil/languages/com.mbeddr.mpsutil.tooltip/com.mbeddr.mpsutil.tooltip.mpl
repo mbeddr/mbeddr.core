@@ -18,11 +18,7 @@
         <generator generatorUID="091ef3ba-305a-4257-ac3b-6c5daacb61ee(de.itemis.mps.tooltips#7561794385526429391)" />
       </external-templates>
       <dependencies>
-        <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
-        <dependency reexport="false">a0ab8c10-c118-4755-ba27-3853435cf524(de.itemis.mps.tooltips)</dependency>
-        <dependency reexport="false">0022e9df-2136-4ef8-81b2-08650aeb1dc7(de.itemis.mps.tooltips.runtime)</dependency>
         <dependency reexport="false">18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)</dependency>
-        <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>7a07df55-d34f-4938-9dc9-c19fd71bcb69(com.mbeddr.mpsutil.tooltip)</usedLanguage>
@@ -76,7 +72,6 @@
   </generators>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false" scope="generate-into">a0ab8c10-c118-4755-ba27-3853435cf524(de.itemis.mps.tooltips)</dependency>
     <dependency reexport="false">18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)</dependency>
   </dependencies>
   <usedDevKits>
