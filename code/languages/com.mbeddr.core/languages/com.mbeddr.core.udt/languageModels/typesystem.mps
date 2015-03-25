@@ -322,37 +322,6 @@
       <concept id="1178894719932" name="jetbrains.mps.baseLanguage.collections.structure.DistinctOperation" flags="nn" index="1VAtEI" />
     </language>
   </registry>
-  <node concept="1YbPZF" id="Dp4TemBSO3">
-    <property role="3GE5qa" value="memberAccess" />
-    <property role="TrG5h" value="typeof_AbstractDotExpression" />
-    <node concept="3clFbS" id="Dp4TemBSO4" role="18ibNy">
-      <node concept="1Z5TYs" id="Dp4TemBSOb" role="3cqZAp">
-        <node concept="mw_s8" id="Dp4TemBSOf" role="1ZfhKB">
-          <node concept="1Z2H0r" id="Dp4TemBSOg" role="mwGJk">
-            <node concept="2OqwBi" id="Dp4TemBSOj" role="1Z2MuG">
-              <node concept="1YBJjd" id="Dp4TemBSOi" role="2Oq$k0">
-                <ref role="1YBMHb" node="Dp4TemBSO6" resolve="abstractDotExpression" />
-              </node>
-              <node concept="3TrEf2" id="1gDNXlE6rfm" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:1gDNXlE1QKV" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="Dp4TemBSOe" role="1ZfhK$">
-          <node concept="1Z2H0r" id="Dp4TemBSO8" role="mwGJk">
-            <node concept="1YBJjd" id="Dp4TemBSOa" role="1Z2MuG">
-              <ref role="1YBMHb" node="Dp4TemBSO6" resolve="abstractDotExpression" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="Dp4TemBSO6" role="1YuTPh">
-      <property role="TrG5h" value="abstractDotExpression" />
-      <ref role="1YaFvo" to="mj1l:1gDNXlE1Mu$" resolve="AbstractDotExpression" />
-    </node>
-  </node>
   <node concept="1YbPZF" id="5jyom5fOl0Y">
     <property role="TrG5h" value="typeof_TypeDef" />
     <property role="3GE5qa" value="typedef" />

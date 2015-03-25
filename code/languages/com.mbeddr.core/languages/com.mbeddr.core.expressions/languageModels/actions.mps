@@ -2752,10 +2752,10 @@
                     <node concept="3cpWsn" id="3M4aPu$PDe0" role="3cpWs9">
                       <property role="TrG5h" value="dotExpression" />
                       <node concept="3Tqbb2" id="3M4aPu$PDdV" role="1tU5fm">
-                        <ref role="ehGHo" to="mj1l:1gDNXlE1Mu$" resolve="AbstractDotExpression" />
+                        <ref role="ehGHo" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
                       </node>
                       <node concept="1PxgMI" id="3M4aPu$PExM" role="33vP2m">
-                        <ref role="1PxNhF" to="mj1l:1gDNXlE1Mu$" resolve="AbstractDotExpression" />
+                        <ref role="1PxNhF" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
                         <node concept="2OqwBi" id="3M4aPu$PDFY" role="1PxMeX">
                           <node concept="37vLTw" id="3M4aPu$PD_u" role="2Oq$k0">
                             <ref role="3cqZAo" node="1SsIqLJKuqe" resolve="child" />
@@ -2826,8 +2826,8 @@
                     <node concept="1mfA1w" id="3M4aPu$P2mR" role="2OqNvi" />
                   </node>
                   <node concept="1mIQ4w" id="3M4aPu$P30B" role="2OqNvi">
-                    <node concept="chp4Y" id="3M4aPu$P_Vt" role="cj9EA">
-                      <ref role="cht4Q" to="mj1l:1gDNXlE1Mu$" resolve="AbstractDotExpression" />
+                    <node concept="chp4Y" id="4CQ1jcsgfG2" role="cj9EA">
+                      <ref role="cht4Q" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
                     </node>
                   </node>
                 </node>
