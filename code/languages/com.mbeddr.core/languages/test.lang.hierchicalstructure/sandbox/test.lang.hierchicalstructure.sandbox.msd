@@ -6,12 +6,7 @@
     </modelRoot>
   </models>
   <sourcePath />
-  <dependencies>
-    <dependency reexport="false">a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)</dependency>
-  </dependencies>
   <usedLanguages>
-    <usedLanguage>a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)</usedLanguage>
-    <usedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</usedLanguage>
     <usedLanguage>818a6981-aa97-4390-8f39-1c98ce66bd6c(test.lang.hierchicalstructure)</usedLanguage>
   </usedLanguages>
   <languageVersions>
