@@ -14,7 +14,6 @@
         </modelRoot>
       </models>
       <external-templates>
-        <generator generatorUID="0647eca7-da98-422a-8a8b-6ebc0bd014ea(jetbrains.mps.lang.editor#1129914002149)" />
         <generator generatorUID="091ef3ba-305a-4257-ac3b-6c5daacb61ee(de.itemis.mps.tooltips#7561794385526429391)" />
       </external-templates>
       <dependencies>

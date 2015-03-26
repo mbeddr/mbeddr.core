@@ -5667,12 +5667,6 @@
             <ref role="3bR37D" node="2N1CSrzsp0s" resolve="com.mbeddr.mpsutil.serializer.xml" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6KmkXByDDIU" role="3bR37C">
-          <node concept="3bR9La" id="6KmkXByDDIV" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="$bJ0jguQdz" resolve="com.mbeddr.core.base.pluginSolution" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="2mU72gDy6Gy" role="3bR37C">
           <node concept="1Busua" id="2mU72gDy6Gz" role="1SiIV1">
             <ref role="1Busuk" node="2mU72gDx9ye" resolve="com.mbeddr.mpsutil.jung" />
