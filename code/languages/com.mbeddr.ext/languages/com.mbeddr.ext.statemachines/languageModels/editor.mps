@@ -30,8 +30,8 @@
     <import index="9a8" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" />
     <import index="as9o" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/f:java_stub#3f233e7f-b8a6-46d2-a57f-795d56775243#org.jetbrains.annotations(Annotations/org.jetbrains.annotations@java_stub)" />
     <import index="7ou7" ref="r:c2174d48-8423-45ea-b84e-77408df7449d(de.itemis.mps.editor.diagram.runtime.shape)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -5583,25 +5583,19 @@
         <node concept="3EZMnI" id="7$cwLzjYq_g" role="3EZMnx">
           <node concept="2iRfu4" id="7$cwLzjYq_h" role="2iSdaV" />
           <node concept="3XFhqQ" id="7$cwLzjYq_i" role="3EZMnx" />
-          <node concept="3EZMnI" id="7$cwLzjYq_j" role="3EZMnx">
-            <node concept="3F0ifn" id="7E_nwa32iPO" role="3EZMnx">
-              <property role="3F0ifm" value="XXY" />
+          <node concept="3EZMnI" id="7$cwLzjYq_l" role="3EZMnx">
+            <node concept="VPM3Z" id="7$cwLzjYq_m" role="3F10Kt">
+              <property role="VOm3f" value="false" />
             </node>
-            <node concept="2iRkQZ" id="7$cwLzjYq_k" role="2iSdaV" />
-            <node concept="3EZMnI" id="7$cwLzjYq_l" role="3EZMnx">
-              <node concept="VPM3Z" id="7$cwLzjYq_m" role="3F10Kt">
-                <property role="VOm3f" value="false" />
+            <node concept="3F0A7n" id="7$cwLzjYq_n" role="3EZMnx">
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              <node concept="Vb9p2" id="7$cwLzjYq_o" role="3F10Kt">
+                <property role="Vbekb" value="BOLD" />
               </node>
-              <node concept="3F0A7n" id="7$cwLzjYq_n" role="3EZMnx">
-                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-                <node concept="Vb9p2" id="7$cwLzjYq_o" role="3F10Kt">
-                  <property role="Vbekb" value="BOLD" />
-                </node>
-              </node>
-              <node concept="2iRfu4" id="7$cwLzjYq_p" role="2iSdaV" />
-              <node concept="37jFXN" id="7$cwLzjYq_q" role="3F10Kt">
-                <property role="37lx6p" value="CENTER" />
-              </node>
+            </node>
+            <node concept="2iRfu4" id="7$cwLzjYq_p" role="2iSdaV" />
+            <node concept="37jFXN" id="7$cwLzjYq_q" role="3F10Kt">
+              <property role="37lx6p" value="CENTER" />
             </node>
           </node>
           <node concept="3XFhqQ" id="7$cwLzjYq_r" role="3EZMnx" />
