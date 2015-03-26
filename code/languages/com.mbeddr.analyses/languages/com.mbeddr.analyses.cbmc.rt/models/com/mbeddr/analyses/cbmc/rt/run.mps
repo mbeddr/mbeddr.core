@@ -211,7 +211,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -7458,20 +7458,6 @@
         </node>
       </node>
       <node concept="3clFbS" id="6NsiZXSemQe" role="3clF47">
-        <node concept="3clFbF" id="7iCG_8XdLcQ" role="3cqZAp">
-          <node concept="2OqwBi" id="7iCG_8XdLrg" role="3clFbG">
-            <node concept="1rXfSq" id="7iCG_8XdLcP" role="2Oq$k0">
-              <ref role="37wK5l" to="ood5:7iCG_8WE$fI" resolve="getCurrentAnalysisExecutor" />
-            </node>
-            <node concept="liA8E" id="7iCG_8Xea8q" role="2OqNvi">
-              <ref role="37wK5l" to="ood5:7iCG_8XdOv3" resolve="awaitTermination" />
-              <node concept="10M0yZ" id="1ubgnfDfqFR" role="37wK5m">
-                <ref role="3cqZAo" to="e2lb:~Long.MAX_VALUE" resolve="MAX_VALUE" />
-                <ref role="1PxDUh" to="e2lb:~Long" resolve="Long" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="W6439gmXJ0" role="3cqZAp">
           <node concept="3clFbS" id="W6439gmXJ3" role="3clFbx">
             <node concept="3clFbF" id="5BkFC2yj9Db" role="3cqZAp">
