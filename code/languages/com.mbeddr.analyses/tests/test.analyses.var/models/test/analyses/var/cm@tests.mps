@@ -57,6 +57,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -65,6 +68,12 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
@@ -356,6 +365,95 @@
   </node>
   <node concept="2XOHcx" id="1f0gqNzAccm">
     <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/" />
+  </node>
+  <node concept="1lH9Xt" id="2OuHA24VvyN">
+    <property role="TrG5h" value="ConstraintsOnDerivedFeatures" />
+    <node concept="1LZb2c" id="2OuHA24VvyO" role="1SL9yI">
+      <property role="TrG5h" value="ConstraintsOnDerivedFeatures_Req" />
+      <node concept="3cqZAl" id="2OuHA24VvyP" role="3clF45" />
+      <node concept="3clFbS" id="2OuHA24VvyQ" role="3clF47">
+        <node concept="3cpWs8" id="2OuHA24VvyR" role="3cqZAp">
+          <node concept="3cpWsn" id="2OuHA24VvyS" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="2OuHA24VvyT" role="1tU5fm" />
+            <node concept="BaHAS" id="2OuHA24VvyU" role="33vP2m">
+              <property role="BaBD8" value="test.analyses.var.testcode.cm" />
+              <property role="BaHAW" value="test.analyses.var.testcode.cm" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2OuHA24VvyV" role="3cqZAp">
+          <node concept="3cpWsn" id="2OuHA24VvyW" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="10P_77" id="2OuHA24VvyX" role="1tU5fm" />
+            <node concept="NRdvd" id="2OuHA24VvyY" role="33vP2m">
+              <ref role="37wK5l" to="oe3g:tSjOfAjCHD" resolve="checkConfigurationModelConsistency" />
+              <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
+              <node concept="37vLTw" id="2OuHA24VvyZ" role="37wK5m">
+                <ref role="3cqZAo" node="2OuHA24VvyS" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="2OuHA24Vvz0" role="37wK5m">
+                <property role="Xl_RC" value="ConstraintsOnDerivedFeatures_Req" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="2OuHA24Vx2x" role="3cqZAp">
+          <node concept="3SKdUq" id="2OuHA24Vx3E" role="3SKWNk">
+            <property role="3SKdUp" value="must fail because the configuration does NOT have the REQUIRED feature &quot;required&quot;" />
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2OuHA24Vvz1" role="3cqZAp">
+          <node concept="3clFbT" id="2OuHA24VwN5" role="3vwVQn">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2OuHA24Vx7N" role="1SL9yI">
+      <property role="TrG5h" value="ConstraintsOnDerivedFeatures_Con" />
+      <node concept="3cqZAl" id="2OuHA24Vx7O" role="3clF45" />
+      <node concept="3clFbS" id="2OuHA24Vx7P" role="3clF47">
+        <node concept="3cpWs8" id="2OuHA24Vx7Q" role="3cqZAp">
+          <node concept="3cpWsn" id="2OuHA24Vx7R" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="2OuHA24Vx7S" role="1tU5fm" />
+            <node concept="BaHAS" id="2OuHA24Vx7T" role="33vP2m">
+              <property role="BaBD8" value="test.analyses.var.testcode.cm" />
+              <property role="BaHAW" value="test.analyses.var.testcode.cm" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2OuHA24Vx7U" role="3cqZAp">
+          <node concept="3cpWsn" id="2OuHA24Vx7V" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="10P_77" id="2OuHA24Vx7W" role="1tU5fm" />
+            <node concept="NRdvd" id="2OuHA24Vx7X" role="33vP2m">
+              <ref role="37wK5l" to="oe3g:tSjOfAjCHD" resolve="checkConfigurationModelConsistency" />
+              <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
+              <node concept="37vLTw" id="2OuHA24Vx7Y" role="37wK5m">
+                <ref role="3cqZAo" node="2OuHA24Vx7R" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="2OuHA24Vx7Z" role="37wK5m">
+                <property role="Xl_RC" value="ConstraintsOnDerivedFeatures_Con" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="2OuHA24Vx80" role="3cqZAp">
+          <node concept="3SKdUq" id="2OuHA24Vx81" role="3SKWNk">
+            <property role="3SKdUp" value="must fail because the configuration has the CONFLICTING feature &quot;conflict&quot;" />
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2OuHA24Vx82" role="3cqZAp">
+          <node concept="3clFbT" id="2OuHA24Vx83" role="3vwVQn">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
