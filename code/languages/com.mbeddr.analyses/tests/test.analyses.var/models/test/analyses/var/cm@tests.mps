@@ -57,9 +57,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -362,98 +359,95 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="2XOHcx" id="1f0gqNzAccm">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/" />
-  </node>
-  <node concept="1lH9Xt" id="2OuHA24VvyN">
-    <property role="TrG5h" value="ConstraintsOnDerivedFeatures" />
-    <node concept="1LZb2c" id="2OuHA24VvyO" role="1SL9yI">
-      <property role="TrG5h" value="ConstraintsOnDerivedFeatures_Req" />
-      <node concept="3cqZAl" id="2OuHA24VvyP" role="3clF45" />
-      <node concept="3clFbS" id="2OuHA24VvyQ" role="3clF47">
-        <node concept="3cpWs8" id="2OuHA24VvyR" role="3cqZAp">
-          <node concept="3cpWsn" id="2OuHA24VvyS" role="3cpWs9">
+    <node concept="1LZb2c" id="4qsm5C8v23I" role="1SL9yI">
+      <property role="TrG5h" value="testDerivedFeatures3" />
+      <node concept="3cqZAl" id="4qsm5C8v23J" role="3clF45" />
+      <node concept="3clFbS" id="4qsm5C8v23K" role="3clF47">
+        <node concept="3cpWs8" id="4qsm5C8v23L" role="3cqZAp">
+          <node concept="3cpWsn" id="4qsm5C8v23M" role="3cpWs9">
             <property role="TrG5h" value="m" />
-            <node concept="H_c77" id="2OuHA24VvyT" role="1tU5fm" />
-            <node concept="BaHAS" id="2OuHA24VvyU" role="33vP2m">
+            <node concept="H_c77" id="4qsm5C8v23N" role="1tU5fm" />
+            <node concept="BaHAS" id="4qsm5C8v23O" role="33vP2m">
               <property role="BaBD8" value="test.analyses.var.testcode.cm" />
               <property role="BaHAW" value="test.analyses.var.testcode.cm" />
               <property role="BaGAP" value="" />
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="2OuHA24VvyV" role="3cqZAp">
-          <node concept="3cpWsn" id="2OuHA24VvyW" role="3cpWs9">
+        <node concept="3cpWs8" id="4qsm5C8v23P" role="3cqZAp">
+          <node concept="3cpWsn" id="4qsm5C8v23Q" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="2OuHA24VvyX" role="1tU5fm" />
-            <node concept="NRdvd" id="2OuHA24VvyY" role="33vP2m">
-              <ref role="37wK5l" to="oe3g:tSjOfAjCHD" resolve="checkConfigurationModelConsistency" />
+            <node concept="10P_77" id="4qsm5C8v23R" role="1tU5fm" />
+            <node concept="NRdvd" id="4qsm5C8v23S" role="33vP2m">
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
-              <node concept="37vLTw" id="2OuHA24VvyZ" role="37wK5m">
-                <ref role="3cqZAo" node="2OuHA24VvyS" resolve="m" />
+              <ref role="37wK5l" to="oe3g:tSjOfAjCHD" resolve="checkConfigurationModelConsistency" />
+              <node concept="37vLTw" id="4qsm5C8v23T" role="37wK5m">
+                <ref role="3cqZAo" node="4qsm5C8v23M" resolve="m" />
               </node>
-              <node concept="Xl_RD" id="2OuHA24Vvz0" role="37wK5m">
+              <node concept="Xl_RD" id="4qsm5C8v23U" role="37wK5m">
                 <property role="Xl_RC" value="ConstraintsOnDerivedFeatures_Req" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="2OuHA24Vx2x" role="3cqZAp">
-          <node concept="3SKdUq" id="2OuHA24Vx3E" role="3SKWNk">
+        <node concept="3SKdUt" id="4qsm5C8v23V" role="3cqZAp">
+          <node concept="3SKdUq" id="4qsm5C8v23W" role="3SKWNk">
             <property role="3SKdUp" value="must fail because the configuration does NOT have the REQUIRED feature &quot;required&quot;" />
           </node>
         </node>
-        <node concept="3vwNmj" id="2OuHA24Vvz1" role="3cqZAp">
-          <node concept="3clFbT" id="2OuHA24VwN5" role="3vwVQn">
-            <property role="3clFbU" value="false" />
+        <node concept="3vFxKo" id="4qsm5C8v23X" role="3cqZAp">
+          <node concept="37vLTw" id="4qsm5C8v23Y" role="3vFALc">
+            <ref role="3cqZAo" node="4qsm5C8v23Q" resolve="res" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="1LZb2c" id="2OuHA24Vx7N" role="1SL9yI">
-      <property role="TrG5h" value="ConstraintsOnDerivedFeatures_Con" />
-      <node concept="3cqZAl" id="2OuHA24Vx7O" role="3clF45" />
-      <node concept="3clFbS" id="2OuHA24Vx7P" role="3clF47">
-        <node concept="3cpWs8" id="2OuHA24Vx7Q" role="3cqZAp">
-          <node concept="3cpWsn" id="2OuHA24Vx7R" role="3cpWs9">
+    <node concept="1LZb2c" id="4qsm5C8v23Z" role="1SL9yI">
+      <property role="TrG5h" value="testDerivedFeatures4" />
+      <node concept="3cqZAl" id="4qsm5C8v240" role="3clF45" />
+      <node concept="3clFbS" id="4qsm5C8v241" role="3clF47">
+        <node concept="3cpWs8" id="4qsm5C8v242" role="3cqZAp">
+          <node concept="3cpWsn" id="4qsm5C8v243" role="3cpWs9">
             <property role="TrG5h" value="m" />
-            <node concept="H_c77" id="2OuHA24Vx7S" role="1tU5fm" />
-            <node concept="BaHAS" id="2OuHA24Vx7T" role="33vP2m">
+            <node concept="H_c77" id="4qsm5C8v244" role="1tU5fm" />
+            <node concept="BaHAS" id="4qsm5C8v245" role="33vP2m">
               <property role="BaBD8" value="test.analyses.var.testcode.cm" />
               <property role="BaHAW" value="test.analyses.var.testcode.cm" />
               <property role="BaGAP" value="" />
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="2OuHA24Vx7U" role="3cqZAp">
-          <node concept="3cpWsn" id="2OuHA24Vx7V" role="3cpWs9">
+        <node concept="3cpWs8" id="4qsm5C8v246" role="3cqZAp">
+          <node concept="3cpWsn" id="4qsm5C8v247" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="2OuHA24Vx7W" role="1tU5fm" />
-            <node concept="NRdvd" id="2OuHA24Vx7X" role="33vP2m">
+            <node concept="10P_77" id="4qsm5C8v248" role="1tU5fm" />
+            <node concept="NRdvd" id="4qsm5C8v249" role="33vP2m">
               <ref role="37wK5l" to="oe3g:tSjOfAjCHD" resolve="checkConfigurationModelConsistency" />
               <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
-              <node concept="37vLTw" id="2OuHA24Vx7Y" role="37wK5m">
-                <ref role="3cqZAo" node="2OuHA24Vx7R" resolve="m" />
+              <node concept="37vLTw" id="4qsm5C8v24a" role="37wK5m">
+                <ref role="3cqZAo" node="4qsm5C8v243" resolve="m" />
               </node>
-              <node concept="Xl_RD" id="2OuHA24Vx7Z" role="37wK5m">
+              <node concept="Xl_RD" id="4qsm5C8v24b" role="37wK5m">
                 <property role="Xl_RC" value="ConstraintsOnDerivedFeatures_Con" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="2OuHA24Vx80" role="3cqZAp">
-          <node concept="3SKdUq" id="2OuHA24Vx81" role="3SKWNk">
+        <node concept="3SKdUt" id="4qsm5C8v24c" role="3cqZAp">
+          <node concept="3SKdUq" id="4qsm5C8v24d" role="3SKWNk">
             <property role="3SKdUp" value="must fail because the configuration has the CONFLICTING feature &quot;conflict&quot;" />
           </node>
         </node>
-        <node concept="3vwNmj" id="2OuHA24Vx82" role="3cqZAp">
-          <node concept="3clFbT" id="2OuHA24Vx83" role="3vwVQn">
-            <property role="3clFbU" value="false" />
+        <node concept="3vFxKo" id="4qsm5C8v24e" role="3cqZAp">
+          <node concept="37vLTw" id="4qsm5C8v24f" role="3vFALc">
+            <ref role="3cqZAo" node="4qsm5C8v247" resolve="res" />
           </node>
         </node>
       </node>
     </node>
+  </node>
+  <node concept="2XOHcx" id="1f0gqNzAccm">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/" />
   </node>
 </model>
 

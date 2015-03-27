@@ -374,6 +374,131 @@
         </node>
       </node>
     </node>
+    <node concept="Id4hS" id="5JlqNRKB2xt" role="Idr$j">
+      <property role="TrG5h" value="DerivedFeatures6" />
+      <node concept="28I2Iu" id="5JlqNRKB2xu" role="Id4hT">
+        <node concept="Idvur" id="4qsm5C8ujNv" role="Id4hL" />
+        <node concept="Id4hK" id="5JlqNRKB388" role="Id4hQ">
+          <property role="TrG5h" value="c1" />
+        </node>
+        <node concept="Id4hK" id="5JlqNRKB38a" role="Id4hQ">
+          <property role="TrG5h" value="c2" />
+        </node>
+        <node concept="Id4hK" id="5JlqNRKB38d" role="Id4hQ">
+          <property role="TrG5h" value="optional" />
+          <node concept="Idvur" id="4qsm5C8ujNy" role="Id4hL" />
+          <node concept="Id4hK" id="5JlqNRKB38i" role="Id4hQ">
+            <property role="TrG5h" value="r1" />
+          </node>
+          <node concept="Id4hK" id="5JlqNRKB38l" role="Id4hQ">
+            <property role="TrG5h" value="conflicts" />
+          </node>
+        </node>
+      </node>
+      <node concept="gY_dk" id="5JlqNRKB5fj" role="gT3TO">
+        <property role="TrG5h" value="derivedWithConflicts" />
+        <node concept="2EHzL6" id="5JlqNRKB5fz" role="gT3TT">
+          <node concept="2qVrgw" id="5JlqNRKB5fJ" role="3TlMhJ">
+            <ref role="2qVrgz" node="5JlqNRKB38a" resolve="c2" />
+          </node>
+          <node concept="2qVrgw" id="5JlqNRKB5fr" role="3TlMhI">
+            <ref role="2qVrgz" node="5JlqNRKB388" resolve="c1" />
+          </node>
+        </node>
+        <node concept="1fCc5X" id="2OuHA24URJr" role="2FxFsO">
+          <ref role="1fCc5C" node="5JlqNRKB38l" resolve="conflicts" />
+        </node>
+      </node>
+    </node>
+    <node concept="Id4hS" id="4qsm5C8ujeh" role="Idr$j">
+      <property role="TrG5h" value="DerivedFeatures7" />
+      <node concept="28I2Iu" id="4qsm5C8ujei" role="Id4hT">
+        <node concept="Idvup" id="4qsm5C8ujej" role="Id4hL" />
+        <node concept="Id4hK" id="4qsm5C8ujek" role="Id4hQ">
+          <property role="TrG5h" value="c1" />
+        </node>
+        <node concept="Id4hK" id="4qsm5C8ukPa" role="Id4hQ">
+          <property role="TrG5h" value="c2" />
+        </node>
+        <node concept="Id4hK" id="4qsm5C8ujem" role="Id4hQ">
+          <property role="TrG5h" value="optional" />
+          <node concept="Idvup" id="4qsm5C8ujen" role="Id4hL" />
+          <node concept="Id4hK" id="4qsm5C8ujeo" role="Id4hQ">
+            <property role="TrG5h" value="required" />
+            <node concept="1fCc5X" id="4qsm5C8ujNJ" role="2FxFsO">
+              <ref role="1fCc5C" node="4qsm5C8ujek" resolve="c1" />
+            </node>
+          </node>
+          <node concept="Id4hK" id="4qsm5C8ujep" role="Id4hQ">
+            <property role="TrG5h" value="conflicts" />
+          </node>
+        </node>
+      </node>
+      <node concept="gY_dk" id="4qsm5C8ujeq" role="gT3TO">
+        <property role="TrG5h" value="derivedWithRequires" />
+        <node concept="2EHzL6" id="4qsm5C8umFC" role="gT3TT">
+          <node concept="2qVrgw" id="4qsm5C8umGk" role="3TlMhJ">
+            <ref role="2qVrgz" node="4qsm5C8ukPa" resolve="c2" />
+          </node>
+          <node concept="2qVrgw" id="4qsm5C8ujes" role="3TlMhI">
+            <ref role="2qVrgz" node="4qsm5C8ujek" resolve="c1" />
+          </node>
+        </node>
+        <node concept="1fCc5J" id="4qsm5C8ujeu" role="2FxFsO">
+          <ref role="1fCc5C" node="4qsm5C8ujeo" resolve="required" />
+        </node>
+      </node>
+    </node>
+    <node concept="Id4hS" id="4qsm5C8umNF" role="Idr$j">
+      <property role="TrG5h" value="DerivedFeatures8" />
+      <node concept="28I2Iu" id="4qsm5C8umNG" role="Id4hT">
+        <node concept="Idvup" id="4qsm5C8umNH" role="Id4hL" />
+        <node concept="Id4hK" id="4qsm5C8umNI" role="Id4hQ">
+          <property role="TrG5h" value="c1" />
+        </node>
+        <node concept="Id4hK" id="4qsm5C8umNJ" role="Id4hQ">
+          <property role="TrG5h" value="c2" />
+        </node>
+        <node concept="Id4hK" id="4qsm5C8umNK" role="Id4hQ">
+          <property role="TrG5h" value="optional" />
+          <node concept="Idvup" id="4qsm5C8umNL" role="Id4hL" />
+          <node concept="Id4hK" id="4qsm5C8umNM" role="Id4hQ">
+            <property role="TrG5h" value="required" />
+          </node>
+          <node concept="Id4hK" id="4qsm5C8umNO" role="Id4hQ">
+            <property role="TrG5h" value="conflicts" />
+          </node>
+        </node>
+      </node>
+      <node concept="gY_dk" id="4qsm5C8umNP" role="gT3TO">
+        <property role="TrG5h" value="derivedWithRequires" />
+        <node concept="2EHzL6" id="4qsm5C8umNQ" role="gT3TT">
+          <node concept="2qVrgw" id="4qsm5C8umNR" role="3TlMhJ">
+            <ref role="2qVrgz" node="4qsm5C8umNJ" resolve="c2" />
+          </node>
+          <node concept="2qVrgw" id="4qsm5C8umNS" role="3TlMhI">
+            <ref role="2qVrgz" node="4qsm5C8umNI" resolve="c1" />
+          </node>
+        </node>
+        <node concept="1fCc5J" id="4qsm5C8umNT" role="2FxFsO">
+          <ref role="1fCc5C" node="4qsm5C8umNM" resolve="required" />
+        </node>
+      </node>
+      <node concept="gY_dk" id="4qsm5C8umQ4" role="gT3TO">
+        <property role="TrG5h" value="derivedWithConflicts" />
+        <node concept="2EHzL6" id="4qsm5C8umQ5" role="gT3TT">
+          <node concept="2qVrgw" id="4qsm5C8umQ6" role="3TlMhJ">
+            <ref role="2qVrgz" node="5JlqNRKB38a" resolve="c2" />
+          </node>
+          <node concept="2qVrgw" id="4qsm5C8umQ7" role="3TlMhI">
+            <ref role="2qVrgz" node="5JlqNRKB388" resolve="c1" />
+          </node>
+        </node>
+        <node concept="1fCc5X" id="4qsm5C8umQz" role="2FxFsO">
+          <ref role="1fCc5C" node="4qsm5C8umNO" resolve="conflicts" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="Idr$i" id="3KT4CxIEGQE">
     <property role="TrG5h" value="ComplexFeatureModels" />
