@@ -4061,8 +4061,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="4LXxPGc5urW" role="3cqZAp" />
-        <node concept="3clFbH" id="4LXxPGc7Fqx" role="3cqZAp" />
-        <node concept="3clFbH" id="4LXxPGc7Fus" role="3cqZAp" />
         <node concept="3SKdUt" id="4LXxPGc61mR" role="3cqZAp">
           <node concept="3SKdUq" id="4LXxPGc62zE" role="3SKWNk">
             <property role="3SKdUp" value="Step3: reverse all lists containing arrays" />
@@ -4087,7 +4085,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="4LXxPGc7FP7" role="3cqZAp" />
-        <node concept="3clFbH" id="4LXxPGc7FHo" role="3cqZAp" />
         <node concept="2Gpval" id="4LXxPGc63m6" role="3cqZAp">
           <node concept="2GrKxI" id="4LXxPGc63m8" role="2Gsz3X">
             <property role="TrG5h" value="types" />
@@ -4103,12 +4100,12 @@
                     <node concept="37vLTw" id="4LXxPGc7J5L" role="2Oq$k0">
                       <ref role="3cqZAo" node="4LXxPGc7FWx" resolve="segmentedAndReversedTypes" />
                     </node>
-                    <node concept="2Ke4WJ" id="4LXxPGc7ZZn" role="2OqNvi">
-                      <node concept="2OqwBi" id="4LXxPGc7ZZp" role="25WWJ7">
-                        <node concept="2GrUjf" id="4LXxPGc7ZZq" role="2Oq$k0">
+                    <node concept="TSZUe" id="4SuMHYVHE0o" role="2OqNvi">
+                      <node concept="2OqwBi" id="4SuMHYVHE0q" role="25WWJ7">
+                        <node concept="2GrUjf" id="4SuMHYVHE0r" role="2Oq$k0">
                           <ref role="2Gs0qQ" node="4LXxPGc63m8" resolve="types" />
                         </node>
-                        <node concept="35Qw8J" id="4LXxPGc7ZZr" role="2OqNvi" />
+                        <node concept="35Qw8J" id="4SuMHYVHE0s" role="2OqNvi" />
                       </node>
                     </node>
                   </node>
@@ -4134,8 +4131,8 @@
                       <node concept="37vLTw" id="4LXxPGc7GrS" role="2Oq$k0">
                         <ref role="3cqZAo" node="4LXxPGc7FWx" resolve="segmentedAndReversedTypes" />
                       </node>
-                      <node concept="2Ke4WJ" id="4LXxPGc80CF" role="2OqNvi">
-                        <node concept="2GrUjf" id="4LXxPGc80CH" role="25WWJ7">
+                      <node concept="TSZUe" id="4SuMHYVHEV7" role="2OqNvi">
+                        <node concept="2GrUjf" id="4SuMHYVHEV9" role="25WWJ7">
                           <ref role="2Gs0qQ" node="4LXxPGc63m8" resolve="types" />
                         </node>
                       </node>
@@ -4273,8 +4270,8 @@
                             <node concept="37vLTw" id="4LXxPGc9ONU" role="2Oq$k0">
                               <ref role="3cqZAo" node="4LXxPGc5rPf" resolve="result" />
                             </node>
-                            <node concept="2Ke4WJ" id="4LXxPGc9PQm" role="2OqNvi">
-                              <node concept="Xl_RD" id="4LXxPGc9PTR" role="25WWJ7">
+                            <node concept="2Ke4WJ" id="4SuMHYVMge7" role="2OqNvi">
+                              <node concept="Xl_RD" id="4SuMHYVMge9" role="25WWJ7">
                                 <property role="Xl_RC" value=" volatile " />
                               </node>
                             </node>
@@ -4297,8 +4294,8 @@
                             <node concept="37vLTw" id="4LXxPGc9QVl" role="2Oq$k0">
                               <ref role="3cqZAo" node="4LXxPGc5rPf" resolve="result" />
                             </node>
-                            <node concept="2Ke4WJ" id="4LXxPGc9QVm" role="2OqNvi">
-                              <node concept="Xl_RD" id="4LXxPGc9QVn" role="25WWJ7">
+                            <node concept="2Ke4WJ" id="4SuMHYVMgsg" role="2OqNvi">
+                              <node concept="Xl_RD" id="4SuMHYVMgsi" role="25WWJ7">
                                 <property role="Xl_RC" value=" const " />
                               </node>
                             </node>
