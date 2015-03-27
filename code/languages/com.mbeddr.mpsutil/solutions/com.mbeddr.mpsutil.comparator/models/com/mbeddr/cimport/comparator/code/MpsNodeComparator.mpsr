@@ -1042,11 +1042,46 @@
                     </node>
                     <node concept="3clFbJ" id="DYlgnAT5N_" role="3cqZAp">
                       <node concept="3clFbS" id="DYlgnAT5NC" role="3clFbx">
-                        <node concept="3clFbF" id="DYlgnAT_uf" role="3cqZAp">
-                          <node concept="3P9mCS" id="DYlgnAT_ug" role="3clFbG">
+                        <node concept="3clFbF" id="cqtN3cfWtP" role="3cqZAp">
+                          <node concept="3P9mCS" id="cqtN3cfWtQ" role="3clFbG">
                             <ref role="37wK5l" node="DYlgnAA7vO" resolve="verboseMsg" />
-                            <node concept="Xl_RD" id="DYlgnAT_uh" role="37wK5m">
-                              <property role="Xl_RC" value="diff found" />
+                            <node concept="3cpWs3" id="cqtN3cfWtR" role="37wK5m">
+                              <node concept="2OqwBi" id="cqtN3cghs_" role="3uHU7w">
+                                <node concept="2JrnkZ" id="cqtN3cgeY3" role="2Oq$k0">
+                                  <node concept="37vLTw" id="cqtN3cg7ns" role="2JrQYb">
+                                    <ref role="3cqZAo" node="DYlgnAA7yf" resolve="nodeB" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="cqtN3cgjIl" role="2OqNvi">
+                                  <ref role="37wK5l" to="ec5l:~SNode.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                                  <node concept="2GrUjf" id="cqtN3cgmnT" role="37wK5m">
+                                    <ref role="2Gs0qQ" node="DYlgnAA7xB" resolve="p" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3cpWs3" id="cqtN3cfWtV" role="3uHU7B">
+                                <node concept="3cpWs3" id="cqtN3cfWtW" role="3uHU7B">
+                                  <node concept="Xl_RD" id="cqtN3cfWtX" role="3uHU7B">
+                                    <property role="Xl_RC" value="diff found " />
+                                  </node>
+                                  <node concept="2OqwBi" id="cqtN3cg4sL" role="3uHU7w">
+                                    <node concept="2JrnkZ" id="cqtN3cg4p2" role="2Oq$k0">
+                                      <node concept="37vLTw" id="cqtN3cg47g" role="2JrQYb">
+                                        <ref role="3cqZAo" node="DYlgnAA7yd" resolve="nodeA" />
+                                      </node>
+                                    </node>
+                                    <node concept="liA8E" id="cqtN3cg4$a" role="2OqNvi">
+                                      <ref role="37wK5l" to="ec5l:~SNode.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                                      <node concept="2GrUjf" id="cqtN3cg4Dk" role="37wK5m">
+                                        <ref role="2Gs0qQ" node="DYlgnAA7xB" resolve="p" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="Xl_RD" id="cqtN3cfWu1" role="3uHU7w">
+                                  <property role="Xl_RC" value=" " />
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -2385,12 +2420,32 @@
                 <node concept="3clFbF" id="DYlgnAA7$e" role="3cqZAp">
                   <node concept="3P9mCS" id="DYlgnAA7$f" role="3clFbG">
                     <ref role="37wK5l" node="DYlgnAA7vO" resolve="verboseMsg" />
-                    <node concept="Xl_RD" id="DYlgnAA7$g" role="37wK5m">
-                      <property role="Xl_RC" value="diff found" />
+                    <node concept="3cpWs3" id="cqtN3cfT_3" role="37wK5m">
+                      <node concept="2OqwBi" id="cqtN3cfTLY" role="3uHU7w">
+                        <node concept="37vLTw" id="cqtN3cfTG_" role="2Oq$k0">
+                          <ref role="3cqZAo" node="DYlgnAA7zI" resolve="bRef" />
+                        </node>
+                        <node concept="2ZHEkA" id="cqtN3cfTW0" role="2OqNvi" />
+                      </node>
+                      <node concept="3cpWs3" id="cqtN3cfTfG" role="3uHU7B">
+                        <node concept="3cpWs3" id="cqtN3cfSM2" role="3uHU7B">
+                          <node concept="Xl_RD" id="DYlgnAA7$g" role="3uHU7B">
+                            <property role="Xl_RC" value="diff found " />
+                          </node>
+                          <node concept="2OqwBi" id="cqtN3cfSSZ" role="3uHU7w">
+                            <node concept="37vLTw" id="cqtN3cfSOt" role="2Oq$k0">
+                              <ref role="3cqZAo" node="DYlgnAA7zA" resolve="aRef" />
+                            </node>
+                            <node concept="2ZHEkA" id="cqtN3cfT5v" role="2OqNvi" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="cqtN3cfThC" role="3uHU7w">
+                          <property role="Xl_RC" value=" " />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbH" id="DYlgnAA7$h" role="3cqZAp" />
                 <node concept="3clFbF" id="DYlgnAA7$i" role="3cqZAp">
                   <node concept="2OqwBi" id="DYlgnAA7$j" role="3clFbG">
                     <node concept="3cpWs2" id="DYlgnAA7$k" role="2Oq$k0">
