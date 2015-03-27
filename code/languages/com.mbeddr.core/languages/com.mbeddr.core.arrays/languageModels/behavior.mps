@@ -3850,7 +3850,43 @@
       </node>
       <node concept="3Tm1VV" id="4LXxPGc6f8h" role="1B3o_S" />
       <node concept="3clFbS" id="4LXxPGc6f8i" role="3clF47">
-        <node concept="3clFbH" id="4LXxPGc5d$T" role="3cqZAp" />
+        <node concept="3SKdUt" id="4SuMHYVUTbB" role="3cqZAp">
+          <node concept="3SKdUq" id="4SuMHYVUTNr" role="3SKWNk">
+            <property role="3SKdUp" value="In general the Pointer/Array syntax in declarations is very hard to read. A good general overview can be found" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4SuMHYVUUNN" role="3cqZAp">
+          <node concept="3SKdUq" id="4SuMHYVUVtp" role="3SKWNk">
+            <property role="3SKdUp" value="here: http://ieng9.ucsd.edu/~cs30x/rt_lt.rule.html. This explains the rules of thumb for the diretion to read" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4SuMHYVUXwY" role="3cqZAp">
+          <node concept="3SKdUq" id="4SuMHYVUYao" role="3SKWNk">
+            <property role="3SKdUp" value="An additional helpful website is http://cdecl.org/ which can spell out C declaraions in plain C (and vice versa)" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="4SuMHYVUZ1p" role="3cqZAp" />
+        <node concept="3SKdUt" id="4SuMHYVV0kU" role="3cqZAp">
+          <node concept="3SKdUq" id="4SuMHYVV0YJ" role="3SKWNk">
+            <property role="3SKdUp" value="* Arrays bind stronger than pointers" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4SuMHYVV1W2" role="3cqZAp">
+          <node concept="3SKdUq" id="4SuMHYVV2$z" role="3SKWNk">
+            <property role="3SKdUp" value="* Pointers are read from right to left (!) in normal C" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4SuMHYVV5p5" role="3cqZAp">
+          <node concept="3SKdUq" id="4SuMHYVV5p6" role="3SKWNk">
+            <property role="3SKdUp" value="* Arrays are read from left to right in normal C" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4SuMHYVV3_e" role="3cqZAp">
+          <node concept="3SKdUq" id="4SuMHYVV63a" role="3SKWNk">
+            <property role="3SKdUp" value="* () can be used to change the order in mixed ptr/array declarations" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="4SuMHYVUSeX" role="3cqZAp" />
         <node concept="3SKdUt" id="4LXxPGc5sNJ" role="3cqZAp">
           <node concept="3SKdUq" id="4LXxPGc5sQ7" role="3SKWNk">
             <property role="3SKdUp" value="Step1: find bottomType" />
