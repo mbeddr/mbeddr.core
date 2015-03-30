@@ -366,7 +366,7 @@
   </node>
   <node concept="2S6QgY" id="7k8WEKUE4qd">
     <property role="TrG5h" value="addConflictsConstraint" />
-    <ref role="2ZfgGC" to="qqyh:5USXI9Kzbai" resolve="Feature" />
+    <ref role="2ZfgGC" to="qqyh:3UhOf8WVJG2" resolve="AbstractFeature" />
     <node concept="2S6ZIM" id="7k8WEKUE4qe" role="2ZfVej">
       <node concept="3clFbS" id="7k8WEKUE4qf" role="2VODD2">
         <node concept="3clFbF" id="7k8WEKUE4qi" role="3cqZAp">
@@ -382,8 +382,8 @@
           <node concept="2OqwBi" id="7k8WEKUE4qr" role="3clFbG">
             <node concept="2OqwBi" id="7k8WEKUE4qm" role="2Oq$k0">
               <node concept="2Sf5sV" id="7k8WEKUE4ql" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="7k8WEKUE4qq" role="2OqNvi">
-                <ref role="3TtcxE" to="qqyh:7k8WEKUE3fj" />
+              <node concept="3Tsc0h" id="5JlqNRKz0Ps" role="2OqNvi">
+                <ref role="3TtcxE" to="qqyh:5JlqNRKkXK9" />
               </node>
             </node>
             <node concept="TSZUe" id="7k8WEKUE4qv" role="2OqNvi">
@@ -418,7 +418,7 @@
   </node>
   <node concept="2S6QgY" id="7k8WEKUE54i">
     <property role="TrG5h" value="addRequiressConstraint" />
-    <ref role="2ZfgGC" to="qqyh:5USXI9Kzbai" resolve="Feature" />
+    <ref role="2ZfgGC" to="qqyh:3UhOf8WVJG2" resolve="AbstractFeature" />
     <node concept="2S6ZIM" id="7k8WEKUE54j" role="2ZfVej">
       <node concept="3clFbS" id="7k8WEKUE54k" role="2VODD2">
         <node concept="3clFbF" id="7k8WEKUE54l" role="3cqZAp">
@@ -434,8 +434,8 @@
           <node concept="2OqwBi" id="7k8WEKUE54q" role="3clFbG">
             <node concept="2OqwBi" id="7k8WEKUE54r" role="2Oq$k0">
               <node concept="2Sf5sV" id="7k8WEKUE54s" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="7k8WEKUE54t" role="2OqNvi">
-                <ref role="3TtcxE" to="qqyh:7k8WEKUE3fj" />
+              <node concept="3Tsc0h" id="5JlqNRKyZWw" role="2OqNvi">
+                <ref role="3TtcxE" to="qqyh:5JlqNRKkXK9" />
               </node>
             </node>
             <node concept="TSZUe" id="7k8WEKUE54u" role="2OqNvi">
