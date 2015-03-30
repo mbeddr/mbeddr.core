@@ -927,68 +927,159 @@
           <node concept="3ygNvl" id="4QlxUWN3Ynx" role="39821P">
             <ref role="3ygNvj" to="ffeo:1diLdO26mQ8" />
             <node concept="3LWZYq" id="3RSFuf_JBkL" role="1juEy9">
-              <property role="3LWZYl" value="plugins/**" />
+              <property role="3LWZYl" value="Contents/plugins/**" />
             </node>
             <node concept="3LWZYq" id="ZY9ibph0Sd" role="1juEy9">
-              <property role="3LWZYl" value="bin/idea.properties" />
-            </node>
-          </node>
-          <node concept="398223" id="7tOXKyZvkJZ" role="39821P">
-            <node concept="m$_wl" id="4Nx_ua__BH" role="39821P">
-              <ref role="m_rDy" node="4Nx_ua__qN" resolve="com.mbeddr.mpsutil.make" />
-            </node>
-            <node concept="3ygNvl" id="2Lc6rkuhDw6" role="39821P">
-              <ref role="3ygNvj" to="ffeo:1diLdO26H7E" resolve="plugins" />
-              <node concept="3LWZYq" id="t6obDo64O1" role="1juEy9">
-                <property role="3LWZYl" value="migrationAssistant.jar" />
-              </node>
-              <node concept="3LWZYq" id="t6obDo64O2" role="1juEy9">
-                <property role="3LWZYl" value="mps-execution-configurations/**" />
-              </node>
-              <node concept="3LWZYq" id="t6obDo64O3" role="1juEy9">
-                <property role="3LWZYl" value="mps-java/**" />
-              </node>
-              <node concept="3LWZYq" id="4Nx_ua_K8a" role="1juEy9">
-                <property role="3LWZYl" value="mps-make/**" />
-              </node>
-              <node concept="3LWZYq" id="t6obDo64O5" role="1juEy9">
-                <property role="3LWZYl" value="mps-trove/**" />
-              </node>
-              <node concept="3LWZYq" id="t6obDo64O6" role="1juEy9">
-                <property role="3LWZYl" value="mpsmigration.jar" />
-              </node>
-              <node concept="3LWZYq" id="t6obDo64O7" role="1juEy9">
-                <property role="3LWZYl" value="samples.jar" />
-              </node>
-              <node concept="3LWZYq" id="t6obDo64O8" role="1juEy9">
-                <property role="3LWZYl" value="cvsIntegration/**" />
-              </node>
-              <node concept="3LWZYq" id="t6obDo64O9" role="1juEy9">
-                <property role="3LWZYl" value="jetpad/**" />
-              </node>
-              <node concept="3LWZYq" id="t6obDo64Oa" role="1juEy9">
-                <property role="3LWZYl" value="mps-console/**" />
-              </node>
-              <node concept="3LWZYq" id="t6obDo64Ob" role="1juEy9">
-                <property role="3LWZYl" value="mps-devkit/**" />
-              </node>
-              <node concept="3LWZYq" id="t6obDo64Oc" role="1juEy9">
-                <property role="3LWZYl" value="diagramEditor/**" />
-              </node>
-              <node concept="3LWZYq" id="t6obDo64Od" role="1juEy9">
-                <property role="3LWZYl" value="ideaIntegration.jar" />
-              </node>
-            </node>
-            <node concept="3_J27D" id="7tOXKyZvkK1" role="Nbhlr">
-              <node concept="3Mxwew" id="7tOXKyZvkL4" role="3MwsjC">
-                <property role="3MwjfP" value="plugins" />
-              </node>
+              <property role="3LWZYl" value="Contents/bin/idea.properties" />
             </node>
           </node>
           <node concept="398223" id="5msqZjqQD3e" role="39821P">
             <node concept="3_J27D" id="5msqZjqQD3f" role="Nbhlr">
               <node concept="3Mxwew" id="5msqZjqQD3g" role="3MwsjC">
                 <property role="3MwjfP" value="Contents" />
+              </node>
+            </node>
+            <node concept="398223" id="7tOXKyZvkJZ" role="39821P">
+              <node concept="m$_wl" id="4Nx_ua__BH" role="39821P">
+                <ref role="m_rDy" node="4Nx_ua__qN" resolve="com.mbeddr.mpsutil.make" />
+              </node>
+              <node concept="3ygNvl" id="2Lc6rkuhDw6" role="39821P">
+                <ref role="3ygNvj" to="ffeo:1diLdO26H7E" resolve="plugins" />
+                <node concept="3LWZYq" id="t6obDo64O1" role="1juEy9">
+                  <property role="3LWZYl" value="migrationAssistant.jar" />
+                </node>
+                <node concept="3LWZYq" id="t6obDo64O2" role="1juEy9">
+                  <property role="3LWZYl" value="mps-execution-configurations/**" />
+                </node>
+                <node concept="3LWZYq" id="t6obDo64O3" role="1juEy9">
+                  <property role="3LWZYl" value="mps-java/**" />
+                </node>
+                <node concept="3LWZYq" id="4Nx_ua_K8a" role="1juEy9">
+                  <property role="3LWZYl" value="mps-make/**" />
+                </node>
+                <node concept="3LWZYq" id="t6obDo64O5" role="1juEy9">
+                  <property role="3LWZYl" value="mps-trove/**" />
+                </node>
+                <node concept="3LWZYq" id="t6obDo64O6" role="1juEy9">
+                  <property role="3LWZYl" value="mpsmigration.jar" />
+                </node>
+                <node concept="3LWZYq" id="t6obDo64O7" role="1juEy9">
+                  <property role="3LWZYl" value="samples.jar" />
+                </node>
+                <node concept="3LWZYq" id="t6obDo64O8" role="1juEy9">
+                  <property role="3LWZYl" value="cvsIntegration/**" />
+                </node>
+                <node concept="3LWZYq" id="t6obDo64O9" role="1juEy9">
+                  <property role="3LWZYl" value="jetpad/**" />
+                </node>
+                <node concept="3LWZYq" id="t6obDo64Oa" role="1juEy9">
+                  <property role="3LWZYl" value="mps-console/**" />
+                </node>
+                <node concept="3LWZYq" id="t6obDo64Ob" role="1juEy9">
+                  <property role="3LWZYl" value="mps-devkit/**" />
+                </node>
+                <node concept="3LWZYq" id="t6obDo64Oc" role="1juEy9">
+                  <property role="3LWZYl" value="diagramEditor/**" />
+                </node>
+                <node concept="3LWZYq" id="t6obDo64Od" role="1juEy9">
+                  <property role="3LWZYl" value="ideaIntegration.jar" />
+                </node>
+              </node>
+              <node concept="3_J27D" id="7tOXKyZvkK1" role="Nbhlr">
+                <node concept="3Mxwew" id="7tOXKyZvkL4" role="3MwsjC">
+                  <property role="3MwjfP" value="plugins" />
+                </node>
+              </node>
+            </node>
+            <node concept="398223" id="5msqZjqQD3F" role="39821P">
+              <node concept="3_J27D" id="5msqZjqQD3G" role="Nbhlr">
+                <node concept="3Mxwew" id="5msqZjqQD3H" role="3MwsjC">
+                  <property role="3MwjfP" value="bin" />
+                </node>
+              </node>
+              <node concept="28jJK3" id="5msqZjqQD3I" role="39821P">
+                <node concept="398BVA" id="5msqZjqQD3J" role="28jJRO">
+                  <ref role="398BVh" node="5msqZjqR9E5" resolve="mps.home" />
+                  <node concept="2Ry0Ak" id="5msqZjqQD3K" role="iGT6I">
+                    <property role="2Ry0Am" value="bin" />
+                    <node concept="2Ry0Ak" id="5msqZjqQD3L" role="2Ry0An">
+                      <property role="2Ry0Am" value="mac" />
+                      <node concept="2Ry0Ak" id="5msqZjqQD3M" role="2Ry0An">
+                        <property role="2Ry0Am" value="libbreakgen.jnilib" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="28jJK3" id="5msqZjqQD3N" role="39821P">
+                <node concept="398BVA" id="5msqZjqQD3O" role="28jJRO">
+                  <ref role="398BVh" node="5msqZjqR9E5" resolve="mps.home" />
+                  <node concept="2Ry0Ak" id="5msqZjqQD3P" role="iGT6I">
+                    <property role="2Ry0Am" value="bin" />
+                    <node concept="2Ry0Ak" id="5msqZjqQD3Q" role="2Ry0An">
+                      <property role="2Ry0Am" value="mac" />
+                      <node concept="2Ry0Ak" id="5msqZjqQD3R" role="2Ry0An">
+                        <property role="2Ry0Am" value="libbreakgen64.jnilib" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="28jJK3" id="5msqZjqQD3S" role="39821P">
+                <property role="28jJZ5" value="755" />
+                <node concept="398BVA" id="5msqZjqQD3T" role="28jJRO">
+                  <ref role="398BVh" node="5msqZjqR9E5" resolve="mps.home" />
+                  <node concept="2Ry0Ak" id="5msqZjqQD3U" role="iGT6I">
+                    <property role="2Ry0Am" value="bin" />
+                    <node concept="2Ry0Ak" id="5msqZjqQD3V" role="2Ry0An">
+                      <property role="2Ry0Am" value="mac" />
+                      <node concept="2Ry0Ak" id="5msqZjqQD3W" role="2Ry0An">
+                        <property role="2Ry0Am" value="restarter" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="28jJK3" id="5msqZjqQD3X" role="39821P">
+                <property role="28jJZ5" value="755" />
+                <node concept="398BVA" id="5msqZjqQD3Y" role="28jJRO">
+                  <ref role="398BVh" node="5msqZjqR9E5" resolve="mps.home" />
+                  <node concept="2Ry0Ak" id="5msqZjqQD3Z" role="iGT6I">
+                    <property role="2Ry0Am" value="bin" />
+                    <node concept="2Ry0Ak" id="5msqZjqQD40" role="2Ry0An">
+                      <property role="2Ry0Am" value="mac" />
+                      <node concept="2Ry0Ak" id="5msqZjqQD41" role="2Ry0An">
+                        <property role="2Ry0Am" value="fsnotifier" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="28jJK3" id="5msqZjqQD42" role="39821P">
+                <node concept="3co7Ac" id="5msqZjqQD43" role="28jJR8">
+                  <property role="3co7Am" value="lf" />
+                  <property role="3cpA_W" value="true" />
+                </node>
+                <node concept="398BVA" id="5msqZjqQD44" role="28jJRO">
+                  <ref role="398BVh" node="5msqZjqR9E5" resolve="mps.home" />
+                  <node concept="2Ry0Ak" id="5msqZjqQD45" role="iGT6I">
+                    <property role="2Ry0Am" value="bin" />
+                    <node concept="2Ry0Ak" id="5msqZjqQD46" role="2Ry0An">
+                      <property role="2Ry0Am" value="mps.vmoptions" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="28jJK3" id="2HHioL2NUlY" role="39821P">
+                <node concept="398BVA" id="2HHioL2NUlZ" role="28jJRO">
+                  <ref role="398BVh" node="7uZw0yZ2_Jf" resolve="mbeddr.github.core.home" />
+                  <node concept="2Ry0Ak" id="2HHioL2NUm0" role="iGT6I">
+                    <property role="2Ry0Am" value="rcp" />
+                    <node concept="2Ry0Ak" id="2HHioL2NUm1" role="2Ry0An">
+                      <property role="2Ry0Am" value="idea.properties" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="398223" id="5msqZjqQD3h" role="39821P">
@@ -1059,97 +1150,6 @@
                         <property role="2Ry0Am" value="Info.plist" />
                       </node>
                     </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="398223" id="5msqZjqQD3F" role="39821P">
-            <node concept="3_J27D" id="5msqZjqQD3G" role="Nbhlr">
-              <node concept="3Mxwew" id="5msqZjqQD3H" role="3MwsjC">
-                <property role="3MwjfP" value="bin" />
-              </node>
-            </node>
-            <node concept="28jJK3" id="5msqZjqQD3I" role="39821P">
-              <node concept="398BVA" id="5msqZjqQD3J" role="28jJRO">
-                <ref role="398BVh" node="5msqZjqR9E5" resolve="mps.home" />
-                <node concept="2Ry0Ak" id="5msqZjqQD3K" role="iGT6I">
-                  <property role="2Ry0Am" value="bin" />
-                  <node concept="2Ry0Ak" id="5msqZjqQD3L" role="2Ry0An">
-                    <property role="2Ry0Am" value="mac" />
-                    <node concept="2Ry0Ak" id="5msqZjqQD3M" role="2Ry0An">
-                      <property role="2Ry0Am" value="libbreakgen.jnilib" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="5msqZjqQD3N" role="39821P">
-              <node concept="398BVA" id="5msqZjqQD3O" role="28jJRO">
-                <ref role="398BVh" node="5msqZjqR9E5" resolve="mps.home" />
-                <node concept="2Ry0Ak" id="5msqZjqQD3P" role="iGT6I">
-                  <property role="2Ry0Am" value="bin" />
-                  <node concept="2Ry0Ak" id="5msqZjqQD3Q" role="2Ry0An">
-                    <property role="2Ry0Am" value="mac" />
-                    <node concept="2Ry0Ak" id="5msqZjqQD3R" role="2Ry0An">
-                      <property role="2Ry0Am" value="libbreakgen64.jnilib" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="5msqZjqQD3S" role="39821P">
-              <property role="28jJZ5" value="755" />
-              <node concept="398BVA" id="5msqZjqQD3T" role="28jJRO">
-                <ref role="398BVh" node="5msqZjqR9E5" resolve="mps.home" />
-                <node concept="2Ry0Ak" id="5msqZjqQD3U" role="iGT6I">
-                  <property role="2Ry0Am" value="bin" />
-                  <node concept="2Ry0Ak" id="5msqZjqQD3V" role="2Ry0An">
-                    <property role="2Ry0Am" value="mac" />
-                    <node concept="2Ry0Ak" id="5msqZjqQD3W" role="2Ry0An">
-                      <property role="2Ry0Am" value="restarter" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="5msqZjqQD3X" role="39821P">
-              <property role="28jJZ5" value="755" />
-              <node concept="398BVA" id="5msqZjqQD3Y" role="28jJRO">
-                <ref role="398BVh" node="5msqZjqR9E5" resolve="mps.home" />
-                <node concept="2Ry0Ak" id="5msqZjqQD3Z" role="iGT6I">
-                  <property role="2Ry0Am" value="bin" />
-                  <node concept="2Ry0Ak" id="5msqZjqQD40" role="2Ry0An">
-                    <property role="2Ry0Am" value="mac" />
-                    <node concept="2Ry0Ak" id="5msqZjqQD41" role="2Ry0An">
-                      <property role="2Ry0Am" value="fsnotifier" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="5msqZjqQD42" role="39821P">
-              <node concept="3co7Ac" id="5msqZjqQD43" role="28jJR8">
-                <property role="3co7Am" value="lf" />
-                <property role="3cpA_W" value="true" />
-              </node>
-              <node concept="398BVA" id="5msqZjqQD44" role="28jJRO">
-                <ref role="398BVh" node="5msqZjqR9E5" resolve="mps.home" />
-                <node concept="2Ry0Ak" id="5msqZjqQD45" role="iGT6I">
-                  <property role="2Ry0Am" value="bin" />
-                  <node concept="2Ry0Ak" id="5msqZjqQD46" role="2Ry0An">
-                    <property role="2Ry0Am" value="mps.vmoptions" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="2HHioL2NUlY" role="39821P">
-              <node concept="398BVA" id="2HHioL2NUlZ" role="28jJRO">
-                <ref role="398BVh" node="7uZw0yZ2_Jf" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="2HHioL2NUm0" role="iGT6I">
-                  <property role="2Ry0Am" value="rcp" />
-                  <node concept="2Ry0Ak" id="2HHioL2NUm1" role="2Ry0An">
-                    <property role="2Ry0Am" value="idea.properties" />
                   </node>
                 </node>
               </node>
