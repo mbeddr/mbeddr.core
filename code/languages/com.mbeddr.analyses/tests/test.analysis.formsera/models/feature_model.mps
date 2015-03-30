@@ -98,6 +98,9 @@
       </concept>
     </language>
     <language id="e401b447-8019-4ccd-a72c-bfb0230f5782" name="com.mbeddr.cc.var.fm">
+      <concept id="4508614440797534978" name="com.mbeddr.cc.var.fm.structure.AbstractFeature" flags="ng" index="2vMJK">
+        <child id="6617313141260016649" name="crossConstraints" index="2FxFsO" />
+      </concept>
       <concept id="8473958930087782177" name="com.mbeddr.cc.var.fm.structure.RootFeature" flags="ng" index="28I2Iu" />
       <concept id="7642065485959505457" name="com.mbeddr.cc.var.fm.structure.FeatureRef" flags="ng" index="2qVrgw">
         <reference id="7642065485959505458" name="feature" index="2qVrgz" />
@@ -113,7 +116,6 @@
       <concept id="6825476687691297426" name="com.mbeddr.cc.var.fm.structure.Feature" flags="ng" index="Id4hK">
         <child id="6825476687691297427" name="constraint" index="Id4hL" />
         <child id="6825476687691297428" name="children" index="Id4hQ" />
-        <child id="8433257123783652307" name="crossConstraints" index="1fCc5Z" />
       </concept>
       <concept id="6825476687691297434" name="com.mbeddr.cc.var.fm.structure.FeatureModel" flags="ng" index="Id4hS">
         <child id="6825476687691297435" name="root" index="Id4hT" />
@@ -167,7 +169,7 @@
           </node>
           <node concept="Id4hK" id="2HCtBv$ARxx" role="Id4hQ">
             <property role="TrG5h" value="HeartBeat" />
-            <node concept="1fCc5X" id="19O7J9e7vX" role="1fCc5Z">
+            <node concept="1fCc5X" id="19O7J9e7vX" role="2FxFsO">
               <ref role="1fCc5C" node="2HCtBv$ARx_" resolve="FlexRay" />
             </node>
           </node>
@@ -182,7 +184,7 @@
           </node>
           <node concept="Id4hK" id="2HCtBv$ARx_" role="Id4hQ">
             <property role="TrG5h" value="FlexRay" />
-            <node concept="1fCc5X" id="nDjXlEZENs" role="1fCc5Z">
+            <node concept="1fCc5X" id="nDjXlEZENs" role="2FxFsO">
               <ref role="1fCc5C" node="2HCtBv$ARxv" resolve="Logging" />
             </node>
           </node>

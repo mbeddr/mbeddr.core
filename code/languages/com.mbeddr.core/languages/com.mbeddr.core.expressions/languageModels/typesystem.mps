@@ -15,7 +15,6 @@
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
-    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
@@ -24,12 +23,8 @@
     <import index="t3eg" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" />
     <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="epq1" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.math(JDK/java.math@java_stub)" />
-    <import index="9zoj" ref="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" />
     <import index="e8zp" ref="r:58a558d9-50ed-4b86-91cf-66ce18b52794(com.mbeddr.core.expressions.actions)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
-    <import index="lgbc" ref="r:a296e8c9-b717-45da-a3a4-9f0b7cc360c0(com.mbeddt.core.expressions.pluginSolution.plugin)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -2304,37 +2299,6 @@
     <node concept="1YaCAy" id="477NaqBEQEA" role="1YuTPh">
       <property role="TrG5h" value="floatType" />
       <ref role="1YaFvo" to="mj1l:477NaqBEMuv" resolve="FloatType" />
-    </node>
-  </node>
-  <node concept="1YbPZF" id="5IyGbwWXmuu">
-    <property role="TrG5h" value="typeof_AbstractDotExpression" />
-    <property role="3GE5qa" value="memberaccess" />
-    <node concept="3clFbS" id="5IyGbwWXmuv" role="18ibNy">
-      <node concept="1Z5TYs" id="5IyGbwWXmuD" role="3cqZAp">
-        <node concept="mw_s8" id="5IyGbwWXmuH" role="1ZfhKB">
-          <node concept="1Z2H0r" id="5IyGbwWXmuI" role="mwGJk">
-            <node concept="2OqwBi" id="5IyGbwWXmuL" role="1Z2MuG">
-              <node concept="1YBJjd" id="5IyGbwWXmuK" role="2Oq$k0">
-                <ref role="1YBMHb" node="5IyGbwWXmuw" resolve="ade" />
-              </node>
-              <node concept="3TrEf2" id="1gDNXlE1QKZ" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:1gDNXlE1QKV" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="5IyGbwWXmuG" role="1ZfhK$">
-          <node concept="1Z2H0r" id="5IyGbwWXmuy" role="mwGJk">
-            <node concept="1YBJjd" id="5IyGbwWXmu$" role="1Z2MuG">
-              <ref role="1YBMHb" node="5IyGbwWXmuw" resolve="ade" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="5IyGbwWXmuw" role="1YuTPh">
-      <property role="TrG5h" value="ade" />
-      <ref role="1YaFvo" to="mj1l:1gDNXlE1Mu$" resolve="AbstractDotExpression" />
     </node>
   </node>
   <node concept="3hdX5o" id="7igR0Vu9L3s">

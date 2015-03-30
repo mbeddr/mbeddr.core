@@ -1,6 +1,7 @@
 pushd .
 
 echo ===== Rendering and Copying Visualizations
+mkdir temp
 cd temp
 java -jar ../plantuml.jar *.puml
 cd ..

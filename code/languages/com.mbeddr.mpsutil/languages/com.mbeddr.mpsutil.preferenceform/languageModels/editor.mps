@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:634fbd89-9cb6-498f-8a6f-4d903c3bc9ac(com.mbeddr.mpsutil.preferenceform.editor)">
+<model ref="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:634fbd89-9cb6-498f-8a6f-4d903c3bc9ac(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="3iid" ref="r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform.structure)" />
-    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
-    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="3iid" ref="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)" />
+    <import index="tpco" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core/jetbrains.mps.lang.core.editor)" />
+    <import index="tpen" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.editor)" />
+    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -352,11 +352,52 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="2DIWO7Ye1yg">
+    <property role="3GE5qa" value="getter" />
+    <ref role="1XX52x" to="3iid:86yKXFVk5m" resolve="GetPreferenceFormInProjectOperation" />
+    <node concept="PMmxH" id="2DIWO7Ye1yi" role="2wV5jI">
+      <ref role="PMmxG" node="2DIWO7Ye1rz" resolve="IPreferenceFormExpressionEditor" />
+    </node>
+  </node>
   <node concept="24kQdi" id="2DIWO7YdLsV">
     <property role="3GE5qa" value="getter" />
     <ref role="1XX52x" to="3iid:5YZamx7K_J4" resolve="GetPreferenceFormInApplicationExpression" />
     <node concept="PMmxH" id="2DIWO7Ye1xw" role="2wV5jI">
       <ref role="PMmxG" node="2DIWO7Ye1rz" resolve="IPreferenceFormExpressionEditor" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="46uejXd4ZA$">
+    <property role="3GE5qa" value="property" />
+    <ref role="1XX52x" to="3iid:46uejXd4Z9J" resolve="IntegerFieldPreferenceFormProperty" />
+    <node concept="3EZMnI" id="46uejXd54jC" role="2wV5jI">
+      <node concept="PMmxH" id="46uejXd54jD" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0A7n" id="46uejXd54jE" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="46uejXd54jF" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="11L4FC" id="46uejXd54jG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7Hbe8h6ZgXW" role="3EZMnx">
+        <ref role="1NtTu8" to="3iid:7Hbe8h6YX0T" />
+      </node>
+      <node concept="3EZMnI" id="46uejXd54jI" role="3EZMnx">
+        <node concept="VPM3Z" id="46uejXd54jJ" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="46uejXd54jK" role="3EZMnx">
+          <property role="3F0ifm" value="=" />
+        </node>
+        <node concept="3F0A7n" id="46uejXd54jL" role="3EZMnx">
+          <ref role="1NtTu8" to="3iid:46uejXd54j2" resolve="defaultValue" />
+        </node>
+        <node concept="2iRfu4" id="46uejXd54jM" role="2iSdaV" />
+      </node>
+      <node concept="2iRfu4" id="46uejXd54jN" role="2iSdaV" />
     </node>
   </node>
   <node concept="PKFIW" id="2DIWO7Ye1rz">
@@ -396,47 +437,6 @@
         </node>
       </node>
       <node concept="2iRfu4" id="2DIWO7Y85nu" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="2DIWO7Ye1yg">
-    <property role="3GE5qa" value="getter" />
-    <ref role="1XX52x" to="3iid:86yKXFVk5m" resolve="GetPreferenceFormInProjectOperation" />
-    <node concept="PMmxH" id="2DIWO7Ye1yi" role="2wV5jI">
-      <ref role="PMmxG" node="2DIWO7Ye1rz" resolve="IPreferenceFormExpressionEditor" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="46uejXd4ZA$">
-    <property role="3GE5qa" value="property" />
-    <ref role="1XX52x" to="3iid:46uejXd4Z9J" resolve="IntegerFieldPreferenceFormProperty" />
-    <node concept="3EZMnI" id="46uejXd54jC" role="2wV5jI">
-      <node concept="PMmxH" id="46uejXd54jD" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      </node>
-      <node concept="3F0A7n" id="46uejXd54jE" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="3F0ifn" id="46uejXd54jF" role="3EZMnx">
-        <property role="3F0ifm" value=":" />
-        <node concept="11L4FC" id="46uejXd54jG" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="7Hbe8h6ZgXW" role="3EZMnx">
-        <ref role="1NtTu8" to="3iid:7Hbe8h6YX0T" />
-      </node>
-      <node concept="3EZMnI" id="46uejXd54jI" role="3EZMnx">
-        <node concept="VPM3Z" id="46uejXd54jJ" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="3F0ifn" id="46uejXd54jK" role="3EZMnx">
-          <property role="3F0ifm" value="=" />
-        </node>
-        <node concept="3F0A7n" id="46uejXd54jL" role="3EZMnx">
-          <ref role="1NtTu8" to="3iid:46uejXd54j2" resolve="defaultValue" />
-        </node>
-        <node concept="2iRfu4" id="46uejXd54jM" role="2iSdaV" />
-      </node>
-      <node concept="2iRfu4" id="46uejXd54jN" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="77gEP6zgLr3">
@@ -490,6 +490,40 @@
         <ref role="1NtTu8" to="3iid:77gEP6zh79o" />
       </node>
       <node concept="2iRkQZ" id="77gEP6zh6TO" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="fFi6Pd8Jg">
+    <property role="3GE5qa" value="property" />
+    <ref role="1XX52x" to="3iid:fFi6Pd8j6" resolve="PassWordFieldPreferenceFormProperty" />
+    <node concept="3EZMnI" id="fFi6Pd8Jh" role="2wV5jI">
+      <node concept="PMmxH" id="fFi6Pd8Ji" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0A7n" id="fFi6Pd8Jj" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="fFi6Pd8Jk" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="11L4FC" id="fFi6Pd8Jl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5ZUMPTUIX92" role="3EZMnx">
+        <ref role="1NtTu8" to="3iid:7Hbe8h6YX0T" />
+      </node>
+      <node concept="3EZMnI" id="fFi6Pd8Jn" role="3EZMnx">
+        <node concept="VPM3Z" id="fFi6Pd8Jo" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="fFi6Pd8Jp" role="3EZMnx">
+          <property role="3F0ifm" value="=" />
+        </node>
+        <node concept="3F0A7n" id="fFi6Pd8Jq" role="3EZMnx">
+          <ref role="1NtTu8" to="3iid:fFi6Pd8j7" resolve="defaultValue" />
+        </node>
+        <node concept="2iRfu4" id="fFi6Pd8Jr" role="2iSdaV" />
+      </node>
+      <node concept="2iRfu4" id="fFi6Pd8Js" role="2iSdaV" />
     </node>
   </node>
 </model>

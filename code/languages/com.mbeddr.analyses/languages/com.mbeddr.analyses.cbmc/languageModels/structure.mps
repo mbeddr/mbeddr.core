@@ -107,6 +107,10 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
+    <node concept="1TJgyi" id="6RCrcvOtNXu" role="1TKVEl">
+      <property role="TrG5h" value="explanation" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6$qhYL9Fk4m">
     <property role="TrG5h" value="VerificationConditionBase" />
@@ -420,6 +424,12 @@
       <property role="1uS6qv" value="16 bits" />
       <property role="2fHolG" value="16 bits" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="72mSD5R_OCr">
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="ValidEnumerationValue" />
+    <property role="34LRSv" value="valid_enum" />
+    <ref role="1TJDcQ" to="mj1l:6AJWN7GdLOh" resolve="UnaryLogicalExpression" />
   </node>
 </model>
 

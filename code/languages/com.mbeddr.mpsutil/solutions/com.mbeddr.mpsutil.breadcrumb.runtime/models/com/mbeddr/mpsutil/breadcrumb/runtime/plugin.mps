@@ -8646,17 +8646,38 @@
           </node>
         </node>
         <node concept="3clFbH" id="4o4$mVTzrH7" role="3cqZAp" />
-        <node concept="3clFbF" id="4ulp8Vg0eUP" role="3cqZAp">
-          <node concept="2OqwBi" id="4ulp8Vg0mLc" role="3clFbG">
-            <node concept="2OqwBi" id="4ulp8Vg0jsx" role="2Oq$k0">
-              <node concept="Xjq3P" id="4ulp8Vg0eUN" role="2Oq$k0" />
-              <node concept="liA8E" id="4ulp8Vg0m_5" role="2OqNvi">
+        <node concept="3cpWs8" id="263VI$g5NSY" role="3cqZAp">
+          <node concept="3cpWsn" id="263VI$g5NSZ" role="3cpWs9">
+            <property role="TrG5h" value="parent" />
+            <node concept="3uibUv" id="263VI$g5NSV" role="1tU5fm">
+              <ref role="3uigEE" to="1t7x:~Container" resolve="Container" />
+            </node>
+            <node concept="2OqwBi" id="263VI$g5NT0" role="33vP2m">
+              <node concept="Xjq3P" id="263VI$g5NT1" role="2Oq$k0" />
+              <node concept="liA8E" id="263VI$g5NT2" role="2OqNvi">
                 <ref role="37wK5l" to="1t7x:~Component.getParent():java.awt.Container" resolve="getParent" />
               </node>
             </node>
-            <node concept="liA8E" id="4ulp8Vg0qvH" role="2OqNvi">
-              <ref role="37wK5l" to="1t7x:~Container.remove(java.awt.Component):void" resolve="remove" />
-              <node concept="Xjq3P" id="4ulp8Vg0q_a" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="263VI$g5Gm2" role="3cqZAp">
+          <node concept="3clFbS" id="263VI$g5Gm4" role="3clFbx">
+            <node concept="3clFbF" id="4ulp8Vg0eUP" role="3cqZAp">
+              <node concept="2OqwBi" id="4ulp8Vg0mLc" role="3clFbG">
+                <node concept="37vLTw" id="263VI$g5NT4" role="2Oq$k0">
+                  <ref role="3cqZAo" node="263VI$g5NSZ" resolve="parent" />
+                </node>
+                <node concept="liA8E" id="4ulp8Vg0qvH" role="2OqNvi">
+                  <ref role="37wK5l" to="1t7x:~Container.remove(java.awt.Component):void" resolve="remove" />
+                  <node concept="Xjq3P" id="4ulp8Vg0q_a" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="263VI$g5MsL" role="3clFbw">
+            <node concept="10Nm6u" id="263VI$g5MH$" role="3uHU7w" />
+            <node concept="37vLTw" id="263VI$g5NT3" role="3uHU7B">
+              <ref role="3cqZAo" node="263VI$g5NSZ" resolve="parent" />
             </node>
           </node>
         </node>

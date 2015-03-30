@@ -26,7 +26,7 @@
     <import index="3h46" ref="r:d540de81-ea7d-4732-953c-fa9c34672949(com.mbeddr.analyses.cbmc.core.rt.testing_utils)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="v0r9" ref="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" />
-    <import index="yz9a" ref="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" implicit="true" />
+    <import index="yz9a" ref="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -638,6 +638,20 @@
               <ref role="ehGHo" to="yz9a:4VEDcE28GXT" resolve="TestCaseRef" />
             </node>
           </node>
+          <node concept="38rIoz" id="43x69gcELsn" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="43x69gcELAf" role="38rYrG">
+              <ref role="ehGHo" to="yz9a:5so5TTr6RXr" resolve="TestCase" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="43x69gcELAj" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="43x69gcELEF" role="38rYrG">
+              <ref role="ehGHo" to="yz9a:5so5TTr6RXr" resolve="TestCase" />
+            </node>
+          </node>
           <node concept="38rIoz" id="57Wj6IPetoO" role="38rM$J">
             <property role="38rIoG" value="enter instance config" />
             <property role="38rMdH" value="wiring" />
@@ -783,6 +797,20 @@
             <property role="38rMdH" value="testCase1" />
             <node concept="3Tqbb2" id="13FtHz69kz4" role="38rYrG">
               <ref role="ehGHo" to="yz9a:4VEDcE28GXT" resolve="TestCaseRef" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="43x69gcFJtY" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="43x69gcFJtZ" role="38rYrG">
+              <ref role="ehGHo" to="yz9a:5so5TTr6RXr" resolve="TestCase" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="43x69gcFJu0" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="43x69gcFJu1" role="38rYrG">
+              <ref role="ehGHo" to="yz9a:5so5TTr6RXr" resolve="TestCase" />
             </node>
           </node>
           <node concept="38rIoz" id="13FtHz69kz5" role="38rM$J">

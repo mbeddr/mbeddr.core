@@ -6,6 +6,7 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
   </languages>
   <imports>
     <import index="xiaw" ref="r:0cb4b184-9d83-4ed6-8dd4-842bbe536e91(com.mbeddr.analyses.cbmc.rt.analyses.claims)" />
@@ -226,9 +227,6 @@
       <node concept="3uibUv" id="3x0R1LJ5Cp5" role="11_B2D">
         <ref role="3uigEE" node="3x0R1LJ5Cqx" resolve="CBMCAssertResult" />
       </node>
-      <node concept="3uibUv" id="3x0R1LJ5Cp6" role="11_B2D">
-        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
-      </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LJ5Cp7" role="jymVt" />
     <node concept="Wx3nA" id="42G5eOpSOW9" role="jymVt">
@@ -326,7 +324,7 @@
             <ref role="3cqZAo" node="3x0R1LJ5Cpb" resolve="tool" />
           </node>
           <node concept="Xl_RD" id="3x0R1LJ5Cpj" role="37wK5m">
-            <property role="Xl_RC" value="assertion" />
+            <property role="Xl_RC" value="Assertions Analysis" />
           </node>
           <node concept="37vLTw" id="5uqRFp9415e" role="37wK5m">
             <ref role="3cqZAo" node="5uqRFp940GO" resolve="pi" />
@@ -596,41 +594,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LJ5Cql" role="jymVt" />
-    <node concept="3clFb_" id="3x0R1LJ5Cqm" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="filterClaims" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <node concept="NWlO9" id="4fvA6ORCZDj" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
-      <node concept="_YKpA" id="3x0R1LJ5Cqn" role="3clF45">
-        <node concept="3uibUv" id="3x0R1LJ5Cqo" role="_ZDj9">
-          <ref role="3uigEE" to="rbq9:mb65_hnqw$" resolve="CBMCRawClaim" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="3x0R1LJ5Cqp" role="3clF46">
-        <property role="TrG5h" value="claims" />
-        <node concept="_YKpA" id="3x0R1LJ5Cqq" role="1tU5fm">
-          <node concept="3uibUv" id="3x0R1LJ5Cqr" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:mb65_hnqw$" resolve="CBMCRawClaim" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tmbuc" id="3x0R1LJ5Cqs" role="1B3o_S" />
-      <node concept="3clFbS" id="3x0R1LJ5Cqt" role="3clF47">
-        <node concept="3cpWs6" id="3x0R1LJ5Cqu" role="3cqZAp">
-          <node concept="37vLTw" id="3x0R1LJ5Cqv" role="3cqZAk">
-            <ref role="3cqZAo" node="3x0R1LJ5Cqp" resolve="claims" />
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="3x0R1LJ5Cqw" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="4fvA6ORD0_a" role="jymVt" />
-    <node concept="2tJIrI" id="4fvA6ORD0Qh" role="jymVt" />
     <node concept="3clFb_" id="4fvA6ORD1sm" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getAnalysisUserFriendlyName" />

@@ -286,6 +286,22 @@
       <concept id="1196350785113" name="jetbrains.mps.lang.quotation.structure.Quotation" flags="nn" index="2c44tf">
         <child id="1196350785114" name="quotedNode" index="2c44tc" />
       </concept>
+      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
+        <reference id="5455284157994012188" name="link" index="2pIpSl" />
+      </concept>
+      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
+        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+      </concept>
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
+        <child id="8182547171709752112" name="expression" index="36biLW" />
+      </concept>
     </language>
     <language id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext">
       <concept id="3620245844557684502" name="com.mbeddr.core.debug.blext.structure.ComplexValueExpr" flags="ng" index="uj6PW">
@@ -3454,6 +3470,31 @@
     </node>
     <node concept="13hLZK" id="71UKpntmYwq" role="13h7CW">
       <node concept="3clFbS" id="71UKpntmYwr" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3o2OLGv7QBS" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="createType" />
+      <ref role="13i0hy" to="qd6m:3o2OLGv7CoR" resolve="createType" />
+      <node concept="3Tm1VV" id="3o2OLGv7QBT" role="1B3o_S" />
+      <node concept="3clFbS" id="3o2OLGv7QBW" role="3clF47">
+        <node concept="3clFbF" id="3o2OLGv7U42" role="3cqZAp">
+          <node concept="2pJPEk" id="3o2OLGv7U40" role="3clFbG">
+            <node concept="2pJPED" id="3o2OLGv7U4o" role="2pJPEn">
+              <ref role="2pJxaS" to="v7ag:7M388_GyEh8" resolve="ComponentType" />
+              <node concept="2pIpSj" id="3o2OLGv7U4T" role="2pJxcM">
+                <ref role="2pIpSl" to="v7ag:7M388_GyEh9" />
+                <node concept="36biLy" id="3o2OLGv7U5u" role="2pJxcZ">
+                  <node concept="13iPFW" id="3o2OLGv7U64" role="36biLW" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3o2OLGv7QBX" role="3clF45">
+        <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="71UKpntmYwX">
@@ -9636,6 +9677,31 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="3o2OLGv7UZR" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="createType" />
+      <ref role="13i0hy" to="qd6m:3o2OLGv7CoR" resolve="createType" />
+      <node concept="3Tm1VV" id="3o2OLGv7UZS" role="1B3o_S" />
+      <node concept="3clFbS" id="3o2OLGv7UZV" role="3clF47">
+        <node concept="3clFbF" id="3o2OLGv7V90" role="3cqZAp">
+          <node concept="2pJPEk" id="3o2OLGv7V8Y" role="3clFbG">
+            <node concept="2pJPED" id="3o2OLGv7V9m" role="2pJPEn">
+              <ref role="2pJxaS" to="v7ag:71UKpntojUs" resolve="InterfaceType" />
+              <node concept="2pIpSj" id="3o2OLGv7V9S" role="2pJxcM">
+                <ref role="2pIpSl" to="v7ag:71UKpntojUt" />
+                <node concept="36biLy" id="3o2OLGv7Vau" role="2pJxcZ">
+                  <node concept="13iPFW" id="3o2OLGv7Va$" role="36biLW" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3o2OLGv7UZW" role="3clF45">
+        <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="5oFMniD9Orn">
     <property role="3GE5qa" value="intf.cs" />
@@ -11457,6 +11523,23 @@
         <ref role="ehGHo" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
       </node>
     </node>
+    <node concept="13i0hz" id="2ldF5_G3wdv" role="13h7CS">
+      <property role="TrG5h" value="getPriolevel" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="false" />
+      <property role="13i0is" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="ywuz:5HxjapwgqKu" resolve="getPriolevel" />
+      <node concept="3Tm1VV" id="2ldF5_G3wdw" role="1B3o_S" />
+      <node concept="3clFbS" id="2ldF5_G3wd_" role="3clF47">
+        <node concept="3clFbF" id="2ldF5_G3MDh" role="3cqZAp">
+          <node concept="3cmrfG" id="2ldF5_G3MDg" role="3clFbG">
+            <property role="3cmrfH" value="10000" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="2ldF5_G3wdA" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="4v7hlN6x1z_">
     <property role="3GE5qa" value="adapter" />
@@ -12163,7 +12246,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="7moPk052zgG" role="3clF45">
-        <ref role="ehGHo" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+        <ref role="ehGHo" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
       </node>
     </node>
     <node concept="13hLZK" id="2zhwXA$TG$W" role="13h7CW">
@@ -12899,7 +12982,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="7moPk052xAu" role="3clF45">
-        <ref role="ehGHo" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+        <ref role="ehGHo" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
       </node>
     </node>
     <node concept="13i0hz" id="4WY_RKG_$mQ" role="13h7CS">

@@ -9,12 +9,12 @@
   <import index="tpco" modelUID="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" version="-1" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="40" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
+  <import index="yv4j" modelUID="r:6a63246b-e5f4-49e4-8474-0744982532d8(com.mbeddr.mpsutil.breadcrumb.editor.structure)" version="-1" implicit="yes" />
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1609581366353531514" nodeInfo="ig">
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="nm5n.1609581366353528038" resolveInfo="TestHierarchicalStructureRoot" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type=".com.mbeddr.mpsutil.breadcrumb.structure.BreadcrumbEditor" id="1609581366353555515" nodeInfo="ng">
-      <property name="" value="true" />
-      <property name="showBreadcrumbIcons" value="true" />
-      <node role="content" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="1609581366353647930" nodeInfo="sg">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="yv4j.BreadcrumbEditor" typeId="yv4j.4317384196709001934" id="6341291359869182852" nodeInfo="ng">
+      <property name="showBreadcrumbIcons" nameId="yv4j.4317384196709001935" value="true" />
+      <node role="content" roleId="yv4j.4317384196709001940" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="1609581366353647930" nodeInfo="sg">
         <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="1609581366353555902" resolveInfo="TestHierarchicalStructureRootEditor" />
       </node>
     </node>
@@ -69,8 +69,9 @@
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1609581366353555807" nodeInfo="ig">
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="nm5n.1609581366353555709" resolveInfo="TestHierarchicalStructureRootWithoutIcons" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type=".com.mbeddr.mpsutil.breadcrumb.structure.BreadcrumbEditor" id="1609581366353555967" nodeInfo="ng">
-      <node role="content" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="1609581366353627703" nodeInfo="sg">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="yv4j.BreadcrumbEditor" typeId="yv4j.4317384196709001934" id="6341291359869182812" nodeInfo="ng">
+      <property name="showBreadcrumbIcons" nameId="yv4j.4317384196709001935" value="true" />
+      <node role="content" roleId="yv4j.4317384196709001940" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="1609581366353627703" nodeInfo="sg">
         <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="1609581366353555902" resolveInfo="TestHierarchicalStructureRootEditor" />
       </node>
     </node>
