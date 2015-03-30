@@ -924,16 +924,16 @@
       </node>
       <node concept="3981dG" id="5msqZjqQD3b" role="39821P">
         <node concept="398223" id="5msqZjqQD3c" role="39821P">
-          <node concept="3ygNvl" id="4QlxUWN3Ynx" role="39821P">
-            <ref role="3ygNvj" to="ffeo:1diLdO26mQ8" />
-            <node concept="3LWZYq" id="3RSFuf_JBkL" role="1juEy9">
-              <property role="3LWZYl" value="Contents/plugins/**" />
-            </node>
-            <node concept="3LWZYq" id="ZY9ibph0Sd" role="1juEy9">
-              <property role="3LWZYl" value="Contents/bin/idea.properties" />
-            </node>
-          </node>
           <node concept="398223" id="5msqZjqQD3e" role="39821P">
+            <node concept="3ygNvl" id="4QlxUWN3Ynx" role="39821P">
+              <ref role="3ygNvj" to="ffeo:1diLdO26mQ8" />
+              <node concept="3LWZYq" id="3RSFuf_JBkL" role="1juEy9">
+                <property role="3LWZYl" value="plugins/**" />
+              </node>
+              <node concept="3LWZYq" id="ZY9ibph0Sd" role="1juEy9">
+                <property role="3LWZYl" value="bin/idea.properties" />
+              </node>
+            </node>
             <node concept="3_J27D" id="5msqZjqQD3f" role="Nbhlr">
               <node concept="3Mxwew" id="5msqZjqQD3g" role="3MwsjC">
                 <property role="3MwjfP" value="Contents" />
