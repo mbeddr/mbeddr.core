@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="b5cddd13-6885-4ea1-8334-9dff5c268ec0/r:3418fb3c-64e1-470a-ad7d-54f46b307865(com.mbeddr.mpsutil.margincell#3020585710860866188/com.mbeddr.mpsutil.margincell.generator.template.main@generator)">
+<model ref="r:ea19754a-9832-4da5-825d-512ac0ed07f1(com.mbeddr.mpsutil.margincell.editor.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
+    <use id="e33ff641-cba8-4703-98f4-59e63936d940" name="com.mbeddr.mpsutil.margincell.editor" version="-1" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
-    <use id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="tpc3" ref="0647eca7-da98-422a-8a8b-6ebc0bd014ea/r:00000000-0000-4000-0000-011c8959029f(jetbrains.mps.lang.editor#1129914002149/jetbrains.mps.lang.editor.generator.baseLanguage.template.main@generator)" />
-    <import index="jsgz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
-    <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
-    <import index="nu8v" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" />
-    <import index="tpcb" ref="18bc6592-03a6-4e29-a83a-7ff23bde13ba/r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor/jetbrains.mps.lang.editor.behavior)" />
+    <import index="tpc3" ref="r:00000000-0000-4000-0000-011c8959029f(jetbrains.mps.lang.editor.generator.baseLanguage.template.main@generator)" />
     <import index="fvs5" ref="9ea6119e-d73d-42a8-8d7b-e60e0d7b845d/r:732be188-20bb-49ee-8e19-08268650a3e5(com.mbeddr.mpsutil.margincell.runtime/com.mbeddr.mpsutil.margincell.runtime)" />
-    <import index="elym" ref="92f195b6-a209-4804-ad65-f5248ecd5873/r:ab11cd4e-3f49-4307-8d3a-82afd3a5de48(com.mbeddr.mpsutil.margincell/com.mbeddr.mpsutil.margincell.structure)" />
-    <import index="i8bi" ref="9a4afe51-f114-4595-b5df-048ce3c596be/r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.runtime/jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
-    <import index="tpcn" ref="c72da2b9-7cce-4447-8389-f407dc1158b7/r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure/jetbrains.mps.lang.structure.behavior)" />
+    <import index="nu8v" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" />
+    <import index="i8bi" ref="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
+    <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
+    <import index="tkb5" ref="r:6c3f3e9e-b095-4787-b6dd-ae5e3c8d2756(com.mbeddr.mpsutil.margincell.editor.structure)" />
+    <import index="jsgz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
+    <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
+    <import index="tpcb" ref="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -198,7 +197,7 @@
   <node concept="bUwia" id="2BFhFd5uTad">
     <property role="TrG5h" value="main" />
     <node concept="3aamgX" id="10nVqVfuQlq" role="3acgRq">
-      <ref role="30HIoZ" to="elym:2BFhFd5v7OF" resolve="MarginCell" />
+      <ref role="30HIoZ" to="tkb5:5q2yETTckR" resolve="MarginCell" />
       <node concept="1Koe21" id="48TKAW3Vg2E" role="1lVwrX">
         <node concept="9aQIb" id="48TKAW3Vg2F" role="1Koe22">
           <node concept="3clFbS" id="48TKAW3Vg2G" role="9aQI4">
@@ -211,7 +210,7 @@
                       <node concept="2OqwBi" id="7lmVLrUmw6p" role="3clFbG">
                         <node concept="30H73N" id="7lmVLrUmw3G" role="2Oq$k0" />
                         <node concept="3TrEf2" id="7lmVLrUmwyt" role="2OqNvi">
-                          <ref role="3Tt5mk" to="elym:7lmVLrUhNBk" />
+                          <ref role="3Tt5mk" to="tkb5:5q2yETTckS" />
                         </node>
                       </node>
                     </node>
@@ -238,7 +237,7 @@
   </node>
   <node concept="13MO4I" id="10nVqVfuQlo">
     <property role="TrG5h" value="reduce_MarginCell" />
-    <ref role="3gUMe" to="elym:2BFhFd5v7OF" resolve="MarginCell" />
+    <ref role="3gUMe" to="tkb5:5q2yETTckR" resolve="MarginCell" />
     <node concept="312cEu" id="fXlj2gl" role="13RCb5">
       <property role="TrG5h" value="_context_class_" />
       <node concept="3clFbW" id="3NbAIGiCiyD" role="jymVt">
@@ -273,7 +272,7 @@
                               <node concept="2OqwBi" id="10nVqVge7os" role="3cqZAk">
                                 <node concept="30H73N" id="10nVqVge7ot" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="10nVqVge7ou" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="elym:10nVqVgdYkP" />
+                                  <ref role="3Tt5mk" to="tkb5:5q2yETTckU" />
                                 </node>
                               </node>
                             </node>
@@ -282,7 +281,7 @@
                             <node concept="2OqwBi" id="10nVqVge4PS" role="2Oq$k0">
                               <node concept="30H73N" id="10nVqVge4Lo" role="2Oq$k0" />
                               <node concept="3TrEf2" id="10nVqVge5ky" role="2OqNvi">
-                                <ref role="3Tt5mk" to="elym:10nVqVgdYkP" />
+                                <ref role="3Tt5mk" to="tkb5:5q2yETTckU" />
                               </node>
                             </node>
                             <node concept="3x8VRR" id="10nVqVge6hu" role="2OqNvi" />
@@ -355,7 +354,7 @@
                               <node concept="2OqwBi" id="7lmVLrUmr7H" role="1iwH7V">
                                 <node concept="30H73N" id="hT7x1rk" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="7lmVLrUmrCD" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="elym:7lmVLrUhNBk" />
+                                  <ref role="3Tt5mk" to="tkb5:5q2yETTckS" />
                                 </node>
                               </node>
                             </node>
@@ -414,7 +413,7 @@
                           <node concept="2OqwBi" id="hzeyA95" role="2Oq$k0">
                             <node concept="30H73N" id="hzey_V9" role="2Oq$k0" />
                             <node concept="3TrEf2" id="7wFJH9wPEj" role="2OqNvi">
-                              <ref role="3Tt5mk" to="elym:fBF2Hej" />
+                              <ref role="3Tt5mk" to="tkb5:5q2yETTckT" />
                             </node>
                           </node>
                           <node concept="2qgKlT" id="hzeyBFj" role="2OqNvi">
