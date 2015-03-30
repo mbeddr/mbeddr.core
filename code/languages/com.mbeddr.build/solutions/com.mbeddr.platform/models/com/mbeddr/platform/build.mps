@@ -3542,6 +3542,12 @@
             <ref role="1Busuk" node="1qdZ14g6jVZ" resolve="com.mbeddr.mpsutil.margincell" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5UUpo4vG3$V" role="3bR37C">
+          <node concept="3bR9La" id="5UUpo4vG3$W" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="5q2yETTw8b" resolve="com.mbeddr.mpsutil.margincell.editor" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="3cilTAC1n_V" role="2G$12L">
         <property role="BnDLt" value="true" />
