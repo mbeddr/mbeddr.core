@@ -14,7 +14,6 @@
     <import index="dm5s" ref="r:cc63f437-a3eb-4092-9c7c-2b5860f74f8d(com.mbeddr.core.debug.test.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
-    <import index="tpc5" ref="r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor.editor)" implicit="true" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
   </imports>
   <registry>
@@ -338,7 +337,7 @@
           <property role="3EZMnw" value="false" />
           <node concept="3F0ifn" id="5t7wq7uqtMk" role="3EZMnx">
             <property role="3F0ifm" value="uses backend:" />
-            <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="KeyWord" />
+            <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
             <node concept="VPM3Z" id="5t7wq7uqtMl" role="3F10Kt" />
             <node concept="VechU" id="5t7wq7uqtMm" role="3F10Kt" />
           </node>
@@ -2309,7 +2308,7 @@
     <ref role="1XX52x" to="rpmx:5t7wq7uqigT" resolve="IDebuggerBackend" />
     <node concept="PMmxH" id="58boHs0Oqyg" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="KeyWord" />
+      <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
     </node>
   </node>
   <node concept="24kQdi" id="6g5LwObJaMt">
