@@ -2084,6 +2084,9 @@
         <property role="3LESm3" value="61c69711-ed61-4850-81d9-7714ff227fb0" />
         <property role="TrG5h" value="com.mbeddr.core.expressions" />
         <property role="2GAjPV" value="false" />
+        <node concept="1E0d5M" id="2d9A8TVcMNr" role="1E1XAP">
+          <ref role="1E0d5P" to="al5i:1oM0ei222QR" resolve="com.mbeddr.mpsutil.spreferences.runtime" />
+        </node>
         <node concept="398BVA" id="7uZw0yZ43P4" role="3LF7KH">
           <ref role="398BVh" node="7uZw0yZ43N8" resolve="mbeddr.core" />
           <node concept="2Ry0Ak" id="7uZw0yZ43P5" role="iGT6I">
@@ -2187,9 +2190,6 @@
               </node>
             </node>
           </node>
-        </node>
-        <node concept="1E0d5M" id="2d9A8TVcMNr" role="1E1XAP">
-          <ref role="1E0d5P" to="al5i:1oM0ei222QR" resolve="com.mbeddr.mpsutil.spreferences.runtime" />
         </node>
       </node>
       <node concept="1E1JtD" id="7uZw0yZ43Lj" role="2G$12L">
@@ -3570,6 +3570,24 @@
           <node concept="3bR9La" id="tZiUABOAMM" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="6y2eE4zZsnH" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.core.stdlib" />
+        <property role="3LESm3" value="2ed50273-af07-4e30-9004-b1f89545178a" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="6y2eE4zZtv1" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ43N8" resolve="mbeddr.core" />
+          <node concept="2Ry0Ak" id="6y2eE4zZtv5" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="6y2eE4zZ$0B" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.core.stdlib" />
+              <node concept="2Ry0Ak" id="6y2eE4zZ$T8" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.core.stdlib.msd" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
