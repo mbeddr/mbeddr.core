@@ -428,7 +428,7 @@
           </node>
           <node concept="3_J27D" id="5msqZjqQD0O" role="Nbhlr">
             <node concept="3Mxwew" id="5msqZjqQD0P" role="3MwsjC">
-              <property role="3MwjfP" value="mbeddr IDE" />
+              <property role="3MwjfP" value="minimalMPS" />
             </node>
           </node>
           <node concept="398223" id="5msqZjqQD0S" role="39821P">
@@ -914,10 +914,7 @@
           </node>
           <node concept="3_J27D" id="5msqZjqQD38" role="Nbhlr">
             <node concept="3Mxwew" id="5msqZjqQD39" role="3MwsjC">
-              <property role="3MwjfP" value="mbeddr " />
-            </node>
-            <node concept="3Mxwew" id="t6obDo6duG" role="3MwsjC">
-              <property role="3MwjfP" value="IDE" />
+              <property role="3MwjfP" value="minimalMPS" />
             </node>
           </node>
         </node>
@@ -1170,7 +1167,7 @@
           </node>
           <node concept="3_J27D" id="5msqZjqQD4b" role="Nbhlr">
             <node concept="3Mxwew" id="5msqZjqQD4c" role="3MwsjC">
-              <property role="3MwjfP" value="mbeddr IDE.app" />
+              <property role="3MwjfP" value="minimalMPS.app" />
             </node>
           </node>
         </node>
