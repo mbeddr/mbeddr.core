@@ -4,6 +4,7 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell" version="-1" />
+    <use id="e33ff641-cba8-4703-98f4-59e63936d940" name="com.mbeddr.mpsutil.margincell.editor" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -59,6 +60,9 @@
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
+    </language>
+    <language id="e33ff641-cba8-4703-98f4-59e63936d940" name="com.mbeddr.mpsutil.margincell.editor">
+      <concept id="97401520565568823" name="com.mbeddr.mpsutil.margincell.editor.structure.MarginCell" flags="ng" index="2SJGWt" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
@@ -231,7 +235,7 @@
   </registry>
   <node concept="24kQdi" id="7lmVLrULFYT">
     <ref role="1XX52x" to="oqy7:7lmVLrULFYO" resolve="CommentAnnotationContainer" />
-    <node concept="1G_NIo" id="7lmVLrULFYU" role="2wV5jI">
+    <node concept="2SJGWt" id="7lmVLrULFYU" role="2wV5jI">
       <ref role="3F2HdE" to="oqy7:7lmVLrULFYP" />
       <ref role="3080yr" to="fmr2:7lmVLrULCNA" resolve="ReviewMarginCellStyle" />
       <node concept="3EZMnI" id="7lmVLrUSQCU" role="2f4tr2">

@@ -16,6 +16,7 @@
     <import index="u01t" ref="c788b046-2019-4656-8b60-8bb9bbb177b5/r:02034875-87ad-4b47-a381-b8cb34e24d38(com.mbeddr.mpsutil.review/com.mbeddr.mpsutil.review.behavior)" />
     <import index="v2t1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons/org.apache.commons.lang3@java_stub)" />
     <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
+    <import index="fdmd" ref="r:491a72d0-a89c-45f5-92ff-c5c32c0ab953(com.mbeddr.mpsutil.margincell.editor.editor)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -686,12 +687,12 @@
         </node>
         <node concept="2iRfu4" id="4TNdqI4mUjx" role="2iSdaV" />
       </node>
-      <node concept="3tD6jV" id="7KO_iaE$d$" role="3F10Kt">
-        <ref role="3tD7wE" to="9sn8:10nVqVfsAJN" resolve="margincell-cell-width" />
-        <node concept="3sjG9q" id="7KO_iaE$d_" role="3tD6jU">
-          <node concept="3clFbS" id="7KO_iaE$dA" role="2VODD2">
-            <node concept="3clFbF" id="7KO_iaE_ng" role="3cqZAp">
-              <node concept="3cmrfG" id="7KO_iaE_nf" role="3clFbG">
+      <node concept="3tD6jV" id="5UUpo4vFBgh" role="3F10Kt">
+        <ref role="3tD7wE" to="fdmd:10nVqVfsAJN" resolve="margincell-cell-width" />
+        <node concept="3sjG9q" id="5UUpo4vFBgj" role="3tD6jU">
+          <node concept="3clFbS" id="5UUpo4vFBgk" role="2VODD2">
+            <node concept="3clFbF" id="5UUpo4vFBgl" role="3cqZAp">
+              <node concept="3cmrfG" id="5UUpo4vFBgm" role="3clFbG">
                 <property role="3cmrfH" value="300" />
               </node>
             </node>
@@ -699,7 +700,7 @@
         </node>
       </node>
       <node concept="3tD6jV" id="5nb$pd4qi4S" role="3F10Kt">
-        <ref role="3tD7wE" to="9sn8:10nVqVfsCTn" resolve="margincell-dashed-line-interval" />
+        <ref role="3tD7wE" to="fdmd:10nVqVfsCTn" resolve="margincell-dashed-line-interval" />
         <node concept="3sjG9q" id="5nb$pd4qi4T" role="3tD6jU">
           <node concept="3clFbS" id="5nb$pd4qi4U" role="2VODD2">
             <node concept="3clFbF" id="5nb$pd4qjqv" role="3cqZAp">
