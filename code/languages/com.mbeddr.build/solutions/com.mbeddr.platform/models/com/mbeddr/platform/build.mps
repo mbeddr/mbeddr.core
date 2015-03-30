@@ -3593,6 +3593,11 @@
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
+        <node concept="1yeLz9" id="63H5h9fN1U$" role="1TViLv">
+          <property role="TrG5h" value="com.mbeddr.mpsutil.review.annotation#8455208232410315500" />
+          <property role="3LESm3" value="5d4cc688-63a8-4f95-aa0c-9d6d1a58cf75" />
+          <property role="2GAjPV" value="false" />
+        </node>
       </node>
       <node concept="1E1JtD" id="3cilTAC1nRi" role="2G$12L">
         <property role="BnDLt" value="true" />
