@@ -3570,6 +3570,24 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="6y2eE4zZsnH" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.core.stdlib" />
+        <property role="3LESm3" value="2ed50273-af07-4e30-9004-b1f89545178a" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="6y2eE4zZtv1" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ43N8" resolve="mbeddr.core" />
+          <node concept="2Ry0Ak" id="6y2eE4zZtv5" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="6y2eE4zZ$0B" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.core.stdlib" />
+              <node concept="2Ry0Ak" id="6y2eE4zZ$T8" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.core.stdlib.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3LEwk6" id="7uZw0yZ43Kv" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="3LESm3" value="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584" />
