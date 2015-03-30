@@ -18,7 +18,6 @@ mps-distrib/*
 
 .idea
 workspace.xml
-vcs.xml
 
 junitvmwatcher*.properties
 build.properties
