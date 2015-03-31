@@ -193,12 +193,6 @@
             <ref role="3bR37D" to="al5i:2bBLuwR9$cn" resolve="com.mbeddr.mpsutil.interpreter.rt" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7OBQOW$cJ_s" role="3bR37C">
-          <node concept="3bR9La" id="7OBQOW$cJ_t" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
-          </node>
-        </node>
       </node>
     </node>
     <node concept="398rNT" id="7eF9rfAuuuc" role="1l3spd">
