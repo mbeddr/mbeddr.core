@@ -48,9 +48,9 @@
     <import index="qjdu" ref="r:bc752cbf-8d9b-4442-8e26-e5c87b20b897(com.mbeddr.core.base.plugin)" />
     <import index="xei" ref="1338ba73-5059-479b-a929-de86597a62b8/f:java_stub#1338ba73-5059-479b-a929-de86597a62b8#edu.uci.ics.jung.visualization.util(com.mbeddr.mpsutil.jung.pluginSolution/edu.uci.ics.jung.visualization.util@java_stub)" />
     <import index="ln2k" ref="r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung.behavior)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
-    <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" implicit="true" />
+    <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -7639,12 +7639,23 @@
                   <node concept="3cpWsn" id="5lKnBeAICKs" role="3cpWs9">
                     <property role="TrG5h" value="n" />
                     <node concept="17QB3L" id="5lKnBeAIPNY" role="1tU5fm" />
-                    <node concept="2OqwBi" id="5lKnBeAICKt" role="33vP2m">
-                      <node concept="2GrUjf" id="5lKnBeAICKu" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="5lKnBeAIwAN" resolve="i" />
+                    <node concept="2OqwBi" id="3PuSfTTiDyP" role="33vP2m">
+                      <node concept="2OqwBi" id="5lKnBeAICKt" role="2Oq$k0">
+                        <node concept="2GrUjf" id="5lKnBeAICKu" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="5lKnBeAIwAN" resolve="i" />
+                        </node>
+                        <node concept="liA8E" id="5lKnBeAICKv" role="2OqNvi">
+                          <ref role="37wK5l" to="fxg7:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                        </node>
                       </node>
-                      <node concept="liA8E" id="5lKnBeAICKv" role="2OqNvi">
-                        <ref role="37wK5l" to="fxg7:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                      <node concept="liA8E" id="3PuSfTTiH92" role="2OqNvi">
+                        <ref role="37wK5l" to="e2lb:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                        <node concept="Xl_RD" id="3PuSfTTiOMw" role="37wK5m">
+                          <property role="Xl_RC" value="\\" />
+                        </node>
+                        <node concept="Xl_RD" id="3PuSfTTiPjj" role="37wK5m">
+                          <property role="Xl_RC" value="/" />
+                        </node>
                       </node>
                     </node>
                   </node>
