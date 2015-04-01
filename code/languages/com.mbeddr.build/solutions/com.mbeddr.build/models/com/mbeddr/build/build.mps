@@ -2786,6 +2786,12 @@
             <ref role="3bR37D" to="al5i:61Pvu7KHtlo" resolve="com.mbeddr.mpsutil.breadcrumb" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4fD91B_$XhI" role="3bR37C">
+          <node concept="3bR9La" id="4fD91B_$XhJ" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7uZw0yZ43MM" role="2G$12L">
         <property role="BnDLt" value="true" />
