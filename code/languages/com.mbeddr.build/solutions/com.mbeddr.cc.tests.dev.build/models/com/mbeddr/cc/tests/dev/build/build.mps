@@ -446,24 +446,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3YIXnYN2fVt" role="3bR37C">
-          <node concept="3bR9La" id="3YIXnYN2fVu" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:ymnOULAU0H" resolve="jetbrains.mps.lang.test" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3YIXnYN2fVv" role="3bR37C">
-          <node concept="3bR9La" id="3YIXnYN2fVw" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:7eF9rfAnukf" resolve="com.mbeddr.cc.var.c" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3YIXnYN2fVx" role="3bR37C">
-          <node concept="3bR9La" id="3YIXnYN2fVy" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:7eF9rfAnuj5" resolve="com.mbeddr.cc.var.annotations" />
-          </node>
-        </node>
       </node>
     </node>
     <node concept="22LTRH" id="7eF9rfAnzVt" role="1hWBAP">

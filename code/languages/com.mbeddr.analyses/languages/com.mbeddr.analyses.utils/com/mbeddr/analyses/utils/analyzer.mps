@@ -1384,6 +1384,21 @@
   <node concept="312cEu" id="505H3_WY3P0">
     <property role="TrG5h" value="AnalyzerMPSRunner" />
     <node concept="2tJIrI" id="505H3_WY3P1" role="jymVt" />
+    <node concept="Wx3nA" id="6wKLD3Gl1dQ" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="GENERATION_ERROR" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="6wKLD3Gl13M" role="1B3o_S" />
+      <node concept="10P_77" id="6wKLD3Gl1dM" role="1tU5fm" />
+      <node concept="3clFbT" id="6wKLD3Gl26r" role="33vP2m">
+        <property role="3clFbU" value="false" />
+      </node>
+      <node concept="NWlO9" id="6wKLD3Gl2gt" role="lGtFl">
+        <property role="NWlVz" value="Did an error occur during generation?" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6wKLD3Gl26A" role="jymVt" />
     <node concept="2YIFZL" id="505H3_WY3P2" role="jymVt">
       <property role="TrG5h" value="doMakeAndRunAnalysis" />
       <node concept="3cqZAl" id="505H3_WY3P3" role="3clF45" />
@@ -1406,7 +1421,16 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1Qk2BLgCKN2" role="3cqZAp" />
+        <node concept="3clFbF" id="6wKLD3Gl2G7" role="3cqZAp">
+          <node concept="37vLTI" id="6wKLD3Gl4ps" role="3clFbG">
+            <node concept="3clFbT" id="6wKLD3Gl4rL" role="37vLTx">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="37vLTw" id="6wKLD3Gl2G5" role="37vLTJ">
+              <ref role="3cqZAo" node="6wKLD3Gl1dQ" resolve="GENERATION_ERROR" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="505H3_WY3P6" role="3cqZAp">
           <node concept="2OqwBi" id="505H3_WY3P7" role="3clFbG">
             <node concept="2YIFZM" id="505H3_WY3P8" role="2Oq$k0">
@@ -1477,6 +1501,16 @@
                                     </node>
                                     <node concept="Xl_RD" id="5pNvrID4nfO" role="37wK5m">
                                       <property role="Xl_RC" value="Please fix generation errors before running the analyses!" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3clFbF" id="6wKLD3Gl4zf" role="3cqZAp">
+                                  <node concept="37vLTI" id="6wKLD3Gl4Hk" role="3clFbG">
+                                    <node concept="3clFbT" id="6wKLD3Gl4Id" role="37vLTx">
+                                      <property role="3clFbU" value="true" />
+                                    </node>
+                                    <node concept="37vLTw" id="6wKLD3Gl4zd" role="37vLTJ">
+                                      <ref role="3cqZAo" node="6wKLD3Gl1dQ" resolve="GENERATION_ERROR" />
                                     </node>
                                   </node>
                                 </node>
@@ -1579,6 +1613,14 @@
                                 <node concept="liA8E" id="1Qk2BLgCMCf" role="2OqNvi">
                                   <ref role="37wK5l" to="53gy:~CountDownLatch.await():void" resolve="await" />
                                 </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbJ" id="6wKLD3Gl55$" role="3cqZAp">
+                              <node concept="3clFbS" id="6wKLD3Gl55A" role="3clFbx">
+                                <node concept="3cpWs6" id="6wKLD3Gl5cv" role="3cqZAp" />
+                              </node>
+                              <node concept="37vLTw" id="6wKLD3Gl5a4" role="3clFbw">
+                                <ref role="3cqZAo" node="6wKLD3Gl1dQ" resolve="GENERATION_ERROR" />
                               </node>
                             </node>
                             <node concept="3cpWs8" id="1PA$4Yzx9Im" role="3cqZAp">

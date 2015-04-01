@@ -8,7 +8,6 @@
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
-    <import index="f19x" ref="r:d02579d5-8c48-4c03-9742-38fb8f18f018(com.mbeddr.mpsutil.nodeviewer.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -97,9 +96,6 @@
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="opE5jFg8Ph" resolve="ITraceTarget" />
-    </node>
-    <node concept="PrWs8" id="bhVSeEhVZi" role="PzmwI">
-      <ref role="PrY4T" to="f19x:10IovSqdngG" resolve="IInfoNodeProvider" />
     </node>
   </node>
   <node concept="PlHQZ" id="opE5jFg8Ph">
