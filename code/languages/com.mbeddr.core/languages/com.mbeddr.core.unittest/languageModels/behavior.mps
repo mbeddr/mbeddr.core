@@ -26,6 +26,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
+    <import index="n7pc" ref="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -1122,6 +1123,62 @@
       <node concept="_YKpA" id="3IOp39iLOsl" role="3clF45">
         <node concept="3bZ5Sz" id="3IOp39iLOsm" role="_ZDj9" />
       </node>
+    </node>
+    <node concept="13i0hz" id="4kpZy5QDnvA" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="contributeWatchables" />
+      <ref role="13i0hy" to="exl8:6EW69Px7rDO" resolve="contributeWatchables" />
+      <node concept="3Tm1VV" id="4kpZy5QDnvB" role="1B3o_S" />
+      <node concept="3clFbS" id="4kpZy5QDnvO" role="3clF47">
+        <node concept="2QERvH" id="4kpZy5QGwkJ" role="3cqZAp">
+          <property role="qSxYb" value="1" />
+          <node concept="2OqwBi" id="4kpZy5QGws$" role="2QERvC">
+            <node concept="13iPFW" id="4kpZy5QGws_" role="2Oq$k0" />
+            <node concept="2qgKlT" id="4kpZy5QGwsA" role="2OqNvi">
+              <ref role="37wK5l" node="3IOp39i06Jo" resolve="genActualVarName" />
+            </node>
+          </node>
+        </node>
+        <node concept="2QERvH" id="4kpZy5QGwKY" role="3cqZAp">
+          <property role="qSxYb" value="1" />
+          <node concept="2OqwBi" id="4kpZy5QGx8W" role="2QERvC">
+            <node concept="13iPFW" id="4kpZy5QGwYK" role="2Oq$k0" />
+            <node concept="2qgKlT" id="4kpZy5QGykG" role="2OqNvi">
+              <ref role="37wK5l" node="3IOp39i0eHN" resolve="genExpectedVarName" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4kpZy5QDnvP" role="3clF46">
+        <property role="TrG5h" value="categoryRegistry" />
+        <node concept="3uibUv" id="4kpZy5QDnvQ" role="1tU5fm">
+          <ref role="3uigEE" to="x30c:4F7MaHWZAvw" resolve="IMCategoryRegistry" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4kpZy5QDnvR" role="3clF46">
+        <property role="TrG5h" value="unmappedVariables" />
+        <node concept="_YKpA" id="4kpZy5QDnvS" role="1tU5fm">
+          <node concept="3uibUv" id="4kpZy5QDnvT" role="_ZDj9">
+            <ref role="3uigEE" to="x30c:3gwY0Fa3SFk" resolve="IMUnmappedVariable" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4kpZy5QDnvU" role="3clF46">
+        <property role="TrG5h" value="mappedVariables" />
+        <node concept="_YKpA" id="4kpZy5QDnvV" role="1tU5fm">
+          <node concept="3uibUv" id="4kpZy5QDnvW" role="_ZDj9">
+            <ref role="3uigEE" to="pry4:3SnNvqCaK3Q" resolve="IWatchable" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4kpZy5QDnvX" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="3uibUv" id="4kpZy5QDnvY" role="1tU5fm">
+          <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="4kpZy5QDnvZ" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="5Hxjapwgui6">
