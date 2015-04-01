@@ -5,7 +5,6 @@
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
-    <import index="wg2q" ref="r:f61ef1b3-c47f-43c1-9bb8-140b503bbd1b(test.ex.core.lib.expressions)" />
     <import index="1ok9" ref="r:a604a9bb-58f8-4cf0-a289-ef69bb1576bb(com.mbeddr.core.__spreferences.PlatformTemplates)" />
   </imports>
   <registry>

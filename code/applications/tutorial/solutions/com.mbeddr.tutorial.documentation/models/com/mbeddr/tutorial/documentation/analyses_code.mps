@@ -377,6 +377,9 @@
       </concept>
     </language>
     <language id="e401b447-8019-4ccd-a72c-bfb0230f5782" name="com.mbeddr.cc.var.fm">
+      <concept id="4508614440797534978" name="com.mbeddr.cc.var.fm.structure.AbstractFeature" flags="ng" index="2vMJK">
+        <child id="6617313141260016649" name="crossConstraints" index="2FxFsO" />
+      </concept>
       <concept id="8473958930087782177" name="com.mbeddr.cc.var.fm.structure.RootFeature" flags="ng" index="28I2Iu" />
       <concept id="2203816361987134490" name="com.mbeddr.cc.var.fm.structure.DerivedFeature" flags="ng" index="gY_dk">
         <child id="2203816361987258679" name="value" index="gT3TT" />
@@ -395,7 +398,6 @@
       <concept id="6825476687691297426" name="com.mbeddr.cc.var.fm.structure.Feature" flags="ng" index="Id4hK">
         <child id="6825476687691297427" name="constraint" index="Id4hL" />
         <child id="6825476687691297428" name="children" index="Id4hQ" />
-        <child id="8433257123783652307" name="crossConstraints" index="1fCc5Z" />
       </concept>
       <concept id="6825476687691297434" name="com.mbeddr.cc.var.fm.structure.FeatureModel" flags="ng" index="Id4hS">
         <child id="2203816361987258682" name="derivedFeatures" index="gT3TO" />
@@ -708,10 +710,10 @@
           </node>
           <node concept="Id4hK" id="3XWIBckHNCx" role="Id4hQ">
             <property role="TrG5h" value="AdvancedController" />
-            <node concept="1fCc5J" id="3XWIBckHNCy" role="1fCc5Z">
+            <node concept="1fCc5J" id="3XWIBckHNCy" role="2FxFsO">
               <ref role="1fCc5C" node="3XWIBckHNCP" resolve="CAN" />
             </node>
-            <node concept="1fCc5J" id="3XWIBckHNCz" role="1fCc5Z">
+            <node concept="1fCc5J" id="3XWIBckHNCz" role="2FxFsO">
               <ref role="1fCc5C" node="3XWIBckHNCQ" resolve="FlexRay" />
             </node>
           </node>
@@ -761,7 +763,7 @@
           <node concept="Id4hK" id="3XWIBckHNCQ" role="Id4hQ">
             <property role="TrG5h" value="FlexRay" />
           </node>
-          <node concept="1fCc5J" id="2sP5dTek9RN" role="1fCc5Z">
+          <node concept="1fCc5J" id="2sP5dTek9RN" role="2FxFsO">
             <ref role="1fCc5C" node="3XWIBckHNCI" resolve="VerboseDebug" />
           </node>
         </node>

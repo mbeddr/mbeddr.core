@@ -8,13 +8,9 @@
   <imports>
     <import index="26ao" ref="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" />
     <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
-    <import index="i9nw" ref="r:94759640-cb45-42d0-8958-8d6d11c7b791(com.mbeddr.mpsutil.nodeviewer.behavior)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -466,24 +462,6 @@
   </node>
   <node concept="13h7C7" id="bhVSeEhWeT">
     <ref role="13h7C2" to="26ao:opE5jFg8MN" resolve="TraceTargetRef" />
-    <node concept="13i0hz" id="bhVSeEfWqC" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getInfoNode" />
-      <ref role="13i0hy" to="i9nw:10IovSqdniH" resolve="getInfoNode" />
-      <node concept="3Tm1VV" id="bhVSeEfWqD" role="1B3o_S" />
-      <node concept="3clFbS" id="bhVSeEfWqG" role="3clF47">
-        <node concept="3cpWs6" id="bhVSeEg2rp" role="3cqZAp">
-          <node concept="2OqwBi" id="bhVSeEhXdM" role="3cqZAk">
-            <node concept="13iPFW" id="bhVSeEhXaQ" role="2Oq$k0" />
-            <node concept="3TrEf2" id="bhVSeEhXvM" role="2OqNvi">
-              <ref role="3Tt5mk" to="26ao:opE5jFgg97" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="bhVSeEfWqH" role="3clF45" />
-    </node>
     <node concept="13i0hz" id="2xLRh2R4x21" role="13h7CS">
       <property role="TrG5h" value="getTarget" />
       <property role="13i0it" value="false" />

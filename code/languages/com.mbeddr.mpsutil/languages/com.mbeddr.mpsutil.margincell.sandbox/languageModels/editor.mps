@@ -4,6 +4,7 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell" version="-1" />
+    <use id="e33ff641-cba8-4703-98f4-59e63936d940" name="com.mbeddr.mpsutil.margincell.editor" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -23,6 +24,9 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
+    <language id="e33ff641-cba8-4703-98f4-59e63936d940" name="com.mbeddr.mpsutil.margincell.editor">
+      <concept id="97401520565568823" name="com.mbeddr.mpsutil.margincell.editor.structure.MarginCell" flags="ng" index="2SJGWt" />
+    </language>
     <language id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell">
       <concept id="3020585710860926251" name="com.mbeddr.mpsutil.margincell.structure.MarginCell" flags="ng" index="1G_NIo">
         <child id="8455208232401975764" name="content" index="2f4tr2" />
@@ -31,7 +35,7 @@
   </registry>
   <node concept="24kQdi" id="10nVqVftPiE">
     <ref role="1XX52x" to="e4lm:10nVqVftMLr" resolve="TestConcept" />
-    <node concept="1G_NIo" id="7sRtXoEkHd" role="2wV5jI">
+    <node concept="2SJGWt" id="7sRtXoEkHd" role="2wV5jI">
       <node concept="3F2HdR" id="7sRtXoEkI4" role="2f4tr2">
         <ref role="1NtTu8" to="e4lm:10nVqVftMMh" />
       </node>
