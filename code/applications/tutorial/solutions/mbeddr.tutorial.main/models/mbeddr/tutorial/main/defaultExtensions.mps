@@ -1110,7 +1110,7 @@
     </node>
     <node concept="3GEVxB" id="7aNtjNmVsgj" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" node="1w5Xuj1QYPN" resolve="Components" />
+      <ref role="3GEb4d" node="1w5Xuj1QYPN" resolve="Componenes" />
     </node>
     <node concept="3GEVxB" id="7aNtjNmVshP" role="2OODSX">
       <property role="3GEa6x" value="false" />
@@ -1174,7 +1174,7 @@
         <ref role="2v9HqP" node="7VsgA5L655y" resolve="FunctionPointers" />
       </node>
       <node concept="2v9HqM" id="1w5Xuj1RNzA" role="2eOfOg">
-        <ref role="2v9HqP" node="1w5Xuj1QYPN" resolve="Components" />
+        <ref role="2v9HqP" node="1w5Xuj1QYPN" resolve="Componenes" />
       </node>
       <node concept="2v9HqM" id="1w5Xuj1RNzB" role="2eOfOg">
         <ref role="2v9HqP" node="1w5Xuj1QYMp" resolve="DataStructures" />
@@ -2937,7 +2937,7 @@
     </node>
   </node>
   <node concept="N3F5e" id="1w5Xuj1QYPN">
-    <property role="TrG5h" value="Components" />
+    <property role="TrG5h" value="Componenes" />
     <property role="3GE5qa" value="examples" />
     <node concept="2NXPZ9" id="1w5Xuj1QYPP" role="N3F5h">
       <property role="TrG5h" value="empty_1351703756782_1" />
@@ -12335,7 +12335,7 @@
           </node>
         </node>
         <node concept="1EdpPo" id="3jNX2XuM60i" role="3pwfKK">
-          <ref role="1EdpPl" node="1w5Xuj1QYPN" resolve="Components" />
+          <ref role="1EdpPl" node="1w5Xuj1QYPN" resolve="Componenes" />
         </node>
       </node>
       <node concept="3pwbzX" id="3jNX2XuM60j" role="3pwbzW">
@@ -13427,7 +13427,7 @@
       <property role="1Ema5g" value="true" />
       <node concept="3RRLWm" id="7nkDZJXrlbZ" role="3pwbkY">
         <node concept="28wyXK" id="7nkDZJXrlc7" role="28wUw_">
-          <ref role="28wyXR" node="1w5Xuj1QYPN" resolve="Components" />
+          <ref role="28wyXR" node="1w5Xuj1QYPN" resolve="Componenes" />
         </node>
       </node>
       <node concept="3pwbzX" id="5fAlsswuKIJ" role="3pwbzW">
