@@ -16,6 +16,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
+        <property id="6054523464626875854" name="value" index="tnX3d" />
+      </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -31,6 +34,7 @@
       <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
         <property id="7588428831955550663" name="role" index="Hh88m" />
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
+        <child id="7588428831955550186" name="multiple" index="HhnKV" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -1227,6 +1231,26 @@
     <property role="TrG5h" value="ITypeDeclaration" />
     <node concept="PrWs8" id="3o2OLGv6VGb" role="PrDN$">
       <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7x9scHw5pU_">
+    <property role="3GE5qa" value="functions" />
+    <property role="TrG5h" value="ImplementsExternalFunction" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="7x9scHw5vsd" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="implements" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5_l8w1EmTvw" resolve="FunctionPrototype" />
+    </node>
+    <node concept="M6xJ_" id="7x9scHw5v4u" role="lGtFl">
+      <property role="Hh88m" value="implements" />
+      <node concept="tn0Fv" id="7x9scHw5vj$" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="7x9scHw5vsb" role="EQaZv">
+        <ref role="trN6q" node="5_l8w1EmTvx" resolve="Function" />
+      </node>
     </node>
   </node>
 </model>
