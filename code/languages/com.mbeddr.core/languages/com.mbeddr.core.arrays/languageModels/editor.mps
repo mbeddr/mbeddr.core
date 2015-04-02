@@ -781,6 +781,12 @@
         <property role="3F0ifm" value="string" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
+      <node concept="PMmxH" id="4fD91B__zLh" role="3EZMnx">
+        <ref role="PMmxG" to="vrqd:2zhwXA$RHx8" resolve="constFlag" />
+      </node>
+      <node concept="PMmxH" id="4fD91B__zMz" role="3EZMnx">
+        <ref role="PMmxG" to="vrqd:2zhwXA_2C0s" resolve="volatileFlag" />
+      </node>
       <node concept="3F0ifn" id="4VxFbWczlbn" role="3EZMnx">
         <property role="3F0ifm" value="&lt;" />
         <ref role="1ERwB7" node="4VxFbWczlph" resolve="convertToStringType" />
