@@ -16,6 +16,7 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
+    <use id="896334f3-82ce-427b-bb47-ccd3131864a9" name="com.mbeddr.mpsutil.mappingLabels" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -6649,17 +6650,18 @@
                   <property role="P3scX" value="efda956e-491e-4f00-ba14-36af2f213ecf/6394819151180597816/6394819151180597817" />
                   <node concept="3$xsQk" id="37VCVodMSEa" role="3$ytzL">
                     <node concept="3clFbS" id="37VCVodMSEb" role="2VODD2">
-                      <node concept="3clFbF" id="37VCVodMSEc" role="3cqZAp">
-                        <node concept="2OqwBi" id="37VCVodMSEY" role="3clFbG">
-                          <node concept="2OqwBi" id="37VCVodMSEy" role="2Oq$k0">
-                            <node concept="30H73N" id="37VCVodMSEd" role="2Oq$k0" />
-                            <node concept="3TrEf2" id="37VCVodMSEC" role="2OqNvi">
-                              <ref role="3Tt5mk" to="k146:37VCVodLNIe" />
+                      <node concept="3clFbF" id="2dCF6Fx6f1u" role="3cqZAp">
+                        <node concept="2OqwBi" id="2dCF6Fx6f1v" role="3clFbG">
+                          <node concept="1iwH70" id="2dCF6Fx6f1w" role="2OqNvi">
+                            <ref role="1iwH77" node="2dCF6Fx6d9x" resolve="RingBufferDeclaration_genStructName" />
+                            <node concept="2OqwBi" id="2dCF6Fx6f1r" role="1iwH7V">
+                              <node concept="30H73N" id="2dCF6Fx6f1s" role="2Oq$k0" />
+                              <node concept="3TrEf2" id="2dCF6Fx6f1t" role="2OqNvi">
+                                <ref role="3Tt5mk" to="k146:37VCVodLNIe" />
+                              </node>
                             </node>
                           </node>
-                          <node concept="3TrcHB" id="37VCVodMSF4" role="2OqNvi">
-                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                          </node>
+                          <node concept="1iwH7S" id="2dCF6Fx6f1x" role="2Oq$k0" />
                         </node>
                       </node>
                     </node>
@@ -6682,7 +6684,9 @@
           <node concept="1sgJKc" id="37VCVodMHZ9" role="N3F5h">
             <property role="TrG5h" value="ringbuffer" />
             <property role="2OOxQR" value="true" />
-            <node concept="raruj" id="37VCVodMHZa" role="lGtFl" />
+            <node concept="raruj" id="37VCVodMHZa" role="lGtFl">
+              <ref role="2sdACS" node="2dCF6Fx6d9x" resolve="RingBufferDeclaration_genStructName" />
+            </node>
             <node concept="17Uvod" id="37VCVodMHZb" role="lGtFl">
               <property role="2qtEX9" value="name" />
               <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -6690,8 +6694,8 @@
                 <node concept="3clFbS" id="37VCVodMHZf" role="2VODD2">
                   <node concept="3clFbF" id="37VCVodMHZg" role="3cqZAp">
                     <node concept="2OqwBi" id="37VCVodMHZh" role="3clFbG">
-                      <node concept="3TrcHB" id="37VCVodMHZi" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      <node concept="2qgKlT" id="2dCF6Fx6d1w" role="2OqNvi">
+                        <ref role="37wK5l" to="yi43:2dCF6Fx5Bpq" resolve="genStructName" />
                       </node>
                       <node concept="30H73N" id="37VCVodMHZj" role="2Oq$k0" />
                     </node>
@@ -6791,6 +6795,10 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2rT7sh" id="2dCF6Fx6d9x" role="2rTMjI">
+      <property role="TrG5h" value="RingBufferDeclaration_genStructName" />
+      <ref role="2rZz_L" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
     </node>
   </node>
   <node concept="bUwia" id="1M41OHs97hn">
@@ -13102,7 +13110,9 @@
                 <property role="2c7vTL" value="false" />
               </node>
             </node>
-            <node concept="raruj" id="gaSsNUZNEn" role="lGtFl" />
+            <node concept="raruj" id="gaSsNUZNEn" role="lGtFl">
+              <ref role="2sdACS" node="2dCF6Fx4BZ5" resolve="StackDeclaration_genStructName" />
+            </node>
             <node concept="17Uvod" id="gaSsNUZTnk" role="lGtFl">
               <property role="2qtEX9" value="exported" />
               <property role="P4ACc" value="6d11763d-483d-4b2b-8efc-09336c1b0001/6437088627575722831/1317894735999272944" />
@@ -13368,17 +13378,18 @@
                 <property role="P3scX" value="efda956e-491e-4f00-ba14-36af2f213ecf/6394819151180597816/6394819151180597817" />
                 <node concept="3$xsQk" id="gaSsNVmLeF" role="3$ytzL">
                   <node concept="3clFbS" id="gaSsNVmLeG" role="2VODD2">
-                    <node concept="3clFbF" id="gaSsNVmLhY" role="3cqZAp">
-                      <node concept="2OqwBi" id="gaSsNVmOHs" role="3clFbG">
-                        <node concept="2OqwBi" id="gaSsNVmLrN" role="2Oq$k0">
-                          <node concept="30H73N" id="gaSsNVmLhX" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="gaSsNVmNtR" role="2OqNvi">
-                            <ref role="3Tt5mk" to="k146:gaSsNU9bxa" />
+                    <node concept="3clFbF" id="2dCF6Fx4CS4" role="3cqZAp">
+                      <node concept="2OqwBi" id="2dCF6Fx4CS5" role="3clFbG">
+                        <node concept="1iwH70" id="2dCF6Fx4CS6" role="2OqNvi">
+                          <ref role="1iwH77" node="2dCF6Fx4BZ5" resolve="StackDeclaration_genStructName" />
+                          <node concept="2OqwBi" id="2dCF6Fx4CS1" role="1iwH7V">
+                            <node concept="30H73N" id="2dCF6Fx4CS2" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="2dCF6Fx4CS3" role="2OqNvi">
+                              <ref role="3Tt5mk" to="k146:gaSsNU9bxa" />
+                            </node>
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="gaSsNVmRmC" role="2OqNvi">
-                          <ref role="37wK5l" to="yi43:gaSsNUZNFu" resolve="genStructName" />
-                        </node>
+                        <node concept="1iwH7S" id="2dCF6Fx4CS7" role="2Oq$k0" />
                       </node>
                     </node>
                   </node>
@@ -13483,6 +13494,10 @@
         </node>
       </node>
       <node concept="b5Tf3" id="gaSsNVzBWh" role="1lVwrX" />
+    </node>
+    <node concept="2rT7sh" id="2dCF6Fx4BZ5" role="2rTMjI">
+      <property role="TrG5h" value="StackDeclaration_genStructName" />
+      <ref role="2rZz_L" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
     </node>
   </node>
   <node concept="bUwia" id="E67pIV_jAg">
