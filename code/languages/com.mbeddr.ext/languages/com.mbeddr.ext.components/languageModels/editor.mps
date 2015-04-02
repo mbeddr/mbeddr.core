@@ -422,6 +422,7 @@
       <concept id="6237710625713195816" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramNode" flags="ng" index="2ZK4vF">
         <child id="7464726264117682823" name="shape" index="2xQQDV" />
         <child id="1315262826372527521" name="editor" index="1ytjkN" />
+        <child id="1019014873656210396" name="navigationTargets" index="3zeBtW" />
         <child id="1566844231766602492" name="ports2" index="3DrZTU" />
       </concept>
       <concept id="6237710625713831199" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramConnector" flags="ng" index="2ZMJ7s" />
@@ -4688,6 +4689,12 @@
           <node concept="2qgKlT" id="3zuoy_UAt15" role="2OqNvi">
             <ref role="37wK5l" to="eup9:71UKpntoZWS" resolve="allRequiredPorts" />
           </node>
+        </node>
+      </node>
+      <node concept="2OqwBi" id="_beda4XECP" role="3zeBtW">
+        <node concept="1Pxb5l" id="_beda4XDf$" role="2Oq$k0" />
+        <node concept="3TrEf2" id="_beda4XT$j" role="2OqNvi">
+          <ref role="3Tt5mk" to="v7ag:3TmmsQkDdTR" />
         </node>
       </node>
     </node>
