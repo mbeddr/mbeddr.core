@@ -13,7 +13,7 @@ die () {
 #
 # validation
 #
-[ "$#" -eq 3 ] || die "three arguments required for $1 'branch name', $2 'git hash of current commit' and $3 'name of Teamcity parameter to overwrite'"
+[ "$#" -eq 3 ] || die "three arguments required for $1 'default branch name', $2 'git hash of current commit' and $3 'name of Teamcity parameter to overwrite'"
 #
 # construction of Teamcity parameter
 #
