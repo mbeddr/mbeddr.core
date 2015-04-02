@@ -195,6 +195,16 @@
           </node>
         </node>
         <node concept="3clFbH" id="1iGXuG00kC6" role="3cqZAp" />
+        <node concept="3clFbF" id="2VzlLcH3C_2" role="3cqZAp">
+          <node concept="2YIFZM" id="2VzlLcH3CKO" role="3clFbG">
+            <ref role="37wK5l" to="fxhk:6izRX52tWlf" resolve="prettyPrintCounterexample" />
+            <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+            <node concept="37vLTw" id="2VzlLcH3CML" role="37wK5m">
+              <ref role="3cqZAo" node="5Hr5oir6UpM" resolve="res0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2VzlLcH3CNM" role="3cqZAp" />
         <node concept="38rL1p" id="7yN$Xh8EFQq" role="3cqZAp">
           <node concept="38rIoz" id="7yN$Xh8EFQs" role="38rM$J">
             <property role="38rIoG" value="call" />

@@ -134,6 +134,7 @@
       </concept>
       <concept id="8860443239512147449" name="com.mbeddr.core.expressions.structure.LessExpression" flags="ng" index="3Tl9Jn" />
       <concept id="8860443239512147445" name="com.mbeddr.core.expressions.structure.GreaterExpression" flags="ng" index="3Tl9Jr" />
+      <concept id="8860443239512129322" name="com.mbeddr.core.expressions.structure.EqualsExpression" flags="ng" index="3TlM44" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
@@ -166,7 +167,7 @@
           <node concept="eGT6z" id="576QrOJtEnA" role="2BFjQA">
             <node concept="eGT6y" id="576QrOJtECd" role="eGTpe">
               <node concept="3TlMh9" id="576QrOJtFhu" role="eGT6G">
-                <property role="2hmy$m" value="1" />
+                <property role="2hmy$m" value="-1" />
               </node>
               <node concept="3Tl9Jn" id="576QrOJtEWC" role="eGT6H">
                 <node concept="3TlMh9" id="576QrOJtEWF" role="3TlMhJ">
@@ -179,7 +180,7 @@
             </node>
             <node concept="eGT6y" id="576QrOJtFHb" role="eGTpe">
               <node concept="3TlMh9" id="576QrOJtHb3" role="eGT6G">
-                <property role="2hmy$m" value="-1" />
+                <property role="2hmy$m" value="1" />
               </node>
               <node concept="3Tl9Jr" id="576QrOJtGEd" role="eGT6H">
                 <node concept="3TlMh9" id="576QrOJtGEg" role="3TlMhJ">
@@ -198,6 +199,19 @@
               <property role="2c7vTL" value="false" />
             </node>
             <node concept="1YJQNW" id="7yN$Xh8pLxy" role="lGtFl" />
+            <node concept="eGT6y" id="2VzlLcH4di9" role="eGTpe">
+              <node concept="3TlM44" id="2VzlLcH4dRv" role="eGT6H">
+                <node concept="3TlMh9" id="2VzlLcH4e0v" role="3TlMhJ">
+                  <property role="2hmy$m" value="-1" />
+                </node>
+                <node concept="3ZUYvv" id="2VzlLcH4ds7" role="3TlMhI">
+                  <ref role="3ZUYvu" node="576QrOJt5_g" resolve="x" />
+                </node>
+              </node>
+              <node concept="3TlMh9" id="2VzlLcH4e$4" role="eGT6G">
+                <property role="2hmy$m" value="-1" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
