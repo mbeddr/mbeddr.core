@@ -516,30 +516,6 @@
                     <property role="Xl_RC" value="initial" />
                   </node>
                 </node>
-                <node concept="2pIpSj" id="6xLvLBZP8a9" role="2pJxcM">
-                  <ref role="2pIpSl" to="clqz:3FSHg1aAGGX" />
-                  <node concept="2pJPED" id="6xLvLBZP8lN" role="2pJxcZ">
-                    <ref role="2pJxaS" to="clqz:50Lk78xBraV" resolve="Transition" />
-                    <node concept="2pIpSj" id="6xLvLBZP8ma" role="2pJxcM">
-                      <ref role="2pIpSl" to="clqz:3bLw7MCtNTe" />
-                      <node concept="2pJPED" id="6xLvLBZPaJJ" role="2pJxcZ">
-                        <ref role="2pJxaS" to="clqz:1z9MsBsVe9b" resolve="Trigger" />
-                        <node concept="2pIpSj" id="6xLvLBZPaK2" role="2pJxcM">
-                          <ref role="2pIpSl" to="clqz:7KTKsCRX31h" />
-                          <node concept="36biLy" id="6xLvLBZPaKm" role="2pJxcZ">
-                            <node concept="37vLTw" id="6xLvLBZPaKA" role="36biLW">
-                              <ref role="3cqZAo" node="6xLvLBZP6Sh" resolve="inEvt" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2pIpSj" id="6xLvLBZP8Tg" role="2pJxcM">
-                      <ref role="2pIpSl" to="clqz:16ykm_MbSnY" />
-                      <node concept="10Nm6u" id="6xLvLBZP8Wz" role="2pJxcZ" />
-                    </node>
-                  </node>
-                </node>
               </node>
             </node>
           </node>
