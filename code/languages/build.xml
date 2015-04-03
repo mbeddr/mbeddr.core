@@ -281,7 +281,12 @@
     <antcall target="test-core-ex-run" />
     <antcall target="test-ext-ex-run" />
     <antcall target="test-cc-ex-run" />
-</target>     
+</target> 
+<target name="run-test-on-arm">
+    <antcall target="make-tests">
+     <param name="make-tests.dir" value="${mbeddr.github.core.home}/tests"/>
+ </antcall>
+</target>    
 
 <target name="test-debugging">
   <antcall target="test-debugging-generate"/>
