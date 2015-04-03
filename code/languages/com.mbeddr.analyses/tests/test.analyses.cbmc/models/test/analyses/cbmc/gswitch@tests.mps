@@ -294,6 +294,65 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="2S1OXleTQ7F" role="3cqZAp" />
+        <node concept="3cpWs8" id="2S1OXleTQj5" role="3cqZAp">
+          <node concept="3cpWsn" id="2S1OXleTQj6" role="3cpWs9">
+            <property role="TrG5h" value="res4" />
+            <node concept="3uibUv" id="2S1OXleTQj7" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="2S1OXleTQj8" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="2S1OXleTQj9" role="37wK5m">
+                <ref role="3cqZAo" node="7yN$Xh8olDN" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="2S1OXleTQja" role="37wK5m">
+                <property role="Xl_RC" value="GSwitchExpression (id: 1) - activation (0)" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2S1OXleTQjb" role="3cqZAp">
+          <node concept="2OqwBi" id="2S1OXleTQjc" role="3vwVQn">
+            <node concept="37vLTw" id="2S1OXleTQjd" role="2Oq$k0">
+              <ref role="3cqZAo" node="2S1OXleTQj6" resolve="res4" />
+            </node>
+            <node concept="liA8E" id="2S1OXleTQje" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2S1OXleTQ9M" role="3cqZAp" />
+        <node concept="3cpWs8" id="2S1OXleTQUH" role="3cqZAp">
+          <node concept="3cpWsn" id="2S1OXleTQUI" role="3cpWs9">
+            <property role="TrG5h" value="res5" />
+            <node concept="3uibUv" id="2S1OXleTQUJ" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="2S1OXleTQUK" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="2S1OXleTQUL" role="37wK5m">
+                <ref role="3cqZAo" node="7yN$Xh8olDN" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="2S1OXleTQUM" role="37wK5m">
+                <property role="Xl_RC" value="GSwitchExpression (id: 1) - activation (3)" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2S1OXleTQUN" role="3cqZAp">
+          <node concept="2OqwBi" id="2S1OXleTQUO" role="3vwVQn">
+            <node concept="37vLTw" id="2S1OXleTQUP" role="2Oq$k0">
+              <ref role="3cqZAo" node="2S1OXleTQUI" resolve="res5" />
+            </node>
+            <node concept="liA8E" id="2S1OXleTQUQ" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2S1OXleTQLl" role="3cqZAp" />
       </node>
     </node>
   </node>
