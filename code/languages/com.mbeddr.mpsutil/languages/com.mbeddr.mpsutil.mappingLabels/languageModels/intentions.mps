@@ -191,6 +191,9 @@
         <reference id="1171323947160" name="concept" index="2SmgA8" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
+        <reference id="1182511038750" name="concept" index="1j9C0d" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -1277,8 +1280,8 @@
                 <node concept="2Sf5sV" id="7ZfoUOqRATq" role="2Oq$k0" />
                 <node concept="I4A8Y" id="7ZfoUOqRATr" role="2OqNvi" />
               </node>
-              <node concept="2SmgA7" id="7ZfoUOqRATs" role="2OqNvi">
-                <ref role="2SmgA8" to="tpf8:fWbUwhP" resolve="MappingConfiguration" />
+              <node concept="1j9C0f" id="XyAj1ExC$c" role="2OqNvi">
+                <ref role="1j9C0d" to="tpf8:fWbUwhP" resolve="MappingConfiguration" />
               </node>
             </node>
             <node concept="ANE8D" id="7ZfoUOqRATt" role="2OqNvi" />
@@ -2083,8 +2086,8 @@
                 <node concept="2Sf5sV" id="2dCF6Fx9i2a" role="2Oq$k0" />
                 <node concept="I4A8Y" id="2dCF6Fx9i2b" role="2OqNvi" />
               </node>
-              <node concept="2SmgA7" id="2dCF6Fx9i2c" role="2OqNvi">
-                <ref role="2SmgA8" to="tpf8:fWbUwhP" resolve="MappingConfiguration" />
+              <node concept="1j9C0f" id="XyAj1ExFo6" role="2OqNvi">
+                <ref role="1j9C0d" to="tpf8:fWbUwhP" resolve="MappingConfiguration" />
               </node>
             </node>
             <node concept="ANE8D" id="2dCF6Fx9i2d" role="2OqNvi" />
