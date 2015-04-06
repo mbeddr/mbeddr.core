@@ -726,7 +726,7 @@
                   <node concept="2OqwBi" id="5hYHEwZXSLA" role="1x$Ulu">
                     <node concept="13iPFW" id="5hYHEwZXS$d" role="2Oq$k0" />
                     <node concept="2qgKlT" id="5hYHEwZXTu5" role="2OqNvi">
-                      <ref role="37wK5l" node="5hYHEwZIiiQ" resolve="componentIDName" />
+                      <ref role="37wK5l" node="5hYHEwZIiiQ" resolve="genLocalCIDVarName" />
                     </node>
                   </node>
                 </node>
@@ -1570,7 +1570,7 @@
           <node concept="2OqwBi" id="2XtvyVvQS8O" role="2QERvC">
             <node concept="13iPFW" id="2XtvyVvQRMg" role="2Oq$k0" />
             <node concept="2qgKlT" id="2XtvyVvQXu7" role="2OqNvi">
-              <ref role="37wK5l" node="5hYHEwZIiiW" resolve="IDName" />
+              <ref role="37wK5l" node="5hYHEwZIiiW" resolve="genLocalIDVarName" />
             </node>
           </node>
         </node>
@@ -8675,7 +8675,7 @@
                   <node concept="2OqwBi" id="5hYHEwZXXKj" role="1x$Ulu">
                     <node concept="13iPFW" id="5hYHEwZXWsN" role="2Oq$k0" />
                     <node concept="2qgKlT" id="5hYHEwZXZL8" role="2OqNvi">
-                      <ref role="37wK5l" node="5hYHEwZIiiQ" resolve="componentIDName" />
+                      <ref role="37wK5l" node="5hYHEwZIiiQ" resolve="genLocalCIDVarName" />
                     </node>
                   </node>
                 </node>
@@ -17515,7 +17515,7 @@
   <node concept="13h7C7" id="5hYHEwZIiif">
     <ref role="13h7C2" to="v7ag:5hYHEwZIii2" resolve="IComponentIDAware" />
     <node concept="13i0hz" id="5hYHEwZIiiQ" role="13h7CS">
-      <property role="TrG5h" value="componentIDName" />
+      <property role="TrG5h" value="genLocalCIDVarName" />
       <node concept="3Tm1VV" id="5hYHEwZIiiR" role="1B3o_S" />
       <node concept="17QB3L" id="5hYHEwZIiiS" role="3clF45" />
       <node concept="3clFbS" id="5hYHEwZIiiT" role="3clF47">
@@ -17527,7 +17527,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="5hYHEwZIiiW" role="13h7CS">
-      <property role="TrG5h" value="IDName" />
+      <property role="TrG5h" value="genLocalIDVarName" />
       <node concept="3Tm1VV" id="5hYHEwZIiiX" role="1B3o_S" />
       <node concept="17QB3L" id="5hYHEwZIiiY" role="3clF45" />
       <node concept="3clFbS" id="5hYHEwZIiiZ" role="3clF47">
