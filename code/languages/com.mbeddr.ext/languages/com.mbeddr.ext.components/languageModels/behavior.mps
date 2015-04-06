@@ -2252,7 +2252,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="34x64NySiu$" role="13h7CS">
-      <property role="TrG5h" value="generatedStructName" />
+      <property role="TrG5h" value="genStructName" />
       <node concept="3Tm1VV" id="34x64NySiu_" role="1B3o_S" />
       <node concept="17QB3L" id="34x64NySiuC" role="3clF45" />
       <node concept="3clFbS" id="34x64NySiuB" role="3clF47">
