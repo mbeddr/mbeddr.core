@@ -1606,7 +1606,7 @@
       <node concept="3cqZAl" id="ctKDnnsjPL" role="3clF45" />
     </node>
     <node concept="13i0hz" id="6hS8P3pyOXE" role="13h7CS">
-      <property role="TrG5h" value="abstractRunnableMemberName" />
+      <property role="TrG5h" value="genAbstractRunnableMemberName" />
       <node concept="3Tm1VV" id="6hS8P3pyOXF" role="1B3o_S" />
       <node concept="17QB3L" id="6hS8P3pyOXI" role="3clF45" />
       <node concept="3clFbS" id="6hS8P3pyOXH" role="3clF47">
