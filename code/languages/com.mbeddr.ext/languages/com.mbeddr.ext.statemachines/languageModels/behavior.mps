@@ -1385,7 +1385,7 @@
                             <ref role="3cqZAo" node="38XGACK0iS1" resolve="state" />
                           </node>
                           <node concept="2qgKlT" id="38XGACK0je3" role="2OqNvi">
-                            <ref role="37wK5l" node="1oIA7Ec_GUC" resolve="cEnumLiteralName" />
+                            <ref role="37wK5l" node="1oIA7Ec_GUC" resolve="genCEnumLiteralName" />
                           </node>
                         </node>
                       </node>
@@ -5019,7 +5019,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="1oIA7Ec_GUC" role="13h7CS">
-      <property role="TrG5h" value="cEnumLiteralName" />
+      <property role="TrG5h" value="genCEnumLiteralName" />
       <node concept="3Tm1VV" id="1oIA7Ec_GUD" role="1B3o_S" />
       <node concept="17QB3L" id="1oIA7Ec_GUG" role="3clF45" />
       <node concept="3clFbS" id="1oIA7Ec_GUF" role="3clF47">
