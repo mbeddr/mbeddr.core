@@ -106,5 +106,25 @@
     <property role="34LRSv" value="analyses test-data marker" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="1TIwiD" id="2lA5DP6lomC">
+    <property role="TrG5h" value="NodesCollection" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2lA5DP6losI" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="refs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2lA5DP6loqf" resolve="NodeRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2lA5DP6loqf">
+    <property role="TrG5h" value="NodeRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2lA5DP6losD" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="referencedNode" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+  </node>
 </model>
 
