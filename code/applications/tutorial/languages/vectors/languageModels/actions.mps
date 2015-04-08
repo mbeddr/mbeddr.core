@@ -9,7 +9,6 @@
   <imports>
     <import index="vj37" ref="r:4c272460-99ea-4d39-8c9a-f1bc63f0c386(mbeddr.tutorial.vectors.structure)" />
     <import index="e8zp" ref="r:58a558d9-50ed-4b86-91cf-66ce18b52794(com.mbeddr.core.expressions.actions)" />
-    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
   </imports>
   <registry>
@@ -316,8 +315,8 @@
                   <node concept="37vLTw" id="6PYNGEvdTfU" role="2Oq$k0">
                     <ref role="3cqZAo" node="5sJgLFR_hUK" resolve="mae" />
                   </node>
-                  <node concept="3TrEf2" id="6PYNGEvdYtj" role="2OqNvi">
-                    <ref role="3Tt5mk" to="yq40:5sJgLFR$y$3" />
+                  <node concept="3TrEf2" id="1BdqEOb4g3B" role="2OqNvi">
+                    <ref role="3Tt5mk" to="vj37:3yoEvFpCOE9" />
                   </node>
                 </node>
               </node>

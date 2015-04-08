@@ -652,7 +652,7 @@
         </node>
         <node concept="1d7MWx" id="uFBNcnBw6n" role="1d0Bzp">
           <node concept="3TlMh9" id="uFBNcnBw6s" role="1d7UbX">
-            <property role="2hmy$m" value="10" />
+            <property role="2hmy$m" value="0" />
           </node>
           <node concept="3TlMh9" id="uFBNcnBw6p" role="1d7X3i">
             <property role="2hmy$m" value="500" />
