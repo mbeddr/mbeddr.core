@@ -34,7 +34,6 @@
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="1s42" ref="r:d482a2e6-b3ef-4c45-883b-cf624a56b653(com.mbeddr.core.pointers.behavior)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -4433,7 +4432,7 @@
     </node>
   </node>
   <node concept="13MO4I" id="5basnX15I$Z">
-    <property role="TrG5h" value="generateInstanceStruct" />
+    <property role="TrG5h" value="generateInstanceStructContents" />
     <property role="3GE5qa" value="transform2C" />
     <ref role="3gUMe" to="v7ag:3TmmsQkDdTN" resolve="AtomicComponent" />
     <node concept="N3F5e" id="5basnX16QLh" role="13RCb5">
@@ -18567,23 +18566,6 @@
     <node concept="3aamgX" id="pTHqv6KNtn" role="3acgRq">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="v7ag:3TmmsQkDdTN" resolve="AtomicComponent" />
-      <node concept="30G5F_" id="6hS8P3pyO$O" role="30HLyM">
-        <node concept="3clFbS" id="6hS8P3pyO$P" role="2VODD2">
-          <node concept="3clFbF" id="3_MZZHrtIKK" role="3cqZAp">
-            <node concept="3fqX7Q" id="3_MZZHrtIKL" role="3clFbG">
-              <node concept="2OqwBi" id="20ezT9ZDJo1" role="3fr31v">
-                <node concept="3TrcHB" id="20ezT9ZDJo2" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpce:40UcGlRb7V2" resolve="abstract" />
-                </node>
-                <node concept="2OqwBi" id="20ezT9ZDJo3" role="2Oq$k0">
-                  <node concept="3NT_Vc" id="20ezT9ZDJo4" role="2OqNvi" />
-                  <node concept="30H73N" id="20ezT9ZDJo5" role="2Oq$k0" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="1Koe21" id="4WLtQa9fEQ1" role="1lVwrX">
         <node concept="N3F5e" id="4WLtQa9fEQ3" role="1Koe22">
           <property role="TrG5h" value="dumy" />
@@ -18760,7 +18742,7 @@
                 </node>
               </node>
               <node concept="5jKBG" id="5basnX1O0Nm" role="lGtFl">
-                <ref role="v9R2y" node="5basnX15I$Z" resolve="generateInstanceStruct" />
+                <ref role="v9R2y" node="5basnX15I$Z" resolve="generateInstanceStructContents" />
               </node>
             </node>
           </node>
