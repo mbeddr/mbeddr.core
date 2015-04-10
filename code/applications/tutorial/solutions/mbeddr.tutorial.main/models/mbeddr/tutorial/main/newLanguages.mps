@@ -226,6 +226,9 @@
         <child id="671216505796427450" name="summaries" index="q3PPx" />
         <child id="865293814733115677" name="query" index="3pwbkY" />
       </concept>
+      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
+        <child id="4052432714772608243" name="text" index="1w35rA" />
+      </concept>
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <property id="747084250476874891" name="reexport" index="3GEa6x" />
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
@@ -1898,6 +1901,17 @@
             </node>
           </node>
         </node>
+        <node concept="1_9egQ" id="OaXDebHlq" role="3XIRFZ">
+          <node concept="TPXPH" id="OaXDebJgu" role="1_9egR">
+            <node concept="3TlMh9" id="OaXDebJi5" role="3TlMhJ">
+              <property role="2hmy$m" value="10" />
+            </node>
+            <node concept="3V49S3" id="OaXDebHlo" role="3TlMhI">
+              <ref role="3V49S0" node="2wGmDEKl5Bg" resolve="r1" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="OaXDebxqZ" role="3XIRFZ" />
         <node concept="c0Tn9" id="2zx$mQQx7hi" role="3XIRFZ">
           <node concept="3TlM44" id="2zx$mQQx7hn" role="c0Tn6">
             <node concept="3V49S3" id="2wGmDEKlilr" role="3TlMhI">
@@ -2770,6 +2784,15 @@
       <node concept="2EWHp$" id="5rgUaxOt9_$" role="2RW2fA">
         <property role="TrG5h" value="pricer" />
         <ref role="2EX0h9" node="5rgUaxOsOko" resolve="IPriceCalculator" />
+      </node>
+      <node concept="1z9TsT" id="4AuO4fdxs5q" role="lGtFl">
+        <node concept="OjmMv" id="4AuO4fdxs5r" role="1w35rA">
+          <node concept="19SGf9" id="4AuO4fdxs5s" role="OjmMu">
+            <node concept="19SUe$" id="4AuO4fdxs5t" role="19SJt6">
+              <property role="19SUeA" value="The catalog port is supposed to have an error for demo purposes." />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3GEVxB" id="5rgUaxOt3oD" role="2OODSX">
