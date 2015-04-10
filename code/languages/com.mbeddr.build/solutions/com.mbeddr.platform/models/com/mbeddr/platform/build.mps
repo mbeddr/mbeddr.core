@@ -5329,6 +5329,55 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="4DtKYIYvln6" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.bldoc" />
+        <property role="3LESm3" value="f3b3dc28-fee3-49e1-a46e-685e96389094" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="4DtKYIYvln7" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="4DtKYIYvln8" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="4DtKYIYvln9" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.bldoc" />
+              <node concept="2Ry0Ak" id="4DtKYIYvmXq" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.bldoc.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1E0d5M" id="4DtKYIYvlnf" role="1E1XAP">
+          <ref role="1E0d5P" node="4gGXGcLV_Ec" resolve="com.mbeddr.mpsutil.multilingual.common.runtime" />
+        </node>
+        <node concept="1yeLz9" id="4DtKYIYvlng" role="1TViLv">
+          <property role="TrG5h" value="com.mbeddr.mpsutil.bldoc#4437216639171900779" />
+          <property role="3LESm3" value="6b0cf6a4-d2d3-4472-bb0d-32b07a2075c8" />
+          <property role="2GAjPV" value="false" />
+        </node>
+        <node concept="1SiIV0" id="4DtKYIYvnyM" role="3bR37C">
+          <node concept="3bR9La" id="4DtKYIYvnyN" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4DtKYIYvnyO" role="3bR37C">
+          <node concept="3bR9La" id="4DtKYIYvnyP" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4DtKYIYvo8Z" role="3bR37C">
+          <node concept="3bR9La" id="4DtKYIYvo90" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="4DtKYIYvln6" resolve="com.mbeddr.mpsutil.bldoc" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4DtKYIYvo91" role="3bR37C">
+          <node concept="1Busua" id="4DtKYIYvo92" role="1SiIV1">
+            <ref role="1Busuk" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtD" id="4gGXGcLVNj$" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.multilingual.baseLanguage" />
