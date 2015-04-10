@@ -74,11 +74,6 @@ public class Util {
 	public Process createMakeTestProcess(File workingDirectory,
 			ITeamcityLogger logger) throws IOException {
 		List<String> commandList = new ArrayList<String>();
-        commandList.add("make");
-        commandList.add("clean");
-        this.createProcess(workingDirectory,
-                this.createPlatformSpecificProcessBuilder(commandList), logger);
-        commandList.clear();
 		commandList.add("make");
 		commandList.add("test");
 		return this.createProcess(workingDirectory,

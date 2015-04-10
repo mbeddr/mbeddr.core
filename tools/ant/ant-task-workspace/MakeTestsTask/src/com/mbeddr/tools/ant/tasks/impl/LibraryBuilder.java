@@ -20,10 +20,6 @@ public class LibraryBuilder implements MakeExecutor {
 	private Process createMakeProcess(File workingDirectory) throws IOException {
 		List<String> commandList = new ArrayList<String>();
 		commandList.add("make");
-        commandList.add("clean");
-        util.createProcess(workingDirectory, util.createPlatformSpecificProcessBuilder(commandList));
-        commandList.clear();
-        commandList.add("make");
 		return util.createProcess(workingDirectory, util.createPlatformSpecificProcessBuilder(commandList));
 	}
 	

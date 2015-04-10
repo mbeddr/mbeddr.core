@@ -480,7 +480,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="15x2XTK7TQk" role="13h7CS">
-      <property role="TrG5h" value="dataStructName" />
+      <property role="TrG5h" value="genDataStructName" />
       <node concept="3Tm1VV" id="15x2XTK7TQl" role="1B3o_S" />
       <node concept="17QB3L" id="15x2XTK7TQo" role="3clF45" />
       <node concept="3clFbS" id="15x2XTK7TQn" role="3clF47">
@@ -505,7 +505,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="3Krj9Itkh60" role="13h7CS">
-      <property role="TrG5h" value="messageListName" />
+      <property role="TrG5h" value="genMessageListName" />
       <node concept="3Tm1VV" id="3Krj9Itkh61" role="1B3o_S" />
       <node concept="17QB3L" id="3Krj9Itkh62" role="3clF45" />
       <node concept="3clFbS" id="3Krj9Itkh63" role="3clF47">
@@ -530,7 +530,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="15x2XTK8dcP" role="13h7CS">
-      <property role="TrG5h" value="reducedComponentName" />
+      <property role="TrG5h" value="genReducedComponentName" />
       <node concept="3Tm1VV" id="15x2XTK8dcQ" role="1B3o_S" />
       <node concept="17QB3L" id="15x2XTK8dcT" role="3clF45" />
       <node concept="3clFbS" id="15x2XTK8dcS" role="3clF47">
@@ -2570,7 +2570,7 @@
     <property role="3GE5qa" value="stub" />
     <ref role="13h7C2" to="mxvz:5u7uvg8pDpz" resolve="StubComponent" />
     <node concept="13i0hz" id="5u7uvg8qL$8" role="13h7CS">
-      <property role="TrG5h" value="reducedComponentName" />
+      <property role="TrG5h" value="genReducedComponentName" />
       <node concept="3Tm1VV" id="5u7uvg8qL$9" role="1B3o_S" />
       <node concept="17QB3L" id="5u7uvg8qL$a" role="3clF45" />
       <node concept="3clFbS" id="5u7uvg8qL$b" role="3clF47">
@@ -4741,7 +4741,7 @@
           <node concept="2OqwBi" id="5hYHEwZIxe8" role="2QERvC">
             <node concept="13iPFW" id="5hYHEwZIwIN" role="2Oq$k0" />
             <node concept="2qgKlT" id="5hYHEwZIya1" role="2OqNvi">
-              <ref role="37wK5l" to="eup9:5hYHEwZIiiW" resolve="IDName" />
+              <ref role="37wK5l" to="eup9:5hYHEwZIiiW" resolve="genLocalIDVarName" />
             </node>
           </node>
         </node>

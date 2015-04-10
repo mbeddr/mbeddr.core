@@ -652,7 +652,7 @@
         </node>
         <node concept="1d7MWx" id="uFBNcnBw6n" role="1d0Bzp">
           <node concept="3TlMh9" id="uFBNcnBw6s" role="1d7UbX">
-            <property role="2hmy$m" value="10" />
+            <property role="2hmy$m" value="0" />
           </node>
           <node concept="3TlMh9" id="uFBNcnBw6p" role="1d7X3i">
             <property role="2hmy$m" value="500" />
@@ -1782,6 +1782,15 @@
       <property role="1Ema5g" value="true" />
       <property role="2iEbMk" value="1428575310705" />
       <property role="2iEaKi" value="berndkolb" />
+      <node concept="qc_Tx" id="5mBKkp7AgIz" role="q3PPx">
+        <property role="qc_TA" value="6" />
+        <property role="qc_T$" value="0" />
+        <property role="qc_T_" value="0" />
+      </node>
+      <node concept="3l4hTA" id="5mBKkp7AgIy" role="q3PPx">
+        <property role="3l4hTz" value="26" />
+        <property role="htQvV" value="18" />
+      </node>
       <node concept="3l4mXQ" id="7A_Yc2WoUaW" role="3pwbkY">
         <property role="3I$89_" value="0" />
         <property role="Bvl76" value="false" />
@@ -1863,21 +1872,17 @@
           <ref role="3l4mYn" node="7A_Yc2WoU8W" resolve="impl2" />
         </node>
       </node>
-      <node concept="qc_Tx" id="5mBKkp7AgIz" role="q3PPx">
-        <property role="qc_TA" value="6" />
-        <property role="qc_T$" value="0" />
-        <property role="qc_T_" value="0" />
-      </node>
-      <node concept="3l4hTA" id="5mBKkp7AgIy" role="q3PPx">
-        <property role="3l4hTz" value="26" />
-        <property role="htQvV" value="18" />
-      </node>
     </node>
     <node concept="3pwaUv" id="1qjRex4iXhC" role="3pwaUu">
       <property role="TrG5h" value="RequirementsWithoutEfforts" />
       <property role="1EdQ0A" value="true" />
       <property role="2iEbMk" value="1428570453369" />
       <property role="2iEaKi" value="berndkolb" />
+      <node concept="qc_Tx" id="5mBKkp7_9HV" role="q3PPx">
+        <property role="qc_TA" value="28" />
+        <property role="qc_T$" value="3" />
+        <property role="qc_T_" value="0" />
+      </node>
       <node concept="3pwbzX" id="5mBKkp7_9HR" role="3pwbzW">
         <property role="1OfcgH" value="true" />
         <property role="3J1cY9" value="1428570453361" />
@@ -2240,11 +2245,6 @@
         </node>
       </node>
       <node concept="3pweHT" id="1qjRex4iXhE" role="3pwbkY" />
-      <node concept="qc_Tx" id="5mBKkp7_9HV" role="q3PPx">
-        <property role="qc_TA" value="28" />
-        <property role="qc_T$" value="3" />
-        <property role="qc_T_" value="0" />
-      </node>
     </node>
     <node concept="3pwaUv" id="yBYRhyDndx" role="3pwaUu">
       <property role="TrG5h" value="Visualisations" />

@@ -147,6 +147,7 @@
         <child id="8860443239512128064" name="left" index="3TlMhI" />
         <child id="8860443239512128065" name="right" index="3TlMhJ" />
       </concept>
+      <concept id="8860443239512128108" name="com.mbeddr.core.expressions.structure.IntType" flags="ng" index="3TlMh2" />
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
   </registry>
@@ -320,10 +321,7 @@
       </node>
       <node concept="19RgSI" id="4$QybXn2ssP" role="1UOdpc">
         <property role="TrG5h" value="b" />
-        <node concept="26Vqqz" id="7x9scHwqbcQ" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
+        <node concept="3TlMh2" id="4WTYg$PM8CP" role="2C2TGm" />
       </node>
     </node>
   </node>
@@ -351,9 +349,24 @@
       <property role="TrG5h" value="empty_1427974978767_1" />
     </node>
     <node concept="N3Fnx" id="7x9scHwiQNJ" role="N3F5h">
+      <property role="TrG5h" value="add" />
       <property role="2OOxQR" value="false" />
       <property role="3mNxdG" value="true" />
-      <property role="TrG5h" value="add" />
+      <node concept="26Vqqz" id="7Wwl2$U_RRm" role="2C2TGm" />
+      <node concept="19RgSI" id="2w8ga0DcxDb" role="1UOdpc">
+        <property role="TrG5h" value="a" />
+        <node concept="26Vqqz" id="7Wwl2$U_RRk" role="2C2TGm" />
+      </node>
+      <node concept="19RgSI" id="7Wwl2$UvWdb" role="1UOdpc">
+        <property role="TrG5h" value="b" />
+        <node concept="26Vqqz" id="7Wwl2$U_RRl" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="oneTI" id="2w8ga0Dcy9i" role="lGtFl">
+        <ref role="on8v6" node="4$QybXn2ssK" resolve="add" />
+      </node>
       <node concept="3XIRFW" id="7x9scHwiQNL" role="3XIRFX">
         <node concept="3XIRlf" id="7x9scHwt9Bg" role="3XIRFZ">
           <property role="TrG5h" value="bla" />
@@ -373,21 +386,6 @@
           </node>
         </node>
       </node>
-      <node concept="19RgSI" id="2w8ga0DcxDb" role="1UOdpc">
-        <property role="TrG5h" value="a" />
-        <node concept="26Vqqz" id="7Wwl2$U_RRk" role="2C2TGm" />
-      </node>
-      <node concept="oneTI" id="2w8ga0Dcy9i" role="lGtFl">
-        <ref role="on8v6" node="4$QybXn2ssK" resolve="add" />
-      </node>
-      <node concept="19RgSI" id="7Wwl2$UvWdb" role="1UOdpc">
-        <property role="TrG5h" value="b" />
-        <node concept="26Vqqz" id="7Wwl2$U_RRl" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-      <node concept="26Vqqz" id="7Wwl2$U_RRm" role="2C2TGm" />
     </node>
     <node concept="3GEVxB" id="7x9scHwjqNi" role="2OODSX">
       <ref role="3GEb4d" node="4$QybXn2ssH" resolve="externalStuff" />

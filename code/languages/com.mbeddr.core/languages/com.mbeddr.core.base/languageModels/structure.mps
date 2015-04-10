@@ -1700,10 +1700,5 @@
     <property role="TrG5h" value="FileSystemDirPicker" />
     <ref role="1TJDcQ" node="5lKnBeAtNw8" resolve="AbstractFilePicker" />
   </node>
-  <node concept="1TIwiD" id="1jw2PJJHS3i">
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="FileSystemFilePicker" />
-    <ref role="1TJDcQ" node="5lKnBeAtNw8" resolve="AbstractFilePicker" />
-  </node>
 </model>
 

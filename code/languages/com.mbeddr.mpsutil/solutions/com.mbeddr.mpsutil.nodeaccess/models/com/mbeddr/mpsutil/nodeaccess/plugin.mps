@@ -351,20 +351,6 @@
       <node concept="3Tm1VV" id="2VC4eVY69Z8" role="1B3o_S" />
       <node concept="17QB3L" id="2VC4eVY6asl" role="3clF45" />
     </node>
-    <node concept="2YIFZL" id="2YCA0ZByUi7" role="jymVt">
-      <property role="TrG5h" value="DEFAULT_PROJECT_NAME" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <node concept="3clFbS" id="2YCA0ZByUi8" role="3clF47">
-        <node concept="3clFbF" id="2YCA0ZByVmG" role="3cqZAp">
-          <node concept="Xl_RD" id="2YCA0ZByUgY" role="3clFbG">
-            <property role="Xl_RC" value="DEFAULT" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="2YCA0ZByUif" role="1B3o_S" />
-      <node concept="17QB3L" id="2YCA0ZByUig" role="3clF45" />
-    </node>
     <node concept="2tJIrI" id="bBMhoey41_" role="jymVt" />
     <node concept="2YIFZL" id="bBMhoeybYJ" role="jymVt">
       <property role="TrG5h" value="createURLForNode" />
@@ -375,43 +361,12 @@
           <node concept="3cpWsn" id="CaPjC1$8jF" role="3cpWs9">
             <property role="TrG5h" value="projectName" />
             <node concept="17QB3L" id="CaPjC1$qdZ" role="1tU5fm" />
-          </node>
-        </node>
-        <node concept="3clFbJ" id="2YCA0ZBySva" role="3cqZAp">
-          <node concept="3clFbS" id="2YCA0ZBySvc" role="3clFbx">
-            <node concept="3clFbF" id="2YCA0ZByOCh" role="3cqZAp">
-              <node concept="37vLTI" id="2YCA0ZByOCj" role="3clFbG">
-                <node concept="2OqwBi" id="CaPjC1$8jG" role="37vLTx">
-                  <node concept="37vLTw" id="CaPjC1$8jH" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2N1CSrzDxMU" resolve="project" />
-                  </node>
-                  <node concept="liA8E" id="CaPjC1$8jI" role="2OqNvi">
-                    <ref role="37wK5l" to="vsqj:~Project.getName():java.lang.String" resolve="getName" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="2YCA0ZByOCn" role="37vLTJ">
-                  <ref role="3cqZAo" node="CaPjC1$8jF" resolve="projectName" />
-                </node>
+            <node concept="2OqwBi" id="CaPjC1$8jG" role="33vP2m">
+              <node concept="37vLTw" id="CaPjC1$8jH" role="2Oq$k0">
+                <ref role="3cqZAo" node="2N1CSrzDxMU" resolve="project" />
               </node>
-            </node>
-          </node>
-          <node concept="3y3z36" id="2YCA0ZByTBZ" role="3clFbw">
-            <node concept="10Nm6u" id="2YCA0ZByTGh" role="3uHU7w" />
-            <node concept="37vLTw" id="2YCA0ZBySAZ" role="3uHU7B">
-              <ref role="3cqZAo" node="2N1CSrzDxMU" resolve="project" />
-            </node>
-          </node>
-          <node concept="9aQIb" id="2YCA0ZByTTO" role="9aQIa">
-            <node concept="3clFbS" id="2YCA0ZByTTP" role="9aQI4">
-              <node concept="3clFbF" id="2YCA0ZByU72" role="3cqZAp">
-                <node concept="37vLTI" id="2YCA0ZByUdu" role="3clFbG">
-                  <node concept="37vLTw" id="2YCA0ZByU71" role="37vLTJ">
-                    <ref role="3cqZAo" node="CaPjC1$8jF" resolve="projectName" />
-                  </node>
-                  <node concept="1rXfSq" id="2YCA0ZByVgq" role="37vLTx">
-                    <ref role="37wK5l" node="2YCA0ZByUi7" resolve="DEFAULT_PROJECT_NAME" />
-                  </node>
-                </node>
+              <node concept="liA8E" id="CaPjC1$8jI" role="2OqNvi">
+                <ref role="37wK5l" to="vsqj:~Project.getName():java.lang.String" resolve="getName" />
               </node>
             </node>
           </node>
@@ -950,69 +905,35 @@
             <node concept="3uibUv" id="7CAL8BWhzB" role="1tU5fm">
               <ref role="3uigEE" to="vsqj:~Project" resolve="Project" />
             </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="2YCA0ZByW07" role="3cqZAp">
-          <node concept="3clFbS" id="2YCA0ZByW09" role="3clFbx">
-            <node concept="3clFbF" id="2YCA0ZByZvu" role="3cqZAp">
-              <node concept="37vLTI" id="2YCA0ZByZBX" role="3clFbG">
-                <node concept="10Nm6u" id="2YCA0ZByZCP" role="37vLTx" />
-                <node concept="37vLTw" id="2YCA0ZByZvs" role="37vLTJ">
-                  <ref role="3cqZAo" node="7CAL8BWhzA" resolve="project" />
-                </node>
+            <node concept="2OqwBi" id="7CAL8BWhzC" role="33vP2m">
+              <node concept="37vLTw" id="602uc2JOk12" role="2Oq$k0">
+                <ref role="3cqZAo" node="602uc2JOk0W" resolve="allOpenProjects" />
               </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="2YCA0ZByWSY" role="3clFbw">
-            <node concept="37vLTw" id="2YCA0ZByWiU" role="2Oq$k0">
-              <ref role="3cqZAo" node="2N1CSrzLgCf" resolve="projectName" />
-            </node>
-            <node concept="liA8E" id="2YCA0ZByYdl" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
-              <node concept="1rXfSq" id="2YCA0ZByZ3o" role="37wK5m">
-                <ref role="37wK5l" node="2YCA0ZByUi7" resolve="DEFAULT_PROJECT_NAME" />
-              </node>
-            </node>
-          </node>
-          <node concept="9aQIb" id="2YCA0ZByZDB" role="9aQIa">
-            <node concept="3clFbS" id="2YCA0ZByZDC" role="9aQI4">
-              <node concept="3clFbF" id="2YCA0ZByVmV" role="3cqZAp">
-                <node concept="37vLTI" id="2YCA0ZByVmX" role="3clFbG">
-                  <node concept="2OqwBi" id="7CAL8BWhzC" role="37vLTx">
-                    <node concept="37vLTw" id="602uc2JOk12" role="2Oq$k0">
-                      <ref role="3cqZAo" node="602uc2JOk0W" resolve="allOpenProjects" />
-                    </node>
-                    <node concept="1z4cxt" id="7CAL8BWhzI" role="2OqNvi">
-                      <node concept="1bVj0M" id="7CAL8BWhzJ" role="23t8la">
-                        <node concept="3clFbS" id="7CAL8BWhzK" role="1bW5cS">
-                          <node concept="3clFbF" id="7CAL8BWhzL" role="3cqZAp">
-                            <node concept="2OqwBi" id="7CAL8BWhzM" role="3clFbG">
-                              <node concept="2OqwBi" id="7CAL8BWhzN" role="2Oq$k0">
-                                <node concept="37vLTw" id="7CAL8BWhzO" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="7CAL8BWhzS" resolve="it" />
-                                </node>
-                                <node concept="liA8E" id="7CAL8BWhzP" role="2OqNvi">
-                                  <ref role="37wK5l" to="vsqj:~Project.getName():java.lang.String" resolve="getName" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="7CAL8BWhzQ" role="2OqNvi">
-                                <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                                <node concept="37vLTw" id="7CAL8BWhzR" role="37wK5m">
-                                  <ref role="3cqZAo" node="2N1CSrzLgCf" resolve="projectName" />
-                                </node>
-                              </node>
-                            </node>
+              <node concept="1z4cxt" id="7CAL8BWhzI" role="2OqNvi">
+                <node concept="1bVj0M" id="7CAL8BWhzJ" role="23t8la">
+                  <node concept="3clFbS" id="7CAL8BWhzK" role="1bW5cS">
+                    <node concept="3clFbF" id="7CAL8BWhzL" role="3cqZAp">
+                      <node concept="2OqwBi" id="7CAL8BWhzM" role="3clFbG">
+                        <node concept="2OqwBi" id="7CAL8BWhzN" role="2Oq$k0">
+                          <node concept="37vLTw" id="7CAL8BWhzO" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7CAL8BWhzS" resolve="it" />
+                          </node>
+                          <node concept="liA8E" id="7CAL8BWhzP" role="2OqNvi">
+                            <ref role="37wK5l" to="vsqj:~Project.getName():java.lang.String" resolve="getName" />
                           </node>
                         </node>
-                        <node concept="Rh6nW" id="7CAL8BWhzS" role="1bW2Oz">
-                          <property role="TrG5h" value="it" />
-                          <node concept="2jxLKc" id="7CAL8BWhzT" role="1tU5fm" />
+                        <node concept="liA8E" id="7CAL8BWhzQ" role="2OqNvi">
+                          <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <node concept="37vLTw" id="7CAL8BWhzR" role="37wK5m">
+                            <ref role="3cqZAo" node="2N1CSrzLgCf" resolve="projectName" />
+                          </node>
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="37vLTw" id="2YCA0ZByVn1" role="37vLTJ">
-                    <ref role="3cqZAo" node="7CAL8BWhzA" resolve="project" />
+                  <node concept="Rh6nW" id="7CAL8BWhzS" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="7CAL8BWhzT" role="1tU5fm" />
                   </node>
                 </node>
               </node>
