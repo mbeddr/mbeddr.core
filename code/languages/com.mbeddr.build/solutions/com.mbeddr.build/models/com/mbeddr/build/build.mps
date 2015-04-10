@@ -3184,6 +3184,12 @@
               <ref role="3bR37D" node="WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
             </node>
           </node>
+          <node concept="1SiIV0" id="228dsX03C3c" role="3bR37C">
+            <node concept="3bR9La" id="228dsX03C3d" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="2hujs6kgx2Q" role="3bR37C">
           <node concept="3bR9La" id="2hujs6kgx2R" role="1SiIV1">
