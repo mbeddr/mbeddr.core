@@ -26,6 +26,10 @@
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+        <child id="2820489544402271667" name="typeParameter" index="HU9BZ" />
+      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -95,7 +99,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -131,9 +135,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk">
-        <child id="1212687122400" name="typeParameter" index="1pMfVU" />
-      </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -305,7 +307,7 @@
     </language>
   </registry>
   <node concept="312cEu" id="DYlgnA_Sux">
-    <property role="TrG5h" value="MpsNodeComparator" />
+    <property role="TrG5h" value="MPSNodeComparator" />
     <node concept="2tJIrI" id="DYlgnA_SuI" role="jymVt" />
     <node concept="312cEg" id="DYlgnA_XCC" role="jymVt">
       <property role="TrG5h" value="verbose" />
@@ -696,7 +698,7 @@
       </node>
       <node concept="3Tm1VV" id="DYlgnAMRvx" role="1B3o_S" />
       <node concept="3uibUv" id="DYlgnAMZ4r" role="3clF45">
-        <ref role="3uigEE" node="DYlgnAAptw" resolve="MpsNodeComparisonResult" />
+        <ref role="3uigEE" node="DYlgnAAptw" resolve="MPSNodeComparisonResult" />
       </node>
     </node>
     <node concept="2tJIrI" id="QGTX7elKVE" role="jymVt" />
@@ -1048,11 +1050,11 @@
           <node concept="3cpWsn" id="DYlgnAA7xd" role="3cpWs9">
             <property role="TrG5h" value="aProperties" />
             <node concept="2hMVRd" id="DYlgnAJECt" role="1tU5fm">
-              <node concept="17QB3L" id="DYlgnAJECv" role="2hN53Y" />
+              <node concept="17QB3L" id="1rBPbD3KTFZ" role="2hN53Y" />
             </node>
             <node concept="2ShNRf" id="DYlgnAJaR6" role="33vP2m">
               <node concept="2i4dXS" id="DYlgnAJOEp" role="2ShVmc">
-                <node concept="17QB3L" id="DYlgnAJOEr" role="HW$YZ" />
+                <node concept="17QB3L" id="1rBPbD3KUGX" role="HW$YZ" />
               </node>
             </node>
           </node>
@@ -1146,6 +1148,7 @@
           </node>
         </node>
         <node concept="3clFbH" id="DYlgnAHzIn" role="3cqZAp" />
+        <node concept="3clFbH" id="1rBPbD3IHxe" role="3cqZAp" />
         <node concept="2Gpval" id="DYlgnAA7xA" role="3cqZAp">
           <node concept="2GrKxI" id="DYlgnAA7xB" role="2Gsz3X">
             <property role="TrG5h" value="p" />
@@ -1364,7 +1367,7 @@
       <node concept="37vLTG" id="DYlgnAA7yh" role="3clF46">
         <property role="TrG5h" value="result" />
         <node concept="3uibUv" id="DYlgnAA7yi" role="1tU5fm">
-          <ref role="3uigEE" node="DYlgnAAptw" resolve="MpsNodeComparisonResult" />
+          <ref role="3uigEE" node="DYlgnAAptw" resolve="MPSNodeComparisonResult" />
         </node>
       </node>
     </node>
@@ -1863,7 +1866,7 @@
       <node concept="37vLTG" id="DYlgnAA7yo" role="3clF46">
         <property role="TrG5h" value="result" />
         <node concept="3uibUv" id="DYlgnAA7yp" role="1tU5fm">
-          <ref role="3uigEE" node="DYlgnAAptw" resolve="MpsNodeComparisonResult" />
+          <ref role="3uigEE" node="DYlgnAAptw" resolve="MPSNodeComparisonResult" />
         </node>
       </node>
       <node concept="3cqZAl" id="DYlgnAA7yq" role="3clF45" />
@@ -2502,7 +2505,7 @@
               <node concept="3cpWsn" id="DYlgnAA7$3" role="3cpWs9">
                 <property role="TrG5h" value="comparison" />
                 <node concept="3uibUv" id="DYlgnAA7$4" role="1tU5fm">
-                  <ref role="3uigEE" node="DYlgnAAptw" resolve="MpsNodeComparisonResult" />
+                  <ref role="3uigEE" node="DYlgnAAptw" resolve="MPSNodeComparisonResult" />
                 </node>
                 <node concept="3P9mCS" id="DYlgnAA7$5" role="33vP2m">
                   <ref role="37wK5l" node="DYlgnAMab1" resolve="compareWithoutConsideringChildren" />
@@ -2607,10 +2610,10 @@
               </node>
             </node>
             <node concept="2ShNRf" id="DYlgnAA7$F" role="33vP2m">
-              <node concept="1pGfFk" id="DYlgnAA7$G" role="2ShVmc">
-                <ref role="37wK5l" node="DYlgnA_luH" resolve="MapOfList" />
-                <node concept="17QB3L" id="DYlgnAA7$H" role="1pMfVU" />
-                <node concept="3Tqbb2" id="DYlgnAA7$I" role="1pMfVU">
+              <node concept="HV5vD" id="1rBPbD3KkIL" role="2ShVmc">
+                <ref role="HV5vE" node="DYlgnA_hPz" resolve="MapOfList" />
+                <node concept="17QB3L" id="1rBPbD3KkIM" role="HU9BZ" />
+                <node concept="3Tqbb2" id="1rBPbD3KkIN" role="HU9BZ">
                   <ref role="ehGHo" to="tpck:4uZwTti3_$T" resolve="Attribute" />
                 </node>
               </node>
@@ -2664,10 +2667,10 @@
               </node>
             </node>
             <node concept="2ShNRf" id="DYlgnAA7_4" role="33vP2m">
-              <node concept="1pGfFk" id="DYlgnAA7_5" role="2ShVmc">
-                <ref role="37wK5l" node="DYlgnA_luH" resolve="MapOfList" />
-                <node concept="17QB3L" id="DYlgnAA7_6" role="1pMfVU" />
-                <node concept="3Tqbb2" id="DYlgnAA7_7" role="1pMfVU">
+              <node concept="HV5vD" id="1rBPbD3KkIW" role="2ShVmc">
+                <ref role="HV5vE" node="DYlgnA_hPz" resolve="MapOfList" />
+                <node concept="17QB3L" id="1rBPbD3KkIX" role="HU9BZ" />
+                <node concept="3Tqbb2" id="1rBPbD3KkIY" role="HU9BZ">
                   <ref role="ehGHo" to="tpck:4uZwTti3_$T" resolve="Attribute" />
                 </node>
               </node>
@@ -2876,7 +2879,7 @@
                         <node concept="3cpWsn" id="DYlgnAA7Ar" role="3cpWs9">
                           <property role="TrG5h" value="attrDiff" />
                           <node concept="3uibUv" id="DYlgnAA7As" role="1tU5fm">
-                            <ref role="3uigEE" node="DYlgnAAptw" resolve="MpsNodeComparisonResult" />
+                            <ref role="3uigEE" node="DYlgnAAptw" resolve="MPSNodeComparisonResult" />
                           </node>
                           <node concept="3P9mCS" id="DYlgnAA7At" role="33vP2m">
                             <ref role="37wK5l" node="DYlgnAN5BS" resolve="compare" />
@@ -3040,7 +3043,7 @@
       <node concept="37vLTG" id="DYlgnAA7Bf" role="3clF46">
         <property role="TrG5h" value="result" />
         <node concept="3uibUv" id="DYlgnAA7Bg" role="1tU5fm">
-          <ref role="3uigEE" node="DYlgnAAptw" resolve="MpsNodeComparisonResult" />
+          <ref role="3uigEE" node="DYlgnAAptw" resolve="MPSNodeComparisonResult" />
         </node>
       </node>
     </node>
@@ -3055,11 +3058,11 @@
             <property role="TrG5h" value="childRoles" />
             <node concept="3uibUv" id="DYlgnAE$k6" role="1tU5fm">
               <ref role="3uigEE" to="k7g3:~Set" resolve="Set" />
-              <node concept="17QB3L" id="DYlgnAEAIW" role="11_B2D" />
+              <node concept="17QB3L" id="1rBPbD3KVHV" role="11_B2D" />
             </node>
             <node concept="2ShNRf" id="DYlgnAF9Du" role="33vP2m">
               <node concept="2i4dXS" id="DYlgnAFeUr" role="2ShVmc">
-                <node concept="17QB3L" id="DYlgnAFfur" role="HW$YZ" />
+                <node concept="17QB3L" id="1rBPbD3KWu_" role="HW$YZ" />
               </node>
             </node>
           </node>
@@ -3084,10 +3087,10 @@
                       <node concept="3clFbS" id="DYlgnAEWTN" role="1bW5cS">
                         <node concept="3clFbF" id="DYlgnAEWTO" role="3cqZAp">
                           <node concept="2OqwBi" id="DYlgnAEWTP" role="3clFbG">
+                            <node concept="13GOg" id="1rBPbD3KXmw" role="2OqNvi" />
                             <node concept="37vLTw" id="DYlgnAEWTQ" role="2Oq$k0">
                               <ref role="3cqZAo" node="DYlgnAEWTS" resolve="it" />
                             </node>
-                            <node concept="13GOg" id="DYlgnAEYiU" role="2OqNvi" />
                           </node>
                         </node>
                       </node>
@@ -3123,10 +3126,10 @@
                       <node concept="3clFbS" id="DYlgnAFwuj" role="1bW5cS">
                         <node concept="3clFbF" id="DYlgnAFwuk" role="3cqZAp">
                           <node concept="2OqwBi" id="DYlgnAFwul" role="3clFbG">
+                            <node concept="13GOg" id="1rBPbD3KXAM" role="2OqNvi" />
                             <node concept="37vLTw" id="DYlgnAFwum" role="2Oq$k0">
                               <ref role="3cqZAo" node="DYlgnAFwuo" resolve="it" />
                             </node>
-                            <node concept="13GOg" id="DYlgnAFwun" role="2OqNvi" />
                           </node>
                         </node>
                       </node>
@@ -3712,7 +3715,7 @@
                         <node concept="3cpWsn" id="DYlgnAA7CE" role="3cpWs9">
                           <property role="TrG5h" value="childDiff" />
                           <node concept="3uibUv" id="DYlgnAA7CF" role="1tU5fm">
-                            <ref role="3uigEE" node="DYlgnAAptw" resolve="MpsNodeComparisonResult" />
+                            <ref role="3uigEE" node="DYlgnAAptw" resolve="MPSNodeComparisonResult" />
                           </node>
                           <node concept="3P9mCS" id="DYlgnAA7CG" role="33vP2m">
                             <ref role="37wK5l" node="DYlgnAN5BS" resolve="compare" />
@@ -3875,7 +3878,7 @@
       <node concept="37vLTG" id="DYlgnAA7Dv" role="3clF46">
         <property role="TrG5h" value="result" />
         <node concept="3uibUv" id="DYlgnAA7Dw" role="1tU5fm">
-          <ref role="3uigEE" node="DYlgnAAptw" resolve="MpsNodeComparisonResult" />
+          <ref role="3uigEE" node="DYlgnAAptw" resolve="MPSNodeComparisonResult" />
         </node>
       </node>
     </node>
