@@ -8,9 +8,9 @@
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="-1" />
-    <use id="7a07df55-d34f-4938-9dc9-c19fd71bcb69" name="com.mbeddr.mpsutil.tooltip" version="-1" />
     <use id="b33d119e-196d-4497-977c-5c167b21fe33" name="com.mbeddr.mpsutil.framecell" version="-1" />
     <use id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor" version="-1" />
+    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -405,6 +405,12 @@
       </concept>
       <concept id="8974276187400348177" name="jetbrains.mps.lang.access.structure.ExecuteCommandStatement" flags="nn" index="1QHqEO" />
     </language>
+    <language id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips">
+      <concept id="9185659875393567715" name="de.itemis.mps.tooltips.structure.CellModel_Tooltip" flags="ng" index="1j7BWu">
+        <child id="9185659875393569181" name="anchor" index="1j7Clw" />
+        <child id="9185659875393569179" name="tooltip" index="1j7ClA" />
+      </concept>
+    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
@@ -456,12 +462,6 @@
     </language>
     <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
       <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" index="27S6Sx" />
-    </language>
-    <language id="7a07df55-d34f-4938-9dc9-c19fd71bcb69" name="com.mbeddr.mpsutil.tooltip">
-      <concept id="9185659875393567715" name="com.mbeddr.mpsutil.tooltip.structure.CellModel_Tooltip" flags="ng" index="1j7BWu">
-        <child id="9185659875393569181" name="anchor" index="1j7Clw" />
-        <child id="9185659875393569179" name="tooltip" index="1j7ClA" />
-      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1226359078165" name="jetbrains.mps.lang.smodel.structure.LinkRefExpression" flags="nn" index="28GBK8">
@@ -8525,12 +8525,12 @@
     <node concept="2aJ2om" id="2rKfGsWgwVR" role="CpUAK">
       <ref role="2$4xQ3" to="r4b4:7xesQBpJXuT" resolve="presentationMode" />
     </node>
-    <node concept="1j7BWu" id="2rKfGsWgwY4" role="2wV5jI">
-      <node concept="3F1sOY" id="2rKfGsWgx1N" role="1j7ClA">
-        <ref role="1NtTu8" to="2c95:2nto7GJwth7" />
-      </node>
-      <node concept="3F0ifn" id="2rKfGsWgx1$" role="1j7Clw">
+    <node concept="1j7BWu" id="5LCbJRRXbl$" role="2wV5jI">
+      <node concept="3F0ifn" id="5LCbJRRXblQ" role="1j7Clw">
         <property role="3F0ifm" value="[Footnote]" />
+      </node>
+      <node concept="3F1sOY" id="5LCbJRRXbm0" role="1j7ClA">
+        <ref role="1NtTu8" to="2c95:2nto7GJwth7" />
       </node>
     </node>
   </node>

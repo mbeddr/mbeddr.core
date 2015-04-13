@@ -3,8 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="818a6981-aa97-4390-8f39-1c98ce66bd6c" name="test.lang.hierchicalstructure" version="-1" />
-    <use id="a482b416-d0c9-473f-8f67-725ed642b3f3" name="com.mbeddr.mpsutil.breadcrumb" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
   </languages>
   <imports />
   <registry>

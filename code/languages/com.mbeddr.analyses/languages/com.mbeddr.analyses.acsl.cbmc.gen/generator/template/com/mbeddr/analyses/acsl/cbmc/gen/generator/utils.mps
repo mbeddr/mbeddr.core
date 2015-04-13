@@ -2,7 +2,6 @@
 <model ref="r:07298453-7804-4f14-997b-74fb22c2638a(com.mbeddr.analyses.acsl.cbmc.gen.generator.utils)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>

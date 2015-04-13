@@ -18,7 +18,6 @@
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
-    <import index="dbrf" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
     <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -28,8 +27,6 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="p15z" ref="r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil.behavior)" />
-    <import index="hba4" ref="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" />
     <import index="grvc" ref="r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node.behavior)" />
     <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
   </imports>
@@ -517,30 +514,6 @@
                   <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
                   <node concept="Xl_RD" id="6xLvLBZP3yx" role="2pJxcZ">
                     <property role="Xl_RC" value="initial" />
-                  </node>
-                </node>
-                <node concept="2pIpSj" id="6xLvLBZP8a9" role="2pJxcM">
-                  <ref role="2pIpSl" to="clqz:3FSHg1aAGGX" />
-                  <node concept="2pJPED" id="6xLvLBZP8lN" role="2pJxcZ">
-                    <ref role="2pJxaS" to="clqz:50Lk78xBraV" resolve="Transition" />
-                    <node concept="2pIpSj" id="6xLvLBZP8ma" role="2pJxcM">
-                      <ref role="2pIpSl" to="clqz:3bLw7MCtNTe" />
-                      <node concept="2pJPED" id="6xLvLBZPaJJ" role="2pJxcZ">
-                        <ref role="2pJxaS" to="clqz:1z9MsBsVe9b" resolve="Trigger" />
-                        <node concept="2pIpSj" id="6xLvLBZPaK2" role="2pJxcM">
-                          <ref role="2pIpSl" to="clqz:7KTKsCRX31h" />
-                          <node concept="36biLy" id="6xLvLBZPaKm" role="2pJxcZ">
-                            <node concept="37vLTw" id="6xLvLBZPaKA" role="36biLW">
-                              <ref role="3cqZAo" node="6xLvLBZP6Sh" resolve="inEvt" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2pIpSj" id="6xLvLBZP8Tg" role="2pJxcM">
-                      <ref role="2pIpSl" to="clqz:16ykm_MbSnY" />
-                      <node concept="10Nm6u" id="6xLvLBZP8Wz" role="2pJxcZ" />
-                    </node>
                   </node>
                 </node>
               </node>
@@ -1412,7 +1385,7 @@
                             <ref role="3cqZAo" node="38XGACK0iS1" resolve="state" />
                           </node>
                           <node concept="2qgKlT" id="38XGACK0je3" role="2OqNvi">
-                            <ref role="37wK5l" node="1oIA7Ec_GUC" resolve="cEnumLiteralName" />
+                            <ref role="37wK5l" node="1oIA7Ec_GUC" resolve="genCEnumLiteralName" />
                           </node>
                         </node>
                       </node>
@@ -5046,7 +5019,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="1oIA7Ec_GUC" role="13h7CS">
-      <property role="TrG5h" value="cEnumLiteralName" />
+      <property role="TrG5h" value="genCEnumLiteralName" />
       <node concept="3Tm1VV" id="1oIA7Ec_GUD" role="1B3o_S" />
       <node concept="17QB3L" id="1oIA7Ec_GUG" role="3clF45" />
       <node concept="3clFbS" id="1oIA7Ec_GUF" role="3clF47">
