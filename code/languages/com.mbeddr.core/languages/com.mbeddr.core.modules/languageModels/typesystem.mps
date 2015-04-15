@@ -139,7 +139,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -8144,23 +8144,45 @@
     <node concept="3clFbS" id="7x9scHwki21" role="18ibNy">
       <node concept="3clFbJ" id="7x9scHwki2f" role="3cqZAp">
         <node concept="3clFbS" id="7x9scHwki2g" role="3clFbx">
+          <node concept="3cpWs8" id="1H5sEOE$_VB" role="3cqZAp">
+            <node concept="3cpWsn" id="1H5sEOE$_VC" role="3cpWs9">
+              <property role="TrG5h" value="fp" />
+              <node concept="3Tqbb2" id="1H5sEOE$_VA" role="1tU5fm">
+                <ref role="ehGHo" to="x27k:5_l8w1EmTvw" resolve="FunctionPrototype" />
+              </node>
+              <node concept="2OqwBi" id="1H5sEOE$_VD" role="33vP2m">
+                <node concept="2OqwBi" id="1H5sEOE$_VE" role="2Oq$k0">
+                  <node concept="1YBJjd" id="1H5sEOE$_VF" role="2Oq$k0">
+                    <ref role="1YBMHb" node="7x9scHwki23" resolve="f" />
+                  </node>
+                  <node concept="3CFZ6_" id="1H5sEOE$_VG" role="2OqNvi">
+                    <node concept="3CFYIy" id="1H5sEOE$_VH" role="3CFYIz">
+                      <ref role="3CFYIx" to="x27k:7x9scHw5pU_" resolve="ImplementsExternalFunction" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="1H5sEOE$_VI" role="2OqNvi">
+                  <ref role="3Tt5mk" to="x27k:7x9scHw5vsd" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="1H5sEOE$wXd" role="3cqZAp">
+            <node concept="3clFbS" id="1H5sEOE$wXf" role="3clFbx">
+              <node concept="3cpWs6" id="1H5sEOE$_Vb" role="3cqZAp" />
+            </node>
+            <node concept="2OqwBi" id="1H5sEOE$zZ4" role="3clFbw">
+              <node concept="37vLTw" id="1H5sEOE$_VJ" role="2Oq$k0">
+                <ref role="3cqZAo" node="1H5sEOE$_VC" resolve="fp" />
+              </node>
+              <node concept="3w_OXm" id="1H5sEOE$_SB" role="2OqNvi" />
+            </node>
+          </node>
           <node concept="3clFbJ" id="7x9scHwkk4X" role="3cqZAp">
             <node concept="2OqwBi" id="2w8ga0Db5$t" role="3clFbw">
               <node concept="2OqwBi" id="7x9scHwksjI" role="2Oq$k0">
-                <node concept="2OqwBi" id="7x9scHwksjJ" role="2Oq$k0">
-                  <node concept="2OqwBi" id="7x9scHwksjK" role="2Oq$k0">
-                    <node concept="1YBJjd" id="7x9scHwksjL" role="2Oq$k0">
-                      <ref role="1YBMHb" node="7x9scHwki23" resolve="f" />
-                    </node>
-                    <node concept="3CFZ6_" id="7x9scHwksjM" role="2OqNvi">
-                      <node concept="3CFYIy" id="7x9scHwksjN" role="3CFYIz">
-                        <ref role="3CFYIx" to="x27k:7x9scHw5pU_" resolve="ImplementsExternalFunction" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3TrEf2" id="7x9scHwksjO" role="2OqNvi">
-                    <ref role="3Tt5mk" to="x27k:7x9scHw5vsd" />
-                  </node>
+                <node concept="37vLTw" id="1H5sEOE$_VK" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1H5sEOE$_VC" resolve="fp" />
                 </node>
                 <node concept="3TrcHB" id="7x9scHwksjP" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -8197,20 +8219,8 @@
                   </node>
                   <node concept="3CnSsL" id="7x9scHwkvR9" role="3Coj4f">
                     <ref role="QkamJ" node="7x9scHwjt9j" resolve="toImplement" />
-                    <node concept="2OqwBi" id="7x9scHwkxVi" role="3CoRuB">
-                      <node concept="2OqwBi" id="7x9scHwkwpI" role="2Oq$k0">
-                        <node concept="1YBJjd" id="7x9scHwkw9X" role="2Oq$k0">
-                          <ref role="1YBMHb" node="7x9scHwki23" resolve="f" />
-                        </node>
-                        <node concept="3CFZ6_" id="7x9scHwkxFJ" role="2OqNvi">
-                          <node concept="3CFYIy" id="7x9scHwkxQ1" role="3CFYIz">
-                            <ref role="3CFYIx" to="x27k:7x9scHw5pU_" resolve="ImplementsExternalFunction" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3TrEf2" id="7x9scHwkygF" role="2OqNvi">
-                        <ref role="3Tt5mk" to="x27k:7x9scHw5vsd" />
-                      </node>
+                    <node concept="37vLTw" id="1H5sEOE$_VL" role="3CoRuB">
+                      <ref role="3cqZAo" node="1H5sEOE$_VC" resolve="fp" />
                     </node>
                   </node>
                 </node>
@@ -8238,20 +8248,8 @@
                   </node>
                   <node concept="3CnSsL" id="7x9scHwl4ms" role="3Coj4f">
                     <ref role="QkamJ" node="7x9scHwjt9j" resolve="toImplement" />
-                    <node concept="2OqwBi" id="7x9scHwl6k9" role="3CoRuB">
-                      <node concept="2OqwBi" id="7x9scHwl4ON" role="2Oq$k0">
-                        <node concept="1YBJjd" id="7x9scHwl4xt" role="2Oq$k0">
-                          <ref role="1YBMHb" node="7x9scHwki23" resolve="f" />
-                        </node>
-                        <node concept="3CFZ6_" id="7x9scHwl68f" role="2OqNvi">
-                          <node concept="3CFYIy" id="7x9scHwl6de" role="3CFYIz">
-                            <ref role="3CFYIx" to="x27k:7x9scHw5pU_" resolve="ImplementsExternalFunction" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3TrEf2" id="7x9scHwl6Qg" role="2OqNvi">
-                        <ref role="3Tt5mk" to="x27k:7x9scHw5vsd" />
-                      </node>
+                    <node concept="37vLTw" id="1H5sEOE$_VM" role="3CoRuB">
+                      <ref role="3cqZAo" node="1H5sEOE$_VC" resolve="fp" />
                     </node>
                   </node>
                 </node>
@@ -8261,20 +8259,8 @@
             <node concept="3y3z36" id="7x9scHwkQGZ" role="3clFbw">
               <node concept="2OqwBi" id="7x9scHwkX7Q" role="3uHU7w">
                 <node concept="2OqwBi" id="7x9scHwkTUW" role="2Oq$k0">
-                  <node concept="2OqwBi" id="7x9scHwkSV8" role="2Oq$k0">
-                    <node concept="2OqwBi" id="7x9scHwkRdl" role="2Oq$k0">
-                      <node concept="1YBJjd" id="7x9scHwkQSj" role="2Oq$k0">
-                        <ref role="1YBMHb" node="7x9scHwki23" resolve="f" />
-                      </node>
-                      <node concept="3CFZ6_" id="7x9scHwkSoX" role="2OqNvi">
-                        <node concept="3CFYIy" id="7x9scHwkSDi" role="3CFYIz">
-                          <ref role="3CFYIx" to="x27k:7x9scHw5pU_" resolve="ImplementsExternalFunction" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3TrEf2" id="7x9scHwkTlp" role="2OqNvi">
-                      <ref role="3Tt5mk" to="x27k:7x9scHw5vsd" />
-                    </node>
+                  <node concept="37vLTw" id="1H5sEOE$_VN" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1H5sEOE$_VC" resolve="fp" />
                   </node>
                   <node concept="3Tsc0h" id="7x9scHwkUT_" role="2OqNvi">
                     <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" />
@@ -8316,20 +8302,8 @@
                   </node>
                   <node concept="3CnSsL" id="7x9scHwoUAh" role="3Coj4f">
                     <ref role="QkamJ" node="7x9scHwjt9j" resolve="toImplement" />
-                    <node concept="2OqwBi" id="7x9scHwoUAi" role="3CoRuB">
-                      <node concept="2OqwBi" id="7x9scHwoUAj" role="2Oq$k0">
-                        <node concept="1YBJjd" id="7x9scHwoUAk" role="2Oq$k0">
-                          <ref role="1YBMHb" node="7x9scHwki23" resolve="f" />
-                        </node>
-                        <node concept="3CFZ6_" id="7x9scHwoUAl" role="2OqNvi">
-                          <node concept="3CFYIy" id="7x9scHwoUAm" role="3CFYIz">
-                            <ref role="3CFYIx" to="x27k:7x9scHw5pU_" resolve="ImplementsExternalFunction" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3TrEf2" id="7x9scHwoUAn" role="2OqNvi">
-                        <ref role="3Tt5mk" to="x27k:7x9scHw5vsd" />
-                      </node>
+                    <node concept="37vLTw" id="1H5sEOE$_VO" role="3CoRuB">
+                      <ref role="3cqZAo" node="1H5sEOE$_VC" resolve="fp" />
                     </node>
                   </node>
                 </node>
@@ -8340,20 +8314,8 @@
             <node concept="3y3z36" id="7x9scHwoNid" role="3clFbw">
               <node concept="2OqwBi" id="7x9scHwoTGC" role="3uHU7w">
                 <node concept="2OqwBi" id="7x9scHwoQHs" role="2Oq$k0">
-                  <node concept="2OqwBi" id="7x9scHwoPLe" role="2Oq$k0">
-                    <node concept="2OqwBi" id="7x9scHwoNN6" role="2Oq$k0">
-                      <node concept="1YBJjd" id="7x9scHwoNyS" role="2Oq$k0">
-                        <ref role="1YBMHb" node="7x9scHwki23" resolve="f" />
-                      </node>
-                      <node concept="3CFZ6_" id="7x9scHwoPbX" role="2OqNvi">
-                        <node concept="3CFYIy" id="7x9scHwoPtP" role="3CFYIz">
-                          <ref role="3CFYIx" to="x27k:7x9scHw5pU_" resolve="ImplementsExternalFunction" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3TrEf2" id="7x9scHwoQf$" role="2OqNvi">
-                      <ref role="3Tt5mk" to="x27k:7x9scHw5vsd" />
-                    </node>
+                  <node concept="37vLTw" id="1H5sEOE$_VP" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1H5sEOE$_VC" resolve="fp" />
                   </node>
                   <node concept="3TrEf2" id="7x9scHwoS_Z" role="2OqNvi">
                     <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
@@ -8388,20 +8350,8 @@
                   </node>
                   <node concept="2OqwBi" id="7x9scHwlF2E" role="33vP2m">
                     <node concept="2OqwBi" id="7x9scHwlF2F" role="2Oq$k0">
-                      <node concept="2OqwBi" id="7x9scHwlF2G" role="2Oq$k0">
-                        <node concept="2OqwBi" id="7x9scHwlF2H" role="2Oq$k0">
-                          <node concept="1YBJjd" id="7x9scHwlF2I" role="2Oq$k0">
-                            <ref role="1YBMHb" node="7x9scHwki23" resolve="f" />
-                          </node>
-                          <node concept="3CFZ6_" id="7x9scHwlF2J" role="2OqNvi">
-                            <node concept="3CFYIy" id="7x9scHwlF2K" role="3CFYIz">
-                              <ref role="3CFYIx" to="x27k:7x9scHw5pU_" resolve="ImplementsExternalFunction" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3TrEf2" id="7x9scHwlF2L" role="2OqNvi">
-                          <ref role="3Tt5mk" to="x27k:7x9scHw5vsd" />
-                        </node>
+                      <node concept="37vLTw" id="1H5sEOE$_VQ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1H5sEOE$_VC" resolve="fp" />
                       </node>
                       <node concept="3Tsc0h" id="7x9scHwlF2M" role="2OqNvi">
                         <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" />
@@ -8439,20 +8389,8 @@
                       </node>
                       <node concept="3CnSsL" id="7x9scHwlIXJ" role="3Coj4f">
                         <ref role="QkamJ" node="7x9scHwjt9j" resolve="toImplement" />
-                        <node concept="2OqwBi" id="7x9scHwlIXK" role="3CoRuB">
-                          <node concept="2OqwBi" id="7x9scHwlIXL" role="2Oq$k0">
-                            <node concept="1YBJjd" id="7x9scHwlIXM" role="2Oq$k0">
-                              <ref role="1YBMHb" node="7x9scHwki23" resolve="f" />
-                            </node>
-                            <node concept="3CFZ6_" id="7x9scHwlIXN" role="2OqNvi">
-                              <node concept="3CFYIy" id="7x9scHwlIXO" role="3CFYIz">
-                                <ref role="3CFYIx" to="x27k:7x9scHw5pU_" resolve="ImplementsExternalFunction" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3TrEf2" id="7x9scHwlIXP" role="2OqNvi">
-                            <ref role="3Tt5mk" to="x27k:7x9scHw5vsd" />
-                          </node>
+                        <node concept="37vLTw" id="1H5sEOE$_VR" role="3CoRuB">
+                          <ref role="3cqZAo" node="1H5sEOE$_VC" resolve="fp" />
                         </node>
                       </node>
                     </node>
@@ -8503,20 +8441,8 @@
                       </node>
                       <node concept="3CnSsL" id="7x9scHwlOdx" role="3Coj4f">
                         <ref role="QkamJ" node="7x9scHwjt9j" resolve="toImplement" />
-                        <node concept="2OqwBi" id="7x9scHwlOdy" role="3CoRuB">
-                          <node concept="2OqwBi" id="7x9scHwlOdz" role="2Oq$k0">
-                            <node concept="1YBJjd" id="7x9scHwlOd$" role="2Oq$k0">
-                              <ref role="1YBMHb" node="7x9scHwki23" resolve="f" />
-                            </node>
-                            <node concept="3CFZ6_" id="7x9scHwlOd_" role="2OqNvi">
-                              <node concept="3CFYIy" id="7x9scHwlOdA" role="3CFYIz">
-                                <ref role="3CFYIx" to="x27k:7x9scHw5pU_" resolve="ImplementsExternalFunction" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3TrEf2" id="7x9scHwlOdB" role="2OqNvi">
-                            <ref role="3Tt5mk" to="x27k:7x9scHw5vsd" />
-                          </node>
+                        <node concept="37vLTw" id="1H5sEOE$_VS" role="3CoRuB">
+                          <ref role="3cqZAo" node="1H5sEOE$_VC" resolve="fp" />
                         </node>
                       </node>
                     </node>
