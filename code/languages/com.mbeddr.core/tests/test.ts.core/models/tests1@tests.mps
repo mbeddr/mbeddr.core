@@ -88,7 +88,7 @@
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
@@ -11428,6 +11428,20 @@
                 <node concept="3ZVu4v" id="2kcYdYMvBe3" role="3TlMhI">
                   <ref role="3ZVs_2" node="41d9N0pXfb4" resolve="s2" />
                 </node>
+              </node>
+            </node>
+            <node concept="3XISUE" id="7ejquUZlDWi" role="3XIRFZ" />
+            <node concept="3XIRlf" id="7ejquUZlJ1W" role="3XIRFZ">
+              <property role="TrG5h" value="foo" />
+              <node concept="12rfTQ" id="7ejquUZlJzm" role="2C2TGm">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <node concept="3TlMh9" id="7ejquUZlJzI" role="12rfTL">
+                  <property role="2hmy$m" value="9" />
+                </node>
+              </node>
+              <node concept="PhEJO" id="7ejquUZlJH2" role="3XIe9u">
+                <property role="PhEJT" value="Channel 6" />
               </node>
             </node>
             <node concept="3XISUE" id="41d9N0pXijM" role="3XIRFZ" />
