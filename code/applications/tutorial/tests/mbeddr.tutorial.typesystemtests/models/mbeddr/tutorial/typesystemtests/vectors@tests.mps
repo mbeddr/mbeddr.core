@@ -9,6 +9,7 @@
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
+    <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -70,6 +71,7 @@
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
+      <concept id="8463282783691618461" name="com.mbeddr.core.expressions.structure.UnsignedInt8tType" flags="ng" index="26Vqp4" />
       <concept id="8463282783691618435" name="com.mbeddr.core.expressions.structure.Int16tType" flags="ng" index="26Vqpq" />
       <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
@@ -218,9 +220,22 @@
             <property role="2c7vTL" value="false" />
             <property role="2h38V$" value="3" />
             <property role="iizc2" value="1" />
-            <node concept="26Vqpq" id="1iWV611sygK" role="2umbIo">
-              <property role="2caQfQ" value="false" />
-              <property role="2c7vTL" value="false" />
+            <node concept="26Vqp4" id="4AuO4fdxOK8" role="2umbIo">
+              <property role="2caQfQ" value="true" />
+              <property role="2c7vTL" value="true" />
+            </node>
+          </node>
+          <node concept="iizew" id="4AuO4fdxInu" role="3XIe9u">
+            <node concept="iizid" id="4AuO4fdxInw" role="iizi4">
+              <node concept="3TlMh9" id="4AuO4fdxIUa" role="iizic">
+                <property role="2hmy$m" value="1u" />
+              </node>
+              <node concept="3TlMh9" id="4AuO4fdxKb$" role="iizic">
+                <property role="2hmy$m" value="2u" />
+              </node>
+              <node concept="3TlMh9" id="4AuO4fdxLwC" role="iizic">
+                <property role="2hmy$m" value="3u" />
+              </node>
             </node>
           </node>
         </node>

@@ -13,8 +13,8 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="ua2a" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.typesystem.inference(MPS.Core/jetbrains.mps.typesystem.inference@java_stub)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1449,13 +1449,13 @@
                 </node>
               </node>
             </node>
-            <node concept="3fqX7Q" id="2iGZqsH$mSi" role="3clFbw">
-              <node concept="2OqwBi" id="2iGZqsH$mSk" role="3fr31v">
-                <node concept="1YBJjd" id="2iGZqsH$mSl" role="2Oq$k0">
-                  <ref role="1YBMHb" node="5lKnBeAusjM" resolve="afp" />
-                </node>
-                <node concept="2qgKlT" id="2iGZqsH$mSm" role="2OqNvi">
-                  <ref role="37wK5l" to="hwgx:5lKnBeB0qXj" resolve="pickDirOnly" />
+            <node concept="2OqwBi" id="5Wocj7wum1m" role="3clFbw">
+              <node concept="1YBJjd" id="2iGZqsH$mSl" role="2Oq$k0">
+                <ref role="1YBMHb" node="5lKnBeAusjM" resolve="afp" />
+              </node>
+              <node concept="1mIQ4w" id="5Wocj7wumnU" role="2OqNvi">
+                <node concept="chp4Y" id="5Wocj7wumtt" role="cj9EA">
+                  <ref role="cht4Q" to="vs0r:5Wocj7wnotA" resolve="AbstractFilePicker" />
                 </node>
               </node>
             </node>
@@ -1636,7 +1636,7 @@
     </node>
     <node concept="1YaCAy" id="5lKnBeAusjM" role="1YuTPh">
       <property role="TrG5h" value="afp" />
-      <ref role="1YaFvo" to="vs0r:5lKnBeAtNw8" resolve="AbstractFilePicker" />
+      <ref role="1YaFvo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
     </node>
   </node>
   <node concept="312cEu" id="6sCGfm8n$Zj">
