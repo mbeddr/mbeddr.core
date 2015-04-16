@@ -432,11 +432,11 @@
             <node concept="3clFbF" id="2sRGoU6niJC" role="3cqZAp">
               <node concept="1rXfSq" id="2sRGoU6niJA" role="3clFbG">
                 <ref role="37wK5l" node="2sRGoU6nhdN" resolve="doCheckBitwiseOperator" />
-                <node concept="37vLTw" id="2sRGoU6nkMh" role="37wK5m">
-                  <ref role="3cqZAo" node="2sRGoU6f8TF" resolve="rhs" />
-                </node>
-                <node concept="37vLTw" id="2sRGoU6nkOU" role="37wK5m">
+                <node concept="37vLTw" id="3nGMb$mpsce" role="37wK5m">
                   <ref role="3cqZAo" node="2sRGoU6g_Ub" resolve="lhs" />
+                </node>
+                <node concept="37vLTw" id="3nGMb$mpsdG" role="37wK5m">
+                  <ref role="3cqZAo" node="2sRGoU6f8TF" resolve="rhs" />
                 </node>
                 <node concept="37vLTw" id="2sRGoU6nkSM" role="37wK5m">
                   <ref role="3cqZAo" node="2sRGoU6fMyG" resolve="prog" />
@@ -449,7 +449,7 @@
           </node>
         </node>
         <node concept="Jncv_" id="2sRGoU6nniU" role="3cqZAp">
-          <ref role="JncvD" to="mj1l:7OlVjI_rbQZ" resolve="BitwiseLeftShiftExpression" />
+          <ref role="JncvD" to="mj1l:7OlVjI_qtPg" resolve="BitwiseRightShiftExpression" />
           <node concept="37vLTw" id="2sRGoU6nniV" role="JncvB">
             <ref role="3cqZAo" node="2sRGoU6f6F3" resolve="bitwiseExp" />
           </node>

@@ -139,6 +139,7 @@
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
       <concept id="9013371069686136255" name="com.mbeddr.core.expressions.structure.BitwiseLeftShiftExpression" flags="ng" index="3oul24" />
+      <concept id="9013371069685947728" name="com.mbeddr.core.expressions.structure.BitwiseRightShiftExpression" flags="ng" index="3ov31F" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="8860443239512128058" name="com.mbeddr.core.expressions.structure.BooleanType" flags="ng" index="3TlMgk" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
@@ -273,7 +274,24 @@
                 </node>
               </node>
             </node>
-            <node concept="3XISUE" id="4zFXTqpEl5O" role="3XIRFZ" />
+            <node concept="1_9egQ" id="3nGMb$moOuu" role="3XIRFZ">
+              <node concept="3ov31F" id="3nGMb$moQaB" role="1_9egR">
+                <node concept="3ZVu4v" id="3nGMb$moQi$" role="3TlMhJ">
+                  <ref role="3ZVs_2" node="7Ny2UQe_Ls0" resolve="pos1" />
+                </node>
+                <node concept="3ZVu4v" id="3nGMb$moOus" role="3TlMhI">
+                  <ref role="3ZVs_2" node="1MdOvoQcbmk" resolve="a" />
+                </node>
+                <node concept="7CXmI" id="3nGMb$moQ$E" role="lGtFl">
+                  <node concept="29bkU" id="3nGMb$moQ$F" role="7EUXB">
+                    <node concept="2PQEqo" id="3nGMb$mp6vX" role="3lydCh">
+                      <ref role="39XzEq" to="39x4:2Z$y6DbNvE4" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3XISUE" id="3nGMb$mp6D5" role="3XIRFZ" />
             <node concept="1QiMYF" id="7Ny2UQe_NA2" role="3XIRFZ">
               <node concept="OjmMv" id="7Ny2UQe_NA4" role="3SJzmv">
                 <node concept="19SGf9" id="7Ny2UQe_NA5" role="OjmMu">
