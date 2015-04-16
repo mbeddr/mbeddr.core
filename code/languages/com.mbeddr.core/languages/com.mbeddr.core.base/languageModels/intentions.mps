@@ -972,7 +972,7 @@
   <node concept="2S6QgY" id="5lKnBeB0tzM">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="openFileChooser" />
-    <ref role="2ZfgGC" to="vs0r:5lKnBeAtNw8" resolve="AbstractFilePicker" />
+    <ref role="2ZfgGC" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
     <node concept="2S6ZIM" id="5lKnBeB0tzN" role="2ZfVej">
       <node concept="3clFbS" id="5lKnBeB0tzO" role="2VODD2">
         <node concept="3clFbF" id="5lKnBeB0u1Y" role="3cqZAp">
@@ -1052,10 +1052,12 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="5lKnBeB4hnu" role="3clFbw">
+          <node concept="2OqwBi" id="5Wocj7wunsh" role="3clFbw">
             <node concept="2Sf5sV" id="5lKnBeB4hje" role="2Oq$k0" />
-            <node concept="2qgKlT" id="5lKnBeB4iz8" role="2OqNvi">
-              <ref role="37wK5l" to="hwgx:5lKnBeB0qXj" resolve="pickDirOnly" />
+            <node concept="1mIQ4w" id="5Wocj7wunGD" role="2OqNvi">
+              <node concept="chp4Y" id="5Wocj7wunMf" role="cj9EA">
+                <ref role="cht4Q" to="vs0r:5Wocj7wnolM" resolve="AbstractFolderPicker" />
+              </node>
             </node>
           </node>
         </node>

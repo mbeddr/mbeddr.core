@@ -214,6 +214,9 @@
         <child id="865293814733133843" name="result" index="3pwfKK" />
         <child id="6619757161337461931" name="comment" index="3J00qV" />
       </concept>
+      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
+        <child id="4052432714772608243" name="text" index="1w35rA" />
+      </concept>
       <concept id="3815661793603643701" name="com.mbeddr.core.base.structure.VisualizationQuery" flags="ng" index="1EdpOq" />
       <concept id="3815661793603643767" name="com.mbeddr.core.base.structure.VisualizationResult" flags="ng" index="1EdpPo">
         <reference id="3815661793603643770" name="visualizable" index="1EdpPl" />
@@ -335,6 +338,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -2245,6 +2249,15 @@
         </node>
       </node>
       <node concept="3pweHT" id="1qjRex4iXhE" role="3pwbkY" />
+      <node concept="1z9TsT" id="4AuO4fdxmOq" role="lGtFl">
+        <node concept="OjmMv" id="4AuO4fdxmOr" role="1w35rA">
+          <node concept="19SGf9" id="4AuO4fdxmOs" role="OjmMu">
+            <node concept="19SUe$" id="4AuO4fdxmOt" role="19SJt6">
+              <property role="19SUeA" value="This element is supposed to have an error for demo purposes." />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3pwaUv" id="yBYRhyDndx" role="3pwaUu">
       <property role="TrG5h" value="Visualisations" />

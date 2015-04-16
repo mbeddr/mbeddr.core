@@ -8149,7 +8149,29 @@
   </node>
   <node concept="24kQdi" id="5lKnBeAulL8">
     <property role="3GE5qa" value="pathAndFile" />
-    <ref role="1XX52x" to="vs0r:5lKnBeAtNw8" resolve="AbstractFilePicker" />
+    <ref role="1XX52x" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+    <node concept="3EZMnI" id="6ruthXbRUpo" role="6VMZX">
+      <node concept="l2Vlx" id="6ruthXbRUpp" role="2iSdaV" />
+      <node concept="3F0ifn" id="6ruthXbRUHh" role="3EZMnx">
+        <property role="3F0ifm" value="Current path: " />
+      </node>
+      <node concept="1HlG4h" id="6ruthXbRTAp" role="3EZMnx">
+        <node concept="1HfYo3" id="6ruthXbRTAr" role="1HlULh">
+          <node concept="3TQlhw" id="6ruthXbRTAt" role="1Hhtcw">
+            <node concept="3clFbS" id="6ruthXbRTAv" role="2VODD2">
+              <node concept="3clFbF" id="6ruthXbSn$h" role="3cqZAp">
+                <node concept="2OqwBi" id="6ruthXbSnYn" role="3clFbG">
+                  <node concept="pncrf" id="6ruthXbSn$g" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="6ruthXbSobH" role="2OqNvi">
+                    <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="makeAbsolute" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3EZMnI" id="5lKnBeAuncN" role="2wV5jI">
       <node concept="1HlG4h" id="5lKnBeAuncU" role="3EZMnx">
         <ref role="34QXea" node="50N_nP$el$O" resolve="openOrEdit" />
@@ -8166,7 +8188,7 @@
                 </node>
                 <node concept="3clFbC" id="3o2OLGuqhZZ" role="3clFbw">
                   <node concept="35c_gC" id="3o2OLGuqi6o" role="3uHU7w">
-                    <ref role="35c_gD" to="vs0r:5lKnBeAtNw8" resolve="AbstractFilePicker" />
+                    <ref role="35c_gD" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
                   </node>
                   <node concept="2OqwBi" id="3o2OLGuqhqB" role="3uHU7B">
                     <node concept="pncrf" id="3o2OLGuqgT8" role="2Oq$k0" />
@@ -9948,7 +9970,7 @@
   <node concept="325Ffw" id="50N_nP$el$O">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="openOrEdit" />
-    <ref role="1chiOs" to="vs0r:5lKnBeAtNw8" resolve="AbstractFilePicker" />
+    <ref role="1chiOs" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
     <node concept="2PxR9H" id="50N_nP$el$P" role="2QnnpI">
       <property role="2PxWOX" value="Edit with System Editor" />
       <property role="3ArL7W" value="true" />
