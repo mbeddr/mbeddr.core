@@ -23377,16 +23377,7 @@
                 </node>
               </node>
             </node>
-            <node concept="3XIRlf" id="6bzSKoI1qyO" role="3XIRFZ">
-              <property role="TrG5h" value="xx" />
-              <node concept="12rfTQ" id="6bzSKoI1qyM" role="2C2TGm">
-                <property role="2caQfQ" value="false" />
-                <property role="2c7vTL" value="false" />
-              </node>
-              <node concept="PhEJO" id="6bzSKoI1qJi" role="3XIe9u">
-                <property role="PhEJT" value="asdasd" />
-              </node>
-            </node>
+            <node concept="3XISUE" id="6bzSKoI9_X5" role="3XIRFZ" />
             <node concept="3XIRlf" id="6Pt2vx4BKyY" role="3XIRFZ">
               <property role="TrG5h" value="myStringArray" />
               <node concept="12rfTQ" id="6Pt2vx4BKBD" role="2C2TGm">
