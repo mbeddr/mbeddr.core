@@ -1908,5 +1908,34 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="6Pt2vx4BTMq">
+    <property role="3GE5qa" value="expr" />
+    <ref role="WuzLi" to="x27k:6Pt2vx4BTMo" resolve="ConcatExpression" />
+    <node concept="11bSqf" id="6Pt2vx4BTMr" role="11c4hB">
+      <node concept="3clFbS" id="6Pt2vx4BTMs" role="2VODD2">
+        <node concept="lc7rE" id="6Pt2vx4BTMt" role="3cqZAp">
+          <node concept="la8eA" id="6Pt2vx4BTMu" role="lcghm">
+            <property role="lacIc" value="(&quot;" />
+          </node>
+          <node concept="l9hG8" id="6Pt2vx4BTMv" role="lcghm">
+            <node concept="2OqwBi" id="6Pt2vx4BTMw" role="lb14g">
+              <node concept="2OqwBi" id="6Pt2vx4BTMx" role="2Oq$k0">
+                <node concept="117lpO" id="6Pt2vx4BTMy" role="2Oq$k0" />
+                <node concept="2qgKlT" id="6Pt2vx4BTMz" role="2OqNvi">
+                  <ref role="37wK5l" to="ywuz:6OxpEKG0KPv" resolve="evaluateStatically" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6Pt2vx4BTM$" role="2OqNvi">
+                <ref role="37wK5l" to="e2lb:~Object.toString():java.lang.String" resolve="toString" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6Pt2vx4BTM_" role="lcghm">
+            <property role="lacIc" value="&quot;)" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
