@@ -449,6 +449,12 @@
   <node concept="bUwia" id="3CMDERQUHIC">
     <property role="TrG5h" value="main" />
     <property role="3$yP7D" value="true" />
+    <node concept="3aamgX" id="1xkixXqgu14" role="3acgRq">
+      <ref role="30HIoZ" to="rpmx:4TbX0$8UA61" resolve="EmptyValidationConfigurationElement" />
+      <node concept="gft3U" id="1xkixXqgxlq" role="1lVwrX">
+        <node concept="3clFbH" id="1xkixXqgxlw" role="gfFT$" />
+      </node>
+    </node>
     <node concept="3aamgX" id="5t7wq7uKaqd" role="3acgRq">
       <ref role="30HIoZ" to="rpmx:5t7wq7uqihH" resolve="GdbDebuggerBackend" />
       <node concept="1Koe21" id="5t7wq7uKiVv" role="1lVwrX">

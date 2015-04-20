@@ -22,9 +22,9 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="ierg" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.textgen.trace(MPS.Core/jetbrains.mps.textgen.trace@java_stub)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -2256,6 +2256,65 @@
       <node concept="2I9FWS" id="3M3l$fnBncV" role="3clF45">
         <ref role="2I9WkF" to="rpmx:5S3xvtjRLj" resolve="IDebuggerTestcaseConfigurationElement" />
       </node>
+    </node>
+    <node concept="13i0hz" id="415Bkr3_ZqX" role="13h7CS">
+      <property role="TrG5h" value="isExtended" />
+      <node concept="3Tm1VV" id="415Bkr3_ZqY" role="1B3o_S" />
+      <node concept="3clFbS" id="415Bkr3_ZqZ" role="3clF47">
+        <node concept="3clFbF" id="415Bkr3_ZLj" role="3cqZAp">
+          <node concept="1Wc70l" id="415Bkr3A5$a" role="3clFbG">
+            <node concept="2OqwBi" id="415Bkr3A6$0" role="3uHU7w">
+              <node concept="2OqwBi" id="415Bkr3A5DP" role="2Oq$k0">
+                <node concept="13iPFW" id="415Bkr3A5BJ" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="415Bkr3A5PG" role="2OqNvi">
+                  <ref role="3TtcxE" to="rpmx:3M3l$fn_bXa" />
+                </node>
+              </node>
+              <node concept="2HwmR7" id="415Bkr3Abj3" role="2OqNvi">
+                <node concept="1bVj0M" id="415Bkr3Abj5" role="23t8la">
+                  <node concept="3clFbS" id="415Bkr3Abj6" role="1bW5cS">
+                    <node concept="3clFbF" id="415Bkr3Abtk" role="3cqZAp">
+                      <node concept="2OqwBi" id="415Bkr3AbzH" role="3clFbG">
+                        <node concept="37vLTw" id="415Bkr3Abtj" role="2Oq$k0">
+                          <ref role="3cqZAo" node="415Bkr3Abj7" resolve="validation" />
+                        </node>
+                        <node concept="1mIQ4w" id="415Bkr3AbLO" role="2OqNvi">
+                          <node concept="chp4Y" id="415Bkr3AbQV" role="cj9EA">
+                            <ref role="cht4Q" to="rpmx:5S3xvtjZNN" resolve="SuperConfigurationElement" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="415Bkr3Abj7" role="1bW2Oz">
+                    <property role="TrG5h" value="validation" />
+                    <node concept="2jxLKc" id="415Bkr3Abj8" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="415Bkr3A3c5" role="3uHU7B">
+              <node concept="2OqwBi" id="415Bkr3A0NT" role="2Oq$k0">
+                <node concept="2OqwBi" id="415Bkr3_ZOS" role="2Oq$k0">
+                  <node concept="13iPFW" id="415Bkr3_ZLi" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="415Bkr3A06R" role="2OqNvi">
+                    <node concept="1xMEDy" id="415Bkr3A06T" role="1xVPHs">
+                      <node concept="chp4Y" id="415Bkr3A0Cj" role="ri$Ld">
+                        <ref role="cht4Q" to="rpmx:5S3xvtirw9" resolve="DebuggerTestcase" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="415Bkr3A2jl" role="2OqNvi">
+                  <ref role="3Tt5mk" to="rpmx:5S3xvtirwd" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="415Bkr3A4Ft" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="415Bkr3_ZLf" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="3M3l$fn_onV">
