@@ -32,7 +32,6 @@
     <import index="2rho" ref="r:4e770e63-2ef5-4a0d-b2e8-c5c1a1565703(com.mbeddr.core.udt.behavior)" implicit="true" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
-    <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -322,6 +321,7 @@
       </concept>
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
+      <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
@@ -5945,13 +5945,20 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="_F_U16KoWH" role="3clFbw">
-                <node concept="37vLTw" id="_F_U16Ko5a" role="2Oq$k0">
-                  <ref role="3cqZAo" node="_F_U16KnH4" resolve="stmt" />
+              <node concept="2OqwBi" id="5EmOLvEXL3" role="3clFbw">
+                <node concept="2OqwBi" id="_F_U16KoWH" role="2Oq$k0">
+                  <node concept="37vLTw" id="_F_U16Ko5a" role="2Oq$k0">
+                    <ref role="3cqZAo" node="_F_U16KnH4" resolve="stmt" />
+                  </node>
+                  <node concept="2Rf3mk" id="5EmOLvERsT" role="2OqNvi">
+                    <node concept="1xMEDy" id="5EmOLvERsV" role="1xVPHs">
+                      <node concept="chp4Y" id="5EmOLvER_g" role="ri$Ld">
+                        <ref role="cht4Q" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
-                <node concept="2qgKlT" id="_F_U16KpAy" role="2OqNvi">
-                  <ref role="37wK5l" to="rj8d:1z9MsBsVy8o" resolve="simpleOneLiner" />
-                </node>
+                <node concept="1v1jN8" id="5EmOLvF5CU" role="2OqNvi" />
               </node>
             </node>
             <node concept="3clFbH" id="_F_U16KskR" role="3cqZAp" />
