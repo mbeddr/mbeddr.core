@@ -16,6 +16,7 @@
     <import index="72ct" ref="r:b940b44d-75f7-4e5e-a8c5-66b915fea907(com.mbeddr.analyses.cbmc.core.rt.analyses.decTab)" />
     <import index="of7m" ref="r:6b89ada8-2a97-4717-86bd-42be19241c03(com.mbeddr.analyses.cbmc.core.rt.analyses.robustness)" />
     <import index="yqjk" ref="r:a045cdc9-70eb-46cf-a69a-ffc7c55c8821(com.mbeddr.analyses.cbmc.core.rt.analyses.gswitch)" />
+    <import index="c420" ref="r:c4158bc8-742a-4562-a9a1-c91c941f203e(com.mbeddr.analyses.cbmc.core.rt.analyses.dead_code)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -789,6 +790,107 @@
     </node>
     <node concept="13hLZK" id="7yN$Xh8ql6b" role="13h7CW">
       <node concept="3clFbS" id="7yN$Xh8ql6c" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3AX70SQiNJy">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <ref role="13h7C2" to="hj5x:3AX70SQiKF$" resolve="DeadCodeAnalysis" />
+    <node concept="13i0hz" id="3AX70SQiNSA" role="13h7CS">
+      <property role="TrG5h" value="getAnalyzedNode" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="th2u:3kLBXRrtJ7q" resolve="getAnalyzedNode" />
+      <node concept="3Tm1VV" id="3AX70SQiNSB" role="1B3o_S" />
+      <node concept="3clFbS" id="3AX70SQiNSC" role="3clF47">
+        <node concept="3cpWs6" id="3AX70SQiNSD" role="3cqZAp">
+          <node concept="2OqwBi" id="3AX70SQiNSE" role="3cqZAk">
+            <node concept="13iPFW" id="3AX70SQiNSF" role="2Oq$k0" />
+            <node concept="3TrEf2" id="3AX70SQiNSG" role="2OqNvi">
+              <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3AX70SQiNSH" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="3AX70SQiNSI" role="13h7CS">
+      <property role="TrG5h" value="createAnalyzer" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="th2u:4arT0cnAVru" resolve="createAnalyzer" />
+      <node concept="3uibUv" id="3AX70SQiNSJ" role="3clF45">
+        <ref role="3uigEE" to="tzyt:3_HSwtcWh0_" resolve="CProverAnalyzerFactory" />
+      </node>
+      <node concept="3Tm1VV" id="3AX70SQiNSK" role="1B3o_S" />
+      <node concept="3clFbS" id="3AX70SQiNSL" role="3clF47">
+        <node concept="3clFbF" id="3AX70SQiNSM" role="3cqZAp">
+          <node concept="37vLTI" id="3AX70SQiNSN" role="3clFbG">
+            <node concept="2OqwBi" id="3AX70SQiNSO" role="37vLTx">
+              <node concept="13iPFW" id="3AX70SQiNSP" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3AX70SQiNSQ" role="2OqNvi">
+                <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3AX70SQiNSR" role="37vLTJ">
+              <node concept="37vLTw" id="3AX70SQiNSS" role="2Oq$k0">
+                <ref role="3cqZAo" node="3AX70SQiNT7" resolve="config" />
+              </node>
+              <node concept="2S8uIT" id="3AX70SQiNST" role="2OqNvi">
+                <ref role="2S8YL0" to="tzyt:3kUGzlRhF3M" resolve="analyzedNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3AX70SQiNSU" role="3cqZAp">
+          <node concept="3cpWsn" id="3AX70SQiNSV" role="3cpWs9">
+            <property role="TrG5h" value="factory" />
+            <node concept="3uibUv" id="3AX70SQwy7N" role="1tU5fm">
+              <ref role="3uigEE" to="c420:3_HSwtcWnhZ" resolve="DeadCodeAnalyzerFactory" />
+            </node>
+            <node concept="2ShNRf" id="3AX70SQiNSX" role="33vP2m">
+              <node concept="HV5vD" id="3AX70SQwyp3" role="2ShVmc">
+                <ref role="HV5vE" to="c420:3_HSwtcWnhZ" resolve="DeadCodeAnalyzerFactory" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3AX70SQiNSZ" role="3cqZAp">
+          <node concept="2OqwBi" id="3AX70SQiNT0" role="3clFbG">
+            <node concept="37vLTw" id="3AX70SQiNT1" role="2Oq$k0">
+              <ref role="3cqZAo" node="3AX70SQiNSV" resolve="factory" />
+            </node>
+            <node concept="liA8E" id="3AX70SQiNT2" role="2OqNvi">
+              <ref role="37wK5l" to="tzyt:5uqRFp90Ty4" resolve="setParameters" />
+              <node concept="37vLTw" id="3AX70SQiNT3" role="37wK5m">
+                <ref role="3cqZAo" node="3AX70SQiNT7" resolve="config" />
+              </node>
+              <node concept="37vLTw" id="3AX70SQiNT4" role="37wK5m">
+                <ref role="3cqZAo" node="3AX70SQiNT9" resolve="tool" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3AX70SQiNT5" role="3cqZAp">
+          <node concept="37vLTw" id="3AX70SQiNT6" role="3clFbG">
+            <ref role="3cqZAo" node="3AX70SQiNSV" resolve="factory" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3AX70SQiNT7" role="3clF46">
+        <property role="TrG5h" value="config" />
+        <node concept="3uibUv" id="3AX70SQiNT8" role="1tU5fm">
+          <ref role="3uigEE" to="tzyt:tGR6edUFtE" resolve="CBMCAnalysisConfig" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3AX70SQiNT9" role="3clF46">
+        <property role="TrG5h" value="tool" />
+        <node concept="3uibUv" id="3AX70SQiNTa" role="1tU5fm">
+          <ref role="3uigEE" to="ood5:5A94f9EE$RB" resolve="MPSToolAdapter" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="3AX70SQiNJz" role="13h7CW">
+      <node concept="3clFbS" id="3AX70SQiNJ$" role="2VODD2" />
     </node>
   </node>
 </model>
