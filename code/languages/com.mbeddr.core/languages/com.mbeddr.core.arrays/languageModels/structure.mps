@@ -187,6 +187,9 @@
     <node concept="PrWs8" id="5MaVmNI4zkR" role="PzmwI">
       <ref role="PrY4T" to="vs0r:jpyKDg1onz" resolve="ISearchSupport" />
     </node>
+    <node concept="PrWs8" id="6bzSKoI1uD7" role="PzmwI">
+      <ref role="PrY4T" node="6bzSKoI1uCr" resolve="IStringLiteralLike" />
+    </node>
     <node concept="1TJgyi" id="5jmmCdx$f5U" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -221,6 +224,10 @@
   <node concept="PlHQZ" id="2Qo$Q2I7Rcd">
     <property role="TrG5h" value="ISelfTypingInArrayAccessExpression" />
     <property role="3GE5qa" value="ClassesSupport" />
+  </node>
+  <node concept="PlHQZ" id="6bzSKoI1uCr">
+    <property role="3GE5qa" value="literals" />
+    <property role="TrG5h" value="IStringLiteralLike" />
   </node>
 </model>
 

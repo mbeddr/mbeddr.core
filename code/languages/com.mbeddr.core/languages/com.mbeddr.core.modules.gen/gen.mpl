@@ -142,7 +142,7 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
-        <mapping-priority-rule kind="strictly_before">
+        <mapping-priority-rule kind="strictly_together">
           <greater-priority-mapping>
             <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
             <external-mapping>
