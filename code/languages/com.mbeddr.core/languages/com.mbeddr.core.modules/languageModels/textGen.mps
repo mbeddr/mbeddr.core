@@ -1937,5 +1937,18 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="5OiecUqLYTi">
+    <property role="3GE5qa" value="functionrefs" />
+    <ref role="WuzLi" to="x27k:7qHzltJ03ir" resolve="FunctionRefType" />
+    <node concept="11bSqf" id="5OiecUqLYTj" role="11c4hB">
+      <node concept="3clFbS" id="5OiecUqLYTk" role="2VODD2">
+        <node concept="3SKdUt" id="5OiecUqLZjc" role="3cqZAp">
+          <node concept="3SKdUq" id="5OiecUqLZjm" role="3SKWNk">
+            <property role="3SKdUp" value="no text gen. Will be handled by specialized concepts in modules gen" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
