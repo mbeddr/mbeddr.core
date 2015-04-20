@@ -13,6 +13,7 @@
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -1251,6 +1252,22 @@
       <node concept="trNpa" id="7x9scHw5vsb" role="EQaZv">
         <ref role="trN6q" node="5_l8w1EmTvx" resolve="Function" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Pt2vx4BTMo">
+    <property role="3GE5qa" value="expr" />
+    <property role="TrG5h" value="ConcatExpression" />
+    <property role="34LRSv" value="#concat" />
+    <property role="R4oN_" value="concatenating strings using the preprocessor" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="6Pt2vx4BTMp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exprs" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="6bzSKoI2U42" role="PzmwI">
+      <ref role="PrY4T" to="yq40:6bzSKoI1uCr" resolve="IStringLiteralLike" />
     </node>
   </node>
 </model>
