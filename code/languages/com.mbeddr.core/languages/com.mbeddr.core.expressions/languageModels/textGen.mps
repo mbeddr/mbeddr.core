@@ -878,5 +878,40 @@
       <node concept="3clFbS" id="5S7KXTzDsoA" role="2VODD2" />
     </node>
   </node>
+  <node concept="WtQ9Q" id="UslQezBEpq">
+    <property role="3GE5qa" value="vaargs" />
+    <ref role="WuzLi" to="mj1l:UslQeyQ5kC" resolve="VaArgExpression" />
+    <node concept="11bSqf" id="UslQezBEpr" role="11c4hB">
+      <node concept="3clFbS" id="UslQezBEps" role="2VODD2">
+        <node concept="lc7rE" id="UslQezBE$l" role="3cqZAp">
+          <node concept="la8eA" id="UslQezBE$$" role="lcghm">
+            <property role="lacIc" value="va_arg(" />
+          </node>
+          <node concept="l9hG8" id="UslQezBF2G" role="lcghm">
+            <node concept="2OqwBi" id="UslQezBFc$" role="lb14g">
+              <node concept="117lpO" id="UslQezBF8W" role="2Oq$k0" />
+              <node concept="3TrEf2" id="UslQezBFva" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:UslQeyQ5tp" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="UslQezBGlj" role="lcghm">
+            <property role="lacIc" value="," />
+          </node>
+          <node concept="l9hG8" id="UslQezBFQw" role="lcghm">
+            <node concept="2OqwBi" id="UslQezBFWn" role="lb14g">
+              <node concept="117lpO" id="UslQezBFSL" role="2Oq$k0" />
+              <node concept="3TrEf2" id="UslQezBGeX" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="UslQezBGnM" role="lcghm">
+            <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
