@@ -122,7 +122,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -4688,6 +4688,40 @@
                       </node>
                     </node>
                     <node concept="3JvlWi" id="5Y5RBjHyPz1" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="UslQexUtZm" role="3cqZAp">
+                <node concept="3clFbS" id="UslQexUtZo" role="3clFbx">
+                  <node concept="2MkqsV" id="UslQexUxUR" role="3cqZAp">
+                    <node concept="Xl_RD" id="UslQexUxUS" role="2MkJ7o">
+                      <property role="Xl_RC" value="fixed size array types can not be assigned" />
+                    </node>
+                    <node concept="2OqwBi" id="UslQexUxUT" role="2OEOjV">
+                      <node concept="1YBJjd" id="UslQexUxUU" role="2Oq$k0">
+                        <ref role="1YBMHb" node="6o2p2Z0DIJC" resolve="ae" />
+                      </node>
+                      <node concept="3TrEf2" id="UslQexUxUV" role="2OqNvi">
+                        <ref role="3Tt5mk" to="mj1l:7FQByU3CrD1" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3fqX7Q" id="UslQexU_pC" role="3clFbw">
+                  <node concept="2OqwBi" id="UslQexU_pE" role="3fr31v">
+                    <node concept="2OqwBi" id="UslQexU_pF" role="2Oq$k0">
+                      <node concept="1YBJjd" id="UslQexU_pG" role="2Oq$k0">
+                        <ref role="1YBMHb" node="6o2p2Z0DIJC" resolve="ae" />
+                      </node>
+                      <node concept="3TrEf2" id="UslQexU_pH" role="2OqNvi">
+                        <ref role="3Tt5mk" to="mj1l:7FQByU3CrD1" />
+                      </node>
+                    </node>
+                    <node concept="1mIQ4w" id="UslQexU_pI" role="2OqNvi">
+                      <node concept="chp4Y" id="UslQexU_pJ" role="cj9EA">
+                        <ref role="cht4Q" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
