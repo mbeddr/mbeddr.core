@@ -330,6 +330,19 @@
               </node>
             </node>
             <node concept="3clFbS" id="3JErwPFIF3S" role="3clFbx">
+              <node concept="3clFbF" id="5wABxA4gZ41" role="3cqZAp">
+                <node concept="2OqwBi" id="5wABxA4h10a" role="3clFbG">
+                  <node concept="37vLTw" id="5wABxA4gZ3Z" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3JErwPFIF3B" resolve="wrapped" />
+                  </node>
+                  <node concept="liA8E" id="5wABxA4h2Ld" role="2OqNvi">
+                    <ref role="37wK5l" to="nu8v:~EditorCell.setBig(boolean):void" resolve="setBig" />
+                    <node concept="3clFbT" id="5wABxA4h2LX" role="37wK5m">
+                      <property role="3clFbU" value="true" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3cpWs6" id="3JErwPFIF3T" role="3cqZAp">
                 <node concept="37vLTw" id="3JErwPFIF3U" role="3cqZAk">
                   <ref role="3cqZAo" node="3JErwPFIF3B" resolve="wrapped" />
