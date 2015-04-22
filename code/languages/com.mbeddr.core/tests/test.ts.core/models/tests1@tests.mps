@@ -18469,9 +18469,6 @@
                     <property role="2caQfQ" value="false" />
                     <property role="2c7vTL" value="false" />
                   </node>
-                  <node concept="7CXmI" id="7JMgLzbdxjO" role="lGtFl">
-                    <node concept="1TM$A" id="7JMgLzbdxjP" role="7EUXB" />
-                  </node>
                 </node>
               </node>
             </node>
@@ -18486,9 +18483,6 @@
                   <node concept="26Vqph" id="7JMgLzbdvGf" role="pFrBb">
                     <property role="2caQfQ" value="false" />
                     <property role="2c7vTL" value="false" />
-                  </node>
-                  <node concept="7CXmI" id="7JMgLzbdAwT" role="lGtFl">
-                    <node concept="1TM$A" id="7JMgLzbdAwU" role="7EUXB" />
                   </node>
                 </node>
                 <node concept="3TlMh9" id="7JMgLzbd_nH" role="1YbSNA">
