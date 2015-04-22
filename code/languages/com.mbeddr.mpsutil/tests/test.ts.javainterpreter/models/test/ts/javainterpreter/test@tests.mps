@@ -32,6 +32,9 @@
       <concept id="1215695189714" name="jetbrains.mps.baseLanguage.structure.PlusAssignmentExpression" flags="nn" index="d57v9" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1239709250944" name="jetbrains.mps.baseLanguage.structure.PrefixIncrementExpression" flags="nn" index="2$rviw" />
+      <concept id="5279705229678483897" name="jetbrains.mps.baseLanguage.structure.FloatingPointFloatConstant" flags="nn" index="2$xPTn">
+        <property id="5279705229678483899" name="value" index="2$xPTl" />
+      </concept>
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -692,8 +695,8 @@
               <node concept="3cpWsn" id="5AiVk6H_T3j" role="3cpWs9">
                 <property role="TrG5h" value="f" />
                 <node concept="10OMs4" id="5AiVk6H_T3f" role="1tU5fm" />
-                <node concept="3b6qkQ" id="5AiVk6H_T47" role="33vP2m">
-                  <property role="$nhwW" value="16.0f" />
+                <node concept="2$xPTn" id="kYNwvgpnP_" role="33vP2m">
+                  <property role="2$xPTl" value="16.0f" />
                 </node>
               </node>
             </node>
@@ -708,8 +711,8 @@
               </node>
             </node>
             <node concept="3fnNWZ" id="5AiVk6H_T_j" role="lGtFl">
-              <node concept="3b6qkQ" id="5AiVk6H_T_H" role="3QrI88">
-                <property role="$nhwW" value="32.0f" />
+              <node concept="2$xPTn" id="kYNwvgqrB5" role="3QrI88">
+                <property role="2$xPTl" value="32.0f" />
               </node>
             </node>
           </node>
