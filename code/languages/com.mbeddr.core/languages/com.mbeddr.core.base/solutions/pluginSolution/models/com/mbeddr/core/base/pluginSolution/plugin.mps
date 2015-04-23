@@ -3085,7 +3085,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="5jGyeU5XRta" role="1nVCmq">
-      <property role="1QGGTI" value="${solution_descriptor}/icons/search.png" />
+      <property role="1QGGTI" value="${module}/icons/search.png" />
     </node>
   </node>
   <node concept="312cEu" id="2HzhasNzNEW">
