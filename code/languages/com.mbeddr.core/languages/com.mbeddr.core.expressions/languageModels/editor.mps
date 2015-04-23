@@ -24,10 +24,10 @@
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -3935,6 +3935,47 @@
     <ref role="1XX52x" to="mj1l:58TcxRGi40Z" resolve="ExpressionList" />
     <node concept="3F2HdR" id="58TcxRGijIk" role="2wV5jI">
       <ref role="1NtTu8" to="mj1l:58TcxRGi7E1" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="UslQeyQ5tF">
+    <property role="3GE5qa" value="vaargs" />
+    <ref role="1XX52x" to="mj1l:UslQeyQ5kC" resolve="VaArgExpression" />
+    <node concept="3EZMnI" id="UslQeyQ5NO" role="2wV5jI">
+      <node concept="2iRfu4" id="UslQeyQ5NR" role="2iSdaV" />
+      <node concept="3F0ifn" id="UslQeyQ5Oe" role="3EZMnx">
+        <property role="3F0ifm" value="va_arg" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+        <node concept="11LMrY" id="UslQez3tnC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="UslQez5SWz" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11LMrY" id="UslQez5SZs" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="UslQeyQ5OJ" role="3EZMnx">
+        <ref role="1NtTu8" to="mj1l:UslQeyQ5tp" />
+      </node>
+      <node concept="3F0ifn" id="UslQeyQ5P6" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+        <node concept="11L4FC" id="UslQez3tih" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="UslQez3tkY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="UslQeyQ5Px" role="3EZMnx">
+        <ref role="1NtTu8" to="mj1l:hEaDaGor64" />
+      </node>
+      <node concept="3F0ifn" id="UslQeyQ5Os" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="UslQez3teq" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
