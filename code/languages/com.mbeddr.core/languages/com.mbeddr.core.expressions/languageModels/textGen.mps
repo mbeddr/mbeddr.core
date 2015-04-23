@@ -56,7 +56,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -1005,6 +1005,41 @@
     <ref role="WuzLi" to="mj1l:2TbP0WsJvOO" resolve="TypeSizeConfiguration" />
     <node concept="11bSqf" id="5S7KXTzDso_" role="11c4hB">
       <node concept="3clFbS" id="5S7KXTzDsoA" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="UslQezBEpq">
+    <property role="3GE5qa" value="vaargs" />
+    <ref role="WuzLi" to="mj1l:UslQeyQ5kC" resolve="VaArgExpression" />
+    <node concept="11bSqf" id="UslQezBEpr" role="11c4hB">
+      <node concept="3clFbS" id="UslQezBEps" role="2VODD2">
+        <node concept="lc7rE" id="UslQezBE$l" role="3cqZAp">
+          <node concept="la8eA" id="UslQezBE$$" role="lcghm">
+            <property role="lacIc" value="va_arg(" />
+          </node>
+          <node concept="l9hG8" id="UslQezBF2G" role="lcghm">
+            <node concept="2OqwBi" id="UslQezBFc$" role="lb14g">
+              <node concept="117lpO" id="UslQezBF8W" role="2Oq$k0" />
+              <node concept="3TrEf2" id="UslQezBFva" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:UslQeyQ5tp" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="UslQezBGlj" role="lcghm">
+            <property role="lacIc" value="," />
+          </node>
+          <node concept="l9hG8" id="UslQezBFQw" role="lcghm">
+            <node concept="2OqwBi" id="UslQezBFWn" role="lb14g">
+              <node concept="117lpO" id="UslQezBFSL" role="2Oq$k0" />
+              <node concept="3TrEf2" id="UslQezBGeX" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="UslQezBGnM" role="lcghm">
+            <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
