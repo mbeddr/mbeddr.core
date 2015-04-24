@@ -251,5 +251,34 @@
     <property role="MwhBj" value="${module}/icons/sectionOpen.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="1TIwiD" id="4AhMPNYlUI$">
+    <property role="3GE5qa" value="section" />
+    <property role="TrG5h" value="TextAreaContextSection" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4AhMPNYmE0s" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="contentFunction" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4AhMPNYm6hs" resolve="TextAreaFunction" />
+    </node>
+    <node concept="1TJgyj" id="4AhMPNYmPjt" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="isApplicableQuery" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="lRW__IuEuK" resolve="IsApplicableFunction" />
+    </node>
+    <node concept="PrWs8" id="4AhMPNYm6gK" role="PzmwI">
+      <ref role="PrY4T" node="lRW__Is3De" resolve="IContextSection" />
+    </node>
+    <node concept="PrWs8" id="4AhMPNYm6gL" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4AhMPNYm6hs">
+    <property role="3GE5qa" value="section" />
+    <property role="TrG5h" value="TextAreaFunction" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
 </model>
 
