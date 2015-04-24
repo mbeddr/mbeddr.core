@@ -1270,5 +1270,50 @@
       <ref role="PrY4T" to="yq40:6bzSKoI1uCr" resolve="IStringLiteralLike" />
     </node>
   </node>
+  <node concept="1TIwiD" id="UslQeyoPRa">
+    <property role="3GE5qa" value="functions" />
+    <property role="TrG5h" value="VariadicArgument" />
+    <property role="34LRSv" value="..." />
+    <ref role="1TJDcQ" node="6Q7bJ$$my3n" resolve="Argument" />
+    <node concept="PrWs8" id="UslQezI$HY" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:UslQezI$Gn" resolve="IRequireStdArgHeader" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="UslQez5Sra">
+    <property role="3GE5qa" value="functions" />
+    <property role="TrG5h" value="VaStartStatement" />
+    <property role="34LRSv" value="va_start" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="UslQez5Srb" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arg" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1OcdQnyTX2U" resolve="ArgumentRef" />
+    </node>
+    <node concept="1TJgyj" id="UslQez5Sre" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="va_list" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="UslQezI$HQ" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:UslQezI$Gn" resolve="IRequireStdArgHeader" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="UslQezeAy2">
+    <property role="3GE5qa" value="functions" />
+    <property role="TrG5h" value="VaEndStatement" />
+    <property role="34LRSv" value="va_end" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="UslQezeAy3" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="va_list" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="UslQezI$HM" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:UslQezI$Gn" resolve="IRequireStdArgHeader" />
+    </node>
+  </node>
 </model>
 

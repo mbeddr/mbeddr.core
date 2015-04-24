@@ -47,7 +47,6 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.mpl" folder="richstring" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.spreferences.context/com.mbeddr.mpsutil.spreferences.context.mpl" folder="spreferences" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.mpl" folder="spreferences" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.tooltip/com.mbeddr.mpsutil.tooltip.mpl" folder="tooltip" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.typsystem.trace/com.mbeddr.mpsutil.typsystem.trace.mpl" folder="typesystem.trace" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.uniquenames/com.mbeddr.mpsutil.uniquenames.mpl" folder="uniqueNames" />
       <modulePath path="$PROJECT_DIR$/languages/doc.com.mbeddr.mpsutil.multilingual.lang/doc.com.mbeddr.mpsutil.multilingual.lang.mpl" folder="multilingual" />

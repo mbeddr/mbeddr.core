@@ -3217,6 +3217,11 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5wABxA4sjUy" role="3bR37C">
+          <node concept="1Busua" id="5wABxA4sjUz" role="1SiIV1">
+            <ref role="1Busuk" to="al5i:2bBLuwR9LnB" resolve="com.mbeddr.mpsutil.interpreter.test" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7uZw0yZ43LZ" role="2G$12L">
         <property role="BnDLt" value="true" />
