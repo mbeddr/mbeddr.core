@@ -9412,6 +9412,16 @@
           <ref role="m_rDy" node="4i9pOwKZppd" resolve="com.mbeddr.ext.math" />
         </node>
       </node>
+      <node concept="3981dG" id="4sdMDO4eOXj" role="39821P">
+        <node concept="3_J27D" id="4sdMDO4eOXk" role="Nbhlr">
+          <node concept="3Mxwew" id="4sdMDO4eOXl" role="3MwsjC">
+            <property role="3MwjfP" value="com.mbeddr.build.zip" />
+          </node>
+        </node>
+        <node concept="m$_wl" id="4sdMDO4eOXm" role="39821P">
+          <ref role="m_rDy" node="5dchr4Qj2b3" resolve="com.mbeddr.build" />
+        </node>
+      </node>
     </node>
     <node concept="10PD9b" id="4i9pOwKTId0" role="10PD9s" />
     <node concept="3b7kt6" id="4i9pOwKTId5" role="10PD9s" />
