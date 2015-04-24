@@ -815,6 +815,10 @@
     <property role="34LRSv" value="#macro" />
     <property role="R4oN_" value="a global macro definition" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1Iv4$fS2caM" role="1TKVEl">
+      <property role="TrG5h" value="hasEllipsis" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="5eg$WPOtR8R" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="arguments" />
@@ -1314,6 +1318,18 @@
     <node concept="PrWs8" id="UslQezI$HM" role="PzmwI">
       <ref role="PrY4T" to="mj1l:UslQezI$Gn" resolve="IRequireStdArgHeader" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1Iv4$fSedzp">
+    <property role="3GE5qa" value="global" />
+    <property role="TrG5h" value="HashOperator" />
+    <property role="34LRSv" value="#" />
+    <ref role="1TJDcQ" to="mj1l:2APHWiztz8M" resolve="UnaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="1Iv4$fSveL1">
+    <property role="3GE5qa" value="global" />
+    <property role="TrG5h" value="VaArgs" />
+    <property role="34LRSv" value="__VA_ARGS__" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
   </node>
 </model>
 
