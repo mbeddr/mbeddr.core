@@ -10,6 +10,7 @@
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="qjdu" ref="r:bc752cbf-8d9b-4442-8e26-e5c87b20b897(com.mbeddr.core.base.plugin)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -68,7 +69,6 @@
     </language>
     <language id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common">
       <concept id="568377005202317274" name="com.mbeddr.mpsutil.multilingual.common.structure.ResourceBundle" flags="ng" index="3MtHw5">
-        <reference id="568377005202317277" name="resourceBundle" index="3MtHw2" />
         <child id="568377005202317276" name="keys" index="3MtHw3" />
       </concept>
       <concept id="568377005202317270" name="com.mbeddr.mpsutil.multilingual.common.structure.MessageKey" flags="ng" index="3MtHw9">
@@ -98,7 +98,7 @@
     </node>
   </node>
   <node concept="312cEu" id="7Hbe8h6SmwC">
-    <property role="TrG5h" value="CoreBaseResourceBundleClass" />
+    <property role="TrG5h" value="CoreBaseResourceBundleBundleClass" />
     <node concept="3Tm1VV" id="7Hbe8h6SmwD" role="1B3o_S" />
     <node concept="3uibUv" id="7Hbe8h6Smx0" role="1zkMxy">
       <ref role="3uigEE" to="k7g3:~ResourceBundle" resolve="ResourceBundle" />
@@ -141,7 +141,6 @@
   </node>
   <node concept="3MtHw5" id="7Hbe8h6SmvO">
     <property role="TrG5h" value="CoreBaseResourceBundle" />
-    <ref role="3MtHw2" node="7Hbe8h6SmwC" resolve="CoreBaseResourceBundleClass" />
     <node concept="3MtHw9" id="7Hbe8h6SB0B" role="3MtHw3">
       <property role="3MtHw8" value=" " />
       <property role="TrG5h" value="noValueSource" />
