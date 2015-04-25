@@ -3217,6 +3217,11 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5wABxA4sjUy" role="3bR37C">
+          <node concept="1Busua" id="5wABxA4sjUz" role="1SiIV1">
+            <ref role="1Busuk" to="al5i:2bBLuwR9LnB" resolve="com.mbeddr.mpsutil.interpreter.test" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7uZw0yZ43LZ" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -9410,6 +9415,16 @@
         </node>
         <node concept="m$_wl" id="3AVJcIMsTav" role="39821P">
           <ref role="m_rDy" node="4i9pOwKZppd" resolve="com.mbeddr.ext.math" />
+        </node>
+      </node>
+      <node concept="3981dG" id="4sdMDO4eOXj" role="39821P">
+        <node concept="3_J27D" id="4sdMDO4eOXk" role="Nbhlr">
+          <node concept="3Mxwew" id="4sdMDO4eOXl" role="3MwsjC">
+            <property role="3MwjfP" value="com.mbeddr.build.zip" />
+          </node>
+        </node>
+        <node concept="m$_wl" id="4sdMDO4eOXm" role="39821P">
+          <ref role="m_rDy" node="5dchr4Qj2b3" resolve="com.mbeddr.build" />
         </node>
       </node>
     </node>

@@ -13,6 +13,7 @@
   <language namespace="ea7c5f4a-5621-4b35-a7bb-9aaab820eaf7(doc.com.mbeddr.mpsutil.multilingual.lang)" />
   <language namespace="d0fe2e60-9f9c-4d3c-94aa-de9257b67a6d(com.mbeddr.mpsutil.multilingual.concept)" />
   <language namespace="f44f6b9a-bf30-4f73-866e-fac17c177409(com.mbeddr.doc.gen_latex)" />
+  <language namespace="2dec0852-3a21-4c4e-a68c-b05236cc37f2(com.mbeddr.doc.gen_xhtml)" />
   <import index="sxyo" modelUID="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" version="8" />
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
   <import index="tnjx" modelUID="r:b5a6a0ba-90b8-4839-a0b6-fee9cff5d417(com.mbeddr.mpsutil.multilingual.baseLanguage.structure)" version="0" />
@@ -31,6 +32,7 @@
   <import index="ivdl" modelUID="r:c3729148-5a72-48d9-b266-3d72f32826ba(doc.com.mbeddr.mpsutil.multilingual.lang.structure)" version="-1" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
+  <import index="lsus" modelUID="r:25d6e7db-06a4-44ee-83aa-8c5bf17f3b3a(com.mbeddr.doc.gen_xhtml.structure)" version="-1" implicit="yes" />
   <root type="2c95.Document" typeId="2c95.3350625596579911728" id="4501452903638424430" nodeInfo="ng">
     <property name="chapterStartIndex" nameId="2c95.5572730672710143343" value="1" />
     <property name="name" nameId="tpck.1169194664001" value="UsingMultilingual" />
@@ -641,6 +643,13 @@
         <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="185414526252988208" nodeInfo="ng">
           <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="185414526252988209" nodeInfo="ng">
             <property name="escapedValue" nameId="87nw.2557074442922438158" value="If we enter a MessgeKey that does not exist yet, there's an intention to create this key in the next ResourceBundle nearby." />
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="2918313337035414072" nodeInfo="ng">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="2918313337035414073" nodeInfo="ng">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2918313337035414074" nodeInfo="ng">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="A ResourceBundle should be used only in the model it resides in. A warning will be displayed for using MessageKeys from a foreign ResourceBundle." />
           </node>
         </node>
       </node>
@@ -1797,15 +1806,16 @@
     </node>
   </root>
   <root type="2c95.DocumentExport" typeId="2c95.3350625596580256366" id="185414526255953042" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Latex" />
+    <property name="name" nameId="tpck.1169194664001" value="Multilingual" />
     <property name="title" nameId="2c95.126932837435324910" value="Multilingual" />
-    <node role="renderer" roleId="2c95.6068976060904007487" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="185414526255953048" nodeInfo="ng">
-      <property name="documentClass" nameId="g9w8.4457500422381351717" value="article" />
-      <property name="prolog" nameId="g9w8.4755612053022149513" value="/Users/nikostotz/git/mbeddr.core.mps31/code/languages/com.mbeddr.doc/latex-support/mbeddr-prolog.ltx" />
-    </node>
     <node role="root" roleId="2c95.6068976060904007489" type="2c95.DocumentRef" typeId="2c95.3350625596580225385" id="185414526255953045" nodeInfo="ng">
       <link role="doc" roleId="2c95.3350625596580225386" targetNodeId="4501452903638424430" resolveInfo="UsingMultilingual" />
     </node>
+    <node role="renderer" roleId="2c95.6068976060904007487" type="g9w8.LatexRenderer" typeId="g9w8.4457500422381351715" id="2918313337035414913" nodeInfo="ng">
+      <property name="documentClass" nameId="g9w8.4457500422381351717" value="article" />
+      <property name="prolog" nameId="g9w8.4755612053022149513" value="/Users/nikostotz/git/mbeddr.core.mps31/code/languages/com.mbeddr.doc/latex-support/mbeddr-prolog.ltx" />
+    </node>
+    <node role="inactiveRenderer" roleId="2c95.6068976060904007488" type="lsus.HTMLRenderer" typeId="lsus.3350625596580275037" id="2918313337035414914" nodeInfo="ng" />
   </root>
 </model>
 

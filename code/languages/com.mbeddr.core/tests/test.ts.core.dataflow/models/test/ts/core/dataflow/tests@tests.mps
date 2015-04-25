@@ -727,9 +727,6 @@
               <node concept="2wJmCr" id="2lA5DP8omx3" role="3XIe9u">
                 <node concept="3ZVu4v" id="2lA5DP8olY4" role="1_9fRO">
                   <ref role="3ZVs_2" node="2lA5DP8olXQ" resolve="a" />
-                  <node concept="7CXmI" id="2lA5DP8oU41" role="lGtFl">
-                    <node concept="1TM$A" id="2lA5DP8oU42" role="7EUXB" />
-                  </node>
                 </node>
                 <node concept="3TlMh9" id="2lA5DP8om_j" role="2wJmCp">
                   <property role="2hmy$m" value="1" />
