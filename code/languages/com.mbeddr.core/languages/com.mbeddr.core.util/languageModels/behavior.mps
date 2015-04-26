@@ -897,8 +897,9 @@
       <node concept="10P_77" id="6HXlXvlxe4q" role="3clF45" />
     </node>
     <node concept="13i0hz" id="Ug1QzfjnxS" role="13h7CS">
-      <property role="TrG5h" value="isIdempotent" />
-      <ref role="13i0hy" to="ywuz:Ug1Qzfjnwa" resolve="isIdempotent" />
+      <property role="TrG5h" value="isSideeffectFree" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" to="ywuz:6SENleF$SRD" resolve="isSideeffectFree" />
       <node concept="3clFbS" id="Ug1QzfjnxV" role="3clF47">
         <node concept="3clFbF" id="Ug1QzfjnxY" role="3cqZAp">
           <node concept="3clFbT" id="Ug1QzfjnxZ" role="3clFbG">
@@ -906,8 +907,8 @@
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="Ug1QzfjnxW" role="3clF45" />
-      <node concept="3Tm1VV" id="Ug1QzfjnxX" role="1B3o_S" />
+      <node concept="10P_77" id="7bk7NuGYU_P" role="3clF45" />
+      <node concept="3Tm1VV" id="7bk7NuGYU_Q" role="1B3o_S" />
     </node>
     <node concept="13i0hz" id="1nED3m9snW9" role="13h7CS">
       <property role="13i0iv" value="false" />
