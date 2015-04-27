@@ -19,8 +19,8 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="n7pc" ref="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" />
-    <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1179,7 +1179,7 @@
               <property role="Xl_RC" value="max width is 64" />
             </node>
             <node concept="1YBJjd" id="5nhrDHCiU6J" role="2OEOjV">
-              <ref role="1YBMHb" node="5nhrDHCiU6n" resolve="bitType" />
+              <ref role="1YBMHb" node="5nhrDHCiU6n" resolve="abstractBitType" />
             </node>
           </node>
         </node>
@@ -1189,10 +1189,10 @@
           </node>
           <node concept="2OqwBi" id="5nhrDHCiU6u" role="3uHU7B">
             <node concept="1YBJjd" id="5nhrDHCiU6r" role="2Oq$k0">
-              <ref role="1YBMHb" node="5nhrDHCiU6n" resolve="bitType" />
+              <ref role="1YBMHb" node="5nhrDHCiU6n" resolve="abstractBitType" />
             </node>
-            <node concept="3TrcHB" id="5nhrDHCiU6z" role="2OqNvi">
-              <ref role="3TsBF5" to="clbe:5nhrDHCgX5o" resolve="width" />
+            <node concept="3TrcHB" id="2H3YrqdcSdv" role="2OqNvi">
+              <ref role="3TsBF5" to="clbe:2H3Yrqdcu$P" resolve="width" />
             </node>
           </node>
         </node>
@@ -1204,7 +1204,7 @@
               <property role="Xl_RC" value="width must be between 1 and 64" />
             </node>
             <node concept="1YBJjd" id="5nhrDHCiU7h" role="2OEOjV">
-              <ref role="1YBMHb" node="5nhrDHCiU6n" resolve="bitType" />
+              <ref role="1YBMHb" node="5nhrDHCiU6n" resolve="abstractBitType" />
             </node>
           </node>
         </node>
@@ -1214,18 +1214,18 @@
           </node>
           <node concept="2OqwBi" id="5nhrDHCiU6S" role="3uHU7B">
             <node concept="1YBJjd" id="5nhrDHCiU6P" role="2Oq$k0">
-              <ref role="1YBMHb" node="5nhrDHCiU6n" resolve="bitType" />
+              <ref role="1YBMHb" node="5nhrDHCiU6n" resolve="abstractBitType" />
             </node>
-            <node concept="3TrcHB" id="5nhrDHCiU6Y" role="2OqNvi">
-              <ref role="3TsBF5" to="clbe:5nhrDHCgX5o" resolve="width" />
+            <node concept="3TrcHB" id="2H3YrqdcRwk" role="2OqNvi">
+              <ref role="3TsBF5" to="clbe:2H3Yrqdcu$P" resolve="width" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="5nhrDHCiU6n" role="1YuTPh">
-      <property role="TrG5h" value="bitType" />
-      <ref role="1YaFvo" to="clbe:5nhrDHCgX5n" resolve="UnsignedBitType" />
+      <property role="TrG5h" value="abstractBitType" />
+      <ref role="1YaFvo" to="clbe:2H3Yrqdbnnx" resolve="AbstractBitType" />
     </node>
   </node>
   <node concept="35pCF_" id="5nhrDHCijw9">

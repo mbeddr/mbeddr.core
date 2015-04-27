@@ -89,6 +89,9 @@
         <reference id="4202685725779391329" name="element" index="2xZoc7" />
         <child id="4202685725779390438" name="value" index="2xZpY0" />
       </concept>
+      <concept id="3117609929518446049" name="com.mbeddr.core.udt.structure.AbstractBitType" flags="ng" index="2ArCLn">
+        <property id="3117609929518737717" name="width" index="2Asx23" />
+      </concept>
       <concept id="1803113332147436562" name="com.mbeddr.core.udt.structure.InnerSUDeclarationRef" flags="ng" index="2HrGSn">
         <reference id="1803113332147436686" name="ref" index="2HrGUb" />
       </concept>
@@ -96,9 +99,7 @@
         <child id="7099329415459888018" name="members" index="HszBJ" />
       </concept>
       <concept id="8685795338482689976" name="com.mbeddr.core.udt.structure.AnonymousStructDeclaration" flags="ng" index="QyKdJ" />
-      <concept id="6183845377104662871" name="com.mbeddr.core.udt.structure.UnsignedBitType" flags="ng" index="X$FZc">
-        <property id="6183845377104662872" name="width" index="X$FZ3" />
-      </concept>
+      <concept id="6183845377104662871" name="com.mbeddr.core.udt.structure.UnsignedBitType" flags="ng" index="X$FZc" />
       <concept id="1430983428344023681" name="com.mbeddr.core.udt.structure.Int2Enum" flags="ng" index="2Ycllp">
         <child id="1430983428344024335" name="targetType" index="2Yclbn" />
         <child id="1430983428344023784" name="expr" index="2YclkK" />
@@ -1571,13 +1572,13 @@
       <node concept="1dpRTG" id="1u3L9i_19iK" role="HszBJ">
         <property role="TrG5h" value="b1" />
         <node concept="X$FZc" id="5nhrDHCiiXr" role="2C2TGm">
-          <property role="X$FZ3" value="1" />
+          <property role="2Asx23" value="1" />
         </node>
       </node>
       <node concept="1dpRTG" id="1u3L9i_19k3" role="HszBJ">
         <property role="TrG5h" value="b2" />
         <node concept="X$FZc" id="5nhrDHCiiXu" role="2C2TGm">
-          <property role="X$FZ3" value="2" />
+          <property role="2Asx23" value="2" />
         </node>
       </node>
     </node>

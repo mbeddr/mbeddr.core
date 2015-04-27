@@ -632,23 +632,30 @@
   </node>
   <node concept="24kQdi" id="5nhrDHCgX5r">
     <property role="3GE5qa" value="types" />
-    <ref role="1XX52x" to="clbe:5nhrDHCgX5n" resolve="UnsignedBitType" />
+    <ref role="1XX52x" to="clbe:2H3Yrqdbnnx" resolve="AbstractBitType" />
     <node concept="3EZMnI" id="5nhrDHCgX5s" role="2wV5jI">
-      <node concept="3F0ifn" id="5nhrDHCgX5t" role="3EZMnx">
-        <property role="3F0ifm" value="ubit(" />
+      <node concept="PMmxH" id="2H3Yrqdd6Tk" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-        <node concept="11LMrY" id="2CEi94ex1CS" role="3F10Kt">
+      </node>
+      <node concept="3F0ifn" id="2H3Yrqdd6T7" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dh36z" resolve="Parens" />
+        <node concept="11L4FC" id="2H3YrqddfHQ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="2H3YrqddfJA" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="l2Vlx" id="5nhrDHCgX5u" role="2iSdaV" />
       <node concept="3F0A7n" id="5nhrDHCgX5y" role="3EZMnx">
-        <ref role="1NtTu8" to="clbe:5nhrDHCgX5o" resolve="width" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgUHC" resolve="Number" />
+        <ref role="1NtTu8" to="clbe:2H3Yrqdcu$P" resolve="width" />
       </node>
       <node concept="3F0ifn" id="5nhrDHCgX5z" role="3EZMnx">
         <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dh36z" resolve="Parens" />
         <node concept="11L4FC" id="5nhrDHCgX5$" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
