@@ -382,7 +382,7 @@
       <node concept="3clFbS" id="7RiewQ_kDLj" role="2VODD2">
         <node concept="3clFbF" id="7RiewQ_kDLn" role="3cqZAp">
           <node concept="Xl_RD" id="7RiewQ_kDLo" role="3clFbG">
-            <property role="Xl_RC" value="Add Ellipsis (...)" />
+            <property role="Xl_RC" value="Toggle Ellipsis (...)" />
           </node>
         </node>
       </node>
@@ -3415,6 +3415,67 @@
                       <ref role="cht4Q" to="x27k:3ilck8KqBqr" resolve="GlobalConstantRef" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1Iv4$fS2cQ_">
+    <property role="TrG5h" value="addEllipsisForGlobalConstantFunDecl" />
+    <property role="2ZfUl0" value="true" />
+    <property role="3GE5qa" value="global" />
+    <ref role="2ZfgGC" to="x27k:5eg$WPOtR8F" resolve="GlobalConstantFunctionDeclaration" />
+    <node concept="2S6ZIM" id="1Iv4$fS2cQA" role="2ZfVej">
+      <node concept="3clFbS" id="1Iv4$fS2cQB" role="2VODD2">
+        <node concept="3clFbF" id="1Iv4$fS2cQC" role="3cqZAp">
+          <node concept="Xl_RD" id="1Iv4$fS2cQD" role="3clFbG">
+            <property role="Xl_RC" value="Toggle Ellipsis (...)" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1Iv4$fS2cQE" role="2ZfgGD">
+      <node concept="3clFbS" id="1Iv4$fS2cQF" role="2VODD2">
+        <node concept="3clFbF" id="1Iv4$fS2cQG" role="3cqZAp">
+          <node concept="37vLTI" id="1Iv4$fS2cQH" role="3clFbG">
+            <node concept="3fqX7Q" id="1Iv4$fS2cQI" role="37vLTx">
+              <node concept="2OqwBi" id="1Iv4$fS2cQJ" role="3fr31v">
+                <node concept="2Sf5sV" id="1Iv4$fS2cQK" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1Iv4$fS2cQL" role="2OqNvi">
+                  <ref role="3TsBF5" to="x27k:1Iv4$fS2caM" resolve="hasEllipsis" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1Iv4$fS2cQM" role="37vLTJ">
+              <node concept="2Sf5sV" id="1Iv4$fS2cQN" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1Iv4$fS2cQO" role="2OqNvi">
+                <ref role="3TsBF5" to="x27k:1Iv4$fS2caM" resolve="hasEllipsis" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="zTJ1e" id="1Iv4$fS2cQP" role="2ZfVeg">
+      <node concept="3clFbS" id="1Iv4$fS2cQQ" role="2VODD2">
+        <node concept="3clFbF" id="1Iv4$fS2cQR" role="3cqZAp">
+          <node concept="22lmx$" id="1Iv4$fS2cQS" role="3clFbG">
+            <node concept="2OqwBi" id="1Iv4$fS2cQT" role="3uHU7w">
+              <node concept="zTJq_" id="1Iv4$fS2cQU" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="1Iv4$fS2cQV" role="2OqNvi">
+                <node concept="chp4Y" id="1Iv4$fS2cQW" role="cj9EA">
+                  <ref role="cht4Q" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1Iv4$fS2cQX" role="3uHU7B">
+              <node concept="zTJq_" id="1Iv4$fS2cQY" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="1Iv4$fS2cQZ" role="2OqNvi">
+                <node concept="chp4Y" id="1Iv4$fS2cR0" role="cj9EA">
+                  <ref role="cht4Q" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
                 </node>
               </node>
             </node>
