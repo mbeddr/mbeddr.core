@@ -217,6 +217,9 @@
     <node concept="PrWs8" id="58I4robP8VO" role="PzmwI">
       <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
     </node>
+    <node concept="PrWs8" id="7DvJ5MZ1aFB" role="PzmwI">
+      <ref role="PrY4T" node="7DvJ5MZ1ag1" resolve="IHarnessLike" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7MOa6vKJ9cQ">
     <property role="3GE5qa" value="harness" />
@@ -430,6 +433,20 @@
     <property role="TrG5h" value="ValidEnumerationValue" />
     <property role="34LRSv" value="valid_enum" />
     <ref role="1TJDcQ" to="mj1l:6AJWN7GdLOh" resolve="UnaryLogicalExpression" />
+  </node>
+  <node concept="PlHQZ" id="7DvJ5MZ1ag1">
+    <property role="3GE5qa" value="harness" />
+    <property role="TrG5h" value="IHarnessLike" />
+  </node>
+  <node concept="1TIwiD" id="7DvJ5MZ1aFL">
+    <property role="TrG5h" value="VerificationCase" />
+    <property role="3GE5qa" value="verification_case" />
+    <property role="34LRSv" value="verification case" />
+    <property role="R4oN_" value="container for harness and properties to check" />
+    <ref role="1TJDcQ" to="x27k:5_l8w1EmTvx" resolve="Function" />
+    <node concept="PrWs8" id="7DvJ5MZ1aFM" role="PzmwI">
+      <ref role="PrY4T" node="7DvJ5MZ1ag1" resolve="IHarnessLike" />
+    </node>
   </node>
 </model>
 
