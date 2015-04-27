@@ -2187,5 +2187,55 @@
       <ref role="1YaFvo" to="q5q6:72mSD5R_OCr" resolve="ValidEnumerationValue" />
     </node>
   </node>
+  <node concept="1YbPZF" id="i5tJSHflsf">
+    <property role="TrG5h" value="typeof_CPROVERthreadId" />
+    <node concept="3clFbS" id="i5tJSHflsg" role="18ibNy" />
+    <node concept="1YaCAy" id="i5tJSHflsi" role="1YuTPh">
+      <property role="TrG5h" value="cproveRthreadId" />
+      <ref role="1YaFvo" to="q5q6:i5tJSHdtYB" resolve="CPROVERthreadId" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="3V3CJZuxqEJ">
+    <property role="TrG5h" value="check_CPROVERassert" />
+    <property role="3GE5qa" value="cbmc_macros" />
+    <node concept="3clFbS" id="3V3CJZuxqEK" role="18ibNy">
+      <node concept="3clFbJ" id="3V3CJZuxrNd" role="3cqZAp">
+        <node concept="3clFbS" id="3V3CJZuxrNe" role="3clFbx">
+          <node concept="2MkqsV" id="3V3CJZuxtV9" role="3cqZAp">
+            <node concept="Xl_RD" id="3V3CJZuxtVl" role="2MkJ7o">
+              <property role="Xl_RC" value="conditions of asserts must be side-effects free" />
+            </node>
+            <node concept="2OqwBi" id="3V3CJZuxu1Q" role="2OEOjV">
+              <node concept="1YBJjd" id="3V3CJZuxtXN" role="2Oq$k0">
+                <ref role="1YBMHb" node="3V3CJZuxqEM" resolve="cpa" />
+              </node>
+              <node concept="3TrEf2" id="3V3CJZuxuQP" role="2OqNvi">
+                <ref role="3Tt5mk" to="q5q6:73FH1Bco8D_" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="3V3CJZuxtRX" role="3clFbw">
+          <node concept="2OqwBi" id="3V3CJZuxtRZ" role="3fr31v">
+            <node concept="2OqwBi" id="3V3CJZuxtS0" role="2Oq$k0">
+              <node concept="1YBJjd" id="3V3CJZuxtS1" role="2Oq$k0">
+                <ref role="1YBMHb" node="3V3CJZuxqEM" resolve="cpa" />
+              </node>
+              <node concept="3TrEf2" id="3V3CJZuxtS2" role="2OqNvi">
+                <ref role="3Tt5mk" to="q5q6:73FH1Bco8D_" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="3V3CJZuxtS3" role="2OqNvi">
+              <ref role="37wK5l" to="ywuz:6SENleF$SRD" resolve="isSideeffectFree" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3V3CJZuxqEM" role="1YuTPh">
+      <property role="TrG5h" value="cpa" />
+      <ref role="1YaFvo" to="q5q6:73FH1Bco8fg" resolve="CPROVERassert" />
+    </node>
+  </node>
 </model>
 

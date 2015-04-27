@@ -10,8 +10,8 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -110,6 +110,9 @@
     <node concept="1TJgyi" id="6RCrcvOtNXu" role="1TKVEl">
       <property role="TrG5h" value="explanation" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="3V3CJZuMSlV" role="PzmwI">
+      <ref role="PrY4T" node="3V3CJZuMScE" resolve="IAssertLike" />
     </node>
   </node>
   <node concept="1TIwiD" id="6$qhYL9Fk4m">
@@ -430,6 +433,46 @@
     <property role="TrG5h" value="ValidEnumerationValue" />
     <property role="34LRSv" value="valid_enum" />
     <ref role="1TJDcQ" to="mj1l:6AJWN7GdLOh" resolve="UnaryLogicalExpression" />
+  </node>
+  <node concept="1TIwiD" id="i5tJSHdtYB">
+    <property role="3GE5qa" value="cbmc_macros" />
+    <property role="TrG5h" value="CPROVERthreadId" />
+    <property role="34LRSv" value="__CPROVER_thread_id" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="73FH1Bco8fg">
+    <property role="3GE5qa" value="cbmc_macros" />
+    <property role="TrG5h" value="CPROVERassert" />
+    <property role="34LRSv" value="__CPROVER_assert" />
+    <property role="R4oN_" value="assert with message in case of violation" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="73FH1Bco8D_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyi" id="73FH1Bco8Dz" role="1TKVEl">
+      <property role="TrG5h" value="message" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3V3CJZuwdnS">
+    <property role="3GE5qa" value="cbmc_macros" />
+    <property role="TrG5h" value="CPROVERatomic" />
+    <property role="34LRSv" value="__CPROVER_atomic" />
+    <property role="R4oN_" value="atomic section" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="3V3CJZuwwng" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="section" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3V3CJZuMScE">
+    <property role="3GE5qa" value="statements" />
+    <property role="TrG5h" value="IAssertLike" />
   </node>
 </model>
 

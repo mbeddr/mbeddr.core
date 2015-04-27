@@ -22,8 +22,8 @@
     <import index="q46j" ref="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor">
@@ -7032,6 +7032,54 @@
         </node>
       </node>
       <node concept="l2Vlx" id="72mSD5RNGNx" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="i5tJSHduiS">
+    <property role="3GE5qa" value="cbmc_macros" />
+    <ref role="1XX52x" to="q5q6:i5tJSHdtYB" resolve="CPROVERthreadId" />
+    <node concept="3F0ifn" id="i5tJSHdvDn" role="2wV5jI">
+      <property role="3F0ifm" value="__CPROVER_thread_id" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="73FH1Bco8DG">
+    <property role="3GE5qa" value="cbmc_macros" />
+    <ref role="1XX52x" to="q5q6:73FH1Bco8fg" resolve="CPROVERassert" />
+    <node concept="3EZMnI" id="73FH1Bcoe4o" role="2wV5jI">
+      <node concept="3F0ifn" id="73FH1Bcoe4B" role="3EZMnx">
+        <property role="3F0ifm" value="__CPROVER_assert(" />
+      </node>
+      <node concept="3F1sOY" id="73FH1Bcoe5d" role="3EZMnx">
+        <ref role="1NtTu8" to="q5q6:73FH1Bco8D_" />
+      </node>
+      <node concept="3F0ifn" id="73FH1Bcoe5t" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+      </node>
+      <node concept="3F0A7n" id="73FH1Bcoe5R" role="3EZMnx">
+        <ref role="1NtTu8" to="q5q6:73FH1Bco8Dz" resolve="message" />
+      </node>
+      <node concept="3F0ifn" id="73FH1Bcoe6b" role="3EZMnx">
+        <property role="3F0ifm" value=");" />
+      </node>
+      <node concept="2iRfu4" id="73FH1Bcoe4r" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3V3CJZuwdnY">
+    <property role="3GE5qa" value="cbmc_macros" />
+    <ref role="1XX52x" to="q5q6:3V3CJZuwdnS" resolve="CPROVERatomic" />
+    <node concept="3EZMnI" id="3V3CJZuyr8D" role="2wV5jI">
+      <node concept="3F0ifn" id="3V3CJZuwwn$" role="3EZMnx">
+        <property role="3F0ifm" value="atomic" />
+      </node>
+      <node concept="3F1sOY" id="3V3CJZuyraP" role="3EZMnx">
+        <ref role="1NtTu8" to="q5q6:3V3CJZuwwng" />
+      </node>
+      <node concept="3F0ifn" id="3V3CJZuyrb3" role="3EZMnx">
+        <property role="3F0ifm" value="end of atomic section" />
+        <node concept="VechU" id="3V3CJZuyrcK" role="3F10Kt">
+          <property role="Vb096" value="lightGray" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="3V3CJZuyr8E" role="2iSdaV" />
     </node>
   </node>
 </model>
