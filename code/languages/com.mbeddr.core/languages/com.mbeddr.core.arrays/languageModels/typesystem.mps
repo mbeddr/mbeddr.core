@@ -4888,8 +4888,8 @@
                       <ref role="3Tt5mk" to="mj1l:7FQByU3CrD0" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="6o2p2Z0DIJx" role="2OqNvi">
-                    <ref role="37wK5l" to="ywuz:Ug1Qzfjnwa" resolve="isIdempotent" />
+                  <node concept="2qgKlT" id="7bk7NuGZlcb" role="2OqNvi">
+                    <ref role="37wK5l" to="ywuz:6SENleF$SRD" resolve="isSideeffectFree" />
                   </node>
                 </node>
               </node>
