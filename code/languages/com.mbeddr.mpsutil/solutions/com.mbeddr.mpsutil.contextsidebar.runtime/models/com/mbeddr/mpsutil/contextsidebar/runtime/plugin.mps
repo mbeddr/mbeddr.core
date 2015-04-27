@@ -1360,6 +1360,25 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="3clFb_" id="2WGiVMa5tN7" role="jymVt">
+                      <property role="1EzhhJ" value="false" />
+                      <property role="TrG5h" value="isVisible" />
+                      <property role="od$2w" value="false" />
+                      <property role="DiZV1" value="false" />
+                      <property role="2aFKle" value="false" />
+                      <node concept="3clFbS" id="2WGiVMa5tNa" role="3clF47">
+                        <node concept="3clFbF" id="2WGiVMa5u2Y" role="3cqZAp">
+                          <node concept="2OqwBi" id="2WGiVMa5u45" role="3clFbG">
+                            <node concept="2WthIp" id="2WGiVMa5u2X" role="2Oq$k0" />
+                            <node concept="liA8E" id="2WGiVMa5ura" role="2OqNvi">
+                              <ref role="37wK5l" to="jwd7:~BaseTool.toolIsOpened():boolean" resolve="toolIsOpened" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3Tm1VV" id="2WGiVMa5tHl" role="1B3o_S" />
+                      <node concept="10P_77" id="2WGiVMa5tN0" role="3clF45" />
+                    </node>
                   </node>
                 </node>
               </node>
