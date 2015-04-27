@@ -85,9 +85,6 @@
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
@@ -266,6 +263,9 @@
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1237909114519" name="jetbrains.mps.baseLanguage.collections.structure.GetValuesOperation" flags="nn" index="T8wYR" />
+      <concept id="4611582986551314327" name="jetbrains.mps.baseLanguage.collections.structure.OfTypeOperation" flags="nn" index="UnYns">
+        <child id="4611582986551314344" name="requestedType" index="UnYnz" />
+      </concept>
       <concept id="1240216724530" name="jetbrains.mps.baseLanguage.collections.structure.LinkedHashMapCreator" flags="nn" index="32Fmki" />
       <concept id="1240325842691" name="jetbrains.mps.baseLanguage.collections.structure.AsSequenceOperation" flags="nn" index="39bAoz" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
@@ -467,8 +467,8 @@
                 <node concept="3clFbF" id="74w$6RhMyZ7" role="3cqZAp">
                   <node concept="2OqwBi" id="74w$6RhMzuC" role="3clFbG">
                     <node concept="2YIFZM" id="74w$6RhMzco" role="2Oq$k0">
-                      <ref role="37wK5l" node="3hPF_7O7NSg" resolve="getAllSections" />
                       <ref role="1Pybhc" node="3hPF_7O7NSf" resolve="ContextSidebarRegistry" />
+                      <ref role="37wK5l" node="3hPF_7O7NSg" resolve="getAllSections" />
                     </node>
                     <node concept="2es0OD" id="74w$6RhM_2b" role="2OqNvi">
                       <node concept="1bVj0M" id="74w$6RhM_2d" role="23t8la">
@@ -1177,20 +1177,6 @@
     </node>
     <node concept="2xpIHi" id="5T3_DgT4AT3" role="uR5cp">
       <node concept="3clFbS" id="5T3_DgT4AT4" role="2VODD2">
-        <node concept="3clFbF" id="5T3_DgT5EUj" role="3cqZAp">
-          <node concept="2OqwBi" id="5T3_DgT5EUg" role="3clFbG">
-            <node concept="10M0yZ" id="5T3_DgT5EUh" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="5T3_DgT5EUi" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="5T3_DgT5F1f" role="37wK5m">
-                <property role="Xl_RC" value="init ContextSidebar" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="5T3_DgT4AT5" role="3cqZAp">
           <node concept="37vLTI" id="5T3_DgT4AT6" role="3clFbG">
             <node concept="2OqwBi" id="5T3_DgT4AT7" role="37vLTJ">
@@ -1384,20 +1370,6 @@
     </node>
     <node concept="2xpOpl" id="5T3_DgT4ATY" role="uR5co">
       <node concept="3clFbS" id="5T3_DgT4ATZ" role="2VODD2">
-        <node concept="3clFbF" id="5T3_DgT5Fbe" role="3cqZAp">
-          <node concept="2OqwBi" id="5T3_DgT5Fbb" role="3clFbG">
-            <node concept="10M0yZ" id="5T3_DgT5Fbc" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="5T3_DgT5Fbd" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="5T3_DgT5Fcw" role="37wK5m">
-                <property role="Xl_RC" value="dispose ContextSidebar" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="5T3_DgT4AU0" role="3cqZAp">
           <node concept="2OqwBi" id="5T3_DgT4AU1" role="3clFbG">
             <node concept="2OqwBi" id="71qHDJAoOiV" role="2Oq$k0">
@@ -1438,11 +1410,18 @@
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="3hPF_7O7NSh" role="3clF47">
         <node concept="3clFbF" id="3hPF_7O7NSi" role="3cqZAp">
-          <node concept="2OqwBi" id="3hPF_7O7NSj" role="3clFbG">
-            <node concept="2O5UvJ" id="3hPF_7O7NSk" role="2Oq$k0">
-              <ref role="2O5UnU" node="5T3_DgT3PQD" resolve="ContextSidebarExtensionPoint" />
+          <node concept="2OqwBi" id="2WGiVMa4cmx" role="3clFbG">
+            <node concept="2OqwBi" id="3hPF_7O7NSj" role="2Oq$k0">
+              <node concept="2O5UvJ" id="3hPF_7O7NSk" role="2Oq$k0">
+                <ref role="2O5UnU" node="5T3_DgT3PQD" resolve="ContextSidebarExtensionPoint" />
+              </node>
+              <node concept="SfwO_" id="3hPF_7O7NSl" role="2OqNvi" />
             </node>
-            <node concept="SfwO_" id="3hPF_7O7NSl" role="2OqNvi" />
+            <node concept="UnYns" id="2WGiVMa4dO0" role="2OqNvi">
+              <node concept="3uibUv" id="2WGiVMa4dUz" role="UnYnz">
+                <ref role="3uigEE" to="fiq3:lRW__Ismt$" resolve="IContextSection" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
