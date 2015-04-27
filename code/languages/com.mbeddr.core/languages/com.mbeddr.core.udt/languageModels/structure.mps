@@ -284,6 +284,9 @@
         <property role="YLQ7P" value="property was moved up" />
       </node>
     </node>
+    <node concept="PrWs8" id="34uiID1zKUh" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:67O0HaCtjdR" resolve="IUnsigned" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6a5SBPfXGBP">
     <property role="TrG5h" value="SUDeclaration" />
@@ -552,6 +555,9 @@
     <property role="TrG5h" value="SignedBitType" />
     <property role="34LRSv" value="bit" />
     <ref role="1TJDcQ" node="2H3Yrqdbnnx" resolve="AbstractBitType" />
+    <node concept="PrWs8" id="34uiID1zvlm" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:24lM_j3AaK6" resolve="ISigned" />
+    </node>
   </node>
 </model>
 
