@@ -768,20 +768,51 @@
             </node>
             <node concept="liA8E" id="i7Uxc2OqMw" role="2OqNvi">
               <ref role="37wK5l" to="dbrf:~JComponent.setBorder(javax.swing.border.Border):void" resolve="setBorder" />
-              <node concept="2YIFZM" id="i7Uxc2OqOK" role="37wK5m">
+              <node concept="2YIFZM" id="2WGiVMa6YaM" role="37wK5m">
                 <ref role="1Pybhc" to="dbrf:~BorderFactory" resolve="BorderFactory" />
-                <ref role="37wK5l" to="dbrf:~BorderFactory.createEmptyBorder(int,int,int,int):javax.swing.border.Border" resolve="createEmptyBorder" />
-                <node concept="3cmrfG" id="i7Uxc2OqQj" role="37wK5m">
-                  <property role="3cmrfH" value="4" />
+                <ref role="37wK5l" to="dbrf:~BorderFactory.createCompoundBorder(javax.swing.border.Border,javax.swing.border.Border):javax.swing.border.CompoundBorder" resolve="createCompoundBorder" />
+                <node concept="2YIFZM" id="i7Uxc2OqOK" role="37wK5m">
+                  <ref role="1Pybhc" to="dbrf:~BorderFactory" resolve="BorderFactory" />
+                  <ref role="37wK5l" to="dbrf:~BorderFactory.createEmptyBorder(int,int,int,int):javax.swing.border.Border" resolve="createEmptyBorder" />
+                  <node concept="3cmrfG" id="i7Uxc2OqQj" role="37wK5m">
+                    <property role="3cmrfH" value="2" />
+                  </node>
+                  <node concept="3cmrfG" id="i7Uxc2OqQr" role="37wK5m">
+                    <property role="3cmrfH" value="2" />
+                  </node>
+                  <node concept="3cmrfG" id="i7Uxc2OqQ_" role="37wK5m">
+                    <property role="3cmrfH" value="2" />
+                  </node>
+                  <node concept="3cmrfG" id="i7Uxc2OqSM" role="37wK5m">
+                    <property role="3cmrfH" value="2" />
+                  </node>
                 </node>
-                <node concept="3cmrfG" id="i7Uxc2OqQr" role="37wK5m">
-                  <property role="3cmrfH" value="4" />
-                </node>
-                <node concept="3cmrfG" id="i7Uxc2OqQ_" role="37wK5m">
-                  <property role="3cmrfH" value="4" />
-                </node>
-                <node concept="3cmrfG" id="i7Uxc2OqSM" role="37wK5m">
-                  <property role="3cmrfH" value="4" />
+                <node concept="2YIFZM" id="2WGiVMa6YgZ" role="37wK5m">
+                  <ref role="37wK5l" to="dbrf:~BorderFactory.createCompoundBorder(javax.swing.border.Border,javax.swing.border.Border):javax.swing.border.CompoundBorder" resolve="createCompoundBorder" />
+                  <ref role="1Pybhc" to="dbrf:~BorderFactory" resolve="BorderFactory" />
+                  <node concept="2YIFZM" id="2WGiVMa7aJ0" role="37wK5m">
+                    <ref role="37wK5l" to="dbrf:~BorderFactory.createEtchedBorder(int):javax.swing.border.Border" resolve="createEtchedBorder" />
+                    <ref role="1Pybhc" to="dbrf:~BorderFactory" resolve="BorderFactory" />
+                    <node concept="3cmrfG" id="2WGiVMa7aJ1" role="37wK5m">
+                      <property role="3cmrfH" value="1" />
+                    </node>
+                  </node>
+                  <node concept="2YIFZM" id="2WGiVMa6YsY" role="37wK5m">
+                    <ref role="1Pybhc" to="dbrf:~BorderFactory" resolve="BorderFactory" />
+                    <ref role="37wK5l" to="dbrf:~BorderFactory.createEmptyBorder(int,int,int,int):javax.swing.border.Border" resolve="createEmptyBorder" />
+                    <node concept="3cmrfG" id="2WGiVMa6Yw8" role="37wK5m">
+                      <property role="3cmrfH" value="4" />
+                    </node>
+                    <node concept="3cmrfG" id="2WGiVMa6Ywg" role="37wK5m">
+                      <property role="3cmrfH" value="4" />
+                    </node>
+                    <node concept="3cmrfG" id="2WGiVMa6Ywq" role="37wK5m">
+                      <property role="3cmrfH" value="4" />
+                    </node>
+                    <node concept="3cmrfG" id="2WGiVMa6Yyf" role="37wK5m">
+                      <property role="3cmrfH" value="4" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -1069,24 +1100,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="i7Uxc2EEts" role="3cqZAp">
-          <node concept="2OqwBi" id="i7Uxc2EF_j" role="3clFbG">
-            <node concept="2OqwBi" id="i7Uxc2EEGL" role="2Oq$k0">
-              <node concept="2WthIp" id="i7Uxc2EEtq" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="i7Uxc2EF4q" role="2OqNvi">
-                <ref role="2WH_rO" node="5T3_DgT4AKp" resolve="component" />
-              </node>
-            </node>
-            <node concept="liA8E" id="i7Uxc2EIZ0" role="2OqNvi">
-              <ref role="37wK5l" to="dbrf:~JComponent.setBackground(java.awt.Color):void" resolve="setBackground" />
-              <node concept="10M0yZ" id="i7Uxc2EJhT" role="37wK5m">
-                <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                <ref role="3cqZAo" to="1t7x:~Color.BLUE" resolve="BLUE" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="i7Uxc2GVWL" role="3cqZAp" />
         <node concept="3clFbH" id="5T3_DgT4ARN" role="3cqZAp" />
         <node concept="3clFbF" id="5T3_DgT4ASb" role="3cqZAp">
           <node concept="37vLTI" id="5T3_DgT4ASc" role="3clFbG">
@@ -1113,44 +1126,6 @@
               <node concept="2WthIp" id="5T3_DgT4ASl" role="2Oq$k0" />
               <node concept="2BZ7hE" id="5T3_DgT4ASm" role="2OqNvi">
                 <ref role="2WH_rO" node="5T3_DgT4AKs" resolve="scrollPane" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="i7Uxc2EKbe" role="3cqZAp">
-          <node concept="2OqwBi" id="i7Uxc2EL_B" role="3clFbG">
-            <node concept="2OqwBi" id="i7Uxc2EKr1" role="2Oq$k0">
-              <node concept="2WthIp" id="i7Uxc2EKbc" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="i7Uxc2EL43" role="2OqNvi">
-                <ref role="2WH_rO" node="5T3_DgT4AKs" resolve="scrollPane" />
-              </node>
-            </node>
-            <node concept="liA8E" id="i7Uxc2EPlx" role="2OqNvi">
-              <ref role="37wK5l" to="dbrf:~JComponent.setBackground(java.awt.Color):void" resolve="setBackground" />
-              <node concept="10M0yZ" id="i7Uxc2EPCP" role="37wK5m">
-                <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                <ref role="3cqZAo" to="1t7x:~Color.GREEN" resolve="GREEN" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="i7Uxc2FG9m" role="3cqZAp">
-          <node concept="2OqwBi" id="i7Uxc2FHkm" role="3clFbG">
-            <node concept="2OqwBi" id="i7Uxc2FGpI" role="2Oq$k0">
-              <node concept="2WthIp" id="i7Uxc2FG9k" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="i7Uxc2FGMs" role="2OqNvi">
-                <ref role="2WH_rO" node="5T3_DgT4AKs" resolve="scrollPane" />
-              </node>
-            </node>
-            <node concept="liA8E" id="i7Uxc2FL6e" role="2OqNvi">
-              <ref role="37wK5l" to="dbrf:~JComponent.setBorder(javax.swing.border.Border):void" resolve="setBorder" />
-              <node concept="2YIFZM" id="i7Uxc2FLHO" role="37wK5m">
-                <ref role="37wK5l" to="dbrf:~BorderFactory.createLineBorder(java.awt.Color):javax.swing.border.Border" resolve="createLineBorder" />
-                <ref role="1Pybhc" to="dbrf:~BorderFactory" resolve="BorderFactory" />
-                <node concept="10M0yZ" id="i7Uxc2FM1_" role="37wK5m">
-                  <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                  <ref role="3cqZAo" to="1t7x:~Color.cyan" resolve="cyan" />
-                </node>
               </node>
             </node>
           </node>
