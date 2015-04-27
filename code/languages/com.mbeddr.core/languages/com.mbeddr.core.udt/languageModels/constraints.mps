@@ -618,7 +618,7 @@
   </node>
   <node concept="1M2fIO" id="5nhrDHCgX5q">
     <property role="3GE5qa" value="types" />
-    <ref role="1M2myG" to="clbe:5nhrDHCgX5n" resolve="UnsignedBitType" />
+    <ref role="1M2myG" to="clbe:2H3Yrqdbnnx" resolve="AbstractBitType" />
     <node concept="nKS2y" id="3VlwR$fObJe" role="1MLUbF">
       <node concept="3clFbS" id="3VlwR$fObJf" role="2VODD2">
         <node concept="3clFbF" id="3VlwR$fOc0q" role="3cqZAp">

@@ -547,5 +547,11 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="34uiID1td4_">
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="SignedBitType" />
+    <property role="34LRSv" value="bit" />
+    <ref role="1TJDcQ" node="2H3Yrqdbnnx" resolve="AbstractBitType" />
+  </node>
 </model>
 
