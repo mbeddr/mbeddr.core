@@ -665,6 +665,12 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="i7Uxc2RFnp" role="3cqZAp">
+          <node concept="2YIFZM" id="i7Uxc2RNQK" role="3clFbG">
+            <ref role="37wK5l" to="fiq3:i7Uxc2RI5v" resolve="reloadAllInstances" />
+            <ref role="1Pybhc" to="fiq3:7TgUh0gP9oA" resolve="ContextSidebarManager" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="20X7yG" id="7TgUh0gUr21" role="20X7yP">
@@ -675,6 +681,12 @@
             <node concept="20Xmnt" id="7TgUh0gUrbZ" role="37vLTJ">
               <ref role="20Xmns" node="7TgUh0gUq$J" resolve="contextSection" />
             </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="i7Uxc2RNR2" role="3cqZAp">
+          <node concept="2YIFZM" id="i7Uxc2RNR3" role="3clFbG">
+            <ref role="37wK5l" to="fiq3:i7Uxc2RI5v" resolve="reloadAllInstances" />
+            <ref role="1Pybhc" to="fiq3:7TgUh0gP9oA" resolve="ContextSidebarManager" />
           </node>
         </node>
       </node>
