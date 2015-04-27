@@ -148,6 +148,7 @@
         <property id="4297162197620978190" name="parallel" index="1wNuhe" />
         <property id="4297162197620978193" name="parallelThreads" index="1wNuhh" />
         <property id="4297162197621031140" name="inplace" index="1wOHq$" />
+        <property id="6535001758416941941" name="createStaticRefs" index="3Ej$Sc" />
       </concept>
       <concept id="5507251971038816436" name="jetbrains.mps.build.mps.structure.BuildMps_Generator" flags="ng" index="1yeLz9" />
       <concept id="4278635856200826393" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyJar" flags="ng" index="1BurEX">
@@ -200,6 +201,7 @@
       <property role="1wNuhe" value="true" />
       <property role="1wNuhh" value="4" />
       <property role="1wOHq$" value="true" />
+      <property role="3Ej$Sc" value="true" />
     </node>
     <node concept="m$_wf" id="7uZw0yZ2_Jq" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.mpsutil" />
@@ -3648,11 +3650,6 @@
         <property role="TrG5h" value="com.mbeddr.mpsutil.review.annotation" />
         <property role="3LESm3" value="7a060fae-09e0-4372-be36-6696d6554c0e" />
         <property role="2GAjPV" value="false" />
-        <node concept="1yeLz9" id="63H5h9fN1U$" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.mpsutil.review.annotation#8455208232410315500" />
-          <property role="3LESm3" value="5d4cc688-63a8-4f95-aa0c-9d6d1a58cf75" />
-          <property role="2GAjPV" value="false" />
-        </node>
         <node concept="398BVA" id="3cilTAC1n_W" role="3LF7KH">
           <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
           <node concept="2Ry0Ak" id="3cilTAC1nA0" role="iGT6I">
@@ -3680,9 +3677,6 @@
         <node concept="1E0d5M" id="3cilTAC1nA9" role="1E1XAP">
           <ref role="1E0d5P" node="1qdZ14g6b3j" resolve="com.mbeddr.mpsutil.margincell.runtime" />
         </node>
-        <node concept="1E0d5M" id="48QV5n8dmnQ" role="1E1XAP">
-          <ref role="1E0d5P" node="3cilTAC1ls6" resolve="com.mbeddr.mpsutil.review.runtime" />
-        </node>
         <node concept="1SiIV0" id="3cilTAC4B_C" role="3bR37C">
           <node concept="3bR9La" id="3cilTAC4B_D" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -3699,6 +3693,14 @@
           <node concept="1Busua" id="3cilTAC4B_H" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
+        </node>
+        <node concept="1yeLz9" id="63H5h9fN1U$" role="1TViLv">
+          <property role="TrG5h" value="com.mbeddr.mpsutil.review.annotation#8455208232410315500" />
+          <property role="3LESm3" value="5d4cc688-63a8-4f95-aa0c-9d6d1a58cf75" />
+          <property role="2GAjPV" value="false" />
+        </node>
+        <node concept="1E0d5M" id="48QV5n8dmnQ" role="1E1XAP">
+          <ref role="1E0d5P" node="3cilTAC1ls6" resolve="com.mbeddr.mpsutil.review.runtime" />
         </node>
       </node>
       <node concept="1E1JtD" id="3cilTAC1nRi" role="2G$12L">
@@ -6073,6 +6075,12 @@
               <ref role="3bR37D" node="2N1CSrzsvbI" resolve="com.mbeddr.mpsutil.nodeaccess" />
             </node>
           </node>
+          <node concept="1SiIV0" id="2xZVCi_vD94" role="3bR37C">
+            <node concept="3bR9La" id="2xZVCi_vD95" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="90a9:31bAEZ0srt5" resolve="org.apache.commons" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="5WirkMxdR45" role="3bR37C">
           <node concept="1Busua" id="5WirkMxdR46" role="1SiIV1">
@@ -7420,6 +7428,7 @@
       <property role="1wNuhe" value="true" />
       <property role="1wNuhh" value="4" />
       <property role="1wOHq$" value="true" />
+      <property role="3Ej$Sc" value="true" />
     </node>
     <node concept="398rNT" id="7eF9rfAnzTR" role="1l3spd">
       <property role="TrG5h" value="mps.home" />

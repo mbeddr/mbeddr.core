@@ -754,5 +754,90 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="3AX70SQiM3t">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <ref role="1XX52x" to="hj5x:3AX70SQiKF$" resolve="DeadCodeAnalysis" />
+    <node concept="3EZMnI" id="3AX70SQiMax" role="2wV5jI">
+      <node concept="3EZMnI" id="3AX70SQiMay" role="3EZMnx">
+        <node concept="PMmxH" id="3AX70SQiMaz" role="3EZMnx">
+          <ref role="PMmxG" to="b4h4:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
+        </node>
+        <node concept="VPM3Z" id="3AX70SQiMa$" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="l2Vlx" id="3AX70SQiMa_" role="2iSdaV" />
+        <node concept="3F0ifn" id="3AX70SQiMaA" role="3EZMnx">
+          <property role="3F0ifm" value="Dead Code Analysis" />
+        </node>
+        <node concept="3F0ifn" id="3AX70SQiMaB" role="3EZMnx">
+          <property role="3F0ifm" value="-&gt;" />
+        </node>
+        <node concept="1iCGBv" id="3AX70SQiMaC" role="3EZMnx">
+          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" />
+          <node concept="1sVBvm" id="3AX70SQiMaD" role="1sWHZn">
+            <node concept="3F0A7n" id="3AX70SQiMaE" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="3AX70SQiMaF" role="2iSdaV" />
+      <node concept="gc7cB" id="3AX70SQiMaG" role="3EZMnx">
+        <node concept="3VJUX4" id="3AX70SQiMaH" role="3YsKMw">
+          <node concept="3clFbS" id="3AX70SQiMaI" role="2VODD2">
+            <node concept="3clFbF" id="3AX70SQiMaJ" role="3cqZAp">
+              <node concept="2ShNRf" id="3AX70SQiMaK" role="3clFbG">
+                <node concept="1pGfFk" id="3AX70SQiMaL" role="2ShVmc">
+                  <ref role="37wK5l" to="r4b4:5gTlpakv6nY" resolve="HorizLineCell" />
+                  <node concept="pncrf" id="3AX70SQiMaM" role="37wK5m" />
+                  <node concept="10M0yZ" id="3AX70SQiMaN" role="37wK5m">
+                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="1t7x:~Color.gray" resolve="gray" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="3AX70SQiMaO" role="3EZMnx">
+        <property role="S$Qs1" value="true" />
+        <node concept="VPM3Z" id="3AX70SQiMaP" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="PMmxH" id="3AX70SQiMaQ" role="3EZMnx">
+          <ref role="PMmxG" to="b4h4:56VLVOUm_Oq" resolve="TimeoutSettings" />
+        </node>
+        <node concept="PMmxH" id="3AX70SQiMaR" role="3EZMnx">
+          <ref role="PMmxG" to="b4h4:fjZ33TpCB9" resolve="CBMCSpecificSettings" />
+        </node>
+        <node concept="2iRkQZ" id="3AX70SQiMaS" role="2iSdaV" />
+      </node>
+    </node>
+    <node concept="3EZMnI" id="3AX70SQiMRs" role="6VMZX">
+      <node concept="2iRkQZ" id="3AX70SQiMRt" role="2iSdaV" />
+      <node concept="3EZMnI" id="3AX70SQiMRu" role="3EZMnx">
+        <node concept="VPM3Z" id="3AX70SQiMRv" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="3AX70SQiMRw" role="3EZMnx">
+          <property role="3F0ifm" value="Summary:" />
+        </node>
+        <node concept="3F0ifn" id="3AX70SQiMRx" role="3EZMnx">
+          <property role="3F0ifm" value="check existence of dead code from the entry-point." />
+          <node concept="Vb9p2" id="3AX70SQiMRy" role="3F10Kt" />
+        </node>
+        <node concept="l2Vlx" id="3AX70SQiMRz" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="3AX70SQiMR$" role="3EZMnx" />
+      <node concept="PMmxH" id="3AX70SQiMR_" role="3EZMnx">
+        <ref role="PMmxG" to="b4h4:3SmHfhIZc__" resolve="TimeoutSettingsDoc" />
+      </node>
+      <node concept="PMmxH" id="3AX70SQiMRA" role="3EZMnx">
+        <ref role="PMmxG" to="b4h4:3SmHfhJ39aB" resolve="CBMCSpecificSettingsDoc" />
+      </node>
+    </node>
+  </node>
 </model>
 

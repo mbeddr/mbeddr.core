@@ -10,6 +10,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core-extended" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.buildconfig/solution/pluginSolution/com.mbddr.core.buildconfig.pluginSolution.msd" folder="core-extended.solutions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.buildvalidation/com.mbeddr.mpsutil.buildvalidation.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.checks/com.mbeddr.core.checks.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.cinterpreter/com.mbeddr.core.cinterpreter.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.dataflow.test/com.mbeddr.core.dataflow.test.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.dependencies/com.mbeddr.core.dependencies.msd" folder="core.solutions" />
@@ -37,9 +38,12 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.interpreterdebugger.rt/com.mbeddr.core.interpreterdebugger.rt.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.stdlib/com.mbeddr.core.stdlib.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/tests/aLibrary/aLibrary.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.uniquenames.sandbox/com.mbeddr.mpsutil.uniquenames.msd" folder="tests.uniquenames" />
+      <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.uniquenames.sandboxlang/com.mbeddr.mpsutil.uniquenames.sandboxlang.mpl" folder="tests.uniquenames" />
       <modulePath path="$PROJECT_DIR$/tests/test.editor.core/test.editor.core.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.core/core.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.errorreporting/errorreporting.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.core.checks/test.ts.core.checks.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core.dataflow/dataflow.msd" folder="tests.dataflow" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core.extended/test.ts.core.extended.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core.performance/test.ts.core.performance.msd" folder="tests" />

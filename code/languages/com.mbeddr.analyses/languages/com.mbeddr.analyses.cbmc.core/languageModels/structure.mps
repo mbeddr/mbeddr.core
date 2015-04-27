@@ -133,5 +133,11 @@
       </node>
     </node>
   </node>
+  <node concept="1TIwiD" id="3AX70SQiKF$">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="DeadCodeAnalysis" />
+    <property role="34LRSv" value="Dead Code Analysis" />
+    <ref role="1TJDcQ" to="q5q6:7Bqs07i8Hdj" resolve="CProverBasedMbeddrAnalysis" />
+  </node>
 </model>
 

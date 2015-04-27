@@ -188,9 +188,6 @@
         <node concept="3F0A7n" id="86yKXFIDiG" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
-        <node concept="3F0ifn" id="86yKXFIDsX" role="3EZMnx">
-          <property role="3F0ifm" value="{" />
-        </node>
       </node>
       <node concept="3F0ifn" id="X7OD3Wxcmi" role="3EZMnx" />
       <node concept="3EZMnI" id="X7OD3WxcMN" role="3EZMnx">
@@ -286,9 +283,6 @@
             </node>
           </node>
         </node>
-      </node>
-      <node concept="3F0ifn" id="86yKXFIDtb" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
       </node>
     </node>
   </node>
