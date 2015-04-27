@@ -24,7 +24,6 @@
     <import index="sn11" ref="r:836426ab-a6f4-4fa3-9a9c-34c02ed6ab5d(jetbrains.mps.ide.icons)" />
     <import index="pt5l" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.project(MPS.Platform/jetbrains.mps.ide.project@java_stub)" />
     <import index="b2mh" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.project(MPS.IDEA/com.intellij.openapi.project@java_stub)" />
-    <import index="18oi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.beans(JDK/java.beans@java_stub)" />
     <import index="8q6x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.event(JDK/java.awt.event@java_stub)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
@@ -1114,9 +1113,6 @@
                     <node concept="3Tm1VV" id="i7Uxc2KogB" role="1B3o_S" />
                     <node concept="3uibUv" id="i7Uxc2KogD" role="3clF45">
                       <ref role="3uigEE" to="1t7x:~Dimension" resolve="Dimension" />
-                    </node>
-                    <node concept="2AHcQZ" id="i7Uxc2KogE" role="2AJF6D">
-                      <ref role="2AI5Lk" to="18oi:~Transient" resolve="Transient" />
                     </node>
                     <node concept="3clFbS" id="i7Uxc2KogI" role="3clF47">
                       <node concept="3cpWs8" id="i7Uxc2KtT0" role="3cqZAp">
