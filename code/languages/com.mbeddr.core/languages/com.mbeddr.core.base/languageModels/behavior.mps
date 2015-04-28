@@ -8084,6 +8084,16 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="3xqp6yeWGLu" role="13h7CS">
+      <property role="TrG5h" value="getCompanionFileOrFolderPicker" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="3xqp6yeWGLv" role="1B3o_S" />
+      <node concept="3clFbS" id="3xqp6yeWGLw" role="3clF47" />
+      <node concept="3Tqbb2" id="3xqp6yeWTbp" role="3clF45">
+        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+      </node>
+    </node>
     <node concept="13hLZK" id="5lKnBeAtTjs" role="13h7CW">
       <node concept="3clFbS" id="5lKnBeAtTjt" role="2VODD2">
         <node concept="3clFbF" id="2mxBqli8PwI" role="3cqZAp">
@@ -8203,6 +8213,56 @@
       </node>
       <node concept="10P_77" id="48DzgHgr38l" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="3xqp6yeXe6P" role="13h7CS">
+      <property role="TrG5h" value="getCompanionFileOrFolderPicker" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="3xqp6yeWGLu" resolve="getCompanionFileOrFolderPicker" />
+      <node concept="3Tm1VV" id="3xqp6yeXe6Q" role="1B3o_S" />
+      <node concept="3clFbS" id="3xqp6yeXe6R" role="3clF47">
+        <node concept="3cpWs8" id="3xqp6yeXe6S" role="3cqZAp">
+          <node concept="3cpWsn" id="3xqp6yeXe6T" role="3cpWs9">
+            <property role="TrG5h" value="node" />
+            <node concept="3Tqbb2" id="3xqp6yeXe6U" role="1tU5fm">
+              <ref role="ehGHo" to="vs0r:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker" />
+            </node>
+            <node concept="2ShNRf" id="3xqp6yeXe6V" role="33vP2m">
+              <node concept="3zrR0B" id="3xqp6yeXe6W" role="2ShVmc">
+                <node concept="3Tqbb2" id="3xqp6yeXe6X" role="3zrR0E">
+                  <ref role="ehGHo" to="vs0r:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3xqp6yeXe6Y" role="3cqZAp">
+          <node concept="37vLTI" id="3xqp6yeXe6Z" role="3clFbG">
+            <node concept="2OqwBi" id="3xqp6yeXe70" role="37vLTx">
+              <node concept="13iPFW" id="3xqp6yeXe71" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3xqp6yeXe72" role="2OqNvi">
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3xqp6yeXe73" role="37vLTJ">
+              <node concept="37vLTw" id="3xqp6yeXe74" role="2Oq$k0">
+                <ref role="3cqZAo" node="3xqp6yeXe6T" resolve="node" />
+              </node>
+              <node concept="3TrcHB" id="3xqp6yeXe75" role="2OqNvi">
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3xqp6yeXe76" role="3cqZAp">
+          <node concept="37vLTw" id="3xqp6yeXe77" role="3clFbG">
+            <ref role="3cqZAo" node="3xqp6yeXe6T" resolve="node" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3xqp6yeXe78" role="3clF45">
+        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="2iGZqsHuRUA">
     <property role="3GE5qa" value="pathAndFile" />
@@ -8286,6 +8346,56 @@
       </node>
       <node concept="10P_77" id="2iGZqsHuSsL" role="3clF45" />
       <node concept="3Tm1VV" id="2iGZqsHuSsM" role="1B3o_S" />
+    </node>
+    <node concept="13i0hz" id="3xqp6yeXdUV" role="13h7CS">
+      <property role="TrG5h" value="getCompanionFileOrFolderPicker" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="3xqp6yeWGLu" resolve="getCompanionFileOrFolderPicker" />
+      <node concept="3Tm1VV" id="3xqp6yeXdUW" role="1B3o_S" />
+      <node concept="3clFbS" id="3xqp6yeXdUX" role="3clF47">
+        <node concept="3cpWs8" id="3xqp6yeXdUY" role="3cqZAp">
+          <node concept="3cpWsn" id="3xqp6yeXdUZ" role="3cpWs9">
+            <property role="TrG5h" value="node" />
+            <node concept="3Tqbb2" id="3xqp6yeXdV0" role="1tU5fm">
+              <ref role="ehGHo" to="vs0r:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
+            </node>
+            <node concept="2ShNRf" id="3xqp6yeXdV1" role="33vP2m">
+              <node concept="3zrR0B" id="3xqp6yeXdV2" role="2ShVmc">
+                <node concept="3Tqbb2" id="3xqp6yeXdV3" role="3zrR0E">
+                  <ref role="ehGHo" to="vs0r:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3xqp6yeXdV4" role="3cqZAp">
+          <node concept="37vLTI" id="3xqp6yeXdV5" role="3clFbG">
+            <node concept="2OqwBi" id="3xqp6yeXdV6" role="37vLTx">
+              <node concept="13iPFW" id="3xqp6yeXdV7" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3xqp6yeXdV8" role="2OqNvi">
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3xqp6yeXdV9" role="37vLTJ">
+              <node concept="37vLTw" id="3xqp6yeXdVa" role="2Oq$k0">
+                <ref role="3cqZAo" node="3xqp6yeXdUZ" resolve="node" />
+              </node>
+              <node concept="3TrcHB" id="3xqp6yeXdVb" role="2OqNvi">
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3xqp6yeXdVc" role="3cqZAp">
+          <node concept="37vLTw" id="3xqp6yeXdVd" role="3clFbG">
+            <ref role="3cqZAo" node="3xqp6yeXdUZ" resolve="node" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3xqp6yeXdVe" role="3clF45">
+        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+      </node>
     </node>
     <node concept="13hLZK" id="2iGZqsHuRUB" role="13h7CW">
       <node concept="3clFbS" id="2iGZqsHuRUC" role="2VODD2" />
@@ -13885,6 +13995,56 @@
         </node>
       </node>
       <node concept="10P_77" id="7c_RIoB8IKN" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="3xqp6yeXdvJ" role="13h7CS">
+      <property role="TrG5h" value="getCompanionFileOrFolderPicker" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="3xqp6yeWGLu" resolve="getCompanionFileOrFolderPicker" />
+      <node concept="3Tm1VV" id="3xqp6yeXdvK" role="1B3o_S" />
+      <node concept="3clFbS" id="3xqp6yeXdvL" role="3clF47">
+        <node concept="3cpWs8" id="3xqp6yeXdvM" role="3cqZAp">
+          <node concept="3cpWsn" id="3xqp6yeXdvN" role="3cpWs9">
+            <property role="TrG5h" value="node" />
+            <node concept="3Tqbb2" id="3xqp6yeXdvO" role="1tU5fm">
+              <ref role="ehGHo" to="vs0r:4eXJ6EO9ZKx" resolve="MacroFolderPicker" />
+            </node>
+            <node concept="2ShNRf" id="3xqp6yeXdvP" role="33vP2m">
+              <node concept="3zrR0B" id="3xqp6yeXdvQ" role="2ShVmc">
+                <node concept="3Tqbb2" id="3xqp6yeXdvR" role="3zrR0E">
+                  <ref role="ehGHo" to="vs0r:4eXJ6EO9ZKx" resolve="MacroFolderPicker" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3xqp6yeXdvS" role="3cqZAp">
+          <node concept="37vLTI" id="3xqp6yeXdvT" role="3clFbG">
+            <node concept="2OqwBi" id="3xqp6yeXdvU" role="37vLTx">
+              <node concept="13iPFW" id="3xqp6yeXdvV" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3xqp6yeXdvW" role="2OqNvi">
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3xqp6yeXdvX" role="37vLTJ">
+              <node concept="37vLTw" id="3xqp6yeXdvY" role="2Oq$k0">
+                <ref role="3cqZAo" node="3xqp6yeXdvN" resolve="node" />
+              </node>
+              <node concept="3TrcHB" id="3xqp6yeXdvZ" role="2OqNvi">
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3xqp6yeXdw0" role="3cqZAp">
+          <node concept="37vLTw" id="3xqp6yeXdw1" role="3clFbG">
+            <ref role="3cqZAo" node="3xqp6yeXdvN" resolve="node" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3xqp6yeXdw2" role="3clF45">
+        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+      </node>
     </node>
   </node>
   <node concept="3HP615" id="6brIh612wMW">
@@ -20580,6 +20740,56 @@
       </node>
       <node concept="10P_77" id="4eXJ6EOa6DJ" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="3xqp6yeXdHN" role="13h7CS">
+      <property role="TrG5h" value="getCompanionFileOrFolderPicker" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="3xqp6yeWGLu" resolve="getCompanionFileOrFolderPicker" />
+      <node concept="3Tm1VV" id="3xqp6yeXdHO" role="1B3o_S" />
+      <node concept="3clFbS" id="3xqp6yeXdHP" role="3clF47">
+        <node concept="3cpWs8" id="3xqp6yeXdHQ" role="3cqZAp">
+          <node concept="3cpWsn" id="3xqp6yeXdHR" role="3cpWs9">
+            <property role="TrG5h" value="node" />
+            <node concept="3Tqbb2" id="3xqp6yeXdHS" role="1tU5fm">
+              <ref role="ehGHo" to="vs0r:7c_RIoB8H2I" resolve="MacroFilePicker" />
+            </node>
+            <node concept="2ShNRf" id="3xqp6yeXdHT" role="33vP2m">
+              <node concept="3zrR0B" id="3xqp6yeXdHU" role="2ShVmc">
+                <node concept="3Tqbb2" id="3xqp6yeXdHV" role="3zrR0E">
+                  <ref role="ehGHo" to="vs0r:7c_RIoB8H2I" resolve="MacroFilePicker" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3xqp6yeXdHW" role="3cqZAp">
+          <node concept="37vLTI" id="3xqp6yeXdHX" role="3clFbG">
+            <node concept="2OqwBi" id="3xqp6yeXdHY" role="37vLTx">
+              <node concept="13iPFW" id="3xqp6yeXdHZ" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3xqp6yeXdI0" role="2OqNvi">
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3xqp6yeXdI1" role="37vLTJ">
+              <node concept="37vLTw" id="3xqp6yeXdI2" role="2Oq$k0">
+                <ref role="3cqZAo" node="3xqp6yeXdHR" resolve="node" />
+              </node>
+              <node concept="3TrcHB" id="3xqp6yeXdI3" role="2OqNvi">
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3xqp6yeXdI4" role="3cqZAp">
+          <node concept="37vLTw" id="3xqp6yeXdI5" role="3clFbG">
+            <ref role="3cqZAo" node="3xqp6yeXdHR" resolve="node" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3xqp6yeXdI6" role="3clF45">
+        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="4eXJ6EOwIHS">
     <property role="3GE5qa" value="pathAndFile" />
@@ -20657,6 +20867,56 @@
         </node>
       </node>
       <node concept="10P_77" id="4eXJ6EOwIJI" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="3xqp6yeWTbP" role="13h7CS">
+      <property role="TrG5h" value="getCompanionFileOrFolderPicker" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="3xqp6yeWGLu" resolve="getCompanionFileOrFolderPicker" />
+      <node concept="3Tm1VV" id="3xqp6yeWTbQ" role="1B3o_S" />
+      <node concept="3clFbS" id="3xqp6yeWTbT" role="3clF47">
+        <node concept="3cpWs8" id="3xqp6yeXcfA" role="3cqZAp">
+          <node concept="3cpWsn" id="3xqp6yeXcfB" role="3cpWs9">
+            <property role="TrG5h" value="node" />
+            <node concept="3Tqbb2" id="3xqp6yeXcf$" role="1tU5fm">
+              <ref role="ehGHo" to="vs0r:1jw2PJJHS3i" resolve="FileSystemFilePicker" />
+            </node>
+            <node concept="2ShNRf" id="3xqp6yeXcfC" role="33vP2m">
+              <node concept="3zrR0B" id="3xqp6yeXcfD" role="2ShVmc">
+                <node concept="3Tqbb2" id="3xqp6yeXcfE" role="3zrR0E">
+                  <ref role="ehGHo" to="vs0r:1jw2PJJHS3i" resolve="FileSystemFilePicker" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3xqp6yeXcgV" role="3cqZAp">
+          <node concept="37vLTI" id="3xqp6yeXcLy" role="3clFbG">
+            <node concept="2OqwBi" id="3xqp6yeXcP4" role="37vLTx">
+              <node concept="13iPFW" id="3xqp6yeXcMj" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3xqp6yeXdc$" role="2OqNvi">
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3xqp6yeXckN" role="37vLTJ">
+              <node concept="37vLTw" id="3xqp6yeXcgT" role="2Oq$k0">
+                <ref role="3cqZAo" node="3xqp6yeXcfB" resolve="node" />
+              </node>
+              <node concept="3TrcHB" id="3xqp6yeXcwj" role="2OqNvi">
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3xqp6yeWTeQ" role="3cqZAp">
+          <node concept="37vLTw" id="3xqp6yeXcfF" role="3clFbG">
+            <ref role="3cqZAo" node="3xqp6yeXcfB" resolve="node" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3xqp6yeWTbU" role="3clF45">
+        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="1jw2PJJHS3j">
@@ -20781,6 +21041,56 @@
         </node>
       </node>
       <node concept="10P_77" id="1jw2PJJHWxR" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="3xqp6yeXdkQ" role="13h7CS">
+      <property role="TrG5h" value="getCompanionFileOrFolderPicker" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="3xqp6yeWGLu" resolve="getCompanionFileOrFolderPicker" />
+      <node concept="3Tm1VV" id="3xqp6yeXdkR" role="1B3o_S" />
+      <node concept="3clFbS" id="3xqp6yeXdkS" role="3clF47">
+        <node concept="3cpWs8" id="3xqp6yeXdkT" role="3cqZAp">
+          <node concept="3cpWsn" id="3xqp6yeXdkU" role="3cpWs9">
+            <property role="TrG5h" value="node" />
+            <node concept="3Tqbb2" id="3xqp6yeXdkV" role="1tU5fm">
+              <ref role="ehGHo" to="vs0r:4eXJ6EOwIAn" resolve="FileSystemDirPicker" />
+            </node>
+            <node concept="2ShNRf" id="3xqp6yeXdkW" role="33vP2m">
+              <node concept="3zrR0B" id="3xqp6yeXdkX" role="2ShVmc">
+                <node concept="3Tqbb2" id="3xqp6yeXdkY" role="3zrR0E">
+                  <ref role="ehGHo" to="vs0r:4eXJ6EOwIAn" resolve="FileSystemDirPicker" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3xqp6yeXdkZ" role="3cqZAp">
+          <node concept="37vLTI" id="3xqp6yeXdl0" role="3clFbG">
+            <node concept="2OqwBi" id="3xqp6yeXdl1" role="37vLTx">
+              <node concept="13iPFW" id="3xqp6yeXdl2" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3xqp6yeXdl3" role="2OqNvi">
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3xqp6yeXdl4" role="37vLTJ">
+              <node concept="37vLTw" id="3xqp6yeXdl5" role="2Oq$k0">
+                <ref role="3cqZAo" node="3xqp6yeXdkU" resolve="node" />
+              </node>
+              <node concept="3TrcHB" id="3xqp6yeXdl6" role="2OqNvi">
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3xqp6yeXdl7" role="3cqZAp">
+          <node concept="37vLTw" id="3xqp6yeXdl8" role="3clFbG">
+            <ref role="3cqZAo" node="3xqp6yeXdkU" resolve="node" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3xqp6yeXdl9" role="3clF45">
+        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+      </node>
     </node>
     <node concept="13hLZK" id="1jw2PJJHS3k" role="13h7CW">
       <node concept="3clFbS" id="1jw2PJJHS3l" role="2VODD2" />
