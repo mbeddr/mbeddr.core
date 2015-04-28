@@ -21,7 +21,7 @@
     <import index="mv2y" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cellLayout(MPS.Editor/jetbrains.mps.nodeEditor.cellLayout@java_stub)" />
     <import index="y596" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.selection(MPS.Editor/jetbrains.mps.openapi.editor.selection@java_stub)" />
     <import index="tpcb" ref="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" />
-    <import index="1p1s" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps(MPS.Core/jetbrains.mps@java_stub)" />
+    <import index="1p1s" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps(jetbrains.mps@java_stub)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -295,13 +295,6 @@
           </node>
           <node concept="3clFbH" id="3JErwPFIF3Q" role="3cqZAp" />
           <node concept="3clFbJ" id="3JErwPFIF3R" role="3cqZAp">
-            <node concept="3clFbS" id="3JErwPFIF3S" role="3clFbx">
-              <node concept="3cpWs6" id="3JErwPFIF3T" role="3cqZAp">
-                <node concept="37vLTw" id="3JErwPFIF3U" role="3cqZAk">
-                  <ref role="3cqZAo" node="3JErwPFIF3B" resolve="wrapped" />
-                </node>
-              </node>
-            </node>
             <node concept="22lmx$" id="263VI$g7NR5" role="3clFbw">
               <node concept="2YIFZM" id="263VI$g7S4W" role="3uHU7w">
                 <ref role="37wK5l" to="1p1s:~RuntimeFlags.isTestMode():boolean" resolve="isTestMode" />
@@ -333,6 +326,26 @@
                 <node concept="2YIFZM" id="2RawscbQDb6" role="3uHU7w">
                   <ref role="37wK5l" to="1p1s:~RuntimeFlags.isMergeDriverMode():boolean" resolve="isMergeDriverMode" />
                   <ref role="1Pybhc" to="1p1s:~RuntimeFlags" resolve="RuntimeFlags" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="3JErwPFIF3S" role="3clFbx">
+              <node concept="3clFbF" id="5wABxA4gZ41" role="3cqZAp">
+                <node concept="2OqwBi" id="5wABxA4h10a" role="3clFbG">
+                  <node concept="37vLTw" id="5wABxA4gZ3Z" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3JErwPFIF3B" resolve="wrapped" />
+                  </node>
+                  <node concept="liA8E" id="5wABxA4h2Ld" role="2OqNvi">
+                    <ref role="37wK5l" to="nu8v:~EditorCell.setBig(boolean):void" resolve="setBig" />
+                    <node concept="3clFbT" id="5wABxA4h2LX" role="37wK5m">
+                      <property role="3clFbU" value="true" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs6" id="3JErwPFIF3T" role="3cqZAp">
+                <node concept="37vLTw" id="3JErwPFIF3U" role="3cqZAk">
+                  <ref role="3cqZAo" node="3JErwPFIF3B" resolve="wrapped" />
                 </node>
               </node>
             </node>

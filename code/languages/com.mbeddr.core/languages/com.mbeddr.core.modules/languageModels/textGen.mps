@@ -1758,6 +1758,23 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="3clFbJ" id="1Iv4$fS2iP_" role="3cqZAp">
+          <node concept="3clFbS" id="1Iv4$fS2iPB" role="3clFbx">
+            <node concept="lc7rE" id="1Iv4$fS2ueg" role="3cqZAp">
+              <node concept="la8eA" id="1Iv4$fS2uev" role="lcghm">
+                <property role="lacIc" value=", ..." />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1Iv4$fS2jmW" role="3clFbw">
+            <node concept="117lpO" id="1Iv4$fS2iVY" role="2Oq$k0" />
+            <node concept="3TrcHB" id="1Iv4$fS2ucn" role="2OqNvi">
+              <ref role="3TsBF5" to="x27k:1Iv4$fS2caM" resolve="hasEllipsis" />
+            </node>
+          </node>
+        </node>
+        <node concept="lc7rE" id="1Iv4$fS2ulz" role="3cqZAp">
           <node concept="la8eA" id="5eg$WPOv4yx" role="lcghm">
             <property role="lacIc" value=")" />
           </node>
@@ -1945,6 +1962,114 @@
         <node concept="3SKdUt" id="5OiecUqLZjc" role="3cqZAp">
           <node concept="3SKdUq" id="5OiecUqLZjm" role="3SKWNk">
             <property role="3SKdUp" value="no text gen. Will be handled by specialized concepts in modules gen" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="UslQezBAi1">
+    <property role="3GE5qa" value="functions" />
+    <ref role="WuzLi" to="x27k:UslQezeAy2" resolve="VaEndStatement" />
+    <node concept="11bSqf" id="UslQezBAi2" role="11c4hB">
+      <node concept="3clFbS" id="UslQezBAi3" role="2VODD2">
+        <node concept="lc7rE" id="UslQezBAwE" role="3cqZAp">
+          <node concept="la8eA" id="UslQezBAwT" role="lcghm">
+            <property role="lacIc" value="va_end(" />
+          </node>
+          <node concept="l9hG8" id="UslQezBAVB" role="lcghm">
+            <node concept="2OqwBi" id="UslQezBB0L" role="lb14g">
+              <node concept="117lpO" id="UslQezBAWq" role="2Oq$k0" />
+              <node concept="3TrEf2" id="UslQezBBmP" role="2OqNvi">
+                <ref role="3Tt5mk" to="x27k:UslQezeAy3" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="UslQezBBws" role="lcghm">
+            <property role="lacIc" value=");" />
+          </node>
+          <node concept="l8MVK" id="UslQezBB$g" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="UslQezBBNb">
+    <property role="3GE5qa" value="functions" />
+    <ref role="WuzLi" to="x27k:UslQez5Sra" resolve="VaStartStatement" />
+    <node concept="11bSqf" id="UslQezBBNc" role="11c4hB">
+      <node concept="3clFbS" id="UslQezBBNd" role="2VODD2">
+        <node concept="lc7rE" id="UslQezBBNq" role="3cqZAp">
+          <node concept="la8eA" id="UslQezBBND" role="lcghm">
+            <property role="lacIc" value="va_start(" />
+          </node>
+          <node concept="l9hG8" id="UslQezBBOi" role="lcghm">
+            <node concept="2OqwBi" id="UslQezBC6w" role="lb14g">
+              <node concept="117lpO" id="UslQezBC2f" role="2Oq$k0" />
+              <node concept="3TrEf2" id="UslQezBCs$" role="2OqNvi">
+                <ref role="3Tt5mk" to="x27k:UslQez5Sre" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="UslQezBCwl" role="lcghm">
+            <property role="lacIc" value="," />
+          </node>
+          <node concept="l9hG8" id="UslQezBCLj" role="lcghm">
+            <node concept="2OqwBi" id="UslQezBCQX" role="lb14g">
+              <node concept="117lpO" id="UslQezBCMG" role="2Oq$k0" />
+              <node concept="3TrEf2" id="UslQezBDcX" role="2OqNvi">
+                <ref role="3Tt5mk" to="x27k:UslQez5Srb" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="UslQezBEh1" role="lcghm">
+            <property role="lacIc" value=");" />
+          </node>
+          <node concept="l8MVK" id="UslQezBEm3" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="UslQezBEoy">
+    <property role="3GE5qa" value="functions" />
+    <ref role="WuzLi" to="x27k:UslQeyoPRa" resolve="VariadicArgument" />
+    <node concept="11bSqf" id="UslQezBEoz" role="11c4hB">
+      <node concept="3clFbS" id="UslQezBEo$" role="2VODD2">
+        <node concept="lc7rE" id="UslQezBEoL" role="3cqZAp">
+          <node concept="la8eA" id="UslQezBEp0" role="lcghm">
+            <property role="lacIc" value="..." />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="1Iv4$fSuW4q">
+    <property role="3GE5qa" value="global" />
+    <ref role="WuzLi" to="x27k:1Iv4$fSedzp" resolve="HashOperator" />
+    <node concept="11bSqf" id="1Iv4$fSuW4r" role="11c4hB">
+      <node concept="3clFbS" id="1Iv4$fSuW4s" role="2VODD2">
+        <node concept="lc7rE" id="1Iv4$fSuW5$" role="3cqZAp">
+          <node concept="la8eA" id="1Iv4$fSuW5L" role="lcghm">
+            <property role="lacIc" value="#" />
+          </node>
+          <node concept="l9hG8" id="1Iv4$fSuW6g" role="lcghm">
+            <node concept="2OqwBi" id="1Iv4$fSuWa_" role="lb14g">
+              <node concept="117lpO" id="1Iv4$fSuW6W" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1Iv4$fSuWIz" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="1Iv4$fSveQH">
+    <property role="3GE5qa" value="global" />
+    <ref role="WuzLi" to="x27k:1Iv4$fSveL1" resolve="VaArgs" />
+    <node concept="11bSqf" id="1Iv4$fSveQI" role="11c4hB">
+      <node concept="3clFbS" id="1Iv4$fSveQJ" role="2VODD2">
+        <node concept="lc7rE" id="1Iv4$fSveQW" role="3cqZAp">
+          <node concept="la8eA" id="1Iv4$fSvfyD" role="lcghm">
+            <property role="lacIc" value="__VA_ARGS__" />
           </node>
         </node>
       </node>

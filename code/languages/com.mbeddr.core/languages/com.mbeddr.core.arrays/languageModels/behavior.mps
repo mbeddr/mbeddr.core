@@ -140,7 +140,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -2743,9 +2743,33 @@
             <ref role="3cqZAo" node="3$tYugdZtbM" resolve="pt" />
           </node>
         </node>
-        <node concept="3clFbH" id="54IGzzo9BgL" role="3cqZAp" />
-        <node concept="3clFbH" id="54IGzzo9xTE" role="3cqZAp" />
-        <node concept="3clFbH" id="54IGzzo9vOv" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="5Y5RBjHqwn9" role="13h7CS">
+      <property role="TrG5h" value="getSize" />
+      <node concept="3Tm1VV" id="5Y5RBjHqwna" role="1B3o_S" />
+      <node concept="3clFbS" id="5Y5RBjHqwnb" role="3clF47">
+        <node concept="3clFbF" id="5Y5RBjHqxoW" role="3cqZAp">
+          <node concept="10QFUN" id="5Y5RBjHqxoY" role="3clFbG">
+            <node concept="2OqwBi" id="5Y5RBjHqxoZ" role="10QFUP">
+              <node concept="2OqwBi" id="5Y5RBjHqxp0" role="2Oq$k0">
+                <node concept="13iPFW" id="5Y5RBjHqxp1" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5Y5RBjHqxp2" role="2OqNvi">
+                  <ref role="3Tt5mk" to="yq40:1gDNXlE1$cN" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="5Y5RBjHqxp3" role="2OqNvi">
+                <ref role="37wK5l" to="ywuz:6OxpEKG0KPv" resolve="evaluateStatically" />
+              </node>
+            </node>
+            <node concept="3uibUv" id="5Y5RBjHqxp4" role="10QFUM">
+              <ref role="3uigEE" to="epq1:~BigInteger" resolve="BigInteger" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="5Y5RBjHqxov" role="3clF45">
+        <ref role="3uigEE" to="epq1:~BigInteger" resolve="BigInteger" />
       </node>
     </node>
     <node concept="13i0hz" id="6o2p2Z0H4MX" role="13h7CS">
@@ -2794,8 +2818,9 @@
     <property role="3GE5qa" value="arrays" />
     <ref role="13h7C2" to="yq40:5sJgLFR$y$1" resolve="ArrayAccessExpr" />
     <node concept="13i0hz" id="Ug1QzfjnM6" role="13h7CS">
-      <property role="TrG5h" value="isIdempotent" />
-      <ref role="13i0hy" to="ywuz:Ug1Qzfjnwa" resolve="isIdempotent" />
+      <property role="TrG5h" value="isSideeffectFree" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" to="ywuz:6SENleF$SRD" resolve="isSideeffectFree" />
       <node concept="3clFbS" id="Ug1QzfjnM7" role="3clF47">
         <node concept="3clFbF" id="Ug1QzfjnMc" role="3cqZAp">
           <node concept="1Wc70l" id="Ug1QzfjnNr" role="3clFbG">
@@ -2806,8 +2831,8 @@
                   <ref role="3Tt5mk" to="yq40:5sJgLFR$y$3" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="Ug1QzfjnOl" role="2OqNvi">
-                <ref role="37wK5l" to="ywuz:Ug1Qzfjnwa" resolve="isIdempotent" />
+              <node concept="2qgKlT" id="7bk7NuGZiWm" role="2OqNvi">
+                <ref role="37wK5l" to="ywuz:6SENleF$SRD" resolve="isSideeffectFree" />
               </node>
             </node>
             <node concept="2OqwBi" id="Ug1QzfjnN1" role="3uHU7B">
@@ -2817,15 +2842,15 @@
                   <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="Ug1QzfjnN6" role="2OqNvi">
-                <ref role="37wK5l" to="ywuz:Ug1Qzfjnwa" resolve="isIdempotent" />
+              <node concept="2qgKlT" id="7bk7NuGZiEq" role="2OqNvi">
+                <ref role="37wK5l" to="ywuz:6SENleF$SRD" resolve="isSideeffectFree" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="Ug1QzfjnM9" role="3clF45" />
-      <node concept="3Tm1VV" id="Ug1QzfjnMa" role="1B3o_S" />
+      <node concept="10P_77" id="7bk7NuGYMnX" role="3clF45" />
+      <node concept="3Tm1VV" id="7bk7NuGYMnY" role="1B3o_S" />
     </node>
     <node concept="13i0hz" id="2JIP8cA02hB" role="13h7CS">
       <property role="TrG5h" value="renderReadable" />
@@ -3590,8 +3615,9 @@
   <node concept="13h7C7" id="Ug1QzfjnEz">
     <ref role="13h7C2" to="yq40:5Y8Bot$Kok_" resolve="SizeOfExprForExpressions" />
     <node concept="13i0hz" id="Ug1QzfjnxS" role="13h7CS">
-      <property role="TrG5h" value="isIdempotent" />
-      <ref role="13i0hy" to="ywuz:Ug1Qzfjnwa" resolve="isIdempotent" />
+      <property role="TrG5h" value="isSideeffectFree" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" to="ywuz:6SENleF$SRD" resolve="isSideeffectFree" />
       <node concept="3clFbS" id="Ug1QzfjnxV" role="3clF47">
         <node concept="3clFbF" id="Ug1QzfjnxY" role="3cqZAp">
           <node concept="2OqwBi" id="Ug1QzfjnFn" role="3clFbG">
@@ -3601,14 +3627,14 @@
                 <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
               </node>
             </node>
-            <node concept="2qgKlT" id="6jlhXWmiXai" role="2OqNvi">
-              <ref role="37wK5l" to="ywuz:Ug1Qzfjnwa" resolve="isIdempotent" />
+            <node concept="2qgKlT" id="7bk7NuGZcX_" role="2OqNvi">
+              <ref role="37wK5l" to="ywuz:6SENleF$SRD" resolve="isSideeffectFree" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="Ug1QzfjnxW" role="3clF45" />
-      <node concept="3Tm1VV" id="Ug1QzfjnxX" role="1B3o_S" />
+      <node concept="10P_77" id="7bk7NuGZd0a" role="3clF45" />
+      <node concept="3Tm1VV" id="7bk7NuGZd0b" role="1B3o_S" />
     </node>
     <node concept="13i0hz" id="oNdPWJGkMK" role="13h7CS">
       <property role="TrG5h" value="getPriolevel" />

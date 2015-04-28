@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="eab63a5c-a1ec-4a60-bf10-186e8e87585a/r:7c1a0a85-b145-4e22-84cc-f62b21528a6f(com.mbeddr.mpsutil.contextsidebar.sandbox/com.mbeddr.mpsutil.contextsidebar.sandbox.typesystem)">
+<model ref="ac6c3a51-6c4f-4aec-bcdc-0434f82190ec/r:694e7b95-28cc-46f1-9be6-941dd1303451(com.mbeddr.mpsutil.uniquenames.sandboxlang/com.mbeddr.mpsutil.uniquenames.sandboxlang.typesystem)">
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
