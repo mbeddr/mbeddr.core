@@ -672,25 +672,6 @@
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2N1CSrzstMA" role="3bR37C">
-          <node concept="1BurEX" id="2N1CSrzstMB" role="1SiIV1">
-            <node concept="398BVA" id="2N1CSrzstMp" role="1BurEY">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="2N1CSrzstMq" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="2N1CSrzstMr" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.serializer.xml" />
-                  <node concept="2Ry0Ak" id="2N1CSrzstMs" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="2N1CSrzstMt" role="2Ry0An">
-                      <property role="2Ry0Am" value="jdom-2.0.5.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="2N1CSrzstMR" role="3bR37C">
           <node concept="1BurEX" id="2N1CSrzstMS" role="1SiIV1">
             <node concept="398BVA" id="2N1CSrzstMC" role="1BurEY">
@@ -750,6 +731,25 @@
                       <node concept="2Ry0Ak" id="2N1CSrzstNf" role="2Ry0An">
                         <property role="2Ry0Am" value="xml-apis.jar" />
                       </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="z38uKXof4K" role="3bR37C">
+          <node concept="1BurEX" id="z38uKXof4L" role="1SiIV1">
+            <node concept="398BVA" id="z38uKXof4z" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="z38uKXof4$" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="z38uKXof4_" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.serializer.xml" />
+                  <node concept="2Ry0Ak" id="z38uKXof4A" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="z38uKXof4B" role="2Ry0An">
+                      <property role="2Ry0Am" value="jdom2-2.0.6.jar" />
                     </node>
                   </node>
                 </node>
