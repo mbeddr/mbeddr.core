@@ -191,9 +191,6 @@
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
-      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
-        <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -753,21 +750,16 @@
         </node>
         <node concept="aOSgY" id="46evrC8dXTR" role="3cqZAp">
           <node concept="aOSgX" id="46evrC8dYIS" role="aOSgK">
-            <ref role="aOSgM" to="q5q6:637qsduSbtp" resolve="Assert" />
+            <ref role="aOSgM" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
             <node concept="9aQIb" id="46evrC8dYIT" role="aOS0M">
               <node concept="3clFbS" id="46evrC8dYIU" role="9aQI4">
                 <node concept="3clFbF" id="46evrC8dZO1" role="3cqZAp">
                   <node concept="37vLTI" id="46evrC8dZTU" role="3clFbG">
                     <node concept="3cpWs3" id="46evrC8e00o" role="37vLTx">
-                      <node concept="2OqwBi" id="46evrC8e7d3" role="3uHU7w">
-                        <node concept="2OqwBi" id="46evrC8e0bE" role="2Oq$k0">
-                          <node concept="aMNgE" id="46evrC8e05z" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="46evrC8e6GT" role="2OqNvi">
-                            <ref role="3Tt5mk" to="q5q6:637qsduSbtq" />
-                          </node>
-                        </node>
-                        <node concept="2qgKlT" id="46evrC8e7zT" role="2OqNvi">
-                          <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+                      <node concept="2OqwBi" id="3V3CJZuzkUh" role="3uHU7w">
+                        <node concept="aMNgE" id="3V3CJZuzkHZ" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="3V3CJZuMT$q" role="2OqNvi">
+                          <ref role="37wK5l" to="th2u:3V3CJZuMSfi" resolve="getMessage" />
                         </node>
                       </node>
                       <node concept="Xl_RD" id="46evrC8dZUo" role="3uHU7B">
