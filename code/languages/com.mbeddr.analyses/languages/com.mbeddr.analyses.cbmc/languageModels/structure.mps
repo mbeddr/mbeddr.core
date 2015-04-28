@@ -448,5 +448,37 @@
       <ref role="PrY4T" node="7DvJ5MZ1ag1" resolve="IHarnessLike" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7DvJ5MZf4YH">
+    <property role="TrG5h" value="StubsConfiguration" />
+    <property role="34LRSv" value="stubs configuration" />
+    <property role="3GE5qa" value="stubbing" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7DvJ5MZf54t" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
+    </node>
+    <node concept="1TJgyj" id="7DvJ5MZf5jL" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="stubs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7DvJ5MZf5j_" resolve="SingleStubConfig" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7DvJ5MZf5j_">
+    <property role="TrG5h" value="SingleStubConfig" />
+    <property role="3GE5qa" value="stubbing" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7DvJ5MZf5jA" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="original" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="x27k:5_l8w1EmTvt" resolve="FunctionSignature" />
+    </node>
+    <node concept="1TJgyj" id="7DvJ5MZf5jE" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="stub" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="x27k:5_l8w1EmTvx" resolve="Function" />
+    </node>
+  </node>
 </model>
 
