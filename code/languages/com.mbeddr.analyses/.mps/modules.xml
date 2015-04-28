@@ -2,8 +2,6 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.dev.build/build.msd" folder="_build" />
-      <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.build/com.mbeddr.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.components/com.mbeddr.analyses.components.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.core/com.mbeddr.analyses.core.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.fm/fm.devkit" folder="sat4j" />
@@ -13,6 +11,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base.unittests/unittests.mpl" folder="base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base/base.mpl" folder="base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.components/com.mbeddr.analyses.cbmc.components.mpl" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.concurrency/com.mbeddr.analyses.cbmc.concurrency.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.core/com.mbeddr.analyses.cbmc.core.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.rt/rt.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.statemachines.experimental/com.mbeddr.analyses.cbmc.statemachines.experimental.mpl" folder="cbmc" />
@@ -49,6 +48,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.var/test.analyses.var.msd" folder="test.sat4j" />
       <modulePath path="$PROJECT_DIR$/tests/test.analysis.formsera/formsera.msd" folder="test.examples" />
       <modulePath path="$PROJECT_DIR$/tests/test.analysis.nfm/nfm.msd" folder="test.examples" />
+      <modulePath path="$PROJECT_DIR$/../../../../com.lmsintl.accent.toyota_itc_benchmark/com.lmsintl.accent.toyota_itc_benchmark/com.lmsintl.accent.toyota_itc_benchmark.msd" folder="" />
     </projectModules>
   </component>
 </project>

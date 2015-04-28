@@ -5965,10 +5965,7 @@
             <node concept="Xl_RD" id="4MEpx3I1dQG" role="3uHU7w">
               <property role="Xl_RC" value=")" />
             </node>
-            <node concept="3cpWs3" id="4MEpx3I1dQH" role="3uHU7B">
-              <node concept="Xl_RD" id="4MEpx3I1dQI" role="3uHU7B">
-                <property role="Xl_RC" value="int2enum(" />
-              </node>
+            <node concept="3cpWs3" id="21mI9DnwpHK" role="3uHU7B">
               <node concept="2OqwBi" id="4MEpx3I1dQJ" role="3uHU7w">
                 <node concept="2OqwBi" id="4MEpx3I1dQK" role="2Oq$k0">
                   <node concept="13iPFW" id="4MEpx3I1dQL" role="2Oq$k0" />
@@ -5978,6 +5975,32 @@
                 </node>
                 <node concept="2qgKlT" id="4MEpx3I1dQN" role="2OqNvi">
                   <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+                </node>
+              </node>
+              <node concept="3cpWs3" id="21mI9DnwLcW" role="3uHU7B">
+                <node concept="3cpWs3" id="4MEpx3I1dQH" role="3uHU7B">
+                  <node concept="Xl_RD" id="4MEpx3I1dQI" role="3uHU7B">
+                    <property role="Xl_RC" value="int2enum(" />
+                  </node>
+                  <node concept="2OqwBi" id="21mI9DnwOpu" role="3uHU7w">
+                    <node concept="2OqwBi" id="21mI9DnwMe4" role="2Oq$k0">
+                      <node concept="2OqwBi" id="21mI9DnwLvM" role="2Oq$k0">
+                        <node concept="13iPFW" id="21mI9DnwLni" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="21mI9DnwLQo" role="2OqNvi">
+                          <ref role="3Tt5mk" to="clbe:1frRXyHUCOf" />
+                        </node>
+                      </node>
+                      <node concept="2qgKlT" id="21mI9DnwMC7" role="2OqNvi">
+                        <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="21mI9DnwPLk" role="2OqNvi">
+                      <ref role="37wK5l" to="e2lb:~String.trim():java.lang.String" resolve="trim" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="21mI9DnwMO6" role="3uHU7w">
+                  <property role="Xl_RC" value=")(" />
                 </node>
               </node>
             </node>

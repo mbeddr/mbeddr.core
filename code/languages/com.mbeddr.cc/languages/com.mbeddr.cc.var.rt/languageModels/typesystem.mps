@@ -310,8 +310,8 @@
                     <ref role="3Tt5mk" to="yvrq:7H6_Qip5U2t" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="3el1Vh3VFIy" role="2OqNvi">
-                  <ref role="37wK5l" to="ywuz:Ug1Qzfjnwa" resolve="isIdempotent" />
+                <node concept="2qgKlT" id="7bk7NuGZk_n" role="2OqNvi">
+                  <ref role="37wK5l" to="ywuz:6SENleF$SRD" resolve="isSideeffectFree" />
                 </node>
               </node>
             </node>

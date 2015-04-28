@@ -5058,8 +5058,8 @@
                             <node concept="3cpWs2" id="3PT6Z48IME9" role="2Oq$k0">
                               <ref role="3cqZAo" node="3PT6Z48IME4" resolve="it" />
                             </node>
-                            <node concept="2qgKlT" id="3PT6Z48IME$" role="2OqNvi">
-                              <ref role="37wK5l" to="ywuz:Ug1Qzfjnwa" resolve="isIdempotent" />
+                            <node concept="2qgKlT" id="7bk7NuGZgVD" role="2OqNvi">
+                              <ref role="37wK5l" to="ywuz:6SENleF$SRD" resolve="isSideeffectFree" />
                             </node>
                           </node>
                         </node>
