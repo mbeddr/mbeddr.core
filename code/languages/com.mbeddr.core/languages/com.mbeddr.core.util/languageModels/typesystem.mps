@@ -1897,8 +1897,8 @@
                     <ref role="3Tt5mk" to="k146:2EBw14y1QHn" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="Ug1QzfjnRx" role="2OqNvi">
-                  <ref role="37wK5l" to="ywuz:Ug1Qzfjnwa" resolve="isIdempotent" />
+                <node concept="2qgKlT" id="7bk7NuGZjo2" role="2OqNvi">
+                  <ref role="37wK5l" to="ywuz:6SENleF$SRD" resolve="isSideeffectFree" />
                 </node>
               </node>
             </node>
@@ -3388,8 +3388,8 @@
                     <ref role="3Tt5mk" to="k146:3agk82fvudl" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="6YDrr9LvXmq" role="2OqNvi">
-                  <ref role="37wK5l" to="ywuz:Ug1Qzfjnwa" resolve="isIdempotent" />
+                <node concept="2qgKlT" id="7bk7NuGZidS" role="2OqNvi">
+                  <ref role="37wK5l" to="ywuz:6SENleF$SRD" resolve="isSideeffectFree" />
                 </node>
               </node>
             </node>
@@ -3435,8 +3435,8 @@
                     <ref role="37wK5l" to="yi43:6YDrr9LvXmY" resolve="ctxExpression" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="6YDrr9LvXqC" role="2OqNvi">
-                  <ref role="37wK5l" to="ywuz:Ug1Qzfjnwa" resolve="isIdempotent" />
+                <node concept="2qgKlT" id="7bk7NuGZfZr" role="2OqNvi">
+                  <ref role="37wK5l" to="ywuz:6SENleF$SRD" resolve="isSideeffectFree" />
                 </node>
               </node>
             </node>
