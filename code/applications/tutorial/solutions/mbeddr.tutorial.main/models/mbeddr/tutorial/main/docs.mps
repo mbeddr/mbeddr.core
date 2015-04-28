@@ -9,6 +9,17 @@
   </languages>
   <imports />
   <registry>
+    <language id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell">
+      <concept id="1159656764131926609" name="com.mbeddr.mpsutil.margincell.structure.IMarginCellContent" flags="ng" index="3vooZZ">
+        <property id="8039098920897639409" name="attachedCellId" index="19LeSh" />
+        <reference id="8039098920897680033" name="attachedNode" index="19LoX1" />
+      </concept>
+    </language>
+    <language id="7a060fae-09e0-4372-be36-6696d6554c0e" name="com.mbeddr.mpsutil.review.annotation">
+      <concept id="8455208232410333108" name="com.mbeddr.mpsutil.review.annotation.structure.CommentAnnotationContainer" flags="ng" index="2f$52y">
+        <child id="8455208232410333109" name="comments" index="2f$52z" />
+      </concept>
+    </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
         <child id="2557074442922392302" name="words" index="19SJt6" />
@@ -65,6 +76,13 @@
         <property id="6156524541422553710" name="path" index="3N1Lgt" />
       </concept>
     </language>
+    <language id="c788b046-2019-4656-8b60-8bb9bbb177b5" name="com.mbeddr.mpsutil.review">
+      <concept id="1159656764133526267" name="com.mbeddr.mpsutil.review.structure.ReviewNote" flags="ng" index="3vAitl">
+        <property id="5652920968054438504" name="created" index="3ajGZ3" />
+        <property id="5652920968054438487" name="creator" index="3ajGZW" />
+        <child id="5652920968054438510" name="note" index="3ajGZ5" />
+      </concept>
+    </language>
     <language id="1c5b7d51-0ef3-4332-af36-874466950878" name="com.mbeddr.doc.expressions">
       <concept id="5378658552263149308" name="com.mbeddr.doc.expressions.structure.VariableDef" flags="ng" index="3XpXe8" />
       <concept id="5378658552263151469" name="com.mbeddr.doc.expressions.structure.VarRef" flags="ng" index="3XpXCp">
@@ -78,6 +96,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -129,6 +148,19 @@
       <property role="TrG5h" value="vis" />
       <node concept="9PVaO" id="2iGZqsH$0lQ" role="9PVG_">
         <property role="3N1Lgt" value="_vis" />
+      </node>
+    </node>
+    <node concept="2f$52y" id="4AuO4fdt0hC" role="lGtFl">
+      <node concept="3vAitl" id="4AuO4fdt0hD" role="2f$52z">
+        <property role="3ajGZW" value="markusvoelter" />
+        <property role="3ajGZ3" value="Apr 10, 2015 10:48:49 AM" />
+        <property role="19LeSh" value="Constant_8ipkgn_a3a" />
+        <ref role="19LoX1" node="2ipt67gLxW0" resolve="Config" />
+        <node concept="19SGf9" id="4AuO4fdt0hE" role="3ajGZ5">
+          <node concept="19SUe$" id="4AuO4fdt0hF" role="19SJt6">
+            <property role="19SUeA" value="If there is an error indicated, use an intention to create the respective missing directory." />
+          </node>
+        </node>
       </node>
     </node>
   </node>

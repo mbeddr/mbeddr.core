@@ -1212,13 +1212,13 @@
     <property role="TrG5h" value="IPrintable" />
   </node>
   <node concept="1TIwiD" id="4QKDGaBu9Vy">
-    <property role="3GE5qa" value="types" />
+    <property role="3GE5qa" value="vaargs" />
     <property role="TrG5h" value="VaList" />
     <property role="34LRSv" value="va_list" />
     <property role="R4oN_" value="va_list to variable length lists" />
     <ref role="1TJDcQ" node="7FQByU3CrCS" resolve="PrimitiveType" />
-    <node concept="PrWs8" id="5B6zmQu7UHs" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    <node concept="PrWs8" id="UslQezI$I7" role="PzmwI">
+      <ref role="PrY4T" node="UslQezI$Gn" resolve="IRequireStdArgHeader" />
     </node>
   </node>
   <node concept="PlHQZ" id="Ly0BvC4uyc">
@@ -1430,6 +1430,30 @@
       <property role="20kJfa" value="expressions" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="UslQeyQ5kC">
+    <property role="3GE5qa" value="vaargs" />
+    <property role="TrG5h" value="VaArgExpression" />
+    <property role="34LRSv" value="va_arg" />
+    <ref role="1TJDcQ" node="7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="UslQeyQ5tp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="va_arg" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="UslQeyQ5tx" role="PzmwI">
+      <ref role="PrY4T" node="hEaDaGor63" resolve="ITyped" />
+    </node>
+    <node concept="PrWs8" id="UslQezI$I1" role="PzmwI">
+      <ref role="PrY4T" node="UslQezI$Gn" resolve="IRequireStdArgHeader" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="UslQezI$Gn">
+    <property role="TrG5h" value="IRequireStdArgHeader" />
+    <node concept="PrWs8" id="UslQezI$Gr" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:7RHXOmw3XK2" resolve="IRequiresHeaderImport" />
     </node>
   </node>
 </model>

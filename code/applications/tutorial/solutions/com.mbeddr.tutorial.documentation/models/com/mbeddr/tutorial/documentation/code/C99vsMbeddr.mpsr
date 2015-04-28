@@ -51,6 +51,9 @@
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
+      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
+        <child id="4052432714772608243" name="text" index="1w35rA" />
+      </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
@@ -135,6 +138,15 @@
           <node concept="1h5QrK" id="R8SBebSptr" role="lGtFl">
             <property role="TrG5h" value="aIfStatement" />
           </node>
+          <node concept="1z9TsT" id="4AuO4fdzw5Q" role="lGtFl">
+            <node concept="OjmMv" id="4AuO4fdzw5R" role="1w35rA">
+              <node concept="19SGf9" id="4AuO4fdzw5S" role="OjmMu">
+                <node concept="19SUe$" id="4AuO4fdzw5T" role="19SJt6">
+                  <property role="19SUeA" value="The error below is intended for demo puposes!" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3XISUE" id="37qjepTtkvE" role="3XIRFZ" />
         <node concept="3XIRlf" id="37qjepTtDSG" role="3XIRFZ">
@@ -153,6 +165,9 @@
             <node concept="26Vqpq" id="37qjepTtsH9" role="2C2TGm">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
+            </node>
+            <node concept="3TlMh9" id="4AuO4fdzvPd" role="3XIe9u">
+              <property role="2hmy$m" value="0" />
             </node>
           </node>
           <node concept="3XIRlf" id="37qjepTtqud" role="3XIRFZ">
