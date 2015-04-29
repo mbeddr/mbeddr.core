@@ -56,7 +56,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -349,7 +349,7 @@
         <node concept="3clFbH" id="3oJxBI_0vNu" role="3cqZAp" />
         <node concept="3vlDli" id="3oJxBI_0A$Y" role="3cqZAp">
           <node concept="3cmrfG" id="3oJxBI_0AKl" role="3tpDZB">
-            <property role="3cmrfH" value="14" />
+            <property role="3cmrfH" value="33" />
           </node>
           <node concept="2OqwBi" id="3oJxBI_0B50" role="3tpDZA">
             <node concept="37vLTw" id="3oJxBI_0ANz" role="2Oq$k0">
@@ -474,6 +474,96 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="2S1OXleRt1R" role="3cqZAp" />
+        <node concept="3cpWs8" id="2S1OXleRuaI" role="3cqZAp">
+          <node concept="3cpWsn" id="2S1OXleRuaJ" role="3cpWs9">
+            <property role="TrG5h" value="res9" />
+            <node concept="3uibUv" id="2S1OXleRuaK" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="2S1OXleRuaL" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="2S1OXleRuaM" role="37wK5m">
+                <ref role="3cqZAo" node="3oJxBI_0vNj" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="2S1OXleRuaN" role="37wK5m">
+                <property role="Xl_RC" value="DecTab (id: 2) - activation - (0,0)" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2S1OXleRuaO" role="3cqZAp">
+          <node concept="2OqwBi" id="2S1OXleRuaP" role="3vwVQn">
+            <node concept="3cpWsa" id="2S1OXleRuaQ" role="2Oq$k0">
+              <ref role="3cqZAo" node="2S1OXleRuaJ" resolve="res9" />
+            </node>
+            <node concept="liA8E" id="2S1OXleRuaR" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2S1OXleRuPh" role="3cqZAp" />
+        <node concept="3cpWs8" id="2S1OXleRvh3" role="3cqZAp">
+          <node concept="3cpWsn" id="2S1OXleRvh4" role="3cpWs9">
+            <property role="TrG5h" value="res10" />
+            <node concept="3uibUv" id="2S1OXleRvh5" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="2S1OXleRvh6" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="2S1OXleRvh7" role="37wK5m">
+                <ref role="3cqZAo" node="3oJxBI_0vNj" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="2S1OXleRvh8" role="37wK5m">
+                <property role="Xl_RC" value="DecTab (id: 2) - activation - (0,1)" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2S1OXleRvh9" role="3cqZAp">
+          <node concept="2OqwBi" id="2S1OXleRvha" role="3vwVQn">
+            <node concept="3cpWsa" id="2S1OXleRvhb" role="2Oq$k0">
+              <ref role="3cqZAo" node="2S1OXleRvh4" resolve="res10" />
+            </node>
+            <node concept="liA8E" id="2S1OXleRvhc" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2S1OXleRv69" role="3cqZAp" />
+        <node concept="3cpWs8" id="2S1OXleRtkt" role="3cqZAp">
+          <node concept="3cpWsn" id="2S1OXleRtku" role="3cpWs9">
+            <property role="TrG5h" value="res11" />
+            <node concept="3uibUv" id="2S1OXleRtkv" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="2S1OXleRtkw" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="2S1OXleRtkx" role="37wK5m">
+                <ref role="3cqZAo" node="3oJxBI_0vNj" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="2S1OXleRtky" role="37wK5m">
+                <property role="Xl_RC" value="DecTab (id: 2) - activation - (0,2)" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2S1OXleRtkz" role="3cqZAp">
+          <node concept="2OqwBi" id="2S1OXleRtk$" role="3vwVQn">
+            <node concept="3cpWsa" id="2S1OXleRtk_" role="2Oq$k0">
+              <ref role="3cqZAo" node="2S1OXleRtku" resolve="res11" />
+            </node>
+            <node concept="liA8E" id="2S1OXleRtkA" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2S1OXleRtRO" role="3cqZAp" />
+        <node concept="3clFbH" id="2S1OXleRu11" role="3cqZAp" />
+        <node concept="3clFbH" id="2S1OXleRtbX" role="3cqZAp" />
       </node>
     </node>
   </node>
