@@ -2352,6 +2352,22 @@
       </node>
       <node concept="3Tm1VV" id="4wDMkkpFypM" role="1B3o_S" />
       <node concept="3clFbS" id="4wDMkkpFypO" role="3clF47">
+        <node concept="3clFbJ" id="6dVgVd4fPz6" role="3cqZAp">
+          <node concept="3clFbS" id="6dVgVd4fPz8" role="3clFbx">
+            <node concept="3cpWs6" id="6dVgVd4fRc8" role="3cqZAp">
+              <node concept="3clFbT" id="6dVgVd4fRSK" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="1rXfSq" id="6dVgVd4fQIK" role="3clFbw">
+            <ref role="37wK5l" node="4Ow3NnwUtHe" resolve="isMbeddrGenerationNoise" />
+            <node concept="37vLTw" id="6dVgVd4fQZL" role="37wK5m">
+              <ref role="3cqZAo" node="4wDMkkpFypH" resolve="crtState" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6dVgVd4fSU0" role="3cqZAp" />
         <node concept="3cpWs8" id="4wDMkkpF$Ua" role="3cqZAp">
           <node concept="3cpWsn" id="4wDMkkpF$Ud" role="3cpWs9">
             <property role="TrG5h" value="original" />
@@ -2938,6 +2954,106 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2yoYFV_MhEG" role="jymVt" />
+    <node concept="2YIFZL" id="4Ow3NnwUtHe" role="jymVt">
+      <property role="TrG5h" value="isMbeddrGenerationNoise" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="4Ow3NnwUtHf" role="3clF47">
+        <node concept="3cpWs8" id="4Ow3Nnx6E$c" role="3cqZAp">
+          <node concept="3cpWsn" id="4Ow3Nnx6E$d" role="3cpWs9">
+            <property role="TrG5h" value="fullLHS" />
+            <node concept="17QB3L" id="4Ow3Nnx6E$a" role="1tU5fm" />
+            <node concept="2OqwBi" id="4Ow3Nnx6E$e" role="33vP2m">
+              <node concept="3cpWs2" id="4Ow3Nnx6E$f" role="2Oq$k0">
+                <ref role="3cqZAo" node="4Ow3NnwUtHi" resolve="s" />
+              </node>
+              <node concept="liA8E" id="4Ow3Nnx6E$g" role="2OqNvi">
+                <ref role="37wK5l" to="rbq9:WwTuEsr2_k" resolve="getFullLHS" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4Ow3Nnx6EVp" role="3cqZAp" />
+        <node concept="3clFbJ" id="4Ow3Nnx6FOX" role="3cqZAp">
+          <node concept="3clFbS" id="4Ow3Nnx6FP0" role="3clFbx">
+            <node concept="3SKdUt" id="4Ow3NnwUxLx" role="3cqZAp">
+              <node concept="3SKdUq" id="4Ow3NnwUxLy" role="3SKWNk">
+                <property role="3SKdUp" value="we consider that variables starting with &quot;___&quot; are those introduced by the generator" />
+              </node>
+            </node>
+            <node concept="3clFbJ" id="4Ow3NnwUxLz" role="3cqZAp">
+              <node concept="3clFbS" id="4Ow3NnwUxL$" role="3clFbx">
+                <node concept="3cpWs6" id="4Ow3NnwUxL_" role="3cqZAp">
+                  <node concept="3clFbT" id="4Ow3NnwUxLA" role="3cqZAk">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4Ow3NnwUxLB" role="3clFbw">
+                <node concept="37vLTw" id="4Ow3Nnx6E$h" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4Ow3Nnx6E$d" resolve="fullLHS" />
+                </node>
+                <node concept="liA8E" id="4Ow3NnwUxLF" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                  <node concept="Xl_RD" id="4Ow3NnwUxLG" role="37wK5m">
+                    <property role="Xl_RC" value="___" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3SKdUt" id="Z9MVf4B31V" role="3cqZAp">
+              <node concept="3SKdUq" id="Z9MVf4B3eC" role="3SKWNk">
+                <property role="3SKdUp" value="members of structures that are introduced by the generator" />
+              </node>
+            </node>
+            <node concept="3clFbJ" id="Z9MVf4B6nl" role="3cqZAp">
+              <node concept="3clFbS" id="Z9MVf4B6nm" role="3clFbx">
+                <node concept="3cpWs6" id="Z9MVf4B6nn" role="3cqZAp">
+                  <node concept="3clFbT" id="Z9MVf4B6no" role="3cqZAk">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="Z9MVf4B6np" role="3clFbw">
+                <node concept="37vLTw" id="Z9MVf4B6nq" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4Ow3Nnx6E$d" resolve="fullLHS" />
+                </node>
+                <node concept="liA8E" id="Z9MVf4B6nr" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <node concept="Xl_RD" id="Z9MVf4B6ns" role="37wK5m">
+                    <property role="Xl_RC" value=".___" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="4Ow3Nnx6Gn3" role="3clFbw">
+            <node concept="10Nm6u" id="4Ow3Nnx6GsE" role="3uHU7w" />
+            <node concept="37vLTw" id="4Ow3Nnx6G0L" role="3uHU7B">
+              <ref role="3cqZAo" node="4Ow3Nnx6E$d" resolve="fullLHS" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4Ow3Nnx6GFp" role="3cqZAp" />
+        <node concept="3cpWs6" id="4Ow3NnwUxM8" role="3cqZAp">
+          <node concept="3clFbT" id="4Ow3NnwUxM9" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4Ow3NnwUtHg" role="1B3o_S" />
+      <node concept="10P_77" id="4Ow3NnwUtHh" role="3clF45" />
+      <node concept="37vLTG" id="4Ow3NnwUtHi" role="3clF46">
+        <property role="TrG5h" value="s" />
+        <node concept="3uibUv" id="4Ow3NnwUtHj" role="1tU5fm">
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+        </node>
+      </node>
+      <node concept="NWlO9" id="7oz0hCwaeKK" role="lGtFl">
+        <property role="NWlVz" value="Returns true if the LHS of the assignment is mbeddr generation noise." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6dVgVd4fczm" role="jymVt" />
   </node>
   <node concept="312cEu" id="3x0R1LIQ8cB">
     <property role="TrG5h" value="FunctionCallsLifterCore" />
