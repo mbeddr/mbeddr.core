@@ -134,6 +134,7 @@
       </concept>
       <concept id="8860443239512147449" name="com.mbeddr.core.expressions.structure.LessExpression" flags="ng" index="3Tl9Jn" />
       <concept id="8860443239512147445" name="com.mbeddr.core.expressions.structure.GreaterExpression" flags="ng" index="3Tl9Jr" />
+      <concept id="8860443239512129322" name="com.mbeddr.core.expressions.structure.EqualsExpression" flags="ng" index="3TlM44" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
@@ -198,6 +199,32 @@
               <property role="2c7vTL" value="false" />
             </node>
             <node concept="1YJQNW" id="7yN$Xh8pLxy" role="lGtFl" />
+            <node concept="eGT6y" id="2VzlLcH4di9" role="eGTpe">
+              <node concept="3TlM44" id="2VzlLcH4dRv" role="eGT6H">
+                <node concept="3TlMh9" id="2VzlLcH4e0v" role="3TlMhJ">
+                  <property role="2hmy$m" value="-1" />
+                </node>
+                <node concept="3ZUYvv" id="2VzlLcH4ds7" role="3TlMhI">
+                  <ref role="3ZUYvu" node="576QrOJt5_g" resolve="x" />
+                </node>
+              </node>
+              <node concept="3TlMh9" id="2VzlLcH4e$4" role="eGT6G">
+                <property role="2hmy$m" value="-1" />
+              </node>
+            </node>
+            <node concept="eGT6y" id="2S1OXleSHrC" role="eGTpe">
+              <node concept="3TlM44" id="2S1OXleSHJI" role="eGT6H">
+                <node concept="3TlMh9" id="2S1OXleSHTh" role="3TlMhJ">
+                  <property role="2hmy$m" value="200" />
+                </node>
+                <node concept="3ZUYvv" id="2S1OXleSHA6" role="3TlMhI">
+                  <ref role="3ZUYvu" node="576QrOJt5_g" resolve="x" />
+                </node>
+              </node>
+              <node concept="3TlMh9" id="2S1OXleSId8" role="eGT6G">
+                <property role="2hmy$m" value="1" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

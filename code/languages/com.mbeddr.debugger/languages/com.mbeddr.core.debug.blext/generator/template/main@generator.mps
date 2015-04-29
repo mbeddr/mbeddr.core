@@ -40,7 +40,6 @@
     <import index="cu2c" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
     <import index="1i04" ref="r:3270011d-8b2d-4938-8dff-d256a759e017(jetbrains.mps.lang.behavior.structure)" />
     <import index="qwe8" ref="r:5f02508f-faba-491c-88f2-fa0e4a006e1d(com.mbeddr.core.debug.blext.runtime.main)" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -148,7 +147,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -485,35 +484,6 @@
       </node>
       <node concept="30G5F_" id="VC7Rv3IlfQ" role="30HLyM">
         <node concept="3clFbS" id="VC7Rv3IlfR" role="2VODD2">
-          <node concept="3clFbF" id="VC7Rv41N9D" role="3cqZAp">
-            <node concept="2OqwBi" id="VC7Rv41N9A" role="3clFbG">
-              <node concept="10M0yZ" id="VC7Rv41N9B" role="2Oq$k0">
-                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-              </node>
-              <node concept="liA8E" id="VC7Rv41N9C" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-                <node concept="3cpWs3" id="VC7Rv48XjN" role="37wK5m">
-                  <node concept="Xl_RD" id="VC7Rv41NnE" role="3uHU7B">
-                    <property role="Xl_RC" value="### DotExpression" />
-                  </node>
-                  <node concept="2OqwBi" id="VC7Rv48XrT" role="3uHU7w">
-                    <node concept="2OqwBi" id="VC7Rv48XrU" role="2Oq$k0">
-                      <node concept="30H73N" id="VC7Rv48XrV" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="VC7Rv48XrW" role="2OqNvi">
-                        <ref role="3Tt5mk" to="tpee:hqOqNr4" />
-                      </node>
-                    </node>
-                    <node concept="1mIQ4w" id="VC7Rv48XrX" role="2OqNvi">
-                      <node concept="chp4Y" id="VC7Rv48XrY" role="cj9EA">
-                        <ref role="cht4Q" to="talm:VC7Rv3ia47" resolve="FirstExecutableOperation" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3clFbF" id="VC7Rv3Ilqh" role="3cqZAp">
             <node concept="2OqwBi" id="VC7Rv3Imc9" role="3clFbG">
               <node concept="2OqwBi" id="VC7Rv3IlvH" role="2Oq$k0">
