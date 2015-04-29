@@ -301,6 +301,12 @@
       </node>
       <node concept="l2Vlx" id="7apEgWbIHTq" role="2iSdaV" />
     </node>
+    <node concept="3EZMnI" id="3xqp6yfxdX_" role="6VMZX">
+      <node concept="PMmxH" id="3xqp6yfxdXA" role="3EZMnx">
+        <ref role="PMmxG" to="vrqd:3xqp6yfmmvz" resolve="TypeSize" />
+      </node>
+      <node concept="2iRkQZ" id="3xqp6yfxdXB" role="2iSdaV" />
+    </node>
   </node>
   <node concept="24kQdi" id="fwMInzpIbw">
     <property role="3GE5qa" value="pointers" />
@@ -530,6 +536,12 @@
         <ref role="PMmxG" to="vrqd:2zhwXA$RHx8" resolve="constFlag" />
       </node>
     </node>
+    <node concept="3EZMnI" id="3xqp6yfp5Cv" role="6VMZX">
+      <node concept="PMmxH" id="3xqp6yfp5IY" role="3EZMnx">
+        <ref role="PMmxG" to="vrqd:3xqp6yfmmvz" resolve="TypeSize" />
+      </node>
+      <node concept="2iRkQZ" id="3xqp6yfp5Cy" role="2iSdaV" />
+    </node>
   </node>
   <node concept="24kQdi" id="5sJgLFR$y$4">
     <property role="3GE5qa" value="arrays" />
@@ -586,6 +598,12 @@
     <node concept="3F0ifn" id="$mHaGow4hV" role="2wV5jI">
       <property role="3F0ifm" value="nulltype" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+    </node>
+    <node concept="3EZMnI" id="3xqp6yfxdXR" role="6VMZX">
+      <node concept="PMmxH" id="3xqp6yfxdXS" role="3EZMnx">
+        <ref role="PMmxG" to="vrqd:3xqp6yfmmvz" resolve="TypeSize" />
+      </node>
+      <node concept="2iRkQZ" id="3xqp6yfxdXT" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="5Y8Bot$KokC">
@@ -810,6 +828,12 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+    <node concept="3EZMnI" id="3xqp6yfxf7x" role="6VMZX">
+      <node concept="PMmxH" id="3xqp6yfxf7y" role="3EZMnx">
+        <ref role="PMmxG" to="vrqd:3xqp6yfmmvz" resolve="TypeSize" />
+      </node>
+      <node concept="2iRkQZ" id="3xqp6yfxf7z" role="2iSdaV" />
     </node>
   </node>
   <node concept="1h_SRR" id="4VxFbWczlph">

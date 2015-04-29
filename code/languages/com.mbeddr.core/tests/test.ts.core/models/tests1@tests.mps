@@ -332,6 +332,7 @@
       <concept id="7880465884876086424" name="com.mbeddr.core.modules.structure.ConcatExpression" flags="ng" index="DKDlw">
         <child id="7880465884876086425" name="exprs" index="DKDlx" />
       </concept>
+      <concept id="3376775282622611165" name="com.mbeddr.core.modules.structure.StaticMemoryLocation" flags="ng" index="2DPCBB" />
       <concept id="3376775282622142916" name="com.mbeddr.core.modules.structure.AbstractDefineLike" flags="ng" index="2DRUVY">
         <child id="3376775282622233992" name="value" index="2DQcEM" />
       </concept>
@@ -11270,6 +11271,21 @@
             <property role="biBdg" value="X" />
           </node>
         </node>
+        <node concept="2NXPZ9" id="3xqp6yfmiHj" role="N3F5h">
+          <property role="TrG5h" value="empty_1430327501722_1" />
+        </node>
+        <node concept="4WHVk" id="3xqp6yfmj$T" role="N3F5h">
+          <property role="TrG5h" value="TEN" />
+          <node concept="3TlMh9" id="3xqp6yfmk28" role="2DQcEM">
+            <property role="2hmy$m" value="10" />
+          </node>
+        </node>
+        <node concept="2DPCBB" id="3xqp6yfmlvi" role="N3F5h">
+          <property role="TrG5h" value="TEN_A" />
+          <node concept="4ZOvp" id="3xqp6yfmlYL" role="2DQcEM">
+            <ref role="2DPCA0" node="3xqp6yfmj$T" resolve="TEN" />
+          </node>
+        </node>
         <node concept="2NXPZ9" id="2roVptdTHbb" role="N3F5h">
           <property role="TrG5h" value="empty_1353939895583_3" />
         </node>
@@ -11309,8 +11325,8 @@
               <node concept="12rfTQ" id="41d9N0pXfbe" role="2C2TGm">
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
-                <node concept="3TlMh9" id="41d9N0pXfbg" role="12rfTL">
-                  <property role="2hmy$m" value="10" />
+                <node concept="4ZOvp" id="3xqp6yfmlZ5" role="12rfTL">
+                  <ref role="2DPCA0" node="3xqp6yfmlvi" resolve="TEN_A" />
                 </node>
               </node>
               <node concept="PhEJO" id="41d9N0pXfbk" role="3XIe9u">
