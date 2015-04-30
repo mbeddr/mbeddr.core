@@ -516,8 +516,8 @@
       <node concept="m$_yC" id="7eF9rfAuv_5" role="m$_yJ">
         <ref role="m$_y1" node="5qO$P$Prhta" resolve="com.mbeddr.debugger" />
       </node>
-      <node concept="m$_yC" id="4hvHh3QXVwV" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:6GHSnJozNgZ" resolve="de.itemis.mps.editor.bool" />
+      <node concept="m$_yC" id="4q9_DTOCEsg" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:7szUFELHeHf" resolve="de.itemis.mps.editor.widgets" />
       </node>
       <node concept="m$_yC" id="$bJ0jgF_4y" role="m$_yJ">
         <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />
@@ -702,8 +702,8 @@
       <node concept="m$_yC" id="4hvHh3R1B$_" role="m$_yJ">
         <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
       </node>
-      <node concept="m$_yC" id="4hvHh3R1BAS" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:6GHSnJozNgZ" resolve="de.itemis.mps.editor.bool" />
+      <node concept="m$_yC" id="4q9_DTOCET9" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:7szUFELHeHf" resolve="de.itemis.mps.editor.widgets" />
       </node>
       <node concept="3_J27D" id="7eF9rfAuDVv" role="m_cZH">
         <node concept="3Mxwew" id="7eF9rfAuDVw" role="3MwsjC">
@@ -821,8 +821,8 @@
       <node concept="m$_yC" id="7eF9rfAuSOk" role="m$_yJ">
         <ref role="m$_y1" to="90a9:1sO539bGQvt" resolve="de.slisson.mps.richtext" />
       </node>
-      <node concept="m$_yC" id="4elbL$_XMz$" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:6GHSnJozNgZ" resolve="de.itemis.mps.editor.bool" />
+      <node concept="m$_yC" id="4q9_DTOCFMI" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:7szUFELHeHf" resolve="de.itemis.mps.editor.widgets" />
       </node>
       <node concept="m$_yC" id="$bJ0jgzU5s" role="m$_yJ">
         <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />
