@@ -3584,6 +3584,12 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5CurKCIYpR1" role="3bR37C">
+          <node concept="3bR9La" id="5CurKCIYpR2" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7uiPZBBQnjd" role="2G$12L">
         <property role="BnDLt" value="true" />
