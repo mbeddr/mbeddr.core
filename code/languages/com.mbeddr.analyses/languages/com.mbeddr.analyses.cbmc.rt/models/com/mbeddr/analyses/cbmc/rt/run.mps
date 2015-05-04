@@ -211,7 +211,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -8823,12 +8823,15 @@
       <node concept="3Tm1VV" id="sEP8ohtOE5" role="1B3o_S" />
       <node concept="3uibUv" id="sEP8ohtOF6" role="EKbjA">
         <ref role="3uigEE" to="8e9v:sEP8ohtEIO" resolve="ToolRunner.ToolRunnerFactory" />
+        <node concept="3uibUv" id="1CPQBcrdJjk" role="11_B2D">
+          <ref role="3uigEE" node="4CtHBqN2ghF" resolve="CProverLocalRunner" />
+        </node>
       </node>
       <node concept="3clFb_" id="sEP8ohtOFl" role="jymVt">
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="createNewToolRunner" />
-        <node concept="3uibUv" id="sEP8ohtOFm" role="3clF45">
-          <ref role="3uigEE" to="8e9v:4CtHBqNlaPk" resolve="ToolRunner" />
+        <node concept="3uibUv" id="1CPQBcrdJkv" role="3clF45">
+          <ref role="3uigEE" node="4CtHBqN2ghF" resolve="CProverLocalRunner" />
         </node>
         <node concept="3Tm1VV" id="sEP8ohtOFn" role="1B3o_S" />
         <node concept="3clFbS" id="sEP8ohtOFp" role="3clF47">
