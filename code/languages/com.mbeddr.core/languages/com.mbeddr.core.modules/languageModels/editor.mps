@@ -2328,6 +2328,12 @@
         </node>
       </node>
     </node>
+    <node concept="3EZMnI" id="3xqp6yfp5Cv" role="6VMZX">
+      <node concept="PMmxH" id="3xqp6yfp5IY" role="3EZMnx">
+        <ref role="PMmxG" to="vrqd:3xqp6yfmmvz" resolve="TypeSize" />
+      </node>
+      <node concept="2iRkQZ" id="3xqp6yfp5Cy" role="2iSdaV" />
+    </node>
   </node>
   <node concept="24kQdi" id="7qHzltJ0oT6">
     <property role="3GE5qa" value="functionrefs" />
@@ -2700,6 +2706,12 @@
     <node concept="3F0ifn" id="5l13tQ4uV$v" role="2wV5jI">
       <property role="3F0ifm" value="nooptype" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+    </node>
+    <node concept="3EZMnI" id="3xqp6yfxdXj" role="6VMZX">
+      <node concept="PMmxH" id="3xqp6yfxdXk" role="3EZMnx">
+        <ref role="PMmxG" to="vrqd:3xqp6yfmmvz" resolve="TypeSize" />
+      </node>
+      <node concept="2iRkQZ" id="3xqp6yfxdXl" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="65XyadYMXiq">
