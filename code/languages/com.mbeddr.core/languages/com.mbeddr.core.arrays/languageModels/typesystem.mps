@@ -7150,7 +7150,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="3xqp6yfeSOV" role="2OqNvi">
-                          <ref role="37wK5l" to="epq1:~BigInteger.intValueExact():int" resolve="intValueExact" />
+                          <ref role="37wK5l" to="epq1:~BigInteger.intValue():int" resolve="intValue" />
                         </node>
                       </node>
                     </node>
@@ -7181,7 +7181,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="3xqp6yfeTOM" role="2OqNvi">
-                          <ref role="37wK5l" to="epq1:~BigInteger.intValueExact():int" resolve="intValueExact" />
+                          <ref role="37wK5l" to="epq1:~BigInteger.intValue():int" resolve="intValue" />
                         </node>
                       </node>
                     </node>
