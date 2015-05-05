@@ -5838,6 +5838,13 @@
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
+          <node concept="38rIoz" id="6dVgVd3HW$H" role="38rM$J">
+            <property role="38rIoG" value="aStringArrayInstance[3]" />
+            <property role="38rMdH" value="0" />
+            <node concept="3Tqbb2" id="6dVgVd3HW$I" role="38rYrG">
+              <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+            </node>
+          </node>
           <node concept="38rIoz" id="3kmIFBmen97" role="38rM$J">
             <property role="38rIoG" value="i8Ptr" />
             <property role="38rMdH" value="&quot;Hallo Welt&quot;" />

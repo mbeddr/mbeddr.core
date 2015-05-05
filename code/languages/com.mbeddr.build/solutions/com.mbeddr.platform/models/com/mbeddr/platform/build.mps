@@ -347,6 +347,34 @@
     </node>
     <node concept="2G$12M" id="7uZw0yZ2_Jz" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.mpsutil" />
+      <node concept="1E1JtD" id="VC7Rv4v0AU" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.runconfiguration" />
+        <property role="3LESm3" value="aa6a62c5-a61c-4ec5-94a7-61bc8b137d79" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="VC7Rv4v39k" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="VC7Rv4v492" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="VC7Rv4v68h" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.runconfiguration" />
+              <node concept="2Ry0Ak" id="VC7Rv4v87w" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.runconfiguration.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="VC7Rv4v977" role="3bR37C">
+          <node concept="1Busua" id="VC7Rv4v978" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:4LDuh$Ud1LG" resolve="jetbrains.mps.debugger.api.lang" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="VC7Rv4v979" role="1TViLv">
+          <property role="TrG5h" value="com.mbeddr.mpsutil.runconfiguration#1074143110309249536" />
+          <property role="3LESm3" value="256cd7af-2a1c-46c0-b544-845d10b7eab5" />
+          <property role="2GAjPV" value="false" />
+        </node>
+      </node>
       <node concept="1E1JtD" id="776vT$mR9hk" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.compare" />

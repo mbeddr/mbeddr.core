@@ -55,7 +55,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -737,7 +737,7 @@
                             </node>
                           </node>
                           <node concept="2qgKlT" id="6QawkaHVpJ0" role="2OqNvi">
-                            <ref role="37wK5l" to="2rho:7TdHRrCpjWZ" resolve="members" />
+                            <ref role="37wK5l" to="2rho:7TdHRrCpjWZ" resolve="membersIncludingTransparent" />
                           </node>
                         </node>
                       </node>
@@ -813,7 +813,7 @@
                               </node>
                             </node>
                             <node concept="2qgKlT" id="6QawkaHVqCx" role="2OqNvi">
-                              <ref role="37wK5l" to="2rho:7TdHRrCpjWZ" resolve="members" />
+                              <ref role="37wK5l" to="2rho:7TdHRrCpjWZ" resolve="membersIncludingTransparent" />
                             </node>
                           </node>
                         </node>
@@ -1033,6 +1033,9 @@
                 <node concept="3clFbS" id="3DiW6qrG4EU" role="3clFbx">
                   <node concept="3cpWs6" id="3DiW6qrG7U1" role="3cqZAp">
                     <node concept="2OqwBi" id="7FkLcyz8v2u" role="3cqZAk">
+                      <node concept="2qgKlT" id="6aQaNXUlJ1" role="2OqNvi">
+                        <ref role="37wK5l" to="2rho:6aQaNXUb8h" resolve="membersDirect" />
+                      </node>
                       <node concept="2OqwBi" id="7FkLcyz8gpi" role="2Oq$k0">
                         <node concept="1PxgMI" id="3DiW6qrG94h" role="2Oq$k0">
                           <ref role="1PxNhF" to="clbe:3bHYGwzt_Ut" resolve="SUType" />
@@ -1043,9 +1046,6 @@
                         <node concept="2qgKlT" id="7FkLcyz8_Ui" role="2OqNvi">
                           <ref role="37wK5l" to="2rho:3bHYGwztGSo" resolve="getSUDeclaration" />
                         </node>
-                      </node>
-                      <node concept="2qgKlT" id="7FkLcyz8C22" role="2OqNvi">
-                        <ref role="37wK5l" to="2rho:7TdHRrCpjWZ" resolve="members" />
                       </node>
                     </node>
                   </node>

@@ -758,7 +758,7 @@
       <node concept="3clFbS" id="2EBw14y26qV" role="2VODD2">
         <node concept="3clFbF" id="2EBw14y26qY" role="3cqZAp">
           <node concept="Xl_RD" id="2EBw14y26qZ" role="3clFbG">
-            <property role="Xl_RC" value="Synchronize for all members" />
+            <property role="Xl_RC" value="Synchronize All Members" />
           </node>
         </node>
       </node>
@@ -790,7 +790,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="7TdHRrCrepB" role="2OqNvi">
-                <ref role="37wK5l" to="2rho:7TdHRrCpjWZ" resolve="members" />
+                <ref role="37wK5l" to="2rho:7TdHRrCpjWZ" resolve="membersIncludingTransparent" />
               </node>
             </node>
           </node>

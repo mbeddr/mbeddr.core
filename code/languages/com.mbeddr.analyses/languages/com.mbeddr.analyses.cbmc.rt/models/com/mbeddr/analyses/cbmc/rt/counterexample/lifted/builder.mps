@@ -2810,67 +2810,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="4Ow3Nnx6EVp" role="3cqZAp" />
-        <node concept="3clFbJ" id="4Ow3Nnx6FOX" role="3cqZAp">
-          <node concept="3clFbS" id="4Ow3Nnx6FP0" role="3clFbx">
-            <node concept="3SKdUt" id="4Ow3NnwUxLx" role="3cqZAp">
-              <node concept="3SKdUq" id="4Ow3NnwUxLy" role="3SKWNk">
-                <property role="3SKdUp" value="we consider that variables starting with &quot;___&quot; are those introduced by the generator" />
-              </node>
-            </node>
-            <node concept="3clFbJ" id="4Ow3NnwUxLz" role="3cqZAp">
-              <node concept="3clFbS" id="4Ow3NnwUxL$" role="3clFbx">
-                <node concept="3cpWs6" id="4Ow3NnwUxL_" role="3cqZAp">
-                  <node concept="3clFbT" id="4Ow3NnwUxLA" role="3cqZAk">
-                    <property role="3clFbU" value="true" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="4Ow3NnwUxLB" role="3clFbw">
-                <node concept="37vLTw" id="4Ow3Nnx6E$h" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4Ow3Nnx6E$d" resolve="fullLHS" />
-                </node>
-                <node concept="liA8E" id="4Ow3NnwUxLF" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
-                  <node concept="Xl_RD" id="4Ow3NnwUxLG" role="37wK5m">
-                    <property role="Xl_RC" value="___" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3SKdUt" id="Z9MVf4B31V" role="3cqZAp">
-              <node concept="3SKdUq" id="Z9MVf4B3eC" role="3SKWNk">
-                <property role="3SKdUp" value="members of structures that are introduced by the generator" />
-              </node>
-            </node>
-            <node concept="3clFbJ" id="Z9MVf4B6nl" role="3cqZAp">
-              <node concept="3clFbS" id="Z9MVf4B6nm" role="3clFbx">
-                <node concept="3cpWs6" id="Z9MVf4B6nn" role="3cqZAp">
-                  <node concept="3clFbT" id="Z9MVf4B6no" role="3cqZAk">
-                    <property role="3clFbU" value="true" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="Z9MVf4B6np" role="3clFbw">
-                <node concept="37vLTw" id="Z9MVf4B6nq" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4Ow3Nnx6E$d" resolve="fullLHS" />
-                </node>
-                <node concept="liA8E" id="Z9MVf4B6nr" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
-                  <node concept="Xl_RD" id="Z9MVf4B6ns" role="37wK5m">
-                    <property role="Xl_RC" value=".___" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3y3z36" id="4Ow3Nnx6Gn3" role="3clFbw">
-            <node concept="10Nm6u" id="4Ow3Nnx6GsE" role="3uHU7w" />
-            <node concept="37vLTw" id="4Ow3Nnx6G0L" role="3uHU7B">
-              <ref role="3cqZAo" node="4Ow3Nnx6E$d" resolve="fullLHS" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="4Ow3Nnx6GFp" role="3cqZAp" />
         <node concept="3clFbJ" id="4Ow3Nnx6Irq" role="3cqZAp">
           <node concept="3clFbS" id="4Ow3Nnx6Irt" role="3clFbx">
             <node concept="3SKdUt" id="4Ow3NnwUxLV" role="3cqZAp">
@@ -5998,6 +5937,12 @@
                   <ref role="3cqZAo" node="7iLQIU2BbpE" resolve="nodeOfInterest" />
                 </node>
                 <node concept="z$bX8" id="_F_U16KrEy" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="6dVgVd3goqD" role="3cqZAp" />
+            <node concept="3cpWs6" id="6dVgVd3goz_" role="3cqZAp">
+              <node concept="37vLTw" id="6dVgVd3goER" role="3cqZAk">
+                <ref role="3cqZAo" node="_F_U16KnH4" resolve="stmt" />
               </node>
             </node>
           </node>
