@@ -658,6 +658,7 @@
   <node concept="1TIwiD" id="IrwlmWyLju">
     <property role="TrG5h" value="PragmaStatement" />
     <property role="34LRSv" value="#pragma" />
+    <property role="R4oN_" value="#pragma on statement level" />
     <ref role="1TJDcQ" node="3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyi" id="IrwlmWyLjw" role="1TKVEl">
       <property role="TrG5h" value="pragmaString" />
