@@ -4457,5 +4457,21 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="xN636rYFQv">
+    <ref role="1XX52x" to="x27k:IrwlmWyLju" resolve="PragmaModuleContent" />
+    <node concept="3EZMnI" id="IrwlmWyLjz" role="2wV5jI">
+      <node concept="l2Vlx" id="IrwlmWyLj_" role="2iSdaV" />
+      <node concept="3F0ifn" id="IrwlmWyLjB" role="3EZMnx">
+        <property role="3F0ifm" value="#pragma" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="3F0A7n" id="IrwlmWyLjD" role="3EZMnx">
+        <ref role="1NtTu8" to="x27k:IrwlmWyLjw" resolve="pragmaString" />
+        <node concept="VechU" id="IrwlmWyLjE" role="3F10Kt">
+          <property role="Vb096" value="darkGray" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
