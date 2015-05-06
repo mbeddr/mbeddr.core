@@ -2075,5 +2075,29 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="xN636rZcEm">
+    <ref role="WuzLi" to="x27k:IrwlmWyLju" resolve="PragmaModuleContent" />
+    <node concept="11bSqf" id="xN636rZcEn" role="11c4hB">
+      <node concept="3clFbS" id="xN636rZcEo" role="2VODD2">
+        <node concept="lc7rE" id="IrwlmWyTkv" role="3cqZAp">
+          <node concept="la8eA" id="IrwlmWyTkx" role="lcghm">
+            <property role="lacIc" value="#pragma" />
+          </node>
+          <node concept="la8eA" id="IrwlmWyTk$" role="lcghm">
+            <property role="lacIc" value=" " />
+          </node>
+          <node concept="l9hG8" id="IrwlmWyTkA" role="lcghm">
+            <node concept="2OqwBi" id="IrwlmWyTkX" role="lb14g">
+              <node concept="117lpO" id="IrwlmWyTkC" role="2Oq$k0" />
+              <node concept="3TrcHB" id="IrwlmWyTl3" role="2OqNvi">
+                <ref role="3TsBF5" to="x27k:IrwlmWyLjw" resolve="pragmaString" />
+              </node>
+            </node>
+          </node>
+          <node concept="l8MVK" id="xN636rZdAe" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

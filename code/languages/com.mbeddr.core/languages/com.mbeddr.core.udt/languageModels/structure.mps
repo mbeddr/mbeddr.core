@@ -16,6 +16,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
@@ -48,6 +51,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -272,16 +276,16 @@
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="UnsignedBitType" />
     <property role="34LRSv" value="ubit" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
+    <ref role="1TJDcQ" node="2H3Yrqdbnnx" resolve="AbstractBitType" />
     <node concept="1TJgyi" id="5nhrDHCgX5o" role="1TKVEl">
-      <property role="TrG5h" value="width" />
+      <property role="TrG5h" value="width_old" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <node concept="asaX9" id="2H3YrqdmX0J" role="lGtFl">
+        <property role="YLQ7P" value="property was moved up" />
+      </node>
     </node>
-    <node concept="PrWs8" id="5nhrDHCiGYY" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:4ZVDCZCa$xx" resolve="IOrdered" />
-    </node>
-    <node concept="PrWs8" id="5nhrDHCiGZ0" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:4ZVDCZCaQ86" resolve="INumber" />
+    <node concept="PrWs8" id="34uiID1zKUh" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:67O0HaCtjdR" resolve="IUnsigned" />
     </node>
   </node>
   <node concept="1TIwiD" id="6a5SBPfXGBP">
@@ -527,6 +531,32 @@
     </node>
     <node concept="PrWs8" id="1dVUzz9f3Wj" role="PzmwI">
       <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2H3Yrqdbnnx">
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="AbstractBitType" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
+    <node concept="PrWs8" id="2H3YrqdbnGL" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:4ZVDCZCa$xx" resolve="IOrdered" />
+    </node>
+    <node concept="PrWs8" id="2H3YrqdbnGQ" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:4ZVDCZCaQ86" resolve="INumber" />
+    </node>
+    <node concept="1TJgyi" id="2H3Yrqdcu$P" role="1TKVEl">
+      <property role="TrG5h" value="width" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="34uiID1td4_">
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="SignedBitType" />
+    <property role="34LRSv" value="bit" />
+    <ref role="1TJDcQ" node="2H3Yrqdbnnx" resolve="AbstractBitType" />
+    <node concept="PrWs8" id="34uiID1zvlm" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:24lM_j3AaK6" resolve="ISigned" />
     </node>
   </node>
 </model>
