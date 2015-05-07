@@ -5165,5 +5165,50 @@
       <ref role="1YaFvo" to="k146:MEgWBzPAcP" resolve="FlagTestNot" />
     </node>
   </node>
+  <node concept="18kY7G" id="6JDtEcSZtDE">
+    <property role="TrG5h" value="check_DecTab" />
+    <property role="3GE5qa" value="dectab" />
+    <node concept="3clFbS" id="6JDtEcSZtDF" role="18ibNy">
+      <node concept="3cpWs8" id="6JDtEcSZwwQ" role="3cqZAp">
+        <node concept="3cpWsn" id="6JDtEcSZwwR" role="3cpWs9">
+          <property role="TrG5h" value="type" />
+          <node concept="3Tqbb2" id="6JDtEcSZwwN" role="1tU5fm" />
+          <node concept="2OqwBi" id="6JDtEcSZwwS" role="33vP2m">
+            <node concept="1YBJjd" id="6JDtEcSZwwT" role="2Oq$k0">
+              <ref role="1YBMHb" node="6JDtEcSZtDH" resolve="decTab" />
+            </node>
+            <node concept="3JvlWi" id="6JDtEcSZwwU" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="6JDtEcSRGyk" role="3cqZAp">
+        <node concept="3clFbS" id="6JDtEcSRGyl" role="3clFbx">
+          <node concept="2MkqsV" id="6JDtEcSRHyP" role="3cqZAp">
+            <node concept="Xl_RD" id="6JDtEcSRHz4" role="2MkJ7o">
+              <property role="Xl_RC" value="could not calculate common super type" />
+            </node>
+            <node concept="1YBJjd" id="6JDtEcT115E" role="2OEOjV">
+              <ref role="1YBMHb" node="6JDtEcSZtDH" resolve="decTab" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="6JDtEcSRHkK" role="3clFbw">
+          <node concept="37vLTw" id="6JDtEcT114A" role="2Oq$k0">
+            <ref role="3cqZAo" node="6JDtEcSZwwR" resolve="type" />
+          </node>
+          <node concept="1mIQ4w" id="6JDtEcSRHxf" role="2OqNvi">
+            <node concept="chp4Y" id="6JDtEcSRHxM" role="cj9EA">
+              <ref role="cht4Q" to="tpd4:hfSilrV" resolve="RuntimeTypeVariable" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="6JDtEcT112T" role="3cqZAp" />
+    </node>
+    <node concept="1YaCAy" id="6JDtEcSZtDH" role="1YuTPh">
+      <property role="TrG5h" value="decTab" />
+      <ref role="1YaFvo" to="k146:5oGU$loBXvt" resolve="DecTab" />
+    </node>
+  </node>
 </model>
 

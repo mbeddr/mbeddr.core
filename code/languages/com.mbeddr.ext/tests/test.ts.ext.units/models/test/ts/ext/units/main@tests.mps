@@ -5581,15 +5581,6 @@
             </node>
           </node>
         </node>
-        <node concept="2NXPZ9" id="29E2s0GNPGv" role="N3F5h">
-          <property role="TrG5h" value="empty_1412777552432_2" />
-        </node>
-        <node concept="2NXPZ9" id="4UqVSP8cU_G" role="N3F5h">
-          <property role="TrG5h" value="empty_1407410043445_2" />
-        </node>
-        <node concept="2NXPZ9" id="4UqVSP8cU_H" role="N3F5h">
-          <property role="TrG5h" value="empty_1406798657222_9" />
-        </node>
         <node concept="3GEVxB" id="4UqVSP8cU_I" role="2OODSX">
           <ref role="3GEb4d" node="7j7F_4oxd7n" resolve="DefaultUnits" />
         </node>

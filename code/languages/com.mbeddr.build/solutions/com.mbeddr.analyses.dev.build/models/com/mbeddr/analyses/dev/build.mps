@@ -171,6 +171,9 @@
       <node concept="m$_yC" id="16PiFwINTSO" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5CFKsRWRuFN" resolve="jetbrains.mps.debugger.api" />
       </node>
+      <node concept="m$_yC" id="32kfzHm5vfl" role="m$_yJ">
+        <ref role="m$_y1" to="p6ld:7eF9rfAuFw7" resolve="com.mbeddr.analyses.cbmc" />
+      </node>
     </node>
     <node concept="398rNT" id="3bBV0dtdsWv" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
@@ -464,6 +467,9 @@
       </node>
       <node concept="m$_yC" id="6OvnjLCaYJH" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4O0hKJpjIV3" resolve="jetbrains.mps.ide.devkit" />
+      </node>
+      <node concept="m$_yC" id="32kfzHm5vju" role="m$_yJ">
+        <ref role="m$_y1" to="p6ld:7eF9rfAuFw7" resolve="com.mbeddr.analyses.cbmc" />
       </node>
     </node>
     <node concept="398rNT" id="7Vt15sLWjLU" role="1l3spd">

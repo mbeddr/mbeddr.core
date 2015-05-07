@@ -24,8 +24,8 @@
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="cl6c" ref="r:890ea833-37c9-445e-a04d-3b69ce24aa30(com.mbeddr.core.modules.editor)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor">
@@ -99,12 +99,17 @@
         <child id="1139535280620" name="executeFunction" index="1hA7z_" />
       </concept>
       <concept id="1139535439104" name="jetbrains.mps.lang.editor.structure.CellActionMap_ExecuteFunction" flags="in" index="1hAIg9" />
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1223387125302" name="jetbrains.mps.lang.editor.structure.QueryFunction_Boolean" flags="in" index="3nzxsE" />
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -7707,6 +7712,58 @@
           <property role="VOm3f" value="false" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7DvJ5MZfF4g">
+    <property role="3GE5qa" value="stubbing" />
+    <ref role="1XX52x" to="q5q6:7DvJ5MZf5j_" resolve="SingleStubConfig" />
+    <node concept="3EZMnI" id="7DvJ5MZfF4o" role="2wV5jI">
+      <node concept="3F0ifn" id="7DvJ5MZfF4I" role="3EZMnx">
+        <property role="3F0ifm" value="original:" />
+      </node>
+      <node concept="1iCGBv" id="7DvJ5MZfF53" role="3EZMnx">
+        <ref role="1NtTu8" to="q5q6:7DvJ5MZf5jA" />
+        <node concept="1sVBvm" id="7DvJ5MZfF55" role="1sWHZn">
+          <node concept="3F0A7n" id="7DvJ5MZfF5P" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7DvJ5MZfF6m" role="3EZMnx">
+        <property role="3F0ifm" value="stubbed by:" />
+      </node>
+      <node concept="1iCGBv" id="7DvJ5MZfF7b" role="3EZMnx">
+        <ref role="1NtTu8" to="q5q6:7DvJ5MZf5jE" />
+        <node concept="1sVBvm" id="7DvJ5MZfF7d" role="1sWHZn">
+          <node concept="3F0A7n" id="7DvJ5MZfF8J" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="7DvJ5MZfF4r" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7DvJ5MZf5jU">
+    <property role="3GE5qa" value="stubbing" />
+    <ref role="1XX52x" to="q5q6:7DvJ5MZf4YH" resolve="StubsConfiguration" />
+    <node concept="3EZMnI" id="7DvJ5MZf65N" role="2wV5jI">
+      <node concept="3F0ifn" id="7DvJ5MZf666" role="3EZMnx">
+        <property role="3F0ifm" value="stubs configuration" />
+      </node>
+      <node concept="3EZMnI" id="7DvJ5MZf67z" role="3EZMnx">
+        <node concept="2iRfu4" id="7DvJ5MZf67$" role="2iSdaV" />
+        <node concept="3XFhqQ" id="7DvJ5MZf67r" role="3EZMnx" />
+        <node concept="3EZMnI" id="7DvJ5MZf681" role="3EZMnx">
+          <node concept="2iRkQZ" id="7DvJ5MZf682" role="2iSdaV" />
+          <node concept="3F2HdR" id="7DvJ5MZf68o" role="3EZMnx">
+            <ref role="1NtTu8" to="q5q6:7DvJ5MZf5jL" />
+            <node concept="2iRkQZ" id="7DvJ5MZf68q" role="2czzBx" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="7DvJ5MZf65Q" role="2iSdaV" />
     </node>
   </node>
 </model>
