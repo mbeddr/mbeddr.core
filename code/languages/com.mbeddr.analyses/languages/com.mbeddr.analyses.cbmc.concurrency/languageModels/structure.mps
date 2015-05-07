@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" implicit="true" />
   </imports>
@@ -16,6 +17,9 @@
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+      </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
@@ -65,6 +69,98 @@
     </node>
     <node concept="PrWs8" id="3V3CJZuMTCN" role="PzmwI">
       <ref role="PrY4T" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="70ux1CtIY3f">
+    <property role="TrG5h" value="ParallelAssert" />
+    <property role="34LRSv" value="passert" />
+    <property role="R4oN_" value="parallel assert" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="70ux1CtJ8d1" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="PrWs8" id="70ux1CtIYhy" role="PzmwI">
+      <ref role="PrY4T" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
+    </node>
+    <node concept="1TJgyj" id="70ux1CtIYWB" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="70ux1CtN9OX">
+    <property role="TrG5h" value="LocalWrite" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="70ux1CtNes8" role="PzmwI">
+      <ref role="PrY4T" node="70ux1CtNboD" resolve="IConcurrencyExpression" />
+    </node>
+    <node concept="1TJgyj" id="70ux1CtNesN" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="x27k:5IYyAOzCwFE" resolve="GlobalVarRef" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="70ux1CtNboD">
+    <property role="TrG5h" value="IConcurrencyExpression" />
+    <node concept="PrWs8" id="1yz83W1ySzC" role="PrDN$">
+      <ref role="PrY4T" to="mj1l:3bfDwHbElen" resolve="IExpressionWrapper" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1yz83W1yOSy">
+    <property role="TrG5h" value="LocalRead" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="1yz83W1yOSz" role="PzmwI">
+      <ref role="PrY4T" node="70ux1CtNboD" resolve="IConcurrencyExpression" />
+    </node>
+    <node concept="1TJgyj" id="1yz83W1yOS$" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1yz83W1yOSO">
+    <property role="TrG5h" value="RemoteRead" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="1yz83W1yOSP" role="PzmwI">
+      <ref role="PrY4T" node="70ux1CtNboD" resolve="IConcurrencyExpression" />
+    </node>
+    <node concept="1TJgyj" id="1yz83W1yOSQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1yz83W1yOT3">
+    <property role="TrG5h" value="RemoteWrite" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="1yz83W1yOT4" role="PzmwI">
+      <ref role="PrY4T" node="70ux1CtNboD" resolve="IConcurrencyExpression" />
+    </node>
+    <node concept="1TJgyj" id="1yz83W1yOT5" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1yz83W1yQQd">
+    <property role="TrG5h" value="HasHappened" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="1yz83W1yR6F" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="70ux1CtNboD" resolve="IConcurrencyExpression" />
+    </node>
+    <node concept="PrWs8" id="1yz83W1yR6D" role="PzmwI">
+      <ref role="PrY4T" node="70ux1CtNboD" resolve="IConcurrencyExpression" />
     </node>
   </node>
 </model>

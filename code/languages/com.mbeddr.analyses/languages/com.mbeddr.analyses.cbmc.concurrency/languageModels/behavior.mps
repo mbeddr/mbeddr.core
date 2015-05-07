@@ -143,5 +143,26 @@
       <node concept="17QB3L" id="3V3CJZuMTCX" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="70ux1CtJ6aP">
+    <ref role="13h7C2" to="nok9:70ux1CtIY3f" resolve="ParallelAssert" />
+    <node concept="13i0hz" id="70ux1CtJ6c0" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getMessage" />
+      <ref role="13i0hy" to="th2u:3V3CJZuMSfi" resolve="getMessage" />
+      <node concept="3Tm1VV" id="70ux1CtJ6c1" role="1B3o_S" />
+      <node concept="3clFbS" id="70ux1CtJ6c2" role="3clF47">
+        <node concept="3clFbF" id="70ux1CtJ6c3" role="3cqZAp">
+          <node concept="Xl_RD" id="70ux1CtJ6c4" role="3clFbG">
+            <property role="Xl_RC" value="parallel assertion" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="70ux1CtJ6c5" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="70ux1CtJ6aQ" role="13h7CW">
+      <node concept="3clFbS" id="70ux1CtJ6aR" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

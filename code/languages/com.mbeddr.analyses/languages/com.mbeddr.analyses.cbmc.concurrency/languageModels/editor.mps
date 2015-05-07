@@ -32,6 +32,7 @@
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
       <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -74,6 +75,87 @@
         <property role="3F0ifm" value=");" />
       </node>
       <node concept="2iRfu4" id="3V3CJZuJM1R" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="70ux1CtJ6m0">
+    <ref role="1XX52x" to="nok9:70ux1CtIY3f" resolve="ParallelAssert" />
+    <node concept="3EZMnI" id="70ux1CtJ8ca" role="2wV5jI">
+      <node concept="3F0ifn" id="70ux1CtJ8ck" role="3EZMnx">
+        <property role="3F0ifm" value="thru {" />
+      </node>
+      <node concept="3F1sOY" id="70ux1CtJa2d" role="3EZMnx">
+        <ref role="1NtTu8" to="nok9:70ux1CtJ8d1" />
+      </node>
+      <node concept="3F0ifn" id="70ux1CtJa2q" role="3EZMnx">
+        <property role="3F0ifm" value="} passert (" />
+      </node>
+      <node concept="3F1sOY" id="70ux1CtJa2F" role="3EZMnx">
+        <ref role="1NtTu8" to="nok9:70ux1CtIYWB" />
+      </node>
+      <node concept="3F0ifn" id="70ux1CtJa30" role="3EZMnx">
+        <property role="3F0ifm" value=");" />
+      </node>
+      <node concept="2iRfu4" id="70ux1CtJ8cd" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="70ux1CtNesg">
+    <ref role="1XX52x" to="nok9:70ux1CtN9OX" resolve="LocalWrite" />
+    <node concept="3EZMnI" id="70ux1CtNesw" role="2wV5jI">
+      <node concept="3F0ifn" id="70ux1CtNesE" role="3EZMnx">
+        <property role="3F0ifm" value="LW(" />
+      </node>
+      <node concept="3F1sOY" id="70ux1CtNesQ" role="3EZMnx">
+        <ref role="1NtTu8" to="nok9:70ux1CtNesN" />
+      </node>
+      <node concept="3F0ifn" id="70ux1CtNet3" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="2iRfu4" id="70ux1CtNesz" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1yz83W1yR7$">
+    <ref role="1XX52x" to="nok9:1yz83W1yOSy" resolve="LocalRead" />
+    <node concept="3EZMnI" id="1yz83W1yR7_" role="2wV5jI">
+      <node concept="3F0ifn" id="1yz83W1yR7A" role="3EZMnx">
+        <property role="3F0ifm" value="LR(" />
+      </node>
+      <node concept="3F1sOY" id="1yz83W1yR7B" role="3EZMnx">
+        <ref role="1NtTu8" to="nok9:1yz83W1yOS$" />
+      </node>
+      <node concept="3F0ifn" id="1yz83W1yR7C" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="2iRfu4" id="1yz83W1yR7D" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1yz83W1ySza">
+    <ref role="1XX52x" to="nok9:1yz83W1yOT3" resolve="RemoteWrite" />
+    <node concept="3EZMnI" id="1yz83W1ySzb" role="2wV5jI">
+      <node concept="3F0ifn" id="1yz83W1ySzc" role="3EZMnx">
+        <property role="3F0ifm" value="RW(" />
+      </node>
+      <node concept="3F1sOY" id="1yz83W1ySzd" role="3EZMnx">
+        <ref role="1NtTu8" to="nok9:1yz83W1yOT5" />
+      </node>
+      <node concept="3F0ifn" id="1yz83W1ySze" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="2iRfu4" id="1yz83W1ySzf" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1yz83W1ySzy">
+    <ref role="1XX52x" to="nok9:1yz83W1yOSO" resolve="RemoteRead" />
+    <node concept="3EZMnI" id="1yz83W1ySzz" role="2wV5jI">
+      <node concept="3F0ifn" id="1yz83W1ySz$" role="3EZMnx">
+        <property role="3F0ifm" value="RR(" />
+      </node>
+      <node concept="3F1sOY" id="1yz83W1ySz_" role="3EZMnx">
+        <ref role="1NtTu8" to="nok9:1yz83W1yOSQ" />
+      </node>
+      <node concept="3F0ifn" id="1yz83W1ySzA" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="2iRfu4" id="1yz83W1ySzB" role="2iSdaV" />
     </node>
   </node>
 </model>
