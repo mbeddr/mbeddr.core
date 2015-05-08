@@ -185,6 +185,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -3061,6 +3062,74 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="4xt6LZKDUms" role="3cqZAp">
+          <node concept="3cpWsn" id="4xt6LZKDUmt" role="3cpWs9">
+            <property role="TrG5h" value="tool" />
+            <node concept="17QB3L" id="4xt6LZKDUmo" role="1tU5fm" />
+            <node concept="2OqwBi" id="4xt6LZKDUmu" role="33vP2m">
+              <node concept="2OqwBi" id="4xt6LZKDUmv" role="2Oq$k0">
+                <node concept="37vLTw" id="4xt6LZKDUmw" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4XbM$YH6qS6" resolve="config" />
+                </node>
+                <node concept="2S8uIT" id="4xt6LZKDUmx" role="2OqNvi">
+                  <ref role="2S8YL0" node="40PV5hA1DQc" resolve="usedProver" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4xt6LZKDUmy" role="2OqNvi">
+                <ref role="37wK5l" node="40PV5hA1E76" resolve="getCommand" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4xt6LZKE9y4" role="3cqZAp">
+          <node concept="3cpWsn" id="4xt6LZKE9y5" role="3cpWs9">
+            <property role="TrG5h" value="envVarName" />
+            <node concept="17QB3L" id="4xt6LZKEaCp" role="1tU5fm" />
+            <node concept="2OqwBi" id="4xt6LZKE9y6" role="33vP2m">
+              <node concept="1eOMI4" id="4xt6LZKE9y7" role="2Oq$k0">
+                <node concept="3cpWs3" id="4xt6LZKE9y8" role="1eOMHV">
+                  <node concept="37vLTw" id="4xt6LZKE9y9" role="3uHU7B">
+                    <ref role="3cqZAo" node="4xt6LZKDUmt" resolve="tool" />
+                  </node>
+                  <node concept="Xl_RD" id="4xt6LZKE9ya" role="3uHU7w">
+                    <property role="Xl_RC" value="_CMD" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="4xt6LZKE9yb" role="2OqNvi">
+                <ref role="37wK5l" to="e2lb:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4xt6LZKE037" role="3cqZAp">
+          <node concept="3clFbS" id="4xt6LZKE039" role="3clFbx">
+            <node concept="3clFbF" id="4xt6LZKEaRf" role="3cqZAp">
+              <node concept="37vLTI" id="4xt6LZKEb2L" role="3clFbG">
+                <node concept="37vLTw" id="4xt6LZKEaRd" role="37vLTJ">
+                  <ref role="3cqZAo" node="4xt6LZKDUmt" resolve="tool" />
+                </node>
+                <node concept="2YIFZM" id="4xt6LZKEb9o" role="37vLTx">
+                  <ref role="37wK5l" to="e2lb:~System.getenv(java.lang.String):java.lang.String" resolve="getenv" />
+                  <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+                  <node concept="37vLTw" id="4xt6LZKEb9p" role="37wK5m">
+                    <ref role="3cqZAo" node="4xt6LZKE9y5" resolve="envVarName" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4xt6LZKE7sc" role="3clFbw">
+            <node concept="2YIFZM" id="4xt6LZKE68o" role="2Oq$k0">
+              <ref role="37wK5l" to="e2lb:~System.getenv(java.lang.String):java.lang.String" resolve="getenv" />
+              <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+              <node concept="37vLTw" id="4xt6LZKE9yc" role="37wK5m">
+                <ref role="3cqZAo" node="4xt6LZKE9y5" resolve="envVarName" />
+              </node>
+            </node>
+            <node concept="17RvpY" id="4xt6LZKE9rg" role="2OqNvi" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="4XbM$YH6pfM" role="3cqZAp">
           <node concept="3cpWsn" id="4XbM$YH6pfN" role="3cpWs9">
             <property role="TrG5h" value="result" />
@@ -3079,18 +3148,8 @@
                 <node concept="37vLTw" id="4XbM$YH6pfT" role="37wK5m">
                   <ref role="3cqZAo" node="7F8$WoW7SiJ" resolve="analyzedCFiles" />
                 </node>
-                <node concept="2OqwBi" id="4XbM$YH6pfU" role="37wK5m">
-                  <node concept="2OqwBi" id="4XbM$YH6pfV" role="2Oq$k0">
-                    <node concept="37vLTw" id="4XbM$YH6vfX" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4XbM$YH6qS6" resolve="config" />
-                    </node>
-                    <node concept="2S8uIT" id="4XbM$YH6pfX" role="2OqNvi">
-                      <ref role="2S8YL0" node="40PV5hA1DQc" resolve="usedProver" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="4XbM$YH6pfY" role="2OqNvi">
-                    <ref role="37wK5l" node="40PV5hA1E76" resolve="getCommand" />
-                  </node>
+                <node concept="37vLTw" id="4xt6LZKDUmz" role="37wK5m">
+                  <ref role="3cqZAo" node="4xt6LZKDUmt" resolve="tool" />
                 </node>
                 <node concept="37vLTw" id="4XbM$YH6pfZ" role="37wK5m">
                   <ref role="3cqZAo" node="4XbM$YH6pgb" resolve="args" />
