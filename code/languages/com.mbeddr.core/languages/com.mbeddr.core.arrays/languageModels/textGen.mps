@@ -304,7 +304,7 @@
       <node concept="3clFbS" id="4AGl5dzxFV7" role="2VODD2">
         <node concept="lc7rE" id="4AGl5dzxFV8" role="3cqZAp">
           <node concept="la8eA" id="4AGl5dzxFVa" role="lcghm">
-            <property role="lacIc" value="0" />
+            <property role="lacIc" value="(void*)0" />
           </node>
         </node>
       </node>
