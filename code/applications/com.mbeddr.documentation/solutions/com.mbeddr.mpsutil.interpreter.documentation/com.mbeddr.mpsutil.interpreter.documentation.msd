@@ -27,6 +27,10 @@
     <usedLanguage>86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)</usedLanguage>
     <usedLanguage>7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</usedLanguage>
     <usedLanguage>2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)</usedLanguage>
+    <usedLanguage>1c5b7d51-0ef3-4332-af36-874466950878(com.mbeddr.doc.expressions)</usedLanguage>
+    <usedLanguage>5344b781-2242-4d23-be90-673ee10bea46(com.mbeddr.doc.qa)</usedLanguage>
+    <usedLanguage>d7145000-936a-47e8-95a5-71f220e623f9(com.mbeddr.doc.self)</usedLanguage>
+    <usedLanguage>c61970b4-87fb-4429-8a3a-c87719f000a3(com.mbeddr.doc.terms)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)</usedDevKit>
@@ -36,11 +40,16 @@
     <language id="390de4af-0c8d-4716-8dec-3d05ca751b28" fqName="com.mbeddr.core.cinterpreter" version="0" />
     <language id="223dd778-c44f-4ef3-9535-7aa7d12244a6" fqName="com.mbeddr.core.debug" version="0" />
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" fqName="com.mbeddr.core.expressions" version="0" />
+    <language id="0c8e0d19-c3cf-4b31-af77-531227edbce8" fqName="com.mbeddr.core.qa" version="0" />
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" fqName="com.mbeddr.doc" version="0" />
+    <language id="1c5b7d51-0ef3-4332-af36-874466950878" fqName="com.mbeddr.doc.expressions" version="0" />
     <language id="f44f6b9a-bf30-4f73-866e-fac17c177409" fqName="com.mbeddr.doc.gen_latex" version="0" />
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" fqName="com.mbeddr.doc.gen_xhtml" version="0" />
     <language id="f8f68d92-c6d2-44b3-8d63-c00ade75ec86" fqName="com.mbeddr.doc.latex" version="0" />
     <language id="e06345c7-da82-4f8b-bd44-1425fe158640" fqName="com.mbeddr.doc.meta" version="0" />
+    <language id="5344b781-2242-4d23-be90-673ee10bea46" fqName="com.mbeddr.doc.qa" version="0" />
+    <language id="d7145000-936a-47e8-95a5-71f220e623f9" fqName="com.mbeddr.doc.self" version="0" />
+    <language id="c61970b4-87fb-4429-8a3a-c87719f000a3" fqName="com.mbeddr.doc.terms" version="0" />
     <language id="a482b416-d0c9-473f-8f67-725ed642b3f3" fqName="com.mbeddr.mpsutil.breadcrumb" version="0" />
     <language id="47f075a6-558e-4640-a606-7ce0236c8023" fqName="com.mbeddr.mpsutil.interpreter" version="0" />
     <language id="1c897ba5-9d43-4035-ac7f-0306495743ac" fqName="com.mbeddr.mpsutil.interpreter.test" version="0" />

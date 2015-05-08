@@ -5,9 +5,13 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="e06345c7-da82-4f8b-bd44-1425fe158640" name="com.mbeddr.doc.meta" version="-1" />
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="0" />
+    <use id="1c5b7d51-0ef3-4332-af36-874466950878" name="com.mbeddr.doc.expressions" version="0" />
+    <use id="e06345c7-da82-4f8b-bd44-1425fe158640" name="com.mbeddr.doc.meta" version="0" />
+    <use id="5344b781-2242-4d23-be90-673ee10bea46" name="com.mbeddr.doc.qa" version="0" />
+    <use id="d7145000-936a-47e8-95a5-71f220e623f9" name="com.mbeddr.doc.self" version="0" />
+    <use id="c61970b4-87fb-4429-8a3a-c87719f000a3" name="com.mbeddr.doc.terms" version="0" />
   </languages>
   <imports>
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
@@ -196,6 +200,9 @@
         <property role="BaBD8" value="com.mbeddr.core.base.str" />
         <property role="BaHAW" value="com.mbeddr.core.base.structure" />
         <property role="BaGAP" value="" />
+        <node concept="1h5QrK" id="1d83w5bFgEm" role="lGtFl">
+          <property role="TrG5h" value="applicableLanguages" />
+        </node>
       </node>
     </node>
     <node concept="d$4Dx" id="1T7O9iX6dJx" role="d$6nW">
@@ -220,7 +227,11 @@
       </node>
     </node>
     <node concept="rvkaK" id="1T7O9iX6Nli" role="qq9xK">
-      <node concept="10Oyi0" id="1T7O9iX6PF0" role="r5wI3" />
+      <node concept="10Oyi0" id="1T7O9iX6PF0" role="r5wI3">
+        <node concept="1h5QrK" id="1d83w5bFhRG" role="lGtFl">
+          <property role="TrG5h" value="typeMappings" />
+        </node>
+      </node>
       <node concept="rxStX" id="1T7O9iX6PDl" role="rai9p">
         <ref role="rxSuV" to="mj1l:7lNBHBNBzy3" resolve="Int16tType" />
       </node>
@@ -269,7 +280,7 @@
         </node>
       </node>
       <node concept="1h5QrK" id="46pvM1xfJji" role="lGtFl">
-        <property role="TrG5h" value="aConceptEvaluator" />
+        <property role="TrG5h" value="evaluators" />
       </node>
     </node>
     <node concept="qq9P1" id="1T7O9iX6RHK" role="qq9xR">
@@ -327,6 +338,9 @@
       <node concept="3vetai" id="1T7O9iX7hsP" role="3vQZUl">
         <node concept="rqRoa" id="1T7O9iX7htp" role="3vdyny">
           <ref role="rqRob" to="mj1l:6iIoqg1yDLg" />
+          <node concept="1h5QrK" id="1d83w5bFllc" role="lGtFl">
+            <property role="TrG5h" value="interpretExpression" />
+          </node>
         </node>
       </node>
     </node>
@@ -338,7 +352,11 @@
           <ref role="1Pybhc" to="e2lb:~Long" resolve="Long" />
           <ref role="37wK5l" to="e2lb:~Long.valueOf(java.lang.String):java.lang.Long" resolve="valueOf" />
           <node concept="2OqwBi" id="1T7O9iX7jAn" role="37wK5m">
-            <node concept="oxGPV" id="1T7O9iX7jwl" role="2Oq$k0" />
+            <node concept="oxGPV" id="1T7O9iX7jwl" role="2Oq$k0">
+              <node concept="1h5QrK" id="1d83w5bFmrM" role="lGtFl">
+                <property role="TrG5h" value="nodeExpression" />
+              </node>
+            </node>
             <node concept="3TrcHB" id="1T7O9iX7qEe" role="2OqNvi">
               <ref role="3TsBF5" to="mj1l:1UQ4qqfV3yK" resolve="value" />
             </node>
@@ -372,6 +390,9 @@
               <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" />
             </node>
           </node>
+          <node concept="1h5QrK" id="1d83w5bFlWg" role="lGtFl">
+            <property role="TrG5h" value="operationCallExpression" />
+          </node>
         </node>
       </node>
     </node>
@@ -380,6 +401,9 @@
       <node concept="3vetai" id="1T7O9iX7Dae" role="3vQZUl">
         <node concept="rqRoa" id="1T7O9iX7DaM" role="3vdyny">
           <ref role="rqRob" to="x27k:3CmSUB7Fp_k" />
+        </node>
+        <node concept="1h5QrK" id="1d83w5bFjZi" role="lGtFl">
+          <property role="TrG5h" value="simpleEvaluator" />
         </node>
       </node>
     </node>
@@ -470,6 +494,9 @@
               </node>
             </node>
           </node>
+          <node concept="1h5QrK" id="1d83w5bFjZs" role="lGtFl">
+            <property role="TrG5h" value="complexEvaluator" />
+          </node>
         </node>
       </node>
     </node>
@@ -482,6 +509,9 @@
     <property role="UYu25" value="sample" />
     <node concept="1J7L1T" id="1T7O9iX8uBN" role="1J4apk">
       <ref role="1J7WVQ" node="1T7O9iX40xR" resolve="ExpressionInterpreter" />
+      <node concept="1h5QrK" id="1d83w5bFgj$" role="lGtFl">
+        <property role="TrG5h" value="relatedInterpreters" />
+      </node>
     </node>
     <node concept="qq9P1" id="1T7O9iX7N$T" role="qq9xR">
       <ref role="qq9wM" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
@@ -492,7 +522,11 @@
           </node>
           <node concept="3EllGN" id="1T7O9iX7PGw" role="37vLTJ">
             <node concept="oxGPV" id="1T7O9iX7PHK" role="3ElVtu" />
-            <node concept="TvHiN" id="1T7O9iX7Pva" role="3ElQJh" />
+            <node concept="TvHiN" id="1T7O9iX7Pva" role="3ElQJh">
+              <node concept="1h5QrK" id="1d83w5bFn4X" role="lGtFl">
+                <property role="TrG5h" value="envExpression" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -512,6 +546,9 @@
               </node>
             </node>
             <node concept="TvHiN" id="1T7O9iX7Sl5" role="3ElQJh" />
+          </node>
+          <node concept="1h5QrK" id="1d83w5bFpfA" role="lGtFl">
+            <property role="TrG5h" value="addToEnvironment" />
           </node>
         </node>
       </node>
