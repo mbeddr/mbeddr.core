@@ -46,8 +46,14 @@
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="1M2fIO" id="70ux1CtNboQ">
+    <property role="3GE5qa" value="passert" />
     <ref role="1M2myG" to="nok9:70ux1CtNboD" resolve="IConcurrencyExpression" />
     <node concept="nKS2y" id="70ux1CtNboR" role="1MLUbF">
       <node concept="3clFbS" id="70ux1CtNboS" role="2VODD2">

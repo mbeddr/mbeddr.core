@@ -70,12 +70,16 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
   <node concept="13h7C7" id="3V3CJZuzltu">
+    <property role="3GE5qa" value="properties" />
     <ref role="13h7C2" to="nok9:i5tJSHdiDe" resolve="AssertSeq" />
     <node concept="13hLZK" id="3V3CJZuzltv" role="13h7CW">
       <node concept="3clFbS" id="3V3CJZuzltw" role="2VODD2" />
@@ -97,6 +101,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3V3CJZuMTCP">
+    <property role="3GE5qa" value="properties" />
     <ref role="13h7C2" to="nok9:3V3CJZuJLdS" resolve="HappensAfterPair" />
     <node concept="13hLZK" id="3V3CJZuMTCQ" role="13h7CW">
       <node concept="3clFbS" id="3V3CJZuMTCR" role="2VODD2" />
@@ -144,6 +149,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="70ux1CtJ6aP">
+    <property role="3GE5qa" value="passert" />
     <ref role="13h7C2" to="nok9:70ux1CtIY3f" resolve="ParallelAssert" />
     <node concept="13i0hz" id="70ux1CtJ6c0" role="13h7CS">
       <property role="13i0iv" value="false" />
