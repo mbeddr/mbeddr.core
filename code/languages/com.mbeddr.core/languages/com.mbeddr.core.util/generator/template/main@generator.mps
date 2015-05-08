@@ -11,12 +11,12 @@
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
+    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="-1" />
     <use id="b67a6ca0-735e-4903-b238-4b525bddf96a" name="com.mbeddr.mpsutil.genutil" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
     <use id="896334f3-82ce-427b-bb47-ccd3131864a9" name="com.mbeddr.mpsutil.mappingLabels" version="-1" />
-    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -101,7 +101,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -16439,14 +16439,21 @@
                         <node concept="2OqwBi" id="5aGJjvFBJzt" role="3clFbG">
                           <node concept="1PxgMI" id="5aGJjvFBJjh" role="2Oq$k0">
                             <ref role="1PxNhF" to="mj1l:7FQByU3CrCQ" resolve="Type" />
-                            <node concept="2OqwBi" id="5aGJjvFBGlR" role="1PxMeX">
-                              <node concept="2OqwBi" id="5aGJjvFBEzh" role="2Oq$k0">
-                                <node concept="30H73N" id="5aGJjvFBEt_" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="5aGJjvFBFHv" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="k146:1duwXQeBh9a" />
+                            <node concept="2YIFZM" id="30dcBO$w6DU" role="1PxMeX">
+                              <ref role="37wK5l" to="n7pc:61lw97FqmmD" resolve="getConcreteNonConstVolatileType" />
+                              <ref role="1Pybhc" to="n7pc:7YIk2VQKlj4" resolve="MeetTypeHelper" />
+                              <node concept="1PxgMI" id="30dcBO$wfZH" role="37wK5m">
+                                <ref role="1PxNhF" to="tpck:hYa1RjM" resolve="IType" />
+                                <node concept="2OqwBi" id="5aGJjvFBGlR" role="1PxMeX">
+                                  <node concept="2OqwBi" id="5aGJjvFBEzh" role="2Oq$k0">
+                                    <node concept="30H73N" id="5aGJjvFBEt_" role="2Oq$k0" />
+                                    <node concept="3TrEf2" id="5aGJjvFBFHv" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="k146:1duwXQeBh9a" />
+                                    </node>
+                                  </node>
+                                  <node concept="3JvlWi" id="5aGJjvFBIqF" role="2OqNvi" />
                                 </node>
                               </node>
-                              <node concept="3JvlWi" id="5aGJjvFBIqF" role="2OqNvi" />
                             </node>
                           </node>
                           <node concept="2qgKlT" id="5aGJjvFBJUa" role="2OqNvi">

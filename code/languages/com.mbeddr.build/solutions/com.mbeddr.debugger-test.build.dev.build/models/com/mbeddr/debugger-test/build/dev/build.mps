@@ -858,7 +858,7 @@
   </node>
   <node concept="1l3spW" id="62XMcUo5H0a">
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.debugger.testing" />
-    <property role="TrG5h" value="com.mbeddr.debugger.testing.tests.core.build" />
+    <property role="TrG5h" value="com.mbeddr.debugger-testing.core-tests.build" />
     <property role="turDy" value="debugger.testing.tests.core.xml" />
     <node concept="1wNqPr" id="2B1T7v1mPsy" role="3989C9">
       <property role="1wNuhc" value="true" />
@@ -898,9 +898,9 @@
       </node>
     </node>
     <node concept="22LTRH" id="29so9Vc8xx2" role="1hWBAP">
-      <property role="TrG5h" value="com.mbeddr.debugger.testing.tests.core" />
-      <node concept="22LTRM" id="29so9Vc8xxK" role="22LTRK">
-        <ref role="22LTRN" node="62XMcUo6Gwb" resolve="com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
+      <property role="TrG5h" value="core-tests" />
+      <node concept="22LTRM" id="3AspB7AgwdC" role="22LTRK">
+        <ref role="22LTRN" node="6v3tcHGMVS3" resolve="test.debugging.core" />
       </node>
     </node>
     <node concept="2G$12M" id="62XMcUo6Gwa" role="3989C9">
@@ -965,7 +965,7 @@
         <property role="TrG5h" value="com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="3LESm3" value="~_PreferencesModule#com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="sources" />
         <node concept="398BVA" id="62XMcUo6Gwm" role="3LF7KH">
           <ref role="398BVh" node="62XMcUo5H0w" resolve="mbeddr.github.core.home" />
           <node concept="2Ry0Ak" id="62XMcUo6Gzg" role="iGT6I">
@@ -1011,7 +1011,7 @@
       </node>
     </node>
     <node concept="2sgV4H" id="7HfWMO9mkPn" role="1l3spa">
-      <ref role="1l3spb" node="7HfWMO9mkLD" resolve="com.mbeddr.debugger.testing.tests.cross.build" />
+      <ref role="1l3spb" node="7HfWMO9mkLD" resolve="com.mbeddr.debugger-testing.cross-tests.build" />
     </node>
     <node concept="2sgV4H" id="62XMcUo6GQq" role="1l3spa">
       <ref role="1l3spb" node="62XMcUo5Gnp" resolve="com.mbeddr.debugger-testing.runtime.build" />
@@ -1160,11 +1160,14 @@
       <node concept="L2wRC" id="1cfjnjd_yxw" role="39821P">
         <ref role="L2wRA" node="62XMcUo6Gwb" resolve="com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
       </node>
+      <node concept="L2wRC" id="3AspB7Agweo" role="39821P">
+        <ref role="L2wRA" node="6v3tcHGMVS3" resolve="test.debugging.core" />
+      </node>
     </node>
   </node>
   <node concept="1l3spW" id="62XMcUo5H0d">
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.debugger.testing" />
-    <property role="TrG5h" value="com.mbeddr.debugger.testing.tests.runtime.build" />
+    <property role="TrG5h" value="com.mbeddr.debugger-testing.runtime-tests.build" />
     <property role="turDy" value="debugger-testing.tests.runtime.xml" />
     <node concept="1wNqPr" id="2B1T7v1mPYc" role="3989C9">
       <property role="1wNuhc" value="true" />
@@ -1555,7 +1558,7 @@
   </node>
   <node concept="1l3spW" id="62XMcUo9Rlp">
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.debugger.testing" />
-    <property role="TrG5h" value="com.mbeddr.debugger.testing.tests.ext.components.build" />
+    <property role="TrG5h" value="com.mbeddr.debugger-testing.components-tests.build" />
     <property role="turDy" value="debugger.testing.tests.ext.components.xml" />
     <node concept="1wNqPr" id="2B1T7v1mRTm" role="3989C9">
       <property role="1wNuhc" value="true" />
@@ -1647,7 +1650,7 @@
         <property role="TrG5h" value="com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="3LESm3" value="~_PreferencesModule#com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="sources" />
         <node concept="398BVA" id="6v3tcHGMX8$" role="3LF7KH">
           <ref role="398BVh" node="62XMcUo9Rmc" resolve="mbeddr.github.core.home" />
           <node concept="2Ry0Ak" id="6v3tcHGMX8_" role="iGT6I">
@@ -1693,7 +1696,7 @@
       </node>
     </node>
     <node concept="2sgV4H" id="7HfWMO9mkPt" role="1l3spa">
-      <ref role="1l3spb" node="7HfWMO9mkLD" resolve="com.mbeddr.debugger.testing.tests.cross.build" />
+      <ref role="1l3spb" node="7HfWMO9mkLD" resolve="com.mbeddr.debugger-testing.cross-tests.build" />
     </node>
     <node concept="2sgV4H" id="62XMcUo9RlV" role="1l3spa">
       <ref role="1l3spb" node="62XMcUo5Gnp" resolve="com.mbeddr.debugger-testing.runtime.build" />
@@ -1855,7 +1858,7 @@
   </node>
   <node concept="1l3spW" id="7HfWMO9mkLD">
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.debugger.testing" />
-    <property role="TrG5h" value="com.mbeddr.debugger.testing.tests.cross.build" />
+    <property role="TrG5h" value="com.mbeddr.debugger-testing.cross-tests.build" />
     <property role="turDy" value="debugger.testing.tests.cross.xml" />
     <node concept="1wNqPr" id="2B1T7v1mPtj" role="3989C9">
       <property role="1wNuhc" value="true" />
@@ -2107,7 +2110,7 @@
   </node>
   <node concept="1l3spW" id="3OuI4NZK0tK">
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.debugger.testing" />
-    <property role="TrG5h" value="com.mbeddr.debugger.testing.tests.ext.statemachines.build" />
+    <property role="TrG5h" value="com.mbeddr.debugger-testing.statemachines-tests.build" />
     <property role="turDy" value="debugger.testing.tests.ext.statemachines.xml" />
     <node concept="1wNqPr" id="2B1T7v1mPrc" role="3989C9">
       <property role="1wNuhc" value="true" />
@@ -2153,7 +2156,7 @@
         <property role="TrG5h" value="com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="3LESm3" value="~_PreferencesModule#com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="sources" />
         <node concept="398BVA" id="6v3tcHGMXcg" role="3LF7KH">
           <ref role="398BVh" node="3OuI4NZK0uF" resolve="mbeddr.github.core.home" />
           <node concept="2Ry0Ak" id="6v3tcHGMXch" role="iGT6I">
@@ -2239,7 +2242,7 @@
       </node>
     </node>
     <node concept="2sgV4H" id="3OuI4NZK0ul" role="1l3spa">
-      <ref role="1l3spb" node="7HfWMO9mkLD" resolve="com.mbeddr.debugger.testing.tests.cross.build" />
+      <ref role="1l3spb" node="7HfWMO9mkLD" resolve="com.mbeddr.debugger-testing.cross-tests.build" />
     </node>
     <node concept="2sgV4H" id="3OuI4NZK0um" role="1l3spa">
       <ref role="1l3spb" node="62XMcUo5Gnp" resolve="com.mbeddr.debugger-testing.runtime.build" />
@@ -2401,7 +2404,7 @@
   </node>
   <node concept="1l3spW" id="6ey1bOhy9W5">
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.debugger.testing" />
-    <property role="TrG5h" value="com.mbeddr.debugger.testing.tests.ext.physical-units.build" />
+    <property role="TrG5h" value="com.mbeddr.debugger-testing.physical-units-tests.build" />
     <property role="turDy" value="debugger.testing.tests.ext.physical-units.xml" />
     <node concept="2_Ic$z" id="2tUvrc9WSYX" role="3989C9">
       <property role="2_GNG2" value="2048" />
@@ -2447,7 +2450,7 @@
         <property role="TrG5h" value="com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="3LESm3" value="~_PreferencesModule#com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="sources" />
         <node concept="398BVA" id="6v3tcHGMXas" role="3LF7KH">
           <ref role="398BVh" node="6ey1bOhy9X0" resolve="mbeddr.github.core.home" />
           <node concept="2Ry0Ak" id="6v3tcHGMXat" role="iGT6I">
@@ -2533,7 +2536,7 @@
       </node>
     </node>
     <node concept="2sgV4H" id="6ey1bOhy9WE" role="1l3spa">
-      <ref role="1l3spb" node="7HfWMO9mkLD" resolve="com.mbeddr.debugger.testing.tests.cross.build" />
+      <ref role="1l3spb" node="7HfWMO9mkLD" resolve="com.mbeddr.debugger-testing.cross-tests.build" />
     </node>
     <node concept="2sgV4H" id="6ey1bOhy9WF" role="1l3spa">
       <ref role="1l3spb" node="62XMcUo5Gnp" resolve="com.mbeddr.debugger-testing.runtime.build" />
@@ -2680,7 +2683,7 @@
   </node>
   <node concept="1l3spW" id="3q6VMvxn384">
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.debugger.testing" />
-    <property role="TrG5h" value="com.mbeddr.debugger.testing.debugging-tests.build" />
+    <property role="TrG5h" value="com.mbeddr.debugger-testing.debugger-tests.build" />
     <property role="turDy" value="debugger.testing.tests.core.xml" />
     <node concept="1wNqPr" id="3q6VMvxn385" role="3989C9">
       <property role="1wNuhc" value="true" />
@@ -2725,7 +2728,7 @@
         <property role="TrG5h" value="com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="3LESm3" value="~_PreferencesModule#com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
         <property role="2GAjPV" value="false" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="sources" />
         <node concept="398BVA" id="3q6VMvxn4jm" role="3LF7KH">
           <ref role="398BVh" node="3q6VMvxn393" resolve="mbeddr.github.core.home" />
           <node concept="2Ry0Ak" id="3q6VMvxn4jn" role="iGT6I">
@@ -2811,9 +2814,9 @@
       </node>
     </node>
     <node concept="22LTRH" id="3q6VMvxn38g" role="1hWBAP">
-      <property role="TrG5h" value="com.mbeddr.debugger.testing.tests.core" />
-      <node concept="22LTRM" id="3q6VMvxn4e4" role="22LTRK">
-        <ref role="22LTRN" node="3q6VMvxn4jl" resolve="com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
+      <property role="TrG5h" value="debugger-tests" />
+      <node concept="22LTRM" id="3AspB7AhxHf" role="22LTRK">
+        <ref role="22LTRN" node="3q6VMvxn4b1" resolve="test.debugging.core" />
       </node>
     </node>
     <node concept="2sgV4H" id="3q6VMvxn38H" role="1l3spa">
@@ -2835,7 +2838,7 @@
       </node>
     </node>
     <node concept="2sgV4H" id="3q6VMvxn38N" role="1l3spa">
-      <ref role="1l3spb" node="7HfWMO9mkLD" resolve="com.mbeddr.debugger.testing.tests.cross.build" />
+      <ref role="1l3spb" node="7HfWMO9mkLD" resolve="com.mbeddr.debugger-testing.cross-tests.build" />
     </node>
     <node concept="2sgV4H" id="3q6VMvxn38O" role="1l3spa">
       <ref role="1l3spb" node="62XMcUo5Gnp" resolve="com.mbeddr.debugger-testing.runtime.build" />
@@ -2983,6 +2986,9 @@
     <node concept="1l3spV" id="3q6VMvxn39B" role="1l3spN">
       <node concept="L2wRC" id="3q6VMvxnp5B" role="39821P">
         <ref role="L2wRA" node="3q6VMvxn4jl" resolve="com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
+      </node>
+      <node concept="L2wRC" id="3AspB7AhxHZ" role="39821P">
+        <ref role="L2wRA" node="3q6VMvxn4b1" resolve="test.debugging.core" />
       </node>
     </node>
   </node>
