@@ -6488,17 +6488,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3T2UJ1pSoZc" role="jymVt" />
-    <node concept="312cEg" id="3dA$IyZ1w6J" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="currentlyActiveToolRunner" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="3dA$IyZ1w6K" role="1B3o_S" />
-      <node concept="3uibUv" id="3dA$IyZ1wjY" role="1tU5fm">
-        <ref role="3uigEE" to="8e9v:494NBewV62B" resolve="ToolRunnerBase" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="3dA$IyZ1vW$" role="jymVt" />
     <node concept="3clFb_" id="3T2UJ1pSoZd" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="setCurrentlyActiveToolRunnerFactory" />
@@ -6545,21 +6534,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3dA$IyZ1wsW" role="3cqZAp">
-          <node concept="37vLTI" id="3dA$IyZ1wzH" role="3clFbG">
-            <node concept="2OqwBi" id="3dA$IyZ1wGh" role="37vLTx">
-              <node concept="37vLTw" id="3dA$IyZ1y7o" role="2Oq$k0">
-                <ref role="3cqZAo" node="3T2UJ1pSoZ9" resolve="currentlyActiveToolRunnerFactory" />
-              </node>
-              <node concept="liA8E" id="3dA$IyZ1x4t" role="2OqNvi">
-                <ref role="37wK5l" to="8e9v:sEP8ohtFEk" resolve="createNewToolRunner" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="3dA$IyZ1wsU" role="37vLTJ">
-              <ref role="3cqZAo" node="3dA$IyZ1w6J" resolve="currentlyActiveToolRunner" />
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="3Tm1VV" id="3T2UJ1pSoZl" role="1B3o_S" />
       <node concept="3cqZAl" id="3T2UJ1pSoZm" role="3clF45" />
@@ -6577,15 +6551,23 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="3T2UJ1pSoZr" role="3clF47">
-        <node concept="3clFbF" id="3dA$IyZ1yaz" role="3cqZAp">
-          <node concept="37vLTw" id="3dA$IyZ1yay" role="3clFbG">
-            <ref role="3cqZAo" node="3dA$IyZ1w6J" resolve="currentlyActiveToolRunner" />
+        <node concept="3clFbF" id="7zvQUZj4UI8" role="3cqZAp">
+          <node concept="2OqwBi" id="7zvQUZj4UIa" role="3clFbG">
+            <node concept="37vLTw" id="7zvQUZj4UIb" role="2Oq$k0">
+              <ref role="3cqZAo" node="3T2UJ1pSoZ9" resolve="currentlyActiveToolRunnerFactory" />
+            </node>
+            <node concept="liA8E" id="7zvQUZj4UIc" role="2OqNvi">
+              <ref role="37wK5l" to="8e9v:sEP8ohtFEk" resolve="createNewToolRunner" />
+            </node>
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="3T2UJ1pSoZ$" role="1B3o_S" />
       <node concept="3uibUv" id="3dA$IyYZWTJ" role="3clF45">
         <ref role="3uigEE" to="8e9v:494NBewV62B" resolve="ToolRunnerBase" />
+      </node>
+      <node concept="NWlO9" id="7zvQUZj5SzL" role="lGtFl">
+        <property role="NWlVz" value="Here we expect *always* a new instance of the runner !!! otherwise optimizing runners will not work" />
       </node>
     </node>
     <node concept="2tJIrI" id="3T2UJ1pSoZA" role="jymVt" />
