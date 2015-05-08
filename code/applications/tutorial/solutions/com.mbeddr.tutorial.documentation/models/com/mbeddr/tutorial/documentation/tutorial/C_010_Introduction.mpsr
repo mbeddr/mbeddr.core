@@ -2,7 +2,8 @@
 <model ref="r:eec9fdff-7d49-4d97-a04e-350ceb9ae0b0(com.mbeddr.tutorial.documentation.tutorial)" content="root">
   <persistence version="9" />
   <imports>
-    <import index="pw5g" ref="r:f04a2561-d8a4-47ce-a586-47460c3c18ed(com.mbeddr.tutorial.documentation.analyses)" implicit="true" />
+    <import index="us0v" ref="r:22b9d29d-483d-4f08-8d1b-4e6567157caf(com.mbeddr.tutorial.documentation.ug.analyses)" implicit="true" />
+    <import index="4kwm" ref="r:5ff4e1a0-ec5b-4e83-a849-9e8c2c4adf79(com.mbeddr.tutorial.documentation.ug.ctooling)" implicit="true" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -107,7 +108,7 @@
     </language>
   </registry>
   <node concept="1_1swa" id="5zu8XJxPfLj">
-    <property role="TrG5h" value="C-010-Introduction" />
+    <property role="TrG5h" value="C_010_Introduction" />
     <property role="yApLE" value="1" />
     <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
     <node concept="1mvXsy" id="3DAECxG9swO" role="1_0VJ0">
@@ -1194,13 +1195,13 @@
                 <property role="19SUeA" value="To be able to use the verifications, you have to install a set of external tools as explained in " />
               </node>
               <node concept="1_0GAv" id="2JeiqU7feBR" role="19SJt6">
-                <ref role="1_0GAl" to="pw5g:7OKLwZ_7fp6" resolve="formal_verification" />
+                <ref role="1_0GAl" to="us0v:7OKLwZ_7fp6" resolve="formal_verification" />
               </node>
               <node concept="19SUe$" id="2JeiqU7feBQ" role="19SJt6">
                 <property role="19SUeA" value=" and " />
               </node>
               <node concept="1_0GAv" id="2JeiqU7feCa" role="19SJt6">
-                <ref role="1_0GAl" to="pw5g:7OKLwZ_6QCa" resolve="analyzing_variability" />
+                <ref role="1_0GAl" to="us0v:7OKLwZ_6QCa" resolve="analyzing_variability" />
               </node>
               <node concept="19SUe$" id="2JeiqU7feC9" role="19SJt6">
                 <property role="19SUeA" value="  " />
@@ -1222,7 +1223,7 @@
               <property role="19SUeA" value="You can now start writing mbeddr code. " />
             </node>
             <node concept="1_0GAv" id="6TOzdCDFXVw" role="19SJt6">
-              <ref role="1_0GAl" node="2ncjLWkqB1s" resolve="HelloWorld" />
+              <ref role="1_0GAl" to="4kwm:4IT6uoYGF0" resolve="helloWorld" />
             </node>
             <node concept="19SUe$" id="6TOzdCDFXVv" role="19SJt6">
               <property role="19SUeA" value=" contains a tutorial that shows how to write the simplest possible program, the ubiquitous Hello, World. We suggest to take a look at this section next. In this section we explain some of the ways how you can productively edit code with MPS. MPS is a projectional editor. It does not parse text and build an Abstract Syntax Tree (AST). Instead the AST is created directly by user editing actions, and what you see in terms of text (or other notations) is a projection. This has many advantages, but it also means that some of the well-known editing gestures we know from normal text editing don't work. So in this section we explain some keyboard shortcuts that are essential to work with MPS.\n\nSince the very first experience a projectional editor is somewhat different from what you are accustomed to in a text editor, we recommendyou watch the following screencast: " />
@@ -3264,14 +3265,14 @@
         </node>
       </node>
     </node>
-    <node concept="1_0j5j" id="6TOzdCDFXVt" role="1DXQ57">
-      <ref role="1_0j5g" node="6TOzdCDFUA5" resolve="C-020-Basics" />
+    <node concept="1_0j5j" id="3EeGBzFS7r1" role="1DXQ57">
+      <ref role="1_0j5g" to="4kwm:4IT6uoYGEZ" resolve="E_HelloWorld" />
     </node>
-    <node concept="1_0j5j" id="2JeiqU7feCs" role="1DXQ57">
-      <ref role="1_0j5g" to="pw5g:7OKLwZ_6QC9" resolve="A-020-VariabilityVerification" />
+    <node concept="1_0j5j" id="3EeGBzFS7r6" role="1DXQ57">
+      <ref role="1_0j5g" to="us0v:7OKLwZ_7fp5" resolve="C_FormalVerification" />
     </node>
-    <node concept="1_0j5j" id="2JeiqU7feC3" role="1DXQ57">
-      <ref role="1_0j5g" to="pw5g:7OKLwZ_7fp5" resolve="A-030-FormalVerification" />
+    <node concept="1_0j5j" id="3EeGBzFS7rb" role="1DXQ57">
+      <ref role="1_0j5g" to="us0v:7OKLwZ_6QC9" resolve="B_VariabilityVerification" />
     </node>
   </node>
 </model>
