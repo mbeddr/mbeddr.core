@@ -112,7 +112,7 @@
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractFilePicker" flags="ng" index="3N1QpV">
+      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
         <property id="6156524541422553710" name="path" index="3N1Lgt" />
       </concept>
     </language>
@@ -2331,7 +2331,7 @@
             <node concept="OjmMv" id="1LxA8cJZCx6" role="C7FVy">
               <node concept="19SGf9" id="1LxA8cJZCx7" role="OjmMu">
                 <node concept="19SUe$" id="1LxA8cJZCx8" role="19SJt6">
-                  <property role="19SUeA" value="mingw32-gcc (v 4.8.1), \nmingw32-make (v 3.82.90-2) and \nmingw32-gdb (v 7.6.1)" />
+                  <property role="19SUeA" value="mingw32-gcc (v 4.8.1), \nmingw32-make (v 3.82.90-2), \nmingw32-gdb (v 7.6.1),\nmsys-base (v 2013072300) and\nmsys-coreutils (v 5.97-3)" />
                 </node>
               </node>
             </node>
