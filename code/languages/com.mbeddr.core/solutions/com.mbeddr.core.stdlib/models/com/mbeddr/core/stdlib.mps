@@ -11,9 +11,7 @@
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
   </languages>
-  <imports>
-    <import index="h0fn" ref="r:47e727a8-7c9d-48a9-bf2e-afd7fbb0f9a5(stdlibc)" implicit="true" />
-  </imports>
+  <imports />
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
@@ -51,6 +49,7 @@
         <child id="7099329415459888018" name="members" index="HszBJ" />
       </concept>
       <concept id="5882395403881875736" name="com.mbeddr.core.udt.structure.Member" flags="ng" index="1dpRTG" />
+      <concept id="5882395403881907066" name="com.mbeddr.core.udt.structure.UnionDeclaration" flags="ng" index="1dpZge" />
       <concept id="6394819151180597807" name="com.mbeddr.core.udt.structure.StructDeclaration" flags="ng" index="1sgJKc" />
       <concept id="6394819151180597816" name="com.mbeddr.core.udt.structure.StructType" flags="ng" index="1sgJKr">
         <reference id="6394819151180597817" name="struct" index="1sgJKq" />
@@ -1334,7 +1333,7 @@
         <node concept="rcJHQ" id="137zkozycSE" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" to="h0fn:137zkozycQm" resolve="va_list" />
+          <ref role="rcJHT" node="137zkozycQm" resolve="va_list" />
         </node>
       </node>
       <node concept="3TlMh2" id="137zkozycJj" role="2C2TGm">
@@ -1362,7 +1361,7 @@
         <node concept="rcJHQ" id="137zkozycSF" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" to="h0fn:137zkozycQm" resolve="va_list" />
+          <ref role="rcJHT" node="137zkozycQm" resolve="va_list" />
         </node>
       </node>
       <node concept="3TlMh2" id="137zkozycJu" role="2C2TGm">
@@ -1401,7 +1400,7 @@
         <node concept="rcJHQ" id="137zkozycSG" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" to="h0fn:137zkozycQm" resolve="va_list" />
+          <ref role="rcJHT" node="137zkozycQm" resolve="va_list" />
         </node>
       </node>
       <node concept="3TlMh2" id="137zkozycJA" role="2C2TGm">
@@ -1562,7 +1561,7 @@
         <node concept="rcJHQ" id="137zkozycSK" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" to="h0fn:137zkozycQm" resolve="va_list" />
+          <ref role="rcJHT" node="137zkozycQm" resolve="va_list" />
         </node>
       </node>
       <node concept="3TlMh2" id="137zkozycKk" role="2C2TGm">
@@ -1590,7 +1589,7 @@
         <node concept="rcJHQ" id="137zkozycSL" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" to="h0fn:137zkozycQm" resolve="va_list" />
+          <ref role="rcJHT" node="137zkozycQm" resolve="va_list" />
         </node>
       </node>
       <node concept="3TlMh2" id="137zkozycKv" role="2C2TGm">
@@ -1636,7 +1635,7 @@
         <node concept="rcJHQ" id="137zkozycSN" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" to="h0fn:137zkozycQm" resolve="va_list" />
+          <ref role="rcJHT" node="137zkozycQm" resolve="va_list" />
         </node>
       </node>
       <node concept="3TlMh2" id="137zkozycKB" role="2C2TGm">
@@ -1675,7 +1674,7 @@
         <node concept="rcJHQ" id="137zkozycSO" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" to="h0fn:137zkozycQm" resolve="va_list" />
+          <ref role="rcJHT" node="137zkozycQm" resolve="va_list" />
         </node>
       </node>
       <node concept="3TlMh2" id="137zkozycKO" role="2C2TGm">
@@ -9151,6 +9150,9 @@
         </node>
       </node>
     </node>
+    <node concept="2NXPZ9" id="om3tjyLUbz" role="N3F5h">
+      <property role="TrG5h" value="empty_1431288207740_160" />
+    </node>
     <node concept="rcJHK" id="137zkozycQY" role="N3F5h">
       <property role="TrG5h" value="sig_atomic_t" />
       <property role="2OOxQR" value="true" />
@@ -9167,6 +9169,31 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1dpZge" id="om3tjyLKTo" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="sigval" />
+      <node concept="1dpRTG" id="om3tjyLLDn" role="HszBJ">
+        <property role="TrG5h" value="sival_int" />
+        <node concept="3TlMh2" id="om3tjyLLDm" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1dpRTG" id="om3tjyLMn2" role="HszBJ">
+        <property role="TrG5h" value="sival_ptr" />
+        <node concept="3wxxNl" id="om3tjyLMne" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="19Rifw" id="om3tjyLMn0" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="om3tjyLU71" role="N3F5h">
+      <property role="TrG5h" value="empty_1431288205287_159" />
     </node>
     <node concept="N3Fnw" id="137zkozycR7" role="N3F5h">
       <property role="TrG5h" value="raise" />
@@ -9228,6 +9255,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2NXPZ9" id="om3tjyLTOm" role="N3F5h">
+      <property role="TrG5h" value="empty_1431288199945_158" />
     </node>
     <node concept="rcWE1" id="om3tjyp5cb" role="rcWEr">
       <property role="rcWEL" value="&lt;signal.h&gt;" />
@@ -9677,6 +9707,31 @@
         <property role="2c7vTL" value="false" />
         <ref role="rcJHT" node="137zkozyc_9" resolve="time_t" />
       </node>
+    </node>
+    <node concept="2NXPZ9" id="om3tjyL$uK" role="N3F5h">
+      <property role="TrG5h" value="empty_1431285490406_152" />
+    </node>
+    <node concept="1sgJKc" id="137zkozxuh0" role="N3F5h">
+      <property role="TrG5h" value="timespec" />
+      <property role="2OOxQR" value="true" />
+      <node concept="1dpRTG" id="137zkozxuSu" role="HszBJ">
+        <property role="TrG5h" value="tv_sec" />
+        <node concept="rcJHQ" id="137zkozxuSt" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" node="137zkozyc_9" resolve="time_t" />
+        </node>
+      </node>
+      <node concept="1dpRTG" id="137zkozxvwV" role="HszBJ">
+        <property role="TrG5h" value="tv_nsec" />
+        <node concept="1X9cn3" id="137zkozxvwT" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="om3tjyL$A$" role="N3F5h">
+      <property role="TrG5h" value="empty_1431285490607_153" />
     </node>
     <node concept="rcWE1" id="om3tjyp8od" role="rcWEr">
       <property role="rcWEL" value="&lt;time.h&gt;" />
