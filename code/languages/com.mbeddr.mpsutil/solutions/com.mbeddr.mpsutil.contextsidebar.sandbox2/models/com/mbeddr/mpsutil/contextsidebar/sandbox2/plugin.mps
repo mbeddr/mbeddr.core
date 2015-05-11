@@ -22,6 +22,7 @@
     <import index="fiq3" ref="r:c646ca3b-023e-43e6-8788-1532b0d07764(com.mbeddr.mpsutil.contextsidebar.runtime)" />
     <import index="v2t1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons/org.apache.commons.lang3@java_stub)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
+    <import index="xike" ref="r:698ffceb-aefa-44db-b54b-bfe095c94cee(com.mbeddr.mpsutil.contextsidebar.runtime.plugin)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -235,7 +236,7 @@
                   <node concept="2OqwBi" id="5T3_DgSVlrT" role="3uHU7w">
                     <node concept="1F3lnG" id="5T3_DgSVlrU" role="2Oq$k0" />
                     <node concept="liA8E" id="5T3_DgSVlrV" role="2OqNvi">
-                      <ref role="37wK5l" to="fiq3:lRW__IskRs" resolve="getCurrentConcept" />
+                      <ref role="37wK5l" to="xike:5x8vmjSDioJ" resolve="getCurrentConcept" />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="5T3_DgSVlrW" role="3uHU7B">
@@ -268,7 +269,7 @@
                 <node concept="2OqwBi" id="5T3_DgSVls5" role="1PxMeX">
                   <node concept="1F3lnG" id="5T3_DgSVls6" role="2Oq$k0" />
                   <node concept="liA8E" id="5T3_DgSVls7" role="2OqNvi">
-                    <ref role="37wK5l" to="fiq3:lRW__IskRC" resolve="getCurrentNode" />
+                    <ref role="37wK5l" to="xike:5x8vmjSDioX" resolve="getCurrentNode" />
                   </node>
                 </node>
               </node>
@@ -334,7 +335,7 @@
                     <node concept="2OqwBi" id="5T3_DgSVlsy" role="2Oq$k0">
                       <node concept="1F3lnG" id="5T3_DgSVlsz" role="2Oq$k0" />
                       <node concept="liA8E" id="5T3_DgSVls$" role="2OqNvi">
-                        <ref role="37wK5l" to="fiq3:lRW__IskRC" resolve="getCurrentNode" />
+                        <ref role="37wK5l" to="xike:5x8vmjSDioX" resolve="getCurrentNode" />
                       </node>
                     </node>
                     <node concept="3NT_Vc" id="5T3_DgSVls_" role="2OqNvi" />
@@ -354,7 +355,7 @@
                 <node concept="2OqwBi" id="5T3_DgSVlsE" role="2Oq$k0">
                   <node concept="1F3lnG" id="5T3_DgSVlsF" role="2Oq$k0" />
                   <node concept="liA8E" id="5T3_DgSVlsG" role="2OqNvi">
-                    <ref role="37wK5l" to="fiq3:lRW__IskRC" resolve="getCurrentNode" />
+                    <ref role="37wK5l" to="xike:5x8vmjSDioX" resolve="getCurrentNode" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="5T3_DgSVlsH" role="2OqNvi" />
@@ -377,7 +378,7 @@
                   <node concept="2OqwBi" id="5T3_DgSVlsP" role="3uHU7w">
                     <node concept="1F3lnG" id="5T3_DgSVlsQ" role="2Oq$k0" />
                     <node concept="liA8E" id="5T3_DgSVlsR" role="2OqNvi">
-                      <ref role="37wK5l" to="fiq3:lRW__IskRC" resolve="getCurrentNode" />
+                      <ref role="37wK5l" to="xike:5x8vmjSDioX" resolve="getCurrentNode" />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="5T3_DgSVlsS" role="3uHU7B">
@@ -435,7 +436,7 @@
                       <node concept="2OqwBi" id="5T3_DgSVlth" role="2Oq$k0">
                         <node concept="1F3lnG" id="5T3_DgSVlti" role="2Oq$k0" />
                         <node concept="liA8E" id="5T3_DgSVltj" role="2OqNvi">
-                          <ref role="37wK5l" to="fiq3:lRW__IskRC" resolve="getCurrentNode" />
+                          <ref role="37wK5l" to="xike:5x8vmjSDioX" resolve="getCurrentNode" />
                         </node>
                       </node>
                       <node concept="z$bX8" id="5T3_DgSVltk" role="2OqNvi">
@@ -501,7 +502,7 @@
               <node concept="2OqwBi" id="i7Uxc2pX$P" role="3uHU7B">
                 <node concept="1F3lnG" id="i7Uxc2pXwf" role="2Oq$k0" />
                 <node concept="liA8E" id="i7Uxc2pXP$" role="2OqNvi">
-                  <ref role="37wK5l" to="fiq3:lRW__IskRs" resolve="getCurrentConcept" />
+                  <ref role="37wK5l" to="xike:5x8vmjSDioJ" resolve="getCurrentConcept" />
                 </node>
               </node>
             </node>
@@ -518,7 +519,7 @@
             <node concept="2OqwBi" id="4AhMPNYvbVx" role="33vP2m">
               <node concept="1F3lnG" id="4AhMPNYvbVy" role="2Oq$k0" />
               <node concept="liA8E" id="4AhMPNYvbVz" role="2OqNvi">
-                <ref role="37wK5l" to="fiq3:lRW__IskRs" resolve="getCurrentConcept" />
+                <ref role="37wK5l" to="xike:5x8vmjSDioJ" resolve="getCurrentConcept" />
               </node>
             </node>
           </node>
@@ -569,7 +570,7 @@
               <node concept="2OqwBi" id="i7Uxc2teiN" role="3uHU7B">
                 <node concept="1F3lnG" id="i7Uxc2teiO" role="2Oq$k0" />
                 <node concept="liA8E" id="i7Uxc2teiP" role="2OqNvi">
-                  <ref role="37wK5l" to="fiq3:lRW__IskRs" resolve="getCurrentConcept" />
+                  <ref role="37wK5l" to="xike:5x8vmjSDioJ" resolve="getCurrentConcept" />
                 </node>
               </node>
             </node>
@@ -586,7 +587,7 @@
             <node concept="2OqwBi" id="4AhMPNYrtYE" role="33vP2m">
               <node concept="1F3lnG" id="4AhMPNYrtYF" role="2Oq$k0" />
               <node concept="liA8E" id="4AhMPNYrtYG" role="2OqNvi">
-                <ref role="37wK5l" to="fiq3:lRW__IskRs" resolve="getCurrentConcept" />
+                <ref role="37wK5l" to="xike:5x8vmjSDioJ" resolve="getCurrentConcept" />
               </node>
             </node>
           </node>
