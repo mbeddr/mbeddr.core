@@ -533,7 +533,7 @@
             <ref role="37wK5l" to="3n1v:7OBQOW$8zKM" resolve="testPerformance" />
             <ref role="1Pybhc" to="3n1v:7OBQOW$8uK1" resolve="PerformanceTestHelper" />
             <node concept="3cmrfG" id="7OBQOW$9PPU" role="37wK5m">
-              <property role="3cmrfH" value="10000" />
+              <property role="3cmrfH" value="1000" />
             </node>
             <node concept="37vLTw" id="7OBQOW$9PPV" role="37wK5m">
               <ref role="3cqZAo" node="7OBQOW$9PPP" resolve="code" />
@@ -612,13 +612,13 @@
             <ref role="37wK5l" to="3n1v:7OBQOW$8zKM" resolve="testPerformance" />
             <ref role="1Pybhc" to="3n1v:7OBQOW$8uK1" resolve="PerformanceTestHelper" />
             <node concept="3cmrfG" id="5kiZIBgBlU7" role="37wK5m">
-              <property role="3cmrfH" value="10000" />
+              <property role="3cmrfH" value="1000" />
             </node>
             <node concept="37vLTw" id="3YR_2qPI2pd" role="37wK5m">
               <ref role="3cqZAo" node="3YR_2qPI29z" resolve="code" />
             </node>
             <node concept="Xl_RD" id="5kiZIBgBlUe" role="37wK5m">
-              <property role="Xl_RC" value="simpleFunctionCall" />
+              <property role="Xl_RC" value="simpleFunctionCallEvaluation" />
             </node>
           </node>
         </node>
@@ -691,13 +691,13 @@
             <ref role="37wK5l" to="3n1v:7OBQOW$8zKM" resolve="testPerformance" />
             <ref role="1Pybhc" to="3n1v:7OBQOW$8uK1" resolve="PerformanceTestHelper" />
             <node concept="3cmrfG" id="5kiZIBgBlUk" role="37wK5m">
-              <property role="3cmrfH" value="10000" />
+              <property role="3cmrfH" value="250" />
             </node>
             <node concept="37vLTw" id="3YR_2qPI2NV" role="37wK5m">
               <ref role="3cqZAo" node="3YR_2qPI2uc" resolve="code" />
             </node>
             <node concept="Xl_RD" id="5kiZIBgBlUr" role="37wK5m">
-              <property role="Xl_RC" value="recursiveFunctionCall" />
+              <property role="Xl_RC" value="recursiveFunctionCallEvaluation" />
             </node>
           </node>
         </node>
