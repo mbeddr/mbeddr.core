@@ -18,6 +18,9 @@
     <import index="vi23" ref="r:9b94efb1-dbce-417f-b1ad-19c6a396d423(com.mbeddr.tutorial.documentation.ug.processSupport)" />
   </imports>
   <registry>
+    <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
+      <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB" />
+    </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
         <child id="2557074442922392302" name="words" index="19SJt6" />
@@ -38,6 +41,10 @@
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
+      <concept id="6386504476136554612" name="com.mbeddr.doc.structure.PathMapping" flags="ng" index="2SbEIf">
+        <property id="6386504476136554614" name="mappedPath" index="2SbEId" />
+        <reference id="6386504476136554613" name="pathDef" index="2SbEIe" />
+      </concept>
       <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
         <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
       </concept>
@@ -46,8 +53,17 @@
         <child id="6386504476136472817" name="paths" index="2SbYGa" />
         <child id="8624890525767800998" name="sizeSpecs" index="3SH5Mq" />
       </concept>
+      <concept id="6068976060904002601" name="com.mbeddr.doc.structure.AbstractExport" flags="ng" index="30Gg6V">
+        <child id="6068976060904007487" name="renderer" index="30GjaH" />
+        <child id="6068976060904007490" name="mappings" index="30Gjbg" />
+        <child id="6068976060904007488" name="inactiveRenderer" index="30Gjbi" />
+        <child id="6068976060904007489" name="root" index="30Gjbj" />
+      </concept>
       <concept id="4208238404723595132" name="com.mbeddr.doc.structure.UrlFormattedText" flags="ng" index="1hOBRO" />
       <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
+      <concept id="3350625596580256366" name="com.mbeddr.doc.structure.DocumentExport" flags="ng" index="1_08Dk">
+        <property id="126932837435324910" name="title" index="WqcPg" />
+      </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
       </concept>
@@ -74,9 +90,16 @@
         <child id="8624890525767800827" name="spec" index="3SH5f7" />
       </concept>
     </language>
+    <language id="f44f6b9a-bf30-4f73-866e-fac17c177409" name="com.mbeddr.doc.gen_latex">
+      <concept id="4457500422381351715" name="com.mbeddr.doc.gen_latex.structure.LatexRenderer" flags="ng" index="1jVoCB">
+        <property id="4755612053022149513" name="prolog" index="43dxY" />
+        <property id="4457500422381351717" name="documentClass" index="1jVoCx" />
+        <property id="5185579450379315413" name="hasTOC" index="1xA$Bs" />
+      </concept>
+    </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractFilePicker" flags="ng" index="3N1QpV">
+      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
         <property id="6156524541422553710" name="path" index="3N1Lgt" />
       </concept>
     </language>
@@ -291,6 +314,27 @@
           <ref role="1_0j5g" to="us0v:1ig5EljjfWv" resolve="Z_CHAPTER_Analyses" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="1_08Dk" id="Gd6QB8f5GK">
+    <property role="TrG5h" value="UserGuideExport" />
+    <property role="WqcPg" value="mbeddr User Guide" />
+    <node concept="2SbEIf" id="Gd6QB8f5OX" role="30Gjbg">
+      <property role="2SbEId" value="_images" />
+      <ref role="2SbEIe" node="45LXldJZEw7" resolve="images" />
+    </node>
+    <node concept="2SbEIf" id="Gd6QB8f5P3" role="30Gjbg">
+      <property role="2SbEId" value="_vis" />
+      <ref role="2SbEIe" node="5jGyeU5XLXS" resolve="vis" />
+    </node>
+    <node concept="1_0j5j" id="Gd6QB8f5OP" role="30Gjbj">
+      <ref role="1_0j5g" node="hZfTLLg0H0" resolve="mbeddrUserGuide" />
+    </node>
+    <node concept="1_07dB" id="Gd6QB8irkt" role="30GjaH" />
+    <node concept="1jVoCB" id="Gd6QB8irku" role="30Gjbi">
+      <property role="1jVoCx" value="article" />
+      <property role="1xA$Bs" value="true" />
+      <property role="43dxY" value="/Users/nikostotz/git/mbeddr.core/code/languages/com.mbeddr.doc/latex-support/mbeddr-prolog.ltx" />
     </node>
   </node>
 </model>
