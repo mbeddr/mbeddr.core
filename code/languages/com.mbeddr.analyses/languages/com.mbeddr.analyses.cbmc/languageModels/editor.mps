@@ -114,7 +114,6 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
-        <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
@@ -7681,37 +7680,6 @@
         <property role="3F0ifm" value=");" />
       </node>
       <node concept="2iRfu4" id="73FH1Bcoe4r" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7DvJ5MZ1aFV">
-    <property role="3GE5qa" value="verification_case" />
-    <ref role="1XX52x" to="q5q6:7DvJ5MZ1aFL" resolve="VerificationCase" />
-    <node concept="3EZMnI" id="6HAGUl20b1O" role="2wV5jI">
-      <node concept="2iRkQZ" id="6HAGUl20b1P" role="2iSdaV" />
-      <node concept="3EZMnI" id="6Q7bJ$$mU2H" role="3EZMnx">
-        <property role="S$Qs1" value="false" />
-        <node concept="3F0ifn" id="7DvJ5MZ1uXz" role="3EZMnx">
-          <property role="3F0ifm" value="verification_case" />
-        </node>
-        <node concept="3F0A7n" id="7DvJ5MZ1uYF" role="3EZMnx">
-          <property role="1cu_pB" value="2" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-        <node concept="3F1sOY" id="6iIoqg1xKSY" role="3EZMnx">
-          <ref role="1NtTu8" to="x27k:3CmSUB7Fp_k" />
-          <ref role="1ERwB7" to="cl6c:3b1kLoLNYfJ" resolve="deleteFunction" />
-          <node concept="VPM3Z" id="2I09F8VKxA6" role="3F10Kt">
-            <property role="VOm3f" value="false" />
-          </node>
-          <node concept="ljvvj" id="7apEgWbIFgk" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="l2Vlx" id="7apEgWbIFgl" role="2iSdaV" />
-        <node concept="VPM3Z" id="s0$Uf$vorV" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="7DvJ5MZfF4g">
