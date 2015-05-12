@@ -6,11 +6,11 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
-    <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -187,6 +187,7 @@
   <node concept="1TIwiD" id="3EEGwEpFmyT">
     <property role="TrG5h" value="Sequential" />
     <property role="R4oN_" value="Ensures that no threads are spawned from this function" />
+    <property role="3GE5qa" value="annotations" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="3EEGwEpFmyU" role="lGtFl">
       <property role="Hh88m" value="sequential" />
@@ -198,6 +199,7 @@
   <node concept="1TIwiD" id="3EEGwEpK7JI">
     <property role="TrG5h" value="Thread_safe" />
     <property role="R4oN_" value="Ensures that all the variables accessed are stack or thread-local" />
+    <property role="3GE5qa" value="annotations" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="3EEGwEpK7JJ" role="lGtFl">
       <property role="Hh88m" value="thread_safe" />
@@ -209,6 +211,7 @@
   <node concept="1TIwiD" id="3EEGwEpLvIB">
     <property role="TrG5h" value="Datarace_free" />
     <property role="R4oN_" value="Ensures that this thread has no dataraces with the functions passed as parameters" />
+    <property role="3GE5qa" value="annotations" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="3EEGwEpLvIC" role="lGtFl">
       <property role="Hh88m" value="datarace_free" />
@@ -220,6 +223,7 @@
   <node concept="1TIwiD" id="3EEGwEpLw0H">
     <property role="TrG5h" value="Thread_bounded" />
     <property role="R4oN_" value="Ensures that there is no parametric (or unbounded) creation of threads in this function" />
+    <property role="3GE5qa" value="annotations" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="3EEGwEpLw0I" role="lGtFl">
       <property role="Hh88m" value="thread_bounded" />
@@ -229,11 +233,12 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3EEGwEpLw0T">
-    <property role="TrG5h" value="Sequentialise" />
+    <property role="TrG5h" value="Synchronise" />
     <property role="R4oN_" value="Transformation: this function will be treated atomically" />
+    <property role="3GE5qa" value="annotations" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="3EEGwEpLw0U" role="lGtFl">
-      <property role="Hh88m" value="sequentialise" />
+      <property role="Hh88m" value="synchronise" />
       <node concept="trNpa" id="3EEGwEpM9_i" role="EQaZv">
         <ref role="trN6q" to="x27k:5_l8w1EmTvt" resolve="FunctionSignature" />
       </node>
@@ -242,7 +247,14 @@
   <node concept="1TIwiD" id="3EEGwEpLw15">
     <property role="TrG5h" value="Weak_memory_enforce" />
     <property role="R4oN_" value="Ensures that all the accesses to shared memory are ordered following sequential consistency, assuming the architecture passed as parameter. Only guaranteed if the other threads interfering are also marked WM-safe." />
+    <property role="3GE5qa" value="annotations" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="6uBf9tHG6$Q" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arch" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6uBf9tHAapI" resolve="IArchitecture" />
+    </node>
     <node concept="M6xJ_" id="3EEGwEpLw16" role="lGtFl">
       <property role="Hh88m" value="weak_memory_enforce" />
       <node concept="trNpa" id="3EEGwEpM9_r" role="EQaZv">
@@ -253,6 +265,7 @@
   <node concept="1TIwiD" id="3EEGwEpLw1h">
     <property role="TrG5h" value="Producer" />
     <property role="R4oN_" value="Ensures that the thread only writes to global variables" />
+    <property role="3GE5qa" value="annotations" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="3EEGwEpLw1i" role="lGtFl">
       <property role="Hh88m" value="producer" />
@@ -264,6 +277,7 @@
   <node concept="1TIwiD" id="3EEGwEpLw1t">
     <property role="TrG5h" value="Consumer" />
     <property role="R4oN_" value="Ensures that this function only reads from global variables" />
+    <property role="3GE5qa" value="annotations" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="3EEGwEpLw1u" role="lGtFl">
       <property role="Hh88m" value="Consumer" />
@@ -275,12 +289,109 @@
   <node concept="1TIwiD" id="3EEGwEpLw1D">
     <property role="TrG5h" value="Memory_separated" />
     <property role="R4oN_" value="Ensures that all the accesses of this function are distinct to those of the function in parameter" />
+    <property role="3GE5qa" value="annotations" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="6uBf9tHv_6E" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="function" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="x27k:5_l8w1EmTvx" resolve="Function" />
+    </node>
     <node concept="M6xJ_" id="3EEGwEpLw1E" role="lGtFl">
       <property role="Hh88m" value="memory_separated" />
       <node concept="trNpa" id="3EEGwEpM9_a" role="EQaZv">
         <ref role="trN6q" to="x27k:5_l8w1EmTvt" resolve="FunctionSignature" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6uBf9tHhPD9">
+    <property role="TrG5h" value="AtomicVar" />
+    <property role="R4oN_" value="Ensures that this global variable is always accessed atomically" />
+    <property role="3GE5qa" value="annotations" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="6uBf9tHhPDa" role="lGtFl">
+      <property role="Hh88m" value="AtomicVar" />
+      <node concept="trNpa" id="6uBf9tHhPDc" role="EQaZv">
+        <ref role="trN6q" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6uBf9tHAapt">
+    <property role="TrG5h" value="SC" />
+    <property role="34LRSv" value="SC" />
+    <property role="R4oN_" value="sequential consistency" />
+    <property role="3GE5qa" value="weak_memory" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6uBf9tHAapJ" role="PzmwI">
+      <ref role="PrY4T" node="6uBf9tHAapI" resolve="IArchitecture" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6uBf9tHAapI">
+    <property role="TrG5h" value="IArchitecture" />
+    <property role="3GE5qa" value="weak_memory" />
+  </node>
+  <node concept="1TIwiD" id="6uBf9tHAapT">
+    <property role="TrG5h" value="TSO" />
+    <property role="34LRSv" value="TSO" />
+    <property role="R4oN_" value="Total store order (includes x86)" />
+    <property role="3GE5qa" value="weak_memory" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6uBf9tHAapU" role="PzmwI">
+      <ref role="PrY4T" node="6uBf9tHAapI" resolve="IArchitecture" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6uBf9tHAaq5">
+    <property role="TrG5h" value="Power" />
+    <property role="34LRSv" value="Power" />
+    <property role="R4oN_" value="Power memory model" />
+    <property role="3GE5qa" value="weak_memory" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6uBf9tHAaq6" role="PzmwI">
+      <ref role="PrY4T" node="6uBf9tHAapI" resolve="IArchitecture" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6uBf9tHAaqf">
+    <property role="TrG5h" value="ARM" />
+    <property role="34LRSv" value="ARM" />
+    <property role="R4oN_" value="ARM memory model" />
+    <property role="3GE5qa" value="weak_memory" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6uBf9tHH0tQ" role="PzmwI">
+      <ref role="PrY4T" node="6uBf9tHAapI" resolve="IArchitecture" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6uBf9tHAmky">
+    <property role="TrG5h" value="Mfence" />
+    <property role="34LRSv" value="mfence" />
+    <property role="R4oN_" value="full fence" />
+    <property role="3GE5qa" value="weak_memory" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="PrWs8" id="6uBf9tHAmNp" role="PzmwI">
+      <ref role="PrY4T" node="6uBf9tHAmNo" resolve="IMemoryFence" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6uBf9tHAmNh">
+    <property role="TrG5h" value="Sync" />
+    <property role="34LRSv" value="sync" />
+    <property role="R4oN_" value="full cumulative fence" />
+    <property role="3GE5qa" value="weak_memory" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="PrWs8" id="6uBf9tHAmNr" role="PzmwI">
+      <ref role="PrY4T" node="6uBf9tHAmNo" resolve="IMemoryFence" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6uBf9tHAmNo">
+    <property role="TrG5h" value="IMemoryFence" />
+    <property role="3GE5qa" value="weak_memory" />
+  </node>
+  <node concept="1TIwiD" id="6uBf9tHAmN_">
+    <property role="TrG5h" value="Lwsync" />
+    <property role="34LRSv" value="lwsync" />
+    <property role="R4oN_" value="lightweight cumulative fence" />
+    <property role="3GE5qa" value="weak_memory" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="PrWs8" id="6uBf9tHAmNA" role="PzmwI">
+      <ref role="PrY4T" node="6uBf9tHAmNo" resolve="IMemoryFence" />
     </node>
   </node>
 </model>

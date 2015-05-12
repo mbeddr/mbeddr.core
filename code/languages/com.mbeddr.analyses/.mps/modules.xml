@@ -44,6 +44,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.testcode_analyses_config/testcode_analyses_config.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.ts/test.analyses.cbmc.ts.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc/cbmc.msd" folder="test.cbmc" />
+      <modulePath path="$PROJECT_DIR$/tests/test.analyses.concurrency.checks.ts/test.analyses.concurrency.checks.ts.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.var.testcode/test.analyses.var.testcode.msd" folder="test.sat4j" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.var/test.analyses.var.msd" folder="test.sat4j" />
       <modulePath path="$PROJECT_DIR$/tests/test.analysis.formsera/formsera.msd" folder="test.examples" />
