@@ -3869,7 +3869,7 @@
     </node>
   </node>
   <node concept="bUwia" id="1IZZlGobl4A">
-    <property role="3GE5qa" value="properties" />
+    <property role="3GE5qa" value="annotations" />
     <property role="TrG5h" value="instrumentThreadSafe" />
     <node concept="3aamgX" id="1IZZlGobb3W" role="3acgRq">
       <ref role="30HIoZ" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
