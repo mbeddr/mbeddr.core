@@ -248,7 +248,7 @@
         </node>
       </node>
       <node concept="1QGGSu" id="5T3_DgSVlrX" role="1FX4XO">
-        <property role="1QGGTI" value="${mbeddr.github.core.home}/icons/units.png" />
+        <property role="1QGGTI" value="${module}/icons/units.png" />
       </node>
     </node>
     <node concept="1F1WSm" id="5T3_DgSVlrY" role="1FXxlL">
@@ -390,7 +390,7 @@
         </node>
       </node>
       <node concept="1QGGSu" id="5T3_DgSVlsT" role="1FX4XO">
-        <property role="1QGGTI" value="${mbeddr.github.core.home}/icons/var.png" />
+        <property role="1QGGTI" value="${module}/icons/var.png" />
       </node>
     </node>
   </node>
