@@ -67,6 +67,12 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
+      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
+        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -289,19 +295,23 @@
     <ref role="13h7C2" to="nok9:3EEGwEpLw15" resolve="Weak_memory_enforce" />
     <node concept="13hLZK" id="6uBf9tHGLYV" role="13h7CW">
       <node concept="3clFbS" id="6uBf9tHGLYW" role="2VODD2">
-        <node concept="3clFbF" id="6uBf9tHGLYY" role="3cqZAp">
-          <node concept="37vLTI" id="6uBf9tHGMdH" role="3clFbG">
-            <node concept="2ShNRf" id="6uBf9tHGMfc" role="37vLTx">
-              <node concept="3zrR0B" id="6uBf9tHGMmG" role="2ShVmc">
-                <node concept="3Tqbb2" id="6uBf9tHGMmI" role="3zrR0E">
-                  <ref role="ehGHo" to="nok9:6uBf9tHAapI" resolve="IArchitecture" />
+        <node concept="3SKdUt" id="1IZZlGo7JCa" role="3cqZAp">
+          <node concept="3SKWN0" id="1IZZlGo7JCj" role="3SKWNk">
+            <node concept="3clFbF" id="6uBf9tHGLYY" role="3SKWNf">
+              <node concept="37vLTI" id="6uBf9tHGMdH" role="3clFbG">
+                <node concept="2ShNRf" id="6uBf9tHGMfc" role="37vLTx">
+                  <node concept="3zrR0B" id="6uBf9tHGMmG" role="2ShVmc">
+                    <node concept="3Tqbb2" id="6uBf9tHGMmI" role="3zrR0E">
+                      <ref role="ehGHo" to="nok9:6uBf9tHAapI" resolve="IArchitecture" />
+                    </node>
+                  </node>
                 </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="6uBf9tHGM0R" role="37vLTJ">
-              <node concept="13iPFW" id="6uBf9tHGLZ5" role="2Oq$k0" />
-              <node concept="3TrEf2" id="6uBf9tHGMbJ" role="2OqNvi">
-                <ref role="3Tt5mk" to="nok9:6uBf9tHG6$Q" />
+                <node concept="2OqwBi" id="6uBf9tHGM0R" role="37vLTJ">
+                  <node concept="13iPFW" id="6uBf9tHGLZ5" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="6uBf9tHGMbJ" role="2OqNvi">
+                    <ref role="3Tt5mk" to="nok9:6uBf9tHG6$Q" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

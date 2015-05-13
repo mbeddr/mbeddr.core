@@ -527,5 +527,78 @@
       <property role="3F0ifm" value="TSO" />
     </node>
   </node>
+  <node concept="24kQdi" id="1IZZlGo8SA0">
+    <property role="3GE5qa" value="weak_memory" />
+    <ref role="1XX52x" to="nok9:1IZZlGo8Sbf" resolve="Dmb" />
+    <node concept="3F0ifn" id="1IZZlGo8T1a" role="2wV5jI">
+      <property role="3F0ifm" value="dmb" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1IZZlGoboM9">
+    <ref role="1XX52x" to="nok9:1IZZlGoboLX" resolve="FunctionSet" />
+    <node concept="3EZMnI" id="1IZZlGoboMn" role="2wV5jI">
+      <node concept="1iCGBv" id="1IZZlGoboMB" role="3EZMnx">
+        <ref role="1NtTu8" to="nok9:1IZZlGoboM$" />
+        <node concept="1sVBvm" id="1IZZlGoboMD" role="1sWHZn">
+          <node concept="3F0A7n" id="1IZZlGoboML" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4OmQvdryPEI" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+      </node>
+      <node concept="3F1sOY" id="4OmQvdryPEU" role="3EZMnx">
+        <ref role="1NtTu8" to="nok9:4OmQvdrwDiO" />
+      </node>
+      <node concept="2iRfu4" id="1IZZlGoboMq" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1IZZlGobq7i">
+    <property role="3GE5qa" value="annotations" />
+    <ref role="1XX52x" to="nok9:1IZZlGobonS" resolve="AccessedVar" />
+    <node concept="3EZMnI" id="1IZZlGobqg8" role="2wV5jI">
+      <node concept="3EZMnI" id="1IZZlGobqpn" role="3EZMnx">
+        <ref role="1k5W1q" to="r4b4:2CEi94dhDUJ" resolve="Metadata" />
+        <node concept="3vyZuw" id="1IZZlGobqq7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VLuvy" id="1IZZlGobqq8" role="3F10Kt">
+          <node concept="3ZlJ5R" id="1IZZlGobqq9" role="VblUZ">
+            <node concept="3clFbS" id="1IZZlGobqqa" role="2VODD2">
+              <node concept="3clFbF" id="1IZZlGobqqb" role="3cqZAp">
+                <node concept="10M0yZ" id="1IZZlGobqqc" role="3clFbG">
+                  <ref role="3cqZAo" to="r4b4:y826GHHfBE" resolve="METADATA" />
+                  <ref role="1PxDUh" to="r4b4:4tRpPVPUEa3" resolve="BasicColors" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1IZZlGobqpr" role="3EZMnx">
+          <property role="3F0ifm" value="accessed(" />
+        </node>
+        <node concept="3F0A7n" id="1IZZlGobqFf" role="3EZMnx">
+          <ref role="1NtTu8" to="nok9:1IZZlGoboLi" resolve="access_mode" />
+        </node>
+        <node concept="3F0ifn" id="1IZZlGobqFz" role="3EZMnx">
+          <property role="3F0ifm" value="," />
+        </node>
+        <node concept="3F0A7n" id="1IZZlGobqFR" role="3EZMnx">
+          <ref role="1NtTu8" to="nok9:1IZZlGoboLI" resolve="access_cst" />
+        </node>
+        <node concept="3F0ifn" id="1IZZlGobqGd" role="3EZMnx">
+          <property role="3F0ifm" value="):" />
+        </node>
+        <node concept="3F1sOY" id="1IZZlGocW0j" role="3EZMnx">
+          <ref role="1NtTu8" to="nok9:1IZZlGocVRO" />
+        </node>
+        <node concept="2iRfu4" id="1IZZlGobqps" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="1IZZlGobqg9" role="2iSdaV" />
+      <node concept="2SsqMj" id="1IZZlGobqgh" role="3EZMnx" />
+    </node>
+  </node>
 </model>
 
