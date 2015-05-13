@@ -48,6 +48,7 @@
     <import index="qjdu" ref="r:bc752cbf-8d9b-4442-8e26-e5c87b20b897(com.mbeddr.core.base.plugin)" />
     <import index="xei" ref="1338ba73-5059-479b-a929-de86597a62b8/f:java_stub#1338ba73-5059-479b-a929-de86597a62b8#edu.uci.ics.jung.visualization.util(com.mbeddr.mpsutil.jung.pluginSolution/edu.uci.ics.jung.visualization.util@java_stub)" />
     <import index="ln2k" ref="r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung.behavior)" />
+    <import index="57bv" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.text(MPS.Editor/jetbrains.mps.nodeEditor.text@java_stub)" />
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
@@ -9820,9 +9821,6 @@
                                 <node concept="3cpWs8" id="1yFmGPnITn7" role="3cqZAp">
                                   <node concept="3cpWsn" id="1yFmGPnITn8" role="3cpWs9">
                                     <property role="TrG5h" value="renderText" />
-                                    <node concept="3uibUv" id="1yFmGPnITn9" role="1tU5fm">
-                                      <ref role="3uigEE" to="srng:~TextBuilder" resolve="TextBuilder" />
-                                    </node>
                                     <node concept="2OqwBi" id="1yFmGPnITna" role="33vP2m">
                                       <node concept="2OqwBi" id="1yFmGPnITnb" role="2Oq$k0">
                                         <node concept="37vLTw" id="1yFmGPnITnc" role="2Oq$k0">
@@ -9835,6 +9833,9 @@
                                       <node concept="liA8E" id="1yFmGPnITne" role="2OqNvi">
                                         <ref role="37wK5l" to="jsgz:~EditorCell.renderText():jetbrains.mps.openapi.editor.TextBuilder" resolve="renderText" />
                                       </node>
+                                    </node>
+                                    <node concept="3uibUv" id="1yFmGPnITn9" role="1tU5fm">
+                                      <ref role="3uigEE" to="srng:~TextBuilder" resolve="TextBuilder" />
                                     </node>
                                   </node>
                                 </node>
