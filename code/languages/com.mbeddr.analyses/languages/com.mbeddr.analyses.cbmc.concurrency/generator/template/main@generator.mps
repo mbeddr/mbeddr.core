@@ -304,6 +304,9 @@
         <child id="2771264470558526601" name="init" index="1cecVj" />
       </concept>
     </language>
+    <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -4214,17 +4217,11 @@
                             <node concept="3clFbJ" id="3VLfU1$1cwN" role="3cqZAp">
                               <node concept="3clFbS" id="3VLfU1$1cwO" role="3clFbx">
                                 <node concept="3cpWs6" id="3VLfU1$1cwP" role="3cqZAp">
-                                  <node concept="2YIFZM" id="3VLfU1$2Ecz" role="3cqZAk">
-                                    <ref role="37wK5l" to="gonc:3VLfU1$2aA3" resolve="typeFirstGlobalVarOrPointer" />
-                                    <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
-                                    <node concept="2OqwBi" id="3VLfU1$2Ec$" role="37wK5m">
-                                      <node concept="2GrUjf" id="3VLfU1$2Ec_" role="2Oq$k0">
-                                        <ref role="2Gs0qQ" node="3VLfU1$1cwL" resolve="assignExp" />
-                                      </node>
-                                      <node concept="3TrEf2" id="3VLfU1$2EcA" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="mj1l:7FQByU3CrD0" />
-                                      </node>
+                                  <node concept="2OqwBi" id="3VLfU1$8iBS" role="3cqZAk">
+                                    <node concept="2GrUjf" id="3VLfU1$8gTh" role="2Oq$k0">
+                                      <ref role="2Gs0qQ" node="3VLfU1$1cwL" resolve="assignExp" />
                                     </node>
+                                    <node concept="3JvlWi" id="3VLfU1$8kGu" role="2OqNvi" />
                                   </node>
                                 </node>
                               </node>
@@ -4695,17 +4692,11 @@
                             <node concept="3clFbJ" id="3iJyJcZzT_Q" role="3cqZAp">
                               <node concept="3clFbS" id="3iJyJcZzT_R" role="3clFbx">
                                 <node concept="3cpWs6" id="3iJyJcZzT_S" role="3cqZAp">
-                                  <node concept="2YIFZM" id="3VLfU1$2BHa" role="3cqZAk">
-                                    <ref role="37wK5l" to="gonc:3VLfU1$2aA3" resolve="typeFirstGlobalVarOrPointer" />
-                                    <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
-                                    <node concept="2OqwBi" id="3VLfU1$2BHb" role="37wK5m">
-                                      <node concept="2GrUjf" id="3VLfU1$2BHc" role="2Oq$k0">
-                                        <ref role="2Gs0qQ" node="3iJyJcZzT_O" resolve="assignExp" />
-                                      </node>
-                                      <node concept="3TrEf2" id="3VLfU1$2BHd" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="mj1l:7FQByU3CrD0" />
-                                      </node>
+                                  <node concept="2OqwBi" id="3VLfU1$8AnF" role="3cqZAk">
+                                    <node concept="2GrUjf" id="3VLfU1$8$g8" role="2Oq$k0">
+                                      <ref role="2Gs0qQ" node="3iJyJcZzT_O" resolve="assignExp" />
                                     </node>
+                                    <node concept="3JvlWi" id="3VLfU1$8CF7" role="2OqNvi" />
                                   </node>
                                 </node>
                               </node>
