@@ -7356,6 +7356,39 @@
                         <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
                       </node>
                     </node>
+                    <node concept="2tJIrI" id="6tRqE3lrqjf" role="jymVt" />
+                    <node concept="3clFb_" id="6tRqE3lrAbn" role="jymVt">
+                      <property role="1EzhhJ" value="false" />
+                      <property role="TrG5h" value="onRemove" />
+                      <property role="DiZV1" value="false" />
+                      <property role="IEkAT" value="false" />
+                      <node concept="3Tm1VV" id="6tRqE3lrAbo" role="1B3o_S" />
+                      <node concept="3cqZAl" id="6tRqE3lrAbq" role="3clF45" />
+                      <node concept="3clFbS" id="6tRqE3lrAbs" role="3clF47">
+                        <node concept="3clFbF" id="6tRqE3lrHwE" role="3cqZAp">
+                          <node concept="2OqwBi" id="6tRqE3lrIfM" role="3clFbG">
+                            <node concept="2YIFZM" id="6tRqE3lrHy5" role="2Oq$k0">
+                              <ref role="37wK5l" node="1U2fVW5w4SO" resolve="getInstance" />
+                              <ref role="1Pybhd" node="1U2fVW5vyXu" resolve="CodeParagraphManager" />
+                            </node>
+                            <node concept="liA8E" id="6tRqE3lrJGc" role="2OqNvi">
+                              <ref role="37wK5l" node="1U2fVW5wz1m" resolve="unregisterDecider" />
+                              <node concept="37vLTw" id="6tRqE3lrJNO" role="37wK5m">
+                                <ref role="3cqZAo" node="26B0wrFCKPB" resolve="fNode" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="6tRqE3lrAbv" role="3cqZAp">
+                          <node concept="3nyPlj" id="6tRqE3lrAbu" role="3clFbG">
+                            <ref role="37wK5l" to="jsgz:~EditorCell_Collection.onRemove():void" resolve="onRemove" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2AHcQZ" id="6tRqE3lrAbt" role="2AJF6D">
+                        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
