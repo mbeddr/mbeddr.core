@@ -1539,8 +1539,8 @@
                   </node>
                   <node concept="3clFbF" id="3Cbg1P8YHHa" role="3cqZAp">
                     <node concept="2YIFZM" id="3Cbg1P8YNwy" role="3clFbG">
-                      <ref role="37wK5l" to="hwgx:1yFmGPnITm$" resolve="getTextForNode" />
                       <ref role="1Pybhc" to="hwgx:1yFmGPnITl_" resolve="FakeEditorComponent" />
+                      <ref role="37wK5l" to="hwgx:1yFmGPnITm$" resolve="getTextForNode" />
                       <node concept="37vLTw" id="3Cbg1P8YNF5" role="37wK5m">
                         <ref role="3cqZAo" node="3Cbg1P8YIrE" resolve="d" />
                       </node>
