@@ -1002,8 +1002,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="1YUFCeG6pXF">
-    <property role="3GE5qa" value="codepointer" />
-    <ref role="1M2myG" to="2c95:1YUFCeG6oK8" resolve="CPNamedNodeElement" />
+    <property role="3GE5qa" value="modelContentPointer" />
+    <ref role="1M2myG" to="2c95:1YUFCeG6oK8" resolve="NamedNodeModelContentPointerElement" />
     <node concept="1N5Pfh" id="1YUFCeG6q44" role="1Mr941">
       <ref role="1N5Vy1" to="2c95:1YUFCeG6oK9" />
       <node concept="1MUpDS" id="1YUFCeG6q47" role="1N6uqs">
@@ -1021,11 +1021,11 @@
                 <node concept="3cpWsn" id="1YUFCeGd6GE" role="3cpWs9">
                   <property role="TrG5h" value="elements" />
                   <node concept="2I9FWS" id="1YUFCeGd6GC" role="1tU5fm">
-                    <ref role="2I9WkF" to="2c95:7IDbqDzNoQ" resolve="AbstractCPElement" />
+                    <ref role="2I9WkF" to="2c95:7IDbqDzNoQ" resolve="AbstractModelContentPointerElement" />
                   </node>
                   <node concept="2OqwBi" id="1YUFCeGd6GF" role="33vP2m">
                     <node concept="1PxgMI" id="1YUFCeGd6GG" role="2Oq$k0">
-                      <ref role="1PxNhF" to="2c95:1YUFCeG6lqR" resolve="CodePointer" />
+                      <ref role="1PxNhF" to="2c95:1YUFCeG6lqR" resolve="ModelContentPointer" />
                       <node concept="21POm0" id="1YUFCeGd6GH" role="1PxMeX" />
                     </node>
                     <node concept="3Tsc0h" id="1YUFCeGd6GI" role="2OqNvi">
@@ -1043,7 +1043,7 @@
                       </node>
                       <node concept="2OqwBi" id="1YUFCeGf37t" role="37vLTx">
                         <node concept="1PxgMI" id="1YUFCeGf$Hk" role="2Oq$k0">
-                          <ref role="1PxNhF" to="2c95:7IDbqDzNoQ" resolve="AbstractCPElement" />
+                          <ref role="1PxNhF" to="2c95:7IDbqDzNoQ" resolve="AbstractModelContentPointerElement" />
                           <node concept="2OqwBi" id="1YUFCeGfyBP" role="1PxMeX">
                             <node concept="2OqwBi" id="1YUFCeGdzDl" role="2Oq$k0">
                               <node concept="37vLTw" id="1YUFCeGdrRU" role="2Oq$k0">
@@ -1087,7 +1087,7 @@
                     </node>
                     <node concept="2OqwBi" id="1YUFCeGhtuy" role="37vLTx">
                       <node concept="1PxgMI" id="1YUFCeGfgGz" role="2Oq$k0">
-                        <ref role="1PxNhF" to="2c95:7IDbqDzNoQ" resolve="AbstractCPElement" />
+                        <ref role="1PxNhF" to="2c95:7IDbqDzNoQ" resolve="AbstractModelContentPointerElement" />
                         <node concept="2OqwBi" id="1YUFCeGe7O5" role="1PxMeX">
                           <node concept="3kakTB" id="1YUFCeGe7O6" role="2Oq$k0" />
                           <node concept="YBYNd" id="1YUFCeGe7O7" role="2OqNvi" />
@@ -1281,8 +1281,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="627_yy34G1q">
-    <property role="3GE5qa" value="code" />
-    <ref role="1M2myG" to="2c95:627_yy34G1i" resolve="CCodeParagraph" />
+    <property role="3GE5qa" value="modelContent" />
+    <ref role="1M2myG" to="2c95:627_yy34G1i" resolve="ModelContentAsTextParagraph" />
     <node concept="EnEH3" id="627_yy34G1r" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
       <node concept="Eqf_E" id="627_yy34G1s" role="EtsB7">
@@ -1314,12 +1314,12 @@
     </node>
   </node>
   <node concept="1M2fIO" id="627_yy34G1E">
-    <property role="3GE5qa" value="code" />
-    <ref role="1M2myG" to="2c95:627_yy34G14" resolve="AbstractCCodeParagraph" />
+    <property role="3GE5qa" value="modelContent" />
+    <ref role="1M2myG" to="2c95:627_yy34G14" resolve="AbstractModelContentParagraph" />
   </node>
   <node concept="1M2fIO" id="627_yy34G1F">
-    <property role="3GE5qa" value="code" />
-    <ref role="1M2myG" to="2c95:627_yy34G1o" resolve="NodeCodeRemoval" />
+    <property role="3GE5qa" value="modelContent" />
+    <ref role="1M2myG" to="2c95:627_yy34G1o" resolve="NodeModelContentRemoval" />
     <node concept="1N5Pfh" id="627_yy34G1G" role="1Mr941">
       <ref role="1N5Vy1" to="2c95:627_yy34G1p" />
       <node concept="1MUpDS" id="627_yy34G1H" role="1N6uqs">
@@ -1328,7 +1328,7 @@
             <node concept="2OqwBi" id="627_yy34G1K" role="3clFbG">
               <node concept="2OqwBi" id="627_yy34G1L" role="2Oq$k0">
                 <node concept="1PxgMI" id="627_yy34G1M" role="2Oq$k0">
-                  <ref role="1PxNhF" to="2c95:627_yy34G14" resolve="AbstractCCodeParagraph" />
+                  <ref role="1PxNhF" to="2c95:627_yy34G14" resolve="AbstractModelContentParagraph" />
                   <node concept="21POm0" id="627_yy34G1N" role="1PxMeX" />
                 </node>
                 <node concept="2qgKlT" id="627_yy34G1O" role="2OqNvi">
