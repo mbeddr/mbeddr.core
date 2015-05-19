@@ -3048,16 +3048,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="7oI7FI6qb0g">
-    <property role="3GE5qa" value="comp" />
-    <ref role="1XX52x" to="v7ag:7oI7FI6qb0b" resolve="CommentedComponentContent" />
-    <node concept="PMmxH" id="65XyadYMXis" role="2wV5jI">
-      <ref role="PMmxG" to="r4b4:65XyadYMSRq" resolve="commentedCodeDefault" />
-      <node concept="VPM3Z" id="6A4xWqfT4vk" role="3F10Kt">
-        <property role="VOm3f" value="false" />
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="WtRjgwxNSp">
     <property role="3GE5qa" value="comp.instances" />
     <ref role="1XX52x" to="v7ag:WtRjgwxLl_" resolve="EmptyInstanceConfigContent" />
@@ -7645,6 +7635,23 @@
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
       <node concept="2SsqMj" id="3KKPUg5FEG8" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3RtPbXKO4uy">
+    <property role="3GE5qa" value="intf.cs" />
+    <ref role="1XX52x" to="v7ag:3RtPbXKO3Xq" resolve="CommentedCSInterfaceContent" />
+    <node concept="PMmxH" id="3RtPbXKO5Ij" role="2wV5jI">
+      <ref role="PMmxG" to="r4b4:65XyadYMSRq" resolve="commentedCodeDefault" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7oI7FI6qb0g">
+    <property role="3GE5qa" value="comp" />
+    <ref role="1XX52x" to="v7ag:7oI7FI6qb0b" resolve="CommentedComponentContent" />
+    <node concept="PMmxH" id="65XyadYMXis" role="2wV5jI">
+      <ref role="PMmxG" to="r4b4:65XyadYMSRq" resolve="commentedCodeDefault" />
+      <node concept="VPM3Z" id="6A4xWqfT4vk" role="3F10Kt">
+        <property role="VOm3f" value="false" />
+      </node>
     </node>
   </node>
 </model>
