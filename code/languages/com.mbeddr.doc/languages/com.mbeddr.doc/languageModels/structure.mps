@@ -210,6 +210,14 @@
     <property role="R4oN_" value="references a section" />
     <property role="34LRSv" value="@sect" />
     <ref role="1TJDcQ" node="2TZO3DbvhAy" resolve="DocumentWord" />
+    <node concept="1TJgyi" id="QRmqzHer_D" role="1TKVEl">
+      <property role="TrG5h" value="prefixed" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="QRmqzH4Vf7" role="1TKVEl">
+      <property role="TrG5h" value="indexed" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="2TZO3DbvhAJ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
@@ -1287,6 +1295,28 @@
     <node concept="PrWs8" id="3KN5gxXu83D" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="QRmqzGVqHp">
+    <property role="3GE5qa" value="structure" />
+    <property role="TrG5h" value="TableOfContents" />
+    <property role="34LRSv" value="TOC" />
+    <property role="R4oN_" value="Table of Contents" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="QRmqzHsCFF" role="PzmwI">
+      <ref role="PrY4T" node="2TZO3DbuxwP" resolve="IDocumentContent" />
+    </node>
+    <node concept="PrWs8" id="QRmqzHsCFN" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:1DVNPtFPBay" resolve="IShowUpInOutline" />
+    </node>
+    <node concept="PrWs8" id="QRmqzHsCG0" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6SQk4GjI9n5" resolve="IHierarchicalStructure" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="QRmqzHsCG8">
+    <property role="3GE5qa" value="structure" />
+    <property role="TrG5h" value="Introduction" />
+    <property role="34LRSv" value="intro" />
+    <ref role="1TJDcQ" node="2TZO3Dbv6Ju" resolve="AbstractSection" />
   </node>
 </model>
 

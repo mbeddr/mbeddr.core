@@ -4,6 +4,7 @@
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
+    <use id="3f41734b-72c3-42c8-b22c-bacd5a878e17" name="com.mbeddr.mpsutil.propertydefault" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -72,6 +73,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -128,6 +132,12 @@
         <child id="3906442776579556548" name="presentation" index="Bn3R6" />
         <child id="1148687345559" name="searchScopeFactory" index="1N6uqs" />
       </concept>
+    </language>
+    <language id="3f41734b-72c3-42c8-b22c-bacd5a878e17" name="com.mbeddr.mpsutil.propertydefault">
+      <concept id="1550432487216066866" name="com.mbeddr.mpsutil.propertydefault.structure.IPropertyDefaultValue" flags="ng" index="3_egWj">
+        <child id="1550432487216060794" name="defaultValue" index="3_eitr" />
+      </concept>
+      <concept id="1550432487216062719" name="com.mbeddr.mpsutil.propertydefault.structure.NodePropertyConstraintDefault" flags="ng" index="3_ehVu" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -343,6 +353,18 @@
             <node concept="3x8VRR" id="2TZO3DbvhBU" role="2OqNvi" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="3_ehVu" id="QRmqzHerRF" role="1MhHOB">
+      <ref role="EomxK" to="2c95:QRmqzHer_D" resolve="prefixed" />
+      <node concept="3clFbT" id="QRmqzHerRW" role="3_eitr">
+        <property role="3clFbU" value="true" />
+      </node>
+    </node>
+    <node concept="3_ehVu" id="QRmqzH4VOj" role="1MhHOB">
+      <ref role="EomxK" to="2c95:QRmqzH4Vf7" resolve="indexed" />
+      <node concept="3clFbT" id="QRmqzH4VOw" role="3_eitr">
+        <property role="3clFbU" value="false" />
       </node>
     </node>
   </node>
@@ -1345,6 +1367,16 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="QRmqzHASLR">
+    <property role="3GE5qa" value="structure" />
+    <ref role="1M2myG" to="2c95:QRmqzGVqHp" resolve="TableOfContents" />
+    <node concept="3_ehVu" id="QRmqzHASLS" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="Xl_RD" id="QRmqzHASM3" role="3_eitr">
+        <property role="Xl_RC" value="TOC" />
       </node>
     </node>
   </node>

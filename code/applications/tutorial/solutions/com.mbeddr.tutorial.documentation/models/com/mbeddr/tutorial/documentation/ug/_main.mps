@@ -60,7 +60,8 @@
         <child id="6068976060904007489" name="root" index="30Gjbj" />
       </concept>
       <concept id="4208238404723595132" name="com.mbeddr.doc.structure.UrlFormattedText" flags="ng" index="1hOBRO" />
-      <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
+      <concept id="988357225304197896" name="com.mbeddr.doc.structure.Introduction" flags="ng" index="3wLtaw" />
+      <concept id="988357225295489881" name="com.mbeddr.doc.structure.TableOfContents" flags="ng" index="3xmJbL" />
       <concept id="3350625596580256366" name="com.mbeddr.doc.structure.DocumentExport" flags="ng" index="1_08Dk">
         <property id="126932837435324910" name="title" index="WqcPg" />
       </concept>
@@ -82,7 +83,6 @@
       <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa">
         <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
       </concept>
-      <concept id="3350625596579911760" name="com.mbeddr.doc.structure.EmptyDocContent" flags="ng" index="1_1sxE" />
       <concept id="8624890525767637976" name="com.mbeddr.doc.structure.PageWidthSizeSpec" flags="ng" index="3SGHZ$">
         <property id="8624890525767637977" name="percentage" index="3SGHZ_" />
       </concept>
@@ -174,7 +174,7 @@
     <node concept="1_0j5j" id="1OEOMsplf4L" role="1DXQ57">
       <ref role="1_0j5g" to="t8u7:1OEOMspldJi" resolve="Z_CHAPTER_ComplexProjects" />
     </node>
-    <node concept="1mvXsy" id="hZfTLLYKY3" role="1_0VJ0">
+    <node concept="3wLtaw" id="QRmqzH$YQa" role="1_0VJ0">
       <property role="TrG5h" value="introAndTOC" />
       <property role="1_0VJr" value="mbeddr User Guide" />
       <node concept="1_0LV8" id="hZfTLLYKXn" role="1_0VJ0">
@@ -257,62 +257,60 @@
           </node>
         </node>
       </node>
-      <node concept="1_1sxE" id="2NmTaRVRLjF" role="1_0VJ0">
-        <property role="TrG5h" value="empty_-1" />
+    </node>
+    <node concept="3xmJbL" id="QRmqzHO4hm" role="1_0VJ0" />
+    <node concept="$CzcT" id="hZfTLLCm6j" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="hZfTLLCm6D" role="$CzcU">
+        <ref role="1_0j5g" to="9w7i:1ig5Eljjfz2" resolve="Z_CHAPTER_Concepts" />
       </node>
-      <node concept="$CzcT" id="hZfTLLCm6j" role="1_0VJ0">
-        <property role="1P4p2h" value="true" />
-        <node concept="1_0j5j" id="hZfTLLCm6D" role="$CzcU">
-          <ref role="1_0j5g" to="9w7i:1ig5Eljjfz2" resolve="Z_CHAPTER_Concepts" />
-        </node>
+    </node>
+    <node concept="$CzcT" id="hZfTLLvFnn" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="4v5hnzpb3dK" role="$CzcU">
+        <ref role="1_0j5g" to="xojk:1OEOMsplgM2" resolve="Z_CHAPTER_Installation" />
       </node>
-      <node concept="$CzcT" id="hZfTLLvFnn" role="1_0VJ0">
-        <property role="1P4p2h" value="true" />
-        <node concept="1_0j5j" id="4v5hnzpb3dK" role="$CzcU">
-          <ref role="1_0j5g" to="xojk:1OEOMsplgM2" resolve="Z_CHAPTER_Installation" />
-        </node>
+    </node>
+    <node concept="$CzcT" id="1OEOMsplizW" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="1OEOMsplizX" role="$CzcU">
+        <ref role="1_0j5g" to="bmc6:1ig5EljjfWv" resolve="Z_CHAPTER_Fundamentals" />
       </node>
-      <node concept="$CzcT" id="1OEOMsplizW" role="1_0VJ0">
-        <property role="1P4p2h" value="true" />
-        <node concept="1_0j5j" id="1OEOMsplizX" role="$CzcU">
-          <ref role="1_0j5g" to="bmc6:1ig5EljjfWv" resolve="Z_CHAPTER_Fundamentals" />
-        </node>
+    </node>
+    <node concept="$CzcT" id="1OEOMsplkC6" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="1OEOMsplkCN" role="$CzcU">
+        <ref role="1_0j5g" to="c4ys:1OEOMspli$k" resolve="Z_CHAPTER_mbeddrCvsC99" />
       </node>
-      <node concept="$CzcT" id="1OEOMsplkC6" role="1_0VJ0">
-        <property role="1P4p2h" value="true" />
-        <node concept="1_0j5j" id="1OEOMsplkCN" role="$CzcU">
-          <ref role="1_0j5g" to="c4ys:1OEOMspli$k" resolve="Z_CHAPTER_mbeddrCvsC99" />
-        </node>
+    </node>
+    <node concept="$CzcT" id="hZfTLMek95" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="hZfTLMek9i" role="$CzcU">
+        <ref role="1_0j5g" to="4v62:1ig5EljjfWv" resolve="Z_CHAPTER_GeneratedCode" />
       </node>
-      <node concept="$CzcT" id="hZfTLMek95" role="1_0VJ0">
-        <property role="1P4p2h" value="true" />
-        <node concept="1_0j5j" id="hZfTLMek9i" role="$CzcU">
-          <ref role="1_0j5g" to="4v62:1ig5EljjfWv" resolve="Z_CHAPTER_GeneratedCode" />
-        </node>
+    </node>
+    <node concept="$CzcT" id="1OEOMsplgLG" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="1OEOMsplgLZ" role="$CzcU">
+        <ref role="1_0j5g" to="4kwm:1OEOMsplf5g" resolve="Z_CHAPTER_CTooling" />
       </node>
-      <node concept="$CzcT" id="1OEOMsplgLG" role="1_0VJ0">
-        <property role="1P4p2h" value="true" />
-        <node concept="1_0j5j" id="1OEOMsplgLZ" role="$CzcU">
-          <ref role="1_0j5g" to="4kwm:1OEOMsplf5g" resolve="Z_CHAPTER_CTooling" />
-        </node>
+    </node>
+    <node concept="$CzcT" id="1OEOMspldIM" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="1OEOMspldJf" role="$CzcU">
+        <ref role="1_0j5g" to="vaym:1OEOMspkYrg" resolve="Z_CHAPTER_CExtensions" />
       </node>
-      <node concept="$CzcT" id="1OEOMspldIM" role="1_0VJ0">
-        <property role="1P4p2h" value="true" />
-        <node concept="1_0j5j" id="1OEOMspldJf" role="$CzcU">
-          <ref role="1_0j5g" to="vaym:1OEOMspkYrg" resolve="Z_CHAPTER_CExtensions" />
-        </node>
+    </node>
+    <node concept="$CzcT" id="hZfTLMezS0" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="1OEOMsplmvX" role="$CzcU">
+        <ref role="1_0j5g" to="vi23:1OEOMsplkCQ" resolve="Z_CHAPTER_ProcessSupport" />
       </node>
-      <node concept="$CzcT" id="hZfTLMezS0" role="1_0VJ0">
-        <property role="1P4p2h" value="true" />
-        <node concept="1_0j5j" id="1OEOMsplmvX" role="$CzcU">
-          <ref role="1_0j5g" to="vi23:1OEOMsplkCQ" resolve="Z_CHAPTER_ProcessSupport" />
-        </node>
-      </node>
-      <node concept="$CzcT" id="1OEOMsplmv$" role="1_0VJ0">
-        <property role="1P4p2h" value="true" />
-        <node concept="1_0j5j" id="1OEOMsplmv_" role="$CzcU">
-          <ref role="1_0j5g" to="us0v:1ig5EljjfWv" resolve="Z_CHAPTER_Analyses" />
-        </node>
+    </node>
+    <node concept="$CzcT" id="1OEOMsplmv$" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="1OEOMsplmv_" role="$CzcU">
+        <ref role="1_0j5g" to="us0v:1ig5EljjfWv" resolve="Z_CHAPTER_Analyses" />
       </node>
     </node>
   </node>
