@@ -37,11 +37,11 @@
     <import index="qs12" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#org.apache.batik.swing.svg(com.mbeddr.mpsutil.plantuml.pluginSolution/org.apache.batik.swing.svg@java_stub)" />
     <import index="22fg" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.net(JDK/java.net@java_stub)" />
     <import index="gzvg" ref="c2788093-51e8-4cfe-943b-eefd5ff309ff/r:57c6e005-9b69-4d41-a9d6-190f5964c5d7(com.mbeddr.mpsutil.httpserver/com.mbeddr.mpsutil.httpserver.plugin)" />
-    <import index="a8zf" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#net.sourceforge.plantuml(com.mbeddr.mpsutil.plantuml.pluginSolution/net.sourceforge.plantuml@java_stub)" implicit="true" />
     <import index="qj53" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#org.apache.batik.swing.gvt(com.mbeddr.mpsutil.plantuml.pluginSolution/org.apache.batik.swing.gvt@java_stub)" implicit="true" />
+    <import index="qub4" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#org.apache.batik.swing(com.mbeddr.mpsutil.plantuml.pluginSolution/org.apache.batik.swing@java_stub)" implicit="true" />
+    <import index="a8zf" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#net.sourceforge.plantuml(com.mbeddr.mpsutil.plantuml.pluginSolution/net.sourceforge.plantuml@java_stub)" implicit="true" />
     <import index="tu4w" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#org.apache.batik.util(com.mbeddr.mpsutil.plantuml.pluginSolution/org.apache.batik.util@java_stub)" implicit="true" />
     <import index="8ouv" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#org.apache.batik.bridge(com.mbeddr.mpsutil.plantuml.pluginSolution/org.apache.batik.bridge@java_stub)" implicit="true" />
-    <import index="qub4" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#org.apache.batik.swing(com.mbeddr.mpsutil.plantuml.pluginSolution/org.apache.batik.swing@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -2003,7 +2003,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="53G_t0Fb_PQ" role="1nVCmq">
-      <property role="1QGGTI" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/languages/com.mbeddr.core.base/solutions/pluginSolution/icons/vis.png" />
+      <property role="1QGGTI" value="${module}/icons/vis.png" />
     </node>
   </node>
   <node concept="312cEu" id="1X6acCMyThI">
@@ -2678,7 +2678,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="53G_t0FbBQs" role="3Uehp1">
-      <property role="1QGGTI" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/languages/com.mbeddr.core.base/solutions/pluginSolution/icons/vis.png" />
+      <property role="1QGGTI" value="${module}/icons/vis.png" />
     </node>
   </node>
   <node concept="tC5Ba" id="18ZQ$P84YIL">
@@ -5693,7 +5693,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="bhVSeGf3t4" role="3Uehp1">
-      <property role="1QGGTI" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core/languages/com.mbeddr.core.base/solutions/pluginSolution/icons/vis.png" />
+      <property role="1QGGTI" value="${module}/icons/vis.png" />
     </node>
     <node concept="2ScWuX" id="bhVSeGf5_Y" role="tmbBb">
       <node concept="3clFbS" id="bhVSeGf5_Z" role="2VODD2">

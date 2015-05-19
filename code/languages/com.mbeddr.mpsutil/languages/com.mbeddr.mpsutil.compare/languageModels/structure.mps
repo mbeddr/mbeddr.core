@@ -124,5 +124,16 @@
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1_DWnhqnL9Y">
+    <property role="TrG5h" value="AreEqualExpression" />
+    <property role="34LRSv" value="areEqual" />
+    <property role="R4oN_" value="compares two nodes" />
+    <ref role="1TJDcQ" to="tpee:fJuHJVf" resolve="BinaryOperation" />
+    <node concept="1TJgyj" id="1_DWnhqnLaj" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ignoredProperties" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

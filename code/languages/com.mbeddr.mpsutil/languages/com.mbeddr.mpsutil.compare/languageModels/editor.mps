@@ -12,11 +12,14 @@
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="tpch" ref="r:00000000-0000-4000-0000-011c8959028d(jetbrains.mps.lang.structure.editor)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
@@ -464,6 +467,30 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1_DWnhqnLas">
+    <ref role="1XX52x" to="8do3:1_DWnhqnL9Y" resolve="AreEqualExpression" />
+    <node concept="3EZMnI" id="1_DWnhqnL_6" role="2wV5jI">
+      <node concept="3F1sOY" id="1_DWnhqnL_t" role="3EZMnx">
+        <ref role="1NtTu8" to="tpee:fJuHU4s" />
+      </node>
+      <node concept="3F0ifn" id="1_DWnhqnL_D" role="3EZMnx">
+        <property role="3F0ifm" value=":isEqualTo:" />
+      </node>
+      <node concept="3F1sOY" id="1_DWnhqnL_V" role="3EZMnx">
+        <ref role="1NtTu8" to="tpee:fJuHU4r" />
+      </node>
+      <node concept="2iRfu4" id="1_DWnhqnL_9" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="1_DWnhqnLAa" role="6VMZX">
+      <node concept="3F0ifn" id="1_DWnhqnLAn" role="3EZMnx">
+        <property role="3F0ifm" value="ignored properties:" />
+      </node>
+      <node concept="3F1sOY" id="1_DWnhqnLAz" role="3EZMnx">
+        <ref role="1NtTu8" to="8do3:1_DWnhqnLaj" />
+      </node>
+      <node concept="2iRfu4" id="1_DWnhqnLAd" role="2iSdaV" />
     </node>
   </node>
 </model>
