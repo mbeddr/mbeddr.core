@@ -81,6 +81,7 @@
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
       <concept id="6955693250238922834" name="com.mbeddr.doc.structure.CCodeParagraph" flags="ng" index="3z_lpU">
+        <property id="6955693250238922835" name="text" index="3z_lpV" />
         <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
@@ -125,7 +126,7 @@
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractFilePicker" flags="ng" index="3N1QpV">
+      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
         <property id="6156524541422553710" name="path" index="3N1Lgt" />
       </concept>
     </language>
@@ -1526,6 +1527,7 @@
           </node>
           <node concept="3z_lpU" id="3JyX84yPgyY" role="1_0VJ0">
             <property role="3z_lpW" value="mbeddr" />
+            <property role="3z_lpV" value="embed code as text  RobustnessExtensionsExamples.computeBreakingDistance  show" />
             <node concept="2NCZwO" id="3JyX84yPgz0" role="3z_lpI">
               <node concept="2NCMab" id="3JyX84yPk1W" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:3uoNPXnjeUv" resolve="RobustnessExtensionsExamples" />
@@ -1671,6 +1673,7 @@
           </node>
           <node concept="3z_lpU" id="3JyX84yUjCY" role="1_0VJ0">
             <property role="3z_lpW" value="mbeddr" />
+            <property role="3z_lpV" value="embed code as text  RobustnessStatemachinedExamples.Counter  show" />
             <node concept="2NCZwO" id="3JyX84yUjHQ" role="3z_lpI">
               <node concept="2NCMab" id="3JyX84yUjHW" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:3JyX84ySf5_" resolve="RobustnessStatemachinedExamples" />
@@ -1698,6 +1701,7 @@
           </node>
           <node concept="3z_lpU" id="3JyX84yUjYD" role="1_0VJ0">
             <property role="3z_lpW" value="mbeddr" />
+            <property role="3z_lpV" value="embed code as text  RobustnessStatemachinedExamples.aStatemachineCheckAttribute  show" />
             <node concept="2NCZwO" id="3JyX84yUjYE" role="3z_lpI">
               <node concept="2NCMab" id="3JyX84yUjYF" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:3JyX84ySf5_" resolve="RobustnessStatemachinedExamples" />

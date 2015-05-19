@@ -103,6 +103,7 @@
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
       <concept id="6955693250238922834" name="com.mbeddr.doc.structure.CCodeParagraph" flags="ng" index="3z_lpU">
+        <property id="6955693250238922835" name="text" index="3z_lpV" />
         <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
       <concept id="6955693250238922838" name="com.mbeddr.doc.structure.CodeRefWord" flags="ng" index="3z_lpY">
@@ -151,7 +152,7 @@
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractFilePicker" flags="ng" index="3N1QpV">
+      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
         <property id="6156524541422553710" name="path" index="3N1Lgt" />
       </concept>
     </language>
@@ -582,6 +583,7 @@
         <node concept="3z_lpU" id="5dchr4QgHJC" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="                                                                                                                                                    &#10; stdlib_stub                                                                                                                                        &#10;// contents are exported by default                                                                                                                 &#10;model   com.mbeddr.tutorial.documentation.code    imports nothing                                                                                   &#10;                                                                                                                                                    &#10;                                                                                                                                                    &#10;                                                                                                      resources 6b853dfb-19be-33ee-b67c-33b658dd0753" />
           <node concept="2Cuv_b" id="5dchr4QgTJn" role="3z_lpH">
             <ref role="2Cuq_M" to="x27k:5jyom5fOqJw" resolve="HeaderDescriptor" />
           </node>
@@ -651,6 +653,7 @@
         <node concept="3z_lpU" id="5dchr4QgX8W" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="                                                                                                                                  &#10; stdlib_stub                                                                                                                      &#10;// contents are exported by default                                                                                               &#10;model   com.mbeddr.tutorial.documentation.code    imports nothing                                                                 &#10;                                                                                                                                  &#10;                                                                                                                                  &#10;                                                                                                      resources header: &lt;stdlib.h&gt;" />
           <node concept="2NCZwO" id="5dchr4QgX8Y" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4QgX8Z" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" resolve="stdlib_stub" />
@@ -740,6 +743,7 @@
         <node concept="3z_lpU" id="5dchr4Qh0Kr" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="                                                                                                                                  &#10; stdlib_stub                                                                                                                      &#10;// contents are exported by default                                                                                               &#10;model   com.mbeddr.tutorial.documentation.code    imports nothing                                                                 &#10;                                                                                                                                  &#10;                                                                                                                                  &#10;void* malloc(size_t size);                                                                                                        &#10;void free(void* ptr);                                                                                                             &#10;                                                                                                      resources header: &lt;stdlib.h&gt;" />
           <node concept="2NCZwO" id="5dchr4Qh0Kt" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4Qh0Ku" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" resolve="stdlib_stub" />
@@ -947,6 +951,7 @@
         </node>
         <node concept="3z_lpU" id="5dchr4QlodI" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="embed code as text  BuildConfiguration (c.m.t.d.code)  show" />
           <node concept="2NCZwO" id="5dchr4QlodJ" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4Qlog_" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" resolve="BuildConfiguration (c.m.t.d.code)" />
@@ -1136,6 +1141,7 @@
         <node concept="3z_lpU" id="5dchr4QlnWG" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="reporting printf" />
           <node concept="2NCZwO" id="5dchr4QlnWH" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4QlnZ5" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" resolve="BuildConfiguration (c.m.t.d.code)" />
@@ -1257,6 +1263,7 @@
         </node>
         <node concept="3z_lpU" id="5dchr4QloG6" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="embed code as text  BuildConfiguration (c.m.t.d.code).HelloWorld  show" />
           <node concept="2NCZwO" id="5dchr4QloG7" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4QloJD" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" resolve="BuildConfiguration (c.m.t.d.code)" />
@@ -2870,6 +2877,7 @@
         </node>
         <node concept="3z_lpU" id="4Rhu9QGM6ZD" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="embed code as text  HelloWorld.testAdding  show" />
           <node concept="2NCZwO" id="4Rhu9QGM6ZE" role="3z_lpI">
             <node concept="2NCMab" id="4Rhu9QGM70l" role="2NCMaf">
               <ref role="2NCMaa" to="orbb:4Rhu9QGK$vN" resolve="HelloWorld" />
@@ -2951,6 +2959,7 @@
         </node>
         <node concept="3z_lpU" id="4Rhu9QGM9$8" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="embed code as text  HelloWorld.main  show" />
           <node concept="2NCZwO" id="4Rhu9QGM9$9" role="3z_lpI">
             <node concept="2NCMab" id="4Rhu9QGM9_k" role="2NCMaf">
               <ref role="2NCMaa" to="orbb:4Rhu9QGK$vN" resolve="HelloWorld" />

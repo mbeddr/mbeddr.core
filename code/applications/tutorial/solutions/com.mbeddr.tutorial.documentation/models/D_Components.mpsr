@@ -71,6 +71,7 @@
         <reference id="6955693250238922841" name="removedNode" index="3z_lpL" />
       </concept>
       <concept id="6955693250238922834" name="com.mbeddr.doc.structure.CCodeParagraph" flags="ng" index="3z_lpU">
+        <property id="6955693250238922835" name="text" index="3z_lpV" />
         <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
       <concept id="6955693250238922838" name="com.mbeddr.doc.structure.CodeRefWord" flags="ng" index="3z_lpY">
@@ -151,6 +152,7 @@
       <node concept="3z_lpU" id="3DAECxFFwCJ" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
         <property role="3z_lpJ" value="true" />
+        <property role="3z_lpV" value="                            &#10;exported struct Trackpoint {&#10;  int8 id;                  &#10;  int8/s/ time;             &#10;  int8/m/ x;                &#10;  int8/m/ y;                &#10;  int16/m/ alt;             &#10;  int16/mps/ speed;         &#10;};                          " />
         <node concept="2NCZwO" id="1YUFCeGolDS" role="3z_lpI">
           <node concept="2NCMab" id="1YUFCeGolDT" role="2NCMaf">
             <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
@@ -256,6 +258,7 @@
         <node concept="3z_lpU" id="3D8Uf61142M" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported cs interface TrackpointProcessor {&#10;  Trackpoint* process(Trackpoint* p)       &#10;}                                          " />
           <node concept="2NCZwO" id="1YUFCeGolBQ" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolBR" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -298,6 +301,7 @@
         <node concept="3z_lpU" id="1SYZy6Qn1ZD" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported cs interface TrackpointProcessor {&#10;  Trackpoint* process(Trackpoint* p)       &#10;  pre(0) p != null                         &#10;  pre(1) p.id != 0                         &#10;  pre(2) p.time != 0 s                     &#10;  post(3) result.id != 0                   &#10;}                                          " />
           <node concept="2NCZwO" id="1SYZy6Qn1ZE" role="3z_lpI">
             <node concept="2NCMab" id="1SYZy6Qn1ZF" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -317,6 +321,7 @@
         <node concept="3z_lpU" id="3D8Uf611taf" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported messagelist ContractMessages {                                                &#10;  message contractFailed(int8 opID, int8 constraintID) ERROR: contract failed  (active)&#10;}                                                                                      " />
           <node concept="2NCZwO" id="1YUFCeGolCt" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolCu" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -416,6 +421,7 @@
         <node concept="3z_lpU" id="3D8Uf612fk4" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported component Nuller extends nothing {&#10;  provides TrackpointProcessor processor   &#10;} component Nuller                         " />
           <node concept="2NCZwO" id="1YUFCeGolI_" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolIA" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -438,6 +444,7 @@
         <node concept="3z_lpU" id="1SYZy6PNmQP" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported component Nuller extends nothing {                             &#10;  provides TrackpointProcessor processor                                &#10;  Trackpoint* processor_process(Trackpoint* p) &lt;= op processor.process {&#10;  p.alt = 42 m;                                                         &#10;  return p;                                                             &#10;} runnable processor_process                                            &#10;} component Nuller                                                      " />
           <node concept="2NCZwO" id="1SYZy6PNmQQ" role="3z_lpI">
             <node concept="2NCMab" id="1SYZy6PNmQR" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -562,6 +569,7 @@
         <node concept="3z_lpU" id="3D8Uf615TfS" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="instances nullerInstancesFailing {&#10;  instance Nuller nuller          &#10;  adapt n -&gt; nuller.processor     &#10;}                                 " />
           <node concept="2NCZwO" id="1YUFCeGolAP" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolAQ" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -681,6 +689,7 @@
         <node concept="3z_lpU" id="3D8Uf615V9e" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="                                       &#10;section testNullerFailing {            &#10;  instances nullerInstancesFailing {   &#10;  instance Nuller nuller               &#10;  adapt n -&gt; nuller.processor          &#10;}                                      &#10;                                       &#10;  exported testcase testNullerFailing {&#10;  initialize nullerInstancesFailing;   &#10;  Trackpoint tp = {                    &#10;  id = 0,                              &#10;  time = 0 s,                          &#10;  alt = 1000 m                         &#10;};                                     &#10;  n.process(&amp;tp);                      &#10;  assert(0) tp.alt == 0 m;             &#10;} testNullerFailing(test case)         &#10;} section testNullerFailing            " />
           <node concept="2NCZwO" id="1YUFCeGolA1" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolA2" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -720,6 +729,7 @@
         <node concept="3z_lpU" id="1SYZy6PWRQW" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="                                       &#10;section testNullerFailing {            &#10;  instances nullerInstancesFailing {   &#10;  instance Nuller nuller               &#10;  adapt n -&gt; nuller.processor          &#10;}                                      &#10;                                       &#10;  exported testcase testNullerFailing {&#10;  initialize nullerInstancesFailing;   &#10;  Trackpoint tp = {                    &#10;  id = 0,                              &#10;  time = 0 s,                          &#10;  alt = 1000 m                         &#10;};                                     &#10;  n.process(&amp;tp);                      &#10;  assert(0) tp.alt == 0 m;             &#10;} testNullerFailing(test case)         &#10;} section testNullerFailing            " />
           <node concept="2NCZwO" id="1SYZy6PWRQX" role="3z_lpI">
             <node concept="2NCMab" id="1SYZy6PWRUa" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -824,6 +834,7 @@
         <node concept="3z_lpU" id="3D8Uf61b_bE" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="                                  &#10;section testNullerOK {            &#10;  instances nullerInstancesOK {   &#10;  instance Nuller nuller          &#10;  adapt n -&gt; nuller.processor     &#10;}                                 &#10;                                  &#10;  exported testcase testNullerOK {&#10;  initialize nullerInstancesOK;   &#10;  Trackpoint tp = {               &#10;  id = 10,                        &#10;  time = 10 s,                    &#10;  alt = 100 m                     &#10;};                                &#10;  n.process(&amp;tp);                 &#10;  assert(0) tp.alt == 0 m;        &#10;} testNullerOK(test case)         &#10;} section testNullerOK            " />
           <node concept="2NCZwO" id="1YUFCeGolGS" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolGT" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -951,6 +962,7 @@
         <node concept="3z_lpU" id="1SYZy6QE3ci" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported cs interface TrackpointStore1 {&#10;  void store(Trackpoint* tp)            &#10;  Trackpoint* get()                     &#10;  Trackpoint* take()                    &#10;  query boolean isEmpty()               &#10;}                                       " />
           <node concept="2NCZwO" id="1SYZy6QE3ck" role="3z_lpI">
             <node concept="2NCMab" id="1SYZy6QE3cl" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -991,6 +1003,7 @@
         <node concept="3z_lpU" id="w_3lYHDaUM" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported cs interface TrackpointStore1 {&#10;  void store(Trackpoint* tp)            &#10;  pre(0) isEmpty()                      &#10;  pre(1) tp != null                     &#10;  post(2) !isEmpty()                    &#10;  Trackpoint* get()                     &#10;  pre(0) !isEmpty()                     &#10;  Trackpoint* take()                    &#10;  pre(0) !isEmpty()                     &#10;  post(1) result != null                &#10;  post(2) isEmpty()                     &#10;  query boolean isEmpty()               &#10;}                                       " />
           <node concept="2NCZwO" id="1YUFCeGol_l" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGol_m" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -1043,6 +1056,7 @@
         <node concept="3z_lpU" id="3UY8BSpCwHQ" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported cs interface TrackpointStore2 {&#10;                                        &#10;  void store(Trackpoint* tp)            &#10;  protocol init(0) -&gt; new full(1)       &#10;                                        &#10;  Trackpoint* get()                     &#10;  protocol full -&gt; full                 &#10;                                        &#10;  Trackpoint* take()                    &#10;  post(0) result != null                &#10;  protocol full -&gt; init(0)              &#10;                                        &#10;  query boolean isEmpty()               &#10;}                                       " />
           <node concept="2NCZwO" id="1YUFCeGol$s" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGol$t" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -1184,6 +1198,7 @@
         <node concept="3z_lpU" id="1SYZy6QQeyJ" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="Trackpoint* storedTP;" />
           <node concept="2NCZwO" id="1SYZy6QQeyL" role="3z_lpI">
             <node concept="2NCMab" id="1SYZy6QQeyM" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -1216,6 +1231,7 @@
         <node concept="3z_lpU" id="3UY8BSpCATg" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="void init() &lt;= on init {&#10;  storedTP = null;      &#10;  return;               &#10;} runnable init         " />
           <node concept="2NCZwO" id="1YUFCeGolF6" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolF7" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -1325,6 +1341,7 @@
         <node concept="3z_lpU" id="3UY8BSpCTtS" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="                                                          &#10;section testInterpolator {                                &#10;                                                          &#10;  instances interpolatorInstances {                       &#10;  instance InMemoryStorage store                          &#10;  instance Interpolator interpolator(divident = 10)       &#10;  connect interpolator.store to store.store               &#10;  adapt ip -&gt; interpolator.processor                      &#10;}                                                         &#10;                                                          &#10;                                                          &#10;  exported testcase testInterpolator {                    &#10;  initialize interpolatorInstances;                       &#10;  Trackpoint p1 = {                                       &#10;  id = 1,                                                 &#10;  time = 1 s,                                             &#10;  speed = 10 mps                                          &#10;};                                                        &#10;  Trackpoint p2 = {                                       &#10;  id = 1,                                                 &#10;  time = 1 s,                                             &#10;  speed = 20 mps                                          &#10;};                                                        &#10;  ip.process(&amp;p1);                                        &#10;  assert(0) p1.speed == 10 mps;                           &#10;  ip.process(&amp;p2);                                        &#10;  assert-equals(1) p2.speed == 3 mps;                     &#10;                                                          &#10;} testInterpolator(test case)                             &#10;                                                          &#10;                                                          &#10;                                                          &#10;  mock component StorageMock report messages: true {      &#10;  provides TrackpointStore1 store                         &#10;  Trackpoint* lastTP;                                     &#10;  total no. of calls is 5                                 &#10;  sequence {                                              &#10;  step 0: store.isEmpty return true;                      &#10;  step 1: store.store {                                   &#10;    assert 0: parameter tp: tp != null                    &#10;  }                                                       &#10;  do { lastTP = tp; }                                     &#10;  step 2: store.isEmpty return false;                     &#10;  step 3: store.take return lastTP;                       &#10;  step 4: store.store                                     &#10;}                                                         &#10;}                                                         &#10;                                                          &#10;  instances interpolatorInstancesWithMock {               &#10;  instance StorageMock storeMock                          &#10;  instance Interpolator ip(divident = 2)                  &#10;  connect ip.store to storeMock.store                     &#10;  adapt ipMock -&gt; ip.processor                            &#10;}                                                         &#10;                                                          &#10;                                                          &#10;  exported testcase testInterpolatorWithMock {            &#10;  initialize interpolatorInstancesWithMock;               &#10;  Trackpoint p1 = {                                       &#10;  id = 1,                                                 &#10;  time = 1 s,                                             &#10;  speed = 10 mps                                          &#10;};                                                        &#10;  Trackpoint p2 = {                                       &#10;  id = 2,                                                 &#10;  time = 2 s,                                             &#10;  speed = 20 mps                                          &#10;};                                                        &#10;  ipMock.process(&amp;p1);                                    &#10;  ipMock.process(&amp;p2);                                    &#10;  validatemock(0) interpolatorInstancesWithMock:storeMock;&#10;} testInterpolatorWithMock(test case)                     &#10;} section testInterpolator                                " />
           <node concept="2NCZwO" id="1YUFCeGolGu" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolGv" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -1357,6 +1374,7 @@
         <node concept="3z_lpU" id="3UY8BSpD0$R" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported component Interpolator extends nothing {                       &#10;  provides TrackpointProcessor processor                                &#10;  requires TrackpointStore1 store                                       &#10;  init int8 divident;                                                   &#10;                                                                        &#10;  Trackpoint* processor_process(Trackpoint* p) &lt;= op processor.process {&#10;  if (store.isEmpty()) {                                                &#10;  store.store(p);                                                       &#10;  return p;                                                             &#10;} else {                                                                &#10;  Trackpoint* old = store.take();                                       &#10;  p.speed = (p.speed + old.speed) / divident;                           &#10;  store.store(p);                                                       &#10;  return p;                                                             &#10;}                                                                       &#10;} runnable processor_process                                            &#10;} component Interpolator                                                " />
           <node concept="2NCZwO" id="1YUFCeGolC3" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolC4" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -1416,6 +1434,7 @@
         <node concept="3z_lpU" id="3UY8BSpD1Sp" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="instances interpolatorInstances {                  &#10;  instance InMemoryStorage store                   &#10;  instance Interpolator interpolator(divident = 10)&#10;  connect interpolator.store to store.store        &#10;  adapt ip -&gt; interpolator.processor               &#10;}                                                  " />
           <node concept="2NCZwO" id="1YUFCeGolBf" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolBg" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -1623,6 +1642,7 @@
         <node concept="3z_lpU" id="5MdJlx$Jlhg" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="                                                          &#10;section testInterpolator {                                &#10;                                                          &#10;  instances interpolatorInstances {                       &#10;  instance InMemoryStorage store                          &#10;  instance Interpolator interpolator(divident = 10)       &#10;  connect interpolator.store to store.store               &#10;  adapt ip -&gt; interpolator.processor                      &#10;}                                                         &#10;                                                          &#10;                                                          &#10;  exported testcase testInterpolator {                    &#10;  initialize interpolatorInstances;                       &#10;  Trackpoint p1 = {                                       &#10;  id = 1,                                                 &#10;  time = 1 s,                                             &#10;  speed = 10 mps                                          &#10;};                                                        &#10;  Trackpoint p2 = {                                       &#10;  id = 1,                                                 &#10;  time = 1 s,                                             &#10;  speed = 20 mps                                          &#10;};                                                        &#10;  ip.process(&amp;p1);                                        &#10;  assert(0) p1.speed == 10 mps;                           &#10;  ip.process(&amp;p2);                                        &#10;  assert-equals(1) p2.speed == 3 mps;                     &#10;                                                          &#10;} testInterpolator(test case)                             &#10;                                                          &#10;                                                          &#10;                                                          &#10;  mock component StorageMock report messages: true {      &#10;  provides TrackpointStore1 store                         &#10;  Trackpoint* lastTP;                                     &#10;  total no. of calls is 5                                 &#10;  sequence {                                              &#10;  step 0: store.isEmpty return true;                      &#10;  step 1: store.store {                                   &#10;    assert 0: parameter tp: tp != null                    &#10;  }                                                       &#10;  do { lastTP = tp; }                                     &#10;  step 2: store.isEmpty return false;                     &#10;  step 3: store.take return lastTP;                       &#10;  step 4: store.store                                     &#10;}                                                         &#10;}                                                         &#10;                                                          &#10;  instances interpolatorInstancesWithMock {               &#10;  instance StorageMock storeMock                          &#10;  instance Interpolator ip(divident = 2)                  &#10;  connect ip.store to storeMock.store                     &#10;  adapt ipMock -&gt; ip.processor                            &#10;}                                                         &#10;                                                          &#10;                                                          &#10;  exported testcase testInterpolatorWithMock {            &#10;  initialize interpolatorInstancesWithMock;               &#10;  Trackpoint p1 = {                                       &#10;  id = 1,                                                 &#10;  time = 1 s,                                             &#10;  speed = 10 mps                                          &#10;};                                                        &#10;  Trackpoint p2 = {                                       &#10;  id = 2,                                                 &#10;  time = 2 s,                                             &#10;  speed = 20 mps                                          &#10;};                                                        &#10;  ipMock.process(&amp;p1);                                    &#10;  ipMock.process(&amp;p2);                                    &#10;  validatemock(0) interpolatorInstancesWithMock:storeMock;&#10;} testInterpolatorWithMock(test case)                     &#10;} section testInterpolator                                " />
           <node concept="2NCZwO" id="5MdJlx$Jlhh" role="3z_lpI">
             <node concept="2NCMab" id="5MdJlx$Jlhi" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -1749,6 +1769,7 @@
         <node concept="3z_lpU" id="3UY8BSpDug1" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="mock component StorageMock report messages: true {&#10;  provides TrackpointStore1 store                 &#10;  Trackpoint* lastTP;                             &#10;  total no. of calls is 5                         &#10;  sequence {                                      &#10;  step 0: store.isEmpty return true;              &#10;  step 1: store.store {                           &#10;    assert 0: parameter tp: tp != null            &#10;  }                                               &#10;  do { lastTP = tp; }                             &#10;  step 2: store.isEmpty return false;             &#10;  step 3: store.take return lastTP;               &#10;  step 4: store.store                             &#10;}                                                 &#10;}                                                 " />
           <node concept="2NCZwO" id="1YUFCeGolBs" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolBt" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -1968,6 +1989,7 @@
         <node concept="3z_lpU" id="5MdJlx$JKZa" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported testcase testInterpolatorWithMock {&#10;  initialize interpolatorInstancesWithMock; &#10;  Trackpoint p1 = {                         &#10;  id = 1,                                   &#10;  time = 1 s,                               &#10;  speed = 10 mps                            &#10;};                                          &#10;  Trackpoint p2 = {                         &#10;  id = 2,                                   &#10;  time = 2 s,                               &#10;  speed = 20 mps                            &#10;};                                          &#10;  ipMock.process(&amp;p1);                      &#10;  ipMock.process(&amp;p2);                      &#10;} testInterpolatorWithMock(test case)       " />
           <node concept="2NCZwO" id="5MdJlx$JKZb" role="3z_lpI">
             <node concept="2NCMab" id="5MdJlx$JKZc" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -1993,6 +2015,7 @@
         <node concept="3z_lpU" id="3UY8BSpDC7R" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="instances interpolatorInstancesWithMock {&#10;  instance StorageMock storeMock         &#10;  instance Interpolator ip(divident = 2) &#10;  connect ip.store to storeMock.store    &#10;  adapt ipMock -&gt; ip.processor           &#10;}                                        " />
           <node concept="2NCZwO" id="1YUFCeGolBD" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolBE" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -2022,6 +2045,7 @@
         <node concept="3z_lpU" id="3UY8BSpDJqm" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="validatemock(0) interpolatorInstancesWithMock:storeMock;" />
           <node concept="2NCZwO" id="1YUFCeGolHq" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolHr" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -2198,6 +2222,7 @@
         <node concept="3z_lpU" id="3UY8BSpDRvG" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported sr interface PositionProvider {&#10;  int8/m/ x;                            &#10;  int8/m/ y;                            &#10;  int16/m/ alt;                         &#10;}                                       " />
           <node concept="2NCZwO" id="1YUFCeGolFj" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolFk" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:5NYlgF0xW$c" resolve="ComponentsSRI" />
@@ -2217,6 +2242,7 @@
         <node concept="3z_lpU" id="3UY8BSpDTMT" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported component GPS extends nothing {&#10;  provides PositionProvider pos         &#10;  provides Timed timed                  &#10;  void init() &lt;= on init {              &#10;  pos.x = 0 m;                          &#10;  pos.y = 0 m;                          &#10;  pos.alt = 0 m;                        &#10;} runnable init                         &#10;  void timed_tick() &lt;= op timed.tick {  &#10;  pos.x++;                              &#10;  pos.y++;                              &#10;} runnable timed_tick                   &#10;} component GPS                         " />
           <node concept="2NCZwO" id="1YUFCeGolEv" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolEw" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:5NYlgF0xW$c" resolve="ComponentsSRI" />
@@ -2236,6 +2262,7 @@
         <node concept="3z_lpU" id="3UY8BSpDV2z" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported component FlightRecorder extends nothing {&#10;  provides Timed timed                             &#10;  requires PositionProvider pp                     &#10;  requires SpeedProvider sp                        &#10;  Trackpoint[1000] recordedFlight;                 &#10;  uint16 count = 0;                                &#10;  void timed_tick() &lt;= op timed.tick {             &#10;                                                   &#10;  with (recordedFlight[count]) {                   &#10;  id = ((int8) count);                             &#10;  x = pp.x;                                        &#10;  y = pp.y;                                        &#10;  alt = pp.alt;                                    &#10;  speed = sp.speed;                                &#10;}                                                  &#10;  count++;                                         &#10;} runnable timed_tick                              &#10;  Trackpoint getFlightNo(uint16 no) &lt;= no trigger {&#10;  return recordedFlight[no];                       &#10;} runnable getFlightNo                             &#10;} component FlightRecorder                         " />
           <node concept="2NCZwO" id="1YUFCeGolH5" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolH6" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:5NYlgF0xW$c" resolve="ComponentsSRI" />
@@ -2285,6 +2312,7 @@
         <node concept="3z_lpU" id="3UY8BSpDYqQ" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="instances instances {                   &#10;  instance GPS gps_comp                 &#10;  instance SpeedIndicator indicator     &#10;  instance FlightRecorder recorder      &#10;  connect recorder.sp to indicator.speed&#10;  connect recorder.pp to gps_comp.pos   &#10;  adapt gps -&gt; gps_comp.timed           &#10;  adapt si -&gt; indicator.timed           &#10;  adapt rec -&gt; recorder.timed           &#10;}                                       " />
           <node concept="2NCZwO" id="1YUFCeGolHB" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolHC" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:5NYlgF0xW$c" resolve="ComponentsSRI" />
@@ -2370,6 +2398,7 @@
         </node>
         <node concept="3z_lpU" id="4dKKrcE0Ejt" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="embed code as text  CompositeComponents.NmeaStack  show" />
           <node concept="2NCZwO" id="4dKKrcE0Ekm" role="3z_lpI">
             <node concept="2NCMab" id="4dKKrcE0Eks" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4dKKrcDT0iK" resolve="CompositeComponents" />
@@ -2412,6 +2441,7 @@
         </node>
         <node concept="3z_lpU" id="4dKKrcE2aYI" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="embed code as text  CompositeComponents.NmeaCommandHandler  show" />
           <node concept="2NCZwO" id="4dKKrcE2aZo" role="3z_lpI">
             <node concept="2NCMab" id="4dKKrcE2aZw" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4dKKrcDT0iK" resolve="CompositeComponents" />
@@ -2427,6 +2457,7 @@
         <node concept="3z_lpU" id="4dKKrcE2b1p" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="void sentenceHandler_parseSentence(int8[MAX_NMEA_WORD_COUNT]* words, uint8 wordCount) &lt;= op sentenceHandler.parseSentence {&#10;  interface&lt;NmeaCommandHandler&gt; handlerToCall = null;                                                                      &#10;  for (i ++ in [0..MAX_NMEA_COMMAND_HANDLER_COUNT[) {                                                                      &#10;  if (commandHandlers[i] != null &amp;&amp; commandHandlers[i].canHandle(words[0])) {                                              &#10;  handlerToCall = commandHandlers[i];                                                                                      &#10;} if                                                                                                                       &#10;} for                                                                                                                      &#10;  handlerToCall.handle(words, wordCount);                                                                                  &#10;} runnable sentenceHandler_parseSentence                                                                                   " />
           <node concept="2NCZwO" id="4dKKrcE2b2i" role="3z_lpI">
             <node concept="2NCMab" id="4dKKrcE2b2q" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4dKKrcDT0iK" resolve="CompositeComponents" />
@@ -2630,6 +2661,7 @@
         <node concept="3z_lpU" id="6UY8Kx5hi2F" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="instances verificationInstances {                     &#10;  instance Interpolator interpol(divident = 2)        &#10;  connect interpol.store to store.store               &#10;  instance InMemoryStorage store                      &#10;  adapt verificationInterpolator -&gt; interpol.processor&#10;}                                                     " />
           <node concept="2NCZwO" id="1YUFCeGolDh" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolDi" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -2642,6 +2674,7 @@
         <node concept="3z_lpU" id="6UY8Kx5hi3v" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported testcase verification {        &#10;  initialize verificationInstances;     &#10;  Trackpoint p1 = {                     &#10;  id = 1,                               &#10;  time = 1 s,                           &#10;  speed = 10 mps                        &#10;};                                      &#10;  Trackpoint p2 = {                     &#10;  id = 1,                               &#10;  time = 1 s,                           &#10;  speed = 20 mps                        &#10;};                                      &#10;  verificationInterpolator.process(&amp;p1);&#10;  verificationInterpolator.process(&amp;p2);&#10;} verification(test case)               " />
           <node concept="2NCZwO" id="1YUFCeGolEG" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolEH" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />

@@ -81,6 +81,7 @@
         <reference id="6955693250238922841" name="removedNode" index="3z_lpL" />
       </concept>
       <concept id="6955693250238922834" name="com.mbeddr.doc.structure.CCodeParagraph" flags="ng" index="3z_lpU">
+        <property id="6955693250238922835" name="text" index="3z_lpV" />
         <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
       <concept id="6955693250238922838" name="com.mbeddr.doc.structure.CodeRefWord" flags="ng" index="3z_lpY">
@@ -128,7 +129,7 @@
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractFilePicker" flags="ng" index="3N1QpV">
+      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
         <property id="6156524541422553710" name="path" index="3N1Lgt" />
       </concept>
     </language>
@@ -272,6 +273,7 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBO2Lwr" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="embed code as text  DataStructures.Trackpoint  show" />
           <node concept="2NCZwO" id="1YUFCeGolB2" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolB3" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
@@ -320,6 +322,7 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBO2P91" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="embed code as text  FunctionPointers.process_doNothing  show" />
           <node concept="2NCZwO" id="1YUFCeGolEi" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolEj" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -368,6 +371,7 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBO2VIw" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="embed code as text  FunctionPointers.DataProcessorType  show" />
           <node concept="2NCZwO" id="1YUFCeGolCR" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolCS" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -390,6 +394,7 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBO4B53" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="embed code as text  FunctionPointers.processor  show" />
           <node concept="2NCZwO" id="1YUFCeGol_O" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGol_P" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -441,6 +446,7 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBO4F9P" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="embed code as text  FunctionPointers.testProcessing.firstAssertion  show" />
           <node concept="2NCZwO" id="1YUFCeGol$Q" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGol$R" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -502,6 +508,7 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBOp5Rq" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="embed code as text  Main.main  show" />
           <node concept="2NCZwO" id="1YUFCeGol$f" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGol$g" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L654u" resolve="Main" />
@@ -530,6 +537,7 @@
         </node>
         <node concept="3z_lpU" id="2ncjLWksQ1V" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="embed code as text  BuildConfiguration (m.t.m.defaultExtensions).MbeddrTutorialDefaultExt  show" />
           <node concept="2NCZwO" id="2ncjLWksQ1X" role="3z_lpI">
             <node concept="2NCMab" id="2ncjLWksQ6b" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655o" resolve="BuildConfiguration (m.t.m.defaultExtensions)" />
@@ -569,6 +577,7 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBOwtbW" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="embed code as text  FunctionPointers.testLambdaProcessing  show" />
           <node concept="2NCZwO" id="1YUFCeGol_8" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGol_9" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -1023,6 +1032,7 @@
         <node concept="3z_lpU" id="37qjepTtDlG" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="boolean bool = true;" />
           <node concept="2NCZwO" id="37qjepTtKzK" role="3z_lpI">
             <node concept="2NCMab" id="37qjepTtKzO" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
@@ -1042,6 +1052,7 @@
         <node concept="3z_lpU" id="R8SBebSkVB" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="if (1) {    &#10;  //do stuff&#10;            &#10;} if        " />
           <node concept="2NCZwO" id="R8SBebSkVJ" role="3z_lpI">
             <node concept="2NCMab" id="R8SBebSkVN" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
@@ -1084,6 +1095,7 @@
         <node concept="3z_lpU" id="37qjepTtyxh" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="{                                     &#10;  int16 aInt16 = 0;                   &#10;  boolean aBoolean = int2bool&lt;aInt16&gt;;&#10;}                                     " />
           <node concept="2NCZwO" id="37qjepTtyxx" role="3z_lpI">
             <node concept="2NCMab" id="37qjepTtyx_" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
@@ -1126,6 +1138,7 @@
         </node>
         <node concept="3z_lpU" id="37qjepTx0WV" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="embed code as text  C99vsMbeddr2  show" />
           <node concept="2NCZwO" id="37qjepTx0Xo" role="3z_lpI">
             <node concept="2NCMab" id="37qjepTx4cK" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:37qjepTx0XD" resolve="C99vsMbeddr2" />
@@ -1349,6 +1362,7 @@
       </node>
       <node concept="3z_lpU" id="37qjepTxSec" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
+        <property role="3z_lpV" value="embed code as text  C99vsMbeddr.integers  show" />
         <node concept="2NCZwO" id="37qjepTxSeD" role="3z_lpI">
           <node concept="2NCMab" id="37qjepTxSeJ" role="2NCMaf">
             <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
@@ -1367,6 +1381,7 @@
       </node>
       <node concept="3z_lpU" id="37qjepTxShH" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
+        <property role="3z_lpV" value="embed code as text  C99vsMbeddr.array  show" />
         <node concept="2NCZwO" id="37qjepTxSio" role="3z_lpI">
           <node concept="2NCMab" id="37qjepTxSiu" role="2NCMaf">
             <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
@@ -1403,6 +1418,7 @@
       </node>
       <node concept="3z_lpU" id="37qjepTxS_4" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
+        <property role="3z_lpV" value="embed code as text  C99vsMbeddr.pointer  show" />
         <node concept="2NCZwO" id="37qjepTxSA5" role="3z_lpI">
           <node concept="2NCMab" id="37qjepTxSAb" role="2NCMaf">
             <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
@@ -1563,6 +1579,7 @@
         <property role="3z_lpW" value="mbeddr" />
         <property role="3z_lpw" value="true" />
         <property role="3z_lpJ" value="true" />
+        <property role="3z_lpV" value="                                                                                                         &#10; SimpleTestCase                                                                                          &#10;model   mbeddr.tutorial.main.defaultExtensions                                                           &#10;package examples    constraints                                                                          &#10;                                                                                                         &#10;                                                                                                         &#10;int32 add(int32 a, int32 b) {                                                                            &#10;  return a + b;                                                                                          &#10;} add (function)                                                                                         &#10;int32 divide(int32 a, int32 b) {                                                                         &#10;  return a / b;                                                                                          &#10;} divide (function)                                                                                      &#10;                                                                                      imports     nothing" />
         <node concept="2NCZwO" id="2ncjLWki9Jf" role="3z_lpI">
           <node concept="2NCMab" id="2ncjLWki9Jg" role="2NCMaf">
             <ref role="2NCMaa" to="e1tx:11TWfQr5QUH" resolve="SimpleTestCase" />
@@ -1595,6 +1612,7 @@
         <property role="3z_lpW" value="mbeddr" />
         <property role="3z_lpw" value="true" />
         <property role="3z_lpJ" value="true" />
+        <property role="3z_lpV" value="exported testcase testAdding {     &#10;  testHelperFunction();            &#10;  assert-equals(0) 10 == add(5, 5);&#10;} testAdding(test case)            " />
         <node concept="2NCZwO" id="2ncjLWki9Jq" role="3z_lpI">
           <node concept="2NCMab" id="2ncjLWki9Jr" role="2NCMaf">
             <ref role="2NCMaa" to="e1tx:11TWfQr5QUH" resolve="SimpleTestCase" />
@@ -1639,6 +1657,7 @@
       <node concept="3z_lpU" id="2ncjLWki9JD" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
         <property role="3z_lpJ" value="true" />
+        <property role="3z_lpV" value="exported testcase testDivision {     &#10;  assert-equals(0) 4 == divide(8, 2);&#10;} testDivision(test case)            " />
         <node concept="2NCZwO" id="2ncjLWki9JE" role="3z_lpI">
           <node concept="2NCMab" id="2ncjLWki9JF" role="2NCMaf">
             <ref role="2NCMaa" to="e1tx:11TWfQr5QUH" resolve="SimpleTestCase" />
@@ -1724,6 +1743,7 @@
       <node concept="3z_lpU" id="2ncjLWki9K7" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
         <property role="3z_lpJ" value="true" />
+        <property role="3z_lpV" value="exported int32 main(int32 argc, string[] argv) {                                        &#10;  return test testAdding; (unittest)  ;                                                 &#10;} main (function)                                                                       &#10;                                                                testDivision; (unittest)" />
         <node concept="2NCZwO" id="2ncjLWki9K8" role="3z_lpI">
           <node concept="2NCMab" id="2ncjLWki9K9" role="2NCMaf">
             <ref role="2NCMaa" to="e1tx:11TWfQr5QUH" resolve="SimpleTestCase" />
@@ -1830,6 +1850,7 @@
         <property role="3z_lpW" value="mbeddr" />
         <property role="3z_lpw" value="true" />
         <property role="3z_lpJ" value="true" />
+        <property role="3z_lpV" value="                                                                                                         &#10; SimpleTestCase                                                                                          &#10;model   mbeddr.tutorial.main.defaultExtensions                                                           &#10;package examples    constraints                                                                          &#10;                                                                                                         &#10;                                                                                                         &#10;void testHelperFunction() {                                                                              &#10;  assert(0) add(1, 1) == 2;                                                                              &#10;} testHelperFunction (function)                                                                          &#10;exported testcase testAdding {                                                                           &#10;  testHelperFunction();                                                                                  &#10;  assert-equals(0) 10 == add(5, 5);                                                                      &#10;} testAdding(test case)                                                                                  &#10;                                                                                      imports     nothing" />
         <node concept="2NCZwO" id="2ncjLWki9Kp" role="3z_lpI">
           <node concept="2NCMab" id="2ncjLWki9Kq" role="2NCMaf">
             <ref role="2NCMaa" to="e1tx:11TWfQr5QUH" resolve="SimpleTestCase" />
@@ -2114,6 +2135,7 @@
         </node>
         <node concept="3z_lpU" id="4IT6un$qQ$" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="embed code as text  Components.store_store  show" />
           <node concept="2NCZwO" id="4IT6un$qQ_" role="3z_lpI">
             <node concept="2NCMab" id="4IT6un$qQG" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -2125,6 +2147,7 @@
         </node>
         <node concept="3z_lpU" id="4IT6un$qQY" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="embed code as text  Components.store_take  show" />
           <node concept="2NCZwO" id="4IT6un$qQZ" role="3z_lpI">
             <node concept="2NCMab" id="4IT6un$qRa" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -2191,6 +2214,7 @@
         </node>
         <node concept="3z_lpU" id="4IT6unCqlk" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="embed code as text  Components.Nuller  show" />
           <node concept="2NCZwO" id="4IT6unCqll" role="3z_lpI">
             <node concept="2NCMab" id="4IT6unCqlm" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
