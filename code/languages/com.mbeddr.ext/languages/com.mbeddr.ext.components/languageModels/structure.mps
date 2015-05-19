@@ -1173,20 +1173,6 @@
       <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7oI7FI6qb0b">
-    <property role="3GE5qa" value="comp" />
-    <property role="TrG5h" value="CommentedComponentContent" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="7oI7FI6qb0c" role="PzmwI">
-      <ref role="PrY4T" node="71UKpntm630" resolve="IComponentContent" />
-    </node>
-    <node concept="PrWs8" id="7oI7FI6qb0e" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:65XyadYMMYF" resolve="ICommentedCode" />
-    </node>
-    <node concept="PrWs8" id="20ezT9ZDJ3l" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="5fn4FV$bX67">
     <property role="3GE5qa" value="comp.instances" />
     <property role="TrG5h" value="InstanceConfigContents" />
@@ -1234,6 +1220,9 @@
   <node concept="PlHQZ" id="5Xnv3$Q_DjT">
     <property role="3GE5qa" value="intf.cs" />
     <property role="TrG5h" value="ICSInterfaceContents" />
+    <node concept="PrWs8" id="3RtPbXKO1Z4" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5Xnv3$QABtA">
     <property role="3GE5qa" value="intf.cs" />
@@ -1706,6 +1695,34 @@
       <node concept="trNpa" id="3KKPUg5Gc4z" role="EQaZv">
         <ref role="trN6q" node="3TmmsQkDdTQ" resolve="ComponentInstance" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3RtPbXKO3Xq">
+    <property role="3GE5qa" value="intf.cs" />
+    <property role="TrG5h" value="CommentedCSInterfaceContent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3RtPbXKO3Xr" role="PzmwI">
+      <ref role="PrY4T" node="5Xnv3$Q_DjT" resolve="ICSInterfaceContents" />
+    </node>
+    <node concept="PrWs8" id="3RtPbXKO4cI" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYF" resolve="ICommentedCode" />
+    </node>
+    <node concept="PrWs8" id="3RtPbXKO4cV" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7oI7FI6qb0b">
+    <property role="3GE5qa" value="comp" />
+    <property role="TrG5h" value="CommentedComponentContent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7oI7FI6qb0c" role="PzmwI">
+      <ref role="PrY4T" node="71UKpntm630" resolve="IComponentContent" />
+    </node>
+    <node concept="PrWs8" id="7oI7FI6qb0e" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYF" resolve="ICommentedCode" />
+    </node>
+    <node concept="PrWs8" id="20ezT9ZDJ3l" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
 </model>
