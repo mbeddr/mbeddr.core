@@ -38,10 +38,10 @@
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
-      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.CPNamedNodeElement" flags="ng" index="2NCMab">
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
       </concept>
-      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.CodePointer" flags="ng" index="2NCZwO">
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
       <concept id="2286331641392318852" name="com.mbeddr.doc.structure.MenuFormattedText" flags="ng" index="2OlAs7" />
@@ -71,21 +71,21 @@
       <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
       </concept>
-      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractCCodeParagraph" flags="ng" index="3z_lpG">
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
         <property id="6955693250238922824" name="removeEmpties" index="3z_lpw" />
-        <property id="6955693250238922823" name="showCode" index="3z_lpJ" />
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922821" name="removals" index="3z_lpH" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
-      <concept id="6955693250238922840" name="com.mbeddr.doc.structure.NodeCodeRemoval" flags="ng" index="3z_lpK">
+      <concept id="6955693250238922840" name="com.mbeddr.doc.structure.NodeModelContentRemoval" flags="ng" index="3z_lpK">
         <reference id="6955693250238922841" name="removedNode" index="3z_lpL" />
       </concept>
-      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.CCodeParagraph" flags="ng" index="3z_lpU">
+      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
         <property id="6955693250238922835" name="text" index="3z_lpV" />
         <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
-      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.CodeRefWord" flags="ng" index="3z_lpY">
-        <child id="6955693250238922839" name="codeptr" index="3z_lpZ" />
+      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.ModelContentRefWord" flags="ng" index="3z_lpY">
+        <child id="6955693250238922839" name="modelContentPtr" index="3z_lpZ" />
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
@@ -273,7 +273,8 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBO2Lwr" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  DataStructures.Trackpoint  show" />
+          <property role="3z_lpV" value="                            &#10;exported struct Trackpoint {&#10;  int8 id;                  &#10;  int8/s/ time;             &#10;  int8/m/ x;                &#10;  int8/m/ y;                &#10;  int16/m/ alt;             &#10;  int16/mps/ speed;         &#10;};                          " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="1YUFCeGolB2" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolB3" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
@@ -322,7 +323,8 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBO2P91" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  FunctionPointers.process_doNothing  show" />
+          <property role="3z_lpV" value="exported Trackpoint process_doNothing(Trackpoint e) {&#10;  return e;                                          &#10;} process_doNothing (function)                       " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="1YUFCeGolEi" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolEj" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -371,7 +373,8 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBO2VIw" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  FunctionPointers.DataProcessorType  show" />
+          <property role="3z_lpV" value="                                                                &#10;exported typedef (Trackpoint)⇒(Trackpoint) as DataProcessorType;" />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="1YUFCeGolCR" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolCS" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -394,7 +397,8 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBO4B53" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  FunctionPointers.processor  show" />
+          <property role="3z_lpV" value="DataProcessorType processor;" />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="1YUFCeGol_O" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGol_P" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -446,7 +450,8 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBO4F9P" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  FunctionPointers.testProcessing.firstAssertion  show" />
+          <property role="3z_lpV" value="{                                         &#10;  processor = :process_doNothing;         &#10;  Trackpoint i2 = processor(i1);          &#10;  assert(0) i2.id == 1 &amp;&amp; i2.alt == 100 m;&#10;}                                         " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="1YUFCeGol$Q" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGol$R" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -508,7 +513,8 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBOp5Rq" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  Main.main  show" />
+          <property role="3z_lpV" value="exported int32 main(int32 argc, string[] argv) {                                                      &#10;  return test testProcessing; (unittest)            ;                                                 &#10;} main (function)                                                                                     &#10;                                                                testLambdaProcessing; (unittest)      &#10;                                                                testNullerOK; (unittest)              &#10;                                                                testInterpolator; (unittest)          &#10;                                                                testJudging; (unittest)               &#10;                                                                testInterpolatorWithMock; (unittest)  &#10;                                                                testPrintf; (unittest)                &#10;                                                                testFlightAnalyzer; (unittest)        &#10;                                                                testRuntimeVar; (unittest)            &#10;                                                                testPresenceConditions; (unittest)    &#10;                                                                testConditionalAlternative; (unittest)&#10;                                                                testConditionalReplacement; (unittest)&#10;                                                                testFlightRecorder; (unittest)        " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="1YUFCeGol$f" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGol$g" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L654u" resolve="Main" />
@@ -537,7 +543,8 @@
         </node>
         <node concept="3z_lpU" id="2ncjLWksQ1V" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  BuildConfiguration (m.t.m.defaultExtensions).MbeddrTutorialDefaultExt  show" />
+          <property role="3z_lpV" value="                                                                                             &#10;executable MbeddrTutorialDefaultExt is test {                                                &#10;  modules:                                                                                   &#10;    Main                                                                                     &#10;}                                                                                            &#10;                                                                FunctionPointers (examples)  &#10;                                                                Components (examples)        &#10;                                                                DataStructures (examples)    &#10;                                                                StateMachines (examples)     &#10;                                                                LibraryAccess (examples)     &#10;                                                                stdio_stub (external)        &#10;                                                                stdlib_stub (external)       &#10;                                                                RuntimeVariability (examples)&#10;                                                                StaticVariability (examples) &#10;                                                                ComponentsSRI (examples)     &#10;                                                                UnitDeclarations (config)    " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="2ncjLWksQ1X" role="3z_lpI">
             <node concept="2NCMab" id="2ncjLWksQ6b" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655o" resolve="BuildConfiguration (m.t.m.defaultExtensions)" />
@@ -577,7 +584,8 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBOwtbW" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  FunctionPointers.testLambdaProcessing  show" />
+          <property role="3z_lpV" value="exported testcase testLambdaProcessing {&#10;  Trackpoint i1 = {                     &#10;  id = 1,                               &#10;  time = 0 s,                           &#10;  x = 0 m,                              &#10;  y = 0 m,                              &#10;  alt = 50 m                            &#10;};                                      &#10;                                        &#10;  processor = [tp|                      &#10;  tp.alt = 100 m;                       &#10;  tp;];                                 &#10;                                        &#10;  assert(0) processor(i1).alt == 100 m; &#10;} testLambdaProcessing(test case)       " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="1YUFCeGol_8" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGol_9" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -1138,7 +1146,8 @@
         </node>
         <node concept="3z_lpU" id="37qjepTx0WV" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  C99vsMbeddr2  show" />
+          <property role="3z_lpV" value="                                                                                     &#10; C99vsMbeddr2                                                                        &#10;model   com.mbeddr.tutorial.documentation.code    constraints                        &#10;                                                                                     &#10;                                                                                     &#10;                                                                                     &#10;struct order {                                                                       &#10;  product product;                                                                   &#10;  int32 amount;                                                                      &#10;};                                                                                   &#10;                                                                                     &#10;                                                                                     &#10;struct product {                                                                     &#10;  int32 product_number;                                                              &#10;  string name;                                                                       &#10;};                                                                                   &#10;                                                                  imports     nothing" />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="37qjepTx0Xo" role="3z_lpI">
             <node concept="2NCMab" id="37qjepTx4cK" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:37qjepTx0XD" resolve="C99vsMbeddr2" />
@@ -1362,7 +1371,8 @@
       </node>
       <node concept="3z_lpU" id="37qjepTxSec" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
-        <property role="3z_lpV" value="embed code as text  C99vsMbeddr.integers  show" />
+        <property role="3z_lpV" value="int16[3][2] integers;" />
+        <property role="3z_lpJ" value="false" />
         <node concept="2NCZwO" id="37qjepTxSeD" role="3z_lpI">
           <node concept="2NCMab" id="37qjepTxSeJ" role="2NCMaf">
             <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
@@ -1381,7 +1391,8 @@
       </node>
       <node concept="3z_lpU" id="37qjepTxShH" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
-        <property role="3z_lpV" value="embed code as text  C99vsMbeddr.array  show" />
+        <property role="3z_lpV" value="int16[2][3] array = {&#10;  {1, 2},            &#10;  {3, 4},            &#10;  {5, 6}             &#10;};                   " />
+        <property role="3z_lpJ" value="false" />
         <node concept="2NCZwO" id="37qjepTxSio" role="3z_lpI">
           <node concept="2NCMab" id="37qjepTxSiu" role="2NCMaf">
             <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
@@ -1418,7 +1429,8 @@
       </node>
       <node concept="3z_lpU" id="37qjepTxS_4" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
-        <property role="3z_lpV" value="embed code as text  C99vsMbeddr.pointer  show" />
+        <property role="3z_lpV" value="int16[2][3]* pointer = &amp;array;" />
+        <property role="3z_lpJ" value="false" />
         <node concept="2NCZwO" id="37qjepTxSA5" role="3z_lpI">
           <node concept="2NCMab" id="37qjepTxSAb" role="2NCMaf">
             <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
@@ -2135,7 +2147,8 @@
         </node>
         <node concept="3z_lpU" id="4IT6un$qQ$" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  Components.store_store  show" />
+          <property role="3z_lpV" value="void store_store(Trackpoint* tp) &lt;= op store.store {&#10;  //here is a regular statement comment.            &#10; @arg(tp) is a reference to an argument.            &#10;  storedTP = tp;                                    &#10;  return;                                           &#10;} runnable store_store                              " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="4IT6un$qQ_" role="3z_lpI">
             <node concept="2NCMab" id="4IT6un$qQG" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -2147,7 +2160,8 @@
         </node>
         <node concept="3z_lpU" id="4IT6un$qQY" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  Components.store_take  show" />
+          <property role="3z_lpV" value="Trackpoint* store_take() &lt;= op store.take {              &#10;  Trackpoint* temp = storedTP;                           &#10;  //this comment refers to a local variable: @local(temp)&#10;  storedTP = null;                                       &#10;  return temp;                                           &#10;} runnable store_take                                    " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="4IT6un$qQZ" role="3z_lpI">
             <node concept="2NCMab" id="4IT6un$qRa" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -2214,7 +2228,8 @@
         </node>
         <node concept="3z_lpU" id="4IT6unCqlk" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  Components.Nuller  show" />
+          <property role="3z_lpV" value="exported component Nuller extends nothing {                             &#10;  provides TrackpointProcessor processor                                &#10;  Trackpoint* processor_process(Trackpoint* p) &lt;= op processor.process {&#10;  p.alt = 42 m;                                                         &#10;  return p;                                                             &#10;} runnable processor_process                                            &#10;} component Nuller                                                      " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="4IT6unCqll" role="3z_lpI">
             <node concept="2NCMab" id="4IT6unCqlm" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />

@@ -42,7 +42,7 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
-      <concept id="2179458690439382890" name="com.mbeddr.doc.structure.ConceptCodeRemoval" flags="ng" index="2Cuv_b">
+      <concept id="2179458690439382890" name="com.mbeddr.doc.structure.ConceptModelContentRemoval" flags="ng" index="2Cuv_b">
         <reference id="2179458690439403347" name="conceptDecl" index="2Cuq_M" />
       </concept>
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
@@ -50,10 +50,10 @@
         <child id="126932837435370865" name="authors" index="Wq1Bf" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
-      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.CPNamedNodeElement" flags="ng" index="2NCMab">
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
       </concept>
-      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.CodePointer" flags="ng" index="2NCZwO">
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
       <concept id="2286331641392318852" name="com.mbeddr.doc.structure.MenuFormattedText" flags="ng" index="2OlAs7" />
@@ -93,21 +93,21 @@
       <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
       </concept>
-      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.CCodeAsImageParagraph" flags="ng" index="3z_lpz">
+      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.ModelContentAsImageParagraph" flags="ng" index="3z_lpz">
         <child id="6955693250238922832" name="description" index="3z_lpS" />
         <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
       </concept>
-      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractCCodeParagraph" flags="ng" index="3z_lpG">
-        <property id="6955693250238922823" name="showCode" index="3z_lpJ" />
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922821" name="removals" index="3z_lpH" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
-      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.CCodeParagraph" flags="ng" index="3z_lpU">
+      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
         <property id="6955693250238922835" name="text" index="3z_lpV" />
         <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
-      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.CodeRefWord" flags="ng" index="3z_lpY">
-        <child id="6955693250238922839" name="codeptr" index="3z_lpZ" />
+      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.ModelContentRefWord" flags="ng" index="3z_lpY">
+        <child id="6955693250238922839" name="modelContentPtr" index="3z_lpZ" />
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
@@ -951,7 +951,8 @@
         </node>
         <node concept="3z_lpU" id="5dchr4QlodI" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  BuildConfiguration (c.m.t.d.code)  show" />
+          <property role="3z_lpV" value="BuildConfiguration (c.m.t.d.code)&#10;                                 &#10;Platform                         &#10;GNU paths are not checked        &#10;  make: make                     &#10;  gdb: gdb                       &#10;  compiler                       &#10;    path to executable: gcc      &#10;    compiler options: -std=c99   &#10;    debug options: -g            &#10;                                 &#10;                                 &#10;Configuration Items              &#10;reporting printf                 &#10;                                 &#10;Binaries                         &#10;                                 &#10;executable HelloWorld is test {  &#10;  modules:                       &#10;    HelloWorld                   &#10;}                                " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="5dchr4QlodJ" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4Qlog_" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" resolve="BuildConfiguration (c.m.t.d.code)" />
@@ -1263,7 +1264,8 @@
         </node>
         <node concept="3z_lpU" id="5dchr4QloG6" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  BuildConfiguration (c.m.t.d.code).HelloWorld  show" />
+          <property role="3z_lpV" value="                               &#10;executable HelloWorld is test {&#10;  modules:                     &#10;    HelloWorld                 &#10;}                              " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="5dchr4QloG7" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4QloJD" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" resolve="BuildConfiguration (c.m.t.d.code)" />
@@ -2877,7 +2879,8 @@
         </node>
         <node concept="3z_lpU" id="4Rhu9QGM6ZD" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  HelloWorld.testAdding  show" />
+          <property role="3z_lpV" value="exported testcase testAdding {&#10;  assert-equals(0) 1 + 1 == 3;&#10;} testAdding(test case)       " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="4Rhu9QGM6ZE" role="3z_lpI">
             <node concept="2NCMab" id="4Rhu9QGM70l" role="2NCMaf">
               <ref role="2NCMaa" to="orbb:4Rhu9QGK$vN" resolve="HelloWorld" />
@@ -2959,7 +2962,8 @@
         </node>
         <node concept="3z_lpU" id="4Rhu9QGM9$8" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  HelloWorld.main  show" />
+          <property role="3z_lpV" value="exported int32 main(int32 argc, string[] argv) {&#10;  return test testAdding; (unittest);           &#10;} main (function)                               " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="4Rhu9QGM9$9" role="3z_lpI">
             <node concept="2NCMab" id="4Rhu9QGM9_k" role="2NCMaf">
               <ref role="2NCMaa" to="orbb:4Rhu9QGK$vN" resolve="HelloWorld" />

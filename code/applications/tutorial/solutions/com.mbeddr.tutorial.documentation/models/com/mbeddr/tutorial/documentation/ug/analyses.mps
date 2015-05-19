@@ -40,10 +40,10 @@
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
-      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.CPNamedNodeElement" flags="ng" index="2NCMab">
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
       </concept>
-      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.CodePointer" flags="ng" index="2NCZwO">
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
       <concept id="6386504476136263187" name="com.mbeddr.doc.structure.ImageParagraph" flags="ng" index="2SaynC">
@@ -72,15 +72,15 @@
       <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
       </concept>
-      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.CCodeAsImageParagraph" flags="ng" index="3z_lpz">
+      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.ModelContentAsImageParagraph" flags="ng" index="3z_lpz">
         <child id="6955693250238922832" name="description" index="3z_lpS" />
         <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
       </concept>
-      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractCCodeParagraph" flags="ng" index="3z_lpG">
-        <property id="6955693250238922823" name="showCode" index="3z_lpJ" />
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
-      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.CCodeParagraph" flags="ng" index="3z_lpU">
+      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
         <property id="6955693250238922835" name="text" index="3z_lpV" />
         <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
@@ -1527,7 +1527,8 @@
           </node>
           <node concept="3z_lpU" id="3JyX84yPgyY" role="1_0VJ0">
             <property role="3z_lpW" value="mbeddr" />
-            <property role="3z_lpV" value="embed code as text  RobustnessExtensionsExamples.computeBreakingDistance  show" />
+            <property role="3z_lpV" value="exported uint16/m/ computeBreakingDistance(uint16/km/h/ speed, boolean icyRoad) {                                                     &#10;  return 10 m                                       otherwise 0 m;                                                                    &#10;} computeBreakingDistance (function)                                                                                                  &#10;                                                                                            20 m                                      &#10;                                                                                            50 m                                      &#10;                                                                                            5 m                                       &#10;                                                                                            10 m                                      &#10;                                                                                            30 m                                      &#10;                                                                                            speed &lt; LOW_SPEED                         &#10;                                                                                            speed &gt; MEDIUM_SPEED &amp;&amp; speed &lt; HIGH_SPEED&#10;                                                                                            speed &lt; HIGH_SPEED                        &#10;                                                                                            icyRoad                                   &#10;                                                                                            !icyRoad                                  " />
+            <property role="3z_lpJ" value="false" />
             <node concept="2NCZwO" id="3JyX84yPgz0" role="3z_lpI">
               <node concept="2NCMab" id="3JyX84yPk1W" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:3uoNPXnjeUv" resolve="RobustnessExtensionsExamples" />
@@ -1673,7 +1674,8 @@
           </node>
           <node concept="3z_lpU" id="3JyX84yUjCY" role="1_0VJ0">
             <property role="3z_lpW" value="mbeddr" />
-            <property role="3z_lpV" value="embed code as text  RobustnessStatemachinedExamples.Counter  show" />
+            <property role="3z_lpV" value="statemachine Counter initial = Init {                   &#10;  in event countUp(int16 step) &lt;no binding&gt;             &#10;  in event countDown(int16 step) &lt;no binding&gt;           &#10;  in event start() &lt;no binding&gt;                         &#10;  var int16 counterState = 0                            &#10;                                                        &#10;  state Init {                                          &#10;  on start [ ] -&gt; Counting                              &#10;} state Init                                            &#10;  state Counting {                                      &#10;  on countUp [ ] -&gt; Counting { counterState += step; }  &#10;  on countUp [step &lt; 0] -&gt; Init                         &#10;  on countDown [ ] -&gt; Counting { counterState += step; }&#10;  on countDown [step &lt; 0] -&gt; Init                       &#10;} state Counting                                        &#10;}                                                       " />
+            <property role="3z_lpJ" value="false" />
             <node concept="2NCZwO" id="3JyX84yUjHQ" role="3z_lpI">
               <node concept="2NCMab" id="3JyX84yUjHW" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:3JyX84ySf5_" resolve="RobustnessStatemachinedExamples" />
@@ -1701,7 +1703,8 @@
           </node>
           <node concept="3z_lpU" id="3JyX84yUjYD" role="1_0VJ0">
             <property role="3z_lpW" value="mbeddr" />
-            <property role="3z_lpV" value="embed code as text  RobustnessStatemachinedExamples.aStatemachineCheckAttribute  show" />
+            <property role="3z_lpV" value="checked" />
+            <property role="3z_lpJ" value="false" />
             <node concept="2NCZwO" id="3JyX84yUjYE" role="3z_lpI">
               <node concept="2NCMab" id="3JyX84yUjYF" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:3JyX84ySf5_" resolve="RobustnessStatemachinedExamples" />

@@ -22,7 +22,7 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
-      <concept id="2179458690439382890" name="com.mbeddr.doc.structure.ConceptCodeRemoval" flags="ng" index="2Cuv_b">
+      <concept id="2179458690439382890" name="com.mbeddr.doc.structure.ConceptModelContentRemoval" flags="ng" index="2Cuv_b">
         <reference id="2179458690439403347" name="conceptDecl" index="2Cuq_M" />
       </concept>
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
@@ -30,10 +30,10 @@
         <child id="126932837435370865" name="authors" index="Wq1Bf" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
-      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.CPNamedNodeElement" flags="ng" index="2NCMab">
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
       </concept>
-      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.CodePointer" flags="ng" index="2NCZwO">
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
       <concept id="2286331641392318852" name="com.mbeddr.doc.structure.MenuFormattedText" flags="ng" index="2OlAs7" />
@@ -57,21 +57,21 @@
       </concept>
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
       <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
-      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractCCodeParagraph" flags="ng" index="3z_lpG">
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
         <property id="6955693250238922824" name="removeEmpties" index="3z_lpw" />
-        <property id="6955693250238922823" name="showCode" index="3z_lpJ" />
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922821" name="removals" index="3z_lpH" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
-      <concept id="6955693250238922840" name="com.mbeddr.doc.structure.NodeCodeRemoval" flags="ng" index="3z_lpK">
+      <concept id="6955693250238922840" name="com.mbeddr.doc.structure.NodeModelContentRemoval" flags="ng" index="3z_lpK">
         <reference id="6955693250238922841" name="removedNode" index="3z_lpL" />
       </concept>
-      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.CCodeParagraph" flags="ng" index="3z_lpU">
+      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
         <property id="6955693250238922835" name="text" index="3z_lpV" />
         <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
-      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.CodeRefWord" flags="ng" index="3z_lpY">
-        <child id="6955693250238922839" name="codeptr" index="3z_lpZ" />
+      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.ModelContentRefWord" flags="ng" index="3z_lpY">
+        <child id="6955693250238922839" name="modelContentPtr" index="3z_lpZ" />
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
@@ -1207,7 +1207,8 @@
         </node>
         <node concept="3z_lpU" id="6lh$f$4tOA" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  StateMachines.testFlightAnalyzer  show                                                                        &#10;  except n:sm_test_1b, n:sm_test_2a, n:sm_test_2b, n:sm_test_3a, n:sm_test_3b, n:sm_test_4a, n:sm_test_4b, n:f, n:sm_init empties:" />
+          <property role="3z_lpV" value="exported testcase testFlightAnalyzer {                 &#10;  f.init;                                              &#10;  assert(0) f.isInState(beforeFlight);                 &#10;  assert(1) f.points == 0;                             &#10;  f.trigger(next|makeTP(0, 20));                       &#10;  assert(2) f.isInState(beforeFlight) &amp;&amp; f.points == 0;&#10;  f.trigger(next|makeTP(100, 100));                    &#10;  assert(3) f.isInState(airborne) &amp;&amp; f.points == 100;  &#10;  test statemachine f {                                &#10;  next(makeTP(200, 100)) ➔ airborne                    &#10;  next(makeTP(300, 150)) ➔ airborne                    &#10;  next(makeTP(0, 90)) ➔ landing                        &#10;  next(makeTP(0, 0)) ➔ landed                          &#10;}                                                      &#10;  assert-equals(4) f.points == 200;                    &#10;} testFlightAnalyzer(test case)                        " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="6lh$f$4tOB" role="3z_lpI">
             <node concept="2NCMab" id="6lh$f$4tOC" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
@@ -1273,7 +1274,8 @@
         </node>
         <node concept="3z_lpU" id="6lh$f$4usf" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  StateMachines.testFlightAnalyzer  show                                                                        &#10;  except n:sm_test_1a, n:sm_test_2a, n:sm_test_2b, n:sm_test_3a, n:sm_test_3b, n:sm_test_4a, n:sm_test_4b, n:f, n:sm_init empties:" />
+          <property role="3z_lpV" value="exported testcase testFlightAnalyzer {                 &#10;  f.init;                                              &#10;  assert(0) f.isInState(beforeFlight);                 &#10;  assert(1) f.points == 0;                             &#10;  f.trigger(next|makeTP(0, 20));                       &#10;  assert(2) f.isInState(beforeFlight) &amp;&amp; f.points == 0;&#10;  f.trigger(next|makeTP(100, 100));                    &#10;  assert(3) f.isInState(airborne) &amp;&amp; f.points == 100;  &#10;  test statemachine f {                                &#10;  next(makeTP(200, 100)) ➔ airborne                    &#10;  next(makeTP(300, 150)) ➔ airborne                    &#10;  next(makeTP(0, 90)) ➔ landing                        &#10;  next(makeTP(0, 0)) ➔ landed                          &#10;}                                                      &#10;  assert-equals(4) f.points == 200;                    &#10;} testFlightAnalyzer(test case)                        " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="6lh$f$4usg" role="3z_lpI">
             <node concept="2NCMab" id="6lh$f$4ush" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
@@ -1339,7 +1341,8 @@
         </node>
         <node concept="3z_lpU" id="6lh$f$4uUz" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  StateMachines.testFlightAnalyzer  show                                                          &#10;  except n:sm_test_1b, n:sm_test_1a, n:sm_test_3a, n:sm_test_3b, n:sm_test_4a, n:sm_test_4b, n:f, n:sm_init empties:" />
+          <property role="3z_lpV" value="exported testcase testFlightAnalyzer {                 &#10;  f.init;                                              &#10;  assert(0) f.isInState(beforeFlight);                 &#10;  assert(1) f.points == 0;                             &#10;  f.trigger(next|makeTP(0, 20));                       &#10;  assert(2) f.isInState(beforeFlight) &amp;&amp; f.points == 0;&#10;  f.trigger(next|makeTP(100, 100));                    &#10;  assert(3) f.isInState(airborne) &amp;&amp; f.points == 100;  &#10;  test statemachine f {                                &#10;  next(makeTP(200, 100)) ➔ airborne                    &#10;  next(makeTP(300, 150)) ➔ airborne                    &#10;  next(makeTP(0, 90)) ➔ landing                        &#10;  next(makeTP(0, 0)) ➔ landed                          &#10;}                                                      &#10;  assert-equals(4) f.points == 200;                    &#10;} testFlightAnalyzer(test case)                        " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="6lh$f$4uU$" role="3z_lpI">
             <node concept="2NCMab" id="6lh$f$4uU_" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />

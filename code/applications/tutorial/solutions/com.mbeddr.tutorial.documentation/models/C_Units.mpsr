@@ -25,10 +25,10 @@
         <child id="126932837435370865" name="authors" index="Wq1Bf" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
-      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.CPNamedNodeElement" flags="ng" index="2NCMab">
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
       </concept>
-      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.CodePointer" flags="ng" index="2NCZwO">
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
       <concept id="2286331641391049225" name="com.mbeddr.doc.structure.KeyPressFormattedText" flags="ng" index="2OoWia" />
@@ -41,16 +41,16 @@
       <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
       </concept>
-      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractCCodeParagraph" flags="ng" index="3z_lpG">
-        <property id="6955693250238922823" name="showCode" index="3z_lpJ" />
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
-      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.CCodeParagraph" flags="ng" index="3z_lpU">
+      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
         <property id="6955693250238922835" name="text" index="3z_lpV" />
         <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
-      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.CodeRefWord" flags="ng" index="3z_lpY">
-        <child id="6955693250238922839" name="codeptr" index="3z_lpZ" />
+      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.ModelContentRefWord" flags="ng" index="3z_lpY">
+        <child id="6955693250238922839" name="modelContentPtr" index="3z_lpZ" />
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
@@ -641,7 +641,8 @@
         </node>
         <node concept="3z_lpU" id="627_yy3rO9v" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  UnitDeclarations.conversions  show" />
+          <property role="3z_lpV" value="                                                                                                                                                                                    &#10;section conversions {                                                                                                                                                               &#10;                                                                                                                                                                                    &#10;  exported conversion mps -&gt; kmh {                                                                                                                                                  &#10;                                                                                                                                                                                    &#10;  exported conversion kmh -&gt; mps {                                                                                                                                                  &#10;                                                                                                                                                                                    &#10;  exported conversion s -&gt; h {                                                                                                                                                      &#10;                                                                                                                                                                                    &#10;  exported conversion m -&gt; km {                                                                                                                                                     &#10;} section conversions                                                                                                                                                               &#10;                               val as double -&gt; val * 3.6              val as &lt;no type&gt; -&gt; val / 3.6           val as &lt;no type&gt; -&gt; val / 3600         val as &lt;no type&gt; -&gt; val / 1000&#10;                              }                                       }                                       }                                      }                              " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="627_yy3rO9w" role="3z_lpI">
             <node concept="2NCMab" id="627_yy3rO9x" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:5L$_W51ZPe7" resolve="UnitDeclarations" />
@@ -710,7 +711,8 @@
         </node>
         <node concept="3z_lpU" id="627_yy3sLpd" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="embed code as text  DataStructures.somethingWithConversion  show" />
+          <property role="3z_lpV" value="void somethingWithConversion() {                          &#10;  Trackpoint highSpeed;                                   &#10;  highSpeed.speed = ((int16/mps/) convert[300 kmh-&gt; mps]);&#10;} somethingWithConversion (function)                      " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="627_yy3sLpe" role="3z_lpI">
             <node concept="2NCMab" id="627_yy3sLpf" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />

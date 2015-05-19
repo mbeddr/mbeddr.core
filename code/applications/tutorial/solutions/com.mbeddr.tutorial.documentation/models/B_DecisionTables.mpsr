@@ -22,10 +22,10 @@
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
-      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.CPNamedNodeElement" flags="ng" index="2NCMab">
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
       </concept>
-      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.CodePointer" flags="ng" index="2NCZwO">
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
       <concept id="6386504476136263187" name="com.mbeddr.doc.structure.ImageParagraph" flags="ng" index="2SaynC">
@@ -39,10 +39,11 @@
       </concept>
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
       <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
-      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractCCodeParagraph" flags="ng" index="3z_lpG">
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
-      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.CCodeParagraph" flags="ng" index="3z_lpU">
+      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
         <property id="6955693250238922835" name="text" index="3z_lpV" />
         <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
@@ -121,7 +122,8 @@
       </node>
       <node concept="3z_lpU" id="6UY8Kx5iAjv" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
-        <property role="3z_lpV" value="embed code as text  Components.FlightJudger  show" />
+        <property role="3z_lpV" value="exported cs interface FlightJudger {&#10;  void reset()                      &#10;  void addTrackpoint(Trackpoint* tp)&#10;  int16 getResult()                 &#10;}                                   " />
+        <property role="3z_lpJ" value="false" />
         <node concept="2NCZwO" id="1YUFCeGolCE" role="3z_lpI">
           <node concept="2NCMab" id="1YUFCeGolCF" role="2NCMaf">
             <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -243,7 +245,8 @@
       </node>
       <node concept="3z_lpU" id="6UY8Kx5j6iB" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
-        <property role="3z_lpV" value="embed code as text  Components.instancesJudging  show" />
+        <property role="3z_lpV" value="instances instancesJudging {&#10;  instance Judge theJudge   &#10;  adapt j -&gt; theJudge.judger&#10;}                           " />
+        <property role="3z_lpJ" value="false" />
         <node concept="2NCZwO" id="1YUFCeGolG4" role="3z_lpI">
           <node concept="2NCMab" id="1YUFCeGolG5" role="2NCMaf">
             <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -312,7 +315,8 @@
       </node>
       <node concept="3z_lpU" id="6UY8Kx5jdyS" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
-        <property role="3z_lpV" value="embed code as text  Components.testJudging  show" />
+        <property role="3z_lpV" value="exported testcase testJudging {                          &#10;  initialize instancesJudging;                           &#10;  j.reset();                                             &#10;  Trackpoint[5] points;                                  &#10;  for (i ++ in [0..5[) {                                 &#10;  points[i].id = ((int8) i);                             &#10;  points[i].alt = 1810 + 100 * i m;                      &#10;  points[i].speed = 130 mps+ 10 mps* i;                  &#10;  j.addTrackpoint(&amp;points[i]);                           &#10;} for                                                    &#10;  assert-equals(0) j.getResult() == 0 + 0 + 20 + 20 + 20;&#10;} testJudging(test case)                                 " />
+        <property role="3z_lpJ" value="false" />
         <node concept="2NCZwO" id="1YUFCeGolET" role="3z_lpI">
           <node concept="2NCMab" id="1YUFCeGolEU" role="2NCMaf">
             <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
