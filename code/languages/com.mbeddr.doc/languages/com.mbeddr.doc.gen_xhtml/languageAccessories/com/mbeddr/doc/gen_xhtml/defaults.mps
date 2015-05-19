@@ -8,7 +8,7 @@
   <imports />
   <registry>
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
-      <concept id="6347396756633822235" name="com.mbeddr.doc.gen_xhtml.structure.CssFile" flags="ng" index="7H_Yz">
+      <concept id="6347396756633822235" name="com.mbeddr.doc.gen_xhtml.structure.CssSpecification" flags="ng" index="7H_Yz">
         <child id="988357225320087812" name="rulesets" index="3zO_yG" />
       </concept>
       <concept id="988357225320087791" name="com.mbeddr.doc.gen_xhtml.structure.CssDeclaration" flags="ng" index="3zO__7">
@@ -153,11 +153,157 @@
     </node>
     <node concept="3zOSV2" id="QRmqzIt3GO" role="3zO_yG">
       <node concept="3zO__7" id="QRmqzIt3H$" role="3zO_yy">
-        <property role="3zO_yR" value="background-color" />
-        <property role="3zO_ya" value="grey" />
+        <property role="3zO_yR" value="-moz-border-radius" />
+        <property role="3zO_ya" value=".5em" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKw99U" role="3zO_yy">
+        <property role="3zO_yR" value="-webkit-border-radius" />
+        <property role="3zO_ya" value=".5em" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKw9bB" role="3zO_yy">
+        <property role="3zO_yR" value="border-radius" />
+        <property role="3zO_ya" value=".5em" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKw9dn" role="3zO_yy">
+        <property role="3zO_yR" value="-moz-box-shadow" />
+        <property role="3zO_ya" value="inset 0 1px 3px rgba(0, 0, 0, .7)" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKw9gO" role="3zO_yy">
+        <property role="3zO_yR" value="-webkit-box-shadow" />
+        <property role="3zO_ya" value="inset 0 1px 3px rgba(0, 0, 0, .7)" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKw9kl" role="3zO_yy">
+        <property role="3zO_yR" value="box-shadow" />
+        <property role="3zO_ya" value="inset 0 1px 3px rgba(0, 0, 0, .7)" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKw9nU" role="3zO_yy">
+        <property role="3zO_yR" value="background" />
+        <property role="3zO_ya" value="rgb(240, 240, 240)" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKw9pP" role="3zO_yy">
+        <property role="3zO_yR" value="color" />
+        <property role="3zO_ya" value="rgb(40, 40, 40)" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKyQ8W" role="3zO_yy">
+        <property role="3zO_yR" value="display" />
+        <property role="3zO_ya" value="inline" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKyQ9f" role="3zO_yy">
+        <property role="3zO_yR" value="display" />
+        <property role="3zO_ya" value="inline-block" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKyQ9$" role="3zO_yy">
+        <property role="3zO_yR" value="padding" />
+        <property role="3zO_ya" value="0.1em 0.2em" />
+      </node>
+      <node concept="3zO__7" id="QRmqzK_eO6" role="3zO_yy">
+        <property role="3zO_yR" value="font-size" />
+        <property role="3zO_ya" value="80%" />
       </node>
       <node concept="3zO__Y" id="QRmqzIt3Hx" role="3zO_yJ">
         <property role="3zO_yB" value=".keyPress" />
+      </node>
+    </node>
+    <node concept="3zOSV2" id="QRmqzKqm3v" role="3zO_yG">
+      <node concept="3zO__7" id="QRmqzKqoIu" role="3zO_yy">
+        <property role="3zO_yR" value="display" />
+        <property role="3zO_ya" value="inline" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoIx" role="3zO_yy">
+        <property role="3zO_yR" value="display" />
+        <property role="3zO_ya" value="inline-block" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoIA" role="3zO_yy">
+        <property role="3zO_yR" value="min-width" />
+        <property role="3zO_ya" value="1em" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoIH" role="3zO_yy">
+        <property role="3zO_yR" value="padding" />
+        <property role="3zO_ya" value=".2em .3em" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoIQ" role="3zO_yy">
+        <property role="3zO_yR" value="font" />
+        <property role="3zO_ya" value="normal .85em/1 &quot;Lucida Grande&quot;, Lucida, Arial, sans-serif" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoJ1" role="3zO_yy">
+        <property role="3zO_yR" value="text-align" />
+        <property role="3zO_ya" value="center" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoJe" role="3zO_yy">
+        <property role="3zO_yR" value="text-decoration" />
+        <property role="3zO_ya" value="none" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoJt" role="3zO_yy">
+        <property role="3zO_yR" value="-moz-border-radius" />
+        <property role="3zO_ya" value=".3em" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoJI" role="3zO_yy">
+        <property role="3zO_yR" value="-webkit-border-radius" />
+        <property role="3zO_ya" value=".3em" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoK1" role="3zO_yy">
+        <property role="3zO_yR" value="border-radius" />
+        <property role="3zO_ya" value=".3em" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoKm" role="3zO_yy">
+        <property role="3zO_yR" value="border" />
+        <property role="3zO_ya" value="none" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoKH" role="3zO_yy">
+        <property role="3zO_yR" value="cursor" />
+        <property role="3zO_ya" value="default" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoL6" role="3zO_yy">
+        <property role="3zO_yR" value="-moz-user-select" />
+        <property role="3zO_ya" value="none" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoLx" role="3zO_yy">
+        <property role="3zO_yR" value="-webkit-user-select" />
+        <property role="3zO_ya" value="none" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoLY" role="3zO_yy">
+        <property role="3zO_yR" value="user-select" />
+        <property role="3zO_ya" value="none" />
+      </node>
+      <node concept="3zO__Y" id="QRmqzKqm74" role="3zO_yJ">
+        <property role="3zO_yB" value=".key" />
+      </node>
+    </node>
+    <node concept="3zOSV2" id="QRmqzKqoMt" role="3zO_yG">
+      <node concept="3zO__7" id="QRmqzKqoPr" role="3zO_yy">
+        <property role="3zO_yR" value="background" />
+        <property role="3zO_ya" value="rgb(80,80,80)" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoPu" role="3zO_yy">
+        <property role="3zO_yR" value="background" />
+        <property role="3zO_ya" value="-moz-linear-gradient(top, rgb(60, 60, 60), rgb(80, 80, 80))" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoPz" role="3zO_yy">
+        <property role="3zO_yR" value="background" />
+        <property role="3zO_ya" value="-webkit-gradient(linear, left top, left bottom, from(rgb(60, 60, 60)), to(rgb(80, 80, 80)))" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoPE" role="3zO_yy">
+        <property role="3zO_yR" value="color" />
+        <property role="3zO_ya" value="rgb(250,250,250)" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoPN" role="3zO_yy">
+        <property role="3zO_yR" value="text-shadow" />
+        <property role="3zO_ya" value="-1px -1px 0 rgb(70, 70, 70)" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoPY" role="3zO_yy">
+        <property role="3zO_yR" value="-moz-box-shadow" />
+        <property role="3zO_ya" value="inset 0 0 1px rgb(150, 150, 150), inset 0 -.05em .4em rgb(80, 80, 80), 0 .1em 0 rgb(30, 30, 30), 0 .1em .1em rgba(0, 0, 0, .3)" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoRK" role="3zO_yy">
+        <property role="3zO_ya" value="inset 0 0 1px rgb(150, 150, 150), inset 0 -.05em .4em rgb(80, 80, 80), 0 .1em 0 rgb(30, 30, 30), 0 .1em .1em rgba(0, 0, 0, .3)" />
+        <property role="3zO_yR" value="-webkit-box-shadow" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKqoT_" role="3zO_yy">
+        <property role="3zO_yR" value="box-shadow" />
+        <property role="3zO_ya" value="inset 0 0 1px rgb(150, 150, 150), inset 0 -.05em .4em rgb(80, 80, 80), 0 .1em 0 rgb(30, 30, 30), 0 .1em .1em rgba(0, 0, 0, .3)" />
+      </node>
+      <node concept="3zO__Y" id="QRmqzKqoPo" role="3zO_yJ">
+        <property role="3zO_yB" value=".key" />
       </node>
     </node>
     <node concept="3zOSV2" id="QRmqzIt3IP" role="3zO_yG">
@@ -176,6 +322,124 @@
       </node>
       <node concept="3zO__Y" id="QRmqzIt3KB" role="3zO_yJ">
         <property role="3zO_yB" value=".menu" />
+      </node>
+    </node>
+    <node concept="3zOSV2" id="QRmqzKAygw" role="3zO_yG">
+      <node concept="3zO__7" id="QRmqzKAyoB" role="3zO_yy">
+        <property role="3zO_yR" value="-moz-box-shadow" />
+        <property role="3zO_ya" value="inset 0 1px 3px rgba(0, 0, 0, .7)" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyoC" role="3zO_yy">
+        <property role="3zO_yR" value="-webkit-box-shadow" />
+        <property role="3zO_ya" value="inset 0 1px 3px rgba(0, 0, 0, .7)" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyoD" role="3zO_yy">
+        <property role="3zO_yR" value="box-shadow" />
+        <property role="3zO_ya" value="inset 0 1px 3px rgba(0, 0, 0, .7)" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyoE" role="3zO_yy">
+        <property role="3zO_yR" value="background" />
+        <property role="3zO_ya" value="rgb(240, 240, 240)" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyoF" role="3zO_yy">
+        <property role="3zO_yR" value="color" />
+        <property role="3zO_ya" value="rgb(40, 40, 40)" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyoG" role="3zO_yy">
+        <property role="3zO_yR" value="display" />
+        <property role="3zO_ya" value="inline" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyoH" role="3zO_yy">
+        <property role="3zO_yR" value="display" />
+        <property role="3zO_ya" value="inline-block" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyoI" role="3zO_yy">
+        <property role="3zO_yR" value="padding" />
+        <property role="3zO_ya" value="0em 0.2em" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyoJ" role="3zO_yy">
+        <property role="3zO_yR" value="font-size" />
+        <property role="3zO_ya" value="80%" />
+      </node>
+      <node concept="3zO__Y" id="QRmqzKAyk5" role="3zO_yJ">
+        <property role="3zO_yB" value=".menuClick" />
+      </node>
+    </node>
+    <node concept="3zOSV2" id="QRmqzKAyk8" role="3zO_yG">
+      <node concept="3zO__7" id="QRmqzKAyq4" role="3zO_yy">
+        <property role="3zO_yR" value="display" />
+        <property role="3zO_ya" value="inline" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyq5" role="3zO_yy">
+        <property role="3zO_yR" value="display" />
+        <property role="3zO_ya" value="inline-block" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyq6" role="3zO_yy">
+        <property role="3zO_yR" value="min-width" />
+        <property role="3zO_ya" value="1em" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyq7" role="3zO_yy">
+        <property role="3zO_yR" value="padding" />
+        <property role="3zO_ya" value=".2em .3em" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKF9nt" role="3zO_yy">
+        <property role="3zO_yR" value="margin" />
+        <property role="3zO_ya" value="0 .2em" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKF9o0" role="3zO_yy">
+        <property role="3zO_yR" value="min-height" />
+        <property role="3zO_ya" value="1.2em" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyq8" role="3zO_yy">
+        <property role="3zO_yR" value="font" />
+        <property role="3zO_ya" value="normal .85em/1 &quot;Lucida Grande&quot;, Lucida, Arial, sans-serif" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyq9" role="3zO_yy">
+        <property role="3zO_yR" value="text-align" />
+        <property role="3zO_ya" value="center" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyqa" role="3zO_yy">
+        <property role="3zO_yR" value="text-decoration" />
+        <property role="3zO_ya" value="none" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyqf" role="3zO_yy">
+        <property role="3zO_yR" value="cursor" />
+        <property role="3zO_ya" value="default" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyqg" role="3zO_yy">
+        <property role="3zO_yR" value="-moz-user-select" />
+        <property role="3zO_ya" value="none" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyqh" role="3zO_yy">
+        <property role="3zO_yR" value="-webkit-user-select" />
+        <property role="3zO_ya" value="none" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyqi" role="3zO_yy">
+        <property role="3zO_yR" value="user-select" />
+        <property role="3zO_ya" value="none" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyrM" role="3zO_yy">
+        <property role="3zO_yR" value="background" />
+        <property role="3zO_ya" value="rgb(0,0,240)" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyrN" role="3zO_yy">
+        <property role="3zO_yR" value="background" />
+        <property role="3zO_ya" value="-moz-linear-gradient(top, rgb(0, 0, 220), rgb(0, 0, 240))" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyrO" role="3zO_yy">
+        <property role="3zO_yR" value="background" />
+        <property role="3zO_ya" value="-webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 220)), to(rgb(0, 0, 240)))" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyrP" role="3zO_yy">
+        <property role="3zO_yR" value="color" />
+        <property role="3zO_ya" value="rgb(250,250,250)" />
+      </node>
+      <node concept="3zO__7" id="QRmqzKAyrQ" role="3zO_yy">
+        <property role="3zO_yR" value="text-shadow" />
+        <property role="3zO_ya" value="-1px -1px 0 rgb(70, 70, 70)" />
+      </node>
+      <node concept="3zO__Y" id="QRmqzKAynL" role="3zO_yJ">
+        <property role="3zO_yB" value=".menuItem" />
       </node>
     </node>
     <node concept="3zOSV2" id="QRmqzIt3LV" role="3zO_yG">
@@ -200,7 +464,7 @@
     <node concept="3zOSV2" id="QRmqzIt8_Q" role="3zO_yG">
       <node concept="3zO__7" id="QRmqzIwtm0" role="3zO_yy">
         <property role="3zO_yR" value="border-top" />
-        <property role="3zO_ya" value="2px solid grey" />
+        <property role="3zO_ya" value="1px solid lightgrey" />
       </node>
       <node concept="3zO__7" id="QRmqzIwtm3" role="3zO_yy">
         <property role="3zO_yR" value="padding-top" />

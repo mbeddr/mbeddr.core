@@ -512,6 +512,10 @@
     <property role="R4oN_" value="bullet points" />
     <property role="34LRSv" value="itemlist" />
     <ref role="1TJDcQ" node="2TZO3DbvcVJ" resolve="AbstractParagraph" />
+    <node concept="1TJgyi" id="QRmqzKIeCg" role="1TKVEl">
+      <property role="TrG5h" value="ordered" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="4E$PniRK8Ap" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="items" />

@@ -104,6 +104,7 @@
         <child id="5378658552262903589" name="text" index="3X6T9h" />
       </concept>
       <concept id="5378658552262893169" name="com.mbeddr.doc.structure.ItemList" flags="ng" index="3X6WG5">
+        <property id="988357225359141392" name="ordered" index="3X3VeS" />
         <child id="5378658552262986137" name="items" index="3Xp5NH" />
       </concept>
     </language>
@@ -1300,6 +1301,7 @@
             </node>
           </node>
           <node concept="3X6WG5" id="3qp4Egk8Oq4" role="1_0VJ0">
+            <property role="3X3VeS" value="true" />
             <node concept="3X6T9g" id="3qp4Egk8Oq5" role="3Xp5NH">
               <node concept="OjmMv" id="3qp4Egk8Oq6" role="3X6T9h">
                 <node concept="19SGf9" id="3qp4Egk8Oq7" role="OjmMu">

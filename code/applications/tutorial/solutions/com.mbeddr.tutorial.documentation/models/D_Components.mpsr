@@ -657,7 +657,7 @@
             <node concept="1jUjqm" id="3D8Uf615TPG" role="19SJt6">
               <node concept="19SGf9" id="3D8Uf615TPH" role="$DsGW">
                 <node concept="19SUe$" id="3D8Uf615TPJ" role="19SJt6">
-                  <property role="19SUeA" value="\\&amp;tp" />
+                  <property role="19SUeA" value="&amp;tp" />
                 </node>
               </node>
             </node>
@@ -667,7 +667,7 @@
             <node concept="1jUjqm" id="3D8Uf615TPL" role="19SJt6">
               <node concept="19SGf9" id="3D8Uf615TPM" role="$DsGW">
                 <node concept="19SUe$" id="3D8Uf615TPO" role="19SJt6">
-                  <property role="19SUeA" value="\\&amp;" />
+                  <property role="19SUeA" value="&amp;" />
                 </node>
               </node>
             </node>

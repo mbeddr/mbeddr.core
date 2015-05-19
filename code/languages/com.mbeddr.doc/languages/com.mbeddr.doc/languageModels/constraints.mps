@@ -642,6 +642,12 @@
   <node concept="1M2fIO" id="4E$PniRKySp">
     <property role="3GE5qa" value="paragraphs" />
     <ref role="1M2myG" to="2c95:4E$PniRJLTL" resolve="ItemList" />
+    <node concept="3_ehVu" id="QRmqzKIf7s" role="1MhHOB">
+      <ref role="EomxK" to="2c95:QRmqzKIeCg" resolve="ordered" />
+      <node concept="3clFbT" id="QRmqzKIfhg" role="3_eitr">
+        <property role="3clFbU" value="false" />
+      </node>
+    </node>
     <node concept="EnEH3" id="4E$PniRKySq" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
       <node concept="Eqf_E" id="4E$PniRKySr" role="EtsB7">

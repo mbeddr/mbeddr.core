@@ -130,7 +130,7 @@
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractFilePicker" flags="ng" index="3N1QpV">
+      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
         <property id="6156524541422553710" name="path" index="3N1Lgt" />
       </concept>
     </language>
@@ -1106,7 +1106,7 @@
       <node concept="1_0LV8" id="6VFmq3HIbWj" role="1_0VJ0">
         <node concept="19SGf9" id="6VFmq3HIbWk" role="1_0LWR">
           <node concept="19SUe$" id="6VFmq3HIbWl" role="19SJt6">
-            <property role="19SUeA" value="In MPS you can only enter code that is available from the code completion menu. Using aliases and other \&quot;tricks\&quot;, MPS manages to make this feel " />
+            <property role="19SUeA" value="In MPS you can only enter code that is available from the code completion menu. Using aliases and other &quot;tricks&quot;, MPS manages to make this feel " />
           </node>
           <node concept="28N2ik" id="6VFmq3HIEzx" role="19SJt6">
             <node concept="19SGf9" id="6VFmq3HIEzy" role="$DsGW">
@@ -1432,7 +1432,7 @@
       <node concept="1_0LV8" id="6VFmq3HJYdy" role="1_0VJ0">
         <node concept="19SGf9" id="6VFmq3HJYdz" role="1_0LWR">
           <node concept="19SUe$" id="6VFmq3HJYd$" role="19SJt6">
-            <property role="19SUeA" value="Navigation in the source works as usual using the cursor keys or the mouse. References can be followed (\&quot;go to definition\&quot;) either by " />
+            <property role="19SUeA" value="Navigation in the source works as usual using the cursor keys or the mouse. References can be followed (&quot;go to definition&quot;) either by " />
           </node>
           <node concept="1jUjqm" id="6VFmq3HJYvQ" role="19SJt6">
             <node concept="19SGf9" id="6VFmq3HJYvR" role="$DsGW">
@@ -1773,7 +1773,7 @@
       <node concept="1_0LV8" id="6VFmq3HK225" role="1_0VJ0">
         <node concept="19SGf9" id="6VFmq3HK226" role="1_0LWR">
           <node concept="19SUe$" id="6VFmq3HK227" role="19SJt6">
-            <property role="19SUeA" value="Some editing functionalities are not available via \&quot;regular typing\&quot;, but have to be performed via what's traditionally known as a quick fix. In MPS, those are called intentions. The intentions menu can be invoked by pressing " />
+            <property role="19SUeA" value="Some editing functionalities are not available via &quot;regular typing&quot;, but have to be performed via what's traditionally known as a quick fix. In MPS, those are called intentions. The intentions menu can be invoked by pressing " />
           </node>
           <node concept="1jUjqm" id="6VFmq3HK2BJ" role="19SJt6">
             <node concept="19SGf9" id="6VFmq3HK2BK" role="$DsGW">
@@ -1893,7 +1893,7 @@
       <node concept="1_0LV8" id="6VFmq3HK3zq" role="1_0VJ0">
         <node concept="19SGf9" id="6VFmq3HK3zr" role="1_0LWR">
           <node concept="19SUe$" id="6VFmq3HK3zs" role="19SJt6">
-            <property role="19SUeA" value="For many language constructs, refactorings are provided. Refactorings are more important in MPS than in \&quot;normal\&quot; text editors, because a quite few editing operations are hard to do manually. Please explore the refactorings context menu, and take note when we explain refactorings in the user's guide. Unlike intentions, which cannot have a specific keyboard shortcut assigned, refactorings can, and we make use of this feature heavily. For example, " />
+            <property role="19SUeA" value="For many language constructs, refactorings are provided. Refactorings are more important in MPS than in &quot;normal&quot; text editors, because a quite few editing operations are hard to do manually. Please explore the refactorings context menu, and take note when we explain refactorings in the user's guide. Unlike intentions, which cannot have a specific keyboard shortcut assigned, refactorings can, and we make use of this feature heavily. For example, " />
           </node>
           <node concept="1jUjqm" id="2x0XdsgMehj" role="19SJt6">
             <node concept="19SGf9" id="2x0XdsgMehk" role="$DsGW">
@@ -1943,7 +1943,7 @@
       <node concept="1_0LV8" id="6VFmq3HK55q" role="1_0VJ0">
         <node concept="19SGf9" id="6VFmq3HK55r" role="1_0LWR">
           <node concept="19SUe$" id="6VFmq3HK55s" role="19SJt6">
-            <property role="19SUeA" value="Sometimes, additional properties of an element can be entered in the inspector (\&quot;properties view\&quot;). To open the inspector window, press " />
+            <property role="19SUeA" value="Sometimes, additional properties of an element can be entered in the inspector (&quot;properties view&quot;). To open the inspector window, press " />
           </node>
           <node concept="1jUjqm" id="6VFmq3HK5u6" role="19SJt6">
             <node concept="19SGf9" id="6VFmq3HK5u7" role="$DsGW">

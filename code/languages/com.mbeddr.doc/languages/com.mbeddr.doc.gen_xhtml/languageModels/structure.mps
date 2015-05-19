@@ -148,5 +148,41 @@
       <ref role="20lvS9" node="QRmqzJj_2W" resolve="TocEntry" />
     </node>
   </node>
+  <node concept="1TIwiD" id="QRmqzKqjsY">
+    <property role="TrG5h" value="KeyPress" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="QRmqzKqjto" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="keys" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="QRmqzKqjtk" resolve="Key" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="QRmqzKqjtk">
+    <property role="TrG5h" value="Key" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="QRmqzKqjtl" role="1TKVEl">
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="QRmqzKAgfz">
+    <property role="TrG5h" value="MenuClick" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="QRmqzKAgfF" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="items" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="QRmqzKAgf$" resolve="MenuItem" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="QRmqzKAgf$">
+    <property role="TrG5h" value="MenuItem" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="QRmqzKAgf_" role="1TKVEl">
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 
