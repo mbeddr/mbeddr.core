@@ -5722,6 +5722,12 @@
               <ref role="3bR37D" to="90a9:31bAEZ0srt5" resolve="org.apache.commons" />
             </node>
           </node>
+          <node concept="1SiIV0" id="QRmqzKmNCi" role="3bR37C">
+            <node concept="3bR9La" id="QRmqzKmNCj" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="5WirkMxdR45" role="3bR37C">
           <node concept="1Busua" id="5WirkMxdR46" role="1SiIV1">
@@ -5731,6 +5737,12 @@
         <node concept="1SiIV0" id="1YMM4SJ8q7" role="3bR37C">
           <node concept="1Busua" id="1YMM4SJ8q8" role="1SiIV1">
             <ref role="1Busuk" node="1YMM4SJ2m0" resolve="com.mbeddr.doc" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="QRmqzKmNCg" role="3bR37C">
+          <node concept="3bR9La" id="QRmqzKmNCh" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
       </node>
