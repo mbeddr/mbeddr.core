@@ -5561,6 +5561,12 @@
               <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
             </node>
           </node>
+          <node concept="1SiIV0" id="5pyBnOJmjBw" role="3bR37C">
+            <node concept="3bR9La" id="5pyBnOJmjBx" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="2N1CSrzSJt4" resolve="com.mbeddr.mpsutil.plantuml.pluginSolution" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="IWU1J3HDWv" role="3bR37C">
           <node concept="3bR9La" id="IWU1J3HDWw" role="1SiIV1">
@@ -5607,12 +5613,6 @@
           <node concept="3bR9La" id="QRmqzGrceY" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="$bJ0jguQdz" resolve="com.mbeddr.core.base.pluginSolution" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2fBMM_3hmZr" role="3bR37C">
-          <node concept="3bR9La" id="2fBMM_3hmZs" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L7C" resolve="jetbrains.mps.make.facet" />
           </node>
         </node>
         <node concept="1SiIV0" id="2fBMM_3hmZt" role="3bR37C">
