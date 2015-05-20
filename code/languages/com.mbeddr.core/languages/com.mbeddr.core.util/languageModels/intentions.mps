@@ -93,6 +93,9 @@
       </concept>
       <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -109,6 +112,11 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="17217465924316850" name="com.mbeddr.mpsutil.blutil.structure.FilterOperation" flags="ng" index="2Gpcm3">
@@ -642,14 +650,32 @@
   </node>
   <node concept="2S6QgY" id="7$_eEdIdgis">
     <property role="3GE5qa" value="range" />
-    <property role="TrG5h" value="toggleMinExclude" />
+    <property role="TrG5h" value="toggleLeftExclude" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="k146:5u7uvg8qRyq" resolve="RangeExpression" />
     <node concept="2S6ZIM" id="7$_eEdIdgit" role="2ZfVej">
       <node concept="3clFbS" id="7$_eEdIdgiu" role="2VODD2">
-        <node concept="3clFbF" id="7$_eEdIdgix" role="3cqZAp">
-          <node concept="Xl_RD" id="7$_eEdIdgiy" role="3clFbG">
-            <property role="Xl_RC" value="Toggle Left Exclude" />
+        <node concept="3clFbF" id="1iOzU6lkfWj" role="3cqZAp">
+          <node concept="3cpWs3" id="1iOzU6lkfWk" role="3clFbG">
+            <node concept="Xl_RD" id="1iOzU6lkfWl" role="3uHU7B">
+              <property role="Xl_RC" value="Make Left " />
+            </node>
+            <node concept="1eOMI4" id="1iOzU6lkfWm" role="3uHU7w">
+              <node concept="3K4zz7" id="1iOzU6lkfWn" role="1eOMHV">
+                <node concept="Xl_RD" id="1iOzU6lkfWo" role="3K4E3e">
+                  <property role="Xl_RC" value="Inclusive" />
+                </node>
+                <node concept="Xl_RD" id="1iOzU6lkfWp" role="3K4GZi">
+                  <property role="Xl_RC" value="Exclusive" />
+                </node>
+                <node concept="2OqwBi" id="1iOzU6lkfWq" role="3K4Cdx">
+                  <node concept="2Sf5sV" id="1iOzU6lkfWr" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="1iOzU6lkguO" role="2OqNvi">
+                    <ref role="3TsBF5" to="k146:7$_eEdIdghG" resolve="leftExclude" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -679,14 +705,32 @@
   </node>
   <node concept="2S6QgY" id="7$_eEdIdgiP">
     <property role="3GE5qa" value="range" />
-    <property role="TrG5h" value="toggleMaxExclude" />
+    <property role="TrG5h" value="toggleRightExclude" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="k146:5u7uvg8qRyq" resolve="RangeExpression" />
     <node concept="2S6ZIM" id="7$_eEdIdgiQ" role="2ZfVej">
       <node concept="3clFbS" id="7$_eEdIdgiR" role="2VODD2">
         <node concept="3clFbF" id="7$_eEdIdgiS" role="3cqZAp">
-          <node concept="Xl_RD" id="7$_eEdIdgiT" role="3clFbG">
-            <property role="Xl_RC" value="Toggle Right Exclude" />
+          <node concept="3cpWs3" id="1iOzU6lkbAu" role="3clFbG">
+            <node concept="Xl_RD" id="7$_eEdIdgiT" role="3uHU7B">
+              <property role="Xl_RC" value="Make Right " />
+            </node>
+            <node concept="1eOMI4" id="1iOzU6lkfmG" role="3uHU7w">
+              <node concept="3K4zz7" id="1iOzU6lkcNs" role="1eOMHV">
+                <node concept="Xl_RD" id="1iOzU6lkcY$" role="3K4E3e">
+                  <property role="Xl_RC" value="Inclusive" />
+                </node>
+                <node concept="Xl_RD" id="1iOzU6lkdSe" role="3K4GZi">
+                  <property role="Xl_RC" value="Exclusive" />
+                </node>
+                <node concept="2OqwBi" id="1iOzU6lkbX_" role="3K4Cdx">
+                  <node concept="2Sf5sV" id="1iOzU6lkbPJ" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="1iOzU6lkcjt" role="2OqNvi">
+                    <ref role="3TsBF5" to="k146:7$_eEdIdghH" resolve="rightExclude" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
