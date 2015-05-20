@@ -53,6 +53,26 @@
         <property role="3zO_yB" value="a" />
       </node>
     </node>
+    <node concept="3zOSV2" id="5pyBnOIV_re" role="3zO_yG">
+      <node concept="3zO__Y" id="5pyBnOIV_zv" role="3zO_yJ">
+        <property role="3zO_yB" value=".tableContainer" />
+      </node>
+    </node>
+    <node concept="3zOSV2" id="5pyBnOIVAKw" role="3zO_yG">
+      <node concept="3zO__Y" id="5pyBnOIVAQ5" role="3zO_yJ">
+        <property role="3zO_yB" value=".table" />
+      </node>
+    </node>
+    <node concept="3zOSV2" id="5pyBnOIVARv" role="3zO_yG">
+      <node concept="3zO__Y" id="5pyBnOIVAX8" role="3zO_yJ">
+        <property role="3zO_yB" value=".tablecaption" />
+      </node>
+    </node>
+    <node concept="3zOSV2" id="5pyBnOIWMAe" role="3zO_yG">
+      <node concept="3zO__Y" id="5pyBnOIWMFV" role="3zO_yJ">
+        <property role="3zO_yB" value="table.inline" />
+      </node>
+    </node>
     <node concept="3zOSV2" id="QRmqzIAAHw" role="3zO_yG">
       <node concept="3zO__7" id="QRmqzIAAJO" role="3zO_yy">
         <property role="3zO_yR" value="border-collapse" />
@@ -73,6 +93,9 @@
       </node>
       <node concept="3zO__Y" id="QRmqzI_bsH" role="3zO_yJ">
         <property role="3zO_yB" value="td" />
+      </node>
+      <node concept="3zO__Y" id="5pyBnOJ6kep" role="3zO_yJ">
+        <property role="3zO_yB" value="th" />
       </node>
     </node>
     <node concept="3zOSV2" id="QRmqzIt6BB" role="3zO_yG">
@@ -221,7 +244,7 @@
         <property role="3zO_ya" value="0" />
       </node>
       <node concept="3zO__Y" id="2fBMM_3OT4z" role="3zO_yJ">
-        <property role="3zO_yB" value=".imagecontainer.border .caption" />
+        <property role="3zO_yB" value=".border .caption" />
       </node>
     </node>
     <node concept="3zOSV2" id="QRmqzIt3cW" role="3zO_yG">
@@ -235,7 +258,7 @@
         <property role="3zO_ya" value="80%" />
       </node>
       <node concept="3zO__Y" id="QRmqzIt3g3" role="3zO_yJ">
-        <property role="3zO_yB" value=".imagecaption .caption" />
+        <property role="3zO_yB" value=".caption" />
       </node>
     </node>
     <node concept="3zOSV2" id="QRmqzIt3A0" role="3zO_yG">

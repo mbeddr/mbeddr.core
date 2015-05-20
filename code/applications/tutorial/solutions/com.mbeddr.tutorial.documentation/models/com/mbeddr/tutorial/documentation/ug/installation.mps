@@ -65,6 +65,9 @@
       <concept id="5185579450379471852" name="com.mbeddr.doc.structure.FloatingTableParagraph" flags="ng" index="1xAuF_">
         <child id="5785245534399659249" name="description" index="C1MVo" />
       </concept>
+      <concept id="5185579450379471855" name="com.mbeddr.doc.structure.TableCell" flags="ng" index="1xAuFA">
+        <property id="5785245534399625710" name="isheader" index="C1aJ7" />
+      </concept>
       <concept id="5185579450379471854" name="com.mbeddr.doc.structure.TableRow" flags="ng" index="1xAuFB">
         <child id="5185579450379471857" name="cells" index="1xAuFS" />
       </concept>
@@ -1958,49 +1961,34 @@
             </node>
           </node>
           <node concept="C7FVz" id="45z$aXlTc5y" role="1xAuFS">
+            <property role="C1aJ7" value="true" />
             <node concept="OjmMv" id="45z$aXlTc5z" role="C7FVy">
               <node concept="19SGf9" id="45z$aXlTc5$" role="OjmMu">
-                <node concept="19SUe$" id="45z$aXlTc7l" role="19SJt6" />
-                <node concept="1jUjqm" id="45z$aXlTc7i" role="19SJt6">
-                  <node concept="19SGf9" id="45z$aXlTc7j" role="$DsGW">
-                    <node concept="19SUe$" id="45z$aXlTc7k" role="19SJt6">
-                      <property role="19SUeA" value="locally" />
-                    </node>
-                  </node>
+                <node concept="19SUe$" id="45z$aXlTc7l" role="19SJt6">
+                  <property role="19SUeA" value="locally" />
                 </node>
-                <node concept="19SUe$" id="45z$aXlTc7m" role="19SJt6" />
               </node>
             </node>
           </node>
           <node concept="C7FVz" id="45z$aXlTc6S" role="1xAuFS">
+            <property role="C1aJ7" value="true" />
             <node concept="OjmMv" id="45z$aXlTc6T" role="C7FVy">
               <node concept="19SGf9" id="45z$aXlTc6U" role="OjmMu">
-                <node concept="19SUe$" id="45z$aXlTc7b" role="19SJt6" />
-                <node concept="1jUjqm" id="45z$aXlTc78" role="19SJt6">
-                  <node concept="19SGf9" id="45z$aXlTc79" role="$DsGW">
-                    <node concept="19SUe$" id="45z$aXlTc7a" role="19SJt6">
-                      <property role="19SUeA" value="globally" />
-                    </node>
-                  </node>
+                <node concept="19SUe$" id="45z$aXlTc7b" role="19SJt6">
+                  <property role="19SUeA" value="globally" />
                 </node>
-                <node concept="19SUe$" id="45z$aXlTc7c" role="19SJt6" />
               </node>
             </node>
           </node>
         </node>
         <node concept="1xAuFB" id="45z$aXlTc2c" role="C6TCM">
           <node concept="C7FVz" id="45z$aXlTc2j" role="1xAuFS">
+            <property role="C1aJ7" value="true" />
             <node concept="OjmMv" id="45z$aXlTc2k" role="C7FVy">
               <node concept="19SGf9" id="45z$aXlTc2l" role="OjmMu">
-                <node concept="19SUe$" id="45z$aXlTc4B" role="19SJt6" />
-                <node concept="1jUjqm" id="45z$aXlTc4$" role="19SJt6">
-                  <node concept="19SGf9" id="45z$aXlTc4_" role="$DsGW">
-                    <node concept="19SUe$" id="45z$aXlTc2m" role="19SJt6">
-                      <property role="19SUeA" value="Windows" />
-                    </node>
-                  </node>
+                <node concept="19SUe$" id="45z$aXlTc4B" role="19SJt6">
+                  <property role="19SUeA" value="Windows" />
                 </node>
-                <node concept="19SUe$" id="45z$aXlTc4C" role="19SJt6" />
               </node>
             </node>
           </node>
@@ -2063,17 +2051,12 @@
         </node>
         <node concept="1xAuFB" id="45z$aXlTc2a" role="C6TCM">
           <node concept="C7FVz" id="45z$aXlTc2z" role="1xAuFS">
+            <property role="C1aJ7" value="true" />
             <node concept="OjmMv" id="45z$aXlTc2$" role="C7FVy">
               <node concept="19SGf9" id="45z$aXlTc2_" role="OjmMu">
-                <node concept="19SUe$" id="45z$aXlTc4S" role="19SJt6" />
-                <node concept="1jUjqm" id="45z$aXlTc4P" role="19SJt6">
-                  <node concept="19SGf9" id="45z$aXlTc4Q" role="$DsGW">
-                    <node concept="19SUe$" id="45z$aXlTc2A" role="19SJt6">
-                      <property role="19SUeA" value="Linux/Mac" />
-                    </node>
-                  </node>
+                <node concept="19SUe$" id="45z$aXlTc4S" role="19SJt6">
+                  <property role="19SUeA" value="Linux/Mac" />
                 </node>
-                <node concept="19SUe$" id="45z$aXlTc4T" role="19SJt6" />
               </node>
             </node>
           </node>
@@ -2179,77 +2162,52 @@
         <property role="C6TCN" value="5" />
         <node concept="1xAuFB" id="1LxA8cJZySE" role="C6TCM">
           <node concept="C7FVz" id="1LxA8cJZ_No" role="1xAuFS">
+            <property role="C1aJ7" value="true" />
             <node concept="OjmMv" id="1LxA8cJZ_Np" role="C7FVy">
               <node concept="19SGf9" id="1LxA8cJZ_Nq" role="OjmMu">
-                <node concept="19SUe$" id="1LxA8cJZ_NV" role="19SJt6" />
-                <node concept="1jUjqm" id="1LxA8cJZ_NS" role="19SJt6">
-                  <node concept="19SGf9" id="1LxA8cJZ_NT" role="$DsGW">
-                    <node concept="19SUe$" id="1LxA8cJZ_NU" role="19SJt6">
-                      <property role="19SUeA" value="Tool" />
-                    </node>
-                  </node>
+                <node concept="19SUe$" id="1LxA8cJZ_NV" role="19SJt6">
+                  <property role="19SUeA" value="Tool" />
                 </node>
-                <node concept="19SUe$" id="1LxA8cJZ_NW" role="19SJt6" />
               </node>
             </node>
           </node>
           <node concept="C7FVz" id="1LxA8cJZCwe" role="1xAuFS">
+            <property role="C1aJ7" value="true" />
             <node concept="OjmMv" id="1LxA8cJZCwg" role="C7FVy">
               <node concept="19SGf9" id="1LxA8cJZCwh" role="OjmMu">
-                <node concept="19SUe$" id="1LxA8cJZCwV" role="19SJt6" />
-                <node concept="1jUjqm" id="1LxA8cJZCwS" role="19SJt6">
-                  <node concept="19SGf9" id="1LxA8cJZCwT" role="$DsGW">
-                    <node concept="19SUe$" id="1LxA8cJZCwU" role="19SJt6">
-                      <property role="19SUeA" value="Platform" />
-                    </node>
-                  </node>
+                <node concept="19SUe$" id="1LxA8cJZCwV" role="19SJt6">
+                  <property role="19SUeA" value="Platform" />
                 </node>
-                <node concept="19SUe$" id="1LxA8cJZCwW" role="19SJt6" />
               </node>
             </node>
           </node>
           <node concept="C7FVz" id="1LxA8cJZBku" role="1xAuFS">
+            <property role="C1aJ7" value="true" />
             <node concept="OjmMv" id="1LxA8cJZ_Nx" role="C7FVy">
               <node concept="19SGf9" id="1LxA8cJZ_Ny" role="OjmMu">
-                <node concept="19SUe$" id="1LxA8cJZ_NK" role="19SJt6" />
-                <node concept="1jUjqm" id="1LxA8cJZ_NH" role="19SJt6">
-                  <node concept="19SGf9" id="1LxA8cJZ_NI" role="$DsGW">
-                    <node concept="19SUe$" id="1LxA8cJZ_NJ" role="19SJt6">
-                      <property role="19SUeA" value="Version" />
-                    </node>
-                  </node>
+                <node concept="19SUe$" id="1LxA8cJZ_NK" role="19SJt6">
+                  <property role="19SUeA" value="Version" />
                 </node>
-                <node concept="19SUe$" id="1LxA8cJZ_NL" role="19SJt6" />
               </node>
             </node>
           </node>
           <node concept="C7FVz" id="1LxA8cJZBkS" role="1xAuFS">
+            <property role="C1aJ7" value="true" />
             <node concept="OjmMv" id="1LxA8cJZBkT" role="C7FVy">
               <node concept="19SGf9" id="1LxA8cJZBkU" role="OjmMu">
-                <node concept="19SUe$" id="1LxA8cJZCvu" role="19SJt6" />
-                <node concept="1jUjqm" id="1LxA8cJZCvr" role="19SJt6">
-                  <node concept="19SGf9" id="1LxA8cJZCvs" role="$DsGW">
-                    <node concept="19SUe$" id="1LxA8cJZCvt" role="19SJt6">
-                      <property role="19SUeA" value="Required components" />
-                    </node>
-                  </node>
+                <node concept="19SUe$" id="1LxA8cJZCvu" role="19SJt6">
+                  <property role="19SUeA" value="Required components" />
                 </node>
-                <node concept="19SUe$" id="1LxA8cJZCvv" role="19SJt6" />
               </node>
             </node>
           </node>
           <node concept="C7FVz" id="1LxA8cJZCud" role="1xAuFS">
+            <property role="C1aJ7" value="true" />
             <node concept="OjmMv" id="1LxA8cJZCue" role="C7FVy">
               <node concept="19SGf9" id="1LxA8cJZCuf" role="OjmMu">
-                <node concept="19SUe$" id="1LxA8cJZCvh" role="19SJt6" />
-                <node concept="1jUjqm" id="1LxA8cJZCve" role="19SJt6">
-                  <node concept="19SGf9" id="1LxA8cJZCvf" role="$DsGW">
-                    <node concept="19SUe$" id="1LxA8cJZCvg" role="19SJt6">
-                      <property role="19SUeA" value="URL" />
-                    </node>
-                  </node>
+                <node concept="19SUe$" id="1LxA8cJZCvh" role="19SJt6">
+                  <property role="19SUeA" value="URL" />
                 </node>
-                <node concept="19SUe$" id="1LxA8cJZCvi" role="19SJt6" />
               </node>
             </node>
           </node>
