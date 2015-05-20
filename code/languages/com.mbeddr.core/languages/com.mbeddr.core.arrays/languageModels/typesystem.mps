@@ -1099,7 +1099,7 @@
                                   <node concept="3clFbS" id="2HXSBpcPL3w" role="3clFbx">
                                     <node concept="2MkqsV" id="2HXSBpcPMaN" role="3cqZAp">
                                       <node concept="Xl_RD" id="2HXSBpcPMiW" role="2MkJ7o">
-                                        <property role="Xl_RC" value="array size must be greater than 1" />
+                                        <property role="Xl_RC" value="array size must be greater than zero" />
                                       </node>
                                       <node concept="1YBJjd" id="2HXSBpcPMe9" role="2OEOjV">
                                         <ref role="1YBMHb" node="4VhroexOWgn" resolve="arrayType" />
