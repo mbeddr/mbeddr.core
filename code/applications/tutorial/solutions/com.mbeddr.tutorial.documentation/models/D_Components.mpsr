@@ -258,7 +258,7 @@
         <node concept="3z_lpU" id="3D8Uf61142M" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
-          <property role="3z_lpV" value="exported cs interface TrackpointProcessor {&#10;  Trackpoint* process(Trackpoint* p)       &#10;}                                          " />
+          <property role="3z_lpV" value="asdf" />
           <node concept="2NCZwO" id="1YUFCeGolBQ" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolBR" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
