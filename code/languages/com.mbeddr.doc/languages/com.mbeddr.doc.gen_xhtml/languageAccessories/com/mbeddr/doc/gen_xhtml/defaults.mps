@@ -103,15 +103,83 @@
         <property role="3zO_yB" value=".section" />
       </node>
     </node>
+    <node concept="3zOSV2" id="2fBMM_3xplC" role="3zO_yG">
+      <node concept="3zO__7" id="2fBMM_3Rhq5" role="3zO_yy">
+        <property role="3zO_yR" value="border" />
+        <property role="3zO_ya" value="2px solid grey" />
+      </node>
+      <node concept="3zO__7" id="2fBMM_3Rhqf" role="3zO_yy">
+        <property role="3zO_yR" value="padding" />
+        <property role="3zO_ya" value=".5em" />
+      </node>
+      <node concept="3zO__7" id="2fBMM_3RhsW" role="3zO_yy">
+        <property role="3zO_yR" value="overflow" />
+        <property role="3zO_ya" value="auto" />
+      </node>
+      <node concept="3zO__Y" id="2fBMM_3xpss" role="3zO_yJ">
+        <property role="3zO_yB" value=".codeblockContainer" />
+      </node>
+    </node>
     <node concept="3zOSV2" id="QRmqzIt35A" role="3zO_yG">
+      <node concept="3zO__7" id="2fBMM_3BJpW" role="3zO_yy">
+        <property role="3zO_yR" value="display" />
+        <property role="3zO_ya" value="inline-block" />
+      </node>
+      <node concept="3zO__7" id="2fBMM_3RhvG" role="3zO_yy">
+        <property role="3zO_yR" value="margin" />
+        <property role="3zO_ya" value="0" />
+      </node>
       <node concept="3zO__Y" id="QRmqzIt35R" role="3zO_yJ">
         <property role="3zO_yB" value=".codeblock" />
+      </node>
+    </node>
+    <node concept="3zOSV2" id="2fBMM_3M3AY" role="3zO_yG">
+      <node concept="3zO__7" id="2fBMM_3M3FQ" role="3zO_yy">
+        <property role="3zO_yR" value="display" />
+        <property role="3zO_ya" value="none" />
+      </node>
+      <node concept="3zO__Y" id="2fBMM_3M3FN" role="3zO_yJ">
+        <property role="3zO_yB" value=".codeblock br" />
+      </node>
+    </node>
+    <node concept="3zOSV2" id="2fBMM_3xpsv" role="3zO_yG">
+      <node concept="3zO__7" id="2fBMM_3xrhF" role="3zO_yy">
+        <property role="3zO_yR" value="content" />
+        <property role="3zO_ya" value="&quot;⬈&quot;" />
+      </node>
+      <node concept="3zO__7" id="2fBMM_3BJq1" role="3zO_yy">
+        <property role="3zO_yR" value="display" />
+        <property role="3zO_ya" value="inline-block" />
+      </node>
+      <node concept="3zO__7" id="2fBMM_3BJq6" role="3zO_yy">
+        <property role="3zO_yR" value="padding" />
+        <property role="3zO_ya" value=".5em" />
+      </node>
+      <node concept="3zO__Y" id="2fBMM_3xpx6" role="3zO_yJ">
+        <property role="3zO_yB" value=".originalNode::before" />
+      </node>
+    </node>
+    <node concept="3zOSV2" id="2fBMM_3SwRQ" role="3zO_yG">
+      <node concept="3zO__7" id="2fBMM_3SwXq" role="3zO_yy">
+        <property role="3zO_yR" value="content" />
+        <property role="3zO_ya" value="&quot;⬈&quot;" />
+      </node>
+      <node concept="3zO__7" id="2fBMM_3SwXs" role="3zO_yy">
+        <property role="3zO_yR" value="padding-left" />
+        <property role="3zO_ya" value=".1em" />
+      </node>
+      <node concept="3zO__Y" id="2fBMM_3SwXb" role="3zO_yJ">
+        <property role="3zO_yB" value=".cref::after" />
       </node>
     </node>
     <node concept="3zOSV2" id="QRmqzIt2oJ" role="3zO_yG">
       <node concept="3zO__7" id="QRmqzIt317" role="3zO_yy">
         <property role="3zO_yR" value="background-color" />
-        <property role="3zO_ya" value="grey" />
+        <property role="3zO_ya" value="lightgrey" />
+      </node>
+      <node concept="3zO__7" id="2fBMM_3OT7o" role="3zO_yy">
+        <property role="3zO_yR" value="padding" />
+        <property role="3zO_ya" value="0.5em" />
       </node>
       <node concept="3zO__Y" id="QRmqzIt2oZ" role="3zO_yJ">
         <property role="3zO_yB" value=".greyBox" />
@@ -120,6 +188,32 @@
     <node concept="3zOSV2" id="QRmqzIt3am" role="3zO_yG">
       <node concept="3zO__Y" id="QRmqzIt3aF" role="3zO_yJ">
         <property role="3zO_yB" value=".imagecontainer" />
+      </node>
+    </node>
+    <node concept="3zOSV2" id="2fBMM_3NjS1" role="3zO_yG">
+      <node concept="3zO__7" id="2fBMM_3Nku4" role="3zO_yy">
+        <property role="3zO_yR" value="border" />
+        <property role="3zO_ya" value="2px solid grey" />
+      </node>
+      <node concept="3zO__7" id="2fBMM_3OT4I" role="3zO_yy">
+        <property role="3zO_yR" value="padding" />
+        <property role="3zO_ya" value=".5em" />
+      </node>
+      <node concept="3zO__Y" id="2fBMM_3NjWW" role="3zO_yJ">
+        <property role="3zO_yB" value=".imagecontainer.border" />
+      </node>
+    </node>
+    <node concept="3zOSV2" id="2fBMM_3OSZy" role="3zO_yG">
+      <node concept="3zO__7" id="2fBMM_3OT4A" role="3zO_yy">
+        <property role="3zO_yR" value="margin-bottom" />
+        <property role="3zO_ya" value="0" />
+      </node>
+      <node concept="3zO__7" id="2fBMM_3OT4D" role="3zO_yy">
+        <property role="3zO_yR" value="padding-bottom" />
+        <property role="3zO_ya" value="0" />
+      </node>
+      <node concept="3zO__Y" id="2fBMM_3OT4z" role="3zO_yJ">
+        <property role="3zO_yB" value=".imagecontainer.border .caption" />
       </node>
     </node>
     <node concept="3zOSV2" id="QRmqzIt3cW" role="3zO_yG">
@@ -194,7 +288,7 @@
       </node>
       <node concept="3zO__7" id="QRmqzKyQ9$" role="3zO_yy">
         <property role="3zO_yR" value="padding" />
-        <property role="3zO_ya" value="0.1em 0.2em" />
+        <property role="3zO_ya" value="0em .2em" />
       </node>
       <node concept="3zO__7" id="QRmqzK_eO6" role="3zO_yy">
         <property role="3zO_yR" value="font-size" />
@@ -220,6 +314,10 @@
       <node concept="3zO__7" id="QRmqzKqoIH" role="3zO_yy">
         <property role="3zO_yR" value="padding" />
         <property role="3zO_ya" value=".2em .3em" />
+      </node>
+      <node concept="3zO__7" id="2fBMM_3KRjQ" role="3zO_yy">
+        <property role="3zO_yR" value="margin" />
+        <property role="3zO_ya" value=".2em" />
       </node>
       <node concept="3zO__7" id="QRmqzKqoIQ" role="3zO_yy">
         <property role="3zO_yR" value="font" />

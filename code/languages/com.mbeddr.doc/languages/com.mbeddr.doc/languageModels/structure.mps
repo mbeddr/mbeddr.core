@@ -274,6 +274,11 @@
     <property role="34LRSv" value="image" />
     <property role="MwhBj" value="${module}/icons/image.png" />
     <ref role="1TJDcQ" node="2TZO3DbvcVJ" resolve="AbstractParagraph" />
+    <node concept="1TJgyj" id="2fBMM_3qVvX" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="originalNode" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
     <node concept="1TJgyj" id="5yxqZJwzQtY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="resource" />
@@ -583,6 +588,11 @@
     <property role="3GE5qa" value="paragraphs" />
     <property role="TrG5h" value="CodeParagraph" />
     <ref role="1TJDcQ" node="2TZO3DbvcVJ" resolve="AbstractParagraph" />
+    <node concept="1TJgyj" id="2fBMM_3hr0V" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="originalNode" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
     <node concept="1TJgyi" id="4rG3bBOj_xx" role="1TKVEl">
       <property role="TrG5h" value="trim" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />

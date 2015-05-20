@@ -5609,6 +5609,18 @@
             <ref role="3bR37D" node="$bJ0jguQdz" resolve="com.mbeddr.core.base.pluginSolution" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2fBMM_3hmZr" role="3bR37C">
+          <node concept="3bR9La" id="2fBMM_3hmZs" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L7C" resolve="jetbrains.mps.make.facet" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2fBMM_3hmZt" role="3bR37C">
+          <node concept="3bR9La" id="2fBMM_3hmZu" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg2" resolve="jetbrains.mps.smodel.resources" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7tNo_gxoK97" role="2G$12L">
         <property role="BnDLt" value="true" />
