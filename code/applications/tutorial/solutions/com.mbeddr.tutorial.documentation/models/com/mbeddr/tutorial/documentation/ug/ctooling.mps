@@ -226,7 +226,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="2ZXYLt7W0ZC" role="19SJt6">
-              <property role="19SUeA" value="or press " />
+              <property role="19SUeA" value=" or press " />
             </node>
             <node concept="2OoWia" id="1IjqGpz8_LM" role="19SJt6">
               <node concept="19SGf9" id="1IjqGpz8_LP" role="$DsGW">
@@ -315,7 +315,7 @@
         <node concept="1_0LV8" id="6Kly4FTRTJA" role="1_0VJ0">
           <node concept="19SGf9" id="6Kly4FTRTJB" role="1_0LWR">
             <node concept="19SUe$" id="6Kly4FTRTJC" role="19SJt6">
-              <property role="19SUeA" value="The debugger UI should now appear at the bottom of the MPS window. In the lower left corner of this UI,  you can see two activated buttons: a green (arrow) and a red (square) one. This indicates,  that the debugger is now connected to the underlying C debugger. You can now start program execution by clicking on the green (arrow) button. This will suspend the debugger on the first line of the main function, on your previously created breakoint:" />
+              <property role="19SUeA" value="The debugger UI should now appear at the bottom of the MPS window. In the lower left corner of this UI,  you can see two activated buttons: a green (arrow) and a red (square) one. This indicates,  that the debugger is now connected to the underlying C debugger. You can now start program execution by clicking on the green (arrow) button. This will suspend the debugger on the first line of the main function, on your previously created breakpoint:" />
             </node>
           </node>
         </node>
@@ -421,7 +421,7 @@
             <node concept="19SUe$" id="1IjqGpzdYqi" role="19SJt6">
               <property role="19SUeA" value=" and " />
             </node>
-            <node concept="2vpllh" id="2ZXYLt7Wgal" role="19SJt6">
+            <node concept="1jUjqm" id="yaVrOusiPS" role="19SJt6">
               <node concept="19SGf9" id="2ZXYLt7Wgam" role="$DsGW">
                 <node concept="19SUe$" id="2ZXYLt7Wgan" role="19SJt6">
                   <property role="19SUeA" value="argv" />
@@ -545,7 +545,7 @@
         <node concept="1_0LV8" id="6UY8Kx5jNoX" role="1_0VJ0">
           <node concept="19SGf9" id="6UY8Kx5jNoY" role="1_0LWR">
             <node concept="19SUe$" id="6UY8Kx5jNoZ" role="19SJt6">
-              <property role="19SUeA" value="An external module is always associated with one or more \&quot;real\&quot; header files. The trick is that when an implementation module imports an external module in mbeddr, upon generation of the textual C code, the referenced real header is included into the C file. This also means that, even if you " />
+              <property role="19SUeA" value="An external module is always associated with one or more &quot;real&quot; header files. The trick is that when an implementation module imports an external module in mbeddr, upon generation of the textual C code, the referenced real header is included into the C file. This also means that, even if you " />
             </node>
             <node concept="1jUjqm" id="74GHMTaim0D" role="19SJt6">
               <node concept="19SGf9" id="74GHMTaim0E" role="$DsGW">
@@ -2056,9 +2056,9 @@
                 <node concept="19SUe$" id="1IjqGpzeIdb" role="19SJt6">
                   <property role="19SUeA" value=") of the executable and select " />
                 </node>
-                <node concept="1jUjqm" id="3MXxQvvjHQd" role="19SJt6">
-                  <node concept="19SGf9" id="3MXxQvvjHQe" role="$DsGW">
-                    <node concept="19SUe$" id="3MXxQvvjHQf" role="19SJt6">
+                <node concept="2OlAs7" id="yaVrOupU8e" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOupU8h" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOupU8i" role="19SJt6">
                       <property role="19SUeA" value="Run PlainCDemo" />
                     </node>
                   </node>
@@ -2066,9 +2066,9 @@
                 <node concept="19SUe$" id="3MXxQvvjHQg" role="19SJt6">
                   <property role="19SUeA" value=" (or similarly " />
                 </node>
-                <node concept="1jUjqm" id="3MXxQvvjLlr" role="19SJt6">
-                  <node concept="19SGf9" id="3MXxQvvjLls" role="$DsGW">
-                    <node concept="19SUe$" id="3MXxQvvjLlt" role="19SJt6">
+                <node concept="2OlAs7" id="yaVrOupUs0" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOupUs3" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOupUs4" role="19SJt6">
                       <property role="19SUeA" value="Debug PlainCDemo" />
                     </node>
                   </node>
@@ -2158,9 +2158,9 @@
             <node concept="19SUe$" id="3MXxQvvjNdv" role="19SJt6">
               <property role="19SUeA" value="After you have run the executable a new launch configuration will be created with the name of the executable that you have specified. If a configuration already exists with the same name then it will be overwritten. From this point, it is also possible to run/debug the executable from the menu bar or from the " />
             </node>
-            <node concept="1jUjqm" id="3MXxQvvjNj9" role="19SJt6">
-              <node concept="19SGf9" id="3MXxQvvjNja" role="$DsGW">
-                <node concept="19SUe$" id="3MXxQvvjNjb" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOupUsH" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOupUsK" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOupUsL" role="19SJt6">
                   <property role="19SUeA" value="Run" />
                 </node>
               </node>
@@ -2661,9 +2661,9 @@
             <node concept="19SUe$" id="4Rhu9QGKz7_" role="19SJt6">
               <property role="19SUeA" value=" from its context menu). In any case, select the " />
             </node>
-            <node concept="2OoWia" id="4Rhu9QGKzAV" role="19SJt6">
-              <node concept="19SGf9" id="4Rhu9QGKzAW" role="$DsGW">
-                <node concept="19SUe$" id="4Rhu9QGKzAX" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOupUxu" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOupUxx" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOupUxy" role="19SJt6">
                   <property role="19SUeA" value="Used Languages" />
                 </node>
               </node>
@@ -2671,9 +2671,9 @@
             <node concept="19SUe$" id="4Rhu9QGKzAY" role="19SJt6">
               <property role="19SUeA" value=" tab and use the " />
             </node>
-            <node concept="2OoWia" id="4Rhu9QGKzBk" role="19SJt6">
-              <node concept="19SGf9" id="4Rhu9QGKzBl" role="$DsGW">
-                <node concept="19SUe$" id="4Rhu9QGKzBm" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOutuRq" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOutuRt" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOutuRu" role="19SJt6">
                   <property role="19SUeA" value="+" />
                 </node>
               </node>

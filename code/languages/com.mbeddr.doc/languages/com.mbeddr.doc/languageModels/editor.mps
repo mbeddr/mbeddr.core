@@ -484,6 +484,7 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
@@ -7553,17 +7554,38 @@
                         <node concept="1QHqEK" id="QRmqzFQGs_" role="3cqZAp">
                           <node concept="1QHqEC" id="QRmqzFQGsB" role="1QHqEI">
                             <node concept="3clFbS" id="QRmqzFQGsD" role="1bW5cS">
-                              <node concept="3clFbF" id="6tRqE3lrHwE" role="3cqZAp">
-                                <node concept="2OqwBi" id="6tRqE3lrIfM" role="3clFbG">
-                                  <node concept="2YIFZM" id="6tRqE3lrHy5" role="2Oq$k0">
-                                    <ref role="37wK5l" node="1U2fVW5w4SO" resolve="getInstance" />
-                                    <ref role="1Pybhd" node="1U2fVW5vyXu" resolve="CodeParagraphManager" />
+                              <node concept="3clFbJ" id="5pyBnOJv_Ue" role="3cqZAp">
+                                <node concept="3clFbS" id="5pyBnOJv_Ug" role="3clFbx">
+                                  <node concept="3clFbF" id="6tRqE3lrHwE" role="3cqZAp">
+                                    <node concept="2OqwBi" id="6tRqE3lrIfM" role="3clFbG">
+                                      <node concept="2YIFZM" id="6tRqE3lrHy5" role="2Oq$k0">
+                                        <ref role="37wK5l" node="1U2fVW5w4SO" resolve="getInstance" />
+                                        <ref role="1Pybhd" node="1U2fVW5vyXu" resolve="CodeParagraphManager" />
+                                      </node>
+                                      <node concept="liA8E" id="6tRqE3lrJGc" role="2OqNvi">
+                                        <ref role="37wK5l" node="1U2fVW5wz1m" resolve="unregisterDecider" />
+                                        <node concept="37vLTw" id="6tRqE3lrJNO" role="37wK5m">
+                                          <ref role="3cqZAo" node="26B0wrFCKPB" resolve="fNode" />
+                                        </node>
+                                      </node>
+                                    </node>
                                   </node>
-                                  <node concept="liA8E" id="6tRqE3lrJGc" role="2OqNvi">
-                                    <ref role="37wK5l" node="1U2fVW5wz1m" resolve="unregisterDecider" />
-                                    <node concept="37vLTw" id="6tRqE3lrJNO" role="37wK5m">
+                                </node>
+                                <node concept="1Wc70l" id="5pyBnOJvByt" role="3clFbw">
+                                  <node concept="3y3z36" id="5pyBnOJvDli" role="3uHU7w">
+                                    <node concept="10Nm6u" id="5pyBnOJvDoy" role="3uHU7w" />
+                                    <node concept="2OqwBi" id="5pyBnOJvBKA" role="3uHU7B">
+                                      <node concept="37vLTw" id="5pyBnOJvBBa" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="26B0wrFCKPB" resolve="fNode" />
+                                      </node>
+                                      <node concept="I4A8Y" id="5pyBnOJvCeF" role="2OqNvi" />
+                                    </node>
+                                  </node>
+                                  <node concept="2OqwBi" id="5pyBnOJvA69" role="3uHU7B">
+                                    <node concept="37vLTw" id="5pyBnOJv_XZ" role="2Oq$k0">
                                       <ref role="3cqZAo" node="26B0wrFCKPB" resolve="fNode" />
                                     </node>
+                                    <node concept="3x8VRR" id="5pyBnOJvAZc" role="2OqNvi" />
                                   </node>
                                 </node>
                               </node>

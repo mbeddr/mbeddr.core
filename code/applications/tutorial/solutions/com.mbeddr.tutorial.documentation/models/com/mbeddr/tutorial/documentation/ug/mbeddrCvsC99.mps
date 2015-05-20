@@ -1478,7 +1478,7 @@
       <node concept="1_0LV8" id="4IT6uoQOUX" role="1_0VJ0">
         <node concept="19SGf9" id="4IT6uoQOUY" role="1_0LWR">
           <node concept="19SUe$" id="4IT6uoQOUZ" role="19SJt6">
-            <property role="19SUeA" value="Finally, more sophisticated/awkward/brittle uses of the preprocessor should be replaced by native mbeddr language extensions. There's no need for \&quot;preprocessor meta programming\&quot; if you have a full-blown language workbench at your disposal!" />
+            <property role="19SUeA" value="Finally, more sophisticated/awkward/brittle uses of the preprocessor should be replaced by native mbeddr language extensions. There's no need for &quot;preprocessor meta programming&quot; if you have a full-blown language workbench at your disposal!" />
           </node>
         </node>
       </node>
@@ -1951,7 +1951,7 @@
             </node>
           </node>
           <node concept="19SUe$" id="4IT6unrHfD" role="19SJt6">
-            <property role="19SUeA" value=" inside the text blocks to insert actual MPS nodes: this lets you mix unstructured text with \&quot;real program code\&quot;. We use this, for example, to support references to program elements inside the comments. Since these are real references, they are renamed automatically if the referenced element is renamed. Press " />
+            <property role="19SUeA" value=" inside the text blocks to insert actual MPS nodes: this lets you mix unstructured text with &quot;real program code&quot;. We use this, for example, to support references to program elements inside the comments. Since these are real references, they are renamed automatically if the referenced element is renamed. Press " />
           </node>
           <node concept="2OoWia" id="4IT6uns5k4" role="19SJt6">
             <node concept="19SGf9" id="4IT6uns5k5" role="$DsGW">
@@ -2093,7 +2093,7 @@
         <node concept="1_0LV8" id="4IT6un$jX4" role="1_0VJ0">
           <node concept="19SGf9" id="4IT6un$jX5" role="1_0LWR">
             <node concept="19SUe$" id="4IT6un$jX6" role="19SJt6">
-              <property role="19SUeA" value="Statement comments are comments that are used in statement context (i.e., places where you write \&quot;procedural\&quot; C code). Examples can be seen in the following two code fragments:" />
+              <property role="19SUeA" value="Statement comments are comments that are used in statement context (i.e., places where you write &quot;procedural&quot; C code). Examples can be seen in the following two code fragments:" />
             </node>
           </node>
         </node>
@@ -2147,7 +2147,7 @@
         <node concept="1_0LV8" id="4IT6unBsUn" role="1_0VJ0">
           <node concept="19SGf9" id="4IT6unBsUo" role="1_0LWR">
             <node concept="19SUe$" id="4IT6unBsUp" role="19SJt6">
-              <property role="19SUeA" value="The statement comments are simply another kind of statement. They live inside a statement list along with all the other statements. Their only \&quot;connection\&quot; to the code is their phyical location. Element Documentations are different: they are actually " />
+              <property role="19SUeA" value="The statement comments are simply another kind of statement. They live inside a statement list along with all the other statements. Their only &quot;connection&quot; to the code is their phyical location. Element Documentations are different: they are actually " />
             </node>
             <node concept="28N2ik" id="4IT6unBsUu" role="19SJt6">
               <node concept="19SGf9" id="4IT6unBsUv" role="$DsGW">
@@ -2166,9 +2166,9 @@
             <node concept="19SUe$" id="4IT6unB$qs" role="19SJt6">
               <property role="19SUeA" value="To attach an element documentation, you can use the " />
             </node>
-            <node concept="1jUjqm" id="4IT6unB$qC" role="19SJt6">
-              <node concept="19SGf9" id="4IT6unB$qD" role="$DsGW">
-                <node concept="19SUe$" id="4IT6unB$qE" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuoHKX" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuoHL0" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuoHL1" role="19SJt6">
                   <property role="19SUeA" value="Add Documentation to ..." />
                 </node>
               </node>
@@ -2213,9 +2213,9 @@
             <node concept="19SUe$" id="4IT6unD55N" role="19SJt6">
               <property role="19SUeA" value=" module. Margin comments can be attached to any node using the " />
             </node>
-            <node concept="1jUjqm" id="4IT6unD55V" role="19SJt6">
-              <node concept="19SGf9" id="4IT6unD55W" role="$DsGW">
-                <node concept="19SUe$" id="4IT6unD55X" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuoHYG" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuoHYJ" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuoHYK" role="19SJt6">
                   <property role="19SUeA" value="Add Margin Comment" />
                 </node>
               </node>
@@ -2230,9 +2230,9 @@
             <node concept="19SUe$" id="4IT6unD56n" role="19SJt6">
               <property role="19SUeA" value="If margin comments are used in a root, the root itself shows a summary at the top: how many comments are in the root, plus who commented last, and when. You can use the " />
             </node>
-            <node concept="1jUjqm" id="4IT6unDmeA" role="19SJt6">
-              <node concept="19SGf9" id="4IT6unDmeB" role="$DsGW">
-                <node concept="19SUe$" id="4IT6unDmeC" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuoHZ3" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuoHZ6" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuoHZ7" role="19SJt6">
                   <property role="19SUeA" value="Delete All Comments" />
                 </node>
               </node>
@@ -2258,9 +2258,9 @@
             <node concept="19SUe$" id="4IT6unEpRm" role="19SJt6">
               <property role="19SUeA" value="Essentially all program nodes can be commented out by using the " />
             </node>
-            <node concept="1jUjqm" id="4IT6unEpRu" role="19SJt6">
-              <node concept="19SGf9" id="4IT6unEpRv" role="$DsGW">
-                <node concept="19SUe$" id="4IT6unEpRw" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuoHZi" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuoHZl" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuoHZm" role="19SJt6">
                   <property role="19SUeA" value="Comment Out" />
                 </node>
               </node>
@@ -2321,9 +2321,9 @@
             <node concept="19SUe$" id="4IT6unFln$" role="19SJt6">
               <property role="19SUeA" value="To comment something back in, you can either use the " />
             </node>
-            <node concept="2OoWia" id="4IT6unHXp9" role="19SJt6">
-              <node concept="19SGf9" id="4IT6unHXpc" role="$DsGW">
-                <node concept="19SUe$" id="4IT6unHXpd" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuoI05" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuoI08" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuoI09" role="19SJt6">
                   <property role="19SUeA" value="Comment In" />
                 </node>
               </node>

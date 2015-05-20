@@ -288,9 +288,9 @@
             <node concept="19SUe$" id="69uDFDbgwld" role="19SJt6">
               <property role="19SUeA" value=". The specification of the derived units can be typed in after the name of the unit. A simple unit specification consists of one unit with possibly an exponent. If you would like to type in a composite unit specification then press ENTER to expand the components in the specifiction. Exponents can be added to the units by pressing the cap (^) symbol and the value of the exponent. This works for all units in the specification except for the last component; there the cap is disabled because it conflicts with the binary XOR operator. At the last position use the appropriate intention (by the way it is available for all components regardless of the position in the specification) to add the exponent to the unit. An exponent can either be simple integer number or it can be transformed to a fraction by typing " />
             </node>
-            <node concept="1jUjqm" id="1VdI9nUyLxW" role="19SJt6">
-              <node concept="19SGf9" id="1VdI9nUyLxX" role="$DsGW">
-                <node concept="19SUe$" id="1VdI9nUyLxY" role="19SJt6">
+            <node concept="2OoWia" id="yaVrOuw0N2" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuw0N5" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuw0N6" role="19SJt6">
                   <property role="19SUeA" value="/" />
                 </node>
               </node>

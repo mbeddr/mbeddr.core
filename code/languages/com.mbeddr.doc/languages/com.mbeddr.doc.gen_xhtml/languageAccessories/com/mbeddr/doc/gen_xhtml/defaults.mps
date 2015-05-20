@@ -234,6 +234,15 @@
         <property role="3zO_yB" value=".imagecontainer.border" />
       </node>
     </node>
+    <node concept="3zOSV2" id="yaVrOu$RTJ" role="3zO_yG">
+      <node concept="3zO__7" id="yaVrOu$S2u" role="3zO_yy">
+        <property role="3zO_yR" value="max-width" />
+        <property role="3zO_ya" value="100%" />
+      </node>
+      <node concept="3zO__Y" id="yaVrOu$S2r" role="3zO_yJ">
+        <property role="3zO_yB" value="img" />
+      </node>
+    </node>
     <node concept="3zOSV2" id="2fBMM_3OSZy" role="3zO_yG">
       <node concept="3zO__7" id="2fBMM_3OT4A" role="3zO_yy">
         <property role="3zO_yR" value="margin-bottom" />

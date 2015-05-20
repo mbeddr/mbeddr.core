@@ -223,7 +223,7 @@
       <node concept="1_0LV8" id="1ig5Eljeulc" role="1_0VJ0">
         <node concept="19SGf9" id="1ig5Eljeuld" role="1_0LWR">
           <node concept="19SUe$" id="1ig5Eljeule" role="19SJt6">
-            <property role="19SUeA" value="Traditionally, the above mentioned benefits of a projectional editor have come at a price: the user experience of traditional projectional editors was not very good, in particular, when editing code that looked like \&quot;normal text\&quot;. Consequently, projectional editors were not adopted. However, MPS is doing a much better job with this. We have conducted a study with 20 MPS users (most of them mbeddr users as well), and the conclusion is that the editor works well enough. Take a look at this paper for details: " />
+            <property role="19SUeA" value="Traditionally, the above mentioned benefits of a projectional editor have come at a price: the user experience of traditional projectional editors was not very good, in particular, when editing code that looked like &quot;normal text&quot;. Consequently, projectional editors were not adopted. However, MPS is doing a much better job with this. We have conducted a study with 20 MPS users (most of them mbeddr users as well), and the conclusion is that the editor works well enough. Take a look at this paper for details: " />
           </node>
           <node concept="1hOBRO" id="1ig5EljeunI" role="19SJt6">
             <node concept="19SGf9" id="1ig5EljeunJ" role="$DsGW">
@@ -535,7 +535,7 @@
       <node concept="1_0LV8" id="1ig5EljjeEr" role="1_0VJ0">
         <node concept="19SGf9" id="1ig5EljjeEs" role="1_0LWR">
           <node concept="19SUe$" id="1ig5EljjeEt" role="19SJt6">
-            <property role="19SUeA" value="mbeddr does not come with its own compiler. While this could be considered \&quot;cheating\&quot;, it is actually a good idea because " />
+            <property role="19SUeA" value="mbeddr does not come with its own compiler. While this could be considered &quot;cheating&quot;, it is actually a good idea because " />
           </node>
           <node concept="1jUjqm" id="1ig5EljjeES" role="19SJt6">
             <node concept="19SGf9" id="1ig5EljjeET" role="$DsGW">

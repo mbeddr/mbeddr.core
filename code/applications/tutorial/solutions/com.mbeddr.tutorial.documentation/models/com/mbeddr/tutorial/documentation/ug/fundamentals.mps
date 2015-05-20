@@ -33,7 +33,6 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
-      <concept id="6165313375055755361" name="com.mbeddr.doc.structure.MathFormattedText" flags="ng" index="$DyYS" />
       <concept id="5785245534399928042" name="com.mbeddr.doc.structure.AbstractTableParagraph" flags="ng" index="C6Wj3">
         <property id="5785245534399940634" name="numCols" index="C6TCN" />
         <child id="5785245534399940635" name="rows" index="C6TCM" />
@@ -45,6 +44,7 @@
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
+      <concept id="2286331641392318852" name="com.mbeddr.doc.structure.MenuFormattedText" flags="ng" index="2OlAs7" />
       <concept id="2286331641391049225" name="com.mbeddr.doc.structure.KeyPressFormattedText" flags="ng" index="2OoWia" />
       <concept id="6386504476136263187" name="com.mbeddr.doc.structure.ImageParagraph" flags="ng" index="2SaynC">
         <property id="6386504476136358630" name="showImage" index="2Sbq$t" />
@@ -221,9 +221,9 @@
             <node concept="19SUe$" id="1ig5EljluEZ" role="19SJt6">
               <property role="19SUeA" value="). It is also possible to split the editor pane into several editors (arranged vertically and horizontally) through the " />
             </node>
-            <node concept="2OoWia" id="1ig5EljluGx" role="19SJt6">
-              <node concept="19SGf9" id="1ig5EljluGy" role="$DsGW">
-                <node concept="19SUe$" id="1ig5EljluGz" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOug$ac" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOug$af" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOug$ag" role="19SJt6">
                   <property role="19SUeA" value="Window" />
                 </node>
               </node>
@@ -261,9 +261,9 @@
             <node concept="19SUe$" id="1ig5EljluNV" role="19SJt6">
               <property role="19SUeA" value="Note that the Status Bar, the Tool Bar Buttons as well as the little tool placeholder tabs can all be hidden through the " />
             </node>
-            <node concept="2OoWia" id="1ig5EljluOJ" role="19SJt6">
-              <node concept="19SGf9" id="1ig5EljluOK" role="$DsGW">
-                <node concept="19SUe$" id="1ig5EljluOL" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOugzM$" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOugzMB" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOugzMC" role="19SJt6">
                   <property role="19SUeA" value="View" />
                 </node>
               </node>
@@ -285,9 +285,9 @@
             <node concept="19SUe$" id="1ig5EljluIg" role="19SJt6">
               <property role="19SUeA" value="Tools are the windows that are arranged around the edges of the MPS window. In this section we describe the most important ones (some language-specific tools are explained in their respective context). Generally, they can be activated through the " />
             </node>
-            <node concept="2OoWia" id="1ig5EljluJS" role="19SJt6">
-              <node concept="19SGf9" id="1ig5EljluJT" role="$DsGW">
-                <node concept="19SUe$" id="1ig5EljluJU" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOugzqW" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOugzqZ" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOugzr0" role="19SJt6">
                   <property role="19SUeA" value="View-&gt;Tool Windows" />
                 </node>
               </node>
@@ -351,9 +351,9 @@
             <node concept="19SUe$" id="1ig5Eljqu6_" role="19SJt6">
               <property role="19SUeA" value="The Model Checker shows the result of running " />
             </node>
-            <node concept="2OoWia" id="1ig5EljqucA" role="19SJt6">
-              <node concept="19SGf9" id="1ig5EljqucB" role="$DsGW">
-                <node concept="19SUe$" id="1ig5EljqucC" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOug$xW" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOug$xZ" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOug$y0" role="19SJt6">
                   <property role="19SUeA" value="Check Model" />
                 </node>
               </node>
@@ -508,9 +508,9 @@
             <node concept="19SUe$" id="1ig5Eljlv3b" role="19SJt6">
               <property role="19SUeA" value="The explorer shows the low level tree structure of a node. It is more like a debugging tool and is not used regularly. It can be opened for a node by selecting the node and choosing " />
             </node>
-            <node concept="2OoWia" id="1ig5EljqtQg" role="19SJt6">
-              <node concept="19SGf9" id="1ig5EljqtQh" role="$DsGW">
-                <node concept="19SUe$" id="1ig5EljqtQi" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOug$TC" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOug$TF" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOug$TG" role="19SJt6">
                   <property role="19SUeA" value="Show Node in Explorer" />
                 </node>
               </node>
@@ -738,7 +738,7 @@
         <node concept="1_0LV8" id="4IT6uo9Qir" role="1_0VJ0">
           <node concept="19SGf9" id="4IT6uo9Qis" role="1_0LWR">
             <node concept="19SUe$" id="4IT6uo9Qit" role="19SJt6">
-              <property role="19SUeA" value="Models are important because they represent the only real \&quot;physical structure\&quot; in MPS. Hence they are the granularity relevant to version control (since they are files, it is models that are seen by file-based tools such as git). Also, the MPS transformation and generation engine always processes complete models. So in order to keep (partial) generation times low, you should split your overall system into a reasonable number of (relatively small-sized) models. See " />
+              <property role="19SUeA" value="Models are important because they represent the only real &quot;physical structure&quot; in MPS. Hence they are the granularity relevant to version control (since they are files, it is models that are seen by file-based tools such as git). Also, the MPS transformation and generation engine always processes complete models. So in order to keep (partial) generation times low, you should split your overall system into a reasonable number of (relatively small-sized) models. See " />
             </node>
             <node concept="1_0GAv" id="4IT6uo9QEU" role="19SJt6">
               <ref role="1_0GAl" to="t8u7:1OEOMsplmw8" resolve="complexProjects" />
@@ -860,7 +860,7 @@
         <node concept="1_0LV8" id="1ig5EljqHI0" role="1_0VJ0">
           <node concept="19SGf9" id="1ig5EljqHI1" role="1_0LWR">
             <node concept="19SUe$" id="1ig5EljqHI2" role="19SJt6">
-              <property role="19SUeA" value="A library is essentially a directory that contains additional languages or solutions (it is like a search path or the Java classpath). Instead of adding a needed solution or language to the project, it can remain \&quot;outside\&quot; the project and made visible by pointing a library to the file system folder. Libraries can be defined specifically for a project (Project Libraries) or globally (Global Libraries). Both are created via the Preferences." />
+              <property role="19SUeA" value="A library is essentially a directory that contains additional languages or solutions (it is like a search path or the Java classpath). Instead of adding a needed solution or language to the project, it can remain &quot;outside&quot; the project and made visible by pointing a library to the file system folder. Libraries can be defined specifically for a project (Project Libraries) or globally (Global Libraries). Both are created via the Preferences." />
             </node>
           </node>
         </node>
@@ -1005,9 +1005,9 @@
             <node concept="19SUe$" id="1OEOMsplyNT" role="19SJt6">
               <property role="19SUeA" value="All notations can be switched from one common menu location: " />
             </node>
-            <node concept="2OoWia" id="1OEOMsplyZL" role="19SJt6">
-              <node concept="19SGf9" id="1OEOMsplyZM" role="$DsGW">
-                <node concept="19SUe$" id="1OEOMsplyZN" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuhK6t" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuhK6w" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuhK6x" role="19SJt6">
                   <property role="19SUeA" value="Code-&gt;Projection Modes-&gt;..." />
                 </node>
               </node>
@@ -1110,9 +1110,9 @@
               <node concept="19SUe$" id="6VFmq3HIF4q" role="19SJt6">
                 <property role="19SUeA" value="As long as text is still red, you can press " />
               </node>
-              <node concept="1jUjqm" id="6VFmq3HJTJL" role="19SJt6">
-                <node concept="19SGf9" id="6VFmq3HJTJM" role="$DsGW">
-                  <node concept="19SUe$" id="6VFmq3HJTJO" role="19SJt6">
+              <node concept="2OoWia" id="yaVrOuhKu9" role="19SJt6">
+                <node concept="19SGf9" id="yaVrOuhKuc" role="$DsGW">
+                  <node concept="19SUe$" id="yaVrOuhKud" role="19SJt6">
                     <property role="19SUeA" value="Ctrl-Space" />
                   </node>
                 </node>
@@ -1129,9 +1129,9 @@
               <node concept="19SUe$" id="6VFmq3HIF4Y" role="19SJt6">
                 <property role="19SUeA" value="If you want to go back and enter something different from what the entered text already preselects, press " />
               </node>
-              <node concept="1jUjqm" id="6VFmq3HJWBb" role="19SJt6">
-                <node concept="19SGf9" id="6VFmq3HJWBc" role="$DsGW">
-                  <node concept="19SUe$" id="6VFmq3HJWBe" role="19SJt6">
+              <node concept="2OoWia" id="yaVrOuhKuo" role="19SJt6">
+                <node concept="19SGf9" id="yaVrOuhKur" role="$DsGW">
+                  <node concept="19SUe$" id="yaVrOuhKus" role="19SJt6">
                     <property role="19SUeA" value="Ctrl-Space" />
                   </node>
                 </node>
@@ -1157,9 +1157,9 @@
               <node concept="19SUe$" id="6VFmq3HJX5G" role="19SJt6">
                 <property role="19SUeA" value="Some language features may only be accessible via an intention. If you don't know how to go on, press " />
               </node>
-              <node concept="1jUjqm" id="6VFmq3HJX6Q" role="19SJt6">
-                <node concept="19SGf9" id="6VFmq3HJX6R" role="$DsGW">
-                  <node concept="19SUe$" id="6VFmq3HJX6T" role="19SJt6">
+              <node concept="2OoWia" id="yaVrOuhKuB" role="19SJt6">
+                <node concept="19SGf9" id="yaVrOuhKuE" role="$DsGW">
+                  <node concept="19SUe$" id="yaVrOuhKuF" role="19SJt6">
                     <property role="19SUeA" value="Alt-Enter" />
                   </node>
                 </node>
@@ -1206,9 +1206,9 @@
           <node concept="19SUe$" id="6VFmq3HJXCW" role="19SJt6">
             <property role="19SUeA" value=" and type " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HJXCX" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HJXCY" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HJXD0" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKuQ" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKuT" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKuU" role="19SJt6">
                 <property role="19SUeA" value="+" />
               </node>
             </node>
@@ -1216,9 +1216,9 @@
           <node concept="19SUe$" id="6VFmq3HJXD1" role="19SJt6">
             <property role="19SUeA" value=" and then " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HJXD2" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HJXD3" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HJXD5" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKwl" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKwo" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKwp" role="19SJt6">
                 <property role="19SUeA" value="2" />
               </node>
             </node>
@@ -1386,9 +1386,9 @@
           <node concept="19SUe$" id="6VFmq3HJYd$" role="19SJt6">
             <property role="19SUeA" value="Navigation in the source works as usual using the cursor keys or the mouse. References can be followed (&quot;go to definition&quot;) either by " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HJYvQ" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HJYvR" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HJYvT" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhK$H" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhK$K" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhK$L" role="19SJt6">
                 <property role="19SUeA" value="Ctrl-Click" />
               </node>
             </node>
@@ -1396,9 +1396,9 @@
           <node concept="19SUe$" id="6VFmq3HJYvU" role="19SJt6">
             <property role="19SUeA" value=" or by using " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HJYvV" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HJYvW" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HJYvY" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhK_$" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhK_B" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhK_C" role="19SJt6">
                 <property role="19SUeA" value="Ctrl-B" />
               </node>
             </node>
@@ -1406,9 +1406,9 @@
           <node concept="19SUe$" id="6VFmq3HJYvZ" role="19SJt6">
             <property role="19SUeA" value=". The reverse is also supported. The context menu on a program element supports Find Useages. This can also be activated via " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HJYw0" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HJYw1" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HJYw3" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKAr" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKAu" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKAv" role="19SJt6">
                 <property role="19SUeA" value="Alt-F7" />
               </node>
             </node>
@@ -1416,9 +1416,9 @@
           <node concept="19SUe$" id="6VFmq3HJYw4" role="19SJt6">
             <property role="19SUeA" value=". Within an mbeddr program, you can also press " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HJYw5" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HJYw6" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HJYw8" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKBi" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKBl" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKBm" role="19SJt6">
                 <property role="19SUeA" value="Ctrl-F12" />
               </node>
             </node>
@@ -1426,9 +1426,9 @@
           <node concept="19SUe$" id="6VFmq3HJYw9" role="19SJt6">
             <property role="19SUeA" value=" to get an outline view that lists all top level or important elements in that particular program so you can navigate to it easily. " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HJYwa" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HJYwb" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HJYwd" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKC9" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKCc" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKCd" role="19SJt6">
                 <property role="19SUeA" value="Ctrl-E" />
               </node>
             </node>
@@ -1436,9 +1436,9 @@
           <node concept="19SUe$" id="6VFmq3HJYwe" role="19SJt6">
             <property role="19SUeA" value=" will show you the recently closed editors, in case you've closed too many. More generally, " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HJYwf" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HJYwg" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HJYwi" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKD0" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKD3" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKD4" role="19SJt6">
                 <property role="19SUeA" value="Ctrl-Tab" />
               </node>
             </node>
@@ -1456,9 +1456,9 @@
           <node concept="19SUe$" id="6VFmq3HJYPq" role="19SJt6">
             <property role="19SUeA" value="Selection is different than in normal text editors. " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HJZ8G" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HJZ8H" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HJZ8J" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKDR" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKDU" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKDV" role="19SJt6">
                 <property role="19SUeA" value="Ctrl-Up/Down" />
               </node>
             </node>
@@ -1486,9 +1486,9 @@
           <node concept="19SUe$" id="6VFmq3HJZ8U" role="19SJt6">
             <property role="19SUeA" value=". If you now press " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HJZ8V" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HJZ8W" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HJZ8Y" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKFm" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKFp" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKFq" role="19SJt6">
                 <property role="19SUeA" value="Ctrl-Up" />
               </node>
             </node>
@@ -1526,9 +1526,9 @@
           <node concept="19SUe$" id="6VFmq3HJZ9e" role="19SJt6">
             <property role="19SUeA" value=". Pressing " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HJZ9f" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HJZ9g" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HJZ9i" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKGP" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKGS" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKGT" role="19SJt6">
                 <property role="19SUeA" value="Ctrl-Up" />
               </node>
             </node>
@@ -1546,9 +1546,9 @@
           <node concept="19SUe$" id="6VFmq3HJZ9o" role="19SJt6">
             <property role="19SUeA" value=", and the next " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HJZ9p" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HJZ9q" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HJZ9s" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKIk" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKIn" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKIo" role="19SJt6">
                 <property role="19SUeA" value="Ctrl-Up" />
               </node>
             </node>
@@ -1556,9 +1556,9 @@
           <node concept="19SUe$" id="6VFmq3HJZ9t" role="19SJt6">
             <property role="19SUeA" value=" selects the whole local variable declaration. You can also select with " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HJZ9u" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HJZ9v" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HJZ9x" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKJN" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKJQ" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKJR" role="19SJt6">
                 <property role="19SUeA" value="Shift-Up/Down" />
               </node>
             </node>
@@ -1590,9 +1590,9 @@
           <node concept="19SUe$" id="6VFmq3HK0ve" role="19SJt6">
             <property role="19SUeA" value=". You can press " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK0vf" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK0vg" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK0vi" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKLi" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKLl" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKLm" role="19SJt6">
                 <property role="19SUeA" value="Ctrl-Up" />
               </node>
             </node>
@@ -1610,9 +1610,9 @@
           <node concept="19SUe$" id="6VFmq3HK0vo" role="19SJt6">
             <property role="19SUeA" value=" and then you can use " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK0vp" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK0vq" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK0vs" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKM9" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKMc" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKMd" role="19SJt6">
                 <property role="19SUeA" value="Shift-Down" />
               </node>
             </node>
@@ -1647,9 +1647,9 @@
           <node concept="19SUe$" id="6VFmq3HK1k8" role="19SJt6">
             <property role="19SUeA" value="The safest way to delete something is to mark it (using the strategies discussed in the previous paragraph) and the press " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK1Ea" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK1Eb" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK1Ed" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKN0" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKN3" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKN4" role="19SJt6">
                 <property role="19SUeA" value="Backspace" />
               </node>
             </node>
@@ -1657,9 +1657,9 @@
           <node concept="19SUe$" id="6VFmq3HK1Ee" role="19SJt6">
             <property role="19SUeA" value=" or " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK1Ef" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK1Eg" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK1Ei" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKNB" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKNE" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKNF" role="19SJt6">
                 <property role="19SUeA" value="Delete" />
               </node>
             </node>
@@ -1667,9 +1667,9 @@
           <node concept="19SUe$" id="6VFmq3HK1Ej" role="19SJt6">
             <property role="19SUeA" value=". In many places you can also simply press " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK1Ek" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK1El" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK1En" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKOe" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKOh" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKOi" role="19SJt6">
                 <property role="19SUeA" value="Backspace" />
               </node>
             </node>
@@ -1677,9 +1677,9 @@
           <node concept="19SUe$" id="6VFmq3HK1Eo" role="19SJt6">
             <property role="19SUeA" value=" behind or " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK1Ep" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK1Eq" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK1Es" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKOP" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKOS" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKOT" role="19SJt6">
                 <property role="19SUeA" value="Delete" />
               </node>
             </node>
@@ -1697,9 +1697,9 @@
           <node concept="19SUe$" id="6VFmq3HK0BN" role="19SJt6">
             <property role="19SUeA" value="If you are in list context (e.g. in function arguments or statement lists) you can press " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK1cr" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK1cs" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK1cu" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKPs" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKPv" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKPw" role="19SJt6">
                 <property role="19SUeA" value="Enter" />
               </node>
             </node>
@@ -1707,9 +1707,9 @@
           <node concept="19SUe$" id="6VFmq3HK1cv" role="19SJt6">
             <property role="19SUeA" value=" to add an element after the current one; you can press " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK1cw" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK1cx" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK1cz" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKPN" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKPQ" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKPR" role="19SJt6">
                 <property role="19SUeA" value="Shift-Enter" />
               </node>
             </node>
@@ -1727,9 +1727,9 @@
           <node concept="19SUe$" id="6VFmq3HK227" role="19SJt6">
             <property role="19SUeA" value="Some editing functionalities are not available via &quot;regular typing&quot;, but have to be performed via what's traditionally known as a quick fix. In MPS, those are called intentions. The intentions menu can be invoked by pressing " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK2BJ" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK2BK" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK2BM" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKQa" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKQd" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKQe" role="19SJt6">
                 <property role="19SUeA" value="Alt-Enter" />
               </node>
             </node>
@@ -1747,9 +1747,9 @@
           <node concept="19SUe$" id="6VFmq3HK2BS" role="19SJt6">
             <property role="19SUeA" value=" by selecting " />
           </node>
-          <node concept="28N2ik" id="6VFmq3HK2BT" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK2BU" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK2BW" role="19SJt6">
+          <node concept="2OlAs7" id="yaVrOuhKR1" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKR4" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKR5" role="19SJt6">
                 <property role="19SUeA" value="export" />
               </node>
             </node>
@@ -1757,9 +1757,9 @@
           <node concept="19SUe$" id="6VFmq3HK2BX" role="19SJt6">
             <property role="19SUeA" value=" from the intentions menu. Explore the contents of the intentions menu from time to time to see what's possible. Note that you can just type the name of an intention once the menu is open, you don't have to use the cursor keys to select from the list. So, for example, to export a module content (function, struct), you type " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK2BY" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK2BZ" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK2C1" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhKRS" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKRV" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKRW" role="19SJt6">
                 <property role="19SUeA" value="Alt-Enter" />
               </node>
             </node>
@@ -1767,19 +1767,29 @@
           <node concept="19SUe$" id="6VFmq3HK2C2" role="19SJt6">
             <property role="19SUeA" value=", " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK2C3" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK2C4" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK2C6" role="19SJt6">
-                <property role="19SUeA" value="ex" />
+          <node concept="2OoWia" id="yaVrOuhKSJ" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhKSM" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhKSN" role="19SJt6">
+                <property role="19SUeA" value="e" />
               </node>
             </node>
           </node>
           <node concept="19SUe$" id="6VFmq3HK2C7" role="19SJt6">
             <property role="19SUeA" value=", " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK2C8" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK2C9" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK2Cb" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhLuR" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhLuS" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhLuT" role="19SJt6">
+                <property role="19SUeA" value="x" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="yaVrOuhLuQ" role="19SJt6">
+            <property role="19SUeA" value=", " />
+          </node>
+          <node concept="2OoWia" id="yaVrOuhLvO" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhLvR" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhLvS" role="19SJt6">
                 <property role="19SUeA" value="Enter" />
               </node>
             </node>
@@ -1817,9 +1827,9 @@
           <node concept="19SUe$" id="6VFmq3HK3a8" role="19SJt6">
             <property role="19SUeA" value=". Press " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK3a9" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK3aa" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK3ac" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhLwN" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhLwQ" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhLwR" role="19SJt6">
                 <property role="19SUeA" value="Ctrl-Alt-T" />
               </node>
             </node>
@@ -1827,9 +1837,9 @@
           <node concept="19SUe$" id="6VFmq3HK3ad" role="19SJt6">
             <property role="19SUeA" value=" to show the possible surround options at any time. To reemphasize: in contrast to regular intentions which are opened by " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK3ae" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK3af" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK3ah" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhLxq" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhLxt" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhLxu" role="19SJt6">
                 <property role="19SUeA" value="Alt-Enter" />
               </node>
             </node>
@@ -1847,9 +1857,9 @@
           <node concept="19SUe$" id="6VFmq3HK3zs" role="19SJt6">
             <property role="19SUeA" value="For many language constructs, refactorings are provided. Refactorings are more important in MPS than in &quot;normal&quot; text editors, because a quite few editing operations are hard to do manually. Please explore the refactorings context menu, and take note when we explain refactorings in the user's guide. Unlike intentions, which cannot have a specific keyboard shortcut assigned, refactorings can, and we make use of this feature heavily. For example, " />
           </node>
-          <node concept="1jUjqm" id="2x0XdsgMehj" role="19SJt6">
-            <node concept="19SGf9" id="2x0XdsgMehk" role="$DsGW">
-              <node concept="19SUe$" id="2x0XdsgMehl" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhLy1" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhLy4" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhLy5" role="19SJt6">
                 <property role="19SUeA" value="Ctrl-Alt-V" />
               </node>
             </node>
@@ -1867,9 +1877,9 @@
           <node concept="19SUe$" id="6VFmq3HK4jR" role="19SJt6">
             <property role="19SUeA" value="To select the currently edit root note in the project explorer (the big tree of the left), press " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK4G9" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK4Ga" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK4Gc" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhLyg" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhLyj" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhLyk" role="19SJt6">
                 <property role="19SUeA" value="Alt-F1" />
               </node>
             </node>
@@ -1877,9 +1887,9 @@
           <node concept="19SUe$" id="6VFmq3HK4Gd" role="19SJt6">
             <property role="19SUeA" value=" and then " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK4Ge" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK4Gf" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK4Gh" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhLyB" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhLyE" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhLyF" role="19SJt6">
                 <property role="19SUeA" value="Enter" />
               </node>
             </node>
@@ -1897,9 +1907,9 @@
           <node concept="19SUe$" id="6VFmq3HK55s" role="19SJt6">
             <property role="19SUeA" value="Sometimes, additional properties of an element can be entered in the inspector (&quot;properties view&quot;). To open the inspector window, press " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK5u6" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK5u7" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK5u9" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhLyY" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhLz1" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhLz2" role="19SJt6">
                 <property role="19SUeA" value="Ctrl-2" />
               </node>
             </node>
@@ -1917,9 +1927,9 @@
           <node concept="19SUe$" id="6VFmq3HK5Rr" role="19SJt6">
             <property role="19SUeA" value="By default, " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK6ZK" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK6ZL" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK6ZN" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhLzd" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhLzg" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhLzh" role="19SJt6">
                 <property role="19SUeA" value="Ctrl-F9" />
               </node>
             </node>
@@ -1927,9 +1937,9 @@
           <node concept="19SUe$" id="6VFmq3HK6ZO" role="19SJt6">
             <property role="19SUeA" value=" (" />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK6ZP" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK6ZQ" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK6ZS" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhL$4" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhL$7" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhL$8" role="19SJt6">
                 <property role="19SUeA" value="Cmd-F9" />
               </node>
             </node>
@@ -1937,9 +1947,9 @@
           <node concept="19SUe$" id="6VFmq3HK6ZT" role="19SJt6">
             <property role="19SUeA" value=" on the Mac) makes the current module, i.e. it regenerates and recompiles if the current module has changed. We recommend using the Keymap preferences to assign " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK6ZU" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK6ZV" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK6ZX" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhL$V" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhL$Y" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhL$Z" role="19SJt6">
                 <property role="19SUeA" value="Ctrl-Alt-F9" />
               </node>
             </node>
@@ -1947,9 +1957,9 @@
           <node concept="19SUe$" id="6VFmq3HK6ZY" role="19SJt6">
             <property role="19SUeA" value=" (and " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK6ZZ" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK700" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK702" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhL_M" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhL_P" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhL_Q" role="19SJt6">
                 <property role="19SUeA" value="Cmd-Alt-F9" />
               </node>
             </node>
@@ -1957,9 +1967,9 @@
           <node concept="19SUe$" id="6VFmq3HK703" role="19SJt6">
             <property role="19SUeA" value=" on the Mac) to a complete Rebuild of the current solution; sometimes changes aren't detected correctly and a full rebuild is necessary. " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK704" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK705" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK707" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhLAD" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhLAG" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhLAH" role="19SJt6">
                 <property role="19SUeA" value="Ctrl-Alt-F8" />
               </node>
             </node>
@@ -1967,9 +1977,9 @@
           <node concept="19SUe$" id="6VFmq3HK708" role="19SJt6">
             <property role="19SUeA" value=" and " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HK709" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HK70a" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HK70c" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuhLBw" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuhLBz" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuhLB$" role="19SJt6">
                 <property role="19SUeA" value="Ctrl-Alt-F10" />
               </node>
             </node>
@@ -2199,9 +2209,9 @@
             <node concept="19SUe$" id="61X7WOB6ZvE" role="19SJt6">
               <property role="19SUeA" value=" model is the one that contains the root with the two changes shown above. You can see a diff by selecting " />
             </node>
-            <node concept="2OoWia" id="61X7WOB6ZvM" role="19SJt6">
-              <node concept="19SGf9" id="61X7WOB6ZvN" role="$DsGW">
-                <node concept="19SUe$" id="61X7WOB6ZvO" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOumlEJ" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOumlEM" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOumlEN" role="19SJt6">
                   <property role="19SUeA" value="Show Diff" />
                 </node>
               </node>
@@ -2276,9 +2286,9 @@
             <node concept="19SUe$" id="61X7WOB8aYx" role="19SJt6">
               <property role="19SUeA" value="We recommend exploring the " />
             </node>
-            <node concept="2OoWia" id="61X7WOB8aZ1" role="19SJt6">
-              <node concept="19SGf9" id="61X7WOB8aZ2" role="$DsGW">
-                <node concept="19SUe$" id="61X7WOB8aZ3" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOumlFe" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOumlFh" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOumlFi" role="19SJt6">
                   <property role="19SUeA" value="VCS" />
                 </node>
               </node>
@@ -2286,9 +2296,9 @@
             <node concept="19SUe$" id="61X7WOB8aZ0" role="19SJt6">
               <property role="19SUeA" value=" menu in MPS, and in particular the " />
             </node>
-            <node concept="2OoWia" id="61X7WOB8aYR" role="19SJt6">
-              <node concept="19SGf9" id="61X7WOB8aYS" role="$DsGW">
-                <node concept="19SUe$" id="61X7WOB8aYT" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOumlF_" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOumlFC" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOumlFD" role="19SJt6">
                   <property role="19SUeA" value="git" />
                 </node>
               </node>
@@ -2306,9 +2316,9 @@
               <node concept="19SUe$" id="61X7WOB7VIk" role="19SJt6">
                 <property role="19SUeA" value="Updating, or pulling in git-speak, refers to getting the newest contents from the version control system. From within MPS you can do this via  the menu entry " />
               </node>
-              <node concept="2OoWia" id="61X7WOB7VIp" role="19SJt6">
-                <node concept="19SGf9" id="61X7WOB7VIq" role="$DsGW">
-                  <node concept="19SUe$" id="61X7WOB7VIr" role="19SJt6">
+              <node concept="2OlAs7" id="yaVrOumlFW" role="19SJt6">
+                <node concept="19SGf9" id="yaVrOumlFZ" role="$DsGW">
+                  <node concept="19SUe$" id="yaVrOumlG0" role="19SJt6">
                     <property role="19SUeA" value="VCS-&gt;Update Project" />
                   </node>
                 </node>
@@ -2348,9 +2358,9 @@
               <node concept="19SUe$" id="61X7WOB8bO8" role="19SJt6">
                 <property role="19SUeA" value="You can use " />
               </node>
-              <node concept="2OoWia" id="61X7WOB8c9m" role="19SJt6">
-                <node concept="19SGf9" id="61X7WOB8c9n" role="$DsGW">
-                  <node concept="19SUe$" id="61X7WOB8c9o" role="19SJt6">
+              <node concept="2OlAs7" id="yaVrOumlGf" role="19SJt6">
+                <node concept="19SGf9" id="yaVrOumlGi" role="$DsGW">
+                  <node concept="19SUe$" id="yaVrOumlGj" role="19SJt6">
                     <property role="19SUeA" value="VCS-&gt;Commit Changes" />
                   </node>
                 </node>
@@ -2374,9 +2384,9 @@
               <node concept="19SUe$" id="61X7WOB9rQH" role="19SJt6">
                 <property role="19SUeA" value=", lets you select the models you want to commit and specify a commit message. By using the context menu on models, you can also revert some of the changes. By pressing the little down-arrow on the " />
               </node>
-              <node concept="2OoWia" id="61X7WOB9rQV" role="19SJt6">
-                <node concept="19SGf9" id="61X7WOB9rQW" role="$DsGW">
-                  <node concept="19SUe$" id="61X7WOB9rQX" role="19SJt6">
+              <node concept="2OlAs7" id="yaVrOumlGM" role="19SJt6">
+                <node concept="19SGf9" id="yaVrOumlGP" role="$DsGW">
+                  <node concept="19SUe$" id="yaVrOumlGQ" role="19SJt6">
                     <property role="19SUeA" value="Commit" />
                   </node>
                 </node>
@@ -2438,9 +2448,9 @@
               <node concept="19SUe$" id="2NmTaRVRDBr" role="19SJt6">
                 <property role="19SUeA" value="You can then select " />
               </node>
-              <node concept="2OoWia" id="2NmTaRVRDBR" role="19SJt6">
-                <node concept="19SGf9" id="2NmTaRVRDBS" role="$DsGW">
-                  <node concept="19SUe$" id="2NmTaRVRDBT" role="19SJt6">
+              <node concept="2OlAs7" id="yaVrOumlHl" role="19SJt6">
+                <node concept="19SGf9" id="yaVrOumlHo" role="$DsGW">
+                  <node concept="19SUe$" id="yaVrOumlHp" role="19SJt6">
                     <property role="19SUeA" value="Git-&gt;Merge Conflicts" />
                   </node>
                 </node>
@@ -2476,9 +2486,9 @@
               <node concept="19SUe$" id="2NmTaRVRDCH" role="19SJt6">
                 <property role="19SUeA" value="In case you select " />
               </node>
-              <node concept="2OoWia" id="2NmTaRVRDDi" role="19SJt6">
-                <node concept="19SGf9" id="2NmTaRVRDDj" role="$DsGW">
-                  <node concept="19SUe$" id="2NmTaRVRDDk" role="19SJt6">
+              <node concept="2OlAs7" id="yaVrOumlHC" role="19SJt6">
+                <node concept="19SGf9" id="yaVrOumlHF" role="$DsGW">
+                  <node concept="19SUe$" id="yaVrOumlHG" role="19SJt6">
                     <property role="19SUeA" value="Merge" />
                   </node>
                 </node>
@@ -2525,9 +2535,9 @@
           <node concept="19SUe$" id="6VFmq3HMjAY" role="19SJt6">
             <property role="19SUeA" value="Print, cut out and put it next to your monitor when you start with mbeddr. Note that on the Mac, most (but not all!) of the " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HMjCV" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HMjCW" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HMjCY" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOueMsF" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOueMsI" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOueMsJ" role="19SJt6">
                 <property role="19SUeA" value="Ctrl-Something" />
               </node>
             </node>
@@ -2535,9 +2545,9 @@
           <node concept="19SUe$" id="6VFmq3HMjCZ" role="19SJt6">
             <property role="19SUeA" value=" are actually " />
           </node>
-          <node concept="1jUjqm" id="6VFmq3HMjD0" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HMjD1" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HMjD3" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOueMt2" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOueMt5" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOueMt6" role="19SJt6">
                 <property role="19SUeA" value="Cmd-Something" />
               </node>
             </node>
@@ -2557,19 +2567,15 @@
           <node concept="C7FVz" id="6VFmq3I2TCZ" role="1xAuFS">
             <node concept="OjmMv" id="6VFmq3I2TD1" role="C7FVy">
               <node concept="19SGf9" id="6VFmq3I2TD2" role="OjmMu">
-                <node concept="19SUe$" id="6VFmq3I2TD3" role="19SJt6">
-                  <property role="19SUeA" value="" />
-                </node>
-                <node concept="1jUjqm" id="6VFmq3I2TSe" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I2TSf" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I2TSh" role="19SJt6">
+                <node concept="19SUe$" id="5pyBnOJvwn6" role="19SJt6" />
+                <node concept="2OoWia" id="5pyBnOJvwn3" role="19SJt6">
+                  <node concept="19SGf9" id="5pyBnOJvwn4" role="$DsGW">
+                    <node concept="19SUe$" id="5pyBnOJvwn5" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-Space" />
                     </node>
                   </node>
                 </node>
-                <node concept="19SUe$" id="6VFmq3I2TSi" role="19SJt6">
-                  <property role="19SUeA" value="" />
-                </node>
+                <node concept="19SUe$" id="5pyBnOJvwnO" role="19SJt6" />
               </node>
             </node>
           </node>
@@ -2584,9 +2590,9 @@
                 <node concept="19SUe$" id="6VFmq3I2TT2" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I2TT3" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I2TT4" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I2TT5" role="19SJt6">
+                <node concept="2OoWia" id="5pyBnOJvwuG" role="19SJt6">
+                  <node concept="19SGf9" id="5pyBnOJvwuJ" role="$DsGW">
+                    <node concept="19SUe$" id="5pyBnOJvwuK" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-Space" />
                     </node>
                   </node>
@@ -2608,9 +2614,9 @@
                 <node concept="19SUe$" id="6VFmq3I2UnK" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I2UnL" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I2UnM" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I2UnN" role="19SJt6">
+                <node concept="2OoWia" id="5pyBnOJvwwL" role="19SJt6">
+                  <node concept="19SGf9" id="5pyBnOJvwwO" role="$DsGW">
+                    <node concept="19SUe$" id="5pyBnOJvwwP" role="19SJt6">
                       <property role="19SUeA" value="Alt-Enter" />
                     </node>
                   </node>
@@ -2630,9 +2636,9 @@
                 <node concept="19SUe$" id="6VFmq3I2VkU" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I2VkV" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I2VkW" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I2VkX" role="19SJt6">
+                <node concept="2OoWia" id="5pyBnOJvwx0" role="19SJt6">
+                  <node concept="19SGf9" id="5pyBnOJvwx3" role="$DsGW">
+                    <node concept="19SUe$" id="5pyBnOJvwx4" role="19SJt6">
                       <property role="19SUeA" value="Alt-Enter" />
                     </node>
                   </node>
@@ -2654,9 +2660,9 @@
                 <node concept="19SUe$" id="6VFmq3I2WjA" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I2Wri" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I2Wrj" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I2Wrl" role="19SJt6">
+                <node concept="2OoWia" id="5pyBnOJvwxf" role="19SJt6">
+                  <node concept="19SGf9" id="5pyBnOJvwxi" role="$DsGW">
+                    <node concept="19SUe$" id="5pyBnOJvwxj" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-Alt-T" />
                     </node>
                   </node>
@@ -2678,9 +2684,9 @@
                 <node concept="19SUe$" id="6VFmq3I2WMf" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I2Xif" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I2Xig" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I2Xii" role="19SJt6">
+                <node concept="2OoWia" id="5pyBnOJvwxu" role="19SJt6">
+                  <node concept="19SGf9" id="5pyBnOJvwxx" role="$DsGW">
+                    <node concept="19SUe$" id="5pyBnOJvwxy" role="19SJt6">
                       <property role="19SUeA" value="Backspace" />
                     </node>
                   </node>
@@ -2713,9 +2719,9 @@
                 <node concept="19SUe$" id="6VFmq3I2XxI" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I2XxJ" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I2XxK" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I2XxL" role="19SJt6">
+                <node concept="2OoWia" id="5pyBnOJ_yO1" role="19SJt6">
+                  <node concept="19SGf9" id="5pyBnOJ_yO4" role="$DsGW">
+                    <node concept="19SUe$" id="5pyBnOJ_yO5" role="19SJt6">
                       <property role="19SUeA" value="Enter" />
                     </node>
                   </node>
@@ -2737,9 +2743,9 @@
                 <node concept="19SUe$" id="6VFmq3I2XxS" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I2XxT" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I2XxU" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I2XxV" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueLSM" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueLSP" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueLSQ" role="19SJt6">
                       <property role="19SUeA" value="Shift-Enter" />
                     </node>
                   </node>
@@ -2761,9 +2767,9 @@
                 <node concept="19SUe$" id="6VFmq3I2Xy2" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I2Xy3" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I2Xy4" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I2Xy5" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMgt" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMgw" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMgx" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-Shift Up" />
                     </node>
                   </node>
@@ -2771,9 +2777,9 @@
                 <node concept="19SUe$" id="6VFmq3I2Xy6" role="19SJt6">
                   <property role="19SUeA" value=" on Windows and Linux, " />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I2Zlg" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I2Zlh" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I2Zli" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMhb" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMhe" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMhf" role="19SJt6">
                       <property role="19SUeA" value="Cmd-Shift Up" />
                     </node>
                   </node>
@@ -2795,9 +2801,9 @@
                 <node concept="19SUe$" id="6VFmq3I2ZlF" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I2ZlG" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I2ZlH" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I2ZlI" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMgO" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMgR" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMgS" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-Shift Down" />
                     </node>
                   </node>
@@ -2805,9 +2811,9 @@
                 <node concept="19SUe$" id="6VFmq3I2ZlJ" role="19SJt6">
                   <property role="19SUeA" value=" on Windows and Linux, " />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I2ZlK" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I2ZlL" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I2ZlM" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMhy" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMh_" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMhA" role="19SJt6">
                       <property role="19SUeA" value="Cmd-Shift Down" />
                     </node>
                   </node>
@@ -2840,9 +2846,9 @@
                 <node concept="19SUe$" id="6VFmq3I30uh" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I30ui" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I30uj" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I30uk" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMhT" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMhW" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMhX" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-Up" />
                     </node>
                   </node>
@@ -2850,9 +2856,9 @@
                 <node concept="19SUe$" id="6VFmq3I30ul" role="19SJt6">
                   <property role="19SUeA" value=" on Windows and Linux, " />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I30um" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I30un" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I30uo" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMig" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMij" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMik" role="19SJt6">
                       <property role="19SUeA" value="Cmd-Up" />
                     </node>
                   </node>
@@ -2874,9 +2880,9 @@
                 <node concept="19SUe$" id="6VFmq3I30d_" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I30dA" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I30dB" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I30dC" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMiB" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMiE" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMiF" role="19SJt6">
                       <property role="19SUeA" value="Shift Up/Down" />
                     </node>
                   </node>
@@ -2907,9 +2913,9 @@
                 <node concept="19SUe$" id="6VFmq3I30Q7" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I30Q8" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I30Q9" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I30Qa" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMiQ" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMiT" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMiU" role="19SJt6">
                       <property role="19SUeA" value="Alt-F1" />
                     </node>
                   </node>
@@ -2917,9 +2923,9 @@
                 <node concept="19SUe$" id="6VFmq3I30Qb" role="19SJt6">
                   <property role="19SUeA" value=", then " />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I30Qc" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I30Qd" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I30Qe" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMjd" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMjg" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMjh" role="19SJt6">
                       <property role="19SUeA" value="Enter" />
                     </node>
                   </node>
@@ -2941,9 +2947,9 @@
                 <node concept="19SUe$" id="6VFmq3I36iJ" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I36iK" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I36iL" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I36iM" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMj$" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMjB" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMjC" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-Click" />
                     </node>
                   </node>
@@ -2951,9 +2957,9 @@
                 <node concept="19SUe$" id="6VFmq3I36iN" role="19SJt6">
                   <property role="19SUeA" value=" or " />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I36jj" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I36jk" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I36jl" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMkb" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMke" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMkf" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-B" />
                     </node>
                   </node>
@@ -2961,9 +2967,9 @@
                 <node concept="19SUe$" id="6VFmq3I36ji" role="19SJt6">
                   <property role="19SUeA" value=" on Windows and Linux, " />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I36iO" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I36iP" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I36iQ" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMkM" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMkP" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMkQ" role="19SJt6">
                       <property role="19SUeA" value="Cmd-Click" />
                     </node>
                   </node>
@@ -2971,9 +2977,9 @@
                 <node concept="19SUe$" id="6VFmq3I36iR" role="19SJt6">
                   <property role="19SUeA" value=" or  " />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I36jL" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I36jM" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I36jN" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMlp" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMls" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMlt" role="19SJt6">
                       <property role="19SUeA" value="Cmd-B" />
                     </node>
                   </node>
@@ -2995,9 +3001,9 @@
                 <node concept="19SUe$" id="6VFmq3I362p" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I362q" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I362r" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I362s" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMm0" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMm3" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMm4" role="19SJt6">
                       <property role="19SUeA" value="Alt-F7" />
                     </node>
                   </node>
@@ -3005,9 +3011,9 @@
                 <node concept="19SUe$" id="6VFmq3I362t" role="19SJt6">
                   <property role="19SUeA" value=" on Windows and Linux, " />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I362u" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I362v" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I362w" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMmn" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMmq" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMmr" role="19SJt6">
                       <property role="19SUeA" value="Alt-F7" />
                     </node>
                   </node>
@@ -3029,9 +3035,9 @@
                 <node concept="19SUe$" id="6VFmq3I361d" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I361e" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I361f" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I361g" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMmI" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMmL" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMmM" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-Alt-Shift-F12" />
                     </node>
                   </node>
@@ -3039,9 +3045,9 @@
                 <node concept="19SUe$" id="6VFmq3I361h" role="19SJt6">
                   <property role="19SUeA" value=" on Windows and Linux, " />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I361i" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I361j" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I361k" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMn5" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMn8" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMn9" role="19SJt6">
                       <property role="19SUeA" value="Cmd-Alt-Shift-F12" />
                     </node>
                   </node>
@@ -3063,9 +3069,9 @@
                 <node concept="19SUe$" id="6VFmq3I35cx" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I35cy" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I35cz" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I35c$" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMns" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMnv" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMnw" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-F12" />
                     </node>
                   </node>
@@ -3073,9 +3079,9 @@
                 <node concept="19SUe$" id="6VFmq3I35c_" role="19SJt6">
                   <property role="19SUeA" value=" on Windows and Linux, " />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I35cA" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I35cB" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I35cC" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMpu" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMpx" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMpy" role="19SJt6">
                       <property role="19SUeA" value="Cmd-F12" />
                     </node>
                   </node>
@@ -3097,9 +3103,9 @@
                 <node concept="19SUe$" id="6VFmq3I34Wn" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I34Wo" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I34Wp" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I34Wq" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMnN" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMnQ" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMnR" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-1" />
                     </node>
                   </node>
@@ -3107,9 +3113,9 @@
                 <node concept="19SUe$" id="6VFmq3I34Wr" role="19SJt6">
                   <property role="19SUeA" value=" on Windows and Linux, " />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I34Ws" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I34Wt" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I34Wu" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMpP" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMpS" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMpT" role="19SJt6">
                       <property role="19SUeA" value="Cmd-1" />
                     </node>
                   </node>
@@ -3131,9 +3137,9 @@
                 <node concept="19SUe$" id="6VFmq3I34UZ" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I34V0" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I34V1" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I34V2" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMoa" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMod" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMoe" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-2" />
                     </node>
                   </node>
@@ -3141,9 +3147,9 @@
                 <node concept="19SUe$" id="6VFmq3I34V3" role="19SJt6">
                   <property role="19SUeA" value=" on Windows and Linux, " />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I34V4" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I34V5" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I34V6" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMqc" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMqf" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMqg" role="19SJt6">
                       <property role="19SUeA" value="Cmd-2" />
                     </node>
                   </node>
@@ -3165,9 +3171,9 @@
                 <node concept="19SUe$" id="6VFmq3I34rF" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I34rG" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I34rH" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I34rI" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMox" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMo$" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMo_" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-F4" />
                     </node>
                   </node>
@@ -3175,9 +3181,9 @@
                 <node concept="19SUe$" id="6VFmq3I34rJ" role="19SJt6">
                   <property role="19SUeA" value=" on Windows and Linux, " />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I34rK" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I34rL" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I34rM" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMqz" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMqA" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMqB" role="19SJt6">
                       <property role="19SUeA" value="Cmd-F4" />
                     </node>
                   </node>
@@ -3199,9 +3205,9 @@
                 <node concept="19SUe$" id="6VFmq3I337U" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I337V" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I337W" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I337X" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMoS" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMoV" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMoW" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-E" />
                     </node>
                   </node>
@@ -3209,9 +3215,9 @@
                 <node concept="19SUe$" id="6VFmq3I337Y" role="19SJt6">
                   <property role="19SUeA" value=" on Windows and Linux, " />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I34ap" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I34aq" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I34ar" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMqU" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMqX" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMqY" role="19SJt6">
                       <property role="19SUeA" value="Cmd-E" />
                     </node>
                   </node>
@@ -3233,9 +3239,9 @@
                 <node concept="19SUe$" id="6VFmq3I33qa" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I33qb" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I33qc" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I33qd" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMpf" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMpi" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMpj" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-Tab" />
                     </node>
                   </node>
@@ -3264,9 +3270,9 @@
             <node concept="OjmMv" id="6VFmq3I36zo" role="C7FVy">
               <node concept="19SGf9" id="6VFmq3I36zp" role="OjmMu">
                 <node concept="19SUe$" id="6VFmq3I36zq" role="19SJt6" />
-                <node concept="1jUjqm" id="6VFmq3I37JH" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I37JI" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I37JK" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMrh" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMrk" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMrl" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-A" />
                     </node>
                   </node>
@@ -3288,9 +3294,9 @@
                 <node concept="19SUe$" id="6VFmq3I36zC" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I37Z9" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I37Za" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I37Zc" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMrw" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMrz" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMr$" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-Shift-C" />
                     </node>
                   </node>
@@ -3323,9 +3329,9 @@
                 <node concept="19SUe$" id="6VFmq3I387L" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I39QV" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I39QW" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I39QY" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMrJ" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMrM" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMrN" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-F9" />
                     </node>
                   </node>
@@ -3347,9 +3353,9 @@
                 <node concept="19SUe$" id="6VFmq3I387V" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I3a6r" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I3a6s" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I3a6u" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMrY" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMs1" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMs2" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-Alt-F9" />
                     </node>
                   </node>
@@ -3371,9 +3377,9 @@
                 <node concept="19SUe$" id="6VFmq3I397v" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I3alT" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I3alU" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I3alW" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMsd" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMsg" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMsh" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-Alt-F8" />
                     </node>
                   </node>
@@ -3395,9 +3401,9 @@
                 <node concept="19SUe$" id="6VFmq3I39uQ" role="19SJt6">
                   <property role="19SUeA" value="" />
                 </node>
-                <node concept="1jUjqm" id="6VFmq3I3a_r" role="19SJt6">
-                  <node concept="19SGf9" id="6VFmq3I3a_s" role="$DsGW">
-                    <node concept="19SUe$" id="6VFmq3I3a_u" role="19SJt6">
+                <node concept="2OoWia" id="yaVrOueMss" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOueMsv" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOueMsw" role="19SJt6">
                       <property role="19SUeA" value="Ctrl-Alt-F10" />
                     </node>
                   </node>
@@ -3426,10 +3432,10 @@
           <node concept="19SUe$" id="6VFmq3HK9MX" role="19SJt6">
             <property role="19SUeA" value="Here are a few settings we recommend you change in MPS more generally (in the " />
           </node>
-          <node concept="$DyYS" id="6VFmq3HMgEN" role="19SJt6">
-            <node concept="19SGf9" id="6VFmq3HMgEO" role="$DsGW">
-              <node concept="19SUe$" id="6VFmq3HMgEQ" role="19SJt6">
-                <property role="19SUeA" value="File \\rightarrow Preferences" />
+          <node concept="2OlAs7" id="yaVrOueMtp" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOueMts" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOueMtt" role="19SJt6">
+                <property role="19SUeA" value="File - Preferences" />
               </node>
             </node>
           </node>
@@ -3686,9 +3692,9 @@
             <node concept="19SUe$" id="12l$qjdi2cR" role="19SJt6">
               <property role="19SUeA" value="You can select any node in MPS and use " />
             </node>
-            <node concept="2OoWia" id="12l$qjdi4i8" role="19SJt6">
-              <node concept="19SGf9" id="12l$qjdi4i9" role="$DsGW">
-                <node concept="19SUe$" id="12l$qjdi4ia" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOunxIQ" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOunxIT" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOunxIU" role="19SJt6">
                   <property role="19SUeA" value="Copy Node URL to Clipboard" />
                 </node>
               </node>
@@ -3724,9 +3730,9 @@
             <node concept="19SUe$" id="12l$qjdi4iV" role="19SJt6">
               <property role="19SUeA" value="The node URL is not readable by humans, only by the tool. You can use " />
             </node>
-            <node concept="2OoWia" id="12l$qjdi4lh" role="19SJt6">
-              <node concept="19SGf9" id="12l$qjdi4li" role="$DsGW">
-                <node concept="19SUe$" id="12l$qjdi4lj" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOunxJl" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOunxJo" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOunxJp" role="19SJt6">
                   <property role="19SUeA" value="Edit-&gt;Copy Special-&gt;Copy Node Info to Clipboard" />
                 </node>
               </node>
@@ -3761,9 +3767,9 @@
             <node concept="19SUe$" id="12l$qjdi2c0" role="19SJt6">
               <property role="19SUeA" value="It is possible to copy a node (and its complete subtree, of course) to an XML text. The menu item " />
             </node>
-            <node concept="2OoWia" id="12l$qjdi6C7" role="19SJt6">
-              <node concept="19SGf9" id="12l$qjdi6C8" role="$DsGW">
-                <node concept="19SUe$" id="12l$qjdi6C9" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOunxJ$" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOunxJB" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOunxJC" role="19SJt6">
                   <property role="19SUeA" value="Edit-&gt;Copy Special-&gt;Copy Node as XML" />
                 </node>
               </node>
@@ -3784,9 +3790,9 @@
             <node concept="19SUe$" id="12l$qjdi6D7" role="19SJt6">
               <property role="19SUeA" value="This XML can then be pasted into another MPS using " />
             </node>
-            <node concept="2OoWia" id="12l$qjdi6DZ" role="19SJt6">
-              <node concept="19SGf9" id="12l$qjdi6E0" role="$DsGW">
-                <node concept="19SUe$" id="12l$qjdi6E1" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOunxJN" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOunxJQ" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOunxJR" role="19SJt6">
                   <property role="19SUeA" value="Edit-&gt;Paste XML Node" />
                 </node>
               </node>

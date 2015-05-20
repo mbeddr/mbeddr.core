@@ -43,6 +43,7 @@
       <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
+      <concept id="2286331641392318852" name="com.mbeddr.doc.structure.MenuFormattedText" flags="ng" index="2OlAs7" />
       <concept id="2286331641391049225" name="com.mbeddr.doc.structure.KeyPressFormattedText" flags="ng" index="2OoWia" />
       <concept id="6386504476136263187" name="com.mbeddr.doc.structure.ImageParagraph" flags="ng" index="2SaynC">
         <property id="6386504476136358630" name="showImage" index="2Sbq$t" />
@@ -275,11 +276,11 @@
         <node concept="1_0LV8" id="1SYZy6QsxE$" role="1_0VJ0">
           <node concept="19SGf9" id="1SYZy6QsxE_" role="1_0LWR">
             <node concept="19SUe$" id="1SYZy6QsxEA" role="19SJt6">
-              <property role="19SUeA" value="To enhance the semantic \&quot;richness\&quot; of the interface we add preconditions and a postcondition. To do so, use an intention " />
+              <property role="19SUeA" value="To enhance the semantic &quot;richness&quot; of the interface we add preconditions and a postcondition. To do so, use an intention " />
             </node>
-            <node concept="2OoWia" id="1SYZy6QsxEH" role="19SJt6">
-              <node concept="19SGf9" id="1SYZy6QsxEI" role="$DsGW">
-                <node concept="19SUe$" id="1SYZy6QsxEJ" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuw0O9" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuw0Oc" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuw0Od" role="19SJt6">
                   <property role="19SUeA" value="Add Precondition" />
                 </node>
               </node>
@@ -1587,9 +1588,9 @@
             <node concept="19SUe$" id="5MdJlx$bho9" role="19SJt6">
               <property role="19SUeA" value="To better understand the connections between component instances, there is also a graphical editor available. To switch to the graphical wireing you can select the respective option form the " />
             </node>
-            <node concept="2OoWia" id="4dKKrcDSE44" role="19SJt6">
-              <node concept="19SGf9" id="4dKKrcDSE45" role="$DsGW">
-                <node concept="19SUe$" id="4dKKrcDSE46" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuw0Ow" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuw0Oz" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuw0O$" role="19SJt6">
                   <property role="19SUeA" value="Code-&gt;Projection Mode-&gt;Component Wiring as Diagram" />
                 </node>
               </node>
@@ -2429,9 +2430,9 @@
             <node concept="19SUe$" id="4dKKrcE0Ibl" role="19SJt6">
               <property role="19SUeA" value=". In order to use an interface in such a interface type this interface has to be specially marked with an annotation " />
             </node>
-            <node concept="1jUjqm" id="4dKKrcE0Jv9" role="19SJt6">
-              <node concept="19SGf9" id="4dKKrcE0Jva" role="$DsGW">
-                <node concept="19SUe$" id="4dKKrcE0Jvb" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuw0OJ" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuw0OM" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuw0ON" role="19SJt6">
                   <property role="19SUeA" value="Toggle Can be used as Type" />
                 </node>
               </node>
@@ -2521,9 +2522,9 @@
             <node concept="19SUe$" id="1Pi5yleGo6V" role="19SJt6">
               <property role="19SUeA" value=" action from the context menu (or press " />
             </node>
-            <node concept="1jUjqm" id="1Pi5yleGo8j" role="19SJt6">
-              <node concept="19SGf9" id="1Pi5yleGo8k" role="$DsGW">
-                <node concept="19SUe$" id="1Pi5yleGo8l" role="19SJt6">
+            <node concept="2OoWia" id="yaVrOuw0P6" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuw0P9" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuw0Pa" role="19SJt6">
                   <property role="19SUeA" value="Ctrl-Alt-V" />
                 </node>
               </node>
@@ -2647,7 +2648,7 @@
         <node concept="1_0LV8" id="6UY8Kx5fj_a" role="1_0VJ0">
           <node concept="19SGf9" id="6UY8Kx5fj_b" role="1_0LWR">
             <node concept="19SUe$" id="6UY8Kx5fj_c" role="19SJt6">
-              <property role="19SUeA" value="Let us look at the three parameters you have to set here: The first one determines from where the program is \&quot;executed\&quot;. The entry point should be selected to be \&quot;close\&quot; to the to-be-verified component (if you verify the whole system, then, at least for big systems, this will take long). In our case we use a special test case " />
+              <property role="19SUeA" value="Let us look at the three parameters you have to set here: The first one determines from where the program is &quot;executed&quot;. The entry point should be selected to be &quot;close&quot; to the to-be-verified component (if you verify the whole system, then, at least for big systems, this will take long). In our case we use a special test case " />
             </node>
             <node concept="1jUjqm" id="6UY8Kx5fj_y" role="19SJt6">
               <node concept="19SGf9" id="6UY8Kx5fj_z" role="$DsGW">
@@ -2702,9 +2703,9 @@
             <node concept="19SUe$" id="6UY8Kx5hjsl" role="19SJt6">
               <property role="19SUeA" value=" number is sufficient.  You can now run the verification by selecting the component and executing the " />
             </node>
-            <node concept="1jUjqm" id="6UY8Kx5hkNZ" role="19SJt6">
-              <node concept="19SGf9" id="6UY8Kx5hkO0" role="$DsGW">
-                <node concept="19SUe$" id="6UY8Kx5hkO1" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuw0PD" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuw0PG" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuw0PH" role="19SJt6">
                   <property role="19SUeA" value="Verify Component" />
                 </node>
               </node>

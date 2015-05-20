@@ -46,6 +46,7 @@
       <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
+      <concept id="2286331641392318852" name="com.mbeddr.doc.structure.MenuFormattedText" flags="ng" index="2OlAs7" />
       <concept id="6386504476136263187" name="com.mbeddr.doc.structure.ImageParagraph" flags="ng" index="2SaynC">
         <property id="4755612053022517119" name="border" index="41Bi8" />
         <property id="6386504476136358630" name="showImage" index="2Sbq$t" />
@@ -646,12 +647,12 @@
           <node concept="2vpllh" id="6nRVhifCf5V" role="19SJt6">
             <node concept="19SGf9" id="6nRVhifCf5W" role="$DsGW">
               <node concept="19SUe$" id="6nRVhifCf5X" role="19SJt6">
-                <property role="19SUeA" value=" do not" />
+                <property role="19SUeA" value="do not" />
               </node>
             </node>
           </node>
           <node concept="19SUe$" id="6nRVhifCf5U" role="19SJt6">
-            <property role="19SUeA" value="aim to prove correctness of a system but rather help users to find bugs. Each run of an analysis can provide one of the results: SUCCESS (colored GREEN) - meaning that no bug could be found; FAIL (colored RED) - meaning that a bug could be found, or DON'T KNOW (colored orange) meaning that no bug could be found but the verification is incomplete. When a bug is found, most of the times we have a trace through the system (counterexample) that leads to that failure.\n\nWe distinguish between the following kinds of analyses:" />
+            <property role="19SUeA" value=" aim to prove correctness of a system but rather help users to find bugs. Each run of an analysis can provide one of the results: SUCCESS (colored GREEN) - meaning that no bug could be found; FAIL (colored RED) - meaning that a bug could be found, or DON'T KNOW (colored orange) meaning that no bug could be found but the verification is incomplete. When a bug is found, most of the times we have a trace through the system (counterexample) that leads to that failure.&#10;&#10;We distinguish between the following kinds of analyses:" />
           </node>
         </node>
       </node>
@@ -980,7 +981,27 @@
         <node concept="1_0LV8" id="3iTDCNuCEhJ" role="1_0VJ0">
           <node concept="19SGf9" id="3iTDCNuCEhK" role="1_0LWR">
             <node concept="19SUe$" id="3iTDCNuCEhL" role="19SJt6">
-              <property role="19SUeA" value="Global settings for CBMC-based analyses can be changed via \&quot;File-&gt;Settings\&quot; menu and then selecting \&quot;CProver preference\&quot; tab as shown below. " />
+              <property role="19SUeA" value="Global settings for CBMC-based analyses can be changed via " />
+            </node>
+            <node concept="2OlAs7" id="yaVrOuBlmi" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuBlmj" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuBlmk" role="19SJt6">
+                  <property role="19SUeA" value="&quot;File-&gt;Settings&quot;" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="yaVrOuBlmh" role="19SJt6">
+              <property role="19SUeA" value=" menu and then selecting " />
+            </node>
+            <node concept="2OlAs7" id="yaVrOuBltE" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuBltF" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuBltG" role="19SJt6">
+                  <property role="19SUeA" value="CProver preference" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="yaVrOuBltD" role="19SJt6">
+              <property role="19SUeA" value=" tab as shown below. " />
             </node>
           </node>
         </node>
@@ -1090,7 +1111,7 @@
                   </node>
                 </node>
                 <node concept="19SUe$" id="4XJOimG0jQP" role="19SJt6">
-                  <property role="19SUeA" value=" before analysis instructs mbeddr to perform a full \&quot;MPS rebuild\&quot; of the analyzed model before each analysis (otherwise only an \&quot;MPS make\&quot; will be run; in MPS, 'just make' is not always functioning properly)." />
+                  <property role="19SUeA" value=" before analysis instructs mbeddr to perform a full &quot;MPS rebuild&quot; of the analyzed model before each analysis (otherwise only an &quot;MPS make&quot; will be run; in MPS, 'just make' is not always functioning properly)." />
                 </node>
               </node>
             </node>
@@ -1478,21 +1499,22 @@
               </node>
             </node>
           </node>
-          <node concept="3z_lpU" id="3JyX84yPgyY" role="1_0VJ0">
-            <property role="3z_lpW" value="mbeddr" />
-            <property role="3z_lpV" value="exported uint16/m/ computeBreakingDistance(uint16/km/h/ speed, boolean icyRoad) {                                                     &#10;  return 10 m                                       otherwise 0 m;                                                                    &#10;} computeBreakingDistance (function)                                                                                                  &#10;                                                                                            20 m                                      &#10;                                                                                            50 m                                      &#10;                                                                                            5 m                                       &#10;                                                                                            10 m                                      &#10;                                                                                            30 m                                      &#10;                                                                                            speed &lt; LOW_SPEED                         &#10;                                                                                            speed &gt; MEDIUM_SPEED &amp;&amp; speed &lt; HIGH_SPEED&#10;                                                                                            speed &lt; HIGH_SPEED                        &#10;                                                                                            icyRoad                                   &#10;                                                                                            !icyRoad                                  " />
-            <property role="3z_lpJ" value="false" />
-            <node concept="2NCZwO" id="3JyX84yPgz0" role="3z_lpI">
-              <node concept="2NCMab" id="3JyX84yPk1W" role="2NCMaf">
+          <node concept="3z_lpz" id="yaVrOuyu4L" role="1_0VJ0">
+            <property role="TrG5h" value="computeBreakingDistance" />
+            <node concept="2NCZwO" id="yaVrOuyu4N" role="3z_lpI">
+              <node concept="2NCMab" id="yaVrOuyu6H" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:3uoNPXnjeUv" resolve="RobustnessExtensionsExamples" />
               </node>
-              <node concept="2NCMab" id="3JyX84yPk24" role="2NCMaf">
+              <node concept="2NCMab" id="yaVrOuyu6Q" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:3uoNPXnjeUw" resolve="computeBreakingDistance" />
               </node>
             </node>
-          </node>
-          <node concept="1_1sxE" id="3JyX84yPtN1" role="1_0VJ0">
-            <property role="TrG5h" value="empty_-1" />
+            <node concept="2bctqb" id="yaVrOuyu4R" role="3z_lpT" />
+            <node concept="OjmMv" id="yaVrOuyu4T" role="3z_lpS">
+              <node concept="19SGf9" id="yaVrOuyu4U" role="OjmMu">
+                <node concept="19SUe$" id="yaVrOuyu4V" role="19SJt6" />
+              </node>
+            </node>
           </node>
           <node concept="1_0LV8" id="3JyX84yPMh$" role="1_0VJ0">
             <node concept="19SGf9" id="3JyX84yPMh_" role="1_0LWR">

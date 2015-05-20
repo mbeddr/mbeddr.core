@@ -29,6 +29,7 @@
       <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
+      <concept id="2286331641391049225" name="com.mbeddr.doc.structure.KeyPressFormattedText" flags="ng" index="2OoWia" />
       <concept id="6386504476136263187" name="com.mbeddr.doc.structure.ImageParagraph" flags="ng" index="2SaynC">
         <child id="6386504476136278696" name="description" index="2SaI5j" />
         <child id="6386504476136531838" name="resource" index="2SbwM5" />
@@ -212,9 +213,9 @@
           <node concept="19SUe$" id="6UY8Kx5iZ5a" role="19SJt6">
             <property role="19SUeA" value=" - this instanciates the concept.  To add a column, hit " />
           </node>
-          <node concept="1jUjqm" id="6UY8Kx5iZ5k" role="19SJt6">
-            <node concept="19SGf9" id="6UY8Kx5iZ5l" role="$DsGW">
-              <node concept="19SUe$" id="6UY8Kx5iZ5m" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuw0L9" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuw0Lc" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuw0Ld" role="19SJt6">
                 <property role="19SUeA" value="enter" />
               </node>
             </node>
@@ -222,9 +223,9 @@
           <node concept="19SUe$" id="6UY8Kx5iZ5j" role="19SJt6">
             <property role="19SUeA" value=" in one of the cells. For adding a row, move your cursor  on the left side of the table (between the default return value and the table) and hit " />
           </node>
-          <node concept="1jUjqm" id="6UY8Kx5iZ5x" role="19SJt6">
-            <node concept="19SGf9" id="6UY8Kx5iZ5y" role="$DsGW">
-              <node concept="19SUe$" id="6UY8Kx5iZ5z" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuw0LK" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuw0LN" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuw0LO" role="19SJt6">
                 <property role="19SUeA" value="enter" />
               </node>
             </node>
@@ -280,7 +281,7 @@
             </node>
           </node>
           <node concept="19SUe$" id="6UY8Kx5j7H6" role="19SJt6">
-            <property role="19SUeA" value=" construct can be used to \&quot;sneak in\&quot; a unit into a regular value. This is useful for interacting with non-unit-aware (library) code. Note how the expression for " />
+            <property role="19SUeA" value=" construct can be used to &quot;sneak in&quot; a unit into a regular value. This is useful for interacting with non-unit-aware (library) code. Note how the expression for " />
           </node>
           <node concept="1jUjqm" id="6UY8Kx5j7Hk" role="19SJt6">
             <node concept="19SGf9" id="6UY8Kx5j7Hl" role="$DsGW">

@@ -130,9 +130,9 @@
           <node concept="19SUe$" id="300OR6Gn5AB" role="19SJt6">
             <property role="19SUeA" value="Next to components and units, state machines are one of the main C extensions available in mbeddr. They can be used directly in C programs, or alternatively, embedded into components. To keep the overall complexity of the example manageable, we will show how state machines can be used directly in C. \n\nState machines can either be viewed and edited with the textual notation or with the table based projection. You can switch between the two modes with the " />
           </node>
-          <node concept="1jUjqm" id="1VdI9nUFYfA" role="19SJt6">
-            <node concept="19SGf9" id="1VdI9nUFYfB" role="$DsGW">
-              <node concept="19SUe$" id="1VdI9nUFYfC" role="19SJt6">
+          <node concept="2OlAs7" id="yaVrOuw0Q4" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuw0Q7" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuw0Q8" role="19SJt6">
                 <property role="19SUeA" value="Code -&gt; Projection Mode -&gt; Statemachines as Tables" />
               </node>
             </node>
@@ -257,20 +257,12 @@
             <node concept="1jUjqm" id="2XVA19iNfAr" role="19SJt6">
               <node concept="19SGf9" id="2XVA19iNfAs" role="$DsGW">
                 <node concept="19SUe$" id="2XVA19iNfAt" role="19SJt6">
-                  <property role="19SUeA" value="" />
+                  <property role="19SUeA" value="statemachine" />
                 </node>
-                <node concept="1jUjqm" id="1CZbvxNb8ad" role="19SJt6">
-                  <node concept="19SGf9" id="1CZbvxNb8ae" role="$DsGW">
-                    <node concept="19SUe$" id="1CZbvxNb8af" role="19SJt6">
-                      <property role="19SUeA" value="statemachine" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="19SUe$" id="1CZbvxNb8ah" role="19SJt6" />
               </node>
             </node>
             <node concept="19SUe$" id="2XVA19iNfAq" role="19SJt6">
-              <property role="19SUeA" value="at the top level in implementation modules. This will create a new state machine with an initial state and one event already defined. You can leave the event there, we will come back to that later. We know that the airplane will be in various states: " />
+              <property role="19SUeA" value=" at the top level in implementation modules. This will create a new state machine with an initial state and one event already defined. You can leave the event there, we will come back to that later. We know that the airplane will be in various states: " />
             </node>
             <node concept="3z_lpY" id="6lh$fzWbE9" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzWbEa" role="3z_lpZ">
@@ -1429,7 +1421,7 @@
             <node concept="1jUjqm" id="300OR6Gp5G8" role="19SJt6">
               <node concept="19SGf9" id="300OR6Gp5G9" role="$DsGW">
                 <node concept="19SUe$" id="300OR6Gp5Ga" role="19SJt6">
-                  <property role="19SUeA" value="test statemachine}" />
+                  <property role="19SUeA" value="test statemachine" />
                 </node>
               </node>
             </node>

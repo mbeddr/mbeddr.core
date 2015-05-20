@@ -627,7 +627,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="4KbglN$TdRb" role="19SJt6">
-              <property role="19SUeA" value=" statement, but it \&quot;switches over\&quot; feature configurations. Note that the conditions in the " />
+              <property role="19SUeA" value=" statement, but it &quot;switches over&quot; feature configurations. Note that the conditions in the " />
             </node>
             <node concept="1jUjqm" id="4KbglN$TdR_" role="19SJt6">
               <node concept="19SGf9" id="4KbglN$TdRA" role="$DsGW">
@@ -761,7 +761,7 @@
         <node concept="1_0LV8" id="4KbglN$ZULs" role="1_0VJ0">
           <node concept="19SGf9" id="4KbglN$ZULt" role="1_0LWR">
             <node concept="19SUe$" id="4KbglN$ZULu" role="19SJt6">
-              <property role="19SUeA" value="A presence condition is a Boolean expression over features attached to any program element. During transformation, the program element is deleted if, based on the selected configuration, the Boolean expression evaluates to false. Presence conditions are essentially a kind of \&quot;structured #ifdef\&quot;. In the two functions " />
+              <property role="19SUeA" value="A presence condition is a Boolean expression over features attached to any program element. During transformation, the program element is deleted if, based on the selected configuration, the Boolean expression evaluates to false. Presence conditions are essentially a kind of &quot;structured #ifdef&quot;. In the two functions " />
             </node>
             <node concept="3z_lpY" id="4KbglN_50bX" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN_50bY" role="3z_lpZ">
@@ -806,9 +806,9 @@
             <node concept="19SUe$" id="4KbglN_52Sf" role="19SJt6">
               <property role="19SUeA" value="Presence conditions are attached to program nodes with the " />
             </node>
-            <node concept="2OoWia" id="4KbglN_52U5" role="19SJt6">
-              <node concept="19SGf9" id="4KbglN_52U6" role="$DsGW">
-                <node concept="19SUe$" id="4KbglN_52U7" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuxfHR" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuxfHU" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuxfHV" role="19SJt6">
                   <property role="19SUeA" value="Toggle Presence Condition" />
                 </node>
               </node>
@@ -823,9 +823,9 @@
             <node concept="19SUe$" id="4KbglN_031E" role="19SJt6">
               <property role="19SUeA" value="Variability-aware code can be projected in various ways (switchable via the " />
             </node>
-            <node concept="2OoWia" id="4KbglN_51YT" role="19SJt6">
-              <node concept="19SGf9" id="4KbglN_51YU" role="$DsGW">
-                <node concept="19SUe$" id="4KbglN_51YV" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuxfI6" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuxfI9" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuxfIa" role="19SJt6">
                   <property role="19SUeA" value="Code-&gt;Projection Mode" />
                 </node>
               </node>
@@ -1386,7 +1386,7 @@
         <node concept="1_0LV8" id="4KbglN_a4Ec" role="1_0VJ0">
           <node concept="19SGf9" id="4KbglN_a4Ed" role="1_0LWR">
             <node concept="19SUe$" id="4KbglN_a4Ee" role="19SJt6">
-              <property role="19SUeA" value="Writing documentation for code is annoying, since you always have to copy code snippets into the document (as text or as a screenshot), make sure they are formatted nicely, and - most importantly - keep them up to date as the code changes. The mbeddr documentation language avoids this problem: it treats documentation just like code in MPS, the documentation language is just another language written in MPS. Consequently it is trivial to refer to code, make sure that the reference is refactored along with the code itself (in particular in case of renames) and, by using a few tricks, you can even \&quot;virtually embed\&quot; code into the documents.  " />
+              <property role="19SUeA" value="Writing documentation for code is annoying, since you always have to copy code snippets into the document (as text or as a screenshot), make sure they are formatted nicely, and - most importantly - keep them up to date as the code changes. The mbeddr documentation language avoids this problem: it treats documentation just like code in MPS, the documentation language is just another language written in MPS. Consequently it is trivial to refer to code, make sure that the reference is refactored along with the code itself (in particular in case of renames) and, by using a few tricks, you can even &quot;virtually embed&quot; code into the documents.  " />
             </node>
           </node>
         </node>
@@ -1395,9 +1395,9 @@
             <node concept="19SUe$" id="4KbglN_a6MQ" role="19SJt6">
               <property role="19SUeA" value="The user guide you are reading right now is written with this language. Consequently, a good way to learn mbeddr's documentation language is to switch off Presentation Mode (via the " />
             </node>
-            <node concept="2OoWia" id="4KbglN_a6N7" role="19SJt6">
-              <node concept="19SGf9" id="4KbglN_a6N8" role="$DsGW">
-                <node concept="19SUe$" id="4KbglN_a6N9" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuxfH5" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuxfH8" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuxfH9" role="19SJt6">
                   <property role="19SUeA" value="Code-&gt;Projection Modes" />
                 </node>
               </node>
@@ -1594,7 +1594,7 @@
                   </node>
                 </node>
                 <node concept="19SUe$" id="4KbglN_f2Km" role="19SJt6">
-                  <property role="19SUeA" value=" There is also a kind of \&quot;special section\&quot;, the Chapter. It is simlar in all respects to sections except that it " />
+                  <property role="19SUeA" value=" There is also a kind of &quot;special section&quot;, the Chapter. It is simlar in all respects to sections except that it " />
                 </node>
                 <node concept="28N2ik" id="4KbglN_f2Ks" role="19SJt6">
                   <node concept="19SGf9" id="4KbglN_f2Kt" role="$DsGW">
@@ -1668,7 +1668,7 @@
                 </node>
               </node>
               <node concept="19SUe$" id="4KbglN_jXqX" role="19SJt6">
-                <property role="19SUeA" value=" This embeds arbitrary code into the document. When rendered to HTML or Latex, the embedded code will be \&quot;copied to text\&quot;, so this really only makes sense for notations that have a meaningful textual representation (program code, essentially)." />
+                <property role="19SUeA" value=" This embeds arbitrary code into the document. When rendered to HTML or Latex, the embedded code will be &quot;copied to text&quot;, so this really only makes sense for notations that have a meaningful textual representation (program code, essentially)." />
               </node>
             </node>
           </node>
@@ -1748,7 +1748,7 @@
               <node concept="1jUjqm" id="4KbglN_jZer" role="19SJt6">
                 <node concept="19SGf9" id="4KbglN_jZes" role="$DsGW">
                   <node concept="19SUe$" id="4KbglN_jZet" role="19SJt6">
-                    <property role="19SUeA" value="\\bold" />
+                    <property role="19SUeA" value="\bold" />
                   </node>
                 </node>
               </node>
@@ -1758,7 +1758,7 @@
               <node concept="1jUjqm" id="4KbglN_jZe$" role="19SJt6">
                 <node concept="19SGf9" id="4KbglN_jZe_" role="$DsGW">
                   <node concept="19SUe$" id="4KbglN_jZeA" role="19SJt6">
-                    <property role="19SUeA" value="\\emph" />
+                    <property role="19SUeA" value="\emph" />
                   </node>
                 </node>
               </node>
@@ -1768,7 +1768,7 @@
               <node concept="1jUjqm" id="4KbglN_jZeL" role="19SJt6">
                 <node concept="19SGf9" id="4KbglN_jZeM" role="$DsGW">
                   <node concept="19SUe$" id="4KbglN_jZeN" role="19SJt6">
-                    <property role="19SUeA" value="\\math" />
+                    <property role="19SUeA" value="\math" />
                   </node>
                 </node>
               </node>
@@ -1778,7 +1778,7 @@
               <node concept="1jUjqm" id="4KbglN_jZjG" role="19SJt6">
                 <node concept="19SGf9" id="4KbglN_jZjH" role="$DsGW">
                   <node concept="19SUe$" id="4KbglN_jZjI" role="19SJt6">
-                    <property role="19SUeA" value="\\key" />
+                    <property role="19SUeA" value="\key" />
                   </node>
                 </node>
               </node>
@@ -1788,7 +1788,7 @@
               <node concept="1jUjqm" id="4KbglN_jZk9" role="19SJt6">
                 <node concept="19SGf9" id="4KbglN_jZka" role="$DsGW">
                   <node concept="19SUe$" id="4KbglN_jZkb" role="19SJt6">
-                    <property role="19SUeA" value="\\menu" />
+                    <property role="19SUeA" value="\menu" />
                   </node>
                 </node>
               </node>
@@ -1798,7 +1798,7 @@
               <node concept="1jUjqm" id="4KbglN_jZf2" role="19SJt6">
                 <node concept="19SGf9" id="4KbglN_jZf3" role="$DsGW">
                   <node concept="19SUe$" id="4KbglN_jZf4" role="19SJt6">
-                    <property role="19SUeA" value="\\code" />
+                    <property role="19SUeA" value="\code" />
                   </node>
                 </node>
               </node>
@@ -1890,7 +1890,7 @@
               <node concept="1jUjqm" id="4KbglN_jZjy" role="19SJt6">
                 <node concept="19SGf9" id="4KbglN_jZjz" role="$DsGW">
                   <node concept="19SUe$" id="4KbglN_jZj$" role="19SJt6">
-                    <property role="19SUeA" value="\\url" />
+                    <property role="19SUeA" value="\url" />
                   </node>
                 </node>
               </node>
@@ -1907,7 +1907,7 @@
               <node concept="1jUjqm" id="4KbglN_jZm5" role="19SJt6">
                 <node concept="19SGf9" id="4KbglN_jZm6" role="$DsGW">
                   <node concept="19SUe$" id="4KbglN_jZm7" role="19SJt6">
-                    <property role="19SUeA" value="\\footnote" />
+                    <property role="19SUeA" value="\footnote" />
                   </node>
                 </node>
               </node>
@@ -1946,7 +1946,7 @@
             </node>
           </node>
           <node concept="19SUe$" id="4KbglN_k0hb" role="19SJt6">
-            <property role="19SUeA" value=" relative to the current solutions root directory. When defining image paragraphs or attachments, you use one of the paths defined in the Config as the path prefix and select an image \&quot;below\&quot; this path prefix. This is supported with code completion." />
+            <property role="19SUeA" value=" relative to the current solutions root directory. When defining image paragraphs or attachments, you use one of the paths defined in the Config as the path prefix and select an image &quot;below&quot; this path prefix. This is supported with code completion." />
           </node>
         </node>
         <node concept="1xAIan" id="4KbglN_f3pv" role="1xAIax">
@@ -2107,9 +2107,9 @@
           <node concept="19SUe$" id="3PCHQK6jBrO" role="19SJt6">
             <property role="19SUeA" value="Once a query is defined, you can use " />
           </node>
-          <node concept="1jUjqm" id="3PCHQK6mawb" role="19SJt6">
-            <node concept="19SGf9" id="3PCHQK6mawc" role="$DsGW">
-              <node concept="19SUe$" id="3PCHQK6mawd" role="19SJt6">
+          <node concept="2OlAs7" id="yaVrOuxfGQ" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuxfGT" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuxfGU" role="19SJt6">
                 <property role="19SUeA" value="Update" />
               </node>
             </node>
@@ -2192,7 +2192,7 @@
           <node concept="OjmMv" id="4KbglN$KiVP" role="3X6T9h">
             <node concept="19SGf9" id="4KbglN$KiVQ" role="OjmMu">
               <node concept="19SUe$" id="4KbglN$KiVR" role="19SJt6">
-                <property role="19SUeA" value="Alternatively, the user may decide that a particular smell is acually ok in this case; so the result item must be marked as \&quot;it's ok, don't bother me again\&quot;." />
+                <property role="19SUeA" value="Alternatively, the user may decide that a particular smell is acually ok in this case; so the result item must be marked as &quot;it's ok, don't bother me again&quot;." />
               </node>
             </node>
           </node>
@@ -2211,7 +2211,7 @@
             </node>
           </node>
           <node concept="19SUe$" id="4KbglN$KiYY" role="19SJt6">
-            <property role="19SUeA" value=" option can be set on an assessment. Then every result item gets its own checkbox. Checking this checkbox means that \&quot;this result item is ok\&quot;, i.e., it should not be marked as an error (the colored vertical bar becomes blue in this case). It is also possible to hide all those items where the checkbox is checked in the result set by selecting the " />
+            <property role="19SUeA" value=" option can be set on an assessment. Then every result item gets its own checkbox. Checking this checkbox means that &quot;this result item is ok&quot;, i.e., it should not be marked as an error (the colored vertical bar becomes blue in this case). It is also possible to hide all those items where the checkbox is checked in the result set by selecting the " />
           </node>
           <node concept="1jUjqm" id="4KbglN$Kj9I" role="19SJt6">
             <node concept="19SGf9" id="4KbglN$Kj9J" role="$DsGW">
@@ -2593,7 +2593,7 @@
         <node concept="1_0LV8" id="12l$qjdf_gG" role="1_0VJ0">
           <node concept="19SGf9" id="12l$qjdf_gH" role="1_0LWR">
             <node concept="19SUe$" id="12l$qjdf_gI" role="19SJt6">
-              <property role="19SUeA" value="Tags are similar the data objects, but they are \&quot;syntactically smaller\&quot;. Existing tags include the requirements status (you can set it to " />
+              <property role="19SUeA" value="Tags are similar the data objects, but they are &quot;syntactically smaller&quot;. Existing tags include the requirements status (you can set it to " />
             </node>
             <node concept="1jUjqm" id="12l$qjdhLnZ" role="19SJt6">
               <node concept="19SGf9" id="12l$qjdhLo0" role="$DsGW">
@@ -3066,15 +3066,15 @@
             <node concept="19SUe$" id="3PCHQK6f0Sy" role="19SJt6">
               <property role="19SUeA" value=" which requirement, i.e., you want to reverse the direction. You can do this by using the customized " />
             </node>
-            <node concept="1jUjqm" id="3PCHQK6f191" role="19SJt6">
-              <node concept="19SGf9" id="3PCHQK6f192" role="$DsGW">
-                <node concept="19SUe$" id="3PCHQK6f193" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuxfmc" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuxfmf" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuxfmg" role="19SJt6">
                   <property role="19SUeA" value="Find Usages Settings..." />
                 </node>
               </node>
             </node>
             <node concept="19SUe$" id="3PCHQK6f194" role="19SJt6">
-              <property role="19SUeA" value=" conext menu. If you select " />
+              <property role="19SUeA" value=" context menu. If you select " />
             </node>
             <node concept="1jUjqm" id="3PCHQK6fbzm" role="19SJt6">
               <node concept="19SGf9" id="3PCHQK6fbzn" role="$DsGW">
@@ -3499,9 +3499,9 @@
             <node concept="19SUe$" id="4IT6uo3fAN" role="19SJt6">
               <property role="19SUeA" value=", we create a hash of the code structure. This hash is stored in the code review annotation, inside the code. By recalculating the hash and comparing it to the one stored in the code, we can detect whether the code has been changed. However, because of the performance implications, we don't calculate this hash automatically. Instead, you have to use the " />
             </node>
-            <node concept="1jUjqm" id="4IT6uo9gcz" role="19SJt6">
-              <node concept="19SGf9" id="4IT6uo9gc$" role="$DsGW">
-                <node concept="19SUe$" id="4IT6uo9gc_" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuxfHk" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuxfHn" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuxfHo" role="19SJt6">
                   <property role="19SUeA" value="Reevaluate Review" />
                 </node>
               </node>
