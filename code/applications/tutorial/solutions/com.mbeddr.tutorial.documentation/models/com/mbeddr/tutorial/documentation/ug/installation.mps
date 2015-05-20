@@ -6,7 +6,9 @@
     <use id="623c9ff8-1203-4890-b33e-cba29dd6cdc6" name="spellcheck" version="-1" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" />
+  </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -54,14 +56,6 @@
         <property id="6386504476136521408" name="fileName" index="2Sb_kV" />
         <reference id="6386504476136521409" name="path" index="2Sb_kU" />
       </concept>
-      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
-        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
-      </concept>
-      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
-        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
-        <child id="6386504476136472817" name="paths" index="2SbYGa" />
-        <child id="8624890525767800998" name="sizeSpecs" index="3SH5Mq" />
-      </concept>
       <concept id="4220250885135199523" name="com.mbeddr.doc.structure.ToDoWord" flags="ng" index="3d4VFM">
         <child id="4220250885135204208" name="text" index="3d4Uyx" />
       </concept>
@@ -94,12 +88,6 @@
         <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
       </concept>
       <concept id="3350625596579911760" name="com.mbeddr.doc.structure.EmptyDocContent" flags="ng" index="1_1sxE" />
-      <concept id="8624890525767637976" name="com.mbeddr.doc.structure.PageWidthSizeSpec" flags="ng" index="3SGHZ$">
-        <property id="8624890525767637977" name="percentage" index="3SGHZ_" />
-      </concept>
-      <concept id="8624890525767800825" name="com.mbeddr.doc.structure.NamedSizeSpec" flags="ng" index="3SH5f5">
-        <child id="8624890525767800827" name="spec" index="3SH5f7" />
-      </concept>
       <concept id="5378658552262903588" name="com.mbeddr.doc.structure.Item" flags="ng" index="3X6T9g">
         <child id="5378658552262903589" name="text" index="3X6T9h" />
       </concept>
@@ -109,55 +97,20 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
-        <property id="6156524541422553710" name="path" index="3N1Lgt" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
-  <node concept="2SbYGP" id="2ipt67gLxW0">
-    <property role="TrG5h" value="Config" />
-    <property role="3GE5qa" value="config" />
-    <node concept="2SbYGw" id="45LXldJZEw7" role="2SbYGa">
-      <property role="TrG5h" value="images" />
-      <node concept="9PVaO" id="7aNtjNm4Cpc" role="9PVG_">
-        <property role="3N1Lgt" value="images" />
-      </node>
-    </node>
-    <node concept="3SH5f5" id="7uLL3Mf2teF" role="3SH5Mq">
-      <property role="TrG5h" value="width100" />
-      <node concept="3SGHZ$" id="7uLL3Mf2teH" role="3SH5f7">
-        <property role="3SGHZ_" value="100" />
-      </node>
-    </node>
-    <node concept="3SH5f5" id="7uLL3Mf2teJ" role="3SH5Mq">
-      <property role="TrG5h" value="width80" />
-      <node concept="3SGHZ$" id="7uLL3Mf2teK" role="3SH5f7">
-        <property role="3SGHZ_" value="80" />
-      </node>
-    </node>
-    <node concept="2SbYGw" id="5jGyeU5XLXS" role="Cbewh">
-      <property role="TrG5h" value="vis" />
-      <node concept="9PVaO" id="7aNtjNm4Cp9" role="9PVG_">
-        <property role="3N1Lgt" value="_vis" />
-      </node>
-    </node>
-  </node>
   <node concept="1_1swa" id="1mCCOvys5p0">
     <property role="yApLE" value="5" />
     <property role="TrG5h" value="E_MPSAndJava" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="5zu8XJxPfM$" role="1_0VJ0">
       <property role="TrG5h" value="MPS" />
       <property role="1_0VJr" value="JetBrains MPS and Java" />
@@ -478,7 +431,7 @@
   <node concept="1_1swa" id="1mCCOvyiECJ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="A_GccMakeAndGdb" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="5zu8XJxPfMf" role="1_0VJ0">
       <property role="TrG5h" value="GccMakeAndGdb" />
       <property role="1_0VJr" value="Gcc, Make and Gdb" />
@@ -760,7 +713,7 @@
   <node concept="1_1swa" id="1mCCOvyiIY_">
     <property role="yApLE" value="2" />
     <property role="TrG5h" value="B_Graphviz" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="2en8HnCsqc1" role="1_0VJ0">
       <property role="TrG5h" value="Graphviz" />
       <property role="1_0VJr" value="Graphviz" />
@@ -844,7 +797,7 @@
   <node concept="1_1swa" id="1mCCOvys4ZP">
     <property role="yApLE" value="4" />
     <property role="TrG5h" value="D_Mbeddr" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1mCCOvyhqb4" role="1_0VJ0">
       <property role="TrG5h" value="mbeddr" />
       <property role="1_0VJr" value="mbeddr" />
@@ -1717,7 +1670,7 @@
             <property role="1DKIkx" value="true" />
             <node concept="2Sb_l4" id="3DAECxFCHcV" role="2SbwM5">
               <property role="2Sb_kV" value="core/SettingsGlobalLibraries.png" />
-              <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+              <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
             </node>
             <node concept="OjmMv" id="2en8HnCx1zQ" role="2SaI5j">
               <node concept="19SGf9" id="2en8HnCx1zR" role="OjmMu">
@@ -1755,7 +1708,7 @@
   <node concept="1_1swa" id="1mCCOvys41P">
     <property role="yApLE" value="3" />
     <property role="TrG5h" value="C_VerificationTool" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="2en8HnCx1H$" role="1_0VJ0">
       <property role="TrG5h" value="VerificationTools" />
       <property role="1_0VJr" value="Verification Tools" />
@@ -1816,7 +1769,7 @@
   <node concept="1_1swa" id="1OEOMsplgM2">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_Installation" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0j5j" id="45z$aXlRMDH" role="1DXQ57">
       <ref role="1_0j5g" node="1mCCOvyiECJ" resolve="A_GccMakeAndGdb" />
     </node>
@@ -1888,7 +1841,7 @@
   <node concept="1_1swa" id="45z$aXlT6vE">
     <property role="yApLE" value="6" />
     <property role="TrG5h" value="F_ChangingPath" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="45z$aXlT6Js" role="1_0VJ0">
       <property role="TrG5h" value="ChangingPath" />
       <property role="1_0VJr" value="Adding Tools to the System Path" />
@@ -2210,7 +2163,7 @@
   <node concept="1_1swa" id="1LxA8cJZyH7">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="G_ToolsAndVersions" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1LxA8cJZySu" role="1_0VJ0">
       <property role="TrG5h" value="ToolsAndVersions" />
       <property role="1_0VJr" value="Required Tools and Versions" />

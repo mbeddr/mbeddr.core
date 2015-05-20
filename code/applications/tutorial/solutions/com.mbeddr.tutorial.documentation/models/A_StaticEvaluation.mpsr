@@ -2,6 +2,7 @@
 <model ref="r:38897e08-83fd-42c7-91d3-65b102721940(com.mbeddr.tutorial.documentation.ug.cextensions)" content="root">
   <persistence version="9" />
   <imports>
+    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" implicit="true" />
     <import index="zxcx" ref="r:af51c5c3-b54b-4a75-a1e6-409757d1a380(com.mbeddr.tutorial.documentation.code)" implicit="true" />
   </imports>
   <registry>
@@ -75,7 +76,7 @@
   <node concept="1_1swa" id="69uDFDaU6IU">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="A_StaticEvaluation" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="69uDFDaUgOZ" role="1_0VJ0">
       <property role="1_0VJr" value="Static Evaluation" />
       <property role="TrG5h" value="staticEvaluation" />

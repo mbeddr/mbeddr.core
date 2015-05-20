@@ -2,6 +2,7 @@
 <model ref="r:38897e08-83fd-42c7-91d3-65b102721940(com.mbeddr.tutorial.documentation.ug.cextensions)" content="root">
   <persistence version="9" />
   <imports>
+    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" implicit="true" />
     <import index="c4ys" ref="r:4fb22f91-1e13-48a0-a300-21fa004a07ef(com.mbeddr.tutorial.documentation.ug.mbeddrCvsC99)" implicit="true" />
     <import index="cmgk" ref="r:679066bc-2da8-4932-a09c-5d2b3d47b911(com.mbeddr.ext.units.siunits)" implicit="true" />
     <import index="e1tx" ref="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" implicit="true" />
@@ -98,7 +99,7 @@
   <node concept="1_1swa" id="yrKNEnw4lA">
     <property role="TrG5h" value="C_Units" />
     <property role="yApLE" value="5" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="2x0XdsgGh7Z" role="1_0VJ0">
       <property role="TrG5h" value="units" />
       <property role="1_0VJr" value="Units" />

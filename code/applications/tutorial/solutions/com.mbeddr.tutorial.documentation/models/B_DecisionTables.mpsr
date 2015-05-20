@@ -2,6 +2,7 @@
 <model ref="r:38897e08-83fd-42c7-91d3-65b102721940(com.mbeddr.tutorial.documentation.ug.cextensions)" content="root">
   <persistence version="9" />
   <imports>
+    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" implicit="true" />
     <import index="e1tx" ref="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" implicit="true" />
     <import index="us0v" ref="r:22b9d29d-483d-4f08-8d1b-4e6567157caf(com.mbeddr.tutorial.documentation.ug.analyses)" implicit="true" />
   </imports>
@@ -89,7 +90,7 @@
   <node concept="1_1swa" id="6UY8Kx5iuLF">
     <property role="TrG5h" value="B_DecisionTables" />
     <property role="yApLE" value="7" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="2x0XdsgGhzR" role="1_0VJ0">
       <property role="TrG5h" value="decisionTables" />
       <property role="1_0VJr" value="Decision Tables" />
@@ -185,7 +186,7 @@
         <property role="TrG5h" value="dectab" />
         <node concept="2Sb_l4" id="6UY8Kx5iUhy" role="2SbwM5">
           <property role="2Sb_kV" value="tutorial/dectab.png" />
-          <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+          <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
         </node>
         <node concept="OjmMv" id="6UY8Kx5iUgR" role="2SaI5j">
           <node concept="19SGf9" id="6UY8Kx5iUgS" role="OjmMu">

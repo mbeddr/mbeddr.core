@@ -2,6 +2,7 @@
 <model ref="r:38897e08-83fd-42c7-91d3-65b102721940(com.mbeddr.tutorial.documentation.ug.cextensions)" content="root">
   <persistence version="9" />
   <imports>
+    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" implicit="true" />
     <import index="e1tx" ref="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" implicit="true" />
     <import index="v7ag" ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" implicit="true" />
     <import index="mxvz" ref="r:b92c0a08-d42f-4c78-a3f4-d5f989493286(com.mbeddr.ext.components.mock.structure)" implicit="true" />
@@ -128,7 +129,7 @@
   <node concept="1_1swa" id="3D8Uf60N7kD">
     <property role="TrG5h" value="D_Components" />
     <property role="yApLE" value="6" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="2x0XdsgGhcC" role="1_0VJ0">
       <property role="TrG5h" value="components" />
       <property role="1_0VJr" value="Components" />
@@ -344,7 +345,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="3D8Uf611vxr" role="2SbwM5">
             <property role="2Sb_kV" value="tutorial/contractmessage.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="3D8Uf611urq" role="2SaI5j">
             <node concept="19SGf9" id="3D8Uf611urr" role="OjmMu">
@@ -2542,7 +2543,7 @@
           <property role="TrG5h" value="vcomponents" />
           <node concept="2Sb_l4" id="3DAECxFCKzg" role="2SbwM5">
             <property role="2Sb_kV" value="tutorial/v_components.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="1Pi5yleHyqb" role="2SaI5j">
             <node concept="19SGf9" id="1Pi5yleHyqc" role="OjmMu">
@@ -2578,7 +2579,7 @@
           <property role="TrG5h" value="vinstances" />
           <node concept="2Sb_l4" id="1Pi5yleHzO0" role="2SbwM5">
             <property role="2Sb_kV" value="tutorial/v_instances.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="1Pi5yleHzNn" role="2SaI5j">
             <node concept="19SGf9" id="1Pi5yleHzNo" role="OjmMu">
@@ -2724,7 +2725,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="3DAECxFCKza" role="2SbwM5">
             <property role="2Sb_kV" value="tutorial/verificationOK.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="6UY8Kx5hnzP" role="2SaI5j">
             <node concept="19SGf9" id="6UY8Kx5hnzQ" role="OjmMu">
@@ -2795,7 +2796,7 @@
           <property role="TrG5h" value="verificationNotOK" />
           <node concept="2Sb_l4" id="3DAECxFCKzd" role="2SbwM5">
             <property role="2Sb_kV" value="tutorial/verificationNotOK.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="6UY8Kx5hvS0" role="2SaI5j">
             <node concept="19SGf9" id="6UY8Kx5hvS1" role="OjmMu">

@@ -2,6 +2,7 @@
 <model ref="r:38897e08-83fd-42c7-91d3-65b102721940(com.mbeddr.tutorial.documentation.ug.cextensions)" content="root">
   <persistence version="9" />
   <imports>
+    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="e1tx" ref="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" implicit="true" />
     <import index="clqz" ref="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" implicit="true" />
@@ -116,7 +117,7 @@
   <node concept="1_1swa" id="300OR6GmKCv">
     <property role="TrG5h" value="E_StateMachines" />
     <property role="yApLE" value="9" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="Wq1Bs" id="5lWB_7x$8ez" role="Wq1Bf">
       <property role="Wq1Bt" value="Tamas Szabo" />
       <property role="Wq1Bq" value="tamas.szabo@itemis.de" />
@@ -1713,7 +1714,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="4I$rsvbfgEs" role="2SbwM5">
             <property role="2Sb_kV" value="smtable.png" />
-            <ref role="2Sb_kU" node="4I$rsvbf6Gh" resolve="smimages" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4F" resolve="smimages" />
           </node>
           <node concept="OjmMv" id="4I$rsvbfgEd" role="2SaI5j">
             <node concept="19SGf9" id="4I$rsvbfgEe" role="OjmMu">
@@ -1776,7 +1777,7 @@
           <property role="1DKIkx" value="true" />
           <node concept="2Sb_l4" id="300OR6GqnZS" role="2SbwM5">
             <property role="2Sb_kV" value="tutorial/v_sm.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="300OR6GqmqT" role="2SaI5j">
             <node concept="19SGf9" id="300OR6GqmqU" role="OjmMu">

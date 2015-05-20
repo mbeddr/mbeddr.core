@@ -12,6 +12,7 @@
     <import index="bmc6" ref="r:4ac377c2-0a54-4908-ae24-f86f1bad7e73(com.mbeddr.tutorial.documentation.ug.fundamentals)" />
     <import index="vi23" ref="r:9b94efb1-dbce-417f-b1ad-19c6a396d423(com.mbeddr.tutorial.documentation.ug.processSupport)" />
     <import index="4kwm" ref="r:5ff4e1a0-ec5b-4e83-a849-9e8c2c4adf79(com.mbeddr.tutorial.documentation.ug.ctooling)" />
+    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -58,14 +59,6 @@
         <property id="6386504476136521408" name="fileName" index="2Sb_kV" />
         <reference id="6386504476136521409" name="path" index="2Sb_kU" />
       </concept>
-      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
-        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
-      </concept>
-      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
-        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
-        <child id="6386504476136472817" name="paths" index="2SbYGa" />
-        <child id="8624890525767800998" name="sizeSpecs" index="3SH5Mq" />
-      </concept>
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
       <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
       <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
@@ -111,12 +104,6 @@
       <concept id="8624890525767650652" name="com.mbeddr.doc.structure.InheritSizeSpec" flags="ng" index="3SGC_w">
         <reference id="8624890525767800818" name="base" index="3SH5fe" />
       </concept>
-      <concept id="8624890525767637976" name="com.mbeddr.doc.structure.PageWidthSizeSpec" flags="ng" index="3SGHZ$">
-        <property id="8624890525767637977" name="percentage" index="3SGHZ_" />
-      </concept>
-      <concept id="8624890525767800825" name="com.mbeddr.doc.structure.NamedSizeSpec" flags="ng" index="3SH5f5">
-        <child id="8624890525767800827" name="spec" index="3SH5f7" />
-      </concept>
       <concept id="5378658552262903588" name="com.mbeddr.doc.structure.Item" flags="ng" index="3X6T9g">
         <child id="5378658552262903589" name="text" index="3X6T9h" />
       </concept>
@@ -125,55 +112,20 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
-        <property id="6156524541422553710" name="path" index="3N1Lgt" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
-  <node concept="2SbYGP" id="2ipt67gLxW0">
-    <property role="TrG5h" value="Config" />
-    <property role="3GE5qa" value="config" />
-    <node concept="2SbYGw" id="45LXldJZEw7" role="2SbYGa">
-      <property role="TrG5h" value="images" />
-      <node concept="9PVaO" id="7aNtjNm4Cpc" role="9PVG_">
-        <property role="3N1Lgt" value="images" />
-      </node>
-    </node>
-    <node concept="3SH5f5" id="7uLL3Mf2teF" role="3SH5Mq">
-      <property role="TrG5h" value="width100" />
-      <node concept="3SGHZ$" id="7uLL3Mf2teH" role="3SH5f7">
-        <property role="3SGHZ_" value="100" />
-      </node>
-    </node>
-    <node concept="3SH5f5" id="7uLL3Mf2teJ" role="3SH5Mq">
-      <property role="TrG5h" value="width80" />
-      <node concept="3SGHZ$" id="7uLL3Mf2teK" role="3SH5f7">
-        <property role="3SGHZ_" value="80" />
-      </node>
-    </node>
-    <node concept="2SbYGw" id="5jGyeU5XLXS" role="Cbewh">
-      <property role="TrG5h" value="vis" />
-      <node concept="9PVaO" id="7aNtjNm4Cp9" role="9PVG_">
-        <property role="3N1Lgt" value="_vis" />
-      </node>
-    </node>
-  </node>
   <node concept="1_1swa" id="4rG3bBO0MpA">
     <property role="TrG5h" value="B_FunctionPointers" />
     <property role="yApLE" value="3" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="4IT6uoQrns" role="1_0VJ0">
       <property role="TrG5h" value="functionPointers" />
       <property role="1_0VJr" value="Function Pointers" />
@@ -624,7 +576,7 @@
   <node concept="1_1swa" id="6TOzdCDFUA5">
     <property role="TrG5h" value="A_c99VsMbeddr" />
     <property role="yApLE" value="2" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0j5j" id="48PTy$RupZW" role="1DXQ57">
       <ref role="1_0j5g" to="us0v:7OKLwZ_7fp5" resolve="C_FormalVerification" />
     </node>
@@ -1326,7 +1278,7 @@
           <property role="TrG5h" value="tsc" />
           <node concept="2Sb_l4" id="37qjepT$2Qs" role="2SbwM5">
             <property role="2Sb_kV" value="c99vsmbeddr/typesizeconfig.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="37qjepT$2P$" role="2SaI5j">
             <node concept="19SGf9" id="37qjepT$2P_" role="OjmMu">
@@ -1683,7 +1635,7 @@
         <property role="TrG5h" value="asserts" />
         <node concept="2Sb_l4" id="2ncjLWki9JI" role="2SbwM5">
           <property role="2Sb_kV" value="tutorial/testing/asserts.png" />
-          <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+          <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
         </node>
         <node concept="OjmMv" id="2ncjLWki9JJ" role="2SaI5j">
           <node concept="19SGf9" id="2ncjLWki9JK" role="OjmMu">
@@ -1703,7 +1655,7 @@
           </node>
         </node>
         <node concept="3SGC_w" id="2ncjLWksDqg" role="3SHJ_F">
-          <ref role="3SH5fe" node="7uLL3Mf2teJ" resolve="width80" />
+          <ref role="3SH5fe" to="1842:2fBMM_3XZ4P" resolve="width80" />
         </node>
       </node>
       <node concept="1_0LV8" id="2ncjLWki9JR" role="1_0VJ0">
@@ -1912,7 +1864,7 @@
   <node concept="1_1swa" id="1OEOMspli$k">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_mbeddrCvsC99" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="1OEOMsplmw2" role="1_0VJ0">
       <property role="TrG5h" value="mbeddrCVsC99" />
       <property role="1_0VJr" value="mbeddr C vs. C99" />
@@ -1952,7 +1904,7 @@
   <node concept="1_1swa" id="4IT6unrukQ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="C_Commenting" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="4IT6unrwrw" role="1_0VJ0">
       <property role="TrG5h" value="commenting" />
       <property role="1_0VJr" value="Commenting" />
