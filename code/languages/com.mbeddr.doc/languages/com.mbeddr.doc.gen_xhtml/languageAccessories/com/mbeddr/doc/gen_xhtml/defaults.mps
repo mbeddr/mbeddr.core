@@ -116,6 +116,10 @@
         <property role="3zO_yR" value="overflow" />
         <property role="3zO_ya" value="auto" />
       </node>
+      <node concept="3zO__7" id="2fBMM_3UXBI" role="3zO_yy">
+        <property role="3zO_yR" value="margin" />
+        <property role="3zO_ya" value="1em 0" />
+      </node>
       <node concept="3zO__Y" id="2fBMM_3xpss" role="3zO_yJ">
         <property role="3zO_yB" value=".codeblockContainer" />
       </node>
@@ -152,8 +156,8 @@
         <property role="3zO_ya" value="inline-block" />
       </node>
       <node concept="3zO__7" id="2fBMM_3BJq6" role="3zO_yy">
-        <property role="3zO_yR" value="padding" />
-        <property role="3zO_ya" value=".5em" />
+        <property role="3zO_yR" value="padding-left" />
+        <property role="3zO_ya" value=".1em" />
       </node>
       <node concept="3zO__Y" id="2fBMM_3xpx6" role="3zO_yJ">
         <property role="3zO_yB" value=".originalNode::before" />
@@ -186,6 +190,10 @@
       </node>
     </node>
     <node concept="3zOSV2" id="QRmqzIt3am" role="3zO_yG">
+      <node concept="3zO__7" id="2fBMM_3UZo2" role="3zO_yy">
+        <property role="3zO_yR" value="margin" />
+        <property role="3zO_ya" value="1em 0" />
+      </node>
       <node concept="3zO__Y" id="QRmqzIt3aF" role="3zO_yJ">
         <property role="3zO_yB" value=".imagecontainer" />
       </node>
