@@ -11,6 +11,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -27,9 +28,15 @@
     <import index="xmkr" ref="r:bce11d92-6b70-464d-8d15-a91ee9ecc04a(com.mbeddr.doc.meta.behavior)" />
     <import index="v2t1" ref="f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons.lang3@java_stub)" />
     <import index="jobd" ref="r:a38f0e6e-eb07-4712-927b-30c9e021556c(com.mbeddr.doc.gen_xhtml.plugin)" />
+    <import index="i8bi" ref="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
+    <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
+    <import index="59et" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.vfs(MPS.Core/jetbrains.mps.vfs@java_stub)" />
+    <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="p73q" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.io(org.apache.commons/org.apache.commons.io@java_stub)" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="3t5i" ref="r:717da79d-5632-4537-9680-813308745bcf(com.mbeddr.doc.gen_xhtml.defaults)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
@@ -56,8 +63,16 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
+        <child id="1164879758292" name="body" index="SfCbr" />
+        <child id="1164903496223" name="catchClause" index="TEbGg" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
+        <child id="1164903359218" name="catchBody" index="TDEfX" />
+        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -68,8 +83,12 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
+        <child id="1164991057263" name="throwable" index="YScLw" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -127,6 +146,10 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -267,6 +290,7 @@
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
+      <concept id="1217026863835" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalInputModel" flags="nn" index="1st3f0" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -279,6 +303,7 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -370,6 +395,9 @@
   </registry>
   <node concept="bUwia" id="2TZO3DbvUtD">
     <property role="TrG5h" value="main" />
+    <node concept="1puMqW" id="5pyBnOIlHba" role="1puA0r">
+      <ref role="1puQsG" node="5pyBnOIltDN" resolve="copyImagesToOutput" />
+    </node>
     <node concept="1puMqW" id="5yxqZJwzYWv" role="1puA0r">
       <ref role="1puQsG" node="5yxqZJwzYOv" resolve="storeExportInDocument" />
     </node>
@@ -4625,6 +4653,266 @@
                 <node concept="Rh6nW" id="QRmqzL5z84" role="1bW2Oz">
                   <property role="TrG5h" value="it" />
                   <node concept="2jxLKc" id="QRmqzL5z85" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1pmfR0" id="5pyBnOIltDN">
+    <property role="TrG5h" value="copyImagesToOutput" />
+    <property role="1v3f2W" value="pre_processing" />
+    <node concept="1pplIY" id="5pyBnOIltDO" role="1pqMTA">
+      <node concept="3clFbS" id="5pyBnOIltDP" role="2VODD2">
+        <node concept="3cpWs8" id="5pyBnOIvOJ1" role="3cqZAp">
+          <node concept="3cpWsn" id="5pyBnOIvOJ2" role="3cpWs9">
+            <property role="TrG5h" value="orgModel" />
+            <node concept="H_c77" id="5pyBnOIvOJ0" role="1tU5fm" />
+            <node concept="2OqwBi" id="5pyBnOIvOJ3" role="33vP2m">
+              <node concept="1iwH7S" id="5pyBnOIvOJ4" role="2Oq$k0" />
+              <node concept="1st3f0" id="5pyBnOIvOJ5" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5pyBnOIlG4Z" role="3cqZAp">
+          <node concept="3cpWsn" id="5pyBnOIlG50" role="3cpWs9">
+            <property role="TrG5h" value="outputRoot" />
+            <node concept="17QB3L" id="5pyBnOIvP8h" role="1tU5fm" />
+            <node concept="2YIFZM" id="5pyBnOIvP52" role="33vP2m">
+              <ref role="37wK5l" to="vsqj:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel):java.lang.String" resolve="getOutputPathFor" />
+              <ref role="1Pybhc" to="vsqj:~SModuleOperations" resolve="SModuleOperations" />
+              <node concept="37vLTw" id="5pyBnOIvP53" role="37wK5m">
+                <ref role="3cqZAo" node="5pyBnOIvOJ2" resolve="orgModel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5pyBnOIuahJ" role="3cqZAp">
+          <node concept="3cpWsn" id="5pyBnOIuahK" role="3cpWs9">
+            <property role="TrG5h" value="modelName" />
+            <node concept="17QB3L" id="5pyBnOIvOIf" role="1tU5fm" />
+            <node concept="2OqwBi" id="5pyBnOIuahL" role="33vP2m">
+              <node concept="2JrnkZ" id="5pyBnOIuahM" role="2Oq$k0">
+                <node concept="37vLTw" id="5pyBnOIvOJ6" role="2JrQYb">
+                  <ref role="3cqZAo" node="5pyBnOIvOJ2" resolve="orgModel" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5pyBnOIuahQ" role="2OqNvi">
+                <ref role="37wK5l" to="ec5l:~SModel.getModelName():java.lang.String" resolve="getModelName" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5pyBnOIxvxl" role="3cqZAp">
+          <node concept="3cpWsn" id="5pyBnOIxvxo" role="3cpWs9">
+            <property role="TrG5h" value="outputBase" />
+            <node concept="17QB3L" id="5pyBnOIxvxj" role="1tU5fm" />
+            <node concept="3cpWs3" id="5pyBnOIxvNQ" role="33vP2m">
+              <node concept="2YIFZM" id="5pyBnOIxw8n" role="3uHU7w">
+                <ref role="37wK5l" to="v2t1:~StringUtils.replace(java.lang.String,java.lang.String,java.lang.String):java.lang.String" resolve="replace" />
+                <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
+                <node concept="37vLTw" id="5pyBnOIxwbl" role="37wK5m">
+                  <ref role="3cqZAo" node="5pyBnOIuahK" resolve="modelName" />
+                </node>
+                <node concept="Xl_RD" id="5pyBnOIxwhz" role="37wK5m">
+                  <property role="Xl_RC" value="." />
+                </node>
+                <node concept="Xl_RD" id="5pyBnOIxwr8" role="37wK5m">
+                  <property role="Xl_RC" value="/" />
+                </node>
+              </node>
+              <node concept="3cpWs3" id="5pyBnOIxvCW" role="3uHU7B">
+                <node concept="37vLTw" id="5pyBnOIxvzj" role="3uHU7B">
+                  <ref role="3cqZAo" node="5pyBnOIlG50" resolve="outputRoot" />
+                </node>
+                <node concept="Xl_RD" id="5pyBnOIxvCZ" role="3uHU7w">
+                  <property role="Xl_RC" value="/" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5pyBnOIASLK" role="3cqZAp">
+          <node concept="3cpWsn" id="5pyBnOIASLL" role="3cpWs9">
+            <property role="TrG5h" value="outputBaseFile" />
+            <property role="3TUv4t" value="true" />
+            <node concept="3uibUv" id="5pyBnOIASLM" role="1tU5fm">
+              <ref role="3uigEE" to="fxg7:~File" resolve="File" />
+            </node>
+            <node concept="2ShNRf" id="5pyBnOIAT2X" role="33vP2m">
+              <node concept="1pGfFk" id="5pyBnOIAVbR" role="2ShVmc">
+                <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="37vLTw" id="5pyBnOIAVc7" role="37wK5m">
+                  <ref role="3cqZAo" node="5pyBnOIxvxo" resolve="outputBase" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5pyBnOIzbnb" role="3cqZAp">
+          <node concept="2OqwBi" id="5pyBnOIzcKU" role="3clFbG">
+            <node concept="2OqwBi" id="5pyBnOIzbsw" role="2Oq$k0">
+              <node concept="1Q6Npb" id="5pyBnOIzbn9" role="2Oq$k0" />
+              <node concept="2SmgA7" id="5pyBnOIzbzG" role="2OqNvi">
+                <ref role="2SmgA8" to="2c95:5yxqZJwyOSj" resolve="ImageParagraph" />
+              </node>
+            </node>
+            <node concept="2es0OD" id="5pyBnOIzmfP" role="2OqNvi">
+              <node concept="1bVj0M" id="5pyBnOIzmfR" role="23t8la">
+                <node concept="3clFbS" id="5pyBnOIzmfS" role="1bW5cS">
+                  <node concept="3cpWs8" id="5pyBnOIzoe2" role="3cqZAp">
+                    <node concept="3cpWsn" id="5pyBnOIzoe3" role="3cpWs9">
+                      <property role="TrG5h" value="doc" />
+                      <node concept="3Tqbb2" id="5pyBnOIzoe4" role="1tU5fm">
+                        <ref role="ehGHo" to="2c95:2TZO3DbuxwK" resolve="Document" />
+                      </node>
+                      <node concept="2OqwBi" id="5pyBnOIzoe5" role="33vP2m">
+                        <node concept="37vLTw" id="5pyBnOIzoCX" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5pyBnOIzmfT" resolve="imgParagraph" />
+                        </node>
+                        <node concept="2Xjw5R" id="5pyBnOIzoe7" role="2OqNvi">
+                          <node concept="1xMEDy" id="5pyBnOIzoe8" role="1xVPHs">
+                            <node concept="chp4Y" id="5pyBnOIzoe9" role="ri$Ld">
+                              <ref role="cht4Q" to="2c95:2TZO3DbuxwK" resolve="Document" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3cpWs8" id="5pyBnOIzoQk" role="3cqZAp">
+                    <node concept="3cpWsn" id="5pyBnOIzoQl" role="3cpWs9">
+                      <property role="TrG5h" value="mappedResourceFilename" />
+                      <node concept="17QB3L" id="5pyBnOIzoQd" role="1tU5fm" />
+                      <node concept="2OqwBi" id="5pyBnOIzoQm" role="33vP2m">
+                        <node concept="37vLTw" id="5pyBnOIzoQn" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5pyBnOIzoe3" resolve="doc" />
+                        </node>
+                        <node concept="2qgKlT" id="5pyBnOIzoQo" role="2OqNvi">
+                          <ref role="37wK5l" to="4gky:3RseghIcx1t" resolve="getMappedResourceFilename" />
+                          <node concept="2OqwBi" id="5pyBnOIzoQp" role="37wK5m">
+                            <node concept="37vLTw" id="5pyBnOIzoQq" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5pyBnOIzmfT" resolve="imgParagraph" />
+                            </node>
+                            <node concept="3TrEf2" id="5pyBnOIzoQr" role="2OqNvi">
+                              <ref role="3Tt5mk" to="2c95:5yxqZJwzQtY" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3cpWs8" id="5pyBnOI_6pQ" role="3cqZAp">
+                    <node concept="3cpWsn" id="5pyBnOI_6pR" role="3cpWs9">
+                      <property role="TrG5h" value="editTimeFileName" />
+                      <node concept="17QB3L" id="5pyBnOI_6pI" role="1tU5fm" />
+                      <node concept="2OqwBi" id="5pyBnOI_6pS" role="33vP2m">
+                        <node concept="2OqwBi" id="5pyBnOI_6pT" role="2Oq$k0">
+                          <node concept="37vLTw" id="5pyBnOI_6pU" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5pyBnOIzmfT" resolve="imgParagraph" />
+                          </node>
+                          <node concept="3TrEf2" id="5pyBnOI_6pV" role="2OqNvi">
+                            <ref role="3Tt5mk" to="2c95:5yxqZJwzQtY" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="5pyBnOI_6pW" role="2OqNvi">
+                          <ref role="37wK5l" to="4gky:5yxqZJwzQzV" resolve="getEditTimeFileName" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3cpWs8" id="5pyBnOIAVu2" role="3cqZAp">
+                    <node concept="3cpWsn" id="5pyBnOIAVu3" role="3cpWs9">
+                      <property role="TrG5h" value="editTimeFile" />
+                      <node concept="3uibUv" id="5pyBnOIAVu4" role="1tU5fm">
+                        <ref role="3uigEE" to="fxg7:~File" resolve="File" />
+                      </node>
+                      <node concept="2ShNRf" id="5pyBnOIAVI2" role="33vP2m">
+                        <node concept="1pGfFk" id="5pyBnOIB0UZ" role="2ShVmc">
+                          <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                          <node concept="37vLTw" id="5pyBnOIB12H" role="37wK5m">
+                            <ref role="3cqZAo" node="5pyBnOI_6pR" resolve="editTimeFileName" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3cpWs8" id="5pyBnOIB1nS" role="3cqZAp">
+                    <node concept="3cpWsn" id="5pyBnOIB1nT" role="3cpWs9">
+                      <property role="TrG5h" value="mappedResourceFile" />
+                      <node concept="3uibUv" id="5pyBnOIB1nU" role="1tU5fm">
+                        <ref role="3uigEE" to="fxg7:~File" resolve="File" />
+                      </node>
+                      <node concept="2ShNRf" id="5pyBnOIB22R" role="33vP2m">
+                        <node concept="1pGfFk" id="5pyBnOIB2sN" role="2ShVmc">
+                          <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.io.File,java.lang.String)" resolve="File" />
+                          <node concept="37vLTw" id="5pyBnOIB36s" role="37wK5m">
+                            <ref role="3cqZAo" node="5pyBnOIASLL" resolve="outputBaseFile" />
+                          </node>
+                          <node concept="37vLTw" id="5pyBnOIB3yH" role="37wK5m">
+                            <ref role="3cqZAo" node="5pyBnOIzoQl" resolve="mappedResourceFilename" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbJ" id="5pyBnOICamj" role="3cqZAp">
+                    <node concept="3clFbS" id="5pyBnOICaml" role="3clFbx">
+                      <node concept="SfApY" id="5pyBnOIB4gQ" role="3cqZAp">
+                        <node concept="3clFbS" id="5pyBnOIB4gV" role="SfCbr">
+                          <node concept="3clFbF" id="5pyBnOIAO5v" role="3cqZAp">
+                            <node concept="2YIFZM" id="5pyBnOIARKD" role="3clFbG">
+                              <ref role="37wK5l" to="p73q:~FileUtils.copyFile(java.io.File,java.io.File):void" resolve="copyFile" />
+                              <ref role="1Pybhc" to="p73q:~FileUtils" resolve="FileUtils" />
+                              <node concept="37vLTw" id="5pyBnOIB3Fb" role="37wK5m">
+                                <ref role="3cqZAo" node="5pyBnOIAVu3" resolve="editTimeFile" />
+                              </node>
+                              <node concept="37vLTw" id="5pyBnOIB3QM" role="37wK5m">
+                                <ref role="3cqZAo" node="5pyBnOIB1nT" resolve="mappedResourceFile" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="TDmWw" id="5pyBnOIB4gX" role="TEbGg">
+                          <node concept="3clFbS" id="5pyBnOIB4h0" role="TDEfX">
+                            <node concept="YS8fn" id="5pyBnOIB4rH" role="3cqZAp">
+                              <node concept="2ShNRf" id="5pyBnOIB4$b" role="YScLw">
+                                <node concept="1pGfFk" id="5pyBnOIB4Yx" role="2ShVmc">
+                                  <ref role="37wK5l" to="e2lb:~RuntimeException.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="RuntimeException" />
+                                  <node concept="Xl_RD" id="5pyBnOIB5af" role="37wK5m">
+                                    <property role="Xl_RC" value="exception while copying images" />
+                                  </node>
+                                  <node concept="37vLTw" id="5pyBnOIB6cH" role="37wK5m">
+                                    <ref role="3cqZAo" node="5pyBnOIB4h1" resolve="e" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3cpWsn" id="5pyBnOIB4h1" role="TDEfY">
+                            <property role="TrG5h" value="e" />
+                            <node concept="3uibUv" id="5pyBnOIB4gW" role="1tU5fm">
+                              <ref role="3uigEE" to="fxg7:~IOException" resolve="IOException" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="5pyBnOICaG3" role="3clFbw">
+                      <node concept="37vLTw" id="5pyBnOICax6" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5pyBnOIAVu3" resolve="editTimeFile" />
+                      </node>
+                      <node concept="liA8E" id="5pyBnOICb_m" role="2OqNvi">
+                        <ref role="37wK5l" to="fxg7:~File.exists():boolean" resolve="exists" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="5pyBnOIzmfT" role="1bW2Oz">
+                  <property role="TrG5h" value="imgParagraph" />
+                  <node concept="2jxLKc" id="5pyBnOIzmfU" role="1tU5fm" />
                 </node>
               </node>
             </node>
