@@ -267,42 +267,42 @@
     <property role="TrG5h" value="UserGuideExport" />
     <property role="WqcPg" value="mbeddr User Guide" />
     <node concept="2SbEIf" id="Gd6QB8f5P3" role="30Gjbg">
-      <property role="2SbEId" value="_images/vis" />
+      <property role="2SbEId" value="images/vis" />
       <ref role="2SbEIe" to="1842:2fBMM_3XZ4R" resolve="vis" />
     </node>
     <node concept="2SbEIf" id="Gd6QB8f5OX" role="30Gjbg">
-      <property role="2SbEId" value="_images" />
+      <property role="2SbEId" value="images" />
       <ref role="2SbEIe" to="1842:2fBMM_3XZ4D" resolve="images" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3vY" role="30Gjbg">
-      <property role="2SbEId" value="_images/concept" />
+      <property role="2SbEId" value="images/concept" />
       <ref role="2SbEIe" to="1842:2fBMM_3XZ4H" resolve="conceptImages" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3wf" role="30Gjbg">
-      <property role="2SbEId" value="_images/fundamental" />
+      <property role="2SbEId" value="images/fundamental" />
       <ref role="2SbEIe" to="1842:2fBMM_3XZ4L" resolve="fundamentalImages" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3w$" role="30Gjbg">
-      <property role="2SbEId" value="_images/hw" />
+      <property role="2SbEId" value="images/hw" />
       <ref role="2SbEIe" to="1842:2fBMM_3XZ4J" resolve="hwimages" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3wX" role="30Gjbg">
-      <property role="2SbEId" value="_images/processSupport" />
+      <property role="2SbEId" value="images/processSupport" />
       <ref role="2SbEIe" to="1842:45LXldJZEw7" resolve="imagesProcessSupport" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3xq" role="30Gjbg">
-      <property role="2SbEId" value="_images/sm" />
+      <property role="2SbEId" value="images/sm" />
       <ref role="2SbEIe" to="1842:2fBMM_3XZ4F" resolve="smimages" />
     </node>
     <node concept="1_0j5j" id="Gd6QB8f5OP" role="30Gjbj">
       <ref role="1_0j5g" node="hZfTLLg0H0" resolve="mbeddrUserGuide" />
     </node>
-    <node concept="1_07dB" id="Gd6QB8irkt" role="30GjaH" />
-    <node concept="1jVoCB" id="Gd6QB8irku" role="30Gjbi">
+    <node concept="1jVoCB" id="6jiGbW$Fqop" role="30GjaH">
       <property role="1jVoCx" value="article" />
       <property role="1xA$Bs" value="true" />
       <property role="43dxY" value="/Users/nikostotz/git/mbeddr.core/code/languages/com.mbeddr.doc/latex-support/mbeddr-prolog.ltx" />
     </node>
+    <node concept="1_07dB" id="6jiGbW$Fqoq" role="30Gjbi" />
   </node>
 </model>
 
