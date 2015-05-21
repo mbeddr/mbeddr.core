@@ -3306,25 +3306,31 @@
     <node concept="3aamgX" id="6jiGbW$O$Zf" role="3acgRq">
       <ref role="30HIoZ" to="2c95:3EhlX7RwIOz" resolve="ToDoWord" />
       <node concept="gft3U" id="6jiGbW$O$Zg" role="1lVwrX">
-        <node concept="1jVxON" id="6jiGbW$O$Zh" role="gfFT$">
-          <node concept="1jVtKS" id="6jiGbW$O$Zi" role="1jVxOX">
-            <property role="1jVtKT" value="ToDo: " />
-          </node>
-          <node concept="1jVtKS" id="6jiGbW$PKaD" role="1jVxOX">
-            <property role="1jVtKT" value="text" />
-            <node concept="29HgVG" id="6jiGbW$PKaE" role="lGtFl">
-              <node concept="3NFfHV" id="6jiGbW$PKaF" role="3NFExx">
-                <node concept="3clFbS" id="6jiGbW$PKaG" role="2VODD2">
-                  <node concept="3clFbF" id="6jiGbW$PVWU" role="3cqZAp">
-                    <node concept="2OqwBi" id="6jiGbW$PVZI" role="3clFbG">
-                      <node concept="30H73N" id="6jiGbW$PVWM" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="6jiGbW$PWdm" role="2OqNvi">
-                        <ref role="3Tt5mk" to="2c95:3EhlX7RwJXK" />
+        <node concept="1jVtPD" id="3mn43GO_qqR" role="gfFT$">
+          <property role="1jVtPF" value="todo" />
+          <node concept="1jVxON" id="3mn43GOA_qh" role="1jVtPZ">
+            <node concept="1jVtKS" id="3mn43GOA_qn" role="1jVxOX">
+              <property role="1jVtKT" value="[ToDo: " />
+            </node>
+            <node concept="1jVtKS" id="3mn43GOA_qw" role="1jVxOX">
+              <property role="1jVtKT" value="text" />
+              <node concept="29HgVG" id="3mn43GOA_qB" role="lGtFl">
+                <node concept="3NFfHV" id="3mn43GOA_qC" role="3NFExx">
+                  <node concept="3clFbS" id="3mn43GOA_qD" role="2VODD2">
+                    <node concept="3clFbF" id="3mn43GOA_qJ" role="3cqZAp">
+                      <node concept="2OqwBi" id="3mn43GOA_qE" role="3clFbG">
+                        <node concept="3TrEf2" id="3mn43GOA_qH" role="2OqNvi">
+                          <ref role="3Tt5mk" to="2c95:3EhlX7RwJXK" />
+                        </node>
+                        <node concept="30H73N" id="3mn43GOA_qI" role="2Oq$k0" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
+            </node>
+            <node concept="1jVtKS" id="3mn43GOBGpy" role="1jVxOX">
+              <property role="1jVtKT" value="]" />
             </node>
           </node>
         </node>
