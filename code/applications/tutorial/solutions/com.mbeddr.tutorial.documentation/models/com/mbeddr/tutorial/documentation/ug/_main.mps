@@ -78,7 +78,6 @@
     </language>
     <language id="f44f6b9a-bf30-4f73-866e-fac17c177409" name="com.mbeddr.doc.gen_latex">
       <concept id="4457500422381351715" name="com.mbeddr.doc.gen_latex.structure.LatexRenderer" flags="ng" index="1jVoCB">
-        <property id="4755612053022149513" name="prolog" index="43dxY" />
         <property id="4457500422381351717" name="documentClass" index="1jVoCx" />
         <property id="5185579450379315413" name="hasTOC" index="1xA$Bs" />
       </concept>
@@ -297,11 +296,10 @@
     <node concept="1_0j5j" id="Gd6QB8f5OP" role="30Gjbj">
       <ref role="1_0j5g" node="hZfTLLg0H0" resolve="mbeddrUserGuide" />
     </node>
-    <node concept="1_07dB" id="3mn43GOp5tY" role="30GjaH" />
-    <node concept="1jVoCB" id="3mn43GOp5tZ" role="30Gjbi">
+    <node concept="1_07dB" id="3mn43GOHYLN" role="30GjaH" />
+    <node concept="1jVoCB" id="3mn43GOHYLO" role="30Gjbi">
       <property role="1jVoCx" value="report" />
       <property role="1xA$Bs" value="true" />
-      <property role="43dxY" value="/Users/nikostotz/git/mbeddr.core/code/languages/com.mbeddr.doc/latex-support/mbeddr-prolog.ltx" />
     </node>
   </node>
 </model>

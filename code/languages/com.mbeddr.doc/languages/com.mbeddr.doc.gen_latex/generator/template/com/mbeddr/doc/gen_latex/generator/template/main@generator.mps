@@ -23,6 +23,9 @@
     <import index="abz6" ref="r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess.plugin)" />
     <import index="cu2c" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
     <import index="xmkr" ref="r:bce11d92-6b70-464d-8d15-a91ee9ecc04a(com.mbeddr.doc.meta.behavior)" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
+    <import index="59et" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.vfs(MPS.Core/jetbrains.mps.vfs@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
@@ -63,6 +66,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -74,6 +80,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -112,6 +119,10 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -239,11 +250,18 @@
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
+      <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
+        <reference id="1171323947160" name="concept" index="2SmgA8" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="4040588429969021681" name="jetbrains.mps.lang.smodel.structure.ModuleReferenceExpression" flags="nn" index="3rM5sP">
+        <property id="4040588429969021683" name="moduleId" index="3rM5sR" />
+      </concept>
+      <concept id="4040588429969069898" name="jetbrains.mps.lang.smodel.structure.LanguageReferenceExpression" flags="nn" index="3rNLEe" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -335,6 +353,7 @@
       <concept id="1171391069720" name="jetbrains.mps.baseLanguage.collections.structure.GetIndexOfOperation" flags="nn" index="2WmjW8" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
+      <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
       <concept id="1522217801069396578" name="jetbrains.mps.baseLanguage.collections.structure.FoldLeftOperation" flags="nn" index="1MD8d$">
@@ -429,6 +448,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1puMqW" id="3mn43GOEypA" role="1puA0r">
+      <ref role="1puQsG" node="3mn43GOCWP4" resolve="addDefaultProlog" />
     </node>
     <node concept="1puMqW" id="3RseghIcx1o" role="1puA0r">
       <ref role="1puQsG" node="5yxqZJwzYOv" resolve="storeExportInDocument" />
@@ -3504,6 +3526,148 @@
             <ref role="37wK5l" to="81x8:6jiGbW$MP8P" resolve="isApplicable" />
             <ref role="1Pybhc" to="81x8:6jiGbW$MOGN" resolve="GeneratorHelper" />
             <node concept="1iwH7S" id="6jiGbW$Nc5H" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1pmfR0" id="3mn43GOCWP4">
+    <property role="TrG5h" value="addDefaultProlog" />
+    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3jST" value="true" />
+    <node concept="1pplIY" id="3mn43GOCWP5" role="1pqMTA">
+      <node concept="3clFbS" id="3mn43GOCWP6" role="2VODD2">
+        <node concept="3cpWs8" id="3mn43GOEuM3" role="3cqZAp">
+          <node concept="3cpWsn" id="3mn43GOEuM4" role="3cpWs9">
+            <property role="TrG5h" value="defaultPrologFile" />
+            <node concept="3uibUv" id="3mn43GOEuLU" role="1tU5fm">
+              <ref role="3uigEE" to="fxg7:~File" resolve="File" />
+            </node>
+            <node concept="2ShNRf" id="3mn43GOEuM5" role="33vP2m">
+              <node concept="1pGfFk" id="3mn43GOEuM6" role="2ShVmc">
+                <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.io.File,java.lang.String)" resolve="File" />
+                <node concept="2ShNRf" id="3mn43GOEuM7" role="37wK5m">
+                  <node concept="1pGfFk" id="3mn43GOEuM8" role="2ShVmc">
+                    <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="File" />
+                    <node concept="2OqwBi" id="3mn43GOEuM9" role="37wK5m">
+                      <node concept="2OqwBi" id="3mn43GOEuMa" role="2Oq$k0">
+                        <node concept="3rNLEe" id="3mn43GOEuMb" role="2Oq$k0">
+                          <property role="3rM5sR" value="f44f6b9a-bf30-4f73-866e-fac17c177409" />
+                        </node>
+                        <node concept="liA8E" id="3mn43GOEuMc" role="2OqNvi">
+                          <ref role="37wK5l" to="vsqj:~AbstractModule.getModuleSourceDir():jetbrains.mps.vfs.IFile" resolve="getModuleSourceDir" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3mn43GOEuMd" role="2OqNvi">
+                        <ref role="37wK5l" to="59et:~IFile.getPath():java.lang.String" resolve="getPath" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="3mn43GOEuMe" role="37wK5m">
+                      <property role="Xl_RC" value="latex-support" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="3mn43GOEuMf" role="37wK5m">
+                  <property role="Xl_RC" value="mbeddr-prolog.ltx" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3mn43GOExzR" role="3cqZAp">
+          <node concept="2OqwBi" id="3mn43GOExzO" role="3clFbG">
+            <node concept="10M0yZ" id="3mn43GOExzP" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="3mn43GOExzQ" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="3mn43GOExVG" role="37wK5m">
+                <node concept="37vLTw" id="3mn43GOExX6" role="3uHU7w">
+                  <ref role="3cqZAo" node="3mn43GOEuM4" resolve="defaultPrologFile" />
+                </node>
+                <node concept="Xl_RD" id="3mn43GOExFU" role="3uHU7B">
+                  <property role="Xl_RC" value="defaultPrologFile: " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3mn43GOEuZz" role="3cqZAp">
+          <node concept="3clFbS" id="3mn43GOEuZ_" role="3clFbx">
+            <node concept="3clFbF" id="3mn43GOCXaT" role="3cqZAp">
+              <node concept="2OqwBi" id="3mn43GOD1t_" role="3clFbG">
+                <node concept="2OqwBi" id="3mn43GOCXO8" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3mn43GOCXbn" role="2Oq$k0">
+                    <node concept="1Q6Npb" id="3mn43GOCXaR" role="2Oq$k0" />
+                    <node concept="2SmgA7" id="3mn43GOCXiV" role="2OqNvi">
+                      <ref role="2SmgA8" to="g9w8:3RseghIcrcz" resolve="LatexRenderer" />
+                    </node>
+                  </node>
+                  <node concept="3zZkjj" id="3mn43GOCZJe" role="2OqNvi">
+                    <node concept="1bVj0M" id="3mn43GOCZJg" role="23t8la">
+                      <node concept="3clFbS" id="3mn43GOCZJh" role="1bW5cS">
+                        <node concept="3clFbF" id="3mn43GOCZLt" role="3cqZAp">
+                          <node concept="2OqwBi" id="3mn43GOD0xx" role="3clFbG">
+                            <node concept="2OqwBi" id="3mn43GOCZOO" role="2Oq$k0">
+                              <node concept="37vLTw" id="3mn43GOCZLs" role="2Oq$k0">
+                                <ref role="3cqZAo" node="3mn43GOCZJi" resolve="it" />
+                              </node>
+                              <node concept="3TrcHB" id="3mn43GOD0bS" role="2OqNvi">
+                                <ref role="3TsBF5" to="g9w8:47ZkZt5WSI9" resolve="prolog" />
+                              </node>
+                            </node>
+                            <node concept="17RlXB" id="3mn43GOD1k8" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="Rh6nW" id="3mn43GOCZJi" role="1bW2Oz">
+                        <property role="TrG5h" value="it" />
+                        <node concept="2jxLKc" id="3mn43GOCZJj" role="1tU5fm" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2es0OD" id="3mn43GOD2ge" role="2OqNvi">
+                  <node concept="1bVj0M" id="3mn43GOD2gg" role="23t8la">
+                    <node concept="3clFbS" id="3mn43GOD2gh" role="1bW5cS">
+                      <node concept="3clFbF" id="3mn43GOD2i4" role="3cqZAp">
+                        <node concept="37vLTI" id="3mn43GOD2Ye" role="3clFbG">
+                          <node concept="2OqwBi" id="3mn43GOEwld" role="37vLTx">
+                            <node concept="37vLTw" id="3mn43GOEwa_" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3mn43GOEuM4" resolve="defaultPrologFile" />
+                            </node>
+                            <node concept="liA8E" id="3mn43GOExo6" role="2OqNvi">
+                              <ref role="37wK5l" to="fxg7:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="3mn43GOD2mm" role="37vLTJ">
+                            <node concept="37vLTw" id="3mn43GOD2i3" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3mn43GOD2gi" resolve="it" />
+                            </node>
+                            <node concept="3TrcHB" id="3mn43GOD2Ar" role="2OqNvi">
+                              <ref role="3TsBF5" to="g9w8:47ZkZt5WSI9" resolve="prolog" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="3mn43GOD2gi" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="3mn43GOD2gj" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3mn43GOEvbn" role="3clFbw">
+            <node concept="37vLTw" id="3mn43GOEv2L" role="2Oq$k0">
+              <ref role="3cqZAo" node="3mn43GOEuM4" resolve="defaultPrologFile" />
+            </node>
+            <node concept="liA8E" id="3mn43GOEvWx" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~File.exists():boolean" resolve="exists" />
+            </node>
           </node>
         </node>
       </node>
