@@ -363,5 +363,15 @@
       <ref role="20lvS9" to="x27k:5_l8w1EmTvx" resolve="Function" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1enaVSyBMem">
+    <property role="TrG5h" value="AssertSeqScope" />
+    <property role="34LRSv" value="assert_seq_scope" />
+    <property role="R4oN_" value="this code runs only on one thread at a time" />
+    <property role="3GE5qa" value="properties" />
+    <ref role="1TJDcQ" node="i5tJSHdiDe" resolve="AssertSeq" />
+    <node concept="PrWs8" id="1enaVSyBMen" role="PzmwI">
+      <ref role="PrY4T" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
+    </node>
+  </node>
 </model>
 

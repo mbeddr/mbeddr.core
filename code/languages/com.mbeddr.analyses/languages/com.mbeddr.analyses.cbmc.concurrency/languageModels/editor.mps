@@ -405,5 +405,12 @@
       <node concept="2iRfu4" id="1IZZlGoboMq" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="1enaVSyBRxN">
+    <property role="3GE5qa" value="properties" />
+    <ref role="1XX52x" to="nok9:1enaVSyBMem" resolve="AssertSeqScope" />
+    <node concept="3F0ifn" id="1enaVSyBRxO" role="2wV5jI">
+      <property role="3F0ifm" value="assert_seq_scope;" />
+    </node>
+  </node>
 </model>
 

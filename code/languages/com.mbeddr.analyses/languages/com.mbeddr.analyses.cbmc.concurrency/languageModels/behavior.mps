@@ -358,5 +358,27 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="1enaVSyBSZx">
+    <property role="3GE5qa" value="properties" />
+    <ref role="13h7C2" to="nok9:1enaVSyBMem" resolve="AssertSeqScope" />
+    <node concept="13hLZK" id="1enaVSyBSZy" role="13h7CW">
+      <node concept="3clFbS" id="1enaVSyBSZz" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1enaVSyBSZ$" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getMessage" />
+      <ref role="13i0hy" to="th2u:3V3CJZuMSfi" resolve="getMessage" />
+      <node concept="3Tm1VV" id="1enaVSyBSZ_" role="1B3o_S" />
+      <node concept="3clFbS" id="1enaVSyBSZA" role="3clF47">
+        <node concept="3clFbF" id="1enaVSyBSZB" role="3cqZAp">
+          <node concept="Xl_RD" id="1enaVSyBSZC" role="3clFbG">
+            <property role="Xl_RC" value="sequential code" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1enaVSyBSZD" role="3clF45" />
+    </node>
+  </node>
 </model>
 
