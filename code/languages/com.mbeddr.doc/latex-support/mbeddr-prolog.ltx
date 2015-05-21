@@ -42,6 +42,20 @@
 \definecolor{myGray2}{rgb}{0.95,0.95,.95}
 \definecolor{myGray4}{rgb}{0.85,0.85,.85}
 
+\definecolor{lightgray}{gray}{0.75}
+
+\definecolor{codecolor}{gray}{0.1}
+\definecolor{blackblack}{gray}{0}
+
+
+\newcommand\greyboxnote[1]{%
+  \vskip\baselineskip%
+  \par\noindent\colorbox{lightgray}{%
+    \begin{minipage}{\textwidth}#1\end{minipage}%
+  }%
+  \vskip\baselineskip%
+}
+
 \usepackage[scaled]{beramono}
 
 
