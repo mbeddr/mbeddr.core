@@ -297,12 +297,12 @@
     <node concept="1_0j5j" id="Gd6QB8f5OP" role="30Gjbj">
       <ref role="1_0j5g" node="hZfTLLg0H0" resolve="mbeddrUserGuide" />
     </node>
-    <node concept="1jVoCB" id="6jiGbW$Fqop" role="30GjaH">
+    <node concept="1jVoCB" id="3mn43GO1d1l" role="30GjaH">
       <property role="1jVoCx" value="article" />
       <property role="1xA$Bs" value="true" />
       <property role="43dxY" value="/Users/nikostotz/git/mbeddr.core/code/languages/com.mbeddr.doc/latex-support/mbeddr-prolog.ltx" />
     </node>
-    <node concept="1_07dB" id="6jiGbW$Fqoq" role="30Gjbi" />
+    <node concept="1_07dB" id="3mn43GO1d1m" role="30Gjbi" />
   </node>
 </model>
 

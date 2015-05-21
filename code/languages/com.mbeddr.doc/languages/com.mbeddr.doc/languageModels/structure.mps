@@ -135,6 +135,9 @@
     <node concept="PrWs8" id="39jEAIlrcKU" role="PzmwI">
       <ref role="PrY4T" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
     </node>
+    <node concept="PrWs8" id="6jiGbW_JDXF" role="PzmwI">
+      <ref role="PrY4T" node="6jiGbW_JBH_" resolve="IDocReferencable" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2TZO3Dbv6JT">
     <property role="TrG5h" value="IDocContentContainer" />
@@ -619,6 +622,9 @@
     <property role="TrG5h" value="IFloating" />
     <node concept="PrWs8" id="47ZkZt5YzN9" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="6jiGbW_JEjT" role="PrDN$">
+      <ref role="PrY4T" node="6jiGbW_JBH_" resolve="IDocReferencable" />
     </node>
   </node>
   <node concept="PlHQZ" id="3UlEobTHU0C">
@@ -1331,6 +1337,9 @@
     <property role="TrG5h" value="Introduction" />
     <property role="34LRSv" value="intro" />
     <ref role="1TJDcQ" node="2TZO3Dbv6Ju" resolve="AbstractSection" />
+  </node>
+  <node concept="PlHQZ" id="6jiGbW_JBH_">
+    <property role="TrG5h" value="IDocReferencable" />
   </node>
 </model>
 
