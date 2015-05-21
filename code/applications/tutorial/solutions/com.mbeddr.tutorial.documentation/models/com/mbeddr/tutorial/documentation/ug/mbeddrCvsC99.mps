@@ -1839,7 +1839,7 @@
             <property role="19SUeA" value="mbeddr has tight integration with formal verification tools which can be used to specify a verification harness for the testing function. This way similar functionality can be achieved as with the ordinary parameterized tests. Actually, testing your function (unit of the system) with harness and formal verification is much more powerful because unit tests usually cover only punctual cases, while the verification can prove the property (in this case assertions) for a whole wider set of values. You can read more about these features in " />
           </node>
           <node concept="1_0GAv" id="48PTy$Ruq00" role="19SJt6">
-            <ref role="1_0GAl" to="us0v:7OKLwZ_7fp6" resolve="formal_verification" />
+            <ref role="1_0GAl" to="us0v:3mn43GO8lBo" resolve="formal_verification" />
           </node>
           <node concept="19SUe$" id="48PTy$RupZZ" role="19SJt6">
             <property role="19SUeA" value=". " />

@@ -126,7 +126,7 @@
     <property role="TrG5h" value="A_Introduction" />
     <property role="yApLE" value="1" />
     <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
-    <node concept="1mvXsy" id="3XWIBckDysh" role="1_0VJ0">
+    <node concept="1_0VNX" id="3mn43GO8lfi" role="1_0VJ0">
       <property role="TrG5h" value="analyses_introduction" />
       <property role="1_0VJr" value="Introduction to Analyses" />
       <node concept="1_0LV8" id="3XWIBckDysk" role="1_0VJ0">
@@ -185,7 +185,7 @@
     <property role="TrG5h" value="B_VariabilityVerification" />
     <property role="yApLE" value="1" />
     <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
-    <node concept="1mvXsy" id="7OKLwZ_6QCa" role="1_0VJ0">
+    <node concept="1_0VNX" id="3mn43GO8ltD" role="1_0VJ0">
       <property role="TrG5h" value="analyzing_variability" />
       <property role="1_0VJr" value="Analyzing variability" />
       <node concept="1_0LV8" id="7OKLwZ_6QCt" role="1_0VJ0">
@@ -194,7 +194,7 @@
             <property role="19SUeA" value="mbeddr allows the definition of product lines with the help of feature models, configuration models and attaching advanced presence conditions to the produced artifacts (e.g. programs code, requirements). Defining and using product lines in mbeddr is described in Section " />
           </node>
           <node concept="1_0GAv" id="4XJOimFK6RX" role="19SJt6">
-            <ref role="1_0GAl" to="vi23:tMF5FXsTd2" resolve="productlinevariability" />
+            <ref role="1_0GAl" to="vi23:3mn43GO8h4S" resolve="productlinevariability" />
           </node>
           <node concept="19SUe$" id="4XJOimFK6RY" role="19SJt6">
             <property role="19SUeA" value="." />
@@ -626,7 +626,7 @@
     <property role="TrG5h" value="C_FormalVerification" />
     <property role="yApLE" value="1" />
     <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
-    <node concept="1mvXsy" id="7OKLwZ_7fp6" role="1_0VJ0">
+    <node concept="1_0VNX" id="3mn43GO8lBo" role="1_0VJ0">
       <property role="TrG5h" value="formal_verification" />
       <property role="1_0VJr" value="Formal Verification with CBMC" />
       <node concept="1_0LV8" id="7OKLwZ_7fp7" role="1_0VJ0">

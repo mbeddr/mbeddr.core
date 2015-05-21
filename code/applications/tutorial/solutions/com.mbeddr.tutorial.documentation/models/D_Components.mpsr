@@ -63,7 +63,6 @@
         <child id="4220250885135204208" name="text" index="3d4Uyx" />
       </concept>
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
-      <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
       <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
         <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922821" name="removals" index="3z_lpH" />
@@ -131,7 +130,7 @@
     <property role="TrG5h" value="D_Components" />
     <property role="yApLE" value="6" />
     <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
-    <node concept="1mvXsy" id="2x0XdsgGhcC" role="1_0VJ0">
+    <node concept="1_0VNX" id="3mn43GO8cLU" role="1_0VJ0">
       <property role="TrG5h" value="components" />
       <property role="1_0VJr" value="Components" />
       <node concept="1_0LV8" id="3D8Uf60XdUz" role="1_0VJ0">

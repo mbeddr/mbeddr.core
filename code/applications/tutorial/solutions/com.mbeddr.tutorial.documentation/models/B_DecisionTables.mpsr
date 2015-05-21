@@ -40,7 +40,6 @@
         <reference id="6386504476136521409" name="path" index="2Sb_kU" />
       </concept>
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
-      <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
       <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
         <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
@@ -92,7 +91,7 @@
     <property role="TrG5h" value="B_DecisionTables" />
     <property role="yApLE" value="7" />
     <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
-    <node concept="1mvXsy" id="2x0XdsgGhzR" role="1_0VJ0">
+    <node concept="1_0VNX" id="3mn43GO8cnY" role="1_0VJ0">
       <property role="TrG5h" value="decisionTables" />
       <property role="1_0VJr" value="Decision Tables" />
       <node concept="1_0LV8" id="6UY8Kx5izzY" role="1_0VJ0">

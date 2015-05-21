@@ -149,7 +149,7 @@
     <property role="TrG5h" value="D_Debugging" />
     <property role="yApLE" value="4" />
     <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
-    <node concept="1mvXsy" id="2x0XdsgGh7S" role="1_0VJ0">
+    <node concept="1_0VNX" id="3mn43GO6BBY" role="1_0VJ0">
       <property role="TrG5h" value="debugging" />
       <property role="1_0VJr" value="Debugging" />
       <node concept="1_0LV8" id="6OxdrRm_Gpq" role="1_0VJ0">
@@ -465,7 +465,7 @@
     <property role="TrG5h" value="F_LegacyCode" />
     <property role="yApLE" value="8" />
     <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
-    <node concept="1mvXsy" id="2x0XdsgGhBL" role="1_0VJ0">
+    <node concept="1_0VNX" id="3mn43GO6C$J" role="1_0VJ0">
       <property role="TrG5h" value="accessingLibraries" />
       <property role="1_0VJr" value="Accessing Libraries" />
       <node concept="1_0LV8" id="6UY8Kx5jEu3" role="1_0VJ0">
@@ -2227,7 +2227,7 @@
               <property role="19SUeA" value=". You can read more about how you can debug your application in " />
             </node>
             <node concept="1_0GAv" id="3MXxQvvjQIH" role="19SJt6">
-              <ref role="1_0GAl" node="2x0XdsgGh7S" resolve="debugging" />
+              <ref role="1_0GAl" node="3mn43GO6BBY" resolve="debugging" />
             </node>
             <node concept="19SUe$" id="3MXxQvvjQII" role="19SJt6">
               <property role="19SUeA" value="." />
