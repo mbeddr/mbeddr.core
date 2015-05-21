@@ -66,9 +66,6 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -232,6 +229,12 @@
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -3574,22 +3577,14 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3mn43GOExzR" role="3cqZAp">
-          <node concept="2OqwBi" id="3mn43GOExzO" role="3clFbG">
-            <node concept="10M0yZ" id="3mn43GOExzP" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+        <node concept="34ab3g" id="3mn43GORoBb" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="3cpWs3" id="3mn43GOExVG" role="34bqiv">
+            <node concept="37vLTw" id="3mn43GOExX6" role="3uHU7w">
+              <ref role="3cqZAo" node="3mn43GOEuM4" resolve="defaultPrologFile" />
             </node>
-            <node concept="liA8E" id="3mn43GOExzQ" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="3mn43GOExVG" role="37wK5m">
-                <node concept="37vLTw" id="3mn43GOExX6" role="3uHU7w">
-                  <ref role="3cqZAo" node="3mn43GOEuM4" resolve="defaultPrologFile" />
-                </node>
-                <node concept="Xl_RD" id="3mn43GOExFU" role="3uHU7B">
-                  <property role="Xl_RC" value="defaultPrologFile: " />
-                </node>
-              </node>
+            <node concept="Xl_RD" id="3mn43GOExFU" role="3uHU7B">
+              <property role="Xl_RC" value="defaultPrologFile: " />
             </node>
           </node>
         </node>
