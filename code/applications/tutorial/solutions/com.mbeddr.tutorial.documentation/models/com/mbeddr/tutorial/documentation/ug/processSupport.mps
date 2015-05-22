@@ -13,6 +13,7 @@
     <import index="75wo" ref="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" />
     <import index="bmc6" ref="r:4ac377c2-0a54-4908-ae24-f86f1bad7e73(com.mbeddr.tutorial.documentation.ug.fundamentals)" />
     <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" />
+    <import index="ntnz" ref="r:7f372397-146b-40d5-9f20-607974c4fed4(com.mbeddr.tutorial.documentation.ug._main)" />
   </imports>
   <registry>
     <language id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell">
@@ -106,6 +107,7 @@
         <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
       <concept id="6955693250238922838" name="com.mbeddr.doc.structure.ModelContentRefWord" flags="ng" index="3z_lpY">
+        <property id="3861573051970918830" name="text" index="1poAl" />
         <child id="6955693250238922839" name="modelContentPtr" index="3z_lpZ" />
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
@@ -1403,7 +1405,18 @@
               </node>
             </node>
             <node concept="19SUe$" id="4KbglN_a6Na" role="19SJt6">
-              <property role="19SUeA" value=" menu) and take a look how the user guide is built. We'll explain some basics in this chapter but otherwise recommend you to just look at the user guide." />
+              <property role="19SUeA" value=" menu) and take a look how the user guide is built. We'll explain some basics in this chapter but otherwise recommend you to just look at the " />
+            </node>
+            <node concept="3z_lpY" id="3mn43GOVqkI" role="19SJt6">
+              <property role="1poAl" value="user guide" />
+              <node concept="2NCZwO" id="3mn43GOVqkJ" role="3z_lpZ">
+                <node concept="2NCMab" id="3mn43GOVql0" role="2NCMaf">
+                  <ref role="2NCMaa" to="ntnz:hZfTLLg0H0" resolve="mbeddrUserGuide" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="3mn43GOVqkH" role="19SJt6">
+              <property role="19SUeA" value="." />
             </node>
           </node>
         </node>

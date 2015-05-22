@@ -186,6 +186,7 @@
     <extendedLanguage>92f195b6-a209-4804-ad65-f5248ecd5873(com.mbeddr.mpsutil.margincell)</extendedLanguage>
     <extendedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</extendedLanguage>
     <extendedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</extendedLanguage>
+    <extendedLanguage>2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)</extendedLanguage>
   </extendedLanguages>
 </language>
 

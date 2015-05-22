@@ -1168,6 +1168,7 @@
     <property role="TrG5h" value="WrapWithSection" />
     <property role="2ZfUl0" value="false" />
     <property role="2ZfUl3" value="false" />
+    <property role="3GE5qa" value="ifaces" />
     <ref role="2ZfgGC" to="2c95:2TZO3DbuxwP" resolve="IDocumentContent" />
     <node concept="2S6ZIM" id="3RseghIe5qV" role="2ZfVej">
       <node concept="3clFbS" id="3RseghIe5qW" role="2VODD2">

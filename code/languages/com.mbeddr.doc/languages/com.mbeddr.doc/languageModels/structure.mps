@@ -9,8 +9,8 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
+    <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -90,6 +90,7 @@
   </node>
   <node concept="PlHQZ" id="2TZO3DbuxwP">
     <property role="TrG5h" value="IDocumentContent" />
+    <property role="3GE5qa" value="ifaces" />
     <node concept="PrWs8" id="2TZO3Dbv5pF" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
@@ -141,6 +142,7 @@
   </node>
   <node concept="PlHQZ" id="2TZO3Dbv6JT">
     <property role="TrG5h" value="IDocContentContainer" />
+    <property role="3GE5qa" value="ifaces" />
     <node concept="1TJgyj" id="2TZO3Dbv6JU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="contents" />
@@ -212,7 +214,7 @@
     <property role="TrG5h" value="SectRefWord" />
     <property role="R4oN_" value="references a section" />
     <property role="34LRSv" value="@sect" />
-    <ref role="1TJDcQ" node="2TZO3DbvhAy" resolve="DocumentWord" />
+    <ref role="1TJDcQ" node="3mn43GPgUJP" resolve="AbstractRefWord" />
     <node concept="1TJgyi" id="QRmqzHer_D" role="1TKVEl">
       <property role="TrG5h" value="prefixed" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
@@ -333,7 +335,7 @@
     <property role="TrG5h" value="ImgRefWord" />
     <property role="R4oN_" value="a reference to a figure" />
     <property role="34LRSv" value="@fig" />
-    <ref role="1TJDcQ" node="2TZO3DbvhAy" resolve="DocumentWord" />
+    <ref role="1TJDcQ" node="3mn43GPgUJP" resolve="AbstractRefWord" />
     <node concept="1TJgyj" id="5yxqZJwzrde" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="image" />
@@ -465,7 +467,7 @@
     <property role="TrG5h" value="ShortcutRefWord" />
     <property role="R4oN_" value="embeds and expands a shortcut" />
     <property role="34LRSv" value="@short" />
-    <ref role="1TJDcQ" node="2TZO3DbvhAy" resolve="DocumentWord" />
+    <ref role="1TJDcQ" node="3mn43GPgUJP" resolve="AbstractRefWord" />
     <node concept="1TJgyj" id="3RseghIeOsT" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="args" />
@@ -617,9 +619,11 @@
   </node>
   <node concept="PlHQZ" id="47ZkZt5XzTh">
     <property role="TrG5h" value="IInterspersed" />
+    <property role="3GE5qa" value="ifaces" />
   </node>
   <node concept="PlHQZ" id="47ZkZt5YzN8">
     <property role="TrG5h" value="IFloating" />
+    <property role="3GE5qa" value="ifaces" />
     <node concept="PrWs8" id="47ZkZt5YzN9" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
@@ -629,6 +633,7 @@
   </node>
   <node concept="PlHQZ" id="3UlEobTHU0C">
     <property role="TrG5h" value="IUsesExternalPath" />
+    <property role="3GE5qa" value="ifaces" />
   </node>
   <node concept="1TIwiD" id="72XbSXEIPy">
     <property role="TrG5h" value="Author" />
@@ -854,6 +859,9 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4vQSg$ArKJI" resolve="TableRow" />
     </node>
+    <node concept="PrWs8" id="3mn43GP_p20" role="PzmwI">
+      <ref role="PrY4T" node="6jiGbW_JBH_" resolve="IDocReferencable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="519ky_SkGws">
     <property role="TrG5h" value="InlineTableParagraph" />
@@ -952,6 +960,7 @@
   </node>
   <node concept="PlHQZ" id="5L$H31Kgq3f">
     <property role="TrG5h" value="IDocumentLike" />
+    <property role="3GE5qa" value="ifaces" />
     <node concept="1TJgyj" id="5L$H31Kgq3g" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="config" />
@@ -1220,7 +1229,7 @@
     <property role="TrG5h" value="ModelContentRefWord" />
     <property role="34LRSv" value="@node" />
     <property role="3GE5qa" value="modelContent" />
-    <ref role="1TJDcQ" node="2TZO3DbvhAy" resolve="DocumentWord" />
+    <ref role="1TJDcQ" node="3mn43GPgUJP" resolve="AbstractRefWord" />
     <node concept="1TJgyj" id="627_yy34G1n" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="modelContentPtr" />
@@ -1243,6 +1252,7 @@
   </node>
   <node concept="PlHQZ" id="627_yy3SjeX">
     <property role="TrG5h" value="IQAReview" />
+    <property role="3GE5qa" value="ifaces" />
   </node>
   <node concept="1TIwiD" id="627_yy3Sjm$">
     <property role="TrG5h" value="QAAssessmentQuery" />
@@ -1340,6 +1350,24 @@
   </node>
   <node concept="PlHQZ" id="6jiGbW_JBH_">
     <property role="TrG5h" value="IDocReferencable" />
+    <property role="3GE5qa" value="ifaces" />
+  </node>
+  <node concept="PlHQZ" id="3mn43GP7FF7">
+    <property role="3GE5qa" value="ifaces" />
+    <property role="TrG5h" value="ITextOverride" />
+    <node concept="1TJgyi" id="3mn43GP7FF8" role="1TKVEl">
+      <property role="TrG5h" value="textOverride" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3mn43GPgUJP">
+    <property role="TrG5h" value="AbstractRefWord" />
+    <property role="3GE5qa" value="words" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="2TZO3DbvhAy" resolve="DocumentWord" />
+    <node concept="PrWs8" id="3mn43GPgUJQ" role="PzmwI">
+      <ref role="PrY4T" node="3mn43GP7FF7" resolve="ITextOverride" />
+    </node>
   </node>
 </model>
 
