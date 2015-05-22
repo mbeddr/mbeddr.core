@@ -8,6 +8,7 @@
   <imports>
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
@@ -137,6 +138,10 @@
       <ref role="PrY4T" node="10dmWHguUbZ" resolve="IContractSpecificExpression" />
     </node>
   </node>
+  <node concept="PlHQZ" id="41uzL3EMZP6">
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="IFunctionContractMember" />
+  </node>
   <node concept="1TIwiD" id="41uzL3ELsVO">
     <property role="3GE5qa" value="contract" />
     <property role="TrG5h" value="Behavior" />
@@ -161,9 +166,20 @@
       <ref role="PrY4T" node="41uzL3EMZP6" resolve="IFunctionContractMember" />
     </node>
   </node>
-  <node concept="PlHQZ" id="41uzL3EMZP6">
-    <property role="3GE5qa" value="contract" />
-    <property role="TrG5h" value="IFunctionContractMember" />
+  <node concept="1TIwiD" id="47VdeCsLg_U">
+    <property role="TrG5h" value="FunctionDocumentationWithACSL" />
+    <ref role="1TJDcQ" to="vs0r:3m8H$lmFM5W" resolve="ElementDocumentation" />
+    <node concept="1TJgyj" id="5Tz48EVRFxg" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="acsl" />
+      <ref role="20lvS9" node="3i$cQqpAZ4J" resolve="FunctionContract" />
+    </node>
+    <node concept="M6xJ_" id="5Tz48EVRFfN" role="lGtFl">
+      <property role="Hh88m" value="documentationWithACSL" />
+    </node>
+    <node concept="PrWs8" id="5Tz48EVTaIX" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3VlwR$fEpF9" resolve="IInstantiatedOnlyInGenerators" />
+    </node>
   </node>
 </model>
 
