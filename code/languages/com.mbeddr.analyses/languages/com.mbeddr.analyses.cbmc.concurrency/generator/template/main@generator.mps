@@ -4022,64 +4022,14 @@
       <ref role="1puQsG" node="sE2dBDmsS1" resolve="ResetDataraceFlag" />
     </node>
     <node concept="3aamgX" id="3VLfU1zsHuQ" role="3acgRq">
+      <property role="2n97ot" value="This rule introduces temporary variables to prevent assignments where lhs and rhs contain accesses to global variables. Note that the x++ -o-&gt; x=x+1 rule MUST be applied first, as we assume that the only concepts implementing IAssignmentLike are AssignmentExpr and DirectAssignmentExpression -- UnaryPrePosModExpression have been eliminated" />
       <ref role="30HIoZ" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
       <node concept="30G5F_" id="3VLfU1zsQ39" role="30HLyM">
         <node concept="3clFbS" id="3VLfU1zsQ3a" role="2VODD2">
           <node concept="3clFbF" id="3VLfU1zsVNQ" role="3cqZAp">
-            <node concept="1Wc70l" id="3VLfU1ztwoJ" role="3clFbG">
-              <node concept="2OqwBi" id="3VLfU1ztGRF" role="3uHU7w">
-                <node concept="2OqwBi" id="3VLfU1ztzAa" role="2Oq$k0">
-                  <node concept="2OqwBi" id="3VLfU1ztwLA" role="2Oq$k0">
-                    <node concept="30H73N" id="3VLfU1ztwBd" role="2Oq$k0" />
-                    <node concept="2Rf3mk" id="3VLfU1ztxDg" role="2OqNvi">
-                      <node concept="1xMEDy" id="3VLfU1ztxDi" role="1xVPHs">
-                        <node concept="chp4Y" id="3VLfU1ztxSF" role="ri$Ld">
-                          <ref role="cht4Q" to="mj1l:1exqRp9kgd" resolve="AssignmentExpr" />
-                        </node>
-                      </node>
-                      <node concept="1xIGOp" id="3VLfU1zzYH0" role="1xVPHs" />
-                    </node>
-                  </node>
-                  <node concept="13MTOL" id="3VLfU1ztCoQ" role="2OqNvi">
-                    <ref role="13MTZf" to="mj1l:7FQByU3CrD1" />
-                  </node>
-                </node>
-                <node concept="2HwmR7" id="3VLfU1ztHpJ" role="2OqNvi">
-                  <node concept="1bVj0M" id="3VLfU1ztHpL" role="23t8la">
-                    <node concept="3clFbS" id="3VLfU1ztHpM" role="1bW5cS">
-                      <node concept="3clFbF" id="3VLfU1ztJ$1" role="3cqZAp">
-                        <node concept="2YIFZM" id="3VLfU1zZS8t" role="3clFbG">
-                          <ref role="37wK5l" to="gonc:3VLfU1zZPQt" resolve="containsGlobalVarOrPointer" />
-                          <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
-                          <node concept="37vLTw" id="3VLfU1zZSmc" role="37wK5m">
-                            <ref role="3cqZAo" node="3VLfU1ztHpN" resolve="it" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="Rh6nW" id="3VLfU1ztHpN" role="1bW2Oz">
-                      <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="3VLfU1ztHpO" role="1tU5fm" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="1Wc70l" id="3VLfU1zt85u" role="3uHU7B">
+            <node concept="1Wc70l" id="3VLfU1zt85u" role="3clFbG">
+              <node concept="1Wc70l" id="58y_vUq9WRI" role="3uHU7B">
                 <node concept="1Wc70l" id="3VLfU1zLrsL" role="3uHU7B">
-                  <node concept="2OqwBi" id="3VLfU1zsZhV" role="3uHU7w">
-                    <node concept="2OqwBi" id="3VLfU1zsW9Z" role="2Oq$k0">
-                      <node concept="30H73N" id="3VLfU1zsW2f" role="2Oq$k0" />
-                      <node concept="2Rf3mk" id="3VLfU1zsWYA" role="2OqNvi">
-                        <node concept="1xMEDy" id="3VLfU1zsWYC" role="1xVPHs">
-                          <node concept="chp4Y" id="3VLfU1zsXAS" role="ri$Ld">
-                            <ref role="cht4Q" to="mj1l:1exqRp9kgd" resolve="AssignmentExpr" />
-                          </node>
-                        </node>
-                        <node concept="1xIGOp" id="3VLfU1zBVyM" role="1xVPHs" />
-                      </node>
-                    </node>
-                    <node concept="3GX2aA" id="3VLfU1zt7Rm" role="2OqNvi" />
-                  </node>
                   <node concept="1Wc70l" id="3VLfU1zLrYl" role="3uHU7B">
                     <node concept="3fqX7Q" id="3VLfU1zLwLG" role="3uHU7w">
                       <node concept="2OqwBi" id="3VLfU1zLwLI" role="3fr31v">
@@ -4126,41 +4076,74 @@
                       <node concept="3x8VRR" id="3VLfU1zLrCT" role="2OqNvi" />
                     </node>
                   </node>
-                </node>
-                <node concept="2OqwBi" id="3VLfU1ztjQE" role="3uHU7w">
-                  <node concept="2OqwBi" id="3VLfU1ztbcx" role="2Oq$k0">
-                    <node concept="2OqwBi" id="3VLfU1zt8tX" role="2Oq$k0">
-                      <node concept="30H73N" id="3VLfU1zt8iR" role="2Oq$k0" />
-                      <node concept="2Rf3mk" id="3VLfU1zt9jB" role="2OqNvi">
-                        <node concept="1xMEDy" id="3VLfU1zt9jD" role="1xVPHs">
-                          <node concept="chp4Y" id="3VLfU1zt9x2" role="ri$Ld">
-                            <ref role="cht4Q" to="mj1l:1exqRp9kgd" resolve="AssignmentExpr" />
-                          </node>
-                        </node>
-                        <node concept="1xIGOp" id="3VLfU1zzYWQ" role="1xVPHs" />
-                      </node>
+                  <node concept="2OqwBi" id="58y_vUq9Yml" role="3uHU7w">
+                    <node concept="2YIFZM" id="58y_vUq9Xpl" role="2Oq$k0">
+                      <ref role="37wK5l" to="gonc:58y_vUq9Ola" resolve="binAssignDescendants" />
+                      <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
+                      <node concept="30H73N" id="58y_vUq9XI7" role="37wK5m" />
                     </node>
-                    <node concept="13MTOL" id="3VLfU1ztfpP" role="2OqNvi">
+                    <node concept="3GX2aA" id="58y_vUqa0Vi" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="58y_vUqazy$" role="3uHU7w">
+                  <node concept="2OqwBi" id="58y_vUqa3l_" role="2Oq$k0">
+                    <node concept="2YIFZM" id="58y_vUqa2nO" role="2Oq$k0">
+                      <ref role="37wK5l" to="gonc:58y_vUq9Ola" resolve="binAssignDescendants" />
+                      <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
+                      <node concept="30H73N" id="58y_vUqa2Hd" role="37wK5m" />
+                    </node>
+                    <node concept="13MTOL" id="58y_vUqavAg" role="2OqNvi">
                       <ref role="13MTZf" to="mj1l:7FQByU3CrD0" />
                     </node>
                   </node>
-                  <node concept="2HwmR7" id="3VLfU1ztkmI" role="2OqNvi">
-                    <node concept="1bVj0M" id="3VLfU1ztkmK" role="23t8la">
-                      <node concept="3clFbS" id="3VLfU1ztkmL" role="1bW5cS">
-                        <node concept="3clFbF" id="3VLfU1ztkuE" role="3cqZAp">
-                          <node concept="2YIFZM" id="3VLfU1zZSXD" role="3clFbG">
+                  <node concept="2HwmR7" id="58y_vUqa$c9" role="2OqNvi">
+                    <node concept="1bVj0M" id="58y_vUqa$cb" role="23t8la">
+                      <node concept="3clFbS" id="58y_vUqa$cc" role="1bW5cS">
+                        <node concept="3clFbF" id="58y_vUqa$tX" role="3cqZAp">
+                          <node concept="2YIFZM" id="58y_vUqa$J8" role="3clFbG">
                             <ref role="37wK5l" to="gonc:3VLfU1zZPQt" resolve="containsGlobalVarOrPointer" />
                             <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
-                            <node concept="37vLTw" id="3VLfU1zZTaL" role="37wK5m">
-                              <ref role="3cqZAo" node="3VLfU1ztkmM" resolve="it" />
+                            <node concept="37vLTw" id="58y_vUqa_0t" role="37wK5m">
+                              <ref role="3cqZAo" node="58y_vUqa$cd" resolve="it" />
                             </node>
                           </node>
                         </node>
                       </node>
-                      <node concept="Rh6nW" id="3VLfU1ztkmM" role="1bW2Oz">
+                      <node concept="Rh6nW" id="58y_vUqa$cd" role="1bW2Oz">
                         <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="3VLfU1ztkmN" role="1tU5fm" />
+                        <node concept="2jxLKc" id="58y_vUqa$ce" role="1tU5fm" />
                       </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="58y_vUqaJtG" role="3uHU7w">
+                <node concept="2OqwBi" id="58y_vUqaBQx" role="2Oq$k0">
+                  <node concept="2YIFZM" id="58y_vUqa_LU" role="2Oq$k0">
+                    <ref role="37wK5l" to="gonc:58y_vUq9Ola" resolve="binAssignDescendants" />
+                    <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
+                    <node concept="30H73N" id="58y_vUqaAli" role="37wK5m" />
+                  </node>
+                  <node concept="13MTOL" id="58y_vUqaFu5" role="2OqNvi">
+                    <ref role="13MTZf" to="mj1l:7FQByU3CrD1" />
+                  </node>
+                </node>
+                <node concept="2HwmR7" id="58y_vUqaK7$" role="2OqNvi">
+                  <node concept="1bVj0M" id="58y_vUqaK7A" role="23t8la">
+                    <node concept="3clFbS" id="58y_vUqaK7B" role="1bW5cS">
+                      <node concept="3clFbF" id="58y_vUqaKpk" role="3cqZAp">
+                        <node concept="2YIFZM" id="58y_vUqaKEK" role="3clFbG">
+                          <ref role="37wK5l" to="gonc:3VLfU1zZPQt" resolve="containsGlobalVarOrPointer" />
+                          <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
+                          <node concept="37vLTw" id="58y_vUqaKWm" role="37wK5m">
+                            <ref role="3cqZAo" node="58y_vUqaK7C" resolve="it" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="58y_vUqaK7C" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="58y_vUqaK7D" role="1tU5fm" />
                     </node>
                   </node>
                 </node>
@@ -4260,16 +4243,10 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="2OqwBi" id="3VLfU1$1cx4" role="2GsD0m">
-                            <node concept="30H73N" id="3VLfU1$1cx5" role="2Oq$k0" />
-                            <node concept="2Rf3mk" id="3VLfU1$1cx6" role="2OqNvi">
-                              <node concept="1xMEDy" id="3VLfU1$1cx7" role="1xVPHs">
-                                <node concept="chp4Y" id="3VLfU1$1cx8" role="ri$Ld">
-                                  <ref role="cht4Q" to="mj1l:1exqRp9kgd" resolve="AssignmentExpr" />
-                                </node>
-                              </node>
-                              <node concept="1xIGOp" id="3VLfU1$5IXK" role="1xVPHs" />
-                            </node>
+                          <node concept="2YIFZM" id="58y_vUqaSjP" role="2GsD0m">
+                            <ref role="37wK5l" to="gonc:58y_vUq9Ola" resolve="binAssignDescendants" />
+                            <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
+                            <node concept="30H73N" id="58y_vUqaTNI" role="37wK5m" />
                           </node>
                         </node>
                         <node concept="3cpWs6" id="3VLfU1zC_F_" role="3cqZAp">
@@ -4329,51 +4306,45 @@
                     <node concept="29HgVG" id="3VLfU1zxsf0" role="lGtFl">
                       <node concept="3NFfHV" id="3VLfU1zxsf1" role="3NFExx">
                         <node concept="3clFbS" id="3VLfU1zxsf2" role="2VODD2">
-                          <node concept="3clFbF" id="3VLfU1zxxdK" role="3cqZAp">
-                            <node concept="2OqwBi" id="3VLfU1zBhzZ" role="3clFbG">
-                              <node concept="2OqwBi" id="3VLfU1zxxdL" role="2Oq$k0">
-                                <node concept="2OqwBi" id="3VLfU1zxxdM" role="2Oq$k0">
-                                  <node concept="2OqwBi" id="3VLfU1zxxdN" role="2Oq$k0">
-                                    <node concept="2OqwBi" id="3VLfU1zxxdO" role="2Oq$k0">
-                                      <node concept="3TrEf2" id="3VLfU1zxxdP" role="2OqNvi">
+                          <node concept="3clFbF" id="58y_vUqb8a4" role="3cqZAp">
+                            <node concept="2OqwBi" id="58y_vUqboVO" role="3clFbG">
+                              <node concept="2OqwBi" id="58y_vUqbnza" role="2Oq$k0">
+                                <node concept="2OqwBi" id="58y_vUqbeuV" role="2Oq$k0">
+                                  <node concept="2YIFZM" id="58y_vUqbcmo" role="2Oq$k0">
+                                    <ref role="37wK5l" to="gonc:58y_vUq9Ola" resolve="binAssignDescendants" />
+                                    <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
+                                    <node concept="2OqwBi" id="58y_vUqbc$J" role="37wK5m">
+                                      <node concept="30H73N" id="58y_vUqbcsF" role="2Oq$k0" />
+                                      <node concept="3TrEf2" id="58y_vUqbdqJ" role="2OqNvi">
                                         <ref role="3Tt5mk" to="c4fa:6iIoqg1yCmj" />
                                       </node>
-                                      <node concept="30H73N" id="3VLfU1zxxdQ" role="2Oq$k0" />
-                                    </node>
-                                    <node concept="2Rf3mk" id="3VLfU1zxxdR" role="2OqNvi">
-                                      <node concept="1xMEDy" id="3VLfU1zxxdS" role="1xVPHs">
-                                        <node concept="chp4Y" id="3VLfU1zxxdT" role="ri$Ld">
-                                          <ref role="cht4Q" to="mj1l:1exqRp9kgd" resolve="AssignmentExpr" />
-                                        </node>
-                                      </node>
-                                      <node concept="1xIGOp" id="3VLfU1zzZJl" role="1xVPHs" />
                                     </node>
                                   </node>
-                                  <node concept="1z4cxt" id="3VLfU1zxxdU" role="2OqNvi">
-                                    <node concept="1bVj0M" id="3VLfU1zxxdV" role="23t8la">
-                                      <node concept="3clFbS" id="3VLfU1zxxdW" role="1bW5cS">
-                                        <node concept="3clFbF" id="3VLfU1zxxdX" role="3cqZAp">
-                                          <node concept="2YIFZM" id="3VLfU1zZTx9" role="3clFbG">
+                                  <node concept="1z4cxt" id="58y_vUqblA$" role="2OqNvi">
+                                    <node concept="1bVj0M" id="58y_vUqblAA" role="23t8la">
+                                      <node concept="3clFbS" id="58y_vUqblAB" role="1bW5cS">
+                                        <node concept="3clFbF" id="58y_vUqblIQ" role="3cqZAp">
+                                          <node concept="2YIFZM" id="58y_vUqblQ8" role="3clFbG">
                                             <ref role="37wK5l" to="gonc:3VLfU1zZPQt" resolve="containsGlobalVarOrPointer" />
                                             <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
-                                            <node concept="37vLTw" id="3VLfU1zZTAb" role="37wK5m">
-                                              <ref role="3cqZAo" node="3VLfU1zxxe6" resolve="it" />
+                                            <node concept="37vLTw" id="58y_vUqblX$" role="37wK5m">
+                                              <ref role="3cqZAo" node="58y_vUqblAC" resolve="it" />
                                             </node>
                                           </node>
                                         </node>
                                       </node>
-                                      <node concept="Rh6nW" id="3VLfU1zxxe6" role="1bW2Oz">
+                                      <node concept="Rh6nW" id="58y_vUqblAC" role="1bW2Oz">
                                         <property role="TrG5h" value="it" />
-                                        <node concept="2jxLKc" id="3VLfU1zxxe7" role="1tU5fm" />
+                                        <node concept="2jxLKc" id="58y_vUqblAD" role="1tU5fm" />
                                       </node>
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="3TrEf2" id="3VLfU1z_Hbs" role="2OqNvi">
+                                <node concept="3TrEf2" id="58y_vUqbop$" role="2OqNvi">
                                   <ref role="3Tt5mk" to="mj1l:7FQByU3CrD1" />
                                 </node>
                               </node>
-                              <node concept="1$rogu" id="3VLfU1zBhUA" role="2OqNvi" />
+                              <node concept="1$rogu" id="58y_vUqbpx_" role="2OqNvi" />
                             </node>
                           </node>
                         </node>
@@ -4464,51 +4435,45 @@
                     <node concept="29HgVG" id="3VLfU1zyaJY" role="lGtFl">
                       <node concept="3NFfHV" id="3VLfU1zyaJZ" role="3NFExx">
                         <node concept="3clFbS" id="3VLfU1zyaK0" role="2VODD2">
-                          <node concept="3clFbF" id="3VLfU1zyhzx" role="3cqZAp">
-                            <node concept="2OqwBi" id="3VLfU1zBiLt" role="3clFbG">
-                              <node concept="2OqwBi" id="3VLfU1zyhzy" role="2Oq$k0">
-                                <node concept="2OqwBi" id="3VLfU1zyhzz" role="2Oq$k0">
-                                  <node concept="2OqwBi" id="3VLfU1zyhz$" role="2Oq$k0">
-                                    <node concept="2OqwBi" id="3VLfU1zyhz_" role="2Oq$k0">
-                                      <node concept="3TrEf2" id="3VLfU1zyhzA" role="2OqNvi">
+                          <node concept="3clFbF" id="58y_vUqbpTy" role="3cqZAp">
+                            <node concept="2OqwBi" id="58y_vUqbpTz" role="3clFbG">
+                              <node concept="2OqwBi" id="58y_vUqbpT$" role="2Oq$k0">
+                                <node concept="2OqwBi" id="58y_vUqbpT_" role="2Oq$k0">
+                                  <node concept="2YIFZM" id="58y_vUqbpTA" role="2Oq$k0">
+                                    <ref role="37wK5l" to="gonc:58y_vUq9Ola" resolve="binAssignDescendants" />
+                                    <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
+                                    <node concept="2OqwBi" id="58y_vUqbpTB" role="37wK5m">
+                                      <node concept="30H73N" id="58y_vUqbpTC" role="2Oq$k0" />
+                                      <node concept="3TrEf2" id="58y_vUqbpTD" role="2OqNvi">
                                         <ref role="3Tt5mk" to="c4fa:6iIoqg1yCmj" />
                                       </node>
-                                      <node concept="30H73N" id="3VLfU1zyhzB" role="2Oq$k0" />
-                                    </node>
-                                    <node concept="2Rf3mk" id="3VLfU1zyhzC" role="2OqNvi">
-                                      <node concept="1xMEDy" id="3VLfU1zyhzD" role="1xVPHs">
-                                        <node concept="chp4Y" id="3VLfU1zyhzE" role="ri$Ld">
-                                          <ref role="cht4Q" to="mj1l:1exqRp9kgd" resolve="AssignmentExpr" />
-                                        </node>
-                                      </node>
-                                      <node concept="1xIGOp" id="3VLfU1zzZTM" role="1xVPHs" />
                                     </node>
                                   </node>
-                                  <node concept="1z4cxt" id="3VLfU1zyhzF" role="2OqNvi">
-                                    <node concept="1bVj0M" id="3VLfU1zyhzG" role="23t8la">
-                                      <node concept="3clFbS" id="3VLfU1zyhzH" role="1bW5cS">
-                                        <node concept="3clFbF" id="3VLfU1zyhzI" role="3cqZAp">
-                                          <node concept="2YIFZM" id="3VLfU1zZTMc" role="3clFbG">
-                                            <ref role="37wK5l" to="gonc:3VLfU1zZPQt" resolve="containsGlobalVarOrPointer" />
+                                  <node concept="1z4cxt" id="58y_vUqbpTE" role="2OqNvi">
+                                    <node concept="1bVj0M" id="58y_vUqbpTF" role="23t8la">
+                                      <node concept="3clFbS" id="58y_vUqbpTG" role="1bW5cS">
+                                        <node concept="3clFbF" id="58y_vUqbpTH" role="3cqZAp">
+                                          <node concept="2YIFZM" id="58y_vUqbpTI" role="3clFbG">
                                             <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
-                                            <node concept="37vLTw" id="3VLfU1zZTRi" role="37wK5m">
-                                              <ref role="3cqZAo" node="3VLfU1zyhzR" resolve="it" />
+                                            <ref role="37wK5l" to="gonc:3VLfU1zZPQt" resolve="containsGlobalVarOrPointer" />
+                                            <node concept="37vLTw" id="58y_vUqbpTJ" role="37wK5m">
+                                              <ref role="3cqZAo" node="58y_vUqbpTK" resolve="it" />
                                             </node>
                                           </node>
                                         </node>
                                       </node>
-                                      <node concept="Rh6nW" id="3VLfU1zyhzR" role="1bW2Oz">
+                                      <node concept="Rh6nW" id="58y_vUqbpTK" role="1bW2Oz">
                                         <property role="TrG5h" value="it" />
-                                        <node concept="2jxLKc" id="3VLfU1zyhzS" role="1tU5fm" />
+                                        <node concept="2jxLKc" id="58y_vUqbpTL" role="1tU5fm" />
                                       </node>
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="3TrEf2" id="3VLfU1z_IlF" role="2OqNvi">
+                                <node concept="3TrEf2" id="58y_vUqbqyw" role="2OqNvi">
                                   <ref role="3Tt5mk" to="mj1l:7FQByU3CrD0" />
                                 </node>
                               </node>
-                              <node concept="1$rogu" id="3VLfU1zBj84" role="2OqNvi" />
+                              <node concept="1$rogu" id="58y_vUqbpTN" role="2OqNvi" />
                             </node>
                           </node>
                         </node>
@@ -4528,48 +4493,12 @@
       </node>
     </node>
     <node concept="3aamgX" id="3iJyJcZnFat" role="3acgRq">
+      <property role="2n97ot" value="Introduces datarace check after each assignmnent to either global variable or any pointer (conservative)" />
       <ref role="30HIoZ" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
       <node concept="30G5F_" id="3iJyJcZnFau" role="30HLyM">
         <node concept="3clFbS" id="3iJyJcZnFav" role="2VODD2">
           <node concept="3clFbF" id="3iJyJcZnFaw" role="3cqZAp">
-            <node concept="1Wc70l" id="3VLfU1zr_Zg" role="3clFbG">
-              <node concept="2OqwBi" id="3VLfU1zrQbs" role="3uHU7w">
-                <node concept="2OqwBi" id="3VLfU1zrDfn" role="2Oq$k0">
-                  <node concept="2OqwBi" id="3VLfU1zrAkZ" role="2Oq$k0">
-                    <node concept="30H73N" id="3VLfU1zrAca" role="2Oq$k0" />
-                    <node concept="2Rf3mk" id="3VLfU1zrBe_" role="2OqNvi">
-                      <node concept="1xMEDy" id="3VLfU1zrBeB" role="1xVPHs">
-                        <node concept="chp4Y" id="3VLfU1zrBvW" role="ri$Ld">
-                          <ref role="cht4Q" to="mj1l:1exqRp9kgd" resolve="AssignmentExpr" />
-                        </node>
-                      </node>
-                      <node concept="1xIGOp" id="3VLfU1zzZdL" role="1xVPHs" />
-                    </node>
-                  </node>
-                  <node concept="13MTOL" id="3VLfU1zrLEF" role="2OqNvi">
-                    <ref role="13MTZf" to="mj1l:7FQByU3CrD0" />
-                  </node>
-                </node>
-                <node concept="2HwmR7" id="3VLfU1zrTYl" role="2OqNvi">
-                  <node concept="1bVj0M" id="3VLfU1zrTYn" role="23t8la">
-                    <node concept="3clFbS" id="3VLfU1zrTYo" role="1bW5cS">
-                      <node concept="3clFbF" id="3VLfU1zrTYp" role="3cqZAp">
-                        <node concept="2YIFZM" id="3VLfU1zZUju" role="3clFbG">
-                          <ref role="37wK5l" to="gonc:3VLfU1zZPQt" resolve="containsGlobalVarOrPointer" />
-                          <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
-                          <node concept="37vLTw" id="3VLfU1zZUuW" role="37wK5m">
-                            <ref role="3cqZAo" node="3VLfU1zrTYw" resolve="it" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="Rh6nW" id="3VLfU1zrTYw" role="1bW2Oz">
-                      <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="3VLfU1zrTYx" role="1tU5fm" />
-                    </node>
-                  </node>
-                </node>
-              </node>
+            <node concept="1Wc70l" id="58y_vUqbqKB" role="3clFbG">
               <node concept="1Wc70l" id="3VLfU1zrpUl" role="3uHU7B">
                 <node concept="1Wc70l" id="3VLfU1zMM1Q" role="3uHU7B">
                   <node concept="2OqwBi" id="3VLfU1zMPIA" role="3uHU7w">
@@ -4615,19 +4544,44 @@
                     <node concept="3x8VRR" id="3iJyJcZnFaE" role="2OqNvi" />
                   </node>
                 </node>
-                <node concept="2OqwBi" id="3VLfU1zrt5n" role="3uHU7w">
-                  <node concept="2OqwBi" id="3VLfU1zrqd4" role="2Oq$k0">
-                    <node concept="30H73N" id="3VLfU1zrq53" role="2Oq$k0" />
-                    <node concept="2Rf3mk" id="3VLfU1zrr5P" role="2OqNvi">
-                      <node concept="1xMEDy" id="3VLfU1zrr5R" role="1xVPHs">
-                        <node concept="chp4Y" id="3VLfU1zrrmn" role="ri$Ld">
-                          <ref role="cht4Q" to="mj1l:1exqRp9kgd" resolve="AssignmentExpr" />
+                <node concept="2OqwBi" id="58y_vUqbtev" role="3uHU7w">
+                  <node concept="2YIFZM" id="58y_vUqbreE" role="2Oq$k0">
+                    <ref role="37wK5l" to="gonc:58y_vUq9Ola" resolve="binAssignDescendants" />
+                    <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
+                    <node concept="30H73N" id="58y_vUqbrJr" role="37wK5m" />
+                  </node>
+                  <node concept="3GX2aA" id="58y_vUqb$r_" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="58y_vUqbMsI" role="3uHU7w">
+                <node concept="2OqwBi" id="58y_vUqbB6v" role="2Oq$k0">
+                  <node concept="2YIFZM" id="58y_vUqb_5T" role="2Oq$k0">
+                    <ref role="37wK5l" to="gonc:58y_vUq9Ola" resolve="binAssignDescendants" />
+                    <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
+                    <node concept="30H73N" id="58y_vUqb_Bh" role="37wK5m" />
+                  </node>
+                  <node concept="13MTOL" id="58y_vUqbIya" role="2OqNvi">
+                    <ref role="13MTZf" to="mj1l:7FQByU3CrD0" />
+                  </node>
+                </node>
+                <node concept="2HwmR7" id="58y_vUqbMX7" role="2OqNvi">
+                  <node concept="1bVj0M" id="58y_vUqbMX9" role="23t8la">
+                    <node concept="3clFbS" id="58y_vUqbMXa" role="1bW5cS">
+                      <node concept="3clFbF" id="58y_vUqbNcT" role="3cqZAp">
+                        <node concept="2YIFZM" id="58y_vUqbNsn" role="3clFbG">
+                          <ref role="37wK5l" to="gonc:3VLfU1zZPQt" resolve="containsGlobalVarOrPointer" />
+                          <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
+                          <node concept="37vLTw" id="58y_vUqbNFX" role="37wK5m">
+                            <ref role="3cqZAo" node="58y_vUqbMXb" resolve="it" />
+                          </node>
                         </node>
                       </node>
-                      <node concept="1xIGOp" id="3VLfU1zzZuy" role="1xVPHs" />
+                    </node>
+                    <node concept="Rh6nW" id="58y_vUqbMXb" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="58y_vUqbMXc" role="1tU5fm" />
                     </node>
                   </node>
-                  <node concept="3GX2aA" id="3VLfU1zr_Hb" role="2OqNvi" />
                 </node>
               </node>
             </node>
@@ -4735,15 +4689,10 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="2OqwBi" id="3iJyJcZzTAp" role="2GsD0m">
-                            <node concept="30H73N" id="3iJyJcZzTAq" role="2Oq$k0" />
-                            <node concept="2Rf3mk" id="3iJyJcZzTAr" role="2OqNvi">
-                              <node concept="1xMEDy" id="3iJyJcZzTAs" role="1xVPHs">
-                                <node concept="chp4Y" id="3iJyJcZzTAt" role="ri$Ld">
-                                  <ref role="cht4Q" to="mj1l:1exqRp9kgd" resolve="AssignmentExpr" />
-                                </node>
-                              </node>
-                            </node>
+                          <node concept="2YIFZM" id="58y_vUqbSrY" role="2GsD0m">
+                            <ref role="37wK5l" to="gonc:58y_vUq9Ola" resolve="binAssignDescendants" />
+                            <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
+                            <node concept="30H73N" id="58y_vUqbUof" role="37wK5m" />
                           </node>
                         </node>
                         <node concept="3cpWs6" id="3iJyJcZzTAu" role="3cqZAp">
@@ -4829,51 +4778,45 @@
                         <node concept="29HgVG" id="3VLfU1zwzOF" role="lGtFl">
                           <node concept="3NFfHV" id="3VLfU1zwzOG" role="3NFExx">
                             <node concept="3clFbS" id="3VLfU1zwzOH" role="2VODD2">
-                              <node concept="3clFbF" id="3VLfU1zwzON" role="3cqZAp">
-                                <node concept="2OqwBi" id="3VLfU1zBkAL" role="3clFbG">
-                                  <node concept="2OqwBi" id="3VLfU1zwWLy" role="2Oq$k0">
-                                    <node concept="2OqwBi" id="3VLfU1zwFOw" role="2Oq$k0">
-                                      <node concept="2OqwBi" id="3VLfU1zwBFG" role="2Oq$k0">
-                                        <node concept="2OqwBi" id="3VLfU1zwzOI" role="2Oq$k0">
-                                          <node concept="3TrEf2" id="3VLfU1zwzOL" role="2OqNvi">
+                              <node concept="3clFbF" id="58y_vUqbWuT" role="3cqZAp">
+                                <node concept="2OqwBi" id="58y_vUqcb4J" role="3clFbG">
+                                  <node concept="2OqwBi" id="58y_vUqca12" role="2Oq$k0">
+                                    <node concept="2OqwBi" id="58y_vUqc27c" role="2Oq$k0">
+                                      <node concept="2YIFZM" id="58y_vUqbWAL" role="2Oq$k0">
+                                        <ref role="37wK5l" to="gonc:58y_vUq9Ola" resolve="binAssignDescendants" />
+                                        <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
+                                        <node concept="2OqwBi" id="58y_vUqbWPx" role="37wK5m">
+                                          <node concept="30H73N" id="58y_vUqbWHu" role="2Oq$k0" />
+                                          <node concept="3TrEf2" id="58y_vUqbXCA" role="2OqNvi">
                                             <ref role="3Tt5mk" to="c4fa:6iIoqg1yCmj" />
                                           </node>
-                                          <node concept="30H73N" id="3VLfU1zwzOM" role="2Oq$k0" />
-                                        </node>
-                                        <node concept="2Rf3mk" id="3VLfU1zwDG5" role="2OqNvi">
-                                          <node concept="1xMEDy" id="3VLfU1zwDG7" role="1xVPHs">
-                                            <node concept="chp4Y" id="3VLfU1zwDOa" role="ri$Ld">
-                                              <ref role="cht4Q" to="mj1l:1exqRp9kgd" resolve="AssignmentExpr" />
-                                            </node>
-                                          </node>
-                                          <node concept="1xIGOp" id="3VLfU1zzmSj" role="1xVPHs" />
                                         </node>
                                       </node>
-                                      <node concept="1z4cxt" id="3VLfU1zx96v" role="2OqNvi">
-                                        <node concept="1bVj0M" id="3VLfU1zx96x" role="23t8la">
-                                          <node concept="3clFbS" id="3VLfU1zx96y" role="1bW5cS">
-                                            <node concept="3clFbF" id="3VLfU1zx9cA" role="3cqZAp">
-                                              <node concept="2YIFZM" id="3VLfU1zZUNH" role="3clFbG">
+                                      <node concept="1z4cxt" id="58y_vUqc9ci" role="2OqNvi">
+                                        <node concept="1bVj0M" id="58y_vUqc9ck" role="23t8la">
+                                          <node concept="3clFbS" id="58y_vUqc9cl" role="1bW5cS">
+                                            <node concept="3clFbF" id="58y_vUqc9la" role="3cqZAp">
+                                              <node concept="2YIFZM" id="58y_vUqc9$t" role="3clFbG">
                                                 <ref role="37wK5l" to="gonc:3VLfU1zZPQt" resolve="containsGlobalVarOrPointer" />
                                                 <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
-                                                <node concept="37vLTw" id="3VLfU1zZUSP" role="37wK5m">
-                                                  <ref role="3cqZAo" node="3VLfU1zx96z" resolve="it" />
+                                                <node concept="37vLTw" id="58y_vUqc9Gv" role="37wK5m">
+                                                  <ref role="3cqZAo" node="58y_vUqc9cm" resolve="it" />
                                                 </node>
                                               </node>
                                             </node>
                                           </node>
-                                          <node concept="Rh6nW" id="3VLfU1zx96z" role="1bW2Oz">
+                                          <node concept="Rh6nW" id="58y_vUqc9cm" role="1bW2Oz">
                                             <property role="TrG5h" value="it" />
-                                            <node concept="2jxLKc" id="3VLfU1zx96$" role="1tU5fm" />
+                                            <node concept="2jxLKc" id="58y_vUqc9cn" role="1tU5fm" />
                                           </node>
                                         </node>
                                       </node>
                                     </node>
-                                    <node concept="3TrEf2" id="3VLfU1zwXhB" role="2OqNvi">
+                                    <node concept="3TrEf2" id="58y_vUqcaxD" role="2OqNvi">
                                       <ref role="3Tt5mk" to="mj1l:7FQByU3CrD0" />
                                     </node>
                                   </node>
-                                  <node concept="1$rogu" id="3VLfU1zBkXo" role="2OqNvi" />
+                                  <node concept="1$rogu" id="58y_vUqcbGK" role="2OqNvi" />
                                 </node>
                               </node>
                             </node>
@@ -4929,51 +4872,45 @@
                     <node concept="29HgVG" id="3VLfU1zxovc" role="lGtFl">
                       <node concept="3NFfHV" id="3VLfU1zxrQd" role="3NFExx">
                         <node concept="3clFbS" id="3VLfU1zxrQe" role="2VODD2">
-                          <node concept="3clFbF" id="3VLfU1zxs5l" role="3cqZAp">
-                            <node concept="2OqwBi" id="3VLfU1zBjG8" role="3clFbG">
-                              <node concept="2OqwBi" id="3VLfU1zxs5m" role="2Oq$k0">
-                                <node concept="2OqwBi" id="3VLfU1zxs5n" role="2Oq$k0">
-                                  <node concept="2OqwBi" id="3VLfU1zxs5o" role="2Oq$k0">
-                                    <node concept="2OqwBi" id="3VLfU1zxs5p" role="2Oq$k0">
-                                      <node concept="3TrEf2" id="3VLfU1zxs5q" role="2OqNvi">
+                          <node concept="3clFbF" id="58y_vUqcc4E" role="3cqZAp">
+                            <node concept="2OqwBi" id="58y_vUqcnFe" role="3clFbG">
+                              <node concept="2OqwBi" id="58y_vUqcmBZ" role="2Oq$k0">
+                                <node concept="2OqwBi" id="58y_vUqcemI" role="2Oq$k0">
+                                  <node concept="2YIFZM" id="58y_vUqcccO" role="2Oq$k0">
+                                    <ref role="37wK5l" to="gonc:58y_vUq9Ola" resolve="binAssignDescendants" />
+                                    <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
+                                    <node concept="2OqwBi" id="58y_vUqccr_" role="37wK5m">
+                                      <node concept="30H73N" id="58y_vUqccjy" role="2Oq$k0" />
+                                      <node concept="3TrEf2" id="58y_vUqcdhW" role="2OqNvi">
                                         <ref role="3Tt5mk" to="c4fa:6iIoqg1yCmj" />
                                       </node>
-                                      <node concept="30H73N" id="3VLfU1zxs5r" role="2Oq$k0" />
-                                    </node>
-                                    <node concept="2Rf3mk" id="3VLfU1zxs5s" role="2OqNvi">
-                                      <node concept="1xMEDy" id="3VLfU1zxs5t" role="1xVPHs">
-                                        <node concept="chp4Y" id="3VLfU1zxs5u" role="ri$Ld">
-                                          <ref role="cht4Q" to="mj1l:1exqRp9kgd" resolve="AssignmentExpr" />
-                                        </node>
-                                      </node>
-                                      <node concept="1xIGOp" id="3VLfU1zzYxf" role="1xVPHs" />
                                     </node>
                                   </node>
-                                  <node concept="1z4cxt" id="3VLfU1zxs5v" role="2OqNvi">
-                                    <node concept="1bVj0M" id="3VLfU1zxs5w" role="23t8la">
-                                      <node concept="3clFbS" id="3VLfU1zxs5x" role="1bW5cS">
-                                        <node concept="3clFbF" id="3VLfU1zxs5y" role="3cqZAp">
-                                          <node concept="2YIFZM" id="3VLfU1zZV79" role="3clFbG">
+                                  <node concept="1z4cxt" id="58y_vUqclS4" role="2OqNvi">
+                                    <node concept="1bVj0M" id="58y_vUqclS6" role="23t8la">
+                                      <node concept="3clFbS" id="58y_vUqclS7" role="1bW5cS">
+                                        <node concept="3clFbF" id="58y_vUqcm11" role="3cqZAp">
+                                          <node concept="2YIFZM" id="58y_vUqcm8X" role="3clFbG">
                                             <ref role="37wK5l" to="gonc:3VLfU1zZPQt" resolve="containsGlobalVarOrPointer" />
                                             <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
-                                            <node concept="37vLTw" id="3VLfU1zZVcj" role="37wK5m">
-                                              <ref role="3cqZAo" node="3VLfU1zxs5F" resolve="it" />
+                                            <node concept="37vLTw" id="58y_vUqcmgZ" role="37wK5m">
+                                              <ref role="3cqZAo" node="58y_vUqclS8" resolve="it" />
                                             </node>
                                           </node>
                                         </node>
                                       </node>
-                                      <node concept="Rh6nW" id="3VLfU1zxs5F" role="1bW2Oz">
+                                      <node concept="Rh6nW" id="58y_vUqclS8" role="1bW2Oz">
                                         <property role="TrG5h" value="it" />
-                                        <node concept="2jxLKc" id="3VLfU1zxs5G" role="1tU5fm" />
+                                        <node concept="2jxLKc" id="58y_vUqclS9" role="1tU5fm" />
                                       </node>
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="3TrEf2" id="3VLfU1zxs5H" role="2OqNvi">
+                                <node concept="3TrEf2" id="58y_vUqcn8A" role="2OqNvi">
                                   <ref role="3Tt5mk" to="mj1l:7FQByU3CrD0" />
                                 </node>
                               </node>
-                              <node concept="1$rogu" id="3VLfU1zBk2J" role="2OqNvi" />
+                              <node concept="1$rogu" id="58y_vUqcojf" role="2OqNvi" />
                             </node>
                           </node>
                         </node>
@@ -5136,17 +5073,11 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="3VLfU1zMQXw" role="2GsD0m">
-                    <node concept="2GrUjf" id="3VLfU1zMQH$" role="2Oq$k0">
+                  <node concept="2YIFZM" id="58y_vUqcoRs" role="2GsD0m">
+                    <ref role="37wK5l" to="gonc:58y_vUq9Ola" resolve="binAssignDescendants" />
+                    <ref role="1Pybhc" to="gonc:3VLfU1zZPGL" resolve="DataraceUtils" />
+                    <node concept="2GrUjf" id="58y_vUqcoWa" role="37wK5m">
                       <ref role="2Gs0qQ" node="3VLfU1zMQv0" resolve="fun" />
-                    </node>
-                    <node concept="2Rf3mk" id="3VLfU1zMTh2" role="2OqNvi">
-                      <node concept="1xMEDy" id="3VLfU1zMTh4" role="1xVPHs">
-                        <node concept="chp4Y" id="3VLfU1zMThR" role="ri$Ld">
-                          <ref role="cht4Q" to="mj1l:1exqRp9kgd" resolve="AssignmentExpr" />
-                        </node>
-                      </node>
-                      <node concept="1xIGOp" id="3VLfU1zMWfP" role="1xVPHs" />
                     </node>
                   </node>
                 </node>
