@@ -2009,13 +2009,13 @@
   <node concept="2S6QgY" id="627_yy34G9I">
     <property role="TrG5h" value="addRemoval" />
     <property role="2ZfUl0" value="true" />
-    <property role="3GE5qa" value="code" />
-    <ref role="2ZfgGC" to="2c95:627_yy34G14" resolve="AbstractCCodeParagraph" />
+    <property role="3GE5qa" value="modelContent" />
+    <ref role="2ZfgGC" to="2c95:627_yy34G14" resolve="AbstractModelContentParagraph" />
     <node concept="2S6ZIM" id="627_yy34G9J" role="2ZfVej">
       <node concept="3clFbS" id="627_yy34G9K" role="2VODD2">
         <node concept="3clFbF" id="627_yy34G9L" role="3cqZAp">
           <node concept="Xl_RD" id="627_yy34G9M" role="3clFbG">
-            <property role="Xl_RC" value="Add Code Exception" />
+            <property role="Xl_RC" value="Add Model Content Removal" />
           </node>
         </node>
       </node>
@@ -2039,13 +2039,13 @@
   <node concept="2S6QgY" id="627_yy34G9V">
     <property role="TrG5h" value="createEmbeddingBelow" />
     <property role="2ZfUl0" value="true" />
-    <property role="3GE5qa" value="code" />
-    <ref role="2ZfgGC" to="2c95:627_yy34G1m" resolve="CodeRefWord" />
+    <property role="3GE5qa" value="modelContent" />
+    <ref role="2ZfgGC" to="2c95:627_yy34G1m" resolve="ModelContentRefWord" />
     <node concept="2S6ZIM" id="627_yy34G9W" role="2ZfVej">
       <node concept="3clFbS" id="627_yy34G9X" role="2VODD2">
         <node concept="3clFbF" id="627_yy34G9Y" role="3cqZAp">
           <node concept="Xl_RD" id="627_yy34G9Z" role="3clFbG">
-            <property role="Xl_RC" value="Embed this Code Below" />
+            <property role="Xl_RC" value="Embed this Model Content Below" />
           </node>
         </node>
       </node>
@@ -2056,12 +2056,12 @@
           <node concept="3cpWsn" id="627_yy34Ga3" role="3cpWs9">
             <property role="TrG5h" value="ccp" />
             <node concept="3Tqbb2" id="627_yy34Ga4" role="1tU5fm">
-              <ref role="ehGHo" to="2c95:627_yy34G1i" resolve="CCodeParagraph" />
+              <ref role="ehGHo" to="2c95:627_yy34G1i" resolve="ModelContentAsTextParagraph" />
             </node>
             <node concept="2ShNRf" id="627_yy34Ga5" role="33vP2m">
               <node concept="3zrR0B" id="627_yy34Ga6" role="2ShVmc">
                 <node concept="3Tqbb2" id="627_yy34Ga7" role="3zrR0E">
-                  <ref role="ehGHo" to="2c95:627_yy34G1i" resolve="CCodeParagraph" />
+                  <ref role="ehGHo" to="2c95:627_yy34G1i" resolve="ModelContentAsTextParagraph" />
                 </node>
               </node>
             </node>
@@ -2232,7 +2232,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="1SYZy6QShAd">
-    <property role="3GE5qa" value="code" />
+    <property role="3GE5qa" value="modelContent" />
     <property role="TrG5h" value="addPrefixAnnotation" />
     <ref role="2ZfgGC" to="2c95:2TZO3DbuxwK" resolve="Document" />
     <node concept="2S6ZIM" id="1SYZy6QShAe" role="2ZfVej">
@@ -2252,7 +2252,7 @@
               <node concept="2Sf5sV" id="1SYZy6QSrX7" role="2Oq$k0" />
               <node concept="3CFZ6_" id="1SYZy6QSsuE" role="2OqNvi">
                 <node concept="3CFYIy" id="1SYZy6QSsyo" role="3CFYIz">
-                  <ref role="3CFYIx" to="2c95:1SYZy6QSg06" resolve="CodeEmbeddingPrefix" />
+                  <ref role="3CFYIx" to="2c95:1SYZy6QSg06" resolve="ModelContentEmbeddingPrefix" />
                 </node>
               </node>
             </node>
@@ -3013,6 +3013,34 @@
           <node concept="2OqwBi" id="1CZbvxNcatF" role="3clFbG">
             <node concept="2Sf5sV" id="1CZbvxNcaru" role="2Oq$k0" />
             <node concept="1PgB_6" id="1CZbvxNcaRJ" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="41AlOFgm7fq">
+    <property role="3GE5qa" value="modelContent" />
+    <property role="TrG5h" value="UpdateCodeText" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="2c95:627_yy34G1i" resolve="ModelContentAsTextParagraph" />
+    <node concept="2S6ZIM" id="41AlOFgm7fr" role="2ZfVej">
+      <node concept="3clFbS" id="41AlOFgm7fs" role="2VODD2">
+        <node concept="3clFbF" id="41AlOFgmbdn" role="3cqZAp">
+          <node concept="Xl_RD" id="41AlOFgmbdm" role="3clFbG">
+            <property role="Xl_RC" value="Update Model Content Text" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="41AlOFgm7ft" role="2ZfgGD">
+      <node concept="3clFbS" id="41AlOFgm7fu" role="2VODD2">
+        <node concept="3clFbF" id="41AlOFgmbBr" role="3cqZAp">
+          <node concept="2OqwBi" id="41AlOFgmc49" role="3clFbG">
+            <node concept="2Sf5sV" id="41AlOFgmbBq" role="2Oq$k0" />
+            <node concept="2qgKlT" id="41AlOFgmcTi" role="2OqNvi">
+              <ref role="37wK5l" to="4gky:41AlOFglSb0" resolve="updateText" />
+              <node concept="1XNTG" id="41AlOFgwibj" role="37wK5m" />
+            </node>
           </node>
         </node>
       </node>

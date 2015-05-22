@@ -5,7 +5,9 @@
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" />
+  </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -40,14 +42,6 @@
         <property id="6386504476136521408" name="fileName" index="2Sb_kV" />
         <reference id="6386504476136521409" name="path" index="2Sb_kU" />
       </concept>
-      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
-        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
-      </concept>
-      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
-        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
-        <child id="6386504476136472817" name="paths" index="2SbYGa" />
-        <child id="8624890525767800998" name="sizeSpecs" index="3SH5Mq" />
-      </concept>
       <concept id="4220250885135199523" name="com.mbeddr.doc.structure.ToDoWord" flags="ng" index="3d4VFM">
         <child id="4220250885135204208" name="text" index="3d4Uyx" />
       </concept>
@@ -75,12 +69,6 @@
         <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
       </concept>
       <concept id="3350625596579911760" name="com.mbeddr.doc.structure.EmptyDocContent" flags="ng" index="1_1sxE" />
-      <concept id="8624890525767637976" name="com.mbeddr.doc.structure.PageWidthSizeSpec" flags="ng" index="3SGHZ$">
-        <property id="8624890525767637977" name="percentage" index="3SGHZ_" />
-      </concept>
-      <concept id="8624890525767800825" name="com.mbeddr.doc.structure.NamedSizeSpec" flags="ng" index="3SH5f5">
-        <child id="8624890525767800827" name="spec" index="3SH5f7" />
-      </concept>
       <concept id="5378658552262903588" name="com.mbeddr.doc.structure.Item" flags="ng" index="3X6T9g">
         <child id="5378658552262903589" name="text" index="3X6T9h" />
       </concept>
@@ -89,55 +77,20 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractFilePicker" flags="ng" index="3N1QpV">
-        <property id="6156524541422553710" name="path" index="3N1Lgt" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
-  <node concept="2SbYGP" id="2ipt67gLxW0">
-    <property role="TrG5h" value="Config" />
-    <property role="3GE5qa" value="config" />
-    <node concept="2SbYGw" id="45LXldJZEw7" role="2SbYGa">
-      <property role="TrG5h" value="images" />
-      <node concept="9PVaO" id="7aNtjNm4Cpc" role="9PVG_">
-        <property role="3N1Lgt" value="images/concepts" />
-      </node>
-    </node>
-    <node concept="3SH5f5" id="7uLL3Mf2teF" role="3SH5Mq">
-      <property role="TrG5h" value="width100" />
-      <node concept="3SGHZ$" id="7uLL3Mf2teH" role="3SH5f7">
-        <property role="3SGHZ_" value="100" />
-      </node>
-    </node>
-    <node concept="3SH5f5" id="7uLL3Mf2teJ" role="3SH5Mq">
-      <property role="TrG5h" value="width80" />
-      <node concept="3SGHZ$" id="7uLL3Mf2teK" role="3SH5f7">
-        <property role="3SGHZ_" value="80" />
-      </node>
-    </node>
-    <node concept="2SbYGw" id="5jGyeU5XLXS" role="Cbewh">
-      <property role="TrG5h" value="vis" />
-      <node concept="9PVaO" id="7aNtjNm4Cp9" role="9PVG_">
-        <property role="3N1Lgt" value="_vis" />
-      </node>
-    </node>
-  </node>
   <node concept="1_1swa" id="1ig5Elj9K1M">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="A_MPS" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5Elj9VE4" role="1_0VJ0">
       <property role="TrG5h" value="mps" />
       <property role="1_0VJr" value="JetBrains MPS" />
@@ -270,7 +223,7 @@
       <node concept="1_0LV8" id="1ig5Eljeulc" role="1_0VJ0">
         <node concept="19SGf9" id="1ig5Eljeuld" role="1_0LWR">
           <node concept="19SUe$" id="1ig5Eljeule" role="19SJt6">
-            <property role="19SUeA" value="Traditionally, the above mentioned benefits of a projectional editor have come at a price: the user experience of traditional projectional editors was not very good, in particular, when editing code that looked like \&quot;normal text\&quot;. Consequently, projectional editors were not adopted. However, MPS is doing a much better job with this. We have conducted a study with 20 MPS users (most of them mbeddr users as well), and the conclusion is that the editor works well enough. Take a look at this paper for details: " />
+            <property role="19SUeA" value="Traditionally, the above mentioned benefits of a projectional editor have come at a price: the user experience of traditional projectional editors was not very good, in particular, when editing code that looked like &quot;normal text&quot;. Consequently, projectional editors were not adopted. However, MPS is doing a much better job with this. We have conducted a study with 20 MPS users (most of them mbeddr users as well), and the conclusion is that the editor works well enough. Take a look at this paper for details: " />
           </node>
           <node concept="1hOBRO" id="1ig5EljeunI" role="19SJt6">
             <node concept="19SGf9" id="1ig5EljeunJ" role="$DsGW">
@@ -289,7 +242,7 @@
   <node concept="1_1swa" id="1ig5EljbCbt">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="B_mbeddr" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5EljbCc6" role="1_0VJ0">
       <property role="TrG5h" value="mbeddr" />
       <property role="1_0VJr" value="mbeddr" />
@@ -394,9 +347,9 @@
         </node>
         <node concept="2SaynC" id="1ig5EljeuEl" role="1_0VJ0">
           <property role="TrG5h" value="mbeddrArchitecture" />
-          <node concept="2Sb_l4" id="1ig5EljeuEx" role="2SbwM5">
+          <node concept="2Sb_l4" id="2fBMM_3YhqV" role="2SbwM5">
             <property role="2Sb_kV" value="architecture.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4H" resolve="conceptImages" />
           </node>
           <node concept="OjmMv" id="1ig5EljeuEn" role="2SaI5j">
             <node concept="19SGf9" id="1ig5EljeuEo" role="OjmMu">
@@ -443,7 +396,7 @@
   <node concept="1_1swa" id="1ig5EljhyTp">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="D_CBMC" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5EljhyWt" role="1_0VJ0">
       <property role="TrG5h" value="cbmc" />
       <property role="1_0VJr" value="CBMC" />
@@ -531,7 +484,7 @@
   <node concept="1_1swa" id="1ig5Eljjea0">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="E_Graphviz" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5EljjecF" role="1_0VJ0">
       <property role="TrG5h" value="PlantUMLAndGraphviz" />
       <property role="1_0VJr" value="PlantUML and Graphviz" />
@@ -575,14 +528,14 @@
   <node concept="1_1swa" id="1ig5Eljjeuk">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="C_GccMakeGdb" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5Eljjexg" role="1_0VJ0">
       <property role="TrG5h" value="gccMakeGdb" />
       <property role="1_0VJr" value="gcc, make and gdb" />
       <node concept="1_0LV8" id="1ig5EljjeEr" role="1_0VJ0">
         <node concept="19SGf9" id="1ig5EljjeEs" role="1_0LWR">
           <node concept="19SUe$" id="1ig5EljjeEt" role="19SJt6">
-            <property role="19SUeA" value="mbeddr does not come with its own compiler. While this could be considered \&quot;cheating\&quot;, it is actually a good idea because " />
+            <property role="19SUeA" value="mbeddr does not come with its own compiler. While this could be considered &quot;cheating&quot;, it is actually a good idea because " />
           </node>
           <node concept="1jUjqm" id="1ig5EljjeES" role="19SJt6">
             <node concept="19SGf9" id="1ig5EljjeET" role="$DsGW">
@@ -653,7 +606,7 @@
   <node concept="1_1swa" id="1ig5EljjePI">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="F_Java" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5EljjePJ" role="1_0VJ0">
       <property role="TrG5h" value="java" />
       <property role="1_0VJr" value="Java" />
@@ -676,7 +629,7 @@
   <node concept="1_1swa" id="1ig5Eljjfz2">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_Concepts" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="1ig5EljjfA_" role="1_0VJ0">
       <property role="TrG5h" value="concepts" />
       <property role="1_0VJr" value="mbeddr Concepts" />

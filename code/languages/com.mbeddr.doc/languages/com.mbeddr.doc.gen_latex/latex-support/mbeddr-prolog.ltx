@@ -37,10 +37,28 @@
 \newcommand{\ic}[1]{\changefont{cmtt}{m}{n}{#1}\normalfont}  % inline code
 \newcommand{\lcr}[1]{\changefont{cmtt}{m}{n}{#1}\normalfont} % language
 
+\definecolor{todo}{rgb}{1.0,1.0,0}
+
+\newcommand{\todo}[1]{\colorbox{todo}{#1}}
+
 \definecolor{myGray1}{rgb}{.5,.5,.5}
 \definecolor{myGray3}{rgb}{0.65,0.65,.65}
 \definecolor{myGray2}{rgb}{0.95,0.95,.95}
 \definecolor{myGray4}{rgb}{0.85,0.85,.85}
+
+\definecolor{lightgray}{gray}{0.75}
+
+\definecolor{codecolor}{gray}{0.1}
+\definecolor{blackblack}{gray}{0}
+
+
+\newcommand\greyboxnote[1]{%
+  \vskip\baselineskip%
+  \par\noindent\colorbox{lightgray}{%
+    \begin{minipage}{\textwidth}#1\end{minipage}%
+  }%
+  \vskip\baselineskip%
+}
 
 \usepackage[scaled]{beramono}
 

@@ -131,6 +131,9 @@
     <node concept="PrWs8" id="7YIk2VQGXrJ" role="PzmwI">
       <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
     </node>
+    <node concept="PrWs8" id="3RtPbXOi6a7" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3RtPbXOi5Ir" resolve="ITriggerCommenting" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7FQByU3CrCS">
     <property role="TrG5h" value="PrimitiveType" />

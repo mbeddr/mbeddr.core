@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:38897e08-83fd-42c7-91d3-65b102721940(com.mbeddr.tutorial.documentation.ug.cextensions)" content="root">
+<model ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)">
   <persistence version="9" />
+  <languages>
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="0" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="0" />
+  </languages>
   <imports />
   <registry>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
@@ -21,7 +25,7 @@
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractFilePicker" flags="ng" index="3N1QpV">
+      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
         <property id="6156524541422553710" name="path" index="3N1Lgt" />
       </concept>
     </language>
@@ -34,36 +38,60 @@
       </concept>
     </language>
   </registry>
-  <node concept="2SbYGP" id="2ipt67gLxW0">
+  <node concept="2SbYGP" id="2fBMM_3XZ4C">
     <property role="TrG5h" value="Config" />
     <property role="3GE5qa" value="config" />
-    <node concept="2SbYGw" id="45LXldJZEw7" role="2SbYGa">
+    <node concept="2SbYGw" id="2fBMM_3XZ4D" role="2SbYGa">
       <property role="TrG5h" value="images" />
-      <node concept="9PVaO" id="7aNtjNm4Cpc" role="9PVG_">
+      <node concept="9PVaO" id="2fBMM_3XZ4E" role="9PVG_">
         <property role="3N1Lgt" value="images" />
       </node>
     </node>
-    <node concept="2SbYGw" id="4I$rsvbf6Gh" role="2SbYGa">
+    <node concept="2SbYGw" id="2fBMM_3XZ4F" role="2SbYGa">
       <property role="TrG5h" value="smimages" />
-      <node concept="9PVaO" id="4I$rsvbf6Gi" role="9PVG_">
+      <node concept="9PVaO" id="2fBMM_3XZ4G" role="9PVG_">
         <property role="3N1Lgt" value="images/cextensions/statemachines" />
       </node>
     </node>
-    <node concept="3SH5f5" id="7uLL3Mf2teF" role="3SH5Mq">
+    <node concept="2SbYGw" id="2fBMM_3XZ4H" role="2SbYGa">
+      <property role="TrG5h" value="conceptImages" />
+      <node concept="9PVaO" id="2fBMM_3XZ4I" role="9PVG_">
+        <property role="3N1Lgt" value="images/concepts" />
+      </node>
+    </node>
+    <node concept="2SbYGw" id="2fBMM_3XZ4J" role="2SbYGa">
+      <property role="TrG5h" value="hwimages" />
+      <node concept="9PVaO" id="2fBMM_3XZ4K" role="9PVG_">
+        <property role="3N1Lgt" value="images/ctooling/helloWolrd" />
+      </node>
+    </node>
+    <node concept="2SbYGw" id="2fBMM_3XZ4L" role="2SbYGa">
+      <property role="TrG5h" value="fundamentalImages" />
+      <node concept="9PVaO" id="2fBMM_3XZ4M" role="9PVG_">
+        <property role="3N1Lgt" value="images/fundamentals" />
+      </node>
+    </node>
+    <node concept="2SbYGw" id="45LXldJZEw7" role="2SbYGa">
+      <property role="TrG5h" value="imagesProcessSupport" />
+      <node concept="9PVaO" id="7aNtjNm4Cpc" role="9PVG_">
+        <property role="3N1Lgt" value="images/processSupport" />
+      </node>
+    </node>
+    <node concept="3SH5f5" id="2fBMM_3XZ4N" role="3SH5Mq">
       <property role="TrG5h" value="width100" />
-      <node concept="3SGHZ$" id="7uLL3Mf2teH" role="3SH5f7">
+      <node concept="3SGHZ$" id="2fBMM_3XZ4O" role="3SH5f7">
         <property role="3SGHZ_" value="100" />
       </node>
     </node>
-    <node concept="3SH5f5" id="7uLL3Mf2teJ" role="3SH5Mq">
+    <node concept="3SH5f5" id="2fBMM_3XZ4P" role="3SH5Mq">
       <property role="TrG5h" value="width80" />
-      <node concept="3SGHZ$" id="7uLL3Mf2teK" role="3SH5f7">
+      <node concept="3SGHZ$" id="2fBMM_3XZ4Q" role="3SH5f7">
         <property role="3SGHZ_" value="80" />
       </node>
     </node>
-    <node concept="2SbYGw" id="5jGyeU5XLXS" role="Cbewh">
+    <node concept="2SbYGw" id="2fBMM_3XZ4R" role="Cbewh">
       <property role="TrG5h" value="vis" />
-      <node concept="9PVaO" id="7aNtjNm4Cp9" role="9PVG_">
+      <node concept="9PVaO" id="2fBMM_3XZ4S" role="9PVG_">
         <property role="3N1Lgt" value="_vis" />
       </node>
     </node>

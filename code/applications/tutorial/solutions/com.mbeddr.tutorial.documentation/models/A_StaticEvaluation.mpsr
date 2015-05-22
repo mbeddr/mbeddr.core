@@ -2,6 +2,7 @@
 <model ref="r:38897e08-83fd-42c7-91d3-65b102721940(com.mbeddr.tutorial.documentation.ug.cextensions)" content="root">
   <persistence version="9" />
   <imports>
+    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" implicit="true" />
     <import index="zxcx" ref="r:af51c5c3-b54b-4a75-a1e6-409757d1a380(com.mbeddr.tutorial.documentation.code)" implicit="true" />
   </imports>
   <registry>
@@ -22,24 +23,24 @@
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
       </concept>
-      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.CPNamedNodeElement" flags="ng" index="2NCMab">
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
       </concept>
-      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.CodePointer" flags="ng" index="2NCZwO">
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
+      <concept id="2286331641392318852" name="com.mbeddr.doc.structure.MenuFormattedText" flags="ng" index="2OlAs7" />
       <concept id="2286331641391049225" name="com.mbeddr.doc.structure.KeyPressFormattedText" flags="ng" index="2OoWia" />
       <concept id="6386504476136420159" name="com.mbeddr.doc.structure.ImgRefWord" flags="ng" index="2Sbdz4">
         <reference id="6386504476136420174" name="image" index="2SbdyP" />
       </concept>
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
-      <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
-      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.CCodeAsImageParagraph" flags="ng" index="3z_lpz">
+      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.ModelContentAsImageParagraph" flags="ng" index="3z_lpz">
         <child id="6955693250238922832" name="description" index="3z_lpS" />
         <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
       </concept>
-      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractCCodeParagraph" flags="ng" index="3z_lpG">
-        <property id="6955693250238922823" name="showCode" index="3z_lpJ" />
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
@@ -51,6 +52,7 @@
       <concept id="3350625596580064222" name="com.mbeddr.doc.structure.AbstractSection" flags="ng" index="1_0VJ$">
         <property id="3350625596580064225" name="text" index="1_0VJr" />
       </concept>
+      <concept id="3350625596580064455" name="com.mbeddr.doc.structure.Section" flags="ng" index="1_0VNX" />
       <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa">
         <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
       </concept>
@@ -75,10 +77,10 @@
   <node concept="1_1swa" id="69uDFDaU6IU">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="A_StaticEvaluation" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
-    <node concept="1mvXsy" id="69uDFDaUgOZ" role="1_0VJ0">
-      <property role="1_0VJr" value="Static Evaluation" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <node concept="1_0VNX" id="3mn43GO8chN" role="1_0VJ0">
       <property role="TrG5h" value="staticEvaluation" />
+      <property role="1_0VJr" value="Static Evaluation" />
       <node concept="1_0LV8" id="69uDFDaUqtM" role="1_0VJ0">
         <node concept="19SGf9" id="69uDFDaUqtN" role="1_0LWR">
           <node concept="19SUe$" id="69uDFDaUqtO" role="19SJt6">
@@ -126,7 +128,7 @@
             </node>
           </node>
           <node concept="19SUe$" id="69uDFDb1ezG" role="19SJt6">
-            <property role="19SUeA" value=" expression you can ask mbeddr's code generator to first use the interpreter to calculate the static value and use this value then in the generated code. This functionality was introduced so that your code readability does not need to be sacrificed for performance reasons (in traditional C code you would typically see \&quot;magic numbers\&quot; where " />
+            <property role="19SUeA" value=" expression you can ask mbeddr's code generator to first use the interpreter to calculate the static value and use this value then in the generated code. This functionality was introduced so that your code readability does not need to be sacrificed for performance reasons (in traditional C code you would typically see &quot;magic numbers&quot; where " />
           </node>
           <node concept="1jUjqm" id="69uDFDb5kGk" role="19SJt6">
             <node concept="19SGf9" id="69uDFDb5kGl" role="$DsGW">
@@ -151,7 +153,7 @@
           <node concept="2OoWia" id="69uDFDb5kZP" role="19SJt6">
             <node concept="19SGf9" id="69uDFDb5kZQ" role="$DsGW">
               <node concept="19SUe$" id="69uDFDb5kZR" role="19SJt6">
-                <property role="19SUeA" value="CTRL+ALT+T" />
+                <property role="19SUeA" value="Ctrl+Alt+T" />
               </node>
             </node>
           </node>
@@ -196,9 +198,9 @@
           <node concept="19SUe$" id="69uDFDb5kZn" role="19SJt6">
             <property role="19SUeA" value=" expression (" />
           </node>
-          <node concept="1jUjqm" id="1CZbvxN9WpP" role="19SJt6">
-            <node concept="19SGf9" id="1CZbvxN9WpQ" role="$DsGW">
-              <node concept="19SUe$" id="1CZbvxN9WpR" role="19SJt6">
+          <node concept="2OlAs7" id="yaVrOuuI7i" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuuI7l" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuuI7m" role="19SJt6">
                 <property role="19SUeA" value="Add rounding operation" />
               </node>
             </node>
@@ -290,7 +292,7 @@
                 </node>
               </node>
               <node concept="19SUe$" id="1CZbvxN9Ws7" role="19SJt6">
-                <property role="19SUeA" value=" rounds towards \&quot;nearest neighbor\&quot; unless both neighbors are equidistant, in which case it rounds up. The result is an integer." />
+                <property role="19SUeA" value=" rounds towards &quot;nearest neighbor&quot; unless both neighbors are equidistant, in which case it rounds up. The result is an integer." />
               </node>
             </node>
           </node>

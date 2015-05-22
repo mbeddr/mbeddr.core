@@ -2,6 +2,7 @@
 <model ref="r:38897e08-83fd-42c7-91d3-65b102721940(com.mbeddr.tutorial.documentation.ug.cextensions)" content="root">
   <persistence version="9" />
   <imports>
+    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" implicit="true" />
     <import index="c4ys" ref="r:4fb22f91-1e13-48a0-a300-21fa004a07ef(com.mbeddr.tutorial.documentation.ug.mbeddrCvsC99)" implicit="true" />
     <import index="cmgk" ref="r:679066bc-2da8-4932-a09c-5d2b3d47b911(com.mbeddr.ext.units.siunits)" implicit="true" />
     <import index="e1tx" ref="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" implicit="true" />
@@ -25,10 +26,10 @@
         <child id="126932837435370865" name="authors" index="Wq1Bf" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
-      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.CPNamedNodeElement" flags="ng" index="2NCMab">
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
       </concept>
-      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.CodePointer" flags="ng" index="2NCZwO">
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
       <concept id="2286331641391049225" name="com.mbeddr.doc.structure.KeyPressFormattedText" flags="ng" index="2OoWia" />
@@ -37,19 +38,19 @@
         <property id="126932837435370851" name="name" index="Wq1Bt" />
       </concept>
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
-      <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
       <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
       </concept>
-      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractCCodeParagraph" flags="ng" index="3z_lpG">
-        <property id="6955693250238922823" name="showCode" index="3z_lpJ" />
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
-      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.CCodeParagraph" flags="ng" index="3z_lpU">
+      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
+        <property id="6955693250238922835" name="text" index="3z_lpV" />
         <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
-      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.CodeRefWord" flags="ng" index="3z_lpY">
-        <child id="6955693250238922839" name="codeptr" index="3z_lpZ" />
+      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.ModelContentRefWord" flags="ng" index="3z_lpY">
+        <child id="6955693250238922839" name="modelContentPtr" index="3z_lpZ" />
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
@@ -97,8 +98,8 @@
   <node concept="1_1swa" id="yrKNEnw4lA">
     <property role="TrG5h" value="C_Units" />
     <property role="yApLE" value="5" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
-    <node concept="1mvXsy" id="2x0XdsgGh7Z" role="1_0VJ0">
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <node concept="1_0VNX" id="3mn43GO8cu5" role="1_0VJ0">
       <property role="TrG5h" value="units" />
       <property role="1_0VJr" value="Units" />
       <node concept="1_0LV8" id="4lzRQzvlgDn" role="1_0VJ0">
@@ -286,9 +287,9 @@
             <node concept="19SUe$" id="69uDFDbgwld" role="19SJt6">
               <property role="19SUeA" value=". The specification of the derived units can be typed in after the name of the unit. A simple unit specification consists of one unit with possibly an exponent. If you would like to type in a composite unit specification then press ENTER to expand the components in the specifiction. Exponents can be added to the units by pressing the cap (^) symbol and the value of the exponent. This works for all units in the specification except for the last component; there the cap is disabled because it conflicts with the binary XOR operator. At the last position use the appropriate intention (by the way it is available for all components regardless of the position in the specification) to add the exponent to the unit. An exponent can either be simple integer number or it can be transformed to a fraction by typing " />
             </node>
-            <node concept="1jUjqm" id="1VdI9nUyLxW" role="19SJt6">
-              <node concept="19SGf9" id="1VdI9nUyLxX" role="$DsGW">
-                <node concept="19SUe$" id="1VdI9nUyLxY" role="19SJt6">
+            <node concept="2OoWia" id="yaVrOuw0N2" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuw0N5" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuw0N6" role="19SJt6">
                   <property role="19SUeA" value="/" />
                 </node>
               </node>
@@ -318,6 +319,7 @@
         <node concept="3z_lpU" id="1VdI9nUzmeF" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="                            &#10;exported struct Trackpoint {&#10;  int8 id;                  &#10;  int8/s/ time;             &#10;  int8/m/ x;                &#10;  int8/m/ y;                &#10;  int16/m/ alt;             &#10;  int16/mps/ speed;         &#10;};                          " />
           <node concept="2NCZwO" id="1VdI9nUzupY" role="3z_lpI">
             <node concept="2NCMab" id="1VdI9nUzuq4" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
@@ -350,6 +352,7 @@
         <node concept="3z_lpU" id="yrKNEnwBNB" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="Trackpoint i1 = {&#10;  id = 1,        &#10;  time = 0 s,    &#10;  x = 0 m,       &#10;  y = 0 m,       &#10;  alt = 100 m    &#10;};               " />
           <node concept="2NCZwO" id="1YUFCeGolI6" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolI7" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -372,6 +375,7 @@
         <node concept="3z_lpU" id="yrKNEnwHG6" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="{                                         &#10;  processor = :process_doNothing;         &#10;  Trackpoint i2 = processor(i1);          &#10;  assert(0) i2.id == 1 &amp;&amp; i2.alt == 100 m;&#10;}                                         " />
           <node concept="2NCZwO" id="1YUFCeGolHO" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolHP" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -468,6 +472,7 @@
         <node concept="3z_lpU" id="yrKNEnwSn0" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="int8/mps/ speed1 = (i4.x - i3.x) / (i4.time - i3.time);" />
           <node concept="2NCZwO" id="1YUFCeGolFM" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolFN" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -500,6 +505,7 @@
         <node concept="3z_lpU" id="4lzRQzvu6Ew" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="void calcVerticalSpeed(TrackpointWithVertical* prev, TrackpointWithVertical* cur) {&#10;  /* cur.alt = 0 m; */                                                             &#10;  /* cur.speed = 0 mps; */                                                         &#10;  if (prev == null) {                                                              &#10;  cur.vSpeed = 0 mps;                                                              &#10;} else {                                                                           &#10;  int16/m/ dAlt = cur.alt - prev.alt;                                              &#10;  int8/s/ dTime = cur.time - prev.time;                                            &#10;  cur.vSpeed = dAlt / dTime;                                                       &#10;}                                                                                  &#10;} calcVerticalSpeed (function)                                                     " />
           <node concept="2NCZwO" id="4lzRQzvu6Ey" role="3z_lpI">
             <node concept="2NCMab" id="4lzRQzvu6Ka" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
@@ -525,6 +531,7 @@
         <node concept="3z_lpU" id="1VdI9nU_uPD" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="int8/mps/ speed2 = 2 m･s-1 + 3 s-1･m;" />
           <node concept="2NCZwO" id="1VdI9nU_uPE" role="3z_lpI">
             <node concept="2NCMab" id="1VdI9nU_uPF" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -634,6 +641,8 @@
         </node>
         <node concept="3z_lpU" id="627_yy3rO9v" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="                                                                                                                                                                                    &#10;section conversions {                                                                                                                                                               &#10;                                                                                                                                                                                    &#10;  exported conversion mps -&gt; kmh {                                                                                                                                                  &#10;                                                                                                                                                                                    &#10;  exported conversion kmh -&gt; mps {                                                                                                                                                  &#10;                                                                                                                                                                                    &#10;  exported conversion s -&gt; h {                                                                                                                                                      &#10;                                                                                                                                                                                    &#10;  exported conversion m -&gt; km {                                                                                                                                                     &#10;} section conversions                                                                                                                                                               &#10;                               val as double -&gt; val * 3.6              val as &lt;no type&gt; -&gt; val / 3.6           val as &lt;no type&gt; -&gt; val / 3600         val as &lt;no type&gt; -&gt; val / 1000&#10;                              }                                       }                                       }                                      }                              " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="627_yy3rO9w" role="3z_lpI">
             <node concept="2NCMab" id="627_yy3rO9x" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:5L$_W51ZPe7" resolve="UnitDeclarations" />
@@ -702,6 +711,8 @@
         </node>
         <node concept="3z_lpU" id="627_yy3sLpd" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="void somethingWithConversion() {                          &#10;  Trackpoint highSpeed;                                   &#10;  highSpeed.speed = ((int16/mps/) convert[300 kmh-&gt; mps]);&#10;} somethingWithConversion (function)                      " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="627_yy3sLpe" role="3z_lpI">
             <node concept="2NCMab" id="627_yy3sLpf" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
@@ -732,6 +743,7 @@
         <node concept="3z_lpU" id="2B__QU5WTMV" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="int8/U1/ sum(int8/U1/ a, int8/U1/ b) {&#10;  return a + b;                       &#10;} sum (function)                      " />
           <node concept="2NCZwO" id="2B__QU5WTNd" role="3z_lpI">
             <node concept="2NCMab" id="2B__QU5Xjnm" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -744,6 +756,7 @@
         <node concept="3z_lpU" id="2B__QU5XmXz" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="int8/U1･U2/ mul(int8/U1/ a, int8/U2/ b) {&#10;  return a * b;                          &#10;} mul (function)                         " />
           <node concept="2NCZwO" id="2B__QU5XmY1" role="3z_lpI">
             <node concept="2NCMab" id="2B__QU5XmY9" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -756,6 +769,7 @@
         <node concept="3z_lpU" id="2B__QU5XmZ2" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="Trackpoint process_generic(Trackpoint e) {&#10;  e.time = sum(10 s, 10 s);               &#10;  e.id = sum(1, 2);                       &#10;  e.x = sum(10 m, 10 m);                  &#10;  e.speed = mul(10 m, 10 s-1);            &#10;  return e;                               &#10;} process_generic (function)              " />
           <node concept="2NCZwO" id="2B__QU5XmZG" role="3z_lpI">
             <node concept="2NCMab" id="2B__QU5XmZO" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -795,6 +809,7 @@
         <node concept="3z_lpU" id="1VdI9nUFu_J" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="double/U112/ sqrt(double/U1/ a) {                         &#10;  double/U112/ res = 0 U112;                              &#10;  //here goes your sophisticated square root approximation&#10;  return res;                                             &#10;} sqrt (function)                                         " />
           <node concept="2NCZwO" id="1VdI9nUFuD1" role="3z_lpI">
             <node concept="2NCMab" id="1VdI9nUFuD7" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -858,6 +873,7 @@
         <node concept="3z_lpU" id="4lzRQzvy8ex" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="int16 anExistingFunction(int16 x) {&#10;  return x + 10;                   &#10;} anExistingFunction (function)    " />
           <node concept="2NCZwO" id="4lzRQzvy8ey" role="3z_lpI">
             <node concept="2NCMab" id="4lzRQzvy8ez" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
@@ -887,6 +903,7 @@
         <node concept="3z_lpU" id="627_yy3qUjD" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="int16/m/ someFunction(Trackpoint* p1, Trackpoint* p2) {             &#10;  int16 newValueWithoutUnit = anExistingFunction(stripunit[p1.alt]);&#10;  return newValueWithoutUnit m;                                     &#10;} someFunction (function)                                           " />
           <node concept="2NCZwO" id="627_yy3qUjE" role="3z_lpI">
             <node concept="2NCMab" id="627_yy3qUjF" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />

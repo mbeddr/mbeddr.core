@@ -5,7 +5,6 @@
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
     <use id="c788b046-2019-4656-8b60-8bb9bbb177b5" name="com.mbeddr.mpsutil.review" version="-1" />
     <use id="7a060fae-09e0-4372-be36-6696d6554c0e" name="com.mbeddr.mpsutil.review.annotation" version="-1" />
-    <use id="623c9ff8-1203-4890-b33e-cba29dd6cdc6" name="spellcheck" version="-1" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
@@ -13,6 +12,7 @@
     <import index="iwll" ref="r:79ed4c17-66fc-4c5a-bff7-46990b4e0c5d(mbeddr.tutorial.main.req)" />
     <import index="75wo" ref="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" />
     <import index="bmc6" ref="r:4ac377c2-0a54-4908-ae24-f86f1bad7e73(com.mbeddr.tutorial.documentation.ug.fundamentals)" />
+    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" />
   </imports>
   <registry>
     <language id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell">
@@ -56,17 +56,17 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
-      <concept id="2179458690439382890" name="com.mbeddr.doc.structure.ConceptCodeRemoval" flags="ng" index="2Cuv_b">
+      <concept id="2179458690439382890" name="com.mbeddr.doc.structure.ConceptModelContentRemoval" flags="ng" index="2Cuv_b">
         <reference id="2179458690439403347" name="conceptDecl" index="2Cuq_M" />
       </concept>
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
-      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.CPNamedNodeElement" flags="ng" index="2NCMab">
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
       </concept>
-      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.CodePointer" flags="ng" index="2NCZwO">
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
       <concept id="2286331641392318852" name="com.mbeddr.doc.structure.MenuFormattedText" flags="ng" index="2OlAs7" />
@@ -83,14 +83,6 @@
         <property id="6386504476136521408" name="fileName" index="2Sb_kV" />
         <reference id="6386504476136521409" name="path" index="2Sb_kU" />
       </concept>
-      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
-        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
-      </concept>
-      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
-        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
-        <child id="6386504476136472817" name="paths" index="2SbYGa" />
-        <child id="8624890525767800998" name="sizeSpecs" index="3SH5Mq" />
-      </concept>
       <concept id="4220250885135199523" name="com.mbeddr.doc.structure.ToDoWord" flags="ng" index="3d4VFM">
         <child id="4220250885135204208" name="text" index="3d4Uyx" />
       </concept>
@@ -100,20 +92,21 @@
       <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
       </concept>
-      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.CCodeAsImageParagraph" flags="ng" index="3z_lpz">
+      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.ModelContentAsImageParagraph" flags="ng" index="3z_lpz">
         <child id="6955693250238922832" name="description" index="3z_lpS" />
         <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
       </concept>
-      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractCCodeParagraph" flags="ng" index="3z_lpG">
-        <property id="6955693250238922823" name="showCode" index="3z_lpJ" />
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922821" name="removals" index="3z_lpH" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
-      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.CCodeParagraph" flags="ng" index="3z_lpU">
+      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
+        <property id="6955693250238922835" name="text" index="3z_lpV" />
         <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
-      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.CodeRefWord" flags="ng" index="3z_lpY">
-        <child id="6955693250238922839" name="codeptr" index="3z_lpZ" />
+      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.ModelContentRefWord" flags="ng" index="3z_lpY">
+        <child id="6955693250238922839" name="modelContentPtr" index="3z_lpZ" />
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
@@ -136,12 +129,6 @@
         <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
       </concept>
       <concept id="3350625596579911760" name="com.mbeddr.doc.structure.EmptyDocContent" flags="ng" index="1_1sxE" />
-      <concept id="8624890525767637976" name="com.mbeddr.doc.structure.PageWidthSizeSpec" flags="ng" index="3SGHZ$">
-        <property id="8624890525767637977" name="percentage" index="3SGHZ_" />
-      </concept>
-      <concept id="8624890525767800825" name="com.mbeddr.doc.structure.NamedSizeSpec" flags="ng" index="3SH5f5">
-        <child id="8624890525767800827" name="spec" index="3SH5f7" />
-      </concept>
       <concept id="5378658552262903588" name="com.mbeddr.doc.structure.Item" flags="ng" index="3X6T9g">
         <child id="5378658552262903589" name="text" index="3X6T9h" />
       </concept>
@@ -150,12 +137,8 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
-      </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractFilePicker" flags="ng" index="3N1QpV">
-        <property id="6156524541422553710" name="path" index="3N1Lgt" />
       </concept>
     </language>
     <language id="c788b046-2019-4656-8b60-8bb9bbb177b5" name="com.mbeddr.mpsutil.review">
@@ -167,7 +150,6 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -175,52 +157,11 @@
       </concept>
     </language>
   </registry>
-  <node concept="2SbYGP" id="2ipt67gLxW0">
-    <property role="TrG5h" value="Config" />
-    <property role="3GE5qa" value="config" />
-    <node concept="2SbYGw" id="45LXldJZEw7" role="2SbYGa">
-      <property role="TrG5h" value="images" />
-      <node concept="9PVaO" id="7aNtjNm4Cpc" role="9PVG_">
-        <property role="3N1Lgt" value="images/processSupport" />
-      </node>
-    </node>
-    <node concept="3SH5f5" id="7uLL3Mf2teF" role="3SH5Mq">
-      <property role="TrG5h" value="width100" />
-      <node concept="3SGHZ$" id="7uLL3Mf2teH" role="3SH5f7">
-        <property role="3SGHZ_" value="100" />
-      </node>
-    </node>
-    <node concept="3SH5f5" id="7uLL3Mf2teJ" role="3SH5Mq">
-      <property role="TrG5h" value="width80" />
-      <node concept="3SGHZ$" id="7uLL3Mf2teK" role="3SH5f7">
-        <property role="3SGHZ_" value="80" />
-      </node>
-    </node>
-    <node concept="2SbYGw" id="5jGyeU5XLXS" role="Cbewh">
-      <property role="TrG5h" value="vis" />
-      <node concept="9PVaO" id="7aNtjNm4Cp9" role="9PVG_">
-        <property role="3N1Lgt" value="_vis" />
-      </node>
-    </node>
-    <node concept="2f$52y" id="4AuO4fdzdHy" role="lGtFl">
-      <node concept="3vAitl" id="4AuO4fdzdHz" role="2f$52z">
-        <property role="3ajGZW" value="markusvoelter" />
-        <property role="3ajGZ3" value="Apr 10, 2015 10:58:16 AM" />
-        <property role="19LeSh" value="Constant_8ipkgn_a3a" />
-        <ref role="19LoX1" node="2ipt67gLxW0" resolve="Config" />
-        <node concept="19SGf9" id="4AuO4fdzdH$" role="3ajGZ5">
-          <node concept="19SUe$" id="4AuO4fdzdH_" role="19SJt6">
-            <property role="19SUeA" value="If an error is reported that the path is missing or invalid, use the intention to create the missing directory." />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1_1swa" id="tMF5FXsCLB">
     <property role="yApLE" value="11" />
     <property role="TrG5h" value="F_ProductLineVariability" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
-    <node concept="1mvXsy" id="tMF5FXsTd2" role="1_0VJ0">
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <node concept="1_0VNX" id="3mn43GO8h4S" role="1_0VJ0">
       <property role="TrG5h" value="productlinevariability" />
       <property role="1_0VJr" value="Product Line Variability" />
       <node concept="1_0LV8" id="tMF5FXsTd4" role="1_0VJ0">
@@ -623,6 +564,7 @@
         <node concept="3z_lpU" id="4KbglN$T7OI" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="Trackpoint processTrackpoint(fmconfig&lt;FlightProcessor&gt; cfg, Trackpoint tp) {&#10;  Trackpoint result;                                                        &#10;  variant&lt;cfg&gt; {                                                            &#10;  case (nullify &amp;&amp; maxCustom) {                                             &#10;  result = process_nullifyAlt(tp);                                          &#10;  if (tp.speed &gt; maxCustom.maxSpeed) {                                      &#10;  result.speed = maxCustom.maxSpeed;                                        &#10;} if                                                                        &#10;}                                                                           &#10;  case (nullify &amp;&amp; max100) {                                                &#10;  result = process_nullifyAlt(tp);                                          &#10;  if (tp.speed &gt; 100 mps) {                                                 &#10;  result.speed = 100 mps;                                                   &#10;} if                                                                        &#10;}                                                                           &#10;  case (nullify) { result = process_nullifyAlt(tp); }                       &#10;  default { result = process_doNothing(tp); }                               &#10;}                                                                           &#10;  return result;                                                            &#10;} processTrackpoint (function)                                              " />
           <node concept="2NCZwO" id="4KbglN$T7OJ" role="3z_lpI">
             <node concept="2NCMab" id="4KbglN$T7QH" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4I37X0YSE6M" resolve="RuntimeVariability" />
@@ -685,7 +627,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="4KbglN$TdRb" role="19SJt6">
-              <property role="19SUeA" value=" statement, but it \&quot;switches over\&quot; feature configurations. Note that the conditions in the " />
+              <property role="19SUeA" value=" statement, but it &quot;switches over&quot; feature configurations. Note that the conditions in the " />
             </node>
             <node concept="1jUjqm" id="4KbglN$TdR_" role="19SJt6">
               <node concept="19SGf9" id="4KbglN$TdRA" role="$DsGW">
@@ -819,7 +761,7 @@
         <node concept="1_0LV8" id="4KbglN$ZULs" role="1_0VJ0">
           <node concept="19SGf9" id="4KbglN$ZULt" role="1_0LWR">
             <node concept="19SUe$" id="4KbglN$ZULu" role="19SJt6">
-              <property role="19SUeA" value="A presence condition is a Boolean expression over features attached to any program element. During transformation, the program element is deleted if, based on the selected configuration, the Boolean expression evaluates to false. Presence conditions are essentially a kind of \&quot;structured #ifdef\&quot;. In the two functions " />
+              <property role="19SUeA" value="A presence condition is a Boolean expression over features attached to any program element. During transformation, the program element is deleted if, based on the selected configuration, the Boolean expression evaluates to false. Presence conditions are essentially a kind of &quot;structured #ifdef&quot;. In the two functions " />
             </node>
             <node concept="3z_lpY" id="4KbglN_50bX" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN_50bY" role="3z_lpZ">
@@ -864,9 +806,9 @@
             <node concept="19SUe$" id="4KbglN_52Sf" role="19SJt6">
               <property role="19SUeA" value="Presence conditions are attached to program nodes with the " />
             </node>
-            <node concept="2OoWia" id="4KbglN_52U5" role="19SJt6">
-              <node concept="19SGf9" id="4KbglN_52U6" role="$DsGW">
-                <node concept="19SUe$" id="4KbglN_52U7" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuxfHR" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuxfHU" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuxfHV" role="19SJt6">
                   <property role="19SUeA" value="Toggle Presence Condition" />
                 </node>
               </node>
@@ -881,9 +823,9 @@
             <node concept="19SUe$" id="4KbglN_031E" role="19SJt6">
               <property role="19SUeA" value="Variability-aware code can be projected in various ways (switchable via the " />
             </node>
-            <node concept="2OoWia" id="4KbglN_51YT" role="19SJt6">
-              <node concept="19SGf9" id="4KbglN_51YU" role="$DsGW">
-                <node concept="19SUe$" id="4KbglN_51YV" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuxfI6" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuxfI9" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuxfIa" role="19SJt6">
                   <property role="19SUeA" value="Code-&gt;Projection Mode" />
                 </node>
               </node>
@@ -1374,7 +1316,7 @@
   <node concept="1_1swa" id="1OEOMsplkCQ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_ProcessSupport" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="1OEOMsplmw0" role="1_0VJ0">
       <property role="1_0VJr" value="Process Support" />
       <property role="TrG5h" value="processSupport" />
@@ -1434,7 +1376,7 @@
   <node concept="1_1swa" id="2NmTaRWzPSk">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="D_Documentation" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="2NmTaRWzPSl" role="1_0VJ0">
       <property role="TrG5h" value="doc" />
       <property role="1_0VJr" value="Documentation Language" />
@@ -1444,7 +1386,7 @@
         <node concept="1_0LV8" id="4KbglN_a4Ec" role="1_0VJ0">
           <node concept="19SGf9" id="4KbglN_a4Ed" role="1_0LWR">
             <node concept="19SUe$" id="4KbglN_a4Ee" role="19SJt6">
-              <property role="19SUeA" value="Writing documentation for code is annoying, since you always have to copy code snippets into the document (as text or as a screenshot), make sure they are formatted nicely, and - most importantly - keep them up to date as the code changes. The mbeddr documentation language avoids this problem: it treats documentation just like code in MPS, the documentation language is just another language written in MPS. Consequently it is trivial to refer to code, make sure that the reference is refactored along with the code itself (in particular in case of renames) and, by using a few tricks, you can even \&quot;virtually embed\&quot; code into the documents.  " />
+              <property role="19SUeA" value="Writing documentation for code is annoying, since you always have to copy code snippets into the document (as text or as a screenshot), make sure they are formatted nicely, and - most importantly - keep them up to date as the code changes. The mbeddr documentation language avoids this problem: it treats documentation just like code in MPS, the documentation language is just another language written in MPS. Consequently it is trivial to refer to code, make sure that the reference is refactored along with the code itself (in particular in case of renames) and, by using a few tricks, you can even &quot;virtually embed&quot; code into the documents.  " />
             </node>
           </node>
         </node>
@@ -1453,9 +1395,9 @@
             <node concept="19SUe$" id="4KbglN_a6MQ" role="19SJt6">
               <property role="19SUeA" value="The user guide you are reading right now is written with this language. Consequently, a good way to learn mbeddr's documentation language is to switch off Presentation Mode (via the " />
             </node>
-            <node concept="2OoWia" id="4KbglN_a6N7" role="19SJt6">
-              <node concept="19SGf9" id="4KbglN_a6N8" role="$DsGW">
-                <node concept="19SUe$" id="4KbglN_a6N9" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuxfH5" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuxfH8" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuxfH9" role="19SJt6">
                   <property role="19SUeA" value="Code-&gt;Projection Modes" />
                 </node>
               </node>
@@ -1652,7 +1594,7 @@
                   </node>
                 </node>
                 <node concept="19SUe$" id="4KbglN_f2Km" role="19SJt6">
-                  <property role="19SUeA" value=" There is also a kind of \&quot;special section\&quot;, the Chapter. It is simlar in all respects to sections except that it " />
+                  <property role="19SUeA" value=" There is also a kind of &quot;special section&quot;, the Chapter. It is simlar in all respects to sections except that it " />
                 </node>
                 <node concept="28N2ik" id="4KbglN_f2Ks" role="19SJt6">
                   <node concept="19SGf9" id="4KbglN_f2Kt" role="$DsGW">
@@ -1726,7 +1668,7 @@
                 </node>
               </node>
               <node concept="19SUe$" id="4KbglN_jXqX" role="19SJt6">
-                <property role="19SUeA" value=" This embeds arbitrary code into the document. When rendered to HTML or Latex, the embedded code will be \&quot;copied to text\&quot;, so this really only makes sense for notations that have a meaningful textual representation (program code, essentially)." />
+                <property role="19SUeA" value=" This embeds arbitrary code into the document. When rendered to HTML or Latex, the embedded code will be &quot;copied to text&quot;, so this really only makes sense for notations that have a meaningful textual representation (program code, essentially)." />
               </node>
             </node>
           </node>
@@ -1806,7 +1748,7 @@
               <node concept="1jUjqm" id="4KbglN_jZer" role="19SJt6">
                 <node concept="19SGf9" id="4KbglN_jZes" role="$DsGW">
                   <node concept="19SUe$" id="4KbglN_jZet" role="19SJt6">
-                    <property role="19SUeA" value="\\bold" />
+                    <property role="19SUeA" value="\bold" />
                   </node>
                 </node>
               </node>
@@ -1816,7 +1758,7 @@
               <node concept="1jUjqm" id="4KbglN_jZe$" role="19SJt6">
                 <node concept="19SGf9" id="4KbglN_jZe_" role="$DsGW">
                   <node concept="19SUe$" id="4KbglN_jZeA" role="19SJt6">
-                    <property role="19SUeA" value="\\emph" />
+                    <property role="19SUeA" value="\emph" />
                   </node>
                 </node>
               </node>
@@ -1826,7 +1768,7 @@
               <node concept="1jUjqm" id="4KbglN_jZeL" role="19SJt6">
                 <node concept="19SGf9" id="4KbglN_jZeM" role="$DsGW">
                   <node concept="19SUe$" id="4KbglN_jZeN" role="19SJt6">
-                    <property role="19SUeA" value="\\math" />
+                    <property role="19SUeA" value="\math" />
                   </node>
                 </node>
               </node>
@@ -1836,7 +1778,7 @@
               <node concept="1jUjqm" id="4KbglN_jZjG" role="19SJt6">
                 <node concept="19SGf9" id="4KbglN_jZjH" role="$DsGW">
                   <node concept="19SUe$" id="4KbglN_jZjI" role="19SJt6">
-                    <property role="19SUeA" value="\\key" />
+                    <property role="19SUeA" value="\key" />
                   </node>
                 </node>
               </node>
@@ -1846,7 +1788,7 @@
               <node concept="1jUjqm" id="4KbglN_jZk9" role="19SJt6">
                 <node concept="19SGf9" id="4KbglN_jZka" role="$DsGW">
                   <node concept="19SUe$" id="4KbglN_jZkb" role="19SJt6">
-                    <property role="19SUeA" value="\\menu" />
+                    <property role="19SUeA" value="\menu" />
                   </node>
                 </node>
               </node>
@@ -1856,7 +1798,7 @@
               <node concept="1jUjqm" id="4KbglN_jZf2" role="19SJt6">
                 <node concept="19SGf9" id="4KbglN_jZf3" role="$DsGW">
                   <node concept="19SUe$" id="4KbglN_jZf4" role="19SJt6">
-                    <property role="19SUeA" value="\\code" />
+                    <property role="19SUeA" value="\code" />
                   </node>
                 </node>
               </node>
@@ -1948,7 +1890,7 @@
               <node concept="1jUjqm" id="4KbglN_jZjy" role="19SJt6">
                 <node concept="19SGf9" id="4KbglN_jZjz" role="$DsGW">
                   <node concept="19SUe$" id="4KbglN_jZj$" role="19SJt6">
-                    <property role="19SUeA" value="\\url" />
+                    <property role="19SUeA" value="\url" />
                   </node>
                 </node>
               </node>
@@ -1965,7 +1907,7 @@
               <node concept="1jUjqm" id="4KbglN_jZm5" role="19SJt6">
                 <node concept="19SGf9" id="4KbglN_jZm6" role="$DsGW">
                   <node concept="19SUe$" id="4KbglN_jZm7" role="19SJt6">
-                    <property role="19SUeA" value="\\footnote" />
+                    <property role="19SUeA" value="\footnote" />
                   </node>
                 </node>
               </node>
@@ -2004,7 +1946,7 @@
             </node>
           </node>
           <node concept="19SUe$" id="4KbglN_k0hb" role="19SJt6">
-            <property role="19SUeA" value=" relative to the current solutions root directory. When defining image paragraphs or attachments, you use one of the paths defined in the Config as the path prefix and select an image \&quot;below\&quot; this path prefix. This is supported with code completion." />
+            <property role="19SUeA" value=" relative to the current solutions root directory. When defining image paragraphs or attachments, you use one of the paths defined in the Config as the path prefix and select an image &quot;below&quot; this path prefix. This is supported with code completion." />
           </node>
         </node>
         <node concept="1xAIan" id="4KbglN_f3pv" role="1xAIax">
@@ -2045,7 +1987,7 @@
   <node concept="1_1swa" id="2NmTaRWzR$P">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="C_Assessments" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="2f$52y" id="58xH_U77Be1" role="lGtFl" />
     <node concept="1_0VNX" id="2NmTaRWzR$Q" role="1_0VJ0">
       <property role="TrG5h" value="assess" />
@@ -2165,9 +2107,9 @@
           <node concept="19SUe$" id="3PCHQK6jBrO" role="19SJt6">
             <property role="19SUeA" value="Once a query is defined, you can use " />
           </node>
-          <node concept="1jUjqm" id="3PCHQK6mawb" role="19SJt6">
-            <node concept="19SGf9" id="3PCHQK6mawc" role="$DsGW">
-              <node concept="19SUe$" id="3PCHQK6mawd" role="19SJt6">
+          <node concept="2OlAs7" id="yaVrOuxfGQ" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuxfGT" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuxfGU" role="19SJt6">
                 <property role="19SUeA" value="Update" />
               </node>
             </node>
@@ -2250,7 +2192,7 @@
           <node concept="OjmMv" id="4KbglN$KiVP" role="3X6T9h">
             <node concept="19SGf9" id="4KbglN$KiVQ" role="OjmMu">
               <node concept="19SUe$" id="4KbglN$KiVR" role="19SJt6">
-                <property role="19SUeA" value="Alternatively, the user may decide that a particular smell is acually ok in this case; so the result item must be marked as \&quot;it's ok, don't bother me again\&quot;." />
+                <property role="19SUeA" value="Alternatively, the user may decide that a particular smell is acually ok in this case; so the result item must be marked as &quot;it's ok, don't bother me again&quot;." />
               </node>
             </node>
           </node>
@@ -2269,7 +2211,7 @@
             </node>
           </node>
           <node concept="19SUe$" id="4KbglN$KiYY" role="19SJt6">
-            <property role="19SUeA" value=" option can be set on an assessment. Then every result item gets its own checkbox. Checking this checkbox means that \&quot;this result item is ok\&quot;, i.e., it should not be marked as an error (the colored vertical bar becomes blue in this case). It is also possible to hide all those items where the checkbox is checked in the result set by selecting the " />
+            <property role="19SUeA" value=" option can be set on an assessment. Then every result item gets its own checkbox. Checking this checkbox means that &quot;this result item is ok&quot;, i.e., it should not be marked as an error (the colored vertical bar becomes blue in this case). It is also possible to hide all those items where the checkbox is checked in the result set by selecting the " />
           </node>
           <node concept="1jUjqm" id="4KbglN$Kj9I" role="19SJt6">
             <node concept="19SGf9" id="4KbglN$Kj9J" role="$DsGW">
@@ -2298,7 +2240,7 @@
   <node concept="1_1swa" id="12l$qjdcYKY">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="A_Requirements" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0j5j" id="4IT6uo9ZSC" role="1DXQ57">
       <ref role="1_0j5g" to="bmc6:1ig5EljjfU0" resolve="C_Editor" />
     </node>
@@ -2651,7 +2593,7 @@
         <node concept="1_0LV8" id="12l$qjdf_gG" role="1_0VJ0">
           <node concept="19SGf9" id="12l$qjdf_gH" role="1_0LWR">
             <node concept="19SUe$" id="12l$qjdf_gI" role="19SJt6">
-              <property role="19SUeA" value="Tags are similar the data objects, but they are \&quot;syntactically smaller\&quot;. Existing tags include the requirements status (you can set it to " />
+              <property role="19SUeA" value="Tags are similar the data objects, but they are &quot;syntactically smaller&quot;. Existing tags include the requirements status (you can set it to " />
             </node>
             <node concept="1jUjqm" id="12l$qjdhLnZ" role="19SJt6">
               <node concept="19SGf9" id="12l$qjdhLo0" role="$DsGW">
@@ -2766,9 +2708,9 @@
         </node>
         <node concept="2SaynC" id="12l$qjdhStU" role="1_0VJ0">
           <property role="TrG5h" value="reqtree" />
-          <node concept="2Sb_l4" id="12l$qjdhSun" role="2SbwM5">
+          <node concept="2Sb_l4" id="2fBMM_3Y7tJ" role="2SbwM5">
             <property role="2Sb_kV" value="reqtree.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:45LXldJZEw7" resolve="imagesProcessSupport" />
           </node>
           <node concept="OjmMv" id="12l$qjdhStY" role="2SaI5j">
             <node concept="19SGf9" id="12l$qjdhStZ" role="OjmMu">
@@ -2785,7 +2727,7 @@
   <node concept="1_1swa" id="2rKfGsVR7RQ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="B_Tracing" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="2f$52y" id="Mty5N5B1iq" role="lGtFl" />
     <node concept="1_0VNX" id="2rKfGsVRhPV" role="1_0VJ0">
       <property role="TrG5h" value="tracing" />
@@ -2993,9 +2935,9 @@
       </node>
       <node concept="2SaynC" id="4IT6uofhsv" role="1_0VJ0">
         <property role="TrG5h" value="detailedTraces" />
-        <node concept="2Sb_l4" id="4IT6uofhsw" role="2SbwM5">
+        <node concept="2Sb_l4" id="2fBMM_3Y7tN" role="2SbwM5">
           <property role="2Sb_kV" value="detailedTraces.png" />
-          <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+          <ref role="2Sb_kU" to="1842:45LXldJZEw7" resolve="imagesProcessSupport" />
         </node>
         <node concept="OjmMv" id="4IT6uofhsx" role="2SaI5j">
           <node concept="19SGf9" id="4IT6uofhsy" role="OjmMu">
@@ -3008,9 +2950,9 @@
       </node>
       <node concept="2SaynC" id="4IT6uoa8FK" role="1_0VJ0">
         <property role="TrG5h" value="littleTs" />
-        <node concept="2Sb_l4" id="4IT6uoa8IA" role="2SbwM5">
+        <node concept="2Sb_l4" id="2fBMM_3Y7tR" role="2SbwM5">
           <property role="2Sb_kV" value="littleTTraces.png" />
-          <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+          <ref role="2Sb_kU" to="1842:45LXldJZEw7" resolve="imagesProcessSupport" />
         </node>
         <node concept="OjmMv" id="4IT6uoa8FO" role="2SaI5j">
           <node concept="19SGf9" id="4IT6uoa8FP" role="OjmMu">
@@ -3124,15 +3066,15 @@
             <node concept="19SUe$" id="3PCHQK6f0Sy" role="19SJt6">
               <property role="19SUeA" value=" which requirement, i.e., you want to reverse the direction. You can do this by using the customized " />
             </node>
-            <node concept="1jUjqm" id="3PCHQK6f191" role="19SJt6">
-              <node concept="19SGf9" id="3PCHQK6f192" role="$DsGW">
-                <node concept="19SUe$" id="3PCHQK6f193" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuxfmc" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuxfmf" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuxfmg" role="19SJt6">
                   <property role="19SUeA" value="Find Usages Settings..." />
                 </node>
               </node>
             </node>
             <node concept="19SUe$" id="3PCHQK6f194" role="19SJt6">
-              <property role="19SUeA" value=" conext menu. If you select " />
+              <property role="19SUeA" value=" context menu. If you select " />
             </node>
             <node concept="1jUjqm" id="3PCHQK6fbzm" role="19SJt6">
               <node concept="19SGf9" id="3PCHQK6fbzn" role="$DsGW">
@@ -3166,9 +3108,9 @@
         </node>
         <node concept="2SaynC" id="3PCHQK6fb$0" role="1_0VJ0">
           <property role="TrG5h" value="findUsagesDialog" />
-          <node concept="2Sb_l4" id="3PCHQK6fb$z" role="2SbwM5">
+          <node concept="2Sb_l4" id="2fBMM_3Y7tV" role="2SbwM5">
             <property role="2Sb_kV" value="findUsagesDialog.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:45LXldJZEw7" resolve="imagesProcessSupport" />
           </node>
           <node concept="OjmMv" id="3PCHQK6fb$4" role="2SaI5j">
             <node concept="19SGf9" id="3PCHQK6fb$5" role="OjmMu">
@@ -3181,9 +3123,9 @@
         </node>
         <node concept="2SaynC" id="3PCHQK6jppY" role="1_0VJ0">
           <property role="TrG5h" value="findUsagesResult" />
-          <node concept="2Sb_l4" id="3PCHQK6jppZ" role="2SbwM5">
+          <node concept="2Sb_l4" id="2fBMM_3Y7tZ" role="2SbwM5">
             <property role="2Sb_kV" value="findUsagesResult.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:45LXldJZEw7" resolve="imagesProcessSupport" />
           </node>
           <node concept="OjmMv" id="3PCHQK6jpq0" role="2SaI5j">
             <node concept="19SGf9" id="3PCHQK6jpq1" role="OjmMu">
@@ -3263,7 +3205,7 @@
   <node concept="1_1swa" id="3PCHQK6j_Bu">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="E_CodeReview" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="2f$52y" id="58xH_U7b$n0" role="lGtFl" />
     <node concept="1_0j5j" id="4IT6uo43go" role="1DXQ57">
       <ref role="1_0j5g" node="2NmTaRWzR$P" resolve="C_Assessments" />
@@ -3557,9 +3499,9 @@
             <node concept="19SUe$" id="4IT6uo3fAN" role="19SJt6">
               <property role="19SUeA" value=", we create a hash of the code structure. This hash is stored in the code review annotation, inside the code. By recalculating the hash and comparing it to the one stored in the code, we can detect whether the code has been changed. However, because of the performance implications, we don't calculate this hash automatically. Instead, you have to use the " />
             </node>
-            <node concept="1jUjqm" id="4IT6uo9gcz" role="19SJt6">
-              <node concept="19SGf9" id="4IT6uo9gc$" role="$DsGW">
-                <node concept="19SUe$" id="4IT6uo9gc_" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuxfHk" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuxfHn" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuxfHo" role="19SJt6">
                   <property role="19SUeA" value="Reevaluate Review" />
                 </node>
               </node>
