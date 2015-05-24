@@ -231,13 +231,13 @@
             <property role="TrG5h" value="allDocs" />
             <node concept="2hMVRd" id="14uWAuriAso" role="1tU5fm">
               <node concept="3Tqbb2" id="14uWAuriAsq" role="2hN53Y">
-                <ref role="ehGHo" to="2c95:2TZO3DbuxwK" resolve="Document" />
+                <ref role="ehGHo" to="2c95:5L$H31Kgq3f" resolve="IDocumentLike" />
               </node>
             </node>
             <node concept="2ShNRf" id="14uWAuriAsv" role="33vP2m">
               <node concept="2i4dXS" id="14uWAuriAsw" role="2ShVmc">
                 <node concept="3Tqbb2" id="14uWAuriAsx" role="HW$YZ">
-                  <ref role="ehGHo" to="2c95:2TZO3DbuxwK" resolve="Document" />
+                  <ref role="ehGHo" to="2c95:5L$H31Kgq3f" resolve="IDocumentLike" />
                 </node>
               </node>
             </node>

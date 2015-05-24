@@ -5,6 +5,7 @@
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
     <use id="c788b046-2019-4656-8b60-8bb9bbb177b5" name="com.mbeddr.mpsutil.review" version="-1" />
     <use id="7a060fae-09e0-4372-be36-6696d6554c0e" name="com.mbeddr.mpsutil.review.annotation" version="-1" />
+    <use id="e06345c7-da82-4f8b-bd44-1425fe158640" name="com.mbeddr.doc.meta" version="0" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
@@ -13,6 +14,7 @@
     <import index="75wo" ref="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" />
     <import index="bmc6" ref="r:4ac377c2-0a54-4908-ae24-f86f1bad7e73(com.mbeddr.tutorial.documentation.ug.fundamentals)" />
     <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" />
+    <import index="ntnz" ref="r:7f372397-146b-40d5-9f20-607974c4fed4(com.mbeddr.tutorial.documentation.ug._main)" />
   </imports>
   <registry>
     <language id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell">
@@ -35,6 +37,9 @@
       </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="3861573051973810887" name="com.mbeddr.doc.structure.ITextOverride" flags="ng" index="0yqFW">
+        <property id="3861573051973810888" name="textOverride" index="0yqFN" />
+      </concept>
       <concept id="7992580511422656150" name="com.mbeddr.doc.structure.GreyBoxParagraph" flags="ng" index="20TvsQ">
         <child id="7992580511422656152" name="text" index="20TvsS" />
       </concept>
@@ -1403,7 +1408,18 @@
               </node>
             </node>
             <node concept="19SUe$" id="4KbglN_a6Na" role="19SJt6">
-              <property role="19SUeA" value=" menu) and take a look how the user guide is built. We'll explain some basics in this chapter but otherwise recommend you to just look at the user guide." />
+              <property role="19SUeA" value=" menu) and take a look how the user guide is built. We'll explain some basics in this chapter but otherwise recommend you to just look at the " />
+            </node>
+            <node concept="3z_lpY" id="3mn43GOVqkI" role="19SJt6">
+              <property role="0yqFN" value="user guide" />
+              <node concept="2NCZwO" id="3mn43GOVqkJ" role="3z_lpZ">
+                <node concept="2NCMab" id="3mn43GOVql0" role="2NCMaf">
+                  <ref role="2NCMaa" to="ntnz:hZfTLLg0H0" resolve="mbeddrUserGuide" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="3mn43GOVqkH" role="19SJt6">
+              <property role="19SUeA" value="." />
             </node>
           </node>
         </node>
@@ -1448,7 +1464,7 @@
                   </node>
                 </node>
                 <node concept="19SUe$" id="4KbglN_a73N" role="19SJt6">
-                  <property role="19SUeA" value=" Most importantly, we support the Presentation Mode where the document is rendered in MPS with a nice, readable projection and all images, listings or code snippets shown inline. We strongly recommend reading the user guide (and other documents) in this way. We currently spend most of our efforts optizing this target platform." />
+                  <property role="19SUeA" value=" Most importantly, we support the Presentation Mode where the document is rendered in MPS with a nice, readable projection and all images, listings or code snippets shown inline." />
                 </node>
               </node>
             </node>
@@ -1472,7 +1488,7 @@
                 <node concept="1jUjqm" id="4KbglN_a745" role="19SJt6">
                   <node concept="19SGf9" id="4KbglN_a746" role="$DsGW">
                     <node concept="19SUe$" id="4KbglN_a747" role="19SJt6">
-                      <property role="19SUeA" value="pdflatex" />
+                      <property role="19SUeA" value="xelatex" />
                     </node>
                   </node>
                 </node>
@@ -1504,14 +1520,8 @@
                   </node>
                 </node>
                 <node concept="19SUe$" id="4KbglN_a757" role="19SJt6">
-                  <property role="19SUeA" value=" Similar to LaTeX, we can also generate HTML sources. The approach has some of the same issues. Will be discussed in more detail soon. " />
+                  <property role="19SUeA" value=" Similar to LaTeX, we can also generate HTML sources. We use this to generate the online version of this user guide." />
                 </node>
-                <node concept="3d4VFM" id="4KbglN_a7kW" role="19SJt6">
-                  <node concept="19SGf9" id="4KbglN_a7kX" role="3d4Uyx">
-                    <node concept="19SUe$" id="4KbglN_a7kY" role="19SJt6" />
-                  </node>
-                </node>
-                <node concept="19SUe$" id="4KbglN_a7kZ" role="19SJt6" />
               </node>
             </node>
           </node>
@@ -1668,7 +1678,7 @@
                 </node>
               </node>
               <node concept="19SUe$" id="4KbglN_jXqX" role="19SJt6">
-                <property role="19SUeA" value=" This embeds arbitrary code into the document. When rendered to HTML or Latex, the embedded code will be &quot;copied to text&quot;, so this really only makes sense for notations that have a meaningful textual representation (program code, essentially)." />
+                <property role="19SUeA" value=" This embeds arbitrary MPS nodes into the document. When rendered to HTML or LaTeX, the embedded code will be &quot;copied to text&quot;, so this really only makes sense for notations that have a meaningful textual representation (program code, essentially)." />
               </node>
             </node>
           </node>
@@ -1685,7 +1695,7 @@
                 </node>
               </node>
               <node concept="19SUe$" id="4KbglN_jXrv" role="19SJt6">
-                <property role="19SUeA" value=" Similar to the previous one, but the code is rendered as an image (screenshot) when serialized to Latex or HTML." />
+                <property role="19SUeA" value=" Similar to the previous one, but the MPS nodes are rendered as an image (screenshot) when serialized to LaTeX or HTML." />
               </node>
             </node>
           </node>
@@ -1721,7 +1731,17 @@
             </node>
           </node>
           <node concept="19SUe$" id="4KbglN_jZ96" role="19SJt6">
-            <property role="19SUeA" value=" are references. They can be entered by pressing " />
+            <property role="19SUeA" value=" are references, the ones starting with an " />
+          </node>
+          <node concept="1jUjqm" id="3mn43GQ71Gk" role="19SJt6">
+            <node concept="19SGf9" id="3mn43GQ71Gl" role="$DsGW">
+              <node concept="19SUe$" id="3mn43GQ71Gm" role="19SJt6">
+                <property role="19SUeA" value="\" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="3mn43GQ71Gj" role="19SJt6">
+            <property role="19SUeA" value=" are formatting options. They can be entered by pressing " />
           </node>
           <node concept="2OoWia" id="4KbglN_jZfG" role="19SJt6">
             <node concept="19SGf9" id="4KbglN_jZfH" role="$DsGW">
@@ -1731,7 +1751,7 @@
             </node>
           </node>
           <node concept="19SUe$" id="4KbglN_jZfq" role="19SJt6">
-            <property role="19SUeA" value=" inside text blocks. " />
+            <property role="19SUeA" value=" inside text blocks. The default text for references can be overridden in the inspector view." />
           </node>
         </node>
         <node concept="1xAIan" id="4KbglN_f3lH" role="1xAIax">
@@ -1868,16 +1888,65 @@
           <node concept="OjmMv" id="4KbglN_jZhU" role="3X6T9h">
             <node concept="19SGf9" id="4KbglN_jZhV" role="OjmMu">
               <node concept="19SUe$" id="4KbglN_jZhW" role="19SJt6">
-                <property role="19SUeA" value="You can reference code elements via " />
+                <property role="19SUeA" value="You can reference MPS nodes via " />
               </node>
               <node concept="1jUjqm" id="4KbglN_jZi_" role="19SJt6">
                 <node concept="19SGf9" id="4KbglN_jZiA" role="$DsGW">
                   <node concept="19SUe$" id="4KbglN_jZiB" role="19SJt6">
-                    <property role="19SUeA" value="@code" />
+                    <property role="19SUeA" value="@node" />
                   </node>
                 </node>
               </node>
               <node concept="19SUe$" id="4KbglN_jZiC" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="3mn43GQ71GL" role="3Xp5NH">
+          <node concept="OjmMv" id="3mn43GQ71GM" role="3X6T9h">
+            <node concept="19SGf9" id="3mn43GQ71GN" role="OjmMu">
+              <node concept="19SUe$" id="3mn43GQ71GO" role="19SJt6">
+                <property role="19SUeA" value="You can reference MPS modules via " />
+              </node>
+              <node concept="1jUjqm" id="3mn43GQ71J_" role="19SJt6">
+                <node concept="19SGf9" id="3mn43GQ71JA" role="$DsGW">
+                  <node concept="19SUe$" id="3mn43GQ71JB" role="19SJt6">
+                    <property role="19SUeA" value="@language" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="3mn43GQ71JC" role="19SJt6">
+                <property role="19SUeA" value=", " />
+              </node>
+              <node concept="1jUjqm" id="3mn43GQ72gQ" role="19SJt6">
+                <node concept="19SGf9" id="3mn43GQ72gR" role="$DsGW">
+                  <node concept="19SUe$" id="3mn43GQ72gS" role="19SJt6">
+                    <property role="19SUeA" value="@solution" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="3mn43GQ72gP" role="19SJt6">
+                <property role="19SUeA" value=", " />
+              </node>
+              <node concept="1jUjqm" id="3mn43GQ72hc" role="19SJt6">
+                <node concept="19SGf9" id="3mn43GQ72hd" role="$DsGW">
+                  <node concept="19SUe$" id="3mn43GQ72he" role="19SJt6">
+                    <property role="19SUeA" value="@generator" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="3mn43GQ72hb" role="19SJt6">
+                <property role="19SUeA" value=" or " />
+              </node>
+              <node concept="1jUjqm" id="3mn43GQ72hE" role="19SJt6">
+                <node concept="19SGf9" id="3mn43GQ72hF" role="$DsGW">
+                  <node concept="19SUe$" id="3mn43GQ72hG" role="19SJt6">
+                    <property role="19SUeA" value="@devkit" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="3mn43GQ72hD" role="19SJt6">
+                <property role="19SUeA" value="." />
+              </node>
             </node>
           </node>
         </node>

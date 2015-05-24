@@ -8,6 +8,7 @@
   <imports>
     <import index="t8u7" ref="r:a5052470-ba99-483d-a4ef-5948a23c78fa(com.mbeddr.tutorial.documentation.ug.complexProjects)" />
     <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" />
+    <import index="4kwm" ref="r:5ff4e1a0-ec5b-4e83-a849-9e8c2c4adf79(com.mbeddr.tutorial.documentation.ug.ctooling)" />
   </imports>
   <registry>
     <language id="7a060fae-09e0-4372-be36-6696d6554c0e" name="com.mbeddr.mpsutil.review.annotation">
@@ -213,12 +214,10 @@
             <node concept="19SUe$" id="1ig5EljluEn" role="19SJt6">
               <property role="19SUeA" value="The main part of the MPS window is made up of the editor pane. The editor pane contains any number of editors, each with its own Tab. Each editor edits a so-called root (see " />
             </node>
-            <node concept="3d4VFM" id="1ig5EljluEW" role="19SJt6">
-              <node concept="19SGf9" id="1ig5EljluEX" role="3d4Uyx">
-                <node concept="19SUe$" id="1ig5EljluEY" role="19SJt6" />
-              </node>
+            <node concept="1_0GAv" id="3mn43GOU67Y" role="19SJt6">
+              <ref role="1_0GAl" node="1ig5EljqufT" resolve="nodesAndConcepts" />
             </node>
-            <node concept="19SUe$" id="1ig5EljluEZ" role="19SJt6">
+            <node concept="19SUe$" id="3mn43GOU67X" role="19SJt6">
               <property role="19SUeA" value="). It is also possible to split the editor pane into several editors (arranged vertically and horizontally) through the " />
             </node>
             <node concept="2OlAs7" id="yaVrOug$ac" role="19SJt6">
@@ -696,12 +695,10 @@
             <node concept="19SUe$" id="1ig5EljqH05" role="19SJt6">
               <property role="19SUeA" value="MPS is fundamentally a file-based system. The roots discussed above are stored in XML files (these can then be managed with existing version control systems, see " />
             </node>
-            <node concept="3d4VFM" id="1ig5EljqH0b" role="19SJt6">
-              <node concept="19SGf9" id="1ig5EljqH0c" role="3d4Uyx">
-                <node concept="19SUe$" id="1ig5EljqH0d" role="19SJt6" />
-              </node>
+            <node concept="1_0GAv" id="3mn43GOU697" role="19SJt6">
+              <ref role="1_0GAl" node="1ig5Eljqu2V" resolve="versionControl" />
             </node>
-            <node concept="19SUe$" id="1ig5EljqH0e" role="19SJt6">
+            <node concept="19SUe$" id="3mn43GOU696" role="19SJt6">
               <property role="19SUeA" value="). These files are called " />
             </node>
             <node concept="28N2ik" id="1ig5EljqH0k" role="19SJt6">
@@ -936,6 +933,9 @@
     <node concept="2f$52y" id="71c9NxixDZR" role="lGtFl" />
     <node concept="1_0j5j" id="4IT6uo9QER" role="1DXQ57">
       <ref role="1_0j5g" to="t8u7:1OEOMspldJi" resolve="Z_CHAPTER_ComplexProjects" />
+    </node>
+    <node concept="1_0j5j" id="3mn43GOU690" role="1DXQ57">
+      <ref role="1_0j5g" node="1ig5EljjfVQ" resolve="F_VersionControl" />
     </node>
   </node>
   <node concept="1_1swa" id="1ig5EljjfU0">
@@ -3667,10 +3667,8 @@
             <node concept="19SUe$" id="12l$qjdi2aG" role="19SJt6">
               <property role="19SUeA" value="There are various ways of interoperating with textual worlds. One of them is the import of textual, legacy C source. This is covered in " />
             </node>
-            <node concept="3d4VFM" id="12l$qjdi2aL" role="19SJt6">
-              <node concept="19SGf9" id="12l$qjdi2aM" role="3d4Uyx">
-                <node concept="19SUe$" id="12l$qjdi2aN" role="19SJt6" />
-              </node>
+            <node concept="1_0GAv" id="3mn43GOU6ad" role="19SJt6">
+              <ref role="1_0GAl" to="4kwm:3mn43GO6C$J" resolve="accessingLibraries" />
             </node>
             <node concept="19SUe$" id="12l$qjdi2aO" role="19SJt6">
               <property role="19SUeA" value=". In this section we discuss a few additional ways." />
@@ -3891,6 +3889,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1_0j5j" id="3mn43GOU69y" role="1DXQ57">
+      <ref role="1_0j5g" to="4kwm:6UY8Kx5jzAQ" resolve="F_LegacyCode" />
     </node>
   </node>
 </model>

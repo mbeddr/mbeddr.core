@@ -7,6 +7,8 @@
   </languages>
   <imports>
     <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" />
+    <import index="xojk" ref="r:ec4f318b-4ee4-4063-b222-8a04b6ed816c(com.mbeddr.tutorial.documentation.ug.installation)" />
+    <import index="us0v" ref="r:22b9d29d-483d-4f08-8d1b-4e6567157caf(com.mbeddr.tutorial.documentation.ug.analyses)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -53,6 +55,9 @@
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
+      </concept>
+      <concept id="3350625596580108709" name="com.mbeddr.doc.structure.SectRefWord" flags="ng" index="1_0GAv">
+        <reference id="3350625596580108719" name="target" index="1_0GAl" />
       </concept>
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="5185579450379273128" name="header" index="1xAIax" />
@@ -405,12 +410,10 @@
           <node concept="19SUe$" id="1ig5Eljhz12" role="19SJt6">
             <property role="19SUeA" value="CBMC is used for verification. It is discussed in detail in " />
           </node>
-          <node concept="3d4VFM" id="1ig5EljhzcB" role="19SJt6">
-            <node concept="19SGf9" id="1ig5EljhzcC" role="3d4Uyx">
-              <node concept="19SUe$" id="1ig5EljhzcD" role="19SJt6" />
-            </node>
+          <node concept="1_0GAv" id="3mn43GOU5Hh" role="19SJt6">
+            <ref role="1_0GAl" to="us0v:3mn43GO8lBo" resolve="formal_verification" />
           </node>
-          <node concept="19SUe$" id="1ig5EljhzcE" role="19SJt6">
+          <node concept="19SUe$" id="3mn43GOU5Hg" role="19SJt6">
             <property role="19SUeA" value=". To summarize, CBMC is a bounded model checker for C programs. This means that it can essentially simulate the execution of a C program regarding all its possible execution paths. CBMC is open source software and can be downloaded from " />
           </node>
           <node concept="1hOBRO" id="1ig5Eljhzha" role="19SJt6">
@@ -423,12 +426,10 @@
           <node concept="19SUe$" id="1ig5Eljhzhd" role="19SJt6">
             <property role="19SUeA" value=". It has to be installed separately, as described in the Installation section " />
           </node>
-          <node concept="3d4VFM" id="1ig5Eljhzhn" role="19SJt6">
-            <node concept="19SGf9" id="1ig5Eljhzho" role="3d4Uyx">
-              <node concept="19SUe$" id="1ig5Eljhzhp" role="19SJt6" />
-            </node>
+          <node concept="1_0GAv" id="3mn43GOU5II" role="19SJt6">
+            <ref role="1_0GAl" to="xojk:2en8HnCx1H$" resolve="VerificationTools" />
           </node>
-          <node concept="19SUe$" id="1ig5Eljhzhq" role="19SJt6">
+          <node concept="19SUe$" id="3mn43GOU5IH" role="19SJt6">
             <property role="19SUeA" value=". For details on how mbeddr uses CBMC, please take a look at the following papers, as well as at " />
           </node>
           <node concept="3d4VFM" id="1ig5EljjdO$" role="19SJt6">
@@ -480,6 +481,12 @@
         </node>
       </node>
     </node>
+    <node concept="1_0j5j" id="3mn43GOU5Gn" role="1DXQ57">
+      <ref role="1_0j5g" to="us0v:7OKLwZ_7fp5" resolve="C_FormalVerification" />
+    </node>
+    <node concept="1_0j5j" id="3mn43GOU5HT" role="1DXQ57">
+      <ref role="1_0j5g" to="xojk:1mCCOvys41P" resolve="C_VerificationTool" />
+    </node>
   </node>
   <node concept="1_1swa" id="1ig5Eljjea0">
     <property role="yApLE" value="1" />
@@ -513,16 +520,17 @@
           <node concept="19SUe$" id="1ig5Eljjepu" role="19SJt6">
             <property role="19SUeA" value=") for layouting the diagrams. As a user, you will not interact with graphviz directly, but you have to install it manually (see " />
           </node>
-          <node concept="3d4VFM" id="1ig5EljjepF" role="19SJt6">
-            <node concept="19SGf9" id="1ig5EljjepG" role="3d4Uyx">
-              <node concept="19SUe$" id="1ig5EljjepH" role="19SJt6" />
-            </node>
+          <node concept="1_0GAv" id="3mn43GOU5JN" role="19SJt6">
+            <ref role="1_0GAl" to="xojk:2en8HnCsqc1" resolve="Graphviz" />
           </node>
-          <node concept="19SUe$" id="1ig5EljjepI" role="19SJt6">
+          <node concept="19SUe$" id="3mn43GOU5JM" role="19SJt6">
             <property role="19SUeA" value="). PlantUML itself is packaged with mbeddr and does not have to be installed manually." />
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1_0j5j" id="3mn43GOU5J9" role="1DXQ57">
+      <ref role="1_0j5g" to="xojk:1mCCOvyiIY_" resolve="B_Graphviz" />
     </node>
   </node>
   <node concept="1_1swa" id="1ig5Eljjeuk">
@@ -582,14 +590,12 @@
             </node>
           </node>
           <node concept="19SUe$" id="1ig5Eljjeyc" role="19SJt6">
-            <property role="19SUeA" value=" is used by the mbeddr debugger. Note that all of these tools are not visible to the mbeddr user. But they have to be available on your system (see " />
+            <property role="19SUeA" value=" is used by the mbeddr debugger. Note that all of these tools are not visible to the mbeddr user. But they have to be available on your system (see  " />
           </node>
-          <node concept="3d4VFM" id="1ig5Eljjeyq" role="19SJt6">
-            <node concept="19SGf9" id="1ig5Eljjeyr" role="3d4Uyx">
-              <node concept="19SUe$" id="1ig5Eljjeys" role="19SJt6" />
-            </node>
+          <node concept="1_0GAv" id="3mn43GOU2QY" role="19SJt6">
+            <ref role="1_0GAl" to="xojk:5zu8XJxPfMf" resolve="GccMakeAndGdb" />
           </node>
-          <node concept="19SUe$" id="1ig5Eljjeyt" role="19SJt6">
+          <node concept="19SUe$" id="3mn43GOU2QX" role="19SJt6">
             <property role="19SUeA" value=" for details). " />
           </node>
         </node>
@@ -601,6 +607,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1_0j5j" id="3mn43GOU5HK" role="1DXQ57">
+      <ref role="1_0j5g" to="xojk:1mCCOvyiECJ" resolve="A_GccMakeAndGdb" />
     </node>
   </node>
   <node concept="1_1swa" id="1ig5EljjePI">
