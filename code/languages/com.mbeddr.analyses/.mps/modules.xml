@@ -18,6 +18,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.statemachines/com.mbeddr.analyses.cbmc.statemachines.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc/cbmc.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc/solutions/pluginSolution/pluginSolution.msd" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.concurrency.checks/com.mbeddr.analyses.concurrency.checks.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.lantest/com.mbeddr.analyses.lantest.mpl" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.utils/utils.msd" folder="base" />
       <modulePath path="$PROJECT_DIR$/languages/testing/com.mbeddr.analyses.cbmc.testing.mpl" folder="cbmc" />
@@ -34,6 +35,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j/com.mbeddr.analyses.sat4j.msd" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.lantest.results/com.mbeddr.lantest.results.msd" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.lantest.testdata/com.mbeddr.lantest.testdata.msd" folder="lantest" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.analyses.concurrency.checks.testcode/test.analyses.concurrency.checks.testcode.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.analysis.cbmc.concurrency.testcode/test.analysis.cbmc.concurrency.testcode.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/test.analysis.screen_casts/test.analysis.screen_casts.msd" folder="test.examples" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.acsl.testcode/test.analyses.acsl.testcode.msd" folder="test.acsl" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.acsl.ts/test.analyses.acsl.ts.msd" folder="test.acsl" />
@@ -48,7 +51,8 @@
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.var/test.analyses.var.msd" folder="test.sat4j" />
       <modulePath path="$PROJECT_DIR$/tests/test.analysis.formsera/formsera.msd" folder="test.examples" />
       <modulePath path="$PROJECT_DIR$/tests/test.analysis.nfm/nfm.msd" folder="test.examples" />
-      <modulePath path="$PROJECT_DIR$/../../../../com.lmsintl.accent.toyota_itc_benchmark/com.lmsintl.accent.toyota_itc_benchmark/com.lmsintl.accent.toyota_itc_benchmark.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/../../../../../com.lmsintl.accent.toyota_itc_benchmark/com.lmsintl.accent.toyota_itc_benchmark/com.lmsintl.accent.toyota_itc_benchmark.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/../../../../../mbeddr.import.embb/embb.msd" folder="" />
     </projectModules>
   </component>
 </project>
