@@ -5443,6 +5443,12 @@
             <ref role="1Busuk" to="ffeo:568PkTlOK5Q" resolve="jetbrains.mps.core.xml" />
           </node>
         </node>
+        <node concept="1SiIV0" id="74yYi6SBI3s" role="3bR37C">
+          <node concept="3bR9La" id="74yYi6SBI3t" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1qi" resolve="jetbrains.mps.ide" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7Pr7tifzjKW" role="3989C9">
@@ -5555,6 +5561,12 @@
               <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
             </node>
           </node>
+          <node concept="1SiIV0" id="5pyBnOJmjBw" role="3bR37C">
+            <node concept="3bR9La" id="5pyBnOJmjBx" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="2N1CSrzSJt4" resolve="com.mbeddr.mpsutil.plantuml.pluginSolution" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="IWU1J3HDWv" role="3bR37C">
           <node concept="3bR9La" id="IWU1J3HDWw" role="1SiIV1">
@@ -5597,6 +5609,18 @@
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
+        <node concept="1SiIV0" id="QRmqzGrceX" role="3bR37C">
+          <node concept="3bR9La" id="QRmqzGrceY" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="$bJ0jguQdz" resolve="com.mbeddr.core.base.pluginSolution" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5tIzT5nhVVz" role="3bR37C">
+          <node concept="3bR9La" id="5tIzT5nhVV$" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="2N1CSrzSJt4" resolve="com.mbeddr.mpsutil.plantuml.pluginSolution" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7tNo_gxoK97" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -5623,12 +5647,6 @@
             <node concept="3bR9La" id="1iUWk_eIt3b" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" node="2N1CSrzsvbI" resolve="com.mbeddr.mpsutil.nodeaccess" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="1iUWk_eIt3c" role="3bR37C">
-            <node concept="3bR9La" id="1iUWk_eIt3d" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" node="7tNo_gxoK9s" resolve="com.mbeddr.doc.meta" />
             </node>
           </node>
           <node concept="1SiIV0" id="4hvHh3QYjC5" role="3bR37C">
@@ -5710,6 +5728,12 @@
               <ref role="3bR37D" to="90a9:31bAEZ0srt5" resolve="org.apache.commons" />
             </node>
           </node>
+          <node concept="1SiIV0" id="QRmqzKmNCi" role="3bR37C">
+            <node concept="3bR9La" id="QRmqzKmNCj" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="5WirkMxdR45" role="3bR37C">
           <node concept="1Busua" id="5WirkMxdR46" role="1SiIV1">
@@ -5719,6 +5743,18 @@
         <node concept="1SiIV0" id="1YMM4SJ8q7" role="3bR37C">
           <node concept="1Busua" id="1YMM4SJ8q8" role="1SiIV1">
             <ref role="1Busuk" node="1YMM4SJ2m0" resolve="com.mbeddr.doc" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="QRmqzKmNCg" role="3bR37C">
+          <node concept="3bR9La" id="QRmqzKmNCh" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="QRmqzLr_eK" role="3bR37C">
+          <node concept="3bR9La" id="QRmqzLr_eL" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:31bAEZ0srt5" resolve="org.apache.commons" />
           </node>
         </node>
       </node>
