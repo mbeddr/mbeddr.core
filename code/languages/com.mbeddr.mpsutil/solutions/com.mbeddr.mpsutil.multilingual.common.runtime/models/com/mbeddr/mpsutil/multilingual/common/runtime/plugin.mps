@@ -9,6 +9,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
   </languages>
   <imports>
     <import index="sxyo" ref="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" />
@@ -176,6 +177,7 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -186,6 +188,12 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
+    </language>
+    <language id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension">
+      <concept id="3729007189729192406" name="jetbrains.mps.lang.extension.structure.ExtensionPointDeclaration" flags="ng" index="vrV6u">
+        <property id="5911785528834333590" name="extensionName" index="20vvCb" />
+        <child id="8029776554053057803" name="objectType" index="luc8K" />
+      </concept>
     </language>
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
@@ -2241,6 +2249,27 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="5Q1XZgMoJ4n" role="1B3o_S" />
+  </node>
+  <node concept="3HP615" id="IoI2Mdz$N3">
+    <property role="TrG5h" value="ILanguageProvider" />
+    <node concept="3clFb_" id="IoI2MdzBeS" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="getLanguages" />
+      <node concept="A3Dl8" id="IoI2MdB$T0" role="3clF45">
+        <node concept="3Tqbb2" id="IoI2MdB$Zd" role="A3Ik2">
+          <ref role="ehGHo" to="sxyo:vzhXZP_pYG" resolve="Language" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="IoI2MdzBeV" role="1B3o_S" />
+      <node concept="3clFbS" id="IoI2MdzBeW" role="3clF47" />
+    </node>
+    <node concept="3Tm1VV" id="IoI2Mdz$N4" role="1B3o_S" />
+  </node>
+  <node concept="vrV6u" id="IoI2MdBAgL">
+    <property role="20vvCb" value="MULTILINGUAL_PROVIDERS" />
+    <node concept="3uibUv" id="IoI2MdBAgM" role="luc8K">
+      <ref role="3uigEE" node="IoI2Mdz$N3" resolve="ILanguageProvider" />
+    </node>
   </node>
 </model>
 
