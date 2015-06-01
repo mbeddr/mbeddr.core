@@ -15,7 +15,12 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="2597348684684069742" name="contextHints" index="CpUAK" />
+      </concept>
+      <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
+        <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
+      </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
@@ -27,6 +32,12 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
+      <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
+        <child id="5944657839000877563" name="hints" index="2ABdcP" />
+      </concept>
+      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
+        <property id="5944657839012629576" name="presentation" index="2BUmq6" />
+      </concept>
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
@@ -152,6 +163,7 @@
   </node>
   <node concept="PKFIW" id="2bng37sXCCT">
     <property role="TrG5h" value="EditSingleLingual" />
+    <property role="3GE5qa" value="singleLingual" />
     <ref role="1XX52x" to="phyx:2bng37sXCCt" resolve="IMultilingualNamedConcept" />
     <node concept="3F0A7n" id="2bng37sXCCU" role="2wV5jI">
       <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -435,6 +447,60 @@
       <node concept="VSNWy" id="2bng37t1aGB" role="3F10Kt">
         <property role="1lJzqX" value="12" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="47nV8Kb6FAM">
+    <property role="3GE5qa" value="singleLingual" />
+    <ref role="1XX52x" to="phyx:2bng37sXCCN" resolve="MultilingualText" />
+    <node concept="2aJ2om" id="47nV8Kb6FAN" role="CpUAK">
+      <ref role="2$4xQ3" node="47nV8Kb6FB5" resolve="singleLingual" />
+    </node>
+    <node concept="s8t4o" id="47nV8Kb6FAO" role="2wV5jI">
+      <ref role="28F8cf" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+      <node concept="s8sZD" id="47nV8Kb6FAP" role="sbcd9">
+        <node concept="3clFbS" id="47nV8Kb6FAQ" role="2VODD2">
+          <node concept="3clFbF" id="47nV8Kb6FAR" role="3cqZAp">
+            <node concept="2OqwBi" id="47nV8Kb6FAS" role="3clFbG">
+              <node concept="pncrf" id="47nV8Kb6FAT" role="2Oq$k0" />
+              <node concept="2qgKlT" id="47nV8Kb8r6s" role="2OqNvi">
+                <ref role="37wK5l" to="7eeb:2bng37sXCI3" resolve="getText" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="ARxKT" id="47nV8Kb6FAV" role="AS3tk">
+        <node concept="3clFbS" id="47nV8Kb6FAW" role="2VODD2">
+          <node concept="3clFbF" id="47nV8Kb6FAX" role="3cqZAp">
+            <node concept="2OqwBi" id="47nV8Kb6FAY" role="3clFbG">
+              <node concept="pncrf" id="47nV8Kb6FAZ" role="2Oq$k0" />
+              <node concept="2qgKlT" id="47nV8Kb8rj8" role="2OqNvi">
+                <ref role="37wK5l" to="7eeb:2bng37sXCI_" resolve="populateDefaultText" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="47nV8Kb6FB1">
+    <property role="3GE5qa" value="singleLingual" />
+    <ref role="1XX52x" to="phyx:2bng37sXCCI" resolve="MultilingualString" />
+    <node concept="2aJ2om" id="47nV8Kb6FB2" role="CpUAK">
+      <ref role="2$4xQ3" node="47nV8Kb6FB5" resolve="singleLingual" />
+    </node>
+    <node concept="3F0A7n" id="47nV8Kb6FB3" role="2wV5jI">
+      <property role="1O74Pk" value="true" />
+      <property role="1$x2rV" value="&lt;&lt;name&gt;&gt;" />
+      <ref role="1NtTu8" to="phyx:2bng37sXCCK" resolve="value" />
+    </node>
+  </node>
+  <node concept="2ABfQD" id="47nV8Kb6FB4">
+    <property role="TrG5h" value="translationsModes" />
+    <property role="3GE5qa" value="singleLingual" />
+    <node concept="2BsEeg" id="47nV8Kb6FB5" role="2ABdcP">
+      <property role="TrG5h" value="singleLingual" />
+      <property role="2BUmq6" value="Displays multilingual content in the editor for the single, current language" />
     </node>
   </node>
 </model>
