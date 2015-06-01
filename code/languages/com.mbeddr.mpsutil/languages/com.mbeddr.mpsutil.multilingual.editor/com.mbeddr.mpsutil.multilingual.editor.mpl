@@ -18,6 +18,7 @@
       </external-templates>
       <dependencies>
         <dependency reexport="true">eedc5a6f-c2e8-4009-a7ab-5fc307bf77ec(com.mbeddr.mpsutil.multilingual.common.runtime)</dependency>
+        <dependency reexport="false">77f315e4-31be-49f7-a1bb-218419195048(com.mbeddr.mpsutil.multilingual.common#568377005202254018)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>13a9e567-3b9e-4ccf-b94c-9155f5e78586(com.mbeddr.mpsutil.multilingual.editor)</usedLanguage>
