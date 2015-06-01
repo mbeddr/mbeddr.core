@@ -259,5 +259,14 @@
       </node>
     </node>
   </node>
+  <node concept="1TIwiD" id="7dfuMW5rC75">
+    <property role="3GE5qa" value="config" />
+    <property role="TrG5h" value="NameShorteingRoot" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7dfuMW5rC7I" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
 </model>
 

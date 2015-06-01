@@ -56,7 +56,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -546,7 +546,7 @@
                 <ref role="3cqZAo" node="3oJxBI_0vNj" resolve="results" />
               </node>
               <node concept="Xl_RD" id="2S1OXleRtky" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 2) - activation - (0,2)" />
+                <property role="Xl_RC" value="DecTab (id: 2) - activation - (2,0)" />
               </node>
             </node>
           </node>
