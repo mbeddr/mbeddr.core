@@ -65,6 +65,20 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_together">
+          <greater-priority-mapping>
+            <generator generatorUID="8add406d-1a06-4394-b2ac-7657b9212a12(com.mbeddr.mpsutil.multilingual.editor#568377005202254015)" />
+            <external-mapping>
+              <mapping-node modelUID="r:b0eee9d8-2291-4a67-bcf1-287db75d556a(com.mbeddr.mpsutil.multilingual.editor.generator.template.main@generator)" nodeID="2510545900188282853" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="77f315e4-31be-49f7-a1bb-218419195048(com.mbeddr.mpsutil.multilingual.common#568377005202254018)" />
+            <external-mapping>
+              <mapping-node modelUID="r:c786bea3-0279-4249-85d3-b8ac44fb5e9a(com.mbeddr.mpsutil.multilingual.common.generator.template.main@generator)" nodeID="568377005202254019" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>
