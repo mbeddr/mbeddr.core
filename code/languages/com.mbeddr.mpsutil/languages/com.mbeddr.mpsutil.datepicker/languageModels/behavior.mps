@@ -202,6 +202,9 @@
               <node concept="3TUQnm" id="2nIaZ7iwtjl" role="HW$Y0">
                 <ref role="3TV0OU" to="ric:2nIaZ7iwtiC" resolve="Parameter_DatePicker" />
               </node>
+              <node concept="3TUQnm" id="35WzcHe1Qil" role="HW$Y0">
+                <ref role="3TV0OU" to="ric:2nIaZ7iwtiB" resolve="Parameter_Calendar" />
+              </node>
               <node concept="3TUQnm" id="2nIaZ7iwtjm" role="HW$Y0">
                 <ref role="3TV0OU" to="tpc2:gCpncv5" resolve="ConceptFunctionParameter_node" />
               </node>
