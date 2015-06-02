@@ -53,14 +53,7 @@
           <greater-priority-mapping>
             <generator generatorUID="5a8dc1c0-cb58-4f7a-b98e-2028083bebf3(com.mbeddr.mpsutil.datepicker#2733170341479288272)" />
             <external-mapping>
-              <mapping-set>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:92282a25-7861-45f6-8362-187f5954e622(com.mbeddr.mpsutil.datepicker.generator.template.main@generator)" nodeID="2733170341479288273" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:92282a25-7861-45f6-8362-187f5954e622(com.mbeddr.mpsutil.datepicker.generator.template.main@generator)" nodeID="2733170341479512997" />
-                </mapping-set-element>
-              </mapping-set>
+              <mapping-node modelUID="r:92282a25-7861-45f6-8362-187f5954e622(com.mbeddr.mpsutil.datepicker.generator.template.main@generator)" nodeID="2733170341479512997" />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
@@ -78,14 +71,17 @@
     <dependency reexport="false">18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)</dependency>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
     <dependency reexport="true">98a7bbe2-0ea1-4503-9fc1-9efb7b48c6ea(com.mbeddr.mpsutil.datepicker.runtime)</dependency>
+    <dependency reexport="false">27e888f7-20c7-4b89-9a66-3c9207e0608b(com.mbeddr.mpsutil.datepicker.sandbox)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>f89904fb-9486-43a1-865e-5ad0375a8a88(de.itemis.mps.editor.bool)</usedLanguage>
+    <usedLanguage>fb1561dd-216d-4cd5-9cd8-5d1dc9d20bcf(com.mbeddr.mpsutil.datepicker)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
   <languageVersions>
+    <language id="fb1561dd-216d-4cd5-9cd8-5d1dc9d20bcf" fqName="com.mbeddr.mpsutil.datepicker" version="0" />
     <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" fqName="de.itemis.mps.editor.bool" version="0" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
     <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />

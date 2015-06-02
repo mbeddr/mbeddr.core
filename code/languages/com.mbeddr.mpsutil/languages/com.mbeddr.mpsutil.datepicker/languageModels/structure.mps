@@ -18,6 +18,7 @@
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1160488491229" name="iconPath" index="MwhBj" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
@@ -42,6 +43,7 @@
   <node concept="1TIwiD" id="2nIaZ7iwtiu">
     <property role="TrG5h" value="DatePickerCell" />
     <property role="3GE5qa" value="" />
+    <property role="MwhBj" value="${module}/icons/picker-16.png" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
     <node concept="1TJgyj" id="2nIaZ7iwtiv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

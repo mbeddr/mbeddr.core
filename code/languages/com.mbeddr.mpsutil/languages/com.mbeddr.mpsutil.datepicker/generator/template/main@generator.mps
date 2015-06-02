@@ -199,7 +199,7 @@
   </registry>
   <node concept="13MO4I" id="2nIaZ7ixfEx">
     <property role="TrG5h" value="reduce_DatePickerCell" />
-    <property role="3GE5qa" value="datepicker" />
+    <property role="3GE5qa" value="" />
     <ref role="3gUMe" to="ric:2nIaZ7iwtiu" resolve="DatePickerCell" />
     <node concept="312cEu" id="2nIaZ7ixfEy" role="13RCb5">
       <property role="TrG5h" value="_context_class_" />
