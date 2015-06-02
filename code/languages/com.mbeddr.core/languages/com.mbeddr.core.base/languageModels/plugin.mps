@@ -29,15 +29,6 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common">
-      <concept id="568377005202317274" name="com.mbeddr.mpsutil.multilingual.common.structure.ResourceBundle" flags="ng" index="3MtHw5">
-        <child id="568377005202317276" name="keys" index="3MtHw3" />
-      </concept>
-      <concept id="568377005202317270" name="com.mbeddr.mpsutil.multilingual.common.structure.MessageKey" flags="ng" index="3MtHw9">
-        <property id="568377005202317272" name="default" index="3MtHw7" />
-        <property id="568377005202317271" name="technicalKey" index="3MtHw8" />
-      </concept>
-    </language>
     <language id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences">
       <concept id="5299504751977339944" name="com.mbeddr.mpsutil.spreferences.structure.Parameter_IsInit" flags="ng" index="U$gdm" />
       <concept id="6044976435766352430" name="com.mbeddr.mpsutil.spreferences.structure.InitPageNode" flags="ig" index="U$sw$" />
@@ -57,14 +48,6 @@
           <node concept="U$gdm" id="3s$9DObToDT" role="3clFbw" />
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="3MtHw5" id="7Hbe8h6SmvO">
-    <property role="TrG5h" value="CoreBaseResourceBundle" />
-    <node concept="3MtHw9" id="7Hbe8h6SB0B" role="3MtHw3">
-      <property role="3MtHw8" value=" " />
-      <property role="TrG5h" value="noValueSource" />
-      <property role="3MtHw7" value="(no value source)" />
     </node>
   </node>
 </model>
