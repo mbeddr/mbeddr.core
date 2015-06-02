@@ -11,6 +11,8 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.buildutil/com.mbeddr.mpsutil.buildutil.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.compare/compare.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.contextsidebar/com.mbeddr.mpsutil.contextsidebar.mpl" folder="contextsidebar" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.datepicker.sandbox/com.mbeddr.mpsutil.datepicker.sandbox.mpl" folder="datePicker" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.datepicker/com.mbeddr.mpsutil.datepicker.mpl" folder="datePicker" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist.demolang/com.mbeddr.mpsutil.editor.querylist.demolang.mpl" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.mpl" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.emf.rt/com.mbeddr.mpsutil.emf.rt.msd" folder="emf" />
@@ -46,7 +48,6 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.review/com.mbeddr.mpsutil.review.mpl" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.mpl" folder="richstring" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.runconfiguration/com.mbeddr.mpsutil.runconfiguration.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.settingsform/com.mbeddr.mpsutil.settingsform.mpl" folder="preferenceform" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.spreferences.context/com.mbeddr.mpsutil.spreferences.context.mpl" folder="spreferences" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.mpl" folder="spreferences" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.typsystem.trace/com.mbeddr.mpsutil.typsystem.trace.mpl" folder="typesystem.trace" />
@@ -57,6 +58,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.comparator/comparator.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.contextsidebar.runtime/com.mbeddr.mpsutil.contextsidebar.runtime.msd" folder="contextsidebar" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.contextsidebar.sandbox2/com.mbeddr.mpsutil.contextsidebar.sandbox2.msd" folder="contextsidebar" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.datepicker.runtime/com.mbeddr.mpsutil.datepicker.runtime.msd" folder="datePicker" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.datepicker.sandbox.demo/com.mbeddr.mpsutil.datepicker.sandbox.demo.msd" folder="datePicker" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.querylist.runtime/com.mbeddr.mpsutil.editor.querylist.runtime.msd" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.querylist.sandbox/com.mbeddr.mpsutil.editor.querylist.sandbox.msd" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.utils/com.mbeddr.mpsutil.editor.utils.msd" folder="" />
