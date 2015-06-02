@@ -4908,17 +4908,17 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="35WzcHe4AYD" role="3bR37C">
-          <node concept="1BurEX" id="35WzcHe4AYE" role="1SiIV1">
-            <node concept="398BVA" id="35WzcHe4AYs" role="1BurEY">
+        <node concept="1SiIV0" id="6aUntcZhRkW" role="3bR37C">
+          <node concept="1BurEX" id="6aUntcZhRkX" role="1SiIV1">
+            <node concept="398BVA" id="6aUntcZhRkJ" role="1BurEY">
               <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="35WzcHe4AYt" role="iGT6I">
+              <node concept="2Ry0Ak" id="6aUntcZhRkK" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="35WzcHe4AYu" role="2Ry0An">
+                <node concept="2Ry0Ak" id="6aUntcZhRkL" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.mpsutil.datepicker.runtime" />
-                  <node concept="2Ry0Ak" id="35WzcHe4AYv" role="2Ry0An">
-                    <property role="2Ry0Am" value="jars" />
-                    <node concept="2Ry0Ak" id="35WzcHe4AYw" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="6aUntcZhRkM" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="6aUntcZhRkN" role="2Ry0An">
                       <property role="2Ry0Am" value="microba-0.4.4.jar" />
                     </node>
                   </node>
@@ -6668,6 +6668,27 @@
                     <node concept="2Ry0Ak" id="6ucYLjonLe5" role="2Ry0An">
                       <property role="2Ry0Am" value="com.mbeddr.mpsutil.httpsupport.rt" />
                       <node concept="2Ry0Ak" id="6ucYLjonLe6" role="2Ry0An">
+                        <property role="2Ry0Am" value="lib" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="398223" id="6L0JKBMPRz4" role="39821P">
+              <node concept="3_J27D" id="6L0JKBMPRz5" role="Nbhlr">
+                <node concept="3Mxwew" id="6L0JKBMPRz6" role="3MwsjC">
+                  <property role="3MwjfP" value="datepicker" />
+                </node>
+              </node>
+              <node concept="2HvfSZ" id="6L0JKBMPRz7" role="39821P">
+                <node concept="398BVA" id="6L0JKBMPRz8" role="2HvfZ0">
+                  <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+                  <node concept="2Ry0Ak" id="6L0JKBMPRz9" role="iGT6I">
+                    <property role="2Ry0Am" value="solutions" />
+                    <node concept="2Ry0Ak" id="6L0JKBMPRza" role="2Ry0An">
+                      <property role="2Ry0Am" value="com.mbeddr.mpsutil.datepicker.runtime" />
+                      <node concept="2Ry0Ak" id="6L0JKBMXb9a" role="2Ry0An">
                         <property role="2Ry0Am" value="lib" />
                       </node>
                     </node>

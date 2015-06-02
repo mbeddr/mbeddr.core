@@ -5,11 +5,11 @@
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="jars/microba-0.4.4.jar" />
+      <sourceRoot location="lib/microba-0.4.4.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
-    <stubModelEntry path="${module}/jars/microba-0.4.4.jar" />
+    <stubModelEntry path="${module}/lib/microba-0.4.4.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
