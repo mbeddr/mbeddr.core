@@ -4807,6 +4807,127 @@
           <property role="2GAjPV" value="false" />
         </node>
       </node>
+      <node concept="1E1JtD" id="35WzcHe4wqd" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.datepicker" />
+        <property role="3LESm3" value="fb1561dd-216d-4cd5-9cd8-5d1dc9d20bcf" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="35WzcHe4xDD" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="35WzcHe4ytY" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="35WzcHe4yZv" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.datepicker" />
+              <node concept="2Ry0Ak" id="35WzcHe4yZA" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.datepicker.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="35WzcHe4zr0" role="3bR37C">
+          <node concept="3bR9La" id="35WzcHe4zr1" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="35WzcHe4zr2" role="3bR37C">
+          <node concept="3bR9La" id="35WzcHe4zr3" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="35WzcHe4BBk" role="3bR37C">
+          <node concept="3bR9La" id="35WzcHe4BBl" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="35WzcHe4_iF" resolve="com.mbeddr.mpsutil.datepicker.runtime" />
+          </node>
+        </node>
+        <node concept="1E0d5M" id="35WzcHe4BBm" role="1E1XAP">
+          <ref role="1E0d5P" node="35WzcHe4_iF" resolve="com.mbeddr.mpsutil.datepicker.runtime" />
+        </node>
+        <node concept="1SiIV0" id="35WzcHe4BBn" role="3bR37C">
+          <node concept="1Busua" id="35WzcHe4BBo" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="35WzcHe4BBp" role="3bR37C">
+          <node concept="1Busua" id="35WzcHe4BBq" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="35WzcHe4BBr" role="1TViLv">
+          <property role="TrG5h" value="com.mbeddr.mpsutil.datepicker#2733170341479288272" />
+          <property role="3LESm3" value="5a8dc1c0-cb58-4f7a-b98e-2028083bebf3" />
+          <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="35WzcHe4BBs" role="3bR37C">
+            <node concept="3bR9La" id="35WzcHe4BBt" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="35WzcHe4_iF" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.datepicker.runtime" />
+        <property role="3LESm3" value="98a7bbe2-0ea1-4503-9fc1-9efb7b48c6ea" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="35WzcHe4Ay$" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="35WzcHe4AyG" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="35WzcHe4AyN" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.datepicker.runtime" />
+              <node concept="2Ry0Ak" id="35WzcHe4AyU" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.datepicker.runtime.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="35WzcHe4AYk" role="3bR37C">
+          <node concept="3bR9La" id="35WzcHe4AYl" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="35WzcHe4AYm" role="3bR37C">
+          <node concept="3bR9La" id="35WzcHe4AYn" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="35WzcHe4AYo" role="3bR37C">
+          <node concept="3bR9La" id="35WzcHe4AYp" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="35WzcHe4AYq" role="3bR37C">
+          <node concept="3bR9La" id="35WzcHe4AYr" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6aUntcZhRkW" role="3bR37C">
+          <node concept="1BurEX" id="6aUntcZhRkX" role="1SiIV1">
+            <node concept="398BVA" id="6aUntcZhRkJ" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="6aUntcZhRkK" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6aUntcZhRkL" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.datepicker.runtime" />
+                  <node concept="2Ry0Ak" id="6aUntcZhRkM" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="6aUntcZhRkN" role="2Ry0An">
+                      <property role="2Ry0Am" value="microba-0.4.4.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2G$12M" id="4gGXGcLV$l$" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.mpsutil.multilingual" />
@@ -6547,6 +6668,27 @@
                     <node concept="2Ry0Ak" id="6ucYLjonLe5" role="2Ry0An">
                       <property role="2Ry0Am" value="com.mbeddr.mpsutil.httpsupport.rt" />
                       <node concept="2Ry0Ak" id="6ucYLjonLe6" role="2Ry0An">
+                        <property role="2Ry0Am" value="lib" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="398223" id="6L0JKBMPRz4" role="39821P">
+              <node concept="3_J27D" id="6L0JKBMPRz5" role="Nbhlr">
+                <node concept="3Mxwew" id="6L0JKBMPRz6" role="3MwsjC">
+                  <property role="3MwjfP" value="datepicker" />
+                </node>
+              </node>
+              <node concept="2HvfSZ" id="6L0JKBMPRz7" role="39821P">
+                <node concept="398BVA" id="6L0JKBMPRz8" role="2HvfZ0">
+                  <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+                  <node concept="2Ry0Ak" id="6L0JKBMPRz9" role="iGT6I">
+                    <property role="2Ry0Am" value="solutions" />
+                    <node concept="2Ry0Ak" id="6L0JKBMPRza" role="2Ry0An">
+                      <property role="2Ry0Am" value="com.mbeddr.mpsutil.datepicker.runtime" />
+                      <node concept="2Ry0Ak" id="6L0JKBMXb9a" role="2Ry0An">
                         <property role="2Ry0Am" value="lib" />
                       </node>
                     </node>
