@@ -5,6 +5,7 @@
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -109,6 +110,18 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -135,6 +148,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -143,6 +157,9 @@
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
+      <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
+        <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1178894719932" name="jetbrains.mps.baseLanguage.collections.structure.DistinctOperation" flags="nn" index="1VAtEI" />
@@ -332,6 +349,20 @@
         <node concept="3clFbF" id="5klnWd$lYeW" role="3cqZAp">
           <node concept="3clFbT" id="5klnWd$lYeX" role="3clFbG">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7v8$3Aj2hDN" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="canInjectStackFrame" />
+      <node concept="3Tm1VV" id="7v8$3Aj2hDQ" role="1B3o_S" />
+      <node concept="10P_77" id="7v8$3Aj2hDR" role="3clF45" />
+      <node concept="3clFbS" id="7v8$3Aj2hDS" role="3clF47">
+        <node concept="3clFbF" id="7v8$3Aj2hDT" role="3cqZAp">
+          <node concept="3clFbT" id="7v8$3Aj2hDU" role="3clFbG">
+            <property role="3clFbU" value="false" />
           </node>
         </node>
       </node>
@@ -557,6 +588,25 @@
         </node>
         <node concept="3clFbF" id="2Zy_zYsMphq" role="3cqZAp">
           <node concept="13iPFW" id="2Zy_zYsMphr" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="VC7RuZYMH1" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="allowsBreakpoint" />
+      <node concept="3Tm1VV" id="VC7RuZYMH2" role="1B3o_S" />
+      <node concept="10P_77" id="VC7RuZYMN0" role="3clF45" />
+      <node concept="3clFbS" id="VC7RuZYMH4" role="3clF47">
+        <node concept="3SKdUt" id="VC7Rv019so" role="3cqZAp">
+          <node concept="3SKdUq" id="VC7Rv019sB" role="3SKWNk">
+            <property role="3SKdUp" value="wether we can set a breakpoint on the node instance or not" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="VC7RuZYMPO" role="3cqZAp">
+          <node concept="3clFbT" id="VC7RuZYMPN" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
         </node>
       </node>
     </node>
@@ -894,6 +944,170 @@
     </node>
     <node concept="13hLZK" id="2H$DUA8z$lz" role="13h7CW">
       <node concept="3clFbS" id="2H$DUA8z$l$" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7v8$3Aj2hNo">
+    <property role="3GE5qa" value="callstack" />
+    <ref role="13h7C2" to="2gv2:7v8$3Aj2hMM" resolve="IInjectStackFrameDelegatee" />
+    <node concept="13i0hz" id="7v8$3Aj2vsF" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="injectsStackFrameFor" />
+      <node concept="37vLTG" id="7v8$3Aj33Nq" role="3clF46">
+        <property role="TrG5h" value="currentStackFrame" />
+        <node concept="17QB3L" id="7v8$3Aj33Nr" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7v8$3Aj2vsV" role="3clF46">
+        <property role="TrG5h" value="injector" />
+        <node concept="3Tqbb2" id="7v8$3Aj2vt5" role="1tU5fm">
+          <ref role="ehGHo" to="2gv2:7v8$3Aj2hNr" resolve="IStackFrameInjector" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7v8$3Aj2vsG" role="1B3o_S" />
+      <node concept="10P_77" id="7v8$3Aj2vsR" role="3clF45" />
+      <node concept="3clFbS" id="7v8$3Aj2vsI" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="7v8$3Aj2hNp" role="13h7CW">
+      <node concept="3clFbS" id="7v8$3Aj2hNq" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7v8$3Aj2hUm">
+    <property role="3GE5qa" value="callstack" />
+    <ref role="13h7C2" to="2gv2:7v8$3Aj2hNr" resolve="IStackFrameInjector" />
+    <node concept="13i0hz" id="7v8$3AiXVWk" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="injectsStackFrame" />
+      <node concept="37vLTG" id="7v8$3Aj1zaA" role="3clF46">
+        <property role="TrG5h" value="stackFrameName" />
+        <node concept="17QB3L" id="7v8$3Aj2CW9" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7v8$3Aj2CET" role="3clF46">
+        <property role="TrG5h" value="traces" />
+        <node concept="A3Dl8" id="7v8$3Aj2CEU" role="1tU5fm">
+          <node concept="3Tqbb2" id="7v8$3Aj2CEV" role="A3Ik2" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7v8$3AiXVWl" role="1B3o_S" />
+      <node concept="10P_77" id="7v8$3AiXW2Z" role="3clF45" />
+      <node concept="3clFbS" id="7v8$3AiXVWn" role="3clF47">
+        <node concept="3clFbF" id="7v8$3AiXW3r" role="3cqZAp">
+          <node concept="3clFbT" id="7v8$3AiXW3q" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7v8$3AiXW3F" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getNodeForInjectionFromTraces" />
+      <node concept="37vLTG" id="7v8$3Aj2XXO" role="3clF46">
+        <property role="TrG5h" value="currentStackFrame" />
+        <node concept="17QB3L" id="7v8$3Aj2XXP" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7v8$3AiYjPl" role="3clF46">
+        <property role="TrG5h" value="traces" />
+        <node concept="A3Dl8" id="7v8$3AiZ6HQ" role="1tU5fm">
+          <node concept="3Tqbb2" id="7v8$3AiZ6I7" role="A3Ik2" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7v8$3AiXW3G" role="1B3o_S" />
+      <node concept="3Tqbb2" id="7v8$3AiXW5t" role="3clF45" />
+      <node concept="3clFbS" id="7v8$3AiXW3I" role="3clF47">
+        <node concept="3clFbF" id="7v8$3AiXW5y" role="3cqZAp">
+          <node concept="10Nm6u" id="7v8$3AiXW5x" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="7v8$3Aj2hUn" role="13h7CW">
+      <node concept="3clFbS" id="7v8$3Aj2hUo" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7BzY1RqMhlZ">
+    <property role="3GE5qa" value="callstack" />
+    <ref role="13h7C2" to="2gv2:7BzY1RqMheT" resolve="ICanBeInlined" />
+    <node concept="13i0hz" id="7BzY1RqMi6C" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="isInlined" />
+      <node concept="3Tm1VV" id="7BzY1RqMi6D" role="1B3o_S" />
+      <node concept="10P_77" id="7BzY1RqMiFe" role="3clF45" />
+      <node concept="3clFbS" id="7BzY1RqMi6F" role="3clF47" />
+      <node concept="37vLTG" id="7BzY1RqNSiM" role="3clF46">
+        <property role="TrG5h" value="frameName" />
+        <node concept="17QB3L" id="7BzY1RqNSiL" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="7BzY1RqMhsY" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getPCForInliningFrame" />
+      <node concept="37vLTG" id="7BzY1RqMhsZ" role="3clF46">
+        <property role="TrG5h" value="currentFrame" />
+        <node concept="17QB3L" id="7BzY1RqMht0" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7BzY1RqMht1" role="3clF46">
+        <property role="TrG5h" value="traces" />
+        <node concept="A3Dl8" id="7BzY1RqMht2" role="1tU5fm">
+          <node concept="3Tqbb2" id="7BzY1RqMht3" role="A3Ik2" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7BzY1RqMht4" role="1B3o_S" />
+      <node concept="3Tqbb2" id="7BzY1RqMht5" role="3clF45" />
+      <node concept="3clFbS" id="7BzY1RqMht6" role="3clF47">
+        <node concept="3clFbF" id="7BzY1RqMht7" role="3cqZAp">
+          <node concept="10Nm6u" id="7BzY1RqMht8" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="7BzY1RqMhU1" role="lGtFl">
+        <node concept="TZ5HA" id="7BzY1RqMhWt" role="TZ5H$">
+          <node concept="1dT_AC" id="7BzY1RqMhWu" role="1dT_Ay">
+            <property role="1dT_AB" value="the node, on which execution is suspended in inlining frame" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7BzY1RqPSmw" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="contributeFrameMappings" />
+      <node concept="3Tm1VV" id="7BzY1RqPSmx" role="1B3o_S" />
+      <node concept="3cqZAl" id="7BzY1RqPSmy" role="3clF45" />
+      <node concept="3clFbS" id="7BzY1RqPSmz" role="3clF47" />
+      <node concept="37vLTG" id="7BzY1RqPSm$" role="3clF46">
+        <property role="TrG5h" value="cStackFrames" />
+        <node concept="_YKpA" id="7BzY1RqPSm_" role="1tU5fm">
+          <node concept="3uibUv" id="7BzY1RqPSmA" role="_ZDj9">
+            <ref role="3uigEE" to="x30c:6cg_iZhYFs_" resolve="IMWMappingStackFrame" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7BzY1RqPSmB" role="3clF46">
+        <property role="TrG5h" value="frameMappings" />
+        <node concept="_YKpA" id="7BzY1RqPSmC" role="1tU5fm">
+          <node concept="3uibUv" id="7BzY1RqPSmD" role="_ZDj9">
+            <ref role="3uigEE" to="x30c:229N9i$8VVF" resolve="MFrameMappingImpl" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7BzY1RqPSmE" role="3clF46">
+        <property role="TrG5h" value="currentNode" />
+        <node concept="3Tqbb2" id="7BzY1RqPSmF" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7BzY1RqPSmG" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="3uibUv" id="7BzY1RqPSmH" role="1tU5fm">
+          <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7BzY1RqPTwM" role="3clF46">
+        <property role="TrG5h" value="pcOfSorroundingFrame" />
+        <node concept="3Tqbb2" id="7BzY1RqPTx4" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="7BzY1RqMhm0" role="13h7CW">
+      <node concept="3clFbS" id="7BzY1RqMhm1" role="2VODD2" />
     </node>
   </node>
 </model>

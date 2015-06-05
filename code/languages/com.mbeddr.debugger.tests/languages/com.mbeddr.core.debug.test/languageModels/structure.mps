@@ -776,5 +776,8 @@
       <ref role="PrY4T" node="3M3l$fn_bXb" resolve="IValidationConfigurationElement" />
     </node>
   </node>
+  <node concept="PlHQZ" id="3AspB7_G$T2">
+    <property role="TrG5h" value="ICanBeSubstitute" />
+  </node>
 </model>
 

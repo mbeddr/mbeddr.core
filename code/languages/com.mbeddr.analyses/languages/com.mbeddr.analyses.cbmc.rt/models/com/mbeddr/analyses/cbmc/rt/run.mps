@@ -41,6 +41,7 @@
     <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
     <import index="b2mh" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.project(MPS.IDEA/com.intellij.openapi.project@java_stub)" />
     <import index="pt5l" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.project(MPS.Platform/jetbrains.mps.ide.project@java_stub)" />
+    <import index="q9jj" ref="r:9bb65e44-f83e-4e38-ac95-7e443359a2f7(com.mbeddr.analyses.utils.log)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -184,6 +185,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -250,6 +252,9 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
+      </concept>
+      <concept id="1171903916106" name="jetbrains.mps.baseLanguage.structure.UpperBoundType" flags="in" index="3qUE_q">
+        <child id="1171903916107" name="bound" index="3qUE_r" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
@@ -3057,6 +3062,74 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="4xt6LZKDUms" role="3cqZAp">
+          <node concept="3cpWsn" id="4xt6LZKDUmt" role="3cpWs9">
+            <property role="TrG5h" value="tool" />
+            <node concept="17QB3L" id="4xt6LZKDUmo" role="1tU5fm" />
+            <node concept="2OqwBi" id="4xt6LZKDUmu" role="33vP2m">
+              <node concept="2OqwBi" id="4xt6LZKDUmv" role="2Oq$k0">
+                <node concept="37vLTw" id="4xt6LZKDUmw" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4XbM$YH6qS6" resolve="config" />
+                </node>
+                <node concept="2S8uIT" id="4xt6LZKDUmx" role="2OqNvi">
+                  <ref role="2S8YL0" node="40PV5hA1DQc" resolve="usedProver" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4xt6LZKDUmy" role="2OqNvi">
+                <ref role="37wK5l" node="40PV5hA1E76" resolve="getCommand" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4xt6LZKE9y4" role="3cqZAp">
+          <node concept="3cpWsn" id="4xt6LZKE9y5" role="3cpWs9">
+            <property role="TrG5h" value="envVarName" />
+            <node concept="17QB3L" id="4xt6LZKEaCp" role="1tU5fm" />
+            <node concept="2OqwBi" id="4xt6LZKE9y6" role="33vP2m">
+              <node concept="1eOMI4" id="4xt6LZKE9y7" role="2Oq$k0">
+                <node concept="3cpWs3" id="4xt6LZKE9y8" role="1eOMHV">
+                  <node concept="37vLTw" id="4xt6LZKE9y9" role="3uHU7B">
+                    <ref role="3cqZAo" node="4xt6LZKDUmt" resolve="tool" />
+                  </node>
+                  <node concept="Xl_RD" id="4xt6LZKE9ya" role="3uHU7w">
+                    <property role="Xl_RC" value="_CMD" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="4xt6LZKE9yb" role="2OqNvi">
+                <ref role="37wK5l" to="e2lb:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4xt6LZKE037" role="3cqZAp">
+          <node concept="3clFbS" id="4xt6LZKE039" role="3clFbx">
+            <node concept="3clFbF" id="4xt6LZKEaRf" role="3cqZAp">
+              <node concept="37vLTI" id="4xt6LZKEb2L" role="3clFbG">
+                <node concept="37vLTw" id="4xt6LZKEaRd" role="37vLTJ">
+                  <ref role="3cqZAo" node="4xt6LZKDUmt" resolve="tool" />
+                </node>
+                <node concept="2YIFZM" id="4xt6LZKEb9o" role="37vLTx">
+                  <ref role="37wK5l" to="e2lb:~System.getenv(java.lang.String):java.lang.String" resolve="getenv" />
+                  <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+                  <node concept="37vLTw" id="4xt6LZKEb9p" role="37wK5m">
+                    <ref role="3cqZAo" node="4xt6LZKE9y5" resolve="envVarName" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4xt6LZKE7sc" role="3clFbw">
+            <node concept="2YIFZM" id="4xt6LZKE68o" role="2Oq$k0">
+              <ref role="37wK5l" to="e2lb:~System.getenv(java.lang.String):java.lang.String" resolve="getenv" />
+              <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+              <node concept="37vLTw" id="4xt6LZKE9yc" role="37wK5m">
+                <ref role="3cqZAo" node="4xt6LZKE9y5" resolve="envVarName" />
+              </node>
+            </node>
+            <node concept="17RvpY" id="4xt6LZKE9rg" role="2OqNvi" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="4XbM$YH6pfM" role="3cqZAp">
           <node concept="3cpWsn" id="4XbM$YH6pfN" role="3cpWs9">
             <property role="TrG5h" value="result" />
@@ -3075,18 +3148,8 @@
                 <node concept="37vLTw" id="4XbM$YH6pfT" role="37wK5m">
                   <ref role="3cqZAo" node="7F8$WoW7SiJ" resolve="analyzedCFiles" />
                 </node>
-                <node concept="2OqwBi" id="4XbM$YH6pfU" role="37wK5m">
-                  <node concept="2OqwBi" id="4XbM$YH6pfV" role="2Oq$k0">
-                    <node concept="37vLTw" id="4XbM$YH6vfX" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4XbM$YH6qS6" resolve="config" />
-                    </node>
-                    <node concept="2S8uIT" id="4XbM$YH6pfX" role="2OqNvi">
-                      <ref role="2S8YL0" node="40PV5hA1DQc" resolve="usedProver" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="4XbM$YH6pfY" role="2OqNvi">
-                    <ref role="37wK5l" node="40PV5hA1E76" resolve="getCommand" />
-                  </node>
+                <node concept="37vLTw" id="4xt6LZKDUmz" role="37wK5m">
+                  <ref role="3cqZAo" node="4xt6LZKDUmt" resolve="tool" />
                 </node>
                 <node concept="37vLTw" id="4XbM$YH6pfZ" role="37wK5m">
                   <ref role="3cqZAo" node="4XbM$YH6pgb" resolve="args" />
@@ -6435,6 +6498,31 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3T2UJ1pSoZ7" role="jymVt" />
+    <node concept="2tJIrI" id="p7QU0IWvXQ" role="jymVt" />
+    <node concept="312cEg" id="p7QU0IWk7n" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="currentlyActiveClaimsCollectorRunnerFactory" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="p7QU0IWk7o" role="1B3o_S" />
+      <node concept="3uibUv" id="p7QU0IWk7p" role="1tU5fm">
+        <ref role="3uigEE" to="8e9v:sEP8ohtEIO" resolve="ToolRunner.ToolRunnerFactory" />
+        <node concept="3qUE_q" id="p7QU0IWk7q" role="11_B2D">
+          <node concept="3uibUv" id="p7QU0IWk7r" role="3qUE_r">
+            <ref role="3uigEE" to="8e9v:494NBewV62B" resolve="ToolRunnerBase" />
+          </node>
+        </node>
+      </node>
+      <node concept="2ShNRf" id="p7QU0IWk7s" role="33vP2m">
+        <node concept="HV5vD" id="p7QU0IWk7t" role="2ShVmc">
+          <ref role="HV5vE" node="sEP8ohtOE4" resolve="CProverLocalRunner.CProverLocalRunnerFactory" />
+        </node>
+      </node>
+      <node concept="NWlO9" id="p7QU0IWwco" role="lGtFl">
+        <property role="NWlVz" value="Factory for the runner collecting the claims - must be kept in sync with the tool which runs the analysis." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="p7QU0IWv2Q" role="jymVt" />
     <node concept="312cEg" id="3T2UJ1pSoZ9" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -6443,11 +6531,19 @@
       <node concept="3Tm6S6" id="3T2UJ1pSoZa" role="1B3o_S" />
       <node concept="3uibUv" id="sEP8ohtLNX" role="1tU5fm">
         <ref role="3uigEE" to="8e9v:sEP8ohtEIO" resolve="ToolRunner.ToolRunnerFactory" />
+        <node concept="3qUE_q" id="3dA$IyYZX4N" role="11_B2D">
+          <node concept="3uibUv" id="3dA$IyYZX9l" role="3qUE_r">
+            <ref role="3uigEE" to="8e9v:494NBewV62B" resolve="ToolRunnerBase" />
+          </node>
+        </node>
       </node>
       <node concept="2ShNRf" id="sEP8ohu8_B" role="33vP2m">
         <node concept="HV5vD" id="sEP8ohwMxH" role="2ShVmc">
           <ref role="HV5vE" node="sEP8ohtOE4" resolve="CProverLocalRunner.CProverLocalRunnerFactory" />
         </node>
+      </node>
+      <node concept="NWlO9" id="p7QU0IWwec" role="lGtFl">
+        <property role="NWlVz" value="Factory for the runner of the analysis - must be kept in sync with the tool which collects the claims." />
       </node>
     </node>
     <node concept="2tJIrI" id="3T2UJ1pSoZc" role="jymVt" />
@@ -6457,6 +6553,33 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="3T2UJ1pSoZe" role="3clF47">
+        <node concept="3clFbF" id="7$8IbnDjXcm" role="3cqZAp">
+          <node concept="2YIFZM" id="7$8IbnDjYTs" role="3clFbG">
+            <ref role="37wK5l" to="q9jj:7$8IbnDjXjW" resolve="logStatus" />
+            <ref role="1Pybhc" to="q9jj:SWpRmW$Kvn" resolve="Logger" />
+            <node concept="3VsKOn" id="7$8IbnDjYU$" role="37wK5m">
+              <ref role="3VsUkX" node="3T2UJ1pSoYT" resolve="CProverToolRunnerManager" />
+            </node>
+            <node concept="3cpWs3" id="7$8IbnDjZmi" role="37wK5m">
+              <node concept="2OqwBi" id="7$8IbnDjZYJ" role="3uHU7w">
+                <node concept="2OqwBi" id="7$8IbnDjZtm" role="2Oq$k0">
+                  <node concept="37vLTw" id="7$8IbnDjZn$" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3T2UJ1pSoZn" resolve="runner" />
+                  </node>
+                  <node concept="liA8E" id="7$8IbnDjZQd" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="7$8IbnDk0Wz" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~Class.getName():java.lang.String" resolve="getName" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="7$8IbnDjYVR" role="3uHU7B">
+                <property role="Xl_RC" value="Currently active tool runner: " />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="3T2UJ1pSoZf" role="3cqZAp">
           <node concept="37vLTI" id="3T2UJ1pSoZg" role="3clFbG">
             <node concept="37vLTw" id="3T2UJ1pSoZh" role="37vLTx">
@@ -6486,21 +6609,24 @@
       <property role="TrG5h" value="getCurrentlyActiveToolRunner" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
+      <node concept="NWlO9" id="7zvQUZj5SzL" role="lGtFl">
+        <property role="NWlVz" value="Here we expect *always* a new instance of the runner !!! otherwise optimizing runners will not work" />
+      </node>
       <node concept="3clFbS" id="3T2UJ1pSoZr" role="3clF47">
-        <node concept="3clFbF" id="sEP8ohud3q" role="3cqZAp">
-          <node concept="2OqwBi" id="sEP8ohtNGT" role="3clFbG">
-            <node concept="37vLTw" id="3T2UJ1pSoZu" role="2Oq$k0">
+        <node concept="3clFbF" id="7zvQUZj4UI8" role="3cqZAp">
+          <node concept="2OqwBi" id="7zvQUZj4UIa" role="3clFbG">
+            <node concept="37vLTw" id="7zvQUZj4UIb" role="2Oq$k0">
               <ref role="3cqZAo" node="3T2UJ1pSoZ9" resolve="currentlyActiveToolRunnerFactory" />
             </node>
-            <node concept="liA8E" id="sEP8ohtOvG" role="2OqNvi">
+            <node concept="liA8E" id="7zvQUZj4UIc" role="2OqNvi">
               <ref role="37wK5l" to="8e9v:sEP8ohtFEk" resolve="createNewToolRunner" />
             </node>
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="3T2UJ1pSoZ$" role="1B3o_S" />
-      <node concept="3uibUv" id="3T2UJ1pSoZ_" role="3clF45">
-        <ref role="3uigEE" to="8e9v:4CtHBqNlaPk" resolve="ToolRunner" />
+      <node concept="3uibUv" id="3dA$IyYZWTJ" role="3clF45">
+        <ref role="3uigEE" to="8e9v:494NBewV62B" resolve="ToolRunnerBase" />
       </node>
     </node>
     <node concept="2tJIrI" id="3T2UJ1pSoZA" role="jymVt" />
@@ -6521,6 +6647,137 @@
         <ref role="3uigEE" to="8e9v:sEP8ohtEIO" resolve="ToolRunner.ToolRunnerFactory" />
       </node>
     </node>
+    <node concept="2tJIrI" id="p7QU0IW1YA" role="jymVt" />
+    <node concept="312cEg" id="p7QU0IWqoW" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="lastActiveToolRunnerFactory" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="p7QU0IWqoX" role="1B3o_S" />
+      <node concept="3uibUv" id="p7QU0IWtyZ" role="1tU5fm">
+        <ref role="3uigEE" to="8e9v:sEP8ohtEIO" resolve="ToolRunner.ToolRunnerFactory" />
+        <node concept="3qUE_q" id="p7QU0IWtz0" role="11_B2D">
+          <node concept="3uibUv" id="p7QU0IWtz1" role="3qUE_r">
+            <ref role="3uigEE" to="8e9v:494NBewV62B" resolve="ToolRunnerBase" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="p7QU0IWwPG" role="jymVt" />
+    <node concept="3clFb_" id="p7QU0IWjzs" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="setClaimsCollecting" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="p7QU0IWjzt" role="3clF47">
+        <node concept="3clFbF" id="p7QU0IWrUs" role="3cqZAp">
+          <node concept="37vLTI" id="p7QU0IWtvQ" role="3clFbG">
+            <node concept="37vLTw" id="p7QU0IWtxE" role="37vLTx">
+              <ref role="3cqZAo" node="3T2UJ1pSoZ9" resolve="currentlyActiveToolRunnerFactory" />
+            </node>
+            <node concept="37vLTw" id="p7QU0IWrUq" role="37vLTJ">
+              <ref role="3cqZAo" node="p7QU0IWqoW" resolve="lastActiveToolRunnerFactory" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="p7QU0IWtHB" role="3cqZAp">
+          <node concept="1rXfSq" id="p7QU0IWtH_" role="3clFbG">
+            <ref role="37wK5l" node="3T2UJ1pSoZd" resolve="setCurrentlyActiveToolRunnerFactory" />
+            <node concept="37vLTw" id="p7QU0IWtOq" role="37wK5m">
+              <ref role="3cqZAo" node="p7QU0IWk7n" resolve="currentlyActiveClaimsCollectorRunnerFactory" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="p7QU0IWjzO" role="1B3o_S" />
+      <node concept="3cqZAl" id="p7QU0IWjzP" role="3clF45" />
+      <node concept="NWlO9" id="p7QU0IWwEu" role="lGtFl">
+        <property role="NWlVz" value="The current runner will be for claims collecting." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="p7QU0IWjnw" role="jymVt" />
+    <node concept="3clFb_" id="p7QU0IWu6O" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="unsetClaimsCollecting" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="p7QU0IWu6P" role="3clF47">
+        <node concept="3clFbF" id="p7QU0IWu6U" role="3cqZAp">
+          <node concept="1rXfSq" id="p7QU0IWu6V" role="3clFbG">
+            <ref role="37wK5l" node="3T2UJ1pSoZd" resolve="setCurrentlyActiveToolRunnerFactory" />
+            <node concept="37vLTw" id="p7QU0IWu$k" role="37wK5m">
+              <ref role="3cqZAo" node="p7QU0IWqoW" resolve="lastActiveToolRunnerFactory" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="p7QU0IWu6X" role="1B3o_S" />
+      <node concept="3cqZAl" id="p7QU0IWu6Y" role="3clF45" />
+      <node concept="NWlO9" id="p7QU0IWx4m" role="lGtFl">
+        <property role="NWlVz" value="The current runner will be for analysis running." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="p7QU0IWtSI" role="jymVt" />
+    <node concept="3clFb_" id="p7QU0IXBOj" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="setCurrentlyActiveClaimsCollectorRunnerFactory" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="p7QU0IXBOk" role="3clF47">
+        <node concept="3clFbF" id="p7QU0IXBOl" role="3cqZAp">
+          <node concept="2YIFZM" id="p7QU0IXBOm" role="3clFbG">
+            <ref role="1Pybhc" to="q9jj:SWpRmW$Kvn" resolve="Logger" />
+            <ref role="37wK5l" to="q9jj:7$8IbnDjXjW" resolve="logStatus" />
+            <node concept="3VsKOn" id="p7QU0IXBOn" role="37wK5m">
+              <ref role="3VsUkX" node="3T2UJ1pSoYT" resolve="CProverToolRunnerManager" />
+            </node>
+            <node concept="3cpWs3" id="p7QU0IXBOo" role="37wK5m">
+              <node concept="2OqwBi" id="p7QU0IXBOp" role="3uHU7w">
+                <node concept="2OqwBi" id="p7QU0IXBOq" role="2Oq$k0">
+                  <node concept="37vLTw" id="p7QU0IXBOr" role="2Oq$k0">
+                    <ref role="3cqZAo" node="p7QU0IXBOH" resolve="runner" />
+                  </node>
+                  <node concept="liA8E" id="p7QU0IXBOs" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="p7QU0IXBOt" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~Class.getName():java.lang.String" resolve="getName" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="p7QU0IXBOu" role="3uHU7B">
+                <property role="Xl_RC" value="Currently active claims collector: " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="p7QU0IXBOv" role="3cqZAp">
+          <node concept="37vLTI" id="p7QU0IXBOw" role="3clFbG">
+            <node concept="37vLTw" id="p7QU0IXBOx" role="37vLTx">
+              <ref role="3cqZAo" node="p7QU0IXBOH" resolve="runner" />
+            </node>
+            <node concept="2OqwBi" id="p7QU0IXBOy" role="37vLTJ">
+              <node concept="Xjq3P" id="p7QU0IXBOz" role="2Oq$k0" />
+              <node concept="2OwXpG" id="p7QU0IXFCQ" role="2OqNvi">
+                <ref role="2Oxat5" node="p7QU0IWk7n" resolve="currentlyActiveClaimsCollectorRunnerFactory" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="p7QU0IXBOF" role="1B3o_S" />
+      <node concept="3cqZAl" id="p7QU0IXBOG" role="3clF45" />
+      <node concept="37vLTG" id="p7QU0IXBOH" role="3clF46">
+        <property role="TrG5h" value="runner" />
+        <node concept="3uibUv" id="p7QU0IXBOI" role="1tU5fm">
+          <ref role="3uigEE" to="8e9v:sEP8ohtEIO" resolve="ToolRunner.ToolRunnerFactory" />
+        </node>
+      </node>
+      <node concept="NWlO9" id="p7QU0IXGbn" role="lGtFl">
+        <property role="NWlVz" value="Sets the factory for runners which collect claims." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="p7QU0IXB$h" role="jymVt" />
     <node concept="3Tm1VV" id="3T2UJ1pSoZB" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="4EriiVwjM2O">
@@ -8823,12 +9080,15 @@
       <node concept="3Tm1VV" id="sEP8ohtOE5" role="1B3o_S" />
       <node concept="3uibUv" id="sEP8ohtOF6" role="EKbjA">
         <ref role="3uigEE" to="8e9v:sEP8ohtEIO" resolve="ToolRunner.ToolRunnerFactory" />
+        <node concept="3uibUv" id="1CPQBcrdJjk" role="11_B2D">
+          <ref role="3uigEE" node="4CtHBqN2ghF" resolve="CProverLocalRunner" />
+        </node>
       </node>
       <node concept="3clFb_" id="sEP8ohtOFl" role="jymVt">
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="createNewToolRunner" />
-        <node concept="3uibUv" id="sEP8ohtOFm" role="3clF45">
-          <ref role="3uigEE" to="8e9v:4CtHBqNlaPk" resolve="ToolRunner" />
+        <node concept="3uibUv" id="1CPQBcrdJkv" role="3clF45">
+          <ref role="3uigEE" node="4CtHBqN2ghF" resolve="CProverLocalRunner" />
         </node>
         <node concept="3Tm1VV" id="sEP8ohtOFn" role="1B3o_S" />
         <node concept="3clFbS" id="sEP8ohtOFp" role="3clF47">

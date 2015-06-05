@@ -589,6 +589,43 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="7dfuMW5yHR9" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.ts.core.extended" />
+        <property role="3LESm3" value="1dddf916-f9bd-4c3b-af45-3f86032dab45" />
+        <property role="2GAjPV" value="false" />
+        <property role="aoJFB" value="sources and tests" />
+        <node concept="398BVA" id="7dfuMW5yHWJ" role="3LF7KH">
+          <ref role="398BVh" node="7eF9rfAuuux" resolve="mbeddr.core" />
+          <node concept="2Ry0Ak" id="7dfuMW5yIh_" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="7dfuMW5yInA" role="2Ry0An">
+              <property role="2Ry0Am" value="test.ts.core.extended" />
+              <node concept="2Ry0Ak" id="7dfuMW5yInH" role="2Ry0An">
+                <property role="2Ry0Am" value="test.ts.core.extended.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7dfuMW5yInK" role="3bR37C">
+          <node concept="3bR9La" id="7dfuMW5yInL" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:7uZw0yZ43JW" resolve="com.mbeddr.core.util" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7dfuMW5yInM" role="3bR37C">
+          <node concept="3bR9La" id="7dfuMW5yInN" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:7uZw0yZ43LZ" resolve="com.mbeddr.core.embedded" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7dfuMW5yInO" role="3bR37C">
+          <node concept="3bR9La" id="7dfuMW5yInP" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7eF9rfAuutL" resolve="com.mbeddr.core.__spreferences.PlatformTemplates" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="398rNT" id="7eF9rfAuuuc" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
@@ -754,6 +791,9 @@
       <node concept="L2wRC" id="1J$x$3sbnks" role="39821P">
         <ref role="L2wRA" node="1WKZBvBZo9v" resolve="test.ts.core" />
       </node>
+      <node concept="L2wRC" id="7dfuMW5yIsZ" role="39821P">
+        <ref role="L2wRA" node="7dfuMW5yHR9" resolve="test.ts.core.extended" />
+      </node>
     </node>
     <node concept="22LTRH" id="7eF9rfAuuvf" role="1hWBAP">
       <property role="TrG5h" value="com.mbeddr.core.tests" />
@@ -765,6 +805,9 @@
       </node>
       <node concept="22LTRM" id="2tUvrc9WBEw" role="22LTRK">
         <ref role="22LTRN" node="1SicdSZhLAK" resolve="test.editor.core" />
+      </node>
+      <node concept="22LTRM" id="7dfuMW5yIAk" role="22LTRK">
+        <ref role="22LTRN" node="7dfuMW5yHR9" resolve="test.ts.core.extended" />
       </node>
     </node>
   </node>

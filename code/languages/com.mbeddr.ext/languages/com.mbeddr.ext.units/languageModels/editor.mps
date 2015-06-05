@@ -477,6 +477,12 @@
         </node>
       </node>
     </node>
+    <node concept="3EZMnI" id="3xqp6yfp5Cv" role="6VMZX">
+      <node concept="PMmxH" id="3xqp6yfp5IY" role="3EZMnx">
+        <ref role="PMmxG" to="vrqd:3xqp6yfmmvz" resolve="TypeSize" />
+      </node>
+      <node concept="2iRkQZ" id="3xqp6yfp5Cy" role="2iSdaV" />
+    </node>
   </node>
   <node concept="24kQdi" id="7eOyx9r3lrf">
     <property role="3GE5qa" value="definition.exponent" />

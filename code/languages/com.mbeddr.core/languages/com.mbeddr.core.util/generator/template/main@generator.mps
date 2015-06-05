@@ -101,7 +101,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -16439,14 +16439,21 @@
                         <node concept="2OqwBi" id="5aGJjvFBJzt" role="3clFbG">
                           <node concept="1PxgMI" id="5aGJjvFBJjh" role="2Oq$k0">
                             <ref role="1PxNhF" to="mj1l:7FQByU3CrCQ" resolve="Type" />
-                            <node concept="2OqwBi" id="5aGJjvFBGlR" role="1PxMeX">
-                              <node concept="2OqwBi" id="5aGJjvFBEzh" role="2Oq$k0">
-                                <node concept="30H73N" id="5aGJjvFBEt_" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="5aGJjvFBFHv" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="k146:1duwXQeBh9a" />
+                            <node concept="2YIFZM" id="30dcBO$w6DU" role="1PxMeX">
+                              <ref role="37wK5l" to="n7pc:61lw97FqmmD" resolve="getConcreteNonConstVolatileType" />
+                              <ref role="1Pybhc" to="n7pc:7YIk2VQKlj4" resolve="MeetTypeHelper" />
+                              <node concept="1PxgMI" id="30dcBO$wfZH" role="37wK5m">
+                                <ref role="1PxNhF" to="tpck:hYa1RjM" resolve="IType" />
+                                <node concept="2OqwBi" id="5aGJjvFBGlR" role="1PxMeX">
+                                  <node concept="2OqwBi" id="5aGJjvFBEzh" role="2Oq$k0">
+                                    <node concept="30H73N" id="5aGJjvFBEt_" role="2Oq$k0" />
+                                    <node concept="3TrEf2" id="5aGJjvFBFHv" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="k146:1duwXQeBh9a" />
+                                    </node>
+                                  </node>
+                                  <node concept="3JvlWi" id="5aGJjvFBIqF" role="2OqNvi" />
                                 </node>
                               </node>
-                              <node concept="3JvlWi" id="5aGJjvFBIqF" role="2OqNvi" />
                             </node>
                           </node>
                           <node concept="2qgKlT" id="5aGJjvFBJUa" role="2OqNvi">

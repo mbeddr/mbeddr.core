@@ -94,6 +94,15 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1109279763828" name="jetbrains.mps.baseLanguage.structure.TypeVariableDeclaration" flags="ng" index="16euLQ">
+        <child id="1214996921760" name="bound" index="3ztrMU" />
+      </concept>
+      <concept id="1109279851642" name="jetbrains.mps.baseLanguage.structure.GenericDeclaration" flags="ng" index="16eOlS">
+        <child id="1109279881614" name="typeVariableDeclaration" index="16eVyc" />
+      </concept>
+      <concept id="1109283449304" name="jetbrains.mps.baseLanguage.structure.TypeVariableReference" flags="in" index="16syzq">
+        <reference id="1109283546497" name="typeVariableDeclaration" index="16sUi3" />
+      </concept>
       <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -1283,33 +1292,46 @@
         </node>
       </node>
       <node concept="3clFbS" id="4$9c1ZxYYiV" role="3clF47">
-        <node concept="3cpWs8" id="4$9c1ZxZ34t" role="3cqZAp">
-          <node concept="3cpWsn" id="4$9c1ZxZ34u" role="3cpWs9">
-            <property role="TrG5h" value="suffix" />
-            <node concept="17QB3L" id="4$9c1ZxZ34v" role="1tU5fm" />
-            <node concept="3K4zz7" id="4$9c1ZxZ34w" role="33vP2m">
-              <node concept="Xl_RD" id="4$9c1ZxZ34x" role="3K4E3e">
-                <property role="Xl_RC" value=".exe" />
-              </node>
-              <node concept="Xl_RD" id="4$9c1ZxZ34y" role="3K4GZi" />
-              <node concept="10M0yZ" id="4$9c1ZxZ34z" role="3K4Cdx">
-                <ref role="3cqZAo" to="v2t1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
-                <ref role="1PxDUh" to="v2t1:~SystemUtils" resolve="SystemUtils" />
-              </node>
-            </node>
-          </node>
-        </node>
+        <node concept="3clFbH" id="4xt6LZKDDdr" role="3cqZAp" />
         <node concept="3cpWs8" id="4$9c1ZxZ35t" role="3cqZAp">
           <node concept="3cpWsn" id="4$9c1ZxZ35u" role="3cpWs9">
             <property role="TrG5h" value="programName" />
             <node concept="17QB3L" id="4$9c1ZxZ35v" role="1tU5fm" />
-            <node concept="3cpWs3" id="4$9c1ZxZ35w" role="33vP2m">
-              <node concept="3cpWs2" id="4$9c1ZxZ35x" role="3uHU7B">
-                <ref role="3cqZAo" node="4$9c1ZxZ0VU" resolve="toolBinaryName" />
+            <node concept="37vLTw" id="4xt6LZKDNsD" role="33vP2m">
+              <ref role="3cqZAo" node="4$9c1ZxZ0VU" resolve="toolBinaryName" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4xt6LZKDNNe" role="3cqZAp">
+          <node concept="3clFbS" id="4xt6LZKDNNg" role="3clFbx">
+            <node concept="3clFbF" id="4xt6LZKDDg0" role="3cqZAp">
+              <node concept="d57v9" id="4xt6LZKDQaR" role="3clFbG">
+                <node concept="37vLTw" id="4xt6LZKDQaW" role="37vLTJ">
+                  <ref role="3cqZAo" node="4$9c1ZxZ35u" resolve="programName" />
+                </node>
+                <node concept="Xl_RD" id="4xt6LZKDThi" role="37vLTx">
+                  <property role="Xl_RC" value=".exe" />
+                </node>
               </node>
-              <node concept="3cpWsa" id="4$9c1ZxZ35y" role="3uHU7w">
-                <ref role="3cqZAo" node="4$9c1ZxZ34u" resolve="suffix" />
+            </node>
+          </node>
+          <node concept="1Wc70l" id="4xt6LZKDQqQ" role="3clFbw">
+            <node concept="3fqX7Q" id="4xt6LZKDPOo" role="3uHU7w">
+              <node concept="2OqwBi" id="4xt6LZKDPOq" role="3fr31v">
+                <node concept="37vLTw" id="4xt6LZKDPOr" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4$9c1ZxZ35u" resolve="programName" />
+                </node>
+                <node concept="liA8E" id="4xt6LZKDPOs" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                  <node concept="Xl_RD" id="4xt6LZKDT8v" role="37wK5m">
+                    <property role="Xl_RC" value=".exe" />
+                  </node>
+                </node>
               </node>
+            </node>
+            <node concept="10M0yZ" id="4xt6LZKDT3E" role="3uHU7B">
+              <ref role="1PxDUh" to="v2t1:~SystemUtils" resolve="SystemUtils" />
+              <ref role="3cqZAo" to="v2t1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
             </node>
           </node>
         </node>
@@ -2859,14 +2881,20 @@
       <node concept="3clFb_" id="sEP8ohtFEk" role="jymVt">
         <property role="1EzhhJ" value="true" />
         <property role="TrG5h" value="createNewToolRunner" />
-        <node concept="3uibUv" id="sEP8ohtFKk" role="3clF45">
-          <ref role="3uigEE" node="4CtHBqNlaPk" resolve="ToolRunner" />
+        <node concept="16syzq" id="1CPQBcrdD9s" role="3clF45">
+          <ref role="16sUi3" node="1CPQBcrdD5y" resolve="T" />
         </node>
         <node concept="3Tm1VV" id="sEP8ohtFEn" role="1B3o_S" />
         <node concept="3clFbS" id="sEP8ohtFEo" role="3clF47" />
       </node>
       <node concept="NWlO9" id="4CtTexwEVRQ" role="lGtFl">
         <property role="NWlVz" value="Factory for creating ToolRunner objects." />
+      </node>
+      <node concept="16euLQ" id="1CPQBcrdD5y" role="16eVyc">
+        <property role="TrG5h" value="T" />
+        <node concept="3uibUv" id="1CPQBcrdD7j" role="3ztrMU">
+          <ref role="3uigEE" node="4CtHBqNlaPk" resolve="ToolRunner" />
+        </node>
       </node>
     </node>
   </node>

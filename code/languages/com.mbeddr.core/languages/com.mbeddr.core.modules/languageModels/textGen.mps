@@ -15,6 +15,7 @@
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -2070,6 +2071,58 @@
         <node concept="lc7rE" id="1Iv4$fSveQW" role="3cqZAp">
           <node concept="la8eA" id="1Iv4$fSvfyD" role="lcghm">
             <property role="lacIc" value="__VA_ARGS__" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="xN636rZcEm">
+    <ref role="WuzLi" to="x27k:IrwlmWyLju" resolve="PragmaModuleContent" />
+    <node concept="11bSqf" id="xN636rZcEn" role="11c4hB">
+      <node concept="3clFbS" id="xN636rZcEo" role="2VODD2">
+        <node concept="lc7rE" id="IrwlmWyTkv" role="3cqZAp">
+          <node concept="la8eA" id="IrwlmWyTkx" role="lcghm">
+            <property role="lacIc" value="#pragma" />
+          </node>
+          <node concept="la8eA" id="IrwlmWyTk$" role="lcghm">
+            <property role="lacIc" value=" " />
+          </node>
+          <node concept="l9hG8" id="IrwlmWyTkA" role="lcghm">
+            <node concept="2OqwBi" id="IrwlmWyTkX" role="lb14g">
+              <node concept="117lpO" id="IrwlmWyTkC" role="2Oq$k0" />
+              <node concept="3TrcHB" id="IrwlmWyTl3" role="2OqNvi">
+                <ref role="3TsBF5" to="x27k:IrwlmWyLjw" resolve="pragmaString" />
+              </node>
+            </node>
+          </node>
+          <node concept="l8MVK" id="xN636rZdAe" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="4lD4hLXCHAZ">
+    <ref role="WuzLi" to="x27k:T6zAqDO4AQ" resolve="CommentModuleContent" />
+    <node concept="11bSqf" id="4lD4hLXCHB0" role="11c4hB">
+      <node concept="3clFbS" id="4lD4hLXCHB1" role="2VODD2">
+        <node concept="lc7rE" id="4lD4hLXCIGH" role="3cqZAp">
+          <node concept="la8eA" id="4lD4hLXCIGU" role="lcghm">
+            <property role="lacIc" value="/* " />
+          </node>
+          <node concept="l9hG8" id="4lD4hLXCIHr" role="lcghm">
+            <node concept="2OqwBi" id="4lD4hLXDaB9" role="lb14g">
+              <node concept="2OqwBi" id="4lD4hLXCIMN" role="2Oq$k0">
+                <node concept="117lpO" id="4lD4hLXCIIb" role="2Oq$k0" />
+                <node concept="3TrEf2" id="4lD4hLXCJSS" role="2OqNvi">
+                  <ref role="3Tt5mk" to="x27k:T6zAqDO5LY" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="4lD4hLXDaKu" role="2OqNvi">
+                <ref role="37wK5l" to="hwgx:6byLOcR3jNg" resolve="asTextString" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="4lD4hLXCJWo" role="lcghm">
+            <property role="lacIc" value=" */" />
           </node>
         </node>
       </node>

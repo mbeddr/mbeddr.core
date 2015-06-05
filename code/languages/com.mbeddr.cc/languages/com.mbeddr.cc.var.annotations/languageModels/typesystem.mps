@@ -14,6 +14,7 @@
     <import index="rpdm" ref="r:91453863-abdf-432d-a851-57f349774287(com.mbeddr.cc.var.annotations.behavior)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="qqyh" ref="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" implicit="true" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -285,6 +286,54 @@
             </node>
             <node concept="1YBJjd" id="2h6lNbWoELF" role="2OEOjV">
               <ref role="1YBMHb" node="2h6lNbWoELp" resolve="fmc" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="7tA49iWEnS9" role="3cqZAp">
+        <node concept="3clFbS" id="7tA49iWEnSb" role="3clFbx">
+          <node concept="3clFbJ" id="7tA49iWEqPi" role="3cqZAp">
+            <node concept="3clFbS" id="7tA49iWEqPk" role="3clFbx">
+              <node concept="2MkqsV" id="7tA49iWEstW" role="3cqZAp">
+                <node concept="Xl_RD" id="7tA49iWEsub" role="2MkJ7o">
+                  <property role="Xl_RC" value="no feature models imported; this variability specification has no effect" />
+                </node>
+                <node concept="1YBJjd" id="7tA49iWEswy" role="2OEOjV">
+                  <ref role="1YBMHb" node="2h6lNbWoELp" resolve="fmc" />
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="7tA49iWEsmU" role="3clFbw">
+              <node concept="2OqwBi" id="7tA49iWEsmW" role="3fr31v">
+                <node concept="1PxgMI" id="7tA49iWEsmX" role="2Oq$k0">
+                  <ref role="1PxNhF" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+                  <node concept="2OqwBi" id="7tA49iWEsmY" role="1PxMeX">
+                    <node concept="1YBJjd" id="7tA49iWEsmZ" role="2Oq$k0">
+                      <ref role="1YBMHb" node="2h6lNbWoELp" resolve="fmc" />
+                    </node>
+                    <node concept="1mfA1w" id="7tA49iWEsn0" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="7tA49iWEsn1" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:7Vd878lThb_" resolve="hasVisibleContentsOfType" />
+                  <node concept="3TUQnm" id="7tA49iWEsn2" role="37wK5m">
+                    <ref role="3TV0OU" to="qqyh:5USXI9Kzbaq" resolve="FeatureModel" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="7tA49iWEpRU" role="3clFbw">
+          <node concept="2OqwBi" id="7tA49iWEpsm" role="2Oq$k0">
+            <node concept="1YBJjd" id="7tA49iWEnSy" role="2Oq$k0">
+              <ref role="1YBMHb" node="2h6lNbWoELp" resolve="fmc" />
+            </node>
+            <node concept="1mfA1w" id="7tA49iWEpEu" role="2OqNvi" />
+          </node>
+          <node concept="1mIQ4w" id="7tA49iWEq4N" role="2OqNvi">
+            <node concept="chp4Y" id="7tA49iWEq5k" role="cj9EA">
+              <ref role="cht4Q" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
             </node>
           </node>
         </node>

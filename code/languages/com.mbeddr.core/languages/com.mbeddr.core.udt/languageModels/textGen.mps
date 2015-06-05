@@ -13,9 +13,9 @@
     <import index="2rho" ref="r:4e770e63-2ef5-4a0d-b2e8-c5c1a1565703(com.mbeddr.core.udt.behavior)" />
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -965,8 +965,8 @@
                 </node>
               </node>
               <node concept="1mIQ4w" id="5nhrDHCiiO2" role="2OqNvi">
-                <node concept="chp4Y" id="5nhrDHCiiO4" role="cj9EA">
-                  <ref role="cht4Q" to="clbe:5nhrDHCgX5n" resolve="UnsignedBitType" />
+                <node concept="chp4Y" id="2H3YrqdcUvS" role="cj9EA">
+                  <ref role="cht4Q" to="clbe:2H3Yrqdbnnx" resolve="AbstractBitType" />
                 </node>
               </node>
             </node>
@@ -975,10 +975,10 @@
                 <node concept="3cpWsn" id="5nhrDHCiiO6" role="3cpWs9">
                   <property role="TrG5h" value="bt" />
                   <node concept="3Tqbb2" id="5nhrDHCiiO7" role="1tU5fm">
-                    <ref role="ehGHo" to="clbe:5nhrDHCgX5n" resolve="UnsignedBitType" />
+                    <ref role="ehGHo" to="clbe:2H3Yrqdbnnx" resolve="AbstractBitType" />
                   </node>
                   <node concept="1PxgMI" id="5nhrDHCiiO8" role="33vP2m">
-                    <ref role="1PxNhF" to="clbe:5nhrDHCgX5n" resolve="UnsignedBitType" />
+                    <ref role="1PxNhF" to="clbe:2H3Yrqdbnnx" resolve="AbstractBitType" />
                     <node concept="2OqwBi" id="5nhrDHCiiO9" role="1PxMeX">
                       <node concept="117lpO" id="5nhrDHCiiOa" role="2Oq$k0" />
                       <node concept="3TrEf2" id="5nhrDHCiiOb" role="2OqNvi">
@@ -1022,8 +1022,8 @@
                       <node concept="3cpWsa" id="5nhrDHCiiOQ" role="2Oq$k0">
                         <ref role="3cqZAo" node="5nhrDHCiiO6" resolve="bt" />
                       </node>
-                      <node concept="3TrcHB" id="5nhrDHCiiOZ" role="2OqNvi">
-                        <ref role="3TsBF5" to="clbe:5nhrDHCgX5o" resolve="width" />
+                      <node concept="3TrcHB" id="2H3Yrqdd3yJ" role="2OqNvi">
+                        <ref role="3TsBF5" to="clbe:2H3Yrqdcu$P" resolve="width" />
                       </node>
                     </node>
                   </node>

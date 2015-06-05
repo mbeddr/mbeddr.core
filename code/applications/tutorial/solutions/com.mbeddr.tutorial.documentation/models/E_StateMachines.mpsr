@@ -2,6 +2,7 @@
 <model ref="r:38897e08-83fd-42c7-91d3-65b102721940(com.mbeddr.tutorial.documentation.ug.cextensions)" content="root">
   <persistence version="9" />
   <imports>
+    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="e1tx" ref="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" implicit="true" />
     <import index="clqz" ref="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" implicit="true" />
@@ -22,7 +23,7 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
-      <concept id="2179458690439382890" name="com.mbeddr.doc.structure.ConceptCodeRemoval" flags="ng" index="2Cuv_b">
+      <concept id="2179458690439382890" name="com.mbeddr.doc.structure.ConceptModelContentRemoval" flags="ng" index="2Cuv_b">
         <reference id="2179458690439403347" name="conceptDecl" index="2Cuq_M" />
       </concept>
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
@@ -30,10 +31,10 @@
         <child id="126932837435370865" name="authors" index="Wq1Bf" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
-      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.CPNamedNodeElement" flags="ng" index="2NCMab">
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
       </concept>
-      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.CodePointer" flags="ng" index="2NCZwO">
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
       <concept id="2286331641392318852" name="com.mbeddr.doc.structure.MenuFormattedText" flags="ng" index="2OlAs7" />
@@ -56,21 +57,21 @@
         <property id="126932837435370851" name="name" index="Wq1Bt" />
       </concept>
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
-      <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
-      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractCCodeParagraph" flags="ng" index="3z_lpG">
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
         <property id="6955693250238922824" name="removeEmpties" index="3z_lpw" />
-        <property id="6955693250238922823" name="showCode" index="3z_lpJ" />
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922821" name="removals" index="3z_lpH" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
-      <concept id="6955693250238922840" name="com.mbeddr.doc.structure.NodeCodeRemoval" flags="ng" index="3z_lpK">
+      <concept id="6955693250238922840" name="com.mbeddr.doc.structure.NodeModelContentRemoval" flags="ng" index="3z_lpK">
         <reference id="6955693250238922841" name="removedNode" index="3z_lpL" />
       </concept>
-      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.CCodeParagraph" flags="ng" index="3z_lpU">
+      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
+        <property id="6955693250238922835" name="text" index="3z_lpV" />
         <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
-      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.CodeRefWord" flags="ng" index="3z_lpY">
-        <child id="6955693250238922839" name="codeptr" index="3z_lpZ" />
+      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.ModelContentRefWord" flags="ng" index="3z_lpY">
+        <child id="6955693250238922839" name="modelContentPtr" index="3z_lpZ" />
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
@@ -115,12 +116,12 @@
   <node concept="1_1swa" id="300OR6GmKCv">
     <property role="TrG5h" value="E_StateMachines" />
     <property role="yApLE" value="9" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="Wq1Bs" id="5lWB_7x$8ez" role="Wq1Bf">
       <property role="Wq1Bt" value="Tamas Szabo" />
       <property role="Wq1Bq" value="tamas.szabo@itemis.de" />
     </node>
-    <node concept="1mvXsy" id="2x0XdsgGhHt" role="1_0VJ0">
+    <node concept="1_0VNX" id="3mn43GO8dMb" role="1_0VJ0">
       <property role="TrG5h" value="statemachines" />
       <property role="1_0VJr" value="State Machines" />
       <node concept="1_0LV8" id="300OR6Gn5A_" role="1_0VJ0">
@@ -128,9 +129,9 @@
           <node concept="19SUe$" id="300OR6Gn5AB" role="19SJt6">
             <property role="19SUeA" value="Next to components and units, state machines are one of the main C extensions available in mbeddr. They can be used directly in C programs, or alternatively, embedded into components. To keep the overall complexity of the example manageable, we will show how state machines can be used directly in C. \n\nState machines can either be viewed and edited with the textual notation or with the table based projection. You can switch between the two modes with the " />
           </node>
-          <node concept="1jUjqm" id="1VdI9nUFYfA" role="19SJt6">
-            <node concept="19SGf9" id="1VdI9nUFYfB" role="$DsGW">
-              <node concept="19SUe$" id="1VdI9nUFYfC" role="19SJt6">
+          <node concept="2OlAs7" id="yaVrOuw0Q4" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuw0Q7" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuw0Q8" role="19SJt6">
                 <property role="19SUeA" value="Code -&gt; Projection Mode -&gt; Statemachines as Tables" />
               </node>
             </node>
@@ -255,20 +256,12 @@
             <node concept="1jUjqm" id="2XVA19iNfAr" role="19SJt6">
               <node concept="19SGf9" id="2XVA19iNfAs" role="$DsGW">
                 <node concept="19SUe$" id="2XVA19iNfAt" role="19SJt6">
-                  <property role="19SUeA" value="" />
+                  <property role="19SUeA" value="statemachine" />
                 </node>
-                <node concept="1jUjqm" id="1CZbvxNb8ad" role="19SJt6">
-                  <node concept="19SGf9" id="1CZbvxNb8ae" role="$DsGW">
-                    <node concept="19SUe$" id="1CZbvxNb8af" role="19SJt6">
-                      <property role="19SUeA" value="statemachine" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="19SUe$" id="1CZbvxNb8ah" role="19SJt6" />
               </node>
             </node>
             <node concept="19SUe$" id="2XVA19iNfAq" role="19SJt6">
-              <property role="19SUeA" value="at the top level in implementation modules. This will create a new state machine with an initial state and one event already defined. You can leave the event there, we will come back to that later. We know that the airplane will be in various states: " />
+              <property role="19SUeA" value=" at the top level in implementation modules. This will create a new state machine with an initial state and one event already defined. You can leave the event there, we will come back to that later. We know that the airplane will be in various states: " />
             </node>
             <node concept="3z_lpY" id="6lh$fzWbE9" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzWbEa" role="3z_lpZ">
@@ -371,6 +364,7 @@
         <node concept="3z_lpU" id="_A$C2hiG1j" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported statemachine FlightAnalyzer initial = beforeFlight {&#10;  state beforeFlight {                                       &#10;} state beforeFlight                                         &#10;  state airborne {                                           &#10;} state airborne                                             &#10;  state landing {                                            &#10;} state landing                                              &#10;  state landed {                                             &#10;} state landed                                               &#10;  state crashed {                                            &#10;} state crashed                                              &#10;}                                                            " />
           <node concept="2NCZwO" id="_A$C2hiG1k" role="3z_lpI">
             <node concept="2NCMab" id="_A$C2hiG4e" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
@@ -470,6 +464,7 @@
         <node concept="3z_lpU" id="_A$C2hmXsm" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported statemachine FlightAnalyzer initial = beforeFlight {&#10;  in event next(Trackpoint* tp) &lt;no binding&gt;                 &#10;  in event reset() &lt;no binding&gt;                              &#10;}                                                            " />
           <node concept="2NCZwO" id="_A$C2hmXsn" role="3z_lpI">
             <node concept="2NCMab" id="_A$C2hmXyj" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
@@ -544,6 +539,7 @@
         <node concept="3z_lpU" id="_A$C2hn308" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported statemachine FlightAnalyzer initial = beforeFlight {&#10;  readable var int16 points = 0                              &#10;}                                                            " />
           <node concept="2NCZwO" id="_A$C2hn309" role="3z_lpI">
             <node concept="2NCMab" id="_A$C2hn36l" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
@@ -608,6 +604,7 @@
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
           <property role="3z_lpw" value="true" />
+          <property role="3z_lpV" value="exported statemachine FlightAnalyzer initial = beforeFlight {&#10;  state beforeFlight {                                       &#10;  entry { points = 0; }                                      &#10;} state beforeFlight                                         &#10;}                                                            " />
           <node concept="2NCZwO" id="_A$C2hn3No" role="3z_lpI">
             <node concept="2NCMab" id="_A$C2hn3TM" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
@@ -752,7 +749,7 @@
                   <property role="19SUeA" value="). We also make use of the physical units extension (see " />
                 </node>
                 <node concept="1_0GAv" id="6lh$fzSTbT" role="19SJt6">
-                  <ref role="1_0GAl" node="2x0XdsgGh7Z" resolve="units" />
+                  <ref role="1_0GAl" node="3mn43GO8cu5" resolve="units" />
                 </node>
                 <node concept="19SUe$" id="6lh$fzSTbS" role="19SJt6">
                   <property role="19SUeA" value=") and annotate the speed and altitude with the appropriate unit." />
@@ -796,6 +793,7 @@
         <node concept="3z_lpU" id="6lh$fzSChe" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported statemachine FlightAnalyzer initial = beforeFlight {                                             &#10;  state beforeFlight {                                                                                    &#10;  entry { points = 0; }                                                                                   &#10;  on next [tp.alt &gt; 0 m] -&gt; airborne                                                                      &#10;  exit { points += TAKEOFF; }                                                                             &#10;} state beforeFlight                                                                                      &#10;  state airborne {                                                                                        &#10;  on next [tp.alt == 0 m&amp;&amp; tp.speed == 0 mps] -&gt; crashed                                                  &#10;  on next [tp.alt == 0 m&amp;&amp; tp.speed &gt; 0 mps] -&gt; landing                                                   &#10;  on next [tp.speed &gt; 200 mps&amp;&amp; tp.alt == 0 m] -&gt; airborne { points += VERY_HIGH_SPEED; }                 &#10;  on next [tp.speed &gt; 100 mps&amp;&amp; tp.speed &lt;= 200 mps&amp;&amp; tp.alt == 0 m] -&gt; airborne { points += HIGH_SPEED; }&#10;  on reset [ ] -&gt; beforeFlight                                                                            &#10;} state airborne                                                                                          &#10;  state landing {                                                                                         &#10;  on next [tp.speed == 0 mps] -&gt; landed                                                                   &#10;  on next [tp.speed &gt; 0 mps] -&gt; landing { points--; }                                                     &#10;  on reset [ ] -&gt; beforeFlight                                                                            &#10;} state landing                                                                                           &#10;  state landed {                                                                                          &#10;  entry { points += LANDING; }                                                                            &#10;  on reset [ ] -&gt; beforeFlight                                                                            &#10;} state landed                                                                                            &#10;  state crashed {                                                                                         &#10;  entry { send crashNotification(); }                                                                     &#10;} state crashed                                                                                           &#10;}                                                                                                         " />
           <node concept="2NCZwO" id="6lh$fzSChf" role="3z_lpI">
             <node concept="2NCMab" id="6lh$fzSCkC" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
@@ -847,6 +845,7 @@
         <node concept="3z_lpU" id="6lh$fzUeJ2" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported statemachine FlightAnalyzer initial = beforeFlight {&#10;  junction NextRound {                                       &#10;  [points &gt; 100] -&gt; airborne                                 &#10;  [points &lt;= 100] -&gt; beforeFlight                            &#10;} junction NextRound                                         &#10;}                                                            " />
           <node concept="2NCZwO" id="6lh$fzUeJ3" role="3z_lpI">
             <node concept="2NCMab" id="6lh$fzUeS7" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
@@ -926,6 +925,7 @@
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpw" value="true" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="                                                                                                                     &#10; StateMachines                                                                                                       &#10;model   mbeddr.tutorial.main.defaultExtensions                                                                       &#10;package examples    constraints                                                                                      &#10;                                                                                                                     &#10;                                                                                                                     &#10;exported statemachine FlightAnalyzer initial = beforeFlight {                                                        &#10;  out event crashNotification() =&gt; raiseAlarm                                                                        &#10;  state crashed {                                                                                                    &#10;  entry { send crashNotification(); }                                                                                &#10;} state crashed                                                                                                      &#10;}                                                                                                                    &#10;void raiseAlarm() {                                                                                                  &#10;  //invoke some kind of real-world thingy                                                                            &#10;  //that reacts suitably to a detected crash                                                                         &#10;} raiseAlarm (function)                                                                                              &#10;                                                                                     imports     FlightJudgementRules&#10;                                                                                                 DataStructures      &#10;                                                                                                 stdlib_stub         &#10;                                                                                                 stdio_stub          &#10;                                                                                                 UnitDeclarations    &#10;                                                                                                 SIUnits             " />
           <node concept="2NCZwO" id="6lh$fzUsuw" role="3z_lpI">
             <node concept="2NCMab" id="6lh$fzUs$z" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
@@ -1080,6 +1080,7 @@
         <node concept="3z_lpU" id="6lh$fzWFMk" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="                                                                                                                                  &#10; stdlib_stub                                                                                                                      &#10;// contents are exported by default                                                                                               &#10;model   com.mbeddr.tutorial.documentation.code    imports nothing                                                                 &#10;                                                                                                                                  &#10;                                                                                                                                  &#10;void* malloc(size_t size);                                                                                                        &#10;void free(void* ptr);                                                                                                             &#10;                                                                                                      resources header: &lt;stdlib.h&gt;" />
           <node concept="2NCZwO" id="6lh$fzWFMl" role="3z_lpI">
             <node concept="2NCMab" id="6lh$fzWG4j" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" resolve="stdlib_stub" />
@@ -1109,6 +1110,7 @@
         <node concept="3z_lpU" id="300OR6GoO2d" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported Trackpoint* makeTP(int16 alt, int16 speed) {         &#10;  static int8 trackpointCounter = 0;                          &#10;  trackpointCounter++;                                        &#10;  Trackpoint* tp = ((Trackpoint*) malloc(sizeof[Trackpoint]));&#10;  tp.id = trackpointCounter;                                  &#10;  tp.time = trackpointCounter s;                              &#10;  tp.alt = alt m;                                             &#10;  tp.speed = speed mps;                                       &#10;  return tp;                                                  &#10;} makeTP (function)                                           " />
           <node concept="2NCZwO" id="1YUFCeGolE5" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolE6" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
@@ -1138,6 +1140,7 @@
         <node concept="3z_lpU" id="6lh$fzZ0UI" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported testcase testFlightAnalyzer {                 &#10;  FlightAnalyzer f;                                    &#10;  f.init;                                              &#10;  assert(0) f.isInState(beforeFlight);                 &#10;  assert(1) f.points == 0;                             &#10;  f.trigger(next|makeTP(0, 20));                       &#10;  assert(2) f.isInState(beforeFlight) &amp;&amp; f.points == 0;&#10;  f.trigger(next|makeTP(100, 100));                    &#10;  assert(3) f.isInState(airborne) &amp;&amp; f.points == 100;  &#10;  test statemachine f {                                &#10;  next(makeTP(200, 100)) ➔ airborne                    &#10;  next(makeTP(300, 150)) ➔ airborne                    &#10;  next(makeTP(0, 90)) ➔ landing                        &#10;  next(makeTP(0, 0)) ➔ landed                          &#10;}                                                      &#10;  assert-equals(4) f.points == 200;                    &#10;} testFlightAnalyzer(test case)                        " />
           <node concept="2NCZwO" id="6lh$fzZ0UJ" role="3z_lpI">
             <node concept="2NCMab" id="6lh$fzZ2Wv" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
@@ -1196,6 +1199,8 @@
         </node>
         <node concept="3z_lpU" id="6lh$f$4tOA" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="exported testcase testFlightAnalyzer {                 &#10;  f.init;                                              &#10;  assert(0) f.isInState(beforeFlight);                 &#10;  assert(1) f.points == 0;                             &#10;  f.trigger(next|makeTP(0, 20));                       &#10;  assert(2) f.isInState(beforeFlight) &amp;&amp; f.points == 0;&#10;  f.trigger(next|makeTP(100, 100));                    &#10;  assert(3) f.isInState(airborne) &amp;&amp; f.points == 100;  &#10;  test statemachine f {                                &#10;  next(makeTP(200, 100)) ➔ airborne                    &#10;  next(makeTP(300, 150)) ➔ airborne                    &#10;  next(makeTP(0, 90)) ➔ landing                        &#10;  next(makeTP(0, 0)) ➔ landed                          &#10;}                                                      &#10;  assert-equals(4) f.points == 200;                    &#10;} testFlightAnalyzer(test case)                        " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="6lh$f$4tOB" role="3z_lpI">
             <node concept="2NCMab" id="6lh$f$4tOC" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
@@ -1261,6 +1266,8 @@
         </node>
         <node concept="3z_lpU" id="6lh$f$4usf" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="exported testcase testFlightAnalyzer {                 &#10;  f.init;                                              &#10;  assert(0) f.isInState(beforeFlight);                 &#10;  assert(1) f.points == 0;                             &#10;  f.trigger(next|makeTP(0, 20));                       &#10;  assert(2) f.isInState(beforeFlight) &amp;&amp; f.points == 0;&#10;  f.trigger(next|makeTP(100, 100));                    &#10;  assert(3) f.isInState(airborne) &amp;&amp; f.points == 100;  &#10;  test statemachine f {                                &#10;  next(makeTP(200, 100)) ➔ airborne                    &#10;  next(makeTP(300, 150)) ➔ airborne                    &#10;  next(makeTP(0, 90)) ➔ landing                        &#10;  next(makeTP(0, 0)) ➔ landed                          &#10;}                                                      &#10;  assert-equals(4) f.points == 200;                    &#10;} testFlightAnalyzer(test case)                        " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="6lh$f$4usg" role="3z_lpI">
             <node concept="2NCMab" id="6lh$f$4ush" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
@@ -1326,6 +1333,8 @@
         </node>
         <node concept="3z_lpU" id="6lh$f$4uUz" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="exported testcase testFlightAnalyzer {                 &#10;  f.init;                                              &#10;  assert(0) f.isInState(beforeFlight);                 &#10;  assert(1) f.points == 0;                             &#10;  f.trigger(next|makeTP(0, 20));                       &#10;  assert(2) f.isInState(beforeFlight) &amp;&amp; f.points == 0;&#10;  f.trigger(next|makeTP(100, 100));                    &#10;  assert(3) f.isInState(airborne) &amp;&amp; f.points == 100;  &#10;  test statemachine f {                                &#10;  next(makeTP(200, 100)) ➔ airborne                    &#10;  next(makeTP(300, 150)) ➔ airborne                    &#10;  next(makeTP(0, 90)) ➔ landing                        &#10;  next(makeTP(0, 0)) ➔ landed                          &#10;}                                                      &#10;  assert-equals(4) f.points == 200;                    &#10;} testFlightAnalyzer(test case)                        " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="6lh$f$4uU$" role="3z_lpI">
             <node concept="2NCMab" id="6lh$f$4uU_" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
@@ -1369,6 +1378,7 @@
         <node concept="3z_lpU" id="6lh$f$4vLX" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported testcase testFlightAnalyzer {                 &#10;  f.init;                                              &#10;  assert(0) f.isInState(beforeFlight);                 &#10;  assert(1) f.points == 0;                             &#10;  f.trigger(next|makeTP(0, 20));                       &#10;  assert(2) f.isInState(beforeFlight) &amp;&amp; f.points == 0;&#10;  f.trigger(next|makeTP(100, 100));                    &#10;  assert(3) f.isInState(airborne) &amp;&amp; f.points == 100;  &#10;  test statemachine f {                                &#10;  next(makeTP(200, 100)) ➔ airborne                    &#10;  next(makeTP(300, 150)) ➔ airborne                    &#10;  next(makeTP(0, 90)) ➔ landing                        &#10;  next(makeTP(0, 0)) ➔ landed                          &#10;}                                                      &#10;  assert-equals(4) f.points == 200;                    &#10;} testFlightAnalyzer(test case)                        " />
           <node concept="2NCZwO" id="6lh$f$4vLY" role="3z_lpI">
             <node concept="2NCMab" id="6lh$f$4vLZ" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
@@ -1410,7 +1420,7 @@
             <node concept="1jUjqm" id="300OR6Gp5G8" role="19SJt6">
               <node concept="19SGf9" id="300OR6Gp5G9" role="$DsGW">
                 <node concept="19SUe$" id="300OR6Gp5Ga" role="19SJt6">
-                  <property role="19SUeA" value="test statemachine}" />
+                  <property role="19SUeA" value="test statemachine" />
                 </node>
               </node>
             </node>
@@ -1422,6 +1432,7 @@
         <node concept="3z_lpU" id="6lh$f$4wqR" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported testcase testFlightAnalyzer {                 &#10;  f.init;                                              &#10;  assert(0) f.isInState(beforeFlight);                 &#10;  assert(1) f.points == 0;                             &#10;  f.trigger(next|makeTP(0, 20));                       &#10;  assert(2) f.isInState(beforeFlight) &amp;&amp; f.points == 0;&#10;  f.trigger(next|makeTP(100, 100));                    &#10;  assert(3) f.isInState(airborne) &amp;&amp; f.points == 100;  &#10;  test statemachine f {                                &#10;  next(makeTP(200, 100)) ➔ airborne                    &#10;  next(makeTP(300, 150)) ➔ airborne                    &#10;  next(makeTP(0, 90)) ➔ landing                        &#10;  next(makeTP(0, 0)) ➔ landed                          &#10;}                                                      &#10;  assert-equals(4) f.points == 200;                    &#10;} testFlightAnalyzer(test case)                        " />
           <node concept="2NCZwO" id="6lh$f$4wqS" role="3z_lpI">
             <node concept="2NCMab" id="6lh$f$4wqT" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
@@ -1576,6 +1587,7 @@
         <node concept="3z_lpU" id="300OR6Gqj2f" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="exported statemachine HierarchicalFlightAnalyzer initial = beforeFlight {&#10;  macro stopped(next) = tp.speed == 0 mps                                &#10;  macro onTheGround(next) = tp.alt == 0 m                                &#10;  in event next(Trackpoint* tp) &lt;no binding&gt;                             &#10;  in event reset() &lt;no binding&gt;                                          &#10;  out event crashNotification() =&gt; raiseAlarm                            &#10;  readable var int16 points = 0                                          &#10;  state beforeFlight {                                                   &#10;  entry { points = 0; }                                                  &#10;  on next [tp.alt &gt; 0 m] -&gt; airborne                                     &#10;  exit { points += TAKEOFF; }                                            &#10;} state beforeFlight                                                     &#10;  composite state airborne initial = flying {                            &#10;  on reset [ ] -&gt; beforeFlight { points = 0; }                           &#10;  on next [onTheGround &amp;&amp; stopped] -&gt; crashed                            &#10;  state flying (airborne.flying) {                                       &#10;  on next [onTheGround &amp;&amp; tp.speed &gt; 0 mps] -&gt; landing                   &#10;  on next [tp.speed &gt; 200 mps] -&gt; flying { points += VERY_HIGH_SPEED; }  &#10;  on next [tp.speed &gt; 100 mps] -&gt; flying { points += HIGH_SPEED; }       &#10;} state flying                                                           &#10;  state landing (airborne.landing) {                                     &#10;  on next [stopped] -&gt; landed                                            &#10;  on next [ ] -&gt; landing { points--; }                                   &#10;} state landing                                                          &#10;  state landed (airborne.landed) {                                       &#10;  entry { points += LANDING; }                                           &#10;} state landed                                                           &#10;} state airborne                                                         &#10;  state crashed {                                                        &#10;  entry { send crashNotification(); }                                    &#10;} state crashed                                                          &#10;}                                                                        " />
           <node concept="2NCZwO" id="1YUFCeGolCg" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolCh" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
@@ -1693,7 +1705,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="4I$rsvbfgEs" role="2SbwM5">
             <property role="2Sb_kV" value="smtable.png" />
-            <ref role="2Sb_kU" node="4I$rsvbf6Gh" resolve="smimages" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4F" resolve="smimages" />
           </node>
           <node concept="OjmMv" id="4I$rsvbfgEd" role="2SaI5j">
             <node concept="19SGf9" id="4I$rsvbfgEe" role="OjmMu">
@@ -1756,7 +1768,7 @@
           <property role="1DKIkx" value="true" />
           <node concept="2Sb_l4" id="300OR6GqnZS" role="2SbwM5">
             <property role="2Sb_kV" value="tutorial/v_sm.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="300OR6GqmqT" role="2SaI5j">
             <node concept="19SGf9" id="300OR6GqmqU" role="OjmMu">

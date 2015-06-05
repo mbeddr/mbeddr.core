@@ -40,9 +40,6 @@
         <child id="1153952429843" name="finallyBody" index="2GVbov" />
         <child id="1164903700860" name="catchClause" index="TEXxN" />
       </concept>
-      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
-        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
       <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
         <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
@@ -1832,30 +1829,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="4CtHBqN34zC" role="3cqZAp">
-          <node concept="3cpWsn" id="4CtHBqN34zD" role="3cpWs9">
-            <property role="TrG5h" value="initiallyActiveToolRunnerFactory" />
-            <node concept="3uibUv" id="sEP8ohuz10" role="1tU5fm">
-              <ref role="3uigEE" to="8e9v:sEP8ohtEIO" resolve="ToolRunner.ToolRunnerFactory" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="sEP8ohuzrb" role="3cqZAp">
-          <node concept="37vLTI" id="sEP8ohuzrd" role="3clFbG">
-            <node concept="2OqwBi" id="4CtHBqN34zE" role="37vLTx">
-              <node concept="2YIFZM" id="4CtHBqN34zF" role="2Oq$k0">
-                <ref role="37wK5l" to="tzyt:3T2UJ1pSoZ1" resolve="instance" />
-                <ref role="1Pybhc" to="tzyt:3T2UJ1pSoYT" resolve="CProverToolRunnerManager" />
-              </node>
-              <node concept="liA8E" id="4CtHBqN34zG" role="2OqNvi">
-                <ref role="37wK5l" to="tzyt:sEP8ohuhjl" resolve="getCurrentlyActiveToolRunnerFactory" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="sEP8ohuzrh" role="37vLTJ">
-              <ref role="3cqZAo" node="4CtHBqN34zD" resolve="initiallyActiveToolRunnerFactory" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="sEP8ohuCwU" role="3cqZAp" />
         <node concept="2GUZhq" id="mb65_hGpdP" role="3cqZAp">
           <node concept="3clFbS" id="mb65_hzT9b" role="2GV8ay">
@@ -1876,12 +1849,7 @@
                   <ref role="37wK5l" to="tzyt:3T2UJ1pSoZ1" resolve="instance" />
                 </node>
                 <node concept="liA8E" id="2u_UMavyGQ5" role="2OqNvi">
-                  <ref role="37wK5l" to="tzyt:3T2UJ1pSoZd" resolve="setCurrentlyActiveToolRunnerFactory" />
-                  <node concept="2ShNRf" id="2u_UMavyLOD" role="37wK5m">
-                    <node concept="HV5vD" id="sEP8ohwLXD" role="2ShVmc">
-                      <ref role="HV5vE" to="tzyt:sEP8ohtOE4" resolve="CProverLocalRunner.CProverLocalRunnerFactory" />
-                    </node>
-                  </node>
+                  <ref role="37wK5l" to="tzyt:p7QU0IWjzs" resolve="setClaimsCollecting" />
                 </node>
               </node>
             </node>
@@ -2129,10 +2097,7 @@
                   <ref role="37wK5l" to="tzyt:3T2UJ1pSoZ1" resolve="instance" />
                 </node>
                 <node concept="liA8E" id="2u_UMavz9kk" role="2OqNvi">
-                  <ref role="37wK5l" to="tzyt:3T2UJ1pSoZd" resolve="setCurrentlyActiveToolRunnerFactory" />
-                  <node concept="37vLTw" id="2u_UMavzekl" role="37wK5m">
-                    <ref role="3cqZAo" node="4CtHBqN34zD" resolve="initiallyActiveToolRunnerFactory" />
-                  </node>
+                  <ref role="37wK5l" to="tzyt:p7QU0IWu6O" resolve="unsetClaimsCollecting" />
                 </node>
               </node>
             </node>

@@ -12,6 +12,7 @@
     <import index="bmc6" ref="r:4ac377c2-0a54-4908-ae24-f86f1bad7e73(com.mbeddr.tutorial.documentation.ug.fundamentals)" />
     <import index="vi23" ref="r:9b94efb1-dbce-417f-b1ad-19c6a396d423(com.mbeddr.tutorial.documentation.ug.processSupport)" />
     <import index="4kwm" ref="r:5ff4e1a0-ec5b-4e83-a849-9e8c2c4adf79(com.mbeddr.tutorial.documentation.ug.ctooling)" />
+    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -38,10 +39,10 @@
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
-      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.CPNamedNodeElement" flags="ng" index="2NCMab">
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
       </concept>
-      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.CodePointer" flags="ng" index="2NCZwO">
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
       <concept id="2286331641392318852" name="com.mbeddr.doc.structure.MenuFormattedText" flags="ng" index="2OlAs7" />
@@ -58,33 +59,26 @@
         <property id="6386504476136521408" name="fileName" index="2Sb_kV" />
         <reference id="6386504476136521409" name="path" index="2Sb_kU" />
       </concept>
-      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
-        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
-      </concept>
-      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
-        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
-        <child id="6386504476136472817" name="paths" index="2SbYGa" />
-        <child id="8624890525767800998" name="sizeSpecs" index="3SH5Mq" />
-      </concept>
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
       <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
       <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
       </concept>
-      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractCCodeParagraph" flags="ng" index="3z_lpG">
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
         <property id="6955693250238922824" name="removeEmpties" index="3z_lpw" />
-        <property id="6955693250238922823" name="showCode" index="3z_lpJ" />
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922821" name="removals" index="3z_lpH" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
-      <concept id="6955693250238922840" name="com.mbeddr.doc.structure.NodeCodeRemoval" flags="ng" index="3z_lpK">
+      <concept id="6955693250238922840" name="com.mbeddr.doc.structure.NodeModelContentRemoval" flags="ng" index="3z_lpK">
         <reference id="6955693250238922841" name="removedNode" index="3z_lpL" />
       </concept>
-      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.CCodeParagraph" flags="ng" index="3z_lpU">
+      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
+        <property id="6955693250238922835" name="text" index="3z_lpV" />
         <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
-      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.CodeRefWord" flags="ng" index="3z_lpY">
-        <child id="6955693250238922839" name="codeptr" index="3z_lpZ" />
+      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.ModelContentRefWord" flags="ng" index="3z_lpY">
+        <child id="6955693250238922839" name="modelContentPtr" index="3z_lpZ" />
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
@@ -110,12 +104,6 @@
       <concept id="8624890525767650652" name="com.mbeddr.doc.structure.InheritSizeSpec" flags="ng" index="3SGC_w">
         <reference id="8624890525767800818" name="base" index="3SH5fe" />
       </concept>
-      <concept id="8624890525767637976" name="com.mbeddr.doc.structure.PageWidthSizeSpec" flags="ng" index="3SGHZ$">
-        <property id="8624890525767637977" name="percentage" index="3SGHZ_" />
-      </concept>
-      <concept id="8624890525767800825" name="com.mbeddr.doc.structure.NamedSizeSpec" flags="ng" index="3SH5f5">
-        <child id="8624890525767800827" name="spec" index="3SH5f7" />
-      </concept>
       <concept id="5378658552262903588" name="com.mbeddr.doc.structure.Item" flags="ng" index="3X6T9g">
         <child id="5378658552262903589" name="text" index="3X6T9h" />
       </concept>
@@ -124,55 +112,20 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractFilePicker" flags="ng" index="3N1QpV">
-        <property id="6156524541422553710" name="path" index="3N1Lgt" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
-  <node concept="2SbYGP" id="2ipt67gLxW0">
-    <property role="TrG5h" value="Config" />
-    <property role="3GE5qa" value="config" />
-    <node concept="2SbYGw" id="45LXldJZEw7" role="2SbYGa">
-      <property role="TrG5h" value="images" />
-      <node concept="9PVaO" id="7aNtjNm4Cpc" role="9PVG_">
-        <property role="3N1Lgt" value="images" />
-      </node>
-    </node>
-    <node concept="3SH5f5" id="7uLL3Mf2teF" role="3SH5Mq">
-      <property role="TrG5h" value="width100" />
-      <node concept="3SGHZ$" id="7uLL3Mf2teH" role="3SH5f7">
-        <property role="3SGHZ_" value="100" />
-      </node>
-    </node>
-    <node concept="3SH5f5" id="7uLL3Mf2teJ" role="3SH5Mq">
-      <property role="TrG5h" value="width80" />
-      <node concept="3SGHZ$" id="7uLL3Mf2teK" role="3SH5f7">
-        <property role="3SGHZ_" value="80" />
-      </node>
-    </node>
-    <node concept="2SbYGw" id="5jGyeU5XLXS" role="Cbewh">
-      <property role="TrG5h" value="vis" />
-      <node concept="9PVaO" id="7aNtjNm4Cp9" role="9PVG_">
-        <property role="3N1Lgt" value="_vis" />
-      </node>
-    </node>
-  </node>
   <node concept="1_1swa" id="4rG3bBO0MpA">
     <property role="TrG5h" value="B_FunctionPointers" />
     <property role="yApLE" value="3" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="4IT6uoQrns" role="1_0VJ0">
       <property role="TrG5h" value="functionPointers" />
       <property role="1_0VJr" value="Function Pointers" />
@@ -272,6 +225,8 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBO2Lwr" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="                            &#10;exported struct Trackpoint {&#10;  int8 id;                  &#10;  int8/s/ time;             &#10;  int8/m/ x;                &#10;  int8/m/ y;                &#10;  int16/m/ alt;             &#10;  int16/mps/ speed;         &#10;};                          " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="1YUFCeGolB2" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolB3" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
@@ -320,6 +275,8 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBO2P91" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="exported Trackpoint process_doNothing(Trackpoint e) {&#10;  return e;                                          &#10;} process_doNothing (function)                       " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="1YUFCeGolEi" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolEj" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -368,6 +325,8 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBO2VIw" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="                                                                &#10;exported typedef (Trackpoint)⇒(Trackpoint) as DataProcessorType;" />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="1YUFCeGolCR" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolCS" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -390,6 +349,8 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBO4B53" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="DataProcessorType processor;" />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="1YUFCeGol_O" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGol_P" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -441,6 +402,8 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBO4F9P" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="{                                         &#10;  processor = :process_doNothing;         &#10;  Trackpoint i2 = processor(i1);          &#10;  assert(0) i2.id == 1 &amp;&amp; i2.alt == 100 m;&#10;}                                         " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="1YUFCeGol$Q" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGol$R" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -502,6 +465,8 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBOp5Rq" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="exported int32 main(int32 argc, string[] argv) {                                                      &#10;  return test testProcessing; (unittest)            ;                                                 &#10;} main (function)                                                                                     &#10;                                                                testLambdaProcessing; (unittest)      &#10;                                                                testNullerOK; (unittest)              &#10;                                                                testInterpolator; (unittest)          &#10;                                                                testJudging; (unittest)               &#10;                                                                testInterpolatorWithMock; (unittest)  &#10;                                                                testPrintf; (unittest)                &#10;                                                                testFlightAnalyzer; (unittest)        &#10;                                                                testRuntimeVar; (unittest)            &#10;                                                                testPresenceConditions; (unittest)    &#10;                                                                testConditionalAlternative; (unittest)&#10;                                                                testConditionalReplacement; (unittest)&#10;                                                                testFlightRecorder; (unittest)        " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="1YUFCeGol$f" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGol$g" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L654u" resolve="Main" />
@@ -530,6 +495,8 @@
         </node>
         <node concept="3z_lpU" id="2ncjLWksQ1V" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="                                                                                             &#10;executable MbeddrTutorialDefaultExt is test {                                                &#10;  modules:                                                                                   &#10;    Main                                                                                     &#10;}                                                                                            &#10;                                                                FunctionPointers (examples)  &#10;                                                                Components (examples)        &#10;                                                                DataStructures (examples)    &#10;                                                                StateMachines (examples)     &#10;                                                                LibraryAccess (examples)     &#10;                                                                stdio_stub (external)        &#10;                                                                stdlib_stub (external)       &#10;                                                                RuntimeVariability (examples)&#10;                                                                StaticVariability (examples) &#10;                                                                ComponentsSRI (examples)     &#10;                                                                UnitDeclarations (config)    " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="2ncjLWksQ1X" role="3z_lpI">
             <node concept="2NCMab" id="2ncjLWksQ6b" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655o" resolve="BuildConfiguration (m.t.m.defaultExtensions)" />
@@ -569,6 +536,8 @@
         </node>
         <node concept="3z_lpU" id="4rG3bBOwtbW" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="exported testcase testLambdaProcessing {&#10;  Trackpoint i1 = {                     &#10;  id = 1,                               &#10;  time = 0 s,                           &#10;  x = 0 m,                              &#10;  y = 0 m,                              &#10;  alt = 50 m                            &#10;};                                      &#10;                                        &#10;  processor = [tp|                      &#10;  tp.alt = 100 m;                       &#10;  tp;];                                 &#10;                                        &#10;  assert(0) processor(i1).alt == 100 m; &#10;} testLambdaProcessing(test case)       " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="1YUFCeGol_8" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGol_9" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
@@ -607,7 +576,7 @@
   <node concept="1_1swa" id="6TOzdCDFUA5">
     <property role="TrG5h" value="A_c99VsMbeddr" />
     <property role="yApLE" value="2" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0j5j" id="48PTy$RupZW" role="1DXQ57">
       <ref role="1_0j5g" to="us0v:7OKLwZ_7fp5" resolve="C_FormalVerification" />
     </node>
@@ -1023,6 +992,7 @@
         <node concept="3z_lpU" id="37qjepTtDlG" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="boolean bool = true;" />
           <node concept="2NCZwO" id="37qjepTtKzK" role="3z_lpI">
             <node concept="2NCMab" id="37qjepTtKzO" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
@@ -1042,6 +1012,7 @@
         <node concept="3z_lpU" id="R8SBebSkVB" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="if (1) {    &#10;  //do stuff&#10;            &#10;} if        " />
           <node concept="2NCZwO" id="R8SBebSkVJ" role="3z_lpI">
             <node concept="2NCMab" id="R8SBebSkVN" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
@@ -1084,6 +1055,7 @@
         <node concept="3z_lpU" id="37qjepTtyxh" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="{                                     &#10;  int16 aInt16 = 0;                   &#10;  boolean aBoolean = int2bool&lt;aInt16&gt;;&#10;}                                     " />
           <node concept="2NCZwO" id="37qjepTtyxx" role="3z_lpI">
             <node concept="2NCMab" id="37qjepTtyx_" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
@@ -1126,6 +1098,8 @@
         </node>
         <node concept="3z_lpU" id="37qjepTx0WV" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="                                                                                     &#10; C99vsMbeddr2                                                                        &#10;model   com.mbeddr.tutorial.documentation.code    constraints                        &#10;                                                                                     &#10;                                                                                     &#10;                                                                                     &#10;struct order {                                                                       &#10;  product product;                                                                   &#10;  int32 amount;                                                                      &#10;};                                                                                   &#10;                                                                                     &#10;                                                                                     &#10;struct product {                                                                     &#10;  int32 product_number;                                                              &#10;  string name;                                                                       &#10;};                                                                                   &#10;                                                                  imports     nothing" />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="37qjepTx0Xo" role="3z_lpI">
             <node concept="2NCMab" id="37qjepTx4cK" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:37qjepTx0XD" resolve="C99vsMbeddr2" />
@@ -1304,7 +1278,7 @@
           <property role="TrG5h" value="tsc" />
           <node concept="2Sb_l4" id="37qjepT$2Qs" role="2SbwM5">
             <property role="2Sb_kV" value="c99vsmbeddr/typesizeconfig.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="37qjepT$2P$" role="2SaI5j">
             <node concept="19SGf9" id="37qjepT$2P_" role="OjmMu">
@@ -1349,6 +1323,8 @@
       </node>
       <node concept="3z_lpU" id="37qjepTxSec" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
+        <property role="3z_lpV" value="int16[3][2] integers;" />
+        <property role="3z_lpJ" value="false" />
         <node concept="2NCZwO" id="37qjepTxSeD" role="3z_lpI">
           <node concept="2NCMab" id="37qjepTxSeJ" role="2NCMaf">
             <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
@@ -1367,6 +1343,8 @@
       </node>
       <node concept="3z_lpU" id="37qjepTxShH" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
+        <property role="3z_lpV" value="int16[2][3] array = {&#10;  {1, 2},            &#10;  {3, 4},            &#10;  {5, 6}             &#10;};                   " />
+        <property role="3z_lpJ" value="false" />
         <node concept="2NCZwO" id="37qjepTxSio" role="3z_lpI">
           <node concept="2NCMab" id="37qjepTxSiu" role="2NCMaf">
             <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
@@ -1403,6 +1381,8 @@
       </node>
       <node concept="3z_lpU" id="37qjepTxS_4" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
+        <property role="3z_lpV" value="int16[2][3]* pointer = &amp;array;" />
+        <property role="3z_lpJ" value="false" />
         <node concept="2NCZwO" id="37qjepTxSA5" role="3z_lpI">
           <node concept="2NCMab" id="37qjepTxSAb" role="2NCMaf">
             <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
@@ -1498,7 +1478,7 @@
       <node concept="1_0LV8" id="4IT6uoQOUX" role="1_0VJ0">
         <node concept="19SGf9" id="4IT6uoQOUY" role="1_0LWR">
           <node concept="19SUe$" id="4IT6uoQOUZ" role="19SJt6">
-            <property role="19SUeA" value="Finally, more sophisticated/awkward/brittle uses of the preprocessor should be replaced by native mbeddr language extensions. There's no need for \&quot;preprocessor meta programming\&quot; if you have a full-blown language workbench at your disposal!" />
+            <property role="19SUeA" value="Finally, more sophisticated/awkward/brittle uses of the preprocessor should be replaced by native mbeddr language extensions. There's no need for &quot;preprocessor meta programming&quot; if you have a full-blown language workbench at your disposal!" />
           </node>
         </node>
       </node>
@@ -1563,6 +1543,7 @@
         <property role="3z_lpW" value="mbeddr" />
         <property role="3z_lpw" value="true" />
         <property role="3z_lpJ" value="true" />
+        <property role="3z_lpV" value="                                                                                                         &#10; SimpleTestCase                                                                                          &#10;model   mbeddr.tutorial.main.defaultExtensions                                                           &#10;package examples    constraints                                                                          &#10;                                                                                                         &#10;                                                                                                         &#10;int32 add(int32 a, int32 b) {                                                                            &#10;  return a + b;                                                                                          &#10;} add (function)                                                                                         &#10;int32 divide(int32 a, int32 b) {                                                                         &#10;  return a / b;                                                                                          &#10;} divide (function)                                                                                      &#10;                                                                                      imports     nothing" />
         <node concept="2NCZwO" id="2ncjLWki9Jf" role="3z_lpI">
           <node concept="2NCMab" id="2ncjLWki9Jg" role="2NCMaf">
             <ref role="2NCMaa" to="e1tx:11TWfQr5QUH" resolve="SimpleTestCase" />
@@ -1595,6 +1576,7 @@
         <property role="3z_lpW" value="mbeddr" />
         <property role="3z_lpw" value="true" />
         <property role="3z_lpJ" value="true" />
+        <property role="3z_lpV" value="exported testcase testAdding {     &#10;  testHelperFunction();            &#10;  assert-equals(0) 10 == add(5, 5);&#10;} testAdding(test case)            " />
         <node concept="2NCZwO" id="2ncjLWki9Jq" role="3z_lpI">
           <node concept="2NCMab" id="2ncjLWki9Jr" role="2NCMaf">
             <ref role="2NCMaa" to="e1tx:11TWfQr5QUH" resolve="SimpleTestCase" />
@@ -1639,6 +1621,7 @@
       <node concept="3z_lpU" id="2ncjLWki9JD" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
         <property role="3z_lpJ" value="true" />
+        <property role="3z_lpV" value="exported testcase testDivision {     &#10;  assert-equals(0) 4 == divide(8, 2);&#10;} testDivision(test case)            " />
         <node concept="2NCZwO" id="2ncjLWki9JE" role="3z_lpI">
           <node concept="2NCMab" id="2ncjLWki9JF" role="2NCMaf">
             <ref role="2NCMaa" to="e1tx:11TWfQr5QUH" resolve="SimpleTestCase" />
@@ -1652,7 +1635,7 @@
         <property role="TrG5h" value="asserts" />
         <node concept="2Sb_l4" id="2ncjLWki9JI" role="2SbwM5">
           <property role="2Sb_kV" value="tutorial/testing/asserts.png" />
-          <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+          <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
         </node>
         <node concept="OjmMv" id="2ncjLWki9JJ" role="2SaI5j">
           <node concept="19SGf9" id="2ncjLWki9JK" role="OjmMu">
@@ -1672,7 +1655,7 @@
           </node>
         </node>
         <node concept="3SGC_w" id="2ncjLWksDqg" role="3SHJ_F">
-          <ref role="3SH5fe" node="7uLL3Mf2teJ" resolve="width80" />
+          <ref role="3SH5fe" to="1842:2fBMM_3XZ4P" resolve="width80" />
         </node>
       </node>
       <node concept="1_0LV8" id="2ncjLWki9JR" role="1_0VJ0">
@@ -1724,6 +1707,7 @@
       <node concept="3z_lpU" id="2ncjLWki9K7" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
         <property role="3z_lpJ" value="true" />
+        <property role="3z_lpV" value="exported int32 main(int32 argc, string[] argv) {                                        &#10;  return test testAdding; (unittest)  ;                                                 &#10;} main (function)                                                                       &#10;                                                                testDivision; (unittest)" />
         <node concept="2NCZwO" id="2ncjLWki9K8" role="3z_lpI">
           <node concept="2NCMab" id="2ncjLWki9K9" role="2NCMaf">
             <ref role="2NCMaa" to="e1tx:11TWfQr5QUH" resolve="SimpleTestCase" />
@@ -1830,6 +1814,7 @@
         <property role="3z_lpW" value="mbeddr" />
         <property role="3z_lpw" value="true" />
         <property role="3z_lpJ" value="true" />
+        <property role="3z_lpV" value="                                                                                                         &#10; SimpleTestCase                                                                                          &#10;model   mbeddr.tutorial.main.defaultExtensions                                                           &#10;package examples    constraints                                                                          &#10;                                                                                                         &#10;                                                                                                         &#10;void testHelperFunction() {                                                                              &#10;  assert(0) add(1, 1) == 2;                                                                              &#10;} testHelperFunction (function)                                                                          &#10;exported testcase testAdding {                                                                           &#10;  testHelperFunction();                                                                                  &#10;  assert-equals(0) 10 == add(5, 5);                                                                      &#10;} testAdding(test case)                                                                                  &#10;                                                                                      imports     nothing" />
         <node concept="2NCZwO" id="2ncjLWki9Kp" role="3z_lpI">
           <node concept="2NCMab" id="2ncjLWki9Kq" role="2NCMaf">
             <ref role="2NCMaa" to="e1tx:11TWfQr5QUH" resolve="SimpleTestCase" />
@@ -1854,7 +1839,7 @@
             <property role="19SUeA" value="mbeddr has tight integration with formal verification tools which can be used to specify a verification harness for the testing function. This way similar functionality can be achieved as with the ordinary parameterized tests. Actually, testing your function (unit of the system) with harness and formal verification is much more powerful because unit tests usually cover only punctual cases, while the verification can prove the property (in this case assertions) for a whole wider set of values. You can read more about these features in " />
           </node>
           <node concept="1_0GAv" id="48PTy$Ruq00" role="19SJt6">
-            <ref role="1_0GAl" to="us0v:7OKLwZ_7fp6" resolve="formal_verification" />
+            <ref role="1_0GAl" to="us0v:3mn43GO8lBo" resolve="formal_verification" />
           </node>
           <node concept="19SUe$" id="48PTy$RupZZ" role="19SJt6">
             <property role="19SUeA" value=". " />
@@ -1879,7 +1864,7 @@
   <node concept="1_1swa" id="1OEOMspli$k">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_mbeddrCvsC99" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="1OEOMsplmw2" role="1_0VJ0">
       <property role="TrG5h" value="mbeddrCVsC99" />
       <property role="1_0VJr" value="mbeddr C vs. C99" />
@@ -1919,7 +1904,7 @@
   <node concept="1_1swa" id="4IT6unrukQ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="C_Commenting" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="4IT6unrwrw" role="1_0VJ0">
       <property role="TrG5h" value="commenting" />
       <property role="1_0VJr" value="Commenting" />
@@ -1966,7 +1951,7 @@
             </node>
           </node>
           <node concept="19SUe$" id="4IT6unrHfD" role="19SJt6">
-            <property role="19SUeA" value=" inside the text blocks to insert actual MPS nodes: this lets you mix unstructured text with \&quot;real program code\&quot;. We use this, for example, to support references to program elements inside the comments. Since these are real references, they are renamed automatically if the referenced element is renamed. Press " />
+            <property role="19SUeA" value=" inside the text blocks to insert actual MPS nodes: this lets you mix unstructured text with &quot;real program code&quot;. We use this, for example, to support references to program elements inside the comments. Since these are real references, they are renamed automatically if the referenced element is renamed. Press " />
           </node>
           <node concept="2OoWia" id="4IT6uns5k4" role="19SJt6">
             <node concept="19SGf9" id="4IT6uns5k5" role="$DsGW">
@@ -2108,12 +2093,14 @@
         <node concept="1_0LV8" id="4IT6un$jX4" role="1_0VJ0">
           <node concept="19SGf9" id="4IT6un$jX5" role="1_0LWR">
             <node concept="19SUe$" id="4IT6un$jX6" role="19SJt6">
-              <property role="19SUeA" value="Statement comments are comments that are used in statement context (i.e., places where you write \&quot;procedural\&quot; C code). Examples can be seen in the following two code fragments:" />
+              <property role="19SUeA" value="Statement comments are comments that are used in statement context (i.e., places where you write &quot;procedural&quot; C code). Examples can be seen in the following two code fragments:" />
             </node>
           </node>
         </node>
         <node concept="3z_lpU" id="4IT6un$qQ$" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="void store_store(Trackpoint* tp) &lt;= op store.store {&#10;  //here is a regular statement comment.            &#10; @arg(tp) is a reference to an argument.            &#10;  storedTP = tp;                                    &#10;  return;                                           &#10;} runnable store_store                              " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="4IT6un$qQ_" role="3z_lpI">
             <node concept="2NCMab" id="4IT6un$qQG" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -2125,6 +2112,8 @@
         </node>
         <node concept="3z_lpU" id="4IT6un$qQY" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="Trackpoint* store_take() &lt;= op store.take {              &#10;  Trackpoint* temp = storedTP;                           &#10;  //this comment refers to a local variable: @local(temp)&#10;  storedTP = null;                                       &#10;  return temp;                                           &#10;} runnable store_take                                    " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="4IT6un$qQZ" role="3z_lpI">
             <node concept="2NCMab" id="4IT6un$qRa" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -2158,7 +2147,7 @@
         <node concept="1_0LV8" id="4IT6unBsUn" role="1_0VJ0">
           <node concept="19SGf9" id="4IT6unBsUo" role="1_0LWR">
             <node concept="19SUe$" id="4IT6unBsUp" role="19SJt6">
-              <property role="19SUeA" value="The statement comments are simply another kind of statement. They live inside a statement list along with all the other statements. Their only \&quot;connection\&quot; to the code is their phyical location. Element Documentations are different: they are actually " />
+              <property role="19SUeA" value="The statement comments are simply another kind of statement. They live inside a statement list along with all the other statements. Their only &quot;connection&quot; to the code is their phyical location. Element Documentations are different: they are actually " />
             </node>
             <node concept="28N2ik" id="4IT6unBsUu" role="19SJt6">
               <node concept="19SGf9" id="4IT6unBsUv" role="$DsGW">
@@ -2177,9 +2166,9 @@
             <node concept="19SUe$" id="4IT6unB$qs" role="19SJt6">
               <property role="19SUeA" value="To attach an element documentation, you can use the " />
             </node>
-            <node concept="1jUjqm" id="4IT6unB$qC" role="19SJt6">
-              <node concept="19SGf9" id="4IT6unB$qD" role="$DsGW">
-                <node concept="19SUe$" id="4IT6unB$qE" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuoHKX" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuoHL0" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuoHL1" role="19SJt6">
                   <property role="19SUeA" value="Add Documentation to ..." />
                 </node>
               </node>
@@ -2191,6 +2180,8 @@
         </node>
         <node concept="3z_lpU" id="4IT6unCqlk" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="exported component Nuller extends nothing {                             &#10;  provides TrackpointProcessor processor                                &#10;  Trackpoint* processor_process(Trackpoint* p) &lt;= op processor.process {&#10;  p.alt = 42 m;                                                         &#10;  return p;                                                             &#10;} runnable processor_process                                            &#10;} component Nuller                                                      " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="4IT6unCqll" role="3z_lpI">
             <node concept="2NCMab" id="4IT6unCqlm" role="2NCMaf">
               <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -2222,9 +2213,9 @@
             <node concept="19SUe$" id="4IT6unD55N" role="19SJt6">
               <property role="19SUeA" value=" module. Margin comments can be attached to any node using the " />
             </node>
-            <node concept="1jUjqm" id="4IT6unD55V" role="19SJt6">
-              <node concept="19SGf9" id="4IT6unD55W" role="$DsGW">
-                <node concept="19SUe$" id="4IT6unD55X" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuoHYG" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuoHYJ" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuoHYK" role="19SJt6">
                   <property role="19SUeA" value="Add Margin Comment" />
                 </node>
               </node>
@@ -2239,9 +2230,9 @@
             <node concept="19SUe$" id="4IT6unD56n" role="19SJt6">
               <property role="19SUeA" value="If margin comments are used in a root, the root itself shows a summary at the top: how many comments are in the root, plus who commented last, and when. You can use the " />
             </node>
-            <node concept="1jUjqm" id="4IT6unDmeA" role="19SJt6">
-              <node concept="19SGf9" id="4IT6unDmeB" role="$DsGW">
-                <node concept="19SUe$" id="4IT6unDmeC" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuoHZ3" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuoHZ6" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuoHZ7" role="19SJt6">
                   <property role="19SUeA" value="Delete All Comments" />
                 </node>
               </node>
@@ -2267,9 +2258,9 @@
             <node concept="19SUe$" id="4IT6unEpRm" role="19SJt6">
               <property role="19SUeA" value="Essentially all program nodes can be commented out by using the " />
             </node>
-            <node concept="1jUjqm" id="4IT6unEpRu" role="19SJt6">
-              <node concept="19SGf9" id="4IT6unEpRv" role="$DsGW">
-                <node concept="19SUe$" id="4IT6unEpRw" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuoHZi" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuoHZl" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuoHZm" role="19SJt6">
                   <property role="19SUeA" value="Comment Out" />
                 </node>
               </node>
@@ -2330,9 +2321,9 @@
             <node concept="19SUe$" id="4IT6unFln$" role="19SJt6">
               <property role="19SUeA" value="To comment something back in, you can either use the " />
             </node>
-            <node concept="2OoWia" id="4IT6unHXp9" role="19SJt6">
-              <node concept="19SGf9" id="4IT6unHXpc" role="$DsGW">
-                <node concept="19SUe$" id="4IT6unHXpd" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOuoI05" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuoI08" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuoI09" role="19SJt6">
                   <property role="19SUeA" value="Comment In" />
                 </node>
               </node>

@@ -1111,6 +1111,7 @@
   <node concept="1TIwiD" id="8PQYytE9VE">
     <property role="TrG5h" value="PragmaDeclaration" />
     <property role="34LRSv" value="#pragmaDeclaration" />
+    <property role="R4oN_" value="#pragma to be referenced by functions in modifiers" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="8PQYytE9VH" role="1TKVEl">
       <property role="TrG5h" value="isSurrounding" />
@@ -1330,6 +1331,18 @@
     <property role="TrG5h" value="VaArgs" />
     <property role="34LRSv" value="__VA_ARGS__" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="IrwlmWyLju">
+    <property role="TrG5h" value="PragmaModuleContent" />
+    <property role="34LRSv" value="#pragma" />
+    <property role="R4oN_" value="#pragma on module content level" />
+    <node concept="1TJgyi" id="IrwlmWyLjw" role="1TKVEl">
+      <property role="TrG5h" value="pragmaString" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="xN636rYFQ6" role="PzmwI">
+      <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
   </node>
 </model>
 

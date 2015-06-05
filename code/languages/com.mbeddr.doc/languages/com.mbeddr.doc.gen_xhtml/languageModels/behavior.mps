@@ -18,6 +18,8 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
+        <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
+        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -88,6 +90,38 @@
         </node>
       </node>
       <node concept="10P_77" id="1T7O9iX4wJd" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="QRmqzHUo32" role="13h7CS">
+      <property role="TrG5h" value="isOneLineBlock" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="t7at:1Qs9WekVZ7e" resolve="isOneLineBlock" />
+      <node concept="3Tm1VV" id="QRmqzHUo3b" role="1B3o_S" />
+      <node concept="3clFbS" id="QRmqzHUo3c" role="3clF47">
+        <node concept="3clFbF" id="QRmqzHUo5N" role="3cqZAp">
+          <node concept="3clFbT" id="QRmqzHUo5M" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="QRmqzHUo3d" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="QRmqzHUo5Y" role="13h7CS">
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="oneLineBlock" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="t7at:1653mnvAgno" resolve="oneLineBlock" />
+      <node concept="3Tm1VV" id="QRmqzHUo5Z" role="1B3o_S" />
+      <node concept="3clFbS" id="QRmqzHUo64" role="3clF47">
+        <node concept="3clFbF" id="QRmqzHUo8H" role="3cqZAp">
+          <node concept="3clFbT" id="QRmqzHUo8G" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="QRmqzHUo65" role="3clF45" />
     </node>
   </node>
 </model>

@@ -118,15 +118,6 @@
             </node>
           </node>
         </node>
-        <node concept="3EZMnI" id="4vQSg$Arf9e" role="3EZMnx">
-          <node concept="l2Vlx" id="4vQSg$Arf9f" role="2iSdaV" />
-          <node concept="3F0ifn" id="4vQSg$Arazn" role="3EZMnx">
-            <property role="3F0ifm" value="table of contents" />
-          </node>
-          <node concept="3F0A7n" id="4vQSg$Arazp" role="3EZMnx">
-            <ref role="1NtTu8" to="g9w8:4vQSg$Arazl" resolve="hasTOC" />
-          </node>
-        </node>
         <node concept="3EZMnI" id="4vQSg$Arf9g" role="3EZMnx">
           <node concept="l2Vlx" id="4vQSg$Arf9h" role="2iSdaV" />
           <node concept="3F0ifn" id="4vQSg$Arf9l" role="3EZMnx">

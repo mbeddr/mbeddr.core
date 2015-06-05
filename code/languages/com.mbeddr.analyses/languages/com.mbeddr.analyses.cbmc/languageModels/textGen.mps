@@ -34,6 +34,7 @@
       </concept>
     </language>
     <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen">
+      <concept id="1237305208784" name="jetbrains.mps.lang.textGen.structure.NewLineAppendPart" flags="ng" index="l8MVK" />
       <concept id="1237305334312" name="jetbrains.mps.lang.textGen.structure.NodeAppendPart" flags="ng" index="l9hG8">
         <child id="1237305790512" name="value" index="lb14g" />
       </concept>
@@ -221,6 +222,80 @@
         <node concept="lc7rE" id="6KXBYUqAHyh" role="3cqZAp">
           <node concept="la8eA" id="6KXBYUqAHyi" role="lcghm">
             <property role="lacIc" value="__CPROVER_bool" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="i5tJSHdvDq">
+    <property role="3GE5qa" value="cbmc_macros" />
+    <ref role="WuzLi" to="q5q6:i5tJSHdtYB" resolve="CPROVERthreadId" />
+    <node concept="11bSqf" id="i5tJSHdvDr" role="11c4hB">
+      <node concept="3clFbS" id="i5tJSHdvDs" role="2VODD2">
+        <node concept="lc7rE" id="i5tJSHd$DW" role="3cqZAp">
+          <node concept="la8eA" id="i5tJSHd$E9" role="lcghm">
+            <property role="lacIc" value="__CPROVER_thread_id" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="3V3CJZuspAz">
+    <property role="3GE5qa" value="cbmc_macros" />
+    <ref role="WuzLi" to="q5q6:73FH1Bco8fg" resolve="CPROVERassert" />
+    <node concept="11bSqf" id="3V3CJZuspA$" role="11c4hB">
+      <node concept="3clFbS" id="3V3CJZuspA_" role="2VODD2">
+        <node concept="lc7rE" id="3V3CJZusvy$" role="3cqZAp">
+          <node concept="la8eA" id="3V3CJZusvyL" role="lcghm">
+            <property role="lacIc" value="__CPROVER_assert(" />
+          </node>
+          <node concept="l9hG8" id="3V3CJZusvzT" role="lcghm">
+            <node concept="2OqwBi" id="3V3CJZusvXk" role="lb14g">
+              <node concept="117lpO" id="3V3CJZusv$D" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3V3CJZusy6Q" role="2OqNvi">
+                <ref role="3Tt5mk" to="q5q6:73FH1Bco8D_" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="3V3CJZusyaq" role="lcghm">
+            <property role="lacIc" value="," />
+          </node>
+          <node concept="l9hG8" id="3V3CJZusyjx" role="lcghm">
+            <node concept="2OqwBi" id="3V3CJZusyq5" role="lb14g">
+              <node concept="117lpO" id="3V3CJZusylM" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3V3CJZusz53" role="2OqNvi">
+                <ref role="3TsBF5" to="q5q6:73FH1Bco8Dz" resolve="message" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="3V3CJZusz8V" role="lcghm">
+            <property role="lacIc" value=");" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="3V3CJZuxuSs">
+    <property role="3GE5qa" value="cbmc_macros" />
+    <ref role="WuzLi" to="q5q6:3V3CJZuwdnS" resolve="CPROVERatomic" />
+    <node concept="11bSqf" id="3V3CJZuxuSt" role="11c4hB">
+      <node concept="3clFbS" id="3V3CJZuxuSu" role="2VODD2">
+        <node concept="lc7rE" id="3V3CJZuxuSF" role="3cqZAp">
+          <node concept="la8eA" id="3V3CJZuxuSS" role="lcghm">
+            <property role="lacIc" value="__CPROVER_atomic_begin();" />
+          </node>
+          <node concept="l8MVK" id="3V3CJZuxuVk" role="lcghm" />
+          <node concept="l9hG8" id="3V3CJZuxuVI" role="lcghm">
+            <node concept="2OqwBi" id="3V3CJZuxv0I" role="lb14g">
+              <node concept="117lpO" id="3V3CJZuxuWv" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3V3CJZuxvmH" role="2OqNvi">
+                <ref role="3Tt5mk" to="q5q6:3V3CJZuwwng" />
+              </node>
+            </node>
+          </node>
+          <node concept="l8MVK" id="3V3CJZuxvrS" role="lcghm" />
+          <node concept="la8eA" id="3V3CJZuxvvk" role="lcghm">
+            <property role="lacIc" value="__CPROVER_atomic_end();" />
           </node>
         </node>
       </node>

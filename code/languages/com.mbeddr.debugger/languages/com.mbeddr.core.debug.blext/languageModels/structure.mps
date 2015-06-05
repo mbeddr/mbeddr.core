@@ -991,5 +991,12 @@
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="VC7Rv3ia47">
+    <property role="3GE5qa" value="stepping" />
+    <property role="TrG5h" value="FirstExecutableOperation" />
+    <property role="34LRSv" value="firstExecutable" />
+    <property role="R4oN_" value="returns the first executable ISteppable, that is not optimized." />
+    <ref role="1TJDcQ" to="tp2q:gKAMqbp" resolve="SequenceOperation" />
+  </node>
 </model>
 

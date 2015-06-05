@@ -698,6 +698,9 @@
     <node concept="PrWs8" id="7zyJEuzT4Mj" role="PzmwI">
       <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
     </node>
+    <node concept="PrWs8" id="7pvvgCDVVaA" role="PzmwI">
+      <ref role="PrY4T" to="x27k:6V6S12clNH$" resolve="IDataFlowAnalyzerEntryPoint" />
+    </node>
     <node concept="1TJgyj" id="7iNM$5cFD8X" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />

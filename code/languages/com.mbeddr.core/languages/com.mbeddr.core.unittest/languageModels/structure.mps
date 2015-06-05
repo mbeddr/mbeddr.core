@@ -371,6 +371,9 @@
     <property role="34LRSv" value="assert-equals" />
     <property role="R4oN_" value="assert actual == expected" />
     <ref role="1TJDcQ" node="6Iyv0noEbti" resolve="StructuredBinOpAssertStatement" />
+    <node concept="PrWs8" id="4kpZy5QDdGs" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6Iyv0noF3TR">
     <property role="3GE5qa" value="asserts" />

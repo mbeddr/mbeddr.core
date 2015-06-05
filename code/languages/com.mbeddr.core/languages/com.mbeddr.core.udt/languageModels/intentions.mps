@@ -24,6 +24,7 @@
     <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="2rho" ref="r:4e770e63-2ef5-4a0d-b2e8-c5c1a1565703(com.mbeddr.core.udt.behavior)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -113,6 +114,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -1072,10 +1074,18 @@
     <node concept="2SaL7w" id="6QawkaIMxNW" role="2ZfVeh">
       <node concept="3clFbS" id="6QawkaIMxNX" role="2VODD2">
         <node concept="3clFbF" id="6QawkaIMxVg" role="3cqZAp">
-          <node concept="2OqwBi" id="6QawkaIMxZB" role="3clFbG">
-            <node concept="2Sf5sV" id="6QawkaIMxVf" role="2Oq$k0" />
-            <node concept="2qgKlT" id="6QawkaJ43Aw" role="2OqNvi">
-              <ref role="37wK5l" to="2rho:6QawkaIYE8E" resolve="canBeTransparent" />
+          <node concept="1Wc70l" id="6aQaNY25h4" role="3clFbG">
+            <node concept="2OqwBi" id="6aQaNY25ya" role="3uHU7w">
+              <node concept="2Sf5sV" id="6aQaNY25tw" role="2Oq$k0" />
+              <node concept="2qgKlT" id="6aQaNY25Wf" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6QawkaIMxZB" role="3uHU7B">
+              <node concept="2Sf5sV" id="6QawkaIMxVf" role="2Oq$k0" />
+              <node concept="2qgKlT" id="6QawkaJ43Aw" role="2OqNvi">
+                <ref role="37wK5l" to="2rho:6QawkaIYE8E" resolve="canBeTransparent" />
+              </node>
             </node>
           </node>
         </node>

@@ -7448,25 +7448,6 @@
         </node>
         <node concept="SfApY" id="7C_wgEF3Ee$" role="3cqZAp">
           <node concept="3clFbS" id="7C_wgEF3Ee_" role="SfCbr">
-            <node concept="3clFbF" id="7FG6jaj7IO1" role="3cqZAp">
-              <node concept="2OqwBi" id="7FG6jaj7INY" role="3clFbG">
-                <node concept="10M0yZ" id="7FG6jaj7INZ" role="2Oq$k0">
-                  <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                  <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-                </node>
-                <node concept="liA8E" id="7FG6jaj7IO0" role="2OqNvi">
-                  <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="3cpWs3" id="7FG6jaj7Jh0" role="37wK5m">
-                    <node concept="37vLTw" id="7FG6jaj7Jo1" role="3uHU7w">
-                      <ref role="3cqZAo" node="7C_wgEF3Ee3" resolve="fqModelName" />
-                    </node>
-                    <node concept="Xl_RD" id="7FG6jaj7IV5" role="3uHU7B">
-                      <property role="Xl_RC" value="model: " />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="7C_wgEF3EeP" role="3cqZAp">
               <node concept="37vLTI" id="7C_wgEF3Ef5" role="3clFbG">
                 <node concept="37vLTw" id="4WqJ5Sh63iX" role="37vLTJ">

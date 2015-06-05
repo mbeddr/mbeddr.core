@@ -165,6 +165,9 @@
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
       </concept>
+      <concept id="1679452829930336984" name="com.mbeddr.core.statements.structure.CommentStatement" flags="ng" index="1QiMYF">
+        <child id="8624890525768479139" name="textblock" index="3SJzmv" />
+      </concept>
       <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
         <child id="4185783222026502647" name="init" index="3XIe9u" />
       </concept>
@@ -175,6 +178,14 @@
       <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
       <concept id="2093108837558113914" name="com.mbeddr.core.statements.structure.LocalVarRef" flags="ng" index="3ZVu4v">
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
@@ -243,6 +254,11 @@
         <child id="6307143892175911067" name="left" index="1vV05J" />
       </concept>
       <concept id="6307143892175831839" name="com.mbeddr.core.util.structure.IsInRangeExpression" flags="ng" index="1vVjFF" />
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
@@ -1662,8 +1678,17 @@
               </node>
               <node concept="3XISUE" id="7MMcIPltSWN" role="3XIRFZ" />
               <node concept="2c3wGG" id="7MMcIPltSWO" role="3XIRFZ">
+                <node concept="1QiMYF" id="1CPQBcoR1tp" role="3XIRFZ">
+                  <node concept="OjmMv" id="1CPQBcoR1tq" role="3SJzmv">
+                    <node concept="19SGf9" id="1CPQBcoR1tr" role="OjmMu">
+                      <node concept="19SUe$" id="1CPQBcoR1ts" role="19SJt6">
+                        <property role="19SUeA" value="the statement list below need to be visible to avoid names duplication (see BasicNondetVarUtils.computeTmpVarName(node); )" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3XIRFW" id="7MMcIPltSWP" role="3XIRFZ">
-                  <property role="2ccuoM" value="true" />
+                  <property role="2ccuoM" value="false" />
                   <node concept="2c3wGE" id="7MMcIPltSWQ" role="3XIRFZ">
                     <node concept="3ZVu4v" id="7MMcIPltSWR" role="2c3wGY">
                       <ref role="3ZVs_2" node="7MMcIPltSWL" resolve="dummy" />
@@ -1956,8 +1981,17 @@
               </node>
               <node concept="3XISUE" id="7MMcIPluH6u" role="3XIRFZ" />
               <node concept="2c3wGG" id="7MMcIPluH6v" role="3XIRFZ">
+                <node concept="1QiMYF" id="1CPQBcoQYgg" role="3XIRFZ">
+                  <node concept="OjmMv" id="1CPQBcoQYgi" role="3SJzmv">
+                    <node concept="19SGf9" id="1CPQBcoQYgj" role="OjmMu">
+                      <node concept="19SUe$" id="1CPQBcoQYgk" role="19SJt6">
+                        <property role="19SUeA" value="the statement list below need to be visible to avoid names duplication (see BasicNondetVarUtils.computeTmpVarName(node); )" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3XIRFW" id="7MMcIPluH6w" role="3XIRFZ">
-                  <property role="2ccuoM" value="true" />
+                  <property role="2ccuoM" value="false" />
                   <node concept="2c3wGE" id="7MMcIPluH6x" role="3XIRFZ">
                     <node concept="3ZVu4v" id="7MMcIPluH6y" role="2c3wGY">
                       <ref role="3ZVs_2" node="7MMcIPluH6s" resolve="dummy" />
