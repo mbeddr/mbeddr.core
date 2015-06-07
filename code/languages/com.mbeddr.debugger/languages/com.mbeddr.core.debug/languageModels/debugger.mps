@@ -435,6 +435,9 @@
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
       </concept>
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -4645,24 +4648,38 @@
         <ref role="3uigEE" to="dbrf:~Icon" resolve="Icon" />
       </node>
       <node concept="3clFbS" id="2pdWPwa1BTg" role="3clF47">
-        <node concept="3clFbF" id="6EW69Px2$ZB" role="3cqZAp">
-          <node concept="2YIFZM" id="6EW69Px2$ZD" role="3clFbG">
-            <ref role="37wK5l" to="8d8y:~IconLoader.findIcon(java.lang.String):javax.swing.Icon" resolve="findIcon" />
-            <ref role="1Pybhc" to="8d8y:~IconLoader" resolve="IconLoader" />
-            <node concept="3cpWs3" id="6EW69Px2_1A" role="37wK5m">
-              <node concept="3cpWs3" id="6EW69Px2_1x" role="3uHU7B">
-                <node concept="Xl_RD" id="6EW69Px2_1b" role="3uHU7B">
-                  <property role="Xl_RC" value="${" />
+        <node concept="3cpWs8" id="4mZxE$vBWEg" role="3cqZAp">
+          <node concept="3cpWsn" id="4mZxE$vBWEh" role="3cpWs9">
+            <property role="TrG5h" value="stackIcon" />
+            <node concept="3uibUv" id="4mZxE$vBWEi" role="1tU5fm">
+              <ref role="3uigEE" to="dbrf:~Icon" resolve="Icon" />
+            </node>
+            <node concept="10Nm6u" id="4mZxE$vBWFY" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="1QHqEK" id="4mZxE$vBXut" role="3cqZAp">
+          <node concept="1QHqEC" id="4mZxE$vBXuv" role="1QHqEI">
+            <node concept="3clFbS" id="4mZxE$vBXux" role="1bW5cS">
+              <node concept="3clFbF" id="4mZxE$vBXEf" role="3cqZAp">
+                <node concept="37vLTI" id="4mZxE$vBZ76" role="3clFbG">
+                  <node concept="37vLTw" id="4mZxE$vBXEe" role="37vLTJ">
+                    <ref role="3cqZAo" node="4mZxE$vBWEh" resolve="stackIcon" />
+                  </node>
+                  <node concept="2YIFZM" id="6B_gG2NeJ4L" role="37vLTx">
+                    <ref role="37wK5l" to="ai1m:~IconManager.getIcon(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIcon" />
+                    <ref role="1Pybhc" to="ai1m:~IconManager" resolve="IconManager" />
+                    <node concept="35c_gC" id="6B_gG2NeJ8i" role="37wK5m">
+                      <ref role="35c_gD" to="2gv2:6B_gG2NdoVp" resolve="CallStack" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="10M0yZ" id="6EW69Px2_1r" role="3uHU7w">
-                  <ref role="1PxDUh" node="5Y9SYQfaRDt" resolve="Util" />
-                  <ref role="3cqZAo" node="6EW69Px2_0Z" resolve="MBEDDR_HOME" />
-                </node>
-              </node>
-              <node concept="Xl_RD" id="6EW69Px2c3L" role="3uHU7w">
-                <property role="Xl_RC" value="}/code/languages/com.mbeddr.core/languages/com.mbeddr.core.debug/icons/stack_icon.png" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4mZxE$vBWHx" role="3cqZAp">
+          <node concept="37vLTw" id="4mZxE$vBWKy" role="3cqZAk">
+            <ref role="3cqZAo" node="4mZxE$vBWEh" resolve="stackIcon" />
           </node>
         </node>
       </node>
@@ -29816,15 +29833,7 @@
     <property role="3GE5qa" value="cross" />
     <property role="TrG5h" value="Util" />
     <node concept="3Tm1VV" id="5Y9SYQfaRDu" role="1B3o_S" />
-    <node concept="Wx3nA" id="6EW69Px2_0Z" role="jymVt">
-      <property role="TrG5h" value="MBEDDR_HOME" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="6EW69Px2_1t" role="1B3o_S" />
-      <node concept="17QB3L" id="6EW69Px2_18" role="1tU5fm" />
-      <node concept="Xl_RD" id="6EW69Px2_1a" role="33vP2m">
-        <property role="Xl_RC" value="mbeddr.github.core.home" />
-      </node>
-    </node>
+    <node concept="2tJIrI" id="6B_gG2NeJoo" role="jymVt" />
     <node concept="3clFbW" id="5Y9SYQfaRDv" role="jymVt">
       <node concept="3cqZAl" id="5Y9SYQfaRDw" role="3clF45" />
       <node concept="3Tm1VV" id="5Y9SYQfaRDx" role="1B3o_S" />
