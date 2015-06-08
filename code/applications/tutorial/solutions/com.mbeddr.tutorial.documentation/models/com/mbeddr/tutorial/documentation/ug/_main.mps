@@ -78,6 +78,7 @@
     </language>
     <language id="f44f6b9a-bf30-4f73-866e-fac17c177409" name="com.mbeddr.doc.gen_latex">
       <concept id="4457500422381351715" name="com.mbeddr.doc.gen_latex.structure.LatexRenderer" flags="ng" index="1jVoCB">
+        <property id="4755612053022149513" name="prolog" index="43dxY" />
         <property id="4457500422381351717" name="documentClass" index="1jVoCx" />
         <property id="5185579450379315413" name="hasTOC" index="1xA$Bs" />
       </concept>
@@ -263,7 +264,7 @@
     </node>
   </node>
   <node concept="1_08Dk" id="Gd6QB8f5GK">
-    <property role="TrG5h" value="UserGuideExport" />
+    <property role="TrG5h" value="MbeddrUserGuide" />
     <property role="WqcPg" value="mbeddr User Guide" />
     <node concept="2SbEIf" id="Gd6QB8f5P3" role="30Gjbg">
       <property role="2SbEId" value="images/vis" />
@@ -274,15 +275,15 @@
       <ref role="2SbEIe" to="1842:2fBMM_3XZ4D" resolve="images" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3vY" role="30Gjbg">
-      <property role="2SbEId" value="images/concept" />
+      <property role="2SbEId" value="images/concepts" />
       <ref role="2SbEIe" to="1842:2fBMM_3XZ4H" resolve="conceptImages" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3wf" role="30Gjbg">
-      <property role="2SbEId" value="images/fundamental" />
+      <property role="2SbEId" value="images/fundamentals" />
       <ref role="2SbEIe" to="1842:2fBMM_3XZ4L" resolve="fundamentalImages" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3w$" role="30Gjbg">
-      <property role="2SbEId" value="images/hw" />
+      <property role="2SbEId" value="images/ctooling/helloWolrd" />
       <ref role="2SbEIe" to="1842:2fBMM_3XZ4J" resolve="hwimages" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3wX" role="30Gjbg">
@@ -290,16 +291,17 @@
       <ref role="2SbEIe" to="1842:45LXldJZEw7" resolve="imagesProcessSupport" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3xq" role="30Gjbg">
-      <property role="2SbEId" value="images/sm" />
+      <property role="2SbEId" value="images/cextensions/statemachines" />
       <ref role="2SbEIe" to="1842:2fBMM_3XZ4F" resolve="smimages" />
     </node>
     <node concept="1_0j5j" id="Gd6QB8f5OP" role="30Gjbj">
       <ref role="1_0j5g" node="hZfTLLg0H0" resolve="mbeddrUserGuide" />
     </node>
-    <node concept="1_07dB" id="3mn43GOHYLN" role="30GjaH" />
-    <node concept="1jVoCB" id="3mn43GOHYLO" role="30Gjbi">
+    <node concept="1_07dB" id="4pE1MOiXbR_" role="30GjaH" />
+    <node concept="1jVoCB" id="4pE1MOiXbRA" role="30Gjbi">
       <property role="1jVoCx" value="report" />
       <property role="1xA$Bs" value="true" />
+      <property role="43dxY" value="mbeddr-prolog.ltx" />
     </node>
   </node>
 </model>
