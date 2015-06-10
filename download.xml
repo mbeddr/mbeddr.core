@@ -6,7 +6,7 @@
   <property name="MPS-Zip-Folder-CleandUp" value="MPS-mbeddr"/>
   <property name="MPS-Dir" value="MPS"/>
   <target name="download">
-	<delete dir="${MPS-Dir}" >
+	<delete dir="${MPS-Dir}" />
 	<mkdir dir="${MPS-Dir}"/>
 	<delete file="${MPS-Dir}/${MPS-File}"/>	
 	<get src="${MPS-Base-URL}/${MPS-File}" dest="${MPS-Dir}" verbose="true" skipexisting="true" usetimestamp="true"/>
