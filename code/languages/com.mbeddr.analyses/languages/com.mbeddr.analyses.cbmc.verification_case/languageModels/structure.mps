@@ -107,8 +107,8 @@
   </node>
   <node concept="1TIwiD" id="2L0t9wJlIYG">
     <property role="3GE5qa" value="verification_case" />
-    <property role="TrG5h" value="LibraryEnvironment" />
-    <property role="34LRSv" value="library_environment" />
+    <property role="TrG5h" value="FunctionEnvironment" />
+    <property role="34LRSv" value="function_environment" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="2L0t9wJlIYH" role="1TKVEi">
       <property role="20lmBu" value="reference" />

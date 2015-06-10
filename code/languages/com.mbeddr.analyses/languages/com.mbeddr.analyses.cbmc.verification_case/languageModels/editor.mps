@@ -438,10 +438,10 @@
   </node>
   <node concept="24kQdi" id="2L0t9wJlJ9c">
     <property role="3GE5qa" value="verification_case" />
-    <ref role="1XX52x" to="48a0:2L0t9wJlIYG" resolve="LibraryEnvironment" />
+    <ref role="1XX52x" to="48a0:2L0t9wJlIYG" resolve="FunctionEnvironment" />
     <node concept="3EZMnI" id="2L0t9wJlJaI" role="2wV5jI">
       <node concept="3F0ifn" id="2L0t9wJlJaJ" role="3EZMnx">
-        <property role="3F0ifm" value="library environment:" />
+        <property role="3F0ifm" value="function environment:" />
       </node>
       <node concept="1iCGBv" id="2L0t9wJlJoj" role="3EZMnx">
         <ref role="1NtTu8" to="48a0:2L0t9wJlIYH" />
