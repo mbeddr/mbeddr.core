@@ -7,7 +7,7 @@
           <value>
             <Library>
               <option name="name" value="mbeddr.core" />
-              <option name="path" value="${mbeddr.github.core.home}/code/languages" />
+              <option name="path" value="$PROJECT_DIR$/../../../../../mbeddr.core/code/languages" />
             </Library>
           </value>
         </entry>
@@ -15,7 +15,7 @@
           <value>
             <Library>
               <option name="name" value="sl-all" />
-              <option name="path" value="${mbeddr.github.core.home}/code/plugins" />
+              <option name="path" value="$PROJECT_DIR$/../../../../../mbeddr.core/code/plugins" />
             </Library>
           </value>
         </entry>
@@ -23,4 +23,3 @@
     </option>
   </component>
 </project>
-
