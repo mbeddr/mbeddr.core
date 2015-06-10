@@ -4,6 +4,7 @@
   <languages>
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -257,6 +258,9 @@
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
         <child id="1201186121363" name="typeParameter" index="2Ghqu4" />
       </concept>
+    </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199542442495" name="jetbrains.mps.baseLanguage.closures.structure.FunctionType" flags="in" index="1ajhzC">
@@ -624,7 +628,7 @@
             <node concept="3uibUv" id="4GGI4_vg$5l" role="1tU5fm">
               <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
             </node>
-            <node concept="2OqwBi" id="4GGI4_vg$5m" role="33vP2m">
+            <node concept="2EnYce" id="2Nt6progHlv" role="33vP2m">
               <node concept="2OqwBi" id="4GGI4_vg$6R" role="2Oq$k0">
                 <node concept="37vLTw" id="4GGI4_vg$6Q" role="2Oq$k0">
                   <ref role="3cqZAo" node="4GGI4_vg$3D" resolve="myTree" />
