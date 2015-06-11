@@ -166,8 +166,8 @@
           </node>
         </node>
         <node concept="3clFbH" id="thBJodFhDf" role="3cqZAp" />
-        <node concept="3SKdUt" id="thBJodPA4P" role="3cqZAp">
-          <node concept="3SKWN0" id="thBJodPA4T" role="3SKWNk">
+        <node concept="3SKdUt" id="5LJ9ZBlvOZd" role="3cqZAp">
+          <node concept="3SKWN0" id="5LJ9ZBlvOZh" role="3SKWNk">
             <node concept="3clFbF" id="6WBmVK646SV" role="3SKWNf">
               <node concept="2YIFZM" id="6WBmVK646SW" role="3clFbG">
                 <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
@@ -425,7 +425,7 @@
                 <ref role="3cqZAo" node="5LJ9ZBllB6i" resolve="m" />
               </node>
               <node concept="Xl_RD" id="5LJ9ZBllB6r" role="37wK5m">
-                <property role="Xl_RC" value="datarace_free" />
+                <property role="Xl_RC" value="datarace_free_pointer" />
               </node>
               <node concept="Xl_RD" id="5LJ9ZBllB6s" role="37wK5m">
                 <property role="Xl_RC" value="test1" />
@@ -434,33 +434,20 @@
           </node>
         </node>
         <node concept="3clFbH" id="5LJ9ZBllB6t" role="3cqZAp" />
-        <node concept="3SKdUt" id="5LJ9ZBllB6u" role="3cqZAp">
-          <node concept="3SKWN0" id="5LJ9ZBllB6v" role="3SKWNk">
-            <node concept="3clFbF" id="5LJ9ZBllB6w" role="3SKWNf">
-              <node concept="2YIFZM" id="5LJ9ZBllB6x" role="3clFbG">
-                <ref role="37wK5l" to="fxhk:17FqOSBEPPO" resolve="prettyPrintResults" />
-                <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
-                <node concept="37vLTw" id="5LJ9ZBllB6y" role="37wK5m">
-                  <ref role="3cqZAo" node="5LJ9ZBllB6m" resolve="results" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="5LJ9ZBllB6z" role="3cqZAp">
           <node concept="3cpWsn" id="5LJ9ZBllB6$" role="3cpWs9">
             <property role="TrG5h" value="res1" />
             <node concept="3uibUv" id="5LJ9ZBllB6_" role="1tU5fm">
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
-            <node concept="2YIFZM" id="5LJ9ZBllB6A" role="33vP2m">
-              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+            <node concept="2YIFZM" id="5LJ9ZBlvYSH" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5kHkJcGJQBv" resolve="findResultByMessagePrefix" />
               <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
-              <node concept="37vLTw" id="5LJ9ZBllB6B" role="37wK5m">
+              <node concept="37vLTw" id="5LJ9ZBlvYSI" role="37wK5m">
                 <ref role="3cqZAo" node="5LJ9ZBllB6m" resolve="results" />
               </node>
-              <node concept="Xl_RD" id="5LJ9ZBllB6C" role="37wK5m">
-                <property role="Xl_RC" value="Assert: datarace in function writer1_1 for sharedVar: uint32 " />
+              <node concept="Xl_RD" id="5LJ9ZBlvYSJ" role="37wK5m">
+                <property role="Xl_RC" value="Assert: datarace in function writer1_1 for *" />
               </node>
             </node>
           </node>
@@ -480,7 +467,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="5LJ9ZBllB6J" role="3cqZAp" />
+        <node concept="3clFbH" id="5LJ9ZBlvp6A" role="3cqZAp" />
         <node concept="3cpWs8" id="5LJ9ZBllB6K" role="3cqZAp">
           <node concept="3cpWsn" id="5LJ9ZBllB6L" role="3cpWs9">
             <property role="TrG5h" value="res2" />
@@ -494,7 +481,7 @@
                 <ref role="3cqZAo" node="5LJ9ZBllB6m" resolve="results" />
               </node>
               <node concept="Xl_RD" id="5LJ9ZBllB6P" role="37wK5m">
-                <property role="Xl_RC" value="Assert: datarace in function writer1_1 for sharedVar: uint32 " />
+                <property role="Xl_RC" value="Assert: datarace in function writer2_1 for shared: uint32 " />
               </node>
             </node>
           </node>
@@ -511,53 +498,6 @@
             </node>
             <node concept="liA8E" id="5LJ9ZBllB6V" role="2OqNvi">
               <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="5LJ9ZBllB6W" role="3cqZAp" />
-        <node concept="3cpWs8" id="5LJ9ZBllB6X" role="3cqZAp">
-          <node concept="3cpWsn" id="5LJ9ZBllB6Y" role="3cpWs9">
-            <property role="TrG5h" value="res3" />
-            <node concept="3uibUv" id="5LJ9ZBllB6Z" role="1tU5fm">
-              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
-            </node>
-            <node concept="2YIFZM" id="5LJ9ZBllB70" role="33vP2m">
-              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
-              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
-              <node concept="37vLTw" id="5LJ9ZBllB71" role="37wK5m">
-                <ref role="3cqZAo" node="5LJ9ZBllB6m" resolve="results" />
-              </node>
-              <node concept="Xl_RD" id="5LJ9ZBllB72" role="37wK5m">
-                <property role="Xl_RC" value="Assert: datarace in function writer1_1 for sharedVar: uint32 " />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2Hmddi" id="5LJ9ZBllB73" role="3cqZAp">
-          <node concept="37vLTw" id="5LJ9ZBllB74" role="2Hmdds">
-            <ref role="3cqZAo" node="5LJ9ZBllB6Y" resolve="res3" />
-          </node>
-        </node>
-        <node concept="3vwNmj" id="5LJ9ZBllB75" role="3cqZAp">
-          <node concept="2OqwBi" id="5LJ9ZBllB76" role="3vwVQn">
-            <node concept="3cpWsa" id="5LJ9ZBllB77" role="2Oq$k0">
-              <ref role="3cqZAo" node="5LJ9ZBllB6Y" resolve="res3" />
-            </node>
-            <node concept="liA8E" id="5LJ9ZBllB78" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
-            </node>
-          </node>
-        </node>
-        <node concept="3SKdUt" id="5LJ9ZBllB79" role="3cqZAp">
-          <node concept="3SKWN0" id="5LJ9ZBllB7a" role="3SKWNk">
-            <node concept="3clFbF" id="5LJ9ZBllB7b" role="3SKWNf">
-              <node concept="2YIFZM" id="5LJ9ZBllB7c" role="3clFbG">
-                <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
-                <ref role="37wK5l" to="fxhk:6izRX52tWlf" resolve="prettyPrintCounterexample" />
-                <node concept="37vLTw" id="5LJ9ZBllB7d" role="37wK5m">
-                  <ref role="3cqZAo" node="5LJ9ZBllB6$" resolve="res1" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -593,7 +533,7 @@
                 <ref role="3cqZAo" node="5LJ9ZBllB7i" resolve="m" />
               </node>
               <node concept="Xl_RD" id="5LJ9ZBllB7r" role="37wK5m">
-                <property role="Xl_RC" value="datarace_free" />
+                <property role="Xl_RC" value="datarace_free_pointer" />
               </node>
               <node concept="Xl_RD" id="5LJ9ZBllB7s" role="37wK5m">
                 <property role="Xl_RC" value="test2" />
@@ -622,40 +562,176 @@
             <ref role="3cqZAo" node="5LJ9ZBllB7m" resolve="results" />
           </node>
         </node>
-        <node concept="3SKdUt" id="5LJ9ZBllB7A" role="3cqZAp">
-          <node concept="3SKWN0" id="5LJ9ZBllB7B" role="3SKWNk">
-            <node concept="3cpWs8" id="5LJ9ZBllB7C" role="3SKWNf">
-              <node concept="3cpWsn" id="5LJ9ZBllB7D" role="3cpWs9">
-                <property role="TrG5h" value="res" />
-                <node concept="3uibUv" id="5LJ9ZBllB7E" role="1tU5fm">
-                  <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
-                </node>
-                <node concept="2YIFZM" id="5LJ9ZBllB7F" role="33vP2m">
-                  <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
-                  <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
-                  <node concept="37vLTw" id="5LJ9ZBllB7G" role="37wK5m">
-                    <ref role="3cqZAo" node="5LJ9ZBllB7m" resolve="results" />
-                  </node>
-                  <node concept="Xl_RD" id="5LJ9ZBllB7H" role="37wK5m">
-                    <property role="Xl_RC" value="" />
-                  </node>
-                </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="5LJ9ZBlsYD1">
+    <property role="TrG5h" value="datarace_free_struct_tests" />
+    <node concept="1LZb2c" id="5LJ9ZBlsYD2" role="1SL9yI">
+      <property role="TrG5h" value="test1" />
+      <node concept="3cqZAl" id="5LJ9ZBlsYD3" role="3clF45" />
+      <node concept="3clFbS" id="5LJ9ZBlsYD4" role="3clF47">
+        <node concept="3cpWs8" id="5LJ9ZBlsYD5" role="3cqZAp">
+          <node concept="3cpWsn" id="5LJ9ZBlsYD6" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5LJ9ZBlsYD7" role="1tU5fm" />
+            <node concept="BaHAS" id="5LJ9ZBlsYD8" role="33vP2m">
+              <property role="BaBD8" value="ad" />
+              <property role="BaHAW" value="test.analysis.cbmc.concurrency.testcode.datarace_free" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5LJ9ZBlsYD9" role="3cqZAp">
+          <node concept="3cpWsn" id="5LJ9ZBlsYDa" role="3cpWs9">
+            <property role="TrG5h" value="results" />
+            <node concept="_YKpA" id="5LJ9ZBlsYDb" role="1tU5fm">
+              <node concept="3uibUv" id="5LJ9ZBlsYDc" role="_ZDj9">
+                <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+              </node>
+            </node>
+            <node concept="NRdvd" id="5LJ9ZBlsYDd" role="33vP2m">
+              <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+              <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
+              <node concept="37vLTw" id="5LJ9ZBlsYDe" role="37wK5m">
+                <ref role="3cqZAo" node="5LJ9ZBlsYD6" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="5LJ9ZBlsYDf" role="37wK5m">
+                <property role="Xl_RC" value="datarace_free" />
+              </node>
+              <node concept="Xl_RD" id="5LJ9ZBlsYDg" role="37wK5m">
+                <property role="Xl_RC" value="test1" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="5LJ9ZBllB7I" role="3cqZAp">
-          <node concept="3SKWN0" id="5LJ9ZBllB7J" role="3SKWNk">
-            <node concept="3vwNmj" id="5LJ9ZBllB7K" role="3SKWNf">
-              <node concept="2OqwBi" id="5LJ9ZBllB7L" role="3vwVQn">
-                <node concept="3cpWsa" id="5LJ9ZBllB7M" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5LJ9ZBllB7D" resolve="res" />
+        <node concept="3clFbH" id="5LJ9ZBlsYDh" role="3cqZAp" />
+        <node concept="3cpWs8" id="5LJ9ZBlsYDi" role="3cqZAp">
+          <node concept="3cpWsn" id="5LJ9ZBlsYDj" role="3cpWs9">
+            <property role="TrG5h" value="res1" />
+            <node concept="3uibUv" id="5LJ9ZBlsYDk" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="5LJ9ZBlsYDl" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <node concept="37vLTw" id="5LJ9ZBlsYDm" role="37wK5m">
+                <ref role="3cqZAo" node="5LJ9ZBlsYDa" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="5LJ9ZBlsYDn" role="37wK5m">
+                <property role="Xl_RC" value="Assert: datarace in function writer1_1 for sharedVar: uint32 " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Hmddi" id="5LJ9ZBlsYDo" role="3cqZAp">
+          <node concept="37vLTw" id="5LJ9ZBlsYDp" role="2Hmdds">
+            <ref role="3cqZAo" node="5LJ9ZBlsYDj" resolve="res1" />
+          </node>
+        </node>
+        <node concept="3vwNmj" id="5LJ9ZBlsYDq" role="3cqZAp">
+          <node concept="2OqwBi" id="5LJ9ZBlsYDr" role="3vwVQn">
+            <node concept="3cpWsa" id="5LJ9ZBlsYDs" role="2Oq$k0">
+              <ref role="3cqZAo" node="5LJ9ZBlsYDj" resolve="res1" />
+            </node>
+            <node concept="liA8E" id="5LJ9ZBlsYDt" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5LJ9ZBlsYDu" role="3cqZAp" />
+        <node concept="3cpWs8" id="5LJ9ZBlsYDv" role="3cqZAp">
+          <node concept="3cpWsn" id="5LJ9ZBlsYDw" role="3cpWs9">
+            <property role="TrG5h" value="res2" />
+            <node concept="3uibUv" id="5LJ9ZBlsYDx" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="5LJ9ZBlsYDy" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <node concept="37vLTw" id="5LJ9ZBlsYDz" role="37wK5m">
+                <ref role="3cqZAo" node="5LJ9ZBlsYDa" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="5LJ9ZBlsYD$" role="37wK5m">
+                <property role="Xl_RC" value="Assert: datarace in function writer2_1 for sharedVar: uint32 " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Hmddi" id="5LJ9ZBlsYD_" role="3cqZAp">
+          <node concept="37vLTw" id="5LJ9ZBlsYDA" role="2Hmdds">
+            <ref role="3cqZAo" node="5LJ9ZBlsYDw" resolve="res2" />
+          </node>
+        </node>
+        <node concept="3vwNmj" id="5LJ9ZBlsYDB" role="3cqZAp">
+          <node concept="2OqwBi" id="5LJ9ZBlsYDC" role="3vwVQn">
+            <node concept="3cpWsa" id="5LJ9ZBlsYDD" role="2Oq$k0">
+              <ref role="3cqZAo" node="5LJ9ZBlsYDw" resolve="res2" />
+            </node>
+            <node concept="liA8E" id="5LJ9ZBlsYDE" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5LJ9ZBlsYDF" role="1SL9yI">
+      <property role="TrG5h" value="test2" />
+      <node concept="3cqZAl" id="5LJ9ZBlsYDG" role="3clF45" />
+      <node concept="3clFbS" id="5LJ9ZBlsYDH" role="3clF47">
+        <node concept="3cpWs8" id="5LJ9ZBlsYDI" role="3cqZAp">
+          <node concept="3cpWsn" id="5LJ9ZBlsYDJ" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5LJ9ZBlsYDK" role="1tU5fm" />
+            <node concept="BaHAS" id="5LJ9ZBlsYDL" role="33vP2m">
+              <property role="BaBD8" value="ad" />
+              <property role="BaHAW" value="test.analysis.cbmc.concurrency.testcode.datarace_free" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5LJ9ZBlsYDM" role="3cqZAp">
+          <node concept="3cpWsn" id="5LJ9ZBlsYDN" role="3cpWs9">
+            <property role="TrG5h" value="results" />
+            <node concept="_YKpA" id="5LJ9ZBlsYDO" role="1tU5fm">
+              <node concept="3uibUv" id="5LJ9ZBlsYDP" role="_ZDj9">
+                <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+              </node>
+            </node>
+            <node concept="NRdvd" id="5LJ9ZBlsYDQ" role="33vP2m">
+              <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
+              <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+              <node concept="37vLTw" id="5LJ9ZBlsYDR" role="37wK5m">
+                <ref role="3cqZAo" node="5LJ9ZBlsYDJ" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="5LJ9ZBlsYDS" role="37wK5m">
+                <property role="Xl_RC" value="datarace_free" />
+              </node>
+              <node concept="Xl_RD" id="5LJ9ZBlsYDT" role="37wK5m">
+                <property role="Xl_RC" value="test2" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5LJ9ZBlsYDU" role="3cqZAp" />
+        <node concept="2Gpval" id="5LJ9ZBlsYDV" role="3cqZAp">
+          <node concept="2GrKxI" id="5LJ9ZBlsYDW" role="2Gsz3X">
+            <property role="TrG5h" value="res" />
+          </node>
+          <node concept="3clFbS" id="5LJ9ZBlsYDX" role="2LFqv$">
+            <node concept="3vwNmj" id="5LJ9ZBlsYDY" role="3cqZAp">
+              <node concept="2OqwBi" id="5LJ9ZBlsYDZ" role="3vwVQn">
+                <node concept="2GrUjf" id="5LJ9ZBlsYE0" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="5LJ9ZBlsYDW" resolve="res" />
                 </node>
-                <node concept="liA8E" id="5LJ9ZBllB7N" role="2OqNvi">
+                <node concept="liA8E" id="5LJ9ZBlsYE1" role="2OqNvi">
                   <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="37vLTw" id="5LJ9ZBlsYE2" role="2GsD0m">
+            <ref role="3cqZAo" node="5LJ9ZBlsYDN" resolve="results" />
           </node>
         </node>
       </node>
