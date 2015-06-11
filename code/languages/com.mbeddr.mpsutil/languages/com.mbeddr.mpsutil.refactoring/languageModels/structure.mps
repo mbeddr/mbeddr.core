@@ -179,5 +179,10 @@
       <ref role="20lvS9" to="tpc2:59ZEGVP3g_u" resolve="ConceptEditorHintDeclaration" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3e2grRPHlIu">
+    <property role="TrG5h" value="ProjectTreeNodeChooser" />
+    <property role="34LRSv" value="project tree node" />
+    <ref role="1TJDcQ" node="6xlxoSXdwNy" resolve="NodeChooser" />
+  </node>
 </model>
 
