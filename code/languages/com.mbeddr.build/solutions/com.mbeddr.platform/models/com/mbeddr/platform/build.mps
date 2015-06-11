@@ -1667,6 +1667,12 @@
               <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
             </node>
           </node>
+          <node concept="1SiIV0" id="35bnz87rMyc" role="3bR37C">
+            <node concept="3bR9La" id="35bnz87rMyd" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="2Nt6prolOb5" resolve="com.mbeddr.mpsutil.targetchooser" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="5esS0MDHY5E" role="3bR37C">
           <node concept="1Busua" id="5esS0MDHY5F" role="1SiIV1">
@@ -1699,6 +1705,9 @@
         </node>
         <node concept="1E0d5M" id="tZiUABOeue" role="1E1XAP">
           <ref role="1E0d5P" node="5IpIYYkrzsE" resolve="com.mbeddr.mpsutil.refactoring.rt" />
+        </node>
+        <node concept="1E0d5M" id="35bnz87rMyb" role="1E1XAP">
+          <ref role="1E0d5P" node="2Nt6prolOb5" resolve="com.mbeddr.mpsutil.targetchooser" />
         </node>
       </node>
       <node concept="1E1JtA" id="5IpIYYkrzsE" role="2G$12L">
