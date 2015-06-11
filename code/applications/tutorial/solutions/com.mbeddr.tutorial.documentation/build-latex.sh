@@ -14,8 +14,8 @@ cp -R images source_gen/com/mbeddr/tutorial/documentation/ug/_main
 echo ===== Running Latex
 pushd .
 cd source_gen/com/mbeddr/tutorial/documentation/ug/_main
-pdflatex -interaction nonstopmode UserGuideExport.tex
-pdflatex -interaction nonstopmode UserGuideExport.tex
+xelatex -interaction nonstopmode UserGuideExport.tex
+xelatex -interaction nonstopmode UserGuideExport.tex
 open UserGuideExport.pdf
 popd
 
