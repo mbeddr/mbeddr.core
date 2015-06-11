@@ -7579,7 +7579,7 @@
                                       <ref role="3cqZAo" node="7t5t4TspDeN" resolve="source" />
                                     </node>
                                     <node concept="Xl_RD" id="2prZ1BKYtFG" role="2MkJ7o">
-                                      <property role="Xl_RC" value="IN/INOUT argument expectes initialized value at this point!" />
+                                      <property role="Xl_RC" value="IN/INOUT argument expects initialized value at this point!" />
                                     </node>
                                   </node>
                                 </node>
