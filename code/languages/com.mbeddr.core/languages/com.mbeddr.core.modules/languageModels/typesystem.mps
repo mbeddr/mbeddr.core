@@ -139,7 +139,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -7566,7 +7566,7 @@
                                       <ref role="3cqZAo" node="7t5t4TspDeN" resolve="source" />
                                     </node>
                                     <node concept="Xl_RD" id="2prZ1BKYtFG" role="2MkJ7o">
-                                      <property role="Xl_RC" value="IN/INOUT argument expectes initialized value at this point!" />
+                                      <property role="Xl_RC" value="IN/INOUT argument expects initialized value at this point!" />
                                     </node>
                                   </node>
                                 </node>
