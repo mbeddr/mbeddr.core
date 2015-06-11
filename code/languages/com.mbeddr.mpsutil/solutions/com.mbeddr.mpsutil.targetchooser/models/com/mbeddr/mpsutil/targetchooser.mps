@@ -57,6 +57,9 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1177326519037" name="jetbrains.mps.baseLanguage.structure.CommentedStatementsBlock" flags="nn" index="u8gfJ">
+        <child id="1177326540772" name="statement" index="u8lrQ" />
+      </concept>
       <concept id="1224573963862" name="jetbrains.mps.baseLanguage.structure.EnumValuesExpression" flags="nn" index="uiWXb">
         <reference id="1224573974191" name="enumClass" index="uiZuM" />
       </concept>
@@ -1825,136 +1828,144 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="2Nt6pro7irF" role="3cqZAp">
-          <node concept="3fqX7Q" id="2Nt6pro7irG" role="3clFbw">
-            <node concept="2YIFZM" id="2Nt6pro7iwV" role="3fr31v">
-              <ref role="1Pybhc" to="hfuk:7yGn3z4MRqM" resolve="IMakeService.INSTANCE" />
-              <ref role="37wK5l" to="hfuk:2eO7$PQ1ZfE" resolve="isSessionActive" />
-            </node>
+        <node concept="3clFbH" id="2Nt6prokWKL" role="3cqZAp" />
+        <node concept="3SKdUt" id="2Nt6prol5KR" role="3cqZAp">
+          <node concept="3SKdUq" id="2Nt6prol6G3" role="3SKWNk">
+            <property role="3SKdUp" value="Transient models are not allowed as a target" />
           </node>
-          <node concept="9aQIb" id="2Nt6pro7is8" role="9aQIa">
-            <node concept="3clFbS" id="2Nt6pro7is9" role="9aQI4">
-              <node concept="3clFbH" id="2Nt6pro8fpV" role="3cqZAp" />
-              <node concept="3SKdUt" id="2Nt6pro7isM" role="3cqZAp">
-                <node concept="3SKdUq" id="2Nt6pro7isL" role="3SKWNk">
-                  <property role="3SKdUp" value="postpone the update until the make session ends" />
-                </node>
+        </node>
+        <node concept="u8gfJ" id="2Nt6prol1EJ" role="3cqZAp">
+          <node concept="3clFbJ" id="2Nt6pro7irF" role="u8lrQ">
+            <node concept="3fqX7Q" id="2Nt6pro7irG" role="3clFbw">
+              <node concept="2YIFZM" id="2Nt6pro7iwV" role="3fr31v">
+                <ref role="1Pybhc" to="hfuk:7yGn3z4MRqM" resolve="IMakeService.INSTANCE" />
+                <ref role="37wK5l" to="hfuk:2eO7$PQ1ZfE" resolve="isSessionActive" />
               </node>
-              <node concept="3clFbJ" id="2Nt6pro7isa" role="3cqZAp">
-                <node concept="2OqwBi" id="2Nt6pro8q5P" role="3clFbw">
-                  <node concept="liA8E" id="2Nt6pro8q5Q" role="2OqNvi">
-                    <ref role="37wK5l" to="vft3:~AtomicReference.compareAndSet(java.lang.Object,java.lang.Object):boolean" resolve="compareAndSet" />
-                    <node concept="10Nm6u" id="2Nt6pro7isc" role="37wK5m" />
-                    <node concept="2ShNRf" id="2Nt6pro7isd" role="37wK5m">
-                      <node concept="YeOm9" id="2Nt6pro7ise" role="2ShVmc">
-                        <node concept="1Y3b0j" id="2Nt6pro7isf" role="YeSDq">
-                          <property role="2bfB8j" value="true" />
-                          <property role="1sVAO0" value="false" />
-                          <property role="1EXbeo" value="false" />
-                          <ref role="1Y3XeK" to="hb0s:~IMakeNotificationListener$Stub" resolve="IMakeNotificationListener.Stub" />
-                          <ref role="37wK5l" to="hb0s:~IMakeNotificationListener$Stub.&lt;init&gt;()" resolve="IMakeNotificationListener.Stub" />
-                          <node concept="3Tm1VV" id="2Nt6pro7isg" role="1B3o_S" />
-                          <node concept="3clFb_" id="2Nt6pro7ish" role="jymVt">
-                            <property role="TrG5h" value="sessionClosed" />
-                            <property role="DiZV1" value="false" />
-                            <property role="od$2w" value="false" />
-                            <node concept="2AHcQZ" id="2Nt6pro7isi" role="2AJF6D">
-                              <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
-                            </node>
-                            <node concept="37vLTG" id="2Nt6pro7isj" role="3clF46">
-                              <property role="TrG5h" value="notification" />
-                              <property role="3TUv4t" value="false" />
-                              <node concept="3uibUv" id="2Nt6pro7isk" role="1tU5fm">
-                                <ref role="3uigEE" to="hfuk:7lTD6YZtg3z" resolve="MakeNotification" />
+            </node>
+            <node concept="9aQIb" id="2Nt6pro7is8" role="9aQIa">
+              <node concept="3clFbS" id="2Nt6pro7is9" role="9aQI4">
+                <node concept="3clFbH" id="2Nt6pro8fpV" role="3cqZAp" />
+                <node concept="3SKdUt" id="2Nt6pro7isM" role="3cqZAp">
+                  <node concept="3SKdUq" id="2Nt6pro7isL" role="3SKWNk">
+                    <property role="3SKdUp" value="postpone the update until the make session ends" />
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="2Nt6pro7isa" role="3cqZAp">
+                  <node concept="2OqwBi" id="2Nt6pro8q5P" role="3clFbw">
+                    <node concept="liA8E" id="2Nt6pro8q5Q" role="2OqNvi">
+                      <ref role="37wK5l" to="vft3:~AtomicReference.compareAndSet(java.lang.Object,java.lang.Object):boolean" resolve="compareAndSet" />
+                      <node concept="10Nm6u" id="2Nt6pro7isc" role="37wK5m" />
+                      <node concept="2ShNRf" id="2Nt6pro7isd" role="37wK5m">
+                        <node concept="YeOm9" id="2Nt6pro7ise" role="2ShVmc">
+                          <node concept="1Y3b0j" id="2Nt6pro7isf" role="YeSDq">
+                            <property role="2bfB8j" value="true" />
+                            <property role="1sVAO0" value="false" />
+                            <property role="1EXbeo" value="false" />
+                            <ref role="1Y3XeK" to="hb0s:~IMakeNotificationListener$Stub" resolve="IMakeNotificationListener.Stub" />
+                            <ref role="37wK5l" to="hb0s:~IMakeNotificationListener$Stub.&lt;init&gt;()" resolve="IMakeNotificationListener.Stub" />
+                            <node concept="3Tm1VV" id="2Nt6pro7isg" role="1B3o_S" />
+                            <node concept="3clFb_" id="2Nt6pro7ish" role="jymVt">
+                              <property role="TrG5h" value="sessionClosed" />
+                              <property role="DiZV1" value="false" />
+                              <property role="od$2w" value="false" />
+                              <node concept="2AHcQZ" id="2Nt6pro7isi" role="2AJF6D">
+                                <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
                               </node>
-                            </node>
-                            <node concept="3clFbS" id="2Nt6pro7isl" role="3clF47">
-                              <node concept="3clFbF" id="2Nt6pro7ism" role="3cqZAp">
-                                <node concept="1rXfSq" id="2Nt6pro7isn" role="3clFbG">
-                                  <ref role="37wK5l" to="mlq0:~MPSTree.rebuildLater():void" resolve="rebuildLater" />
+                              <node concept="37vLTG" id="2Nt6pro7isj" role="3clF46">
+                                <property role="TrG5h" value="notification" />
+                                <property role="3TUv4t" value="false" />
+                                <node concept="3uibUv" id="2Nt6pro7isk" role="1tU5fm">
+                                  <ref role="3uigEE" to="hfuk:7lTD6YZtg3z" resolve="MakeNotification" />
                                 </node>
                               </node>
-                              <node concept="3clFbF" id="2Nt6pro7iso" role="3cqZAp">
-                                <node concept="2OqwBi" id="2Nt6pro7isp" role="3clFbG">
-                                  <node concept="2YIFZM" id="2Nt6pro7ixM" role="2Oq$k0">
-                                    <ref role="1Pybhc" to="hb0s:~IMakeService$INSTANCE" resolve="IMakeService.INSTANCE" />
-                                    <ref role="37wK5l" to="hb0s:~IMakeService$INSTANCE.get():jetbrains.mps.make.IMakeService" resolve="get" />
-                                  </node>
-                                  <node concept="liA8E" id="2Nt6pro7isr" role="2OqNvi">
-                                    <ref role="37wK5l" to="hb0s:~IMakeService.removeListener(jetbrains.mps.make.IMakeNotificationListener):void" resolve="removeListener" />
-                                    <node concept="Xjq3P" id="2Nt6pro7iss" role="37wK5m" />
+                              <node concept="3clFbS" id="2Nt6pro7isl" role="3clF47">
+                                <node concept="3clFbF" id="2Nt6pro7ism" role="3cqZAp">
+                                  <node concept="1rXfSq" id="2Nt6pro7isn" role="3clFbG">
+                                    <ref role="37wK5l" to="mlq0:~MPSTree.rebuildLater():void" resolve="rebuildLater" />
                                   </node>
                                 </node>
-                              </node>
-                              <node concept="3clFbF" id="2Nt6pro7ist" role="3cqZAp">
-                                <node concept="2OqwBi" id="2Nt6pro8rcC" role="3clFbG">
-                                  <node concept="liA8E" id="2Nt6pro8rcD" role="2OqNvi">
-                                    <ref role="37wK5l" to="vft3:~AtomicReference.set(java.lang.Object):void" resolve="set" />
-                                    <node concept="10Nm6u" id="2Nt6pro7isv" role="37wK5m" />
+                                <node concept="3clFbF" id="2Nt6pro7iso" role="3cqZAp">
+                                  <node concept="2OqwBi" id="2Nt6pro7isp" role="3clFbG">
+                                    <node concept="2YIFZM" id="2Nt6pro7ixM" role="2Oq$k0">
+                                      <ref role="1Pybhc" to="hb0s:~IMakeService$INSTANCE" resolve="IMakeService.INSTANCE" />
+                                      <ref role="37wK5l" to="hb0s:~IMakeService$INSTANCE.get():jetbrains.mps.make.IMakeService" resolve="get" />
+                                    </node>
+                                    <node concept="liA8E" id="2Nt6pro7isr" role="2OqNvi">
+                                      <ref role="37wK5l" to="hb0s:~IMakeService.removeListener(jetbrains.mps.make.IMakeNotificationListener):void" resolve="removeListener" />
+                                      <node concept="Xjq3P" id="2Nt6pro7iss" role="37wK5m" />
+                                    </node>
                                   </node>
-                                  <node concept="2OqwBi" id="2Nt6pro8pyk" role="2Oq$k0">
-                                    <node concept="1eOMI4" id="2Nt6pro8pyl" role="2Oq$k0">
-                                      <node concept="10QFUN" id="2Nt6pro8pym" role="1eOMHV">
-                                        <node concept="3uibUv" id="2Nt6pro8pyn" role="10QFUM">
-                                          <ref role="3uigEE" to="eqee:~ProjectTree" resolve="ProjectTree" />
-                                        </node>
-                                        <node concept="Xjq3P" id="2Nt6pro8wn7" role="10QFUP">
-                                          <ref role="1HBi2w" node="8mo7j23YOR" resolve="TargetChooser_ProjectTree" />
+                                </node>
+                                <node concept="3clFbF" id="2Nt6pro7ist" role="3cqZAp">
+                                  <node concept="2OqwBi" id="2Nt6pro8rcC" role="3clFbG">
+                                    <node concept="liA8E" id="2Nt6pro8rcD" role="2OqNvi">
+                                      <ref role="37wK5l" to="vft3:~AtomicReference.set(java.lang.Object):void" resolve="set" />
+                                      <node concept="10Nm6u" id="2Nt6pro7isv" role="37wK5m" />
+                                    </node>
+                                    <node concept="2OqwBi" id="2Nt6pro8pyk" role="2Oq$k0">
+                                      <node concept="1eOMI4" id="2Nt6pro8pyl" role="2Oq$k0">
+                                        <node concept="10QFUN" id="2Nt6pro8pym" role="1eOMHV">
+                                          <node concept="3uibUv" id="2Nt6pro8pyn" role="10QFUM">
+                                            <ref role="3uigEE" to="eqee:~ProjectTree" resolve="ProjectTree" />
+                                          </node>
+                                          <node concept="Xjq3P" id="2Nt6pro8wn7" role="10QFUP">
+                                            <ref role="1HBi2w" node="8mo7j23YOR" resolve="TargetChooser_ProjectTree" />
+                                          </node>
                                         </node>
                                       </node>
-                                    </node>
-                                    <node concept="1PnCL0" id="2Nt6pro8pyp" role="2OqNvi">
-                                      <ref role="2Oxat5" to="eqee:~ProjectTree.myMakeNotificationListener" resolve="myMakeNotificationListener" />
+                                      <node concept="1PnCL0" id="2Nt6pro8pyp" role="2OqNvi">
+                                        <ref role="2Oxat5" to="eqee:~ProjectTree.myMakeNotificationListener" resolve="myMakeNotificationListener" />
+                                      </node>
                                     </node>
                                   </node>
                                 </node>
                               </node>
+                              <node concept="3Tm1VV" id="2Nt6pro7isw" role="1B3o_S" />
+                              <node concept="3cqZAl" id="2Nt6pro7isx" role="3clF45" />
                             </node>
-                            <node concept="3Tm1VV" id="2Nt6pro7isw" role="1B3o_S" />
-                            <node concept="3cqZAl" id="2Nt6pro7isx" role="3clF45" />
                           </node>
                         </node>
                       </node>
                     </node>
-                  </node>
-                  <node concept="2OqwBi" id="2Nt6pro8v6H" role="2Oq$k0">
-                    <node concept="1eOMI4" id="2Nt6pro8v6I" role="2Oq$k0">
-                      <node concept="10QFUN" id="2Nt6pro8v6J" role="1eOMHV">
-                        <node concept="3uibUv" id="2Nt6pro8v6K" role="10QFUM">
-                          <ref role="3uigEE" to="eqee:~ProjectTree" resolve="ProjectTree" />
-                        </node>
-                        <node concept="Xjq3P" id="2Nt6pro8v6L" role="10QFUP" />
-                      </node>
-                    </node>
-                    <node concept="1PnCL0" id="2Nt6pro8v6M" role="2OqNvi">
-                      <ref role="2Oxat5" to="eqee:~ProjectTree.myMakeNotificationListener" resolve="myMakeNotificationListener" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbS" id="2Nt6pro7isz" role="3clFbx">
-                  <node concept="3clFbF" id="2Nt6pro7is$" role="3cqZAp">
-                    <node concept="2OqwBi" id="2Nt6pro7is_" role="3clFbG">
-                      <node concept="2YIFZM" id="2Nt6pro7iyD" role="2Oq$k0">
-                        <ref role="1Pybhc" to="hb0s:~IMakeService$INSTANCE" resolve="IMakeService.INSTANCE" />
-                        <ref role="37wK5l" to="hb0s:~IMakeService$INSTANCE.get():jetbrains.mps.make.IMakeService" resolve="get" />
-                      </node>
-                      <node concept="liA8E" id="2Nt6pro7isB" role="2OqNvi">
-                        <ref role="37wK5l" to="hb0s:~IMakeService.addListener(jetbrains.mps.make.IMakeNotificationListener):void" resolve="addListener" />
-                        <node concept="2OqwBi" id="2Nt6pro8pTo" role="37wK5m">
-                          <node concept="liA8E" id="2Nt6pro8pTp" role="2OqNvi">
-                            <ref role="37wK5l" to="vft3:~AtomicReference.get():java.lang.Object" resolve="get" />
+                    <node concept="2OqwBi" id="2Nt6pro8v6H" role="2Oq$k0">
+                      <node concept="1eOMI4" id="2Nt6pro8v6I" role="2Oq$k0">
+                        <node concept="10QFUN" id="2Nt6pro8v6J" role="1eOMHV">
+                          <node concept="3uibUv" id="2Nt6pro8v6K" role="10QFUM">
+                            <ref role="3uigEE" to="eqee:~ProjectTree" resolve="ProjectTree" />
                           </node>
-                          <node concept="2OqwBi" id="2Nt6pro8vWM" role="2Oq$k0">
-                            <node concept="1eOMI4" id="2Nt6pro8vWN" role="2Oq$k0">
-                              <node concept="10QFUN" id="2Nt6pro8vWO" role="1eOMHV">
-                                <node concept="3uibUv" id="2Nt6pro8vWP" role="10QFUM">
-                                  <ref role="3uigEE" to="eqee:~ProjectTree" resolve="ProjectTree" />
+                          <node concept="Xjq3P" id="2Nt6pro8v6L" role="10QFUP" />
+                        </node>
+                      </node>
+                      <node concept="1PnCL0" id="2Nt6pro8v6M" role="2OqNvi">
+                        <ref role="2Oxat5" to="eqee:~ProjectTree.myMakeNotificationListener" resolve="myMakeNotificationListener" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="2Nt6pro7isz" role="3clFbx">
+                    <node concept="3clFbF" id="2Nt6pro7is$" role="3cqZAp">
+                      <node concept="2OqwBi" id="2Nt6pro7is_" role="3clFbG">
+                        <node concept="2YIFZM" id="2Nt6pro7iyD" role="2Oq$k0">
+                          <ref role="1Pybhc" to="hb0s:~IMakeService$INSTANCE" resolve="IMakeService.INSTANCE" />
+                          <ref role="37wK5l" to="hb0s:~IMakeService$INSTANCE.get():jetbrains.mps.make.IMakeService" resolve="get" />
+                        </node>
+                        <node concept="liA8E" id="2Nt6pro7isB" role="2OqNvi">
+                          <ref role="37wK5l" to="hb0s:~IMakeService.addListener(jetbrains.mps.make.IMakeNotificationListener):void" resolve="addListener" />
+                          <node concept="2OqwBi" id="2Nt6pro8pTo" role="37wK5m">
+                            <node concept="liA8E" id="2Nt6pro8pTp" role="2OqNvi">
+                              <ref role="37wK5l" to="vft3:~AtomicReference.get():java.lang.Object" resolve="get" />
+                            </node>
+                            <node concept="2OqwBi" id="2Nt6pro8vWM" role="2Oq$k0">
+                              <node concept="1eOMI4" id="2Nt6pro8vWN" role="2Oq$k0">
+                                <node concept="10QFUN" id="2Nt6pro8vWO" role="1eOMHV">
+                                  <node concept="3uibUv" id="2Nt6pro8vWP" role="10QFUM">
+                                    <ref role="3uigEE" to="eqee:~ProjectTree" resolve="ProjectTree" />
+                                  </node>
+                                  <node concept="Xjq3P" id="2Nt6pro8vWQ" role="10QFUP" />
                                 </node>
-                                <node concept="Xjq3P" id="2Nt6pro8vWQ" role="10QFUP" />
                               </node>
-                            </node>
-                            <node concept="1PnCL0" id="2Nt6pro8vWR" role="2OqNvi">
-                              <ref role="2Oxat5" to="eqee:~ProjectTree.myMakeNotificationListener" resolve="myMakeNotificationListener" />
+                              <node concept="1PnCL0" id="2Nt6pro8vWR" role="2OqNvi">
+                                <ref role="2Oxat5" to="eqee:~ProjectTree.myMakeNotificationListener" resolve="myMakeNotificationListener" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -1964,68 +1975,68 @@
                 </node>
               </node>
             </node>
-          </node>
-          <node concept="3clFbS" id="2Nt6pro7irJ" role="3clFbx">
-            <node concept="3cpWs8" id="2Nt6pro7irL" role="3cqZAp">
-              <node concept="3cpWsn" id="2Nt6pro7irK" role="3cpWs9">
-                <property role="3TUv4t" value="true" />
-                <property role="TrG5h" value="tmc" />
-                <node concept="3uibUv" id="2Nt6pro7irM" role="1tU5fm">
-                  <ref role="3uigEE" to="y5px:~TransientModelsProvider" resolve="TransientModelsProvider" />
-                </node>
-                <node concept="2OqwBi" id="2Nt6pro7OSD" role="33vP2m">
-                  <node concept="37vLTw" id="2Nt6pro7OSC" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2Nt6pro7ngi" resolve="myProject" />
+            <node concept="3clFbS" id="2Nt6pro7irJ" role="3clFbx">
+              <node concept="3cpWs8" id="2Nt6pro7irL" role="3cqZAp">
+                <node concept="3cpWsn" id="2Nt6pro7irK" role="3cpWs9">
+                  <property role="3TUv4t" value="true" />
+                  <property role="TrG5h" value="tmc" />
+                  <node concept="3uibUv" id="2Nt6pro7irM" role="1tU5fm">
+                    <ref role="3uigEE" to="y5px:~TransientModelsProvider" resolve="TransientModelsProvider" />
                   </node>
-                  <node concept="liA8E" id="2Nt6pro7OSE" role="2OqNvi">
-                    <ref role="37wK5l" to="vsqj:~Project.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
-                    <node concept="3VsKOn" id="2Nt6pro7irP" role="37wK5m">
-                      <ref role="3VsUkX" to="y5px:~TransientModelsProvider" resolve="TransientModelsProvider" />
+                  <node concept="2OqwBi" id="2Nt6pro7OSD" role="33vP2m">
+                    <node concept="37vLTw" id="2Nt6pro7OSC" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2Nt6pro7ngi" resolve="myProject" />
+                    </node>
+                    <node concept="liA8E" id="2Nt6pro7OSE" role="2OqNvi">
+                      <ref role="37wK5l" to="vsqj:~Project.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
+                      <node concept="3VsKOn" id="2Nt6pro7irP" role="37wK5m">
+                        <ref role="3VsUkX" to="y5px:~TransientModelsProvider" resolve="TransientModelsProvider" />
+                      </node>
                     </node>
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="3clFbJ" id="2Nt6pro7irQ" role="3cqZAp">
-              <node concept="3y3z36" id="2Nt6pro7irR" role="3clFbw">
-                <node concept="37vLTw" id="2Nt6pro7irS" role="3uHU7B">
-                  <ref role="3cqZAo" node="2Nt6pro7irK" resolve="tmc" />
+              <node concept="3clFbJ" id="2Nt6pro7irQ" role="3cqZAp">
+                <node concept="3y3z36" id="2Nt6pro7irR" role="3clFbw">
+                  <node concept="37vLTw" id="2Nt6pro7irS" role="3uHU7B">
+                    <ref role="3cqZAo" node="2Nt6pro7irK" resolve="tmc" />
+                  </node>
+                  <node concept="10Nm6u" id="2Nt6pro7irT" role="3uHU7w" />
                 </node>
-                <node concept="10Nm6u" id="2Nt6pro7irT" role="3uHU7w" />
-              </node>
-              <node concept="3clFbS" id="2Nt6pro7irV" role="3clFbx">
-                <node concept="1DcWWT" id="2Nt6pro7irW" role="3cqZAp">
-                  <node concept="2OqwBi" id="2Nt6pro7izT" role="1DdaDG">
-                    <node concept="37vLTw" id="2Nt6pro7izS" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2Nt6pro7irK" resolve="tmc" />
+                <node concept="3clFbS" id="2Nt6pro7irV" role="3clFbx">
+                  <node concept="1DcWWT" id="2Nt6pro7irW" role="3cqZAp">
+                    <node concept="2OqwBi" id="2Nt6pro7izT" role="1DdaDG">
+                      <node concept="37vLTw" id="2Nt6pro7izS" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2Nt6pro7irK" resolve="tmc" />
+                      </node>
+                      <node concept="liA8E" id="2Nt6pro7izU" role="2OqNvi">
+                        <ref role="37wK5l" to="y5px:~TransientModelsProvider.getModules():java.lang.Iterable" resolve="getModules" />
+                      </node>
                     </node>
-                    <node concept="liA8E" id="2Nt6pro7izU" role="2OqNvi">
-                      <ref role="37wK5l" to="y5px:~TransientModelsProvider.getModules():java.lang.Iterable" resolve="getModules" />
+                    <node concept="3cpWsn" id="2Nt6pro7is4" role="1Duv9x">
+                      <property role="3TUv4t" value="false" />
+                      <property role="TrG5h" value="module" />
+                      <node concept="3uibUv" id="2Nt6pro7is6" role="1tU5fm">
+                        <ref role="3uigEE" to="y5px:~TransientModelsModule" resolve="TransientModelsModule" />
+                      </node>
                     </node>
-                  </node>
-                  <node concept="3cpWsn" id="2Nt6pro7is4" role="1Duv9x">
-                    <property role="3TUv4t" value="false" />
-                    <property role="TrG5h" value="module" />
-                    <node concept="3uibUv" id="2Nt6pro7is6" role="1tU5fm">
-                      <ref role="3uigEE" to="y5px:~TransientModelsModule" resolve="TransientModelsModule" />
-                    </node>
-                  </node>
-                  <node concept="3clFbS" id="2Nt6pro7irY" role="2LFqv$">
-                    <node concept="3clFbF" id="2Nt6pro7irZ" role="3cqZAp">
-                      <node concept="2OqwBi" id="2Nt6pro7i$m" role="3clFbG">
-                        <node concept="37vLTw" id="2Nt6pro7i$l" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2Nt6pro7iqs" resolve="root" />
-                        </node>
-                        <node concept="liA8E" id="2Nt6pro7i$n" role="2OqNvi">
-                          <ref role="37wK5l" to="osf5:~DefaultMutableTreeNode.add(javax.swing.tree.MutableTreeNode):void" resolve="add" />
-                          <node concept="2ShNRf" id="2Nt6pro7i$o" role="37wK5m">
-                            <node concept="1pGfFk" id="2Nt6pro7i$p" role="2ShVmc">
-                              <ref role="37wK5l" to="vzc2:~TransientModelsTreeNode.&lt;init&gt;(jetbrains.mps.project.Project,jetbrains.mps.generator.TransientModelsModule)" resolve="TransientModelsTreeNode" />
-                              <node concept="37vLTw" id="2Nt6pro7is2" role="37wK5m">
-                                <ref role="3cqZAo" node="2Nt6pro7ngi" resolve="myProject" />
-                              </node>
-                              <node concept="37vLTw" id="2Nt6pro7is3" role="37wK5m">
-                                <ref role="3cqZAo" node="2Nt6pro7is4" resolve="module" />
+                    <node concept="3clFbS" id="2Nt6pro7irY" role="2LFqv$">
+                      <node concept="3clFbF" id="2Nt6pro7irZ" role="3cqZAp">
+                        <node concept="2OqwBi" id="2Nt6pro7i$m" role="3clFbG">
+                          <node concept="37vLTw" id="2Nt6pro7i$l" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2Nt6pro7iqs" resolve="root" />
+                          </node>
+                          <node concept="liA8E" id="2Nt6pro7i$n" role="2OqNvi">
+                            <ref role="37wK5l" to="osf5:~DefaultMutableTreeNode.add(javax.swing.tree.MutableTreeNode):void" resolve="add" />
+                            <node concept="2ShNRf" id="2Nt6pro7i$o" role="37wK5m">
+                              <node concept="1pGfFk" id="2Nt6pro7i$p" role="2ShVmc">
+                                <ref role="37wK5l" to="vzc2:~TransientModelsTreeNode.&lt;init&gt;(jetbrains.mps.project.Project,jetbrains.mps.generator.TransientModelsModule)" resolve="TransientModelsTreeNode" />
+                                <node concept="37vLTw" id="2Nt6pro7is2" role="37wK5m">
+                                  <ref role="3cqZAo" node="2Nt6pro7ngi" resolve="myProject" />
+                                </node>
+                                <node concept="37vLTw" id="2Nt6pro7is3" role="37wK5m">
+                                  <ref role="3cqZAo" node="2Nt6pro7is4" resolve="module" />
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -2038,6 +2049,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="2Nt6prol3D$" role="3cqZAp" />
         <node concept="3clFbF" id="2Nt6pro7isD" role="3cqZAp">
           <node concept="37vLTI" id="2Nt6pro7isE" role="3clFbG">
             <node concept="37vLTw" id="2Nt6pro7isG" role="37vLTx">
