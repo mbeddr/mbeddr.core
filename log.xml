@@ -116,10 +116,16 @@
     <priority value="INFO"/>
     <appender-ref ref="CONSOLE-INFO"/>
   </category>
-<category name="jetbrains.mps.classloading" additivity="true">
-  <priority value="TRACE"/>
-  <appender-ref ref="CONSOLE-TRACE"/>
-</category>
+  <category name="jetbrains.mps.library" additivity="true">
+    <priority value="TRACE"/>
+    <appender-ref ref="CONSOLE-TRACE"/>
+    <appender-ref ref="CONSOLE-DEBUG"/>
+  </category>
+  <category name="jetbrains.mps.classloading" additivity="true">
+	<priority value="TRACE"/>
+	<appender-ref ref="CONSOLE-TRACE"/>
+	<appender-ref ref="CONSOLE-DEBUG"/>
+  </category>
   <category name="#com.intellij" additivity="false">
       <priority value="WARN"/>
       <appender-ref ref="CONSOLE-WARN"/>

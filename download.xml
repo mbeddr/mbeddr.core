@@ -1,13 +1,14 @@
 <!--comment-->
 <project name="com.mbeddr.core download mps" default="download">
   <property name="MPS-Base-URL" value="http://download.jetbrains.com/mps/32"/> 
-  <property name="MPS-File" value="MPS-3.2.1.zip"/>
+  <property name="MPS-File" value="MPS-3.2.2.zip"/>
   <property name="MPS-Zip-Folder" value="MPS 3.2"/>
   <property name="MPS-Zip-Folder-CleandUp" value="MPS-mbeddr"/>
   <property name="MPS-Dir" value="MPS"/>
   <target name="download">
+	<delete dir="${MPS-Dir}" />
 	<mkdir dir="${MPS-Dir}"/>
-    <delete file="${MPS-Dir}/${MPS-File}"/>	
+	<delete file="${MPS-Dir}/${MPS-File}"/>	
 	<get src="${MPS-Base-URL}/${MPS-File}" dest="${MPS-Dir}" verbose="true" skipexisting="true" usetimestamp="true"/>
 	<unzip src="${MPS-Dir}/${MPS-File}" dest="${MPS-Dir}"/>
 	<move file="${MPS-Dir}/${MPS-Zip-Folder}" tofile="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}"/>

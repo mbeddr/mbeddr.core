@@ -1190,7 +1190,7 @@
     <ref role="1TJDcQ" to="vs0r:4$VRXeHdyxr" resolve="Metric" />
   </node>
   <node concept="1TIwiD" id="L2WnbQO1DI">
-    <property role="3GE5qa" value="functions" />
+    <property role="3GE5qa" value="argumentKind" />
     <property role="TrG5h" value="ArgumentKindContainer" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="L2WnbQO1I2" role="1TKVEl">
@@ -1213,7 +1213,7 @@
     </node>
   </node>
   <node concept="AxPO7" id="3_CPcn39dht">
-    <property role="3GE5qa" value="functions" />
+    <property role="3GE5qa" value="argumentKind" />
     <property role="TrG5h" value="ArgumentKind" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <ref role="Qgau1" node="3_CPcn39dwy" />
@@ -1342,6 +1342,26 @@
     </node>
     <node concept="PrWs8" id="xN636rYFQ6" role="PzmwI">
       <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="20xms4A94u9">
+    <property role="3GE5qa" value="argumentKind" />
+    <property role="TrG5h" value="ArgumentKindAnnotation" />
+    <property role="34LRSv" value="argument kind" />
+    <property role="R4oN_" value="argument kind" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyi" id="20xms4A96EY" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" node="3_CPcn39dht" resolve="ArgumentKind" />
+    </node>
+    <node concept="M6xJ_" id="20xms4A95uS" role="lGtFl">
+      <property role="Hh88m" value="argumentKind" />
+      <node concept="tn0Fv" id="20xms4A95HY" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="20xms4A95I0" role="EQaZv">
+        <ref role="trN6q" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+      </node>
     </node>
   </node>
 </model>
