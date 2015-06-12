@@ -871,12 +871,23 @@
           </node>
         </node>
         <node concept="3cpWs6" id="4GGI4_vhBa_" role="3cqZAp">
-          <node concept="2OqwBi" id="4GGI4_vhF8z" role="3cqZAk">
-            <node concept="37vLTw" id="4GGI4_vhBcp" role="2Oq$k0">
-              <ref role="3cqZAo" node="4GGI4_vh_WX" resolve="dialog" />
+          <node concept="3K4zz7" id="6yXTMcTYgMf" role="3cqZAk">
+            <node concept="10Nm6u" id="6yXTMcTYgW_" role="3K4GZi" />
+            <node concept="2OqwBi" id="6yXTMcTYcXX" role="3K4Cdx">
+              <node concept="37vLTw" id="6yXTMcTYcx7" role="2Oq$k0">
+                <ref role="3cqZAo" node="4GGI4_vh_WX" resolve="dialog" />
+              </node>
+              <node concept="liA8E" id="6yXTMcTYg$K" role="2OqNvi">
+                <ref role="37wK5l" to="810:~DialogWrapper.isOK():boolean" resolve="isOK" />
+              </node>
             </node>
-            <node concept="liA8E" id="4GGI4_vhG8a" role="2OqNvi">
-              <ref role="37wK5l" node="4GGI4_vhBth" resolve="getSelectedTarget" />
+            <node concept="2OqwBi" id="4GGI4_vhF8z" role="3K4E3e">
+              <node concept="37vLTw" id="4GGI4_vhBcp" role="2Oq$k0">
+                <ref role="3cqZAo" node="4GGI4_vh_WX" resolve="dialog" />
+              </node>
+              <node concept="liA8E" id="4GGI4_vhG8a" role="2OqNvi">
+                <ref role="37wK5l" node="4GGI4_vhBth" resolve="getSelectedTarget" />
+              </node>
             </node>
           </node>
         </node>
