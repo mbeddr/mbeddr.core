@@ -423,13 +423,9 @@
       <concept id="1174485235885" name="jetbrains.mps.baseLanguage.regexp.structure.UnaryRegexp" flags="ng" index="1OLBAW">
         <child id="1174485243418" name="regexp" index="1OLDsb" />
       </concept>
-      <concept id="1174491169200" name="jetbrains.mps.baseLanguage.regexp.structure.ParensRegexp" flags="ng" index="1P8g2x">
-        <child id="1174491174779" name="expr" index="1P8hpE" />
-      </concept>
       <concept id="1174510540317" name="jetbrains.mps.baseLanguage.regexp.structure.InlineRegexpExpression" flags="nn" index="1Qi9sc">
         <child id="1174510571016" name="regexp" index="1QigWp" />
       </concept>
-      <concept id="1174552240608" name="jetbrains.mps.baseLanguage.regexp.structure.QuestionRegexp" flags="ng" index="1SLe3L" />
       <concept id="1174555732504" name="jetbrains.mps.baseLanguage.regexp.structure.PredefinedSymbolClassRegexp" flags="ng" index="1SYyG9">
         <reference id="1174555843709" name="symbolClass" index="1SYXPG" />
       </concept>
@@ -603,18 +599,9 @@
                     <node concept="ub8z3" id="477NaqBEWtB" role="2Oq$k0" />
                     <node concept="2kpEY9" id="477NaqBEWtC" role="2OqNvi">
                       <node concept="1Qi9sc" id="477NaqBEWtD" role="1YN4dH">
-                        <node concept="1OJ37Q" id="477NaqBEWtE" role="1QigWp">
-                          <node concept="1P8g2x" id="477NaqBEWtF" role="1OLpdg">
-                            <node concept="1SLe3L" id="477NaqBEWtG" role="1P8hpE">
-                              <node concept="1OC9wW" id="477NaqBEWtH" role="1OLDsb">
-                                <property role="1OCb_u" value="-" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="1OClNT" id="477NaqBEWtJ" role="1OLqdY">
-                            <node concept="1SYyG9" id="477NaqBEWtK" role="1OLDsb">
-                              <ref role="1SYXPG" to="tpfp:h5SUwpi" resolve="\d" />
-                            </node>
+                        <node concept="1OClNT" id="477NaqBEWtJ" role="1QigWp">
+                          <node concept="1SYyG9" id="477NaqBEWtK" role="1OLDsb">
+                            <ref role="1SYXPG" to="tpfp:h5SUwpi" resolve="\d" />
                           </node>
                         </node>
                       </node>
@@ -624,28 +611,19 @@
                     <node concept="ub8z3" id="4$cbij6TmSL" role="2Oq$k0" />
                     <node concept="2kpEY9" id="4$cbij6TmSM" role="2OqNvi">
                       <node concept="1Qi9sc" id="4$cbij6TmSN" role="1YN4dH">
-                        <node concept="1OJ37Q" id="4$cbij6TmSO" role="1QigWp">
-                          <node concept="1P8g2x" id="4$cbij6TmSP" role="1OLpdg">
-                            <node concept="1SLe3L" id="4$cbij6TmSQ" role="1P8hpE">
-                              <node concept="1OC9wW" id="4$cbij6TmSR" role="1OLDsb">
-                                <property role="1OCb_u" value="-" />
-                              </node>
+                        <node concept="1OJ37Q" id="4$cbij6TmSS" role="1QigWp">
+                          <node concept="1OCmVF" id="67DSmmsdD4Z" role="1OLpdg">
+                            <node concept="1SYyG9" id="4$cbij6TmSU" role="1OLDsb">
+                              <ref role="1SYXPG" to="tpfp:h5SUwpi" resolve="\d" />
                             </node>
                           </node>
-                          <node concept="1OJ37Q" id="4$cbij6TmSS" role="1OLqdY">
-                            <node concept="1OCmVF" id="67DSmmsdD4Z" role="1OLpdg">
-                              <node concept="1SYyG9" id="4$cbij6TmSU" role="1OLDsb">
-                                <ref role="1SYXPG" to="tpfp:h5SUwpi" resolve="\d" />
-                              </node>
+                          <node concept="1OJ37Q" id="4$cbij6TmSV" role="1OLqdY">
+                            <node concept="1OC9wW" id="5yYXyc4Z4W8" role="1OLpdg">
+                              <property role="1OCb_u" value="." />
                             </node>
-                            <node concept="1OJ37Q" id="4$cbij6TmSV" role="1OLqdY">
-                              <node concept="1OC9wW" id="5yYXyc4Z4W8" role="1OLpdg">
-                                <property role="1OCb_u" value="." />
-                              </node>
-                              <node concept="1OClNT" id="67DSmmsdDqS" role="1OLqdY">
-                                <node concept="1SYyG9" id="4$cbij6TmSZ" role="1OLDsb">
-                                  <ref role="1SYXPG" to="tpfp:h5SUwpi" resolve="\d" />
-                                </node>
+                            <node concept="1OClNT" id="67DSmmsdDqS" role="1OLqdY">
+                              <node concept="1SYyG9" id="4$cbij6TmSZ" role="1OLDsb">
+                                <ref role="1SYXPG" to="tpfp:h5SUwpi" resolve="\d" />
                               </node>
                             </node>
                           </node>
