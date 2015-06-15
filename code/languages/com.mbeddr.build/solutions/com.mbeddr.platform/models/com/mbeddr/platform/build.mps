@@ -4978,6 +4978,24 @@
             <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1ZDI1WHsk5o" role="3bR37C">
+          <node concept="3bR9La" id="1ZDI1WHsk5p" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1ZDI1WHsk5q" role="3bR37C">
+          <node concept="3bR9La" id="1ZDI1WHsk5r" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1ZDI1WHsk5s" role="3bR37C">
+          <node concept="3bR9La" id="1ZDI1WHsk5t" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:2Xjt3l57hht" resolve="de.slisson.mps.reflection.runtime" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="4gGXGcLV$l$" role="3989C9">
