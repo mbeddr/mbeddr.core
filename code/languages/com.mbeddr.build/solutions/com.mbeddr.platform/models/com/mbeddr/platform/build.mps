@@ -4997,6 +4997,79 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="52ZF9D3gLhJ" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.modellisteners.runtime" />
+        <property role="3LESm3" value="7197c640-b458-406b-8636-40c7936ef8c8" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="52ZF9D3gOrG" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="52ZF9D3gPh6" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="52ZF9D3gPNG" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.modellisteners.runtime" />
+              <node concept="2Ry0Ak" id="52ZF9D3gQSB" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.modellisteners.runtime.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="52ZF9D3gQSJ" role="3bR37C">
+          <node concept="3bR9La" id="52ZF9D3gQSK" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="52ZF9D3gUAx" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.modellisteners" />
+        <property role="3LESm3" value="309e0004-4976-4416-b947-ec02ae4ecef2" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="52ZF9D3gXLq" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="52ZF9D3gYkc" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="52ZF9D3gYQX" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.modellisteners" />
+              <node concept="2Ry0Ak" id="52ZF9D3gZWe" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.modellisteners.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="52ZF9D3h0uQ" role="3bR37C">
+          <node concept="3bR9La" id="52ZF9D3h0uR" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1E0d5M" id="52ZF9D3h0uS" role="1E1XAP">
+          <ref role="1E0d5P" node="52ZF9D3gLhJ" resolve="com.mbeddr.mpsutil.modellisteners.runtime" />
+        </node>
+        <node concept="1SiIV0" id="52ZF9D3h0uT" role="3bR37C">
+          <node concept="1Busua" id="52ZF9D3h0uU" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="52ZF9D3h0uV" role="1TViLv">
+          <property role="TrG5h" value="com.mbeddr.mpsutil.modellisteners#5818559022136673503" />
+          <property role="3LESm3" value="37132e31-f64c-4798-8f65-d49942f5121d" />
+          <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="52ZF9D3h0uW" role="3bR37C">
+            <node concept="3bR9La" id="52ZF9D3h0uX" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="52ZF9D3gLhJ" resolve="com.mbeddr.mpsutil.modellisteners.runtime" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="52ZF9D3h0uY" role="3bR37C">
+            <node concept="3bR9La" id="52ZF9D3h0uZ" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2G$12M" id="4gGXGcLV$l$" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.mpsutil.multilingual" />
