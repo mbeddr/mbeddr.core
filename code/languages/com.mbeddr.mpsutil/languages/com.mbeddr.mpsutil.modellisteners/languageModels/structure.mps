@@ -133,5 +133,15 @@
     <property role="34LRSv" value="reference" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
+  <node concept="1TIwiD" id="5iW7uqbMDkJ">
+    <property role="TrG5h" value="Parameter_target" />
+    <property role="34LRSv" value="target" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="5iW7uqbMEDa">
+    <property role="TrG5h" value="Parameter_referenceRole" />
+    <property role="34LRSv" value="role" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
 </model>
 

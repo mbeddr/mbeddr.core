@@ -13,6 +13,7 @@
     <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wlk" ref="r:aa2e9fa0-d890-401e-b521-21670da212d1(com.mbeddr.mpsutil.modellisteners.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
@@ -780,10 +781,18 @@
                       <property role="TrG5h" value="referenceAdded" />
                       <node concept="3cqZAl" id="5iW7uqbGXAB" role="3clF45" />
                       <node concept="3Tm1VV" id="5iW7uqbGXAC" role="1B3o_S" />
-                      <node concept="37vLTG" id="5iW7uqbGXAD" role="3clF46">
-                        <property role="TrG5h" value="reference" />
-                        <node concept="3uibUv" id="5iW7uqbGXAE" role="1tU5fm">
-                          <ref role="3uigEE" to="ec5l:~SReference" resolve="SReference" />
+                      <node concept="37vLTG" id="5iW7uqbMZ6v" role="3clF46">
+                        <property role="TrG5h" value="parent" />
+                        <node concept="3Tqbb2" id="5iW7uqbMZ6w" role="1tU5fm" />
+                      </node>
+                      <node concept="37vLTG" id="5iW7uqbMZ6x" role="3clF46">
+                        <property role="TrG5h" value="target" />
+                        <node concept="3Tqbb2" id="5iW7uqbMZ6y" role="1tU5fm" />
+                      </node>
+                      <node concept="37vLTG" id="5iW7uqbMZ6z" role="3clF46">
+                        <property role="TrG5h" value="role" />
+                        <node concept="3uibUv" id="5iW7uqbMZ6$" role="1tU5fm">
+                          <ref role="3uigEE" to="t3eg:~SReferenceLink" resolve="SReferenceLink" />
                         </node>
                       </node>
                       <node concept="3clFbS" id="5iW7uqbGXAH" role="3clF47">
@@ -926,9 +935,17 @@
                       <node concept="3cqZAl" id="5iW7uqbH0kX" role="3clF45" />
                       <node concept="3Tm1VV" id="5iW7uqbH0kY" role="1B3o_S" />
                       <node concept="37vLTG" id="5iW7uqbH0kZ" role="3clF46">
-                        <property role="TrG5h" value="reference" />
-                        <node concept="3uibUv" id="5iW7uqbH0l0" role="1tU5fm">
-                          <ref role="3uigEE" to="ec5l:~SReference" resolve="SReference" />
+                        <property role="TrG5h" value="parent" />
+                        <node concept="3Tqbb2" id="5iW7uqbMWDj" role="1tU5fm" />
+                      </node>
+                      <node concept="37vLTG" id="5iW7uqbMWOW" role="3clF46">
+                        <property role="TrG5h" value="target" />
+                        <node concept="3Tqbb2" id="5iW7uqbMXd8" role="1tU5fm" />
+                      </node>
+                      <node concept="37vLTG" id="5iW7uqbMXh9" role="3clF46">
+                        <property role="TrG5h" value="role" />
+                        <node concept="3uibUv" id="5iW7uqbMYYJ" role="1tU5fm">
+                          <ref role="3uigEE" to="t3eg:~SReferenceLink" resolve="SReferenceLink" />
                         </node>
                       </node>
                       <node concept="3clFbS" id="5iW7uqbH0l1" role="3clF47">

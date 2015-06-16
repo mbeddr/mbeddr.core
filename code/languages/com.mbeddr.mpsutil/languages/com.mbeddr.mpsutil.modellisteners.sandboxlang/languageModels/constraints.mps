@@ -9,6 +9,7 @@
   <imports>
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="64jm" ref="r:53fd5ad6-9dfd-4bea-bf25-c6cd1df32c73(com.mbeddr.mpsutil.modellisteners.sandboxlang.structure)" implicit="true" />
+    <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" implicit="true" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -62,12 +63,12 @@
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="5818559022137986141" name="listeners" index="j$A37" />
       </concept>
-      <concept id="6105788070831244601" name="com.mbeddr.mpsutil.modellisteners.structure.Parameter_reference" flags="ng" index="3v2Hzv" />
       <concept id="6105788070830979962" name="com.mbeddr.mpsutil.modellisteners.structure.ReferenceRemovedListener" flags="ig" index="3v3Eqs" />
       <concept id="6105788070830979719" name="com.mbeddr.mpsutil.modellisteners.structure.ReferenceAddedListener" flags="ig" index="3v3Etx" />
       <concept id="6105788070830360713" name="com.mbeddr.mpsutil.modellisteners.structure.AbstractRoleListener" flags="ig" index="3v5llJ">
         <reference id="5818559022137756708" name="role" index="j_u2Y" />
       </concept>
+      <concept id="6105788070832548426" name="com.mbeddr.mpsutil.modellisteners.structure.Parameter_referenceRole" flags="ng" index="3vtFuG" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
@@ -120,7 +121,6 @@
       </node>
     </node>
     <node concept="3v3Etx" id="5iW7uqbHEQA" role="j$A37">
-      <ref role="j_u2Y" to="64jm:5iW7uqbJsoP" />
       <node concept="3clFbS" id="5iW7uqbHEQC" role="2VODD2">
         <node concept="3clFbF" id="5iW7uqbHEY_" role="3cqZAp">
           <node concept="2OqwBi" id="5iW7uqbHEYy" role="3clFbG">
@@ -131,7 +131,12 @@
             <node concept="liA8E" id="5iW7uqbHEY$" role="2OqNvi">
               <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="3cpWs3" id="5iW7uqbJs8d" role="37wK5m">
-                <node concept="3v2Hzv" id="5iW7uqbJs9L" role="3uHU7w" />
+                <node concept="2OqwBi" id="5iW7uqbN97d" role="3uHU7w">
+                  <node concept="3vtFuG" id="5iW7uqbN90Y" role="2Oq$k0" />
+                  <node concept="liA8E" id="5iW7uqbN9zE" role="2OqNvi">
+                    <ref role="37wK5l" to="t3eg:~SReferenceLink.getRoleName():java.lang.String" resolve="getRoleName" />
+                  </node>
+                </node>
                 <node concept="Xl_RD" id="5iW7uqbHFwb" role="3uHU7B">
                   <property role="Xl_RC" value="reference added " />
                 </node>
@@ -153,7 +158,12 @@
             <node concept="liA8E" id="5iW7uqbJsd_" role="2OqNvi">
               <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="3cpWs3" id="5iW7uqbJsdA" role="37wK5m">
-                <node concept="3v2Hzv" id="5iW7uqbJsdB" role="3uHU7w" />
+                <node concept="2OqwBi" id="5iW7uqbN9HU" role="3uHU7w">
+                  <node concept="3vtFuG" id="5iW7uqbN9BI" role="2Oq$k0" />
+                  <node concept="liA8E" id="5iW7uqbNaa$" role="2OqNvi">
+                    <ref role="37wK5l" to="t3eg:~SReferenceLink.getRoleName():java.lang.String" resolve="getRoleName" />
+                  </node>
+                </node>
                 <node concept="Xl_RD" id="5iW7uqbJsdC" role="3uHU7B">
                   <property role="Xl_RC" value="reference removed " />
                 </node>
