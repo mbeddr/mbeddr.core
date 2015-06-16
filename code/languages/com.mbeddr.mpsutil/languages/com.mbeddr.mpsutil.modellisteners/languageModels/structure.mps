@@ -85,16 +85,7 @@
     <property role="TrG5h" value="AbstractChildListener" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
-    <node concept="1TJgyj" id="52ZF9D3a$K$" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="role" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
-    </node>
-    <node concept="PrWs8" id="52ZF9D3a$Kt" role="PzmwI">
-      <ref role="PrY4T" node="52ZF9D3a93F" resolve="IModelListener" />
-    </node>
+    <ref role="1TJDcQ" node="5iW7uqbEky9" resolve="AbstractRoleListener" />
   </node>
   <node concept="1TIwiD" id="52ZF9D3a_Hl">
     <property role="TrG5h" value="Parameter_parent" />
@@ -104,6 +95,42 @@
   <node concept="1TIwiD" id="52ZF9D3aASe">
     <property role="TrG5h" value="Parameter_child" />
     <property role="34LRSv" value="child" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="5iW7uqbEky9">
+    <property role="TrG5h" value="AbstractRoleListener" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+    <node concept="1TJgyj" id="52ZF9D3a$K$" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="role" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
+    </node>
+    <node concept="PrWs8" id="5iW7uqbEIVN" role="PzmwI">
+      <ref role="PrY4T" node="52ZF9D3a93F" resolve="IModelListener" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5iW7uqbETrb">
+    <property role="TrG5h" value="AbstractReferenceListener" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="5iW7uqbEky9" resolve="AbstractRoleListener" />
+  </node>
+  <node concept="1TIwiD" id="5iW7uqbGFE7">
+    <property role="TrG5h" value="ReferenceAddedListener" />
+    <property role="34LRSv" value="reference added" />
+    <ref role="1TJDcQ" node="5iW7uqbETrb" resolve="AbstractReferenceListener" />
+  </node>
+  <node concept="1TIwiD" id="5iW7uqbGFHU">
+    <property role="TrG5h" value="ReferenceRemovedListener" />
+    <property role="34LRSv" value="reference removed" />
+    <ref role="1TJDcQ" node="5iW7uqbETrb" resolve="AbstractReferenceListener" />
+  </node>
+  <node concept="1TIwiD" id="5iW7uqbHGkT">
+    <property role="TrG5h" value="Parameter_reference" />
+    <property role="34LRSv" value="reference" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
 </model>

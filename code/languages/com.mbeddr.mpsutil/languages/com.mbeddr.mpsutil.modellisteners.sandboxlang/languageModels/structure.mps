@@ -38,6 +38,16 @@
     <property role="TrG5h" value="RootConcept" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5iW7uqbJsoP" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="reference1" />
+      <ref role="20lvS9" node="52ZF9D3bond" resolve="ChildConceptA" />
+    </node>
+    <node concept="1TJgyj" id="5iW7uqbJsrh" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="reference2" />
+      <ref role="20lvS9" node="52ZF9D3bond" resolve="ChildConceptA" />
+    </node>
     <node concept="1TJgyj" id="52ZF9D3bos4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="original" />
@@ -57,6 +67,9 @@
   <node concept="1TIwiD" id="52ZF9D3bond">
     <property role="TrG5h" value="ChildConceptA" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5iW7uqbJNCs" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 

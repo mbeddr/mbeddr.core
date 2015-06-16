@@ -157,7 +157,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="52ZF9D3aCLd">
-    <ref role="1XX52x" to="wlk:52ZF9D3a$Hn" resolve="AbstractChildListener" />
+    <ref role="1XX52x" to="wlk:5iW7uqbEky9" resolve="AbstractRoleListener" />
     <node concept="3EZMnI" id="52ZF9D3aDT6" role="2wV5jI">
       <node concept="1HlG4h" id="2wZex4PafBl" role="3EZMnx">
         <node concept="1HfYo3" id="2wZex4PafBm" role="1HlULh">
