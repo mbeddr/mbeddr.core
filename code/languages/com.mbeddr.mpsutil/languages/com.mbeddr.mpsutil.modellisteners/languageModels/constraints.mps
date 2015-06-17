@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wlk" ref="r:aa2e9fa0-d890-401e-b521-21670da212d1(com.mbeddr.mpsutil.modellisteners.structure)" implicit="true" />
     <import index="6zkc" ref="r:0c81e2c1-ba6e-4ec9-83d9-30ec00711168(com.mbeddr.mpsutil.modellisteners.behavior)" implicit="true" />
@@ -81,6 +82,8 @@
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
+      <concept id="1202989531578" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="nKS2y" />
+      <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
         <child id="1147468630220" name="propertyGetter" index="EtsB7" />
@@ -94,6 +97,7 @@
         <child id="1227085062429" name="canBeRoot" index="2NY200" />
         <child id="1213098023997" name="property" index="1MhHOB" />
         <child id="1213100494875" name="referent" index="1Mr941" />
+        <child id="1213106463729" name="canBeChild" index="1MLUbF" />
       </concept>
       <concept id="1148684180339" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Factory" flags="in" index="1MUpDS" />
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
@@ -108,6 +112,11 @@
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+        <reference id="1140138128738" name="concept" index="1PxNhF" />
+        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -255,6 +264,34 @@
               <node concept="2qgKlT" id="5iW7uqbPLhK" role="2OqNvi">
                 <ref role="37wK5l" to="tpcn:hEwILLM" resolve="getPropertyDeclarations" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5iW7uqbVfyq">
+    <ref role="1M2myG" to="wlk:5iW7uqbVfev" resolve="AbstractRootListener" />
+    <node concept="nKS2y" id="5iW7uqbVfAv" role="1MLUbF">
+      <node concept="3clFbS" id="5iW7uqbVfAw" role="2VODD2">
+        <node concept="3clFbF" id="5iW7uqbVgte" role="3cqZAp">
+          <node concept="2OqwBi" id="5iW7uqbVidr" role="3clFbG">
+            <node concept="1PxgMI" id="5iW7uqbVmWI" role="2Oq$k0">
+              <property role="1BlNFB" value="true" />
+              <ref role="1PxNhF" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+              <node concept="2OqwBi" id="5iW7uqbVg$Z" role="1PxMeX">
+                <node concept="1PxgMI" id="5iW7uqbX69s" role="2Oq$k0">
+                  <property role="1BlNFB" value="true" />
+                  <ref role="1PxNhF" to="wlk:52ZF9D39XYf" resolve="ConceptModelListeners" />
+                  <node concept="nLn13" id="5iW7uqbX60K" role="1PxMeX" />
+                </node>
+                <node concept="3TrEf2" id="5iW7uqbX6DX" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wlk:hDM2mAQ" />
+                </node>
+              </node>
+            </node>
+            <node concept="3TrcHB" id="5iW7uqbVoaw" role="2OqNvi">
+              <ref role="3TsBF5" to="tpce:fX9Ktp8" resolve="rootable" />
             </node>
           </node>
         </node>
