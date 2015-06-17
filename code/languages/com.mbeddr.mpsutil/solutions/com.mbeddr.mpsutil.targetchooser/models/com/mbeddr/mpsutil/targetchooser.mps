@@ -416,8 +416,8 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="myTree" />
       <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="4GGI4_vgAE7" role="1tU5fm">
-        <ref role="3uigEE" to="eqee:~ProjectTree" resolve="ProjectTree" />
+      <node concept="3uibUv" id="72neNfy7tdd" role="1tU5fm">
+        <ref role="3uigEE" node="8mo7j23YOR" resolve="TargetChooser_ProjectTree" />
       </node>
       <node concept="3Tm6S6" id="4GGI4_vg$3G" role="1B3o_S" />
     </node>
@@ -860,6 +860,21 @@
       <node concept="3Tm1VV" id="4GGI4_vg$64" role="1B3o_S" />
       <node concept="3uibUv" id="4GGI4_vg$65" role="3clF45">
         <ref role="3uigEE" to="dbrf:~JComponent" resolve="JComponent" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="72neNfy7prp" role="jymVt" />
+    <node concept="3clFb_" id="72neNfy7reN" role="jymVt">
+      <property role="TrG5h" value="getTree" />
+      <node concept="3uibUv" id="72neNfy7sJS" role="3clF45">
+        <ref role="3uigEE" node="8mo7j23YOR" resolve="TargetChooser_ProjectTree" />
+      </node>
+      <node concept="3Tm1VV" id="72neNfy7reQ" role="1B3o_S" />
+      <node concept="3clFbS" id="72neNfy7reR" role="3clF47">
+        <node concept="3clFbF" id="72neNfy7tbt" role="3cqZAp">
+          <node concept="37vLTw" id="72neNfy7tbs" role="3clFbG">
+            <ref role="3cqZAo" node="4GGI4_vg$3D" resolve="myTree" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="4GGI4_vgpb1" role="1B3o_S" />
