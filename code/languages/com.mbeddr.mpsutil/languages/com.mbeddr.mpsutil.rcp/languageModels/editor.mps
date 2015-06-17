@@ -28,6 +28,10 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -92,6 +96,9 @@
     <ref role="1XX52x" to="ywdj:7o1blyuFOTm" resolve="Persistence" />
     <node concept="PMmxH" id="7o1blyuFQhM" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="VechU" id="4aIQuds5cKW" role="3F10Kt">
+        <property role="Vb096" value="DARK_BLUE" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="7o1blyuG7_w">
@@ -115,6 +122,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="VechU" id="4aIQuds5vh5" role="3F10Kt">
+        <property role="Vb096" value="DARK_BLUE" />
       </node>
     </node>
   </node>
@@ -186,6 +196,9 @@
     <node concept="3EZMnI" id="7o1blyuGY$M" role="2wV5jI">
       <node concept="3F0ifn" id="7o1blyuGY$W" role="3EZMnx">
         <property role="3F0ifm" value="[" />
+        <node concept="VechU" id="4aIQuds5cSx" role="3F10Kt">
+          <property role="Vb096" value="DARK_BLUE" />
+        </node>
       </node>
       <node concept="3F2HdR" id="7o1blyuGY_5" role="3EZMnx">
         <ref role="1NtTu8" to="ywdj:7o1blyuG7_o" />
@@ -202,6 +215,9 @@
       </node>
       <node concept="3F0ifn" id="7o1blyuGYRg" role="3EZMnx">
         <property role="3F0ifm" value="]" />
+        <node concept="VechU" id="4aIQuds5cVQ" role="3F10Kt">
+          <property role="Vb096" value="DARK_BLUE" />
+        </node>
       </node>
       <node concept="2iRfu4" id="7o1blyuGY$P" role="2iSdaV" />
     </node>
