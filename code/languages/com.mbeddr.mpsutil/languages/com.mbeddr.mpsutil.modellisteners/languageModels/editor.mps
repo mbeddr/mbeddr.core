@@ -250,5 +250,39 @@
       <node concept="l2Vlx" id="5iW7uqbPAak" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5iW7uqbXbCy">
+    <ref role="1XX52x" to="wlk:5iW7uqbPHHE" resolve="AbstractListener" />
+    <node concept="3EZMnI" id="5iW7uqbXbHt" role="2wV5jI">
+      <node concept="1HlG4h" id="5iW7uqbXbHu" role="3EZMnx">
+        <node concept="1HfYo3" id="5iW7uqbXbHv" role="1HlULh">
+          <node concept="3TQlhw" id="5iW7uqbXbHw" role="1Hhtcw">
+            <node concept="3clFbS" id="5iW7uqbXbHx" role="2VODD2">
+              <node concept="3clFbF" id="5iW7uqbXbHy" role="3cqZAp">
+                <node concept="2OqwBi" id="5iW7uqbXbHz" role="3clFbG">
+                  <node concept="2OqwBi" id="5iW7uqbXbH$" role="2Oq$k0">
+                    <node concept="pncrf" id="5iW7uqbXbH_" role="2Oq$k0" />
+                    <node concept="3NT_Vc" id="5iW7uqbXbHA" role="2OqNvi" />
+                  </node>
+                  <node concept="3TrcHB" id="5iW7uqbXbHB" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpce:4qF2Hm2r7ja" resolve="conceptAlias" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2SqB2G" id="5iW7uqbXbHC" role="2SqHTX">
+          <property role="TrG5h" value="ALIAS_EDITOR_COMPONENT" />
+        </node>
+        <node concept="VechU" id="5iW7uqbXbHD" role="3F10Kt">
+          <property role="Vb096" value="DARK_BLUE" />
+        </node>
+      </node>
+      <node concept="PMmxH" id="5iW7uqbXbHI" role="3EZMnx">
+        <ref role="PMmxG" to="tpen:hqLiD8Q" resolve="ConceptFunction_Component" />
+      </node>
+      <node concept="l2Vlx" id="5iW7uqbXbHJ" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

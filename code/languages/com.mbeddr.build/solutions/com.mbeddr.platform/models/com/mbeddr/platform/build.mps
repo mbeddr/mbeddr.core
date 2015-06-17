@@ -5058,7 +5058,7 @@
           <property role="2GAjPV" value="false" />
           <node concept="1SiIV0" id="52ZF9D3h0uW" role="3bR37C">
             <node concept="3bR9La" id="52ZF9D3h0uX" role="1SiIV1">
-              <property role="3bR36h" value="false" />
+              <property role="3bR36h" value="true" />
               <ref role="3bR37D" node="52ZF9D3gLhJ" resolve="com.mbeddr.mpsutil.modellisteners.runtime" />
             </node>
           </node>
@@ -5067,6 +5067,11 @@
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3AI_UIpOEou" role="3bR37C">
+          <node concept="1Busua" id="3AI_UIpOEov" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
       </node>

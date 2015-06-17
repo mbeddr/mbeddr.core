@@ -75,7 +75,7 @@
     </language>
     <language id="309e0004-4976-4416-b947-ec02ae4ecef2" name="com.mbeddr.mpsutil.modellisteners">
       <concept id="5818559022137765390" name="com.mbeddr.mpsutil.modellisteners.structure.Parameter_child" flags="ng" index="j_sak" />
-      <concept id="5818559022137760597" name="com.mbeddr.mpsutil.modellisteners.structure.Parameter_parent" flags="ng" index="j_vvf" />
+      <concept id="5818559022137760597" name="com.mbeddr.mpsutil.modellisteners.structure.Parameter_instance" flags="ng" index="j_vvf" />
       <concept id="5818559022137645654" name="com.mbeddr.mpsutil.modellisteners.structure.BeforeChildRemovedListener" flags="ig" index="j_Nrc" />
       <concept id="5818559022137644042" name="com.mbeddr.mpsutil.modellisteners.structure.ChildAddedListener" flags="ig" index="j_Nyg" />
       <concept id="5818559022137597839" name="com.mbeddr.mpsutil.modellisteners.structure.ConceptModelListeners" flags="ng" index="jA7cl">
@@ -87,6 +87,9 @@
       <concept id="6105788070830360713" name="com.mbeddr.mpsutil.modellisteners.structure.AbstractRoleListener" flags="ig" index="3v5llJ">
         <reference id="5818559022137756708" name="role" index="j_u2Y" />
       </concept>
+      <concept id="6105788070834796500" name="com.mbeddr.mpsutil.modellisteners.structure.BeforeRootRemovedListener" flags="ig" index="3vkeCM" />
+      <concept id="6105788070834796441" name="com.mbeddr.mpsutil.modellisteners.structure.RootRemovedListener" flags="ig" index="3vkeDZ" />
+      <concept id="6105788070834796185" name="com.mbeddr.mpsutil.modellisteners.structure.RootAddedListener" flags="ig" index="3vkeHZ" />
       <concept id="6105788070833315443" name="com.mbeddr.mpsutil.modellisteners.structure.PropertyListener" flags="ig" index="3vq$el">
         <reference id="6105788070833315720" name="property" index="3vq$9I" />
       </concept>
@@ -263,6 +266,60 @@
               <node concept="j_vvf" id="5iW7uqbQWJw" role="2Oq$k0" />
               <node concept="3TrcHB" id="5iW7uqbQXkw" role="2OqNvi">
                 <ref role="3TsBF5" to="64jm:5iW7uqbOQqA" resolve="property1" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3vkeHZ" id="5iW7uqbXbfS" role="j$A37">
+      <node concept="3clFbS" id="5iW7uqbXbfU" role="2VODD2">
+        <node concept="3clFbF" id="5iW7uqbXloF" role="3cqZAp">
+          <node concept="2OqwBi" id="5iW7uqbXloC" role="3clFbG">
+            <node concept="10M0yZ" id="5iW7uqbXloD" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="5iW7uqbXloE" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="5iW7uqbXlpr" role="37wK5m">
+                <property role="Xl_RC" value="root added" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3vkeCM" id="5iW7uqbXlJC" role="j$A37">
+      <node concept="3clFbS" id="5iW7uqbXlJE" role="2VODD2">
+        <node concept="3clFbF" id="5iW7uqbXm22" role="3cqZAp">
+          <node concept="2OqwBi" id="5iW7uqbXm1Z" role="3clFbG">
+            <node concept="10M0yZ" id="5iW7uqbXm20" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="5iW7uqbXm21" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="5iW7uqbXm2M" role="37wK5m">
+                <property role="Xl_RC" value="before root removed" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3vkeDZ" id="5iW7uqbXms5" role="j$A37">
+      <node concept="3clFbS" id="5iW7uqbXms7" role="2VODD2">
+        <node concept="3clFbF" id="5iW7uqbXmIW" role="3cqZAp">
+          <node concept="2OqwBi" id="5iW7uqbXmIT" role="3clFbG">
+            <node concept="10M0yZ" id="5iW7uqbXmIU" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="5iW7uqbXmIV" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="5iW7uqbXmJG" role="37wK5m">
+                <property role="Xl_RC" value="root removed" />
               </node>
             </node>
           </node>

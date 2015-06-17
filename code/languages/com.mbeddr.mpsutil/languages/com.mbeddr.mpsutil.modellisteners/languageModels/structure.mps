@@ -88,8 +88,8 @@
     <ref role="1TJDcQ" node="5iW7uqbEky9" resolve="AbstractRoleListener" />
   </node>
   <node concept="1TIwiD" id="52ZF9D3a_Hl">
-    <property role="TrG5h" value="Parameter_parent" />
-    <property role="34LRSv" value="parent" />
+    <property role="TrG5h" value="Parameter_instance" />
+    <property role="34LRSv" value="instance" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="52ZF9D3aASe">
@@ -173,6 +173,32 @@
     <node concept="PrWs8" id="5iW7uqbPHKK" role="PzmwI">
       <ref role="PrY4T" node="52ZF9D3a93F" resolve="IModelListener" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5iW7uqbVfev">
+    <property role="TrG5h" value="AbstractRootListener" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="5iW7uqbPHHE" resolve="AbstractListener" />
+  </node>
+  <node concept="1TIwiD" id="5iW7uqbVfqp">
+    <property role="TrG5h" value="RootAddedListener" />
+    <property role="34LRSv" value="root added" />
+    <ref role="1TJDcQ" node="5iW7uqbVfev" resolve="AbstractRootListener" />
+  </node>
+  <node concept="1TIwiD" id="5iW7uqbVfup">
+    <property role="TrG5h" value="RootRemovedListener" />
+    <property role="34LRSv" value="root removed" />
+    <ref role="1TJDcQ" node="5iW7uqbVfev" resolve="AbstractRootListener" />
+  </node>
+  <node concept="1TIwiD" id="5iW7uqbVfvk">
+    <property role="TrG5h" value="BeforeRootRemovedListener" />
+    <property role="34LRSv" value="before root removed" />
+    <ref role="1TJDcQ" node="5iW7uqbVfev" resolve="AbstractRootListener" />
+  </node>
+  <node concept="1TIwiD" id="5iW7uqbWv_6">
+    <property role="TrG5h" value="Parameter_model" />
+    <property role="34LRSv" value="model" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
 </model>
 
