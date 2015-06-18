@@ -8,6 +8,8 @@
   <registry>
     <language id="4cbe8d8b-9aa4-4342-8d1a-f3bcd858d0e8" name="com.mbeddr.mpsutil.modellisteners.sandboxlang">
       <concept id="5818559022137967770" name="com.mbeddr.mpsutil.modellisteners.sandboxlang.structure.RootConcept" flags="ng" index="j$yw0">
+        <property id="6105788070833120934" name="property1" index="3vrRH0" />
+        <reference id="6105788070831703761" name="reference2" index="3v0tGR" />
         <child id="5818559022137968394" name="mirror" index="j$yIg" />
         <child id="5818559022137968388" name="original" index="j$yIu" />
       </concept>
@@ -21,9 +23,20 @@
   </registry>
   <node concept="j$yw0" id="52ZF9D3bsG8">
     <property role="TrG5h" value="Abc" />
-    <node concept="j$y_n" id="52ZF9D3gyKX" role="j$yIu" />
-    <node concept="j$y_n" id="52ZF9D3gEDg" role="j$yIu" />
-    <node concept="j$y_n" id="52ZF9D3gEGo" role="j$yIu" />
+    <property role="3vrRH0" value="ABC" />
+    <ref role="3v0tGR" node="52ZF9D3gyKX" resolve="A" />
+    <ref role="3v0tGR" node="52ZF9D3gyKX" resolve="A" />
+    <ref role="3v0tGR" node="52ZF9D3gyKX" resolve="A" />
+    <ref role="3v0tGR" node="52ZF9D3gEGo" resolve="C" />
+    <node concept="j$y_n" id="52ZF9D3gyKX" role="j$yIu">
+      <property role="TrG5h" value="A" />
+    </node>
+    <node concept="j$y_n" id="52ZF9D3gEDg" role="j$yIu">
+      <property role="TrG5h" value="B" />
+    </node>
+    <node concept="j$y_n" id="52ZF9D3gEGo" role="j$yIu">
+      <property role="TrG5h" value="C" />
+    </node>
     <node concept="j$y_n" id="52ZF9D3gFdo" role="j$yIu" />
     <node concept="j$y_n" id="52ZF9D3gEML" role="j$yIu" />
     <node concept="j$y_n" id="52ZF9D3gEHb" role="j$yIu" />
