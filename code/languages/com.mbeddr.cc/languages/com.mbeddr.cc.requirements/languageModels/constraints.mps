@@ -759,7 +759,7 @@
         <node concept="3clFbH" id="4vVfYP3y3rQ" role="3cqZAp" />
         <node concept="3SKdUt" id="6WhEtfYUdKK" role="3cqZAp">
           <node concept="3SKdUq" id="6WhEtfYUe9I" role="3SKWNk">
-            <property role="3SKdUp" value="requires delayed execution because of internal MPS reasons" />
+            <property role="3SKdUp" value="deletion requires delayed execution because of internal MPS reasons (node anchoring)" />
           </node>
         </node>
         <node concept="3clFbF" id="4vVfYP3xPoM" role="3cqZAp">
