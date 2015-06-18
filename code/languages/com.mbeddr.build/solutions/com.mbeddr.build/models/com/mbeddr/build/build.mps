@@ -2590,6 +2590,25 @@
             <ref role="3bR37D" node="7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3RjRSogQkWw" role="3bR37C">
+          <node concept="1BurEX" id="3RjRSogQkWx" role="1SiIV1">
+            <node concept="398BVA" id="3RjRSogQkWj" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ43N8" resolve="mbeddr.core" />
+              <node concept="2Ry0Ak" id="3RjRSogQkWk" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3RjRSogQkWl" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.core.modules.gen" />
+                  <node concept="2Ry0Ak" id="3RjRSogQkWm" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3RjRSogQkWn" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.eclipse.incquery.runtime.base.itc_1.0.0.201506181354.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7uZw0yZ43Lo" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -9413,6 +9432,23 @@
                       <property role="2Ry0Am" value="lib" />
                       <node concept="2Ry0Ak" id="5jIWg8a4pei" role="2Ry0An">
                         <property role="2Ry0Am" value="javassist.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="28jJK3" id="3RjRSogU9UD" role="39821P">
+              <node concept="398BVA" id="3RjRSogU9UE" role="28jJRO">
+                <ref role="398BVh" node="7uZw0yZ43N8" resolve="mbeddr.core" />
+                <node concept="2Ry0Ak" id="3RjRSogU9UF" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="3RjRSogU9UG" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.mbeddr.core.modules.gen" />
+                    <node concept="2Ry0Ak" id="3RjRSogU9UH" role="2Ry0An">
+                      <property role="2Ry0Am" value="lib" />
+                      <node concept="2Ry0Ak" id="3RjRSogUb$o" role="2Ry0An">
+                        <property role="2Ry0Am" value="org.eclipse.incquery.runtime.base.itc_1.0.0.201506181354.jar" />
                       </node>
                     </node>
                   </node>
