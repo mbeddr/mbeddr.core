@@ -488,7 +488,7 @@
   <node concept="N3F5e" id="3U3EZ$DOLkU">
     <property role="TrG5h" value="InheritanceOfFields" />
     <node concept="2EWCuY" id="3U3EZ$DOLl5" role="N3F5h">
-      <property role="2OOxQR" value="true" />
+      <property role="2OOxQR" value="false" />
       <property role="TrG5h" value="C1" />
       <node concept="EbCE0" id="3U3EZ$DOLl8" role="2RW2fA">
         <property role="TrG5h" value="f1" />
@@ -505,7 +505,7 @@
       <property role="TrG5h" value="empty_1366646947816_3" />
     </node>
     <node concept="2EWCuY" id="3U3EZ$DOLl7" role="N3F5h">
-      <property role="2OOxQR" value="true" />
+      <property role="2OOxQR" value="false" />
       <property role="TrG5h" value="C2" />
       <ref role="2EWKI0" node="3U3EZ$DOLl5" resolve="C1" />
       <node concept="2EWDwb" id="3U3EZ$DOLlf" role="2RW2fA">

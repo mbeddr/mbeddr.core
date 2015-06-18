@@ -105,6 +105,7 @@
         <property id="4297162197620978190" name="parallel" index="1wNuhe" />
         <property id="4297162197620978193" name="parallelThreads" index="1wNuhh" />
         <property id="4297162197621031140" name="inplace" index="1wOHq$" />
+        <property id="6535001758416941941" name="createStaticRefs" index="3Ej$Sc" />
       </concept>
       <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA">
         <property id="269707337715731330" name="sourcesKind" index="aoJFB" />
@@ -133,6 +134,7 @@
       <property role="1wNuhe" value="true" />
       <property role="1wNuhh" value="4" />
       <property role="1wOHq$" value="true" />
+      <property role="3Ej$Sc" value="true" />
     </node>
     <node concept="m$_wf" id="7eF9rfAuutf" role="3989C9">
       <property role="m$_wk" value="debugger.api.dummy" />
@@ -193,10 +195,10 @@
             <ref role="3bR37D" to="al5i:2bBLuwR9$cn" resolve="com.mbeddr.mpsutil.interpreter.rt" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3evmF2I3eU$" role="3bR37C">
-          <node concept="3bR9La" id="3evmF2I3eU_" role="1SiIV1">
+        <node concept="1SiIV0" id="4yevF$Uc7as" role="3bR37C">
+          <node concept="3bR9La" id="4yevF$Uc7at" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
+            <ref role="3bR37D" to="al5i:5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
           </node>
         </node>
       </node>

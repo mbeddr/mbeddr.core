@@ -4,22 +4,11 @@
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
-    <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="-1" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="96ee7a94-411d-4cf8-9b94-96cad7e52411" name="jetbrains.mps.baseLanguage.jdk7" version="-1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
   </languages>
   <imports>
-    <import index="hh8f" ref="r:10781da5-69e3-49a7-8e25-f6ac0e69d1d1(test.analyses.var.testcode.fm)" />
     <import index="oe3g" ref="r:6529d99e-f27c-4f0d-b5a8-fdfbedcb1e34(com.mbeddr.analyses.sat4j.fm.testing)" />
   </imports>
   <registry>
@@ -54,7 +43,7 @@
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
@@ -65,6 +54,12 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
@@ -349,6 +344,92 @@
         <node concept="3vFxKo" id="68jd02EcGN5" role="3cqZAp">
           <node concept="37vLTw" id="68jd02EcGOO" role="3vFALc">
             <ref role="3cqZAo" node="68jd02EcGzE" resolve="res" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="4qsm5C8v23I" role="1SL9yI">
+      <property role="TrG5h" value="testDerivedFeatures3" />
+      <node concept="3cqZAl" id="4qsm5C8v23J" role="3clF45" />
+      <node concept="3clFbS" id="4qsm5C8v23K" role="3clF47">
+        <node concept="3cpWs8" id="4qsm5C8v23L" role="3cqZAp">
+          <node concept="3cpWsn" id="4qsm5C8v23M" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="4qsm5C8v23N" role="1tU5fm" />
+            <node concept="BaHAS" id="4qsm5C8v23O" role="33vP2m">
+              <property role="BaBD8" value="test.analyses.var.testcode.cm" />
+              <property role="BaHAW" value="test.analyses.var.testcode.cm" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4qsm5C8v23P" role="3cqZAp">
+          <node concept="3cpWsn" id="4qsm5C8v23Q" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="10P_77" id="4qsm5C8v23R" role="1tU5fm" />
+            <node concept="NRdvd" id="4qsm5C8v23S" role="33vP2m">
+              <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
+              <ref role="37wK5l" to="oe3g:tSjOfAjCHD" resolve="checkConfigurationModelConsistency" />
+              <node concept="37vLTw" id="4qsm5C8v23T" role="37wK5m">
+                <ref role="3cqZAo" node="4qsm5C8v23M" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="4qsm5C8v23U" role="37wK5m">
+                <property role="Xl_RC" value="ConstraintsOnDerivedFeatures_Req" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4qsm5C8v23V" role="3cqZAp">
+          <node concept="3SKdUq" id="4qsm5C8v23W" role="3SKWNk">
+            <property role="3SKdUp" value="must fail because the configuration does NOT have the REQUIRED feature &quot;required&quot;" />
+          </node>
+        </node>
+        <node concept="3vFxKo" id="4qsm5C8v23X" role="3cqZAp">
+          <node concept="37vLTw" id="4qsm5C8v23Y" role="3vFALc">
+            <ref role="3cqZAo" node="4qsm5C8v23Q" resolve="res" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="4qsm5C8v23Z" role="1SL9yI">
+      <property role="TrG5h" value="testDerivedFeatures4" />
+      <node concept="3cqZAl" id="4qsm5C8v240" role="3clF45" />
+      <node concept="3clFbS" id="4qsm5C8v241" role="3clF47">
+        <node concept="3cpWs8" id="4qsm5C8v242" role="3cqZAp">
+          <node concept="3cpWsn" id="4qsm5C8v243" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="4qsm5C8v244" role="1tU5fm" />
+            <node concept="BaHAS" id="4qsm5C8v245" role="33vP2m">
+              <property role="BaBD8" value="test.analyses.var.testcode.cm" />
+              <property role="BaHAW" value="test.analyses.var.testcode.cm" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4qsm5C8v246" role="3cqZAp">
+          <node concept="3cpWsn" id="4qsm5C8v247" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="10P_77" id="4qsm5C8v248" role="1tU5fm" />
+            <node concept="NRdvd" id="4qsm5C8v249" role="33vP2m">
+              <ref role="37wK5l" to="oe3g:tSjOfAjCHD" resolve="checkConfigurationModelConsistency" />
+              <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
+              <node concept="37vLTw" id="4qsm5C8v24a" role="37wK5m">
+                <ref role="3cqZAo" node="4qsm5C8v243" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="4qsm5C8v24b" role="37wK5m">
+                <property role="Xl_RC" value="ConstraintsOnDerivedFeatures_Con" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4qsm5C8v24c" role="3cqZAp">
+          <node concept="3SKdUq" id="4qsm5C8v24d" role="3SKWNk">
+            <property role="3SKdUp" value="must fail because the configuration has the CONFLICTING feature &quot;conflict&quot;" />
+          </node>
+        </node>
+        <node concept="3vFxKo" id="4qsm5C8v24e" role="3cqZAp">
+          <node concept="37vLTw" id="4qsm5C8v24f" role="3vFALc">
+            <ref role="3cqZAo" node="4qsm5C8v247" resolve="res" />
           </node>
         </node>
       </node>

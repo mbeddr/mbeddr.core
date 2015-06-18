@@ -9,7 +9,6 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
-    <import index="hba4" ref="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -188,6 +187,9 @@
     <node concept="PrWs8" id="5MaVmNI4zkR" role="PzmwI">
       <ref role="PrY4T" to="vs0r:jpyKDg1onz" resolve="ISearchSupport" />
     </node>
+    <node concept="PrWs8" id="6bzSKoI1uD7" role="PzmwI">
+      <ref role="PrY4T" node="6bzSKoI1uCr" resolve="IStringLiteralLike" />
+    </node>
     <node concept="1TJgyi" id="5jmmCdx$f5U" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -223,33 +225,9 @@
     <property role="TrG5h" value="ISelfTypingInArrayAccessExpression" />
     <property role="3GE5qa" value="ClassesSupport" />
   </node>
-  <node concept="1TIwiD" id="6o2p2Z0C9os">
-    <property role="3GE5qa" value="arrays" />
-    <property role="TrG5h" value="ArrayInitExpression" />
-    <property role="34LRSv" value="{a" />
-    <property role="R4oN_" value="array initializer" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="PrWs8" id="6o2p2Z0C9ot" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
-    </node>
-    <node concept="PrWs8" id="6o2p2Z0C9ow" role="PzmwI">
-      <ref role="PrY4T" to="c4fa:3$tYuge5dpc" resolve="IStructuredInitExpression" />
-    </node>
-    <node concept="PrWs8" id="6o2p2Z0C9ox" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:4usdeMNUjj3" resolve="IRequiresTypeToBeInferred" />
-    </node>
-    <node concept="PrWs8" id="EzoNb5Pr99" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="PrWs8" id="2qm4hK379yR" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-    <node concept="1TJgyj" id="6o2p2Z0C9oy" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="exprs" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
+  <node concept="PlHQZ" id="6bzSKoI1uCr">
+    <property role="3GE5qa" value="literals" />
+    <property role="TrG5h" value="IStringLiteralLike" />
   </node>
 </model>
 

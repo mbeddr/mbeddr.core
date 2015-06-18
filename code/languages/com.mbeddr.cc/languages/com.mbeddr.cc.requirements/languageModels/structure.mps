@@ -10,9 +10,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="26ao" ref="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" />
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" />
-    <import index="xvsr" ref="r:18791582-199a-4c4c-a282-6d61b7657294(com.mbeddr.cc.requirements.behavior)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
-    <import index="hba4" ref="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" />
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -309,19 +307,6 @@
     <property role="R4oN_" value="req refines another req" />
     <property role="34LRSv" value="refines" />
     <ref role="1TJDcQ" node="7_tU7IQtN5z" resolve="RequirementsLink" />
-  </node>
-  <node concept="1TIwiD" id="opE5jFghww">
-    <property role="TrG5h" value="ModuleRef" />
-    <ref role="1TJDcQ" node="7Vd878lwJm8" resolve="RequirementModuleImport" />
-    <node concept="1TJgyj" id="opE5jFghwx" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="module" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7_tU7IQsFfx" resolve="RequirementsModule" />
-    </node>
-    <node concept="PrWs8" id="7aNtjNlqqwb" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
   </node>
   <node concept="1TIwiD" id="opE5jFgmlt">
     <property role="TrG5h" value="RequirementRef" />

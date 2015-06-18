@@ -3,7 +3,6 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.migration.dotexpression/com.mbeddr.migration.dotexpression.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.migration.initexpression/com.mbeddr.migration.initexpression.mpl" folder="" />
     </projectModules>
   </component>
 </project>

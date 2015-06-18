@@ -11,15 +11,12 @@
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="srng" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="dbrf" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
     <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
-    <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
   </imports>
   <registry>
@@ -975,7 +972,7 @@
   <node concept="2S6QgY" id="5lKnBeB0tzM">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="openFileChooser" />
-    <ref role="2ZfgGC" to="vs0r:5lKnBeAtNw8" resolve="AbstractFilePicker" />
+    <ref role="2ZfgGC" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
     <node concept="2S6ZIM" id="5lKnBeB0tzN" role="2ZfVej">
       <node concept="3clFbS" id="5lKnBeB0tzO" role="2VODD2">
         <node concept="3clFbF" id="5lKnBeB0u1Y" role="3cqZAp">
@@ -1055,10 +1052,12 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="5lKnBeB4hnu" role="3clFbw">
+          <node concept="2OqwBi" id="5Wocj7wunsh" role="3clFbw">
             <node concept="2Sf5sV" id="5lKnBeB4hje" role="2Oq$k0" />
-            <node concept="2qgKlT" id="5lKnBeB4iz8" role="2OqNvi">
-              <ref role="37wK5l" to="hwgx:5lKnBeB0qXj" resolve="pickDirOnly" />
+            <node concept="1mIQ4w" id="5Wocj7wunGD" role="2OqNvi">
+              <node concept="chp4Y" id="5Wocj7wunMf" role="cj9EA">
+                <ref role="cht4Q" to="vs0r:5Wocj7wnolM" resolve="AbstractFolderPicker" />
+              </node>
             </node>
           </node>
         </node>
@@ -1541,65 +1540,6 @@
       </node>
     </node>
   </node>
-  <node concept="2S6QgY" id="6hoQ$hubFug">
-    <property role="3GE5qa" value="codereview" />
-    <property role="TrG5h" value="xTest_CheckIfCodeReviewable" />
-    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="2S6ZIM" id="6hoQ$hubFuh" role="2ZfVej">
-      <node concept="3clFbS" id="6hoQ$hubFui" role="2VODD2">
-        <node concept="3clFbF" id="6hoQ$hubFXo" role="3cqZAp">
-          <node concept="Xl_RD" id="6hoQ$hubFXn" role="3clFbG">
-            <property role="Xl_RC" value="Check Code Reviewable" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="6hoQ$hubFuj" role="2ZfgGD">
-      <node concept="3clFbS" id="6hoQ$hubFuk" role="2VODD2">
-        <node concept="3clFbF" id="6hoQ$hubHjU" role="3cqZAp">
-          <node concept="2OqwBi" id="6hoQ$hubHjQ" role="3clFbG">
-            <node concept="10M0yZ" id="6hoQ$hubHjR" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="6hoQ$hubHjS" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="6hoQ$hubYJR" role="37wK5m">
-                <node concept="Xl_RD" id="6hoQ$hubYJW" role="3uHU7w" />
-                <node concept="3cpWs3" id="6hoQ$hubXOs" role="3uHU7B">
-                  <node concept="3cpWs3" id="6hoQ$hubYpf" role="3uHU7B">
-                    <node concept="Xl_RD" id="6hoQ$hubYra" role="3uHU7w">
-                      <property role="Xl_RC" value=" is code reviewable: " />
-                    </node>
-                    <node concept="2OqwBi" id="6hoQ$hubXV6" role="3uHU7B">
-                      <node concept="2Sf5sV" id="6hoQ$hubXQR" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="6hoQ$hubY9E" role="2OqNvi">
-                        <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2YIFZM" id="6hoQ$hubXyU" role="3uHU7w">
-                    <ref role="37wK5l" to="d244:6hoQ$hubV8a" resolve="shouldBeInCodeReview" />
-                    <ref role="1Pybhc" to="d244:6hoQ$hu7CJg" resolve="CodeReviewProvider" />
-                    <node concept="2Sf5sV" id="6hoQ$hubXBJ" role="37wK5m" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2SaL7w" id="5SHUFrIlai$" role="2ZfVeh">
-      <node concept="3clFbS" id="5SHUFrIlai_" role="2VODD2">
-        <node concept="3clFbF" id="5SHUFrIlavj" role="3cqZAp">
-          <node concept="3clFbT" id="5SHUFrIlavi" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="2S6QgY" id="1tDstbgLI5m">
     <property role="3GE5qa" value="codereview" />
     <property role="TrG5h" value="MarkAsRaw" />
@@ -1628,8 +1568,8 @@
       <node concept="3clFbS" id="1tDstbgLIAa" role="2VODD2">
         <node concept="3clFbF" id="1tDstbgLIQy" role="3cqZAp">
           <node concept="2YIFZM" id="1tDstbgLJ1b" role="3clFbG">
-            <ref role="37wK5l" to="hwgx:1tDstbgLz3T" resolve="isReviewable" />
             <ref role="1Pybhc" to="hwgx:1tDstbgCbvP" resolve="ReviewHelper" />
+            <ref role="37wK5l" to="hwgx:5osQY7AdztN" resolve="isReviewable" />
             <node concept="2Sf5sV" id="1tDstbgLJc0" role="37wK5m" />
           </node>
         </node>
@@ -1684,7 +1624,7 @@
         <node concept="3clFbF" id="1tDstbgLKIu" role="3cqZAp">
           <node concept="2YIFZM" id="1tDstbgLKIv" role="3clFbG">
             <ref role="1Pybhc" to="hwgx:1tDstbgCbvP" resolve="ReviewHelper" />
-            <ref role="37wK5l" to="hwgx:1tDstbgLz3T" resolve="isReviewable" />
+            <ref role="37wK5l" to="hwgx:5osQY7AdztN" resolve="isReviewable" />
             <node concept="2Sf5sV" id="1tDstbgLKIw" role="37wK5m" />
           </node>
         </node>
@@ -1739,7 +1679,7 @@
         <node concept="3clFbF" id="1tDstbgLL6p" role="3cqZAp">
           <node concept="2YIFZM" id="1tDstbgLL6q" role="3clFbG">
             <ref role="1Pybhc" to="hwgx:1tDstbgCbvP" resolve="ReviewHelper" />
-            <ref role="37wK5l" to="hwgx:1tDstbgLz3T" resolve="isReviewable" />
+            <ref role="37wK5l" to="hwgx:5osQY7AdztN" resolve="isReviewable" />
             <node concept="2Sf5sV" id="1tDstbgLL6r" role="37wK5m" />
           </node>
         </node>

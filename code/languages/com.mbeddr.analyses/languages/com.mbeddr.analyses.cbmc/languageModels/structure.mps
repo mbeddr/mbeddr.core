@@ -10,8 +10,8 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -101,6 +101,9 @@
     <property role="3GE5qa" value="statements" />
     <property role="34LRSv" value="assert" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="PrWs8" id="3V3CJZuMSlV" role="PzmwI">
+      <ref role="PrY4T" node="3V3CJZuMScE" resolve="IAssertLike" />
+    </node>
     <node concept="1TJgyj" id="637qsduSbtq" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="exp" />
@@ -216,6 +219,9 @@
     <ref role="1TJDcQ" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     <node concept="PrWs8" id="58I4robP8VO" role="PzmwI">
       <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="7DvJ5MZ1aFB" role="PzmwI">
+      <ref role="PrY4T" node="7DvJ5MZ1ag1" resolve="IHarnessLike" />
     </node>
   </node>
   <node concept="1TIwiD" id="7MOa6vKJ9cQ">
@@ -423,6 +429,98 @@
       <property role="1uS6qo" value="16 bits" />
       <property role="1uS6qv" value="16 bits" />
       <property role="2fHolG" value="16 bits" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="72mSD5R_OCr">
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="ValidEnumerationValue" />
+    <property role="34LRSv" value="valid_enum" />
+    <ref role="1TJDcQ" to="mj1l:6AJWN7GdLOh" resolve="UnaryLogicalExpression" />
+  </node>
+  <node concept="1TIwiD" id="73FH1Bco8fg">
+    <property role="3GE5qa" value="cbmc_macros" />
+    <property role="TrG5h" value="CPROVERassert" />
+    <property role="34LRSv" value="__CPROVER_assert" />
+    <property role="R4oN_" value="assert with message in case of violation" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="73FH1Bco8D_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyi" id="73FH1Bco8Dz" role="1TKVEl">
+      <property role="TrG5h" value="message" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3V3CJZuwdnS">
+    <property role="3GE5qa" value="cbmc_macros" />
+    <property role="TrG5h" value="CPROVERatomic" />
+    <property role="34LRSv" value="__CPROVER_atomic" />
+    <property role="R4oN_" value="atomic section" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="3V3CJZuwwng" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="section" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3V3CJZuMScE">
+    <property role="3GE5qa" value="statements" />
+    <property role="TrG5h" value="IAssertLike" />
+  </node>
+  <node concept="1TIwiD" id="i5tJSHdtYB">
+    <property role="3GE5qa" value="cbmc_macros" />
+    <property role="TrG5h" value="CPROVERthreadId" />
+    <property role="34LRSv" value="__CPROVER_thread_id" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+  </node>
+  <node concept="PlHQZ" id="7DvJ5MZ1ag1">
+    <property role="3GE5qa" value="harness" />
+    <property role="TrG5h" value="IHarnessLike" />
+  </node>
+  <node concept="1TIwiD" id="7DvJ5MZf4YH">
+    <property role="TrG5h" value="StubsConfiguration" />
+    <property role="34LRSv" value="stubs configuration" />
+    <property role="3GE5qa" value="stubbing" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7DvJ5MZf54t" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
+    </node>
+    <node concept="1TJgyj" id="7DvJ5MZf5jL" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="stubs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7DvJ5MZf5j_" resolve="SingleStubConfig" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7DvJ5MZf5j_">
+    <property role="TrG5h" value="SingleStubConfig" />
+    <property role="3GE5qa" value="stubbing" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7DvJ5MZf5jA" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="original" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="x27k:5_l8w1EmTvt" resolve="FunctionSignature" />
+    </node>
+    <node concept="1TJgyj" id="7DvJ5MZf5jE" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="stub" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="x27k:5_l8w1EmTvx" resolve="Function" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7DvJ5MZ1aFL">
+    <property role="TrG5h" value="VerificationCase" />
+    <property role="3GE5qa" value="verification_case" />
+    <property role="34LRSv" value="verification case" />
+    <property role="R4oN_" value="container for harness and properties to check" />
+    <ref role="1TJDcQ" to="x27k:5_l8w1EmTvx" resolve="Function" />
+    <node concept="PrWs8" id="7DvJ5MZ1aFM" role="PzmwI">
+      <ref role="PrY4T" node="7DvJ5MZ1ag1" resolve="IHarnessLike" />
     </node>
   </node>
 </model>

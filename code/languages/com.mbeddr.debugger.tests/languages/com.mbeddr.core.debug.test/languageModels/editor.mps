@@ -5,17 +5,22 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="3bdedd09-792a-4e15-a4db-83970df3ee86" name="de.itemis.mps.editor.collapsible" version="0" />
+    <use id="73736c50-f124-433b-b789-2828a15a0adc" name="jetbrains.mps.baseLanguage.collections.trove" version="0" />
   </languages>
   <imports>
     <import index="rpmx" ref="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" />
-    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="dm5s" ref="r:cc63f437-a3eb-4092-9c7c-2b5860f74f8d(com.mbeddr.core.debug.test.behavior)" />
-    <import index="tpc5" ref="r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -122,6 +127,9 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -157,6 +165,11 @@
       </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -338,7 +351,7 @@
           <property role="3EZMnw" value="false" />
           <node concept="3F0ifn" id="5t7wq7uqtMk" role="3EZMnx">
             <property role="3F0ifm" value="uses backend:" />
-            <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="KeyWord" />
+            <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
             <node concept="VPM3Z" id="5t7wq7uqtMl" role="3F10Kt" />
             <node concept="VechU" id="5t7wq7uqtMm" role="3F10Kt" />
           </node>
@@ -1280,9 +1293,28 @@
           <node concept="1HfYo3" id="3M3l$fn_wCD" role="1HlULh">
             <node concept="3TQlhw" id="3M3l$fn_wCE" role="1Hhtcw">
               <node concept="3clFbS" id="3M3l$fn_wCF" role="2VODD2">
-                <node concept="3clFbF" id="3M3l$fn_wCG" role="3cqZAp">
-                  <node concept="Xl_RD" id="3M3l$fn_wCH" role="3clFbG">
-                    <property role="Xl_RC" value="(overwritten)" />
+                <node concept="3clFbJ" id="415Bkr3vzfG" role="3cqZAp">
+                  <node concept="3clFbS" id="415Bkr3vzfI" role="3clFbx">
+                    <node concept="3cpWs6" id="415Bkr3w3hE" role="3cqZAp">
+                      <node concept="Xl_RD" id="3M3l$fn_wCH" role="3cqZAk">
+                        <property role="Xl_RC" value="(extended)" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="415Bkr3Acti" role="3clFbw">
+                    <node concept="pncrf" id="415Bkr3AcoB" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="415Bkr3AcQ3" role="2OqNvi">
+                      <ref role="37wK5l" to="dm5s:415Bkr3_ZqX" resolve="isExtended" />
+                    </node>
+                  </node>
+                  <node concept="9aQIb" id="415Bkr3vE45" role="9aQIa">
+                    <node concept="3clFbS" id="415Bkr3vE46" role="9aQI4">
+                      <node concept="3cpWs6" id="415Bkr3w3_V" role="3cqZAp">
+                        <node concept="Xl_RD" id="415Bkr3w3_W" role="3cqZAk">
+                          <property role="Xl_RC" value="(overwritten)" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -2309,7 +2341,7 @@
     <ref role="1XX52x" to="rpmx:5t7wq7uqigT" resolve="IDebuggerBackend" />
     <node concept="PMmxH" id="58boHs0Oqyg" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="KeyWord" />
+      <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
     </node>
   </node>
   <node concept="24kQdi" id="6g5LwObJaMt">
@@ -2317,7 +2349,7 @@
     <ref role="1XX52x" to="rpmx:6g5LwObJaJ7" resolve="DebuggerRunningValidation" />
     <node concept="3F0ifn" id="6g5LwObJbhR" role="2wV5jI">
       <property role="3F0ifm" value="debugger running" />
-      <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="KeyWord" />
+      <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
     </node>
   </node>
 </model>

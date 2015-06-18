@@ -2,12 +2,15 @@
 <model ref="r:10781da5-69e3-49a7-8e25-f6ac0e69d1d1(test.analyses.var.testcode.fm)">
   <persistence version="9" />
   <languages>
-    <use id="e401b447-8019-4ccd-a72c-bfb0230f5782" name="com.mbeddr.cc.var.fm" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
+    <use id="e401b447-8019-4ccd-a72c-bfb0230f5782" name="com.mbeddr.cc.var.fm" version="1" />
   </languages>
   <imports />
   <registry>
     <language id="e401b447-8019-4ccd-a72c-bfb0230f5782" name="com.mbeddr.cc.var.fm">
+      <concept id="4508614440797534978" name="com.mbeddr.cc.var.fm.structure.AbstractFeature" flags="ng" index="2vMJK">
+        <child id="6617313141260016649" name="crossConstraints" index="2FxFsO" />
+      </concept>
       <concept id="8473958930087782177" name="com.mbeddr.cc.var.fm.structure.RootFeature" flags="ng" index="28I2Iu" />
       <concept id="2203816361987134490" name="com.mbeddr.cc.var.fm.structure.DerivedFeature" flags="ng" index="gY_dk">
         <child id="2203816361987258679" name="value" index="gT3TT" />
@@ -18,7 +21,6 @@
       <concept id="6825476687691297426" name="com.mbeddr.cc.var.fm.structure.Feature" flags="ng" index="Id4hK">
         <child id="6825476687691297427" name="constraint" index="Id4hL" />
         <child id="6825476687691297428" name="children" index="Id4hQ" />
-        <child id="8433257123783652307" name="crossConstraints" index="1fCc5Z" />
       </concept>
       <concept id="6825476687691297434" name="com.mbeddr.cc.var.fm.structure.FeatureModel" flags="ng" index="Id4hS">
         <child id="2203816361987258682" name="derivedFeatures" index="gT3TO" />
@@ -79,7 +81,7 @@
         </node>
         <node concept="Id4hK" id="tSjOfAaIp5" role="Id4hQ">
           <property role="TrG5h" value="mandatoryChild2" />
-          <node concept="1fCc5X" id="tSjOfAaIpu" role="1fCc5Z">
+          <node concept="1fCc5X" id="tSjOfAaIpu" role="2FxFsO">
             <ref role="1fCc5C" node="tSjOfAaIp3" resolve="mandatoryChild1" />
           </node>
         </node>
@@ -104,7 +106,7 @@
           </node>
           <node concept="Id4hK" id="44j14BGT7c9" role="Id4hQ">
             <property role="TrG5h" value="mc223" />
-            <node concept="1fCc5X" id="44j14BGT7cd" role="1fCc5Z">
+            <node concept="1fCc5X" id="44j14BGT7cd" role="2FxFsO">
               <ref role="1fCc5C" node="44j14BGT4on" resolve="mc221" />
             </node>
           </node>
@@ -118,7 +120,7 @@
         <node concept="Id4hK" id="44j14BGTo4I" role="Id4hQ">
           <property role="TrG5h" value="c31" />
           <node concept="Idvur" id="44j14BGTo4J" role="Id4hL" />
-          <node concept="1fCc5J" id="44j14BGTo6M" role="1fCc5Z">
+          <node concept="1fCc5J" id="44j14BGTo6M" role="2FxFsO">
             <ref role="1fCc5C" node="44j14BGTo4M" resolve="c321" />
           </node>
         </node>
@@ -130,13 +132,13 @@
           </node>
           <node concept="Id4hK" id="44j14BGTo4N" role="Id4hQ">
             <property role="TrG5h" value="c322" />
-            <node concept="1fCc5X" id="44j14BGTo6K" role="1fCc5Z">
+            <node concept="1fCc5X" id="44j14BGTo6K" role="2FxFsO">
               <ref role="1fCc5C" node="44j14BGTo4M" resolve="c321" />
             </node>
           </node>
           <node concept="Id4hK" id="44j14BGTo4O" role="Id4hQ">
             <property role="TrG5h" value="c323" />
-            <node concept="1fCc5X" id="44j14BGTo4P" role="1fCc5Z">
+            <node concept="1fCc5X" id="44j14BGTo4P" role="2FxFsO">
               <ref role="1fCc5C" node="44j14BGTo4M" resolve="c321" />
             </node>
           </node>
@@ -178,7 +180,7 @@
         <node concept="Id4hK" id="44j14BGT86U" role="Id4hQ">
           <property role="TrG5h" value="mc31" />
           <node concept="Idvur" id="44j14BGT86V" role="Id4hL" />
-          <node concept="1fCc5X" id="44j14BGT87F" role="1fCc5Z">
+          <node concept="1fCc5X" id="44j14BGT87F" role="2FxFsO">
             <ref role="1fCc5C" node="44j14BGT86Y" resolve="mc321" />
           </node>
         </node>
@@ -193,7 +195,7 @@
           </node>
           <node concept="Id4hK" id="44j14BGT870" role="Id4hQ">
             <property role="TrG5h" value="mc323" />
-            <node concept="1fCc5X" id="44j14BGT871" role="1fCc5Z">
+            <node concept="1fCc5X" id="44j14BGT871" role="2FxFsO">
               <ref role="1fCc5C" node="44j14BGT86W" resolve="mc32" />
             </node>
           </node>
@@ -207,7 +209,7 @@
         <node concept="Id4hK" id="44j14BGT8zF" role="Id4hQ">
           <property role="TrG5h" value="mc41" />
           <node concept="Idvur" id="44j14BGT8zG" role="Id4hL" />
-          <node concept="1fCc5J" id="44j14BGT8$G" role="1fCc5Z">
+          <node concept="1fCc5J" id="44j14BGT8$G" role="2FxFsO">
             <ref role="1fCc5C" node="44j14BGT8zL" resolve="mc422" />
           </node>
         </node>
@@ -219,7 +221,7 @@
           </node>
           <node concept="Id4hK" id="44j14BGT8zL" role="Id4hQ">
             <property role="TrG5h" value="mc422" />
-            <node concept="1fCc5J" id="44j14BGTrB9" role="1fCc5Z">
+            <node concept="1fCc5J" id="44j14BGTrB9" role="2FxFsO">
               <ref role="1fCc5C" node="44j14BGT8zF" resolve="mc41" />
             </node>
           </node>
@@ -372,6 +374,131 @@
         </node>
       </node>
     </node>
+    <node concept="Id4hS" id="5JlqNRKB2xt" role="Idr$j">
+      <property role="TrG5h" value="DerivedFeatures6" />
+      <node concept="28I2Iu" id="5JlqNRKB2xu" role="Id4hT">
+        <node concept="Idvur" id="4qsm5C8ujNv" role="Id4hL" />
+        <node concept="Id4hK" id="5JlqNRKB388" role="Id4hQ">
+          <property role="TrG5h" value="c1" />
+        </node>
+        <node concept="Id4hK" id="5JlqNRKB38a" role="Id4hQ">
+          <property role="TrG5h" value="c2" />
+        </node>
+        <node concept="Id4hK" id="5JlqNRKB38d" role="Id4hQ">
+          <property role="TrG5h" value="optional" />
+          <node concept="Idvur" id="4qsm5C8ujNy" role="Id4hL" />
+          <node concept="Id4hK" id="5JlqNRKB38i" role="Id4hQ">
+            <property role="TrG5h" value="r1" />
+          </node>
+          <node concept="Id4hK" id="5JlqNRKB38l" role="Id4hQ">
+            <property role="TrG5h" value="conflicts" />
+          </node>
+        </node>
+      </node>
+      <node concept="gY_dk" id="5JlqNRKB5fj" role="gT3TO">
+        <property role="TrG5h" value="derivedWithConflicts" />
+        <node concept="2EHzL6" id="5JlqNRKB5fz" role="gT3TT">
+          <node concept="2qVrgw" id="5JlqNRKB5fJ" role="3TlMhJ">
+            <ref role="2qVrgz" node="5JlqNRKB38a" resolve="c2" />
+          </node>
+          <node concept="2qVrgw" id="5JlqNRKB5fr" role="3TlMhI">
+            <ref role="2qVrgz" node="5JlqNRKB388" resolve="c1" />
+          </node>
+        </node>
+        <node concept="1fCc5X" id="2OuHA24URJr" role="2FxFsO">
+          <ref role="1fCc5C" node="5JlqNRKB38l" resolve="conflicts" />
+        </node>
+      </node>
+    </node>
+    <node concept="Id4hS" id="4qsm5C8ujeh" role="Idr$j">
+      <property role="TrG5h" value="DerivedFeatures7" />
+      <node concept="28I2Iu" id="4qsm5C8ujei" role="Id4hT">
+        <node concept="Idvup" id="4qsm5C8ujej" role="Id4hL" />
+        <node concept="Id4hK" id="4qsm5C8ujek" role="Id4hQ">
+          <property role="TrG5h" value="c1" />
+        </node>
+        <node concept="Id4hK" id="4qsm5C8ukPa" role="Id4hQ">
+          <property role="TrG5h" value="c2" />
+        </node>
+        <node concept="Id4hK" id="4qsm5C8ujem" role="Id4hQ">
+          <property role="TrG5h" value="optional" />
+          <node concept="Idvup" id="4qsm5C8ujen" role="Id4hL" />
+          <node concept="Id4hK" id="4qsm5C8ujeo" role="Id4hQ">
+            <property role="TrG5h" value="required" />
+            <node concept="1fCc5X" id="4qsm5C8ujNJ" role="2FxFsO">
+              <ref role="1fCc5C" node="4qsm5C8ujek" resolve="c1" />
+            </node>
+          </node>
+          <node concept="Id4hK" id="4qsm5C8ujep" role="Id4hQ">
+            <property role="TrG5h" value="conflicts" />
+          </node>
+        </node>
+      </node>
+      <node concept="gY_dk" id="4qsm5C8ujeq" role="gT3TO">
+        <property role="TrG5h" value="derivedWithRequires" />
+        <node concept="2EHzL6" id="4qsm5C8umFC" role="gT3TT">
+          <node concept="2qVrgw" id="4qsm5C8umGk" role="3TlMhJ">
+            <ref role="2qVrgz" node="4qsm5C8ukPa" resolve="c2" />
+          </node>
+          <node concept="2qVrgw" id="4qsm5C8ujes" role="3TlMhI">
+            <ref role="2qVrgz" node="4qsm5C8ujek" resolve="c1" />
+          </node>
+        </node>
+        <node concept="1fCc5J" id="4qsm5C8ujeu" role="2FxFsO">
+          <ref role="1fCc5C" node="4qsm5C8ujeo" resolve="required" />
+        </node>
+      </node>
+    </node>
+    <node concept="Id4hS" id="4qsm5C8umNF" role="Idr$j">
+      <property role="TrG5h" value="DerivedFeatures8" />
+      <node concept="28I2Iu" id="4qsm5C8umNG" role="Id4hT">
+        <node concept="Idvup" id="4qsm5C8umNH" role="Id4hL" />
+        <node concept="Id4hK" id="4qsm5C8umNI" role="Id4hQ">
+          <property role="TrG5h" value="c1" />
+        </node>
+        <node concept="Id4hK" id="4qsm5C8umNJ" role="Id4hQ">
+          <property role="TrG5h" value="c2" />
+        </node>
+        <node concept="Id4hK" id="4qsm5C8umNK" role="Id4hQ">
+          <property role="TrG5h" value="optional" />
+          <node concept="Idvup" id="4qsm5C8umNL" role="Id4hL" />
+          <node concept="Id4hK" id="4qsm5C8umNM" role="Id4hQ">
+            <property role="TrG5h" value="required" />
+          </node>
+          <node concept="Id4hK" id="4qsm5C8umNO" role="Id4hQ">
+            <property role="TrG5h" value="conflicts" />
+          </node>
+        </node>
+      </node>
+      <node concept="gY_dk" id="4qsm5C8umNP" role="gT3TO">
+        <property role="TrG5h" value="derivedWithRequires" />
+        <node concept="2EHzL6" id="4qsm5C8umNQ" role="gT3TT">
+          <node concept="2qVrgw" id="4qsm5C8umNR" role="3TlMhJ">
+            <ref role="2qVrgz" node="4qsm5C8umNJ" resolve="c2" />
+          </node>
+          <node concept="2qVrgw" id="4qsm5C8umNS" role="3TlMhI">
+            <ref role="2qVrgz" node="4qsm5C8umNI" resolve="c1" />
+          </node>
+        </node>
+        <node concept="1fCc5J" id="4qsm5C8umNT" role="2FxFsO">
+          <ref role="1fCc5C" node="4qsm5C8umNM" resolve="required" />
+        </node>
+      </node>
+      <node concept="gY_dk" id="4qsm5C8umQ4" role="gT3TO">
+        <property role="TrG5h" value="derivedWithConflicts" />
+        <node concept="2EHzL6" id="4qsm5C8umQ5" role="gT3TT">
+          <node concept="2qVrgw" id="4qsm5C8umQ6" role="3TlMhJ">
+            <ref role="2qVrgz" node="5JlqNRKB38a" resolve="c2" />
+          </node>
+          <node concept="2qVrgw" id="4qsm5C8umQ7" role="3TlMhI">
+            <ref role="2qVrgz" node="5JlqNRKB388" resolve="c1" />
+          </node>
+        </node>
+        <node concept="1fCc5X" id="4qsm5C8umQz" role="2FxFsO">
+          <ref role="1fCc5C" node="4qsm5C8umNO" resolve="conflicts" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="Idr$i" id="3KT4CxIEGQE">
     <property role="TrG5h" value="ComplexFeatureModels" />
@@ -390,7 +517,7 @@
           </node>
           <node concept="Id4hK" id="3xCv2UZOMyr" role="Id4hQ">
             <property role="TrG5h" value="HighTorque" />
-            <node concept="1fCc5J" id="3xCv2UZOQL7" role="1fCc5Z">
+            <node concept="1fCc5J" id="3xCv2UZOQL7" role="2FxFsO">
               <ref role="1fCc5C" node="3xCv2UZOPIw" resolve="AdvancedControls" />
             </node>
           </node>
@@ -416,7 +543,7 @@
             <node concept="Idvtz" id="3xCv2UZOO0l" role="Id4hL" />
             <node concept="Id4hK" id="3xCv2UZOO0i" role="Id4hQ">
               <property role="TrG5h" value="Red" />
-              <node concept="1fCc5X" id="3xCv2UZOQYQ" role="1fCc5Z">
+              <node concept="1fCc5X" id="3xCv2UZOQYQ" role="2FxFsO">
                 <ref role="1fCc5C" node="3xCv2UZOOQz" resolve="Rough" />
               </node>
             </node>
@@ -473,7 +600,7 @@
             <node concept="Id4hK" id="2xEGw1120nz" role="Id4hQ">
               <property role="TrG5h" value="Centralized" />
             </node>
-            <node concept="1fCc5J" id="2xEGw1120n$" role="1fCc5Z">
+            <node concept="1fCc5J" id="2xEGw1120n$" role="2FxFsO">
               <ref role="1fCc5C" node="2xEGw1120nD" resolve="CAN" />
             </node>
           </node>

@@ -12,9 +12,6 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
-        <child id="1154032183016" name="body" index="2LFqv$" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -42,26 +39,10 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
-      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
-        <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-      </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
-        <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-    </language>
-    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
-        <child id="1153944400369" name="variable" index="2Gsz3X" />
-        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
-      </concept>
-      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
-      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
-        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
     </language>
   </registry>
@@ -141,33 +122,6 @@
             <node concept="3__QtB" id="1LDGRqyYUyX" role="2Oq$k0" />
             <node concept="3TrEf2" id="1LDGRqyYVpK" role="2OqNvi">
               <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="3_zdsH" id="6o2p2Z0C9vK">
-    <property role="3GE5qa" value="arrays" />
-    <ref role="3_znuS" to="yq40:6o2p2Z0C9os" resolve="ArrayInitExpression" />
-    <node concept="3__wT9" id="6o2p2Z0C9vL" role="3_A6iZ">
-      <node concept="3clFbS" id="6o2p2Z0C9vM" role="2VODD2">
-        <node concept="3clFbH" id="6o2p2Z0C9vN" role="3cqZAp" />
-        <node concept="2Gpval" id="1LDGRqyYQ9M" role="3cqZAp">
-          <node concept="2GrKxI" id="1LDGRqyYQ9O" role="2Gsz3X">
-            <property role="TrG5h" value="e" />
-          </node>
-          <node concept="2OqwBi" id="1LDGRqyYQOP" role="2GsD0m">
-            <node concept="3__QtB" id="1LDGRqyYQAp" role="2Oq$k0" />
-            <node concept="3Tsc0h" id="1LDGRqyYSel" role="2OqNvi">
-              <ref role="3TtcxE" to="yq40:6o2p2Z0C9oy" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="1LDGRqyYQ9S" role="2LFqv$">
-            <node concept="3AgYrR" id="1LDGRqyYSHe" role="3cqZAp">
-              <node concept="2GrUjf" id="1LDGRqyYSHC" role="3Ah4Yx">
-                <ref role="2Gs0qQ" node="1LDGRqyYQ9O" resolve="e" />
-              </node>
             </node>
           </node>
         </node>

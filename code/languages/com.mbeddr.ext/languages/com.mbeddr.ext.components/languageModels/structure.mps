@@ -3,17 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
-    <use id="a482b416-d0c9-473f-8f67-725ed642b3f3" name="com.mbeddr.mpsutil.breadcrumb" version="-1" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -117,6 +106,9 @@
     <node concept="PrWs8" id="2XtvyVv5rPL" role="PzmwI">
       <ref role="PrY4T" node="7DNX50_2aso" resolve="IComponentWatchableResolver" />
     </node>
+    <node concept="PrWs8" id="3o2OLGv6WjM" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+    </node>
     <node concept="1TJgyj" id="5fn4FV$9N5o" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="contents" />
@@ -138,6 +130,9 @@
     </node>
     <node concept="PrWs8" id="6RCWEZG4Krh" role="PzmwI">
       <ref role="PrY4T" to="kwxp:2N1CSrzPN_8" resolve="IVisualizable" />
+    </node>
+    <node concept="PrWs8" id="3o2OLGv6WZ7" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
     <node concept="1TJgyi" id="1lsyexBMfX1" role="1TKVEl">
       <property role="TrG5h" value="canBeUsedAsType" />
@@ -1178,20 +1173,6 @@
       <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7oI7FI6qb0b">
-    <property role="3GE5qa" value="comp" />
-    <property role="TrG5h" value="CommentedComponentContent" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="7oI7FI6qb0c" role="PzmwI">
-      <ref role="PrY4T" node="71UKpntm630" resolve="IComponentContent" />
-    </node>
-    <node concept="PrWs8" id="7oI7FI6qb0e" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:65XyadYMMYF" resolve="ICommentedCode" />
-    </node>
-    <node concept="PrWs8" id="20ezT9ZDJ3l" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="5fn4FV$bX67">
     <property role="3GE5qa" value="comp.instances" />
     <property role="TrG5h" value="InstanceConfigContents" />
@@ -1239,6 +1220,9 @@
   <node concept="PlHQZ" id="5Xnv3$Q_DjT">
     <property role="3GE5qa" value="intf.cs" />
     <property role="TrG5h" value="ICSInterfaceContents" />
+    <node concept="PrWs8" id="3RtPbXKO1Z4" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5Xnv3$QABtA">
     <property role="3GE5qa" value="intf.cs" />
@@ -1711,6 +1695,34 @@
       <node concept="trNpa" id="3KKPUg5Gc4z" role="EQaZv">
         <ref role="trN6q" node="3TmmsQkDdTQ" resolve="ComponentInstance" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3RtPbXKO3Xq">
+    <property role="3GE5qa" value="intf.cs" />
+    <property role="TrG5h" value="CommentedCSInterfaceContent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3RtPbXKO3Xr" role="PzmwI">
+      <ref role="PrY4T" node="5Xnv3$Q_DjT" resolve="ICSInterfaceContents" />
+    </node>
+    <node concept="PrWs8" id="3RtPbXKO4cI" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYF" resolve="ICommentedCode" />
+    </node>
+    <node concept="PrWs8" id="3RtPbXKO4cV" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7oI7FI6qb0b">
+    <property role="3GE5qa" value="comp" />
+    <property role="TrG5h" value="CommentedComponentContent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7oI7FI6qb0c" role="PzmwI">
+      <ref role="PrY4T" node="71UKpntm630" resolve="IComponentContent" />
+    </node>
+    <node concept="PrWs8" id="7oI7FI6qb0e" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYF" resolve="ICommentedCode" />
+    </node>
+    <node concept="PrWs8" id="20ezT9ZDJ3l" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
 </model>

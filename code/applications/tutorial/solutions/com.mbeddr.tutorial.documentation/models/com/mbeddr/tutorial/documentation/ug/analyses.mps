@@ -3,13 +3,13 @@
   <persistence version="9" />
   <languages>
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
-    <use id="623c9ff8-1203-4890-b33e-cba29dd6cdc6" name="spellcheck" version="-1" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
     <import index="1yl6" ref="r:9bae0493-3d57-4bb7-af86-c94f4734b531(com.mbeddr.tutorial.documentation.analyses_code)" />
     <import index="vi23" ref="r:9b94efb1-dbce-417f-b1ad-19c6a396d423(com.mbeddr.tutorial.documentation.ug.processSupport)" />
     <import index="xojk" ref="r:ec4f318b-4ee4-4063-b222-8a04b6ed816c(com.mbeddr.tutorial.documentation.ug.installation)" />
+    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" />
   </imports>
   <registry>
     <language id="7a060fae-09e0-4372-be36-6696d6554c0e" name="com.mbeddr.mpsutil.review.annotation">
@@ -40,12 +40,13 @@
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
-      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.CPNamedNodeElement" flags="ng" index="2NCMab">
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
       </concept>
-      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.CodePointer" flags="ng" index="2NCZwO">
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
+      <concept id="2286331641392318852" name="com.mbeddr.doc.structure.MenuFormattedText" flags="ng" index="2OlAs7" />
       <concept id="6386504476136263187" name="com.mbeddr.doc.structure.ImageParagraph" flags="ng" index="2SaynC">
         <property id="4755612053022517119" name="border" index="41Bi8" />
         <property id="6386504476136358630" name="showImage" index="2Sbq$t" />
@@ -58,29 +59,22 @@
         <property id="6386504476136521408" name="fileName" index="2Sb_kV" />
         <reference id="6386504476136521409" name="path" index="2Sb_kU" />
       </concept>
-      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
-        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
-      </concept>
-      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
-        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
-        <child id="6386504476136472817" name="paths" index="2SbYGa" />
-        <child id="8624890525767800998" name="sizeSpecs" index="3SH5Mq" />
-      </concept>
       <concept id="4208238404723595132" name="com.mbeddr.doc.structure.UrlFormattedText" flags="ng" index="1hOBRO" />
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
       <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
       <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
       </concept>
-      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.CCodeAsImageParagraph" flags="ng" index="3z_lpz">
+      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.ModelContentAsImageParagraph" flags="ng" index="3z_lpz">
         <child id="6955693250238922832" name="description" index="3z_lpS" />
         <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
       </concept>
-      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractCCodeParagraph" flags="ng" index="3z_lpG">
-        <property id="6955693250238922823" name="showCode" index="3z_lpJ" />
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
-      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.CCodeParagraph" flags="ng" index="3z_lpU">
+      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
+        <property id="6955693250238922835" name="text" index="3z_lpV" />
         <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
@@ -107,12 +101,6 @@
       <concept id="8624890525767650652" name="com.mbeddr.doc.structure.InheritSizeSpec" flags="ng" index="3SGC_w">
         <reference id="8624890525767800818" name="base" index="3SH5fe" />
       </concept>
-      <concept id="8624890525767637976" name="com.mbeddr.doc.structure.PageWidthSizeSpec" flags="ng" index="3SGHZ$">
-        <property id="8624890525767637977" name="percentage" index="3SGHZ_" />
-      </concept>
-      <concept id="8624890525767800825" name="com.mbeddr.doc.structure.NamedSizeSpec" flags="ng" index="3SH5f5">
-        <child id="8624890525767800827" name="spec" index="3SH5f7" />
-      </concept>
       <concept id="5378658552262903588" name="com.mbeddr.doc.structure.Item" flags="ng" index="3X6T9g">
         <child id="5378658552262903589" name="text" index="3X6T9h" />
       </concept>
@@ -121,17 +109,12 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
-      </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractFilePicker" flags="ng" index="3N1QpV">
-        <property id="6156524541422553710" name="path" index="3N1Lgt" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -139,39 +122,11 @@
       </concept>
     </language>
   </registry>
-  <node concept="2SbYGP" id="2ipt67gLxW0">
-    <property role="TrG5h" value="Config" />
-    <property role="3GE5qa" value="config" />
-    <node concept="2SbYGw" id="45LXldJZEw7" role="2SbYGa">
-      <property role="TrG5h" value="images" />
-      <node concept="9PVaO" id="7aNtjNm4Cpc" role="9PVG_">
-        <property role="3N1Lgt" value="images" />
-      </node>
-    </node>
-    <node concept="3SH5f5" id="7uLL3Mf2teF" role="3SH5Mq">
-      <property role="TrG5h" value="width100" />
-      <node concept="3SGHZ$" id="7uLL3Mf2teH" role="3SH5f7">
-        <property role="3SGHZ_" value="100" />
-      </node>
-    </node>
-    <node concept="3SH5f5" id="7uLL3Mf2teJ" role="3SH5Mq">
-      <property role="TrG5h" value="width80" />
-      <node concept="3SGHZ$" id="7uLL3Mf2teK" role="3SH5f7">
-        <property role="3SGHZ_" value="80" />
-      </node>
-    </node>
-    <node concept="2SbYGw" id="5jGyeU5XLXS" role="Cbewh">
-      <property role="TrG5h" value="vis" />
-      <node concept="9PVaO" id="7aNtjNm4Cp9" role="9PVG_">
-        <property role="3N1Lgt" value="_vis" />
-      </node>
-    </node>
-  </node>
   <node concept="1_1swa" id="3XWIBckDw6b">
     <property role="TrG5h" value="A_Introduction" />
     <property role="yApLE" value="1" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
-    <node concept="1mvXsy" id="3XWIBckDysh" role="1_0VJ0">
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <node concept="1_0VNX" id="3mn43GO8lfi" role="1_0VJ0">
       <property role="TrG5h" value="analyses_introduction" />
       <property role="1_0VJr" value="Introduction to Analyses" />
       <node concept="1_0LV8" id="3XWIBckDysk" role="1_0VJ0">
@@ -229,8 +184,8 @@
   <node concept="1_1swa" id="7OKLwZ_6QC9">
     <property role="TrG5h" value="B_VariabilityVerification" />
     <property role="yApLE" value="1" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
-    <node concept="1mvXsy" id="7OKLwZ_6QCa" role="1_0VJ0">
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <node concept="1_0VNX" id="3mn43GO8ltD" role="1_0VJ0">
       <property role="TrG5h" value="analyzing_variability" />
       <property role="1_0VJr" value="Analyzing variability" />
       <node concept="1_0LV8" id="7OKLwZ_6QCt" role="1_0VJ0">
@@ -239,7 +194,7 @@
             <property role="19SUeA" value="mbeddr allows the definition of product lines with the help of feature models, configuration models and attaching advanced presence conditions to the produced artifacts (e.g. programs code, requirements). Defining and using product lines in mbeddr is described in Section " />
           </node>
           <node concept="1_0GAv" id="4XJOimFK6RX" role="19SJt6">
-            <ref role="1_0GAl" to="vi23:tMF5FXsTd2" resolve="productlinevariability" />
+            <ref role="1_0GAl" to="vi23:3mn43GO8h4S" resolve="productlinevariability" />
           </node>
           <node concept="19SUe$" id="4XJOimFK6RY" role="19SJt6">
             <property role="19SUeA" value="." />
@@ -337,7 +292,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="7OKLwZ_6QDs" role="2SbwM5">
             <property role="2Sb_kV" value="analyses/fm_example.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_6QDt" role="2SaI5j">
             <node concept="19SGf9" id="7OKLwZ_6QDu" role="OjmMu">
@@ -347,7 +302,7 @@
             </node>
           </node>
           <node concept="3SGC_w" id="7OKLwZ_6QDw" role="3SHJ_F">
-            <ref role="3SH5fe" node="7uLL3Mf2teJ" resolve="width80" />
+            <ref role="3SH5fe" to="1842:2fBMM_3XZ4P" resolve="width80" />
           </node>
         </node>
         <node concept="1_1sxE" id="7OKLwZ_6QDx" role="1_0VJ0">
@@ -366,7 +321,7 @@
           <property role="41Bi8" value="true" />
           <node concept="2Sb_l4" id="7OKLwZ_6QDA" role="2SbwM5">
             <property role="2Sb_kV" value="analyses/fm_analyzer_start.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_6QDB" role="2SaI5j">
             <node concept="19SGf9" id="7OKLwZ_6QDC" role="OjmMu">
@@ -376,7 +331,7 @@
             </node>
           </node>
           <node concept="3SGC_w" id="7OKLwZ_6QDE" role="3SHJ_F">
-            <ref role="3SH5fe" node="7uLL3Mf2teJ" resolve="width80" />
+            <ref role="3SH5fe" to="1842:2fBMM_3XZ4P" resolve="width80" />
           </node>
         </node>
         <node concept="1_0LV8" id="7OKLwZ_6QDF" role="1_0VJ0">
@@ -392,7 +347,7 @@
           <property role="41Bi8" value="true" />
           <node concept="2Sb_l4" id="7OKLwZ_6QDJ" role="2SbwM5">
             <property role="2Sb_kV" value="analyses/fm_analyzer_results.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_6QDK" role="2SaI5j">
             <node concept="19SGf9" id="7OKLwZ_6QDL" role="OjmMu">
@@ -402,7 +357,7 @@
             </node>
           </node>
           <node concept="3SGC_w" id="7OKLwZ_6QDN" role="3SHJ_F">
-            <ref role="3SH5fe" node="7uLL3Mf2teJ" resolve="width80" />
+            <ref role="3SH5fe" to="1842:2fBMM_3XZ4P" resolve="width80" />
           </node>
         </node>
       </node>
@@ -425,7 +380,7 @@
           <property role="41Bi8" value="true" />
           <node concept="2Sb_l4" id="7OKLwZ_6QDU" role="2SbwM5">
             <property role="2Sb_kV" value="analyses/cm_example.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_6QDV" role="2SaI5j">
             <node concept="19SGf9" id="7OKLwZ_6QDW" role="OjmMu">
@@ -435,7 +390,7 @@
             </node>
           </node>
           <node concept="3SGC_w" id="7OKLwZ_6QDY" role="3SHJ_F">
-            <ref role="3SH5fe" node="7uLL3Mf2teJ" resolve="width80" />
+            <ref role="3SH5fe" to="1842:2fBMM_3XZ4P" resolve="width80" />
           </node>
         </node>
         <node concept="1_1sxE" id="7OKLwZ_6QDZ" role="1_0VJ0">
@@ -454,7 +409,7 @@
           <property role="41Bi8" value="true" />
           <node concept="2Sb_l4" id="7OKLwZ_6QE4" role="2SbwM5">
             <property role="2Sb_kV" value="analyses/cm_analyzer_start.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_6QE5" role="2SaI5j">
             <node concept="19SGf9" id="7OKLwZ_6QE6" role="OjmMu">
@@ -464,7 +419,7 @@
             </node>
           </node>
           <node concept="3SGC_w" id="7OKLwZ_6QE8" role="3SHJ_F">
-            <ref role="3SH5fe" node="7uLL3Mf2teJ" resolve="width80" />
+            <ref role="3SH5fe" to="1842:2fBMM_3XZ4P" resolve="width80" />
           </node>
         </node>
         <node concept="1_0LV8" id="7OKLwZ_6QE9" role="1_0VJ0">
@@ -480,7 +435,7 @@
           <property role="41Bi8" value="true" />
           <node concept="2Sb_l4" id="7OKLwZ_6QEd" role="2SbwM5">
             <property role="2Sb_kV" value="analyses/cm_analyzer_results.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_6QEe" role="2SaI5j">
             <node concept="19SGf9" id="7OKLwZ_6QEf" role="OjmMu">
@@ -490,7 +445,7 @@
             </node>
           </node>
           <node concept="3SGC_w" id="7OKLwZ_6QEh" role="3SHJ_F">
-            <ref role="3SH5fe" node="7uLL3Mf2teJ" resolve="width80" />
+            <ref role="3SH5fe" to="1842:2fBMM_3XZ4P" resolve="width80" />
           </node>
         </node>
       </node>
@@ -513,7 +468,7 @@
           <property role="41Bi8" value="true" />
           <node concept="2Sb_l4" id="7OKLwZ_6U0d" role="2SbwM5">
             <property role="2Sb_kV" value="analyses/module_example.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_6U0e" role="2SaI5j">
             <node concept="19SGf9" id="7OKLwZ_6U0f" role="OjmMu">
@@ -523,7 +478,7 @@
             </node>
           </node>
           <node concept="3SGC_w" id="7OKLwZ_6U0h" role="3SHJ_F">
-            <ref role="3SH5fe" node="7uLL3Mf2teJ" resolve="width80" />
+            <ref role="3SH5fe" to="1842:2fBMM_3XZ4P" resolve="width80" />
           </node>
         </node>
         <node concept="1_1sxE" id="7OKLwZ_6U0i" role="1_0VJ0">
@@ -541,7 +496,7 @@
           <property role="41Bi8" value="true" />
           <node concept="2Sb_l4" id="7OKLwZ_6U0n" role="2SbwM5">
             <property role="2Sb_kV" value="analyses/module_analyzer_start.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_6U0o" role="2SaI5j">
             <node concept="19SGf9" id="7OKLwZ_6U0p" role="OjmMu">
@@ -551,7 +506,7 @@
             </node>
           </node>
           <node concept="3SGC_w" id="7OKLwZ_6U0r" role="3SHJ_F">
-            <ref role="3SH5fe" node="7uLL3Mf2teJ" resolve="width80" />
+            <ref role="3SH5fe" to="1842:2fBMM_3XZ4P" resolve="width80" />
           </node>
         </node>
         <node concept="1_0LV8" id="7OKLwZ_6U0s" role="1_0VJ0">
@@ -567,7 +522,7 @@
           <property role="41Bi8" value="true" />
           <node concept="2Sb_l4" id="7OKLwZ_6U0w" role="2SbwM5">
             <property role="2Sb_kV" value="analyses/module_analyzer_results.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_6U0x" role="2SaI5j">
             <node concept="19SGf9" id="7OKLwZ_6U0y" role="OjmMu">
@@ -577,7 +532,7 @@
             </node>
           </node>
           <node concept="3SGC_w" id="7OKLwZ_6U0$" role="3SHJ_F">
-            <ref role="3SH5fe" node="7uLL3Mf2teJ" resolve="width80" />
+            <ref role="3SH5fe" to="1842:2fBMM_3XZ4P" resolve="width80" />
           </node>
         </node>
       </node>
@@ -618,7 +573,7 @@
           <property role="41Bi8" value="true" />
           <node concept="2Sb_l4" id="4XJOimFQw8W" role="2SbwM5">
             <property role="2Sb_kV" value="analyses/variability_verification_for_models.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="4XJOimFQw8X" role="2SaI5j">
             <node concept="19SGf9" id="4XJOimFQw8Y" role="OjmMu">
@@ -628,7 +583,7 @@
             </node>
           </node>
           <node concept="3SGC_w" id="4XJOimFQw90" role="3SHJ_F">
-            <ref role="3SH5fe" node="7uLL3Mf2teJ" resolve="width80" />
+            <ref role="3SH5fe" to="1842:2fBMM_3XZ4P" resolve="width80" />
           </node>
         </node>
         <node concept="1_0LV8" id="4XJOimFQw9X" role="1_0VJ0">
@@ -644,7 +599,7 @@
           <property role="41Bi8" value="true" />
           <node concept="2Sb_l4" id="4XJOimFQxIX" role="2SbwM5">
             <property role="2Sb_kV" value="analyses/variability_verification_for_solutions.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="4XJOimFQxIY" role="2SaI5j">
             <node concept="19SGf9" id="4XJOimFQxIZ" role="OjmMu">
@@ -654,7 +609,7 @@
             </node>
           </node>
           <node concept="3SGC_w" id="4XJOimFQxJ1" role="3SHJ_F">
-            <ref role="3SH5fe" node="7uLL3Mf2teJ" resolve="width80" />
+            <ref role="3SH5fe" to="1842:2fBMM_3XZ4P" resolve="width80" />
           </node>
         </node>
         <node concept="1_1sxE" id="4XJOimFQw7m" role="1_0VJ0">
@@ -670,8 +625,8 @@
   <node concept="1_1swa" id="7OKLwZ_7fp5">
     <property role="TrG5h" value="C_FormalVerification" />
     <property role="yApLE" value="1" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
-    <node concept="1mvXsy" id="7OKLwZ_7fp6" role="1_0VJ0">
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <node concept="1_0VNX" id="3mn43GO8lBo" role="1_0VJ0">
       <property role="TrG5h" value="formal_verification" />
       <property role="1_0VJr" value="Formal Verification with CBMC" />
       <node concept="1_0LV8" id="7OKLwZ_7fp7" role="1_0VJ0">
@@ -692,12 +647,12 @@
           <node concept="2vpllh" id="6nRVhifCf5V" role="19SJt6">
             <node concept="19SGf9" id="6nRVhifCf5W" role="$DsGW">
               <node concept="19SUe$" id="6nRVhifCf5X" role="19SJt6">
-                <property role="19SUeA" value=" do not" />
+                <property role="19SUeA" value="do not" />
               </node>
             </node>
           </node>
           <node concept="19SUe$" id="6nRVhifCf5U" role="19SJt6">
-            <property role="19SUeA" value="aim to prove correctness of a system but rather help users to find bugs. Each run of an analysis can provide one of the results: SUCCESS (colored GREEN) - meaning that no bug could be found; FAIL (colored RED) - meaning that a bug could be found, or DON'T KNOW (colored orange) meaning that no bug could be found but the verification is incomplete. When a bug is found, most of the times we have a trace through the system (counterexample) that leads to that failure.\n\nWe distinguish between the following kinds of analyses:" />
+            <property role="19SUeA" value=" aim to prove correctness of a system but rather help users to find bugs. Each run of an analysis can provide one of the results: SUCCESS (colored GREEN) - meaning that no bug could be found; FAIL (colored RED) - meaning that a bug could be found, or DON'T KNOW (colored orange) meaning that no bug could be found but the verification is incomplete. When a bug is found, most of the times we have a trace through the system (counterexample) that leads to that failure.&#10;&#10;We distinguish between the following kinds of analyses:" />
           </node>
         </node>
       </node>
@@ -959,7 +914,7 @@
             <property role="TrG5h" value="verification_process_at_a_glance" />
             <node concept="2Sb_l4" id="4XJOimG0jLf" role="2SbwM5">
               <property role="2Sb_kV" value="analyses/verification_process_at_a_glance.png" />
-              <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+              <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
             </node>
             <node concept="OjmMv" id="4XJOimG0jLg" role="2SaI5j">
               <node concept="19SGf9" id="4XJOimG0jLh" role="OjmMu">
@@ -1026,7 +981,27 @@
         <node concept="1_0LV8" id="3iTDCNuCEhJ" role="1_0VJ0">
           <node concept="19SGf9" id="3iTDCNuCEhK" role="1_0LWR">
             <node concept="19SUe$" id="3iTDCNuCEhL" role="19SJt6">
-              <property role="19SUeA" value="Global settings for CBMC-based analyses can be changed via \&quot;File-&gt;Settings\&quot; menu and then selecting \&quot;CProver preference\&quot; tab as shown below. " />
+              <property role="19SUeA" value="Global settings for CBMC-based analyses can be changed via " />
+            </node>
+            <node concept="2OlAs7" id="yaVrOuBlmi" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuBlmj" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuBlmk" role="19SJt6">
+                  <property role="19SUeA" value="&quot;File-&gt;Settings&quot;" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="yaVrOuBlmh" role="19SJt6">
+              <property role="19SUeA" value=" menu and then selecting " />
+            </node>
+            <node concept="2OlAs7" id="yaVrOuBltE" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOuBltF" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOuBltG" role="19SJt6">
+                  <property role="19SUeA" value="CProver preference" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="yaVrOuBltD" role="19SJt6">
+              <property role="19SUeA" value=" tab as shown below. " />
             </node>
           </node>
         </node>
@@ -1036,7 +1011,7 @@
           <property role="41Bi8" value="true" />
           <node concept="2Sb_l4" id="3iTDCNuCEhN" role="2SbwM5">
             <property role="2Sb_kV" value="analyses/verification_cprover_global_settings.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="3iTDCNuCEhO" role="2SaI5j">
             <node concept="19SGf9" id="3iTDCNuCEhP" role="OjmMu">
@@ -1136,7 +1111,7 @@
                   </node>
                 </node>
                 <node concept="19SUe$" id="4XJOimG0jQP" role="19SJt6">
-                  <property role="19SUeA" value=" before analysis instructs mbeddr to perform a full \&quot;MPS rebuild\&quot; of the analyzed model before each analysis (otherwise only an \&quot;MPS make\&quot; will be run; in MPS, 'just make' is not always functioning properly)." />
+                  <property role="19SUeA" value=" before analysis instructs mbeddr to perform a full &quot;MPS rebuild&quot; of the analyzed model before each analysis (otherwise only an &quot;MPS make&quot; will be run; in MPS, 'just make' is not always functioning properly)." />
                 </node>
               </node>
             </node>
@@ -1248,7 +1223,7 @@
           <property role="41Bi8" value="true" />
           <node concept="2Sb_l4" id="7OKLwZ_9N0m" role="2SbwM5">
             <property role="2Sb_kV" value="analyses/verification_core_devkit.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_9MZK" role="2SaI5j">
             <node concept="19SGf9" id="7OKLwZ_9MZL" role="OjmMu">
@@ -1309,7 +1284,7 @@
           <property role="41Bi8" value="true" />
           <node concept="2Sb_l4" id="7OKLwZ_aMAP" role="2SbwM5">
             <property role="2Sb_kV" value="analyses/verification_robustness_direct_start.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_aMAQ" role="2SaI5j">
             <node concept="19SGf9" id="7OKLwZ_aMAR" role="OjmMu">
@@ -1327,7 +1302,7 @@
           <property role="41Bi8" value="true" />
           <node concept="2Sb_l4" id="7OKLwZ_aMDK" role="2SbwM5">
             <property role="2Sb_kV" value="analyses/verification_config_robustness_item_creation.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_aMDL" role="2SaI5j">
             <node concept="19SGf9" id="7OKLwZ_aMDM" role="OjmMu">
@@ -1350,8 +1325,8 @@
           </node>
           <node concept="2bctqb" id="3JyX84yUg7Z" role="3z_lpT" />
           <node concept="2NCZwO" id="3JyX84yUg81" role="3z_lpI">
-            <node concept="2NCMab" id="3JyX84yUg9V" role="2NCMaf">
-              <ref role="2NCMaa" to="1yl6:7OKLwZ_9N2g" resolve="DemoAnalysesConfigurations" />
+            <node concept="2NCMab" id="4AuO4fdzn$t" role="2NCMaf">
+              <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" resolve="DemoAnalysesConfigurations" />
             </node>
             <node concept="2NCMab" id="3JyX84yUga3" role="2NCMaf">
               <ref role="2NCMaa" to="1yl6:3JyX84yUg6b" resolve="aRobustnessCBMCAnalysis" />
@@ -1364,7 +1339,7 @@
           <property role="41Bi8" value="true" />
           <node concept="2Sb_l4" id="7OKLwZ_aN2S" role="2SbwM5">
             <property role="2Sb_kV" value="analyses/verification_config_robustness_item_start_verification.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_aN2T" role="2SaI5j">
             <node concept="19SGf9" id="7OKLwZ_aN2U" role="OjmMu">
@@ -1524,19 +1499,22 @@
               </node>
             </node>
           </node>
-          <node concept="3z_lpU" id="3JyX84yPgyY" role="1_0VJ0">
-            <property role="3z_lpW" value="mbeddr" />
-            <node concept="2NCZwO" id="3JyX84yPgz0" role="3z_lpI">
-              <node concept="2NCMab" id="3JyX84yPk1W" role="2NCMaf">
+          <node concept="3z_lpz" id="yaVrOuyu4L" role="1_0VJ0">
+            <property role="TrG5h" value="computeBreakingDistance" />
+            <node concept="2NCZwO" id="yaVrOuyu4N" role="3z_lpI">
+              <node concept="2NCMab" id="yaVrOuyu6H" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:3uoNPXnjeUv" resolve="RobustnessExtensionsExamples" />
               </node>
-              <node concept="2NCMab" id="3JyX84yPk24" role="2NCMaf">
+              <node concept="2NCMab" id="yaVrOuyu6Q" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:3uoNPXnjeUw" resolve="computeBreakingDistance" />
               </node>
             </node>
-          </node>
-          <node concept="1_1sxE" id="3JyX84yPtN1" role="1_0VJ0">
-            <property role="TrG5h" value="empty_-1" />
+            <node concept="2bctqb" id="yaVrOuyu4R" role="3z_lpT" />
+            <node concept="OjmMv" id="yaVrOuyu4T" role="3z_lpS">
+              <node concept="19SGf9" id="yaVrOuyu4U" role="OjmMu">
+                <node concept="19SUe$" id="yaVrOuyu4V" role="19SJt6" />
+              </node>
+            </node>
           </node>
           <node concept="1_0LV8" id="3JyX84yPMh$" role="1_0VJ0">
             <node concept="19SGf9" id="3JyX84yPMh_" role="1_0LWR">
@@ -1551,7 +1529,7 @@
             <property role="41Bi8" value="true" />
             <node concept="2Sb_l4" id="3JyX84yPMir" role="2SbwM5">
               <property role="2Sb_kV" value="analyses/verification_dectab_toggle_check.png" />
-              <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+              <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
             </node>
             <node concept="OjmMv" id="3JyX84yPMis" role="2SaI5j">
               <node concept="19SGf9" id="3JyX84yPMit" role="OjmMu">
@@ -1591,7 +1569,7 @@
             <property role="41Bi8" value="true" />
             <node concept="2Sb_l4" id="3JyX84yQTR6" role="2SbwM5">
               <property role="2Sb_kV" value="analyses/verification_dectab_start_verification.png" />
-              <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+              <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
             </node>
             <node concept="OjmMv" id="3JyX84yQTR7" role="2SaI5j">
               <node concept="19SGf9" id="3JyX84yQTR8" role="OjmMu">
@@ -1613,8 +1591,8 @@
             </node>
             <node concept="2bctqb" id="3JyX84yUg2N" role="3z_lpT" />
             <node concept="2NCZwO" id="3JyX84yUg2P" role="3z_lpI">
-              <node concept="2NCMab" id="3JyX84yUg4t" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:7OKLwZ_9N2g" resolve="DemoAnalysesConfigurations" />
+              <node concept="2NCMab" id="4AuO4fdzn$p" role="2NCMaf">
+                <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" resolve="DemoAnalysesConfigurations" />
               </node>
               <node concept="2NCMab" id="3JyX84yUg4_" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:3JyX84yUfVT" resolve="aDecTabCBMCAnalysis" />
@@ -1634,7 +1612,7 @@
             <property role="41Bi8" value="true" />
             <node concept="2Sb_l4" id="3JyX84yQU2Y" role="2SbwM5">
               <property role="2Sb_kV" value="analyses/verification_dectab_results.png" />
-              <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+              <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
             </node>
             <node concept="OjmMv" id="3JyX84yQU2Z" role="2SaI5j">
               <node concept="19SGf9" id="3JyX84yQU30" role="OjmMu">
@@ -1671,6 +1649,8 @@
           </node>
           <node concept="3z_lpU" id="3JyX84yUjCY" role="1_0VJ0">
             <property role="3z_lpW" value="mbeddr" />
+            <property role="3z_lpV" value="statemachine Counter initial = Init {                   &#10;  in event countUp(int16 step) &lt;no binding&gt;             &#10;  in event countDown(int16 step) &lt;no binding&gt;           &#10;  in event start() &lt;no binding&gt;                         &#10;  var int16 counterState = 0                            &#10;                                                        &#10;  state Init {                                          &#10;  on start [ ] -&gt; Counting                              &#10;} state Init                                            &#10;  state Counting {                                      &#10;  on countUp [ ] -&gt; Counting { counterState += step; }  &#10;  on countUp [step &lt; 0] -&gt; Init                         &#10;  on countDown [ ] -&gt; Counting { counterState += step; }&#10;  on countDown [step &lt; 0] -&gt; Init                       &#10;} state Counting                                        &#10;}                                                       " />
+            <property role="3z_lpJ" value="false" />
             <node concept="2NCZwO" id="3JyX84yUjHQ" role="3z_lpI">
               <node concept="2NCMab" id="3JyX84yUjHW" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:3JyX84ySf5_" resolve="RobustnessStatemachinedExamples" />
@@ -1698,6 +1678,8 @@
           </node>
           <node concept="3z_lpU" id="3JyX84yUjYD" role="1_0VJ0">
             <property role="3z_lpW" value="mbeddr" />
+            <property role="3z_lpV" value="checked" />
+            <property role="3z_lpJ" value="false" />
             <node concept="2NCZwO" id="3JyX84yUjYE" role="3z_lpI">
               <node concept="2NCMab" id="3JyX84yUjYF" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:3JyX84ySf5_" resolve="RobustnessStatemachinedExamples" />
@@ -1735,8 +1717,8 @@
             </node>
             <node concept="2bctqb" id="3JyX84yUjDt" role="3z_lpT" />
             <node concept="2NCZwO" id="3JyX84yUjDu" role="3z_lpI">
-              <node concept="2NCMab" id="3JyX84yUjDv" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:7OKLwZ_9N2g" resolve="DemoAnalysesConfigurations" />
+              <node concept="2NCMab" id="4AuO4fdzn$l" role="2NCMaf">
+                <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" resolve="DemoAnalysesConfigurations" />
               </node>
               <node concept="2NCMab" id="3JyX84yUk24" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:3JyX84yUg68" resolve="aStatemachineCBMCAnalysis" />
@@ -1756,7 +1738,7 @@
             <property role="41Bi8" value="true" />
             <node concept="2Sb_l4" id="3JyX84yUjD_" role="2SbwM5">
               <property role="2Sb_kV" value="analyses/verification_statemachine_results.png" />
-              <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+              <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
             </node>
             <node concept="OjmMv" id="3JyX84yUjDA" role="2SaI5j">
               <node concept="19SGf9" id="3JyX84yUjDB" role="OjmMu">
@@ -1851,7 +1833,7 @@
             <property role="41Bi8" value="true" />
             <node concept="2Sb_l4" id="6_lULi3$Wl_" role="2SbwM5">
               <property role="2Sb_kV" value="analyses/verification_assertions_direct_start.png" />
-              <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+              <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
             </node>
             <node concept="OjmMv" id="6_lULi3$WlA" role="2SaI5j">
               <node concept="19SGf9" id="6_lULi3$WlB" role="OjmMu">
@@ -1873,8 +1855,8 @@
             </node>
             <node concept="2bctqb" id="6_lULi3$WOC" role="3z_lpT" />
             <node concept="2NCZwO" id="6_lULi3$WOE" role="3z_lpI">
-              <node concept="2NCMab" id="6_lULi3$WP$" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:7OKLwZ_9N2g" resolve="DemoAnalysesConfigurations" />
+              <node concept="2NCMab" id="4AuO4fdzn$h" role="2NCMaf">
+                <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" resolve="DemoAnalysesConfigurations" />
               </node>
               <node concept="2NCMab" id="6_lULi3$WPG" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:6_lULi3$WOv" resolve="aAssertionsAnalysis" />
@@ -1989,7 +1971,7 @@
             <property role="41Bi8" value="true" />
             <node concept="2Sb_l4" id="6_lULi3AZFU" role="2SbwM5">
               <property role="2Sb_kV" value="analyses/verification_components_direct_start.png" />
-              <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+              <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
             </node>
             <node concept="OjmMv" id="6_lULi3AZFV" role="2SaI5j">
               <node concept="19SGf9" id="6_lULi3AZFW" role="OjmMu">
@@ -2012,8 +1994,8 @@
             </node>
             <node concept="2bctqb" id="6_lULi3I2Ib" role="3z_lpT" />
             <node concept="2NCZwO" id="6_lULi3I2Id" role="3z_lpI">
-              <node concept="2NCMab" id="6_lULi3I2K5" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:7OKLwZ_9N2g" resolve="DemoAnalysesConfigurations" />
+              <node concept="2NCMab" id="4AuO4fdznnf" role="2NCMaf">
+                <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" resolve="DemoAnalysesConfigurations" />
               </node>
               <node concept="2NCMab" id="6_lULi3I2Kd" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:6_lULi3I2Fy" resolve="aComponentsCBMCAnalysis" />
@@ -2033,7 +2015,7 @@
             <property role="41Bi8" value="true" />
             <node concept="2Sb_l4" id="2aAK$SsAnyE" role="2SbwM5">
               <property role="2Sb_kV" value="analyses/verification_components_results.png" />
-              <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+              <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
             </node>
             <node concept="OjmMv" id="2aAK$SsAnyF" role="2SaI5j">
               <node concept="19SGf9" id="2aAK$SsAnyG" role="OjmMu">
@@ -2213,7 +2195,7 @@
   <node concept="1_1swa" id="1ig5EljjfWv">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_Analyses" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="1ig5Eljl80E" role="1_0VJ0">
       <property role="TrG5h" value="fundamentals" />
       <property role="1_0VJr" value="Analyses" />

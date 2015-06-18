@@ -110,6 +110,7 @@
         <property id="4297162197620978190" name="parallel" index="1wNuhe" />
         <property id="4297162197620978193" name="parallelThreads" index="1wNuhh" />
         <property id="4297162197621031140" name="inplace" index="1wOHq$" />
+        <property id="6535001758416941941" name="createStaticRefs" index="3Ej$Sc" />
       </concept>
       <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA">
         <property id="269707337715731330" name="sourcesKind" index="aoJFB" />
@@ -138,6 +139,7 @@
       <property role="1wNuhe" value="true" />
       <property role="1wNuhh" value="4" />
       <property role="1wOHq$" value="true" />
+      <property role="3Ej$Sc" value="true" />
     </node>
     <node concept="398rNT" id="7eF9rfAnzTR" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
@@ -446,24 +448,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3YIXnYN2fVt" role="3bR37C">
-          <node concept="3bR9La" id="3YIXnYN2fVu" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:ymnOULAU0H" resolve="jetbrains.mps.lang.test" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3YIXnYN2fVv" role="3bR37C">
-          <node concept="3bR9La" id="3YIXnYN2fVw" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:7eF9rfAnukf" resolve="com.mbeddr.cc.var.c" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3YIXnYN2fVx" role="3bR37C">
-          <node concept="3bR9La" id="3YIXnYN2fVy" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:7eF9rfAnuj5" resolve="com.mbeddr.cc.var.annotations" />
-          </node>
-        </node>
       </node>
     </node>
     <node concept="22LTRH" id="7eF9rfAnzVt" role="1hWBAP">
@@ -496,6 +480,7 @@
       <property role="1wNuhe" value="true" />
       <property role="1wNuhh" value="4" />
       <property role="1wOHq$" value="true" />
+      <property role="3Ej$Sc" value="true" />
     </node>
     <node concept="398rNT" id="7eF9rfAnzXL" role="1l3spd">
       <property role="TrG5h" value="mps.home" />

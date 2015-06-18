@@ -8,7 +8,6 @@
   <imports>
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="vrqd" ref="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
@@ -2129,6 +2128,9 @@
     </node>
     <node concept="3EZMnI" id="33WP3ANCNvS" role="6VMZX">
       <node concept="2iRkQZ" id="33WP3ANCNvT" role="2iSdaV" />
+      <node concept="PMmxH" id="3xqp6yfs_zy" role="3EZMnx">
+        <ref role="PMmxG" to="vrqd:3xqp6yfmmvz" resolve="TypeSize" />
+      </node>
       <node concept="3EZMnI" id="33WP3ANCNvU" role="3EZMnx">
         <node concept="l2Vlx" id="33WP3ANCNvV" role="2iSdaV" />
         <node concept="3F0ifn" id="33WP3ANCNvW" role="3EZMnx">

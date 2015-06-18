@@ -8,8 +8,6 @@
   <imports>
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" />
-    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -178,42 +176,6 @@
       <node concept="3uibUv" id="4r1mNB_xNId" role="3clF45">
         <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
       </node>
-    </node>
-    <node concept="13i0hz" id="4r1mNB_xNIi" role="13h7CS">
-      <property role="TrG5h" value="isIdempotent" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="ywuz:Ug1Qzfjnwa" resolve="isIdempotent" />
-      <node concept="3Tm1VV" id="4r1mNB_xNIj" role="1B3o_S" />
-      <node concept="3clFbS" id="4r1mNB_xNIo" role="3clF47">
-        <node concept="3clFbF" id="4r1mNB_xNIt" role="3cqZAp">
-          <node concept="1Wc70l" id="4r1mNB_y0Qq" role="3clFbG">
-            <node concept="2OqwBi" id="4r1mNB_y1I4" role="3uHU7w">
-              <node concept="2OqwBi" id="4r1mNB_y0Yk" role="2Oq$k0">
-                <node concept="13iPFW" id="4r1mNB_y0T0" role="2Oq$k0" />
-                <node concept="3TrEf2" id="4r1mNB_y1kt" role="2OqNvi">
-                  <ref role="3Tt5mk" to="cetu:4r1mNB_wZtB" />
-                </node>
-              </node>
-              <node concept="2qgKlT" id="4r1mNB_y2pb" role="2OqNvi">
-                <ref role="37wK5l" to="ywuz:Ug1Qzfjnwa" resolve="isIdempotent" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="4r1mNB_y01C" role="3uHU7B">
-              <node concept="2OqwBi" id="4r1mNB_xZhI" role="2Oq$k0">
-                <node concept="13iPFW" id="4r1mNB_xZcF" role="2Oq$k0" />
-                <node concept="3TrEf2" id="4r1mNB_xZBb" role="2OqNvi">
-                  <ref role="3Tt5mk" to="cetu:4r1mNB_wZt0" />
-                </node>
-              </node>
-              <node concept="2qgKlT" id="4r1mNB_y0EL" role="2OqNvi">
-                <ref role="37wK5l" to="ywuz:Ug1Qzfjnwa" resolve="isIdempotent" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="4r1mNB_xNIp" role="3clF45" />
     </node>
     <node concept="13i0hz" id="4r1mNB_xNIu" role="13h7CS">
       <property role="TrG5h" value="isSideeffectFree" />

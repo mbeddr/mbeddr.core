@@ -734,33 +734,6 @@
       </node>
     </node>
   </node>
-  <node concept="2S6QgY" id="3Fgw5dDiz1N">
-    <property role="3GE5qa" value="trafo" />
-    <property role="TrG5h" value="removeVariabilityTrafoConfig" />
-    <ref role="2ZfgGC" to="qdv7:5JmNU9PAaLk" resolve="VariabilityTransformationConfig" />
-    <node concept="2S6ZIM" id="3Fgw5dDiz1O" role="2ZfVej">
-      <node concept="3clFbS" id="3Fgw5dDiz1P" role="2VODD2">
-        <node concept="3clFbF" id="3Fgw5dDiz1S" role="3cqZAp">
-          <node concept="Xl_RD" id="3Fgw5dDiz1T" role="3clFbG">
-            <property role="Xl_RC" value="Remove" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="3Fgw5dDiz1Q" role="2ZfgGD">
-      <node concept="3clFbS" id="3Fgw5dDiz1R" role="2VODD2">
-        <node concept="3clFbF" id="3Fgw5dDiz1U" role="3cqZAp">
-          <node concept="2OqwBi" id="3Fgw5dDiz1W" role="3clFbG">
-            <node concept="2OqwBi" id="3Fgw5dDizbf" role="2Oq$k0">
-              <node concept="2Sf5sV" id="3Fgw5dDiz1V" role="2Oq$k0" />
-              <node concept="1mfA1w" id="3Fgw5dDizbj" role="2OqNvi" />
-            </node>
-            <node concept="1PgB_6" id="3Fgw5dDiz20" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="2S6QgY" id="2UgJKnRpHvF">
     <property role="3GE5qa" value="programannotations" />
     <property role="TrG5h" value="addFeatureAttributeRef" />

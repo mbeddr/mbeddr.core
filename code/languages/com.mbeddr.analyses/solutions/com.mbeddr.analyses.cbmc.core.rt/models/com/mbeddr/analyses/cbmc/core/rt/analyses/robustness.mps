@@ -6,24 +6,19 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
   </languages>
   <imports>
     <import index="xiaw" ref="r:0cb4b184-9d83-4ed6-8dd4-842bbe536e91(com.mbeddr.analyses.cbmc.rt.analyses.claims)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="tzyt" ref="r:b35b0dd8-a38e-4607-ba37-cc8f7410b705(com.mbeddr.analyses.cbmc.rt.run)" />
     <import index="ood5" ref="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" />
-    <import index="prjo" ref="r:f5e6dfea-4ef7-4231-9ca3-888550b36eea(com.mbeddr.analyses.utils.generator)" />
-    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
-    <import index="8fsg" ref="r:4c26acae-0f84-4664-bc8e-eb85ca6494bf(com.mbeddr.analyses.utils.nodes)" />
-    <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" />
     <import index="rbq9" ref="r:e9339685-9249-4681-a8f5-318d0236a4a8(com.mbeddr.analyses.cbmc.rt.counterexample.raw)" />
     <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="8ear" ref="r:80dc224f-cfbc-4d66-ab57-5e00bae3bc4a(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.builder)" />
     <import index="fw3h" ref="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.progress(MPS.IDEA/com.intellij.openapi.progress@java_stub)" />
+    <import index="qeyn" ref="r:d5ce6636-5f1f-4da1-bbec-81328740259a(com.mbeddr.analyses.cbmc.core.rt.counterexample.lifted.builder)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -207,9 +202,6 @@
       <node concept="3uibUv" id="3x0R1LJ5HeE" role="11_B2D">
         <ref role="3uigEE" node="3x0R1LJ5Hlx" resolve="RobustnessResult" />
       </node>
-      <node concept="3uibUv" id="3x0R1LJ5HeF" role="11_B2D">
-        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
-      </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LJ5HeG" role="jymVt" />
     <node concept="3clFbW" id="3x0R1LJ5HeH" role="jymVt">
@@ -242,7 +234,7 @@
             <ref role="3cqZAo" node="3x0R1LJ5HeK" resolve="tool" />
           </node>
           <node concept="Xl_RD" id="3x0R1LJ5HeU" role="37wK5m">
-            <property role="Xl_RC" value="robustness" />
+            <property role="Xl_RC" value="Robustness Analysis" />
           </node>
           <node concept="37vLTw" id="5uqRFp94c8f" role="37wK5m">
             <ref role="3cqZAo" node="5uqRFp941kG" resolve="pi" />
@@ -779,6 +771,10 @@
         <property role="TrG5h" value="userFriendlyMessage" />
         <node concept="17QB3L" id="3x0R1LJ5HlF" role="1tU5fm" />
       </node>
+      <node concept="37vLTG" id="_F_U16Kt0u" role="3clF46">
+        <property role="TrG5h" value="nodeToSelect" />
+        <node concept="3Tqbb2" id="_F_U16Kt3N" role="1tU5fm" />
+      </node>
       <node concept="3cqZAl" id="3x0R1LJ5HlG" role="3clF45" />
       <node concept="3Tm1VV" id="3x0R1LJ5HlH" role="1B3o_S" />
       <node concept="3clFbS" id="3x0R1LJ5HlI" role="3clF47">
@@ -797,6 +793,19 @@
               <node concept="Xjq3P" id="3x0R1LJ5Hm0" role="2Oq$k0" />
               <node concept="2OwXpG" id="3x0R1LJ5Hm1" role="2OqNvi">
                 <ref role="2Oxat5" node="3x0R1LJ5Hl_" resolve="userFriendlyMessage" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="_F_U16Kt6y" role="3cqZAp">
+          <node concept="37vLTI" id="_F_U16KtrO" role="3clFbG">
+            <node concept="37vLTw" id="_F_U16KtuT" role="37vLTx">
+              <ref role="3cqZAo" node="_F_U16Kt0u" resolve="nodeToSelect" />
+            </node>
+            <node concept="2OqwBi" id="_F_U16Kt7_" role="37vLTJ">
+              <node concept="Xjq3P" id="_F_U16Kt6w" role="2Oq$k0" />
+              <node concept="2S8uIT" id="_F_U16Ktky" role="2OqNvi">
+                <ref role="2S8YL0" to="eqhl:47YXc$vgOwL" resolve="analyzedConcept" />
               </node>
             </node>
           </node>
@@ -948,15 +957,36 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="_F_U16K44p" role="3cqZAp">
+          <node concept="3cpWsn" id="_F_U16K44s" role="3cpWs9">
+            <property role="TrG5h" value="guessed" />
+            <node concept="3Tqbb2" id="_F_U16K44n" role="1tU5fm" />
+            <node concept="2YIFZM" id="_F_U16KsD5" role="33vP2m">
+              <ref role="37wK5l" to="8ear:7iLQIU2Bbpo" resolve="computeNodeToBeSelected" />
+              <ref role="1Pybhc" to="8ear:7iLQIU2BboB" resolve="NodesSelectionUtils" />
+              <node concept="2OqwBi" id="_F_U16KsD6" role="37wK5m">
+                <node concept="37vLTw" id="_F_U16KsD7" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3x0R1LJ5HmL" resolve="lifted" />
+                </node>
+                <node concept="2S8uIT" id="_F_U16KsD8" role="2OqNvi">
+                  <ref role="2S8YL0" to="eqhl:47YXc$vgOwL" resolve="analyzedConcept" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="3x0R1LJ5HmQ" role="3cqZAp">
-          <node concept="2ShNRf" id="3x0R1LJ5HmR" role="3cqZAk">
-            <node concept="1pGfFk" id="3x0R1LJ5HmS" role="2ShVmc">
+          <node concept="2ShNRf" id="_F_U16K1Pd" role="3cqZAk">
+            <node concept="1pGfFk" id="_F_U16K1Pe" role="2ShVmc">
               <ref role="37wK5l" node="3x0R1LJ5HlB" resolve="RobustnessResult" />
-              <node concept="3cpWsa" id="3x0R1LJ5HmT" role="37wK5m">
+              <node concept="3cpWsa" id="_F_U16K1Pf" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LJ5HmL" resolve="lifted" />
               </node>
-              <node concept="37vLTw" id="3x0R1LJ5HmU" role="37wK5m">
+              <node concept="37vLTw" id="_F_U16K1Pg" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LJ5HmG" resolve="userFriendlyMessage" />
+              </node>
+              <node concept="37vLTw" id="_F_U16KsHf" role="37wK5m">
+                <ref role="3cqZAo" node="_F_U16K44s" resolve="guessed" />
               </node>
             </node>
           </node>

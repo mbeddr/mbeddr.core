@@ -40,6 +40,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
@@ -218,6 +219,9 @@
       <node concept="PMmxH" id="2A5UqXK9JKM" role="3EZMnx">
         <ref role="PMmxG" to="r4b4:2A5UqXJPGTA" resolve="iconAndNameCell" />
         <node concept="pVoyu" id="2A5UqXK9K8l" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="xShMh" id="7FEbRSdoYsp" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -837,7 +841,7 @@
     <node concept="3EZMnI" id="4BxItZJ4BoY" role="2wV5jI">
       <node concept="l2Vlx" id="4BxItZJ4Bp0" role="2iSdaV" />
       <node concept="3F0ifn" id="3Ulkr59M5QI" role="3EZMnx">
-        <property role="3F0ifm" value="desktop (gnu)" />
+        <property role="3F0ifm" value="GNU" />
       </node>
       <node concept="3F0ifn" id="7c6uq_OtvlA" role="3EZMnx">
         <property role="3F0ifm" value="paths are not checked" />

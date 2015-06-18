@@ -9,8 +9,8 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="hba4" ref="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -323,6 +323,9 @@
     <node concept="PrWs8" id="7X9xw2qD1CD" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
     </node>
+    <node concept="PrWs8" id="34EVIEX$uM" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:2R5TvtOl$CY" resolve="IStepIntoable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7X9xw2qCMiq">
     <property role="TrG5h" value="InterruptConfigItem" />
@@ -380,17 +383,6 @@
     <property role="TrG5h" value="RegisterAction" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="4vpAkafSVMG" resolve="BaseRegisterElement" />
-  </node>
-  <node concept="1TIwiD" id="4vpAkafS8Dd">
-    <property role="3GE5qa" value="registers.access" />
-    <property role="TrG5h" value="RegsiterAccessDotExpression" />
-    <ref role="1TJDcQ" to="mj1l:1gDNXlE1Mu$" resolve="AbstractDotExpression" />
-    <node concept="PrWs8" id="2z_95LdYrsk" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-    <node concept="PrWs8" id="2z_95Le0chZ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="4vpAkafSOas">
     <property role="3GE5qa" value="registers.access" />

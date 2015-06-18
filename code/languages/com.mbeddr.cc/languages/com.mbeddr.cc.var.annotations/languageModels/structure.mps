@@ -8,7 +8,6 @@
     <import index="qqyh" ref="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
-    <import index="hba4" ref="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -151,22 +150,6 @@
       <property role="20kJfa" value="configurationModel" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="qqyh:5USXI9Kzba8" resolve="ConfigurationModel" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5JmNU9PAaLk">
-    <property role="TrG5h" value="VariabilityTransformationConfig" />
-    <property role="3GE5qa" value="trafo" />
-    <node concept="1TJgyj" id="5JmNU9PAaLl" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="mappings" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5JmNU9PAaLg" resolve="ConfigurationMapping" />
-    </node>
-    <node concept="PrWs8" id="5JmNU9PAeUg" role="PzmwI">
-      <ref role="PrY4T" to="qqyh:5USXI9KzkZI" resolve="IMapping" />
-    </node>
-    <node concept="PrWs8" id="2cCHKvAz7zb" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="1Jq6Hv0f2B">

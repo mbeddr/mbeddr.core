@@ -6,7 +6,6 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
   </languages>
   <imports>
     <import index="xiaw" ref="r:0cb4b184-9d83-4ed6-8dd4-842bbe536e91(com.mbeddr.analyses.cbmc.rt.analyses.claims)" />
@@ -192,9 +191,6 @@
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
-      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
-        <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -226,9 +222,6 @@
       <ref role="3uigEE" to="xiaw:6mJYm3j13OO" resolve="ClaimsAnalyzer" />
       <node concept="3uibUv" id="3x0R1LJ5Cp5" role="11_B2D">
         <ref role="3uigEE" node="3x0R1LJ5Cqx" resolve="CBMCAssertResult" />
-      </node>
-      <node concept="3uibUv" id="3x0R1LJ5Cp6" role="11_B2D">
-        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
       </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LJ5Cp7" role="jymVt" />
@@ -327,7 +320,7 @@
             <ref role="3cqZAo" node="3x0R1LJ5Cpb" resolve="tool" />
           </node>
           <node concept="Xl_RD" id="3x0R1LJ5Cpj" role="37wK5m">
-            <property role="Xl_RC" value="assertion" />
+            <property role="Xl_RC" value="Assertions Analysis" />
           </node>
           <node concept="37vLTw" id="5uqRFp9415e" role="37wK5m">
             <ref role="3cqZAo" node="5uqRFp940GO" resolve="pi" />
@@ -757,21 +750,16 @@
         </node>
         <node concept="aOSgY" id="46evrC8dXTR" role="3cqZAp">
           <node concept="aOSgX" id="46evrC8dYIS" role="aOSgK">
-            <ref role="aOSgM" to="q5q6:637qsduSbtp" resolve="Assert" />
+            <ref role="aOSgM" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
             <node concept="9aQIb" id="46evrC8dYIT" role="aOS0M">
               <node concept="3clFbS" id="46evrC8dYIU" role="9aQI4">
                 <node concept="3clFbF" id="46evrC8dZO1" role="3cqZAp">
                   <node concept="37vLTI" id="46evrC8dZTU" role="3clFbG">
                     <node concept="3cpWs3" id="46evrC8e00o" role="37vLTx">
-                      <node concept="2OqwBi" id="46evrC8e7d3" role="3uHU7w">
-                        <node concept="2OqwBi" id="46evrC8e0bE" role="2Oq$k0">
-                          <node concept="aMNgE" id="46evrC8e05z" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="46evrC8e6GT" role="2OqNvi">
-                            <ref role="3Tt5mk" to="q5q6:637qsduSbtq" />
-                          </node>
-                        </node>
-                        <node concept="2qgKlT" id="46evrC8e7zT" role="2OqNvi">
-                          <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+                      <node concept="2OqwBi" id="3V3CJZuzkUh" role="3uHU7w">
+                        <node concept="aMNgE" id="3V3CJZuzkHZ" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="3V3CJZuMT$q" role="2OqNvi">
+                          <ref role="37wK5l" to="th2u:3V3CJZuMSfi" resolve="getMessage" />
                         </node>
                       </node>
                       <node concept="Xl_RD" id="46evrC8dZUo" role="3uHU7B">

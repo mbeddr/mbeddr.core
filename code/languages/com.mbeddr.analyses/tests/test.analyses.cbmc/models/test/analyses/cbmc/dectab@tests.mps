@@ -8,21 +8,11 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="0" />
   </languages>
   <imports>
     <import index="3h46" ref="r:d540de81-ea7d-4732-953c-fa9c34672949(com.mbeddr.analyses.cbmc.core.rt.testing_utils)" />
-    <import index="tzyt" ref="r:b35b0dd8-a38e-4607-ba37-cc8f7410b705(com.mbeddr.analyses.cbmc.rt.run)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
-    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
     <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
@@ -359,7 +349,7 @@
         <node concept="3clFbH" id="3oJxBI_0vNu" role="3cqZAp" />
         <node concept="3vlDli" id="3oJxBI_0A$Y" role="3cqZAp">
           <node concept="3cmrfG" id="3oJxBI_0AKl" role="3tpDZB">
-            <property role="3cmrfH" value="14" />
+            <property role="3cmrfH" value="33" />
           </node>
           <node concept="2OqwBi" id="3oJxBI_0B50" role="3tpDZA">
             <node concept="37vLTw" id="3oJxBI_0ANz" role="2Oq$k0">
@@ -484,6 +474,96 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="2S1OXleRt1R" role="3cqZAp" />
+        <node concept="3cpWs8" id="2S1OXleRuaI" role="3cqZAp">
+          <node concept="3cpWsn" id="2S1OXleRuaJ" role="3cpWs9">
+            <property role="TrG5h" value="res9" />
+            <node concept="3uibUv" id="2S1OXleRuaK" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="2S1OXleRuaL" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="2S1OXleRuaM" role="37wK5m">
+                <ref role="3cqZAo" node="3oJxBI_0vNj" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="2S1OXleRuaN" role="37wK5m">
+                <property role="Xl_RC" value="DecTab (id: 2) - activation - (0,0)" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2S1OXleRuaO" role="3cqZAp">
+          <node concept="2OqwBi" id="2S1OXleRuaP" role="3vwVQn">
+            <node concept="3cpWsa" id="2S1OXleRuaQ" role="2Oq$k0">
+              <ref role="3cqZAo" node="2S1OXleRuaJ" resolve="res9" />
+            </node>
+            <node concept="liA8E" id="2S1OXleRuaR" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2S1OXleRuPh" role="3cqZAp" />
+        <node concept="3cpWs8" id="2S1OXleRvh3" role="3cqZAp">
+          <node concept="3cpWsn" id="2S1OXleRvh4" role="3cpWs9">
+            <property role="TrG5h" value="res10" />
+            <node concept="3uibUv" id="2S1OXleRvh5" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="2S1OXleRvh6" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="2S1OXleRvh7" role="37wK5m">
+                <ref role="3cqZAo" node="3oJxBI_0vNj" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="2S1OXleRvh8" role="37wK5m">
+                <property role="Xl_RC" value="DecTab (id: 2) - activation - (0,1)" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2S1OXleRvh9" role="3cqZAp">
+          <node concept="2OqwBi" id="2S1OXleRvha" role="3vwVQn">
+            <node concept="3cpWsa" id="2S1OXleRvhb" role="2Oq$k0">
+              <ref role="3cqZAo" node="2S1OXleRvh4" resolve="res10" />
+            </node>
+            <node concept="liA8E" id="2S1OXleRvhc" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2S1OXleRv69" role="3cqZAp" />
+        <node concept="3cpWs8" id="2S1OXleRtkt" role="3cqZAp">
+          <node concept="3cpWsn" id="2S1OXleRtku" role="3cpWs9">
+            <property role="TrG5h" value="res11" />
+            <node concept="3uibUv" id="2S1OXleRtkv" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="2S1OXleRtkw" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="2S1OXleRtkx" role="37wK5m">
+                <ref role="3cqZAo" node="3oJxBI_0vNj" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="2S1OXleRtky" role="37wK5m">
+                <property role="Xl_RC" value="DecTab (id: 2) - activation - (2,0)" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2S1OXleRtkz" role="3cqZAp">
+          <node concept="2OqwBi" id="2S1OXleRtk$" role="3vwVQn">
+            <node concept="3cpWsa" id="2S1OXleRtk_" role="2Oq$k0">
+              <ref role="3cqZAo" node="2S1OXleRtku" resolve="res11" />
+            </node>
+            <node concept="liA8E" id="2S1OXleRtkA" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2S1OXleRtRO" role="3cqZAp" />
+        <node concept="3clFbH" id="2S1OXleRu11" role="3cqZAp" />
+        <node concept="3clFbH" id="2S1OXleRtbX" role="3cqZAp" />
       </node>
     </node>
   </node>

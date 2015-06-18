@@ -7,14 +7,6 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="0" />
   </languages>
   <imports>
@@ -182,14 +174,14 @@
             <node concept="3uibUv" id="29$2IGZfW0u" role="1tU5fm">
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
-            <node concept="2OqwBi" id="29$2IGZfW0v" role="33vP2m">
-              <node concept="37vLTw" id="29$2IGZfW0w" role="2Oq$k0">
+            <node concept="2YIFZM" id="43x69gbI3nt" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <node concept="37vLTw" id="43x69gbI3oC" role="37wK5m">
                 <ref role="3cqZAo" node="29$2IGZfW0f" resolve="results" />
               </node>
-              <node concept="34jXtK" id="29$2IGZfW0x" role="2OqNvi">
-                <node concept="3cmrfG" id="29$2IGZfW0y" role="25WWJ7">
-                  <property role="3cmrfH" value="0" />
-                </node>
+              <node concept="Xl_RD" id="43x69gbI3sh" role="37wK5m">
+                <property role="Xl_RC" value="Assert: a &gt; 0" />
               </node>
             </node>
           </node>
@@ -211,14 +203,14 @@
             <node concept="3uibUv" id="29$2IGZgfqD" role="1tU5fm">
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
-            <node concept="2OqwBi" id="29$2IGZgfqE" role="33vP2m">
-              <node concept="37vLTw" id="29$2IGZgfqF" role="2Oq$k0">
+            <node concept="2YIFZM" id="43x69gbI3wi" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <node concept="37vLTw" id="43x69gbI3wj" role="37wK5m">
                 <ref role="3cqZAo" node="29$2IGZfW0f" resolve="results" />
               </node>
-              <node concept="34jXtK" id="29$2IGZgfqG" role="2OqNvi">
-                <node concept="3cmrfG" id="29$2IGZgfyu" role="25WWJ7">
-                  <property role="3cmrfH" value="1" />
-                </node>
+              <node concept="Xl_RD" id="43x69gbI3wk" role="37wK5m">
+                <property role="Xl_RC" value="Assert: b != 0" />
               </node>
             </node>
           </node>
@@ -240,14 +232,14 @@
             <node concept="3uibUv" id="29$2IGZgftT" role="1tU5fm">
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
-            <node concept="2OqwBi" id="29$2IGZgftU" role="33vP2m">
-              <node concept="37vLTw" id="29$2IGZgftV" role="2Oq$k0">
+            <node concept="2YIFZM" id="43x69gbI3DS" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <node concept="37vLTw" id="43x69gbI3DT" role="37wK5m">
                 <ref role="3cqZAo" node="29$2IGZfW0f" resolve="results" />
               </node>
-              <node concept="34jXtK" id="29$2IGZgftW" role="2OqNvi">
-                <node concept="3cmrfG" id="29$2IGZgfyy" role="25WWJ7">
-                  <property role="3cmrfH" value="2" />
-                </node>
+              <node concept="Xl_RD" id="43x69gbI3DU" role="37wK5m">
+                <property role="Xl_RC" value="Assert: a &gt; b" />
               </node>
             </node>
           </node>
@@ -273,19 +265,6 @@
             </node>
             <node concept="liA8E" id="29$2IGZfW0F" role="2OqNvi">
               <ref role="37wK5l" to="eqhl:126LgZ0NBax" resolve="getFailKind" />
-            </node>
-          </node>
-        </node>
-        <node concept="3vlDli" id="29$2IGZfW0G" role="3cqZAp">
-          <node concept="Xl_RD" id="29$2IGZfW0H" role="3tpDZB">
-            <property role="Xl_RC" value="Assert: a &gt; b" />
-          </node>
-          <node concept="2OqwBi" id="29$2IGZfW0I" role="3tpDZA">
-            <node concept="37vLTw" id="29$2IGZgfyB" role="2Oq$k0">
-              <ref role="3cqZAo" node="29$2IGZgftS" resolve="res2" />
-            </node>
-            <node concept="liA8E" id="29$2IGZfW0K" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:3FNuzGa2mmQ" resolve="getUserFriendlyMessage" />
             </node>
           </node>
         </node>
@@ -422,7 +401,7 @@
         </node>
         <node concept="3vlDli" id="6WBmVK646TH" role="3cqZAp">
           <node concept="Xl_RD" id="6WBmVK646TI" role="3tpDZB">
-            <property role="Xl_RC" value="Assert: a &gt; b" />
+            <property role="Xl_RC" value="Assert: \\result in [2..12[" />
           </node>
           <node concept="2OqwBi" id="6WBmVK646TJ" role="3tpDZA">
             <node concept="37vLTw" id="6WBmVK64dFc" role="2Oq$k0">

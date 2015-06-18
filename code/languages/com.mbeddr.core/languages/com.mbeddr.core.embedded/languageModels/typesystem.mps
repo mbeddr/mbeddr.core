@@ -12,7 +12,6 @@
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="9zoj" ref="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -829,8 +828,8 @@
                       <ref role="3Tt5mk" to="mj1l:7FQByU3CrD1" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="5W7baq$62OW" role="2OqNvi">
-                    <ref role="37wK5l" to="ywuz:Ug1Qzfjnwa" resolve="isIdempotent" />
+                  <node concept="2qgKlT" id="7bk7NuGZjIQ" role="2OqNvi">
+                    <ref role="37wK5l" to="ywuz:6SENleF$SRD" resolve="isSideeffectFree" />
                   </node>
                 </node>
               </node>

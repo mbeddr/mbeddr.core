@@ -4,22 +4,11 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
-    <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="-1" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="96ee7a94-411d-4cf8-9b94-96cad7e52411" name="jetbrains.mps.baseLanguage.jdk7" version="-1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
   </languages>
   <imports>
-    <import index="hh8f" ref="r:10781da5-69e3-49a7-8e25-f6ac0e69d1d1(test.analyses.var.testcode.fm)" />
     <import index="oe3g" ref="r:6529d99e-f27c-4f0d-b5a8-fdfbedcb1e34(com.mbeddr.analyses.sat4j.fm.testing)" />
   </imports>
   <registry>
@@ -53,7 +42,7 @@
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
@@ -529,6 +518,108 @@
         <node concept="3vwNmj" id="3KT4CxILbDW" role="3cqZAp">
           <node concept="37vLTw" id="3KT4CxILbG7" role="3vwVQn">
             <ref role="3cqZAo" node="3KT4CxILbs_" resolve="res" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="4qsm5C8ucu2" role="1SL9yI">
+      <property role="TrG5h" value="testDerivedFeatures6" />
+      <node concept="3cqZAl" id="4qsm5C8ucu3" role="3clF45" />
+      <node concept="3clFbS" id="4qsm5C8ucu4" role="3clF47">
+        <node concept="3SKdUt" id="4qsm5C8ucu5" role="3cqZAp">
+          <node concept="3SKdUq" id="4qsm5C8ucu6" role="3SKWNk">
+            <property role="3SKdUp" value="conflicts constraints on derived features - FAIL" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4qsm5C8ucu7" role="3cqZAp">
+          <node concept="3cpWsn" id="4qsm5C8ucu8" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="10P_77" id="4qsm5C8ucu9" role="1tU5fm" />
+            <node concept="NRdvd" id="4qsm5C8ucua" role="33vP2m">
+              <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
+              <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
+              <node concept="BaHAS" id="4qsm5C8ucub" role="37wK5m">
+                <property role="BaBD8" value="fm" />
+                <property role="BaHAW" value="test.analyses.var.testcode.fm" />
+                <property role="BaGAP" value="" />
+              </node>
+              <node concept="Xl_RD" id="4qsm5C8ucuc" role="37wK5m">
+                <property role="Xl_RC" value="DerivedFeatures6" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vFxKo" id="4qsm5C8uj19" role="3cqZAp">
+          <node concept="37vLTw" id="4qsm5C8uj2i" role="3vFALc">
+            <ref role="3cqZAo" node="4qsm5C8ucu8" resolve="res" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="4qsm5C8uj3b" role="1SL9yI">
+      <property role="TrG5h" value="testDerivedFeatures7" />
+      <node concept="3cqZAl" id="4qsm5C8uj3c" role="3clF45" />
+      <node concept="3clFbS" id="4qsm5C8uj3d" role="3clF47">
+        <node concept="3SKdUt" id="4qsm5C8uj3e" role="3cqZAp">
+          <node concept="3SKdUq" id="4qsm5C8uj3f" role="3SKWNk">
+            <property role="3SKdUp" value="requires constraints on derived features - FAIL" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4qsm5C8uj3g" role="3cqZAp">
+          <node concept="3cpWsn" id="4qsm5C8uj3h" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="10P_77" id="4qsm5C8uj3i" role="1tU5fm" />
+            <node concept="NRdvd" id="4qsm5C8uj3j" role="33vP2m">
+              <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
+              <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
+              <node concept="BaHAS" id="4qsm5C8uj3k" role="37wK5m">
+                <property role="BaBD8" value="fm" />
+                <property role="BaHAW" value="test.analyses.var.testcode.fm" />
+                <property role="BaGAP" value="" />
+              </node>
+              <node concept="Xl_RD" id="4qsm5C8uj3l" role="37wK5m">
+                <property role="Xl_RC" value="DerivedFeatures7" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vFxKo" id="4qsm5C8umJh" role="3cqZAp">
+          <node concept="37vLTw" id="4qsm5C8umKq" role="3vFALc">
+            <ref role="3cqZAo" node="4qsm5C8uj3h" resolve="res" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="4qsm5C8umRP" role="1SL9yI">
+      <property role="TrG5h" value="testDerivedFeatures8" />
+      <node concept="3cqZAl" id="4qsm5C8umRQ" role="3clF45" />
+      <node concept="3clFbS" id="4qsm5C8umRR" role="3clF47">
+        <node concept="3SKdUt" id="4qsm5C8umRS" role="3cqZAp">
+          <node concept="3SKdUq" id="4qsm5C8umRT" role="3SKWNk">
+            <property role="3SKdUp" value="cross constraints on derived features - SUCCESS" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4qsm5C8umRU" role="3cqZAp">
+          <node concept="3cpWsn" id="4qsm5C8umRV" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="10P_77" id="4qsm5C8umRW" role="1tU5fm" />
+            <node concept="NRdvd" id="4qsm5C8umRX" role="33vP2m">
+              <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
+              <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
+              <node concept="BaHAS" id="4qsm5C8umRY" role="37wK5m">
+                <property role="BaBD8" value="fm" />
+                <property role="BaHAW" value="test.analyses.var.testcode.fm" />
+                <property role="BaGAP" value="" />
+              </node>
+              <node concept="Xl_RD" id="4qsm5C8umRZ" role="37wK5m">
+                <property role="Xl_RC" value="DerivedFeatures8" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="4qsm5C8umYP" role="3cqZAp">
+          <node concept="37vLTw" id="4qsm5C8umZY" role="3vwVQn">
+            <ref role="3cqZAo" node="4qsm5C8umRV" resolve="res" />
           </node>
         </node>
       </node>

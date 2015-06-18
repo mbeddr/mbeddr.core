@@ -10,7 +10,6 @@
   <imports>
     <import index="3vkx" ref="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
-    <import index="xvsr" ref="r:18791582-199a-4c4c-a282-6d61b7657294(com.mbeddr.cc.requirements.behavior)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
   <registry>
@@ -25,7 +24,6 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -240,10 +238,11 @@
     <node concept="3aamgX" id="34d3$NxXs5S" role="3acgRq">
       <ref role="30HIoZ" to="3vkx:34d3$NxXpys" resolve="RCaclulationCall" />
       <node concept="gft3U" id="34d3$NxXs6p" role="1lVwrX">
-        <node concept="10Nm6u" id="34d3$NxXs6r" role="gfFT$">
-          <node concept="3_AbJx" id="34d3$NxXs6t" role="lGtFl">
-            <node concept="3_AbJw" id="34d3$NxXs6u" role="3_A0Ny">
-              <node concept="3clFbS" id="34d3$NxXs6v" role="2VODD2">
+        <node concept="3TlMh9" id="6h2Up8zytuz" role="gfFT$">
+          <property role="2hmy$m" value="42" />
+          <node concept="3_AbJx" id="6h2Up8zyuK5" role="lGtFl">
+            <node concept="3_AbJw" id="6h2Up8zyuK7" role="3_A0Ny">
+              <node concept="3clFbS" id="6h2Up8zyuK9" role="2VODD2">
                 <node concept="3cpWs8" id="34d3$NxXs7Q" role="3cqZAp">
                   <node concept="3cpWsn" id="34d3$NxXs7R" role="3cpWs9">
                     <property role="TrG5h" value="expr" />

@@ -238,12 +238,16 @@
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
       <concept id="7830515785164762753" name="jetbrains.mps.lang.generator.structure.MappingConfiguration_Condition" flags="in" index="avzCv" />
+      <concept id="1219952072943" name="jetbrains.mps.lang.generator.structure.DropRootRule" flags="lg" index="aNPBN">
+        <reference id="1219952338328" name="applicableConcept" index="aOQi4" />
+      </concept>
       <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="ln" index="2b32R4">
         <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <property id="1184950341882" name="topPriorityGroup" index="3$yP7D" />
         <child id="7830515785164764091" name="condition" index="avys_" />
+        <child id="1219952894531" name="dropRootRule" index="aQYdv" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
       </concept>
@@ -449,6 +453,12 @@
   <node concept="bUwia" id="3CMDERQUHIC">
     <property role="TrG5h" value="main" />
     <property role="3$yP7D" value="true" />
+    <node concept="3aamgX" id="1xkixXqgu14" role="3acgRq">
+      <ref role="30HIoZ" to="rpmx:4TbX0$8UA61" resolve="EmptyValidationConfigurationElement" />
+      <node concept="gft3U" id="1xkixXqgxlq" role="1lVwrX">
+        <node concept="3clFbH" id="1xkixXqgxlw" role="gfFT$" />
+      </node>
+    </node>
     <node concept="3aamgX" id="5t7wq7uKaqd" role="3acgRq">
       <ref role="30HIoZ" to="rpmx:5t7wq7uqihH" resolve="GdbDebuggerBackend" />
       <node concept="1Koe21" id="5t7wq7uKiVv" role="1lVwrX">
@@ -6412,6 +6422,12 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="bUwia" id="3AspB7_GPDU">
+    <property role="TrG5h" value="deleteLibrary" />
+    <node concept="aNPBN" id="3AspB7_GPDY" role="aQYdv">
+      <ref role="aOQi4" to="rpmx:4WY_RKGwG4d" resolve="DebuggerTestLibrary" />
     </node>
   </node>
 </model>

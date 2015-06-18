@@ -15,12 +15,9 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
-    <import index="cu2c" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
-    <import index="p15z" ref="r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil.behavior)" />
     <import index="x30c" ref="r:04a32be8-7074-4c9c-b2f8-77d4a01a19dc(com.mbeddr.core.debug.debugger)" />
     <import index="exl8" ref="r:9058158e-0926-42f8-8d00-d1d86f1ff722(com.mbeddr.core.debug.behavior)" />
-    <import index="yz9a" ref="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1154,6 +1151,37 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="34EVIEXCJb" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="contributeStepIntoStrategies" />
+      <ref role="13i0hy" to="exl8:2R5TvtOl$D2" resolve="contributeStepIntoStrategies" />
+      <node concept="3Tm1VV" id="34EVIEXCJf" role="1B3o_S" />
+      <node concept="3clFbS" id="34EVIEXCJi" role="3clF47">
+        <node concept="3clFbF" id="34EVIEY5ya" role="3cqZAp">
+          <node concept="2OqwBi" id="34EVIEY6G4" role="3clFbG">
+            <node concept="2OqwBi" id="34EVIEY5U3" role="2Oq$k0">
+              <node concept="13iPFW" id="34EVIEY5y9" role="2Oq$k0" />
+              <node concept="3TrEf2" id="34EVIEY6dA" role="2OqNvi">
+                <ref role="3Tt5mk" to="nbyu:SwwM9UHCHC" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="34EVIEY8mr" role="2OqNvi">
+              <ref role="3Tt5mk" to="nbyu:SwwM9UHwwK" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="34EVIEXCJj" role="3clF46">
+        <property role="TrG5h" value="resultStrategies" />
+        <node concept="_YKpA" id="34EVIEXCJk" role="1tU5fm">
+          <node concept="3uibUv" id="34EVIEXCJl" role="_ZDj9">
+            <ref role="3uigEE" to="x30c:5H3Gp_IJIO2" resolve="IDebugStrategy" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="34EVIEXCJm" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="30ICD1H$njB">
     <property role="3GE5qa" value="registers" />
@@ -1221,30 +1249,6 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="5Bjb6TWNx3S" role="3clF45" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="2z_95LdYrt6">
-    <property role="3GE5qa" value="registers.access" />
-    <ref role="13h7C2" to="nbyu:4vpAkafS8Dd" resolve="RegsiterAccessDotExpression" />
-    <node concept="13hLZK" id="2z_95LdYrxP" role="13h7CW">
-      <node concept="3clFbS" id="2z_95LdYrxQ" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="2z_95LdYFos" role="13h7CS">
-      <property role="TrG5h" value="getDeprecationMessage" />
-      <property role="2Ki8OM" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="p15z:243ufko$Au9" resolve="getDeprecationMessage" />
-      <node concept="3Tm1VV" id="2z_95LdYFot" role="1B3o_S" />
-      <node concept="3clFbS" id="2z_95LdYFoy" role="3clF47">
-        <node concept="3cpWs6" id="2z_95LdZ8Az" role="3cqZAp">
-          <node concept="Xl_RD" id="2z_95LdZ8A_" role="3cqZAk">
-            <property role="Xl_RC" value="Please run the Migrate Dot Expression script" />
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="2z_95LdYFoz" role="3clF45" />
     </node>
   </node>
 </model>

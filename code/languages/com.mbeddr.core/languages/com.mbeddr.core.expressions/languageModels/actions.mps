@@ -16,9 +16,6 @@
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="8dm4" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.internal.collections.runtime(MPS.Core/jetbrains.mps.internal.collections.runtime@java_stub)" />
-    <import index="t6w" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.smodel.generator.smodelAdapter(MPS.Core/jetbrains.mps.lang.smodel.generator.smodelAdapter@java_stub)" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="vrqd" ref="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpfp" ref="r:00000000-0000-4000-0000-011c89590519(jetbrains.mps.baseLanguage.regexp.jetbrains.mps.regexp.accessory)" implicit="true" />
@@ -2755,10 +2752,10 @@
                     <node concept="3cpWsn" id="3M4aPu$PDe0" role="3cpWs9">
                       <property role="TrG5h" value="dotExpression" />
                       <node concept="3Tqbb2" id="3M4aPu$PDdV" role="1tU5fm">
-                        <ref role="ehGHo" to="mj1l:1gDNXlE1Mu$" resolve="AbstractDotExpression" />
+                        <ref role="ehGHo" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
                       </node>
                       <node concept="1PxgMI" id="3M4aPu$PExM" role="33vP2m">
-                        <ref role="1PxNhF" to="mj1l:1gDNXlE1Mu$" resolve="AbstractDotExpression" />
+                        <ref role="1PxNhF" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
                         <node concept="2OqwBi" id="3M4aPu$PDFY" role="1PxMeX">
                           <node concept="37vLTw" id="3M4aPu$PD_u" role="2Oq$k0">
                             <ref role="3cqZAo" node="1SsIqLJKuqe" resolve="child" />
@@ -2829,8 +2826,8 @@
                     <node concept="1mfA1w" id="3M4aPu$P2mR" role="2OqNvi" />
                   </node>
                   <node concept="1mIQ4w" id="3M4aPu$P30B" role="2OqNvi">
-                    <node concept="chp4Y" id="3M4aPu$P_Vt" role="cj9EA">
-                      <ref role="cht4Q" to="mj1l:1gDNXlE1Mu$" resolve="AbstractDotExpression" />
+                    <node concept="chp4Y" id="4CQ1jcsgfG2" role="cj9EA">
+                      <ref role="cht4Q" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
                     </node>
                   </node>
                 </node>

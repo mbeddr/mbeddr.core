@@ -114,6 +114,7 @@
         <property id="4297162197620978190" name="parallel" index="1wNuhe" />
         <property id="4297162197620978193" name="parallelThreads" index="1wNuhh" />
         <property id="4297162197621031140" name="inplace" index="1wOHq$" />
+        <property id="6535001758416941941" name="createStaticRefs" index="3Ej$Sc" />
       </concept>
       <concept id="5507251971038816436" name="jetbrains.mps.build.mps.structure.BuildMps_Generator" flags="ng" index="1yeLz9" />
       <concept id="4278635856200794926" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyExtendLanguage" flags="ng" index="1Busua">
@@ -152,6 +153,7 @@
       <property role="1wNuhe" value="true" />
       <property role="1wNuhh" value="4" />
       <property role="1wOHq$" value="true" />
+      <property role="3Ej$Sc" value="true" />
     </node>
     <node concept="10PD9b" id="44QTgQqTl_A" role="10PD9s" />
     <node concept="3b7kt6" id="44QTgQqTl_B" role="10PD9s" />
@@ -976,6 +978,7 @@
       <property role="1wNuhe" value="true" />
       <property role="1wNuhh" value="4" />
       <property role="1wOHq$" value="true" />
+      <property role="3Ej$Sc" value="true" />
     </node>
     <node concept="22LTRH" id="4OhLxlrzixZ" role="1hWBAP">
       <property role="TrG5h" value="com.mbeddr.tutorial.tests" />
@@ -1192,6 +1195,7 @@
       <property role="1wNuhe" value="true" />
       <property role="1wNuhh" value="4" />
       <property role="1wOHq$" value="true" />
+      <property role="3Ej$Sc" value="true" />
     </node>
     <node concept="10PD9b" id="1cfjnjdI1i1" role="10PD9s" />
     <node concept="3b7kt6" id="1cfjnjdI1i2" role="10PD9s" />
@@ -1365,12 +1369,6 @@
                 <property role="2Ry0Am" value="mbeddr.tutorial.main.msd" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7RTsFiJsJRb" role="3bR37C">
-          <node concept="3bR9La" id="7RTsFiJsJRc" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="7RTsFiJsecw" resolve="tutorial.__spreferences.PlatformTemplates" />
           </node>
         </node>
         <node concept="1SiIV0" id="1FYeOCugGvO" role="3bR37C">

@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="97v6" ref="r:cdcd02c7-c183-4a14-baf5-bd6025a1a5a1(com.mbeddr.analyses.acsl.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" implicit="true" />
   </imports>
   <registry>
@@ -169,6 +170,18 @@
         <node concept="11L4FC" id="10dmWHgvf3i" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="47VdeCsLgQ3">
+    <ref role="1XX52x" to="97v6:47VdeCsLg_U" resolve="FunctionDocumentationWithACSL" />
+    <node concept="3EZMnI" id="47VdeCsLgQQ" role="2wV5jI">
+      <node concept="2iRkQZ" id="47VdeCsLgQR" role="2iSdaV" />
+      <node concept="3F1sOY" id="5Tz48EVRHQ3" role="3EZMnx">
+        <ref role="1NtTu8" to="97v6:5Tz48EVRFxg" />
+      </node>
+      <node concept="3F1sOY" id="5Tz48EVRJqQ" role="3EZMnx">
+        <ref role="1NtTu8" to="vs0r:3wX8xlocnjN" />
       </node>
     </node>
   </node>

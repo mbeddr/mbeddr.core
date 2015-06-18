@@ -19,5 +19,6 @@
   <exported-language name="62296a07-bc38-46d2-8034-198c24063588(com.mbeddr.core.modules.gen)" />
   <exported-language name="f93d1dbe-bfd1-42dd-932a-f375fa6f5373(com.mbeddr.core.make)" />
   <exported-language name="223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)" />
+  <exported-language name="b2da2e1a-b542-47f5-9be0-4dc21efe74a4(com.mbeddr.core.checks)" />
 </dev-kit>
 

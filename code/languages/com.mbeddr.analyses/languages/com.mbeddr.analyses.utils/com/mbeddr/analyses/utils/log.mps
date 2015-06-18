@@ -8,6 +8,7 @@
   <imports>
     <import index="ajxo" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#org.apache.log4j(MPS.Core/org.apache.log4j@java_stub)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -16,6 +17,9 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
@@ -46,6 +50,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -56,6 +61,10 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -122,6 +131,70 @@
         <property role="NWlVz" value="Logs an error." />
       </node>
     </node>
+    <node concept="2tJIrI" id="7$8IbnDjXgU" role="jymVt" />
+    <node concept="2YIFZL" id="7$8IbnDjXjW" role="jymVt">
+      <property role="TrG5h" value="logStatus" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="7$8IbnDjXjX" role="3clF47">
+        <node concept="3clFbF" id="7$8IbnDjXjY" role="3cqZAp">
+          <node concept="2OqwBi" id="7$8IbnDjXjZ" role="3clFbG">
+            <node concept="2YIFZM" id="7$8IbnDjXk0" role="2Oq$k0">
+              <ref role="37wK5l" to="ajxo:~LogManager.getLogger(java.lang.Class):org.apache.log4j.Logger" resolve="getLogger" />
+              <ref role="1Pybhc" to="ajxo:~LogManager" resolve="LogManager" />
+              <node concept="37vLTw" id="7$8IbnDjXk1" role="37wK5m">
+                <ref role="3cqZAo" node="7$8IbnDjXk7" resolve="clazz" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7$8IbnDjXk2" role="2OqNvi">
+              <ref role="37wK5l" to="ajxo:~Category.log(org.apache.log4j.Priority,java.lang.Object):void" resolve="log" />
+              <node concept="10M0yZ" id="7$8IbnDjXk3" role="37wK5m">
+                <ref role="1PxDUh" to="ajxo:~Priority" resolve="Priority" />
+                <ref role="3cqZAo" to="ajxo:~Priority.INFO" resolve="INFO" />
+              </node>
+              <node concept="37vLTw" id="7$8IbnDjXk4" role="37wK5m">
+                <ref role="3cqZAo" node="7$8IbnDjXk9" resolve="statusMsg" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7$M65jpyDj$" role="3cqZAp">
+          <node concept="2OqwBi" id="7$M65jpyDjx" role="3clFbG">
+            <node concept="10M0yZ" id="7$M65jpyDjy" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="7$M65jpyDjz" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="7$M65jpyFwX" role="37wK5m">
+                <node concept="37vLTw" id="7$M65jpyFyR" role="3uHU7w">
+                  <ref role="3cqZAo" node="7$8IbnDjXk9" resolve="statusMsg" />
+                </node>
+                <node concept="Xl_RD" id="7$M65jpyDlG" role="3uHU7B">
+                  <property role="Xl_RC" value="--------- Logger --- " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7$8IbnDjXk5" role="1B3o_S" />
+      <node concept="3cqZAl" id="7$8IbnDjXk6" role="3clF45" />
+      <node concept="37vLTG" id="7$8IbnDjXk7" role="3clF46">
+        <property role="TrG5h" value="clazz" />
+        <node concept="3uibUv" id="7$8IbnDjXk8" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7$8IbnDjXk9" role="3clF46">
+        <property role="TrG5h" value="statusMsg" />
+        <node concept="17QB3L" id="7$8IbnDjXka" role="1tU5fm" />
+      </node>
+      <node concept="NWlO9" id="7$8IbnDjXkb" role="lGtFl">
+        <property role="NWlVz" value="Logs an status." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7$8IbnDjXhZ" role="jymVt" />
     <node concept="3Tm1VV" id="SWpRmW$Kvo" role="1B3o_S" />
     <node concept="NWlO9" id="SWpRmWAheV" role="lGtFl">
       <property role="NWlVz" value="Logging wrapper" />

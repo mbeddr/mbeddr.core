@@ -3,17 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
-    <use id="a482b416-d0c9-473f-8f67-725ed642b3f3" name="com.mbeddr.mpsutil.breadcrumb" version="-1" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -24,7 +13,6 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="yz9a" ref="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" />
-    <import index="hba4" ref="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" />
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -138,6 +126,9 @@
     <node concept="PrWs8" id="2eaTN_ohHu8" role="PzmwI">
       <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
     </node>
+    <node concept="PrWs8" id="3o2OLGv737x" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+    </node>
   </node>
   <node concept="1TIwiD" id="50Lk78xBraf">
     <property role="TrG5h" value="State" />
@@ -231,74 +222,6 @@
       <ref role="PrY4T" to="2gv2:7oVAz7YD2vL" resolve="IChildrenResolver" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6NQSyUTr1dr">
-    <property role="TrG5h" value="TriggerSMStatement" />
-    <property role="3GE5qa" value="c-integration.deprecated" />
-    <property role="R4oN_" value="fire an event into a state machine" />
-    <property role="34LRSv" value="smtrigger" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
-    <node concept="1TJgyj" id="6NQSyUTr1ds" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="statemachine" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="2e3lhtciuHs" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="args" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="1z9MsBsVdGJ" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="event" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1z9MsBsVaJj" resolve="Event" />
-    </node>
-    <node concept="PrWs8" id="7F$yiCcK4Nj" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
-    </node>
-    <node concept="PrWs8" id="4ZnMRYVfHPT" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="PrWs8" id="4ZnMRYV73Uu" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6NQSyUTr8wK">
-    <property role="3GE5qa" value="c-integration" />
-    <property role="TrG5h" value="OutEventRef" />
-    <property role="R4oN_" value="--" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6NQSyUTr8wN" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="outEvent" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1z9MsBsVaJj" resolve="Event" />
-    </node>
-    <node concept="PrWs8" id="6NQSyUTr8wM" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:4ZVDCZCbbK_" resolve="IMemberReference" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1z9MsBsV7Z8">
-    <property role="3GE5qa" value="c-integration.deprecated" />
-    <property role="TrG5h" value="InitializeSMStatement" />
-    <property role="R4oN_" value="initialize a state machine instance" />
-    <property role="34LRSv" value="sminit" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
-    <node concept="1TJgyj" id="1z9MsBsV7Za" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="statemachine" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="5jCi3tJTOg_" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-    <node concept="PrWs8" id="5jCi3tK7EVW" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="1z9MsBsVaJj">
     <property role="3GE5qa" value="machine" />
     <property role="TrG5h" value="Event" />
@@ -383,37 +306,6 @@
     </node>
     <node concept="PrWs8" id="5V1fuArrR$a" role="PzmwI">
       <ref role="PrY4T" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2e3lhtciPDd">
-    <property role="3GE5qa" value="c-integration.deprecated" />
-    <property role="TrG5h" value="IsInStateExpression" />
-    <property role="34LRSv" value="smIsInState" />
-    <property role="R4oN_" value="check the state of a state machine instance" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="1TJgyj" id="2e3lhtciSOO" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="state" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3FSHg1aADay" resolve="AbstractState" />
-    </node>
-    <node concept="1TJgyj" id="2e3lhtciPDe" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="5ngFs$3SyFV" role="PzmwI">
-      <ref role="PrY4T" to="yz9a:2W4z3PKVgeS" resolve="IRestrictToTests" />
-    </node>
-    <node concept="PrWs8" id="70kXLV5wF1R" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
-    </node>
-    <node concept="PrWs8" id="4ZnMRYVsj7n" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="PrWs8" id="4ZnMRYVsjc0" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="7BISmlsIlAZ">
@@ -538,33 +430,6 @@
   <node concept="PlHQZ" id="41KMvfcjScv">
     <property role="3GE5qa" value="machine.binding" />
     <property role="TrG5h" value="IInEventBinding" />
-  </node>
-  <node concept="1TIwiD" id="6W5EUuUDTTt">
-    <property role="3GE5qa" value="c-integration.deprecated" />
-    <property role="TrG5h" value="StatemachineExtVarRef" />
-    <property role="R4oN_" value="--" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="1TJgyj" id="6W5EUuUDTTv" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="statemachine" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="6W5EUuUDTTu" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="var" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4SJV0WTeRxt" resolve="StatemachineVariableDeclaration" />
-    </node>
-    <node concept="PrWs8" id="20ezT9ZDJa8" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="PrWs8" id="70kXLV5yJDF" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
-    </node>
-    <node concept="PrWs8" id="5jCi3tJJilA" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
   </node>
   <node concept="1TIwiD" id="65XyadYNfLA">
     <property role="3GE5qa" value="machine" />
@@ -801,59 +666,6 @@
       <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5ngFs$3SyFU">
-    <property role="3GE5qa" value="c-integration.deprecated" />
-    <property role="TrG5h" value="HasTransitionFiredExpr" />
-    <property role="34LRSv" value="smHasTxFired" />
-    <property role="R4oN_" value="check if a transition has fired" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="1TJgyj" id="5ngFs$3SyG1" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="transition" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="50Lk78xBraV" resolve="Transition" />
-    </node>
-    <node concept="1TJgyj" id="5ngFs$3SyG0" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="5ngFs$3SyFW" role="PzmwI">
-      <ref role="PrY4T" to="yz9a:2W4z3PKVgeS" resolve="IRestrictToTests" />
-    </node>
-    <node concept="PrWs8" id="7XSydqgj3B" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-    <node concept="PrWs8" id="7XSydqgj3I" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="13QNHYGEbqA">
-    <property role="3GE5qa" value="c-integration.deprecated" />
-    <property role="TrG5h" value="SetStateStatement" />
-    <property role="R4oN_" value="sets the state machine into a specific state" />
-    <property role="34LRSv" value="smSetState" />
-    <ref role="1TJDcQ" to="yz9a:1Rr52SXzYA6" resolve="TestSpecificStatement" />
-    <node concept="1TJgyj" id="13QNHYGEbqB" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="state" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3FSHg1aADay" resolve="AbstractState" />
-    </node>
-    <node concept="1TJgyj" id="13QNHYGEbqC" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="7XSydqtCAH" role="PzmwI">
-      <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
-    </node>
-    <node concept="PrWs8" id="7XSydqtCAM" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7iNM$5cFA$P">
     <property role="3GE5qa" value="machine.states.actions" />
     <property role="TrG5h" value="AbstractAction" />
@@ -885,6 +697,9 @@
     </node>
     <node concept="PrWs8" id="7zyJEuzT4Mj" role="PzmwI">
       <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
+    </node>
+    <node concept="PrWs8" id="7pvvgCDVVaA" role="PzmwI">
+      <ref role="PrY4T" to="x27k:6V6S12clNH$" resolve="IDataFlowAnalyzerEntryPoint" />
     </node>
     <node concept="1TJgyj" id="7iNM$5cFD8X" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

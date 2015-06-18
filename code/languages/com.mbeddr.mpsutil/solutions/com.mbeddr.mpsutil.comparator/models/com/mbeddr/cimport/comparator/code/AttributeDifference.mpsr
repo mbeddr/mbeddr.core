@@ -98,9 +98,9 @@
     <property role="TrG5h" value="AttributeDifference" />
     <node concept="2tJIrI" id="DYlgnA$hQw" role="jymVt" />
     <node concept="312cEg" id="DYlgnA$hR5" role="jymVt">
-      <property role="TrG5h" value="role" />
+      <property role="TrG5h" value="attribute" />
       <node concept="3Tm6S6" id="DYlgnA$hR6" role="1B3o_S" />
-      <node concept="17QB3L" id="DYlgnA$hR7" role="1tU5fm" />
+      <node concept="17QB3L" id="1rBPbD3KCHO" role="1tU5fm" />
     </node>
     <node concept="312cEg" id="DYlgnA$hR8" role="jymVt">
       <property role="TrG5h" value="index" />
@@ -108,10 +108,10 @@
       <node concept="10Oyi0" id="DYlgnA$hRa" role="1tU5fm" />
     </node>
     <node concept="312cEg" id="DYlgnA$hRb" role="jymVt">
-      <property role="TrG5h" value="attributeDifferences" />
+      <property role="TrG5h" value="result" />
       <node concept="3Tm6S6" id="DYlgnA$hRc" role="1B3o_S" />
       <node concept="3uibUv" id="DYlgnA$hRd" role="1tU5fm">
-        <ref role="3uigEE" node="DYlgnAAptw" resolve="MpsNodeComparisonResult" />
+        <ref role="3uigEE" node="DYlgnAAptw" resolve="MPSNodeComparisonResult" />
       </node>
     </node>
     <node concept="2tJIrI" id="DYlgnA$hQy" role="jymVt" />
@@ -121,27 +121,27 @@
         <node concept="XkiVB" id="DYlgnA$izf" role="3cqZAp">
           <ref role="37wK5l" node="DYlgnA$tJ6" resolve="NodeDifference" />
           <node concept="3cpWs2" id="DYlgnA$izg" role="37wK5m">
-            <ref role="3cqZAo" node="DYlgnA$izA" resolve="nodeA" />
+            <ref role="3cqZAo" node="DYlgnA$izA" resolve="expected" />
           </node>
           <node concept="3cpWs2" id="DYlgnA$izh" role="37wK5m">
-            <ref role="3cqZAo" node="DYlgnA$izC" resolve="nodeB" />
+            <ref role="3cqZAo" node="DYlgnA$izC" resolve="actual" />
           </node>
           <node concept="3cpWs2" id="DYlgnA$izi" role="37wK5m">
-            <ref role="3cqZAo" node="DYlgnA$izE" resolve="nameForA" />
+            <ref role="3cqZAo" node="DYlgnA$izE" resolve="expectedName" />
           </node>
           <node concept="3cpWs2" id="DYlgnA$izj" role="37wK5m">
-            <ref role="3cqZAo" node="DYlgnA$izG" resolve="nameForB" />
+            <ref role="3cqZAo" node="DYlgnA$izG" resolve="actualName" />
           </node>
         </node>
         <node concept="3clFbF" id="DYlgnA$izk" role="3cqZAp">
           <node concept="37vLTI" id="DYlgnA$izl" role="3clFbG">
             <node concept="3cpWs2" id="DYlgnA$izm" role="37vLTx">
-              <ref role="3cqZAo" node="DYlgnA$izI" resolve="role" />
+              <ref role="3cqZAo" node="DYlgnA$izI" resolve="attribute" />
             </node>
             <node concept="2OqwBi" id="DYlgnA$izn" role="37vLTJ">
               <node concept="Xjq3P" id="DYlgnA$izo" role="2Oq$k0" />
               <node concept="2OwXpG" id="DYlgnA$izp" role="2OqNvi">
-                <ref role="2Oxat5" node="DYlgnA$hR5" resolve="role" />
+                <ref role="2Oxat5" node="DYlgnA$hR5" resolve="attribute" />
               </node>
             </node>
           </node>
@@ -162,61 +162,62 @@
         <node concept="3clFbF" id="DYlgnA$izw" role="3cqZAp">
           <node concept="37vLTI" id="DYlgnA$izx" role="3clFbG">
             <node concept="3cpWs2" id="DYlgnA$izy" role="37vLTx">
-              <ref role="3cqZAo" node="DYlgnA$izM" resolve="attributeDifferences" />
+              <ref role="3cqZAo" node="DYlgnA$izM" resolve="result" />
             </node>
             <node concept="2OqwBi" id="DYlgnA$izz" role="37vLTJ">
               <node concept="Xjq3P" id="DYlgnA$iz$" role="2Oq$k0" />
               <node concept="2OwXpG" id="DYlgnA$iz_" role="2OqNvi">
-                <ref role="2Oxat5" node="DYlgnA$hRb" resolve="attributeDifferences" />
+                <ref role="2Oxat5" node="DYlgnA$hRb" resolve="result" />
               </node>
             </node>
           </node>
         </node>
       </node>
       <node concept="37vLTG" id="DYlgnA$izA" role="3clF46">
-        <property role="TrG5h" value="nodeA" />
+        <property role="TrG5h" value="expected" />
         <node concept="3Tqbb2" id="DYlgnA$izB" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="DYlgnA$izC" role="3clF46">
-        <property role="TrG5h" value="nodeB" />
+        <property role="TrG5h" value="actual" />
         <node concept="3Tqbb2" id="DYlgnA$izD" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="DYlgnA$izE" role="3clF46">
-        <property role="TrG5h" value="nameForA" />
+        <property role="TrG5h" value="expectedName" />
         <node concept="17QB3L" id="DYlgnA$izF" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="DYlgnA$izG" role="3clF46">
-        <property role="TrG5h" value="nameForB" />
+        <property role="TrG5h" value="actualName" />
         <node concept="17QB3L" id="DYlgnA$izH" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="DYlgnA$izI" role="3clF46">
-        <property role="TrG5h" value="role" />
-        <node concept="17QB3L" id="DYlgnA$izJ" role="1tU5fm" />
+        <property role="TrG5h" value="attribute" />
+        <node concept="17QB3L" id="1rBPbD3KCQU" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="DYlgnA$izK" role="3clF46">
         <property role="TrG5h" value="index" />
         <node concept="10Oyi0" id="DYlgnA$izL" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="DYlgnA$izM" role="3clF46">
-        <property role="TrG5h" value="attributeDifferences" />
+        <property role="TrG5h" value="result" />
         <node concept="3uibUv" id="DYlgnA$izN" role="1tU5fm">
-          <ref role="3uigEE" node="DYlgnAAptw" resolve="MpsNodeComparisonResult" />
+          <ref role="3uigEE" node="DYlgnAAptw" resolve="MPSNodeComparisonResult" />
         </node>
       </node>
     </node>
     <node concept="2tJIrI" id="DYlgnA$hQ_" role="jymVt" />
     <node concept="3clFb_" id="DYlgnA$j_p" role="jymVt">
-      <property role="TrG5h" value="getRole" />
-      <node concept="17QB3L" id="DYlgnA$j_q" role="3clF45" />
+      <property role="TrG5h" value="getAttribute" />
       <node concept="3Tm1VV" id="DYlgnA$j_r" role="1B3o_S" />
       <node concept="3clFbS" id="DYlgnA$j_s" role="3clF47">
         <node concept="3clFbF" id="DYlgnA$j_t" role="3cqZAp">
           <node concept="2N2G$s" id="DYlgnA$j_u" role="3clFbG">
-            <ref role="3cqZAo" node="DYlgnA$hR5" resolve="role" />
+            <ref role="3cqZAo" node="DYlgnA$hR5" resolve="attribute" />
           </node>
         </node>
       </node>
+      <node concept="17QB3L" id="1rBPbD3KCRH" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="1rBPbD3J_6j" role="jymVt" />
     <node concept="3clFb_" id="DYlgnA$j_v" role="jymVt">
       <property role="TrG5h" value="getIndex" />
       <node concept="10Oyi0" id="DYlgnA$j_w" role="3clF45" />
@@ -229,6 +230,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="1rBPbD3J_hX" role="jymVt" />
     <node concept="3clFb_" id="DYlgnA$j__" role="jymVt">
       <property role="TrG5h" value="getAttributeDifferences" />
       <node concept="3Tm1VV" id="DYlgnA$j_A" role="1B3o_S" />
@@ -236,7 +238,7 @@
         <node concept="3clFbF" id="DYlgnA$j_C" role="3cqZAp">
           <node concept="2OqwBi" id="DYlgnA$j_D" role="3clFbG">
             <node concept="2N2G$s" id="DYlgnA$j_E" role="2Oq$k0">
-              <ref role="3cqZAo" node="DYlgnA$hRb" resolve="attributeDifferences" />
+              <ref role="3cqZAo" node="DYlgnA$hRb" resolve="result" />
             </node>
             <node concept="liA8E" id="DYlgnA$j_F" role="2OqNvi">
               <ref role="37wK5l" node="DYlgnAAwij" resolve="getDifferences" />
@@ -250,6 +252,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="1rBPbD3J_tD" role="jymVt" />
     <node concept="3clFb_" id="DYlgnA$j_I" role="jymVt">
       <property role="TrG5h" value="getDescription" />
       <property role="1EzhhJ" value="false" />
@@ -263,7 +266,7 @@
               <ref role="37wK5l" node="DYlgnAAVkz" resolve="indent" />
               <node concept="2OqwBi" id="DYlgnA$j_P" role="37wK5m">
                 <node concept="2N2G$s" id="DYlgnA$j_Q" role="2Oq$k0">
-                  <ref role="3cqZAo" node="DYlgnA$hRb" resolve="attributeDifferences" />
+                  <ref role="3cqZAo" node="DYlgnA$hRb" resolve="result" />
                 </node>
                 <node concept="liA8E" id="DYlgnA$j_R" role="2OqNvi">
                   <ref role="37wK5l" node="DYlgnAAwiN" resolve="getDescription" />
@@ -287,7 +290,7 @@
                             <property role="Xl_RC" value="Attribute of role " />
                           </node>
                           <node concept="2N2G$s" id="DYlgnA$jA2" role="3uHU7w">
-                            <ref role="3cqZAo" node="DYlgnA$hR5" resolve="role" />
+                            <ref role="3cqZAo" node="DYlgnA$hR5" resolve="attribute" />
                           </node>
                         </node>
                         <node concept="Xl_RD" id="DYlgnA$jA3" role="3uHU7w">
@@ -295,7 +298,7 @@
                         </node>
                       </node>
                       <node concept="3P9mCS" id="DYlgnA$jA4" role="3uHU7w">
-                        <ref role="37wK5l" node="DYlgnA$vt1" resolve="getNameConceptOfA" />
+                        <ref role="37wK5l" node="DYlgnA$vt1" resolve="getExpectedConceptName" />
                       </node>
                     </node>
                   </node>
@@ -312,11 +315,11 @@
         </node>
       </node>
       <node concept="37vLTG" id="DYlgnA$jA7" role="3clF46">
-        <property role="TrG5h" value="nameForA" />
+        <property role="TrG5h" value="expectedName" />
         <node concept="17QB3L" id="DYlgnA$jA8" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="DYlgnA$jA9" role="3clF46">
-        <property role="TrG5h" value="nameForB" />
+        <property role="TrG5h" value="actualName" />
         <node concept="17QB3L" id="DYlgnA$jAa" role="1tU5fm" />
       </node>
     </node>

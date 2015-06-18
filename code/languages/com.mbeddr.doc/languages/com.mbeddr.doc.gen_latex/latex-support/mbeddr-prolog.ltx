@@ -1,0 +1,133 @@
+\usepackage{amsmath} 
+\usepackage[export]{adjustbox}
+\usepackage{amssymb}
+\usepackage[colorlinks=true,
+        linkcolor=black,
+        citecolor=black, 
+        filecolor=black,      
+        pagecolor=black,  
+        urlcolor=black,  
+        bookmarks=true, 
+        bookmarksopen=true,
+        bookmarksopenlevel=3,
+        plainpages=false,  
+        pdfpagelabels=true]{hyperref} 
+\usepackage{soul}  
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc} 
+\usepackage{comment} 
+%\usepackage{wrapfig} 
+\usepackage{ae}   
+\usepackage{sidecap}
+\usepackage{url}
+\usepackage[T1]{fontenc} 
+\usepackage{verbatim}
+\usepackage{listings} 
+\usepackage{tikz}
+\usepackage{etoolbox}
+\usepackage{fullpage}
+\usepackage{calc}
+
+\newcommand{\changefont}[3]{\fontfamily{#1}\fontseries{#2}\fontshape{#3}\selectfont}
+
+\newcommand\parhead[1]{\vspace{2mm}\noindent\textbf{{#1}}\ \ }  
+  
+\newcommand{\ic}[1]{\changefont{cmtt}{m}{n}{#1}\normalfont}  % inline code
+\newcommand{\lcr}[1]{\changefont{cmtt}{m}{n}{#1}\normalfont} % language
+
+\definecolor{todo}{rgb}{1.0,1.0,0}
+
+\newcommand{\todo}[1]{\colorbox{todo}{#1}}
+
+\definecolor{myGray1}{rgb}{.5,.5,.5}
+\definecolor{myGray3}{rgb}{0.65,0.65,.65}
+\definecolor{myGray2}{rgb}{0.95,0.95,.95}
+\definecolor{myGray4}{rgb}{0.85,0.85,.85}
+
+\definecolor{lightgray}{gray}{0.75}
+
+\definecolor{codecolor}{gray}{0.1}
+\definecolor{blackblack}{gray}{0}
+
+
+\newcommand\greyboxnote[1]{%
+  \vskip\baselineskip%
+  \par\noindent\colorbox{lightgray}{%
+    \begin{minipage}{\textwidth}#1\end{minipage}%
+  }%
+  \vskip\baselineskip%
+}
+
+\usepackage[scaled]{beramono}
+
+
+\lstset{
+basicstyle=\ttfamily\scriptsize\color{codecolor}, 
+keywordstyle=\color{blackblack}\bfseries,       
+% keywordstyle=\color{javadocblue},     
+commentstyle=\color{gray},              
+numbers=left,                           
+numberstyle=\tiny,                      % Line-numbers fonts
+stepnumber=1,                           % Step between two line-numbers
+numbersep=5pt,                          % How far are line-numbers from code
+%backgroundcolor=\color{lightlightgray}, % Choose background color
+tabsize=2,     
+frame=single,
+%xleftmargin=1.5mm,
+%xrightmargin=1.5mm,
+captionpos=b,   
+keepspaces=true,
+xleftmargin=1.5mm,
+xrightmargin=1.5mm,                        % Caption-position = bottom
+breaklines=true,                        % Automatic line breaking?
+breakatwhitespace=false,                % Automatic breaks only at whitespace?
+showspaces=false,                       % Dont make spaces visible
+showtabs=false,                         % Dont make tabls visible
+columns=flexible,                       % Column format
+morekeywords={}  
+} 
+ 
+ 
+\lstdefinelanguage{mbeddr}
+{morekeywords={
+return,test,case,exported,foreach,it,void,sized,assert,rule,as,
+applicable,concept,overrides,do,typeof,if,applicable,error,
+concepts,constraints,can,be,child,ancestor,isNotNull,node,executeTests,
+module, statemachine, events, states, initial, state, on, assert, imports, in,
+event, int, out, local, variables, interface, boolean, component, true, false,
+provides, requires, struct, typedef, assert, cs, pre, post, protocol,
+messagelist, active, extends, null, op, instances, instance, adapt, connect,
+initialize, query, new, init, section, result, introduceunit, for, mock, total,
+no, of, calls, is, sequence, step, parameter, report, messages, validatemock,
+external, const, var, entry, exit, with, sr
+ }, 
+comment=[l]{//}
+}
+
+\lstdefinelanguage{mbeddr-buildconfig}
+{morekeywords={
+executable, isTest, true, false, used, external, libraries, mbeddr, included,
+modules, Configuration, Items, reporting, printf, add, labels, physical, units,
+config, components, wire, statically, no, middleware
+}, comment=[l]{//}
+}
+
+\lstdefinelanguage{mbeddr-units}
+{morekeywords={
+Unit, Configuration, derived, unit, for},
+comment=[l]{//}
+}
+
+\setcounter{tocdepth}{2} 
+
+
+
+\newlength{\imgwidth}
+
+\newcommand\scalegraphics[1]{%   
+    \settowidth{\imgwidth}{\includegraphics{#1}}%
+    \setlength{\imgwidth}{\minof{\imgwidth}{\textwidth}}%
+    \includegraphics[width=\imgwidth]{#1}%
+}

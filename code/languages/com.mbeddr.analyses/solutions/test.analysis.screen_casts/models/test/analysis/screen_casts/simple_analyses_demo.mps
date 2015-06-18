@@ -125,6 +125,10 @@
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
       <concept id="4643433264760980253" name="com.mbeddr.ext.statemachines.structure.InEvent" flags="ng" index="2cfOFI" />
       <concept id="8927638623067326788" name="com.mbeddr.ext.statemachines.structure.EmptyStatemachineContent" flags="ng" index="2h6h52" />
+      <concept id="6118219496725500902" name="com.mbeddr.ext.statemachines.structure.SmTriggerTarget" flags="ng" index="$QhJh">
+        <reference id="6118219496725502924" name="event" index="$QhfV" />
+      </concept>
+      <concept id="6118219496719522740" name="com.mbeddr.ext.statemachines.structure.SmInitTarget" flags="ng" index="Vf_e3" />
       <concept id="1786180596061258962" name="com.mbeddr.ext.statemachines.structure.EventArgRef" flags="ng" index="3498Or">
         <reference id="1786180596061258963" name="arg" index="3498Oq" />
       </concept>
@@ -135,15 +139,8 @@
       <concept id="1786180596061219795" name="com.mbeddr.ext.statemachines.structure.Event" flags="ng" index="349m8q">
         <child id="1786180596061248896" name="args" index="349dh9" />
       </concept>
-      <concept id="1786180596061208520" name="com.mbeddr.ext.statemachines.structure.InitializeSMStatement" flags="ng" index="349ro1">
-        <child id="1786180596061208522" name="statemachine" index="349ro3" />
-      </concept>
       <concept id="1786180596061383227" name="com.mbeddr.ext.statemachines.structure.StatemachineVarRef" flags="ng" index="349IfM">
         <reference id="1786180596061383228" name="var" index="349IfP" />
-      </concept>
-      <concept id="7851711690674279259" name="com.mbeddr.ext.statemachines.structure.TriggerSMStatement" flags="ng" index="3lAJ5P">
-        <reference id="1786180596061231919" name="event" index="349hbA" />
-        <child id="7851711690674279260" name="statemachine" index="3lAJ5M" />
       </concept>
       <concept id="7851711690674263345" name="com.mbeddr.ext.statemachines.structure.StatemachineType" flags="ng" index="3lBjsv">
         <reference id="7851711690674263346" name="machine" index="3lBjss" />
@@ -187,6 +184,9 @@
       </concept>
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
+      </concept>
+      <concept id="4620120465980402700" name="com.mbeddr.core.expressions.structure.GenericDotExpression" flags="ng" index="2qmXGp">
+        <child id="7034214596252529803" name="target" index="1ESnxz" />
       </concept>
       <concept id="5763383285156373013" name="com.mbeddr.core.expressions.structure.PlusExpression" flags="ng" index="2BOciq" />
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
@@ -588,9 +588,12 @@
             <ref role="3lBjss" node="6DXNk$hQryX" resolve="Counter" />
           </node>
         </node>
-        <node concept="349ro1" id="6DXNk$hQtHj" role="3XIRFZ">
-          <node concept="3ZVu4v" id="6DXNk$hQtSF" role="349ro3">
-            <ref role="3ZVs_2" node="6DXNk$hQtG2" resolve="counter" />
+        <node concept="1_9egQ" id="1erouHqJ1mG" role="3XIRFZ">
+          <node concept="2qmXGp" id="1erouHqJ1mF" role="1_9egR">
+            <node concept="3ZVu4v" id="6DXNk$hQtSF" role="1_9fRO">
+              <ref role="3ZVs_2" node="6DXNk$hQtG2" resolve="counter" />
+            </node>
+            <node concept="Vf_e3" id="1erouHqJ1mE" role="1ESnxz" />
           </node>
         </node>
         <node concept="3XISUE" id="6DXNk$hQtSH" role="3XIRFZ" />
@@ -612,10 +615,14 @@
                   <property role="2xgnd9" value="false" />
                   <node concept="3TlMhK" id="6DXNk$hQtFU" role="2c2cwh" />
                   <node concept="3XIRFW" id="6DXNk$hQtFV" role="2c2cwi">
-                    <node concept="3lAJ5P" id="6DXNk$hQtT3" role="3XIRFZ">
-                      <ref role="349hbA" node="6DXNk$hQrzs" resolve="start" />
-                      <node concept="3ZVu4v" id="6DXNk$hQu41" role="3lAJ5M">
-                        <ref role="3ZVs_2" node="6DXNk$hQtG2" resolve="counter" />
+                    <node concept="1_9egQ" id="1erouHqJ1oO" role="3XIRFZ">
+                      <node concept="2qmXGp" id="1erouHqJ1oN" role="1_9egR">
+                        <node concept="3ZVu4v" id="6DXNk$hQu41" role="1_9fRO">
+                          <ref role="3ZVs_2" node="6DXNk$hQtG2" resolve="counter" />
+                        </node>
+                        <node concept="$QhJh" id="1erouHqJ1oM" role="1ESnxz">
+                          <ref role="$QhfV" node="6DXNk$hQrzs" resolve="start" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -624,10 +631,14 @@
                   <property role="2xgnd9" value="false" />
                   <node concept="3TlMhK" id="6DXNk$hQu4e" role="2c2cwh" />
                   <node concept="3XIRFW" id="6DXNk$hQu4f" role="2c2cwi">
-                    <node concept="3lAJ5P" id="6DXNk$hQu4q" role="3XIRFZ">
-                      <ref role="349hbA" node="6DXNk$hQrzA" resolve="step" />
-                      <node concept="3ZVu4v" id="6DXNk$hQu4_" role="3lAJ5M">
-                        <ref role="3ZVs_2" node="6DXNk$hQtG2" resolve="counter" />
+                    <node concept="1_9egQ" id="1erouHqJ1bW" role="3XIRFZ">
+                      <node concept="2qmXGp" id="1erouHqJ1bV" role="1_9egR">
+                        <node concept="3ZVu4v" id="6DXNk$hQu4_" role="1_9fRO">
+                          <ref role="3ZVs_2" node="6DXNk$hQtG2" resolve="counter" />
+                        </node>
+                        <node concept="$QhJh" id="1erouHqJ1bU" role="1ESnxz">
+                          <ref role="$QhfV" node="6DXNk$hQrzA" resolve="step" />
+                        </node>
                       </node>
                     </node>
                   </node>
