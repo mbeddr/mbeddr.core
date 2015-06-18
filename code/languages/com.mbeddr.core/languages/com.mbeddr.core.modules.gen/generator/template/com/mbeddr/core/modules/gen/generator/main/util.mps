@@ -2746,15 +2746,11 @@
           </node>
         </node>
         <node concept="3clFbH" id="3RjRSogOSEM" role="3cqZAp" />
-        <node concept="3SKdUt" id="3RjRSogRsJd" role="3cqZAp">
-          <node concept="3SKWN0" id="3RjRSogRsJh" role="3SKWNk">
-            <node concept="3clFbF" id="3RjRSogOU59" role="3SKWNf">
-              <node concept="1rXfSq" id="3RjRSogOU57" role="3clFbG">
-                <ref role="37wK5l" node="3RjRSogNG3a" resolve="print" />
-                <node concept="37vLTw" id="3RjRSogOUJp" role="37wK5m">
-                  <ref role="3cqZAo" node="2qmAZgXFwSG" resolve="graph" />
-                </node>
-              </node>
+        <node concept="3clFbF" id="3RjRSogOU59" role="3cqZAp">
+          <node concept="1rXfSq" id="3RjRSogOU57" role="3clFbG">
+            <ref role="37wK5l" node="3RjRSogNG3a" resolve="print" />
+            <node concept="37vLTw" id="3RjRSogOUJp" role="37wK5m">
+              <ref role="3cqZAo" node="2qmAZgXFwSG" resolve="graph" />
             </node>
           </node>
         </node>
@@ -3204,7 +3200,7 @@
             <node concept="liA8E" id="3RjRSogNS6k" role="2OqNvi">
               <ref role="37wK5l" to="e2lb:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
               <node concept="Xl_RD" id="3RjRSogNS81" role="37wK5m">
-                <property role="Xl_RC" value="graph dependencies {\n" />
+                <property role="Xl_RC" value="digraph dependencies {\n" />
               </node>
             </node>
           </node>
