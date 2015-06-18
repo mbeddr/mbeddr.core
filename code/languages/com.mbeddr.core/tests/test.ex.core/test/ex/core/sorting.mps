@@ -52,6 +52,14 @@
       <concept id="6116558314501347863" name="com.mbeddr.core.udt.structure.TypeDefType" flags="ng" index="rcJHQ">
         <reference id="6116558314501347864" name="typeDef" index="rcJHT" />
       </concept>
+      <concept id="7099329415459817973" name="com.mbeddr.core.udt.structure.SUDeclaration" flags="ng" index="HsMI8">
+        <child id="7099329415459888018" name="members" index="HszBJ" />
+      </concept>
+      <concept id="5882395403881875736" name="com.mbeddr.core.udt.structure.Member" flags="ng" index="1dpRTG" />
+      <concept id="6394819151180597807" name="com.mbeddr.core.udt.structure.StructDeclaration" flags="ng" index="1sgJKc" />
+      <concept id="6394819151180597816" name="com.mbeddr.core.udt.structure.StructType" flags="ng" index="1sgJKr">
+        <reference id="6394819151180597817" name="struct" index="1sgJKq" />
+      </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
@@ -120,6 +128,33 @@
     </node>
     <node concept="2NXPZ9" id="dxqELdxe$x" role="N3F5h">
       <property role="TrG5h" value="empty_1434635914127_2" />
+    </node>
+    <node concept="2NXPZ9" id="3RjRSogNhJL" role="N3F5h">
+      <property role="TrG5h" value="empty_1434641400334_2" />
+    </node>
+    <node concept="1sgJKc" id="3RjRSogNnLL" role="N3F5h">
+      <property role="TrG5h" value="s" />
+      <node concept="1dpRTG" id="3RjRSogNnNJ" role="HszBJ">
+        <property role="TrG5h" value="a" />
+        <node concept="26Vqph" id="3RjRSogNnNI" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3RjRSogNnJP" role="N3F5h">
+      <property role="TrG5h" value="empty_1434641404301_5" />
+    </node>
+    <node concept="rcJHK" id="3RjRSogNnHt" role="N3F5h">
+      <property role="TrG5h" value="y" />
+      <node concept="1sgJKr" id="3RjRSogNoUr" role="rcJHR">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <ref role="1sgJKq" node="3RjRSogNnLL" resolve="s" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3RjRSogNhM0" role="N3F5h">
+      <property role="TrG5h" value="empty_1434641400618_3" />
     </node>
     <node concept="N3Fnx" id="dxqELd$lob" role="N3F5h">
       <property role="TrG5h" value="main" />
