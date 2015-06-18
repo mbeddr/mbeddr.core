@@ -4,6 +4,9 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
     </modelRoot>
+    <modelRoot contentPath="${module}" type="java_classes">
+      <sourceRoot location="lib/org.eclipse.incquery.runtime.base.itc_1.0.0.201506181354.jar" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
@@ -160,6 +163,9 @@
       </mapping-priorities>
     </generator>
   </generators>
+  <stubModelEntries>
+    <stubModelEntry path="${module}/lib/org.eclipse.incquery.runtime.base.itc_1.0.0.201506181354.jar" />
+  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</dependency>
