@@ -8,6 +8,7 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -159,6 +160,11 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
+    <language id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions">
+      <concept id="5846558918537398687" name="com.mbeddr.mpsutil.intentions.structure.IntentionGroupAnnotation" flags="ng" index="1SWQZ3">
+        <property id="5846558918537400330" name="label" index="1SWRpm" />
+      </concept>
+    </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="734120071946422046" name="com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" flags="ng" index="3kUt_e">
         <child id="734120071946422047" name="expr" index="3kUt_f" />
@@ -309,6 +315,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -403,6 +410,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKIykD" role="lGtFl">
+      <property role="1SWRpm" value="MODULES" />
+    </node>
   </node>
   <node concept="2S6QgY" id="7RiewQ_kDLh">
     <property role="TrG5h" value="addEllipsis" />
@@ -462,6 +472,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKIkW0" role="lGtFl">
+      <property role="1SWRpm" value="FUNC" />
     </node>
   </node>
   <node concept="2S6QgY" id="4VhroexO7Rp">
@@ -538,6 +551,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKIvxd" role="lGtFl">
+      <property role="1SWRpm" value="FUNC" />
     </node>
   </node>
   <node concept="2S6QgY" id="2oCAQmIIH5c">
@@ -673,6 +689,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKIr6S" role="lGtFl">
+      <property role="1SWRpm" value="FUNC" />
     </node>
   </node>
   <node concept="2S6QgY" id="2oCAQmIIOG2">
@@ -813,6 +832,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKIpF8" role="lGtFl">
+      <property role="1SWRpm" value="FUNC" />
     </node>
   </node>
   <node concept="2S6QgY" id="2oCAQmIIQPR">
@@ -961,6 +983,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKIuqc" role="lGtFl">
+      <property role="1SWRpm" value="FUNC" />
+    </node>
   </node>
   <node concept="2S6QgY" id="2oCAQmIIR$L">
     <property role="TrG5h" value="createGlobalVariableFromErrorCell" />
@@ -1101,6 +1126,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKIsJx" role="lGtFl">
+      <property role="1SWRpm" value="MODULES" />
+    </node>
   </node>
   <node concept="2S6QgY" id="5Oog2UbPmsX">
     <property role="TrG5h" value="toggleExtern" />
@@ -1155,6 +1183,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKIyEy" role="lGtFl">
+      <property role="1SWRpm" value="MODULES" />
+    </node>
   </node>
   <node concept="2S6QgY" id="5Oog2UbP_de">
     <property role="TrG5h" value="togglePreventNameMangling" />
@@ -1205,6 +1236,9 @@
         <node concept="3clFbH" id="3pWy65PM04E" role="3cqZAp" />
         <node concept="3clFbH" id="3pWy65PLZQE" role="3cqZAp" />
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKIz8K" role="lGtFl">
+      <property role="1SWRpm" value="MODULES" />
     </node>
   </node>
   <node concept="2ZfgGJ" id="138IYkiw9FZ">
@@ -1278,6 +1312,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKIwv1" role="lGtFl">
+      <property role="1SWRpm" value="FUNC" />
     </node>
   </node>
   <node concept="2S6QgY" id="4SZUaIKn99_">
@@ -1400,6 +1437,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKIuVs" role="lGtFl">
+      <property role="1SWRpm" value="MODULES" />
     </node>
   </node>
   <node concept="2S6QgY" id="1mLkhC6229M">
@@ -1597,6 +1637,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKIqw0" role="lGtFl">
+      <property role="1SWRpm" value="FUNC" />
     </node>
   </node>
   <node concept="312cEu" id="5OkUE7vMLd2">
@@ -2176,6 +2219,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKIvKl" role="lGtFl">
+      <property role="1SWRpm" value="MODULES" />
+    </node>
   </node>
   <node concept="2S6QgY" id="4el8h43_0Sl">
     <property role="TrG5h" value="toggleWillBeInitializedAnnotation" />
@@ -2287,6 +2333,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKIztb" role="lGtFl">
+      <property role="1SWRpm" value="EXPR" />
     </node>
   </node>
   <node concept="2S6QgY" id="2VsHNE73GE1">
@@ -2442,6 +2491,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKIoGv" role="lGtFl">
+      <property role="1SWRpm" value="MODULES" />
     </node>
   </node>
   <node concept="2S6QgY" id="1B$MOTJFtCy">
@@ -2615,6 +2667,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKImIb" role="lGtFl">
+      <property role="1SWRpm" value="MODULES" />
+    </node>
   </node>
   <node concept="2S6QgY" id="2DmyexVFNSQ">
     <property role="TrG5h" value="markAsPure" />
@@ -2676,6 +2731,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKIwae" role="lGtFl">
+      <property role="1SWRpm" value="FUNC" />
     </node>
   </node>
   <node concept="2ZfgGJ" id="5L_EpN41ZT1">
@@ -2757,6 +2815,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKIvY_" role="lGtFl">
+      <property role="1SWRpm" value="FUNC" />
+    </node>
   </node>
   <node concept="2S6QgY" id="MD1ksBFJA1">
     <property role="TrG5h" value="addPointer2GlobalVar" />
@@ -2803,6 +2864,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKIlFA" role="lGtFl">
+      <property role="1SWRpm" value="MODULES" />
     </node>
   </node>
   <node concept="2S6QgY" id="MD1ksBFQht">
@@ -2851,6 +2915,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKIkFt" role="lGtFl">
+      <property role="1SWRpm" value="MODULES" />
+    </node>
   </node>
   <node concept="2S6QgY" id="MD1ksBFXBl">
     <property role="TrG5h" value="addPointer2Arg" />
@@ -2898,6 +2965,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKIljZ" role="lGtFl">
+      <property role="1SWRpm" value="FUNC" />
+    </node>
   </node>
   <node concept="2S6QgY" id="MD1ksBG2vk">
     <property role="TrG5h" value="addArray2Arg" />
@@ -2944,6 +3014,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKIkvu" role="lGtFl">
+      <property role="1SWRpm" value="FUNC" />
     </node>
   </node>
   <node concept="2S6QgY" id="7x9scHw6NXK">
@@ -3049,6 +3122,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKIyRo" role="lGtFl">
+      <property role="1SWRpm" value="MODULES" />
+    </node>
   </node>
   <node concept="2ZfgGJ" id="6bzSKoI6lHa">
     <property role="3GE5qa" value="expr" />
@@ -3137,6 +3213,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKIiZ5" role="lGtFl">
+      <property role="1SWRpm" value="EXPR" />
+    </node>
   </node>
   <node concept="2S6QgY" id="1Iv4$fS2cQ_">
     <property role="TrG5h" value="addEllipsisForGlobalConstantFunDecl" />
@@ -3197,6 +3276,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKIlb2" role="lGtFl">
+      <property role="1SWRpm" value="FUNC" />
     </node>
   </node>
   <node concept="3dkpOd" id="6t992PQ2bUL">
@@ -3517,6 +3599,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKIjUJ" role="lGtFl">
+      <property role="1SWRpm" value="DATAFLOW" />
+    </node>
   </node>
   <node concept="3dkpOd" id="6t992PQ47sU">
     <property role="3GE5qa" value="functions" />
@@ -3807,6 +3892,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKIi97" role="lGtFl">
+      <property role="1SWRpm" value="DATAFLOW" />
     </node>
   </node>
 </model>
