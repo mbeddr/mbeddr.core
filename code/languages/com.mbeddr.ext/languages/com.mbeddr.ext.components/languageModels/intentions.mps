@@ -4,6 +4,7 @@
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
+    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -98,6 +99,11 @@
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
+    </language>
+    <language id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions">
+      <concept id="5846558918537398687" name="com.mbeddr.mpsutil.intentions.structure.IntentionGroupAnnotation" flags="ng" index="1SWQZ3">
+        <property id="5846558918537400330" name="label" index="1SWRpm" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -212,6 +218,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -263,6 +270,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKK59$" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
+    </node>
   </node>
   <node concept="2S6QgY" id="jra7Fnl$Sa">
     <property role="3GE5qa" value="comp" />
@@ -313,6 +323,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKK4BQ" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
     </node>
   </node>
   <node concept="2S6QgY" id="7JjETeGchxA">
@@ -372,6 +385,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKK4Vx" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
     </node>
   </node>
   <node concept="2S6QgY" id="5u7uvg8qxg1">
@@ -785,6 +801,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKK3Hf" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
+    </node>
   </node>
   <node concept="2S6QgY" id="5HTuIUP_k2w">
     <property role="TrG5h" value="addPreCondition" />
@@ -817,6 +836,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJZBB" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
+    </node>
   </node>
   <node concept="2S6QgY" id="5HTuIUPADEz">
     <property role="TrG5h" value="addPostCondition" />
@@ -848,6 +870,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJZtg" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
     </node>
   </node>
   <node concept="2S6QgY" id="5HTuIUPDszd">
@@ -884,6 +909,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKK6Rh" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
+    </node>
   </node>
   <node concept="2S6QgY" id="5oFMniD8XQQ">
     <property role="TrG5h" value="addProtocol" />
@@ -913,6 +941,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJZTG" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
     </node>
   </node>
   <node concept="2S6QgY" id="F_QT7XsLQf">
@@ -950,6 +981,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKK6qR" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
     </node>
   </node>
   <node concept="2S6QgY" id="3NfwoFeE1ts">
@@ -1030,6 +1064,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJZWG" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
+    </node>
   </node>
   <node concept="2S6QgY" id="5Xnv3$QAPyS">
     <property role="3GE5qa" value="comp.runnable.whenconnected" />
@@ -1074,6 +1111,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJZhT" role="lGtFl">
+      <property role="1SWRpm" value="STMT" />
+    </node>
   </node>
   <node concept="2S6QgY" id="3PT6Z48IsdB">
     <property role="3GE5qa" value="comp.runnable" />
@@ -1109,6 +1149,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKK6$F" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
     </node>
   </node>
   <node concept="2S6QgY" id="3PT6Z48KUm8">
@@ -1203,6 +1246,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKK5lM" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
+    </node>
   </node>
   <node concept="2S6QgY" id="3PT6Z48LODN">
     <property role="3GE5qa" value="comp.runnable" />
@@ -1260,6 +1306,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKK6i0" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
+    </node>
   </node>
   <node concept="2S6QgY" id="1lsyexBKYCb">
     <property role="3GE5qa" value="intf.cs" />
@@ -1296,6 +1345,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKK5EU" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
+    </node>
   </node>
   <node concept="2S6QgY" id="1lsyexBNOrw">
     <property role="3GE5qa" value="comp.ports" />
@@ -1324,6 +1376,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJZ3w" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
     </node>
   </node>
   <node concept="2S6QgY" id="2ZUGF54k33m">
@@ -1397,6 +1452,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKK6HY" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
+    </node>
   </node>
   <node concept="2S6QgY" id="5meTu9orykm">
     <property role="3GE5qa" value="comp.ports" />
@@ -1433,6 +1491,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKK7a$" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
+    </node>
   </node>
   <node concept="2S6QgY" id="1ijJyTDpEaA">
     <property role="3GE5qa" value="adapter" />
@@ -1468,6 +1529,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKK716" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
     </node>
   </node>
   <node concept="2S6QgY" id="2oCAQmIIH5c">
@@ -1603,6 +1667,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKK0GN" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
     </node>
   </node>
   <node concept="2S6QgY" id="5OkUE7vOdFK">
@@ -1740,6 +1807,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKK0h9" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
+    </node>
   </node>
   <node concept="2S6QgY" id="3lVSx$8FRDU">
     <property role="3GE5qa" value="intf.sr" />
@@ -1777,6 +1847,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKK7kq" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
+    </node>
   </node>
   <node concept="2S6QgY" id="1PvAkX2tdEr">
     <property role="3GE5qa" value="intf.sr" />
@@ -1813,6 +1886,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKK5xL" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
     </node>
   </node>
   <node concept="2S6QgY" id="29JE8qNv4NT">
@@ -1896,6 +1972,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKK62w" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
+    </node>
   </node>
   <node concept="2S6QgY" id="7moPk051JMN">
     <property role="TrG5h" value="toogleDirectCallable" />
@@ -1957,6 +2036,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKK7vl" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
     </node>
   </node>
   <node concept="2ZfgGJ" id="5L_EpN48wT$">
@@ -2020,6 +2102,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKK4oT" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
     </node>
   </node>
   <node concept="2S6QgY" id="aFniQFDrPh">
@@ -2144,6 +2229,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJYPy" role="lGtFl">
+      <property role="1SWRpm" value="COMPS" />
     </node>
   </node>
 </model>
