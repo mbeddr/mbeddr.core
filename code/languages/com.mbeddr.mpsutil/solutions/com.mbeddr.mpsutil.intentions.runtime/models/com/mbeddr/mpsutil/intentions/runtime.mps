@@ -2749,9 +2749,7 @@
         <node concept="3clFbJ" id="3pwG8PSsw$H" role="3cqZAp">
           <node concept="3clFbS" id="3pwG8PSsw$J" role="3clFbx">
             <node concept="3cpWs6" id="3pwG8PSsxQ$" role="3cqZAp">
-              <node concept="Xl_RD" id="3pwG8PSsybc" role="3cqZAk">
-                <property role="Xl_RC" value="ABCEF" />
-              </node>
+              <node concept="Xl_RD" id="3pwG8PSsybc" role="3cqZAk" />
             </node>
           </node>
           <node concept="3eOVzh" id="3pwG8PSsxLI" role="3clFbw">
