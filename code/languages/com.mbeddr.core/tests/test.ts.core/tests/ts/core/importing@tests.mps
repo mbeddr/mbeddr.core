@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -49,6 +50,11 @@
         <reference id="8719112291175211414" name="template" index="2xfifS" />
       </concept>
     </language>
+    <language id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning">
+      <concept id="9116320848000879253" name="com.mbeddr.mpsutil.suppresswarning.structure.SuppressWarnings" flags="ng" index="2P5Msn">
+        <child id="9116320848000879254" name="kinds" index="2P5Msk" />
+      </concept>
+    </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
@@ -56,9 +62,6 @@
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="7787579437361950085" name="com.mbeddr.core.base.structure.SuppressWarnings" flags="ng" index="242QuT">
-        <child id="5213617122587433763" name="kinds" index="yVqo5" />
-      </concept>
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
@@ -293,8 +296,8 @@
         <node concept="7CXmI" id="6uZAbUKf2my" role="lGtFl">
           <node concept="7OXhh" id="6uZAbUKf2mz" role="7EUXB" />
         </node>
-        <node concept="242QuT" id="7NFOBxm3B8R" role="lGtFl">
-          <node concept="BCzjf" id="7NFOBxm3Bat" role="yVqo5" />
+        <node concept="2P5Msn" id="7NFOBxm3B8R" role="lGtFl">
+          <node concept="BCzjf" id="79g_UwK0wii" role="2P5Msk" />
         </node>
       </node>
     </node>

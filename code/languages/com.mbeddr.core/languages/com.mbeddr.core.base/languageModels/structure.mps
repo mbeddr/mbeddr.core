@@ -1426,23 +1426,6 @@
       <ref role="PrY4T" node="65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6Kj2zNC66Q5">
-    <property role="TrG5h" value="SuppressWarnings" />
-    <property role="3GE5qa" value="suppress" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="1TJgyj" id="4xqvipEHXGz" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="kinds" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="4xqvipEHW7T" resolve="SuppressWarningKind" />
-    </node>
-    <node concept="M6xJ_" id="6Kj2zNC68yj" role="lGtFl">
-      <property role="Hh88m" value="suppressWarning" />
-      <node concept="trNpa" id="6Kj2zNC68yl" role="EQaZv">
-        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
-      </node>
-    </node>
-  </node>
   <node concept="PlHQZ" id="3VlwR$fEpF9">
     <property role="TrG5h" value="IInstantiatedOnlyInGenerators" />
   </node>
@@ -1729,21 +1712,6 @@
   <node concept="PlHQZ" id="3RtPbXOi5Ir">
     <property role="3GE5qa" value="commenting" />
     <property role="TrG5h" value="ITriggerCommenting" />
-  </node>
-  <node concept="1TIwiD" id="4xqvipEHW7T">
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="TrG5h" value="SuppressWarningKind" />
-    <property role="R4oN_" value="kind of warning that can be suppressed" />
-    <property role="3GE5qa" value="suppress" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="5Sez0xTJ6Mk">
-    <property role="3GE5qa" value="suppress" />
-    <property role="TrG5h" value="SuppressAllWarnings" />
-    <property role="34LRSv" value="all" />
-    <property role="R4oN_" value="suppress all warnings" />
-    <ref role="1TJDcQ" node="4xqvipEHW7T" resolve="SuppressWarningKind" />
   </node>
 </model>
 
