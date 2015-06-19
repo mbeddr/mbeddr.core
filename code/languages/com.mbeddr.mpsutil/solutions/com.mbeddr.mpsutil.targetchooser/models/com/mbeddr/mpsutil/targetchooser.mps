@@ -44,6 +44,7 @@
     <import index="ycmz" ref="r:af3e1a90-527b-4262-8066-857208a4f4fb(de.slisson.mps.reflection.runtime)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="1p1s" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps(MPS.Core/jetbrains.mps@java_stub)" />
     <import index="1t7x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -102,6 +103,10 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
         <child id="1164879758292" name="body" index="SfCbr" />
@@ -2615,6 +2620,106 @@
             <ref role="3cqZAo" node="2Nt6pro7ngi" resolve="myProject" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2KYX2G1uIlB" role="jymVt" />
+    <node concept="3clFb_" id="2KYX2G1uJJX" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="runRebuildAction" />
+      <property role="DiZV1" value="false" />
+      <property role="IEkAT" value="false" />
+      <node concept="3Tm1VV" id="2KYX2G1uJJY" role="1B3o_S" />
+      <node concept="3cqZAl" id="2KYX2G1uJK0" role="3clF45" />
+      <node concept="37vLTG" id="2KYX2G1uJK1" role="3clF46">
+        <property role="TrG5h" value="rebuildAction" />
+        <node concept="3uibUv" id="2KYX2G1uJK2" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~Runnable" resolve="Runnable" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2KYX2G1uJK3" role="3clF46">
+        <property role="TrG5h" value="saveExpansion" />
+        <node concept="10P_77" id="2KYX2G1uJK4" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="2KYX2G1uJK6" role="3clF47">
+        <node concept="3SKdUt" id="2KYX2G1vN8M" role="3cqZAp">
+          <node concept="3SKdUq" id="2KYX2G1vNd2" role="3SKWNk">
+            <property role="3SKdUp" value="make it work in unit tests" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2KYX2G1uPS1" role="3cqZAp">
+          <node concept="3clFbS" id="2KYX2G1uPS3" role="3clFbx">
+            <node concept="3cpWs8" id="2KYX2G1uUS9" role="3cqZAp">
+              <node concept="3cpWsn" id="2KYX2G1uUSa" role="3cpWs9">
+                <property role="TrG5h" value="wasTestMode" />
+                <node concept="3uibUv" id="2KYX2G1uUS8" role="1tU5fm">
+                  <ref role="3uigEE" to="1p1s:~TestMode" resolve="TestMode" />
+                </node>
+                <node concept="2YIFZM" id="2KYX2G1uUSb" role="33vP2m">
+                  <ref role="37wK5l" to="1p1s:~RuntimeFlags.getTestMode():jetbrains.mps.TestMode" resolve="getTestMode" />
+                  <ref role="1Pybhc" to="1p1s:~RuntimeFlags" resolve="RuntimeFlags" />
+                </node>
+              </node>
+            </node>
+            <node concept="2GUZhq" id="2KYX2G1uVB$" role="3cqZAp">
+              <node concept="3clFbS" id="2KYX2G1uVBA" role="2GV8ay">
+                <node concept="3clFbF" id="2KYX2G1uMmJ" role="3cqZAp">
+                  <node concept="2YIFZM" id="2KYX2G1uSZU" role="3clFbG">
+                    <ref role="37wK5l" to="1p1s:~RuntimeFlags.setTestMode(jetbrains.mps.TestMode):void" resolve="setTestMode" />
+                    <ref role="1Pybhc" to="1p1s:~RuntimeFlags" resolve="RuntimeFlags" />
+                    <node concept="Rm8GO" id="2KYX2G1uTBx" role="37wK5m">
+                      <ref role="Rm8GQ" to="1p1s:~TestMode.NONE" resolve="NONE" />
+                      <ref role="1Px2BO" to="1p1s:~TestMode" resolve="TestMode" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="2KYX2G1uVMi" role="3cqZAp">
+                  <node concept="3nyPlj" id="2KYX2G1uVMj" role="3clFbG">
+                    <ref role="37wK5l" to="mlq0:~MPSTree.runRebuildAction(java.lang.Runnable,boolean):void" resolve="runRebuildAction" />
+                    <node concept="37vLTw" id="2KYX2G1uVMk" role="37wK5m">
+                      <ref role="3cqZAo" node="2KYX2G1uJK1" resolve="rebuildAction" />
+                    </node>
+                    <node concept="37vLTw" id="2KYX2G1uVMl" role="37wK5m">
+                      <ref role="3cqZAo" node="2KYX2G1uJK3" resolve="saveExpansion" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="2KYX2G1uVBB" role="2GVbov">
+                <node concept="3clFbF" id="2KYX2G1uWrS" role="3cqZAp">
+                  <node concept="2YIFZM" id="2KYX2G1uWu0" role="3clFbG">
+                    <ref role="37wK5l" to="1p1s:~RuntimeFlags.setTestMode(jetbrains.mps.TestMode):void" resolve="setTestMode" />
+                    <ref role="1Pybhc" to="1p1s:~RuntimeFlags" resolve="RuntimeFlags" />
+                    <node concept="37vLTw" id="2KYX2G1uX3A" role="37wK5m">
+                      <ref role="3cqZAo" node="2KYX2G1uUSa" resolve="wasTestMode" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2YIFZM" id="2KYX2G1uStf" role="3clFbw">
+            <ref role="1Pybhc" to="1p1s:~RuntimeFlags" resolve="RuntimeFlags" />
+            <ref role="37wK5l" to="1p1s:~RuntimeFlags.isTestMode():boolean" resolve="isTestMode" />
+          </node>
+          <node concept="9aQIb" id="2KYX2G1uSul" role="9aQIa">
+            <node concept="3clFbS" id="2KYX2G1uSum" role="9aQI4">
+              <node concept="3clFbF" id="2KYX2G1uJKb" role="3cqZAp">
+                <node concept="3nyPlj" id="2KYX2G1uJKa" role="3clFbG">
+                  <ref role="37wK5l" to="mlq0:~MPSTree.runRebuildAction(java.lang.Runnable,boolean):void" resolve="runRebuildAction" />
+                  <node concept="37vLTw" id="2KYX2G1uJK8" role="37wK5m">
+                    <ref role="3cqZAo" node="2KYX2G1uJK1" resolve="rebuildAction" />
+                  </node>
+                  <node concept="37vLTw" id="2KYX2G1uJK9" role="37wK5m">
+                    <ref role="3cqZAo" node="2KYX2G1uJK3" resolve="saveExpansion" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2KYX2G1uJK7" role="2AJF6D">
+        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
       </node>
     </node>
   </node>
