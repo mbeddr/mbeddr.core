@@ -4,6 +4,7 @@
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   </languages>
@@ -105,6 +106,11 @@
         <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
       </concept>
     </language>
+    <language id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning">
+      <concept id="9116320848000879253" name="com.mbeddr.mpsutil.suppresswarning.structure.SuppressWarnings" flags="ng" index="2P5Msn">
+        <child id="9116320848000879254" name="kinds" index="2P5Msk" />
+      </concept>
+    </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="3073566081777391256" name="com.mbeddr.core.util.structure.WithMemberAssignment" flags="ng" index="8C5q9">
         <reference id="3073566081777391258" name="element" index="8C5qb" />
@@ -173,9 +179,6 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="7787579437361950085" name="com.mbeddr.core.base.structure.SuppressWarnings" flags="ng" index="242QuT">
-        <child id="5213617122587433763" name="kinds" index="yVqo5" />
-      </concept>
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
@@ -1688,8 +1691,8 @@
         <node concept="7CXmI" id="RsLjUnPebS" role="lGtFl">
           <node concept="7OXhh" id="RsLjUnPebT" role="7EUXB" />
         </node>
-        <node concept="242QuT" id="7NFOBxm2LzS" role="lGtFl">
-          <node concept="BCzjf" id="7NFOBxm2L$2" role="yVqo5" />
+        <node concept="2P5Msn" id="7NFOBxm2LzS" role="lGtFl">
+          <node concept="BCzjf" id="79g_UwK1hwT" role="2P5Msk" />
         </node>
       </node>
     </node>
@@ -1921,8 +1924,8 @@
         <node concept="7CXmI" id="j_pDIZw2iR" role="lGtFl">
           <node concept="7OXhh" id="j_pDIZw2iS" role="7EUXB" />
         </node>
-        <node concept="242QuT" id="7NFOBxm2Vky" role="lGtFl">
-          <node concept="BCzjf" id="7NFOBxm2VrJ" role="yVqo5" />
+        <node concept="2P5Msn" id="7NFOBxm2Vky" role="lGtFl">
+          <node concept="BCzjf" id="79g_UwK1hTe" role="2P5Msk" />
         </node>
       </node>
     </node>
@@ -3163,8 +3166,8 @@
         <node concept="2NXPZ9" id="18IM2C3DwMD" role="N3F5h">
           <property role="TrG5h" value="empty_1390382393197_4" />
         </node>
-        <node concept="242QuT" id="7NFOBxm2DGS" role="lGtFl">
-          <node concept="BCzjf" id="7NFOBxm2JZU" role="yVqo5" />
+        <node concept="2P5Msn" id="7NFOBxm2DGS" role="lGtFl">
+          <node concept="BCzjf" id="79g_UwK1hpU" role="2P5Msk" />
         </node>
       </node>
     </node>
