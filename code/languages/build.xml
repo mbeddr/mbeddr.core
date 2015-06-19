@@ -410,6 +410,7 @@
     <antcall target="test-ext-ts" />
     <antcall target="test-ext-ex-generate" />
     <antcall target="test-ext-ex-run" />
+    <antcall target="test-sl-all" />
 </target>
 
 <target name="test-ext-ex-generate">				  
@@ -438,6 +439,11 @@
 <ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${generate-code.task}" />	 	 			   
 <ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${build-plugin.task}" /> 	 
 <ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${run-tests.task}" />	
+</target>
+
+<target name="test-sl-all">
+   <ant antfile="${mbeddr.github.core.home}/code/plugins/sl-all/build-tests.xml" dir="${mbeddr.github.core.home}/code/plugins/sl-all" target="${generate-code.task}" />	 			
+   <ant antfile="${mbeddr.github.core.home}/code/plugins/sl-all/build-tests.xml" dir="${mbeddr.github.core.home}/code/plugins/sl-all" target="${run-tests.task}" />	 			
 </target>
 
 <target name="build-tutorial" depends="build-sl-all">	  	   	  	  

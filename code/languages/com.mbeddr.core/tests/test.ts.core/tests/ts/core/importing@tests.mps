@@ -56,6 +56,9 @@
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="7787579437361950085" name="com.mbeddr.core.base.structure.SuppressWarnings" flags="ng" index="242QuT">
+        <child id="5213617122587433763" name="kinds" index="yVqo5" />
+      </concept>
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
@@ -65,6 +68,7 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
+      <concept id="6777508457268164807" name="com.mbeddr.core.modules.structure.SuppressDataFlowWarning" flags="ng" index="BCzjf" />
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
         <child id="1317894735999304826" name="imports" index="2OODSX" />
@@ -288,6 +292,9 @@
         </node>
         <node concept="7CXmI" id="6uZAbUKf2my" role="lGtFl">
           <node concept="7OXhh" id="6uZAbUKf2mz" role="7EUXB" />
+        </node>
+        <node concept="242QuT" id="7NFOBxm3B8R" role="lGtFl">
+          <node concept="BCzjf" id="7NFOBxm3Bat" role="yVqo5" />
         </node>
       </node>
     </node>
