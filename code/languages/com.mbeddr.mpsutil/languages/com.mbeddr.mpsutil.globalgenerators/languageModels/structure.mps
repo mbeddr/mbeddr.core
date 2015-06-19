@@ -45,7 +45,7 @@
   </node>
   <node concept="1TIwiD" id="5IjJXlXZ1vG">
     <property role="TrG5h" value="ContributionQuery" />
-    <property role="34LRSv" value="contribute" />
+    <property role="34LRSv" value="getAdditionalLanguages" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="5IjJXlXZ7hv">
