@@ -298,5 +298,94 @@
     <property role="34LRSv" value="writeBool" />
     <ref role="1TJDcQ" node="1LleiTOpB6v" resolve="PrimitiveWrite" />
   </node>
+  <node concept="1TIwiD" id="2_XJnzLo$lo">
+    <property role="3GE5qa" value="primitives.read" />
+    <property role="TrG5h" value="PrimitiveRead" />
+    <ref role="1TJDcQ" node="1LleiTOpv2q" resolve="PrimitiveReadWrite" />
+  </node>
+  <node concept="1TIwiD" id="2_XJnzLo$lp">
+    <property role="3GE5qa" value="primitives.read" />
+    <property role="TrG5h" value="ReadArrayMarker" />
+    <property role="34LRSv" value="ReadArrayMarker" />
+    <ref role="1TJDcQ" node="2_XJnzLo$lo" resolve="PrimitiveRead" />
+  </node>
+  <node concept="1TIwiD" id="2_XJnzLo$lq">
+    <property role="3GE5qa" value="primitives.read" />
+    <property role="TrG5h" value="ReadBool" />
+    <property role="34LRSv" value="readBool" />
+    <ref role="1TJDcQ" node="2_XJnzLo$lo" resolve="PrimitiveRead" />
+  </node>
+  <node concept="1TIwiD" id="2_XJnzLo$lr">
+    <property role="3GE5qa" value="primitives.read" />
+    <property role="TrG5h" value="ReadDouble" />
+    <property role="34LRSv" value="readDouble" />
+    <ref role="1TJDcQ" node="2_XJnzLo$lo" resolve="PrimitiveRead" />
+  </node>
+  <node concept="1TIwiD" id="2_XJnzLo$ls">
+    <property role="3GE5qa" value="primitives.read" />
+    <property role="TrG5h" value="ReadFloat" />
+    <property role="34LRSv" value="readFloat" />
+    <ref role="1TJDcQ" node="2_XJnzLo$lo" resolve="PrimitiveRead" />
+  </node>
+  <node concept="1TIwiD" id="2_XJnzLo$lt">
+    <property role="3GE5qa" value="primitives.read" />
+    <property role="TrG5h" value="ReadInt16" />
+    <property role="34LRSv" value="readInt16" />
+    <ref role="1TJDcQ" node="2_XJnzLo$lo" resolve="PrimitiveRead" />
+  </node>
+  <node concept="1TIwiD" id="2_XJnzLo$lu">
+    <property role="3GE5qa" value="primitives.read" />
+    <property role="TrG5h" value="ReadInt32" />
+    <property role="34LRSv" value="readInt32" />
+    <ref role="1TJDcQ" node="2_XJnzLo$lo" resolve="PrimitiveRead" />
+  </node>
+  <node concept="1TIwiD" id="2_XJnzLo$lv">
+    <property role="3GE5qa" value="primitives.read" />
+    <property role="TrG5h" value="ReadInt64" />
+    <property role="34LRSv" value="readInt64" />
+    <ref role="1TJDcQ" node="2_XJnzLo$lo" resolve="PrimitiveRead" />
+  </node>
+  <node concept="1TIwiD" id="2_XJnzLo$lw">
+    <property role="3GE5qa" value="primitives.read" />
+    <property role="TrG5h" value="ReadInt8" />
+    <property role="34LRSv" value="readInt8" />
+    <ref role="1TJDcQ" node="2_XJnzLo$lo" resolve="PrimitiveRead" />
+  </node>
+  <node concept="1TIwiD" id="2_XJnzLo$lx">
+    <property role="3GE5qa" value="primitives.read" />
+    <property role="TrG5h" value="ReadStringArray" />
+    <property role="34LRSv" value="readStringArray" />
+    <ref role="1TJDcQ" node="2_XJnzLo$lo" resolve="PrimitiveRead" />
+    <node concept="1TJgyj" id="2_XJnzLo$ly" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="length" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2_XJnzLo$lz">
+    <property role="3GE5qa" value="primitives.read" />
+    <property role="TrG5h" value="ReadUInt16" />
+    <property role="34LRSv" value="readUInt16" />
+    <ref role="1TJDcQ" node="2_XJnzLo$lo" resolve="PrimitiveRead" />
+  </node>
+  <node concept="1TIwiD" id="2_XJnzLo$l$">
+    <property role="3GE5qa" value="primitives.read" />
+    <property role="TrG5h" value="ReadUInt32" />
+    <property role="34LRSv" value="readUInt32" />
+    <ref role="1TJDcQ" node="2_XJnzLo$lo" resolve="PrimitiveRead" />
+  </node>
+  <node concept="1TIwiD" id="2_XJnzLo$l_">
+    <property role="3GE5qa" value="primitives.read" />
+    <property role="TrG5h" value="ReadUInt64" />
+    <property role="34LRSv" value="readUInt64" />
+    <ref role="1TJDcQ" node="2_XJnzLo$lo" resolve="PrimitiveRead" />
+  </node>
+  <node concept="1TIwiD" id="2_XJnzLo$lA">
+    <property role="3GE5qa" value="primitives.read" />
+    <property role="TrG5h" value="ReadUInt8" />
+    <property role="34LRSv" value="readUInt8" />
+    <ref role="1TJDcQ" node="2_XJnzLo$lo" resolve="PrimitiveRead" />
+  </node>
 </model>
 
