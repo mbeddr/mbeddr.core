@@ -71,9 +71,9 @@
     <import index="i9so" ref="r:9e5578e0-37f0-4c9b-a301-771bcb453678(jetbrains.mps.make.script)" />
     <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" />
     <import index="lgzw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.regex(JDK/java.util.regex@java_stub)" />
+    <import index="exl8" ref="r:9058158e-0926-42f8-8d00-d1d86f1ff722(com.mbeddr.core.debug.behavior)" implicit="true" />
     <import index="vog7" ref="r:eaa106c6-4c8f-4807-a686-9c6a09ced82c(com.mbeddr.core.make.behavior)" implicit="true" />
     <import index="dd55" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.cache(MPS.Core/jetbrains.mps.generator.cache@java_stub)" implicit="true" />
-    <import index="exl8" ref="r:9058158e-0926-42f8-8d00-d1d86f1ff722(com.mbeddr.core.debug.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -8753,6 +8753,26 @@
                                 </node>
                               </node>
                             </node>
+                            <node concept="3clFbF" id="27$w7CfufPo" role="3cqZAp">
+                              <node concept="2OqwBi" id="27$w7CfufPp" role="3clFbG">
+                                <node concept="2ShNRf" id="27$w7CfufPq" role="2Oq$k0">
+                                  <node concept="1pGfFk" id="27$w7CfufPr" role="2ShVmc">
+                                    <ref role="37wK5l" node="O5Pi0b4r$J" resolve="StreamClearer" />
+                                    <node concept="2OqwBi" id="27$w7CfufPs" role="37wK5m">
+                                      <node concept="37vLTw" id="27$w7CfufPt" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="6YlqNFRc5$N" resolve="process" />
+                                      </node>
+                                      <node concept="liA8E" id="27$w7Cfui3e" role="2OqNvi">
+                                        <ref role="37wK5l" to="e2lb:~Process.getErrorStream():java.io.InputStream" resolve="getErrorStream" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="27$w7CfufPv" role="2OqNvi">
+                                  <ref role="37wK5l" to="e2lb:~Thread.start():void" resolve="start" />
+                                </node>
+                              </node>
+                            </node>
                             <node concept="3clFbF" id="6YlqNFRc5_1" role="3cqZAp">
                               <node concept="37vLTI" id="6YlqNFRc5_2" role="3clFbG">
                                 <node concept="2OqwBi" id="6YlqNFRc5_3" role="37vLTx">
@@ -8990,6 +9010,26 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="6YlqNFRdSU5" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~Thread.start():void" resolve="start" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="27$w7Cfue$e" role="3cqZAp">
+              <node concept="2OqwBi" id="27$w7Cfue$f" role="3clFbG">
+                <node concept="2ShNRf" id="27$w7Cfue$g" role="2Oq$k0">
+                  <node concept="1pGfFk" id="27$w7Cfue$h" role="2ShVmc">
+                    <ref role="37wK5l" node="O5Pi0b4r$J" resolve="StreamClearer" />
+                    <node concept="2OqwBi" id="27$w7Cfue$i" role="37wK5m">
+                      <node concept="37vLTw" id="27$w7Cfue$j" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6YlqNFRdSTS" resolve="process" />
+                      </node>
+                      <node concept="liA8E" id="27$w7Cfue$k" role="2OqNvi">
+                        <ref role="37wK5l" to="e2lb:~Process.getErrorStream():java.io.InputStream" resolve="getErrorStream" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="27$w7Cfue$l" role="2OqNvi">
                   <ref role="37wK5l" to="e2lb:~Thread.start():void" resolve="start" />
                 </node>
               </node>
