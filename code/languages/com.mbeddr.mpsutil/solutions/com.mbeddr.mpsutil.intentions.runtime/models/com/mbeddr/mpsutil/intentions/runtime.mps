@@ -44,6 +44,8 @@
     <import index="8d8y" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.util(MPS.IDEA/com.intellij.openapi.util@java_stub)" />
     <import index="anus" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.ui.popup(MPS.IDEA/com.intellij.ui.popup@java_stub)" />
     <import index="f4h3" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.ui.speedSearch(MPS.IDEA/com.intellij.ui.speedSearch@java_stub)" />
+    <import index="ntoo" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.ui.popup.list(MPS.IDEA/com.intellij.ui.popup.list@java_stub)" />
+    <import index="ayyu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.ui(MPS.IDEA/com.intellij.ui@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection">
@@ -66,6 +68,9 @@
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1177326519037" name="jetbrains.mps.baseLanguage.structure.CommentedStatementsBlock" flags="nn" index="u8gfJ">
         <child id="1177326540772" name="statement" index="u8lrQ" />
+      </concept>
+      <concept id="5279705229678483897" name="jetbrains.mps.baseLanguage.structure.FloatingPointFloatConstant" flags="nn" index="2$xPTn">
+        <property id="5279705229678483899" name="value" index="2$xPTl" />
       </concept>
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
@@ -96,6 +101,7 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -218,6 +224,9 @@
       </concept>
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
+      </concept>
+      <concept id="1206629501431" name="jetbrains.mps.baseLanguage.structure.InstanceInitializer" flags="lg" index="3KIgzJ">
+        <child id="1206629521979" name="statementList" index="3KIlGz" />
       </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
@@ -3578,6 +3587,65 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="2xgTENkRPVV" role="2AJF6D">
+                    <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+                  </node>
+                </node>
+                <node concept="2tJIrI" id="3N2QCt80Z2T" role="jymVt" />
+                <node concept="3clFb_" id="3N2QCt80XSe" role="jymVt">
+                  <property role="1EzhhJ" value="false" />
+                  <property role="TrG5h" value="getListElementRenderer" />
+                  <property role="DiZV1" value="false" />
+                  <property role="IEkAT" value="false" />
+                  <node concept="3Tmbuc" id="3N2QCt80XSf" role="1B3o_S" />
+                  <node concept="3uibUv" id="3N2QCt80XSh" role="3clF45">
+                    <ref role="3uigEE" to="dbrf:~ListCellRenderer" resolve="ListCellRenderer" />
+                  </node>
+                  <node concept="3clFbS" id="3N2QCt80XSk" role="3clF47">
+                    <node concept="3clFbF" id="3N2QCt8159c" role="3cqZAp">
+                      <node concept="2ShNRf" id="3N2QCt8159a" role="3clFbG">
+                        <node concept="YeOm9" id="3N2QCt82vCI" role="2ShVmc">
+                          <node concept="1Y3b0j" id="3N2QCt82vCL" role="YeSDq">
+                            <property role="2bfB8j" value="true" />
+                            <ref role="1Y3XeK" to="ntoo:~PopupListElementRenderer" resolve="PopupListElementRenderer" />
+                            <ref role="37wK5l" to="ntoo:~PopupListElementRenderer.&lt;init&gt;(com.intellij.ui.popup.list.ListPopupImpl)" resolve="PopupListElementRenderer" />
+                            <node concept="3Tm1VV" id="3N2QCt82vCM" role="1B3o_S" />
+                            <node concept="Xjq3P" id="3N2QCt82qB2" role="37wK5m" />
+                            <node concept="3KIgzJ" id="3N2QCt82vJ9" role="jymVt">
+                              <node concept="3clFbS" id="3N2QCt82vJa" role="3KIlGz">
+                                <node concept="3clFbF" id="3N2QCt82vMJ" role="3cqZAp">
+                                  <node concept="2OqwBi" id="3N2QCt82w2K" role="3clFbG">
+                                    <node concept="37vLTw" id="3N2QCt82vMI" role="2Oq$k0">
+                                      <ref role="3cqZAo" to="ayyu:~GroupedElementsRenderer.mySeparatorComponent" resolve="mySeparatorComponent" />
+                                    </node>
+                                    <node concept="liA8E" id="3N2QCt82zVZ" role="2OqNvi">
+                                      <ref role="37wK5l" to="dbrf:~JComponent.setFont(java.awt.Font):void" resolve="setFont" />
+                                      <node concept="2OqwBi" id="3N2QCt82Cw_" role="37wK5m">
+                                        <node concept="2OqwBi" id="3N2QCt82$cW" role="2Oq$k0">
+                                          <node concept="37vLTw" id="3N2QCt82$0l" role="2Oq$k0">
+                                            <ref role="3cqZAo" to="ayyu:~GroupedElementsRenderer.mySeparatorComponent" resolve="mySeparatorComponent" />
+                                          </node>
+                                          <node concept="liA8E" id="3N2QCt82C75" role="2OqNvi">
+                                            <ref role="37wK5l" to="1t7x:~Component.getFont():java.awt.Font" resolve="getFont" />
+                                          </node>
+                                        </node>
+                                        <node concept="liA8E" id="3N2QCt82Ha3" role="2OqNvi">
+                                          <ref role="37wK5l" to="1t7x:~Font.deriveFont(float):java.awt.Font" resolve="deriveFont" />
+                                          <node concept="2$xPTn" id="3N2QCt83eFx" role="37wK5m">
+                                            <property role="2$xPTl" value="10.0f" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2AHcQZ" id="3N2QCt80XSl" role="2AJF6D">
                     <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
                   </node>
                 </node>
