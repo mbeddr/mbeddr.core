@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -49,6 +50,11 @@
         <reference id="8719112291175211414" name="template" index="2xfifS" />
       </concept>
     </language>
+    <language id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning">
+      <concept id="9116320848000879253" name="com.mbeddr.mpsutil.suppresswarning.structure.SuppressWarnings" flags="ng" index="2P5Msn">
+        <child id="9116320848000879254" name="kinds" index="2P5Msk" />
+      </concept>
+    </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
@@ -65,6 +71,7 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
+      <concept id="6777508457268164807" name="com.mbeddr.core.modules.structure.SuppressDataFlowWarning" flags="ng" index="BCzjf" />
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
         <child id="1317894735999304826" name="imports" index="2OODSX" />
@@ -288,6 +295,9 @@
         </node>
         <node concept="7CXmI" id="6uZAbUKf2my" role="lGtFl">
           <node concept="7OXhh" id="6uZAbUKf2mz" role="7EUXB" />
+        </node>
+        <node concept="2P5Msn" id="7NFOBxm3B8R" role="lGtFl">
+          <node concept="BCzjf" id="79g_UwK0wii" role="2P5Msk" />
         </node>
       </node>
     </node>

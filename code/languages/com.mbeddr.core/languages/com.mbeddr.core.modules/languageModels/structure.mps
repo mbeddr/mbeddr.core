@@ -12,8 +12,9 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
+    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
+    <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -1363,6 +1364,20 @@
         <ref role="trN6q" to="mj1l:7FQByU3CrCQ" resolve="Type" />
       </node>
     </node>
+  </node>
+  <node concept="1TIwiD" id="5Sez0xTFbz7">
+    <property role="TrG5h" value="SuppressDataFlowWarning" />
+    <property role="34LRSv" value="dataflow" />
+    <property role="R4oN_" value="suppress dataflow warning" />
+    <property role="3GE5qa" value="suppress" />
+    <ref role="1TJDcQ" to="bdcd:7U3Fobb_8Ej" resolve="SuppressAllWarnings" />
+  </node>
+  <node concept="1TIwiD" id="QsKt7kFLcZ">
+    <property role="3GE5qa" value="suppress" />
+    <property role="34LRSv" value="liveness" />
+    <property role="TrG5h" value="SuppressDataFlowLivenessWarning" />
+    <property role="R4oN_" value="suppress dataflow liveness warning" />
+    <ref role="1TJDcQ" node="5Sez0xTFbz7" resolve="SuppressDataFlowWarning" />
   </node>
 </model>
 

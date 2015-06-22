@@ -6,6 +6,7 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -97,6 +98,11 @@
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
     </language>
+    <language id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions">
+      <concept id="5846558918537398687" name="com.mbeddr.mpsutil.intentions.structure.IntentionGroupAnnotation" flags="ng" index="1SWQZ3">
+        <property id="5846558918537400330" name="label" index="1SWRpm" />
+      </concept>
+    </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="4481811096721038000" name="com.mbeddr.mpsutil.blutil.structure.RefStep" flags="ng" index="1sh8R2">
         <reference id="4481811096721038001" name="refLink" index="1sh8R3" />
@@ -180,6 +186,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -249,6 +256,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKHSv6" role="lGtFl">
+      <property role="1SWRpm" value="BUILD" />
+    </node>
   </node>
   <node concept="2S6QgY" id="2MbfxrZI1Ma">
     <property role="TrG5h" value="addLib" />
@@ -296,6 +306,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKHSBT" role="lGtFl">
+      <property role="1SWRpm" value="BUILD" />
+    </node>
   </node>
   <node concept="2S6QgY" id="2obGnlS2A0E">
     <property role="TrG5h" value="addPostProcessor" />
@@ -324,6 +337,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKHSKb" role="lGtFl">
+      <property role="1SWRpm" value="BUILD" />
     </node>
   </node>
   <node concept="2S6QgY" id="7i$VjwrI_cU">
@@ -579,6 +595,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKHThy" role="lGtFl">
+      <property role="1SWRpm" value="BUILD" />
+    </node>
   </node>
   <node concept="2S6QgY" id="7i$VjwuVYt4">
     <property role="TrG5h" value="duplicateRootContent" />
@@ -727,6 +746,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKHTHO" role="lGtFl">
+      <property role="1SWRpm" value="BUILD" />
+    </node>
   </node>
   <node concept="2S6QgY" id="6hM2_xVYvht">
     <property role="TrG5h" value="markAsNeverGenerate" />
@@ -761,6 +783,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKHTV$" role="lGtFl">
+      <property role="1SWRpm" value="BUILD" />
     </node>
   </node>
 </model>

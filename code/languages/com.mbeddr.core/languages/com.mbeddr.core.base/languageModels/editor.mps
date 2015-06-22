@@ -42,7 +42,9 @@
     <import index="n55e" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.language(jetbrains.mps.smodel.language@java_stub)" />
     <import index="v2t1" ref="f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons.lang3@java_stub)" />
     <import index="ar19" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.geom(java.awt.geom@java_stub)" />
-    <import index="4lbv" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.update(MPS.Editor/jetbrains.mps.openapi.editor.update@java_stub)" implicit="true" />
+    <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
+    <import index="4lbv" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.update(MPS.Editor/jetbrains.mps.openapi.editor.update@java_stub)" />
+    <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -134,7 +136,6 @@
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
-      <concept id="1186413799158" name="jetbrains.mps.lang.editor.structure.BracketColorStyleClassItem" flags="ln" index="VLuvy" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
         <child id="1223387335081" name="query" index="3n$kyP" />
@@ -209,7 +210,6 @@
       <concept id="9122903797336200704" name="jetbrains.mps.lang.editor.structure.ApplyStyleClassCondition" flags="lg" index="1uO$qF">
         <child id="9122903797336200706" name="query" index="1uO$qD" />
       </concept>
-      <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
       <concept id="9122903797312246523" name="jetbrains.mps.lang.editor.structure.StyleReference" flags="ng" index="1wgc9g">
         <reference id="9122903797312247166" name="style" index="1wgcnl" />
       </concept>
@@ -10377,43 +10377,6 @@
     <ref role="1XX52x" to="vs0r:GKLijSvTd0" resolve="CheckHashAssessmentQuery" />
     <node concept="3F0ifn" id="GKLijSwmUH" role="2wV5jI">
       <property role="3F0ifm" value="check external references" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="6Kj2zNC68yI">
-    <ref role="1XX52x" to="vs0r:6Kj2zNC66Q5" resolve="SuppressWarnings" />
-    <node concept="3EZMnI" id="6Kj2zNC68JW" role="2wV5jI">
-      <node concept="3F0ifn" id="6Kj2zNC69Ir" role="3EZMnx">
-        <property role="3F0ifm" value="Suppress Warnings" />
-        <ref role="1ERwB7" node="6Kj2zNC6sxW" resolve="deleteSuppressWarnings" />
-        <node concept="3vyZuw" id="6Kj2zNC69K4" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VechU" id="6Kj2zNC69LM" role="3F10Kt">
-          <property role="Vb096" value="orange" />
-        </node>
-        <node concept="VLuvy" id="6Kj2zNC69MN" role="3F10Kt">
-          <property role="Vb096" value="orange" />
-        </node>
-      </node>
-      <node concept="2iRkQZ" id="6Kj2zNC68JZ" role="2iSdaV" />
-      <node concept="2SsqMj" id="6Kj2zNC6rQb" role="3EZMnx" />
-    </node>
-  </node>
-  <node concept="1h_SRR" id="6Kj2zNC6sxW">
-    <property role="TrG5h" value="deleteSuppressWarnings" />
-    <ref role="1h_SK9" to="vs0r:6Kj2zNC66Q5" resolve="SuppressWarnings" />
-    <node concept="1hA7zw" id="6Kj2zNC6sxX" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
-      <node concept="1hAIg9" id="6Kj2zNC6sxY" role="1hA7z_">
-        <node concept="3clFbS" id="6Kj2zNC6sxZ" role="2VODD2">
-          <node concept="3clFbF" id="6Kj2zNC6sy4" role="3cqZAp">
-            <node concept="2OqwBi" id="6Kj2zNC6szS" role="3clFbG">
-              <node concept="0IXxy" id="6Kj2zNC6sy3" role="2Oq$k0" />
-              <node concept="1PgB_6" id="6Kj2zNC6sVo" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="2ABfQD" id="7xesQBpJWpf">
