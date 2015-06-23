@@ -8874,7 +8874,7 @@
       <node concept="3clFbS" id="4XMHJL4Gf_G" role="3clF47">
         <node concept="3clFbF" id="4XMHJL4Gf_H" role="3cqZAp">
           <node concept="Xl_RD" id="4XMHJL4Gf_I" role="3clFbG">
-            <property role="Xl_RC" value="%lf" />
+            <property role="Xl_RC" value="%f" />
           </node>
         </node>
       </node>
