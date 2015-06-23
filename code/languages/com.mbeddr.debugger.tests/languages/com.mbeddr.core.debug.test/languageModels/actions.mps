@@ -702,14 +702,14 @@
       <property role="7I3sp" value="left" />
       <property role="3mWRNi" value="Add the extends clause before the opening brace" />
       <property role="2uHTBK" value="ext_4_RTransform" />
-      <ref role="3UNGvu" to="rpmx:13C5RDf$Xkh" resolve="WatchablesDeclaration" />
+      <ref role="3UNGvu" to="rpmx:3W_lGXEdjP1" resolve="WatchablesValidationList" />
       <node concept="3kRJcU" id="2L7NFMBLVz6" role="3kShCk">
         <node concept="3clFbS" id="2L7NFMBLVz7" role="2VODD2">
           <node concept="3clFbF" id="2L7NFMBLVz8" role="3cqZAp">
             <node concept="2OqwBi" id="7GeSf11h7mw" role="3clFbG">
               <node concept="2OqwBi" id="2L7NFMBLVzb" role="2Oq$k0">
-                <node concept="3Tsc0h" id="7GeSf11al1c" role="2OqNvi">
-                  <ref role="3TtcxE" to="rpmx:4WY_RKGyy8M" />
+                <node concept="3Tsc0h" id="41LNfYHC00E" role="2OqNvi">
+                  <ref role="3TtcxE" to="rpmx:13C5RDf_2r8" />
                 </node>
                 <node concept="Cj7Ep" id="2L7NFMBLVzd" role="2Oq$k0" />
               </node>
@@ -719,7 +719,7 @@
         </node>
       </node>
       <node concept="tYCnQ" id="2L7NFMBLVze" role="_1QTJ">
-        <ref role="uz4UX" to="rpmx:13C5RDf$Xkh" resolve="WatchablesDeclaration" />
+        <ref role="uz4UX" to="rpmx:3W_lGXEdjP1" resolve="WatchablesValidationList" />
         <node concept="Cmt7Y" id="2L7NFMBLVzf" role="uz6Si">
           <node concept="Cnhdc" id="2L7NFMBLVzg" role="Cncma">
             <node concept="3clFbS" id="2L7NFMBLVzh" role="2VODD2">
@@ -727,8 +727,8 @@
                 <node concept="2OqwBi" id="7GeSf11aFKR" role="3clFbG">
                   <node concept="2OqwBi" id="7GeSf11aFKS" role="2Oq$k0">
                     <node concept="Cj7Ep" id="7GeSf11aFKT" role="2Oq$k0" />
-                    <node concept="3Tsc0h" id="7GeSf11aFKU" role="2OqNvi">
-                      <ref role="3TtcxE" to="rpmx:4WY_RKGyy8M" />
+                    <node concept="3Tsc0h" id="41LNfYHC0hR" role="2OqNvi">
+                      <ref role="3TtcxE" to="rpmx:13C5RDf_2r8" />
                     </node>
                   </node>
                   <node concept="TSZUe" id="7GeSf11aFKV" role="2OqNvi">
@@ -748,6 +748,61 @@
             </node>
           </node>
           <node concept="2h1dTh" id="2L7NFMBLVzq" role="Cn2iK">
+            <property role="2h1i$Z" value="extends" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UNGvq" id="41LNfYHBZaZ" role="3UOs0v">
+      <property role="7I3sp" value="left" />
+      <property role="3mWRNi" value="Add the extends clause before the opening brace" />
+      <property role="2uHTBK" value="ext_4_RTransform" />
+      <ref role="3UNGvu" to="rpmx:13C5RDf$Xkh" resolve="WatchablesDeclaration" />
+      <node concept="3kRJcU" id="41LNfYHBZb0" role="3kShCk">
+        <node concept="3clFbS" id="41LNfYHBZb1" role="2VODD2">
+          <node concept="3clFbF" id="41LNfYHBZb2" role="3cqZAp">
+            <node concept="2OqwBi" id="41LNfYHBZb3" role="3clFbG">
+              <node concept="2OqwBi" id="41LNfYHBZb4" role="2Oq$k0">
+                <node concept="3Tsc0h" id="41LNfYHBZb5" role="2OqNvi">
+                  <ref role="3TtcxE" to="rpmx:4WY_RKGyy8M" />
+                </node>
+                <node concept="Cj7Ep" id="41LNfYHBZb6" role="2Oq$k0" />
+              </node>
+              <node concept="1v1jN8" id="41LNfYHBZb7" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="tYCnQ" id="41LNfYHBZb8" role="_1QTJ">
+        <ref role="uz4UX" to="rpmx:13C5RDf$Xkh" resolve="WatchablesDeclaration" />
+        <node concept="Cmt7Y" id="41LNfYHBZb9" role="uz6Si">
+          <node concept="Cnhdc" id="41LNfYHBZba" role="Cncma">
+            <node concept="3clFbS" id="41LNfYHBZbb" role="2VODD2">
+              <node concept="3clFbF" id="41LNfYHBZbc" role="3cqZAp">
+                <node concept="2OqwBi" id="41LNfYHBZbd" role="3clFbG">
+                  <node concept="2OqwBi" id="41LNfYHBZbe" role="2Oq$k0">
+                    <node concept="Cj7Ep" id="41LNfYHBZbf" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="41LNfYHBZbg" role="2OqNvi">
+                      <ref role="3TtcxE" to="rpmx:4WY_RKGyy8M" />
+                    </node>
+                  </node>
+                  <node concept="TSZUe" id="41LNfYHBZbh" role="2OqNvi">
+                    <node concept="2ShNRf" id="41LNfYHBZbi" role="25WWJ7">
+                      <node concept="3zrR0B" id="41LNfYHBZbj" role="2ShVmc">
+                        <node concept="3Tqbb2" id="41LNfYHBZbk" role="3zrR0E">
+                          <ref role="ehGHo" to="rpmx:13C5RDf_2qZ" resolve="WatchableDeclarationReference" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="41LNfYHBZbl" role="3cqZAp">
+                <node concept="Cj7Ep" id="41LNfYHBZbm" role="3clFbG" />
+              </node>
+            </node>
+          </node>
+          <node concept="2h1dTh" id="41LNfYHBZbn" role="Cn2iK">
             <property role="2h1i$Z" value="extends" />
           </node>
         </node>
