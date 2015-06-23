@@ -532,7 +532,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="VechU" id="13C5RDf_9cP" role="3F10Kt">
-          <property role="Vb096" value="DARK_MAGENTA" />
+          <property role="Vb096" value="blue" />
         </node>
       </node>
       <node concept="3F1sOY" id="13C5RDf_9cL" role="3EZMnx">
@@ -561,6 +561,9 @@
       <node concept="l2Vlx" id="xTAOoa4jnQ" role="2iSdaV" />
       <node concept="3F0ifn" id="xTAOoa4jnR" role="3EZMnx">
         <property role="3F0ifm" value="step over" />
+        <node concept="VechU" id="41LNfYHhH5Y" role="3F10Kt">
+          <property role="Vb096" value="blue" />
+        </node>
       </node>
       <node concept="PMmxH" id="xTAOoa4jnS" role="3EZMnx">
         <ref role="PMmxG" node="xTAOoa4gGk" resolve="TimesPostfix" />
@@ -574,6 +577,9 @@
       <node concept="l2Vlx" id="xTAOoa4jnH" role="2iSdaV" />
       <node concept="3F0ifn" id="xTAOoa4jnI" role="3EZMnx">
         <property role="3F0ifm" value="step into" />
+        <node concept="VechU" id="41LNfYHhH5M" role="3F10Kt">
+          <property role="Vb096" value="blue" />
+        </node>
       </node>
       <node concept="PMmxH" id="xTAOoa4jnK" role="3EZMnx">
         <ref role="PMmxG" node="xTAOoa4gGk" resolve="TimesPostfix" />
@@ -587,6 +593,9 @@
       <node concept="l2Vlx" id="xTAOoa4jnM" role="2iSdaV" />
       <node concept="3F0ifn" id="xTAOoa4jnN" role="3EZMnx">
         <property role="3F0ifm" value="step out" />
+        <node concept="VechU" id="41LNfYHhH63" role="3F10Kt">
+          <property role="Vb096" value="blue" />
+        </node>
       </node>
       <node concept="PMmxH" id="xTAOoa4jnO" role="3EZMnx">
         <ref role="PMmxG" node="xTAOoa4gGk" resolve="TimesPostfix" />
@@ -599,8 +608,8 @@
     <node concept="3EZMnI" id="13C5RDf_pwR" role="2wV5jI">
       <node concept="3F0ifn" id="13C5RDf_pwU" role="3EZMnx">
         <property role="3F0ifm" value="watchalbes" />
-        <node concept="VechU" id="13C5RDf_pxx" role="3F10Kt">
-          <property role="Vb096" value="DARK_MAGENTA" />
+        <node concept="VechU" id="41LNfYHotmB" role="3F10Kt">
+          <property role="Vb096" value="blue" />
         </node>
         <node concept="VPxyj" id="13C5RDf_pxy" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -851,8 +860,8 @@
         </node>
         <node concept="3F0ifn" id="3W_lGXEf2pC" role="3EZMnx">
           <property role="3F0ifm" value="stack frames" />
-          <node concept="VechU" id="13C5RDf_f5N" role="3F10Kt">
-            <property role="Vb096" value="DARK_MAGENTA" />
+          <node concept="VechU" id="41LNfYHlKVW" role="3F10Kt">
+            <property role="Vb096" value="blue" />
           </node>
         </node>
         <node concept="3F0ifn" id="3W_lGXEf2pD" role="3EZMnx">
@@ -890,6 +899,9 @@
       </node>
       <node concept="3F0ifn" id="xTAOoa4gGp" role="3EZMnx">
         <property role="3F0ifm" value="times" />
+        <node concept="VechU" id="41LNfYHhH5R" role="3F10Kt">
+          <property role="Vb096" value="blue" />
+        </node>
       </node>
       <node concept="l2Vlx" id="xTAOoa4jnF" role="2iSdaV" />
     </node>
@@ -1073,12 +1085,6 @@
         <node concept="VPxyj" id="5S3xvtjZNE" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
-        <node concept="VechU" id="13C5RDf_dEy" role="3F10Kt">
-          <property role="Vb096" value="cyan" />
-          <node concept="1iSF2X" id="13C5RDf_dEz" role="VblUZ">
-            <property role="1iTho6" value="FF1493" />
-          </node>
-        </node>
       </node>
       <node concept="1HlG4h" id="5S3xvtkqbv" role="3EZMnx">
         <ref role="1k5W1q" to="tpen:hshO_Yc" resolve="Comment" />
@@ -1240,6 +1246,9 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
+      <node concept="VechU" id="41LNfYHj3va" role="3F10Kt">
+        <property role="Vb096" value="blue" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="5S3xvtkvmZ">
@@ -1265,12 +1274,6 @@
           <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
           <node concept="VPxyj" id="5S3xvtkvn8" role="3F10Kt">
             <property role="VOm3f" value="false" />
-          </node>
-          <node concept="VechU" id="13C5RDf_dEw" role="3F10Kt">
-            <property role="Vb096" value="cyan" />
-            <node concept="1iSF2X" id="13C5RDf_dEx" role="VblUZ">
-              <property role="1iTho6" value="FF1493" />
-            </node>
           </node>
         </node>
         <node concept="1HlG4h" id="3M3l$fn_wBR" role="3EZMnx">
@@ -1440,12 +1443,6 @@
           <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
           <node concept="VPxyj" id="3M3l$fn_bWR" role="3F10Kt">
             <property role="VOm3f" value="false" />
-          </node>
-          <node concept="VechU" id="13C5RDf_dux" role="3F10Kt">
-            <property role="Vb096" value="cyan" />
-            <node concept="1iSF2X" id="13C5RDf_duz" role="VblUZ">
-              <property role="1iTho6" value="FF1493" />
-            </node>
           </node>
         </node>
         <node concept="1HlG4h" id="3M3l$fn_wCA" role="3EZMnx">
@@ -2301,8 +2298,8 @@
     <node concept="3EZMnI" id="13C5RDfBevH" role="2wV5jI">
       <node concept="3F0ifn" id="13C5RDfBevK" role="3EZMnx">
         <property role="3F0ifm" value="stack frames" />
-        <node concept="VechU" id="13C5RDfBevU" role="3F10Kt">
-          <property role="Vb096" value="DARK_MAGENTA" />
+        <node concept="VechU" id="41LNfYHn75o" role="3F10Kt">
+          <property role="Vb096" value="blue" />
         </node>
       </node>
       <node concept="3F0ifn" id="13C5RDfBevM" role="3EZMnx">
@@ -2462,6 +2459,9 @@
     <node concept="3F0ifn" id="1WWn8BUrL8G" role="2wV5jI">
       <property role="3F0ifm" value="debugger detached" />
       <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+      <node concept="VechU" id="41LNfYHlKVO" role="3F10Kt">
+        <property role="Vb096" value="blue" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="2Zy_zYsNcSM">
@@ -2469,6 +2469,9 @@
     <ref role="1XX52x" to="rpmx:2Zy_zYsNcSK" resolve="ResumeCommand" />
     <node concept="3F0ifn" id="2Zy_zYsNcSO" role="2wV5jI">
       <property role="3F0ifm" value="resume" />
+      <node concept="VechU" id="41LNfYHhH5F" role="3F10Kt">
+        <property role="Vb096" value="blue" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="4TbX0$8GwUT">
@@ -2478,6 +2481,9 @@
       <node concept="3F0ifn" id="4TbX0$8Gx8M" role="3EZMnx">
         <property role="3F0ifm" value="on platform" />
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+        <node concept="VechU" id="41LNfYHlKWQ" role="3F10Kt">
+          <property role="Vb096" value="blue" />
+        </node>
       </node>
       <node concept="3F0A7n" id="4TbX0$8GBWb" role="3EZMnx">
         <ref role="1NtTu8" to="rpmx:4TbX0$8SAVy" resolve="platform" />
@@ -2527,6 +2533,9 @@
       <node concept="3F0ifn" id="4TbX0$8JaOW" role="3EZMnx">
         <property role="3F0ifm" value="else on" />
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+        <node concept="VechU" id="41LNfYHlKXK" role="3F10Kt">
+          <property role="Vb096" value="blue" />
+        </node>
       </node>
       <node concept="3F0A7n" id="4TbX0$8JaOX" role="3EZMnx">
         <ref role="1NtTu8" to="rpmx:4TbX0$8SAVy" resolve="platform" />
