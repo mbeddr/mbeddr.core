@@ -105,6 +105,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -696,62 +697,7 @@
     </node>
   </node>
   <node concept="3UOs0u" id="7GeSf11aiUT">
-    <property role="TrG5h" value="extendWatchableDeclaration" />
-    <node concept="3UNGvq" id="2L7NFMBBsQc" role="3UOs0v">
-      <property role="7I3sp" value="both" />
-      <property role="3mWRNi" value="Add the extends clause after class name" />
-      <property role="2uHTBK" value="ext_3_RTransform" />
-      <ref role="3UNGvu" to="rpmx:13C5RDf$Xkh" resolve="WatchablesDeclaration" />
-      <node concept="3kRJcU" id="2L7NFMBBsQd" role="3kShCk">
-        <node concept="3clFbS" id="2L7NFMBBsQe" role="2VODD2">
-          <node concept="3clFbF" id="2L7NFMBBsQf" role="3cqZAp">
-            <node concept="2OqwBi" id="7GeSf11h43k" role="3clFbG">
-              <node concept="2OqwBi" id="2L7NFMBBsQi" role="2Oq$k0">
-                <node concept="3Tsc0h" id="7GeSf11aknk" role="2OqNvi">
-                  <ref role="3TtcxE" to="rpmx:4WY_RKGyy8M" />
-                </node>
-                <node concept="Cj7Ep" id="2L7NFMBBsQk" role="2Oq$k0" />
-              </node>
-              <node concept="1v1jN8" id="7GeSf11h6ps" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="tYCnQ" id="2L7NFMBBsQl" role="_1QTJ">
-        <ref role="uz4UX" to="rpmx:13C5RDf$Xkh" resolve="WatchablesDeclaration" />
-        <node concept="Cmt7Y" id="2L7NFMBBsQm" role="uz6Si">
-          <node concept="Cnhdc" id="2L7NFMBBsQn" role="Cncma">
-            <node concept="3clFbS" id="2L7NFMBBsQo" role="2VODD2">
-              <node concept="3clFbF" id="7GeSf11avFl" role="3cqZAp">
-                <node concept="2OqwBi" id="7GeSf11azzZ" role="3clFbG">
-                  <node concept="2OqwBi" id="7GeSf11awQp" role="2Oq$k0">
-                    <node concept="Cj7Ep" id="7GeSf11avFj" role="2Oq$k0" />
-                    <node concept="3Tsc0h" id="7GeSf11axv8" role="2OqNvi">
-                      <ref role="3TtcxE" to="rpmx:4WY_RKGyy8M" />
-                    </node>
-                  </node>
-                  <node concept="TSZUe" id="7GeSf11aFiy" role="2OqNvi">
-                    <node concept="2ShNRf" id="7GeSf11aFr0" role="25WWJ7">
-                      <node concept="3zrR0B" id="7GeSf11aFr1" role="2ShVmc">
-                        <node concept="3Tqbb2" id="7GeSf11aFr2" role="3zrR0E">
-                          <ref role="ehGHo" to="rpmx:13C5RDf_2qZ" resolve="WatchableDeclarationReference" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="2L7NFMBBsQv" role="3cqZAp">
-                <node concept="Cj7Ep" id="2L7NFMBBsQw" role="3clFbG" />
-              </node>
-            </node>
-          </node>
-          <node concept="2h1dTh" id="2L7NFMBBsQx" role="Cn2iK">
-            <property role="2h1i$Z" value="extends" />
-          </node>
-        </node>
-      </node>
-    </node>
+    <property role="TrG5h" value="extendAttribute" />
     <node concept="3UNGvq" id="2L7NFMBLVz5" role="3UOs0v">
       <property role="7I3sp" value="left" />
       <property role="3mWRNi" value="Add the extends clause before the opening brace" />
@@ -802,6 +748,53 @@
             </node>
           </node>
           <node concept="2h1dTh" id="2L7NFMBLVzq" role="Cn2iK">
+            <property role="2h1i$Z" value="extends" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UNGvq" id="7GeSf11WA87" role="3UOs0v">
+      <property role="7I3sp" value="left" />
+      <property role="3mWRNi" value="Add the extends clause before the opening brace" />
+      <property role="2uHTBK" value="ext_5_RTransform" />
+      <ref role="3UNGvu" to="rpmx:5S3xvtirw9" resolve="DebuggerTestcase" />
+      <node concept="3kRJcU" id="7GeSf11WA88" role="3kShCk">
+        <node concept="3clFbS" id="7GeSf11WA89" role="2VODD2">
+          <node concept="3clFbF" id="7GeSf11WA8a" role="3cqZAp">
+            <node concept="2OqwBi" id="7GeSf11WA8b" role="3clFbG">
+              <node concept="2OqwBi" id="7GeSf11WA8c" role="2Oq$k0">
+                <node concept="3TrEf2" id="7GeSf120mxd" role="2OqNvi">
+                  <ref role="3Tt5mk" to="rpmx:7GeSf11XguD" />
+                </node>
+                <node concept="Cj7Ep" id="7GeSf11WA8e" role="2Oq$k0" />
+              </node>
+              <node concept="3w_OXm" id="7GeSf120mYY" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="tYCnQ" id="7GeSf11WA8g" role="_1QTJ">
+        <ref role="uz4UX" to="rpmx:5S3xvtirw9" resolve="DebuggerTestcase" />
+        <node concept="Cmt7Y" id="7GeSf11WA8h" role="uz6Si">
+          <node concept="Cnhdc" id="7GeSf11WA8i" role="Cncma">
+            <node concept="3clFbS" id="7GeSf11WA8j" role="2VODD2">
+              <node concept="3clFbF" id="7GeSf11WA8k" role="3cqZAp">
+                <node concept="2OqwBi" id="7GeSf11WA8l" role="3clFbG">
+                  <node concept="2OqwBi" id="7GeSf11WA8m" role="2Oq$k0">
+                    <node concept="Cj7Ep" id="7GeSf11WA8n" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="7GeSf120o_0" role="2OqNvi">
+                      <ref role="3Tt5mk" to="rpmx:7GeSf11XguD" />
+                    </node>
+                  </node>
+                  <node concept="2DeJnY" id="7GeSf11WFPg" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="3clFbF" id="7GeSf11WA8t" role="3cqZAp">
+                <node concept="Cj7Ep" id="7GeSf11WA8u" role="3clFbG" />
+              </node>
+            </node>
+          </node>
+          <node concept="2h1dTh" id="7GeSf11WA8v" role="Cn2iK">
             <property role="2h1i$Z" value="extends" />
           </node>
         </node>

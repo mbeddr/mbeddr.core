@@ -147,6 +147,9 @@
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
+      <concept id="8867272038842303611" name="com.mbeddr.core.debug.test.structure.DebuggerTestcaseReference" flags="ng" index="UZuib">
+        <reference id="8867272038842351965" name="testCase" index="UZi6H" />
+      </concept>
       <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
@@ -176,6 +179,7 @@
       <concept id="105850086902839305" name="com.mbeddr.core.debug.test.structure.DebuggerTestcase" flags="ng" index="3scrou">
         <property id="105850086903217241" name="abstract" index="3sdR9e" />
         <reference id="105850086902839309" name="extendedTest" index="3scroq" />
+        <child id="8867272038842435497" name="extends" index="UYYtp" />
         <child id="105850086903379490" name="stepping" index="3savwP" />
         <child id="105850086902839308" name="suspension" index="3scror" />
         <child id="4360423713604451010" name="validation" index="3F5AM1" />
@@ -586,6 +590,9 @@
           <property role="2qnp9" value="1" />
         </node>
       </node>
+      <node concept="UZuib" id="7GeSf1268o4" role="UYYtp">
+        <ref role="UZi6H" node="7EQZzuztj59" resolve="inTestcase" />
+      </node>
     </node>
     <node concept="3sgmnF" id="7EQZzuztj51" role="1zJi$$" />
     <node concept="3scrou" id="7EQZzuztj53" role="1zJi$$">
@@ -602,6 +609,9 @@
         <node concept="2$4FYR" id="7EQZzuztj5z" role="3savID">
           <property role="2qnp9" value="1" />
         </node>
+      </node>
+      <node concept="UZuib" id="7GeSf1268_G" role="UYYtp">
+        <ref role="UZi6H" node="7EQZzuztj59" resolve="inTestcase" />
       </node>
     </node>
     <node concept="3sgmnF" id="7EQZzuztj5$" role="1zJi$$" />
@@ -632,6 +642,9 @@
             <ref role="1vv99g" node="7EQZzuzuBX5" resolve="initializedFM" />
           </node>
         </node>
+      </node>
+      <node concept="UZuib" id="7GeSf1268yy" role="UYYtp">
+        <ref role="UZi6H" node="7EQZzuztj59" resolve="inTestcase" />
       </node>
     </node>
     <node concept="3sgmnF" id="7EQZzuztnaa" role="1zJi$$" />
@@ -665,6 +678,9 @@
           </node>
         </node>
       </node>
+      <node concept="UZuib" id="7GeSf1268_M" role="UYYtp">
+        <ref role="UZi6H" node="7EQZzuztj59" resolve="inTestcase" />
+      </node>
     </node>
     <node concept="3sgmnF" id="7EQZzuztnaf" role="1zJi$$" />
     <node concept="3scrou" id="7EQZzuztnah" role="1zJi$$">
@@ -693,6 +709,9 @@
             <ref role="1vv99g" node="7EQZzuzuBX5" resolve="initializedFM" />
           </node>
         </node>
+      </node>
+      <node concept="UZuib" id="7GeSf1268uu" role="UYYtp">
+        <ref role="UZi6H" node="7EQZzuztj59" resolve="inTestcase" />
       </node>
     </node>
     <node concept="3sgmnF" id="7EQZzuztnag" role="1zJi$$" />
