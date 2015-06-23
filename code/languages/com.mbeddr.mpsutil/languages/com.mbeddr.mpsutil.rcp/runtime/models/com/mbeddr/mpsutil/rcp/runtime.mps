@@ -72,6 +72,18 @@
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
+      <concept id="1201370618622" name="jetbrains.mps.baseLanguage.structure.Property" flags="ig" index="2RhdJD">
+        <property id="1201371481316" name="propertyName" index="2RkwnN" />
+        <child id="1201371521209" name="type" index="2RkE6I" />
+        <child id="1201372378714" name="propertyImplementation" index="2RnVtd" />
+      </concept>
+      <concept id="1201372606839" name="jetbrains.mps.baseLanguage.structure.DefaultPropertyImplementation" flags="ng" index="2RoN1w">
+        <child id="1202065356069" name="defaultGetAccessor" index="3wFrgM" />
+        <child id="1202078082794" name="defaultSetAccessor" index="3xrYvX" />
+      </concept>
+      <concept id="1201385106094" name="jetbrains.mps.baseLanguage.structure.PropertyReference" flags="nn" index="2S8uIT">
+        <reference id="1201385237847" name="property" index="2S8YL0" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -201,6 +213,10 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
+      <concept id="1202065242027" name="jetbrains.mps.baseLanguage.structure.DefaultGetAccessor" flags="ng" index="3wEZqW" />
+      <concept id="1202077725299" name="jetbrains.mps.baseLanguage.structure.DefaultSetAccessor" flags="ng" index="3xqBd$">
+        <child id="1202077744034" name="visibility" index="3xqFEP" />
+      </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1184950988562" name="jetbrains.mps.baseLanguage.structure.ArrayCreator" flags="nn" index="3$_iS1">
         <child id="1184951007469" name="componentType" index="3$_nBY" />
@@ -372,39 +388,6 @@
         </node>
       </node>
     </node>
-    <node concept="312cEg" id="2qDF1txKye3" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="myOptionalDevKitsFilter" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="2qDF1txKwKa" role="1B3o_S" />
-      <node concept="3uibUv" id="2qDF1txKxEd" role="1tU5fm">
-        <ref role="3uigEE" to="r9fo:~Condition" resolve="Condition" />
-        <node concept="3uibUv" id="2qDF1txKybw" role="11_B2D">
-          <ref role="3uigEE" to="vsqj:~DevKit" resolve="DevKit" />
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="7o1blyuIYJV" role="2AJF6D">
-        <ref role="2AI5Lk" to="as9o:~Nullable" resolve="Nullable" />
-      </node>
-    </node>
-    <node concept="312cEg" id="7o1blyuHZZN" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="myMandantoryDevKitsFilter" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="7o1blyuHZZO" role="1B3o_S" />
-      <node concept="3uibUv" id="7o1blyuHZZP" role="1tU5fm">
-        <ref role="3uigEE" to="r9fo:~Condition" resolve="Condition" />
-        <node concept="3uibUv" id="7o1blyuHZZQ" role="11_B2D">
-          <ref role="3uigEE" to="vsqj:~DevKit" resolve="DevKit" />
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="7o1blyuIYxP" role="2AJF6D">
-        <ref role="2AI5Lk" to="as9o:~Nullable" resolve="Nullable" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="7o1blyuHZro" role="jymVt" />
     <node concept="312cEg" id="2qDF1txGWdk" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -488,6 +471,16 @@
         </node>
       </node>
     </node>
+    <node concept="312cEg" id="2arDlsKIlCP" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="myProperties" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="2arDlsKIjM2" role="1B3o_S" />
+      <node concept="3uibUv" id="2arDlsKIlwd" role="1tU5fm">
+        <ref role="3uigEE" node="2arDlsKId99" resolve="NewModelDialogProperties" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="7o1blyuIa8R" role="jymVt" />
     <node concept="3Tm1VV" id="2BZazArdwlA" role="1B3o_S" />
     <node concept="3uibUv" id="2BZazAren0C" role="1zkMxy">
@@ -544,23 +537,13 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2qDF1txKz3n" role="3cqZAp">
-          <node concept="37vLTI" id="2qDF1txKz$Z" role="3clFbG">
-            <node concept="37vLTw" id="2qDF1txKzWb" role="37vLTx">
-              <ref role="3cqZAo" node="2qDF1txKtKE" resolve="optionalDevKits" />
+        <node concept="3clFbF" id="2arDlsKInvB" role="3cqZAp">
+          <node concept="37vLTI" id="2arDlsKIn$n" role="3clFbG">
+            <node concept="37vLTw" id="2arDlsKInAu" role="37vLTx">
+              <ref role="3cqZAo" node="2arDlsKIhLE" resolve="properties" />
             </node>
-            <node concept="37vLTw" id="2qDF1txKz3m" role="37vLTJ">
-              <ref role="3cqZAo" node="2qDF1txKye3" resolve="myOptionalDevKitsFilter" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7o1blyuI9Wy" role="3cqZAp">
-          <node concept="37vLTI" id="7o1blyuIa3r" role="3clFbG">
-            <node concept="37vLTw" id="7o1blyuIa7Y" role="37vLTx">
-              <ref role="3cqZAo" node="7o1blyuI9GQ" resolve="mandantoryDevKits" />
-            </node>
-            <node concept="37vLTw" id="7o1blyuI9Ww" role="37vLTJ">
-              <ref role="3cqZAo" node="7o1blyuHZZN" resolve="myMandantoryDevKitsFilter" />
+            <node concept="37vLTw" id="2arDlsKInv_" role="37vLTJ">
+              <ref role="3cqZAo" node="2arDlsKIlCP" resolve="myProperties" />
             </node>
           </node>
         </node>
@@ -596,28 +579,10 @@
         <property role="TrG5h" value="stereotype" />
         <node concept="17QB3L" id="2BZazAretcG" role="1tU5fm" />
       </node>
-      <node concept="37vLTG" id="2qDF1txKtKE" role="3clF46">
-        <property role="TrG5h" value="optionalDevKits" />
-        <node concept="3uibUv" id="2qDF1txKuiJ" role="1tU5fm">
-          <ref role="3uigEE" to="r9fo:~Condition" resolve="Condition" />
-          <node concept="3uibUv" id="2qDF1txKuu8" role="11_B2D">
-            <ref role="3uigEE" to="vsqj:~DevKit" resolve="DevKit" />
-          </node>
-        </node>
-        <node concept="2AHcQZ" id="7o1blyuIY6N" role="2AJF6D">
-          <ref role="2AI5Lk" to="as9o:~Nullable" resolve="Nullable" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="7o1blyuI9GQ" role="3clF46">
-        <property role="TrG5h" value="mandantoryDevKits" />
-        <node concept="3uibUv" id="7o1blyuI9M3" role="1tU5fm">
-          <ref role="3uigEE" to="r9fo:~Condition" resolve="Condition" />
-          <node concept="3uibUv" id="7o1blyuI9PD" role="11_B2D">
-            <ref role="3uigEE" to="vsqj:~DevKit" resolve="DevKit" />
-          </node>
-        </node>
-        <node concept="2AHcQZ" id="7o1blyuIY3l" role="2AJF6D">
-          <ref role="2AI5Lk" to="as9o:~Nullable" resolve="Nullable" />
+      <node concept="37vLTG" id="2arDlsKIhLE" role="3clF46">
+        <property role="TrG5h" value="properties" />
+        <node concept="3uibUv" id="2arDlsKIhQL" role="1tU5fm">
+          <ref role="3uigEE" node="2arDlsKId99" resolve="NewModelDialogProperties" />
         </node>
       </node>
     </node>
@@ -767,10 +732,15 @@
                 </node>
               </node>
               <node concept="2OqwBi" id="7o1blyuI36l" role="3clFbw">
-                <node concept="2OqwBi" id="7o1blyuHXvQ" role="2Oq$k0">
-                  <node concept="Xjq3P" id="7o1blyuHXtk" role="2Oq$k0" />
-                  <node concept="2OwXpG" id="7o1blyuI2BP" role="2OqNvi">
-                    <ref role="2Oxat5" node="7o1blyuHZZN" resolve="myMandantoryDevKitsFilter" />
+                <node concept="2OqwBi" id="2arDlsKIxv7" role="2Oq$k0">
+                  <node concept="2OqwBi" id="7o1blyuHXvQ" role="2Oq$k0">
+                    <node concept="Xjq3P" id="7o1blyuHXtk" role="2Oq$k0" />
+                    <node concept="2OwXpG" id="2arDlsKIx0W" role="2OqNvi">
+                      <ref role="2Oxat5" node="2arDlsKIlCP" resolve="myProperties" />
+                    </node>
+                  </node>
+                  <node concept="2S8uIT" id="2arDlsKIxCZ" role="2OqNvi">
+                    <ref role="2S8YL0" node="2arDlsKIggO" resolve="MandantoryDevKitsFilter" />
                   </node>
                 </node>
                 <node concept="liA8E" id="7o1blyuI3i6" role="2OqNvi">
@@ -782,10 +752,15 @@
               </node>
               <node concept="3eNFk2" id="7o1blyuI4d4" role="3eNLev">
                 <node concept="2OqwBi" id="7o1blyuI5zE" role="3eO9$A">
-                  <node concept="2OqwBi" id="7o1blyuI4kA" role="2Oq$k0">
-                    <node concept="Xjq3P" id="7o1blyuI4i4" role="2Oq$k0" />
-                    <node concept="2OwXpG" id="7o1blyuI567" role="2OqNvi">
-                      <ref role="2Oxat5" node="2qDF1txKye3" resolve="myOptionalDevKitsFilter" />
+                  <node concept="2OqwBi" id="2arDlsKI_xN" role="2Oq$k0">
+                    <node concept="2OqwBi" id="7o1blyuI4kA" role="2Oq$k0">
+                      <node concept="Xjq3P" id="7o1blyuI4i4" role="2Oq$k0" />
+                      <node concept="2OwXpG" id="2arDlsKI_6_" role="2OqNvi">
+                        <ref role="2Oxat5" node="2arDlsKIlCP" resolve="myProperties" />
+                      </node>
+                    </node>
+                    <node concept="2S8uIT" id="2arDlsKI_Gu" role="2OqNvi">
+                      <ref role="2S8YL0" node="2arDlsKIge0" resolve="OptionalDevKitsFilter" />
                     </node>
                   </node>
                   <node concept="liA8E" id="7o1blyuI5Td" role="2OqNvi">
@@ -1954,8 +1929,13 @@
               <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
               <node concept="1rXfSq" id="1PMOMKdnFot" role="37wK5m">
                 <ref role="37wK5l" node="1PMOMKdmltY" resolve="createDevKitPanel" />
-                <node concept="37vLTw" id="1PMOMKdnF_Z" role="37wK5m">
-                  <ref role="3cqZAo" node="2qDF1txKye3" resolve="myOptionalDevKitsFilter" />
+                <node concept="2OqwBi" id="2arDlsKI_Uy" role="37wK5m">
+                  <node concept="37vLTw" id="2arDlsKI_Sx" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2arDlsKIlCP" resolve="myProperties" />
+                  </node>
+                  <node concept="2S8uIT" id="2arDlsKIA4t" role="2OqNvi">
+                    <ref role="2S8YL0" node="2arDlsKIge0" resolve="OptionalDevKitsFilter" />
+                  </node>
                 </node>
               </node>
               <node concept="37vLTw" id="1PMOMKdnnLT" role="37wK5m">
@@ -3333,6 +3313,65 @@
     <node concept="2tJIrI" id="7o1blyu_iGL" role="jymVt" />
     <node concept="2tJIrI" id="7o1blyu_p6f" role="jymVt" />
     <node concept="2tJIrI" id="79AXByxOmbM" role="jymVt" />
+  </node>
+  <node concept="312cEu" id="2arDlsKId99">
+    <property role="3GE5qa" value="ideEnhancement" />
+    <property role="TrG5h" value="NewModelDialogProperties" />
+    <node concept="2RhdJD" id="2arDlsKIggO" role="jymVt">
+      <property role="2RkwnN" value="MandantoryDevKitsFilter" />
+      <node concept="3Tm1VV" id="2arDlsKIggP" role="1B3o_S" />
+      <node concept="2RoN1w" id="2arDlsKIggQ" role="2RnVtd">
+        <node concept="3wEZqW" id="2arDlsKIggR" role="3wFrgM" />
+        <node concept="3xqBd$" id="2arDlsKIggS" role="3xrYvX">
+          <node concept="3Tm6S6" id="2arDlsKIggT" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="2arDlsKIghX" role="2RkE6I">
+        <ref role="3uigEE" to="r9fo:~Condition" resolve="Condition" />
+        <node concept="3uibUv" id="2arDlsKIghY" role="11_B2D">
+          <ref role="3uigEE" to="vsqj:~DevKit" resolve="DevKit" />
+        </node>
+      </node>
+    </node>
+    <node concept="2RhdJD" id="2arDlsKIge0" role="jymVt">
+      <property role="2RkwnN" value="OptionalDevKitsFilter" />
+      <node concept="3Tm1VV" id="2arDlsKIge1" role="1B3o_S" />
+      <node concept="2RoN1w" id="2arDlsKIge2" role="2RnVtd">
+        <node concept="3wEZqW" id="2arDlsKIge3" role="3wFrgM" />
+        <node concept="3xqBd$" id="2arDlsKIge4" role="3xrYvX">
+          <node concept="3Tm1VV" id="2arDlsKIgfL" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="2arDlsKIgeY" role="2RkE6I">
+        <ref role="3uigEE" to="r9fo:~Condition" resolve="Condition" />
+        <node concept="3uibUv" id="2arDlsKIgeZ" role="11_B2D">
+          <ref role="3uigEE" to="vsqj:~DevKit" resolve="DevKit" />
+        </node>
+      </node>
+    </node>
+    <node concept="2RhdJD" id="2arDlsKIgci" role="jymVt">
+      <property role="2RkwnN" value="UserCanSelectPersistence" />
+      <node concept="3Tm1VV" id="2arDlsKIgcj" role="1B3o_S" />
+      <node concept="2RoN1w" id="2arDlsKIgck" role="2RnVtd">
+        <node concept="3wEZqW" id="2arDlsKIgcl" role="3wFrgM" />
+        <node concept="3xqBd$" id="2arDlsKIgcm" role="3xrYvX">
+          <node concept="3Tm1VV" id="2arDlsKIgdX" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="10P_77" id="2arDlsKIgd3" role="2RkE6I" />
+    </node>
+    <node concept="2RhdJD" id="2arDlsKIgah" role="jymVt">
+      <property role="2RkwnN" value="DefaultPersistenceID" />
+      <node concept="3Tm1VV" id="2arDlsKIgai" role="1B3o_S" />
+      <node concept="2RoN1w" id="2arDlsKIgaj" role="2RnVtd">
+        <node concept="3wEZqW" id="2arDlsKIgak" role="3wFrgM" />
+        <node concept="3xqBd$" id="2arDlsKIgal" role="3xrYvX">
+          <node concept="3Tm1VV" id="2arDlsKIgb6" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="17QB3L" id="2arDlsKIgaW" role="2RkE6I" />
+    </node>
+    <node concept="3Tm1VV" id="2arDlsKId9a" role="1B3o_S" />
   </node>
 </model>
 
