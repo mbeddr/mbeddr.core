@@ -2633,7 +2633,11 @@
   <node concept="24kQdi" id="4TbX0$8UA6X">
     <property role="3GE5qa" value="configuration.validation.element.watches" />
     <ref role="1XX52x" to="rpmx:4TbX0$8UA61" resolve="EmptyValidationConfigurationElement" />
-    <node concept="3F0ifn" id="4TbX0$8UA7M" role="2wV5jI" />
+    <node concept="3F0ifn" id="4TbX0$8UA7M" role="2wV5jI">
+      <node concept="VPxyj" id="6OxpEKG1pNQ" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="58boHs0Oqkt">
     <ref role="1XX52x" to="rpmx:5t7wq7uqigT" resolve="IDebuggerBackend" />
