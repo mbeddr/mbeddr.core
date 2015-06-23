@@ -48,6 +48,8 @@
       <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
       </concept>
+      <concept id="5763383285156533447" name="com.mbeddr.core.expressions.structure.ParensExpression" flags="ng" index="2BPB98" />
+      <concept id="8399455261460717642" name="com.mbeddr.core.expressions.structure.OrExpression" flags="ng" index="2EHzL4" />
       <concept id="8399455261460717640" name="com.mbeddr.core.expressions.structure.AndExpression" flags="ng" index="2EHzL6" />
       <concept id="3830958861296781575" name="com.mbeddr.core.expressions.structure.NotExpression" flags="ng" index="19$8ne" />
       <concept id="8860443239512128052" name="com.mbeddr.core.expressions.structure.BinaryExpression" flags="ng" index="3TlMgq">
@@ -496,6 +498,39 @@
         </node>
         <node concept="1fCc5X" id="4qsm5C8umQz" role="2FxFsO">
           <ref role="1fCc5C" node="4qsm5C8umNO" resolve="conflicts" />
+        </node>
+      </node>
+    </node>
+    <node concept="Id4hS" id="h7gcTUWR1Y" role="Idr$j">
+      <property role="TrG5h" value="DerivedFeatures9" />
+      <node concept="28I2Iu" id="h7gcTUWR1Z" role="Id4hT">
+        <node concept="Idvup" id="h7gcTUWR20" role="Id4hL" />
+        <node concept="Id4hK" id="h7gcTUWR21" role="Id4hQ">
+          <property role="TrG5h" value="c1" />
+        </node>
+        <node concept="Id4hK" id="h7gcTUWRcH" role="Id4hQ">
+          <property role="TrG5h" value="c2" />
+        </node>
+        <node concept="Id4hK" id="h7gcTUWRcS" role="Id4hQ">
+          <property role="TrG5h" value="c3" />
+        </node>
+      </node>
+      <node concept="gY_dk" id="h7gcTUWR27" role="gT3TO">
+        <property role="TrG5h" value="derivedWithParens" />
+        <node concept="2EHzL6" id="h7gcTUWRbz" role="gT3TT">
+          <node concept="2qVrgw" id="h7gcTUWRcZ" role="3TlMhJ">
+            <ref role="2qVrgz" node="h7gcTUWRcS" resolve="c3" />
+          </node>
+          <node concept="2BPB98" id="h7gcTUWRaP" role="3TlMhI">
+            <node concept="2EHzL4" id="h7gcTUWRao" role="1_9fRO">
+              <node concept="2qVrgw" id="h7gcTUWRar" role="3TlMhI">
+                <ref role="2qVrgz" node="4qsm5C8ujek" resolve="c1" />
+              </node>
+              <node concept="2qVrgw" id="h7gcTUWRaq" role="3TlMhJ">
+                <ref role="2qVrgz" node="4qsm5C8umNJ" resolve="c2" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
