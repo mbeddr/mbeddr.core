@@ -178,7 +178,6 @@
       </concept>
       <concept id="105850086902839305" name="com.mbeddr.core.debug.test.structure.DebuggerTestcase" flags="ng" index="3scrou">
         <property id="105850086903217241" name="abstract" index="3sdR9e" />
-        <reference id="105850086902839309" name="extendedTest" index="3scroq" />
         <child id="8867272038842435497" name="extends" index="UYYtp" />
         <child id="105850086903379490" name="stepping" index="3savwP" />
         <child id="105850086902839308" name="suspension" index="3scror" />
@@ -564,7 +563,6 @@
     <node concept="3sgmnF" id="7EQZzuztj58" role="1zJi$$" />
     <node concept="3scrou" id="7EQZzuztj5j" role="1zJi$$">
       <property role="TrG5h" value="steptoStoreConfig" />
-      <ref role="3scroq" node="7EQZzuztj59" resolve="inTestcase" />
       <node concept="3cqZAl" id="7EQZzuztj5k" role="3clF45" />
       <node concept="3clFbS" id="7EQZzuztj5l" role="3clF47" />
       <node concept="3F5Y_J" id="7EQZzuztj5m" role="3F5AM1">
@@ -597,7 +595,6 @@
     <node concept="3sgmnF" id="7EQZzuztj51" role="1zJi$$" />
     <node concept="3scrou" id="7EQZzuztj53" role="1zJi$$">
       <property role="TrG5h" value="stepOverStoreConfig" />
-      <ref role="3scroq" node="7EQZzuztj59" resolve="inTestcase" />
       <node concept="3cqZAl" id="7EQZzuztj54" role="3clF45" />
       <node concept="3clFbS" id="7EQZzuztj55" role="3clF47" />
       <node concept="3sdZbQ" id="7EQZzuztj5w" role="3scror">
@@ -617,7 +614,6 @@
     <node concept="3sgmnF" id="7EQZzuztj5$" role="1zJi$$" />
     <node concept="3scrou" id="7EQZzuztj5A" role="1zJi$$">
       <property role="TrG5h" value="stepToVariantSwitch" />
-      <ref role="3scroq" node="7EQZzuztj59" resolve="inTestcase" />
       <node concept="3cqZAl" id="7EQZzuztj5B" role="3clF45" />
       <node concept="3clFbS" id="7EQZzuztj5C" role="3clF47" />
       <node concept="3sdZbQ" id="7EQZzuztj5D" role="3scror">
@@ -650,7 +646,6 @@
     <node concept="3sgmnF" id="7EQZzuztnaa" role="1zJi$$" />
     <node concept="3scrou" id="7EQZzuztnac" role="1zJi$$">
       <property role="TrG5h" value="stepIntoCase" />
-      <ref role="3scroq" node="7EQZzuztj59" resolve="inTestcase" />
       <node concept="3cqZAl" id="7EQZzuztnad" role="3clF45" />
       <node concept="3clFbS" id="7EQZzuztnae" role="3clF47" />
       <node concept="3sdZbQ" id="7EQZzuztnak" role="3scror">
@@ -685,7 +680,6 @@
     <node concept="3sgmnF" id="7EQZzuztnaf" role="1zJi$$" />
     <node concept="3scrou" id="7EQZzuztnah" role="1zJi$$">
       <property role="TrG5h" value="stepOverToCase" />
-      <ref role="3scroq" node="7EQZzuztj59" resolve="inTestcase" />
       <node concept="3cqZAl" id="7EQZzuztnai" role="3clF45" />
       <node concept="3clFbS" id="7EQZzuztnaj" role="3clF47" />
       <node concept="3savIG" id="7EQZzuztnau" role="3savwP">

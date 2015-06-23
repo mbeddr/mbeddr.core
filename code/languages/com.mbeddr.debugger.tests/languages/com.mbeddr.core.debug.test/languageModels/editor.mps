@@ -11,6 +11,11 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="3bdedd09-792a-4e15-a4db-83970df3ee86" name="de.itemis.mps.editor.collapsible" version="0" />
     <use id="73736c50-f124-433b-b789-2828a15a0adc" name="jetbrains.mps.baseLanguage.collections.trove" version="0" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="0" />
   </languages>
   <imports>
     <import index="rpmx" ref="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" />
@@ -719,6 +724,7 @@
             </node>
           </node>
         </node>
+        <node concept="3F0ifn" id="41LNfYHYOaL" role="2czzBI" />
       </node>
       <node concept="3F0ifn" id="13C5RDf_pxj" role="3EZMnx">
         <property role="3F0ifm" value="}" />
@@ -1280,7 +1286,7 @@
         </node>
       </node>
       <node concept="VechU" id="41LNfYHj3va" role="3F10Kt">
-        <property role="Vb096" value="blue" />
+        <property role="Vb096" value="black" />
       </node>
     </node>
   </node>
@@ -2645,7 +2651,7 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
       <node concept="VechU" id="7GeSf11mf$R" role="3F10Kt">
-        <property role="Vb096" value="black" />
+        <property role="Vb096" value="blue" />
       </node>
     </node>
   </node>

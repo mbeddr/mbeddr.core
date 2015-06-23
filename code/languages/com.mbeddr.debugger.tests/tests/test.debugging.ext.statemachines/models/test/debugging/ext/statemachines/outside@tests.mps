@@ -220,7 +220,6 @@
       </concept>
       <concept id="105850086902839305" name="com.mbeddr.core.debug.test.structure.DebuggerTestcase" flags="ng" index="3scrou">
         <property id="105850086903217241" name="abstract" index="3sdR9e" />
-        <reference id="105850086902839309" name="extendedTest" index="3scroq" />
         <child id="8867272038842435497" name="extends" index="UYYtp" />
         <child id="105850086903379490" name="stepping" index="3savwP" />
         <child id="105850086902839308" name="suspension" index="3scror" />
@@ -722,7 +721,6 @@
     <node concept="3sgmnF" id="2916lTL0uoP" role="1zJi$$" />
     <node concept="3scrou" id="2916lTL0tLn" role="1zJi$$">
       <property role="TrG5h" value="stepOverSMInit" />
-      <ref role="3scroq" node="2916lTL0uoM" resolve="steppingSMInit" />
       <node concept="3cqZAl" id="2916lTL0tLo" role="3clF45" />
       <node concept="3clFbS" id="2916lTL0tLp" role="3clF47" />
       <node concept="3savIG" id="2916lTL0uo_" role="3savwP">
@@ -737,7 +735,6 @@
     <node concept="3sgmnF" id="2916lTL0up2" role="1zJi$$" />
     <node concept="3scrou" id="2916lTL0uoV" role="1zJi$$">
       <property role="TrG5h" value="stepIntoSMInit" />
-      <ref role="3scroq" node="2916lTL0uoM" resolve="steppingSMInit" />
       <node concept="3cqZAl" id="2916lTL0uoW" role="3clF45" />
       <node concept="3clFbS" id="2916lTL0uoX" role="3clF47" />
       <node concept="3savIG" id="2916lTL0uoY" role="3savwP">
@@ -799,7 +796,6 @@
     <node concept="3sgmnF" id="2916lTL0w9x" role="1zJi$$" />
     <node concept="3scrou" id="2916lTL0w9K" role="1zJi$$">
       <property role="TrG5h" value="stepOverSMHasFired" />
-      <ref role="3scroq" node="2916lTL0w9p" resolve="steppingOnSMHasFired" />
       <node concept="3cqZAl" id="2916lTL0w9L" role="3clF45" />
       <node concept="3clFbS" id="2916lTL0w9M" role="3clF47" />
       <node concept="3savIG" id="2916lTL0w9N" role="3savwP">
@@ -814,7 +810,6 @@
     <node concept="3sgmnF" id="2916lTL0w9z" role="1zJi$$" />
     <node concept="3scrou" id="2916lTL0w9P" role="1zJi$$">
       <property role="TrG5h" value="stepIntoSMHasFired" />
-      <ref role="3scroq" node="2916lTL0w9p" resolve="steppingOnSMHasFired" />
       <node concept="3cqZAl" id="2916lTL0w9Q" role="3clF45" />
       <node concept="3clFbS" id="2916lTL0w9R" role="3clF47" />
       <node concept="3savIG" id="2916lTL0w9S" role="3savwP">
@@ -853,7 +848,6 @@
     <node concept="3sgmnF" id="2916lTL0w9_" role="1zJi$$" />
     <node concept="3scrou" id="2916lTL0w9W" role="1zJi$$">
       <property role="TrG5h" value="stepOverSMSetState" />
-      <ref role="3scroq" node="2916lTL0w9A" resolve="steppingOnSMSetState" />
       <node concept="3cqZAl" id="2916lTL0w9X" role="3clF45" />
       <node concept="3clFbS" id="2916lTL0w9Y" role="3clF47" />
       <node concept="3savIG" id="2916lTL0w9Z" role="3savwP">
@@ -868,7 +862,6 @@
     <node concept="3sgmnF" id="2916lTL0wa1" role="1zJi$$" />
     <node concept="3scrou" id="2916lTL0wa2" role="1zJi$$">
       <property role="TrG5h" value="stepIntoSMSetState" />
-      <ref role="3scroq" node="2916lTL0w9A" resolve="steppingOnSMSetState" />
       <node concept="3cqZAl" id="2916lTL0wa3" role="3clF45" />
       <node concept="3clFbS" id="2916lTL0wa4" role="3clF47" />
       <node concept="3savIG" id="2916lTL0wa5" role="3savwP">

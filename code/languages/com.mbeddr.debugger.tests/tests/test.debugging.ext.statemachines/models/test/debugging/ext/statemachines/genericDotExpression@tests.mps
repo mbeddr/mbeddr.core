@@ -199,7 +199,6 @@
       </concept>
       <concept id="105850086902839305" name="com.mbeddr.core.debug.test.structure.DebuggerTestcase" flags="ng" index="3scrou">
         <property id="105850086903217241" name="abstract" index="3sdR9e" />
-        <reference id="105850086902839309" name="extendedTest" index="3scroq" />
         <child id="8867272038842435497" name="extends" index="UYYtp" />
         <child id="105850086903379490" name="stepping" index="3savwP" />
         <child id="105850086902839308" name="suspension" index="3scror" />
@@ -530,7 +529,6 @@
     <node concept="3sgmnF" id="3xl_a9y0yDr" role="1zJi$$" />
     <node concept="3scrou" id="3xl_a9y0xYX" role="1zJi$$">
       <property role="TrG5h" value="stepOverInit" />
-      <ref role="3scroq" node="3xl_a9y0yjJ" resolve="stepOnInit" />
       <node concept="3cqZAl" id="3xl_a9y0xYZ" role="3clF45" />
       <node concept="3clFbS" id="3xl_a9y0xZ1" role="3clF47" />
       <node concept="3savIG" id="3xl_a9y0yE2" role="3savwP">
@@ -545,7 +543,6 @@
     <node concept="3sgmnF" id="3xl_a9y0yDI" role="1zJi$$" />
     <node concept="3scrou" id="3xl_a9y0yjq" role="1zJi$$">
       <property role="TrG5h" value="stepIntoInit" />
-      <ref role="3scroq" node="3xl_a9y0yjJ" resolve="stepOnInit" />
       <node concept="3cqZAl" id="3xl_a9y0yjr" role="3clF45" />
       <node concept="3clFbS" id="3xl_a9y0yjs" role="3clF47" />
       <node concept="3savIG" id="3xl_a9y0yE6" role="3savwP">
