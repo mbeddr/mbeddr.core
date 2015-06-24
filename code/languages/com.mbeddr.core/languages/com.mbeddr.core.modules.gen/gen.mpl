@@ -5,7 +5,7 @@
       <sourceRoot location="languageModels" />
     </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib/org.eclipse.incquery.runtime.base.itc_1.0.0.201506181354.jar" />
+      <sourceRoot location="lib/org.eclipse.incquery.runtime.base.itc_1.0.0.201506241048.jar" />
     </modelRoot>
   </models>
   <accessoryModels />
@@ -32,6 +32,8 @@
         <dependency reexport="false">2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
         <dependency reexport="false">efda956e-491e-4f00-ba14-36af2f213ecf(com.mbeddr.core.udt)</dependency>
+        <dependency reexport="false">c7a315e6-1d93-4186-85bc-2dfafd1ccc21(com.mbeddr.mpsutil.common)</dependency>
+        <dependency reexport="true">62296a07-bc38-46d2-8034-198c24063588(com.mbeddr.core.modules.gen)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</usedLanguage>
@@ -165,7 +167,7 @@
     </generator>
   </generators>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/org.eclipse.incquery.runtime.base.itc_1.0.0.201506181354.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.incquery.runtime.base.itc_1.0.0.201506241048.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
