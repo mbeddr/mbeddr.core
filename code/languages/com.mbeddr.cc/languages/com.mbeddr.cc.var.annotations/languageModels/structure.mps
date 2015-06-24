@@ -320,6 +320,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="qqyh:5USXI9Kzbaq" resolve="FeatureModel" />
     </node>
+    <node concept="PrWs8" id="1HBb4ql6EAg" role="PzmwI">
+      <ref role="PrY4T" to="qqyh:5USXI9KzkZI" resolve="IMapping" />
+    </node>
   </node>
 </model>
 
