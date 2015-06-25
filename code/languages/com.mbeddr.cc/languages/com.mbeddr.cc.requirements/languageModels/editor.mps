@@ -875,15 +875,15 @@
               <node concept="VechU" id="KXQGmKHM4g" role="3F10Kt">
                 <property role="Vb096" value="darkGray" />
               </node>
+              <node concept="11LMrY" id="64BVCtJbUnb" role="3F10Kt">
+                <property role="VOm3f" value="true" />
+              </node>
             </node>
             <node concept="3F1sOY" id="7JeEMfT1NGW" role="3EZMnx">
               <ref role="1NtTu8" to="75wo:7JeEMfT1L$0" />
               <ref role="34QXea" node="2PGidvqhYAU" resolve="addNewRequirements" />
               <node concept="VechU" id="KXQGmKHM4f" role="3F10Kt">
                 <property role="Vb096" value="darkGray" />
-              </node>
-              <node concept="11L4FC" id="1FPlGg16SWT" role="3F10Kt">
-                <property role="VOm3f" value="true" />
               </node>
             </node>
             <node concept="3F0ifn" id="5$bT90ZeSPR" role="3EZMnx">

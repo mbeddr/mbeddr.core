@@ -3,6 +3,11 @@
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="fe9d76d7-5809-45c9-ae28-a40915b4d6ff" name="jetbrains.mps.lang.checkedName" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -78,6 +83,11 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
+    <language id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions">
+      <concept id="5846558918537398687" name="com.mbeddr.mpsutil.intentions.structure.IntentionGroupAnnotation" flags="ng" index="1SWQZ3">
+        <property id="5846558918537400330" name="label" index="1SWRpm" />
+      </concept>
+    </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
       <concept id="1192794782375" name="jetbrains.mps.lang.intentions.structure.DescriptionBlock" flags="in" index="2S6ZIM" />
@@ -113,6 +123,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -156,6 +167,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="1rEu0HvneDr" role="lGtFl">
+      <property role="1SWRpm" value="ANALYSIS" />
     </node>
   </node>
   <node concept="2S6QgY" id="2h3YlM50CDk">
@@ -220,6 +234,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="1rEu0HvnlQ2" role="lGtFl">
+      <property role="1SWRpm" value="ANALYSIS" />
+    </node>
   </node>
   <node concept="2S6QgY" id="2h3YlM50UwT">
     <property role="3GE5qa" value="harness" />
@@ -277,6 +294,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="1rEu0Hvmzie" role="lGtFl">
+      <property role="1SWRpm" value="ANALYSIS" />
     </node>
   </node>
   <node concept="2S6QgY" id="fjZ33ToGq3">
@@ -382,6 +402,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="1rEu0Hvnm$o" role="lGtFl">
+      <property role="1SWRpm" value="ANALYSIS" />
+    </node>
   </node>
   <node concept="2S6QgY" id="5E1$geGaD1$">
     <property role="3GE5qa" value="types" />
@@ -417,6 +440,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="1rEu0Hvnlyv" role="lGtFl">
+      <property role="1SWRpm" value="ANALYSIS" />
     </node>
   </node>
   <node concept="2S6QgY" id="56VLVOUmEjZ">
@@ -509,6 +535,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="1rEu0Hvnmc9" role="lGtFl">
+      <property role="1SWRpm" value="ANALYSIS" />
     </node>
   </node>
   <node concept="2S6QgY" id="7ehmsbAE22t">
@@ -615,6 +644,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="1rEu0HvnmWO" role="lGtFl">
+      <property role="1SWRpm" value="ANALYSIS" />
+    </node>
   </node>
   <node concept="2S6QgY" id="jmYEA6FRAf">
     <property role="3GE5qa" value="configuration.cbmc" />
@@ -719,6 +751,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="1rEu0Hvnnlm" role="lGtFl">
+      <property role="1SWRpm" value="ANALYSIS" />
+    </node>
   </node>
   <node concept="2S6QgY" id="6RCrcvOuqzZ">
     <property role="3GE5qa" value="statements" />
@@ -777,6 +812,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="1rEu0HvnlFX" role="lGtFl">
+      <property role="1SWRpm" value="ANALYSIS" />
     </node>
   </node>
 </model>
