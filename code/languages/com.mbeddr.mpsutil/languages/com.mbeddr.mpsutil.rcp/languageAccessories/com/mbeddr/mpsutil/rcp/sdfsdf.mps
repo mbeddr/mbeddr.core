@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:fb4d07b5-1c07-4766-8168-b226b4cd429f(com.mbeddr.analyses.acsl.cbmc.gen.behavior)">
+<model ref="r:bf30b679-6410-4a39-8d8d-e75a28282c35(com.mbeddr.mpsutil.rcp.sdfsdf)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports />
