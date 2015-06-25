@@ -8,6 +8,7 @@
   <imports>
     <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="97v6" ref="r:cdcd02c7-c183-4a14-baf5-bd6025a1a5a1(com.mbeddr.analyses.acsl.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
   <registry>
@@ -159,6 +160,39 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="41uzL3ERfNP" role="jymVt" />
+    <node concept="2YIFZL" id="41uzL3ERfPX" role="jymVt">
+      <property role="TrG5h" value="computeAssumeVariableName" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="41uzL3ERfPY" role="3clF47">
+        <node concept="3clFbF" id="41uzL3ERfPZ" role="3cqZAp">
+          <node concept="3cpWs3" id="41uzL3ERfQ0" role="3clFbG">
+            <node concept="2OqwBi" id="41uzL3ERfQ1" role="3uHU7w">
+              <node concept="37vLTw" id="41uzL3ERfQ2" role="2Oq$k0">
+                <ref role="3cqZAo" node="41uzL3ERfQ7" resolve="beh" />
+              </node>
+              <node concept="3TrcHB" id="41uzL3ERfQ3" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="41uzL3ERfQ4" role="3uHU7B">
+              <property role="Xl_RC" value="__assume_" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="41uzL3ERfQ5" role="1B3o_S" />
+      <node concept="17QB3L" id="41uzL3ERfQ6" role="3clF45" />
+      <node concept="37vLTG" id="41uzL3ERfQ7" role="3clF46">
+        <property role="TrG5h" value="beh" />
+        <node concept="3Tqbb2" id="41uzL3ERfQ8" role="1tU5fm">
+          <ref role="ehGHo" to="97v6:41uzL3ELsVO" resolve="Behavior" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="41uzL3ERfOm" role="jymVt" />
     <node concept="3Tm1VV" id="4VKfiM7TB51" role="1B3o_S" />
   </node>
 </model>
