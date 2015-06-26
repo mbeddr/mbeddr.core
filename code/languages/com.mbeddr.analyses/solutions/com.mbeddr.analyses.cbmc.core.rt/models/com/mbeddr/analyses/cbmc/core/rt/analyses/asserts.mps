@@ -681,6 +681,25 @@
       </node>
     </node>
     <node concept="2tJIrI" id="6kQ$1ab4B4q" role="jymVt" />
+    <node concept="3clFbW" id="44LesUVAvHH" role="jymVt">
+      <node concept="37vLTG" id="44LesUVAvHI" role="3clF46">
+        <property role="TrG5h" value="liftedResult" />
+        <node concept="3uibUv" id="44LesUVAvHJ" role="1tU5fm">
+          <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="44LesUVAvHM" role="3clF45" />
+      <node concept="3Tm1VV" id="44LesUVAvHN" role="1B3o_S" />
+      <node concept="3clFbS" id="44LesUVAvHO" role="3clF47">
+        <node concept="XkiVB" id="44LesUVAvHP" role="3cqZAp">
+          <ref role="37wK5l" to="eqhl:4XbM$YHffxN" resolve="CBMCLiftedResult" />
+          <node concept="3cpWs2" id="44LesUVAvHQ" role="37wK5m">
+            <ref role="3cqZAo" node="44LesUVAvHI" resolve="liftedResult" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="44LesUVAvu9" role="jymVt" />
     <node concept="3clFbW" id="6kQ$1ab4Bxx" role="jymVt">
       <node concept="37vLTG" id="6izRX532gBQ" role="3clF46">
         <property role="TrG5h" value="raw" />
