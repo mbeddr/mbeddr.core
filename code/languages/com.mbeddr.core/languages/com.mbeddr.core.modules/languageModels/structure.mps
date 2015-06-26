@@ -179,6 +179,11 @@
     <property role="R4oN_" value="--" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1fLWRCluu9D" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ellipsisKind" />
+      <ref role="20lvS9" node="L2WnbQO1DI" resolve="ArgumentKindContainer" />
+    </node>
     <node concept="PrWs8" id="5Oog2UbSUrA" role="PzmwI">
       <ref role="PrY4T" node="5Oog2UbPmsI" resolve="IExternable" />
     </node>
@@ -1360,7 +1365,7 @@
       <node concept="tn0Fv" id="20xms4A95HY" role="HhnKV">
         <property role="tnX3d" value="false" />
       </node>
-      <node concept="trNpa" id="20xms4A95I0" role="EQaZv">
+      <node concept="trNpa" id="1fLWRCluu9F" role="EQaZv">
         <ref role="trN6q" to="mj1l:7FQByU3CrCQ" resolve="Type" />
       </node>
     </node>
