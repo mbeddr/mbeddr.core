@@ -326,7 +326,7 @@
     <node concept="1TJgyj" id="2_XJnzLo$ly" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="length" />
-      <property role="20lbJX" value="0..1" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>

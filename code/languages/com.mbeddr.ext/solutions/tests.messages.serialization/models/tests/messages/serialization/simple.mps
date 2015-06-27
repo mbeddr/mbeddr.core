@@ -51,6 +51,9 @@
       </concept>
     </language>
     <language id="bb0ad88b-63cd-45fd-ae27-8662d274cf3c" name="com.mbeddr.ext.serialization">
+      <concept id="4566548524301179982" name="com.mbeddr.ext.serialization.structure.ReadTarget" flags="ng" index="fOvZY">
+        <child id="4566548524301179984" name="message" index="fOvZw" />
+      </concept>
       <concept id="4566548524300866823" name="com.mbeddr.ext.serialization.structure.WriteTarget" flags="ng" index="fPzqR">
         <child id="4566548524300866929" name="message" index="fPzr1" />
       </concept>
@@ -672,7 +675,20 @@
           </node>
         </node>
         <node concept="3XISUE" id="7op4RkOCB_8" role="3XIRFZ" />
-        <node concept="3XISUE" id="3XvCV0KycD4" role="3XIRFZ" />
+        <node concept="1_9egQ" id="7op4RkOVwr0" role="3XIRFZ">
+          <node concept="2qmXGp" id="7op4RkOVwxW" role="1_9egR">
+            <node concept="fOvZY" id="7op4RkOVwM5" role="1ESnxz">
+              <node concept="YInwV" id="7op4RkOVxhf" role="fOvZw">
+                <node concept="3ZVu4v" id="7op4RkOVxwL" role="1_9fRO">
+                  <ref role="3ZVs_2" node="3XvCV0Kye58" resolve="received" />
+                </node>
+              </node>
+            </node>
+            <node concept="3ZVu4v" id="7op4RkOVwqY" role="1_9fRO">
+              <ref role="3ZVs_2" node="1LleiTPnEo2" resolve="ctx" />
+            </node>
+          </node>
+        </node>
         <node concept="3XISUE" id="7op4RkOyh4u" role="3XIRFZ" />
         <node concept="c0Tn9" id="3XvCV0KycF8" role="3XIRFZ">
           <node concept="3TlM44" id="3XvCV0KydQK" role="c0Tn6">
