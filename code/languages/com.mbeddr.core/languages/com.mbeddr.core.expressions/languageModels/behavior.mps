@@ -4312,7 +4312,7 @@
                   <node concept="2ShNRf" id="6w9JOkHS6AG" role="37wK5m">
                     <node concept="3zrR0B" id="6w9JOkHS6AH" role="2ShVmc">
                       <node concept="3Tqbb2" id="6w9JOkHS6AI" role="3zrR0E">
-                        <ref role="ehGHo" to="mj1l:7lNBHBNBzy8" resolve="Int32tType" />
+                        <ref role="ehGHo" to="mj1l:7lNBHBNBzyd" resolve="Int64tType" />
                       </node>
                     </node>
                   </node>
@@ -4473,7 +4473,7 @@
                   <node concept="2ShNRf" id="x3lYGTywVB" role="37wK5m">
                     <node concept="3zrR0B" id="x3lYGTywVC" role="2ShVmc">
                       <node concept="3Tqbb2" id="x3lYGTywVD" role="3zrR0E">
-                        <ref role="ehGHo" to="mj1l:7lNBHBNBzyi" resolve="UnsignedInt32tType" />
+                        <ref role="ehGHo" to="mj1l:7lNBHBNBzyo" resolve="UnsignedInt64tType" />
                       </node>
                     </node>
                   </node>
