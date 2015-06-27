@@ -209,6 +209,7 @@
       <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
       </concept>
+      <concept id="1664480272136207708" name="com.mbeddr.core.expressions.structure.CharType" flags="ng" index="biTqx" />
       <concept id="8864856114140038681" name="com.mbeddr.core.expressions.structure.DoubleType" flags="ng" index="2fgwQN" />
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
@@ -456,7 +457,7 @@
         <node concept="3wxxNl" id="1PMTxQdl3im" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <node concept="26Vqqz" id="1PMTxQdl3ik" role="2umbIo">
+          <node concept="biTqx" id="6pWLWdoNztM" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="true" />
           </node>
@@ -1719,6 +1720,25 @@
         </node>
       </node>
       <node concept="3XIRFW" id="1PMTxQdl3q_" role="3XIRFX">
+        <node concept="1_9egQ" id="6pWLWdp0c3D" role="3XIRFZ">
+          <node concept="3pqW6w" id="6pWLWdp0E7s" role="1_9egR">
+            <node concept="1S8S4T" id="6pWLWdp0Tro" role="3TlMhJ">
+              <node concept="3TlMh9" id="6pWLWdp0E7v" role="1S8S4V">
+                <property role="2hmy$m" value="0" />
+              </node>
+              <node concept="1AkAi2" id="6pWLWdp18th" role="1S8S4N">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <ref role="1AkAi1" node="1PMTxQdl3gI" resolve="MARKERS" />
+              </node>
+            </node>
+            <node concept="3wxyx2" id="6pWLWdp0c3_" role="3TlMhI">
+              <node concept="3ZUYvv" id="6pWLWdp0r5j" role="1_9fRO">
+                <ref role="3ZUYvu" node="1PMTxQdl3qy" resolve="marker" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="c0U19" id="1PMTxQdl3qA" role="3XIRFZ">
           <node concept="3O_q_g" id="1PMTxQdl6fY" role="c0U16">
             <ref role="3O_q_h" node="1PMTxQdl3pC" resolve="read_byte" />
