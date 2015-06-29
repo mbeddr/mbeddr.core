@@ -2601,6 +2601,18 @@
               <ref role="3bR37D" node="7uZw0yZ43Mi" resolve="com.mbeddr.core.udt" />
             </node>
           </node>
+          <node concept="1SiIV0" id="4INvudZM224" role="3bR37C">
+            <node concept="3bR9La" id="4INvudZM225" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="al5i:5GUwywcVeK8" resolve="com.mbeddr.mpsutil.common" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4INvudZM226" role="3bR37C">
+            <node concept="3bR9La" id="4INvudZM227" role="1SiIV1">
+              <property role="3bR36h" value="true" />
+              <ref role="3bR37D" node="7uZw0yZ43K6" resolve="com.mbeddr.core.modules.gen" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="7uQ0U6uDrAH" role="3bR37C">
           <node concept="1Busua" id="7uQ0U6uDrAI" role="1SiIV1">
@@ -2617,6 +2629,25 @@
           <node concept="3bR9La" id="60lJDGE3ASa" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4INvudZM222" role="3bR37C">
+          <node concept="1BurEX" id="4INvudZM223" role="1SiIV1">
+            <node concept="398BVA" id="4INvudZM21P" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ43N8" resolve="mbeddr.core" />
+              <node concept="2Ry0Ak" id="4INvudZM21Q" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4INvudZM21R" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.core.modules.gen" />
+                  <node concept="2Ry0Ak" id="4INvudZM21S" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="4INvudZM21T" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.eclipse.incquery.runtime.base.itc_1.0.0.201506241048.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -9514,6 +9545,23 @@
                       <property role="2Ry0Am" value="lib" />
                       <node concept="2Ry0Ak" id="5jIWg8a4pei" role="2Ry0An">
                         <property role="2Ry0Am" value="javassist.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="28jJK3" id="3RjRSogU9UD" role="39821P">
+              <node concept="398BVA" id="3RjRSogU9UE" role="28jJRO">
+                <ref role="398BVh" node="7uZw0yZ43N8" resolve="mbeddr.core" />
+                <node concept="2Ry0Ak" id="3RjRSogU9UF" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="3RjRSogU9UG" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.mbeddr.core.modules.gen" />
+                    <node concept="2Ry0Ak" id="3RjRSogU9UH" role="2Ry0An">
+                      <property role="2Ry0Am" value="lib" />
+                      <node concept="2Ry0Ak" id="4INvudZOSb_" role="2Ry0An">
+                        <property role="2Ry0Am" value="org.eclipse.incquery.runtime.base.itc_1.0.0.201506241048.jar" />
                       </node>
                     </node>
                   </node>
