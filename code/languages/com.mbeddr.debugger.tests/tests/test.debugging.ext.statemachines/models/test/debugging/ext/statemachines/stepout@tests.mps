@@ -170,6 +170,9 @@
     <language id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test">
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876391" name="com.mbeddr.core.debug.test.structure.StepOutCommand" flags="ng" index="2$4FYd" />
+      <concept id="8867272038842303611" name="com.mbeddr.core.debug.test.structure.DebuggerTestcaseReference" flags="ng" index="UZuib">
+        <reference id="8867272038842351965" name="testCase" index="UZi6H" />
+      </concept>
       <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
@@ -203,7 +206,7 @@
       </concept>
       <concept id="105850086902839305" name="com.mbeddr.core.debug.test.structure.DebuggerTestcase" flags="ng" index="3scrou">
         <property id="105850086903217241" name="abstract" index="3sdR9e" />
-        <reference id="105850086902839309" name="extendedTest" index="3scroq" />
+        <child id="8867272038842435497" name="extends" index="UYYtp" />
         <child id="105850086903379490" name="stepping" index="3savwP" />
         <child id="105850086902839308" name="suspension" index="3scror" />
         <child id="4360423713604451010" name="validation" index="3F5AM1" />
@@ -307,13 +310,15 @@
       </node>
     </node>
     <node concept="3sgmnF" id="7SbCYlqP0Gl" role="1zJi$$" />
-    <node concept="3scrou" id="7SbCYlqP0FW" role="1zJi$$">
+    <node concept="3scrou" id="41LNfYI81Wj" role="1zJi$$">
       <property role="TrG5h" value="stepOutOfTransition" />
-      <ref role="3scroq" node="7SbCYlqP0Gm" resolve="stepOutOfSM" />
-      <node concept="3cqZAl" id="7SbCYlqP0FX" role="3clF45" />
-      <node concept="3clFbS" id="7SbCYlqP0FY" role="3clF47" />
-      <node concept="3sdZbQ" id="7SbCYlqP0Gi" role="3scror">
-        <node concept="3sdZbA" id="7SbCYlqP0Gj" role="3sdZbB">
+      <node concept="3cqZAl" id="41LNfYI81Wl" role="3clF45" />
+      <node concept="3clFbS" id="41LNfYI81Wn" role="3clF47" />
+      <node concept="UZuib" id="41LNfYI81Xb" role="UYYtp">
+        <ref role="UZi6H" node="7SbCYlqP0Gm" resolve="stepOutOfSM" />
+      </node>
+      <node concept="3sdZbQ" id="41LNfYI81Xf" role="3scror">
+        <node concept="3sdZbA" id="41LNfYI81Xh" role="3sdZbB">
           <ref role="3sa5fj" node="2Zy_zYsNcR2" resolve="inTransitionBodyWithCond" />
         </node>
       </node>
@@ -321,7 +326,6 @@
     <node concept="3sgmnF" id="7SbCYlqP0FV" role="1zJi$$" />
     <node concept="3scrou" id="7SbCYlqP0G2" role="1zJi$$">
       <property role="TrG5h" value="stepOutOfExitAction" />
-      <ref role="3scroq" node="7SbCYlqP0Gm" resolve="stepOutOfSM" />
       <node concept="3cqZAl" id="7SbCYlqP0G3" role="3clF45" />
       <node concept="3clFbS" id="7SbCYlqP0G4" role="3clF47" />
       <node concept="3sdZbQ" id="7SbCYlqP0Gw" role="3scror">
@@ -329,11 +333,13 @@
           <ref role="3sa5fj" node="2Zy_zYsNcRv" resolve="inExitAction" />
         </node>
       </node>
+      <node concept="UZuib" id="7GeSf1268rg" role="UYYtp">
+        <ref role="UZi6H" node="7SbCYlqP0Gm" resolve="stepOutOfSM" />
+      </node>
     </node>
     <node concept="3sgmnF" id="7SbCYlqP0FZ" role="1zJi$$" />
     <node concept="3scrou" id="7SbCYlqP0G5" role="1zJi$$">
       <property role="TrG5h" value="stepOutOfEntryAction" />
-      <ref role="3scroq" node="7SbCYlqP0Gm" resolve="stepOutOfSM" />
       <node concept="3cqZAl" id="7SbCYlqP0G6" role="3clF45" />
       <node concept="3clFbS" id="7SbCYlqP0G7" role="3clF47" />
       <node concept="3sdZbQ" id="7SbCYlqP0Gv" role="3scror">
@@ -341,17 +347,22 @@
           <ref role="3sa5fj" node="2Zy_zYsNcRu" resolve="inEntryAction" />
         </node>
       </node>
+      <node concept="UZuib" id="7GeSf1268_A" role="UYYtp">
+        <ref role="UZi6H" node="7SbCYlqP0Gm" resolve="stepOutOfSM" />
+      </node>
     </node>
     <node concept="3sgmnF" id="7SbCYlqP0G0" role="1zJi$$" />
     <node concept="3scrou" id="7SbCYlqP0G8" role="1zJi$$">
       <property role="TrG5h" value="stepOutOfdoAction" />
-      <ref role="3scroq" node="7SbCYlqP0Gm" resolve="stepOutOfSM" />
       <node concept="3cqZAl" id="7SbCYlqP0G9" role="3clF45" />
       <node concept="3clFbS" id="7SbCYlqP0Ga" role="3clF47" />
       <node concept="3sdZbQ" id="7SbCYlqP0Gb" role="3scror">
         <node concept="3sdZbA" id="7SbCYlqP0Gc" role="3sdZbB">
           <ref role="3sa5fj" node="2Zy_zYsNcRF" resolve="inDoAction" />
         </node>
+      </node>
+      <node concept="UZuib" id="7GeSf1268yv" role="UYYtp">
+        <ref role="UZi6H" node="7SbCYlqP0Gm" resolve="stepOutOfSM" />
       </node>
     </node>
     <node concept="3sgmnF" id="7SbCYlqP0G1" role="1zJi$$" />
