@@ -42,7 +42,7 @@
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
@@ -620,6 +620,40 @@
         <node concept="3vwNmj" id="4qsm5C8umYP" role="3cqZAp">
           <node concept="37vLTw" id="4qsm5C8umZY" role="3vwVQn">
             <ref role="3cqZAo" node="4qsm5C8umRV" resolve="res" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="h7gcTUWRxs" role="1SL9yI">
+      <property role="TrG5h" value="testDerivedFeatures9" />
+      <node concept="3cqZAl" id="h7gcTUWRxt" role="3clF45" />
+      <node concept="3clFbS" id="h7gcTUWRxu" role="3clF47">
+        <node concept="3SKdUt" id="h7gcTUWRxv" role="3cqZAp">
+          <node concept="3SKdUq" id="h7gcTUWRxw" role="3SKWNk">
+            <property role="3SKdUp" value="parenthesis in expressions of derived features - SUCCESS" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="h7gcTUWRxx" role="3cqZAp">
+          <node concept="3cpWsn" id="h7gcTUWRxy" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="10P_77" id="h7gcTUWRxz" role="1tU5fm" />
+            <node concept="NRdvd" id="h7gcTUWRx$" role="33vP2m">
+              <ref role="37wK5l" to="oe3g:tSjOfAadGB" resolve="checkFeatureModelConsistency" />
+              <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
+              <node concept="BaHAS" id="h7gcTUWRx_" role="37wK5m">
+                <property role="BaBD8" value="fm" />
+                <property role="BaHAW" value="test.analyses.var.testcode.fm" />
+                <property role="BaGAP" value="" />
+              </node>
+              <node concept="Xl_RD" id="h7gcTUWRxA" role="37wK5m">
+                <property role="Xl_RC" value="DerivedFeatures9" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="h7gcTUWRxB" role="3cqZAp">
+          <node concept="37vLTw" id="h7gcTUWRxC" role="3vwVQn">
+            <ref role="3cqZAo" node="h7gcTUWRxy" resolve="res" />
           </node>
         </node>
       </node>

@@ -273,6 +273,12 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -2918,6 +2924,25 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="3clFbJ" id="h7gcTUWeaB" role="3cqZAp">
+                      <node concept="3clFbS" id="h7gcTUWeaC" role="3clFbx">
+                        <node concept="3cpWs6" id="h7gcTUWeaH" role="3cqZAp">
+                          <node concept="37vLTw" id="h7gcTUWkva" role="3cqZAk">
+                            <ref role="3cqZAo" node="3KT4CxIDqIc" resolve="literalForInner" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="h7gcTUWeaJ" role="3clFbw">
+                        <node concept="37vLTw" id="h7gcTUWeaK" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3KT4CxIA1nn" resolve="exp" />
+                        </node>
+                        <node concept="1mIQ4w" id="h7gcTUWeaL" role="2OqNvi">
+                          <node concept="chp4Y" id="h7gcTUWfQe" role="cj9EA">
+                            <ref role="cht4Q" to="mj1l:4ZVDCZCbtj7" resolve="ParensExpression" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                     <node concept="3clFbJ" id="3KT4CxIDjSV" role="3cqZAp">
                       <node concept="3clFbS" id="3KT4CxIDjSW" role="3clFbx">
                         <node concept="3clFbF" id="44j14BH5HQo" role="3cqZAp">
@@ -3029,6 +3054,22 @@
           </node>
         </node>
         <node concept="3clFbH" id="3KT4CxIBTsW" role="3cqZAp" />
+        <node concept="34ab3g" id="h7gcTUV$ZJ" role="3cqZAp">
+          <property role="35gtTG" value="error" />
+          <node concept="3cpWs3" id="h7gcTUVA1e" role="34bqiv">
+            <node concept="2OqwBi" id="h7gcTUVA9t" role="3uHU7w">
+              <node concept="37vLTw" id="h7gcTUVA4j" role="2Oq$k0">
+                <ref role="3cqZAo" node="3KT4CxIA1nn" resolve="exp" />
+              </node>
+              <node concept="2qgKlT" id="h7gcTUVC6a" role="2OqNvi">
+                <ref role="37wK5l" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="h7gcTUV$ZL" role="3uHU7B">
+              <property role="Xl_RC" value="Error while converting the expression: " />
+            </node>
+          </node>
+        </node>
         <node concept="YS8fn" id="3KT4CxIDa9v" role="3cqZAp">
           <node concept="2ShNRf" id="3KT4CxIDcZR" role="YScLw">
             <node concept="1pGfFk" id="3KT4CxIDdrb" role="2ShVmc">
