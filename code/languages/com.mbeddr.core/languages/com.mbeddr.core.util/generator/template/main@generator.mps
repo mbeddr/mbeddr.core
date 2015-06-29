@@ -101,7 +101,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -15818,6 +15818,15 @@
                 <property role="2c7vTL" value="false" />
               </node>
               <node concept="3XIRFW" id="5usoWIJ314p" role="3XIRFX">
+                <node concept="1QiMYF" id="1mwQ_7zrLa_" role="3XIRFZ">
+                  <node concept="OjmMv" id="1mwQ_7zrLaB" role="3SJzmv">
+                    <node concept="19SGf9" id="1mwQ_7zrLaC" role="OjmMu">
+                      <node concept="19SUe$" id="1mwQ_7zrLaD" role="19SJt6">
+                        <property role="19SUeA" value="If this format is changed you also have to take care of the MbeddrStackTraceLoggers code that it can extract the information from the printed string. If you are unsure DON'T touch this code" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="1_9egQ" id="5usoWIJ5499" role="3XIRFZ">
                   <node concept="19_ADJ" id="5usoWIJ549a" role="1_9egR">
                     <property role="3YGKL8" value="&lt;stdio.h&gt;" />
@@ -16020,7 +16029,7 @@
                   <node concept="19_ADJ" id="5usoWIJ5wiP" role="1_9egR">
                     <property role="3YGKL8" value="&lt;stdio.h&gt;" />
                     <node concept="19_wF0" id="5usoWIJ5wiQ" role="19_wF2">
-                      <property role="19_wF3" value="printf(&quot; @loc %s \n&quot;," />
+                      <property role="19_wF3" value="printf(&quot;@%s \n&quot;," />
                     </node>
                     <node concept="2sYeqF" id="5usoWIJ5OHi" role="19_wF2">
                       <node concept="3ZUYvv" id="5usoWIJ5TzC" role="2sYeqE">
