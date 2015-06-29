@@ -66,7 +66,7 @@
     <property role="TrG5h" value="WriteTarget" />
     <property role="34LRSv" value="write" />
     <property role="3GE5qa" value="genericDotTargets" />
-    <ref role="1TJDcQ" node="7op4RkOrNAj" resolve="MessageDotTarget" />
+    <ref role="1TJDcQ" node="6pWLWdplM0d" resolve="StatementLevelMessageDotTargets" />
     <node concept="1TJgyj" id="3XvCV0KyplL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="message" />
@@ -78,7 +78,7 @@
     <property role="TrG5h" value="ReadTarget" />
     <property role="34LRSv" value="read" />
     <property role="3GE5qa" value="genericDotTargets" />
-    <ref role="1TJDcQ" node="7op4RkOrNAj" resolve="MessageDotTarget" />
+    <ref role="1TJDcQ" node="6pWLWdplM0d" resolve="StatementLevelMessageDotTargets" />
     <node concept="1TJgyj" id="3XvCV0Kz_Lg" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="message" />
@@ -130,11 +130,17 @@
     <property role="TrG5h" value="MsgInitTarget" />
     <property role="34LRSv" value="init" />
     <property role="3GE5qa" value="genericDotTargets" />
-    <ref role="1TJDcQ" node="7op4RkOrNAj" resolve="MessageDotTarget" />
+    <ref role="1TJDcQ" node="6pWLWdplM0d" resolve="StatementLevelMessageDotTargets" />
     <node concept="1TJgyj" id="1LleiTPo0q9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="dataStream" />
       <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6pWLWdpuRvU" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="additionalActuals" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
@@ -142,16 +148,16 @@
     <property role="TrG5h" value="ReadHandler" />
     <property role="34LRSv" value="onRead" />
     <property role="3GE5qa" value="handler" />
-    <ref role="1TJDcQ" node="1LleiTPuSDO" resolve="ReadWriteHandler" />
+    <ref role="1TJDcQ" node="1LleiTPuSDO" resolve="HandlerFunction" />
   </node>
   <node concept="1TIwiD" id="1LleiTPuSDg">
     <property role="TrG5h" value="WriteHandler" />
     <property role="34LRSv" value="onWrite" />
     <property role="3GE5qa" value="handler" />
-    <ref role="1TJDcQ" node="1LleiTPuSDO" resolve="ReadWriteHandler" />
+    <ref role="1TJDcQ" node="1LleiTPuSDO" resolve="HandlerFunction" />
   </node>
   <node concept="1TIwiD" id="1LleiTPuSDO">
-    <property role="TrG5h" value="ReadWriteHandler" />
+    <property role="TrG5h" value="HandlerFunction" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="handler" />
@@ -365,6 +371,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     </node>
+    <node concept="1TJgyj" id="6pWLWdpj3CN" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="initHandler" />
+      <ref role="20lvS9" node="6pWLWdpj0G$" resolve="InitHandler" />
+    </node>
     <node concept="1TJgyj" id="7op4RkOh6DB" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="readHandler" />
@@ -374,6 +385,11 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="writeHandler" />
       <ref role="20lvS9" node="1LleiTPuSDg" resolve="WriteHandler" />
+    </node>
+    <node concept="1TJgyj" id="6pWLWdpj3CS" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="disposeHandler" />
+      <ref role="20lvS9" node="6pWLWdpj32l" resolve="DisposeHandler" />
     </node>
     <node concept="PrWs8" id="7op4RkOh3Uw" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
@@ -390,6 +406,42 @@
     <node concept="PrWs8" id="7op4RkOrNA_" role="PzmwI">
       <ref role="PrY4T" node="1LleiTP$Yt_" resolve="IMessageConstruct" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6pWLWdpj0G$">
+    <property role="3GE5qa" value="handler" />
+    <property role="TrG5h" value="InitHandler" />
+    <property role="34LRSv" value="onInit" />
+    <ref role="1TJDcQ" node="1LleiTPuSDO" resolve="HandlerFunction" />
+    <node concept="1TJgyj" id="4WTYg$PUiX5" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="additionalArguments" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="x27k:7kKaL9x4DZT" resolve="IArgumentLike" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6pWLWdpj32l">
+    <property role="3GE5qa" value="handler" />
+    <property role="TrG5h" value="DisposeHandler" />
+    <property role="34LRSv" value="onDispose" />
+    <ref role="1TJDcQ" node="1LleiTPuSDO" resolve="HandlerFunction" />
+  </node>
+  <node concept="1TIwiD" id="6pWLWdpl3C6">
+    <property role="3GE5qa" value="genericDotTargets" />
+    <property role="TrG5h" value="MsgDisposeTarget" />
+    <property role="34LRSv" value="dispose" />
+    <ref role="1TJDcQ" node="6pWLWdplM0d" resolve="StatementLevelMessageDotTargets" />
+  </node>
+  <node concept="1TIwiD" id="6pWLWdplM0d">
+    <property role="3GE5qa" value="genericDotTargets" />
+    <property role="TrG5h" value="StatementLevelMessageDotTargets" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="7op4RkOrNAj" resolve="MessageDotTarget" />
+  </node>
+  <node concept="1TIwiD" id="6pWLWdpu$nk">
+    <property role="3GE5qa" value="handler" />
+    <property role="TrG5h" value="AdditionalArgRef" />
+    <ref role="1TJDcQ" to="x27k:1OcdQnyTX2U" resolve="ArgumentRef" />
   </node>
 </model>
 
