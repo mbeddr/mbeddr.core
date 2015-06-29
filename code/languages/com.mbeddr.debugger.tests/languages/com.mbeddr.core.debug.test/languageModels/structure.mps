@@ -70,7 +70,7 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="3CMDERQUHEk">
-    <property role="TrG5h" value="MarkerAnnotation" />
+    <property role="TrG5h" value="ProgramMarkerAnnotation" />
     <property role="3GE5qa" value="suspendLocation" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="PrWs8" id="3CMDERQUHEn" role="PzmwI">
@@ -80,7 +80,7 @@
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
     <node concept="M6xJ_" id="5GEPw8vxGKh" role="lGtFl">
-      <property role="Hh88m" value="debuggerMarker" />
+      <property role="Hh88m" value="location" />
       <node concept="trNpa" id="5GEPw8vxHll" role="EQaZv">
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
@@ -99,7 +99,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="marker" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3CMDERQUHEk" resolve="MarkerAnnotation" />
+      <ref role="20lvS9" node="3CMDERQUHEk" resolve="ProgramMarkerAnnotation" />
     </node>
     <node concept="PrWs8" id="6kCxLkUvEyx" role="PzmwI">
       <ref role="PrY4T" node="6kCxLkUvEyl" resolve="ISuspendLocation" />
@@ -324,7 +324,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="marker" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3CMDERQUHEk" resolve="MarkerAnnotation" />
+      <ref role="20lvS9" node="3CMDERQUHEk" resolve="ProgramMarkerAnnotation" />
     </node>
     <node concept="PrWs8" id="5S3xvtkjt$" role="PzmwI">
       <ref role="PrY4T" node="5S3xvtkie2" resolve="ISuspensionConfigurationElement" />

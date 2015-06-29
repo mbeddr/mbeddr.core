@@ -136,7 +136,7 @@
       <node concept="3clFbS" id="3CMDERQUHHD" role="2VODD2">
         <node concept="3clFbF" id="3CMDERQUHHE" role="3cqZAp">
           <node concept="Xl_RD" id="3CMDERQUHHF" role="3clFbG">
-            <property role="Xl_RC" value="add Marker" />
+            <property role="Xl_RC" value="Mark Program Location" />
           </node>
         </node>
       </node>
@@ -151,14 +151,14 @@
                   <node concept="2Sf5sV" id="3CMDERQUHHS" role="2Oq$k0" />
                   <node concept="3CFZ6_" id="3CMDERQUHHT" role="2OqNvi">
                     <node concept="3CFYIy" id="3CMDERQUHHU" role="3CFYIz">
-                      <ref role="3CFYIx" to="rpmx:3CMDERQUHEk" resolve="MarkerAnnotation" />
+                      <ref role="3CFYIx" to="rpmx:3CMDERQUHEk" resolve="ProgramMarkerAnnotation" />
                     </node>
                   </node>
                 </node>
                 <node concept="2ShNRf" id="67gjJAxYCk6" role="37vLTx">
                   <node concept="3zrR0B" id="67gjJAxYCk7" role="2ShVmc">
                     <node concept="3Tqbb2" id="67gjJAxYCk8" role="3zrR0E">
-                      <ref role="ehGHo" to="rpmx:3CMDERQUHEk" resolve="MarkerAnnotation" />
+                      <ref role="ehGHo" to="rpmx:3CMDERQUHEk" resolve="ProgramMarkerAnnotation" />
                     </node>
                   </node>
                 </node>
@@ -170,7 +170,7 @@
               <node concept="2Sf5sV" id="67gjJAxYCjA" role="2Oq$k0" />
               <node concept="3CFZ6_" id="67gjJAxYCjB" role="2OqNvi">
                 <node concept="3CFYIy" id="67gjJAxYCjC" role="3CFYIz">
-                  <ref role="3CFYIx" to="rpmx:3CMDERQUHEk" resolve="MarkerAnnotation" />
+                  <ref role="3CFYIx" to="rpmx:3CMDERQUHEk" resolve="ProgramMarkerAnnotation" />
                 </node>
               </node>
             </node>
@@ -188,7 +188,7 @@
                 <node concept="2Sf5sV" id="67gjJAxYEv2" role="2Oq$k0" />
                 <node concept="3CFZ6_" id="67gjJAxYEv3" role="2OqNvi">
                   <node concept="3CFYIy" id="67gjJAxYEv4" role="3CFYIz">
-                    <ref role="3CFYIx" to="rpmx:3CMDERQUHEk" resolve="MarkerAnnotation" />
+                    <ref role="3CFYIx" to="rpmx:3CMDERQUHEk" resolve="ProgramMarkerAnnotation" />
                   </node>
                 </node>
               </node>
@@ -237,7 +237,7 @@
       <node concept="3clFbS" id="67gjJAxYCkb" role="2VODD2">
         <node concept="3clFbF" id="67gjJAxYCkc" role="3cqZAp">
           <node concept="Xl_RD" id="67gjJAxYCkd" role="3clFbG">
-            <property role="Xl_RC" value="remove Marker" />
+            <property role="Xl_RC" value="Remove Program Location Marker" />
           </node>
         </node>
       </node>
@@ -252,7 +252,7 @@
                   <node concept="2Sf5sV" id="67gjJAxYEHt" role="2Oq$k0" />
                   <node concept="3CFZ6_" id="67gjJAxYEHu" role="2OqNvi">
                     <node concept="3CFYIy" id="67gjJAxYEHv" role="3CFYIz">
-                      <ref role="3CFYIx" to="rpmx:3CMDERQUHEk" resolve="MarkerAnnotation" />
+                      <ref role="3CFYIx" to="rpmx:3CMDERQUHEk" resolve="ProgramMarkerAnnotation" />
                     </node>
                   </node>
                 </node>
@@ -266,7 +266,7 @@
                 <node concept="2Sf5sV" id="67gjJAxYEHV" role="2Oq$k0" />
                 <node concept="3CFZ6_" id="67gjJAxYEHW" role="2OqNvi">
                   <node concept="3CFYIy" id="67gjJAxYEHX" role="3CFYIz">
-                    <ref role="3CFYIx" to="rpmx:3CMDERQUHEk" resolve="MarkerAnnotation" />
+                    <ref role="3CFYIx" to="rpmx:3CMDERQUHEk" resolve="ProgramMarkerAnnotation" />
                   </node>
                 </node>
               </node>
@@ -320,7 +320,7 @@
                 </node>
                 <node concept="3CFZ6_" id="3W_lGXEggKP" role="2OqNvi">
                   <node concept="3CFYIy" id="3W_lGXEggKQ" role="3CFYIz">
-                    <ref role="3CFYIx" to="rpmx:3CMDERQUHEk" resolve="MarkerAnnotation" />
+                    <ref role="3CFYIx" to="rpmx:3CMDERQUHEk" resolve="ProgramMarkerAnnotation" />
                   </node>
                 </node>
               </node>

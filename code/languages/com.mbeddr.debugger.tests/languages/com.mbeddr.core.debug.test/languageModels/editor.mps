@@ -320,30 +320,27 @@
     <property role="3GE5qa" value="suspendLocation" />
     <ref role="1XX52x" to="rpmx:3CMDERQUHEk" resolve="MarkerAnnotation" />
     <node concept="3EZMnI" id="3CMDERQUHEO" role="2wV5jI">
-      <node concept="3F0ifn" id="3CMDERQUHEP" role="3EZMnx">
-        <property role="3F0ifm" value="marker" />
-        <node concept="VechU" id="3CMDERQUHEQ" role="3F10Kt">
-          <node concept="1iSF2X" id="3CMDERQUHER" role="VblUZ">
-            <property role="1iTho6" value="FF0033" />
-          </node>
-        </node>
-      </node>
       <node concept="2iRfu4" id="3CMDERQUHES" role="2iSdaV" />
       <node concept="2SsqMj" id="3CMDERQUHET" role="3EZMnx">
         <node concept="3vyZuw" id="3CMDERQUHEU" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="VLuvy" id="3CMDERQUHEV" role="3F10Kt">
-          <property role="Vb096" value="black" />
-          <node concept="1iSF2X" id="3CMDERQUHEW" role="VblUZ">
-            <property role="1iTho6" value="FF0033" />
+        <node concept="VLuvy" id="7EgG63O5$kZ" role="3F10Kt">
+          <property role="Vb096" value="DARK_MAGENTA" />
+          <node concept="1iSF2X" id="7EgG63O82VR" role="VblUZ">
+            <property role="1iTho6" value="008B8B" />
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="3CMDERQUHEX" role="3EZMnx" />
       <node concept="3F0A7n" id="3CMDERQUHEY" role="3EZMnx">
         <property role="1$x2rV" value="&lt;name&gt;" />
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="VechU" id="7EgG63O5$mS" role="3F10Kt">
+          <property role="Vb096" value="cyan" />
+          <node concept="1iSF2X" id="7EgG63O82VL" role="VblUZ">
+            <property role="1iTho6" value="008B8B" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
