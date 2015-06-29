@@ -992,16 +992,16 @@
                   </node>
                   <node concept="3ZVu4v" id="7DvJ5MYOrX9" role="1_9fRO">
                     <ref role="3ZVs_2" node="7DvJ5MYOrX3" resolve="s2" />
-                    <node concept="7CXmI" id="54p1ylFEHOh" role="lGtFl">
-                      <node concept="1TM$A" id="54p1ylFEHOi" role="7EUXB" />
+                    <node concept="7CXmI" id="2$l2C8XnF1S" role="lGtFl">
+                      <node concept="1TM$A" id="2$l2C8XnF1T" role="7EUXB" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3XIRlf" id="7DvJ5MYOoeO" role="3XIRFZ">
+            <node concept="3XIRlf" id="2$l2C8XnE91" role="3XIRFZ">
               <property role="TrG5h" value="s1" />
-              <node concept="rcJHQ" id="7DvJ5MYOrf_" role="2C2TGm">
+              <node concept="rcJHQ" id="2$l2C8XnE8Z" role="2C2TGm">
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
                 <ref role="rcJHT" node="7DvJ5MYOr0E" resolve="anotherStruct" />
@@ -1015,7 +1015,7 @@
                     <ref role="1E4Tge" node="7DvJ5MYOnMB" resolve="r" />
                   </node>
                   <node concept="3ZVu4v" id="7DvJ5MYOoJ1" role="1_9fRO">
-                    <ref role="3ZVs_2" node="7DvJ5MYOoeO" resolve="s1" />
+                    <ref role="3ZVs_2" node="2$l2C8XnE91" resolve="s1" />
                     <node concept="7CXmI" id="3ieSxUOrrXH" role="lGtFl">
                       <node concept="1TM$A" id="3ieSxUOrrXI" role="7EUXB" />
                     </node>
@@ -1195,15 +1195,6 @@
                 <node concept="YInwV" id="3ieSxUOmlV7" role="3O_q_j">
                   <node concept="3ZVu4v" id="3ieSxUOmm52" role="1_9fRO">
                     <ref role="3ZVs_2" node="7DvJ5MYN_EZ" resolve="h" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1QiMYF" id="7DvJ5MYNDte" role="3XIRFZ">
-              <node concept="OjmMv" id="7DvJ5MYNDtg" role="3SJzmv">
-                <node concept="19SGf9" id="7DvJ5MYNDth" role="OjmMu">
-                  <node concept="19SUe$" id="7DvJ5MYNDti" role="19SJt6">
-                    <property role="19SUeA" value="below we should not have errors since p is initialized in testFunction3" />
                   </node>
                 </node>
               </node>
