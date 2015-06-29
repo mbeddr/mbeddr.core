@@ -363,7 +363,7 @@
   </node>
   <node concept="2S6QgY" id="5S3xvtjRLR">
     <property role="TrG5h" value="makeDebuggerTestcaseAbstract" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="testcase" />
     <ref role="2ZfgGC" to="rpmx:5S3xvtirw9" resolve="DebuggerTestcase" />
     <node concept="2S6ZIM" id="5S3xvtjRLS" role="2ZfVej">
       <node concept="3clFbS" id="5S3xvtjRLT" role="2VODD2">
@@ -486,6 +486,7 @@
   </node>
   <node concept="2S6QgY" id="7Jr7T0w6obv">
     <property role="TrG5h" value="ToggleExport" />
+    <property role="3GE5qa" value="module" />
     <ref role="2ZfgGC" to="rpmx:5S3xvt8bfv" resolve="IDebuggerTestContent" />
     <node concept="2S6ZIM" id="7Jr7T0w6obw" role="2ZfVej">
       <node concept="3clFbS" id="7Jr7T0w6obx" role="2VODD2">
@@ -538,7 +539,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="41LNfYHNq6M">
-    <property role="3GE5qa" value="configuration.validation.element.watches" />
+    <property role="3GE5qa" value="validation.watches" />
     <property role="TrG5h" value="makeComplexValue" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="rpmx:5YGS28LSmkr" resolve="WatchableWithValueExpression" />
