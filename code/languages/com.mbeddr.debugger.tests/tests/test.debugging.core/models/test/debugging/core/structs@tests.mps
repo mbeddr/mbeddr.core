@@ -107,11 +107,14 @@
         <reference id="4202685725779391329" name="element" index="2xZoc7" />
         <child id="4202685725779390438" name="value" index="2xZpY0" />
       </concept>
+      <concept id="3117609929518446049" name="com.mbeddr.core.udt.structure.AbstractBitType" flags="ng" index="2ArCLn">
+        <property id="3117609929518737717" name="width" index="2Asx23" />
+      </concept>
       <concept id="7099329415459817973" name="com.mbeddr.core.udt.structure.SUDeclaration" flags="ng" index="HsMI8">
         <child id="7099329415459888018" name="members" index="HszBJ" />
       </concept>
       <concept id="6183845377104662871" name="com.mbeddr.core.udt.structure.UnsignedBitType" flags="ng" index="X$FZc">
-        <property id="6183845377104662872" name="width" index="X$FZ3" />
+        <property id="6183845377104662872" name="width_old" index="X$FZ3" />
       </concept>
       <concept id="5882395403881875736" name="com.mbeddr.core.udt.structure.Member" flags="ng" index="1dpRTG" />
       <concept id="6394819151180597807" name="com.mbeddr.core.udt.structure.StructDeclaration" flags="ng" index="1sgJKc" />
@@ -332,12 +335,14 @@
         <property role="TrG5h" value="b1" />
         <node concept="X$FZc" id="5nhrDHCiiXr" role="2C2TGm">
           <property role="X$FZ3" value="1" />
+          <property role="2Asx23" value="1" />
         </node>
       </node>
       <node concept="1dpRTG" id="1u3L9i_19k3" role="HszBJ">
         <property role="TrG5h" value="b2" />
         <node concept="X$FZc" id="5nhrDHCiiXu" role="2C2TGm">
           <property role="X$FZ3" value="2" />
+          <property role="2Asx23" value="1" />
         </node>
       </node>
     </node>
@@ -350,6 +355,7 @@
         <property role="TrG5h" value="b1" />
         <node concept="X$FZc" id="52CJifK9R$a" role="2C2TGm">
           <property role="X$FZ3" value="1" />
+          <property role="2Asx23" value="1" />
         </node>
       </node>
     </node>
