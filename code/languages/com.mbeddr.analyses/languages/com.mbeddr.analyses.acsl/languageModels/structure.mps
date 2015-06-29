@@ -56,9 +56,9 @@
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="3i$cQqpAZFt" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="atomicContract" />
+      <property role="20kJfa" value="functionContractMember" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3i$cQqpAZi0" resolve="IAtomicContract" />
+      <ref role="20lvS9" node="41uzL3EMZP6" resolve="IFunctionContractMember" />
     </node>
     <node concept="M6xJ_" id="3i$cQqpAZ5$" role="lGtFl">
       <property role="Hh88m" value="acslContract" />
@@ -79,6 +79,9 @@
     <node concept="PrWs8" id="3i$cQqpAZi7" role="PzmwI">
       <ref role="PrY4T" node="3i$cQqpAZi0" resolve="IAtomicContract" />
     </node>
+    <node concept="PrWs8" id="41uzL3EMZR0" role="PzmwI">
+      <ref role="PrY4T" node="41uzL3EMZP6" resolve="IFunctionContractMember" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3i$cQqpBFRf">
     <property role="TrG5h" value="Result" />
@@ -96,6 +99,9 @@
     <ref role="1TJDcQ" to="q5q6:637qsduSbtp" resolve="Assert" />
     <node concept="PrWs8" id="3i$cQqpDv$S" role="PzmwI">
       <ref role="PrY4T" node="3i$cQqpAZi0" resolve="IAtomicContract" />
+    </node>
+    <node concept="PrWs8" id="41uzL3EMZQT" role="PzmwI">
+      <ref role="PrY4T" node="41uzL3EMZP6" resolve="IFunctionContractMember" />
     </node>
   </node>
   <node concept="1TIwiD" id="10dmWHguUbf">
@@ -145,6 +151,34 @@
     </node>
     <node concept="PrWs8" id="5Tz48EVTaIX" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3VlwR$fEpF9" resolve="IInstantiatedOnlyInGenerators" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="41uzL3EMZP6">
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="IFunctionContractMember" />
+  </node>
+  <node concept="1TIwiD" id="41uzL3ELsVO">
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="Behavior" />
+    <property role="34LRSv" value="behavior" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="41uzL3EMNHw" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="assumes" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="41uzL3ENZML" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="atomicContract" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="3i$cQqpAZi0" resolve="IAtomicContract" />
+    </node>
+    <node concept="PrWs8" id="41uzL3EMGKW" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="41uzL3EMZQM" role="PzmwI">
+      <ref role="PrY4T" node="41uzL3EMZP6" resolve="IFunctionContractMember" />
     </node>
   </node>
 </model>

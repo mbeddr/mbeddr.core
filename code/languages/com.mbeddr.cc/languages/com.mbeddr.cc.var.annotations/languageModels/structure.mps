@@ -76,6 +76,12 @@
     <property role="3GE5qa" value="programannotations" />
     <property role="TrG5h" value="FeatureModelConfiguration" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="10hF$bDMBZ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="additionalMappings" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="10hF$bDHk9" resolve="FeatureModelMapping" />
+    </node>
     <node concept="1TJgyj" id="6tR2451fmHh" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="configModel" />
@@ -297,6 +303,25 @@
       <node concept="trNpa" id="6ixWMIzApQj" role="EQaZv">
         <ref role="trN6q" to="tpck:h0TrEE$" resolve="INamedConcept" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="10hF$bDHk9">
+    <property role="3GE5qa" value="programannotations" />
+    <property role="TrG5h" value="FeatureModelMapping" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="10hF$bDHpO" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="configModel" />
+      <ref role="20lvS9" to="qqyh:5USXI9Kzba8" resolve="ConfigurationModel" />
+    </node>
+    <node concept="1TJgyj" id="10hF$bDHpP" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="featureModel" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="qqyh:5USXI9Kzbaq" resolve="FeatureModel" />
+    </node>
+    <node concept="PrWs8" id="1HBb4ql6EAg" role="PzmwI">
+      <ref role="PrY4T" to="qqyh:5USXI9KzkZI" resolve="IMapping" />
     </node>
   </node>
 </model>
