@@ -52,5 +52,11 @@
       <node concept="2iRkQZ" id="10dmWHgx9W6" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="368fPYHm5D6">
+    <ref role="1XX52x" to="b239:368fPYHm4g6" resolve="CheckACSLContractsWithCBMC" />
+    <node concept="3F0ifn" id="368fPYHm7Id" role="2wV5jI">
+      <property role="3F0ifm" value="check ACSL contracts with CBMC" />
+    </node>
+  </node>
 </model>
 
