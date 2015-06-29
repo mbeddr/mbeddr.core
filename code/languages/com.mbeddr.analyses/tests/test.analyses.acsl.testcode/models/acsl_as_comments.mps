@@ -304,16 +304,6 @@
         </node>
       </node>
       <node concept="2HfW99" id="41uzL3EMZf0" role="lGtFl">
-        <node concept="2HfWvB" id="41uzL3EMZf1" role="2HfWAV">
-          <node concept="3Tl9Jr" id="41uzL3EMZf2" role="Y9XUp">
-            <node concept="3TlMh9" id="41uzL3EMZf3" role="3TlMhJ">
-              <property role="2hmy$m" value="0" />
-            </node>
-            <node concept="3ZUYvv" id="41uzL3EMZf4" role="3TlMhI">
-              <ref role="3ZUYvu" node="41uzL3EMZeW" resolve="a" />
-            </node>
-          </node>
-        </node>
         <node concept="2HfWvB" id="41uzL3ENZfZ" role="2HfWAV">
           <node concept="3Tl9Jr" id="41uzL3ENZnh" role="Y9XUp">
             <node concept="3TlMh9" id="41uzL3ENZnk" role="3TlMhJ">
