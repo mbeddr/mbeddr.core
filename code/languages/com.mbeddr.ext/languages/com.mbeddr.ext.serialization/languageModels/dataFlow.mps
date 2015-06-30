@@ -88,9 +88,16 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern">
+      <concept id="1649655856141352250" name="jetbrains.mps.lang.pattern.structure.InsertBeforePosition" flags="ng" index="3s5BLS" />
       <concept id="1649655856141352248" name="jetbrains.mps.lang.pattern.structure.InsertAfterPosition" flags="ng" index="3s5BLU" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -236,8 +243,18 @@
               </node>
             </node>
           </node>
+          <node concept="3SKdUt" id="2KWWERxmPBY" role="3cqZAp">
+            <node concept="3SKdUq" id="2KWWERxmPDk" role="3SKWNk">
+              <property role="3SKdUp" value="put the defInit exactly before the expression" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="2KWWERxmPE7" role="3cqZAp">
+            <node concept="3SKdUq" id="2KWWERxmPES" role="3SKWNk">
+              <property role="3SKdUp" value="this ensures that calling init on the context is already not marked as erroneous" />
+            </node>
+          </node>
           <node concept="2qeTo9" id="7GQSabAEmES" role="3cqZAp">
-            <node concept="3s5BLU" id="7BSjx06ZiNV" role="IgiVj" />
+            <node concept="3s5BLS" id="2KWWERxmOxD" role="IgiVj" />
             <node concept="2qfb11" id="7GQSabAEmEU" role="2qf8f6">
               <ref role="2qfb1S" to="9xhd:7vcqB$mv$mt" resolve="defInit" />
               <node concept="37vLTw" id="7BSjx06ZiEb" role="2qfb10">
