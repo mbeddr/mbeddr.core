@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ded0d367-b767-4732-9c0e-ababd4a34e2d(tests.messages.serialization.simple)">
+<model ref="r:495af7ef-4dbf-4140-b584-6b3aea88ea56(test.ex.ext.serialization.simple)">
   <persistence version="9" />
   <languages>
     <use id="bb0ad88b-63cd-45fd-ae27-8662d274cf3c" name="com.mbeddr.ext.serialization" version="-1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
-    <import index="qst5" ref="r:c229d982-4943-4520-b79a-815c33e777a7(com.mbeddr.ext.__spreferences.PlatformTemplates)" />
     <import index="3y0n" ref="r:d4d16117-20fb-4ba8-a1b2-1598e121e1d0(com.mbeddr.core.stdlib)" />
+    <import index="qst5" ref="r:c229d982-4943-4520-b79a-815c33e777a7(com.mbeddr.ext.__spreferences.PlatformTemplates)" />
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -240,6 +240,33 @@
       <concept id="8860443239512128094" name="com.mbeddr.core.expressions.structure.TrueLiteral" flags="ng" index="3TlMhK" />
     </language>
   </registry>
+  <node concept="2v9HqL" id="3XvCV0Ky0Vu">
+    <node concept="2xfidK" id="3XvCV0Ky0X0" role="2AWWZH">
+      <ref role="2xfifS" to="qst5:5dbP$RGQRy4" resolve="Desktop Platform" />
+    </node>
+    <node concept="2eOfOl" id="3XvCV0Ky0X3" role="2ePNbc">
+      <property role="iO3LB" value="true" />
+      <property role="TrG5h" value="HelloMessage" />
+      <node concept="2v9HqM" id="3XvCV0Ky0X6" role="2eOfOg">
+        <ref role="2v9HqP" node="3XvCV0Ky0V1" resolve="HelloMessage" />
+      </node>
+      <node concept="2v9HqM" id="1LleiTP_e5E" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:1WTn9U1bbwi" resolve="math" />
+      </node>
+      <node concept="2v9HqM" id="1LleiTP_e5F" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
+      </node>
+      <node concept="2v9HqM" id="1LleiTP_e5G" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
+      </node>
+      <node concept="2v9HqM" id="1LleiTP_e5H" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:2RIhi0HBZdt" resolve="string" />
+      </node>
+    </node>
+    <node concept="2Q9Fgs" id="1LleiTP_nn0" role="2Q9xDr">
+      <node concept="2Q9FjX" id="1LleiTP_nn1" role="2Q9FjI" />
+    </node>
+  </node>
   <node concept="N3F5e" id="3XvCV0Ky0V1">
     <property role="TrG5h" value="HelloMessage" />
     <node concept="12mDD$" id="7op4RkOlu3a" role="N3F5h">
@@ -1415,33 +1442,6 @@
     </node>
     <node concept="3GEVxB" id="1LleiTPtjSY" role="2OODSX">
       <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
-    </node>
-  </node>
-  <node concept="2v9HqL" id="3XvCV0Ky0Vu">
-    <node concept="2xfidK" id="3XvCV0Ky0X0" role="2AWWZH">
-      <ref role="2xfifS" to="qst5:5dbP$RGQRy4" resolve="Desktop Platform" />
-    </node>
-    <node concept="2eOfOl" id="3XvCV0Ky0X3" role="2ePNbc">
-      <property role="iO3LB" value="true" />
-      <property role="TrG5h" value="HelloMessage" />
-      <node concept="2v9HqM" id="3XvCV0Ky0X6" role="2eOfOg">
-        <ref role="2v9HqP" node="3XvCV0Ky0V1" resolve="HelloMessage" />
-      </node>
-      <node concept="2v9HqM" id="1LleiTP_e5E" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:1WTn9U1bbwi" resolve="math" />
-      </node>
-      <node concept="2v9HqM" id="1LleiTP_e5F" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
-      </node>
-      <node concept="2v9HqM" id="1LleiTP_e5G" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
-      </node>
-      <node concept="2v9HqM" id="1LleiTP_e5H" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:2RIhi0HBZdt" resolve="string" />
-      </node>
-    </node>
-    <node concept="2Q9Fgs" id="1LleiTP_nn0" role="2Q9xDr">
-      <node concept="2Q9FjX" id="1LleiTP_nn1" role="2Q9FjI" />
     </node>
   </node>
 </model>

@@ -5130,8 +5130,98 @@
             </node>
           </node>
         </node>
-        <node concept="3LEDTy" id="yklW1G3UoE" role="3LEDUa">
+        <node concept="3LEDTy" id="3p0OY6VwBSY" role="3LEDUa">
           <ref role="3LEDTV" node="yklW1G3HMa" resolve="com.mbeddr.ext.units" />
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="3p0OY6Vwz1C" role="3989C9">
+      <property role="TrG5h" value="com.mbeddr.ext.serialization" />
+      <node concept="1E1JtD" id="3p0OY6Vwz1D" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.ext.serialization" />
+        <property role="3LESm3" value="bb0ad88b-63cd-45fd-ae27-8662d274cf3c" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="3p0OY6Vwz1E" role="3LF7KH">
+          <ref role="398BVh" node="7eF9rfAuAMr" resolve="mbeddr.ext" />
+          <node concept="2Ry0Ak" id="3p0OY6Vwz1F" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="3p0OY6Vwz1G" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.ext.serialization" />
+              <node concept="2Ry0Ak" id="3p0OY6Vw_Np" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.ext.serialization.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3p0OY6Vwz1S" role="3bR37C">
+          <node concept="3bR9La" id="3p0OY6Vwz1T" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7uZw0yZ43LU" resolve="com.mbeddr.core.expressions" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3p0OY6Vwz1U" role="3bR37C">
+          <node concept="3bR9La" id="3p0OY6Vwz1V" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3p0OY6Vwz20" role="3bR37C">
+          <node concept="1Busua" id="3p0OY6Vwz21" role="1SiIV1">
+            <ref role="1Busuk" node="7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="3p0OY6Vwz22" role="1TViLv">
+          <property role="TrG5h" value="com.mbeddr.ext.serialization#2122011389042206319" />
+          <property role="3LESm3" value="c77268b2-51cb-4106-b2ae-9e74c287b569" />
+          <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="3p0OY6VwBT5" role="3bR37C">
+            <node concept="3bR9La" id="3p0OY6VwBT6" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="7uZw0yZ43Mi" resolve="com.mbeddr.core.udt" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="3p0OY6VwBT7" role="3bR37C">
+            <node concept="3bR9La" id="3p0OY6VwBT8" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="3p0OY6VwBT9" role="3bR37C">
+            <node concept="3bR9La" id="3p0OY6VwBTa" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="6y2eE4zZsnH" resolve="com.mbeddr.core.stdlib" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3p0OY6VwAvW" role="3bR37C">
+          <node concept="3bR9La" id="3p0OY6VwAvX" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3p0OY6VwAvY" role="3bR37C">
+          <node concept="3bR9La" id="3p0OY6VwAvZ" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7uZw0yZ43Lo" resolve="com.mbeddr.core.pointers" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3p0OY6VwBSZ" role="3bR37C">
+          <node concept="3bR9La" id="3p0OY6VwBT0" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="3p0OY6Vwz1D" resolve="com.mbeddr.ext.serialization" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3p0OY6VwBT1" role="3bR37C">
+          <node concept="3bR9La" id="3p0OY6VwBT2" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7uZw0yZ43Mi" resolve="com.mbeddr.core.udt" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3p0OY6VwBT3" role="3bR37C">
+          <node concept="1Busua" id="3p0OY6VwBT4" role="1SiIV1">
+            <ref role="1Busuk" node="7uZw0yZ43JM" resolve="com.mbeddr.core.statements" />
+          </node>
         </node>
       </node>
     </node>

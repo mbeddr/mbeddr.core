@@ -477,6 +477,30 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="3p0OY6VwCI7" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.ex.ext.units" />
+        <property role="3LESm3" value="886b2554-9e6b-4388-9d88-227321a98649" />
+        <property role="2GAjPV" value="false" />
+        <node concept="1SiIV0" id="3p0OY6VwCI8" role="3bR37C">
+          <node concept="3bR9La" id="3p0OY6VwCI9" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:yklW1G3HMa" resolve="com.mbeddr.ext.units" />
+          </node>
+        </node>
+        <node concept="398BVA" id="3p0OY6VwCIa" role="3LF7KH">
+          <ref role="398BVh" node="5qO$P$PrILF" resolve="mbeddr.ext" />
+          <node concept="2Ry0Ak" id="3p0OY6VwCIb" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="3p0OY6VwCIc" role="2Ry0An">
+              <property role="2Ry0Am" value="test.ex.ext.units" />
+              <node concept="2Ry0Ak" id="3p0OY6VwCId" role="2Ry0An">
+                <property role="2Ry0Am" value="test.ex.ext.units.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1l3spW" id="7Vt15sLW_mT">
