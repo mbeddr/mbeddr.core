@@ -65,6 +65,9 @@
       <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1177326519037" name="jetbrains.mps.baseLanguage.structure.CommentedStatementsBlock" flags="nn" index="u8gfJ">
+        <child id="1177326540772" name="statement" index="u8lrQ" />
+      </concept>
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -926,24 +929,40 @@
         <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
       </node>
       <node concept="3clFbS" id="7x9Z_y1SmZ9" role="3clF47">
-        <node concept="3clFbF" id="7x9Z_y1St87" role="3cqZAp">
-          <node concept="1PxgMI" id="7x9Z_y1St8y" role="3clFbG">
-            <ref role="1PxNhF" to="mj1l:7FQByU3CrCQ" resolve="Type" />
-            <node concept="2YIFZM" id="7x9Z_y1St89" role="1PxMeX">
-              <ref role="37wK5l" to="n7pc:7x9Z_y1SroM" resolve="type" />
-              <ref role="1Pybhc" to="n7pc:7x9Z_y1Srid" resolve="NumLiteralTypeHelper" />
-              <node concept="3cpWs3" id="7x9Z_y1SmXw" role="37wK5m">
-                <node concept="Xl_RD" id="7x9Z_y1SmXx" role="3uHU7w">
-                  <property role="Xl_RC" value="u" />
-                </node>
-                <node concept="2OqwBi" id="7x9Z_y1St7Z" role="3uHU7B">
-                  <node concept="13iPFW" id="7x9Z_y1St7w" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="7x9Z_y1St85" role="2OqNvi">
-                    <ref role="37wK5l" node="7x9Z_y1St1v" resolve="maxValue" />
+        <node concept="3SKdUt" id="4Ck4ndR3rDX" role="3cqZAp">
+          <node concept="3SKdUq" id="4Ck4ndR3rIH" role="3SKWNk">
+            <property role="3SKdUp" value="TODO this does not work because the C Spec specifies an enum to be of type INT. We could improve here by generating more efficient code" />
+          </node>
+        </node>
+        <node concept="u8gfJ" id="4Ck4ndR3rwd" role="3cqZAp">
+          <node concept="3clFbF" id="7x9Z_y1St87" role="u8lrQ">
+            <node concept="1PxgMI" id="7x9Z_y1St8y" role="3clFbG">
+              <ref role="1PxNhF" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+              <node concept="2YIFZM" id="7x9Z_y1St89" role="1PxMeX">
+                <ref role="37wK5l" to="n7pc:7x9Z_y1SroM" resolve="type" />
+                <ref role="1Pybhc" to="n7pc:7x9Z_y1Srid" resolve="NumLiteralTypeHelper" />
+                <node concept="3cpWs3" id="7x9Z_y1SmXw" role="37wK5m">
+                  <node concept="Xl_RD" id="7x9Z_y1SmXx" role="3uHU7w">
+                    <property role="Xl_RC" value="u" />
+                  </node>
+                  <node concept="2OqwBi" id="7x9Z_y1St7Z" role="3uHU7B">
+                    <node concept="13iPFW" id="7x9Z_y1St7w" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="7x9Z_y1St85" role="2OqNvi">
+                      <ref role="37wK5l" node="7x9Z_y1St1v" resolve="maxValue" />
+                    </node>
                   </node>
                 </node>
+                <node concept="13iPFW" id="5LAVw2HLzKU" role="37wK5m" />
               </node>
-              <node concept="13iPFW" id="5LAVw2HLzKU" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4Ck4ndR3rqJ" role="3cqZAp">
+          <node concept="2ShNRf" id="4Ck4ndR3rWF" role="3clFbG">
+            <node concept="3zrR0B" id="4Ck4ndR3sqL" role="2ShVmc">
+              <node concept="3Tqbb2" id="4Ck4ndR3sqN" role="3zrR0E">
+                <ref role="ehGHo" to="mj1l:7FQByU3CrDG" resolve="IntType" />
+              </node>
             </node>
           </node>
         </node>
