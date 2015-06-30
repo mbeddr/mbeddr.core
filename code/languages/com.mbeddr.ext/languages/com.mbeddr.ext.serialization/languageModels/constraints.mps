@@ -18,6 +18,13 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -32,6 +39,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -40,6 +48,7 @@
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
@@ -124,9 +133,14 @@
         <reference id="1140138128738" name="concept" index="1PxNhF" />
         <child id="1140138123956" name="leftExpression" index="1PxMeX" />
       </concept>
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
       <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
         <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
@@ -161,7 +175,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7op4RkOoxC0">
-    <ref role="1M2myG" to="jtc1:1LleiTPnd22" resolve="MessageContextType" />
+    <ref role="1M2myG" to="jtc1:1LleiTPnd22" resolve="SerialContextType" />
     <node concept="1N5Pfh" id="7op4RkOoxCd" role="1Mr941">
       <ref role="1N5Vy1" to="jtc1:7op4RkOnym$" />
       <node concept="1MUpDS" id="7op4RkOoxCf" role="1N6uqs">
@@ -182,13 +196,13 @@
                 <node concept="2qgKlT" id="7op4RkOoyUJ" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
                   <node concept="3TUQnm" id="7op4RkOoyY0" role="37wK5m">
-                    <ref role="3TV0OU" to="jtc1:7op4RkOgS$h" resolve="MessageHandler" />
+                    <ref role="3TV0OU" to="jtc1:7op4RkOgS$h" resolve="SerializationHandler" />
                   </node>
                 </node>
               </node>
               <node concept="v3k3i" id="7op4RkOozNj" role="2OqNvi">
                 <node concept="chp4Y" id="7op4RkOozPS" role="v3oSu">
-                  <ref role="cht4Q" to="jtc1:7op4RkOgS$h" resolve="MessageHandler" />
+                  <ref role="cht4Q" to="jtc1:7op4RkOgS$h" resolve="SerializationHandler" />
                 </node>
               </node>
             </node>
@@ -198,7 +212,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7op4RkOrNB0">
-    <ref role="1M2myG" to="jtc1:7op4RkOrNAj" resolve="MessageDotTarget" />
+    <ref role="1M2myG" to="jtc1:7op4RkOrNAj" resolve="SerialDotTarget" />
     <node concept="nKS2y" id="7op4RkOrNIG" role="1MLUbF">
       <node concept="3clFbS" id="7op4RkOrNIH" role="2VODD2">
         <node concept="3cpWs8" id="7op4RkORLTQ" role="3cqZAp">
@@ -233,7 +247,7 @@
             </node>
             <node concept="1mIQ4w" id="5jCi3tJPXBj" role="2OqNvi">
               <node concept="chp4Y" id="1LleiTPo0RZ" role="cj9EA">
-                <ref role="cht4Q" to="jtc1:1LleiTPnd22" resolve="MessageContextType" />
+                <ref role="cht4Q" to="jtc1:1LleiTPnd22" resolve="SerialContextType" />
               </node>
             </node>
           </node>
@@ -260,7 +274,7 @@
                 </node>
                 <node concept="1mIQ4w" id="7op4RkORQau" role="2OqNvi">
                   <node concept="chp4Y" id="7op4RkORQeF" role="cj9EA">
-                    <ref role="cht4Q" to="jtc1:1LleiTPnd22" resolve="MessageContextType" />
+                    <ref role="cht4Q" to="jtc1:1LleiTPnd22" resolve="SerialContextType" />
                   </node>
                 </node>
               </node>
@@ -277,7 +291,7 @@
   </node>
   <node concept="1M2fIO" id="6pWLWdplMdK">
     <property role="3GE5qa" value="genericDotTargets" />
-    <ref role="1M2myG" to="jtc1:6pWLWdplM0d" resolve="StatementLevelMessageDotTargets" />
+    <ref role="1M2myG" to="jtc1:6pWLWdplM0d" resolve="StatementLevelSerialDotTargets" />
     <node concept="nKS2y" id="6pWLWdplMgo" role="1MLUbF">
       <node concept="3clFbS" id="6pWLWdplMgp" role="2VODD2">
         <node concept="3clFbJ" id="6pWLWdplMnk" role="3cqZAp">
@@ -335,7 +349,7 @@
             </node>
             <node concept="1mIQ4w" id="6pWLWdplMnJ" role="2OqNvi">
               <node concept="chp4Y" id="6pWLWdplMnK" role="cj9EA">
-                <ref role="cht4Q" to="jtc1:1LleiTPnd22" resolve="MessageContextType" />
+                <ref role="cht4Q" to="jtc1:1LleiTPnd22" resolve="SerialContextType" />
               </node>
             </node>
           </node>
@@ -362,7 +376,7 @@
                 </node>
                 <node concept="1mIQ4w" id="6pWLWdplMnV" role="2OqNvi">
                   <node concept="chp4Y" id="6pWLWdplMnW" role="cj9EA">
-                    <ref role="cht4Q" to="jtc1:1LleiTPnd22" resolve="MessageContextType" />
+                    <ref role="cht4Q" to="jtc1:1LleiTPnd22" resolve="SerialContextType" />
                   </node>
                 </node>
               </node>
@@ -389,12 +403,163 @@
               <node concept="2Xjw5R" id="4Ck4ndQJ_2n" role="2OqNvi">
                 <node concept="1xMEDy" id="4Ck4ndQJ_2p" role="1xVPHs">
                   <node concept="chp4Y" id="4Ck4ndQJ_7F" role="ri$Ld">
-                    <ref role="cht4Q" to="jtc1:7op4RkOgS$h" resolve="MessageHandler" />
+                    <ref role="cht4Q" to="jtc1:7op4RkOgS$h" resolve="SerializationHandler" />
                   </node>
                 </node>
               </node>
             </node>
             <node concept="3x8VRR" id="4Ck4ndQJAZF" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7PpDuQ6HisD">
+    <property role="3GE5qa" value="handler" />
+    <ref role="1M2myG" to="jtc1:7PpDuQ6Hirs" resolve="HandlerVarRef" />
+    <node concept="1N5Pfh" id="7PpDuQ6Hiuz" role="1Mr941">
+      <ref role="1N5Vy1" to="jtc1:7PpDuQ6Hir_" />
+      <node concept="1MUpDS" id="7PpDuQ6Hiu_" role="1N6uqs">
+        <node concept="3clFbS" id="7PpDuQ6HiuA" role="2VODD2">
+          <node concept="3clFbF" id="7PpDuQ6Hjf6" role="3cqZAp">
+            <node concept="2OqwBi" id="7PpDuQ6HjUJ" role="3clFbG">
+              <node concept="2OqwBi" id="7PpDuQ6Hj_P" role="2Oq$k0">
+                <node concept="21POm0" id="7PpDuQ6Hjf5" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="7PpDuQ6HjL_" role="2OqNvi">
+                  <node concept="1xMEDy" id="7PpDuQ6HjLB" role="1xVPHs">
+                    <node concept="chp4Y" id="7PpDuQ6HjMK" role="ri$Ld">
+                      <ref role="cht4Q" to="jtc1:7op4RkOgS$h" resolve="SerializationHandler" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="7PpDuQ6Hkjs" role="2OqNvi">
+                <ref role="3TtcxE" to="jtc1:7PpDuQ6Fm2w" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="nKS2y" id="7PpDuQ6HkAL" role="1MLUbF">
+      <node concept="3clFbS" id="7PpDuQ6HkAM" role="2VODD2">
+        <node concept="3clFbF" id="7PpDuQ6HkYy" role="3cqZAp">
+          <node concept="2OqwBi" id="7PpDuQ6HlAh" role="3clFbG">
+            <node concept="2OqwBi" id="7PpDuQ6Hl4$" role="2Oq$k0">
+              <node concept="nLn13" id="7PpDuQ6HkYx" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="7PpDuQ6Hlkx" role="2OqNvi">
+                <node concept="1xMEDy" id="7PpDuQ6Hlkz" role="1xVPHs">
+                  <node concept="chp4Y" id="7PpDuQ6HlpP" role="ri$Ld">
+                    <ref role="cht4Q" to="jtc1:1LleiTPuSDO" resolve="HandlerFunction" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="7PpDuQ6HmC0" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7PpDuQ6PUuL">
+    <property role="3GE5qa" value="genericDotTargets" />
+    <ref role="1M2myG" to="jtc1:7PpDuQ6PU5z" resolve="AdditionalVarTarget" />
+    <node concept="1N5Pfh" id="7PpDuQ6PUuM" role="1Mr941">
+      <ref role="1N5Vy1" to="jtc1:7PpDuQ6PUtN" />
+      <node concept="1MUpDS" id="7PpDuQ6PUuO" role="1N6uqs">
+        <node concept="3clFbS" id="7PpDuQ6PUuP" role="2VODD2">
+          <node concept="3cpWs8" id="7PpDuQ6RL0S" role="3cqZAp">
+            <node concept="3cpWsn" id="7PpDuQ6RL0T" role="3cpWs9">
+              <property role="TrG5h" value="type" />
+              <node concept="3Tqbb2" id="7PpDuQ6RL0U" role="1tU5fm" />
+              <node concept="2OqwBi" id="7PpDuQ6RL0V" role="33vP2m">
+                <node concept="2OqwBi" id="7PpDuQ6RL0W" role="2Oq$k0">
+                  <node concept="1PxgMI" id="7PpDuQ6RL0X" role="2Oq$k0">
+                    <ref role="1PxNhF" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
+                    <node concept="21POm0" id="7PpDuQ6RQfB" role="1PxMeX" />
+                  </node>
+                  <node concept="3TrEf2" id="7PpDuQ6RL0Z" role="2OqNvi">
+                    <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                  </node>
+                </node>
+                <node concept="3JvlWi" id="7PpDuQ6RL10" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="7PpDuQ6S3$p" role="3cqZAp">
+            <node concept="3cpWsn" id="7PpDuQ6S3$s" role="3cpWs9">
+              <property role="TrG5h" value="sct" />
+              <node concept="3Tqbb2" id="7PpDuQ6S3$n" role="1tU5fm">
+                <ref role="ehGHo" to="jtc1:1LleiTPnd22" resolve="SerialContextType" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="7PpDuQ6RL11" role="3cqZAp">
+            <node concept="3clFbS" id="7PpDuQ6RL12" role="3clFbx">
+              <node concept="3clFbF" id="7PpDuQ6StXd" role="3cqZAp">
+                <node concept="37vLTI" id="7PpDuQ6Syrs" role="3clFbG">
+                  <node concept="1PxgMI" id="7PpDuQ6SFiE" role="37vLTx">
+                    <ref role="1PxNhF" to="jtc1:1LleiTPnd22" resolve="SerialContextType" />
+                    <node concept="37vLTw" id="7PpDuQ6SAQV" role="1PxMeX">
+                      <ref role="3cqZAo" node="7PpDuQ6RL0T" resolve="type" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="7PpDuQ6StXb" role="37vLTJ">
+                    <ref role="3cqZAo" node="7PpDuQ6S3$s" resolve="sct" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7PpDuQ6RL15" role="3clFbw">
+              <node concept="37vLTw" id="7PpDuQ6RL16" role="2Oq$k0">
+                <ref role="3cqZAo" node="7PpDuQ6RL0T" resolve="type" />
+              </node>
+              <node concept="1mIQ4w" id="7PpDuQ6RL17" role="2OqNvi">
+                <node concept="chp4Y" id="7PpDuQ6RL18" role="cj9EA">
+                  <ref role="cht4Q" to="jtc1:1LleiTPnd22" resolve="SerialContextType" />
+                </node>
+              </node>
+            </node>
+            <node concept="9aQIb" id="7PpDuQ6TdrX" role="9aQIa">
+              <node concept="3clFbS" id="7PpDuQ6TdrY" role="9aQI4">
+                <node concept="3clFbF" id="7PpDuQ6SSx6" role="3cqZAp">
+                  <node concept="37vLTI" id="7PpDuQ6SSx7" role="3clFbG">
+                    <node concept="1PxgMI" id="7PpDuQ6SSx8" role="37vLTx">
+                      <ref role="1PxNhF" to="jtc1:1LleiTPnd22" resolve="SerialContextType" />
+                      <node concept="2OqwBi" id="7PpDuQ6T1tu" role="1PxMeX">
+                        <node concept="1PxgMI" id="7PpDuQ6Ti0S" role="2Oq$k0">
+                          <ref role="1PxNhF" to="yq40:fwMInzpHoK" resolve="PointerType" />
+                          <node concept="37vLTw" id="7PpDuQ6ThHY" role="1PxMeX">
+                            <ref role="3cqZAo" node="7PpDuQ6RL0T" resolve="type" />
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="7PpDuQ6T6j6" role="2OqNvi">
+                          <ref role="3Tt5mk" to="c4fa:6IWRcVPT6tm" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="7PpDuQ6SSxa" role="37vLTJ">
+                      <ref role="3cqZAo" node="7PpDuQ6S3$s" resolve="sct" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="7PpDuQ6RzLy" role="3cqZAp">
+            <node concept="2OqwBi" id="7PpDuQ6R_kN" role="3clFbG">
+              <node concept="2OqwBi" id="7PpDuQ6Tc8f" role="2Oq$k0">
+                <node concept="37vLTw" id="7PpDuQ6TbHa" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7PpDuQ6S3$s" resolve="sct" />
+                </node>
+                <node concept="3TrEf2" id="7PpDuQ6TcG8" role="2OqNvi">
+                  <ref role="3Tt5mk" to="jtc1:7op4RkOnym$" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="7PpDuQ6RAsR" role="2OqNvi">
+                <ref role="3TtcxE" to="jtc1:7PpDuQ6Fm2w" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

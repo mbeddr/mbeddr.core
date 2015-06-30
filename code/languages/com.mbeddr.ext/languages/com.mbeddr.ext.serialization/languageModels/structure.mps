@@ -11,6 +11,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -352,6 +353,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     </node>
+    <node concept="1TJgyj" id="7PpDuQ6Fm2w" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="additionalVariables" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7PpDuQ6EFRW" resolve="HandlerVariable" />
+    </node>
     <node concept="1TJgyj" id="6pWLWdpj3CN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="initHandler" />
@@ -430,6 +437,45 @@
     <property role="TrG5h" value="BufferRef" />
     <property role="34LRSv" value="buffer" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="7PpDuQ6EFRW">
+    <property role="3GE5qa" value="handler" />
+    <property role="TrG5h" value="HandlerVariable" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7PpDuQ6EFT1" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
+    </node>
+    <node concept="PrWs8" id="7PpDuQ6EFT6" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
+    </node>
+    <node concept="PrWs8" id="7PpDuQ6EFTe" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7PpDuQ6Hirs">
+    <property role="3GE5qa" value="handler" />
+    <property role="TrG5h" value="HandlerVarRef" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="7PpDuQ6Hir_" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7PpDuQ6EFRW" resolve="HandlerVariable" />
+    </node>
+    <node concept="PrWs8" id="7PpDuQ6Hirz" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7PpDuQ6PU5z">
+    <property role="3GE5qa" value="genericDotTargets" />
+    <property role="TrG5h" value="AdditionalVarTarget" />
+    <ref role="1TJDcQ" node="7op4RkOrNAj" resolve="SerialDotTarget" />
+    <node concept="1TJgyj" id="7PpDuQ6PUtN" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7PpDuQ6EFRW" resolve="HandlerVariable" />
+    </node>
   </node>
 </model>
 

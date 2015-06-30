@@ -331,7 +331,7 @@
     </node>
     <node concept="1YaCAy" id="3XvCV0KwKDR" role="1YuTPh">
       <property role="TrG5h" value="messageAnnotation" />
-      <ref role="1YaFvo" to="jtc1:3XvCV0KwBKd" resolve="MessageAnnotation" />
+      <ref role="1YaFvo" to="jtc1:3XvCV0KwBKd" resolve="SerialAnnotation" />
     </node>
   </node>
   <node concept="312cEu" id="3XvCV0KwNCu">
@@ -450,7 +450,7 @@
                   </node>
                   <node concept="3CFZ6_" id="3XvCV0KxrCC" role="2OqNvi">
                     <node concept="3CFYIy" id="3XvCV0Kxvu8" role="3CFYIz">
-                      <ref role="3CFYIx" to="jtc1:3XvCV0KwBKd" resolve="MessageAnnotation" />
+                      <ref role="3CFYIx" to="jtc1:3XvCV0KwBKd" resolve="SerialAnnotation" />
                     </node>
                   </node>
                 </node>
@@ -722,7 +722,7 @@
                     </node>
                     <node concept="3CFZ6_" id="3XvCV0KyzAE" role="2OqNvi">
                       <node concept="3CFYIy" id="3XvCV0Ky$pq" role="3CFYIz">
-                        <ref role="3CFYIx" to="jtc1:3XvCV0KwBKd" resolve="MessageAnnotation" />
+                        <ref role="3CFYIx" to="jtc1:3XvCV0KwBKd" resolve="SerialAnnotation" />
                       </node>
                     </node>
                   </node>
@@ -870,7 +870,7 @@
                         </node>
                         <node concept="3CFZ6_" id="3XvCV0KzA2k" role="2OqNvi">
                           <node concept="3CFYIy" id="3XvCV0KzA2l" role="3CFYIz">
-                            <ref role="3CFYIx" to="jtc1:3XvCV0KwBKd" resolve="MessageAnnotation" />
+                            <ref role="3CFYIx" to="jtc1:3XvCV0KwBKd" resolve="SerialAnnotation" />
                           </node>
                         </node>
                       </node>
@@ -944,7 +944,7 @@
     </node>
     <node concept="1YaCAy" id="1LleiTPnfrK" role="1YuTPh">
       <property role="TrG5h" value="messageContextType" />
-      <ref role="1YaFvo" to="jtc1:1LleiTPnd22" resolve="MessageContextType" />
+      <ref role="1YaFvo" to="jtc1:1LleiTPnd22" resolve="SerialContextType" />
     </node>
   </node>
   <node concept="1YbPZF" id="1LleiTPosRT">
@@ -973,7 +973,7 @@
             <node concept="3cpWsn" id="7op4RkOVfYx" role="3cpWs9">
               <property role="TrG5h" value="t" />
               <node concept="3Tqbb2" id="7op4RkOVfYs" role="1tU5fm">
-                <ref role="ehGHo" to="jtc1:1LleiTPnd22" resolve="MessageContextType" />
+                <ref role="ehGHo" to="jtc1:1LleiTPnd22" resolve="SerialContextType" />
               </node>
             </node>
           </node>
@@ -982,7 +982,7 @@
               <node concept="3clFbF" id="7op4RkOVgrk" role="3cqZAp">
                 <node concept="37vLTI" id="7op4RkOVgua" role="3clFbG">
                   <node concept="1PxgMI" id="7op4RkOVhX2" role="37vLTx">
-                    <ref role="1PxNhF" to="jtc1:1LleiTPnd22" resolve="MessageContextType" />
+                    <ref role="1PxNhF" to="jtc1:1LleiTPnd22" resolve="SerialContextType" />
                     <node concept="2OqwBi" id="7op4RkOVgAl" role="1PxMeX">
                       <node concept="1PxgMI" id="7op4RkOVgvA" role="2Oq$k0">
                         <ref role="1PxNhF" to="yq40:fwMInzpHoK" resolve="PointerType" />
@@ -1016,7 +1016,7 @@
                 <node concept="3clFbF" id="7op4RkOVi42" role="3cqZAp">
                   <node concept="37vLTI" id="7op4RkOVi6S" role="3clFbG">
                     <node concept="1PxgMI" id="7op4RkOVi8k" role="37vLTx">
-                      <ref role="1PxNhF" to="jtc1:1LleiTPnd22" resolve="MessageContextType" />
+                      <ref role="1PxNhF" to="jtc1:1LleiTPnd22" resolve="SerialContextType" />
                       <node concept="2X3wrD" id="7op4RkOVi7d" role="1PxMeX">
                         <ref role="2X3Bk0" node="7op4RkOqsWq" resolve="msgType" />
                       </node>
@@ -1217,7 +1217,7 @@
     </node>
     <node concept="1YaCAy" id="1LleiTPosRW" role="1YuTPh">
       <property role="TrG5h" value="bufferInitTarget" />
-      <ref role="1YaFvo" to="jtc1:1LleiTPnMXQ" resolve="MsgInitTarget" />
+      <ref role="1YaFvo" to="jtc1:1LleiTPnMXQ" resolve="SerialInitTarget" />
     </node>
   </node>
   <node concept="1YbPZF" id="1LleiTPEO5W">
@@ -1405,7 +1405,7 @@
             <node concept="3cpWsn" id="4Ck4ndQtWEP" role="3cpWs9">
               <property role="TrG5h" value="t" />
               <node concept="3Tqbb2" id="4Ck4ndQtWEH" role="1tU5fm">
-                <ref role="ehGHo" to="jtc1:1LleiTPnd22" resolve="MessageContextType" />
+                <ref role="ehGHo" to="jtc1:1LleiTPnd22" resolve="SerialContextType" />
               </node>
             </node>
           </node>
@@ -1414,7 +1414,7 @@
               <node concept="3clFbF" id="4Ck4ndQtWWS" role="3cqZAp">
                 <node concept="37vLTI" id="4Ck4ndQtX0I" role="3clFbG">
                   <node concept="1PxgMI" id="4Ck4ndQtX2M" role="37vLTx">
-                    <ref role="1PxNhF" to="jtc1:1LleiTPnd22" resolve="MessageContextType" />
+                    <ref role="1PxNhF" to="jtc1:1LleiTPnd22" resolve="SerialContextType" />
                     <node concept="2X3wrD" id="4Ck4ndQtX13" role="1PxMeX">
                       <ref role="2X3Bk0" node="4Ck4ndQsCQZ" resolve="exprType" />
                     </node>
@@ -1431,7 +1431,7 @@
               </node>
               <node concept="1mIQ4w" id="4Ck4ndQtWWI" role="2OqNvi">
                 <node concept="chp4Y" id="4Ck4ndQtWWN" role="cj9EA">
-                  <ref role="cht4Q" to="jtc1:1LleiTPnd22" resolve="MessageContextType" />
+                  <ref role="cht4Q" to="jtc1:1LleiTPnd22" resolve="SerialContextType" />
                 </node>
               </node>
             </node>
@@ -1443,7 +1443,7 @@
                       <ref role="3cqZAo" node="4Ck4ndQtWEP" resolve="t" />
                     </node>
                     <node concept="1PxgMI" id="4Ck4ndQsCZl" role="37vLTx">
-                      <ref role="1PxNhF" to="jtc1:1LleiTPnd22" resolve="MessageContextType" />
+                      <ref role="1PxNhF" to="jtc1:1LleiTPnd22" resolve="SerialContextType" />
                       <node concept="2OqwBi" id="4Ck4ndQsCZm" role="1PxMeX">
                         <node concept="1PxgMI" id="4Ck4ndQsCZn" role="2Oq$k0">
                           <ref role="1PxNhF" to="yq40:fwMInzpHoK" resolve="PointerType" />
@@ -1530,7 +1530,7 @@
                 <node concept="2Xjw5R" id="4Ck4ndQKw3U" role="2OqNvi">
                   <node concept="1xMEDy" id="4Ck4ndQKw3W" role="1xVPHs">
                     <node concept="chp4Y" id="4Ck4ndQKw52" role="ri$Ld">
-                      <ref role="cht4Q" to="jtc1:7op4RkOgS$h" resolve="MessageHandler" />
+                      <ref role="cht4Q" to="jtc1:7op4RkOgS$h" resolve="SerializationHandler" />
                     </node>
                   </node>
                 </node>
@@ -1553,6 +1553,78 @@
     <node concept="1YaCAy" id="4Ck4ndQKvs0" role="1YuTPh">
       <property role="TrG5h" value="bufferRef" />
       <ref role="1YaFvo" to="jtc1:4Ck4ndQJ$CW" resolve="BufferRef" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="7PpDuQ6HnDv">
+    <property role="TrG5h" value="typeof_HandlerVarRef" />
+    <property role="3GE5qa" value="handler" />
+    <node concept="3clFbS" id="7PpDuQ6HnDw" role="18ibNy">
+      <node concept="1Z5TYs" id="7PpDuQ6HnQl" role="3cqZAp">
+        <node concept="mw_s8" id="7PpDuQ6HnQD" role="1ZfhKB">
+          <node concept="1Z2H0r" id="7PpDuQ6HnQ_" role="mwGJk">
+            <node concept="2OqwBi" id="7PpDuQ6HoQK" role="1Z2MuG">
+              <node concept="2OqwBi" id="7PpDuQ6HnT1" role="2Oq$k0">
+                <node concept="1YBJjd" id="7PpDuQ6HnQU" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7PpDuQ6HnDy" resolve="handlerVarRef" />
+                </node>
+                <node concept="3TrEf2" id="7PpDuQ6HoBi" role="2OqNvi">
+                  <ref role="3Tt5mk" to="jtc1:7PpDuQ6Hir_" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="7PpDuQ6Hp9c" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7PpDuQ6HnQo" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7PpDuQ6HnOq" role="mwGJk">
+            <node concept="1YBJjd" id="7PpDuQ6HnOE" role="1Z2MuG">
+              <ref role="1YBMHb" node="7PpDuQ6HnDy" resolve="handlerVarRef" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7PpDuQ6HnDy" role="1YuTPh">
+      <property role="TrG5h" value="handlerVarRef" />
+      <ref role="1YaFvo" to="jtc1:7PpDuQ6Hirs" resolve="HandlerVarRef" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="7PpDuQ6PVMk">
+    <property role="TrG5h" value="typeof_AdditionalVarTarget" />
+    <property role="3GE5qa" value="genericDotTargets" />
+    <node concept="3clFbS" id="7PpDuQ6PVMl" role="18ibNy">
+      <node concept="1Z5TYs" id="7PpDuQ6PVOH" role="3cqZAp">
+        <node concept="mw_s8" id="7PpDuQ6PVP1" role="1ZfhKB">
+          <node concept="1Z2H0r" id="7PpDuQ6PVOX" role="mwGJk">
+            <node concept="2OqwBi" id="7PpDuQ6PWmd" role="1Z2MuG">
+              <node concept="2OqwBi" id="7PpDuQ6PVRI" role="2Oq$k0">
+                <node concept="1YBJjd" id="7PpDuQ6PVPi" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7PpDuQ6PVMn" resolve="additionalVarTarget" />
+                </node>
+                <node concept="3TrEf2" id="7PpDuQ6PW5x" role="2OqNvi">
+                  <ref role="3Tt5mk" to="jtc1:7PpDuQ6PUtN" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="7PpDuQ6PWCG" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7PpDuQ6PVOK" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7PpDuQ6PVMN" role="mwGJk">
+            <node concept="1YBJjd" id="7PpDuQ6PVN3" role="1Z2MuG">
+              <ref role="1YBMHb" node="7PpDuQ6PVMn" resolve="additionalVarTarget" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7PpDuQ6PVMn" role="1YuTPh">
+      <property role="TrG5h" value="additionalVarTarget" />
+      <ref role="1YaFvo" to="jtc1:7PpDuQ6PU5z" resolve="AdditionalVarTarget" />
     </node>
   </node>
 </model>
