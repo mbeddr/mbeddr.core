@@ -531,6 +531,45 @@
         </node>
       </node>
     </node>
+    <node concept="m$_wf" id="3p0OY6VwW67" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.ext.serialization" />
+      <node concept="3_J27D" id="3p0OY6VwW68" role="m$_yQ">
+        <node concept="3Mxwew" id="3p0OY6VwW69" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.ext.units" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="3p0OY6VwW6a" role="m$_w8">
+        <node concept="3Mxwey" id="3p0OY6VwW6b" role="3MwsjC">
+          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="3p0OY6Vx1NF" role="m$_yh">
+        <ref role="m$f5T" node="3p0OY6Vwz1C" resolve="com.mbeddr.ext.serialization" />
+      </node>
+      <node concept="m$_yC" id="3p0OY6VwW6d" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="3p0OY6VwW6e" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
+      </node>
+      <node concept="m$_yC" id="3p0OY6VwW6f" role="m$_yJ">
+        <ref role="m$_y1" node="7uZw0yZ43Jz" resolve="com.mbeddr.core" />
+      </node>
+      <node concept="m$_yC" id="3p0OY6VwW6g" role="m$_yJ">
+        <ref role="m$_y1" node="2coa6Xmdl5V" resolve="com.mbeddr.spawner" />
+      </node>
+      <node concept="m$_yC" id="3p0OY6VwW6h" role="m$_yJ">
+        <ref role="m$_y1" node="5qO$P$Prhta" resolve="com.mbeddr.debugger" />
+      </node>
+      <node concept="m$_yC" id="3p0OY6VwW6j" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />
+      </node>
+      <node concept="3_J27D" id="3p0OY6VwW6l" role="m_cZH">
+        <node concept="3Mxwew" id="3p0OY6VwW6m" role="3MwsjC">
+          <property role="3MwjfP" value="mbeddr.serialization" />
+        </node>
+      </node>
+    </node>
     <node concept="m$_wf" id="7eF9rfAnuiA" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.cc.ple" />
       <node concept="3_J27D" id="7eF9rfAnuiB" role="m$_yQ">
@@ -9789,6 +9828,16 @@
         </node>
         <node concept="m$_wl" id="7eF9rfAuv$U" role="39821P">
           <ref role="m_rDy" node="7eF9rfAuv$V" resolve="com.mbeddr.ext.units" />
+        </node>
+      </node>
+      <node concept="3981dG" id="3p0OY6Vx5NS" role="39821P">
+        <node concept="3_J27D" id="3p0OY6Vx5NT" role="Nbhlr">
+          <node concept="3Mxwew" id="3p0OY6Vx5NU" role="3MwsjC">
+            <property role="3MwjfP" value="com.mbeddr.ext.serialization.zip" />
+          </node>
+        </node>
+        <node concept="m$_wl" id="3p0OY6Vx5NV" role="39821P">
+          <ref role="m_rDy" node="3p0OY6VwW67" resolve="com.mbeddr.ext.serialization" />
         </node>
       </node>
       <node concept="3981dG" id="3AVJcIMsTas" role="39821P">
