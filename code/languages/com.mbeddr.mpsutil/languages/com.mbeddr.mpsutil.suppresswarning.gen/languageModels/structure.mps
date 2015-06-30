@@ -51,7 +51,7 @@
       <ref role="20lvS9" node="7U3FobbBed$" resolve="KindReference" />
     </node>
     <node concept="M6xJ_" id="7U3Fobb_Ypo" role="lGtFl">
-      <property role="Hh88m" value="skipForAnnotation" />
+      <property role="Hh88m" value="checkCategoryAnnotation" />
       <node concept="trNpa" id="7U3Fobb_Z6F" role="EQaZv">
         <ref role="trN6q" to="tpd4:hp8kY3U" resolve="NonTypesystemRule" />
       </node>

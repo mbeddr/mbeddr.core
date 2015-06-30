@@ -77,7 +77,7 @@
                   <node concept="2Sf5sV" id="7U3FobbBar6" role="2Oq$k0" />
                   <node concept="3CFZ6_" id="7U3FobbBaMz" role="2OqNvi">
                     <node concept="3CFYIy" id="7U3FobbBaP2" role="3CFYIz">
-                      <ref role="3CFYIx" to="szok:7U3Fobb_Ynz" resolve="SkipForAnnotation" />
+                      <ref role="3CFYIx" to="szok:7U3Fobb_Ynz" resolve="CheckCategoryAnnotation" />
                     </node>
                   </node>
                 </node>
@@ -90,7 +90,7 @@
               <node concept="2Sf5sV" id="7U3FobbB9z$" role="2Oq$k0" />
               <node concept="3CFZ6_" id="7U3FobbB9VN" role="2OqNvi">
                 <node concept="3CFYIy" id="7U3FobbB9XW" role="3CFYIz">
-                  <ref role="3CFYIx" to="szok:7U3Fobb_Ynz" resolve="SkipForAnnotation" />
+                  <ref role="3CFYIx" to="szok:7U3Fobb_Ynz" resolve="CheckCategoryAnnotation" />
                 </node>
               </node>
             </node>
@@ -104,7 +104,7 @@
                     <node concept="2Sf5sV" id="7U3FobbBbtK" role="2Oq$k0" />
                     <node concept="3CFZ6_" id="7U3FobbBbPd" role="2OqNvi">
                       <node concept="3CFYIy" id="7U3FobbBbRG" role="3CFYIz">
-                        <ref role="3CFYIx" to="szok:7U3Fobb_Ynz" resolve="SkipForAnnotation" />
+                        <ref role="3CFYIx" to="szok:7U3Fobb_Ynz" resolve="CheckCategoryAnnotation" />
                       </node>
                     </node>
                   </node>
@@ -120,7 +120,7 @@
       <node concept="3clFbS" id="7U3FobbB7c_" role="2VODD2">
         <node concept="3clFbF" id="7U3FobbB8K3" role="3cqZAp">
           <node concept="Xl_RD" id="7U3FobbB8K2" role="3clFbG">
-            <property role="Xl_RC" value="Toggle Skip Annotation" />
+            <property role="Xl_RC" value="Toggle Check Category Annotation" />
           </node>
         </node>
       </node>
