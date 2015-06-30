@@ -53,6 +53,7 @@
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -346,10 +347,12 @@
                       <property role="TrG5h" value="childAdded" />
                       <node concept="37vLTG" id="52ZF9D3d0vZ" role="3clF46">
                         <property role="TrG5h" value="instance" />
+                        <property role="3TUv4t" value="true" />
                         <node concept="3Tqbb2" id="52ZF9D3d0w0" role="1tU5fm" />
                       </node>
                       <node concept="37vLTG" id="52ZF9D3d0w1" role="3clF46">
                         <property role="TrG5h" value="child" />
+                        <property role="3TUv4t" value="true" />
                         <node concept="3Tqbb2" id="52ZF9D3d0w2" role="1tU5fm" />
                       </node>
                       <node concept="3cqZAl" id="52ZF9D3d0w3" role="3clF45" />
@@ -493,10 +496,12 @@
                       <property role="TrG5h" value="childRemoved" />
                       <node concept="37vLTG" id="52ZF9D3ed79" role="3clF46">
                         <property role="TrG5h" value="instance" />
+                        <property role="3TUv4t" value="true" />
                         <node concept="3Tqbb2" id="52ZF9D3ed7a" role="1tU5fm" />
                       </node>
                       <node concept="37vLTG" id="52ZF9D3ed7b" role="3clF46">
                         <property role="TrG5h" value="child" />
+                        <property role="3TUv4t" value="true" />
                         <node concept="3Tqbb2" id="52ZF9D3ed7c" role="1tU5fm" />
                       </node>
                       <node concept="3cqZAl" id="52ZF9D3ed7d" role="3clF45" />
@@ -640,10 +645,12 @@
                       <property role="TrG5h" value="beforeChildRemoved" />
                       <node concept="37vLTG" id="52ZF9D3eesz" role="3clF46">
                         <property role="TrG5h" value="instance" />
+                        <property role="3TUv4t" value="true" />
                         <node concept="3Tqbb2" id="52ZF9D3ees$" role="1tU5fm" />
                       </node>
                       <node concept="37vLTG" id="52ZF9D3ees_" role="3clF46">
                         <property role="TrG5h" value="child" />
+                        <property role="3TUv4t" value="true" />
                         <node concept="3Tqbb2" id="52ZF9D3eesA" role="1tU5fm" />
                       </node>
                       <node concept="3cqZAl" id="52ZF9D3eesB" role="3clF45" />
@@ -789,10 +796,12 @@
                       <node concept="3Tm1VV" id="5iW7uqbGXAC" role="1B3o_S" />
                       <node concept="37vLTG" id="5iW7uqbMZ6v" role="3clF46">
                         <property role="TrG5h" value="instance" />
+                        <property role="3TUv4t" value="true" />
                         <node concept="3Tqbb2" id="5iW7uqbMZ6w" role="1tU5fm" />
                       </node>
                       <node concept="37vLTG" id="5iW7uqbMZ6x" role="3clF46">
                         <property role="TrG5h" value="target" />
+                        <property role="3TUv4t" value="true" />
                         <node concept="3Tqbb2" id="5iW7uqbMZ6y" role="1tU5fm" />
                       </node>
                       <node concept="37vLTG" id="5iW7uqbMZ6z" role="3clF46">
@@ -942,10 +951,12 @@
                       <node concept="3Tm1VV" id="5iW7uqbH0kY" role="1B3o_S" />
                       <node concept="37vLTG" id="5iW7uqbH0kZ" role="3clF46">
                         <property role="TrG5h" value="instance" />
+                        <property role="3TUv4t" value="true" />
                         <node concept="3Tqbb2" id="5iW7uqbMWDj" role="1tU5fm" />
                       </node>
                       <node concept="37vLTG" id="5iW7uqbMWOW" role="3clF46">
                         <property role="TrG5h" value="target" />
+                        <property role="3TUv4t" value="true" />
                         <node concept="3Tqbb2" id="5iW7uqbMXd8" role="1tU5fm" />
                       </node>
                       <node concept="37vLTG" id="5iW7uqbMXh9" role="3clF46">
@@ -1093,6 +1104,7 @@
                       <property role="TrG5h" value="propertyChanged" />
                       <node concept="37vLTG" id="5iW7uqbPFJ1" role="3clF46">
                         <property role="TrG5h" value="instance" />
+                        <property role="3TUv4t" value="true" />
                         <node concept="3Tqbb2" id="5iW7uqbPFJ2" role="1tU5fm" />
                       </node>
                       <node concept="37vLTG" id="5iW7uqbPFJ3" role="3clF46">
@@ -1189,6 +1201,7 @@
                       <property role="TrG5h" value="rootAdded" />
                       <node concept="37vLTG" id="5iW7uqbVSW0" role="3clF46">
                         <property role="TrG5h" value="instance" />
+                        <property role="3TUv4t" value="true" />
                         <node concept="3Tqbb2" id="5iW7uqbVSW1" role="1tU5fm" />
                       </node>
                       <node concept="37vLTG" id="5iW7uqbVSW2" role="3clF46">
@@ -1277,6 +1290,7 @@
                       <property role="TrG5h" value="rootRemoved" />
                       <node concept="37vLTG" id="5iW7uqbVTLm" role="3clF46">
                         <property role="TrG5h" value="instance" />
+                        <property role="3TUv4t" value="true" />
                         <node concept="3Tqbb2" id="5iW7uqbVTLn" role="1tU5fm" />
                       </node>
                       <node concept="37vLTG" id="5iW7uqbVTLo" role="3clF46">
@@ -1365,6 +1379,7 @@
                       <property role="TrG5h" value="beforeRootRemoved" />
                       <node concept="37vLTG" id="5iW7uqbVYrr" role="3clF46">
                         <property role="TrG5h" value="instance" />
+                        <property role="3TUv4t" value="true" />
                         <node concept="3Tqbb2" id="5iW7uqbVYrs" role="1tU5fm" />
                       </node>
                       <node concept="37vLTG" id="5iW7uqbVYrt" role="3clF46">

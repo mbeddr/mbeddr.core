@@ -323,40 +323,11 @@
             </node>
             <node concept="34oBXx" id="6WBmVK646T2" role="2OqNvi" />
           </node>
-          <node concept="3cmrfG" id="6WBmVK649_Y" role="3tpDZB">
-            <property role="3cmrfH" value="2" />
+          <node concept="3cmrfG" id="2VCuTRcoeKU" role="3tpDZB">
+            <property role="3cmrfH" value="1" />
           </node>
         </node>
         <node concept="3clFbH" id="6WBmVK646T4" role="3cqZAp" />
-        <node concept="3cpWs8" id="6WBmVK646Th" role="3cqZAp">
-          <node concept="3cpWsn" id="6WBmVK646Ti" role="3cpWs9">
-            <property role="TrG5h" value="res1" />
-            <node concept="3uibUv" id="6WBmVK646Tj" role="1tU5fm">
-              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
-            </node>
-            <node concept="2OqwBi" id="6WBmVK646Tk" role="33vP2m">
-              <node concept="37vLTw" id="6WBmVK646Tl" role="2Oq$k0">
-                <ref role="3cqZAo" node="6WBmVK646SN" resolve="results" />
-              </node>
-              <node concept="34jXtK" id="6WBmVK646Tm" role="2OqNvi">
-                <node concept="3cmrfG" id="6WBmVK646Tn" role="25WWJ7">
-                  <property role="3cmrfH" value="1" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3vwNmj" id="6WBmVK646To" role="3cqZAp">
-          <node concept="2OqwBi" id="6WBmVK646Tp" role="3vwVQn">
-            <node concept="3cpWsa" id="6WBmVK646Tq" role="2Oq$k0">
-              <ref role="3cqZAo" node="6WBmVK646Ti" resolve="res1" />
-            </node>
-            <node concept="liA8E" id="6WBmVK646Tr" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6WBmVK64EOF" role="3cqZAp" />
         <node concept="3cpWs8" id="6WBmVK646T5" role="3cqZAp">
           <node concept="3cpWsn" id="6WBmVK646T6" role="3cpWs9">
             <property role="TrG5h" value="res0" />

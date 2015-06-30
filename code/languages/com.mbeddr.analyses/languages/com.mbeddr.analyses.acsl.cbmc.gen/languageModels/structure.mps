@@ -8,7 +8,6 @@
   <imports>
     <import index="97v6" ref="r:cdcd02c7-c183-4a14-baf5-bd6025a1a5a1(com.mbeddr.analyses.acsl.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -41,10 +40,6 @@
         <ref role="trN6q" to="97v6:3i$cQqpAZ4J" resolve="FunctionContract" />
       </node>
     </node>
-  </node>
-  <node concept="1TIwiD" id="10dmWHgyo$E">
-    <property role="TrG5h" value="EnsuresStatementList" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
   </node>
 </model>
 
