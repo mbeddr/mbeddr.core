@@ -53,10 +53,10 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="3XvCV0KwBKd">
-    <property role="TrG5h" value="MessageAnnotation" />
+    <property role="TrG5h" value="SerialAnnotation" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="3XvCV0KwBKf" role="lGtFl">
-      <property role="Hh88m" value="message" />
+      <property role="Hh88m" value="serializable" />
       <node concept="trNpa" id="3XvCV0KwBLS" role="EQaZv">
         <ref role="trN6q" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
       </node>
@@ -66,7 +66,7 @@
     <property role="TrG5h" value="WriteTarget" />
     <property role="34LRSv" value="write" />
     <property role="3GE5qa" value="genericDotTargets" />
-    <ref role="1TJDcQ" node="6pWLWdplM0d" resolve="StatementLevelMessageDotTargets" />
+    <ref role="1TJDcQ" node="6pWLWdplM0d" resolve="StatementLevelSerialDotTargets" />
     <node concept="1TJgyj" id="3XvCV0KyplL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="message" />
@@ -78,7 +78,7 @@
     <property role="TrG5h" value="ReadTarget" />
     <property role="34LRSv" value="read" />
     <property role="3GE5qa" value="genericDotTargets" />
-    <ref role="1TJDcQ" node="6pWLWdplM0d" resolve="StatementLevelMessageDotTargets" />
+    <ref role="1TJDcQ" node="6pWLWdplM0d" resolve="StatementLevelSerialDotTargets" />
     <node concept="1TJgyj" id="3XvCV0Kz_Lg" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="message" />
@@ -91,7 +91,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="genericDotTargets.primitives" />
-    <ref role="1TJDcQ" node="7op4RkOrNAj" resolve="MessageDotTarget" />
+    <ref role="1TJDcQ" node="7op4RkOrNAj" resolve="SerialDotTarget" />
     <node concept="1TJgyj" id="1LleiTOpB6B" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expr" />
@@ -113,24 +113,24 @@
     <ref role="1TJDcQ" node="1LleiTOpv2q" resolve="PrimitiveReadWriteTarget" />
   </node>
   <node concept="1TIwiD" id="1LleiTPnd22">
-    <property role="TrG5h" value="MessageContextType" />
-    <property role="34LRSv" value="msgCtx" />
+    <property role="TrG5h" value="SerialContextType" />
+    <property role="34LRSv" value="serializableCtx" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="1TJgyj" id="7op4RkOnym$" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="handler" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7op4RkOgS$h" resolve="MessageHandler" />
+      <ref role="20lvS9" node="7op4RkOgS$h" resolve="SerializationHandler" />
     </node>
     <node concept="PrWs8" id="1LleiTP$YtH" role="PzmwI">
-      <ref role="PrY4T" node="1LleiTP$Yt_" resolve="IMessageConstruct" />
+      <ref role="PrY4T" node="1LleiTP$Yt_" resolve="ISerialConstruct" />
     </node>
   </node>
   <node concept="1TIwiD" id="1LleiTPnMXQ">
-    <property role="TrG5h" value="MsgInitTarget" />
+    <property role="TrG5h" value="SerialInitTarget" />
     <property role="34LRSv" value="init" />
     <property role="3GE5qa" value="genericDotTargets" />
-    <ref role="1TJDcQ" node="6pWLWdplM0d" resolve="StatementLevelMessageDotTargets" />
+    <ref role="1TJDcQ" node="6pWLWdplM0d" resolve="StatementLevelSerialDotTargets" />
     <node concept="1TJgyj" id="6pWLWdpuRvU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="additionalActuals" />
@@ -163,14 +163,14 @@
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     </node>
     <node concept="PrWs8" id="1LleiTP$YOM" role="PzmwI">
-      <ref role="PrY4T" node="1LleiTP$Yt_" resolve="IMessageConstruct" />
+      <ref role="PrY4T" node="1LleiTP$Yt_" resolve="ISerialConstruct" />
     </node>
     <node concept="PrWs8" id="7op4RkOirTK" role="PzmwI">
       <ref role="PrY4T" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
     </node>
   </node>
   <node concept="PlHQZ" id="1LleiTP$Yt_">
-    <property role="TrG5h" value="IMessageConstruct" />
+    <property role="TrG5h" value="ISerialConstruct" />
   </node>
   <node concept="1TIwiD" id="1LleiTPIMKG">
     <property role="3GE5qa" value="genericDotTargets.primitives.write" />
@@ -342,8 +342,8 @@
     <ref role="1TJDcQ" node="2_XJnzLo$lo" resolve="PrimitiveRead" />
   </node>
   <node concept="1TIwiD" id="7op4RkOgS$h">
-    <property role="TrG5h" value="MessageHandler" />
-    <property role="34LRSv" value="messageHandler" />
+    <property role="TrG5h" value="SerializationHandler" />
+    <property role="34LRSv" value="serializationHandler" />
     <property role="3GE5qa" value="handler" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7op4RkOh4me" role="1TKVEi">
@@ -377,7 +377,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7op4RkOrNAj">
-    <property role="TrG5h" value="MessageDotTarget" />
+    <property role="TrG5h" value="SerialDotTarget" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -385,7 +385,7 @@
       <ref role="PrY4T" to="mj1l:40tXLnqhXcx" resolve="IGenericDotTarget" />
     </node>
     <node concept="PrWs8" id="7op4RkOrNA_" role="PzmwI">
-      <ref role="PrY4T" node="1LleiTP$Yt_" resolve="IMessageConstruct" />
+      <ref role="PrY4T" node="1LleiTP$Yt_" resolve="ISerialConstruct" />
     </node>
   </node>
   <node concept="1TIwiD" id="6pWLWdpj0G$">
@@ -408,22 +408,22 @@
   </node>
   <node concept="1TIwiD" id="6pWLWdpl3C6">
     <property role="3GE5qa" value="genericDotTargets" />
-    <property role="TrG5h" value="MsgDisposeTarget" />
+    <property role="TrG5h" value="SerialDisposeTarget" />
     <property role="34LRSv" value="dispose" />
-    <ref role="1TJDcQ" node="6pWLWdplM0d" resolve="StatementLevelMessageDotTargets" />
+    <ref role="1TJDcQ" node="6pWLWdplM0d" resolve="StatementLevelSerialDotTargets" />
   </node>
   <node concept="1TIwiD" id="6pWLWdplM0d">
     <property role="3GE5qa" value="genericDotTargets" />
-    <property role="TrG5h" value="StatementLevelMessageDotTargets" />
+    <property role="TrG5h" value="StatementLevelSerialDotTargets" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="7op4RkOrNAj" resolve="MessageDotTarget" />
+    <ref role="1TJDcQ" node="7op4RkOrNAj" resolve="SerialDotTarget" />
   </node>
   <node concept="1TIwiD" id="4Ck4ndQs_Cm">
     <property role="3GE5qa" value="genericDotTargets" />
     <property role="TrG5h" value="HandleTarget" />
     <property role="34LRSv" value="handle" />
-    <ref role="1TJDcQ" node="7op4RkOrNAj" resolve="MessageDotTarget" />
+    <ref role="1TJDcQ" node="7op4RkOrNAj" resolve="SerialDotTarget" />
   </node>
   <node concept="1TIwiD" id="4Ck4ndQJ$CW">
     <property role="3GE5qa" value="handler" />

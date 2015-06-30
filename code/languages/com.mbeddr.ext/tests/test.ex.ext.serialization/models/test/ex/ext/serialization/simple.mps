@@ -56,23 +56,23 @@
       <concept id="4566548524300866823" name="com.mbeddr.ext.serialization.structure.WriteTarget" flags="ng" index="fPzqR">
         <child id="4566548524300866929" name="message" index="fPzr1" />
       </concept>
-      <concept id="4566548524300401677" name="com.mbeddr.ext.serialization.structure.MessageAnnotation" flags="ng" index="fRtYX" />
+      <concept id="4566548524300401677" name="com.mbeddr.ext.serialization.structure.SerialAnnotation" flags="ng" index="fRtYX" />
       <concept id="5337910645946997270" name="com.mbeddr.ext.serialization.structure.HandleTarget" flags="ng" index="Wp$H_" />
       <concept id="5337910645951973948" name="com.mbeddr.ext.serialization.structure.BufferRef" flags="ng" index="WE_Hf" />
-      <concept id="7384997130812013062" name="com.mbeddr.ext.serialization.structure.MsgDisposeTarget" flags="ng" index="ZafR5" />
+      <concept id="7384997130812013062" name="com.mbeddr.ext.serialization.structure.SerialDisposeTarget" flags="ng" index="ZafR5" />
       <concept id="7384997130811476772" name="com.mbeddr.ext.serialization.structure.InitHandler" flags="ng" index="ZccNB" />
       <concept id="7384997130811486357" name="com.mbeddr.ext.serialization.structure.DisposeHandler" flags="ng" index="Zcftm" />
-      <concept id="8509854365002205457" name="com.mbeddr.ext.serialization.structure.MessageHandler" flags="ng" index="12mDD$">
+      <concept id="8509854365002205457" name="com.mbeddr.ext.serialization.structure.SerializationHandler" flags="ng" index="12mDD$">
         <child id="7384997130811488819" name="initHandler" index="ZcfRK" />
         <child id="7384997130811488824" name="disposeHandler" index="ZcfRV" />
         <child id="8509854365002253710" name="bufferType" index="12nlrV" />
         <child id="8509854365002263143" name="readHandler" index="12nn$i" />
         <child id="8509854365002263146" name="writeHandler" index="12nn$v" />
       </concept>
-      <concept id="2041600877782683778" name="com.mbeddr.ext.serialization.structure.MessageContextType" flags="ng" index="1D2uAG">
+      <concept id="2041600877782683778" name="com.mbeddr.ext.serialization.structure.SerialContextType" flags="ng" index="1D2uAG">
         <reference id="8509854365003949476" name="handler" index="12hNrh" />
       </concept>
-      <concept id="2041600877782839158" name="com.mbeddr.ext.serialization.structure.MsgInitTarget" flags="ng" index="1D2xpo">
+      <concept id="2041600877782839158" name="com.mbeddr.ext.serialization.structure.SerialInitTarget" flags="ng" index="1D2xpo">
         <child id="7384997130814584826" name="additionalActuals" index="Z1V0T" />
       </concept>
       <concept id="2041600877784697460" name="com.mbeddr.ext.serialization.structure.HandlerFunction" flags="ng" index="1DbFdq">
@@ -248,7 +248,7 @@
       <property role="iO3LB" value="true" />
       <property role="TrG5h" value="HelloMessage" />
       <node concept="2v9HqM" id="3XvCV0Ky0X6" role="2eOfOg">
-        <ref role="2v9HqP" node="3XvCV0Ky0V1" resolve="HelloMessage" />
+        <ref role="2v9HqP" node="3XvCV0Ky0V1" resolve="HelloSerializable" />
       </node>
       <node concept="2v9HqM" id="1LleiTP_e5E" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1bbwi" resolve="math" />
@@ -268,7 +268,7 @@
     </node>
   </node>
   <node concept="N3F5e" id="3XvCV0Ky0V1">
-    <property role="TrG5h" value="HelloMessage" />
+    <property role="TrG5h" value="HelloSerializable" />
     <node concept="12mDD$" id="7op4RkOlu3a" role="N3F5h">
       <property role="TrG5h" value="toFile" />
       <property role="2OOxQR" value="true" />
@@ -515,7 +515,6 @@
     </node>
     <node concept="1sgJKc" id="3XvCV0Ky12m" role="N3F5h">
       <property role="TrG5h" value="date" />
-      <node concept="fRtYX" id="3XvCV0Ky14B" role="lGtFl" />
       <node concept="1dpRTG" id="3XvCV0Ky14F" role="HszBJ">
         <property role="TrG5h" value="day" />
         <node concept="26Vqp4" id="3XvCV0Ky14E" role="2C2TGm">
@@ -537,6 +536,7 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
+      <node concept="fRtYX" id="7PpDuQ6E_mi" role="lGtFl" />
     </node>
     <node concept="2NXPZ9" id="3XvCV0Ky5Gb" role="N3F5h">
       <property role="TrG5h" value="empty_1434029179370_9" />
@@ -584,7 +584,7 @@
       <property role="TrG5h" value="empty_1435562938733_7" />
     </node>
     <node concept="1sgJKc" id="6pWLWdp4wwA" role="N3F5h">
-      <property role="TrG5h" value="MessageTest" />
+      <property role="TrG5h" value="SerializableTest" />
       <node concept="1dpRTG" id="6pWLWdp4xlY" role="HszBJ">
         <property role="TrG5h" value="u8" />
         <node concept="26Vqp4" id="6pWLWdp4xlX" role="2C2TGm">
@@ -1052,7 +1052,7 @@
           <node concept="1sgJKr" id="6pWLWdp4y6t" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6pWLWdp4wwA" resolve="MessageTest" />
+            <ref role="1sgJKq" node="6pWLWdp4wwA" resolve="SerializableTest" />
           </node>
           <node concept="3o3WLD" id="6pWLWdp4yaL" role="3XIe9u">
             <node concept="2xZu8t" id="6pWLWdp4ydq" role="3o3WLE">
@@ -1157,7 +1157,7 @@
           <node concept="1sgJKr" id="6pWLWdp4ImG" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6pWLWdp4wwA" resolve="MessageTest" />
+            <ref role="1sgJKq" node="6pWLWdp4wwA" resolve="SerializableTest" />
           </node>
         </node>
         <node concept="3XISUE" id="6pWLWdp4OfO" role="3XIRFZ" />

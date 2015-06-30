@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
+    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -36,6 +37,11 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
     </language>
+    <language id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions">
+      <concept id="5846558918537398687" name="com.mbeddr.mpsutil.intentions.structure.IntentionGroupAnnotation" flags="ng" index="1SWQZ3">
+        <property id="5846558918537400330" name="label" index="1SWRpm" />
+      </concept>
+    </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
       <concept id="1192794782375" name="jetbrains.mps.lang.intentions.structure.DescriptionBlock" flags="in" index="2S6ZIM" />
@@ -59,6 +65,9 @@
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -71,7 +80,7 @@
       <node concept="3clFbS" id="3XvCV0KwCbD" role="2VODD2">
         <node concept="3clFbF" id="3XvCV0KwETb" role="3cqZAp">
           <node concept="Xl_RD" id="3XvCV0KwETa" role="3clFbG">
-            <property role="Xl_RC" value="Toggle Message" />
+            <property role="Xl_RC" value="Toggle Serializable" />
           </node>
         </node>
       </node>
@@ -86,7 +95,7 @@
                   <node concept="2Sf5sV" id="3XvCV0KwHyJ" role="2Oq$k0" />
                   <node concept="3CFZ6_" id="3XvCV0KwIj3" role="2OqNvi">
                     <node concept="3CFYIy" id="3XvCV0KwIm6" role="3CFYIz">
-                      <ref role="3CFYIx" to="jtc1:3XvCV0KwBKd" resolve="MessageAnnotation" />
+                      <ref role="3CFYIx" to="jtc1:3XvCV0KwBKd" resolve="SerialAnnotation" />
                     </node>
                   </node>
                 </node>
@@ -99,7 +108,7 @@
               <node concept="2Sf5sV" id="3XvCV0KwFyZ" role="2Oq$k0" />
               <node concept="3CFZ6_" id="3XvCV0KwH07" role="2OqNvi">
                 <node concept="3CFYIy" id="3XvCV0KwH36" role="3CFYIz">
-                  <ref role="3CFYIx" to="jtc1:3XvCV0KwBKd" resolve="MessageAnnotation" />
+                  <ref role="3CFYIx" to="jtc1:3XvCV0KwBKd" resolve="SerialAnnotation" />
                 </node>
               </node>
             </node>
@@ -113,7 +122,7 @@
                     <node concept="2Sf5sV" id="3XvCV0KwIT3" role="2Oq$k0" />
                     <node concept="3CFZ6_" id="3XvCV0KwJDn" role="2OqNvi">
                       <node concept="3CFYIy" id="3XvCV0KwJEq" role="3CFYIz">
-                        <ref role="3CFYIx" to="jtc1:3XvCV0KwBKd" resolve="MessageAnnotation" />
+                        <ref role="3CFYIx" to="jtc1:3XvCV0KwBKd" resolve="SerialAnnotation" />
                       </node>
                     </node>
                   </node>
@@ -124,6 +133,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="7PpDuQ6DWh6" role="lGtFl">
+      <property role="1SWRpm" value="Serializable" />
     </node>
   </node>
 </model>

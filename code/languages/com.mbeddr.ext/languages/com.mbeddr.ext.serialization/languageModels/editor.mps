@@ -155,11 +155,11 @@
     </language>
   </registry>
   <node concept="24kQdi" id="3XvCV0KwBMi">
-    <ref role="1XX52x" to="jtc1:3XvCV0KwBKd" resolve="MessageAnnotation" />
+    <ref role="1XX52x" to="jtc1:3XvCV0KwBKd" resolve="SerialAnnotation" />
     <node concept="3EZMnI" id="3XvCV0KwBMt" role="2wV5jI">
       <node concept="2iRkQZ" id="3XvCV0KwBMu" role="2iSdaV" />
       <node concept="3F0ifn" id="3XvCV0KwCb1" role="3EZMnx">
-        <property role="3F0ifm" value="@Message" />
+        <property role="3F0ifm" value="@Serializable" />
         <ref role="1ERwB7" node="3XvCV0KwKb7" resolve="deleteMessage" />
         <ref role="1k5W1q" node="3XvCV0KzYoq" resolve="communication" />
       </node>
@@ -168,7 +168,7 @@
   </node>
   <node concept="1h_SRR" id="3XvCV0KwKb7">
     <property role="TrG5h" value="deleteMessage" />
-    <ref role="1h_SK9" to="jtc1:3XvCV0KwBKd" resolve="MessageAnnotation" />
+    <ref role="1h_SK9" to="jtc1:3XvCV0KwBKd" resolve="SerialAnnotation" />
     <node concept="1hA7zw" id="3XvCV0KwKbk" role="1h_SK8">
       <property role="1hAc7j" value="delete_action_id" />
       <node concept="1hAIg9" id="3XvCV0KwKbl" role="1hA7z_">
@@ -292,7 +292,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1LleiTPnExP">
-    <ref role="1XX52x" to="jtc1:1LleiTPnd22" resolve="MessageContextType" />
+    <ref role="1XX52x" to="jtc1:1LleiTPnd22" resolve="SerialContextType" />
     <node concept="3EZMnI" id="7op4RkOnymA" role="2wV5jI">
       <node concept="2iRfu4" id="7op4RkOnymB" role="2iSdaV" />
       <node concept="PMmxH" id="1LleiTPnExR" role="3EZMnx">
@@ -327,7 +327,7 @@
   </node>
   <node concept="24kQdi" id="1LleiTPoDAe">
     <property role="3GE5qa" value="genericDotTargets" />
-    <ref role="1XX52x" to="jtc1:1LleiTPnMXQ" resolve="MsgInitTarget" />
+    <ref role="1XX52x" to="jtc1:1LleiTPnMXQ" resolve="SerialInitTarget" />
     <node concept="3EZMnI" id="1LleiTPoDAj" role="2wV5jI">
       <node concept="l2Vlx" id="1LleiTPoDAk" role="2iSdaV" />
       <node concept="3F0ifn" id="1LleiTPoDAp" role="3EZMnx">
@@ -509,7 +509,7 @@
   </node>
   <node concept="24kQdi" id="7op4RkOh6Ip">
     <property role="3GE5qa" value="handler" />
-    <ref role="1XX52x" to="jtc1:7op4RkOgS$h" resolve="MessageHandler" />
+    <ref role="1XX52x" to="jtc1:7op4RkOgS$h" resolve="SerializationHandler" />
     <node concept="3EZMnI" id="7op4RkOh9Jh" role="2wV5jI">
       <node concept="PMmxH" id="7op4RkOoMxD" role="3EZMnx">
         <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
@@ -694,7 +694,7 @@
   </node>
   <node concept="24kQdi" id="6pWLWdpl5dd">
     <property role="3GE5qa" value="genericDotTargets" />
-    <ref role="1XX52x" to="jtc1:6pWLWdpl3C6" resolve="MsgDisposeTarget" />
+    <ref role="1XX52x" to="jtc1:6pWLWdpl3C6" resolve="SerialDisposeTarget" />
     <node concept="3EZMnI" id="6pWLWdpob5P" role="2wV5jI">
       <node concept="2iRfu4" id="6pWLWdpob5Q" role="2iSdaV" />
       <node concept="PMmxH" id="6pWLWdpl5B3" role="3EZMnx">
