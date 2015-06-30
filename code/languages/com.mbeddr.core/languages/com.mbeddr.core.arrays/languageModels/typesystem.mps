@@ -2075,8 +2075,8 @@
             </node>
             <node concept="mw_s8" id="YI6YxhUNW2" role="1ZfhKB">
               <node concept="2pJPEk" id="9mFkazg9dj" role="mwGJk">
-                <node concept="2pJPED" id="9mFkazg9di" role="2pJPEn">
-                  <ref role="2pJxaS" to="mj1l:7lNBHBNBzyd" resolve="Int64tType" />
+                <node concept="2pJPED" id="7PpDuQ6Or8Q" role="2pJPEn">
+                  <ref role="2pJxaS" to="mj1l:7lNBHBNBzyo" resolve="UnsignedInt64tType" />
                 </node>
               </node>
             </node>
