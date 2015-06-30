@@ -162,7 +162,6 @@
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
       </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
-        <property id="1195213689297" name="overrides" index="18ip37" />
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
@@ -1098,8 +1097,8 @@
                               <node concept="37vLTw" id="6pWLWdpyz9O" role="2Oq$k0">
                                 <ref role="3cqZAo" node="6pWLWdpygKU" resolve="initHandler" />
                               </node>
-                              <node concept="3Tsc0h" id="6pWLWdpy$jZ" role="2OqNvi">
-                                <ref role="3TtcxE" to="jtc1:4WTYg$PUiX5" />
+                              <node concept="3Tsc0h" id="4Ck4ndQGfW4" role="2OqNvi">
+                                <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" />
                               </node>
                             </node>
                             <node concept="34oBXx" id="6pWLWdpyFfz" role="2OqNvi" />
@@ -1121,7 +1120,7 @@
                       <node concept="1YBJjd" id="6pWLWdpyslY" role="2Oq$k0">
                         <ref role="1YBMHb" node="1LleiTPosRW" resolve="bufferInitTarget" />
                       </node>
-                      <node concept="3Tsc0h" id="6pWLWdpysLB" role="2OqNvi">
+                      <node concept="3Tsc0h" id="4Ck4ndQGdkn" role="2OqNvi">
                         <ref role="3TtcxE" to="jtc1:6pWLWdpuRvU" />
                       </node>
                     </node>
@@ -1132,8 +1131,8 @@
                       <node concept="37vLTw" id="6pWLWdpygZh" role="2Oq$k0">
                         <ref role="3cqZAo" node="6pWLWdpygKU" resolve="initHandler" />
                       </node>
-                      <node concept="3Tsc0h" id="6pWLWdpyi7Q" role="2OqNvi">
-                        <ref role="3TtcxE" to="jtc1:4WTYg$PUiX5" />
+                      <node concept="3Tsc0h" id="4Ck4ndQGepp" role="2OqNvi">
+                        <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" />
                       </node>
                     </node>
                     <node concept="34oBXx" id="6pWLWdpypiM" role="2OqNvi" />
@@ -1166,8 +1165,8 @@
                           <node concept="37vLTw" id="6pWLWdpyQ9_" role="2Oq$k0">
                             <ref role="3cqZAo" node="6pWLWdpygKU" resolve="initHandler" />
                           </node>
-                          <node concept="3Tsc0h" id="6pWLWdpyQM2" role="2OqNvi">
-                            <ref role="3TtcxE" to="jtc1:4WTYg$PUiX5" />
+                          <node concept="3Tsc0h" id="4Ck4ndQGh3S" role="2OqNvi">
+                            <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" />
                           </node>
                         </node>
                         <node concept="1_o_bG" id="6pWLWdpyQ8z" role="1_o_aQ">
@@ -1198,8 +1197,8 @@
                   <node concept="37vLTw" id="6pWLWdpygL0" role="2Oq$k0">
                     <ref role="3cqZAo" node="6pWLWdpygKU" resolve="initHandler" />
                   </node>
-                  <node concept="3Tsc0h" id="6pWLWdpy9q6" role="2OqNvi">
-                    <ref role="3TtcxE" to="jtc1:4WTYg$PUiX5" />
+                  <node concept="3Tsc0h" id="4Ck4ndQGcFr" role="2OqNvi">
+                    <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" />
                   </node>
                 </node>
                 <node concept="3GX2aA" id="6pWLWdpygGj" role="2OqNvi" />
@@ -1238,47 +1237,6 @@
     <node concept="1YaCAy" id="1LleiTPosRW" role="1YuTPh">
       <property role="TrG5h" value="bufferInitTarget" />
       <ref role="1YaFvo" to="jtc1:1LleiTPnMXQ" resolve="MsgInitTarget" />
-    </node>
-  </node>
-  <node concept="1YbPZF" id="1LleiTPymup">
-    <property role="TrG5h" value="typeof_BufferHandlerArgument" />
-    <property role="18ip37" value="true" />
-    <property role="3GE5qa" value="handler" />
-    <node concept="3clFbS" id="1LleiTPymuq" role="18ibNy">
-      <node concept="1Z5TYs" id="1LleiTPymwp" role="3cqZAp">
-        <node concept="mw_s8" id="1LleiTPyUus" role="1ZfhKB">
-          <node concept="1Z2H0r" id="1LleiTPyUuk" role="mwGJk">
-            <node concept="2OqwBi" id="1LleiTPynM0" role="1Z2MuG">
-              <node concept="2OqwBi" id="1LleiTPymAv" role="2Oq$k0">
-                <node concept="1YBJjd" id="1LleiTPymwD" role="2Oq$k0">
-                  <ref role="1YBMHb" node="1LleiTPymus" resolve="bufferHandlerArgument" />
-                </node>
-                <node concept="2Xjw5R" id="1LleiTPynDV" role="2OqNvi">
-                  <node concept="1xMEDy" id="1LleiTPynDX" role="1xVPHs">
-                    <node concept="chp4Y" id="7op4RkOmMxn" role="ri$Ld">
-                      <ref role="cht4Q" to="jtc1:7op4RkOgS$h" resolve="MessageHandler" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3TrEf2" id="7op4RkOmNnV" role="2OqNvi">
-                <ref role="3Tt5mk" to="jtc1:7op4RkOh4me" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="1LleiTPymws" role="1ZfhK$">
-          <node concept="1Z2H0r" id="1LleiTPymuz" role="mwGJk">
-            <node concept="1YBJjd" id="1LleiTPymuN" role="1Z2MuG">
-              <ref role="1YBMHb" node="1LleiTPymus" resolve="bufferHandlerArgument" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="1LleiTPymus" role="1YuTPh">
-      <property role="TrG5h" value="bufferHandlerArgument" />
-      <ref role="1YaFvo" to="jtc1:1LleiTPxL$K" resolve="BufferHandlerArgument" />
     </node>
   </node>
   <node concept="1YbPZF" id="1LleiTPEO5W">
@@ -1574,6 +1532,46 @@
     <node concept="1YaCAy" id="4Ck4ndQsC4O" role="1YuTPh">
       <property role="TrG5h" value="handleTarget" />
       <ref role="1YaFvo" to="jtc1:4Ck4ndQs_Cm" resolve="HandleTarget" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4Ck4ndQKvrX">
+    <property role="TrG5h" value="typeof_BufferRef" />
+    <property role="3GE5qa" value="handler" />
+    <node concept="3clFbS" id="4Ck4ndQKvrY" role="18ibNy">
+      <node concept="1Z5TYs" id="4Ck4ndQKvu5" role="3cqZAp">
+        <node concept="mw_s8" id="4Ck4ndQKvup" role="1ZfhKB">
+          <node concept="1Z2H0r" id="4Ck4ndQKvul" role="mwGJk">
+            <node concept="2OqwBi" id="4Ck4ndQKwaN" role="1Z2MuG">
+              <node concept="2OqwBi" id="4Ck4ndQKvxQ" role="2Oq$k0">
+                <node concept="1YBJjd" id="4Ck4ndQKvuE" role="2Oq$k0">
+                  <ref role="1YBMHb" node="4Ck4ndQKvs0" resolve="bufferRef" />
+                </node>
+                <node concept="2Xjw5R" id="4Ck4ndQKw3U" role="2OqNvi">
+                  <node concept="1xMEDy" id="4Ck4ndQKw3W" role="1xVPHs">
+                    <node concept="chp4Y" id="4Ck4ndQKw52" role="ri$Ld">
+                      <ref role="cht4Q" to="jtc1:7op4RkOgS$h" resolve="MessageHandler" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3TrEf2" id="4Ck4ndQKw$x" role="2OqNvi">
+                <ref role="3Tt5mk" to="jtc1:7op4RkOh4me" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4Ck4ndQKvu8" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4Ck4ndQKvs7" role="mwGJk">
+            <node concept="1YBJjd" id="4Ck4ndQKvsn" role="1Z2MuG">
+              <ref role="1YBMHb" node="4Ck4ndQKvs0" resolve="bufferRef" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4Ck4ndQKvs0" role="1YuTPh">
+      <property role="TrG5h" value="bufferRef" />
+      <ref role="1YaFvo" to="jtc1:4Ck4ndQJ$CW" resolve="BufferRef" />
     </node>
   </node>
 </model>

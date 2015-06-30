@@ -169,19 +169,6 @@
       <ref role="PrY4T" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1LleiTPxBy1">
-    <property role="TrG5h" value="HandlerArgument" />
-    <property role="3GE5qa" value="handler" />
-    <ref role="1TJDcQ" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
-    <node concept="PrWs8" id="1LleiTP$YtF" role="PzmwI">
-      <ref role="PrY4T" node="1LleiTP$Yt_" resolve="IMessageConstruct" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1LleiTPxL$K">
-    <property role="TrG5h" value="BufferHandlerArgument" />
-    <property role="3GE5qa" value="handler" />
-    <ref role="1TJDcQ" node="1LleiTPxBy1" resolve="HandlerArgument" />
-  </node>
   <node concept="PlHQZ" id="1LleiTP$Yt_">
     <property role="TrG5h" value="IMessageConstruct" />
   </node>
@@ -432,16 +419,17 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="7op4RkOrNAj" resolve="MessageDotTarget" />
   </node>
-  <node concept="1TIwiD" id="6pWLWdpu$nk">
-    <property role="3GE5qa" value="handler" />
-    <property role="TrG5h" value="AdditionalArgRef" />
-    <ref role="1TJDcQ" to="x27k:1OcdQnyTX2U" resolve="ArgumentRef" />
-  </node>
   <node concept="1TIwiD" id="4Ck4ndQs_Cm">
     <property role="3GE5qa" value="genericDotTargets" />
     <property role="TrG5h" value="HandleTarget" />
     <property role="34LRSv" value="handle" />
     <ref role="1TJDcQ" node="7op4RkOrNAj" resolve="MessageDotTarget" />
+  </node>
+  <node concept="1TIwiD" id="4Ck4ndQJ$CW">
+    <property role="3GE5qa" value="handler" />
+    <property role="TrG5h" value="BufferRef" />
+    <property role="34LRSv" value="buffer" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
   </node>
 </model>
 
