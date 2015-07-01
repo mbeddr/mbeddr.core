@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="3y0n" ref="r:d4d16117-20fb-4ba8-a1b2-1598e121e1d0(com.mbeddr.core.stdlib)" />
-    <import index="qst5" ref="r:c229d982-4943-4520-b79a-815c33e777a7(com.mbeddr.ext.__spreferences.PlatformTemplates)" />
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -45,8 +44,14 @@
       <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
       </concept>
-      <concept id="8719112291175211294" name="com.mbeddr.core.buildconfig.structure.PlatformReference" flags="ng" index="2xfidK">
-        <reference id="8719112291175211414" name="template" index="2xfifS" />
+      <concept id="5323740605968447022" name="com.mbeddr.core.buildconfig.structure.DesktopPlatform" flags="ng" index="2AWWZL">
+        <property id="5323740605968447025" name="compilerOptions" index="2AWWZI" />
+        <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
+        <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
+        <property id="3963667026125442676" name="make" index="3r8Kxs" />
+      </concept>
+      <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
+        <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
     </language>
     <language id="bb0ad88b-63cd-45fd-ae27-8662d274cf3c" name="com.mbeddr.ext.serialization">
@@ -56,13 +61,13 @@
       <concept id="4566548524300866823" name="com.mbeddr.ext.serialization.structure.WriteTarget" flags="ng" index="fPzqR">
         <child id="4566548524300866929" name="message" index="fPzr1" />
       </concept>
-      <concept id="4566548524300401677" name="com.mbeddr.ext.serialization.structure.SerialAnnotation" flags="ng" index="fRtYX" />
+      <concept id="4566548524300401677" name="com.mbeddr.ext.serialization.structure.MessageAnnotation" flags="ng" index="fRtYX" />
       <concept id="5337910645946997270" name="com.mbeddr.ext.serialization.structure.HandleTarget" flags="ng" index="Wp$H_" />
       <concept id="5337910645951973948" name="com.mbeddr.ext.serialization.structure.BufferRef" flags="ng" index="WE_Hf" />
-      <concept id="7384997130812013062" name="com.mbeddr.ext.serialization.structure.SerialDisposeTarget" flags="ng" index="ZafR5" />
+      <concept id="7384997130812013062" name="com.mbeddr.ext.serialization.structure.MsgDisposeTarget" flags="ng" index="ZafR5" />
       <concept id="7384997130811476772" name="com.mbeddr.ext.serialization.structure.InitHandler" flags="ng" index="ZccNB" />
       <concept id="7384997130811486357" name="com.mbeddr.ext.serialization.structure.DisposeHandler" flags="ng" index="Zcftm" />
-      <concept id="8509854365002205457" name="com.mbeddr.ext.serialization.structure.SerializationHandler" flags="ng" index="12mDD$">
+      <concept id="8509854365002205457" name="com.mbeddr.ext.serialization.structure.MessageHandler" flags="ng" index="12mDD$">
         <child id="7384997130811488819" name="initHandler" index="ZcfRK" />
         <child id="7384997130811488824" name="disposeHandler" index="ZcfRV" />
         <child id="8509854365002253710" name="bufferType" index="12nlrV" />
@@ -70,10 +75,10 @@
         <child id="8509854365002263146" name="writeHandler" index="12nn$v" />
         <child id="9032432967253581984" name="additionalVariables" index="3VXcld" />
       </concept>
-      <concept id="2041600877782683778" name="com.mbeddr.ext.serialization.structure.SerialContextType" flags="ng" index="1D2uAG">
+      <concept id="2041600877782683778" name="com.mbeddr.ext.serialization.structure.MessageContextType" flags="ng" index="1D2uAG">
         <reference id="8509854365003949476" name="handler" index="12hNrh" />
       </concept>
-      <concept id="2041600877782839158" name="com.mbeddr.ext.serialization.structure.SerialInitTarget" flags="ng" index="1D2xpo">
+      <concept id="2041600877782839158" name="com.mbeddr.ext.serialization.structure.MsgInitTarget" flags="ng" index="1D2xpo">
         <child id="7384997130814584826" name="additionalActuals" index="Z1V0T" />
       </concept>
       <concept id="2041600877784697460" name="com.mbeddr.ext.serialization.structure.HandlerFunction" flags="ng" index="1DbFdq">
@@ -255,8 +260,12 @@
     </language>
   </registry>
   <node concept="2v9HqL" id="3XvCV0Ky0Vu">
-    <node concept="2xfidK" id="3XvCV0Ky0X0" role="2AWWZH">
-      <ref role="2xfifS" to="qst5:5dbP$RGQRy4" resolve="Desktop Platform" />
+    <node concept="2AWWZL" id="1_106p2l$uD" role="2AWWZH">
+      <property role="2AWWZJ" value="gcc" />
+      <property role="3r8Kw1" value="gdb" />
+      <property role="3r8Kxs" value="make" />
+      <property role="2AWWZI" value="-std=c99" />
+      <property role="1FkSt$" value="-g" />
     </node>
     <node concept="2eOfOl" id="3XvCV0Ky0X3" role="2ePNbc">
       <property role="iO3LB" value="true" />
