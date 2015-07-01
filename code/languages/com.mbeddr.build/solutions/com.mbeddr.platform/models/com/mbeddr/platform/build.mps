@@ -2256,6 +2256,48 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="3NH93cznmT7" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.intentions.runtime" />
+        <property role="3LESm3" value="4bff7bbe-ce5f-432e-84bf-60809cb9987c" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="3NH93cznqRV" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="3NH93cznslw" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="3NH93cznsUY" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.intentions.runtime" />
+              <node concept="2Ry0Ak" id="3NH93cznu5J" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.intentions.runtime.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3NH93cznuF7" role="3bR37C">
+          <node concept="3bR9La" id="3NH93cznuF8" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3NH93cznuF9" role="3bR37C">
+          <node concept="3bR9La" id="3NH93cznuFa" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3NH93cznuFb" role="3bR37C">
+          <node concept="3bR9La" id="3NH93cznuFc" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3NH93cznuFd" role="3bR37C">
+          <node concept="3bR9La" id="3NH93cznuFe" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="2N1CSrzSJt4" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.plantuml.pluginSolution" />
