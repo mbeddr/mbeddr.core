@@ -6794,19 +6794,106 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="BItIAVcnEV" role="3cqZAp">
-                <node concept="2OqwBi" id="BItIAVcnVT" role="3clFbG">
-                  <node concept="1fK8h0" id="BItIAVcnET" role="2Oq$k0" />
-                  <node concept="liA8E" id="BItIAVcpH7" role="2OqNvi">
-                    <ref role="37wK5l" to="k7g3:~Set.remove(java.lang.Object):boolean" resolve="remove" />
-                    <node concept="2ShNRf" id="BItIAVdT95" role="37wK5m">
-                      <node concept="1pGfFk" id="BItIAVdT96" role="2ShVmc">
-                        <ref role="37wK5l" node="4zFXTqpFMGR" resolve="VariableWrapper" />
-                        <node concept="37vLTw" id="BItIAVdT97" role="37wK5m">
-                          <ref role="3cqZAo" node="BItIAVcmnJ" resolve="variable" />
+              <node concept="3clFbH" id="3X496gkjIfJ" role="3cqZAp" />
+              <node concept="3SKdUt" id="3X496gkjJF1" role="3cqZAp">
+                <node concept="3SKdUq" id="3X496gkjJZk" role="3SKWNk">
+                  <property role="3SKdUp" value="only remove the variable if the left hand side is not a generic dot expression" />
+                </node>
+              </node>
+              <node concept="3SKdUt" id="3X496gkjKof" role="3cqZAp">
+                <node concept="3SKdUq" id="3X496gkjKAG" role="3SKWNk">
+                  <property role="3SKdUp" value="which accesses a member of an SU declaration" />
+                </node>
+              </node>
+              <node concept="3cpWs8" id="3X496gkjNOI" role="3cqZAp">
+                <node concept="3cpWsn" id="3X496gkjNOL" role="3cpWs9">
+                  <property role="TrG5h" value="omitRemoval" />
+                  <node concept="10P_77" id="3X496gkjNOG" role="1tU5fm" />
+                  <node concept="3clFbT" id="3X496gkjPQB" role="33vP2m">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="3X496gkjLk8" role="3cqZAp">
+                <node concept="3clFbS" id="3X496gkjLka" role="3clFbx">
+                  <node concept="3cpWs8" id="3X496gkjSwv" role="3cqZAp">
+                    <node concept="3cpWsn" id="3X496gkjSww" role="3cpWs9">
+                      <property role="TrG5h" value="left" />
+                      <node concept="3Tqbb2" id="3X496gkjSwh" role="1tU5fm">
+                        <ref role="ehGHo" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+                      </node>
+                      <node concept="2OqwBi" id="3X496gkjSwx" role="33vP2m">
+                        <node concept="1PxgMI" id="3X496gkjSwy" role="2Oq$k0">
+                          <ref role="1PxNhF" to="mj1l:iknc85$OO0" resolve="IAssignmentLike" />
+                          <node concept="37vLTw" id="3X496gkjSwz" role="1PxMeX">
+                            <ref role="3cqZAo" node="5qsqXLs4WXF" resolve="source" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="3X496gkjSw$" role="2OqNvi">
+                          <ref role="37wK5l" to="ywuz:7QxE2Vg8Hif" resolve="getLValue" />
                         </node>
                       </node>
                     </node>
+                  </node>
+                  <node concept="3clFbJ" id="3X496gkjTvS" role="3cqZAp">
+                    <node concept="3clFbS" id="3X496gkjTvU" role="3clFbx">
+                      <node concept="3clFbF" id="3X496gkjVjU" role="3cqZAp">
+                        <node concept="37vLTI" id="3X496gkjVIb" role="3clFbG">
+                          <node concept="3clFbT" id="3X496gkjVV8" role="37vLTx">
+                            <property role="3clFbU" value="true" />
+                          </node>
+                          <node concept="37vLTw" id="3X496gkjVjS" role="37vLTJ">
+                            <ref role="3cqZAo" node="3X496gkjNOL" resolve="omitRemoval" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="3X496gkjTZ$" role="3clFbw">
+                      <node concept="37vLTw" id="3X496gkjTFs" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3X496gkjSww" resolve="left" />
+                      </node>
+                      <node concept="1mIQ4w" id="3X496gkjUIF" role="2OqNvi">
+                        <node concept="chp4Y" id="3X496gkjV0C" role="cj9EA">
+                          <ref role="cht4Q" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="3X496gkjLOf" role="3clFbw">
+                  <node concept="37vLTw" id="3X496gkjLCO" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5qsqXLs4WXF" resolve="source" />
+                  </node>
+                  <node concept="1mIQ4w" id="3X496gkjMgw" role="2OqNvi">
+                    <node concept="chp4Y" id="3X496gkjMxf" role="cj9EA">
+                      <ref role="cht4Q" to="mj1l:iknc85$OO0" resolve="IAssignmentLike" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="3X496gkjKLb" role="3cqZAp" />
+              <node concept="3clFbJ" id="3X496gkjQ7A" role="3cqZAp">
+                <node concept="3clFbS" id="3X496gkjQ7C" role="3clFbx">
+                  <node concept="3clFbF" id="BItIAVcnEV" role="3cqZAp">
+                    <node concept="2OqwBi" id="BItIAVcnVT" role="3clFbG">
+                      <node concept="1fK8h0" id="BItIAVcnET" role="2Oq$k0" />
+                      <node concept="liA8E" id="BItIAVcpH7" role="2OqNvi">
+                        <ref role="37wK5l" to="k7g3:~Set.remove(java.lang.Object):boolean" resolve="remove" />
+                        <node concept="2ShNRf" id="BItIAVdT95" role="37wK5m">
+                          <node concept="1pGfFk" id="BItIAVdT96" role="2ShVmc">
+                            <ref role="37wK5l" node="4zFXTqpFMGR" resolve="VariableWrapper" />
+                            <node concept="37vLTw" id="BItIAVdT97" role="37wK5m">
+                              <ref role="3cqZAo" node="BItIAVcmnJ" resolve="variable" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3fqX7Q" id="3X496gkjQt8" role="3clFbw">
+                  <node concept="37vLTw" id="3X496gkjQIe" role="3fr31v">
+                    <ref role="3cqZAo" node="3X496gkjNOL" resolve="omitRemoval" />
                   </node>
                 </node>
               </node>
