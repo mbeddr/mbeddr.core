@@ -8,7 +8,6 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)</dependency>
-    <dependency reexport="false">~_PreferencesModule#com.mbeddr.ext.__spreferences.PlatformTemplates(com.mbeddr.ext.__spreferences.PlatformTemplates)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>bb0ad88b-63cd-45fd-ae27-8662d274cf3c(com.mbeddr.ext.serialization)</usedLanguage>

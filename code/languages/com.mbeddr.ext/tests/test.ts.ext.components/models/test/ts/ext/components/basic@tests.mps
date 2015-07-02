@@ -965,11 +965,6 @@
             <property role="TrG5h" value="aRunnable" />
             <property role="PKdyO" value="true" />
             <node concept="3XIRFW" id="3PT6Z48IM_s" role="2EWMhI">
-              <node concept="1_9egQ" id="3PT6Z48IM_z" role="3XIRFZ">
-                <node concept="EbZIE" id="3PT6Z48IM_$" role="1_9egR">
-                  <ref role="EbZID" node="3PT6Z48IM_x" resolve="x" />
-                </node>
-              </node>
               <node concept="1_9egQ" id="3PT6Z48IM_I" role="3XIRFZ">
                 <node concept="2$_UoH" id="3PT6Z48IM_J" role="1_9egR">
                   <ref role="2$_UoI" node="3PT6Z48IM_C" resolve="r2" />
