@@ -560,9 +560,6 @@
     <node concept="PrWs8" id="13C5RDfAVMR" role="PzmwI">
       <ref role="PrY4T" node="13C5RDfAVMM" resolve="IStackFrameList" />
     </node>
-    <node concept="PrWs8" id="3ELV2aP9BBH" role="PzmwI">
-      <ref role="PrY4T" node="3ELV2aP9B$O" resolve="ICallStack" />
-    </node>
   </node>
   <node concept="PlHQZ" id="13C5RDfAVMM">
     <property role="3GE5qa" value="validation.stack-frames" />
@@ -753,7 +750,7 @@
   </node>
   <node concept="1TIwiD" id="3ELV2aP1ZdU">
     <property role="TrG5h" value="LevelStackDeclaration" />
-    <property role="34LRSv" value="generation-levels" />
+    <property role="34LRSv" value="level stack" />
     <property role="3GE5qa" value="level" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3ELV2aP28nk" role="1TKVEi">
@@ -762,8 +759,16 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3ELV2aP28jy" resolve="LevelDeclaration" />
     </node>
+    <node concept="1TJgyj" id="5Wc0QVxnuZP" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="extends" />
+      <ref role="20lvS9" node="5Wc0QVxnu$I" resolve="LevelStackReference" />
+    </node>
     <node concept="PrWs8" id="3ELV2aP20x0" role="PzmwI">
       <ref role="PrY4T" node="7Jr7T0w5cWg" resolve="IDebuggerTestDeclaration" />
+    </node>
+    <node concept="PrWs8" id="4MQzLdANYpP" role="PzmwI">
+      <ref role="PrY4T" node="3M3l$fn_bXb" resolve="IValidationConfigurationElement" />
     </node>
   </node>
   <node concept="1TIwiD" id="3ELV2aP28jy">
@@ -782,12 +787,6 @@
   <node concept="PlHQZ" id="3ELV2aP9B$O">
     <property role="3GE5qa" value="level" />
     <property role="TrG5h" value="ICallStack" />
-  </node>
-  <node concept="1TIwiD" id="3ELV2aQBC_Y">
-    <property role="3GE5qa" value="callstack" />
-    <property role="TrG5h" value="ValidateExtendedCallStack" />
-    <property role="34LRSv" value="call stack" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3ELV2aQBCA3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="stackFrames" />
@@ -796,24 +795,37 @@
     </node>
     <node concept="1TJgyj" id="6kCxLkT8ih$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="callstack" />
+      <property role="20kJfa" value="extends" />
       <ref role="20lvS9" node="6kCxLkT8ihX" resolve="CallStackReferencee" />
     </node>
+    <node concept="PrWs8" id="43ZV6u8Zfst" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3ELV2aQBC_Y">
+    <property role="3GE5qa" value="callstack" />
+    <property role="TrG5h" value="CallStackDeclaration" />
+    <property role="34LRSv" value="call stack declaration" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3ELV2aQBC_Z" role="PzmwI">
       <ref role="PrY4T" node="3M3l$fn_bXb" resolve="IValidationConfigurationElement" />
     </node>
     <node concept="PrWs8" id="6kCxLkVL7bp" role="PzmwI">
       <ref role="PrY4T" node="7Jr7T0w5cWg" resolve="IDebuggerTestDeclaration" />
     </node>
+    <node concept="PrWs8" id="5Wc0QVx$fz5" role="PzmwI">
+      <ref role="PrY4T" node="3ELV2aP9B$O" resolve="ICallStack" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3ELV2aQBCA2">
     <property role="3GE5qa" value="stackframe" />
-    <property role="TrG5h" value="StackFrameWithReference" />
+    <property role="TrG5h" value="ExtendedStackFrame" />
+    <property role="34LRSv" value="extended stack frame" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3ELV2aQBEAn" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20lbJX" value="0..1" />
-      <property role="20kJfa" value="stackFrame" />
+      <property role="20kJfa" value="origin" />
       <ref role="20lvS9" node="4UpzItKmJc" resolve="IStackFrame" />
     </node>
     <node concept="PrWs8" id="4UpzItLj4t" role="PzmwI">
@@ -823,6 +835,7 @@
   <node concept="1TIwiD" id="6kCxLkQW1at">
     <property role="3GE5qa" value="stackframe" />
     <property role="TrG5h" value="StackFrameDeclaration" />
+    <property role="34LRSv" value="stack frame declaration" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4UpzItLCfK" role="PzmwI">
       <ref role="PrY4T" node="4UpzItKmJc" resolve="IStackFrame" />
@@ -834,9 +847,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6kCxLkT8ii8" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="callStack" />
+      <property role="20kJfa" value="declaration" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3ELV2aQBC_Y" resolve="ValidateExtendedCallStack" />
+      <ref role="20lvS9" node="3ELV2aP9B$O" resolve="ICallStack" />
     </node>
   </node>
   <node concept="1TIwiD" id="6kCxLkUiXJy">
@@ -870,7 +883,7 @@
   </node>
   <node concept="1TIwiD" id="6kCxLkUWtGn">
     <property role="TrG5h" value="AnyStackFrameName" />
-    <property role="34LRSv" value="&lt;any stack frame&gt;" />
+    <property role="34LRSv" value="&lt;any stack frame name&gt;" />
     <property role="3GE5qa" value="stackframe" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6kCxLkV1bya" role="PzmwI">
@@ -912,6 +925,31 @@
   <node concept="PlHQZ" id="4UpzIuJLhy">
     <property role="TrG5h" value="IExtendedWatchables" />
     <property role="3GE5qa" value="watchables" />
+  </node>
+  <node concept="1TIwiD" id="5Wc0QVxnu$I">
+    <property role="3GE5qa" value="level" />
+    <property role="TrG5h" value="LevelStackReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5Wc0QVxnu_7" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="declaration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3ELV2aP1ZdU" resolve="LevelStackDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Wc0QVxwIR7">
+    <property role="3GE5qa" value="level" />
+    <property role="TrG5h" value="ExtendedCallStack" />
+    <property role="34LRSv" value="extended call stack" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="43ZV6u9gz4d" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="origin" />
+      <ref role="20lvS9" node="3ELV2aP9B$O" resolve="ICallStack" />
+    </node>
+    <node concept="PrWs8" id="5Wc0QVx$fzd" role="PzmwI">
+      <ref role="PrY4T" node="3ELV2aP9B$O" resolve="ICallStack" />
+    </node>
   </node>
 </model>
 
