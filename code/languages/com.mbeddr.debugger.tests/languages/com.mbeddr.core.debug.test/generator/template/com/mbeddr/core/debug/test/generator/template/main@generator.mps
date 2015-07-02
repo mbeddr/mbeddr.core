@@ -445,6 +445,7 @@
       <concept id="1240217271293" name="jetbrains.mps.baseLanguage.collections.structure.LinkedHashSetCreator" flags="nn" index="32HrFt" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="1175845471038" name="jetbrains.mps.baseLanguage.collections.structure.ReverseOperation" flags="nn" index="35Qw8J" />
       <concept id="1167380149909" name="jetbrains.mps.baseLanguage.collections.structure.RemoveElementOperation" flags="nn" index="3dhRuq" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
@@ -1264,11 +1265,14 @@
                     <node concept="3clFbF" id="4MQzLdAOcNs" role="3cqZAp">
                       <node concept="2OqwBi" id="4MQzLdAU_jh" role="3clFbG">
                         <node concept="2OqwBi" id="4MQzLdAOe6$" role="2Oq$k0">
-                          <node concept="2OqwBi" id="4MQzLdAOcR4" role="2Oq$k0">
-                            <node concept="30H73N" id="4MQzLdAOcNr" role="2Oq$k0" />
-                            <node concept="3Tsc0h" id="4MQzLdAOdb0" role="2OqNvi">
-                              <ref role="3TtcxE" to="rpmx:3ELV2aP28nk" />
+                          <node concept="2OqwBi" id="3uCwkM8W$ke" role="2Oq$k0">
+                            <node concept="2OqwBi" id="4MQzLdAOcR4" role="2Oq$k0">
+                              <node concept="30H73N" id="4MQzLdAOcNr" role="2Oq$k0" />
+                              <node concept="3Tsc0h" id="4MQzLdAOdb0" role="2OqNvi">
+                                <ref role="3TtcxE" to="rpmx:3ELV2aP28nk" />
+                              </node>
                             </node>
+                            <node concept="35Qw8J" id="3uCwkM8WBNw" role="2OqNvi" />
                           </node>
                           <node concept="1uHKPH" id="4MQzLdAOfss" role="2OqNvi" />
                         </node>
@@ -1317,7 +1321,7 @@
                 <node concept="2Xjw5R" id="1q1yZ9Qkz_x" role="2OqNvi">
                   <node concept="1xMEDy" id="1q1yZ9Qkz_z" role="1xVPHs">
                     <node concept="chp4Y" id="1q1yZ9QkA5f" role="ri$Ld">
-                      <ref role="cht4Q" to="rpmx:3ELV2aQBC_Y" resolve="CallStack" />
+                      <ref role="cht4Q" to="rpmx:3ELV2aQBC_Y" resolve="CallStackDeclaration" />
                     </node>
                   </node>
                 </node>
@@ -2463,7 +2467,7 @@
                 <node concept="2Xjw5R" id="1q1yZ9QkC$2" role="2OqNvi">
                   <node concept="1xMEDy" id="1q1yZ9QkC$3" role="1xVPHs">
                     <node concept="chp4Y" id="1q1yZ9QkC$4" role="ri$Ld">
-                      <ref role="cht4Q" to="rpmx:3ELV2aQBC_Y" resolve="CallStack" />
+                      <ref role="cht4Q" to="rpmx:3ELV2aQBC_Y" resolve="CallStackDeclaration" />
                     </node>
                   </node>
                 </node>
@@ -4663,7 +4667,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="7EgG63O4BU0" role="3acgRq">
-      <ref role="30HIoZ" to="rpmx:3ELV2aQBC_Y" resolve="CallStack" />
+      <ref role="30HIoZ" to="rpmx:3ELV2aQBC_Y" resolve="CallStackDeclaration" />
       <node concept="1Koe21" id="1CyAFZ6KkJl" role="1lVwrX">
         <node concept="312cEu" id="1CyAFZ6KkJ_" role="1Koe22">
           <property role="2bfB8j" value="true" />
