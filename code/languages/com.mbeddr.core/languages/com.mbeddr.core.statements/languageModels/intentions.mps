@@ -467,18 +467,6 @@
         </node>
       </node>
     </node>
-    <node concept="2SaL7w" id="41KMvfcgml0" role="2ZfVeh">
-      <node concept="3clFbS" id="41KMvfcgml1" role="2VODD2">
-        <node concept="3clFbF" id="41KMvfcgml2" role="3cqZAp">
-          <node concept="2OqwBi" id="41KMvfcgml4" role="3clFbG">
-            <node concept="2Sf5sV" id="41KMvfcgml3" role="2Oq$k0" />
-            <node concept="2qgKlT" id="41KMvfcgml8" role="2OqNvi">
-              <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1SWQZ3" id="3TftwIKIH46" role="lGtFl">
       <property role="1SWRpm" value="STMT" />
     </node>
