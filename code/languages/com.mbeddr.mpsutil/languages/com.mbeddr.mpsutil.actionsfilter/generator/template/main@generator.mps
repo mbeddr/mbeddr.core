@@ -15,7 +15,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tgbt" ref="r:c70ee934-afb1-4c02-b6a9-1c4d1908a792(jetbrains.mps.lang.plugin.standalone.structure)" />
     <import index="ykkq" ref="r:7171fd48-62d6-4c67-ab22-d7d6b8fa4653(com.mbeddr.mpsutil.actionsfilter.runtime)" />
-    <import index="8d2e" ref="r:dd9b3e1e-772c-44cd-9c3c-bb518df9e6a4(de.slisson.mps.rcp.structure)" implicit="true" />
     <import index="au0v" ref="r:ae24f9b4-2210-4864-8fbf-79fb5fb02754(com.mbeddr.mpsutil.actionsfilter.structure)" implicit="true" />
   </imports>
   <registry>
@@ -332,8 +331,8 @@
                           <node concept="3clFbF" id="1_Ri$6xybnO" role="3cqZAp">
                             <node concept="2OqwBi" id="1_Ri$6xybsg" role="3clFbG">
                               <node concept="30H73N" id="1_Ri$6xybnN" role="2Oq$k0" />
-                              <node concept="3TrcHB" id="1_Ri$6xycmS" role="2OqNvi">
-                                <ref role="3TsBF5" to="8d2e:7LkwBl9EdEb" resolve="actionId" />
+                              <node concept="3TrcHB" id="6ySuXqN$7BO" role="2OqNvi">
+                                <ref role="3TsBF5" to="au0v:5FJiYrlIpAw" resolve="actionId" />
                               </node>
                             </node>
                           </node>
