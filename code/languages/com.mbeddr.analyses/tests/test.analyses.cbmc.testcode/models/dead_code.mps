@@ -65,6 +65,9 @@
       <concept id="4160512478126213860" name="com.mbeddr.analyses.cbmc.core.structure.DeadCodeAnalysis" flags="ng" index="fXxrE" />
     </language>
     <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
+      <concept id="4355827153833266" name="com.mbeddr.analyses.cbmc.structure.AnalysisConfigItem" flags="ng" index="aeBiC">
+        <reference id="8772310394718172126" name="config" index="3L6j8d" />
+      </concept>
       <concept id="8327535879610131181" name="com.mbeddr.analyses.cbmc.structure.ICbmcSettings" flags="ng" index="2lUzGJ">
         <property id="348741627183644680" name="hasLocalArchitectureSettings" index="22uFEx" />
         <property id="8327535879610783176" name="timeoutInSeconds" index="2l50Ka" />
@@ -170,6 +173,9 @@
     </node>
     <node concept="2Q9Fgs" id="3AX70SQwh7D" role="2Q9xDr">
       <node concept="2Q9FjX" id="3AX70SQwh7E" role="2Q9FjI" />
+    </node>
+    <node concept="aeBiC" id="fupCaz7kp" role="2Q9xDr">
+      <ref role="3L6j8d" node="3AX70SQwlgR" resolve="config" />
     </node>
     <node concept="29Nb31" id="3AX70SQwl79" role="2ePNbc">
       <property role="TrG5h" value="lib" />

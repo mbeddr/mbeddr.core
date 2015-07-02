@@ -7000,6 +7000,12 @@
         <node concept="1E0d5M" id="30lSxX0A2wt" role="1E1XAP">
           <ref role="1E0d5P" node="6BM8NjXiJFj" resolve="com.mbeddr.analyses.cbmc.core.rt" />
         </node>
+        <node concept="1SiIV0" id="1Rbs9a5cGrA" role="3bR37C">
+          <node concept="3bR9La" id="1Rbs9a5cGrB" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7DvJ5MZSVor" role="2G$12L">
         <property role="BnDLt" value="true" />

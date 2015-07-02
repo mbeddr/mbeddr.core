@@ -107,7 +107,12 @@
           </lesser-priority-mapping>
         </mapping-priority-rule>
         <mapping-priority-rule kind="strictly_before">
-          <greater-priority-mapping />
+          <greater-priority-mapping>
+            <generator generatorUID="714c68b8-d70a-44a6-b267-c8f74accb1a7(com.mbeddr.analyses.acsl.cbmc.gen#1156681608091029189)" />
+            <external-mapping>
+              <all-local-mappings />
+            </external-mapping>
+          </greater-priority-mapping>
           <lesser-priority-mapping>
             <generator generatorUID="4b49310d-fa59-42cd-b15d-726d09c0b09f(com.mbeddr.analyses.acsl#3793213301909614892)" />
             <external-mapping>
