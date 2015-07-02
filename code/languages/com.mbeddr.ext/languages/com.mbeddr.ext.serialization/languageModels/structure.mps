@@ -120,7 +120,7 @@
     <node concept="1TJgyj" id="7op4RkOnym$" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="handler" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="7op4RkOgS$h" resolve="SerializationHandler" />
     </node>
     <node concept="PrWs8" id="1LleiTP$YtH" role="PzmwI">

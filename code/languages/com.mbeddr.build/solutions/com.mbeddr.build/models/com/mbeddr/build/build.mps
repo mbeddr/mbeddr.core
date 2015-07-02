@@ -5243,6 +5243,12 @@
             <ref role="1Busuk" node="7uZw0yZ43JM" resolve="com.mbeddr.core.statements" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5xs4Xt4CR$0" role="3bR37C">
+          <node concept="3bR9La" id="5xs4Xt4CR$1" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7eF9rfAnuiR" role="3989C9">
