@@ -223,6 +223,9 @@
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
+      </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -530,6 +533,18 @@
       </node>
       <node concept="3Tm1VV" id="5YGS28LR8$j" role="1B3o_S" />
       <node concept="3clFbS" id="5YGS28LR8$k" role="3clF47" />
+    </node>
+    <node concept="3clFb_" id="7EgG63O33tY" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getCallStack" />
+      <node concept="3clFbS" id="7EgG63O33u1" role="3clF47" />
+      <node concept="3Tm1VV" id="7EgG63O33u2" role="1B3o_S" />
+      <node concept="_YKpA" id="7EgG63O33mP" role="3clF45">
+        <node concept="3uibUv" id="7EgG63O33tT" role="_ZDj9">
+          <ref role="3uigEE" to="pry4:3SnNvqCaJt9" resolve="IStackFrame" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="3HP615" id="30gDo8BIaMC">
@@ -4285,6 +4300,34 @@
             </node>
             <node concept="liA8E" id="5YGS28LRgdj" role="2OqNvi">
               <ref role="37wK5l" to="pry4:3SnNvqCaJtv" resolve="getVisibleWatchables" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="7EgG63O3475" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getCallStack" />
+      <node concept="3Tm1VV" id="7EgG63O3477" role="1B3o_S" />
+      <node concept="_YKpA" id="7EgG63O3478" role="3clF45">
+        <node concept="3uibUv" id="7EgG63O3479" role="_ZDj9">
+          <ref role="3uigEE" to="pry4:3SnNvqCaJt9" resolve="IStackFrame" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="7EgG63O347a" role="3clF47">
+        <node concept="3clFbF" id="7EgG63O34$E" role="3cqZAp">
+          <node concept="2OqwBi" id="7EgG63O34$G" role="3clFbG">
+            <node concept="2OqwBi" id="7EgG63O34$H" role="2Oq$k0">
+              <node concept="2N2G$s" id="7EgG63O34$I" role="2Oq$k0">
+                <ref role="3cqZAo" node="6MI7HAglBZB" resolve="programStateManager" />
+              </node>
+              <node concept="liA8E" id="7EgG63O34$J" role="2OqNvi">
+                <ref role="37wK5l" to="x30c:6MI7HAgl_fy" resolve="getProgramState" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7EgG63O34$K" role="2OqNvi">
+              <ref role="37wK5l" to="pry4:3SnNvqCaJft" resolve="getFrames" />
             </node>
           </node>
         </node>

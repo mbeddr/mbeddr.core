@@ -1314,7 +1314,7 @@
                 </node>
               </node>
               <node concept="Jncv_" id="M7_V6u_f1X" role="3cqZAp">
-                <ref role="JncvD" to="x27k:5_l8w1EmTvx" resolve="Function" />
+                <ref role="JncvD" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
                 <node concept="2OqwBi" id="M7_V6u_f1Y" role="JncvB">
                   <node concept="37vLTw" id="M7_V6u_f1Z" role="2Oq$k0">
                     <ref role="3cqZAo" to="tzyt:7F8$WoW31Wz" resolve="config" />
@@ -2023,7 +2023,7 @@
       <node concept="37vLTG" id="5ZEsW90jU7d" role="3clF46">
         <property role="TrG5h" value="fun" />
         <node concept="3Tqbb2" id="5ZEsW90jU7c" role="1tU5fm">
-          <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
+          <ref role="ehGHo" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
         </node>
       </node>
     </node>

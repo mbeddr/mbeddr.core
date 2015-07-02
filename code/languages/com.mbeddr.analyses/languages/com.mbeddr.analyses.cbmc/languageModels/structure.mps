@@ -10,8 +10,8 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -521,6 +521,22 @@
     <ref role="1TJDcQ" to="x27k:5_l8w1EmTvx" resolve="Function" />
     <node concept="PrWs8" id="7DvJ5MZ1aFM" role="PzmwI">
       <ref role="PrY4T" node="7DvJ5MZ1ag1" resolve="IHarnessLike" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="fupCadgOM">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="AnalysisConfigItem" />
+    <property role="34LRSv" value="analysis configuration item" />
+    <property role="R4oN_" value="pointer to the analysis configuration" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7AXwte8Dbfu" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="config" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
+    </node>
+    <node concept="PrWs8" id="fupCadh9n" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:7P$_wJpwSfc" resolve="IConfigurationItemWithImport" />
     </node>
   </node>
 </model>

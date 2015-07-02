@@ -192,6 +192,9 @@
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
+      <concept id="8867272038842303611" name="com.mbeddr.core.debug.test.structure.DebuggerTestcaseReference" flags="ng" index="UZuib">
+        <reference id="8867272038842351965" name="testCase" index="UZi6H" />
+      </concept>
       <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
@@ -217,7 +220,7 @@
       </concept>
       <concept id="105850086902839305" name="com.mbeddr.core.debug.test.structure.DebuggerTestcase" flags="ng" index="3scrou">
         <property id="105850086903217241" name="abstract" index="3sdR9e" />
-        <reference id="105850086902839309" name="extendedTest" index="3scroq" />
+        <child id="8867272038842435497" name="extends" index="UYYtp" />
         <child id="105850086903379490" name="stepping" index="3savwP" />
         <child id="105850086902839308" name="suspension" index="3scror" />
         <child id="4360423713604451010" name="validation" index="3F5AM1" />
@@ -718,7 +721,6 @@
     <node concept="3sgmnF" id="2916lTL0uoP" role="1zJi$$" />
     <node concept="3scrou" id="2916lTL0tLn" role="1zJi$$">
       <property role="TrG5h" value="stepOverSMInit" />
-      <ref role="3scroq" node="2916lTL0uoM" resolve="steppingSMInit" />
       <node concept="3cqZAl" id="2916lTL0tLo" role="3clF45" />
       <node concept="3clFbS" id="2916lTL0tLp" role="3clF47" />
       <node concept="3savIG" id="2916lTL0uo_" role="3savwP">
@@ -726,17 +728,22 @@
           <property role="2qnp9" value="1" />
         </node>
       </node>
+      <node concept="UZuib" id="7GeSf1268_t" role="UYYtp">
+        <ref role="UZi6H" node="2916lTL0uoM" resolve="steppingSMInit" />
+      </node>
     </node>
     <node concept="3sgmnF" id="2916lTL0up2" role="1zJi$$" />
     <node concept="3scrou" id="2916lTL0uoV" role="1zJi$$">
       <property role="TrG5h" value="stepIntoSMInit" />
-      <ref role="3scroq" node="2916lTL0uoM" resolve="steppingSMInit" />
       <node concept="3cqZAl" id="2916lTL0uoW" role="3clF45" />
       <node concept="3clFbS" id="2916lTL0uoX" role="3clF47" />
       <node concept="3savIG" id="2916lTL0uoY" role="3savwP">
         <node concept="2$4FY8" id="2916lTL0up1" role="3savID">
           <property role="2qnp9" value="1" />
         </node>
+      </node>
+      <node concept="UZuib" id="7GeSf1268_D" role="UYYtp">
+        <ref role="UZi6H" node="2916lTL0uoM" resolve="steppingSMInit" />
       </node>
     </node>
     <node concept="3sgmnF" id="2916lTL0tTC" role="1zJi$$" />
@@ -789,7 +796,6 @@
     <node concept="3sgmnF" id="2916lTL0w9x" role="1zJi$$" />
     <node concept="3scrou" id="2916lTL0w9K" role="1zJi$$">
       <property role="TrG5h" value="stepOverSMHasFired" />
-      <ref role="3scroq" node="2916lTL0w9p" resolve="steppingOnSMHasFired" />
       <node concept="3cqZAl" id="2916lTL0w9L" role="3clF45" />
       <node concept="3clFbS" id="2916lTL0w9M" role="3clF47" />
       <node concept="3savIG" id="2916lTL0w9N" role="3savwP">
@@ -797,17 +803,22 @@
           <property role="2qnp9" value="1" />
         </node>
       </node>
+      <node concept="UZuib" id="7GeSf1268_J" role="UYYtp">
+        <ref role="UZi6H" node="2916lTL0w9p" resolve="steppingOnSMHasFired" />
+      </node>
     </node>
     <node concept="3sgmnF" id="2916lTL0w9z" role="1zJi$$" />
     <node concept="3scrou" id="2916lTL0w9P" role="1zJi$$">
       <property role="TrG5h" value="stepIntoSMHasFired" />
-      <ref role="3scroq" node="2916lTL0w9p" resolve="steppingOnSMHasFired" />
       <node concept="3cqZAl" id="2916lTL0w9Q" role="3clF45" />
       <node concept="3clFbS" id="2916lTL0w9R" role="3clF47" />
       <node concept="3savIG" id="2916lTL0w9S" role="3savwP">
         <node concept="2$4FY8" id="2916lTL0w9U" role="3savID">
           <property role="2qnp9" value="1" />
         </node>
+      </node>
+      <node concept="UZuib" id="7GeSf1268_z" role="UYYtp">
+        <ref role="UZi6H" node="2916lTL0w9p" resolve="steppingOnSMHasFired" />
       </node>
     </node>
     <node concept="3sgmnF" id="2916lTL0w9$" role="1zJi$$" />
@@ -837,7 +848,6 @@
     <node concept="3sgmnF" id="2916lTL0w9_" role="1zJi$$" />
     <node concept="3scrou" id="2916lTL0w9W" role="1zJi$$">
       <property role="TrG5h" value="stepOverSMSetState" />
-      <ref role="3scroq" node="2916lTL0w9A" resolve="steppingOnSMSetState" />
       <node concept="3cqZAl" id="2916lTL0w9X" role="3clF45" />
       <node concept="3clFbS" id="2916lTL0w9Y" role="3clF47" />
       <node concept="3savIG" id="2916lTL0w9Z" role="3savwP">
@@ -845,17 +855,22 @@
           <property role="2qnp9" value="1" />
         </node>
       </node>
+      <node concept="UZuib" id="7GeSf1268ux" role="UYYtp">
+        <ref role="UZi6H" node="2916lTL0w9A" resolve="steppingOnSMSetState" />
+      </node>
     </node>
     <node concept="3sgmnF" id="2916lTL0wa1" role="1zJi$$" />
     <node concept="3scrou" id="2916lTL0wa2" role="1zJi$$">
       <property role="TrG5h" value="stepIntoSMSetState" />
-      <ref role="3scroq" node="2916lTL0w9A" resolve="steppingOnSMSetState" />
       <node concept="3cqZAl" id="2916lTL0wa3" role="3clF45" />
       <node concept="3clFbS" id="2916lTL0wa4" role="3clF47" />
       <node concept="3savIG" id="2916lTL0wa5" role="3savwP">
         <node concept="2$4FY8" id="2916lTL0wa6" role="3savID">
           <property role="2qnp9" value="1" />
         </node>
+      </node>
+      <node concept="UZuib" id="7GeSf1268_w" role="UYYtp">
+        <ref role="UZi6H" node="2916lTL0w9A" resolve="steppingOnSMSetState" />
       </node>
     </node>
     <node concept="3sgmnF" id="2916lTL13HU" role="1zJi$$" />

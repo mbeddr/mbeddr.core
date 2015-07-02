@@ -4,6 +4,7 @@
   <languages>
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)" />
+    <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   </languages>
   <imports />
   <registry>
@@ -36,6 +37,7 @@
     </language>
     <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
       <concept id="8327535879610131181" name="com.mbeddr.analyses.cbmc.structure.ICbmcSettings" flags="ng" index="2lUzGJ">
+        <property id="348741627183644680" name="hasLocalArchitectureSettings" index="22uFEx" />
         <property id="8327535879610783176" name="timeoutInSeconds" index="2l50Ka" />
         <property id="8327535879610783188" name="timeoutForSingleAnalysis" index="2l50Km" />
         <property id="8327535879610783118" name="hasLocalTimeout" index="2l50Lc" />
@@ -51,6 +53,11 @@
       <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
       <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
         <reference id="6472990431939799908" name="entryPoint" index="3V$Cn$" />
+      </concept>
+    </language>
+    <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
+      <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
+        <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
       </concept>
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
@@ -123,8 +130,61 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components">
+      <concept id="6616025724454668918" name="com.mbeddr.ext.components.structure.AdapterInstancePortRef" flags="ng" index="219P8x">
+        <reference id="6616025724454668919" name="instance" index="219P8w" />
+        <reference id="6616025724454668920" name="port" index="219P8J" />
+      </concept>
+      <concept id="5172178961828157634" name="com.mbeddr.ext.components.structure.PortAdapter" flags="ng" index="21gPQu">
+        <child id="6616025724454701213" name="portRef" index="21ad3a" />
+      </concept>
+      <concept id="7780999115923942144" name="com.mbeddr.ext.components.structure.AbstractInstanceConfiguration" flags="ng" index="5Js9S">
+        <child id="7780999115923944213" name="contents" index="5JtDH" />
+      </concept>
+      <concept id="4491876417845649024" name="com.mbeddr.ext.components.structure.InstanceConfiguration" flags="ng" index="2EWCtd" />
+      <concept id="4491876417845649014" name="com.mbeddr.ext.components.structure.ComponentInstance" flags="ng" index="2EWCuV">
+        <reference id="4491876417845649015" name="component" index="2EWCuU" />
+      </concept>
+      <concept id="4491876417845649011" name="com.mbeddr.ext.components.structure.AtomicComponent" flags="ng" index="2EWCuY" />
+      <concept id="4491876417845641677" name="com.mbeddr.ext.components.structure.OperationTrigger" flags="ng" index="2EWDw0" />
+      <concept id="4491876417845641670" name="com.mbeddr.ext.components.structure.Runnable" flags="ng" index="2EWDwb">
+        <child id="4491876417845643892" name="trigger" index="2EWDeT" />
+        <child id="4491876417845689763" name="body" index="2EWMhI" />
+      </concept>
+      <concept id="4491876417845628840" name="com.mbeddr.ext.components.structure.ProvidedPort" flags="ng" index="2EWHp_" />
+      <concept id="4491876417845683828" name="com.mbeddr.ext.components.structure.OperationParameter" flags="ng" index="2EWNYT" />
+      <concept id="4491876417845484930" name="com.mbeddr.ext.components.structure.Port" flags="ng" index="2EX0hf">
+        <reference id="4491876417845484932" name="intf" index="2EX0h9" />
+      </concept>
+      <concept id="4491876417845484924" name="com.mbeddr.ext.components.structure.Operation" flags="ng" index="2EX0iL" />
+      <concept id="4491876417845484922" name="com.mbeddr.ext.components.structure.ClientServerInterface" flags="ng" index="2EX0iR">
+        <child id="4491876417845484926" name="contents" index="2EX0iN" />
+      </concept>
+      <concept id="4491876417845474761" name="com.mbeddr.ext.components.structure.Component" flags="ng" index="2EX6K4">
+        <child id="6041318036221669720" name="contents" index="2RW2fA" />
+      </concept>
+      <concept id="8105003328815071749" name="com.mbeddr.ext.components.structure.InterfaceOperationCallExpr" flags="ng" index="2H6Oeg">
+        <reference id="8105003328815071752" name="operation" index="2H6Oet" />
+        <child id="8105003328815091213" name="actuals" index="2H6KYo" />
+      </concept>
+      <concept id="8105003328815039001" name="com.mbeddr.ext.components.structure.PortAdapterRefExpr" flags="ng" index="2H6Wec">
+        <reference id="8105003328815039002" name="portAdater" index="2H6Wef" />
+      </concept>
+      <concept id="466603768608410221" name="com.mbeddr.ext.components.structure.PortAdapterOpCallExpr" flags="ng" index="30IJZa" />
+      <concept id="2103658896110121032" name="com.mbeddr.ext.components.structure.ComponentsConfigItem" flags="ng" index="3i2$bm">
+        <child id="2103658896110238743" name="genStrategy" index="3i30U9" />
+      </concept>
+      <concept id="8515777736166878876" name="com.mbeddr.ext.components.structure.EmptyComponentContent" flags="ng" index="3Khz0B" />
+      <concept id="4514118643321588318" name="com.mbeddr.ext.components.structure.IOperationTriggerLike" flags="ng" index="1ZwTiz">
+        <reference id="4514118643321619583" name="calledOperation" index="1ZwxE2" />
+        <reference id="4514118643321592184" name="providedPort" index="1ZwSu5" />
+      </concept>
+    </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="8463282783691618426" name="com.mbeddr.core.expressions.structure.Int8tType" flags="ng" index="26Vqqz" />
+      <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
+        <child id="7254843406768839760" name="expression" index="1_9fRO" />
+      </concept>
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
       </concept>
@@ -151,10 +211,18 @@
     <node concept="2Q9Fgs" id="17FqOSBE007" role="2Q9xDr">
       <node concept="2Q9FjX" id="17FqOSBE008" role="2Q9FjI" />
     </node>
+    <node concept="3i2$bm" id="1_cCL2G0Bbz" role="2Q9xDr">
+      <node concept="3i3YCL" id="1_cCL2G0BbJ" role="3i30U9">
+        <property role="3Ewwow" value="true" />
+      </node>
+    </node>
     <node concept="29Nb31" id="17FqOSBE00d" role="2ePNbc">
       <property role="TrG5h" value="lib" />
       <node concept="2v9HqM" id="17FqOSBII_e" role="2eOfOg">
         <ref role="2v9HqP" node="17FqOSBE00C" resolve="simple_dectabs" />
+      </node>
+      <node concept="2v9HqM" id="1_cCL2G0Az8" role="2eOfOg">
+        <ref role="2v9HqP" node="1_cCL2G0pcw" resolve="dectabs_in_components" />
       </node>
     </node>
   </node>
@@ -428,6 +496,9 @@
     <node concept="3GEVxB" id="17FqOSBIJBM" role="3W6d8T">
       <ref role="3GEb4d" node="17FqOSBE00C" resolve="simple_dectabs" />
     </node>
+    <node concept="3GEVxB" id="1_cCL2G0AyX" role="3W6d8T">
+      <ref role="3GEb4d" node="1_cCL2G0pcw" resolve="dectabs_in_components" />
+    </node>
     <node concept="1nvAUC" id="17FqOSBIJBI" role="3V$2$K">
       <property role="2lUGeZ" value="true" />
       <property role="2lUGdP" value="false" />
@@ -454,7 +525,203 @@
       <ref role="3V$Cn$" node="3oJxBI$ZAgm" resolve="twoDecTabs" />
       <ref role="1nvAUD" node="3oJxBI$ZAgm" resolve="twoDecTabs" />
     </node>
+    <node concept="1nvAUC" id="1_cCL2G0AxZ" role="3V$2$K">
+      <property role="2lelRm" value="false" />
+      <property role="2lUGe1" value="true" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <ref role="3V$Cn$" node="1_cCL2G0AeG" resolve="signumComputerProxy" />
+      <ref role="1nvAUD" node="1_cCL2G0z9q" resolve="signumComputer_signum" />
+    </node>
   </node>
   <node concept="29QVxn" id="4$9c1ZwB$1d" />
+  <node concept="N3F5e" id="1_cCL2G0pcw">
+    <property role="TrG5h" value="dectabs_in_components" />
+    <node concept="2NXPZ9" id="1_cCL2G0ury" role="N3F5h">
+      <property role="TrG5h" value="empty_1435127168137_8" />
+    </node>
+    <node concept="2EX0iR" id="1_cCL2G0xDJ" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="SignumComputer" />
+      <node concept="2EX0iL" id="1_cCL2G0yaS" role="2EX0iN">
+        <property role="TrG5h" value="signum" />
+        <node concept="26Vqqz" id="1_cCL2G0yaR" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="2EWNYT" id="1_cCL2G0ybd" role="1UOdpc">
+          <property role="TrG5h" value="x" />
+          <node concept="26Vqqz" id="1_cCL2G0ybc" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="2EWNYT" id="1_cCL2G0ybL" role="1UOdpc">
+          <property role="TrG5h" value="y" />
+          <node concept="26Vqqz" id="1_cCL2G0ybJ" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="1_cCL2G0wBj" role="N3F5h">
+      <property role="TrG5h" value="empty_1435127206757_11" />
+    </node>
+    <node concept="2EWCuY" id="1_cCL2G0w6b" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="SignumComputerImpl" />
+      <node concept="2EWHp_" id="1_cCL2G0yca" role="2RW2fA">
+        <property role="TrG5h" value="signumComputer" />
+        <ref role="2EX0h9" node="1_cCL2G0xDJ" resolve="SignumComputer" />
+      </node>
+      <node concept="3Khz0B" id="1_cCL2G0ycd" role="2RW2fA" />
+      <node concept="2EWDwb" id="1_cCL2G0z9q" role="2RW2fA">
+        <property role="TrG5h" value="signumComputer_signum" />
+        <node concept="3XIRFW" id="1_cCL2G0z9r" role="2EWMhI">
+          <node concept="2BFjQ_" id="1_cCL2G0ze1" role="3XIRFZ">
+            <node concept="eGNQo" id="1_cCL2G0ze2" role="2BFjQA">
+              <node concept="3Tl9Jn" id="1_cCL2G0ze3" role="eGNQr">
+                <node concept="3TlMh9" id="1_cCL2G0ze4" role="3TlMhJ">
+                  <property role="2hmy$m" value="0" />
+                </node>
+                <node concept="3ZUYvv" id="1_cCL2G0ze5" role="3TlMhI">
+                  <ref role="3ZUYvu" node="1_cCL2G0z9v" resolve="x" />
+                </node>
+              </node>
+              <node concept="3Tl9Jr" id="1_cCL2G0ze6" role="eGNQr">
+                <node concept="3TlMh9" id="1_cCL2G0ze7" role="3TlMhJ">
+                  <property role="2hmy$m" value="0" />
+                </node>
+                <node concept="3ZUYvv" id="1_cCL2G0ze8" role="3TlMhI">
+                  <ref role="3ZUYvu" node="1_cCL2G0z9v" resolve="x" />
+                </node>
+              </node>
+              <node concept="3Tl9Jl" id="1_cCL2G0ze9" role="eGNQq">
+                <node concept="3TlMh9" id="1_cCL2G0zea" role="3TlMhJ">
+                  <property role="2hmy$m" value="0" />
+                </node>
+                <node concept="3ZUYvv" id="1_cCL2G0zeb" role="3TlMhI">
+                  <ref role="3ZUYvu" node="1_cCL2G0z9x" resolve="y" />
+                </node>
+              </node>
+              <node concept="3Tl9Jp" id="1_cCL2G0zec" role="eGNQq">
+                <node concept="3TlMh9" id="1_cCL2G0zed" role="3TlMhJ">
+                  <property role="2hmy$m" value="0" />
+                </node>
+                <node concept="3ZUYvv" id="1_cCL2G0zee" role="3TlMhI">
+                  <ref role="3ZUYvu" node="1_cCL2G0z9x" resolve="y" />
+                </node>
+              </node>
+              <node concept="3TlMh9" id="1_cCL2G0zef" role="eGNQ_">
+                <property role="2hmy$m" value="1" />
+              </node>
+              <node concept="3TlMh9" id="1_cCL2G0zeg" role="eGNQ_">
+                <property role="2hmy$m" value="-1" />
+              </node>
+              <node concept="3TlMh9" id="1_cCL2G0zeh" role="eGNQ_">
+                <property role="2hmy$m" value="-1" />
+              </node>
+              <node concept="3TlMh9" id="1_cCL2G0zei" role="eGNQ_">
+                <property role="2hmy$m" value="1" />
+              </node>
+              <node concept="3TlMh9" id="1_cCL2G0zej" role="34rlYt">
+                <property role="2hmy$m" value="0" />
+              </node>
+              <node concept="1nuNDJ" id="1_cCL2G0zek" role="lGtFl" />
+            </node>
+          </node>
+        </node>
+        <node concept="2EWDw0" id="1_cCL2G0z9t" role="2EWDeT">
+          <ref role="1ZwSu5" node="1_cCL2G0yca" resolve="signumComputer" />
+          <ref role="1ZwxE2" node="1_cCL2G0yaS" resolve="signum" />
+        </node>
+        <node concept="26Vqqz" id="1_cCL2G0z9u" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="19RgSI" id="1_cCL2G0z9v" role="1UOdpc">
+          <property role="TrG5h" value="x" />
+          <node concept="26Vqqz" id="1_cCL2G0z9w" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="19RgSI" id="1_cCL2G0z9x" role="1UOdpc">
+          <property role="TrG5h" value="y" />
+          <node concept="26Vqqz" id="1_cCL2G0z9y" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="1_cCL2G0vty" role="N3F5h">
+      <property role="TrG5h" value="empty_1435127168505_10" />
+    </node>
+    <node concept="2EWCtd" id="1_cCL2G0zNI" role="N3F5h">
+      <property role="TrG5h" value="SignumInstance" />
+      <node concept="2EWCuV" id="1_cCL2G0$0x" role="5JtDH">
+        <property role="TrG5h" value="sci" />
+        <ref role="2EWCuU" node="1_cCL2G0w6b" resolve="SignumComputerImpl" />
+      </node>
+      <node concept="21gPQu" id="1_cCL2G0_BH" role="5JtDH">
+        <property role="TrG5h" value="signumComputer" />
+        <node concept="219P8x" id="1_cCL2G0_BI" role="21ad3a">
+          <ref role="219P8w" node="1_cCL2G0$0x" resolve="sci" />
+          <ref role="219P8J" node="1_cCL2G0yca" resolve="signumComputer" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="1_cCL2G0_BQ" role="N3F5h">
+      <property role="TrG5h" value="empty_1435127343564_14" />
+    </node>
+    <node concept="N3Fnx" id="1_cCL2G0AeG" role="N3F5h">
+      <property role="TrG5h" value="signumComputerProxy" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="1_cCL2G0AeI" role="3XIRFX">
+        <node concept="2BFjQ_" id="1_cCL2G0AvX" role="3XIRFZ">
+          <node concept="30IJZa" id="1_cCL2G0As3" role="2BFjQA">
+            <ref role="2H6Oet" node="1_cCL2G0yaS" resolve="signum" />
+            <node concept="2H6Wec" id="1_cCL2G0ArP" role="1_9fRO">
+              <ref role="2H6Wef" node="1_cCL2G0_BH" resolve="signumComputer" />
+            </node>
+            <node concept="3ZUYvv" id="1_cCL2G0Aun" role="2H6KYo">
+              <ref role="3ZUYvu" node="1_cCL2G0Ata" resolve="x" />
+            </node>
+            <node concept="3ZUYvv" id="1_cCL2G0AuC" role="2H6KYo">
+              <ref role="3ZUYvu" node="1_cCL2G0AtW" resolve="y" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="26Vqqz" id="1_cCL2G0Aw6" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="19RgSI" id="1_cCL2G0Ata" role="1UOdpc">
+        <property role="TrG5h" value="x" />
+        <node concept="26Vqqz" id="1_cCL2G0At9" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="1_cCL2G0AtW" role="1UOdpc">
+        <property role="TrG5h" value="y" />
+        <node concept="26Vqqz" id="1_cCL2G0AtU" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
