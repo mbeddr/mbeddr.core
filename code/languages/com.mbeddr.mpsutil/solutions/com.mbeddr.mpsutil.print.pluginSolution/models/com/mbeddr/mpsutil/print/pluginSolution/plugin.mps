@@ -21,6 +21,7 @@
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="1204908117386" name="jetbrains.mps.lang.plugin.structure.Separator" flags="ng" index="2a7GMi" />
       <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
         <child id="1207145201301" name="reference" index="ftvYc" />
       </concept>
@@ -666,6 +667,7 @@
   <node concept="tC5Ba" id="7_KMir46WeQ">
     <property role="TrG5h" value="PrintGroup" />
     <node concept="ftmFs" id="7_KMir46Wj1" role="ftER_">
+      <node concept="2a7GMi" id="1WzkXggN1$M" role="ftvYc" />
       <node concept="tCFHf" id="7_KMir46Wj6" role="ftvYc">
         <ref role="tCJdB" node="1DZCyiI2R2M" resolve="PrintEditorAction" />
       </node>
