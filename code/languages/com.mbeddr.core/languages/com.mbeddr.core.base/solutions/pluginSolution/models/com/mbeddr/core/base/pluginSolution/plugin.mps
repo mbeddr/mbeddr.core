@@ -15953,7 +15953,7 @@
   <node concept="tC5Ba" id="goNQ8fnbtb">
     <property role="TrG5h" value="mbeddrPlatformProjectionModeGroup" />
     <property role="1XlLyE" value="true" />
-    <property role="2f7twF" value="Projection Mode" />
+    <property role="2f7twF" value="Projection" />
     <node concept="ftmFs" id="goNQ8fnbtc" role="ftER_">
       <node concept="10WQ6h" id="goNQ8fnbte" role="ftvYc">
         <property role="TrG5h" value="mbeddrPlatformProjectionModes" />
@@ -19637,9 +19637,6 @@
     </node>
     <node concept="2flH9Z" id="6XvT233DK$G" role="2flH9W">
       <property role="2flH96" value="PasteMultiple" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233DK_2" role="2flH9W">
-      <property role="2flH96" value="OpenFile" />
     </node>
     <node concept="2flH9Z" id="6XvT233DK_e" role="2flH9W">
       <property role="2flH96" value="EditorFix" />
