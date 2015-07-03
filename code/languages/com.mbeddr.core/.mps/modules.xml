@@ -2,7 +2,6 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${mbeddr-platform}/com.mbeddr.build/solutions/com.mbeddr.core.tests.build/com.mbeddr.core.tests.build.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.core/core.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.arrays/arrays.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.base/base.mpl" folder="core" />
@@ -37,7 +36,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.debugger.default/com.mbeddr.core.debugger.default.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.interpreterdebugger.rt/com.mbeddr.core.interpreterdebugger.rt.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.stdlib/com.mbeddr.core.stdlib.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/test.ts.measurements/test.ts.measurements.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/aLibrary/aLibrary.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.uniquenames.sandbox/com.mbeddr.mpsutil.uniquenames.msd" folder="tests.uniquenames" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.uniquenames.sandboxlang/com.mbeddr.mpsutil.uniquenames.sandboxlang.mpl" folder="tests.uniquenames" />
