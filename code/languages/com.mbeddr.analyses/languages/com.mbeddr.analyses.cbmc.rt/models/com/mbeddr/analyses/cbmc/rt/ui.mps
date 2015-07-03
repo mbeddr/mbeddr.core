@@ -8847,9 +8847,7 @@
       <property role="TrG5h" value="useRefinement" />
       <property role="3TUv4t" value="false" />
       <node concept="10P_77" id="3OhBgB4hwPw" role="1tU5fm" />
-      <node concept="3clFbT" id="3OhBgB4hwPx" role="33vP2m">
-        <property role="3clFbU" value="true" />
-      </node>
+      <node concept="3clFbT" id="3OhBgB4hwPx" role="33vP2m" />
     </node>
     <node concept="2tJIrI" id="3OhBgB4hwPB" role="jymVt" />
     <node concept="312cEg" id="3OhBgB4hwPC" role="jymVt">
