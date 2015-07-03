@@ -20326,6 +20326,15 @@
     <node concept="2flH9Z" id="$PirrUJ_7D" role="2flH9W">
       <property role="2flH96" value="VcsGroup" />
     </node>
+    <node concept="2flH9Z" id="1WzkXggN4HN" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.actions.AnalyzeModule_ActionGroup" />
+    </node>
+    <node concept="2flH9Z" id="3DoSIAt302$" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.java.workbench.actions.AnalyzeJavaActions_ActionGroup" />
+    </node>
+    <node concept="2flH9Z" id="3DoSIAt306m" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.java.workbench.actions.AnalyzeClasspath_Action" />
+    </node>
   </node>
   <node concept="2flHaf" id="5re6bl11R$A">
     <property role="TrG5h" value="EverythingActions" />
