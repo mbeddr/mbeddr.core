@@ -105,6 +105,7 @@
     <import index="nu8v" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" />
     <import index="a2je" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.image(JDK/java.awt.image@java_stub)" />
     <import index="k5e6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.imageio(JDK/javax.imageio@java_stub)" />
+    <import index="abz6" ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3/r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.plugin)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -19149,7 +19150,7 @@
   </node>
   <node concept="sE7Ow" id="627_yy3fe66">
     <property role="TrG5h" value="CopyCodeReference" />
-    <property role="2uzpH1" value="Copy Code Reference" />
+    <property role="2uzpH1" value="Copy Code Reference (Doc)" />
     <property role="3GE5qa" value="coderef" />
     <node concept="2S4$dB" id="627_yy3fe6k" role="1NuT2Z">
       <property role="TrG5h" value="selectedNdoe" />
@@ -19191,8 +19192,8 @@
       </node>
     </node>
     <node concept="tT9cl" id="2Y27DzrvF82" role="2f5YQi">
-      <ref role="2f8Tey" node="53G_t0FcvgX" resolve="mbeddrPlatformEditorPopupExtensions" />
-      <ref role="tU$_T" node="53G_t0FcvfX" resolve="mbeddrPlatformEditorPopupGroup" />
+      <ref role="tU$_T" to="abz6:2N1CSrzm3gG" resolve="mbeddrClipboardStuffInEditMenuCopySpecial" />
+      <ref role="2f8Tey" to="abz6:1WzkXggGER5" resolve="moreCopySpecial" />
     </node>
   </node>
   <node concept="sE7Ow" id="4EItucYCCBf">

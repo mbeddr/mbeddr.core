@@ -31,7 +31,6 @@
     <import index="znf8" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/r:139b3778-ac9f-4ca9-a48f-e685c023e800(com.mbeddr.mpsutil.httpsupport.rt/com.mbeddr.mpsutil.httpsupport.rt.model)" />
     <import index="m87u" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#javax.servlet.http(com.mbeddr.mpsutil.httpsupport.rt/javax.servlet.http@java_stub)" />
     <import index="jrbx" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.project(MPS.Platform/jetbrains.mps.project@java_stub)" implicit="true" />
-    <import index="tprs" ref="019b622b-0aef-4dd3-86d0-4eef01f3f6bb/r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide/jetbrains.mps.ide.actions)" implicit="true" />
     <import index="xmho" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#javax.servlet(com.mbeddr.mpsutil.httpsupport.rt/javax.servlet@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -60,6 +59,7 @@
         <reference id="1203092736097" name="modifiedGroup" index="tU$_T" />
       </concept>
       <concept id="1205679047295" name="jetbrains.mps.lang.plugin.structure.ActionParameterDeclaration" flags="ig" index="2S4$dB" />
+      <concept id="1203680534665" name="jetbrains.mps.lang.plugin.structure.GroupAnchor" flags="ng" index="10WQ6h" />
       <concept id="1206092561075" name="jetbrains.mps.lang.plugin.structure.ActionParameterReferenceOperation" flags="nn" index="3gHZIF" />
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
       <concept id="1217252042208" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterDeclaration" flags="ng" index="1DS2jV">
@@ -1465,7 +1465,7 @@
     <node concept="3Tm1VV" id="bBMhoey14T" role="1B3o_S" />
   </node>
   <node concept="tC5Ba" id="2N1CSrzm3gG">
-    <property role="TrG5h" value="clipboardStuffInEditMenuCopySpecial" />
+    <property role="TrG5h" value="mbeddrClipboardStuffInEditMenuCopySpecial" />
     <property role="3GE5qa" value="clipboard" />
     <property role="1XlLyE" value="true" />
     <property role="2f7twF" value="Copy/Paste Special" />
@@ -1484,9 +1484,13 @@
       <node concept="tCFHf" id="2N1CSrzm3gP" role="ftvYc">
         <ref role="tCJdB" node="2N1CSrzm3j_" resolve="copyNodeURLToClipboard" />
       </node>
+      <node concept="10WQ6h" id="1WzkXggGER5" role="ftvYc">
+        <property role="TrG5h" value="moreCopySpecial" />
+      </node>
     </node>
     <node concept="tT9cl" id="2N1CSrzm3gR" role="2f5YQi">
       <ref role="tU$_T" to="ekwn:1xsN4xJX8VI" resolve="EditorPopup" />
+      <ref role="2f8Tey" to="ekwn:1xsN4xJX8VT" resolve="goto" />
     </node>
   </node>
   <node concept="sE7Ow" id="2N1CSrzm3gS">
@@ -2790,20 +2794,6 @@
         </node>
         <node concept="3clFbH" id="7rr3ESJDcF5" role="3cqZAp" />
       </node>
-    </node>
-  </node>
-  <node concept="tC5Ba" id="x1qBl0Rh8">
-    <property role="TrG5h" value="clipboardStuffInEditMenuDirect" />
-    <property role="3GE5qa" value="clipboard" />
-    <property role="2f7twF" value="Copy Special" />
-    <node concept="ftmFs" id="x1qBl0Rh9" role="ftER_">
-      <node concept="tCFHf" id="x1qBl0Rhi" role="ftvYc">
-        <ref role="tCJdB" node="2N1CSrzm3lx" resolve="selectNodeFromClipboardURL" />
-      </node>
-    </node>
-    <node concept="tT9cl" id="x1qBl0Rhj" role="2f5YQi">
-      <ref role="2f8Tey" to="tprs:h$X6qIM" resolve="custom" />
-      <ref role="tU$_T" to="tprs:hyf4Lqj" resolve="Edit" />
     </node>
   </node>
 </model>
