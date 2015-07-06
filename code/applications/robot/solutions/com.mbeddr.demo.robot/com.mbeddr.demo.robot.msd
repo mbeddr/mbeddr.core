@@ -9,6 +9,10 @@
   <dependencies>
     <dependency reexport="false">~_PreferencesModule#com.mbeddr.demo.robot.__spreferences.PlatformTemplates(com.mbeddr.demo.robot.__spreferences.PlatformTemplates)</dependency>
   </dependencies>
+  <usedLanguages>
+    <usedLanguage>3660caeb-9434-4a02-a7a1-ba0bbb2106d1(de.itemis.mbeddr.cimporter)</usedLanguage>
+    <usedLanguage>2068270c-d316-428e-a27b-e9094c3a918c(de.itemis.mbeddr.cimporter.lazy)</usedLanguage>
+  </usedLanguages>
   <usedDevKits>
     <usedDevKit>87468ddd-5b04-4352-a61d-70ff981afab6(com.mbeddr.debugger-testing)</usedDevKit>
     <usedDevKit>8a4402f1-8f1e-44d8-a4f6-f174fa7cf42e(com.mbeddr.cc.reqtrace.c)</usedDevKit>
@@ -24,6 +28,7 @@
     <usedDevKit>2f7ba914-eed9-41bf-b0ae-6633a04a3894(com.mbeddr.statemachinesInComponents)</usedDevKit>
     <usedDevKit>b31efd26-898e-4b0e-b5dc-2d7ced06e7f7(com.mbeddr.cc.variability)</usedDevKit>
     <usedDevKit>74a1428c-a8b1-49f6-8abb-f4008cf591e6(com.mbeddr.analyses.statemachines)</usedDevKit>
+    <usedDevKit>6845f348-7ea5-449c-ae3b-3d600bc3b73d(mbeddr.arduino)</usedDevKit>
   </usedDevKits>
   <languageVersions>
     <language id="5d09074f-babf-4f2b-b78b-e9929af0f3be" fqName="com.mbeddr.analyses.base" version="0" />
@@ -84,6 +89,8 @@
     <language id="c788b046-2019-4656-8b60-8bb9bbb177b5" fqName="com.mbeddr.mpsutil.review" version="0" />
     <language id="7a060fae-09e0-4372-be36-6696d6554c0e" fqName="com.mbeddr.mpsutil.review.annotation" version="0" />
     <language id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" fqName="com.mbeddr.mpsutil.suppresswarning" version="0" />
+    <language id="3660caeb-9434-4a02-a7a1-ba0bbb2106d1" fqName="de.itemis.mbeddr.cimporter" version="0" />
+    <language id="2068270c-d316-428e-a27b-e9094c3a918c" fqName="de.itemis.mbeddr.cimporter.lazy" version="0" />
     <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" fqName="de.itemis.mps.editor.diagram.layout" version="0" />
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" fqName="de.slisson.mps.richtext" version="0" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
@@ -107,6 +114,9 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" fqName="jetbrains.mps.lang.structure" version="0" />
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" fqName="jetbrains.mps.lang.test" version="1" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
+    <language id="3c4c8461-a533-4459-916a-dc0176793b4c" fqName="mbeddr.arduino.core" version="0" />
+    <language id="e562f51e-6403-4857-b773-44632077c67d" fqName="mbeddr.arduino.interrupts" version="0" />
+    <language id="3828799d-97c8-48d0-af8b-39b903457e1e" fqName="mbeddr.arduino.registers" version="0" />
   </languageVersions>
 </solution>
 
