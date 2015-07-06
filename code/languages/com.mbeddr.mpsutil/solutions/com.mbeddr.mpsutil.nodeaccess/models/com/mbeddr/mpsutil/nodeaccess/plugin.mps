@@ -1487,10 +1487,11 @@
       <node concept="10WQ6h" id="1WzkXggGER5" role="ftvYc">
         <property role="TrG5h" value="moreCopySpecial" />
       </node>
+      <node concept="2a7GMi" id="4CkWB8$vANq" role="ftvYc" />
     </node>
     <node concept="tT9cl" id="2N1CSrzm3gR" role="2f5YQi">
       <ref role="tU$_T" to="ekwn:1xsN4xJX8VI" resolve="EditorPopup" />
-      <ref role="2f8Tey" to="ekwn:1xsN4xJX8VT" resolve="goto" />
+      <ref role="2f8Tey" to="ekwn:1xsN4xJX8VR" resolve="folding" />
     </node>
   </node>
   <node concept="sE7Ow" id="2N1CSrzm3gS">
