@@ -7,9 +7,6 @@
     </modelRoot>
   </models>
   <sourcePath />
-  <dependencies>
-    <dependency reexport="false">~_PreferencesModule#com.mbeddr.ext.__spreferences.PlatformTemplates(com.mbeddr.ext.__spreferences.PlatformTemplates)</dependency>
-  </dependencies>
   <usedLanguages>
     <usedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</usedLanguage>
     <usedLanguage>2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</usedLanguage>
