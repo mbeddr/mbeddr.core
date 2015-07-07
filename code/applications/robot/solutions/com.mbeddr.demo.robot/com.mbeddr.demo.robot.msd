@@ -8,10 +8,15 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">~_PreferencesModule#com.mbeddr.demo.robot.__spreferences.PlatformTemplates(com.mbeddr.demo.robot.__spreferences.PlatformTemplates)</dependency>
+    <dependency reexport="false">336a1564-6617-4b5b-84e7-3d25ed4b8c8c(mbeddr.arduino.header)</dependency>
+    <dependency reexport="false">3779e7cd-02e4-4dc4-89a1-6e8e31efc854(mbeddr.arduino.platform)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>3660caeb-9434-4a02-a7a1-ba0bbb2106d1(de.itemis.mbeddr.cimporter)</usedLanguage>
     <usedLanguage>2068270c-d316-428e-a27b-e9094c3a918c(de.itemis.mbeddr.cimporter.lazy)</usedLanguage>
+    <usedLanguage>0d04a6cc-773e-4069-b9b0-11884b2ff1c8(com.mbeddr.ext.units)</usedLanguage>
+    <usedLanguage>3828799d-97c8-48d0-af8b-39b903457e1e(mbeddr.arduino.registers)</usedLanguage>
+    <usedLanguage>3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>87468ddd-5b04-4352-a61d-70ff981afab6(com.mbeddr.debugger-testing)</usedDevKit>
