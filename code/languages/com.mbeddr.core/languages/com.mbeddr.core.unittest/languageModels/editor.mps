@@ -169,6 +169,7 @@
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
+      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -541,6 +542,7 @@
       <node concept="3F0ifn" id="78Ts1sksSoL" role="3EZMnx">
         <property role="3F0ifm" value="@test helper" />
         <ref role="1k5W1q" to="r4b4:2CEi94dhDUJ" resolve="Metadata" />
+        <ref role="1ERwB7" node="1nTCJdUhP9n" resolve="deleteTestHelper" />
       </node>
       <node concept="l2Vlx" id="78Ts1sksSoK" role="2iSdaV" />
       <node concept="2SsqMj" id="78Ts1sksSoN" role="3EZMnx">
@@ -811,6 +813,23 @@
       <node concept="3F0A7n" id="7McwK6myqJi" role="3EZMnx">
         <property role="1O74Pk" value="true" />
         <ref role="1NtTu8" to="x27k:2lgwE2U4_F2" resolve="overriddenCodeLocation" />
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="1nTCJdUhP9n">
+    <property role="TrG5h" value="deleteTestHelper" />
+    <ref role="1h_SK9" to="yz9a:78Ts1sksSoD" resolve="TestHelperFunctionAnnotation" />
+    <node concept="1hA7zw" id="1nTCJdUhP_y" role="1h_SK8">
+      <property role="1hAc7j" value="delete_action_id" />
+      <node concept="1hAIg9" id="1nTCJdUhP_z" role="1hA7z_">
+        <node concept="3clFbS" id="1nTCJdUhP_$" role="2VODD2">
+          <node concept="3clFbF" id="1nTCJdUhQ0l" role="3cqZAp">
+            <node concept="2OqwBi" id="1nTCJdUhQ2M" role="3clFbG">
+              <node concept="0IXxy" id="1nTCJdUhQ0k" role="2Oq$k0" />
+              <node concept="1PgB_6" id="1nTCJdUhQy3" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
