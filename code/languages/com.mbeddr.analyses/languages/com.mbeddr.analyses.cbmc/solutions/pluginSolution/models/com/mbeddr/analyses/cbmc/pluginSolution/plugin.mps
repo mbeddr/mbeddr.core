@@ -2536,6 +2536,36 @@
         </node>
       </node>
     </node>
+    <node concept="2XrIbr" id="5C7jL_4Brf6" role="2XNbBy">
+      <property role="TrG5h" value="setFilteredCounterexamples" />
+      <node concept="3cqZAl" id="5C7jL_4Brf7" role="3clF45" />
+      <node concept="3clFbS" id="5C7jL_4Brf8" role="3clF47">
+        <node concept="3clFbF" id="5C7jL_4Brf9" role="3cqZAp">
+          <node concept="2OqwBi" id="5C7jL_4Brfa" role="3clFbG">
+            <node concept="2OqwBi" id="5C7jL_4Brfb" role="2Oq$k0">
+              <node concept="2WthIp" id="5C7jL_4Brfc" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="5C7jL_4Brfd" role="2OqNvi">
+                <ref role="2WH_rO" node="6izRX53yGHB" resolve="panel" />
+              </node>
+            </node>
+            <node concept="liA8E" id="5C7jL_4Brfe" role="2OqNvi">
+              <ref role="37wK5l" to="p8vh:5C7jL_4BFdd" resolve="updateFilteredResult" />
+              <node concept="37vLTw" id="5C7jL_4Brff" role="37wK5m">
+                <ref role="3cqZAo" node="5C7jL_4Brfg" resolve="states" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5C7jL_4Brfg" role="3clF46">
+        <property role="TrG5h" value="states" />
+        <node concept="_YKpA" id="5C7jL_4B_D2" role="1tU5fm">
+          <node concept="3uibUv" id="5C7jL_4B_P_" role="_ZDj9">
+            <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2BZ0e9" id="6izRX53yGHB" role="2XNbBz">
       <property role="TrG5h" value="panel" />
       <node concept="3Tm6S6" id="6izRX53yGHC" role="1B3o_S" />
@@ -2621,6 +2651,47 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3Ymokd9F0Cs" role="jymVt" />
+    <node concept="2YIFZL" id="5C7jL_4BkiW" role="jymVt">
+      <property role="TrG5h" value="setFilteredCounterexample" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="5C7jL_4BkiX" role="3clF47">
+        <node concept="3clFbF" id="5C7jL_4BkiY" role="3cqZAp">
+          <node concept="2OqwBi" id="5C7jL_4BkiZ" role="3clFbG">
+            <node concept="2OqwBi" id="5C7jL_4Bkj0" role="2Oq$k0">
+              <node concept="37vLTw" id="5C7jL_4BpQG" role="2Oq$k0">
+                <ref role="3cqZAo" node="5C7jL_4BpLk" resolve="p" />
+              </node>
+              <node concept="LR4U6" id="5C7jL_4Bkj2" role="2OqNvi">
+                <ref role="LR4U5" node="6izRX53qGZb" resolve="CbmcRawResultTool" />
+              </node>
+            </node>
+            <node concept="2XshWL" id="5C7jL_4Bkj3" role="2OqNvi">
+              <ref role="2WH_rO" node="5C7jL_4Brf6" resolve="setFilteredCounterexamples" />
+              <node concept="37vLTw" id="5C7jL_4BpRr" role="2XxRq1">
+                <ref role="3cqZAo" node="5C7jL_4Bp_o" resolve="states" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5C7jL_4Bkj5" role="1B3o_S" />
+      <node concept="3cqZAl" id="5C7jL_4Bkj6" role="3clF45" />
+      <node concept="37vLTG" id="5C7jL_4BpLk" role="3clF46">
+        <property role="TrG5h" value="p" />
+        <node concept="3uibUv" id="5C7jL_4BpLl" role="1tU5fm">
+          <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5C7jL_4Bp_o" role="3clF46">
+        <property role="TrG5h" value="states" />
+        <node concept="_YKpA" id="5C7jL_4B$y5" role="1tU5fm">
+          <node concept="3uibUv" id="5C7jL_4B_95" role="_ZDj9">
+            <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="3Ymokd9EUav" role="1B3o_S" />
   </node>
 </model>
