@@ -2507,7 +2507,7 @@
   </node>
   <node concept="sEfby" id="6izRX53qGZb">
     <property role="TrG5h" value="CbmcRawResultTool" />
-    <property role="2XNbzY" value="CBMC raw result" />
+    <property role="2XNbzY" value="CBMC Results" />
     <node concept="2XrIbr" id="3Ymokd9FeZe" role="2XNbBy">
       <property role="TrG5h" value="setOutput" />
       <node concept="3cqZAl" id="3Ymokd9Ffqo" role="3clF45" />
