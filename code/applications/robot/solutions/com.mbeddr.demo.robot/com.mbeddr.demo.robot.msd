@@ -10,6 +10,7 @@
     <dependency reexport="false">~_PreferencesModule#com.mbeddr.demo.robot.__spreferences.PlatformTemplates(com.mbeddr.demo.robot.__spreferences.PlatformTemplates)</dependency>
     <dependency reexport="false">336a1564-6617-4b5b-84e7-3d25ed4b8c8c(mbeddr.arduino.header)</dependency>
     <dependency reexport="false">3779e7cd-02e4-4dc4-89a1-6e8e31efc854(mbeddr.arduino.platform)</dependency>
+    <dependency reexport="false">2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>3660caeb-9434-4a02-a7a1-ba0bbb2106d1(de.itemis.mbeddr.cimporter)</usedLanguage>

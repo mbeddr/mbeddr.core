@@ -2508,12 +2508,12 @@
       </node>
       <node concept="3Khz0B" id="5zHWU$Gz13W" role="2RW2fA" />
       <node concept="2EWDwb" id="5zHWU$Gz4_q" role="2RW2fA">
-        <property role="TrG5h" value="pinA_setDutyFactor" />
+        <property role="TrG5h" value="pinA_setDutyCycle" />
         <node concept="3XIRFW" id="5zHWU$Gz4_r" role="2EWMhI">
           <node concept="1_9egQ" id="5zHWU$Gz5Oh" role="3XIRFZ">
             <node concept="3pqW6w" id="5zHWU$Gz5Ou" role="1_9egR">
               <node concept="3ZUYvv" id="5zHWU$Gz5OO" role="3TlMhJ">
-                <ref role="3ZUYvu" node="5zHWU$Gzrpk" resolve="onTime" />
+                <ref role="3ZUYvu" node="5zHWU$GWV4a" resolve="onTime" />
               </node>
               <node concept="3V49S3" id="5zHWU$Gz5Of" role="3TlMhI">
                 <ref role="3V49S0" node="5zHWU$Gz4RD" resolve="OCR1A" />
@@ -2523,15 +2523,15 @@
         </node>
         <node concept="2EWDw0" id="5zHWU$Gz4_t" role="2EWDeT">
           <ref role="1ZwSu5" node="5zHWU$Gz4m5" resolve="pinA" />
-          <ref role="1ZwxE2" to="t6m2:5zHWU$GxIaq" resolve="setDutyFactor" />
+          <ref role="1ZwxE2" to="t6m2:5zHWU$GxIaq" resolve="setDutyCycle" />
         </node>
-        <node concept="19Rifw" id="5zHWU$Gzrpj" role="2C2TGm">
+        <node concept="19Rifw" id="5zHWU$GWV49" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
-        <node concept="19RgSI" id="5zHWU$Gzrpk" role="1UOdpc">
+        <node concept="19RgSI" id="5zHWU$GWV4a" role="1UOdpc">
           <property role="TrG5h" value="onTime" />
-          <node concept="26Vqp4" id="5zHWU$Gzrpl" role="2C2TGm">
+          <node concept="26Vqp4" id="5zHWU$GWV4b" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
@@ -2539,12 +2539,12 @@
       </node>
       <node concept="3Khz0B" id="5zHWU$Gz4PO" role="2RW2fA" />
       <node concept="2EWDwb" id="5zHWU$Gz4C4" role="2RW2fA">
-        <property role="TrG5h" value="pinB_setDutyFactor" />
+        <property role="TrG5h" value="pinB_setDutyCycle" />
         <node concept="3XIRFW" id="5zHWU$Gz4C5" role="2EWMhI">
           <node concept="1_9egQ" id="5zHWU$Gz64d" role="3XIRFZ">
             <node concept="3pqW6w" id="5zHWU$Gz64q" role="1_9egR">
               <node concept="3ZUYvv" id="5zHWU$Gz64K" role="3TlMhJ">
-                <ref role="3ZUYvu" node="5zHWU$Gzrqg" resolve="onTime" />
+                <ref role="3ZUYvu" node="5zHWU$GWV4j" resolve="onTime" />
               </node>
               <node concept="3V49S3" id="5zHWU$Gz64b" role="3TlMhI">
                 <ref role="3V49S0" node="5zHWU$Gz5gY" resolve="OCR1B" />
@@ -2554,15 +2554,15 @@
         </node>
         <node concept="2EWDw0" id="5zHWU$Gz4C7" role="2EWDeT">
           <ref role="1ZwSu5" node="5zHWU$Gz4zX" resolve="pinB" />
-          <ref role="1ZwxE2" to="t6m2:5zHWU$GxIaq" resolve="setDutyFactor" />
+          <ref role="1ZwxE2" to="t6m2:5zHWU$GxIaq" resolve="setDutyCycle" />
         </node>
-        <node concept="19Rifw" id="5zHWU$Gzrqf" role="2C2TGm">
+        <node concept="19Rifw" id="5zHWU$GWV4i" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
-        <node concept="19RgSI" id="5zHWU$Gzrqg" role="1UOdpc">
+        <node concept="19RgSI" id="5zHWU$GWV4j" role="1UOdpc">
           <property role="TrG5h" value="onTime" />
-          <node concept="26Vqp4" id="5zHWU$Gzrqh" role="2C2TGm">
+          <node concept="26Vqp4" id="5zHWU$GWV4k" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
@@ -2760,12 +2760,12 @@
       </node>
       <node concept="3Khz0B" id="5zHWU$GzGfs" role="2RW2fA" />
       <node concept="2EWDwb" id="5zHWU$GzwPb" role="2RW2fA">
-        <property role="TrG5h" value="pinA_setDutyFactor" />
+        <property role="TrG5h" value="pinA_setDutyCycle" />
         <node concept="3XIRFW" id="5zHWU$GzwPc" role="2EWMhI">
           <node concept="1_9egQ" id="5zHWU$GzyHW" role="3XIRFZ">
             <node concept="3pqW6w" id="5zHWU$GzyI9" role="1_9egR">
               <node concept="3ZUYvv" id="5zHWU$GzyIv" role="3TlMhJ">
-                <ref role="3ZUYvu" node="5zHWU$GzwPg" resolve="onTime" />
+                <ref role="3ZUYvu" node="5zHWU$GWV41" resolve="onTime" />
               </node>
               <node concept="3V49S3" id="5zHWU$GzyHU" role="3TlMhI">
                 <ref role="3V49S0" node="5zHWU$Gzyai" resolve="OCR3A" />
@@ -2775,15 +2775,15 @@
         </node>
         <node concept="2EWDw0" id="5zHWU$GzwPe" role="2EWDeT">
           <ref role="1ZwSu5" node="5zHWU$GzwNR" resolve="pinA" />
-          <ref role="1ZwxE2" to="t6m2:5zHWU$GxIaq" resolve="setDutyFactor" />
+          <ref role="1ZwxE2" to="t6m2:5zHWU$GxIaq" resolve="setDutyCycle" />
         </node>
-        <node concept="19Rifw" id="5zHWU$GzwPf" role="2C2TGm">
+        <node concept="19Rifw" id="5zHWU$GWV40" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
-        <node concept="19RgSI" id="5zHWU$GzwPg" role="1UOdpc">
+        <node concept="19RgSI" id="5zHWU$GWV41" role="1UOdpc">
           <property role="TrG5h" value="onTime" />
-          <node concept="26Vqp4" id="5zHWU$GzwPh" role="2C2TGm">
+          <node concept="26Vqp4" id="5zHWU$GWV42" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
@@ -3025,12 +3025,12 @@
       </node>
       <node concept="3Khz0B" id="5zHWU$Gzt8C" role="2RW2fA" />
       <node concept="2EWDwb" id="5zHWU$Gzrmk" role="2RW2fA">
-        <property role="TrG5h" value="pinD_setDutyFactor" />
+        <property role="TrG5h" value="pinD_setDutyCycle" />
         <node concept="3XIRFW" id="5zHWU$Gzrml" role="2EWMhI">
           <node concept="1_9egQ" id="5zHWU$Gzw$S" role="3XIRFZ">
             <node concept="3pqW6w" id="5zHWU$Gzw_5" role="1_9egR">
               <node concept="3ZUYvv" id="5zHWU$Gzw_r" role="3TlMhJ">
-                <ref role="3ZUYvu" node="5zHWU$Gzrmp" resolve="onTime" />
+                <ref role="3ZUYvu" node="5zHWU$GWV2S" resolve="onTime" />
               </node>
               <node concept="3V49S3" id="5zHWU$Gzw$Q" role="3TlMhI">
                 <ref role="3V49S0" node="5zHWU$Gzw3d" resolve="OCR4D" />
@@ -3040,15 +3040,15 @@
         </node>
         <node concept="2EWDw0" id="5zHWU$Gzrmn" role="2EWDeT">
           <ref role="1ZwSu5" node="5zHWU$Gzrho" resolve="pinD" />
-          <ref role="1ZwxE2" to="t6m2:5zHWU$GxIaq" resolve="setDutyFactor" />
+          <ref role="1ZwxE2" to="t6m2:5zHWU$GxIaq" resolve="setDutyCycle" />
         </node>
-        <node concept="19Rifw" id="5zHWU$Gzrmo" role="2C2TGm">
+        <node concept="19Rifw" id="5zHWU$GWV2R" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
-        <node concept="19RgSI" id="5zHWU$Gzrmp" role="1UOdpc">
+        <node concept="19RgSI" id="5zHWU$GWV2S" role="1UOdpc">
           <property role="TrG5h" value="onTime" />
-          <node concept="26Vqp4" id="5zHWU$Gzrmq" role="2C2TGm">
+          <node concept="26Vqp4" id="5zHWU$GWV2T" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
