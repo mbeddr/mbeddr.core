@@ -93,7 +93,7 @@
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="IPWMPin" />
       <node concept="2EX0iL" id="5zHWU$GxIaq" role="2EX0iN">
-        <property role="TrG5h" value="setDutyFactor" />
+        <property role="TrG5h" value="setDutyCycle" />
         <node concept="19Rifw" id="5zHWU$GxIar" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
