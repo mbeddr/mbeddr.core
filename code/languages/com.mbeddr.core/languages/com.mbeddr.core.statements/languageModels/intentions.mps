@@ -10,6 +10,7 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
+    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -91,6 +92,11 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
+    </language>
+    <language id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions">
+      <concept id="5846558918537398687" name="com.mbeddr.mpsutil.intentions.structure.IntentionGroupAnnotation" flags="ng" index="1SWQZ3">
+        <property id="5846558918537400330" name="label" index="1SWRpm" />
+      </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="17217465924316850" name="com.mbeddr.mpsutil.blutil.structure.FilterOperation" flags="ng" index="2Gpcm3">
@@ -187,6 +193,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -285,6 +292,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKIAoN" role="lGtFl">
+      <property role="1SWRpm" value="STMT" />
+    </node>
   </node>
   <node concept="2S6QgY" id="2I09F8VKBed">
     <property role="TrG5h" value="addElseIfPart" />
@@ -368,6 +378,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKI_RL" role="lGtFl">
+      <property role="1SWRpm" value="STMT" />
+    </node>
   </node>
   <node concept="2S6QgY" id="3_fgNoLAEDv">
     <property role="TrG5h" value="makeStatic" />
@@ -416,6 +429,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKIBCh" role="lGtFl">
+      <property role="1SWRpm" value="MODULES" />
+    </node>
   </node>
   <node concept="2S6QgY" id="41KMvfcgiZq">
     <property role="TrG5h" value="toggleInvisible" />
@@ -451,12 +467,15 @@
         </node>
       </node>
     </node>
-    <node concept="2SaL7w" id="41KMvfcgml0" role="2ZfVeh">
-      <node concept="3clFbS" id="41KMvfcgml1" role="2VODD2">
-        <node concept="3clFbF" id="41KMvfcgml2" role="3cqZAp">
-          <node concept="2OqwBi" id="41KMvfcgml4" role="3clFbG">
-            <node concept="2Sf5sV" id="41KMvfcgml3" role="2Oq$k0" />
-            <node concept="2qgKlT" id="41KMvfcgml8" role="2OqNvi">
+    <node concept="1SWQZ3" id="3TftwIKIH46" role="lGtFl">
+      <property role="1SWRpm" value="STMT" />
+    </node>
+    <node concept="2SaL7w" id="60PbHqS$Fp_" role="2ZfVeh">
+      <node concept="3clFbS" id="60PbHqS$FpA" role="2VODD2">
+        <node concept="3clFbF" id="60PbHqS$FG7" role="3cqZAp">
+          <node concept="2OqwBi" id="60PbHqS$Gde" role="3clFbG">
+            <node concept="2Sf5sV" id="60PbHqS$FG6" role="2Oq$k0" />
+            <node concept="2qgKlT" id="60PbHqS$Hf6" role="2OqNvi">
               <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
             </node>
           </node>
@@ -564,6 +583,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKIGtR" role="lGtFl">
+      <property role="1SWRpm" value="STMT" />
+    </node>
   </node>
   <node concept="2ZfgGJ" id="6bznNePYd7t">
     <property role="TrG5h" value="surroundWithWhile" />
@@ -664,6 +686,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKIGQd" role="lGtFl">
+      <property role="1SWRpm" value="STMT" />
     </node>
   </node>
   <node concept="2ZfgGJ" id="6bznNePYd8c">
@@ -766,6 +791,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKICe5" role="lGtFl">
+      <property role="1SWRpm" value="STMT" />
+    </node>
   </node>
   <node concept="2ZfgGJ" id="6bznNePYd8V">
     <property role="TrG5h" value="surroundWithFor" />
@@ -867,6 +895,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKIEpo" role="lGtFl">
+      <property role="1SWRpm" value="STMT" />
+    </node>
   </node>
   <node concept="2S6QgY" id="xAR9nWv2L1">
     <property role="3GE5qa" value="prefixes" />
@@ -895,6 +926,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKIABh" role="lGtFl">
+      <property role="1SWRpm" value="MODULES" />
     </node>
   </node>
   <node concept="2S6QgY" id="52l0VUuN5OC">
@@ -942,6 +976,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKIHoi" role="lGtFl">
+      <property role="1SWRpm" value="REGISTER" />
     </node>
   </node>
   <node concept="3dkpOd" id="3bfDwHbEJBw">
@@ -1093,6 +1130,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKIIdp" role="lGtFl">
+      <property role="1SWRpm" value="EXPR" />
     </node>
   </node>
 </model>

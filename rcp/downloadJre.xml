@@ -1,0 +1,20 @@
+<!--comment-->
+<project name="com.mbeddr.core download mps" default="download">
+  <property name="jre-url" value="https://mbeddr.fr-1.storage.online.net/jre.zip"/>
+  <property name="local.file" value="jre.zip" /> 
+  <property name="sha.expexted" value="c873d2aaaf8d5859ff483b85c9e106968993ec1a" />
+
+  <target name="download">
+   <get src="${jre-url}" dest="${local.file}" skipexisting="true" usetimestamp="true"/>
+   <checksum file="${local.file}" algorithm="SHA" property="sha.local"/>
+   <fail message="Checksum invalid">
+     <condition>
+       <not> 
+        <equals arg1="${sha.local}" arg2="${sha.expexted}"/> 
+      </not>
+    </condition>  
+  </fail>
+  <unzip src="${local.file}" dest="windows"/>
+  <delete file="${local.file}"/> 
+</target>
+</project>

@@ -7,6 +7,7 @@
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
+    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -136,6 +137,11 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
+    <language id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions">
+      <concept id="5846558918537398687" name="com.mbeddr.mpsutil.intentions.structure.IntentionGroupAnnotation" flags="ng" index="1SWQZ3">
+        <property id="5846558918537400330" name="label" index="1SWRpm" />
+      </concept>
+    </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="17217465924316850" name="com.mbeddr.mpsutil.blutil.structure.FilterOperation" flags="ng" index="2Gpcm3">
         <reference id="17217465924316851" name="concept" index="2Gpcm2" />
@@ -245,6 +251,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -296,6 +303,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJ_yI" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
     </node>
   </node>
   <node concept="2S6QgY" id="3RseghId_9p">
@@ -379,6 +389,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJ_HH" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
+    </node>
   </node>
   <node concept="2S6QgY" id="3RseghIdYWG">
     <property role="3GE5qa" value="paragraphs" />
@@ -415,6 +428,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJNnz" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
     </node>
   </node>
   <node concept="2S6QgY" id="3RseghIecWh">
@@ -473,6 +489,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJK9v" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
+    </node>
   </node>
   <node concept="2S6QgY" id="3RseghIecYd">
     <property role="3GE5qa" value="structure" />
@@ -530,6 +549,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJFbQ" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
+    </node>
   </node>
   <node concept="2S6QgY" id="47ZkZt5Yiux">
     <property role="3GE5qa" value="paragraphs" />
@@ -565,6 +587,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJN67" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
     </node>
   </node>
   <node concept="2S6QgY" id="3UlEobTIxQu">
@@ -634,6 +659,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJMWl" role="lGtFl">
+      <property role="1SWRpm" value="WORD" />
+    </node>
   </node>
   <node concept="2S6QgY" id="4vQSg$Ar0f$">
     <property role="3GE5qa" value="paragraphs" />
@@ -701,6 +729,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJAQ1" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
+    </node>
   </node>
   <node concept="2S6QgY" id="519ky_SjvD4">
     <property role="3GE5qa" value="table" />
@@ -736,6 +767,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJNeJ" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
     </node>
   </node>
   <node concept="2ZfgGJ" id="3OiIliPRi3n">
@@ -798,6 +832,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJMNY" role="lGtFl">
+      <property role="1SWRpm" value="WORD" />
+    </node>
   </node>
   <node concept="2ZfgGJ" id="3OiIliPRxqb">
     <property role="TrG5h" value="surroundWithEmph" />
@@ -858,6 +895,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJMCa" role="lGtFl">
+      <property role="1SWRpm" value="WORD" />
     </node>
   </node>
   <node concept="312cEu" id="3OiIliPRxrd">
@@ -1102,6 +1142,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJMsm" role="lGtFl">
+      <property role="1SWRpm" value="WORD" />
+    </node>
   </node>
   <node concept="2ZfgGJ" id="yrKNEnZF0O">
     <property role="TrG5h" value="surroundWithBold" />
@@ -1163,11 +1206,15 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJMgy" role="lGtFl">
+      <property role="1SWRpm" value="WORD" />
+    </node>
   </node>
   <node concept="2ZfgGJ" id="x1qBn8gj2">
     <property role="TrG5h" value="WrapWithSection" />
     <property role="2ZfUl0" value="false" />
     <property role="2ZfUl3" value="false" />
+    <property role="3GE5qa" value="ifaces" />
     <ref role="2ZfgGC" to="2c95:2TZO3DbuxwP" resolve="IDocumentContent" />
     <node concept="2S6ZIM" id="3RseghIe5qV" role="2ZfVej">
       <node concept="3clFbS" id="3RseghIe5qW" role="2VODD2">
@@ -1237,6 +1284,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJAaM" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
     </node>
   </node>
   <node concept="2S6QgY" id="3DAECxFtmkd">
@@ -1326,6 +1376,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJBLV" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
     </node>
   </node>
   <node concept="2S6QgY" id="2x0XdsgEWiZ">
@@ -1443,6 +1496,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJHg4" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
+    </node>
   </node>
   <node concept="2S6QgY" id="4E5hYf7QsLK">
     <property role="3GE5qa" value="paragraphs" />
@@ -1468,6 +1524,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJJPp" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
     </node>
   </node>
   <node concept="2S6QgY" id="4E5hYf7UcvQ">
@@ -1519,6 +1578,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJJXJ" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
     </node>
   </node>
   <node concept="312cEu" id="4E5hYf81aH0">
@@ -1730,6 +1792,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJIQ9" role="lGtFl">
+      <property role="1SWRpm" value="WORD" />
+    </node>
   </node>
   <node concept="2S6QgY" id="1YUFCeFYzMu">
     <property role="3GE5qa" value="words.formatted" />
@@ -1809,6 +1874,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJJbO" role="lGtFl">
+      <property role="1SWRpm" value="WORD" />
     </node>
   </node>
   <node concept="2S6QgY" id="2ncjLWkjrtH">
@@ -1893,6 +1961,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJB9P" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
     </node>
   </node>
   <node concept="2S6QgY" id="2ncjLWkD2mN">
@@ -2005,17 +2076,20 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJCVq" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
+    </node>
   </node>
   <node concept="2S6QgY" id="627_yy34G9I">
     <property role="TrG5h" value="addRemoval" />
     <property role="2ZfUl0" value="true" />
-    <property role="3GE5qa" value="code" />
-    <ref role="2ZfgGC" to="2c95:627_yy34G14" resolve="AbstractCCodeParagraph" />
+    <property role="3GE5qa" value="modelContent" />
+    <ref role="2ZfgGC" to="2c95:627_yy34G14" resolve="AbstractModelContentParagraph" />
     <node concept="2S6ZIM" id="627_yy34G9J" role="2ZfVej">
       <node concept="3clFbS" id="627_yy34G9K" role="2VODD2">
         <node concept="3clFbF" id="627_yy34G9L" role="3cqZAp">
           <node concept="Xl_RD" id="627_yy34G9M" role="3clFbG">
-            <property role="Xl_RC" value="Add Code Exception" />
+            <property role="Xl_RC" value="Add Model Content Removal" />
           </node>
         </node>
       </node>
@@ -2035,17 +2109,20 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJBwD" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
+    </node>
   </node>
   <node concept="2S6QgY" id="627_yy34G9V">
     <property role="TrG5h" value="createEmbeddingBelow" />
     <property role="2ZfUl0" value="true" />
-    <property role="3GE5qa" value="code" />
-    <ref role="2ZfgGC" to="2c95:627_yy34G1m" resolve="CodeRefWord" />
+    <property role="3GE5qa" value="modelContent" />
+    <ref role="2ZfgGC" to="2c95:627_yy34G1m" resolve="ModelContentRefWord" />
     <node concept="2S6ZIM" id="627_yy34G9W" role="2ZfVej">
       <node concept="3clFbS" id="627_yy34G9X" role="2VODD2">
         <node concept="3clFbF" id="627_yy34G9Y" role="3cqZAp">
           <node concept="Xl_RD" id="627_yy34G9Z" role="3clFbG">
-            <property role="Xl_RC" value="Embed this Code Below" />
+            <property role="Xl_RC" value="Embed this Model Content Below" />
           </node>
         </node>
       </node>
@@ -2056,12 +2133,12 @@
           <node concept="3cpWsn" id="627_yy34Ga3" role="3cpWs9">
             <property role="TrG5h" value="ccp" />
             <node concept="3Tqbb2" id="627_yy34Ga4" role="1tU5fm">
-              <ref role="ehGHo" to="2c95:627_yy34G1i" resolve="CCodeParagraph" />
+              <ref role="ehGHo" to="2c95:627_yy34G1i" resolve="ModelContentAsTextParagraph" />
             </node>
             <node concept="2ShNRf" id="627_yy34Ga5" role="33vP2m">
               <node concept="3zrR0B" id="627_yy34Ga6" role="2ShVmc">
                 <node concept="3Tqbb2" id="627_yy34Ga7" role="3zrR0E">
-                  <ref role="ehGHo" to="2c95:627_yy34G1i" resolve="CCodeParagraph" />
+                  <ref role="ehGHo" to="2c95:627_yy34G1i" resolve="ModelContentAsTextParagraph" />
                 </node>
               </node>
             </node>
@@ -2108,6 +2185,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJELQ" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
     </node>
   </node>
   <node concept="2S6QgY" id="1SYZy6QsCoJ">
@@ -2230,9 +2310,12 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJLoE" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
+    </node>
   </node>
   <node concept="2S6QgY" id="1SYZy6QShAd">
-    <property role="3GE5qa" value="code" />
+    <property role="3GE5qa" value="modelContent" />
     <property role="TrG5h" value="addPrefixAnnotation" />
     <ref role="2ZfgGC" to="2c95:2TZO3DbuxwK" resolve="Document" />
     <node concept="2S6ZIM" id="1SYZy6QShAe" role="2ZfVej">
@@ -2252,7 +2335,7 @@
               <node concept="2Sf5sV" id="1SYZy6QSrX7" role="2Oq$k0" />
               <node concept="3CFZ6_" id="1SYZy6QSsuE" role="2OqNvi">
                 <node concept="3CFYIy" id="1SYZy6QSsyo" role="3CFYIz">
-                  <ref role="3CFYIx" to="2c95:1SYZy6QSg06" resolve="CodeEmbeddingPrefix" />
+                  <ref role="3CFYIx" to="2c95:1SYZy6QSg06" resolve="ModelContentEmbeddingPrefix" />
                 </node>
               </node>
             </node>
@@ -2260,6 +2343,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJBuo" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
     </node>
   </node>
   <node concept="2S6QgY" id="1ig5EljjfWR">
@@ -2352,6 +2438,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJAwS" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
     </node>
   </node>
   <node concept="2S6QgY" id="3PCHQK6hD7e">
@@ -2526,6 +2615,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJEQl" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
+    </node>
   </node>
   <node concept="2S6QgY" id="4IT6unQEzo">
     <property role="3GE5qa" value="paragraphs" />
@@ -2672,6 +2764,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJFxH" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
+    </node>
   </node>
   <node concept="2S6QgY" id="4IT6uoG05M">
     <property role="3GE5qa" value="words.formatted" />
@@ -2748,6 +2843,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJFUp" role="lGtFl">
+      <property role="1SWRpm" value="WORD" />
     </node>
   </node>
   <node concept="2S6QgY" id="4IT6uoM47L">
@@ -2826,6 +2924,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJIcF" role="lGtFl">
+      <property role="1SWRpm" value="WORD" />
+    </node>
   </node>
   <node concept="2S6QgY" id="4IT6uoMuHp">
     <property role="3GE5qa" value="words.formatted" />
@@ -2903,6 +3004,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="3TftwIKJIx6" role="lGtFl">
+      <property role="1SWRpm" value="WORD" />
+    </node>
   </node>
   <node concept="2S6QgY" id="4IT6uoYSpu">
     <property role="3GE5qa" value="words.formatted" />
@@ -2941,6 +3045,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJJqN" role="lGtFl">
+      <property role="1SWRpm" value="WORD" />
     </node>
   </node>
   <node concept="2S6QgY" id="1CZbvxNc0DQ">
@@ -3016,6 +3123,40 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJJH1" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="41AlOFgm7fq">
+    <property role="3GE5qa" value="modelContent" />
+    <property role="TrG5h" value="UpdateCodeText" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="2c95:627_yy34G1i" resolve="ModelContentAsTextParagraph" />
+    <node concept="2S6ZIM" id="41AlOFgm7fr" role="2ZfVej">
+      <node concept="3clFbS" id="41AlOFgm7fs" role="2VODD2">
+        <node concept="3clFbF" id="41AlOFgmbdn" role="3cqZAp">
+          <node concept="Xl_RD" id="41AlOFgmbdm" role="3clFbG">
+            <property role="Xl_RC" value="Update Model Content Text" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="41AlOFgm7ft" role="2ZfgGD">
+      <node concept="3clFbS" id="41AlOFgm7fu" role="2VODD2">
+        <node concept="3clFbF" id="41AlOFgmbBr" role="3cqZAp">
+          <node concept="2OqwBi" id="41AlOFgmc49" role="3clFbG">
+            <node concept="2Sf5sV" id="41AlOFgmbBq" role="2Oq$k0" />
+            <node concept="2qgKlT" id="41AlOFgmcTi" role="2OqNvi">
+              <ref role="37wK5l" to="4gky:41AlOFglSb0" resolve="updateText" />
+              <node concept="1XNTG" id="41AlOFgwibj" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="3TftwIKJ_Sg" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
     </node>
   </node>
 </model>

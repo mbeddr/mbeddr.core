@@ -336,6 +336,9 @@
       <node concept="L2wRC" id="53wbATGwbwe" role="39821P">
         <ref role="L2wRA" node="1VMOGozl7al" resolve="test.ex.ext.units" />
       </node>
+      <node concept="L2wRC" id="1_106p2kGbC" role="39821P">
+        <ref role="L2wRA" node="3p0OY6VwCI7" resolve="test.ex.ext.serialization" />
+      </node>
     </node>
     <node concept="2G$12M" id="5qO$P$PrIFi" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.ext.ex.tests" />
@@ -474,6 +477,30 @@
                 <property role="2Ry0Am" value="test.ex.ext.units.msd" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="3p0OY6VwCI7" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.ex.ext.serialization" />
+        <property role="3LESm3" value="1c219a3b-fd18-45da-9694-65383cb7ddd7" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="3p0OY6VwCIa" role="3LF7KH">
+          <ref role="398BVh" node="5qO$P$PrILF" resolve="mbeddr.ext" />
+          <node concept="2Ry0Ak" id="3p0OY6VwCIb" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="3p0OY6VwCIc" role="2Ry0An">
+              <property role="2Ry0Am" value="test.ex.ext.serialization" />
+              <node concept="2Ry0Ak" id="1_106p2kG3y" role="2Ry0An">
+                <property role="2Ry0Am" value="test.ex.ext.serialization.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1_106p2l$h_" role="3bR37C">
+          <node concept="3bR9La" id="1_106p2l$hA" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:6y2eE4zZsnH" resolve="com.mbeddr.core.stdlib" />
           </node>
         </node>
       </node>

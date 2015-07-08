@@ -9,10 +9,10 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="10jo" ref="r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung.structure)" implicit="true" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1426,16 +1426,6 @@
       <ref role="PrY4T" node="65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6Kj2zNC66Q5">
-    <property role="TrG5h" value="SuppressWarnings" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="M6xJ_" id="6Kj2zNC68yj" role="lGtFl">
-      <property role="Hh88m" value="suppressWarning" />
-      <node concept="trNpa" id="6Kj2zNC68yl" role="EQaZv">
-        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
-      </node>
-    </node>
-  </node>
   <node concept="PlHQZ" id="3VlwR$fEpF9">
     <property role="TrG5h" value="IInstantiatedOnlyInGenerators" />
   </node>
@@ -1718,6 +1708,10 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="5lKnBeAtNw8" resolve="AbstractPicker" />
+  </node>
+  <node concept="PlHQZ" id="3RtPbXOi5Ir">
+    <property role="3GE5qa" value="commenting" />
+    <property role="TrG5h" value="ITriggerCommenting" />
   </node>
 </model>
 

@@ -16,7 +16,6 @@
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
-      <concept id="6496299201655527393" name="jetbrains.mps.lang.behavior.structure.LocalBehaviorMethodCall" flags="nn" index="BsUDl" />
       <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
         <reference id="1225194240799" name="concept" index="13h7C2" />
         <child id="1225194240805" name="method" index="13h7CS" />
@@ -38,7 +37,6 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -122,7 +120,6 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -182,7 +179,7 @@
     <ref role="13h7C2" to="rijl:6GXPbpLk2Em" resolve="SafeHeapBlock" />
     <node concept="13i0hz" id="zSFqGmbfW$" role="13h7CS">
       <property role="TrG5h" value="getContainedLocalVariables" />
-      <ref role="13i0hy" to="rj8d:1OcdQnyTC1X" resolve="getContainedLocalVariables" />
+      <ref role="13i0hy" to="rj8d:1OcdQnyTC1X" resolve="getContributedLocalVariables" />
       <node concept="3clFbS" id="zSFqGmbfWB" role="3clF47">
         <node concept="3clFbF" id="zSFqGmbfWF" role="3cqZAp">
           <node concept="2OqwBi" id="zSFqGmbfX1" role="3clFbG">
@@ -199,98 +196,6 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="zSFqGmbfWE" role="1B3o_S" />
-    </node>
-    <node concept="13i0hz" id="6iIoqg1xKTc" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getLocalVarScope" />
-      <ref role="13i0hy" to="rj8d:1OcdQnySJNX" resolve="getLocalVarScope" />
-      <node concept="3Tm1VV" id="6iIoqg1xKTd" role="1B3o_S" />
-      <node concept="3clFbS" id="6iIoqg1xKTe" role="3clF47">
-        <node concept="3cpWs8" id="6iIoqg1ylfw" role="3cqZAp">
-          <node concept="3cpWsn" id="6iIoqg1ylfx" role="3cpWs9">
-            <property role="TrG5h" value="scope" />
-            <node concept="3uibUv" id="6iIoqg1ylfy" role="1tU5fm">
-              <ref role="3uigEE" to="rj8d:1OcdQnySI_r" resolve="LocalVarScope" />
-            </node>
-            <node concept="2ShNRf" id="6iIoqg1ylfz" role="33vP2m">
-              <node concept="1pGfFk" id="6iIoqg1ylf$" role="2ShVmc">
-                <ref role="37wK5l" to="rj8d:1OcdQnyT5Lx" resolve="LocalVarScope" />
-                <node concept="BsUDl" id="19a6$uA_LYN" role="37wK5m">
-                  <ref role="37wK5l" to="rj8d:1OcdQnyTC1X" resolve="getContainedLocalVariables" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="6iIoqg1ylg2" role="3cqZAp">
-          <node concept="3cpWsn" id="6iIoqg1ylg3" role="3cpWs9">
-            <property role="TrG5h" value="outercScopeProvider" />
-            <node concept="3Tqbb2" id="6iIoqg1ylg4" role="1tU5fm">
-              <ref role="ehGHo" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
-            </node>
-            <node concept="2OqwBi" id="6iIoqg1ylg5" role="33vP2m">
-              <node concept="13iPFW" id="6iIoqg1ylg6" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="6iIoqg1ylg7" role="2OqNvi">
-                <node concept="1xMEDy" id="6iIoqg1ylg8" role="1xVPHs">
-                  <node concept="chp4Y" id="6iIoqg1ylg9" role="ri$Ld">
-                    <ref role="cht4Q" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="6iIoqg1ylga" role="3cqZAp">
-          <node concept="3clFbS" id="6iIoqg1ylgb" role="3clFbx">
-            <node concept="3clFbF" id="6iIoqg1ylgc" role="3cqZAp">
-              <node concept="2OqwBi" id="6iIoqg1ylgd" role="3clFbG">
-                <node concept="37vLTw" id="6Jhc0CXtUXz" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6iIoqg1ylfx" resolve="scope" />
-                </node>
-                <node concept="liA8E" id="6iIoqg1ylgf" role="2OqNvi">
-                  <ref role="37wK5l" to="rj8d:1OcdQnyTkYC" resolve="setOuterScope" />
-                  <node concept="2OqwBi" id="6iIoqg1ylgg" role="37wK5m">
-                    <node concept="37vLTw" id="6Jhc0CXtUXJ" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6iIoqg1ylg3" resolve="outercScopeProvider" />
-                    </node>
-                    <node concept="2qgKlT" id="6iIoqg1ylgi" role="2OqNvi">
-                      <ref role="37wK5l" to="rj8d:1OcdQnySJNX" resolve="getLocalVarScope" />
-                      <node concept="13iPFW" id="6iIoqg1ylgj" role="37wK5m" />
-                      <node concept="2OqwBi" id="6iIoqg1ylgk" role="37wK5m">
-                        <node concept="13iPFW" id="6iIoqg1ylgl" role="2Oq$k0" />
-                        <node concept="2bSWHS" id="6iIoqg1ylgm" role="2OqNvi" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3y3z36" id="6iIoqg1ylgn" role="3clFbw">
-            <node concept="10Nm6u" id="6iIoqg1ylgo" role="3uHU7w" />
-            <node concept="37vLTw" id="6Jhc0CXtUYe" role="3uHU7B">
-              <ref role="3cqZAo" node="6iIoqg1ylg3" resolve="outercScopeProvider" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6iIoqg1ylgq" role="3cqZAp">
-          <node concept="37vLTw" id="6Jhc0CXtUS_" role="3clFbG">
-            <ref role="3cqZAo" node="6iIoqg1ylfx" resolve="scope" />
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="6iIoqg1xKTf" role="3clF46">
-        <property role="TrG5h" value="context" />
-        <node concept="3Tqbb2" id="6iIoqg1xKTg" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="6iIoqg1xKTh" role="3clF46">
-        <property role="TrG5h" value="statementIndex" />
-        <node concept="10Oyi0" id="6iIoqg1xKTi" role="1tU5fm" />
-      </node>
-      <node concept="3uibUv" id="6iIoqg1xKTj" role="3clF45">
-        <ref role="3uigEE" to="rj8d:1OcdQnySI_r" resolve="LocalVarScope" />
-      </node>
     </node>
     <node concept="13hLZK" id="zSFqGmbfWv" role="13h7CW">
       <node concept="3clFbS" id="zSFqGmbfWw" role="2VODD2" />

@@ -14,6 +14,7 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="orbb" ref="r:f440e167-2cf6-4609-a4e7-2d2c3fda0805(com.mbeddr.tutorial.sample.HelloWorld.main)" />
     <import index="bmc6" ref="r:4ac377c2-0a54-4908-ae24-f86f1bad7e73(com.mbeddr.tutorial.documentation.ug.fundamentals)" />
+    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
@@ -42,7 +43,7 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
-      <concept id="2179458690439382890" name="com.mbeddr.doc.structure.ConceptCodeRemoval" flags="ng" index="2Cuv_b">
+      <concept id="2179458690439382890" name="com.mbeddr.doc.structure.ConceptModelContentRemoval" flags="ng" index="2Cuv_b">
         <reference id="2179458690439403347" name="conceptDecl" index="2Cuq_M" />
       </concept>
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
@@ -50,10 +51,10 @@
         <child id="126932837435370865" name="authors" index="Wq1Bf" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
-      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.CPNamedNodeElement" flags="ng" index="2NCMab">
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
       </concept>
-      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.CodePointer" flags="ng" index="2NCZwO">
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
       <concept id="2286331641392318852" name="com.mbeddr.doc.structure.MenuFormattedText" flags="ng" index="2OlAs7" />
@@ -72,14 +73,6 @@
         <property id="6386504476136521408" name="fileName" index="2Sb_kV" />
         <reference id="6386504476136521409" name="path" index="2Sb_kU" />
       </concept>
-      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
-        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
-      </concept>
-      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
-        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
-        <child id="6386504476136472817" name="paths" index="2SbYGa" />
-        <child id="8624890525767800998" name="sizeSpecs" index="3SH5Mq" />
-      </concept>
       <concept id="126932837435370850" name="com.mbeddr.doc.structure.Author" flags="ng" index="Wq1Bs">
         <property id="126932837435370852" name="email" index="Wq1Bq" />
         <property id="126932837435370851" name="name" index="Wq1Bt" />
@@ -93,20 +86,21 @@
       <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
       </concept>
-      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.CCodeAsImageParagraph" flags="ng" index="3z_lpz">
+      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.ModelContentAsImageParagraph" flags="ng" index="3z_lpz">
         <child id="6955693250238922832" name="description" index="3z_lpS" />
         <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
       </concept>
-      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractCCodeParagraph" flags="ng" index="3z_lpG">
-        <property id="6955693250238922823" name="showCode" index="3z_lpJ" />
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922821" name="removals" index="3z_lpH" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
-      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.CCodeParagraph" flags="ng" index="3z_lpU">
+      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
+        <property id="6955693250238922835" name="text" index="3z_lpV" />
         <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
-      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.CodeRefWord" flags="ng" index="3z_lpY">
-        <child id="6955693250238922839" name="codeptr" index="3z_lpZ" />
+      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.ModelContentRefWord" flags="ng" index="3z_lpY">
+        <child id="6955693250238922839" name="modelContentPtr" index="3z_lpZ" />
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
@@ -133,12 +127,6 @@
         <property id="8730648445434044905" name="language" index="1DKdXC" />
         <property id="8730648445434044906" name="text" index="1DKdXF" />
       </concept>
-      <concept id="8624890525767637976" name="com.mbeddr.doc.structure.PageWidthSizeSpec" flags="ng" index="3SGHZ$">
-        <property id="8624890525767637977" name="percentage" index="3SGHZ_" />
-      </concept>
-      <concept id="8624890525767800825" name="com.mbeddr.doc.structure.NamedSizeSpec" flags="ng" index="3SH5f5">
-        <child id="8624890525767800827" name="spec" index="3SH5f7" />
-      </concept>
       <concept id="5378658552262903588" name="com.mbeddr.doc.structure.Item" flags="ng" index="3X6T9g">
         <child id="5378658552262903589" name="text" index="3X6T9h" />
       </concept>
@@ -147,62 +135,21 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractFilePicker" flags="ng" index="3N1QpV">
-        <property id="6156524541422553710" name="path" index="3N1Lgt" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
-  <node concept="2SbYGP" id="2ipt67gLxW0">
-    <property role="TrG5h" value="Config" />
-    <property role="3GE5qa" value="config" />
-    <node concept="2SbYGw" id="45LXldJZEw7" role="2SbYGa">
-      <property role="TrG5h" value="images" />
-      <node concept="9PVaO" id="7aNtjNm4Cpc" role="9PVG_">
-        <property role="3N1Lgt" value="images" />
-      </node>
-    </node>
-    <node concept="2SbYGw" id="4Rhu9QGKvnV" role="2SbYGa">
-      <property role="TrG5h" value="hwimages" />
-      <node concept="9PVaO" id="4Rhu9QGKvnW" role="9PVG_">
-        <property role="3N1Lgt" value="images/ctooling/helloWolrd" />
-      </node>
-    </node>
-    <node concept="3SH5f5" id="7uLL3Mf2teF" role="3SH5Mq">
-      <property role="TrG5h" value="width100" />
-      <node concept="3SGHZ$" id="7uLL3Mf2teH" role="3SH5f7">
-        <property role="3SGHZ_" value="100" />
-      </node>
-    </node>
-    <node concept="3SH5f5" id="7uLL3Mf2teJ" role="3SH5Mq">
-      <property role="TrG5h" value="width80" />
-      <node concept="3SGHZ$" id="7uLL3Mf2teK" role="3SH5f7">
-        <property role="3SGHZ_" value="80" />
-      </node>
-    </node>
-    <node concept="2SbYGw" id="5jGyeU5XLXS" role="Cbewh">
-      <property role="TrG5h" value="vis" />
-      <node concept="9PVaO" id="7aNtjNm4Cp9" role="9PVG_">
-        <property role="3N1Lgt" value="_vis" />
-      </node>
-    </node>
-  </node>
   <node concept="1_1swa" id="yrKNEnvQ24">
     <property role="TrG5h" value="D_Debugging" />
     <property role="yApLE" value="4" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
-    <node concept="1mvXsy" id="2x0XdsgGh7S" role="1_0VJ0">
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <node concept="1_0VNX" id="3mn43GO6BBY" role="1_0VJ0">
       <property role="TrG5h" value="debugging" />
       <property role="1_0VJr" value="Debugging" />
       <node concept="1_0LV8" id="6OxdrRm_Gpq" role="1_0VJ0">
@@ -279,7 +226,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="2ZXYLt7W0ZC" role="19SJt6">
-              <property role="19SUeA" value="or press " />
+              <property role="19SUeA" value=" or press " />
             </node>
             <node concept="2OoWia" id="1IjqGpz8_LM" role="19SJt6">
               <node concept="19SGf9" id="1IjqGpz8_LP" role="$DsGW">
@@ -309,7 +256,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="6Kly4FTRI5O" role="2SbwM5">
             <property role="2Sb_kV" value="debugger/debugger9.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="6Kly4FTRFKQ" role="2SaI5j">
             <node concept="19SGf9" id="6Kly4FTRFKR" role="OjmMu">
@@ -354,7 +301,7 @@
           <property role="1DKIkx" value="true" />
           <node concept="2Sb_l4" id="6Kly4FTRQhj" role="2SbwM5">
             <property role="2Sb_kV" value="debugger/debugger5.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="6Kly4FTRP5k" role="2SaI5j">
             <node concept="19SGf9" id="6Kly4FTRP5l" role="OjmMu">
@@ -368,7 +315,7 @@
         <node concept="1_0LV8" id="6Kly4FTRTJA" role="1_0VJ0">
           <node concept="19SGf9" id="6Kly4FTRTJB" role="1_0LWR">
             <node concept="19SUe$" id="6Kly4FTRTJC" role="19SJt6">
-              <property role="19SUeA" value="The debugger UI should now appear at the bottom of the MPS window. In the lower left corner of this UI,  you can see two activated buttons: a green (arrow) and a red (square) one. This indicates,  that the debugger is now connected to the underlying C debugger. You can now start program execution by clicking on the green (arrow) button. This will suspend the debugger on the first line of the main function, on your previously created breakoint:" />
+              <property role="19SUeA" value="The debugger UI should now appear at the bottom of the MPS window. In the lower left corner of this UI,  you can see two activated buttons: a green (arrow) and a red (square) one. This indicates,  that the debugger is now connected to the underlying C debugger. You can now start program execution by clicking on the green (arrow) button. This will suspend the debugger on the first line of the main function, on your previously created breakpoint:" />
             </node>
           </node>
         </node>
@@ -378,7 +325,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="6Kly4FTRTNa" role="2SbwM5">
             <property role="2Sb_kV" value="debugger/debugger10.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="6Kly4FTRTKj" role="2SaI5j">
             <node concept="19SGf9" id="6Kly4FTRTKk" role="OjmMu">
@@ -474,7 +421,7 @@
             <node concept="19SUe$" id="1IjqGpzdYqi" role="19SJt6">
               <property role="19SUeA" value=" and " />
             </node>
-            <node concept="2vpllh" id="2ZXYLt7Wgal" role="19SJt6">
+            <node concept="1jUjqm" id="yaVrOusiPS" role="19SJt6">
               <node concept="19SGf9" id="2ZXYLt7Wgam" role="$DsGW">
                 <node concept="19SUe$" id="2ZXYLt7Wgan" role="19SJt6">
                   <property role="19SUeA" value="argv" />
@@ -497,7 +444,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="6Kly4FTRW8J" role="2SbwM5">
             <property role="2Sb_kV" value="debugger/debugger11.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="6Kly4FTRW8K" role="2SaI5j">
             <node concept="19SGf9" id="6Kly4FTRW8L" role="OjmMu">
@@ -517,8 +464,8 @@
   <node concept="1_1swa" id="6UY8Kx5jzAQ">
     <property role="TrG5h" value="F_LegacyCode" />
     <property role="yApLE" value="8" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
-    <node concept="1mvXsy" id="2x0XdsgGhBL" role="1_0VJ0">
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <node concept="1_0VNX" id="3mn43GO6C$J" role="1_0VJ0">
       <property role="TrG5h" value="accessingLibraries" />
       <property role="1_0VJr" value="Accessing Libraries" />
       <node concept="1_0LV8" id="6UY8Kx5jEu3" role="1_0VJ0">
@@ -582,6 +529,7 @@
         <node concept="3z_lpU" id="5dchr4QgHJC" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="                                                                                                                                                    &#10; stdlib_stub                                                                                                                                        &#10;// contents are exported by default                                                                                                                 &#10;model   com.mbeddr.tutorial.documentation.code    imports nothing                                                                                   &#10;                                                                                                                                                    &#10;                                                                                                                                                    &#10;                                                                                                      resources 6b853dfb-19be-33ee-b67c-33b658dd0753" />
           <node concept="2Cuv_b" id="5dchr4QgTJn" role="3z_lpH">
             <ref role="2Cuq_M" to="x27k:5jyom5fOqJw" resolve="HeaderDescriptor" />
           </node>
@@ -597,7 +545,7 @@
         <node concept="1_0LV8" id="6UY8Kx5jNoX" role="1_0VJ0">
           <node concept="19SGf9" id="6UY8Kx5jNoY" role="1_0LWR">
             <node concept="19SUe$" id="6UY8Kx5jNoZ" role="19SJt6">
-              <property role="19SUeA" value="An external module is always associated with one or more \&quot;real\&quot; header files. The trick is that when an implementation module imports an external module in mbeddr, upon generation of the textual C code, the referenced real header is included into the C file. This also means that, even if you " />
+              <property role="19SUeA" value="An external module is always associated with one or more &quot;real&quot; header files. The trick is that when an implementation module imports an external module in mbeddr, upon generation of the textual C code, the referenced real header is included into the C file. This also means that, even if you " />
             </node>
             <node concept="1jUjqm" id="74GHMTaim0D" role="19SJt6">
               <node concept="19SGf9" id="74GHMTaim0E" role="$DsGW">
@@ -651,6 +599,7 @@
         <node concept="3z_lpU" id="5dchr4QgX8W" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="                                                                                                                                  &#10; stdlib_stub                                                                                                                      &#10;// contents are exported by default                                                                                               &#10;model   com.mbeddr.tutorial.documentation.code    imports nothing                                                                 &#10;                                                                                                                                  &#10;                                                                                                                                  &#10;                                                                                                      resources header: &lt;stdlib.h&gt;" />
           <node concept="2NCZwO" id="5dchr4QgX8Y" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4QgX8Z" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" resolve="stdlib_stub" />
@@ -740,6 +689,7 @@
         <node concept="3z_lpU" id="5dchr4Qh0Kr" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="                                                                                                                                  &#10; stdlib_stub                                                                                                                      &#10;// contents are exported by default                                                                                               &#10;model   com.mbeddr.tutorial.documentation.code    imports nothing                                                                 &#10;                                                                                                                                  &#10;                                                                                                                                  &#10;void* malloc(size_t size);                                                                                                        &#10;void free(void* ptr);                                                                                                             &#10;                                                                                                      resources header: &lt;stdlib.h&gt;" />
           <node concept="2NCZwO" id="5dchr4Qh0Kt" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4Qh0Ku" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" resolve="stdlib_stub" />
@@ -838,7 +788,7 @@
   <node concept="1_1swa" id="1OEOMsplf5g">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_CTooling" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0j5j" id="4IT6uoYGFh" role="1DXQ57">
       <ref role="1_0j5g" node="yrKNEnvQ24" resolve="D_Debugging" />
     </node>
@@ -895,7 +845,7 @@
   <node concept="1_1swa" id="5dchr4QjR6$">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="A_BuildingInTheIDE" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0j5j" id="4IT6uoYRy9" role="1DXQ57">
       <ref role="1_0j5g" node="3MXxQvv3i_o" resolve="C_LaunchConfiguration" />
     </node>
@@ -947,6 +897,8 @@
         </node>
         <node concept="3z_lpU" id="5dchr4QlodI" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="BuildConfiguration (c.m.t.d.code)&#10;                                 &#10;Platform                         &#10;GNU paths are not checked        &#10;  make: make                     &#10;  gdb: gdb                       &#10;  compiler                       &#10;    path to executable: gcc      &#10;    compiler options: -std=c99   &#10;    debug options: -g            &#10;                                 &#10;                                 &#10;Configuration Items              &#10;reporting printf                 &#10;                                 &#10;Binaries                         &#10;                                 &#10;executable HelloWorld is test {  &#10;  modules:                       &#10;    HelloWorld                   &#10;}                                " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="5dchr4QlodJ" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4Qlog_" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" resolve="BuildConfiguration (c.m.t.d.code)" />
@@ -1136,6 +1088,7 @@
         <node concept="3z_lpU" id="5dchr4QlnWG" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="reporting printf" />
           <node concept="2NCZwO" id="5dchr4QlnWH" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4QlnZ5" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" resolve="BuildConfiguration (c.m.t.d.code)" />
@@ -1257,6 +1210,8 @@
         </node>
         <node concept="3z_lpU" id="5dchr4QloG6" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="                               &#10;executable HelloWorld is test {&#10;  modules:                     &#10;    HelloWorld                 &#10;}                              " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="5dchr4QloG7" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4QloJD" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" resolve="BuildConfiguration (c.m.t.d.code)" />
@@ -1361,7 +1316,7 @@
   <node concept="1_1swa" id="1LxA8cJ$0Nw">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="B_CommandLineBuild" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="7yEEdZqjnHd" role="1_0VJ0">
       <property role="1_0VJr" value="Building Binaries from the Command-Line" />
       <property role="TrG5h" value="Building" />
@@ -1930,7 +1885,7 @@
   <node concept="1_1swa" id="3MXxQvv3i_o">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="C_LaunchConfiguration" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0j5j" id="3MXxQvvjQKz" role="1DXQ57">
       <ref role="1_0j5g" node="yrKNEnvQ24" resolve="D_Debugging" />
     </node>
@@ -2101,9 +2056,9 @@
                 <node concept="19SUe$" id="1IjqGpzeIdb" role="19SJt6">
                   <property role="19SUeA" value=") of the executable and select " />
                 </node>
-                <node concept="1jUjqm" id="3MXxQvvjHQd" role="19SJt6">
-                  <node concept="19SGf9" id="3MXxQvvjHQe" role="$DsGW">
-                    <node concept="19SUe$" id="3MXxQvvjHQf" role="19SJt6">
+                <node concept="2OlAs7" id="yaVrOupU8e" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOupU8h" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOupU8i" role="19SJt6">
                       <property role="19SUeA" value="Run PlainCDemo" />
                     </node>
                   </node>
@@ -2111,9 +2066,9 @@
                 <node concept="19SUe$" id="3MXxQvvjHQg" role="19SJt6">
                   <property role="19SUeA" value=" (or similarly " />
                 </node>
-                <node concept="1jUjqm" id="3MXxQvvjLlr" role="19SJt6">
-                  <node concept="19SGf9" id="3MXxQvvjLls" role="$DsGW">
-                    <node concept="19SUe$" id="3MXxQvvjLlt" role="19SJt6">
+                <node concept="2OlAs7" id="yaVrOupUs0" role="19SJt6">
+                  <node concept="19SGf9" id="yaVrOupUs3" role="$DsGW">
+                    <node concept="19SUe$" id="yaVrOupUs4" role="19SJt6">
                       <property role="19SUeA" value="Debug PlainCDemo" />
                     </node>
                   </node>
@@ -2171,7 +2126,7 @@
           <property role="TrG5h" value="LaunchConfiguration_ContextMenu" />
           <node concept="2Sb_l4" id="3MXxQvvjKRV" role="2SbwM5">
             <property role="2Sb_kV" value="ctooling/launchconfig_context.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="3MXxQvvjKOH" role="2SaI5j">
             <node concept="19SGf9" id="3MXxQvvjKOI" role="OjmMu">
@@ -2187,7 +2142,7 @@
           <property role="TrG5h" value="LaunchConfiguration_Build" />
           <node concept="2Sb_l4" id="3MXxQvvjL3w" role="2SbwM5">
             <property role="2Sb_kV" value="ctooling/launchconfig_buildconfig.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="3MXxQvvjL3x" role="2SaI5j">
             <node concept="19SGf9" id="3MXxQvvjL3y" role="OjmMu">
@@ -2203,9 +2158,9 @@
             <node concept="19SUe$" id="3MXxQvvjNdv" role="19SJt6">
               <property role="19SUeA" value="After you have run the executable a new launch configuration will be created with the name of the executable that you have specified. If a configuration already exists with the same name then it will be overwritten. From this point, it is also possible to run/debug the executable from the menu bar or from the " />
             </node>
-            <node concept="1jUjqm" id="3MXxQvvjNj9" role="19SJt6">
-              <node concept="19SGf9" id="3MXxQvvjNja" role="$DsGW">
-                <node concept="19SUe$" id="3MXxQvvjNjb" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOupUsH" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOupUsK" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOupUsL" role="19SJt6">
                   <property role="19SUeA" value="Run" />
                 </node>
               </node>
@@ -2272,7 +2227,7 @@
               <property role="19SUeA" value=". You can read more about how you can debug your application in " />
             </node>
             <node concept="1_0GAv" id="3MXxQvvjQIH" role="19SJt6">
-              <ref role="1_0GAl" node="2x0XdsgGh7S" resolve="debugging" />
+              <ref role="1_0GAl" node="3mn43GO6BBY" resolve="debugging" />
             </node>
             <node concept="19SUe$" id="3MXxQvvjQII" role="19SJt6">
               <property role="19SUeA" value="." />
@@ -2284,7 +2239,7 @@
           <property role="TrG5h" value="LaunchConfiguration_Menu" />
           <node concept="2Sb_l4" id="3MXxQvvjMTR" role="2SbwM5">
             <property role="2Sb_kV" value="ctooling/launchconfig_menu.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="3MXxQvvjMTS" role="2SaI5j">
             <node concept="19SGf9" id="3MXxQvvjMTT" role="OjmMu">
@@ -2355,7 +2310,7 @@
           <property role="1DKIkx" value="true" />
           <node concept="2Sb_l4" id="3MXxQvvjQrs" role="2SbwM5">
             <property role="2Sb_kV" value="ctooling/launchconfig_contents.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="3MXxQvvjQpE" role="2SaI5j">
             <node concept="19SGf9" id="3MXxQvvjQpF" role="OjmMu">
@@ -2531,7 +2486,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="3MXxQvvkUEc" role="2SbwM5">
             <property role="2Sb_kV" value="ctooling/launchconfig_tests.png" />
-            <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="3MXxQvvkUCU" role="2SaI5j">
             <node concept="19SGf9" id="3MXxQvvkUCV" role="OjmMu">
@@ -2552,7 +2507,7 @@
   <node concept="1_1swa" id="4IT6uoYGEZ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="E_HelloWorld" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="4IT6uoYGF0" role="1_0VJ0">
       <property role="TrG5h" value="helloWorld" />
       <property role="1_0VJr" value="Hello, World" />
@@ -2610,7 +2565,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="4Rhu9QGKvo1" role="2SbwM5">
             <property role="2Sb_kV" value="newProjWizard.png" />
-            <ref role="2Sb_kU" node="4Rhu9QGKvnV" resolve="hwimages" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4J" resolve="hwimages" />
           </node>
           <node concept="OjmMv" id="4Rhu9QGKvn_" role="2SaI5j">
             <node concept="19SGf9" id="4Rhu9QGKvnA" role="OjmMu">
@@ -2680,7 +2635,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="4Rhu9QGKyn$" role="2SbwM5">
             <property role="2Sb_kV" value="newModel.png" />
-            <ref role="2Sb_kU" node="4Rhu9QGKvnV" resolve="hwimages" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4J" resolve="hwimages" />
           </node>
           <node concept="OjmMv" id="4Rhu9QGKyn_" role="2SaI5j">
             <node concept="19SGf9" id="4Rhu9QGKynA" role="OjmMu">
@@ -2706,9 +2661,9 @@
             <node concept="19SUe$" id="4Rhu9QGKz7_" role="19SJt6">
               <property role="19SUeA" value=" from its context menu). In any case, select the " />
             </node>
-            <node concept="2OoWia" id="4Rhu9QGKzAV" role="19SJt6">
-              <node concept="19SGf9" id="4Rhu9QGKzAW" role="$DsGW">
-                <node concept="19SUe$" id="4Rhu9QGKzAX" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOupUxu" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOupUxx" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOupUxy" role="19SJt6">
                   <property role="19SUeA" value="Used Languages" />
                 </node>
               </node>
@@ -2716,9 +2671,9 @@
             <node concept="19SUe$" id="4Rhu9QGKzAY" role="19SJt6">
               <property role="19SUeA" value=" tab and use the " />
             </node>
-            <node concept="2OoWia" id="4Rhu9QGKzBk" role="19SJt6">
-              <node concept="19SGf9" id="4Rhu9QGKzBl" role="$DsGW">
-                <node concept="19SUe$" id="4Rhu9QGKzBm" role="19SJt6">
+            <node concept="2OlAs7" id="yaVrOutuRq" role="19SJt6">
+              <node concept="19SGf9" id="yaVrOutuRt" role="$DsGW">
+                <node concept="19SUe$" id="yaVrOutuRu" role="19SJt6">
                   <property role="19SUeA" value="+" />
                 </node>
               </node>
@@ -2759,7 +2714,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="4Rhu9QGKzTk" role="2SbwM5">
             <property role="2Sb_kV" value="modelprops.png" />
-            <ref role="2Sb_kU" node="4Rhu9QGKvnV" resolve="hwimages" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4J" resolve="hwimages" />
           </node>
           <node concept="OjmMv" id="4Rhu9QGKzTl" role="2SaI5j">
             <node concept="19SGf9" id="4Rhu9QGKzTm" role="OjmMu">
@@ -2870,6 +2825,8 @@
         </node>
         <node concept="3z_lpU" id="4Rhu9QGM6ZD" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="exported testcase testAdding {&#10;  assert-equals(0) 1 + 1 == 3;&#10;} testAdding(test case)       " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="4Rhu9QGM6ZE" role="3z_lpI">
             <node concept="2NCMab" id="4Rhu9QGM70l" role="2NCMaf">
               <ref role="2NCMaa" to="orbb:4Rhu9QGK$vN" resolve="HelloWorld" />
@@ -2951,6 +2908,8 @@
         </node>
         <node concept="3z_lpU" id="4Rhu9QGM9$8" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="exported int32 main(int32 argc, string[] argv) {&#10;  return test testAdding; (unittest);           &#10;} main (function)                               " />
+          <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="4Rhu9QGM9$9" role="3z_lpI">
             <node concept="2NCMab" id="4Rhu9QGM9_k" role="2NCMaf">
               <ref role="2NCMaa" to="orbb:4Rhu9QGK$vN" resolve="HelloWorld" />
@@ -3240,7 +3199,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="4Rhu9QGM$W8" role="2SbwM5">
             <property role="2Sb_kV" value="running.png" />
-            <ref role="2Sb_kU" node="4Rhu9QGKvnV" resolve="hwimages" />
+            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4J" resolve="hwimages" />
           </node>
           <node concept="OjmMv" id="4Rhu9QGM$Vt" role="2SaI5j">
             <node concept="19SGf9" id="4Rhu9QGM$Vu" role="OjmMu">

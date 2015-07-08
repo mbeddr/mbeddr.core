@@ -22,6 +22,7 @@
     <import index="88zw" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tj7y" ref="r:db2c041e-54bd-4fbb-9087-056c7a8ef247(com.mbeddr.mpsutil.hyperlink.editor)" implicit="true" />
+    <import index="4gky" ref="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" implicit="true" />
     <import index="z726" ref="r:6b7eb85f-64d8-4de6-8906-0e18804729df(com.mbeddr.doc.editor)" implicit="true" />
   </imports>
   <registry>
@@ -34,7 +35,6 @@
         <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
-      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -90,7 +90,6 @@
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
-      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
@@ -386,14 +385,8 @@
       </node>
       <node concept="2iRfu4" id="3OU98G0_Sbv" role="2iSdaV" />
     </node>
-    <node concept="3EZMnI" id="3OU98G0A4EZ" role="6VMZX">
-      <node concept="l2Vlx" id="3OU98G0A4F0" role="2iSdaV" />
-      <node concept="3F0ifn" id="3OU98G0A4F1" role="3EZMnx">
-        <property role="3F0ifm" value="textual override:" />
-      </node>
-      <node concept="3F0A7n" id="3OU98G0A4F2" role="3EZMnx">
-        <ref role="1NtTu8" to="soy0:45LXldK0sj$" resolve="textOverride" />
-      </node>
+    <node concept="PMmxH" id="3mn43GPgif6" role="6VMZX">
+      <ref role="PMmxG" to="z726:3mn43GP7LqB" resolve="TextOverrideInspectorComponent" />
     </node>
   </node>
   <node concept="24kQdi" id="4ulp8VfZJfQ">
@@ -565,8 +558,8 @@
             <node concept="3clFbF" id="4ulp8VfZNJM" role="3cqZAp">
               <node concept="2OqwBi" id="4ulp8VfZNP2" role="3clFbG">
                 <node concept="pncrf" id="4ulp8VfZNJL" role="2Oq$k0" />
-                <node concept="2qgKlT" id="4ulp8VfZOtW" role="2OqNvi">
-                  <ref role="37wK5l" to="xmkr:1T7O9iWPN9q" resolve="getTextualRepresentation" />
+                <node concept="2qgKlT" id="3mn43GPgDuO" role="2OqNvi">
+                  <ref role="37wK5l" to="4gky:1T7O9iWPN9q" resolve="getTextualRepresentation" />
                 </node>
               </node>
             </node>

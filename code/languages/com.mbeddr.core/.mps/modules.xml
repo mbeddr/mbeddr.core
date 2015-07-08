@@ -2,7 +2,6 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.core.tests.build/com.mbeddr.core.tests.build.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.core/core.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.arrays/arrays.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.base/base.mpl" folder="core" />

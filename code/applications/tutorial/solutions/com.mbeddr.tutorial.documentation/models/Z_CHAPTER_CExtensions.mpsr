@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:38897e08-83fd-42c7-91d3-65b102721940(com.mbeddr.tutorial.documentation.ug.cextensions)" content="root">
   <persistence version="9" />
-  <imports />
+  <imports>
+    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" implicit="true" />
+  </imports>
   <registry>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
       <concept id="6165313375056012512" name="com.mbeddr.doc.structure.DocumentInclude" flags="ng" index="$CzcT">
@@ -34,7 +36,7 @@
   <node concept="1_1swa" id="1OEOMspkYrg">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_CExtensions" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="1OEOMsplmwh" role="1_0VJ0">
       <property role="TrG5h" value="cextensions" />
       <property role="1_0VJr" value="C Extensions" />

@@ -10,7 +10,6 @@
     <dependency reexport="false">23f985f2-965f-4af1-aee8-a32677429514(com.mbeddr.mpsutil.multilingual.common)</dependency>
     <dependency reexport="false">c038e2c4-0a5f-47e2-a3e8-327c1084f6a1(com.mbeddr.mpsutil.multilingual.concept.runtime)</dependency>
     <dependency reexport="false">32addf6f-1f14-40cb-991d-e0fddb7506c1(com.mbeddr.mpsutil.preferenceform.runtime)</dependency>
-    <dependency reexport="false">4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>d2a1d976-43a2-462f-ac3a-9b258ced839d(com.mbeddr.mpsutil.multilingual.baseLanguage)</usedLanguage>

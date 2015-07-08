@@ -8,7 +8,6 @@
   <imports>
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" />
-    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -37,6 +36,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -51,6 +53,11 @@
     <property role="TrG5h" value="HTMLRenderer" />
     <property role="34LRSv" value="html" />
     <ref role="1TJDcQ" to="2c95:2TZO3DbvSLN" resolve="DocumentRenderer" />
+    <node concept="1TJgyj" id="QRmqzIqw10" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="cssSpec" />
+      <ref role="20lvS9" node="5wmuVxvC2gr" resolve="CssSpecification" />
+    </node>
     <node concept="1TJgyi" id="3RseghIclET" role="1TKVEl">
       <property role="TrG5h" value="stylesheet" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -62,17 +69,119 @@
     <ref role="1TJDcQ" to="iuxj:5M4a$b5iL2M" resolve="XmlElement" />
   </node>
   <node concept="1TIwiD" id="5wmuVxvC2gr">
-    <property role="TrG5h" value="CssFile" />
+    <property role="TrG5h" value="CssSpecification" />
     <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="css" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="QRmqzIpg44" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rulesets" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="QRmqzIpdtE" resolve="CssRuleset" />
+    </node>
     <node concept="PrWs8" id="5wmuVxvC$57" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="5wmuVxvC$59" role="1TKVEi">
+  </node>
+  <node concept="1TIwiD" id="QRmqzIpdtE">
+    <property role="TrG5h" value="CssRuleset" />
+    <property role="3GE5qa" value="css" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="QRmqzIpg47" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="text" />
+      <property role="20kJfa" value="selectors" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="QRmqzIpg3m" resolve="CssSelector" />
+    </node>
+    <node concept="1TJgyj" id="QRmqzIpg4a" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="declarations" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="QRmqzIpg3J" resolve="CssDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="QRmqzIpg3m">
+    <property role="TrG5h" value="CssSelector" />
+    <property role="3GE5qa" value="css" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="QRmqzIpg4f" role="1TKVEl">
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="QRmqzIpg3J">
+    <property role="TrG5h" value="CssDeclaration" />
+    <property role="3GE5qa" value="css" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="QRmqzIpg4v" role="1TKVEl">
+      <property role="TrG5h" value="property" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="QRmqzIpg4y" role="1TKVEl">
+      <property role="TrG5h" value="expression" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="QRmqzJj_2W">
+    <property role="TrG5h" value="TocEntry" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="QRmqzJj_30" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="subEntries" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="QRmqzJj_2W" resolve="TocEntry" />
+    </node>
+    <node concept="1TJgyj" id="QRmqzJj_2X" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="section" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+      <ref role="20lvS9" to="2c95:2TZO3Dbv6Ju" resolve="AbstractSection" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="QRmqzJj_qE">
+    <property role="TrG5h" value="TocStart" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="QRmqzJj_qF" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="entries" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="QRmqzJj_2W" resolve="TocEntry" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="QRmqzKqjsY">
+    <property role="TrG5h" value="KeyPress" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="QRmqzKqjto" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="keys" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="QRmqzKqjtk" resolve="Key" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="QRmqzKqjtk">
+    <property role="TrG5h" value="Key" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="QRmqzKqjtl" role="1TKVEl">
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="QRmqzKAgfz">
+    <property role="TrG5h" value="MenuClick" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="QRmqzKAgfF" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="items" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="QRmqzKAgf$" resolve="MenuItem" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="QRmqzKAgf$">
+    <property role="TrG5h" value="MenuItem" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="QRmqzKAgf_" role="1TKVEl">
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

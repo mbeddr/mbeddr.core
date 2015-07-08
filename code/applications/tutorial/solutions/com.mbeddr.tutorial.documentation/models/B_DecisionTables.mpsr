@@ -2,6 +2,7 @@
 <model ref="r:38897e08-83fd-42c7-91d3-65b102721940(com.mbeddr.tutorial.documentation.ug.cextensions)" content="root">
   <persistence version="9" />
   <imports>
+    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" implicit="true" />
     <import index="e1tx" ref="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" implicit="true" />
     <import index="us0v" ref="r:22b9d29d-483d-4f08-8d1b-4e6567157caf(com.mbeddr.tutorial.documentation.ug.analyses)" implicit="true" />
   </imports>
@@ -22,12 +23,13 @@
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
-      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.CPNamedNodeElement" flags="ng" index="2NCMab">
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
       </concept>
-      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.CodePointer" flags="ng" index="2NCZwO">
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
+      <concept id="2286331641391049225" name="com.mbeddr.doc.structure.KeyPressFormattedText" flags="ng" index="2OoWia" />
       <concept id="6386504476136263187" name="com.mbeddr.doc.structure.ImageParagraph" flags="ng" index="2SaynC">
         <child id="6386504476136278696" name="description" index="2SaI5j" />
         <child id="6386504476136531838" name="resource" index="2SbwM5" />
@@ -38,11 +40,12 @@
         <reference id="6386504476136521409" name="path" index="2Sb_kU" />
       </concept>
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
-      <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
-      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractCCodeParagraph" flags="ng" index="3z_lpG">
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
-      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.CCodeParagraph" flags="ng" index="3z_lpU">
+      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
+        <property id="6955693250238922835" name="text" index="3z_lpV" />
         <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
@@ -87,8 +90,8 @@
   <node concept="1_1swa" id="6UY8Kx5iuLF">
     <property role="TrG5h" value="B_DecisionTables" />
     <property role="yApLE" value="7" />
-    <ref role="G9hjw" node="2ipt67gLxW0" resolve="Config" />
-    <node concept="1mvXsy" id="2x0XdsgGhzR" role="1_0VJ0">
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <node concept="1_0VNX" id="3mn43GO8cnY" role="1_0VJ0">
       <property role="TrG5h" value="decisionTables" />
       <property role="1_0VJr" value="Decision Tables" />
       <node concept="1_0LV8" id="6UY8Kx5izzY" role="1_0VJ0">
@@ -120,6 +123,8 @@
       </node>
       <node concept="3z_lpU" id="6UY8Kx5iAjv" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
+        <property role="3z_lpV" value="exported cs interface FlightJudger {&#10;  void reset()                      &#10;  void addTrackpoint(Trackpoint* tp)&#10;  int16 getResult()                 &#10;}                                   " />
+        <property role="3z_lpJ" value="false" />
         <node concept="2NCZwO" id="1YUFCeGolCE" role="3z_lpI">
           <node concept="2NCMab" id="1YUFCeGolCF" role="2NCMaf">
             <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -181,7 +186,7 @@
         <property role="TrG5h" value="dectab" />
         <node concept="2Sb_l4" id="6UY8Kx5iUhy" role="2SbwM5">
           <property role="2Sb_kV" value="tutorial/dectab.png" />
-          <ref role="2Sb_kU" node="45LXldJZEw7" resolve="images" />
+          <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
         </node>
         <node concept="OjmMv" id="6UY8Kx5iUgR" role="2SaI5j">
           <node concept="19SGf9" id="6UY8Kx5iUgS" role="OjmMu">
@@ -207,9 +212,9 @@
           <node concept="19SUe$" id="6UY8Kx5iZ5a" role="19SJt6">
             <property role="19SUeA" value=" - this instanciates the concept.  To add a column, hit " />
           </node>
-          <node concept="1jUjqm" id="6UY8Kx5iZ5k" role="19SJt6">
-            <node concept="19SGf9" id="6UY8Kx5iZ5l" role="$DsGW">
-              <node concept="19SUe$" id="6UY8Kx5iZ5m" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuw0L9" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuw0Lc" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuw0Ld" role="19SJt6">
                 <property role="19SUeA" value="enter" />
               </node>
             </node>
@@ -217,9 +222,9 @@
           <node concept="19SUe$" id="6UY8Kx5iZ5j" role="19SJt6">
             <property role="19SUeA" value=" in one of the cells. For adding a row, move your cursor  on the left side of the table (between the default return value and the table) and hit " />
           </node>
-          <node concept="1jUjqm" id="6UY8Kx5iZ5x" role="19SJt6">
-            <node concept="19SGf9" id="6UY8Kx5iZ5y" role="$DsGW">
-              <node concept="19SUe$" id="6UY8Kx5iZ5z" role="19SJt6">
+          <node concept="2OoWia" id="yaVrOuw0LK" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuw0LN" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuw0LO" role="19SJt6">
                 <property role="19SUeA" value="enter" />
               </node>
             </node>
@@ -241,6 +246,8 @@
       </node>
       <node concept="3z_lpU" id="6UY8Kx5j6iB" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
+        <property role="3z_lpV" value="instances instancesJudging {&#10;  instance Judge theJudge   &#10;  adapt j -&gt; theJudge.judger&#10;}                           " />
+        <property role="3z_lpJ" value="false" />
         <node concept="2NCZwO" id="1YUFCeGolG4" role="3z_lpI">
           <node concept="2NCMab" id="1YUFCeGolG5" role="2NCMaf">
             <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
@@ -273,7 +280,7 @@
             </node>
           </node>
           <node concept="19SUe$" id="6UY8Kx5j7H6" role="19SJt6">
-            <property role="19SUeA" value=" construct can be used to \&quot;sneak in\&quot; a unit into a regular value. This is useful for interacting with non-unit-aware (library) code. Note how the expression for " />
+            <property role="19SUeA" value=" construct can be used to &quot;sneak in&quot; a unit into a regular value. This is useful for interacting with non-unit-aware (library) code. Note how the expression for " />
           </node>
           <node concept="1jUjqm" id="6UY8Kx5j7Hk" role="19SJt6">
             <node concept="19SGf9" id="6UY8Kx5j7Hl" role="$DsGW">
@@ -309,6 +316,8 @@
       </node>
       <node concept="3z_lpU" id="6UY8Kx5jdyS" role="1_0VJ0">
         <property role="3z_lpW" value="mbeddr" />
+        <property role="3z_lpV" value="exported testcase testJudging {                          &#10;  initialize instancesJudging;                           &#10;  j.reset();                                             &#10;  Trackpoint[5] points;                                  &#10;  for (i ++ in [0..5[) {                                 &#10;  points[i].id = ((int8) i);                             &#10;  points[i].alt = 1810 + 100 * i m;                      &#10;  points[i].speed = 130 mps+ 10 mps* i;                  &#10;  j.addTrackpoint(&amp;points[i]);                           &#10;} for                                                    &#10;  assert-equals(0) j.getResult() == 0 + 0 + 20 + 20 + 20;&#10;} testJudging(test case)                                 " />
+        <property role="3z_lpJ" value="false" />
         <node concept="2NCZwO" id="1YUFCeGolET" role="3z_lpI">
           <node concept="2NCMab" id="1YUFCeGolEU" role="2NCMaf">
             <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />

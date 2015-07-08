@@ -155,10 +155,10 @@
         <property id="8903209210859212281" name="lineAtBottom" index="1tGk1y" />
         <child id="5785245534399940635" name="rows" index="C6TCM" />
       </concept>
-      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.CPNamedNodeElement" flags="ng" index="2NCMab">
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
       </concept>
-      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.CodePointer" flags="ng" index="2NCZwO">
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
       <concept id="5185579450379471855" name="com.mbeddr.doc.structure.TableCell" flags="ng" index="1xAuFA">
@@ -1948,6 +1948,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="7MGLj3bSlvx" role="3aUrZf">
+      <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="75wo:7_tU7IQtN5G" resolve="RequirementsData" />
       <node concept="b5Tf3" id="7MGLj3bSlvy" role="1lVwrX" />
     </node>

@@ -30,9 +30,8 @@
     <import index="vft3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.concurrent.atomic(JDK/java.util.concurrent.atomic@java_stub)" />
     <import index="znf8" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/r:139b3778-ac9f-4ca9-a48f-e685c023e800(com.mbeddr.mpsutil.httpsupport.rt/com.mbeddr.mpsutil.httpsupport.rt.model)" />
     <import index="m87u" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#javax.servlet.http(com.mbeddr.mpsutil.httpsupport.rt/javax.servlet.http@java_stub)" />
-    <import index="xmho" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#javax.servlet(com.mbeddr.mpsutil.httpsupport.rt/javax.servlet@java_stub)" implicit="true" />
-    <import index="tprs" ref="019b622b-0aef-4dd3-86d0-4eef01f3f6bb/r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide/jetbrains.mps.ide.actions)" implicit="true" />
     <import index="jrbx" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.project(MPS.Platform/jetbrains.mps.project@java_stub)" implicit="true" />
+    <import index="xmho" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#javax.servlet(com.mbeddr.mpsutil.httpsupport.rt/javax.servlet@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -48,7 +47,6 @@
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
         <property id="1204991940915" name="caption" index="2f7twF" />
-        <property id="1217005992861" name="isInvisibleWhenDisabled" index="1rdrE6" />
         <property id="1213283637680" name="isPopup" index="1XlLyE" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
@@ -61,6 +59,7 @@
         <reference id="1203092736097" name="modifiedGroup" index="tU$_T" />
       </concept>
       <concept id="1205679047295" name="jetbrains.mps.lang.plugin.structure.ActionParameterDeclaration" flags="ig" index="2S4$dB" />
+      <concept id="1203680534665" name="jetbrains.mps.lang.plugin.structure.GroupAnchor" flags="ng" index="10WQ6h" />
       <concept id="1206092561075" name="jetbrains.mps.lang.plugin.structure.ActionParameterReferenceOperation" flags="nn" index="3gHZIF" />
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
       <concept id="1217252042208" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterDeclaration" flags="ng" index="1DS2jV">
@@ -1465,38 +1464,18 @@
     <node concept="2tJIrI" id="bBMhoeycYi" role="jymVt" />
     <node concept="3Tm1VV" id="bBMhoey14T" role="1B3o_S" />
   </node>
-  <node concept="tC5Ba" id="2N1CSrzm3gC">
-    <property role="TrG5h" value="clipboardStuffInContextMenu" />
-    <property role="3GE5qa" value="clipboard" />
-    <property role="2f7twF" value="Copy Special" />
-    <property role="1rdrE6" value="true" />
-    <node concept="tT9cl" id="1DVNPtFPBO2" role="2f5YQi">
-      <ref role="tU$_T" to="ekwn:1xsN4xJX8VI" resolve="EditorPopup" />
-    </node>
-    <node concept="ftmFs" id="2N1CSrzm3gD" role="ftER_">
-      <node concept="tCFHf" id="2N1CSrzm3gE" role="ftvYc">
-        <ref role="tCJdB" node="2N1CSrzm3j_" resolve="copyNodeURLToClipboard" />
-      </node>
-    </node>
-  </node>
   <node concept="tC5Ba" id="2N1CSrzm3gG">
-    <property role="TrG5h" value="clipboardStuffInEditMenuCopySpecial" />
+    <property role="TrG5h" value="mbeddrClipboardStuffInEditMenuCopySpecial" />
     <property role="3GE5qa" value="clipboard" />
     <property role="1XlLyE" value="true" />
-    <property role="2f7twF" value="Copy Special" />
+    <property role="2f7twF" value="Copy/Paste Special" />
     <node concept="ftmFs" id="2N1CSrzm3gH" role="ftER_">
+      <node concept="2a7GMi" id="2N1CSrzm3gK" role="ftvYc" />
       <node concept="tCFHf" id="2N1CSrzm3gI" role="ftvYc">
         <ref role="tCJdB" node="2N1CSrzm3k5" resolve="copyXMLNodeToClipboard" />
       </node>
       <node concept="tCFHf" id="2N1CSrzm3gJ" role="ftvYc">
         <ref role="tCJdB" node="2N1CSrzm3kE" resolve="pasteXMLNodeFromClipboard" />
-      </node>
-      <node concept="2a7GMi" id="2N1CSrzm3gK" role="ftvYc" />
-      <node concept="tCFHf" id="2N1CSrzmPRG" role="ftvYc">
-        <ref role="tCJdB" node="2VpA5NFstYe" resolve="copyUUNodeToClipboard" />
-      </node>
-      <node concept="tCFHf" id="2N1CSrzmPRQ" role="ftvYc">
-        <ref role="tCJdB" node="2VpA5NFuIme" resolve="pasteUUNodeFromClipboard" />
       </node>
       <node concept="2a7GMi" id="2N1CSrzm3gN" role="ftvYc" />
       <node concept="tCFHf" id="2N1CSrzm3gO" role="ftvYc">
@@ -1505,10 +1484,14 @@
       <node concept="tCFHf" id="2N1CSrzm3gP" role="ftvYc">
         <ref role="tCJdB" node="2N1CSrzm3j_" resolve="copyNodeURLToClipboard" />
       </node>
+      <node concept="10WQ6h" id="1WzkXggGER5" role="ftvYc">
+        <property role="TrG5h" value="moreCopySpecial" />
+      </node>
+      <node concept="2a7GMi" id="4CkWB8$vANq" role="ftvYc" />
     </node>
     <node concept="tT9cl" id="2N1CSrzm3gR" role="2f5YQi">
-      <ref role="2f8Tey" to="tprs:h$X6qIM" resolve="custom" />
-      <ref role="tU$_T" to="tprs:hyf4Lqj" resolve="Edit" />
+      <ref role="tU$_T" to="ekwn:1xsN4xJX8VI" resolve="EditorPopup" />
+      <ref role="2f8Tey" to="ekwn:1xsN4xJX8VR" resolve="folding" />
     </node>
   </node>
   <node concept="sE7Ow" id="2N1CSrzm3gS">
@@ -2423,230 +2406,6 @@
       <node concept="1oajcY" id="2N1CSrzm3mk" role="1oa70y" />
     </node>
   </node>
-  <node concept="sE7Ow" id="2VpA5NFstYe">
-    <property role="TrG5h" value="copyUUNodeToClipboard" />
-    <property role="2uzpH1" value="Copy Node as UUEncoded XML" />
-    <property role="3GE5qa" value="clipboard.uu" />
-    <node concept="tnohg" id="2VpA5NFsu1L" role="tncku">
-      <node concept="3clFbS" id="2VpA5NFsu1M" role="2VODD2">
-        <node concept="3cpWs8" id="2CtGEWX7vkw" role="3cqZAp">
-          <node concept="3cpWsn" id="2CtGEWX7vkx" role="3cpWs9">
-            <property role="TrG5h" value="s" />
-            <node concept="3uibUv" id="2CtGEWX7vky" role="1tU5fm">
-              <ref role="3uigEE" to="39al:5u_UbmjlGE" resolve="NodeSerizalizer" />
-            </node>
-            <node concept="2ShNRf" id="2CtGEWX7vkz" role="33vP2m">
-              <node concept="1pGfFk" id="2CtGEWX7vk$" role="2ShVmc">
-                <ref role="37wK5l" to="39al:5u_UbmjlHJ" resolve="NodeSerizalizer" />
-                <node concept="2OqwBi" id="2VpA5NFt5ZM" role="37wK5m">
-                  <node concept="2WthIp" id="2VpA5NFt5ZP" role="2Oq$k0" />
-                  <node concept="3gHZIF" id="2VpA5NFt5ZR" role="2OqNvi">
-                    <ref role="2WH_rO" node="2VpA5NFsyuH" resolve="selectedNode" />
-                  </node>
-                </node>
-                <node concept="3clFbT" id="2VpA5NFsd3B" role="37wK5m">
-                  <property role="3clFbU" value="true" />
-                </node>
-                <node concept="Xl_RD" id="78QQ3NsCapB" role="37wK5m">
-                  <property role="Xl_RC" value="_" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2CtGEWX7vkA" role="3cqZAp">
-          <node concept="3cpWsn" id="2CtGEWX7vkB" role="3cpWs9">
-            <property role="TrG5h" value="clip" />
-            <node concept="3uibUv" id="2CtGEWX7vkC" role="1tU5fm">
-              <ref role="3uigEE" to="tt4m:~Clipboard" resolve="Clipboard" />
-            </node>
-            <node concept="2OqwBi" id="2CtGEWX7vkD" role="33vP2m">
-              <node concept="2YIFZM" id="2CtGEWX7vkE" role="2Oq$k0">
-                <ref role="37wK5l" to="1t7x:~Toolkit.getDefaultToolkit():java.awt.Toolkit" resolve="getDefaultToolkit" />
-                <ref role="1Pybhc" to="1t7x:~Toolkit" resolve="Toolkit" />
-              </node>
-              <node concept="liA8E" id="2CtGEWX7vkF" role="2OqNvi">
-                <ref role="37wK5l" to="1t7x:~Toolkit.getSystemClipboard():java.awt.datatransfer.Clipboard" resolve="getSystemClipboard" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2CtGEWX7vkG" role="3cqZAp">
-          <node concept="3cpWsn" id="2CtGEWX7vkH" role="3cpWs9">
-            <property role="TrG5h" value="sel" />
-            <node concept="3uibUv" id="2CtGEWX7vkI" role="1tU5fm">
-              <ref role="3uigEE" to="tt4m:~StringSelection" resolve="StringSelection" />
-            </node>
-            <node concept="2ShNRf" id="2CtGEWX7vkJ" role="33vP2m">
-              <node concept="1pGfFk" id="2CtGEWX7vkK" role="2ShVmc">
-                <ref role="37wK5l" to="tt4m:~StringSelection.&lt;init&gt;(java.lang.String)" resolve="StringSelection" />
-                <node concept="2OqwBi" id="2CtGEWX7vkL" role="37wK5m">
-                  <node concept="3cpWsa" id="2CtGEWX7vkM" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2CtGEWX7vkx" resolve="s" />
-                  </node>
-                  <node concept="liA8E" id="2CtGEWX7vkN" role="2OqNvi">
-                    <ref role="37wK5l" to="39al:2CtGEWX5Cca" resolve="getXMLAsUUEncodedString" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="2CtGEWX7vkO" role="3cqZAp">
-          <node concept="2OqwBi" id="2CtGEWX7vkP" role="3clFbG">
-            <node concept="37vLTw" id="2CtGEWX7vkQ" role="2Oq$k0">
-              <ref role="3cqZAo" node="2CtGEWX7vkB" resolve="clip" />
-            </node>
-            <node concept="liA8E" id="2CtGEWX7vkR" role="2OqNvi">
-              <ref role="37wK5l" to="tt4m:~Clipboard.setContents(java.awt.datatransfer.Transferable,java.awt.datatransfer.ClipboardOwner):void" resolve="setContents" />
-              <node concept="37vLTw" id="2CtGEWX7vkS" role="37wK5m">
-                <ref role="3cqZAo" node="2CtGEWX7vkH" resolve="sel" />
-              </node>
-              <node concept="10Nm6u" id="2CtGEWX7vkT" role="37wK5m" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2S4$dB" id="2VpA5NFsyuH" role="1NuT2Z">
-      <property role="TrG5h" value="selectedNode" />
-      <node concept="3Tm6S6" id="2VpA5NFsyuI" role="1B3o_S" />
-      <node concept="1oajcY" id="2VpA5NFsyuJ" role="1oa70y" />
-      <node concept="3Tqbb2" id="2VpA5NFsytE" role="1tU5fm" />
-    </node>
-  </node>
-  <node concept="sE7Ow" id="2VpA5NFuIme">
-    <property role="TrG5h" value="pasteUUNodeFromClipboard" />
-    <property role="2uzpH1" value="Paste UUEncoded XML Node" />
-    <property role="3GE5qa" value="clipboard.uu" />
-    <node concept="tnohg" id="2VpA5NFuImf" role="tncku">
-      <node concept="3clFbS" id="2VpA5NFuImg" role="2VODD2">
-        <node concept="SfApY" id="2CtGEWX7yQD" role="3cqZAp">
-          <node concept="3clFbS" id="2CtGEWX7yQE" role="SfCbr">
-            <node concept="3cpWs8" id="2CtGEWX7yQF" role="3cqZAp">
-              <node concept="3cpWsn" id="2CtGEWX7yQG" role="3cpWs9">
-                <property role="TrG5h" value="xml" />
-                <node concept="17QB3L" id="2CtGEWX7yQH" role="1tU5fm" />
-                <node concept="1eOMI4" id="2CtGEWX7yQI" role="33vP2m">
-                  <node concept="10QFUN" id="2CtGEWX7yQJ" role="1eOMHV">
-                    <node concept="2OqwBi" id="2CtGEWX7yQK" role="10QFUP">
-                      <node concept="2OqwBi" id="2CtGEWX7yQL" role="2Oq$k0">
-                        <node concept="2YIFZM" id="2CtGEWX7yQM" role="2Oq$k0">
-                          <ref role="37wK5l" to="1t7x:~Toolkit.getDefaultToolkit():java.awt.Toolkit" resolve="getDefaultToolkit" />
-                          <ref role="1Pybhc" to="1t7x:~Toolkit" resolve="Toolkit" />
-                        </node>
-                        <node concept="liA8E" id="2CtGEWX7yQN" role="2OqNvi">
-                          <ref role="37wK5l" to="1t7x:~Toolkit.getSystemClipboard():java.awt.datatransfer.Clipboard" resolve="getSystemClipboard" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="2CtGEWX7yQO" role="2OqNvi">
-                        <ref role="37wK5l" to="tt4m:~Clipboard.getData(java.awt.datatransfer.DataFlavor):java.lang.Object" resolve="getData" />
-                        <node concept="10M0yZ" id="2CtGEWX7yQP" role="37wK5m">
-                          <ref role="3cqZAo" to="tt4m:~DataFlavor.stringFlavor" resolve="stringFlavor" />
-                          <ref role="1PxDUh" to="tt4m:~DataFlavor" resolve="DataFlavor" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="17QB3L" id="2CtGEWX7yQQ" role="10QFUM" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="2CtGEWX7yQR" role="3cqZAp">
-              <node concept="3cpWsn" id="2CtGEWX7yQS" role="3cpWs9">
-                <property role="TrG5h" value="des" />
-                <node concept="3uibUv" id="2CtGEWX7yQT" role="1tU5fm">
-                  <ref role="3uigEE" to="39al:5u_UbmxgfR" resolve="NodeDeserializer" />
-                </node>
-                <node concept="2YIFZM" id="2CtGEWX7_Ap" role="33vP2m">
-                  <ref role="37wK5l" to="39al:2CtGEWX6XH5" resolve="fromUUEncodedString" />
-                  <ref role="1Pybhc" to="39al:5u_UbmxgfR" resolve="NodeDeserializer" />
-                  <node concept="37vLTw" id="2CtGEWX7_Aq" role="37wK5m">
-                    <ref role="3cqZAo" node="2CtGEWX7yQG" resolve="xml" />
-                  </node>
-                  <node concept="2OqwBi" id="2CtGEWX7_Ar" role="37wK5m">
-                    <node concept="I4A8Y" id="2CtGEWX7_At" role="2OqNvi" />
-                    <node concept="2OqwBi" id="2VpA5NFuNBr" role="2Oq$k0">
-                      <node concept="2WthIp" id="2VpA5NFuNBu" role="2Oq$k0" />
-                      <node concept="3gHZIF" id="2VpA5NFuNBw" role="2OqNvi">
-                        <ref role="2WH_rO" node="2VpA5NFuImI" resolve="selectedNode" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="78QQ3NsCL7u" role="37wK5m">
-                    <property role="Xl_RC" value="_" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="2CtGEWX7yQZ" role="3cqZAp">
-              <node concept="2OqwBi" id="2CtGEWX7yR0" role="3clFbG">
-                <node concept="2OqwBi" id="2VpA5NFuJQi" role="2Oq$k0">
-                  <node concept="2WthIp" id="2VpA5NFuJQl" role="2Oq$k0" />
-                  <node concept="3gHZIF" id="2VpA5NFuJQn" role="2OqNvi">
-                    <ref role="2WH_rO" node="2VpA5NFuImI" resolve="selectedNode" />
-                  </node>
-                </node>
-                <node concept="HtI8k" id="2VpA5NFuM9Q" role="2OqNvi">
-                  <node concept="2OqwBi" id="2VpA5NFuMc9" role="HtI8F">
-                    <node concept="37vLTw" id="2VpA5NFuMaw" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2CtGEWX7yQS" resolve="des" />
-                    </node>
-                    <node concept="liA8E" id="2VpA5NFuMUw" role="2OqNvi">
-                      <ref role="37wK5l" to="39al:5u_UbmxkdQ" resolve="getNode" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="TDmWw" id="2CtGEWX7yR6" role="TEbGg">
-            <node concept="3cpWsn" id="2CtGEWX7yR7" role="TDEfY">
-              <property role="TrG5h" value="ex" />
-              <node concept="3uibUv" id="2CtGEWX7yR8" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="2CtGEWX7yR9" role="TDEfX">
-              <node concept="3clFbF" id="2CtGEWX7yRa" role="3cqZAp">
-                <node concept="2YIFZM" id="2CtGEWX7yRb" role="3clFbG">
-                  <ref role="1Pybhc" to="810:~Messages" resolve="Messages" />
-                  <ref role="37wK5l" to="810:~Messages.showErrorDialog(java.lang.String,java.lang.String):void" resolve="showErrorDialog" />
-                  <node concept="2OqwBi" id="2CtGEWX7yRc" role="37wK5m">
-                    <node concept="37vLTw" id="2CtGEWX7yRd" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2CtGEWX7yR7" resolve="ex" />
-                    </node>
-                    <node concept="liA8E" id="2CtGEWX7yRe" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="2CtGEWX7yRf" role="37wK5m">
-                    <property role="Xl_RC" value="Paste Failed." />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="2CtGEWX7yRg" role="3cqZAp">
-                <node concept="2OqwBi" id="2CtGEWX7yRh" role="3clFbG">
-                  <node concept="37vLTw" id="2CtGEWX7yRi" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2CtGEWX7yR7" resolve="ex" />
-                  </node>
-                  <node concept="liA8E" id="2CtGEWX7yRj" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~Throwable.printStackTrace():void" resolve="printStackTrace" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2S4$dB" id="2VpA5NFuImI" role="1NuT2Z">
-      <property role="TrG5h" value="selectedNode" />
-      <node concept="3Tm6S6" id="2VpA5NFuImJ" role="1B3o_S" />
-      <node concept="1oajcY" id="2VpA5NFuImK" role="1oa70y" />
-      <node concept="3Tqbb2" id="2VpA5NFuImL" role="1tU5fm" />
-    </node>
-  </node>
   <node concept="pFx2x" id="7rr3ESJCjO4">
     <property role="TrG5h" value="NodeOpenRequest" />
     <property role="1pulfB" value="select" />
@@ -3036,20 +2795,6 @@
         </node>
         <node concept="3clFbH" id="7rr3ESJDcF5" role="3cqZAp" />
       </node>
-    </node>
-  </node>
-  <node concept="tC5Ba" id="x1qBl0Rh8">
-    <property role="TrG5h" value="clipboardStuffInEditMenuDirect" />
-    <property role="3GE5qa" value="clipboard" />
-    <property role="2f7twF" value="Copy Special" />
-    <node concept="ftmFs" id="x1qBl0Rh9" role="ftER_">
-      <node concept="tCFHf" id="x1qBl0Rhi" role="ftvYc">
-        <ref role="tCJdB" node="2N1CSrzm3lx" resolve="selectNodeFromClipboardURL" />
-      </node>
-    </node>
-    <node concept="tT9cl" id="x1qBl0Rhj" role="2f5YQi">
-      <ref role="2f8Tey" to="tprs:h$X6qIM" resolve="custom" />
-      <ref role="tU$_T" to="tprs:hyf4Lqj" resolve="Edit" />
     </node>
   </node>
 </model>

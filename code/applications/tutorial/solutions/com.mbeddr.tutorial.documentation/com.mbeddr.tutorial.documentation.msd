@@ -26,7 +26,7 @@
     <usedLanguage>c788b046-2019-4656-8b60-8bb9bbb177b5(com.mbeddr.mpsutil.review)</usedLanguage>
     <usedLanguage>7a060fae-09e0-4372-be36-6696d6554c0e(com.mbeddr.mpsutil.review.annotation)</usedLanguage>
     <usedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</usedLanguage>
-    <usedLanguage>623c9ff8-1203-4890-b33e-cba29dd6cdc6(spellcheck)</usedLanguage>
+    <usedLanguage>e06345c7-da82-4f8b-bd44-1425fe158640(com.mbeddr.doc.meta)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>315c0ec2-38ff-4e9c-9d15-fd0848b5f062(com.mbeddr.analyses.components)</usedDevKit>
@@ -99,7 +99,6 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="0" />
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" fqName="jetbrains.mps.lang.structure" version="0" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
-    <language id="623c9ff8-1203-4890-b33e-cba29dd6cdc6" fqName="spellcheck" version="0" />
   </languageVersions>
 </solution>
 

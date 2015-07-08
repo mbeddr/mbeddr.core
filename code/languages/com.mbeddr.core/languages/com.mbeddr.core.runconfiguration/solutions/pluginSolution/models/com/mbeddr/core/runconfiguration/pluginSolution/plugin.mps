@@ -253,7 +253,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -8285,6 +8285,9 @@
         <ref role="2AI5Lk" to="as9o:~Nullable" resolve="Nullable" />
       </node>
       <node concept="3clFbS" id="4eMm4N7GGX5" role="3clF47">
+        <node concept="3clFbH" id="1mwQ_7zetb7" role="3cqZAp" />
+        <node concept="3clFbH" id="1mwQ_7zetre" role="3cqZAp" />
+        <node concept="3clFbH" id="1mwQ_7zeuID" role="3cqZAp" />
         <node concept="3SKdUt" id="AzX4JmFu7Z" role="3cqZAp">
           <node concept="3SKdUq" id="AzX4JmFuoo" role="3SKWNk">
             <property role="3SKdUp" value="initialize the file if the line count is zero" />
@@ -8753,6 +8756,26 @@
                                 </node>
                               </node>
                             </node>
+                            <node concept="3clFbF" id="27$w7CfufPo" role="3cqZAp">
+                              <node concept="2OqwBi" id="27$w7CfufPp" role="3clFbG">
+                                <node concept="2ShNRf" id="27$w7CfufPq" role="2Oq$k0">
+                                  <node concept="1pGfFk" id="27$w7CfufPr" role="2ShVmc">
+                                    <ref role="37wK5l" node="O5Pi0b4r$J" resolve="StreamClearer" />
+                                    <node concept="2OqwBi" id="27$w7CfufPs" role="37wK5m">
+                                      <node concept="37vLTw" id="27$w7CfufPt" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="6YlqNFRc5$N" resolve="process" />
+                                      </node>
+                                      <node concept="liA8E" id="27$w7Cfui3e" role="2OqNvi">
+                                        <ref role="37wK5l" to="e2lb:~Process.getErrorStream():java.io.InputStream" resolve="getErrorStream" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="27$w7CfufPv" role="2OqNvi">
+                                  <ref role="37wK5l" to="e2lb:~Thread.start():void" resolve="start" />
+                                </node>
+                              </node>
+                            </node>
                             <node concept="3clFbF" id="6YlqNFRc5_1" role="3cqZAp">
                               <node concept="37vLTI" id="6YlqNFRc5_2" role="3clFbG">
                                 <node concept="2OqwBi" id="6YlqNFRc5_3" role="37vLTx">
@@ -8990,6 +9013,26 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="6YlqNFRdSU5" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~Thread.start():void" resolve="start" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="27$w7Cfue$e" role="3cqZAp">
+              <node concept="2OqwBi" id="27$w7Cfue$f" role="3clFbG">
+                <node concept="2ShNRf" id="27$w7Cfue$g" role="2Oq$k0">
+                  <node concept="1pGfFk" id="27$w7Cfue$h" role="2ShVmc">
+                    <ref role="37wK5l" node="O5Pi0b4r$J" resolve="StreamClearer" />
+                    <node concept="2OqwBi" id="27$w7Cfue$i" role="37wK5m">
+                      <node concept="37vLTw" id="27$w7Cfue$j" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6YlqNFRdSTS" resolve="process" />
+                      </node>
+                      <node concept="liA8E" id="27$w7Cfue$k" role="2OqNvi">
+                        <ref role="37wK5l" to="e2lb:~Process.getErrorStream():java.io.InputStream" resolve="getErrorStream" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="27$w7Cfue$l" role="2OqNvi">
                   <ref role="37wK5l" to="e2lb:~Thread.start():void" resolve="start" />
                 </node>
               </node>

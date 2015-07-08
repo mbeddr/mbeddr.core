@@ -8,6 +8,7 @@
   <imports>
     <import index="4w5v" ref="1fc20ffe-f35b-4791-a0b7-d706bad5c49a/r:18d75373-a465-46d0-9749-aacc22a947bc(com.mbeddr.mpsutil.refactoring/com.mbeddr.mpsutil.refactoring.structure)" />
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tp1h" ref="3ecd7c84-cde3-45de-886c-135ecc69b742/r:00000000-0000-4000-0000-011c89590319(jetbrains.mps.lang.refactoring/jetbrains.mps.lang.refactoring.structure)" implicit="true" />
   </imports>
   <registry>
@@ -29,6 +30,9 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -281,8 +285,8 @@
     <ref role="1XX52x" to="4w5v:6xlxoSXdwNy" resolve="NodeChooser" />
     <node concept="3EZMnI" id="6xlxoSXdyVq" role="2wV5jI">
       <node concept="l2Vlx" id="6xlxoSXdyVr" role="2iSdaV" />
-      <node concept="3F0ifn" id="6xlxoSXdyVu" role="3EZMnx">
-        <property role="3F0ifm" value="node" />
+      <node concept="PMmxH" id="35bnz87oBUx" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
       <node concept="3F0ifn" id="6xlxoSXdyVw" role="3EZMnx">
         <property role="3F0ifm" value="(" />

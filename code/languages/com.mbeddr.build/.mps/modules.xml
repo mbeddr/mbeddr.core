@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="${mbeddr.github.core.home}/code/plugins/sl-all/solutions/de.slisson.mps.all.build/de.slisson.mps.all.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.allInOne/allInOne.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.allScripts/com.mbeddr.allScripts.msd" folder="build.scripts" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.dev.build/build.msd" folder="analyses" />
@@ -17,7 +18,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.rcp/com.mbeddr.rcp.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/solutions/jetbrains.mps.minimal/jetbrains.mps.minimal.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.core.buildvalidation/test.com.mbeddr.mpsutil.build.msd" folder="build.test" />
-      <modulePath path="${sl-all}/sl-all/solutions/de.slisson.mps.all.build/de.slisson.mps.all.build.msd" folder="" />
     </projectModules>
   </component>
 </project>

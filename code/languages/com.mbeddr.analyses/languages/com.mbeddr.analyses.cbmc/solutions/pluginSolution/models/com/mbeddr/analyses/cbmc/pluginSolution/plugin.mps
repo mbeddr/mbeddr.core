@@ -2509,7 +2509,7 @@
     <property role="TrG5h" value="CbmcRawResultTool" />
     <property role="2XNbzY" value="CBMC raw result" />
     <node concept="2XrIbr" id="3Ymokd9FeZe" role="2XNbBy">
-      <property role="TrG5h" value="setRawOutput" />
+      <property role="TrG5h" value="setOutput" />
       <node concept="3cqZAl" id="3Ymokd9Ffqo" role="3clF45" />
       <node concept="3clFbS" id="3Ymokd9FeZg" role="3clF47">
         <node concept="3clFbF" id="3Ymokd9FfA0" role="3cqZAp">
@@ -2523,16 +2523,16 @@
             <node concept="liA8E" id="3Ymokd9Fl4n" role="2OqNvi">
               <ref role="37wK5l" to="p8vh:6izRX53qxjr" resolve="updateRawResult" />
               <node concept="37vLTw" id="3Ymokd9Fl59" role="37wK5m">
-                <ref role="3cqZAo" node="3Ymokd9FfxU" resolve="raw" />
+                <ref role="3cqZAo" node="3Ymokd9FfxU" resolve="res" />
               </node>
             </node>
           </node>
         </node>
       </node>
       <node concept="37vLTG" id="3Ymokd9FfxU" role="3clF46">
-        <property role="TrG5h" value="raw" />
-        <node concept="3uibUv" id="M7_V6u7Jdn" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:6iM0fX1N0qr" resolve="CBMCRawResult" />
+        <property role="TrG5h" value="res" />
+        <node concept="3uibUv" id="h7gcTUiMAm" role="1tU5fm">
+          <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
         </node>
       </node>
     </node>
@@ -2597,9 +2597,9 @@
               </node>
             </node>
             <node concept="2XshWL" id="3Ymokd9Fnim" role="2OqNvi">
-              <ref role="2WH_rO" node="3Ymokd9FeZe" resolve="setRawOutput" />
+              <ref role="2WH_rO" node="3Ymokd9FeZe" resolve="setOutput" />
               <node concept="37vLTw" id="3Ymokd9FqB9" role="2XxRq1">
-                <ref role="3cqZAo" node="3Ymokd9FqyH" resolve="raw" />
+                <ref role="3cqZAo" node="3Ymokd9FqyH" resolve="lifted" />
               </node>
             </node>
           </node>
@@ -2614,9 +2614,9 @@
         </node>
       </node>
       <node concept="37vLTG" id="3Ymokd9FqyH" role="3clF46">
-        <property role="TrG5h" value="raw" />
-        <node concept="3uibUv" id="M7_V6u7IAp" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:6iM0fX1N0qr" resolve="CBMCRawResult" />
+        <property role="TrG5h" value="lifted" />
+        <node concept="3uibUv" id="h7gcTUiMgu" role="1tU5fm">
+          <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
         </node>
       </node>
     </node>

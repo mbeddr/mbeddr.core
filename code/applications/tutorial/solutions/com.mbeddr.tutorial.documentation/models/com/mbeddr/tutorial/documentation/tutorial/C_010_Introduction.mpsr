@@ -1195,13 +1195,13 @@
                 <property role="19SUeA" value="To be able to use the verifications, you have to install a set of external tools as explained in " />
               </node>
               <node concept="1_0GAv" id="2JeiqU7feBR" role="19SJt6">
-                <ref role="1_0GAl" to="us0v:7OKLwZ_7fp6" resolve="formal_verification" />
+                <ref role="1_0GAl" to="us0v:3mn43GO8lBo" resolve="formal_verification" />
               </node>
               <node concept="19SUe$" id="2JeiqU7feBQ" role="19SJt6">
                 <property role="19SUeA" value=" and " />
               </node>
               <node concept="1_0GAv" id="2JeiqU7feCa" role="19SJt6">
-                <ref role="1_0GAl" to="us0v:7OKLwZ_6QCa" resolve="analyzing_variability" />
+                <ref role="1_0GAl" to="us0v:3mn43GO8ltD" resolve="analyzing_variability" />
               </node>
               <node concept="19SUe$" id="2JeiqU7feC9" role="19SJt6">
                 <property role="19SUeA" value="  " />

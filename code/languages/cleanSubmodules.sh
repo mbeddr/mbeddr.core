@@ -1,5 +1,4 @@
+#!/bin/sh
 # clean submodules and update/init them
-cd ../plugins/sl-all
-./clean-submodules.sh
-cd ../../..
-git submodule update --recursive --init
+../plugins/sl-all/clean-submodules.sh
+ant build-sl-all

@@ -12,8 +12,9 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
+    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
+    <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -178,6 +179,11 @@
     <property role="R4oN_" value="--" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1fLWRCluu9D" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ellipsisKind" />
+      <ref role="20lvS9" node="L2WnbQO1DI" resolve="ArgumentKindContainer" />
+    </node>
     <node concept="PrWs8" id="5Oog2UbSUrA" role="PzmwI">
       <ref role="PrY4T" node="5Oog2UbPmsI" resolve="IExternable" />
     </node>
@@ -1190,7 +1196,7 @@
     <ref role="1TJDcQ" to="vs0r:4$VRXeHdyxr" resolve="Metric" />
   </node>
   <node concept="1TIwiD" id="L2WnbQO1DI">
-    <property role="3GE5qa" value="functions" />
+    <property role="3GE5qa" value="argumentKind" />
     <property role="TrG5h" value="ArgumentKindContainer" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="L2WnbQO1I2" role="1TKVEl">
@@ -1213,7 +1219,7 @@
     </node>
   </node>
   <node concept="AxPO7" id="3_CPcn39dht">
-    <property role="3GE5qa" value="functions" />
+    <property role="3GE5qa" value="argumentKind" />
     <property role="TrG5h" value="ArgumentKind" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <ref role="Qgau1" node="3_CPcn39dwy" />
@@ -1343,6 +1349,40 @@
     <node concept="PrWs8" id="xN636rYFQ6" role="PzmwI">
       <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="20xms4A94u9">
+    <property role="3GE5qa" value="argumentKind" />
+    <property role="TrG5h" value="ArgumentKindAnnotation" />
+    <property role="34LRSv" value="argument kind" />
+    <property role="R4oN_" value="argument kind" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyi" id="20xms4A96EY" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" node="3_CPcn39dht" resolve="ArgumentKind" />
+    </node>
+    <node concept="M6xJ_" id="20xms4A95uS" role="lGtFl">
+      <property role="Hh88m" value="argumentKind" />
+      <node concept="tn0Fv" id="20xms4A95HY" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="1fLWRCluu9F" role="EQaZv">
+        <ref role="trN6q" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Sez0xTFbz7">
+    <property role="TrG5h" value="SuppressDataFlowWarning" />
+    <property role="34LRSv" value="dataflow" />
+    <property role="R4oN_" value="suppress dataflow warning" />
+    <property role="3GE5qa" value="suppress" />
+    <ref role="1TJDcQ" to="bdcd:7U3Fobb_8Ej" resolve="SuppressAllWarnings" />
+  </node>
+  <node concept="1TIwiD" id="QsKt7kFLcZ">
+    <property role="3GE5qa" value="suppress" />
+    <property role="34LRSv" value="liveness" />
+    <property role="TrG5h" value="SuppressDataFlowLivenessWarning" />
+    <property role="R4oN_" value="suppress dataflow liveness warning" />
+    <ref role="1TJDcQ" node="5Sez0xTFbz7" resolve="SuppressDataFlowWarning" />
   </node>
 </model>
 
