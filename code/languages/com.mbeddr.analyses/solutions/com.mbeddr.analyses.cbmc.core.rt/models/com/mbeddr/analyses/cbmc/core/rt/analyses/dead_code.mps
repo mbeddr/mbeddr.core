@@ -170,6 +170,9 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
+      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
+        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -282,6 +285,10 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435807" name="elementType" index="HW$YZ" />
+      </concept>
+      <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1171391069720" name="jetbrains.mps.baseLanguage.collections.structure.GetIndexOfOperation" flags="nn" index="2WmjW8" />
@@ -501,7 +508,7 @@
                         <node concept="2YIFZM" id="4QaxHTonM76" role="25WWJ7">
                           <ref role="37wK5l" node="3AX70SQjftY" resolve="collectStatementsToInstrument" />
                           <ref role="1Pybhc" node="3x0R1LJ5Dp2" resolve="DeadCodeUtils" />
-                          <node concept="Jnkvi" id="4QaxHTonM77" role="37wK5m">
+                          <node concept="Jnkvi" id="5zPqP2qzlRX" role="37wK5m">
                             <ref role="1M0zk5" node="M7_V6u_f1V" resolve="fun" />
                           </node>
                         </node>
@@ -1162,14 +1169,71 @@
             <node concept="3uibUv" id="3x0R1LJ5Djd" role="1tU5fm">
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
-            <node concept="2YIFZM" id="3x0R1LJ5Dje" role="33vP2m">
-              <ref role="37wK5l" to="8ear:6GZ1x5Gshjx" resolve="buildCBMCLiftedResult" />
-              <ref role="1Pybhc" to="8ear:6GZ1x5GshiS" resolve="CBMCLiftedResultBuilder" />
-              <node concept="3cpWs2" id="3x0R1LJ5Djf" role="37wK5m">
-                <ref role="3cqZAo" node="3x0R1LJ5Dj5" resolve="rawResult" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="5zPqP2qyjPU" role="3cqZAp">
+          <node concept="3SKdUq" id="5zPqP2qyjUl" role="3SKWNk">
+            <property role="3SKdUp" value="for the moment do not lift the counterexamples because it creates a big overhead ..." />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="2bm2UiI2Sx7" role="3cqZAp">
+          <node concept="3SKWN0" id="2bm2UiI2Sxe" role="3SKWNk">
+            <node concept="3clFbF" id="2bm2UiI2SmX" role="3SKWNf">
+              <node concept="37vLTI" id="2bm2UiI2SmZ" role="3clFbG">
+                <node concept="2YIFZM" id="3x0R1LJ5Dje" role="37vLTx">
+                  <ref role="37wK5l" to="8ear:6GZ1x5Gshjx" resolve="buildCBMCLiftedResult" />
+                  <ref role="1Pybhc" to="8ear:6GZ1x5GshiS" resolve="CBMCLiftedResultBuilder" />
+                  <node concept="3cpWs2" id="3x0R1LJ5Djf" role="37wK5m">
+                    <ref role="3cqZAo" node="3x0R1LJ5Dj5" resolve="rawResult" />
+                  </node>
+                  <node concept="37vLTw" id="5TmSwGooNag" role="37wK5m">
+                    <ref role="3cqZAo" node="3x0R1LJ5Dj3" resolve="stmt" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2bm2UiI2Sn3" role="37vLTJ">
+                  <ref role="3cqZAo" node="3x0R1LJ5Djc" resolve="lifted" />
+                </node>
               </node>
-              <node concept="37vLTw" id="5TmSwGooNag" role="37wK5m">
-                <ref role="3cqZAo" node="3x0R1LJ5Dj3" resolve="stmt" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2bm2UiI2SAp" role="3cqZAp">
+          <node concept="37vLTI" id="2bm2UiI2SDc" role="3clFbG">
+            <node concept="37vLTw" id="2bm2UiI2SAn" role="37vLTJ">
+              <ref role="3cqZAo" node="3x0R1LJ5Djc" resolve="lifted" />
+            </node>
+            <node concept="2ShNRf" id="6GZ1x5Gshlw" role="37vLTx">
+              <node concept="1pGfFk" id="6GZ1x5Gshlx" role="2ShVmc">
+                <ref role="37wK5l" to="eqhl:54VWoniifzb" resolve="CBMCLiftedResult" />
+                <node concept="37vLTw" id="2bm2UiI2Taz" role="37wK5m">
+                  <ref role="3cqZAo" node="3x0R1LJ5Dj5" resolve="rawResult" />
+                </node>
+                <node concept="2OqwBi" id="6GZ1x5Gshly" role="37wK5m">
+                  <node concept="37vLTw" id="2bm2UiI2TcM" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3x0R1LJ5Dj5" resolve="rawResult" />
+                  </node>
+                  <node concept="2S8uIT" id="6GZ1x5Gshl$" role="2OqNvi">
+                    <ref role="2S8YL0" to="rbq9:7N0A15Xmn67" resolve="delayInMillis" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="6GZ1x5Gshl_" role="37wK5m">
+                  <node concept="37vLTw" id="2bm2UiI2Te_" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3x0R1LJ5Dj5" resolve="rawResult" />
+                  </node>
+                  <node concept="liA8E" id="6GZ1x5GshlB" role="2OqNvi">
+                    <ref role="37wK5l" to="rbq9:19O7J9dBE6" resolve="getRawResultKind" />
+                  </node>
+                </node>
+                <node concept="2ShNRf" id="2bm2UiI2Tgr" role="37wK5m">
+                  <node concept="2Jqq0_" id="2bm2UiI2TKr" role="2ShVmc">
+                    <node concept="3uibUv" id="2bm2UiI2TRR" role="HW$YZ">
+                      <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2bm2UiI2TTB" role="37wK5m">
+                  <ref role="3cqZAo" node="3x0R1LJ5Dj3" resolve="stmt" />
+                </node>
               </node>
             </node>
           </node>
