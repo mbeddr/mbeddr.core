@@ -10,12 +10,12 @@
   </languages>
   <imports>
     <import index="aelz" ref="r:832a1eb9-6df4-4b76-8168-017ed7892fc6(mbeddr.arduino.header.Import)" />
-    <import index="azwq" ref="r:7852d260-0310-4e57-89db-dcf303c9218e(com.mbeddr.demo.robot.main)" />
     <import index="1o4w" ref="r:442bb4e7-6f10-4ceb-b79f-652568158259(mbeddr.arduino.platform.Main)" />
     <import index="ec8n" ref="r:df033cd0-34e6-4f58-88d1-8a821b4d317d(com.mbeddr.demo.robot.util)" />
     <import index="t6m2" ref="r:5b5b2089-00bc-4f4a-9b07-7e2ecff90d57(com.mbeddr.demo.robot.io)" />
     <import index="g2ww" ref="r:1d62ae5e-bbdf-48a3-9ff2-3e7f548b6242(com.mbeddr.demo.robot.units)" />
     <import index="uvoh" ref="r:28232de8-4ea1-4b96-a33b-5e3de019eaa2(com.mbeddr.demo.robot.io.avr)" />
+    <import index="azo0" ref="r:0eefe47e-8047-472d-accf-5c763f248835(com.mbeddr.demo.robot.communication)" />
     <import index="cmgk" ref="r:679066bc-2da8-4932-a09c-5d2b3d47b911(com.mbeddr.ext.units.siunits)" implicit="true" />
   </imports>
   <registry>
@@ -45,6 +45,9 @@
         <reference id="4121031889271053292" name="targetUnit" index="1Pfwd7" />
         <child id="4121031889271053290" name="expression" index="1Pfwd1" />
       </concept>
+    </language>
+    <language id="028899e1-bfee-4db6-b470-ed0f9ee5f662" name="com.mbeddr.ext.components.embedded">
+      <concept id="9172009453270757747" name="com.mbeddr.ext.components.embedded.structure.InterruptComponentTriggerConfigItem" flags="ng" index="3_WZtN" />
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="8441331188640771826" name="com.mbeddr.core.statements.structure.WhileStatement" flags="ng" index="27v$Wf">
@@ -115,6 +118,7 @@
       <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
         <property id="1553713790141527405" name="wireStatically" index="35zhco" />
         <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
+        <reference id="1553713790141527407" name="instanceConfig" index="35zhcq" />
       </concept>
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
@@ -401,6 +405,9 @@
       <node concept="2v9HqM" id="5zHWU$GA01C" role="2eOfOg">
         <ref role="2v9HqP" to="t6m2:5zHWU$GuxGd" resolve="IO" />
       </node>
+      <node concept="2v9HqM" id="2t4Dw6aF2Ck" role="2eOfOg">
+        <ref role="2v9HqP" to="azo0:oDdAT4ofk7" resolve="UART" />
+      </node>
     </node>
     <node concept="24Uyqy" id="1XyQ$8LAv0W" role="2AWWZH">
       <ref role="3SIZTQ" to="1o4w:1XyQ$8Lq_J6" resolve="Atmega32u4" />
@@ -411,6 +418,7 @@
     <node concept="3_UEaq" id="1XyQ$8LAv3D" role="2Q9xDr">
       <node concept="3_UBHe" id="1XyQ$8LAv3P" role="3_UBH6" />
     </node>
+    <node concept="3_WZtN" id="2t4Dw6aF6c2" role="2Q9xDr" />
     <node concept="2eh4Hv" id="exHFgzLbsU" role="2Q9xDr" />
     <node concept="2Q9Fgs" id="exHFgzLbtQ" role="2Q9xDr">
       <node concept="2Q9FjX" id="exHFgzLbtR" role="2Q9FjI" />
@@ -419,7 +427,8 @@
     <node concept="3i2$bm" id="exHFgzLbrX" role="2Q9xDr">
       <node concept="3i3YCL" id="exHFgzLbsp" role="3i30U9">
         <property role="3Ewwow" value="true" />
-        <property role="35zhco" value="false" />
+        <property role="35zhco" value="true" />
+        <ref role="35zhcq" node="exHFgzLGS8" resolve="Instances" />
       </node>
     </node>
     <node concept="A5USz" id="1XyQ$8LAv44" role="2Q9xDr" />
@@ -575,54 +584,8 @@
         <property role="TrG5h" value="setup" />
         <node concept="3XIRFW" id="5zHWU$GPO_K" role="2EWMhI">
           <node concept="5HLoM" id="5zHWU$GPOIr" role="3XIRFZ" />
-          <node concept="1_9egQ" id="5zHWU$GPOJ3" role="3XIRFZ">
-            <node concept="3LAlOK" id="5zHWU$GPOTP" role="1_9egR">
-              <ref role="2H6Oet" to="t6m2:5zHWU$GxIaq" resolve="setDutyCycle" />
-              <node concept="1DnYEe" id="5zHWU$GPOJ2" role="1_9fRO">
-                <ref role="1DnYF2" node="5zHWU$G_QLg" resolve="timer1" />
-                <ref role="1DcY7d" to="uvoh:5zHWU$Gz4m5" resolve="pinA" />
-              </node>
-              <node concept="3TlMh9" id="5zHWU$GPOUy" role="2H6KYo">
-                <property role="2hmy$m" value="0" />
-              </node>
-            </node>
-          </node>
-          <node concept="1_9egQ" id="5zHWU$GPOXs" role="3XIRFZ">
-            <node concept="3LAlOK" id="5zHWU$GPOXt" role="1_9egR">
-              <ref role="2H6Oet" to="t6m2:5zHWU$GxIaq" resolve="setDutyCycle" />
-              <node concept="1DnYEe" id="5zHWU$GPOXu" role="1_9fRO">
-                <ref role="1DnYF2" node="5zHWU$G_QLg" resolve="timer1" />
-                <ref role="1DcY7d" to="uvoh:5zHWU$Gz4zX" resolve="pinB" />
-              </node>
-              <node concept="3TlMh9" id="5zHWU$GPOXv" role="2H6KYo">
-                <property role="2hmy$m" value="0" />
-              </node>
-            </node>
-          </node>
-          <node concept="1_9egQ" id="5zHWU$GPP0H" role="3XIRFZ">
-            <node concept="3LAlOK" id="5zHWU$GPP0I" role="1_9egR">
-              <ref role="2H6Oet" to="t6m2:5zHWU$GxIaq" resolve="setDutyCycle" />
-              <node concept="1DnYEe" id="5zHWU$GPP0J" role="1_9fRO">
-                <ref role="1DnYF2" node="5zHWU$G_QXg" resolve="timer3" />
-                <ref role="1DcY7d" to="uvoh:5zHWU$GzwNR" resolve="pinA" />
-              </node>
-              <node concept="3TlMh9" id="5zHWU$GPP0K" role="2H6KYo">
-                <property role="2hmy$m" value="0" />
-              </node>
-            </node>
-          </node>
-          <node concept="1_9egQ" id="5zHWU$GPP6L" role="3XIRFZ">
-            <node concept="3LAlOK" id="5zHWU$GPP6M" role="1_9egR">
-              <ref role="2H6Oet" to="t6m2:5zHWU$GxIaq" resolve="setDutyCycle" />
-              <node concept="1DnYEe" id="5zHWU$GPP6N" role="1_9fRO">
-                <ref role="1DnYF2" node="5zHWU$G_QZA" resolve="timer4" />
-                <ref role="1DcY7d" to="uvoh:5zHWU$Gzrho" resolve="pinD" />
-              </node>
-              <node concept="3TlMh9" id="5zHWU$GPP6O" role="2H6KYo">
-                <property role="2hmy$m" value="0" />
-              </node>
-            </node>
-          </node>
+          <node concept="3XISUE" id="2t4Dw6aEIB_" role="3XIRFZ" />
+          <node concept="3XISUE" id="2t4Dw6aEIEU" role="3XIRFZ" />
         </node>
         <node concept="19Rifw" id="5zHWU$GPOHV" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -941,6 +904,12 @@
             <ref role="XcPQd" to="uvoh:5zHWU$GzwNR" resolve="pinA" />
           </node>
           <node concept="2VclpC" id="5zHWU$GDLRd" role="lGtFl" />
+        </node>
+        <node concept="JAGxh" id="2t4Dw6aEIdv" role="5JtDH" />
+        <node concept="JAGxh" id="2t4Dw6aEIg6" role="5JtDH" />
+        <node concept="2EWCuV" id="2t4Dw6aEIl$" role="5JtDH">
+          <property role="TrG5h" value="uart" />
+          <ref role="2EWCuU" to="azo0:oDdAT4olTx" resolve="AvrSerialInterface" />
         </node>
         <node concept="37mRI7" id="5zHWU$GwxsN" role="lGtFl">
           <node concept="37mRIm" id="5zHWU$GwxsO" role="37mRID">
@@ -1443,18 +1412,82 @@
       <node concept="2EWDwb" id="5zHWU$Gy5Ae" role="2RW2fA">
         <property role="TrG5h" value="runnable0_run" />
         <node concept="3XIRFW" id="5zHWU$Gy5Af" role="2EWMhI">
-          <node concept="1_9egQ" id="5zHWU$G_SAL" role="3XIRFZ">
-            <node concept="3LAlOK" id="5zHWU$G_SG8" role="1_9egR">
-              <ref role="2H6Oet" to="ec8n:exHFgzK8US" resolve="run" />
-              <node concept="1DnYEe" id="5zHWU$G_SAK" role="1_9fRO">
-                <ref role="1DnYF2" node="5zHWU$G_Qws" resolve="chassisControl" />
-                <ref role="1DcY7d" node="5zHWU$G_yxD" resolve="runnable" />
+          <node concept="c0U19" id="2t4Dw6aEKK1" role="3XIRFZ">
+            <node concept="3XIRFW" id="2t4Dw6aEKK2" role="c0U17">
+              <node concept="3XIRlf" id="2t4Dw6aEKY6" role="3XIRFZ">
+                <property role="TrG5h" value="data" />
+                <node concept="26Vqp4" id="2t4Dw6aEKYj" role="2C2TGm">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                </node>
+                <node concept="3LAlOK" id="2t4Dw6aEKYk" role="3XIe9u">
+                  <ref role="2H6Oet" to="azo0:2t4Dw6aDu1q" resolve="readByte" />
+                  <node concept="1DnYEe" id="2t4Dw6aEKYl" role="1_9fRO">
+                    <ref role="1DnYF2" node="2t4Dw6aEIl$" resolve="uart" />
+                    <ref role="1DcY7d" to="azo0:2t4Dw6aD3kT" resolve="receiveBuffer" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3XIRlf" id="2t4Dw6aEMjv" role="3XIRFZ">
+                <property role="TrG5h" value="relativeSpeed" />
+                <node concept="2fgwQN" id="2t4Dw6aEMp6" role="2C2TGm">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                </node>
+                <node concept="2BOcih" id="2t4Dw6aEMp7" role="3XIe9u">
+                  <node concept="3TlMh9" id="2t4Dw6aEMp8" role="3TlMhJ">
+                    <property role="2hmy$m" value="255" />
+                  </node>
+                  <node concept="1S8S4T" id="2t4Dw6aEMp9" role="3TlMhI">
+                    <node concept="3ZVu4v" id="2t4Dw6aEMpa" role="1S8S4V">
+                      <ref role="3ZVs_2" node="2t4Dw6aEKY6" resolve="data" />
+                    </node>
+                    <node concept="2fgwQN" id="2t4Dw6aEMpb" role="1S8S4N">
+                      <property role="2caQfQ" value="false" />
+                      <property role="2c7vTL" value="false" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1_9egQ" id="2t4Dw6aEIJK" role="3XIRFZ">
+                <node concept="3LAlOK" id="2t4Dw6aEIPt" role="1_9egR">
+                  <ref role="2H6Oet" node="5zHWU$G$6nJ" resolve="setSpeed" />
+                  <node concept="1DnYEe" id="2t4Dw6aEIJJ" role="1_9fRO">
+                    <ref role="1DnYF2" node="5zHWU$G_QyR" resolve="chassis" />
+                    <ref role="1DcY7d" node="5zHWU$G$aly" resolve="chassis" />
+                  </node>
+                  <node concept="2BOcij" id="2t4Dw6aENFR" role="2H6KYo">
+                    <node concept="3ZVu4v" id="2t4Dw6aENQr" role="3TlMhJ">
+                      <ref role="3ZVs_2" node="2t4Dw6aEMjv" resolve="relativeSpeed" />
+                    </node>
+                    <node concept="CIdvy" id="2t4Dw6aENr_" role="3TlMhI">
+                      <node concept="3TlMh9" id="2t4Dw6aENr$" role="CIrOC">
+                        <property role="2hmy$m" value="0.5" />
+                      </node>
+                      <node concept="CIsGf" id="2t4Dw6aENrA" role="CIwXZ">
+                        <node concept="CIsvn" id="2t4Dw6aENrB" role="CIi4h">
+                          <ref role="CIi3I" to="g2ww:5zHWU$G$9bk" resolve="m/s" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3Tl9Jr" id="2t4Dw6aEKRN" role="c0U16">
+              <node concept="3TlMh9" id="2t4Dw6aEKRQ" role="3TlMhJ">
+                <property role="2hmy$m" value="0" />
+              </node>
+              <node concept="3LAlOK" id="2t4Dw6aEKPC" role="3TlMhI">
+                <ref role="2H6Oet" to="azo0:2t4Dw6aDu1H" resolve="bytesInBuffer" />
+                <node concept="1DnYEe" id="2t4Dw6aEKKQ" role="1_9fRO">
+                  <ref role="1DnYF2" node="2t4Dw6aEIl$" resolve="uart" />
+                  <ref role="1DcY7d" to="azo0:2t4Dw6aD3kT" resolve="receiveBuffer" />
+                </node>
               </node>
             </node>
           </node>
-          <node concept="3XISUE" id="5zHWU$H40xr" role="3XIRFZ" />
-          <node concept="3XISUE" id="5zHWU$H6vOa" role="3XIRFZ" />
-          <node concept="3XISUE" id="5zHWU$H6vP4" role="3XIRFZ" />
+          <node concept="3XISUE" id="2t4Dw6aEPAS" role="3XIRFZ" />
         </node>
         <node concept="2EWDw0" id="5zHWU$Gy5AY" role="2EWDeT">
           <ref role="1ZwSu5" node="exHFgzLLsD" resolve="runnable0" />
@@ -1503,6 +1536,10 @@
     <node concept="3GEVxB" id="5zHWU$G_QMY" role="2OODSX">
       <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" to="uvoh:5zHWU$Gz13S" resolve="AvrTimers" />
+    </node>
+    <node concept="3GEVxB" id="2t4Dw6aEI9N" role="2OODSX">
+      <property role="3GEa6x" value="true" />
+      <ref role="3GEb4d" to="azo0:oDdAT4ofk7" resolve="UART" />
     </node>
   </node>
   <node concept="N3F5e" id="5zHWU$GzThY">
