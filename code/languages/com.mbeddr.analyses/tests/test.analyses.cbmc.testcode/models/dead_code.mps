@@ -62,7 +62,9 @@
       </concept>
     </language>
     <language id="0a02a8f9-14d0-4970-9bd2-ca35a097c80d" name="com.mbeddr.analyses.cbmc.core">
-      <concept id="4160512478126213860" name="com.mbeddr.analyses.cbmc.core.structure.DeadCodeAnalysis" flags="ng" index="fXxrE" />
+      <concept id="4160512478126213860" name="com.mbeddr.analyses.cbmc.core.structure.DeadCodeAnalysis" flags="ng" index="fXxrE">
+        <property id="6410147638574386725" name="provideTracesToReachableCode" index="33Z6lP" />
+      </concept>
     </language>
     <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
       <concept id="4355827153833266" name="com.mbeddr.analyses.cbmc.structure.AnalysisConfigItem" flags="ng" index="aeBiC">
@@ -382,6 +384,7 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
+      <property role="33Z6lP" value="true" />
       <ref role="3V$Cn$" node="4pAFZeart0i" resolve="allReachable" />
     </node>
     <node concept="fXxrE" id="3AX70SQwlLd" role="3V$2$K">
@@ -397,10 +400,11 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
+      <property role="33Z6lP" value="true" />
       <ref role="3V$Cn$" node="3AX70SQwh7L" resolve="dead1" />
     </node>
     <node concept="fXxrE" id="4pAFZearyQJ" role="3V$2$K">
-      <property role="2lelRm" value="false" />
+      <property role="2lelRm" value="true" />
       <property role="2lUGe1" value="true" />
       <property role="2l50Lc" value="false" />
       <property role="22uFEx" value="false" />
@@ -412,6 +416,7 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
+      <property role="33Z6lP" value="true" />
       <ref role="3V$Cn$" node="4pAFZearx3P" resolve="unwinding" />
     </node>
     <node concept="3GEVxB" id="3AX70SQwlRZ" role="3W6d8T">
