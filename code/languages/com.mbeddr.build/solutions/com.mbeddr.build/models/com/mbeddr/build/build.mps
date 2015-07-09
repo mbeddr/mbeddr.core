@@ -2483,6 +2483,12 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LeP" resolve="jetbrains.mps.analyzers.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3xXqw_2hA_l" role="3bR37C">
+          <node concept="3bR9La" id="3xXqw_2hA_m" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7uZw0yZ43K6" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -3452,6 +3458,12 @@
             <node concept="3bR9La" id="6xOTwsqgoGW" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4at7OoKx$2h" role="3bR37C">
+            <node concept="3bR9La" id="4at7OoKx$2i" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
             </node>
           </node>
         </node>
@@ -7022,11 +7034,6 @@
                 <property role="2Ry0Am" value="com.mbeddr.analyses.cbmc.concurrency.mpl" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7DvJ5MZSY5a" role="3bR37C">
-          <node concept="1Busua" id="7DvJ5MZSY5b" role="1SiIV1">
-            <ref role="1Busuk" node="7eF9rfAuFwr" resolve="com.mbeddr.analyses.cbmc" />
           </node>
         </node>
         <node concept="1SiIV0" id="32kfzHm7ggZ" role="3bR37C">

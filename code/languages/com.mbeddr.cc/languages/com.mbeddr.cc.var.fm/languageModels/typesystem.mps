@@ -100,6 +100,9 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
@@ -293,15 +296,17 @@
           </node>
           <node concept="3clFbJ" id="5MNZoCA0bMg" role="3cqZAp">
             <node concept="3clFbS" id="5MNZoCA0bMh" role="3clFbx">
-              <node concept="2MkqsV" id="5MNZoCA0nAb" role="3cqZAp">
-                <node concept="37vLTw" id="5MNZoCA0vhe" role="2MkJ7o">
-                  <ref role="3cqZAo" node="5MNZoCA0eUa" resolve="crossError" />
-                </node>
-                <node concept="1YBJjd" id="5MNZoCA0nAd" role="2OEOjV">
+              <node concept="a7r0C" id="1UQqPl7ttMs" role="3cqZAp">
+                <node concept="1YBJjd" id="1UQqPl7ttN3" role="2OEOjV">
                   <ref role="1YBMHb" node="5USXI9KzbhD" resolve="sf" />
                 </node>
-                <node concept="2OE7Q9" id="5MNZoCA0nAe" role="2OEWyd">
-                  <ref role="2OEe5H" to="qqyh:5USXI9Kzbah" />
+                <node concept="3cpWs3" id="1UQqPl7tusA" role="a7wSD">
+                  <node concept="37vLTw" id="1UQqPl7ttMP" role="3uHU7B">
+                    <ref role="3cqZAo" node="5MNZoCA0eUa" resolve="crossError" />
+                  </node>
+                  <node concept="Xl_RD" id="1UQqPl7tuJR" role="3uHU7w">
+                    <property role="Xl_RC" value=" (use 'Check Consistency of Variability Definition' to confirm error)" />
+                  </node>
                 </node>
               </node>
             </node>
