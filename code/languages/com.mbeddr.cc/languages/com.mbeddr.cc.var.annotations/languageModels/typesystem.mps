@@ -721,7 +721,7 @@
         <node concept="3clFbS" id="3yKJMlzzKkP" role="3clFbx">
           <node concept="2MkqsV" id="3yKJMlzzMhQ" role="3cqZAp">
             <node concept="Xl_RD" id="3yKJMlzzMib" role="2MkJ7o">
-              <property role="Xl_RC" value="Feature model mappings are missing; use the 'Discover...' intention to add them." />
+              <property role="Xl_RC" value="Feature model mappings are missing; use the 'Discover Feature Models' intention to add them." />
             </node>
             <node concept="1YBJjd" id="3yKJMlzzMm0" role="2OEOjV">
               <ref role="1YBMHb" node="4omMoHUAG4z" resolve="vci" />
