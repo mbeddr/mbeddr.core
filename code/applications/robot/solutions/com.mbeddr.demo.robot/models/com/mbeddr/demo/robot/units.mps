@@ -135,6 +135,14 @@
       <property role="CIruq" value="micro seconds" />
       <node concept="CIsGf" id="5zHWU$G$0Xi" role="CIsG9" />
     </node>
+    <node concept="134lye" id="2XT_MLH7DiS" role="CIrPi" />
+    <node concept="CIrOH" id="2XT_MLH7EzP" role="CIrPi">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="°" />
+      <property role="CIruq" value="grad" />
+      <node concept="CIsGf" id="2XT_MLH7EzQ" role="CIsG9" />
+    </node>
+    <node concept="134lye" id="2XT_MLH7E8M" role="CIrPi" />
     <node concept="TRoc0" id="5zHWU$G$0Xj" role="CIrPi">
       <property role="2OOxQR" value="true" />
       <ref role="27Q$ZQ" to="cmgk:6TeNRL7trCJ" resolve="s" />
@@ -316,6 +324,8 @@
       </node>
     </node>
     <node concept="134lye" id="5zHWU$G$53C" role="CIrPi" />
+    <node concept="134lye" id="2XT_MLH7CKB" role="CIrPi" />
+    <node concept="134lye" id="2XT_MLH7CQo" role="CIrPi" />
     <node concept="134lye" id="5zHWU$G$3$U" role="CIrPi" />
     <node concept="3GEVxB" id="5zHWU$G$0XR" role="7b7yl">
       <property role="3GEa6x" value="true" />
