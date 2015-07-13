@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:7a7bfc55-cd95-404c-a996-e748072b6048(com.mbeddr.demo.robot.motor_tests)">
+<model ref="r:7a7bfc55-cd95-404c-a996-e748072b6048(com.mbeddr.demo.robot.motorBoard_tests)">
   <persistence version="9" />
   <languages>
     <use id="3828799d-97c8-48d0-af8b-39b903457e1e" name="mbeddr.arduino.registers" version="-1" />
@@ -10,7 +10,7 @@
   <imports>
     <import index="g2ww" ref="r:1d62ae5e-bbdf-48a3-9ff2-3e7f548b6242(com.mbeddr.demo.robot.units)" />
     <import index="t6m2" ref="r:5b5b2089-00bc-4f4a-9b07-7e2ecff90d57(com.mbeddr.demo.robot.io)" />
-    <import index="8uyq" ref="r:9fc15975-88da-4695-88bb-9a9876df48ba(com.mbeddr.demo.robot.motor)" />
+    <import index="8uyq" ref="r:9fc15975-88da-4695-88bb-9a9876df48ba(com.mbeddr.demo.robot.motorBoard)" />
     <import index="aelz" ref="r:832a1eb9-6df4-4b76-8168-017ed7892fc6(mbeddr.arduino.header.Import)" />
     <import index="ec8n" ref="r:df033cd0-34e6-4f58-88d1-8a821b4d317d(com.mbeddr.demo.robot.util)" />
     <import index="1o4w" ref="r:442bb4e7-6f10-4ceb-b79f-652568158259(mbeddr.arduino.platform.Main)" />
