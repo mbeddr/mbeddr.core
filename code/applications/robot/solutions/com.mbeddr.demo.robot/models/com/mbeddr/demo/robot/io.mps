@@ -59,6 +59,13 @@
       </node>
       <node concept="2EX0iL" id="5zHWU$GuxIw" role="2EX0iN">
         <property role="TrG5h" value="asInput" />
+        <node concept="2EWNYT" id="74TmcPkl7ht" role="1UOdpc">
+          <property role="TrG5h" value="enablePullup" />
+          <node concept="3TlMgk" id="74TmcPkl7hr" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
         <node concept="19Rifw" id="5zHWU$GuxIu" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
@@ -81,6 +88,13 @@
       <node concept="2EX0iL" id="5zHWU$GuxJ$" role="2EX0iN">
         <property role="TrG5h" value="read" />
         <node concept="3TlMgk" id="5zHWU$GuxJX" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EX0iL" id="74TmcPjX71s" role="2EX0iN">
+        <property role="TrG5h" value="toggle" />
+        <node concept="19Rifw" id="74TmcPjX73l" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>

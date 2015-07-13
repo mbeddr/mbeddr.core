@@ -16,9 +16,9 @@
     <import index="ec8n" ref="r:df033cd0-34e6-4f58-88d1-8a821b4d317d(com.mbeddr.demo.robot.util)" />
     <import index="t6m2" ref="r:5b5b2089-00bc-4f4a-9b07-7e2ecff90d57(com.mbeddr.demo.robot.io)" />
     <import index="g2ww" ref="r:1d62ae5e-bbdf-48a3-9ff2-3e7f548b6242(com.mbeddr.demo.robot.units)" />
-    <import index="uvoh" ref="r:28232de8-4ea1-4b96-a33b-5e3de019eaa2(com.mbeddr.demo.robot.io.avr)" />
     <import index="azo0" ref="r:0eefe47e-8047-472d-accf-5c763f248835(com.mbeddr.demo.robot.communication)" />
     <import index="3y0n" ref="r:d4d16117-20fb-4ba8-a1b2-1598e121e1d0(com.mbeddr.core.stdlib)" />
+    <import index="bs9u" ref="r:6796c9a5-23e8-4b7e-bc37-6a06a8f0a13f(com.mbeddr.demo.robot.avr)" />
     <import index="cmgk" ref="r:679066bc-2da8-4932-a09c-5d2b3d47b911(com.mbeddr.ext.units.siunits)" implicit="true" />
   </imports>
   <registry>
@@ -433,7 +433,7 @@
         <ref role="2v9HqP" to="ec8n:5zHWU$GzMff" resolve="Util" />
       </node>
       <node concept="2v9HqM" id="5zHWU$GA01A" role="2eOfOg">
-        <ref role="2v9HqP" to="uvoh:5zHWU$Gz13S" resolve="AvrTimers" />
+        <ref role="2v9HqP" to="bs9u:74TmcPjVX9B" resolve="AvrTimers" />
       </node>
       <node concept="2v9HqM" id="5zHWU$GA01B" role="2eOfOg">
         <ref role="2v9HqP" node="5zHWU$G_yx2" resolve="ChassisControl" />
@@ -788,7 +788,7 @@
         </node>
         <node concept="2EWCuV" id="5zHWU$G_QLg" role="5JtDH">
           <property role="TrG5h" value="timer1" />
-          <ref role="2EWCuU" to="uvoh:5zHWU$Gz13T" resolve="Timer1" />
+          <ref role="2EWCuU" to="bs9u:74TmcPjVXak" resolve="Timer1" />
           <node concept="gqqVs" id="5zHWU$GDLPe" role="lGtFl">
             <property role="gqqTZ" value="1164.0" />
             <property role="gqqTW" value="172.0" />
@@ -807,7 +807,7 @@
         </node>
         <node concept="2EWCuV" id="5zHWU$G_QXg" role="5JtDH">
           <property role="TrG5h" value="timer3" />
-          <ref role="2EWCuU" to="uvoh:5zHWU$Gz78l" resolve="Timer3" />
+          <ref role="2EWCuU" to="bs9u:74TmcPjVXcc" resolve="Timer3" />
           <node concept="gqqVs" id="5zHWU$GDLPh" role="lGtFl">
             <property role="gqqTZ" value="1164.0" />
             <property role="gqqTW" value="332.0" />
@@ -822,7 +822,7 @@
         </node>
         <node concept="2EWCuV" id="5zHWU$G_QZA" role="5JtDH">
           <property role="TrG5h" value="timer4" />
-          <ref role="2EWCuU" to="uvoh:5zHWU$Gz7OV" resolve="Timer4" />
+          <ref role="2EWCuU" to="bs9u:74TmcPjVXdB" resolve="Timer4" />
           <node concept="gqqVs" id="5zHWU$GDLPj" role="lGtFl">
             <property role="gqqTZ" value="1164.0" />
             <property role="gqqTW" value="252.0" />
@@ -907,7 +907,7 @@
           </node>
           <node concept="2EWCuO" id="5zHWU$G_R25" role="2EWCuK">
             <ref role="2EWCuR" node="5zHWU$G_QLg" resolve="timer1" />
-            <ref role="XcPQd" to="uvoh:5zHWU$Gz4zX" resolve="pinB" />
+            <ref role="XcPQd" to="bs9u:74TmcPjVXam" resolve="pinB" />
           </node>
           <node concept="2VclpC" id="5zHWU$GW6My" role="lGtFl">
             <node concept="2VclrF" id="5zHWU$GW6Mz" role="2Vcluh">
@@ -935,7 +935,7 @@
           </node>
           <node concept="2EWCuO" id="5zHWU$G_Su7" role="2EWCuK">
             <ref role="2EWCuR" node="5zHWU$G_QLg" resolve="timer1" />
-            <ref role="XcPQd" to="uvoh:5zHWU$Gz4m5" resolve="pinA" />
+            <ref role="XcPQd" to="bs9u:74TmcPjVXal" resolve="pinA" />
           </node>
           <node concept="2VclpC" id="5zHWU$GDLQG" role="lGtFl" />
         </node>
@@ -946,7 +946,7 @@
           </node>
           <node concept="2EWCuO" id="5zHWU$G_Svk" role="2EWCuK">
             <ref role="2EWCuR" node="5zHWU$G_QZA" resolve="timer4" />
-            <ref role="XcPQd" to="uvoh:5zHWU$Gzrho" resolve="pinD" />
+            <ref role="XcPQd" to="bs9u:74TmcPjVXdC" resolve="pinD" />
           </node>
           <node concept="2VclpC" id="5zHWU$GW6LV" role="lGtFl">
             <node concept="2VclrF" id="5zHWU$GW6LW" role="2Vcluh">
@@ -966,7 +966,7 @@
           </node>
           <node concept="2EWCuO" id="5zHWU$G_SwB" role="2EWCuK">
             <ref role="2EWCuR" node="5zHWU$G_QXg" resolve="timer3" />
-            <ref role="XcPQd" to="uvoh:5zHWU$GzwNR" resolve="pinA" />
+            <ref role="XcPQd" to="bs9u:74TmcPjVXcd" resolve="pinA" />
           </node>
           <node concept="2VclpC" id="5zHWU$GDLRd" role="lGtFl" />
         </node>
@@ -2030,7 +2030,7 @@
     </node>
     <node concept="3GEVxB" id="5zHWU$G_QMY" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" to="uvoh:5zHWU$Gz13S" resolve="AvrTimers" />
+      <ref role="3GEb4d" to="bs9u:74TmcPjVX9B" resolve="AvrTimers" />
     </node>
     <node concept="3GEVxB" id="2t4Dw6aEI9N" role="2OODSX">
       <property role="3GEa6x" value="true" />

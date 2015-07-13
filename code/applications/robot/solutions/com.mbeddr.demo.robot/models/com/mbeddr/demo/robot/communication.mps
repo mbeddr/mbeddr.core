@@ -8,7 +8,8 @@
   </languages>
   <imports>
     <import index="t6m2" ref="r:5b5b2089-00bc-4f4a-9b07-7e2ecff90d57(com.mbeddr.demo.robot.io)" />
-    <import index="77b7" ref="r:a0b3629e-62c3-4c97-80e1-7ddede5fb214(com.mbeddr.demo.robot.avr)" />
+    <import index="77b7" ref="r:a0b3629e-62c3-4c97-80e1-7ddede5fb214(com.mbeddr.demo.robot.avr.imports)" />
+    <import index="ec8n" ref="r:df033cd0-34e6-4f58-88d1-8a821b4d317d(com.mbeddr.demo.robot.util)" />
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -6942,6 +6943,201 @@
     </node>
     <node concept="rcWE1" id="wYuX6q7eIH" role="rcWEr">
       <property role="rcWEL" value="&lt;util/twi.h&gt;" />
+    </node>
+  </node>
+  <node concept="N3F5e" id="74TmcPjUmer">
+    <property role="TrG5h" value="Radio" />
+    <node concept="2NXPZ9" id="74TmcPjUmev" role="N3F5h">
+      <property role="TrG5h" value="empty_1436779429942_11" />
+    </node>
+    <node concept="2EX0iR" id="74TmcPjUr4S" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="IOutputStream" />
+      <node concept="2EX0iL" id="74TmcPjUr5$" role="2EX0iN">
+        <property role="TrG5h" value="writeByte" />
+        <node concept="2EWNYT" id="74TmcPjUr6w" role="1UOdpc">
+          <property role="TrG5h" value="data" />
+          <node concept="26Vqp4" id="74TmcPjUr6u" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="19Rifw" id="74TmcPjUr5L" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EX0iL" id="74TmcPjUr77" role="2EX0iN">
+        <property role="TrG5h" value="isBusy" />
+        <node concept="3TlMgk" id="74TmcPjUr7y" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="74TmcPjUr80" role="N3F5h">
+      <property role="TrG5h" value="empty_1436779707998_23" />
+    </node>
+    <node concept="2EX0iR" id="74TmcPjUra3" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="IInputStream" />
+      <node concept="2EX0iL" id="74TmcPjUrb7" role="2EX0iN">
+        <property role="TrG5h" value="readByte" />
+        <node concept="2EWNYT" id="74TmcPjUrcd" role="1UOdpc">
+          <property role="TrG5h" value="data" />
+          <node concept="26Vqp4" id="74TmcPjUrcb" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="26Vqp4" id="74TmcPjUrbk" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2EX0iL" id="74TmcPjUrd3" role="2EX0iN">
+        <property role="TrG5h" value="dataAvailable" />
+        <node concept="3TlMgk" id="74TmcPjUrdu" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="74TmcPjUr4d" role="N3F5h">
+      <property role="TrG5h" value="empty_1436779524483_22" />
+    </node>
+    <node concept="4WHVk" id="74TmcPjU_qi" role="N3F5h">
+      <property role="TrG5h" value="BAUD_RATE" />
+      <node concept="3TlMh9" id="74TmcPjU_se" role="2DQcEM">
+        <property role="2hmy$m" value="1000" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="74TmcPjU_oO" role="N3F5h">
+      <property role="TrG5h" value="empty_1436780169782_26" />
+    </node>
+    <node concept="2EWCuY" id="74TmcPjUmh8" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="SimpleRadioTransmitter" />
+      <node concept="2EWHp_" id="74TmcPjUmju" role="2RW2fA">
+        <property role="TrG5h" value="stream" />
+        <ref role="2EX0h9" node="74TmcPjUr4S" resolve="IOutputStream" />
+      </node>
+      <node concept="3Khz0B" id="74TmcPjWNN6" role="2RW2fA" />
+      <node concept="3Khz0B" id="74TmcPjU_J5" role="2RW2fA" />
+      <node concept="3Khz0B" id="74TmcPjU_Jf" role="2RW2fA" />
+      <node concept="2EWDwb" id="74TmcPjWNQv" role="2RW2fA">
+        <property role="TrG5h" value="stream_writeByte" />
+        <node concept="3XIRFW" id="74TmcPjWNQw" role="2EWMhI">
+          <node concept="3XISUE" id="74TmcPjWNQx" role="3XIRFZ" />
+        </node>
+        <node concept="2EWDw0" id="74TmcPjWNQy" role="2EWDeT">
+          <ref role="1ZwSu5" node="74TmcPjUmju" resolve="stream" />
+          <ref role="1ZwxE2" node="74TmcPjUr5$" resolve="writeByte" />
+        </node>
+        <node concept="19Rifw" id="74TmcPjWO5W" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="19RgSI" id="74TmcPjWO5X" role="1UOdpc">
+          <property role="TrG5h" value="data" />
+          <node concept="26Vqp4" id="74TmcPjWO5Y" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EWDwb" id="74TmcPjWNQA" role="2RW2fA">
+        <property role="TrG5h" value="stream_isBusy" />
+        <node concept="3XIRFW" id="74TmcPjWNQB" role="2EWMhI">
+          <node concept="2BFjQ_" id="74TmcPjWNQF" role="3XIRFZ">
+            <node concept="3TlMhd" id="74TmcPjWNQG" role="2BFjQA" />
+          </node>
+        </node>
+        <node concept="2EWDw0" id="74TmcPjWNQD" role="2EWDeT">
+          <ref role="1ZwSu5" node="74TmcPjUmju" resolve="stream" />
+          <ref role="1ZwxE2" node="74TmcPjUr77" resolve="isBusy" />
+        </node>
+        <node concept="3TlMgk" id="74TmcPjWO5R" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="74TmcPjUmhv" role="N3F5h">
+      <property role="TrG5h" value="empty_1436779455789_18" />
+    </node>
+    <node concept="2NXPZ9" id="74TmcPjUmhS" role="N3F5h">
+      <property role="TrG5h" value="empty_1436779455977_19" />
+    </node>
+    <node concept="2EWCuY" id="74TmcPjUmiN" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="SimpleRadioReceiver" />
+      <node concept="2EWHp_" id="74TmcPjU_nl" role="2RW2fA">
+        <property role="TrG5h" value="stream" />
+        <ref role="2EX0h9" node="74TmcPjUra3" resolve="IInputStream" />
+      </node>
+      <node concept="2EWDwb" id="74TmcPjWNVz" role="2RW2fA">
+        <property role="TrG5h" value="stream_readByte" />
+        <node concept="3XIRFW" id="74TmcPjWNV$" role="2EWMhI">
+          <node concept="2BFjQ_" id="74TmcPjWNVE" role="3XIRFZ">
+            <node concept="3TlMh9" id="74TmcPjWNVF" role="2BFjQA">
+              <property role="2hmy$m" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="2EWDw0" id="74TmcPjWNVA" role="2EWDeT">
+          <ref role="1ZwSu5" node="74TmcPjU_nl" resolve="stream" />
+          <ref role="1ZwxE2" node="74TmcPjUrb7" resolve="readByte" />
+        </node>
+        <node concept="26Vqp4" id="74TmcPjWNVB" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="19RgSI" id="74TmcPjWNVC" role="1UOdpc">
+          <property role="TrG5h" value="data" />
+          <node concept="26Vqp4" id="74TmcPjWNVD" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EWDwb" id="74TmcPjWNVG" role="2RW2fA">
+        <property role="TrG5h" value="stream_dataAvailable" />
+        <node concept="3XIRFW" id="74TmcPjWNVH" role="2EWMhI">
+          <node concept="2BFjQ_" id="74TmcPjWNVL" role="3XIRFZ">
+            <node concept="3TlMhd" id="74TmcPjWNVM" role="2BFjQA" />
+          </node>
+        </node>
+        <node concept="2EWDw0" id="74TmcPjWNVJ" role="2EWDeT">
+          <ref role="1ZwSu5" node="74TmcPjU_nl" resolve="stream" />
+          <ref role="1ZwxE2" node="74TmcPjUrd3" resolve="dataAvailable" />
+        </node>
+        <node concept="3TlMgk" id="74TmcPjWNVK" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="74TmcPjUmgv" role="N3F5h">
+      <property role="TrG5h" value="empty_1436779439186_16" />
+    </node>
+    <node concept="2NXPZ9" id="74TmcPjUmgM" role="N3F5h">
+      <property role="TrG5h" value="empty_1436779439373_17" />
+    </node>
+    <node concept="2NXPZ9" id="74TmcPjUmez" role="N3F5h">
+      <property role="TrG5h" value="empty_1436779430142_12" />
+    </node>
+    <node concept="2NXPZ9" id="74TmcPjUmeE" role="N3F5h">
+      <property role="TrG5h" value="empty_1436779430306_13" />
+    </node>
+    <node concept="2NXPZ9" id="74TmcPjUmeO" role="N3F5h">
+      <property role="TrG5h" value="empty_1436779430446_14" />
+    </node>
+    <node concept="3GEVxB" id="74TmcPjUmgb" role="2OODSX">
+      <ref role="3GEb4d" to="t6m2:5zHWU$GuxGd" resolve="IO" />
+    </node>
+    <node concept="3GEVxB" id="74TmcPjUrex" role="2OODSX">
+      <ref role="3GEb4d" to="ec8n:5zHWU$GzMff" resolve="Util" />
     </node>
   </node>
 </model>
