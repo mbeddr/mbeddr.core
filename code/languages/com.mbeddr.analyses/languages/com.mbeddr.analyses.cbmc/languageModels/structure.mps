@@ -513,16 +513,6 @@
       <ref role="20lvS9" to="x27k:5_l8w1EmTvx" resolve="Function" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7DvJ5MZ1aFL">
-    <property role="TrG5h" value="VerificationCase" />
-    <property role="3GE5qa" value="verification_case" />
-    <property role="34LRSv" value="verification case" />
-    <property role="R4oN_" value="container for harness and properties to check" />
-    <ref role="1TJDcQ" to="x27k:5_l8w1EmTvx" resolve="Function" />
-    <node concept="PrWs8" id="7DvJ5MZ1aFM" role="PzmwI">
-      <ref role="PrY4T" node="7DvJ5MZ1ag1" resolve="IHarnessLike" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="fupCadgOM">
     <property role="3GE5qa" value="configuration.cbmc" />
     <property role="TrG5h" value="AnalysisConfigItem" />
