@@ -168,7 +168,6 @@
     </language>
     <language id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test">
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
-      <concept id="4229421158914492798" name="com.mbeddr.core.debug.test.structure.CallStackDeclaration" flags="ng" index="2cbQls" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
       <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
@@ -281,22 +280,6 @@
   <node concept="309jyn" id="5S3xvtanoR">
     <property role="TrG5h" value="ArrayInit" />
     <node concept="29bEnc" id="5t7wq7uZRT6" role="29bA6Q" />
-    <node concept="2cbQls" id="43Mwoo913_Q" role="1zJi$$" />
-    <node concept="1vsUH6" id="43Mwoo912Go" role="1zJi$$" />
-    <node concept="1vuW9F" id="43Mwoo912WG" role="1zJi$$" />
-    <node concept="3scrou" id="43Mwoo9134Q" role="1zJi$$">
-      <node concept="3cqZAl" id="43Mwoo9134S" role="3clF45" />
-      <node concept="3clFbS" id="43Mwoo9134U" role="3clF47" />
-    </node>
-    <node concept="2NXPZ9" id="43Mwoo90WIg" role="1zJi$$">
-      <property role="TrG5h" value="empty_1436619776965_3" />
-    </node>
-    <node concept="2NXPZ9" id="43Mwoo914np" role="1zJi$$">
-      <property role="TrG5h" value="empty_1436619832951_7" />
-    </node>
-    <node concept="2NXPZ9" id="43Mwoo914vE" role="1zJi$$">
-      <property role="TrG5h" value="empty_1436619833137_8" />
-    </node>
     <node concept="1vsUH6" id="4WY_RKG$pk_" role="1zJi$$">
       <property role="TrG5h" value="inArrayTest" />
       <node concept="1l6lqP" id="4WY_RKG$pkB" role="1vsUJ9">
