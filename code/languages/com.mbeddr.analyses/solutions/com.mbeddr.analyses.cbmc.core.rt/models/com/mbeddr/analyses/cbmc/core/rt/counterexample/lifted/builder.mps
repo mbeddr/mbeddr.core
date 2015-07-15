@@ -31,7 +31,7 @@
     <import index="yz9a" ref="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" />
     <import index="q9jj" ref="r:9bb65e44-f83e-4e38-ac95-7e443359a2f7(com.mbeddr.analyses.utils.log)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -6680,43 +6680,8 @@
     <node concept="NWlO9" id="576QrOJcWyQ" role="lGtFl">
       <property role="NWlVz" value="Lifts failures on nodes for the mbeddr.core languages." />
     </node>
-    <node concept="3uibUv" id="576QrOJcWyR" role="1zkMxy">
-      <ref role="3uigEE" to="8ear:7iLQIU34QN7" resolve="CounterexampleLifterBase" />
-    </node>
-    <node concept="3clFb_" id="576QrOJcWyS" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="isNoise" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <node concept="10P_77" id="576QrOJcWyT" role="3clF45" />
-      <node concept="37vLTG" id="576QrOJcWyU" role="3clF46">
-        <property role="TrG5h" value="crtState" />
-        <node concept="3uibUv" id="576QrOJcWyV" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="576QrOJcWyW" role="3clF46">
-        <property role="TrG5h" value="allRawStates" />
-        <node concept="_YKpA" id="576QrOJcWyX" role="1tU5fm">
-          <node concept="3uibUv" id="576QrOJcWyY" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="576QrOJcWyZ" role="1B3o_S" />
-      <node concept="3clFbS" id="576QrOJcWz0" role="3clF47">
-        <node concept="3clFbF" id="576QrOJcWzB" role="3cqZAp">
-          <node concept="3clFbT" id="576QrOJcWzC" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="576QrOJcWzD" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
-      </node>
-      <node concept="NWlO9" id="576QrOJcWzE" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
+    <node concept="3uibUv" id="4kjWK0$pZLV" role="1zkMxy">
+      <ref role="3uigEE" to="8ear:4kjWK0$q3Hq" resolve="FailuresLifterBase" />
     </node>
   </node>
 </model>

@@ -29,9 +29,9 @@
     <import index="v2t1" ref="f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons/org.apache.commons.lang3@java_stub)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
     <import index="q9jj" ref="r:9bb65e44-f83e-4e38-ac95-7e443359a2f7(com.mbeddr.analyses.utils.log)" />
-    <import index="2rho" ref="r:4e770e63-2ef5-4a0d-b2e8-c5c1a1565703(com.mbeddr.core.udt.behavior)" implicit="true" />
-    <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
-    <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
+    <import index="2rho" ref="r:4e770e63-2ef5-4a0d-b2e8-c5c1a1565703(com.mbeddr.core.udt.behavior)" />
+    <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
+    <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -49,6 +49,12 @@
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
+      </concept>
+      <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
+        <reference id="1188208074048" name="annotation" index="2AI5Lk" />
+      </concept>
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
+        <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq">
         <child id="1153952416686" name="body" index="2GV8ay" />
@@ -6656,6 +6662,71 @@
     <node concept="3Tm1VV" id="2V53qRg7oNz" role="1B3o_S" />
     <node concept="NWlO9" id="2V53qRg7oN$" role="lGtFl">
       <property role="NWlVz" value="Filters out the first assignment when variables are initialized." />
+    </node>
+  </node>
+  <node concept="312cEu" id="4kjWK0$q3Hq">
+    <property role="TrG5h" value="FailuresLifterBase" />
+    <property role="1sVAO0" value="true" />
+    <node concept="2tJIrI" id="4kjWK0$q3Hr" role="jymVt" />
+    <node concept="3clFb_" id="4kjWK0$q3Hs" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isNoise" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="10P_77" id="4kjWK0$q3Ht" role="3clF45" />
+      <node concept="37vLTG" id="4kjWK0$q3Hu" role="3clF46">
+        <property role="TrG5h" value="crtState" />
+        <node concept="3uibUv" id="4kjWK0$q3Hv" role="1tU5fm">
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4kjWK0$q3Hw" role="3clF46">
+        <property role="TrG5h" value="allRawStates" />
+        <node concept="_YKpA" id="4kjWK0$q3Hx" role="1tU5fm">
+          <node concept="3uibUv" id="4kjWK0$q3Hy" role="_ZDj9">
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4kjWK0$q3Hz" role="1B3o_S" />
+      <node concept="3clFbS" id="4kjWK0$q3H$" role="3clF47">
+        <node concept="3SKdUt" id="4kjWK0$q3H_" role="3cqZAp">
+          <node concept="3SKdUq" id="4kjWK0$q3HA" role="3SKWNk">
+            <property role="3SKdUp" value="only the last state is a genuine failure state, the previous fail states might belong to other properties " />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4kjWK0$q3HB" role="3cqZAp">
+          <node concept="3SKdUq" id="4kjWK0$q3HC" role="3SKWNk">
+            <property role="3SKdUp" value="for which the same trace prefix is produced" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="4kjWK0$q3HD" role="3cqZAp">
+          <node concept="3y3z36" id="4kjWK0$q3HE" role="3clFbG">
+            <node concept="37vLTw" id="4kjWK0$q3HF" role="3uHU7w">
+              <ref role="3cqZAo" node="4kjWK0$q3Hu" resolve="crtState" />
+            </node>
+            <node concept="2OqwBi" id="4kjWK0$q3HG" role="3uHU7B">
+              <node concept="37vLTw" id="4kjWK0$q3HH" role="2Oq$k0">
+                <ref role="3cqZAo" node="4kjWK0$q3Hw" resolve="allRawStates" />
+              </node>
+              <node concept="1yVyf7" id="4kjWK0$q3HI" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4kjWK0$q3HJ" role="2AJF6D">
+        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+      </node>
+      <node concept="NWlO9" id="4kjWK0$q3HK" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="4kjWK0$q3HL" role="1B3o_S" />
+    <node concept="3uibUv" id="4kjWK0$q3HM" role="1zkMxy">
+      <ref role="3uigEE" node="7iLQIU34QN7" resolve="CounterexampleLifterBase" />
+    </node>
+    <node concept="NWlO9" id="4kjWK0$q3HN" role="lGtFl">
+      <property role="NWlVz" value="Base class for all failure lifters." />
     </node>
   </node>
 </model>
