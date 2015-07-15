@@ -268,5 +268,13 @@
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
+  <node concept="1TIwiD" id="59Urx6GCgI0">
+    <property role="3GE5qa" value="extending" />
+    <property role="TrG5h" value="ForceImportReferencedElements" />
+    <property role="34LRSv" value="ForceImportReferencedElements" />
+    <property role="R4oN_" value="used in type system tests to force copying imported root nodes from other models" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
 </model>
 
