@@ -48,9 +48,9 @@
     <import index="qjdu" ref="r:bc752cbf-8d9b-4442-8e26-e5c87b20b897(com.mbeddr.core.base.plugin)" />
     <import index="xei" ref="1338ba73-5059-479b-a929-de86597a62b8/f:java_stub#1338ba73-5059-479b-a929-de86597a62b8#edu.uci.ics.jung.visualization.util(com.mbeddr.mpsutil.jung.pluginSolution/edu.uci.ics.jung.visualization.util@java_stub)" />
     <import index="ln2k" ref="r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung.behavior)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
-    <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" implicit="true" />
+    <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -5403,6 +5403,16 @@
             <node concept="13iPFW" id="1OJ4NX2F4QD" role="37wK5m" />
             <node concept="37vLTw" id="1OJ4NX2F4RQ" role="37wK5m">
               <ref role="3cqZAo" node="1OJ4NX2F4HM" resolve="g" />
+            </node>
+            <node concept="2ShNRf" id="4ViWer_Q4Y" role="37wK5m">
+              <node concept="3rGOSV" id="4ViWerA5TA" role="2ShVmc">
+                <node concept="3Tqbb2" id="4ViWerA6pb" role="3rHrn6">
+                  <ref role="ehGHo" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+                </node>
+                <node concept="3uibUv" id="4ViWerA6zh" role="3rHtpV">
+                  <ref role="3uigEE" to="ln2k:5yCuRHcav6I" resolve="JNNode" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -20040,6 +20050,31 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2HGVlaPT6ZA" role="3clF47">
+        <node concept="3clFbJ" id="4ViWer__2U" role="3cqZAp">
+          <node concept="3clFbS" id="4ViWer__2W" role="3clFbx">
+            <node concept="3cpWs6" id="4ViWer_C9E" role="3cqZAp">
+              <node concept="3EllGN" id="4ViWer_Juk" role="3cqZAk">
+                <node concept="37vLTw" id="4ViWer_K0P" role="3ElVtu">
+                  <ref role="3cqZAo" node="2HGVlaPT6ZB" resolve="chunk" />
+                </node>
+                <node concept="37vLTw" id="4ViWer_IBY" role="3ElQJh">
+                  <ref role="3cqZAo" node="4ViWer_cnS" resolve="cycleDetector" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="4ViWer_HTR" role="3clFbw">
+            <node concept="10Nm6u" id="4ViWer_HUU" role="3uHU7w" />
+            <node concept="3EllGN" id="4ViWer_HGs" role="3uHU7B">
+              <node concept="37vLTw" id="4ViWer_HSr" role="3ElVtu">
+                <ref role="3cqZAo" node="2HGVlaPT6ZB" resolve="chunk" />
+              </node>
+              <node concept="37vLTw" id="4ViWer__$I" role="3ElQJh">
+                <ref role="3cqZAo" node="4ViWer_cnS" resolve="cycleDetector" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="1OJ4NX2DwZk" role="3cqZAp">
           <node concept="3cpWsn" id="1OJ4NX2DwZl" role="3cpWs9">
             <property role="TrG5h" value="vsource" />
@@ -20161,6 +20196,9 @@
                       <node concept="37vLTw" id="1OJ4NX2EK34" role="37wK5m">
                         <ref role="3cqZAo" node="1OJ4NX2E59I" resolve="g" />
                       </node>
+                      <node concept="37vLTw" id="4ViWer_PE$" role="37wK5m">
+                        <ref role="3cqZAo" node="4ViWer_cnS" resolve="cycleDetector" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -20208,6 +20246,21 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4ViWer_xaK" role="3cqZAp">
+          <node concept="37vLTI" id="4ViWer_OSc" role="3clFbG">
+            <node concept="37vLTw" id="4ViWer_P1C" role="37vLTx">
+              <ref role="3cqZAo" node="1OJ4NX2DwZl" resolve="vsource" />
+            </node>
+            <node concept="3EllGN" id="4ViWer_Oxz" role="37vLTJ">
+              <node concept="37vLTw" id="4ViWer_OIh" role="3ElVtu">
+                <ref role="3cqZAo" node="2HGVlaPT6ZB" resolve="chunk" />
+              </node>
+              <node concept="37vLTw" id="4ViWer_xaI" role="3ElQJh">
+                <ref role="3cqZAo" node="4ViWer_cnS" resolve="cycleDetector" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="1OJ4NX2Dx07" role="3cqZAp">
           <node concept="37vLTw" id="1OJ4NX2Dx08" role="3clFbG">
             <ref role="3cqZAo" node="1OJ4NX2DwZl" resolve="vsource" />
@@ -20224,6 +20277,17 @@
         <property role="TrG5h" value="g" />
         <node concept="3uibUv" id="1OJ4NX2EIWZ" role="1tU5fm">
           <ref role="3uigEE" to="ln2k:5yCuRHcaxfZ" resolve="JNGraph" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4ViWer_cnS" role="3clF46">
+        <property role="TrG5h" value="cycleDetector" />
+        <node concept="3rvAFt" id="4ViWer_CAd" role="1tU5fm">
+          <node concept="3uibUv" id="4ViWer_GBA" role="3rvSg0">
+            <ref role="3uigEE" to="ln2k:5yCuRHcav6I" resolve="JNNode" />
+          </node>
+          <node concept="3Tqbb2" id="4ViWer_FIk" role="3rvQeY">
+            <ref role="ehGHo" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+          </node>
         </node>
       </node>
       <node concept="3uibUv" id="1OJ4NX2DYOe" role="3clF45">
