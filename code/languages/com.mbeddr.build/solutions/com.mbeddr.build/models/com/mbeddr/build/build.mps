@@ -2289,6 +2289,12 @@
             <ref role="3bR37D" to="al5i:2bBLuwR9$cn" resolve="com.mbeddr.mpsutil.interpreter.rt" />
           </node>
         </node>
+        <node concept="1SiIV0" id="ZZz6Fi$1o9" role="3bR37C">
+          <node concept="3bR9La" id="ZZz6Fi$1oa" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:31bAEZ0srt5" resolve="org.apache.commons" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7uZw0yZ43Lj" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -2567,6 +2573,12 @@
           <node concept="3bR9La" id="_vbjYeqlss" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LfK" resolve="jetbrains.mps.dataFlow.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="ZZz6Fi$1pj" role="3bR37C">
+          <node concept="3bR9La" id="ZZz6Fi$1pk" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:31bAEZ0srt5" resolve="org.apache.commons" />
           </node>
         </node>
       </node>
