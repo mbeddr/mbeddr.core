@@ -293,7 +293,7 @@
         <ref role="2v9HqP" to="azo0:74TmcPjUmer" resolve="Radio" />
       </node>
       <node concept="2v9HqM" id="WklGGZCOAF" role="2eOfOg">
-        <ref role="2v9HqP" node="WklGGZpdp9" resolve="MachesterTests" />
+        <ref role="2v9HqP" node="WklGGZpdp9" resolve="ManchesterTests" />
       </node>
       <node concept="2v9HqM" id="WklGGZCOAG" role="2eOfOg">
         <ref role="2v9HqP" to="azo0:WklGGZzB8_" resolve="Stream" />
@@ -331,7 +331,7 @@
     </node>
   </node>
   <node concept="N3F5e" id="WklGGZpdp9">
-    <property role="TrG5h" value="MachesterTests" />
+    <property role="TrG5h" value="ManchesterTests" />
     <node concept="2NXPZ9" id="WklGGZpe9A" role="N3F5h">
       <property role="TrG5h" value="empty_1436973361162_10" />
     </node>
@@ -733,11 +733,11 @@
         <node concept="1_9egQ" id="WklGGZFbnu" role="3XIRFZ">
           <node concept="30IJZa" id="WklGGZFbnv" role="1_9egR">
             <ref role="2H6Oet" to="azo0:74TmcPjUr5$" resolve="writeByte" />
+            <node concept="3HbmlB" id="WklGGZFbnx" role="2H6KYo">
+              <property role="2hmy$m" value="11000001" />
+            </node>
             <node concept="2H6Wec" id="WklGGZFbnw" role="1_9fRO">
               <ref role="2H6Wef" node="WklGGZ$j71" resolve="encoderStream" />
-            </node>
-            <node concept="3HbmlB" id="WklGGZFbnx" role="2H6KYo">
-              <property role="2hmy$m" value="11000101" />
             </node>
           </node>
         </node>
@@ -754,7 +754,7 @@
         </node>
         <node concept="2N2KuS" id="WklGGZFbnA" role="3XIRFZ">
           <node concept="3HbmlB" id="WklGGZFbnB" role="2N2GHh">
-            <property role="2hmy$m" value="01100110" />
+            <property role="2hmy$m" value="01010110" />
           </node>
           <node concept="30IJZa" id="WklGGZFbnC" role="2N2GHg">
             <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
@@ -764,6 +764,40 @@
           </node>
         </node>
         <node concept="3XISUE" id="WklGGZFbk_" role="3XIRFZ" />
+        <node concept="1_9egQ" id="6tw98Xd0mnU" role="3XIRFZ">
+          <node concept="30IJZa" id="6tw98Xd0mnV" role="1_9egR">
+            <ref role="2H6Oet" to="azo0:74TmcPjUr5$" resolve="writeByte" />
+            <node concept="3HbmlB" id="6tw98Xd0mnW" role="2H6KYo">
+              <property role="2hmy$m" value="01011010" />
+            </node>
+            <node concept="2H6Wec" id="6tw98Xd0mnX" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZ$j71" resolve="encoderStream" />
+            </node>
+          </node>
+        </node>
+        <node concept="2N2KuS" id="6tw98Xd0mnY" role="3XIRFZ">
+          <node concept="3HbmlB" id="6tw98Xd0mnZ" role="2N2GHh">
+            <property role="2hmy$m" value="01100110" />
+          </node>
+          <node concept="30IJZa" id="6tw98Xd0mo0" role="2N2GHg">
+            <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
+            <node concept="2H6Wec" id="6tw98Xd0mo1" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZF8FU" resolve="adapterBuffer" />
+            </node>
+          </node>
+        </node>
+        <node concept="2N2KuS" id="6tw98Xd0mo2" role="3XIRFZ">
+          <node concept="3HbmlB" id="6tw98Xd0mo3" role="2N2GHh">
+            <property role="2hmy$m" value="10011001" />
+          </node>
+          <node concept="30IJZa" id="6tw98Xd0mo4" role="2N2GHg">
+            <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
+            <node concept="2H6Wec" id="6tw98Xd0mo5" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZF8FU" resolve="adapterBuffer" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="6tw98Xd0mm1" role="3XIRFZ" />
       </node>
     </node>
     <node concept="2NXPZ9" id="WklGGZFEtB" role="N3F5h">
@@ -1024,7 +1058,7 @@
       </node>
     </node>
     <node concept="3GEVxB" id="WklGGZ$kej" role="2OODSX">
-      <ref role="3GEb4d" node="WklGGZpdp9" resolve="MachesterTests" />
+      <ref role="3GEb4d" node="WklGGZpdp9" resolve="ManchesterTests" />
     </node>
   </node>
 </model>
