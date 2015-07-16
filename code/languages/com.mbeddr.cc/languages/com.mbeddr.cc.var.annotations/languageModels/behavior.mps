@@ -18,9 +18,9 @@
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" />
     <import index="epq1" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.math(JDK/java.math@java_stub)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
+    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -1560,9 +1560,6 @@
   <node concept="13h7C7" id="3UhOf8WVZaA">
     <property role="3GE5qa" value="fm" />
     <ref role="13h7C2" to="qdv7:3UhOf8WVZaw" resolve="NoValueExpression" />
-    <node concept="13hLZK" id="3UhOf8WVZaB" role="13h7CW">
-      <node concept="3clFbS" id="3UhOf8WVZaC" role="2VODD2" />
-    </node>
     <node concept="13i0hz" id="3UhOf8WVZaD" role="13h7CS">
       <property role="TrG5h" value="isStaticallyEvaluatable" />
       <property role="13i0it" value="false" />
@@ -1577,6 +1574,9 @@
         </node>
       </node>
       <node concept="10P_77" id="3UhOf8WVZaI" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="3UhOf8WVZaB" role="13h7CW">
+      <node concept="3clFbS" id="3UhOf8WVZaC" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="70kXLV4KUTA">

@@ -50,6 +50,7 @@
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
+      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
@@ -110,6 +111,33 @@
         </node>
       </node>
       <node concept="2iRkQZ" id="65E6xpGSp0i" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2pogikRxvW_">
+    <ref role="1XX52x" to="xi9i:2pogikRxvhb" resolve="InlineInterpreterCondition" />
+    <node concept="3EZMnI" id="2pogikRxxYP" role="2wV5jI">
+      <node concept="3EZMnI" id="2pogikRxxYQ" role="3EZMnx">
+        <node concept="VPM3Z" id="2pogikRxxYR" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="2pogikRxxYS" role="3EZMnx">
+          <property role="3F0ifm" value="expected isEvaluable:" />
+          <ref role="1ERwB7" node="5Yf_R4Bt0rV" resolve="deleteInterpreterEvaluation" />
+          <node concept="VechU" id="2pogikRxxYT" role="3F10Kt">
+            <property role="Vb096" value="DARK_GREEN" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="2pogikRxyEo" role="3EZMnx">
+          <ref role="1NtTu8" to="xi9i:2pogikRxvhh" resolve="expected" />
+        </node>
+        <node concept="2iRfu4" id="2pogikRxxYW" role="2iSdaV" />
+      </node>
+      <node concept="2SsqMj" id="2pogikRxxYX" role="3EZMnx">
+        <node concept="2R9Tw8" id="2pogikRxxYY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="2pogikRxxYZ" role="2iSdaV" />
     </node>
   </node>
   <node concept="1h_SRR" id="5Yf_R4Bt0rV">

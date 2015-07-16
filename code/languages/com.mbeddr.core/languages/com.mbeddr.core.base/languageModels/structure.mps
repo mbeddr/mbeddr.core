@@ -9,10 +9,10 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="10jo" ref="r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -135,6 +135,7 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -1316,6 +1317,12 @@
     <property role="3GE5qa" value="valueDebugger" />
     <property role="TrG5h" value="ValueDebugger" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="$bJ0jgQ80j" role="lGtFl">
+      <property role="Hh88m" value="debugger" />
+      <node concept="trNpa" id="7hziiiew9o4" role="EQaZv">
+        <ref role="trN6q" node="$bJ0jgPete" resolve="IValueDebuggable" />
+      </node>
+    </node>
     <node concept="1TJgyi" id="$bJ0jgQ80h" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -1328,12 +1335,7 @@
       <property role="TrG5h" value="debugKeyString" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="M6xJ_" id="$bJ0jgQ80j" role="lGtFl">
-      <property role="Hh88m" value="debugger" />
-      <node concept="trNpa" id="$bJ0jgQ80k" role="EQaZv">
-        <ref role="trN6q" node="$bJ0jgPete" resolve="IValueDebuggable" />
-      </node>
-    </node>
+    <node concept="asaX9" id="7hziiiew9o7" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="7XSydqUPm9">
     <property role="TrG5h" value="ChunkDependencyConstraint" />
