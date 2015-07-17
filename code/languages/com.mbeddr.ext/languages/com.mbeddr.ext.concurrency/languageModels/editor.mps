@@ -404,11 +404,18 @@
         </node>
       </node>
       <node concept="3F0ifn" id="12_KeTzTFPI" role="3EZMnx">
-        <property role="3F0ifm" value="with" />
+        <property role="3F0ifm" value="period" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="3F1sOY" id="12_KeTzTFPW" role="3EZMnx">
         <ref role="1NtTu8" to="5wll:12_KeTzTFNK" />
+      </node>
+      <node concept="3F0ifn" id="4hMIGYwDIMW" role="3EZMnx">
+        <property role="3F0ifm" value="offset" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="3F1sOY" id="4hMIGYwDINe" role="3EZMnx">
+        <ref role="1NtTu8" to="5wll:4hMIGYwDDVd" />
       </node>
     </node>
   </node>
