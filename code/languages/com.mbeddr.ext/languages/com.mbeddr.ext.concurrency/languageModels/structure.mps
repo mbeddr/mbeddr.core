@@ -13,6 +13,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
+        <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
@@ -20,6 +23,10 @@
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+        <child id="7588428831947959310" name="attributed" index="EQaZv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765956807" name="final" index="R5$K2" />
@@ -49,6 +56,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -169,9 +177,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     </node>
-    <node concept="PrWs8" id="vg5qBCdL$f" role="PzmwI">
-      <ref role="PrY4T" node="vg5qBCdJwB" resolve="ITaskSpecific" />
-    </node>
   </node>
   <node concept="PlHQZ" id="vg5qBCdJwB">
     <property role="TrG5h" value="ITaskSpecific" />
@@ -202,6 +207,18 @@
     <node concept="M4N5e" id="vg5qBCe_P5" role="M5hS2">
       <property role="1uS6qo" value="readWrite" />
       <property role="1uS6qv" value="readWrite" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="66UaKxB_rTM">
+    <property role="3GE5qa" value="atomic" />
+    <property role="TrG5h" value="SharedAccessAnnotation" />
+    <property role="34LRSv" value="shared" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="66UaKxB_rUh" role="lGtFl">
+      <property role="Hh88m" value="shared" />
+      <node concept="trNpa" id="66UaKxB_rUj" role="EQaZv">
+        <ref role="trN6q" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
+      </node>
     </node>
   </node>
 </model>

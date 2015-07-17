@@ -8,9 +8,9 @@
   <imports>
     <import index="5wll" ref="r:8bfc0edf-00dc-40ce-9659-fb90c9bd31c8(com.mbeddr.ext.concurrency.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="qozy" ref="r:38fcb48b-92c2-41af-9039-dc087bb8b822(com.mbeddr.ext.concurrency.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -29,6 +29,7 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -72,6 +73,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -87,6 +89,9 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
@@ -130,6 +135,7 @@
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -137,6 +143,12 @@
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
+      <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
+        <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
+      </concept>
+      <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
+        <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
@@ -239,6 +251,37 @@
     <property role="TrG5h" value="check_AccessSpecifier" />
     <property role="3GE5qa" value="atomic" />
     <node concept="3clFbS" id="66UaKxBwIv8" role="18ibNy">
+      <node concept="3clFbJ" id="66UaKxBAevN" role="3cqZAp">
+        <node concept="3clFbS" id="66UaKxBAevP" role="3clFbx">
+          <node concept="2MkqsV" id="66UaKxBAi3l" role="3cqZAp">
+            <node concept="Xl_RD" id="66UaKxBAi3$" role="2MkJ7o">
+              <property role="Xl_RC" value="only shared variables can be used in atomic blocks" />
+            </node>
+            <node concept="1YBJjd" id="66UaKxBAi4p" role="2OEOjV">
+              <ref role="1YBMHb" node="66UaKxBwIva" resolve="as" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="66UaKxBAhwU" role="3clFbw">
+          <node concept="2OqwBi" id="66UaKxBAfil" role="2Oq$k0">
+            <node concept="2OqwBi" id="66UaKxBAey6" role="2Oq$k0">
+              <node concept="1YBJjd" id="66UaKxBAewH" role="2Oq$k0">
+                <ref role="1YBMHb" node="66UaKxBwIva" resolve="as" />
+              </node>
+              <node concept="3TrEf2" id="66UaKxBAeZV" role="2OqNvi">
+                <ref role="3Tt5mk" to="5wll:vg5qBCe_Pa" />
+              </node>
+            </node>
+            <node concept="3CFZ6_" id="66UaKxBAgep" role="2OqNvi">
+              <node concept="3CFYIy" id="66UaKxBAgiA" role="3CFYIz">
+                <ref role="3CFYIx" to="5wll:66UaKxB_rTM" resolve="SharedAccessAnnotation" />
+              </node>
+            </node>
+          </node>
+          <node concept="3w_OXm" id="66UaKxBAi2_" role="2OqNvi" />
+        </node>
+      </node>
+      <node concept="3clFbH" id="66UaKxBAev5" role="3cqZAp" />
       <node concept="3cpWs8" id="66UaKxBx$2o" role="3cqZAp">
         <node concept="3cpWsn" id="66UaKxBx$2p" role="3cpWs9">
           <property role="TrG5h" value="same" />
@@ -347,38 +390,30 @@
   <node concept="18kY7G" id="66UaKxBz3d9">
     <property role="TrG5h" value="check_GlobalVarRef" />
     <node concept="3clFbS" id="66UaKxBz3da" role="18ibNy">
-      <node concept="3cpWs8" id="66UaKxBza8E" role="3cqZAp">
-        <node concept="3cpWsn" id="66UaKxBza8F" role="3cpWs9">
-          <property role="TrG5h" value="cointainingTask" />
-          <node concept="3Tqbb2" id="66UaKxBza8A" role="1tU5fm">
-            <ref role="ehGHo" to="5wll:73Jrkgytd$o" resolve="Task" />
-          </node>
-          <node concept="2OqwBi" id="66UaKxBza8G" role="33vP2m">
-            <node concept="1YBJjd" id="66UaKxBza8H" role="2Oq$k0">
-              <ref role="1YBMHb" node="66UaKxBz3dc" resolve="gvr" />
-            </node>
-            <node concept="2Xjw5R" id="66UaKxBza8I" role="2OqNvi">
-              <node concept="1xMEDy" id="66UaKxBza8J" role="1xVPHs">
-                <node concept="chp4Y" id="66UaKxBza8K" role="ri$Ld">
-                  <ref role="cht4Q" to="5wll:73Jrkgytd$o" resolve="Task" />
+      <node concept="3cpWs8" id="66UaKxBA28B" role="3cqZAp">
+        <node concept="3cpWsn" id="66UaKxBA28C" role="3cpWs9">
+          <property role="TrG5h" value="isShared" />
+          <node concept="10P_77" id="66UaKxBA28y" role="1tU5fm" />
+          <node concept="2OqwBi" id="66UaKxBA28D" role="33vP2m">
+            <node concept="2OqwBi" id="66UaKxBA28E" role="2Oq$k0">
+              <node concept="2OqwBi" id="66UaKxBA28F" role="2Oq$k0">
+                <node concept="1YBJjd" id="66UaKxBA28G" role="2Oq$k0">
+                  <ref role="1YBMHb" node="66UaKxBz3dc" resolve="gvr" />
+                </node>
+                <node concept="3TrEf2" id="66UaKxBA28H" role="2OqNvi">
+                  <ref role="3Tt5mk" to="x27k:5IYyAOzCwFF" />
+                </node>
+              </node>
+              <node concept="3CFZ6_" id="66UaKxBA28I" role="2OqNvi">
+                <node concept="3CFYIy" id="66UaKxBA28J" role="3CFYIz">
+                  <ref role="3CFYIx" to="5wll:66UaKxB_rTM" resolve="SharedAccessAnnotation" />
                 </node>
               </node>
             </node>
+            <node concept="3x8VRR" id="66UaKxBA28K" role="2OqNvi" />
           </node>
         </node>
       </node>
-      <node concept="3clFbJ" id="66UaKxBzafO" role="3cqZAp">
-        <node concept="3clFbS" id="66UaKxBzafS" role="3clFbx">
-          <node concept="3cpWs6" id="66UaKxBzalT" role="3cqZAp" />
-        </node>
-        <node concept="3clFbC" id="66UaKxBzalo" role="3clFbw">
-          <node concept="10Nm6u" id="66UaKxBzalD" role="3uHU7w" />
-          <node concept="37vLTw" id="66UaKxBza8L" role="3uHU7B">
-            <ref role="3cqZAo" node="66UaKxBza8F" resolve="cointainingTask" />
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="66UaKxBzam8" role="3cqZAp" />
       <node concept="3cpWs8" id="66UaKxBzcA0" role="3cqZAp">
         <node concept="3cpWsn" id="66UaKxBzcA1" role="3cpWs9">
           <property role="TrG5h" value="atomic" />
@@ -399,144 +434,168 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbJ" id="66UaKxBzcIP" role="3cqZAp">
-        <node concept="3clFbS" id="66UaKxBzcIR" role="3clFbx">
-          <node concept="3SKdUt" id="66UaKxBzcPS" role="3cqZAp">
-            <node concept="3SKdUq" id="66UaKxBzcPV" role="3SKWNk">
-              <property role="3SKdUp" value="so we are in a task, but outside an atomic" />
-            </node>
+      <node concept="3cpWs8" id="66UaKxBza8E" role="3cqZAp">
+        <node concept="3cpWsn" id="66UaKxBza8F" role="3cpWs9">
+          <property role="TrG5h" value="cointainingTask" />
+          <node concept="3Tqbb2" id="66UaKxBza8A" role="1tU5fm">
+            <ref role="ehGHo" to="5wll:73Jrkgytd$o" resolve="Task" />
           </node>
-          <node concept="2MkqsV" id="66UaKxBzcQ1" role="3cqZAp">
-            <node concept="Xl_RD" id="66UaKxBzcQi" role="2MkJ7o">
-              <property role="Xl_RC" value="From a task, global variables can only be accessed inside an atomic block" />
-            </node>
-            <node concept="1YBJjd" id="66UaKxBzcRZ" role="2OEOjV">
+          <node concept="2OqwBi" id="66UaKxBza8G" role="33vP2m">
+            <node concept="1YBJjd" id="66UaKxBza8H" role="2Oq$k0">
               <ref role="1YBMHb" node="66UaKxBz3dc" resolve="gvr" />
             </node>
-          </node>
-          <node concept="3cpWs6" id="66UaKxBzcSH" role="3cqZAp" />
-        </node>
-        <node concept="3clFbC" id="66UaKxBzcPn" role="3clFbw">
-          <node concept="10Nm6u" id="66UaKxBzcPC" role="3uHU7w" />
-          <node concept="37vLTw" id="66UaKxBzcKa" role="3uHU7B">
-            <ref role="3cqZAo" node="66UaKxBzcA1" resolve="atomic" />
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="66UaKxBzgGg" role="3cqZAp" />
-      <node concept="3cpWs8" id="66UaKxBzoB6" role="3cqZAp">
-        <node concept="3cpWsn" id="66UaKxBzoB7" role="3cpWs9">
-          <property role="TrG5h" value="ass" />
-          <node concept="3Tqbb2" id="66UaKxBzoB3" role="1tU5fm">
-            <ref role="ehGHo" to="mj1l:1exqRp9kgd" resolve="AssignmentExpr" />
-          </node>
-          <node concept="2OqwBi" id="66UaKxBzoB8" role="33vP2m">
-            <node concept="1YBJjd" id="66UaKxBzoB9" role="2Oq$k0">
-              <ref role="1YBMHb" node="66UaKxBz3dc" resolve="gvr" />
-            </node>
-            <node concept="2Xjw5R" id="66UaKxBzoBa" role="2OqNvi">
-              <node concept="1xMEDy" id="66UaKxBzoBb" role="1xVPHs">
-                <node concept="chp4Y" id="66UaKxBzoBc" role="ri$Ld">
-                  <ref role="cht4Q" to="mj1l:1exqRp9kgd" resolve="AssignmentExpr" />
+            <node concept="2Xjw5R" id="66UaKxBza8I" role="2OqNvi">
+              <node concept="1xMEDy" id="66UaKxBza8J" role="1xVPHs">
+                <node concept="chp4Y" id="66UaKxBza8K" role="ri$Ld">
+                  <ref role="cht4Q" to="5wll:73Jrkgytd$o" resolve="Task" />
                 </node>
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="3clFbH" id="66UaKxBz_VR" role="3cqZAp" />
-      <node concept="3SKdUt" id="66UaKxBzA6g" role="3cqZAp">
-        <node concept="3SKdUq" id="66UaKxBzAar" role="3SKWNk">
-          <property role="3SKdUp" value="check if this guy is used on the left side of an assignment" />
-        </node>
-      </node>
-      <node concept="3clFbJ" id="66UaKxBzn5v" role="3cqZAp">
-        <node concept="3clFbS" id="66UaKxBzn5x" role="3clFbx">
-          <node concept="3clFbJ" id="66UaKxBzAg6" role="3cqZAp">
-            <node concept="3clFbS" id="66UaKxBzAg8" role="3clFbx">
-              <node concept="2MkqsV" id="66UaKxBzAXx" role="3cqZAp">
-                <node concept="Xl_RD" id="66UaKxBzAXK" role="2MkJ7o">
-                  <property role="Xl_RC" value="global variables can only be written to if they are declared 'readWrite' in the atomic" />
+      <node concept="3clFbH" id="66UaKxB_YOr" role="3cqZAp" />
+      <node concept="3clFbJ" id="66UaKxBA3Od" role="3cqZAp">
+        <node concept="3clFbS" id="66UaKxBA3Of" role="3clFbx">
+          <node concept="3clFbJ" id="66UaKxBzcIP" role="3cqZAp">
+            <node concept="3clFbS" id="66UaKxBzcIR" role="3clFbx">
+              <node concept="3SKdUt" id="66UaKxBzcPS" role="3cqZAp">
+                <node concept="3SKdUq" id="66UaKxBzcPV" role="3SKWNk">
+                  <property role="3SKdUp" value="so we are in a task, but outside an atomic" />
                 </node>
-                <node concept="1YBJjd" id="66UaKxBzB0e" role="2OEOjV">
+              </node>
+              <node concept="2MkqsV" id="66UaKxBzcQ1" role="3cqZAp">
+                <node concept="Xl_RD" id="66UaKxBzcQi" role="2MkJ7o">
+                  <property role="Xl_RC" value="Shared global variables can only be accessed inside an atomic block" />
+                </node>
+                <node concept="1YBJjd" id="66UaKxBzcRZ" role="2OEOjV">
                   <ref role="1YBMHb" node="66UaKxBz3dc" resolve="gvr" />
                 </node>
               </node>
+              <node concept="3cpWs6" id="66UaKxBzcSH" role="3cqZAp" />
             </node>
-            <node concept="3fqX7Q" id="66UaKxBzAOS" role="3clFbw">
-              <node concept="2OqwBi" id="66UaKxBzAOU" role="3fr31v">
-                <node concept="37vLTw" id="66UaKxBzAOV" role="2Oq$k0">
-                  <ref role="3cqZAo" node="66UaKxBzcA1" resolve="atomic" />
+            <node concept="3clFbC" id="66UaKxBzcPn" role="3clFbw">
+              <node concept="10Nm6u" id="66UaKxBzcPC" role="3uHU7w" />
+              <node concept="37vLTw" id="66UaKxBzcKa" role="3uHU7B">
+                <ref role="3cqZAo" node="66UaKxBzcA1" resolve="atomic" />
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="66UaKxBzoB6" role="3cqZAp">
+            <node concept="3cpWsn" id="66UaKxBzoB7" role="3cpWs9">
+              <property role="TrG5h" value="ass" />
+              <node concept="3Tqbb2" id="66UaKxBzoB3" role="1tU5fm">
+                <ref role="ehGHo" to="mj1l:1exqRp9kgd" resolve="AssignmentExpr" />
+              </node>
+              <node concept="2OqwBi" id="66UaKxBzoB8" role="33vP2m">
+                <node concept="1YBJjd" id="66UaKxBzoB9" role="2Oq$k0">
+                  <ref role="1YBMHb" node="66UaKxBz3dc" resolve="gvr" />
                 </node>
-                <node concept="2qgKlT" id="66UaKxBzAOW" role="2OqNvi">
-                  <ref role="37wK5l" to="qozy:66UaKxBzgPt" resolve="providesWriteAccessTo" />
-                  <node concept="2OqwBi" id="66UaKxBzB4H" role="37wK5m">
-                    <node concept="1YBJjd" id="66UaKxBzAOX" role="2Oq$k0">
+                <node concept="2Xjw5R" id="66UaKxBzoBa" role="2OqNvi">
+                  <node concept="1xMEDy" id="66UaKxBzoBb" role="1xVPHs">
+                    <node concept="chp4Y" id="66UaKxBzoBc" role="ri$Ld">
+                      <ref role="cht4Q" to="mj1l:1exqRp9kgd" resolve="AssignmentExpr" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="66UaKxBz_VR" role="3cqZAp" />
+          <node concept="3SKdUt" id="66UaKxBzA6g" role="3cqZAp">
+            <node concept="3SKdUq" id="66UaKxBzAar" role="3SKWNk">
+              <property role="3SKdUp" value="check if this guy is used on the left side of an assignment" />
+            </node>
+          </node>
+          <node concept="3clFbJ" id="66UaKxBzn5v" role="3cqZAp">
+            <node concept="3clFbS" id="66UaKxBzn5x" role="3clFbx">
+              <node concept="3clFbJ" id="66UaKxBzAg6" role="3cqZAp">
+                <node concept="3clFbS" id="66UaKxBzAg8" role="3clFbx">
+                  <node concept="2MkqsV" id="66UaKxBzAXx" role="3cqZAp">
+                    <node concept="Xl_RD" id="66UaKxBzAXK" role="2MkJ7o">
+                      <property role="Xl_RC" value="global variables can only be written to if they are declared 'readWrite' in the atomic" />
+                    </node>
+                    <node concept="1YBJjd" id="66UaKxBzB0e" role="2OEOjV">
                       <ref role="1YBMHb" node="66UaKxBz3dc" resolve="gvr" />
                     </node>
-                    <node concept="3TrEf2" id="66UaKxBzBy8" role="2OqNvi">
-                      <ref role="3Tt5mk" to="x27k:5IYyAOzCwFF" />
+                  </node>
+                </node>
+                <node concept="3fqX7Q" id="66UaKxBzAOS" role="3clFbw">
+                  <node concept="2OqwBi" id="66UaKxBzAOU" role="3fr31v">
+                    <node concept="37vLTw" id="66UaKxBzAOV" role="2Oq$k0">
+                      <ref role="3cqZAo" node="66UaKxBzcA1" resolve="atomic" />
+                    </node>
+                    <node concept="2qgKlT" id="66UaKxBzAOW" role="2OqNvi">
+                      <ref role="37wK5l" to="qozy:66UaKxBzgPt" resolve="providesWriteAccessTo" />
+                      <node concept="2OqwBi" id="66UaKxBzB4H" role="37wK5m">
+                        <node concept="1YBJjd" id="66UaKxBzAOX" role="2Oq$k0">
+                          <ref role="1YBMHb" node="66UaKxBz3dc" resolve="gvr" />
+                        </node>
+                        <node concept="3TrEf2" id="66UaKxBzBy8" role="2OqNvi">
+                          <ref role="3Tt5mk" to="x27k:5IYyAOzCwFF" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1Wc70l" id="66UaKxBzqUt" role="3clFbw">
-          <node concept="2OqwBi" id="66UaKxBzxDr" role="3uHU7w">
-            <node concept="2OqwBi" id="66UaKxBzrRX" role="2Oq$k0">
-              <node concept="2OqwBi" id="66UaKxBzr26" role="2Oq$k0">
-                <node concept="37vLTw" id="66UaKxBzqWk" role="2Oq$k0">
-                  <ref role="3cqZAo" node="66UaKxBzoB7" resolve="ass" />
-                </node>
-                <node concept="3TrEf2" id="66UaKxBzrsv" role="2OqNvi">
-                  <ref role="3Tt5mk" to="mj1l:7FQByU3CrD0" />
-                </node>
-              </node>
-              <node concept="2Rf3mk" id="66UaKxBzs7Z" role="2OqNvi">
-                <node concept="1xIGOp" id="66UaKxBztws" role="1xVPHs" />
-              </node>
-            </node>
-            <node concept="3JPx81" id="66UaKxBz$fR" role="2OqNvi">
-              <node concept="1YBJjd" id="66UaKxBz$iR" role="25WWJ7">
-                <ref role="1YBMHb" node="66UaKxBz3dc" resolve="gvr" />
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="66UaKxBzpzF" role="3uHU7B">
-            <node concept="37vLTw" id="66UaKxBzpsI" role="2Oq$k0">
-              <ref role="3cqZAo" node="66UaKxBzoB7" resolve="ass" />
-            </node>
-            <node concept="3x8VRR" id="66UaKxBzqm1" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="9aQIb" id="66UaKxBzAaQ" role="9aQIa">
-          <node concept="3clFbS" id="66UaKxBzAaR" role="9aQI4">
-            <node concept="3clFbJ" id="66UaKxBzBFU" role="3cqZAp">
-              <node concept="3clFbS" id="66UaKxBzBFV" role="3clFbx">
-                <node concept="2MkqsV" id="66UaKxBzBFW" role="3cqZAp">
-                  <node concept="Xl_RD" id="66UaKxBzBFX" role="2MkJ7o">
-                    <property role="Xl_RC" value="global variables can only be read frin if they are declared 'read' in the atomic" />
+            <node concept="1Wc70l" id="66UaKxBzqUt" role="3clFbw">
+              <node concept="2OqwBi" id="66UaKxBzxDr" role="3uHU7w">
+                <node concept="2OqwBi" id="66UaKxBzrRX" role="2Oq$k0">
+                  <node concept="2OqwBi" id="66UaKxBzr26" role="2Oq$k0">
+                    <node concept="37vLTw" id="66UaKxBzqWk" role="2Oq$k0">
+                      <ref role="3cqZAo" node="66UaKxBzoB7" resolve="ass" />
+                    </node>
+                    <node concept="3TrEf2" id="66UaKxBzrsv" role="2OqNvi">
+                      <ref role="3Tt5mk" to="mj1l:7FQByU3CrD0" />
+                    </node>
                   </node>
-                  <node concept="1YBJjd" id="66UaKxBzBFY" role="2OEOjV">
+                  <node concept="2Rf3mk" id="66UaKxBzs7Z" role="2OqNvi">
+                    <node concept="1xIGOp" id="66UaKxBztws" role="1xVPHs" />
+                  </node>
+                </node>
+                <node concept="3JPx81" id="66UaKxBz$fR" role="2OqNvi">
+                  <node concept="1YBJjd" id="66UaKxBz$iR" role="25WWJ7">
                     <ref role="1YBMHb" node="66UaKxBz3dc" resolve="gvr" />
                   </node>
                 </node>
               </node>
-              <node concept="3fqX7Q" id="66UaKxBzBFZ" role="3clFbw">
-                <node concept="2OqwBi" id="66UaKxBzBG0" role="3fr31v">
-                  <node concept="37vLTw" id="66UaKxBzBG1" role="2Oq$k0">
-                    <ref role="3cqZAo" node="66UaKxBzcA1" resolve="atomic" />
-                  </node>
-                  <node concept="2qgKlT" id="66UaKxBzBG2" role="2OqNvi">
-                    <ref role="37wK5l" to="qozy:66UaKxBzgJH" resolve="providesReadAccessTo" />
-                    <node concept="2OqwBi" id="66UaKxBzBG3" role="37wK5m">
-                      <node concept="1YBJjd" id="66UaKxBzBG4" role="2Oq$k0">
+              <node concept="2OqwBi" id="66UaKxBzpzF" role="3uHU7B">
+                <node concept="37vLTw" id="66UaKxBzpsI" role="2Oq$k0">
+                  <ref role="3cqZAo" node="66UaKxBzoB7" resolve="ass" />
+                </node>
+                <node concept="3x8VRR" id="66UaKxBzqm1" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="9aQIb" id="66UaKxBzAaQ" role="9aQIa">
+              <node concept="3clFbS" id="66UaKxBzAaR" role="9aQI4">
+                <node concept="3clFbJ" id="66UaKxBzBFU" role="3cqZAp">
+                  <node concept="3clFbS" id="66UaKxBzBFV" role="3clFbx">
+                    <node concept="2MkqsV" id="66UaKxBzBFW" role="3cqZAp">
+                      <node concept="Xl_RD" id="66UaKxBzBFX" role="2MkJ7o">
+                        <property role="Xl_RC" value="global variables can only be read frin if they are declared 'read' in the atomic" />
+                      </node>
+                      <node concept="1YBJjd" id="66UaKxBzBFY" role="2OEOjV">
                         <ref role="1YBMHb" node="66UaKxBz3dc" resolve="gvr" />
                       </node>
-                      <node concept="3TrEf2" id="66UaKxBzBG5" role="2OqNvi">
-                        <ref role="3Tt5mk" to="x27k:5IYyAOzCwFF" />
+                    </node>
+                  </node>
+                  <node concept="3fqX7Q" id="66UaKxBzBFZ" role="3clFbw">
+                    <node concept="2OqwBi" id="66UaKxBzBG0" role="3fr31v">
+                      <node concept="37vLTw" id="66UaKxBzBG1" role="2Oq$k0">
+                        <ref role="3cqZAo" node="66UaKxBzcA1" resolve="atomic" />
+                      </node>
+                      <node concept="2qgKlT" id="66UaKxBzBG2" role="2OqNvi">
+                        <ref role="37wK5l" to="qozy:66UaKxBzgJH" resolve="providesReadAccessTo" />
+                        <node concept="2OqwBi" id="66UaKxBzBG3" role="37wK5m">
+                          <node concept="1YBJjd" id="66UaKxBzBG4" role="2Oq$k0">
+                            <ref role="1YBMHb" node="66UaKxBz3dc" resolve="gvr" />
+                          </node>
+                          <node concept="3TrEf2" id="66UaKxBzBG5" role="2OqNvi">
+                            <ref role="3Tt5mk" to="x27k:5IYyAOzCwFF" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -544,9 +603,41 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="66UaKxBzgGQ" role="3cqZAp" />
+          <node concept="3clFbH" id="66UaKxBA3Oe" role="3cqZAp" />
+        </node>
+        <node concept="37vLTw" id="66UaKxBA5Lr" role="3clFbw">
+          <ref role="3cqZAo" node="66UaKxBA28C" resolve="isShared" />
+        </node>
+        <node concept="9aQIb" id="66UaKxBA5L_" role="9aQIa">
+          <node concept="3clFbS" id="66UaKxBA5LA" role="9aQI4">
+            <node concept="3clFbJ" id="66UaKxBzafO" role="3cqZAp">
+              <node concept="3clFbS" id="66UaKxBzafS" role="3clFbx">
+                <node concept="a7r0C" id="66UaKxBG3HQ" role="3cqZAp">
+                  <node concept="1YBJjd" id="66UaKxBG3Vq" role="2OEOjV">
+                    <ref role="1YBMHb" node="66UaKxBz3dc" resolve="gvr" />
+                  </node>
+                  <node concept="Xl_RD" id="66UaKxBA71H" role="a7wSD">
+                    <property role="Xl_RC" value="global variables should be accessed from a task if they are shared" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="66UaKxBA716" role="3clFbw">
+                <node concept="37vLTw" id="66UaKxBza8L" role="3uHU7B">
+                  <ref role="3cqZAo" node="66UaKxBza8F" resolve="cointainingTask" />
+                </node>
+                <node concept="10Nm6u" id="66UaKxBzalD" role="3uHU7w" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
-      <node concept="3clFbH" id="66UaKxBzgGQ" role="3cqZAp" />
+      <node concept="3clFbH" id="66UaKxBA2lW" role="3cqZAp" />
+      <node concept="3clFbH" id="66UaKxBA2r$" role="3cqZAp" />
+      <node concept="3clFbH" id="66UaKxB_YTF" role="3cqZAp" />
+      <node concept="3clFbH" id="66UaKxB_Yhq" role="3cqZAp" />
+      <node concept="3clFbH" id="66UaKxBzam8" role="3cqZAp" />
+      <node concept="3clFbH" id="66UaKxBzgGg" role="3cqZAp" />
       <node concept="3clFbH" id="66UaKxBzam_" role="3cqZAp" />
       <node concept="3clFbH" id="66UaKxBzan3" role="3cqZAp" />
     </node>

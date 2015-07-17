@@ -13,6 +13,7 @@
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
+      <concept id="1215511704609" name="jetbrains.mps.lang.test.structure.NodeWarningCheckOperation" flags="ng" index="29bkU" />
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
@@ -38,6 +39,9 @@
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
       </concept>
+      <concept id="1679452829930336984" name="com.mbeddr.core.statements.structure.CommentStatement" flags="ng" index="1QiMYF">
+        <child id="8624890525768479139" name="textblock" index="3SJzmv" />
+      </concept>
       <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
         <child id="4185783222026502647" name="init" index="3XIe9u" />
       </concept>
@@ -47,6 +51,14 @@
       <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
       <concept id="2093108837558113914" name="com.mbeddr.core.statements.structure.LocalVarRef" flags="ng" index="3ZVu4v">
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
@@ -83,6 +95,9 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
@@ -118,6 +133,7 @@
       </concept>
     </language>
     <language id="b879012d-402b-40e0-8df7-e6fa93b9b711" name="com.mbeddr.ext.concurrency">
+      <concept id="7041988282444791410" name="com.mbeddr.ext.concurrency.structure.SharedAccessAnnotation" flags="ng" index="6bTlU" />
       <concept id="8137843191085062424" name="com.mbeddr.ext.concurrency.structure.Task" flags="ng" index="1iAVhs">
         <child id="8137843191085079198" name="body" index="1iABvq" />
         <child id="562973772910397408" name="kind" index="3JZT99" />
@@ -378,9 +394,10 @@
               <property role="2hmy$m" value="0" />
             </node>
           </node>
+          <node concept="6bTlU" id="66UaKxBAdx$" role="lGtFl" />
         </node>
         <node concept="1S7NMz" id="66UaKxBz002" role="N3F5h">
-          <property role="TrG5h" value="anotherVar" />
+          <property role="TrG5h" value="nonshared" />
           <node concept="26Vqqz" id="66UaKxBz000" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
@@ -418,20 +435,39 @@
               </node>
             </node>
             <node concept="3XISUE" id="66UaKxByYtb" role="3XIRFZ" />
+            <node concept="1QiMYF" id="66UaKxBAsK4" role="3XIRFZ">
+              <node concept="OjmMv" id="66UaKxBAsK6" role="3SJzmv">
+                <node concept="19SGf9" id="66UaKxBAsK7" role="OjmMu">
+                  <node concept="19SUe$" id="66UaKxBAsK8" role="19SJt6">
+                    <property role="19SUeA" value="we may have to allow access to non-shared global variables structurally&#10;and then use CBMC to detect such access because a global variable may be&#10;accessed from a function that is called from a task. CBMC's dataflow &#10;analysis is needed to detect this. For now, it's prevented." />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="1_9egQ" id="66UaKxBzglT" role="3XIRFZ">
               <node concept="3pqW6w" id="66UaKxBzgmy" role="1_9egR">
                 <node concept="3TlMh9" id="66UaKxBzgm_" role="3TlMhJ">
                   <property role="2hmy$m" value="10" />
                 </node>
                 <node concept="1S7827" id="66UaKxBzglR" role="3TlMhI">
-                  <ref role="1S7826" node="66UaKxBz002" resolve="anotherVar" />
-                  <node concept="7CXmI" id="66UaKxBzgvK" role="lGtFl">
-                    <node concept="1TM$A" id="66UaKxBzgvL" role="7EUXB" />
+                  <ref role="1S7826" node="66UaKxBz002" resolve="nonshared" />
+                  <node concept="7CXmI" id="66UaKxBG96i" role="lGtFl">
+                    <node concept="29bkU" id="66UaKxBG96j" role="7EUXB" />
                   </node>
                 </node>
               </node>
             </node>
             <node concept="3XISUE" id="66UaKxBzglm" role="3XIRFZ" />
+            <node concept="3JTIQ_" id="66UaKxBAegQ" role="3XIRFZ">
+              <node concept="3XIRFW" id="66UaKxBAegS" role="3JTKNu" />
+              <node concept="3JTKKU" id="66UaKxBAeie" role="3JU$Ix">
+                <ref role="3JU$zz" node="66UaKxBz002" resolve="nonshared" />
+                <node concept="7CXmI" id="66UaKxBAmMY" role="lGtFl">
+                  <node concept="1TM$A" id="66UaKxBAmMZ" role="7EUXB" />
+                </node>
+              </node>
+            </node>
+            <node concept="3XISUE" id="66UaKxBAefy" role="3XIRFZ" />
             <node concept="3JTIQ_" id="vg5qBCfhrE" role="3XIRFZ">
               <node concept="3XIRFW" id="vg5qBCfhrG" role="3JTKNu" />
               <node concept="3JTKKU" id="vg5qBCfDAu" role="3JU$Ix">
@@ -592,8 +628,56 @@
         <node concept="2NXPZ9" id="vg5qBCf4la" role="N3F5h">
           <property role="TrG5h" value="empty_1437124630288_15" />
         </node>
-        <node concept="2NXPZ9" id="vg5qBCf4i5" role="N3F5h">
-          <property role="TrG5h" value="empty_1437124609618_11" />
+        <node concept="N3Fnx" id="66UaKxBFHGL" role="N3F5h">
+          <property role="TrG5h" value="aNormalFunction" />
+          <property role="2OOxQR" value="false" />
+          <node concept="3XIRFW" id="66UaKxBFHGN" role="3XIRFX">
+            <node concept="3JTIQ_" id="66UaKxBG2Ex" role="3XIRFZ">
+              <node concept="3XIRFW" id="66UaKxBG2Ez" role="3JTKNu">
+                <node concept="1_9egQ" id="66UaKxBG2EJ" role="3XIRFZ">
+                  <node concept="3pqW6w" id="66UaKxBG2Sn" role="1_9egR">
+                    <node concept="3TlMh9" id="66UaKxBG2YD" role="3TlMhJ">
+                      <property role="2hmy$m" value="10" />
+                    </node>
+                    <node concept="2qmXGp" id="66UaKxBG2ES" role="3TlMhI">
+                      <node concept="1E4Tgc" id="66UaKxBG2Lr" role="1ESnxz">
+                        <ref role="1E4Tge" node="vg5qBCf4kj" resolve="x" />
+                      </node>
+                      <node concept="1S7827" id="66UaKxBG2EH" role="1_9fRO">
+                        <ref role="1S7826" node="vg5qBCfD_L" resolve="data" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3JTKKU" id="66UaKxBG2ED" role="3JU$Ix">
+                <property role="3JU$zx" value="readWrite" />
+                <ref role="3JU$zz" node="vg5qBCfD_L" resolve="data" />
+              </node>
+            </node>
+            <node concept="1_9egQ" id="66UaKxBFHIN" role="3XIRFZ">
+              <node concept="1S7827" id="66UaKxBFHIL" role="1_9egR">
+                <ref role="1S7826" node="vg5qBCfD_L" resolve="data" />
+                <node concept="7CXmI" id="66UaKxBG3ca" role="lGtFl">
+                  <node concept="1TM$A" id="66UaKxBG3cb" role="7EUXB" />
+                </node>
+              </node>
+            </node>
+            <node concept="1_9egQ" id="66UaKxBG3j6" role="3XIRFZ">
+              <node concept="3pqW6w" id="66UaKxBG3jt" role="1_9egR">
+                <node concept="3TlMh9" id="66UaKxBG3jw" role="3TlMhJ">
+                  <property role="2hmy$m" value="10" />
+                </node>
+                <node concept="1S7827" id="66UaKxBG3j4" role="3TlMhI">
+                  <ref role="1S7826" node="66UaKxBz002" resolve="nonshared" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="19Rifw" id="66UaKxBFHBv" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
         </node>
         <node concept="2NXPZ9" id="vg5qBCf4i8" role="N3F5h">
           <property role="TrG5h" value="empty_1437124609757_12" />
