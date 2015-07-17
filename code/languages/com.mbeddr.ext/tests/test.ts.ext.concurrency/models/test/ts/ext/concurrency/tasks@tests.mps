@@ -186,6 +186,7 @@
       <concept id="1199577005875757023" name="com.mbeddr.ext.concurrency.structure.WCETConstraint" flags="ng" index="1NlFWL">
         <child id="1199577005875757105" name="wcet" index="1Nl$3v" />
       </concept>
+      <concept id="1199577005876317481" name="com.mbeddr.ext.concurrency.structure.TerminateStatement" flags="ng" index="1NmsR7" />
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
@@ -654,6 +655,8 @@
                 </node>
               </node>
             </node>
+            <node concept="3XISUE" id="12_KeT$3uN8" role="3XIRFZ" />
+            <node concept="1NmsR7" id="12_KeT$3uQ3" role="3XIRFZ" />
           </node>
         </node>
         <node concept="2NXPZ9" id="vg5qBCf4la" role="N3F5h">
@@ -663,6 +666,11 @@
           <property role="TrG5h" value="aNormalFunction" />
           <property role="2OOxQR" value="false" />
           <node concept="3XIRFW" id="66UaKxBFHGN" role="3XIRFX">
+            <node concept="1NmsR7" id="12_KeT$3uRQ" role="3XIRFZ">
+              <node concept="7CXmI" id="2dxXn_myVGF" role="lGtFl">
+                <node concept="1TM$A" id="2dxXn_myVGG" role="7EUXB" />
+              </node>
+            </node>
             <node concept="3JTIQ_" id="66UaKxBG2Ex" role="3XIRFZ">
               <node concept="3XIRFW" id="66UaKxBG2Ez" role="3JTKNu">
                 <node concept="1_9egQ" id="66UaKxBG2EJ" role="3XIRFZ">
