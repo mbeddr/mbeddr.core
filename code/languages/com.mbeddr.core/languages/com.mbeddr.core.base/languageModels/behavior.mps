@@ -21830,24 +21830,6 @@
     <node concept="2tJIrI" id="3$DH87aH2lL" role="jymVt" />
     <node concept="3Tm1VV" id="3$DH87aGaA$" role="1B3o_S" />
   </node>
-  <node concept="3MtHw5" id="5osQY7AiJwY">
-    <property role="TrG5h" value="CoreBaseResourceBundle" />
-    <property role="3GE5qa" value="valueDebugger" />
-    <node concept="3MtHw9" id="5osQY7AiJwZ" role="3MtHw3">
-      <property role="3MtHw8" value=" " />
-      <property role="TrG5h" value="noValueSource" />
-      <property role="3MtHw7" value="(no value source)" />
-    </node>
-  </node>
-  <node concept="3MtHw5" id="7wJfsz36cWl">
-    <property role="TrG5h" value="CoreBaseResourceBundle" />
-    <property role="3GE5qa" value="valueDebugger" />
-    <node concept="3MtHw9" id="7wJfsz36cWm" role="3MtHw3">
-      <property role="3MtHw8" value=" " />
-      <property role="TrG5h" value="noValueSource" />
-      <property role="3MtHw7" value="(no value source)" />
-    </node>
-  </node>
   <node concept="3MtHw5" id="7piNMoaduUh">
     <property role="TrG5h" value="CoreBaseResourceBundle" />
     <property role="3GE5qa" value="valueDebugger" />
