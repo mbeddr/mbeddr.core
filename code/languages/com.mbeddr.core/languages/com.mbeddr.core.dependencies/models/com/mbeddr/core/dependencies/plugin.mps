@@ -511,7 +511,7 @@
               <ref role="3cqZAo" node="6o2p2Z1qMmd" resolve="f" />
             </node>
             <node concept="liA8E" id="6o2p2Z1qMmk" role="2OqNvi">
-              <ref role="37wK5l" to="1t7x:~Window.setLocation(int,int):void" resolve="setLocation" />
+              <ref role="37wK5l" to="1t7x:~Component.setLocation(int,int):void" resolve="setLocation" />
               <node concept="3cmrfG" id="6o2p2Z1qMml" role="37wK5m">
                 <property role="3cmrfH" value="300" />
               </node>
