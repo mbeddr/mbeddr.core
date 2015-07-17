@@ -9,6 +9,7 @@
     <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1469,6 +1470,17 @@
     <property role="TrG5h" value="IRequireStdArgHeader" />
     <node concept="PrWs8" id="UslQezI$Gr" role="PrDN$">
       <ref role="PrY4T" to="vs0r:7RHXOmw3XK2" resolve="IRequiresHeaderImport" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="60fK39hE0MU">
+    <property role="TrG5h" value="NameOfFunctionExpression" />
+    <property role="34LRSv" value="nameof" />
+    <ref role="1TJDcQ" node="7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="60fK39hE0MV" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="function" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="x27k:5_l8w1EmTvx" resolve="Function" />
     </node>
   </node>
 </model>

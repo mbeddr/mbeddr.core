@@ -9,6 +9,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
+    <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -56,7 +57,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -1037,6 +1038,28 @@
           </node>
           <node concept="la8eA" id="UslQezBGnM" role="lcghm">
             <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="60fK39hE0UT">
+    <ref role="WuzLi" to="mj1l:60fK39hE0MU" resolve="NameOfFunctionExpression" />
+    <node concept="11bSqf" id="60fK39hE0UU" role="11c4hB">
+      <node concept="3clFbS" id="60fK39hE0UV" role="2VODD2">
+        <node concept="lc7rE" id="60fK39i4pRX" role="3cqZAp">
+          <node concept="l9hG8" id="60fK39i4sD5" role="lcghm">
+            <node concept="2OqwBi" id="60fK39i4tss" role="lb14g">
+              <node concept="2OqwBi" id="60fK39i4sHo" role="2Oq$k0">
+                <node concept="117lpO" id="60fK39i4sDV" role="2Oq$k0" />
+                <node concept="3TrEf2" id="60fK39i4sY7" role="2OqNvi">
+                  <ref role="3Tt5mk" to="mj1l:60fK39hE0MV" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="60fK39i4vF2" role="2OqNvi">
+                <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="mangledName" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
