@@ -29,7 +29,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components.sri/sri.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components/components.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.compositecomponents/compositecomponents.msd" folder="tests.comp" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.concurrency/tests.ex.ext.concurrency.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.concurrency/tests.ex.ext.concurrency.msd" folder="concurrency" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.math/test.ex.ext.math.msd" folder="tests.math" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.serialization/test.ex.ext.serialization.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.statemachine/statemachine.msd" folder="tests.statemachine" />
