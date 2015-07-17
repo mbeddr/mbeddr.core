@@ -36,7 +36,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -99,8 +101,8 @@
     <property role="34LRSv" value="firstRun" />
     <property role="3GE5qa" value="tasks" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="vg5qBCbnaF" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:40tXLnqhXcx" resolve="IGenericDotTarget" />
+    <node concept="PrWs8" id="12_KeTzZQyz" role="PzmwI">
+      <ref role="PrY4T" node="12_KeTzZPRN" resolve="ITaskContextTarget" />
     </node>
   </node>
   <node concept="1TIwiD" id="vg5qBCbSs6">
@@ -318,6 +320,40 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="12_KeTzZ0OD">
+    <property role="3GE5qa" value="tasks" />
+    <property role="TrG5h" value="TerminateStatement" />
+    <property role="34LRSv" value="terminate" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+  </node>
+  <node concept="1TIwiD" id="12_KeTzZPFl">
+    <property role="TrG5h" value="IterationNoTarget" />
+    <property role="34LRSv" value="iteration" />
+    <property role="3GE5qa" value="tasks" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="12_KeT$0D$V" role="PzmwI">
+      <ref role="PrY4T" node="12_KeTzZPRN" resolve="ITaskContextTarget" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="12_KeTzZPRN">
+    <property role="3GE5qa" value="tasks" />
+    <property role="TrG5h" value="ITaskContextTarget" />
+    <node concept="PrWs8" id="12_KeTzZQyH" role="PrDN$">
+      <ref role="PrY4T" to="mj1l:40tXLnqhXcx" resolve="IGenericDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="12_KeT$2GxP">
+    <property role="TrG5h" value="DelayStatement" />
+    <property role="34LRSv" value="delay" />
+    <property role="3GE5qa" value="util" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="12_KeT$2GxQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
   </node>
 </model>
 
