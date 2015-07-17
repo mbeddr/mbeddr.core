@@ -15,8 +15,9 @@
     <import index="sxyo" ref="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" />
     <import index="fw73" ref="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)" />
     <import index="sv0f" ref="r:28cd7e84-4784-462c-804c-1dae92004ef9(com.mbeddr.mpsutil.multilingual.common.languageRegistry)" />
-    <import index="8o67" ref="r:aad0b82d-5e70-4b30-977b-7c105a4d4452(com.mbeddr.mpsutil.multilingual.common.typesystem)" />
     <import index="2oxe" ref="r:98f14745-cf68-416b-838b-49199f589585(test.ts.mpsutil.multilingual.common.otherModel@tests)" />
+    <import index="8o67" ref="r:aad0b82d-5e70-4b30-977b-7c105a4d4452(com.mbeddr.mpsutil.multilingual.common.typesystem)" />
+    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -56,6 +57,9 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -1021,6 +1025,67 @@
             <node concept="2PQEqo" id="3TSnT3Inb2f" role="3lydCh">
               <ref role="39XzEq" to="8o67:3TSnT3IjFCd" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="7NARB4mNEyZ">
+    <property role="TrG5h" value="LocaleSelection" />
+    <node concept="1LZb2c" id="7NARB4mNEzi" role="1SL9yI">
+      <property role="TrG5h" value="findLocaleExactMatch" />
+      <node concept="3cqZAl" id="7NARB4mNEzj" role="3clF45" />
+      <node concept="3clFbS" id="7NARB4mNEzk" role="3clF47">
+        <node concept="3vlDli" id="7NARB4mNGS_" role="3cqZAp">
+          <node concept="10M0yZ" id="7NARB4mP6k4" role="3tpDZB">
+            <ref role="1PxDUh" to="k7g3:~Locale" resolve="Locale" />
+            <ref role="3cqZAo" to="k7g3:~Locale.US" resolve="US" />
+          </node>
+          <node concept="2YIFZM" id="7NARB4mPfI0" role="3tpDZA">
+            <ref role="37wK5l" to="fw73:5Q1XZgMGGFS" resolve="findLocale" />
+            <ref role="1Pybhc" to="fw73:2bng37t0hfK" resolve="MultilingualCommonUtil" />
+            <node concept="Xl_RD" id="7NARB4mPfIv" role="37wK5m">
+              <property role="Xl_RC" value="en" />
+            </node>
+            <node concept="Xl_RD" id="7NARB4mPfKq" role="37wK5m">
+              <property role="Xl_RC" value="US" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="7NARB4mPfNQ" role="3cqZAp">
+          <node concept="10M0yZ" id="7NARB4mPfNR" role="3tpDZB">
+            <ref role="1PxDUh" to="k7g3:~Locale" resolve="Locale" />
+            <ref role="3cqZAo" to="k7g3:~Locale.UK" resolve="UK" />
+          </node>
+          <node concept="2YIFZM" id="7NARB4mPfNS" role="3tpDZA">
+            <ref role="37wK5l" to="fw73:5Q1XZgMGGFS" resolve="findLocale" />
+            <ref role="1Pybhc" to="fw73:2bng37t0hfK" resolve="MultilingualCommonUtil" />
+            <node concept="Xl_RD" id="7NARB4mPfNT" role="37wK5m">
+              <property role="Xl_RC" value="en" />
+            </node>
+            <node concept="Xl_RD" id="7NARB4mPfNU" role="37wK5m">
+              <property role="Xl_RC" value="GB" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="7NARB4mPg8V" role="1SL9yI">
+      <property role="TrG5h" value="findLocaleOnlyCountry" />
+      <node concept="3cqZAl" id="7NARB4mPg8W" role="3clF45" />
+      <node concept="3clFbS" id="7NARB4mPg90" role="3clF47">
+        <node concept="3vlDli" id="7NARB4mPgaW" role="3cqZAp">
+          <node concept="10M0yZ" id="7NARB4mPgb2" role="3tpDZB">
+            <ref role="1PxDUh" to="k7g3:~Locale" resolve="Locale" />
+            <ref role="3cqZAo" to="k7g3:~Locale.ENGLISH" resolve="ENGLISH" />
+          </node>
+          <node concept="2YIFZM" id="7NARB4mPgbE" role="3tpDZA">
+            <ref role="37wK5l" to="fw73:5Q1XZgMGGFS" resolve="findLocale" />
+            <ref role="1Pybhc" to="fw73:2bng37t0hfK" resolve="MultilingualCommonUtil" />
+            <node concept="Xl_RD" id="7NARB4mPgc9" role="37wK5m">
+              <property role="Xl_RC" value="en" />
+            </node>
+            <node concept="10Nm6u" id="7NARB4mPge4" role="37wK5m" />
           </node>
         </node>
       </node>
