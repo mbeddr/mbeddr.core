@@ -325,5 +325,81 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="66UaKxBOku6">
+    <property role="3GE5qa" value="schedule" />
+    <ref role="1M2myG" to="5wll:66UaKxBOktG" resolve="SingleTaskSchedulingConstraint" />
+    <node concept="1N5Pfh" id="66UaKxBOkvB" role="1Mr941">
+      <ref role="1N5Vy1" to="5wll:66UaKxBOktH" />
+      <node concept="1MUpDS" id="66UaKxBOkvD" role="1N6uqs">
+        <node concept="3clFbS" id="66UaKxBOkvE" role="2VODD2">
+          <node concept="3clFbF" id="66UaKxBOkwj" role="3cqZAp">
+            <node concept="2OqwBi" id="66UaKxBOlj3" role="3clFbG">
+              <node concept="2OqwBi" id="66UaKxBOkME" role="2Oq$k0">
+                <node concept="2OqwBi" id="66UaKxBOkyx" role="2Oq$k0">
+                  <node concept="21POm0" id="66UaKxBOkwi" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="66UaKxBOkIh" role="2OqNvi">
+                    <node concept="1xMEDy" id="66UaKxBOkIj" role="1xVPHs">
+                      <node concept="chp4Y" id="66UaKxBOkJs" role="ri$Ld">
+                        <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="66UaKxBOl1X" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
+                  <node concept="3TUQnm" id="66UaKxBOl5e" role="37wK5m">
+                    <ref role="3TV0OU" to="5wll:73Jrkgytd$o" resolve="Task" />
+                  </node>
+                </node>
+              </node>
+              <node concept="v3k3i" id="66UaKxBOlVx" role="2OqNvi">
+                <node concept="chp4Y" id="66UaKxBOlY6" role="v3oSu">
+                  <ref role="cht4Q" to="5wll:73Jrkgytd$o" resolve="Task" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="66UaKxBOml9">
+    <property role="3GE5qa" value="schedule" />
+    <ref role="1M2myG" to="5wll:66UaKxBOm20" resolve="StartScheduleStatement" />
+    <node concept="1N5Pfh" id="66UaKxBOmlm" role="1Mr941">
+      <ref role="1N5Vy1" to="5wll:66UaKxBOmhD" />
+      <node concept="1MUpDS" id="66UaKxBOmlo" role="1N6uqs">
+        <node concept="3clFbS" id="66UaKxBOmlp" role="2VODD2">
+          <node concept="3clFbF" id="66UaKxBOmm2" role="3cqZAp">
+            <node concept="2OqwBi" id="66UaKxBOn3w" role="3clFbG">
+              <node concept="2OqwBi" id="66UaKxBOmyX" role="2Oq$k0">
+                <node concept="2OqwBi" id="66UaKxBOmog" role="2Oq$k0">
+                  <node concept="21POm0" id="66UaKxBOmm1" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="66UaKxBOmuC" role="2OqNvi">
+                    <node concept="1xMEDy" id="66UaKxBOmuE" role="1xVPHs">
+                      <node concept="chp4Y" id="66UaKxBOmvN" role="ri$Ld">
+                        <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="66UaKxBOmMg" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
+                  <node concept="3TUQnm" id="66UaKxBOmPx" role="37wK5m">
+                    <ref role="3TV0OU" to="5wll:66UaKxBOkro" resolve="ScheduleSpecification" />
+                  </node>
+                </node>
+              </node>
+              <node concept="v3k3i" id="66UaKxBOnFY" role="2OqNvi">
+                <node concept="chp4Y" id="66UaKxBOnIz" role="v3oSu">
+                  <ref role="cht4Q" to="5wll:66UaKxBOkro" resolve="ScheduleSpecification" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

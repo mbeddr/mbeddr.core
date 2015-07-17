@@ -10,6 +10,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -220,6 +221,103 @@
         <ref role="trN6q" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
       </node>
     </node>
+  </node>
+  <node concept="1TIwiD" id="66UaKxBOkro">
+    <property role="TrG5h" value="ScheduleSpecification" />
+    <property role="3GE5qa" value="schedule" />
+    <property role="34LRSv" value="schedule" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="66UaKxBOks0" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constraints" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="66UaKxBOkrZ" resolve="SchedulingConstraint" />
+    </node>
+    <node concept="PrWs8" id="66UaKxBOkrT" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="12_KeTzXC3v" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="66UaKxBOkrZ">
+    <property role="3GE5qa" value="schedule" />
+    <property role="TrG5h" value="SchedulingConstraint" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="66UaKxBOktG">
+    <property role="3GE5qa" value="schedule" />
+    <property role="TrG5h" value="SingleTaskSchedulingConstraint" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="66UaKxBOkrZ" resolve="SchedulingConstraint" />
+    <node concept="1TJgyj" id="66UaKxBOktH" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="task" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="73Jrkgytd$o" resolve="Task" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="66UaKxBOm20">
+    <property role="3GE5qa" value="schedule" />
+    <property role="TrG5h" value="StartScheduleStatement" />
+    <property role="34LRSv" value="start" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="66UaKxBOmhD" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="schedule" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="66UaKxBOkro" resolve="ScheduleSpecification" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="12_KeTzTFMI">
+    <property role="3GE5qa" value="schedule" />
+    <property role="TrG5h" value="CyclicConstraint" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="cyclic" />
+    <ref role="1TJDcQ" node="66UaKxBOktG" resolve="SingleTaskSchedulingConstraint" />
+    <node concept="1TJgyj" id="12_KeTzTFNK" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="period" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="12_KeTzWRZv">
+    <property role="3GE5qa" value="schedule" />
+    <property role="TrG5h" value="WCETConstraint" />
+    <property role="34LRSv" value="wcet" />
+    <ref role="1TJDcQ" node="66UaKxBOktG" resolve="SingleTaskSchedulingConstraint" />
+    <node concept="1TJgyj" id="12_KeTzWS0L" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="wcet" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="12_KeTzXBM1">
+    <property role="TrG5h" value="ConcurrencyConfigItem" />
+    <property role="34LRSv" value="concurrency" />
+    <property role="3GE5qa" value="build" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="12_KeTzXJV4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="genStrategy" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="12_KeTzXJV3" resolve="ConcurrencyGenerationStrategy" />
+    </node>
+    <node concept="PrWs8" id="12_KeTzXBM2" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="12_KeTzXJV3">
+    <property role="3GE5qa" value="build" />
+    <property role="TrG5h" value="ConcurrencyGenerationStrategy" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

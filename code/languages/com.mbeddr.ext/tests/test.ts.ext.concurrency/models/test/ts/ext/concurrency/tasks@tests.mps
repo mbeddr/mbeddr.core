@@ -33,6 +33,9 @@
         <child id="6275792049641600984" name="condition" index="c0U16" />
         <child id="6275792049641600985" name="thenPart" index="c0U17" />
       </concept>
+      <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
+        <child id="7763322639126652758" name="baseType" index="2umbIo" />
+      </concept>
       <concept id="8850915533694634145" name="com.mbeddr.core.statements.structure.InitExpression" flags="ng" index="3o3WLD">
         <child id="8850915533694634146" name="elements" index="3o3WLE" />
       </concept>
@@ -75,6 +78,10 @@
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
     </language>
+    <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
+      <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
+      <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
+    </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
@@ -106,6 +113,12 @@
       <concept id="6512473996287153137" name="com.mbeddr.core.modules.structure.Section" flags="ng" index="fMItD">
         <child id="6512473996287153139" name="contents" index="fMItF" />
       </concept>
+      <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
+        <child id="8967919205527146150" name="expression" index="2BFjQA" />
+      </concept>
+      <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
+        <child id="5708867820623310661" name="arguments" index="1UOdpc" />
+      </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
       </concept>
@@ -117,6 +130,7 @@
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
+      <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
       <concept id="6610873504380357354" name="com.mbeddr.core.modules.structure.GlobalVarRef" flags="ng" index="1S7827">
         <reference id="6610873504380357355" name="var" index="1S7826" />
       </concept>
@@ -134,6 +148,15 @@
     </language>
     <language id="b879012d-402b-40e0-8df7-e6fa93b9b711" name="com.mbeddr.ext.concurrency">
       <concept id="7041988282444791410" name="com.mbeddr.ext.concurrency.structure.SharedAccessAnnotation" flags="ng" index="6bTlU" />
+      <concept id="7041988282448699520" name="com.mbeddr.ext.concurrency.structure.StartScheduleStatement" flags="ng" index="6qOI8">
+        <reference id="7041988282448700521" name="schedule" index="6qOXx" />
+      </concept>
+      <concept id="7041988282448693100" name="com.mbeddr.ext.concurrency.structure.SingleTaskSchedulingConstraint" flags="ng" index="6qQL$">
+        <reference id="7041988282448693101" name="task" index="6qQL_" />
+      </concept>
+      <concept id="7041988282448692952" name="com.mbeddr.ext.concurrency.structure.ScheduleSpecification" flags="ng" index="6qQRg">
+        <child id="7041988282448692992" name="constraints" index="6qQK8" />
+      </concept>
       <concept id="8137843191085062424" name="com.mbeddr.ext.concurrency.structure.Task" flags="ng" index="1iAVhs">
         <child id="8137843191085079198" name="body" index="1iABvq" />
         <child id="562973772910397408" name="kind" index="3JZT99" />
@@ -157,8 +180,15 @@
       <concept id="562973772910260906" name="com.mbeddr.ext.concurrency.structure.FirstRunTarget" flags="ng" index="3JZms3" />
       <concept id="562973772910397379" name="com.mbeddr.ext.concurrency.structure.CyclicTaskKind" flags="ng" index="3JZT9E" />
       <concept id="562973772910397190" name="com.mbeddr.ext.concurrency.structure.EventDeclaration" flags="ng" index="3JZTaJ" />
+      <concept id="1199577005874920622" name="com.mbeddr.ext.concurrency.structure.CyclicConstraint" flags="ng" index="1NgRL0">
+        <child id="1199577005874920688" name="period" index="1NgRKu" />
+      </concept>
+      <concept id="1199577005875757023" name="com.mbeddr.ext.concurrency.structure.WCETConstraint" flags="ng" index="1NlFWL">
+        <child id="1199577005875757105" name="wcet" index="1Nl$3v" />
+      </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
+      <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
       <concept id="8463282783691618426" name="com.mbeddr.core.expressions.structure.Int8tType" flags="ng" index="26Vqqz" />
       <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
@@ -169,6 +199,7 @@
       <concept id="4620120465980402700" name="com.mbeddr.core.expressions.structure.GenericDotExpression" flags="ng" index="2qmXGp">
         <child id="7034214596252529803" name="target" index="1ESnxz" />
       </concept>
+      <concept id="5763383285156373013" name="com.mbeddr.core.expressions.structure.PlusExpression" flags="ng" index="2BOciq" />
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
@@ -684,6 +715,112 @@
         </node>
         <node concept="7CXmI" id="vg5qBCf4hH" role="lGtFl">
           <node concept="7OXhh" id="vg5qBCf4hI" role="7EUXB" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="66UaKxBOU87">
+    <property role="TrG5h" value="DSchedule" />
+    <node concept="1qefOq" id="66UaKxBOU88" role="1SKRRt">
+      <node concept="N3F5e" id="66UaKxBOU89" role="1qenE9">
+        <property role="TrG5h" value="Dummy" />
+        <node concept="7CXmI" id="66UaKxBOUae" role="lGtFl">
+          <node concept="7OXhh" id="66UaKxBOUaf" role="7EUXB" />
+        </node>
+        <node concept="1iAVhs" id="66UaKxBOVxW" role="N3F5h">
+          <property role="2OOxQR" value="true" />
+          <property role="TrG5h" value="aBlockingTask" />
+          <node concept="3JSqjV" id="12_KeTzW_5o" role="3JZT99" />
+          <node concept="3XIRFW" id="66UaKxBOVxY" role="1iABvq" />
+        </node>
+        <node concept="1iAVhs" id="12_KeTzW_69" role="N3F5h">
+          <property role="2OOxQR" value="true" />
+          <property role="TrG5h" value="aCyclicTask" />
+          <node concept="3JZT9E" id="12_KeTzW_8p" role="3JZT99" />
+          <node concept="3XIRFW" id="12_KeTzW_6b" role="1iABvq" />
+        </node>
+        <node concept="2NXPZ9" id="66UaKxBOVy2" role="N3F5h">
+          <property role="TrG5h" value="empty_1437130463821_1" />
+        </node>
+        <node concept="6qQRg" id="66UaKxBOVyk" role="N3F5h">
+          <property role="TrG5h" value="mainTasks" />
+          <node concept="1NgRL0" id="12_KeTzW5SN" role="6qQK8">
+            <ref role="6qQL_" node="66UaKxBOVxW" resolve="aBlockingTask" />
+            <node concept="2BOciq" id="12_KeTzW61c" role="1NgRKu">
+              <node concept="3TlMh9" id="12_KeTzW61f" role="3TlMhJ">
+                <property role="2hmy$m" value="10" />
+              </node>
+              <node concept="3TlMh9" id="12_KeTzW5ST" role="3TlMhI">
+                <property role="2hmy$m" value="10" />
+              </node>
+            </node>
+            <node concept="7CXmI" id="12_KeTzW_aN" role="lGtFl">
+              <node concept="1TM$A" id="12_KeTzW_aO" role="7EUXB" />
+            </node>
+          </node>
+          <node concept="1NgRL0" id="12_KeTzW_8y" role="6qQK8">
+            <ref role="6qQL_" node="12_KeTzW_69" resolve="aCyclicTask" />
+            <node concept="3TlMh9" id="12_KeTzW_8H" role="1NgRKu">
+              <property role="2hmy$m" value="20" />
+            </node>
+          </node>
+          <node concept="1NlFWL" id="12_KeTzXB$N" role="6qQK8">
+            <ref role="6qQL_" node="66UaKxBOVxW" resolve="aBlockingTask" />
+            <node concept="3TlMh9" id="12_KeTzXB_d" role="1Nl$3v">
+              <property role="2hmy$m" value="10" />
+            </node>
+          </node>
+          <node concept="1NlFWL" id="12_KeTzXBFB" role="6qQK8">
+            <ref role="6qQL_" node="12_KeTzW_69" resolve="aCyclicTask" />
+            <node concept="3TlMh9" id="12_KeTzXBG3" role="1Nl$3v">
+              <property role="2hmy$m" value="10" />
+            </node>
+          </node>
+        </node>
+        <node concept="2NXPZ9" id="12_KeTzTglo" role="N3F5h">
+          <property role="TrG5h" value="empty_1437131088059_1" />
+        </node>
+        <node concept="N3Fnx" id="12_KeTzThls" role="N3F5h">
+          <property role="TrG5h" value="main" />
+          <property role="2OOxQR" value="true" />
+          <node concept="3XIRFW" id="12_KeTzThlu" role="3XIRFX">
+            <node concept="6qOI8" id="12_KeTzTk1T" role="3XIRFZ">
+              <ref role="6qOXx" node="66UaKxBOVyk" resolve="mainTasks" />
+            </node>
+            <node concept="2BFjQ_" id="12_KeTzThlA" role="3XIRFZ">
+              <node concept="3TlMh9" id="12_KeTzThlB" role="2BFjQA">
+                <property role="2hmy$m" value="0" />
+              </node>
+            </node>
+          </node>
+          <node concept="26Vqph" id="12_KeTzThlw" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="19RgSI" id="12_KeTzThlx" role="1UOdpc">
+            <property role="TrG5h" value="argc" />
+            <node concept="26Vqph" id="12_KeTzThly" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+          </node>
+          <node concept="19RgSI" id="12_KeTzThlz" role="1UOdpc">
+            <property role="TrG5h" value="argv" />
+            <node concept="3J0A42" id="12_KeTzThl$" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <node concept="Pu267" id="12_KeTzThl_" role="2umbIo">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2NXPZ9" id="12_KeTzTglD" role="N3F5h">
+          <property role="TrG5h" value="empty_1437131088414_3" />
+        </node>
+        <node concept="2NXPZ9" id="66UaKxBOVyd" role="N3F5h">
+          <property role="TrG5h" value="empty_1437130464100_3" />
         </node>
       </node>
     </node>
