@@ -55,7 +55,10 @@
       </concept>
     </language>
     <language id="e33ff641-cba8-4703-98f4-59e63936d940" name="com.mbeddr.mpsutil.margincell.editor">
-      <concept id="97401520565568823" name="com.mbeddr.mpsutil.margincell.editor.structure.MarginCell" flags="ng" index="2SJGWt" />
+      <concept id="97401520565568823" name="com.mbeddr.mpsutil.margincell.editor.structure.MarginCell" flags="ng" index="2SJGWt">
+        <reference id="97401520565568825" name="marginContents" index="2SJGWj" />
+        <child id="97401520565568824" name="content" index="2SJGWi" />
+      </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
@@ -75,23 +78,15 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
     </language>
-    <language id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell">
-      <concept id="3020585710860926251" name="com.mbeddr.mpsutil.margincell.structure.MarginCell" flags="ng" index="1G_NIo">
-        <reference id="1159656764144608565" name="styleClass" index="3080yr" />
-        <reference id="1073390211987" name="marginContents" index="3F2HdE" />
-        <child id="8455208232401975764" name="content" index="2f4tr2" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
     </language>
   </registry>
   <node concept="24kQdi" id="7lmVLrULD8q">
     <ref role="1XX52x" to="731j:7lmVLrULD8n" resolve="Review" />
-    <node concept="2SJGWt" id="7lmVLrULD8r" role="2wV5jI">
-      <ref role="3F2HdE" to="731j:7lmVLrULD8p" />
-      <ref role="3080yr" to="fmr2:7lmVLrULCNA" resolve="ReviewMarginCellStyle" />
-      <node concept="3EZMnI" id="7lmVLrULD8s" role="2f4tr2">
+    <node concept="2SJGWt" id="66jx6gIAfcw" role="2wV5jI">
+      <ref role="2SJGWj" to="731j:7lmVLrULD8p" />
+      <node concept="3EZMnI" id="7lmVLrULD8s" role="2SJGWi">
         <node concept="3F0ifn" id="7lmVLrULD8t" role="3EZMnx">
           <property role="3F0ifm" value="Review for" />
         </node>

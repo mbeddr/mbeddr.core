@@ -6029,6 +6029,12 @@
             <ref role="3bR37D" node="4gGXGcLVFBO" resolve="com.mbeddr.mpsutil.multilingual.concept.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="66jx6gIEsNi" role="3bR37C">
+          <node concept="3bR9La" id="66jx6gIEsNj" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="4gGXGcLVMsv" role="2G$12L">
         <property role="BnDLt" value="true" />
