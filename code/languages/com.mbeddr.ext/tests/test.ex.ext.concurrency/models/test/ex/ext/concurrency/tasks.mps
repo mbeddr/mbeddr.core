@@ -2,8 +2,8 @@
 <model ref="r:9054466d-f8f4-4815-89d0-ec603639c8be(test.ex.ext.concurrency.tasks)">
   <persistence version="9" />
   <languages>
-    <use id="b879012d-402b-40e0-8df7-e6fa93b9b711" name="com.mbeddr.ext.concurrency" version="-1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
+    <devkit ref="aa72fbcf-7e79-465b-a4d9-4517ef4624ee(com.mbeddr.concurrency)" />
   </languages>
   <imports />
   <registry>
@@ -158,11 +158,17 @@
       <concept id="1199577005874920622" name="com.mbeddr.ext.concurrency.structure.CyclicConstraint" flags="ng" index="1NgRL0">
         <child id="1199577005874920688" name="period" index="1NgRKu" />
       </concept>
+      <concept id="1199577005875952769" name="com.mbeddr.ext.concurrency.structure.ConcurrencyConfigItem" flags="ng" index="1NkVLJ">
+        <child id="1199577005875986116" name="genStrategy" index="1NkNSE" />
+      </concept>
       <concept id="1199577005876317481" name="com.mbeddr.ext.concurrency.structure.TerminateStatement" flags="ng" index="1NmsR7" />
       <concept id="1199577005876533973" name="com.mbeddr.ext.concurrency.structure.IterationNoTarget" flags="ng" index="1NmDCV" />
       <concept id="1199577005877282933" name="com.mbeddr.ext.concurrency.structure.DelayStatement" flags="ng" index="1OFKyr">
         <child id="1199577005877282934" name="value" index="1OFKyo" />
       </concept>
+    </language>
+    <language id="8c1a7e14-9520-42a4-a3a7-b15e523af156" name="com.mbeddr.ext.concurrency.pthreads">
+      <concept id="2549588765560351127" name="com.mbeddr.ext.concurrency.pthreads.structure.PThreadsStrategy" flags="ng" index="1PVdNI" />
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="8463282783691618456" name="com.mbeddr.core.expressions.structure.UnsignedInt64tType" flags="ng" index="26Vqp1" />
@@ -472,6 +478,9 @@
     </node>
     <node concept="2Q9Fgs" id="73JrkgytYRV" role="2Q9xDr">
       <node concept="2Q9FjX" id="73JrkgytYRW" role="2Q9FjI" />
+    </node>
+    <node concept="1NkVLJ" id="2dxXn_m$kGz" role="2Q9xDr">
+      <node concept="1PVdNI" id="2dxXn_m$lac" role="1NkNSE" />
     </node>
   </node>
 </model>
