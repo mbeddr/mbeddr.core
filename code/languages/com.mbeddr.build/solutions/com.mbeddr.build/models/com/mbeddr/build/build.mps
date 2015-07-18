@@ -4716,6 +4716,17 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5B8LY2_mM8V" role="3bR37C">
+          <node concept="3bR9La" id="5B8LY2_mM8W" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5B8LY2_mM8X" role="3bR37C">
+          <node concept="1Busua" id="5B8LY2_mM8Y" role="1SiIV1">
+            <ref role="1Busuk" node="7uZw0yZ43JW" resolve="com.mbeddr.core.util" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="4hMIGYx43B5" role="2G$12L">
         <property role="BnDLt" value="true" />
