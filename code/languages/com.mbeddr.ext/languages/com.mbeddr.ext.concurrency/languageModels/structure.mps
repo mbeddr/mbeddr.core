@@ -180,6 +180,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     </node>
+    <node concept="PrWs8" id="4mSSgpjcP7l" role="PzmwI">
+      <ref role="PrY4T" node="4mSSgpjcAY7" resolve="IActsAsAtomic" />
+    </node>
   </node>
   <node concept="PlHQZ" id="vg5qBCdJwB">
     <property role="TrG5h" value="ITaskSpecific" />
@@ -407,6 +410,109 @@
     <node concept="PrWs8" id="22QtsSp64LB" role="PzmwI">
       <ref role="PrY4T" node="12_KeTzZPRN" resolve="ITaskContextTarget" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="2TPZctD4Qjf">
+    <property role="TrG5h" value="QueueDeclaration" />
+    <property role="34LRSv" value="queue" />
+    <property role="3GE5qa" value="queue" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2TPZctD4Qkp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="size" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="2TPZctD4Qkm" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elementType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+    </node>
+    <node concept="PrWs8" id="2TPZctD4Qkj" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="2TPZctD4YaB" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2TPZctD4Yk7">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="QueueType" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+    <node concept="1TJgyj" id="2TPZctD4Yk8" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="queue" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2TPZctD4Qjf" resolve="QueueDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2TPZctDdhaS">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="EnqueueStatement" />
+    <property role="34LRSv" value="enqueue" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="2TPZctDdhc4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="queue" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="x27k:5IYyAOzCwFE" resolve="GlobalVarRef" />
+    </node>
+    <node concept="1TJgyj" id="2TPZctDdhc6" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="4mSSgpjeKZr" role="PzmwI">
+      <ref role="PrY4T" node="4mSSgpjcAY7" resolve="IActsAsAtomic" />
+    </node>
+    <node concept="PrWs8" id="4mSSgpjsW9s" role="PzmwI">
+      <ref role="PrY4T" node="4mSSgpjqg3b" resolve="IQueueUser" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4mSSgpjcAY7">
+    <property role="TrG5h" value="IActsAsAtomic" />
+  </node>
+  <node concept="1TIwiD" id="4mSSgpjgrEk">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="ReadQueueStatement" />
+    <property role="34LRSv" value="take" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="4mSSgpjgrEl" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="queue" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="x27k:5IYyAOzCwFE" resolve="GlobalVarRef" />
+    </node>
+    <node concept="1TJgyj" id="4mSSgpjguT0" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="PrWs8" id="4mSSgpjgrEn" role="PzmwI">
+      <ref role="PrY4T" node="4mSSgpjcAY7" resolve="IActsAsAtomic" />
+    </node>
+    <node concept="PrWs8" id="4mSSgpjhPYA" role="PzmwI">
+      <ref role="PrY4T" node="4mSSgpjhPYy" resolve="IQueueContext" />
+    </node>
+    <node concept="PrWs8" id="4mSSgpjsUtT" role="PzmwI">
+      <ref role="PrY4T" node="4mSSgpjqg3b" resolve="IQueueUser" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4mSSgpjhPYy">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="IQueueContext" />
+  </node>
+  <node concept="1TIwiD" id="4mSSgpjhPZ8">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="QueueValExpr" />
+    <property role="34LRSv" value="val" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+  </node>
+  <node concept="PlHQZ" id="4mSSgpjqg3b">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="IQueueUser" />
   </node>
 </model>
 

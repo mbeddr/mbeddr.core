@@ -3,6 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -396,6 +400,30 @@
                 <ref role="cht4Q" to="5wll:vg5qBCai8u" resolve="TaskContextExpr" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4mSSgpjhPZW">
+    <property role="3GE5qa" value="queue" />
+    <ref role="1M2myG" to="5wll:4mSSgpjhPZ8" resolve="QueueValExpr" />
+    <node concept="nKS2y" id="4mSSgpjhQ1X" role="1MLUbF">
+      <node concept="3clFbS" id="4mSSgpjhQ1Y" role="2VODD2">
+        <node concept="3clFbF" id="4mSSgpjhQnx" role="3cqZAp">
+          <node concept="2OqwBi" id="4mSSgpjhRSd" role="3clFbG">
+            <node concept="2OqwBi" id="4mSSgpjhRxm" role="2Oq$k0">
+              <node concept="nLn13" id="4mSSgpjhQnw" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="4mSSgpjhRDv" role="2OqNvi">
+                <node concept="1xMEDy" id="4mSSgpjhRDx" role="1xVPHs">
+                  <node concept="chp4Y" id="4mSSgpjhRIN" role="ri$Ld">
+                    <ref role="cht4Q" to="5wll:4mSSgpjhPYy" resolve="IQueueContext" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="4mSSgpjhSkb" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="4mSSgpjhSbJ" role="2OqNvi" />
           </node>
         </node>
       </node>
