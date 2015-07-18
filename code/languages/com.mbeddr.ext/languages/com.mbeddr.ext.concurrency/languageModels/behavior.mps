@@ -19,6 +19,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -118,24 +119,6 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
-      </concept>
-    </language>
-    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
-      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
-        <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
-      </concept>
-      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
-        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
-      </concept>
-      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
-        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
-        <child id="5455284157993911099" name="values" index="2pJxcM" />
-      </concept>
-      <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
-        <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -1124,38 +1107,6 @@
       <node concept="3clFbS" id="6ndohCVb1sK" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="2TPZctD4Yca">
-    <property role="3GE5qa" value="queue" />
-    <ref role="13h7C2" to="5wll:2TPZctD4Qjf" resolve="QueueDeclaration" />
-    <node concept="13hLZK" id="2TPZctD4Ycb" role="13h7CW">
-      <node concept="3clFbS" id="2TPZctD4Ycc" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="2TPZctD4Ycd" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="createType" />
-      <ref role="13i0hy" to="qd6m:3o2OLGv7CoR" resolve="createType" />
-      <node concept="3Tm1VV" id="2TPZctD4Yce" role="1B3o_S" />
-      <node concept="3clFbS" id="2TPZctD4Ych" role="3clF47">
-        <node concept="3clFbF" id="2TPZctD5dTK" role="3cqZAp">
-          <node concept="2pJPEk" id="2TPZctD5dTI" role="3clFbG">
-            <node concept="2pJPED" id="2TPZctD5dU6" role="2pJPEn">
-              <ref role="2pJxaS" to="5wll:2TPZctD4Yk7" resolve="QueueType" />
-              <node concept="2pIpSj" id="2TPZctD5dUt" role="2pJxcM">
-                <ref role="2pIpSl" to="5wll:2TPZctD4Yk8" />
-                <node concept="36biLy" id="2TPZctD5dUS" role="2pJxcZ">
-                  <node concept="13iPFW" id="2TPZctD5dVk" role="36biLW" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="2TPZctD4Yci" role="3clF45">
-        <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
-      </node>
-    </node>
-  </node>
   <node concept="13h7C7" id="4mSSgpjfkcd">
     <ref role="13h7C2" to="5wll:4mSSgpjcAY7" resolve="IActsAsAtomic" />
     <node concept="13i0hz" id="4mSSgpjfkhV" role="13h7CS">
@@ -1224,7 +1175,7 @@
               </node>
               <node concept="1mIQ4w" id="4mSSgpjfBqq" role="2OqNvi">
                 <node concept="chp4Y" id="4mSSgpjfBsU" role="cj9EA">
-                  <ref role="cht4Q" to="5wll:2TPZctD4Yk7" resolve="QueueType" />
+                  <ref role="cht4Q" to="k146:4mSSgpjxUsy" resolve="QueueType" />
                 </node>
               </node>
             </node>
@@ -1328,7 +1279,7 @@
               </node>
               <node concept="1mIQ4w" id="4mSSgpjgw8Z" role="2OqNvi">
                 <node concept="chp4Y" id="4mSSgpjgw90" role="cj9EA">
-                  <ref role="cht4Q" to="5wll:2TPZctD4Yk7" resolve="QueueType" />
+                  <ref role="cht4Q" to="k146:4mSSgpjxUsy" resolve="QueueType" />
                 </node>
               </node>
             </node>
@@ -1383,7 +1334,7 @@
           <node concept="3clFbS" id="4mSSgpjhTdp" role="3clFbx">
             <node concept="3cpWs6" id="4mSSgpjhW4N" role="3cqZAp">
               <node concept="1PxgMI" id="4mSSgpjhXDw" role="3cqZAk">
-                <ref role="1PxNhF" to="5wll:2TPZctD4Yk7" resolve="QueueType" />
+                <ref role="1PxNhF" to="k146:4mSSgpjxUsy" resolve="QueueType" />
                 <node concept="2OqwBi" id="4mSSgpjhX8Q" role="1PxMeX">
                   <node concept="2OqwBi" id="4mSSgpjhWga" role="2Oq$k0">
                     <node concept="13iPFW" id="4mSSgpjhW8N" role="2Oq$k0" />
@@ -1408,7 +1359,7 @@
             </node>
             <node concept="1mIQ4w" id="4mSSgpjhVZo" role="2OqNvi">
               <node concept="chp4Y" id="4mSSgpjhW1R" role="cj9EA">
-                <ref role="cht4Q" to="5wll:2TPZctD4Yk7" resolve="QueueType" />
+                <ref role="cht4Q" to="k146:4mSSgpjxUsy" resolve="QueueType" />
               </node>
             </node>
           </node>
@@ -1418,7 +1369,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="4mSSgpjhSyv" role="3clF45">
-        <ref role="ehGHo" to="5wll:2TPZctD4Yk7" resolve="QueueType" />
+        <ref role="ehGHo" to="k146:4mSSgpjxUsy" resolve="QueueType" />
       </node>
     </node>
     <node concept="13i0hz" id="4mSSgpjsUCt" role="13h7CS">
@@ -1457,7 +1408,7 @@
       <node concept="3Tm1VV" id="4mSSgpjhSqm" role="1B3o_S" />
       <node concept="3clFbS" id="4mSSgpjhSqn" role="3clF47" />
       <node concept="3Tqbb2" id="4mSSgpjhSqt" role="3clF45">
-        <ref role="ehGHo" to="5wll:2TPZctD4Yk7" resolve="QueueType" />
+        <ref role="ehGHo" to="k146:4mSSgpjxUsy" resolve="QueueType" />
       </node>
     </node>
     <node concept="13hLZK" id="4mSSgpjhSqg" role="13h7CW">

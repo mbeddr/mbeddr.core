@@ -1256,5 +1256,40 @@
     <property role="34LRSv" value="c90 compatible code" />
     <ref role="1TJDcQ" node="3_EX3Wi7Hiy" resolve="ConvertNamedToPositionalStructInit" />
   </node>
+  <node concept="1TIwiD" id="4mSSgpjxLMA">
+    <property role="TrG5h" value="QueueDeclaration" />
+    <property role="34LRSv" value="queue" />
+    <property role="3GE5qa" value="queue" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4mSSgpjxLMB" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="size" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4mSSgpjxLMC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elementType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+    </node>
+    <node concept="PrWs8" id="4mSSgpjxLMD" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="4mSSgpjxLME" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4mSSgpjxUsy">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="QueueType" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+    <node concept="1TJgyj" id="4mSSgpjxUsz" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="queue" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4mSSgpjxLMA" resolve="QueueDeclaration" />
+    </node>
+  </node>
 </model>
 

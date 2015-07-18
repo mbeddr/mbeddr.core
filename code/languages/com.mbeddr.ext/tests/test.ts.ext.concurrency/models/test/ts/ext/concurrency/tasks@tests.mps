@@ -83,6 +83,8 @@
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
+      <concept id="5024012801619240738" name="com.mbeddr.core.util.structure.QueueType" flags="ng" index="mfOo$" />
+      <concept id="5024012801619205286" name="com.mbeddr.core.util.structure.QueueDeclaration" flags="ng" index="mfZQw" />
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
       </concept>
@@ -882,7 +884,7 @@
         <node concept="2NXPZ9" id="2TPZctD8HG4" role="N3F5h">
           <property role="TrG5h" value="empty_1437238539461_4" />
         </node>
-        <node concept="17pDw8" id="2TPZctD856D" role="N3F5h">
+        <node concept="mfZQw" id="2TPZctD856D" role="N3F5h">
           <property role="TrG5h" value="pointqueue" />
           <node concept="1sgJKr" id="2TPZctD8HGS" role="17pDBh">
             <property role="2caQfQ" value="false" />
@@ -898,7 +900,7 @@
         </node>
         <node concept="1S7NMz" id="2TPZctD9UBg" role="N3F5h">
           <property role="TrG5h" value="q" />
-          <node concept="17pxB0" id="2TPZctD9UBe" role="2C2TGm">
+          <node concept="mfOo$" id="2TPZctD9UBe" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
             <ref role="17pxBf" node="2TPZctD856D" resolve="pointqueue" />
@@ -910,7 +912,7 @@
         </node>
         <node concept="1S7NMz" id="4mSSgpjqgxj" role="N3F5h">
           <property role="TrG5h" value="unsharedQ" />
-          <node concept="17pxB0" id="4mSSgpjqgxh" role="2C2TGm">
+          <node concept="mfOo$" id="4mSSgpjqgxh" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
             <ref role="17pxBf" node="2TPZctD856D" resolve="pointqueue" />

@@ -62,6 +62,8 @@
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
+      <concept id="5024012801619240738" name="" flags="ng" index="mfOo$" />
+      <concept id="5024012801619205286" name="" flags="ng" index="mfZQw" />
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
       </concept>
@@ -225,7 +227,7 @@
     <node concept="2NXPZ9" id="4mSSgpjqer9" role="N3F5h">
       <property role="TrG5h" value="empty_1437242011829_8" />
     </node>
-    <node concept="17pDw8" id="4mSSgpjqeGy" role="N3F5h">
+    <node concept="mfZQw" id="4mSSgpjqeGy" role="N3F5h">
       <property role="TrG5h" value="int64queue" />
       <node concept="26Vqp1" id="4mSSgpjqeXl" role="17pDBh">
         <property role="2caQfQ" value="false" />
@@ -240,7 +242,7 @@
     </node>
     <node concept="1S7NMz" id="4mSSgpjqfBH" role="N3F5h">
       <property role="TrG5h" value="data" />
-      <node concept="17pxB0" id="4mSSgpjqfBF" role="2C2TGm">
+      <node concept="mfOo$" id="4mSSgpjqfBF" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
         <ref role="17pxBf" node="4mSSgpjqeGy" resolve="int64queue" />

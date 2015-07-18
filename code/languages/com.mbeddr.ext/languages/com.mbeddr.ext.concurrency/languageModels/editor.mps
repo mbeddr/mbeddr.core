@@ -9,9 +9,10 @@
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="1t7x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
     <import index="cl6c" ref="r:890ea833-37c9-445e-a04d-3b69ce24aa30(com.mbeddr.core.modules.editor)" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
+    <import index="5wll" ref="r:8bfc0edf-00dc-40ce-9659-fb90c9bd31c8(com.mbeddr.ext.concurrency.structure)" />
+    <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
-    <import index="5wll" ref="r:8bfc0edf-00dc-40ce-9659-fb90c9bd31c8(com.mbeddr.ext.concurrency.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -590,70 +591,6 @@
     <ref role="1XX52x" to="5wll:22QtsSp64LA" resolve="IterationStartTimeTarget" />
     <node concept="3F0ifn" id="22QtsSp65bu" role="2wV5jI">
       <property role="3F0ifm" value="iterationStartTime" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="2TPZctD4Yxg">
-    <property role="3GE5qa" value="queue" />
-    <ref role="1XX52x" to="5wll:2TPZctD4Yk7" resolve="QueueType" />
-    <node concept="1iCGBv" id="2TPZctD4Zpm" role="2wV5jI">
-      <ref role="1NtTu8" to="5wll:2TPZctD4Yk8" />
-      <node concept="1sVBvm" id="2TPZctD4Zpo" role="1sWHZn">
-        <node concept="3F0A7n" id="2TPZctD4Zpv" role="2wV5jI">
-          <property role="1Intyy" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="2TPZctD5dW8">
-    <property role="3GE5qa" value="queue" />
-    <ref role="1XX52x" to="5wll:2TPZctD4Qjf" resolve="QueueDeclaration" />
-    <node concept="3EZMnI" id="37VCVodLftM" role="2wV5jI">
-      <node concept="l2Vlx" id="37VCVodLftN" role="2iSdaV" />
-      <node concept="PMmxH" id="1M41OHs$Nh9" role="3EZMnx">
-        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
-      </node>
-      <node concept="3F0ifn" id="37VCVodLftO" role="3EZMnx">
-        <property role="3F0ifm" value="queue" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-      </node>
-      <node concept="3F0ifn" id="37VCVodLftP" role="3EZMnx">
-        <property role="3F0ifm" value="[" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-        <node concept="11L4FC" id="37VCVodLftQ" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="37VCVodLftR" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="37VCVodLftS" role="3EZMnx">
-        <ref role="1NtTu8" to="5wll:2TPZctD4Qkm" />
-      </node>
-      <node concept="3F0ifn" id="37VCVodLftT" role="3EZMnx">
-        <property role="3F0ifm" value="," />
-        <node concept="11L4FC" id="37VCVodLftU" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="37VCVodLftV" role="3EZMnx">
-        <ref role="1NtTu8" to="5wll:2TPZctD4Qkp" />
-      </node>
-      <node concept="3F0ifn" id="37VCVodLftW" role="3EZMnx">
-        <property role="3F0ifm" value="]" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-        <node concept="11L4FC" id="37VCVodLftX" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0A7n" id="37VCVodLftZ" role="3EZMnx">
-        <ref role="1k5W1q" to="r4b4:2CEi94di1o$" resolve="TypeDef" />
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="3F0ifn" id="37VCVodLfu1" role="3EZMnx">
-        <property role="3F0ifm" value=";" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dhkRt" resolve="Semi" />
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="2TPZctDdhcw">

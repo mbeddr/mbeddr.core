@@ -9,7 +9,8 @@
     <import index="5wll" ref="r:8bfc0edf-00dc-40ce-9659-fb90c9bd31c8(com.mbeddr.ext.concurrency.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
-    <import index="qozy" ref="r:38fcb48b-92c2-41af-9039-dc087bb8b822(com.mbeddr.ext.concurrency.behavior)" implicit="true" />
+    <import index="qozy" ref="r:38fcb48b-92c2-41af-9039-dc087bb8b822(com.mbeddr.ext.concurrency.behavior)" />
+    <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -954,37 +955,6 @@
       <ref role="1YaFvo" to="5wll:22QtsSp64LA" resolve="IterationStartTimeTarget" />
     </node>
   </node>
-  <node concept="1YbPZF" id="2TPZctD5qkS">
-    <property role="TrG5h" value="typeof_QueueDeclaration" />
-    <property role="3GE5qa" value="queue" />
-    <node concept="3clFbS" id="2TPZctD5qkT" role="18ibNy">
-      <node concept="1ZobV4" id="2TPZctD5rzJ" role="3cqZAp">
-        <node concept="mw_s8" id="2TPZctD5r$7" role="1ZfhKB">
-          <node concept="2pJPEk" id="2TPZctD5r$3" role="mwGJk">
-            <node concept="2pJPED" id="2TPZctD5r$i" role="2pJPEn">
-              <ref role="2pJxaS" to="mj1l:7lNBHBNBzyo" resolve="UnsignedInt64tType" />
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="2TPZctD5rzM" role="1ZfhK$">
-          <node concept="1Z2H0r" id="2TPZctD5qBD" role="mwGJk">
-            <node concept="2OqwBi" id="2TPZctD5r6V" role="1Z2MuG">
-              <node concept="1YBJjd" id="2TPZctD5qC5" role="2Oq$k0">
-                <ref role="1YBMHb" node="2TPZctD5qkV" resolve="qd" />
-              </node>
-              <node concept="3TrEf2" id="2TPZctD5rwy" role="2OqNvi">
-                <ref role="3Tt5mk" to="5wll:2TPZctD4Qkp" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="2TPZctD5qkV" role="1YuTPh">
-      <property role="TrG5h" value="qd" />
-      <ref role="1YaFvo" to="5wll:2TPZctD4Qjf" resolve="QueueDeclaration" />
-    </node>
-  </node>
   <node concept="1YbPZF" id="2TPZctDep_d">
     <property role="TrG5h" value="typeof_EnqueueStatement" />
     <property role="3GE5qa" value="queue" />
@@ -998,17 +968,17 @@
                   <node concept="2OqwBi" id="2TPZctDeueZ" role="mwGJk">
                     <node concept="2OqwBi" id="2TPZctDetEt" role="2Oq$k0">
                       <node concept="1PxgMI" id="2TPZctDetBj" role="2Oq$k0">
-                        <ref role="1PxNhF" to="5wll:2TPZctD4Yk7" resolve="QueueType" />
+                        <ref role="1PxNhF" to="k146:4mSSgpjxUsy" resolve="QueueType" />
                         <node concept="2X3wrD" id="2TPZctDetvz" role="1PxMeX">
                           <ref role="2X3Bk0" node="2TPZctDerVr" resolve="queueType" />
                         </node>
                       </node>
                       <node concept="3TrEf2" id="2TPZctDetUE" role="2OqNvi">
-                        <ref role="3Tt5mk" to="5wll:2TPZctD4Yk8" />
+                        <ref role="3Tt5mk" to="k146:4mSSgpjxUsz" />
                       </node>
                     </node>
                     <node concept="3TrEf2" id="2TPZctDeuDv" role="2OqNvi">
-                      <ref role="3Tt5mk" to="5wll:2TPZctD4Qkm" />
+                      <ref role="3Tt5mk" to="k146:4mSSgpjxLMC" />
                     </node>
                   </node>
                 </node>
@@ -1032,7 +1002,7 @@
               </node>
               <node concept="1mIQ4w" id="2TPZctDesEl" role="2OqNvi">
                 <node concept="chp4Y" id="2TPZctDesEQ" role="cj9EA">
-                  <ref role="cht4Q" to="5wll:2TPZctD4Yk7" resolve="QueueType" />
+                  <ref role="cht4Q" to="k146:4mSSgpjxUsy" resolve="QueueType" />
                 </node>
               </node>
             </node>
@@ -1103,11 +1073,11 @@
                   </node>
                 </node>
                 <node concept="3TrEf2" id="4mSSgpjlmvT" role="2OqNvi">
-                  <ref role="3Tt5mk" to="5wll:2TPZctD4Yk8" />
+                  <ref role="3Tt5mk" to="k146:4mSSgpjxUsz" />
                 </node>
               </node>
               <node concept="3TrEf2" id="4mSSgpjlnf9" role="2OqNvi">
-                <ref role="3Tt5mk" to="5wll:2TPZctD4Qkm" />
+                <ref role="3Tt5mk" to="k146:4mSSgpjxLMC" />
               </node>
             </node>
           </node>
