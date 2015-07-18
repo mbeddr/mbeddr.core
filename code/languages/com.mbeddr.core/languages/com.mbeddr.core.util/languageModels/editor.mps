@@ -4428,5 +4428,60 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="7cvwcG65W$U">
+    <property role="3GE5qa" value="queue" />
+    <ref role="1XX52x" to="k146:7cvwcG65TxB" resolve="QueueEnqueue" />
+    <node concept="3EZMnI" id="7cvwcG65X1c" role="2wV5jI">
+      <node concept="l2Vlx" id="7cvwcG65X1d" role="2iSdaV" />
+      <node concept="3F0ifn" id="7cvwcG65X1e" role="3EZMnx">
+        <property role="3F0ifm" value="enqueue" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="3F0ifn" id="7cvwcG65X1f" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dh36z" resolve="Parens" />
+        <node concept="11L4FC" id="7cvwcG65X1g" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="7cvwcG65X1h" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7cvwcG65X1i" role="3EZMnx">
+        <ref role="1NtTu8" to="k146:3agk82fuA0U" />
+      </node>
+      <node concept="3F0ifn" id="7cvwcG65X1j" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dh36z" resolve="Parens" />
+        <node concept="11L4FC" id="7cvwcG65X1k" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5B8LY2$tFLi">
+    <property role="3GE5qa" value="queue" />
+    <ref role="1XX52x" to="k146:5B8LY2$tD3D" resolve="QueueIsEmpty" />
+    <node concept="3F0ifn" id="5B8LY2$tSxE" role="2wV5jI">
+      <property role="3F0ifm" value="isEmpty" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5B8LY2$uECD">
+    <property role="3GE5qa" value="queue" />
+    <ref role="1XX52x" to="k146:5B8LY2$uECh" resolve="QueueIsFull" />
+    <node concept="3F0ifn" id="5B8LY2$uECL" role="2wV5jI">
+      <property role="3F0ifm" value="isFull" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5B8LY2$LrxG">
+    <property role="3GE5qa" value="queue" />
+    <ref role="1XX52x" to="k146:5B8LY2$Lrxk" resolve="QueueTake" />
+    <node concept="3F0ifn" id="5B8LY2$LrxO" role="2wV5jI">
+      <property role="3F0ifm" value="take" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+    </node>
+  </node>
 </model>
 

@@ -1291,5 +1291,44 @@
       <ref role="20lvS9" node="4mSSgpjxLMA" resolve="QueueDeclaration" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7cvwcG64PJw">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="QueueMember" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7cvwcG64PJx" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:40tXLnqhXcx" resolve="IGenericDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7cvwcG65TxB">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="QueueEnqueue" />
+    <property role="34LRSv" value="enqueue" />
+    <ref role="1TJDcQ" node="7cvwcG64PJw" resolve="QueueMember" />
+    <node concept="1TJgyj" id="7cvwcG65TxC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5B8LY2$tD3D">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="QueueIsEmpty" />
+    <property role="34LRSv" value="isEmpty" />
+    <ref role="1TJDcQ" node="7cvwcG64PJw" resolve="QueueMember" />
+  </node>
+  <node concept="1TIwiD" id="5B8LY2$uECh">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="QueueIsFull" />
+    <property role="34LRSv" value="isFull" />
+    <ref role="1TJDcQ" node="7cvwcG64PJw" resolve="QueueMember" />
+  </node>
+  <node concept="1TIwiD" id="5B8LY2$Lrxk">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="QueueTake" />
+    <property role="34LRSv" value="take" />
+    <ref role="1TJDcQ" node="7cvwcG64PJw" resolve="QueueMember" />
+  </node>
 </model>
 
