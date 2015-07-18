@@ -132,6 +132,7 @@
       </concept>
       <concept id="1174658326157" name="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" flags="nn" index="1Z5TYs" />
       <concept id="1174660718586" name="jetbrains.mps.lang.typesystem.structure.AbstractEquationStatement" flags="nn" index="1Zf1VF">
+        <property id="1206359757216" name="checkOnly" index="3wDh2S" />
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
       </concept>
@@ -209,7 +210,7 @@
   </registry>
   <node concept="1YbPZF" id="vg5qBCaI8_">
     <property role="TrG5h" value="typeof_TaskContextExpr" />
-    <property role="3GE5qa" value="tasks" />
+    <property role="3GE5qa" value="tasks.context" />
     <node concept="3clFbS" id="vg5qBCaI8A" role="18ibNy">
       <node concept="1Z5TYs" id="vg5qBCaJY$" role="3cqZAp">
         <node concept="mw_s8" id="vg5qBCaJZ0" role="1ZfhKB">
@@ -237,7 +238,7 @@
   </node>
   <node concept="1YbPZF" id="vg5qBCbnby">
     <property role="TrG5h" value="typeof_FirstRunTarget" />
-    <property role="3GE5qa" value="tasks" />
+    <property role="3GE5qa" value="tasks.context" />
     <node concept="3clFbS" id="vg5qBCbnbz" role="18ibNy">
       <node concept="1Z5TYs" id="vg5qBCbnhv" role="3cqZAp">
         <node concept="mw_s8" id="vg5qBCbnhV" role="1ZfhKB">
@@ -794,7 +795,7 @@
   </node>
   <node concept="1YbPZF" id="12_KeTzZQK5">
     <property role="TrG5h" value="typeof_IterationNoTarget" />
-    <property role="3GE5qa" value="tasks" />
+    <property role="3GE5qa" value="tasks.context" />
     <node concept="3clFbS" id="12_KeTzZQK6" role="18ibNy">
       <node concept="1ZobV4" id="12_KeTzZR20" role="3cqZAp">
         <node concept="mw_s8" id="12_KeTzZR2k" role="1ZfhKB">
@@ -816,6 +817,142 @@
     <node concept="1YaCAy" id="12_KeTzZQK8" role="1YuTPh">
       <property role="TrG5h" value="itt" />
       <ref role="1YaFvo" to="5wll:12_KeTzZPFl" resolve="IterationNoTarget" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="4hMIGYxmY7K">
+    <property role="TrG5h" value="check_BlockingConstraint" />
+    <property role="3GE5qa" value="schedule" />
+    <node concept="3clFbS" id="4hMIGYxmY7L" role="18ibNy">
+      <node concept="3clFbJ" id="4hMIGYxmYcE" role="3cqZAp">
+        <node concept="3clFbS" id="4hMIGYxmYcF" role="3clFbx">
+          <node concept="2MkqsV" id="4hMIGYxmYcG" role="3cqZAp">
+            <node concept="Xl_RD" id="4hMIGYxmYcH" role="2MkJ7o">
+              <property role="Xl_RC" value="only blocking tasks can be scheduled cyclicly" />
+            </node>
+            <node concept="1YBJjd" id="4hMIGYxmYcI" role="2OEOjV">
+              <ref role="1YBMHb" node="12_KeTzWrQf" resolve="cc" />
+            </node>
+            <node concept="2OE7Q9" id="4hMIGYxmYcJ" role="2OEWyd">
+              <ref role="2OEe5H" to="5wll:66UaKxBOktH" />
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="4hMIGYxmYcK" role="3clFbw">
+          <node concept="2OqwBi" id="4hMIGYxmYcL" role="3fr31v">
+            <node concept="2OqwBi" id="4hMIGYxmYcM" role="2Oq$k0">
+              <node concept="2OqwBi" id="4hMIGYxmYcN" role="2Oq$k0">
+                <node concept="1YBJjd" id="4hMIGYxmYhc" role="2Oq$k0">
+                  <ref role="1YBMHb" node="4hMIGYxmY7N" resolve="bc" />
+                </node>
+                <node concept="3TrEf2" id="4hMIGYxmYcP" role="2OqNvi">
+                  <ref role="3Tt5mk" to="5wll:66UaKxBOktH" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="4hMIGYxmYcQ" role="2OqNvi">
+                <ref role="3Tt5mk" to="5wll:vg5qBCbSvw" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="4hMIGYxmYcR" role="2OqNvi">
+              <node concept="chp4Y" id="4hMIGYxmYnY" role="cj9EA">
+                <ref role="cht4Q" to="5wll:vg5qBCcr5i" resolve="BlockingKind" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4hMIGYxmY7N" role="1YuTPh">
+      <property role="TrG5h" value="bc" />
+      <ref role="1YaFvo" to="5wll:4hMIGYxmX$X" resolve="BlockingConstraint" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="22QtsSp4N$V">
+    <property role="TrG5h" value="typeof_DelayStatement" />
+    <property role="3GE5qa" value="util" />
+    <node concept="3clFbS" id="22QtsSp4N$W" role="18ibNy">
+      <node concept="1ZobV4" id="22QtsSp4WkH" role="3cqZAp">
+        <node concept="mw_s8" id="22QtsSp4Wl5" role="1ZfhKB">
+          <node concept="2pJPEk" id="22QtsSp4Wl1" role="mwGJk">
+            <node concept="2pJPED" id="22QtsSp4Wlg" role="2pJPEn">
+              <ref role="2pJxaS" to="mj1l:7lNBHBNBzyo" resolve="UnsignedInt64tType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="22QtsSp4WkK" role="1ZfhK$">
+          <node concept="1Z2H0r" id="22QtsSp4SYj" role="mwGJk">
+            <node concept="2OqwBi" id="22QtsSp4UsU" role="1Z2MuG">
+              <node concept="1YBJjd" id="22QtsSp4SYJ" role="2Oq$k0">
+                <ref role="1YBMHb" node="22QtsSp4N$Y" resolve="d" />
+              </node>
+              <node concept="3TrEf2" id="22QtsSp4WhL" role="2OqNvi">
+                <ref role="3Tt5mk" to="5wll:12_KeT$2GxQ" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="22QtsSp4N$Y" role="1YuTPh">
+      <property role="TrG5h" value="d" />
+      <ref role="1YaFvo" to="5wll:12_KeT$2GxP" resolve="DelayByStatement" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="22QtsSp50UD">
+    <property role="TrG5h" value="typeof_DelayUntilStatement" />
+    <property role="3GE5qa" value="util" />
+    <node concept="3clFbS" id="22QtsSp50UE" role="18ibNy">
+      <node concept="1ZobV4" id="22QtsSp50Ve" role="3cqZAp">
+        <node concept="mw_s8" id="22QtsSp50Vf" role="1ZfhKB">
+          <node concept="2pJPEk" id="22QtsSp50Vg" role="mwGJk">
+            <node concept="2pJPED" id="22QtsSp50Vh" role="2pJPEn">
+              <ref role="2pJxaS" to="mj1l:7lNBHBNBzyo" resolve="UnsignedInt64tType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="22QtsSp50Vi" role="1ZfhK$">
+          <node concept="1Z2H0r" id="22QtsSp50Vj" role="mwGJk">
+            <node concept="2OqwBi" id="22QtsSp50Vk" role="1Z2MuG">
+              <node concept="1YBJjd" id="22QtsSp50Vl" role="2Oq$k0">
+                <ref role="1YBMHb" node="22QtsSp4N$Y" resolve="d" />
+              </node>
+              <node concept="3TrEf2" id="22QtsSp50Vm" role="2OqNvi">
+                <ref role="3Tt5mk" to="5wll:12_KeT$2GxQ" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="22QtsSp50UG" role="1YuTPh">
+      <property role="TrG5h" value="d" />
+      <ref role="1YaFvo" to="5wll:22QtsSp4Wt_" resolve="DelayUntilStatement" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="22QtsSp65bS">
+    <property role="TrG5h" value="typeof_IterationStartTimeTarget" />
+    <property role="3GE5qa" value="tasks.context" />
+    <node concept="3clFbS" id="22QtsSp65bT" role="18ibNy">
+      <node concept="1Z5TYs" id="22QtsSp65tI" role="3cqZAp">
+        <property role="3wDh2S" value="false" />
+        <node concept="mw_s8" id="22QtsSp65tL" role="1ZfhK$">
+          <node concept="1Z2H0r" id="22QtsSp65tM" role="mwGJk">
+            <node concept="1YBJjd" id="22QtsSp65tN" role="1Z2MuG">
+              <ref role="1YBMHb" node="22QtsSp65bV" resolve="istt" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="22QtsSp65uk" role="1ZfhKB">
+          <node concept="2pJPEk" id="22QtsSp65ug" role="mwGJk">
+            <node concept="2pJPED" id="22QtsSp65uv" role="2pJPEn">
+              <ref role="2pJxaS" to="mj1l:7lNBHBNBzyo" resolve="UnsignedInt64tType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="22QtsSp65bV" role="1YuTPh">
+      <property role="TrG5h" value="istt" />
+      <ref role="1YaFvo" to="5wll:22QtsSp64LA" resolve="IterationStartTimeTarget" />
     </node>
   </node>
 </model>

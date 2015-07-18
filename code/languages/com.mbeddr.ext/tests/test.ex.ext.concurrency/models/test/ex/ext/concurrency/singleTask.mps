@@ -150,7 +150,6 @@
       <concept id="562973772910260906" name="com.mbeddr.ext.concurrency.structure.FirstRunTarget" flags="ng" index="3JZms3" />
       <concept id="562973772910397379" name="com.mbeddr.ext.concurrency.structure.CyclicTaskKind" flags="ng" index="3JZT9E" />
       <concept id="1199577005874920622" name="com.mbeddr.ext.concurrency.structure.CyclicConstraint" flags="ng" index="1NgRL0">
-        <child id="4932209942840385229" name="offset" index="3$P2g2" />
         <child id="1199577005874920688" name="period" index="1NgRKu" />
       </concept>
       <concept id="1199577005875952769" name="com.mbeddr.ext.concurrency.structure.ConcurrencyConfigItem" flags="ng" index="1NkVLJ">
@@ -158,7 +157,7 @@
       </concept>
       <concept id="1199577005876317481" name="com.mbeddr.ext.concurrency.structure.TerminateStatement" flags="ng" index="1NmsR7" />
       <concept id="1199577005876533973" name="com.mbeddr.ext.concurrency.structure.IterationNoTarget" flags="ng" index="1NmDCV" />
-      <concept id="1199577005877282933" name="com.mbeddr.ext.concurrency.structure.DelayStatement" flags="ng" index="1OFKyr">
+      <concept id="1199577005877282933" name="com.mbeddr.ext.concurrency.structure.DelayByStatement" flags="ng" index="1OFKyr">
         <child id="1199577005877282934" name="value" index="1OFKyo" />
       </concept>
     </language>
@@ -338,9 +337,6 @@
         <ref role="6qQL_" node="73JrkgytXsl" resolve="measure" />
         <node concept="3TlMh9" id="12_KeTzYN2w" role="1NgRKu">
           <property role="2hmy$m" value="100" />
-        </node>
-        <node concept="3TlMh9" id="4hMIGYwG1OW" role="3$P2g2">
-          <property role="2hmy$m" value="0" />
         </node>
       </node>
     </node>

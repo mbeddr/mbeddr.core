@@ -109,7 +109,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="vg5qBCatDg">
-    <property role="3GE5qa" value="tasks" />
+    <property role="3GE5qa" value="tasks.context" />
     <ref role="1M2myG" to="5wll:vg5qBCai8u" resolve="TaskContextExpr" />
   </node>
   <node concept="1M2fIO" id="vg5qBCcrWb">
@@ -376,7 +376,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="12_KeTzZPSk">
-    <property role="3GE5qa" value="tasks" />
+    <property role="3GE5qa" value="tasks.context" />
     <ref role="1M2myG" to="5wll:12_KeTzZPRN" resolve="ITaskContextTarget" />
     <node concept="nKS2y" id="vg5qBCbnoI" role="1MLUbF">
       <node concept="3clFbS" id="vg5qBCbnoJ" role="2VODD2">
