@@ -395,6 +395,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1180457458947" name="jetbrains.mps.lang.smodel.structure.Concept_GetAllSuperConcepts" flags="nn" index="3oJPKh" />
       <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
         <child id="1146171026732" name="value" index="3t7uKA" />
@@ -19052,11 +19053,9 @@
               <node concept="37vLTw" id="7bjxLYAsgvW" role="2Oq$k0">
                 <ref role="3cqZAo" node="7bjxLYAseHX" resolve="target" />
               </node>
-              <node concept="3NT_Vc" id="7bjxLYAsgvX" role="2OqNvi" />
+              <node concept="2yIwOk" id="2hvQkqcWsU1" role="2OqNvi" />
             </node>
-            <node concept="3TrcHB" id="7bjxLYAsgvY" role="2OqNvi">
-              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-            </node>
+            <node concept="3n3YKJ" id="2hvQkqcWvbR" role="2OqNvi" />
           </node>
         </node>
       </node>
