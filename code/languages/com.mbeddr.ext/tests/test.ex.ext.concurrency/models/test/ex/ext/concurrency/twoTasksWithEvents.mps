@@ -5,16 +5,14 @@
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="aa72fbcf-7e79-465b-a4d9-4517ef4624ee(com.mbeddr.concurrency)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="3y0n" ref="r:d4d16117-20fb-4ba8-a1b2-1598e121e1d0(com.mbeddr.core.stdlib)" />
+  </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="6275792049641600983" name="com.mbeddr.core.statements.structure.IfStatement" flags="ng" index="c0U19">
         <child id="6275792049641600984" name="condition" index="c0U16" />
         <child id="6275792049641600985" name="thenPart" index="c0U17" />
-      </concept>
-      <concept id="3108382027639947181" name="com.mbeddr.core.statements.structure.ArbitraryFunctionCall" flags="ng" index="szcXh">
-        <property id="3108382027639948867" name="calledFunctionName" index="s$NqZ" />
-        <child id="3108382027639948855" name="arguments" index="s$Nrb" />
       </concept>
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
         <child id="7763322639126652758" name="baseType" index="2umbIo" />
@@ -94,6 +92,9 @@
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
+      <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
+        <reference id="747084250476878887" name="chunk" index="3GEb4d" />
+      </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="3788988821851860886" name="com.mbeddr.core.modules.structure.GlobalConstantDeclaration" flags="ng" index="4WHVk" />
@@ -111,6 +112,7 @@
       </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
+        <child id="1317894735999304826" name="imports" index="2OODSX" />
       </concept>
       <concept id="6437088627575722830" name="com.mbeddr.core.modules.structure.ImplementationModule" flags="ng" index="N3F5e" />
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
@@ -121,6 +123,10 @@
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
+      <concept id="5950410542643524492" name="com.mbeddr.core.modules.structure.FunctionCall" flags="ng" index="3O_q_g">
+        <reference id="5950410542643524493" name="function" index="3O_q_h" />
+        <child id="5950410542643524495" name="actuals" index="3O_q_j" />
+      </concept>
       <concept id="6610873504380357354" name="com.mbeddr.core.modules.structure.GlobalVarRef" flags="ng" index="1S7827">
         <reference id="6610873504380357355" name="var" index="1S7826" />
       </concept>
@@ -363,26 +369,26 @@
             </node>
           </node>
         </node>
-        <node concept="1_9egQ" id="291QIrOarKc" role="3XIRFZ">
-          <node concept="szcXh" id="291QIrOarKa" role="1_9egR">
-            <property role="s$NqZ" value="printf" />
-            <node concept="PhEJO" id="291QIrOarKT" role="s$Nrb">
+        <node concept="1_9egQ" id="6ndohCV97zA" role="3XIRFZ">
+          <node concept="3O_q_g" id="6ndohCV97z$" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
+            <node concept="PhEJO" id="291QIrOarKT" role="3O_q_j">
               <property role="PhEJT" value="meature: measuring %ld -&gt; %ld \n" />
             </node>
-            <node concept="3ZVu4v" id="6ndohCV7MVI" role="s$Nrb">
+            <node concept="3ZVu4v" id="6ndohCV7MVI" role="3O_q_j">
               <ref role="3ZVs_2" node="6ndohCV6rR1" resolve="idx" />
             </node>
-            <node concept="3ZVu4v" id="6ndohCV7MVX" role="s$Nrb">
+            <node concept="3ZVu4v" id="6ndohCV7MVX" role="3O_q_j">
               <ref role="3ZVs_2" node="4hMIGYxmNDg" resolve="val" />
             </node>
           </node>
         </node>
         <node concept="c0U19" id="4hMIGYxmUF5" role="3XIRFZ">
           <node concept="3XIRFW" id="4hMIGYxmUF6" role="c0U17">
-            <node concept="1_9egQ" id="291QIrOarLq" role="3XIRFZ">
-              <node concept="szcXh" id="291QIrOarLr" role="1_9egR">
-                <property role="s$NqZ" value="printf" />
-                <node concept="PhEJO" id="291QIrOarLs" role="s$Nrb">
+            <node concept="1_9egQ" id="6ndohCV96UZ" role="3XIRFZ">
+              <node concept="3O_q_g" id="6ndohCV96UX" role="1_9egR">
+                <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
+                <node concept="PhEJO" id="291QIrOarLs" role="3O_q_j">
                   <property role="PhEJT" value="meature: signal\n" />
                 </node>
               </node>
@@ -390,10 +396,10 @@
             <node concept="3JSMbN" id="4hMIGYxmVw1" role="3XIRFZ">
               <ref role="3JSMb3" node="4hMIGYxmWRR" resolve="doneMeasuring" />
             </node>
-            <node concept="1_9egQ" id="291QIrOarMm" role="3XIRFZ">
-              <node concept="szcXh" id="291QIrOarMn" role="1_9egR">
-                <property role="s$NqZ" value="printf" />
-                <node concept="PhEJO" id="291QIrOarMo" role="s$Nrb">
+            <node concept="1_9egQ" id="6ndohCV9rwS" role="3XIRFZ">
+              <node concept="3O_q_g" id="6ndohCV9rwQ" role="1_9egR">
+                <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
+                <node concept="PhEJO" id="291QIrOarMo" role="3O_q_j">
                   <property role="PhEJT" value="meature: wait\n" />
                 </node>
               </node>
@@ -401,10 +407,10 @@
             <node concept="3JSqjh" id="4hMIGYxmWRG" role="3XIRFZ">
               <ref role="3JSqIK" node="4hMIGYxmU4d" resolve="continueMeasuring" />
             </node>
-            <node concept="1_9egQ" id="291QIrOarNr" role="3XIRFZ">
-              <node concept="szcXh" id="291QIrOarNs" role="1_9egR">
-                <property role="s$NqZ" value="printf" />
-                <node concept="PhEJO" id="291QIrOarNt" role="s$Nrb">
+            <node concept="1_9egQ" id="6ndohCV9rzc" role="3XIRFZ">
+              <node concept="3O_q_g" id="6ndohCV9rza" role="1_9egR">
+                <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
+                <node concept="PhEJO" id="291QIrOarNt" role="3O_q_j">
                   <property role="PhEJT" value="meature: continue\n" />
                 </node>
               </node>
@@ -464,10 +470,10 @@
       <property role="TrG5h" value="summer" />
       <node concept="3JSqjV" id="4hMIGYxmTuA" role="3JZT99" />
       <node concept="3XIRFW" id="4hMIGYxmNDx" role="1iABvq">
-        <node concept="1_9egQ" id="291QIrOarOY" role="3XIRFZ">
-          <node concept="szcXh" id="291QIrOarOZ" role="1_9egR">
-            <property role="s$NqZ" value="printf" />
-            <node concept="PhEJO" id="291QIrOarP0" role="s$Nrb">
+        <node concept="1_9egQ" id="6ndohCV9rB_" role="3XIRFZ">
+          <node concept="3O_q_g" id="6ndohCV9rBz" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
+            <node concept="PhEJO" id="291QIrOarP0" role="3O_q_j">
               <property role="PhEJT" value="summer: wait\n" />
             </node>
           </node>
@@ -475,10 +481,10 @@
         <node concept="3JSqjh" id="4hMIGYxmVVK" role="3XIRFZ">
           <ref role="3JSqIK" node="4hMIGYxmWRR" resolve="doneMeasuring" />
         </node>
-        <node concept="1_9egQ" id="291QIrOarRy" role="3XIRFZ">
-          <node concept="szcXh" id="291QIrOarRz" role="1_9egR">
-            <property role="s$NqZ" value="printf" />
-            <node concept="PhEJO" id="291QIrOarR$" role="s$Nrb">
+        <node concept="1_9egQ" id="6ndohCV9rED" role="3XIRFZ">
+          <node concept="3O_q_g" id="6ndohCV9rEB" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
+            <node concept="PhEJO" id="291QIrOarR$" role="3O_q_j">
               <property role="PhEJT" value="summer: work\n" />
             </node>
           </node>
@@ -538,10 +544,10 @@
             </node>
           </node>
         </node>
-        <node concept="1_9egQ" id="291QIrOdCqs" role="3XIRFZ">
-          <node concept="szcXh" id="291QIrOdCqt" role="1_9egR">
-            <property role="s$NqZ" value="printf" />
-            <node concept="PhEJO" id="291QIrOdCqu" role="s$Nrb">
+        <node concept="1_9egQ" id="6ndohCV9rIn" role="3XIRFZ">
+          <node concept="3O_q_g" id="6ndohCV9rIl" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
+            <node concept="PhEJO" id="291QIrOdCqu" role="3O_q_j">
               <property role="PhEJT" value="summer: signal\n" />
             </node>
           </node>
@@ -680,6 +686,9 @@
         </node>
       </node>
     </node>
+    <node concept="3GEVxB" id="6ndohCV96fS" role="2OODSX">
+      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
+    </node>
   </node>
   <node concept="2v9HqL" id="4hMIGYxmNEE">
     <node concept="2AWWZL" id="4hMIGYxmNEF" role="2AWWZH">
@@ -694,6 +703,12 @@
       <property role="TrG5h" value="TwoTasksWithEvents" />
       <node concept="2v9HqM" id="4hMIGYxmTuj" role="2eOfOg">
         <ref role="2v9HqP" node="4hMIGYxmNCM" resolve="TwoTasksWithEvents" />
+      </node>
+      <node concept="2v9HqM" id="6ndohCV99uk" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
+      </node>
+      <node concept="2v9HqM" id="6ndohCV99ul" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
       </node>
     </node>
     <node concept="2Q9Fgs" id="4hMIGYxmNEI" role="2Q9xDr">
