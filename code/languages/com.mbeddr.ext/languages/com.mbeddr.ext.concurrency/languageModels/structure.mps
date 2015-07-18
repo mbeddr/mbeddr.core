@@ -371,6 +371,10 @@
   <node concept="PlHQZ" id="2ajpxDX4JWB">
     <property role="3GE5qa" value="schedule" />
     <property role="TrG5h" value="IDeclaresTask" />
+    <node concept="1TJgyi" id="4hMIGYxhuKH" role="1TKVEl">
+      <property role="TrG5h" value="threadID" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
 </model>
 

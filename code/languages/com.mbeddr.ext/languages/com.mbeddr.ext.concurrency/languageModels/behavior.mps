@@ -668,6 +668,29 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="4hMIGYxhy4M" role="13h7CS">
+      <property role="TrG5h" value="taskDeclarations" />
+      <node concept="3Tm1VV" id="4hMIGYxhy4N" role="1B3o_S" />
+      <node concept="3clFbS" id="4hMIGYxhy4O" role="3clF47">
+        <node concept="3clFbF" id="4hMIGYxhy4P" role="3cqZAp">
+          <node concept="2OqwBi" id="4hMIGYxhy4S" role="3clFbG">
+            <node concept="13iPFW" id="4hMIGYxhy4T" role="2Oq$k0" />
+            <node concept="2Rf3mk" id="4hMIGYxhy4U" role="2OqNvi">
+              <node concept="1xMEDy" id="4hMIGYxhy4V" role="1xVPHs">
+                <node concept="chp4Y" id="4hMIGYxhy4W" role="ri$Ld">
+                  <ref role="cht4Q" to="5wll:2ajpxDX4JWB" resolve="IDeclaresTask" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="4hMIGYxhy57" role="3clF45">
+        <node concept="3Tqbb2" id="4hMIGYxhy58" role="A3Ik2">
+          <ref role="ehGHo" to="5wll:2ajpxDX4JWB" resolve="IDeclaresTask" />
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="6sFonkC3hVg" role="13h7CS">
       <property role="TrG5h" value="cyclicConstraints" />
       <node concept="3Tm1VV" id="6sFonkC3hVh" role="1B3o_S" />

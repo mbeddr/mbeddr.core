@@ -155,6 +155,9 @@
         <child id="8137843191085079198" name="body" index="1iABvq" />
         <child id="562973772910397408" name="kind" index="3JZT99" />
       </concept>
+      <concept id="2491447282819596071" name="com.mbeddr.ext.concurrency.structure.IDeclaresTask" flags="ng" index="1vwp$X">
+        <property id="4932209942850825261" name="threadID" index="3_dPry" />
+      </concept>
       <concept id="562973772909978142" name="com.mbeddr.ext.concurrency.structure.TaskContextExpr" flags="ng" index="3JYjuR" />
       <concept id="562973772910397379" name="com.mbeddr.ext.concurrency.structure.CyclicTaskKind" flags="ng" index="3JZT9E" />
       <concept id="1199577005874920622" name="com.mbeddr.ext.concurrency.structure.CyclicConstraint" flags="ng" index="1NgRL0">
@@ -414,12 +417,14 @@
     <node concept="6qQRg" id="3xRFG9PQKir" role="N3F5h">
       <property role="TrG5h" value="sched" />
       <node concept="1NgRL0" id="3xRFG9PQKis" role="6qQK8">
+        <property role="3_dPry" value="1" />
         <ref role="6qQL_" node="3xRFG9PQKhV" resolve="measure" />
         <node concept="3TlMh9" id="3xRFG9PQKit" role="1NgRKu">
           <property role="2hmy$m" value="100" />
         </node>
       </node>
       <node concept="1NgRL0" id="4hMIGYwMIWg" role="6qQK8">
+        <property role="3_dPry" value="2" />
         <ref role="6qQL_" node="3xRFG9PQZx6" resolve="summer" />
         <node concept="3TlMh9" id="4hMIGYwMIWC" role="1NgRKu">
           <property role="2hmy$m" value="1000" />
