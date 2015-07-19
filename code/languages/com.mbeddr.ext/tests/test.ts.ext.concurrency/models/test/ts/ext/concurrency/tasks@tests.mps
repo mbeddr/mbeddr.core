@@ -83,8 +83,13 @@
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
-      <concept id="5024012801619240738" name="com.mbeddr.core.util.structure.QueueType" flags="ng" index="mfOo$" />
-      <concept id="5024012801619205286" name="com.mbeddr.core.util.structure.QueueDeclaration" flags="ng" index="mfZQw" />
+      <concept id="5024012801619240738" name="com.mbeddr.core.util.structure.QueueType" flags="ng" index="mfOo$">
+        <reference id="5024012801619240739" name="queue" index="mfOo_" />
+      </concept>
+      <concept id="5024012801619205286" name="com.mbeddr.core.util.structure.QueueDeclaration" flags="ng" index="mfZQw">
+        <child id="5024012801619205287" name="size" index="mfZQx" />
+        <child id="5024012801619205288" name="elementType" index="mfZQI" />
+      </concept>
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
       </concept>
@@ -167,13 +172,6 @@
       <concept id="3347859831413609144" name="com.mbeddr.ext.concurrency.structure.EnqueueStatement" flags="ng" index="17geTZ">
         <child id="3347859831413609222" name="value" index="17geZ1" />
         <child id="3347859831413609220" name="queue" index="17geZ3" />
-      </concept>
-      <concept id="3347859831411434759" name="com.mbeddr.ext.concurrency.structure.QueueType" flags="ng" index="17pxB0">
-        <reference id="3347859831411434760" name="queue" index="17pxBf" />
-      </concept>
-      <concept id="3347859831411401935" name="com.mbeddr.ext.concurrency.structure.QueueDeclaration" flags="ng" index="17pDw8">
-        <child id="3347859831411402006" name="elementType" index="17pDBh" />
-        <child id="3347859831411402009" name="size" index="17pDBu" />
       </concept>
       <concept id="8137843191085062424" name="com.mbeddr.ext.concurrency.structure.Task" flags="ng" index="1iAVhs">
         <child id="8137843191085079198" name="body" index="1iABvq" />
@@ -884,26 +882,29 @@
         <node concept="2NXPZ9" id="2TPZctD8HG4" role="N3F5h">
           <property role="TrG5h" value="empty_1437238539461_4" />
         </node>
-        <node concept="mfZQw" id="2TPZctD856D" role="N3F5h">
+        <node concept="mfZQw" id="3krho7oD9VT" role="N3F5h">
           <property role="TrG5h" value="pointqueue" />
-          <node concept="1sgJKr" id="2TPZctD8HGS" role="17pDBh">
+          <node concept="3TlMh9" id="3krho7oDaZe" role="mfZQx">
+            <property role="2hmy$m" value="20" />
+          </node>
+          <node concept="1sgJKr" id="3krho7oD9XT" role="mfZQI">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
             <ref role="1sgJKq" node="2TPZctD8HGb" resolve="point" />
           </node>
-          <node concept="3TlMh9" id="2TPZctD8HHo" role="17pDBu">
-            <property role="2hmy$m" value="20" />
-          </node>
+        </node>
+        <node concept="2NXPZ9" id="3krho7oD9IX" role="N3F5h">
+          <property role="TrG5h" value="empty_1437292618128_2" />
         </node>
         <node concept="2NXPZ9" id="4mSSgpjmJvy" role="N3F5h">
           <property role="TrG5h" value="empty_1437241480642_5" />
         </node>
         <node concept="1S7NMz" id="2TPZctD9UBg" role="N3F5h">
           <property role="TrG5h" value="q" />
-          <node concept="mfOo$" id="2TPZctD9UBe" role="2C2TGm">
+          <node concept="mfOo$" id="3krho7oD9iw" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="17pxBf" node="2TPZctD856D" resolve="pointqueue" />
+            <ref role="mfOo_" node="3krho7oD9VT" resolve="pointqueue" />
           </node>
           <node concept="6bTlU" id="4mSSgpjbndI" role="lGtFl" />
         </node>
@@ -912,10 +913,10 @@
         </node>
         <node concept="1S7NMz" id="4mSSgpjqgxj" role="N3F5h">
           <property role="TrG5h" value="unsharedQ" />
-          <node concept="mfOo$" id="4mSSgpjqgxh" role="2C2TGm">
+          <node concept="mfOo$" id="3krho7oDctI" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="17pxBf" node="2TPZctD856D" resolve="pointqueue" />
+            <ref role="mfOo_" node="3krho7oD9VT" resolve="pointqueue" />
           </node>
         </node>
         <node concept="2NXPZ9" id="4mSSgpjqgI$" role="N3F5h">
