@@ -597,7 +597,7 @@
                   <node concept="3clFbS" id="66UaKxBzBFV" role="3clFbx">
                     <node concept="2MkqsV" id="66UaKxBzBFW" role="3cqZAp">
                       <node concept="Xl_RD" id="66UaKxBzBFX" role="2MkJ7o">
-                        <property role="Xl_RC" value="global variables can only be read frin if they are declared 'read' in the atomic" />
+                        <property role="Xl_RC" value="global variables can only be read from if they are declared 'read' in the atomic" />
                       </node>
                       <node concept="1YBJjd" id="66UaKxBzBFY" role="2OEOjV">
                         <ref role="1YBMHb" node="66UaKxBz3dc" resolve="gvr" />
@@ -969,17 +969,17 @@
                   <node concept="2OqwBi" id="2TPZctDeueZ" role="mwGJk">
                     <node concept="2OqwBi" id="2TPZctDetEt" role="2Oq$k0">
                       <node concept="1PxgMI" id="2TPZctDetBj" role="2Oq$k0">
-                        <ref role="1PxNhF" to="k146:4mSSgpjxUsy" resolve="QueueType" />
+                        <ref role="1PxNhF" to="5wll:1UML6duC7CN" resolve="ConcurrentQueueType" />
                         <node concept="2X3wrD" id="2TPZctDetvz" role="1PxMeX">
                           <ref role="2X3Bk0" node="2TPZctDerVr" resolve="queueType" />
                         </node>
                       </node>
-                      <node concept="3TrEf2" id="2TPZctDetUE" role="2OqNvi">
-                        <ref role="3Tt5mk" to="k146:4mSSgpjxUsz" />
+                      <node concept="3TrEf2" id="1UML6duEbwG" role="2OqNvi">
+                        <ref role="3Tt5mk" to="5wll:1UML6duC7CO" />
                       </node>
                     </node>
-                    <node concept="3TrEf2" id="2TPZctDeuDv" role="2OqNvi">
-                      <ref role="3Tt5mk" to="k146:4mSSgpjxLMC" />
+                    <node concept="3TrEf2" id="1UML6duEbUn" role="2OqNvi">
+                      <ref role="3Tt5mk" to="5wll:1zeZsIbBad_" />
                     </node>
                   </node>
                 </node>
@@ -1002,8 +1002,8 @@
                 <ref role="2X3Bk0" node="2TPZctDerVr" resolve="queueType" />
               </node>
               <node concept="1mIQ4w" id="2TPZctDesEl" role="2OqNvi">
-                <node concept="chp4Y" id="2TPZctDesEQ" role="cj9EA">
-                  <ref role="cht4Q" to="k146:4mSSgpjxUsy" resolve="QueueType" />
+                <node concept="chp4Y" id="1UML6duE9pc" role="cj9EA">
+                  <ref role="cht4Q" to="5wll:1UML6duC7CN" resolve="ConcurrentQueueType" />
                 </node>
               </node>
             </node>
@@ -1064,7 +1064,7 @@
                     <node concept="2Xjw5R" id="4mSSgpjhY92" role="2OqNvi">
                       <node concept="1xMEDy" id="4mSSgpjhY94" role="1xVPHs">
                         <node concept="chp4Y" id="4mSSgpjhY9S" role="ri$Ld">
-                          <ref role="cht4Q" to="5wll:4mSSgpjhPYy" resolve="IQueueContext" />
+                          <ref role="cht4Q" to="5wll:4mSSgpjhPYy" resolve="IConcurrentQueueContext" />
                         </node>
                       </node>
                     </node>
@@ -1073,12 +1073,12 @@
                     <ref role="37wK5l" to="qozy:4mSSgpjhSql" resolve="queueType" />
                   </node>
                 </node>
-                <node concept="3TrEf2" id="4mSSgpjlmvT" role="2OqNvi">
-                  <ref role="3Tt5mk" to="k146:4mSSgpjxUsz" />
+                <node concept="3TrEf2" id="1UML6duIhfE" role="2OqNvi">
+                  <ref role="3Tt5mk" to="5wll:1UML6duC7CO" />
                 </node>
               </node>
-              <node concept="3TrEf2" id="4mSSgpjlnf9" role="2OqNvi">
-                <ref role="3Tt5mk" to="k146:4mSSgpjxLMC" />
+              <node concept="3TrEf2" id="1UML6duIgBn" role="2OqNvi">
+                <ref role="3Tt5mk" to="5wll:1zeZsIbBad_" />
               </node>
             </node>
           </node>
@@ -1094,7 +1094,7 @@
     </node>
     <node concept="1YaCAy" id="4mSSgpjhXWg" role="1YuTPh">
       <property role="TrG5h" value="val" />
-      <ref role="1YaFvo" to="5wll:4mSSgpjhPZ8" resolve="QueueValExpr" />
+      <ref role="1YaFvo" to="5wll:4mSSgpjhPZ8" resolve="ConcurrentQueueValExpr" />
     </node>
   </node>
   <node concept="18kY7G" id="4mSSgpjqVaV">
@@ -1134,7 +1134,7 @@
     </node>
     <node concept="1YaCAy" id="4mSSgpjqVaY" role="1YuTPh">
       <property role="TrG5h" value="qu" />
-      <ref role="1YaFvo" to="5wll:4mSSgpjqg3b" resolve="IQueueUser" />
+      <ref role="1YaFvo" to="5wll:4mSSgpjqg3b" resolve="IConcurrentQueueUser" />
     </node>
   </node>
   <node concept="18kY7G" id="1zeZsIbdafX">
@@ -1245,6 +1245,38 @@
     <node concept="1YaCAy" id="1zeZsIbdag0" role="1YuTPh">
       <property role="TrG5h" value="ts" />
       <ref role="1YaFvo" to="5wll:4mSSgpjgrEk" resolve="TakeStatement" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="1zeZsIbBaop">
+    <property role="TrG5h" value="typeof_ConcurrentQueue" />
+    <property role="3GE5qa" value="queue" />
+    <node concept="3clFbS" id="1zeZsIbBaoq" role="18ibNy">
+      <node concept="1ZobV4" id="1UML6du$gMp" role="3cqZAp">
+        <property role="3wDh2S" value="false" />
+        <node concept="mw_s8" id="1UML6du$gMu" role="1ZfhK$">
+          <node concept="1Z2H0r" id="1UML6du$gMv" role="mwGJk">
+            <node concept="2OqwBi" id="1UML6du$gMw" role="1Z2MuG">
+              <node concept="1YBJjd" id="1UML6du$gMx" role="2Oq$k0">
+                <ref role="1YBMHb" node="1zeZsIbBaos" resolve="cq" />
+              </node>
+              <node concept="3TrEf2" id="1UML6du$gMy" role="2OqNvi">
+                <ref role="3Tt5mk" to="5wll:1zeZsIbBadD" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="1UML6du$gMr" role="1ZfhKB">
+          <node concept="2pJPEk" id="1UML6du$gMs" role="mwGJk">
+            <node concept="2pJPED" id="1UML6du$gMt" role="2pJPEn">
+              <ref role="2pJxaS" to="mj1l:7lNBHBNBzyo" resolve="UnsignedInt64tType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1zeZsIbBaos" role="1YuTPh">
+      <property role="TrG5h" value="cq" />
+      <ref role="1YaFvo" to="5wll:1zeZsIbB9X5" resolve="ConcurrentQueue" />
     </node>
   </node>
 </model>

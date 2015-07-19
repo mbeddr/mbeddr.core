@@ -1181,8 +1181,8 @@
                 </node>
               </node>
               <node concept="1mIQ4w" id="4mSSgpjfBqq" role="2OqNvi">
-                <node concept="chp4Y" id="4mSSgpjfBsU" role="cj9EA">
-                  <ref role="cht4Q" to="k146:4mSSgpjxUsy" resolve="QueueType" />
+                <node concept="chp4Y" id="1UML6duFWqW" role="cj9EA">
+                  <ref role="cht4Q" to="5wll:1UML6duC7CN" resolve="ConcurrentQueueType" />
                 </node>
               </node>
             </node>
@@ -1285,8 +1285,8 @@
                 </node>
               </node>
               <node concept="1mIQ4w" id="4mSSgpjgw8Z" role="2OqNvi">
-                <node concept="chp4Y" id="4mSSgpjgw90" role="cj9EA">
-                  <ref role="cht4Q" to="k146:4mSSgpjxUsy" resolve="QueueType" />
+                <node concept="chp4Y" id="1UML6duGmsf" role="cj9EA">
+                  <ref role="cht4Q" to="5wll:1UML6duC7CN" resolve="ConcurrentQueueType" />
                 </node>
               </node>
             </node>
@@ -1341,7 +1341,7 @@
           <node concept="3clFbS" id="4mSSgpjhTdp" role="3clFbx">
             <node concept="3cpWs6" id="4mSSgpjhW4N" role="3cqZAp">
               <node concept="1PxgMI" id="4mSSgpjhXDw" role="3cqZAk">
-                <ref role="1PxNhF" to="k146:4mSSgpjxUsy" resolve="QueueType" />
+                <ref role="1PxNhF" to="5wll:1UML6duC7CN" resolve="ConcurrentQueueType" />
                 <node concept="2OqwBi" id="4mSSgpjhX8Q" role="1PxMeX">
                   <node concept="2OqwBi" id="4mSSgpjhWga" role="2Oq$k0">
                     <node concept="13iPFW" id="4mSSgpjhW8N" role="2Oq$k0" />
@@ -1365,8 +1365,8 @@
               <node concept="3JvlWi" id="4mSSgpjhVBA" role="2OqNvi" />
             </node>
             <node concept="1mIQ4w" id="4mSSgpjhVZo" role="2OqNvi">
-              <node concept="chp4Y" id="4mSSgpjhW1R" role="cj9EA">
-                <ref role="cht4Q" to="k146:4mSSgpjxUsy" resolve="QueueType" />
+              <node concept="chp4Y" id="1UML6duGJao" role="cj9EA">
+                <ref role="cht4Q" to="5wll:1UML6duC7CN" resolve="ConcurrentQueueType" />
               </node>
             </node>
           </node>
@@ -1376,7 +1376,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="4mSSgpjhSyv" role="3clF45">
-        <ref role="ehGHo" to="k146:4mSSgpjxUsy" resolve="QueueType" />
+        <ref role="ehGHo" to="5wll:1UML6duC7CN" resolve="ConcurrentQueueType" />
       </node>
     </node>
     <node concept="13i0hz" id="4mSSgpjsUCt" role="13h7CS">
@@ -1437,7 +1437,7 @@
   </node>
   <node concept="13h7C7" id="4mSSgpjhSqf">
     <property role="3GE5qa" value="queue" />
-    <ref role="13h7C2" to="5wll:4mSSgpjhPYy" resolve="IQueueContext" />
+    <ref role="13h7C2" to="5wll:4mSSgpjhPYy" resolve="IConcurrentQueueContext" />
     <node concept="13i0hz" id="4mSSgpjhSql" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
@@ -1445,7 +1445,7 @@
       <node concept="3Tm1VV" id="4mSSgpjhSqm" role="1B3o_S" />
       <node concept="3clFbS" id="4mSSgpjhSqn" role="3clF47" />
       <node concept="3Tqbb2" id="4mSSgpjhSqt" role="3clF45">
-        <ref role="ehGHo" to="k146:4mSSgpjxUsy" resolve="QueueType" />
+        <ref role="ehGHo" to="5wll:1UML6duC7CN" resolve="ConcurrentQueueType" />
       </node>
     </node>
     <node concept="13hLZK" id="4mSSgpjhSqg" role="13h7CW">

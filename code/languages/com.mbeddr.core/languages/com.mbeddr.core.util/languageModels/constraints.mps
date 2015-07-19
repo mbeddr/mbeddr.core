@@ -1626,5 +1626,43 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="1UML6duKtTO">
+    <property role="3GE5qa" value="queue" />
+    <ref role="1M2myG" to="k146:4mSSgpjxUsy" resolve="QueueType" />
+    <node concept="1N5Pfh" id="1UML6duKuqA" role="1Mr941">
+      <ref role="1N5Vy1" to="k146:4mSSgpjxUsz" />
+      <node concept="1MUpDS" id="1UML6duKuqC" role="1N6uqs">
+        <node concept="3clFbS" id="1UML6duKuqD" role="2VODD2">
+          <node concept="3clFbF" id="1UML6duKwAm" role="3cqZAp">
+            <node concept="2OqwBi" id="1UML6duKxPO" role="3clFbG">
+              <node concept="2OqwBi" id="1UML6duKxkI" role="2Oq$k0">
+                <node concept="2OqwBi" id="1UML6duKwD_" role="2Oq$k0">
+                  <node concept="21POm0" id="1UML6duKwAl" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="1UML6duKxcT" role="2OqNvi">
+                    <node concept="1xMEDy" id="1UML6duKxcV" role="1xVPHs">
+                      <node concept="chp4Y" id="1UML6duKxe0" role="ri$Ld">
+                        <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="1UML6duKx$_" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
+                  <node concept="3TUQnm" id="1UML6duKxBQ" role="37wK5m">
+                    <ref role="3TV0OU" to="k146:4mSSgpjxLMA" resolve="QueueDeclaration" />
+                  </node>
+                </node>
+              </node>
+              <node concept="v3k3i" id="1UML6duKyy5" role="2OqNvi">
+                <node concept="chp4Y" id="1UML6duKy$J" role="v3oSu">
+                  <ref role="cht4Q" to="k146:4mSSgpjxLMA" resolve="QueueDeclaration" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -433,7 +433,7 @@
       <ref role="PrY4T" node="4mSSgpjcAY7" resolve="IActsAsAtomic" />
     </node>
     <node concept="PrWs8" id="4mSSgpjsW9s" role="PzmwI">
-      <ref role="PrY4T" node="4mSSgpjqg3b" resolve="IQueueUser" />
+      <ref role="PrY4T" node="4mSSgpjqg3b" resolve="IConcurrentQueueUser" />
     </node>
   </node>
   <node concept="PlHQZ" id="4mSSgpjcAY7">
@@ -464,25 +464,25 @@
       <ref role="PrY4T" node="4mSSgpjcAY7" resolve="IActsAsAtomic" />
     </node>
     <node concept="PrWs8" id="4mSSgpjhPYA" role="PzmwI">
-      <ref role="PrY4T" node="4mSSgpjhPYy" resolve="IQueueContext" />
+      <ref role="PrY4T" node="4mSSgpjhPYy" resolve="IConcurrentQueueContext" />
     </node>
     <node concept="PrWs8" id="4mSSgpjsUtT" role="PzmwI">
-      <ref role="PrY4T" node="4mSSgpjqg3b" resolve="IQueueUser" />
+      <ref role="PrY4T" node="4mSSgpjqg3b" resolve="IConcurrentQueueUser" />
     </node>
   </node>
   <node concept="PlHQZ" id="4mSSgpjhPYy">
     <property role="3GE5qa" value="queue" />
-    <property role="TrG5h" value="IQueueContext" />
+    <property role="TrG5h" value="IConcurrentQueueContext" />
   </node>
   <node concept="1TIwiD" id="4mSSgpjhPZ8">
     <property role="3GE5qa" value="queue" />
-    <property role="TrG5h" value="QueueValExpr" />
+    <property role="TrG5h" value="ConcurrentQueueValExpr" />
     <property role="34LRSv" value="val" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
   </node>
   <node concept="PlHQZ" id="4mSSgpjqg3b">
     <property role="3GE5qa" value="queue" />
-    <property role="TrG5h" value="IQueueUser" />
+    <property role="TrG5h" value="IConcurrentQueueUser" />
   </node>
   <node concept="1TIwiD" id="1zeZsIba833">
     <property role="3GE5qa" value="queue" />
@@ -493,6 +493,42 @@
       <node concept="trNpa" id="1zeZsIba870" role="EQaZv">
         <ref role="trN6q" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1zeZsIbB9X5">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="ConcurrentQueueDeclaration" />
+    <property role="34LRSv" value="concurrent queue" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1zeZsIbB9Yv" role="1TKVEl">
+      <property role="TrG5h" value="blockable" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="1zeZsIbB9Yt" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="1TJgyj" id="1zeZsIbBad_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elementType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="1zeZsIbBadD" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="size" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1UML6duC7CN">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="ConcurrentQueueType" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+    <node concept="1TJgyj" id="1UML6duC7CO" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="queue" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1zeZsIbB9X5" resolve="ConcurrentQueueDeclaration" />
     </node>
   </node>
 </model>

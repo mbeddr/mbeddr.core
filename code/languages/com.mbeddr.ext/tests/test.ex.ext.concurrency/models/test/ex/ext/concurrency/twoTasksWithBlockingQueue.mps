@@ -74,20 +74,10 @@
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
-      <concept id="5024012801619240738" name="com.mbeddr.core.util.structure.QueueType" flags="ng" index="mfOo$">
-        <reference id="5024012801619240739" name="queue" index="mfOo_" />
-      </concept>
-      <concept id="5024012801619205286" name="com.mbeddr.core.util.structure.QueueDeclaration" flags="ng" index="mfZQw">
-        <child id="5024012801619205287" name="size" index="mfZQx" />
-        <child id="5024012801619205288" name="elementType" index="mfZQI" />
-      </concept>
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
       </concept>
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
-      <concept id="3826728732360501495" name="com.mbeddr.core.util.structure.EmptyQueueExpression" flags="ng" index="3HeUPQ">
-        <reference id="3826728732365255740" name="queue" index="3Hsz6X" />
-      </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
@@ -166,13 +156,21 @@
       <concept id="7041988282448692952" name="com.mbeddr.ext.concurrency.structure.ScheduleSpecification" flags="ng" index="6qQRg">
         <child id="7041988282448692992" name="constraints" index="6qQK8" />
       </concept>
+      <concept id="1787645152775151429" name="com.mbeddr.ext.concurrency.structure.ConcurrentQueue" flags="ng" index="2jkAae">
+        <property id="1787645152775151519" name="blockable" index="2jkA9k" />
+        <child id="1787645152775152489" name="size" index="2jk_Uy" />
+        <child id="1787645152775152485" name="elementType" index="2jk_UI" />
+      </concept>
       <concept id="1787645152767541443" name="com.mbeddr.ext.concurrency.structure.BlockingAnnotation" flags="ng" index="2jTBO8" />
       <concept id="5024012801614658196" name="com.mbeddr.ext.concurrency.structure.TakeStatement" flags="ng" index="mYlIi">
         <property id="1787645152768305416" name="blockOnTake" index="2jYHj3" />
         <child id="5024012801614671424" name="body" index="mYgX6" />
         <child id="5024012801614658197" name="queue" index="mYlIj" />
       </concept>
-      <concept id="5024012801615028168" name="com.mbeddr.ext.concurrency.structure.QueueValExpr" flags="ng" index="mZVVe" />
+      <concept id="5024012801615028168" name="com.mbeddr.ext.concurrency.structure.ConcurrentQueueValExpr" flags="ng" index="mZVVe" />
+      <concept id="2212046298060716595" name="com.mbeddr.ext.concurrency.structure.ConcurrentQueueType" flags="ng" index="104FTg">
+        <reference id="2212046298060716596" name="queue" index="104FTn" />
+      </concept>
       <concept id="3347859831413609144" name="com.mbeddr.ext.concurrency.structure.EnqueueStatement" flags="ng" index="17geTZ">
         <child id="3347859831413609222" name="value" index="17geZ1" />
         <child id="3347859831413609220" name="queue" index="17geZ3" />
@@ -182,7 +180,7 @@
         <child id="562973772910397408" name="kind" index="3JZT99" />
       </concept>
       <concept id="2491447282819596071" name="com.mbeddr.ext.concurrency.structure.IDeclaresTask" flags="ng" index="1vwp$X">
-        <property id="4932209942850825261" name="threadID" index="3_dPry" />
+        <property id="4932209942850825261" name="taskID" index="3_dPry" />
       </concept>
       <concept id="4932209942852262205" name="com.mbeddr.ext.concurrency.structure.BlockingConstraint" flags="ng" index="3_amfM" />
       <concept id="562973772910539090" name="com.mbeddr.ext.concurrency.structure.BlockingKind" flags="ng" index="3JSqjV" />
@@ -248,12 +246,13 @@
     <node concept="2NXPZ9" id="1zeZsIba3wU" role="N3F5h">
       <property role="TrG5h" value="empty_1437242011829_8" />
     </node>
-    <node concept="mfZQw" id="1zeZsIba3wV" role="N3F5h">
+    <node concept="2jkAae" id="1UML6duJN9C" role="N3F5h">
       <property role="TrG5h" value="int64queue" />
-      <node concept="3TlMh9" id="1zeZsIba3wW" role="mfZQx">
+      <property role="2jkA9k" value="true" />
+      <node concept="3TlMh9" id="1UML6duJNuI" role="2jk_Uy">
         <property role="2hmy$m" value="100" />
       </node>
-      <node concept="26Vqp1" id="1zeZsIba3wX" role="mfZQI">
+      <node concept="26Vqp1" id="1UML6duJNuy" role="2jk_UI">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
@@ -263,16 +262,13 @@
     </node>
     <node concept="1S7NMz" id="1zeZsIba3wZ" role="N3F5h">
       <property role="TrG5h" value="data" />
-      <node concept="mfOo$" id="1zeZsIba3x0" role="2C2TGm">
+      <node concept="104FTg" id="1UML6duJOrt" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="mfOo_" node="1zeZsIba3wV" resolve="int64queue" />
+        <ref role="104FTn" node="1UML6duJN9C" resolve="int64queue" />
       </node>
       <node concept="6bTlU" id="1zeZsIba3x1" role="lGtFl" />
       <node concept="2jTBO8" id="1zeZsIbbzum" role="lGtFl" />
-      <node concept="3HeUPQ" id="1zeZsIbrTen" role="1cecVj">
-        <ref role="3Hsz6X" node="1zeZsIba3wV" resolve="int64queue" />
-      </node>
     </node>
     <node concept="2NXPZ9" id="1zeZsIba3x2" role="N3F5h">
       <property role="TrG5h" value="empty_1437242000795_6" />

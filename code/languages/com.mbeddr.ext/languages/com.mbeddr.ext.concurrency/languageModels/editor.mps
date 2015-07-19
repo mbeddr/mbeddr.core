@@ -418,7 +418,7 @@
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="3F0A7n" id="4hMIGYxhuPf" role="3EZMnx">
-        <ref role="1NtTu8" to="5wll:4hMIGYxhuKH" resolve="threadID" />
+        <ref role="1NtTu8" to="5wll:4hMIGYxhuKH" resolve="taskID" />
       </node>
       <node concept="3F0ifn" id="12_KeTzTFPI" role="3EZMnx">
         <property role="3F0ifm" value="period" />
@@ -575,7 +575,7 @@
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="3F0A7n" id="4hMIGYxmXF$" role="3EZMnx">
-        <ref role="1NtTu8" to="5wll:4hMIGYxhuKH" resolve="threadID" />
+        <ref role="1NtTu8" to="5wll:4hMIGYxhuKH" resolve="taskID" />
       </node>
     </node>
   </node>
@@ -683,6 +683,79 @@
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="2SsqMj" id="1zeZsIba87F" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1zeZsIbBae3">
+    <property role="3GE5qa" value="queue" />
+    <ref role="1XX52x" to="5wll:1zeZsIbB9X5" resolve="ConcurrentQueue" />
+    <node concept="3EZMnI" id="1zeZsIbBahF" role="2wV5jI">
+      <node concept="l2Vlx" id="1zeZsIbBahG" role="2iSdaV" />
+      <node concept="3F0ifn" id="1zeZsIbBahC" role="3EZMnx">
+        <property role="3F0ifm" value="concurrent" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="2aMyGU" id="1zeZsIbBake" role="3EZMnx">
+        <property role="2aYyza" value="blockable" />
+        <property role="2aYyvO" value="non-blockable" />
+        <ref role="1NtTu8" to="5wll:1zeZsIbB9Yv" resolve="blockable" />
+        <node concept="Vb9p2" id="1zeZsIbBal8" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1zeZsIbBalx" role="3EZMnx">
+        <property role="3F0ifm" value="queue" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="3F0ifn" id="1zeZsIbCIKO" role="3EZMnx">
+        <property role="3F0ifm" value="type" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="3F0ifn" id="1zeZsIbBam1" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+        <node concept="11LMrY" id="1zeZsIbCILP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1zeZsIbBamz" role="3EZMnx">
+        <ref role="1NtTu8" to="5wll:1zeZsIbBad_" />
+      </node>
+      <node concept="3F0ifn" id="1zeZsIbBan7" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+        <node concept="11L4FC" id="1zeZsIbCIMF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1zeZsIbBanH" role="3EZMnx">
+        <ref role="1NtTu8" to="5wll:1zeZsIbBadD" />
+      </node>
+      <node concept="3F0ifn" id="1zeZsIbCIKc" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="11L4FC" id="1zeZsIbCINx" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="1zeZsIbCIO3" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="1zeZsIbBaiG" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dhkRt" resolve="Semi" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1UML6duC7DR">
+    <property role="3GE5qa" value="queue" />
+    <ref role="1XX52x" to="5wll:1UML6duC7CN" resolve="ConcurrentQueueType" />
+    <node concept="1iCGBv" id="1UML6duC9Xk" role="2wV5jI">
+      <ref role="1NtTu8" to="5wll:1UML6duC7CO" />
+      <node concept="1sVBvm" id="1UML6duC9Xm" role="1sWHZn">
+        <node concept="3F0A7n" id="1UML6duC9XX" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

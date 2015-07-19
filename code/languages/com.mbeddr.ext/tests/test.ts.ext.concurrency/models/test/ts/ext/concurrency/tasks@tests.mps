@@ -83,13 +83,6 @@
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
-      <concept id="5024012801619240738" name="com.mbeddr.core.util.structure.QueueType" flags="ng" index="mfOo$">
-        <reference id="5024012801619240739" name="queue" index="mfOo_" />
-      </concept>
-      <concept id="5024012801619205286" name="com.mbeddr.core.util.structure.QueueDeclaration" flags="ng" index="mfZQw">
-        <child id="5024012801619205287" name="size" index="mfZQx" />
-        <child id="5024012801619205288" name="elementType" index="mfZQI" />
-      </concept>
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
       </concept>
@@ -164,6 +157,11 @@
       <concept id="7041988282448692952" name="com.mbeddr.ext.concurrency.structure.ScheduleSpecification" flags="ng" index="6qQRg">
         <child id="7041988282448692992" name="constraints" index="6qQK8" />
       </concept>
+      <concept id="1787645152775151429" name="com.mbeddr.ext.concurrency.structure.ConcurrentQueue" flags="ng" index="2jkAae">
+        <property id="1787645152775151519" name="blockable" index="2jkA9k" />
+        <child id="1787645152775152489" name="size" index="2jk_Uy" />
+        <child id="1787645152775152485" name="elementType" index="2jk_UI" />
+      </concept>
       <concept id="1787645152767541443" name="com.mbeddr.ext.concurrency.structure.BlockingAnnotation" flags="ng" index="2jTBO8" />
       <concept id="5024012801614658196" name="com.mbeddr.ext.concurrency.structure.TakeStatement" flags="ng" index="mYlIi">
         <property id="1787645152768305416" name="blockOnTake" index="2jYHj3" />
@@ -171,6 +169,9 @@
         <child id="5024012801614658197" name="queue" index="mYlIj" />
       </concept>
       <concept id="5024012801615028168" name="com.mbeddr.ext.concurrency.structure.QueueValExpr" flags="ng" index="mZVVe" />
+      <concept id="2212046298060716595" name="com.mbeddr.ext.concurrency.structure.ConcurrentQueueType" flags="ng" index="104FTg">
+        <reference id="2212046298060716596" name="queue" index="104FTn" />
+      </concept>
       <concept id="3347859831413609144" name="com.mbeddr.ext.concurrency.structure.EnqueueStatement" flags="ng" index="17geTZ">
         <child id="3347859831413609222" name="value" index="17geZ1" />
         <child id="3347859831413609220" name="queue" index="17geZ3" />
@@ -884,16 +885,31 @@
         <node concept="2NXPZ9" id="2TPZctD8HG4" role="N3F5h">
           <property role="TrG5h" value="empty_1437238539461_4" />
         </node>
-        <node concept="mfZQw" id="3krho7oD9VT" role="N3F5h">
-          <property role="TrG5h" value="pointqueue" />
-          <node concept="3TlMh9" id="3krho7oDaZe" role="mfZQx">
+        <node concept="2jkAae" id="1UML6duzKZG" role="N3F5h">
+          <property role="TrG5h" value="nonBlockingQueue" />
+          <node concept="3TlMh9" id="1UML6duzMp4" role="2jk_Uy">
             <property role="2hmy$m" value="20" />
           </node>
-          <node concept="1sgJKr" id="3krho7oD9XT" role="mfZQI">
+          <node concept="1sgJKr" id="1UML6duzLdW" role="2jk_UI">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
             <ref role="1sgJKq" node="2TPZctD8HGb" resolve="point" />
           </node>
+        </node>
+        <node concept="2jkAae" id="1UML6duDvC8" role="N3F5h">
+          <property role="TrG5h" value="blockingQueue" />
+          <property role="2jkA9k" value="true" />
+          <node concept="3TlMh9" id="1UML6duDvC9" role="2jk_Uy">
+            <property role="2hmy$m" value="20" />
+          </node>
+          <node concept="1sgJKr" id="1UML6duDvCa" role="2jk_UI">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="1sgJKq" node="2TPZctD8HGb" resolve="point" />
+          </node>
+        </node>
+        <node concept="2NXPZ9" id="1zeZsIbERyu" role="N3F5h">
+          <property role="TrG5h" value="empty_1437327734828_23" />
         </node>
         <node concept="2NXPZ9" id="3krho7oD9IX" role="N3F5h">
           <property role="TrG5h" value="empty_1437292618128_2" />
@@ -903,10 +919,10 @@
         </node>
         <node concept="1S7NMz" id="2TPZctD9UBg" role="N3F5h">
           <property role="TrG5h" value="q" />
-          <node concept="mfOo$" id="3krho7oD9iw" role="2C2TGm">
+          <node concept="104FTg" id="1UML6duDu4O" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="mfOo_" node="3krho7oD9VT" resolve="pointqueue" />
+            <ref role="104FTn" node="1UML6duzKZG" resolve="nonBlockingQueue" />
           </node>
           <node concept="6bTlU" id="4mSSgpjbndI" role="lGtFl" />
         </node>
@@ -915,10 +931,10 @@
         </node>
         <node concept="1S7NMz" id="4mSSgpjqgxj" role="N3F5h">
           <property role="TrG5h" value="unsharedQ" />
-          <node concept="mfOo$" id="3krho7oDctI" role="2C2TGm">
+          <node concept="104FTg" id="1UML6duDu9_" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="mfOo_" node="3krho7oD9VT" resolve="pointqueue" />
+            <ref role="104FTn" node="1UML6duzKZG" resolve="nonBlockingQueue" />
           </node>
         </node>
         <node concept="2NXPZ9" id="4mSSgpjqgI$" role="N3F5h">
@@ -1079,10 +1095,10 @@
         </node>
         <node concept="1S7NMz" id="1zeZsIbeyrU" role="N3F5h">
           <property role="TrG5h" value="aNomnBlockingQueue" />
-          <node concept="mfOo$" id="1zeZsIbeyrS" role="2C2TGm">
+          <node concept="104FTg" id="1UML6duDu$7" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="mfOo_" node="3krho7oD9VT" resolve="pointqueue" />
+            <ref role="104FTn" node="1UML6duzKZG" resolve="nonBlockingQueue" />
           </node>
           <node concept="6bTlU" id="1zeZsIbeyYu" role="lGtFl" />
         </node>
@@ -1091,10 +1107,10 @@
         </node>
         <node concept="1S7NMz" id="1zeZsIbez7K" role="N3F5h">
           <property role="TrG5h" value="aBlockingQueue" />
-          <node concept="mfOo$" id="1zeZsIbez7L" role="2C2TGm">
+          <node concept="104FTg" id="1UML6duDuyw" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="mfOo_" node="3krho7oD9VT" resolve="pointqueue" />
+            <ref role="104FTn" node="1UML6duzKZG" resolve="nonBlockingQueue" />
           </node>
           <node concept="6bTlU" id="1zeZsIbez7M" role="lGtFl" />
           <node concept="2jTBO8" id="1zeZsIbezB3" role="lGtFl" />

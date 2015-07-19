@@ -407,7 +407,7 @@
   </node>
   <node concept="1M2fIO" id="4mSSgpjhPZW">
     <property role="3GE5qa" value="queue" />
-    <ref role="1M2myG" to="5wll:4mSSgpjhPZ8" resolve="QueueValExpr" />
+    <ref role="1M2myG" to="5wll:4mSSgpjhPZ8" resolve="ConcurrentQueueValExpr" />
     <node concept="nKS2y" id="4mSSgpjhQ1X" role="1MLUbF">
       <node concept="3clFbS" id="4mSSgpjhQ1Y" role="2VODD2">
         <node concept="3clFbF" id="4mSSgpjhQnx" role="3cqZAp">
@@ -417,13 +417,51 @@
               <node concept="2Xjw5R" id="4mSSgpjhRDv" role="2OqNvi">
                 <node concept="1xMEDy" id="4mSSgpjhRDx" role="1xVPHs">
                   <node concept="chp4Y" id="4mSSgpjhRIN" role="ri$Ld">
-                    <ref role="cht4Q" to="5wll:4mSSgpjhPYy" resolve="IQueueContext" />
+                    <ref role="cht4Q" to="5wll:4mSSgpjhPYy" resolve="IConcurrentQueueContext" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="4mSSgpjhSkb" role="1xVPHs" />
               </node>
             </node>
             <node concept="3x8VRR" id="4mSSgpjhSbJ" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1UML6duK$Ym">
+    <property role="3GE5qa" value="queue" />
+    <ref role="1M2myG" to="5wll:1UML6duC7CN" resolve="ConcurrentQueueType" />
+    <node concept="1N5Pfh" id="1UML6duK_0J" role="1Mr941">
+      <ref role="1N5Vy1" to="5wll:1UML6duC7CO" />
+      <node concept="1MUpDS" id="1UML6duK_0L" role="1N6uqs">
+        <node concept="3clFbS" id="1UML6duK_0M" role="2VODD2">
+          <node concept="3clFbF" id="1UML6duK_1r" role="3cqZAp">
+            <node concept="2OqwBi" id="1UML6duK_YU" role="3clFbG">
+              <node concept="2OqwBi" id="1UML6duK_jQ" role="2Oq$k0">
+                <node concept="2OqwBi" id="1UML6duK_46" role="2Oq$k0">
+                  <node concept="21POm0" id="1UML6duK_1q" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="1UML6duK_fx" role="2OqNvi">
+                    <node concept="1xMEDy" id="1UML6duK_fz" role="1xVPHs">
+                      <node concept="chp4Y" id="1UML6duK_gG" role="ri$Ld">
+                        <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="1UML6duK_z9" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
+                  <node concept="3TUQnm" id="1UML6duK_E0" role="37wK5m">
+                    <ref role="3TV0OU" to="5wll:1zeZsIbB9X5" resolve="ConcurrentQueueDeclaration" />
+                  </node>
+                </node>
+              </node>
+              <node concept="v3k3i" id="1UML6duKBaz" role="2OqNvi">
+                <node concept="chp4Y" id="1UML6duKBdd" role="v3oSu">
+                  <ref role="cht4Q" to="5wll:1zeZsIbB9X5" resolve="ConcurrentQueueDeclaration" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
