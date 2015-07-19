@@ -15,6 +15,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -1140,35 +1141,103 @@
     <property role="TrG5h" value="check_TakeStatement" />
     <property role="3GE5qa" value="queue" />
     <node concept="3clFbS" id="1zeZsIbdafY" role="18ibNy">
-      <node concept="3clFbJ" id="1zeZsIbdam6" role="3cqZAp">
-        <node concept="3clFbS" id="1zeZsIbdam7" role="3clFbx">
-          <node concept="2MkqsV" id="1zeZsIbdc2V" role="3cqZAp">
-            <node concept="Xl_RD" id="1zeZsIbdc37" role="2MkJ7o">
-              <property role="Xl_RC" value="queue is not marked as 'blocking'" />
+      <node concept="3clFbJ" id="1zeZsIbzZIv" role="3cqZAp">
+        <node concept="3clFbS" id="1zeZsIbzZIx" role="3clFbx">
+          <node concept="3clFbJ" id="1zeZsIbdam6" role="3cqZAp">
+            <node concept="3clFbS" id="1zeZsIbdam7" role="3clFbx">
+              <node concept="2MkqsV" id="1zeZsIbdc2V" role="3cqZAp">
+                <node concept="Xl_RD" id="1zeZsIbdc37" role="2MkJ7o">
+                  <property role="Xl_RC" value="queue is not marked as 'blocking'" />
+                </node>
+                <node concept="1YBJjd" id="1zeZsIbdc3W" role="2OEOjV">
+                  <ref role="1YBMHb" node="1zeZsIbdag0" resolve="ts" />
+                </node>
+              </node>
             </node>
-            <node concept="1YBJjd" id="1zeZsIbdc3W" role="2OEOjV">
-              <ref role="1YBMHb" node="1zeZsIbdag0" resolve="ts" />
+            <node concept="3fqX7Q" id="1zeZsIbdbrD" role="3clFbw">
+              <node concept="2OqwBi" id="1zeZsIbdbzC" role="3fr31v">
+                <node concept="1YBJjd" id="1zeZsIbdbtl" role="2Oq$k0">
+                  <ref role="1YBMHb" node="1zeZsIbdag0" resolve="ts" />
+                </node>
+                <node concept="2qgKlT" id="1zeZsIbdbZS" role="2OqNvi">
+                  <ref role="37wK5l" to="qozy:1zeZsIbcYTr" resolve="queueCanBlock" />
+                </node>
+              </node>
             </node>
           </node>
+          <node concept="3cpWs8" id="1zeZsIb$8I7" role="3cqZAp">
+            <node concept="3cpWsn" id="1zeZsIb$8I8" role="3cpWs9">
+              <property role="TrG5h" value="t" />
+              <node concept="3Tqbb2" id="1zeZsIb$8I4" role="1tU5fm">
+                <ref role="ehGHo" to="5wll:73Jrkgytd$o" resolve="Task" />
+              </node>
+              <node concept="2OqwBi" id="1zeZsIb$8I9" role="33vP2m">
+                <node concept="1YBJjd" id="1zeZsIb$8Ia" role="2Oq$k0">
+                  <ref role="1YBMHb" node="1zeZsIbdag0" resolve="ts" />
+                </node>
+                <node concept="2Xjw5R" id="1zeZsIb$8Ib" role="2OqNvi">
+                  <node concept="1xMEDy" id="1zeZsIb$8Ic" role="1xVPHs">
+                    <node concept="chp4Y" id="1zeZsIb$8Id" role="ri$Ld">
+                      <ref role="cht4Q" to="5wll:73Jrkgytd$o" resolve="Task" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="1zeZsIb$0xJ" role="3cqZAp">
+            <node concept="3clFbS" id="1zeZsIb$0xL" role="3clFbx">
+              <node concept="2MkqsV" id="1zeZsIb$2Ii" role="3cqZAp">
+                <node concept="Xl_RD" id="1zeZsIb$2Ij" role="2MkJ7o">
+                  <property role="Xl_RC" value="blocking take can only be used from inside blockable tasks" />
+                </node>
+                <node concept="1YBJjd" id="1zeZsIb$2Ik" role="2OEOjV">
+                  <ref role="1YBMHb" node="1zeZsIbdag0" resolve="ts" />
+                </node>
+              </node>
+            </node>
+            <node concept="22lmx$" id="1zeZsIb$3c$" role="3clFbw">
+              <node concept="1Wc70l" id="1zeZsIb$5ui" role="3uHU7w">
+                <node concept="3fqX7Q" id="1zeZsIb_1Kk" role="3uHU7w">
+                  <node concept="2OqwBi" id="1zeZsIb_1Km" role="3fr31v">
+                    <node concept="2OqwBi" id="1zeZsIb_1Kn" role="2Oq$k0">
+                      <node concept="37vLTw" id="1zeZsIb_1Ko" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1zeZsIb$8I8" resolve="t" />
+                      </node>
+                      <node concept="3TrEf2" id="1zeZsIb_1Kp" role="2OqNvi">
+                        <ref role="3Tt5mk" to="5wll:vg5qBCbSvw" />
+                      </node>
+                    </node>
+                    <node concept="1mIQ4w" id="1zeZsIb_1Kq" role="2OqNvi">
+                      <node concept="chp4Y" id="1zeZsIb_1Kr" role="cj9EA">
+                        <ref role="cht4Q" to="5wll:vg5qBCcr5i" resolve="BlockingKind" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1zeZsIb$47T" role="3uHU7B">
+                  <node concept="37vLTw" id="1zeZsIb$8Ig" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1zeZsIb$8I8" resolve="t" />
+                  </node>
+                  <node concept="3x8VRR" id="1zeZsIb$4Vr" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1zeZsIb$1np" role="3uHU7B">
+                <node concept="37vLTw" id="1zeZsIb$8Ie" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1zeZsIb$8I8" resolve="t" />
+                </node>
+                <node concept="3w_OXm" id="1zeZsIb$2D_" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="1zeZsIbzZIw" role="3cqZAp" />
         </node>
-        <node concept="1Wc70l" id="1zeZsIbdbpO" role="3clFbw">
-          <node concept="3fqX7Q" id="1zeZsIbdbrD" role="3uHU7w">
-            <node concept="2OqwBi" id="1zeZsIbdbzC" role="3fr31v">
-              <node concept="1YBJjd" id="1zeZsIbdbtl" role="2Oq$k0">
-                <ref role="1YBMHb" node="1zeZsIbdag0" resolve="ts" />
-              </node>
-              <node concept="2qgKlT" id="1zeZsIbdbZS" role="2OqNvi">
-                <ref role="37wK5l" to="qozy:1zeZsIbcYTr" resolve="queueCanBlock" />
-              </node>
-            </node>
+        <node concept="2OqwBi" id="1zeZsIbzZRO" role="3clFbw">
+          <node concept="1YBJjd" id="1zeZsIbzZLM" role="2Oq$k0">
+            <ref role="1YBMHb" node="1zeZsIbdag0" resolve="ts" />
           </node>
-          <node concept="2OqwBi" id="1zeZsIbdask" role="3uHU7B">
-            <node concept="1YBJjd" id="1zeZsIbdami" role="2Oq$k0">
-              <ref role="1YBMHb" node="1zeZsIbdag0" resolve="ts" />
-            </node>
-            <node concept="3TrcHB" id="1zeZsIbdaR0" role="2OqNvi">
-              <ref role="3TsBF5" to="5wll:1zeZsIbd2$8" resolve="blockOnTake" />
-            </node>
+          <node concept="3TrcHB" id="1zeZsIb$0lF" role="2OqNvi">
+            <ref role="3TsBF5" to="5wll:1zeZsIbd2$8" resolve="blockOnTake" />
           </node>
         </node>
       </node>

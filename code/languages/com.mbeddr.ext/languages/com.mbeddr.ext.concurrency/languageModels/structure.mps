@@ -131,7 +131,7 @@
   <node concept="1TIwiD" id="vg5qBCcr5i">
     <property role="3GE5qa" value="events" />
     <property role="TrG5h" value="BlockingKind" />
-    <property role="34LRSv" value="blocking" />
+    <property role="34LRSv" value="blockable" />
     <ref role="1TJDcQ" node="vg5qBCbSv0" resolve="TaskKind" />
   </node>
   <node concept="1TIwiD" id="vg5qBCcr5S">
