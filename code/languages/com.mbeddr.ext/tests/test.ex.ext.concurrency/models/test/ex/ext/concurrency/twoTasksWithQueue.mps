@@ -85,6 +85,9 @@
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
       </concept>
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
+      <concept id="3826728732360501495" name="com.mbeddr.core.util.structure.EmptyQueueExpression" flags="ng" index="3HeUPQ">
+        <reference id="3826728732365255740" name="queue" index="3Hsz6X" />
+      </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
@@ -163,7 +166,7 @@
       <concept id="7041988282448692952" name="com.mbeddr.ext.concurrency.structure.ScheduleSpecification" flags="ng" index="6qQRg">
         <child id="7041988282448692992" name="constraints" index="6qQK8" />
       </concept>
-      <concept id="5024012801614658196" name="com.mbeddr.ext.concurrency.structure.ReadQueueStatement" flags="ng" index="mYlIi">
+      <concept id="5024012801614658196" name="com.mbeddr.ext.concurrency.structure.TakeStatement" flags="ng" index="mYlIi">
         <child id="5024012801614671424" name="body" index="mYgX6" />
         <child id="5024012801614658197" name="queue" index="mYlIj" />
       </concept>
@@ -262,6 +265,9 @@
         <ref role="mfOo_" node="3krho7oDAWf" resolve="int64queue" />
       </node>
       <node concept="6bTlU" id="4mSSgpjw4bx" role="lGtFl" />
+      <node concept="3HeUPQ" id="1zeZsIbrU14" role="1cecVj">
+        <ref role="3Hsz6X" node="3krho7oDAWf" resolve="int64queue" />
+      </node>
     </node>
     <node concept="2NXPZ9" id="4mSSgpjqdm6" role="N3F5h">
       <property role="TrG5h" value="empty_1437242000795_6" />

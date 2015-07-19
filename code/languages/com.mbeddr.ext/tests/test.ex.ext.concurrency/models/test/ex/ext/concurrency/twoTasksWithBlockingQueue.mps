@@ -85,6 +85,9 @@
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
       </concept>
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
+      <concept id="3826728732360501495" name="com.mbeddr.core.util.structure.EmptyQueueExpression" flags="ng" index="3HeUPQ">
+        <reference id="3826728732365255740" name="queue" index="3Hsz6X" />
+      </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
@@ -267,6 +270,9 @@
       </node>
       <node concept="6bTlU" id="1zeZsIba3x1" role="lGtFl" />
       <node concept="2jTBO8" id="1zeZsIbbzum" role="lGtFl" />
+      <node concept="3HeUPQ" id="1zeZsIbrTen" role="1cecVj">
+        <ref role="3Hsz6X" node="1zeZsIba3wV" resolve="int64queue" />
+      </node>
     </node>
     <node concept="2NXPZ9" id="1zeZsIba3x2" role="N3F5h">
       <property role="TrG5h" value="empty_1437242000795_6" />
