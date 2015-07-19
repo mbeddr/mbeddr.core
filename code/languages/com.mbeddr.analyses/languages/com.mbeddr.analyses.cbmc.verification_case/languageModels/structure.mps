@@ -20,6 +20,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -67,11 +68,14 @@
     <node concept="PrWs8" id="7DvJ5MZ1aFM" role="PzmwI">
       <ref role="PrY4T" to="q5q6:7DvJ5MZ1ag1" resolve="IHarnessLike" />
     </node>
+    <node concept="PrWs8" id="HiHa_$l5E1" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
+    </node>
     <node concept="1TJgyj" id="4By$TDgYyKN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="suv" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="x27k:7qHzltJ0oT3" resolve="FunctionRefExpr" />
+      <ref role="20lvS9" node="7Kh7qAAalBf" resolve="ISUVRef" />
     </node>
     <node concept="1TJgyj" id="4By$TDh1s_L" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -85,10 +89,6 @@
     <property role="TrG5h" value="DataEnvironment" />
     <property role="34LRSv" value="data_environment" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-    <node concept="1TJgyi" id="2L0t9wJsnor" role="1TKVEl">
-      <property role="TrG5h" value="hasConstraints" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="1TJgyj" id="2L0t9wJ0hAO" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="varRef" />
@@ -121,6 +121,59 @@
       <property role="20kJfa" value="newFunRef" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="x27k:5_l8w1EmTvx" resolve="Function" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7Kh7qAAalBf">
+    <property role="3GE5qa" value="verification_case" />
+    <property role="TrG5h" value="ISUVRef" />
+  </node>
+  <node concept="1TIwiD" id="7Kh7qAAalBv">
+    <property role="3GE5qa" value="verification_case" />
+    <property role="TrG5h" value="FunctionsSUV" />
+    <property role="34LRSv" value="functions" />
+    <node concept="1TJgyj" id="HiHa_$mPN4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="funRefs" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="x27k:7qHzltJ0oT3" resolve="FunctionRefExpr" />
+    </node>
+    <node concept="PrWs8" id="7Kh7qAAalBw" role="PzmwI">
+      <ref role="PrY4T" node="7Kh7qAAalBf" resolve="ISUVRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="HiHa_$jaLe">
+    <property role="3GE5qa" value="verification_case" />
+    <property role="TrG5h" value="InitialState" />
+    <property role="34LRSv" value="initial_state" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="HiHa_$jbln" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="PrWs8" id="HiHa_$jePG" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="HiHa_$mmex">
+    <property role="3GE5qa" value="verification_case" />
+    <property role="TrG5h" value="VerificationRun" />
+    <property role="34LRSv" value="verification_step" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="HiHa_$mmeI" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="1TJgyi" id="HiHa_$oxUl" role="1TKVEl">
+      <property role="TrG5h" value="multistep" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="HiHa_$oxUn" role="1TKVEl">
+      <property role="TrG5h" value="stepsNumber" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>
