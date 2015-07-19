@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="47f075a6-558e-4640-a606-7ce0236c8023/r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.structure)">
+<model ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="tpee" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.structure)" />
-    <import index="tp25" ref="7866978e-a0f0-4cc7-81bc-4d213d9375e1/r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel/jetbrains.mps.lang.smodel.structure)" />
-    <import index="tpce" ref="c72da2b9-7cce-4447-8389-f407dc1158b7/r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure/jetbrains.mps.lang.structure.structure)" implicit="true" />
-    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -138,13 +139,7 @@
     <property role="34LRSv" value="#(" />
     <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions" />
     <property role="R4oN_" value="call evaluator on arbitrary expression" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="1TJgyj" id="4_QpjDhRHjF" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="node" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
-    </node>
+    <ref role="1TJDcQ" node="7oujAIeQkO7" resolve="AbstractRecursionExpression" />
   </node>
   <node concept="1TIwiD" id="4X7QcQ2Rofu">
     <property role="3GE5qa" value="Evaluator.Implementation" />
@@ -209,13 +204,7 @@
     <property role="TrG5h" value="InterpretConstraintExpression" />
     <property role="34LRSv" value="#" />
     <property role="R4oN_" value="call evaluator on child node of current node" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="1TJgyj" id="4_QpjDi7hcL" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="child" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
-    </node>
+    <ref role="1TJDcQ" node="7oujAIeQrHV" resolve="AbstractConstraintRecursionExpression" />
   </node>
   <node concept="1TIwiD" id="4_QpjDiWu97">
     <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions" />
@@ -369,6 +358,93 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7F2vPZ5zF3Y" role="PzmwI">
       <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7oujAIeONTA">
+    <property role="TrG5h" value="ConditionalInterpreter" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" node="7ueT7DHTBbE" resolve="Interpreter" />
+  </node>
+  <node concept="1TIwiD" id="7oujAIeOYuA">
+    <property role="3GE5qa" value="Evaluator.Condition" />
+    <property role="TrG5h" value="EvaluatorConditionInline" />
+    <property role="34LRSv" value="=" />
+    <ref role="1TJDcQ" node="7oujAIeOYu_" resolve="AbstractEvaluatorCondition" />
+    <node concept="1TJgyj" id="7oujAIeOYuE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7oujAIeQgTG">
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions" />
+    <property role="TrG5h" value="IsEvaluableExpression" />
+    <property role="34LRSv" value="#?(" />
+    <property role="R4oN_" value="call isEvaluable() on arbitrary expression" />
+    <ref role="1TJDcQ" node="7oujAIeQkO7" resolve="AbstractRecursionExpression" />
+  </node>
+  <node concept="1TIwiD" id="7oujAIeOYuB">
+    <property role="3GE5qa" value="Evaluator.Condition" />
+    <property role="TrG5h" value="EvaluatorConditionBody" />
+    <property role="34LRSv" value="{" />
+    <ref role="1TJDcQ" node="7oujAIeOYu_" resolve="AbstractEvaluatorCondition" />
+    <node concept="1TJgyj" id="7oujAIeOYuC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fK9aQHR" resolve="BlockStatement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7oujAIeOYu_">
+    <property role="3GE5qa" value="Evaluator.Condition" />
+    <property role="TrG5h" value="AbstractEvaluatorCondition" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="7oujAIeOX7y">
+    <property role="3GE5qa" value="Evaluator" />
+    <property role="TrG5h" value="ConditionalConceptEvaluator" />
+    <ref role="1TJDcQ" node="7ueT7DHTB$V" resolve="ConceptEvaluator" />
+    <node concept="1TJgyj" id="7oujAIeOYuG" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="7oujAIeOYu_" resolve="AbstractEvaluatorCondition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7oujAIeQrHV">
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="AbstractConstraintRecursionExpression" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="4_QpjDi7hcL" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="child" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7oujAIeQgTP">
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions" />
+    <property role="TrG5h" value="IsEvaluableConstraintExpression" />
+    <property role="34LRSv" value="#?" />
+    <property role="R4oN_" value="call isEvaluable() on child node of current node" />
+    <ref role="1TJDcQ" node="7oujAIeQrHV" resolve="AbstractConstraintRecursionExpression" />
+  </node>
+  <node concept="1TIwiD" id="7oujAIeQkO7">
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="AbstractRecursionExpression" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="7oujAIeQgTL" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="node" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
 </model>

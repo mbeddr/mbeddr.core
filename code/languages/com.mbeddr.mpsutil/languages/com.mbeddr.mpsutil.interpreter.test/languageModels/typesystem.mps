@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="1c897ba5-9d43-4035-ac7f-0306495743ac/r:6c0b77b6-881f-476d-bc54-25e7cf0f8740(com.mbeddr.mpsutil.interpreter.test/com.mbeddr.mpsutil.interpreter.test.typesystem)">
+<model ref="r:6c0b77b6-881f-476d-bc54-25e7cf0f8740(com.mbeddr.mpsutil.interpreter.test.typesystem)">
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="fac3" ref="1c897ba5-9d43-4035-ac7f-0306495743ac/r:5cb76491-cdbe-4d53-958c-9017fcd0ccc6(com.mbeddr.mpsutil.interpreter.test/com.mbeddr.mpsutil.interpreter.test.behavior)" implicit="true" />
-    <import index="7cx9" ref="1c897ba5-9d43-4035-ac7f-0306495743ac/r:af793ab9-042b-414b-8d5e-765e4059f681(com.mbeddr.mpsutil.interpreter.test/com.mbeddr.mpsutil.interpreter.test.structure)" implicit="true" />
+    <import index="fac3" ref="r:5cb76491-cdbe-4d53-958c-9017fcd0ccc6(com.mbeddr.mpsutil.interpreter.test.behavior)" implicit="true" />
+    <import index="7cx9" ref="r:af793ab9-042b-414b-8d5e-765e4059f681(com.mbeddr.mpsutil.interpreter.test.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -119,6 +119,50 @@
     <node concept="1YaCAy" id="65E6xpGTNt_" role="1YuTPh">
       <property role="TrG5h" value="aie" />
       <ref role="1YaFvo" to="7cx9:65E6xpGS32M" resolve="AbstractInterpreterEvaluation" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2pogikRx7Zc">
+    <property role="TrG5h" value="check_AbstractInterpreterCondition" />
+    <node concept="3clFbS" id="2pogikRx7Zd" role="18ibNy">
+      <node concept="3cpWs8" id="2pogikRx826" role="3cqZAp">
+        <node concept="3cpWsn" id="2pogikRx827" role="3cpWs9">
+          <property role="TrG5h" value="valid" />
+          <node concept="17QB3L" id="2pogikRx828" role="1tU5fm" />
+          <node concept="2OqwBi" id="2pogikRx829" role="33vP2m">
+            <node concept="1YBJjd" id="2pogikRx8Lp" role="2Oq$k0">
+              <ref role="1YBMHb" node="2pogikRx7Zf" resolve="abstractInterpreterCondition" />
+            </node>
+            <node concept="2qgKlT" id="2pogikRx82b" role="2OqNvi">
+              <ref role="37wK5l" to="fac3:2pogikRx4Ni" resolve="checkValid" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="2pogikRx82c" role="3cqZAp">
+        <node concept="3clFbS" id="2pogikRx82d" role="3clFbx">
+          <node concept="2MkqsV" id="2pogikRx82e" role="3cqZAp">
+            <node concept="37vLTw" id="2pogikRx82f" role="2MkJ7o">
+              <ref role="3cqZAo" node="2pogikRx827" resolve="valid" />
+            </node>
+            <node concept="2OqwBi" id="2pogikRx82g" role="2OEOjV">
+              <node concept="1YBJjd" id="2pogikRx9hF" role="2Oq$k0">
+                <ref role="1YBMHb" node="2pogikRx7Zf" resolve="abstractInterpreterCondition" />
+              </node>
+              <node concept="1mfA1w" id="2pogikRx82i" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3y3z36" id="2pogikRx82j" role="3clFbw">
+          <node concept="37vLTw" id="2pogikRx82k" role="3uHU7B">
+            <ref role="3cqZAo" node="2pogikRx827" resolve="valid" />
+          </node>
+          <node concept="10Nm6u" id="2pogikRx82l" role="3uHU7w" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2pogikRx7Zf" role="1YuTPh">
+      <property role="TrG5h" value="abstractInterpreterCondition" />
+      <ref role="1YaFvo" to="7cx9:2pogikRx2nv" resolve="AbstractInterpreterCondition" />
     </node>
   </node>
 </model>

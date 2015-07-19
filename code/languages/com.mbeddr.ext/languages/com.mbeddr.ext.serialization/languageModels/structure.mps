@@ -115,12 +115,11 @@
   </node>
   <node concept="1TIwiD" id="1LleiTPnd22">
     <property role="TrG5h" value="SerialContextType" />
-    <property role="34LRSv" value="serializableCtx" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="1TJgyj" id="7op4RkOnym$" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="handler" />
-      <property role="20lbJX" value="0..1" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7op4RkOgS$h" resolve="SerializationHandler" />
     </node>
     <node concept="PrWs8" id="1LleiTP$YtH" role="PzmwI">
@@ -344,7 +343,7 @@
   </node>
   <node concept="1TIwiD" id="7op4RkOgS$h">
     <property role="TrG5h" value="SerializationHandler" />
-    <property role="34LRSv" value="serializationHandler" />
+    <property role="34LRSv" value="serializer" />
     <property role="3GE5qa" value="handler" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7op4RkOh4me" role="1TKVEi">
@@ -476,6 +475,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7PpDuQ6EFRW" resolve="HandlerVariable" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="2hvQkqd75Mv">
+    <property role="TrG5h" value="AnonymousSerialContextType" />
+    <property role="34LRSv" value="serializableCtx" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
   </node>
 </model>
 

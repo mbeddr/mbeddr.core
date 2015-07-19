@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
-    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
+    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -36,7 +36,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
@@ -92,6 +92,9 @@
   <node concept="2S6QgY" id="65E6xpGSuZf">
     <property role="TrG5h" value="ToggleInterpreterEvaluation" />
     <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1SWQZ3" id="3TftwIKHUn1" role="lGtFl">
+      <property role="1SWRpm" value="INTERPRETER" />
+    </node>
     <node concept="2S6ZIM" id="65E6xpGSuZg" role="2ZfVej">
       <node concept="3clFbS" id="65E6xpGSuZh" role="2VODD2">
         <node concept="3clFbF" id="65E6xpGSvw5" role="3cqZAp">
@@ -178,8 +181,95 @@
         </node>
       </node>
     </node>
-    <node concept="1SWQZ3" id="3TftwIKHUn1" role="lGtFl">
-      <property role="1SWRpm" value="INTERPRETER" />
+  </node>
+  <node concept="2S6QgY" id="2pogikRzUFa">
+    <property role="TrG5h" value="ToggleInterpreterCondition" />
+    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="2S6ZIM" id="2pogikRzUFb" role="2ZfVej">
+      <node concept="3clFbS" id="2pogikRzUFc" role="2VODD2">
+        <node concept="3clFbF" id="2pogikRzVtU" role="3cqZAp">
+          <node concept="Xl_RD" id="2pogikRzVtT" role="3clFbG">
+            <property role="Xl_RC" value="Add expected Condition (isEvaluable)" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2pogikRzUFd" role="2ZfgGD">
+      <node concept="3clFbS" id="2pogikRzUFe" role="2VODD2">
+        <node concept="3clFbJ" id="2pogikRzZaR" role="3cqZAp">
+          <node concept="3clFbS" id="2pogikRzZaS" role="3clFbx">
+            <node concept="3clFbF" id="2pogikRzZaT" role="3cqZAp">
+              <node concept="2OqwBi" id="2pogikRzZaU" role="3clFbG">
+                <node concept="2OqwBi" id="2pogikRzZaV" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="2pogikRzZaW" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="2pogikRzZaX" role="2OqNvi">
+                    <node concept="3CFYIy" id="2pogikRzZkr" role="3CFYIz">
+                      <ref role="3CFYIx" to="7cx9:2pogikRx2nv" resolve="AbstractInterpreterCondition" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="zfrQC" id="2pogikRzZaZ" role="2OqNvi">
+                  <ref role="1A9B2P" to="xi9i:2pogikRxvhb" resolve="InlineInterpreterCondition" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2pogikRzZb0" role="3clFbw">
+            <node concept="2OqwBi" id="2pogikRzZb1" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2pogikRzZb2" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="2pogikRzZb3" role="2OqNvi">
+                <node concept="3CFYIy" id="2pogikRzZgZ" role="3CFYIz">
+                  <ref role="3CFYIx" to="7cx9:2pogikRx2nv" resolve="AbstractInterpreterCondition" />
+                </node>
+              </node>
+            </node>
+            <node concept="3w_OXm" id="2pogikRzZb5" role="2OqNvi" />
+          </node>
+          <node concept="9aQIb" id="2pogikRzZb6" role="9aQIa">
+            <node concept="3clFbS" id="2pogikRzZb7" role="9aQI4">
+              <node concept="3clFbF" id="2pogikRzZb8" role="3cqZAp">
+                <node concept="2OqwBi" id="2pogikRzZb9" role="3clFbG">
+                  <node concept="2OqwBi" id="2pogikRzZba" role="2Oq$k0">
+                    <node concept="2Sf5sV" id="2pogikRzZbb" role="2Oq$k0" />
+                    <node concept="3CFZ6_" id="2pogikRzZbc" role="2OqNvi">
+                      <node concept="3CFYIy" id="2pogikRzZqU" role="3CFYIz">
+                        <ref role="3CFYIx" to="7cx9:2pogikRx2nv" resolve="AbstractInterpreterCondition" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1PgB_6" id="2pogikRzZbe" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="2pogikRzXR6" role="2ZfVeh">
+      <node concept="3clFbS" id="2pogikRzXR7" role="2VODD2">
+        <node concept="3clFbF" id="2pogikRzXWR" role="3cqZAp">
+          <node concept="2OqwBi" id="2pogikRzXWS" role="3clFbG">
+            <node concept="2OqwBi" id="2pogikRzXWT" role="2Oq$k0">
+              <node concept="2OqwBi" id="2pogikRzXWU" role="2Oq$k0">
+                <node concept="2OqwBi" id="2pogikRzXWV" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="2pogikRzXWW" role="2Oq$k0" />
+                  <node concept="2Rxl7S" id="2pogikRzXWX" role="2OqNvi" />
+                </node>
+                <node concept="3NT_Vc" id="2pogikRzXWY" role="2OqNvi" />
+              </node>
+              <node concept="3TrcHB" id="2pogikRzXWZ" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="liA8E" id="2pogikRzXX0" role="2OqNvi">
+              <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <node concept="Xl_RD" id="2pogikRzXX1" role="37wK5m">
+                <property role="Xl_RC" value="NodesTestCase" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
