@@ -65,6 +65,14 @@
         <property id="2688792604367947988" name="active" index="2vn0DO" />
         <child id="767515563077204474" name="properties" index="2qqzEG" />
       </concept>
+      <concept id="2688792604367964821" name="com.mbeddr.core.util.structure.ReportStatement" flags="ng" index="2vn4wP">
+        <child id="2688792604367973273" name="msgref" index="2vn6$T" />
+      </concept>
+      <concept id="2688792604367964823" name="com.mbeddr.core.util.structure.MessageRef" flags="ng" index="2vn4wR">
+        <reference id="2688792604367964824" name="table" index="2vn4wS" />
+        <reference id="2688792604367964825" name="msg" index="2vn4wT" />
+        <child id="767515563077221084" name="propVals" index="2qqZAa" />
+      </concept>
     </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
       <concept id="7099329415459817973" name="com.mbeddr.core.udt.structure.SUDeclaration" flags="ng" index="HsMI8">
@@ -128,12 +136,14 @@
       </concept>
       <concept id="5763383285156373020" name="com.mbeddr.core.expressions.structure.MultiExpression" flags="ng" index="2BOcij" />
       <concept id="5763383285156373018" name="com.mbeddr.core.expressions.structure.MinusExpression" flags="ng" index="2BOcil" />
+      <concept id="5763383285156533447" name="com.mbeddr.core.expressions.structure.ParensExpression" flags="ng" index="2BPB98" />
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
       <concept id="3830958861296781575" name="com.mbeddr.core.expressions.structure.NotExpression" flags="ng" index="19$8ne" />
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
+      <concept id="8860443239512147445" name="com.mbeddr.core.expressions.structure.GreaterExpression" flags="ng" index="3Tl9Jr" />
       <concept id="8860443239512128058" name="com.mbeddr.core.expressions.structure.BooleanType" flags="ng" index="3TlMgk" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
@@ -182,6 +192,96 @@
     </node>
     <node concept="2NXPZ9" id="pNTuhIfkyY" role="N3F5h">
       <property role="TrG5h" value="empty_1437211820781_1" />
+    </node>
+    <node concept="N3Fnx" id="1zeZsIbz3jW" role="N3F5h">
+      <property role="TrG5h" value="checkWCET" />
+      <property role="2OOxQR" value="true" />
+      <node concept="19Rifw" id="1zeZsIbz3jX" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="1zeZsIbz3jY" role="3XIRFX">
+        <node concept="c0U19" id="1zeZsIbumIo" role="3XIRFZ">
+          <node concept="3XIRFW" id="1zeZsIbumIp" role="c0U17">
+            <node concept="3XIRlf" id="4hMIGYxgImT" role="3XIRFZ">
+              <property role="TrG5h" value="___actualET" />
+              <node concept="26Vqp1" id="4hMIGYxgIqu" role="2C2TGm">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+              </node>
+              <node concept="2BPB98" id="4hMIGYxgIqv" role="3XIe9u">
+                <node concept="2BOcil" id="4hMIGYxgIqw" role="1_9fRO">
+                  <node concept="3ZUYvv" id="1zeZsIbz6iY" role="3TlMhJ">
+                    <ref role="3ZUYvu" node="1zeZsIbz628" resolve="iterationStartTime" />
+                  </node>
+                  <node concept="3O_q_g" id="4hMIGYxgIqy" role="3TlMhI">
+                    <ref role="3O_q_h" node="4hMIGYwKdxK" resolve="time" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="c0U19" id="4hMIGYxgsiC" role="3XIRFZ">
+              <node concept="3XIRFW" id="4hMIGYxgsiD" role="c0U17">
+                <node concept="2vn4wP" id="4hMIGYxgY2s" role="3XIRFZ">
+                  <node concept="2vn4wR" id="4hMIGYxgY2u" role="2vn6$T">
+                    <ref role="2vn4wT" node="4hMIGYxgF9C" resolve="wcetExceeded" />
+                    <ref role="2vn4wS" node="4hMIGYxgF55" resolve="Errors" />
+                    <node concept="3ZUYvv" id="1zeZsIbz7qT" role="2qqZAa">
+                      <ref role="3ZUYvu" node="1zeZsIbz73d" resolve="taskID" />
+                    </node>
+                    <node concept="3ZUYvv" id="1zeZsIbz7xA" role="2qqZAa">
+                      <ref role="3ZUYvu" node="1zeZsIbz4mH" resolve="wcet" />
+                    </node>
+                    <node concept="3ZVu4v" id="4hMIGYxgZEm" role="2qqZAa">
+                      <ref role="3ZVs_2" node="4hMIGYxgImT" resolve="___actualET" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3Tl9Jr" id="4hMIGYxguI1" role="c0U16">
+                <node concept="3ZVu4v" id="4hMIGYxgIq$" role="3TlMhI">
+                  <ref role="3ZVs_2" node="4hMIGYxgImT" resolve="___actualET" />
+                </node>
+                <node concept="3ZUYvv" id="1zeZsIbz6yK" role="3TlMhJ">
+                  <ref role="3ZUYvu" node="1zeZsIbz4mH" resolve="wcet" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Tl9Jr" id="1zeZsIbumOw" role="c0U16">
+            <node concept="3TlMh9" id="1zeZsIbumOz" role="3TlMhJ">
+              <property role="2hmy$m" value="0" />
+            </node>
+            <node concept="3ZUYvv" id="1zeZsIbz5y4" role="3TlMhI">
+              <ref role="3ZUYvu" node="1zeZsIbz4mH" resolve="wcet" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19RgSI" id="1zeZsIbz73d" role="1UOdpc">
+        <property role="TrG5h" value="taskID" />
+        <node concept="26VqpV" id="1zeZsIbz73b" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="1zeZsIbz4mH" role="1UOdpc">
+        <property role="TrG5h" value="wcet" />
+        <node concept="26Vqp1" id="1zeZsIbz4mG" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="1zeZsIbz628" role="1UOdpc">
+        <property role="TrG5h" value="iterationStartTime" />
+        <node concept="26Vqp1" id="1zeZsIbz626" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="1zeZsIbyVWW" role="N3F5h">
+      <property role="TrG5h" value="empty_1437326717892_15" />
     </node>
     <node concept="1sgJKc" id="pNTuhIfnwC" role="N3F5h">
       <property role="TrG5h" value="EventData" />
