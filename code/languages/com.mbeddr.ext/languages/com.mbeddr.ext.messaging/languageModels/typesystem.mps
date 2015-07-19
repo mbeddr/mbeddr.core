@@ -10,6 +10,7 @@
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="jtc1" ref="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)" />
     <import index="vuss" ref="r:030bc2d0-ab1f-4013-9326-cb8d964c9de2(com.mbeddr.ext.messaging.structure)" />
+    <import index="36m" ref="r:8b1352aa-99a0-4051-966c-597abfa8e99f(com.mbeddr.ext.serialization.typesystem)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
@@ -29,6 +30,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -60,6 +64,7 @@
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -606,6 +611,40 @@
     <node concept="1YaCAy" id="2hvQkqd1$XU" role="1YuTPh">
       <property role="TrG5h" value="messageMemberTarget" />
       <ref role="1YaFvo" to="vuss:2hvQkqd1$WE" resolve="MessageMemberTarget" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="520f1yMmWCU">
+    <property role="TrG5h" value="check_MessageMember" />
+    <node concept="3clFbS" id="520f1yMmWCV" role="18ibNy">
+      <node concept="2Mj0R9" id="520f1yMmWFJ" role="3cqZAp">
+        <node concept="2YIFZM" id="520f1yMmWG5" role="2MkoU_">
+          <ref role="37wK5l" to="36m:3XvCV0KwND0" resolve="isTypeAllowed" />
+          <ref role="1Pybhc" to="36m:3XvCV0KwNCu" resolve="TypeHelper" />
+          <node concept="2OqwBi" id="520f1yMmWJy" role="37wK5m">
+            <node concept="1YBJjd" id="520f1yMmWGb" role="2Oq$k0">
+              <ref role="1YBMHb" node="520f1yMmWCX" resolve="messageMember" />
+            </node>
+            <node concept="3TrEf2" id="520f1yMmWYb" role="2OqNvi">
+              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+            </node>
+          </node>
+        </node>
+        <node concept="Xl_RD" id="520f1yMmWYe" role="2MkJ7o">
+          <property role="Xl_RC" value="type not allowed" />
+        </node>
+        <node concept="2OqwBi" id="520f1yMmX4V" role="2OEOjV">
+          <node concept="1YBJjd" id="520f1yMmWYg" role="2Oq$k0">
+            <ref role="1YBMHb" node="520f1yMmWCX" resolve="messageMember" />
+          </node>
+          <node concept="3TrEf2" id="520f1yMmXxT" role="2OqNvi">
+            <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="520f1yMmWCX" role="1YuTPh">
+      <property role="TrG5h" value="messageMember" />
+      <ref role="1YaFvo" to="vuss:6MQ2rNXJFf4" resolve="MessageMember" />
     </node>
   </node>
 </model>

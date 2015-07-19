@@ -120,6 +120,7 @@
     <dependency reexport="false">7f1d94f2-798c-49d9-bd54-78999a20832c(com.mbeddr.ext.messaging)</dependency>
     <dependency reexport="false">7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)</dependency>
     <dependency reexport="false">bb0ad88b-63cd-45fd-ae27-8662d274cf3c(com.mbeddr.ext.serialization)</dependency>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)</usedLanguage>
