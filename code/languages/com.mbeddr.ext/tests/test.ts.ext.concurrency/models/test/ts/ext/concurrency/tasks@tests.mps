@@ -164,7 +164,9 @@
       <concept id="7041988282448692952" name="com.mbeddr.ext.concurrency.structure.ScheduleSpecification" flags="ng" index="6qQRg">
         <child id="7041988282448692992" name="constraints" index="6qQK8" />
       </concept>
-      <concept id="5024012801614658196" name="com.mbeddr.ext.concurrency.structure.ReadQueueStatement" flags="ng" index="mYlIi">
+      <concept id="1787645152767541443" name="com.mbeddr.ext.concurrency.structure.BlockingAnnotation" flags="ng" index="2jTBO8" />
+      <concept id="5024012801614658196" name="com.mbeddr.ext.concurrency.structure.TakeStatement" flags="ng" index="mYlIi">
+        <property id="1787645152768305416" name="blockOnTake" index="2jYHj3" />
         <child id="5024012801614671424" name="body" index="mYgX6" />
         <child id="5024012801614658197" name="queue" index="mYlIj" />
       </concept>
@@ -1075,8 +1077,65 @@
         <node concept="2NXPZ9" id="4mSSgpjhNfx" role="N3F5h">
           <property role="TrG5h" value="empty_1437240873541_3" />
         </node>
-        <node concept="2NXPZ9" id="2TPZctD828C" role="N3F5h">
-          <property role="TrG5h" value="empty_1437130464100_3" />
+        <node concept="1S7NMz" id="1zeZsIbeyrU" role="N3F5h">
+          <property role="TrG5h" value="aNomnBlockingQueue" />
+          <node concept="mfOo$" id="1zeZsIbeyrS" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="mfOo_" node="3krho7oD9VT" resolve="pointqueue" />
+          </node>
+          <node concept="6bTlU" id="1zeZsIbeyYu" role="lGtFl" />
+        </node>
+        <node concept="2NXPZ9" id="1zeZsIbezmS" role="N3F5h">
+          <property role="TrG5h" value="empty_1437297281088_9" />
+        </node>
+        <node concept="1S7NMz" id="1zeZsIbez7K" role="N3F5h">
+          <property role="TrG5h" value="aBlockingQueue" />
+          <node concept="mfOo$" id="1zeZsIbez7L" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="mfOo_" node="3krho7oD9VT" resolve="pointqueue" />
+          </node>
+          <node concept="6bTlU" id="1zeZsIbez7M" role="lGtFl" />
+          <node concept="2jTBO8" id="1zeZsIbezB3" role="lGtFl" />
+        </node>
+        <node concept="2NXPZ9" id="1zeZsIbexJU" role="N3F5h">
+          <property role="TrG5h" value="empty_1437297239137_6" />
+        </node>
+        <node concept="N3Fnx" id="1zeZsIbeyDM" role="N3F5h">
+          <property role="TrG5h" value="dummy" />
+          <node concept="19Rifw" id="1zeZsIbeyDN" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="3XIRFW" id="1zeZsIbeyDO" role="3XIRFX">
+            <node concept="mYlIi" id="1zeZsIbeyRZ" role="3XIRFZ">
+              <node concept="1S7827" id="1zeZsIbeyUx" role="mYlIj">
+                <ref role="1S7826" node="1zeZsIbeyrU" resolve="aNomnBlockingQueue" />
+              </node>
+              <node concept="3XIRFW" id="1zeZsIbeyS3" role="mYgX6" />
+            </node>
+            <node concept="mYlIi" id="1zeZsIbez1C" role="3XIRFZ">
+              <property role="2jYHj3" value="true" />
+              <node concept="1S7827" id="1zeZsIbez1D" role="mYlIj">
+                <ref role="1S7826" node="1zeZsIbeyrU" resolve="aNomnBlockingQueue" />
+              </node>
+              <node concept="3XIRFW" id="1zeZsIbez1E" role="mYgX6" />
+              <node concept="7CXmI" id="1zeZsIbez5z" role="lGtFl">
+                <node concept="1TM$A" id="1zeZsIbez5$" role="7EUXB" />
+              </node>
+            </node>
+            <node concept="mYlIi" id="1zeZsIbeEO2" role="3XIRFZ">
+              <property role="2jYHj3" value="true" />
+              <node concept="1S7827" id="1zeZsIbeESe" role="mYlIj">
+                <ref role="1S7826" node="1zeZsIbez7K" resolve="aBlockingQueue" />
+              </node>
+              <node concept="3XIRFW" id="1zeZsIbeEO4" role="mYgX6" />
+            </node>
+          </node>
+        </node>
+        <node concept="2NXPZ9" id="1zeZsIbeybl" role="N3F5h">
+          <property role="TrG5h" value="empty_1437297239439_8" />
         </node>
       </node>
     </node>

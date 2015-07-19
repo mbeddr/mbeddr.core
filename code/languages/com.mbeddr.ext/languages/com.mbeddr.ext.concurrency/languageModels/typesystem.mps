@@ -1136,5 +1136,47 @@
       <ref role="1YaFvo" to="5wll:4mSSgpjqg3b" resolve="IQueueUser" />
     </node>
   </node>
+  <node concept="18kY7G" id="1zeZsIbdafX">
+    <property role="TrG5h" value="check_TakeStatement" />
+    <property role="3GE5qa" value="queue" />
+    <node concept="3clFbS" id="1zeZsIbdafY" role="18ibNy">
+      <node concept="3clFbJ" id="1zeZsIbdam6" role="3cqZAp">
+        <node concept="3clFbS" id="1zeZsIbdam7" role="3clFbx">
+          <node concept="2MkqsV" id="1zeZsIbdc2V" role="3cqZAp">
+            <node concept="Xl_RD" id="1zeZsIbdc37" role="2MkJ7o">
+              <property role="Xl_RC" value="queue is not marked as 'blocking'" />
+            </node>
+            <node concept="1YBJjd" id="1zeZsIbdc3W" role="2OEOjV">
+              <ref role="1YBMHb" node="1zeZsIbdag0" resolve="ts" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="1zeZsIbdbpO" role="3clFbw">
+          <node concept="3fqX7Q" id="1zeZsIbdbrD" role="3uHU7w">
+            <node concept="2OqwBi" id="1zeZsIbdbzC" role="3fr31v">
+              <node concept="1YBJjd" id="1zeZsIbdbtl" role="2Oq$k0">
+                <ref role="1YBMHb" node="1zeZsIbdag0" resolve="ts" />
+              </node>
+              <node concept="2qgKlT" id="1zeZsIbdbZS" role="2OqNvi">
+                <ref role="37wK5l" to="qozy:1zeZsIbcYTr" resolve="queueCanBlock" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1zeZsIbdask" role="3uHU7B">
+            <node concept="1YBJjd" id="1zeZsIbdami" role="2Oq$k0">
+              <ref role="1YBMHb" node="1zeZsIbdag0" resolve="ts" />
+            </node>
+            <node concept="3TrcHB" id="1zeZsIbdaR0" role="2OqNvi">
+              <ref role="3TsBF5" to="5wll:1zeZsIbd2$8" resolve="blockOnTake" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1zeZsIbdag0" role="1YuTPh">
+      <property role="TrG5h" value="ts" />
+      <ref role="1YaFvo" to="5wll:4mSSgpjgrEk" resolve="TakeStatement" />
+    </node>
+  </node>
 </model>
 

@@ -3,6 +3,13 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -105,6 +112,12 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+    </language>
+    <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
+      <concept id="7122083600695857782" name="de.itemis.mps.editor.bool.structure.CellModel_BooleanText" flags="sg" stub="416014060004530854" index="2aMyGU">
+        <property id="7122083600696909496" name="falseText" index="2aYyvO" />
+        <property id="7122083600696906118" name="trueText" index="2aYyza" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -619,11 +632,19 @@
   </node>
   <node concept="24kQdi" id="4mSSgpjgrEK">
     <property role="3GE5qa" value="queue" />
-    <ref role="1XX52x" to="5wll:4mSSgpjgrEk" resolve="ReadQueueStatement" />
+    <ref role="1XX52x" to="5wll:4mSSgpjgrEk" resolve="TakeStatement" />
     <node concept="3EZMnI" id="4mSSgpjguSe" role="2wV5jI">
       <node concept="3F0ifn" id="4mSSgpjguSl" role="3EZMnx">
         <property role="3F0ifm" value="take" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="2aMyGU" id="1zeZsIbd3Jp" role="3EZMnx">
+        <property role="2aYyza" value="blocking" />
+        <property role="2aYyvO" value="if available" />
+        <ref role="1NtTu8" to="5wll:1zeZsIbd2$8" resolve="blockOnTake" />
+        <node concept="Vb9p2" id="1zeZsIbdafq" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
+        </node>
       </node>
       <node concept="3F0ifn" id="4mSSgpjguSz" role="3EZMnx">
         <property role="3F0ifm" value="from" />
@@ -633,10 +654,6 @@
         <ref role="1NtTu8" to="5wll:4mSSgpjgrEl" />
       </node>
       <node concept="l2Vlx" id="4mSSgpjguSh" role="2iSdaV" />
-      <node concept="3F0ifn" id="4mSSgpjo890" role="3EZMnx">
-        <property role="3F0ifm" value="as" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-      </node>
       <node concept="3F0ifn" id="4mSSgpjguSr" role="3EZMnx">
         <property role="3F0ifm" value="val" />
       </node>
@@ -650,6 +667,18 @@
     <ref role="1XX52x" to="5wll:4mSSgpjhPZ8" resolve="QueueValExpr" />
     <node concept="3F0ifn" id="4mSSgpjhPZy" role="2wV5jI">
       <property role="3F0ifm" value="val" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1zeZsIba87p">
+    <property role="3GE5qa" value="queue" />
+    <ref role="1XX52x" to="5wll:1zeZsIba833" resolve="BlockingAnnotation" />
+    <node concept="3EZMnI" id="1zeZsIba87u" role="2wV5jI">
+      <node concept="2iRkQZ" id="1zeZsIba87v" role="2iSdaV" />
+      <node concept="3F0ifn" id="1zeZsIba87r" role="3EZMnx">
+        <property role="3F0ifm" value="@blocking" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="2SsqMj" id="1zeZsIba87F" role="3EZMnx" />
     </node>
   </node>
 </model>
