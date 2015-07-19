@@ -6545,6 +6545,96 @@
         <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
       </node>
     </node>
+    <node concept="13i0hz" id="1gOniHQA69C" role="13h7CS">
+      <property role="TrG5h" value="genSizeConstantName" />
+      <node concept="3Tm1VV" id="1gOniHQA69D" role="1B3o_S" />
+      <node concept="3clFbS" id="1gOniHQA69E" role="3clF47">
+        <node concept="3clFbF" id="1gOniHQAxlc" role="3cqZAp">
+          <node concept="3cpWs3" id="1gOniHQAyAm" role="3clFbG">
+            <node concept="Xl_RD" id="1gOniHQAyAp" role="3uHU7w">
+              <property role="Xl_RC" value="_SIZE" />
+            </node>
+            <node concept="2OqwBi" id="1gOniHQAzdL" role="3uHU7B">
+              <node concept="2OqwBi" id="1gOniHQAxJi" role="2Oq$k0">
+                <node concept="13iPFW" id="1gOniHQAxlb" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1gOniHQAywF" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="liA8E" id="1gOniHQA$i1" role="2OqNvi">
+                <ref role="37wK5l" to="e2lb:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1gOniHQAmog" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1gOniHQA$xP" role="13h7CS">
+      <property role="TrG5h" value="genSructName" />
+      <node concept="3Tm1VV" id="1gOniHQA$xQ" role="1B3o_S" />
+      <node concept="3clFbS" id="1gOniHQA$xR" role="3clF47">
+        <node concept="3clFbF" id="1gOniHQA$xS" role="3cqZAp">
+          <node concept="3cpWs3" id="1gOniHQA$xT" role="3clFbG">
+            <node concept="Xl_RD" id="1gOniHQAD4A" role="3uHU7w">
+              <property role="Xl_RC" value="_data" />
+            </node>
+            <node concept="2OqwBi" id="1gOniHQA$xV" role="3uHU7B">
+              <node concept="2OqwBi" id="1gOniHQA$xW" role="2Oq$k0">
+                <node concept="13iPFW" id="1gOniHQA$xX" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1gOniHQA$xY" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="liA8E" id="1gOniHQA$xZ" role="2OqNvi">
+                <ref role="37wK5l" to="e2lb:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1gOniHQA$y0" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1gOniHQCxMT" role="13h7CS">
+      <property role="TrG5h" value="genEnqueueFunctionName" />
+      <node concept="3Tm1VV" id="1gOniHQCxMU" role="1B3o_S" />
+      <node concept="3clFbS" id="1gOniHQCxMV" role="3clF47">
+        <node concept="3clFbF" id="1gOniHQCxT2" role="3cqZAp">
+          <node concept="3cpWs3" id="1gOniHQCyuG" role="3clFbG">
+            <node concept="Xl_RD" id="1gOniHQCyuJ" role="3uHU7w">
+              <property role="Xl_RC" value="_enqueu" />
+            </node>
+            <node concept="2OqwBi" id="1gOniHQCxYK" role="3uHU7B">
+              <node concept="13iPFW" id="1gOniHQCxT1" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1gOniHQCyp1" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1gOniHQCxSY" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1gOniHQCyOp" role="13h7CS">
+      <property role="TrG5h" value="genDequeueFunctionName" />
+      <node concept="3Tm1VV" id="1gOniHQCyOq" role="1B3o_S" />
+      <node concept="3clFbS" id="1gOniHQCyOr" role="3clF47">
+        <node concept="3clFbF" id="1gOniHQCyOs" role="3cqZAp">
+          <node concept="3cpWs3" id="1gOniHQCyOt" role="3clFbG">
+            <node concept="Xl_RD" id="1gOniHQCyOu" role="3uHU7w">
+              <property role="Xl_RC" value="_dequeu" />
+            </node>
+            <node concept="2OqwBi" id="1gOniHQCyOv" role="3uHU7B">
+              <node concept="13iPFW" id="1gOniHQCyOw" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1gOniHQCyOx" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1gOniHQCyOy" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="7cvwcG65oAn">
     <property role="3GE5qa" value="queue" />

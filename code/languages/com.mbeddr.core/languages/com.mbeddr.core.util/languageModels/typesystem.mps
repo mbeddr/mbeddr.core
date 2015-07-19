@@ -5531,5 +5531,44 @@
       <ref role="1YaFvo" to="k146:5B8LY2$Lrxk" resolve="QueueTake" />
     </node>
   </node>
+  <node concept="1YbPZF" id="3krho7o_ML7">
+    <property role="TrG5h" value="typeof_EmptyQueueExpression" />
+    <property role="3GE5qa" value="queue" />
+    <node concept="3clFbS" id="3krho7o_ML8" role="18ibNy">
+      <node concept="1Z5TYs" id="3krho7o_NlS" role="3cqZAp">
+        <node concept="mw_s8" id="3krho7o_Nmc" role="1ZfhKB">
+          <node concept="2pJPEk" id="3krho7o_Nm8" role="mwGJk">
+            <node concept="2pJPED" id="3krho7o_Nmn" role="2pJPEn">
+              <ref role="2pJxaS" to="k146:4mSSgpjxUsy" resolve="QueueType" />
+              <node concept="2pIpSj" id="3krho7o_NmC" role="2pJxcM">
+                <ref role="2pIpSl" to="k146:4mSSgpjxUsz" />
+                <node concept="36biLy" id="3krho7o_NmX" role="2pJxcZ">
+                  <node concept="2OqwBi" id="3krho7o_Nr4" role="36biLW">
+                    <node concept="1YBJjd" id="3krho7o_Nn8" role="2Oq$k0">
+                      <ref role="1YBMHb" node="3krho7o_MLa" resolve="eq" />
+                    </node>
+                    <node concept="3TrEf2" id="3krho7o_NI9" role="2OqNvi">
+                      <ref role="3Tt5mk" to="k146:3krho7oqngW" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3krho7o_NlV" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3krho7o_Nil" role="mwGJk">
+            <node concept="1YBJjd" id="3krho7o_Ni_" role="1Z2MuG">
+              <ref role="1YBMHb" node="3krho7o_MLa" resolve="eq" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3krho7o_MLa" role="1YuTPh">
+      <property role="TrG5h" value="eq" />
+      <ref role="1YaFvo" to="k146:3krho7o8ezR" resolve="EmptyQueueExpression" />
+    </node>
+  </node>
 </model>
 

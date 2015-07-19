@@ -4483,5 +4483,40 @@
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
     </node>
   </node>
+  <node concept="24kQdi" id="3krho7o8rjS">
+    <property role="3GE5qa" value="queue" />
+    <ref role="1XX52x" to="k146:3krho7o8ezR" resolve="EmptyQueueExpression" />
+    <node concept="3EZMnI" id="3krho7oqr5m" role="2wV5jI">
+      <node concept="l2Vlx" id="3krho7oqr5n" role="2iSdaV" />
+      <node concept="3F0ifn" id="3krho7o8s5u" role="3EZMnx">
+        <property role="3F0ifm" value="emptyqueue" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="3F0ifn" id="3krho7oqtS1" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+        <node concept="11L4FC" id="3krho7oqtTr" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="3krho7oqtUL" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="3krho7oqr5N" role="3EZMnx">
+        <ref role="1NtTu8" to="k146:3krho7oqngW" />
+        <node concept="1sVBvm" id="3krho7oqr5P" role="1sWHZn">
+          <node concept="3F0A7n" id="3krho7oqr6q" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3krho7oqr5_" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <node concept="11L4FC" id="3krho7oqtRL" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

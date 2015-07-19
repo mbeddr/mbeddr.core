@@ -1588,5 +1588,43 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="3krho7oqnhl">
+    <property role="3GE5qa" value="queue" />
+    <ref role="1M2myG" to="k146:3krho7o8ezR" resolve="EmptyQueueExpression" />
+    <node concept="1N5Pfh" id="3krho7oqnra" role="1Mr941">
+      <ref role="1N5Vy1" to="k146:3krho7oqngW" />
+      <node concept="1MUpDS" id="3krho7oqnrc" role="1N6uqs">
+        <node concept="3clFbS" id="3krho7oqnrd" role="2VODD2">
+          <node concept="3clFbF" id="3krho7oqobH" role="3cqZAp">
+            <node concept="2OqwBi" id="3krho7oqqil" role="3clFbG">
+              <node concept="2OqwBi" id="3krho7oqozz" role="2Oq$k0">
+                <node concept="2OqwBi" id="3krho7oqodV" role="2Oq$k0">
+                  <node concept="21POm0" id="3krho7oqobG" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="3krho7oqopM" role="2OqNvi">
+                    <node concept="1xMEDy" id="3krho7oqopO" role="1xVPHs">
+                      <node concept="chp4Y" id="3krho7oqpSN" role="ri$Ld">
+                        <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="3krho7oqq16" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
+                  <node concept="3TUQnm" id="3krho7oqq4n" role="37wK5m">
+                    <ref role="3TV0OU" to="k146:4mSSgpjxLMA" resolve="QueueDeclaration" />
+                  </node>
+                </node>
+              </node>
+              <node concept="v3k3i" id="3krho7oqqYD" role="2OqNvi">
+                <node concept="chp4Y" id="3krho7oqr1j" role="v3oSu">
+                  <ref role="cht4Q" to="k146:4mSSgpjxLMA" resolve="QueueDeclaration" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -154,6 +154,9 @@
       <concept id="6307143892175831839" name="com.mbeddr.core.util.structure.IsInRangeExpression" flags="ng" index="1vVjFF" />
       <concept id="3457272138385220657" name="com.mbeddr.core.util.structure.FlagUnSet" flags="ng" index="1FHdq0" />
       <concept id="3457272138385189066" name="com.mbeddr.core.util.structure.FlagSet" flags="ng" index="1FHPDV" />
+      <concept id="3826728732360501495" name="com.mbeddr.core.util.structure.EmptyQueueExpression" flags="ng" index="3HeUPQ">
+        <reference id="3826728732365255740" name="queue" index="3Hsz6X" />
+      </concept>
       <concept id="5065104421776378465" name="com.mbeddr.core.util.structure.AndedExprList" flags="ng" index="3OtLv3">
         <child id="5065104421776378466" name="expressions" index="3OtLv0" />
       </concept>
@@ -209,7 +212,9 @@
       <concept id="6610873504380357354" name="com.mbeddr.core.modules.structure.GlobalVarRef" flags="ng" index="1S7827">
         <reference id="6610873504380357355" name="var" index="1S7826" />
       </concept>
-      <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz" />
+      <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz">
+        <child id="2771264470558526601" name="init" index="1cecVj" />
+      </concept>
     </language>
     <language id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded">
       <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.EmulatedInterruptKind" flags="ng" index="3_UBHe" />
@@ -1287,6 +1292,9 @@
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
             <ref role="mfOo_" node="7cvwcG64Mjp" resolve="int32queue" />
+          </node>
+          <node concept="3HeUPQ" id="3krho7oqndh" role="1cecVj">
+            <ref role="3Hsz6X" node="7cvwcG64Mjp" resolve="int32queue" />
           </node>
         </node>
         <node concept="2NXPZ9" id="7cvwcG64NzJ" role="N3F5h">
