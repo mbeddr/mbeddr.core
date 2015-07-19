@@ -156,6 +156,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -488,6 +491,7 @@
   </node>
   <node concept="1YbPZF" id="2hvQkqd0_Bv">
     <property role="TrG5h" value="typeof_MessageReceiveStatement" />
+    <property role="3GE5qa" value="receive" />
     <node concept="3clFbS" id="2hvQkqd0_Bw" role="18ibNy">
       <node concept="1ZobV4" id="2hvQkqd0_Ca" role="3cqZAp">
         <property role="3wDh2S" value="true" />
@@ -525,36 +529,31 @@
   </node>
   <node concept="1YbPZF" id="2hvQkqd144o">
     <property role="TrG5h" value="typeof_MessageExpression" />
+    <property role="3GE5qa" value="receive" />
     <node concept="3clFbS" id="2hvQkqd144p" role="18ibNy">
       <node concept="1Z5TYs" id="2hvQkqd146_" role="3cqZAp">
         <node concept="mw_s8" id="2hvQkqd146T" role="1ZfhKB">
           <node concept="2pJPEk" id="2hvQkqd146P" role="mwGJk">
-            <node concept="2pJPED" id="2hvQkqd2rWM" role="2pJPEn">
-              <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
-              <node concept="2pIpSj" id="2hvQkqd2rX9" role="2pJxcM">
-                <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" />
-                <node concept="2pJPED" id="2hvQkqd1474" role="2pJxcZ">
-                  <ref role="2pJxaS" to="vuss:6MQ2rNXJAO$" resolve="MessageType" />
-                  <node concept="2pIpSj" id="2hvQkqd14aq" role="2pJxcM">
-                    <ref role="2pIpSl" to="vuss:2hvQkqcLEjv" />
-                    <node concept="36biLy" id="2hvQkqd14aP" role="2pJxcZ">
-                      <node concept="2OqwBi" id="2hvQkqd14M2" role="36biLW">
-                        <node concept="2OqwBi" id="2hvQkqd14ey" role="2Oq$k0">
-                          <node concept="1YBJjd" id="2hvQkqd14b0" role="2Oq$k0">
-                            <ref role="1YBMHb" node="2hvQkqd144r" resolve="messageExpression" />
+            <node concept="2pJPED" id="2hvQkqd1474" role="2pJPEn">
+              <ref role="2pJxaS" to="vuss:6MQ2rNXJAO$" resolve="MessageType" />
+              <node concept="2pIpSj" id="2hvQkqd14aq" role="2pJxcM">
+                <ref role="2pIpSl" to="vuss:2hvQkqcLEjv" />
+                <node concept="36biLy" id="2hvQkqd14aP" role="2pJxcZ">
+                  <node concept="2OqwBi" id="2hvQkqd14M2" role="36biLW">
+                    <node concept="2OqwBi" id="2hvQkqd14ey" role="2Oq$k0">
+                      <node concept="1YBJjd" id="2hvQkqd14b0" role="2Oq$k0">
+                        <ref role="1YBMHb" node="2hvQkqd144r" resolve="messageExpression" />
+                      </node>
+                      <node concept="2Xjw5R" id="2hvQkqd14J0" role="2OqNvi">
+                        <node concept="1xMEDy" id="2hvQkqd14J2" role="1xVPHs">
+                          <node concept="chp4Y" id="2hvQkqd14JR" role="ri$Ld">
+                            <ref role="cht4Q" to="vuss:2hvQkqcZV6v" resolve="MessageReceiveHandler" />
                           </node>
-                          <node concept="2Xjw5R" id="2hvQkqd14J0" role="2OqNvi">
-                            <node concept="1xMEDy" id="2hvQkqd14J2" role="1xVPHs">
-                              <node concept="chp4Y" id="2hvQkqd14JR" role="ri$Ld">
-                                <ref role="cht4Q" to="vuss:2hvQkqcZV6v" resolve="MessageReceiveHandler" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3TrEf2" id="2hvQkqd14UG" role="2OqNvi">
-                          <ref role="3Tt5mk" to="vuss:2hvQkqd0JfW" />
                         </node>
                       </node>
+                    </node>
+                    <node concept="3TrEf2" id="2hvQkqd14UG" role="2OqNvi">
+                      <ref role="3Tt5mk" to="vuss:2hvQkqd0JfW" />
                     </node>
                   </node>
                 </node>

@@ -111,6 +111,11 @@
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="24kQdi" id="6MQ2rNXJFfN">
     <ref role="1XX52x" to="vuss:6MQ2rNXIlg1" resolve="MessageDeclaration" />
@@ -293,6 +298,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2hvQkqcZVm3">
+    <property role="3GE5qa" value="receive" />
     <ref role="1XX52x" to="vuss:2hvQkqcZV37" resolve="MessageReceiveStatement" />
     <node concept="3EZMnI" id="2hvQkqcZVm8" role="2wV5jI">
       <node concept="PMmxH" id="2hvQkqcZVmf" role="3EZMnx">
@@ -359,6 +365,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2hvQkqd0Jgo">
+    <property role="3GE5qa" value="receive" />
     <ref role="1XX52x" to="vuss:2hvQkqcZV6v" resolve="MessageReceiveHandler" />
     <node concept="3EZMnI" id="2hvQkqd0Jh8" role="2wV5jI">
       <node concept="l2Vlx" id="2hvQkqd5E3o" role="2iSdaV" />
@@ -377,6 +384,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2hvQkqd143U">
+    <property role="3GE5qa" value="receive" />
     <ref role="1XX52x" to="vuss:2hvQkqd143v" resolve="MessageExpression" />
     <node concept="PMmxH" id="2hvQkqd143Z" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />

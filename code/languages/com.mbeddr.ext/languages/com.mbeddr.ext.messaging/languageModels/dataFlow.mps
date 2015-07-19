@@ -44,6 +44,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -60,6 +63,7 @@
     </language>
   </registry>
   <node concept="3_zdsH" id="2hvQkqd2Cjo">
+    <property role="3GE5qa" value="receive" />
     <ref role="3_znuS" to="vuss:2hvQkqcZV37" resolve="MessageReceiveStatement" />
     <node concept="3__wT9" id="2hvQkqd2Cjp" role="3_A6iZ">
       <node concept="3clFbS" id="2hvQkqd2Cjq" role="2VODD2">
@@ -93,6 +97,7 @@
     </node>
   </node>
   <node concept="3_zdsH" id="2hvQkqd2EPW">
+    <property role="3GE5qa" value="receive" />
     <ref role="3_znuS" to="vuss:2hvQkqcZV6v" resolve="MessageReceiveHandler" />
     <node concept="3__wT9" id="2hvQkqd2EPX" role="3_A6iZ">
       <node concept="3clFbS" id="2hvQkqd2EPY" role="2VODD2">

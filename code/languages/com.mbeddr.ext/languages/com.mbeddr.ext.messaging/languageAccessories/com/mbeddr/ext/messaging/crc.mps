@@ -90,8 +90,17 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
+      <concept id="3788988821851860886" name="com.mbeddr.core.modules.structure.GlobalConstantDeclaration" flags="ng" index="4WHVk" />
+      <concept id="159275153965489898" name="com.mbeddr.core.modules.structure.PragmaDeclaration" flags="ng" index="2vBkk2">
+        <property id="159275153965499088" name="preText" index="2vBh$S" />
+        <property id="159275153965499091" name="postText" index="2vBh$V" />
+        <property id="159275153965489901" name="isSurrounding" index="2vBkk5" />
+      </concept>
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
+      </concept>
+      <concept id="3376775282622142916" name="com.mbeddr.core.modules.structure.AbstractDefineLike" flags="ng" index="2DRUVY">
+        <child id="3376775282622233992" name="value" index="2DQcEM" />
       </concept>
       <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
@@ -174,6 +183,13 @@
     <node concept="1sgJKc" id="6JJhAyRb1XV" role="N3F5h">
       <property role="TrG5h" value="crcData" />
       <property role="2OOxQR" value="true" />
+      <node concept="1dpRTG" id="6JJhAyRb2Fn" role="HszBJ">
+        <property role="TrG5h" value="len" />
+        <node concept="2O5j3L" id="6JJhAyRb2Fl" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
       <node concept="1dpRTG" id="6JJhAyRb2DG" role="HszBJ">
         <property role="TrG5h" value="data" />
         <node concept="3wxxNl" id="6JJhAyRb2DQ" role="2C2TGm">
@@ -183,13 +199,6 @@
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
-        </node>
-      </node>
-      <node concept="1dpRTG" id="6JJhAyRb2Fn" role="HszBJ">
-        <property role="TrG5h" value="len" />
-        <node concept="2O5j3L" id="6JJhAyRb2Fl" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
         </node>
       </node>
     </node>
@@ -244,7 +253,7 @@
     </node>
     <node concept="N3Fnx" id="2hvQkqdiCp0" role="N3F5h">
       <property role="TrG5h" value="isValidCrcPtr" />
-      <property role="2OOxQR" value="false" />
+      <property role="2OOxQR" value="true" />
       <property role="3J7Ymq" value="true" />
       <node concept="19RgSI" id="2hvQkqdiCZA" role="1UOdpc">
         <property role="TrG5h" value="crc" />
@@ -349,7 +358,7 @@
     </node>
     <node concept="N3Fnx" id="6JJhAyRbNks" role="N3F5h">
       <property role="TrG5h" value="isValidCrcDataArray" />
-      <property role="2OOxQR" value="false" />
+      <property role="2OOxQR" value="true" />
       <property role="3J7Ymq" value="true" />
       <node concept="19RgSI" id="6JJhAyRbNkt" role="1UOdpc">
         <property role="TrG5h" value="crc" />
@@ -380,13 +389,13 @@
       <node concept="3XIRFW" id="6JJhAyRbNk$" role="3XIRFX">
         <node concept="2BFjQ_" id="6JJhAyRbNk_" role="3XIRFZ">
           <node concept="3TlM44" id="6JJhAyRbNkA" role="2BFjQA">
-            <node concept="3TlMh9" id="6JJhAyRbNkB" role="3TlMhJ">
-              <property role="2hmy$m" value="0" />
+            <node concept="3ZUYvv" id="520f1yMkguj" role="3TlMhJ">
+              <ref role="3ZUYvu" node="6JJhAyRbNkt" resolve="crc" />
             </node>
             <node concept="3O_q_g" id="6JJhAyRbNkC" role="3TlMhI">
               <ref role="3O_q_h" node="6JJhAyRaXGN" resolve="crc8DataArray" />
-              <node concept="3ZUYvv" id="6JJhAyRbNkD" role="3O_q_j">
-                <ref role="3ZUYvu" node="6JJhAyRbNkt" resolve="crc" />
+              <node concept="3TlMh9" id="520f1yMkfMM" role="3O_q_j">
+                <property role="2hmy$m" value="0" />
               </node>
               <node concept="3ZUYvv" id="6JJhAyRbNkE" role="3O_q_j">
                 <ref role="3ZUYvu" node="6JJhAyRbNkv" resolve="data" />
@@ -1568,6 +1577,30 @@
     </node>
     <node concept="2NXPZ9" id="2hvQkqdi0Ve" role="N3F5h">
       <property role="TrG5h" value="empty_1437250766701_5" />
+    </node>
+    <node concept="2vBkk2" id="6JJhAyRf6LZ" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="__crcPackStruct" />
+      <property role="2vBkk5" value="true" />
+      <property role="2vBh$S" value="#pragma pack(push, 1)" />
+      <property role="2vBh$V" value="#pragma pack(pop)" />
+    </node>
+  </node>
+  <node concept="N3F5e" id="6JJhAyRjYc9">
+    <property role="TrG5h" value="MessageConstants" />
+    <node concept="4WHVk" id="6JJhAyRjYca" role="N3F5h">
+      <property role="TrG5h" value="MSG_BEGINN" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3Hbq_t" id="6JJhAyRjYcQ" role="2DQcEM">
+        <property role="2hmy$m" value="FF" />
+      </node>
+    </node>
+    <node concept="4WHVk" id="6JJhAyRjYz0" role="N3F5h">
+      <property role="TrG5h" value="MSG_END" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3Hbq_t" id="6JJhAyRjYz1" role="2DQcEM">
+        <property role="2hmy$m" value="00" />
+      </node>
     </node>
   </node>
 </model>

@@ -15,6 +15,7 @@
     <import index="vuss" ref="r:030bc2d0-ab1f-4013-9326-cb8d964c9de2(com.mbeddr.ext.messaging.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -38,6 +39,7 @@
       </concept>
       <concept id="1215695189714" name="jetbrains.mps.baseLanguage.structure.PlusAssignmentExpression" flags="nn" index="d57v9" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -82,6 +84,7 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -93,6 +96,9 @@
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -187,6 +193,43 @@
           <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="6JJhAyRchs9" role="13h7CS">
+      <property role="TrG5h" value="genMsgIdName" />
+      <node concept="3Tm1VV" id="6JJhAyRchsa" role="1B3o_S" />
+      <node concept="3clFbS" id="6JJhAyRchsb" role="3clF47">
+        <node concept="3clFbF" id="6JJhAyRct68" role="3cqZAp">
+          <node concept="3cpWs3" id="6JJhAyRcLvZ" role="3clFbG">
+            <node concept="Xl_RD" id="6JJhAyRcLw2" role="3uHU7w">
+              <property role="Xl_RC" value="_MSG_ID" />
+            </node>
+            <node concept="2OqwBi" id="6JJhAyRcM1E" role="3uHU7B">
+              <node concept="2OqwBi" id="6JJhAyRctw2" role="2Oq$k0">
+                <node concept="13iPFW" id="6JJhAyRct67" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6JJhAyRcugp" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6JJhAyRcMJe" role="2OqNvi">
+                <ref role="37wK5l" to="e2lb:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="6JJhAyRcino" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6JJhAyRcP4M" role="13h7CS">
+      <property role="TrG5h" value="genCRCMemberName" />
+      <node concept="3Tm1VV" id="6JJhAyRcP4N" role="1B3o_S" />
+      <node concept="3clFbS" id="6JJhAyRcP4O" role="3clF47">
+        <node concept="3clFbF" id="6JJhAyRcPgh" role="3cqZAp">
+          <node concept="Xl_RD" id="6JJhAyRcPgg" role="3clFbG">
+            <property role="Xl_RC" value="___crc" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="6JJhAyRcPgd" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="2hvQkqcMCI6">

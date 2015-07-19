@@ -33,6 +33,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -119,6 +122,7 @@
   <node concept="1TIwiD" id="2hvQkqcZV37">
     <property role="TrG5h" value="MessageReceiveStatement" />
     <property role="34LRSv" value="receive from" />
+    <property role="3GE5qa" value="receive" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="2hvQkqcZVlB" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -135,6 +139,7 @@
   </node>
   <node concept="1TIwiD" id="2hvQkqcZV6v">
     <property role="TrG5h" value="MessageReceiveHandler" />
+    <property role="3GE5qa" value="receive" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2hvQkqd0JfY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -145,12 +150,14 @@
     <node concept="1TJgyj" id="2hvQkqd0JfW" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="msg" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6MQ2rNXIlg1" resolve="MessageDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="2hvQkqd143v">
     <property role="TrG5h" value="MessageExpression" />
     <property role="34LRSv" value="msg" />
+    <property role="3GE5qa" value="receive" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="2hvQkqd1$WE">
