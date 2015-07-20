@@ -136,8 +136,8 @@
   </node>
   <node concept="1TIwiD" id="vg5qBCcr5S">
     <property role="3GE5qa" value="events" />
-    <property role="TrG5h" value="WaitStatement" />
-    <property role="34LRSv" value="wait" />
+    <property role="TrG5h" value="AwaitStatement" />
+    <property role="34LRSv" value="await" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="vg5qBCcrSp" role="1TKVEi">
       <property role="20lmBu" value="reference" />

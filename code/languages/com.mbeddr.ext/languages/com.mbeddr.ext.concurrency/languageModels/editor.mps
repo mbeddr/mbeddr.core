@@ -199,10 +199,10 @@
   </node>
   <node concept="24kQdi" id="vg5qBCcrTL">
     <property role="3GE5qa" value="events" />
-    <ref role="1XX52x" to="5wll:vg5qBCcr5S" resolve="WaitStatement" />
+    <ref role="1XX52x" to="5wll:vg5qBCcr5S" resolve="AwaitStatement" />
     <node concept="3EZMnI" id="vg5qBCcrTN" role="2wV5jI">
       <node concept="3F0ifn" id="vg5qBCcrTU" role="3EZMnx">
-        <property role="3F0ifm" value="wait" />
+        <property role="3F0ifm" value="await" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="1iCGBv" id="vg5qBCcrU0" role="3EZMnx">
