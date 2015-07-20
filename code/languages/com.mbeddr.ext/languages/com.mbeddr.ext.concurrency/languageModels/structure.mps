@@ -385,7 +385,7 @@
     <property role="TrG5h" value="BlockingConstraint" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
-    <property role="34LRSv" value="blocking" />
+    <property role="34LRSv" value="blockable" />
     <ref role="1TJDcQ" node="66UaKxBOktG" resolve="SingleTaskSchedulingConstraint" />
     <node concept="PrWs8" id="4hMIGYxmX_0" role="PzmwI">
       <ref role="PrY4T" node="2ajpxDX4JWB" resolve="IDeclaresTask" />
