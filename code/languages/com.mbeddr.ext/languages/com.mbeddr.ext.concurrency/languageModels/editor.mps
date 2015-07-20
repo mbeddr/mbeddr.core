@@ -710,10 +710,6 @@
         <property role="3F0ifm" value="queue" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
-      <node concept="3F0ifn" id="1zeZsIbCIKO" role="3EZMnx">
-        <property role="3F0ifm" value="type" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-      </node>
       <node concept="3F0ifn" id="1zeZsIbBam1" role="3EZMnx">
         <property role="3F0ifm" value="[" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
