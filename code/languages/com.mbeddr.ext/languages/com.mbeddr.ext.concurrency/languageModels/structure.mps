@@ -442,7 +442,7 @@
   <node concept="1TIwiD" id="4mSSgpjgrEk">
     <property role="3GE5qa" value="queue" />
     <property role="TrG5h" value="TakeStatement" />
-    <property role="34LRSv" value="take" />
+    <property role="34LRSv" value="dequeue" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyi" id="1zeZsIbd2$8" role="1TKVEl">
       <property role="TrG5h" value="blockOnTake" />

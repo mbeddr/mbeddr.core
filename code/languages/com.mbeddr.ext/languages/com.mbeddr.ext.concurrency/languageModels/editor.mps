@@ -641,7 +641,7 @@
     <ref role="1XX52x" to="5wll:4mSSgpjgrEk" resolve="TakeStatement" />
     <node concept="3EZMnI" id="4mSSgpjguSe" role="2wV5jI">
       <node concept="3F0ifn" id="4mSSgpjguSl" role="3EZMnx">
-        <property role="3F0ifm" value="take" />
+        <property role="3F0ifm" value="dequeue" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="2aMyGU" id="1zeZsIbd3Jp" role="3EZMnx">
@@ -659,7 +659,7 @@
       </node>
       <node concept="l2Vlx" id="4mSSgpjguSh" role="2iSdaV" />
       <node concept="3F0ifn" id="1zeZsIbqJE2" role="3EZMnx">
-        <property role="3F0ifm" value="as" />
+        <property role="3F0ifm" value="-&gt;" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="3F0ifn" id="4mSSgpjguSr" role="3EZMnx">
