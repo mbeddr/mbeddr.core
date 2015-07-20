@@ -20,6 +20,7 @@
       </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <reference id="1083241965437" name="defaultMember" index="Qgau1" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
@@ -285,17 +286,17 @@
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="cyclic" />
     <ref role="1TJDcQ" node="66UaKxBOktG" resolve="SingleTaskSchedulingConstraint" />
-    <node concept="1TJgyj" id="12_KeTzTFNK" role="1TKVEi">
+    <node concept="1TJgyj" id="6zcb4tIpoDS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="period" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <ref role="20lvS9" node="6zcb4tI8Sbk" resolve="TimeWithUnit" />
     </node>
     <node concept="1TJgyj" id="4hMIGYwDDVd" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="offset" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <ref role="20lvS9" node="6zcb4tI8Sbk" resolve="TimeWithUnit" />
     </node>
     <node concept="PrWs8" id="2ajpxDX4K0E" role="PzmwI">
       <ref role="PrY4T" node="2ajpxDX4JWB" resolve="IDeclaresTask" />
@@ -306,11 +307,11 @@
     <property role="TrG5h" value="WCETConstraint" />
     <property role="34LRSv" value="wcet" />
     <ref role="1TJDcQ" node="66UaKxBOktG" resolve="SingleTaskSchedulingConstraint" />
-    <node concept="1TJgyj" id="12_KeTzWS0L" role="1TKVEi">
+    <node concept="1TJgyj" id="6zcb4tIvPid" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="wcet" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <ref role="20lvS9" node="6zcb4tI8Sbk" resolve="TimeWithUnit" />
     </node>
   </node>
   <node concept="1TIwiD" id="12_KeTzXBM1">
@@ -369,7 +370,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <ref role="20lvS9" node="6zcb4tI8Sbk" resolve="TimeWithUnit" />
     </node>
   </node>
   <node concept="PlHQZ" id="2ajpxDX4JWB">
@@ -396,20 +397,24 @@
     <property role="34LRSv" value="delay until" />
     <property role="3GE5qa" value="util" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
-    <node concept="1TJgyj" id="22QtsSp4WtA" role="1TKVEi">
+    <node concept="1TJgyj" id="6zcb4tIgbDS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <ref role="20lvS9" node="6zcb4tI8Sbk" resolve="TimeWithUnit" />
     </node>
   </node>
   <node concept="1TIwiD" id="22QtsSp64LA">
     <property role="TrG5h" value="IterationStartTimeTarget" />
-    <property role="34LRSv" value="iterationStartTime" />
+    <property role="34LRSv" value="iterationStartTimeInMicroseconds" />
     <property role="3GE5qa" value="tasks.context" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="22QtsSp64LB" role="PzmwI">
       <ref role="PrY4T" node="12_KeTzZPRN" resolve="ITaskContextTarget" />
+    </node>
+    <node concept="1TJgyi" id="6zcb4tIinWU" role="1TKVEl">
+      <property role="TrG5h" value="unit" />
+      <ref role="AX2Wp" node="6zcb4tI8S9C" resolve="TimeUnit" />
     </node>
   </node>
   <node concept="1TIwiD" id="2TPZctDdhaS">
@@ -518,6 +523,37 @@
       <property role="20kJfa" value="queue" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1zeZsIbB9X5" resolve="ConcurrentQueueDeclaration" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="6zcb4tI8S9C">
+    <property role="TrG5h" value="TimeUnit" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <ref role="Qgau1" node="6zcb4tI8Sb5" />
+    <node concept="M4N5e" id="6zcb4tI8S9D" role="M5hS2">
+      <property role="1uS6qo" value="us" />
+      <property role="1uS6qv" value="us" />
+    </node>
+    <node concept="M4N5e" id="6zcb4tI8Sb5" role="M5hS2">
+      <property role="1uS6qo" value="ms" />
+      <property role="1uS6qv" value="ms" />
+    </node>
+    <node concept="M4N5e" id="6zcb4tI8Sb8" role="M5hS2">
+      <property role="1uS6qo" value="s" />
+      <property role="1uS6qv" value="s" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6zcb4tI8Sbk">
+    <property role="TrG5h" value="TimeWithUnit" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6zcb4tI8WRf" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyi" id="6zcb4tI8X6l" role="1TKVEl">
+      <property role="TrG5h" value="unit" />
+      <ref role="AX2Wp" node="6zcb4tI8S9C" resolve="TimeUnit" />
     </node>
   </node>
 </model>

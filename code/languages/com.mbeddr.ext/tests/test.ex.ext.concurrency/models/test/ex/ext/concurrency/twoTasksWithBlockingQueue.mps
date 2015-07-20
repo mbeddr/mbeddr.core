@@ -156,6 +156,10 @@
       <concept id="7041988282448692952" name="com.mbeddr.ext.concurrency.structure.ScheduleSpecification" flags="ng" index="6qQRg">
         <child id="7041988282448692992" name="constraints" index="6qQK8" />
       </concept>
+      <concept id="7551459360495600340" name="com.mbeddr.ext.concurrency.structure.TimeWithUnit" flags="ng" index="6VUUj">
+        <property id="7551459360495620501" name="unit" index="6VZRi" />
+        <child id="7551459360495619535" name="value" index="6VY68" />
+      </concept>
       <concept id="1787645152775151429" name="com.mbeddr.ext.concurrency.structure.ConcurrentQueueDeclaration" flags="ng" index="2jkAae">
         <property id="1787645152775151519" name="blockable" index="2jkA9k" />
         <child id="1787645152775152489" name="size" index="2jk_Uy" />
@@ -186,7 +190,7 @@
       <concept id="562973772909978142" name="com.mbeddr.ext.concurrency.structure.TaskContextExpr" flags="ng" index="3JYjuR" />
       <concept id="562973772910397379" name="com.mbeddr.ext.concurrency.structure.CyclicTaskKind" flags="ng" index="3JZT9E" />
       <concept id="1199577005874920622" name="com.mbeddr.ext.concurrency.structure.CyclicConstraint" flags="ng" index="1NgRL0">
-        <child id="1199577005874920688" name="period" index="1NgRKu" />
+        <child id="7551459360499927672" name="period" index="6EqoZ" />
       </concept>
       <concept id="1199577005875952769" name="com.mbeddr.ext.concurrency.structure.ConcurrencyConfigItem" flags="ng" index="1NkVLJ">
         <child id="1199577005875986116" name="genStrategy" index="1NkNSE" />
@@ -391,8 +395,10 @@
       <node concept="1NgRL0" id="1zeZsIba3xO" role="6qQK8">
         <property role="3_dPry" value="1" />
         <ref role="6qQL_" node="1zeZsIba3x3" resolve="measure" />
-        <node concept="3TlMh9" id="1zeZsIba3xP" role="1NgRKu">
-          <property role="2hmy$m" value="100" />
+        <node concept="6VUUj" id="6zcb4tIu9ms" role="6EqoZ">
+          <node concept="3TlMh9" id="6zcb4tIu9mA" role="6VY68">
+            <property role="2hmy$m" value="100" />
+          </node>
         </node>
       </node>
       <node concept="3_amfM" id="1zeZsIba810" role="6qQK8">
@@ -415,12 +421,15 @@
           <ref role="6qOXx" node="1zeZsIba3xN" resolve="sched" />
         </node>
         <node concept="1OFKyr" id="1zeZsIba3xX" role="3XIRFZ">
-          <node concept="2BOcij" id="1zeZsIba3xY" role="1OFKyo">
-            <node concept="3TlMh9" id="1zeZsIba3xZ" role="3TlMhJ">
-              <property role="2hmy$m" value="20" />
-            </node>
-            <node concept="3TlMh9" id="1zeZsIba3y0" role="3TlMhI">
-              <property role="2hmy$m" value="100" />
+          <node concept="6VUUj" id="6zcb4tIerUQ" role="1OFKyo">
+            <property role="6VZRi" value="ms" />
+            <node concept="2BOcij" id="6zcb4tIes0T" role="6VY68">
+              <node concept="3TlMh9" id="6zcb4tIes0W" role="3TlMhJ">
+                <property role="2hmy$m" value="20" />
+              </node>
+              <node concept="3TlMh9" id="6zcb4tIerWD" role="3TlMhI">
+                <property role="2hmy$m" value="100" />
+              </node>
             </node>
           </node>
         </node>

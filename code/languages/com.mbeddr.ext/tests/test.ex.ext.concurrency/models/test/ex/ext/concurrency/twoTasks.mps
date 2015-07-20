@@ -151,25 +151,29 @@
       <concept id="7041988282448692952" name="com.mbeddr.ext.concurrency.structure.ScheduleSpecification" flags="ng" index="6qQRg">
         <child id="7041988282448692992" name="constraints" index="6qQK8" />
       </concept>
+      <concept id="7551459360495600340" name="com.mbeddr.ext.concurrency.structure.TimeWithUnit" flags="ng" index="6VUUj">
+        <property id="7551459360495620501" name="unit" index="6VZRi" />
+        <child id="7551459360495619535" name="value" index="6VY68" />
+      </concept>
       <concept id="8137843191085062424" name="com.mbeddr.ext.concurrency.structure.Task" flags="ng" index="1iAVhs">
         <child id="8137843191085079198" name="body" index="1iABvq" />
         <child id="562973772910397408" name="kind" index="3JZT99" />
       </concept>
       <concept id="2491447282819596071" name="com.mbeddr.ext.concurrency.structure.IDeclaresTask" flags="ng" index="1vwp$X">
-        <property id="4932209942850825261" name="threadID" index="3_dPry" />
+        <property id="4932209942850825261" name="taskID" index="3_dPry" />
       </concept>
       <concept id="562973772909978142" name="com.mbeddr.ext.concurrency.structure.TaskContextExpr" flags="ng" index="3JYjuR" />
       <concept id="562973772910397379" name="com.mbeddr.ext.concurrency.structure.CyclicTaskKind" flags="ng" index="3JZT9E" />
       <concept id="1199577005874920622" name="com.mbeddr.ext.concurrency.structure.CyclicConstraint" flags="ng" index="1NgRL0">
+        <child id="7551459360499927672" name="period" index="6EqoZ" />
         <child id="4932209942840385229" name="offset" index="3$P2g2" />
-        <child id="1199577005874920688" name="period" index="1NgRKu" />
       </concept>
       <concept id="1199577005875952769" name="com.mbeddr.ext.concurrency.structure.ConcurrencyConfigItem" flags="ng" index="1NkVLJ">
         <child id="1199577005875986116" name="genStrategy" index="1NkNSE" />
       </concept>
       <concept id="1199577005876317481" name="com.mbeddr.ext.concurrency.structure.TerminateStatement" flags="ng" index="1NmsR7" />
       <concept id="1199577005876533973" name="com.mbeddr.ext.concurrency.structure.IterationNoTarget" flags="ng" index="1NmDCV" />
-      <concept id="1199577005877282933" name="com.mbeddr.ext.concurrency.structure.DelayStatement" flags="ng" index="1OFKyr">
+      <concept id="1199577005877282933" name="com.mbeddr.ext.concurrency.structure.DelayByStatement" flags="ng" index="1OFKyr">
         <child id="1199577005877282934" name="value" index="1OFKyo" />
       </concept>
     </language>
@@ -419,18 +423,24 @@
       <node concept="1NgRL0" id="3xRFG9PQKis" role="6qQK8">
         <property role="3_dPry" value="1" />
         <ref role="6qQL_" node="3xRFG9PQKhV" resolve="measure" />
-        <node concept="3TlMh9" id="3xRFG9PQKit" role="1NgRKu">
-          <property role="2hmy$m" value="100" />
+        <node concept="6VUUj" id="6zcb4tIu55w" role="6EqoZ">
+          <node concept="3TlMh9" id="6zcb4tIu55E" role="6VY68">
+            <property role="2hmy$m" value="100" />
+          </node>
         </node>
       </node>
       <node concept="1NgRL0" id="4hMIGYwMIWg" role="6qQK8">
         <property role="3_dPry" value="2" />
         <ref role="6qQL_" node="3xRFG9PQZx6" resolve="summer" />
-        <node concept="3TlMh9" id="4hMIGYwMIWC" role="1NgRKu">
-          <property role="2hmy$m" value="1000" />
+        <node concept="6VUUj" id="6zcb4tIu57M" role="6EqoZ">
+          <node concept="3TlMh9" id="6zcb4tIu58d" role="6VY68">
+            <property role="2hmy$m" value="1000" />
+          </node>
         </node>
-        <node concept="3TlMh9" id="4hMIGYwMJ4F" role="3$P2g2">
-          <property role="2hmy$m" value="1000" />
+        <node concept="6VUUj" id="6zcb4tIu5fF" role="3$P2g2">
+          <node concept="3TlMh9" id="6zcb4tIu5fP" role="6VY68">
+            <property role="2hmy$m" value="1000" />
+          </node>
         </node>
       </node>
     </node>
@@ -449,8 +459,11 @@
           <ref role="6qOXx" node="3xRFG9PQKir" resolve="sched" />
         </node>
         <node concept="1OFKyr" id="3xRFG9PQKiz" role="3XIRFZ">
-          <node concept="3TlMh9" id="3xRFG9PQKi$" role="1OFKyo">
-            <property role="2hmy$m" value="4000" />
+          <node concept="6VUUj" id="6zcb4tIerh7" role="1OFKyo">
+            <property role="6VZRi" value="s" />
+            <node concept="3TlMh9" id="6zcb4tIerjh" role="6VY68">
+              <property role="2hmy$m" value="4" />
+            </node>
           </node>
         </node>
         <node concept="2N2KuS" id="4hMIGYwD0pz" role="3XIRFZ">

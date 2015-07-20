@@ -41,6 +41,9 @@
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
       </concept>
+      <concept id="1679452829930336984" name="com.mbeddr.core.statements.structure.CommentStatement" flags="ng" index="1QiMYF">
+        <child id="8624890525768479139" name="textblock" index="3SJzmv" />
+      </concept>
       <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
         <child id="4185783222026502647" name="init" index="3XIe9u" />
       </concept>
@@ -49,6 +52,14 @@
       </concept>
       <concept id="2093108837558113914" name="com.mbeddr.core.statements.structure.LocalVarRef" flags="ng" index="3ZVu4v">
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
@@ -85,6 +96,11 @@
       </concept>
       <concept id="7034214596253391076" name="com.mbeddr.core.udt.structure.GenericMemberRef" flags="ng" index="1E4Tgc">
         <reference id="7034214596253391078" name="member" index="1E4Tge" />
+      </concept>
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
@@ -134,7 +150,6 @@
       <concept id="4620120465980402700" name="com.mbeddr.core.expressions.structure.GenericDotExpression" flags="ng" index="2qmXGp">
         <child id="7034214596252529803" name="target" index="1ESnxz" />
       </concept>
-      <concept id="5763383285156373020" name="com.mbeddr.core.expressions.structure.MultiExpression" flags="ng" index="2BOcij" />
       <concept id="5763383285156373018" name="com.mbeddr.core.expressions.structure.MinusExpression" flags="ng" index="2BOcil" />
       <concept id="5763383285156533447" name="com.mbeddr.core.expressions.structure.ParensExpression" flags="ng" index="2BPB98" />
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
@@ -727,7 +742,7 @@
               <ref role="3ZVs_2" node="2ajpxDX27gW" resolve="now" />
             </node>
             <node concept="3ZUYvv" id="2ajpxDX27kZ" role="3TlMhI">
-              <ref role="3ZUYvu" node="2ajpxDX27gl" resolve="until" />
+              <ref role="3ZUYvu" node="2ajpxDX27gl" resolve="untilInMicroseconds" />
             </node>
           </node>
         </node>
@@ -735,13 +750,8 @@
           <node concept="szcXh" id="2ajpxDX2nfr" role="1_9egR">
             <property role="s$NqZ" value="usleep" />
             <property role="s$Nrh" value="&lt;unistd.h&gt;" />
-            <node concept="2BOcij" id="3xRFG9PKSR4" role="s$Nrb">
-              <node concept="3TlMh9" id="3xRFG9PKSR7" role="3TlMhJ">
-                <property role="2hmy$m" value="1000" />
-              </node>
-              <node concept="3ZVu4v" id="2ajpxDX2ng5" role="3TlMhI">
-                <ref role="3ZVs_2" node="2ajpxDX27ka" resolve="delta" />
-              </node>
+            <node concept="3ZVu4v" id="6zcb4tIgory" role="s$Nrb">
+              <ref role="3ZVs_2" node="2ajpxDX27ka" resolve="delta" />
             </node>
           </node>
         </node>
@@ -751,7 +761,7 @@
         <property role="2c7vTL" value="false" />
       </node>
       <node concept="19RgSI" id="2ajpxDX27gl" role="1UOdpc">
-        <property role="TrG5h" value="until" />
+        <property role="TrG5h" value="untilInMicroseconds" />
         <node concept="26Vqp1" id="4hMIGYwKoiT" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
@@ -787,10 +797,19 @@
             </node>
           </node>
         </node>
+        <node concept="1QiMYF" id="6zcb4tIgrr8" role="3XIRFZ">
+          <node concept="OjmMv" id="6zcb4tIgrra" role="3SJzmv">
+            <node concept="19SGf9" id="6zcb4tIgrrb" role="OjmMu">
+              <node concept="19SUe$" id="6zcb4tIgrrc" role="19SJt6">
+                <property role="19SUeA" value="return in microseconds" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="2BFjQ_" id="4hMIGYwKdLn" role="3XIRFZ">
           <node concept="19_ADJ" id="4hMIGYwKdLN" role="2BFjQA">
             <node concept="19_wF0" id="4hMIGYwKdML" role="19_wF2">
-              <property role="19_wF3" value="spec.time * 1000 + spec.millitm" />
+              <property role="19_wF3" value="(spec.time * 1000 + spec.millitm) * 1000" />
             </node>
             <node concept="26Vqp1" id="4hMIGYwKdP2" role="3YFD5m">
               <property role="2caQfQ" value="false" />

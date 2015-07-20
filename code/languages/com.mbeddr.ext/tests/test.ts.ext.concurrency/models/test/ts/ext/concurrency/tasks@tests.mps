@@ -157,6 +157,10 @@
       <concept id="7041988282448692952" name="com.mbeddr.ext.concurrency.structure.ScheduleSpecification" flags="ng" index="6qQRg">
         <child id="7041988282448692992" name="constraints" index="6qQK8" />
       </concept>
+      <concept id="7551459360495600340" name="com.mbeddr.ext.concurrency.structure.TimeWithUnit" flags="ng" index="6VUUj">
+        <property id="7551459360495620501" name="unit" index="6VZRi" />
+        <child id="7551459360495619535" name="value" index="6VY68" />
+      </concept>
       <concept id="1787645152775151429" name="com.mbeddr.ext.concurrency.structure.ConcurrentQueueDeclaration" flags="ng" index="2jkAae">
         <property id="1787645152775151519" name="blockable" index="2jkA9k" />
         <child id="1787645152775152489" name="size" index="2jk_Uy" />
@@ -182,7 +186,7 @@
       <concept id="2491447282819596071" name="com.mbeddr.ext.concurrency.structure.IDeclaresTask" flags="ng" index="1vwp$X">
         <property id="4932209942850825261" name="taskID" index="3_dPry" />
       </concept>
-      <concept id="562973772910539128" name="com.mbeddr.ext.concurrency.structure.WaitStatement" flags="ng" index="3JSqjh">
+      <concept id="562973772910539128" name="com.mbeddr.ext.concurrency.structure.AwaitStatement" flags="ng" index="3JSqjh">
         <reference id="562973772910542361" name="event" index="3JSqIK" />
       </concept>
       <concept id="562973772910539090" name="com.mbeddr.ext.concurrency.structure.BlockingKind" flags="ng" index="3JSqjV" />
@@ -202,7 +206,7 @@
       <concept id="562973772910397379" name="com.mbeddr.ext.concurrency.structure.CyclicTaskKind" flags="ng" index="3JZT9E" />
       <concept id="562973772910397190" name="com.mbeddr.ext.concurrency.structure.EventDeclaration" flags="ng" index="3JZTaJ" />
       <concept id="1199577005874920622" name="com.mbeddr.ext.concurrency.structure.CyclicConstraint" flags="ng" index="1NgRL0">
-        <child id="1199577005874920688" name="period" index="1NgRKu" />
+        <child id="7551459360499927672" name="period" index="6EqoZ" />
       </concept>
       <concept id="1199577005875757023" name="com.mbeddr.ext.concurrency.structure.WCETConstraint" flags="ng" index="1NlFWL">
         <child id="1199577005875757105" name="wcet" index="1Nl$3v" />
@@ -776,23 +780,28 @@
           <node concept="1NgRL0" id="12_KeTzW5SN" role="6qQK8">
             <property role="3_dPry" value="1" />
             <ref role="6qQL_" node="66UaKxBOVxW" resolve="aBlockingTask" />
-            <node concept="2BOciq" id="12_KeTzW61c" role="1NgRKu">
-              <node concept="3TlMh9" id="12_KeTzW61f" role="3TlMhJ">
-                <property role="2hmy$m" value="10" />
-              </node>
-              <node concept="3TlMh9" id="12_KeTzW5ST" role="3TlMhI">
-                <property role="2hmy$m" value="10" />
-              </node>
-            </node>
             <node concept="7CXmI" id="12_KeTzW_aN" role="lGtFl">
               <node concept="1TM$A" id="12_KeTzW_aO" role="7EUXB" />
+            </node>
+            <node concept="6VUUj" id="6zcb4tItsPK" role="6EqoZ">
+              <node concept="2BOciq" id="6zcb4tItsY9" role="6VY68">
+                <node concept="3TlMh9" id="6zcb4tItsYc" role="3TlMhJ">
+                  <property role="2hmy$m" value="10" />
+                </node>
+                <node concept="3TlMh9" id="6zcb4tItsVZ" role="3TlMhI">
+                  <property role="2hmy$m" value="10" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="1NgRL0" id="12_KeTzW_8y" role="6qQK8">
             <property role="3_dPry" value="2" />
             <ref role="6qQL_" node="12_KeTzW_69" resolve="aCyclicTask" />
-            <node concept="3TlMh9" id="12_KeTzW_8H" role="1NgRKu">
-              <property role="2hmy$m" value="20" />
+            <node concept="6VUUj" id="6zcb4tIttAE" role="6EqoZ">
+              <property role="6VZRi" value="ms" />
+              <node concept="3TlMh9" id="6zcb4tIttAO" role="6VY68">
+                <property role="2hmy$m" value="20" />
+              </node>
             </node>
           </node>
           <node concept="1NlFWL" id="12_KeTzXB$N" role="6qQK8">
