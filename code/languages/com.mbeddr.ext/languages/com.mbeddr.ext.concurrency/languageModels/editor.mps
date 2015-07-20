@@ -141,6 +141,7 @@
       </node>
       <node concept="3F0A7n" id="73JrkgytjFi" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" to="r4b4:5v_KyvNCJ0N" resolve="StructuralIdentifier" />
       </node>
       <node concept="3F1sOY" id="73JrkgytjFq" role="3EZMnx">
         <ref role="1NtTu8" to="5wll:73JrkgythEu" />
@@ -161,6 +162,7 @@
     <ref role="1XX52x" to="5wll:vg5qBCbnaE" resolve="FirstRunTarget" />
     <node concept="3F0ifn" id="vg5qBCbnb7" role="2wV5jI">
       <property role="3F0ifm" value="firstRun" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
     </node>
   </node>
   <node concept="24kQdi" id="vg5qBCbSvr">
@@ -184,6 +186,7 @@
       </node>
       <node concept="3F0A7n" id="vg5qBCcb8x" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dhBxG" resolve="GlobalVariable" />
       </node>
       <node concept="l2Vlx" id="vg5qBCcb8n" role="2iSdaV" />
       <node concept="3F0ifn" id="vg5qBCcb8D" role="3EZMnx">
@@ -271,6 +274,7 @@
       </node>
       <node concept="3F0A7n" id="vg5qBCe_RZ" role="3EZMnx">
         <ref role="1NtTu8" to="5wll:vg5qBCe_P8" resolve="kind" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
         <node concept="Vb9p2" id="66UaKxB_fHg" role="3F10Kt">
           <property role="Vbekb" value="BOLD" />
         </node>
@@ -368,6 +372,7 @@
         </node>
         <node concept="3F0A7n" id="66UaKxBOVzD" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="r4b4:5v_KyvNCJ0N" resolve="StructuralIdentifier" />
         </node>
         <node concept="3F0ifn" id="66UaKxBOVzL" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -530,6 +535,7 @@
     <ref role="1XX52x" to="5wll:12_KeTzZPFl" resolve="IterationNoTarget" />
     <node concept="3F0ifn" id="12_KeTzZPJB" role="2wV5jI">
       <property role="3F0ifm" value="iteration" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
     </node>
   </node>
   <node concept="24kQdi" id="12_KeT$2Gyf">
@@ -642,9 +648,7 @@
         <property role="2aYyza" value="blocking" />
         <property role="2aYyvO" value="if available" />
         <ref role="1NtTu8" to="5wll:1zeZsIbd2$8" resolve="blockOnTake" />
-        <node concept="Vb9p2" id="1zeZsIbdafq" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
-        </node>
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="3F0ifn" id="4mSSgpjguSz" role="3EZMnx">
         <property role="3F0ifm" value="from" />
@@ -660,6 +664,7 @@
       </node>
       <node concept="3F0ifn" id="4mSSgpjguSr" role="3EZMnx">
         <property role="3F0ifm" value="val" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="3F1sOY" id="4mSSgpjguT3" role="3EZMnx">
         <ref role="1NtTu8" to="5wll:4mSSgpjguT0" />
@@ -668,9 +673,10 @@
   </node>
   <node concept="24kQdi" id="4mSSgpjhPZw">
     <property role="3GE5qa" value="queue" />
-    <ref role="1XX52x" to="5wll:4mSSgpjhPZ8" resolve="QueueValExpr" />
+    <ref role="1XX52x" to="5wll:4mSSgpjhPZ8" resolve="ConcurrentQueueValExpr" />
     <node concept="3F0ifn" id="4mSSgpjhPZy" role="2wV5jI">
       <property role="3F0ifm" value="val" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
     </node>
   </node>
   <node concept="24kQdi" id="1zeZsIba87p">
@@ -687,7 +693,7 @@
   </node>
   <node concept="24kQdi" id="1zeZsIbBae3">
     <property role="3GE5qa" value="queue" />
-    <ref role="1XX52x" to="5wll:1zeZsIbB9X5" resolve="ConcurrentQueue" />
+    <ref role="1XX52x" to="5wll:1zeZsIbB9X5" resolve="ConcurrentQueueDeclaration" />
     <node concept="3EZMnI" id="1zeZsIbBahF" role="2wV5jI">
       <node concept="l2Vlx" id="1zeZsIbBahG" role="2iSdaV" />
       <node concept="3F0ifn" id="1zeZsIbBahC" role="3EZMnx">
@@ -698,9 +704,7 @@
         <property role="2aYyza" value="blockable" />
         <property role="2aYyvO" value="non-blockable" />
         <ref role="1NtTu8" to="5wll:1zeZsIbB9Yv" resolve="blockable" />
-        <node concept="Vb9p2" id="1zeZsIbBal8" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
-        </node>
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="3F0ifn" id="1zeZsIbBalx" role="3EZMnx">
         <property role="3F0ifm" value="queue" />
@@ -738,6 +742,7 @@
       </node>
       <node concept="3F0A7n" id="1zeZsIbCIO3" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" to="r4b4:2CEi94di1o$" resolve="TypeDef" />
       </node>
       <node concept="3F0ifn" id="1zeZsIbBaiG" role="3EZMnx">
         <property role="3F0ifm" value=";" />
@@ -750,10 +755,12 @@
     <ref role="1XX52x" to="5wll:1UML6duC7CN" resolve="ConcurrentQueueType" />
     <node concept="1iCGBv" id="1UML6duC9Xk" role="2wV5jI">
       <ref role="1NtTu8" to="5wll:1UML6duC7CO" />
+      <ref role="1k5W1q" to="r4b4:2CEi94di1o$" resolve="TypeDef" />
       <node concept="1sVBvm" id="1UML6duC9Xm" role="1sWHZn">
         <node concept="3F0A7n" id="1UML6duC9XX" role="2wV5jI">
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="r4b4:2CEi94dhBxG" resolve="GlobalVariable" />
         </node>
       </node>
     </node>
