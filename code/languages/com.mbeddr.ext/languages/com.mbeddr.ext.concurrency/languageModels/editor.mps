@@ -470,16 +470,16 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="12_KeTzWS0z" role="3EZMnx">
-        <property role="3F0ifm" value=":" />
-        <node concept="11L4FC" id="12_KeTzWS1J" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="3F1sOY" id="12_KeTzWS0N" role="3EZMnx">
         <ref role="1NtTu8" to="5wll:12_KeTzWS0L" />
       </node>
       <node concept="l2Vlx" id="12_KeTzWRZW" role="2iSdaV" />
+      <node concept="3F0ifn" id="6zcb4tI8BSZ" role="3EZMnx">
+        <property role="3F0ifm" value="ms" />
+        <node concept="Vb9p2" id="6zcb4tI8Pin" role="3F10Kt">
+          <property role="Vbekb" value="ITALIC" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="12_KeTzXJVt">
