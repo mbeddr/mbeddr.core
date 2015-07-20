@@ -28,7 +28,9 @@ talk about unit for time
 wait -> await
 dequeue (if avail) from data -> val
 check blocking take only if blockbale queue
-remove the @blocking attribute from queues  
+remove the @blocking attribute from queues
+Move the locking and blocking into the enqueue dequeue functions
+  (if queue is blockable)  
 
 
 

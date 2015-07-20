@@ -484,17 +484,6 @@
     <property role="3GE5qa" value="queue" />
     <property role="TrG5h" value="IConcurrentQueueUser" />
   </node>
-  <node concept="1TIwiD" id="1zeZsIba833">
-    <property role="3GE5qa" value="queue" />
-    <property role="TrG5h" value="BlockingAnnotation" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="M6xJ_" id="1zeZsIba86Y" role="lGtFl">
-      <property role="Hh88m" value="blocking" />
-      <node concept="trNpa" id="1zeZsIba870" role="EQaZv">
-        <ref role="trN6q" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
-      </node>
-    </node>
-  </node>
   <node concept="1TIwiD" id="1zeZsIbB9X5">
     <property role="3GE5qa" value="queue" />
     <property role="TrG5h" value="ConcurrentQueueDeclaration" />

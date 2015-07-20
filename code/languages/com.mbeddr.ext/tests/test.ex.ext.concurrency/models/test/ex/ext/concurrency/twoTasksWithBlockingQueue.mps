@@ -156,12 +156,11 @@
       <concept id="7041988282448692952" name="com.mbeddr.ext.concurrency.structure.ScheduleSpecification" flags="ng" index="6qQRg">
         <child id="7041988282448692992" name="constraints" index="6qQK8" />
       </concept>
-      <concept id="1787645152775151429" name="com.mbeddr.ext.concurrency.structure.ConcurrentQueue" flags="ng" index="2jkAae">
+      <concept id="1787645152775151429" name="com.mbeddr.ext.concurrency.structure.ConcurrentQueueDeclaration" flags="ng" index="2jkAae">
         <property id="1787645152775151519" name="blockable" index="2jkA9k" />
         <child id="1787645152775152489" name="size" index="2jk_Uy" />
         <child id="1787645152775152485" name="elementType" index="2jk_UI" />
       </concept>
-      <concept id="1787645152767541443" name="com.mbeddr.ext.concurrency.structure.BlockingAnnotation" flags="ng" index="2jTBO8" />
       <concept id="5024012801614658196" name="com.mbeddr.ext.concurrency.structure.TakeStatement" flags="ng" index="mYlIi">
         <property id="1787645152768305416" name="blockOnTake" index="2jYHj3" />
         <child id="5024012801614671424" name="body" index="mYgX6" />
@@ -268,7 +267,6 @@
         <ref role="104FTn" node="1UML6duJN9C" resolve="int64queue" />
       </node>
       <node concept="6bTlU" id="1zeZsIba3x1" role="lGtFl" />
-      <node concept="2jTBO8" id="1zeZsIbbzum" role="lGtFl" />
     </node>
     <node concept="2NXPZ9" id="1zeZsIba3x2" role="N3F5h">
       <property role="TrG5h" value="empty_1437242000795_6" />
