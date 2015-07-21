@@ -1165,5 +1165,94 @@
       <ref role="1YaFvo" to="5wll:1zeZsIbB9X5" resolve="ConcurrentQueueDeclaration" />
     </node>
   </node>
+  <node concept="1YbPZF" id="6zcb4tIG3Mq">
+    <property role="TrG5h" value="typeof_TaskVariable" />
+    <property role="3GE5qa" value="tasks.var" />
+    <node concept="3clFbS" id="6zcb4tIG3Mr" role="18ibNy">
+      <node concept="1Z5TYs" id="6zcb4tIG3Vf" role="3cqZAp">
+        <node concept="mw_s8" id="6zcb4tIG3Vz" role="1ZfhKB">
+          <node concept="1Z2H0r" id="6zcb4tIG3Vv" role="mwGJk">
+            <node concept="2OqwBi" id="6zcb4tIG3YN" role="1Z2MuG">
+              <node concept="1YBJjd" id="6zcb4tIG3VO" role="2Oq$k0">
+                <ref role="1YBMHb" node="6zcb4tIG3Mt" resolve="tv" />
+              </node>
+              <node concept="3TrEf2" id="6zcb4tIG4sa" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6zcb4tIG3Vi" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6zcb4tIG3SK" role="mwGJk">
+            <node concept="1YBJjd" id="6zcb4tIG3Tc" role="1Z2MuG">
+              <ref role="1YBMHb" node="6zcb4tIG3Mt" resolve="tv" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ZobV4" id="6zcb4tIG4wT" role="3cqZAp">
+        <property role="3wDh2S" value="false" />
+        <node concept="mw_s8" id="6zcb4tIG4x0" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6zcb4tIG4x1" role="mwGJk">
+            <node concept="2OqwBi" id="6zcb4tIG4BS" role="1Z2MuG">
+              <node concept="1YBJjd" id="6zcb4tIG4zT" role="2Oq$k0">
+                <ref role="1YBMHb" node="6zcb4tIG3Mt" resolve="tv" />
+              </node>
+              <node concept="3TrEf2" id="6zcb4tIG4SO" role="2OqNvi">
+                <ref role="3Tt5mk" to="5wll:6zcb4tIG20f" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6zcb4tIG4wV" role="1ZfhKB">
+          <node concept="1Z2H0r" id="6zcb4tIG4wW" role="mwGJk">
+            <node concept="2OqwBi" id="6zcb4tIG4wX" role="1Z2MuG">
+              <node concept="1YBJjd" id="6zcb4tIG4wY" role="2Oq$k0">
+                <ref role="1YBMHb" node="6zcb4tIG3Mt" resolve="tv" />
+              </node>
+              <node concept="3TrEf2" id="6zcb4tIG4wZ" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6zcb4tIG3Mt" role="1YuTPh">
+      <property role="TrG5h" value="tv" />
+      <ref role="1YaFvo" to="5wll:6zcb4tIG19c" resolve="TaskVariable" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="JlCmcDFHDF">
+    <property role="TrG5h" value="typeof_TaskVarRef" />
+    <property role="3GE5qa" value="tasks.var" />
+    <node concept="3clFbS" id="JlCmcDFHDG" role="18ibNy">
+      <node concept="1Z5TYs" id="JlCmcDFT2J" role="3cqZAp">
+        <node concept="mw_s8" id="JlCmcDFT33" role="1ZfhKB">
+          <node concept="1Z2H0r" id="JlCmcDFT2Z" role="mwGJk">
+            <node concept="2OqwBi" id="JlCmcDFT6t" role="1Z2MuG">
+              <node concept="1YBJjd" id="JlCmcDFT3k" role="2Oq$k0">
+                <ref role="1YBMHb" node="JlCmcDFHDI" resolve="tvr" />
+              </node>
+              <node concept="3TrEf2" id="JlCmcDGdt0" role="2OqNvi">
+                <ref role="3Tt5mk" to="5wll:JlCmcDF_Qi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="JlCmcDFT2M" role="1ZfhK$">
+          <node concept="1Z2H0r" id="JlCmcDFOvs" role="mwGJk">
+            <node concept="1YBJjd" id="JlCmcDFRv_" role="1Z2MuG">
+              <ref role="1YBMHb" node="JlCmcDFHDI" resolve="tvr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="JlCmcDFHDI" role="1YuTPh">
+      <property role="TrG5h" value="tvr" />
+      <ref role="1YaFvo" to="5wll:JlCmcDFx0U" resolve="TaskVarRef" />
+    </node>
+  </node>
 </model>
 

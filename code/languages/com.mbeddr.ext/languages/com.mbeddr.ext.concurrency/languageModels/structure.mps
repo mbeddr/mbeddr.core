@@ -73,6 +73,11 @@
     <property role="34LRSv" value="task" />
     <property role="3GE5qa" value="tasks" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6zcb4tIHUX7" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="variables" />
+      <ref role="20lvS9" node="6zcb4tIHUWO" resolve="VariableSection" />
+    </node>
     <node concept="1TJgyj" id="vg5qBCbSvw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="kind" />
@@ -554,6 +559,48 @@
     <node concept="1TJgyi" id="6zcb4tI8X6l" role="1TKVEl">
       <property role="TrG5h" value="unit" />
       <ref role="AX2Wp" node="6zcb4tI8S9C" resolve="TimeUnit" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6zcb4tIG19c">
+    <property role="TrG5h" value="TaskVariable" />
+    <property role="3GE5qa" value="tasks.var" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6zcb4tIG20f" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="init" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="6zcb4tIG1aK" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
+    </node>
+    <node concept="PrWs8" id="6zcb4tIG1sv" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
+    </node>
+    <node concept="PrWs8" id="6zcb4tIG20a" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:7oI7FI6oqPw" resolve="IInitializationContext" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6zcb4tIHUWO">
+    <property role="3GE5qa" value="tasks.var" />
+    <property role="TrG5h" value="VariableSection" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6zcb4tIHUWP" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="variables" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6zcb4tIG19c" resolve="TaskVariable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="JlCmcDFx0U">
+    <property role="3GE5qa" value="tasks.var" />
+    <property role="TrG5h" value="TaskVarRef" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="JlCmcDF_Qi" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6zcb4tIG19c" resolve="TaskVariable" />
     </node>
   </node>
 </model>

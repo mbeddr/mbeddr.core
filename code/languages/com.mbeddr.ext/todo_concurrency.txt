@@ -18,14 +18,7 @@
 
 
 TODO:
-* queue refs als normal epressions
-
-* messages and events can only be used as global var,
-  otherwise they must be pointrs.
   
-first run -> boolean
-talk about unit for time 
-dequeue (if avail) from data -> val
 Move the locking and blocking into the enqueue dequeue functions
   (if queue is blockable)  
 
