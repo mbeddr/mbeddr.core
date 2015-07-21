@@ -8,11 +8,11 @@
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
     <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="-1" />
-    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="-1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
     <use id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units" version="-1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="-1" />
+    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="1" />
     <devkit ref="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   </languages>
   <imports>
@@ -191,6 +191,7 @@
         <reference id="6118219496725502924" name="event" index="$QhfV" />
         <child id="6118219496725502916" name="args" index="$QhfN" />
       </concept>
+      <concept id="6118219496719522740" name="com.mbeddr.ext.statemachines.structure.SmInitTarget" flags="ng" index="Vf_e3" />
       <concept id="1786180596061258962" name="com.mbeddr.ext.statemachines.structure.EventArgRef" flags="ng" index="3498Or">
         <reference id="1786180596061258963" name="arg" index="3498Oq" />
       </concept>
@@ -860,7 +861,15 @@
             <ref role="3lBjss" node="5psiJWP$8Si" resolve="Ticker" />
           </node>
         </node>
-        <node concept="3XISUE" id="5psiJWP$d_S" role="3XIRFZ" />
+        <node concept="1_9egQ" id="7Kh7qAAa8PI" role="3XIRFZ">
+          <node concept="2qmXGp" id="7Kh7qAAa9fe" role="1_9egR">
+            <node concept="Vf_e3" id="7Kh7qAAa9gG" role="1ESnxz" />
+            <node concept="3ZVu4v" id="7Kh7qAAa8PG" role="1_9fRO">
+              <ref role="3ZVs_2" node="5psiJWP$e8H" resolve="ticker" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="7Kh7qAAa9hb" role="3XIRFZ" />
         <node concept="3XIRlf" id="5psiJWP_j0m" role="3XIRFZ">
           <property role="TrG5h" value="currentRandomStep" />
           <node concept="26Vqqz" id="5psiJWP_j0n" role="2C2TGm">

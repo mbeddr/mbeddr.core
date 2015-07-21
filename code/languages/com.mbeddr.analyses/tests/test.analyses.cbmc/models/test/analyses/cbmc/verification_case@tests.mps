@@ -113,7 +113,7 @@
     </language>
   </registry>
   <node concept="1lH9Xt" id="7DvJ5MZ5Er0">
-    <property role="TrG5h" value="SimpleVC" />
+    <property role="TrG5h" value="DataEnv" />
     <node concept="1LZb2c" id="7DvJ5MZ5Er1" role="1SL9yI">
       <property role="TrG5h" value="testSmoke" />
       <node concept="3cqZAl" id="7DvJ5MZ5Er2" role="3clF45" />
@@ -135,10 +135,10 @@
                 <property role="BaBD8" value="ass" />
               </node>
               <node concept="Xl_RD" id="7DvJ5MZ5Era" role="37wK5m">
-                <property role="Xl_RC" value="simple_vc" />
+                <property role="Xl_RC" value="data_env" />
               </node>
               <node concept="Xl_RD" id="7DvJ5MZ5Erb" role="37wK5m">
-                <property role="Xl_RC" value="smoke" />
+                <property role="Xl_RC" value="countVC1" />
               </node>
             </node>
           </node>
@@ -178,7 +178,7 @@
                 <ref role="3cqZAo" node="7DvJ5MZ5Er5" resolve="results" />
               </node>
               <node concept="Xl_RD" id="7DvJ5MZ5Err" role="37wK5m">
-                <property role="Xl_RC" value="Assert: a != 3" />
+                <property role="Xl_RC" value="Assert: result == expected" />
               </node>
             </node>
           </node>
@@ -189,7 +189,7 @@
               <ref role="3cqZAo" node="7DvJ5MZ5Ern" resolve="res" />
             </node>
             <node concept="liA8E" id="7DvJ5MZ5Erv" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
             </node>
           </node>
         </node>
@@ -207,7 +207,7 @@
                 <ref role="3cqZAo" node="7DvJ5MZ5Er5" resolve="results" />
               </node>
               <node concept="Xl_RD" id="7DvJ5MZ5Hlq" role="37wK5m">
-                <property role="Xl_RC" value="Assert: a != 0" />
+                <property role="Xl_RC" value="Assert: result == expected || result == expected - 1" />
               </node>
             </node>
           </node>
@@ -218,7 +218,7 @@
               <ref role="3cqZAo" node="7DvJ5MZ5Hlm" resolve="res1" />
             </node>
             <node concept="liA8E" id="7DvJ5MZ5Hlu" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
             </node>
           </node>
         </node>
