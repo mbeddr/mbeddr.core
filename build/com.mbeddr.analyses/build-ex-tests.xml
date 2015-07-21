@@ -179,38 +179,38 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.ext.components.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.ext.components.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.ext.components.zip" />
     <mkdir dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
     <unzip src="${artifacts.mps-sl-all}/mps-sl-all.zip" dest="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.ext.math.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.ext.math.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.ext.math.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.core.debugger.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.core.debugger.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.spawner.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.spawner.zip" />
     <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip" />
     <unzip src="${artifacts.mbeddr}/com.mbeddr.core.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip" />
     <mkdir dir="${build.tmp}/deps/mbeddr/com.mebddr.mpsutil.zip" />
     <unzip src="${artifacts.mbeddr}/com.mebddr.mpsutil.zip" dest="${build.tmp}/deps/mbeddr/com.mebddr.mpsutil.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.cc.ple.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.cc.ple.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.cc.ple.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.analyses.cbmc.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.ext.units.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.ext.units.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.ext.units.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.base.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.analyses.base.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.base.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.ext.statemachineInComponents.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.ext.statemachineInComponents.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.ext.statemachineInComponents.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.core.debugger.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.core.debugger.zip" />
     <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.platform.zip" />
     <unzip src="${artifacts.mbeddr}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.platform.zip" />
     <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.cc.req.zip" />
     <unzip src="${artifacts.mbeddr}/com.mbeddr.cc.req.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.cc.req.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.ext.math.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.ext.math.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.ext.math.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.ext.components.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.ext.components.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.ext.components.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.ext.statemachine.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.ext.statemachine.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.ext.statemachine.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.ext.statemachineInComponents.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.ext.statemachineInComponents.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.ext.statemachineInComponents.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.ext.units.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.ext.units.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.ext.units.zip" />
     <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.doc.zip" />
     <unzip src="${artifacts.mbeddr}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.doc.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.spawner.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.spawner.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.analyses.cbmc.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.cc.ple.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.cc.ple.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.cc.ple.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.ext.statemachine.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.ext.statemachine.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.ext.statemachine.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.base.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.analyses.base.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.base.zip" />
   </target>
   
   <target name="build" depends="assemble" />
