@@ -1368,6 +1368,7 @@
   <node concept="1TIwiD" id="7c_RIoB8H2I">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="MacroFilePicker" />
+    <property role="34LRSv" value="macro file picker" />
     <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker" />
     <node concept="1TJgyi" id="7c_RIoB8OqH" role="1TKVEl">
       <property role="TrG5h" value="macro" />
@@ -1683,6 +1684,7 @@
   <node concept="1TIwiD" id="4eXJ6EO9ZKx">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="MacroFolderPicker" />
+    <property role="34LRSv" value="macro folder picker" />
     <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker" />
     <node concept="1TJgyi" id="4eXJ6EO9ZKy" role="1TKVEl">
       <property role="TrG5h" value="macro" />
@@ -1699,7 +1701,7 @@
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="FileSystemFilePicker" />
     <property role="34LRSv" value="file system file picker" />
-    <ref role="1TJDcQ" node="5lKnBeAtNw8" resolve="AbstractPicker" />
+    <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker" />
   </node>
   <node concept="1TIwiD" id="5Wocj7wnolM">
     <property role="3GE5qa" value="pathAndFile" />
