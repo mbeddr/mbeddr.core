@@ -4921,6 +4921,12 @@
             <ref role="3bR37D" to="90a9:6vUATgmxw8m" resolve="de.itemis.mps.editor.math.symbols" />
           </node>
         </node>
+        <node concept="1SiIV0" id="y9Q5HnX$0a" role="3bR37C">
+          <node concept="3bR9La" id="y9Q5HnX$0b" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
+          </node>
+        </node>
       </node>
       <node concept="3LEwk6" id="2Y27DzrKXcR" role="2G$12L">
         <property role="BnDLt" value="true" />
