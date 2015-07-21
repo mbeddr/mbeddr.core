@@ -78,19 +78,17 @@
         <sources jar="test.analyses.cbmc-src.jar" descriptor="cbmc.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/test.analyses.cbmc.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/test.analyses.cbmc.jar">
       <fileset dir="${build.tmp}/java/out/test.analyses.cbmc" />
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc" includes="icons/**, resources/**" />
-      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/test.analyses.cbmc.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.analyses.cbmc-models">
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/test.analyses.cbmc-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/test.analyses.cbmc-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc/source_gen">
         <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${mbeddr.analyses}/tests/test.analyses.cbmc/cbmc.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.analyses.cbmc-models" prefix="module/models" />
@@ -127,19 +125,17 @@
         <sources jar="test.analyses.cbmc.testcode_analyses_config-src.jar" descriptor="testcode_analyses_config.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/test.analyses.cbmc.testcode_analyses_config.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/test.analyses.cbmc.testcode_analyses_config.jar">
       <fileset dir="${build.tmp}/java/out/test.analyses.cbmc.testcode_analyses_config" />
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_analyses_config" includes="icons/**, resources/**" />
-      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_analyses_config/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/test.analyses.cbmc.testcode_analyses_config.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.analyses.cbmc.testcode_analyses_config-models">
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_analyses_config/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/test.analyses.cbmc.testcode_analyses_config-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/test.analyses.cbmc.testcode_analyses_config-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_analyses_config/source_gen">
         <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode_analyses_config/testcode_analyses_config.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.analyses.cbmc.testcode_analyses_config-models" prefix="module/models" />
@@ -158,6 +154,7 @@
           <module ref="603a3466-f1f4-442a-b544-048f481ec3bb(com.mbeddr.analyses.cbmc.components.rt)" />
           <module ref="9506d0a9-4e49-4605-b51a-d3aeb0070ba3(com.mbeddr.analyses.cbmc.core.rt)" />
           <module ref="a3733d9d-fa94-4706-bdd4-596b968eba8e(com.mbeddr.analyses.cbmc.rt)" />
+          <module ref="83b8f97e-196b-4941-987c-4037c605e8ce(com.mbeddr.analyses.cbmc.statemachines.experimental.rt)" />
           <module ref="0a31509b-f803-4558-b840-db9f6dc14b2f(com.mbeddr.analyses.cbmc.statemachines.rt)" />
           <module ref="5b4466c8-31fa-473f-b8a2-d6b76e26eed6(com.mbeddr.core.debug.blext.runtime)" />
           <module ref="fd28f7ed-d277-425b-a282-684ac4cbead6(com.mbeddr.mpsutil.breadcrumb.runtime)" />
@@ -176,19 +173,17 @@
         <sources jar="test.analyses.cbmc.testcode-src.jar" descriptor="testcode.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/test.analyses.cbmc.testcode.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/test.analyses.cbmc.testcode.jar">
       <fileset dir="${build.tmp}/java/out/test.analyses.cbmc.testcode" />
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode" includes="icons/**, resources/**" />
-      <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/test.analyses.cbmc.testcode.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.analyses.cbmc.testcode-models">
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/test.analyses.cbmc.testcode-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/test.analyses.cbmc.testcode-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode/source_gen">
         <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${mbeddr.analyses}/tests/test.analyses.cbmc.testcode/testcode.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.analyses.cbmc.testcode-models" prefix="module/models" />
@@ -214,19 +209,17 @@
         <sources jar="test.analyses.var-src.jar" descriptor="test.analyses.var.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/test.analyses.var.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/test.analyses.var.jar">
       <fileset dir="${build.tmp}/java/out/test.analyses.var" />
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.var" includes="icons/**, resources/**" />
-      <fileset dir="${mbeddr.analyses}/tests/test.analyses.var/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/test.analyses.var.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.analyses.var-models">
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.var/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/test.analyses.var-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/test.analyses.var-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.var/source_gen">
         <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${mbeddr.analyses}/tests/test.analyses.var/test.analyses.var.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.analyses.var-models" prefix="module/models" />
@@ -247,19 +240,17 @@
         <sources jar="test.analyses.var.testcode-src.jar" descriptor="test.analyses.var.testcode.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/test.analyses.var.testcode.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/test.analyses.var.testcode.jar">
       <fileset dir="${build.tmp}/java/out/test.analyses.var.testcode" />
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.var.testcode" includes="icons/**, resources/**" />
-      <fileset dir="${mbeddr.analyses}/tests/test.analyses.var.testcode/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/test.analyses.var.testcode.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.analyses.var.testcode-models">
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.var.testcode/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/test.analyses.var.testcode-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/test.analyses.var.testcode-src.jar">
       <fileset dir="${mbeddr.analyses}/tests/test.analyses.var.testcode/source_gen">
         <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${mbeddr.analyses}/tests/test.analyses.var.testcode/test.analyses.var.testcode.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.analyses.var.testcode-models" prefix="module/models" />
@@ -272,36 +263,36 @@
   <target name="fetchDependencies">
     <mkdir dir="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
     <unzip src="${artifacts.mps-sl-all}/mps-sl-all.zip" dest="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.spawner.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.spawner.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.platform.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.platform.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.core.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip" />
     <mkdir dir="${build.tmp}/deps/mbeddr/com.mebddr.mpsutil.zip" />
     <unzip src="${artifacts.mbeddr}/com.mebddr.mpsutil.zip" dest="${build.tmp}/deps/mbeddr/com.mebddr.mpsutil.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.cc.ple.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.cc.ple.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.cc.ple.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.analyses.cbmc.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.ext.units.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.ext.units.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.ext.units.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.base.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.analyses.base.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.base.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.ext.statemachineInComponents.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.ext.statemachineInComponents.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.ext.statemachineInComponents.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.core.debugger.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.core.debugger.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.platform.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.platform.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.platform.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.cc.req.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.cc.req.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.cc.req.zip" />
     <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.ext.math.zip" />
     <unzip src="${artifacts.mbeddr}/com.mbeddr.ext.math.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.ext.math.zip" />
     <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.ext.components.zip" />
     <unzip src="${artifacts.mbeddr}/com.mbeddr.ext.components.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.ext.components.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.analyses.cbmc.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.doc.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.doc.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.core.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.ext.units.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.ext.units.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.ext.units.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.cc.req.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.cc.req.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.cc.req.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.core.debugger.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.core.debugger.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.core.debugger.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.cc.ple.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.cc.ple.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.cc.ple.zip" />
     <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.ext.statemachine.zip" />
     <unzip src="${artifacts.mbeddr}/com.mbeddr.ext.statemachine.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.ext.statemachine.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.ext.statemachineInComponents.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.ext.statemachineInComponents.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.ext.statemachineInComponents.zip" />
-    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.base.zip" />
-    <unzip src="${artifacts.mbeddr}/com.mbeddr.analyses.base.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.base.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.doc.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.doc.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.doc.zip" />
+    <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.spawner.zip" />
+    <unzip src="${artifacts.mbeddr}/com.mbeddr.spawner.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.spawner.zip" />
     <mkdir dir="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.sat4j.zip" />
     <unzip src="${artifacts.mbeddr}/com.mbeddr.analyses.sat4j.zip" dest="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.sat4j.zip" />
   </target>
@@ -436,10 +427,13 @@
       <library file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.jar" />
       <library file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.pluginSolution.jar" />
       <library file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.rt.jar" />
+      <library file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.statemachines.experimental.jar" />
+      <library file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.statemachines.experimental.rt.jar" />
       <library file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.statemachines.jar" />
       <library file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.statemachines.pluginSolution.jar" />
       <library file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.statemachines.rt.jar" />
       <library file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.testing.jar" />
+      <library file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.verification_case.jar" />
       <library file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.components.devkit" />
       <library file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.core.devkit" />
       <library file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.statemachines.devkit" />
@@ -463,6 +457,7 @@
       <library file="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.jar" />
       <library file="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.pointers.jar" />
       <library file="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.statements.jar" />
+      <library file="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.stdlib.jar" />
       <library file="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.udt.jar" />
       <library file="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.unittest.jar" />
       <library file="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.util.jar" />
@@ -723,10 +718,12 @@
         <fileset file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.core.rt.jar" />
         <fileset file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.pluginSolution.jar" />
         <fileset file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.rt.jar" />
+        <fileset file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.statemachines.experimental.rt.jar" />
         <fileset file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.statemachines.pluginSolution.jar" />
         <fileset file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.statemachines.rt.jar" />
         <fileset file="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.base.zip/mbeddr.analysesbase/languages/com.mbeddr.analyses.base/com.mbeddr.analyses.utils.jar" />
         <fileset file="${build.tmp}/deps/mbeddr/com.mbeddr.core.debugger.zip/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.blext.runtime.jar" />
+        <fileset file="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.stdlib.jar" />
         <fileset file="${build.tmp}/deps/mbeddr/com.mebddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
         <fileset file="${build.tmp}/deps/mbeddr/com.mebddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
         <fileset file="${build.tmp}/deps/mbeddr/com.mebddr.mpsutil.zip/mbeddr.mpsutil/languages/com.mbeddr.mpsutil/com.mbeddr.mpsutil.editor.utils.jar" />
@@ -1018,10 +1015,13 @@
       <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.jar" />
       <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.pluginSolution.jar" />
       <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.rt.jar" />
+      <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.statemachines.experimental.jar" />
+      <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.statemachines.experimental.rt.jar" />
       <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.statemachines.jar" />
       <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.statemachines.pluginSolution.jar" />
       <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.statemachines.rt.jar" />
       <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.testing.jar" />
+      <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.verification_case.jar" />
       <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.components.devkit" />
       <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.core.devkit" />
       <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.analyses.cbmc.zip/mbeddr.cbmc/languages/com.mbeddr.analyses.cbmc/com.mbeddr.analyses.statemachines.devkit" />
@@ -1045,6 +1045,7 @@
       <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.jar" />
       <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.pointers.jar" />
       <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.statements.jar" />
+      <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.stdlib.jar" />
       <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.udt.jar" />
       <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.unittest.jar" />
       <pathelement location="${build.tmp}/deps/mbeddr/com.mbeddr.core.zip/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.util.jar" />
