@@ -65,6 +65,9 @@
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="3788988821851860886" name="com.mbeddr.core.modules.structure.GlobalConstantDeclaration" flags="ng" index="4WHVk" />
+      <concept id="3788988821852026523" name="com.mbeddr.core.modules.structure.GlobalConstantRef" flags="ng" index="4ZOvp">
+        <reference id="3376775282622611130" name="constant" index="2DPCA0" />
+      </concept>
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
       </concept>
@@ -174,6 +177,8 @@
       <concept id="4620120465980402700" name="com.mbeddr.core.expressions.structure.GenericDotExpression" flags="ng" index="2qmXGp">
         <child id="7034214596252529803" name="target" index="1ESnxz" />
       </concept>
+      <concept id="5763383285156373020" name="com.mbeddr.core.expressions.structure.MultiExpression" flags="ng" index="2BOcij" />
+      <concept id="5763383285156373018" name="com.mbeddr.core.expressions.structure.MinusExpression" flags="ng" index="2BOcil" />
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
@@ -245,8 +250,13 @@
             <node concept="1NmsR7" id="JlCmcDN$a6" role="3XIRFZ" />
           </node>
           <node concept="3TlM44" id="JlCmcDN$7Z" role="c0U16">
-            <node concept="3TlMh9" id="JlCmcDN$8v" role="3TlMhJ">
-              <property role="2hmy$m" value="9" />
+            <node concept="2BOcil" id="JlCmcDT$6M" role="3TlMhJ">
+              <node concept="3TlMh9" id="JlCmcDT$7H" role="3TlMhJ">
+                <property role="2hmy$m" value="1" />
+              </node>
+              <node concept="4ZOvp" id="JlCmcDT$5h" role="3TlMhI">
+                <ref role="2DPCA0" node="JlCmcDNyt5" resolve="MAX_COUNT" />
+              </node>
             </node>
             <node concept="2qmXGp" id="JlCmcDN$6F" role="3TlMhI">
               <node concept="1NmDCV" id="JlCmcDN$7q" role="1ESnxz" />
@@ -300,9 +310,14 @@
         </node>
         <node concept="1OFKyr" id="JlCmcDNyu3" role="3XIRFZ">
           <node concept="6VUUj" id="JlCmcDNyu4" role="1OFKyo">
-            <property role="6VZRi" value="s" />
-            <node concept="3TlMh9" id="JlCmcDNyu5" role="6VY68">
-              <property role="2hmy$m" value="2" />
+            <property role="6VZRi" value="ms" />
+            <node concept="2BOcij" id="JlCmcDT$nG" role="6VY68">
+              <node concept="4ZOvp" id="JlCmcDT$oc" role="3TlMhJ">
+                <ref role="2DPCA0" node="JlCmcDNyt5" resolve="MAX_COUNT" />
+              </node>
+              <node concept="3TlMh9" id="JlCmcDNyu5" role="3TlMhI">
+                <property role="2hmy$m" value="110" />
+              </node>
             </node>
           </node>
         </node>
