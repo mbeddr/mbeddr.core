@@ -194,6 +194,9 @@
     <node concept="PrWs8" id="3VpMwkcjX5H" role="PzmwI">
       <ref role="PrY4T" node="3VpMwkcjX3N" resolve="IUnitDeclarationsProvider" />
     </node>
+    <node concept="PrWs8" id="5Jqic9ZqCF7" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3Y7ywckEJZi" resolve="IKeepAliveInGeneration" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7eOyx9r3kR5">
     <property role="TrG5h" value="UnitReference" />
