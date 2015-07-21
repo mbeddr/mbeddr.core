@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/FourTuple/FourTuple.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/FourTuple/runtime/FourTuple.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/FourTuple/sandbox/FourTuple.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Pacemaker2/Pacemaker2.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Pacemaker2/runtime/Pacemaker2.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Pacemaker2/sandbox/Pacemaker2.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>

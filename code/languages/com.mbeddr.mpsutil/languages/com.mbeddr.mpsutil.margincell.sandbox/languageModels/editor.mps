@@ -25,18 +25,17 @@
       </concept>
     </language>
     <language id="e33ff641-cba8-4703-98f4-59e63936d940" name="com.mbeddr.mpsutil.margincell.editor">
-      <concept id="97401520565568823" name="com.mbeddr.mpsutil.margincell.editor.structure.MarginCell" flags="ng" index="2SJGWt" />
-    </language>
-    <language id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell">
-      <concept id="3020585710860926251" name="com.mbeddr.mpsutil.margincell.structure.MarginCell" flags="ng" index="1G_NIo">
-        <child id="8455208232401975764" name="content" index="2f4tr2" />
+      <concept id="97401520565568823" name="com.mbeddr.mpsutil.margincell.editor.structure.MarginCell" flags="ng" index="2SJGWt">
+        <reference id="97401520565568825" name="marginContents" index="2SJGWj" />
+        <child id="97401520565568824" name="content" index="2SJGWi" />
       </concept>
     </language>
   </registry>
   <node concept="24kQdi" id="10nVqVftPiE">
     <ref role="1XX52x" to="e4lm:10nVqVftMLr" resolve="TestConcept" />
-    <node concept="2SJGWt" id="7sRtXoEkHd" role="2wV5jI">
-      <node concept="3F2HdR" id="7sRtXoEkI4" role="2f4tr2">
+    <node concept="2SJGWt" id="66jx6gI_eyJ" role="2wV5jI">
+      <ref role="2SJGWj" to="e4lm:66jx6gIAjoA" />
+      <node concept="3F2HdR" id="66jx6gI_eAn" role="2SJGWi">
         <ref role="1NtTu8" to="e4lm:10nVqVftMMh" />
       </node>
     </node>

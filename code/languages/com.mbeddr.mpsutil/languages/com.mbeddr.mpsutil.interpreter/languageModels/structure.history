@@ -114,5 +114,11 @@
     </dependencies>
     <rename id="3673.6663324787724987491" type="CONCEPT" from="InterpretBeforeDependency" to="InterpretBeforeRelationship" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3673" modelUID="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" version="18" />
+    </dependencies>
+    <rename id="3673.8511326569641873004" type="CONCEPT" from="IsApplicableExpression" to="IsEvaluatableExpression" />
+  </StructureModification>
 </history>
 

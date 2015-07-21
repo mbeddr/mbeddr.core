@@ -60,6 +60,7 @@
         <child id="4566548524300866929" name="message" index="fPzr1" />
       </concept>
       <concept id="4566548524300401677" name="com.mbeddr.ext.serialization.structure.SerialAnnotation" flags="ng" index="fRtYX" />
+      <concept id="2621052405191302303" name="com.mbeddr.ext.serialization.structure.AnonymousSerialContextType" flags="ng" index="2DgSnp" />
       <concept id="5337910645946997270" name="com.mbeddr.ext.serialization.structure.HandleTarget" flags="ng" index="Wp$H_" />
       <concept id="5337910645951973948" name="com.mbeddr.ext.serialization.structure.BufferRef" flags="ng" index="WE_Hf" />
       <concept id="7384997130812013062" name="com.mbeddr.ext.serialization.structure.SerialDisposeTarget" flags="ng" index="ZafR5" />
@@ -521,20 +522,6 @@
                 <ref role="3VV8c8" node="7PpDuQ7e1s6" resolve="ptr" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="19RgSI" id="7PpDuQ7e1rk" role="1UOdpc">
-          <property role="TrG5h" value="name" />
-          <node concept="Pu267" id="7PpDuQ7e1rl" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
-        <node concept="19RgSI" id="7PpDuQ7e1rm" role="1UOdpc">
-          <property role="TrG5h" value="mode" />
-          <node concept="Pu267" id="7PpDuQ7e1rn" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
           </node>
         </node>
       </node>
@@ -1057,14 +1044,7 @@
         </node>
         <node concept="1_9egQ" id="7PpDuQ7e1u1" role="3XIRFZ">
           <node concept="2qmXGp" id="7PpDuQ7e1u2" role="1_9egR">
-            <node concept="1D2xpo" id="7PpDuQ7e1u3" role="1ESnxz">
-              <node concept="PhEJO" id="7PpDuQ7e1u4" role="Z1V0T">
-                <property role="PhEJT" value="test.data" />
-              </node>
-              <node concept="PhEJO" id="7PpDuQ7e1u5" role="Z1V0T">
-                <property role="PhEJT" value="w+b" />
-              </node>
-            </node>
+            <node concept="1D2xpo" id="7PpDuQ7e1u3" role="1ESnxz" />
             <node concept="3ZVu4v" id="7PpDuQ7eb0M" role="1_9fRO">
               <ref role="3ZVs_2" node="7PpDuQ7e1tR" resolve="ctx" />
             </node>
@@ -1532,7 +1512,7 @@
         <node concept="3wxxNl" id="7PpDuQ7qI_E" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <node concept="1D2uAG" id="7PpDuQ7qI_o" role="2umbIo">
+          <node concept="2DgSnp" id="2hvQkqd9juQ" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
@@ -1836,7 +1816,7 @@
         <node concept="3wxxNl" id="7PpDuQ7rhv_" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <node concept="1D2uAG" id="7PpDuQ7rhvA" role="2umbIo">
+          <node concept="2DgSnp" id="2hvQkqd9gML" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>

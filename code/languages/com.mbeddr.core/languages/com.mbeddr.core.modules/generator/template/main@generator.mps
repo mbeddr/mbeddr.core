@@ -817,7 +817,6 @@
             <node concept="3cpWs8" id="5Y5RBjHqzUL" role="3cqZAp">
               <node concept="3cpWsn" id="5Y5RBjHqzUM" role="3cpWs9">
                 <property role="TrG5h" value="size" />
-                <node concept="10Oyi0" id="5Y5RBjHqIdt" role="1tU5fm" />
                 <node concept="2OqwBi" id="5Y5RBjHqIo4" role="33vP2m">
                   <node concept="2OqwBi" id="5Y5RBjHqzUN" role="2Oq$k0">
                     <node concept="37vLTw" id="5Y5RBjHqzUO" role="2Oq$k0">
@@ -831,6 +830,7 @@
                     <ref role="37wK5l" to="epq1:~BigInteger.intValue():int" resolve="intValue" />
                   </node>
                 </node>
+                <node concept="10Oyi0" id="5Y5RBjHqIdt" role="1tU5fm" />
               </node>
             </node>
             <node concept="3cpWs8" id="5Y5RBjHqMTJ" role="3cqZAp">

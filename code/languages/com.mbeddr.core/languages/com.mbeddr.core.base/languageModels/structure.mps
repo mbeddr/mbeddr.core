@@ -135,6 +135,7 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -1272,11 +1273,13 @@
   <node concept="1TIwiD" id="5lKnBeAxLdJ">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="SolutionRelativeFilePicker" />
+    <property role="34LRSv" value="solution relative file picker" />
     <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker" />
   </node>
   <node concept="1TIwiD" id="2iGZqsHuOWj">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="SolutionRelativeDirPicker" />
+    <property role="34LRSv" value="solution relative dir picker" />
     <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker" />
   </node>
   <node concept="1TIwiD" id="DubiFAXpld">
@@ -1316,6 +1319,12 @@
     <property role="3GE5qa" value="valueDebugger" />
     <property role="TrG5h" value="ValueDebugger" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="$bJ0jgQ80j" role="lGtFl">
+      <property role="Hh88m" value="debugger" />
+      <node concept="trNpa" id="7hziiiew9o4" role="EQaZv">
+        <ref role="trN6q" node="$bJ0jgPete" resolve="IValueDebuggable" />
+      </node>
+    </node>
     <node concept="1TJgyi" id="$bJ0jgQ80h" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -1328,12 +1337,7 @@
       <property role="TrG5h" value="debugKeyString" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="M6xJ_" id="$bJ0jgQ80j" role="lGtFl">
-      <property role="Hh88m" value="debugger" />
-      <node concept="trNpa" id="$bJ0jgQ80k" role="EQaZv">
-        <ref role="trN6q" node="$bJ0jgPete" resolve="IValueDebuggable" />
-      </node>
-    </node>
+    <node concept="asaX9" id="7hziiiew9o7" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="7XSydqUPm9">
     <property role="TrG5h" value="ChunkDependencyConstraint" />
@@ -1688,11 +1692,13 @@
   <node concept="1TIwiD" id="4eXJ6EOwIAn">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="FileSystemDirPicker" />
+    <property role="34LRSv" value="file system dir picker" />
     <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker" />
   </node>
   <node concept="1TIwiD" id="1jw2PJJHS3i">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="FileSystemFilePicker" />
+    <property role="34LRSv" value="file system file picker" />
     <ref role="1TJDcQ" node="5lKnBeAtNw8" resolve="AbstractPicker" />
   </node>
   <node concept="1TIwiD" id="5Wocj7wnolM">
