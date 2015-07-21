@@ -16,6 +16,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.rt/rt.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.statemachines.experimental/com.mbeddr.analyses.cbmc.statemachines.experimental.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.statemachines/com.mbeddr.analyses.cbmc.statemachines.mpl" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.verification_case/com.mbeddr.analyses.cbmc.verification_case.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc/cbmc.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc/solutions/pluginSolution/pluginSolution.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.lantest/com.mbeddr.analyses.lantest.mpl" folder="lantest" />
@@ -48,7 +49,6 @@
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.var/test.analyses.var.msd" folder="test.sat4j" />
       <modulePath path="$PROJECT_DIR$/tests/test.analysis.formsera/formsera.msd" folder="test.examples" />
       <modulePath path="$PROJECT_DIR$/tests/test.analysis.nfm/nfm.msd" folder="test.examples" />
-      <modulePath path="$PROJECT_DIR$/../../../../com.lmsintl.accent.toyota_itc_benchmark/com.lmsintl.accent.toyota_itc_benchmark/com.lmsintl.accent.toyota_itc_benchmark.msd" folder="" />
     </projectModules>
   </component>
 </project>

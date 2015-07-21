@@ -39,6 +39,11 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="elym:10nVqVftA9h" resolve="IMarginCellContent" />
     </node>
+    <node concept="1TJgyj" id="66jx6gIAjoA" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="notes" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
   </node>
 </model>
 

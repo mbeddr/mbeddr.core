@@ -135,6 +135,27 @@
       <property role="CIruq" value="micro seconds" />
       <node concept="CIsGf" id="5zHWU$G$0Xi" role="CIsG9" />
     </node>
+    <node concept="CIrOH" id="74TmcPkHPgk" role="CIrPi">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="ns" />
+      <property role="CIruq" value="nano seconds" />
+      <node concept="CIsGf" id="74TmcPkHPgl" role="CIsG9" />
+    </node>
+    <node concept="134lye" id="74TmcPkYyK3" role="CIrPi" />
+    <node concept="CIrOH" id="74TmcPkYzlG" role="CIrPi">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="mm" />
+      <property role="CIruq" value="millimeters" />
+      <node concept="CIsGf" id="74TmcPkYzlH" role="CIsG9" />
+    </node>
+    <node concept="134lye" id="2XT_MLH7DiS" role="CIrPi" />
+    <node concept="CIrOH" id="2XT_MLH7EzP" role="CIrPi">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="°" />
+      <property role="CIruq" value="grad" />
+      <node concept="CIsGf" id="2XT_MLH7EzQ" role="CIsG9" />
+    </node>
+    <node concept="134lye" id="2XT_MLH7E8M" role="CIrPi" />
     <node concept="TRoc0" id="5zHWU$G$0Xj" role="CIrPi">
       <property role="2OOxQR" value="true" />
       <ref role="27Q$ZQ" to="cmgk:6TeNRL7trCJ" resolve="s" />
@@ -231,6 +252,19 @@
         </node>
       </node>
     </node>
+    <node concept="TRoc0" id="1a4kF8yM70F" role="CIrPi">
+      <property role="2OOxQR" value="true" />
+      <ref role="27Q$ZQ" to="cmgk:6TeNRL7trCJ" resolve="s" />
+      <ref role="27Q$ZR" node="5zHWU$G$0WZ" resolve="Hz" />
+      <node concept="27LzZq" id="1a4kF8yM70H" role="27P04L">
+        <node concept="2BOcih" id="1a4kF8yM80S" role="27K$mF">
+          <node concept="2m5Cep" id="1a4kF8yM81m" role="3TlMhJ" />
+          <node concept="3TlMh9" id="1a4kF8yM7T4" role="3TlMhI">
+            <property role="2hmy$m" value="1" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="134lye" id="5zHWU$G$4vr" role="CIrPi" />
     <node concept="134lye" id="5zHWU$G$7yR" role="CIrPi" />
     <node concept="CIrOH" id="5zHWU$G$9bk" role="CIrPi">
@@ -244,6 +278,22 @@
         <node concept="CIsvn" id="5zHWU$G$mqT" role="CIi4h">
           <ref role="CIi3I" to="cmgk:6TeNRL7trCJ" resolve="s" />
           <node concept="CIsvk" id="5zHWU$G$mr0" role="CIi3G">
+            <property role="CIsvl" value="-1" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="CIrOH" id="74TmcPkYLWz" role="CIrPi">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="mm/ms" />
+      <property role="CIruq" value="millimeters per millisecond" />
+      <node concept="CIsGf" id="74TmcPkYNei" role="CIsG9">
+        <node concept="CIsvn" id="74TmcPkYPWD" role="CIi4h">
+          <ref role="CIi3I" node="74TmcPkYzlG" resolve="mm" />
+        </node>
+        <node concept="CIsvn" id="74TmcPkYNek" role="CIi4h">
+          <ref role="CIi3I" node="5zHWU$G$0Xf" resolve="ms" />
+          <node concept="CIsvk" id="74TmcPkYNel" role="CIi3G">
             <property role="CIsvl" value="-1" />
           </node>
         </node>
@@ -303,6 +353,44 @@
       </node>
     </node>
     <node concept="134lye" id="5zHWU$G$53C" role="CIrPi" />
+    <node concept="TRoc0" id="74TmcPkY$ot" role="CIrPi">
+      <property role="2OOxQR" value="true" />
+      <ref role="27Q$ZQ" node="74TmcPkYzlG" resolve="mm" />
+      <ref role="27Q$ZR" to="cmgk:yGiRIF6RlO" resolve="m" />
+      <node concept="27LzZq" id="74TmcPkY$ov" role="27P04L">
+        <node concept="2BOcih" id="74TmcPkY_Ai" role="27K$mF">
+          <node concept="3TlMh9" id="74TmcPkY_Al" role="3TlMhJ">
+            <property role="2hmy$m" value="1000" />
+          </node>
+          <node concept="2m5Cep" id="74TmcPkY_z0" role="3TlMhI" />
+        </node>
+      </node>
+    </node>
+    <node concept="134lye" id="74TmcPkY_TC" role="CIrPi" />
+    <node concept="TRoc0" id="74TmcPkYAOc" role="CIrPi">
+      <property role="2OOxQR" value="true" />
+      <ref role="27Q$ZQ" to="cmgk:yGiRIF6RlO" resolve="m" />
+      <ref role="27Q$ZR" node="74TmcPkYzlG" resolve="mm" />
+      <node concept="27LzZq" id="74TmcPkYAOe" role="27P04L">
+        <node concept="2BOcij" id="74TmcPkYBWA" role="27K$mF">
+          <node concept="3TlMh9" id="74TmcPkYBWD" role="3TlMhJ">
+            <property role="2hmy$m" value="1000" />
+          </node>
+          <node concept="2m5Cep" id="74TmcPkYBVk" role="3TlMhI" />
+        </node>
+      </node>
+    </node>
+    <node concept="134lye" id="74TmcPkYJKF" role="CIrPi" />
+    <node concept="TRoc0" id="74TmcPkYKqm" role="CIrPi">
+      <property role="2OOxQR" value="true" />
+      <ref role="27Q$ZQ" node="5zHWU$G$9bk" resolve="m/s" />
+      <ref role="27Q$ZR" node="74TmcPkYLWz" resolve="mm/ms" />
+      <node concept="27LzZq" id="74TmcPkYKqo" role="27P04L">
+        <node concept="2m5Cep" id="74TmcPkYQTK" role="27K$mF" />
+      </node>
+    </node>
+    <node concept="134lye" id="2XT_MLH7CKB" role="CIrPi" />
+    <node concept="134lye" id="2XT_MLH7CQo" role="CIrPi" />
     <node concept="134lye" id="5zHWU$G$3$U" role="CIrPi" />
     <node concept="3GEVxB" id="5zHWU$G$0XR" role="7b7yl">
       <property role="3GEa6x" value="true" />

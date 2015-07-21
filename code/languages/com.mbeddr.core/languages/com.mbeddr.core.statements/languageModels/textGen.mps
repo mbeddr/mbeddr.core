@@ -1100,7 +1100,7 @@
       <node concept="3clFbS" id="2I09F8VKPaI" role="2VODD2">
         <node concept="lc7rE" id="2I09F8VKPaJ" role="3cqZAp">
           <node concept="la8eA" id="2I09F8VKPaK" role="lcghm">
-            <property role="lacIc" value="default:" />
+            <property role="lacIc" value="default: {" />
           </node>
           <node concept="l8MVK" id="2I09F8VKPjO" role="lcghm" />
         </node>
@@ -1136,8 +1136,11 @@
           </node>
         </node>
         <node concept="1bpajm" id="2I09F8VKPJg" role="3cqZAp" />
-        <node concept="lc7rE" id="2I09F8VKPC9" role="3cqZAp">
-          <node concept="l8MVK" id="2I09F8VKPCd" role="lcghm" />
+        <node concept="lc7rE" id="7SI4r73jUEg" role="3cqZAp">
+          <node concept="la8eA" id="7SI4r73jUEh" role="lcghm">
+            <property role="lacIc" value="}" />
+          </node>
+          <node concept="l8MVK" id="7SI4r73jUEi" role="lcghm" />
         </node>
       </node>
     </node>

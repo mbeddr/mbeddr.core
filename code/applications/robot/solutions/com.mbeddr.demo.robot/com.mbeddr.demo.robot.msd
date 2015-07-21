@@ -18,6 +18,7 @@
     <usedLanguage>0d04a6cc-773e-4069-b9b0-11884b2ff1c8(com.mbeddr.ext.units)</usedLanguage>
     <usedLanguage>3828799d-97c8-48d0-af8b-39b903457e1e(mbeddr.arduino.registers)</usedLanguage>
     <usedLanguage>3c4c8461-a533-4459-916a-dc0176793b4c(mbeddr.arduino.core)</usedLanguage>
+    <usedLanguage>e562f51e-6403-4857-b773-44632077c67d(mbeddr.arduino.interrupts)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>87468ddd-5b04-4352-a61d-70ff981afab6(com.mbeddr.debugger-testing)</usedDevKit>

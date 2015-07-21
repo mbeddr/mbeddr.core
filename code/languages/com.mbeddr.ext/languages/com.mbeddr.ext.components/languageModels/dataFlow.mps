@@ -38,6 +38,9 @@
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -138,6 +141,14 @@
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
+      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
+        <child id="1153944400369" name="variable" index="2Gsz3X" />
+        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
+      </concept>
+      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
+      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
+        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
+      </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
     </language>
   </registry>
@@ -368,6 +379,48 @@
               </node>
             </node>
             <node concept="10Nm6u" id="3hjEOFrgbKG" role="3uHU7w" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3_zdsH" id="73Jrkgyr4B6">
+    <property role="3GE5qa" value="adapter" />
+    <ref role="3_znuS" to="v7ag:pTHqv6KODH" resolve="PortAdapterOpCallExpr" />
+    <node concept="3__wT9" id="73Jrkgyr4B7" role="3_A6iZ">
+      <node concept="3clFbS" id="73Jrkgyr4B8" role="2VODD2">
+        <node concept="3AgYrR" id="73JrkgyrgNt" role="3cqZAp">
+          <node concept="2OqwBi" id="73JrkgyrhdK" role="3Ah4Yx">
+            <node concept="3__QtB" id="73JrkgyrgNI" role="2Oq$k0" />
+            <node concept="3TrEf2" id="73Jrkgyrz$Z" role="2OqNvi">
+              <ref role="3Tt5mk" to="v7ag:pTHqv6KODI" />
+            </node>
+          </node>
+        </node>
+        <node concept="3AgYrR" id="73JrkgyrzCf" role="3cqZAp">
+          <node concept="2OqwBi" id="73JrkgyrzJ6" role="3Ah4Yx">
+            <node concept="3__QtB" id="73JrkgyrzE1" role="2Oq$k0" />
+            <node concept="3TrEf2" id="73Jrkgyr$c0" role="2OqNvi">
+              <ref role="3Tt5mk" to="v7ag:71UKpntoo88" />
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="73Jrkgyr$UJ" role="3cqZAp">
+          <node concept="2GrKxI" id="73Jrkgyr$UL" role="2Gsz3X">
+            <property role="TrG5h" value="a" />
+          </node>
+          <node concept="3clFbS" id="73Jrkgyr$UN" role="2LFqv$">
+            <node concept="3AgYrR" id="73JrkgyrAuV" role="3cqZAp">
+              <node concept="2GrUjf" id="73JrkgyrAv8" role="3Ah4Yx">
+                <ref role="2Gs0qQ" node="73Jrkgyr$UL" resolve="a" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="73JrkgyrA0e" role="2GsD0m">
+            <node concept="3__QtB" id="73Jrkgyr_TT" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="73JrkgyrAt8" role="2OqNvi">
+              <ref role="3TtcxE" to="v7ag:71UKpntosSd" />
+            </node>
           </node>
         </node>
       </node>

@@ -282,6 +282,7 @@
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
+      <concept id="8463282783691618461" name="com.mbeddr.core.expressions.structure.UnsignedInt8tType" flags="ng" index="26Vqp4" />
       <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
       <concept id="8463282783691618435" name="com.mbeddr.core.expressions.structure.Int16tType" flags="ng" index="26Vqpq" />
       <concept id="8463282783691618426" name="com.mbeddr.core.expressions.structure.Int8tType" flags="ng" index="26Vqqz" />
@@ -557,6 +558,9 @@
       <node concept="2v9HqM" id="7kKzL6wiAV3" role="2eOfOg">
         <ref role="2v9HqP" node="7kKzL6whEdw" resolve="CompositeComponentImplementsProvidedPort" />
       </node>
+      <node concept="2v9HqM" id="6AXziRbMUZi" role="2eOfOg">
+        <ref role="2v9HqP" node="6AXziRbMrgU" resolve="BugGithub1198" />
+      </node>
     </node>
   </node>
   <node concept="N3F5e" id="34XnDxOSMGv">
@@ -600,6 +604,9 @@
             </node>
             <node concept="3cM6IN" id="7kKzL6whV4o" role="3cM6Hi">
               <ref role="3cM6IK" node="7kKzL6whRFx" resolve="testWarapper" />
+            </node>
+            <node concept="3cM6IN" id="6AXziRbMyDF" role="3cM6Hi">
+              <ref role="3cM6IK" node="6AXziRbMy1t" resolve="testCallFromCompositeComponentToInnerComponent" />
             </node>
           </node>
         </node>
@@ -668,6 +675,9 @@
     </node>
     <node concept="3GEVxB" id="7kKzL6whUXn" role="2OODSX">
       <ref role="3GEb4d" node="7kKzL6whEdw" resolve="CompositeComponentImplementsProvidedPort" />
+    </node>
+    <node concept="3GEVxB" id="6AXziRbMyDb" role="2OODSX">
+      <ref role="3GEb4d" node="6AXziRbMrgU" resolve="BugGithub1198" />
     </node>
   </node>
   <node concept="N3F5e" id="34XnDxOSOaX">
@@ -3102,6 +3112,217 @@
           </node>
           <node concept="3TlMh9" id="7kKzL6whSJK" role="2N2GHg">
             <property role="2hmy$m" value="-3" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="N3F5e" id="6AXziRbMrgU">
+    <property role="TrG5h" value="BugGithub1198" />
+    <node concept="2EX0iR" id="6AXziRbMvol" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="IRunnable" />
+      <node concept="2EX0iL" id="6AXziRbMvor" role="2EX0iN">
+        <property role="TrG5h" value="run" />
+        <node concept="19Rifw" id="6AXziRbMvoq" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="6AXziRbMvoC" role="N3F5h">
+      <property role="TrG5h" value="empty_1436452084573_1" />
+    </node>
+    <node concept="2EX0iR" id="6AXziRbMvoN" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="IStorrage" />
+      <node concept="2EX0iL" id="6AXziRbMvoV" role="2EX0iN">
+        <property role="TrG5h" value="store" />
+        <node concept="19Rifw" id="6AXziRbMvoU" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="2EWNYT" id="6AXziRbMwwp" role="1UOdpc">
+          <property role="TrG5h" value="value" />
+          <node concept="26Vqp4" id="6AXziRbMwwo" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="6AXziRbMwwG" role="N3F5h">
+      <property role="TrG5h" value="empty_1436452133213_3" />
+    </node>
+    <node concept="1S7NMz" id="6AXziRbMwys" role="N3F5h">
+      <property role="TrG5h" value="store" />
+      <node concept="26Vqp4" id="6AXziRbMwyq" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="6AXziRbMwy4" role="N3F5h">
+      <property role="TrG5h" value="empty_1436452151743_6" />
+    </node>
+    <node concept="2EWCuY" id="6AXziRbMwx3" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="StorrageImpl" />
+      <node concept="2EWHp_" id="6AXziRbMwxg" role="2RW2fA">
+        <property role="TrG5h" value="iStorrage" />
+        <ref role="2EX0h9" node="6AXziRbMvoN" resolve="IStorrage" />
+      </node>
+      <node concept="3Khz0B" id="6AXziRbMxMm" role="2RW2fA" />
+      <node concept="2EWDwb" id="6AXziRbMxNC" role="2RW2fA">
+        <property role="TrG5h" value="setup" />
+        <node concept="3XIRFW" id="6AXziRbMxND" role="2EWMhI">
+          <node concept="1_9egQ" id="6AXziRbMxOa" role="3XIRFZ">
+            <node concept="3pqW6w" id="6AXziRbMxOk" role="1_9egR">
+              <node concept="3TlMh9" id="6AXziRbMxOn" role="3TlMhJ">
+                <property role="2hmy$m" value="0" />
+              </node>
+              <node concept="1S7827" id="6AXziRbMxO8" role="3TlMhI">
+                <ref role="1S7826" node="6AXziRbMwys" resolve="store" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="19Rifw" id="6AXziRbMxMM" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="2cabNp" id="6AXziRbMxO1" role="2EWDeT" />
+      </node>
+      <node concept="2EWDwb" id="6AXziRbMwxi" role="2RW2fA">
+        <property role="TrG5h" value="iStorrage_store" />
+        <node concept="3XIRFW" id="6AXziRbMwxj" role="2EWMhI">
+          <node concept="1_9egQ" id="6AXziRbMwH2" role="3XIRFZ">
+            <node concept="3pqW6w" id="6AXziRbMxLI" role="1_9egR">
+              <node concept="3ZUYvv" id="6AXziRbMxM3" role="3TlMhJ">
+                <ref role="3ZUYvu" node="6AXziRbMwxn" resolve="value" />
+              </node>
+              <node concept="1S7827" id="6AXziRbMwH0" role="3TlMhI">
+                <ref role="1S7826" node="6AXziRbMwys" resolve="store" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2EWDw0" id="6AXziRbMwxl" role="2EWDeT">
+          <ref role="1ZwSu5" node="6AXziRbMwxg" resolve="iStorrage" />
+          <ref role="1ZwxE2" node="6AXziRbMvoV" resolve="store" />
+        </node>
+        <node concept="19Rifw" id="6AXziRbMwxm" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="19RgSI" id="6AXziRbMwxn" role="1UOdpc">
+          <property role="TrG5h" value="value" />
+          <node concept="26Vqp4" id="6AXziRbMwxo" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="6AXziRbMxPn" role="N3F5h">
+      <property role="TrG5h" value="empty_1436452190870_7" />
+    </node>
+    <node concept="5JLF8" id="6AXziRbMxRq" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="Main" />
+      <node concept="2EWHp_" id="6AXziRbMxT3" role="2RW2fA">
+        <property role="TrG5h" value="iRunnable" />
+        <ref role="2EX0h9" node="6AXziRbMvol" resolve="IRunnable" />
+      </node>
+      <node concept="3Khz0B" id="6AXziRbMxSZ" role="2RW2fA" />
+      <node concept="5JiAF" id="6AXziRbMxRr" role="2RW2fA">
+        <node concept="2EWCuV" id="6AXziRbMxUj" role="5JtDH">
+          <property role="TrG5h" value="storrage" />
+          <ref role="2EWCuU" node="6AXziRbMwx3" resolve="StorrageImpl" />
+        </node>
+      </node>
+      <node concept="3Khz0B" id="6AXziRbMxT8" role="2RW2fA" />
+      <node concept="2EWDwb" id="6AXziRbMxTD" role="2RW2fA">
+        <property role="TrG5h" value="iRunnable_run" />
+        <node concept="3XIRFW" id="6AXziRbMxTE" role="2EWMhI">
+          <node concept="1_9egQ" id="6AXziRbMxU_" role="3XIRFZ">
+            <node concept="3LAlOK" id="6AXziRbMxUR" role="1_9egR">
+              <ref role="2H6Oet" node="6AXziRbMvoV" resolve="store" />
+              <node concept="1DnYEe" id="6AXziRbMxU$" role="1_9fRO">
+                <ref role="1DnYF2" node="6AXziRbMxUj" resolve="storrage" />
+                <ref role="1DcY7d" node="6AXziRbMwxg" resolve="iStorrage" />
+              </node>
+              <node concept="3TlMh9" id="6AXziRbMxVx" role="2H6KYo">
+                <property role="2hmy$m" value="15" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2EWDw0" id="6AXziRbMxTU" role="2EWDeT">
+          <ref role="1ZwSu5" node="6AXziRbMxT3" resolve="iRunnable" />
+          <ref role="1ZwxE2" node="6AXziRbMvor" resolve="run" />
+        </node>
+        <node concept="19Rifw" id="6AXziRbMxUb" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="6AXziRbMxXh" role="N3F5h">
+      <property role="TrG5h" value="empty_1436452255074_9" />
+    </node>
+    <node concept="2EWCtd" id="6AXziRbMy7I" role="N3F5h">
+      <property role="TrG5h" value="instances" />
+      <node concept="2EWCuV" id="6AXziRbMyap" role="5JtDH">
+        <property role="TrG5h" value="main" />
+        <ref role="2EWCuU" node="6AXziRbMxRq" resolve="Main" />
+      </node>
+      <node concept="21gPQu" id="6AXziRbMya$" role="5JtDH">
+        <property role="TrG5h" value="runner" />
+        <node concept="219P8x" id="6AXziRbMya_" role="21ad3a">
+          <ref role="219P8w" node="6AXziRbMyap" resolve="main" />
+          <ref role="219P8J" node="6AXziRbMxT3" resolve="iRunnable" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="6AXziRbMy4d" role="N3F5h">
+      <property role="TrG5h" value="empty_1436452273692_12" />
+    </node>
+    <node concept="2NXPZ9" id="6AXziRbMy55" role="N3F5h">
+      <property role="TrG5h" value="empty_1436452273827_13" />
+    </node>
+    <node concept="c0Qz5" id="6AXziRbMy1t" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="testCallFromCompositeComponentToInnerComponent" />
+      <node concept="19Rifw" id="6AXziRbMy1u" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="6AXziRbMy1w" role="c0Qz3">
+        <node concept="3t9XKO" id="6AXziRbMyaE" role="3XIRFZ">
+          <ref role="3t9XKR" node="6AXziRbMy7I" resolve="instances" />
+        </node>
+        <node concept="2N2KuS" id="6AXziRbMyi4" role="3XIRFZ">
+          <node concept="1S7827" id="6AXziRbMyiB" role="2N2GHh">
+            <ref role="1S7826" node="6AXziRbMwys" resolve="store" />
+          </node>
+          <node concept="3TlMh9" id="6AXziRbMyij" role="2N2GHg">
+            <property role="2hmy$m" value="0" />
+          </node>
+        </node>
+        <node concept="1_9egQ" id="6AXziRbMyht" role="3XIRFZ">
+          <node concept="30IJZa" id="6AXziRbMyhC" role="1_9egR">
+            <ref role="2H6Oet" node="6AXziRbMvor" resolve="run" />
+            <node concept="2H6Wec" id="6AXziRbMyhr" role="1_9fRO">
+              <ref role="2H6Wef" node="6AXziRbMya$" resolve="runner" />
+            </node>
+          </node>
+        </node>
+        <node concept="2N2KuS" id="6AXziRbMymw" role="3XIRFZ">
+          <node concept="1S7827" id="6AXziRbNBRo" role="2N2GHh">
+            <ref role="1S7826" node="6AXziRbMwys" resolve="store" />
+          </node>
+          <node concept="3TlMh9" id="6AXziRbMymy" role="2N2GHg">
+            <property role="2hmy$m" value="15" />
           </node>
         </node>
       </node>
