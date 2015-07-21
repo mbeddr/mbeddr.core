@@ -1127,6 +1127,39 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbJ" id="6bs538lR8m2" role="3cqZAp">
+        <node concept="3clFbS" id="6bs538lR8m4" role="3clFbx">
+          <node concept="2MkqsV" id="6bs538lRavN" role="3cqZAp">
+            <node concept="Xl_RD" id="6bs538lRaw2" role="2MkJ7o">
+              <property role="Xl_RC" value="otherwise clause can only be used for non-blocking dequeue" />
+            </node>
+            <node concept="1YBJjd" id="6bs538lRayI" role="2OEOjV">
+              <ref role="1YBMHb" node="1zeZsIbdag0" resolve="ts" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="6bs538lR9Bu" role="3clFbw">
+          <node concept="2OqwBi" id="6bs538lR9PL" role="3uHU7w">
+            <node concept="1YBJjd" id="6bs538lR9Js" role="2Oq$k0">
+              <ref role="1YBMHb" node="1zeZsIbdag0" resolve="ts" />
+            </node>
+            <node concept="3TrcHB" id="6bs538lRanZ" role="2OqNvi">
+              <ref role="3TsBF5" to="5wll:1zeZsIbd2$8" resolve="blockOnTake" />
+            </node>
+          </node>
+          <node concept="3y3z36" id="6bs538lR9$4" role="3uHU7B">
+            <node concept="2OqwBi" id="6bs538lR8vY" role="3uHU7B">
+              <node concept="1YBJjd" id="6bs538lR8pW" role="2Oq$k0">
+                <ref role="1YBMHb" node="1zeZsIbdag0" resolve="ts" />
+              </node>
+              <node concept="3TrEf2" id="6bs538lR91P" role="2OqNvi">
+                <ref role="3Tt5mk" to="5wll:6bs538lN7ti" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="6bs538lR9Ba" role="3uHU7w" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="1zeZsIbdag0" role="1YuTPh">
       <property role="TrG5h" value="ts" />

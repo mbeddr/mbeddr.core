@@ -57,6 +57,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
@@ -139,6 +142,9 @@
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -469,6 +475,64 @@
       </node>
     </node>
     <node concept="1SWQZ3" id="6zcb4tIHW3I" role="lGtFl">
+      <property role="1SWRpm" value="CONCURRENCY" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="6bs538lNao6">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="addOtherwise" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="5wll:4mSSgpjgrEk" resolve="TakeStatement" />
+    <node concept="2S6ZIM" id="6bs538lNao7" role="2ZfVej">
+      <node concept="3clFbS" id="6bs538lNao8" role="2VODD2">
+        <node concept="3clFbF" id="6bs538lNaDh" role="3cqZAp">
+          <node concept="Xl_RD" id="6bs538lNaDg" role="3clFbG">
+            <property role="Xl_RC" value="Add Otherwise" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6bs538lNao9" role="2ZfgGD">
+      <node concept="3clFbS" id="6bs538lNaoa" role="2VODD2">
+        <node concept="3clFbF" id="6bs538lNaXs" role="3cqZAp">
+          <node concept="2OqwBi" id="6bs538lNc8v" role="3clFbG">
+            <node concept="2OqwBi" id="6bs538lNb63" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6bs538lNaXr" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6bs538lNb_w" role="2OqNvi">
+                <ref role="3Tt5mk" to="5wll:6bs538lN7ti" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="6bs538lNd4F" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="6bs538lNaQ9" role="2ZfVeh">
+      <node concept="3clFbS" id="6bs538lNaQa" role="2VODD2">
+        <node concept="3clFbF" id="6bs538lNdks" role="3cqZAp">
+          <node concept="1Wc70l" id="6bs538lRcna" role="3clFbG">
+            <node concept="3fqX7Q" id="6bs538lRdkU" role="3uHU7w">
+              <node concept="2OqwBi" id="6bs538lRdkW" role="3fr31v">
+                <node concept="2Sf5sV" id="6bs538lRdkX" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6bs538lRdkY" role="2OqNvi">
+                  <ref role="3TsBF5" to="5wll:1zeZsIbd2$8" resolve="blockOnTake" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6bs538lNevu" role="3uHU7B">
+              <node concept="2OqwBi" id="6bs538lNdt3" role="2Oq$k0">
+                <node concept="2Sf5sV" id="6bs538lNdkr" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6bs538lNdWv" role="2OqNvi">
+                  <ref role="3Tt5mk" to="5wll:6bs538lN7ti" />
+                </node>
+              </node>
+              <node concept="3w_OXm" id="6bs538lNfrE" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="6bs538lNfAx" role="lGtFl">
       <property role="1SWRpm" value="CONCURRENCY" />
     </node>
   </node>
