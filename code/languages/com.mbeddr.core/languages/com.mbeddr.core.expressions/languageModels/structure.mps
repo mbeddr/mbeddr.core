@@ -1472,16 +1472,5 @@
       <ref role="PrY4T" to="vs0r:7RHXOmw3XK2" resolve="IRequiresHeaderImport" />
     </node>
   </node>
-  <node concept="1TIwiD" id="60fK39hE0MU">
-    <property role="TrG5h" value="NameOfFunctionExpression" />
-    <property role="34LRSv" value="nameof" />
-    <ref role="1TJDcQ" node="7FQByU3CrCM" resolve="Expression" />
-    <node concept="1TJgyj" id="60fK39hE0MV" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="function" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="x27k:5_l8w1EmTvx" resolve="Function" />
-    </node>
-  </node>
 </model>
 

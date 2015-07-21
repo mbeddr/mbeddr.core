@@ -63,6 +63,7 @@
   <dependencies>
     <dependency reexport="false">0fcee1cf-8f59-441b-b9c7-7ff7bdd6bc97(de.itemis.mps.editor.math.symbols)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">47f075a6-558e-4640-a606-7ce0236c8023(com.mbeddr.mpsutil.interpreter)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>766348f7-6a67-4b85-9323-384840132299(de.itemis.mps.editor.math)</usedLanguage>

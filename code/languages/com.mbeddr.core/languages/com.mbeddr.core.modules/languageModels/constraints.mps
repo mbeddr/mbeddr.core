@@ -1634,5 +1634,43 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="1myZgySqty7">
+    <ref role="1M2myG" to="x27k:1myZgySqtjG" resolve="NameOfFunctionExpression" />
+    <node concept="1N5Pfh" id="1myZgySqty8" role="1Mr941">
+      <ref role="1N5Vy1" to="x27k:1myZgySqtjH" />
+      <node concept="1MUpDS" id="1myZgySqty9" role="1N6uqs">
+        <node concept="3clFbS" id="1myZgySqtya" role="2VODD2">
+          <node concept="3clFbF" id="1myZgySqtyb" role="3cqZAp">
+            <node concept="2OqwBi" id="1myZgySqtyc" role="3clFbG">
+              <node concept="2OqwBi" id="1myZgySqtyd" role="2Oq$k0">
+                <node concept="2OqwBi" id="1myZgySqtye" role="2Oq$k0">
+                  <node concept="21POm0" id="1myZgySqtyf" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="1myZgySqtyg" role="2OqNvi">
+                    <node concept="1xMEDy" id="1myZgySqtyh" role="1xVPHs">
+                      <node concept="chp4Y" id="1myZgySqtyi" role="ri$Ld">
+                        <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="1myZgySqtyj" role="1xVPHs" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="1myZgySqtyk" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
+                  <node concept="3TUQnm" id="1myZgySqtyl" role="37wK5m">
+                    <ref role="3TV0OU" to="x27k:5_l8w1EmTvx" resolve="Function" />
+                  </node>
+                </node>
+              </node>
+              <node concept="v3k3i" id="1myZgySqtym" role="2OqNvi">
+                <node concept="chp4Y" id="1myZgySqtyn" role="v3oSu">
+                  <ref role="cht4Q" to="x27k:5_l8w1EmTvx" resolve="Function" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
