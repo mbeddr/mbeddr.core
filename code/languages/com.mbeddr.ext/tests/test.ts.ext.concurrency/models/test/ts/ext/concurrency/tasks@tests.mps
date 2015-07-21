@@ -219,7 +219,7 @@
         <child id="7551459360499927672" name="period" index="6EqoZ" />
       </concept>
       <concept id="1199577005875757023" name="com.mbeddr.ext.concurrency.structure.WCETConstraint" flags="ng" index="1NlFWL">
-        <child id="1199577005875757105" name="wcet" index="1Nl$3v" />
+        <child id="7551459360501617805" name="wcet" index="6GRza" />
       </concept>
       <concept id="1199577005876317481" name="com.mbeddr.ext.concurrency.structure.TerminateStatement" flags="ng" index="1NmsR7" />
       <concept id="1199577005876533973" name="com.mbeddr.ext.concurrency.structure.IterationNoTarget" flags="ng" index="1NmDCV" />
@@ -820,14 +820,18 @@
           </node>
           <node concept="1NlFWL" id="12_KeTzXB$N" role="6qQK8">
             <ref role="6qQL_" node="66UaKxBOVxW" resolve="aBlockingTask" />
-            <node concept="3TlMh9" id="12_KeTzXB_d" role="1Nl$3v">
-              <property role="2hmy$m" value="10" />
+            <node concept="6VUUj" id="6bs538lGE2a" role="6GRza">
+              <node concept="3TlMh9" id="6bs538lGL0a" role="6VY68">
+                <property role="2hmy$m" value="10" />
+              </node>
             </node>
           </node>
           <node concept="1NlFWL" id="12_KeTzXBFB" role="6qQK8">
             <ref role="6qQL_" node="12_KeTzW_69" resolve="aCyclicTask" />
-            <node concept="3TlMh9" id="12_KeTzXBG3" role="1Nl$3v">
-              <property role="2hmy$m" value="10" />
+            <node concept="6VUUj" id="6bs538lGL2i" role="6GRza">
+              <node concept="3TlMh9" id="6bs538lGL2s" role="6VY68">
+                <property role="2hmy$m" value="10" />
+              </node>
             </node>
           </node>
         </node>
