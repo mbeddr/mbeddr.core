@@ -223,6 +223,10 @@
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
+      <concept id="1176903168877" name="jetbrains.mps.baseLanguage.collections.structure.UnionOperation" flags="nn" index="4Tj9Z" />
+      <concept id="1176906603202" name="jetbrains.mps.baseLanguage.collections.structure.BinaryOperation" flags="nn" index="56pJg">
+        <child id="1176906787974" name="rightExpression" index="576Qk" />
+      </concept>
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
@@ -497,6 +501,29 @@
       </node>
       <node concept="A3Dl8" id="6zcb4tIDdKs" role="3clF45">
         <node concept="3Tqbb2" id="6zcb4tIDdKt" role="A3Ik2">
+          <ref role="ehGHo" to="5wll:vg5qBCbSs6" resolve="EventDeclaration" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="6bs538mCDK9" role="13h7CS">
+      <property role="TrG5h" value="accessedEvents" />
+      <node concept="3Tm1VV" id="6bs538mCDKa" role="1B3o_S" />
+      <node concept="3clFbS" id="6bs538mCDKb" role="3clF47">
+        <node concept="3clFbF" id="6bs538mCElj" role="3cqZAp">
+          <node concept="2OqwBi" id="6bs538mCEwI" role="3clFbG">
+            <node concept="BsUDl" id="6bs538mCEnT" role="2Oq$k0">
+              <ref role="37wK5l" node="6zcb4tIDdKf" resolve="awaitedEvents" />
+            </node>
+            <node concept="4Tj9Z" id="6bs538mCFfB" role="2OqNvi">
+              <node concept="BsUDl" id="6bs538mCFh7" role="576Qk">
+                <ref role="37wK5l" node="6zcb4tICZTq" resolve="signaledEvents" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="6bs538mCEkz" role="3clF45">
+        <node concept="3Tqbb2" id="6bs538mCEkC" role="A3Ik2">
           <ref role="ehGHo" to="5wll:vg5qBCbSs6" resolve="EventDeclaration" />
         </node>
       </node>
