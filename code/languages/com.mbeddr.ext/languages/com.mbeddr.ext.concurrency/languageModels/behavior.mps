@@ -103,6 +103,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -2038,6 +2039,28 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="6bs538mpcCD">
+    <ref role="13h7C2" to="5wll:12_KeTzXJV3" resolve="ConcurrencyGenerationStrategy" />
+    <node concept="13i0hz" id="6bs538muOve" role="13h7CS">
+      <property role="TrG5h" value="validateSchedules" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="6bs538muOvf" role="1B3o_S" />
+      <node concept="3clFbS" id="6bs538muOvg" role="3clF47" />
+      <node concept="3cqZAl" id="6bs538muOvm" role="3clF45" />
+      <node concept="37vLTG" id="6bs538muOvq" role="3clF46">
+        <property role="TrG5h" value="specs" />
+        <node concept="A3Dl8" id="6bs538muOw3" role="1tU5fm">
+          <node concept="3Tqbb2" id="6bs538muOwd" role="A3Ik2">
+            <ref role="ehGHo" to="5wll:66UaKxBOkro" resolve="ScheduleSpecification" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="6bs538mpcCE" role="13h7CW">
+      <node concept="3clFbS" id="6bs538mpcCF" role="2VODD2" />
     </node>
   </node>
 </model>

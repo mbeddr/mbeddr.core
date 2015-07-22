@@ -158,11 +158,15 @@
       </concept>
       <concept id="1199577005875952769" name="com.mbeddr.ext.concurrency.structure.ConcurrencyConfigItem" flags="ng" index="1NkVLJ">
         <child id="1199577005875986116" name="genStrategy" index="1NkNSE" />
+        <child id="7123590915949967433" name="schedules" index="1OIqLV" />
       </concept>
       <concept id="1199577005876317481" name="com.mbeddr.ext.concurrency.structure.TerminateStatement" flags="ng" index="1NmsR7" />
       <concept id="1199577005876533973" name="com.mbeddr.ext.concurrency.structure.IterationNoTarget" flags="ng" index="1NmDCV" />
       <concept id="1199577005877282933" name="com.mbeddr.ext.concurrency.structure.DelayByStatement" flags="ng" index="1OFKyr">
         <child id="1199577005877282934" name="value" index="1OFKyo" />
+      </concept>
+      <concept id="7123590915949907270" name="com.mbeddr.ext.concurrency.structure.SchedSpecRef" flags="ng" index="1OId_O">
+        <reference id="7123590915949907384" name="sched" index="1OIdAa" />
       </concept>
     </language>
     <language id="8c1a7e14-9520-42a4-a3a7-b15e523af156" name="com.mbeddr.ext.concurrency.pthreads">
@@ -494,6 +498,9 @@
     </node>
     <node concept="1NkVLJ" id="2dxXn_m$kGz" role="2Q9xDr">
       <node concept="1PVdNI" id="2dxXn_m$lac" role="1NkNSE" />
+      <node concept="1OId_O" id="6bs538msuRG" role="1OIqLV">
+        <ref role="1OIdAa" node="12_KeTzYMQ0" resolve="sched" />
+      </node>
     </node>
   </node>
 </model>

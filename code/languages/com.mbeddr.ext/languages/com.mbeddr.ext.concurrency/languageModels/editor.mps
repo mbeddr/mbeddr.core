@@ -24,6 +24,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -91,6 +92,13 @@
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
+        <child id="1225898971709" name="getter" index="1Hhtcw" />
+      </concept>
+      <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
+        <child id="1225900141900" name="modelAccessor" index="1HlULh" />
+      </concept>
+      <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="1176749715029" name="jetbrains.mps.lang.editor.structure.QueryFunction_CellProvider" flags="in" index="3VJUX4" />
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
@@ -727,22 +735,35 @@
           </node>
         </node>
       </node>
-      <node concept="3EZMnI" id="6dhuB$Q5oiA" role="3EZMnx">
-        <node concept="VPM3Z" id="6dhuB$Q5oiB" role="3F10Kt">
-          <property role="VOm3f" value="false" />
+      <node concept="3EZMnI" id="6bs538mpyvr" role="3EZMnx">
+        <node concept="2iRkQZ" id="6bs538mpyvs" role="2iSdaV" />
+        <node concept="3EZMnI" id="6bs538mpyzF" role="3EZMnx">
+          <node concept="2iRfu4" id="6bs538mpyzG" role="2iSdaV" />
+          <node concept="3F0ifn" id="6bs538mpyzs" role="3EZMnx">
+            <property role="3F0ifm" value="schedule specs:     " />
+          </node>
+          <node concept="3F2HdR" id="6bs538mpy$1" role="3EZMnx">
+            <ref role="1NtTu8" to="5wll:6bs538mprx9" />
+            <node concept="2iRkQZ" id="6bs538mpy$7" role="2czzBx" />
+          </node>
         </node>
-        <node concept="lj46D" id="6dhuB$Q5oiH" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pVoyu" id="6dhuB$Q5oiJ" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="2iRfu4" id="2hmLFgapqlv" role="2iSdaV" />
-        <node concept="3F0ifn" id="6dhuB$Q5oiF" role="3EZMnx">
-          <property role="3F0ifm" value="generation strategy:" />
-        </node>
-        <node concept="3F1sOY" id="1OLGDVffrKo" role="3EZMnx">
-          <ref role="1NtTu8" to="5wll:12_KeTzXJV4" />
+        <node concept="3EZMnI" id="6dhuB$Q5oiA" role="3EZMnx">
+          <node concept="VPM3Z" id="6dhuB$Q5oiB" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="lj46D" id="6dhuB$Q5oiH" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="pVoyu" id="6dhuB$Q5oiJ" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="2iRfu4" id="2hmLFgapqlv" role="2iSdaV" />
+          <node concept="3F0ifn" id="6dhuB$Q5oiF" role="3EZMnx">
+            <property role="3F0ifm" value="generation strategy:" />
+          </node>
+          <node concept="3F1sOY" id="1OLGDVffrKo" role="3EZMnx">
+            <ref role="1NtTu8" to="5wll:12_KeTzXJV4" />
+          </node>
         </node>
       </node>
     </node>
@@ -1095,6 +1116,31 @@
       </node>
       <node concept="3F1sOY" id="6bs538lHfAl" role="3EZMnx">
         <ref role="1NtTu8" to="5wll:6bs538lHevi" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6bs538msuSt">
+    <property role="3GE5qa" value="build" />
+    <ref role="1XX52x" to="5wll:6bs538mpcP6" resolve="SchedSpecRef" />
+    <node concept="1iCGBv" id="6bs538msuS_" role="2wV5jI">
+      <ref role="1NtTu8" to="5wll:6bs538mpcQS" />
+      <node concept="1sVBvm" id="6bs538msuSB" role="1sWHZn">
+        <node concept="1HlG4h" id="6bs538msuTa" role="2wV5jI">
+          <node concept="1HfYo3" id="6bs538msuTc" role="1HlULh">
+            <node concept="3TQlhw" id="6bs538msuTe" role="1Hhtcw">
+              <node concept="3clFbS" id="6bs538msuTg" role="2VODD2">
+                <node concept="3clFbF" id="6bs538msuYn" role="3cqZAp">
+                  <node concept="2OqwBi" id="6bs538msvlP" role="3clFbG">
+                    <node concept="pncrf" id="6bs538msvdA" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="6bs538msvPT" role="2OqNvi">
+                      <ref role="37wK5l" to="hwgx:4JF77iuPCMH" resolve="qualifiedName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

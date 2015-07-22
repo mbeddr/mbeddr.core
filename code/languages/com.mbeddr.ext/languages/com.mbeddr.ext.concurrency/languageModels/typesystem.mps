@@ -159,6 +159,9 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
+        <reference id="3562215692195600259" name="link" index="13MTZf" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -1285,6 +1288,45 @@
     <node concept="1YaCAy" id="JlCmcDFHDI" role="1YuTPh">
       <property role="TrG5h" value="tvr" />
       <ref role="1YaFvo" to="5wll:JlCmcDFx0U" resolve="TaskVarRef" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6bs538muOHl">
+    <property role="TrG5h" value="check_ConcurrencyGenerationStrategy" />
+    <property role="3GE5qa" value="build" />
+    <node concept="3clFbS" id="6bs538muOHm" role="18ibNy">
+      <node concept="3clFbF" id="6bs538muOOq" role="3cqZAp">
+        <node concept="2OqwBi" id="6bs538muOPu" role="3clFbG">
+          <node concept="1YBJjd" id="6bs538muOOp" role="2Oq$k0">
+            <ref role="1YBMHb" node="6bs538muOHo" resolve="s" />
+          </node>
+          <node concept="2qgKlT" id="6bs538muOX5" role="2OqNvi">
+            <ref role="37wK5l" to="qozy:6bs538muOve" resolve="validateSchedules" />
+            <node concept="2OqwBi" id="6bs538muQhl" role="37wK5m">
+              <node concept="2OqwBi" id="6bs538muPn9" role="2Oq$k0">
+                <node concept="1PxgMI" id="6bs538muPhk" role="2Oq$k0">
+                  <ref role="1PxNhF" to="5wll:12_KeTzXBM1" resolve="ConcurrencyConfigItem" />
+                  <node concept="2OqwBi" id="6bs538muOZB" role="1PxMeX">
+                    <node concept="1YBJjd" id="6bs538muOY4" role="2Oq$k0">
+                      <ref role="1YBMHb" node="6bs538muOHo" resolve="s" />
+                    </node>
+                    <node concept="1mfA1w" id="6bs538muP84" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="6bs538muPAw" role="2OqNvi">
+                  <ref role="3TtcxE" to="5wll:6bs538mprx9" />
+                </node>
+              </node>
+              <node concept="13MTOL" id="6bs538muUSG" role="2OqNvi">
+                <ref role="13MTZf" to="5wll:6bs538mpcQS" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6bs538muOHo" role="1YuTPh">
+      <property role="TrG5h" value="s" />
+      <ref role="1YaFvo" to="5wll:12_KeTzXJV3" resolve="ConcurrencyGenerationStrategy" />
     </node>
   </node>
 </model>

@@ -335,6 +335,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="12_KeTzXJV3" resolve="ConcurrencyGenerationStrategy" />
     </node>
+    <node concept="1TJgyj" id="6bs538mprx9" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="schedules" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6bs538mpcP6" resolve="SchedSpecRef" />
+    </node>
     <node concept="PrWs8" id="12_KeTzXBM2" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
     </node>
@@ -623,6 +629,17 @@
       <property role="20kJfa" value="time" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6zcb4tI8Sbk" resolve="TimeWithUnit" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6bs538mpcP6">
+    <property role="3GE5qa" value="build" />
+    <property role="TrG5h" value="SchedSpecRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6bs538mpcQS" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="sched" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="66UaKxBOkro" resolve="ScheduleSpecification" />
     </node>
   </node>
 </model>
