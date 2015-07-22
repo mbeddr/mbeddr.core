@@ -11,6 +11,7 @@
     <import index="t6m2" ref="r:5b5b2089-00bc-4f4a-9b07-7e2ecff90d57(com.mbeddr.demo.robot.io)" />
     <import index="77b7" ref="r:a0b3629e-62c3-4c97-80e1-7ddede5fb214(com.mbeddr.demo.robot.avr.imports)" />
     <import index="ec8n" ref="r:df033cd0-34e6-4f58-88d1-8a821b4d317d(com.mbeddr.demo.robot.util)" />
+    <import index="bs9u" ref="r:6796c9a5-23e8-4b7e-bc37-6a06a8f0a13f(com.mbeddr.demo.robot.avr)" />
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -161,7 +162,6 @@
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
       </concept>
-      <concept id="6437088627575724000" name="com.mbeddr.core.modules.structure.FunctionPrototype" flags="ng" index="N3Fnw" />
       <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
@@ -1206,7 +1206,7 @@
         <node concept="3XIRFW" id="2t4Dw6aEko8" role="2EWMhI">
           <node concept="1_9egQ" id="2uTv4B9rZDj" role="3XIRFZ">
             <node concept="3O_q_g" id="2uTv4B9rZDh" role="1_9egR">
-              <ref role="3O_q_h" node="2uTv4B9rYe1" resolve="sei" />
+              <ref role="3O_q_h" to="bs9u:5KcWL$DkWB$" resolve="sei" />
             </node>
           </node>
           <node concept="1_9egQ" id="2t4Dw6aEDt9" role="3XIRFZ">
@@ -2067,31 +2067,11 @@
       <property role="TrG5h" value="empty_1436368716699_5" />
     </node>
     <node concept="3GEVxB" id="2uTv4B9rYfl" role="2OODSX">
-      <ref role="3GEb4d" node="2uTv4B9rQmG" resolve="avr_interrupt" />
+      <ref role="3GEb4d" to="bs9u:5KcWL$DkWBy" resolve="avr_interrupt" />
     </node>
     <node concept="3GEVxB" id="2XT_MLHascb" role="2OODSX">
       <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="wYuX6q79Oi" resolve="Interrupts" />
-    </node>
-  </node>
-  <node concept="rcWEw" id="2uTv4B9rQmG">
-    <property role="TrG5h" value="avr_interrupt" />
-    <node concept="rcWE1" id="2uTv4B9rYdX" role="rcWEr">
-      <property role="rcWEL" value="&lt;avr/interrupt.h&gt;" />
-    </node>
-    <node concept="N3Fnw" id="2uTv4B9rYe1" role="N3F5h">
-      <property role="TrG5h" value="sei" />
-      <node concept="19Rifw" id="2uTv4B9rYee" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-    </node>
-    <node concept="N3Fnw" id="2uTv4B9rYeG" role="N3F5h">
-      <property role="TrG5h" value="cli" />
-      <node concept="19Rifw" id="2uTv4B9rYf1" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
     </node>
   </node>
   <node concept="N3F5e" id="wYuX6q6qMN">
