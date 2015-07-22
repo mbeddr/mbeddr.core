@@ -18,7 +18,7 @@
 
 
 TODO:
-* Introduce the idea of platform and capabilities
+* use an external module as a proxy for the system headers
 * Sascha's stuff
 * Dass man queues als shared markieren muss ist doof.
 Move the locking and blocking into the enqueue dequeue functions
