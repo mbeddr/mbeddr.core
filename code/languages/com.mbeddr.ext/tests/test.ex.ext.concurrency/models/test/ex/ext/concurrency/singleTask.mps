@@ -131,6 +131,7 @@
     </language>
     <language id="b879012d-402b-40e0-8df7-e6fa93b9b711" name="com.mbeddr.ext.concurrency">
       <concept id="7041988282448699520" name="com.mbeddr.ext.concurrency.structure.StartScheduleStatement" flags="ng" index="6qOI8">
+        <property id="7123590915951785440" name="join" index="1Onm7i" />
         <reference id="7041988282448700521" name="schedule" index="6qOXx" />
       </concept>
       <concept id="7041988282448693100" name="com.mbeddr.ext.concurrency.structure.SingleTaskSchedulingConstraint" flags="ng" index="6qQL$">
@@ -140,7 +141,6 @@
         <child id="7041988282448692992" name="constraints" index="6qQK8" />
       </concept>
       <concept id="7551459360495600340" name="com.mbeddr.ext.concurrency.structure.TimeWithUnit" flags="ng" index="6VUUj">
-        <property id="7551459360495620501" name="unit" index="6VZRi" />
         <child id="7551459360495619535" name="value" index="6VY68" />
       </concept>
       <concept id="8137843191085062424" name="com.mbeddr.ext.concurrency.structure.Task" flags="ng" index="1iAVhs">
@@ -162,9 +162,6 @@
       </concept>
       <concept id="1199577005876317481" name="com.mbeddr.ext.concurrency.structure.TerminateStatement" flags="ng" index="1NmsR7" />
       <concept id="1199577005876533973" name="com.mbeddr.ext.concurrency.structure.IterationNoTarget" flags="ng" index="1NmDCV" />
-      <concept id="1199577005877282933" name="com.mbeddr.ext.concurrency.structure.DelayByStatement" flags="ng" index="1OFKyr">
-        <child id="1199577005877282934" name="value" index="1OFKyo" />
-      </concept>
       <concept id="7123590915949907270" name="com.mbeddr.ext.concurrency.structure.SchedSpecRef" flags="ng" index="1OId_O">
         <reference id="7123590915949907384" name="sched" index="1OIdAa" />
       </concept>
@@ -362,15 +359,8 @@
       </node>
       <node concept="3XIRFW" id="73JrkgytXs_" role="c0Qz3">
         <node concept="6qOI8" id="12_KeTzYPMY" role="3XIRFZ">
+          <property role="1Onm7i" value="true" />
           <ref role="6qOXx" node="12_KeTzYMQ0" resolve="sched" />
-        </node>
-        <node concept="1OFKyr" id="6zcb4tIdBZ$" role="3XIRFZ">
-          <node concept="6VUUj" id="6zcb4tIdBZA" role="1OFKyo">
-            <property role="6VZRi" value="s" />
-            <node concept="3TlMh9" id="6zcb4tIdC0j" role="6VY68">
-              <property role="2hmy$m" value="3" />
-            </node>
-          </node>
         </node>
         <node concept="2N2KuS" id="3xRFG9PM8tY" role="3XIRFZ">
           <node concept="3TlMh9" id="3xRFG9PM8Ix" role="2N2GHh">

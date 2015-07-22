@@ -282,6 +282,10 @@
     <property role="TrG5h" value="StartScheduleStatement" />
     <property role="34LRSv" value="start" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyi" id="6bs538mwnnw" role="1TKVEl">
+      <property role="TrG5h" value="join" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="66UaKxBOmhD" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="schedule" />
