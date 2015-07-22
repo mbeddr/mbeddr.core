@@ -20,7 +20,7 @@
 TODO:
 * Introduce the idea of platform and capabilities
 * Sascha's stuff
-* Project accessed resources (atomic, event, queue) 
+* Dass man queues als shared markieren muss ist doof.
 Move the locking and blocking into the enqueue dequeue functions
   (if queue is blockable)  
 
