@@ -450,7 +450,7 @@
         <ref role="2v9HqP" to="azo0:oDdAT4ofk7" resolve="UART" />
       </node>
       <node concept="2v9HqM" id="2uTv4B9s8as" role="2eOfOg">
-        <ref role="2v9HqP" to="azo0:2uTv4B9rQmG" resolve="avr_interrupt" />
+        <ref role="2v9HqP" to="bs9u:5KcWL$DkWBy" resolve="avr_interrupt" />
       </node>
       <node concept="2v9HqM" id="74TmcPj3u3V" role="2eOfOg">
         <ref role="2v9HqP" to="azo0:wYuX6q79Oi" resolve="Interrupts" />
