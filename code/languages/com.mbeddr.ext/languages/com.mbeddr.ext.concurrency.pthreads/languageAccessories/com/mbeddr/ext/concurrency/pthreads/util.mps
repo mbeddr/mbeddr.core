@@ -36,6 +36,7 @@
         <property id="3830958861296879114" name="text" index="19_wF3" />
       </concept>
       <concept id="3830958861296871078" name="com.mbeddr.core.statements.structure.ArbitraryTextExpression" flags="ng" index="19_ADJ">
+        <property id="6275956088645591175" name="requiredStdHeader" index="3YGKL8" />
         <child id="3830958861296879115" name="items" index="19_wF2" />
         <child id="6275956088646286745" name="dummyType" index="3YFD5m" />
       </concept>
@@ -678,6 +679,7 @@
         </node>
         <node concept="1_9egQ" id="6bs538m9XEH" role="3XIRFZ">
           <node concept="19_ADJ" id="6bs538m9XEF" role="1_9egR">
+            <property role="3YGKL8" value="&lt;stdio.h&gt;" />
             <node concept="19_wF0" id="6bs538m9XRX" role="19_wF2">
               <property role="19_wF3" value="printf(&quot;          targetTime   %ld%d \n&quot;, targetTime.tv_sec, targetTime.tv_nsec);" />
             </node>
@@ -1129,6 +1131,7 @@
           <node concept="23nYmP" id="6bs538lWLhb" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
+            <property role="23nYmO" value="&lt;time.h&gt;" />
             <node concept="26Vqqz" id="6bs538lWLlB" role="23nYmQ">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
@@ -1279,6 +1282,7 @@
           <node concept="23nYmP" id="4pi60CHBDut" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
+            <property role="23nYmO" value="&lt;time.h&gt;" />
             <node concept="26Vqqz" id="4pi60CHBDuu" role="23nYmQ">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
@@ -1335,66 +1339,6 @@
     </node>
     <node concept="2NXPZ9" id="4pi60CHBEDe" role="N3F5h">
       <property role="TrG5h" value="empty_1437567125376_4" />
-    </node>
-    <node concept="N3Fnx" id="4pi60CHBFu3" role="N3F5h">
-      <property role="TrG5h" value="microsFromTimeval" />
-      <property role="2OOxQR" value="true" />
-      <node concept="19RgSI" id="4pi60CHBFu4" role="1UOdpc">
-        <property role="TrG5h" value="ttw" />
-        <node concept="3wxxNl" id="4pi60CHBFu5" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-          <node concept="23nYmP" id="4pi60CHBFu6" role="2umbIo">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-            <node concept="26Vqqz" id="4pi60CHBFu7" role="23nYmQ">
-              <property role="2caQfQ" value="false" />
-              <property role="2c7vTL" value="false" />
-            </node>
-            <node concept="19_wF0" id="4pi60CHBFu8" role="23nYmR">
-              <property role="19_wF3" value="struct timeval" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="26Vqp1" id="4pi60CHBFu9" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="3XIRFW" id="4pi60CHBFua" role="3XIRFX">
-        <node concept="2BFjQ_" id="4pi60CHBFub" role="3XIRFZ">
-          <node concept="2BOciq" id="4pi60CHBFuc" role="2BFjQA">
-            <node concept="2BOcij" id="4pi60CHBFud" role="3TlMhI">
-              <node concept="3TlMh9" id="4pi60CHBFue" role="3TlMhJ">
-                <property role="2hmy$m" value="1000" />
-              </node>
-              <node concept="2BOcij" id="4pi60CHBFuf" role="3TlMhI">
-                <node concept="3TlMh9" id="4pi60CHBFug" role="3TlMhJ">
-                  <property role="2hmy$m" value="1000" />
-                </node>
-                <node concept="19_ADJ" id="4pi60CHBFuh" role="3TlMhI">
-                  <node concept="19_wF0" id="4pi60CHBFui" role="19_wF2">
-                    <property role="19_wF3" value="ttw-&gt;tv_sec" />
-                  </node>
-                  <node concept="26Vqp1" id="4pi60CHBFuj" role="3YFD5m">
-                    <property role="2caQfQ" value="false" />
-                    <property role="2c7vTL" value="false" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="19_ADJ" id="4pi60CHBFum" role="3TlMhJ">
-              <node concept="19_wF0" id="4pi60CHBFun" role="19_wF2">
-                <property role="19_wF3" value="ttw-&gt;tv_usec" />
-              </node>
-              <node concept="26Vqp1" id="4pi60CHBFuo" role="3YFD5m">
-                <property role="2caQfQ" value="false" />
-                <property role="2c7vTL" value="false" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="2NXPZ9" id="4pi60CHBEYu" role="N3F5h">
       <property role="TrG5h" value="empty_1437567125663_5" />
