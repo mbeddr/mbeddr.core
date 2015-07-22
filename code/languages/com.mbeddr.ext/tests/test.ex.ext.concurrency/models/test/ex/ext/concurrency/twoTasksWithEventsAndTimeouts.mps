@@ -13,6 +13,13 @@
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
         <child id="7763322639126652758" name="baseType" index="2umbIo" />
       </concept>
+      <concept id="3830958861296879113" name="com.mbeddr.core.statements.structure.AbritraryTextItem" flags="ng" index="19_wF0">
+        <property id="3830958861296879114" name="text" index="19_wF3" />
+      </concept>
+      <concept id="3830958861296871078" name="com.mbeddr.core.statements.structure.ArbitraryTextExpression" flags="ng" index="19_ADJ">
+        <child id="3830958861296879115" name="items" index="19_wF2" />
+        <child id="6275956088646286745" name="dummyType" index="3YFD5m" />
+      </concept>
       <concept id="8850915533694634145" name="com.mbeddr.core.statements.structure.InitExpression" flags="ng" index="3o3WLD">
         <child id="8850915533694634146" name="elements" index="3o3WLE" />
       </concept>
@@ -225,6 +232,7 @@
       <concept id="4620120465980402700" name="com.mbeddr.core.expressions.structure.GenericDotExpression" flags="ng" index="2qmXGp">
         <child id="7034214596252529803" name="target" index="1ESnxz" />
       </concept>
+      <concept id="5763383285156373018" name="com.mbeddr.core.expressions.structure.MinusExpression" flags="ng" index="2BOcil" />
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
@@ -329,11 +337,38 @@
     <node concept="1iAVhs" id="6bs538lKHwb" role="N3F5h">
       <property role="TrG5h" value="consumer" />
       <node concept="3XIRFW" id="6bs538lKHwc" role="1iABvq">
+        <node concept="3XIRlf" id="6bs538m8DzP" role="3XIRFZ">
+          <property role="TrG5h" value="t1" />
+          <node concept="26Vqp1" id="6bs538m8E0O" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="19_ADJ" id="6bs538m8DzU" role="3XIe9u">
+            <node concept="19_wF0" id="6bs538m8DzV" role="19_wF2">
+              <property role="19_wF3" value="PThreadsUtil_time2()" />
+            </node>
+            <node concept="26Vqp1" id="6bs538m8EsY" role="3YFD5m">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="6bs538mceQ$" role="3XIRFZ">
+          <node concept="3O_q_g" id="6bs538mceQy" role="1_9egR">
+            <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
+            <node concept="PhEJO" id="6bs538mcfk4" role="3O_q_j">
+              <property role="PhEJT" value="\n" />
+            </node>
+          </node>
+        </node>
         <node concept="1_9egQ" id="6bs538m3g3D" role="3XIRFZ">
           <node concept="3O_q_g" id="6bs538m3g3E" role="1_9egR">
             <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
             <node concept="PhEJO" id="6bs538m3g3F" role="3O_q_j">
-              <property role="PhEJT" value="  consumer: waiting\n" />
+              <property role="PhEJT" value="  consumer: waiting   %ld \n" />
+            </node>
+            <node concept="3ZVu4v" id="6bs538m8DzY" role="3O_q_j">
+              <ref role="3ZVs_2" node="6bs538m8DzP" resolve="t1" />
             </node>
           </node>
         </node>
@@ -347,11 +382,35 @@
             </node>
           </node>
         </node>
-        <node concept="1_9egQ" id="6bs538m3piB" role="3XIRFZ">
-          <node concept="3O_q_g" id="6bs538m3piC" role="1_9egR">
+        <node concept="3XIRlf" id="6bs538m8Fm6" role="3XIRFZ">
+          <property role="TrG5h" value="t2" />
+          <node concept="26Vqp1" id="6bs538m8Fm7" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="19_ADJ" id="6bs538m8Fm8" role="3XIe9u">
+            <node concept="19_wF0" id="6bs538m8Fm9" role="19_wF2">
+              <property role="19_wF3" value="PThreadsUtil_time2()" />
+            </node>
+            <node concept="26Vqp1" id="6bs538m8Fma" role="3YFD5m">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="6bs538m5D_Z" role="3XIRFZ">
+          <node concept="3O_q_g" id="6bs538m5DA0" role="1_9egR">
             <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
-            <node concept="PhEJO" id="6bs538m3piD" role="3O_q_j">
-              <property role="PhEJT" value="  consumer: wait done\n" />
+            <node concept="PhEJO" id="6bs538m5DA1" role="3O_q_j">
+              <property role="PhEJT" value="  consumer: wait done; delta %ld \n" />
+            </node>
+            <node concept="2BOcil" id="6bs538m8HZJ" role="3O_q_j">
+              <node concept="3ZVu4v" id="6bs538m8HZR" role="3TlMhJ">
+                <ref role="3ZVs_2" node="6bs538m8DzP" resolve="t1" />
+              </node>
+              <node concept="3ZVu4v" id="6bs538m8Ggh" role="3TlMhI">
+                <ref role="3ZVs_2" node="6bs538m8Fm6" resolve="t2" />
+              </node>
             </node>
           </node>
         </node>
@@ -546,7 +605,7 @@
           <node concept="6VUUj" id="6bs538lKHxS" role="1OFKyo">
             <property role="6VZRi" value="s" />
             <node concept="3TlMh9" id="6bs538lKHxT" role="6VY68">
-              <property role="2hmy$m" value="2" />
+              <property role="2hmy$m" value="1" />
             </node>
           </node>
         </node>

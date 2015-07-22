@@ -51,6 +51,7 @@
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
+      <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
       <concept id="2093108837558113914" name="com.mbeddr.core.statements.structure.LocalVarRef" flags="ng" index="3ZVu4v">
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
       </concept>
@@ -164,7 +165,6 @@
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="8860443239512147445" name="com.mbeddr.core.expressions.structure.GreaterExpression" flags="ng" index="3Tl9Jr" />
-      <concept id="8860443239512129322" name="com.mbeddr.core.expressions.structure.EqualsExpression" flags="ng" index="3TlM44" />
       <concept id="8860443239512128058" name="com.mbeddr.core.expressions.structure.BooleanType" flags="ng" index="3TlMgk" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
@@ -236,7 +236,7 @@
                     <ref role="3ZUYvu" node="1zeZsIbz628" resolve="iterationStartTime" />
                   </node>
                   <node concept="3O_q_g" id="4hMIGYxgIqy" role="3TlMhI">
-                    <ref role="3O_q_h" node="4hMIGYwKdxK" resolve="time" />
+                    <ref role="3O_q_h" node="4hMIGYwKdxK" resolve="time2" />
                   </node>
                 </node>
               </node>
@@ -521,7 +521,7 @@
         </node>
         <node concept="1_9egQ" id="6bs538lXnDU" role="3XIRFZ">
           <node concept="3O_q_g" id="6bs538lXnDS" role="1_9egR">
-            <ref role="3O_q_h" node="6bs538lWL1B" resolve="createTimeDelta" />
+            <ref role="3O_q_h" node="6bs538lWL1B" resolve="createAbstime" />
             <node concept="YInwV" id="6bs538lXnHN" role="3O_q_j">
               <node concept="3ZVu4v" id="6bs538lXnL5" role="1_9fRO">
                 <ref role="3ZVs_2" node="6bs538lXnrG" resolve="ttw" />
@@ -535,6 +535,13 @@
             </node>
             <node concept="3ZUYvv" id="6bs538lXC19" role="3O_q_j">
               <ref role="3ZUYvu" node="6bs538lXgk5" resolve="usec" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="6bs538m9XEH" role="3XIRFZ">
+          <node concept="19_ADJ" id="6bs538m9XEF" role="1_9egR">
+            <node concept="19_wF0" id="6bs538m9XRX" role="19_wF2">
+              <property role="19_wF3" value="printf(&quot;                ttw   %ld%d \n&quot;, ttw.tv_sec, ttw.tv_nsec);" />
             </node>
           </node>
         </node>
@@ -592,28 +599,18 @@
             </node>
           </node>
         </node>
-        <node concept="c0U19" id="6bs538lXk7u" role="3XIRFZ">
-          <node concept="3XIRFW" id="6bs538lXk7v" role="c0U17">
-            <node concept="1_9egQ" id="6bs538lXfOH" role="3XIRFZ">
-              <node concept="3pqW6w" id="6bs538lXfOI" role="1_9egR">
-                <node concept="3TlMhd" id="6bs538lXfOJ" role="3TlMhJ" />
-                <node concept="2qmXGp" id="6bs538lXfOK" role="3TlMhI">
-                  <node concept="1E4Tgc" id="6bs538lXfOL" role="1ESnxz">
-                    <ref role="1E4Tge" node="pNTuhIfnDX" resolve="flag" />
-                  </node>
-                  <node concept="3ZUYvv" id="6bs538lXfOM" role="1_9fRO">
-                    <ref role="3ZUYvu" node="6bs538lXfOT" resolve="event" />
-                  </node>
-                </node>
+        <node concept="3XISUE" id="6bs538mgUcP" role="3XIRFZ" />
+        <node concept="3XISUE" id="6bs538mgU3o" role="3XIRFZ" />
+        <node concept="1_9egQ" id="6bs538lXfOH" role="3XIRFZ">
+          <node concept="3pqW6w" id="6bs538lXfOI" role="1_9egR">
+            <node concept="3TlMhd" id="6bs538lXfOJ" role="3TlMhJ" />
+            <node concept="2qmXGp" id="6bs538lXfOK" role="3TlMhI">
+              <node concept="1E4Tgc" id="6bs538lXfOL" role="1ESnxz">
+                <ref role="1E4Tge" node="pNTuhIfnDX" resolve="flag" />
               </node>
-            </node>
-          </node>
-          <node concept="3TlM44" id="6bs538lXkdS" role="c0U16">
-            <node concept="3TlMh9" id="6bs538lXkel" role="3TlMhJ">
-              <property role="2hmy$m" value="0" />
-            </node>
-            <node concept="3ZVu4v" id="6bs538lXkdt" role="3TlMhI">
-              <ref role="3ZVs_2" node="6bs538lXjTU" resolve="res" />
+              <node concept="3ZUYvv" id="6bs538lXfOM" role="1_9fRO">
+                <ref role="3ZUYvu" node="6bs538lXfOT" resolve="event" />
+              </node>
             </node>
           </node>
         </node>
@@ -902,7 +899,7 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="3O_q_g" id="4hMIGYwKotD" role="3XIe9u">
-            <ref role="3O_q_h" node="4hMIGYwKdxK" resolve="time" />
+            <ref role="3O_q_h" node="4hMIGYwKdxK" resolve="time2" />
           </node>
         </node>
         <node concept="3XIRlf" id="2ajpxDX27ka" role="3XIRFZ">
@@ -946,7 +943,7 @@
       <property role="TrG5h" value="empty_1437157113321_2" />
     </node>
     <node concept="N3Fnx" id="6bs538lWL1B" role="N3F5h">
-      <property role="TrG5h" value="createTimeDelta" />
+      <property role="TrG5h" value="createAbstime" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="6bs538lWL1D" role="3XIRFX">
         <node concept="3XIRlf" id="6bs538lWLhf" role="3XIRFZ">
@@ -1093,8 +1090,11 @@
     <node concept="2NXPZ9" id="6bs538lWKNA" role="N3F5h">
       <property role="TrG5h" value="empty_1437508601570_10" />
     </node>
+    <node concept="2NXPZ9" id="6bs538mbyqg" role="N3F5h">
+      <property role="TrG5h" value="empty_1437546694022_14" />
+    </node>
     <node concept="N3Fnx" id="4hMIGYwKdxK" role="N3F5h">
-      <property role="TrG5h" value="time" />
+      <property role="TrG5h" value="time2" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="4hMIGYwKdxM" role="3XIRFX">
         <node concept="3XIRlf" id="4hMIGYwKdAm" role="3XIRFZ">
