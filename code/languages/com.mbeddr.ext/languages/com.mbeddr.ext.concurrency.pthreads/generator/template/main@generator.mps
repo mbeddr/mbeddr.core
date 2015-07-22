@@ -152,6 +152,7 @@
       </concept>
       <concept id="3830958861296871078" name="com.mbeddr.core.statements.structure.ArbitraryTextExpression" flags="ng" index="19_ADJ">
         <child id="3830958861296879115" name="items" index="19_wF2" />
+        <child id="6275956088646286745" name="dummyType" index="3YFD5m" />
       </concept>
       <concept id="1494329074535282918" name="com.mbeddr.core.statements.structure.ElsePart" flags="ng" index="1ly_i6">
         <child id="1494329074535283249" name="body" index="1ly_ph" />
@@ -3173,6 +3174,26 @@
                 </node>
               </node>
             </node>
+            <node concept="3o3WLD" id="6bs538mkyBv" role="1cecVj">
+              <node concept="19_ADJ" id="6bs538mkFef" role="3o3WLE">
+                <node concept="19_wF0" id="6bs538mkFeg" role="19_wF2">
+                  <property role="19_wF3" value="PTHREAD_COND_INITIALIZER" />
+                </node>
+                <node concept="3TlMgk" id="6bs538mkN0_" role="3YFD5m">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                </node>
+              </node>
+              <node concept="19_ADJ" id="6bs538mkF6g" role="3o3WLE">
+                <node concept="19_wF0" id="6bs538mkFe2" role="19_wF2">
+                  <property role="19_wF3" value="PTHREAD_MUTEX_INITIALIZER" />
+                </node>
+                <node concept="3TlMgk" id="6bs538mkN0H" role="3YFD5m">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="2NXPZ9" id="pNTuhIfu7h" role="N3F5h">
             <property role="TrG5h" value="empty_1437211850298_6" />
@@ -4857,6 +4878,26 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3o3WLD" id="6bs538mlB7v" role="1cecVj">
+          <node concept="19_ADJ" id="6bs538mlBhJ" role="3o3WLE">
+            <node concept="19_wF0" id="6bs538mlBrK" role="19_wF2">
+              <property role="19_wF3" value="PTHREAD_MUTEX_INITIALIZER" />
+            </node>
+            <node concept="26Vqqz" id="6bs538mlC7q" role="3YFD5m">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+          </node>
+          <node concept="19_ADJ" id="6bs538mlBvg" role="3o3WLE">
+            <node concept="19_wF0" id="6bs538mlBvh" role="19_wF2">
+              <property role="19_wF3" value="PTHREAD_MUTEX_INITIALIZER" />
+            </node>
+            <node concept="26Vqqz" id="6bs538mlC7y" role="3YFD5m">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
             </node>
           </node>
         </node>
