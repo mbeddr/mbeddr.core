@@ -9,10 +9,10 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="10jo" ref="r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung.structure)" implicit="true" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1273,11 +1273,13 @@
   <node concept="1TIwiD" id="5lKnBeAxLdJ">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="SolutionRelativeFilePicker" />
+    <property role="34LRSv" value="solution relative file picker" />
     <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker" />
   </node>
   <node concept="1TIwiD" id="2iGZqsHuOWj">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="SolutionRelativeDirPicker" />
+    <property role="34LRSv" value="solution relative dir picker" />
     <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker" />
   </node>
   <node concept="1TIwiD" id="DubiFAXpld">
@@ -1366,6 +1368,7 @@
   <node concept="1TIwiD" id="7c_RIoB8H2I">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="MacroFilePicker" />
+    <property role="34LRSv" value="macro file picker" />
     <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker" />
     <node concept="1TJgyi" id="7c_RIoB8OqH" role="1TKVEl">
       <property role="TrG5h" value="macro" />
@@ -1681,6 +1684,7 @@
   <node concept="1TIwiD" id="4eXJ6EO9ZKx">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="MacroFolderPicker" />
+    <property role="34LRSv" value="macro folder picker" />
     <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker" />
     <node concept="1TJgyi" id="4eXJ6EO9ZKy" role="1TKVEl">
       <property role="TrG5h" value="macro" />
@@ -1690,12 +1694,14 @@
   <node concept="1TIwiD" id="4eXJ6EOwIAn">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="FileSystemDirPicker" />
+    <property role="34LRSv" value="file system dir picker" />
     <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker" />
   </node>
   <node concept="1TIwiD" id="1jw2PJJHS3i">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="FileSystemFilePicker" />
-    <ref role="1TJDcQ" node="5lKnBeAtNw8" resolve="AbstractPicker" />
+    <property role="34LRSv" value="file system file picker" />
+    <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker" />
   </node>
   <node concept="1TIwiD" id="5Wocj7wnolM">
     <property role="3GE5qa" value="pathAndFile" />
