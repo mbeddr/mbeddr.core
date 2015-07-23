@@ -907,18 +907,35 @@
       <ref role="3UNGvu" to="tpck:hYa1RjM" resolve="IType" />
       <node concept="3kRJcU" id="2RQ3CseTwBC" role="3kShCk">
         <node concept="3clFbS" id="2RQ3CseTwBD" role="2VODD2">
+          <node concept="3cpWs8" id="4B4i0Acz3_K" role="3cqZAp">
+            <node concept="3cpWsn" id="4B4i0Acz3_L" role="3cpWs9">
+              <property role="TrG5h" value="allowedToAddUnit" />
+              <node concept="10P_77" id="4B4i0Acz3_I" role="1tU5fm" />
+              <node concept="2YIFZM" id="4B4i0Acz3_M" role="33vP2m">
+                <ref role="37wK5l" to="ndfg:4B4i0Acz3iS" resolve="isAllowedToAddUnit" />
+                <ref role="1Pybhc" to="ndfg:4B4i0AcyBzh" resolve="UnitUtils" />
+                <node concept="Cj7Ep" id="4B4i0Acz3_N" role="37wK5m" />
+              </node>
+            </node>
+          </node>
           <node concept="3clFbF" id="2RQ3CseTwLP" role="3cqZAp">
-            <node concept="3clFbC" id="2RQ3CseTz9k" role="3clFbG">
-              <node concept="10Nm6u" id="2RQ3CseTzgg" role="3uHU7w" />
-              <node concept="2OqwBi" id="2RQ3CseTwST" role="3uHU7B">
-                <node concept="Cj7Ep" id="2RQ3CseTwLO" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="2RQ3CseTxh3" role="2OqNvi">
-                  <node concept="1xMEDy" id="2RQ3CseTxh5" role="1xVPHs">
-                    <node concept="chp4Y" id="2RQ3CseTxsa" role="ri$Ld">
-                      <ref role="cht4Q" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
+            <node concept="1Wc70l" id="4B4i0Acz4_0" role="3clFbG">
+              <node concept="37vLTw" id="4B4i0Acz4FL" role="3uHU7w">
+                <ref role="3cqZAo" node="4B4i0Acz3_L" resolve="allowedToAddUnit" />
+              </node>
+              <node concept="3clFbC" id="2RQ3CseTz9k" role="3uHU7B">
+                <node concept="2OqwBi" id="2RQ3CseTwST" role="3uHU7B">
+                  <node concept="Cj7Ep" id="2RQ3CseTwLO" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="2RQ3CseTxh3" role="2OqNvi">
+                    <node concept="1xMEDy" id="2RQ3CseTxh5" role="1xVPHs">
+                      <node concept="chp4Y" id="2RQ3CseTxsa" role="ri$Ld">
+                        <ref role="cht4Q" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
+                      </node>
                     </node>
+                    <node concept="1xIGOp" id="4B4i0AcysjW" role="1xVPHs" />
                   </node>
                 </node>
+                <node concept="10Nm6u" id="2RQ3CseTzgg" role="3uHU7w" />
               </node>
             </node>
           </node>
