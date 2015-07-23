@@ -1672,5 +1672,31 @@
       </node>
     </node>
   </node>
+  <node concept="3_zdsH" id="2ajpxDX27SR">
+    <property role="3GE5qa" value="arbitraryText" />
+    <ref role="3_znuS" to="c4fa:2GzcfKRFZYH" resolve="ArbitraryFunctionCall" />
+    <node concept="3__wT9" id="2ajpxDX27SS" role="3_A6iZ">
+      <node concept="3clFbS" id="2ajpxDX27ST" role="2VODD2">
+        <node concept="2Gpval" id="2ajpxDX28hR" role="3cqZAp">
+          <node concept="2GrKxI" id="2ajpxDX28hS" role="2Gsz3X">
+            <property role="TrG5h" value="a" />
+          </node>
+          <node concept="3clFbS" id="2ajpxDX28hT" role="2LFqv$">
+            <node concept="3AgYrR" id="2ajpxDX29B$" role="3cqZAp">
+              <node concept="2GrUjf" id="2ajpxDX29BP" role="3Ah4Yx">
+                <ref role="2Gs0qQ" node="2ajpxDX28hS" resolve="a" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2ajpxDX29jh" role="2GsD0m">
+            <node concept="3__QtB" id="2ajpxDX29f4" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="2ajpxDX29_Z" role="2OqNvi">
+              <ref role="3TtcxE" to="c4fa:2GzcfKRG0oR" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
