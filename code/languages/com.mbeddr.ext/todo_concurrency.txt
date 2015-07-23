@@ -15,10 +15,12 @@ TODO:
 Move the locking and blocking into the enqueue dequeue functions
   (if queue is blockable)  
 * fix the timing
-* thread callable functions
+* task callable functions
+  proxies/wiring for resoures
 * prio-based scheduling
-* Analyses?
 * Amalthea Export
+* Analyses?
+* Comp
 
 
 
