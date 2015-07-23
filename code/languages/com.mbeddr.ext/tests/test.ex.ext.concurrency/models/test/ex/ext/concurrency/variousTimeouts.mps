@@ -217,8 +217,8 @@
       <property role="2AWWZJ" value="gcc" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3r8Kxs" value="make" />
-      <property role="2AWWZI" value="-std=c99" />
-      <property role="1FkSt$" value="-g -pthread -I/usr/include/" />
+      <property role="2AWWZI" value="-std=c99 -I/usr/include" />
+      <property role="1FkSt$" value="-g -pthread" />
     </node>
     <node concept="2eOfOl" id="tTL6IW2$A0" role="2ePNbc">
       <property role="iO3LB" value="true" />
