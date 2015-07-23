@@ -663,7 +663,7 @@
           </node>
         </node>
         <node concept="3XIRlf" id="4pi60CHCm1l" role="3XIRFZ">
-          <property role="TrG5h" value="targetMillis" />
+          <property role="TrG5h" value="targetMicros" />
           <node concept="26Vqp1" id="4pi60CHCm2d" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
@@ -761,6 +761,13 @@
                 </node>
               </node>
             </node>
+            <node concept="1_9egQ" id="WeATxzO4$L" role="3XIRFZ">
+              <node concept="19_ADJ" id="WeATxzO4$J" role="1_9egR">
+                <node concept="19_wF0" id="WeATxzO4_d" role="19_wF2">
+                  <property role="19_wF3" value="printf(&quot;            event_waitWithTimeout res = %d\n&quot;, res)" />
+                </node>
+              </node>
+            </node>
             <node concept="1_9egQ" id="4pi60CHCpIv" role="3XIRFZ">
               <node concept="3pqW6w" id="4pi60CHCpIR" role="1_9egR">
                 <node concept="3O_q_g" id="4pi60CHCpZg" role="3TlMhJ">
@@ -774,7 +781,7 @@
           </node>
           <node concept="3Tl9Jn" id="4pi60CHCnVH" role="27v$We">
             <node concept="3ZVu4v" id="4pi60CHCnXN" role="3TlMhJ">
-              <ref role="3ZVs_2" node="4pi60CHCm1l" resolve="targetMillis" />
+              <ref role="3ZVs_2" node="4pi60CHCm1l" resolve="targetMicros" />
             </node>
             <node concept="3ZVu4v" id="4pi60CHCnV7" role="3TlMhI">
               <ref role="3ZVs_2" node="4pi60CHClCF" resolve="now" />

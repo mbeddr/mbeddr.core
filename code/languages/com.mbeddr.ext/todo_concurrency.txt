@@ -1,20 +1,11 @@
 * How do we deal with all the system-level header files? Right now ArbitraryText
+
 * Copying in accessory models and rebinding must be simplified.
   to avoid the manually scripted rebinding crap, I have not renamed the copied-in module. 
   Seems to work. So far.
 
-* How do we globally ensure that every task is only run once?
-  Right now I implicitly assume that there is only one schedule with
-  an "instance" of a task.
-* Relying on "/usr/include/sys/timeb.h"
-
-
 * Error handling in case of the queue
 
-* How do we deal with pointers to/of queues, ringbuffers, etc.
-  I think this should not be allowed
-  Do we have a way to prevent types from being used as pointers?
-  use can be used as pointer
 
 
 TODO:
@@ -23,6 +14,12 @@ TODO:
 * Dass man queues als shared markieren muss ist doof.
 Move the locking and blocking into the enqueue dequeue functions
   (if queue is blockable)  
+* fix the timing
+* thread callable functions
+* prio-based scheduling
+* Analyses?
+* Amalthea Export
+
 
 
 
