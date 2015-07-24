@@ -290,9 +290,7 @@
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
     <language id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen">
-      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameShorteningConfiguration" flags="ng" index="MH4UO">
-        <property id="2391520863997773387" name="allowNameShortening" index="MHqn5" />
-      </concept>
+      <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameShorteningConfiguration" flags="ng" index="MH4UO" />
     </language>
   </registry>
   <node concept="N3F5e" id="73GSrjduqBj">
@@ -502,7 +500,7 @@
     </node>
     <node concept="2AWWZL" id="73GSrjduqIV" role="2AWWZH">
       <property role="2AWWZJ" value="gcc" />
-      <property role="2AWWZI" value="-std=c99" />
+      <property role="2AWWZI" value="-std=c99 -I/usr/include -pthread" />
       <property role="1FkSt$" value="-g" />
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
@@ -515,9 +513,7 @@
         <property role="wBCLy" value="true" />
       </node>
     </node>
-    <node concept="MH4UO" id="73GSrjduqJ0" role="2Q9xDr">
-      <property role="MHqn5" value="true" />
-    </node>
+    <node concept="MH4UO" id="73GSrjduqJ0" role="2Q9xDr" />
     <node concept="2eh4Hv" id="73GSrjduqJ1" role="2Q9xDr" />
     <node concept="2eOfOl" id="73GSrjduqJ2" role="2ePNbc">
       <property role="TrG5h" value="ConcurrencyDemo" />

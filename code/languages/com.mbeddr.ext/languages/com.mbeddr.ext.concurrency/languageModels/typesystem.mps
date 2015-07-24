@@ -11,6 +11,9 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="qozy" ref="r:38fcb48b-92c2-41af-9039-dc087bb8b822(com.mbeddr.ext.concurrency.behavior)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
+    <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -230,6 +233,7 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
+      <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
@@ -1473,6 +1477,83 @@
         </node>
         <node concept="37vLTw" id="tTL6IVWV3v" role="2GsD0m">
           <ref role="3cqZAo" node="tTL6IVWUQf" resolve="declarations" />
+        </node>
+      </node>
+      <node concept="3cpWs8" id="73GSrjd_$a6" role="3cqZAp">
+        <node concept="3cpWsn" id="73GSrjd_$a7" role="3cpWs9">
+          <property role="TrG5h" value="nsc" />
+          <node concept="3Tqbb2" id="73GSrjd_$9O" role="1tU5fm">
+            <ref role="ehGHo" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
+          </node>
+          <node concept="2OqwBi" id="73GSrjd_$a8" role="33vP2m">
+            <node concept="2OqwBi" id="73GSrjd_$a9" role="2Oq$k0">
+              <node concept="1PxgMI" id="73GSrjd_$aa" role="2Oq$k0">
+                <ref role="1PxNhF" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                <node concept="2OqwBi" id="73GSrjd_$ab" role="1PxMeX">
+                  <node concept="1YBJjd" id="73GSrjd_$ac" role="2Oq$k0">
+                    <ref role="1YBMHb" node="tTL6IVWsDk" resolve="cci" />
+                  </node>
+                  <node concept="1mfA1w" id="73GSrjd_$ad" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="73GSrjd_$ae" role="2OqNvi">
+                <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" />
+              </node>
+            </node>
+            <node concept="1z4cxt" id="73GSrjd_$af" role="2OqNvi">
+              <node concept="1bVj0M" id="73GSrjd_$ag" role="23t8la">
+                <node concept="3clFbS" id="73GSrjd_$ah" role="1bW5cS">
+                  <node concept="3clFbF" id="73GSrjd_$ai" role="3cqZAp">
+                    <node concept="2OqwBi" id="73GSrjd_$aj" role="3clFbG">
+                      <node concept="37vLTw" id="73GSrjd_$ak" role="2Oq$k0">
+                        <ref role="3cqZAo" node="73GSrjd_$an" resolve="it" />
+                      </node>
+                      <node concept="1mIQ4w" id="73GSrjd_$al" role="2OqNvi">
+                        <node concept="chp4Y" id="73GSrjd_$am" role="cj9EA">
+                          <ref role="cht4Q" to="d0vh:24KoSSjx2OU" resolve="NameShorteningConfiguration" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="73GSrjd_$an" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="73GSrjd_$ao" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="73GSrjd$7fk" role="3cqZAp">
+        <node concept="3clFbS" id="73GSrjd$7fm" role="3clFbx">
+          <node concept="2MkqsV" id="73GSrjd_ADL" role="3cqZAp">
+            <node concept="Xl_RD" id="73GSrjd_AE3" role="2MkJ7o">
+              <property role="Xl_RC" value="concurrency currently requires 'prevent name mangling' to be false" />
+            </node>
+            <node concept="1YBJjd" id="73GSrjd_APq" role="2OEOjV">
+              <ref role="1YBMHb" node="tTL6IVWsDk" resolve="cci" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="73GSrjd_$Xy" role="3clFbw">
+          <node concept="2OqwBi" id="73GSrjd__$c" role="3uHU7w">
+            <node concept="1PxgMI" id="73GSrjd__vQ" role="2Oq$k0">
+              <ref role="1PxNhF" to="d0vh:24KoSSjx2OU" resolve="NameShorteningConfiguration" />
+              <node concept="37vLTw" id="73GSrjd__go" role="1PxMeX">
+                <ref role="3cqZAo" node="73GSrjd_$a7" resolve="nsc" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="73GSrjd_ABM" role="2OqNvi">
+              <ref role="3TsBF5" to="d0vh:24KoSSjxspb" resolve="allowNameShortening" />
+            </node>
+          </node>
+          <node concept="3y3z36" id="73GSrjd_$HT" role="3uHU7B">
+            <node concept="37vLTw" id="73GSrjd_$ap" role="3uHU7B">
+              <ref role="3cqZAo" node="73GSrjd_$a7" resolve="nsc" />
+            </node>
+            <node concept="10Nm6u" id="73GSrjd_$Sl" role="3uHU7w" />
+          </node>
         </node>
       </node>
     </node>
