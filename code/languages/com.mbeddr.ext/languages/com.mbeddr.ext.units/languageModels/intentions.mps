@@ -9,6 +9,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="qlb5" ref="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
+    <import index="ndfg" ref="r:8bc36bcc-e1fd-40bc-b05f-b4d974244d15(com.mbeddr.ext.units.util)" />
     <import index="lx0c" ref="r:12c76b04-7fd6-45a2-9d94-f0756fc5ad8f(com.mbeddr.ext.units.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -35,7 +36,11 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -70,6 +75,7 @@
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -81,6 +87,7 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
@@ -305,13 +312,29 @@
     </node>
     <node concept="2SaL7w" id="7eOyx9r9wad" role="2ZfVeh">
       <node concept="3clFbS" id="7eOyx9r9wae" role="2VODD2">
+        <node concept="3cpWs8" id="5hN682joALS" role="3cqZAp">
+          <node concept="3cpWsn" id="5hN682joALT" role="3cpWs9">
+            <property role="TrG5h" value="allowedToAddUnit" />
+            <node concept="10P_77" id="5hN682joALQ" role="1tU5fm" />
+            <node concept="2YIFZM" id="5hN682joALU" role="33vP2m">
+              <ref role="37wK5l" to="ndfg:5hN682jnh6U" resolve="isAllowedToAddUnit" />
+              <ref role="1Pybhc" to="ndfg:5hN682jn7Qd" resolve="UnitUtils" />
+              <node concept="2Sf5sV" id="5hN682joALV" role="37wK5m" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7eOyx9r9wxM" role="3cqZAp">
           <node concept="22lmx$" id="7eOyx9r9xPc" role="3clFbG">
-            <node concept="2OqwBi" id="7eOyx9r9y24" role="3uHU7w">
-              <node concept="2Sf5sV" id="7eOyx9r9xW3" role="2Oq$k0" />
-              <node concept="1mIQ4w" id="7eOyx9r9yBO" role="2OqNvi">
-                <node concept="chp4Y" id="7eOyx9r9yPM" role="cj9EA">
-                  <ref role="cht4Q" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
+            <node concept="1Wc70l" id="5hN682joBbd" role="3uHU7w">
+              <node concept="37vLTw" id="5hN682joBjZ" role="3uHU7w">
+                <ref role="3cqZAo" node="5hN682joALT" resolve="allowedToAddUnit" />
+              </node>
+              <node concept="2OqwBi" id="7eOyx9r9y24" role="3uHU7B">
+                <node concept="2Sf5sV" id="7eOyx9r9xW3" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="7eOyx9r9yBO" role="2OqNvi">
+                  <node concept="chp4Y" id="7eOyx9r9yPM" role="cj9EA">
+                    <ref role="cht4Q" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
+                  </node>
                 </node>
               </node>
             </node>
