@@ -145,5 +145,19 @@
       </node>
     </node>
   </node>
+  <node concept="vrV6s" id="67iKQ7oGeqA">
+    <ref role="vrV6t" to="4pdp:67iKQ7oGe0U" resolve="LocationsLifterProvider" />
+    <node concept="lufDu" id="67iKQ7oGeqB" role="luc8C">
+      <node concept="3clFbS" id="67iKQ7oGeqC" role="2VODD2">
+        <node concept="3clFbF" id="67iKQ7oGeqD" role="3cqZAp">
+          <node concept="2ShNRf" id="67iKQ7oGeqE" role="3clFbG">
+            <node concept="HV5vD" id="67iKQ7oGiui" role="2ShVmc">
+              <ref role="HV5vE" to="qeyn:67iKQ7oFQ6S" resolve="LocationsLifterCore" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
