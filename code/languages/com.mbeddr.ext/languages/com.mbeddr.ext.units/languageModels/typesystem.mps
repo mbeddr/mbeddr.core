@@ -25,8 +25,8 @@
     <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" />
     <import index="epq1" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.math(JDK/java.math@java_stub)" />
     <import index="tpy3" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.tempmodel(MPS.Core/jetbrains.mps.smodel.tempmodel@java_stub)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -8835,6 +8835,50 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="5hN682joCuM">
+    <property role="TrG5h" value="Check_AnnotatedType" />
+    <node concept="3clFbS" id="5hN682joCuN" role="18ibNy">
+      <node concept="3cpWs8" id="5hN682joMS9" role="3cqZAp">
+        <node concept="3cpWsn" id="5hN682joMSa" role="3cpWs9">
+          <property role="TrG5h" value="allowedToAddUnit" />
+          <node concept="10P_77" id="5hN682joMS8" role="1tU5fm" />
+          <node concept="2YIFZM" id="5hN682joMSb" role="33vP2m">
+            <ref role="37wK5l" to="ndfg:5hN682jnh6U" resolve="isAllowedToAddUnit" />
+            <ref role="1Pybhc" to="ndfg:5hN682jn7Qd" resolve="UnitUtils" />
+            <node concept="2OqwBi" id="5hN682joMSc" role="37wK5m">
+              <node concept="1YBJjd" id="5hN682joMSd" role="2Oq$k0">
+                <ref role="1YBMHb" node="5hN682joDkY" resolve="type" />
+              </node>
+              <node concept="3TrEf2" id="5hN682joMSe" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:6ngD7lvl1tc" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="5hN682joMWZ" role="3cqZAp">
+        <node concept="3clFbS" id="5hN682joMX1" role="3clFbx">
+          <node concept="2MkqsV" id="5hN682joOFT" role="3cqZAp">
+            <node concept="1YBJjd" id="5hN682joP_E" role="2OEOjV">
+              <ref role="1YBMHb" node="5hN682joDkY" resolve="type" />
+            </node>
+            <node concept="Xl_RD" id="5hN682joOG8" role="2MkJ7o">
+              <property role="Xl_RC" value="The unit declaration is incorrect. The usage is datatype/unit/[array_size]" />
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="5hN682joNP3" role="3clFbw">
+          <node concept="37vLTw" id="5hN682joOFF" role="3fr31v">
+            <ref role="3cqZAo" node="5hN682joMSa" resolve="allowedToAddUnit" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5hN682joDkY" role="1YuTPh">
+      <property role="TrG5h" value="type" />
+      <ref role="1YaFvo" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
     </node>
   </node>
 </model>
