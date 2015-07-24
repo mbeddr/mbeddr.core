@@ -504,8 +504,8 @@
       <property role="2AWWZJ" value="gcc" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3r8Kxs" value="make" />
-      <property role="2AWWZI" value="-std=c99 -I/usr/include" />
-      <property role="1FkSt$" value="-g -pthread -I/usr/include/" />
+      <property role="2AWWZI" value="-std=c99 -I/usr/include -pthread" />
+      <property role="1FkSt$" value="-g  -I/usr/include/" />
     </node>
     <node concept="2eOfOl" id="1zeZsIba3yo" role="2ePNbc">
       <property role="iO3LB" value="true" />
