@@ -181,6 +181,9 @@
                 <mapping-set-element>
                   <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="1455891020802024224" />
                 </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="8437008434256668395" />
+                </mapping-set-element>
               </mapping-set>
             </external-mapping>
           </greater-priority-mapping>
