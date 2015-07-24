@@ -220,9 +220,6 @@
       </concept>
       <concept id="1136530067488156615" name="com.mbeddr.core.expressions.structure.BitwiseORExpression" flags="ng" index="EUQZk" />
       <concept id="5962749441518381743" name="com.mbeddr.core.expressions.structure.BitwiseAndExpression" flags="ng" index="SSPID" />
-      <concept id="2254577831298739059" name="com.mbeddr.core.expressions.structure.CommentedContent" flags="ng" index="2Ygvn$">
-        <child id="2254577831298739061" name="content" index="2Ygvny" />
-      </concept>
       <concept id="6631303246401923642" name="com.mbeddr.core.expressions.structure.Int2Boolean" flags="ng" index="13Enkh">
         <child id="6631303246401933799" name="expr" index="13EoVc" />
       </concept>
@@ -242,6 +239,7 @@
         <child id="6610873504380029782" name="expr" index="1S8S4V" />
       </concept>
       <concept id="8860443239512147451" name="com.mbeddr.core.expressions.structure.LessEqualsExpression" flags="ng" index="3Tl9Jl" />
+      <concept id="8860443239512147445" name="com.mbeddr.core.expressions.structure.GreaterExpression" flags="ng" index="3Tl9Jr" />
       <concept id="8860443239512128058" name="com.mbeddr.core.expressions.structure.BooleanType" flags="ng" index="3TlMgk" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
@@ -989,7 +987,7 @@
             <node concept="OjmMv" id="5KcWL$DjevJ" role="3SJzmv">
               <node concept="19SGf9" id="5KcWL$DjevK" role="OjmMu">
                 <node concept="19SUe$" id="5KcWL$DjevL" role="19SJt6">
-                  <property role="19SUeA" value="count only till TCNT1 (clear timer on compare match)" />
+                  <property role="19SUeA" value="count only till OCR1A (clear timer on compare match)" />
                 </node>
               </node>
             </node>
@@ -1007,36 +1005,6 @@
               </node>
             </node>
           </node>
-          <node concept="1QiMYF" id="5KcWL$DkNaj" role="3XIRFZ">
-            <node concept="OjmMv" id="5KcWL$DkNal" role="3SJzmv">
-              <node concept="19SGf9" id="5KcWL$DkNam" role="OjmMu">
-                <node concept="19SUe$" id="5KcWL$DkNan" role="19SJt6">
-                  <property role="19SUeA" value="Enable the overflow interrupt" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1_9egQ" id="5KcWL$DkHg1" role="3XIRFZ">
-            <node concept="1g_Icf" id="5KcWL$DkHjE" role="1_9egR">
-              <node concept="BUAnR" id="5KcWL$DkHm1" role="3TlMhJ">
-                <ref role="BUAnL" to="ec8n:wYuX6qihwz" resolve="_BV" />
-                <node concept="3V49S3" id="4khTSHrs7CA" role="BULBh">
-                  <ref role="3V49S0" node="5KcWL$DkHsI" resolve="OCIE1A" />
-                </node>
-              </node>
-              <node concept="3V49S3" id="5KcWL$DkHfZ" role="3TlMhI">
-                <ref role="3V49S0" node="5KcWL$DkBFW" resolve="TIMSK1" />
-              </node>
-            </node>
-          </node>
-          <node concept="2Ygvn$" id="4TJtxzQmlMU" role="3XIRFZ">
-            <node concept="1_9egQ" id="4TJtxzQmlLY" role="2Ygvny">
-              <node concept="3O_q_g" id="4TJtxzQmlLW" role="1_9egR">
-                <ref role="3O_q_h" node="5KcWL$DkWB$" resolve="sei" />
-              </node>
-            </node>
-          </node>
-          <node concept="3XISUE" id="4TJtxzQ0KTI" role="3XIRFZ" />
           <node concept="3XISUE" id="5KcWL$Djey8" role="3XIRFZ" />
           <node concept="1_9egQ" id="5KcWL$DlknQ" role="3XIRFZ">
             <node concept="3pqW6w" id="5KcWL$Dlkr3" role="1_9egR">
@@ -1565,6 +1533,31 @@
             </node>
           </node>
           <node concept="3XISUE" id="5Li7KxBYbE0" role="3XIRFZ" />
+          <node concept="1QiMYF" id="4TJtxzQxeYP" role="3XIRFZ">
+            <node concept="OjmMv" id="4TJtxzQxeYR" role="3SJzmv">
+              <node concept="19SGf9" id="4TJtxzQxeYS" role="OjmMu">
+                <node concept="19SUe$" id="4TJtxzQxeYT" role="19SJt6">
+                  <property role="19SUeA" value="disable the interrupt" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1_9egQ" id="4TJtxzQx29y" role="3XIRFZ">
+            <node concept="1g_Icb" id="4TJtxzQx2cB" role="1_9egR">
+              <node concept="1Flubw" id="4TJtxzQx34F" role="3TlMhJ">
+                <node concept="BUAnR" id="4TJtxzQx3WK" role="1_9fRO">
+                  <ref role="BUAnL" to="ec8n:wYuX6qihwz" resolve="_BV" />
+                  <node concept="3V49S3" id="4TJtxzQx4QL" role="BULBh">
+                    <ref role="3V49S0" node="5KcWL$DkHsI" resolve="OCIE1A" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3V49S3" id="4TJtxzQx29x" role="3TlMhI">
+                <ref role="3V49S0" node="5KcWL$DkBFW" resolve="TIMSK1" />
+              </node>
+            </node>
+          </node>
+          <node concept="3XISUE" id="4TJtxzQxelj" role="3XIRFZ" />
           <node concept="3XIRlf" id="5Li7KxBYc2T" role="3XIRFZ">
             <property role="TrG5h" value="upperLimit" />
             <node concept="26VqpV" id="5Li7KxBYc2R" role="2C2TGm">
@@ -1639,6 +1632,41 @@
               </node>
               <node concept="3V49S3" id="4khTSHqEEtV" role="3TlMhI">
                 <ref role="3V49S0" node="4khTSHqEAf_" resolve="OCR1AL" />
+              </node>
+            </node>
+          </node>
+          <node concept="3XISUE" id="4TJtxzQx0ox" role="3XIRFZ" />
+          <node concept="c0U19" id="4TJtxzQx0Pf" role="3XIRFZ">
+            <node concept="3XIRFW" id="4TJtxzQx0Pg" role="c0U17">
+              <node concept="1QiMYF" id="4TJtxzQx13f" role="3XIRFZ">
+                <node concept="OjmMv" id="4TJtxzQx13g" role="3SJzmv">
+                  <node concept="19SGf9" id="4TJtxzQx13h" role="OjmMu">
+                    <node concept="19SUe$" id="4TJtxzQx13i" role="19SJt6">
+                      <property role="19SUeA" value="Enable the interrupt" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1_9egQ" id="4TJtxzQx13j" role="3XIRFZ">
+                <node concept="1g_Icf" id="4TJtxzQx13k" role="1_9egR">
+                  <node concept="BUAnR" id="4TJtxzQx13l" role="3TlMhJ">
+                    <ref role="BUAnL" to="ec8n:wYuX6qihwz" resolve="_BV" />
+                    <node concept="3V49S3" id="4TJtxzQx13m" role="BULBh">
+                      <ref role="3V49S0" node="5KcWL$DkHsI" resolve="OCIE1A" />
+                    </node>
+                  </node>
+                  <node concept="3V49S3" id="4TJtxzQx13n" role="3TlMhI">
+                    <ref role="3V49S0" node="5KcWL$DkBFW" resolve="TIMSK1" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3Tl9Jr" id="4TJtxzQx0UE" role="c0U16">
+              <node concept="3TlMh9" id="4TJtxzQx0UH" role="3TlMhJ">
+                <property role="2hmy$m" value="0" />
+              </node>
+              <node concept="3ZVu4v" id="4TJtxzQx0Tp" role="3TlMhI">
+                <ref role="3ZVs_2" node="5Li7KxBYc2T" resolve="upperLimit" />
               </node>
             </node>
           </node>
