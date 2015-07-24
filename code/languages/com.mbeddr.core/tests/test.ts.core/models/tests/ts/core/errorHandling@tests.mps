@@ -27,6 +27,7 @@
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
+      <concept id="1215511704609" name="jetbrains.mps.lang.test.structure.NodeWarningCheckOperation" flags="ng" index="29bkU" />
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
@@ -211,6 +212,9 @@
             <node concept="PWuft" id="7kmhBx16pd2" role="3XIRFZ">
               <ref role="PWvTH" node="7kmhBx0Od2j" resolve="E1" />
             </node>
+            <node concept="PWuft" id="7kmhBx2NChw" role="3XIRFZ">
+              <ref role="PWvTH" node="7kmhBx0Od5l" resolve="E2" />
+            </node>
           </node>
           <node concept="2c_PkG" id="C7pKq6Qi16" role="lGtFl">
             <node concept="2c_PkR" id="7kmhBx0Od2j" role="2c_Pnv">
@@ -234,6 +238,9 @@
           <node concept="2c_PkG" id="7kmhBx2KdSS" role="lGtFl">
             <node concept="2c_PkR" id="7kmhBx2KdWR" role="2c_Pnv">
               <ref role="2c_PkO" node="7kmhBx16pqW" resolve="E3" />
+              <node concept="7CXmI" id="7kmhBx2POAy" role="lGtFl">
+                <node concept="29bkU" id="7kmhBx2POAz" role="7EUXB" />
+              </node>
             </node>
           </node>
         </node>
