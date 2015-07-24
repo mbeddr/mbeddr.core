@@ -86,5 +86,11 @@
       <ref role="3uigEE" to="8ear:7iLQIU34QN7" resolve="CounterexampleLifterBase" />
     </node>
   </node>
+  <node concept="vrV6u" id="67iKQ7oGe0U">
+    <property role="20vvCb" value="LocationsLifterProvider" />
+    <node concept="3uibUv" id="67iKQ7oGe0V" role="luc8K">
+      <ref role="3uigEE" to="8ear:7iLQIU34QN7" resolve="CounterexampleLifterBase" />
+    </node>
+  </node>
 </model>
 
