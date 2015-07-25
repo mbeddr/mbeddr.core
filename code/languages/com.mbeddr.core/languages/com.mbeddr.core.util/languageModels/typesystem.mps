@@ -5657,7 +5657,7 @@
           </node>
           <node concept="2OqwBi" id="7kmhBx19Mkk" role="33vP2m">
             <node concept="1YBJjd" id="7kmhBx19Mkl" role="2Oq$k0">
-              <ref role="1YBMHb" node="7kmhBx19GEa" resolve="functionCall" />
+              <ref role="1YBMHb" node="7kmhBx19GEa" resolve="call" />
             </node>
             <node concept="3TrEf2" id="7kmhBx19Mkm" role="2OqNvi">
               <ref role="3Tt5mk" to="x27k:5ak6HMA0red" />
@@ -5685,59 +5685,98 @@
           </node>
           <node concept="3clFbJ" id="7kmhBx19JmU" role="3cqZAp">
             <node concept="3clFbS" id="7kmhBx19JmW" role="3clFbx">
-              <node concept="2MkqsV" id="7kmhBx19Q8p" role="3cqZAp">
-                <node concept="3cpWs3" id="7kmhBx19SNp" role="2MkJ7o">
-                  <node concept="Xl_RD" id="7kmhBx19SNs" role="3uHU7w">
-                    <property role="Xl_RC" value=" can return errors; calls must be wrapped in 'try' statement" />
-                  </node>
-                  <node concept="3cpWs3" id="7kmhBx19QeA" role="3uHU7B">
-                    <node concept="Xl_RD" id="7kmhBx19Q8R" role="3uHU7B">
-                      <property role="Xl_RC" value="function " />
+              <node concept="3SKdUt" id="5E52XUc8OGn" role="3cqZAp">
+                <node concept="3SKdUq" id="5E52XUc8OOB" role="3SKWNk">
+                  <property role="3SKdUp" value="deal with nested calls; currently not allowed" />
+                </node>
+              </node>
+              <node concept="3clFbJ" id="5E52XUc8AJJ" role="3cqZAp">
+                <node concept="3clFbS" id="5E52XUc8AJL" role="3clFbx">
+                  <node concept="2MkqsV" id="5E52XUc8PeK" role="3cqZAp">
+                    <node concept="Xl_RD" id="5E52XUc8PeZ" role="2MkJ7o">
+                      <property role="Xl_RC" value="currently, errors cannot be handled from nested function calls" />
                     </node>
-                    <node concept="2OqwBi" id="7kmhBx19QwK" role="3uHU7w">
-                      <node concept="37vLTw" id="7kmhBx19Qhp" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7kmhBx19Oi2" resolve="f" />
-                      </node>
-                      <node concept="3TrcHB" id="7kmhBx19RAb" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
+                    <node concept="1YBJjd" id="5E52XUc8Pgg" role="2OEOjV">
+                      <ref role="1YBMHb" node="7kmhBx19GEa" resolve="call" />
                     </node>
                   </node>
                 </node>
-                <node concept="1YBJjd" id="7kmhBx19TPp" role="2OEOjV">
-                  <ref role="1YBMHb" node="7kmhBx19GEa" resolve="functionCall" />
+                <node concept="2OqwBi" id="5E52XUc8Nn1" role="3clFbw">
+                  <node concept="2OqwBi" id="5E52XUc8G8q" role="2Oq$k0">
+                    <node concept="1YBJjd" id="5E52XUc8G3e" role="2Oq$k0">
+                      <ref role="1YBMHb" node="7kmhBx19GEa" resolve="call" />
+                    </node>
+                    <node concept="2Xjw5R" id="5E52XUc8NfT" role="2OqNvi">
+                      <node concept="1xMEDy" id="5E52XUc8NfV" role="1xVPHs">
+                        <node concept="chp4Y" id="5E52XUc8NgU" role="ri$Ld">
+                          <ref role="cht4Q" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3x8VRR" id="5E52XUc8Op0" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="3SKdUt" id="5E52XUc8P6s" role="3cqZAp">
+                <node concept="3SKdUq" id="5E52XUc8PeI" role="3SKWNk">
+                  <property role="3SKdUp" value="check that errors are handled" />
+                </node>
+              </node>
+              <node concept="3clFbJ" id="5E52XUc8kMQ" role="3cqZAp">
+                <node concept="3clFbS" id="5E52XUc8kMS" role="3clFbx">
+                  <node concept="2MkqsV" id="7kmhBx19Q8p" role="3cqZAp">
+                    <node concept="3cpWs3" id="7kmhBx19SNp" role="2MkJ7o">
+                      <node concept="Xl_RD" id="7kmhBx19SNs" role="3uHU7w">
+                        <property role="Xl_RC" value=" can return errors; calls must be wrapped in 'try' statement" />
+                      </node>
+                      <node concept="3cpWs3" id="7kmhBx19QeA" role="3uHU7B">
+                        <node concept="Xl_RD" id="7kmhBx19Q8R" role="3uHU7B">
+                          <property role="Xl_RC" value="function " />
+                        </node>
+                        <node concept="2OqwBi" id="7kmhBx19QwK" role="3uHU7w">
+                          <node concept="37vLTw" id="7kmhBx19Qhp" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7kmhBx19Oi2" resolve="f" />
+                          </node>
+                          <node concept="3TrcHB" id="7kmhBx19RAb" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1YBJjd" id="7kmhBx19TPp" role="2OEOjV">
+                      <ref role="1YBMHb" node="7kmhBx19GEa" resolve="call" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="5E52XUc8oRO" role="3clFbw">
+                  <node concept="2OqwBi" id="7kmhBx1jWLz" role="2Oq$k0">
+                    <node concept="1YBJjd" id="7kmhBx1jWG4" role="2Oq$k0">
+                      <ref role="1YBMHb" node="7kmhBx19GEa" resolve="call" />
+                    </node>
+                    <node concept="2Xjw5R" id="7kmhBx1jXpa" role="2OqNvi">
+                      <node concept="1xMEDy" id="7kmhBx1jXpc" role="1xVPHs">
+                        <node concept="chp4Y" id="7kmhBx1jXDe" role="ri$Ld">
+                          <ref role="cht4Q" to="k146:7kmhBx19Gz1" resolve="ErrorHandlingContext" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3w_OXm" id="5E52XUc8AxK" role="2OqNvi" />
                 </node>
               </node>
             </node>
-            <node concept="1Wc70l" id="7kmhBx1jWs4" role="3clFbw">
-              <node concept="2OqwBi" id="7kmhBx1jXXO" role="3uHU7w">
-                <node concept="2OqwBi" id="7kmhBx1jWLz" role="2Oq$k0">
-                  <node concept="1YBJjd" id="7kmhBx1jWG4" role="2Oq$k0">
-                    <ref role="1YBMHb" node="7kmhBx19GEa" resolve="functionCall" />
-                  </node>
-                  <node concept="2Xjw5R" id="7kmhBx1jXpa" role="2OqNvi">
-                    <node concept="1xMEDy" id="7kmhBx1jXpc" role="1xVPHs">
-                      <node concept="chp4Y" id="7kmhBx1jXDe" role="ri$Ld">
-                        <ref role="cht4Q" to="k146:7kmhBx19Gz1" resolve="ErrorHandlingContext" />
-                      </node>
-                    </node>
+            <node concept="3y3z36" id="7kmhBx19OZU" role="3clFbw">
+              <node concept="2OqwBi" id="7kmhBx19KmU" role="3uHU7B">
+                <node concept="37vLTw" id="7kmhBx19OOt" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7kmhBx19Oi2" resolve="f" />
+                </node>
+                <node concept="3CFZ6_" id="7kmhBx19LYS" role="2OqNvi">
+                  <node concept="3CFYIy" id="7kmhBx19OTb" role="3CFYIz">
+                    <ref role="3CFYIx" to="k146:C7pKq6$38E" resolve="ErrorAnnotation" />
                   </node>
                 </node>
-                <node concept="3w_OXm" id="7kmhBx1jYUv" role="2OqNvi" />
               </node>
-              <node concept="3y3z36" id="7kmhBx19OZU" role="3uHU7B">
-                <node concept="2OqwBi" id="7kmhBx19KmU" role="3uHU7B">
-                  <node concept="37vLTw" id="7kmhBx19OOt" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7kmhBx19Oi2" resolve="f" />
-                  </node>
-                  <node concept="3CFZ6_" id="7kmhBx19LYS" role="2OqNvi">
-                    <node concept="3CFYIy" id="7kmhBx19OTb" role="3CFYIz">
-                      <ref role="3CFYIx" to="k146:C7pKq6$38E" resolve="ErrorAnnotation" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="10Nm6u" id="7kmhBx19P40" role="3uHU7w" />
-              </node>
+              <node concept="10Nm6u" id="7kmhBx19P40" role="3uHU7w" />
             </node>
           </node>
         </node>
@@ -5754,7 +5793,7 @@
       </node>
     </node>
     <node concept="1YaCAy" id="7kmhBx19GEa" role="1YuTPh">
-      <property role="TrG5h" value="functionCall" />
+      <property role="TrG5h" value="call" />
       <ref role="1YaFvo" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
     </node>
   </node>
