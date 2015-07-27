@@ -9,10 +9,10 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="10jo" ref="r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -136,6 +136,9 @@
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
+        <property id="6054523464626875854" name="value" index="tnX3d" />
+      </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -151,6 +154,7 @@
       <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
         <property id="7588428831955550663" name="role" index="Hh88m" />
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
+        <child id="7588428831955550186" name="multiple" index="HhnKV" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -1720,6 +1724,20 @@
   <node concept="PlHQZ" id="3RtPbXOi5Ir">
     <property role="3GE5qa" value="commenting" />
     <property role="TrG5h" value="ITriggerCommenting" />
+  </node>
+  <node concept="1TIwiD" id="3RdDJSz0aZf">
+    <property role="TrG5h" value="KeepAliveInGeneration" />
+    <property role="34LRSv" value="keepAliveInGeneration" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="3RdDJSz0aZg" role="lGtFl">
+      <property role="Hh88m" value="keepAliveInGeneration" />
+      <node concept="tn0Fv" id="3RdDJSz0bem" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="3RdDJSz0beo" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
   </node>
 </model>
 
