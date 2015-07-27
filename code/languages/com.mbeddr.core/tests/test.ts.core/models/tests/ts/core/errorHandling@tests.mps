@@ -425,6 +425,11 @@
           <node concept="3XIRFW" id="5E52XUcbXJI" role="3XIRFX">
             <node concept="Oc8UT" id="5E52XUcbXRN" role="3XIRFZ">
               <node concept="3XIRFW" id="5E52XUcbXRP" role="Oc8UD">
+                <node concept="1_9egQ" id="5E52XUcc3jw" role="3XIRFZ">
+                  <node concept="3O_q_g" id="5E52XUcc3ju" role="1_9egR">
+                    <ref role="3O_q_h" node="5E52XUcbWXy" resolve="functionReturningInt" />
+                  </node>
+                </node>
                 <node concept="1_9egQ" id="5E52XUcbXRU" role="3XIRFZ">
                   <node concept="3O_q_g" id="5E52XUcbXRT" role="1_9egR">
                     <ref role="3O_q_h" node="5E52XUcbX$y" resolve="aFunctionWithIntArg" />
