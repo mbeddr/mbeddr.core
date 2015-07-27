@@ -29,7 +29,7 @@
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -801,6 +801,24 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="476OnZoCKoe" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getNameToCheck" />
+      <ref role="13i0hy" to="qd6m:476OnZonWWa" resolve="getNameToCheck" />
+      <node concept="3Tm1VV" id="476OnZoCKof" role="1B3o_S" />
+      <node concept="3clFbS" id="476OnZoCKoi" role="3clF47">
+        <node concept="3cpWs6" id="476OnZoCM3j" role="3cqZAp">
+          <node concept="2OqwBi" id="476OnZoCM7u" role="3cqZAk">
+            <node concept="13iPFW" id="476OnZoCM3u" role="2Oq$k0" />
+            <node concept="3TrcHB" id="476OnZoCMGp" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="476OnZoCKoj" role="3clF45" />
     </node>
     <node concept="13i0hz" id="2B9nouIQ7SP" role="13h7CS">
       <property role="TrG5h" value="allReferencedChunks" />

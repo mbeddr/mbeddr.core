@@ -114,6 +114,9 @@
     <node concept="PrWs8" id="1DVNPtFPKH1" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1DVNPtFPJFZ" resolve="IOutlineRoot" />
     </node>
+    <node concept="PrWs8" id="476OnZoyHTx" role="PzmwI">
+      <ref role="PrY4T" node="476OnZonRX4" resolve="IDoesNotAllowMakeTargetNames" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5_l8w1EmTde">
     <property role="TrG5h" value="ImplementationModule" />
@@ -1394,6 +1397,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5_l8w1EmTvx" resolve="Function" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="476OnZonRX4">
+    <property role="TrG5h" value="IDoesNotAllowMakeTargetNames" />
   </node>
 </model>
 
