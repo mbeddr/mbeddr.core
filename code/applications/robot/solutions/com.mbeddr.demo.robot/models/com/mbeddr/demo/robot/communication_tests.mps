@@ -115,6 +115,9 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
+      <concept id="3788988821852026523" name="com.mbeddr.core.modules.structure.GlobalConstantRef" flags="ng" index="4ZOvp">
+        <reference id="3376775282622611130" name="constant" index="2DPCA0" />
+      </concept>
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
       </concept>
@@ -165,6 +168,11 @@
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
       <concept id="4709703140582114943" name="com.mbeddr.ext.statemachines.structure.StatemachineConfigItem" flags="ng" index="3yF7LM">
         <property id="4709703140582114945" name="triggerAsConst" index="3yF7Mc" />
+      </concept>
+    </language>
+    <language id="41911c23-eb23-4ee6-872f-bc7f7ebce290" name="com.mbeddr.ext.components.test">
+      <concept id="572633089222371456" name="com.mbeddr.ext.components.test.structure.DirectFieldAccess" flags="ng" index="2UioT2">
+        <reference id="572633089222373887" name="field" index="2UipsX" />
       </concept>
     </language>
     <language id="54f2a59b-97bb-4c09-af92-928ebf9c5966" name="com.mbeddr.ext.compositecomponents">
@@ -239,6 +247,12 @@
       <concept id="7780999115923942144" name="com.mbeddr.ext.components.structure.AbstractInstanceConfiguration" flags="ng" index="5Js9S">
         <child id="7780999115923944213" name="contents" index="5JtDH" />
       </concept>
+      <concept id="5308710777891512019" name="com.mbeddr.ext.components.structure.Field" flags="ng" index="EbCE0">
+        <child id="5308710777891512022" name="init" index="EbCE5" />
+      </concept>
+      <concept id="5308710777891565561" name="com.mbeddr.ext.components.structure.FieldRef" flags="ng" index="EbZIE">
+        <reference id="5308710777891565562" name="field" index="EbZID" />
+      </concept>
       <concept id="4491876417845649024" name="com.mbeddr.ext.components.structure.InstanceConfiguration" flags="ng" index="2EWCtd" />
       <concept id="4491876417845649017" name="com.mbeddr.ext.components.structure.InstancePortRef" flags="ng" index="2EWCuO">
         <reference id="4491876417845649018" name="instance" index="2EWCuR" />
@@ -251,6 +265,19 @@
       <concept id="4491876417845649014" name="com.mbeddr.ext.components.structure.ComponentInstance" flags="ng" index="2EWCuV">
         <reference id="4491876417845649015" name="component" index="2EWCuU" />
         <child id="785275130114861567" name="initializers" index="3R_39I" />
+      </concept>
+      <concept id="4491876417845649011" name="com.mbeddr.ext.components.structure.AtomicComponent" flags="ng" index="2EWCuY" />
+      <concept id="4491876417845641677" name="com.mbeddr.ext.components.structure.OperationTrigger" flags="ng" index="2EWDw0" />
+      <concept id="4491876417845641670" name="com.mbeddr.ext.components.structure.Runnable" flags="ng" index="2EWDwb">
+        <child id="4491876417845643892" name="trigger" index="2EWDeT" />
+        <child id="4491876417845689763" name="body" index="2EWMhI" />
+      </concept>
+      <concept id="4491876417845628840" name="com.mbeddr.ext.components.structure.ProvidedPort" flags="ng" index="2EWHp_" />
+      <concept id="4491876417845484930" name="com.mbeddr.ext.components.structure.Port" flags="ng" index="2EX0hf">
+        <reference id="4491876417845484932" name="intf" index="2EX0h9" />
+      </concept>
+      <concept id="4491876417845474761" name="com.mbeddr.ext.components.structure.Component" flags="ng" index="2EX6K4">
+        <child id="6041318036221669720" name="contents" index="2RW2fA" />
       </concept>
       <concept id="8105003328815071749" name="com.mbeddr.ext.components.structure.InterfaceOperationCallExpr" flags="ng" index="2H6Oeg">
         <reference id="8105003328815071752" name="operation" index="2H6Oet" />
@@ -267,13 +294,23 @@
       <concept id="591155063063570513" name="com.mbeddr.ext.components.structure.InitializeConfiguration" flags="ng" index="3t9XKO">
         <reference id="591155063063570514" name="config" index="3t9XKR" />
       </concept>
+      <concept id="8515777736166878876" name="com.mbeddr.ext.components.structure.EmptyComponentContent" flags="ng" index="3Khz0B" />
       <concept id="785275130114861597" name="com.mbeddr.ext.components.structure.InitFieldInitializer" flags="ng" index="3R_36c">
         <reference id="785275130114861598" name="field" index="3R_36f" />
         <child id="785275130114861599" name="value" index="3R_36e" />
       </concept>
+      <concept id="1482737808881210672" name="com.mbeddr.ext.components.structure.IReferencesInstance" flags="ng" index="1XX6Gu">
+        <reference id="1482737808881210674" name="instance" index="1XX6Gs" />
+        <reference id="1482737808881210673" name="config" index="1XX6Gv" />
+      </concept>
+      <concept id="4514118643321588318" name="com.mbeddr.ext.components.structure.IOperationTriggerLike" flags="ng" index="1ZwTiz">
+        <reference id="4514118643321619583" name="calledOperation" index="1ZwxE2" />
+        <reference id="4514118643321592184" name="providedPort" index="1ZwSu5" />
+      </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="7615572890648529894" name="com.mbeddr.core.expressions.structure.NotEqualsExpression" flags="ng" index="25Bbzn" />
+      <concept id="8463282783691618456" name="com.mbeddr.core.expressions.structure.UnsignedInt64tType" flags="ng" index="26Vqp1" />
       <concept id="8463282783691618461" name="com.mbeddr.core.expressions.structure.UnsignedInt8tType" flags="ng" index="26Vqp4" />
       <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
       <concept id="8463282783691618466" name="com.mbeddr.core.expressions.structure.UnsignedInt16tType" flags="ng" index="26VqpV" />
@@ -301,7 +338,9 @@
       <concept id="3820836583575227340" name="com.mbeddr.core.expressions.structure.DirectPlusAssignmentExpression" flags="ng" index="TPXPH" />
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="9013371069686136255" name="com.mbeddr.core.expressions.structure.BitwiseLeftShiftExpression" flags="ng" index="3oul24" />
+      <concept id="9013371069685947728" name="com.mbeddr.core.expressions.structure.BitwiseRightShiftExpression" flags="ng" index="3ov31F" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
+      <concept id="3976803464656498418" name="com.mbeddr.core.expressions.structure.PreDecrementExpression" flags="ng" index="1FldXs" />
       <concept id="3976803464656498416" name="com.mbeddr.core.expressions.structure.PostDecrementExpression" flags="ng" index="1FldXu" />
       <concept id="1054289341113496566" name="com.mbeddr.core.expressions.structure.BinaryNumberLiteral" flags="ng" index="3HbmlB" />
       <concept id="1054289341113450444" name="com.mbeddr.core.expressions.structure.HexNumberLiteral" flags="ng" index="3Hbq_t" />
@@ -369,6 +408,9 @@
       </node>
       <node concept="2v9HqM" id="2JGF63bJybQ" role="2eOfOg">
         <ref role="2v9HqP" node="2JGF63bJs10" resolve="RadioTests" />
+      </node>
+      <node concept="2v9HqM" id="2Z$TrjNbQO4" role="2eOfOg">
+        <ref role="2v9HqP" node="2Z$TrjNbEC4" resolve="OversamplingRadioTests" />
       </node>
     </node>
     <node concept="3V4jtR" id="1XyQ$8LAv3o" role="2Q9xDr">
@@ -1722,6 +1764,12 @@
             <node concept="3cM6IN" id="4TJtxzSHLFy" role="3cM6Hi">
               <ref role="3cM6IK" node="4TJtxzSFjHk" resolve="testBitsRealignment" />
             </node>
+            <node concept="3cM6IN" id="2Z$TrjNbPyA" role="3cM6Hi">
+              <ref role="3cM6IK" node="2Z$TrjNbHjz" resolve="testOversamplingRate" />
+            </node>
+            <node concept="3cM6IN" id="2Z$TrjNbPyB" role="3cM6Hi">
+              <ref role="3cM6IK" node="2Z$TrjNbGlG" resolve="testOversamplingReceiver" />
+            </node>
           </node>
         </node>
       </node>
@@ -1756,6 +1804,9 @@
     </node>
     <node concept="3GEVxB" id="2JGF63bJxm4" role="2OODSX">
       <ref role="3GEb4d" node="2JGF63bJs10" resolve="RadioTests" />
+    </node>
+    <node concept="3GEVxB" id="2Z$TrjNbPxA" role="2OODSX">
+      <ref role="3GEb4d" node="2Z$TrjNbEC4" resolve="OversamplingRadioTests" />
     </node>
   </node>
   <node concept="N3F5e" id="6tw98Xd9zFd">
@@ -2873,6 +2924,411 @@
     </node>
     <node concept="3GEVxB" id="2JGF63c0vCX" role="2OODSX">
       <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
+    </node>
+  </node>
+  <node concept="N3F5e" id="2Z$TrjNbEC4">
+    <property role="TrG5h" value="OversamplingRadioTests" />
+    <node concept="2NXPZ9" id="2Z$TrjNbEC5" role="N3F5h">
+      <property role="TrG5h" value="empty_1438069091164_39" />
+    </node>
+    <node concept="2NXPZ9" id="2Z$TrjNbEDd" role="N3F5h">
+      <property role="TrG5h" value="empty_1438069165122_42" />
+    </node>
+    <node concept="2EWCtd" id="2Z$TrjNbECe" role="N3F5h">
+      <property role="TrG5h" value="OversamplingRadioTestInstances" />
+      <node concept="2EWCuV" id="2Z$TrjNbECj" role="5JtDH">
+        <property role="TrG5h" value="_receiver" />
+        <ref role="2EWCuU" to="azo0:2Z$TrjNbyFt" resolve="OversamplingRadioReceiver" />
+      </node>
+      <node concept="2EWCuV" id="2Z$TrjNbG1H" role="5JtDH">
+        <property role="TrG5h" value="_outputStreamBuffer" />
+        <ref role="2EWCuU" node="2Z$TrjNbEEE" resolve="OutputBitStreamMock" />
+      </node>
+      <node concept="2EWCuV" id="2Z$TrjNbG34" role="5JtDH">
+        <property role="TrG5h" value="_inputPin" />
+        <ref role="2EWCuU" to="t6m2:74TmcPiXh8v" resolve="DigitalPinMock" />
+      </node>
+      <node concept="2EWCuP" id="2Z$TrjNbG2q" role="5JtDH">
+        <node concept="2EWCuO" id="2Z$TrjNbG2r" role="2EWCuL">
+          <ref role="2EWCuR" node="2Z$TrjNbECj" resolve="_receiver" />
+          <ref role="XcPQd" to="azo0:2Z$TrjNbyP9" resolve="output" />
+        </node>
+        <node concept="2EWCuO" id="2Z$TrjNbG2s" role="2EWCuK">
+          <ref role="2EWCuR" node="2Z$TrjNbG1H" resolve="_outputStreamBuffer" />
+          <ref role="XcPQd" node="2Z$TrjNbEHy" resolve="stream" />
+        </node>
+      </node>
+      <node concept="2EWCuP" id="2Z$TrjNbG2G" role="5JtDH">
+        <node concept="2EWCuO" id="2Z$TrjNbG2H" role="2EWCuL">
+          <ref role="2EWCuR" node="2Z$TrjNbECj" resolve="_receiver" />
+          <ref role="XcPQd" to="azo0:2Z$TrjNbyPa" resolve="inputPin" />
+        </node>
+        <node concept="2EWCuO" id="2Z$TrjNbG2I" role="2EWCuK">
+          <ref role="2EWCuR" node="2Z$TrjNbG34" resolve="_inputPin" />
+          <ref role="XcPQd" to="t6m2:74TmcPiXhaY" resolve="pin" />
+        </node>
+      </node>
+      <node concept="JAGxh" id="2Z$TrjNbHZj" role="5JtDH" />
+      <node concept="21gPQu" id="2Z$TrjNbOnL" role="5JtDH">
+        <property role="TrG5h" value="receiverRunnable" />
+        <node concept="219P8x" id="2Z$TrjNbOnM" role="21ad3a">
+          <ref role="219P8w" node="2Z$TrjNbECj" resolve="_receiver" />
+          <ref role="219P8J" to="azo0:2Z$TrjNbyP8" resolve="runnable" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="2Z$TrjNbEDW" role="N3F5h">
+      <property role="TrG5h" value="empty_1438069170913_45" />
+    </node>
+    <node concept="2NXPZ9" id="2Z$TrjNbEE6" role="N3F5h">
+      <property role="TrG5h" value="empty_1438069171073_46" />
+    </node>
+    <node concept="2EWCuY" id="2Z$TrjNbEEE" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="OutputBitStreamMock" />
+      <node concept="2EWHp_" id="2Z$TrjNbEHy" role="2RW2fA">
+        <property role="TrG5h" value="stream" />
+        <ref role="2EX0h9" to="azo0:4TJtxzSUyTd" resolve="IOutputBitStream" />
+      </node>
+      <node concept="EbCE0" id="2Z$TrjNbEEZ" role="2RW2fA">
+        <property role="TrG5h" value="buffer" />
+        <node concept="26Vqp1" id="2Z$TrjNbEEX" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3TlMh9" id="2Z$TrjNbEFi" role="EbCE5">
+          <property role="2hmy$m" value="0" />
+        </node>
+      </node>
+      <node concept="3Khz0B" id="2Z$TrjNbEEU" role="2RW2fA" />
+      <node concept="2EWDwb" id="2Z$TrjNbEHD" role="2RW2fA">
+        <property role="TrG5h" value="stream_writeBit" />
+        <node concept="3XIRFW" id="2Z$TrjNbEHE" role="2EWMhI">
+          <node concept="1_9egQ" id="2Z$TrjNbEIH" role="3XIRFZ">
+            <node concept="3pqW6w" id="2Z$TrjNbEIW" role="1_9egR">
+              <node concept="EUQZk" id="2Z$TrjNbF0y" role="3TlMhJ">
+                <node concept="2BPB98" id="2Z$TrjNbF0_" role="3TlMhJ">
+                  <node concept="n5E$d" id="2Z$TrjNbFdB" role="1_9fRO">
+                    <node concept="3TlMh9" id="2Z$TrjNbFk3" role="n5E$j">
+                      <property role="2hmy$m" value="1" />
+                    </node>
+                    <node concept="3TlMh9" id="2Z$TrjNbFsr" role="n5E$i">
+                      <property role="2hmy$m" value="0" />
+                    </node>
+                    <node concept="3ZUYvv" id="2Z$TrjNbF74" role="n5E$c">
+                      <ref role="3ZUYvu" node="2Z$TrjNbEHI" resolve="value" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2BPB98" id="2Z$TrjNbEUa" role="3TlMhI">
+                  <node concept="3oul24" id="2Z$TrjNbENJ" role="1_9fRO">
+                    <node concept="3TlMh9" id="2Z$TrjNbENM" role="3TlMhJ">
+                      <property role="2hmy$m" value="1" />
+                    </node>
+                    <node concept="EbZIE" id="2Z$TrjNbELj" role="3TlMhI">
+                      <ref role="EbZID" node="2Z$TrjNbEEZ" resolve="buffer" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="EbZIE" id="2Z$TrjNbEIF" role="3TlMhI">
+                <ref role="EbZID" node="2Z$TrjNbEEZ" resolve="buffer" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2EWDw0" id="2Z$TrjNbEHG" role="2EWDeT">
+          <ref role="1ZwSu5" node="2Z$TrjNbEHy" resolve="stream" />
+          <ref role="1ZwxE2" to="azo0:4TJtxzSUz1n" resolve="writeBit" />
+        </node>
+        <node concept="19Rifw" id="2Z$TrjNbEHH" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="19RgSI" id="2Z$TrjNbEHI" role="1UOdpc">
+          <property role="TrG5h" value="value" />
+          <node concept="3TlMgk" id="2Z$TrjNbEHJ" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="2EWDwb" id="2Z$TrjNbEHK" role="2RW2fA">
+        <property role="TrG5h" value="stream_spaceAvailable" />
+        <node concept="3XIRFW" id="2Z$TrjNbEHL" role="2EWMhI">
+          <node concept="2BFjQ_" id="2Z$TrjNbEHP" role="3XIRFZ">
+            <node concept="3TlMhK" id="2Z$TrjNbF$q" role="2BFjQA" />
+          </node>
+        </node>
+        <node concept="2EWDw0" id="2Z$TrjNbEHN" role="2EWDeT">
+          <ref role="1ZwSu5" node="2Z$TrjNbEHy" resolve="stream" />
+          <ref role="1ZwxE2" to="azo0:4TJtxzSUAXk" resolve="spaceAvailable" />
+        </node>
+        <node concept="3TlMgk" id="2Z$TrjNbEHO" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="2Z$TrjNbEEt" role="N3F5h">
+      <property role="TrG5h" value="empty_1438069171357_48" />
+    </node>
+    <node concept="c0Qz5" id="2Z$TrjNbHjz" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="testOversamplingRate" />
+      <node concept="19Rifw" id="2Z$TrjNbHj$" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="2Z$TrjNbHjA" role="c0Qz3">
+        <node concept="1QiMYF" id="2Z$TrjNbHus" role="3XIRFZ">
+          <node concept="OjmMv" id="2Z$TrjNbHuu" role="3SJzmv">
+            <node concept="19SGf9" id="2Z$TrjNbHuv" role="OjmMu">
+              <node concept="19SUe$" id="2Z$TrjNbHuw" role="19SJt6">
+                <property role="19SUeA" value="all tests are written for an oversampling rate of 3" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2N2KuS" id="2Z$TrjNbHuf" role="3XIRFZ">
+          <node concept="3TlMh9" id="2Z$TrjNbHve" role="2N2GHh">
+            <property role="2hmy$m" value="3" />
+          </node>
+          <node concept="4ZOvp" id="2Z$TrjNbHuD" role="2N2GHg">
+            <ref role="2DPCA0" to="azo0:2Z$TrjNbyL1" resolve="RADIO_OVERSAMPLING" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="2Z$TrjNbH9J" role="N3F5h">
+      <property role="TrG5h" value="empty_1438069720456_52" />
+    </node>
+    <node concept="c0Qz5" id="2Z$TrjNbGlG" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="testOversamplingReceiver" />
+      <node concept="19Rifw" id="2Z$TrjNbGlH" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="2Z$TrjNbGlJ" role="c0Qz3">
+        <node concept="3t9XKO" id="2Z$TrjNbI07" role="3XIRFZ">
+          <ref role="3t9XKR" node="2Z$TrjNbECe" resolve="OversamplingRadioTestInstances" />
+        </node>
+        <node concept="3XISUE" id="2Z$TrjNbI0c" role="3XIRFZ" />
+        <node concept="2N2KuS" id="2Z$TrjNbOL7" role="3XIRFZ">
+          <node concept="3HbmlB" id="2Z$TrjNouC_" role="2N2GHh">
+            <property role="2hmy$m" value="101" />
+          </node>
+          <node concept="3O_q_g" id="2Z$TrjNbOLk" role="2N2GHg">
+            <ref role="3O_q_h" node="2Z$TrjNbGYa" resolve="runReceiver" />
+            <node concept="3HbmlB" id="2Z$TrjNkgB8" role="3O_q_j">
+              <property role="2hmy$m" value="0111000111" />
+            </node>
+            <node concept="3TlMh9" id="2Z$TrjNbON7" role="3O_q_j">
+              <property role="2hmy$m" value="10" />
+            </node>
+          </node>
+        </node>
+        <node concept="3t9XKO" id="2Z$TrjNzbMF" role="3XIRFZ">
+          <ref role="3t9XKR" node="2Z$TrjNbECe" resolve="OversamplingRadioTestInstances" />
+        </node>
+        <node concept="2N2KuS" id="2Z$TrjNsFSP" role="3XIRFZ">
+          <node concept="3HbmlB" id="2Z$TrjNsFSQ" role="2N2GHh">
+            <property role="2hmy$m" value="101" />
+          </node>
+          <node concept="3O_q_g" id="2Z$TrjNsFSR" role="2N2GHg">
+            <ref role="3O_q_h" node="2Z$TrjNbGYa" resolve="runReceiver" />
+            <node concept="3HbmlB" id="2Z$TrjNsFSS" role="3O_q_j">
+              <property role="2hmy$m" value="01110000111" />
+            </node>
+            <node concept="3TlMh9" id="2Z$TrjNsFST" role="3O_q_j">
+              <property role="2hmy$m" value="11" />
+            </node>
+          </node>
+        </node>
+        <node concept="3t9XKO" id="2Z$TrjNzbQe" role="3XIRFZ">
+          <ref role="3t9XKR" node="2Z$TrjNbECe" resolve="OversamplingRadioTestInstances" />
+        </node>
+        <node concept="2N2KuS" id="2Z$TrjNsH6D" role="3XIRFZ">
+          <node concept="3HbmlB" id="2Z$TrjNsH6E" role="2N2GHh">
+            <property role="2hmy$m" value="101" />
+          </node>
+          <node concept="3O_q_g" id="2Z$TrjNsH6F" role="2N2GHg">
+            <ref role="3O_q_h" node="2Z$TrjNbGYa" resolve="runReceiver" />
+            <node concept="3HbmlB" id="2Z$TrjNsH6G" role="3O_q_j">
+              <property role="2hmy$m" value="0110000111" />
+            </node>
+            <node concept="3TlMh9" id="2Z$TrjNsH6H" role="3O_q_j">
+              <property role="2hmy$m" value="10" />
+            </node>
+          </node>
+        </node>
+        <node concept="3t9XKO" id="2Z$TrjNzbRt" role="3XIRFZ">
+          <ref role="3t9XKR" node="2Z$TrjNbECe" resolve="OversamplingRadioTestInstances" />
+        </node>
+        <node concept="2N2KuS" id="2Z$TrjNsHWz" role="3XIRFZ">
+          <node concept="3HbmlB" id="2Z$TrjNsHW$" role="2N2GHh">
+            <property role="2hmy$m" value="1001" />
+          </node>
+          <node concept="3O_q_g" id="2Z$TrjNsHW_" role="2N2GHg">
+            <ref role="3O_q_h" node="2Z$TrjNbGYa" resolve="runReceiver" />
+            <node concept="3HbmlB" id="2Z$TrjNsHWA" role="3O_q_j">
+              <property role="2hmy$m" value="01100000111" />
+            </node>
+            <node concept="3TlMh9" id="2Z$TrjNsHWB" role="3O_q_j">
+              <property role="2hmy$m" value="11" />
+            </node>
+          </node>
+        </node>
+        <node concept="3t9XKO" id="2Z$TrjNzbSH" role="3XIRFZ">
+          <ref role="3t9XKR" node="2Z$TrjNbECe" resolve="OversamplingRadioTestInstances" />
+        </node>
+        <node concept="2N2KuS" id="2Z$TrjNsJbR" role="3XIRFZ">
+          <node concept="3HbmlB" id="2Z$TrjNsJbS" role="2N2GHh">
+            <property role="2hmy$m" value="0010" />
+          </node>
+          <node concept="3O_q_g" id="2Z$TrjNsJbT" role="2N2GHg">
+            <ref role="3O_q_h" node="2Z$TrjNbGYa" resolve="runReceiver" />
+            <node concept="3HbmlB" id="2Z$TrjNsJbU" role="3O_q_j">
+              <property role="2hmy$m" value="100000110000" />
+            </node>
+            <node concept="3TlMh9" id="2Z$TrjNsJbV" role="3O_q_j">
+              <property role="2hmy$m" value="12" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="2Z$TrjNbGFp" role="N3F5h">
+      <property role="TrG5h" value="empty_1438069672369_50" />
+    </node>
+    <node concept="N3Fnx" id="2Z$TrjNbGYa" role="N3F5h">
+      <property role="TrG5h" value="runReceiver" />
+      <node concept="19RgSI" id="2Z$TrjNbH8W" role="1UOdpc">
+        <property role="TrG5h" value="input" />
+        <node concept="26Vqp1" id="2Z$TrjNbH8U" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="2Z$TrjNbH$3" role="1UOdpc">
+        <property role="TrG5h" value="numBits" />
+        <node concept="26Vqp4" id="2Z$TrjNbH$1" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="26Vqp1" id="2Z$TrjNbH9_" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="2Z$TrjNbGYc" role="3XIRFX">
+        <node concept="1_9egQ" id="2Z$TrjNbJaJ" role="3XIRFZ">
+          <node concept="3pqW6w" id="2Z$TrjNbJlq" role="1_9egR">
+            <node concept="3TlMh9" id="2Z$TrjNbJlt" role="3TlMhJ">
+              <property role="2hmy$m" value="0" />
+            </node>
+            <node concept="2UioT2" id="2Z$TrjNbJaK" role="3TlMhI">
+              <ref role="1XX6Gs" node="2Z$TrjNbG1H" resolve="_outputStreamBuffer" />
+              <ref role="1XX6Gv" node="2Z$TrjNbECe" resolve="OversamplingRadioTestInstances" />
+              <ref role="2UipsX" node="2Z$TrjNbEEZ" resolve="buffer" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="2Z$TrjNbJ0T" role="3XIRFZ" />
+        <node concept="1_a8vi" id="2Z$TrjNbH$I" role="3XIRFZ">
+          <node concept="3XIRFW" id="2Z$TrjNbH$J" role="1_amYn">
+            <node concept="1_9egQ" id="2Z$TrjNbIef" role="3XIRFZ">
+              <node concept="3pqW6w" id="2Z$TrjNbIeg" role="1_9egR">
+                <node concept="25Bbzn" id="2Z$TrjNbNpn" role="3TlMhJ">
+                  <node concept="3TlMh9" id="2Z$TrjNbNGP" role="3TlMhJ">
+                    <property role="2hmy$m" value="0" />
+                  </node>
+                  <node concept="2BPB98" id="2Z$TrjNbMqk" role="3TlMhI">
+                    <node concept="SSPID" id="2Z$TrjNbM6N" role="1_9fRO">
+                      <node concept="3TlMh9" id="2Z$TrjNbM6Q" role="3TlMhJ">
+                        <property role="2hmy$m" value="1" />
+                      </node>
+                      <node concept="2BPB98" id="2Z$TrjNbLLs" role="3TlMhI">
+                        <node concept="3ov31F" id="2Z$TrjNbJPp" role="1_9fRO">
+                          <node concept="2BPB98" id="2Z$TrjNbK0k" role="3TlMhJ">
+                            <node concept="2BOcil" id="2Z$TrjNbKo6" role="1_9fRO">
+                              <node concept="3TlMh9" id="2Z$TrjNbKo9" role="3TlMhJ">
+                                <property role="2hmy$m" value="1" />
+                              </node>
+                              <node concept="3ZVu4v" id="2Z$TrjNbKbb" role="3TlMhI">
+                                <ref role="3ZVs_2" node="2Z$TrjNbH$X" resolve="i" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3ZUYvv" id="2Z$TrjNbJEt" role="3TlMhI">
+                            <ref role="3ZUYvu" node="2Z$TrjNbH8W" resolve="input" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2UioT2" id="2Z$TrjNbIei" role="3TlMhI">
+                  <ref role="1XX6Gs" node="2Z$TrjNbG34" resolve="_inputPin" />
+                  <ref role="2UipsX" to="t6m2:74TmcPiXhgF" resolve="_value" />
+                  <ref role="1XX6Gv" node="2Z$TrjNbECe" resolve="OversamplingRadioTestInstances" />
+                </node>
+              </node>
+            </node>
+            <node concept="1_9egQ" id="2Z$TrjNbOo2" role="3XIRFZ">
+              <node concept="30IJZa" id="2Z$TrjNbOKI" role="1_9egR">
+                <ref role="2H6Oet" to="ec8n:exHFgzK8US" resolve="run" />
+                <node concept="2H6Wec" id="2Z$TrjNbOo0" role="1_9fRO">
+                  <ref role="2H6Wef" node="2Z$TrjNbOnL" resolve="receiverRunnable" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1_amY7" id="2Z$TrjNbH$X" role="1_amZ$">
+            <property role="TrG5h" value="i" />
+            <node concept="26Vqp4" id="2Z$TrjNbH$W" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+            <node concept="2BOcil" id="2Z$TrjNbHA5" role="3XIe9u">
+              <node concept="3TlMh9" id="2Z$TrjNbHA8" role="3TlMhJ">
+                <property role="2hmy$m" value="1" />
+              </node>
+              <node concept="3ZUYvv" id="2Z$TrjNbH_k" role="3TlMhI">
+                <ref role="3ZUYvu" node="2Z$TrjNbH$3" resolve="numBits" />
+              </node>
+            </node>
+          </node>
+          <node concept="3Tl9Jr" id="2Z$TrjNbHP0" role="1_amZB">
+            <node concept="3ZVu4v" id="2Z$TrjNbHP2" role="3TlMhI">
+              <ref role="3ZVs_2" node="2Z$TrjNbH$X" resolve="i" />
+            </node>
+            <node concept="3TlMh9" id="2Z$TrjNbHP3" role="3TlMhJ">
+              <property role="2hmy$m" value="0" />
+            </node>
+          </node>
+          <node concept="1FldXs" id="2Z$TrjNbHTw" role="1_amZy">
+            <node concept="3ZVu4v" id="2Z$TrjNbHUR" role="1_9fRO">
+              <ref role="3ZVs_2" node="2Z$TrjNbH$X" resolve="i" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="2Z$TrjNbIev" role="3XIRFZ" />
+        <node concept="2BFjQ_" id="2Z$TrjNbIia" role="3XIRFZ">
+          <node concept="2UioT2" id="2Z$TrjNbI0w" role="2BFjQA">
+            <ref role="2UipsX" node="2Z$TrjNbEEZ" resolve="buffer" />
+            <ref role="1XX6Gv" node="2Z$TrjNbECe" resolve="OversamplingRadioTestInstances" />
+            <ref role="1XX6Gs" node="2Z$TrjNbG1H" resolve="_outputStreamBuffer" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3GEVxB" id="2Z$TrjNbECo" role="2OODSX">
+      <ref role="3GEb4d" to="azo0:74TmcPjUmer" resolve="Radio" />
+    </node>
+    <node concept="3GEVxB" id="2Z$TrjNbGcd" role="2OODSX">
+      <ref role="3GEb4d" to="t6m2:5zHWU$GuxGd" resolve="IO" />
     </node>
   </node>
 </model>

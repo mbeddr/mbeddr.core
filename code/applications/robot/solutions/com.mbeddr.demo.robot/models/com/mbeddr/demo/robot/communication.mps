@@ -367,6 +367,7 @@
       <concept id="7193082937527768537" name="com.mbeddr.core.expressions.structure.DirectBitwiseANDAssignmentExpression" flags="ng" index="1g_Icb" />
       <concept id="7193082937527768541" name="com.mbeddr.core.expressions.structure.DirectBitwiseORAssignmentExpression" flags="ng" index="1g_Icf" />
       <concept id="2799490600706093744" name="com.mbeddr.core.expressions.structure.ModuloExpression" flags="ng" index="1hY7HI" />
+      <concept id="4273030818770088794" name="com.mbeddr.core.expressions.structure.DirectMinusAssignmentExpression" flags="ng" index="3omEAT" />
       <concept id="9013371069686136255" name="com.mbeddr.core.expressions.structure.BitwiseLeftShiftExpression" flags="ng" index="3oul24" />
       <concept id="9013371069685947728" name="com.mbeddr.core.expressions.structure.BitwiseRightShiftExpression" flags="ng" index="3ov31F" />
       <concept id="9013371069685926132" name="com.mbeddr.core.expressions.structure.BitwiseXORExpression" flags="ng" index="3ov6nf" />
@@ -7231,6 +7232,209 @@
     </node>
     <node concept="2NXPZ9" id="74TmcPjUmgv" role="N3F5h">
       <property role="TrG5h" value="empty_1436779439186_16" />
+    </node>
+    <node concept="4WHVk" id="2Z$TrjNbyL1" role="N3F5h">
+      <property role="TrG5h" value="RADIO_OVERSAMPLING" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3TlMh9" id="2Z$TrjNbyNj" role="2DQcEM">
+        <property role="2hmy$m" value="3" />
+      </node>
+    </node>
+    <node concept="2B_Gvg" id="2Z$TrjNbyI9" role="N3F5h">
+      <node concept="OjmMv" id="2Z$TrjNbyIb" role="2B_H8o">
+        <node concept="19SGf9" id="2Z$TrjNbyIc" role="OjmMu">
+          <node concept="19SUe$" id="2Z$TrjNbyId" role="19SJt6">
+            <property role="19SUeA" value="If sender and receiver do not share the same clock source, but the clock frequency is close together" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2EWCuY" id="2Z$TrjNbyFt" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="OversamplingRadioReceiver" />
+      <node concept="2EWHp_" id="2Z$TrjNbyP8" role="2RW2fA">
+        <property role="TrG5h" value="runnable" />
+        <ref role="2EX0h9" to="ec8n:exHFgzK8Pv" resolve="IRunnable" />
+      </node>
+      <node concept="2EWHp$" id="2Z$TrjNbyP9" role="2RW2fA">
+        <property role="TrG5h" value="output" />
+        <ref role="2EX0h9" node="4TJtxzSUyTd" resolve="IOutputBitStream" />
+      </node>
+      <node concept="2EWHp$" id="2Z$TrjNbyPa" role="2RW2fA">
+        <property role="TrG5h" value="inputPin" />
+        <ref role="2EX0h9" to="t6m2:5zHWU$Gup8b" resolve="IDigitalPin" />
+      </node>
+      <node concept="3Khz0B" id="2Z$TrjNbyPb" role="2RW2fA" />
+      <node concept="EbCE0" id="2Z$TrjNbyTk" role="2RW2fA">
+        <property role="TrG5h" value="lastLevel" />
+        <node concept="3TlMgk" id="2Z$TrjNbyTi" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3TlMhd" id="2Z$TrjNbyVv" role="EbCE5" />
+      </node>
+      <node concept="EbCE0" id="2Z$TrjNbyUI" role="2RW2fA">
+        <property role="TrG5h" value="sameLevelCount" />
+        <node concept="26Vqp4" id="2Z$TrjNbyUG" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3TlMh9" id="2Z$TrjNbyWW" role="EbCE5">
+          <property role="2hmy$m" value="0" />
+        </node>
+      </node>
+      <node concept="3Khz0B" id="2Z$TrjNbySm" role="2RW2fA" />
+      <node concept="2EWDwb" id="2Z$TrjNbyPc" role="2RW2fA">
+        <property role="TrG5h" value="setup" />
+        <node concept="3XIRFW" id="2Z$TrjNbyPd" role="2EWMhI">
+          <node concept="1_9egQ" id="2Z$TrjNbyPe" role="3XIRFZ">
+            <node concept="30IBQI" id="2Z$TrjNbyPf" role="1_9egR">
+              <ref role="2H6Oet" to="t6m2:5zHWU$GuxIw" resolve="asInput" />
+              <node concept="2H6loZ" id="2Z$TrjNbyPg" role="1_9fRO">
+                <ref role="2H6loY" node="2Z$TrjNbyPa" resolve="inputPin" />
+              </node>
+              <node concept="3TlMhd" id="2Z$TrjNbyPh" role="2H6KYo" />
+            </node>
+          </node>
+        </node>
+        <node concept="19Rifw" id="2Z$TrjNbyPi" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="2cabNp" id="2Z$TrjNbyPj" role="2EWDeT" />
+      </node>
+      <node concept="3Khz0B" id="2Z$TrjNbyPk" role="2RW2fA" />
+      <node concept="2EWDwb" id="2Z$TrjNbyPl" role="2RW2fA">
+        <property role="TrG5h" value="runnable_run" />
+        <node concept="3XIRFW" id="2Z$TrjNbyPm" role="2EWMhI">
+          <node concept="3XIRlf" id="2Z$TrjNbyR6" role="3XIRFZ">
+            <property role="TrG5h" value="level" />
+            <node concept="3TlMgk" id="2Z$TrjNbyRj" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+            <node concept="30IBQI" id="2Z$TrjNbyRk" role="3XIe9u">
+              <ref role="2H6Oet" to="t6m2:5zHWU$GuxJ$" resolve="read" />
+              <node concept="2H6loZ" id="2Z$TrjNbyRl" role="1_9fRO">
+                <ref role="2H6loY" node="2Z$TrjNbyPa" resolve="inputPin" />
+              </node>
+            </node>
+          </node>
+          <node concept="c0U19" id="2Z$TrjNbz5M" role="3XIRFZ">
+            <node concept="3XIRFW" id="2Z$TrjNbz5N" role="c0U17">
+              <node concept="1_9egQ" id="2Z$TrjNbzaV" role="3XIRFZ">
+                <node concept="3TM6Ez" id="2Z$TrjNbzb5" role="1_9egR">
+                  <node concept="EbZIE" id="2Z$TrjNbzaU" role="1_9fRO">
+                    <ref role="EbZID" node="2Z$TrjNbyUI" resolve="sameLevelCount" />
+                  </node>
+                </node>
+              </node>
+              <node concept="c0U19" id="2Z$TrjNbyYj" role="3XIRFZ">
+                <node concept="3XIRFW" id="2Z$TrjNbyYk" role="c0U17">
+                  <node concept="1_9egQ" id="2Z$TrjNbzwi" role="3XIRFZ">
+                    <node concept="30IBQI" id="2Z$TrjNbzy8" role="1_9egR">
+                      <ref role="2H6Oet" node="4TJtxzSUz1n" resolve="writeBit" />
+                      <node concept="2H6loZ" id="2Z$TrjNbzwh" role="1_9fRO">
+                        <ref role="2H6loY" node="2Z$TrjNbyP9" resolve="output" />
+                      </node>
+                      <node concept="3ZVu4v" id="2Z$TrjNbzyq" role="2H6KYo">
+                        <ref role="3ZVs_2" node="2Z$TrjNbyR6" resolve="level" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1_9egQ" id="2Z$TrjNb$37" role="3XIRFZ">
+                    <node concept="3omEAT" id="2Z$TrjNb$43" role="1_9egR">
+                      <node concept="4ZOvp" id="2Z$TrjNb$7K" role="3TlMhJ">
+                        <ref role="2DPCA0" node="2Z$TrjNbyL1" resolve="RADIO_OVERSAMPLING" />
+                      </node>
+                      <node concept="EbZIE" id="2Z$TrjNb$35" role="3TlMhI">
+                        <ref role="EbZID" node="2Z$TrjNbyUI" resolve="sameLevelCount" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3Tl9Jp" id="2Z$TrjNbzs$" role="c0U16">
+                  <node concept="4ZOvp" id="2Z$TrjNbzu5" role="3TlMhJ">
+                    <ref role="2DPCA0" node="2Z$TrjNbyL1" resolve="RADIO_OVERSAMPLING" />
+                  </node>
+                  <node concept="EbZIE" id="2Z$TrjNbyYD" role="3TlMhI">
+                    <ref role="EbZID" node="2Z$TrjNbyUI" resolve="sameLevelCount" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3TlM44" id="2Z$TrjNbz7Q" role="c0U16">
+              <node concept="3ZVu4v" id="2Z$TrjNbz9p" role="3TlMhJ">
+                <ref role="3ZVs_2" node="2Z$TrjNbyR6" resolve="level" />
+              </node>
+              <node concept="EbZIE" id="2Z$TrjNbz7D" role="3TlMhI">
+                <ref role="EbZID" node="2Z$TrjNbyTk" resolve="lastLevel" />
+              </node>
+            </node>
+            <node concept="1ly_i6" id="2Z$TrjNbzcF" role="ggAap">
+              <node concept="3XIRFW" id="2Z$TrjNbzcG" role="1ly_ph">
+                <node concept="c0U19" id="2Z$TrjNbzPv" role="3XIRFZ">
+                  <node concept="3XIRFW" id="2Z$TrjNbzPw" role="c0U17">
+                    <node concept="1_9egQ" id="2Z$TrjNbzUF" role="3XIRFZ">
+                      <node concept="30IBQI" id="2Z$TrjNbzWx" role="1_9egR">
+                        <ref role="2H6Oet" node="4TJtxzSUz1n" resolve="writeBit" />
+                        <node concept="2H6loZ" id="2Z$TrjNbzUE" role="1_9fRO">
+                          <ref role="2H6loY" node="2Z$TrjNbyP9" resolve="output" />
+                        </node>
+                        <node concept="EbZIE" id="2Z$TrjNbzWN" role="2H6KYo">
+                          <ref role="EbZID" node="2Z$TrjNbyTk" resolve="lastLevel" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3Tl9Jp" id="2Z$TrjNbzR3" role="c0U16">
+                    <node concept="2BOcil" id="2Z$TrjNb$tm" role="3TlMhJ">
+                      <node concept="3TlMh9" id="2Z$TrjNb$tp" role="3TlMhJ">
+                        <property role="2hmy$m" value="1" />
+                      </node>
+                      <node concept="4ZOvp" id="2Z$TrjNb$eU" role="3TlMhI">
+                        <ref role="2DPCA0" node="2Z$TrjNbyL1" resolve="RADIO_OVERSAMPLING" />
+                      </node>
+                    </node>
+                    <node concept="EbZIE" id="2Z$TrjNbzPH" role="3TlMhI">
+                      <ref role="EbZID" node="2Z$TrjNbyUI" resolve="sameLevelCount" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1_9egQ" id="2Z$TrjNbzeh" role="3XIRFZ">
+                  <node concept="3pqW6w" id="2Z$TrjNbzf1" role="1_9egR">
+                    <node concept="3TlMh9" id="2Z$TrjNbzf4" role="3TlMhJ">
+                      <property role="2hmy$m" value="1" />
+                    </node>
+                    <node concept="EbZIE" id="2Z$TrjNbzeg" role="3TlMhI">
+                      <ref role="EbZID" node="2Z$TrjNbyUI" resolve="sameLevelCount" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3XISUE" id="2Z$TrjNbyZn" role="3XIRFZ" />
+          <node concept="1_9egQ" id="2Z$TrjNbz1l" role="3XIRFZ">
+            <node concept="3pqW6w" id="2Z$TrjNbz3b" role="1_9egR">
+              <node concept="3ZVu4v" id="2Z$TrjNbz3C" role="3TlMhJ">
+                <ref role="3ZVs_2" node="2Z$TrjNbyR6" resolve="level" />
+              </node>
+              <node concept="EbZIE" id="2Z$TrjNbz1j" role="3TlMhI">
+                <ref role="EbZID" node="2Z$TrjNbyTk" resolve="lastLevel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2EWDw0" id="2Z$TrjNbyPs" role="2EWDeT">
+          <ref role="1ZwSu5" node="2Z$TrjNbyP8" resolve="runnable" />
+          <ref role="1ZwxE2" to="ec8n:exHFgzK8US" resolve="run" />
+        </node>
+        <node concept="19Rifw" id="2Z$TrjNbyPt" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
     </node>
     <node concept="2NXPZ9" id="74TmcPjUmgM" role="N3F5h">
       <property role="TrG5h" value="empty_1436779439373_17" />
