@@ -168,9 +168,6 @@
     <node concept="PrWs8" id="6RCWEZG3saq" role="PzmwI">
       <ref role="PrY4T" to="kwxp:2N1CSrzPN_8" resolve="IVisualizable" />
     </node>
-    <node concept="PrWs8" id="476OnZoCHax" role="PzmwI">
-      <ref role="PrY4T" to="x27k:476OnZonRX4" resolve="IDoesNotAllowMakeTargetNames" />
-    </node>
   </node>
   <node concept="AxPO7" id="EAKPqgNQYr">
     <property role="TrG5h" value="EnvironmentKind" />
