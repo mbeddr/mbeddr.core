@@ -405,6 +405,25 @@
         <ref role="2EX0h9" node="5zHWU$Gup8b" resolve="IDigitalPin" />
       </node>
       <node concept="3Khz0B" id="4TJtxzRb$FN" role="2RW2fA" />
+      <node concept="2EWDwb" id="2Z$TrjNT$mz" role="2RW2fA">
+        <property role="TrG5h" value="setup" />
+        <node concept="3XIRFW" id="2Z$TrjNT$m$" role="2EWMhI">
+          <node concept="1_9egQ" id="2Z$TrjNT$oy" role="3XIRFZ">
+            <node concept="30IBQI" id="2Z$TrjNT$oL" role="1_9egR">
+              <ref role="2H6Oet" node="5zHWU$GuxHh" resolve="asOutput" />
+              <node concept="2H6loZ" id="2Z$TrjNT$ow" role="1_9fRO">
+                <ref role="2H6loY" node="4TJtxzRb$DK" resolve="eventPin" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="19Rifw" id="2Z$TrjNT$nX" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="2cabNp" id="2Z$TrjNT$op" role="2EWDeT" />
+      </node>
+      <node concept="3Khz0B" id="2Z$TrjNT$fM" role="2RW2fA" />
       <node concept="2EWDwb" id="4TJtxzRb$DP" role="2RW2fA">
         <property role="TrG5h" value="pin_asOutput" />
         <node concept="3XIRFW" id="4TJtxzRb$DQ" role="2EWMhI">

@@ -29,6 +29,16 @@
     </language>
     <language id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units">
       <concept id="5348704582971040037" name="com.mbeddr.ext.units.structure.UnitConfigItem" flags="ng" index="2eh4Hv" />
+      <concept id="8337440621611212272" name="com.mbeddr.ext.units.structure.AnnotatedExpression" flags="ng" index="CIdvy">
+        <child id="8337440621611267898" name="innerExpression" index="CIrOC" />
+        <child id="8337440621611353453" name="specification" index="CIwXZ" />
+      </concept>
+      <concept id="8337440621611273669" name="com.mbeddr.ext.units.structure.UnitReference" flags="ng" index="CIsvn">
+        <reference id="8337440621611297532" name="unit" index="CIi3I" />
+      </concept>
+      <concept id="8337440621611270429" name="com.mbeddr.ext.units.structure.UnitSpecification" flags="ng" index="CIsGf">
+        <child id="8337440621611297539" name="components" index="CIi4h" />
+      </concept>
     </language>
     <language id="e562f51e-6403-4857-b773-44632077c67d" name="mbeddr.arduino.interrupts">
       <concept id="5152824560131535438" name="mbeddr.arduino.interrupts.structure.ArduinoInterruptKind" flags="ng" index="2Z3J3G" />
@@ -64,9 +74,6 @@
         <child id="7254843406768606787" name="condition" index="1_amZB" />
       </concept>
       <concept id="7254843406768606755" name="com.mbeddr.core.statements.structure.ForVarDecl" flags="ng" index="1_amY7" />
-      <concept id="1679452829930336984" name="com.mbeddr.core.statements.structure.CommentStatement" flags="ng" index="1QiMYF">
-        <child id="8624890525768479139" name="textblock" index="3SJzmv" />
-      </concept>
       <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
         <child id="4185783222026502647" name="init" index="3XIe9u" />
       </concept>
@@ -76,14 +83,6 @@
       <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
       <concept id="2093108837558113914" name="com.mbeddr.core.statements.structure.LocalVarRef" flags="ng" index="3ZVu4v">
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
-      </concept>
-    </language>
-    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
-      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
-        <child id="2557074442922392302" name="words" index="19SJt6" />
-      </concept>
-      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
-        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
@@ -133,9 +132,6 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
-        <child id="8375407818529178007" name="text" index="OjmMu" />
-      </concept>
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
@@ -145,6 +141,9 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
+      <concept id="3788988821852026523" name="com.mbeddr.core.modules.structure.GlobalConstantRef" flags="ng" index="4ZOvp">
+        <reference id="3376775282622611130" name="constant" index="2DPCA0" />
+      </concept>
       <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
       </concept>
@@ -319,6 +318,7 @@
       <concept id="4620120465980402700" name="com.mbeddr.core.expressions.structure.GenericDotExpression" flags="ng" index="2qmXGp">
         <child id="7034214596252529803" name="target" index="1ESnxz" />
       </concept>
+      <concept id="5763383285156373022" name="com.mbeddr.core.expressions.structure.DivExpression" flags="ng" index="2BOcih" />
       <concept id="5763383285156373013" name="com.mbeddr.core.expressions.structure.PlusExpression" flags="ng" index="2BOciq" />
       <concept id="5763383285156533447" name="com.mbeddr.core.expressions.structure.ParensExpression" flags="ng" index="2BPB98" />
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
@@ -738,15 +738,6 @@
             </node>
           </node>
           <node concept="3XISUE" id="4khTSHqt3zi" role="3XIRFZ" />
-          <node concept="1QiMYF" id="4khTSHqt4n4" role="3XIRFZ">
-            <node concept="OjmMv" id="4khTSHqt4n6" role="3SJzmv">
-              <node concept="19SGf9" id="4khTSHqt4n7" role="OjmMu">
-                <node concept="19SUe$" id="4khTSHqt4n8" role="19SJt6">
-                  <property role="19SUeA" value="1 kHz" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="1_9egQ" id="4khTSHqt3$4" role="3XIRFZ">
             <node concept="3LAlOK" id="4khTSHqt3Cg" role="1_9egR">
               <ref role="2H6Oet" to="346p:5Li7KxBWZUG" resolve="setClockInterval" />
@@ -754,8 +745,20 @@
                 <ref role="1DcY7d" to="bs9u:5Li7KxBX3C4" resolve="clock" />
                 <ref role="1DnYF2" node="4TJtxzPLDvT" resolve="timer1" />
               </node>
-              <node concept="3TlMh9" id="4khTSHqt4cR" role="2H6KYo">
-                <property role="2hmy$m" value="1000000" />
+              <node concept="2BOcih" id="2Z$TrjNbwzT" role="2H6KYo">
+                <node concept="4ZOvp" id="2Z$TrjNbw_8" role="3TlMhJ">
+                  <ref role="2DPCA0" to="noqc:2Z$TrjNbrFG" resolve="RADIO_BIT_RATE" />
+                </node>
+                <node concept="CIdvy" id="2Z$TrjNbvXh" role="3TlMhI">
+                  <node concept="3TlMh9" id="2Z$TrjNbvXg" role="CIrOC">
+                    <property role="2hmy$m" value="1000000000" />
+                  </node>
+                  <node concept="CIsGf" id="2Z$TrjNbvXi" role="CIwXZ">
+                    <node concept="CIsvn" id="2Z$TrjNbvXj" role="CIi4h">
+                      <ref role="CIi3I" to="g2ww:74TmcPkHPgk" resolve="ns" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
