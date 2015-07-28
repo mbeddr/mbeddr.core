@@ -15,7 +15,7 @@
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -2123,6 +2123,28 @@
           </node>
           <node concept="la8eA" id="4lD4hLXCJWo" role="lcghm">
             <property role="lacIc" value=" */" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="1myZgySqtjI">
+    <ref role="WuzLi" to="x27k:1myZgySqtjG" resolve="NameOfFunctionExpression" />
+    <node concept="11bSqf" id="1myZgySqtjJ" role="11c4hB">
+      <node concept="3clFbS" id="1myZgySqtjK" role="2VODD2">
+        <node concept="lc7rE" id="1myZgySqtjL" role="3cqZAp">
+          <node concept="l9hG8" id="1myZgySqtjM" role="lcghm">
+            <node concept="2OqwBi" id="1myZgySqtjN" role="lb14g">
+              <node concept="2OqwBi" id="1myZgySqtjO" role="2Oq$k0">
+                <node concept="117lpO" id="1myZgySqtjP" role="2Oq$k0" />
+                <node concept="3TrEf2" id="1myZgySqtjQ" role="2OqNvi">
+                  <ref role="3Tt5mk" to="x27k:1myZgySqtjH" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="1myZgySqtjR" role="2OqNvi">
+                <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="mangledName" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
