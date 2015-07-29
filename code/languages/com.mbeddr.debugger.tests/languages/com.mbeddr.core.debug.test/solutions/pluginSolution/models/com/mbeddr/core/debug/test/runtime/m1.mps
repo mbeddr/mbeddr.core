@@ -7706,7 +7706,7 @@
                           <ref role="37wK5l" node="7C_wgEF3EgT" resolve="TRLoadingNodeFailedException" />
                           <node concept="3cpWs3" id="7C_wgEF3ElK" role="37wK5m">
                             <node concept="Xl_RD" id="7C_wgEF3ElO" role="3uHU7w">
-                              <property role="Xl_RC" value=" not of type IBreakpointSupport" />
+                              <property role="Xl_RC" value=" not of type IBreakpointSupport/TraceableConcept" />
                             </node>
                             <node concept="3cpWs3" id="7C_wgEF3Ekk" role="3uHU7B">
                               <node concept="Xl_RD" id="7C_wgEF3Ek5" role="3uHU7B">

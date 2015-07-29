@@ -66,9 +66,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -134,8 +131,8 @@
   <node concept="312cEu" id="5GEvLp_OKMa">
     <property role="TrG5h" value="FailuresLifterACSL" />
     <node concept="3Tm1VV" id="5GEvLp_OKMb" role="1B3o_S" />
-    <node concept="3uibUv" id="5GEvLp_OPA3" role="1zkMxy">
-      <ref role="3uigEE" to="8ear:7iLQIU34QN7" resolve="CounterexampleLifterBase" />
+    <node concept="3uibUv" id="4kjWK0$q9FL" role="1zkMxy">
+      <ref role="3uigEE" to="8ear:4kjWK0$q3Hq" resolve="FailuresLifterBase" />
     </node>
     <node concept="2tJIrI" id="5GEvLp_OQZE" role="jymVt" />
     <node concept="3clFb_" id="5GEvLp_OPBm" role="jymVt">
@@ -311,43 +308,6 @@
         <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="2tJIrI" id="576QrOJcWyO" role="jymVt" />
-    <node concept="3clFb_" id="576QrOJcWyS" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="isNoise" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <node concept="10P_77" id="576QrOJcWyT" role="3clF45" />
-      <node concept="37vLTG" id="576QrOJcWyU" role="3clF46">
-        <property role="TrG5h" value="crtState" />
-        <node concept="3uibUv" id="576QrOJcWyV" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="576QrOJcWyW" role="3clF46">
-        <property role="TrG5h" value="allRawStates" />
-        <node concept="_YKpA" id="576QrOJcWyX" role="1tU5fm">
-          <node concept="3uibUv" id="576QrOJcWyY" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="576QrOJcWyZ" role="1B3o_S" />
-      <node concept="3clFbS" id="576QrOJcWz0" role="3clF47">
-        <node concept="3clFbF" id="576QrOJcWzB" role="3cqZAp">
-          <node concept="3clFbT" id="576QrOJcWzC" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="576QrOJcWzD" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
-      </node>
-      <node concept="NWlO9" id="576QrOJcWzE" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="5GEvLp_OUzx" role="jymVt" />
     <node concept="NWlO9" id="5GEvLp_OQKn" role="lGtFl">
       <property role="NWlVz" value="Lifts the failures caused by ACSL annotations." />
     </node>
