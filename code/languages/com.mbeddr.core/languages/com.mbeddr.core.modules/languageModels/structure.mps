@@ -1231,10 +1231,6 @@
       <property role="1uS6qo" value="OUT" />
       <property role="1uS6qv" value="1" />
     </node>
-    <node concept="M4N5e" id="3_CPcn39d$L" role="M5hS2">
-      <property role="1uS6qo" value="INOUT" />
-      <property role="1uS6qv" value="2" />
-    </node>
   </node>
   <node concept="PlHQZ" id="6V6S12clNH$">
     <property role="TrG5h" value="IDataFlowAnalyzerEntryPoint" />
