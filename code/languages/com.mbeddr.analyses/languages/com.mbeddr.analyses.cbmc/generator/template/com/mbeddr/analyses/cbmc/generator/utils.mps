@@ -12,6 +12,7 @@
     <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
   </imports>
@@ -619,8 +620,8 @@
                 </node>
                 <node concept="2Rf3mk" id="1CPQBcoBqgy" role="2OqNvi">
                   <node concept="1xMEDy" id="1CPQBcoBqgz" role="1xVPHs">
-                    <node concept="chp4Y" id="1CPQBcoBqg$" role="ri$Ld">
-                      <ref role="cht4Q" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
+                    <node concept="chp4Y" id="7RBgWEJecpn" role="ri$Ld">
+                      <ref role="cht4Q" to="tpck:gw2VY9q" resolve="BaseConcept" />
                     </node>
                   </node>
                 </node>
