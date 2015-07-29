@@ -1397,6 +1397,72 @@
             <ref role="XcPQd" to="bs9u:2Z$TrjKDAIs" resolve="analogPin" />
           </node>
         </node>
+        <node concept="JAGxh" id="6Y0wRXwRpBG" role="5JtDH" />
+        <node concept="2EWCuV" id="6Y0wRXwRDJX" role="5JtDH">
+          <property role="TrG5h" value="linearPotiAnalogX" />
+          <ref role="2EWCuU" to="bs9u:2Z$TrjKDAey" resolve="AvrAnalogPin" />
+          <node concept="3R_36c" id="6Y0wRXwRDJY" role="3R_39I">
+            <ref role="3R_36f" to="bs9u:2Z$TrjKDAOT" resolve="channel" />
+            <node concept="3TlMh9" id="6Y0wRXwRDJZ" role="3R_36e">
+              <property role="2hmy$m" value="1" />
+            </node>
+          </node>
+        </node>
+        <node concept="2EWCuV" id="6Y0wRXwRDK3" role="5JtDH">
+          <property role="TrG5h" value="linearPotiDigitalPinX" />
+          <ref role="2EWCuU" to="t6m2:74TmcPkGIu4" resolve="MultiplexedPin" />
+          <node concept="3R_36c" id="6Y0wRXwRDK4" role="3R_39I">
+            <ref role="3R_36f" to="t6m2:74TmcPkGP9l" resolve="pinNo" />
+            <node concept="3TlMh9" id="6Y0wRXwRDK5" role="3R_36e">
+              <property role="2hmy$m" value="4" />
+            </node>
+          </node>
+        </node>
+        <node concept="2EWCuP" id="6Y0wRXwRDK9" role="5JtDH">
+          <node concept="2EWCuO" id="6Y0wRXwRDKa" role="2EWCuL">
+            <ref role="2EWCuR" node="6Y0wRXwRDJX" resolve="linearPotiAnalogX" />
+            <ref role="XcPQd" to="bs9u:2Z$TrjKDARf" resolve="adc" />
+          </node>
+          <node concept="2EWCuO" id="6Y0wRXwRDKb" role="2EWCuK">
+            <ref role="2EWCuR" node="2Z$TrjKDEdG" resolve="adc" />
+            <ref role="XcPQd" to="bs9u:2Z$TrjKDrRl" resolve="adc" />
+          </node>
+        </node>
+        <node concept="2EWCuP" id="6Y0wRXwRDKf" role="5JtDH">
+          <node concept="2EWCuO" id="6Y0wRXwRDKg" role="2EWCuL">
+            <ref role="2EWCuR" node="6Y0wRXwRDK3" resolve="linearPotiDigitalPinX" />
+            <ref role="XcPQd" to="t6m2:74TmcPkGJ_O" resolve="multiplexer" />
+          </node>
+          <node concept="2EWCuO" id="6Y0wRXwRDKh" role="2EWCuK">
+            <ref role="2EWCuR" node="74TmcPkZ2fM" resolve="multiplexer" />
+            <ref role="XcPQd" to="t6m2:74TmcPkGN46" resolve="multiplexer" />
+          </node>
+        </node>
+        <node concept="2EWCuP" id="6Y0wRXwRDKl" role="5JtDH">
+          <node concept="2EWCuO" id="6Y0wRXwRDKm" role="2EWCuL">
+            <ref role="2EWCuR" node="6Y0wRXwRDJX" resolve="linearPotiAnalogX" />
+            <ref role="XcPQd" to="bs9u:2Z$TrjKDCec" resolve="digitalPin" />
+          </node>
+          <node concept="2EWCuO" id="6Y0wRXwRDKn" role="2EWCuK">
+            <ref role="2EWCuR" node="6Y0wRXwRDK3" resolve="linearPotiDigitalPinX" />
+            <ref role="XcPQd" to="t6m2:74TmcPkGOs9" resolve="pin" />
+          </node>
+        </node>
+        <node concept="2EWCuV" id="6Y0wRXwRDKs" role="5JtDH">
+          <property role="TrG5h" value="linearPoti" />
+          <ref role="2EWCuU" to="sgg6:2Z$TrjKDW0E" resolve="Potentiometer" />
+        </node>
+        <node concept="2EWCuP" id="6Y0wRXwRDKu" role="5JtDH">
+          <node concept="2EWCuO" id="6Y0wRXwRDKv" role="2EWCuL">
+            <ref role="2EWCuR" node="6Y0wRXwRDKs" resolve="linearPoti" />
+            <ref role="XcPQd" to="sgg6:2Z$TrjKDW0O" resolve="analogPin" />
+          </node>
+          <node concept="2EWCuO" id="6Y0wRXwRDKw" role="2EWCuK">
+            <ref role="2EWCuR" node="6Y0wRXwRDJX" resolve="linearPotiAnalogX" />
+            <ref role="XcPQd" to="bs9u:2Z$TrjKDAIs" resolve="analogPin" />
+          </node>
+        </node>
+        <node concept="JAGxh" id="6Y0wRXwRDBX" role="5JtDH" />
         <node concept="37mRI7" id="5zHWU$GwxsN" role="lGtFl">
           <node concept="37mRIm" id="5zHWU$GwxsO" role="37mRID">
             <property role="37mO49" value="261691138174818089" />
@@ -1944,7 +2010,7 @@
                 <node concept="3pqW6w" id="2Z$TrjMreyD" role="1_9egR">
                   <node concept="2qmXGp" id="2Z$TrjMredB" role="3TlMhI">
                     <node concept="1E4Tgc" id="2Z$TrjMrekt" role="1ESnxz">
-                      <ref role="1E4Tge" to="noqc:2Z$TrjMra2j" resolve="relativeSteering" />
+                      <ref role="1E4Tge" to="noqc:2Z$TrjMra2j" resolve="relativeDirection" />
                     </node>
                     <node concept="3ZVu4v" id="2Z$TrjMre6d" role="1_9fRO">
                       <ref role="3ZVs_2" node="2Z$TrjMrdpt" resolve="message" />
@@ -1953,8 +2019,8 @@
                   <node concept="3LAlOK" id="2Z$TrjMreDB" role="3TlMhJ">
                     <ref role="2H6Oet" to="sgg6:2Z$TrjKDW1x" resolve="getRelativeValue" />
                     <node concept="1DnYEe" id="2Z$TrjMreDC" role="1_9fRO">
-                      <ref role="1DcY7d" to="sgg6:2Z$TrjKEoj4" resolve="potentiometer" />
-                      <ref role="1DnYF2" node="2Z$TrjKEtdX" resolve="joystickX" />
+                      <ref role="1DnYF2" node="6Y0wRXwRDKs" resolve="linearPoti" />
+                      <ref role="1DcY7d" to="sgg6:2Z$TrjKDW2l" resolve="potentiometer" />
                     </node>
                   </node>
                 </node>

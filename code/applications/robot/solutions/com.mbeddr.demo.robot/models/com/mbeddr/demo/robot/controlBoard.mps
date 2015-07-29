@@ -25,6 +25,8 @@
     <import index="noqc" ref="r:6d60f211-e941-4250-b1fe-071f436caaaa(com.mbeddr.demo.robot.esploraMessages)" />
     <import index="qw21" ref="r:729c6d02-9aca-4967-acae-c7621c545ace(com.mbeddr.demo.robot.doc)" />
     <import index="lj5" ref="r:b42e5fe1-f23a-4ff2-83e0-383e9f39f02c(com.mbeddr.demo.robot.motorBoardMessages)" />
+    <import index="lmqm" ref="r:cfd6a1d6-4872-45d9-960c-6290f12ecdc1(com.mbeddr.demo.robot.controllers)" />
+    <import index="cmgk" ref="r:679066bc-2da8-4932-a09c-5d2b3d47b911(com.mbeddr.ext.units.siunits)" implicit="true" />
   </imports>
   <registry>
     <language id="3828799d-97c8-48d0-af8b-39b903457e1e" name="mbeddr.arduino.registers">
@@ -196,8 +198,15 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
+      <concept id="3788988821851860886" name="com.mbeddr.core.modules.structure.GlobalConstantDeclaration" flags="ng" index="4WHVk" />
       <concept id="3788988821852026523" name="com.mbeddr.core.modules.structure.GlobalConstantRef" flags="ng" index="4ZOvp">
         <reference id="3376775282622611130" name="constant" index="2DPCA0" />
+      </concept>
+      <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
+        <child id="8967919205527146150" name="expression" index="2BFjQA" />
+      </concept>
+      <concept id="3376775282622142916" name="com.mbeddr.core.modules.structure.AbstractDefineLike" flags="ng" index="2DRUVY">
+        <child id="3376775282622233992" name="value" index="2DQcEM" />
       </concept>
       <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
@@ -407,10 +416,13 @@
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
       <concept id="8399455261460717640" name="com.mbeddr.core.expressions.structure.AndExpression" flags="ng" index="2EHzL6" />
+      <concept id="3820836583575227340" name="com.mbeddr.core.expressions.structure.DirectPlusAssignmentExpression" flags="ng" index="TPXPH" />
       <concept id="2254577831298739059" name="com.mbeddr.core.expressions.structure.CommentedContent" flags="ng" index="2Ygvn$">
         <child id="2254577831298739061" name="content" index="2Ygvny" />
       </concept>
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
+      <concept id="4273030818770088794" name="com.mbeddr.core.expressions.structure.DirectMinusAssignmentExpression" flags="ng" index="3omEAT" />
+      <concept id="4273030818770088796" name="com.mbeddr.core.expressions.structure.DirectMultiAssignmentExpression" flags="ng" index="3omEAZ" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="743779816742251347" name="com.mbeddr.core.expressions.structure.ITypeDecorator" flags="ng" index="1Ml8iu">
         <child id="7336544617004013388" name="valueType" index="UxbcT" />
@@ -447,8 +459,59 @@
   </registry>
   <node concept="N3F5e" id="6ySuXqN_am_">
     <property role="TrG5h" value="main" />
-    <node concept="2NXPZ9" id="6ySuXqN_aBx" role="N3F5h">
-      <property role="TrG5h" value="empty_1435839935739_5" />
+    <node concept="4WHVk" id="5$_GT_wst2v" role="N3F5h">
+      <property role="TrG5h" value="CLOCK_INTERVAL_NS" />
+      <node concept="2BOcih" id="5$_GT_we7Tm" role="2DQcEM">
+        <node concept="4ZOvp" id="5$_GT_we7Tn" role="3TlMhJ">
+          <ref role="2DPCA0" to="azo0:2Z$TrjNbyL1" resolve="RADIO_OVERSAMPLING" />
+        </node>
+        <node concept="2BOcih" id="5$_GT_we7To" role="3TlMhI">
+          <node concept="2yh1Mg" id="5$_GT_wepHs" role="3TlMhJ">
+            <node concept="4ZOvp" id="5$_GT_we7Tp" role="2yh1Mn">
+              <ref role="2DPCA0" to="noqc:2Z$TrjNbrFG" resolve="RADIO_BIT_RATE" />
+            </node>
+          </node>
+          <node concept="CIdvy" id="5$_GT_we7Tq" role="3TlMhI">
+            <node concept="3TlMh9" id="5$_GT_we7Tr" role="CIrOC">
+              <property role="2hmy$m" value="1000000000" />
+            </node>
+            <node concept="CIsGf" id="5$_GT_we7Ts" role="CIwXZ">
+              <node concept="CIsvn" id="5$_GT_we7Tt" role="CIi4h">
+                <ref role="CIi3I" to="g2ww:74TmcPkHPgk" resolve="ns" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="4WHVk" id="5$_GT_wsDga" role="N3F5h">
+      <property role="TrG5h" value="CLOCK_INTERVAL_S" />
+      <node concept="CIdvy" id="5$_GT_weoE8" role="2DQcEM">
+        <node concept="2BPB98" id="5$_GT_weoE2" role="CIrOC">
+          <node concept="2BOcih" id="5$_GT_weoE3" role="1_9fRO">
+            <node concept="3TlMh9" id="5$_GT_weoE4" role="3TlMhJ">
+              <property role="2hmy$m" value="1000000000.0" />
+            </node>
+            <node concept="1S8S4T" id="5$_GT_weoE5" role="3TlMhI">
+              <node concept="4ZOvp" id="5$_GT_ws_TO" role="1S8S4V">
+                <ref role="2DPCA0" node="5$_GT_wst2v" resolve="CLOCK_INTERVAL_NS" />
+              </node>
+              <node concept="2fgwQN" id="5$_GT_weoE7" role="1S8S4N">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="CIsGf" id="5$_GT_weoE9" role="CIwXZ">
+          <node concept="CIsvn" id="5$_GT_weoEa" role="CIi4h">
+            <ref role="CIi3I" to="cmgk:6TeNRL7trCJ" resolve="s" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="5$_GT_wdWFg" role="N3F5h">
+      <property role="TrG5h" value="empty_1438159861494_7" />
     </node>
     <node concept="3V4D3u" id="2XT_MLHaQyK" role="N3F5h">
       <property role="2OOxQR" value="true" />
@@ -749,6 +812,15 @@
               </node>
             </node>
           </node>
+          <node concept="1_9egQ" id="5$_GT_wdPb1" role="3XIRFZ">
+            <node concept="3LAlOK" id="5$_GT_wdPf8" role="1_9egR">
+              <ref role="2H6Oet" to="lmqm:5$_GT_vwmQ2" resolve="intervalElapsed" />
+              <node concept="1DnYEe" id="5$_GT_wdPb0" role="1_9fRO">
+                <ref role="1DnYF2" node="5$_GT_wdrwc" resolve="pidDirection" />
+                <ref role="1DcY7d" to="lmqm:5$_GT_vvVpc" resolve="pid" />
+              </node>
+            </node>
+          </node>
           <node concept="1_9egQ" id="4khTSHqloSD" role="3XIRFZ">
             <node concept="3LAlOK" id="4khTSHqlr7_" role="1_9egR">
               <ref role="2H6Oet" to="ec8n:exHFgzK8US" resolve="run" />
@@ -816,25 +888,8 @@
                 <ref role="1DnYF2" node="74TmcPkZ8Lr" resolve="timer1" />
                 <ref role="1DcY7d" to="bs9u:5Li7KxBX3C4" resolve="clock" />
               </node>
-              <node concept="2BOcih" id="2Z$TrjNBp$N" role="2H6KYo">
-                <node concept="4ZOvp" id="2Z$TrjNBpKL" role="3TlMhJ">
-                  <ref role="2DPCA0" to="azo0:2Z$TrjNbyL1" resolve="RADIO_OVERSAMPLING" />
-                </node>
-                <node concept="2BOcih" id="2Z$TrjNbsEC" role="3TlMhI">
-                  <node concept="4ZOvp" id="2Z$TrjNbsKV" role="3TlMhJ">
-                    <ref role="2DPCA0" to="noqc:2Z$TrjNbrFG" resolve="RADIO_BIT_RATE" />
-                  </node>
-                  <node concept="CIdvy" id="2Z$TrjNbt8S" role="3TlMhI">
-                    <node concept="3TlMh9" id="2Z$TrjNbt8R" role="CIrOC">
-                      <property role="2hmy$m" value="1000000000" />
-                    </node>
-                    <node concept="CIsGf" id="2Z$TrjNbt8T" role="CIwXZ">
-                      <node concept="CIsvn" id="2Z$TrjNbt8U" role="CIi4h">
-                        <ref role="CIi3I" to="g2ww:74TmcPkHPgk" resolve="ns" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
+              <node concept="4ZOvp" id="5$_GT_ws_X$" role="2H6KYo">
+                <ref role="2DPCA0" node="5$_GT_wst2v" resolve="CLOCK_INTERVAL_NS" />
               </node>
             </node>
           </node>
@@ -1955,6 +2010,47 @@
           <node concept="2EWCuO" id="4TJtxzRb_m7" role="2EWCuK">
             <ref role="XcPQd" to="bs9u:74TmcPjVXfm" resolve="pin" />
             <ref role="2EWCuR" node="2Z$TrjNJv8S" resolve="tkd0" />
+          </node>
+        </node>
+        <node concept="JAGxh" id="5$_GT_wdqOF" role="5JtDH" />
+        <node concept="2EWCuV" id="5$_GT_wdrwc" role="5JtDH">
+          <property role="TrG5h" value="pidDirection" />
+          <ref role="2EWCuU" to="lmqm:5$_GT_vvVf2" resolve="PidController" />
+          <node concept="3R_36c" id="5$_GT_wduIW" role="3R_39I">
+            <ref role="3R_36f" to="lmqm:5$_GT_vvX8$" resolve="KP" />
+            <node concept="3TlMh9" id="5$_GT_wdDUr" role="3R_36e">
+              <property role="2hmy$m" value="2.0" />
+            </node>
+          </node>
+          <node concept="3R_36c" id="5$_GT_wduIX" role="3R_39I">
+            <ref role="3R_36f" to="lmqm:5$_GT_vvXhC" resolve="KI" />
+            <node concept="3TlMh9" id="5$_GT_wduLz" role="3R_36e">
+              <property role="2hmy$m" value="0.1" />
+            </node>
+          </node>
+          <node concept="3R_36c" id="5$_GT_wduIY" role="3R_39I">
+            <ref role="3R_36f" to="lmqm:5$_GT_vvXqI" resolve="KD" />
+            <node concept="3TlMh9" id="5$_GT_wduUN" role="3R_36e">
+              <property role="2hmy$m" value="0.0" />
+            </node>
+          </node>
+          <node concept="3R_36c" id="5$_GT_wduIZ" role="3R_39I">
+            <ref role="3R_36f" to="lmqm:5$_GT_vvVuD" resolve="timeInterval" />
+            <node concept="4ZOvp" id="5$_GT_wsHZR" role="3R_36e">
+              <ref role="2DPCA0" node="5$_GT_wsDga" resolve="CLOCK_INTERVAL_S" />
+            </node>
+          </node>
+          <node concept="3R_36c" id="5$_GT_wduJ0" role="3R_39I">
+            <ref role="3R_36f" to="lmqm:5$_GT_vw6yD" resolve="integratorLimit" />
+            <node concept="3TlMh9" id="5$_GT_wdDBV" role="3R_36e">
+              <property role="2hmy$m" value="1.0" />
+            </node>
+          </node>
+          <node concept="3R_36c" id="5$_GT_wduJ1" role="3R_39I">
+            <ref role="3R_36f" to="lmqm:5$_GT_vwavg" resolve="controlValueLimit" />
+            <node concept="3TlMh9" id="5$_GT_wdDLb" role="3R_36e">
+              <property role="2hmy$m" value="1.0" />
+            </node>
           </node>
         </node>
         <node concept="37mRI7" id="5zHWU$GwxsN" role="lGtFl">
@@ -3520,7 +3616,7 @@
         <node concept="3TlMhd" id="74TmcPkuyNA" role="EbCE5" />
       </node>
       <node concept="EbCE0" id="2Z$TrjMukIg" role="2RW2fA">
-        <property role="TrG5h" value="message" />
+        <property role="TrG5h" value="remoteControlMessage" />
         <node concept="1sgJKr" id="2Z$TrjMukIf" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
@@ -3534,7 +3630,7 @@
             </node>
           </node>
           <node concept="2xZu8t" id="2Z$TrjMu$MW" role="3o3WLE">
-            <ref role="2xZoc7" to="noqc:2Z$TrjMra2j" resolve="relativeSteering" />
+            <ref role="2xZoc7" to="noqc:2Z$TrjMra2j" resolve="relativeDirection" />
             <node concept="3TlMh9" id="2Z$TrjMu$T3" role="2xZpY0">
               <property role="2hmy$m" value="0.0f" />
             </node>
@@ -3580,6 +3676,7 @@
       <node concept="2EWDwb" id="2XT_MLH9bj$" role="2RW2fA">
         <property role="TrG5h" value="runnable0_run" />
         <node concept="3XIRFW" id="2XT_MLH9bj_" role="2EWMhI">
+          <node concept="3XISUE" id="5$_GT_wdPl1" role="3XIRFZ" />
           <node concept="1QiMYF" id="4khTSHqlDvA" role="3XIRFZ">
             <node concept="OjmMv" id="4khTSHqlDvC" role="3SJzmv">
               <node concept="19SGf9" id="4khTSHqlDvD" role="OjmMu">
@@ -3611,7 +3708,7 @@
                             <node concept="1S8S4T" id="2Z$TrjMrgpo" role="3TlMhI">
                               <node concept="YInwV" id="2Z$TrjMrggy" role="1S8S4V">
                                 <node concept="EbZIE" id="2Z$TrjMuoGm" role="1_9fRO">
-                                  <ref role="EbZID" node="2Z$TrjMukIg" resolve="message" />
+                                  <ref role="EbZID" node="2Z$TrjMukIg" resolve="remoteControlMessage" />
                                 </node>
                               </node>
                               <node concept="3wxxNl" id="2Z$TrjMrgtR" role="1S8S4N">
@@ -3642,7 +3739,7 @@
                 <node concept="3Tl9Jn" id="2Z$TrjMrfFL" role="1_amZB">
                   <node concept="Vihyy" id="2Z$TrjMrfH4" role="3TlMhJ">
                     <node concept="EbZIE" id="2Z$TrjMuo$z" role="1_9fRO">
-                      <ref role="EbZID" node="2Z$TrjMukIg" resolve="message" />
+                      <ref role="EbZID" node="2Z$TrjMukIg" resolve="remoteControlMessage" />
                     </node>
                   </node>
                   <node concept="3ZVu4v" id="2Z$TrjMrfEm" role="3TlMhI">
@@ -3656,6 +3753,206 @@
                 </node>
               </node>
               <node concept="3XISUE" id="2Z$TrjMumvp" role="3XIRFZ" />
+              <node concept="1_9egQ" id="4TJtxzS8o1h" role="3XIRFZ">
+                <node concept="3LAlOK" id="4TJtxzS8o5c" role="1_9egR">
+                  <ref role="2H6Oet" to="t6m2:74TmcPjX71s" resolve="toggle" />
+                  <node concept="1DnYEe" id="4TJtxzS8o1g" role="1_9fRO">
+                    <ref role="1DnYF2" node="74TmcPkfx8G" resolve="rxLed" />
+                    <ref role="1DcY7d" to="bs9u:74TmcPjVXfm" resolve="pin" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3Tl9Jp" id="2Z$TrjMTtIR" role="c0U16">
+              <node concept="3LAlOK" id="2Z$TrjMTtIT" role="3TlMhI">
+                <ref role="2H6Oet" to="ec8n:WklGGZprgu" resolve="storedBytes" />
+                <node concept="1DnYEe" id="2Z$TrjMTtIU" role="1_9fRO">
+                  <ref role="1DnYF2" node="5KcWL$DlR68" resolve="radioReceiveBuffer" />
+                  <ref role="1DcY7d" to="ec8n:WklGGZpsr$" resolve="fifo" />
+                </node>
+              </node>
+              <node concept="Vihyy" id="2Z$TrjMTtIV" role="3TlMhJ">
+                <node concept="EbZIE" id="2Z$TrjMTtIW" role="1_9fRO">
+                  <ref role="EbZID" node="2Z$TrjMukIg" resolve="remoteControlMessage" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3XISUE" id="4khTSHqlBK$" role="3XIRFZ" />
+          <node concept="3XISUE" id="5$_GT_wgzO4" role="3XIRFZ" />
+          <node concept="1QiMYF" id="5$_GT_wg$r5" role="3XIRFZ">
+            <node concept="OjmMv" id="5$_GT_wg$r7" role="3SJzmv">
+              <node concept="19SGf9" id="5$_GT_wg$r8" role="OjmMu">
+                <node concept="19SUe$" id="5$_GT_wg$r9" role="19SJt6">
+                  <property role="19SUeA" value="control direction with compass" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3XIRlf" id="5$_GT_weDMt" role="3XIRFZ">
+            <property role="TrG5h" value="currentDirection" />
+            <node concept="2fgwQN" id="5$_GT_wgxQq" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+            <node concept="2BOcih" id="5$_GT_wgxUG" role="3XIe9u">
+              <node concept="CIdvy" id="5$_GT_wgybH" role="3TlMhJ">
+                <node concept="3TlMh9" id="5$_GT_wgybG" role="CIrOC">
+                  <property role="2hmy$m" value="360.0" />
+                </node>
+                <node concept="CIsGf" id="5$_GT_wgybI" role="CIwXZ">
+                  <node concept="CIsvn" id="5$_GT_wgybJ" role="CIi4h">
+                    <ref role="CIi3I" to="g2ww:2XT_MLH7EzP" resolve="°" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3LAlOK" id="5$_GT_weDNO" role="3TlMhI">
+                <ref role="2H6Oet" to="sgg6:2XT_MLH7By4" resolve="readAngle" />
+                <node concept="1DnYEe" id="5$_GT_weDNP" role="1_9fRO">
+                  <ref role="1DnYF2" node="74TmcPm2gko" resolve="compass" />
+                  <ref role="1DcY7d" to="sgg6:2XT_MLH7Ly5" resolve="compass" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3XIRlf" id="74TmcPj7ZqY" role="3XIRFZ">
+            <property role="TrG5h" value="directionError" />
+            <node concept="2fgwQN" id="74TmcPj7ZqW" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+            <node concept="2BOcil" id="74TmcPj80M$" role="3XIe9u">
+              <node concept="3ZVu4v" id="5$_GT_wg$VK" role="3TlMhI">
+                <ref role="3ZVs_2" node="5$_GT_weDMt" resolve="currentDirection" />
+              </node>
+              <node concept="2qmXGp" id="6Y0wRXwRJRN" role="3TlMhJ">
+                <node concept="1E4Tgc" id="6Y0wRXwRKi_" role="1ESnxz">
+                  <ref role="1E4Tge" to="noqc:2Z$TrjMra2j" resolve="relativeDirection" />
+                </node>
+                <node concept="EbZIE" id="6Y0wRXwRIWw" role="1_9fRO">
+                  <ref role="EbZID" node="2Z$TrjMukIg" resolve="remoteControlMessage" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1QiMYF" id="74TmcPj8aGy" role="3XIRFZ">
+            <node concept="OjmMv" id="74TmcPj8aG$" role="3SJzmv">
+              <node concept="19SGf9" id="74TmcPj8aG_" role="OjmMu">
+                <node concept="19SUe$" id="74TmcPj8aGA" role="19SJt6">
+                  <property role="19SUeA" value="error must be in the range [-0.5; 0.5] to make the robot rotate in the shortest direction" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1_9egQ" id="5$_GT_wgE1h" role="3XIRFZ">
+            <node concept="3pqW6w" id="5$_GT_wgEb5" role="1_9egR">
+              <node concept="3O_q_g" id="5$_GT_wgEjq" role="3TlMhJ">
+                <ref role="3O_q_h" node="5$_GT_wgAar" resolve="wrapAround" />
+                <node concept="3ZVu4v" id="5$_GT_wgEr2" role="3O_q_j">
+                  <ref role="3ZVs_2" node="74TmcPj7ZqY" resolve="directionError" />
+                </node>
+                <node concept="3TlMh9" id="5$_GT_wgEM4" role="3O_q_j">
+                  <property role="2hmy$m" value="-0.5" />
+                </node>
+                <node concept="3TlMh9" id="5$_GT_wgF3F" role="3O_q_j">
+                  <property role="2hmy$m" value="0.5" />
+                </node>
+              </node>
+              <node concept="3ZVu4v" id="5$_GT_wgE1f" role="3TlMhI">
+                <ref role="3ZVs_2" node="74TmcPj7ZqY" resolve="directionError" />
+              </node>
+            </node>
+          </node>
+          <node concept="1_9egQ" id="5$_GT_weE7f" role="3XIRFZ">
+            <node concept="3LAlOK" id="5$_GT_weEkJ" role="1_9egR">
+              <ref role="2H6Oet" to="lmqm:5$_GT_wgtIm" resolve="setError" />
+              <node concept="1DnYEe" id="5$_GT_weE7e" role="1_9fRO">
+                <ref role="1DnYF2" node="5$_GT_wdrwc" resolve="pidDirection" />
+                <ref role="1DcY7d" to="lmqm:5$_GT_vvVpc" resolve="pid" />
+              </node>
+              <node concept="3ZVu4v" id="5$_GT_wgGlz" role="2H6KYo">
+                <ref role="3ZVs_2" node="74TmcPj7ZqY" resolve="directionError" />
+              </node>
+            </node>
+          </node>
+          <node concept="1_9egQ" id="5$_GT_wdPph" role="3XIRFZ">
+            <node concept="3LAlOK" id="5$_GT_wdPx8" role="1_9egR">
+              <ref role="2H6Oet" to="lmqm:5$_GT_vwmOI" resolve="update" />
+              <node concept="1DnYEe" id="5$_GT_wdPpg" role="1_9fRO">
+                <ref role="1DnYF2" node="5$_GT_wdrwc" resolve="pidDirection" />
+                <ref role="1DcY7d" to="lmqm:5$_GT_vvVpc" resolve="pid" />
+              </node>
+            </node>
+          </node>
+          <node concept="3XISUE" id="5$_GT_wdQO0" role="3XIRFZ" />
+          <node concept="1_9egQ" id="5$_GT_wgJMf" role="3XIRFZ">
+            <node concept="3pqW6w" id="5$_GT_wgKty" role="1_9egR">
+              <node concept="2BOcij" id="5$_GT_wgLTa" role="3TlMhJ">
+                <node concept="CIdvy" id="5$_GT_wgMFu" role="3TlMhJ">
+                  <node concept="3TlMh9" id="5$_GT_wgMFt" role="CIrOC">
+                    <property role="2hmy$m" value="60.0" />
+                  </node>
+                  <node concept="CIsGf" id="5$_GT_wgMFv" role="CIwXZ">
+                    <node concept="CIsvn" id="5$_GT_wgMFw" role="CIi4h">
+                      <ref role="CIi3I" to="g2ww:5zHWU$G$gNn" resolve="rpm" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3LAlOK" id="5$_GT_wgLm4" role="3TlMhI">
+                  <ref role="2H6Oet" to="lmqm:5$_GT_vvW2o" resolve="getControlValue" />
+                  <node concept="1DnYEe" id="5$_GT_wgKJh" role="1_9fRO">
+                    <ref role="1DnYF2" node="5$_GT_wdrwc" resolve="pidDirection" />
+                    <ref role="1DcY7d" to="lmqm:5$_GT_vvVpc" resolve="pid" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2qmXGp" id="5$_GT_wgJUO" role="3TlMhI">
+                <node concept="1E4Tgc" id="5$_GT_wgKbi" role="1ESnxz">
+                  <ref role="1E4Tge" to="lj5:5$_GT_vOLGp" resolve="rotation" />
+                </node>
+                <node concept="EbZIE" id="5$_GT_wgJMd" role="1_9fRO">
+                  <ref role="EbZID" node="5$_GT_voERo" resolve="motorBoardMessage" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3XISUE" id="5$_GT_wdQSt" role="3XIRFZ" />
+          <node concept="1QiMYF" id="4khTSHqlDFO" role="3XIRFZ">
+            <node concept="OjmMv" id="4khTSHqlDFQ" role="3SJzmv">
+              <node concept="19SGf9" id="4khTSHqlDFR" role="OjmMu">
+                <node concept="19SUe$" id="4khTSHqlDFS" role="19SJt6">
+                  <property role="19SUeA" value="send speed to motor board" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="c0U19" id="4khTSHql$KA" role="3XIRFZ">
+            <node concept="3XIRFW" id="4khTSHql$KB" role="c0U17">
+              <node concept="1QiMYF" id="5$_GT_wh6Qx" role="3XIRFZ">
+                <node concept="OjmMv" id="5$_GT_wh6Qz" role="3SJzmv">
+                  <node concept="19SGf9" id="5$_GT_wh6Q$" role="OjmMu">
+                    <node concept="19SUe$" id="5$_GT_wh6Q_" role="19SJt6">
+                      <property role="19SUeA" value="slow down, if the connection to the remote control is lost" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1_9egQ" id="5$_GT_wh3P5" role="3XIRFZ">
+                <node concept="3omEAZ" id="5$_GT_wh4NC" role="1_9egR">
+                  <node concept="2qmXGp" id="5$_GT_wh4NF" role="3TlMhI">
+                    <node concept="1E4Tgc" id="5$_GT_wh4NG" role="1ESnxz">
+                      <ref role="1E4Tge" to="noqc:2Z$TrjMra1h" resolve="relativeSpeed" />
+                    </node>
+                    <node concept="EbZIE" id="5$_GT_wh4NH" role="1_9fRO">
+                      <ref role="EbZID" node="2Z$TrjMukIg" resolve="remoteControlMessage" />
+                    </node>
+                  </node>
+                  <node concept="3TlMh9" id="5$_GT_wh56J" role="3TlMhJ">
+                    <property role="2hmy$m" value="0.95f" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3XISUE" id="5$_GT_wykjV" role="3XIRFZ" />
               <node concept="1_9egQ" id="4khTSHqlDmA" role="3XIRFZ">
                 <node concept="3pqW6w" id="4khTSHqlDmU" role="1_9egR">
                   <node concept="2qmXGp" id="5$_GT_voJkR" role="3TlMhI">
@@ -3682,7 +3979,7 @@
                         <ref role="1E4Tge" to="noqc:2Z$TrjMra1h" resolve="relativeSpeed" />
                       </node>
                       <node concept="EbZIE" id="2Z$TrjMuv7j" role="1_9fRO">
-                        <ref role="EbZID" node="2Z$TrjMukIg" resolve="message" />
+                        <ref role="EbZID" node="2Z$TrjMukIg" resolve="remoteControlMessage" />
                       </node>
                     </node>
                   </node>
@@ -3693,7 +3990,7 @@
                   <node concept="2BOcij" id="5$_GT_vQr4i" role="3TlMhJ">
                     <node concept="CIdvy" id="5$_GT_vQs61" role="3TlMhJ">
                       <node concept="3TlMh9" id="5$_GT_vQs60" role="CIrOC">
-                        <property role="2hmy$m" value="60.0" />
+                        <property role="2hmy$m" value="120.0" />
                       </node>
                       <node concept="CIsGf" id="5$_GT_vQs62" role="CIwXZ">
                         <node concept="CIsvn" id="5$_GT_vQs63" role="CIi4h">
@@ -3701,12 +3998,11 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="2qmXGp" id="5$_GT_vQqw5" role="3TlMhI">
-                      <node concept="1E4Tgc" id="5$_GT_vQqLU" role="1ESnxz">
-                        <ref role="1E4Tge" to="noqc:2Z$TrjMra2j" resolve="relativeSteering" />
-                      </node>
-                      <node concept="EbZIE" id="5$_GT_vQqeT" role="1_9fRO">
-                        <ref role="EbZID" node="2Z$TrjMukIg" resolve="message" />
+                    <node concept="3LAlOK" id="5$_GT_whbh_" role="3TlMhI">
+                      <ref role="2H6Oet" to="lmqm:5$_GT_vvW2o" resolve="getControlValue" />
+                      <node concept="1DnYEe" id="5$_GT_whaA1" role="1_9fRO">
+                        <ref role="1DnYF2" node="5$_GT_wdrwc" resolve="pidDirection" />
+                        <ref role="1DcY7d" to="lmqm:5$_GT_vvVpc" resolve="pid" />
                       </node>
                     </node>
                   </node>
@@ -3720,43 +4016,7 @@
                   </node>
                 </node>
               </node>
-              <node concept="1_9egQ" id="4TJtxzS8o1h" role="3XIRFZ">
-                <node concept="3LAlOK" id="4TJtxzS8o5c" role="1_9egR">
-                  <ref role="2H6Oet" to="t6m2:74TmcPjX71s" resolve="toggle" />
-                  <node concept="1DnYEe" id="4TJtxzS8o1g" role="1_9fRO">
-                    <ref role="1DnYF2" node="74TmcPkfx8G" resolve="rxLed" />
-                    <ref role="1DcY7d" to="bs9u:74TmcPjVXfm" resolve="pin" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3Tl9Jp" id="2Z$TrjMTtIR" role="c0U16">
-              <node concept="3LAlOK" id="2Z$TrjMTtIT" role="3TlMhI">
-                <ref role="2H6Oet" to="ec8n:WklGGZprgu" resolve="storedBytes" />
-                <node concept="1DnYEe" id="2Z$TrjMTtIU" role="1_9fRO">
-                  <ref role="1DnYF2" node="5KcWL$DlR68" resolve="radioReceiveBuffer" />
-                  <ref role="1DcY7d" to="ec8n:WklGGZpsr$" resolve="fifo" />
-                </node>
-              </node>
-              <node concept="Vihyy" id="2Z$TrjMTtIV" role="3TlMhJ">
-                <node concept="EbZIE" id="2Z$TrjMTtIW" role="1_9fRO">
-                  <ref role="EbZID" node="2Z$TrjMukIg" resolve="message" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3XISUE" id="4khTSHqlBK$" role="3XIRFZ" />
-          <node concept="1QiMYF" id="4khTSHqlDFO" role="3XIRFZ">
-            <node concept="OjmMv" id="4khTSHqlDFQ" role="3SJzmv">
-              <node concept="19SGf9" id="4khTSHqlDFR" role="OjmMu">
-                <node concept="19SUe$" id="4khTSHqlDFS" role="19SJt6">
-                  <property role="19SUeA" value="send speed to motor board" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="c0U19" id="4khTSHql$KA" role="3XIRFZ">
-            <node concept="3XIRFW" id="4khTSHql$KB" role="c0U17">
+              <node concept="3XISUE" id="5$_GT_wh32R" role="3XIRFZ" />
               <node concept="1_a8vi" id="4khTSHql$KC" role="3XIRFZ">
                 <node concept="3XIRFW" id="4khTSHql$KD" role="1_amYn">
                   <node concept="1_9egQ" id="4khTSHqlLLq" role="3XIRFZ">
@@ -4346,17 +4606,97 @@
     <node concept="2NXPZ9" id="74TmcPkGq03" role="N3F5h">
       <property role="TrG5h" value="empty_1436866063858_35" />
     </node>
-    <node concept="2NXPZ9" id="74TmcPkGHzj" role="N3F5h">
-      <property role="TrG5h" value="empty_1436866350329_45" />
+    <node concept="N3Fnx" id="5$_GT_wgAar" role="N3F5h">
+      <property role="TrG5h" value="wrapAround" />
+      <node concept="19RgSI" id="5$_GT_wgCS$" role="1UOdpc">
+        <property role="TrG5h" value="value" />
+        <node concept="2fgwQN" id="5$_GT_wgCSy" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="5$_GT_wgCTm" role="1UOdpc">
+        <property role="TrG5h" value="min" />
+        <node concept="2fgwQN" id="5$_GT_wgCTk" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="5$_GT_wgCUp" role="1UOdpc">
+        <property role="TrG5h" value="max" />
+        <node concept="2fgwQN" id="5$_GT_wgCUn" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="2fgwQN" id="5$_GT_wgCV3" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="5$_GT_wgAat" role="3XIRFX">
+        <node concept="27v$Wf" id="5$_GT_wgDk0" role="3XIRFZ">
+          <node concept="3XIRFW" id="5$_GT_wgDk1" role="27v$W9">
+            <node concept="1_9egQ" id="5$_GT_wgDlS" role="3XIRFZ">
+              <node concept="3omEAT" id="5$_GT_wgDmi" role="1_9egR">
+                <node concept="2BOcil" id="5$_GT_wgDoj" role="3TlMhJ">
+                  <node concept="3ZUYvv" id="5$_GT_wgDoL" role="3TlMhJ">
+                    <ref role="3ZUYvu" node="5$_GT_wgCTm" resolve="min" />
+                  </node>
+                  <node concept="3ZUYvv" id="5$_GT_wgDn3" role="3TlMhI">
+                    <ref role="3ZUYvu" node="5$_GT_wgCUp" resolve="max" />
+                  </node>
+                </node>
+                <node concept="3ZUYvv" id="5$_GT_wgDlR" role="3TlMhI">
+                  <ref role="3ZUYvu" node="5$_GT_wgCS$" resolve="value" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Tl9Jr" id="5$_GT_wgDkV" role="27v$We">
+            <node concept="3ZUYvv" id="5$_GT_wgDlt" role="3TlMhJ">
+              <ref role="3ZUYvu" node="5$_GT_wgCUp" resolve="max" />
+            </node>
+            <node concept="3ZUYvv" id="5$_GT_wgDkn" role="3TlMhI">
+              <ref role="3ZUYvu" node="5$_GT_wgCS$" resolve="value" />
+            </node>
+          </node>
+        </node>
+        <node concept="27v$Wf" id="5$_GT_wgDrT" role="3XIRFZ">
+          <node concept="3XIRFW" id="5$_GT_wgDrU" role="27v$W9">
+            <node concept="1_9egQ" id="5$_GT_wgDyY" role="3XIRFZ">
+              <node concept="TPXPH" id="5$_GT_wgDzo" role="1_9egR">
+                <node concept="2BOcil" id="5$_GT_wgDBa" role="3TlMhJ">
+                  <node concept="3ZUYvv" id="5$_GT_wgDDg" role="3TlMhJ">
+                    <ref role="3ZUYvu" node="5$_GT_wgCTm" resolve="min" />
+                  </node>
+                  <node concept="3ZUYvv" id="5$_GT_wgD_b" role="3TlMhI">
+                    <ref role="3ZUYvu" node="5$_GT_wgCUp" resolve="max" />
+                  </node>
+                </node>
+                <node concept="3ZUYvv" id="5$_GT_wgDyX" role="3TlMhI">
+                  <ref role="3ZUYvu" node="5$_GT_wgCS$" resolve="value" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Tl9Jn" id="5$_GT_wgDvL" role="27v$We">
+            <node concept="3ZUYvv" id="5$_GT_wgDxs" role="3TlMhJ">
+              <ref role="3ZUYvu" node="5$_GT_wgCTm" resolve="min" />
+            </node>
+            <node concept="3ZUYvv" id="5$_GT_wgDtZ" role="3TlMhI">
+              <ref role="3ZUYvu" node="5$_GT_wgCS$" resolve="value" />
+            </node>
+          </node>
+        </node>
+        <node concept="2BFjQ_" id="5$_GT_wgDIi" role="3XIRFZ">
+          <node concept="3ZUYvv" id="5$_GT_wgDLu" role="2BFjQA">
+            <ref role="3ZUYvu" node="5$_GT_wgCS$" resolve="value" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2NXPZ9" id="74TmcPkGAiy" role="N3F5h">
       <property role="TrG5h" value="empty_1436866194014_42" />
-    </node>
-    <node concept="2NXPZ9" id="74TmcPkGkGA" role="N3F5h">
-      <property role="TrG5h" value="empty_1436866018027_33" />
-    </node>
-    <node concept="2NXPZ9" id="2uTv4B9qUKe" role="N3F5h">
-      <property role="TrG5h" value="empty_1436454748986_3" />
     </node>
     <node concept="2NXPZ9" id="5zHWU$GzSSC" role="N3F5h">
       <property role="TrG5h" value="empty_1436266426479_48" />
@@ -4448,6 +4788,10 @@
     <node concept="3GEVxB" id="5$_GT_voDvf" role="2OODSX">
       <ref role="3GEb4d" to="lj5:2JGF63bDca1" resolve="MotorBoardMessages" />
     </node>
+    <node concept="3GEVxB" id="5$_GT_wdteR" role="2OODSX">
+      <property role="3GEa6x" value="true" />
+      <ref role="3GEb4d" to="lmqm:5$_GT_vvVeM" resolve="PIDController" />
+    </node>
   </node>
   <node concept="2v9HqL" id="6ySuXqN_op5">
     <node concept="2eOfOl" id="1XyQ$8Lv5Za" role="2ePNbc">
@@ -4521,6 +4865,9 @@
       </node>
       <node concept="2v9HqM" id="5$_GT_voRfK" role="2eOfOg">
         <ref role="2v9HqP" to="lj5:2JGF63bDca1" resolve="MotorBoardMessages" />
+      </node>
+      <node concept="2v9HqM" id="5$_GT_whefR" role="2eOfOg">
+        <ref role="2v9HqP" to="lmqm:5$_GT_vvVeM" resolve="PIDController" />
       </node>
     </node>
     <node concept="24Uyqy" id="1XyQ$8LAv0W" role="2AWWZH">
