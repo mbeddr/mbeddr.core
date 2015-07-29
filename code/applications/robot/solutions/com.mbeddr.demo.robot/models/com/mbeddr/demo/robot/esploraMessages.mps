@@ -118,7 +118,7 @@
         </node>
       </node>
       <node concept="1dpRTG" id="2Z$TrjMra2j" role="HszBJ">
-        <property role="TrG5h" value="relativeSteering" />
+        <property role="TrG5h" value="relativeDirection" />
         <node concept="3AreGT" id="2Z$TrjMra2h" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
@@ -127,7 +127,7 @@
           <node concept="OjmMv" id="2Z$TrjMra2X" role="1w35rA">
             <node concept="19SGf9" id="2Z$TrjMra2Y" role="OjmMu">
               <node concept="19SUe$" id="2Z$TrjMra2Z" role="19SJt6">
-                <property role="19SUeA" value="&gt; 0 left, &lt; 0" />
+                <property role="19SUeA" value="0 = north, increasing number means rotate clockwise" />
               </node>
             </node>
           </node>
