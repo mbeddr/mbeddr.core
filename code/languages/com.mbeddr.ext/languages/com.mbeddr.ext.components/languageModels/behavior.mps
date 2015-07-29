@@ -39,7 +39,7 @@
     <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
     <import index="y5px" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator(MPS.Core/jetbrains.mps.generator@java_stub)" />
     <import index="epq1" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.math(JDK/java.math@java_stub)" />
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -10578,6 +10578,55 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="4rAJNZmWIkG" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="isCommentable" />
+      <ref role="13i0hy" to="hwgx:3RtPbXKOu_B" resolve="isCommentable" />
+      <node concept="3Tm1VV" id="4rAJNZmWIkH" role="1B3o_S" />
+      <node concept="3clFbS" id="4rAJNZmWIkW" role="3clF47">
+        <node concept="3clFbJ" id="AakJElVq1$" role="3cqZAp">
+          <node concept="3clFbS" id="AakJElVq1A" role="3clFbx">
+            <node concept="3cpWs6" id="AakJElVHcK" role="3cqZAp">
+              <node concept="3clFbC" id="AakJElRb8j" role="3cqZAk">
+                <node concept="37vLTw" id="AakJElRb8k" role="3uHU7B">
+                  <ref role="3cqZAo" node="4rAJNZmWIkX" resolve="trigger" />
+                </node>
+                <node concept="13iPFW" id="AakJElRb8m" role="3uHU7w" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="AakJElVqe0" role="3clFbw">
+            <node concept="13iPFW" id="AakJElVq5i" role="2Oq$k0" />
+            <node concept="3TrcHB" id="AakJElVu1f" role="2OqNvi">
+              <ref role="3TsBF5" to="v7ag:F_QT7XsuBc" resolve="initField" />
+            </node>
+          </node>
+          <node concept="9aQIb" id="AakJElVszW" role="9aQIa">
+            <node concept="3clFbS" id="AakJElVszX" role="9aQI4">
+              <node concept="3cpWs6" id="AakJElVHgj" role="3cqZAp">
+                <node concept="3clFbC" id="AakJElR8Tp" role="3cqZAk">
+                  <node concept="37vLTw" id="AakJElR8St" role="3uHU7B">
+                    <ref role="3cqZAo" node="4rAJNZmWIkX" resolve="trigger" />
+                  </node>
+                  <node concept="2OqwBi" id="AakJElR91j" role="3uHU7w">
+                    <node concept="13iPFW" id="AakJElR8TH" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="AakJElRam2" role="2OqNvi">
+                      <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4rAJNZmWIkX" role="3clF46">
+        <property role="TrG5h" value="trigger" />
+        <node concept="3Tqbb2" id="4rAJNZmWIkY" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="4rAJNZmWIkZ" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="28AiFOmUZpt">
