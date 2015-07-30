@@ -260,7 +260,6 @@
       <concept id="6847490852669234129" name="com.mbeddr.core.embedded.structure.RegisterConfigurationItem" flags="ng" index="3V4jtR">
         <child id="6847490852670616471" name="kind" index="3Vb1WL" />
       </concept>
-      <concept id="6847490852669209720" name="com.mbeddr.core.embedded.structure.Register8" flags="ng" index="3V4D3u" />
     </language>
     <language id="13a36f90-83c5-4bf6-9dd6-70e455f1ef36" name="com.mbeddr.ext.components.statemachine">
       <concept id="1656687801206464316" name="com.mbeddr.ext.components.statemachine.structure.StatemachineInCompsConfigItem" flags="ng" index="0nYfV" />
@@ -513,54 +512,6 @@
     <node concept="2NXPZ9" id="5$_GT_wdWFg" role="N3F5h">
       <property role="TrG5h" value="empty_1438159861494_7" />
     </node>
-    <node concept="3V4D3u" id="2XT_MLHaQyK" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="PORTD" />
-    </node>
-    <node concept="3V4D3u" id="2XT_MLHaQGD" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="PIND" />
-    </node>
-    <node concept="3V4D3u" id="2XT_MLHaQQz" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="DDRD" />
-    </node>
-    <node concept="3V4D3u" id="74TmcPjXf76" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="PORTC" />
-    </node>
-    <node concept="3V4D3u" id="74TmcPjXf75" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="PINC" />
-    </node>
-    <node concept="3V4D3u" id="74TmcPjXf74" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="DDRC" />
-    </node>
-    <node concept="3V4D3u" id="74TmcPjXzFB" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="PORTB" />
-    </node>
-    <node concept="3V4D3u" id="74TmcPjXzFA" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="PINB" />
-    </node>
-    <node concept="3V4D3u" id="74TmcPjXzF_" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="DDRB" />
-    </node>
-    <node concept="3V4D3u" id="74TmcPkYZcX" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="PORTF" />
-    </node>
-    <node concept="3V4D3u" id="74TmcPkYZcW" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="PINF" />
-    </node>
-    <node concept="3V4D3u" id="74TmcPkYZcV" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="DDRF" />
-    </node>
     <node concept="2NXPZ9" id="2XT_MLHaQp4" role="N3F5h">
       <property role="TrG5h" value="empty_1436532905006_39" />
     </node>
@@ -642,13 +593,13 @@
       </node>
       <node concept="3_ZhDN" id="WklGGYEqr0" role="5JtDH">
         <ref role="3_ZhDP" node="exHFgzLHpf" resolve="mainComp" />
-        <ref role="3_ZhDO" to="azo0:oDdAT4olMA" resolve="USART1_RX_vect" />
         <ref role="3_ZhDQ" node="WklGGYEp2p" resolve="isrUartRx" />
+        <ref role="3_ZhDO" to="bs9u:oDdAT4olMA" resolve="USART1_RX_vect" />
       </node>
       <node concept="3_ZhDN" id="WklGGYEqDG" role="5JtDH">
         <ref role="3_ZhDP" node="exHFgzLHpf" resolve="mainComp" />
-        <ref role="3_ZhDO" to="azo0:71$yxaETjq" resolve="USART1_UDRE_vect" />
         <ref role="3_ZhDQ" node="WklGGYEqPi" resolve="isrUartUdre" />
+        <ref role="3_ZhDO" to="bs9u:71$yxaETjq" resolve="USART1_UDRE_vect" />
       </node>
       <node concept="3_ZhDN" id="4khTSHqt3x1" role="5JtDH">
         <ref role="3_ZhDP" node="exHFgzLHpf" resolve="mainComp" />
@@ -909,7 +860,7 @@
             <ref role="3R_36f" to="bs9u:74TmcPjVXgn" resolve="outputRegister" />
             <node concept="YInwV" id="2XT_MLHaR7j" role="3R_36e">
               <node concept="3V49S3" id="2XT_MLHaR0v" role="1_9fRO">
-                <ref role="3V49S0" node="2XT_MLHaQyK" resolve="PORTD" />
+                <ref role="3V49S0" to="bs9u:2XT_MLHaQyK" resolve="PORTD" />
               </node>
             </node>
           </node>
@@ -917,7 +868,7 @@
             <ref role="3R_36f" to="bs9u:74TmcPjVXgq" resolve="inputRegister" />
             <node concept="YInwV" id="2XT_MLHaR6t" role="3R_36e">
               <node concept="3V49S3" id="2XT_MLHaR2c" role="1_9fRO">
-                <ref role="3V49S0" node="2XT_MLHaQGD" resolve="PIND" />
+                <ref role="3V49S0" to="bs9u:2XT_MLHaQGD" resolve="PIND" />
               </node>
             </node>
           </node>
@@ -925,7 +876,7 @@
             <ref role="3R_36f" to="bs9u:74TmcPjVXgt" resolve="configRegister" />
             <node concept="YInwV" id="2XT_MLHaR5B" role="3R_36e">
               <node concept="3V49S3" id="2XT_MLHaR3P" role="1_9fRO">
-                <ref role="3V49S0" node="2XT_MLHaQQz" resolve="DDRD" />
+                <ref role="3V49S0" to="bs9u:2XT_MLHaQQz" resolve="DDRD" />
               </node>
             </node>
           </node>
@@ -948,7 +899,7 @@
             <ref role="3R_36f" to="bs9u:74TmcPjVXgn" resolve="outputRegister" />
             <node concept="YInwV" id="74TmcPjXeYN" role="3R_36e">
               <node concept="3V49S3" id="74TmcPjXfTy" role="1_9fRO">
-                <ref role="3V49S0" node="74TmcPjXf76" resolve="PORTC" />
+                <ref role="3V49S0" to="bs9u:74TmcPjXf76" resolve="PORTC" />
               </node>
             </node>
           </node>
@@ -956,7 +907,7 @@
             <ref role="3R_36f" to="bs9u:74TmcPjVXgq" resolve="inputRegister" />
             <node concept="YInwV" id="74TmcPjXgfA" role="3R_36e">
               <node concept="3V49S3" id="74TmcPjXg0g" role="1_9fRO">
-                <ref role="3V49S0" node="74TmcPjXf75" resolve="PINC" />
+                <ref role="3V49S0" to="bs9u:74TmcPjXf75" resolve="PINC" />
               </node>
             </node>
           </node>
@@ -964,7 +915,7 @@
             <ref role="3R_36f" to="bs9u:74TmcPjVXgt" resolve="configRegister" />
             <node concept="YInwV" id="74TmcPjXg65" role="3R_36e">
               <node concept="3V49S3" id="74TmcPjXg9m" role="1_9fRO">
-                <ref role="3V49S0" node="74TmcPjXf74" resolve="DDRC" />
+                <ref role="3V49S0" to="bs9u:74TmcPjXf74" resolve="DDRC" />
               </node>
             </node>
           </node>
@@ -987,7 +938,7 @@
             <ref role="3R_36f" to="bs9u:74TmcPjVXgn" resolve="outputRegister" />
             <node concept="YInwV" id="74TmcPjXwXz" role="3R_36e">
               <node concept="3V49S3" id="74TmcPjX$xi" role="1_9fRO">
-                <ref role="3V49S0" node="74TmcPjXzFB" resolve="PORTB" />
+                <ref role="3V49S0" to="bs9u:74TmcPjXzFB" resolve="PORTB" />
               </node>
             </node>
           </node>
@@ -995,7 +946,7 @@
             <ref role="3R_36f" to="bs9u:74TmcPjVXgq" resolve="inputRegister" />
             <node concept="YInwV" id="74TmcPjXwXA" role="3R_36e">
               <node concept="3V49S3" id="74TmcPjX$B1" role="1_9fRO">
-                <ref role="3V49S0" node="74TmcPjXzFA" resolve="PINB" />
+                <ref role="3V49S0" to="bs9u:74TmcPjXzFA" resolve="PINB" />
               </node>
             </node>
           </node>
@@ -1003,7 +954,7 @@
             <ref role="3R_36f" to="bs9u:74TmcPjVXgt" resolve="configRegister" />
             <node concept="YInwV" id="74TmcPjXwXD" role="3R_36e">
               <node concept="3V49S3" id="74TmcPjX$FI" role="1_9fRO">
-                <ref role="3V49S0" node="74TmcPjXzF_" resolve="DDRB" />
+                <ref role="3V49S0" to="bs9u:74TmcPjXzF_" resolve="DDRB" />
               </node>
             </node>
           </node>
@@ -1026,7 +977,7 @@
             <ref role="3R_36f" to="bs9u:74TmcPjVXgn" resolve="outputRegister" />
             <node concept="YInwV" id="74TmcPkYYWZ" role="3R_36e">
               <node concept="3V49S3" id="74TmcPkZ1ux" role="1_9fRO">
-                <ref role="3V49S0" node="74TmcPkYZcX" resolve="PORTF" />
+                <ref role="3V49S0" to="bs9u:74TmcPkYZcX" resolve="PORTF" />
               </node>
             </node>
           </node>
@@ -1034,7 +985,7 @@
             <ref role="3R_36f" to="bs9u:74TmcPjVXgq" resolve="inputRegister" />
             <node concept="YInwV" id="74TmcPkYYX2" role="3R_36e">
               <node concept="3V49S3" id="74TmcPkZ1r1" role="1_9fRO">
-                <ref role="3V49S0" node="74TmcPkYZcW" resolve="PINF" />
+                <ref role="3V49S0" to="bs9u:74TmcPkYZcW" resolve="PINF" />
               </node>
             </node>
           </node>
@@ -1042,7 +993,7 @@
             <ref role="3R_36f" to="bs9u:74TmcPjVXgt" resolve="configRegister" />
             <node concept="YInwV" id="74TmcPkYYX5" role="3R_36e">
               <node concept="3V49S3" id="74TmcPkZ1n1" role="1_9fRO">
-                <ref role="3V49S0" node="74TmcPkYZcV" resolve="DDRF" />
+                <ref role="3V49S0" to="bs9u:74TmcPkYZcV" resolve="DDRF" />
               </node>
             </node>
           </node>
@@ -4792,6 +4743,9 @@
       <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" to="lmqm:5$_GT_vvVeM" resolve="PIDController" />
     </node>
+    <node concept="3GEVxB" id="555ATsvQvQp" role="2OODSX">
+      <ref role="3GEb4d" to="bs9u:555ATsvQp8E" resolve="avr_registers" />
+    </node>
   </node>
   <node concept="2v9HqL" id="6ySuXqN_op5">
     <node concept="2eOfOl" id="1XyQ$8Lv5Za" role="2ePNbc">
@@ -4868,6 +4822,9 @@
       </node>
       <node concept="2v9HqM" id="5$_GT_whefR" role="2eOfOg">
         <ref role="2v9HqP" to="lmqm:5$_GT_vvVeM" resolve="PIDController" />
+      </node>
+      <node concept="2v9HqM" id="555ATsvQKbB" role="2eOfOg">
+        <ref role="2v9HqP" to="bs9u:555ATsvQp8E" resolve="avr_registers" />
       </node>
     </node>
     <node concept="24Uyqy" id="1XyQ$8LAv0W" role="2AWWZH">
