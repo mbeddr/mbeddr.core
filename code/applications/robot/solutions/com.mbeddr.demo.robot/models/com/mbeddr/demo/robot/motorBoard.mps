@@ -483,6 +483,9 @@
       <node concept="2v9HqM" id="5$_GT_vn1EA" role="2eOfOg">
         <ref role="2v9HqP" to="lj5:2JGF63bDca1" resolve="MotorBoardMessages" />
       </node>
+      <node concept="2v9HqM" id="555ATswaQdW" role="2eOfOg">
+        <ref role="2v9HqP" to="bs9u:555ATsvQp8E" resolve="avr_registers" />
+      </node>
     </node>
     <node concept="24Uyqy" id="1XyQ$8LAv0W" role="2AWWZH">
       <property role="24TwF0" value="-std=c99" />
