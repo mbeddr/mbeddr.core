@@ -97,7 +97,7 @@
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
     </language>
     <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
-      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" index="27S6Sx" />
+      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -799,6 +799,18 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="5zPqP2r2kNK" role="3EZMnx">
+        <node concept="VPM3Z" id="5zPqP2r2kNM" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="l2Vlx" id="5zPqP2r2kNN" role="2iSdaV" />
+        <node concept="3F0ifn" id="5zPqP2r2kNO" role="3EZMnx">
+          <property role="3F0ifm" value="provide traces to reachable code:" />
+        </node>
+        <node concept="27S6Sx" id="7yIFn3Agk3G" role="3EZMnx">
+          <ref role="1NtTu8" to="hj5x:5zPqP2r2gS_" resolve="provideTracesToReachableCode" />
         </node>
       </node>
       <node concept="3EZMnI" id="3AX70SQiMaO" role="3EZMnx">
