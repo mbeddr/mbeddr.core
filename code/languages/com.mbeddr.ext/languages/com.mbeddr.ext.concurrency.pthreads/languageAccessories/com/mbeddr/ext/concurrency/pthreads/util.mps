@@ -81,9 +81,6 @@
       <concept id="6116558314501347863" name="com.mbeddr.core.udt.structure.TypeDefType" flags="ng" index="rcJHQ">
         <reference id="6116558314501347864" name="typeDef" index="rcJHT" />
       </concept>
-      <concept id="841971064023564" name="com.mbeddr.core.udt.structure.OpaqueType" flags="ng" index="2Eb5v8">
-        <reference id="841971064023567" name="decl" index="2Eb5vb" />
-      </concept>
       <concept id="7099329415459817973" name="com.mbeddr.core.udt.structure.SUDeclaration" flags="ng" index="HsMI8">
         <child id="7099329415459888018" name="members" index="HszBJ" />
       </concept>
@@ -364,15 +361,15 @@
         <node concept="rcJHQ" id="pE4rJ9NZdD" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" to="b609:137zkozyk6a" resolve="pthread_cond_t" />
+          <ref role="rcJHT" to="b609:5ZBezCNdZMi" resolve="pthread_cond_t" />
         </node>
       </node>
       <node concept="1dpRTG" id="pE4rJ9NZHG" role="HszBJ">
         <property role="TrG5h" value="lock" />
-        <node concept="2Eb5v8" id="pE4rJ9NZHE" role="2C2TGm">
+        <node concept="rcJHQ" id="5ZBezCNgr1j" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="2Eb5vb" to="b609:om3tjzzS_c" resolve="pthread_mutex_t" />
+          <ref role="rcJHT" to="b609:5ZBezCNdZKY" resolve="pthread_mutex_t" />
         </node>
       </node>
       <node concept="1dpRTG" id="pNTuhIfnDX" role="HszBJ">
@@ -391,18 +388,18 @@
       <property role="2OOxQR" value="true" />
       <node concept="1dpRTG" id="pE4rJ9O0rm" role="HszBJ">
         <property role="TrG5h" value="readLock" />
-        <node concept="2Eb5v8" id="pE4rJ9O0rk" role="2C2TGm">
+        <node concept="rcJHQ" id="5ZBezCNgsrd" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="2Eb5vb" to="b609:om3tjzzS_c" resolve="pthread_mutex_t" />
+          <ref role="rcJHT" to="b609:5ZBezCNdZKY" resolve="pthread_mutex_t" />
         </node>
       </node>
       <node concept="1dpRTG" id="pE4rJ9O0zr" role="HszBJ">
         <property role="TrG5h" value="writeLock" />
-        <node concept="2Eb5v8" id="pE4rJ9O0zs" role="2C2TGm">
+        <node concept="rcJHQ" id="5ZBezCNgtI3" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="2Eb5vb" to="b609:om3tjzzS_c" resolve="pthread_mutex_t" />
+          <ref role="rcJHT" to="b609:5ZBezCNdZKY" resolve="pthread_mutex_t" />
         </node>
       </node>
     </node>
@@ -431,7 +428,7 @@
       <node concept="3XIRFW" id="6bs538mBWYh" role="3XIRFX">
         <node concept="1_9egQ" id="pE4rJ9O25Q" role="3XIRFZ">
           <node concept="3O_q_g" id="pE4rJ9O25O" role="1_9egR">
-            <ref role="3O_q_h" to="b609:137zkozyjUS" resolve="pthread_cond_init" />
+            <ref role="3O_q_h" to="b609:5ZBezCNdW9q" resolve="pthread_cond_init" />
             <node concept="YInwV" id="pE4rJ9O26O" role="3O_q_j">
               <node concept="2BPB98" id="pE4rJ9O26P" role="1_9fRO">
                 <node concept="2qmXGp" id="pE4rJ9O26Q" role="1_9fRO">
@@ -449,7 +446,7 @@
         </node>
         <node concept="1_9egQ" id="pE4rJ9O2sX" role="3XIRFZ">
           <node concept="3O_q_g" id="pE4rJ9O2sV" role="1_9egR">
-            <ref role="3O_q_h" to="b609:137zkozyjYe" resolve="pthread_mutex_init" />
+            <ref role="3O_q_h" to="b609:5ZBezCNdWcj" resolve="pthread_mutex_init" />
             <node concept="YInwV" id="pE4rJ9O2uS" role="3O_q_j">
               <node concept="2BPB98" id="pE4rJ9O2uT" role="1_9fRO">
                 <node concept="2qmXGp" id="pE4rJ9O2uU" role="1_9fRO">
@@ -492,7 +489,7 @@
       <node concept="3XIRFW" id="6bs538mBZ1L" role="3XIRFX">
         <node concept="1_9egQ" id="pE4rJ9O3r$" role="3XIRFZ">
           <node concept="3O_q_g" id="pE4rJ9O3r_" role="1_9egR">
-            <ref role="3O_q_h" to="b609:137zkozyjYe" resolve="pthread_mutex_init" />
+            <ref role="3O_q_h" to="b609:5ZBezCNdWcj" resolve="pthread_mutex_init" />
             <node concept="YInwV" id="pE4rJ9O3rA" role="3O_q_j">
               <node concept="2BPB98" id="pE4rJ9O3rB" role="1_9fRO">
                 <node concept="2qmXGp" id="pE4rJ9O3rC" role="1_9fRO">
@@ -510,7 +507,7 @@
         </node>
         <node concept="1_9egQ" id="pE4rJ9O4t$" role="3XIRFZ">
           <node concept="3O_q_g" id="pE4rJ9O4t_" role="1_9egR">
-            <ref role="3O_q_h" to="b609:137zkozyjYe" resolve="pthread_mutex_init" />
+            <ref role="3O_q_h" to="b609:5ZBezCNdWcj" resolve="pthread_mutex_init" />
             <node concept="YInwV" id="pE4rJ9O4tA" role="3O_q_j">
               <node concept="2BPB98" id="pE4rJ9O4tB" role="1_9fRO">
                 <node concept="2qmXGp" id="pE4rJ9O4tC" role="1_9fRO">
@@ -542,7 +539,7 @@
       <node concept="3XIRFW" id="6ndohCV583k" role="3XIRFX">
         <node concept="1_9egQ" id="pE4rJ9O5jt" role="3XIRFZ">
           <node concept="3O_q_g" id="pE4rJ9O5ju" role="1_9egR">
-            <ref role="3O_q_h" to="b609:137zkozyjYo" resolve="pthread_mutex_lock" />
+            <ref role="3O_q_h" to="b609:5ZBezCNdWct" resolve="pthread_mutex_lock" />
             <node concept="YInwV" id="pE4rJ9O5jv" role="3O_q_j">
               <node concept="2BPB98" id="pE4rJ9O5jw" role="1_9fRO">
                 <node concept="2qmXGp" id="pE4rJ9O5jx" role="1_9fRO">
@@ -561,7 +558,7 @@
           <node concept="3XIRFW" id="5nnyn2N1gSs" role="27v$W9">
             <node concept="1_9egQ" id="pE4rJ9O9qg" role="3XIRFZ">
               <node concept="3O_q_g" id="pE4rJ9O9qe" role="1_9egR">
-                <ref role="3O_q_h" to="b609:137zkozyjVn" resolve="pthread_cond_wait" />
+                <ref role="3O_q_h" to="b609:5ZBezCNdW9T" resolve="pthread_cond_wait" />
                 <node concept="YInwV" id="pE4rJ9O9re" role="3O_q_j">
                   <node concept="2qmXGp" id="pE4rJ9O9rf" role="1_9fRO">
                     <node concept="1E4Tgc" id="pE4rJ9O9rg" role="1ESnxz">
@@ -611,7 +608,7 @@
         </node>
         <node concept="1_9egQ" id="pE4rJ9O9VT" role="3XIRFZ">
           <node concept="3O_q_g" id="pE4rJ9O9VR" role="1_9egR">
-            <ref role="3O_q_h" to="b609:137zkozyjYM" resolve="pthread_mutex_unlock" />
+            <ref role="3O_q_h" to="b609:5ZBezCNdWcR" resolve="pthread_mutex_unlock" />
             <node concept="YInwV" id="pE4rJ9O9XT" role="3O_q_j">
               <node concept="2qmXGp" id="pE4rJ9Oac1" role="1_9fRO">
                 <node concept="1E4Tgc" id="pE4rJ9Oa_T" role="1ESnxz">
@@ -733,7 +730,7 @@
         <node concept="3XISUE" id="7hczD5gbCuG" role="3XIRFZ" />
         <node concept="1_9egQ" id="pE4rJ9PEuX" role="3XIRFZ">
           <node concept="3O_q_g" id="pE4rJ9PEuV" role="1_9egR">
-            <ref role="3O_q_h" to="b609:137zkozyjYo" resolve="pthread_mutex_lock" />
+            <ref role="3O_q_h" to="b609:5ZBezCNdWct" resolve="pthread_mutex_lock" />
             <node concept="YInwV" id="pE4rJ9PET$" role="3O_q_j">
               <node concept="2qmXGp" id="pE4rJ9PFjx" role="1_9fRO">
                 <node concept="1E4Tgc" id="pE4rJ9PG28" role="1ESnxz">
@@ -753,7 +750,7 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="3O_q_g" id="pE4rJ9PJD8" role="3XIe9u">
-            <ref role="3O_q_h" to="b609:137zkozyjV9" resolve="pthread_cond_timedwait" />
+            <ref role="3O_q_h" to="b609:5ZBezCNdW9F" resolve="pthread_cond_timedwait" />
             <node concept="YInwV" id="pE4rJ9PKk0" role="3O_q_j">
               <node concept="2qmXGp" id="pE4rJ9PKk1" role="1_9fRO">
                 <node concept="1E4Tgc" id="pE4rJ9PKk2" role="1ESnxz">
@@ -796,7 +793,7 @@
         </node>
         <node concept="1_9egQ" id="pE4rJ9PNq4" role="3XIRFZ">
           <node concept="3O_q_g" id="pE4rJ9PNq2" role="1_9egR">
-            <ref role="3O_q_h" to="b609:137zkozyjYM" resolve="pthread_mutex_unlock" />
+            <ref role="3O_q_h" to="b609:5ZBezCNdWcR" resolve="pthread_mutex_unlock" />
             <node concept="YInwV" id="pE4rJ9PO3h" role="3O_q_j">
               <node concept="2qmXGp" id="pE4rJ9PO3i" role="1_9fRO">
                 <node concept="1E4Tgc" id="pE4rJ9PO3j" role="1ESnxz">
@@ -850,7 +847,7 @@
       <node concept="3XIRFW" id="6ndohCV5cw1" role="3XIRFX">
         <node concept="1_9egQ" id="pE4rJ9PVCB" role="3XIRFZ">
           <node concept="3O_q_g" id="pE4rJ9PVCC" role="1_9egR">
-            <ref role="3O_q_h" to="b609:137zkozyjYo" resolve="pthread_mutex_lock" />
+            <ref role="3O_q_h" to="b609:5ZBezCNdWct" resolve="pthread_mutex_lock" />
             <node concept="YInwV" id="pE4rJ9PVCD" role="3O_q_j">
               <node concept="2qmXGp" id="pE4rJ9PVCE" role="1_9fRO">
                 <node concept="1E4Tgc" id="pE4rJ9PVCF" role="1ESnxz">
@@ -878,7 +875,7 @@
         </node>
         <node concept="1_9egQ" id="pE4rJ9PWmm" role="3XIRFZ">
           <node concept="3O_q_g" id="pE4rJ9PWmk" role="1_9egR">
-            <ref role="3O_q_h" to="b609:137zkozyjV2" resolve="pthread_cond_signal" />
+            <ref role="3O_q_h" to="b609:5ZBezCNdW9$" resolve="pthread_cond_signal" />
             <node concept="YInwV" id="pE4rJ9PWnU" role="3O_q_j">
               <node concept="2qmXGp" id="pE4rJ9PWnV" role="1_9fRO">
                 <node concept="1E4Tgc" id="pE4rJ9Tw3u" role="1ESnxz">
@@ -893,7 +890,7 @@
         </node>
         <node concept="1_9egQ" id="pE4rJ9PXLd" role="3XIRFZ">
           <node concept="3O_q_g" id="pE4rJ9PXLb" role="1_9egR">
-            <ref role="3O_q_h" to="b609:137zkozyjYM" resolve="pthread_mutex_unlock" />
+            <ref role="3O_q_h" to="b609:5ZBezCNdWcR" resolve="pthread_mutex_unlock" />
             <node concept="YInwV" id="pE4rJ9PXPm" role="3O_q_j">
               <node concept="2qmXGp" id="pE4rJ9PXPn" role="1_9fRO">
                 <node concept="1E4Tgc" id="pE4rJ9PXPo" role="1ESnxz">
@@ -953,7 +950,7 @@
       <node concept="3XIRFW" id="6ndohCVac2D" role="3XIRFX">
         <node concept="1_9egQ" id="pE4rJ9Q5qV" role="3XIRFZ">
           <node concept="3O_q_g" id="pE4rJ9Q5qT" role="1_9egR">
-            <ref role="3O_q_h" to="b609:137zkozyjYo" resolve="pthread_mutex_lock" />
+            <ref role="3O_q_h" to="b609:5ZBezCNdWct" resolve="pthread_mutex_lock" />
             <node concept="YInwV" id="pE4rJ9Q5rO" role="3O_q_j">
               <node concept="2qmXGp" id="pE4rJ9Q5um" role="1_9fRO">
                 <node concept="1E4Tgc" id="pE4rJ9Q69G" role="1ESnxz">
@@ -970,7 +967,7 @@
           <node concept="3XIRFW" id="6ndohCVfZlT" role="c0U17">
             <node concept="1_9egQ" id="pE4rJ9Q7xd" role="3XIRFZ">
               <node concept="3O_q_g" id="pE4rJ9Q7xe" role="1_9egR">
-                <ref role="3O_q_h" to="b609:137zkozyjYo" resolve="pthread_mutex_lock" />
+                <ref role="3O_q_h" to="b609:5ZBezCNdWct" resolve="pthread_mutex_lock" />
                 <node concept="YInwV" id="pE4rJ9Q7xf" role="3O_q_j">
                   <node concept="2qmXGp" id="pE4rJ9Q7xg" role="1_9fRO">
                     <node concept="1E4Tgc" id="pE4rJ9Q8ft" role="1ESnxz">
@@ -1025,7 +1022,7 @@
           <node concept="3XIRFW" id="6ndohCVfZ_7" role="c0U17">
             <node concept="1_9egQ" id="pE4rJ9PZjD" role="3XIRFZ">
               <node concept="3O_q_g" id="pE4rJ9PZjB" role="1_9egR">
-                <ref role="3O_q_h" to="b609:137zkozyjYM" resolve="pthread_mutex_unlock" />
+                <ref role="3O_q_h" to="b609:5ZBezCNdWcR" resolve="pthread_mutex_unlock" />
                 <node concept="YInwV" id="pE4rJ9PZk7" role="3O_q_j">
                   <node concept="2qmXGp" id="pE4rJ9PZmD" role="1_9fRO">
                     <node concept="1E4Tgc" id="pE4rJ9Q01v" role="1ESnxz">
@@ -1045,7 +1042,7 @@
         </node>
         <node concept="1_9egQ" id="pE4rJ9Q20Q" role="3XIRFZ">
           <node concept="3O_q_g" id="pE4rJ9Q20R" role="1_9egR">
-            <ref role="3O_q_h" to="b609:137zkozyjYM" resolve="pthread_mutex_unlock" />
+            <ref role="3O_q_h" to="b609:5ZBezCNdWcR" resolve="pthread_mutex_unlock" />
             <node concept="YInwV" id="pE4rJ9Q20S" role="3O_q_j">
               <node concept="2qmXGp" id="pE4rJ9Q20T" role="1_9fRO">
                 <node concept="1E4Tgc" id="pE4rJ9Q2JL" role="1ESnxz">
@@ -1428,7 +1425,11 @@
     </node>
     <node concept="3GEVxB" id="pE4rJ9NYCw" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" to="b609:137zkozyjOG" resolve="pthread" />
+      <ref role="3GEb4d" to="b609:5ZBezCNdW2S" resolve="pthread" />
+    </node>
+    <node concept="3GEVxB" id="5ZBezCNgm3t" role="2OODSX">
+      <property role="3GEa6x" value="true" />
+      <ref role="3GEb4d" to="b609:5ZBezCNdZIN" resolve="pthreadtypes" />
     </node>
     <node concept="3GEVxB" id="pE4rJ9OcEP" role="2OODSX">
       <property role="3GEa6x" value="true" />
