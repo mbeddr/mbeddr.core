@@ -5490,6 +5490,12 @@
               <ref role="3bR37D" node="6y2eE4zZsnH" resolve="com.mbeddr.core.stdlib" />
             </node>
           </node>
+          <node concept="1SiIV0" id="59VTJRA0xrI" role="3bR37C">
+            <node concept="3bR9La" id="59VTJRA0xrJ" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="3p0OY6VwAvW" role="3bR37C">
           <node concept="3bR9La" id="3p0OY6VwAvX" role="1SiIV1">
