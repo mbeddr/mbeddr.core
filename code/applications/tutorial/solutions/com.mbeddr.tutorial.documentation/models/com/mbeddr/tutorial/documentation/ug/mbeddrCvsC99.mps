@@ -35,8 +35,16 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
+      <concept id="5785245534399928042" name="com.mbeddr.doc.structure.AbstractTableParagraph" flags="ng" index="C6Wj3">
+        <property id="5785245534399940634" name="numCols" index="C6TCN" />
+        <child id="5785245534399940635" name="rows" index="C6TCM" />
+      </concept>
+      <concept id="5785245534400277706" name="com.mbeddr.doc.structure.TextBlockTableCell" flags="ng" index="C7FVz">
+        <child id="5785245534400277707" name="text" index="C7FVy" />
+      </concept>
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
+        <child id="126932837435370865" name="authors" index="Wq1Bf" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
       <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
@@ -59,8 +67,21 @@
         <property id="6386504476136521408" name="fileName" index="2Sb_kV" />
         <reference id="6386504476136521409" name="path" index="2Sb_kU" />
       </concept>
+      <concept id="126932837435370850" name="com.mbeddr.doc.structure.Author" flags="ng" index="Wq1Bs">
+        <property id="126932837435370852" name="email" index="Wq1Bq" />
+        <property id="126932837435370851" name="name" index="Wq1Bt" />
+      </concept>
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
       <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
+      <concept id="5185579450379471852" name="com.mbeddr.doc.structure.FloatingTableParagraph" flags="ng" index="1xAuF_">
+        <child id="5785245534399659249" name="description" index="C1MVo" />
+      </concept>
+      <concept id="5185579450379471854" name="com.mbeddr.doc.structure.TableRow" flags="ng" index="1xAuFB">
+        <child id="5185579450379471857" name="cells" index="1xAuFS" />
+      </concept>
+      <concept id="5185579450379471862" name="com.mbeddr.doc.structure.StringTableCell" flags="ng" index="1xAuFZ">
+        <property id="5185579450379471864" name="text" index="1xAuFL" />
+      </concept>
       <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
       </concept>
@@ -2360,6 +2381,143 @@
             </node>
             <node concept="19SUe$" id="4IT6unHXpF" role="19SJt6">
               <property role="19SUeA" value="." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1_1swa" id="3uikmEk5Pre">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="D_ArgumentAnnotations" />
+    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <node concept="Wq1Bs" id="3uikmEk5XtK" role="Wq1Bf">
+      <property role="Wq1Bt" value="Tamas Szabo" />
+      <property role="Wq1Bq" value="tamas.szabo@itemis.de" />
+    </node>
+    <node concept="1_0LV8" id="3uikmEk5XuI" role="1_0VJ0">
+      <node concept="19SGf9" id="3uikmEk5XuJ" role="1_0LWR">
+        <node concept="19SUe$" id="3uikmEk5XuK" role="19SJt6">
+          <property role="19SUeA" value="The following table describes the semantics of the various annotations that can be used on function arguments:" />
+        </node>
+      </node>
+    </node>
+    <node concept="1xAuF_" id="3uikmEk5YaU" role="1_0VJ0">
+      <property role="TrG5h" value="ArgumentAnnotations" />
+      <property role="C6TCN" value="4" />
+      <node concept="OjmMv" id="3uikmEk5YaW" role="C1MVo">
+        <node concept="19SGf9" id="3uikmEk5YaX" role="OjmMu">
+          <node concept="19SUe$" id="3uikmEk5Yb_" role="19SJt6">
+            <property role="19SUeA" value="Semantics of argument annotations" />
+          </node>
+        </node>
+      </node>
+      <node concept="1xAuFB" id="3uikmEk5Yci" role="C6TCM">
+        <node concept="1xAuFZ" id="3uikmEk5Ydf" role="1xAuFS">
+          <property role="1xAuFL" value="Annotation" />
+        </node>
+        <node concept="1xAuFZ" id="3uikmEk5Ydj" role="1xAuFS">
+          <property role="1xAuFL" value="Semantics for the caller side" />
+        </node>
+        <node concept="1xAuFZ" id="3uikmEk5Ydq" role="1xAuFS">
+          <property role="1xAuFL" value="Semantics for the callee side" />
+        </node>
+        <node concept="1xAuFZ" id="3uikmEk5YiQ" role="1xAuFS">
+          <property role="1xAuFL" value="Restrictions on types" />
+        </node>
+      </node>
+      <node concept="1xAuFB" id="3uikmEk5YcH" role="C6TCM">
+        <node concept="1xAuFZ" id="3uikmEk5Yd$" role="1xAuFS">
+          <property role="1xAuFL" value="IN" />
+        </node>
+        <node concept="C7FVz" id="3uikmEk5Yey" role="1xAuFS">
+          <node concept="OjmMv" id="3uikmEk5Yez" role="C7FVy">
+            <node concept="19SGf9" id="3uikmEk5Ye$" role="OjmMu">
+              <node concept="19SUe$" id="3uikmEk5Ye_" role="19SJt6">
+                <property role="19SUeA" value="The variable must be initialized at the time of the function call.&#10;The value of the variable must be the same after the function call (it cannot change inside the called function)." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="C7FVz" id="3uikmEk5YeP" role="1xAuFS">
+          <node concept="OjmMv" id="3uikmEk5YeQ" role="C7FVy">
+            <node concept="19SGf9" id="3uikmEk5YeR" role="OjmMu">
+              <node concept="19SUe$" id="3uikmEk5YeS" role="19SJt6">
+                <property role="19SUeA" value="A pointer variable must not be dereferenced and written to." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="C7FVz" id="3uikmEk5Yj3" role="1xAuFS">
+          <node concept="OjmMv" id="3uikmEk5Yj4" role="C7FVy">
+            <node concept="19SGf9" id="3uikmEk5Yj5" role="OjmMu">
+              <node concept="19SUe$" id="3uikmEk5Yj6" role="19SJt6">
+                <property role="19SUeA" value="Can be used with any type." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1xAuFB" id="3uikmEk5YdC" role="C6TCM">
+        <node concept="1xAuFZ" id="3uikmEk5YdY" role="1xAuFS">
+          <property role="1xAuFL" value="OUT" />
+        </node>
+        <node concept="C7FVz" id="3uikmEk5YjI" role="1xAuFS">
+          <node concept="OjmMv" id="3uikmEk5YjJ" role="C7FVy">
+            <node concept="19SGf9" id="3uikmEk5YjK" role="OjmMu">
+              <node concept="19SUe$" id="3uikmEk5YjL" role="19SJt6">
+                <property role="19SUeA" value="The variable may not be initialized at the time of the function call.&#10;The value of the variable will be different after the function call." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="C7FVz" id="3uikmEk5Yk1" role="1xAuFS">
+          <node concept="OjmMv" id="3uikmEk5Yk2" role="C7FVy">
+            <node concept="19SGf9" id="3uikmEk5Yk3" role="OjmMu">
+              <node concept="19SUe$" id="3uikmEk5Yk4" role="19SJt6">
+                <property role="19SUeA" value="The pointer typed variable must be dereferenced and written to." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="C7FVz" id="3uikmEk5Ykw" role="1xAuFS">
+          <node concept="OjmMv" id="3uikmEk5Ykx" role="C7FVy">
+            <node concept="19SGf9" id="3uikmEk5Yky" role="OjmMu">
+              <node concept="19SUe$" id="3uikmEk5Ykz" role="19SJt6">
+                <property role="19SUeA" value="Only applicable for pointer types." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1xAuFB" id="3uikmEk5Ye2" role="C6TCM">
+        <node concept="1xAuFZ" id="3uikmEk5Yeu" role="1xAuFS">
+          <property role="1xAuFL" value="INOUT" />
+        </node>
+        <node concept="C7FVz" id="3uikmEk5Ylb" role="1xAuFS">
+          <node concept="OjmMv" id="3uikmEk5Ylc" role="C7FVy">
+            <node concept="19SGf9" id="3uikmEk5Yld" role="OjmMu">
+              <node concept="19SUe$" id="3uikmEk5Yle" role="19SJt6">
+                <property role="19SUeA" value="The variable must be initialized at the time of the function call.&#10;The value of the variable may be different after the function call." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="C7FVz" id="3uikmEk5Ylu" role="1xAuFS">
+          <node concept="OjmMv" id="3uikmEk5Ylv" role="C7FVy">
+            <node concept="19SGf9" id="3uikmEk5Ylw" role="OjmMu">
+              <node concept="19SUe$" id="3uikmEk5Ylx" role="19SJt6">
+                <property role="19SUeA" value="The pointer typed variable may be dereferenced and written to." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="C7FVz" id="3uikmEk69Q9" role="1xAuFS">
+          <node concept="OjmMv" id="3uikmEk69Qa" role="C7FVy">
+            <node concept="19SGf9" id="3uikmEk69Qb" role="OjmMu">
+              <node concept="19SUe$" id="3uikmEk69Qc" role="19SJt6">
+                <property role="19SUeA" value="Only applicable for pointer types." />
+              </node>
             </node>
           </node>
         </node>

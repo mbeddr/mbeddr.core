@@ -16,6 +16,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
+        <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
@@ -25,6 +28,10 @@
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+        <child id="7588428831947959310" name="attributed" index="EQaZv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -56,6 +63,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -1255,6 +1263,190 @@
     <property role="TrG5h" value="C90CompatibleCode" />
     <property role="34LRSv" value="c90 compatible code" />
     <ref role="1TJDcQ" node="3_EX3Wi7Hiy" resolve="ConvertNamedToPositionalStructInit" />
+  </node>
+  <node concept="1TIwiD" id="4mSSgpjxLMA">
+    <property role="TrG5h" value="QueueDeclaration" />
+    <property role="34LRSv" value="queue" />
+    <property role="3GE5qa" value="queue" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4mSSgpjxLMB" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="size" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4mSSgpjxLMC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elementType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+    </node>
+    <node concept="PrWs8" id="4mSSgpjxLMD" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="4mSSgpjxLME" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4mSSgpjxUsy">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="QueueType" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+    <node concept="1TJgyj" id="4mSSgpjxUsz" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="queue" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4mSSgpjxLMA" resolve="QueueDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7cvwcG64PJw">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="QueueMember" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7cvwcG64PJx" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:40tXLnqhXcx" resolve="IGenericDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7cvwcG65TxB">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="QueueEnqueue" />
+    <property role="34LRSv" value="enqueue" />
+    <ref role="1TJDcQ" node="7cvwcG64PJw" resolve="QueueMember" />
+    <node concept="1TJgyj" id="7cvwcG65TxC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5B8LY2$tD3D">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="QueueIsEmpty" />
+    <property role="34LRSv" value="isEmpty" />
+    <ref role="1TJDcQ" node="7cvwcG64PJw" resolve="QueueMember" />
+  </node>
+  <node concept="1TIwiD" id="5B8LY2$uECh">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="QueueIsFull" />
+    <property role="34LRSv" value="isFull" />
+    <ref role="1TJDcQ" node="7cvwcG64PJw" resolve="QueueMember" />
+  </node>
+  <node concept="1TIwiD" id="5B8LY2$Lrxk">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="QueueTake" />
+    <property role="34LRSv" value="take" />
+    <ref role="1TJDcQ" node="7cvwcG64PJw" resolve="QueueMember" />
+  </node>
+  <node concept="1TIwiD" id="3krho7o8ezR">
+    <property role="3GE5qa" value="queue" />
+    <property role="TrG5h" value="EmptyQueueExpression" />
+    <property role="34LRSv" value="emptyqueue" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="3krho7oqngW" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="queue" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4mSSgpjxLMA" resolve="QueueDeclaration" />
+    </node>
+    <node concept="PrWs8" id="3krho7o8sgL" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:7oI7FI6okEX" resolve="IOnlyInInitialization" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="C7pKq6jTD2">
+    <property role="TrG5h" value="ErrorDeclaration" />
+    <property role="34LRSv" value="error" />
+    <property role="3GE5qa" value="errorHandling" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="C7pKq6jWli" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="C7pKq6jWaU" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="C7pKq6$38E">
+    <property role="3GE5qa" value="errorHandling" />
+    <property role="TrG5h" value="ErrorAnnotation" />
+    <property role="34LRSv" value="@errors" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="C7pKq6$38F" role="lGtFl">
+      <property role="Hh88m" value="errors" />
+      <node concept="trNpa" id="C7pKq6$38H" role="EQaZv">
+        <ref role="trN6q" to="x27k:5_l8w1EmTvx" resolve="Function" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="C7pKq6$3bp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="errors" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="C7pKq6$38L" resolve="ErrorRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="C7pKq6$38L">
+    <property role="3GE5qa" value="errorHandling" />
+    <property role="TrG5h" value="ErrorRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="C7pKq6$38M" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="error" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="C7pKq6jTD2" resolve="ErrorDeclaration" />
+    </node>
+    <node concept="PrWs8" id="7kmhBx0TVwJ" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7kmhBx0TUm_">
+    <property role="3GE5qa" value="errorHandling" />
+    <property role="TrG5h" value="ErrorStatement" />
+    <property role="34LRSv" value="error" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="7kmhBx0TVwl" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="error" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="C7pKq6$38L" resolve="ErrorRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7kmhBx19Gz1">
+    <property role="3GE5qa" value="errorHandling" />
+    <property role="TrG5h" value="ErrorHandlingContext" />
+    <property role="34LRSv" value="try " />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="7kmhBx19Gzh" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="1TJgyj" id="7kmhBx1zbEW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="handlers" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7kmhBx1lI9m" resolve="ErrorHandler" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7kmhBx1lI9m">
+    <property role="3GE5qa" value="errorHandling" />
+    <property role="TrG5h" value="ErrorHandler" />
+    <property role="34LRSv" value="when" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7kmhBx1lIns" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="1TJgyj" id="7kmhBx1lIlN" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="error" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="C7pKq6jTD2" resolve="ErrorDeclaration" />
+    </node>
   </node>
 </model>
 

@@ -16,6 +16,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.rt/rt.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.statemachines.experimental/com.mbeddr.analyses.cbmc.statemachines.experimental.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.statemachines/com.mbeddr.analyses.cbmc.statemachines.mpl" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.testsgen/com.mbeddr.analyses.cbmc.testsgen.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.verification_case/com.mbeddr.analyses.cbmc.verification_case.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc/cbmc.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc/solutions/pluginSolution/pluginSolution.msd" folder="cbmc" />
@@ -30,6 +31,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.experimental.rt/com.mbeddr.analyses.cbmc.statemachines.experimental.rt.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.pluginSolution/com.mbeddr.analyses.cbmc.statemachines.pluginSolution.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.rt/com.mbeddr.analyses.cbmc.statemachines.rt.msd" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.testsgen.rt/com.mbeddr.analyses.cbmc.testsgen.rt.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j.fm.pluginSolution/com.mbeddr.analyses.sat4j.fm.pluginSolution.msd" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j.fm/com.mbeddr.analyses.sat4j.fm.msd" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j/com.mbeddr.analyses.sat4j.msd" folder="sat4j" />
@@ -43,6 +45,8 @@
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.base/test.analyses.base.msd" folder="test.base" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.testcode/testcode.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.testcode_analyses_config/testcode_analyses_config.msd" folder="test.cbmc" />
+      <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.testsgen.testcode/test.analyses.cbmc.testsgen.testcode.msd" folder="test.cbmc" />
+      <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.testsgen/test.analyses.cbmc.testsgen.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.ts/test.analyses.cbmc.ts.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc/cbmc.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.var.testcode/test.analyses.var.testcode.msd" folder="test.sat4j" />

@@ -62,6 +62,10 @@
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
+      <concept id="6275792049641600983" name="com.mbeddr.core.statements.structure.IfStatement" flags="ng" index="c0U19">
+        <child id="6275792049641600984" name="condition" index="c0U16" />
+        <child id="6275792049641600985" name="thenPart" index="c0U17" />
+      </concept>
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
         <child id="7763322639126652758" name="baseType" index="2umbIo" />
       </concept>
@@ -111,6 +115,13 @@
         <child id="6209595569797561355" name="cases" index="eGTpe" />
         <child id="6209595569797561368" name="def" index="eGTpt" />
       </concept>
+      <concept id="5024012801619240738" name="com.mbeddr.core.util.structure.QueueType" flags="ng" index="mfOo$">
+        <reference id="5024012801619240739" name="queue" index="mfOo_" />
+      </concept>
+      <concept id="5024012801619205286" name="com.mbeddr.core.util.structure.QueueDeclaration" flags="ng" index="mfZQw">
+        <child id="5024012801619205287" name="size" index="mfZQx" />
+        <child id="5024012801619205288" name="elementType" index="mfZQI" />
+      </concept>
       <concept id="6472565942509969649" name="com.mbeddr.core.util.structure.GenericDLLogOp" flags="ng" index="_iwMv">
         <reference id="6472565942509969651" name="item" index="_iwMt" />
         <child id="6472565942509969650" name="value" index="_iwMs" />
@@ -143,8 +154,14 @@
       <concept id="6307143892175831839" name="com.mbeddr.core.util.structure.IsInRangeExpression" flags="ng" index="1vVjFF" />
       <concept id="3457272138385220657" name="com.mbeddr.core.util.structure.FlagUnSet" flags="ng" index="1FHdq0" />
       <concept id="3457272138385189066" name="com.mbeddr.core.util.structure.FlagSet" flags="ng" index="1FHPDV" />
+      <concept id="3826728732360501495" name="com.mbeddr.core.util.structure.EmptyQueueExpression" flags="ng" index="3HeUPQ">
+        <reference id="3826728732365255740" name="queue" index="3Hsz6X" />
+      </concept>
       <concept id="5065104421776378465" name="com.mbeddr.core.util.structure.AndedExprList" flags="ng" index="3OtLv3">
         <child id="5065104421776378466" name="expressions" index="3OtLv0" />
+      </concept>
+      <concept id="8295490648108669031" name="com.mbeddr.core.util.structure.QueueEnqueue" flags="ng" index="1P21yG">
+        <child id="8295490648108669032" name="value" index="1P21yz" />
       </concept>
       <concept id="1542399328501010856" name="com.mbeddr.core.util.structure.TracePoint" flags="ng" index="1SvimG" />
       <concept id="1542399328500970308" name="com.mbeddr.core.util.structure.DataLoggerDeclaration" flags="ng" index="1Sv$t0">
@@ -154,6 +171,9 @@
         <child id="4944376863000971777" name="items" index="YibUe" />
         <child id="1542399328501010859" name="tracepoints" index="1SvimJ" />
       </concept>
+      <concept id="6469640632368740436" name="com.mbeddr.core.util.structure.QueueTake" flags="ng" index="3X3nYO" />
+      <concept id="6469640632363821585" name="com.mbeddr.core.util.structure.QueueIsFull" flags="ng" index="3XGARL" />
+      <concept id="6469640632363553001" name="com.mbeddr.core.util.structure.QueueIsEmpty" flags="ng" index="3XJ_s9" />
       <concept id="291293396404994003" name="com.mbeddr.core.util.structure.StackDeclaration" flags="ng" index="3Ya1Sv">
         <child id="291293396404994004" name="baseType" index="3Ya1So" />
         <child id="291293396404994005" name="size" index="3Ya1Sp" />
@@ -192,7 +212,9 @@
       <concept id="6610873504380357354" name="com.mbeddr.core.modules.structure.GlobalVarRef" flags="ng" index="1S7827">
         <reference id="6610873504380357355" name="var" index="1S7826" />
       </concept>
-      <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz" />
+      <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz">
+        <child id="2771264470558526601" name="init" index="1cecVj" />
+      </concept>
     </language>
     <language id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded">
       <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.EmulatedInterruptKind" flags="ng" index="3_UBHe" />
@@ -1245,6 +1267,116 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="7cvwcG64DMD">
+    <property role="TrG5h" value="queue" />
+    <node concept="1qefOq" id="7cvwcG64DME" role="1SKRRt">
+      <node concept="N3F5e" id="7cvwcG64DMF" role="1qenE9">
+        <property role="TrG5h" value="aModule" />
+        <node concept="mfZQw" id="7cvwcG64Mjp" role="N3F5h">
+          <property role="TrG5h" value="int32queue" />
+          <node concept="3TlMh9" id="7cvwcG64Nkr" role="mfZQx">
+            <property role="2hmy$m" value="10" />
+          </node>
+          <node concept="26Vqph" id="7cvwcG64MjC" role="mfZQI">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="1S7NMz" id="7cvwcG64NzY" role="N3F5h">
+          <property role="TrG5h" value="q" />
+          <node concept="mfOo$" id="7cvwcG64NzW" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="mfOo_" node="7cvwcG64Mjp" resolve="int32queue" />
+          </node>
+          <node concept="3HeUPQ" id="3krho7oqndh" role="1cecVj">
+            <ref role="3Hsz6X" node="7cvwcG64Mjp" resolve="int32queue" />
+          </node>
+        </node>
+        <node concept="2NXPZ9" id="7cvwcG64NzJ" role="N3F5h">
+          <property role="TrG5h" value="empty_1437244790249_2" />
+        </node>
+        <node concept="N3Fnx" id="7cvwcG6gZDh" role="N3F5h">
+          <property role="TrG5h" value="f" />
+          <node concept="19Rifw" id="7cvwcG6gZDi" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="3XIRFW" id="7cvwcG6gZDj" role="3XIRFX">
+            <node concept="1_9egQ" id="7cvwcG6gZMQ" role="3XIRFZ">
+              <node concept="2qmXGp" id="7cvwcG6h0S$" role="1_9egR">
+                <node concept="1P21yG" id="7cvwcG6h0Td" role="1ESnxz">
+                  <node concept="3TlMh9" id="7cvwcG6h0T_" role="1P21yz">
+                    <property role="2hmy$m" value="10" />
+                  </node>
+                </node>
+                <node concept="1S7827" id="7cvwcG6gZMO" role="1_9fRO">
+                  <ref role="1S7826" node="7cvwcG64NzY" resolve="q" />
+                </node>
+              </node>
+            </node>
+            <node concept="1_9egQ" id="7cvwcG6h0VS" role="3XIRFZ">
+              <node concept="2qmXGp" id="7cvwcG6h0W6" role="1_9egR">
+                <node concept="1P21yG" id="7cvwcG6h0XH" role="1ESnxz">
+                  <node concept="PhEJO" id="7cvwcG6h0Z3" role="1P21yz">
+                    <property role="PhEJT" value="hallo" />
+                    <node concept="7CXmI" id="5B8LY2$tvM3" role="lGtFl">
+                      <node concept="1TM$A" id="5B8LY2$tvM4" role="7EUXB" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1S7827" id="7cvwcG6h0VQ" role="1_9fRO">
+                  <ref role="1S7826" node="7cvwcG64NzY" resolve="q" />
+                </node>
+              </node>
+            </node>
+            <node concept="3XISUE" id="5B8LY2$Iadv" role="3XIRFZ" />
+            <node concept="c0U19" id="5B8LY2$IbzR" role="3XIRFZ">
+              <node concept="3XIRFW" id="5B8LY2$IbzS" role="c0U17" />
+              <node concept="2qmXGp" id="5B8LY2$IbT6" role="c0U16">
+                <node concept="3XJ_s9" id="5B8LY2$IbXj" role="1ESnxz" />
+                <node concept="1S7827" id="5B8LY2$IbBA" role="1_9fRO">
+                  <ref role="1S7826" node="7cvwcG64NzY" resolve="q" />
+                </node>
+              </node>
+            </node>
+            <node concept="3XISUE" id="5B8LY2$IadW" role="3XIRFZ" />
+            <node concept="c0U19" id="5B8LY2$Ic1f" role="3XIRFZ">
+              <node concept="3XIRFW" id="5B8LY2$Ic1g" role="c0U17" />
+              <node concept="2qmXGp" id="5B8LY2$Ic5h" role="c0U16">
+                <node concept="3XGARL" id="5B8LY2$Ic9f" role="1ESnxz" />
+                <node concept="1S7827" id="5B8LY2$Ic58" role="1_9fRO">
+                  <ref role="1S7826" node="7cvwcG64NzY" resolve="q" />
+                </node>
+              </node>
+            </node>
+            <node concept="3XISUE" id="5B8LY2$Ic9q" role="3XIRFZ" />
+            <node concept="3XIRlf" id="5B8LY2_m74y" role="3XIRFZ">
+              <property role="TrG5h" value="res" />
+              <node concept="26Vqph" id="5B8LY2_m74N" role="2C2TGm">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+              </node>
+              <node concept="2qmXGp" id="5B8LY2_m74O" role="3XIe9u">
+                <node concept="3X3nYO" id="5B8LY2_m74P" role="1ESnxz" />
+                <node concept="1S7827" id="5B8LY2_m74Q" role="1_9fRO">
+                  <ref role="1S7826" node="7cvwcG64NzY" resolve="q" />
+                </node>
+              </node>
+            </node>
+            <node concept="1_9egQ" id="5B8LY2_m7do" role="3XIRFZ">
+              <node concept="3ZVu4v" id="5B8LY2_m7dm" role="1_9egR">
+                <ref role="3ZVs_2" node="5B8LY2_m74y" resolve="res" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2NXPZ9" id="7cvwcG64NzP" role="N3F5h">
+          <property role="TrG5h" value="empty_1437244790414_3" />
         </node>
       </node>
     </node>

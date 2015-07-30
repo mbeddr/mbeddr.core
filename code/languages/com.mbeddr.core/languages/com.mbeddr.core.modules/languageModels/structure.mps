@@ -1231,10 +1231,6 @@
       <property role="1uS6qo" value="OUT" />
       <property role="1uS6qv" value="1" />
     </node>
-    <node concept="M4N5e" id="3_CPcn39d$L" role="M5hS2">
-      <property role="1uS6qo" value="INOUT" />
-      <property role="1uS6qv" value="2" />
-    </node>
   </node>
   <node concept="PlHQZ" id="6V6S12clNH$">
     <property role="TrG5h" value="IDataFlowAnalyzerEntryPoint" />
@@ -1383,6 +1379,17 @@
     <property role="TrG5h" value="SuppressDataFlowLivenessWarning" />
     <property role="R4oN_" value="suppress dataflow liveness warning" />
     <ref role="1TJDcQ" node="5Sez0xTFbz7" resolve="SuppressDataFlowWarning" />
+  </node>
+  <node concept="1TIwiD" id="1myZgySqtjG">
+    <property role="TrG5h" value="NameOfFunctionExpression" />
+    <property role="34LRSv" value="nameof" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="1myZgySqtjH" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="function" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5_l8w1EmTvx" resolve="Function" />
+    </node>
   </node>
 </model>
 

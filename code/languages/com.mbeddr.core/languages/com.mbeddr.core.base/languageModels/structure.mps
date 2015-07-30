@@ -136,6 +136,9 @@
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
+        <property id="6054523464626875854" name="value" index="tnX3d" />
+      </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -151,6 +154,7 @@
       <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
         <property id="7588428831955550663" name="role" index="Hh88m" />
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
+        <child id="7588428831955550186" name="multiple" index="HhnKV" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -1273,11 +1277,13 @@
   <node concept="1TIwiD" id="5lKnBeAxLdJ">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="SolutionRelativeFilePicker" />
+    <property role="34LRSv" value="solution relative file picker" />
     <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker" />
   </node>
   <node concept="1TIwiD" id="2iGZqsHuOWj">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="SolutionRelativeDirPicker" />
+    <property role="34LRSv" value="solution relative dir picker" />
     <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker" />
   </node>
   <node concept="1TIwiD" id="DubiFAXpld">
@@ -1366,6 +1372,7 @@
   <node concept="1TIwiD" id="7c_RIoB8H2I">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="MacroFilePicker" />
+    <property role="34LRSv" value="macro file picker" />
     <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker" />
     <node concept="1TJgyi" id="7c_RIoB8OqH" role="1TKVEl">
       <property role="TrG5h" value="macro" />
@@ -1681,6 +1688,7 @@
   <node concept="1TIwiD" id="4eXJ6EO9ZKx">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="MacroFolderPicker" />
+    <property role="34LRSv" value="macro folder picker" />
     <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker" />
     <node concept="1TJgyi" id="4eXJ6EO9ZKy" role="1TKVEl">
       <property role="TrG5h" value="macro" />
@@ -1690,12 +1698,14 @@
   <node concept="1TIwiD" id="4eXJ6EOwIAn">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="FileSystemDirPicker" />
+    <property role="34LRSv" value="file system dir picker" />
     <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker" />
   </node>
   <node concept="1TIwiD" id="1jw2PJJHS3i">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="FileSystemFilePicker" />
-    <ref role="1TJDcQ" node="5lKnBeAtNw8" resolve="AbstractPicker" />
+    <property role="34LRSv" value="file system file picker" />
+    <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker" />
   </node>
   <node concept="1TIwiD" id="5Wocj7wnolM">
     <property role="3GE5qa" value="pathAndFile" />
@@ -1714,6 +1724,20 @@
   <node concept="PlHQZ" id="3RtPbXOi5Ir">
     <property role="3GE5qa" value="commenting" />
     <property role="TrG5h" value="ITriggerCommenting" />
+  </node>
+  <node concept="1TIwiD" id="3RdDJSz0aZf">
+    <property role="TrG5h" value="KeepAliveInGeneration" />
+    <property role="34LRSv" value="keepAliveInGeneration" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="3RdDJSz0aZg" role="lGtFl">
+      <property role="Hh88m" value="keepAliveInGeneration" />
+      <node concept="tn0Fv" id="3RdDJSz0bem" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="3RdDJSz0beo" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
   </node>
 </model>
 
