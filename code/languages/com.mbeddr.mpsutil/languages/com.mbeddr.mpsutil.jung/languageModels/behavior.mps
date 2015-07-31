@@ -11,8 +11,8 @@
     <import index="ar19" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.geom(JDK/java.awt.geom@java_stub)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="xei" ref="1338ba73-5059-479b-a929-de86597a62b8/f:java_stub#1338ba73-5059-479b-a929-de86597a62b8#edu.uci.ics.jung.visualization.util(com.mbeddr.mpsutil.jung.pluginSolution/edu.uci.ics.jung.visualization.util@java_stub)" />
-    <import index="10jo" ref="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.structure)" implicit="true" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
+    <import index="10jo" ref="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -639,30 +639,40 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1P6FB4bs5BZ" role="3cqZAp">
-          <node concept="2OqwBi" id="1P6FB4bs5BW" role="3clFbG">
-            <node concept="10M0yZ" id="1P6FB4bs5BX" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="1P6FB4bs5BY" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="1cocmT_$L$i" role="37wK5m">
-                <node concept="Xl_RD" id="1cocmT_$L$_" role="3uHU7w">
-                  <property role="Xl_RC" value=" in graph" />
+        <node concept="3clFbJ" id="37EQ47WWy39" role="3cqZAp">
+          <node concept="3clFbS" id="37EQ47WWy3b" role="3clFbx">
+            <node concept="3clFbF" id="1P6FB4bs5BZ" role="3cqZAp">
+              <node concept="2OqwBi" id="1P6FB4bs5BW" role="3clFbG">
+                <node concept="10M0yZ" id="1P6FB4bs5BX" role="2Oq$k0">
+                  <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                  <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
                 </node>
-                <node concept="3cpWs3" id="1cocmT_$L2r" role="3uHU7B">
-                  <node concept="Xl_RD" id="1cocmT_$KO2" role="3uHU7B">
-                    <property role="Xl_RC" value="no vertex named " />
-                  </node>
-                  <node concept="2OqwBi" id="1cocmT_$L8u" role="3uHU7w">
-                    <node concept="Xjq3P" id="1cocmT_$L4s" role="2Oq$k0" />
-                    <node concept="2OwXpG" id="1cocmT_$Lga" role="2OqNvi">
-                      <ref role="2Oxat5" node="5yCuRHcavTa" resolve="from" />
+                <node concept="liA8E" id="1P6FB4bs5BY" role="2OqNvi">
+                  <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="3cpWs3" id="1cocmT_$L$i" role="37wK5m">
+                    <node concept="Xl_RD" id="1cocmT_$L$_" role="3uHU7w">
+                      <property role="Xl_RC" value=" in graph" />
+                    </node>
+                    <node concept="3cpWs3" id="1cocmT_$L2r" role="3uHU7B">
+                      <node concept="Xl_RD" id="1cocmT_$KO2" role="3uHU7B">
+                        <property role="Xl_RC" value="from: no vertex named " />
+                      </node>
+                      <node concept="2OqwBi" id="1cocmT_$L8u" role="3uHU7w">
+                        <node concept="Xjq3P" id="1cocmT_$L4s" role="2Oq$k0" />
+                        <node concept="2OwXpG" id="1cocmT_$Lga" role="2OqNvi">
+                          <ref role="2Oxat5" node="5yCuRHcavTa" resolve="from" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="37EQ47WWyza" role="3clFbw">
+            <node concept="10Nm6u" id="37EQ47WWyC1" role="3uHU7w" />
+            <node concept="37vLTw" id="37EQ47WWy9B" role="3uHU7B">
+              <ref role="3cqZAo" node="1cocmT_$JZc" resolve="vertex" />
             </node>
           </node>
         </node>
@@ -703,30 +713,40 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1P6FB4bs9qM" role="3cqZAp">
-          <node concept="2OqwBi" id="1P6FB4bs9qJ" role="3clFbG">
-            <node concept="10M0yZ" id="1P6FB4bs9qK" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="1P6FB4bs9qL" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="1cocmT_$MtW" role="37wK5m">
-                <node concept="Xl_RD" id="1cocmT_$MtX" role="3uHU7w">
-                  <property role="Xl_RC" value=" in graph" />
+        <node concept="3clFbJ" id="37EQ47WWz8m" role="3cqZAp">
+          <node concept="3clFbS" id="37EQ47WWz8o" role="3clFbx">
+            <node concept="3clFbF" id="1P6FB4bs9qM" role="3cqZAp">
+              <node concept="2OqwBi" id="1P6FB4bs9qJ" role="3clFbG">
+                <node concept="10M0yZ" id="1P6FB4bs9qK" role="2Oq$k0">
+                  <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                  <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
                 </node>
-                <node concept="3cpWs3" id="1cocmT_$MtY" role="3uHU7B">
-                  <node concept="Xl_RD" id="1cocmT_$MtZ" role="3uHU7B">
-                    <property role="Xl_RC" value="no vertex named " />
-                  </node>
-                  <node concept="2OqwBi" id="1cocmT_$Mu0" role="3uHU7w">
-                    <node concept="Xjq3P" id="1cocmT_$Mu1" role="2Oq$k0" />
-                    <node concept="2OwXpG" id="1cocmT_$N7k" role="2OqNvi">
-                      <ref role="2Oxat5" node="5yCuRHcavXx" resolve="to" />
+                <node concept="liA8E" id="1P6FB4bs9qL" role="2OqNvi">
+                  <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="3cpWs3" id="1cocmT_$MtW" role="37wK5m">
+                    <node concept="Xl_RD" id="1cocmT_$MtX" role="3uHU7w">
+                      <property role="Xl_RC" value=" in graph" />
+                    </node>
+                    <node concept="3cpWs3" id="1cocmT_$MtY" role="3uHU7B">
+                      <node concept="Xl_RD" id="1cocmT_$MtZ" role="3uHU7B">
+                        <property role="Xl_RC" value="to: no vertex named " />
+                      </node>
+                      <node concept="2OqwBi" id="1cocmT_$Mu0" role="3uHU7w">
+                        <node concept="Xjq3P" id="1cocmT_$Mu1" role="2Oq$k0" />
+                        <node concept="2OwXpG" id="1cocmT_$N7k" role="2OqNvi">
+                          <ref role="2Oxat5" node="5yCuRHcavXx" resolve="to" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="37EQ47WWzjZ" role="3clFbw">
+            <node concept="10Nm6u" id="37EQ47WWzoK" role="3uHU7w" />
+            <node concept="37vLTw" id="37EQ47WWzeO" role="3uHU7B">
+              <ref role="3cqZAo" node="1cocmT_$MiH" resolve="vertex" />
             </node>
           </node>
         </node>

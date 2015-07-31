@@ -1053,8 +1053,8 @@
                 <node concept="21POm0" id="18l4N2QwFkA" role="2Oq$k0" />
                 <node concept="2Xjw5R" id="18l4N2QwFkF" role="2OqNvi">
                   <node concept="1xMEDy" id="18l4N2QwFkG" role="1xVPHs">
-                    <node concept="chp4Y" id="18l4N2QwFkJ" role="ri$Ld">
-                      <ref role="cht4Q" to="v7ag:3TmmsQkDdTN" resolve="AtomicComponent" />
+                    <node concept="chp4Y" id="5sHAGxmIrNN" role="ri$Ld">
+                      <ref role="cht4Q" to="v7ag:3TmmsQkCzn9" resolve="Component" />
                     </node>
                   </node>
                   <node concept="1xIGOp" id="18l4N2QwFkL" role="1xVPHs" />

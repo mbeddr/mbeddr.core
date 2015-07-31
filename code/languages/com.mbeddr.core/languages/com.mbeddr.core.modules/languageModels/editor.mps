@@ -1086,8 +1086,8 @@
                   <node concept="3clFbS" id="3aBtU3jqBs9" role="3clFbx">
                     <node concept="3cpWs6" id="3aBtU3jqBsa" role="3cqZAp">
                       <node concept="10M0yZ" id="3ieSxUOikvt" role="3cqZAk">
-                        <ref role="3cqZAo" node="3ieSxUOiiJY" resolve="IN_SEMANTICS" />
                         <ref role="1PxDUh" node="3ieSxUOiefM" resolve="ArgumentKind_Constants" />
+                        <ref role="3cqZAo" node="3ieSxUOiiJY" resolve="IN_SEMANTICS" />
                       </node>
                     </node>
                   </node>
@@ -4039,19 +4039,6 @@
   <node concept="24kQdi" id="2tP2JaaUl3C">
     <property role="3GE5qa" value="global" />
     <ref role="1XX52x" to="x27k:3ilck8KpYYm" resolve="GlobalConstantDeclaration" />
-    <node concept="3EZMnI" id="1c_2vnOscXV" role="6VMZX">
-      <node concept="2iRkQZ" id="1c_2vnOscXW" role="2iSdaV" />
-      <node concept="3EZMnI" id="6a5SBPfZfTn" role="3EZMnx">
-        <node concept="l2Vlx" id="6a5SBPfZfTo" role="2iSdaV" />
-        <node concept="3F0ifn" id="6a5SBPfZfTp" role="3EZMnx">
-          <property role="3F0ifm" value="exported" />
-          <ref role="1k5W1q" to="r4b4:2CEi94e3iKI" resolve="PassiveText" />
-        </node>
-        <node concept="3F0A7n" id="6a5SBPfZfTq" role="3EZMnx">
-          <ref role="1NtTu8" to="x27k:19a6$uAA0vK" resolve="exported" />
-        </node>
-      </node>
-    </node>
     <node concept="3EZMnI" id="2tP2JaaUlpS" role="2wV5jI">
       <node concept="l2Vlx" id="2tP2JaaUlpT" role="2iSdaV" />
       <node concept="PMmxH" id="2tP2JaaUlpU" role="3EZMnx">
@@ -4131,6 +4118,19 @@
       </node>
       <node concept="VPM3Z" id="2tP2JaaUlql" role="3F10Kt">
         <property role="VOm3f" value="true" />
+      </node>
+    </node>
+    <node concept="3EZMnI" id="1c_2vnOscXV" role="6VMZX">
+      <node concept="2iRkQZ" id="1c_2vnOscXW" role="2iSdaV" />
+      <node concept="3EZMnI" id="6a5SBPfZfTn" role="3EZMnx">
+        <node concept="l2Vlx" id="6a5SBPfZfTo" role="2iSdaV" />
+        <node concept="3F0ifn" id="6a5SBPfZfTp" role="3EZMnx">
+          <property role="3F0ifm" value="exported" />
+          <ref role="1k5W1q" to="r4b4:2CEi94e3iKI" resolve="PassiveText" />
+        </node>
+        <node concept="3F0A7n" id="6a5SBPfZfTq" role="3EZMnx">
+          <ref role="1NtTu8" to="x27k:19a6$uAA0vK" resolve="exported" />
+        </node>
       </node>
     </node>
   </node>
