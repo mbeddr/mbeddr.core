@@ -421,37 +421,37 @@
     <node concept="BTY7A" id="71$yxaEkFO" role="N3F5h">
       <property role="TrG5h" value="UART1_STATUS" />
       <node concept="3V49S3" id="71$yxaEneG" role="2_0FLF">
-        <ref role="3V49S0" node="71$yxaEjJC" resolve="UCSR1A" />
+        <ref role="3V49S0" to="bs9u:71$yxaEjJC" resolve="UCSR1A" />
       </node>
     </node>
     <node concept="BTY7A" id="71$yxaEnFz" role="N3F5h">
       <property role="TrG5h" value="UART1_CONTROL" />
       <node concept="3V49S3" id="71$yxaErWL" role="2_0FLF">
-        <ref role="3V49S0" node="71$yxaEnn7" resolve="UCSR1B" />
+        <ref role="3V49S0" to="bs9u:71$yxaEnn7" resolve="UCSR1B" />
       </node>
     </node>
     <node concept="BTY7A" id="71$yxaErYg" role="N3F5h">
       <property role="TrG5h" value="UART1_DATA" />
       <node concept="3V49S3" id="71$yxaEt8B" role="2_0FLF">
-        <ref role="3V49S0" node="oDdAT4omGm" resolve="UDR1" />
+        <ref role="3V49S0" to="bs9u:oDdAT4omGm" resolve="UDR1" />
       </node>
     </node>
     <node concept="BTY7A" id="71$yxaEsFT" role="N3F5h">
       <property role="TrG5h" value="UART1_UDRIE" />
       <node concept="3V49S3" id="71$yxaEtah" role="2_0FLF">
-        <ref role="3V49S0" node="71$yxaEsiM" resolve="UDRIE1" />
+        <ref role="3V49S0" to="bs9u:71$yxaEsiM" resolve="UDRIE1" />
       </node>
     </node>
     <node concept="BTY7A" id="71$yxaEtQj" role="N3F5h">
       <property role="TrG5h" value="FE" />
       <node concept="3V49S3" id="71$yxaEuaZ" role="2_0FLF">
-        <ref role="3V49S0" node="71$yxaEtcR" resolve="FE1" />
+        <ref role="3V49S0" to="bs9u:71$yxaEtcR" resolve="FE1" />
       </node>
     </node>
     <node concept="BTY7A" id="71$yxaEuw2" role="N3F5h">
       <property role="TrG5h" value="DOR" />
       <node concept="3V49S3" id="71$yxaEuPe" role="2_0FLF">
-        <ref role="3V49S0" node="71$yxaEub6" resolve="DOR1" />
+        <ref role="3V49S0" to="bs9u:71$yxaEub6" resolve="DOR1" />
       </node>
     </node>
     <node concept="BTY7A" id="71$yxaEBij" role="N3F5h">
@@ -1219,7 +1219,7 @@
                             <property role="2hmy$m" value="4" />
                           </node>
                           <node concept="3V49S3" id="2uTv4B9puIV" role="3TlMhI">
-                            <ref role="3V49S0" node="2uTv4B9prik" resolve="F_CPU" />
+                            <ref role="3V49S0" to="bs9u:74TmcPkIIBC" resolve="F_CPU" />
                           </node>
                         </node>
                       </node>
@@ -1260,7 +1260,7 @@
                                   <property role="2hmy$m" value="8" />
                                 </node>
                                 <node concept="3V49S3" id="2uTv4B9pLz8" role="3TlMhI">
-                                  <ref role="3V49S0" node="2uTv4B9prik" resolve="F_CPU" />
+                                  <ref role="3V49S0" to="bs9u:74TmcPkIIBC" resolve="F_CPU" />
                                 </node>
                               </node>
                             </node>
@@ -1304,7 +1304,7 @@
                     <node concept="BUAnR" id="71$yxaFhGt" role="3TlMhJ">
                       <ref role="BUAnL" node="71$yxaEBij" resolve="_BV" />
                       <node concept="3V49S3" id="71$yxaFic6" role="BULBh">
-                        <ref role="3V49S0" node="71$yxaFeB2" resolve="U2X1" />
+                        <ref role="3V49S0" to="bs9u:71$yxaFeB2" resolve="U2X1" />
                       </node>
                     </node>
                   </node>
@@ -1326,7 +1326,7 @@
           <node concept="1_9egQ" id="71$yxaEYzY" role="3XIRFZ">
             <node concept="3pqW6w" id="71$yxaFcbY" role="1_9egR">
               <node concept="3V49S3" id="71$yxaFcdC" role="3TlMhI">
-                <ref role="3V49S0" node="71$yxaF9Qb" resolve="UBRR1H" />
+                <ref role="3V49S0" to="bs9u:71$yxaF9Qb" resolve="UBRR1H" />
               </node>
               <node concept="1S8S4T" id="71$yxaEY$5" role="3TlMhJ">
                 <node concept="26Vqp4" id="71$yxaEY$0" role="1S8S4N">
@@ -1349,7 +1349,7 @@
           <node concept="1_9egQ" id="71$yxaEY$8" role="3XIRFZ">
             <node concept="3pqW6w" id="71$yxaFcfu" role="1_9egR">
               <node concept="3V49S3" id="71$yxaFcg_" role="3TlMhI">
-                <ref role="3V49S0" node="71$yxaFb0f" resolve="UBRR1L" />
+                <ref role="3V49S0" to="bs9u:71$yxaFb0f" resolve="UBRR1L" />
               </node>
               <node concept="1S8S4T" id="71$yxaEY$c" role="3TlMhJ">
                 <node concept="26Vqp4" id="71$yxaEY$a" role="1S8S4N">
@@ -1372,20 +1372,20 @@
                   <node concept="BUAnR" id="71$yxaEY$T" role="3TlMhI">
                     <ref role="BUAnL" node="71$yxaEBij" resolve="_BV" />
                     <node concept="3V49S3" id="71$yxaFlWF" role="BULBh">
-                      <ref role="3V49S0" node="71$yxaFkod" resolve="RXCIE1" />
+                      <ref role="3V49S0" to="bs9u:71$yxaFkod" resolve="RXCIE1" />
                     </node>
                   </node>
                   <node concept="BUAnR" id="71$yxaFpfH" role="3TlMhJ">
                     <ref role="BUAnL" node="71$yxaEBij" resolve="_BV" />
                     <node concept="3V49S3" id="71$yxaFpHb" role="BULBh">
-                      <ref role="3V49S0" node="71$yxaFnCU" resolve="RXEN1" />
+                      <ref role="3V49S0" to="bs9u:71$yxaFnCU" resolve="RXEN1" />
                     </node>
                   </node>
                 </node>
                 <node concept="BUAnR" id="71$yxaFrMT" role="3TlMhJ">
                   <ref role="BUAnL" node="71$yxaEBij" resolve="_BV" />
                   <node concept="3V49S3" id="71$yxaFshD" role="BULBh">
-                    <ref role="3V49S0" node="71$yxaFqa5" resolve="TXEN1" />
+                    <ref role="3V49S0" to="bs9u:71$yxaFqa5" resolve="TXEN1" />
                   </node>
                 </node>
               </node>
@@ -1403,19 +1403,19 @@
           <node concept="1_9egQ" id="71$yxaEY$$" role="3XIRFZ">
             <node concept="3pqW6w" id="71$yxaF7qs" role="1_9egR">
               <node concept="3V49S3" id="71$yxaF7RM" role="3TlMhI">
-                <ref role="3V49S0" node="71$yxaEZVQ" resolve="UCSR1C" />
+                <ref role="3V49S0" to="bs9u:71$yxaEZVQ" resolve="UCSR1C" />
               </node>
               <node concept="EUQZk" id="71$yxaF5Fo" role="3TlMhJ">
                 <node concept="BUAnR" id="71$yxaF67s" role="3TlMhJ">
                   <ref role="BUAnL" node="71$yxaEBij" resolve="_BV" />
                   <node concept="3V49S3" id="71$yxaF6yc" role="BULBh">
-                    <ref role="3V49S0" node="71$yxaF31i" resolve="UCSZ11" />
+                    <ref role="3V49S0" to="bs9u:71$yxaF31i" resolve="UCSZ11" />
                   </node>
                 </node>
                 <node concept="BUAnR" id="71$yxaF566" role="3TlMhI">
                   <ref role="BUAnL" node="71$yxaEBij" resolve="_BV" />
                   <node concept="3V49S3" id="71$yxaF57o" role="BULBh">
-                    <ref role="3V49S0" node="71$yxaF1GR" resolve="UCSZ10" />
+                    <ref role="3V49S0" to="bs9u:71$yxaF1GR" resolve="UCSZ10" />
                   </node>
                 </node>
               </node>
@@ -1996,6 +1996,9 @@
     <node concept="3GEVxB" id="2XT_MLHascb" role="2OODSX">
       <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="wYuX6q79Oi" resolve="Interrupts" />
+    </node>
+    <node concept="3GEVxB" id="fWgwtoK8cz" role="2OODSX">
+      <ref role="3GEb4d" to="bs9u:555ATsvQp8E" resolve="avr_registers" />
     </node>
   </node>
   <node concept="N3F5e" id="wYuX6q6qMN">
