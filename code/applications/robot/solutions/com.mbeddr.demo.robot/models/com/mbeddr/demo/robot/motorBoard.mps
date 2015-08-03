@@ -585,14 +585,14 @@
         </node>
       </node>
       <node concept="3_ZhDN" id="2uTv4B9$wP4" role="5JtDH">
-        <ref role="3_ZhDO" to="azo0:oDdAT4olMA" resolve="USART1_RX_vect" />
         <ref role="3_ZhDP" node="exHFgzLHpf" resolve="mainComp" />
         <ref role="3_ZhDQ" node="2uTv4B9$zMh" resolve="isrReceiveRunnable" />
+        <ref role="3_ZhDO" to="bs9u:oDdAT4olMA" resolve="USART1_RX_vect" />
       </node>
       <node concept="3_ZhDN" id="2uTv4B9$$Ww" role="5JtDH">
         <ref role="3_ZhDP" node="exHFgzLHpf" resolve="mainComp" />
-        <ref role="3_ZhDO" to="azo0:71$yxaETjq" resolve="USART1_UDRE_vect" />
         <ref role="3_ZhDQ" node="2uTv4B9$$rl" resolve="isrTransmitRunnable" />
+        <ref role="3_ZhDO" to="bs9u:71$yxaETjq" resolve="USART1_UDRE_vect" />
       </node>
       <node concept="JAGxh" id="2uTv4B9$wOF" role="5JtDH" />
       <node concept="21gPQu" id="exHFgzLHpA" role="5JtDH">
@@ -799,7 +799,7 @@
         </node>
         <node concept="2EWCuV" id="5zHWU$G_QLg" role="5JtDH">
           <property role="TrG5h" value="timer1" />
-          <ref role="2EWCuU" to="bs9u:74TmcPjVXak" resolve="Timer1" />
+          <ref role="2EWCuU" to="bs9u:fWgwtoBQox" resolve="Timer1" />
           <node concept="gqqVs" id="5zHWU$GDLPe" role="lGtFl">
             <property role="gqqTZ" value="1164.0" />
             <property role="gqqTW" value="172.0" />
@@ -967,7 +967,7 @@
           </node>
           <node concept="2EWCuO" id="5zHWU$G_SwB" role="2EWCuK">
             <ref role="2EWCuR" node="5zHWU$G_QXg" resolve="timer3" />
-            <ref role="XcPQd" to="bs9u:74TmcPjVXcd" resolve="pinA" />
+            <ref role="XcPQd" to="bs9u:74TmcPjVXal" resolve="pinA" />
           </node>
           <node concept="2VclpC" id="5zHWU$GDLRd" role="lGtFl" />
         </node>
@@ -2183,6 +2183,9 @@
     </node>
     <node concept="3GEVxB" id="5$_GT_vmTOz" role="2OODSX">
       <ref role="3GEb4d" to="lj5:2JGF63bDca1" resolve="MotorBoardMessages" />
+    </node>
+    <node concept="3GEVxB" id="fWgwtp3nzm" role="2OODSX">
+      <ref role="3GEb4d" to="bs9u:555ATsvQp8E" resolve="avr_registers" />
     </node>
   </node>
   <node concept="N3F5e" id="5zHWU$GzThY">

@@ -1542,7 +1542,7 @@
         <node concept="JAGxh" id="74TmcPkZ353" role="5JtDH" />
         <node concept="2EWCuV" id="74TmcPkZ8Lr" role="5JtDH">
           <property role="TrG5h" value="timer1" />
-          <ref role="2EWCuU" to="bs9u:74TmcPjVXak" resolve="Timer1" />
+          <ref role="2EWCuU" to="bs9u:fWgwtoBQox" resolve="Timer1" />
           <node concept="gqqVs" id="74TmcPkZakY" role="lGtFl">
             <property role="gqqTZ" value="427.0" />
             <property role="gqqTW" value="935.8250122070312" />
@@ -1566,7 +1566,7 @@
         <node concept="JAGxh" id="74TmcPkZ8zK" role="5JtDH" />
         <node concept="2EWCuV" id="74TmcPkYWdI" role="5JtDH">
           <property role="TrG5h" value="distanceSensor" />
-          <ref role="2EWCuU" to="sgg6:74TmcPkGBa2" resolve="UltrasoundDistanceSensor" />
+          <ref role="2EWCuU" to="sgg6:74TmcPkGBa2" resolve="SimpleUltrasoundDistanceSensor" />
           <node concept="gqqVs" id="74TmcPkZal2" role="lGtFl">
             <property role="gqqTZ" value="24.0" />
             <property role="gqqTW" value="830.0499877929688" />
@@ -1668,8 +1668,8 @@
             <ref role="XcPQd" to="sgg6:74TmcPkXSVI" resolve="counter" />
           </node>
           <node concept="2EWCuO" id="74TmcPkZ9xm" role="2EWCuK">
-            <ref role="2EWCuR" node="74TmcPkZ8Lr" resolve="timer1" />
             <ref role="XcPQd" to="bs9u:74TmcPkI4xv" resolve="counter" />
+            <ref role="2EWCuR" node="74TmcPkZ8Lr" resolve="timer1" />
           </node>
           <node concept="2VclpC" id="74TmcPkZaqK" role="lGtFl">
             <node concept="2VclrF" id="74TmcPkZaqL" role="2Vcluh">
@@ -2004,6 +2004,8 @@
             </node>
           </node>
         </node>
+        <node concept="JAGxh" id="7UgeC20eOaI" role="5JtDH" />
+        <node concept="JAGxh" id="7UgeC20eOEv" role="5JtDH" />
         <node concept="37mRI7" id="5zHWU$GwxsN" role="lGtFl">
           <node concept="37mRIm" id="5zHWU$GwxsO" role="37mRID">
             <property role="37mO49" value="261691138174818089" />
@@ -4045,6 +4047,23 @@
             </node>
           </node>
           <node concept="3XISUE" id="4khTSHqltfP" role="3XIRFZ" />
+          <node concept="3XISUE" id="fWgwto$w_1" role="3XIRFZ" />
+          <node concept="3XISUE" id="fWgwto$xb$" role="3XIRFZ" />
+          <node concept="3XISUE" id="fWgwto$xpl" role="3XIRFZ" />
+          <node concept="1QiMYF" id="fWgwto$ILq" role="3XIRFZ">
+            <node concept="OjmMv" id="fWgwto$ILs" role="3SJzmv">
+              <node concept="19SGf9" id="fWgwto$ILt" role="OjmMu">
+                <node concept="19SUe$" id="fWgwto$ILu" role="19SJt6">
+                  <property role="19SUeA" value="ultrasound distance sensor" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3XISUE" id="fWgwto$xCz" role="3XIRFZ" />
+          <node concept="3XISUE" id="fWgwto$J1l" role="3XIRFZ" />
+          <node concept="3XISUE" id="fWgwto$xQu" role="3XIRFZ" />
+          <node concept="3XISUE" id="fWgwto$y4u" role="3XIRFZ" />
+          <node concept="3XISUE" id="fWgwto$yiz" role="3XIRFZ" />
           <node concept="2Ygvn$" id="4khTSHqlMA_" role="3XIRFZ">
             <node concept="1_9egQ" id="WklGGYIoiJ" role="2Ygvny">
               <node concept="3LAlOK" id="WklGGYIoAS" role="1_9egR">
@@ -4149,7 +4168,7 @@
               </node>
             </node>
             <node concept="30IBQI" id="WklGGYQrBW" role="3XIe9u">
-              <ref role="2H6Oet" to="sgg6:74TmcPkGvNM" resolve="measureDistance" />
+              <ref role="2H6Oet" to="sgg6:555ATswptOJ" resolve="getDistance" />
               <node concept="2H6loZ" id="WklGGYQrBX" role="1_9fRO">
                 <ref role="2H6loY" node="WklGGYQr2o" resolve="distanceSensor" />
               </node>
