@@ -4671,6 +4671,11 @@
       <property role="TrG5h" value="TIMER1_COMPA_vect" />
       <property role="Is5hG" value="﻿Timer/Counter1 Compare Match A" />
     </node>
+    <node concept="1O_wwk" id="7UgeC22vK_L" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="TIMER3_COMPA_vect" />
+      <property role="Is5hG" value="﻿Timer/Counter3 Compare Match A" />
+    </node>
     <node concept="3V4D3u" id="74TmcPjVX9H" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="TCCR1B" />
