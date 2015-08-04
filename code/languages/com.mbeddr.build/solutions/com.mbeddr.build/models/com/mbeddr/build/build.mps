@@ -4869,6 +4869,12 @@
             <ref role="3bR37D" node="WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7UgeC2763wu" role="3bR37C">
+          <node concept="3bR9La" id="7UgeC2763wv" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="6y2eE4zZsnH" resolve="com.mbeddr.core.stdlib" />
+          </node>
+        </node>
       </node>
       <node concept="3LEwk6" id="73JrkgyBBTO" role="2G$12L">
         <property role="BnDLt" value="true" />
