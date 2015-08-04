@@ -690,8 +690,8 @@
                                 <node concept="2ShNRf" id="6DZK4Bi_cA_" role="33vP2m">
                                   <node concept="1pGfFk" id="6DZK4Bi_cAA" role="2ShVmc">
                                     <ref role="37wK5l" to="rbq9:mb65_hohE1" resolve="CBMCRawResult" />
-                                    <node concept="3cmrfG" id="6DZK4Bi_cAB" role="37wK5m">
-                                      <property role="3cmrfH" value="-1" />
+                                    <node concept="3cmrfG" id="5TkmKM1h4Wy" role="37wK5m">
+                                      <property role="3cmrfH" value="0" />
                                     </node>
                                     <node concept="37vLTw" id="6ks7ICTJNMT" role="37wK5m">
                                       <ref role="3cqZAo" node="6ks7ICTJMgV" resolve="kind" />
