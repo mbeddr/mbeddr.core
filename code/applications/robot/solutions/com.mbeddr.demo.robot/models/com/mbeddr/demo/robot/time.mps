@@ -53,7 +53,6 @@
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
-      <concept id="8463282783691618456" name="com.mbeddr.core.expressions.structure.UnsignedInt64tType" flags="ng" index="26Vqp1" />
       <concept id="8463282783691618450" name="com.mbeddr.core.expressions.structure.UnsignedInt32tType" flags="ng" index="26Vqpb" />
       <concept id="8864856114140038681" name="com.mbeddr.core.expressions.structure.DoubleType" flags="ng" index="2fgwQN" />
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
@@ -77,23 +76,12 @@
     <node concept="2NXPZ9" id="74TmcPjU_IA" role="N3F5h">
       <property role="TrG5h" value="empty_1436780254712_28" />
     </node>
-    <node concept="2EX0iR" id="5Li7KxBWVQ_" role="N3F5h">
+    <node concept="2EX0iR" id="74TmcPjU_IV" role="N3F5h">
       <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="IClock" />
-      <node concept="2EX0iL" id="5Li7KxBWZUG" role="2EX0iN">
-        <property role="TrG5h" value="setClockInterval" />
-        <node concept="2EWNYT" id="5Li7KxBWZVG" role="1UOdpc">
-          <property role="TrG5h" value="nanoSeconds" />
-          <node concept="26Vqp1" id="5Li7KxBXnVX" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
-        <node concept="19Rifw" id="5Li7KxBWZUV" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
+      <property role="TrG5h" value="IClockSource" />
+    </node>
+    <node concept="2NXPZ9" id="74TmcPkHshR" role="N3F5h">
+      <property role="TrG5h" value="empty_1436868159212_48" />
     </node>
     <node concept="2NXPZ9" id="74TmcPkI1X6" role="N3F5h">
       <property role="TrG5h" value="empty_1436870530698_53" />

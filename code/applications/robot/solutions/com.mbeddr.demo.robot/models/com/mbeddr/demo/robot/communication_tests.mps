@@ -20,10 +20,6 @@
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="8441331188640862326" name="com.mbeddr.core.statements.structure.BreakStatement" flags="ng" index="27uf6b" />
-      <concept id="8441331188640771826" name="com.mbeddr.core.statements.structure.WhileStatement" flags="ng" index="27v$Wf">
-        <child id="8441331188640771828" name="body" index="27v$W9" />
-        <child id="8441331188640771827" name="condition" index="27v$We" />
-      </concept>
       <concept id="6275792049641600983" name="com.mbeddr.core.statements.structure.IfStatement" flags="ng" index="c0U19">
         <child id="6275792049641600984" name="condition" index="c0U16" />
         <child id="6275792049641600985" name="thenPart" index="c0U17" />
@@ -84,9 +80,6 @@
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
       <concept id="6883925235272353061" name="com.mbeddr.core.pointers.structure.SizeOfExprForExpressions" flags="ng" index="Vihyy" />
-      <concept id="1595838349830846141" name="com.mbeddr.core.pointers.structure.ReferenceExpr" flags="ng" index="YInwV" />
-      <concept id="279446265608459824" name="com.mbeddr.core.pointers.structure.PointerType" flags="ng" index="3wxxNl" />
-      <concept id="279446265608463015" name="com.mbeddr.core.pointers.structure.DerefExpr" flags="ng" index="3wxyx2" />
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42">
         <child id="1452920870317474611" name="sizeExpr" index="1YbSNA" />
       </concept>
@@ -115,9 +108,6 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
-      <concept id="3788988821852026523" name="com.mbeddr.core.modules.structure.GlobalConstantRef" flags="ng" index="4ZOvp">
-        <reference id="3376775282622611130" name="constant" index="2DPCA0" />
-      </concept>
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
       </concept>
@@ -137,17 +127,10 @@
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
-      <concept id="5950410542643524492" name="com.mbeddr.core.modules.structure.FunctionCall" flags="ng" index="3O_q_g">
-        <reference id="5950410542643524493" name="function" index="3O_q_h" />
-        <child id="5950410542643524495" name="actuals" index="3O_q_j" />
-      </concept>
       <concept id="6610873504380357354" name="com.mbeddr.core.modules.structure.GlobalVarRef" flags="ng" index="1S7827">
         <reference id="6610873504380357355" name="var" index="1S7826" />
       </concept>
       <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz" />
-      <concept id="2093108837558505658" name="com.mbeddr.core.modules.structure.ArgumentRef" flags="ng" index="3ZUYvv">
-        <reference id="2093108837558505659" name="arg" index="3ZUYvu" />
-      </concept>
     </language>
     <language id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest">
       <concept id="6275792049641586523" name="com.mbeddr.core.unittest.structure.TestCase" flags="ng" index="c0Qz5">
@@ -168,11 +151,6 @@
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
       <concept id="4709703140582114943" name="com.mbeddr.ext.statemachines.structure.StatemachineConfigItem" flags="ng" index="3yF7LM">
         <property id="4709703140582114945" name="triggerAsConst" index="3yF7Mc" />
-      </concept>
-    </language>
-    <language id="41911c23-eb23-4ee6-872f-bc7f7ebce290" name="com.mbeddr.ext.components.test">
-      <concept id="572633089222371456" name="com.mbeddr.ext.components.test.structure.DirectFieldAccess" flags="ng" index="2UioT2">
-        <reference id="572633089222373887" name="field" index="2UipsX" />
       </concept>
     </language>
     <language id="54f2a59b-97bb-4c09-af92-928ebf9c5966" name="com.mbeddr.ext.compositecomponents">
@@ -247,12 +225,6 @@
       <concept id="7780999115923942144" name="com.mbeddr.ext.components.structure.AbstractInstanceConfiguration" flags="ng" index="5Js9S">
         <child id="7780999115923944213" name="contents" index="5JtDH" />
       </concept>
-      <concept id="5308710777891512019" name="com.mbeddr.ext.components.structure.Field" flags="ng" index="EbCE0">
-        <child id="5308710777891512022" name="init" index="EbCE5" />
-      </concept>
-      <concept id="5308710777891565561" name="com.mbeddr.ext.components.structure.FieldRef" flags="ng" index="EbZIE">
-        <reference id="5308710777891565562" name="field" index="EbZID" />
-      </concept>
       <concept id="4491876417845649024" name="com.mbeddr.ext.components.structure.InstanceConfiguration" flags="ng" index="2EWCtd" />
       <concept id="4491876417845649017" name="com.mbeddr.ext.components.structure.InstancePortRef" flags="ng" index="2EWCuO">
         <reference id="4491876417845649018" name="instance" index="2EWCuR" />
@@ -265,19 +237,6 @@
       <concept id="4491876417845649014" name="com.mbeddr.ext.components.structure.ComponentInstance" flags="ng" index="2EWCuV">
         <reference id="4491876417845649015" name="component" index="2EWCuU" />
         <child id="785275130114861567" name="initializers" index="3R_39I" />
-      </concept>
-      <concept id="4491876417845649011" name="com.mbeddr.ext.components.structure.AtomicComponent" flags="ng" index="2EWCuY" />
-      <concept id="4491876417845641677" name="com.mbeddr.ext.components.structure.OperationTrigger" flags="ng" index="2EWDw0" />
-      <concept id="4491876417845641670" name="com.mbeddr.ext.components.structure.Runnable" flags="ng" index="2EWDwb">
-        <child id="4491876417845643892" name="trigger" index="2EWDeT" />
-        <child id="4491876417845689763" name="body" index="2EWMhI" />
-      </concept>
-      <concept id="4491876417845628840" name="com.mbeddr.ext.components.structure.ProvidedPort" flags="ng" index="2EWHp_" />
-      <concept id="4491876417845484930" name="com.mbeddr.ext.components.structure.Port" flags="ng" index="2EX0hf">
-        <reference id="4491876417845484932" name="intf" index="2EX0h9" />
-      </concept>
-      <concept id="4491876417845474761" name="com.mbeddr.ext.components.structure.Component" flags="ng" index="2EX6K4">
-        <child id="6041318036221669720" name="contents" index="2RW2fA" />
       </concept>
       <concept id="8105003328815071749" name="com.mbeddr.ext.components.structure.InterfaceOperationCallExpr" flags="ng" index="2H6Oeg">
         <reference id="8105003328815071752" name="operation" index="2H6Oet" />
@@ -294,54 +253,26 @@
       <concept id="591155063063570513" name="com.mbeddr.ext.components.structure.InitializeConfiguration" flags="ng" index="3t9XKO">
         <reference id="591155063063570514" name="config" index="3t9XKR" />
       </concept>
-      <concept id="8515777736166878876" name="com.mbeddr.ext.components.structure.EmptyComponentContent" flags="ng" index="3Khz0B" />
       <concept id="785275130114861597" name="com.mbeddr.ext.components.structure.InitFieldInitializer" flags="ng" index="3R_36c">
         <reference id="785275130114861598" name="field" index="3R_36f" />
         <child id="785275130114861599" name="value" index="3R_36e" />
       </concept>
-      <concept id="1482737808881210672" name="com.mbeddr.ext.components.structure.IReferencesInstance" flags="ng" index="1XX6Gu">
-        <reference id="1482737808881210674" name="instance" index="1XX6Gs" />
-        <reference id="1482737808881210673" name="config" index="1XX6Gv" />
-      </concept>
-      <concept id="4514118643321588318" name="com.mbeddr.ext.components.structure.IOperationTriggerLike" flags="ng" index="1ZwTiz">
-        <reference id="4514118643321619583" name="calledOperation" index="1ZwxE2" />
-        <reference id="4514118643321592184" name="providedPort" index="1ZwSu5" />
-      </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
-      <concept id="7615572890648529894" name="com.mbeddr.core.expressions.structure.NotEqualsExpression" flags="ng" index="25Bbzn" />
-      <concept id="8463282783691618456" name="com.mbeddr.core.expressions.structure.UnsignedInt64tType" flags="ng" index="26Vqp1" />
       <concept id="8463282783691618461" name="com.mbeddr.core.expressions.structure.UnsignedInt8tType" flags="ng" index="26Vqp4" />
       <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
-      <concept id="8463282783691618466" name="com.mbeddr.core.expressions.structure.UnsignedInt16tType" flags="ng" index="26VqpV" />
       <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
       </concept>
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
       </concept>
-      <concept id="8729447926330528686" name="com.mbeddr.core.expressions.structure.TernaryExpression" flags="ng" index="n5E$d">
-        <child id="8729447926330528687" name="condition" index="n5E$c" />
-        <child id="8729447926330528689" name="elseExpr" index="n5E$i" />
-        <child id="8729447926330528688" name="thenExpr" index="n5E$j" />
-      </concept>
-      <concept id="5763383285156373020" name="com.mbeddr.core.expressions.structure.MultiExpression" flags="ng" index="2BOcij" />
-      <concept id="5763383285156373018" name="com.mbeddr.core.expressions.structure.MinusExpression" flags="ng" index="2BOcil" />
-      <concept id="5763383285156373013" name="com.mbeddr.core.expressions.structure.PlusExpression" flags="ng" index="2BOciq" />
-      <concept id="5763383285156533447" name="com.mbeddr.core.expressions.structure.ParensExpression" flags="ng" index="2BPB98" />
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
-      <concept id="8399455261460717640" name="com.mbeddr.core.expressions.structure.AndExpression" flags="ng" index="2EHzL6" />
-      <concept id="1136530067488156615" name="com.mbeddr.core.expressions.structure.BitwiseORExpression" flags="ng" index="EUQZk" />
-      <concept id="5962749441518381743" name="com.mbeddr.core.expressions.structure.BitwiseAndExpression" flags="ng" index="SSPID" />
       <concept id="3820836583575227340" name="com.mbeddr.core.expressions.structure.DirectPlusAssignmentExpression" flags="ng" index="TPXPH" />
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
-      <concept id="9013371069686136255" name="com.mbeddr.core.expressions.structure.BitwiseLeftShiftExpression" flags="ng" index="3oul24" />
-      <concept id="9013371069685947728" name="com.mbeddr.core.expressions.structure.BitwiseRightShiftExpression" flags="ng" index="3ov31F" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
-      <concept id="3976803464656498418" name="com.mbeddr.core.expressions.structure.PreDecrementExpression" flags="ng" index="1FldXs" />
-      <concept id="3976803464656498416" name="com.mbeddr.core.expressions.structure.PostDecrementExpression" flags="ng" index="1FldXu" />
       <concept id="1054289341113496566" name="com.mbeddr.core.expressions.structure.BinaryNumberLiteral" flags="ng" index="3HbmlB" />
       <concept id="1054289341113450444" name="com.mbeddr.core.expressions.structure.HexNumberLiteral" flags="ng" index="3Hbq_t" />
       <concept id="6610873504380029780" name="com.mbeddr.core.expressions.structure.CastExpression" flags="ng" index="1S8S4T">
@@ -349,9 +280,7 @@
         <child id="6610873504380029782" name="expr" index="1S8S4V" />
       </concept>
       <concept id="8860443239512147449" name="com.mbeddr.core.expressions.structure.LessExpression" flags="ng" index="3Tl9Jn" />
-      <concept id="8860443239512147445" name="com.mbeddr.core.expressions.structure.GreaterExpression" flags="ng" index="3Tl9Jr" />
       <concept id="8860443239512129322" name="com.mbeddr.core.expressions.structure.EqualsExpression" flags="ng" index="3TlM44" />
-      <concept id="8860443239512128058" name="com.mbeddr.core.expressions.structure.BooleanType" flags="ng" index="3TlMgk" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
@@ -361,8 +290,6 @@
         <child id="8860443239512128065" name="right" index="3TlMhJ" />
       </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
-      <concept id="8860443239512128099" name="com.mbeddr.core.expressions.structure.FalseLiteral" flags="ng" index="3TlMhd" />
-      <concept id="8860443239512128094" name="com.mbeddr.core.expressions.structure.TrueLiteral" flags="ng" index="3TlMhK" />
       <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
     </language>
   </registry>
@@ -406,12 +333,6 @@
       <node concept="2v9HqM" id="3dY_OIZkR2X" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
       </node>
-      <node concept="2v9HqM" id="2JGF63bJybQ" role="2eOfOg">
-        <ref role="2v9HqP" node="2JGF63bJs10" resolve="RadioTests" />
-      </node>
-      <node concept="2v9HqM" id="2Z$TrjNbQO4" role="2eOfOg">
-        <ref role="2v9HqP" node="2Z$TrjNbEC4" resolve="OversamplingRadioTests" />
-      </node>
     </node>
     <node concept="3V4jtR" id="1XyQ$8LAv3o" role="2Q9xDr">
       <node concept="3VbeTE" id="5zHWU$HeAiA" role="3Vb1WL" />
@@ -444,7 +365,7 @@
       <property role="TrG5h" value="empty_1436973361162_10" />
     </node>
     <node concept="1S7NMz" id="WklGGZ$3Qb" role="N3F5h">
-      <property role="TrG5h" value="encoderInputBufferArray" />
+      <property role="TrG5h" value="bufferArray" />
       <node concept="3J0A42" id="WklGGZ$3T_" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
@@ -457,25 +378,11 @@
         </node>
       </node>
     </node>
-    <node concept="1S7NMz" id="4TJtxzSVRrQ" role="N3F5h">
-      <property role="TrG5h" value="decoderOutputBufferArray" />
-      <node concept="3J0A42" id="4TJtxzSVRrR" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-        <node concept="26Vqp4" id="4TJtxzSVRrS" role="2umbIo">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-        <node concept="3TlMh9" id="4TJtxzSVRrT" role="1YbSNA">
-          <property role="2hmy$m" value="32" />
-        </node>
-      </node>
-    </node>
     <node concept="2EWCtd" id="WklGGZpecB" role="N3F5h">
       <property role="TrG5h" value="ManchesterInstances" />
       <node concept="2EWCuV" id="WklGGZpemx" role="5JtDH">
         <property role="TrG5h" value="encoder" />
-        <ref role="2EWCuU" to="azo0:6tw98Xd46RD" resolve="ManchesterInputEncoder" />
+        <ref role="2EWCuU" to="azo0:WklGGZnNUu" resolve="ManchesterOutputEncoder" />
         <node concept="gqqVs" id="WklGGZ$hzQ" role="lGtFl">
           <property role="gqqTZ" value="24.0" />
           <property role="gqqTW" value="92.0" />
@@ -494,7 +401,7 @@
       </node>
       <node concept="2EWCuV" id="WklGGZpgbJ" role="5JtDH">
         <property role="TrG5h" value="decoder" />
-        <ref role="2EWCuU" to="azo0:6tw98Xd4j$g" resolve="ManchesterOutputDecoder" />
+        <ref role="2EWCuU" to="azo0:WklGGZoT04" resolve="ManchesterInputDecoder" />
         <node concept="gqqVs" id="WklGGZ$hzT" role="lGtFl">
           <property role="gqqTZ" value="24.0" />
           <property role="gqqTW" value="12.0" />
@@ -511,44 +418,8 @@
           </node>
         </node>
       </node>
-      <node concept="JAGxh" id="4TJtxzSVO6n" role="5JtDH" />
-      <node concept="2EWCuV" id="WklGGZ$3xh" role="5JtDH">
-        <property role="TrG5h" value="_encoderInputBuffer" />
-        <ref role="2EWCuU" to="ec8n:WklGGZpiFH" resolve="RingBuffer" />
-        <node concept="3R_36c" id="WklGGZ$3Dq" role="3R_39I">
-          <ref role="3R_36f" to="ec8n:WklGGZpph4" resolve="buffer" />
-          <node concept="1S7827" id="WklGGZ$4bL" role="3R_36e">
-            <ref role="1S7826" node="WklGGZ$3Qb" resolve="encoderInputBufferArray" />
-          </node>
-        </node>
-        <node concept="3R_36c" id="WklGGZ$3Dr" role="3R_39I">
-          <ref role="3R_36f" to="ec8n:WklGGZpsT3" resolve="bufferSize" />
-          <node concept="1S8S4T" id="WklGGZ$4se" role="3R_36e">
-            <node concept="Vihyy" id="WklGGZ$4h6" role="1S8S4V">
-              <node concept="1S7827" id="WklGGZ$4k5" role="1_9fRO">
-                <ref role="1S7826" node="WklGGZ$3Qb" resolve="encoderInputBufferArray" />
-              </node>
-            </node>
-            <node concept="26Vqp4" id="WklGGZ$4vM" role="1S8S4N">
-              <property role="2caQfQ" value="false" />
-              <property role="2c7vTL" value="false" />
-            </node>
-          </node>
-        </node>
-        <node concept="gqqVs" id="WklGGZ$h$0" role="lGtFl">
-          <property role="gqqTZ" value="809.0" />
-          <property role="gqqTW" value="75.0" />
-          <property role="gqqTX" value="331.0" />
-          <property role="gqqTy" value="58.0" />
-          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-          <node concept="1pa3jb" id="WklGGZ$h$1" role="1pap1a">
-            <property role="1pa3iD" value="fifo" />
-            <property role="2gRgW$" value="536870911" />
-          </node>
-        </node>
-      </node>
       <node concept="2EWCuV" id="WklGGZ$2SS" role="5JtDH">
-        <property role="TrG5h" value="encoderInputStreamBuffer" />
+        <property role="TrG5h" value="streamAdapter" />
         <ref role="2EWCuU" to="azo0:WklGGZzYYs" resolve="StreamBuffer" />
         <node concept="gqqVs" id="WklGGZ$hzW" role="lGtFl">
           <property role="gqqTZ" value="392.0" />
@@ -570,103 +441,59 @@
           </node>
         </node>
       </node>
-      <node concept="2EWCuP" id="4TJtxzSVSiQ" role="5JtDH">
-        <node concept="2EWCuO" id="4TJtxzSVSiR" role="2EWCuL">
-          <ref role="2EWCuR" node="WklGGZ$2SS" resolve="encoderInputStreamBuffer" />
-          <ref role="XcPQd" to="azo0:WklGGZ$0gC" resolve="buffer" />
-        </node>
-        <node concept="2EWCuO" id="4TJtxzSVSiS" role="2EWCuK">
-          <ref role="2EWCuR" node="WklGGZ$3xh" resolve="_encoderInputBuffer" />
-          <ref role="XcPQd" to="ec8n:WklGGZpsr$" resolve="fifo" />
-        </node>
-      </node>
-      <node concept="2EWCuP" id="WklGGZ$5gh" role="5JtDH">
-        <node concept="2EWCuO" id="WklGGZ$5gi" role="2EWCuL">
-          <ref role="2EWCuR" node="WklGGZpemx" resolve="encoder" />
-          <ref role="XcPQd" to="azo0:6tw98Xd47GL" resolve="in" />
-        </node>
-        <node concept="2EWCuO" id="WklGGZ$5gk" role="2EWCuK">
-          <ref role="2EWCuR" node="WklGGZ$2SS" resolve="encoderInputStreamBuffer" />
-          <ref role="XcPQd" to="azo0:WklGGZ$0Pu" resolve="in" />
-        </node>
-      </node>
-      <node concept="JAGxh" id="4TJtxzSVSm9" role="5JtDH" />
-      <node concept="2EWCuV" id="4TJtxzSVSq5" role="5JtDH">
-        <property role="TrG5h" value="_decoderOutputBuffer" />
+      <node concept="2EWCuV" id="WklGGZ$3xh" role="5JtDH">
+        <property role="TrG5h" value="buffer" />
         <ref role="2EWCuU" to="ec8n:WklGGZpiFH" resolve="RingBuffer" />
-        <node concept="3R_36c" id="4TJtxzSVSq6" role="3R_39I">
+        <node concept="3R_36c" id="WklGGZ$3Dq" role="3R_39I">
           <ref role="3R_36f" to="ec8n:WklGGZpph4" resolve="buffer" />
-          <node concept="1S7827" id="4TJtxzSVSq7" role="3R_36e">
-            <ref role="1S7826" node="WklGGZ$3Qb" resolve="encoderInputBufferArray" />
+          <node concept="1S7827" id="WklGGZ$4bL" role="3R_36e">
+            <ref role="1S7826" node="WklGGZ$3Qb" resolve="bufferArray" />
           </node>
         </node>
-        <node concept="3R_36c" id="4TJtxzSVSq8" role="3R_39I">
+        <node concept="3R_36c" id="WklGGZ$3Dr" role="3R_39I">
           <ref role="3R_36f" to="ec8n:WklGGZpsT3" resolve="bufferSize" />
-          <node concept="1S8S4T" id="4TJtxzSVSq9" role="3R_36e">
-            <node concept="Vihyy" id="4TJtxzSVSqa" role="1S8S4V">
-              <node concept="1S7827" id="4TJtxzSVSqb" role="1_9fRO">
-                <ref role="1S7826" node="WklGGZ$3Qb" resolve="encoderInputBufferArray" />
+          <node concept="1S8S4T" id="WklGGZ$4se" role="3R_36e">
+            <node concept="Vihyy" id="WklGGZ$4h6" role="1S8S4V">
+              <node concept="1S7827" id="WklGGZ$4k5" role="1_9fRO">
+                <ref role="1S7826" node="WklGGZ$3Qb" resolve="bufferArray" />
               </node>
             </node>
-            <node concept="26Vqp4" id="4TJtxzSVSqc" role="1S8S4N">
+            <node concept="26Vqp4" id="WklGGZ$4vM" role="1S8S4N">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>
           </node>
         </node>
-        <node concept="gqqVs" id="4TJtxzSVSqd" role="lGtFl">
+        <node concept="gqqVs" id="WklGGZ$h$0" role="lGtFl">
           <property role="gqqTZ" value="809.0" />
           <property role="gqqTW" value="75.0" />
           <property role="gqqTX" value="331.0" />
           <property role="gqqTy" value="58.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-          <node concept="1pa3jb" id="4TJtxzSVSqe" role="1pap1a">
+          <node concept="1pa3jb" id="WklGGZ$h$1" role="1pap1a">
             <property role="1pa3iD" value="fifo" />
             <property role="2gRgW$" value="536870911" />
           </node>
         </node>
       </node>
-      <node concept="2EWCuV" id="4TJtxzSVSqf" role="5JtDH">
-        <property role="TrG5h" value="decoderOutputStreamBuffer" />
-        <ref role="2EWCuU" to="azo0:WklGGZzYYs" resolve="StreamBuffer" />
-        <node concept="gqqVs" id="4TJtxzSVSqg" role="lGtFl">
-          <property role="gqqTZ" value="392.0" />
-          <property role="gqqTW" value="89.0" />
-          <property role="gqqTX" value="216.0" />
-          <property role="gqqTy" value="30.0" />
-          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-          <node concept="1pa3jb" id="4TJtxzSVSqh" role="1pap1a">
-            <property role="1pa3iD" value="in" />
-            <property role="2gRgW$" value="286331152" />
-          </node>
-          <node concept="1pa3jb" id="4TJtxzSVSqi" role="1pap1a">
-            <property role="1pa3iD" value="out" />
-            <property role="2gRgW$" value="787410670" />
-          </node>
-          <node concept="1pa3jb" id="4TJtxzSVSqj" role="1pap1a">
-            <property role="1pa3iD" value="buffer" />
-            <property role="2gRgW$" value="1610612734" />
-          </node>
+      <node concept="2EWCuP" id="WklGGZ$5gh" role="5JtDH">
+        <node concept="2EWCuO" id="WklGGZ$5gi" role="2EWCuL">
+          <ref role="2EWCuR" node="WklGGZpemx" resolve="encoder" />
+          <ref role="XcPQd" to="azo0:WklGGZnOaL" resolve="out" />
         </node>
-      </node>
-      <node concept="2EWCuP" id="4TJtxzSVSqk" role="5JtDH">
-        <node concept="2EWCuO" id="4TJtxzSVSql" role="2EWCuL">
-          <ref role="2EWCuR" node="4TJtxzSVSqf" resolve="decoderOutputStreamBuffer" />
-          <ref role="XcPQd" to="azo0:WklGGZ$0gC" resolve="buffer" />
-        </node>
-        <node concept="2EWCuO" id="4TJtxzSVSqm" role="2EWCuK">
-          <ref role="2EWCuR" node="4TJtxzSVSq5" resolve="_decoderOutputBuffer" />
-          <ref role="XcPQd" to="ec8n:WklGGZpsr$" resolve="fifo" />
+        <node concept="2EWCuO" id="WklGGZ$5gk" role="2EWCuK">
+          <ref role="2EWCuR" node="WklGGZ$2SS" resolve="streamAdapter" />
+          <ref role="XcPQd" to="azo0:WklGGZ$0Vg" resolve="out" />
         </node>
       </node>
       <node concept="2EWCuP" id="WklGGZ$g4T" role="5JtDH">
         <node concept="2EWCuO" id="WklGGZ$g4U" role="2EWCuL">
           <ref role="2EWCuR" node="WklGGZpgbJ" resolve="decoder" />
-          <ref role="XcPQd" to="azo0:6tw98Xd4kAo" resolve="out" />
+          <ref role="XcPQd" to="azo0:WklGGZoU33" resolve="in" />
         </node>
         <node concept="2EWCuO" id="WklGGZ$g4W" role="2EWCuK">
-          <ref role="2EWCuR" node="4TJtxzSVSqf" resolve="decoderOutputStreamBuffer" />
-          <ref role="XcPQd" to="azo0:WklGGZ$0Vg" resolve="out" />
+          <ref role="2EWCuR" node="WklGGZ$2SS" resolve="streamAdapter" />
+          <ref role="XcPQd" to="azo0:WklGGZ$0Pu" resolve="in" />
         </node>
         <node concept="2VclpC" id="WklGGZ$h$h" role="lGtFl">
           <node concept="2VclrF" id="WklGGZ$h$i" role="2Vcluh">
@@ -679,33 +506,35 @@
           </node>
         </node>
       </node>
-      <node concept="JAGxh" id="4TJtxzSVSwi" role="5JtDH" />
+      <node concept="2EWCuP" id="WklGGZ$gcy" role="5JtDH">
+        <node concept="2EWCuO" id="WklGGZ$gcz" role="2EWCuL">
+          <ref role="2EWCuR" node="WklGGZ$2SS" resolve="streamAdapter" />
+          <ref role="XcPQd" to="azo0:WklGGZ$0gC" resolve="buffer" />
+        </node>
+        <node concept="2EWCuO" id="WklGGZ$gc_" role="2EWCuK">
+          <ref role="2EWCuR" node="WklGGZ$3xh" resolve="buffer" />
+          <ref role="XcPQd" to="ec8n:WklGGZpsr$" resolve="fifo" />
+        </node>
+      </node>
       <node concept="JAGxh" id="WklGGZpejx" role="5JtDH" />
       <node concept="21gPQu" id="WklGGZ$j71" role="5JtDH">
-        <property role="TrG5h" value="encoderBitsOut" />
+        <property role="TrG5h" value="encoderStream" />
         <node concept="219P8x" id="WklGGZ$j72" role="21ad3a">
           <ref role="219P8w" node="WklGGZpemx" resolve="encoder" />
-          <ref role="219P8J" to="azo0:4TJtxzSUDU2" resolve="bitOut" />
+          <ref role="219P8J" to="azo0:WklGGZnOq5" resolve="in" />
         </node>
       </node>
       <node concept="21gPQu" id="WklGGZ$jhA" role="5JtDH">
-        <property role="TrG5h" value="decoderBitsIn" />
+        <property role="TrG5h" value="decoderStream" />
         <node concept="219P8x" id="WklGGZ$jhB" role="21ad3a">
           <ref role="219P8w" node="WklGGZpgbJ" resolve="decoder" />
-          <ref role="219P8J" to="azo0:4TJtxzSVta7" resolve="bitsIn" />
+          <ref role="219P8J" to="azo0:WklGGZoTUu" resolve="out" />
         </node>
       </node>
       <node concept="21gPQu" id="WklGGZF8FU" role="5JtDH">
-        <property role="TrG5h" value="encoderInputBuffer" />
+        <property role="TrG5h" value="adapterBuffer" />
         <node concept="219P8x" id="WklGGZF8FV" role="21ad3a">
-          <ref role="219P8w" node="WklGGZ$3xh" resolve="_encoderInputBuffer" />
-          <ref role="219P8J" to="ec8n:WklGGZpsr$" resolve="fifo" />
-        </node>
-      </node>
-      <node concept="21gPQu" id="4TJtxzSVSKn" role="5JtDH">
-        <property role="TrG5h" value="decoderOutputBuffer" />
-        <node concept="219P8x" id="4TJtxzSVSKo" role="21ad3a">
-          <ref role="219P8w" node="4TJtxzSVSq5" resolve="_decoderOutputBuffer" />
+          <ref role="219P8w" node="WklGGZ$3xh" resolve="buffer" />
           <ref role="219P8J" to="ec8n:WklGGZpsr$" resolve="fifo" />
         </node>
       </node>
@@ -847,177 +676,8 @@
     <node concept="2NXPZ9" id="WklGGZpfyZ" role="N3F5h">
       <property role="TrG5h" value="empty_1436973418304_13" />
     </node>
-    <node concept="N3Fnx" id="4TJtxzSVVwy" role="N3F5h">
-      <property role="TrG5h" value="readByteFromEncoder" />
-      <node concept="26Vqp4" id="4TJtxzSVWo3" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="3XIRFW" id="4TJtxzSVVw$" role="3XIRFX">
-        <node concept="3XIRlf" id="4TJtxzSVWof" role="3XIRFZ">
-          <property role="TrG5h" value="data" />
-          <node concept="26Vqp4" id="4TJtxzSVWod" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-          <node concept="3TlMh9" id="4TJtxzSVWp8" role="3XIe9u">
-            <property role="2hmy$m" value="0" />
-          </node>
-        </node>
-        <node concept="1_a8vi" id="4TJtxzSVWpP" role="3XIRFZ">
-          <node concept="3XIRFW" id="4TJtxzSVWpQ" role="1_amYn">
-            <node concept="1_9egQ" id="4TJtxzT5Q8s" role="3XIRFZ">
-              <node concept="3pqW6w" id="4TJtxzT5QKx" role="1_9egR">
-                <node concept="3ZVu4v" id="4TJtxzT5QKI" role="3TlMhI">
-                  <ref role="3ZVs_2" node="4TJtxzSVWof" resolve="data" />
-                </node>
-                <node concept="EUQZk" id="4TJtxzT5QKz" role="3TlMhJ">
-                  <node concept="2BPB98" id="4TJtxzT5QK$" role="3TlMhJ">
-                    <node concept="n5E$d" id="4TJtxzT5QK_" role="1_9fRO">
-                      <node concept="3TlMh9" id="4TJtxzT5QKA" role="n5E$j">
-                        <property role="2hmy$m" value="1" />
-                      </node>
-                      <node concept="3TlMh9" id="4TJtxzT5QKB" role="n5E$i">
-                        <property role="2hmy$m" value="0" />
-                      </node>
-                      <node concept="30IJZa" id="4TJtxzT5Sk1" role="n5E$c">
-                        <ref role="2H6Oet" to="azo0:4TJtxzSUyZV" resolve="readBit" />
-                        <node concept="2H6Wec" id="4TJtxzT5RLx" role="1_9fRO">
-                          <ref role="2H6Wef" node="WklGGZ$j71" resolve="encoderBitsOut" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2BPB98" id="4TJtxzT5QKE" role="3TlMhI">
-                    <node concept="3oul24" id="4TJtxzT5QKF" role="1_9fRO">
-                      <node concept="3TlMh9" id="4TJtxzT5QKG" role="3TlMhJ">
-                        <property role="2hmy$m" value="1" />
-                      </node>
-                      <node concept="3ZVu4v" id="4TJtxzT5QKH" role="3TlMhI">
-                        <ref role="3ZVs_2" node="4TJtxzSVWof" resolve="data" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1_amY7" id="4TJtxzSVWq7" role="1_amZ$">
-            <property role="TrG5h" value="i" />
-            <node concept="26Vqp4" id="4TJtxzSVWq6" role="2C2TGm">
-              <property role="2caQfQ" value="false" />
-              <property role="2c7vTL" value="false" />
-            </node>
-            <node concept="3TlMh9" id="4TJtxzSVWqu" role="3XIe9u">
-              <property role="2hmy$m" value="0" />
-            </node>
-          </node>
-          <node concept="3Tl9Jn" id="4TJtxzSVWso" role="1_amZB">
-            <node concept="3TlMh9" id="4TJtxzSVWsr" role="3TlMhJ">
-              <property role="2hmy$m" value="8" />
-            </node>
-            <node concept="3ZVu4v" id="4TJtxzSVWqQ" role="3TlMhI">
-              <ref role="3ZVs_2" node="4TJtxzSVWq7" resolve="i" />
-            </node>
-          </node>
-          <node concept="3TM6Ey" id="4TJtxzSVWv$" role="1_amZy">
-            <node concept="3ZVu4v" id="4TJtxzSVWtG" role="1_9fRO">
-              <ref role="3ZVs_2" node="4TJtxzSVWq7" resolve="i" />
-            </node>
-          </node>
-        </node>
-        <node concept="2BFjQ_" id="4TJtxzSVY5N" role="3XIRFZ">
-          <node concept="3ZVu4v" id="4TJtxzSVYhy" role="2BFjQA">
-            <ref role="3ZVs_2" node="4TJtxzSVWof" resolve="data" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2NXPZ9" id="WklGGZpfzz" role="N3F5h">
       <property role="TrG5h" value="empty_1436973418457_14" />
-    </node>
-    <node concept="N3Fnx" id="4TJtxzSW2Rr" role="N3F5h">
-      <property role="TrG5h" value="writeByteToDecoder" />
-      <node concept="19RgSI" id="4TJtxzSW3RK" role="1UOdpc">
-        <property role="TrG5h" value="data" />
-        <node concept="26Vqp4" id="4TJtxzSW3RI" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-      <node concept="19Rifw" id="4TJtxzSW2Rs" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="3XIRFW" id="4TJtxzSW2Rt" role="3XIRFX">
-        <node concept="1_a8vi" id="4TJtxzSW3WG" role="3XIRFZ">
-          <node concept="3XIRFW" id="4TJtxzSW3WH" role="1_amYn">
-            <node concept="1_9egQ" id="4TJtxzT2afo" role="3XIRFZ">
-              <node concept="30IJZa" id="4TJtxzT2ahA" role="1_9egR">
-                <ref role="2H6Oet" to="azo0:4TJtxzSUz1n" resolve="writeBit" />
-                <node concept="25Bbzn" id="4TJtxzT2aiE" role="2H6KYo">
-                  <node concept="3TlMh9" id="4TJtxzT2aiF" role="3TlMhJ">
-                    <property role="2hmy$m" value="0" />
-                  </node>
-                  <node concept="2BPB98" id="4TJtxzT2aiG" role="3TlMhI">
-                    <node concept="SSPID" id="4TJtxzT2aiH" role="1_9fRO">
-                      <node concept="2BPB98" id="4TJtxzT2aiI" role="3TlMhJ">
-                        <node concept="3oul24" id="4TJtxzT2aiJ" role="1_9fRO">
-                          <node concept="2BPB98" id="4TJtxzT2aiK" role="3TlMhJ">
-                            <node concept="2BOcil" id="4TJtxzT2aiL" role="1_9fRO">
-                              <node concept="3ZVu4v" id="4TJtxzT2aiM" role="3TlMhJ">
-                                <ref role="3ZVs_2" node="4TJtxzSW3WW" resolve="i" />
-                              </node>
-                              <node concept="3TlMh9" id="4TJtxzT2aiN" role="3TlMhI">
-                                <property role="2hmy$m" value="7" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3TlMh9" id="4TJtxzT2aiO" role="3TlMhI">
-                            <property role="2hmy$m" value="1" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3ZUYvv" id="4TJtxzT2aiP" role="3TlMhI">
-                        <ref role="3ZUYvu" node="4TJtxzSW3RK" resolve="data" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2H6Wec" id="4TJtxzT2afm" role="1_9fRO">
-                  <ref role="2H6Wef" node="WklGGZ$jhA" resolve="decoderBitsIn" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1_amY7" id="4TJtxzSW3WW" role="1_amZ$">
-            <property role="TrG5h" value="i" />
-            <node concept="26Vqp4" id="4TJtxzSW3WX" role="2C2TGm">
-              <property role="2caQfQ" value="false" />
-              <property role="2c7vTL" value="false" />
-            </node>
-            <node concept="3TlMh9" id="4TJtxzSW3WY" role="3XIe9u">
-              <property role="2hmy$m" value="0" />
-            </node>
-          </node>
-          <node concept="3Tl9Jn" id="4TJtxzSW3WZ" role="1_amZB">
-            <node concept="3TlMh9" id="4TJtxzSW3X0" role="3TlMhJ">
-              <property role="2hmy$m" value="8" />
-            </node>
-            <node concept="3ZVu4v" id="4TJtxzSW3X1" role="3TlMhI">
-              <ref role="3ZVs_2" node="4TJtxzSW3WW" resolve="i" />
-            </node>
-          </node>
-          <node concept="3TM6Ey" id="4TJtxzSW3X2" role="1_amZy">
-            <node concept="3ZVu4v" id="4TJtxzSW3X3" role="1_9fRO">
-              <ref role="3ZVs_2" node="4TJtxzSW3WW" resolve="i" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2NXPZ9" id="4TJtxzSW1Sm" role="N3F5h">
-      <property role="TrG5h" value="empty_1437724440646_14" />
     </node>
     <node concept="c0Qz5" id="WklGGZF81o" role="N3F5h">
       <property role="2OOxQR" value="true" />
@@ -1031,29 +691,11 @@
           <ref role="3t9XKR" node="WklGGZpecB" resolve="ManchesterInstances" />
         </node>
         <node concept="3XISUE" id="WklGGZFFlf" role="3XIRFZ" />
-        <node concept="1QiMYF" id="4TJtxzT$jcj" role="3XIRFZ">
-          <node concept="OjmMv" id="4TJtxzT$jcl" role="3SJzmv">
-            <node concept="19SGf9" id="4TJtxzT$jcm" role="OjmMu">
-              <node concept="19SUe$" id="4TJtxzT$jcn" role="19SJt6">
-                <property role="19SUeA" value="byte beginning marker" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2N2KuS" id="4TJtxzT$iAO" role="3XIRFZ">
-          <node concept="3HbmlB" id="4TJtxzT$iAP" role="2N2GHh">
-            <property role="2hmy$m" value="10111000" />
-          </node>
-          <node concept="3O_q_g" id="4TJtxzT$iAQ" role="2N2GHg">
-            <ref role="3O_q_h" node="4TJtxzSVVwy" resolve="readByteFromEncoder" />
-          </node>
-        </node>
-        <node concept="3XISUE" id="4TJtxzT$j8S" role="3XIRFZ" />
         <node concept="1_9egQ" id="WklGGZF9ew" role="3XIRFZ">
           <node concept="30IJZa" id="WklGGZF9gY" role="1_9egR">
-            <ref role="2H6Oet" to="ec8n:WklGGZprBg" resolve="put" />
-            <node concept="2H6Wec" id="4TJtxzSVTsO" role="1_9fRO">
-              <ref role="2H6Wef" node="WklGGZF8FU" resolve="encoderInputBuffer" />
+            <ref role="2H6Oet" to="azo0:74TmcPjUr5$" resolve="writeByte" />
+            <node concept="2H6Wec" id="WklGGZF9ev" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZ$j71" resolve="encoderStream" />
             </node>
             <node concept="3HbmlB" id="WklGGZF9vS" role="2H6KYo">
               <property role="2hmy$m" value="00000000" />
@@ -1064,24 +706,30 @@
           <node concept="3HbmlB" id="WklGGZFa3M" role="2N2GHh">
             <property role="2hmy$m" value="01010101" />
           </node>
-          <node concept="3O_q_g" id="4TJtxzSVYGJ" role="2N2GHg">
-            <ref role="3O_q_h" node="4TJtxzSVVwy" resolve="readByteFromEncoder" />
+          <node concept="30IJZa" id="WklGGZF9Xn" role="2N2GHg">
+            <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
+            <node concept="2H6Wec" id="WklGGZF9Tf" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZF8FU" resolve="adapterBuffer" />
+            </node>
           </node>
         </node>
         <node concept="2N2KuS" id="WklGGZFagn" role="3XIRFZ">
           <node concept="3HbmlB" id="WklGGZFago" role="2N2GHh">
             <property role="2hmy$m" value="01010101" />
           </node>
-          <node concept="3O_q_g" id="4TJtxzSVYL8" role="2N2GHg">
-            <ref role="3O_q_h" node="4TJtxzSVVwy" resolve="readByteFromEncoder" />
+          <node concept="30IJZa" id="WklGGZFagp" role="2N2GHg">
+            <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
+            <node concept="2H6Wec" id="WklGGZFagq" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZF8FU" resolve="adapterBuffer" />
+            </node>
           </node>
         </node>
         <node concept="3XISUE" id="WklGGZFal4" role="3XIRFZ" />
         <node concept="1_9egQ" id="WklGGZFaB3" role="3XIRFZ">
           <node concept="30IJZa" id="WklGGZFaB4" role="1_9egR">
-            <ref role="2H6Oet" to="ec8n:WklGGZprBg" resolve="put" />
-            <node concept="2H6Wec" id="4TJtxzSVZ8W" role="1_9fRO">
-              <ref role="2H6Wef" node="WklGGZF8FU" resolve="encoderInputBuffer" />
+            <ref role="2H6Oet" to="azo0:74TmcPjUr5$" resolve="writeByte" />
+            <node concept="2H6Wec" id="WklGGZFaB5" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZ$j71" resolve="encoderStream" />
             </node>
             <node concept="3HbmlB" id="WklGGZFaB6" role="2H6KYo">
               <property role="2hmy$m" value="11111111" />
@@ -1092,27 +740,33 @@
           <node concept="3HbmlB" id="WklGGZFaB8" role="2N2GHh">
             <property role="2hmy$m" value="10101010" />
           </node>
-          <node concept="3O_q_g" id="4TJtxzSVYOP" role="2N2GHg">
-            <ref role="3O_q_h" node="4TJtxzSVVwy" resolve="readByteFromEncoder" />
+          <node concept="30IJZa" id="WklGGZFaB9" role="2N2GHg">
+            <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
+            <node concept="2H6Wec" id="WklGGZFaBa" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZF8FU" resolve="adapterBuffer" />
+            </node>
           </node>
         </node>
         <node concept="2N2KuS" id="WklGGZFaBb" role="3XIRFZ">
           <node concept="3HbmlB" id="WklGGZFaBc" role="2N2GHh">
             <property role="2hmy$m" value="10101010" />
           </node>
-          <node concept="3O_q_g" id="4TJtxzSVYSs" role="2N2GHg">
-            <ref role="3O_q_h" node="4TJtxzSVVwy" resolve="readByteFromEncoder" />
+          <node concept="30IJZa" id="WklGGZFaBd" role="2N2GHg">
+            <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
+            <node concept="2H6Wec" id="WklGGZFaBe" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZF8FU" resolve="adapterBuffer" />
+            </node>
           </node>
         </node>
         <node concept="3XISUE" id="WklGGZFbit" role="3XIRFZ" />
         <node concept="1_9egQ" id="WklGGZFbnu" role="3XIRFZ">
           <node concept="30IJZa" id="WklGGZFbnv" role="1_9egR">
-            <ref role="2H6Oet" to="ec8n:WklGGZprBg" resolve="put" />
+            <ref role="2H6Oet" to="azo0:74TmcPjUr5$" resolve="writeByte" />
             <node concept="3HbmlB" id="WklGGZFbnx" role="2H6KYo">
               <property role="2hmy$m" value="11000001" />
             </node>
-            <node concept="2H6Wec" id="4TJtxzSVZBM" role="1_9fRO">
-              <ref role="2H6Wef" node="WklGGZF8FU" resolve="encoderInputBuffer" />
+            <node concept="2H6Wec" id="WklGGZFbnw" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZ$j71" resolve="encoderStream" />
             </node>
           </node>
         </node>
@@ -1120,27 +774,33 @@
           <node concept="3HbmlB" id="WklGGZFbnz" role="2N2GHh">
             <property role="2hmy$m" value="10100101" />
           </node>
-          <node concept="3O_q_g" id="4TJtxzSVYVX" role="2N2GHg">
-            <ref role="3O_q_h" node="4TJtxzSVVwy" resolve="readByteFromEncoder" />
+          <node concept="30IJZa" id="WklGGZFbn$" role="2N2GHg">
+            <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
+            <node concept="2H6Wec" id="WklGGZFbn_" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZF8FU" resolve="adapterBuffer" />
+            </node>
           </node>
         </node>
         <node concept="2N2KuS" id="WklGGZFbnA" role="3XIRFZ">
           <node concept="3HbmlB" id="WklGGZFbnB" role="2N2GHh">
             <property role="2hmy$m" value="01010110" />
           </node>
-          <node concept="3O_q_g" id="4TJtxzSVYZo" role="2N2GHg">
-            <ref role="3O_q_h" node="4TJtxzSVVwy" resolve="readByteFromEncoder" />
+          <node concept="30IJZa" id="WklGGZFbnC" role="2N2GHg">
+            <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
+            <node concept="2H6Wec" id="WklGGZFbnD" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZF8FU" resolve="adapterBuffer" />
+            </node>
           </node>
         </node>
         <node concept="3XISUE" id="WklGGZFbk_" role="3XIRFZ" />
         <node concept="1_9egQ" id="6tw98Xd0mnU" role="3XIRFZ">
           <node concept="30IJZa" id="6tw98Xd0mnV" role="1_9egR">
-            <ref role="2H6Oet" to="ec8n:WklGGZprBg" resolve="put" />
+            <ref role="2H6Oet" to="azo0:74TmcPjUr5$" resolve="writeByte" />
             <node concept="3HbmlB" id="6tw98Xd0mnW" role="2H6KYo">
               <property role="2hmy$m" value="01011010" />
             </node>
-            <node concept="2H6Wec" id="4TJtxzSW03B" role="1_9fRO">
-              <ref role="2H6Wef" node="WklGGZF8FU" resolve="encoderInputBuffer" />
+            <node concept="2H6Wec" id="6tw98Xd0mnX" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZ$j71" resolve="encoderStream" />
             </node>
           </node>
         </node>
@@ -1148,16 +808,22 @@
           <node concept="3HbmlB" id="6tw98Xd0mnZ" role="2N2GHh">
             <property role="2hmy$m" value="01100110" />
           </node>
-          <node concept="3O_q_g" id="4TJtxzSVZ2H" role="2N2GHg">
-            <ref role="3O_q_h" node="4TJtxzSVVwy" resolve="readByteFromEncoder" />
+          <node concept="30IJZa" id="6tw98Xd0mo0" role="2N2GHg">
+            <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
+            <node concept="2H6Wec" id="6tw98Xd0mo1" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZF8FU" resolve="adapterBuffer" />
+            </node>
           </node>
         </node>
         <node concept="2N2KuS" id="6tw98Xd0mo2" role="3XIRFZ">
           <node concept="3HbmlB" id="6tw98Xd0mo3" role="2N2GHh">
             <property role="2hmy$m" value="10011001" />
           </node>
-          <node concept="3O_q_g" id="4TJtxzSVZ5W" role="2N2GHg">
-            <ref role="3O_q_h" node="4TJtxzSVVwy" resolve="readByteFromEncoder" />
+          <node concept="30IJZa" id="6tw98Xd0mo4" role="2N2GHg">
+            <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
+            <node concept="2H6Wec" id="6tw98Xd0mo5" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZF8FU" resolve="adapterBuffer" />
+            </node>
           </node>
         </node>
         <node concept="3XISUE" id="6tw98Xd0mm1" role="3XIRFZ" />
@@ -1178,18 +844,24 @@
           <ref role="3t9XKR" node="WklGGZpecB" resolve="ManchesterInstances" />
         </node>
         <node concept="3XISUE" id="WklGGZFFyz" role="3XIRFZ" />
-        <node concept="1_9egQ" id="4TJtxzSW9BC" role="3XIRFZ">
-          <node concept="3O_q_g" id="4TJtxzSW9BA" role="1_9egR">
-            <ref role="3O_q_h" node="4TJtxzSW2Rr" resolve="writeByteToDecoder" />
-            <node concept="3HbmlB" id="4TJtxzSWa0A" role="3O_q_j">
+        <node concept="1_9egQ" id="WklGGZFFBg" role="3XIRFZ">
+          <node concept="30IJZa" id="WklGGZFFEw" role="1_9egR">
+            <ref role="2H6Oet" to="ec8n:WklGGZprBg" resolve="put" />
+            <node concept="2H6Wec" id="WklGGZFFBe" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZF8FU" resolve="adapterBuffer" />
+            </node>
+            <node concept="3HbmlB" id="WklGGZFFSE" role="2H6KYo">
               <property role="2hmy$m" value="00000000" />
             </node>
           </node>
         </node>
-        <node concept="1_9egQ" id="4TJtxzSWaJT" role="3XIRFZ">
-          <node concept="3O_q_g" id="4TJtxzSWaJU" role="1_9egR">
-            <ref role="3O_q_h" node="4TJtxzSW2Rr" resolve="writeByteToDecoder" />
-            <node concept="3HbmlB" id="4TJtxzSWaJW" role="3O_q_j">
+        <node concept="1_9egQ" id="WklGGZFGlt" role="3XIRFZ">
+          <node concept="30IJZa" id="WklGGZFGlu" role="1_9egR">
+            <ref role="2H6Oet" to="ec8n:WklGGZprBg" resolve="put" />
+            <node concept="2H6Wec" id="WklGGZFGlv" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZF8FU" resolve="adapterBuffer" />
+            </node>
+            <node concept="3HbmlB" id="WklGGZFGlw" role="2H6KYo">
               <property role="2hmy$m" value="00000000" />
             </node>
           </node>
@@ -1199,66 +871,78 @@
             <property role="2hmy$m" value="00000000" />
           </node>
           <node concept="30IJZa" id="WklGGZFGfd" role="2N2GHg">
-            <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
-            <node concept="2H6Wec" id="4TJtxzSWckg" role="1_9fRO">
-              <ref role="2H6Wef" node="4TJtxzSVSKn" resolve="decoderOutputBuffer" />
+            <ref role="2H6Oet" to="azo0:74TmcPjUrb7" resolve="readByte" />
+            <node concept="2H6Wec" id="WklGGZFGbt" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZ$jhA" resolve="decoderStream" />
             </node>
           </node>
         </node>
-        <node concept="3XISUE" id="4TJtxzSWdrK" role="3XIRFZ" />
-        <node concept="1_9egQ" id="4TJtxzSWdrL" role="3XIRFZ">
-          <node concept="3O_q_g" id="4TJtxzSWdrM" role="1_9egR">
-            <ref role="3O_q_h" node="4TJtxzSW2Rr" resolve="writeByteToDecoder" />
-            <node concept="3HbmlB" id="4TJtxzSWejc" role="3O_q_j">
+        <node concept="3XISUE" id="WklGGZFGyi" role="3XIRFZ" />
+        <node concept="1_9egQ" id="WklGGZFG_j" role="3XIRFZ">
+          <node concept="30IJZa" id="WklGGZFG_k" role="1_9egR">
+            <ref role="2H6Oet" to="ec8n:WklGGZprBg" resolve="put" />
+            <node concept="2H6Wec" id="WklGGZFG_l" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZF8FU" resolve="adapterBuffer" />
+            </node>
+            <node concept="3HbmlB" id="WklGGZFG_m" role="2H6KYo">
               <property role="2hmy$m" value="10101010" />
             </node>
           </node>
         </node>
-        <node concept="1_9egQ" id="4TJtxzSWdrP" role="3XIRFZ">
-          <node concept="3O_q_g" id="4TJtxzSWdrQ" role="1_9egR">
-            <ref role="3O_q_h" node="4TJtxzSW2Rr" resolve="writeByteToDecoder" />
-            <node concept="3HbmlB" id="4TJtxzSWeDO" role="3O_q_j">
+        <node concept="1_9egQ" id="WklGGZFG_n" role="3XIRFZ">
+          <node concept="30IJZa" id="WklGGZFG_o" role="1_9egR">
+            <ref role="2H6Oet" to="ec8n:WklGGZprBg" resolve="put" />
+            <node concept="2H6Wec" id="WklGGZFG_p" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZF8FU" resolve="adapterBuffer" />
+            </node>
+            <node concept="3HbmlB" id="WklGGZFG_q" role="2H6KYo">
               <property role="2hmy$m" value="10101010" />
             </node>
           </node>
         </node>
-        <node concept="2N2KuS" id="4TJtxzSWdrT" role="3XIRFZ">
-          <node concept="30IJZa" id="4TJtxzSWdrV" role="2N2GHg">
-            <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
-            <node concept="2H6Wec" id="4TJtxzSWdrW" role="1_9fRO">
-              <ref role="2H6Wef" node="4TJtxzSVSKn" resolve="decoderOutputBuffer" />
-            </node>
-          </node>
-          <node concept="3HbmlB" id="4TJtxzSWf0s" role="2N2GHh">
+        <node concept="2N2KuS" id="WklGGZFG_r" role="3XIRFZ">
+          <node concept="3HbmlB" id="WklGGZFG_s" role="2N2GHh">
             <property role="2hmy$m" value="11111111" />
           </node>
+          <node concept="30IJZa" id="WklGGZFG_t" role="2N2GHg">
+            <ref role="2H6Oet" to="azo0:74TmcPjUrb7" resolve="readByte" />
+            <node concept="2H6Wec" id="WklGGZFG_u" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZ$jhA" resolve="decoderStream" />
+            </node>
+          </node>
         </node>
-        <node concept="3XISUE" id="4TJtxzSWdRm" role="3XIRFZ" />
-        <node concept="1_9egQ" id="4TJtxzSWdRn" role="3XIRFZ">
-          <node concept="3O_q_g" id="4TJtxzSWdRo" role="1_9egR">
-            <ref role="3O_q_h" node="4TJtxzSW2Rr" resolve="writeByteToDecoder" />
-            <node concept="3HbmlB" id="4TJtxzSWfjT" role="3O_q_j">
+        <node concept="3XISUE" id="WklGGZFGzu" role="3XIRFZ" />
+        <node concept="1_9egQ" id="WklGGZFHRV" role="3XIRFZ">
+          <node concept="30IJZa" id="WklGGZFHRW" role="1_9egR">
+            <ref role="2H6Oet" to="ec8n:WklGGZprBg" resolve="put" />
+            <node concept="2H6Wec" id="WklGGZFHRX" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZF8FU" resolve="adapterBuffer" />
+            </node>
+            <node concept="3HbmlB" id="WklGGZFHRY" role="2H6KYo">
               <property role="2hmy$m" value="10100101" />
             </node>
           </node>
         </node>
-        <node concept="1_9egQ" id="4TJtxzSWdRr" role="3XIRFZ">
-          <node concept="3O_q_g" id="4TJtxzSWdRs" role="1_9egR">
-            <ref role="3O_q_h" node="4TJtxzSW2Rr" resolve="writeByteToDecoder" />
-            <node concept="3HbmlB" id="4TJtxzSWfHy" role="3O_q_j">
+        <node concept="1_9egQ" id="WklGGZFHRZ" role="3XIRFZ">
+          <node concept="30IJZa" id="WklGGZFHS0" role="1_9egR">
+            <ref role="2H6Oet" to="ec8n:WklGGZprBg" resolve="put" />
+            <node concept="2H6Wec" id="WklGGZFHS1" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZF8FU" resolve="adapterBuffer" />
+            </node>
+            <node concept="3HbmlB" id="WklGGZFHS2" role="2H6KYo">
               <property role="2hmy$m" value="01100110" />
             </node>
           </node>
         </node>
-        <node concept="2N2KuS" id="4TJtxzSWdRv" role="3XIRFZ">
-          <node concept="30IJZa" id="4TJtxzSWdRx" role="2N2GHg">
-            <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
-            <node concept="2H6Wec" id="4TJtxzSWdRy" role="1_9fRO">
-              <ref role="2H6Wef" node="4TJtxzSVSKn" resolve="decoderOutputBuffer" />
-            </node>
-          </node>
-          <node concept="3HbmlB" id="4TJtxzSWg7b" role="2N2GHh">
+        <node concept="2N2KuS" id="WklGGZFHS3" role="3XIRFZ">
+          <node concept="3HbmlB" id="WklGGZFHS4" role="2N2GHh">
             <property role="2hmy$m" value="11000101" />
+          </node>
+          <node concept="30IJZa" id="WklGGZFHS5" role="2N2GHg">
+            <ref role="2H6Oet" to="azo0:74TmcPjUrb7" resolve="readByte" />
+            <node concept="2H6Wec" id="WklGGZFHS6" role="1_9fRO">
+              <ref role="2H6Wef" node="WklGGZ$jhA" resolve="decoderStream" />
+            </node>
           </node>
         </node>
         <node concept="3XISUE" id="WklGGZFHKL" role="3XIRFZ" />
@@ -1283,71 +967,23 @@
           <node concept="3XIRFW" id="WklGGZ$ivz" role="1_amYn">
             <node concept="1_9egQ" id="WklGGZ$jwE" role="3XIRFZ">
               <node concept="30IJZa" id="WklGGZ$jz0" role="1_9egR">
-                <ref role="2H6Oet" to="ec8n:WklGGZprBg" resolve="put" />
-                <node concept="2H6Wec" id="4TJtxzSWk2P" role="1_9fRO">
-                  <ref role="2H6Wef" node="WklGGZF8FU" resolve="encoderInputBuffer" />
+                <ref role="2H6Oet" to="azo0:74TmcPjUr5$" resolve="writeByte" />
+                <node concept="2H6Wec" id="WklGGZ$jwD" role="1_9fRO">
+                  <ref role="2H6Wef" node="WklGGZ$j71" resolve="encoderStream" />
                 </node>
                 <node concept="3ZVu4v" id="WklGGZ$jDe" role="2H6KYo">
                   <ref role="3ZVs_2" node="WklGGZ$izm" resolve="i" />
                 </node>
               </node>
             </node>
-            <node concept="3XISUE" id="4TJtxzSWgWz" role="3XIRFZ" />
-            <node concept="3XIRlf" id="4TJtxzTbj01" role="3XIRFZ">
-              <property role="TrG5h" value="timeout" />
-              <node concept="26Vqp4" id="4TJtxzTbiZZ" role="2C2TGm">
-                <property role="2caQfQ" value="false" />
-                <property role="2c7vTL" value="false" />
-              </node>
-              <node concept="3TlMh9" id="4TJtxzTbj19" role="3XIe9u">
-                <property role="2hmy$m" value="255" />
-              </node>
-            </node>
-            <node concept="27v$Wf" id="4TJtxzSWwx5" role="3XIRFZ">
-              <node concept="3XIRFW" id="4TJtxzSWwx6" role="27v$W9">
-                <node concept="1_9egQ" id="4TJtxzSWib4" role="3XIRFZ">
-                  <node concept="30IJZa" id="4TJtxzSWicU" role="1_9egR">
-                    <ref role="2H6Oet" to="azo0:4TJtxzSUz1n" resolve="writeBit" />
-                    <node concept="2H6Wec" id="4TJtxzSWib2" role="1_9fRO">
-                      <ref role="2H6Wef" node="WklGGZ$jhA" resolve="decoderBitsIn" />
-                    </node>
-                    <node concept="30IJZa" id="4TJtxzSWiDJ" role="2H6KYo">
-                      <ref role="2H6Oet" to="azo0:4TJtxzSUyZV" resolve="readBit" />
-                      <node concept="2H6Wec" id="4TJtxzSWiBc" role="1_9fRO">
-                        <ref role="2H6Wef" node="WklGGZ$j71" resolve="encoderBitsOut" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2EHzL6" id="4TJtxzTbj2W" role="27v$We">
-                <node concept="3Tl9Jr" id="4TJtxzTbj7L" role="3TlMhJ">
-                  <node concept="3TlMh9" id="4TJtxzTbj7O" role="3TlMhJ">
-                    <property role="2hmy$m" value="0" />
-                  </node>
-                  <node concept="1FldXu" id="4TJtxzTbj5k" role="3TlMhI">
-                    <node concept="3ZVu4v" id="4TJtxzTbj3v" role="1_9fRO">
-                      <ref role="3ZVs_2" node="4TJtxzTbj01" resolve="timeout" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="30IJZa" id="4TJtxzSWw$c" role="3TlMhI">
-                  <ref role="2H6Oet" to="azo0:4TJtxzSUAUg" resolve="bitsAvailable" />
-                  <node concept="2H6Wec" id="4TJtxzSWwxM" role="1_9fRO">
-                    <ref role="2H6Wef" node="WklGGZ$j71" resolve="encoderBitsOut" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3XISUE" id="4TJtxzSWgWR" role="3XIRFZ" />
             <node concept="2N2KuS" id="WklGGZ$jSr" role="3XIRFZ">
               <node concept="3ZVu4v" id="WklGGZ$jWF" role="2N2GHh">
                 <ref role="3ZVs_2" node="WklGGZ$izm" resolve="i" />
               </node>
               <node concept="30IJZa" id="WklGGZ$jL1" role="2N2GHg">
-                <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
-                <node concept="2H6Wec" id="4TJtxzSWjtD" role="1_9fRO">
-                  <ref role="2H6Wef" node="4TJtxzSVSKn" resolve="decoderOutputBuffer" />
+                <ref role="2H6Oet" to="azo0:74TmcPjUrb7" resolve="readByte" />
+                <node concept="2H6Wec" id="WklGGZ$jI5" role="1_9fRO">
+                  <ref role="2H6Wef" node="WklGGZ$jhA" resolve="decoderStream" />
                 </node>
               </node>
             </node>
@@ -1390,331 +1026,9 @@
             </node>
           </node>
         </node>
+        <node concept="3XISUE" id="WklGGZpfZR" role="3XIRFZ" />
+        <node concept="3XISUE" id="WklGGZpfRx" role="3XIRFZ" />
       </node>
-    </node>
-    <node concept="2NXPZ9" id="4TJtxzSFjtE" role="N3F5h">
-      <property role="TrG5h" value="empty_1437672036697_3" />
-    </node>
-    <node concept="c0Qz5" id="4TJtxzSFjHk" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="testBitsRealignment" />
-      <node concept="19Rifw" id="4TJtxzSFjHl" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="3XIRFW" id="4TJtxzSFjHn" role="c0Qz3">
-        <node concept="3t9XKO" id="4TJtxzTQJ$Q" role="3XIRFZ">
-          <ref role="3t9XKR" node="WklGGZpecB" resolve="ManchesterInstances" />
-        </node>
-        <node concept="1QiMYF" id="4TJtxzSFjQI" role="3XIRFZ">
-          <node concept="OjmMv" id="4TJtxzSFjQK" role="3SJzmv">
-            <node concept="19SGf9" id="4TJtxzSFjQL" role="OjmMu">
-              <node concept="19SUe$" id="4TJtxzSFjQM" role="19SJt6">
-                <property role="19SUeA" value="The lowest layer captures a bit stream, but the stream interfaces are working with bytes.&#10;The decoder has to reconstruct the original alignment. " />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3XISUE" id="4TJtxzSFjQB" role="3XIRFZ" />
-        <node concept="3XISUE" id="4TJtxzSWlb7" role="3XIRFZ" />
-        <node concept="1QiMYF" id="4TJtxzSWlog" role="3XIRFZ">
-          <node concept="OjmMv" id="4TJtxzSWloi" role="3SJzmv">
-            <node concept="19SGf9" id="4TJtxzSWloj" role="OjmMu">
-              <node concept="19SUe$" id="4TJtxzSWlok" role="19SJt6">
-                <property role="19SUeA" value="send some noise" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1_9egQ" id="4TJtxzSWlhH" role="3XIRFZ">
-          <node concept="30IJZa" id="4TJtxzSWllI" role="1_9egR">
-            <ref role="2H6Oet" to="azo0:4TJtxzSUz1n" resolve="writeBit" />
-            <node concept="2H6Wec" id="4TJtxzSWlhF" role="1_9fRO">
-              <ref role="2H6Wef" node="WklGGZ$jhA" resolve="decoderBitsIn" />
-            </node>
-            <node concept="3TlMhK" id="4TJtxzSWlqC" role="2H6KYo" />
-          </node>
-        </node>
-        <node concept="1_9egQ" id="4TJtxzSWlre" role="3XIRFZ">
-          <node concept="30IJZa" id="4TJtxzSWlrf" role="1_9egR">
-            <ref role="2H6Oet" to="azo0:4TJtxzSUz1n" resolve="writeBit" />
-            <node concept="2H6Wec" id="4TJtxzSWlrg" role="1_9fRO">
-              <ref role="2H6Wef" node="WklGGZ$jhA" resolve="decoderBitsIn" />
-            </node>
-            <node concept="3TlMhd" id="4TJtxzSWlu5" role="2H6KYo" />
-          </node>
-        </node>
-        <node concept="1_9egQ" id="4TJtxzSWm2Z" role="3XIRFZ">
-          <node concept="30IJZa" id="4TJtxzSWm30" role="1_9egR">
-            <ref role="2H6Oet" to="azo0:4TJtxzSUz1n" resolve="writeBit" />
-            <node concept="2H6Wec" id="4TJtxzSWm31" role="1_9fRO">
-              <ref role="2H6Wef" node="WklGGZ$jhA" resolve="decoderBitsIn" />
-            </node>
-            <node concept="3TlMhK" id="4TJtxzSWm5U" role="2H6KYo" />
-          </node>
-        </node>
-        <node concept="3XISUE" id="4TJtxzSWlfu" role="3XIRFZ" />
-        <node concept="1QiMYF" id="4TJtxzSFpUX" role="3XIRFZ">
-          <node concept="OjmMv" id="4TJtxzSFpUZ" role="3SJzmv">
-            <node concept="19SGf9" id="4TJtxzSFpV0" role="OjmMu">
-              <node concept="19SUe$" id="4TJtxzSFpV1" role="19SJt6">
-                <property role="19SUeA" value="send data" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1_a8vi" id="4TJtxzSFnl_" role="3XIRFZ">
-          <node concept="3XIRFW" id="4TJtxzSFnlA" role="1_amYn">
-            <node concept="1_9egQ" id="4TJtxzSFqBj" role="3XIRFZ">
-              <node concept="30IJZa" id="4TJtxzSFqD9" role="1_9egR">
-                <ref role="2H6Oet" to="ec8n:WklGGZprBg" resolve="put" />
-                <node concept="2H6Wec" id="4TJtxzSWvhX" role="1_9fRO">
-                  <ref role="2H6Wef" node="WklGGZF8FU" resolve="encoderInputBuffer" />
-                </node>
-                <node concept="2BOciq" id="4TJtxzSNddg" role="2H6KYo">
-                  <node concept="3TlMh9" id="4TJtxzSNddj" role="3TlMhJ">
-                    <property role="2hmy$m" value="1" />
-                  </node>
-                  <node concept="3ZVu4v" id="4TJtxzSNd9j" role="3TlMhI">
-                    <ref role="3ZVs_2" node="4TJtxzSFnlM" resolve="byteNo" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1_amY7" id="4TJtxzSFnlM" role="1_amZ$">
-            <property role="TrG5h" value="byteNo" />
-            <node concept="26Vqp4" id="4TJtxzSFnlN" role="2C2TGm">
-              <property role="2caQfQ" value="false" />
-              <property role="2c7vTL" value="false" />
-            </node>
-            <node concept="3TlMh9" id="4TJtxzSFnlO" role="3XIe9u">
-              <property role="2hmy$m" value="0" />
-            </node>
-          </node>
-          <node concept="3Tl9Jn" id="4TJtxzSFnlP" role="1_amZB">
-            <node concept="3TlMh9" id="4TJtxzSFD9C" role="3TlMhJ">
-              <property role="2hmy$m" value="8" />
-            </node>
-            <node concept="3ZVu4v" id="4TJtxzSFnlS" role="3TlMhI">
-              <ref role="3ZVs_2" node="4TJtxzSFnlM" resolve="byteNo" />
-            </node>
-          </node>
-          <node concept="3TM6Ey" id="4TJtxzSFnlT" role="1_amZy">
-            <node concept="3ZVu4v" id="4TJtxzSFnlU" role="1_9fRO">
-              <ref role="3ZVs_2" node="4TJtxzSFnlM" resolve="byteNo" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XIRlf" id="4TJtxzTbjCt" role="3XIRFZ">
-          <property role="TrG5h" value="timeout" />
-          <node concept="26Vqp4" id="4TJtxzTbjCr" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-          <node concept="3TlMh9" id="4TJtxzTbk7Y" role="3XIe9u">
-            <property role="2hmy$m" value="255" />
-          </node>
-        </node>
-        <node concept="27v$Wf" id="4TJtxzSWxJp" role="3XIRFZ">
-          <node concept="3XIRFW" id="4TJtxzSWxJq" role="27v$W9">
-            <node concept="3XIRlf" id="4TJtxzTJk$Z" role="3XIRFZ">
-              <property role="TrG5h" value="encodedBit" />
-              <node concept="3TlMgk" id="4TJtxzTJk_c" role="2C2TGm">
-                <property role="2caQfQ" value="false" />
-                <property role="2c7vTL" value="false" />
-              </node>
-              <node concept="30IJZa" id="4TJtxzTJk_d" role="3XIe9u">
-                <ref role="2H6Oet" to="azo0:4TJtxzSUyZV" resolve="readBit" />
-                <node concept="2H6Wec" id="4TJtxzTJk_e" role="1_9fRO">
-                  <ref role="2H6Wef" node="WklGGZ$j71" resolve="encoderBitsOut" />
-                </node>
-              </node>
-            </node>
-            <node concept="1_9egQ" id="4TJtxzSWxOJ" role="3XIRFZ">
-              <node concept="30IJZa" id="4TJtxzSWxQ_" role="1_9egR">
-                <ref role="2H6Oet" to="azo0:4TJtxzSUz1n" resolve="writeBit" />
-                <node concept="2H6Wec" id="4TJtxzSWxOI" role="1_9fRO">
-                  <ref role="2H6Wef" node="WklGGZ$jhA" resolve="decoderBitsIn" />
-                </node>
-                <node concept="3ZVu4v" id="4TJtxzTJk_g" role="2H6KYo">
-                  <ref role="3ZVs_2" node="4TJtxzTJk$Z" resolve="encodedBit" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2EHzL6" id="4TJtxzTbk9L" role="27v$We">
-            <node concept="3Tl9Jr" id="4TJtxzTbkFV" role="3TlMhJ">
-              <node concept="3TlMh9" id="4TJtxzTbkFY" role="3TlMhJ">
-                <property role="2hmy$m" value="0" />
-              </node>
-              <node concept="1FldXu" id="4TJtxzTbkDi" role="3TlMhI">
-                <node concept="3ZVu4v" id="4TJtxzTbkBh" role="1_9fRO">
-                  <ref role="3ZVs_2" node="4TJtxzTbjCt" resolve="timeout" />
-                </node>
-              </node>
-            </node>
-            <node concept="30IJZa" id="4TJtxzSWxOo" role="3TlMhI">
-              <ref role="2H6Oet" to="azo0:4TJtxzSUAUg" resolve="bitsAvailable" />
-              <node concept="2H6Wec" id="4TJtxzSWxLY" role="1_9fRO">
-                <ref role="2H6Wef" node="WklGGZ$j71" resolve="encoderBitsOut" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3XISUE" id="4TJtxzTUqK3" role="3XIRFZ" />
-        <node concept="3XISUE" id="4TJtxzSFwdJ" role="3XIRFZ" />
-        <node concept="1QiMYF" id="4TJtxzSFTYX" role="3XIRFZ">
-          <node concept="OjmMv" id="4TJtxzSFTYZ" role="3SJzmv">
-            <node concept="19SGf9" id="4TJtxzSFTZ0" role="OjmMu">
-              <node concept="19SUe$" id="4TJtxzSFTZ1" role="19SJt6">
-                <property role="19SUeA" value="check the decoder output" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3XIRlf" id="4TJtxzSFV13" role="3XIRFZ">
-          <property role="TrG5h" value="byte1" />
-          <node concept="26Vqp4" id="4TJtxzSFV1g" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-          <node concept="30IJZa" id="4TJtxzSFV1h" role="3XIe9u">
-            <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
-            <node concept="2H6Wec" id="4TJtxzSW$Jn" role="1_9fRO">
-              <ref role="2H6Wef" node="4TJtxzSVSKn" resolve="decoderOutputBuffer" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XIRlf" id="4TJtxzSFVzB" role="3XIRFZ">
-          <property role="TrG5h" value="byte2" />
-          <node concept="26Vqp4" id="4TJtxzSFVzC" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-          <node concept="30IJZa" id="4TJtxzSW_d5" role="3XIe9u">
-            <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
-            <node concept="2H6Wec" id="4TJtxzSW_d6" role="1_9fRO">
-              <ref role="2H6Wef" node="4TJtxzSVSKn" resolve="decoderOutputBuffer" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XIRlf" id="4TJtxzSFV_N" role="3XIRFZ">
-          <property role="TrG5h" value="byte3" />
-          <node concept="26Vqp4" id="4TJtxzSFV_O" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-          <node concept="30IJZa" id="4TJtxzSW_t_" role="3XIe9u">
-            <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
-            <node concept="2H6Wec" id="4TJtxzSW_tA" role="1_9fRO">
-              <ref role="2H6Wef" node="4TJtxzSVSKn" resolve="decoderOutputBuffer" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XIRlf" id="4TJtxzSQOZk" role="3XIRFZ">
-          <property role="TrG5h" value="byte4" />
-          <node concept="26Vqp4" id="4TJtxzSQOZl" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-          <node concept="30IJZa" id="4TJtxzSW_I5" role="3XIe9u">
-            <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
-            <node concept="2H6Wec" id="4TJtxzSW_I6" role="1_9fRO">
-              <ref role="2H6Wef" node="4TJtxzSVSKn" resolve="decoderOutputBuffer" />
-            </node>
-          </node>
-        </node>
-        <node concept="2N2KuS" id="4TJtxzSFWil" role="3XIRFZ">
-          <node concept="3ZVu4v" id="4TJtxzSFWvD" role="2N2GHh">
-            <ref role="3ZVs_2" node="4TJtxzSFVzB" resolve="byte2" />
-          </node>
-          <node concept="2BOciq" id="4TJtxzSFWl7" role="2N2GHg">
-            <node concept="3TlMh9" id="4TJtxzSFWla" role="3TlMhJ">
-              <property role="2hmy$m" value="1" />
-            </node>
-            <node concept="3ZVu4v" id="4TJtxzSFWkp" role="3TlMhI">
-              <ref role="3ZVs_2" node="4TJtxzSFV13" resolve="byte1" />
-            </node>
-          </node>
-        </node>
-        <node concept="2N2KuS" id="4TJtxzSFWEn" role="3XIRFZ">
-          <node concept="3ZVu4v" id="4TJtxzSFXiw" role="2N2GHh">
-            <ref role="3ZVs_2" node="4TJtxzSFV_N" resolve="byte3" />
-          </node>
-          <node concept="2BOciq" id="4TJtxzSFWEp" role="2N2GHg">
-            <node concept="3TlMh9" id="4TJtxzSFWEq" role="3TlMhJ">
-              <property role="2hmy$m" value="1" />
-            </node>
-            <node concept="3ZVu4v" id="4TJtxzSFX5s" role="3TlMhI">
-              <ref role="3ZVs_2" node="4TJtxzSFVzB" resolve="byte2" />
-            </node>
-          </node>
-        </node>
-        <node concept="2N2KuS" id="4TJtxzSQPh5" role="3XIRFZ">
-          <node concept="3ZVu4v" id="4TJtxzSQPJ9" role="2N2GHh">
-            <ref role="3ZVs_2" node="4TJtxzSQOZk" resolve="byte4" />
-          </node>
-          <node concept="2BOciq" id="4TJtxzSQPh7" role="2N2GHg">
-            <node concept="3TlMh9" id="4TJtxzSQPh8" role="3TlMhJ">
-              <property role="2hmy$m" value="1" />
-            </node>
-            <node concept="3ZVu4v" id="4TJtxzSQPuQ" role="3TlMhI">
-              <ref role="3ZVs_2" node="4TJtxzSFV_N" resolve="byte3" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XISUE" id="4TJtxzSFWeo" role="3XIRFZ" />
-      </node>
-    </node>
-    <node concept="2NXPZ9" id="4TJtxzSFEzY" role="N3F5h">
-      <property role="TrG5h" value="empty_1437673613603_5" />
-    </node>
-    <node concept="N3Fnx" id="4TJtxzSFFRx" role="N3F5h">
-      <property role="TrG5h" value="isLittleEndian" />
-      <node concept="3TlMgk" id="4TJtxzSFGmh" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="3XIRFW" id="4TJtxzSFFRz" role="3XIRFX">
-        <node concept="3XIRlf" id="4TJtxzSFGmt" role="3XIRFZ">
-          <property role="TrG5h" value="i" />
-          <node concept="26VqpV" id="4TJtxzSFGmr" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-          <node concept="3Hbq_t" id="4TJtxzSFGnc" role="3XIe9u">
-            <property role="2hmy$m" value="ff00" />
-          </node>
-        </node>
-        <node concept="2BFjQ_" id="4TJtxzSFGoH" role="3XIRFZ">
-          <node concept="3TlM44" id="4TJtxzSFGQp" role="2BFjQA">
-            <node concept="3TlMh9" id="4TJtxzSFGRM" role="3TlMhJ">
-              <property role="2hmy$m" value="0" />
-            </node>
-            <node concept="3wxyx2" id="4TJtxzSFGKH" role="3TlMhI">
-              <node concept="1S8S4T" id="4TJtxzSFGGj" role="1_9fRO">
-                <node concept="YInwV" id="4TJtxzSFG_6" role="1S8S4V">
-                  <node concept="3ZVu4v" id="4TJtxzSFG_n" role="1_9fRO">
-                    <ref role="3ZVs_2" node="4TJtxzSFGmt" resolve="i" />
-                  </node>
-                </node>
-                <node concept="3wxxNl" id="4TJtxzSFGIj" role="1S8S4N">
-                  <property role="2caQfQ" value="false" />
-                  <property role="2c7vTL" value="false" />
-                  <node concept="26Vqp4" id="4TJtxzSFGGZ" role="2umbIo">
-                    <property role="2caQfQ" value="false" />
-                    <property role="2c7vTL" value="false" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2NXPZ9" id="4TJtxzSFFqf" role="N3F5h">
-      <property role="TrG5h" value="empty_1437673614117_7" />
     </node>
     <node concept="2NXPZ9" id="WklGGZpe9R" role="N3F5h">
       <property role="TrG5h" value="empty_1436973361479_12" />
@@ -1727,9 +1041,6 @@
     </node>
     <node concept="3GEVxB" id="WklGGZ$hco" role="2OODSX">
       <ref role="3GEb4d" to="azo0:WklGGZzKA7" resolve="Manchester" />
-    </node>
-    <node concept="3GEVxB" id="4TJtxzTJmgO" role="2OODSX">
-      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
     </node>
   </node>
   <node concept="N3F5e" id="WklGGZpdzh">
@@ -1757,18 +1068,6 @@
             </node>
             <node concept="3cM6IN" id="2jZee8EnWfb" role="3cM6Hi">
               <ref role="3cM6IK" node="2jZee8Emkqz" resolve="testCrcCorruption" />
-            </node>
-            <node concept="3cM6IN" id="2JGF63bJxn6" role="3cM6Hi">
-              <ref role="3cM6IK" node="2JGF63bJsat" resolve="testSendReceive" />
-            </node>
-            <node concept="3cM6IN" id="4TJtxzSHLFy" role="3cM6Hi">
-              <ref role="3cM6IK" node="4TJtxzSFjHk" resolve="testBitsRealignment" />
-            </node>
-            <node concept="3cM6IN" id="2Z$TrjNbPyA" role="3cM6Hi">
-              <ref role="3cM6IK" node="2Z$TrjNbHjz" resolve="testOversamplingRate" />
-            </node>
-            <node concept="3cM6IN" id="2Z$TrjNbPyB" role="3cM6Hi">
-              <ref role="3cM6IK" node="2Z$TrjNbGlG" resolve="testOversamplingReceiver" />
             </node>
           </node>
         </node>
@@ -1801,12 +1100,6 @@
     </node>
     <node concept="3GEVxB" id="6tw98XdawGq" role="2OODSX">
       <ref role="3GEb4d" node="6tw98Xd9zFd" resolve="CrcTests" />
-    </node>
-    <node concept="3GEVxB" id="2JGF63bJxm4" role="2OODSX">
-      <ref role="3GEb4d" node="2JGF63bJs10" resolve="RadioTests" />
-    </node>
-    <node concept="3GEVxB" id="2Z$TrjNbPxA" role="2OODSX">
-      <ref role="3GEb4d" node="2Z$TrjNbEC4" resolve="OversamplingRadioTests" />
     </node>
   </node>
   <node concept="N3F5e" id="6tw98Xd9zFd">
@@ -2503,832 +1796,6 @@
     </node>
     <node concept="3GEVxB" id="3dY_OIZkPCB" role="2OODSX">
       <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
-    </node>
-  </node>
-  <node concept="N3F5e" id="2JGF63bJs10">
-    <property role="TrG5h" value="RadioTests" />
-    <node concept="2NXPZ9" id="2JGF63bJs9n" role="N3F5h">
-      <property role="TrG5h" value="empty_1437482457228_33" />
-    </node>
-    <node concept="1S7NMz" id="2JGF63bJsOg" role="N3F5h">
-      <property role="TrG5h" value="sendBufferArray" />
-      <node concept="3J0A42" id="2JGF63bJsQ4" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-        <node concept="26Vqp4" id="2JGF63bJsOe" role="2umbIo">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-        <node concept="3TlMh9" id="2JGF63bJsRk" role="1YbSNA">
-          <property role="2hmy$m" value="250" />
-        </node>
-      </node>
-    </node>
-    <node concept="1S7NMz" id="2JGF63bJt2D" role="N3F5h">
-      <property role="TrG5h" value="receiveBufferArray" />
-      <node concept="3J0A42" id="2JGF63bJt65" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-        <node concept="26Vqp4" id="2JGF63bJt2B" role="2umbIo">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-        <node concept="3TlMh9" id="2JGF63bJt7l" role="1YbSNA">
-          <property role="2hmy$m" value="250" />
-        </node>
-      </node>
-    </node>
-    <node concept="2NXPZ9" id="2JGF63bJsM_" role="N3F5h">
-      <property role="TrG5h" value="empty_1437484177192_41" />
-    </node>
-    <node concept="2EWCtd" id="2JGF63bJsc9" role="N3F5h">
-      <property role="TrG5h" value="RadioTestsInstances" />
-      <node concept="JAGxh" id="2JGF63bJse_" role="5JtDH" />
-      <node concept="2EWCuV" id="2JGF63bJsJ2" role="5JtDH">
-        <property role="TrG5h" value="_sendBuffer" />
-        <ref role="2EWCuU" to="ec8n:WklGGZpiFH" resolve="RingBuffer" />
-        <node concept="3R_36c" id="2JGF63bJsJV" role="3R_39I">
-          <ref role="3R_36f" to="ec8n:WklGGZpph4" resolve="buffer" />
-          <node concept="1S7827" id="2JGF63bJtlw" role="3R_36e">
-            <ref role="1S7826" node="2JGF63bJsOg" resolve="sendBufferArray" />
-          </node>
-        </node>
-        <node concept="3R_36c" id="2JGF63bJsJW" role="3R_39I">
-          <ref role="3R_36f" to="ec8n:WklGGZpsT3" resolve="bufferSize" />
-          <node concept="1S8S4T" id="2JGF63bJtq1" role="3R_36e">
-            <node concept="Vihyy" id="2JGF63bJtn0" role="1S8S4V">
-              <node concept="1S7827" id="2JGF63bJtnX" role="1_9fRO">
-                <ref role="1S7826" node="2JGF63bJsOg" resolve="sendBufferArray" />
-              </node>
-            </node>
-            <node concept="26Vqp4" id="2JGF63bJts_" role="1S8S4N">
-              <property role="2caQfQ" value="false" />
-              <property role="2c7vTL" value="false" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2EWCuV" id="2JGF63bJsGp" role="5JtDH">
-        <property role="TrG5h" value="sendStreamBuffer" />
-        <ref role="2EWCuU" to="azo0:WklGGZzYYs" resolve="StreamBuffer" />
-      </node>
-      <node concept="2EWCuP" id="2JGF63bJtvW" role="5JtDH">
-        <node concept="2EWCuO" id="2JGF63bJtvX" role="2EWCuL">
-          <ref role="2EWCuR" node="2JGF63bJsGp" resolve="sendStreamBuffer" />
-          <ref role="XcPQd" to="azo0:WklGGZ$0gC" resolve="buffer" />
-        </node>
-        <node concept="2EWCuO" id="2JGF63bJtvY" role="2EWCuK">
-          <ref role="2EWCuR" node="2JGF63bJsJ2" resolve="_sendBuffer" />
-          <ref role="XcPQd" to="ec8n:WklGGZpsr$" resolve="fifo" />
-        </node>
-      </node>
-      <node concept="JAGxh" id="2JGF63bJtuh" role="5JtDH" />
-      <node concept="2EWCuV" id="2JGF63bJt$M" role="5JtDH">
-        <property role="TrG5h" value="_receiveBuffer" />
-        <ref role="2EWCuU" to="ec8n:WklGGZpiFH" resolve="RingBuffer" />
-        <node concept="3R_36c" id="2JGF63bJt$N" role="3R_39I">
-          <ref role="3R_36f" to="ec8n:WklGGZpph4" resolve="buffer" />
-          <node concept="1S7827" id="2JGF63bJtD_" role="3R_36e">
-            <ref role="1S7826" node="2JGF63bJt2D" resolve="receiveBufferArray" />
-          </node>
-        </node>
-        <node concept="3R_36c" id="2JGF63bJt$P" role="3R_39I">
-          <ref role="3R_36f" to="ec8n:WklGGZpsT3" resolve="bufferSize" />
-          <node concept="1S8S4T" id="2JGF63bJt$Q" role="3R_36e">
-            <node concept="Vihyy" id="2JGF63bJt$R" role="1S8S4V">
-              <node concept="1S7827" id="2JGF63bJtGf" role="1_9fRO">
-                <ref role="1S7826" node="2JGF63bJt2D" resolve="receiveBufferArray" />
-              </node>
-            </node>
-            <node concept="26Vqp4" id="2JGF63bJt$T" role="1S8S4N">
-              <property role="2caQfQ" value="false" />
-              <property role="2c7vTL" value="false" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2EWCuV" id="2JGF63bJt$U" role="5JtDH">
-        <property role="TrG5h" value="receiveStreamBuffer" />
-        <ref role="2EWCuU" to="azo0:WklGGZzYYs" resolve="StreamBuffer" />
-      </node>
-      <node concept="2EWCuP" id="2JGF63bJt$V" role="5JtDH">
-        <node concept="2EWCuO" id="2JGF63bJt$W" role="2EWCuL">
-          <ref role="2EWCuR" node="2JGF63bJt$U" resolve="receiveStreamBuffer" />
-          <ref role="XcPQd" to="azo0:WklGGZ$0gC" resolve="buffer" />
-        </node>
-        <node concept="2EWCuO" id="2JGF63bJt$X" role="2EWCuK">
-          <ref role="2EWCuR" node="2JGF63bJt$M" resolve="_receiveBuffer" />
-          <ref role="XcPQd" to="ec8n:WklGGZpsr$" resolve="fifo" />
-        </node>
-      </node>
-      <node concept="JAGxh" id="2JGF63bJt$Y" role="5JtDH" />
-      <node concept="2EWCuV" id="2JGF63bJscJ" role="5JtDH">
-        <property role="TrG5h" value="_transmitter" />
-        <ref role="2EWCuU" to="azo0:74TmcPjUmh8" resolve="SimpleRadioTransmitter" />
-      </node>
-      <node concept="2EWCuV" id="2JGF63bJsdi" role="5JtDH">
-        <property role="TrG5h" value="_receiver" />
-        <ref role="2EWCuU" to="azo0:74TmcPjUmiN" resolve="SimpleRadioReceiver" />
-      </node>
-      <node concept="2EWCuV" id="2JGF63bJsdS" role="5JtDH">
-        <property role="TrG5h" value="_wire" />
-        <ref role="2EWCuU" to="t6m2:74TmcPiXh8v" resolve="DigitalPinMock" />
-      </node>
-      <node concept="JAGxh" id="2JGF63bJuaK" role="5JtDH" />
-      <node concept="2EWCuV" id="4TJtxzTYk5T" role="5JtDH">
-        <property role="TrG5h" value="_transmitterStreamAdapter" />
-        <ref role="2EWCuU" to="azo0:4TJtxzTYeoY" resolve="InputStreamAdapter" />
-      </node>
-      <node concept="2EWCuV" id="4TJtxzTYk8m" role="5JtDH">
-        <property role="TrG5h" value="_receiverStreamAdapter" />
-        <ref role="2EWCuU" to="azo0:4TJtxzTYhAG" resolve="OutputStreamAdapter" />
-      </node>
-      <node concept="JAGxh" id="4TJtxzTYk4Z" role="5JtDH" />
-      <node concept="2EWCuP" id="2JGF63bJuoH" role="5JtDH">
-        <node concept="2EWCuO" id="2JGF63bJuoI" role="2EWCuL">
-          <ref role="2EWCuR" node="2JGF63bJscJ" resolve="_transmitter" />
-          <ref role="XcPQd" to="azo0:6tw98Xd29w$" resolve="input" />
-        </node>
-        <node concept="2EWCuO" id="2JGF63bJuoJ" role="2EWCuK">
-          <ref role="2EWCuR" node="4TJtxzTYk5T" resolve="_transmitterStreamAdapter" />
-          <ref role="XcPQd" to="azo0:4TJtxzTYevS" resolve="bitStream" />
-        </node>
-      </node>
-      <node concept="2EWCuP" id="4TJtxzTYkaS" role="5JtDH">
-        <node concept="2EWCuO" id="4TJtxzTYkaT" role="2EWCuL">
-          <ref role="2EWCuR" node="4TJtxzTYk5T" resolve="_transmitterStreamAdapter" />
-          <ref role="XcPQd" to="azo0:4TJtxzTYew1" resolve="byteStream" />
-        </node>
-        <node concept="2EWCuO" id="4TJtxzTYkaU" role="2EWCuK">
-          <ref role="2EWCuR" node="2JGF63bJsGp" resolve="sendStreamBuffer" />
-          <ref role="XcPQd" to="azo0:WklGGZ$0Pu" resolve="in" />
-        </node>
-      </node>
-      <node concept="2EWCuP" id="2JGF63bJuv4" role="5JtDH">
-        <node concept="2EWCuO" id="2JGF63bJuv5" role="2EWCuL">
-          <ref role="2EWCuR" node="2JGF63bJsdi" resolve="_receiver" />
-          <ref role="XcPQd" to="azo0:6tw98Xd2a10" resolve="output" />
-        </node>
-        <node concept="2EWCuO" id="2JGF63bJuv6" role="2EWCuK">
-          <ref role="2EWCuR" node="4TJtxzTYk8m" resolve="_receiverStreamAdapter" />
-          <ref role="XcPQd" to="azo0:4TJtxzTYhQc" resolve="bitStream" />
-        </node>
-      </node>
-      <node concept="2EWCuP" id="4TJtxzTYkcS" role="5JtDH">
-        <node concept="2EWCuO" id="4TJtxzTYkcT" role="2EWCuL">
-          <ref role="2EWCuR" node="4TJtxzTYk8m" resolve="_receiverStreamAdapter" />
-          <ref role="XcPQd" to="azo0:4TJtxzTYhQp" resolve="byteStream" />
-        </node>
-        <node concept="2EWCuO" id="4TJtxzTYkcU" role="2EWCuK">
-          <ref role="2EWCuR" node="2JGF63bJt$U" resolve="receiveStreamBuffer" />
-          <ref role="XcPQd" to="azo0:WklGGZ$0Vg" resolve="out" />
-        </node>
-      </node>
-      <node concept="JAGxh" id="2JGF63bJulH" role="5JtDH" />
-      <node concept="2EWCuP" id="2JGF63bJsfb" role="5JtDH">
-        <node concept="2EWCuO" id="2JGF63bJsfc" role="2EWCuL">
-          <ref role="2EWCuR" node="2JGF63bJscJ" resolve="_transmitter" />
-          <ref role="XcPQd" to="azo0:2JGF63bJ71r" resolve="outputPin" />
-        </node>
-        <node concept="2EWCuO" id="2JGF63bJsfd" role="2EWCuK">
-          <ref role="2EWCuR" node="2JGF63bJsdS" resolve="_wire" />
-          <ref role="XcPQd" to="t6m2:74TmcPiXhaY" resolve="pin" />
-        </node>
-      </node>
-      <node concept="2EWCuP" id="2JGF63bJsxt" role="5JtDH">
-        <node concept="2EWCuO" id="2JGF63bJsxu" role="2EWCuL">
-          <ref role="2EWCuR" node="2JGF63bJsdi" resolve="_receiver" />
-          <ref role="XcPQd" to="azo0:2JGF63bJlZW" resolve="inputPin" />
-        </node>
-        <node concept="2EWCuO" id="2JGF63bJsxv" role="2EWCuK">
-          <ref role="2EWCuR" node="2JGF63bJsdS" resolve="_wire" />
-          <ref role="XcPQd" to="t6m2:74TmcPiXhaY" resolve="pin" />
-        </node>
-      </node>
-      <node concept="JAGxh" id="2JGF63bJuFe" role="5JtDH" />
-      <node concept="21gPQu" id="2JGF63bJuLM" role="5JtDH">
-        <property role="TrG5h" value="sendBuffer" />
-        <node concept="219P8x" id="2JGF63bJuLN" role="21ad3a">
-          <ref role="219P8w" node="2JGF63bJsJ2" resolve="_sendBuffer" />
-          <ref role="219P8J" to="ec8n:WklGGZpsr$" resolve="fifo" />
-        </node>
-      </node>
-      <node concept="21gPQu" id="2JGF63bJuT9" role="5JtDH">
-        <property role="TrG5h" value="receiveBuffer" />
-        <node concept="219P8x" id="2JGF63bJuTa" role="21ad3a">
-          <ref role="219P8w" node="2JGF63bJt$M" resolve="_receiveBuffer" />
-          <ref role="219P8J" to="ec8n:WklGGZpsr$" resolve="fifo" />
-        </node>
-      </node>
-      <node concept="21gPQu" id="2JGF63bJwlm" role="5JtDH">
-        <property role="TrG5h" value="transmitter" />
-        <node concept="219P8x" id="2JGF63bJwln" role="21ad3a">
-          <ref role="219P8w" node="2JGF63bJscJ" resolve="_transmitter" />
-          <ref role="219P8J" to="azo0:6tw98Xd2a4x" resolve="runnable" />
-        </node>
-      </node>
-      <node concept="21gPQu" id="2JGF63bJwsM" role="5JtDH">
-        <property role="TrG5h" value="receiver" />
-        <node concept="219P8x" id="2JGF63bJwsN" role="21ad3a">
-          <ref role="219P8w" node="2JGF63bJsdi" resolve="_receiver" />
-          <ref role="219P8J" to="azo0:6tw98Xd2a4J" resolve="runnable" />
-        </node>
-      </node>
-      <node concept="21gPQu" id="2JGF63c0vZl" role="5JtDH">
-        <property role="TrG5h" value="wire" />
-        <node concept="219P8x" id="2JGF63c0vZm" role="21ad3a">
-          <ref role="219P8w" node="2JGF63bJsdS" resolve="_wire" />
-          <ref role="219P8J" to="t6m2:74TmcPiXhaY" resolve="pin" />
-        </node>
-      </node>
-    </node>
-    <node concept="2NXPZ9" id="2JGF63bJsb$" role="N3F5h">
-      <property role="TrG5h" value="empty_1437482474391_39" />
-    </node>
-    <node concept="c0Qz5" id="2JGF63bJsat" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="testSendReceive" />
-      <node concept="19Rifw" id="2JGF63bJsau" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="3XIRFW" id="2JGF63bJsaw" role="c0Qz3">
-        <node concept="3t9XKO" id="2JGF63bJuDN" role="3XIRFZ">
-          <ref role="3t9XKR" node="2JGF63bJsc9" resolve="RadioTestsInstances" />
-        </node>
-        <node concept="3XISUE" id="2JGF63bJuDA" role="3XIRFZ" />
-        <node concept="1_a8vi" id="2JGF63bJvl5" role="3XIRFZ">
-          <node concept="3XIRFW" id="2JGF63bJvl6" role="1_amYn">
-            <node concept="1_9egQ" id="2JGF63bJuE3" role="3XIRFZ">
-              <node concept="30IJZa" id="2JGF63bJved" role="1_9egR">
-                <ref role="2H6Oet" to="ec8n:WklGGZprBg" resolve="put" />
-                <node concept="2H6Wec" id="2JGF63bJv9j" role="1_9fRO">
-                  <ref role="2H6Wef" node="2JGF63bJuLM" resolve="sendBuffer" />
-                </node>
-                <node concept="3ZVu4v" id="2JGF63bJvz5" role="2H6KYo">
-                  <ref role="3ZVs_2" node="2JGF63bJvlB" resolve="i" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1_amY7" id="2JGF63bJvlB" role="1_amZ$">
-            <property role="TrG5h" value="i" />
-            <node concept="26Vqp4" id="2JGF63bJvlA" role="2C2TGm">
-              <property role="2caQfQ" value="false" />
-              <property role="2c7vTL" value="false" />
-            </node>
-            <node concept="3TlMh9" id="2JGF63bJvlX" role="3XIe9u">
-              <property role="2hmy$m" value="0" />
-            </node>
-          </node>
-          <node concept="3Tl9Jn" id="2JGF63bJvnW" role="1_amZB">
-            <node concept="3TlMh9" id="2JGF63bJvnZ" role="3TlMhJ">
-              <property role="2hmy$m" value="211" />
-            </node>
-            <node concept="3ZVu4v" id="2JGF63bJvmo" role="3TlMhI">
-              <ref role="3ZVs_2" node="2JGF63bJvlB" resolve="i" />
-            </node>
-          </node>
-          <node concept="3TM6Ey" id="2JGF63bJvsm" role="1_amZy">
-            <node concept="3ZVu4v" id="2JGF63bJvqs" role="1_9fRO">
-              <ref role="3ZVs_2" node="2JGF63bJvlB" resolve="i" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XISUE" id="2JGF63bJvAz" role="3XIRFZ" />
-        <node concept="1QiMYF" id="2JGF63c94Pv" role="3XIRFZ">
-          <node concept="OjmMv" id="2JGF63c94Px" role="3SJzmv">
-            <node concept="19SGf9" id="2JGF63c94Py" role="OjmMu">
-              <node concept="19SUe$" id="2JGF63c94Pz" role="19SJt6">
-                <property role="19SUeA" value="The transmitter start with the output on the second call" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1_9egQ" id="2JGF63c93f7" role="3XIRFZ">
-          <node concept="30IJZa" id="2JGF63c93Dy" role="1_9egR">
-            <ref role="2H6Oet" to="ec8n:exHFgzK8US" resolve="run" />
-            <node concept="2H6Wec" id="2JGF63c93f5" role="1_9fRO">
-              <ref role="2H6Wef" node="2JGF63bJwlm" resolve="transmitter" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XISUE" id="2JGF63c943M" role="3XIRFZ" />
-        <node concept="1_a8vi" id="2JGF63bX2ij" role="3XIRFZ">
-          <node concept="3XIRFW" id="2JGF63bX2ik" role="1_amYn">
-            <node concept="1_9egQ" id="2JGF63bJwwA" role="3XIRFZ">
-              <node concept="30IJZa" id="2JGF63bJwyy" role="1_9egR">
-                <ref role="2H6Oet" to="ec8n:exHFgzK8US" resolve="run" />
-                <node concept="2H6Wec" id="2JGF63bJww$" role="1_9fRO">
-                  <ref role="2H6Wef" node="2JGF63bJwlm" resolve="transmitter" />
-                </node>
-              </node>
-            </node>
-            <node concept="1_9egQ" id="2JGF63bJwzn" role="3XIRFZ">
-              <node concept="30IJZa" id="2JGF63bJw_v" role="1_9egR">
-                <ref role="2H6Oet" to="ec8n:exHFgzK8US" resolve="run" />
-                <node concept="2H6Wec" id="2JGF63bJwzl" role="1_9fRO">
-                  <ref role="2H6Wef" node="2JGF63bJwsM" resolve="receiver" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1_amY7" id="2JGF63bX2rT" role="1_amZ$">
-            <property role="TrG5h" value="i" />
-            <node concept="26VqpV" id="2JGF63bX2rS" role="2C2TGm">
-              <property role="2caQfQ" value="false" />
-              <property role="2c7vTL" value="false" />
-            </node>
-            <node concept="3TlMh9" id="2JGF63bX2sf" role="3XIe9u">
-              <property role="2hmy$m" value="0" />
-            </node>
-          </node>
-          <node concept="3Tl9Jn" id="2JGF63bX2tW" role="1_amZB">
-            <node concept="2BOcij" id="2JGF63bX30p" role="3TlMhJ">
-              <node concept="3TlMh9" id="2JGF63bX30s" role="3TlMhJ">
-                <property role="2hmy$m" value="8" />
-              </node>
-              <node concept="3TlMh9" id="2JGF63bX2tZ" role="3TlMhI">
-                <property role="2hmy$m" value="212" />
-              </node>
-            </node>
-            <node concept="3ZVu4v" id="2JGF63bX2sE" role="3TlMhI">
-              <ref role="3ZVs_2" node="2JGF63bX2rT" resolve="i" />
-            </node>
-          </node>
-          <node concept="3TM6Ey" id="2JGF63bX3cU" role="1_amZy">
-            <node concept="3ZVu4v" id="2JGF63bX36D" role="1_9fRO">
-              <ref role="3ZVs_2" node="2JGF63bX2rT" resolve="i" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XISUE" id="2JGF63bJw_Y" role="3XIRFZ" />
-        <node concept="1_a8vi" id="2JGF63bJwJj" role="3XIRFZ">
-          <node concept="3XIRFW" id="2JGF63bJwJk" role="1_amYn">
-            <node concept="2N2KuS" id="2JGF63bJx3Y" role="3XIRFZ">
-              <node concept="3ZVu4v" id="2JGF63bJx4i" role="2N2GHh">
-                <ref role="3ZVs_2" node="2JGF63bJwJp" resolve="i" />
-              </node>
-              <node concept="30IJZa" id="2JGF63bJx8N" role="2N2GHg">
-                <ref role="2H6Oet" to="ec8n:WklGGZprK5" resolve="get" />
-                <node concept="2H6Wec" id="2JGF63bJx4s" role="1_9fRO">
-                  <ref role="2H6Wef" node="2JGF63bJuT9" resolve="receiveBuffer" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1_amY7" id="2JGF63bJwJp" role="1_amZ$">
-            <property role="TrG5h" value="i" />
-            <node concept="26Vqp4" id="2JGF63bJwJq" role="2C2TGm">
-              <property role="2caQfQ" value="false" />
-              <property role="2c7vTL" value="false" />
-            </node>
-            <node concept="3TlMh9" id="2JGF63bJwJr" role="3XIe9u">
-              <property role="2hmy$m" value="0" />
-            </node>
-          </node>
-          <node concept="3Tl9Jn" id="2JGF63bJwJs" role="1_amZB">
-            <node concept="3TlMh9" id="2JGF63bJwJt" role="3TlMhJ">
-              <property role="2hmy$m" value="210" />
-            </node>
-            <node concept="3ZVu4v" id="2JGF63bJwJu" role="3TlMhI">
-              <ref role="3ZVs_2" node="2JGF63bJwJp" resolve="i" />
-            </node>
-          </node>
-          <node concept="3TM6Ey" id="2JGF63bJwJv" role="1_amZy">
-            <node concept="3ZVu4v" id="2JGF63bJwJw" role="1_9fRO">
-              <ref role="3ZVs_2" node="2JGF63bJwJp" resolve="i" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XISUE" id="2JGF63bJwBR" role="3XIRFZ" />
-      </node>
-    </node>
-    <node concept="2NXPZ9" id="2JGF63bJs9_" role="N3F5h">
-      <property role="TrG5h" value="empty_1437482457561_35" />
-    </node>
-    <node concept="2NXPZ9" id="2JGF63bJs9M" role="N3F5h">
-      <property role="TrG5h" value="empty_1437482457687_36" />
-    </node>
-    <node concept="2NXPZ9" id="2JGF63bJsa3" role="N3F5h">
-      <property role="TrG5h" value="empty_1437482457804_37" />
-    </node>
-    <node concept="3GEVxB" id="2JGF63bJsao" role="2OODSX">
-      <ref role="3GEb4d" to="azo0:74TmcPjUmer" resolve="Radio" />
-    </node>
-    <node concept="3GEVxB" id="2JGF63bJsei" role="2OODSX">
-      <ref role="3GEb4d" to="t6m2:5zHWU$GuxGd" resolve="IO" />
-    </node>
-    <node concept="3GEVxB" id="2JGF63bJsHr" role="2OODSX">
-      <ref role="3GEb4d" to="ec8n:WklGGZyS_k" resolve="Buffer" />
-    </node>
-    <node concept="3GEVxB" id="2JGF63c0vCX" role="2OODSX">
-      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
-    </node>
-  </node>
-  <node concept="N3F5e" id="2Z$TrjNbEC4">
-    <property role="TrG5h" value="OversamplingRadioTests" />
-    <node concept="2NXPZ9" id="2Z$TrjNbEC5" role="N3F5h">
-      <property role="TrG5h" value="empty_1438069091164_39" />
-    </node>
-    <node concept="2NXPZ9" id="2Z$TrjNbEDd" role="N3F5h">
-      <property role="TrG5h" value="empty_1438069165122_42" />
-    </node>
-    <node concept="2EWCtd" id="2Z$TrjNbECe" role="N3F5h">
-      <property role="TrG5h" value="OversamplingRadioTestInstances" />
-      <node concept="2EWCuV" id="2Z$TrjNbECj" role="5JtDH">
-        <property role="TrG5h" value="_receiver" />
-        <ref role="2EWCuU" to="azo0:2Z$TrjNbyFt" resolve="OversamplingRadioReceiver" />
-      </node>
-      <node concept="2EWCuV" id="2Z$TrjNbG1H" role="5JtDH">
-        <property role="TrG5h" value="_outputStreamBuffer" />
-        <ref role="2EWCuU" node="2Z$TrjNbEEE" resolve="OutputBitStreamMock" />
-      </node>
-      <node concept="2EWCuV" id="2Z$TrjNbG34" role="5JtDH">
-        <property role="TrG5h" value="_inputPin" />
-        <ref role="2EWCuU" to="t6m2:74TmcPiXh8v" resolve="DigitalPinMock" />
-      </node>
-      <node concept="2EWCuP" id="2Z$TrjNbG2q" role="5JtDH">
-        <node concept="2EWCuO" id="2Z$TrjNbG2r" role="2EWCuL">
-          <ref role="2EWCuR" node="2Z$TrjNbECj" resolve="_receiver" />
-          <ref role="XcPQd" to="azo0:2Z$TrjNbyP9" resolve="output" />
-        </node>
-        <node concept="2EWCuO" id="2Z$TrjNbG2s" role="2EWCuK">
-          <ref role="2EWCuR" node="2Z$TrjNbG1H" resolve="_outputStreamBuffer" />
-          <ref role="XcPQd" node="2Z$TrjNbEHy" resolve="stream" />
-        </node>
-      </node>
-      <node concept="2EWCuP" id="2Z$TrjNbG2G" role="5JtDH">
-        <node concept="2EWCuO" id="2Z$TrjNbG2H" role="2EWCuL">
-          <ref role="2EWCuR" node="2Z$TrjNbECj" resolve="_receiver" />
-          <ref role="XcPQd" to="azo0:2Z$TrjNbyPa" resolve="inputPin" />
-        </node>
-        <node concept="2EWCuO" id="2Z$TrjNbG2I" role="2EWCuK">
-          <ref role="2EWCuR" node="2Z$TrjNbG34" resolve="_inputPin" />
-          <ref role="XcPQd" to="t6m2:74TmcPiXhaY" resolve="pin" />
-        </node>
-      </node>
-      <node concept="JAGxh" id="2Z$TrjNbHZj" role="5JtDH" />
-      <node concept="21gPQu" id="2Z$TrjNbOnL" role="5JtDH">
-        <property role="TrG5h" value="receiverRunnable" />
-        <node concept="219P8x" id="2Z$TrjNbOnM" role="21ad3a">
-          <ref role="219P8w" node="2Z$TrjNbECj" resolve="_receiver" />
-          <ref role="219P8J" to="azo0:2Z$TrjNbyP8" resolve="runnable" />
-        </node>
-      </node>
-    </node>
-    <node concept="2NXPZ9" id="2Z$TrjNbEDW" role="N3F5h">
-      <property role="TrG5h" value="empty_1438069170913_45" />
-    </node>
-    <node concept="2NXPZ9" id="2Z$TrjNbEE6" role="N3F5h">
-      <property role="TrG5h" value="empty_1438069171073_46" />
-    </node>
-    <node concept="2EWCuY" id="2Z$TrjNbEEE" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="OutputBitStreamMock" />
-      <node concept="2EWHp_" id="2Z$TrjNbEHy" role="2RW2fA">
-        <property role="TrG5h" value="stream" />
-        <ref role="2EX0h9" to="azo0:4TJtxzSUyTd" resolve="IOutputBitStream" />
-      </node>
-      <node concept="EbCE0" id="2Z$TrjNbEEZ" role="2RW2fA">
-        <property role="TrG5h" value="buffer" />
-        <node concept="26Vqp1" id="2Z$TrjNbEEX" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-        <node concept="3TlMh9" id="2Z$TrjNbEFi" role="EbCE5">
-          <property role="2hmy$m" value="0" />
-        </node>
-      </node>
-      <node concept="3Khz0B" id="2Z$TrjNbEEU" role="2RW2fA" />
-      <node concept="2EWDwb" id="2Z$TrjNbEHD" role="2RW2fA">
-        <property role="TrG5h" value="stream_writeBit" />
-        <node concept="3XIRFW" id="2Z$TrjNbEHE" role="2EWMhI">
-          <node concept="1_9egQ" id="2Z$TrjNbEIH" role="3XIRFZ">
-            <node concept="3pqW6w" id="2Z$TrjNbEIW" role="1_9egR">
-              <node concept="EUQZk" id="2Z$TrjNbF0y" role="3TlMhJ">
-                <node concept="2BPB98" id="2Z$TrjNbF0_" role="3TlMhJ">
-                  <node concept="n5E$d" id="2Z$TrjNbFdB" role="1_9fRO">
-                    <node concept="3TlMh9" id="2Z$TrjNbFk3" role="n5E$j">
-                      <property role="2hmy$m" value="1" />
-                    </node>
-                    <node concept="3TlMh9" id="2Z$TrjNbFsr" role="n5E$i">
-                      <property role="2hmy$m" value="0" />
-                    </node>
-                    <node concept="3ZUYvv" id="2Z$TrjNbF74" role="n5E$c">
-                      <ref role="3ZUYvu" node="2Z$TrjNbEHI" resolve="value" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2BPB98" id="2Z$TrjNbEUa" role="3TlMhI">
-                  <node concept="3oul24" id="2Z$TrjNbENJ" role="1_9fRO">
-                    <node concept="3TlMh9" id="2Z$TrjNbENM" role="3TlMhJ">
-                      <property role="2hmy$m" value="1" />
-                    </node>
-                    <node concept="EbZIE" id="2Z$TrjNbELj" role="3TlMhI">
-                      <ref role="EbZID" node="2Z$TrjNbEEZ" resolve="buffer" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="EbZIE" id="2Z$TrjNbEIF" role="3TlMhI">
-                <ref role="EbZID" node="2Z$TrjNbEEZ" resolve="buffer" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2EWDw0" id="2Z$TrjNbEHG" role="2EWDeT">
-          <ref role="1ZwSu5" node="2Z$TrjNbEHy" resolve="stream" />
-          <ref role="1ZwxE2" to="azo0:4TJtxzSUz1n" resolve="writeBit" />
-        </node>
-        <node concept="19Rifw" id="2Z$TrjNbEHH" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-        <node concept="19RgSI" id="2Z$TrjNbEHI" role="1UOdpc">
-          <property role="TrG5h" value="value" />
-          <node concept="3TlMgk" id="2Z$TrjNbEHJ" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
-      </node>
-      <node concept="2EWDwb" id="2Z$TrjNbEHK" role="2RW2fA">
-        <property role="TrG5h" value="stream_spaceAvailable" />
-        <node concept="3XIRFW" id="2Z$TrjNbEHL" role="2EWMhI">
-          <node concept="2BFjQ_" id="2Z$TrjNbEHP" role="3XIRFZ">
-            <node concept="3TlMhK" id="2Z$TrjNbF$q" role="2BFjQA" />
-          </node>
-        </node>
-        <node concept="2EWDw0" id="2Z$TrjNbEHN" role="2EWDeT">
-          <ref role="1ZwSu5" node="2Z$TrjNbEHy" resolve="stream" />
-          <ref role="1ZwxE2" to="azo0:4TJtxzSUAXk" resolve="spaceAvailable" />
-        </node>
-        <node concept="3TlMgk" id="2Z$TrjNbEHO" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-    </node>
-    <node concept="2NXPZ9" id="2Z$TrjNbEEt" role="N3F5h">
-      <property role="TrG5h" value="empty_1438069171357_48" />
-    </node>
-    <node concept="c0Qz5" id="2Z$TrjNbHjz" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="testOversamplingRate" />
-      <node concept="19Rifw" id="2Z$TrjNbHj$" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="3XIRFW" id="2Z$TrjNbHjA" role="c0Qz3">
-        <node concept="1QiMYF" id="2Z$TrjNbHus" role="3XIRFZ">
-          <node concept="OjmMv" id="2Z$TrjNbHuu" role="3SJzmv">
-            <node concept="19SGf9" id="2Z$TrjNbHuv" role="OjmMu">
-              <node concept="19SUe$" id="2Z$TrjNbHuw" role="19SJt6">
-                <property role="19SUeA" value="all tests are written for an oversampling rate of 3" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2N2KuS" id="2Z$TrjNbHuf" role="3XIRFZ">
-          <node concept="3TlMh9" id="2Z$TrjNbHve" role="2N2GHh">
-            <property role="2hmy$m" value="3" />
-          </node>
-          <node concept="4ZOvp" id="2Z$TrjNbHuD" role="2N2GHg">
-            <ref role="2DPCA0" to="azo0:2Z$TrjNbyL1" resolve="RADIO_OVERSAMPLING" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2NXPZ9" id="2Z$TrjNbH9J" role="N3F5h">
-      <property role="TrG5h" value="empty_1438069720456_52" />
-    </node>
-    <node concept="c0Qz5" id="2Z$TrjNbGlG" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="testOversamplingReceiver" />
-      <node concept="19Rifw" id="2Z$TrjNbGlH" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="3XIRFW" id="2Z$TrjNbGlJ" role="c0Qz3">
-        <node concept="3t9XKO" id="2Z$TrjNbI07" role="3XIRFZ">
-          <ref role="3t9XKR" node="2Z$TrjNbECe" resolve="OversamplingRadioTestInstances" />
-        </node>
-        <node concept="3XISUE" id="2Z$TrjNbI0c" role="3XIRFZ" />
-        <node concept="2N2KuS" id="2Z$TrjNbOL7" role="3XIRFZ">
-          <node concept="3HbmlB" id="2Z$TrjNouC_" role="2N2GHh">
-            <property role="2hmy$m" value="101" />
-          </node>
-          <node concept="3O_q_g" id="2Z$TrjNbOLk" role="2N2GHg">
-            <ref role="3O_q_h" node="2Z$TrjNbGYa" resolve="runReceiver" />
-            <node concept="3HbmlB" id="2Z$TrjNkgB8" role="3O_q_j">
-              <property role="2hmy$m" value="0111000111" />
-            </node>
-            <node concept="3TlMh9" id="2Z$TrjNbON7" role="3O_q_j">
-              <property role="2hmy$m" value="10" />
-            </node>
-          </node>
-        </node>
-        <node concept="3t9XKO" id="2Z$TrjNzbMF" role="3XIRFZ">
-          <ref role="3t9XKR" node="2Z$TrjNbECe" resolve="OversamplingRadioTestInstances" />
-        </node>
-        <node concept="2N2KuS" id="2Z$TrjNsFSP" role="3XIRFZ">
-          <node concept="3HbmlB" id="2Z$TrjNsFSQ" role="2N2GHh">
-            <property role="2hmy$m" value="101" />
-          </node>
-          <node concept="3O_q_g" id="2Z$TrjNsFSR" role="2N2GHg">
-            <ref role="3O_q_h" node="2Z$TrjNbGYa" resolve="runReceiver" />
-            <node concept="3HbmlB" id="2Z$TrjNsFSS" role="3O_q_j">
-              <property role="2hmy$m" value="01110000111" />
-            </node>
-            <node concept="3TlMh9" id="2Z$TrjNsFST" role="3O_q_j">
-              <property role="2hmy$m" value="11" />
-            </node>
-          </node>
-        </node>
-        <node concept="3t9XKO" id="2Z$TrjNzbQe" role="3XIRFZ">
-          <ref role="3t9XKR" node="2Z$TrjNbECe" resolve="OversamplingRadioTestInstances" />
-        </node>
-        <node concept="2N2KuS" id="2Z$TrjNsH6D" role="3XIRFZ">
-          <node concept="3HbmlB" id="2Z$TrjNsH6E" role="2N2GHh">
-            <property role="2hmy$m" value="101" />
-          </node>
-          <node concept="3O_q_g" id="2Z$TrjNsH6F" role="2N2GHg">
-            <ref role="3O_q_h" node="2Z$TrjNbGYa" resolve="runReceiver" />
-            <node concept="3HbmlB" id="2Z$TrjNsH6G" role="3O_q_j">
-              <property role="2hmy$m" value="0110000111" />
-            </node>
-            <node concept="3TlMh9" id="2Z$TrjNsH6H" role="3O_q_j">
-              <property role="2hmy$m" value="10" />
-            </node>
-          </node>
-        </node>
-        <node concept="3t9XKO" id="2Z$TrjNzbRt" role="3XIRFZ">
-          <ref role="3t9XKR" node="2Z$TrjNbECe" resolve="OversamplingRadioTestInstances" />
-        </node>
-        <node concept="2N2KuS" id="2Z$TrjNsHWz" role="3XIRFZ">
-          <node concept="3HbmlB" id="2Z$TrjNsHW$" role="2N2GHh">
-            <property role="2hmy$m" value="1001" />
-          </node>
-          <node concept="3O_q_g" id="2Z$TrjNsHW_" role="2N2GHg">
-            <ref role="3O_q_h" node="2Z$TrjNbGYa" resolve="runReceiver" />
-            <node concept="3HbmlB" id="2Z$TrjNsHWA" role="3O_q_j">
-              <property role="2hmy$m" value="01100000111" />
-            </node>
-            <node concept="3TlMh9" id="2Z$TrjNsHWB" role="3O_q_j">
-              <property role="2hmy$m" value="11" />
-            </node>
-          </node>
-        </node>
-        <node concept="3t9XKO" id="2Z$TrjNzbSH" role="3XIRFZ">
-          <ref role="3t9XKR" node="2Z$TrjNbECe" resolve="OversamplingRadioTestInstances" />
-        </node>
-        <node concept="2N2KuS" id="2Z$TrjNsJbR" role="3XIRFZ">
-          <node concept="3HbmlB" id="2Z$TrjNsJbS" role="2N2GHh">
-            <property role="2hmy$m" value="0010" />
-          </node>
-          <node concept="3O_q_g" id="2Z$TrjNsJbT" role="2N2GHg">
-            <ref role="3O_q_h" node="2Z$TrjNbGYa" resolve="runReceiver" />
-            <node concept="3HbmlB" id="2Z$TrjNsJbU" role="3O_q_j">
-              <property role="2hmy$m" value="100000110000" />
-            </node>
-            <node concept="3TlMh9" id="2Z$TrjNsJbV" role="3O_q_j">
-              <property role="2hmy$m" value="12" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2NXPZ9" id="2Z$TrjNbGFp" role="N3F5h">
-      <property role="TrG5h" value="empty_1438069672369_50" />
-    </node>
-    <node concept="N3Fnx" id="2Z$TrjNbGYa" role="N3F5h">
-      <property role="TrG5h" value="runReceiver" />
-      <node concept="19RgSI" id="2Z$TrjNbH8W" role="1UOdpc">
-        <property role="TrG5h" value="input" />
-        <node concept="26Vqp1" id="2Z$TrjNbH8U" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-      <node concept="19RgSI" id="2Z$TrjNbH$3" role="1UOdpc">
-        <property role="TrG5h" value="numBits" />
-        <node concept="26Vqp4" id="2Z$TrjNbH$1" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-      <node concept="26Vqp1" id="2Z$TrjNbH9_" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="3XIRFW" id="2Z$TrjNbGYc" role="3XIRFX">
-        <node concept="1_9egQ" id="2Z$TrjNbJaJ" role="3XIRFZ">
-          <node concept="3pqW6w" id="2Z$TrjNbJlq" role="1_9egR">
-            <node concept="3TlMh9" id="2Z$TrjNbJlt" role="3TlMhJ">
-              <property role="2hmy$m" value="0" />
-            </node>
-            <node concept="2UioT2" id="2Z$TrjNbJaK" role="3TlMhI">
-              <ref role="1XX6Gs" node="2Z$TrjNbG1H" resolve="_outputStreamBuffer" />
-              <ref role="1XX6Gv" node="2Z$TrjNbECe" resolve="OversamplingRadioTestInstances" />
-              <ref role="2UipsX" node="2Z$TrjNbEEZ" resolve="buffer" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XISUE" id="2Z$TrjNbJ0T" role="3XIRFZ" />
-        <node concept="1_a8vi" id="2Z$TrjNbH$I" role="3XIRFZ">
-          <node concept="3XIRFW" id="2Z$TrjNbH$J" role="1_amYn">
-            <node concept="1_9egQ" id="2Z$TrjNbIef" role="3XIRFZ">
-              <node concept="3pqW6w" id="2Z$TrjNbIeg" role="1_9egR">
-                <node concept="25Bbzn" id="2Z$TrjNbNpn" role="3TlMhJ">
-                  <node concept="3TlMh9" id="2Z$TrjNbNGP" role="3TlMhJ">
-                    <property role="2hmy$m" value="0" />
-                  </node>
-                  <node concept="2BPB98" id="2Z$TrjNbMqk" role="3TlMhI">
-                    <node concept="SSPID" id="2Z$TrjNbM6N" role="1_9fRO">
-                      <node concept="3TlMh9" id="2Z$TrjNbM6Q" role="3TlMhJ">
-                        <property role="2hmy$m" value="1" />
-                      </node>
-                      <node concept="2BPB98" id="2Z$TrjNbLLs" role="3TlMhI">
-                        <node concept="3ov31F" id="2Z$TrjNbJPp" role="1_9fRO">
-                          <node concept="2BPB98" id="2Z$TrjNbK0k" role="3TlMhJ">
-                            <node concept="2BOcil" id="2Z$TrjNbKo6" role="1_9fRO">
-                              <node concept="3TlMh9" id="2Z$TrjNbKo9" role="3TlMhJ">
-                                <property role="2hmy$m" value="1" />
-                              </node>
-                              <node concept="3ZVu4v" id="2Z$TrjNbKbb" role="3TlMhI">
-                                <ref role="3ZVs_2" node="2Z$TrjNbH$X" resolve="i" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3ZUYvv" id="2Z$TrjNbJEt" role="3TlMhI">
-                            <ref role="3ZUYvu" node="2Z$TrjNbH8W" resolve="input" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2UioT2" id="2Z$TrjNbIei" role="3TlMhI">
-                  <ref role="1XX6Gs" node="2Z$TrjNbG34" resolve="_inputPin" />
-                  <ref role="2UipsX" to="t6m2:74TmcPiXhgF" resolve="_value" />
-                  <ref role="1XX6Gv" node="2Z$TrjNbECe" resolve="OversamplingRadioTestInstances" />
-                </node>
-              </node>
-            </node>
-            <node concept="1_9egQ" id="2Z$TrjNbOo2" role="3XIRFZ">
-              <node concept="30IJZa" id="2Z$TrjNbOKI" role="1_9egR">
-                <ref role="2H6Oet" to="ec8n:exHFgzK8US" resolve="run" />
-                <node concept="2H6Wec" id="2Z$TrjNbOo0" role="1_9fRO">
-                  <ref role="2H6Wef" node="2Z$TrjNbOnL" resolve="receiverRunnable" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1_amY7" id="2Z$TrjNbH$X" role="1_amZ$">
-            <property role="TrG5h" value="i" />
-            <node concept="26Vqp4" id="2Z$TrjNbH$W" role="2C2TGm">
-              <property role="2caQfQ" value="false" />
-              <property role="2c7vTL" value="false" />
-            </node>
-            <node concept="2BOcil" id="2Z$TrjNbHA5" role="3XIe9u">
-              <node concept="3TlMh9" id="2Z$TrjNbHA8" role="3TlMhJ">
-                <property role="2hmy$m" value="1" />
-              </node>
-              <node concept="3ZUYvv" id="2Z$TrjNbH_k" role="3TlMhI">
-                <ref role="3ZUYvu" node="2Z$TrjNbH$3" resolve="numBits" />
-              </node>
-            </node>
-          </node>
-          <node concept="3Tl9Jr" id="2Z$TrjNbHP0" role="1_amZB">
-            <node concept="3ZVu4v" id="2Z$TrjNbHP2" role="3TlMhI">
-              <ref role="3ZVs_2" node="2Z$TrjNbH$X" resolve="i" />
-            </node>
-            <node concept="3TlMh9" id="2Z$TrjNbHP3" role="3TlMhJ">
-              <property role="2hmy$m" value="0" />
-            </node>
-          </node>
-          <node concept="1FldXs" id="2Z$TrjNbHTw" role="1_amZy">
-            <node concept="3ZVu4v" id="2Z$TrjNbHUR" role="1_9fRO">
-              <ref role="3ZVs_2" node="2Z$TrjNbH$X" resolve="i" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XISUE" id="2Z$TrjNbIev" role="3XIRFZ" />
-        <node concept="2BFjQ_" id="2Z$TrjNbIia" role="3XIRFZ">
-          <node concept="2UioT2" id="2Z$TrjNbI0w" role="2BFjQA">
-            <ref role="2UipsX" node="2Z$TrjNbEEZ" resolve="buffer" />
-            <ref role="1XX6Gv" node="2Z$TrjNbECe" resolve="OversamplingRadioTestInstances" />
-            <ref role="1XX6Gs" node="2Z$TrjNbG1H" resolve="_outputStreamBuffer" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3GEVxB" id="2Z$TrjNbECo" role="2OODSX">
-      <ref role="3GEb4d" to="azo0:74TmcPjUmer" resolve="Radio" />
-    </node>
-    <node concept="3GEVxB" id="2Z$TrjNbGcd" role="2OODSX">
-      <ref role="3GEb4d" to="t6m2:5zHWU$GuxGd" resolve="IO" />
     </node>
   </node>
 </model>

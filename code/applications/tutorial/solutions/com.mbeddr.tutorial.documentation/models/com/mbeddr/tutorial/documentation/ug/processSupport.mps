@@ -2662,7 +2662,7 @@
         <node concept="1_0LV8" id="12l$qjdf_gG" role="1_0VJ0">
           <node concept="19SGf9" id="12l$qjdf_gH" role="1_0LWR">
             <node concept="19SUe$" id="12l$qjdf_gI" role="19SJt6">
-              <property role="19SUeA" value="Tags are similar to the data objects, but they are &quot;syntactically smaller&quot;. Existing tags include the requirements status (you can set it to " />
+              <property role="19SUeA" value="Tags are similar the data objects, but they are &quot;syntactically smaller&quot;. Existing tags include the requirements status (you can set it to " />
             </node>
             <node concept="1jUjqm" id="12l$qjdhLnZ" role="19SJt6">
               <node concept="19SGf9" id="12l$qjdhLo0" role="$DsGW">
@@ -2739,7 +2739,7 @@
         <node concept="1_0LV8" id="12l$qjdhLq2" role="1_0VJ0">
           <node concept="19SGf9" id="12l$qjdhLq3" role="1_0LWR">
             <node concept="19SUe$" id="12l$qjdhLq4" role="19SJt6">
-              <property role="19SUeA" value="The requirements visualization shows the upstream and downstream dependencies of a particular requirement. An example is shown in " />
+              <property role="19SUeA" value="The requirements visualization show the upstream and downstream dependencies of a particular requirement. An example is shown in " />
             </node>
             <node concept="2Sbdz4" id="12l$qjdhM4E" role="19SJt6">
               <ref role="2SbdyP" node="12l$qjdhAVq" resolve="depVis" />
@@ -3065,7 +3065,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="3PCHQK62sPC" role="19SJt6">
-              <property role="19SUeA" value=" intention to attach a trace to any node. By default, the " />
+              <property role="19SUeA" value=" annotation to attach a trace to any node. By default, the " />
             </node>
             <node concept="1jUjqm" id="3PCHQK62sPS" role="19SJt6">
               <node concept="19SGf9" id="3PCHQK62sPT" role="$DsGW">
