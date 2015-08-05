@@ -61,15 +61,14 @@
         <child id="1741902046316071821" name="type" index="2S7B4z" />
       </concept>
       <concept id="5348704582971040037" name="com.mbeddr.ext.units.structure.UnitConfigItem" flags="ng" index="2eh4Hv" />
-      <concept id="8869906162335096030" name="com.mbeddr.ext.units.structure.IMetaUnitDeclaration" flags="ng" index="2m421Q">
-        <child id="8869906162335096109" name="units" index="2m4265" />
+      <concept id="4791464552504513459" name="com.mbeddr.ext.units.structure.GenericUnitDeclarationAttribute" flags="ng" index="2f_I0G">
+        <child id="4791464552504535662" name="units" index="2f_xBL" />
       </concept>
       <concept id="5185104661801317038" name="com.mbeddr.ext.units.structure.ValExpression" flags="ng" index="2m5Cep" />
       <concept id="624957442818070507" name="com.mbeddr.ext.units.structure.StripUnitExpression" flags="ng" index="2yh1Mg">
         <child id="624957442818070508" name="innerExpression" index="2yh1Mn" />
       </concept>
       <concept id="8337440621613064925" name="com.mbeddr.ext.units.structure.MetaUnit" flags="ng" index="CB2zf" />
-      <concept id="8337440621613065018" name="com.mbeddr.ext.units.structure.MetaUnitDeclaration" flags="ng" index="CB2$C" />
       <concept id="8337440621611212272" name="com.mbeddr.ext.units.structure.AnnotatedExpression" flags="ng" index="CIdvy">
         <child id="8337440621611267898" name="innerExpression" index="CIrOC" />
         <child id="8337440621611353453" name="specification" index="CIwXZ" />
@@ -1858,11 +1857,11 @@
           </node>
         </node>
       </node>
-      <node concept="CB2$C" id="6CnXAkqZo1H" role="lGtFl">
-        <node concept="CB2zf" id="6CnXAkqZo1I" role="2m4265">
+      <node concept="2f_I0G" id="49YGTZe$Pxv" role="lGtFl">
+        <node concept="CB2zf" id="6CnXAkqZo1I" role="2f_xBL">
           <property role="TrG5h" value="U1" />
         </node>
-        <node concept="CB2zf" id="2B__QU5Rvb8" role="2m4265">
+        <node concept="CB2zf" id="2B__QU5Rvb8" role="2f_xBL">
           <property role="TrG5h" value="U2" />
         </node>
       </node>
@@ -1924,8 +1923,8 @@
           </node>
         </node>
       </node>
-      <node concept="CB2$C" id="2B__QU5RJtw" role="lGtFl">
-        <node concept="CB2zf" id="2B__QU5RJtx" role="2m4265">
+      <node concept="2f_I0G" id="49YGTZe$Pxw" role="lGtFl">
+        <node concept="CB2zf" id="2B__QU5RJtx" role="2f_xBL">
           <property role="TrG5h" value="U1" />
         </node>
       </node>
@@ -2031,8 +2030,8 @@
           </node>
         </node>
       </node>
-      <node concept="CB2$C" id="1VdI9nUEHo5" role="lGtFl">
-        <node concept="CB2zf" id="1VdI9nUEHo6" role="2m4265">
+      <node concept="2f_I0G" id="49YGTZe$Pxx" role="lGtFl">
+        <node concept="CB2zf" id="1VdI9nUEHo6" role="2f_xBL">
           <property role="TrG5h" value="U1" />
         </node>
       </node>
