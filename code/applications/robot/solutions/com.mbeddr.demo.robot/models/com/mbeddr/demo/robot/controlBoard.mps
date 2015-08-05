@@ -90,6 +90,9 @@
         <child id="6275792049641600984" name="condition" index="c0U16" />
         <child id="6275792049641600985" name="thenPart" index="c0U17" />
       </concept>
+      <concept id="3134547887598524930" name="com.mbeddr.core.statements.structure.SwitchDefault" flags="ng" index="ggJMK">
+        <child id="3134547887598524932" name="body" index="ggJMQ" />
+      </concept>
       <concept id="3134547887598524928" name="com.mbeddr.core.statements.structure.SwitchCase" flags="ng" index="ggJMM">
         <child id="3134547887598524931" name="body" index="ggJML" />
         <child id="3134547887598524929" name="expression" index="ggJMN" />
@@ -421,6 +424,7 @@
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
       <concept id="8399455261460717642" name="com.mbeddr.core.expressions.structure.OrExpression" flags="ng" index="2EHzL4" />
+      <concept id="8399455261460717640" name="com.mbeddr.core.expressions.structure.AndExpression" flags="ng" index="2EHzL6" />
       <concept id="3820836583575227340" name="com.mbeddr.core.expressions.structure.DirectPlusAssignmentExpression" flags="ng" index="TPXPH" />
       <concept id="2254577831298739059" name="com.mbeddr.core.expressions.structure.CommentedContent" flags="ng" index="2Ygvn$">
         <child id="2254577831298739061" name="content" index="2Ygvny" />
@@ -433,6 +437,7 @@
       <concept id="7533755140553634202" name="com.mbeddr.core.expressions.structure.StaticValueExpression" flags="ng" index="3DXrvS">
         <child id="7533755140555345895" name="expr" index="3D7$A5" />
       </concept>
+      <concept id="3976803464656498418" name="com.mbeddr.core.expressions.structure.PreDecrementExpression" flags="ng" index="1FldXs" />
       <concept id="743779816742251347" name="com.mbeddr.core.expressions.structure.ITypeDecorator" flags="ng" index="1Ml8iu">
         <child id="7336544617004013388" name="valueType" index="UxbcT" />
       </concept>
@@ -867,15 +872,23 @@
         <node concept="3_ZiP3" id="5KcWL$DmapC" role="2EWDeT" />
       </node>
       <node concept="3Khz0B" id="5KcWL$Dm7IV" role="2RW2fA" />
+      <node concept="EbCE0" id="5MdZHRsW9k3" role="2RW2fA">
+        <property role="TrG5h" value="timer3InterruptCount" />
+        <node concept="26Vqp4" id="5MdZHRsW9k1" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3TlMh9" id="5MdZHRsWarM" role="EbCE5">
+          <property role="2hmy$m" value="0" />
+        </node>
+      </node>
       <node concept="2EWDwb" id="7UgeC20AmF9" role="2RW2fA">
         <property role="TrG5h" value="isrTimer3" />
         <node concept="3XIRFW" id="7UgeC20AmFa" role="2EWMhI">
-          <node concept="1_9egQ" id="7UgeC20Aov8" role="3XIRFZ">
-            <node concept="3LAlOK" id="7UgeC20ZJm3" role="1_9egR">
-              <ref role="2H6Oet" to="ec8n:exHFgzK8US" resolve="run" />
-              <node concept="1DnYEe" id="7UgeC20Aov7" role="1_9fRO">
-                <ref role="1DnYF2" node="74TmcPkYWdI" resolve="distanceSensor" />
-                <ref role="1DcY7d" to="sgg6:555ATswpFCc" resolve="timerInterrupt" />
+          <node concept="1_9egQ" id="5MdZHRsWato" role="3XIRFZ">
+            <node concept="3TM6Ez" id="5MdZHRsWauh" role="1_9egR">
+              <node concept="EbZIE" id="5MdZHRsWatm" role="1_9fRO">
+                <ref role="EbZID" node="5MdZHRsW9k3" resolve="timer3InterruptCount" />
               </node>
             </node>
           </node>
@@ -2054,13 +2067,13 @@
           <node concept="3R_36c" id="5$_GT_wduIW" role="3R_39I">
             <ref role="3R_36f" to="lmqm:5$_GT_vvX8$" resolve="KP" />
             <node concept="3TlMh9" id="5$_GT_wdDUr" role="3R_36e">
-              <property role="2hmy$m" value="5.0" />
+              <property role="2hmy$m" value="2.0" />
             </node>
           </node>
           <node concept="3R_36c" id="5$_GT_wduIX" role="3R_39I">
             <ref role="3R_36f" to="lmqm:5$_GT_vvXhC" resolve="KI" />
             <node concept="3TlMh9" id="5$_GT_wduLz" role="3R_36e">
-              <property role="2hmy$m" value="0.3" />
+              <property role="2hmy$m" value="0.5" />
             </node>
           </node>
           <node concept="3R_36c" id="5$_GT_wduIY" role="3R_39I">
@@ -2085,7 +2098,7 @@
           <node concept="3R_36c" id="5$_GT_wduJ0" role="3R_39I">
             <ref role="3R_36f" to="lmqm:5$_GT_vw6yD" resolve="integratorLimit" />
             <node concept="3TlMh9" id="5$_GT_wdDBV" role="3R_36e">
-              <property role="2hmy$m" value="1.0" />
+              <property role="2hmy$m" value="0.2" />
             </node>
           </node>
           <node concept="3R_36c" id="5$_GT_wduJ1" role="3R_39I">
@@ -2149,7 +2162,7 @@
             <ref role="3R_36f" to="lmqm:7UgeC21lWKl" resolve="timeConstant" />
             <node concept="CIdvy" id="7UgeC21m4Yl" role="3R_36e">
               <node concept="3TlMh9" id="7UgeC21m4Yk" role="CIrOC">
-                <property role="2hmy$m" value="2" />
+                <property role="2hmy$m" value="0.1" />
               </node>
               <node concept="CIsGf" id="7UgeC21m4Ym" role="CIwXZ">
                 <node concept="CIsvn" id="7UgeC21m4Yn" role="CIi4h">
@@ -3785,16 +3798,47 @@
         </node>
       </node>
       <node concept="3Khz0B" id="7UgeC22Ty74" role="2RW2fA" />
-      <node concept="3Khz0B" id="7UgeC22TA1q" role="2RW2fA" />
+      <node concept="EbCE0" id="5MdZHRp6Aqa" role="2RW2fA">
+        <property role="TrG5h" value="currentTask" />
+        <node concept="26Vqp4" id="5MdZHRp6Aq8" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3TlMh9" id="5MdZHRp6BTQ" role="EbCE5">
+          <property role="2hmy$m" value="0" />
+        </node>
+      </node>
       <node concept="2EWDwb" id="2XT_MLH9bj$" role="2RW2fA">
         <property role="TrG5h" value="runnable0_run" />
         <node concept="3XIRFW" id="2XT_MLH9bj_" role="2EWMhI">
-          <node concept="3XISUE" id="7UgeC21jHT5" role="3XIRFZ" />
+          <node concept="1_9egQ" id="7UgeC25UZQP" role="3XIRFZ">
+            <node concept="3LAlOK" id="5MdZHRqWReW" role="1_9egR">
+              <ref role="2H6Oet" to="t6m2:5zHWU$Guqal" resolve="write" />
+              <node concept="1DnYEe" id="7UgeC25UZQO" role="1_9fRO">
+                <ref role="1DcY7d" to="bs9u:74TmcPjVXfm" resolve="pin" />
+                <ref role="1DnYF2" node="4TJtxzRb_Ug" resolve="txLed" />
+              </node>
+              <node concept="3Tl9Jn" id="5MdZHRqWS0_" role="2H6KYo">
+                <node concept="3TlMh9" id="5MdZHRqWSnV" role="3TlMhJ">
+                  <property role="2hmy$m" value="300.0" />
+                </node>
+                <node concept="3LAlOK" id="5MdZHRqWRLP" role="3TlMhI">
+                  <ref role="2H6Oet" to="lmqm:6Y0wRXx6n2S" resolve="getOutput" />
+                  <node concept="1DnYEe" id="5MdZHRqWRj2" role="1_9fRO">
+                    <ref role="1DnYF2" node="7UgeC20Bhjz" resolve="pt1Distance" />
+                    <ref role="1DcY7d" to="lmqm:6Y0wRXx6nrO" resolve="filter" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3XISUE" id="5MdZHRqQc5u" role="3XIRFZ" />
+          <node concept="3XISUE" id="5MdZHRqQc82" role="3XIRFZ" />
           <node concept="1QiMYF" id="7UgeC21jpXf" role="3XIRFZ">
             <node concept="OjmMv" id="7UgeC21jpXh" role="3SJzmv">
               <node concept="19SGf9" id="7UgeC21jpXi" role="OjmMu">
                 <node concept="19SUe$" id="7UgeC21jpXj" role="19SJt6">
-                  <property role="19SUeA" value="The 100 Hz clocks are used to run the PID controllers with a fixed frequency and&#10;to reduce the WCET of this function." />
+                  <property role="19SUeA" value="We have 30 slots for the 100 Hz clock signal (clocks100Hz runs from 0 to 30 in 10 ms).&#10;We could generate one 100 Hz signal and execute all the code at once, but that would increase the WCET of the main loop.&#10;The value of clocks100Hz changes every 10 ms / 30 = 0.333 ms. The main loop must have a WCET below this value." />
                 </node>
               </node>
             </node>
@@ -3916,100 +3960,43 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3XISUE" id="7UgeC21lb6D" role="3XIRFZ" />
                     <node concept="27uf6b" id="7UgeC21lb6E" role="3XIRFZ" />
                   </node>
                   <node concept="3TlMh9" id="7UgeC21lb9g" role="ggJMN">
                     <property role="2hmy$m" value="3" />
                   </node>
                 </node>
-                <node concept="ggJMM" id="7UgeC21lbRz" role="ggJMH">
-                  <node concept="3XIRFW" id="7UgeC21lbR$" role="ggJML">
-                    <node concept="1_9egQ" id="7UgeC21lVmp" role="3XIRFZ">
-                      <node concept="3LAlOK" id="7UgeC21lVqI" role="1_9egR">
-                        <ref role="2H6Oet" to="lmqm:6Y0wRXx6n0n" resolve="intervalElapsed" />
-                        <node concept="1DnYEe" id="7UgeC21lVmo" role="1_9fRO">
-                          <ref role="1DnYF2" node="7UgeC20Bhjz" resolve="pt1Distance" />
-                          <ref role="1DcY7d" to="lmqm:6Y0wRXx6nrO" resolve="filter" />
+                <node concept="ggJMM" id="5MdZHRsqDOt" role="ggJMH">
+                  <node concept="3XIRFW" id="5MdZHRsqDOu" role="ggJML">
+                    <node concept="1QiMYF" id="5$_GT_wh6Qx" role="3XIRFZ">
+                      <node concept="OjmMv" id="5$_GT_wh6Qz" role="3SJzmv">
+                        <node concept="19SGf9" id="5$_GT_wh6Q$" role="OjmMu">
+                          <node concept="19SUe$" id="5$_GT_wh6Q_" role="19SJt6">
+                            <property role="19SUeA" value="slow down, if the connection to the remote control is lost" />
+                          </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="3XISUE" id="7UgeC21luMV" role="3XIRFZ" />
-                    <node concept="27uf6b" id="7UgeC21lbRA" role="3XIRFZ" />
+                    <node concept="1_9egQ" id="5$_GT_wh3P5" role="3XIRFZ">
+                      <node concept="3omEAZ" id="5$_GT_wh4NC" role="1_9egR">
+                        <node concept="2qmXGp" id="5$_GT_wh4NF" role="3TlMhI">
+                          <node concept="1E4Tgc" id="5$_GT_wh4NG" role="1ESnxz">
+                            <ref role="1E4Tge" to="noqc:2Z$TrjMra1h" resolve="relativeSpeed" />
+                          </node>
+                          <node concept="EbZIE" id="5$_GT_wh4NH" role="1_9fRO">
+                            <ref role="EbZID" node="2Z$TrjMukIg" resolve="remoteControlMessage" />
+                          </node>
+                        </node>
+                        <node concept="3TlMh9" id="5$_GT_wh56J" role="3TlMhJ">
+                          <property role="2hmy$m" value="0.98f" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3XISUE" id="5MdZHRsqDOv" role="3XIRFZ" />
+                    <node concept="27uf6b" id="5MdZHRsqDOw" role="3XIRFZ" />
                   </node>
-                  <node concept="3TlMh9" id="7UgeC21lbUM" role="ggJMN">
+                  <node concept="3TlMh9" id="5MdZHRsqDQG" role="ggJMN">
                     <property role="2hmy$m" value="4" />
-                  </node>
-                </node>
-                <node concept="ggJMM" id="7UgeC21lyr2" role="ggJMH">
-                  <node concept="3XIRFW" id="7UgeC21lyr3" role="ggJML">
-                    <node concept="1_9egQ" id="7UgeC24YmAM" role="3XIRFZ">
-                      <node concept="3LAlOK" id="7UgeC24Yno8" role="1_9egR">
-                        <ref role="2H6Oet" to="lmqm:5$_GT_vwmOI" resolve="mainLoop" />
-                        <node concept="1DnYEe" id="7UgeC24YmAL" role="1_9fRO">
-                          <ref role="1DnYF2" node="7UgeC20BfOu" resolve="pidDistanceSpeed" />
-                          <ref role="1DcY7d" to="lmqm:5$_GT_vvVpc" resolve="pid" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3XISUE" id="7UgeC24rmq9" role="3XIRFZ" />
-                    <node concept="27uf6b" id="7UgeC21lyr5" role="3XIRFZ" />
-                  </node>
-                  <node concept="3TlMh9" id="7UgeC21lyGt" role="ggJMN">
-                    <property role="2hmy$m" value="5" />
-                  </node>
-                </node>
-                <node concept="ggJMM" id="7UgeC21lOXe" role="ggJMH">
-                  <node concept="3XIRFW" id="7UgeC21lOXf" role="ggJML">
-                    <node concept="1_9egQ" id="7UgeC24z4i5" role="3XIRFZ">
-                      <node concept="2$_UoH" id="7UgeC24z4i3" role="1_9egR">
-                        <ref role="2$_UoI" node="7UgeC24yU$3" resolve="processRemoteControl" />
-                      </node>
-                    </node>
-                    <node concept="27uf6b" id="7UgeC21lOXh" role="3XIRFZ" />
-                  </node>
-                  <node concept="3TlMh9" id="7UgeC21lPhB" role="ggJMN">
-                    <property role="2hmy$m" value="6" />
-                  </node>
-                </node>
-                <node concept="ggJMM" id="7UgeC24rtGm" role="ggJMH">
-                  <node concept="3XIRFW" id="7UgeC24rtGn" role="ggJML">
-                    <node concept="1_9egQ" id="7UgeC24zbj2" role="3XIRFZ">
-                      <node concept="2$_UoH" id="7UgeC24zbj0" role="1_9egR">
-                        <ref role="2$_UoI" node="7UgeC24z8v0" resolve="processDistanceSensor" />
-                      </node>
-                    </node>
-                    <node concept="3XISUE" id="7UgeC24rtGo" role="3XIRFZ" />
-                    <node concept="27uf6b" id="7UgeC24rtGp" role="3XIRFZ" />
-                  </node>
-                  <node concept="3TlMh9" id="7UgeC24ruw6" role="ggJMN">
-                    <property role="2hmy$m" value="7" />
-                  </node>
-                </node>
-                <node concept="ggJMM" id="7UgeC26f9hv" role="ggJMH">
-                  <node concept="3XIRFW" id="7UgeC26f9hw" role="ggJML">
-                    <node concept="1_9egQ" id="7UgeC24zhJb" role="3XIRFZ">
-                      <node concept="2$_UoH" id="7UgeC24zhJ9" role="1_9egR">
-                        <ref role="2$_UoI" node="7UgeC24zf6l" resolve="processCompass" />
-                      </node>
-                    </node>
-                    <node concept="27uf6b" id="7UgeC26f9hy" role="3XIRFZ" />
-                  </node>
-                  <node concept="3TlMh9" id="7UgeC26f9qU" role="ggJMN">
-                    <property role="2hmy$m" value="8" />
-                  </node>
-                </node>
-                <node concept="ggJMM" id="7UgeC26fbav" role="ggJMH">
-                  <node concept="3XIRFW" id="7UgeC26fbaw" role="ggJML">
-                    <node concept="1_9egQ" id="7UgeC24zq9c" role="3XIRFZ">
-                      <node concept="2$_UoH" id="7UgeC24zq9a" role="1_9egR">
-                        <ref role="2$_UoI" node="7UgeC24znc0" resolve="processMotorBoard" />
-                      </node>
-                    </node>
-                    <node concept="27uf6b" id="7UgeC26fbay" role="3XIRFZ" />
-                  </node>
-                  <node concept="3TlMh9" id="7UgeC26fbkA" role="ggJMN">
-                    <property role="2hmy$m" value="9" />
                   </node>
                 </node>
               </node>
@@ -4020,6 +4007,179 @@
             </node>
           </node>
           <node concept="3XISUE" id="4khTSHqlBK$" role="3XIRFZ" />
+          <node concept="1QiMYF" id="5MdZHRsWbgM" role="3XIRFZ">
+            <node concept="OjmMv" id="5MdZHRsWbgO" role="3SJzmv">
+              <node concept="19SGf9" id="5MdZHRsWbgP" role="OjmMu">
+                <node concept="19SUe$" id="5MdZHRsWbgQ" role="19SJt6">
+                  <property role="19SUeA" value="To reduce the WCET of the timer 3 ISR, the code is executed here" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1_9egQ" id="5MdZHRt2Sj7" role="3XIRFZ">
+            <node concept="3O_q_g" id="5MdZHRt2Sj5" role="1_9egR">
+              <ref role="3O_q_h" to="bs9u:5KcWL$DkWBA" resolve="cli" />
+            </node>
+          </node>
+          <node concept="27v$Wf" id="5MdZHRsWaKH" role="3XIRFZ">
+            <node concept="3XIRFW" id="5MdZHRsWaKI" role="27v$W9">
+              <node concept="1_9egQ" id="5MdZHRqCKQP" role="3XIRFZ">
+                <node concept="3LAlOK" id="5MdZHRqCKUC" role="1_9egR">
+                  <ref role="2H6Oet" to="t6m2:5zHWU$Guqal" resolve="write" />
+                  <node concept="1DnYEe" id="5MdZHRqCKQO" role="1_9fRO">
+                    <ref role="1DcY7d" to="bs9u:74TmcPjVXfm" resolve="pin" />
+                    <ref role="1DnYF2" node="2Z$TrjNJv8S" resolve="tkd0" />
+                  </node>
+                  <node concept="3TlMhK" id="5MdZHRqCKVi" role="2H6KYo" />
+                </node>
+              </node>
+              <node concept="1_9egQ" id="7UgeC20Aov8" role="3XIRFZ">
+                <node concept="3LAlOK" id="7UgeC20ZJm3" role="1_9egR">
+                  <ref role="2H6Oet" to="ec8n:exHFgzK8US" resolve="run" />
+                  <node concept="1DnYEe" id="7UgeC20Aov7" role="1_9fRO">
+                    <ref role="1DcY7d" to="sgg6:555ATswpFCc" resolve="timerInterrupt" />
+                    <ref role="1DnYF2" node="74TmcPkYWdI" resolve="distanceSensor" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1_9egQ" id="5MdZHRqCKW0" role="3XIRFZ">
+                <node concept="3LAlOK" id="5MdZHRqCKW1" role="1_9egR">
+                  <ref role="2H6Oet" to="t6m2:5zHWU$Guqal" resolve="write" />
+                  <node concept="1DnYEe" id="5MdZHRqCKW2" role="1_9fRO">
+                    <ref role="1DcY7d" to="bs9u:74TmcPjVXfm" resolve="pin" />
+                    <ref role="1DnYF2" node="2Z$TrjNJv8S" resolve="tkd0" />
+                  </node>
+                  <node concept="3TlMhd" id="5MdZHRqCKXb" role="2H6KYo" />
+                </node>
+              </node>
+              <node concept="1_9egQ" id="5MdZHRsWb1f" role="3XIRFZ">
+                <node concept="1FldXs" id="5MdZHRsWb1W" role="1_9egR">
+                  <node concept="EbZIE" id="5MdZHRsWb1d" role="1_9fRO">
+                    <ref role="EbZID" node="5MdZHRsW9k3" resolve="timer3InterruptCount" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3Tl9Jr" id="5MdZHRsWaWu" role="27v$We">
+              <node concept="3TlMh9" id="5MdZHRsWaWx" role="3TlMhJ">
+                <property role="2hmy$m" value="0" />
+              </node>
+              <node concept="EbZIE" id="5MdZHRsWaV8" role="3TlMhI">
+                <ref role="EbZID" node="5MdZHRsW9k3" resolve="timer3InterruptCount" />
+              </node>
+            </node>
+          </node>
+          <node concept="1_9egQ" id="5MdZHRt2S94" role="3XIRFZ">
+            <node concept="3O_q_g" id="5MdZHRt2S92" role="1_9egR">
+              <ref role="3O_q_h" to="bs9u:5KcWL$DkWB$" resolve="sei" />
+            </node>
+          </node>
+          <node concept="3XISUE" id="5MdZHRsWaAq" role="3XIRFZ" />
+          <node concept="1QiMYF" id="5MdZHRp6J7d" role="3XIRFZ">
+            <node concept="OjmMv" id="5MdZHRp6J7f" role="3SJzmv">
+              <node concept="19SGf9" id="5MdZHRp6J7g" role="OjmMu">
+                <node concept="19SUe$" id="5MdZHRp6J7h" role="19SJt6">
+                  <property role="19SUeA" value="To reduce the WCET of the main loop, we execute only one task per cycle. " />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="ggJXe" id="5MdZHRp6C3I" role="3XIRFZ">
+            <node concept="EbZIE" id="5MdZHRp6C6o" role="ggJXf">
+              <ref role="EbZID" node="5MdZHRp6Aqa" resolve="currentTask" />
+            </node>
+            <node concept="ggJMM" id="5MdZHRp6EEh" role="ggJMH">
+              <node concept="3XIRFW" id="5MdZHRp6EEi" role="ggJML">
+                <node concept="1_9egQ" id="7UgeC24z4i5" role="3XIRFZ">
+                  <node concept="2$_UoH" id="7UgeC24z4i3" role="1_9egR">
+                    <ref role="2$_UoI" node="7UgeC24yU$3" resolve="processRemoteControl" />
+                  </node>
+                </node>
+                <node concept="27uf6b" id="5MdZHRp6EEk" role="3XIRFZ" />
+              </node>
+              <node concept="3TlMh9" id="5MdZHRp6ETv" role="ggJMN">
+                <property role="2hmy$m" value="1" />
+              </node>
+            </node>
+            <node concept="ggJMM" id="5MdZHRp6D_0" role="ggJMH">
+              <node concept="3XIRFW" id="5MdZHRp6D_1" role="ggJML">
+                <node concept="1_9egQ" id="7UgeC24zbj2" role="3XIRFZ">
+                  <node concept="2$_UoH" id="7UgeC24zbj0" role="1_9egR">
+                    <ref role="2$_UoI" node="7UgeC24z8v0" resolve="processDistanceSensor" />
+                  </node>
+                </node>
+                <node concept="27uf6b" id="5MdZHRp6D_3" role="3XIRFZ" />
+              </node>
+              <node concept="3TlMh9" id="5MdZHRp6D_c" role="ggJMN">
+                <property role="2hmy$m" value="2" />
+              </node>
+            </node>
+            <node concept="ggJMM" id="5MdZHRpyy1w" role="ggJMH">
+              <node concept="3XIRFW" id="5MdZHRpyy1x" role="ggJML">
+                <node concept="1_9egQ" id="7UgeC24YmAM" role="3XIRFZ">
+                  <node concept="3LAlOK" id="7UgeC24Yno8" role="1_9egR">
+                    <ref role="2H6Oet" to="lmqm:5$_GT_vwmOI" resolve="mainLoop" />
+                    <node concept="1DnYEe" id="7UgeC24YmAL" role="1_9fRO">
+                      <ref role="1DnYF2" node="7UgeC20BfOu" resolve="pidDistanceSpeed" />
+                      <ref role="1DcY7d" to="lmqm:5$_GT_vvVpc" resolve="pid" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="27uf6b" id="5MdZHRpyy1z" role="3XIRFZ" />
+              </node>
+              <node concept="3TlMh9" id="5MdZHRpyy4U" role="ggJMN">
+                <property role="2hmy$m" value="3" />
+              </node>
+            </node>
+            <node concept="ggJMM" id="5MdZHRp6E1V" role="ggJMH">
+              <node concept="3XIRFW" id="5MdZHRp6E1W" role="ggJML">
+                <node concept="1_9egQ" id="7UgeC24zhJb" role="3XIRFZ">
+                  <node concept="2$_UoH" id="7UgeC24zhJ9" role="1_9egR">
+                    <ref role="2$_UoI" node="7UgeC24zf6l" resolve="processCompass" />
+                  </node>
+                </node>
+                <node concept="27uf6b" id="5MdZHRp6E1Y" role="3XIRFZ" />
+              </node>
+              <node concept="3TlMh9" id="5MdZHRp6E1Z" role="ggJMN">
+                <property role="2hmy$m" value="4" />
+              </node>
+            </node>
+            <node concept="ggJMM" id="5MdZHRp6E2V" role="ggJMH">
+              <node concept="3XIRFW" id="5MdZHRp6E2W" role="ggJML">
+                <node concept="1_9egQ" id="7UgeC24zq9c" role="3XIRFZ">
+                  <node concept="2$_UoH" id="7UgeC24zq9a" role="1_9egR">
+                    <ref role="2$_UoI" node="7UgeC24znc0" resolve="processMotorBoard" />
+                  </node>
+                </node>
+                <node concept="27uf6b" id="5MdZHRp6E2Y" role="3XIRFZ" />
+              </node>
+              <node concept="3TlMh9" id="5MdZHRp6E2Z" role="ggJMN">
+                <property role="2hmy$m" value="5" />
+              </node>
+            </node>
+            <node concept="ggJMK" id="5MdZHRp6DAS" role="ggJMH">
+              <node concept="3XIRFW" id="5MdZHRp6DAU" role="ggJMQ">
+                <node concept="1_9egQ" id="5MdZHRp6DBl" role="3XIRFZ">
+                  <node concept="3pqW6w" id="5MdZHRp6DC5" role="1_9egR">
+                    <node concept="3TlMh9" id="5MdZHRp6DC8" role="3TlMhJ">
+                      <property role="2hmy$m" value="0" />
+                    </node>
+                    <node concept="EbZIE" id="5MdZHRp6DBk" role="3TlMhI">
+                      <ref role="EbZID" node="5MdZHRp6Aqa" resolve="currentTask" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="27uf6b" id="5MdZHRp6E1i" role="3XIRFZ" />
+              </node>
+            </node>
+          </node>
+          <node concept="1_9egQ" id="5MdZHRp6C97" role="3XIRFZ">
+            <node concept="3TM6Ez" id="5MdZHRp6D$2" role="1_9egR">
+              <node concept="EbZIE" id="5MdZHRp6C95" role="1_9fRO">
+                <ref role="EbZID" node="5MdZHRp6Aqa" resolve="currentTask" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="2EWDw0" id="2XT_MLH9bAn" role="2EWDeT">
           <ref role="1ZwSu5" node="exHFgzLLsD" resolve="runnable0" />
@@ -4157,79 +4317,6 @@
           </node>
           <node concept="c0U19" id="7UgeC20Ap3N" role="3XIRFZ">
             <node concept="3XIRFW" id="7UgeC20Ap3O" role="c0U17">
-              <node concept="1QiMYF" id="7UgeC20BvLg" role="3XIRFZ">
-                <node concept="OjmMv" id="7UgeC20BvLi" role="3SJzmv">
-                  <node concept="19SGf9" id="7UgeC20BvLj" role="OjmMu">
-                    <node concept="19SUe$" id="7UgeC20BvLk" role="19SJt6">
-                      <property role="19SUeA" value="Filter distance value&#10;Small obstacles are not reliably detected on each measurement. That's why we need to filter the distance from the sensor." />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="1_9egQ" id="7UgeC21m9c4" role="3XIRFZ">
-                <node concept="3LAlOK" id="7UgeC21m9gV" role="1_9egR">
-                  <ref role="2H6Oet" to="lmqm:6Y0wRXx6n1D" resolve="setInput" />
-                  <node concept="3LAlOK" id="7UgeC21m9hW" role="2H6KYo">
-                    <ref role="2H6Oet" to="sgg6:555ATswptOJ" resolve="getDistance" />
-                    <node concept="1DnYEe" id="7UgeC21m9hX" role="1_9fRO">
-                      <ref role="1DcY7d" to="sgg6:555ATswpwt$" resolve="distanceSensor" />
-                      <ref role="1DnYF2" node="74TmcPkYWdI" resolve="distanceSensor" />
-                    </node>
-                  </node>
-                  <node concept="1DnYEe" id="7UgeC21m9c3" role="1_9fRO">
-                    <ref role="1DnYF2" node="7UgeC20Bhjz" resolve="pt1Distance" />
-                    <ref role="1DcY7d" to="lmqm:6Y0wRXx6nrO" resolve="filter" />
-                  </node>
-                </node>
-              </node>
-              <node concept="c0U19" id="7UgeC21mccp" role="3XIRFZ">
-                <node concept="3XIRFW" id="7UgeC21mccq" role="c0U17">
-                  <node concept="1QiMYF" id="7UgeC21meUT" role="3XIRFZ">
-                    <node concept="OjmMv" id="7UgeC21meUV" role="3SJzmv">
-                      <node concept="19SGf9" id="7UgeC21meUW" role="OjmMu">
-                        <node concept="19SUe$" id="7UgeC21meUX" role="19SJt6">
-                          <property role="19SUeA" value="We want to increase the distance slowly, but decrease it immediately." />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2Ygvn$" id="7UgeC25vGpk" role="3XIRFZ">
-                    <node concept="1_9egQ" id="7UgeC21me5j" role="2Ygvny">
-                      <node concept="3LAlOK" id="7UgeC21me9a" role="1_9egR">
-                        <ref role="2H6Oet" to="lmqm:7UgeC20Br$I" resolve="setOutput" />
-                        <node concept="3LAlOK" id="7UgeC21mear" role="2H6KYo">
-                          <ref role="2H6Oet" to="lmqm:7UgeC21mcOA" resolve="getInput" />
-                          <node concept="1DnYEe" id="7UgeC21meas" role="1_9fRO">
-                            <ref role="1DcY7d" to="lmqm:6Y0wRXx6nrO" resolve="filter" />
-                            <ref role="1DnYF2" node="7UgeC20Bhjz" resolve="pt1Distance" />
-                          </node>
-                        </node>
-                        <node concept="1DnYEe" id="7UgeC21me5i" role="1_9fRO">
-                          <ref role="1DcY7d" to="lmqm:6Y0wRXx6nrO" resolve="filter" />
-                          <ref role="1DnYF2" node="7UgeC20Bhjz" resolve="pt1Distance" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3Tl9Jn" id="7UgeC21mdWG" role="c0U16">
-                  <node concept="3LAlOK" id="7UgeC21me3w" role="3TlMhJ">
-                    <ref role="2H6Oet" to="lmqm:6Y0wRXx6n2S" resolve="getOutput" />
-                    <node concept="1DnYEe" id="7UgeC21mdXG" role="1_9fRO">
-                      <ref role="1DnYF2" node="7UgeC20Bhjz" resolve="pt1Distance" />
-                      <ref role="1DcY7d" to="lmqm:6Y0wRXx6nrO" resolve="filter" />
-                    </node>
-                  </node>
-                  <node concept="3LAlOK" id="7UgeC21mcLx" role="3TlMhI">
-                    <ref role="2H6Oet" to="lmqm:7UgeC21mcOA" resolve="getInput" />
-                    <node concept="1DnYEe" id="7UgeC21mcGB" role="1_9fRO">
-                      <ref role="1DnYF2" node="7UgeC20Bhjz" resolve="pt1Distance" />
-                      <ref role="1DcY7d" to="lmqm:6Y0wRXx6nrO" resolve="filter" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3XISUE" id="7UgeC24s0Jo" role="3XIRFZ" />
               <node concept="1_9egQ" id="7UgeC20ApuR" role="3XIRFZ">
                 <node concept="3LAlOK" id="7UgeC20ApuS" role="1_9egR">
                   <ref role="2H6Oet" to="sgg6:555ATswptLw" resolve="startMeasurement" />
@@ -4250,6 +4337,80 @@
               </node>
             </node>
           </node>
+          <node concept="3XISUE" id="5MdZHRrgUER" role="3XIRFZ" />
+          <node concept="1QiMYF" id="7UgeC20BvLg" role="3XIRFZ">
+            <node concept="OjmMv" id="7UgeC20BvLi" role="3SJzmv">
+              <node concept="19SGf9" id="7UgeC20BvLj" role="OjmMu">
+                <node concept="19SUe$" id="7UgeC20BvLk" role="19SJt6">
+                  <property role="19SUeA" value="Filter distance value&#10;Small obstacles are not reliably detected on each measurement. That's why we need to filter the distance from the sensor." />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1_9egQ" id="7UgeC21m9c4" role="3XIRFZ">
+            <node concept="3LAlOK" id="7UgeC21m9gV" role="1_9egR">
+              <ref role="2H6Oet" to="lmqm:6Y0wRXx6n1D" resolve="setInput" />
+              <node concept="3LAlOK" id="7UgeC21m9hW" role="2H6KYo">
+                <ref role="2H6Oet" to="sgg6:555ATswptOJ" resolve="getDistance" />
+                <node concept="1DnYEe" id="7UgeC21m9hX" role="1_9fRO">
+                  <ref role="1DcY7d" to="sgg6:555ATswpwt$" resolve="distanceSensor" />
+                  <ref role="1DnYF2" node="74TmcPkYWdI" resolve="distanceSensor" />
+                </node>
+              </node>
+              <node concept="1DnYEe" id="7UgeC21m9c3" role="1_9fRO">
+                <ref role="1DnYF2" node="7UgeC20Bhjz" resolve="pt1Distance" />
+                <ref role="1DcY7d" to="lmqm:6Y0wRXx6nrO" resolve="filter" />
+              </node>
+            </node>
+          </node>
+          <node concept="2Ygvn$" id="5MdZHRpDeV3" role="3XIRFZ">
+            <node concept="c0U19" id="7UgeC21mccp" role="2Ygvny">
+              <node concept="3XIRFW" id="7UgeC21mccq" role="c0U17">
+                <node concept="1QiMYF" id="7UgeC21meUT" role="3XIRFZ">
+                  <node concept="OjmMv" id="7UgeC21meUV" role="3SJzmv">
+                    <node concept="19SGf9" id="7UgeC21meUW" role="OjmMu">
+                      <node concept="19SUe$" id="7UgeC21meUX" role="19SJt6">
+                        <property role="19SUeA" value="We want to increase the distance slowly, but decrease it immediately." />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1_9egQ" id="7UgeC21me5j" role="3XIRFZ">
+                  <node concept="3LAlOK" id="7UgeC21me9a" role="1_9egR">
+                    <ref role="2H6Oet" to="lmqm:7UgeC20Br$I" resolve="setOutput" />
+                    <node concept="3LAlOK" id="7UgeC21mear" role="2H6KYo">
+                      <ref role="2H6Oet" to="lmqm:7UgeC21mcOA" resolve="getInput" />
+                      <node concept="1DnYEe" id="7UgeC21meas" role="1_9fRO">
+                        <ref role="1DcY7d" to="lmqm:6Y0wRXx6nrO" resolve="filter" />
+                        <ref role="1DnYF2" node="7UgeC20Bhjz" resolve="pt1Distance" />
+                      </node>
+                    </node>
+                    <node concept="1DnYEe" id="7UgeC21me5i" role="1_9fRO">
+                      <ref role="1DcY7d" to="lmqm:6Y0wRXx6nrO" resolve="filter" />
+                      <ref role="1DnYF2" node="7UgeC20Bhjz" resolve="pt1Distance" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3Tl9Jn" id="7UgeC21mdWG" role="c0U16">
+                <node concept="3LAlOK" id="7UgeC21me3w" role="3TlMhJ">
+                  <ref role="2H6Oet" to="lmqm:6Y0wRXx6n2S" resolve="getOutput" />
+                  <node concept="1DnYEe" id="7UgeC21mdXG" role="1_9fRO">
+                    <ref role="1DnYF2" node="7UgeC20Bhjz" resolve="pt1Distance" />
+                    <ref role="1DcY7d" to="lmqm:6Y0wRXx6nrO" resolve="filter" />
+                  </node>
+                </node>
+                <node concept="3LAlOK" id="7UgeC21mcLx" role="3TlMhI">
+                  <ref role="2H6Oet" to="lmqm:7UgeC21mcOA" resolve="getInput" />
+                  <node concept="1DnYEe" id="7UgeC21mcGB" role="1_9fRO">
+                    <ref role="1DnYF2" node="7UgeC20Bhjz" resolve="pt1Distance" />
+                    <ref role="1DcY7d" to="lmqm:6Y0wRXx6nrO" resolve="filter" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3XISUE" id="5MdZHRrgUH2" role="3XIRFZ" />
           <node concept="1_9egQ" id="7UgeC20uxKi" role="3XIRFZ">
             <node concept="3LAlOK" id="7UgeC20uzj_" role="1_9egR">
               <ref role="2H6Oet" to="ec8n:exHFgzK8US" resolve="run" />
@@ -4259,8 +4420,6 @@
               </node>
             </node>
           </node>
-          <node concept="3XISUE" id="7UgeC24z8v2" role="3XIRFZ" />
-          <node concept="3XISUE" id="7UgeC24R_3t" role="3XIRFZ" />
           <node concept="1_9egQ" id="7UgeC24R_dw" role="3XIRFZ">
             <node concept="3LAlOK" id="7UgeC24R_mS" role="1_9egR">
               <ref role="2H6Oet" to="lmqm:5$_GT_vvVmD" resolve="setProcessValue" />
@@ -4424,35 +4583,6 @@
             </node>
           </node>
           <node concept="3XISUE" id="7UgeC24zf6n" role="3XIRFZ" />
-          <node concept="1_9egQ" id="7UgeC25UZQP" role="3XIRFZ">
-            <node concept="3LAlOK" id="7UgeC25V00Q" role="1_9egR">
-              <ref role="2H6Oet" to="t6m2:5zHWU$Guqal" resolve="write" />
-              <node concept="3Tl9Jr" id="7UgeC261EqW" role="2H6KYo">
-                <node concept="3LAlOK" id="7UgeC261Er2" role="3TlMhI">
-                  <ref role="2H6Oet" to="sgg6:7UgeC24qi55" resolve="getAngle" />
-                  <node concept="1DnYEe" id="7UgeC261Er3" role="1_9fRO">
-                    <ref role="1DcY7d" to="sgg6:2XT_MLH7Ly5" resolve="compass" />
-                    <ref role="1DnYF2" node="74TmcPm2gko" resolve="compass" />
-                  </node>
-                </node>
-                <node concept="CIdvy" id="7UgeC261EqY" role="3TlMhJ">
-                  <node concept="3TlMh9" id="7UgeC261EqZ" role="CIrOC">
-                    <property role="2hmy$m" value="100.0f" />
-                  </node>
-                  <node concept="CIsGf" id="7UgeC261Er0" role="CIwXZ">
-                    <node concept="CIsvn" id="7UgeC261Er1" role="CIi4h">
-                      <ref role="CIi3I" to="g2ww:2XT_MLH7EzP" resolve="°" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="1DnYEe" id="7UgeC25UZQO" role="1_9fRO">
-                <ref role="1DnYF2" node="4TJtxzRb_Ug" resolve="txLed" />
-                <ref role="1DcY7d" to="bs9u:74TmcPjVXfm" resolve="pin" />
-              </node>
-            </node>
-          </node>
-          <node concept="3XISUE" id="7UgeC25UYXY" role="3XIRFZ" />
         </node>
         <node concept="19Rifw" id="7UgeC24zhpX" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -4474,30 +4604,6 @@
           </node>
           <node concept="c0U19" id="4khTSHql$KA" role="3XIRFZ">
             <node concept="3XIRFW" id="4khTSHql$KB" role="c0U17">
-              <node concept="1QiMYF" id="5$_GT_wh6Qx" role="3XIRFZ">
-                <node concept="OjmMv" id="5$_GT_wh6Qz" role="3SJzmv">
-                  <node concept="19SGf9" id="5$_GT_wh6Q$" role="OjmMu">
-                    <node concept="19SUe$" id="5$_GT_wh6Q_" role="19SJt6">
-                      <property role="19SUeA" value="slow down, if the connection to the remote control is lost" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="1_9egQ" id="5$_GT_wh3P5" role="3XIRFZ">
-                <node concept="3omEAZ" id="5$_GT_wh4NC" role="1_9egR">
-                  <node concept="2qmXGp" id="5$_GT_wh4NF" role="3TlMhI">
-                    <node concept="1E4Tgc" id="5$_GT_wh4NG" role="1ESnxz">
-                      <ref role="1E4Tge" to="noqc:2Z$TrjMra1h" resolve="relativeSpeed" />
-                    </node>
-                    <node concept="EbZIE" id="5$_GT_wh4NH" role="1_9fRO">
-                      <ref role="EbZID" node="2Z$TrjMukIg" resolve="remoteControlMessage" />
-                    </node>
-                  </node>
-                  <node concept="3TlMh9" id="5$_GT_wh56J" role="3TlMhJ">
-                    <property role="2hmy$m" value="0.95f" />
-                  </node>
-                </node>
-              </node>
               <node concept="3XISUE" id="5$_GT_wykjV" role="3XIRFZ" />
               <node concept="1_9egQ" id="4khTSHqlDmA" role="3XIRFZ">
                 <node concept="3pqW6w" id="4khTSHqlDmU" role="1_9egR">
@@ -4593,26 +4699,50 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3Tl9Jn" id="7UgeC25AsD7" role="c0U16">
-                  <node concept="2qmXGp" id="7UgeC25Aua_" role="3TlMhJ">
-                    <node concept="1E4Tgc" id="7UgeC25AuF5" role="1ESnxz">
-                      <ref role="1E4Tge" to="lj5:2JGF63bDcb4" resolve="speed" />
-                    </node>
-                    <node concept="EbZIE" id="7UgeC25AtDU" role="1_9fRO">
-                      <ref role="EbZID" node="5$_GT_voERo" resolve="motorBoardMessage" />
-                    </node>
-                  </node>
-                  <node concept="CIdvy" id="7UgeC25AxZn" role="3TlMhI">
-                    <node concept="3LAlOK" id="7UgeC25AxZl" role="CIrOC">
-                      <ref role="2H6Oet" to="lmqm:5$_GT_vvW2o" resolve="getControlValue" />
-                      <node concept="1DnYEe" id="7UgeC25AxZm" role="1_9fRO">
-                        <ref role="1DcY7d" to="lmqm:5$_GT_vvVpc" resolve="pid" />
-                        <ref role="1DnYF2" node="7UgeC20BfOu" resolve="pidDistanceSpeed" />
+                <node concept="2EHzL6" id="5MdZHRrT28J" role="c0U16">
+                  <node concept="3Tl9Jr" id="5MdZHRsxlVc" role="3TlMhI">
+                    <node concept="CIdvy" id="5MdZHRsxlVe" role="3TlMhI">
+                      <node concept="3LAlOK" id="5MdZHRsxlVf" role="CIrOC">
+                        <ref role="2H6Oet" to="lmqm:7UgeC25AlIw" resolve="getError" />
+                        <node concept="1DnYEe" id="5MdZHRsxlVg" role="1_9fRO">
+                          <ref role="1DcY7d" to="lmqm:5$_GT_vvVpc" resolve="pid" />
+                          <ref role="1DnYF2" node="7UgeC20BfOu" resolve="pidDistanceSpeed" />
+                        </node>
+                      </node>
+                      <node concept="CIsGf" id="5MdZHRsxlVh" role="CIwXZ">
+                        <node concept="CIsvn" id="5MdZHRsxlVi" role="CIi4h">
+                          <ref role="CIi3I" to="g2ww:74TmcPkYzlG" resolve="mm" />
+                        </node>
                       </node>
                     </node>
-                    <node concept="CIsGf" id="7UgeC25AxZo" role="CIwXZ">
-                      <node concept="CIsvn" id="7UgeC25AxZp" role="CIi4h">
-                        <ref role="CIi3I" to="g2ww:5zHWU$G$9bk" resolve="m/s" />
+                    <node concept="CIdvy" id="5MdZHRsxlVj" role="3TlMhJ">
+                      <node concept="3TlMh9" id="5MdZHRsxlVk" role="CIrOC">
+                        <property role="2hmy$m" value="-300.0" />
+                      </node>
+                      <node concept="CIsGf" id="5MdZHRsxlVl" role="CIwXZ">
+                        <node concept="CIsvn" id="5MdZHRsxlVm" role="CIi4h">
+                          <ref role="CIi3I" to="g2ww:74TmcPkYzlG" resolve="mm" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3Tl9Jr" id="5MdZHRsjXr1" role="3TlMhJ">
+                    <node concept="2qmXGp" id="5MdZHRsjXr3" role="3TlMhI">
+                      <node concept="1E4Tgc" id="5MdZHRsjXr4" role="1ESnxz">
+                        <ref role="1E4Tge" to="lj5:2JGF63bDcb4" resolve="speed" />
+                      </node>
+                      <node concept="EbZIE" id="5MdZHRsjXr5" role="1_9fRO">
+                        <ref role="EbZID" node="5$_GT_voERo" resolve="motorBoardMessage" />
+                      </node>
+                    </node>
+                    <node concept="CIdvy" id="5MdZHRsjXr6" role="3TlMhJ">
+                      <node concept="3TlMh9" id="5MdZHRsjXr7" role="CIrOC">
+                        <property role="2hmy$m" value="0.0" />
+                      </node>
+                      <node concept="CIsGf" id="5MdZHRsjXr8" role="CIwXZ">
+                        <node concept="CIsvn" id="5MdZHRsjXr9" role="CIi4h">
+                          <ref role="CIi3I" to="g2ww:5zHWU$G$9bk" resolve="m/s" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -4771,6 +4901,7 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
+      <node concept="3Khz0B" id="5MdZHRtnc8r" role="2RW2fA" />
     </node>
     <node concept="2NXPZ9" id="WklGGYHL5q" role="N3F5h">
       <property role="TrG5h" value="empty_1436962001300_1" />

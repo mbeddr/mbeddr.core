@@ -1588,7 +1588,7 @@
           </node>
           <node concept="CIdvy" id="7UgeC21tpKB" role="3XIe9u">
             <node concept="3TlMh9" id="7UgeC21tpKA" role="CIrOC">
-              <property role="2hmy$m" value="5" />
+              <property role="2hmy$m" value="50" />
             </node>
             <node concept="CIsGf" id="7UgeC21tpKC" role="CIwXZ">
               <node concept="CIsvn" id="7UgeC21tpKD" role="CIi4h">
@@ -1601,7 +1601,7 @@
           <node concept="3O_q_g" id="7UgeC229NY8" role="1_9egR">
             <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
             <node concept="PhEJO" id="7UgeC229OVu" role="3O_q_j">
-              <property role="PhEJT" value="Distance: %f" />
+              <property role="PhEJT" value="Distance: %f\n" />
             </node>
             <node concept="30IJZa" id="7UgeC229P2T" role="3O_q_j">
               <ref role="2H6Oet" to="sgg6:555ATswptOJ" resolve="getDistance" />

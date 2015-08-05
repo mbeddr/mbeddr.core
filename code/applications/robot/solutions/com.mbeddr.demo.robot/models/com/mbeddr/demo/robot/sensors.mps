@@ -1744,7 +1744,7 @@
         </node>
         <node concept="CIdvy" id="wnAtasik2E" role="EbCE5">
           <node concept="3TlMh9" id="wnAtasik2D" role="CIrOC">
-            <property role="2hmy$m" value="0.0" />
+            <property role="2hmy$m" value="10000.0" />
           </node>
           <node concept="CIsGf" id="wnAtasik2F" role="CIwXZ">
             <node concept="CIsvn" id="wnAtasik2G" role="CIi4h">
@@ -1980,7 +1980,7 @@
           </node>
           <node concept="2h6h52" id="555ATswpJB3" role="1_Iowf" />
           <node concept="1R59hi" id="1gYuDsM316o" role="1_Iowf">
-            <property role="TrG5h" value="travelingTime" />
+            <property role="TrG5h" value="travellingTime" />
             <node concept="26VqpV" id="7UgeC20xOat" role="2C2TGm">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
@@ -2220,7 +2220,7 @@
                 <node concept="1_9egQ" id="1gYuDsM32Xf" role="3XIRFZ">
                   <node concept="3pqW6w" id="1gYuDsM32Ys" role="1_9egR">
                     <node concept="349IfM" id="1gYuDsM32Xd" role="3TlMhI">
-                      <ref role="349IfP" node="1gYuDsM316o" resolve="travelingTime" />
+                      <ref role="349IfP" node="1gYuDsM316o" resolve="travellingTime" />
                     </node>
                     <node concept="EbZIE" id="7UgeC20xNHl" role="3TlMhJ">
                       <ref role="EbZID" node="7UgeC20xCLm" resolve="ticks" />
@@ -2291,7 +2291,7 @@
                   <node concept="2$_UoH" id="1gYuDsM334t" role="1_9egR">
                     <ref role="2$_UoI" node="1gYuDsM2EGo" resolve="updateDistance" />
                     <node concept="349IfM" id="1gYuDsM334J" role="3O_q_j">
-                      <ref role="349IfP" node="1gYuDsM316o" resolve="travelingTime" />
+                      <ref role="349IfP" node="1gYuDsM316o" resolve="travellingTime" />
                     </node>
                   </node>
                 </node>
