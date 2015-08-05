@@ -676,6 +676,7 @@
       </concept>
     </language>
     <language id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math">
+      <concept id="666324024671982185" name="com.mbeddr.ext.math.structure.MathConfigurationItem" flags="ng" index="22RD12" />
       <concept id="5098456557381793727" name="com.mbeddr.ext.math.structure.FractionExpression" flags="ng" index="2zguM6">
         <child id="5098456557382006631" name="right" index="2zgELu" />
         <child id="5098456557382006592" name="left" index="2zgELT" />
@@ -1187,6 +1188,7 @@
     <node concept="3yk2KP" id="KfIhkXdpBM" role="2Q9xDr" />
     <node concept="3C_SZV" id="7uQ0U6v9MDs" role="2Q9xDr" />
     <node concept="2eh4Hv" id="7FOMyx2_5en" role="2Q9xDr" />
+    <node concept="22RD12" id="13bv9czloW$" role="2Q9xDr" />
     <node concept="2eOfOl" id="7VsgA5L655s" role="2ePNbc">
       <property role="iO3LB" value="true" />
       <property role="TrG5h" value="MbeddrTutorialDefaultExt" />
