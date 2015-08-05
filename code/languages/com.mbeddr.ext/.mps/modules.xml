@@ -14,6 +14,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.mock/mock.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.statemachine/sm_comp.mpl" folder="statemachine" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.test/test.mpl" folder="components" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.units/com.mbeddr.ext.components.units.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components/components.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components/solutions/pluginSolution/pluginSolution.msd" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.compositecomponents/compositecomponents.mpl" folder="components" />
