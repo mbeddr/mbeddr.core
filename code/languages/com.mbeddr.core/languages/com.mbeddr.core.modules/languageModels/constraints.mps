@@ -4,6 +4,7 @@
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -137,6 +138,9 @@
         <child id="1148687345559" name="searchScopeFactory" index="1N6uqs" />
       </concept>
       <concept id="1153138554286" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_propertyValue" flags="nn" index="1Wqviy" />
+    </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -391,11 +395,8 @@
       <node concept="1MUpDS" id="5IYyAOzCwFR" role="1N6uqs">
         <node concept="3clFbS" id="5IYyAOzCwFS" role="2VODD2">
           <node concept="3clFbF" id="5IYyAOzCwFT" role="3cqZAp">
-            <node concept="2OqwBi" id="5IYyAOzCwGd" role="3clFbG">
-              <node concept="2Gpcm3" id="5aNdPeN2N0S" role="2OqNvi">
-                <ref role="2Gpcm2" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
-              </node>
-              <node concept="2OqwBi" id="5IYyAOzCwG7" role="2Oq$k0">
+            <node concept="2EnYce" id="7txfgSeR76u" role="3clFbG">
+              <node concept="2EnYce" id="7txfgSeQqzC" role="2Oq$k0">
                 <node concept="2OqwBi" id="5IYyAOzCwFV" role="2Oq$k0">
                   <node concept="21POm0" id="5IYyAOzCwFU" role="2Oq$k0" />
                   <node concept="2Xjw5R" id="5IYyAOzCwFZ" role="2OqNvi">
@@ -413,6 +414,9 @@
                     <ref role="3TV0OU" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
                   </node>
                 </node>
+              </node>
+              <node concept="2Gpcm3" id="5aNdPeN2N0S" role="2OqNvi">
+                <ref role="2Gpcm2" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
               </node>
             </node>
           </node>
