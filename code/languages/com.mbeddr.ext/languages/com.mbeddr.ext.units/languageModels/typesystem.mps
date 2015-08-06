@@ -3359,13 +3359,13 @@
           <ref role="37wK5l" node="lqDNwvqark" resolve="processNode" />
           <ref role="1Pybhc" node="lqDNwv$A02" resolve="typeof_ICallLike_Helper" />
           <node concept="1YBJjd" id="lqDNwv_F6b" role="37wK5m">
-            <ref role="1YBMHb" node="lqDNwv_EZH" resolve="iCallLike" />
+            <ref role="1YBMHb" node="lqDNwv_EZH" resolve="call" />
           </node>
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="lqDNwv_EZH" role="1YuTPh">
-      <property role="TrG5h" value="iCallLike" />
+      <property role="TrG5h" value="call" />
       <ref role="1YaFvo" to="x27k:6WGVxckB05U" resolve="ICallLike" />
     </node>
   </node>
