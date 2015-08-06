@@ -4016,18 +4016,39 @@
   </node>
   <node concept="13h7C7" id="5W7baqyUyhl">
     <property role="3GE5qa" value="definition.meta" />
-    <ref role="13h7C2" to="qlb5:5W7baqyUxX2" resolve="IMetaUnitMappingProvider" />
+    <ref role="13h7C2" to="qlb5:5W7baqyUxX2" resolve="IGenericUnitMappingProvider" />
     <node concept="13i0hz" id="5W7baqyUyho" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="getMetaUnits" />
+      <property role="TrG5h" value="getGenericUnits" />
       <node concept="3Tm1VV" id="5W7baqyUyhp" role="1B3o_S" />
-      <node concept="A3Dl8" id="5W7baqyUyhw" role="3clF45">
-        <node concept="3Tqbb2" id="5W7baqyUyh_" role="A3Ik2">
+      <node concept="3clFbS" id="5W7baqyUyhr" role="3clF47" />
+      <node concept="A3Dl8" id="6_vz4JcLs4Y" role="3clF45">
+        <node concept="3Tqbb2" id="6Nnssju1LXB" role="A3Ik2">
           <ref role="ehGHo" to="qlb5:7eOyx9raabt" resolve="MetaUnit" />
         </node>
       </node>
-      <node concept="3clFbS" id="5W7baqyUyhr" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="5PsWxcFtosb" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getGenericUnitMappings" />
+      <node concept="3Tm1VV" id="5PsWxcFtosc" role="1B3o_S" />
+      <node concept="A3Dl8" id="5PsWxcFtoxd" role="3clF45">
+        <node concept="3Tqbb2" id="5PsWxcFtoxk" role="A3Ik2">
+          <ref role="ehGHo" to="qlb5:5W7baqyQp0r" resolve="GenericUnitMapping" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5PsWxcFtose" role="3clF47">
+        <node concept="3cpWs6" id="5PsWxcFDq0S" role="3cqZAp">
+          <node concept="2OqwBi" id="5PsWxcFDq2R" role="3cqZAk">
+            <node concept="13iPFW" id="5PsWxcFDq1m" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="5PsWxcFDqgF" role="2OqNvi">
+              <ref role="3TtcxE" to="qlb5:5PsWxcFDpsa" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="6VYXZgFJaKW" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -4374,9 +4395,9 @@
       </node>
       <node concept="37vLTG" id="6VYXZgFJj__" role="3clF46">
         <property role="TrG5h" value="mappings" />
-        <node concept="_YKpA" id="6VYXZgFJwbW" role="1tU5fm">
-          <node concept="3Tqbb2" id="6VYXZgFJjAn" role="_ZDj9">
-            <ref role="ehGHo" to="qlb5:5W7baqyQp0r" resolve="MetaUnitMapping" />
+        <node concept="A3Dl8" id="5PsWxcFIwuL" role="1tU5fm">
+          <node concept="3Tqbb2" id="6VYXZgFJjAn" role="A3Ik2">
+            <ref role="ehGHo" to="qlb5:5W7baqyQp0r" resolve="GenericUnitMapping" />
           </node>
         </node>
       </node>
