@@ -8634,6 +8634,9 @@
             <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
           </node>
         </node>
+        <node concept="3bR9La" id="1hnjAvpNMeN" role="3bR37C">
+          <ref role="3bR37D" node="1hnjAvpInQJ" resolve="test.com.mbeddr.mpsutil.xml.fix.support" />
+        </node>
       </node>
       <node concept="1E1JtD" id="1hnjAvpInQJ" role="2G$12L">
         <property role="BnDLt" value="true" />
