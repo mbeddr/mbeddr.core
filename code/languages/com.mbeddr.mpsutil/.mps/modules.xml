@@ -27,6 +27,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.globalgenerators/com.mbeddr.mpsutil.globalgenerators.mpl" folder="globalGenerators" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.httpsupport/com.mbeddr.mpsutil.httpsupport.mpl" folder="httpSupport" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.iconchar/com.mbeddr.mpsutil.iconchar.mpl" folder="iconchar" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.intentions/com.mbeddr.mpsutil.intentions.mpl" folder="intentions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.interpreter.test/com.mbeddr.mpsutil.interpreter.test.mpl" folder="interpreter" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.mpl" folder="interpreter" />
@@ -111,6 +112,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.test/com.mbeddr.mpsutil.test.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.typesystem.rt/com.mbeddr.mpsutil.typesystem.rt.msd" folder="typesystem.trace" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.javainterpreter.test/com.mbeddr.mpsutil.javainterpreter.test.mpl" folder="javainterpreter" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.iconchar.test/test.com.mbeddr.mpsutil.iconchar.test.msd" folder="iconchar" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.iconchar/test.com.mbeddr.mpsutil.iconchar.mpl" folder="iconchar" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.targetchooser/test.com.mbeddr.mpsutil.targetchooser.msd" folder="targetchooser" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.xml.fix.support/test.com.mbeddr.mpsutil.xml.fix.support.mpl" folder="xml.fix" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.xml.fix/test.com.mbeddr.mpsutil.xml.fix.msd" folder="xml.fix" />
