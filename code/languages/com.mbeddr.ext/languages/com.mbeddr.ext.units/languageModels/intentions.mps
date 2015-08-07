@@ -366,8 +366,9 @@
     </node>
   </node>
   <node concept="2S6QgY" id="lqDNwvokmG">
-    <property role="TrG5h" value="AddRemoveMetaUnitDeclaration" />
+    <property role="TrG5h" value="AddRemoveGenericUnitDeclarationAttribute" />
     <property role="3GE5qa" value="definition" />
+    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="vs0r:49YGTZdSIMN" resolve="GenericUnitProvider" />
     <node concept="1SWQZ3" id="3TftwIKKm8N" role="lGtFl">
       <property role="1SWRpm" value="UNITS" />

@@ -90,7 +90,7 @@
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
@@ -23071,6 +23071,9 @@
                 <node concept="3wxyx2" id="5ZDGpDSy2wA" role="3TlMhI">
                   <node concept="3ZVu4v" id="5ZDGpDSy2wB" role="1_9fRO">
                     <ref role="3ZVs_2" node="5ZDGpDSy2wx" resolve="i" />
+                    <node concept="7CXmI" id="brG9xorvSJ" role="lGtFl">
+                      <node concept="1TM$A" id="brG9xorvSK" role="7EUXB" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3TlMh9" id="5ZDGpDSy2wC" role="3TlMhJ">
