@@ -46,7 +46,7 @@
     <node concept="cTxPe" id="3TQBmq3r5v3" role="lGtFl">
       <property role="P4ACc" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640/1160488491229" />
       <property role="2qtEX9" value="iconPath" />
-      <property role="cYWFP" value="Y" />
+      <property role="cYWFP" value="T" />
       <property role="cYWF$" value="#ffffff" />
       <property role="cYWFC" value="#4f07e8" />
       <property role="cYWFH" value="#b0f817" />

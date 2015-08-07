@@ -5967,6 +5967,24 @@
           <property role="TrG5h" value="com.mbeddr.mpsutil.iconchar#8866176685648195955" />
           <property role="3LESm3" value="bfd51b9a-6ea1-425a-9e60-e48a5eebaf25" />
           <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="5L7BF$C8F2i" role="3bR37C">
+            <node concept="3bR9La" id="5L7BF$C8F2j" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="90a9:31bAEZ0srt5" resolve="org.apache.commons" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5L7BF$C8F2e" role="3bR37C">
+          <node concept="3bR9La" id="5L7BF$C8F2f" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5L7BF$C8F2g" role="3bR37C">
+          <node concept="3bR9La" id="5L7BF$C8F2h" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:31bAEZ0srt5" resolve="org.apache.commons" />
+          </node>
         </node>
       </node>
     </node>
@@ -8765,10 +8783,10 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3J7tYMorZWn" role="3bR37C">
-          <node concept="3bR9La" id="3J7tYMorZWo" role="1SiIV1">
+        <node concept="1SiIV0" id="5L7BF$C8GDE" role="3bR37C">
+          <node concept="3bR9La" id="5L7BF$C8GDF" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="3J7tYMoq4zq" resolve="com.mbeddr.mpsutil.iconchar" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
       </node>
