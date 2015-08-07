@@ -385,11 +385,11 @@
           <node concept="3clFbF" id="5W7baqyl$UZ" role="3cqZAp">
             <node concept="2OqwBi" id="5W7baqyl_OE" role="3clFbG">
               <node concept="1PxgMI" id="5W7baqyl_gt" role="2Oq$k0">
-                <ref role="1PxNhF" to="qlb5:5W7baqyUxX2" resolve="IMetaUnitMappingProvider" />
+                <ref role="1PxNhF" to="qlb5:5W7baqyUxX2" resolve="IGenericUnitMappingProvider" />
                 <node concept="21POm0" id="5W7baqyl$UY" role="1PxMeX" />
               </node>
               <node concept="2qgKlT" id="4Rzbo3AZtrU" role="2OqNvi">
-                <ref role="37wK5l" to="lx0c:5W7baqyUyho" resolve="getMetaUnits" />
+                <ref role="37wK5l" to="lx0c:5W7baqyUyho" resolve="getGenericUnits" />
               </node>
             </node>
           </node>

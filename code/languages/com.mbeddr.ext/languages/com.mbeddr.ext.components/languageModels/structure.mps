@@ -134,6 +134,9 @@
     <node concept="PrWs8" id="3o2OLGv6WZ7" role="PzmwI">
       <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
+    <node concept="PrWs8" id="7okx9D2Gif3" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:49YGTZdSIMN" resolve="GenericUnitProvider" />
+    </node>
     <node concept="1TJgyi" id="1lsyexBMfX1" role="1TKVEl">
       <property role="TrG5h" value="canBeUsedAsType" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
