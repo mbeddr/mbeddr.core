@@ -14,12 +14,14 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.mock/mock.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.statemachine/sm_comp.mpl" folder="statemachine" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.test/test.mpl" folder="components" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.units/com.mbeddr.ext.components.units.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components/components.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components/solutions/pluginSolution/pluginSolution.msd" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.compositecomponents/compositecomponents.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.concurrency.pthreads/com.mbeddr.ext.concurrency.pthreads.mpl" folder="concurrency" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.concurrency/com.mbeddr.ext.concurrency.mpl" folder="concurrency" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.math/com.mbeddr.ext.math.mpl" folder="math" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.messaging/com.mbeddr.ext.messaging.mpl" folder="serialization" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.parallel.primitives/com.mbeddr.ext.parallel.primitives.mpl" folder="parallel.primitives" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.serialization/com.mbeddr.ext.serialization.mpl" folder="serialization" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.statemachines/pluginSolution/com.mbeddr.ext.statemachines.pluginSolution.msd" folder="statemachine" />
@@ -32,7 +34,8 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.compositecomponents/compositecomponents.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.concurrency/tests.ex.ext.concurrency.msd" folder="concurrency" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.math/test.ex.ext.math.msd" folder="tests.math" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.serialization/test.ex.ext.serialization.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.messaging/test.ex.ext.messaging.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.serialization/test.ex.ext.serialization.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.statemachine/statemachine.msd" folder="tests.statemachine" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.units/test.ex.ext.units.msd" folder="tests.units" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.components/components.msd" folder="tests.comp" />

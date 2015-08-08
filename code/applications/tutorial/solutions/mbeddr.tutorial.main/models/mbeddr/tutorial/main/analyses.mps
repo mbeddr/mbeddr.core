@@ -247,6 +247,7 @@
       </concept>
     </language>
     <language id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math">
+      <concept id="666324024671982185" name="com.mbeddr.ext.math.structure.MathConfigurationItem" flags="ng" index="22RD12" />
       <concept id="5098456557377504841" name="com.mbeddr.ext.math.structure.MathLoopExpression" flags="ng" index="2zZxPK">
         <child id="971707942815410149" name="lower" index="39z1js" />
         <child id="971707942815429390" name="varType" index="39z40R" />
@@ -339,6 +340,7 @@
     </node>
     <node concept="3C_SZV" id="7uQ0U6v9zoz" role="2Q9xDr" />
     <node concept="2eh4Hv" id="7FOMyx2$6Ep" role="2Q9xDr" />
+    <node concept="22RD12" id="13bv9czoHlZ" role="2Q9xDr" />
   </node>
   <node concept="N3F5e" id="3iuCLRa88fo">
     <property role="TrG5h" value="FlightAnalyzerVerification" />

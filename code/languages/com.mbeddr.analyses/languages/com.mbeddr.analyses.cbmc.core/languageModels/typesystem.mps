@@ -12,6 +12,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -116,6 +117,9 @@
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -498,6 +502,36 @@
     <property role="TrG5h" value="check_DeadCodeAnalysis" />
     <property role="3GE5qa" value="configuration.cbmc" />
     <node concept="3clFbS" id="fupCap9hP" role="18ibNy">
+      <node concept="3clFbJ" id="5zPqP2q$fDq" role="3cqZAp">
+        <node concept="3clFbS" id="5zPqP2q$fDs" role="3clFbx">
+          <node concept="2MkqsV" id="5zPqP2q$hHu" role="3cqZAp">
+            <node concept="1YBJjd" id="5zPqP2q$hJz" role="2OEOjV">
+              <ref role="1YBMHb" node="fupCap9hR" resolve="deadCodeAnalysis" />
+            </node>
+            <node concept="Xl_RD" id="5zPqP2q$hHO" role="2MkJ7o">
+              <property role="Xl_RC" value="The entry point in the dead-code analysis must be a function" />
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="5zPqP2q$fGq" role="3clFbw">
+          <node concept="2OqwBi" id="5zPqP2q$gCz" role="3fr31v">
+            <node concept="2OqwBi" id="5zPqP2q$fJX" role="2Oq$k0">
+              <node concept="1YBJjd" id="5zPqP2q$fGJ" role="2Oq$k0">
+                <ref role="1YBMHb" node="fupCap9hR" resolve="deadCodeAnalysis" />
+              </node>
+              <node concept="3TrEf2" id="5zPqP2q$ghn" role="2OqNvi">
+                <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="5zPqP2q$hvR" role="2OqNvi">
+              <node concept="chp4Y" id="5zPqP2q$hAi" role="cj9EA">
+                <ref role="cht4Q" to="x27k:5_l8w1EmTvx" resolve="Function" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="5zPqP2q$eaS" role="3cqZAp" />
       <node concept="3cpWs8" id="4_A2_RN4m0S" role="3cqZAp">
         <node concept="3cpWsn" id="4_A2_RN4m0T" role="3cpWs9">
           <property role="TrG5h" value="roots" />

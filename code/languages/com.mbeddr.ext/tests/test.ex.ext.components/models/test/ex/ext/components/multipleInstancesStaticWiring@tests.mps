@@ -2,7 +2,7 @@
 <model ref="r:6f1a99e8-39b3-446d-a231-f539a77ce4a3(test.ex.ext.components.multipleInstancesStaticWiring@tests)">
   <persistence version="9" />
   <languages>
-    <use id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units" version="-1" />
+    <use id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units" version="1" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   </languages>
   <imports />

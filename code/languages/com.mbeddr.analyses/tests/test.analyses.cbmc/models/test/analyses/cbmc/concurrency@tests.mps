@@ -347,7 +347,7 @@
               <ref role="3cqZAo" node="77fajPdkUcA" resolve="res" />
             </node>
             <node concept="liA8E" id="77fajPdkUcI" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
             </node>
           </node>
         </node>
