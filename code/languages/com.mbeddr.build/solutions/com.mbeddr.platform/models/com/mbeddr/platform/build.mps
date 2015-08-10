@@ -6045,6 +6045,30 @@
           <property role="2GAjPV" value="false" />
         </node>
       </node>
+      <node concept="1E1JtA" id="2Bykr6DCkE7" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.extensionclass.annotation" />
+        <property role="3LESm3" value="63c6c042-d558-4559-a9a2-93791d48eb74" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="2Bykr6DCmca" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="2Bykr6DCn6Y" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="2Bykr6DCoYN" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.extensionclass.annotation" />
+              <node concept="2Ry0Ak" id="2Bykr6DCqeG" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.extensionclass.annotation.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2Bykr6DCrou" role="3bR37C">
+          <node concept="3bR9La" id="2Bykr6DCrov" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="90a9:31bAEZ0srt5" resolve="org.apache.commons" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2G$12M" id="4gGXGcLV$l$" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.mpsutil.multilingual" />

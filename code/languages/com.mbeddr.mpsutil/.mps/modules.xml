@@ -79,6 +79,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.querylist.runtime/com.mbeddr.mpsutil.editor.querylist.runtime.msd" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.querylist.sandbox/com.mbeddr.mpsutil.editor.querylist.sandbox.msd" folder="querylist" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editor.utils/com.mbeddr.mpsutil.editor.utils.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.extensionclass.annotation/com.mbeddr.mpsutil.extensionclass.annotation.msd" folder="extensionclass" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.globalgenerators.runtime/com.mbeddr.mpsutil.globalgenerators.runtime.msd" folder="globalGenerators" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.httpserver/com.mbeddr.mpsutil.httpserver.msd" folder="httpSupport" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.httpsupport.rt/com.mbeddr.mpsutil.httpsupport.rt.msd" folder="httpSupport" />
