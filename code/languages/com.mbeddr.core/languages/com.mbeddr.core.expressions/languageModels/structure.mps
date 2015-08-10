@@ -1472,5 +1472,8 @@
       <ref role="PrY4T" to="vs0r:7RHXOmw3XK2" resolve="IRequiresHeaderImport" />
     </node>
   </node>
+  <node concept="PlHQZ" id="5y_zf_M4pZD">
+    <property role="TrG5h" value="IRestrictConstAndVolatile" />
+  </node>
 </model>
 
