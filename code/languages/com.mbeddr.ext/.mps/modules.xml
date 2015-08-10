@@ -18,6 +18,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components/components.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components/solutions/pluginSolution/pluginSolution.msd" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.compositecomponents/compositecomponents.mpl" folder="components" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.concurrency.c/com.mbeddr.ext.concurrency.c.mpl" folder="concurrency" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.concurrency.pthreads/com.mbeddr.ext.concurrency.pthreads.mpl" folder="concurrency" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.concurrency/com.mbeddr.ext.concurrency.mpl" folder="concurrency" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.math/com.mbeddr.ext.math.mpl" folder="math" />
@@ -28,6 +29,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.statemachines/statemachines.mpl" folder="statemachine" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.units/com.mbeddr.ext.units.mpl" folder="units" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.parallel.primitives.runtime/com.mbeddr.ext.parallel.primitives.runtime.msd" folder="parallel.primitives" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.ex.ext.concurrency.c/test.ex.ext.concurrency.c.msd" folder="concurrency" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.comp_mocking/comp_mocking.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components.sri/sri.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components/components.msd" folder="tests.comp" />
