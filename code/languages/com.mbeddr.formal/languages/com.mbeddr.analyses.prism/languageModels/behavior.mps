@@ -412,12 +412,6 @@
       <node concept="3clFbS" id="3np7U0Xys9L" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="3np7U0XzOL4">
-    <ref role="13h7C2" to="dsgp:3np7U0XzOKx" resolve="PrismGlobalVariableTemp" />
-    <node concept="13hLZK" id="3np7U0XzOL5" role="13h7CW">
-      <node concept="3clFbS" id="3np7U0XzOL6" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="3np7U0X_8YA">
     <property role="3GE5qa" value="module" />
     <ref role="13h7C2" to="dsgp:3np7U0Xxa4K" resolve="PrismModule" />
@@ -754,6 +748,13 @@
         </node>
       </node>
       <node concept="10P_77" id="ZgHAy9P1oV" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1wu5Hv5Ul6S">
+    <property role="3GE5qa" value="reward" />
+    <ref role="13h7C2" to="dsgp:5DZbSdwCIxT" resolve="Rewards" />
+    <node concept="13hLZK" id="1wu5Hv5Ul6T" role="13h7CW">
+      <node concept="3clFbS" id="1wu5Hv5Ul6U" role="2VODD2" />
     </node>
   </node>
 </model>

@@ -83,6 +83,7 @@
       <concept id="8860443239512128094" name="com.mbeddr.core.expressions.structure.TrueLiteral" flags="ng" index="3TlMhK" />
     </language>
     <language id="5917d4cb-7979-40f0-b45a-730feb564cbb" name="com.mbeddr.analyses.prism">
+      <concept id="1139611265831648458" name="com.mbeddr.analyses.prism.structure.SmallerEquals" flags="ng" index="26fgEy" />
       <concept id="1139611265828361591" name="com.mbeddr.analyses.prism.structure.PrismModelRef" flags="ng" index="26qMcv">
         <reference id="1139611265828368659" name="prismModel" index="26qKtV" />
       </concept>
@@ -154,7 +155,6 @@
       <concept id="7042202754474701506" name="com.mbeddr.analyses.prism.structure.BoolType" flags="ng" index="1L1LNq" />
       <concept id="7042202754473391432" name="com.mbeddr.analyses.prism.structure.F" flags="ng" index="1L4LHg" />
       <concept id="7042202754473377503" name="com.mbeddr.analyses.prism.structure.X" flags="ng" index="1L4P37" />
-      <concept id="7042202754473720833" name="com.mbeddr.analyses.prism.structure.Smaller" flags="ng" index="1L518p" />
       <concept id="7042202754473589595" name="com.mbeddr.analyses.prism.structure.IBoundableTemporalExpression" flags="ng" index="1L5xl3">
         <property id="7042202754473589608" name="isBounded" index="1L5xlK" />
         <child id="7042202754473589744" name="bound" index="1L5xnC" />
@@ -1337,7 +1337,36 @@
             </node>
           </node>
         </node>
+        <node concept="8iAKY" id="1wu5Hv5Ukoi" role="3XIRFZ">
+          <node concept="UW4s3" id="1wu5Hv5Ukte" role="8iALw">
+            <node concept="UXXqE" id="1wu5Hv5Ukpr" role="3TlMhI">
+              <ref role="UXXqK" node="ZgHAy9IE5V" resolve="s" />
+            </node>
+            <node concept="3TlMh9" id="1wu5Hv5Ukyn" role="3TlMhJ">
+              <property role="2hmy$m" value="0" />
+            </node>
+          </node>
+          <node concept="8jdPs" id="1wu5Hv5Ukom" role="8iAL$">
+            <node concept="3TlMh9" id="1wu5Hv5UkxK" role="8jdMX">
+              <property role="2hmy$m" value="1" />
+            </node>
+            <node concept="8jdN0" id="1wu5Hv5Ukoq" role="8jdM1">
+              <node concept="UXXqE" id="1wu5Hv5UkAs" role="8jdNa">
+                <ref role="UXXqK" node="ZgHAy9IE5V" resolve="s" />
+              </node>
+              <node concept="3TlMh9" id="1wu5Hv5UkAz" role="8jdNe">
+                <property role="2hmy$m" value="1" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
+    </node>
+    <node concept="2NXPZ9" id="1wu5Hv5TZ3S" role="N3F5h">
+      <property role="TrG5h" value="empty_1439210433190_1" />
+    </node>
+    <node concept="2NXPZ9" id="1wu5Hv5UDGD" role="N3F5h">
+      <property role="TrG5h" value="empty_1439211238337_5" />
     </node>
   </node>
   <node concept="1L8sP6" id="ZgHAy9IE8T">
@@ -1360,9 +1389,9 @@
             <node concept="UXXqE" id="ZgHAy9IEgV" role="1_9fRO">
               <ref role="UXXqK" node="ZgHAy9IE5V" resolve="s" />
             </node>
-            <node concept="1L518p" id="ZgHAy9IEg$" role="1L5xnC">
-              <node concept="3TlMh9" id="ZgHAy9XWMk" role="1_9fRO">
-                <property role="2hmy$m" value="3601" />
+            <node concept="26fgEy" id="1wu5Hv5KiXd" role="1L5xnC">
+              <node concept="3TlMh9" id="1wu5Hv5KiZh" role="1_9fRO">
+                <property role="2hmy$m" value="3600" />
               </node>
             </node>
           </node>

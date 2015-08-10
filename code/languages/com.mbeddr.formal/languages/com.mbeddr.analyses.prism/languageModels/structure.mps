@@ -122,14 +122,6 @@
     <property role="TrG5h" value="PrismGlobalVariable" />
     <ref role="1TJDcQ" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
   </node>
-  <node concept="1TIwiD" id="3np7U0XzOKx">
-    <property role="TrG5h" value="PrismGlobalVariableTemp" />
-    <property role="34LRSv" value="var" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3np7U0XzOKF" role="PzmwI">
-      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="3np7U0X$j6A">
     <property role="TrG5h" value="IntervalType" />
     <property role="34LRSv" value="[" />
@@ -598,7 +590,7 @@
     <property role="3GE5qa" value="properties" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="PrWs8" id="66UVxwgAHXc" role="PzmwI">
       <ref role="PrY4T" node="66UVxwgAHWc" resolve="IPrismProperty" />
     </node>
@@ -803,6 +795,103 @@
     </node>
     <node concept="PrWs8" id="ZgHAy9VrNc" role="PzmwI">
       <ref role="PrY4T" node="66UVxwgFfMh" resolve="ITemporalLogicBound" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1wu5Hv5To6a">
+    <property role="3GE5qa" value="properties.filter" />
+    <property role="TrG5h" value="Filter" />
+    <property role="34LRSv" value="filter" />
+    <property role="R4oN_" value="filters" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1wu5Hv5Tou3" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="propertyExp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="1wu5Hv5Towx" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="statesExp" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="1wu5Hv5Toa9" role="PzmwI">
+      <ref role="PrY4T" node="66UVxwgAHWc" resolve="IPrismProperty" />
+    </node>
+    <node concept="1TJgyi" id="1wu5Hv5TotZ" role="1TKVEl">
+      <property role="TrG5h" value="op" />
+      <ref role="AX2Wp" node="1wu5Hv5Toz3" resolve="EFilterOperator" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="1wu5Hv5Toz3">
+    <property role="3GE5qa" value="properties.filter" />
+    <property role="TrG5h" value="EFilterOperator" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="1wu5Hv5Toz4" role="M5hS2">
+      <property role="1uS6qv" value="min" />
+      <property role="1uS6qo" value="min" />
+    </node>
+    <node concept="M4N5e" id="1wu5Hv5ToDB" role="M5hS2">
+      <property role="1uS6qo" value="max" />
+      <property role="1uS6qv" value="max" />
+    </node>
+    <node concept="M4N5e" id="1wu5Hv5ToDI" role="M5hS2">
+      <property role="1uS6qo" value="count" />
+      <property role="1uS6qv" value="count" />
+    </node>
+    <node concept="M4N5e" id="1wu5Hv5ToDS" role="M5hS2">
+      <property role="1uS6qo" value="sum" />
+      <property role="1uS6qv" value="sum" />
+    </node>
+    <node concept="M4N5e" id="1wu5Hv5ToE5" role="M5hS2">
+      <property role="1uS6qo" value="avg" />
+      <property role="1uS6qv" value="avg" />
+    </node>
+    <node concept="M4N5e" id="1wu5Hv5ToGQ" role="M5hS2">
+      <property role="1uS6qo" value="first" />
+      <property role="1uS6qv" value="first" />
+    </node>
+    <node concept="M4N5e" id="1wu5Hv5ToH9" role="M5hS2">
+      <property role="1uS6qo" value="range" />
+      <property role="1uS6qv" value="range" />
+    </node>
+    <node concept="M4N5e" id="1wu5Hv5ToHv" role="M5hS2">
+      <property role="1uS6qo" value="forall" />
+      <property role="1uS6qv" value="forall" />
+    </node>
+    <node concept="M4N5e" id="1wu5Hv5ToKs" role="M5hS2">
+      <property role="1uS6qo" value="exists" />
+      <property role="1uS6qv" value="exists" />
+    </node>
+    <node concept="M4N5e" id="1wu5Hv5ToKS" role="M5hS2">
+      <property role="1uS6qo" value="state" />
+      <property role="1uS6qv" value="state" />
+    </node>
+    <node concept="M4N5e" id="1wu5Hv5ToNX" role="M5hS2">
+      <property role="1uS6qo" value="argmin" />
+      <property role="1uS6qv" value="argmin" />
+    </node>
+    <node concept="M4N5e" id="1wu5Hv5ToOv" role="M5hS2">
+      <property role="1uS6qo" value="argmax" />
+      <property role="1uS6qv" value="argmax" />
+    </node>
+    <node concept="M4N5e" id="1wu5Hv5ToP4" role="M5hS2">
+      <property role="1uS6qo" value="print" />
+      <property role="1uS6qv" value="print" />
+    </node>
+    <node concept="M4N5e" id="1wu5Hv5ToPG" role="M5hS2">
+      <property role="1uS6qo" value="printall" />
+      <property role="1uS6qv" value="printall" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1wu5Hv5VVT$">
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="RewardRef" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="1wu5Hv5VVVp" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="reward" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5DZbSdwCIxT" resolve="Rewards" />
     </node>
   </node>
 </model>
