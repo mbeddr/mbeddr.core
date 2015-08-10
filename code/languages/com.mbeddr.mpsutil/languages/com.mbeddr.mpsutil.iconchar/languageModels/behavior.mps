@@ -56,6 +56,7 @@
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
+      <concept id="1461424660015405635" name="jetbrains.mps.baseLanguage.structure.EscapeOperation" flags="nn" index="EvHYZ" />
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -240,6 +241,24 @@
         <node concept="3clFbF" id="3TQBmq3qBd3" role="3cqZAp">
           <node concept="BsUDl" id="3TQBmq3qBd2" role="3clFbG">
             <ref role="37wK5l" node="3TQBmq3p9ZJ" resolve="setIconPath" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="4X7wieq5mfd" role="3cqZAp" />
+        <node concept="3cpWs8" id="4X7wieq5_R9" role="3cqZAp">
+          <node concept="3cpWsn" id="4X7wieq5_Rc" role="3cpWs9">
+            <property role="TrG5h" value="str" />
+            <node concept="17QB3L" id="4X7wieq5_R7" role="1tU5fm" />
+            <node concept="Xl_RD" id="4X7wieq5_RL" role="33vP2m">
+              <property role="Xl_RC" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4X7wieq5_Sh" role="3cqZAp">
+          <node concept="2OqwBi" id="4X7wieq5Aij" role="3clFbG">
+            <node concept="37vLTw" id="4X7wieq5_Sf" role="2Oq$k0">
+              <ref role="3cqZAo" node="4X7wieq5_Rc" resolve="str" />
+            </node>
+            <node concept="EvHYZ" id="4X7wieq5EsY" role="2OqNvi" />
           </node>
         </node>
       </node>
