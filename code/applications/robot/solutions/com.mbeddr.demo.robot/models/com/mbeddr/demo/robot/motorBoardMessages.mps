@@ -57,6 +57,7 @@
       <concept id="743779816742251347" name="com.mbeddr.core.expressions.structure.ITypeDecorator" flags="ng" index="1Ml8iu">
         <child id="7336544617004013388" name="valueType" index="UxbcT" />
       </concept>
+      <concept id="8860443239512128058" name="com.mbeddr.core.expressions.structure.BooleanType" flags="ng" index="3TlMgk" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
@@ -69,7 +70,7 @@
       <property role="TrG5h" value="empty_1437478657039_23" />
     </node>
     <node concept="1sgJKc" id="2JGF63bDcaL" role="N3F5h">
-      <property role="TrG5h" value="MotorBoardMessage" />
+      <property role="TrG5h" value="Control2MotorMessage" />
       <property role="2OOxQR" value="true" />
       <node concept="1dpRTG" id="2JGF63bDcb4" role="HszBJ">
         <property role="TrG5h" value="speed" />
@@ -97,6 +98,27 @@
               <ref role="CIi3I" to="g2ww:5zHWU$G$gNn" resolve="rpm" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7mELSK8F4vv" role="N3F5h">
+      <property role="TrG5h" value="empty_1439278877240_8" />
+    </node>
+    <node concept="1sgJKc" id="7mELSK8FAzc" role="N3F5h">
+      <property role="TrG5h" value="Motor2ControlMessage" />
+      <property role="2OOxQR" value="true" />
+      <node concept="1dpRTG" id="7mELSK8FA$2" role="HszBJ">
+        <property role="TrG5h" value="leftWheelBlocked" />
+        <node concept="3TlMgk" id="7mELSK8FA$1" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1dpRTG" id="7mELSK8FA$T" role="HszBJ">
+        <property role="TrG5h" value="rightWheelBlocked" />
+        <node concept="3TlMgk" id="7mELSK8FA$R" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
       </node>
     </node>
