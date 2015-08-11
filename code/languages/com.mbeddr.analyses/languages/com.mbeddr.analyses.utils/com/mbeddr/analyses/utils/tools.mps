@@ -1315,23 +1315,38 @@
               </node>
             </node>
           </node>
-          <node concept="1Wc70l" id="4xt6LZKDQqQ" role="3clFbw">
-            <node concept="3fqX7Q" id="4xt6LZKDPOo" role="3uHU7w">
-              <node concept="2OqwBi" id="4xt6LZKDPOq" role="3fr31v">
-                <node concept="37vLTw" id="4xt6LZKDPOr" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4$9c1ZxZ35u" resolve="programName" />
-                </node>
-                <node concept="liA8E" id="4xt6LZKDPOs" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
-                  <node concept="Xl_RD" id="4xt6LZKDT8v" role="37wK5m">
-                    <property role="Xl_RC" value=".exe" />
+          <node concept="1Wc70l" id="1wu5Hv5KEpk" role="3clFbw">
+            <node concept="1Wc70l" id="4xt6LZKDQqQ" role="3uHU7B">
+              <node concept="10M0yZ" id="4xt6LZKDT3E" role="3uHU7B">
+                <ref role="1PxDUh" to="v2t1:~SystemUtils" resolve="SystemUtils" />
+                <ref role="3cqZAo" to="v2t1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
+              </node>
+              <node concept="3fqX7Q" id="4xt6LZKDPOo" role="3uHU7w">
+                <node concept="2OqwBi" id="4xt6LZKDPOq" role="3fr31v">
+                  <node concept="37vLTw" id="4xt6LZKDPOr" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4$9c1ZxZ35u" resolve="programName" />
+                  </node>
+                  <node concept="liA8E" id="4xt6LZKDPOs" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                    <node concept="Xl_RD" id="4xt6LZKDT8v" role="37wK5m">
+                      <property role="Xl_RC" value=".exe" />
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="10M0yZ" id="4xt6LZKDT3E" role="3uHU7B">
-              <ref role="1PxDUh" to="v2t1:~SystemUtils" resolve="SystemUtils" />
-              <ref role="3cqZAo" to="v2t1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
+            <node concept="3fqX7Q" id="1wu5Hv5KEJG" role="3uHU7w">
+              <node concept="2OqwBi" id="1wu5Hv5KEJH" role="3fr31v">
+                <node concept="37vLTw" id="1wu5Hv5KEJI" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4$9c1ZxZ35u" resolve="programName" />
+                </node>
+                <node concept="liA8E" id="1wu5Hv5KEJJ" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                  <node concept="Xl_RD" id="1wu5Hv5KEJK" role="37wK5m">
+                    <property role="Xl_RC" value=".bat" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
