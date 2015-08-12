@@ -10,7 +10,7 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
   </languages>
   <imports>
-    <import index="2yye" ref="r:1e9c34a1-24cd-4a6a-aff8-3989afef6434(testing_utils)" />
+    <import index="2yye" ref="r:1e9c34a1-24cd-4a6a-aff8-3989afef6434(com.mbeddr.analyses.prism.rt.testing_utils)" />
     <import index="8e9v" ref="r:a21516a4-23a5-4dc7-826d-37c3fde5c4e3(com.mbeddr.analyses.utils.tools)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
