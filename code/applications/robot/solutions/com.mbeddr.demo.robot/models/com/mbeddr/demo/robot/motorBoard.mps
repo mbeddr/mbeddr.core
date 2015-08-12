@@ -3151,64 +3151,113 @@
             </node>
           </node>
           <node concept="3XISUE" id="7mELSK4g13a" role="3XIRFZ" />
-          <node concept="c0U19" id="7mELSK4g13b" role="3XIRFZ">
-            <node concept="3XIRFW" id="7mELSK4g13c" role="c0U17">
-              <node concept="1_9egQ" id="7mELSK4g13d" role="3XIRFZ">
-                <node concept="3LAlOK" id="7mELSK4g13e" role="1_9egR">
+          <node concept="c0U19" id="6rrUichX1nH" role="3XIRFZ">
+            <node concept="3XIRFW" id="6rrUichX1nI" role="c0U17">
+              <node concept="1_9egQ" id="6rrUichX3NW" role="3XIRFZ">
+                <node concept="3LAlOK" id="6rrUichX3NX" role="1_9egR">
                   <ref role="2H6Oet" to="lmqm:7tTb7Fvs5B$" resolve="freezeIntegrator" />
-                  <node concept="1DnYEe" id="7mELSK4g13f" role="1_9fRO">
-                    <ref role="1DcY7d" to="lmqm:5$_GT_vvVpc" resolve="pid" />
+                  <node concept="1DnYEe" id="6rrUichX3NY" role="1_9fRO">
                     <ref role="1DnYF2" node="7mELSK4fWnW" resolve="pidForward" />
-                  </node>
-                  <node concept="3TlMhK" id="7mELSK4g13g" role="2H6KYo" />
-                </node>
-              </node>
-              <node concept="1_9egQ" id="7mELSK4g13h" role="3XIRFZ">
-                <node concept="3LAlOK" id="7mELSK4g13i" role="1_9egR">
-                  <ref role="2H6Oet" to="lmqm:7tTb7Fvs5B$" resolve="freezeIntegrator" />
-                  <node concept="1DnYEe" id="7mELSK4g13j" role="1_9fRO">
                     <ref role="1DcY7d" to="lmqm:5$_GT_vvVpc" resolve="pid" />
-                    <ref role="1DnYF2" node="7mELSK4fWoq" resolve="pidBackward" />
                   </node>
-                  <node concept="3TlMhd" id="7mELSK4g13k" role="2H6KYo" />
+                  <node concept="3TlMhK" id="6rrUichX3NZ" role="2H6KYo" />
                 </node>
               </node>
-              <node concept="1_9egQ" id="7mELSK4g13l" role="3XIRFZ">
-                <node concept="3pqW6w" id="7mELSK4g13m" role="1_9egR">
-                  <node concept="EbZIE" id="7mELSK4g13n" role="3TlMhI">
+              <node concept="1_9egQ" id="6rrUichX3O0" role="3XIRFZ">
+                <node concept="3LAlOK" id="6rrUichX3O1" role="1_9egR">
+                  <ref role="2H6Oet" to="lmqm:7tTb7Fvs5B$" resolve="freezeIntegrator" />
+                  <node concept="1DnYEe" id="6rrUichX3O2" role="1_9fRO">
+                    <ref role="1DnYF2" node="7mELSK4fWoq" resolve="pidBackward" />
+                    <ref role="1DcY7d" to="lmqm:5$_GT_vvVpc" resolve="pid" />
+                  </node>
+                  <node concept="3TlMhK" id="6rrUichX3UP" role="2H6KYo" />
+                </node>
+              </node>
+              <node concept="1_9egQ" id="6rrUichX3O4" role="3XIRFZ">
+                <node concept="3pqW6w" id="6rrUichX3O5" role="1_9egR">
+                  <node concept="EbZIE" id="6rrUichX3O6" role="3TlMhI">
                     <ref role="EbZID" node="7mELSK4g0X8" resolve="motorPower" />
                   </node>
-                  <node concept="3LAlOK" id="7mELSK4g13o" role="3TlMhJ">
-                    <ref role="2H6Oet" to="lmqm:5$_GT_vvW2o" resolve="getControlValue" />
-                    <node concept="1DnYEe" id="7mELSK4g13p" role="1_9fRO">
+                  <node concept="3TlMh9" id="6rrUichX41d" role="3TlMhJ">
+                    <property role="2hmy$m" value="0.0" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3Tl9Jn" id="6rrUichX3ql" role="c0U16">
+              <node concept="3O_q_g" id="6rrUichX3qn" role="3TlMhI">
+                <ref role="3O_q_h" to="3y0n:137zkozycmj" resolve="fabs" />
+                <node concept="3LAlOK" id="6rrUichX3qo" role="3O_q_j">
+                  <ref role="2H6Oet" node="7tTb7FvstYY" resolve="getSpeed" />
+                  <node concept="1DnYEe" id="6rrUichX3qp" role="1_9fRO">
+                    <ref role="1DnYF2" node="5zHWU$G_Q_t" resolve="virtualWheel" />
+                    <ref role="1DcY7d" node="7tTb7FuPj3h" resolve="wheel" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3TlMh9" id="6rrUichX3qq" role="3TlMhJ">
+                <property role="2hmy$m" value="0.001" />
+              </node>
+            </node>
+            <node concept="gg_gk" id="6rrUichX56V" role="gg_kh">
+              <node concept="3XIRFW" id="6rrUichX56W" role="gg_gl">
+                <node concept="1_9egQ" id="7mELSK4g13d" role="3XIRFZ">
+                  <node concept="3LAlOK" id="7mELSK4g13e" role="1_9egR">
+                    <ref role="2H6Oet" to="lmqm:7tTb7Fvs5B$" resolve="freezeIntegrator" />
+                    <node concept="1DnYEe" id="7mELSK4g13f" role="1_9fRO">
+                      <ref role="1DcY7d" to="lmqm:5$_GT_vvVpc" resolve="pid" />
+                      <ref role="1DnYF2" node="7mELSK4fWnW" resolve="pidForward" />
+                    </node>
+                    <node concept="3TlMhK" id="7mELSK4g13g" role="2H6KYo" />
+                  </node>
+                </node>
+                <node concept="1_9egQ" id="7mELSK4g13h" role="3XIRFZ">
+                  <node concept="3LAlOK" id="7mELSK4g13i" role="1_9egR">
+                    <ref role="2H6Oet" to="lmqm:7tTb7Fvs5B$" resolve="freezeIntegrator" />
+                    <node concept="1DnYEe" id="7mELSK4g13j" role="1_9fRO">
                       <ref role="1DcY7d" to="lmqm:5$_GT_vvVpc" resolve="pid" />
                       <ref role="1DnYF2" node="7mELSK4fWoq" resolve="pidBackward" />
+                    </node>
+                    <node concept="3TlMhd" id="7mELSK4g13k" role="2H6KYo" />
+                  </node>
+                </node>
+                <node concept="1_9egQ" id="7mELSK4g13l" role="3XIRFZ">
+                  <node concept="3pqW6w" id="7mELSK4g13m" role="1_9egR">
+                    <node concept="EbZIE" id="7mELSK4g13n" role="3TlMhI">
+                      <ref role="EbZID" node="7mELSK4g0X8" resolve="motorPower" />
+                    </node>
+                    <node concept="3LAlOK" id="7mELSK4g13o" role="3TlMhJ">
+                      <ref role="2H6Oet" to="lmqm:5$_GT_vvW2o" resolve="getControlValue" />
+                      <node concept="1DnYEe" id="7mELSK4g13p" role="1_9fRO">
+                        <ref role="1DcY7d" to="lmqm:5$_GT_vvVpc" resolve="pid" />
+                        <ref role="1DnYF2" node="7mELSK4fWoq" resolve="pidBackward" />
+                      </node>
                     </node>
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="3Tl9Jn" id="7mELSK4g13q" role="c0U16">
-              <node concept="CIdvy" id="7mELSK4g13r" role="3TlMhJ">
-                <node concept="3TlMh9" id="7mELSK4g13s" role="CIrOC">
-                  <property role="2hmy$m" value="0.0" />
+              <node concept="3Tl9Jn" id="6rrUichX5G3" role="gg_gt">
+                <node concept="CIdvy" id="6rrUichX5G4" role="3TlMhJ">
+                  <node concept="3TlMh9" id="6rrUichX5G5" role="CIrOC">
+                    <property role="2hmy$m" value="0.0" />
+                  </node>
+                  <node concept="CIsGf" id="6rrUichX5G6" role="CIwXZ">
+                    <node concept="CIsvn" id="6rrUichX5G7" role="CIi4h">
+                      <ref role="CIi3I" to="g2ww:5zHWU$G$9bk" resolve="m/s" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="CIsGf" id="7mELSK4g13t" role="CIwXZ">
-                  <node concept="CIsvn" id="7mELSK4g13u" role="CIi4h">
-                    <ref role="CIi3I" to="g2ww:5zHWU$G$9bk" resolve="m/s" />
+                <node concept="3LAlOK" id="6rrUichX5G8" role="3TlMhI">
+                  <ref role="2H6Oet" node="7tTb7FvstYY" resolve="getSpeed" />
+                  <node concept="1DnYEe" id="6rrUichX5G9" role="1_9fRO">
+                    <ref role="1DcY7d" node="7tTb7FuPj3h" resolve="wheel" />
+                    <ref role="1DnYF2" node="5zHWU$G_Q_t" resolve="virtualWheel" />
                   </node>
                 </node>
               </node>
-              <node concept="3LAlOK" id="7mELSK4hbgz" role="3TlMhI">
-                <ref role="2H6Oet" node="7tTb7FvstYY" resolve="getSpeed" />
-                <node concept="1DnYEe" id="7mELSK4hb6L" role="1_9fRO">
-                  <ref role="1DnYF2" node="5zHWU$G_Q_t" resolve="virtualWheel" />
-                  <ref role="1DcY7d" node="7tTb7FuPj3h" resolve="wheel" />
-                </node>
-              </node>
             </node>
-            <node concept="1ly_i6" id="7mELSK4g13x" role="ggAap">
-              <node concept="3XIRFW" id="7mELSK4g13y" role="1ly_ph">
+            <node concept="1ly_i6" id="6rrUichX77j" role="ggAap">
+              <node concept="3XIRFW" id="6rrUichX77k" role="1ly_ph">
                 <node concept="1_9egQ" id="7mELSK4g13z" role="3XIRFZ">
                   <node concept="3LAlOK" id="7mELSK4g13$" role="1_9egR">
                     <ref role="2H6Oet" to="lmqm:7tTb7Fvs5B$" resolve="freezeIntegrator" />

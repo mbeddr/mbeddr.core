@@ -35,6 +35,13 @@
       </concept>
       <concept id="5882395403881875736" name="com.mbeddr.core.udt.structure.Member" flags="ng" index="1dpRTG" />
       <concept id="6394819151180597807" name="com.mbeddr.core.udt.structure.StructDeclaration" flags="ng" index="1sgJKc" />
+      <concept id="8811614583515725893" name="com.mbeddr.core.udt.structure.EnumType" flags="ng" index="1AkAi2">
+        <reference id="8811614583515725894" name="enum" index="1AkAi1" />
+      </concept>
+      <concept id="8811614583515725853" name="com.mbeddr.core.udt.structure.EnumLiteral" flags="ng" index="1AkAjq" />
+      <concept id="8811614583515725851" name="com.mbeddr.core.udt.structure.EnumDeclaration" flags="ng" index="1AkAjs">
+        <child id="8811614583515725857" name="literals" index="1AkAjA" />
+      </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
@@ -132,6 +139,30 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="1dpRTG" id="6rrUichcjz8" role="HszBJ">
+        <property role="TrG5h" value="mode" />
+        <node concept="1AkAi2" id="6rrUichcjz6" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="1AkAi1" node="6rrUichcj9Z" resolve="EsploraMode" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="6rrUichcj36" role="N3F5h">
+      <property role="TrG5h" value="empty_1439303306519_1" />
+    </node>
+    <node concept="1AkAjs" id="6rrUichcj9Z" role="N3F5h">
+      <property role="TrG5h" value="EsploraMode" />
+      <property role="2OOxQR" value="true" />
+      <node concept="1AkAjq" id="6rrUichcjU4" role="1AkAjA">
+        <property role="TrG5h" value="MANUAL" />
+      </node>
+      <node concept="1AkAjq" id="6rrUichcjYc" role="1AkAjA">
+        <property role="TrG5h" value="AUTO" />
+      </node>
+      <node concept="1AkAjq" id="6rrUichckLO" role="1AkAjA">
+        <property role="TrG5h" value="COMPASS" />
       </node>
     </node>
     <node concept="2NXPZ9" id="2Z$TrjMra17" role="N3F5h">
