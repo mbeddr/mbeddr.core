@@ -11,12 +11,12 @@
   </languages>
   <imports>
     <import index="5wll" ref="r:8bfc0edf-00dc-40ce-9659-fb90c9bd31c8(com.mbeddr.ext.concurrency.structure)" />
-    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" implicit="true" />
-    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" implicit="true" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -49,7 +49,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -317,7 +317,7 @@
   </node>
   <node concept="1M2fIO" id="vg5qBCe_Vu">
     <property role="3GE5qa" value="atomic" />
-    <ref role="1M2myG" to="5wll:vg5qBCdLAj" resolve="AccessSpecifier" />
+    <ref role="1M2myG" to="5wll:vg5qBCdLAj" resolve="GlobalVarAccessSpecifier" />
     <node concept="1N5Pfh" id="vg5qBCe_Vv" role="1Mr941">
       <ref role="1N5Vy1" to="5wll:vg5qBCe_Pa" />
       <node concept="1MUpDS" id="vg5qBCeCCa" role="1N6uqs">
@@ -699,6 +699,44 @@
                     <property role="TrG5h" value="it" />
                     <node concept="2jxLKc" id="6bs538mpp_C" role="1tU5fm" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6u_410Tvwl3">
+    <property role="3GE5qa" value="atomic" />
+    <ref role="1M2myG" to="5wll:6u_410TvjqB" resolve="ResourceAccessSpecifier" />
+    <node concept="1N5Pfh" id="6u_410TvwuD" role="1Mr941">
+      <ref role="1N5Vy1" to="5wll:6u_410TvjqC" />
+      <node concept="1MUpDS" id="6u_410TvwuF" role="1N6uqs">
+        <node concept="3clFbS" id="6u_410TvwuG" role="2VODD2">
+          <node concept="3clFbF" id="6u_410TvwvF" role="3cqZAp">
+            <node concept="2OqwBi" id="6u_410TvwvG" role="3clFbG">
+              <node concept="2OqwBi" id="6u_410TvwvH" role="2Oq$k0">
+                <node concept="2OqwBi" id="6u_410TvwvI" role="2Oq$k0">
+                  <node concept="21POm0" id="6u_410TvwvJ" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="6u_410TvwvK" role="2OqNvi">
+                    <node concept="1xMEDy" id="6u_410TvwvL" role="1xVPHs">
+                      <node concept="chp4Y" id="6u_410TvwvM" role="ri$Ld">
+                        <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="6u_410TvwvN" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
+                  <node concept="3TUQnm" id="6u_410TvwvO" role="37wK5m">
+                    <ref role="3TV0OU" to="5wll:6u_410TuQru" resolve="ResourceDeclaration" />
+                  </node>
+                </node>
+              </node>
+              <node concept="v3k3i" id="6u_410TvwvP" role="2OqNvi">
+                <node concept="chp4Y" id="6u_410TvwGh" role="v3oSu">
+                  <ref role="cht4Q" to="5wll:6u_410TuQru" resolve="ResourceDeclaration" />
                 </node>
               </node>
             </node>
