@@ -649,6 +649,7 @@
   <node concept="1TIwiD" id="6u_410TuQru">
     <property role="TrG5h" value="ResourceDeclaration" />
     <property role="34LRSv" value="resource" />
+    <property role="3GE5qa" value="resources" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6u_410Tv1cF" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
@@ -671,6 +672,23 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="6u_410TLnZf">
+    <property role="3GE5qa" value="resources" />
+    <property role="TrG5h" value="UseResourceAnnotation" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="6u_410TLnZm" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="resources" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="6u_410TvjqB" resolve="ResourceAccessSpecifier" />
+    </node>
+    <node concept="M6xJ_" id="6u_410TLnZg" role="lGtFl">
+      <property role="Hh88m" value="useResource" />
+      <node concept="trNpa" id="6u_410TQ8d_" role="EQaZv">
+        <ref role="trN6q" to="x27k:5_l8w1EmTvt" resolve="FunctionSignature" />
+      </node>
+    </node>
   </node>
 </model>
 
