@@ -75,7 +75,7 @@
       <concept id="6070390538380293878" name="com.mbeddr.ext.concurrency.c.structure.TimeSourceConstraint" flags="ng" index="scIFY">
         <child id="6070390538380299553" name="currentTimeExpression" index="scD4D" />
       </concept>
-      <concept id="7587272608860492786" name="com.mbeddr.ext.concurrency.c.structure.PureCStrategy" flags="ng" index="1KpjJf" />
+      <concept id="7587272608860492786" name="com.mbeddr.ext.concurrency.c.structure.PlainCStrategy" flags="ng" index="1KpjJf" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="8729447926330198396" name="com.mbeddr.core.util.structure.ForRangeStatement" flags="ng" index="n2Vfv">
