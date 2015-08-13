@@ -184,7 +184,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="specifiers" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="vg5qBCdLAj" resolve="AccessSpecifier" />
+      <ref role="20lvS9" node="6u_410TBNaj" resolve="AccessSpecifier" />
     </node>
     <node concept="1TJgyj" id="vg5qBCdL_R" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -201,8 +201,8 @@
   </node>
   <node concept="1TIwiD" id="vg5qBCdLAj">
     <property role="3GE5qa" value="atomic" />
-    <property role="TrG5h" value="AccessSpecifier" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="TrG5h" value="GlobalVarAccessSpecifier" />
+    <ref role="1TJDcQ" node="6u_410TBNaj" resolve="AccessSpecifier" />
     <node concept="1TJgyj" id="vg5qBCe_Pa" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="var" />
@@ -645,6 +645,32 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="66UaKxBOkro" resolve="ScheduleSpecification" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6u_410TuQru">
+    <property role="TrG5h" value="ResourceDeclaration" />
+    <property role="34LRSv" value="resource" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6u_410Tv1cF" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6u_410TvjqB">
+    <property role="3GE5qa" value="atomic" />
+    <property role="TrG5h" value="ResourceAccessSpecifier" />
+    <ref role="1TJDcQ" node="6u_410TBNaj" resolve="AccessSpecifier" />
+    <node concept="1TJgyj" id="6u_410TvjqC" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="res" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6u_410TuQru" resolve="ResourceDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6u_410TBNaj">
+    <property role="3GE5qa" value="atomic" />
+    <property role="TrG5h" value="AccessSpecifier" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

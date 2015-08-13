@@ -318,7 +318,7 @@
   </node>
   <node concept="1M2fIO" id="vg5qBCe_Vu">
     <property role="3GE5qa" value="atomic" />
-    <ref role="1M2myG" to="5wll:vg5qBCdLAj" resolve="AccessSpecifier" />
+    <ref role="1M2myG" to="5wll:vg5qBCdLAj" resolve="GlobalVarAccessSpecifier" />
     <node concept="1N5Pfh" id="vg5qBCe_Vv" role="1Mr941">
       <ref role="1N5Vy1" to="5wll:vg5qBCe_Pa" />
       <node concept="1MUpDS" id="vg5qBCeCCa" role="1N6uqs">
@@ -700,6 +700,44 @@
                     <property role="TrG5h" value="it" />
                     <node concept="2jxLKc" id="6bs538mpp_C" role="1tU5fm" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6u_410Tvwl3">
+    <property role="3GE5qa" value="atomic" />
+    <ref role="1M2myG" to="5wll:6u_410TvjqB" resolve="ResourceAccessSpecifier" />
+    <node concept="1N5Pfh" id="6u_410TvwuD" role="1Mr941">
+      <ref role="1N5Vy1" to="5wll:6u_410TvjqC" />
+      <node concept="1MUpDS" id="6u_410TvwuF" role="1N6uqs">
+        <node concept="3clFbS" id="6u_410TvwuG" role="2VODD2">
+          <node concept="3clFbF" id="6u_410TvwvF" role="3cqZAp">
+            <node concept="2OqwBi" id="6u_410TvwvG" role="3clFbG">
+              <node concept="2OqwBi" id="6u_410TvwvH" role="2Oq$k0">
+                <node concept="2OqwBi" id="6u_410TvwvI" role="2Oq$k0">
+                  <node concept="21POm0" id="6u_410TvwvJ" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="6u_410TvwvK" role="2OqNvi">
+                    <node concept="1xMEDy" id="6u_410TvwvL" role="1xVPHs">
+                      <node concept="chp4Y" id="6u_410TvwvM" role="ri$Ld">
+                        <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="6u_410TvwvN" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
+                  <node concept="3TUQnm" id="6u_410TvwvO" role="37wK5m">
+                    <ref role="3TV0OU" to="5wll:6u_410TuQru" resolve="ResourceDeclaration" />
+                  </node>
+                </node>
+              </node>
+              <node concept="v3k3i" id="6u_410TvwvP" role="2OqNvi">
+                <node concept="chp4Y" id="6u_410TvwGh" role="v3oSu">
+                  <ref role="cht4Q" to="5wll:6u_410TuQru" resolve="ResourceDeclaration" />
                 </node>
               </node>
             </node>

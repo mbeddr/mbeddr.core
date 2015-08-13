@@ -20,11 +20,11 @@
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="5wll" ref="r:8bfc0edf-00dc-40ce-9659-fb90c9bd31c8(com.mbeddr.ext.concurrency.structure)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
-    <import index="qozy" ref="r:38fcb48b-92c2-41af-9039-dc087bb8b822(com.mbeddr.ext.concurrency.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
+    <import index="qozy" ref="r:38fcb48b-92c2-41af-9039-dc087bb8b822(com.mbeddr.ext.concurrency.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -479,7 +479,7 @@
   </node>
   <node concept="24kQdi" id="vg5qBCe_Pz">
     <property role="3GE5qa" value="atomic" />
-    <ref role="1XX52x" to="5wll:vg5qBCdLAj" resolve="AccessSpecifier" />
+    <ref role="1XX52x" to="5wll:vg5qBCdLAj" resolve="GlobalVarAccessSpecifier" />
     <node concept="3EZMnI" id="vg5qBCe_PL" role="2wV5jI">
       <node concept="l2Vlx" id="vg5qBCe_PM" role="2iSdaV" />
       <node concept="1iCGBv" id="vg5qBCe_P_" role="3EZMnx">
@@ -1149,6 +1149,39 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6u_410Tv5xo">
+    <ref role="1XX52x" to="5wll:6u_410TuQru" resolve="ResourceDeclaration" />
+    <node concept="3EZMnI" id="6u_410Tv9U4" role="2wV5jI">
+      <node concept="l2Vlx" id="6u_410Tv9U5" role="2iSdaV" />
+      <node concept="3F0ifn" id="6u_410Tv9Oq" role="3EZMnx">
+        <property role="3F0ifm" value="resource" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="3F0A7n" id="6u_410Tv9UD" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="6u_410Tv9UZ" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dhkRt" resolve="Semi" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6u_410TvplU">
+    <property role="3GE5qa" value="atomic" />
+    <ref role="1XX52x" to="5wll:6u_410TvjqB" resolve="ResourceAccessSpecifier" />
+    <node concept="3EZMnI" id="6u_410Tvpmq" role="2wV5jI">
+      <node concept="l2Vlx" id="6u_410Tvpmr" role="2iSdaV" />
+      <node concept="1iCGBv" id="6u_410Tvpms" role="3EZMnx">
+        <ref role="1NtTu8" to="5wll:6u_410TvjqC" />
+        <node concept="1sVBvm" id="6u_410Tvpmt" role="1sWHZn">
+          <node concept="3F0A7n" id="6u_410Tvpmu" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
