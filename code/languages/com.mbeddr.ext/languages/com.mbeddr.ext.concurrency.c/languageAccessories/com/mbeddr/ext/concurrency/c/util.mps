@@ -293,7 +293,7 @@
             </node>
             <node concept="1mIQ4w" id="6_bq3OpcSpj" role="2OqNvi">
               <node concept="chp4Y" id="6_bq3OpcTCe" role="cj9EA">
-                <ref role="cht4Q" to="izv8:6_bq3Opb_fM" resolve="PureCStrategy" />
+                <ref role="cht4Q" to="izv8:6_bq3Opb_fM" resolve="PlainCStrategy" />
               </node>
             </node>
           </node>
@@ -504,31 +504,59 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="5gYn0x8oTiT" role="3clF47">
-        <node concept="3clFbF" id="5gYn0x8oWi6" role="3cqZAp">
-          <node concept="2OqwBi" id="5gYn0x8oO0D" role="3clFbG">
-            <node concept="2OqwBi" id="5gYn0x8oO0E" role="2Oq$k0">
-              <node concept="37vLTw" id="5gYn0x8oO0F" role="2Oq$k0">
+        <node concept="3SKdUt" id="1TgsdXPQTFH" role="3cqZAp">
+          <node concept="3SKdUq" id="1TgsdXPQTNi" role="3SKWNk">
+            <property role="3SKdUp" value="For reducing the complexity of the generator, we always use at least one section for the task" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1TgsdXPQRM9" role="3cqZAp">
+          <node concept="3clFbS" id="1TgsdXPQRMb" role="3clFbx">
+            <node concept="3cpWs6" id="1TgsdXPQT6P" role="3cqZAp">
+              <node concept="3clFbT" id="1TgsdXPQTbJ" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1TgsdXPQSQK" role="3clFbw">
+            <node concept="2OqwBi" id="1TgsdXPQS0F" role="2Oq$k0">
+              <node concept="37vLTw" id="1TgsdXPQRSA" role="2Oq$k0">
                 <ref role="3cqZAo" node="5gYn0x8oV5s" resolve="stmtList" />
               </node>
-              <node concept="3Tsc0h" id="5gYn0x8oO0G" role="2OqNvi">
+              <node concept="1mfA1w" id="1TgsdXPQSrs" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="1TgsdXPQT31" role="2OqNvi">
+              <node concept="chp4Y" id="1TgsdXPQT3C" role="cj9EA">
+                <ref role="cht4Q" to="5wll:73Jrkgytd$o" resolve="Task" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1TgsdXPQTgu" role="3cqZAp" />
+        <node concept="3cpWs6" id="1TgsdXPQTqr" role="3cqZAp">
+          <node concept="2OqwBi" id="1TgsdXPQTqt" role="3cqZAk">
+            <node concept="2OqwBi" id="1TgsdXPQTqu" role="2Oq$k0">
+              <node concept="37vLTw" id="1TgsdXPQTqv" role="2Oq$k0">
+                <ref role="3cqZAo" node="5gYn0x8oV5s" resolve="stmtList" />
+              </node>
+              <node concept="3Tsc0h" id="1TgsdXPQTqw" role="2OqNvi">
                 <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" />
               </node>
             </node>
-            <node concept="2HwmR7" id="5gYn0x8oO0H" role="2OqNvi">
-              <node concept="1bVj0M" id="5gYn0x8oO0I" role="23t8la">
-                <node concept="3clFbS" id="5gYn0x8oO0J" role="1bW5cS">
-                  <node concept="3clFbF" id="5gYn0x8oOtW" role="3cqZAp">
-                    <node concept="1rXfSq" id="5gYn0x8oOtV" role="3clFbG">
+            <node concept="2HwmR7" id="1TgsdXPQTqx" role="2OqNvi">
+              <node concept="1bVj0M" id="1TgsdXPQTqy" role="23t8la">
+                <node concept="3clFbS" id="1TgsdXPQTqz" role="1bW5cS">
+                  <node concept="3clFbF" id="1TgsdXPQTq$" role="3cqZAp">
+                    <node concept="1rXfSq" id="1TgsdXPQTq_" role="3clFbG">
                       <ref role="37wK5l" node="5gYn0x8dWrt" resolve="requiresOwnSection" />
-                      <node concept="37vLTw" id="5gYn0x8oOx_" role="37wK5m">
-                        <ref role="3cqZAo" node="5gYn0x8oO0K" resolve="it" />
+                      <node concept="37vLTw" id="1TgsdXPQTqA" role="37wK5m">
+                        <ref role="3cqZAo" node="1TgsdXPQTqB" resolve="it" />
                       </node>
                     </node>
                   </node>
                 </node>
-                <node concept="Rh6nW" id="5gYn0x8oO0K" role="1bW2Oz">
+                <node concept="Rh6nW" id="1TgsdXPQTqB" role="1bW2Oz">
                   <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="5gYn0x8oO0L" role="1tU5fm" />
+                  <node concept="2jxLKc" id="1TgsdXPQTqC" role="1tU5fm" />
                 </node>
               </node>
             </node>
