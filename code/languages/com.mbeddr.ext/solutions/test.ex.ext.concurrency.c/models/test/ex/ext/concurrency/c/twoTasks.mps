@@ -78,7 +78,8 @@
       <concept id="6070390538380293878" name="com.mbeddr.ext.concurrency.c.structure.TimeSourceConstraint" flags="ng" index="scIFY">
         <child id="6070390538380299553" name="currentTimeExpression" index="scD4D" />
       </concept>
-      <concept id="7587272608860492786" name="com.mbeddr.ext.concurrency.c.structure.PureCStrategy" flags="ng" index="1KpjJf" />
+      <concept id="2184369924327143820" name="com.mbeddr.ext.concurrency.c.structure.CurrentTimeExpression" flags="ng" index="1FK8_j" />
+      <concept id="7587272608860492786" name="com.mbeddr.ext.concurrency.c.structure.PlainCStrategy" flags="ng" index="1KpjJf" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
@@ -183,6 +184,7 @@
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
+      <concept id="8463282783691618456" name="com.mbeddr.core.expressions.structure.UnsignedInt64tType" flags="ng" index="26Vqp1" />
       <concept id="8463282783691618461" name="com.mbeddr.core.expressions.structure.UnsignedInt8tType" flags="ng" index="26Vqp4" />
       <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
       <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
@@ -191,6 +193,7 @@
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
       </concept>
+      <concept id="5763383285156373018" name="com.mbeddr.core.expressions.structure.MinusExpression" flags="ng" index="2BOcil" />
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
@@ -277,8 +280,15 @@
         <property role="2c7vTL" value="false" />
       </node>
     </node>
-    <node concept="2NXPZ9" id="5gYn0x7VQWL" role="N3F5h">
-      <property role="TrG5h" value="empty_1439371976318_2" />
+    <node concept="1S7NMz" id="1TgsdXPU5Zc" role="N3F5h">
+      <property role="TrG5h" value="startTime" />
+      <node concept="26Vqp1" id="1TgsdXPU5Za" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="1TgsdXPU6nc" role="N3F5h">
+      <property role="TrG5h" value="empty_1439457713135_7" />
     </node>
     <node concept="1iAVhs" id="3xRFG9PQKhV" role="N3F5h">
       <property role="TrG5h" value="multiplyBy2" />
@@ -287,7 +297,13 @@
           <node concept="3O_q_g" id="5gYn0x8256f" role="1_9egR">
             <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
             <node concept="PhEJO" id="5gYn0x82574" role="3O_q_j">
-              <property role="PhEJT" value="task 'multiplyBy2' executed\n" />
+              <property role="PhEJT" value="task 'multiplyBy2' executed %llu \n" />
+            </node>
+            <node concept="2BOcil" id="1TgsdXPU6Pa" role="3O_q_j">
+              <node concept="1S7827" id="1TgsdXPU6QC" role="3TlMhJ">
+                <ref role="1S7826" node="1TgsdXPU5Zc" resolve="startTime" />
+              </node>
+              <node concept="1FK8_j" id="1TgsdXPU5Tq" role="3TlMhI" />
             </node>
           </node>
         </node>
@@ -336,7 +352,13 @@
           <node concept="3O_q_g" id="5gYn0x825mW" role="1_9egR">
             <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
             <node concept="PhEJO" id="5gYn0x825mX" role="3O_q_j">
-              <property role="PhEJT" value="task 'add1' executed\n" />
+              <property role="PhEJT" value="task 'add1' executed %llu \n" />
+            </node>
+            <node concept="2BOcil" id="1TgsdXPU6Rn" role="3O_q_j">
+              <node concept="1S7827" id="1TgsdXPU6SP" role="3TlMhJ">
+                <ref role="1S7826" node="1TgsdXPU5Zc" resolve="startTime" />
+              </node>
+              <node concept="1FK8_j" id="1TgsdXPU5Mu" role="3TlMhI" />
             </node>
           </node>
         </node>
@@ -444,6 +466,16 @@
             </node>
             <node concept="1S7827" id="5gYn0x7VUzh" role="3TlMhI">
               <ref role="1S7826" node="5gYn0x7VRJW" resolve="executionsAdd1" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="1TgsdXPU6L$" role="3XIRFZ">
+          <node concept="3pqW6w" id="1TgsdXPU6Og" role="1_9egR">
+            <node concept="3O_q_g" id="1TgsdXPU6OH" role="3TlMhJ">
+              <ref role="3O_q_h" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
+            </node>
+            <node concept="1S7827" id="1TgsdXPU6Ly" role="3TlMhI">
+              <ref role="1S7826" node="1TgsdXPU5Zc" resolve="startTime" />
             </node>
           </node>
         </node>
