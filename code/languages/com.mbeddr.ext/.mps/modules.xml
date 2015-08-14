@@ -33,7 +33,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components.sri/sri.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components/components.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.compositecomponents/compositecomponents.msd" folder="tests.comp" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.concurrency.plainC/test.ex.ext.concurrency.c.msd" folder="concurrency" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.concurrency.plainC/test.ex.ext.concurrency.c.msd" folder="tests.concurrency" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.concurrency/tests.ex.ext.concurrency.msd" folder="tests.concurrency" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.math/test.ex.ext.math.msd" folder="tests.math" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.messaging/test.ex.ext.messaging.msd" folder="tests" />
