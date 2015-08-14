@@ -1754,5 +1754,42 @@
       <ref role="1YaFvo" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
     </node>
   </node>
+  <node concept="18kY7G" id="3pVON$40sIE">
+    <property role="TrG5h" value="check_AtomicStatement" />
+    <property role="3GE5qa" value="atomic" />
+    <node concept="3clFbS" id="3pVON$40sIF" role="18ibNy">
+      <node concept="3clFbJ" id="3pVON$40B0A" role="3cqZAp">
+        <node concept="3clFbS" id="3pVON$40B0B" role="3clFbx">
+          <node concept="a7r0C" id="3pVON$40CCj" role="3cqZAp">
+            <node concept="Xl_RD" id="3pVON$40CC_" role="a7wSD">
+              <property role="Xl_RC" value="atomic statements should not be nested because this prevents global lock ordering and may result in deadlocks; please use one atomic with several access specifiers" />
+            </node>
+            <node concept="1YBJjd" id="3pVON$40CHj" role="2OEOjV">
+              <ref role="1YBMHb" node="3pVON$40sIH" resolve="as" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="3pVON$40BRZ" role="3clFbw">
+          <node concept="2OqwBi" id="3pVON$40Bqv" role="2Oq$k0">
+            <node concept="1YBJjd" id="3pVON$40B0M" role="2Oq$k0">
+              <ref role="1YBMHb" node="3pVON$40sIH" resolve="as" />
+            </node>
+            <node concept="2Xjw5R" id="3pVON$40BLH" role="2OqNvi">
+              <node concept="1xMEDy" id="3pVON$40BLJ" role="1xVPHs">
+                <node concept="chp4Y" id="3pVON$40BMi" role="ri$Ld">
+                  <ref role="cht4Q" to="5wll:vg5qBCdJwc" resolve="AtomicStatement" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3x8VRR" id="3pVON$40CB3" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3pVON$40sIH" role="1YuTPh">
+      <property role="TrG5h" value="as" />
+      <ref role="1YaFvo" to="5wll:vg5qBCdJwc" resolve="AtomicStatement" />
+    </node>
+  </node>
 </model>
 

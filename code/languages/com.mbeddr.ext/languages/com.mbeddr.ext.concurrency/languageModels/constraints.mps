@@ -746,5 +746,9 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="3pVON$40sEg">
+    <property role="3GE5qa" value="atomic" />
+    <ref role="1M2myG" to="5wll:vg5qBCdJwc" resolve="AtomicStatement" />
+  </node>
 </model>
 
