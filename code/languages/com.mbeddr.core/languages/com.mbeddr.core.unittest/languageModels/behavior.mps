@@ -91,7 +91,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -1574,7 +1574,7 @@
       <node concept="3clFbS" id="3IOp39i06Jr" role="3clF47">
         <node concept="3clFbF" id="3IOp39i0eGV" role="3cqZAp">
           <node concept="Xl_RD" id="3IOp39i0eGU" role="3clFbG">
-            <property role="Xl_RC" value="actual" />
+            <property role="Xl_RC" value="___actual" />
           </node>
         </node>
       </node>
@@ -1586,7 +1586,7 @@
       <node concept="3clFbS" id="3IOp39i0eHQ" role="3clF47">
         <node concept="3clFbF" id="3IOp39i0eIg" role="3cqZAp">
           <node concept="Xl_RD" id="3IOp39i0eIf" role="3clFbG">
-            <property role="Xl_RC" value="expected" />
+            <property role="Xl_RC" value="___expected" />
           </node>
         </node>
       </node>
