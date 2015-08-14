@@ -5,7 +5,6 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
-    <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
     <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
@@ -142,7 +141,7 @@
       <concept id="4193597469137492644" name="com.mbeddr.core.debug.test.structure.MarkerRef" flags="ng" index="3cQ7K9">
         <reference id="4193597469137492645" name="marker" index="3cQ7K8" />
       </concept>
-      <concept id="4193597469137492628" name="com.mbeddr.core.debug.test.structure.MarkerAnnotation" flags="ng" index="3cQ7KT" />
+      <concept id="4193597469137492628" name="com.mbeddr.core.debug.test.structure.ProgramMarkerAnnotation" flags="ng" index="3cQ7KT" />
       <concept id="4550138447367847233" name="com.mbeddr.core.debug.test.structure.WatchablesValidationList" flags="ng" index="1l46Ie">
         <child id="4550138447367880227" name="watchables" index="1l4ezG" />
       </concept>
@@ -566,8 +565,14 @@
       </node>
     </node>
   </node>
+  <node concept="2XOHcx" id="75iUP$MbTn$">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/" />
+  </node>
   <node concept="309jyn" id="2vLpZ7wjVcp">
     <property role="TrG5h" value="GSwitch" />
+    <node concept="3qy1PH" id="2vLpZ7wjVcw" role="3qy1PE">
+      <ref role="30ajXG" node="75iUP$Mbqly" resolve="GswitchTest" />
+    </node>
     <node concept="1rNX2u" id="2vLpZ7wjVcD" role="1zJi$$">
       <property role="TrG5h" value="1stGSwitch" />
       <node concept="1l46Ie" id="2vLpZ7wjVcE" role="1rNkJC">
@@ -707,13 +712,7 @@
         </node>
       </node>
     </node>
-    <node concept="3qy1PH" id="2vLpZ7wjVcw" role="3qy1PE">
-      <ref role="30ajXG" node="75iUP$Mbqly" resolve="GswitchTest" />
-    </node>
     <node concept="29bEnc" id="5t7wq7uZRWu" role="29bA6Q" />
-  </node>
-  <node concept="2XOHcx" id="75iUP$MbTn$">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger.tests/" />
   </node>
 </model>
 

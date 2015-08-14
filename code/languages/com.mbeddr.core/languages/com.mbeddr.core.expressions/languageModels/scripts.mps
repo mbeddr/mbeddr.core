@@ -2,12 +2,12 @@
 <model ref="r:b4ace5ee-7fa0-430a-9ad4-4a1f6eaf0e09(com.mbeddr.core.expressions.scripts)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="0eddeefa-c2d6-4437-bc2c-de50fd4ce470" name="jetbrains.mps.lang.script" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
   </languages>
   <imports>
-    <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
   </imports>
   <registry>
@@ -86,7 +86,7 @@
                 <node concept="_YI3z" id="2xRMs06XRQT" role="2JrQYb" />
               </node>
               <node concept="liA8E" id="4LLYoSIkxV" role="2OqNvi">
-                <ref role="37wK5l" to="ec5l:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
+                <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
                 <node concept="Xl_RD" id="4LLYoSIkxW" role="37wK5m">
                   <property role="Xl_RC" value="unsigned" />
                 </node>
@@ -111,7 +111,7 @@
                   <node concept="_YI3z" id="2xRMs06XRFb" role="2JrQYb" />
                 </node>
                 <node concept="liA8E" id="4LLYoSMZH$" role="2OqNvi">
-                  <ref role="37wK5l" to="ec5l:~SNode.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
                   <node concept="Xl_RD" id="4LLYoSMZH_" role="37wK5m">
                     <property role="Xl_RC" value="unsigned" />
                   </node>

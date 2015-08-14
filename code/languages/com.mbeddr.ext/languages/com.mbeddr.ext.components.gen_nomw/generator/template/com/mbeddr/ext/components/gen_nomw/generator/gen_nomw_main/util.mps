@@ -13,7 +13,7 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="p7vm" ref="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -136,7 +136,7 @@
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
@@ -564,7 +564,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="1nTCJdUqBKn" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                           <node concept="2OqwBi" id="1nTCJdUqBKo" role="37wK5m">
                             <node concept="37vLTw" id="1nTCJdUqBKp" role="2Oq$k0">
                               <ref role="3cqZAo" node="7UUkaBfaVzQ" resolve="port" />
@@ -873,7 +873,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="7UUkaBfaV$O" role="2OqNvi">
-                            <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                             <node concept="2OqwBi" id="7UUkaBfaV$P" role="37wK5m">
                               <node concept="3cpWs2" id="7UUkaBfaV_s" role="2Oq$k0">
                                 <ref role="3cqZAo" node="7UUkaBfaV_m" resolve="port" />
@@ -1056,7 +1056,9 @@
                   <ref role="3cqZAo" node="4rpFIBbP$jc" resolve="m" />
                 </node>
                 <node concept="2SmgA7" id="4rpFIBbPJeY" role="2OqNvi">
-                  <ref role="2SmgA8" to="v7ag:3TmmsQkCzn9" resolve="Component" />
+                  <node concept="chp4Y" id="31zYnCC2Df1" role="1dBWTz">
+                    <ref role="cht4Q" to="v7ag:3TmmsQkCzn9" resolve="Component" />
+                  </node>
                 </node>
               </node>
             </node>

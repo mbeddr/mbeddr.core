@@ -14,7 +14,7 @@
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="vuss" ref="r:030bc2d0-ab1f-4013-9326-cb8d964c9de2(com.mbeddr.ext.messaging.structure)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
@@ -22,10 +22,10 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="7icl" ref="r:3e2cab9f-ef04-4626-abca-728117c6459d(com.mbeddr.ext.messaging.crc)" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
-    <import index="3aad" ref="r:955a24af-6557-43ac-ae8a-2e51b6924e87(com.mbeddr.ext.messaging.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
+    <import index="3aad" ref="r:955a24af-6557-43ac-ae8a-2e51b6924e87(com.mbeddr.ext.messaging.behavior)" implicit="true" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -348,7 +348,7 @@
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
@@ -2272,14 +2272,18 @@
                   <node concept="2OqwBi" id="6JJhAyRm_yQ" role="2Oq$k0">
                     <node concept="1Q6Npb" id="6JJhAyRm_yR" role="2Oq$k0" />
                     <node concept="2SmgA7" id="6JJhAyRm_yS" role="2OqNvi">
-                      <ref role="2SmgA8" to="vuss:2hvQkqcWqnP" resolve="SendDotTarget" />
+                      <node concept="chp4Y" id="31zYnCC2Dgj" role="1dBWTz">
+                        <ref role="cht4Q" to="vuss:2hvQkqcWqnP" resolve="SendDotTarget" />
+                      </node>
                     </node>
                   </node>
                   <node concept="4Tj9Z" id="6JJhAyRm_yT" role="2OqNvi">
                     <node concept="2OqwBi" id="6JJhAyRm_yU" role="576Qk">
                       <node concept="1Q6Npb" id="6JJhAyRm_yV" role="2Oq$k0" />
                       <node concept="2SmgA7" id="6JJhAyRm_yW" role="2OqNvi">
-                        <ref role="2SmgA8" to="vuss:2hvQkqcZV37" resolve="MessageReceiveStatement" />
+                        <node concept="chp4Y" id="31zYnCC2Dgf" role="1dBWTz">
+                          <ref role="cht4Q" to="vuss:2hvQkqcZV37" resolve="MessageReceiveStatement" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -2451,7 +2455,9 @@
                     <node concept="2OqwBi" id="6JJhAyRn2xI" role="2Oq$k0">
                       <node concept="1Q6Npb" id="6JJhAyRn2xJ" role="2Oq$k0" />
                       <node concept="2SmgA7" id="6JJhAyRn2xK" role="2OqNvi">
-                        <ref role="2SmgA8" to="vuss:6MQ2rNXIlg1" resolve="MessageDeclaration" />
+                        <node concept="chp4Y" id="31zYnCC2Dgh" role="1dBWTz">
+                          <ref role="cht4Q" to="vuss:6MQ2rNXIlg1" resolve="MessageDeclaration" />
+                        </node>
                       </node>
                     </node>
                     <node concept="3$u5V9" id="6JJhAyRn2xL" role="2OqNvi">

@@ -3,16 +3,16 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
   </languages>
   <imports>
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
-    <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="9a8" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -182,7 +182,7 @@
       </concept>
     </language>
     <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
-      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" index="27S6Sx" />
+      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -234,8 +234,8 @@
                   <ref role="37wK5l" to="r4b4:3Dgh5aYiKso" resolve="HorizLineCell" />
                   <node concept="pncrf" id="3Dgh5aYiKt7" role="37wK5m" />
                   <node concept="10M0yZ" id="3Dgh5aYiKt9" role="37wK5m">
-                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                    <ref role="3cqZAo" to="1t7x:~Color.black" resolve="black" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
                   </node>
                   <node concept="3cmrfG" id="3Dgh5aYiKtb" role="37wK5m">
                     <property role="3cmrfH" value="2" />
@@ -298,8 +298,8 @@
                   <ref role="37wK5l" to="r4b4:3Dgh5aYiKso" resolve="HorizLineCell" />
                   <node concept="pncrf" id="2cCHKvAEsYM" role="37wK5m" />
                   <node concept="10M0yZ" id="2cCHKvAEsYN" role="37wK5m">
-                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                    <ref role="3cqZAo" to="1t7x:~Color.gray" resolve="gray" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
                   </node>
                   <node concept="3cmrfG" id="2cCHKvAEsYO" role="37wK5m">
                     <property role="3cmrfH" value="2" />
@@ -353,8 +353,8 @@
                   <ref role="37wK5l" to="r4b4:3Dgh5aYiKso" resolve="HorizLineCell" />
                   <node concept="pncrf" id="2cCHKvAEtrb" role="37wK5m" />
                   <node concept="10M0yZ" id="2cCHKvAEtrc" role="37wK5m">
-                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                    <ref role="3cqZAo" to="1t7x:~Color.gray" resolve="gray" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
                   </node>
                   <node concept="3cmrfG" id="2cCHKvAEtrd" role="37wK5m">
                     <property role="3cmrfH" value="2" />
@@ -418,8 +418,8 @@
                   <ref role="37wK5l" to="r4b4:3Dgh5aYiKso" resolve="HorizLineCell" />
                   <node concept="pncrf" id="2cCHKvAEtLR" role="37wK5m" />
                   <node concept="10M0yZ" id="2cCHKvAEtLS" role="37wK5m">
-                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                    <ref role="3cqZAo" to="1t7x:~Color.gray" resolve="gray" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
                   </node>
                   <node concept="3cmrfG" id="2cCHKvAEtLT" role="37wK5m">
                     <property role="3cmrfH" value="2" />
@@ -486,8 +486,8 @@
                     <node concept="3clFbS" id="2_NeK7g26YR" role="3clFbx">
                       <node concept="3cpWs6" id="2_NeK7g26Zn" role="3cqZAp">
                         <node concept="10M0yZ" id="6$I8XuFqaR1" role="3cqZAk">
-                          <ref role="1PxDUh" to="9a8:~MPSFonts" resolve="MPSFonts" />
-                          <ref role="3cqZAo" to="9a8:~MPSFonts.PLAIN" resolve="PLAIN" />
+                          <ref role="1PxDUh" to="exr9:~MPSFonts" resolve="MPSFonts" />
+                          <ref role="3cqZAo" to="exr9:~MPSFonts.PLAIN" resolve="PLAIN" />
                         </node>
                       </node>
                     </node>
@@ -495,8 +495,8 @@
                       <node concept="3clFbS" id="2_NeK7g26Zt" role="9aQI4">
                         <node concept="3cpWs6" id="2_NeK7g26Zu" role="3cqZAp">
                           <node concept="10M0yZ" id="6$I8XuFqaR3" role="3cqZAk">
-                            <ref role="1PxDUh" to="9a8:~MPSFonts" resolve="MPSFonts" />
-                            <ref role="3cqZAo" to="9a8:~MPSFonts.ITALIC" resolve="ITALIC" />
+                            <ref role="1PxDUh" to="exr9:~MPSFonts" resolve="MPSFonts" />
+                            <ref role="3cqZAo" to="exr9:~MPSFonts.ITALIC" resolve="ITALIC" />
                           </node>
                         </node>
                       </node>
@@ -1164,8 +1164,8 @@
                   <ref role="37wK5l" to="r4b4:3Dgh5aYiKso" resolve="HorizLineCell" />
                   <node concept="pncrf" id="7$0wAVobc6O" role="37wK5m" />
                   <node concept="10M0yZ" id="7$0wAVobd5e" role="37wK5m">
-                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                    <ref role="3cqZAo" to="1t7x:~Color.BLACK" resolve="BLACK" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.BLACK" resolve="BLACK" />
                   </node>
                   <node concept="3cmrfG" id="7$0wAVobcfG" role="37wK5m">
                     <property role="3cmrfH" value="2" />
@@ -1208,11 +1208,11 @@
                   </node>
                   <node concept="2OqwBi" id="2ka6MWOv0Eo" role="3uHU7B">
                     <node concept="2YIFZM" id="2ka6MWOv0E3" role="2Oq$k0">
-                      <ref role="1Pybhc" to="9a8:~EditorSettings" resolve="EditorSettings" />
-                      <ref role="37wK5l" to="9a8:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                      <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                      <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
                     </node>
                     <node concept="liA8E" id="2ka6MWOv0Eu" role="2OqNvi">
-                      <ref role="37wK5l" to="9a8:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                      <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
                     </node>
                   </node>
                 </node>
@@ -1230,8 +1230,8 @@
                   <ref role="37wK5l" to="r4b4:3Dgh5aYiKso" resolve="HorizLineCell" />
                   <node concept="pncrf" id="4zqPC3awf14" role="37wK5m" />
                   <node concept="10M0yZ" id="4zqPC3awf15" role="37wK5m">
-                    <ref role="3cqZAo" to="1t7x:~Color.BLACK" resolve="BLACK" />
-                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.BLACK" resolve="BLACK" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
                   </node>
                   <node concept="3cmrfG" id="4zqPC3awf16" role="37wK5m">
                     <property role="3cmrfH" value="2" />

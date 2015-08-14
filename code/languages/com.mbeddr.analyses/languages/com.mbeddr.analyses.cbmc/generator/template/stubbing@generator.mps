@@ -103,11 +103,14 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
@@ -177,7 +180,9 @@
             <node concept="2OqwBi" id="7DvJ5MZf7Nt" role="33vP2m">
               <node concept="1Q6Npb" id="7DvJ5MZf7Nu" role="2Oq$k0" />
               <node concept="2SmgA7" id="7DvJ5MZf7Nv" role="2OqNvi">
-                <ref role="2SmgA8" to="q5q6:7DvJ5MZf5j_" resolve="SingleStubConfig" />
+                <node concept="chp4Y" id="3oh9vETTFuD" role="1dBWTz">
+                  <ref role="cht4Q" to="q5q6:7DvJ5MZf5j_" resolve="SingleStubConfig" />
+                </node>
               </node>
             </node>
           </node>
@@ -191,7 +196,9 @@
             <node concept="2OqwBi" id="7DvJ5MZf7Ze" role="33vP2m">
               <node concept="1Q6Npb" id="7DvJ5MZf7Zf" role="2Oq$k0" />
               <node concept="2SmgA7" id="7DvJ5MZf7Zg" role="2OqNvi">
-                <ref role="2SmgA8" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
+                <node concept="chp4Y" id="3oh9vETTFuF" role="1dBWTz">
+                  <ref role="cht4Q" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
+                </node>
               </node>
             </node>
           </node>

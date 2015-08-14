@@ -3,17 +3,17 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
   </languages>
   <imports>
     <import index="d8ej" ref="r:fde4fd08-2694-4f15-a5e5-88fa2c92442c(com.mbeddr.analyses.utils.testing_utils)" />
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
-    <import index="v2t1" ref="f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons/org.apache.commons.lang3@java_stub)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -148,14 +148,14 @@
         <node concept="3clFbF" id="2ZKh15oiydZ" role="3cqZAp">
           <node concept="2OqwBi" id="2ZKh15oiydV" role="3clFbG">
             <node concept="10M0yZ" id="2ZKh15oiydW" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="2ZKh15oiydX" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="2YIFZM" id="2ZKh15oigMa" role="37wK5m">
-                <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-                <ref role="37wK5l" to="v2t1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
+                <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+                <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
                 <node concept="37vLTw" id="2ZKh15oigMP" role="37wK5m">
                   <ref role="3cqZAo" node="2ZKh15oie7U" resolve="badLines" />
                 </node>
@@ -218,14 +218,14 @@
         <node concept="3clFbF" id="2ZKh15oi_AM" role="3cqZAp">
           <node concept="2OqwBi" id="2ZKh15oi_AN" role="3clFbG">
             <node concept="10M0yZ" id="2ZKh15oi_AO" role="2Oq$k0">
-              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
             </node>
             <node concept="liA8E" id="2ZKh15oi_AP" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="2YIFZM" id="3FEqw8GV3WD" role="37wK5m">
-                <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-                <ref role="37wK5l" to="v2t1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
+                <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+                <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
                 <node concept="37vLTw" id="3FEqw8GV3WE" role="37wK5m">
                   <ref role="3cqZAo" node="2ZKh15oi_AG" resolve="badLines" />
                 </node>
@@ -292,14 +292,14 @@
         <node concept="3clFbF" id="2ZKh15oiAIn" role="3cqZAp">
           <node concept="2OqwBi" id="2ZKh15oiAIo" role="3clFbG">
             <node concept="10M0yZ" id="2ZKh15oiAIp" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="2ZKh15oiAIq" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="2YIFZM" id="2ZKh15oiAIr" role="37wK5m">
-                <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-                <ref role="37wK5l" to="v2t1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
+                <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+                <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
                 <node concept="37vLTw" id="2ZKh15oiAIs" role="37wK5m">
                   <ref role="3cqZAo" node="2ZKh15oiAIh" resolve="badLines" />
                 </node>

@@ -2,14 +2,14 @@
 <model ref="r:02fd962e-fdec-4ce8-ac08-1e36622f718b(com.mbeddr.analyses.sat4j.fm.model)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
-    <import index="glhf" ref="f:java_stub#d280cd6b-3d77-4bf2-b70d-fe049ab4c77e#org.sat4j.specs(com.mbeddr.analyses.sat4j/org.sat4j.specs@java_stub)" />
+    <import index="j6po" ref="d280cd6b-3d77-4bf2-b70d-fe049ab4c77e/java:org.sat4j.specs(com.mbeddr.analyses.sat4j/)" />
     <import index="vy7l" ref="r:86500bb5-b61d-4584-98de-8e87c2a6a247(com.mbeddr.analyses.sat4j.fm.analyses)" />
     <import index="qqyh" ref="r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)" />
   </imports>
@@ -256,7 +256,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="1X8myJOHU_t" role="Sfmx6">
-        <ref role="3uigEE" to="glhf:~TimeoutException" resolve="TimeoutException" />
+        <ref role="3uigEE" to="j6po:~TimeoutException" resolve="TimeoutException" />
       </node>
     </node>
     <node concept="3Tm1VV" id="2hSqXWTF6wT" role="1B3o_S" />
@@ -452,7 +452,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="1X8myJOUIpZ" role="Sfmx6">
-        <ref role="3uigEE" to="glhf:~TimeoutException" resolve="TimeoutException" />
+        <ref role="3uigEE" to="j6po:~TimeoutException" resolve="TimeoutException" />
       </node>
     </node>
     <node concept="3Tm1VV" id="1X8myJOUIq0" role="1B3o_S" />

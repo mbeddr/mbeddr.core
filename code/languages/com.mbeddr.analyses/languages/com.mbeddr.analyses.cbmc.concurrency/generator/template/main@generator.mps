@@ -12,7 +12,7 @@
   </languages>
   <imports>
     <import index="nok9" ref="r:071dfb19-bba7-4a45-a209-478de09a1fc8(com.mbeddr.analyses.cbmc.concurrency.structure)" />
-    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="gonc" ref="r:5feda2a1-c36a-4783-8283-2a036cc255e9(com.mbeddr.analyses.cbmc.concurrency.generator.template.utils)" />
   </imports>
   <registry>
@@ -135,6 +135,9 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -142,7 +145,7 @@
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
@@ -248,7 +251,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="3FFL7jDe3wW" role="2OqNvi">
-                              <ref role="37wK5l" to="ec5l:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                              <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
                             </node>
                           </node>
                           <node concept="Xl_RD" id="3FFL7jDdJ2z" role="3uHU7B">
@@ -290,7 +293,7 @@
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="3FFL7jDe6T2" role="2OqNvi">
-                                      <ref role="37wK5l" to="ec5l:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                                      <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
                                     </node>
                                   </node>
                                   <node concept="Xl_RD" id="3FFL7jDe6T3" role="3uHU7B">
@@ -334,7 +337,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="3FFL7jDe6_i" role="2OqNvi">
-                                  <ref role="37wK5l" to="ec5l:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
                                 </node>
                               </node>
                               <node concept="Xl_RD" id="3FFL7jDe6_j" role="3uHU7B">
@@ -384,7 +387,7 @@
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="3FFL7jDe7bo" role="2OqNvi">
-                                        <ref role="37wK5l" to="ec5l:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                                        <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
                                       </node>
                                     </node>
                                     <node concept="Xl_RD" id="3FFL7jDe7bp" role="3uHU7B">
@@ -426,7 +429,9 @@
             <node concept="2OqwBi" id="3V3CJZuKNGh" role="33vP2m">
               <node concept="1Q6Npb" id="3V3CJZuKNGi" role="2Oq$k0" />
               <node concept="2SmgA7" id="3V3CJZuKNGj" role="2OqNvi">
-                <ref role="2SmgA8" to="nok9:3V3CJZuJLdS" resolve="HappensAfterPair" />
+                <node concept="chp4Y" id="3oh9vETT$yI" role="1dBWTz">
+                  <ref role="cht4Q" to="nok9:3V3CJZuJLdS" resolve="HappensAfterPair" />
+                </node>
               </node>
             </node>
           </node>

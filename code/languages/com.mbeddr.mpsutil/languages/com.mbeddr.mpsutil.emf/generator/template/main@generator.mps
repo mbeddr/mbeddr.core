@@ -6,8 +6,8 @@
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -15,12 +15,12 @@
     <import index="mwn6" ref="9e3f6ddb-4034-47f7-acdd-634884e64759/r:c45fab0b-1678-4fc1-9187-107d1188f675(com.mbeddr.mpsutil.emf/com.mbeddr.mpsutil.emf.structure)" />
     <import index="tpce" ref="c72da2b9-7cce-4447-8389-f407dc1158b7/r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure/jetbrains.mps.lang.structure.structure)" />
     <import index="i551" ref="58436410-8239-4105-b947-336d2bc568a9/r:39c4d09b-30c2-4ae8-aed5-9a9409113e62(com.mbeddr.mpsutil.emf.rt/com.mbeddr.mpsutil.emf.rt.export)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="pt5l" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.project(MPS.Platform/jetbrains.mps.ide.project@java_stub)" />
-    <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
-    <import index="pdak" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.messages(MPS.Platform/jetbrains.mps.ide.messages@java_stub)" />
-    <import index="bq0a" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.messages(MPS.Core/jetbrains.mps.messages@java_stub)" />
-    <import index="iiw6" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.components(MPS.IDEA/com.intellij.openapi.components@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="57ty" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.messages(MPS.Platform/)" />
+    <import index="et5u" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.messages(MPS.Core/)" />
+    <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" />
     <import index="fewi" ref="9e3f6ddb-4034-47f7-acdd-634884e64759/r:1161bb94-0c8e-46c5-afa4-cd12b23a4d71(com.mbeddr.mpsutil.emf/com.mbeddr.mpsutil.emf.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -317,23 +317,23 @@
               <node concept="3cpWsn" id="7P35o146y1d" role="3cpWs9">
                 <property role="TrG5h" value="t" />
                 <node concept="3uibUv" id="7P35o146y1e" role="1tU5fm">
-                  <ref role="3uigEE" to="pdak:~MessagesViewTool" resolve="MessagesViewTool" />
+                  <ref role="3uigEE" to="57ty:~MessagesViewTool" resolve="MessagesViewTool" />
                 </node>
                 <node concept="2OqwBi" id="7P35o146y1f" role="33vP2m">
                   <node concept="2YIFZM" id="31$MBjcYaqu" role="2Oq$k0">
-                    <ref role="1Pybhc" to="pt5l:~ProjectHelper" resolve="ProjectHelper" />
-                    <ref role="37wK5l" to="pt5l:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
+                    <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+                    <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
                     <node concept="2OqwBi" id="31$MBjcYaqv" role="37wK5m">
                       <node concept="1Q79dO" id="31$MBjcYaqw" role="2Oq$k0" />
                       <node concept="liA8E" id="31$MBjcYaqx" role="2OqNvi">
-                        <ref role="37wK5l" to="cu2c:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
+                        <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
                       </node>
                     </node>
                   </node>
                   <node concept="liA8E" id="7P35o146y1l" role="2OqNvi">
-                    <ref role="37wK5l" to="iiw6:~ComponentManager.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
+                    <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
                     <node concept="3VsKOn" id="7P35o146y1m" role="37wK5m">
-                      <ref role="3VsUkX" to="pdak:~MessagesViewTool" resolve="MessagesViewTool" />
+                      <ref role="3VsUkX" to="57ty:~MessagesViewTool" resolve="MessagesViewTool" />
                     </node>
                   </node>
                 </node>
@@ -384,13 +384,13 @@
                       <ref role="3cqZAo" node="7P35o146y1d" resolve="t" />
                     </node>
                     <node concept="liA8E" id="7P35o146y1F" role="2OqNvi">
-                      <ref role="37wK5l" to="pdak:~MessagesViewTool.add(jetbrains.mps.messages.IMessage):void" resolve="add" />
+                      <ref role="37wK5l" to="57ty:~MessagesViewTool.add(jetbrains.mps.messages.IMessage):void" resolve="add" />
                       <node concept="2ShNRf" id="7P35o146y1G" role="37wK5m">
                         <node concept="1pGfFk" id="7P35o146y1H" role="2ShVmc">
-                          <ref role="37wK5l" to="bq0a:~Message.&lt;init&gt;(jetbrains.mps.messages.MessageKind,java.lang.String)" resolve="Message" />
+                          <ref role="37wK5l" to="et5u:~Message.&lt;init&gt;(jetbrains.mps.messages.MessageKind,java.lang.String)" resolve="Message" />
                           <node concept="Rm8GO" id="1p0V4QBIF_y" role="37wK5m">
-                            <ref role="Rm8GQ" to="bq0a:~MessageKind.INFORMATION" resolve="INFORMATION" />
-                            <ref role="1Px2BO" to="bq0a:~MessageKind" resolve="MessageKind" />
+                            <ref role="Rm8GQ" to="et5u:~MessageKind.INFORMATION" resolve="INFORMATION" />
+                            <ref role="1Px2BO" to="et5u:~MessageKind" resolve="MessageKind" />
                           </node>
                           <node concept="3cpWs3" id="7P35o146y1J" role="37wK5m">
                             <node concept="37vLTw" id="2BrillriRdz" role="3uHU7w">
@@ -410,7 +410,7 @@
                 <node concept="3cpWsn" id="7P35o146y1N" role="TDEfY">
                   <property role="TrG5h" value="ex" />
                   <node concept="3uibUv" id="7P35o146y1O" role="1tU5fm">
-                    <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+                    <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
                   </node>
                 </node>
                 <node concept="3clFbS" id="7P35o146y1P" role="TDEfX">
@@ -420,20 +420,20 @@
                         <ref role="3cqZAo" node="7P35o146y1d" resolve="t" />
                       </node>
                       <node concept="liA8E" id="7P35o146y1T" role="2OqNvi">
-                        <ref role="37wK5l" to="pdak:~MessagesViewTool.add(jetbrains.mps.messages.IMessage):void" resolve="add" />
+                        <ref role="37wK5l" to="57ty:~MessagesViewTool.add(jetbrains.mps.messages.IMessage):void" resolve="add" />
                         <node concept="2ShNRf" id="7P35o146y1U" role="37wK5m">
                           <node concept="1pGfFk" id="7P35o146y1V" role="2ShVmc">
-                            <ref role="37wK5l" to="bq0a:~Message.&lt;init&gt;(jetbrains.mps.messages.MessageKind,java.lang.String)" resolve="Message" />
+                            <ref role="37wK5l" to="et5u:~Message.&lt;init&gt;(jetbrains.mps.messages.MessageKind,java.lang.String)" resolve="Message" />
                             <node concept="Rm8GO" id="1p0V4QBIF_z" role="37wK5m">
-                              <ref role="Rm8GQ" to="bq0a:~MessageKind.ERROR" resolve="ERROR" />
-                              <ref role="1Px2BO" to="bq0a:~MessageKind" resolve="MessageKind" />
+                              <ref role="Rm8GQ" to="et5u:~MessageKind.ERROR" resolve="ERROR" />
+                              <ref role="1Px2BO" to="et5u:~MessageKind" resolve="MessageKind" />
                             </node>
                             <node concept="2OqwBi" id="7P35o146y1X" role="37wK5m">
                               <node concept="37vLTw" id="2BrillriRg4" role="2Oq$k0">
                                 <ref role="3cqZAo" node="7P35o146y1N" resolve="ex" />
                               </node>
                               <node concept="liA8E" id="7P35o146y1Z" role="2OqNvi">
-                                <ref role="37wK5l" to="e2lb:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                                <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
                               </node>
                             </node>
                           </node>
@@ -559,23 +559,23 @@
               <node concept="3cpWsn" id="7P35o146AkM" role="3cpWs9">
                 <property role="TrG5h" value="t" />
                 <node concept="3uibUv" id="7P35o146AkN" role="1tU5fm">
-                  <ref role="3uigEE" to="pdak:~MessagesViewTool" resolve="MessagesViewTool" />
+                  <ref role="3uigEE" to="57ty:~MessagesViewTool" resolve="MessagesViewTool" />
                 </node>
                 <node concept="2OqwBi" id="7P35o146AkO" role="33vP2m">
                   <node concept="2YIFZM" id="31$MBjcYaqy" role="2Oq$k0">
-                    <ref role="1Pybhc" to="pt5l:~ProjectHelper" resolve="ProjectHelper" />
-                    <ref role="37wK5l" to="pt5l:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
+                    <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+                    <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
                     <node concept="2OqwBi" id="31$MBjcYaqz" role="37wK5m">
                       <node concept="1Q79dO" id="31$MBjcYaq$" role="2Oq$k0" />
                       <node concept="liA8E" id="31$MBjcYaq_" role="2OqNvi">
-                        <ref role="37wK5l" to="cu2c:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
+                        <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
                       </node>
                     </node>
                   </node>
                   <node concept="liA8E" id="7P35o146AkU" role="2OqNvi">
-                    <ref role="37wK5l" to="iiw6:~ComponentManager.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
+                    <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
                     <node concept="3VsKOn" id="7P35o146AkV" role="37wK5m">
-                      <ref role="3VsUkX" to="pdak:~MessagesViewTool" resolve="MessagesViewTool" />
+                      <ref role="3VsUkX" to="57ty:~MessagesViewTool" resolve="MessagesViewTool" />
                     </node>
                   </node>
                 </node>
@@ -635,13 +635,13 @@
                       <ref role="3cqZAo" node="7P35o146AkM" resolve="t" />
                     </node>
                     <node concept="liA8E" id="7P35o146Ald" role="2OqNvi">
-                      <ref role="37wK5l" to="pdak:~MessagesViewTool.add(jetbrains.mps.messages.IMessage):void" resolve="add" />
+                      <ref role="37wK5l" to="57ty:~MessagesViewTool.add(jetbrains.mps.messages.IMessage):void" resolve="add" />
                       <node concept="2ShNRf" id="7P35o146Ale" role="37wK5m">
                         <node concept="1pGfFk" id="7P35o146Alf" role="2ShVmc">
-                          <ref role="37wK5l" to="bq0a:~Message.&lt;init&gt;(jetbrains.mps.messages.MessageKind,java.lang.String)" resolve="Message" />
+                          <ref role="37wK5l" to="et5u:~Message.&lt;init&gt;(jetbrains.mps.messages.MessageKind,java.lang.String)" resolve="Message" />
                           <node concept="Rm8GO" id="1p0V4QBIF_$" role="37wK5m">
-                            <ref role="Rm8GQ" to="bq0a:~MessageKind.INFORMATION" resolve="INFORMATION" />
-                            <ref role="1Px2BO" to="bq0a:~MessageKind" resolve="MessageKind" />
+                            <ref role="Rm8GQ" to="et5u:~MessageKind.INFORMATION" resolve="INFORMATION" />
+                            <ref role="1Px2BO" to="et5u:~MessageKind" resolve="MessageKind" />
                           </node>
                           <node concept="3cpWs3" id="7P35o146Alh" role="37wK5m">
                             <node concept="37vLTw" id="2BrillriRe0" role="3uHU7w">
@@ -661,7 +661,7 @@
                 <node concept="3cpWsn" id="7P35o146All" role="TDEfY">
                   <property role="TrG5h" value="ex" />
                   <node concept="3uibUv" id="7P35o146Alm" role="1tU5fm">
-                    <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+                    <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
                   </node>
                 </node>
                 <node concept="3clFbS" id="7P35o146Aln" role="TDEfX">
@@ -671,7 +671,7 @@
                         <ref role="3cqZAo" node="7P35o146All" resolve="ex" />
                       </node>
                       <node concept="liA8E" id="1ECTgSRdadh" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
                       </node>
                     </node>
                   </node>
@@ -681,20 +681,20 @@
                         <ref role="3cqZAo" node="7P35o146AkM" resolve="t" />
                       </node>
                       <node concept="liA8E" id="7P35o146Alr" role="2OqNvi">
-                        <ref role="37wK5l" to="pdak:~MessagesViewTool.add(jetbrains.mps.messages.IMessage):void" resolve="add" />
+                        <ref role="37wK5l" to="57ty:~MessagesViewTool.add(jetbrains.mps.messages.IMessage):void" resolve="add" />
                         <node concept="2ShNRf" id="7P35o146Als" role="37wK5m">
                           <node concept="1pGfFk" id="7P35o146Alt" role="2ShVmc">
-                            <ref role="37wK5l" to="bq0a:~Message.&lt;init&gt;(jetbrains.mps.messages.MessageKind,java.lang.String)" resolve="Message" />
+                            <ref role="37wK5l" to="et5u:~Message.&lt;init&gt;(jetbrains.mps.messages.MessageKind,java.lang.String)" resolve="Message" />
                             <node concept="Rm8GO" id="1p0V4QBIF__" role="37wK5m">
-                              <ref role="Rm8GQ" to="bq0a:~MessageKind.ERROR" resolve="ERROR" />
-                              <ref role="1Px2BO" to="bq0a:~MessageKind" resolve="MessageKind" />
+                              <ref role="Rm8GQ" to="et5u:~MessageKind.ERROR" resolve="ERROR" />
+                              <ref role="1Px2BO" to="et5u:~MessageKind" resolve="MessageKind" />
                             </node>
                             <node concept="2OqwBi" id="7P35o146Alv" role="37wK5m">
                               <node concept="37vLTw" id="2BrillriRgP" role="2Oq$k0">
                                 <ref role="3cqZAo" node="7P35o146All" resolve="ex" />
                               </node>
                               <node concept="liA8E" id="7P35o146Alx" role="2OqNvi">
-                                <ref role="37wK5l" to="e2lb:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                                <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
                               </node>
                             </node>
                           </node>

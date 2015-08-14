@@ -3,15 +3,15 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
   </languages>
   <imports>
     <import index="v7ag" ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" />
     <import index="eup9" ref="r:ab391014-3e08-4918-9cc5-1c93e3a55c72(com.mbeddr.ext.components.behavior)" />
-    <import index="msyo" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.util(MPS.Core/jetbrains.mps.util@java_stub)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="p7vm" ref="r:28fa862e-f94d-4c39-bdf7-a4bdbc773888(com.mbeddr.ext.components.gen_nomw.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -406,7 +406,7 @@
                               <property role="TrG5h" value="pairs" />
                               <node concept="_YKpA" id="7z1efbQRE2q" role="1tU5fm">
                                 <node concept="3uibUv" id="7z1efbQRE2r" role="_ZDj9">
-                                  <ref role="3uigEE" to="msyo:~Pair" resolve="Pair" />
+                                  <ref role="3uigEE" to="18ew:~Pair" resolve="Pair" />
                                   <node concept="3Tqbb2" id="7z1efbQRE2s" role="11_B2D">
                                     <ref role="ehGHo" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
                                   </node>
@@ -451,7 +451,7 @@
                                           <ref role="2Gs0qQ" node="7z1efbQRE5d" resolve="p" />
                                         </node>
                                         <node concept="2OwXpG" id="7z1efbQRE4$" role="2OqNvi">
-                                          <ref role="2Oxat5" to="msyo:~Pair.o1" resolve="o1" />
+                                          <ref role="2Oxat5" to="18ew:~Pair.o1" resolve="o1" />
                                         </node>
                                       </node>
                                       <node concept="3TrEf2" id="7z1efbQRE4_" role="2OqNvi">
@@ -472,7 +472,7 @@
                                         <ref role="2Gs0qQ" node="7z1efbQRE5d" resolve="p" />
                                       </node>
                                       <node concept="2OwXpG" id="7z1efbQRE4G" role="2OqNvi">
-                                        <ref role="2Oxat5" to="msyo:~Pair.o2" resolve="o2" />
+                                        <ref role="2Oxat5" to="18ew:~Pair.o2" resolve="o2" />
                                       </node>
                                     </node>
                                   </node>
@@ -495,7 +495,7 @@
                               <node concept="3cpWsn" id="7OvXfhzPDL3" role="3cpWs9">
                                 <property role="TrG5h" value="pair" />
                                 <node concept="3uibUv" id="7OvXfhzPDL4" role="1tU5fm">
-                                  <ref role="3uigEE" to="msyo:~Pair" resolve="Pair" />
+                                  <ref role="3uigEE" to="18ew:~Pair" resolve="Pair" />
                                   <node concept="3Tqbb2" id="7OvXfhzPDL5" role="11_B2D">
                                     <ref role="ehGHo" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
                                   </node>
@@ -533,7 +533,7 @@
                                             <ref role="3cqZAo" node="7OvXfhzPDL3" resolve="pair" />
                                           </node>
                                           <node concept="2OwXpG" id="7OvXfhzPDLr" role="2OqNvi">
-                                            <ref role="2Oxat5" to="msyo:~Pair.o1" resolve="o1" />
+                                            <ref role="2Oxat5" to="18ew:~Pair.o1" resolve="o1" />
                                           </node>
                                         </node>
                                         <node concept="3TrEf2" id="7OvXfhzPDMq" role="2OqNvi">
@@ -554,7 +554,7 @@
                                           <ref role="3cqZAo" node="7OvXfhzPDL3" resolve="pair" />
                                         </node>
                                         <node concept="2OwXpG" id="7OvXfhzPDLK" role="2OqNvi">
-                                          <ref role="2Oxat5" to="msyo:~Pair.o2" resolve="o2" />
+                                          <ref role="2Oxat5" to="18ew:~Pair.o2" resolve="o2" />
                                         </node>
                                       </node>
                                     </node>

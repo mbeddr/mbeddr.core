@@ -5,19 +5,19 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
   </languages>
   <imports>
     <import index="rbq9" ref="r:e9339685-9249-4681-a8f5-318d0236a4a8(com.mbeddr.analyses.cbmc.rt.counterexample.raw)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="8ear" ref="r:80dc224f-cfbc-4d66-ab57-5e00bae3bc4a(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.builder)" />
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
     <import index="v7ag" ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" />
     <import index="wkuk" ref="r:14514173-071b-45bb-a3e8-f28222669bc6(com.mbeddr.analyses.cbmc.components.rt.counterexample.lifted.model)" />
     <import index="qeyn" ref="r:d5ce6636-5f1f-4da1-bbec-81328740259a(com.mbeddr.analyses.cbmc.core.rt.counterexample.lifted.builder)" />
     <import index="e22t" ref="r:c6d4c6ab-1599-4d6d-8a1f-943cb86651ff(com.mbeddr.analyses.cbmc.core.rt.counterexample.lifted.model)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="v0r9" ref="r:277b15fc-1383-4213-8385-5a16481fa36c(com.mbeddr.ext.components.test.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -382,7 +382,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="4arT0cntBGD" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
       <node concept="NWlO9" id="4arT0cntBGE" role="lGtFl">
         <property role="NWlVz" value="{@inheritDoc}" />
@@ -630,8 +630,8 @@
             </node>
             <node concept="3cpWs6" id="7UyXkgBtWil" role="3cqZAp">
               <node concept="2YIFZM" id="7UyXkgBu0JH" role="3cqZAk">
-                <ref role="37wK5l" to="k7g3:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
-                <ref role="1Pybhc" to="k7g3:~Collections" resolve="Collections" />
+                <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+                <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
                 <node concept="37vLTw" id="7UyXkgBu2fc" role="37wK5m">
                   <ref role="3cqZAo" node="7UyXkgBtEAD" resolve="res" />
                 </node>
@@ -704,8 +704,8 @@
             </node>
             <node concept="3cpWs6" id="7UyXkgBIm1e" role="3cqZAp">
               <node concept="2YIFZM" id="7UyXkgBIm1f" role="3cqZAk">
-                <ref role="1Pybhc" to="k7g3:~Collections" resolve="Collections" />
-                <ref role="37wK5l" to="k7g3:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+                <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+                <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
                 <node concept="37vLTw" id="7UyXkgBIm1g" role="37wK5m">
                   <ref role="3cqZAo" node="7UyXkgBIm16" resolve="res" />
                 </node>
@@ -785,7 +785,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="7UyXkgBM5Od" role="2OqNvi">
-                              <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                               <node concept="2OqwBi" id="7UyXkgBM5Oe" role="37wK5m">
                                 <node concept="37vLTw" id="7UyXkgBM5Of" role="2Oq$k0">
                                   <ref role="3cqZAo" node="4arT0cntBHz" resolve="rawAssig" />
@@ -834,8 +834,8 @@
             </node>
             <node concept="3cpWs6" id="7UyXkgBKxQj" role="3cqZAp">
               <node concept="2YIFZM" id="7UyXkgBKxQk" role="3cqZAk">
-                <ref role="37wK5l" to="k7g3:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
-                <ref role="1Pybhc" to="k7g3:~Collections" resolve="Collections" />
+                <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+                <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
                 <node concept="37vLTw" id="7UyXkgBKxQl" role="37wK5m">
                   <ref role="3cqZAo" node="7UyXkgBKxQb" resolve="res" />
                 </node>
@@ -851,8 +851,8 @@
         <node concept="3clFbH" id="7UyXkgBtJvA" role="3cqZAp" />
         <node concept="3cpWs6" id="4arT0cntBHs" role="3cqZAp">
           <node concept="2YIFZM" id="7UyXkgBmw4w" role="3cqZAk">
-            <ref role="37wK5l" to="k7g3:~Collections.emptyList():java.util.List" resolve="emptyList" />
-            <ref role="1Pybhc" to="k7g3:~Collections" resolve="Collections" />
+            <ref role="37wK5l" to="33ny:~Collections.emptyList():java.util.List" resolve="emptyList" />
+            <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
           </node>
         </node>
       </node>
@@ -1083,7 +1083,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="4arT0cntDXm" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
       <node concept="NWlO9" id="4arT0cntDXn" role="lGtFl">
         <property role="NWlVz" value="{@inheritDoc}" />
@@ -1426,7 +1426,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="1LaDVhWSNbE" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
+                        <ref role="37wK5l" to="wyt6:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
                         <node concept="3cpWs3" id="1LaDVhWSNbF" role="37wK5m">
                           <node concept="Xl_RD" id="1LaDVhWSNbG" role="3uHU7w">
                             <property role="Xl_RC" value="__" />
@@ -1623,7 +1623,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="4arT0cntGeF" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
       <node concept="NWlO9" id="4arT0cntGeG" role="lGtFl">
         <property role="NWlVz" value="{@inheritDoc}" />
@@ -1746,8 +1746,8 @@
         <node concept="3clFbH" id="4arT0cntGfu" role="3cqZAp" />
         <node concept="3cpWs6" id="4arT0cntGfv" role="3cqZAp">
           <node concept="2YIFZM" id="1aITAdxvgJF" role="3cqZAk">
-            <ref role="37wK5l" to="k7g3:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
-            <ref role="1Pybhc" to="k7g3:~Collections" resolve="Collections" />
+            <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+            <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
             <node concept="37vLTw" id="1aITAdxvgJG" role="37wK5m">
               <ref role="3cqZAo" node="4arT0cntGeL" resolve="res" />
             </node>

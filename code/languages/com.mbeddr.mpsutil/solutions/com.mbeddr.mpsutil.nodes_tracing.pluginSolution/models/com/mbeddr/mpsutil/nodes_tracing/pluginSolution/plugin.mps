@@ -4,14 +4,14 @@
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
   </languages>
   <imports>
-    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="7jff" ref="6ea97c27-74ad-4032-843d-7b4da446dfc9/r:9c151cdd-6b05-4d09-ad63-4b1c2ad6f9d3(com.mbeddr.mpsutil.nodes_tracing/com.mbeddr.mpsutil.nodes_tracing.structure)" />
-    <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="tprs" ref="019b622b-0aef-4dd3-86d0-4eef01f3f6bb/r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide/jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
@@ -170,7 +170,7 @@
           <node concept="3cpWsn" id="3LhOsKB9v3R" role="3cpWs9">
             <property role="TrG5h" value="originalInputNode" />
             <node concept="3uibUv" id="3grCczWPRlJ" role="1tU5fm">
-              <ref role="3uigEE" to="cu2c:~SNodePointer" resolve="SNodePointer" />
+              <ref role="3uigEE" to="w1kc:~SNodePointer" resolve="SNodePointer" />
             </node>
             <node concept="10QFUN" id="3grCczWPRBv" role="33vP2m">
               <node concept="2OqwBi" id="3LhOsKB9v3S" role="10QFUP">
@@ -183,14 +183,14 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="3LhOsKB9v3X" role="2OqNvi">
-                  <ref role="37wK5l" to="ec5l:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
                   <node concept="Xl_RD" id="3LhOsKB9v3Y" role="37wK5m">
                     <property role="Xl_RC" value="originalInputNode" />
                   </node>
                 </node>
               </node>
               <node concept="3uibUv" id="3grCczWPRBw" role="10QFUM">
-                <ref role="3uigEE" to="cu2c:~SNodePointer" resolve="SNodePointer" />
+                <ref role="3uigEE" to="w1kc:~SNodePointer" resolve="SNodePointer" />
               </node>
             </node>
           </node>
@@ -227,10 +227,10 @@
                     <ref role="3cqZAo" node="3LhOsKB9v3R" resolve="originalInputNode" />
                   </node>
                   <node concept="liA8E" id="3grCczWPScq" role="2OqNvi">
-                    <ref role="37wK5l" to="cu2c:~SNodePointer.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                    <ref role="37wK5l" to="w1kc:~SNodePointer.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
                     <node concept="2YIFZM" id="3grCczWPThm" role="37wK5m">
-                      <ref role="37wK5l" to="cu2c:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
-                      <ref role="1Pybhc" to="cu2c:~MPSModuleRepository" resolve="MPSModuleRepository" />
+                      <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
+                      <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
                     </node>
                   </node>
                 </node>

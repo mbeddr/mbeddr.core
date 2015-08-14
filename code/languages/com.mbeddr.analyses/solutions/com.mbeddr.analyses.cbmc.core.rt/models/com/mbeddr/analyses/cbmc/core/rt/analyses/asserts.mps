@@ -4,23 +4,23 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
   </languages>
   <imports>
     <import index="xiaw" ref="r:0cb4b184-9d83-4ed6-8dd4-842bbe536e91(com.mbeddr.analyses.cbmc.rt.analyses.claims)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tzyt" ref="r:b35b0dd8-a38e-4607-ba37-cc8f7410b705(com.mbeddr.analyses.cbmc.rt.run)" />
     <import index="ood5" ref="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" />
     <import index="rbq9" ref="r:e9339685-9249-4681-a8f5-318d0236a4a8(com.mbeddr.analyses.cbmc.rt.counterexample.raw)" />
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="8ear" ref="r:80dc224f-cfbc-4d66-ab57-5e00bae3bc4a(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.builder)" />
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="th2u" ref="r:0d1aaf3f-8f5d-43b9-be00-7a4293d0c172(com.mbeddr.analyses.cbmc.behavior)" />
-    <import index="fw3h" ref="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.progress(MPS.IDEA/com.intellij.openapi.progress@java_stub)" />
+    <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -248,11 +248,11 @@
             <node concept="3clFbF" id="42G5eOpSOWi" role="3cqZAp">
               <node concept="2OqwBi" id="42G5eOpSOWj" role="3clFbG">
                 <node concept="10M0yZ" id="42G5eOpSOWk" role="2Oq$k0">
-                  <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                  <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                 </node>
                 <node concept="liA8E" id="42G5eOpSOWl" role="2OqNvi">
-                  <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                   <node concept="3cpWs3" id="42G5eOpSOWm" role="37wK5m">
                     <node concept="3cpWs3" id="42G5eOpSOWn" role="3uHU7B">
                       <node concept="Xl_RD" id="42G5eOpSOWo" role="3uHU7w">
@@ -267,7 +267,7 @@
                             <ref role="3VsUkX" node="3x0R1LJ5Cp2" resolve="AssertionsAnalyzer" />
                           </node>
                           <node concept="liA8E" id="42G5eOpSOWt" role="2OqNvi">
-                            <ref role="37wK5l" to="e2lb:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
+                            <ref role="37wK5l" to="wyt6:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
                           </node>
                         </node>
                       </node>
@@ -309,7 +309,7 @@
       <node concept="37vLTG" id="5uqRFp940GO" role="3clF46">
         <property role="TrG5h" value="pi" />
         <node concept="3uibUv" id="5uqRFp940Z7" role="1tU5fm">
-          <ref role="3uigEE" to="fw3h:~ProgressIndicator" resolve="ProgressIndicator" />
+          <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
         </node>
       </node>
       <node concept="3cqZAl" id="3x0R1LJ5Cpd" role="3clF45" />
@@ -386,7 +386,7 @@
               <ref role="3cqZAo" node="3x0R1LJ5Cpv" resolve="userFriendlyMessage" />
             </node>
             <node concept="liA8E" id="6kQ$1ab4AiX" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+              <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
               <node concept="37vLTw" id="6kQ$1ab4AmQ" role="37wK5m">
                 <ref role="3cqZAo" to="xiaw:6kQ$1ab4gdy" resolve="NO_VC_FOUND_MESSAGE" />
               </node>
@@ -505,7 +505,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="3x0R1LJ5CpK" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LJ5CpL" role="jymVt" />
@@ -592,7 +592,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="3x0R1LJ5Cqk" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LJ5Cql" role="jymVt" />
@@ -611,7 +611,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="4fvA6ORD2co" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
       <node concept="NWlO9" id="4fvA6ORD3IT" role="lGtFl">
         <property role="NWlVz" value="{@inheritDoc}" />
@@ -908,11 +908,11 @@
             <node concept="3clFbF" id="42G5eOpPO5w" role="3cqZAp">
               <node concept="2OqwBi" id="42G5eOpPO5s" role="3clFbG">
                 <node concept="10M0yZ" id="42G5eOpPO5t" role="2Oq$k0">
-                  <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                  <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                 </node>
                 <node concept="liA8E" id="42G5eOpPO5u" role="2OqNvi">
-                  <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                   <node concept="3cpWs3" id="42G5eOpQCeL" role="37wK5m">
                     <node concept="3cpWs3" id="42G5eOpQHc2" role="3uHU7B">
                       <node concept="Xl_RD" id="42G5eOpQCEx" role="3uHU7w">
@@ -927,7 +927,7 @@
                             <ref role="3VsUkX" node="3x0R1LJ5CqZ" resolve="CBMCAssertResultBuilder" />
                           </node>
                           <node concept="liA8E" id="7oOvYOv4ogd" role="2OqNvi">
-                            <ref role="37wK5l" to="e2lb:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
+                            <ref role="37wK5l" to="wyt6:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
                           </node>
                         </node>
                       </node>
@@ -1106,7 +1106,7 @@
       <node concept="37vLTG" id="5uqRFp941kG" role="3clF46">
         <property role="TrG5h" value="pi" />
         <node concept="3uibUv" id="5uqRFp941kF" role="1tU5fm">
-          <ref role="3uigEE" to="fw3h:~ProgressIndicator" resolve="ProgressIndicator" />
+          <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
         </node>
       </node>
       <node concept="3uibUv" id="3_HSwtcW_zT" role="3clF45">

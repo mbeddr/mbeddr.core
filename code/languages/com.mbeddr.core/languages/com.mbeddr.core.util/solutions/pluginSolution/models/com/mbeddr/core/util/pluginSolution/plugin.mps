@@ -3,11 +3,11 @@
   <persistence version="9" />
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -17,10 +17,10 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="5xh9" ref="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.actions(MPS.Platform/jetbrains.mps.ide.actions@java_stub)" />
+    <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="u42p" ref="r:986938bb-bdb1-4307-b062-e4647a4db0f9(jetbrains.mps.ide.platform.refactoring)" />
-    <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
-    <import index="nx1" ref="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.actionSystem(MPS.IDEA/com.intellij.openapi.actionSystem@java_stub)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
   </imports>
   <registry>
@@ -283,7 +283,7 @@
           <node concept="3cpWsn" id="1ptFCtLqsyt" role="3cpWs9">
             <property role="TrG5h" value="model" />
             <node concept="3uibUv" id="1ptFCtLqsyu" role="1tU5fm">
-              <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
             </node>
             <node concept="2OqwBi" id="1ptFCtLqsyw" role="33vP2m">
               <node concept="2WthIp" id="1ptFCtLqsyx" role="2Oq$k0" />
@@ -296,7 +296,7 @@
         <node concept="3clFbF" id="1ptFCtLqsy$" role="3cqZAp">
           <node concept="2OqwBi" id="5Hxjapwed0n" role="3clFbG">
             <node concept="liA8E" id="5Hxjapwed0o" role="2OqNvi">
-              <ref role="37wK5l" to="ec5l:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="addRootNode" />
+              <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="addRootNode" />
               <node concept="3cpWsa" id="5Hxjapwed0p" role="37wK5m">
                 <ref role="3cqZAo" node="1ptFCtLqsw7" resolve="immo" />
               </node>
@@ -309,7 +309,7 @@
         <node concept="3clFbF" id="1ptFCtLqsyI" role="3cqZAp">
           <node concept="2OqwBi" id="5Hxjapwed0f" role="3clFbG">
             <node concept="liA8E" id="5Hxjapwed0g" role="2OqNvi">
-              <ref role="37wK5l" to="ec5l:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="addRootNode" />
+              <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="addRootNode" />
               <node concept="3cpWsa" id="5Hxjapwed0h" role="37wK5m">
                 <ref role="3cqZAo" node="1ptFCtLqsy8" resolve="bc" />
               </node>
@@ -547,7 +547,7 @@
     </node>
     <node concept="1DS2jV" id="1ptFCtLqsyN" role="1NuT2Z">
       <property role="TrG5h" value="modelDesc" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
       <node concept="1oajcY" id="2kEENJt$yqJ" role="1oa70y" />
     </node>
   </node>
@@ -698,7 +698,7 @@
           <node concept="3cpWsn" id="3eWkbyCTBCD" role="3cpWs9">
             <property role="TrG5h" value="model" />
             <node concept="3uibUv" id="3eWkbyCTBCE" role="1tU5fm">
-              <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
             </node>
             <node concept="2OqwBi" id="3eWkbyCTBCG" role="33vP2m">
               <node concept="2WthIp" id="3eWkbyCTBCH" role="2Oq$k0" />
@@ -711,7 +711,7 @@
         <node concept="3clFbF" id="3eWkbyCTBCK" role="3cqZAp">
           <node concept="2OqwBi" id="5Hxjapwed0j" role="3clFbG">
             <node concept="liA8E" id="5Hxjapwed0k" role="2OqNvi">
-              <ref role="37wK5l" to="ec5l:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="addRootNode" />
+              <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="addRootNode" />
               <node concept="3cpWsa" id="5Hxjapwed0l" role="37wK5m">
                 <ref role="3cqZAo" node="3eWkbyCTBC6" resolve="immo" />
               </node>
@@ -724,7 +724,7 @@
         <node concept="3clFbF" id="3eWkbyCTBCU" role="3cqZAp">
           <node concept="2OqwBi" id="5Hxjapwed07" role="3clFbG">
             <node concept="liA8E" id="5Hxjapwed08" role="2OqNvi">
-              <ref role="37wK5l" to="ec5l:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="addRootNode" />
+              <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="addRootNode" />
               <node concept="37vLTw" id="5HxjapwgHk7" role="37wK5m">
                 <ref role="3cqZAo" node="3eWkbyCTBCr" resolve="bc" />
               </node>
@@ -739,12 +739,12 @@
     </node>
     <node concept="1DS2jV" id="78Ts1skpkAN" role="1NuT2Z">
       <property role="TrG5h" value="proj" />
-      <ref role="1DUlNI" to="nx1:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="2kEENJt$yqL" role="1oa70y" />
     </node>
     <node concept="1DS2jV" id="78Ts1skpdzM" role="1NuT2Z">
       <property role="TrG5h" value="modelDesc" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
       <node concept="1oajcY" id="2kEENJt$yqM" role="1oa70y" />
     </node>
   </node>

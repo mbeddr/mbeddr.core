@@ -6,10 +6,10 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
   </languages>
   <imports>
     <import index="sxyo" ref="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" />
@@ -17,7 +17,7 @@
     <import index="sv0f" ref="r:28cd7e84-4784-462c-804c-1dae92004ef9(com.mbeddr.mpsutil.multilingual.common.languageRegistry)" />
     <import index="2oxe" ref="r:98f14745-cf68-416b-838b-49199f589585(test.ts.mpsutil.multilingual.common.otherModel@tests)" />
     <import index="8o67" ref="r:aad0b82d-5e70-4b30-977b-7c105a4d4452(com.mbeddr.mpsutil.multilingual.common.typesystem)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1038,8 +1038,8 @@
       <node concept="3clFbS" id="7NARB4mNEzk" role="3clF47">
         <node concept="3vlDli" id="7NARB4mNGS_" role="3cqZAp">
           <node concept="10M0yZ" id="7NARB4mP6k4" role="3tpDZB">
-            <ref role="1PxDUh" to="k7g3:~Locale" resolve="Locale" />
-            <ref role="3cqZAo" to="k7g3:~Locale.US" resolve="US" />
+            <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
+            <ref role="3cqZAo" to="33ny:~Locale.US" resolve="US" />
           </node>
           <node concept="2YIFZM" id="7NARB4mPfI0" role="3tpDZA">
             <ref role="37wK5l" to="fw73:5Q1XZgMGGFS" resolve="findLocale" />
@@ -1054,8 +1054,8 @@
         </node>
         <node concept="3vlDli" id="7NARB4mPfNQ" role="3cqZAp">
           <node concept="10M0yZ" id="7NARB4mPfNR" role="3tpDZB">
-            <ref role="1PxDUh" to="k7g3:~Locale" resolve="Locale" />
-            <ref role="3cqZAo" to="k7g3:~Locale.UK" resolve="UK" />
+            <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
+            <ref role="3cqZAo" to="33ny:~Locale.UK" resolve="UK" />
           </node>
           <node concept="2YIFZM" id="7NARB4mPfNS" role="3tpDZA">
             <ref role="37wK5l" to="fw73:5Q1XZgMGGFS" resolve="findLocale" />
@@ -1076,8 +1076,8 @@
       <node concept="3clFbS" id="7NARB4mPg90" role="3clF47">
         <node concept="3vlDli" id="7NARB4mPgaW" role="3cqZAp">
           <node concept="10M0yZ" id="7NARB4mPgb2" role="3tpDZB">
-            <ref role="1PxDUh" to="k7g3:~Locale" resolve="Locale" />
-            <ref role="3cqZAo" to="k7g3:~Locale.ENGLISH" resolve="ENGLISH" />
+            <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
+            <ref role="3cqZAo" to="33ny:~Locale.ENGLISH" resolve="ENGLISH" />
           </node>
           <node concept="2YIFZM" id="7NARB4mPgbE" role="3tpDZA">
             <ref role="37wK5l" to="fw73:5Q1XZgMGGFS" resolve="findLocale" />

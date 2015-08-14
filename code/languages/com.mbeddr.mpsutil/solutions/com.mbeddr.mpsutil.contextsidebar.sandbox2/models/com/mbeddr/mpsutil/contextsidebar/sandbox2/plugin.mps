@@ -5,22 +5,22 @@
     <use id="b1deed8c-68b2-424a-806a-664b47188e43" name="com.mbeddr.mpsutil.contextsidebar" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="442d3b7d-fe4a-4293-a7c1-6744d440ecaa" name="com.mbeddr.mpsutil.richstring" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
   </languages>
   <imports>
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="dbrf" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="fiq3" ref="r:c646ca3b-023e-43e6-8788-1532b0d07764(com.mbeddr.mpsutil.contextsidebar.runtime)" />
-    <import index="v2t1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons/org.apache.commons.lang3@java_stub)" />
+    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="xike" ref="r:698ffceb-aefa-44db-b54b-bfe095c94cee(com.mbeddr.mpsutil.contextsidebar.runtime.plugin)" />
   </imports>
@@ -83,7 +83,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -227,11 +227,11 @@
           <node concept="3clFbF" id="5T3_DgSVlrO" role="3cqZAp">
             <node concept="2OqwBi" id="5T3_DgSVlrP" role="3clFbG">
               <node concept="10M0yZ" id="5T3_DgSVlrQ" role="2Oq$k0">
-                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="5T3_DgSVlrR" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                 <node concept="3cpWs3" id="5T3_DgSVlrS" role="37wK5m">
                   <node concept="2OqwBi" id="5T3_DgSVlrT" role="3uHU7w">
                     <node concept="1F3lnG" id="5T3_DgSVlrU" role="2Oq$k0" />
@@ -286,8 +286,8 @@
                 </node>
               </node>
               <node concept="2YIFZM" id="5T3_DgSVlsd" role="37vLTx">
-                <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-                <ref role="37wK5l" to="v2t1:~StringUtils.swapCase(java.lang.String):java.lang.String" resolve="swapCase" />
+                <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+                <ref role="37wK5l" to="btm1:~StringUtils.swapCase(java.lang.String):java.lang.String" resolve="swapCase" />
                 <node concept="2OqwBi" id="5T3_DgSVlse" role="37wK5m">
                   <node concept="37vLTw" id="5T3_DgSVlsf" role="2Oq$k0">
                     <ref role="3cqZAo" node="5T3_DgSVls2" resolve="node" />
@@ -311,11 +311,11 @@
               <node concept="3clFbF" id="5T3_DgSVlsm" role="3SKWNf">
                 <node concept="2OqwBi" id="5T3_DgSVlsn" role="3clFbG">
                   <node concept="10M0yZ" id="5T3_DgSVlso" role="2Oq$k0">
-                    <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                    <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                   </node>
                   <node concept="liA8E" id="5T3_DgSVlsp" role="2OqNvi">
-                    <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                     <node concept="3cpWs3" id="5T3_DgSVlsq" role="37wK5m">
                       <node concept="1F3lnG" id="5T3_DgSVlsr" role="3uHU7w" />
                       <node concept="Xl_RD" id="5T3_DgSVlss" role="3uHU7B">
@@ -345,7 +345,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="5T3_DgSVlsB" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                  <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                   <node concept="Xl_RD" id="5T3_DgSVlsC" role="37wK5m">
                     <property role="Xl_RC" value="N" />
                   </node>
@@ -369,11 +369,11 @@
           <node concept="3clFbF" id="5T3_DgSVlsK" role="3cqZAp">
             <node concept="2OqwBi" id="5T3_DgSVlsL" role="3clFbG">
               <node concept="10M0yZ" id="5T3_DgSVlsM" role="2Oq$k0">
-                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="5T3_DgSVlsN" role="2OqNvi">
-                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                 <node concept="3cpWs3" id="5T3_DgSVlsO" role="37wK5m">
                   <node concept="2OqwBi" id="5T3_DgSVlsP" role="3uHU7w">
                     <node concept="1F3lnG" id="5T3_DgSVlsQ" role="2Oq$k0" />
@@ -402,7 +402,7 @@
         <node concept="3clFbF" id="5T3_DgSVlsY" role="3cqZAp">
           <node concept="2ShNRf" id="5T3_DgSVlsZ" role="3clFbG">
             <node concept="1pGfFk" id="5T3_DgSVlt0" role="2ShVmc">
-              <ref role="37wK5l" to="dbrf:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+              <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
               <node concept="Xl_RD" id="5T3_DgSVlt1" role="37wK5m">
                 <property role="Xl_RC" value="very special text" />
               </node>
@@ -527,8 +527,8 @@
         <node concept="3cpWs6" id="4AhMPNYvcM$" role="3cqZAp">
           <node concept="22lmx$" id="4AhMPNYvcMA" role="3cqZAk">
             <node concept="2YIFZM" id="i7Uxc2x79E" role="3uHU7B">
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="v2t1:~StringUtils.isNotBlank(java.lang.CharSequence):boolean" resolve="isNotBlank" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.isNotBlank(java.lang.CharSequence):boolean" resolve="isNotBlank" />
               <node concept="2OqwBi" id="4AhMPNYvcMH" role="37wK5m">
                 <node concept="37vLTw" id="4AhMPNYvcMI" role="2Oq$k0">
                   <ref role="3cqZAo" node="4AhMPNYvbVw" resolve="currentConcept" />
@@ -539,8 +539,8 @@
               </node>
             </node>
             <node concept="2YIFZM" id="i7Uxc2x7QS" role="3uHU7w">
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="v2t1:~StringUtils.isNotBlank(java.lang.CharSequence):boolean" resolve="isNotBlank" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.isNotBlank(java.lang.CharSequence):boolean" resolve="isNotBlank" />
               <node concept="2OqwBi" id="i7Uxc2x7QT" role="37wK5m">
                 <node concept="37vLTw" id="i7Uxc2x7QU" role="2Oq$k0">
                   <ref role="3cqZAo" node="4AhMPNYvbVw" resolve="currentConcept" />
@@ -614,8 +614,8 @@
                 </node>
               </node>
               <node concept="2YIFZM" id="i7Uxc2z_xe" role="3K4Cdx">
-                <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-                <ref role="37wK5l" to="v2t1:~StringUtils.isNotBlank(java.lang.CharSequence):boolean" resolve="isNotBlank" />
+                <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+                <ref role="37wK5l" to="btm1:~StringUtils.isNotBlank(java.lang.CharSequence):boolean" resolve="isNotBlank" />
                 <node concept="2OqwBi" id="i7Uxc2z_xf" role="37wK5m">
                   <node concept="37vLTw" id="i7Uxc2z_xg" role="2Oq$k0">
                     <ref role="3cqZAo" node="4AhMPNYrtYD" resolve="currentConcept" />
@@ -636,8 +636,8 @@
               </node>
               <node concept="EGPMe" id="i7Uxc2D6wf" role="19SJt6">
                 <node concept="2YIFZM" id="i7Uxc2D6VI" role="EGPMd">
-                  <ref role="37wK5l" to="v2t1:~StringEscapeUtils.escapeXml10(java.lang.String):java.lang.String" resolve="escapeXml10" />
-                  <ref role="1Pybhc" to="v2t1:~StringEscapeUtils" resolve="StringEscapeUtils" />
+                  <ref role="37wK5l" to="btm1:~StringEscapeUtils.escapeXml10(java.lang.String):java.lang.String" resolve="escapeXml10" />
+                  <ref role="1Pybhc" to="btm1:~StringEscapeUtils" resolve="StringEscapeUtils" />
                   <node concept="2OqwBi" id="i7Uxc2D6Yl" role="37wK5m">
                     <node concept="37vLTw" id="i7Uxc2D6VX" role="2Oq$k0">
                       <ref role="3cqZAo" node="4AhMPNYrtYD" resolve="currentConcept" />
@@ -653,8 +653,8 @@
               </node>
               <node concept="EGPMe" id="i7Uxc2D6TD" role="19SJt6">
                 <node concept="2YIFZM" id="i7Uxc2D6UR" role="EGPMd">
-                  <ref role="37wK5l" to="v2t1:~StringEscapeUtils.escapeXml10(java.lang.String):java.lang.String" resolve="escapeXml10" />
-                  <ref role="1Pybhc" to="v2t1:~StringEscapeUtils" resolve="StringEscapeUtils" />
+                  <ref role="37wK5l" to="btm1:~StringEscapeUtils.escapeXml10(java.lang.String):java.lang.String" resolve="escapeXml10" />
+                  <ref role="1Pybhc" to="btm1:~StringEscapeUtils" resolve="StringEscapeUtils" />
                   <node concept="37vLTw" id="i7Uxc2D6V6" role="37wK5m">
                     <ref role="3cqZAo" node="i7Uxc2z_x6" resolve="result" />
                   </node>
