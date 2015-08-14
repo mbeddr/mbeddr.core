@@ -9,6 +9,7 @@
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.ext.statemachines/statemachines.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.physicalunits/physicalunits.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.statemachinesInComponents/statemachinesInComponents.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.concurrency/com.mbeddr.ext.components.concurrency.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.embedded/com.mbeddr.ext.components.embedded.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.gen_nomw/gen_nomw.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.mock/mock.mpl" folder="components" />
@@ -29,6 +30,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.statemachines/statemachines.mpl" folder="statemachine" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.units/com.mbeddr.ext.units.mpl" folder="units" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.parallel.primitives.runtime/com.mbeddr.ext.parallel.primitives.runtime.msd" folder="parallel.primitives" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.ex.ext.components.concurrency/test.ex.ext.components.concurrency.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.comp_mocking/comp_mocking.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components.sri/sri.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components/components.msd" folder="tests.comp" />
