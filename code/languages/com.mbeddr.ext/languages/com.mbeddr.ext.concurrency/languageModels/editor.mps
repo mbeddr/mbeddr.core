@@ -1256,5 +1256,19 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="7YbLqLwvDew">
+    <ref role="1XX52x" to="5wll:7YbLqLwvqpx" resolve="YieldStatement" />
+    <node concept="3EZMnI" id="7YbLqLwvI3K" role="2wV5jI">
+      <node concept="l2Vlx" id="7YbLqLwvI3L" role="2iSdaV" />
+      <node concept="3F0ifn" id="7YbLqLwvHXx" role="3EZMnx">
+        <property role="3F0ifm" value="yield" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="3F0ifn" id="7YbLqLwvI3Z" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dhkRt" resolve="Semi" />
+      </node>
+    </node>
+  </node>
 </model>
 

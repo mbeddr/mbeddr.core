@@ -664,6 +664,32 @@
         <ref role="v9R2y" node="6ndohCVaZwC" resolve="weave_GlobalVariableDeclaration" />
       </node>
     </node>
+    <node concept="3aamgX" id="7YbLqLw$Dkm" role="3acgRq">
+      <ref role="30HIoZ" to="5wll:7YbLqLwvqpx" resolve="YieldStatement" />
+      <node concept="1Koe21" id="7YbLqLw$MBh" role="1lVwrX">
+        <node concept="N3F5e" id="7YbLqLw$MBn" role="1Koe22">
+          <property role="TrG5h" value="Dummy" />
+          <node concept="3GEVxB" id="7YbLqLw$MBq" role="2OODSX">
+            <ref role="3GEb4d" to="bicj:2ajpxDX26DR" resolve="PThreadsUtil" />
+          </node>
+          <node concept="N3Fnx" id="7YbLqLw_06B" role="N3F5h">
+            <property role="TrG5h" value="dummy" />
+            <node concept="19Rifw" id="7YbLqLw_06C" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+            <node concept="3XIRFW" id="7YbLqLw_06D" role="3XIRFX">
+              <node concept="1_9egQ" id="7YbLqLw_07r" role="3XIRFZ">
+                <node concept="3O_q_g" id="7YbLqLw_07p" role="1_9egR">
+                  <ref role="3O_q_h" to="bicj:7YbLqLw$QCv" resolve="yieldTask" />
+                </node>
+                <node concept="raruj" id="7YbLqLw_3rK" role="lGtFl" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="6u_410T$xlw" role="3acgRq">
       <ref role="30HIoZ" to="5wll:6u_410TuQru" resolve="ResourceDeclaration" />
       <node concept="1Koe21" id="6u_410T$DMS" role="1lVwrX">

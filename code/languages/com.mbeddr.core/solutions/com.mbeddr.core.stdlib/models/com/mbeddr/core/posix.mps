@@ -2437,6 +2437,18 @@
         <property role="2c7vTL" value="false" />
       </node>
     </node>
+    <node concept="N3Fnw" id="7YbLqLw$ViU" role="N3F5h">
+      <property role="TrG5h" value="pthread_yield" />
+      <property role="2OOxQR" value="true" />
+      <property role="3owap8" value="false" />
+      <node concept="19Rifw" id="7YbLqLw$ViV" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7YbLqLw$UBV" role="N3F5h">
+      <property role="TrG5h" value="empty_1439557939035_4" />
+    </node>
     <node concept="3GEVxB" id="5ZBezCNecom" role="2OODSX">
       <ref role="3GEb4d" node="5ZBezCNdZIN" resolve="pthreadtypes" />
     </node>

@@ -181,6 +181,7 @@
         <child id="5024012801614658197" name="queue" index="mYlIj" />
       </concept>
       <concept id="5024012801615028168" name="com.mbeddr.ext.concurrency.structure.ConcurrentQueueValExpr" flags="ng" index="mZVVe" />
+      <concept id="9190656808723523169" name="com.mbeddr.ext.concurrency.structure.YieldStatement" flags="ng" index="vXAfd" />
       <concept id="852765151729684538" name="com.mbeddr.ext.concurrency.structure.TaskVarRef" flags="ng" index="yuV5p">
         <reference id="852765151729704338" name="var" index="yuZNL" />
       </concept>
@@ -1378,6 +1379,28 @@
         </node>
         <node concept="7CXmI" id="6u_410TQ5hT" role="lGtFl">
           <node concept="7OXhh" id="6u_410TQ5hU" role="7EUXB" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="7YbLqLwCw_w">
+    <property role="TrG5h" value="HYield" />
+    <node concept="1qefOq" id="7YbLqLwCw_x" role="1SKRRt">
+      <node concept="N3F5e" id="7YbLqLwCw_y" role="1qenE9">
+        <property role="TrG5h" value="Dummy" />
+        <node concept="1iAVhs" id="7YbLqLwCx5U" role="N3F5h">
+          <property role="2OOxQR" value="true" />
+          <property role="TrG5h" value="dummy" />
+          <node concept="3JZT9E" id="7YbLqLwCx5V" role="3JZT99" />
+          <node concept="3XIRFW" id="7YbLqLwCx5X" role="1iABvq">
+            <node concept="vXAfd" id="7YbLqLwCx64" role="3XIRFZ" />
+          </node>
+        </node>
+        <node concept="2NXPZ9" id="7YbLqLwCx67" role="N3F5h">
+          <property role="TrG5h" value="empty_1439558153099_5" />
+        </node>
+        <node concept="7CXmI" id="7YbLqLwCwA3" role="lGtFl">
+          <node concept="7OXhh" id="7YbLqLwCwA4" role="7EUXB" />
         </node>
       </node>
     </node>
