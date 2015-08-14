@@ -179,5 +179,9 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="XYEPTiqD4w">
+    <property role="3GE5qa" value="verification_case" />
+    <ref role="1M2myG" to="48a0:XYEPTiekej" resolve="ChangeFrequency" />
+  </node>
 </model>
 

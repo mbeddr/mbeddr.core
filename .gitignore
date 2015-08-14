@@ -131,6 +131,9 @@ code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/debuggableTe
 code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/debuggableTest
 code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/
 
+# other test resources
+code/languages/com.mbeddr.mpsutil/tests/test.com.mbeddr.mpsutil.iconchar/icons/
+
 #Some local script (not to be shared)
 code/languages/offline.sh
 

@@ -138,6 +138,10 @@
     <property role="TrG5h" value="DeadCodeAnalysis" />
     <property role="34LRSv" value="Dead Code Analysis" />
     <ref role="1TJDcQ" to="q5q6:7Bqs07i8Hdj" resolve="CProverBasedMbeddrAnalysis" />
+    <node concept="1TJgyi" id="5zPqP2r2gS_" role="1TKVEl">
+      <property role="TrG5h" value="provideTracesToReachableCode" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
 </model>
 

@@ -9,6 +9,7 @@
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
   </imports>
@@ -174,6 +175,27 @@
     <node concept="1TJgyi" id="HiHa_$oxUn" role="1TKVEl">
       <property role="TrG5h" value="stepsNumber" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="XYEPTiekej">
+    <property role="3GE5qa" value="verification_case" />
+    <property role="34LRSv" value="change_frequency" />
+    <property role="TrG5h" value="ChangeFrequency" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="XYEPTiep_x" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="varRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
+    </node>
+    <node concept="1TJgyj" id="XYEPTignne" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="range" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="k146:5u7uvg8qRyq" resolve="RangeExpression" />
+    </node>
+    <node concept="PrWs8" id="XYEPTiqOYt" role="PzmwI">
+      <ref role="PrY4T" to="k146:6viY8n0hYkZ" resolve="IRangeContext" />
     </node>
   </node>
 </model>
