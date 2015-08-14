@@ -865,6 +865,12 @@
             <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
           </node>
         </node>
+        <node concept="1SiIV0" id="243vOuatkNV" role="3bR37C">
+          <node concept="3bR9La" id="243vOuatkNW" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1WGJoq9Wd0d" resolve="jetbrains.mps.build.workflow.preset" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="398rNT" id="23LEVbRX3hP" role="1l3spd">
