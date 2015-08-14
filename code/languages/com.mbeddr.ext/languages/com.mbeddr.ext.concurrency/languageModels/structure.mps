@@ -690,5 +690,13 @@
       </node>
     </node>
   </node>
+  <node concept="1TIwiD" id="7YbLqLwvqpx">
+    <property role="TrG5h" value="YieldStatement" />
+    <property role="34LRSv" value="yield" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="PrWs8" id="7YbLqLwvKJT" role="PzmwI">
+      <ref role="PrY4T" node="vg5qBCdJwB" resolve="ITaskSpecific" />
+    </node>
+  </node>
 </model>
 
