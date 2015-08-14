@@ -11,7 +11,9 @@
     <import index="izv8" ref="r:0f1bbf76-e39a-467c-9afd-098f51838591(com.mbeddr.ext.concurrency.c.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
+    <import index="qozy" ref="r:38fcb48b-92c2-41af-9039-dc087bb8b822(com.mbeddr.ext.concurrency.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -40,9 +42,6 @@
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
-      </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
@@ -207,9 +206,6 @@
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
-      </concept>
-      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
-        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -1571,16 +1567,27 @@
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="1TgsdXPYYMi" role="3clF47">
         <node concept="3clFbF" id="1TgsdXPZ0f0" role="3cqZAp">
-          <node concept="3cpWs3" id="1TgsdXPZ1x$" role="3clFbG">
-            <node concept="Xl_RD" id="1TgsdXPZ1zz" role="3uHU7w">
-              <property role="Xl_RC" value="_event" />
-            </node>
-            <node concept="2OqwBi" id="1TgsdXPZ0na" role="3uHU7B">
-              <node concept="37vLTw" id="1TgsdXPZ0eZ" role="2Oq$k0">
-                <ref role="3cqZAo" node="1TgsdXPZ0aI" resolve="queue" />
+          <node concept="2OqwBi" id="2ZMK30RWMMJ" role="3clFbG">
+            <node concept="2OqwBi" id="2ZMK30RWM0_" role="2Oq$k0">
+              <node concept="1PxgMI" id="2ZMK30RWLP$" role="2Oq$k0">
+                <ref role="1PxNhF" to="5wll:1UML6duC7CN" resolve="ConcurrentQueueType" />
+                <node concept="2OqwBi" id="1TgsdXPZ0na" role="1PxMeX">
+                  <node concept="37vLTw" id="1TgsdXPZ0eZ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1TgsdXPZ0aI" resolve="queueVar" />
+                  </node>
+                  <node concept="3TrEf2" id="2ZMK30RWL0L" role="2OqNvi">
+                    <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+                  </node>
+                </node>
               </node>
-              <node concept="3TrcHB" id="1TgsdXPZ14i" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              <node concept="3TrEf2" id="2ZMK30RWMla" role="2OqNvi">
+                <ref role="3Tt5mk" to="5wll:1UML6duC7CO" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="2ZMK30RWNez" role="2OqNvi">
+              <ref role="37wK5l" to="qozy:1zeZsIbcufQ" resolve="genEventName" />
+              <node concept="37vLTw" id="2ZMK30RWNrJ" role="37wK5m">
+                <ref role="3cqZAo" node="1TgsdXPZ0aI" resolve="queueVar" />
               </node>
             </node>
           </node>
@@ -1589,9 +1596,9 @@
       <node concept="17QB3L" id="1TgsdXPZ0b0" role="3clF45" />
       <node concept="3Tm1VV" id="1TgsdXPYYMh" role="1B3o_S" />
       <node concept="37vLTG" id="1TgsdXPZ0aI" role="3clF46">
-        <property role="TrG5h" value="queue" />
+        <property role="TrG5h" value="queueVar" />
         <node concept="3Tqbb2" id="1TgsdXPZ0aH" role="1tU5fm">
-          <ref role="ehGHo" to="5wll:1zeZsIbB9X5" resolve="ConcurrentQueueDeclaration" />
+          <ref role="ehGHo" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
         </node>
       </node>
     </node>
