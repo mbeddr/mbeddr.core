@@ -32,14 +32,14 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components.sri/sri.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components/components.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.compositecomponents/compositecomponents.msd" folder="tests.comp" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.concurrency/tests.ex.ext.concurrency.msd" folder="concurrency" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.concurrency/tests.ex.ext.concurrency.msd" folder="tests.concurrency" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.math/test.ex.ext.math.msd" folder="tests.math" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.messaging/test.ex.ext.messaging.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.serialization/test.ex.ext.serialization.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.statemachine/statemachine.msd" folder="tests.statemachine" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.units/test.ex.ext.units.msd" folder="tests.units" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.components/components.msd" folder="tests.comp" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.concurrency/test.ts.ext.concurrency.msd" folder="concurrency" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.concurrency/test.ts.ext.concurrency.msd" folder="tests.concurrency" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.units/test.ts.ext.units.msd" folder="tests.units" />
     </projectModules>
   </component>
