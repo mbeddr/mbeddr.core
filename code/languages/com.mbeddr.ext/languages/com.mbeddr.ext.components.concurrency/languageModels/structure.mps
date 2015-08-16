@@ -10,6 +10,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="v7ag" ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
   <registry>
@@ -123,6 +124,44 @@
     </node>
     <node concept="PrWs8" id="7tWSY$OC42U" role="PzmwI">
       <ref role="PrY4T" to="5wll:3qlQk_gySDw" resolve="ITaskReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7tWSY$ONv9C">
+    <property role="TrG5h" value="ComponentInstanceFieldRef" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="7tWSY$ONvaD" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="instance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
+    </node>
+    <node concept="1TJgyj" id="7tWSY$ONvaG" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="field" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v7ag:4AGl5dzwHVj" resolve="Field" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7tWSY$ONvgr">
+    <property role="TrG5h" value="ComponentInstanceRunnableCall" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="7tWSY$ONvg$" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actuals" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="7tWSY$ONvgs" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="instance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
+    </node>
+    <node concept="1TJgyj" id="7tWSY$ONvgv" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="runnable" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
     </node>
   </node>
 </model>

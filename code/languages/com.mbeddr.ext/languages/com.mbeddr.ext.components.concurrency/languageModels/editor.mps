@@ -12,10 +12,18 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
+        <child id="1140524464360" name="cellLayout" index="2czzBx" />
+      </concept>
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -41,6 +49,7 @@
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -101,6 +110,101 @@
         </node>
       </node>
       <node concept="l2Vlx" id="7tWSY$OC74S" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7tWSY$ONvaQ">
+    <ref role="1XX52x" to="qnb1:7tWSY$ONv9C" resolve="ComponentInstanceFieldRef" />
+    <node concept="3EZMnI" id="7tWSY$ONvbe" role="2wV5jI">
+      <node concept="1iCGBv" id="7tWSY$ONvbo" role="3EZMnx">
+        <ref role="1NtTu8" to="qnb1:7tWSY$ONvaD" />
+        <node concept="1sVBvm" id="7tWSY$ONvbq" role="1sWHZn">
+          <node concept="3F0A7n" id="7tWSY$ONvb$" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="VechU" id="7tWSY$OOP0z" role="3F10Kt">
+              <property role="Vb096" value="green" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7tWSY$ONvbL" role="3EZMnx">
+        <property role="3F0ifm" value="." />
+        <node concept="11L4FC" id="7tWSY$ONve6" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="7tWSY$ONvfT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="7tWSY$OOP2t" role="3F10Kt">
+          <property role="Vb096" value="green" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="7tWSY$ONvc6" role="3EZMnx">
+        <ref role="1NtTu8" to="qnb1:7tWSY$ONvaG" />
+        <node concept="1sVBvm" id="7tWSY$ONvc8" role="1sWHZn">
+          <node concept="3F0A7n" id="7tWSY$ONvcq" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="VechU" id="7tWSY$OOP2g" role="3F10Kt">
+              <property role="Vb096" value="green" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="7tWSY$ONvbh" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7tWSY$ONvi_">
+    <ref role="1XX52x" to="qnb1:7tWSY$ONvgr" resolve="ComponentInstanceRunnableCall" />
+    <node concept="3EZMnI" id="7tWSY$ONviB" role="2wV5jI">
+      <node concept="1iCGBv" id="7tWSY$ONviL" role="3EZMnx">
+        <ref role="1NtTu8" to="qnb1:7tWSY$ONvgs" />
+        <node concept="1sVBvm" id="7tWSY$ONviN" role="1sWHZn">
+          <node concept="3F0A7n" id="7tWSY$ONviX" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="VechU" id="7tWSY$OOP2E" role="3F10Kt">
+              <property role="Vb096" value="green" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7tWSY$ONvja" role="3EZMnx">
+        <property role="3F0ifm" value="." />
+        <node concept="VechU" id="7tWSY$OOP2L" role="3F10Kt">
+          <property role="Vb096" value="green" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="7tWSY$ONvjv" role="3EZMnx">
+        <ref role="1NtTu8" to="qnb1:7tWSY$ONvgv" />
+        <node concept="1sVBvm" id="7tWSY$ONvjx" role="1sWHZn">
+          <node concept="3F0A7n" id="7tWSY$ONvjN" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="VechU" id="7tWSY$OOP2S" role="3F10Kt">
+              <property role="Vb096" value="green" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7tWSY$ONvk8" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="VechU" id="7tWSY$OOP2Z" role="3F10Kt">
+          <property role="Vb096" value="green" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="7tWSY$ONvlm" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="qnb1:7tWSY$ONvg$" />
+        <node concept="l2Vlx" id="7tWSY$ONvlo" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="7tWSY$ONvkH" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="VechU" id="7tWSY$OOP36" role="3F10Kt">
+          <property role="Vb096" value="green" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="7tWSY$ONviE" role="2iSdaV" />
     </node>
   </node>
 </model>

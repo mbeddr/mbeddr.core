@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:84d776bb-f62a-4ea0-9d27-f3ae41e4a96f(test.ex.ext.components.concurrency.externalSchedule)">
+<model ref="r:0c74f903-e99f-4d55-8745-3875e4382236(test.ex.ext.components.concurrency.scheduleInCompositeComponent)">
   <persistence version="9" />
   <languages>
+    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
+    <use id="b879012d-402b-40e0-8df7-e6fa93b9b711" name="com.mbeddr.ext.concurrency" version="-1" />
+    <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
     <use id="3f445ef3-54ad-4ae5-a22d-91c3ce06375e" name="com.mbeddr.ext.components.concurrency" version="-1" />
-    <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-    <devkit ref="aa72fbcf-7e79-465b-a4d9-4517ef4624ee(com.mbeddr.concurrency)" />
+    <use id="d6943f81-8340-4661-9d57-8fc1e2d23b36" name="com.mbeddr.ext.concurrency.plainC" version="-1" />
+    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
+    <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="-1" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
+    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="-1" />
+    <use id="54f2a59b-97bb-4c09-af92-928ebf9c5966" name="com.mbeddr.ext.compositecomponents" version="-1" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   </languages>
   <imports>
@@ -19,6 +31,9 @@
       <concept id="8610007178375348296" name="com.mbeddr.ext.components.concurrency.structure.TaskInComponentReference" flags="ng" index="13Raex">
         <reference id="8610007178375348413" name="task" index="13Radk" />
         <reference id="8610007178375585828" name="componentInstance" index="13RKfd" />
+      </concept>
+      <concept id="3933288758479891242" name="com.mbeddr.ext.components.concurrency.structure.ScheduleSpecificationInComponent" flags="ng" index="1AFJ9z">
+        <child id="3933288758479894243" name="schedule" index="1AFIYE" />
       </concept>
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -161,7 +176,15 @@
         <child id="5686538669182341016" name="tests" index="3cM6Hi" />
       </concept>
     </language>
+    <language id="54f2a59b-97bb-4c09-af92-928ebf9c5966" name="com.mbeddr.ext.compositecomponents">
+      <concept id="7780999115923947731" name="com.mbeddr.ext.compositecomponents.structure.CompositeComponentInstanceConfig" flags="ng" index="5JiAF" />
+      <concept id="7780999115923829680" name="com.mbeddr.ext.compositecomponents.structure.CompositeComponent" flags="ng" index="5JLF8" />
+      <concept id="7540109328385923714" name="com.mbeddr.ext.compositecomponents.structure.CompositeComponentsConfigItem" flags="ng" index="1eFCfY" />
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -202,6 +225,13 @@
       </concept>
     </language>
     <language id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components">
+      <concept id="6616025724454668918" name="com.mbeddr.ext.components.structure.AdapterInstancePortRef" flags="ng" index="219P8x">
+        <reference id="6616025724454668919" name="instance" index="219P8w" />
+        <reference id="6616025724454668920" name="port" index="219P8J" />
+      </concept>
+      <concept id="5172178961828157634" name="com.mbeddr.ext.components.structure.PortAdapter" flags="ng" index="21gPQu">
+        <child id="6616025724454701213" name="portRef" index="21ad3a" />
+      </concept>
       <concept id="7780999115923942144" name="com.mbeddr.ext.components.structure.AbstractInstanceConfiguration" flags="ng" index="5Js9S">
         <child id="7780999115923944213" name="contents" index="5JtDH" />
       </concept>
@@ -217,9 +247,30 @@
         <child id="785275130114861567" name="initializers" index="3R_39I" />
       </concept>
       <concept id="4491876417845649011" name="com.mbeddr.ext.components.structure.AtomicComponent" flags="ng" index="2EWCuY" />
+      <concept id="4491876417845641677" name="com.mbeddr.ext.components.structure.OperationTrigger" flags="ng" index="2EWDw0" />
+      <concept id="4491876417845641670" name="com.mbeddr.ext.components.structure.Runnable" flags="ng" index="2EWDwb">
+        <child id="4491876417845643892" name="trigger" index="2EWDeT" />
+        <child id="4491876417845689763" name="body" index="2EWMhI" />
+      </concept>
+      <concept id="4491876417845628840" name="com.mbeddr.ext.components.structure.ProvidedPort" flags="ng" index="2EWHp_" />
+      <concept id="4491876417845484930" name="com.mbeddr.ext.components.structure.Port" flags="ng" index="2EX0hf">
+        <reference id="4491876417845484932" name="intf" index="2EX0h9" />
+      </concept>
+      <concept id="4491876417845484924" name="com.mbeddr.ext.components.structure.Operation" flags="ng" index="2EX0iL" />
+      <concept id="4491876417845484922" name="com.mbeddr.ext.components.structure.ClientServerInterface" flags="ng" index="2EX0iR">
+        <child id="4491876417845484926" name="contents" index="2EX0iN" />
+      </concept>
       <concept id="4491876417845474761" name="com.mbeddr.ext.components.structure.Component" flags="ng" index="2EX6K4">
         <child id="6041318036221669720" name="contents" index="2RW2fA" />
       </concept>
+      <concept id="8105003328815071749" name="com.mbeddr.ext.components.structure.InterfaceOperationCallExpr" flags="ng" index="2H6Oeg">
+        <reference id="8105003328815071752" name="operation" index="2H6Oet" />
+      </concept>
+      <concept id="8105003328815039001" name="com.mbeddr.ext.components.structure.PortAdapterRefExpr" flags="ng" index="2H6Wec">
+        <reference id="8105003328815039002" name="portAdater" index="2H6Wef" />
+      </concept>
+      <concept id="1089269900847289701" name="com.mbeddr.ext.components.structure.EmptyInstanceConfigContent" flags="ng" index="JAGxh" />
+      <concept id="466603768608410221" name="com.mbeddr.ext.components.structure.PortAdapterOpCallExpr" flags="ng" index="30IJZa" />
       <concept id="2103658896110121032" name="com.mbeddr.ext.components.structure.ComponentsConfigItem" flags="ng" index="3i2$bm">
         <child id="2103658896110238743" name="genStrategy" index="3i30U9" />
       </concept>
@@ -227,9 +278,14 @@
         <reference id="591155063063570514" name="config" index="3t9XKR" />
       </concept>
       <concept id="8515777736166878876" name="com.mbeddr.ext.components.structure.EmptyComponentContent" flags="ng" index="3Khz0B" />
+      <concept id="8473757169836531451" name="com.mbeddr.ext.components.structure.DirectRunnableCallable" flags="ng" index="1KB$IV" />
       <concept id="785275130114861597" name="com.mbeddr.ext.components.structure.InitFieldInitializer" flags="ng" index="3R_36c">
         <reference id="785275130114861598" name="field" index="3R_36f" />
         <child id="785275130114861599" name="value" index="3R_36e" />
+      </concept>
+      <concept id="4514118643321588318" name="com.mbeddr.ext.components.structure.IOperationTriggerLike" flags="ng" index="1ZwTiz">
+        <reference id="4514118643321619583" name="calledOperation" index="1ZwxE2" />
+        <reference id="4514118643321592184" name="providedPort" index="1ZwSu5" />
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
@@ -273,21 +329,21 @@
     </node>
     <node concept="2eOfOl" id="3xRFG9PQKjc" role="2ePNbc">
       <property role="iO3LB" value="true" />
-      <property role="TrG5h" value="ExternalSchedule" />
+      <property role="TrG5h" value="ScheduleInCompositeComponent" />
       <node concept="2v9HqM" id="3qlQk_ggWAG" role="2eOfOg">
-        <ref role="2v9HqP" node="3Xsb2sPPkKA" resolve="ExternalSchedule" />
+        <ref role="2v9HqP" node="3Xsb2sPPkKA" resolve="ScheduleInCompositeComponent" />
       </node>
-      <node concept="2v9HqM" id="3qlQk_gyG8C" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
-      </node>
-      <node concept="2v9HqM" id="3qlQk_gyG8D" role="2eOfOg">
+      <node concept="2v9HqM" id="7tWSY$OKPpY" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
       </node>
-      <node concept="2v9HqM" id="3qlQk_gyG8E" role="2eOfOg">
+      <node concept="2v9HqM" id="7tWSY$OKPpZ" role="2eOfOg">
         <ref role="2v9HqP" to="ke8p:5gYn0x84VoQ" resolve="TimeUtil" />
       </node>
-      <node concept="2v9HqM" id="3qlQk_gyG8F" role="2eOfOg">
+      <node concept="2v9HqM" id="7tWSY$OKPq0" role="2eOfOg">
         <ref role="2v9HqP" to="ke8p:5gYn0x84UiB" resolve="timeb" />
+      </node>
+      <node concept="2v9HqM" id="7tWSY$OKPq1" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
       </node>
     </node>
     <node concept="2Q9Fgs" id="3xRFG9PQKje" role="2Q9xDr">
@@ -304,29 +360,22 @@
         <property role="3Ewwow" value="true" />
       </node>
     </node>
+    <node concept="1eFCfY" id="7tWSY$OKVwh" role="2Q9xDr" />
   </node>
   <node concept="N3F5e" id="3Xsb2sPPkKA">
-    <property role="TrG5h" value="ExternalSchedule" />
+    <property role="TrG5h" value="ScheduleInCompositeComponent" />
     <node concept="2EWCtd" id="3qlQk_gg_DK" role="N3F5h">
       <property role="TrG5h" value="Instances" />
-      <node concept="2EWCuV" id="3qlQk_gg_NO" role="5JtDH">
-        <property role="TrG5h" value="_componentMul2" />
-        <ref role="2EWCuU" node="3Xsb2sPPkKB" resolve="Mul2Component" />
-        <node concept="3R_36c" id="3qlQk_gyPrQ" role="3R_39I">
-          <ref role="3R_36f" node="3qlQk_ggpCB" resolve="executions" />
-          <node concept="3TlMh9" id="3qlQk_gyPs5" role="3R_36e">
-            <property role="2hmy$m" value="3" />
-          </node>
-        </node>
+      <node concept="2EWCuV" id="7tWSY$OKUvk" role="5JtDH">
+        <property role="TrG5h" value="_composite1" />
+        <ref role="2EWCuU" node="7tWSY$OKQpE" resolve="Composite1" />
       </node>
-      <node concept="2EWCuV" id="3qlQk_gyJ$f" role="5JtDH">
-        <property role="TrG5h" value="_componentAdd1" />
-        <ref role="2EWCuU" node="7tWSY$OGcQi" resolve="Add1Component" />
-        <node concept="3R_36c" id="7tWSY$OGidS" role="3R_39I">
-          <ref role="3R_36f" node="7tWSY$OGcQk" resolve="executions" />
-          <node concept="3TlMh9" id="7tWSY$OGisx" role="3R_36e">
-            <property role="2hmy$m" value="4" />
-          </node>
+      <node concept="JAGxh" id="7tWSY$OVrFJ" role="5JtDH" />
+      <node concept="21gPQu" id="7tWSY$OVrFV" role="5JtDH">
+        <property role="TrG5h" value="composite1" />
+        <node concept="219P8x" id="7tWSY$OVrFW" role="21ad3a">
+          <ref role="219P8w" node="7tWSY$OKUvk" resolve="_composite1" />
+          <ref role="219P8J" node="7tWSY$OVrBY" resolve="i" />
         </node>
       </node>
     </node>
@@ -356,7 +405,6 @@
     <node concept="2EWCuY" id="3Xsb2sPPkKB" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="Mul2Component" />
-      <node concept="3Khz0B" id="3qlQk_ggAeC" role="2RW2fA" />
       <node concept="EbCE0" id="3qlQk_ggpCB" role="2RW2fA">
         <property role="TrG5h" value="executions" />
         <property role="3R_39t" value="true" />
@@ -505,48 +553,121 @@
     <node concept="2NXPZ9" id="7tWSY$OGc7L" role="N3F5h">
       <property role="TrG5h" value="empty_1439730342758_2" />
     </node>
-    <node concept="6qQRg" id="3qlQk_gyS6H" role="N3F5h">
-      <property role="TrG5h" value="schedule1" />
-      <node concept="1NgRL0" id="3qlQk_gyS6I" role="6qQK8">
-        <property role="3_dPry" value="1" />
-        <node concept="6VUUj" id="3qlQk_gyS6J" role="6EqoZ">
-          <node concept="3TlMh9" id="3qlQk_gyS6K" role="6VY68">
-            <property role="2hmy$m" value="200" />
-          </node>
-        </node>
-        <node concept="13Raex" id="7tWSY$OFOIt" role="1A7$0i">
-          <ref role="13RKfd" node="3qlQk_gg_NO" resolve="_componentMul2" />
-          <ref role="13Radk" node="3qlQk_gfjQI" resolve="mul2" />
-        </node>
-      </node>
-      <node concept="1NgRL0" id="7tWSY$O$KpD" role="6qQK8">
-        <property role="3_dPry" value="2" />
-        <node concept="6VUUj" id="7tWSY$O$KpE" role="6EqoZ">
-          <node concept="3TlMh9" id="7tWSY$O$KpF" role="6VY68">
-            <property role="2hmy$m" value="100" />
-          </node>
-        </node>
-        <node concept="6VUUj" id="7tWSY$O$Kui" role="3$P2g2">
-          <node concept="3TlMh9" id="7tWSY$O$Lxz" role="6VY68">
-            <property role="2hmy$m" value="50" />
-          </node>
-        </node>
-        <node concept="13Raex" id="7tWSY$OFOKU" role="1A7$0i">
-          <ref role="13RKfd" node="3qlQk_gyJ$f" resolve="_componentAdd1" />
-          <ref role="13Radk" node="7tWSY$OGcQs" resolve="add1" />
-        </node>
-      </node>
-      <node concept="scIFY" id="3qlQk_gyS6Q" role="6qQK8">
-        <node concept="3O_q_g" id="3qlQk_gyS6R" role="scD4D">
-          <ref role="3O_q_h" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
+    <node concept="2EX0iR" id="7tWSY$OVreT" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="IComposite1" />
+      <node concept="2EX0iL" id="7tWSY$OVrD8" role="2EX0iN">
+        <property role="TrG5h" value="runSchedule" />
+        <node concept="19Rifw" id="7tWSY$OVrDj" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
       </node>
     </node>
-    <node concept="2NXPZ9" id="3qlQk_gyRp3" role="N3F5h">
-      <property role="TrG5h" value="empty_1439625526397_23" />
+    <node concept="2NXPZ9" id="7tWSY$OVqQV" role="N3F5h">
+      <property role="TrG5h" value="empty_1439752443100_45" />
     </node>
-    <node concept="2NXPZ9" id="3qlQk_gyRJd" role="N3F5h">
-      <property role="TrG5h" value="empty_1439625526621_24" />
+    <node concept="5JLF8" id="7tWSY$OKQpE" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="Composite1" />
+      <node concept="2EWHp_" id="7tWSY$OVrBY" role="2RW2fA">
+        <property role="TrG5h" value="i" />
+        <ref role="2EX0h9" node="7tWSY$OVreT" resolve="IComposite1" />
+      </node>
+      <node concept="5JiAF" id="7tWSY$OKQpF" role="2RW2fA">
+        <node concept="2EWCuV" id="3qlQk_gg_NO" role="5JtDH">
+          <property role="TrG5h" value="_componentMul2" />
+          <ref role="2EWCuU" node="3Xsb2sPPkKB" resolve="Mul2Component" />
+          <node concept="3R_36c" id="3qlQk_gyPrQ" role="3R_39I">
+            <ref role="3R_36f" node="3qlQk_ggpCB" resolve="executions" />
+            <node concept="3TlMh9" id="3qlQk_gyPs5" role="3R_36e">
+              <property role="2hmy$m" value="3" />
+            </node>
+          </node>
+        </node>
+        <node concept="2EWCuV" id="3qlQk_gyJ$f" role="5JtDH">
+          <property role="TrG5h" value="_componentAdd1" />
+          <ref role="2EWCuU" node="7tWSY$OGcQi" resolve="Add1Component" />
+          <node concept="3R_36c" id="7tWSY$OGidS" role="3R_39I">
+            <ref role="3R_36f" node="7tWSY$OGcQk" resolve="executions" />
+            <node concept="3TlMh9" id="7tWSY$OGisx" role="3R_36e">
+              <property role="2hmy$m" value="4" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Khz0B" id="7tWSY$OKR_L" role="2RW2fA" />
+      <node concept="2EWDwb" id="7tWSY$OKRAl" role="2RW2fA">
+        <property role="TrG5h" value="i_runSchedule" />
+        <node concept="3XIRFW" id="7tWSY$OKRAm" role="2EWMhI">
+          <node concept="1_9egQ" id="7tWSY$OKRBv" role="3XIRFZ">
+            <node concept="3pqW6w" id="7tWSY$OKRBw" role="1_9egR">
+              <node concept="3O_q_g" id="7tWSY$OKRBx" role="3TlMhJ">
+                <ref role="3O_q_h" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
+              </node>
+              <node concept="1S7827" id="7tWSY$OKRBy" role="3TlMhI">
+                <ref role="1S7826" node="3qlQk_gyKHU" resolve="startTime" />
+              </node>
+            </node>
+          </node>
+          <node concept="6qOI8" id="7tWSY$OKRBz" role="3XIRFZ">
+            <property role="1Onm7i" value="true" />
+            <ref role="6qOXx" node="3qlQk_gyS6H" resolve="schedule1" />
+          </node>
+        </node>
+        <node concept="1KB$IV" id="7tWSY$OKUvO" role="lGtFl" />
+        <node concept="2EWDw0" id="7tWSY$OVrDF" role="2EWDeT">
+          <ref role="1ZwSu5" node="7tWSY$OVrBY" resolve="i" />
+          <ref role="1ZwxE2" node="7tWSY$OVrD8" resolve="runSchedule" />
+        </node>
+        <node concept="19Rifw" id="7tWSY$OVrE9" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="3Khz0B" id="7tWSY$OKTzb" role="2RW2fA" />
+      <node concept="1AFJ9z" id="7tWSY$OKT$n" role="2RW2fA">
+        <node concept="6qQRg" id="3qlQk_gyS6H" role="1AFIYE">
+          <property role="TrG5h" value="schedule1" />
+          <node concept="1NgRL0" id="3qlQk_gyS6I" role="6qQK8">
+            <property role="3_dPry" value="1" />
+            <node concept="6VUUj" id="3qlQk_gyS6J" role="6EqoZ">
+              <node concept="3TlMh9" id="3qlQk_gyS6K" role="6VY68">
+                <property role="2hmy$m" value="200" />
+              </node>
+            </node>
+            <node concept="13Raex" id="7tWSY$OFOIt" role="1A7$0i">
+              <ref role="13Radk" node="3qlQk_gfjQI" resolve="mul2" />
+              <ref role="13RKfd" node="3qlQk_gg_NO" resolve="_componentMul2" />
+            </node>
+          </node>
+          <node concept="1NgRL0" id="7tWSY$O$KpD" role="6qQK8">
+            <property role="3_dPry" value="2" />
+            <node concept="6VUUj" id="7tWSY$O$KpE" role="6EqoZ">
+              <node concept="3TlMh9" id="7tWSY$O$KpF" role="6VY68">
+                <property role="2hmy$m" value="100" />
+              </node>
+            </node>
+            <node concept="6VUUj" id="7tWSY$O$Kui" role="3$P2g2">
+              <node concept="3TlMh9" id="7tWSY$O$Lxz" role="6VY68">
+                <property role="2hmy$m" value="50" />
+              </node>
+            </node>
+            <node concept="13Raex" id="7tWSY$OFOKU" role="1A7$0i">
+              <ref role="13RKfd" node="3qlQk_gyJ$f" resolve="_componentAdd1" />
+              <ref role="13Radk" node="7tWSY$OGcQs" resolve="add1" />
+            </node>
+          </node>
+          <node concept="scIFY" id="3qlQk_gyS6Q" role="6qQK8">
+            <node concept="3O_q_g" id="3qlQk_gyS6R" role="scD4D">
+              <ref role="3O_q_h" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7tWSY$OKPLO" role="N3F5h">
+      <property role="TrG5h" value="empty_1439732527022_11" />
     </node>
     <node concept="c0Qz5" id="3qlQk_ggBnS" role="N3F5h">
       <property role="2OOxQR" value="true" />
@@ -559,21 +680,15 @@
         <node concept="3t9XKO" id="3qlQk_gxE7E" role="3XIRFZ">
           <ref role="3t9XKR" node="3qlQk_gg_DK" resolve="Instances" />
         </node>
-        <node concept="1_9egQ" id="3qlQk_ggCze" role="3XIRFZ">
-          <node concept="3pqW6w" id="3qlQk_ggCzt" role="1_9egR">
-            <node concept="3O_q_g" id="3qlQk_ggCPy" role="3TlMhJ">
-              <ref role="3O_q_h" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
-            </node>
-            <node concept="1S7827" id="3qlQk_gyR3N" role="3TlMhI">
-              <ref role="1S7826" node="3qlQk_gyKHU" resolve="startTime" />
+        <node concept="1_9egQ" id="7tWSY$OVrGb" role="3XIRFZ">
+          <node concept="30IJZa" id="7tWSY$OVrHD" role="1_9egR">
+            <ref role="2H6Oet" node="7tWSY$OVrD8" resolve="runSchedule" />
+            <node concept="2H6Wec" id="7tWSY$OVrG9" role="1_9fRO">
+              <ref role="2H6Wef" node="7tWSY$OVrFV" resolve="composite1" />
             </node>
           </node>
         </node>
-        <node concept="6qOI8" id="3qlQk_ggARZ" role="3XIRFZ">
-          <property role="1Onm7i" value="true" />
-          <ref role="6qOXx" node="3qlQk_gyS6H" resolve="schedule1" />
-        </node>
-        <node concept="3XISUE" id="7tWSY$OIMGf" role="3XIRFZ" />
+        <node concept="3XISUE" id="7tWSY$ONrol" role="3XIRFZ" />
         <node concept="1QiMYF" id="5gYn0x82EGB" role="3XIRFZ">
           <node concept="OjmMv" id="5gYn0x82EGD" role="3SJzmv">
             <node concept="19SGf9" id="5gYn0x82EGE" role="OjmMu">
