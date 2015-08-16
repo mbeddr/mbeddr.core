@@ -105,5 +105,25 @@
   <node concept="PlHQZ" id="3qlQk_ggqr3">
     <property role="TrG5h" value="IConcurrencyInComponent" />
   </node>
+  <node concept="1TIwiD" id="7tWSY$OC418">
+    <property role="TrG5h" value="TaskInComponentReference" />
+    <property role="34LRSv" value="&lt;{componentInstance}&gt;" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7tWSY$OC42X" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="task" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="5wll:73Jrkgytd$o" resolve="Task" />
+    </node>
+    <node concept="1TJgyj" id="7tWSY$OCY0$" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="componentInstance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
+    </node>
+    <node concept="PrWs8" id="7tWSY$OC42U" role="PzmwI">
+      <ref role="PrY4T" to="5wll:3qlQk_gySDw" resolve="ITaskReference" />
+    </node>
+  </node>
 </model>
 

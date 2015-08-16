@@ -33,6 +33,7 @@
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="t88t" ref="r:1d477703-270e-477c-a90f-4512808bc690(com.mbeddr.ext.concurrency.plainC.behavior)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -631,6 +632,11 @@
       <property role="TrG5h" value="taskData" />
       <ref role="2rTdP9" to="5wll:73Jrkgytd$o" resolve="Task" />
       <ref role="2rZz_L" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
+    </node>
+    <node concept="2rT7sh" id="7tWSY$ODHvD" role="2rTMjI">
+      <property role="TrG5h" value="taskDataStruct" />
+      <ref role="2rTdP9" to="5wll:73Jrkgytd$o" resolve="Task" />
+      <ref role="2rZz_L" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
     </node>
     <node concept="2rT7sh" id="3qlQk_gp9ot" role="2rTMjI">
       <property role="TrG5h" value="taskFunction" />
@@ -1828,6 +1834,9 @@
                   </node>
                 </node>
               </node>
+              <node concept="2ZBi8u" id="7tWSY$ODS0Q" role="lGtFl">
+                <ref role="2rW$FS" node="7tWSY$ODHvD" resolve="taskDataStruct" />
+              </node>
             </node>
             <node concept="2NXPZ9" id="2ajpxDX5hZ9" role="fMItF">
               <property role="TrG5h" value="empty_1437143343545_15" />
@@ -2203,22 +2212,6 @@
                     <property role="2caQfQ" value="false" />
                     <property role="2c7vTL" value="false" />
                     <ref role="1sgJKq" node="2dxXn_mABbX" resolve="taskData" />
-                    <node concept="1ZhdrF" id="2dxXn_mADA9" role="lGtFl">
-                      <property role="P3scX" value="efda956e-491e-4f00-ba14-36af2f213ecf/6394819151180597816/6394819151180597817" />
-                      <property role="2qtEX8" value="struct" />
-                      <node concept="3$xsQk" id="2dxXn_mADAa" role="3$ytzL">
-                        <node concept="3clFbS" id="2dxXn_mADAb" role="2VODD2">
-                          <node concept="3clFbF" id="2dxXn_mADBF" role="3cqZAp">
-                            <node concept="2OqwBi" id="2dxXn_mADJ5" role="3clFbG">
-                              <node concept="30H73N" id="2dxXn_mADBE" role="2Oq$k0" />
-                              <node concept="2qgKlT" id="2dxXn_mAEvN" role="2OqNvi">
-                                <ref role="37wK5l" to="qozy:2dxXn_m_rhe" resolve="genTaskStructName" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
                   </node>
                 </node>
               </node>
@@ -2256,31 +2249,6 @@
                     <property role="2caQfQ" value="false" />
                     <property role="2c7vTL" value="false" />
                     <ref role="1sgJKq" node="2dxXn_mABbX" resolve="taskData" />
-                    <node concept="1ZhdrF" id="1TgsdXPnYpZ" role="lGtFl">
-                      <property role="P3scX" value="efda956e-491e-4f00-ba14-36af2f213ecf/6394819151180597816/6394819151180597817" />
-                      <property role="2qtEX8" value="struct" />
-                      <node concept="3$xsQk" id="1TgsdXPnYq0" role="3$ytzL">
-                        <node concept="3clFbS" id="1TgsdXPnYq1" role="2VODD2">
-                          <node concept="3clFbF" id="1TgsdXPnYq2" role="3cqZAp">
-                            <node concept="2OqwBi" id="1TgsdXPnYq3" role="3clFbG">
-                              <node concept="2OqwBi" id="1TgsdXPo9N2" role="2Oq$k0">
-                                <node concept="30H73N" id="1TgsdXPnYq4" role="2Oq$k0" />
-                                <node concept="2Xjw5R" id="1TgsdXPobrI" role="2OqNvi">
-                                  <node concept="1xMEDy" id="1TgsdXPobrK" role="1xVPHs">
-                                    <node concept="chp4Y" id="1TgsdXPobBS" role="ri$Ld">
-                                      <ref role="cht4Q" to="5wll:73Jrkgytd$o" resolve="Task" />
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                              <node concept="2qgKlT" id="1TgsdXPnYq5" role="2OqNvi">
-                                <ref role="37wK5l" to="qozy:2dxXn_m_rhe" resolve="genTaskStructName" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
                   </node>
                 </node>
               </node>
@@ -3929,6 +3897,7 @@
             <node concept="3XIRFW" id="2ZMK30RY6wz" role="1iABvq">
               <node concept="smOy2" id="2ZMK30SgaXC" role="3XIRFZ">
                 <ref role="smOyq" node="2ZMK30RY6wO" resolve="whileBody" />
+                <node concept="raruj" id="3qlQk_gF9sX" role="lGtFl" />
               </node>
               <node concept="s2EJg" id="2ZMK30RY6wO" role="3XIRFZ">
                 <property role="1FmQ$x" value="whileBody" />
@@ -3963,7 +3932,6 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="raruj" id="2ZMK30RYiB0" role="lGtFl" />
                   </node>
                   <node concept="3XISUE" id="2ZMK30RY6wQ" role="3XIRFZ">
                     <node concept="2b32R4" id="2ZMK30RY6wR" role="lGtFl">

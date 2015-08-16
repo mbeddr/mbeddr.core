@@ -117,6 +117,11 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -1428,8 +1433,8 @@
         <node concept="3clFbF" id="2ajpxDX4K3H" role="3cqZAp">
           <node concept="2OqwBi" id="2ajpxDX4K6q" role="3clFbG">
             <node concept="13iPFW" id="2ajpxDX4K3G" role="2Oq$k0" />
-            <node concept="3TrEf2" id="2ajpxDX4Kj6" role="2OqNvi">
-              <ref role="3Tt5mk" to="5wll:66UaKxBOktH" />
+            <node concept="2qgKlT" id="3qlQk_gzeTn" role="2OqNvi">
+              <ref role="37wK5l" node="3qlQk_gz7DW" resolve="getTask" />
             </node>
           </node>
         </node>
@@ -1455,8 +1460,8 @@
         <node concept="3clFbF" id="4hMIGYxmXQW" role="3cqZAp">
           <node concept="2OqwBi" id="4hMIGYxmXTD" role="3clFbG">
             <node concept="13iPFW" id="4hMIGYxmXQV" role="2Oq$k0" />
-            <node concept="3TrEf2" id="4hMIGYxmY6l" role="2OqNvi">
-              <ref role="3Tt5mk" to="5wll:66UaKxBOktH" />
+            <node concept="2qgKlT" id="3qlQk_gzetI" role="2OqNvi">
+              <ref role="37wK5l" node="3qlQk_gz7DW" resolve="getTask" />
             </node>
           </node>
         </node>
@@ -2335,6 +2340,96 @@
         <node concept="3Tqbb2" id="6u_410TQBmU" role="1tU5fm">
           <ref role="ehGHo" to="5wll:6u_410TuQru" resolve="ResourceDeclaration" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="3qlQk_gySF$">
+    <property role="3GE5qa" value="schedule" />
+    <ref role="13h7C2" to="5wll:3qlQk_gySDw" resolve="ITaskReference" />
+    <node concept="13i0hz" id="3qlQk_gySU3" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getTask" />
+      <node concept="3Tm1VV" id="3qlQk_gySU4" role="1B3o_S" />
+      <node concept="3Tqbb2" id="3qlQk_gySUf" role="3clF45">
+        <ref role="ehGHo" to="5wll:73Jrkgytd$o" resolve="Task" />
+      </node>
+      <node concept="3clFbS" id="3qlQk_gySU6" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="3qlQk_gySF_" role="13h7CW">
+      <node concept="3clFbS" id="3qlQk_gySFA" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3qlQk_gz7DT">
+    <property role="3GE5qa" value="schedule" />
+    <ref role="13h7C2" to="5wll:66UaKxBOktG" resolve="SingleTaskSchedulingConstraint" />
+    <node concept="13hLZK" id="3qlQk_gz7DU" role="13h7CW">
+      <node concept="3clFbS" id="3qlQk_gz7DV" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3qlQk_gz7DW" role="13h7CS">
+      <property role="TrG5h" value="getTask" />
+      <node concept="3Tm1VV" id="3qlQk_gz7DX" role="1B3o_S" />
+      <node concept="3Tqbb2" id="3qlQk_gz7E8" role="3clF45">
+        <ref role="ehGHo" to="5wll:73Jrkgytd$o" resolve="Task" />
+      </node>
+      <node concept="3clFbS" id="3qlQk_gz7DZ" role="3clF47">
+        <node concept="3clFbF" id="3qlQk_gz7Ed" role="3cqZAp">
+          <node concept="3K4zz7" id="3qlQk_gz9pG" role="3clFbG">
+            <node concept="2OqwBi" id="3qlQk_gzdCl" role="3K4GZi">
+              <node concept="13iPFW" id="3qlQk_gzdxu" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3qlQk_gzdWk" role="2OqNvi">
+                <ref role="3Tt5mk" to="5wll:66UaKxBOktH" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3qlQk_gzdd6" role="3K4E3e">
+              <node concept="2OqwBi" id="3qlQk_gz9sg" role="2Oq$k0">
+                <node concept="13iPFW" id="3qlQk_gz9qA" role="2Oq$k0" />
+                <node concept="3TrEf2" id="3qlQk_gzd1X" role="2OqNvi">
+                  <ref role="3Tt5mk" to="5wll:3qlQk_gyT_r" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="3qlQk_gzdvr" role="2OqNvi">
+                <ref role="37wK5l" node="3qlQk_gySU3" resolve="getTask" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3qlQk_gz8bq" role="3K4Cdx">
+              <node concept="2OqwBi" id="3qlQk_gz7G4" role="2Oq$k0">
+                <node concept="13iPFW" id="3qlQk_gz7Ec" role="2Oq$k0" />
+                <node concept="3TrEf2" id="3qlQk_gzcIx" role="2OqNvi">
+                  <ref role="3Tt5mk" to="5wll:3qlQk_gyT_r" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="3qlQk_gz8Tx" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="3qlQk_gAeGc">
+    <property role="3GE5qa" value="schedule" />
+    <ref role="13h7C2" to="5wll:3qlQk_gySUD" resolve="TaskReference" />
+    <node concept="13hLZK" id="3qlQk_gAeGd" role="13h7CW">
+      <node concept="3clFbS" id="3qlQk_gAeGe" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3qlQk_gAeGf" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getTask" />
+      <ref role="13i0hy" node="3qlQk_gySU3" resolve="getTask" />
+      <node concept="3Tm1VV" id="3qlQk_gAeGg" role="1B3o_S" />
+      <node concept="3clFbS" id="3qlQk_gAeGj" role="3clF47">
+        <node concept="3clFbF" id="3qlQk_gAeGu" role="3cqZAp">
+          <node concept="2OqwBi" id="3qlQk_gAeIl" role="3clFbG">
+            <node concept="13iPFW" id="3qlQk_gAeGt" role="2Oq$k0" />
+            <node concept="3TrEf2" id="3qlQk_gAeRz" role="2OqNvi">
+              <ref role="3Tt5mk" to="5wll:3qlQk_gySUH" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3qlQk_gAeGk" role="3clF45">
+        <ref role="ehGHo" to="5wll:73Jrkgytd$o" resolve="Task" />
       </node>
     </node>
   </node>

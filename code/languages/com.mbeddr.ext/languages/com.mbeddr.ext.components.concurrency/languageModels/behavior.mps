@@ -10,6 +10,8 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="qnb1" ref="r:20269589-2670-4f99-b5ae-af443d8a5c29(com.mbeddr.ext.components.concurrency.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
+    <import index="qozy" ref="r:38fcb48b-92c2-41af-9039-dc087bb8b822(com.mbeddr.ext.concurrency.behavior)" />
+    <import index="5wll" ref="r:8bfc0edf-00dc-40ce-9659-fb90c9bd31c8(com.mbeddr.ext.concurrency.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -165,6 +167,32 @@
         <ref role="ehGHo" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
       </node>
       <node concept="3clFbS" id="3qlQk_ggqsn" role="3clF47" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7tWSY$OCf0e">
+    <ref role="13h7C2" to="qnb1:7tWSY$OC418" resolve="TaskInComponentReference" />
+    <node concept="13hLZK" id="7tWSY$OCf0f" role="13h7CW">
+      <node concept="3clFbS" id="7tWSY$OCf0g" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7tWSY$OCf1a" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getTask" />
+      <ref role="13i0hy" to="qozy:3qlQk_gySU3" resolve="getTask" />
+      <node concept="3Tm1VV" id="7tWSY$OCf1b" role="1B3o_S" />
+      <node concept="3clFbS" id="7tWSY$OCf1e" role="3clF47">
+        <node concept="3clFbF" id="7tWSY$OCf3K" role="3cqZAp">
+          <node concept="2OqwBi" id="7tWSY$OFDA3" role="3clFbG">
+            <node concept="13iPFW" id="7tWSY$OFD$e" role="2Oq$k0" />
+            <node concept="3TrEf2" id="7tWSY$OFDJh" role="2OqNvi">
+              <ref role="3Tt5mk" to="qnb1:7tWSY$OC42X" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="7tWSY$OCf1f" role="3clF45">
+        <ref role="ehGHo" to="5wll:73Jrkgytd$o" resolve="Task" />
+      </node>
     </node>
   </node>
 </model>
