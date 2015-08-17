@@ -1657,6 +1657,7 @@
     </node>
     <node concept="4WHVk" id="7UgeC20wCaM" role="N3F5h">
       <property role="TrG5h" value="ULTRASOUND_CLOCK_INTERVAL" />
+      <property role="2OOxQR" value="true" />
       <node concept="CIdvy" id="7UgeC20wCaN" role="2DQcEM">
         <node concept="3TlMh9" id="7UgeC20wCaO" role="CIrOC">
           <property role="2hmy$m" value="600000" />
