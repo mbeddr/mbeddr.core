@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.embedded.esp8266/com.mbeddr.embedded.esp8266.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.embedded.platform/com.mbeddr.embedded.platform.msd" folder="" />
     </projectModules>
   </component>

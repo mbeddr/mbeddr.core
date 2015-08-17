@@ -7,7 +7,7 @@
           <value>
             <Library>
               <option name="name" value="importer" />
-              <option name="path" value="$PROJECT_DIR$/../../../../mbeddr.importer/code/languages" />
+              <option name="path" value="${mbeddr.importer.home}/code/languages" />
             </Library>
           </value>
         </entry>
@@ -19,11 +19,11 @@
             </Library>
           </value>
         </entry>
-        <entry key="sl-all">
+        <entry key="plugins">
           <value>
             <Library>
-              <option name="name" value="sl-all" />
-              <option name="path" value="${sl-all}" />
+              <option name="name" value="plugins" />
+              <option name="path" value="${mbeddr.github.core.home}/code/plugins/sl-all" />
             </Library>
           </value>
         </entry>
