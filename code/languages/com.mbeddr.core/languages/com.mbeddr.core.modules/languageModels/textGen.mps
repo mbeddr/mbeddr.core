@@ -1633,7 +1633,7 @@
       <node concept="3clFbS" id="4AGl5dzxvOj" role="2VODD2">
         <node concept="lc7rE" id="4AGl5dzxvOk" role="3cqZAp">
           <node concept="la8eA" id="4AGl5dzxvOm" role="lcghm">
-            <property role="lacIc" value="asm(&quot;nop&quot;)" />
+            <property role="lacIc" value="__asm__ (&quot;nop&quot;)" />
           </node>
         </node>
       </node>
