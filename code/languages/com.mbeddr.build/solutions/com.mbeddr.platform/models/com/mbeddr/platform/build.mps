@@ -1537,6 +1537,12 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1b4F2fnZZQw" role="3bR37C">
+          <node concept="3bR9La" id="1b4F2fnZZQx" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="5qO$P$Pp2$u" role="2G$12L">
         <property role="BnDLt" value="true" />
