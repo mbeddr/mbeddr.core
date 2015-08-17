@@ -364,20 +364,5 @@
       <node concept="l2Vlx" id="42ri$nY$USa" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="42ri$nYZqm9">
-    <property role="3GE5qa" value="internal" />
-    <ref role="1XX52x" to="izv8:42ri$nYZqkA" resolve="PreemptionPointStatement" />
-    <node concept="3EZMnI" id="42ri$nYZqmh" role="2wV5jI">
-      <node concept="3F0ifn" id="42ri$nYZqm$" role="3EZMnx">
-        <property role="3F0ifm" value="preemption point" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-      </node>
-      <node concept="3F0ifn" id="42ri$nYZqmQ" role="3EZMnx">
-        <property role="3F0ifm" value=";" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dhkRt" resolve="Semi" />
-      </node>
-      <node concept="l2Vlx" id="42ri$nYZqmk" role="2iSdaV" />
-    </node>
-  </node>
 </model>
 

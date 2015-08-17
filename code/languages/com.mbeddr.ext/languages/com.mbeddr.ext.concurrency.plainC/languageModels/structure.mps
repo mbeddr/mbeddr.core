@@ -190,11 +190,5 @@
     <property role="TrG5h" value="IGotoSectionStatement" />
     <property role="3GE5qa" value="internal" />
   </node>
-  <node concept="1TIwiD" id="42ri$nYZqkA">
-    <property role="TrG5h" value="PreemptionPointStatement" />
-    <property role="34LRSv" value="preemption point" />
-    <property role="3GE5qa" value="internal" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
-  </node>
 </model>
 
