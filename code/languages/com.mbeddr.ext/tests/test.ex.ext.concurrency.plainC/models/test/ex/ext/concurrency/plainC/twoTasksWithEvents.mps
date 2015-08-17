@@ -72,10 +72,9 @@
       </concept>
     </language>
     <language id="d6943f81-8340-4661-9d57-8fc1e2d23b36" name="com.mbeddr.ext.concurrency.plainC">
-      <concept id="6070390538380293878" name="com.mbeddr.ext.concurrency.plainC.structure.TimeSourceConstraint" flags="ng" index="scIFY">
-        <child id="6070390538380299553" name="currentTimeExpression" index="scD4D" />
+      <concept id="7587272608860492786" name="com.mbeddr.ext.concurrency.plainC.structure.PlainCStrategy" flags="ng" index="1KpjJf">
+        <reference id="8610007178382119196" name="timeSource" index="12uRbP" />
       </concept>
-      <concept id="7587272608860492786" name="com.mbeddr.ext.concurrency.plainC.structure.PlainCStrategy" flags="ng" index="1KpjJf" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="8729447926330198396" name="com.mbeddr.core.util.structure.ForRangeStatement" flags="ng" index="n2Vfv">
@@ -238,7 +237,7 @@
       <property role="2AWWZJ" value="gcc" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3r8Kxs" value="make" />
-      <property role="2AWWZI" value="-std=c99 -I/usr/include -pthread" />
+      <property role="2AWWZI" value="-std=c99 -I/usr/include" />
       <property role="1FkSt$" value="-g " />
     </node>
     <node concept="2eOfOl" id="4hMIGYxmNEG" role="2ePNbc">
@@ -267,7 +266,9 @@
       <node concept="1OId_O" id="6bs538mtCJs" role="1OIqLV">
         <ref role="1OIdAa" node="4hMIGYxmNE2" resolve="sched" />
       </node>
-      <node concept="1KpjJf" id="5gYn0x82E$X" role="1NkNSE" />
+      <node concept="1KpjJf" id="5gYn0x82E$X" role="1NkNSE">
+        <ref role="12uRbP" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
+      </node>
     </node>
   </node>
   <node concept="N3F5e" id="4hMIGYxmNCM">
@@ -619,11 +620,6 @@
       <node concept="3_amfM" id="22CI9oafbHS" role="6qQK8">
         <property role="3_dPry" value="2" />
         <ref role="6qQL_" node="4hMIGYxmNDv" resolve="summer" />
-      </node>
-      <node concept="scIFY" id="5gYn0x83haA" role="6qQK8">
-        <node concept="3O_q_g" id="5gYn0x84ZZM" role="scD4D">
-          <ref role="3O_q_h" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
-        </node>
       </node>
     </node>
     <node concept="2NXPZ9" id="4hMIGYxmNE8" role="N3F5h">

@@ -75,11 +75,10 @@
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
     <language id="d6943f81-8340-4661-9d57-8fc1e2d23b36" name="com.mbeddr.ext.concurrency.plainC">
-      <concept id="6070390538380293878" name="com.mbeddr.ext.concurrency.plainC.structure.TimeSourceConstraint" flags="ng" index="scIFY">
-        <child id="6070390538380299553" name="currentTimeExpression" index="scD4D" />
-      </concept>
       <concept id="2184369924327143820" name="com.mbeddr.ext.concurrency.plainC.structure.CurrentTimeExpression" flags="ng" index="1FK8_j" />
-      <concept id="7587272608860492786" name="com.mbeddr.ext.concurrency.plainC.structure.PlainCStrategy" flags="ng" index="1KpjJf" />
+      <concept id="7587272608860492786" name="com.mbeddr.ext.concurrency.plainC.structure.PlainCStrategy" flags="ng" index="1KpjJf">
+        <reference id="8610007178382119196" name="timeSource" index="12uRbP" />
+      </concept>
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
@@ -219,7 +218,7 @@
       <property role="2AWWZJ" value="gcc" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3r8Kxs" value="make" />
-      <property role="2AWWZI" value="-std=c99 -I/usr/include -pthread" />
+      <property role="2AWWZI" value="-std=c99 -I/usr/include" />
       <property role="1FkSt$" value="-g  -I/usr/include/" />
     </node>
     <node concept="2eOfOl" id="3xRFG9PQKjc" role="2ePNbc">
@@ -248,7 +247,9 @@
       <node concept="1OId_O" id="6bs538mtCDq" role="1OIqLV">
         <ref role="1OIdAa" node="3xRFG9PQKir" resolve="sched" />
       </node>
-      <node concept="1KpjJf" id="5gYn0x7VE0O" role="1NkNSE" />
+      <node concept="1KpjJf" id="5gYn0x7VE0O" role="1NkNSE">
+        <ref role="12uRbP" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
+      </node>
     </node>
   </node>
   <node concept="N3F5e" id="3xRFG9PQKhB">
@@ -420,11 +421,6 @@
           <node concept="3TlMh9" id="6zcb4tIu5fP" role="6VY68">
             <property role="2hmy$m" value="50" />
           </node>
-        </node>
-      </node>
-      <node concept="scIFY" id="5gYn0x83haA" role="6qQK8">
-        <node concept="3O_q_g" id="5gYn0x84ZZM" role="scD4D">
-          <ref role="3O_q_h" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
         </node>
       </node>
     </node>

@@ -101,11 +101,10 @@
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
     <language id="d6943f81-8340-4661-9d57-8fc1e2d23b36" name="com.mbeddr.ext.concurrency.plainC">
-      <concept id="6070390538380293878" name="com.mbeddr.ext.concurrency.plainC.structure.TimeSourceConstraint" flags="ng" index="scIFY">
-        <child id="6070390538380299553" name="currentTimeExpression" index="scD4D" />
-      </concept>
       <concept id="2184369924327143820" name="com.mbeddr.ext.concurrency.plainC.structure.CurrentTimeExpression" flags="ng" index="1FK8_j" />
-      <concept id="7587272608860492786" name="com.mbeddr.ext.concurrency.plainC.structure.PlainCStrategy" flags="ng" index="1KpjJf" />
+      <concept id="7587272608860492786" name="com.mbeddr.ext.concurrency.plainC.structure.PlainCStrategy" flags="ng" index="1KpjJf">
+        <reference id="8610007178382119196" name="timeSource" index="12uRbP" />
+      </concept>
     </language>
     <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
       <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
@@ -353,7 +352,9 @@
       <node concept="1OId_O" id="7tWSY$ODosq" role="1OIqLV">
         <ref role="1OIdAa" node="3qlQk_gyS6H" resolve="schedule1" />
       </node>
-      <node concept="1KpjJf" id="5gYn0x7VE0O" role="1NkNSE" />
+      <node concept="1KpjJf" id="5gYn0x7VE0O" role="1NkNSE">
+        <ref role="12uRbP" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
+      </node>
     </node>
     <node concept="3i2$bm" id="3qlQk_ggYq4" role="2Q9xDr">
       <node concept="3i3YCL" id="3qlQk_ggYqm" role="3i30U9">
@@ -656,11 +657,6 @@
             <node concept="13Raex" id="7tWSY$OFOKU" role="1A7$0i">
               <ref role="13RKfd" node="3qlQk_gyJ$f" resolve="_componentAdd1" />
               <ref role="13Radk" node="7tWSY$OGcQs" resolve="add1" />
-            </node>
-          </node>
-          <node concept="scIFY" id="3qlQk_gyS6Q" role="6qQK8">
-            <node concept="3O_q_g" id="3qlQk_gyS6R" role="scD4D">
-              <ref role="3O_q_h" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
             </node>
           </node>
         </node>

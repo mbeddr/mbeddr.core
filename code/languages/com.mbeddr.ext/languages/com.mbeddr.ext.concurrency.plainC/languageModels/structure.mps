@@ -40,6 +40,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -49,21 +52,17 @@
     <property role="TrG5h" value="PlainCStrategy" />
     <property role="34LRSv" value="plainC" />
     <ref role="1TJDcQ" to="5wll:12_KeTzXJV3" resolve="ConcurrencyGenerationStrategy" />
-  </node>
-  <node concept="1TIwiD" id="5gYn0x83brQ">
-    <property role="TrG5h" value="TimeSourceConstraint" />
-    <property role="34LRSv" value="timeSource" />
-    <ref role="1TJDcQ" to="5wll:66UaKxBOkrZ" resolve="SchedulingConstraint" />
-    <node concept="1TJgyj" id="5gYn0x83cOx" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="currentTimeExpression" />
+    <node concept="1TJgyj" id="7tWSY$P1T4s" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="timeSource" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <ref role="20lvS9" to="x27k:5_l8w1EmTvx" resolve="Function" />
     </node>
   </node>
   <node concept="1TIwiD" id="5gYn0x8dfvo">
     <property role="TrG5h" value="TaskSection" />
     <property role="34LRSv" value="section" />
+    <property role="3GE5qa" value="internal" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyi" id="1TgsdXP2LBY" role="1TKVEl">
       <property role="TrG5h" value="id" />
@@ -85,6 +84,7 @@
   <node concept="1TIwiD" id="5gYn0x8phia">
     <property role="TrG5h" value="GotoSectionStatement" />
     <property role="34LRSv" value="goto section" />
+    <property role="3GE5qa" value="internal" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="5gYn0x8phii" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -99,6 +99,7 @@
   <node concept="1TIwiD" id="1TgsdXPjRmm">
     <property role="TrG5h" value="ExitTaskStatement" />
     <property role="34LRSv" value="exit task" />
+    <property role="3GE5qa" value="internal" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="PrWs8" id="42ri$nY_gv0" role="PzmwI">
       <ref role="PrY4T" node="42ri$nY_f8k" resolve="IGotoSectionStatement" />
@@ -114,6 +115,7 @@
     <property role="34LRSv" value="acquire lock" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="internal" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyi" id="42ri$nYjE3J" role="1TKVEl">
       <property role="TrG5h" value="readLock" />
@@ -129,6 +131,7 @@
   <node concept="1TIwiD" id="1TgsdXQ2U9D">
     <property role="TrG5h" value="LockDeclaration" />
     <property role="34LRSv" value="lock" />
+    <property role="3GE5qa" value="internal" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1TgsdXQ2U9E" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
@@ -140,6 +143,7 @@
   <node concept="1TIwiD" id="1TgsdXQ2VVj">
     <property role="TrG5h" value="ReleaseLockStatement" />
     <property role="34LRSv" value="release lock" />
+    <property role="3GE5qa" value="internal" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyi" id="42ri$nYjF9L" role="1TKVEl">
       <property role="TrG5h" value="readLock" />
@@ -155,6 +159,7 @@
   <node concept="1TIwiD" id="42ri$nYgYJ_">
     <property role="TrG5h" value="GotoSectionAfterStatement" />
     <property role="34LRSv" value="goto section after" />
+    <property role="3GE5qa" value="internal" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="42ri$nYgZoD" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -169,11 +174,13 @@
   <node concept="1TIwiD" id="42ri$nYm5NG">
     <property role="TrG5h" value="TaskDataPointerExpression" />
     <property role="34LRSv" value="taskDataPointer" />
+    <property role="3GE5qa" value="internal" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="42ri$nY$URH">
     <property role="TrG5h" value="GotoNextSectionStatement" />
     <property role="34LRSv" value="goto next section" />
+    <property role="3GE5qa" value="internal" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="PrWs8" id="42ri$nY_fOi" role="PzmwI">
       <ref role="PrY4T" node="42ri$nY_f8k" resolve="IGotoSectionStatement" />
@@ -181,10 +188,12 @@
   </node>
   <node concept="PlHQZ" id="42ri$nY_f8k">
     <property role="TrG5h" value="IGotoSectionStatement" />
+    <property role="3GE5qa" value="internal" />
   </node>
   <node concept="1TIwiD" id="42ri$nYZqkA">
     <property role="TrG5h" value="PreemptionPointStatement" />
     <property role="34LRSv" value="preemption point" />
+    <property role="3GE5qa" value="internal" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
   </node>
 </model>

@@ -67,10 +67,9 @@
       </concept>
     </language>
     <language id="d6943f81-8340-4661-9d57-8fc1e2d23b36" name="com.mbeddr.ext.concurrency.plainC">
-      <concept id="6070390538380293878" name="com.mbeddr.ext.concurrency.plainC.structure.TimeSourceConstraint" flags="ng" index="scIFY">
-        <child id="6070390538380299553" name="currentTimeExpression" index="scD4D" />
+      <concept id="7587272608860492786" name="com.mbeddr.ext.concurrency.plainC.structure.PlainCStrategy" flags="ng" index="1KpjJf">
+        <reference id="8610007178382119196" name="timeSource" index="12uRbP" />
       </concept>
-      <concept id="7587272608860492786" name="com.mbeddr.ext.concurrency.plainC.structure.PlainCStrategy" flags="ng" index="1KpjJf" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
@@ -113,9 +112,6 @@
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
-      <concept id="5950410542643524492" name="com.mbeddr.core.modules.structure.FunctionCall" flags="ng" index="3O_q_g">
-        <reference id="5950410542643524493" name="function" index="3O_q_h" />
-      </concept>
       <concept id="6610873504380357354" name="com.mbeddr.core.modules.structure.GlobalVarRef" flags="ng" index="1S7827">
         <reference id="6610873504380357355" name="var" index="1S7826" />
       </concept>
@@ -216,7 +212,7 @@
       <property role="2AWWZJ" value="gcc" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3r8Kxs" value="make" />
-      <property role="2AWWZI" value="-std=c99 -I/usr/include -pthread" />
+      <property role="2AWWZI" value="-std=c99 -I/usr/include" />
       <property role="1FkSt$" value="-g " />
     </node>
     <node concept="2eOfOl" id="73JrkgytYRR" role="2ePNbc">
@@ -236,7 +232,9 @@
       <node concept="2Q9FjX" id="73JrkgytYRW" role="2Q9FjI" />
     </node>
     <node concept="1NkVLJ" id="2dxXn_m$kGz" role="2Q9xDr">
-      <node concept="1KpjJf" id="2ZMK30Sn$Lo" role="1NkNSE" />
+      <node concept="1KpjJf" id="2ZMK30Sn$Lo" role="1NkNSE">
+        <ref role="12uRbP" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
+      </node>
       <node concept="1OId_O" id="6bs538msuRG" role="1OIqLV">
         <ref role="1OIdAa" node="12_KeTzYMQ0" resolve="sched" />
       </node>
@@ -387,11 +385,6 @@
           <node concept="3TlMh9" id="6zcb4tIu4VW" role="6VY68">
             <property role="2hmy$m" value="100" />
           </node>
-        </node>
-      </node>
-      <node concept="scIFY" id="2ZMK30Sn_ip" role="6qQK8">
-        <node concept="3O_q_g" id="2ZMK30Sn_MO" role="scD4D">
-          <ref role="3O_q_h" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
         </node>
       </node>
     </node>

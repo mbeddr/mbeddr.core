@@ -75,10 +75,9 @@
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
     <language id="d6943f81-8340-4661-9d57-8fc1e2d23b36" name="com.mbeddr.ext.concurrency.plainC">
-      <concept id="6070390538380293878" name="com.mbeddr.ext.concurrency.plainC.structure.TimeSourceConstraint" flags="ng" index="scIFY">
-        <child id="6070390538380299553" name="currentTimeExpression" index="scD4D" />
+      <concept id="7587272608860492786" name="com.mbeddr.ext.concurrency.plainC.structure.PlainCStrategy" flags="ng" index="1KpjJf">
+        <reference id="8610007178382119196" name="timeSource" index="12uRbP" />
       </concept>
-      <concept id="7587272608860492786" name="com.mbeddr.ext.concurrency.plainC.structure.PlainCStrategy" flags="ng" index="1KpjJf" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
@@ -240,7 +239,7 @@
       <property role="2AWWZJ" value="gcc" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3r8Kxs" value="make" />
-      <property role="2AWWZI" value="-std=c99 -I/usr/include -pthread" />
+      <property role="2AWWZI" value="-std=c99 -I/usr/include" />
       <property role="1FkSt$" value="-g -I/usr/include/" />
     </node>
     <node concept="2eOfOl" id="4mSSgpjq7vj" role="2ePNbc">
@@ -269,7 +268,9 @@
       <node concept="1OId_O" id="6bs538mtCPb" role="1OIqLV">
         <ref role="1OIdAa" node="4mSSgpjq6Rg" resolve="sched" />
       </node>
-      <node concept="1KpjJf" id="2ZMK30SaVH3" role="1NkNSE" />
+      <node concept="1KpjJf" id="2ZMK30SaVH3" role="1NkNSE">
+        <ref role="12uRbP" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
+      </node>
     </node>
   </node>
   <node concept="N3F5e" id="4mSSgpjq6Mg">
@@ -445,11 +446,6 @@
           <node concept="3TlMh9" id="6zcb4tIu9ra" role="6VY68">
             <property role="2hmy$m" value="10" />
           </node>
-        </node>
-      </node>
-      <node concept="scIFY" id="2ZMK30SaW16" role="6qQK8">
-        <node concept="3O_q_g" id="2ZMK30SaWV8" role="scD4D">
-          <ref role="3O_q_h" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
         </node>
       </node>
     </node>
