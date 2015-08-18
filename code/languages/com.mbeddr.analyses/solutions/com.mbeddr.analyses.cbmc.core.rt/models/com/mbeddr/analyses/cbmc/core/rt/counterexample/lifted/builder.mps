@@ -31,7 +31,7 @@
     <import index="yz9a" ref="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" />
     <import index="q9jj" ref="r:9bb65e44-f83e-4e38-ac95-7e443359a2f7(com.mbeddr.analyses.utils.log)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(java.io@java_stub)" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -141,7 +141,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -6759,22 +6759,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="67iKQ7oHRGe" role="3cqZAp" />
-        <node concept="3clFbF" id="67iKQ7oHS1Y" role="3cqZAp">
-          <node concept="2OqwBi" id="67iKQ7oHS1V" role="3clFbG">
-            <node concept="10M0yZ" id="67iKQ7oHS1W" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="67iKQ7oHS1X" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="67iKQ7oHShL" role="37wK5m">
-                <property role="Xl_RC" value="---------------------------- in LocaLifCore ----------------" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="67iKQ7oHRMG" role="3cqZAp" />
         <node concept="3cpWs6" id="67iKQ7oFQdj" role="3cqZAp">
           <node concept="1rXfSq" id="67iKQ7oFQdk" role="3cqZAk">
             <ref role="37wK5l" to="8ear:4ngEEZdbuHU" resolve="safeCreateResultList" />

@@ -164,6 +164,7 @@
       <concept id="1192796902958" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" flags="nn" index="2Sf5sV" />
       <concept id="2522969319638091381" name="jetbrains.mps.lang.intentions.structure.BaseIntentionDeclaration" flags="ig" index="2ZfUlf">
         <property id="2522969319638091386" name="isAvailableInChildNodes" index="2ZfUl0" />
+        <property id="2522969319638091385" name="isErrorIntention" index="2ZfUl3" />
         <reference id="2522969319638198290" name="forConcept" index="2ZfgGC" />
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
         <child id="2522969319638093994" name="childFilterFunction" index="2ZfVeg" />
@@ -3544,6 +3545,54 @@
                         </node>
                         <node concept="3TrEf2" id="ednJFOucBu" role="2OqNvi">
                           <ref role="3Tt5mk" to="tpee:fzcpWvL" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1b4F2fn$Pur">
+    <property role="3GE5qa" value="helpers" />
+    <property role="TrG5h" value="replaceWithOfConceptOp" />
+    <property role="2ZfUl3" value="true" />
+    <ref role="2ZfgGC" to="hba4:XaN6GmuUM" resolve="FilterOperation" />
+    <node concept="2S6ZIM" id="1b4F2fn$Pus" role="2ZfVej">
+      <node concept="3clFbS" id="1b4F2fn$Put" role="2VODD2">
+        <node concept="3clFbF" id="1b4F2fn$Sze" role="3cqZAp">
+          <node concept="Xl_RD" id="1b4F2fn$Szd" role="3clFbG">
+            <property role="Xl_RC" value="Replace with ofConcept&lt;&gt;" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1b4F2fn$Puu" role="2ZfgGD">
+      <node concept="3clFbS" id="1b4F2fn$Puv" role="2VODD2">
+        <node concept="3clFbF" id="1b4F2fn$TzE" role="3cqZAp">
+          <node concept="2OqwBi" id="1b4F2fn$U06" role="3clFbG">
+            <node concept="2Sf5sV" id="1b4F2fn$TzD" role="2Oq$k0" />
+            <node concept="1P9Npp" id="1b4F2fn$Uc$" role="2OqNvi">
+              <node concept="2pJPEk" id="1b4F2fn$Udm" role="1P9ThW">
+                <node concept="2pJPED" id="1b4F2fn$Ue8" role="2pJPEn">
+                  <ref role="2pJxaS" to="tp25:44$dP9uanu0" resolve="OfConceptOperation" />
+                  <node concept="2pIpSj" id="1b4F2fn$UfL" role="2pJxcM">
+                    <ref role="2pIpSl" to="tp25:44$dP9uar_c" />
+                    <node concept="2pJPED" id="1b4F2fn_0oJ" role="2pJxcZ">
+                      <ref role="2pJxaS" to="tp25:h8chp0G" resolve="RefConcept_Reference" />
+                      <node concept="2pIpSj" id="1b4F2fn_0ps" role="2pJxcM">
+                        <ref role="2pIpSl" to="tp25:h8cht0$" />
+                        <node concept="36biLy" id="1b4F2fn_0qf" role="2pJxcZ">
+                          <node concept="2OqwBi" id="1b4F2fn_0tq" role="36biLW">
+                            <node concept="2Sf5sV" id="1b4F2fn_0r3" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="1b4F2fn_0Pp" role="2OqNvi">
+                              <ref role="3Tt5mk" to="hba4:XaN6GmuUN" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>

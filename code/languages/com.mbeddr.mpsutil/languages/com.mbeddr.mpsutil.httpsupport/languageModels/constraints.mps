@@ -98,7 +98,7 @@
               <node concept="liA8E" id="7rr3ESJCKuQ" role="2OqNvi">
                 <ref role="37wK5l" to="e2lb:~String.matches(java.lang.String):boolean" resolve="matches" />
                 <node concept="Xl_RD" id="7rr3ESJCKuR" role="37wK5m">
-                  <property role="Xl_RC" value="[a-zA-Z[_]][a-zA-Z0-9[-][_]]*" />
+                  <property role="Xl_RC" value="[a-zA-Z[_]][a-zA-Z0-9[-][_]/]*" />
                 </node>
               </node>
             </node>
