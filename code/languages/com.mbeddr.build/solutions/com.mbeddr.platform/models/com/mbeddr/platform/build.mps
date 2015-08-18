@@ -6010,12 +6010,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4X7wieqKjiz" role="3bR37C">
-          <node concept="3bR9La" id="4X7wieqKji$" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:3MI1gu0Qmnt" resolve="jetbrains.mps.baseLanguage.extensionMethods" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="4X7wieqKji_" role="3bR37C">
           <node concept="3bR9La" id="4X7wieqKjiA" role="1SiIV1">
             <property role="3bR36h" value="false" />
