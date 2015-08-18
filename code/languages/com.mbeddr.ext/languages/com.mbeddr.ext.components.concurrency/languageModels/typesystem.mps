@@ -51,6 +51,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -58,6 +61,7 @@
   </registry>
   <node concept="1YbPZF" id="7tWSY$OOvkl">
     <property role="TrG5h" value="typeof_ComponentInstanceFieldRef" />
+    <property role="3GE5qa" value="internal" />
     <node concept="3clFbS" id="7tWSY$OOvkm" role="18ibNy">
       <node concept="1Z5TYs" id="7tWSY$OOvmE" role="3cqZAp">
         <node concept="mw_s8" id="7tWSY$OOvn4" role="1ZfhKB">
@@ -91,6 +95,7 @@
   </node>
   <node concept="1YbPZF" id="7tWSY$OO$NX">
     <property role="TrG5h" value="typeof_ComponentInstanceRunnableCall" />
+    <property role="3GE5qa" value="internal" />
     <node concept="3clFbS" id="7tWSY$OO$NY" role="18ibNy">
       <node concept="1Z5TYs" id="7tWSY$OO$PI" role="3cqZAp">
         <node concept="mw_s8" id="7tWSY$OO$Q8" role="1ZfhKB">

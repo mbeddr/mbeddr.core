@@ -35,6 +35,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -43,6 +46,7 @@
   <node concept="1TIwiD" id="3Xsb2sPNBw4">
     <property role="TrG5h" value="SectionInComponent" />
     <property role="34LRSv" value="section" />
+    <property role="3GE5qa" value="internal" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3Xsb2sPNCoG" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -128,6 +132,7 @@
   </node>
   <node concept="1TIwiD" id="7tWSY$ONv9C">
     <property role="TrG5h" value="ComponentInstanceFieldRef" />
+    <property role="3GE5qa" value="internal" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="7tWSY$ONvaD" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -144,6 +149,7 @@
   </node>
   <node concept="1TIwiD" id="7tWSY$ONvgr">
     <property role="TrG5h" value="ComponentInstanceRunnableCall" />
+    <property role="3GE5qa" value="internal" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="7tWSY$ONvg$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -170,6 +176,23 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5NTfFgKis2X" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5NTfFgKog$i">
+    <property role="TrG5h" value="NameOfComponentInstanceFunction" />
+    <property role="3GE5qa" value="internal" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="5NTfFgKog$T" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="instance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
+    </node>
+    <node concept="1TJgyj" id="5NTfFgKog$U" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="runnable" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
     </node>
   </node>
 </model>

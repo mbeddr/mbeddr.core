@@ -72,6 +72,11 @@
         <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="1M2fIO" id="7tWSY$OC430">
     <ref role="1M2myG" to="qnb1:7tWSY$OC418" resolve="TaskInComponentReference" />
@@ -129,6 +134,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7tWSY$OOkzJ">
+    <property role="3GE5qa" value="internal" />
     <ref role="1M2myG" to="qnb1:7tWSY$ONv9C" resolve="ComponentInstanceFieldRef" />
     <node concept="1N5Pfh" id="7tWSY$OOk$8" role="1Mr941">
       <ref role="1N5Vy1" to="qnb1:7tWSY$ONvaG" />
@@ -157,6 +163,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7tWSY$OOwES">
+    <property role="3GE5qa" value="internal" />
     <ref role="1M2myG" to="qnb1:7tWSY$ONvgr" resolve="ComponentInstanceRunnableCall" />
     <node concept="1N5Pfh" id="7tWSY$OOwET" role="1Mr941">
       <ref role="1N5Vy1" to="qnb1:7tWSY$ONvgv" />

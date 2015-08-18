@@ -54,8 +54,14 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="24kQdi" id="3Xsb2sPNCoO">
+    <property role="3GE5qa" value="internal" />
     <ref role="1XX52x" to="qnb1:3Xsb2sPNBw4" resolve="SectionInComponent" />
     <node concept="3F1sOY" id="3Xsb2sPND4z" role="2wV5jI">
       <ref role="1NtTu8" to="qnb1:3Xsb2sPNCoG" />
@@ -113,6 +119,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7tWSY$ONvaQ">
+    <property role="3GE5qa" value="internal" />
     <ref role="1XX52x" to="qnb1:7tWSY$ONv9C" resolve="ComponentInstanceFieldRef" />
     <node concept="3EZMnI" id="7tWSY$ONvbe" role="2wV5jI">
       <node concept="1iCGBv" id="7tWSY$ONvbo" role="3EZMnx">
@@ -155,6 +162,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7tWSY$ONvi_">
+    <property role="3GE5qa" value="internal" />
     <ref role="1XX52x" to="qnb1:7tWSY$ONvgr" resolve="ComponentInstanceRunnableCall" />
     <node concept="3EZMnI" id="7tWSY$ONviB" role="2wV5jI">
       <node concept="1iCGBv" id="7tWSY$ONviL" role="3EZMnx">
@@ -205,6 +213,46 @@
         </node>
       </node>
       <node concept="l2Vlx" id="7tWSY$ONviE" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5NTfFgKogQO">
+    <property role="3GE5qa" value="internal" />
+    <ref role="1XX52x" to="qnb1:5NTfFgKog$i" resolve="NameOfComponentInstanceFunction" />
+    <node concept="3EZMnI" id="5NTfFgKohfg" role="2wV5jI">
+      <node concept="3F0ifn" id="5NTfFgKohfq" role="3EZMnx">
+        <property role="3F0ifm" value="nameOf&lt;" />
+        <node concept="11LMrY" id="5NTfFgKohl6" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="5NTfFgKohgf" role="3EZMnx">
+        <ref role="1NtTu8" to="qnb1:5NTfFgKog$U" />
+        <node concept="1sVBvm" id="5NTfFgKohgh" role="1sWHZn">
+          <node concept="3F0A7n" id="5NTfFgKohgv" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5NTfFgKohgK" role="3EZMnx">
+        <property role="3F0ifm" value="in" />
+      </node>
+      <node concept="1iCGBv" id="5NTfFgKohhd" role="3EZMnx">
+        <ref role="1NtTu8" to="qnb1:5NTfFgKog$T" />
+        <node concept="1sVBvm" id="5NTfFgKohhf" role="1sWHZn">
+          <node concept="3F0A7n" id="5NTfFgKohh_" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5NTfFgKohfz" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <node concept="11L4FC" id="5NTfFgKohjq" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5NTfFgKohfj" role="2iSdaV" />
     </node>
   </node>
 </model>
