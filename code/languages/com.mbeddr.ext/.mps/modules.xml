@@ -30,8 +30,8 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.statemachines/statemachines.mpl" folder="statemachine" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.units/com.mbeddr.ext.units.mpl" folder="units" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.parallel.primitives.runtime/com.mbeddr.ext.parallel.primitives.runtime.msd" folder="parallel.primitives" />
-      <modulePath path="$PROJECT_DIR$/solutions/test.ex.ext.components.concurrency/test.ex.ext.components.concurrency.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.comp_mocking/comp_mocking.msd" folder="tests.comp" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components.concurrency/test.ex.ext.components.concurrency.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components.sri/sri.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components/components.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.compositecomponents/compositecomponents.msd" folder="tests.comp" />
