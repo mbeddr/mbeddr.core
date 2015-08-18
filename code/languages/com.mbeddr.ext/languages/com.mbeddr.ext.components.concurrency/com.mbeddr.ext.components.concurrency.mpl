@@ -103,7 +103,7 @@
               <mapping-set-element>
                 <generator generatorUID="157eb382-2fb0-4af4-9ab6-8929ef608112(com.mbeddr.ext.concurrency.pthreads#2549588765560339794)" />
                 <external-mapping>
-                  <all-local-mappings />
+                  <mapping-node modelUID="r:9ee94508-9417-4d96-92d1-0929f29534d4(com.mbeddr.ext.concurrency.pthreads.generator.template.main@generator)" nodeID="2549588765560339795" />
                 </external-mapping>
               </mapping-set-element>
             </mapping-set>
@@ -117,10 +117,20 @@
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
-            <generator generatorUID="d042d2ee-93c8-4944-a7e3-e2f4f86c3f9a(com.mbeddr.ext.concurrency.plainC#7587272608860477450)" />
-            <external-mapping>
-              <mapping-node modelUID="r:f2d58214-2cd0-4751-90cb-df4411372a84(com.mbeddr.ext.concurrency.plainC.generator.template.main@generator)" nodeID="7587272608860477451" />
-            </external-mapping>
+            <mapping-set>
+              <mapping-set-element>
+                <generator generatorUID="d042d2ee-93c8-4944-a7e3-e2f4f86c3f9a(com.mbeddr.ext.concurrency.plainC#7587272608860477450)" />
+                <external-mapping>
+                  <mapping-node modelUID="r:f2d58214-2cd0-4751-90cb-df4411372a84(com.mbeddr.ext.concurrency.plainC.generator.template.main@generator)" nodeID="7587272608860477451" />
+                </external-mapping>
+              </mapping-set-element>
+              <mapping-set-element>
+                <generator generatorUID="157eb382-2fb0-4af4-9ab6-8929ef608112(com.mbeddr.ext.concurrency.pthreads#2549588765560339794)" />
+                <external-mapping>
+                  <mapping-node modelUID="r:9ee94508-9417-4d96-92d1-0929f29534d4(com.mbeddr.ext.concurrency.pthreads.generator.template.main@generator)" nodeID="2549588765560339795" />
+                </external-mapping>
+              </mapping-set-element>
+            </mapping-set>
           </lesser-priority-mapping>
         </mapping-priority-rule>
         <mapping-priority-rule kind="strictly_before">

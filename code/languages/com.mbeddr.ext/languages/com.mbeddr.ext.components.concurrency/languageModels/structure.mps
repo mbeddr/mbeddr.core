@@ -164,5 +164,13 @@
       <ref role="20lvS9" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5NTfFgKis1A">
+    <property role="TrG5h" value="ComponentsConcurrencyConfigItem" />
+    <property role="34LRSv" value="concurrency in components" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5NTfFgKis2X" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
+    </node>
+  </node>
 </model>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:21e1b006-24ad-424b-995c-496eb4579f22(test.ex.ext.components.concurrency.simple)">
+<model ref="r:21e1b006-24ad-424b-995c-496eb4579f22(test.ex.ext.components.concurrency.simple.plainC)">
   <persistence version="9" />
   <languages>
     <use id="3f445ef3-54ad-4ae5-a22d-91c3ce06375e" name="com.mbeddr.ext.components.concurrency" version="0" />
@@ -85,7 +85,6 @@
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
     <language id="d6943f81-8340-4661-9d57-8fc1e2d23b36" name="com.mbeddr.ext.concurrency.plainC">
-      <concept id="2184369924327143820" name="com.mbeddr.ext.concurrency.plainC.structure.CurrentTimeExpression" flags="ng" index="1FK8_j" />
       <concept id="7587272608860492786" name="com.mbeddr.ext.concurrency.plainC.structure.PlainCStrategy" flags="ng" index="1KpjJf">
         <reference id="8610007178382119196" name="timeSource" index="12uRbP" />
       </concept>
@@ -267,7 +266,6 @@
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
       </concept>
-      <concept id="5763383285156373018" name="com.mbeddr.core.expressions.structure.MinusExpression" flags="ng" index="2BOcil" />
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
@@ -389,13 +387,7 @@
               <node concept="3O_q_g" id="3qlQk_gfjQL" role="1_9egR">
                 <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
                 <node concept="PhEJO" id="3qlQk_gfjQM" role="3O_q_j">
-                  <property role="PhEJT" value="task 'multiplyBy2' executed %llu , %u \n" />
-                </node>
-                <node concept="2BOcil" id="3qlQk_gfjQN" role="3O_q_j">
-                  <node concept="EbZIE" id="3qlQk_ggpZN" role="3TlMhJ">
-                    <ref role="EbZID" node="3qlQk_ggpLr" resolve="startTime" />
-                  </node>
-                  <node concept="1FK8_j" id="3qlQk_gfjQP" role="3TlMhI" />
+                  <property role="PhEJT" value="task 'multiplyBy2' executed , %u \n" />
                 </node>
                 <node concept="EbZIE" id="3qlQk_gwDuf" role="3O_q_j">
                   <ref role="EbZID" node="3qlQk_ggpCB" resolve="executionsMul2" />
@@ -447,13 +439,7 @@
               <node concept="3O_q_g" id="5gYn0x825mW" role="1_9egR">
                 <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
                 <node concept="PhEJO" id="5gYn0x825mX" role="3O_q_j">
-                  <property role="PhEJT" value="task 'add1' executed %llu , %u \n" />
-                </node>
-                <node concept="2BOcil" id="1TgsdXPU6Rn" role="3O_q_j">
-                  <node concept="EbZIE" id="3qlQk_ggpZD" role="3TlMhJ">
-                    <ref role="EbZID" node="3qlQk_ggpLr" resolve="startTime" />
-                  </node>
-                  <node concept="1FK8_j" id="1TgsdXPU5Mu" role="3TlMhI" />
+                  <property role="PhEJT" value="task 'add1' executed , %u \n" />
                 </node>
                 <node concept="EbZIE" id="3qlQk_gwD_i" role="3O_q_j">
                   <ref role="EbZID" node="3qlQk_ggpG_" resolve="executionsAdd1" />
@@ -532,8 +518,8 @@
           </node>
           <node concept="1_9egQ" id="3qlQk_ggCze" role="3XIRFZ">
             <node concept="3pqW6w" id="3qlQk_ggCzt" role="1_9egR">
-              <node concept="3O_q_g" id="3qlQk_ggCPy" role="3TlMhJ">
-                <ref role="3O_q_h" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
+              <node concept="3TlMh9" id="7tWSY$QCmEu" role="3TlMhJ">
+                <property role="2hmy$m" value="0" />
               </node>
               <node concept="EbZIE" id="3qlQk_ggCzc" role="3TlMhI">
                 <ref role="EbZID" node="3qlQk_ggpLr" resolve="startTime" />
@@ -725,9 +711,6 @@
     </node>
     <node concept="3GEVxB" id="3qlQk_ggp48" role="2OODSX">
       <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
-    </node>
-    <node concept="3GEVxB" id="3qlQk_ggCHa" role="2OODSX">
-      <ref role="3GEb4d" to="ke8p:5gYn0x84VoQ" resolve="TimeUtil" />
     </node>
   </node>
   <node concept="2v9HqL" id="3xRFG9PQKja">
