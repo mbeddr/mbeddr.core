@@ -678,6 +678,13 @@
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="1EZSCJhrMYU" role="1TKVEl">
+      <property role="TrG5h" value="header" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="1EZSCJhrMTi" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:7RHXOmw3XK2" resolve="IRequiresHeaderImport" />
+    </node>
   </node>
   <node concept="PlHQZ" id="7HkFchP0Cf3">
     <property role="3GE5qa" value="loopsNStuff" />
