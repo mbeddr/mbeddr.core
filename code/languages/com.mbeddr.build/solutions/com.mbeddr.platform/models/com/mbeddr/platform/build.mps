@@ -4099,9 +4099,6 @@
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
           </node>
         </node>
-        <node concept="1E0d5M" id="1oM0ei22v7U" role="1E1XAP">
-          <ref role="1E0d5P" node="1oM0ei222QR" resolve="com.mbeddr.mpsutil.spreferences.runtime" />
-        </node>
         <node concept="1SiIV0" id="1oM0ei22v7V" role="3bR37C">
           <node concept="1Busua" id="1oM0ei22v7W" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
@@ -4183,8 +4180,8 @@
             <ref role="3bR37D" node="1oM0ei222QR" resolve="com.mbeddr.mpsutil.spreferences.runtime" />
           </node>
         </node>
-        <node concept="1E0d5M" id="7E1iuqfXeYh" role="1E1XAP">
-          <ref role="1E0d5P" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+        <node concept="1E0d5M" id="3dCiRmUU5$8" role="1E1XAP">
+          <ref role="1E0d5P" node="1oM0ei222QR" resolve="com.mbeddr.mpsutil.spreferences.runtime" />
         </node>
       </node>
       <node concept="1E1JtD" id="KILMQH6GzO" role="2G$12L">
