@@ -20833,6 +20833,10 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="1EZSCJhfDuM" role="3acgRq">
+      <ref role="30HIoZ" to="p7vm:1OLGDVff_yJ" resolve="NoMwComponentsGenStrategy" />
+      <node concept="b5Tf3" id="1EZSCJhg1qh" role="1lVwrX" />
+    </node>
     <node concept="30QchW" id="wOd6nl4XG1" role="30SoJX">
       <ref role="30HIoZ" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
       <node concept="3gB$ML" id="wOd6nl4XG3" role="3gCiVm">
