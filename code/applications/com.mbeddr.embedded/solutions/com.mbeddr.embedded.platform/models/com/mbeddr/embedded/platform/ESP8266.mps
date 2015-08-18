@@ -113,11 +113,9 @@
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="5308710777891643206" name="com.mbeddr.core.pointers.structure.NullExpression" flags="ng" index="Ea8Gl" />
-      <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
       <concept id="1595838349830846141" name="com.mbeddr.core.pointers.structure.ReferenceExpr" flags="ng" index="YInwV" />
       <concept id="279446265608459824" name="com.mbeddr.core.pointers.structure.PointerType" flags="ng" index="3wxxNl" />
       <concept id="279446265608463015" name="com.mbeddr.core.pointers.structure.DerefExpr" flags="ng" index="3wxyx2" />
-      <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
     <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
       <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
@@ -177,6 +175,7 @@
         <property id="6156524541422553710" name="path" index="3N1Lgt" />
         <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
+      <concept id="4881264737620519319" name="com.mbeddr.core.base.structure.FileSystemDirPicker" flags="ng" index="3RfPnX" />
     </language>
     <language id="3660caeb-9434-4a02-a7a1-ba0bbb2106d1" name="de.itemis.mbeddr.cimporter">
       <concept id="4767496760281788976" name="de.itemis.mbeddr.cimporter.structure.ImportElement" flags="ng" index="igBWV">
@@ -240,9 +239,6 @@
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
       </concept>
-      <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
-        <child id="4185783222026475860" name="body" index="3XIRFX" />
-      </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
       <concept id="7308356872494660981" name="com.mbeddr.core.modules.structure.GlobalConstantFuntionArgumentRef" flags="ng" index="39I4aJ">
         <reference id="7308356872494660982" name="arg" index="39I4aG" />
@@ -261,8 +257,11 @@
     <language id="68ac5365-14e5-4bad-965a-0d8a21262400" name="com.mbeddr.embedded.esp8266">
       <concept id="7595578942775811465" name="com.mbeddr.embedded.esp8266.structure.Esp8266Platform" flags="ng" index="12Zzt7">
         <property id="7595578942775837195" name="port" index="12ZUz5" />
-        <property id="7595578942775837186" name="sdk" index="12ZUzc" />
-        <property id="7595578942775837182" name="xtensaRoot" index="12ZUGK" />
+        <child id="1927508255675515470" name="sdk" index="3b$Y35" />
+        <child id="1927508255675513792" name="xtensaRoot" index="3b_1_b" />
+      </concept>
+      <concept id="1927508255675932334" name="com.mbeddr.embedded.esp8266.structure.UserInitFunction" flags="ng" index="3bzrK_">
+        <child id="1927508255676324911" name="body" index="3bxVU$" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -2690,21 +2689,21 @@
                     <property role="2hmy$m" value="1" />
                   </node>
                   <node concept="2BPB98" id="1c9NWo4aE89" role="3TlMhJ">
-                    <node concept="2BOcil" id="1c9NWo4aEOK" role="1_9fRO">
-                      <node concept="2BPB98" id="1c9NWo4aEOJ" role="3TlMhI">
-                        <node concept="39I4aJ" id="1c9NWo4aEOI" role="1_9fRO">
-                          <ref role="39I4aG" node="1c9NWo4aE8w" resolve="hipos" />
+                    <node concept="2BOciq" id="1c9NWo4aEON" role="1_9fRO">
+                      <node concept="2BOcil" id="1c9NWo4aEOK" role="3TlMhI">
+                        <node concept="2BPB98" id="1c9NWo4aEOJ" role="3TlMhI">
+                          <node concept="39I4aJ" id="1c9NWo4aEOI" role="1_9fRO">
+                            <ref role="39I4aG" node="1c9NWo4aE8w" resolve="hipos" />
+                          </node>
                         </node>
-                      </node>
-                      <node concept="2BOciq" id="1c9NWo4aEON" role="3TlMhJ">
-                        <node concept="2BPB98" id="1c9NWo4aEOM" role="3TlMhI">
+                        <node concept="2BPB98" id="1c9NWo4aEOM" role="3TlMhJ">
                           <node concept="39I4aJ" id="1c9NWo4aEOL" role="1_9fRO">
                             <ref role="39I4aG" node="1c9NWo4aE8y" resolve="lowpos" />
                           </node>
                         </node>
-                        <node concept="3TlMh9" id="1c9NWo4aE8d" role="3TlMhJ">
-                          <property role="2hmy$m" value="1" />
-                        </node>
+                      </node>
+                      <node concept="3TlMh9" id="1c9NWo4aE8d" role="3TlMhJ">
+                        <property role="2hmy$m" value="1" />
                       </node>
                     </node>
                   </node>
@@ -4610,9 +4609,17 @@
       </node>
     </node>
     <node concept="12Zzt7" id="6_CUGSFMXX2" role="2AWWZH">
-      <property role="12ZUGK" value="/Volumes/ESP\ 1/esp-open-sdk/xtensa-lx106-elf/bin" />
-      <property role="12ZUzc" value="/Volumes/ESP\ 1/esp-open-sdk/sdk" />
       <property role="12ZUz5" value="/dev/tty.SLAB_USBtoUART" />
+      <node concept="3RfPnX" id="1EZSCJhbz8u" role="3b$Y35">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="/Users/berndkolb/tools/esp-open-sdk/sdk" />
+      </node>
+      <node concept="3RfPnX" id="1EZSCJhbz8w" role="3b_1_b">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="/Users/berndkolb/tools/esp-open-sdk/xtensa-lx106-elf/bin" />
+      </node>
     </node>
   </node>
   <node concept="N3F5e" id="7nVLveWmid4">
@@ -4671,10 +4678,16 @@
         </node>
       </node>
     </node>
-    <node concept="N3Fnx" id="7nVLveWmid8" role="N3F5h">
-      <property role="TrG5h" value="main" />
-      <property role="2OOxQR" value="true" />
-      <node concept="3XIRFW" id="7nVLveWmida" role="3XIRFX">
+    <node concept="2NXPZ9" id="1EZSCJheeuq" role="N3F5h">
+      <property role="TrG5h" value="empty_1439882941412_1" />
+    </node>
+    <node concept="3bzrK_" id="1EZSCJheeDx" role="N3F5h">
+      <property role="TrG5h" value="user_init" />
+      <node concept="19Rifw" id="1EZSCJheeDy" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="1EZSCJheeD$" role="3bxVU$">
         <node concept="3t9XKO" id="7nVLveWnlua" role="3XIRFZ">
           <ref role="3t9XKR" node="7nVLveWmind" resolve="config" />
         </node>
@@ -4687,33 +4700,6 @@
             <node concept="3TlMh9" id="7nVLveWmmU0" role="2H6KYo">
               <property role="2hmy$m" value="42" />
             </node>
-          </node>
-        </node>
-        <node concept="2BFjQ_" id="7nVLveWmidi" role="3XIRFZ">
-          <node concept="3TlMh9" id="7nVLveWmidj" role="2BFjQA">
-            <property role="2hmy$m" value="0" />
-          </node>
-        </node>
-      </node>
-      <node concept="26Vqph" id="7nVLveWmidc" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="19RgSI" id="7nVLveWmidd" role="1UOdpc">
-        <property role="TrG5h" value="argc" />
-        <node concept="26Vqph" id="7nVLveWmide" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-      <node concept="19RgSI" id="7nVLveWmidf" role="1UOdpc">
-        <property role="TrG5h" value="argv" />
-        <node concept="3J0A42" id="7nVLveWmidg" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-          <node concept="Pu267" id="7nVLveWmidh" role="2umbIo">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
           </node>
         </node>
       </node>
