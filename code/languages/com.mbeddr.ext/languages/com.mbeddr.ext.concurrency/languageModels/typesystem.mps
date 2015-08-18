@@ -57,7 +57,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -699,11 +699,11 @@
           <node concept="2OqwBi" id="12_KeTzWu8C" role="3fr31v">
             <node concept="2OqwBi" id="12_KeTzWsko" role="2Oq$k0">
               <node concept="2OqwBi" id="12_KeTzWrT7" role="2Oq$k0">
-                <node concept="1YBJjd" id="12_KeTzWrQM" role="2Oq$k0">
-                  <ref role="1YBMHb" node="12_KeTzWrQf" resolve="cc" />
-                </node>
                 <node concept="2qgKlT" id="3qlQk_gzmVz" role="2OqNvi">
                   <ref role="37wK5l" to="qozy:3qlQk_gz7DW" resolve="getTask" />
+                </node>
+                <node concept="1YBJjd" id="12_KeTzWrQM" role="2Oq$k0">
+                  <ref role="1YBMHb" node="12_KeTzWrQf" resolve="cc" />
                 </node>
               </node>
               <node concept="3TrEf2" id="12_KeTzWtKh" role="2OqNvi">
@@ -769,11 +769,11 @@
           <node concept="2OqwBi" id="4hMIGYxmYcL" role="3fr31v">
             <node concept="2OqwBi" id="4hMIGYxmYcM" role="2Oq$k0">
               <node concept="2OqwBi" id="4hMIGYxmYcN" role="2Oq$k0">
-                <node concept="1YBJjd" id="4hMIGYxmYhc" role="2Oq$k0">
-                  <ref role="1YBMHb" node="4hMIGYxmY7N" resolve="bc" />
-                </node>
                 <node concept="2qgKlT" id="3qlQk_gzm5q" role="2OqNvi">
                   <ref role="37wK5l" to="qozy:3qlQk_gz7DW" resolve="getTask" />
+                </node>
+                <node concept="1YBJjd" id="4hMIGYxmYhc" role="2Oq$k0">
+                  <ref role="1YBMHb" node="4hMIGYxmY7N" resolve="bc" />
                 </node>
               </node>
               <node concept="3TrEf2" id="4hMIGYxmYcQ" role="2OqNvi">
@@ -1742,6 +1742,43 @@
     <node concept="1YaCAy" id="6u_410TQ6g2" role="1YuTPh">
       <property role="TrG5h" value="fc" />
       <ref role="1YaFvo" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="3pVON$40sIE">
+    <property role="TrG5h" value="check_AtomicStatement" />
+    <property role="3GE5qa" value="atomic" />
+    <node concept="3clFbS" id="3pVON$40sIF" role="18ibNy">
+      <node concept="3clFbJ" id="3pVON$40B0A" role="3cqZAp">
+        <node concept="3clFbS" id="3pVON$40B0B" role="3clFbx">
+          <node concept="a7r0C" id="3pVON$40CCj" role="3cqZAp">
+            <node concept="Xl_RD" id="3pVON$40CC_" role="a7wSD">
+              <property role="Xl_RC" value="atomic statements should not be nested because this prevents global lock ordering and may result in deadlocks; please use one atomic with several access specifiers" />
+            </node>
+            <node concept="1YBJjd" id="3pVON$40CHj" role="2OEOjV">
+              <ref role="1YBMHb" node="3pVON$40sIH" resolve="as" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="3pVON$40BRZ" role="3clFbw">
+          <node concept="2OqwBi" id="3pVON$40Bqv" role="2Oq$k0">
+            <node concept="1YBJjd" id="3pVON$40B0M" role="2Oq$k0">
+              <ref role="1YBMHb" node="3pVON$40sIH" resolve="as" />
+            </node>
+            <node concept="2Xjw5R" id="3pVON$40BLH" role="2OqNvi">
+              <node concept="1xMEDy" id="3pVON$40BLJ" role="1xVPHs">
+                <node concept="chp4Y" id="3pVON$40BMi" role="ri$Ld">
+                  <ref role="cht4Q" to="5wll:vg5qBCdJwc" resolve="AtomicStatement" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3x8VRR" id="3pVON$40CB3" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3pVON$40sIH" role="1YuTPh">
+      <property role="TrG5h" value="as" />
+      <ref role="1YaFvo" to="5wll:vg5qBCdJwc" resolve="AtomicStatement" />
     </node>
   </node>
 </model>

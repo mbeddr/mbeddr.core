@@ -90,7 +90,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -1432,10 +1432,10 @@
       <node concept="3clFbS" id="2ajpxDX4K1b" role="3clF47">
         <node concept="3clFbF" id="2ajpxDX4K3H" role="3cqZAp">
           <node concept="2OqwBi" id="2ajpxDX4K6q" role="3clFbG">
-            <node concept="13iPFW" id="2ajpxDX4K3G" role="2Oq$k0" />
             <node concept="2qgKlT" id="3qlQk_gzeTn" role="2OqNvi">
               <ref role="37wK5l" node="3qlQk_gz7DW" resolve="getTask" />
             </node>
+            <node concept="13iPFW" id="2ajpxDX4K3G" role="2Oq$k0" />
           </node>
         </node>
       </node>
@@ -1459,10 +1459,10 @@
       <node concept="3clFbS" id="4hMIGYxmXQL" role="3clF47">
         <node concept="3clFbF" id="4hMIGYxmXQW" role="3cqZAp">
           <node concept="2OqwBi" id="4hMIGYxmXTD" role="3clFbG">
-            <node concept="13iPFW" id="4hMIGYxmXQV" role="2Oq$k0" />
             <node concept="2qgKlT" id="3qlQk_gzetI" role="2OqNvi">
               <ref role="37wK5l" node="3qlQk_gz7DW" resolve="getTask" />
             </node>
+            <node concept="13iPFW" id="4hMIGYxmXQV" role="2Oq$k0" />
           </node>
         </node>
       </node>
@@ -2430,6 +2430,36 @@
       </node>
       <node concept="3Tqbb2" id="3qlQk_gAeGk" role="3clF45">
         <ref role="ehGHo" to="5wll:73Jrkgytd$o" resolve="Task" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="7eb6p5AoXIi">
+    <property role="3GE5qa" value="schedule" />
+    <ref role="13h7C2" to="5wll:5M$KybkpkcD" resolve="PeriodConstraint" />
+    <node concept="13hLZK" id="7eb6p5AoXIj" role="13h7CW">
+      <node concept="3clFbS" id="7eb6p5AoXIk" role="2VODD2">
+        <node concept="3clFbF" id="7eb6p5Apa1P" role="3cqZAp">
+          <node concept="2OqwBi" id="7eb6p5Aprar" role="3clFbG">
+            <node concept="2OqwBi" id="7eb6p5Apb_8" role="2Oq$k0">
+              <node concept="13iPFW" id="7eb6p5Apa1O" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7eb6p5ApqYF" role="2OqNvi">
+                <ref role="3Tt5mk" to="5wll:5M$KybkpkcE" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="7eb6p5AprhQ" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6fK2cW$P6rU" role="3cqZAp">
+          <node concept="2OqwBi" id="6fK2cW$P6rV" role="3clFbG">
+            <node concept="2OqwBi" id="6fK2cW$P6rW" role="2Oq$k0">
+              <node concept="13iPFW" id="6fK2cW$P6rX" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6fK2cW$P6Qj" role="2OqNvi">
+                <ref role="3Tt5mk" to="5wll:6fK2cW$P4M2" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="6fK2cW$P6rZ" role="2OqNvi" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

@@ -50,7 +50,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -791,6 +791,10 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="3pVON$40sEg">
+    <property role="3GE5qa" value="atomic" />
+    <ref role="1M2myG" to="5wll:vg5qBCdJwc" resolve="AtomicStatement" />
   </node>
 </model>
 
