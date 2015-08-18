@@ -3367,7 +3367,9 @@
                           <node concept="3cpWs6" id="6fK2cW_4VN9" role="3cqZAp">
                             <node concept="2ShNRf" id="6fK2cW_4W6j" role="3cqZAk">
                               <node concept="2T8Vx0" id="6fK2cW_4YBn" role="2ShVmc">
-                                <node concept="2I9FWS" id="6fK2cW_4YBp" role="2T96Bj" />
+                                <node concept="2I9FWS" id="6fK2cW_4YBp" role="2T96Bj">
+                                  <ref role="2I9WkF" to="5wll:5M$KybkpkcD" resolve="PeriodConstraint" />
+                                </node>
                               </node>
                             </node>
                           </node>
