@@ -702,7 +702,7 @@
     <ref role="1XX52x" to="5wll:12_KeTzWRZv" resolve="WCETConstraint" />
     <node concept="3EZMnI" id="12_KeTzWRZT" role="2wV5jI">
       <node concept="3F0ifn" id="12_KeTzWS00" role="3EZMnx">
-        <property role="3F0ifm" value="wcet of" />
+        <property role="3F0ifm" value="check wcet of" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="1iCGBv" id="12_KeTzWS06" role="3EZMnx">
@@ -715,6 +715,9 @@
         </node>
       </node>
       <node concept="l2Vlx" id="12_KeTzWRZW" role="2iSdaV" />
+      <node concept="3F0ifn" id="5M$KybkpFIP" role="3EZMnx">
+        <property role="3F0ifm" value="is" />
+      </node>
       <node concept="3F1sOY" id="6zcb4tIvPiz" role="3EZMnx">
         <ref role="1NtTu8" to="5wll:6zcb4tIvPid" />
       </node>
@@ -1267,6 +1270,45 @@
       <node concept="3F0ifn" id="7YbLqLwvI3Z" role="3EZMnx">
         <property role="3F0ifm" value=";" />
         <ref role="1k5W1q" to="r4b4:2CEi94dhkRt" resolve="Semi" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5M$KybkpC5_">
+    <property role="3GE5qa" value="schedule" />
+    <ref role="1XX52x" to="5wll:5M$KybkpkcD" resolve="PeriodConstraint" />
+    <node concept="3EZMnI" id="5M$KybkpCdH" role="2wV5jI">
+      <node concept="3F0ifn" id="5M$KybkpCdI" role="3EZMnx">
+        <property role="3F0ifm" value="check period of" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="1iCGBv" id="5M$KybkpCdJ" role="3EZMnx">
+        <ref role="1NtTu8" to="5wll:66UaKxBOktH" />
+        <node concept="1sVBvm" id="5M$KybkpCdK" role="1sWHZn">
+          <node concept="3F0A7n" id="5M$KybkpCdL" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5M$KybkpCdM" role="2iSdaV" />
+      <node concept="3F0ifn" id="5M$KybkpFJe" role="3EZMnx">
+        <property role="3F0ifm" value="is" />
+      </node>
+      <node concept="3F1sOY" id="5M$KybkpCdN" role="3EZMnx">
+        <ref role="1NtTu8" to="5wll:5M$KybkpkcE" />
+      </node>
+      <node concept="3F0ifn" id="6fK2cW$P6bP" role="3EZMnx">
+        <property role="3F0ifm" value=".." />
+      </node>
+      <node concept="3F1sOY" id="6fK2cW$P6ch" role="3EZMnx">
+        <ref role="1NtTu8" to="5wll:6fK2cW$P4M2" />
+      </node>
+      <node concept="3F0ifn" id="5M$KybkpCdO" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dhkRt" resolve="Semi" />
+        <node concept="Vb9p2" id="5M$KybkpCdP" role="3F10Kt">
+          <property role="Vbekb" value="ITALIC" />
+        </node>
       </node>
     </node>
   </node>

@@ -319,7 +319,7 @@
   <node concept="1TIwiD" id="12_KeTzWRZv">
     <property role="3GE5qa" value="schedule" />
     <property role="TrG5h" value="WCETConstraint" />
-    <property role="34LRSv" value="wcet" />
+    <property role="34LRSv" value="check wcet" />
     <ref role="1TJDcQ" node="66UaKxBOktG" resolve="SingleTaskSchedulingConstraint" />
     <node concept="1TJgyj" id="6zcb4tIvPid" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -696,6 +696,24 @@
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="PrWs8" id="7YbLqLwvKJT" role="PzmwI">
       <ref role="PrY4T" node="vg5qBCdJwB" resolve="ITaskSpecific" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5M$KybkpkcD">
+    <property role="3GE5qa" value="schedule" />
+    <property role="TrG5h" value="PeriodConstraint" />
+    <property role="34LRSv" value="check period" />
+    <ref role="1TJDcQ" node="66UaKxBOktG" resolve="SingleTaskSchedulingConstraint" />
+    <node concept="1TJgyj" id="5M$KybkpkcE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="minPeriod" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6zcb4tI8Sbk" resolve="TimeWithUnit" />
+    </node>
+    <node concept="1TJgyj" id="6fK2cW$P4M2" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="maxPeriod" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6zcb4tI8Sbk" resolve="TimeWithUnit" />
     </node>
   </node>
 </model>

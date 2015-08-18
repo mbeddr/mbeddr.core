@@ -170,6 +170,9 @@
         <property id="7551459360495620501" name="unit" index="6VZRi" />
         <child id="7551459360495619535" name="value" index="6VY68" />
       </concept>
+      <concept id="6675674002518000425" name="com.mbeddr.ext.concurrency.structure.PeriodConstraint" flags="ng" index="28Ko4b">
+        <child id="6675674002518000426" name="period" index="28Ko48" />
+      </concept>
       <concept id="1787645152775151429" name="com.mbeddr.ext.concurrency.structure.ConcurrentQueueDeclaration" flags="ng" index="2jkAae">
         <property id="1787645152775151519" name="blockable" index="2jkA9k" />
         <child id="1787645152775152489" name="size" index="2jk_Uy" />
@@ -856,6 +859,14 @@
             <node concept="6VUUj" id="6bs538lGL2i" role="6GRza">
               <node concept="3TlMh9" id="6bs538lGL2s" role="6VY68">
                 <property role="2hmy$m" value="10" />
+              </node>
+            </node>
+          </node>
+          <node concept="28Ko4b" id="6fK2cW$McgF" role="6qQK8">
+            <ref role="6qQL_" node="12_KeTzW_69" resolve="aCyclicTask" />
+            <node concept="6VUUj" id="6fK2cW$McgG" role="28Ko48">
+              <node concept="3TlMh9" id="6fK2cW$Mg_I" role="6VY68">
+                <property role="2hmy$m" value="20" />
               </node>
             </node>
           </node>

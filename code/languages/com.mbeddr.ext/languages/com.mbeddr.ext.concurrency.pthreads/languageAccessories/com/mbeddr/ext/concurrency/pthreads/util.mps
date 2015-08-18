@@ -177,6 +177,7 @@
       <concept id="2799490600706093744" name="com.mbeddr.core.expressions.structure.ModuloExpression" flags="ng" index="1hY7HI" />
       <concept id="4273030818770088796" name="com.mbeddr.core.expressions.structure.DirectMultiAssignmentExpression" flags="ng" index="3omEAZ" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
+      <concept id="8860443239512147449" name="com.mbeddr.core.expressions.structure.LessExpression" flags="ng" index="3Tl9Jn" />
       <concept id="8860443239512147445" name="com.mbeddr.core.expressions.structure.GreaterExpression" flags="ng" index="3Tl9Jr" />
       <concept id="8860443239512128058" name="com.mbeddr.core.expressions.structure.BooleanType" flags="ng" index="3TlMgk" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
@@ -259,6 +260,58 @@
           </node>
         </node>
       </node>
+      <node concept="2vmPJf" id="6fK2cW$UnmS" role="2vmPJn">
+        <property role="2vn0DO" value="true" />
+        <property role="TrG5h" value="periodTooShort" />
+        <property role="2vmPJh" value="Task has underrun its min period" />
+        <node concept="2qqzEA" id="6fK2cW$UnmT" role="2qqzEG">
+          <property role="TrG5h" value="threadID" />
+          <node concept="26VqpV" id="6fK2cW$UnmU" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="2qqzEA" id="6fK2cW$UnmV" role="2qqzEG">
+          <property role="TrG5h" value="minPeriod" />
+          <node concept="26Vqp1" id="6fK2cW$UnmW" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="2qqzEA" id="6fK2cW$UnmX" role="2qqzEG">
+          <property role="TrG5h" value="actual" />
+          <node concept="26Vqp1" id="6fK2cW$UnmY" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="2vmPJf" id="6fK2cW$Ur0C" role="2vmPJn">
+        <property role="2vn0DO" value="true" />
+        <property role="TrG5h" value="periodTooLong" />
+        <property role="2vmPJh" value="Task has exceeded its max period" />
+        <node concept="2qqzEA" id="6fK2cW$Ur0D" role="2qqzEG">
+          <property role="TrG5h" value="threadID" />
+          <node concept="26VqpV" id="6fK2cW$Ur0E" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="2qqzEA" id="6fK2cW$Ur0F" role="2qqzEG">
+          <property role="TrG5h" value="maxPeriod" />
+          <node concept="26Vqp1" id="6fK2cW$Ur0G" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="2qqzEA" id="6fK2cW$Ur0H" role="2qqzEG">
+          <property role="TrG5h" value="actual" />
+          <node concept="26Vqp1" id="6fK2cW$Ur0I" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2NXPZ9" id="pNTuhIfkyY" role="N3F5h">
       <property role="TrG5h" value="empty_1437211820781_1" />
@@ -279,14 +332,12 @@
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
               </node>
-              <node concept="2BPB98" id="4hMIGYxgIqv" role="3XIe9u">
-                <node concept="2BOcil" id="4hMIGYxgIqw" role="1_9fRO">
-                  <node concept="3ZUYvv" id="1zeZsIbz6iY" role="3TlMhJ">
-                    <ref role="3ZUYvu" node="1zeZsIbz628" resolve="iterationStartTime" />
-                  </node>
-                  <node concept="3O_q_g" id="4hMIGYxgIqy" role="3TlMhI">
-                    <ref role="3O_q_h" node="4hMIGYwKdxK" resolve="time2" />
-                  </node>
+              <node concept="2BOcil" id="4hMIGYxgIqw" role="3XIe9u">
+                <node concept="3ZUYvv" id="1zeZsIbz6iY" role="3TlMhJ">
+                  <ref role="3ZUYvu" node="1zeZsIbz628" resolve="iterationStartTime" />
+                </node>
+                <node concept="3O_q_g" id="4hMIGYxgIqy" role="3TlMhI">
+                  <ref role="3O_q_h" node="4hMIGYwKdxK" resolve="time2" />
                 </node>
               </node>
             </node>
@@ -345,6 +396,128 @@
       <node concept="19RgSI" id="1zeZsIbz628" role="1UOdpc">
         <property role="TrG5h" value="iterationStartTime" />
         <node concept="26Vqp1" id="1zeZsIbz626" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="6fK2cW$Uno9" role="N3F5h">
+      <property role="TrG5h" value="empty_1439825846616_1" />
+    </node>
+    <node concept="N3Fnx" id="6fK2cW$U0r3" role="N3F5h">
+      <property role="TrG5h" value="checkPeriod" />
+      <property role="2OOxQR" value="true" />
+      <node concept="19Rifw" id="6fK2cW$U0r4" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="6fK2cW$U0r5" role="3XIRFX">
+        <node concept="c0U19" id="6fK2cW$U0r6" role="3XIRFZ">
+          <node concept="3XIRFW" id="6fK2cW$U0r7" role="c0U17">
+            <node concept="3XIRlf" id="6fK2cW$U0r8" role="3XIRFZ">
+              <property role="TrG5h" value="delta" />
+              <node concept="26Vqp1" id="6fK2cW$U0r9" role="2C2TGm">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+              </node>
+              <node concept="2BOcil" id="6fK2cW$U0rb" role="3XIe9u">
+                <node concept="3ZUYvv" id="6fK2cW$UhPW" role="3TlMhJ">
+                  <ref role="3ZUYvu" node="6fK2cW$U0rt" resolve="previousActivation" />
+                </node>
+                <node concept="3O_q_g" id="6fK2cW$U0rd" role="3TlMhI">
+                  <ref role="3O_q_h" node="4hMIGYwKdxK" resolve="time2" />
+                </node>
+              </node>
+            </node>
+            <node concept="c0U19" id="6fK2cW$U0re" role="3XIRFZ">
+              <node concept="3XIRFW" id="6fK2cW$U0rf" role="c0U17">
+                <node concept="2vn4wP" id="6fK2cW$U0rg" role="3XIRFZ">
+                  <node concept="2vn4wR" id="6fK2cW$U0rh" role="2vn6$T">
+                    <ref role="2vn4wS" node="4hMIGYxgF55" resolve="Errors" />
+                    <ref role="2vn4wT" node="6fK2cW$UnmS" resolve="periodTooShort" />
+                    <node concept="3ZUYvv" id="6fK2cW$U0ri" role="2qqZAa">
+                      <ref role="3ZUYvu" node="6fK2cW$U0rr" resolve="taskID" />
+                    </node>
+                    <node concept="3ZUYvv" id="6fK2cW$UoTY" role="2qqZAa">
+                      <ref role="3ZUYvu" node="6fK2cW$U0rv" resolve="minPeriod" />
+                    </node>
+                    <node concept="3ZVu4v" id="6fK2cW$U0rk" role="2qqZAa">
+                      <ref role="3ZVs_2" node="6fK2cW$U0r8" resolve="delta" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3Tl9Jn" id="6fK2cW$UlZ0" role="c0U16">
+                <node concept="3ZVu4v" id="6fK2cW$UlZ2" role="3TlMhI">
+                  <ref role="3ZVs_2" node="6fK2cW$U0r8" resolve="delta" />
+                </node>
+                <node concept="3ZUYvv" id="6fK2cW$UmES" role="3TlMhJ">
+                  <ref role="3ZUYvu" node="6fK2cW$U0rv" resolve="minPeriod" />
+                </node>
+              </node>
+            </node>
+            <node concept="c0U19" id="6fK2cW$UpAP" role="3XIRFZ">
+              <node concept="3XIRFW" id="6fK2cW$UpAQ" role="c0U17">
+                <node concept="2vn4wP" id="6fK2cW$UpAR" role="3XIRFZ">
+                  <node concept="2vn4wR" id="6fK2cW$UpAS" role="2vn6$T">
+                    <ref role="2vn4wS" node="4hMIGYxgF55" resolve="Errors" />
+                    <ref role="2vn4wT" node="6fK2cW$Ur0C" resolve="periodTooLong" />
+                    <node concept="3ZUYvv" id="6fK2cW$UpAT" role="2qqZAa">
+                      <ref role="3ZUYvu" node="6fK2cW$U0rr" resolve="taskID" />
+                    </node>
+                    <node concept="3ZUYvv" id="6fK2cW$UrIp" role="2qqZAa">
+                      <ref role="3ZUYvu" node="6fK2cW$Uh9j" resolve="maxPeriod" />
+                    </node>
+                    <node concept="3ZVu4v" id="6fK2cW$UpAV" role="2qqZAa">
+                      <ref role="3ZVs_2" node="6fK2cW$U0r8" resolve="delta" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3Tl9Jr" id="6fK2cW$UpBO" role="c0U16">
+                <node concept="3ZVu4v" id="6fK2cW$UpBQ" role="3TlMhI">
+                  <ref role="3ZVs_2" node="6fK2cW$U0r8" resolve="delta" />
+                </node>
+                <node concept="3ZUYvv" id="6fK2cW$Uqkg" role="3TlMhJ">
+                  <ref role="3ZUYvu" node="6fK2cW$Uh9j" resolve="maxPeriod" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Tl9Jr" id="6fK2cW$U0ro" role="c0U16">
+            <node concept="3TlMh9" id="6fK2cW$U0rp" role="3TlMhJ">
+              <property role="2hmy$m" value="0" />
+            </node>
+            <node concept="3ZUYvv" id="6fK2cW$U0rq" role="3TlMhI">
+              <ref role="3ZUYvu" node="6fK2cW$U0rt" resolve="previousActivation" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19RgSI" id="6fK2cW$U0rr" role="1UOdpc">
+        <property role="TrG5h" value="taskID" />
+        <node concept="26VqpV" id="6fK2cW$U0rs" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="6fK2cW$U0rt" role="1UOdpc">
+        <property role="TrG5h" value="previousActivation" />
+        <node concept="26Vqp1" id="6fK2cW$U0ru" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="6fK2cW$U0rv" role="1UOdpc">
+        <property role="TrG5h" value="minPeriod" />
+        <node concept="26Vqp1" id="6fK2cW$U0rw" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="6fK2cW$Uh9j" role="1UOdpc">
+        <property role="TrG5h" value="maxPeriod" />
+        <node concept="26Vqp1" id="6fK2cW$Uh9k" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>

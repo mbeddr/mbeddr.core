@@ -2338,5 +2338,35 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="7eb6p5AoXIi">
+    <property role="3GE5qa" value="schedule" />
+    <ref role="13h7C2" to="5wll:5M$KybkpkcD" resolve="PeriodConstraint" />
+    <node concept="13hLZK" id="7eb6p5AoXIj" role="13h7CW">
+      <node concept="3clFbS" id="7eb6p5AoXIk" role="2VODD2">
+        <node concept="3clFbF" id="7eb6p5Apa1P" role="3cqZAp">
+          <node concept="2OqwBi" id="7eb6p5Aprar" role="3clFbG">
+            <node concept="2OqwBi" id="7eb6p5Apb_8" role="2Oq$k0">
+              <node concept="13iPFW" id="7eb6p5Apa1O" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7eb6p5ApqYF" role="2OqNvi">
+                <ref role="3Tt5mk" to="5wll:5M$KybkpkcE" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="7eb6p5AprhQ" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6fK2cW$P6rU" role="3cqZAp">
+          <node concept="2OqwBi" id="6fK2cW$P6rV" role="3clFbG">
+            <node concept="2OqwBi" id="6fK2cW$P6rW" role="2Oq$k0">
+              <node concept="13iPFW" id="6fK2cW$P6rX" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6fK2cW$P6Qj" role="2OqNvi">
+                <ref role="3Tt5mk" to="5wll:6fK2cW$P4M2" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="6fK2cW$P6rZ" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
