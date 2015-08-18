@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:6469c6c6-0455-43ab-8dc6-b29c32f9e850(test.ex.ext.components.bug1214@tests)">
+<model ref="r:6469c6c6-0455-43ab-8dc6-b29c32f9e850(test.ex.ext.components.bug1214@tests)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
