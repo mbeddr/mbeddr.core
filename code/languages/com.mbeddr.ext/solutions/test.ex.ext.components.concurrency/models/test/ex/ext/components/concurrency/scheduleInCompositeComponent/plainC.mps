@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0c74f903-e99f-4d55-8745-3875e4382236(test.ex.ext.components.concurrency.scheduleInCompositeComponent)">
+<model ref="r:0c74f903-e99f-4d55-8745-3875e4382236(test.ex.ext.components.concurrency.scheduleInCompositeComponent.plainC)">
   <persistence version="9" />
   <languages>
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
@@ -101,7 +101,6 @@
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
     <language id="d6943f81-8340-4661-9d57-8fc1e2d23b36" name="com.mbeddr.ext.concurrency.plainC">
-      <concept id="2184369924327143820" name="com.mbeddr.ext.concurrency.plainC.structure.CurrentTimeExpression" flags="ng" index="1FK8_j" />
       <concept id="7587272608860492786" name="com.mbeddr.ext.concurrency.plainC.structure.PlainCStrategy" flags="ng" index="1KpjJf">
         <reference id="8610007178382119196" name="timeSource" index="12uRbP" />
       </concept>
@@ -425,11 +424,13 @@
                 <node concept="PhEJO" id="3qlQk_gfjQM" role="3O_q_j">
                   <property role="PhEJT" value="task 'mul2' executed %llu , %u \n" />
                 </node>
-                <node concept="2BOcil" id="3qlQk_gfjQN" role="3O_q_j">
+                <node concept="2BOcil" id="2kF1PD7t9qV" role="3O_q_j">
+                  <node concept="3O_q_g" id="2kF1PD7t9t4" role="3TlMhI">
+                    <ref role="3O_q_h" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
+                  </node>
                   <node concept="1S7827" id="3qlQk_gyNJd" role="3TlMhJ">
                     <ref role="1S7826" node="3qlQk_gyKHU" resolve="startTime" />
                   </node>
-                  <node concept="1FK8_j" id="3qlQk_gfjQP" role="3TlMhI" />
                 </node>
                 <node concept="EbZIE" id="3qlQk_gwDuf" role="3O_q_j">
                   <ref role="EbZID" node="3qlQk_ggpCB" resolve="executions" />
@@ -504,11 +505,13 @@
                 <node concept="PhEJO" id="7tWSY$OGcQw" role="3O_q_j">
                   <property role="PhEJT" value="task 'add1' executed %llu , %u \n" />
                 </node>
-                <node concept="2BOcil" id="7tWSY$OGcQz" role="3O_q_j">
+                <node concept="2BOcil" id="2kF1PD7t9$6" role="3O_q_j">
+                  <node concept="3O_q_g" id="2kF1PD7t9Ai" role="3TlMhI">
+                    <ref role="3O_q_h" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
+                  </node>
                   <node concept="1S7827" id="7tWSY$OGcQ$" role="3TlMhJ">
                     <ref role="1S7826" node="3qlQk_gyKHU" resolve="startTime" />
                   </node>
-                  <node concept="1FK8_j" id="7tWSY$OGcQ_" role="3TlMhI" />
                 </node>
                 <node concept="EbZIE" id="7tWSY$OGcQA" role="3O_q_j">
                   <ref role="EbZID" node="7tWSY$OGcQk" resolve="executions" />
