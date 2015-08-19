@@ -165,7 +165,6 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="1208623485264" name="jetbrains.mps.baseLanguage.structure.AbstractOperation" flags="nn" index="1B$H19" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -2231,7 +2230,9 @@
                   <node concept="3clFbF" id="44rcFjhYf6O" role="3cqZAp">
                     <node concept="2OqwBi" id="44rcFjhYfbE" role="3clFbG">
                       <node concept="30H73N" id="44rcFjhYf6N" role="2Oq$k0" />
-                      <node concept="1B$H19" id="44rcFjhYfbJ" role="2OqNvi" />
+                      <node concept="2qgKlT" id="7YSjiE7XVeZ" role="2OqNvi">
+                        <ref role="37wK5l" to="cw0:44rcFjhYmeR" resolve="getFqName" />
+                      </node>
                     </node>
                   </node>
                 </node>

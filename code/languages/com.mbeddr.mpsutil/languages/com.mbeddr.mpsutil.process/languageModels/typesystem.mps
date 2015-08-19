@@ -263,7 +263,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="6JByj2CeWsc" role="2OqNvi">
-              <ref role="37wK5l" to="cw0:rF8Sb98x6X" resolve="getOutputType" />
+              <ref role="37wK5l" to="cw0:rF8Sb98y7f" resolve="getOutputType" />
             </node>
           </node>
         </node>
@@ -456,7 +456,7 @@
     </node>
     <node concept="1YaCAy" id="1b4F2fo6wB4" role="1YuTPh">
       <property role="TrG5h" value="pofp" />
-      <ref role="1YaFvo" to="hbjw:1b4F2fo6w$R" resolve="ProgressOutputFunctionParam" />
+      <ref role="1YaFvo" to="hbjw:1b4F2fo6w$R" resolve="ProgressOutputFunctionParameter" />
     </node>
   </node>
   <node concept="1YbPZF" id="6JByj2CgLpM">
