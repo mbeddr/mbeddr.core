@@ -140,5 +140,11 @@
       <node concept="l2Vlx" id="1EZSCJhe6D6" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="1EZSCJhBRNK">
+    <ref role="1XX52x" to="bq7f:1EZSCJhBRtk" resolve="ESP8266PrintfStrategy" />
+    <node concept="PMmxH" id="1EZSCJhBROg" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
 </model>
 
