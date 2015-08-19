@@ -1574,7 +1574,7 @@
       <node concept="3clFbS" id="3IOp39i06Jr" role="3clF47">
         <node concept="3clFbF" id="3IOp39i0eGV" role="3cqZAp">
           <node concept="Xl_RD" id="3IOp39i0eGU" role="3clFbG">
-            <property role="Xl_RC" value="___actual" />
+            <property role="Xl_RC" value="actual" />
           </node>
         </node>
       </node>
@@ -1586,7 +1586,7 @@
       <node concept="3clFbS" id="3IOp39i0eHQ" role="3clF47">
         <node concept="3clFbF" id="3IOp39i0eIg" role="3cqZAp">
           <node concept="Xl_RD" id="3IOp39i0eIf" role="3clFbG">
-            <property role="Xl_RC" value="___expected" />
+            <property role="Xl_RC" value="expected" />
           </node>
         </node>
       </node>

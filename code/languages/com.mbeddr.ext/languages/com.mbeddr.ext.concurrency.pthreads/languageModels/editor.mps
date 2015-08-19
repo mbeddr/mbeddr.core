@@ -43,10 +43,19 @@
       <node concept="3EZMnI" id="4hMIGYxk3Br" role="3EZMnx">
         <node concept="l2Vlx" id="4hMIGYxk3Bs" role="2iSdaV" />
         <node concept="3F0ifn" id="4hMIGYxk3Bm" role="3EZMnx">
-          <property role="3F0ifm" value="check WCET at runtime:" />
+          <property role="3F0ifm" value="check WCET at runtime:  " />
         </node>
         <node concept="3F0A7n" id="4hMIGYxk3BG" role="3EZMnx">
           <ref role="1NtTu8" to="oevp:4hMIGYxk3B6" resolve="checkWCET" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="6fK2cW$Nxkf" role="3EZMnx">
+        <node concept="l2Vlx" id="6fK2cW$Nxkg" role="2iSdaV" />
+        <node concept="3F0ifn" id="6fK2cW$Nxkh" role="3EZMnx">
+          <property role="3F0ifm" value="check period at runtime:" />
+        </node>
+        <node concept="3F0A7n" id="6fK2cW$Nxki" role="3EZMnx">
+          <ref role="1NtTu8" to="oevp:6fK2cW$NuLK" resolve="checkPeriod" />
         </node>
       </node>
     </node>
