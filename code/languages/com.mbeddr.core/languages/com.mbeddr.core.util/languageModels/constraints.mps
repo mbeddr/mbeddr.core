@@ -1832,5 +1832,32 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="1EZSCJhNJEL">
+    <property role="3GE5qa" value="reporting.logging" />
+    <ref role="1M2myG" to="k146:1EZSCJhI$Q7" resolve="LogExpressionWord" />
+    <node concept="nKS2y" id="1EZSCJhNK1$" role="1MLUbF">
+      <node concept="3clFbS" id="1EZSCJhNK1_" role="2VODD2">
+        <node concept="3clFbF" id="1EZSCJhNK6w" role="3cqZAp">
+          <node concept="2OqwBi" id="1EZSCJhNKZh" role="3clFbG">
+            <node concept="2OqwBi" id="1EZSCJhNKcx" role="2Oq$k0">
+              <node concept="nLn13" id="1EZSCJhNK6v" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="1EZSCJhNKsT" role="2OqNvi">
+                <node concept="1xMEDy" id="1EZSCJhNKsV" role="1xVPHs">
+                  <node concept="chp4Y" id="1EZSCJhNKyc" role="ri$Ld">
+                    <ref role="cht4Q" to="k146:1EZSCJhF1F6" resolve="LogStatement" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="1EZSCJhNLIW" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1EZSCJhOFig">
+    <property role="3GE5qa" value="reporting.logging" />
+    <ref role="1M2myG" to="k146:1EZSCJhF1F6" resolve="LogStatement" />
+  </node>
 </model>
 

@@ -4131,6 +4131,19 @@
       </node>
       <node concept="17QB3L" id="3xqp6yfaGjO" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="4XMHJL4II9J" role="13h7CS">
+      <property role="TrG5h" value="getPrintfFormatString" />
+      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+      <node concept="3clFbS" id="4XMHJL4II9M" role="3clF47">
+        <node concept="3clFbF" id="4XMHJL4II9P" role="3cqZAp">
+          <node concept="Xl_RD" id="4XMHJL4II9Q" role="3clFbG">
+            <property role="Xl_RC" value="%s" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4XMHJL4II9N" role="3clF45" />
+      <node concept="3Tm1VV" id="4XMHJL4II9O" role="1B3o_S" />
+    </node>
     <node concept="13hLZK" id="2dQ321vzsSI" role="13h7CW">
       <node concept="3clFbS" id="2dQ321vzsSJ" role="2VODD2" />
     </node>

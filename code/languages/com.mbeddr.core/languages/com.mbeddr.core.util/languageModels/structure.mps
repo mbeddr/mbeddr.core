@@ -12,6 +12,7 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1446,6 +1447,32 @@
       <property role="20kJfa" value="error" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="C7pKq6jTD2" resolve="ErrorDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1EZSCJhF1F6">
+    <property role="3GE5qa" value="reporting.logging" />
+    <property role="TrG5h" value="LogStatement" />
+    <property role="34LRSv" value="log" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="1EZSCJhF1Yv" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="text" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1EZSCJhI$Q7">
+    <property role="3GE5qa" value="reporting.logging" />
+    <property role="TrG5h" value="LogExpressionWord" />
+    <property role="34LRSv" value="@expr" />
+    <node concept="1TJgyj" id="1EZSCJhI$Q8" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="1EZSCJhOiDJ" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
   </node>
 </model>
