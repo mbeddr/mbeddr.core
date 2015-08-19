@@ -131,7 +131,6 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
-      <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -185,7 +184,7 @@
       </concept>
       <concept id="1145572800087" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingsOperation" flags="nn" index="2Ttrtt" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
+      <concept id="1143512015885" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingOperation" flags="nn" index="YCak7" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -1684,7 +1683,7 @@
     <ref role="13h7C2" to="hbjw:rF8Sb8Oz3J" resolve="Extension" />
     <node concept="13i0hz" id="rF8Sb9aE$w" role="13h7CS">
       <property role="TrG5h" value="getProcess" />
-      <node concept="3Tmbuc" id="rF8Sb9aEFp" role="1B3o_S" />
+      <node concept="3Tm1VV" id="7YSjiE82mh7" role="1B3o_S" />
       <node concept="3clFbS" id="rF8Sb9aE$y" role="3clF47">
         <node concept="3clFbF" id="rF8Sb9aFdB" role="3cqZAp">
           <node concept="2OqwBi" id="rF8Sb9aEIO" role="3clFbG">
@@ -1732,24 +1731,35 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="7YSjiE87Cmu" role="3cqZAp">
+          <node concept="3cpWsn" id="7YSjiE87Cmv" role="3cpWs9">
+            <property role="TrG5h" value="process" />
+            <node concept="3Tqbb2" id="7YSjiE87Cmt" role="1tU5fm">
+              <ref role="ehGHo" to="hbjw:46fEo9VciUW" resolve="Process" />
+            </node>
+            <node concept="BsUDl" id="7YSjiE87Cmw" role="33vP2m">
+              <ref role="37wK5l" node="rF8Sb9aE$w" resolve="getProcess" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="rF8Sb906qU" role="3cqZAp">
           <node concept="3clFbS" id="rF8Sb906qW" role="3clFbx">
-            <node concept="3clFbF" id="rF8Sb905wY" role="3cqZAp">
-              <node concept="2OqwBi" id="rF8Sb906b0" role="3clFbG">
-                <node concept="BsUDl" id="rF8Sb9aEU6" role="2Oq$k0">
-                  <ref role="37wK5l" node="rF8Sb9aE$w" resolve="getProcess" />
+            <node concept="3cpWs6" id="7YSjiE8aGJk" role="3cqZAp">
+              <node concept="2OqwBi" id="7YSjiE8aGJm" role="3cqZAk">
+                <node concept="37vLTw" id="7YSjiE8aGJn" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7YSjiE87Cmv" resolve="process" />
                 </node>
-                <node concept="2qgKlT" id="rF8Sb906mk" role="2OqNvi">
+                <node concept="2qgKlT" id="7YSjiE8aGJo" role="2OqNvi">
                   <ref role="37wK5l" node="rF8Sb8ZYzQ" resolve="getVisibleSteps" />
-                  <node concept="1eOMI4" id="rF8Sb908NP" role="37wK5m">
-                    <node concept="10QFUN" id="rF8Sb908NQ" role="1eOMHV">
-                      <node concept="2OqwBi" id="rF8Sb908NM" role="10QFUP">
-                        <node concept="37vLTw" id="rF8Sb908NN" role="2Oq$k0">
+                  <node concept="1eOMI4" id="7YSjiE8aGJp" role="37wK5m">
+                    <node concept="10QFUN" id="7YSjiE8aGJq" role="1eOMHV">
+                      <node concept="2OqwBi" id="7YSjiE8aGJr" role="10QFUP">
+                        <node concept="37vLTw" id="7YSjiE8aGJs" role="2Oq$k0">
                           <ref role="3cqZAo" node="rF8Sb908l8" resolve="target" />
                         </node>
-                        <node concept="YBYNd" id="rF8Sb908NO" role="2OqNvi" />
+                        <node concept="YCak7" id="7YSjiE8aGJt" role="2OqNvi" />
                       </node>
-                      <node concept="3Tqbb2" id="rF8Sb908NL" role="10QFUM">
+                      <node concept="3Tqbb2" id="7YSjiE8aGJu" role="10QFUM">
                         <ref role="ehGHo" to="hbjw:46fEo9Vcu7m" resolve="Step" />
                       </node>
                     </node>
@@ -1766,16 +1776,16 @@
               </node>
             </node>
             <node concept="1mIQ4w" id="rF8Sb9076u" role="2OqNvi">
-              <node concept="chp4Y" id="rF8Sb9077N" role="cj9EA">
-                <ref role="cht4Q" to="hbjw:rF8Sb8Oz3Q" resolve="BeforeExtensionKind" />
+              <node concept="chp4Y" id="7YSjiE88Brk" role="cj9EA">
+                <ref role="cht4Q" to="hbjw:rF8Sb8Oz4J" resolve="AfterExtensionKind" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3cpWs6" id="rF8Sb905cn" role="3cqZAp">
           <node concept="2OqwBi" id="rF8Sb909et" role="3cqZAk">
-            <node concept="BsUDl" id="rF8Sb9aF23" role="2Oq$k0">
-              <ref role="37wK5l" node="rF8Sb9aE$w" resolve="getProcess" />
+            <node concept="37vLTw" id="7YSjiE87Cmx" role="2Oq$k0">
+              <ref role="3cqZAo" node="7YSjiE87Cmv" resolve="process" />
             </node>
             <node concept="2qgKlT" id="rF8Sb909ex" role="2OqNvi">
               <ref role="37wK5l" node="rF8Sb8ZYzQ" resolve="getVisibleSteps" />
