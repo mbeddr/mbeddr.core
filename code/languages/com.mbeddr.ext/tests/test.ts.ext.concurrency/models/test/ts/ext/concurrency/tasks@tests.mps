@@ -171,7 +171,8 @@
         <child id="7551459360495619535" name="value" index="6VY68" />
       </concept>
       <concept id="6675674002518000425" name="com.mbeddr.ext.concurrency.structure.PeriodConstraint" flags="ng" index="28Ko4b">
-        <child id="6675674002518000426" name="period" index="28Ko48" />
+        <child id="6675674002518000426" name="minPeriod" index="28Ko48" />
+        <child id="7201265489934568578" name="maxPeriod" index="1794hd" />
       </concept>
       <concept id="1787645152775151429" name="com.mbeddr.ext.concurrency.structure.ConcurrentQueueDeclaration" flags="ng" index="2jkAae">
         <property id="1787645152775151519" name="blockable" index="2jkA9k" />
@@ -866,6 +867,11 @@
             <ref role="6qQL_" node="12_KeTzW_69" resolve="aCyclicTask" />
             <node concept="6VUUj" id="6fK2cW$McgG" role="28Ko48">
               <node concept="3TlMh9" id="6fK2cW$Mg_I" role="6VY68">
+                <property role="2hmy$m" value="20" />
+              </node>
+            </node>
+            <node concept="6VUUj" id="6uWtNmiMo9F" role="1794hd">
+              <node concept="3TlMh9" id="6uWtNmiMohk" role="6VY68">
                 <property role="2hmy$m" value="20" />
               </node>
             </node>
