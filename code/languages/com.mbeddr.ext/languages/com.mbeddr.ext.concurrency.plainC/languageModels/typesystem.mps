@@ -155,6 +155,7 @@
   </node>
   <node concept="1YbPZF" id="1TgsdXP$fBg">
     <property role="TrG5h" value="typeof_CurrentTimeExpression" />
+    <property role="3GE5qa" value="internal" />
     <node concept="3clFbS" id="1TgsdXP$fBh" role="18ibNy">
       <node concept="1Z5TYs" id="1TgsdXP$fLT" role="3cqZAp">
         <node concept="mw_s8" id="1TgsdXP$fMt" role="1ZfhKB">

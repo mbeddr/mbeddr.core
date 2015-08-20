@@ -21,7 +21,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -80,6 +82,9 @@
     <node concept="PrWs8" id="1TgsdXP61gM" role="PzmwI">
       <ref role="PrY4T" to="tpck:hqLv6T6" resolve="IResolveInfo" />
     </node>
+    <node concept="PrWs8" id="2SCoDaNnHeY" role="PzmwI">
+      <ref role="PrY4T" node="2SCoDaNmbIv" resolve="IGeneratorOnlyConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5gYn0x8phia">
     <property role="TrG5h" value="GotoSectionStatement" />
@@ -108,7 +113,11 @@
   <node concept="1TIwiD" id="1TgsdXP$fAc">
     <property role="TrG5h" value="CurrentTimeExpression" />
     <property role="34LRSv" value="currentTime" />
+    <property role="3GE5qa" value="internal" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="2SCoDaNnHf9" role="PzmwI">
+      <ref role="PrY4T" node="2SCoDaNmbIv" resolve="IGeneratorOnlyConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1TgsdXQ2Txi">
     <property role="TrG5h" value="AcquireLockStatement" />
@@ -127,6 +136,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1TgsdXQ2U9D" resolve="LockDeclaration" />
     </node>
+    <node concept="PrWs8" id="2SCoDaNnHdX" role="PzmwI">
+      <ref role="PrY4T" node="2SCoDaNmbIv" resolve="IGeneratorOnlyConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1TgsdXQ2U9D">
     <property role="TrG5h" value="LockDeclaration" />
@@ -138,6 +150,9 @@
     </node>
     <node concept="PrWs8" id="1TgsdXQ2U9P" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="2SCoDaNnHeb" role="PzmwI">
+      <ref role="PrY4T" node="2SCoDaNmbIv" resolve="IGeneratorOnlyConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="1TgsdXQ2VVj">
@@ -154,6 +169,9 @@
       <property role="20kJfa" value="lock" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1TgsdXQ2U9D" resolve="LockDeclaration" />
+    </node>
+    <node concept="PrWs8" id="2SCoDaNnHeG" role="PzmwI">
+      <ref role="PrY4T" node="2SCoDaNmbIv" resolve="IGeneratorOnlyConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="42ri$nYgYJ_">
@@ -176,6 +194,9 @@
     <property role="34LRSv" value="taskDataPointer" />
     <property role="3GE5qa" value="internal" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="2SCoDaNnHeK" role="PzmwI">
+      <ref role="PrY4T" node="2SCoDaNmbIv" resolve="IGeneratorOnlyConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="42ri$nY$URH">
     <property role="TrG5h" value="GotoNextSectionStatement" />
@@ -189,6 +210,13 @@
   <node concept="PlHQZ" id="42ri$nY_f8k">
     <property role="TrG5h" value="IGotoSectionStatement" />
     <property role="3GE5qa" value="internal" />
+    <node concept="PrWs8" id="2SCoDaNnDA_" role="PrDN$">
+      <ref role="PrY4T" node="2SCoDaNmbIv" resolve="IGeneratorOnlyConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2SCoDaNmbIv">
+    <property role="3GE5qa" value="internal" />
+    <property role="TrG5h" value="IGeneratorOnlyConcept" />
   </node>
 </model>
 

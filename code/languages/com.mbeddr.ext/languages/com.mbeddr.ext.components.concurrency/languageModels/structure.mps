@@ -20,7 +20,9 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -61,6 +63,9 @@
     </node>
     <node concept="PrWs8" id="3qlQk_ggFgv" role="PzmwI">
       <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
+    </node>
+    <node concept="PrWs8" id="2SCoDaNoRL$" role="PzmwI">
+      <ref role="PrY4T" node="2SCoDaNoNQE" resolve="IGeneratorOnlyConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="3Xsb2sPPld7">
@@ -155,6 +160,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="v7ag:4AGl5dzwHVj" resolve="Field" />
     </node>
+    <node concept="PrWs8" id="2SCoDaNoPXL" role="PzmwI">
+      <ref role="PrY4T" node="2SCoDaNoNQE" resolve="IGeneratorOnlyConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7tWSY$ONvgr">
     <property role="TrG5h" value="ComponentInstanceRunnableCall" />
@@ -185,6 +193,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
     </node>
+    <node concept="PrWs8" id="2SCoDaNoPXT" role="PzmwI">
+      <ref role="PrY4T" node="2SCoDaNoNQE" resolve="IGeneratorOnlyConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5NTfFgKis1A">
     <property role="TrG5h" value="ComponentsConcurrencyConfigItem" />
@@ -210,6 +221,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
     </node>
+    <node concept="PrWs8" id="2SCoDaNoPXX" role="PzmwI">
+      <ref role="PrY4T" node="2SCoDaNoNQE" resolve="IGeneratorOnlyConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2kF1PD7crtS">
     <property role="3GE5qa" value="internal" />
@@ -228,6 +242,9 @@
   <node concept="PlHQZ" id="2kF1PD7cru$">
     <property role="3GE5qa" value="internal" />
     <property role="TrG5h" value="IComponentInstanceReference" />
+    <node concept="PrWs8" id="2SCoDaNoPXP" role="PrDN$">
+      <ref role="PrY4T" node="2SCoDaNoNQE" resolve="IGeneratorOnlyConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2kF1PD7cruM">
     <property role="3GE5qa" value="internal" />
@@ -248,6 +265,10 @@
     <node concept="PrWs8" id="2kF1PD7crvW" role="PzmwI">
       <ref role="PrY4T" node="2kF1PD7cru$" resolve="IComponentInstanceReference" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="2SCoDaNoNQE">
+    <property role="3GE5qa" value="internal" />
+    <property role="TrG5h" value="IGeneratorOnlyConcept" />
   </node>
 </model>
 
