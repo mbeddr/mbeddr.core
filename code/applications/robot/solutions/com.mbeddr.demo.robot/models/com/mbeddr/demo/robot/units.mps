@@ -77,6 +77,13 @@
   </registry>
   <node concept="CIrOI" id="5zHWU$G$0WY">
     <property role="TrG5h" value="Units" />
+    <node concept="CIrOH" id="1rMmLdr$Mdv" role="CIrPi">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="rel" />
+      <property role="CIruq" value="relative value" />
+      <node concept="CIsGf" id="1rMmLdr$Mdw" role="CIsG9" />
+    </node>
+    <node concept="134lye" id="1rMmLdr$LDW" role="CIrPi" />
     <node concept="CIrOH" id="5zHWU$G$0WZ" role="CIrPi">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="Hz" />
