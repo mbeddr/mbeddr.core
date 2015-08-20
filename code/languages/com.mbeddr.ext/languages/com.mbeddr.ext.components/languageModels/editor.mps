@@ -2024,6 +2024,7 @@
       </node>
       <node concept="1iCGBv" id="71UKpntoo8j" role="3EZMnx">
         <ref role="1NtTu8" to="v7ag:71UKpntoo88" />
+        <ref role="1ERwB7" node="5Thpq267jQg" resolve="replaceOperationCallWithExpression" />
         <node concept="1sVBvm" id="71UKpntoo8k" role="1sWHZn">
           <node concept="3F0A7n" id="71UKpntoo8m" role="2wV5jI">
             <property role="1Intyy" value="true" />
