@@ -280,7 +280,7 @@
                   <node concept="2pIpSj" id="66UaKxBAAYC" role="2pJxcM">
                     <ref role="2pIpSl" to="5wll:vg5qBCe_S8" />
                     <node concept="2pJPED" id="66UaKxBAB1P" role="2pJxcZ">
-                      <ref role="2pJxaS" to="5wll:vg5qBCdLAj" resolve="AccessSpecifier" />
+                      <ref role="2pJxaS" to="5wll:vg5qBCdLAj" resolve="GlobalVarAccessSpecifier" />
                       <node concept="2pJxcG" id="66UaKxBABEh" role="2pJxcM">
                         <ref role="2pJxcJ" to="5wll:vg5qBCe_P8" resolve="kind" />
                         <node concept="3f7Wdw" id="66UaKxBBru5" role="2pJxcZ">
@@ -469,6 +469,56 @@
       </node>
     </node>
     <node concept="1SWQZ3" id="6zcb4tIHW3I" role="lGtFl">
+      <property role="1SWRpm" value="CONCURRENCY" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="6u_410TNDUB">
+    <property role="TrG5h" value="addUseResource" />
+    <ref role="2ZfgGC" to="x27k:5_l8w1EmTvx" resolve="Function" />
+    <node concept="2Sbjvc" id="6u_410TNDUC" role="2ZfgGD">
+      <node concept="3clFbS" id="6u_410TNDUD" role="2VODD2">
+        <node concept="3clFbF" id="6u_410TNGue" role="3cqZAp">
+          <node concept="2OqwBi" id="6u_410TNHL0" role="3clFbG">
+            <node concept="2OqwBi" id="6u_410TNGF6" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6u_410TNGud" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="6u_410TNHHU" role="2OqNvi">
+                <node concept="3CFYIy" id="6u_410TNHIz" role="3CFYIz">
+                  <ref role="3CFYIx" to="5wll:6u_410TLnZf" resolve="UseResourceAnnotation" />
+                </node>
+              </node>
+            </node>
+            <node concept="zfrQC" id="6u_410TNHWb" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2S6ZIM" id="6u_410TNDUE" role="2ZfVej">
+      <node concept="3clFbS" id="6u_410TNDUF" role="2VODD2">
+        <node concept="3clFbF" id="6u_410TNEbA" role="3cqZAp">
+          <node concept="Xl_RD" id="6u_410TNEb_" role="3clFbG">
+            <property role="Xl_RC" value="Add Use Resource" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="6u_410TNEws" role="2ZfVeh">
+      <node concept="3clFbS" id="6u_410TNEwt" role="2VODD2">
+        <node concept="3clFbF" id="6u_410TNEyZ" role="3cqZAp">
+          <node concept="2OqwBi" id="6u_410TNG3o" role="3clFbG">
+            <node concept="2OqwBi" id="6u_410TNEPj" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6u_410TNEyY" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="6u_410TNFUy" role="2OqNvi">
+                <node concept="3CFYIy" id="6u_410TNFXY" role="3CFYIz">
+                  <ref role="3CFYIx" to="5wll:6u_410TLnZf" resolve="UseResourceAnnotation" />
+                </node>
+              </node>
+            </node>
+            <node concept="3w_OXm" id="6u_410TNGro" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="6u_410TNHX6" role="lGtFl">
       <property role="1SWRpm" value="CONCURRENCY" />
     </node>
   </node>

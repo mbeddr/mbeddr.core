@@ -426,5 +426,33 @@
       </node>
     </node>
   </node>
+  <node concept="2SFhMz" id="7GQSabAEmEN">
+    <property role="TrG5h" value="FieldRefInitialization" />
+    <property role="3GE5qa" value="analyzers.init" />
+    <ref role="3IfaGV" to="9xhd:7vcqB$mvpmV" resolve="InitializedVariablesAnalyzer" />
+    <node concept="3cs84T" id="7GQSabAEmEO" role="2ZI6Zx">
+      <property role="TrG5h" value="ref" />
+      <ref role="3ctLHM" to="v7ag:4AGl5dzwUZT" resolve="FieldRef" />
+    </node>
+    <node concept="3clFbS" id="7GQSabAEmEP" role="3ctKHH">
+      <node concept="2qeTo9" id="7GQSabAEmES" role="3cqZAp">
+        <node concept="3s5BLS" id="7GQSabAEmET" role="IgiVj" />
+        <node concept="2qfb11" id="7GQSabAEmEU" role="2qf8f6">
+          <ref role="2qfb1S" to="9xhd:7vcqB$mv$mt" resolve="defInit" />
+          <node concept="2OqwBi" id="7GQSabAEmEV" role="2qfb10">
+            <node concept="3cqzBR" id="7GQSabAEmEW" role="2Oq$k0">
+              <ref role="3cqzBQ" node="7GQSabAEmEO" resolve="ref" />
+            </node>
+            <node concept="3TrEf2" id="gfvXo5U8cL" role="2OqNvi">
+              <ref role="3Tt5mk" to="v7ag:4AGl5dzwUZU" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cqzBR" id="7GQSabAEmEY" role="aPEfM">
+          <ref role="3cqzBQ" node="7GQSabAEmEO" resolve="ref" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

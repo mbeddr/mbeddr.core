@@ -6,7 +6,7 @@
     <devkit ref="aa72fbcf-7e79-465b-a4d9-4517ef4624ee(com.mbeddr.concurrency)" />
   </languages>
   <imports>
-    <import index="bf6u" ref="r:9054466d-f8f4-4815-89d0-ec603639c8be(test.ex.ext.concurrency.singleTask)" implicit="true" />
+    <import index="bf6u" ref="r:9054466d-f8f4-4815-89d0-ec603639c8be(test.ex.ext.concurrency.singleTask)" />
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -202,7 +202,7 @@
     </language>
   </registry>
   <node concept="N3F5e" id="JlCmcDNyrl">
-    <property role="TrG5h" value="SingleTask" />
+    <property role="TrG5h" value="SingleWithVariablesTask" />
     <node concept="4WHVk" id="JlCmcDNyt5" role="N3F5h">
       <property role="TrG5h" value="MAX_COUNT" />
       <node concept="3TlMh9" id="JlCmcDNyt6" role="2DQcEM">
@@ -385,8 +385,8 @@
     <node concept="2eOfOl" id="JlCmcDNyuH" role="2ePNbc">
       <property role="iO3LB" value="true" />
       <property role="TrG5h" value="SingleTask" />
-      <node concept="2v9HqM" id="JlCmcDNyuI" role="2eOfOg">
-        <ref role="2v9HqP" to="bf6u:73JrkgytXsk" resolve="SingleTask" />
+      <node concept="2v9HqM" id="2kF1PD7He_p" role="2eOfOg">
+        <ref role="2v9HqP" node="JlCmcDNyrl" resolve="SingleWithVariablesTask" />
       </node>
     </node>
     <node concept="2Q9Fgs" id="JlCmcDNyuJ" role="2Q9xDr">
@@ -395,7 +395,7 @@
     <node concept="1NkVLJ" id="JlCmcDNyuL" role="2Q9xDr">
       <node concept="1PVdNI" id="JlCmcDNyuM" role="1NkNSE" />
       <node concept="1OId_O" id="6bs538mtCBg" role="1OIqLV">
-        <ref role="1OIdAa" to="bf6u:12_KeTzYMQ0" resolve="sched" />
+        <ref role="1OIdAa" node="JlCmcDNytU" resolve="sched" />
       </node>
     </node>
   </node>

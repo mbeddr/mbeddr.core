@@ -419,5 +419,13 @@
   <node concept="PlHQZ" id="5hYHEwYdCJ2">
     <property role="TrG5h" value="IFailuresAware" />
   </node>
+  <node concept="1TIwiD" id="7tWSY$P9Odb">
+    <property role="TrG5h" value="TestCaseConfigItem" />
+    <property role="34LRSv" value="unittest" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7tWSY$P9Oes" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
+    </node>
+  </node>
 </model>
 
