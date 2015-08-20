@@ -37,6 +37,8 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -131,15 +133,35 @@
       </node>
       <node concept="3EZMnI" id="2cCHKvAHUdP" role="3EZMnx">
         <property role="S$Qs1" value="true" />
+        <node concept="3EZMnI" id="73BQep1PYbI" role="3EZMnx">
+          <node concept="VPM3Z" id="73BQep1PYbJ" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3F0ifn" id="73BQep1PYbK" role="3EZMnx">
+            <property role="3F0ifm" value="coverage criteria:" />
+          </node>
+          <node concept="3F0A7n" id="73BQep1PYbL" role="3EZMnx">
+            <ref role="1NtTu8" to="iq83:67iKQ7ohdEj" resolve="coverageCriterion" />
+          </node>
+          <node concept="l2Vlx" id="73BQep1PYbM" role="2iSdaV" />
+        </node>
         <node concept="3EZMnI" id="67iKQ7ohjf9" role="3EZMnx">
           <node concept="VPM3Z" id="67iKQ7ohjfb" role="3F10Kt">
             <property role="VOm3f" value="false" />
           </node>
           <node concept="3F0ifn" id="67iKQ7ohjfd" role="3EZMnx">
-            <property role="3F0ifm" value="coverage criteria:" />
+            <property role="3F0ifm" value="save into:" />
           </node>
-          <node concept="3F0A7n" id="67iKQ7ohjfx" role="3EZMnx">
-            <ref role="1NtTu8" to="iq83:67iKQ7ohdEj" resolve="coverageCriterion" />
+          <node concept="1iCGBv" id="73BQep1Q04w" role="3EZMnx">
+            <property role="39s7Ar" value="true" />
+            <property role="1$x2rV" value="(do not save)" />
+            <ref role="1NtTu8" to="iq83:73BQep1PU1O" />
+            <node concept="1sVBvm" id="73BQep1Q04y" role="1sWHZn">
+              <node concept="3F0A7n" id="73BQep1Q04E" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
           </node>
           <node concept="l2Vlx" id="67iKQ7ohjfe" role="2iSdaV" />
         </node>

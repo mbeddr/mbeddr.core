@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:3e67bdff-5e9f-43bc-9cf3-65e492181be4(com.mbeddr.analyses.cbmc.testsgen.structure)">
+<model ref="r:e1f1298d-1e7f-441a-863f-048e9e23739d(com.mbeddr.analyses.cbmc.testsgen.testing.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
-        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
-        <child id="1083172003582" name="member" index="M5hS2" />
-      </concept>
-      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
-        <property id="1083923523172" name="externalValue" index="1uS6qo" />
-        <property id="1083923523171" name="internalValue" index="1uS6qv" />
-      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -33,6 +24,7 @@
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
@@ -43,26 +35,29 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="67iKQ7o3v2L">
-    <property role="TrG5h" value="TestsgenCBMCAnalysis" />
-    <property role="34LRSv" value="testsgen config" />
-    <ref role="1TJDcQ" to="q5q6:7Bqs07i8Hdj" resolve="CProverBasedMbeddrAnalysis" />
-    <node concept="1TJgyj" id="73BQep1PU1O" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="saveIntoModule" />
-      <ref role="20lvS9" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+  <node concept="1TIwiD" id="73BQep1SfHe">
+    <property role="TrG5h" value="TestVectorOracle" />
+    <property role="34LRSv" value="test_vector_oracle" />
+    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
+    <node concept="1TJgyj" id="73BQep1Sm3n" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="oracleSteps" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="73BQep1Sm3a" resolve="TestVectorStep" />
     </node>
-    <node concept="1TJgyi" id="67iKQ7ohdEj" role="1TKVEl">
-      <property role="TrG5h" value="coverageCriterion" />
-      <ref role="AX2Wp" node="67iKQ7ohdEy" resolve="CoverageCriterion" />
+    <node concept="1TJgyj" id="73BQep1UsFp" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="sut" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
     </node>
   </node>
-  <node concept="AxPO7" id="67iKQ7ohdEy">
-    <property role="TrG5h" value="CoverageCriterion" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="67iKQ7ohdEz" role="M5hS2">
-      <property role="1uS6qv" value="branch" />
-      <property role="1uS6qo" value="branch" />
+  <node concept="1TIwiD" id="73BQep1Sm3a">
+    <property role="TrG5h" value="TestVectorStep" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="73BQep1Sm3b" role="1TKVEl">
+      <property role="TrG5h" value="textualRepresentation" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
