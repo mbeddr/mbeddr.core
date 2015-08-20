@@ -4377,6 +4377,12 @@
           <property role="3LESm3" value="4ff0563e-505c-425d-adf7-5639fdab97d8" />
           <property role="2GAjPV" value="false" />
         </node>
+        <node concept="1SiIV0" id="5j9MEo579oN" role="3bR37C">
+          <node concept="3bR9La" id="5j9MEo579oO" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7tgCHAyOtFQ" resolve="com.mbeddr.ext.compositecomponents" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2kF1PD8caVx" role="2G$12L">
         <property role="BnDLt" value="true" />
