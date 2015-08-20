@@ -8,6 +8,7 @@
     <use id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines" version="0" />
     <use id="13a36f90-83c5-4bf6-9dd6-70e455f1ef36" name="com.mbeddr.ext.components.statemachine" version="0" />
     <use id="3f445ef3-54ad-4ae5-a22d-91c3ce06375e" name="com.mbeddr.ext.components.concurrency" version="0" />
+    <use id="e3420481-604b-464e-bc1b-06ecfc1f9dfc" name="com.mbeddr.ext.components.units" version="0" />
     <devkit ref="1a986be1-0ef0-4f9f-9d8a-81c3ea7227ae(com.mbeddr.physicalunits)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
     <devkit ref="a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)" />
@@ -76,6 +77,13 @@
         <reference id="624957442818227315" name="conversionSpecifier" index="2yhJs8" />
         <reference id="4121031889271053292" name="targetUnit" index="1Pfwd7" />
         <child id="4121031889271053290" name="expression" index="1Pfwd1" />
+      </concept>
+      <concept id="6847490852648488987" name="com.mbeddr.ext.units.structure.GenericUnitMapping" flags="ng" index="3XRFMX">
+        <reference id="6847490852648489303" name="metaUnit" index="3XRFRL" />
+        <child id="6847490852648489203" name="specification" index="3XRFLl" />
+      </concept>
+      <concept id="6847490852649574210" name="com.mbeddr.ext.units.structure.IGenericUnitMappingProvider" flags="ng" index="3XVjf$">
+        <child id="6727518107535251210" name="unitMappings" index="1QYmkp" />
       </concept>
     </language>
     <language id="e562f51e-6403-4857-b773-44632077c67d" name="mbeddr.arduino.interrupts">
@@ -209,6 +217,9 @@
         <property id="747084250476874891" name="reexport" index="3GEa6x" />
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
+    </language>
+    <language id="e3420481-604b-464e-bc1b-06ecfc1f9dfc" name="com.mbeddr.ext.components.units">
+      <concept id="7842862366440488704" name="com.mbeddr.ext.components.units.structure.GenericUnitInitializer" flags="ng" index="2L8oV4" />
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="3788988821851860886" name="com.mbeddr.core.modules.structure.GlobalConstantDeclaration" flags="ng" index="4WHVk" />
@@ -2056,6 +2067,16 @@
               <node concept="CIsGf" id="7UgeC21m4HX" role="CIwXZ">
                 <node concept="CIsvn" id="7UgeC21m4HY" role="CIi4h">
                   <ref role="CIi3I" to="cmgk:6TeNRL7trCJ" resolve="s" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2L8oV4" id="2SCoDaMNJU$" role="3R_39I">
+            <node concept="3XRFMX" id="2SCoDaMNJXU" role="1QYmkp">
+              <ref role="3XRFRL" to="lmqm:1rMmLdrys60" resolve="UNIT" />
+              <node concept="CIsGf" id="2SCoDaMNJXV" role="3XRFLl">
+                <node concept="CIsvn" id="2SCoDaMNJY2" role="CIi4h">
+                  <ref role="CIi3I" to="g2ww:74TmcPkYzlG" resolve="mm" />
                 </node>
               </node>
             </node>
@@ -5949,8 +5970,15 @@
                 </node>
               </node>
               <node concept="3Tl9Jn" id="7mELSK8HRay" role="1zz7me">
-                <node concept="3TlMh9" id="7mELSK8HS6B" role="3TlMhJ">
-                  <property role="2hmy$m" value="200.0" />
+                <node concept="CIdvy" id="2SCoDaMNNgE" role="3TlMhJ">
+                  <node concept="3TlMh9" id="2SCoDaMNNgD" role="CIrOC">
+                    <property role="2hmy$m" value="200.0" />
+                  </node>
+                  <node concept="CIsGf" id="2SCoDaMNNgF" role="CIwXZ">
+                    <node concept="CIsvn" id="2SCoDaMNNgG" role="CIi4h">
+                      <ref role="CIi3I" to="g2ww:74TmcPkYzlG" resolve="mm" />
+                    </node>
+                  </node>
                 </node>
                 <node concept="3LAlOK" id="7mELSK9Qbpk" role="3TlMhI">
                   <ref role="2H6Oet" to="lmqm:6Y0wRXx6n2S" resolve="getOutput" />
@@ -6053,8 +6081,15 @@
                 </node>
               </node>
               <node concept="3Tl9Jr" id="7mELSK9XHAw" role="1zz7me">
-                <node concept="3TlMh9" id="7mELSK9XHAz" role="3TlMhJ">
-                  <property role="2hmy$m" value="200.0" />
+                <node concept="CIdvy" id="2SCoDaMNN7T" role="3TlMhJ">
+                  <node concept="3TlMh9" id="2SCoDaMNN7S" role="CIrOC">
+                    <property role="2hmy$m" value="200.0" />
+                  </node>
+                  <node concept="CIsGf" id="2SCoDaMNN7U" role="CIwXZ">
+                    <node concept="CIsvn" id="2SCoDaMNN7V" role="CIi4h">
+                      <ref role="CIi3I" to="g2ww:74TmcPkYzlG" resolve="mm" />
+                    </node>
+                  </node>
                 </node>
                 <node concept="3LAlOK" id="7mELSKa59uZ" role="3TlMhI">
                   <ref role="2H6Oet" to="lmqm:6Y0wRXx6n2S" resolve="getOutput" />
