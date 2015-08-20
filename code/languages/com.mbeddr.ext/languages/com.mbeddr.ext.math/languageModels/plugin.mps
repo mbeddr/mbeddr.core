@@ -436,6 +436,31 @@
         </node>
       </node>
     </node>
+    <node concept="3SNpY9" id="1ESicmRi$Pd" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="cetu:4r1mNB_q7_Q" resolve="LogarithmExpression" />
+      <node concept="3vetai" id="1ESicmRi_lo" role="3vQZUl">
+        <node concept="2YIFZM" id="1ESicmRi_vP" role="3vdyny">
+          <ref role="37wK5l" to="e2lb:~Math.log(double):double" resolve="log" />
+          <ref role="1Pybhc" to="e2lb:~Math" resolve="Math" />
+          <node concept="rqRoa" id="1ESicmRi_ws" role="37wK5m">
+            <ref role="rqRob" to="cetu:4r1mNB_q7Br" />
+          </node>
+        </node>
+      </node>
+      <node concept="qpFDx" id="1ESicmRi_1t" role="3vbI0w">
+        <ref role="qpFD$" to="cetu:4r1mNB_q7Cj" />
+        <node concept="rxStX" id="1ESicmRi_1z" role="rajlz">
+          <ref role="rxSuV" to="mj1l:7G6iUFOh4op" resolve="DoubleType" />
+        </node>
+      </node>
+      <node concept="qpFDx" id="1ESicmRi_8x" role="3vbI0w">
+        <ref role="qpFD$" to="cetu:4r1mNB_q7Br" />
+        <node concept="rxStX" id="1ESicmRi_eI" role="rajlz">
+          <ref role="rxSuV" to="mj1l:7G6iUFOh4op" resolve="DoubleType" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
