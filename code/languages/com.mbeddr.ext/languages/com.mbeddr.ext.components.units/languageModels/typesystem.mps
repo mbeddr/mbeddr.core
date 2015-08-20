@@ -188,6 +188,7 @@
         <reference id="1205762683928" name="whenConcreteVar" index="2X3Bk0" />
       </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
+        <property id="1195213689297" name="overrides" index="18ip37" />
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
@@ -630,6 +631,7 @@
   </node>
   <node concept="1YbPZF" id="qWsmfOQVUv">
     <property role="TrG5h" value="typeof_InterfaceOperationCallExpr" />
+    <property role="18ip37" value="true" />
     <node concept="3clFbS" id="qWsmfOQVUw" role="18ibNy">
       <node concept="3SKdUt" id="brG9xoss6d" role="3cqZAp">
         <node concept="3SKdUq" id="brG9xossjG" role="3SKWNk">
@@ -640,7 +642,7 @@
         <node concept="2YIFZM" id="qWsmfOU_s9" role="3clFbG">
           <ref role="37wK5l" node="lqDNwvqark" resolve="processNode" />
           <ref role="1Pybhc" node="lqDNwv$A02" resolve="typeof_InterfaceOperationCallExpr_Helper" />
-          <node concept="1YBJjd" id="qWsmfOU_so" role="37wK5m">
+          <node concept="1YBJjd" id="56qpgsxdK9z" role="37wK5m">
             <ref role="1YBMHb" node="qWsmfOQVUy" resolve="call" />
           </node>
         </node>
@@ -659,7 +661,7 @@
             <ref role="2I9WkF" to="mj1l:7FQByU3CrCM" resolve="Expression" />
           </node>
           <node concept="2OqwBi" id="brG9xosr5Q" role="33vP2m">
-            <node concept="1YBJjd" id="brG9xosr5R" role="2Oq$k0">
+            <node concept="1YBJjd" id="56qpgsxdK9_" role="2Oq$k0">
               <ref role="1YBMHb" node="qWsmfOQVUy" resolve="call" />
             </node>
             <node concept="2qgKlT" id="brG9xosr5S" role="2OqNvi">
@@ -676,7 +678,7 @@
             <ref role="2I9WkF" to="x27k:7kKaL9x4DZT" resolve="IArgumentLike" />
           </node>
           <node concept="2OqwBi" id="brG9xosr5W" role="33vP2m">
-            <node concept="1YBJjd" id="brG9xosr5X" role="2Oq$k0">
+            <node concept="1YBJjd" id="56qpgsxdK9B" role="2Oq$k0">
               <ref role="1YBMHb" node="qWsmfOQVUy" resolve="call" />
             </node>
             <node concept="2qgKlT" id="brG9xosr5Y" role="2OqNvi">
@@ -737,7 +739,7 @@
           <node concept="2YIFZM" id="brG9xosOBm" role="33vP2m">
             <ref role="37wK5l" to="nh6y:brG9xosIiP" resolve="getGenericUnitInitializer" />
             <ref role="1Pybhc" to="nh6y:brG9xosIi2" resolve="GenericUnitInitializer_Helper" />
-            <node concept="1YBJjd" id="brG9xosOBn" role="37wK5m">
+            <node concept="1YBJjd" id="56qpgsxdK9G" role="37wK5m">
               <ref role="1YBMHb" node="qWsmfOQVUy" resolve="call" />
             </node>
           </node>
@@ -822,7 +824,7 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbH" id="brG9xosQEj" role="3cqZAp" />
+                  <node concept="3clFbH" id="11_aVLEi_aZ" role="3cqZAp" />
                   <node concept="3clFbJ" id="6j_PPS_8zmN" role="3cqZAp">
                     <node concept="3clFbS" id="6j_PPS_8zmP" role="3clFbx">
                       <node concept="nvevp" id="brG9xosr6$" role="3cqZAp">
