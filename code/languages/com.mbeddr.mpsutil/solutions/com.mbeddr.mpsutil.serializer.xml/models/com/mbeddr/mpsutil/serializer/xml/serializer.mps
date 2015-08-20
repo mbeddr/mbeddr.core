@@ -18,11 +18,9 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="i51s" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.smodel.generator.smodelAdapter(MPS.Core/)" />
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" />
-    <import index="cksu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:sun.misc(JDK/)" />
     <import index="n2xr" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/java:org.jdom2.output(com.mbeddr.mpsutil.serializer.xml/)" />
     <import index="gphs" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/java:org.jdom2(com.mbeddr.mpsutil.serializer.xml/)" />
     <import index="qq98" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/java:org.jdom2.input(com.mbeddr.mpsutil.serializer.xml/)" />
-    <import index="pa15" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.persistence(MPS.Core/)" />
     <import index="e8bb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.ids(MPS.Core/)" />
     <import index="2k9e" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure(MPS.Core/)" />
   </imports>
@@ -87,11 +85,7 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
-      <concept id="1070534604311" name="jetbrains.mps.baseLanguage.structure.ByteType" flags="in" index="10PrrI" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
-      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
-        <child id="1070534760952" name="componentType" index="10Q1$1" />
-      </concept>
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -246,7 +240,7 @@
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3THzug" />
+      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -546,45 +540,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2CtGEWX5I34" role="jymVt" />
-    <node concept="3clFb_" id="2CtGEWX5Cca" role="jymVt">
-      <property role="TrG5h" value="getXMLAsUUEncodedString" />
-      <node concept="17QB3L" id="2CtGEWX5Ccb" role="3clF45" />
-      <node concept="3Tm1VV" id="2CtGEWX5Ccc" role="1B3o_S" />
-      <node concept="3clFbS" id="2CtGEWX5Ccd" role="3clF47">
-        <node concept="3cpWs8" id="2CtGEWX6s79" role="3cqZAp">
-          <node concept="3cpWsn" id="2CtGEWX6s7a" role="3cpWs9">
-            <property role="TrG5h" value="encoder" />
-            <node concept="3uibUv" id="2CtGEWX6s78" role="1tU5fm">
-              <ref role="3uigEE" to="cksu:~UUEncoder" resolve="UUEncoder" />
-            </node>
-            <node concept="2ShNRf" id="2CtGEWX6s7b" role="33vP2m">
-              <node concept="1pGfFk" id="2CtGEWX6s7c" role="2ShVmc">
-                <ref role="37wK5l" to="cksu:~UUEncoder.&lt;init&gt;()" resolve="UUEncoder" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="2CtGEWX6m3l" role="3cqZAp">
-          <node concept="2OqwBi" id="2CtGEWX6wOn" role="3clFbG">
-            <node concept="37vLTw" id="2CtGEWX6s7d" role="2Oq$k0">
-              <ref role="3cqZAo" node="2CtGEWX6s7a" resolve="encoder" />
-            </node>
-            <node concept="liA8E" id="2CtGEWX6ylw" role="2OqNvi">
-              <ref role="37wK5l" to="cksu:~CharacterEncoder.encode(byte[]):java.lang.String" resolve="encode" />
-              <node concept="2OqwBi" id="2CtGEWX6zVZ" role="37wK5m">
-                <node concept="1rXfSq" id="2CtGEWX6y_I" role="2Oq$k0">
-                  <ref role="37wK5l" node="5QEXbzGzMjX" resolve="getXMLAsString" />
-                </node>
-                <node concept="liA8E" id="2CtGEWX6B8q" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.getBytes():byte[]" resolve="getBytes" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="5u_UbmxcuQ" role="jymVt" />
     <node concept="3clFb_" id="5u_Ubmu8yl" role="jymVt">
       <property role="TrG5h" value="printXML" />
       <node concept="3cqZAl" id="5u_Ubmu9u6" role="3clF45" />
@@ -1509,98 +1464,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2CtGEWX6ZdV" role="jymVt" />
-    <node concept="2YIFZL" id="2CtGEWX6XH5" role="jymVt">
-      <property role="TrG5h" value="fromUUEncodedString" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <node concept="3clFbS" id="2CtGEWX6XH6" role="3clF47">
-        <node concept="3cpWs8" id="2CtGEWX72D7" role="3cqZAp">
-          <node concept="3cpWsn" id="2CtGEWX72D8" role="3cpWs9">
-            <property role="TrG5h" value="decoder" />
-            <node concept="3uibUv" id="2CtGEWX72D9" role="1tU5fm">
-              <ref role="3uigEE" to="cksu:~UUDecoder" resolve="UUDecoder" />
-            </node>
-            <node concept="2ShNRf" id="2CtGEWX72Oh" role="33vP2m">
-              <node concept="1pGfFk" id="2CtGEWX736b" role="2ShVmc">
-                <ref role="37wK5l" to="cksu:~UUDecoder.&lt;init&gt;()" resolve="UUDecoder" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2CtGEWX747T" role="3cqZAp">
-          <node concept="3cpWsn" id="2CtGEWX747U" role="3cpWs9">
-            <property role="TrG5h" value="decodeBuffer" />
-            <node concept="10Q1$e" id="2CtGEWX747M" role="1tU5fm">
-              <node concept="10PrrI" id="2CtGEWX747P" role="10Q1$1" />
-            </node>
-            <node concept="2OqwBi" id="2CtGEWX747V" role="33vP2m">
-              <node concept="37vLTw" id="2CtGEWX747W" role="2Oq$k0">
-                <ref role="3cqZAo" node="2CtGEWX72D8" resolve="decoder" />
-              </node>
-              <node concept="liA8E" id="2CtGEWX747X" role="2OqNvi">
-                <ref role="37wK5l" to="cksu:~CharacterDecoder.decodeBuffer(java.lang.String):byte[]" resolve="decodeBuffer" />
-                <node concept="37vLTw" id="2CtGEWX747Y" role="37wK5m">
-                  <ref role="3cqZAo" node="2CtGEWX6XH9" resolve="uu" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2CtGEWX79TE" role="3cqZAp">
-          <node concept="3cpWsn" id="2CtGEWX79TH" role="3cpWs9">
-            <property role="TrG5h" value="xml" />
-            <node concept="17QB3L" id="2CtGEWX79TB" role="1tU5fm" />
-            <node concept="2ShNRf" id="2CtGEWX7a9C" role="33vP2m">
-              <node concept="1pGfFk" id="2CtGEWX7aIn" role="2ShVmc">
-                <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[])" resolve="String" />
-                <node concept="37vLTw" id="2CtGEWX7aLB" role="37wK5m">
-                  <ref role="3cqZAo" node="2CtGEWX747U" resolve="decodeBuffer" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="2CtGEWX7bci" role="3cqZAp">
-          <node concept="2ShNRf" id="2CtGEWX7bcj" role="3cqZAk">
-            <node concept="1pGfFk" id="2CtGEWX7bck" role="2ShVmc">
-              <ref role="37wK5l" node="5u_Ubm$SVM" resolve="NodeDeserializer" />
-              <node concept="37vLTw" id="2CtGEWX7bcl" role="37wK5m">
-                <ref role="3cqZAo" node="2CtGEWX79TH" resolve="xml" />
-              </node>
-              <node concept="37vLTw" id="2CtGEWX7bcm" role="37wK5m">
-                <ref role="3cqZAo" node="2CtGEWX6XHb" resolve="targetModel" />
-              </node>
-              <node concept="37vLTw" id="78QQ3NsAQbe" role="37wK5m">
-                <ref role="3cqZAo" node="78QQ3NsAPps" resolve="attrprefix" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="2CtGEWX6XH7" role="1B3o_S" />
-      <node concept="3uibUv" id="2CtGEWX6XH8" role="3clF45">
-        <ref role="3uigEE" node="5u_UbmxgfR" resolve="NodeDeserializer" />
-      </node>
-      <node concept="37vLTG" id="2CtGEWX6XH9" role="3clF46">
-        <property role="TrG5h" value="uu" />
-        <node concept="17QB3L" id="2CtGEWX6XHa" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="2CtGEWX6XHb" role="3clF46">
-        <property role="TrG5h" value="targetModel" />
-        <node concept="H_c77" id="2CtGEWX6XHc" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="78QQ3NsAPps" role="3clF46">
-        <property role="TrG5h" value="attrprefix" />
-        <node concept="17QB3L" id="78QQ3NsAPKs" role="1tU5fm" />
-      </node>
-      <node concept="3uibUv" id="2CtGEWX78Ux" role="Sfmx6">
-        <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
-      </node>
-      <node concept="3uibUv" id="2CtGEWX7bVp" role="Sfmx6">
-        <ref role="3uigEE" to="gphs:~JDOMException" resolve="JDOMException" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="2CtGEWX6T75" role="jymVt" />
     <node concept="3clFbW" id="5u_Ubm$SVM" role="jymVt">
       <node concept="3cqZAl" id="5u_Ubm$SVN" role="3clF45" />
       <node concept="3Tm6S6" id="2CtGEWX6RHT" role="1B3o_S" />
