@@ -223,6 +223,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1TgsdXP$fAt">
+    <property role="3GE5qa" value="internal" />
     <ref role="1XX52x" to="izv8:1TgsdXP$fAc" resolve="CurrentTimeExpression" />
     <node concept="3F0ifn" id="1TgsdXP$fB6" role="2wV5jI">
       <property role="3F0ifm" value="currentTime" />
