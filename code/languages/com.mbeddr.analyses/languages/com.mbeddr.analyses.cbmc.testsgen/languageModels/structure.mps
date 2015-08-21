@@ -45,7 +45,7 @@
   </registry>
   <node concept="1TIwiD" id="67iKQ7o3v2L">
     <property role="TrG5h" value="TestsgenCBMCAnalysis" />
-    <property role="34LRSv" value="testsgen config" />
+    <property role="34LRSv" value="Testsgen Config" />
     <ref role="1TJDcQ" to="q5q6:7Bqs07i8Hdj" resolve="CProverBasedMbeddrAnalysis" />
     <node concept="1TJgyj" id="73BQep1PU1O" role="1TKVEi">
       <property role="20lmBu" value="reference" />
