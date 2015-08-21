@@ -15,13 +15,13 @@
     <import index="nx1" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.actionSystem(MPS.IDEA/com.intellij.openapi.actionSystem@java_stub)" />
     <import index="5xh9" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.actions(MPS.Platform/jetbrains.mps.ide.actions@java_stub)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
-    <import index="xm5f" ref="r:051a08a3-bd4e-4f65-9fad-0d3503acd290(runner)" />
-    <import index="odjd" ref="r:90d0eee3-db73-4cfb-87f3-ebf4f5d81165(ui)" />
     <import index="8e9v" ref="r:a21516a4-23a5-4dc7-826d-37c3fde5c4e3(com.mbeddr.analyses.utils.tools)" />
     <import index="jwd7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.tools(MPS.Platform/jetbrains.mps.ide.tools@java_stub)" />
     <import index="dsgp" ref="r:3f06d04b-0a98-4505-b2ca-4dcc6555fddb(com.mbeddr.analyses.prism.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="fjup" ref="r:d9560246-a400-4b05-820e-97ff6dddd2fd(utils)" />
+    <import index="fjup" ref="r:d9560246-a400-4b05-820e-97ff6dddd2fd(com.mbeddr.analyses.prism.rt.utils)" />
+    <import index="odjd" ref="r:90d0eee3-db73-4cfb-87f3-ebf4f5d81165(ui)" />
+    <import index="xm5f" ref="r:051a08a3-bd4e-4f65-9fad-0d3503acd290(runner)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -29,7 +29,6 @@
         <child id="1207145201301" name="reference" index="ftvYc" />
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
-        <property id="1207149998849" name="isAlwaysVisible" index="fJN8o" />
         <property id="1205250923097" name="caption" index="2uzpH1" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
@@ -182,7 +181,7 @@
       <ref role="2f8Tey" to="d244:39c7fuKwbnA" resolve="mbeddrPlatformEditorPopupAnalysisExtensions" />
     </node>
     <node concept="ftmFs" id="3Hq87cj$2XM" role="ftER_">
-      <node concept="tCFHf" id="4NASM4wpdsL" role="ftvYc">
+      <node concept="tCFHf" id="3i00J6NWwHy" role="ftvYc">
         <ref role="tCJdB" node="EVDykUC7Si" resolve="PrismCheckAction" />
       </node>
     </node>
@@ -190,7 +189,6 @@
   <node concept="sE7Ow" id="EVDykUC7Si">
     <property role="TrG5h" value="PrismCheckAction" />
     <property role="2uzpH1" value="Verify Model" />
-    <property role="fJN8o" value="true" />
     <node concept="1DS2jV" id="EVDykUCb6r" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="nx1:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -211,7 +209,7 @@
             <property role="TrG5h" value="tool" />
             <property role="3TUv4t" value="true" />
             <node concept="1xUVSX" id="2UdJgvFCNdI" role="1tU5fm">
-              <ref role="1xYkEM" node="6izRX53qGZb" resolve="PromelaRawResultTool" />
+              <ref role="1xYkEM" node="6izRX53qGZb" resolve="PrismRawResultTool" />
             </node>
             <node concept="2OqwBi" id="2UdJgvFCNdJ" role="33vP2m">
               <node concept="2OqwBi" id="2UdJgvFCNdK" role="2Oq$k0">
@@ -221,7 +219,7 @@
                 </node>
               </node>
               <node concept="LR4U6" id="2UdJgvFCNdN" role="2OqNvi">
-                <ref role="LR4U5" node="6izRX53qGZb" resolve="PromelaRawResultTool" />
+                <ref role="LR4U5" node="6izRX53qGZb" resolve="PrismRawResultTool" />
               </node>
             </node>
           </node>
@@ -333,7 +331,7 @@
     </node>
   </node>
   <node concept="sEfby" id="6izRX53qGZb">
-    <property role="TrG5h" value="PromelaRawResultTool" />
+    <property role="TrG5h" value="PrismRawResultTool" />
     <property role="2XNbzY" value="Prism Result" />
     <node concept="2XrIbr" id="3Ymokd9FeZe" role="2XNbBy">
       <property role="TrG5h" value="setOutput" />

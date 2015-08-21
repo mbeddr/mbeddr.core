@@ -74,7 +74,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -148,6 +148,9 @@
       </concept>
       <concept id="1177402571666" name="jetbrains.mps.lang.actions.structure.QueryFunction_SubstituteWrapper" flags="in" index="yEnE0" />
       <concept id="1177402641904" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_nodeToWrap" flags="nn" index="yECNy" />
+      <concept id="1177409831820" name="jetbrains.mps.lang.actions.structure.RemovePart" flags="ng" index="z64au">
+        <reference id="1177409838946" name="conceptToRemove" index="z65TK" />
+      </concept>
       <concept id="1177497140107" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_sourceNode" flags="nn" index="Cj7Ep" />
       <concept id="1177498013932" name="jetbrains.mps.lang.actions.structure.SimpleSideTransformMenuPart" flags="ng" index="Cmt7Y">
         <child id="1177498166690" name="matchingText" index="Cn2iK" />
@@ -1589,6 +1592,9 @@
     <property role="TrG5h" value="makeInterfaceTypeOpCall" />
     <node concept="3UNGvq" id="3yeYUb95Uqx" role="3UOs0v">
       <ref role="3UNGvu" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <node concept="z64au" id="2SCoDaNXY2Q" role="_1QTJ">
+        <ref role="z65TK" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
+      </node>
       <node concept="tYCnQ" id="3yeYUb95Uqy" role="_1QTJ">
         <ref role="uz4UX" to="v7ag:3yeYUb95Uqi" resolve="InterfaceTypeOpCallExpr" />
         <node concept="Cmt7Y" id="3yeYUb95Uqz" role="uz6Si">
@@ -1633,13 +1639,8 @@
                 </node>
               </node>
               <node concept="3clFbF" id="3yeYUb95UqR" role="3cqZAp">
-                <node concept="2OqwBi" id="3yeYUb95UqS" role="3clFbG">
-                  <node concept="37vLTw" id="20ezT9ZBY8U" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3yeYUb95UqB" resolve="e" />
-                  </node>
-                  <node concept="3TrEf2" id="3yeYUb95UqU" role="2OqNvi">
-                    <ref role="3Tt5mk" to="v7ag:71UKpntoo88" />
-                  </node>
+                <node concept="37vLTw" id="20ezT9ZBY8U" role="3clFbG">
+                  <ref role="3cqZAo" node="3yeYUb95UqB" resolve="e" />
                 </node>
               </node>
             </node>

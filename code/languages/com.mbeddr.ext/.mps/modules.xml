@@ -9,6 +9,7 @@
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.ext.statemachines/statemachines.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.physicalunits/physicalunits.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.statemachinesInComponents/statemachinesInComponents.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.concurrency/com.mbeddr.ext.components.concurrency.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.embedded/com.mbeddr.ext.components.embedded.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.gen_nomw/gen_nomw.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.mock/mock.mpl" folder="components" />
@@ -18,6 +19,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components/components.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components/solutions/pluginSolution/pluginSolution.msd" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.compositecomponents/compositecomponents.mpl" folder="components" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.concurrency.plainC/com.mbeddr.ext.concurrency.c.mpl" folder="concurrency" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.concurrency.pthreads/com.mbeddr.ext.concurrency.pthreads.mpl" folder="concurrency" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.concurrency/com.mbeddr.ext.concurrency.mpl" folder="concurrency" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.math/com.mbeddr.ext.math.mpl" folder="math" />
@@ -29,17 +31,19 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.units/com.mbeddr.ext.units.mpl" folder="units" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.parallel.primitives.runtime/com.mbeddr.ext.parallel.primitives.runtime.msd" folder="parallel.primitives" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.comp_mocking/comp_mocking.msd" folder="tests.comp" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components.concurrency/test.ex.ext.components.concurrency.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components.sri/sri.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components/components.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.compositecomponents/compositecomponents.msd" folder="tests.comp" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.concurrency/tests.ex.ext.concurrency.msd" folder="concurrency" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.concurrency.plainC/test.ex.ext.concurrency.c.msd" folder="tests.concurrency" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.concurrency/tests.ex.ext.concurrency.msd" folder="tests.concurrency" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.math/test.ex.ext.math.msd" folder="tests.math" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.messaging/test.ex.ext.messaging.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.serialization/test.ex.ext.serialization.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.statemachine/statemachine.msd" folder="tests.statemachine" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.units/test.ex.ext.units.msd" folder="tests.units" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.components/components.msd" folder="tests.comp" />
-      <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.concurrency/test.ts.ext.concurrency.msd" folder="concurrency" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.concurrency/test.ts.ext.concurrency.msd" folder="tests.concurrency" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.units/test.ts.ext.units.msd" folder="tests.units" />
     </projectModules>
   </component>
