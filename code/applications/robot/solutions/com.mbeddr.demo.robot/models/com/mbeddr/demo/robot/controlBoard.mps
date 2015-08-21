@@ -437,6 +437,9 @@
         <child id="7780999115923944213" name="contents" index="5JtDH" />
       </concept>
       <concept id="4643433264761566506" name="com.mbeddr.ext.components.structure.OnInitTrigger" flags="ng" index="2cabNp" />
+      <concept id="1302968767135003933" name="com.mbeddr.ext.components.structure.InternalRunnableCall" flags="ng" index="2$_UoH">
+        <reference id="1302968767135003934" name="runnable" index="2$_UoI" />
+      </concept>
       <concept id="5308710777891512019" name="com.mbeddr.ext.components.structure.Field" flags="ng" index="EbCE0">
         <child id="5308710777891512022" name="init" index="EbCE5" />
       </concept>
@@ -3831,7 +3834,7 @@
             <node concept="2qmXGp" id="5MdZHRtnsZO" role="1_9egR">
               <node concept="Vf_e3" id="5MdZHRtnt1p" role="1ESnxz" />
               <node concept="EbZIE" id="5MdZHRtnsYl" role="1_9fRO">
-                <ref role="EbZID" node="5MdZHRtnkDw" resolve="robotProgram" />
+                <ref role="EbZID" node="5MdZHRtnkDw" resolve="robotAutomatic" />
               </node>
             </node>
           </node>
@@ -4231,52 +4234,9 @@
               </node>
             </node>
             <node concept="3XISUE" id="7tWSY$Pu3dj" role="3XIRFZ" />
-            <node concept="c0U19" id="7tWSY$Pu1nu" role="3XIRFZ">
-              <node concept="3XIRFW" id="7tWSY$Pu1nv" role="c0U17">
-                <node concept="1_9egQ" id="7tWSY$Pu1nw" role="3XIRFZ">
-                  <node concept="3TM6Ez" id="7tWSY$Pu1nx" role="1_9egR">
-                    <node concept="EbZIE" id="7tWSY$Pu1ny" role="1_9fRO">
-                      <ref role="EbZID" node="5MdZHRtngZ8" resolve="ticks" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="1_9egQ" id="7tWSY$Pu1nz" role="3XIRFZ">
-                  <node concept="2qmXGp" id="7tWSY$Pu1n$" role="1_9egR">
-                    <node concept="$QhJh" id="7tWSY$Pu1n_" role="1ESnxz">
-                      <ref role="$QhfV" node="5MdZHRtneLc" resolve="clock100Hz" />
-                    </node>
-                    <node concept="EbZIE" id="7tWSY$Pu1nA" role="1_9fRO">
-                      <ref role="EbZID" node="5MdZHRtnkDw" resolve="robotProgram" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3TlM44" id="7tWSY$Pu1nB" role="c0U16">
-                <node concept="1AkAhK" id="7tWSY$Pu1nC" role="3TlMhJ">
-                  <ref role="1AkAhZ" to="noqc:6rrUichcjYc" resolve="AUTO" />
-                </node>
-                <node concept="2qmXGp" id="7tWSY$Pu1nD" role="3TlMhI">
-                  <node concept="1E4Tgc" id="7tWSY$Pu1nE" role="1ESnxz">
-                    <ref role="1E4Tge" to="noqc:6rrUichcjz8" resolve="mode" />
-                  </node>
-                  <node concept="EbZIE" id="7tWSY$Pu1nF" role="1_9fRO">
-                    <ref role="EbZID" node="2Z$TrjMukIg" resolve="messageFromRemoteControl" />
-                  </node>
-                </node>
-              </node>
-              <node concept="1ly_i6" id="7tWSY$Pu1nG" role="ggAap">
-                <node concept="3XIRFW" id="7tWSY$Pu1nH" role="1ly_ph">
-                  <node concept="1_9egQ" id="7tWSY$Pu1nI" role="3XIRFZ">
-                    <node concept="2qmXGp" id="7tWSY$Pu1nJ" role="1_9egR">
-                      <node concept="1rBQh5" id="7tWSY$Pu1nK" role="1ESnxz">
-                        <ref role="1rBQlx" node="5MdZHRtneLe" resolve="doNothing" />
-                      </node>
-                      <node concept="EbZIE" id="7tWSY$Pu1nL" role="1_9fRO">
-                        <ref role="EbZID" node="5MdZHRtnkDw" resolve="robotProgram" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
+            <node concept="1_9egQ" id="jq8YcUpMVb" role="3XIRFZ">
+              <node concept="2$_UoH" id="jq8YcUpMV9" role="1_9egR">
+                <ref role="2$_UoI" node="jq8YcUpBOZ" resolve="processRobotAutomatic" />
               </node>
             </node>
             <node concept="3XISUE" id="7tWSY$PuCrZ" role="3XIRFZ" />
@@ -4331,6 +4291,64 @@
             </node>
             <node concept="3XISUE" id="7tWSY$PuX6g" role="3XIRFZ" />
           </node>
+        </node>
+      </node>
+      <node concept="3Khz0B" id="jq8YcUpu0U" role="2RW2fA" />
+      <node concept="2EWDwb" id="jq8YcUpBOZ" role="2RW2fA">
+        <property role="TrG5h" value="processRobotAutomatic" />
+        <node concept="3XIRFW" id="jq8YcUpBP0" role="2EWMhI">
+          <node concept="c0U19" id="7tWSY$Pu1nu" role="3XIRFZ">
+            <node concept="3XIRFW" id="7tWSY$Pu1nv" role="c0U17">
+              <node concept="1_9egQ" id="7tWSY$Pu1nw" role="3XIRFZ">
+                <node concept="3TM6Ez" id="7tWSY$Pu1nx" role="1_9egR">
+                  <node concept="EbZIE" id="7tWSY$Pu1ny" role="1_9fRO">
+                    <ref role="EbZID" node="5MdZHRtngZ8" resolve="ticks" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1_9egQ" id="7tWSY$Pu1nz" role="3XIRFZ">
+                <node concept="2qmXGp" id="7tWSY$Pu1n$" role="1_9egR">
+                  <node concept="$QhJh" id="7tWSY$Pu1n_" role="1ESnxz">
+                    <ref role="$QhfV" node="5MdZHRtneLc" resolve="clock100Hz" />
+                  </node>
+                  <node concept="EbZIE" id="7tWSY$Pu1nA" role="1_9fRO">
+                    <ref role="EbZID" node="5MdZHRtnkDw" resolve="robotAutomatic" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3TlM44" id="7tWSY$Pu1nB" role="c0U16">
+              <node concept="1AkAhK" id="7tWSY$Pu1nC" role="3TlMhJ">
+                <ref role="1AkAhZ" to="noqc:6rrUichcjYc" resolve="AUTO" />
+              </node>
+              <node concept="2qmXGp" id="7tWSY$Pu1nD" role="3TlMhI">
+                <node concept="1E4Tgc" id="7tWSY$Pu1nE" role="1ESnxz">
+                  <ref role="1E4Tge" to="noqc:6rrUichcjz8" resolve="mode" />
+                </node>
+                <node concept="EbZIE" id="7tWSY$Pu1nF" role="1_9fRO">
+                  <ref role="EbZID" node="2Z$TrjMukIg" resolve="messageFromRemoteControl" />
+                </node>
+              </node>
+            </node>
+            <node concept="1ly_i6" id="7tWSY$Pu1nG" role="ggAap">
+              <node concept="3XIRFW" id="7tWSY$Pu1nH" role="1ly_ph">
+                <node concept="1_9egQ" id="7tWSY$Pu1nI" role="3XIRFZ">
+                  <node concept="2qmXGp" id="7tWSY$Pu1nJ" role="1_9egR">
+                    <node concept="1rBQh5" id="7tWSY$Pu1nK" role="1ESnxz">
+                      <ref role="1rBQlx" node="5MdZHRtneLe" resolve="doNothing" />
+                    </node>
+                    <node concept="EbZIE" id="7tWSY$Pu1nL" role="1_9fRO">
+                      <ref role="EbZID" node="5MdZHRtnkDw" resolve="robotAutomatic" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="19Rifw" id="jq8YcUpDy1" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
       </node>
       <node concept="3Khz0B" id="7tWSY$PtYHm" role="2RW2fA" />
@@ -4979,16 +4997,16 @@
         </node>
       </node>
       <node concept="EbCE0" id="5MdZHRtnkDw" role="2RW2fA">
-        <property role="TrG5h" value="robotProgram" />
+        <property role="TrG5h" value="robotAutomatic" />
         <node concept="3lBjsv" id="5MdZHRtnkDu" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="3lBjss" node="5MdZHRtneLb" resolve="RobotProgram" />
+          <ref role="3lBjss" node="5MdZHRtneLb" resolve="RobotAutomatic" />
         </node>
       </node>
       <node concept="PP7vc" id="5MdZHRtneL9" role="2RW2fA">
         <node concept="1LFe83" id="5MdZHRtneLb" role="PP7oY">
-          <property role="TrG5h" value="RobotProgram" />
+          <property role="TrG5h" value="RobotAutomatic" />
           <ref role="1LFebw" node="5MdZHRtneLe" resolve="doNothing" />
           <node concept="2cfOFI" id="5MdZHRtneLc" role="1_Iowf">
             <property role="TrG5h" value="clock100Hz" />
