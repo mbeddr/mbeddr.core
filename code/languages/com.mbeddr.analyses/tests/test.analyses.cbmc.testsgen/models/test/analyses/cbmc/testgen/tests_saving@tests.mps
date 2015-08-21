@@ -29,6 +29,9 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
+        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
+      </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -308,6 +311,9 @@
         <node concept="3clFbH" id="3rqorKKjpvO" role="3cqZAp" />
       </node>
     </node>
+  </node>
+  <node concept="2XOHcx" id="1f0gqNzAccm">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/" />
   </node>
 </model>
 
