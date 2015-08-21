@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.embedded.platform" uuid="4756a008-77a4-4012-b9b3-117cfb62be8d" compileInMPS="true">
+<solution name="demo.ESP8266.sdcard" uuid="e17f9c06-285d-42c9-ab7d-5a38eefea36c" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -7,14 +7,15 @@
   </models>
   <sourcePath />
   <dependencies>
+    <dependency reexport="false">4756a008-77a4-4012-b9b3-117cfb62be8d(com.mbeddr.embedded.platform)</dependency>
     <dependency reexport="false">2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>68ac5365-14e5-4bad-965a-0d8a21262400(com.mbeddr.embedded.esp8266)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
-    <usedDevKit>24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)</usedDevKit>
     <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
+    <usedDevKit>24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)</usedDevKit>
   </usedDevKits>
   <languageVersions>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" fqName="com.mbeddr.core.base" version="0" />
