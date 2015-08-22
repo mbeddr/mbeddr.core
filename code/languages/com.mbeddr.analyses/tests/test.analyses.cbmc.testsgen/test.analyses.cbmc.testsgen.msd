@@ -32,7 +32,6 @@
   </usedLanguages>
   <languageVersions>
     <language id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" fqName="com.mbeddr.analyses.cbmc.testing" version="0" />
-    <language id="7a962b58-6424-40b5-985a-914aacd89274" fqName="com.mbeddr.analyses.cbmc.testsgen.testing" version="0" />
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" fqName="com.mbeddr.mpsutil.blutil" version="1" />
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" fqName="de.slisson.mps.richtext" version="0" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />

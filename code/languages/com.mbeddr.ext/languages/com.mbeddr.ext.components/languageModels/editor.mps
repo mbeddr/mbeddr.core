@@ -29,6 +29,7 @@
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="ar19" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.geom(JDK/java.awt.geom@java_stub)" />
     <import index="7ou7" ref="r:c2174d48-8423-45ea-b84e-77408df7449d(de.itemis.mps.editor.diagram.runtime.shape)" />
+    <import index="j4gk" ref="r:44b6f9b4-bfdb-4b99-b104-960ec485d777(com.mbeddr.core.statements.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
@@ -1115,6 +1116,12 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="PMmxH" id="xAR9nWvFbO" role="3EZMnx">
+        <ref role="PMmxG" to="j4gk:xAR9nWuwd2" resolve="IHasPrefixesComponent" />
+        <node concept="VPM3Z" id="4qSf1u23Loe" role="3F10Kt">
+          <property role="VOm3f" value="false" />
         </node>
       </node>
       <node concept="3F0ifn" id="3PT6Z48KUjT" role="3EZMnx">

@@ -377,6 +377,9 @@
     <node concept="PrWs8" id="6V6S12czXcQ" role="PzmwI">
       <ref role="PrY4T" to="x27k:6V6S12clNH$" resolve="IDataFlowAnalyzerEntryPoint" />
     </node>
+    <node concept="PrWs8" id="7e09zBHTfSg" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:xAR9nWuwcY" resolve="IHasPrefixes" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkDc79">
     <property role="3GE5qa" value="comp.runnable" />
