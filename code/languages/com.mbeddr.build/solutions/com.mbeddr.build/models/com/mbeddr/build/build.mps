@@ -108,6 +108,9 @@
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
       </concept>
+      <concept id="6592112598314499036" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginModule" flags="ng" index="m$_yB">
+        <reference id="6592112598314499037" name="target" index="m$_yA" />
+      </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
@@ -10317,574 +10320,487 @@
           <property role="3MwjfP" value="mbeddr.spawner" />
         </node>
       </node>
-      <node concept="m$f5U" id="3WFWoB5GF0d" role="m$_yh">
-        <ref role="m$f5T" node="3WFWoB5GIF9" resolve="com.mbeddr.spawner" />
-        <node concept="1ZOTzT" id="3WFWoB5GIP$" role="1ZOTzL">
-          <ref role="1ZOTzQ" node="3WFWoB5GIFa" resolve="Eclipse.Debugger" />
-        </node>
-        <node concept="1ZOTzT" id="3WFWoB5GIRF" role="1ZOTzL">
-          <ref role="1ZOTzQ" node="3WFWoB5GIHT" resolve="com.mbeddr.spawner" />
-        </node>
-      </node>
-      <node concept="398BVA" id="3WFWoB5GF0g" role="I30fb">
-        <ref role="398BVh" node="3WFWoB5GFvQ" resolve="spawner" />
-        <node concept="2Ry0Ak" id="3WFWoB5GF0h" role="iGT6I">
-          <property role="2Ry0Am" value="languages" />
-          <node concept="2Ry0Ak" id="3WFWoB5GF0i" role="2Ry0An">
-            <property role="2Ry0Am" value="com.mbeddr.core.spawner" />
-            <node concept="2Ry0Ak" id="3WFWoB5GF0j" role="2Ry0An">
-              <property role="2Ry0Am" value="source_gen" />
-              <node concept="2Ry0Ak" id="3WFWoB5GF0k" role="2Ry0An">
-                <property role="2Ry0Am" value="com" />
-                <node concept="2Ry0Ak" id="3WFWoB5GF0l" role="2Ry0An">
-                  <property role="2Ry0Am" value="mbeddr" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GF0m" role="2Ry0An">
-                    <property role="2Ry0Am" value="spawner" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GF0n" role="2Ry0An">
-                      <property role="2Ry0Am" value="loader" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GF0o" role="2Ry0An">
-                        <property role="2Ry0Am" value="plugin.xml" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="m$_yB" id="5F_Zv_bqbt3" role="m$_yh">
+        <ref role="m$_yA" node="3WFWoB5GIFa" resolve="Eclipse.Debugger" />
       </node>
     </node>
-    <node concept="2G$12M" id="3WFWoB5GIF9" role="3989C9">
-      <property role="TrG5h" value="com.mbeddr.spawner" />
-      <node concept="1E1JtA" id="3WFWoB5GIFa" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="3LESm3" value="85d9f97b-1654-4692-b61c-fcc40db03653" />
-        <property role="TrG5h" value="Eclipse.Debugger" />
-        <property role="2GAjPV" value="true" />
-        <node concept="1SiIV0" id="3WFWoB5GIFb" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIFc" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIFd" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIFe" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIFf" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIFg" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIFh" role="2Ry0An">
-                      <property role="2Ry0Am" value="aopalliance.jar" />
-                    </node>
+    <node concept="1E1JtA" id="3WFWoB5GIFa" role="3989C9">
+      <property role="BnDLt" value="true" />
+      <property role="3LESm3" value="85d9f97b-1654-4692-b61c-fcc40db03653" />
+      <property role="TrG5h" value="Eclipse.Debugger" />
+      <property role="2GAjPV" value="true" />
+      <node concept="1SiIV0" id="3WFWoB5GIFb" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIFc" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIFd" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIFe" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIFf" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIFg" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIFh" role="2Ry0An">
+                    <property role="2Ry0Am" value="aopalliance.jar" />
                   </node>
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIFi" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIFj" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIFk" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIFl" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIFm" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIFn" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIFo" role="2Ry0An">
-                      <property role="2Ry0Am" value="cdt.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIFp" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIFq" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIFr" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIFs" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIFt" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIFu" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIFv" role="2Ry0An">
-                      <property role="2Ry0Am" value="cdt-facade.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIFw" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIFx" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIFy" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIFz" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIF$" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIF_" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIFA" role="2Ry0An">
-                      <property role="2Ry0Am" value="com.ibm.icu_4.4.2.v20110823.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIFB" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIFC" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIFD" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIFE" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIFF" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIFG" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIFH" role="2Ry0An">
-                      <property role="2Ry0Am" value="guice-3.0.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIFI" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIFJ" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIFK" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIFL" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIFM" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIFN" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIFO" role="2Ry0An">
-                      <property role="2Ry0Am" value="guice-multibindings-3.0.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIFP" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIFQ" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIFR" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIFS" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIFT" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIFU" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIFV" role="2Ry0An">
-                      <property role="2Ry0Am" value="javax.inject.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIFW" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIFX" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIFY" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIFZ" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIG0" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIG1" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIG2" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIG3" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIG4" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIG5" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIG6" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIG7" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIG8" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIG9" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.core.filebuffers_3.5.200.v20120523-1310.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIGa" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIGb" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIGc" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIGd" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIGe" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIGf" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIGg" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.core.filesystem_1.3.200.v20120522-2012.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIGh" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIGi" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIGj" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIGk" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIGl" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIGm" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIGn" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.core.jobs_3.5.300.v20120622-204750.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIGo" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIGp" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIGq" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIGr" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIGs" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIGt" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIGu" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.core.resources_3.8.1.v20120802-154922.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIGv" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIGw" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIGx" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIGy" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIGz" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIG$" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIG_" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.core.runtime_3.8.0.v20120521-2346.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIGA" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIGB" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIGC" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIGD" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIGE" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIGF" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIGG" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.core.variables_3.2.600.v20120521-2012.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIGH" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIGI" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIGJ" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIGK" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIGL" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIGM" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIGN" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.debug.core_3.7.100.v20120521-2012.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIGO" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIGP" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIGQ" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIGR" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIGS" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIGT" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIGU" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.equinox.app_1.3.100.v20120522-1841.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIGV" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIGW" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIGX" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIGY" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIGZ" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIH0" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIH1" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.equinox.common_3.6.100.v20120522-1841.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIH2" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIH3" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIH4" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIH5" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIH6" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIH7" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIH8" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.equinox.preferences_3.5.0.v20120522-1841.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIH9" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIHa" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIHb" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIHc" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIHd" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIHe" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIHf" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIHg" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIHh" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIHi" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIHj" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIHk" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIHl" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIHm" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.ltk.core.refactoring_3.6.0.v20120523-1543.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIHn" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIHo" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIHp" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIHq" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIHr" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIHs" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIHt" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.osgi_3.8.1.v20120830-144521.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIHu" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIHv" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIHw" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIHx" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIHy" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIHz" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIH$" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.text_3.5.200.v20120523-1310.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIH_" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIHA" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIHB" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIHC" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIHD" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIHE" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIHF" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.hamcrest.core_1.1.0.v20090501071000.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIHG" role="3bR37C">
-          <node concept="1BurEX" id="3WFWoB5GIHH" role="1SiIV1">
-            <node concept="398BVA" id="3WFWoB5GIHI" role="1BurEY">
-              <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIHJ" role="iGT6I">
-                <property role="2Ry0Am" value="tools" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIHK" role="2Ry0An">
-                  <property role="2Ry0Am" value="Eclipse.Debugger" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIHL" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GIHM" role="2Ry0An">
-                      <property role="2Ry0Am" value="runtime_registry_compatibility.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="398BVA" id="3WFWoB5GIHN" role="3LF7KH">
-          <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-          <node concept="2Ry0Ak" id="3WFWoB5GIHO" role="iGT6I">
-            <property role="2Ry0Am" value="tools" />
-            <node concept="2Ry0Ak" id="3WFWoB5GIHP" role="2Ry0An">
-              <property role="2Ry0Am" value="Eclipse.Debugger" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIHQ" role="2Ry0An">
-                <property role="2Ry0Am" value="Debugger.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3WFWoB5GIHR" role="3bR37C">
-          <node concept="3bR9La" id="3WFWoB5GIHS" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
       </node>
-      <node concept="1E1JtA" id="3WFWoB5GIHT" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="3LESm3" value="ebe1768e-261a-4c37-a061-412b0853e506" />
-        <property role="TrG5h" value="com.mbeddr.spawner" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="3WFWoB5GIHU" role="3LF7KH">
-          <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-          <node concept="2Ry0Ak" id="3WFWoB5GIHV" role="iGT6I">
-            <property role="2Ry0Am" value="code" />
-            <node concept="2Ry0Ak" id="3WFWoB5GIHW" role="2Ry0An">
-              <property role="2Ry0Am" value="languages" />
-              <node concept="2Ry0Ak" id="3WFWoB5GIHX" role="2Ry0An">
-                <property role="2Ry0Am" value="com.mbeddr.spawner" />
-                <node concept="2Ry0Ak" id="3WFWoB5GIHY" role="2Ry0An">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GIHZ" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.mbeddr.core.spawner" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GII0" role="2Ry0An">
-                      <property role="2Ry0Am" value="spawner.msd" />
-                    </node>
+      <node concept="1SiIV0" id="3WFWoB5GIFi" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIFj" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIFk" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIFl" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIFm" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIFn" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIFo" role="2Ry0An">
+                    <property role="2Ry0Am" value="cdt.jar" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3WFWoB5GII1" role="3bR37C">
-          <node concept="3bR9La" id="3WFWoB5GII2" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIFp" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIFq" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIFr" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIFs" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIFt" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIFu" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIFv" role="2Ry0An">
+                    <property role="2Ry0Am" value="cdt-facade.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3WFWoB5GII3" role="3bR37C">
-          <node concept="3bR9La" id="3WFWoB5GII4" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIFw" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIFx" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIFy" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIFz" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIF$" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIF_" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIFA" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.ibm.icu_4.4.2.v20110823.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3WFWoB5GII5" role="3bR37C">
-          <node concept="3bR9La" id="3WFWoB5GII6" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIFB" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIFC" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIFD" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIFE" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIFF" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIFG" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIFH" role="2Ry0An">
+                    <property role="2Ry0Am" value="guice-3.0.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3WFWoB5GII7" role="3bR37C">
-          <node concept="3bR9La" id="3WFWoB5GII8" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:44LXwdzyvTi" resolve="Annotations" />
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIFI" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIFJ" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIFK" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIFL" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIFM" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIFN" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIFO" role="2Ry0An">
+                    <property role="2Ry0Am" value="guice-multibindings-3.0.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIFP" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIFQ" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIFR" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIFS" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIFT" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIFU" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIFV" role="2Ry0An">
+                    <property role="2Ry0Am" value="javax.inject.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIFW" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIFX" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIFY" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIFZ" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIG0" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIG1" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIG2" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIG3" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIG4" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIG5" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIG6" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIG7" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIG8" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIG9" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.eclipse.core.filebuffers_3.5.200.v20120523-1310.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIGa" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIGb" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIGc" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIGd" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIGe" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIGf" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIGg" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.eclipse.core.filesystem_1.3.200.v20120522-2012.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIGh" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIGi" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIGj" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIGk" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIGl" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIGm" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIGn" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.eclipse.core.jobs_3.5.300.v20120622-204750.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIGo" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIGp" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIGq" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIGr" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIGs" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIGt" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIGu" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.eclipse.core.resources_3.8.1.v20120802-154922.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIGv" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIGw" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIGx" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIGy" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIGz" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIG$" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIG_" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.eclipse.core.runtime_3.8.0.v20120521-2346.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIGA" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIGB" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIGC" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIGD" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIGE" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIGF" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIGG" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.eclipse.core.variables_3.2.600.v20120521-2012.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIGH" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIGI" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIGJ" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIGK" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIGL" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIGM" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIGN" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.eclipse.debug.core_3.7.100.v20120521-2012.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIGO" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIGP" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIGQ" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIGR" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIGS" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIGT" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIGU" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.eclipse.equinox.app_1.3.100.v20120522-1841.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIGV" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIGW" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIGX" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIGY" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIGZ" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIH0" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIH1" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.eclipse.equinox.common_3.6.100.v20120522-1841.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIH2" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIH3" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIH4" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIH5" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIH6" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIH7" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIH8" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.eclipse.equinox.preferences_3.5.0.v20120522-1841.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIH9" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIHa" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIHb" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIHc" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIHd" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIHe" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIHf" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIHg" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIHh" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIHi" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIHj" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIHk" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIHl" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIHm" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.eclipse.ltk.core.refactoring_3.6.0.v20120523-1543.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIHn" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIHo" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIHp" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIHq" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIHr" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIHs" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIHt" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.eclipse.osgi_3.8.1.v20120830-144521.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIHu" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIHv" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIHw" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIHx" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIHy" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIHz" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIH$" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.eclipse.text_3.5.200.v20120523-1310.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIH_" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIHA" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIHB" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIHC" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIHD" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIHE" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIHF" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.hamcrest.core_1.1.0.v20090501071000.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIHG" role="3bR37C">
+        <node concept="1BurEX" id="3WFWoB5GIHH" role="1SiIV1">
+          <node concept="398BVA" id="3WFWoB5GIHI" role="1BurEY">
+            <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIHJ" role="iGT6I">
+              <property role="2Ry0Am" value="tools" />
+              <node concept="2Ry0Ak" id="3WFWoB5GIHK" role="2Ry0An">
+                <property role="2Ry0Am" value="Eclipse.Debugger" />
+                <node concept="2Ry0Ak" id="3WFWoB5GIHL" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3WFWoB5GIHM" role="2Ry0An">
+                    <property role="2Ry0Am" value="runtime_registry_compatibility.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="398BVA" id="3WFWoB5GIHN" role="3LF7KH">
+        <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+        <node concept="2Ry0Ak" id="3WFWoB5GIHO" role="iGT6I">
+          <property role="2Ry0Am" value="tools" />
+          <node concept="2Ry0Ak" id="3WFWoB5GIHP" role="2Ry0An">
+            <property role="2Ry0Am" value="Eclipse.Debugger" />
+            <node concept="2Ry0Ak" id="3WFWoB5GIHQ" role="2Ry0An">
+              <property role="2Ry0Am" value="Debugger.msd" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="3WFWoB5GIHR" role="3bR37C">
+        <node concept="3bR9La" id="3WFWoB5GIHS" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
         </node>
       </node>
     </node>
@@ -10898,7 +10814,7 @@
             <node concept="2Ry0Ak" id="3WFWoB5GEZS" role="2Ry0An">
               <property role="2Ry0Am" value=".." />
               <node concept="2Ry0Ak" id="3WFWoB5GEZX" role="2Ry0An">
-                <property role="2Ry0Am" value="MPS-141.1635.app" />
+                <property role="2Ry0Am" value="MPS-141.1725.app" />
                 <node concept="2Ry0Ak" id="3WFWoB5GF02" role="2Ry0An">
                   <property role="2Ry0Am" value="Contents" />
                 </node>
@@ -10942,458 +10858,78 @@
       <node concept="3981dG" id="3WFWoB5GJql" role="39821P">
         <node concept="m$_wl" id="3WFWoB5GJqm" role="39821P">
           <ref role="m_rDy" node="3WFWoB5GF04" resolve="com.mbeddr.spawner" />
-          <node concept="398223" id="3WFWoB5GJqn" role="39821P">
-            <node concept="3_J27D" id="3WFWoB5GJqo" role="Nbhlr">
-              <node concept="3Mxwew" id="3WFWoB5GJqp" role="3MwsjC">
-                <property role="3MwjfP" value="languages" />
-              </node>
-            </node>
-            <node concept="L2wRC" id="3WFWoB5GJqq" role="39821P">
-              <ref role="L2wRA" node="3WFWoB5GIFa" resolve="Eclipse.Debugger" />
-            </node>
-          </node>
           <node concept="398223" id="3WFWoB5GJqr" role="39821P">
-            <node concept="L2wRC" id="3WFWoB5GJqs" role="39821P">
-              <ref role="L2wRA" node="3WFWoB5GIHT" resolve="com.mbeddr.spawner" />
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJqt" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJqu" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJqv" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJqw" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJqx" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJqy" role="2Ry0An">
-                        <property role="2Ry0Am" value="aopalliance.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJqz" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJq$" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJq_" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJqA" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJqB" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJqC" role="2Ry0An">
-                        <property role="2Ry0Am" value="cdt.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJqD" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJqE" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJqF" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJqG" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJqH" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJqI" role="2Ry0An">
-                        <property role="2Ry0Am" value="cdt-facade.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJqJ" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJqK" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJqL" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJqM" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJqN" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJqO" role="2Ry0An">
-                        <property role="2Ry0Am" value="com.ibm.icu_4.4.2.v20110823.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJqP" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJqQ" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJqR" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJqS" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJqT" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJqU" role="2Ry0An">
-                        <property role="2Ry0Am" value="guice-3.0.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJqV" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJqW" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJqX" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJqY" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJqZ" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJr0" role="2Ry0An">
-                        <property role="2Ry0Am" value="guice-multibindings-3.0.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJr1" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJr2" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJr3" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJr4" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJr5" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJr6" role="2Ry0An">
-                        <property role="2Ry0Am" value="javax.inject.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJr7" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJr8" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJr9" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJra" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJrb" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJrc" role="2Ry0An">
-                        <property role="2Ry0Am" value="org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJrd" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJre" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJrf" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJrg" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJrh" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJri" role="2Ry0An">
-                        <property role="2Ry0Am" value="org.eclipse.core.filebuffers_3.5.200.v20120523-1310.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJrj" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJrk" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJrl" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJrm" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJrn" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJro" role="2Ry0An">
-                        <property role="2Ry0Am" value="org.eclipse.core.filesystem_1.3.200.v20120522-2012.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJrp" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJrq" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJrr" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJrs" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJrt" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJru" role="2Ry0An">
-                        <property role="2Ry0Am" value="org.eclipse.core.jobs_3.5.300.v20120622-204750.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJrv" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJrw" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJrx" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJry" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJrz" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJr$" role="2Ry0An">
-                        <property role="2Ry0Am" value="org.eclipse.core.resources_3.8.1.v20120802-154922.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJr_" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJrA" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJrB" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJrC" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJrD" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJrE" role="2Ry0An">
-                        <property role="2Ry0Am" value="org.eclipse.core.runtime_3.8.0.v20120521-2346.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJrF" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJrG" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJrH" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJrI" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJrJ" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJrK" role="2Ry0An">
-                        <property role="2Ry0Am" value="org.eclipse.core.variables_3.2.600.v20120521-2012.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJrL" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJrM" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJrN" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJrO" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJrP" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJrQ" role="2Ry0An">
-                        <property role="2Ry0Am" value="org.eclipse.debug.core_3.7.100.v20120521-2012.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJrR" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJrS" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJrT" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJrU" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJrV" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJrW" role="2Ry0An">
-                        <property role="2Ry0Am" value="org.eclipse.equinox.app_1.3.100.v20120522-1841.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJrX" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJrY" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJrZ" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJs0" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJs1" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJs2" role="2Ry0An">
-                        <property role="2Ry0Am" value="org.eclipse.equinox.common_3.6.100.v20120522-1841.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJs3" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJs4" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJs5" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJs6" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJs7" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJs8" role="2Ry0An">
-                        <property role="2Ry0Am" value="org.eclipse.equinox.preferences_3.5.0.v20120522-1841.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJs9" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJsa" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJsb" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJsc" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJsd" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJse" role="2Ry0An">
-                        <property role="2Ry0Am" value="org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJsf" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJsg" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJsh" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJsi" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJsj" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJsk" role="2Ry0An">
-                        <property role="2Ry0Am" value="org.eclipse.ltk.core.refactoring_3.6.0.v20120523-1543.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJsl" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJsm" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJsn" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJso" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJsp" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJsq" role="2Ry0An">
-                        <property role="2Ry0Am" value="org.eclipse.osgi_3.8.1.v20120830-144521.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJsr" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJss" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJst" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJsu" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJsv" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJsw" role="2Ry0An">
-                        <property role="2Ry0Am" value="org.eclipse.text_3.5.200.v20120523-1310.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJsx" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJsy" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJsz" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJs$" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJs_" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJsA" role="2Ry0An">
-                        <property role="2Ry0Am" value="org.hamcrest.core_1.1.0.v20090501071000.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="3WFWoB5GJsB" role="39821P">
-              <node concept="398BVA" id="3WFWoB5GJsC" role="28jJRO">
-                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                <node concept="2Ry0Ak" id="3WFWoB5GJsD" role="iGT6I">
-                  <property role="2Ry0Am" value="tools" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJsE" role="2Ry0An">
-                    <property role="2Ry0Am" value="Eclipse.Debugger" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJsF" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJsG" role="2Ry0An">
-                        <property role="2Ry0Am" value="runtime_registry_compatibility.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="398223" id="3WFWoB5GJsH" role="39821P">
-              <node concept="2HvfSZ" id="3WFWoB5GJsI" role="39821P">
-                <node concept="398BVA" id="3WFWoB5GJsJ" role="2HvfZ0">
-                  <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
-                  <node concept="2Ry0Ak" id="3WFWoB5GJsK" role="iGT6I">
-                    <property role="2Ry0Am" value="code" />
-                    <node concept="2Ry0Ak" id="3WFWoB5GJsL" role="2Ry0An">
-                      <property role="2Ry0Am" value="languages" />
-                      <node concept="2Ry0Ak" id="3WFWoB5GJsM" role="2Ry0An">
-                        <property role="2Ry0Am" value="com.mbeddr.spawner" />
-                        <node concept="2Ry0Ak" id="3WFWoB5GJsN" role="2Ry0An">
-                          <property role="2Ry0Am" value="languages" />
-                          <node concept="2Ry0Ak" id="3WFWoB5GJsO" role="2Ry0An">
-                            <property role="2Ry0Am" value="com.mbeddr.core.spawner" />
-                            <node concept="2Ry0Ak" id="3WFWoB5GJsP" role="2Ry0An">
-                              <property role="2Ry0Am" value="data" />
-                              <node concept="2Ry0Ak" id="3WFWoB5GJsQ" role="2Ry0An">
-                                <property role="2Ry0Am" value="spawner" />
-                              </node>
-                            </node>
-                          </node>
+            <node concept="2HvfSZ" id="5F_Zv_bp3f_" role="39821P">
+              <node concept="398BVA" id="5F_Zv_bp3mt" role="2HvfZ0">
+                <ref role="398BVh" node="3WFWoB5GFvQ" resolve="spawner" />
+                <node concept="2Ry0Ak" id="5F_Zv_bp3ot" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="5F_Zv_bp3o$" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.mbeddr.core.spawner" />
+                    <node concept="2Ry0Ak" id="5F_Zv_bp3oF" role="2Ry0An">
+                      <property role="2Ry0Am" value="data" />
+                      <node concept="2Ry0Ak" id="5F_Zv_bp3oM" role="2Ry0An">
+                        <property role="2Ry0Am" value="spawner" />
+                        <node concept="2Ry0Ak" id="5F_Zv_bp3oT" role="2Ry0An">
+                          <property role="2Ry0Am" value="linux.x86_64" />
                         </node>
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3_J27D" id="3WFWoB5GJsR" role="Nbhlr">
-                <node concept="3Mxwew" id="3WFWoB5GJsS" role="3MwsjC">
-                  <property role="3MwjfP" value="spawner" />
+            </node>
+            <node concept="2HvfSZ" id="5F_Zv_bp3EN" role="39821P">
+              <node concept="398BVA" id="5F_Zv_bp3EO" role="2HvfZ0">
+                <ref role="398BVh" node="3WFWoB5GFvQ" resolve="spawner" />
+                <node concept="2Ry0Ak" id="5F_Zv_bp3EP" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="5F_Zv_bp3EQ" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.mbeddr.core.spawner" />
+                    <node concept="2Ry0Ak" id="5F_Zv_bp3ER" role="2Ry0An">
+                      <property role="2Ry0Am" value="data" />
+                      <node concept="2Ry0Ak" id="5F_Zv_bp3ES" role="2Ry0An">
+                        <property role="2Ry0Am" value="spawner" />
+                        <node concept="2Ry0Ak" id="5F_Zv_bp43q" role="2Ry0An">
+                          <property role="2Ry0Am" value="macosx..x86_64" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2HvfSZ" id="5F_Zv_bp3M8" role="39821P">
+              <node concept="398BVA" id="5F_Zv_bp3M9" role="2HvfZ0">
+                <ref role="398BVh" node="3WFWoB5GFvQ" resolve="spawner" />
+                <node concept="2Ry0Ak" id="5F_Zv_bp3Ma" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="5F_Zv_bp3Mb" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.mbeddr.core.spawner" />
+                    <node concept="2Ry0Ak" id="5F_Zv_bp3Mc" role="2Ry0An">
+                      <property role="2Ry0Am" value="data" />
+                      <node concept="2Ry0Ak" id="5F_Zv_bp3Md" role="2Ry0An">
+                        <property role="2Ry0Am" value="spawner" />
+                        <node concept="2Ry0Ak" id="5F_Zv_bp45l" role="2Ry0An">
+                          <property role="2Ry0Am" value="win32.x86_64" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2HvfSZ" id="5F_Zv_bpJei" role="39821P">
+              <node concept="398BVA" id="5F_Zv_bpJgW" role="2HvfZ0">
+                <ref role="398BVh" node="3WFWoB5GFvn" resolve="mbeddr.github.core.home" />
+                <node concept="2Ry0Ak" id="5F_Zv_bpJiW" role="iGT6I">
+                  <property role="2Ry0Am" value="tools" />
+                  <node concept="2Ry0Ak" id="5F_Zv_bpJj3" role="2Ry0An">
+                    <property role="2Ry0Am" value="Eclipse.Debugger" />
+                    <node concept="2Ry0Ak" id="5F_Zv_bpJja" role="2Ry0An">
+                      <property role="2Ry0Am" value="lib" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
