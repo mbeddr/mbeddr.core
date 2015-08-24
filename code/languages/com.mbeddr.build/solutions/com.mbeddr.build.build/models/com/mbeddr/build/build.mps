@@ -671,6 +671,11 @@
             <ref role="1Busuk" to="p6ld:7uZw0yZ43JM" resolve="com.mbeddr.core.statements" />
           </node>
         </node>
+        <node concept="1yeLz9" id="bF97vFaiFF" role="1TViLv">
+          <property role="TrG5h" value="mbeddr.tutorial.vectors#210301905067588827" />
+          <property role="3LESm3" value="c9fff8c2-1d49-404c-8049-fbb7ffaf92af" />
+          <property role="2GAjPV" value="false" />
+        </node>
       </node>
       <node concept="1E1JtD" id="1JjMe_3nVlY" role="2G$12L">
         <property role="BnDLt" value="true" />
