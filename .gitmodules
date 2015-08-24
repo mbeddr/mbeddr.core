@@ -6,7 +6,3 @@
 [submodule "code/plugins/mps-incquery"]
 	path = code/plugins/mps-incquery
 	url = https://github.com/szabta89/MPS-IncQuery.git
-[submodule "code/applications/robot/mbeddr.arduino"]
-	path = code/applications/robot/mbeddr.arduino
-	url = https://github.com/mbeddr/mbeddr.arduino.git
-	branch = robot
