@@ -2,6 +2,11 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/mbeddr.arduino/languages/mbeddr.arduino.core/mbeddr.arduino.core.mpl" folder="mbeddr.arduino" />
+      <modulePath path="$PROJECT_DIR$/mbeddr.arduino/languages/mbeddr.arduino.interrupts/mbeddr.arduino.interrupts.mpl" folder="mbeddr.arduino" />
+      <modulePath path="$PROJECT_DIR$/mbeddr.arduino/languages/mbeddr.arduino.registers/mbeddr.arduino.registers.mpl" folder="mbeddr.arduino" />
+      <modulePath path="$PROJECT_DIR$/mbeddr.arduino/solutions/mbeddr.arduino.header/mbeddr.arduino.header.msd" folder="mbeddr.arduino" />
+      <modulePath path="$PROJECT_DIR$/mbeddr.arduino/solutions/mbeddr.arduino.platform/mbeddr.arduino.platform.msd" folder="mbeddr.arduino" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.demo.robot/com.mbeddr.demo.robot.msd" folder="" />
     </projectModules>
   </component>

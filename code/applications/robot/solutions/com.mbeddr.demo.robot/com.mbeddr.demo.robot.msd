@@ -39,7 +39,6 @@
     <usedDevKit>2f7ba914-eed9-41bf-b0ae-6633a04a3894(com.mbeddr.statemachinesInComponents)</usedDevKit>
     <usedDevKit>b31efd26-898e-4b0e-b5dc-2d7ced06e7f7(com.mbeddr.cc.variability)</usedDevKit>
     <usedDevKit>74a1428c-a8b1-49f6-8abb-f4008cf591e6(com.mbeddr.analyses.statemachines)</usedDevKit>
-    <usedDevKit>6845f348-7ea5-449c-ae3b-3d600bc3b73d(mbeddr.arduino)</usedDevKit>
     <usedDevKit>aa72fbcf-7e79-465b-a4d9-4517ef4624ee(com.mbeddr.concurrency)</usedDevKit>
   </usedDevKits>
   <languageVersions>
