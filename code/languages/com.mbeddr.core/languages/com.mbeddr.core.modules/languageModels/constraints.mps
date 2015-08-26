@@ -16,14 +16,18 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
@@ -53,6 +57,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -117,12 +122,14 @@
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
         <child id="1147468630220" name="propertyGetter" index="EtsB7" />
         <child id="1212097481299" name="propertyValidator" index="QCWH9" />
+        <child id="1152963095733" name="propertySetter" index="1LXaQT" />
       </concept>
       <concept id="1147467790433" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyGetter" flags="in" index="Eqf_E" />
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
       <concept id="1212096972063" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator" flags="in" index="QB0g5" />
       <concept id="7855321458717464197" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAnAncestor" flags="in" index="Um2eU" />
       <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
+      <concept id="1152959968041" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertySetter" flags="in" index="1LLf8_" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="7852712695066883424" name="canBeAncestor" index="1kkKnR" />
@@ -1668,6 +1675,49 @@
               <node concept="v3k3i" id="1myZgySqtym" role="2OqNvi">
                 <node concept="chp4Y" id="1myZgySqtyn" role="v3oSu">
                   <ref role="cht4Q" to="x27k:5_l8w1EmTvx" resolve="Function" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4wv4qqJRPhh">
+    <ref role="1M2myG" to="x27k:IrwlmWyLju" resolve="PragmaModuleContent" />
+    <node concept="EnEH3" id="4wv4qqJRQJ8" role="1MhHOB">
+      <ref role="EomxK" to="x27k:IrwlmWyLjw" resolve="pragmaText" />
+      <node concept="1LLf8_" id="4wv4qqJS52E" role="1LXaQT">
+        <node concept="3clFbS" id="4wv4qqJS52F" role="2VODD2">
+          <node concept="3clFbF" id="4wv4qqJSjOR" role="3cqZAp">
+            <node concept="37vLTI" id="4wv4qqJSuLw" role="3clFbG">
+              <node concept="2OqwBi" id="4wv4qqJSjTB" role="37vLTJ">
+                <node concept="EsrRn" id="4wv4qqJSjOP" role="2Oq$k0" />
+                <node concept="3TrcHB" id="4wv4qqJSueh" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4wv4qqJSwa2" role="37vLTx">
+                <node concept="1Wqviy" id="4wv4qqJSwa3" role="2Oq$k0" />
+                <node concept="liA8E" id="4wv4qqJSwa4" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                  <node concept="Xl_RD" id="4wv4qqJSwa5" role="37wK5m">
+                    <property role="Xl_RC" value="[^A-Za-z0-9]" />
+                  </node>
+                  <node concept="Xl_RD" id="4wv4qqJSwa6" role="37wK5m">
+                    <property role="Xl_RC" value="_" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="4wv4qqJSx9c" role="3cqZAp">
+            <node concept="37vLTI" id="4wv4qqJSzGY" role="3clFbG">
+              <node concept="1Wqviy" id="4wv4qqJS$iE" role="37vLTx" />
+              <node concept="2OqwBi" id="4wv4qqJSxed" role="37vLTJ">
+                <node concept="EsrRn" id="4wv4qqJSx9a" role="2Oq$k0" />
+                <node concept="3TrcHB" id="4wv4qqJSyDB" role="2OqNvi">
+                  <ref role="3TsBF5" to="x27k:IrwlmWyLjw" resolve="pragmaText" />
                 </node>
               </node>
             </node>
