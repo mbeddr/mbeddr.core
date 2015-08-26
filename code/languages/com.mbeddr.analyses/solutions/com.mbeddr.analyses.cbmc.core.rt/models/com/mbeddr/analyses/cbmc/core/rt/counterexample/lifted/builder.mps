@@ -4,10 +4,10 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
   </languages>
   <imports>
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
@@ -141,7 +141,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -6759,22 +6759,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="67iKQ7oHRGe" role="3cqZAp" />
-        <node concept="3clFbF" id="67iKQ7oHS1Y" role="3cqZAp">
-          <node concept="2OqwBi" id="67iKQ7oHS1V" role="3clFbG">
-            <node concept="10M0yZ" id="67iKQ7oHS1W" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="67iKQ7oHS1X" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="67iKQ7oHShL" role="37wK5m">
-                <property role="Xl_RC" value="---------------------------- in LocaLifCore ----------------" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="67iKQ7oHRMG" role="3cqZAp" />
         <node concept="3cpWs6" id="67iKQ7oFQdj" role="3cqZAp">
           <node concept="1rXfSq" id="67iKQ7oFQdk" role="3cqZAk">
             <ref role="37wK5l" to="8ear:4ngEEZdbuHU" resolve="safeCreateResultList" />

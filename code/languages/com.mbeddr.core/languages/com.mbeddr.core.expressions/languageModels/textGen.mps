@@ -88,6 +88,11 @@
       <concept id="1237305334312" name="jetbrains.mps.lang.textGen.structure.NodeAppendPart" flags="ng" index="l9hG8">
         <child id="1237305790512" name="value" index="lb14g" />
       </concept>
+      <concept id="1237305491868" name="jetbrains.mps.lang.textGen.structure.CollectionAppendPart" flags="ng" index="l9S2W">
+        <property id="1237306003719" name="separator" index="lbP0B" />
+        <property id="1237983969951" name="withSeparator" index="XA4eZ" />
+        <child id="1237305945551" name="list" index="lbANJ" />
+      </concept>
       <concept id="1237305557638" name="jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart" flags="ng" index="la8eA">
         <property id="1237305576108" name="value" index="lacIc" />
       </concept>
@@ -110,6 +115,9 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -1039,6 +1047,26 @@
           </node>
           <node concept="la8eA" id="UslQezBGnM" role="lcghm">
             <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="38UNetDTs3Y">
+    <property role="3GE5qa" value="expr" />
+    <ref role="WuzLi" to="mj1l:58TcxRGi40Z" resolve="ExpressionList" />
+    <node concept="11bSqf" id="38UNetDTs3Z" role="11c4hB">
+      <node concept="3clFbS" id="38UNetDTs40" role="2VODD2">
+        <node concept="lc7rE" id="38UNetDTtXy" role="3cqZAp">
+          <node concept="l9S2W" id="38UNetDTtXM" role="lcghm">
+            <property role="XA4eZ" value="true" />
+            <property role="lbP0B" value=", " />
+            <node concept="2OqwBi" id="38UNetDTu1o" role="lbANJ">
+              <node concept="117lpO" id="38UNetDTtY4" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="38UNetDTu$W" role="2OqNvi">
+                <ref role="3TtcxE" to="mj1l:58TcxRGi7E1" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

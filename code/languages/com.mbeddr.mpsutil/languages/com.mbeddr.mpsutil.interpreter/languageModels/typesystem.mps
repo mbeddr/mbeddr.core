@@ -3268,5 +3268,34 @@
       <ref role="1YaFvo" to="3673:7oujAIeQgTG" resolve="IsEvaluableExpression" />
     </node>
   </node>
+  <node concept="1YbPZF" id="4mmKsQ9amRM">
+    <property role="TrG5h" value="typeof_CastUpExpression" />
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions" />
+    <node concept="3clFbS" id="4mmKsQ9amRN" role="18ibNy">
+      <node concept="1Z5TYs" id="4mmKsQ9amT$" role="3cqZAp">
+        <node concept="mw_s8" id="4mmKsQ9amTB" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4mmKsQ9amRW" role="mwGJk">
+            <node concept="1YBJjd" id="4mmKsQ9amSo" role="1Z2MuG">
+              <ref role="1YBMHb" node="4mmKsQ9amRP" resolve="castUpExpression" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4mmKsQ9cD5Q" role="1ZfhKB">
+          <node concept="2OqwBi" id="4mmKsQ9cD7v" role="mwGJk">
+            <node concept="1YBJjd" id="4mmKsQ9cD5O" role="2Oq$k0">
+              <ref role="1YBMHb" node="4mmKsQ9amRP" resolve="castUpExpression" />
+            </node>
+            <node concept="3TrEf2" id="4mmKsQ9kq1c" role="2OqNvi">
+              <ref role="3Tt5mk" to="3673:4mmKsQ9kpQp" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4mmKsQ9amRP" role="1YuTPh">
+      <property role="TrG5h" value="castUpExpression" />
+      <ref role="1YaFvo" to="3673:4mmKsQ97pkM" resolve="CastUpExpression" />
+    </node>
+  </node>
 </model>
 

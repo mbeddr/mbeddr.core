@@ -65,6 +65,7 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
@@ -300,6 +301,12 @@
       <node concept="10P_77" id="3VM1o5wbfkC" role="r5wI3" />
       <node concept="rxStX" id="3VM1o5wbfkD" role="rai9p">
         <ref role="rxSuV" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
+      </node>
+    </node>
+    <node concept="rvkaK" id="6b0x7YlJ1ct" role="qq9xK">
+      <node concept="10P55v" id="6b0x7YlJ2V6" role="r5wI3" />
+      <node concept="rxStX" id="6b0x7YlJ2f8" role="rai9p">
+        <ref role="rxSuV" to="mj1l:7G6iUFOh4op" resolve="DoubleType" />
       </node>
     </node>
     <node concept="3SNpY9" id="3VM1o5wbfkE" role="qq9xR">

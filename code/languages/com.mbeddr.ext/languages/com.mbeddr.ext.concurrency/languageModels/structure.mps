@@ -15,6 +15,7 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -184,7 +185,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="specifiers" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="vg5qBCdLAj" resolve="AccessSpecifier" />
+      <ref role="20lvS9" node="6u_410TBNaj" resolve="AccessSpecifier" />
     </node>
     <node concept="1TJgyj" id="vg5qBCdL_R" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -201,8 +202,8 @@
   </node>
   <node concept="1TIwiD" id="vg5qBCdLAj">
     <property role="3GE5qa" value="atomic" />
-    <property role="TrG5h" value="AccessSpecifier" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="TrG5h" value="GlobalVarAccessSpecifier" />
+    <ref role="1TJDcQ" node="6u_410TBNaj" resolve="AccessSpecifier" />
     <node concept="1TJgyj" id="vg5qBCe_Pa" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="var" />
@@ -270,11 +271,17 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="66UaKxBOkrZ" resolve="SchedulingConstraint" />
+    <node concept="1TJgyj" id="3qlQk_gyT_r" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="taskReference" />
+      <ref role="20lvS9" node="3qlQk_gySDw" resolve="ITaskReference" />
+    </node>
     <node concept="1TJgyj" id="66UaKxBOktH" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="task" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="73Jrkgytd$o" resolve="Task" />
+      <node concept="asaX9" id="3qlQk_gze3N" role="lGtFl" />
     </node>
   </node>
   <node concept="1TIwiD" id="66UaKxBOm20">
@@ -319,7 +326,7 @@
   <node concept="1TIwiD" id="12_KeTzWRZv">
     <property role="3GE5qa" value="schedule" />
     <property role="TrG5h" value="WCETConstraint" />
-    <property role="34LRSv" value="wcet" />
+    <property role="34LRSv" value="check wcet" />
     <ref role="1TJDcQ" node="66UaKxBOktG" resolve="SingleTaskSchedulingConstraint" />
     <node concept="1TJgyj" id="6zcb4tIvPid" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -644,6 +651,94 @@
       <property role="20kJfa" value="sched" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="66UaKxBOkro" resolve="ScheduleSpecification" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6u_410TuQru">
+    <property role="TrG5h" value="ResourceDeclaration" />
+    <property role="34LRSv" value="resource" />
+    <property role="3GE5qa" value="resources" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6u_410Tv1cF" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6u_410TvjqB">
+    <property role="3GE5qa" value="atomic" />
+    <property role="TrG5h" value="ResourceAccessSpecifier" />
+    <ref role="1TJDcQ" node="6u_410TBNaj" resolve="AccessSpecifier" />
+    <node concept="1TJgyj" id="6u_410TvjqC" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="res" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6u_410TuQru" resolve="ResourceDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6u_410TBNaj">
+    <property role="3GE5qa" value="atomic" />
+    <property role="TrG5h" value="AccessSpecifier" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="6u_410TLnZf">
+    <property role="3GE5qa" value="resources" />
+    <property role="TrG5h" value="UseResourceAnnotation" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="6u_410TLnZm" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="resources" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="6u_410TvjqB" resolve="ResourceAccessSpecifier" />
+    </node>
+    <node concept="M6xJ_" id="6u_410TLnZg" role="lGtFl">
+      <property role="Hh88m" value="useResource" />
+      <node concept="trNpa" id="6u_410TQ8d_" role="EQaZv">
+        <ref role="trN6q" to="x27k:5_l8w1EmTvt" resolve="FunctionSignature" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7YbLqLwvqpx">
+    <property role="TrG5h" value="YieldStatement" />
+    <property role="34LRSv" value="yield" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="PrWs8" id="7YbLqLwvKJT" role="PzmwI">
+      <ref role="PrY4T" node="vg5qBCdJwB" resolve="ITaskSpecific" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3qlQk_gySUD">
+    <property role="3GE5qa" value="schedule" />
+    <property role="TrG5h" value="TaskReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3qlQk_gySUH" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="task" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="73Jrkgytd$o" resolve="Task" />
+    </node>
+    <node concept="PrWs8" id="3qlQk_gySUE" role="PzmwI">
+      <ref role="PrY4T" node="3qlQk_gySDw" resolve="ITaskReference" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3qlQk_gySDw">
+    <property role="3GE5qa" value="schedule" />
+    <property role="TrG5h" value="ITaskReference" />
+  </node>
+  <node concept="1TIwiD" id="5M$KybkpkcD">
+    <property role="3GE5qa" value="schedule" />
+    <property role="TrG5h" value="PeriodConstraint" />
+    <property role="34LRSv" value="check period" />
+    <ref role="1TJDcQ" node="66UaKxBOktG" resolve="SingleTaskSchedulingConstraint" />
+    <node concept="1TJgyj" id="5M$KybkpkcE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="minPeriod" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6zcb4tI8Sbk" resolve="TimeWithUnit" />
+    </node>
+    <node concept="1TJgyj" id="6fK2cW$P4M2" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="maxPeriod" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6zcb4tI8Sbk" resolve="TimeWithUnit" />
     </node>
   </node>
 </model>

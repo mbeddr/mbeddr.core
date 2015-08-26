@@ -5,9 +5,9 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -135,7 +135,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -1301,6 +1301,40 @@
           </node>
         </node>
         <node concept="3clFbJ" id="4xt6LZKDNNe" role="3cqZAp">
+          <node concept="1Wc70l" id="1wu5Hv5KEpk" role="3clFbw">
+            <node concept="1Wc70l" id="4xt6LZKDQqQ" role="3uHU7B">
+              <node concept="10M0yZ" id="4xt6LZKDT3E" role="3uHU7B">
+                <ref role="1PxDUh" to="btm1:~SystemUtils" resolve="SystemUtils" />
+                <ref role="3cqZAo" to="btm1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
+              </node>
+              <node concept="3fqX7Q" id="4xt6LZKDPOo" role="3uHU7w">
+                <node concept="2OqwBi" id="4xt6LZKDPOq" role="3fr31v">
+                  <node concept="37vLTw" id="4xt6LZKDPOr" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4$9c1ZxZ35u" resolve="programName" />
+                  </node>
+                  <node concept="liA8E" id="4xt6LZKDPOs" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                    <node concept="Xl_RD" id="4xt6LZKDT8v" role="37wK5m">
+                      <property role="Xl_RC" value=".exe" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="1wu5Hv5KEJG" role="3uHU7w">
+              <node concept="2OqwBi" id="1wu5Hv5KEJH" role="3fr31v">
+                <node concept="37vLTw" id="1wu5Hv5KEJI" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4$9c1ZxZ35u" resolve="programName" />
+                </node>
+                <node concept="liA8E" id="1wu5Hv5KEJJ" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                  <node concept="Xl_RD" id="1wu5Hv5KEJK" role="37wK5m">
+                    <property role="Xl_RC" value=".bat" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3clFbS" id="4xt6LZKDNNg" role="3clFbx">
             <node concept="3clFbF" id="4xt6LZKDDg0" role="3cqZAp">
               <node concept="d57v9" id="4xt6LZKDQaR" role="3clFbG">
@@ -1311,25 +1345,6 @@
                   <property role="Xl_RC" value=".exe" />
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="1Wc70l" id="4xt6LZKDQqQ" role="3clFbw">
-            <node concept="3fqX7Q" id="4xt6LZKDPOo" role="3uHU7w">
-              <node concept="2OqwBi" id="4xt6LZKDPOq" role="3fr31v">
-                <node concept="37vLTw" id="4xt6LZKDPOr" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4$9c1ZxZ35u" resolve="programName" />
-                </node>
-                <node concept="liA8E" id="4xt6LZKDPOs" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
-                  <node concept="Xl_RD" id="4xt6LZKDT8v" role="37wK5m">
-                    <property role="Xl_RC" value=".exe" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="10M0yZ" id="4xt6LZKDT3E" role="3uHU7B">
-              <ref role="1PxDUh" to="btm1:~SystemUtils" resolve="SystemUtils" />
-              <ref role="3cqZAo" to="btm1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
             </node>
           </node>
         </node>
@@ -2230,11 +2245,6 @@
       <node concept="3Tm1VV" id="4CtHBqNmr2p" role="1B3o_S" />
       <node concept="3clFbS" id="4CtHBqNmr2q" role="3clF47" />
       <node concept="P$JXv" id="6h7pCb_YtBK" role="lGtFl">
-        <node concept="TZ5HA" id="6h7pCb_YtBL" role="TZ5H$">
-          <node concept="1dT_AC" id="6h7pCb_YtBM" role="1dT_Ay">
-            <property role="1dT_AB" value="Runs a tool in the current directory." />
-          </node>
-        </node>
         <node concept="TUZQ0" id="6h7pCb_YtBN" role="3nqlJM">
           <property role="TUZQ4" value="the list of files on which the tool will be run" />
           <node concept="zr_55" id="6h7pCb_YtBP" role="zr_5Q">
@@ -2255,6 +2265,11 @@
         </node>
         <node concept="x79VA" id="6h7pCb_YtBW" role="3nqlJM">
           <property role="x79VB" value="an object that contains the standard output, error output, and delay" />
+        </node>
+        <node concept="TZ5HA" id="6h7pCb_YtBL" role="TZ5H$">
+          <node concept="1dT_AC" id="6h7pCb_YtBM" role="1dT_Ay">
+            <property role="1dT_AB" value="Runs a tool in the current directory." />
+          </node>
         </node>
       </node>
     </node>
@@ -2290,11 +2305,6 @@
       <node concept="3Tm1VV" id="4CtHBqNmogJ" role="1B3o_S" />
       <node concept="3clFbS" id="4CtHBqNmogK" role="3clF47" />
       <node concept="P$JXv" id="6h7pCb_YpAk" role="lGtFl">
-        <node concept="TZ5HA" id="6h7pCb_YpAl" role="TZ5H$">
-          <node concept="1dT_AC" id="6h7pCb_YpAm" role="1dT_Ay">
-            <property role="1dT_AB" value="Runs an external tool and returns the result." />
-          </node>
-        </node>
         <node concept="TUZQ0" id="6h7pCb_YpAn" role="3nqlJM">
           <property role="TUZQ4" value="the list of files on which the tool will be run" />
           <node concept="zr_55" id="6h7pCb_YpAp" role="zr_5Q">
@@ -2321,6 +2331,11 @@
         </node>
         <node concept="x79VA" id="6h7pCb_YpAz" role="3nqlJM">
           <property role="x79VB" value="an object that contains the standard output, error output, and delay" />
+        </node>
+        <node concept="TZ5HA" id="6h7pCb_YpAl" role="TZ5H$">
+          <node concept="1dT_AC" id="6h7pCb_YpAm" role="1dT_Ay">
+            <property role="1dT_AB" value="Runs an external tool and returns the result." />
+          </node>
         </node>
       </node>
     </node>

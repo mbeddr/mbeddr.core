@@ -792,11 +792,16 @@
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="2yaxsm5ofb2" role="3clF47">
         <node concept="3cpWs6" id="2yaxsm5ogrg" role="3cqZAp">
-          <node concept="2ShNRf" id="2yaxsm5o3KY" role="3cqZAk">
-            <node concept="1pGfFk" id="jgTeXj2AHS" role="2ShVmc">
-              <ref role="37wK5l" to="2ahs:7F2vPZ4jnk5" resolve="CombinedVisibleInterpreter" />
-              <node concept="37vLTw" id="jgTeXj2B9g" role="37wK5m">
-                <ref role="3cqZAo" node="jgTeXj2ARv" resolve="context" />
+          <node concept="2ShNRf" id="48HMCEK_S1m" role="3cqZAk">
+            <node concept="1pGfFk" id="48HMCEKA74H" role="2ShVmc">
+              <ref role="37wK5l" to="2ahs:4N5UlZRk7Oy" resolve="PersistentInterpreter" />
+              <node concept="2ShNRf" id="2yaxsm5o3KY" role="37wK5m">
+                <node concept="1pGfFk" id="jgTeXj2AHS" role="2ShVmc">
+                  <ref role="37wK5l" to="2ahs:7F2vPZ4jnk5" resolve="CombinedVisibleInterpreter" />
+                  <node concept="37vLTw" id="jgTeXj2B9g" role="37wK5m">
+                    <ref role="3cqZAo" node="jgTeXj2ARv" resolve="context" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

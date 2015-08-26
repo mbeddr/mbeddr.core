@@ -8,6 +8,7 @@
   <imports>
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -17,6 +18,9 @@
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+      </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
@@ -52,6 +56,9 @@
     </node>
     <node concept="PrWs8" id="4r1mNB_cRQE" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="$ZgyIbTXUO" role="PzmwI">
+      <ref role="PrY4T" node="$ZgyIbTDBI" resolve="IRequiresMathConfigItem" />
     </node>
   </node>
   <node concept="1TIwiD" id="PWcNB4VGAB">
@@ -101,6 +108,9 @@
     <node concept="PrWs8" id="7x2kTszelnx" role="PzmwI">
       <ref role="PrY4T" to="mj1l:3bfDwHbElen" resolve="IExpressionWrapper" />
     </node>
+    <node concept="PrWs8" id="$ZgyIbUJs_" role="PzmwI">
+      <ref role="PrY4T" node="$ZgyIbTDBI" resolve="IRequiresMathConfigItem" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4r1mNB_gblN">
     <property role="TrG5h" value="ProductLoopExpression" />
@@ -110,6 +120,9 @@
     <ref role="1TJDcQ" node="4r1mNB_fOp9" resolve="MathLoopExpression" />
     <node concept="PrWs8" id="7x2kTszdQCc" role="PzmwI">
       <ref role="PrY4T" to="mj1l:3bfDwHbElen" resolve="IExpressionWrapper" />
+    </node>
+    <node concept="PrWs8" id="$ZgyIbUJsJ" role="PzmwI">
+      <ref role="PrY4T" node="$ZgyIbTDBI" resolve="IRequiresMathConfigItem" />
     </node>
   </node>
   <node concept="1TIwiD" id="4r1mNB_lBUT">
@@ -126,6 +139,9 @@
     </node>
     <node concept="PrWs8" id="7x2kTszdQCf" role="PzmwI">
       <ref role="PrY4T" to="mj1l:3bfDwHbElen" resolve="IExpressionWrapper" />
+    </node>
+    <node concept="PrWs8" id="$ZgyIbUJsQ" role="PzmwI">
+      <ref role="PrY4T" node="$ZgyIbTDBI" resolve="IRequiresMathConfigItem" />
     </node>
   </node>
   <node concept="1TIwiD" id="4r1mNB_o5UP">
@@ -146,6 +162,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="$ZgyIbUJsE" role="PzmwI">
+      <ref role="PrY4T" node="$ZgyIbTDBI" resolve="IRequiresMathConfigItem" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4r1mNB_q7_Q">
     <property role="TrG5h" value="LogarithmExpression" />
@@ -165,6 +184,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="$ZgyIbUJsv" role="PzmwI">
+      <ref role="PrY4T" node="$ZgyIbTDBI" resolve="IRequiresMathConfigItem" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4r1mNB_uhLf">
     <property role="TrG5h" value="AbsExpression" />
@@ -180,6 +202,9 @@
     </node>
     <node concept="PrWs8" id="7x2kTszdQBL" role="PzmwI">
       <ref role="PrY4T" to="mj1l:3bfDwHbElen" resolve="IExpressionWrapper" />
+    </node>
+    <node concept="PrWs8" id="$ZgyIbUJso" role="PzmwI">
+      <ref role="PrY4T" node="$ZgyIbTDBI" resolve="IRequiresMathConfigItem" />
     </node>
   </node>
   <node concept="1TIwiD" id="4r1mNB_wbuZ">
@@ -199,6 +224,23 @@
       <property role="20kJfa" value="right" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="$ZgyIbUJst" role="PzmwI">
+      <ref role="PrY4T" node="$ZgyIbTDBI" resolve="IRequiresMathConfigItem" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="$ZgyIbSt9D">
+    <property role="TrG5h" value="MathConfigurationItem" />
+    <property role="34LRSv" value="math" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="$ZgyIbTDfu" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="$ZgyIbTDBI">
+    <property role="TrG5h" value="IRequiresMathConfigItem" />
+    <node concept="PrWs8" id="$ZgyIbTDBJ" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
     </node>
   </node>
 </model>

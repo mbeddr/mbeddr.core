@@ -43,6 +43,7 @@
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -557,6 +558,52 @@
       <property role="2czwfO" value="," />
       <ref role="1NtTu8" to="48a0:HiHa_$mPN4" />
       <node concept="2iRfu4" id="HiHa_$ohf6" role="2czzBx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="XYEPTiep_C">
+    <property role="3GE5qa" value="verification_case" />
+    <ref role="1XX52x" to="48a0:XYEPTiekej" resolve="ChangeFrequency" />
+    <node concept="3EZMnI" id="XYEPTieypv" role="2wV5jI">
+      <node concept="3F0ifn" id="XYEPTieypA" role="3EZMnx">
+        <property role="3F0ifm" value="changes frequency" />
+      </node>
+      <node concept="3F0ifn" id="XYEPTirktc" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="XYEPTirkve" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="XYEPTis6C5" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="XYEPTieypy" role="2iSdaV" />
+      <node concept="3F1sOY" id="XYEPTiqOYN" role="3EZMnx">
+        <ref role="1NtTu8" to="48a0:XYEPTiep_x" />
+        <node concept="11L4FC" id="XYEPTirpNS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="XYEPTignnl" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="XYEPTirkxd" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="XYEPTipcKP" role="3EZMnx">
+        <property role="3F0ifm" value="every" />
+      </node>
+      <node concept="3F1sOY" id="XYEPTiqOZc" role="3EZMnx">
+        <ref role="1NtTu8" to="48a0:XYEPTignne" />
+      </node>
+      <node concept="3F0ifn" id="XYEPTisaZK" role="3EZMnx">
+        <property role="3F0ifm" value="steps" />
+      </node>
+      <node concept="3F0ifn" id="XYEPTis1xg" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="11L4FC" id="XYEPTis6Ai" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

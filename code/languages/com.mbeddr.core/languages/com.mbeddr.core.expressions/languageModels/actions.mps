@@ -6,7 +6,7 @@
     <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -135,7 +135,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -178,6 +178,9 @@
       </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
+      </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
@@ -323,6 +326,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="5820409030208923287" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingLinkOperation" flags="nn" index="25OxAV" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -445,6 +449,14 @@
       <concept id="3358009230508699637" name="jetbrains.mps.baseLanguage.collections.structure.PopOperation" flags="nn" index="2AryhJ" />
       <concept id="3358009230508699932" name="jetbrains.mps.baseLanguage.collections.structure.PushOperation" flags="nn" index="2ArzE6" />
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
+      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
+        <child id="1153944400369" name="variable" index="2Gsz3X" />
+        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
+      </concept>
+      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
+      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
+        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
+      </concept>
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
@@ -675,24 +687,14 @@
                       <node concept="3zZkjj" id="4b5CJEn525q" role="2OqNvi">
                         <node concept="1bVj0M" id="4b5CJEn525r" role="23t8la">
                           <node concept="3clFbS" id="4b5CJEn525s" role="1bW5cS">
-                            <node concept="3clFbF" id="4b5CJEn525t" role="3cqZAp">
-                              <node concept="2YIFZM" id="4b5CJEn525u" role="3clFbG">
-                                <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-                                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
-                                <node concept="2YIFZM" id="4_OjW93m9L0" role="37wK5m">
-                                  <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
-                                  <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
-                                  <node concept="37vLTw" id="4_OjW93mbqX" role="37wK5m">
-                                    <ref role="3cqZAo" node="4b5CJEn525C" resolve="it" />
-                                  </node>
+                            <node concept="3clFbF" id="1wu5Hv5Mbso" role="3cqZAp">
+                              <node concept="2YIFZM" id="1wu5Hv5MbOi" role="3clFbG">
+                                <ref role="37wK5l" node="1wu5Hv5M3tp" resolve="binaryOperatorAllowed" />
+                                <ref role="1Pybhc" node="1wu5Hv5M1FT" resolve="ModelConstraintsUtils" />
+                                <node concept="37vLTw" id="1wu5Hv5Mcdi" role="37wK5m">
+                                  <ref role="3cqZAo" node="4b5CJEn525C" resolve="it" />
                                 </node>
-                                <node concept="2OqwBi" id="4b5CJEn525$" role="37wK5m">
-                                  <node concept="Cj7Ep" id="4b5CJEn525_" role="2Oq$k0" />
-                                  <node concept="1mfA1w" id="4b5CJEn525A" role="2OqNvi" />
-                                </node>
-                                <node concept="10Nm6u" id="4b5CJEn525B" role="37wK5m" />
-                                <node concept="10Nm6u" id="4nKop3QFtQk" role="37wK5m" />
-                                <node concept="10Nm6u" id="4nKop3QFuFC" role="37wK5m" />
+                                <node concept="Cj7Ep" id="1wu5Hv5McRS" role="37wK5m" />
                               </node>
                             </node>
                           </node>
@@ -881,24 +883,14 @@
                       <node concept="3zZkjj" id="4b5CJEn5fn3" role="2OqNvi">
                         <node concept="1bVj0M" id="4b5CJEn5fn4" role="23t8la">
                           <node concept="3clFbS" id="4b5CJEn5fn5" role="1bW5cS">
-                            <node concept="3clFbF" id="4b5CJEn5fn6" role="3cqZAp">
-                              <node concept="2YIFZM" id="4b5CJEn5fn7" role="3clFbG">
-                                <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-                                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
-                                <node concept="2YIFZM" id="4_OjW93mfH2" role="37wK5m">
-                                  <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
-                                  <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
-                                  <node concept="37vLTw" id="4_OjW93mfH3" role="37wK5m">
-                                    <ref role="3cqZAo" node="4b5CJEn5fnh" resolve="it" />
-                                  </node>
+                            <node concept="3clFbF" id="1wu5Hv5Me8V" role="3cqZAp">
+                              <node concept="2YIFZM" id="1wu5Hv5Me8X" role="3clFbG">
+                                <ref role="1Pybhc" node="1wu5Hv5M1FT" resolve="ModelConstraintsUtils" />
+                                <ref role="37wK5l" node="1wu5Hv5M3tp" resolve="binaryOperatorAllowed" />
+                                <node concept="37vLTw" id="1wu5Hv5Me8Y" role="37wK5m">
+                                  <ref role="3cqZAo" node="4b5CJEn5fnh" resolve="it" />
                                 </node>
-                                <node concept="2OqwBi" id="4b5CJEn5fnd" role="37wK5m">
-                                  <node concept="Cj7Ep" id="4b5CJEn5fne" role="2Oq$k0" />
-                                  <node concept="1mfA1w" id="4b5CJEn5fnf" role="2OqNvi" />
-                                </node>
-                                <node concept="10Nm6u" id="4b5CJEn5fng" role="37wK5m" />
-                                <node concept="10Nm6u" id="4nKop3QFiM9" role="37wK5m" />
-                                <node concept="10Nm6u" id="4nKop3QFjBt" role="37wK5m" />
+                                <node concept="Cj7Ep" id="1wu5Hv5Me8Z" role="37wK5m" />
                               </node>
                             </node>
                           </node>
@@ -1231,24 +1223,14 @@
                       <node concept="3zZkjj" id="4b5CJEn5g3b" role="2OqNvi">
                         <node concept="1bVj0M" id="4b5CJEn5g3c" role="23t8la">
                           <node concept="3clFbS" id="4b5CJEn5g3d" role="1bW5cS">
-                            <node concept="3clFbF" id="4b5CJEn5g3e" role="3cqZAp">
-                              <node concept="2YIFZM" id="4b5CJEn5g3f" role="3clFbG">
-                                <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-                                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
-                                <node concept="2YIFZM" id="4_OjW93mhbr" role="37wK5m">
-                                  <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
-                                  <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
-                                  <node concept="37vLTw" id="4_OjW93mhbs" role="37wK5m">
-                                    <ref role="3cqZAo" node="4b5CJEn5g3p" resolve="it" />
-                                  </node>
+                            <node concept="3clFbF" id="1wu5Hv5MflF" role="3cqZAp">
+                              <node concept="2YIFZM" id="1wu5Hv5MflH" role="3clFbG">
+                                <ref role="1Pybhc" node="1wu5Hv5M1FT" resolve="ModelConstraintsUtils" />
+                                <ref role="37wK5l" node="1wu5Hv5M3tp" resolve="binaryOperatorAllowed" />
+                                <node concept="37vLTw" id="1wu5Hv5MflI" role="37wK5m">
+                                  <ref role="3cqZAo" node="4b5CJEn5g3p" resolve="it" />
                                 </node>
-                                <node concept="2OqwBi" id="4b5CJEn5g3l" role="37wK5m">
-                                  <node concept="Cj7Ep" id="4b5CJEn5g3m" role="2Oq$k0" />
-                                  <node concept="1mfA1w" id="4b5CJEn5g3n" role="2OqNvi" />
-                                </node>
-                                <node concept="10Nm6u" id="4b5CJEn5g3o" role="37wK5m" />
-                                <node concept="10Nm6u" id="4nKop3QF7o4" role="37wK5m" />
-                                <node concept="10Nm6u" id="4nKop3QF80b" role="37wK5m" />
+                                <node concept="Cj7Ep" id="1wu5Hv5MflJ" role="37wK5m" />
                               </node>
                             </node>
                           </node>
@@ -1380,24 +1362,14 @@
                       <node concept="3zZkjj" id="4b5CJEn5g3U" role="2OqNvi">
                         <node concept="1bVj0M" id="4b5CJEn5g3V" role="23t8la">
                           <node concept="3clFbS" id="4b5CJEn5g3W" role="1bW5cS">
-                            <node concept="3clFbF" id="4b5CJEn5g3X" role="3cqZAp">
-                              <node concept="2YIFZM" id="4b5CJEn5g3Y" role="3clFbG">
-                                <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-                                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
-                                <node concept="2YIFZM" id="4_OjW93mimK" role="37wK5m">
-                                  <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
-                                  <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
-                                  <node concept="37vLTw" id="4_OjW93mimL" role="37wK5m">
-                                    <ref role="3cqZAo" node="4b5CJEn5g48" resolve="it" />
-                                  </node>
+                            <node concept="3clFbF" id="1wu5Hv5Mgyr" role="3cqZAp">
+                              <node concept="2YIFZM" id="1wu5Hv5Mgyt" role="3clFbG">
+                                <ref role="1Pybhc" node="1wu5Hv5M1FT" resolve="ModelConstraintsUtils" />
+                                <ref role="37wK5l" node="1wu5Hv5M3tp" resolve="binaryOperatorAllowed" />
+                                <node concept="37vLTw" id="1wu5Hv5Mgyu" role="37wK5m">
+                                  <ref role="3cqZAo" node="4b5CJEn5g48" resolve="it" />
                                 </node>
-                                <node concept="2OqwBi" id="4b5CJEn5g44" role="37wK5m">
-                                  <node concept="Cj7Ep" id="4b5CJEn5g45" role="2Oq$k0" />
-                                  <node concept="1mfA1w" id="4b5CJEn5g46" role="2OqNvi" />
-                                </node>
-                                <node concept="10Nm6u" id="4b5CJEn5g47" role="37wK5m" />
-                                <node concept="10Nm6u" id="4nKop3QEYtd" role="37wK5m" />
-                                <node concept="10Nm6u" id="4nKop3QEZ$R" role="37wK5m" />
+                                <node concept="Cj7Ep" id="1wu5Hv5Mgyv" role="37wK5m" />
                               </node>
                             </node>
                           </node>
@@ -1711,12 +1683,6 @@
         </node>
       </node>
       <node concept="P$JXv" id="PyYoN5p$9z" role="lGtFl">
-        <node concept="TZ5HA" id="PyYoN5p$9$" role="TZ5H$">
-          <node concept="1dT_AC" id="PyYoN5p$9_" role="1dT_Ay">
-            <property role="1dT_AB" value="Performs a left rotation on the expression tree at the given node. " />
-          </node>
-          <node concept="1dT_AC" id="PyYoN5p$9A" role="1dT_Ay" />
-        </node>
         <node concept="TUZQ0" id="PyYoN5p$9B" role="3nqlJM">
           <property role="TUZQ4" value="the node where the roatation should be performed" />
           <node concept="zr_55" id="PyYoN5p$9C" role="zr_5Q">
@@ -1725,6 +1691,12 @@
         </node>
         <node concept="x79VA" id="PyYoN5p$9D" role="3nqlJM">
           <property role="x79VB" value="true if the rotation was successful, false otherwise" />
+        </node>
+        <node concept="TZ5HA" id="PyYoN5p$9$" role="TZ5H$">
+          <node concept="1dT_AC" id="PyYoN5p$9_" role="1dT_Ay">
+            <property role="1dT_AB" value="Performs a left rotation on the expression tree at the given node. " />
+          </node>
+          <node concept="1dT_AC" id="PyYoN5p$9A" role="1dT_Ay" />
         </node>
       </node>
     </node>
@@ -1857,12 +1829,6 @@
         </node>
       </node>
       <node concept="P$JXv" id="PyYoN5pMN8" role="lGtFl">
-        <node concept="TZ5HA" id="PyYoN5pMN9" role="TZ5H$">
-          <node concept="1dT_AC" id="PyYoN5pMNa" role="1dT_Ay">
-            <property role="1dT_AB" value="Performs a right rotation on the expression tree at the given node. " />
-          </node>
-          <node concept="1dT_AC" id="PyYoN5pMNb" role="1dT_Ay" />
-        </node>
         <node concept="TUZQ0" id="PyYoN5pMNc" role="3nqlJM">
           <property role="TUZQ4" value="the node where the rotation should be performed" />
           <node concept="zr_55" id="PyYoN5pMNd" role="zr_5Q">
@@ -1871,6 +1837,12 @@
         </node>
         <node concept="x79VA" id="PyYoN5pMNe" role="3nqlJM">
           <property role="x79VB" value="return true if the rotation was successful, false otherwise" />
+        </node>
+        <node concept="TZ5HA" id="PyYoN5pMN9" role="TZ5H$">
+          <node concept="1dT_AC" id="PyYoN5pMNa" role="1dT_Ay">
+            <property role="1dT_AB" value="Performs a right rotation on the expression tree at the given node. " />
+          </node>
+          <node concept="1dT_AC" id="PyYoN5pMNb" role="1dT_Ay" />
         </node>
       </node>
     </node>
@@ -2104,6 +2076,12 @@
         </node>
       </node>
       <node concept="P$JXv" id="4aY3oGIjKup" role="lGtFl">
+        <node concept="TUZQ0" id="4aY3oGIjKus" role="3nqlJM">
+          <property role="TUZQ4" value="the expression which will be the root of the rebalancing" />
+          <node concept="zr_55" id="4aY3oGIjKuu" role="zr_5Q">
+            <ref role="zr_51" node="3M4aPu$Qxih" resolve="expression" />
+          </node>
+        </node>
         <node concept="TZ5HA" id="4aY3oGIjKuq" role="TZ5H$">
           <node concept="1dT_AC" id="4aY3oGIjKur" role="1dT_Ay">
             <property role="1dT_AB" value="Rebalances the subtree of the given expression. " />
@@ -2112,12 +2090,6 @@
         <node concept="TZ5HA" id="4aY3oGIkeC_" role="TZ5H$">
           <node concept="1dT_AC" id="4aY3oGIkeCA" role="1dT_Ay">
             <property role="1dT_AB" value="Only binary expressions are considered for rebalancing. " />
-          </node>
-        </node>
-        <node concept="TUZQ0" id="4aY3oGIjKus" role="3nqlJM">
-          <property role="TUZQ4" value="the expression which will be the root of the rebalancing" />
-          <node concept="zr_55" id="4aY3oGIjKuu" role="zr_5Q">
-            <ref role="zr_51" node="3M4aPu$Qxih" resolve="expression" />
           </node>
         </node>
       </node>
@@ -2305,6 +2277,12 @@
         </node>
       </node>
       <node concept="P$JXv" id="4aY3oGIjJp_" role="lGtFl">
+        <node concept="TUZQ0" id="4aY3oGIjJpC" role="3nqlJM">
+          <property role="TUZQ4" value="the expression in the tree" />
+          <node concept="zr_55" id="4aY3oGIjJpE" role="zr_5Q">
+            <ref role="zr_51" node="3M4aPu$Mu1q" resolve="expression" />
+          </node>
+        </node>
         <node concept="TZ5HA" id="4aY3oGIjJpA" role="TZ5H$">
           <node concept="1dT_AC" id="4aY3oGIjKqs" role="1dT_Ay">
             <property role="1dT_AB" value="Rebalances the whole expression tree of the given expression." />
@@ -2323,12 +2301,6 @@
         <node concept="TZ5HA" id="4aY3oGIkeBI" role="TZ5H$">
           <node concept="1dT_AC" id="4aY3oGIkeBJ" role="1dT_Ay">
             <property role="1dT_AB" value="Only binary expressions are considered for rebalancing. " />
-          </node>
-        </node>
-        <node concept="TUZQ0" id="4aY3oGIjJpC" role="3nqlJM">
-          <property role="TUZQ4" value="the expression in the tree" />
-          <node concept="zr_55" id="4aY3oGIjJpE" role="zr_5Q">
-            <ref role="zr_51" node="3M4aPu$Mu1q" resolve="expression" />
           </node>
         </node>
       </node>
@@ -3228,11 +3200,6 @@
         <node concept="10P_77" id="3M4aPu$LGQu" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="3M4aPu$LGQJ" role="lGtFl">
-        <node concept="TZ5HA" id="3M4aPu$LGQK" role="TZ5H$">
-          <node concept="1dT_AC" id="3M4aPu$LGQL" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns the first binary expression where the given expression is on the given side. " />
-          </node>
-        </node>
         <node concept="TUZQ0" id="3M4aPu$LGQM" role="3nqlJM">
           <property role="TUZQ4" value="the descendant expression" />
           <node concept="zr_55" id="3M4aPu$LGQO" role="zr_5Q">
@@ -3247,6 +3214,11 @@
         </node>
         <node concept="x79VA" id="3M4aPu$LGQS" role="3nqlJM">
           <property role="x79VB" value="the found binary expression" />
+        </node>
+        <node concept="TZ5HA" id="3M4aPu$LGQK" role="TZ5H$">
+          <node concept="1dT_AC" id="3M4aPu$LGQL" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the first binary expression where the given expression is on the given side. " />
+          </node>
         </node>
       </node>
     </node>
@@ -7140,6 +7112,21 @@
         <node concept="10P_77" id="4oMhk$ZckjV" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="4oMhk$ZfnYB" role="lGtFl">
+        <node concept="TUZQ0" id="4oMhk$ZfnYE" role="3nqlJM">
+          <property role="TUZQ4" value="the root element of the subtree" />
+          <node concept="zr_55" id="4oMhk$ZfnYG" role="zr_5Q">
+            <ref role="zr_51" node="4oMhk$ZckhE" resolve="root" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="4oMhk$ZfnYH" role="3nqlJM">
+          <property role="TUZQ4" value="true if we are completing a right parenthesis, false otherwise" />
+          <node concept="zr_55" id="4oMhk$ZfnYJ" role="zr_5Q">
+            <ref role="zr_51" node="4oMhk$Zckj_" resolve="completingRightParenthesis" />
+          </node>
+        </node>
+        <node concept="x79VA" id="4oMhk$ZfnYK" role="3nqlJM">
+          <property role="x79VB" value="the list of candidates" />
+        </node>
         <node concept="TZ5HA" id="4oMhk$ZfnYC" role="TZ5H$">
           <node concept="1dT_AC" id="4oMhk$ZfnYD" role="1dT_Ay">
             <property role="1dT_AB" value="Finds candidates for parenthesis matching when the just input parenthesis is on the side given by the " />
@@ -7169,21 +7156,6 @@
           <node concept="1dT_AC" id="4oMhk$ZfouP" role="1dT_Ay">
             <property role="1dT_AB" value="priorities between binary expressions. " />
           </node>
-        </node>
-        <node concept="TUZQ0" id="4oMhk$ZfnYE" role="3nqlJM">
-          <property role="TUZQ4" value="the root element of the subtree" />
-          <node concept="zr_55" id="4oMhk$ZfnYG" role="zr_5Q">
-            <ref role="zr_51" node="4oMhk$ZckhE" resolve="root" />
-          </node>
-        </node>
-        <node concept="TUZQ0" id="4oMhk$ZfnYH" role="3nqlJM">
-          <property role="TUZQ4" value="true if we are completing a right parenthesis, false otherwise" />
-          <node concept="zr_55" id="4oMhk$ZfnYJ" role="zr_5Q">
-            <ref role="zr_51" node="4oMhk$Zckj_" resolve="completingRightParenthesis" />
-          </node>
-        </node>
-        <node concept="x79VA" id="4oMhk$ZfnYK" role="3nqlJM">
-          <property role="x79VB" value="the list of candidates" />
         </node>
       </node>
     </node>
@@ -8494,16 +8466,6 @@
         <node concept="10P_77" id="4NFs2i9_G7T" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="314RTCzmGy5" role="lGtFl">
-        <node concept="TZ5HA" id="314RTCzmIco" role="TZ5H$">
-          <node concept="1dT_AC" id="4NFs2i9_Gb5" role="1dT_Ay">
-            <property role="1dT_AB" value="Finds all the ancestor expressions of the leafNode which can be wrapped in a parenthesis. " />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="4NFs2i9_Gb7" role="TZ5H$">
-          <node concept="1dT_AC" id="4NFs2i9_Gb8" role="1dT_Ay">
-            <property role="1dT_AB" value="Stops at the first ancestor which cannot be parenthesised. " />
-          </node>
-        </node>
         <node concept="TUZQ0" id="2R09Ku3PCzM" role="3nqlJM">
           <property role="TUZQ4" value="the leaf node in the expression tree" />
           <node concept="zr_55" id="2R09Ku3PC$c" role="zr_5Q">
@@ -8518,6 +8480,16 @@
         </node>
         <node concept="x79VA" id="2R09Ku3PEVz" role="3nqlJM">
           <property role="x79VB" value="the parent path" />
+        </node>
+        <node concept="TZ5HA" id="314RTCzmIco" role="TZ5H$">
+          <node concept="1dT_AC" id="4NFs2i9_Gb5" role="1dT_Ay">
+            <property role="1dT_AB" value="Finds all the ancestor expressions of the leafNode which can be wrapped in a parenthesis. " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="4NFs2i9_Gb7" role="TZ5H$">
+          <node concept="1dT_AC" id="4NFs2i9_Gb8" role="1dT_Ay">
+            <property role="1dT_AB" value="Stops at the first ancestor which cannot be parenthesised. " />
+          </node>
         </node>
       </node>
       <node concept="2I9FWS" id="6PJCSNEmPfZ" role="3clF45">
@@ -8613,11 +8585,6 @@
         </node>
       </node>
       <node concept="P$JXv" id="4KWv2vK1VUs" role="lGtFl">
-        <node concept="TZ5HA" id="4KWv2vK1VUt" role="TZ5H$">
-          <node concept="1dT_AC" id="4KWv2vK1VUu" role="1dT_Ay">
-            <property role="1dT_AB" value="Finds the first wrapping parenthesis around the given expression in the expression tree. " />
-          </node>
-        </node>
         <node concept="TUZQ0" id="4KWv2vK1VUv" role="3nqlJM">
           <property role="TUZQ4" value="the expression" />
           <node concept="zr_55" id="4KWv2vK1VUx" role="zr_5Q">
@@ -8626,6 +8593,11 @@
         </node>
         <node concept="x79VA" id="4KWv2vK1VUy" role="3nqlJM">
           <property role="x79VB" value="the first wrapping parenthesis expression, or null if none is present in the tree" />
+        </node>
+        <node concept="TZ5HA" id="4KWv2vK1VUt" role="TZ5H$">
+          <node concept="1dT_AC" id="4KWv2vK1VUu" role="1dT_Ay">
+            <property role="1dT_AB" value="Finds the first wrapping parenthesis around the given expression in the expression tree. " />
+          </node>
         </node>
       </node>
     </node>
@@ -8700,11 +8672,6 @@
         </node>
       </node>
       <node concept="P$JXv" id="4NFs2i9A0fW" role="lGtFl">
-        <node concept="TZ5HA" id="4NFs2i9A0fX" role="TZ5H$">
-          <node concept="1dT_AC" id="4NFs2i9A0fY" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns the bottommost TernaryExpression of the given one (rightmost else expression). " />
-          </node>
-        </node>
         <node concept="TUZQ0" id="4NFs2i9A0fZ" role="3nqlJM">
           <property role="TUZQ4" value="the original ternary expression" />
           <node concept="zr_55" id="4NFs2i9A0g1" role="zr_5Q">
@@ -8713,6 +8680,11 @@
         </node>
         <node concept="x79VA" id="4NFs2i9A0g2" role="3nqlJM">
           <property role="x79VB" value="the bottommost ternary expression" />
+        </node>
+        <node concept="TZ5HA" id="4NFs2i9A0fX" role="TZ5H$">
+          <node concept="1dT_AC" id="4NFs2i9A0fY" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the bottommost TernaryExpression of the given one (rightmost else expression). " />
+          </node>
         </node>
       </node>
     </node>
@@ -9011,11 +8983,6 @@
         <node concept="10P_77" id="314RTCzv4JT" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="314RTCzvroO" role="lGtFl">
-        <node concept="TZ5HA" id="314RTCzvroP" role="TZ5H$">
-          <node concept="1dT_AC" id="314RTCzvroQ" role="1dT_Ay">
-            <property role="1dT_AB" value="Find a turning point between the given leaf node and stop node based on the direction (left or right turning)." />
-          </node>
-        </node>
         <node concept="TUZQ0" id="3TW3f3PA_5y" role="3nqlJM">
           <property role="TUZQ4" value="the starting leaf expression" />
           <node concept="zr_55" id="3TW3f3PA_pJ" role="zr_5Q">
@@ -9036,6 +9003,11 @@
         </node>
         <node concept="x79VA" id="3TW3f3PABUG" role="3nqlJM">
           <property role="x79VB" value="the expression where the turn has been found, or null if no turn is present" />
+        </node>
+        <node concept="TZ5HA" id="314RTCzvroP" role="TZ5H$">
+          <node concept="1dT_AC" id="314RTCzvroQ" role="1dT_Ay">
+            <property role="1dT_AB" value="Find a turning point between the given leaf node and stop node based on the direction (left or right turning)." />
+          </node>
         </node>
       </node>
     </node>
@@ -9238,21 +9210,6 @@
         <node concept="10P_77" id="PyYoN53XV4" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="PyYoN545Dt" role="lGtFl">
-        <node concept="TZ5HA" id="PyYoN545Du" role="TZ5H$">
-          <node concept="1dT_AC" id="PyYoN545Dv" role="1dT_Ay">
-            <property role="1dT_AB" value="Clears all the parenthesis from the given expression and applies them on the " />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="PyYoN545Uh" role="TZ5H$">
-          <node concept="1dT_AC" id="PyYoN545Ui" role="1dT_Ay">
-            <property role="1dT_AB" value="parenthesised expression based on the given direction. The number of added " />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="PyYoN545UR" role="TZ5H$">
-          <node concept="1dT_AC" id="PyYoN545US" role="1dT_Ay">
-            <property role="1dT_AB" value="incomplete parenthesis will be one less than of the original wrapped expression. " />
-          </node>
-        </node>
         <node concept="TUZQ0" id="PyYoN545Dw" role="3nqlJM">
           <property role="TUZQ4" value="the expression that has been just parenthesised" />
           <node concept="zr_55" id="PyYoN545Dy" role="zr_5Q">
@@ -9269,6 +9226,21 @@
           <property role="TUZQ4" value="the direction of the parenthesis editing" />
           <node concept="zr_55" id="PyYoN545DC" role="zr_5Q">
             <ref role="zr_51" node="PyYoN53XUM" resolve="completingRightParenthesis" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="PyYoN545Du" role="TZ5H$">
+          <node concept="1dT_AC" id="PyYoN545Dv" role="1dT_Ay">
+            <property role="1dT_AB" value="Clears all the parenthesis from the given expression and applies them on the " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="PyYoN545Uh" role="TZ5H$">
+          <node concept="1dT_AC" id="PyYoN545Ui" role="1dT_Ay">
+            <property role="1dT_AB" value="parenthesised expression based on the given direction. The number of added " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="PyYoN545UR" role="TZ5H$">
+          <node concept="1dT_AC" id="PyYoN545US" role="1dT_Ay">
+            <property role="1dT_AB" value="incomplete parenthesis will be one less than of the original wrapped expression. " />
           </node>
         </node>
       </node>
@@ -9392,16 +9364,6 @@
         <node concept="10P_77" id="4NFs2i9$iM2" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="7FOMyx2NT89" role="lGtFl">
-        <node concept="TZ5HA" id="7FOMyx2NT8a" role="TZ5H$">
-          <node concept="1dT_AC" id="7FOMyx2NT8b" role="1dT_Ay">
-            <property role="1dT_AB" value="Creates the first incomplete parenthesis or increases the count of the already existing one " />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="7FOMyx2NTe5" role="TZ5H$">
-          <node concept="1dT_AC" id="7FOMyx2NTe6" role="1dT_Ay">
-            <property role="1dT_AB" value="for the given direction on the given expression. " />
-          </node>
-        </node>
         <node concept="TUZQ0" id="7FOMyx2NT8c" role="3nqlJM">
           <property role="TUZQ4" value="the expression to parenthesise" />
           <node concept="zr_55" id="7FOMyx2NT8e" role="zr_5Q">
@@ -9412,6 +9374,16 @@
           <property role="TUZQ4" value="true if an incomplete right parenthesis should be created, false otherwise" />
           <node concept="zr_55" id="7FOMyx2NT8h" role="zr_5Q">
             <ref role="zr_51" node="4NFs2i9$iLK" resolve="isRight" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7FOMyx2NT8a" role="TZ5H$">
+          <node concept="1dT_AC" id="7FOMyx2NT8b" role="1dT_Ay">
+            <property role="1dT_AB" value="Creates the first incomplete parenthesis or increases the count of the already existing one " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7FOMyx2NTe5" role="TZ5H$">
+          <node concept="1dT_AC" id="7FOMyx2NTe6" role="1dT_Ay">
+            <property role="1dT_AB" value="for the given direction on the given expression. " />
           </node>
         </node>
       </node>
@@ -9572,6 +9544,24 @@
         <node concept="10P_77" id="4NFs2i9$WdE" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="7FOMyx2O00f" role="lGtFl">
+        <node concept="TUZQ0" id="7FOMyx2O00i" role="3nqlJM">
+          <property role="TUZQ4" value="the expression to parenthesise" />
+          <node concept="zr_55" id="7FOMyx2O00k" role="zr_5Q">
+            <ref role="zr_51" node="4NFs2i9$Wc5" resolve="expression" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="7FOMyx2O00l" role="3nqlJM">
+          <property role="TUZQ4" value="the incomplete parenthesis to merge" />
+          <node concept="zr_55" id="7FOMyx2O00n" role="zr_5Q">
+            <ref role="zr_51" node="4NFs2i9$Wcx" resolve="parenthesis" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="7FOMyx2O0bQ" role="3nqlJM">
+          <property role="TUZQ4" value="true if an incomplete right parenthesis should be created, false otherwise" />
+          <node concept="zr_55" id="7FOMyx2O0bR" role="zr_5Q">
+            <ref role="zr_51" node="4NFs2i9$Wdi" resolve="isRight" />
+          </node>
+        </node>
         <node concept="TZ5HA" id="7FOMyx2O00g" role="TZ5H$">
           <node concept="1dT_AC" id="7FOMyx2O00h" role="1dT_Ay">
             <property role="1dT_AB" value="Increases the number of incomplete parenthesis on the given side by merging it with the " />
@@ -9590,24 +9580,6 @@
         <node concept="TZ5HA" id="7FOMyx2O08S" role="TZ5H$">
           <node concept="1dT_AC" id="7FOMyx2O08T" role="1dT_Ay">
             <property role="1dT_AB" value="as the count of the given incomplete parenthesis. " />
-          </node>
-        </node>
-        <node concept="TUZQ0" id="7FOMyx2O00i" role="3nqlJM">
-          <property role="TUZQ4" value="the expression to parenthesise" />
-          <node concept="zr_55" id="7FOMyx2O00k" role="zr_5Q">
-            <ref role="zr_51" node="4NFs2i9$Wc5" resolve="expression" />
-          </node>
-        </node>
-        <node concept="TUZQ0" id="7FOMyx2O00l" role="3nqlJM">
-          <property role="TUZQ4" value="the incomplete parenthesis to merge" />
-          <node concept="zr_55" id="7FOMyx2O00n" role="zr_5Q">
-            <ref role="zr_51" node="4NFs2i9$Wcx" resolve="parenthesis" />
-          </node>
-        </node>
-        <node concept="TUZQ0" id="7FOMyx2O0bQ" role="3nqlJM">
-          <property role="TUZQ4" value="true if an incomplete right parenthesis should be created, false otherwise" />
-          <node concept="zr_55" id="7FOMyx2O0bR" role="zr_5Q">
-            <ref role="zr_51" node="4NFs2i9$Wdi" resolve="isRight" />
           </node>
         </node>
       </node>
@@ -9750,11 +9722,6 @@
         <node concept="10P_77" id="6z9YlMaWvpy" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="5QiKw$4yFGK" role="lGtFl">
-        <node concept="TZ5HA" id="5QiKw$4yFGL" role="TZ5H$">
-          <node concept="1dT_AC" id="5QiKw$4yFGM" role="1dT_Ay">
-            <property role="1dT_AB" value="Internal method for finding leftmost or rightmost leaf element in the expression tree. " />
-          </node>
-        </node>
         <node concept="TUZQ0" id="2R09Ku3PdmQ" role="3nqlJM">
           <property role="TUZQ4" value="the node whose subtree will be traversed" />
           <node concept="zr_55" id="2R09Ku3Pe2k" role="zr_5Q">
@@ -9767,6 +9734,11 @@
             <ref role="zr_51" node="6z9YlMaWvpk" resolve="isRight" />
           </node>
         </node>
+        <node concept="TZ5HA" id="5QiKw$4yFGL" role="TZ5H$">
+          <node concept="1dT_AC" id="5QiKw$4yFGM" role="1dT_Ay">
+            <property role="1dT_AB" value="Internal method for finding leftmost or rightmost leaf element in the expression tree. " />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6z9YlMaVdn8" role="jymVt" />
@@ -9775,12 +9747,6 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="P$JXv" id="7FOMyx2NTlL" role="lGtFl">
-        <node concept="TZ5HA" id="7FOMyx2NTlM" role="TZ5H$">
-          <node concept="1dT_AC" id="6z9YlMaW_03" role="1dT_Ay">
-            <property role="1dT_AB" value="Finds the leftmost expression in the given expression's subtree. " />
-          </node>
-          <node concept="1dT_AC" id="7FOMyx2NTlN" role="1dT_Ay" />
-        </node>
         <node concept="TUZQ0" id="7FOMyx2NTlO" role="3nqlJM">
           <property role="TUZQ4" value="the expression whose subtree will be considered" />
           <node concept="zr_55" id="7FOMyx2NTlQ" role="zr_5Q">
@@ -9789,6 +9755,12 @@
         </node>
         <node concept="x79VA" id="7FOMyx2NTlR" role="3nqlJM">
           <property role="x79VB" value="the leftmost child node" />
+        </node>
+        <node concept="TZ5HA" id="7FOMyx2NTlM" role="TZ5H$">
+          <node concept="1dT_AC" id="6z9YlMaW_03" role="1dT_Ay">
+            <property role="1dT_AB" value="Finds the leftmost expression in the given expression's subtree. " />
+          </node>
+          <node concept="1dT_AC" id="7FOMyx2NTlN" role="1dT_Ay" />
         </node>
       </node>
       <node concept="3Tm1VV" id="4oMhk$ZfIxg" role="1B3o_S" />
@@ -9821,12 +9793,6 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="P$JXv" id="7FOMyx2NT$e" role="lGtFl">
-        <node concept="TZ5HA" id="7FOMyx2NT$f" role="TZ5H$">
-          <node concept="1dT_AC" id="6z9YlMaWA94" role="1dT_Ay">
-            <property role="1dT_AB" value="Finds the rightmost expression in the given expression's subtree." />
-          </node>
-          <node concept="1dT_AC" id="7FOMyx2NT$g" role="1dT_Ay" />
-        </node>
         <node concept="TUZQ0" id="7FOMyx2NT$h" role="3nqlJM">
           <property role="TUZQ4" value="the expression whose subtree will be considered" />
           <node concept="zr_55" id="7FOMyx2NT$j" role="zr_5Q">
@@ -9835,6 +9801,12 @@
         </node>
         <node concept="x79VA" id="7FOMyx2NT$k" role="3nqlJM">
           <property role="x79VB" value="the rightmost child node" />
+        </node>
+        <node concept="TZ5HA" id="7FOMyx2NT$f" role="TZ5H$">
+          <node concept="1dT_AC" id="6z9YlMaWA94" role="1dT_Ay">
+            <property role="1dT_AB" value="Finds the rightmost expression in the given expression's subtree." />
+          </node>
+          <node concept="1dT_AC" id="7FOMyx2NT$g" role="1dT_Ay" />
         </node>
       </node>
       <node concept="3Tm1VV" id="3TW3f3PSQoV" role="1B3o_S" />
@@ -10102,6 +10074,133 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="312cEu" id="1wu5Hv5M1FT">
+    <property role="TrG5h" value="ModelConstraintsUtils" />
+    <node concept="2tJIrI" id="1wu5Hv5M34b" role="jymVt" />
+    <node concept="2YIFZL" id="1wu5Hv5M3tp" role="jymVt">
+      <property role="TrG5h" value="binaryOperatorAllowed" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1wu5Hv5M3ts" role="3clF47">
+        <node concept="3clFbJ" id="1wu5Hv5M9KE" role="3cqZAp">
+          <node concept="3clFbS" id="1wu5Hv5M9KG" role="3clFbx">
+            <node concept="3cpWs6" id="1wu5Hv5M9WT" role="3cqZAp">
+              <node concept="3clFbT" id="1wu5Hv5M9ZQ" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="1wu5Hv5M9OC" role="3clFbw">
+            <node concept="2YIFZM" id="1wu5Hv5M4kL" role="3fr31v">
+              <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
+              <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
+              <node concept="2YIFZM" id="1wu5Hv5M4kM" role="37wK5m">
+                <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
+                <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                <node concept="37vLTw" id="1wu5Hv5M4u8" role="37wK5m">
+                  <ref role="3cqZAo" node="1wu5Hv5M4dY" resolve="c" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1wu5Hv5M4kO" role="37wK5m">
+                <node concept="37vLTw" id="1wu5Hv5M4sF" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1wu5Hv5M3Ll" resolve="sourceNode" />
+                </node>
+                <node concept="1mfA1w" id="1wu5Hv5M4kQ" role="2OqNvi" />
+              </node>
+              <node concept="10Nm6u" id="1wu5Hv5M4kR" role="37wK5m" />
+              <node concept="10Nm6u" id="1wu5Hv5M4kS" role="37wK5m" />
+              <node concept="10Nm6u" id="1wu5Hv5M4kT" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1wu5Hv5Ma7b" role="3cqZAp">
+          <node concept="3clFbS" id="1wu5Hv5Ma7d" role="3clFbx">
+            <node concept="3cpWs6" id="1wu5Hv5MakS" role="3cqZAp">
+              <node concept="3clFbT" id="1wu5Hv5Mao2" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="1wu5Hv5Macs" role="3clFbw">
+            <node concept="2YIFZM" id="1wu5Hv5M5Qq" role="3fr31v">
+              <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
+              <ref role="37wK5l" to="ykok:~ModelConstraints.canBeParent(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeParent" />
+              <node concept="2OqwBi" id="1wu5Hv5M81P" role="37wK5m">
+                <node concept="37vLTw" id="1wu5Hv5M7Z1" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1wu5Hv5M3Ll" resolve="sourceNode" />
+                </node>
+                <node concept="1mfA1w" id="1wu5Hv5M8fv" role="2OqNvi" />
+              </node>
+              <node concept="37vLTw" id="1wu5Hv5M8kb" role="37wK5m">
+                <ref role="3cqZAo" node="1wu5Hv5M4dY" resolve="c" />
+              </node>
+              <node concept="2OqwBi" id="1wu5Hv5M9rX" role="37wK5m">
+                <node concept="37vLTw" id="1wu5Hv5M9ou" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1wu5Hv5M3Ll" resolve="sourceNode" />
+                </node>
+                <node concept="25OxAV" id="1wu5Hv5M9Eg" role="2OqNvi" />
+              </node>
+              <node concept="10Nm6u" id="1wu5Hv5M8sD" role="37wK5m" />
+              <node concept="10Nm6u" id="1wu5Hv5M8xi" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="1wu5Hv5SkyG" role="3cqZAp">
+          <node concept="2GrKxI" id="1wu5Hv5SkyI" role="2Gsz3X">
+            <property role="TrG5h" value="currentAncestor" />
+          </node>
+          <node concept="3clFbS" id="1wu5Hv5SkyK" role="2LFqv$">
+            <node concept="3clFbJ" id="1wu5Hv5Pn$I" role="3cqZAp">
+              <node concept="3clFbS" id="1wu5Hv5Pn$J" role="3clFbx">
+                <node concept="3cpWs6" id="1wu5Hv5Pn$K" role="3cqZAp">
+                  <node concept="3clFbT" id="1wu5Hv5Pn$L" role="3cqZAk">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="1wu5Hv5Pn$M" role="3clFbw">
+                <node concept="2YIFZM" id="1wu5Hv5MaHw" role="3fr31v">
+                  <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
+                  <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeAncestor" />
+                  <node concept="2GrUjf" id="1wu5Hv5SllR" role="37wK5m">
+                    <ref role="2Gs0qQ" node="1wu5Hv5SkyI" resolve="currentAncestor" />
+                  </node>
+                  <node concept="10Nm6u" id="1wu5Hv5MaT4" role="37wK5m" />
+                  <node concept="37vLTw" id="1wu5Hv5MaPc" role="37wK5m">
+                    <ref role="3cqZAo" node="1wu5Hv5M4dY" resolve="c" />
+                  </node>
+                  <node concept="10Nm6u" id="1wu5Hv5MaHC" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1wu5Hv5SkTn" role="2GsD0m">
+            <node concept="37vLTw" id="1wu5Hv5SkOL" role="2Oq$k0">
+              <ref role="3cqZAo" node="1wu5Hv5M3Ll" resolve="sourceNode" />
+            </node>
+            <node concept="z$bX8" id="1wu5Hv5Sl8u" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="1wu5Hv5Mayk" role="3cqZAp">
+          <node concept="3clFbT" id="1wu5Hv5PnTd" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1wu5Hv5M3t1" role="1B3o_S" />
+      <node concept="10P_77" id="1wu5Hv5M3tj" role="3clF45" />
+      <node concept="37vLTG" id="1wu5Hv5M4dY" role="3clF46">
+        <property role="TrG5h" value="c" />
+        <node concept="3THzug" id="1wu5Hv5M4xD" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1wu5Hv5M3Ll" role="3clF46">
+        <property role="TrG5h" value="sourceNode" />
+        <node concept="3Tqbb2" id="1wu5Hv5M3Lk" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="1wu5Hv5M1FU" role="1B3o_S" />
   </node>
 </model>
 

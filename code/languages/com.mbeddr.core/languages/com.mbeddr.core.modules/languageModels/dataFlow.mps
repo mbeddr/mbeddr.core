@@ -5,8 +5,8 @@
     <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="-1" />
-    <use id="97a52717-898f-4598-8150-573d9fd03868" name="jetbrains.mps.lang.dataFlow.analyzers" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="97a52717-898f-4598-8150-573d9fd03868" name="jetbrains.mps.lang.dataFlow.analyzers" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -195,7 +195,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -505,48 +505,21 @@
     <ref role="3_znuS" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
     <node concept="3__wT9" id="2dIde7WdATv" role="3_A6iZ">
       <node concept="3clFbS" id="2dIde7WdATw" role="2VODD2">
-        <node concept="1Dw8fO" id="56zXiDuBmNL" role="3cqZAp">
-          <node concept="3clFbS" id="56zXiDuBmNO" role="2LFqv$">
-            <node concept="3AgYrR" id="56zXiDuBB2m" role="3cqZAp">
-              <node concept="2OqwBi" id="56zXiDvfQHP" role="3Ah4Yx">
-                <node concept="2OqwBi" id="56zXiDvfQHQ" role="2Oq$k0">
-                  <node concept="3__QtB" id="56zXiDvfQHR" role="2Oq$k0" />
-                  <node concept="3Tsc0h" id="56zXiDvfQHS" role="2OqNvi">
-                    <ref role="3TtcxE" to="x27k:5ak6HMA0ref" />
-                  </node>
-                </node>
-                <node concept="34jXtK" id="56zXiDvfQHT" role="2OqNvi">
-                  <node concept="37vLTw" id="56zXiDvfQHU" role="25WWJ7">
-                    <ref role="3cqZAo" node="56zXiDuBmNR" resolve="i" />
-                  </node>
-                </node>
+        <node concept="2Gpval" id="4nE4M7lQrYw" role="3cqZAp">
+          <node concept="2GrKxI" id="4nE4M7lQrYy" role="2Gsz3X">
+            <property role="TrG5h" value="actual" />
+          </node>
+          <node concept="3clFbS" id="4nE4M7lQrY$" role="2LFqv$">
+            <node concept="3AgYrR" id="4nE4M7lQszi" role="3cqZAp">
+              <node concept="2GrUjf" id="4nE4M7lQszx" role="3Ah4Yx">
+                <ref role="2Gs0qQ" node="4nE4M7lQrYy" resolve="actual" />
               </node>
             </node>
           </node>
-          <node concept="3cpWsn" id="56zXiDuBmNR" role="1Duv9x">
-            <property role="TrG5h" value="i" />
-            <node concept="10Oyi0" id="56zXiDuBmRc" role="1tU5fm" />
-            <node concept="3cmrfG" id="56zXiDuBmRW" role="33vP2m">
-              <property role="3cmrfH" value="0" />
-            </node>
-          </node>
-          <node concept="3eOVzh" id="56zXiDuBnBc" role="1Dwp0S">
-            <node concept="37vLTw" id="56zXiDuBmSr" role="3uHU7B">
-              <ref role="3cqZAo" node="56zXiDuBmNR" resolve="i" />
-            </node>
-            <node concept="2OqwBi" id="56zXiDuBqeq" role="3uHU7w">
-              <node concept="2OqwBi" id="56zXiDuBnYZ" role="2Oq$k0">
-                <node concept="3__QtB" id="56zXiDuBnLY" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="56zXiDuBov6" role="2OqNvi">
-                  <ref role="3TtcxE" to="x27k:5ak6HMA0ref" />
-                </node>
-              </node>
-              <node concept="34oBXx" id="56zXiDuBsMB" role="2OqNvi" />
-            </node>
-          </node>
-          <node concept="3uNrnE" id="56zXiDuBAxX" role="1Dwrff">
-            <node concept="37vLTw" id="56zXiDuBAxZ" role="2$L3a6">
-              <ref role="3cqZAo" node="56zXiDuBmNR" resolve="i" />
+          <node concept="2OqwBi" id="4nE4M7lQs7W" role="2GsD0m">
+            <node concept="3__QtB" id="4nE4M7lQs2u" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="4nE4M7lQsx5" role="2OqNvi">
+              <ref role="3TtcxE" to="x27k:5ak6HMA0ref" />
             </node>
           </node>
         </node>
@@ -4263,11 +4236,6 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="P$JXv" id="3ieSxUOn5SN" role="lGtFl">
-        <node concept="TZ5HA" id="3ieSxUOn5SO" role="TZ5H$">
-          <node concept="1dT_AC" id="3ieSxUOn5SP" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns the Program instance for a given AnalysisResult. " />
-          </node>
-        </node>
         <node concept="TUZQ0" id="3ieSxUOn5SQ" role="3nqlJM">
           <property role="TUZQ4" value="the analysis result" />
           <node concept="zr_55" id="3ieSxUOn5SS" role="zr_5Q">
@@ -4276,6 +4244,11 @@
         </node>
         <node concept="x79VA" id="3ieSxUOn5ST" role="3nqlJM">
           <property role="x79VB" value="the corresponding program" />
+        </node>
+        <node concept="TZ5HA" id="3ieSxUOn5SO" role="TZ5H$">
+          <node concept="1dT_AC" id="3ieSxUOn5SP" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the Program instance for a given AnalysisResult. " />
+          </node>
         </node>
       </node>
       <node concept="3clFbS" id="3v8GxaBIzHz" role="3clF47">
@@ -4341,6 +4314,15 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="P$JXv" id="3ieSxUOmXJY" role="lGtFl">
+        <node concept="TUZQ0" id="3ieSxUOmXK1" role="3nqlJM">
+          <property role="TUZQ4" value="the generated instruction" />
+          <node concept="zr_55" id="3ieSxUOmXK3" role="zr_5Q">
+            <ref role="zr_51" node="321ojDtvW90" resolve="instruction" />
+          </node>
+        </node>
+        <node concept="x79VA" id="3ieSxUOmXK4" role="3nqlJM">
+          <property role="x79VB" value="the non-generated instruction that appears before" />
+        </node>
         <node concept="TZ5HA" id="3ieSxUOmXJZ" role="TZ5H$">
           <node concept="1dT_AC" id="3ieSxUOmXK0" role="1dT_Ay">
             <property role="1dT_AB" value="Returns the first non-generated instruction in the program graph " />
@@ -4350,15 +4332,6 @@
           <node concept="1dT_AC" id="3ieSxUOn5Sx" role="1dT_Ay">
             <property role="1dT_AB" value="which appears before the given generated instruction. " />
           </node>
-        </node>
-        <node concept="TUZQ0" id="3ieSxUOmXK1" role="3nqlJM">
-          <property role="TUZQ4" value="the generated instruction" />
-          <node concept="zr_55" id="3ieSxUOmXK3" role="zr_5Q">
-            <ref role="zr_51" node="321ojDtvW90" resolve="instruction" />
-          </node>
-        </node>
-        <node concept="x79VA" id="3ieSxUOmXK4" role="3nqlJM">
-          <property role="x79VB" value="the non-generated instruction that appears before" />
         </node>
       </node>
       <node concept="3clFbS" id="321ojDtvVSu" role="3clF47">
@@ -4462,6 +4435,15 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="P$JXv" id="3ieSxUOn617" role="lGtFl">
+        <node concept="TUZQ0" id="3ieSxUOn61a" role="3nqlJM">
+          <property role="TUZQ4" value="the expression" />
+          <node concept="zr_55" id="3ieSxUOn61c" role="zr_5Q">
+            <ref role="zr_51" node="4zFXTqqmDX0" resolve="expression" />
+          </node>
+        </node>
+        <node concept="x79VA" id="3ieSxUOn61d" role="3nqlJM">
+          <property role="x79VB" value="the indirection level" />
+        </node>
         <node concept="TZ5HA" id="3ieSxUOn618" role="TZ5H$">
           <node concept="1dT_AC" id="3ieSxUOn619" role="1dT_Ay">
             <property role="1dT_AB" value="Computes the indirection level for a given expression." />
@@ -4481,15 +4463,6 @@
           <node concept="1dT_AC" id="3ieSxUOn62t" role="1dT_Ay">
             <property role="1dT_AB" value="A number greater than 0 means the number of pointer indirections in the type. " />
           </node>
-        </node>
-        <node concept="TUZQ0" id="3ieSxUOn61a" role="3nqlJM">
-          <property role="TUZQ4" value="the expression" />
-          <node concept="zr_55" id="3ieSxUOn61c" role="zr_5Q">
-            <ref role="zr_51" node="4zFXTqqmDX0" resolve="expression" />
-          </node>
-        </node>
-        <node concept="x79VA" id="3ieSxUOn61d" role="3nqlJM">
-          <property role="x79VB" value="the indirection level" />
         </node>
       </node>
       <node concept="3clFbS" id="4zFXTqqmDWv" role="3clF47">
@@ -4612,11 +4585,6 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="P$JXv" id="3ieSxUOn6sp" role="lGtFl">
-        <node concept="TZ5HA" id="3ieSxUOn6sq" role="TZ5H$">
-          <node concept="1dT_AC" id="3ieSxUOn6sr" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns the root StatementList for a given node, if any. " />
-          </node>
-        </node>
         <node concept="TUZQ0" id="3ieSxUOn6ss" role="3nqlJM">
           <property role="TUZQ4" value="the node instance" />
           <node concept="zr_55" id="3ieSxUOn6su" role="zr_5Q">
@@ -4625,6 +4593,11 @@
         </node>
         <node concept="x79VA" id="3ieSxUOn6sv" role="3nqlJM">
           <property role="x79VB" value="the root statement list" />
+        </node>
+        <node concept="TZ5HA" id="3ieSxUOn6sq" role="TZ5H$">
+          <node concept="1dT_AC" id="3ieSxUOn6sr" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the root StatementList for a given node, if any. " />
+          </node>
         </node>
       </node>
       <node concept="3clFbS" id="321ojDtuLZt" role="3clF47">
@@ -5189,11 +5162,6 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="P$JXv" id="3ieSxUOn6tc" role="lGtFl">
-        <node concept="TZ5HA" id="3ieSxUOn6td" role="TZ5H$">
-          <node concept="1dT_AC" id="3ieSxUOn6te" role="1dT_Ay">
-            <property role="1dT_AB" value="General map intersection between two multi-maps. " />
-          </node>
-        </node>
         <node concept="TUZQ0" id="3ieSxUOn6tf" role="3nqlJM">
           <property role="TUZQ4" value="the first map" />
           <node concept="zr_55" id="3ieSxUOn6th" role="zr_5Q">
@@ -5214,6 +5182,11 @@
         </node>
         <node concept="x79VA" id="3ieSxUOn6to" role="3nqlJM">
           <property role="x79VB" value="the resulting intersection" />
+        </node>
+        <node concept="TZ5HA" id="3ieSxUOn6td" role="TZ5H$">
+          <node concept="1dT_AC" id="3ieSxUOn6te" role="1dT_Ay">
+            <property role="1dT_AB" value="General map intersection between two multi-maps. " />
+          </node>
         </node>
       </node>
       <node concept="3clFbS" id="321ojDtuM2T" role="3clF47">
@@ -7115,6 +7088,32 @@
         <node concept="3cpWs6" id="BItIAVc3dE" role="3cqZAp">
           <node concept="37vLTw" id="BItIAVc3dF" role="3cqZAk">
             <ref role="3cqZAo" node="BItIAVc3df" resolve="result" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3_zdsH" id="4nE4M7lQpF6">
+    <property role="3GE5qa" value="global" />
+    <ref role="3_znuS" to="x27k:5eg$WPOuJoU" resolve="GlobalConstantFunctionRef" />
+    <node concept="3__wT9" id="4nE4M7lQpF7" role="3_A6iZ">
+      <node concept="3clFbS" id="4nE4M7lQpF8" role="2VODD2">
+        <node concept="2Gpval" id="4nE4M7lQrli" role="3cqZAp">
+          <node concept="2GrKxI" id="4nE4M7lQrlk" role="2Gsz3X">
+            <property role="TrG5h" value="actual" />
+          </node>
+          <node concept="3clFbS" id="4nE4M7lQrlm" role="2LFqv$">
+            <node concept="3AgYrR" id="4nE4M7lQrP5" role="3cqZAp">
+              <node concept="2GrUjf" id="4nE4M7lQrPs" role="3Ah4Yx">
+                <ref role="2Gs0qQ" node="4nE4M7lQrlk" resolve="actual" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4nE4M7lQrvA" role="2GsD0m">
+            <node concept="3__QtB" id="4nE4M7lQrqN" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="4nE4M7lQrN8" role="2OqNvi">
+              <ref role="3TtcxE" to="x27k:5eg$WPOuSCs" />
+            </node>
           </node>
         </node>
       </node>
