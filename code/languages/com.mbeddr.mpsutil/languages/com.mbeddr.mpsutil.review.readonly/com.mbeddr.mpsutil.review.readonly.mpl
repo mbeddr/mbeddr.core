@@ -12,11 +12,6 @@
     <dependency reexport="false">c788b046-2019-4656-8b60-8bb9bbb177b5(com.mbeddr.mpsutil.review)</dependency>
     <dependency reexport="false">bb6926d3-ebcc-4ca6-a3be-c618633c0dc1(com.mbeddr.mpsutil.review.runtime)</dependency>
   </dependencies>
-  <usedLanguages>
-    <usedLanguage>120e1c9d-4e27-4478-b2af-b2c3bd3850b0(com.mbeddr.mpsutil.editor.querylist)</usedLanguage>
-    <usedLanguage>92f195b6-a209-4804-ad65-f5248ecd5873(com.mbeddr.mpsutil.margincell)</usedLanguage>
-    <usedLanguage>e33ff641-cba8-4703-98f4-59e63936d940(com.mbeddr.mpsutil.margincell.editor)</usedLanguage>
-  </usedLanguages>
   <usedDevKits>
     <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>

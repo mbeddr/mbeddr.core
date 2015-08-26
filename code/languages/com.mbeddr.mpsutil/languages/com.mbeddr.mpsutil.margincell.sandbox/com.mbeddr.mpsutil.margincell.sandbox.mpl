@@ -14,11 +14,6 @@
         </modelRoot>
       </models>
       <external-templates />
-      <usedLanguages>
-        <usedLanguage>43068673-523b-46eb-ba12-b963f6b6f12f(com.mbeddr.mpsutil.margincell.sandbox)</usedLanguage>
-        <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
-        <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
-      </usedLanguages>
       <languageVersions>
         <language id="43068673-523b-46eb-ba12-b963f6b6f12f" fqName="com.mbeddr.mpsutil.margincell.sandbox" version="0" />
         <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
@@ -42,9 +37,6 @@
   <dependencies>
     <dependency reexport="false">92f195b6-a209-4804-ad65-f5248ecd5873(com.mbeddr.mpsutil.margincell)</dependency>
   </dependencies>
-  <usedLanguages>
-    <usedLanguage>92f195b6-a209-4804-ad65-f5248ecd5873(com.mbeddr.mpsutil.margincell)</usedLanguage>
-  </usedLanguages>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
