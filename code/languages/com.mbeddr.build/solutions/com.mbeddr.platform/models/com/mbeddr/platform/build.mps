@@ -9084,6 +9084,9 @@
         <ref role="22LTRN" node="4X7wieqKka$" resolve="test.com.mbeddr.mpsutil.extensionclass" />
       </node>
     </node>
+    <node concept="2igEWh" id="3HpWboH_Z$G" role="1hWBAP">
+      <property role="2igJW4" value="true" />
+    </node>
   </node>
 </model>
 
