@@ -2,13 +2,13 @@
 <model ref="r:9bb65e44-f83e-4e38-ac95-7e443359a2f7(com.mbeddr.analyses.utils.log)">
   <persistence version="9" />
   <languages>
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="ajxo" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#org.apache.log4j(MPS.Core/org.apache.log4j@java_stub)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
+    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -96,17 +96,17 @@
         <node concept="3clFbF" id="SWpRmWAg00" role="3cqZAp">
           <node concept="2OqwBi" id="SWpRmWAgr_" role="3clFbG">
             <node concept="2YIFZM" id="SWpRmWAgkN" role="2Oq$k0">
-              <ref role="37wK5l" to="ajxo:~LogManager.getLogger(java.lang.Class):org.apache.log4j.Logger" resolve="getLogger" />
-              <ref role="1Pybhc" to="ajxo:~LogManager" resolve="LogManager" />
+              <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class):org.apache.log4j.Logger" resolve="getLogger" />
+              <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
               <node concept="37vLTw" id="SWpRmWAglc" role="37wK5m">
                 <ref role="3cqZAo" node="SWpRmW$KX3" resolve="clazz" />
               </node>
             </node>
             <node concept="liA8E" id="SWpRmWAgMY" role="2OqNvi">
-              <ref role="37wK5l" to="ajxo:~Category.log(org.apache.log4j.Priority,java.lang.Object):void" resolve="log" />
+              <ref role="37wK5l" to="q7tw:~Category.log(org.apache.log4j.Priority,java.lang.Object):void" resolve="log" />
               <node concept="10M0yZ" id="SWpRmWAgT9" role="37wK5m">
-                <ref role="1PxDUh" to="ajxo:~Priority" resolve="Priority" />
-                <ref role="3cqZAo" to="ajxo:~Priority.ERROR" resolve="ERROR" />
+                <ref role="1PxDUh" to="q7tw:~Priority" resolve="Priority" />
+                <ref role="3cqZAo" to="q7tw:~Priority.ERROR" resolve="ERROR" />
               </node>
               <node concept="37vLTw" id="SWpRmWAh7c" role="37wK5m">
                 <ref role="3cqZAo" node="SWpRmW$KXv" resolve="errorMsg" />
@@ -120,7 +120,7 @@
       <node concept="37vLTG" id="SWpRmW$KX3" role="3clF46">
         <property role="TrG5h" value="clazz" />
         <node concept="3uibUv" id="SWpRmW$KX2" role="1tU5fm">
-          <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+          <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
         </node>
       </node>
       <node concept="37vLTG" id="SWpRmW$KXv" role="3clF46">
@@ -140,17 +140,17 @@
         <node concept="3clFbF" id="7$8IbnDjXjY" role="3cqZAp">
           <node concept="2OqwBi" id="7$8IbnDjXjZ" role="3clFbG">
             <node concept="2YIFZM" id="7$8IbnDjXk0" role="2Oq$k0">
-              <ref role="37wK5l" to="ajxo:~LogManager.getLogger(java.lang.Class):org.apache.log4j.Logger" resolve="getLogger" />
-              <ref role="1Pybhc" to="ajxo:~LogManager" resolve="LogManager" />
+              <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class):org.apache.log4j.Logger" resolve="getLogger" />
+              <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
               <node concept="37vLTw" id="7$8IbnDjXk1" role="37wK5m">
                 <ref role="3cqZAo" node="7$8IbnDjXk7" resolve="clazz" />
               </node>
             </node>
             <node concept="liA8E" id="7$8IbnDjXk2" role="2OqNvi">
-              <ref role="37wK5l" to="ajxo:~Category.log(org.apache.log4j.Priority,java.lang.Object):void" resolve="log" />
+              <ref role="37wK5l" to="q7tw:~Category.log(org.apache.log4j.Priority,java.lang.Object):void" resolve="log" />
               <node concept="10M0yZ" id="7$8IbnDjXk3" role="37wK5m">
-                <ref role="1PxDUh" to="ajxo:~Priority" resolve="Priority" />
-                <ref role="3cqZAo" to="ajxo:~Priority.INFO" resolve="INFO" />
+                <ref role="1PxDUh" to="q7tw:~Priority" resolve="Priority" />
+                <ref role="3cqZAo" to="q7tw:~Priority.INFO" resolve="INFO" />
               </node>
               <node concept="37vLTw" id="7$8IbnDjXk4" role="37wK5m">
                 <ref role="3cqZAo" node="7$8IbnDjXk9" resolve="statusMsg" />
@@ -161,11 +161,11 @@
         <node concept="3clFbF" id="7$M65jpyDj$" role="3cqZAp">
           <node concept="2OqwBi" id="7$M65jpyDjx" role="3clFbG">
             <node concept="10M0yZ" id="7$M65jpyDjy" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="7$M65jpyDjz" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="3cpWs3" id="7$M65jpyFwX" role="37wK5m">
                 <node concept="37vLTw" id="7$M65jpyFyR" role="3uHU7w">
                   <ref role="3cqZAo" node="7$8IbnDjXk9" resolve="statusMsg" />
@@ -183,7 +183,7 @@
       <node concept="37vLTG" id="7$8IbnDjXk7" role="3clF46">
         <property role="TrG5h" value="clazz" />
         <node concept="3uibUv" id="7$8IbnDjXk8" role="1tU5fm">
-          <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+          <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
         </node>
       </node>
       <node concept="37vLTG" id="7$8IbnDjXk9" role="3clF46">

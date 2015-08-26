@@ -4,9 +4,9 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
   </languages>
   <imports>
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
@@ -170,9 +170,6 @@
       </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="17217465924316850" name="com.mbeddr.mpsutil.blutil.structure.FilterOperation" flags="ng" index="2Gpcm3">
-        <reference id="17217465924316851" name="concept" index="2Gpcm2" />
-      </concept>
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
       <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
         <property id="6451706574539345425" name="text" index="NWlVz" />
@@ -193,6 +190,9 @@
       </concept>
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -814,8 +814,10 @@
                           <ref role="3TtcxE" to="clqz:3FSHg1aAGGX" />
                         </node>
                       </node>
-                      <node concept="2Gpcm3" id="4arT0cnsk10" role="2OqNvi">
-                        <ref role="2Gpcm2" to="clqz:16ykm_MbwuV" resolve="AbstractTransition" />
+                      <node concept="v3k3i" id="6jvaevO_KMb" role="2OqNvi">
+                        <node concept="chp4Y" id="6jvaevO_KMc" role="v3oSu">
+                          <ref role="cht4Q" to="clqz:16ykm_MbwuV" resolve="AbstractTransition" />
+                        </node>
                       </node>
                     </node>
                     <node concept="2WmjW8" id="4arT0cnsk11" role="2OqNvi">
@@ -1093,8 +1095,10 @@
                                     <ref role="3TtcxE" to="clqz:3FSHg1aAGGX" />
                                   </node>
                                 </node>
-                                <node concept="2Gpcm3" id="cchPmXY3aM" role="2OqNvi">
-                                  <ref role="2Gpcm2" to="clqz:16ykm_MbwuV" resolve="AbstractTransition" />
+                                <node concept="v3k3i" id="6jvaevO_KMd" role="2OqNvi">
+                                  <node concept="chp4Y" id="6jvaevO_KMe" role="v3oSu">
+                                    <ref role="cht4Q" to="clqz:16ykm_MbwuV" resolve="AbstractTransition" />
+                                  </node>
                                 </node>
                               </node>
                             </node>

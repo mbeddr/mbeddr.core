@@ -2,11 +2,11 @@
 <model ref="r:6e8c6952-a4a5-450f-bc11-d5c08a50b4a7(com.mbeddr.analyses.lantest.utils)">
   <persistence version="9" />
   <languages>
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="j9pa" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
+    <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
     <import index="v5ts" ref="r:d411f908-940a-47de-a6bb-6c4bd57886dd(com.mbeddr.mpsutil.lantest.rt.saver)" />
@@ -19,10 +19,10 @@
     <import index="clqz" ref="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="9n5q" ref="r:b2118c37-6c67-489b-87f9-b422baeb8ff0(com.mbeddr.mpsutil.lantest.rt.gen)" />
-    <import index="hba4" ref="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" implicit="true" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
+    <import index="hba4" ref="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -297,11 +297,11 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="33cGTVo65vE" role="1B3o_S" />
       <node concept="3uibUv" id="33cGTVo65vF" role="1tU5fm">
-        <ref role="3uigEE" to="j9pa:~DecimalFormat" resolve="DecimalFormat" />
+        <ref role="3uigEE" to="25x5:~DecimalFormat" resolve="DecimalFormat" />
       </node>
       <node concept="2ShNRf" id="33cGTVo65vG" role="33vP2m">
         <node concept="1pGfFk" id="33cGTVo65vH" role="2ShVmc">
-          <ref role="37wK5l" to="j9pa:~DecimalFormat.&lt;init&gt;(java.lang.String)" resolve="DecimalFormat" />
+          <ref role="37wK5l" to="25x5:~DecimalFormat.&lt;init&gt;(java.lang.String)" resolve="DecimalFormat" />
           <node concept="Xl_RD" id="33cGTVo65vI" role="37wK5m">
             <property role="Xl_RC" value="000" />
           </node>
@@ -570,7 +570,7 @@
                   <ref role="3cqZAo" node="33cGTVo65vD" resolve="df" />
                 </node>
                 <node concept="liA8E" id="1VDxRzkOXpB" role="2OqNvi">
-                  <ref role="37wK5l" to="j9pa:~NumberFormat.format(long):java.lang.String" resolve="format" />
+                  <ref role="37wK5l" to="25x5:~NumberFormat.format(long):java.lang.String" resolve="format" />
                   <node concept="3uNrnE" id="1VDxRzkOXpC" role="37wK5m">
                     <node concept="37vLTw" id="1VDxRzkOXpD" role="2$L3a6">
                       <ref role="3cqZAo" node="33cGTVo65vK" resolve="orderNum" />
@@ -602,7 +602,7 @@
                       <ref role="3cqZAo" node="33cGTVo65vD" resolve="df" />
                     </node>
                     <node concept="liA8E" id="1VDxRzkOZyy" role="2OqNvi">
-                      <ref role="37wK5l" to="j9pa:~NumberFormat.format(long):java.lang.String" resolve="format" />
+                      <ref role="37wK5l" to="25x5:~NumberFormat.format(long):java.lang.String" resolve="format" />
                       <node concept="3uNrnE" id="1VDxRzkOZyz" role="37wK5m">
                         <node concept="37vLTw" id="1VDxRzkOZy$" role="2$L3a6">
                           <ref role="3cqZAo" node="33cGTVo65vK" resolve="orderNum" />
