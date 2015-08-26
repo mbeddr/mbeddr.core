@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -31,8 +31,8 @@
     <import index="grvc" ref="r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node.behavior)" />
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -243,11 +243,6 @@
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="17217465924316850" name="com.mbeddr.mpsutil.blutil.structure.FilterOperation" flags="ng" index="2Gpcm3">
-        <reference id="17217465924316851" name="concept" index="2Gpcm2" />
-      </concept>
-    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
@@ -358,7 +353,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3THzug">
+      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug">
         <reference id="1180481110358" name="conceptDeclaraton" index="3qa414" />
       </concept>
       <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
@@ -472,8 +467,10 @@
                 </node>
               </node>
             </node>
-            <node concept="2Gpcm3" id="7Vd878l_SrB" role="2OqNvi">
-              <ref role="2Gpcm2" to="75wo:7_tU7IQsCy_" resolve="Requirement" />
+            <node concept="v3k3i" id="6jvaevO$JVI" role="2OqNvi">
+              <node concept="chp4Y" id="6jvaevO$JVJ" role="v3oSu">
+                <ref role="cht4Q" to="75wo:7_tU7IQsCy_" resolve="Requirement" />
+              </node>
             </node>
           </node>
         </node>
@@ -1752,8 +1749,10 @@
                   <ref role="3TtcxE" to="75wo:7_tU7IQtQhQ" />
                 </node>
               </node>
-              <node concept="2Gpcm3" id="2HzhasNxO_U" role="2OqNvi">
-                <ref role="2Gpcm2" to="kwxp:2N1CSrzPN_8" resolve="IVisualizable" />
+              <node concept="v3k3i" id="6jvaevO$JVK" role="2OqNvi">
+                <node concept="chp4Y" id="6jvaevO$JVL" role="v3oSu">
+                  <ref role="cht4Q" to="kwxp:2N1CSrzPN_8" resolve="IVisualizable" />
+                </node>
               </node>
             </node>
           </node>
@@ -1985,8 +1984,10 @@
                       <ref role="3TtcxE" to="75wo:7_tU7IQtQhQ" />
                     </node>
                   </node>
-                  <node concept="2Gpcm3" id="2HzhasNxQ8W" role="2OqNvi">
-                    <ref role="2Gpcm2" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+                  <node concept="v3k3i" id="6jvaevO$JVM" role="2OqNvi">
+                    <node concept="chp4Y" id="6jvaevO$JVN" role="v3oSu">
+                      <ref role="cht4Q" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+                    </node>
                   </node>
                 </node>
                 <node concept="1z4cxt" id="2HzhasNxQ9m" role="2OqNvi">
@@ -4939,8 +4940,10 @@
                           <ref role="3TtcxE" to="75wo:7_tU7IQtQhQ" />
                         </node>
                       </node>
-                      <node concept="2Gpcm3" id="K292flw6f$" role="2OqNvi">
-                        <ref role="2Gpcm2" to="75wo:7_tU7IQtN5z" resolve="RequirementsLink" />
+                      <node concept="v3k3i" id="6jvaevO$JVO" role="2OqNvi">
+                        <node concept="chp4Y" id="6jvaevO$JVP" role="v3oSu">
+                          <ref role="cht4Q" to="75wo:7_tU7IQtN5z" resolve="RequirementsLink" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -5916,8 +5919,10 @@
                   <ref role="3TtcxE" to="75wo:7_tU7IQtQhQ" />
                 </node>
               </node>
-              <node concept="2Gpcm3" id="5ajiCS7a7hM" role="2OqNvi">
-                <ref role="2Gpcm2" to="75wo:7_tU7IQtN5z" resolve="RequirementsLink" />
+              <node concept="v3k3i" id="6jvaevO$JVQ" role="2OqNvi">
+                <node concept="chp4Y" id="6jvaevO$JVR" role="v3oSu">
+                  <ref role="cht4Q" to="75wo:7_tU7IQtN5z" resolve="RequirementsLink" />
+                </node>
               </node>
             </node>
           </node>
@@ -7188,8 +7193,10 @@
                 <ref role="3TtcxE" to="2c95:2TZO3Dbv6JU" />
               </node>
             </node>
-            <node concept="2Gpcm3" id="5L$H31KfIUy" role="2OqNvi">
-              <ref role="2Gpcm2" to="tpck:h0TrEE$" resolve="INamedConcept" />
+            <node concept="v3k3i" id="6jvaevO$JVS" role="2OqNvi">
+              <node concept="chp4Y" id="6jvaevO$JVT" role="v3oSu">
+                <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
+              </node>
             </node>
           </node>
         </node>

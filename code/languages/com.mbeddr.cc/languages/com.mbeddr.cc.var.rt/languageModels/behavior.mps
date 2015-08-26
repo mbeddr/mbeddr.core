@@ -3,9 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -21,7 +21,7 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
   </imports>
   <registry>
@@ -154,11 +154,6 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="17217465924316850" name="com.mbeddr.mpsutil.blutil.structure.FilterOperation" flags="ng" index="2Gpcm3">
-        <reference id="17217465924316851" name="concept" index="2Gpcm2" />
-      </concept>
-    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
@@ -214,6 +209,9 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
@@ -416,8 +414,10 @@
                   <ref role="3TtcxE" to="yvrq:7H6_Qip5U2m" />
                 </node>
               </node>
-              <node concept="2Gpcm3" id="XaN6Gnc22" role="2OqNvi">
-                <ref role="2Gpcm2" to="yvrq:7H6_Qip5U2i" resolve="VariantCase" />
+              <node concept="v3k3i" id="6jvaevO$JWq" role="2OqNvi">
+                <node concept="chp4Y" id="6jvaevO$JWr" role="v3oSu">
+                  <ref role="cht4Q" to="yvrq:7H6_Qip5U2i" resolve="VariantCase" />
+                </node>
               </node>
             </node>
             <node concept="3zZkjj" id="3el1Vh3VSbK" role="2OqNvi">
@@ -840,7 +840,7 @@
         <node concept="YS8fn" id="7DKnW4BNrVA" role="3cqZAp">
           <node concept="2ShNRf" id="7DKnW4BNrXa" role="YScLw">
             <node concept="1pGfFk" id="7DKnW4BN_de" role="2ShVmc">
-              <ref role="37wK5l" to="e2lb:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+              <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
               <node concept="Xl_RD" id="7DKnW4BN_Z3" role="37wK5m">
                 <property role="Xl_RC" value="Can't calculate type" />
               </node>
@@ -905,7 +905,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="7EQZzuztHfa" role="2OqNvi">
-                            <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                             <node concept="2OqwBi" id="7EQZzuztHfw" role="37wK5m">
                               <node concept="3cpWs2" id="7EQZzuztJD0" role="2Oq$k0">
                                 <ref role="3cqZAo" node="7EQZzuztJjD" resolve="feature" />
@@ -1259,7 +1259,7 @@
                     <ref role="3cqZAo" node="7Hpw6GdQZd3" resolve="varValue" />
                   </node>
                   <node concept="liA8E" id="7EQZzuztJEd" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
                     <node concept="Xl_RD" id="7EQZzuztJEe" role="37wK5m">
                       <property role="Xl_RC" value="true" />
                     </node>
@@ -1270,7 +1270,7 @@
                     <ref role="3cqZAo" node="7Hpw6GdQZd3" resolve="varValue" />
                   </node>
                   <node concept="liA8E" id="7Hpw6GdR13a" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
                     <node concept="Xl_RD" id="7Hpw6GdR13b" role="37wK5m">
                       <property role="Xl_RC" value="1" />
                     </node>
@@ -1283,7 +1283,7 @@
             <node concept="3cpWsn" id="7Hpw6GdPBKM" role="TDEfY">
               <property role="TrG5h" value="e" />
               <node concept="3uibUv" id="7Hpw6GdPChc" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
               </node>
             </node>
             <node concept="3clFbS" id="7Hpw6GdPBKQ" role="TDEfX">
@@ -1293,7 +1293,7 @@
                     <ref role="3cqZAo" node="7Hpw6GdPBKM" resolve="e" />
                   </node>
                   <node concept="liA8E" id="7Hpw6GdPCBR" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -1377,7 +1377,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="7EQZzuzuzDw" role="2OqNvi">
-                            <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                             <node concept="2OqwBi" id="7EQZzuzuzDx" role="37wK5m">
                               <node concept="3cpWs2" id="7EQZzuzuzDy" role="2Oq$k0">
                                 <ref role="3cqZAo" node="7EQZzuzuz_k" resolve="attribute" />

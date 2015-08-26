@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -17,10 +17,10 @@
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" />
-    <import index="epq1" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.math(JDK/java.math@java_stub)" />
+    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -986,7 +986,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2h6lNbWo04o" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.hashCode():int" resolve="hashCode" />
+                  <ref role="37wK5l" to="wyt6:~String.hashCode():int" resolve="hashCode" />
                 </node>
               </node>
             </node>
@@ -1687,7 +1687,7 @@
     <node concept="3clFb_" id="6hM2_xVMHdV" role="jymVt">
       <property role="TrG5h" value="attrValue" />
       <node concept="3uibUv" id="6hM2_xVMHD6" role="3clF45">
-        <ref role="3uigEE" to="e2lb:~Number" resolve="Number" />
+        <ref role="3uigEE" to="wyt6:~Number" resolve="Number" />
       </node>
       <node concept="3Tm1VV" id="6hM2_xVMHdY" role="1B3o_S" />
       <node concept="3clFbS" id="6hM2_xVMHdZ" role="3clF47">
@@ -1772,7 +1772,7 @@
         <node concept="3clFbF" id="6hM2_xVMJiW" role="3cqZAp">
           <node concept="0kSF2" id="6hM2_xVNs01" role="3clFbG">
             <node concept="3uibUv" id="6hM2_xVNs9B" role="0kSFW">
-              <ref role="3uigEE" to="e2lb:~Number" resolve="Number" />
+              <ref role="3uigEE" to="wyt6:~Number" resolve="Number" />
             </node>
             <node concept="2OqwBi" id="6hM2_xVNmYp" role="0kSFX">
               <node concept="2OqwBi" id="6hM2_xVNmnp" role="2Oq$k0">
@@ -1801,14 +1801,14 @@
     <node concept="3clFb_" id="6hM2_xVMpBw" role="jymVt">
       <property role="TrG5h" value="numericValueOf" />
       <node concept="3uibUv" id="6hM2_xVMt7R" role="3clF45">
-        <ref role="3uigEE" to="e2lb:~Number" resolve="Number" />
+        <ref role="3uigEE" to="wyt6:~Number" resolve="Number" />
       </node>
       <node concept="3Tm1VV" id="6hM2_xVMpBz" role="1B3o_S" />
       <node concept="3clFbS" id="6hM2_xVMpB$" role="3clF47">
         <node concept="3clFbF" id="6hM2_xVMDbO" role="3cqZAp">
           <node concept="20xKo3" id="6hM2_xVMDbK" role="3clFbG">
             <node concept="3uibUv" id="6hM2_xVMDik" role="20xRXQ">
-              <ref role="3uigEE" to="e2lb:~Number" resolve="Number" />
+              <ref role="3uigEE" to="wyt6:~Number" resolve="Number" />
             </node>
             <node concept="37vLTw" id="6hM2_xVMDiL" role="20xKo2">
               <ref role="3cqZAo" node="6hM2_xVMpRn" resolve="expr" />
@@ -1816,8 +1816,8 @@
             <node concept="20xKod" id="6hM2_xVMDjD" role="20xKoT">
               <ref role="20xKoc" to="clbe:7D99css6O2R" resolve="EnumLiteralRef" />
               <node concept="2YIFZM" id="6hM2_xVThy3" role="20xKoW">
-                <ref role="37wK5l" to="epq1:~BigInteger.valueOf(long):java.math.BigInteger" resolve="valueOf" />
-                <ref role="1Pybhc" to="epq1:~BigInteger" resolve="BigInteger" />
+                <ref role="37wK5l" to="xlxw:~BigInteger.valueOf(long):java.math.BigInteger" resolve="valueOf" />
+                <ref role="1Pybhc" to="xlxw:~BigInteger" resolve="BigInteger" />
                 <node concept="2OqwBi" id="6hM2_xVMER6" role="37wK5m">
                   <node concept="2OqwBi" id="6hM2_xVMDpm" role="2Oq$k0">
                     <node concept="20xRpB" id="6hM2_xVMDm4" role="2Oq$k0" />
@@ -1840,7 +1840,7 @@
               <ref role="20xKoc" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
               <node concept="0kSF2" id="6hM2_xVRo6I" role="20xKoW">
                 <node concept="3uibUv" id="6hM2_xVRocD" role="0kSFW">
-                  <ref role="3uigEE" to="e2lb:~Number" resolve="Number" />
+                  <ref role="3uigEE" to="wyt6:~Number" resolve="Number" />
                 </node>
                 <node concept="2OqwBi" id="6hM2_xVMFr3" role="0kSFX">
                   <node concept="20xRpB" id="6hM2_xVMFmj" role="2Oq$k0" />
@@ -2617,7 +2617,7 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="4Z2KgTfDcgr" role="2OqNvi">
-                                    <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                     <node concept="2OqwBi" id="4Z2KgTfDcFo" role="37wK5m">
                                       <node concept="37vLTw" id="4Z2KgTfDcsI" role="2Oq$k0">
                                         <ref role="3cqZAo" node="4omMoHU$xSS" resolve="fm" />
