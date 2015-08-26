@@ -537,6 +537,7 @@
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
+      <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -3598,8 +3599,11 @@
             <node concept="2OqwBi" id="6jvaevOzJkq" role="33vP2m">
               <node concept="1iwH7S" id="6jvaevOzHaW" role="2Oq$k0" />
               <node concept="2QPPRi" id="6jvaevOzKmv" role="2OqNvi">
-                <node concept="37vLTw" id="6jvaevOzL7B" role="2QPDDZ">
-                  <ref role="3cqZAo" node="3_DQCSSJNrr" resolve="nodesToCopy" />
+                <node concept="2OqwBi" id="1LMPBujOEdz" role="2QPDDZ">
+                  <node concept="37vLTw" id="6jvaevOzL7B" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3_DQCSSJNrr" resolve="nodesToCopy" />
+                  </node>
+                  <node concept="ANE8D" id="1LMPBujOFV6" role="2OqNvi" />
                 </node>
               </node>
             </node>
