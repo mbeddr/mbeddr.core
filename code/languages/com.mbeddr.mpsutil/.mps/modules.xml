@@ -54,6 +54,8 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.mpl" folder="preferenceform" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.process/com.mbeddr.mpsutil.process.mpl" folder="process" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.propertydefault/com.mbeddr.mpsutil.propertydefault.mpl" folder="propertydefault" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.rcp/com.mbeddr.mpsutil.rcp.mpl" folder="rcp" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.rcp/runtime/com.mbeddr.mpsutil.rcp.runtime.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.refactoring.rt/rt.msd" folder="refactoring" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.refactoring/refactoring.mpl" folder="refactoring" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.review.annotation/com.mbeddr.mpsutil.review.annotation.mpl" folder="margincell_review" />
@@ -61,6 +63,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.review/com.mbeddr.mpsutil.review.mpl" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.mpl" folder="richstring" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.runconfiguration/com.mbeddr.mpsutil.runconfiguration.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.smodule/com.mbeddr.mpsutil.smodule.mpl" folder="smodule" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.spreferences.context/com.mbeddr.mpsutil.spreferences.context.mpl" folder="spreferences" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.mpl" folder="spreferences" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.suppresswarning.gen/com.mbeddr.mpsutil.suppresswarning.gen.mpl" folder="suppresswarning" />
@@ -69,6 +72,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.uniquenames/com.mbeddr.mpsutil.uniquenames.mpl" folder="uniqueNames" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.xml.fix/com.mbeddr.mpsutil.xml.fix.mpl" folder="xml.fix" />
       <modulePath path="$PROJECT_DIR$/languages/doc.com.mbeddr.mpsutil.multilingual.lang/doc.com.mbeddr.mpsutil.multilingual.lang.mpl" folder="multilingual" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpdutil.smodule.sandbox/com.mbeddr.mpdutil.smodule.sandbox.msd" folder="smodule" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.actionsfilter.runtime/com.mbeddr.mpsutil.actionsfilter.runtime.msd" folder="actionsfilter" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.breadcrumb.runtime/com.mbeddr.mpsutil.breadcrumb.runtime.msd" folder="breadcrumb" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.common/com.mbeddr.mpsutil.common.msd" folder="" />
@@ -112,6 +116,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.review.sandbox/com.mbeddr.mpsutil.review.sandbox.msd" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.richstring.sandbox/com.mbeddr.mpsutil.richstring.sandbox.msd" folder="richstring" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.serializer.xml/com.mbeddr.mpsutil.serializer.xml.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.smodule.runtime/com.mbeddr.mpsutil.smodule.runtime.msd" folder="smodule" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.spreferences.demoplugin/com.mbeddr.mpsutil.spreferences.demoplugin.msd" folder="spreferences" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.spreferences.runtime/com.mbeddr.mpsutil.spreferences.runtime.msd" folder="spreferences" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.targetchooser/com.mbeddr.mpsutil.targetchooser.msd" folder="targetchooser" />
