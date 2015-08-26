@@ -13,8 +13,8 @@
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -25,14 +25,14 @@
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
-    <import index="2rho" ref="r:4e770e63-2ef5-4a0d-b2e8-c5c1a1565703(com.mbeddr.core.udt.behavior)" implicit="true" />
-    <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
+    <import index="2rho" ref="r:4e770e63-2ef5-4a0d-b2e8-c5c1a1565703(com.mbeddr.core.udt.behavior)" implicit="true" />
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -5043,7 +5043,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="54Ur8W4C8ya" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                           <node concept="2YIFZM" id="2EE6RFmx2$X" role="37wK5m">
                             <ref role="1Pybhc" to="obve:26ZL_$tEyIo" resolve="NameGenerator" />
                             <ref role="37wK5l" to="obve:5hv6ej955j1" resolve="getGenericTaskModuleName" />
@@ -5481,7 +5481,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="54Ur8W4DNMZ" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                           <node concept="2YIFZM" id="54Ur8W4DO_a" role="37wK5m">
                             <ref role="1Pybhc" to="obve:26ZL_$tEyIo" resolve="NameGenerator" />
                             <ref role="37wK5l" to="obve:54Ur8W4D8pc" resolve="getGenericSyncModuleName" />
@@ -6645,7 +6645,7 @@
                                             </node>
                                           </node>
                                           <node concept="liA8E" id="2PAg_agfz0o" role="2OqNvi">
-                                            <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                             <node concept="2OqwBi" id="2PAg_agfzKw" role="37wK5m">
                                               <node concept="2GrUjf" id="2PAg_agfzb4" role="2Oq$k0">
                                                 <ref role="2Gs0qQ" node="2PAg_ageI8J" resolve="localVar" />
@@ -8157,7 +8157,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="54Ur8W4CWQJ" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                           <node concept="2YIFZM" id="54Ur8W4CXxE" role="37wK5m">
                             <ref role="1Pybhc" to="obve:26ZL_$tEyIo" resolve="NameGenerator" />
                             <ref role="37wK5l" to="obve:2ukyENUTX$c" resolve="getGenericSharedModuleName" />
@@ -9078,11 +9078,11 @@
                     <node concept="3clFbF" id="2N96okRRmEx" role="3cqZAp">
                       <node concept="2OqwBi" id="2N96okRRmEz" role="3clFbG">
                         <node concept="10M0yZ" id="2N96okRRmE$" role="2Oq$k0">
-                          <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-                          <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                          <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                         </node>
                         <node concept="liA8E" id="2N96okRRmE_" role="2OqNvi">
-                          <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                           <node concept="Xl_RD" id="2N96okRRmEA" role="37wK5m">
                             <property role="Xl_RC" value="?????should replace....." />
                           </node>
@@ -9114,11 +9114,11 @@
                               <node concept="3clFbF" id="2N96okRSi6f" role="3cqZAp">
                                 <node concept="2OqwBi" id="2N96okRSi6g" role="3clFbG">
                                   <node concept="10M0yZ" id="2N96okRSi6h" role="2Oq$k0">
-                                    <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-                                    <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                                   </node>
                                   <node concept="liA8E" id="2N96okRSi6i" role="2OqNvi">
-                                    <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                                     <node concept="3cpWs3" id="2N96okRSjov" role="37wK5m">
                                       <node concept="2OqwBi" id="2N96okRSkyQ" role="3uHU7w">
                                         <node concept="37vLTw" id="2N96okRSjsK" role="2Oq$k0">
@@ -9197,11 +9197,11 @@
                         <node concept="3clFbF" id="2N96okRQAoV" role="3cqZAp">
                           <node concept="2OqwBi" id="2N96okRQB1H" role="3clFbG">
                             <node concept="10M0yZ" id="2N96okRQAoU" role="2Oq$k0">
-                              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-                              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                             </node>
                             <node concept="liA8E" id="2N96okRQBtF" role="2OqNvi">
-                              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                               <node concept="Xl_RD" id="2N96okRQBui" role="37wK5m">
                                 <property role="Xl_RC" value="......should replace....." />
                               </node>

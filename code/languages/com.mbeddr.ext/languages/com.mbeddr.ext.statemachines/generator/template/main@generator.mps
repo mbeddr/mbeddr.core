@@ -13,11 +13,11 @@
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <use id="896334f3-82ce-427b-bb47-ccd3131864a9" name="com.mbeddr.mpsutil.mappingLabels" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <generationPart ref="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" />
     <generationPart ref="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -144,9 +144,6 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="17217465924316850" name="com.mbeddr.mpsutil.blutil.structure.FilterOperation" flags="ng" index="2Gpcm3">
-        <reference id="17217465924316851" name="concept" index="2Gpcm2" />
-      </concept>
       <concept id="734120071946422046" name="com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" flags="ng" index="3kUt_e">
         <child id="734120071946422047" name="expr" index="3kUt_f" />
       </concept>
@@ -484,6 +481,9 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
@@ -4804,8 +4804,10 @@
                       <ref role="37wK5l" to="ktif:3FSHg1aBSC6" resolve="allStates" />
                     </node>
                   </node>
-                  <node concept="2Gpcm3" id="1_Q4fcrAtdf" role="2OqNvi">
-                    <ref role="2Gpcm2" to="clqz:50Lk78xBraf" resolve="State" />
+                  <node concept="v3k3i" id="6jvaevO$GSN" role="2OqNvi">
+                    <node concept="chp4Y" id="6jvaevO$GSO" role="v3oSu">
+                      <ref role="cht4Q" to="clqz:50Lk78xBraf" resolve="State" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -4953,8 +4955,10 @@
                       <ref role="37wK5l" to="ktif:3FSHg1aCVUC" resolve="states" />
                     </node>
                   </node>
-                  <node concept="2Gpcm3" id="XaN6GnhPx" role="2OqNvi">
-                    <ref role="2Gpcm2" to="clqz:3FSHg1aADHk" resolve="CompositeState" />
+                  <node concept="v3k3i" id="6jvaevO$GSP" role="2OqNvi">
+                    <node concept="chp4Y" id="6jvaevO$GSQ" role="v3oSu">
+                      <ref role="cht4Q" to="clqz:3FSHg1aADHk" resolve="CompositeState" />
+                    </node>
                   </node>
                 </node>
               </node>

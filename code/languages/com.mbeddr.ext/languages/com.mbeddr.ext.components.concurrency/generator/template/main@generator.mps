@@ -24,13 +24,13 @@
     <import index="qnb1" ref="r:20269589-2670-4f99-b5ae-af443d8a5c29(com.mbeddr.ext.components.concurrency.structure)" />
     <import index="v7ag" ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" />
     <import index="l8pw" ref="r:b0028a06-31df-46f6-9f75-16817905d015(com.mbeddr.ext.components.concurrency.behavior)" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
-    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
-    <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
-    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
+    <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -312,7 +312,7 @@
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
@@ -1420,7 +1420,9 @@
             <node concept="2OqwBi" id="3qlQk_gi6Wq" role="2Oq$k0">
               <node concept="1Q6Npb" id="3qlQk_gi6VD" role="2Oq$k0" />
               <node concept="2SmgA7" id="3qlQk_gi73Q" role="2OqNvi">
-                <ref role="2SmgA8" to="qnb1:3Xsb2sPNBw4" resolve="SectionInComponent" />
+                <node concept="chp4Y" id="6jvaevO$GOW" role="1dBWTz">
+                  <ref role="cht4Q" to="qnb1:3Xsb2sPNBw4" resolve="SectionInComponent" />
+                </node>
               </node>
             </node>
             <node concept="13MTOL" id="3qlQk_gig0t" role="2OqNvi">
@@ -2184,7 +2186,9 @@
                     <node concept="I4A8Y" id="7tWSY$OZwqO" role="2OqNvi" />
                   </node>
                   <node concept="2SmgA7" id="7tWSY$ORInO" role="2OqNvi">
-                    <ref role="2SmgA8" to="qnb1:7tWSY$ONvgr" resolve="ComponentInstanceRunnableCall" />
+                    <node concept="chp4Y" id="6jvaevO$GOS" role="1dBWTz">
+                      <ref role="cht4Q" to="qnb1:7tWSY$ONvgr" resolve="ComponentInstanceRunnableCall" />
+                    </node>
                   </node>
                 </node>
                 <node concept="2HwmR7" id="7tWSY$OROZ$" role="2OqNvi">
@@ -2700,7 +2704,9 @@
                   <node concept="1r8y6K" id="7tWSY$OTgT9" role="2OqNvi" />
                 </node>
                 <node concept="2SmgA7" id="7tWSY$OTheX" role="2OqNvi">
-                  <ref role="2SmgA8" to="qnb1:7tWSY$ONv9C" resolve="ComponentInstanceFieldRef" />
+                  <node concept="chp4Y" id="6jvaevO$GOU" role="1dBWTz">
+                    <ref role="cht4Q" to="qnb1:7tWSY$ONv9C" resolve="ComponentInstanceFieldRef" />
+                  </node>
                 </node>
               </node>
               <node concept="2HwmR7" id="7tWSY$OTldG" role="2OqNvi">
