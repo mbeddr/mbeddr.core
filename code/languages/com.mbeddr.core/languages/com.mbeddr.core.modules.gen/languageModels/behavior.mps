@@ -3,13 +3,13 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="if8w" ref="r:95397225-9080-48bc-b1aa-0ce7c4f3d2ce(jetbrains.mps.lang.traceable.behavior)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
@@ -17,7 +17,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -166,9 +166,6 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="17217465924316850" name="com.mbeddr.mpsutil.blutil.structure.FilterOperation" flags="ng" index="2Gpcm3">
-        <reference id="17217465924316851" name="concept" index="2Gpcm2" />
-      </concept>
       <concept id="734120071946422046" name="com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" flags="ng" index="3kUt_e">
         <child id="734120071946422047" name="expr" index="3kUt_f" />
       </concept>
@@ -231,7 +228,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3THzug" />
+      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -387,7 +384,7 @@
         <node concept="YS8fn" id="6clJcrKx3Gn" role="3cqZAp">
           <node concept="2ShNRf" id="6clJcrKx3Go" role="YScLw">
             <node concept="1pGfFk" id="6clJcrKx3Gp" role="2ShVmc">
-              <ref role="37wK5l" to="e2lb:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
               <node concept="Xl_RD" id="6clJcrKx3Gq" role="37wK5m">
                 <property role="Xl_RC" value="Must not be called for GenModules. Special caching in use" />
               </node>
@@ -409,7 +406,7 @@
         <node concept="YS8fn" id="6clJcrKx3Gw" role="3cqZAp">
           <node concept="2ShNRf" id="6clJcrKx3Gx" role="YScLw">
             <node concept="1pGfFk" id="6clJcrKx3Gy" role="2ShVmc">
-              <ref role="37wK5l" to="e2lb:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
               <node concept="Xl_RD" id="6clJcrKx3Gz" role="37wK5m">
                 <property role="Xl_RC" value="Must not be called for GenModules. Special caching in use" />
               </node>
@@ -572,7 +569,7 @@
         <node concept="YS8fn" id="6clJcrKx1hC" role="3cqZAp">
           <node concept="2ShNRf" id="6clJcrKx1jc" role="YScLw">
             <node concept="1pGfFk" id="6clJcrKx1tW" role="2ShVmc">
-              <ref role="37wK5l" to="e2lb:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
               <node concept="Xl_RD" id="6clJcrKx1wt" role="37wK5m">
                 <property role="Xl_RC" value="Must not be called for GenModules. Special caching in use" />
               </node>
@@ -594,7 +591,7 @@
         <node concept="YS8fn" id="6clJcrKx3gS" role="3cqZAp">
           <node concept="2ShNRf" id="6clJcrKx3gT" role="YScLw">
             <node concept="1pGfFk" id="6clJcrKx3gU" role="2ShVmc">
-              <ref role="37wK5l" to="e2lb:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
               <node concept="Xl_RD" id="6clJcrKx3gV" role="37wK5m">
                 <property role="Xl_RC" value="Must not be called for GenModules. Special caching in use" />
               </node>
@@ -715,7 +712,7 @@
         <node concept="YS8fn" id="6clJcrKx49c" role="3cqZAp">
           <node concept="2ShNRf" id="6clJcrKx49d" role="YScLw">
             <node concept="1pGfFk" id="6clJcrKx49e" role="2ShVmc">
-              <ref role="37wK5l" to="e2lb:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
               <node concept="Xl_RD" id="6clJcrKx49f" role="37wK5m">
                 <property role="Xl_RC" value="Must not be called for GenModules. Special caching in use" />
               </node>
@@ -737,7 +734,7 @@
         <node concept="YS8fn" id="6clJcrKx49l" role="3cqZAp">
           <node concept="2ShNRf" id="6clJcrKx49m" role="YScLw">
             <node concept="1pGfFk" id="6clJcrKx49n" role="2ShVmc">
-              <ref role="37wK5l" to="e2lb:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
               <node concept="Xl_RD" id="6clJcrKx49o" role="37wK5m">
                 <property role="Xl_RC" value="Must not be called for GenModules. Special caching in use" />
               </node>
@@ -788,7 +785,7 @@
       <property role="TrG5h" value="provider2concept2Content" />
       <node concept="3Tm6S6" id="JY3sAlfc9i" role="1B3o_S" />
       <node concept="3uibUv" id="JY3sAlfc9j" role="1tU5fm">
-        <ref role="3uigEE" to="k7g3:~WeakHashMap" resolve="WeakHashMap" />
+        <ref role="3uigEE" to="33ny:~WeakHashMap" resolve="WeakHashMap" />
         <node concept="3Tqbb2" id="JY3sAlfc9k" role="11_B2D">
           <ref role="ehGHo" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
         </node>
@@ -799,7 +796,7 @@
       </node>
       <node concept="2ShNRf" id="JY3sAlfc9o" role="33vP2m">
         <node concept="1pGfFk" id="JY3sAlfc9p" role="2ShVmc">
-          <ref role="37wK5l" to="k7g3:~WeakHashMap.&lt;init&gt;()" resolve="WeakHashMap" />
+          <ref role="37wK5l" to="33ny:~WeakHashMap.&lt;init&gt;()" resolve="WeakHashMap" />
           <node concept="3Tqbb2" id="JY3sAlfc9q" role="1pMfVU">
             <ref role="ehGHo" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
           </node>
@@ -836,7 +833,7 @@
             </node>
             <node concept="2ShNRf" id="2d4Z3BTFBbO" role="37vLTx">
               <node concept="1pGfFk" id="2d4Z3BTFBbP" role="2ShVmc">
-                <ref role="37wK5l" to="k7g3:~WeakHashMap.&lt;init&gt;()" resolve="WeakHashMap" />
+                <ref role="37wK5l" to="33ny:~WeakHashMap.&lt;init&gt;()" resolve="WeakHashMap" />
                 <node concept="3Tqbb2" id="2d4Z3BTFBbQ" role="1pMfVU">
                   <ref role="ehGHo" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
                 </node>
@@ -1042,7 +1039,7 @@
                     <node concept="YS8fn" id="7sq4jKS4X5_" role="3cqZAp">
                       <node concept="2ShNRf" id="7sq4jKS4X5B" role="YScLw">
                         <node concept="1pGfFk" id="7sq4jKS4Yj7" role="2ShVmc">
-                          <ref role="37wK5l" to="e2lb:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                          <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
                           <node concept="Xl_RD" id="7sq4jKS4Yj8" role="37wK5m">
                             <property role="Xl_RC" value="Circle?" />
                           </node>
@@ -1449,8 +1446,10 @@
                 <ref role="3TtcxE" to="d0vh:4Pack3zOoGA" />
               </node>
             </node>
-            <node concept="2Gpcm3" id="ReXz9EbYoa" role="2OqNvi">
-              <ref role="2Gpcm2" to="d0vh:19a6$uAAsGA" resolve="GenImplModuleImport" />
+            <node concept="v3k3i" id="6jvaevO$09q" role="2OqNvi">
+              <node concept="chp4Y" id="6jvaevO$09r" role="v3oSu">
+                <ref role="cht4Q" to="d0vh:19a6$uAAsGA" resolve="GenImplModuleImport" />
+              </node>
             </node>
           </node>
           <node concept="3clFbS" id="ReXz9EbQED" role="2LFqv$">
@@ -2022,7 +2021,7 @@
       <property role="TrG5h" value="provider2concept2Content" />
       <node concept="3Tm6S6" id="JY3sAlfc8K" role="1B3o_S" />
       <node concept="3uibUv" id="JY3sAlfc8S" role="1tU5fm">
-        <ref role="3uigEE" to="k7g3:~WeakHashMap" resolve="WeakHashMap" />
+        <ref role="3uigEE" to="33ny:~WeakHashMap" resolve="WeakHashMap" />
         <node concept="3Tqbb2" id="JY3sAlfc97" role="11_B2D">
           <ref role="ehGHo" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
         </node>
@@ -2033,7 +2032,7 @@
       </node>
       <node concept="2ShNRf" id="JY3sAlfc8U" role="33vP2m">
         <node concept="1pGfFk" id="JY3sAlfc8W" role="2ShVmc">
-          <ref role="37wK5l" to="k7g3:~WeakHashMap.&lt;init&gt;()" resolve="WeakHashMap" />
+          <ref role="37wK5l" to="33ny:~WeakHashMap.&lt;init&gt;()" resolve="WeakHashMap" />
           <node concept="3Tqbb2" id="JY3sAlfc9d" role="1pMfVU">
             <ref role="ehGHo" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
           </node>
