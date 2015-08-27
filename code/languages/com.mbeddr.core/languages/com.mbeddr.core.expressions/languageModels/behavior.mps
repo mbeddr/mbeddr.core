@@ -36,8 +36,8 @@
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
     <import index="hba4" ref="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" />
     <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(java.util@java_stub)" />
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -358,6 +358,9 @@
       </concept>
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
+      <concept id="1140725362528" name="jetbrains.mps.lang.smodel.structure.Link_SetTargetOperation" flags="nn" index="2oxUTD">
+        <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
@@ -15009,6 +15012,57 @@
         <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
       </node>
       <node concept="3Tm1VV" id="3TsQp8jsppd" role="1B3o_S" />
+    </node>
+    <node concept="13i0hz" id="7NLP0MNzfkx" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getSyntacticallyRightSideExpression" />
+      <ref role="13i0hy" node="6mzZsELnTMK" resolve="getSyntacticallyRightSideExpression" />
+      <node concept="3Tm1VV" id="7NLP0MNzfky" role="1B3o_S" />
+      <node concept="3clFbS" id="7NLP0MNzfkF" role="3clF47">
+        <node concept="3cpWs6" id="7NLP0MNzvaH" role="3cqZAp">
+          <node concept="2OqwBi" id="7NLP0MNzvfm" role="3cqZAk">
+            <node concept="13iPFW" id="7NLP0MNzvaQ" role="2Oq$k0" />
+            <node concept="3TrEf2" id="7NLP0MNzvVA" role="2OqNvi">
+              <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="7NLP0MNzfkG" role="3clF45">
+        <ref role="ehGHo" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="7NLP0MNzfkL" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="setSyntacticallyRightSideExpression" />
+      <ref role="13i0hy" node="6mzZsELnSmP" resolve="setSyntacticallyRightSideExpression" />
+      <node concept="3Tm1VV" id="7NLP0MNzfkM" role="1B3o_S" />
+      <node concept="3clFbS" id="7NLP0MNzfl4" role="3clF47">
+        <node concept="3clFbF" id="7NLP0MNzsJ6" role="3cqZAp">
+          <node concept="2OqwBi" id="7NLP0MNzu_M" role="3clFbG">
+            <node concept="2OqwBi" id="7NLP0MNzt7J" role="2Oq$k0">
+              <node concept="13iPFW" id="7NLP0MNzsJ4" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7NLP0MNzuc2" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+              </node>
+            </node>
+            <node concept="2oxUTD" id="7NLP0MNzv5q" role="2OqNvi">
+              <node concept="37vLTw" id="7NLP0MNzv7b" role="2oxUTC">
+                <ref role="3cqZAo" node="7NLP0MNzfl5" resolve="expression" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7NLP0MNzfl5" role="3clF46">
+        <property role="TrG5h" value="expression" />
+        <node concept="3Tqbb2" id="7NLP0MNzfl6" role="1tU5fm">
+          <ref role="ehGHo" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="7NLP0MNzfl7" role="3clF45" />
     </node>
     <node concept="13i0hz" id="1frRXyI7URp" role="13h7CS">
       <property role="TrG5h" value="getPriolevel" />

@@ -370,6 +370,9 @@
     <property role="34LRSv" value="!" />
     <property role="R4oN_" value="logical not" />
     <ref role="1TJDcQ" node="6AJWN7GdLOh" resolve="UnaryLogicalExpression" />
+    <node concept="PrWs8" id="7NLP0MNzfc1" role="PzmwI">
+      <ref role="PrY4T" node="6mzZsELnskC" resolve="IBinaryLike" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5IYyAOzBgHk">
     <property role="TrG5h" value="CastExpression" />
