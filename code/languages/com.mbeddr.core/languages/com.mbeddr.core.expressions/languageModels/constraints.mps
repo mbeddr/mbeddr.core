@@ -125,6 +125,7 @@
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
+      <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -187,6 +188,9 @@
       <concept id="1174653354106" name="jetbrains.mps.baseLanguage.regexp.structure.RegexpUsingConstruction" flags="ng" index="1YMW5F">
         <child id="1174653387388" name="regexp" index="1YN4dH" />
       </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
     </language>
   </registry>
   <node concept="1M2fIO" id="477NaqBEW4A">
@@ -1418,6 +1422,30 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="D40B16XlFa">
+    <property role="3GE5qa" value="expr.arith.unary" />
+    <ref role="1M2myG" to="mj1l:6cGRlFfI5au" resolve="UnaryPrePosModificationExpression" />
+    <node concept="osYL8" id="D40B16XlWl" role="1MLXOK">
+      <node concept="3clFbS" id="D40B16XlWm" role="2VODD2">
+        <node concept="3cpWs6" id="D40B16XJmD" role="3cqZAp">
+          <node concept="2OqwBi" id="D40B16XN38" role="3cqZAk">
+            <node concept="2OqwBi" id="D40B16XKby" role="2Oq$k0">
+              <node concept="2H4GUG" id="D40B16XJrL" role="2Oq$k0" />
+              <node concept="2Rf3mk" id="D40B16XKmb" role="2OqNvi">
+                <node concept="1xMEDy" id="D40B16XKmd" role="1xVPHs">
+                  <node concept="chp4Y" id="D40B16XKxo" role="ri$Ld">
+                    <ref role="cht4Q" to="mj1l:6cGRlFfI5au" resolve="UnaryPrePosModificationExpression" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="D40B16XLwl" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="1v1jN8" id="D40B16XUhj" role="2OqNvi" />
           </node>
         </node>
       </node>

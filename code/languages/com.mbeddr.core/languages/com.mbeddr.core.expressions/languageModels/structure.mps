@@ -491,7 +491,6 @@
     <property role="3GE5qa" value="expr.arith.unary" />
     <property role="TrG5h" value="PostDecrementExpression" />
     <property role="R4oN_" value="post decrement" />
-    <property role="34LRSv" value="--" />
     <ref role="1TJDcQ" node="6cGRlFfI5au" resolve="UnaryPrePosModificationExpression" />
     <node concept="PrWs8" id="5HxjapwgqN5" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -501,8 +500,10 @@
     <property role="3GE5qa" value="expr.arith.unary" />
     <property role="TrG5h" value="PreDecrementExpression" />
     <property role="R4oN_" value="pre decrement" />
-    <property role="34LRSv" value="--" />
     <ref role="1TJDcQ" node="6cGRlFfI5au" resolve="UnaryPrePosModificationExpression" />
+    <node concept="PrWs8" id="D40B170til" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3sKsqTsppde">
     <property role="3GE5qa" value="expr.arith.unary" />
@@ -581,7 +582,6 @@
     <property role="3GE5qa" value="expr.arith.unary" />
     <property role="TrG5h" value="PostIncrementExpression" />
     <property role="R4oN_" value="post increment" />
-    <property role="34LRSv" value="++" />
     <ref role="1TJDcQ" node="6cGRlFfI5au" resolve="UnaryPrePosModificationExpression" />
     <node concept="PrWs8" id="5HxjapwgqN8" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -591,8 +591,10 @@
     <property role="3GE5qa" value="expr.arith.unary" />
     <property role="TrG5h" value="PreIncrementExpression" />
     <property role="R4oN_" value="pre increment" />
-    <property role="34LRSv" value="++" />
     <ref role="1TJDcQ" node="6cGRlFfI5au" resolve="UnaryPrePosModificationExpression" />
+    <node concept="PrWs8" id="D40B170tip" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3MUk0N5szEG">
     <property role="3GE5qa" value="expr.arith.unary" />
@@ -1258,6 +1260,9 @@
     </node>
     <node concept="PrWs8" id="6mzZsELoNWT" role="PzmwI">
       <ref role="PrY4T" node="6mzZsELnskC" resolve="IBinaryLike" />
+    </node>
+    <node concept="PrWs8" id="D40B170fEk" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="6ydhAa1uf6q">
