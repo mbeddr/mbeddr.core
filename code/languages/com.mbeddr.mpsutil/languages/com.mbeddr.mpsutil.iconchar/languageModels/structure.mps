@@ -65,6 +65,10 @@
       <property role="TrG5h" value="borderColor" />
       <ref role="AX2Wp" node="7GaZbxRWsMP" resolve="rgbaColor" />
     </node>
+    <node concept="1TJgyi" id="608oBgpSN05" role="1TKVEl">
+      <property role="TrG5h" value="antialias" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="M6xJ_" id="7GaZbxRXSjy" role="lGtFl">
       <property role="Hh88m" value="iconChar" />
       <node concept="tn0Fv" id="7GaZbxRXSyD" role="HhnKV">

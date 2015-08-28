@@ -113,6 +113,7 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
@@ -220,14 +221,37 @@
           <node concept="3cpWsn" id="65E6xpGUWfw" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="10P_77" id="65E6xpGUWfl" role="1tU5fm" />
-            <node concept="2OqwBi" id="65E6xpGUWfx" role="33vP2m">
-              <node concept="37vLTw" id="65E6xpGUWfy" role="2Oq$k0">
-                <ref role="3cqZAo" node="65E6xpGUT7u" resolve="expected" />
+            <node concept="1Wc70l" id="277McO9hgbq" role="33vP2m">
+              <node concept="2OqwBi" id="277McO9hgwQ" role="3uHU7w">
+                <node concept="2OqwBi" id="277McO9hgeo" role="2Oq$k0">
+                  <node concept="37vLTw" id="277McO9hgcV" role="2Oq$k0">
+                    <ref role="3cqZAo" node="65E6xpGUT7u" resolve="expected" />
+                  </node>
+                  <node concept="liA8E" id="277McO9hgov" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="277McO9hi38" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="2OqwBi" id="277McO9hidI" role="37wK5m">
+                    <node concept="37vLTw" id="277McO9hi8l" role="2Oq$k0">
+                      <ref role="3cqZAo" node="65E6xpGUUOz" resolve="actual" />
+                    </node>
+                    <node concept="liA8E" id="277McO9hirA" role="2OqNvi">
+                      <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
+                    </node>
+                  </node>
+                </node>
               </node>
-              <node concept="liA8E" id="65E6xpGUWfz" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~Object.equals(java.lang.Object):boolean" resolve="equals" />
-                <node concept="37vLTw" id="65E6xpGUWf$" role="37wK5m">
-                  <ref role="3cqZAo" node="65E6xpGUUOz" resolve="actual" />
+              <node concept="2OqwBi" id="65E6xpGUWfx" role="3uHU7B">
+                <node concept="37vLTw" id="65E6xpGUWfy" role="2Oq$k0">
+                  <ref role="3cqZAo" node="65E6xpGUT7u" resolve="expected" />
+                </node>
+                <node concept="liA8E" id="65E6xpGUWfz" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="37vLTw" id="65E6xpGUWf$" role="37wK5m">
+                    <ref role="3cqZAo" node="65E6xpGUUOz" resolve="actual" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -268,26 +292,66 @@
       <node concept="17QB3L" id="5Gh6GqGJP1t" role="3clF45" />
       <node concept="3clFbS" id="5Gh6GqGJOLi" role="3clF47">
         <node concept="3clFbF" id="5Gh6GqGJPA5" role="3cqZAp">
-          <node concept="3cpWs3" id="65E6xpGV7X_" role="3clFbG">
-            <node concept="37vLTw" id="65E6xpGV8$6" role="3uHU7w">
-              <ref role="3cqZAo" node="5Gh6GqGJP22" resolve="actual" />
+          <node concept="3cpWs3" id="277McO9hkae" role="3clFbG">
+            <node concept="Xl_RD" id="277McO9hkah" role="3uHU7w">
+              <property role="Xl_RC" value="]" />
             </node>
-            <node concept="3cpWs3" id="65E6xpGV2vx" role="3uHU7B">
-              <node concept="3cpWs3" id="65E6xpGV1Nl" role="3uHU7B">
-                <node concept="3cpWs3" id="65E6xpGV9lB" role="3uHU7B">
-                  <node concept="BsUDl" id="65E6xpGVe1U" role="3uHU7B">
-                    <ref role="37wK5l" node="65E6xpGVdh9" resolve="getNodeRendering" />
+            <node concept="3cpWs3" id="277McO9hjDt" role="3uHU7B">
+              <node concept="3cpWs3" id="277McO9hjmy" role="3uHU7B">
+                <node concept="3cpWs3" id="65E6xpGV7X_" role="3uHU7B">
+                  <node concept="3cpWs3" id="277McO9hi$G" role="3uHU7B">
+                    <node concept="Xl_RD" id="65E6xpGV2v$" role="3uHU7w">
+                      <property role="Xl_RC" value=" actual: " />
+                    </node>
+                    <node concept="3cpWs3" id="277McO9hjdg" role="3uHU7B">
+                      <node concept="Xl_RD" id="277McO9hjdj" role="3uHU7w">
+                        <property role="Xl_RC" value="]" />
+                      </node>
+                      <node concept="3cpWs3" id="277McO9hiLc" role="3uHU7B">
+                        <node concept="3cpWs3" id="65E6xpGV2vx" role="3uHU7B">
+                          <node concept="3cpWs3" id="65E6xpGV1Nl" role="3uHU7B">
+                            <node concept="3cpWs3" id="65E6xpGV9lB" role="3uHU7B">
+                              <node concept="BsUDl" id="65E6xpGVe1U" role="3uHU7B">
+                                <ref role="37wK5l" node="65E6xpGVdh9" resolve="getNodeRendering" />
+                              </node>
+                              <node concept="Xl_RD" id="65E6xpGUZ8X" role="3uHU7w">
+                                <property role="Xl_RC" value=": expected: " />
+                              </node>
+                            </node>
+                            <node concept="37vLTw" id="65E6xpGV23g" role="3uHU7w">
+                              <ref role="3cqZAo" node="5Gh6GqGJP1y" resolve="expected" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="277McO9hi$J" role="3uHU7w">
+                            <property role="Xl_RC" value="[" />
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="277McO9hiSq" role="3uHU7w">
+                          <node concept="37vLTw" id="277McO9hiOW" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5Gh6GqGJP1y" resolve="expected" />
+                          </node>
+                          <node concept="liA8E" id="277McO9hj4i" role="2OqNvi">
+                            <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                   </node>
-                  <node concept="Xl_RD" id="65E6xpGUZ8X" role="3uHU7w">
-                    <property role="Xl_RC" value=": expected: " />
+                  <node concept="37vLTw" id="65E6xpGV8$6" role="3uHU7w">
+                    <ref role="3cqZAo" node="5Gh6GqGJP22" resolve="actual" />
                   </node>
                 </node>
-                <node concept="37vLTw" id="65E6xpGV23g" role="3uHU7w">
-                  <ref role="3cqZAo" node="5Gh6GqGJP1y" resolve="expected" />
+                <node concept="Xl_RD" id="277McO9hjs6" role="3uHU7w">
+                  <property role="Xl_RC" value="[" />
                 </node>
               </node>
-              <node concept="Xl_RD" id="65E6xpGV2v$" role="3uHU7w">
-                <property role="Xl_RC" value=" actual: " />
+              <node concept="2OqwBi" id="277McO9hjNC" role="3uHU7w">
+                <node concept="37vLTw" id="277McO9hjJj" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5Gh6GqGJP22" resolve="actual" />
+                </node>
+                <node concept="liA8E" id="277McO9hk0x" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
+                </node>
               </node>
             </node>
           </node>

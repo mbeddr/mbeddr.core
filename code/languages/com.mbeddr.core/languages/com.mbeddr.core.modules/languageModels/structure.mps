@@ -1118,9 +1118,9 @@
     </node>
   </node>
   <node concept="1TIwiD" id="8PQYytE9VE">
-    <property role="TrG5h" value="PragmaDeclaration" />
-    <property role="34LRSv" value="#pragmaDeclaration" />
-    <property role="R4oN_" value="#pragma to be referenced by functions in modifiers" />
+    <property role="TrG5h" value="ModifierModuleContent" />
+    <property role="34LRSv" value="#modifier" />
+    <property role="R4oN_" value="modifiers to be referenced by functions" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="8PQYytE9VH" role="1TKVEl">
       <property role="TrG5h" value="isSurrounding" />
@@ -1145,7 +1145,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="decl" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="8PQYytE9VE" resolve="PragmaDeclaration" />
+      <ref role="20lvS9" node="8PQYytE9VE" resolve="ModifierModuleContent" />
     </node>
     <node concept="PrWs8" id="8PQYytHVxx" role="PzmwI">
       <ref role="PrY4T" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
@@ -1340,9 +1340,10 @@
   <node concept="1TIwiD" id="IrwlmWyLju">
     <property role="TrG5h" value="PragmaModuleContent" />
     <property role="34LRSv" value="#pragma" />
-    <property role="R4oN_" value="#pragma on module content level" />
+    <property role="R4oN_" value="#pragma" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="IrwlmWyLjw" role="1TKVEl">
-      <property role="TrG5h" value="pragmaString" />
+      <property role="TrG5h" value="pragmaText" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="xN636rYFQ6" role="PzmwI">

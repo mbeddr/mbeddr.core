@@ -82,6 +82,18 @@
         </node>
         <node concept="2iRfu4" id="7GaZbxRWk_b" role="2iSdaV" />
       </node>
+      <node concept="3EZMnI" id="608oBgpSRY6" role="3EZMnx">
+        <node concept="VPM3Z" id="608oBgpSRY8" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="608oBgpSRYa" role="3EZMnx">
+          <property role="3F0ifm" value="anti-alias:" />
+        </node>
+        <node concept="3F0A7n" id="608oBgpSRYy" role="3EZMnx">
+          <ref role="1NtTu8" to="i0j2:608oBgpSN05" resolve="antialias" />
+        </node>
+        <node concept="2iRfu4" id="608oBgpSRYb" role="2iSdaV" />
+      </node>
     </node>
   </node>
 </model>
