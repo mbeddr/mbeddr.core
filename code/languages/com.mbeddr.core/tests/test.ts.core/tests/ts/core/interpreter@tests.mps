@@ -27,6 +27,7 @@
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="9jdt" ref="r:e125339c-98f6-4177-aa96-b6e5def8376f(com.mbeddr.mpsutil.interpreter.typesystem)" />
     <import index="wxye" ref="r:cec599e3-51d2-48a7-af31-989e3cbd593c(jetbrains.mps.lang.core.typesystem)" />
+    <import index="tpeq" ref="r:00000000-0000-4000-0000-011c895902fe(jetbrains.mps.lang.smodel.typesystem)" />
     <import index="1ok9" ref="r:a604a9bb-58f8-4cf0-a289-ef69bb1576bb(com.mbeddr.core.__spreferences.PlatformTemplates)" implicit="true" />
   </imports>
   <registry>
@@ -480,6 +481,13 @@
             <property role="BaBD8" value="com.mbeddr." />
             <property role="BaHAW" value="com.mbeddr.core.base.behavior" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcGKp" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcGKq" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcGZ7" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="7CXmI" id="44jZT9pkq2I" role="lGtFl">
@@ -495,6 +503,13 @@
             <property role="BaBD8" value="com.mbeddr." />
             <property role="BaHAW" value="com.mbeddr.core.base.behavior" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcGKy" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcGKz" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcGM7" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="d$4Dx" id="44jZT9ps1Pl" role="d$6nW">
@@ -509,6 +524,13 @@
             <property role="BaBD8" value="com.mbeddr." />
             <property role="BaHAW" value="com.mbeddr.core.expressions.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcGZ9" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcGZa" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcGZi" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="d$4Dx" id="44jZT9ps1Q1" role="d$6nW">
@@ -523,6 +545,13 @@
             <property role="BaBD8" value="com.mbeddr." />
             <property role="BaHAW" value="com.mbeddr.core.expressions.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcGZk" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcGZl" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcGZt" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="7CXmI" id="44jZT9pkq2M" role="lGtFl">
@@ -538,6 +567,13 @@
             <property role="BaBD8" value="com.mbeddr." />
             <property role="BaHAW" value="com.mbeddr.core.base.behavior" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcGZv" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcGZw" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcGZC" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="7CXmI" id="44jZT9pkq2Q" role="lGtFl">
@@ -553,6 +589,13 @@
             <property role="BaBD8" value="com.mbeddr." />
             <property role="BaHAW" value="com.mbeddr.core.expressions.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcGZE" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcGZF" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcGZN" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="1J7L1T" id="44jZT9piBTY" role="1J4apk">
@@ -578,6 +621,13 @@
             <property role="BaBD8" value="com.mbeddr." />
             <property role="BaHAW" value="com.mbeddr.core.base.behavior" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcGZP" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcGZQ" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcGZY" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="d$4Dx" id="44jZT9piBU8" role="d$6nW">
@@ -592,6 +642,13 @@
             <property role="BaBD8" value="com.mbeddr." />
             <property role="BaHAW" value="com.mbeddr.core.expressions.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcH00" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcH01" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcH09" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="d$4Dx" id="44jZT9piBVS" role="d$6nW">
@@ -599,6 +656,13 @@
             <property role="BaBD8" value="com.mbeddr.core.state" />
             <property role="BaHAW" value="com.mbeddr.core.statements.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcH0b" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcH0c" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcH0k" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="1J7L1T" id="44jZT9piBUa" role="1J4apk">
@@ -625,6 +689,13 @@
           <node concept="BaHAS" id="44jZT9ph3XR" role="cpn$n">
             <property role="BaHAW" value="com.mbeddr.core.base.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcHqp" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcHqq" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcHqy" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="d$4Dx" id="44jZT9ph42T" role="d$6nW">
@@ -632,6 +703,13 @@
             <property role="BaBD8" value="com.mbeddr.core." />
             <property role="BaHAW" value="com.mbeddr.core.expressions.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcHq$" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcHq_" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcHqH" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="d$4Dx" id="44jZT9ph40h" role="d$6nW">
@@ -639,6 +717,13 @@
             <property role="BaBD8" value="com.mbeddr.core.s" />
             <property role="BaHAW" value="com.mbeddr.core.statements.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcHqJ" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcHqK" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcHqS" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="rvkaK" id="44jZT9ph3Y6" role="qq9xK">
@@ -1303,6 +1388,13 @@
           <node concept="BaHAS" id="44jZT9piCLw" role="cpn$n">
             <property role="BaHAW" value="com.mbeddr.core.base.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcImc" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcImd" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcIml" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="d$4Dx" id="44jZT9piCLx" role="d$6nW">
@@ -1310,6 +1402,13 @@
             <property role="BaBD8" value="com.mbeddr.core." />
             <property role="BaHAW" value="com.mbeddr.core.expressions.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcImn" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcImo" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcImw" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="d$4Dx" id="44jZT9piCLz" role="d$6nW">
@@ -1317,6 +1416,13 @@
             <property role="BaBD8" value="com.mbeddr.core.s" />
             <property role="BaHAW" value="com.mbeddr.core.statements.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcImy" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcImz" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcImF" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="rvkaK" id="44jZT9piCTL" role="qq9xK">
@@ -1422,6 +1528,13 @@
           <node concept="BaHAS" id="44jZT9piSzY" role="cpn$n">
             <property role="BaHAW" value="com.mbeddr.core.base.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcImH" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcImI" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcImQ" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="d$4Dx" id="44jZT9piSzZ" role="d$6nW">
@@ -1429,6 +1542,13 @@
             <property role="BaBD8" value="com.mbeddr.core." />
             <property role="BaHAW" value="com.mbeddr.core.expressions.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcImS" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcImT" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcIn1" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="d$4Dx" id="44jZT9piS$1" role="d$6nW">
@@ -1436,6 +1556,13 @@
             <property role="BaBD8" value="com.mbeddr.core.s" />
             <property role="BaHAW" value="com.mbeddr.core.statements.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcIn3" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcIn4" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcInc" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="rvkaK" id="44jZT9pvt4r" role="qq9xK">
@@ -1508,6 +1635,13 @@
           <node concept="BaHAS" id="44jZT9piXt9" role="cpn$n">
             <property role="BaHAW" value="com.mbeddr.core.base.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcIne" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcInf" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcInn" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="d$4Dx" id="44jZT9piXta" role="d$6nW">
@@ -1515,6 +1649,13 @@
             <property role="BaBD8" value="com.mbeddr.core." />
             <property role="BaHAW" value="com.mbeddr.core.expressions.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcInp" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcInq" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcIny" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="d$4Dx" id="44jZT9piXtc" role="d$6nW">
@@ -1522,6 +1663,13 @@
             <property role="BaBD8" value="com.mbeddr.core.s" />
             <property role="BaHAW" value="com.mbeddr.core.statements.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcIn$" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcIn_" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcInH" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="rvkaK" id="44jZT9piXth" role="qq9xK">
@@ -1974,6 +2122,13 @@
           <node concept="BaHAS" id="7JF0K7yRLI5" role="cpn$n">
             <property role="BaHAW" value="com.mbeddr.core.base.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcInJ" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcInK" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcInS" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="d$4Dx" id="7JF0K7yRLI6" role="d$6nW">
@@ -1981,6 +2136,13 @@
             <property role="BaBD8" value="com.mbeddr.core." />
             <property role="BaHAW" value="com.mbeddr.core.expressions.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcInU" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcInV" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcIo3" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="d$4Dx" id="7JF0K7yRLI8" role="d$6nW">
@@ -1988,6 +2150,13 @@
             <property role="BaBD8" value="com.mbeddr.core.s" />
             <property role="BaHAW" value="com.mbeddr.core.statements.structure" />
             <property role="BaGAP" value="" />
+            <node concept="7CXmI" id="1mzXH9dcIo5" role="lGtFl">
+              <node concept="29bkU" id="1mzXH9dcIo6" role="7EUXB">
+                <node concept="2PQEqo" id="1mzXH9dcIoe" role="3lydCh">
+                  <ref role="39XzEq" to="tpeq:1eZSuKdSrhT" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="7CXmI" id="7JF0K7yQH6V" role="lGtFl">
