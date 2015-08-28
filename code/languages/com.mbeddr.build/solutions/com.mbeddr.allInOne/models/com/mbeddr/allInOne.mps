@@ -428,6 +428,9 @@
           <node concept="3ygNvl" id="5qO$P$PtnbE" role="39821P">
             <ref role="3ygNvj" to="p6ld:7eF9rfAuAN6" resolve="com.mbeddr.ext.components.zip" />
           </node>
+          <node concept="3ygNvl" id="3U_XxwMRfrK" role="39821P">
+            <ref role="3ygNvj" to="p6ld:vg5qBC2g65" resolve="com.mbeddr.ext.concurrency.zip" />
+          </node>
           <node concept="3ygNvl" id="5qO$P$PtnbI" role="39821P">
             <ref role="3ygNvj" to="p6ld:7eF9rfAu$oq" resolve="com.mbeddr.ext.statemachine.zip" />
           </node>
