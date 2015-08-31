@@ -3841,6 +3841,18 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3clFbF" id="4Bw8ULeOVvl" role="3cqZAp">
+                    <node concept="2OqwBi" id="4Bw8ULeOVvm" role="3clFbG">
+                      <node concept="3cpWsa" id="4Bw8ULeOVvn" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                      </node>
+                      <node concept="TSZUe" id="4Bw8ULeOVvo" role="2OqNvi">
+                        <node concept="Xl_RD" id="4Bw8ULeOVvp" role="25WWJ7">
+                          <property role="Xl_RC" value="--full-slice" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
                 <node concept="2OqwBi" id="2UdJgvCXO0U" role="3clFbw">
                   <node concept="37vLTw" id="2UdJgvCXO0V" role="2Oq$k0">
@@ -10021,7 +10033,7 @@
                 </node>
                 <node concept="TSZUe" id="7Quig7_PFKn" role="2OqNvi">
                   <node concept="Xl_RD" id="7Quig7_PFMN" role="25WWJ7">
-                    <property role="Xl_RC" value="&lt;b&gt;&lt;font color=red&gt;FAIL&lt;/font&gt;&lt;/b&gt;&amp;nbsp;&amp;nbsp;expected CBMC version 5.1" />
+                    <property role="Xl_RC" value="&lt;b&gt;&lt;font color=red&gt;FAIL&lt;/font&gt;&lt;/b&gt;&amp;nbsp;&amp;nbsp;expected CBMC version 5.2" />
                   </node>
                 </node>
               </node>
@@ -10057,7 +10069,7 @@
               <node concept="liA8E" id="7GloF9XTI7D" role="2OqNvi">
                 <ref role="37wK5l" to="e2lb:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
                 <node concept="Xl_RD" id="7GloF9XTI7E" role="37wK5m">
-                  <property role="Xl_RC" value="5.1" />
+                  <property role="Xl_RC" value="5.2" />
                 </node>
               </node>
             </node>
