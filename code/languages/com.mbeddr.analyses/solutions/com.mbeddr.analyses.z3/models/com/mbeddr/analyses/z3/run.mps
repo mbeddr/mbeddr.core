@@ -512,9 +512,7 @@
       <property role="3TUv4t" value="true" />
       <node concept="10P_77" id="2FPaW3Ex6IR" role="1tU5fm" />
       <node concept="3Tm6S6" id="2FPaW3Ex6BX" role="1B3o_S" />
-      <node concept="3clFbT" id="2FPaW3Ex7_1" role="33vP2m">
-        <property role="3clFbU" value="true" />
-      </node>
+      <node concept="3clFbT" id="2FPaW3Ex7_1" role="33vP2m" />
     </node>
     <node concept="2YIFZL" id="2FPaW3Ex7P2" role="jymVt">
       <property role="TrG5h" value="debug" />
@@ -756,16 +754,16 @@
         <node concept="3cpWs8" id="4gj0JzlNVw" role="3cqZAp">
           <node concept="3cpWsn" id="4gj0JzlNVx" role="3cpWs9">
             <property role="TrG5h" value="st" />
-            <node concept="3uibUv" id="4gj0JzlNVy" role="1tU5fm">
-              <ref role="3uigEE" to="y7no:~Status" resolve="Status" />
-            </node>
             <node concept="2OqwBi" id="4gj0JzlNVz" role="33vP2m">
-              <node concept="37vLTw" id="4gj0JzlNV$" role="2Oq$k0">
+              <node concept="37vLTw" id="5uyAK6LePCi" role="2Oq$k0">
                 <ref role="3cqZAo" node="4gj0JzlNVl" resolve="s" />
               </node>
               <node concept="liA8E" id="4gj0JzlNV_" role="2OqNvi">
                 <ref role="37wK5l" to="y7no:~Solver.check():com.microsoft.z3.Status" resolve="check" />
               </node>
+            </node>
+            <node concept="3uibUv" id="4gj0JzlNVy" role="1tU5fm">
+              <ref role="3uigEE" to="y7no:~Status" resolve="Status" />
             </node>
           </node>
         </node>

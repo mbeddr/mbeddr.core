@@ -134,9 +134,6 @@
         <property id="6451706574539345425" name="text" index="NWlVz" />
       </concept>
     </language>
-    <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
-      <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
@@ -598,21 +595,13 @@
                           <ref role="3TsBF5" to="mj1l:1UQ4qqfV3yK" resolve="value" />
                         </node>
                       </node>
-                      <node concept="2YIFZM" id="1x37AUT2lCS" role="37wK5m">
-                        <ref role="37wK5l" node="4gj0JzpkZn" resolve="translateCTypeIntoZ3Sort" />
+                      <node concept="2YIFZM" id="21uobtP053F" role="37wK5m">
+                        <ref role="37wK5l" node="21uobtP04NE" resolve="getSortForNumeral" />
                         <ref role="1Pybhc" node="4gj0JzpkFp" resolve="TypesTranslator" />
-                        <node concept="37vLTw" id="1x37AUT2lS_" role="37wK5m">
+                        <node concept="37vLTw" id="21uobtP053G" role="37wK5m">
                           <ref role="3cqZAo" node="4gj0JzkPCa" resolve="ctx" />
                         </node>
-                        <node concept="10QFUN" id="1x37AUT2nDN" role="37wK5m">
-                          <node concept="2OqwBi" id="1x37AUT2k6K" role="10QFUP">
-                            <node concept="aMNgE" id="1x37AUT2jT3" role="2Oq$k0" />
-                            <node concept="3JvlWi" id="1x37AUT2nr4" role="2OqNvi" />
-                          </node>
-                          <node concept="3Tqbb2" id="1x37AUT2nDO" role="10QFUM">
-                            <ref role="ehGHo" to="tpck:hYa1RjM" resolve="IType" />
-                          </node>
-                        </node>
+                        <node concept="aMNgE" id="21uobtP05lE" role="37wK5m" />
                       </node>
                     </node>
                   </node>
@@ -712,7 +701,44 @@
         <property role="NWlVz" value="Creates a Z3 type and adds the necessary constraints." />
       </node>
     </node>
-    <node concept="2tJIrI" id="4gj0JzpkFz" role="jymVt" />
+    <node concept="2tJIrI" id="21uobtP04QG" role="jymVt" />
+    <node concept="2YIFZL" id="21uobtP04NE" role="jymVt">
+      <property role="TrG5h" value="getSortForNumeral" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="21uobtP04NF" role="3clF47">
+        <node concept="3clFbF" id="21uobtP04NG" role="3cqZAp">
+          <node concept="2OqwBi" id="21uobtP04NH" role="3clFbG">
+            <node concept="37vLTw" id="21uobtP04V1" role="2Oq$k0">
+              <ref role="3cqZAo" node="21uobtP04Ui" resolve="ctx" />
+            </node>
+            <node concept="liA8E" id="21uobtP04NJ" role="2OqNvi">
+              <ref role="37wK5l" to="y7no:~Context.mkIntSort():com.microsoft.z3.IntSort" resolve="mkIntSort" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="21uobtP04NK" role="1B3o_S" />
+      <node concept="3uibUv" id="21uobtP04NL" role="3clF45">
+        <ref role="3uigEE" to="y7no:~Sort" resolve="Sort" />
+      </node>
+      <node concept="37vLTG" id="21uobtP04Ui" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="21uobtP04Uy" role="1tU5fm">
+          <ref role="3uigEE" to="y7no:~Context" resolve="Context" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="21uobtP04NO" role="3clF46">
+        <property role="TrG5h" value="num" />
+        <node concept="3Tqbb2" id="21uobtP04NP" role="1tU5fm">
+          <ref role="ehGHo" to="mj1l:1UQ4qqfUXf_" resolve="NumericLiteral" />
+        </node>
+      </node>
+      <node concept="NWlO9" id="21uobtP04NQ" role="lGtFl">
+        <property role="NWlVz" value="Creates a Z3 type and adds the necessary constraints." />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="4gj0JzpkFq" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="4gj0JzplC$">

@@ -96,6 +96,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -1119,15 +1122,36 @@
           <node concept="3cpWsn" id="4gj0Jzo2zX" role="3cpWs9">
             <property role="TrG5h" value="sat" />
             <node concept="10P_77" id="4gj0Jzo2zY" role="1tU5fm" />
-            <node concept="2YIFZM" id="4gj0Jzo2zZ" role="33vP2m">
-              <ref role="37wK5l" to="nemf:4gj0JzlNUs" resolve="checkSAT" />
-              <ref role="1Pybhc" to="nemf:4gj0JzlNUq" resolve="Z3Checker" />
-              <node concept="37vLTw" id="4gj0Jzo2$0" role="37wK5m">
-                <ref role="3cqZAo" node="4gj0Jzo2zL" resolve="verifCond" />
+            <node concept="3clFbT" id="52nALqIEvSn" role="33vP2m">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="52nALqIEvIp" role="3cqZAp" />
+        <node concept="1Cbqnj" id="52nALqIEvDu" role="3cqZAp">
+          <property role="1Cbqnt" value="singlee consistency" />
+          <node concept="3clFbS" id="52nALqIEvDw" role="1Cbqni">
+            <node concept="9aQIb" id="52nALqIEvIl" role="3cqZAp">
+              <node concept="3clFbS" id="52nALqIEvIm" role="9aQI4">
+                <node concept="3clFbF" id="52nALqIEkRQ" role="3cqZAp">
+                  <node concept="37vLTI" id="52nALqIEkRS" role="3clFbG">
+                    <node concept="2YIFZM" id="4gj0Jzo2zZ" role="37vLTx">
+                      <ref role="37wK5l" to="nemf:4gj0JzlNUs" resolve="checkSAT" />
+                      <ref role="1Pybhc" to="nemf:4gj0JzlNUq" resolve="Z3Checker" />
+                      <node concept="37vLTw" id="4gj0Jzo2$0" role="37wK5m">
+                        <ref role="3cqZAo" node="4gj0Jzo2zL" resolve="verifCond" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="52nALqIEkRW" role="37vLTJ">
+                      <ref role="3cqZAo" node="4gj0Jzo2zX" resolve="sat" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="52nALqIEl4r" role="3cqZAp" />
         <node concept="3clFbJ" id="4gj0Jzo2$1" role="3cqZAp">
           <node concept="3clFbS" id="4gj0Jzo2$2" role="3clFbx">
             <node concept="2MkqsV" id="4gj0Jzo2$3" role="3cqZAp">
