@@ -716,12 +716,14 @@
       </node>
       <node concept="37vLTG" id="e7wQ4XzTOf" role="3clF46">
         <property role="TrG5h" value="output" />
+        <property role="3TUv4t" value="true" />
         <node concept="16syzq" id="e7wQ4X_0GV" role="1tU5fm">
           <ref role="16sUi3" node="e7wQ4XzQvf" resolve="TOutput" />
         </node>
       </node>
       <node concept="37vLTG" id="1b4F2fo87pH" role="3clF46">
         <property role="TrG5h" value="progress" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="1b4F2fo8RAQ" role="1tU5fm">
           <ref role="3uigEE" to="z8de:~ProgressMonitor" resolve="ProgressMonitor" />
         </node>
