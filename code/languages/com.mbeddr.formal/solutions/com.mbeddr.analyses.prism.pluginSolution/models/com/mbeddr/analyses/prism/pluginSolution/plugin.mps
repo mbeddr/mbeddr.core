@@ -12,16 +12,16 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
   </languages>
   <imports>
-    <import index="nx1" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.actionSystem(MPS.IDEA/com.intellij.openapi.actionSystem@java_stub)" />
-    <import index="5xh9" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.actions(MPS.Platform/jetbrains.mps.ide.actions@java_stub)" />
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
+    <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="8e9v" ref="r:a21516a4-23a5-4dc7-826d-37c3fde5c4e3(com.mbeddr.analyses.utils.tools)" />
-    <import index="jwd7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.tools(MPS.Platform/jetbrains.mps.ide.tools@java_stub)" />
+    <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" />
     <import index="dsgp" ref="r:3f06d04b-0a98-4505-b2ca-4dcc6555fddb(com.mbeddr.analyses.prism.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="fjup" ref="r:d9560246-a400-4b05-820e-97ff6dddd2fd(com.mbeddr.analyses.prism.rt.utils)" />
-    <import index="odjd" ref="r:90d0eee3-db73-4cfb-87f3-ebf4f5d81165(ui)" />
-    <import index="xm5f" ref="r:051a08a3-bd4e-4f65-9fad-0d3503acd290(runner)" />
+    <import index="odjd" ref="r:90d0eee3-db73-4cfb-87f3-ebf4f5d81165(com.mbeddr.analyses.prism.rt.ui)" />
+    <import index="xm5f" ref="r:051a08a3-bd4e-4f65-9fad-0d3503acd290(com.mbeddr.analyses.prism.rt.runner)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -191,7 +191,7 @@
     <property role="2uzpH1" value="Verify Model" />
     <node concept="1DS2jV" id="EVDykUCb6r" role="1NuT2Z">
       <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="nx1:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="EVDykUCb6s" role="1oa70y" />
     </node>
     <node concept="2S4$dB" id="EVDykUCksa" role="1NuT2Z">
@@ -307,7 +307,7 @@
                   <ref role="3cqZAo" node="2UdJgvFCNdH" resolve="tool" />
                 </node>
                 <node concept="liA8E" id="7F8$WoW2Ap2" role="2OqNvi">
-                  <ref role="37wK5l" to="jwd7:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
                   <node concept="3clFbT" id="7F8$WoW2Ar5" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -321,7 +321,7 @@
                 <ref role="3cqZAo" node="2UdJgvFCNdH" resolve="tool" />
               </node>
               <node concept="liA8E" id="5TmSwGor88u" role="2OqNvi">
-                <ref role="37wK5l" to="jwd7:~BaseTool.toolIsOpened():boolean" resolve="toolIsOpened" />
+                <ref role="37wK5l" to="71xd:~BaseTool.toolIsOpened():boolean" resolve="toolIsOpened" />
               </node>
             </node>
           </node>
