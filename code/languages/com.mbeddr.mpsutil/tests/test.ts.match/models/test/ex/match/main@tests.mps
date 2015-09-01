@@ -2,9 +2,9 @@
 <model ref="bb2d89dd-a4c7-4821-a0c8-7437446fd8d3/r:3734b8f4-ef8a-46f3-9666-61760fafcc11(test.ex.match/test.ex.match.main)">
   <persistence version="9" />
   <languages>
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -132,9 +132,6 @@
       <concept id="3154253959808591577" name="com.mbeddr.mpsutil.blutil.structure.TypeSubtypeCriterion" flags="ng" index="2u18Yq">
         <child id="3154253959808591578" name="typeNode" index="2u18Yp" />
       </concept>
-      <concept id="17217465924316850" name="com.mbeddr.mpsutil.blutil.structure.FilterOperation" flags="ng" index="2Gpcm3">
-        <reference id="17217465924316851" name="concept" index="2Gpcm2" />
-      </concept>
       <concept id="8025082581146143735" name="com.mbeddr.mpsutil.blutil.structure.MapReduceQuery" flags="ng" index="3heHBx">
         <child id="8025082581147340058" name="targetType" index="3ha9Wc" />
         <child id="8025082581146144258" name="reduce" index="3heHKk" />
@@ -215,6 +212,9 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS" />
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
@@ -1569,8 +1569,10 @@
               <node concept="37vLTw" id="5Hxjapvyybi" role="2Oq$k0">
                 <ref role="3cqZAo" node="XaN6GmzRY" resolve="l" />
               </node>
-              <node concept="2Gpcm3" id="XaN6GmzUJ" role="2OqNvi">
-                <ref role="2Gpcm2" to="tpee:fzcpWvV" resolve="PlusExpression" />
+              <node concept="v3k3i" id="1b4F2fnZTJI" role="2OqNvi">
+                <node concept="chp4Y" id="1b4F2fnZTJJ" role="v3oSu">
+                  <ref role="cht4Q" to="tpee:fzcpWvV" resolve="PlusExpression" />
+                </node>
               </node>
             </node>
           </node>

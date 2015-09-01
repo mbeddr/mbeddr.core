@@ -21,9 +21,6 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
-      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
-        <child id="1145553007750" name="creator" index="2ShVmc" />
-      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -43,9 +40,10 @@
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
     </language>
     <language id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter">
       <concept id="7019451652830285943" name="com.mbeddr.mpsutil.interpreter.structure.ApplicableLanguage" flags="ng" index="d$4Dx">
@@ -60,6 +58,10 @@
       </concept>
       <concept id="8615074351687301435" name="com.mbeddr.mpsutil.interpreter.structure.ConceptEvaluator" flags="ng" index="qq9P1">
         <reference id="8615074351687302216" name="concept" index="qq9wM" />
+      </concept>
+      <concept id="5014408323636499762" name="com.mbeddr.mpsutil.interpreter.structure.CastUpExpression" flags="ng" index="3cyPjZ">
+        <child id="5014408323636499763" name="expression" index="3cyPjY" />
+        <child id="5014408323639909785" name="type" index="3cLPLk" />
       </concept>
       <concept id="5712773029518214110" name="com.mbeddr.mpsutil.interpreter.structure.ConceptEvaluatorBody" flags="ng" index="3dA_Gj">
         <child id="5934114435582613364" name="body" index="3vcmbn" />
@@ -124,19 +126,19 @@
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="yq40:fwMInzpji7" resolve="SizeOfExpr" />
       <node concept="3vetai" id="3VM1o5wbz9t" role="3vQZUl">
-        <node concept="2ShNRf" id="3VM1o5wbz9u" role="3vdyny">
-          <node concept="1pGfFk" id="3VM1o5wbz9v" role="2ShVmc">
-            <ref role="37wK5l" to="e2lb:~Long.&lt;init&gt;(long)" resolve="Long" />
-            <node concept="2OqwBi" id="3VM1o5wbz9w" role="37wK5m">
-              <node concept="2OqwBi" id="3VM1o5wbz9x" role="2Oq$k0">
-                <node concept="oxGPV" id="3VM1o5wbz9y" role="2Oq$k0" />
-                <node concept="3TrEf2" id="3VM1o5wbz9z" role="2OqNvi">
-                  <ref role="3Tt5mk" to="yq40:fwMInzpji9" />
-                </node>
+        <node concept="3cyPjZ" id="4mmKsQ9n6tP" role="3vdyny">
+          <node concept="3uibUv" id="4mmKsQ9n6OM" role="3cLPLk">
+            <ref role="3uigEE" to="e2lb:~Long" resolve="Long" />
+          </node>
+          <node concept="2OqwBi" id="3VM1o5wbz9w" role="3cyPjY">
+            <node concept="2OqwBi" id="3VM1o5wbz9x" role="2Oq$k0">
+              <node concept="oxGPV" id="3VM1o5wbz9y" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3VM1o5wbz9z" role="2OqNvi">
+                <ref role="3Tt5mk" to="yq40:fwMInzpji9" />
               </node>
-              <node concept="2qgKlT" id="3VM1o5wbz9$" role="2OqNvi">
-                <ref role="37wK5l" to="ywuz:61lw97FtLtJ" resolve="getUsedBytes" />
-              </node>
+            </node>
+            <node concept="2qgKlT" id="3VM1o5wbz9$" role="2OqNvi">
+              <ref role="37wK5l" to="ywuz:61lw97FtLtJ" resolve="getUsedBytes" />
             </node>
           </node>
         </node>

@@ -148,12 +148,7 @@
         </node>
         <node concept="3clFbF" id="67iKQ7oh96W" role="3cqZAp">
           <node concept="37vLTI" id="67iKQ7oh9kS" role="3clFbG">
-            <node concept="2OqwBi" id="67iKQ7oh9ru" role="37vLTx">
-              <node concept="13iPFW" id="67iKQ7oh9op" role="2Oq$k0" />
-              <node concept="3TrEf2" id="67iKQ7oh9So" role="2OqNvi">
-                <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" />
-              </node>
-            </node>
+            <node concept="13iPFW" id="67iKQ7oh9op" role="37vLTx" />
             <node concept="2OqwBi" id="67iKQ7oh98w" role="37vLTJ">
               <node concept="37vLTw" id="67iKQ7oh96U" role="2Oq$k0">
                 <ref role="3cqZAo" node="67iKQ7o4INi" resolve="config" />

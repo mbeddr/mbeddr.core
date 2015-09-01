@@ -214,9 +214,7 @@
       </node>
       <node concept="37vLTG" id="4hMIGYxkkPC" role="3clF46">
         <property role="TrG5h" value="task" />
-        <node concept="3Tqbb2" id="4hMIGYxkkRf" role="1tU5fm">
-          <ref role="ehGHo" to="5wll:73Jrkgytd$o" resolve="Task" />
-        </node>
+        <node concept="3Tqbb2" id="4hMIGYxkkRf" role="1tU5fm" />
       </node>
       <node concept="10P_77" id="4hMIGYxkkzV" role="3clF45" />
       <node concept="3Tm1VV" id="4hMIGYxkkzW" role="1B3o_S" />
@@ -231,6 +229,62 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="6fK2cW$Ndxj" role="jymVt" />
+    <node concept="2YIFZL" id="6fK2cW$NdrW" role="jymVt">
+      <property role="TrG5h" value="checkPeriod" />
+      <node concept="37vLTG" id="6fK2cW$NdrX" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="1iwH7U" id="6fK2cW$NdrY" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6fK2cW$NdrZ" role="3clF46">
+        <property role="TrG5h" value="task" />
+        <node concept="3Tqbb2" id="6fK2cW$Nds0" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="6fK2cW$Nds1" role="3clF45" />
+      <node concept="3Tm1VV" id="6fK2cW$Nds2" role="1B3o_S" />
+      <node concept="3clFbS" id="6fK2cW$Nds3" role="3clF47">
+        <node concept="3cpWs8" id="6fK2cW$NjNY" role="3cqZAp">
+          <node concept="3cpWsn" id="6fK2cW$NjNZ" role="3cpWs9">
+            <property role="TrG5h" value="strategy" />
+            <node concept="3Tqbb2" id="6fK2cW$NjO0" role="1tU5fm">
+              <ref role="ehGHo" to="oevp:2dxXn_mziAn" resolve="PThreadsStrategy" />
+            </node>
+            <node concept="1rXfSq" id="6fK2cW$NjO1" role="33vP2m">
+              <ref role="37wK5l" node="4hMIGYxkfqV" resolve="getStrategy" />
+              <node concept="37vLTw" id="6fK2cW$NjO2" role="37wK5m">
+                <ref role="3cqZAo" node="6fK2cW$NdrX" resolve="ctx" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6fK2cW$NjO3" role="3cqZAp">
+          <node concept="3clFbS" id="6fK2cW$NjO4" role="3clFbx">
+            <node concept="3cpWs6" id="6fK2cW$NjO5" role="3cqZAp">
+              <node concept="3clFbT" id="6fK2cW$NjO6" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="6fK2cW$NjO7" role="3clFbw">
+            <node concept="10Nm6u" id="6fK2cW$NjO8" role="3uHU7w" />
+            <node concept="37vLTw" id="6fK2cW$NjO9" role="3uHU7B">
+              <ref role="3cqZAo" node="6fK2cW$NjNZ" resolve="strategy" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6fK2cW$NjOa" role="3cqZAp">
+          <node concept="2OqwBi" id="6fK2cW$NjOb" role="3cqZAk">
+            <node concept="37vLTw" id="6fK2cW$NjOc" role="2Oq$k0">
+              <ref role="3cqZAo" node="6fK2cW$NjNZ" resolve="strategy" />
+            </node>
+            <node concept="3TrcHB" id="6fK2cW$Nx$z" role="2OqNvi">
+              <ref role="3TsBF5" to="oevp:6fK2cW$NuLK" resolve="checkPeriod" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6fK2cW$NxA5" role="jymVt" />
     <node concept="2YIFZL" id="22CI9oabYGu" role="jymVt">
       <property role="TrG5h" value="requiresIterationStartTime" />
       <node concept="37vLTG" id="22CI9oabYGv" role="3clF46">
