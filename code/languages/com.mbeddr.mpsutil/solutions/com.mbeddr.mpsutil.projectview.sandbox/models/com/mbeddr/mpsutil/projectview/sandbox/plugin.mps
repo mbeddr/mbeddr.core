@@ -270,6 +270,30 @@
         </node>
       </node>
     </node>
+    <node concept="14aYG3" id="75_oBQVpcgK" role="14aYEy">
+      <property role="TrG5h" value="modulesPool" />
+      <node concept="Xl_RD" id="75_oBQVpct1" role="14a853">
+        <property role="Xl_RC" value="Modules Pool" />
+      </node>
+      <node concept="10M0yZ" id="75_oBQVpctf" role="3actZa">
+        <ref role="1PxDUh" to="ai1m:~IdeIcons" resolve="IdeIcons" />
+        <ref role="3cqZAo" to="ai1m:~IdeIcons.MODULE_GROUP_CLOSED" resolve="MODULE_GROUP_CLOSED" />
+      </node>
+    </node>
+    <node concept="14aYG3" id="75_oBQVpAeC" role="14aYEy">
+      <property role="TrG5h" value="moduleInPool" />
+      <ref role="3GDMyY" node="7diJr$RuyJf" resolve="module" />
+      <ref role="14a85i" node="75_oBQVpcgK" resolve="modulesPool" />
+      <node concept="2OqwBi" id="75_oBQVpA__" role="14bQOc">
+        <node concept="2YIFZM" id="75_oBQVpA$3" role="2Oq$k0">
+          <ref role="37wK5l" to="cu2c:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
+          <ref role="1Pybhc" to="cu2c:~MPSModuleRepository" resolve="MPSModuleRepository" />
+        </node>
+        <node concept="liA8E" id="75_oBQVpAVp" role="2OqNvi">
+          <ref role="37wK5l" to="cu2c:~MPSModuleRepository.getModules():java.lang.Iterable" resolve="getModules" />
+        </node>
+      </node>
+    </node>
     <node concept="Xl_RD" id="3ZnFyBjuF_j" role="3GFWDq">
       <property role="Xl_RC" value="Test View" />
     </node>
