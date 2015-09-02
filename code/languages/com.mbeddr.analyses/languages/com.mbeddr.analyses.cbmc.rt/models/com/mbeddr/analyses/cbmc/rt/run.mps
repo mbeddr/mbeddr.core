@@ -5,10 +5,10 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
   </languages>
   <imports>
     <import index="8e9v" ref="r:a21516a4-23a5-4dc7-826d-37c3fde5c4e3(com.mbeddr.analyses.utils.tools)" />
@@ -213,7 +213,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -3837,6 +3837,18 @@
                       <node concept="TSZUe" id="2UdJgvCXO0S" role="2OqNvi">
                         <node concept="Xl_RD" id="2UdJgvCXO0T" role="25WWJ7">
                           <property role="Xl_RC" value="--slice-formula" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="4Bw8ULeOVvl" role="3cqZAp">
+                    <node concept="2OqwBi" id="4Bw8ULeOVvm" role="3clFbG">
+                      <node concept="3cpWsa" id="4Bw8ULeOVvn" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                      </node>
+                      <node concept="TSZUe" id="4Bw8ULeOVvo" role="2OqNvi">
+                        <node concept="Xl_RD" id="4Bw8ULeOVvp" role="25WWJ7">
+                          <property role="Xl_RC" value="--full-slice" />
                         </node>
                       </node>
                     </node>
@@ -10021,7 +10033,7 @@
                 </node>
                 <node concept="TSZUe" id="7Quig7_PFKn" role="2OqNvi">
                   <node concept="Xl_RD" id="7Quig7_PFMN" role="25WWJ7">
-                    <property role="Xl_RC" value="&lt;b&gt;&lt;font color=red&gt;FAIL&lt;/font&gt;&lt;/b&gt;&amp;nbsp;&amp;nbsp;expected CBMC version 5.1" />
+                    <property role="Xl_RC" value="&lt;b&gt;&lt;font color=red&gt;FAIL&lt;/font&gt;&lt;/b&gt;&amp;nbsp;&amp;nbsp;expected CBMC version 5.2" />
                   </node>
                 </node>
               </node>
@@ -10057,7 +10069,7 @@
               <node concept="liA8E" id="7GloF9XTI7D" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
                 <node concept="Xl_RD" id="7GloF9XTI7E" role="37wK5m">
-                  <property role="Xl_RC" value="5.1" />
+                  <property role="Xl_RC" value="5.2" />
                 </node>
               </node>
             </node>
