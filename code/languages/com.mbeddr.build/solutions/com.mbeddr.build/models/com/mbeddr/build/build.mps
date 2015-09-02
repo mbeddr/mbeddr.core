@@ -3296,6 +3296,12 @@
             <ref role="3bR37D" to="al5i:$bJ0jguQdz" resolve="com.mbeddr.core.base.pluginSolution" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3D7s6kzEoRz" role="3bR37C">
+          <node concept="3bR9La" id="3D7s6kzEoR$" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="WadEn6CWbr" role="2G$12L">
         <property role="BnDLt" value="true" />

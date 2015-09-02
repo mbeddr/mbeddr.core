@@ -4,8 +4,8 @@
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -128,9 +128,6 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="17217465924316850" name="com.mbeddr.mpsutil.blutil.structure.FilterOperation" flags="ng" index="2Gpcm3">
-        <reference id="17217465924316851" name="concept" index="2Gpcm2" />
-      </concept>
       <concept id="4481811096721038000" name="com.mbeddr.mpsutil.blutil.structure.RefStep" flags="ng" index="1sh8R2">
         <reference id="4481811096721038001" name="refLink" index="1sh8R3" />
         <child id="4481811096721038002" name="target" index="1sh8R0" />
@@ -188,6 +185,9 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -454,8 +454,10 @@
                     <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" />
                   </node>
                 </node>
-                <node concept="2Gpcm3" id="3aTeyG3hplb" role="2OqNvi">
-                  <ref role="2Gpcm2" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
+                <node concept="v3k3i" id="4biM00J7odr" role="2OqNvi">
+                  <node concept="chp4Y" id="4biM00J7ods" role="v3oSu">
+                    <ref role="cht4Q" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
+                  </node>
                 </node>
               </node>
             </node>

@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -102,11 +102,6 @@
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
-    </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="17217465924316850" name="com.mbeddr.mpsutil.blutil.structure.FilterOperation" flags="ng" index="2Gpcm3">
-        <reference id="17217465924316851" name="concept" index="2Gpcm2" />
-      </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="1148934636683" name="jetbrains.mps.lang.constraints.structure.ConceptParameter_ReferentSearchScope_enclosingNode" flags="nn" index="21POm0" />
@@ -422,8 +417,10 @@
                   </node>
                 </node>
               </node>
-              <node concept="2Gpcm3" id="5aNdPeN2N0S" role="2OqNvi">
-                <ref role="2Gpcm2" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
+              <node concept="v3k3i" id="4biM00J7oae" role="2OqNvi">
+                <node concept="chp4Y" id="4biM00J7oaf" role="v3oSu">
+                  <ref role="cht4Q" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
+                </node>
               </node>
             </node>
           </node>
@@ -1148,8 +1145,10 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2Gpcm3" id="3wX8xloeavg" role="2OqNvi">
-                  <ref role="2Gpcm2" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+                <node concept="v3k3i" id="4biM00J7oag" role="2OqNvi">
+                  <node concept="chp4Y" id="4biM00J7oah" role="v3oSu">
+                    <ref role="cht4Q" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+                  </node>
                 </node>
               </node>
               <node concept="3zZkjj" id="3wX8xloeB_n" role="2OqNvi">
@@ -1308,13 +1307,13 @@
                 <node concept="2qgKlT" id="8PQYyuknLC" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
                   <node concept="3TUQnm" id="8PQYyuko4j" role="37wK5m">
-                    <ref role="3TV0OU" to="x27k:8PQYytE9VE" resolve="PragmaDeclaration" />
+                    <ref role="3TV0OU" to="x27k:8PQYytE9VE" resolve="ModifierModuleContent" />
                   </node>
                 </node>
               </node>
               <node concept="v3k3i" id="8PQYyukoS5" role="2OqNvi">
                 <node concept="chp4Y" id="8PQYyukoWo" role="v3oSu">
-                  <ref role="cht4Q" to="x27k:8PQYytE9VE" resolve="PragmaDeclaration" />
+                  <ref role="cht4Q" to="x27k:8PQYytE9VE" resolve="ModifierModuleContent" />
                 </node>
               </node>
             </node>

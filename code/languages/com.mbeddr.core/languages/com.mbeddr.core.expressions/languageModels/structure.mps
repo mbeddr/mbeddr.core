@@ -1449,14 +1449,14 @@
     <property role="3GE5qa" value="expr" />
     <property role="TrG5h" value="ExpressionList" />
     <ref role="1TJDcQ" node="7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="38UNetDMRQf" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
     <node concept="1TJgyj" id="58TcxRGi7E1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expressions" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="38UNetDMRQf" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="UslQeyQ5kC">
@@ -1482,6 +1482,9 @@
     <node concept="PrWs8" id="UslQezI$Gr" role="PrDN$">
       <ref role="PrY4T" to="vs0r:7RHXOmw3XK2" resolve="IRequiresHeaderImport" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="5y_zf_M4pZD">
+    <property role="TrG5h" value="IRestrictConstAndVolatile" />
   </node>
 </model>
 

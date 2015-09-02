@@ -4,8 +4,8 @@
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -129,9 +129,6 @@
       </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="17217465924316850" name="com.mbeddr.mpsutil.blutil.structure.FilterOperation" flags="ng" index="2Gpcm3">
-        <reference id="17217465924316851" name="concept" index="2Gpcm2" />
-      </concept>
       <concept id="734120071946422046" name="com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" flags="ng" index="3kUt_e">
         <child id="734120071946422047" name="expr" index="3kUt_f" />
       </concept>
@@ -219,6 +216,9 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
+      </concept>
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
@@ -1288,8 +1288,10 @@
                   </node>
                 </node>
               </node>
-              <node concept="2Gpcm3" id="4itX8XVR7Qf" role="2OqNvi">
-                <ref role="2Gpcm2" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
+              <node concept="v3k3i" id="4biM00J7odJ" role="2OqNvi">
+                <node concept="chp4Y" id="4biM00J7odK" role="v3oSu">
+                  <ref role="cht4Q" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
+                </node>
               </node>
             </node>
             <node concept="ANE8D" id="4itX8XVRcon" role="2OqNvi" />
@@ -1628,8 +1630,10 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2Gpcm3" id="1M41OHuMSN1" role="2OqNvi">
-                  <ref role="2Gpcm2" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
+                <node concept="v3k3i" id="4biM00J7odL" role="2OqNvi">
+                  <node concept="chp4Y" id="4biM00J7odM" role="v3oSu">
+                    <ref role="cht4Q" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
+                  </node>
                 </node>
               </node>
               <node concept="3goQfb" id="1M41OHuN0qp" role="2OqNvi">
@@ -2221,8 +2225,10 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2Gpcm3" id="1YMKWAVyWgC" role="2OqNvi">
-                  <ref role="2Gpcm2" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
+                <node concept="v3k3i" id="4biM00J7odN" role="2OqNvi">
+                  <node concept="chp4Y" id="4biM00J7odO" role="v3oSu">
+                    <ref role="cht4Q" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
+                  </node>
                 </node>
               </node>
               <node concept="3goQfb" id="1YMKWAVyWgD" role="2OqNvi">

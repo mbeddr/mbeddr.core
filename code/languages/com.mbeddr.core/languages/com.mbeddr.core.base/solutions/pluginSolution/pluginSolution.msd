@@ -49,7 +49,7 @@
   </usedDevKits>
   <languageVersions>
     <language id="c38abce1-4c09-44cb-9ebf-2a764e824bb5" fqName="com.mbeddr.mpsutil.actionsfilter" version="0" />
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" fqName="com.mbeddr.mpsutil.blutil" version="0" />
+    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" fqName="com.mbeddr.mpsutil.blutil" version="1" />
     <language id="58e731a3-6aaa-444a-bf40-801b91c15878" fqName="com.mbeddr.mpsutil.lang.plugin.extensions" version="0" />
     <language id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" fqName="com.mbeddr.mpsutil.refactoring" version="0" />
     <language id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" fqName="com.mbeddr.mpsutil.spreferences" version="0" />

@@ -10,8 +10,8 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -113,11 +113,6 @@
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
-    </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="17217465924316850" name="com.mbeddr.mpsutil.blutil.structure.FilterOperation" flags="ng" index="2Gpcm3">
-        <reference id="17217465924316851" name="concept" index="2Gpcm2" />
-      </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5323740605968447022" name="com.mbeddr.core.buildconfig.structure.DesktopPlatform" flags="ng" index="2AWWZL">
@@ -227,6 +222,9 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -928,8 +926,10 @@
                             <ref role="3TtcxE" to="51wr:4o9sgv8R$fb" />
                           </node>
                         </node>
-                        <node concept="2Gpcm3" id="XaN6GmWPZ" role="2OqNvi">
-                          <ref role="2Gpcm2" to="51wr:4o9sgv8QoKi" resolve="Executable" />
+                        <node concept="v3k3i" id="4biM00J7o6e" role="2OqNvi">
+                          <node concept="chp4Y" id="4biM00J7o6f" role="v3oSu">
+                            <ref role="cht4Q" to="51wr:4o9sgv8QoKi" resolve="Executable" />
+                          </node>
                         </node>
                       </node>
                       <node concept="3goQfb" id="4oh1JoZBOni" role="2OqNvi">
@@ -1094,8 +1094,10 @@
                             <ref role="3TtcxE" to="51wr:4o9sgv8R$fb" />
                           </node>
                         </node>
-                        <node concept="2Gpcm3" id="30nrkhNTMv1" role="2OqNvi">
-                          <ref role="2Gpcm2" to="51wr:4o9sgv8QoKi" resolve="Executable" />
+                        <node concept="v3k3i" id="4biM00J7o6g" role="2OqNvi">
+                          <node concept="chp4Y" id="4biM00J7o6h" role="v3oSu">
+                            <ref role="cht4Q" to="51wr:4o9sgv8QoKi" resolve="Executable" />
+                          </node>
                         </node>
                       </node>
                       <node concept="3goQfb" id="30nrkhNTMv2" role="2OqNvi">
@@ -1411,8 +1413,10 @@
                       <ref role="3TtcxE" to="51wr:4o9sgv8R$fb" />
                     </node>
                   </node>
-                  <node concept="2Gpcm3" id="XaN6GmZXv" role="2OqNvi">
-                    <ref role="2Gpcm2" to="51wr:4o9sgv8QoKi" resolve="Executable" />
+                  <node concept="v3k3i" id="4biM00J7o6i" role="2OqNvi">
+                    <node concept="chp4Y" id="4biM00J7o6j" role="v3oSu">
+                      <ref role="cht4Q" to="51wr:4o9sgv8QoKi" resolve="Executable" />
+                    </node>
                   </node>
                 </node>
                 <node concept="2HwmR7" id="2kkumeGQB0g" role="2OqNvi">
@@ -1454,8 +1458,10 @@
                         <ref role="3TtcxE" to="51wr:4o9sgv8R$fb" />
                       </node>
                     </node>
-                    <node concept="2Gpcm3" id="XaN6GmZXk" role="2OqNvi">
-                      <ref role="2Gpcm2" to="51wr:4o9sgv8QoKi" resolve="Executable" />
+                    <node concept="v3k3i" id="4biM00J7o6k" role="2OqNvi">
+                      <node concept="chp4Y" id="4biM00J7o6l" role="v3oSu">
+                        <ref role="cht4Q" to="51wr:4o9sgv8QoKi" resolve="Executable" />
+                      </node>
                     </node>
                   </node>
                   <node concept="3zZkjj" id="4oh1JoZ_Q1C" role="2OqNvi">
@@ -1515,8 +1521,10 @@
                           <ref role="3TtcxE" to="51wr:4o9sgv8R$fb" />
                         </node>
                       </node>
-                      <node concept="2Gpcm3" id="XaN6GmZXq" role="2OqNvi">
-                        <ref role="2Gpcm2" to="51wr:4o9sgv8QoKi" resolve="Executable" />
+                      <node concept="v3k3i" id="4biM00J7o6m" role="2OqNvi">
+                        <node concept="chp4Y" id="4biM00J7o6n" role="v3oSu">
+                          <ref role="cht4Q" to="51wr:4o9sgv8QoKi" resolve="Executable" />
+                        </node>
                       </node>
                     </node>
                     <node concept="3zZkjj" id="Dp4TemBOsg" role="2OqNvi">
@@ -1937,8 +1945,10 @@
                 <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" />
               </node>
             </node>
-            <node concept="2Gpcm3" id="XaN6GmZYL" role="2OqNvi">
-              <ref role="2Gpcm2" to="vs0r:4qSf1u208SI" resolve="IConfigurationItemWithProcessor" />
+            <node concept="v3k3i" id="4biM00J7o6o" role="2OqNvi">
+              <node concept="chp4Y" id="4biM00J7o6p" role="v3oSu">
+                <ref role="cht4Q" to="vs0r:4qSf1u208SI" resolve="IConfigurationItemWithProcessor" />
+              </node>
             </node>
           </node>
           <node concept="3clFbS" id="4qSf1u20kk4" role="2LFqv$">
