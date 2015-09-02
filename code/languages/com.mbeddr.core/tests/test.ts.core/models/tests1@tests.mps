@@ -310,9 +310,6 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="7787579437361950085" name="com.mbeddr.core.base.structure.SuppressWarnings" flags="ng" index="242QuT">
-        <child id="5213617122587433763" name="kinds" index="yVqo5" />
-      </concept>
       <concept id="7024921229556133803" name="com.mbeddr.core.base.structure.ICommentedCode" flags="ng" index="vHEs8">
         <child id="7024921229556133804" name="commentedCode" index="vHEsf" />
       </concept>
@@ -5658,7 +5655,6 @@
           <node concept="7OXhh" id="knfPudfS2U" role="7EUXB" />
         </node>
         <node concept="2P5Msn" id="7NFOBxm4qR0" role="lGtFl">
-          <node concept="BCzjf" id="7NFOBxm4rmR" role="yVqo5" />
           <node concept="2P5Msh" id="79g_UwK0GUR" role="2P5Msk" />
         </node>
       </node>

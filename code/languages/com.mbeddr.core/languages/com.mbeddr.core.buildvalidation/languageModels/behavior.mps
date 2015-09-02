@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -188,9 +188,6 @@
         <property id="5667201763537739900" name="label" index="sxT66" />
         <child id="5667201763537739902" name="expr" index="sxT64" />
       </concept>
-      <concept id="17217465924316850" name="com.mbeddr.mpsutil.blutil.structure.FilterOperation" flags="ng" index="2Gpcm3">
-        <reference id="17217465924316851" name="concept" index="2Gpcm2" />
-      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -199,7 +196,13 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
       </concept>
@@ -376,7 +379,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="7c_RIoBEJNf" role="2OqNvi">
-              <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="makeAbsolute" />
+              <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
             </node>
           </node>
         </node>
@@ -461,8 +464,10 @@
                       <ref role="3TtcxE" to="3ior:6qcrfIJFfrM" />
                     </node>
                   </node>
-                  <node concept="2Gpcm3" id="5IpIYYkEhUJ" role="2OqNvi">
-                    <ref role="2Gpcm2" to="kdzh:1jjYQYSgYJt" resolve="BuildMps_Group" />
+                  <node concept="v3k3i" id="4biM00J7o9A" role="2OqNvi">
+                    <node concept="chp4Y" id="4biM00J7o9B" role="v3oSu">
+                      <ref role="cht4Q" to="kdzh:1jjYQYSgYJt" resolve="BuildMps_Group" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3goQfb" id="5IpIYYkEhUK" role="2OqNvi">
@@ -496,8 +501,10 @@
                       <ref role="3TtcxE" to="3ior:6qcrfIJFfrM" />
                     </node>
                   </node>
-                  <node concept="2Gpcm3" id="5IpIYYkEhUY" role="2OqNvi">
-                    <ref role="2Gpcm2" to="kdzh:hS0KzPONfF" resolve="BuildMps_AbstractModule" />
+                  <node concept="v3k3i" id="4biM00J7o9C" role="2OqNvi">
+                    <node concept="chp4Y" id="4biM00J7o9D" role="v3oSu">
+                      <ref role="cht4Q" to="kdzh:hS0KzPONfF" resolve="BuildMps_AbstractModule" />
+                    </node>
                   </node>
                 </node>
               </node>
