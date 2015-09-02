@@ -333,6 +333,19 @@
           </node>
           <node concept="2iRfu4" id="7diJr$RvhaA" role="2iSdaV" />
         </node>
+        <node concept="3EZMnI" id="75_oBQVlc5T" role="3EZMnx">
+          <node concept="VPM3Z" id="75_oBQVlc5U" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3F0ifn" id="75_oBQVlc5V" role="3EZMnx">
+            <property role="3F0ifm" value="icon:" />
+          </node>
+          <node concept="3F1sOY" id="75_oBQVlc5W" role="3EZMnx">
+            <property role="1$x2rV" value="default" />
+            <ref role="1NtTu8" to="d04j:75_oBQVlbQR" />
+          </node>
+          <node concept="2iRfu4" id="75_oBQVlc5X" role="2iSdaV" />
+        </node>
         <node concept="2EHx9g" id="7diJr$RvhaB" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="7diJr$RvhaC" role="3EZMnx">

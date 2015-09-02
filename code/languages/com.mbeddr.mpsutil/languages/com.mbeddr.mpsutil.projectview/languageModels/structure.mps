@@ -86,6 +86,11 @@
       <property role="20kJfa" value="type" />
       <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
     </node>
+    <node concept="1TJgyj" id="75_oBQVlbQR" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="icon" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
     <node concept="PrWs8" id="7diJr$Rurz1" role="PzmwI">
       <ref role="PrY4T" node="7diJr$Rulsw" resolve="IViewElement" />
     </node>

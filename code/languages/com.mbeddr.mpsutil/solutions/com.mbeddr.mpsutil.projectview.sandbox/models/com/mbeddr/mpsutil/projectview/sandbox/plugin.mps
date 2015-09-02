@@ -11,7 +11,9 @@
     <import index="88zw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" />
     <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
     <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" />
-    <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" implicit="true" />
+    <import index="ai1m" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.icons(MPS.Platform/jetbrains.mps.ide.icons@java_stub)" />
+    <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
+    <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -22,6 +24,15 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
@@ -45,6 +56,7 @@
       <concept id="8309912865649284794" name="com.mbeddr.mpsutil.projectview.structure.DynamicChildElement" flags="ng" index="14aYG3">
         <reference id="4600337039046510231" name="extends" index="3GDMyY" />
         <child id="8309912865649578165" name="query" index="14bQOc" />
+        <child id="8171045391086960055" name="icon" index="3actZa" />
         <child id="4600337039045802034" name="type" index="3GGxor" />
       </concept>
       <concept id="8309912865649284702" name="com.mbeddr.mpsutil.projectview.structure.ProjectView" flags="ng" index="14aYJB">
@@ -89,6 +101,10 @@
       <node concept="3uibUv" id="3ZnFyBjqnM2" role="3GGxor">
         <ref role="3uigEE" to="jrbx:~MPSProject" resolve="MPSProject" />
       </node>
+      <node concept="10M0yZ" id="75_oBQVoDRc" role="3actZa">
+        <ref role="1PxDUh" to="ai1m:~IdeIcons" resolve="IdeIcons" />
+        <ref role="3cqZAo" to="ai1m:~IdeIcons.PROJECT_ICON" resolve="PROJECT_ICON" />
+      </node>
     </node>
     <node concept="14aYG3" id="7diJr$RuyJf" role="14aYEy">
       <property role="TrG5h" value="module" />
@@ -111,6 +127,13 @@
       </node>
       <node concept="3uibUv" id="3ZnFyBjrOUL" role="3GGxor">
         <ref role="3uigEE" to="88zw:~SModule" resolve="SModule" />
+      </node>
+      <node concept="2YIFZM" id="75_oBQVoEGq" role="3actZa">
+        <ref role="37wK5l" to="ai1m:~IconManager.getIconFor(org.jetbrains.mps.openapi.module.SModule):javax.swing.Icon" resolve="getIconFor" />
+        <ref role="1Pybhc" to="ai1m:~IconManager" resolve="IconManager" />
+        <node concept="14b0Wr" id="75_oBQVoEIR" role="37wK5m">
+          <ref role="14b0Uw" node="7diJr$RuyJf" resolve="module" />
+        </node>
       </node>
     </node>
     <node concept="14aYG3" id="7diJr$Rw$m0" role="14aYEy">
@@ -135,6 +158,13 @@
       <node concept="3uibUv" id="3ZnFyBjrHwn" role="3GGxor">
         <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
       </node>
+      <node concept="2YIFZM" id="75_oBQVoE_p" role="3actZa">
+        <ref role="37wK5l" to="ai1m:~IconManager.getIconFor(org.jetbrains.mps.openapi.model.SModel):javax.swing.Icon" resolve="getIconFor" />
+        <ref role="1Pybhc" to="ai1m:~IconManager" resolve="IconManager" />
+        <node concept="14b0Wr" id="75_oBQVoEBe" role="37wK5m">
+          <ref role="14b0Uw" node="7diJr$Rw$m0" resolve="model" />
+        </node>
+      </node>
     </node>
     <node concept="14aYG3" id="3ZnFyBjojbx" role="14aYEy">
       <property role="TrG5h" value="node" />
@@ -149,6 +179,13 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="3ZnFyBjs8pX" role="3GGxor" />
+      <node concept="2YIFZM" id="75_oBQVoEOW" role="3actZa">
+        <ref role="37wK5l" to="ai1m:~IconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
+        <ref role="1Pybhc" to="ai1m:~IconManager" resolve="IconManager" />
+        <node concept="14b0Wr" id="75_oBQVoEUC" role="37wK5m">
+          <ref role="14b0Uw" node="3ZnFyBjojbx" resolve="node" />
+        </node>
+      </node>
     </node>
     <node concept="14aYG3" id="7diJr$Rx11N" role="14aYEy">
       <property role="TrG5h" value="rootNode" />
