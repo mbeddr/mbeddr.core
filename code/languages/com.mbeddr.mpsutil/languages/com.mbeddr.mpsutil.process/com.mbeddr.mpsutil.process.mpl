@@ -61,22 +61,7 @@
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
         <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
       </languageVersions>
-      <mapping-priorities>
-        <mapping-priority-rule kind="before_or_together">
-          <greater-priority-mapping>
-            <generator generatorUID="ba465623-565c-4b52-8186-c1c94c3473ff(com.mbeddr.mpsutil.process#4724180912012566652)" />
-            <external-mapping>
-              <mapping-node modelUID="r:9ab45c0f-00bd-48bd-b230-479e451ac0d5(com.mbeddr.mpsutil.process.generator.template.main@generator)" nodeID="4671234082064375750" />
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="ba465623-565c-4b52-8186-c1c94c3473ff(com.mbeddr.mpsutil.process#4724180912012566652)" />
-            <external-mapping>
-              <mapping-node modelUID="r:9ab45c0f-00bd-48bd-b230-479e451ac0d5(com.mbeddr.mpsutil.process.generator.template.main@generator)" nodeID="4724180912012566653" />
-            </external-mapping>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
-      </mapping-priorities>
+      <mapping-priorities />
     </generator>
   </generators>
   <sourcePath />

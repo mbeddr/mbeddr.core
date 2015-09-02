@@ -28,6 +28,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="tp4h" ref="r:00000000-0000-4000-0000-011c8959036d(jetbrains.mps.baseLanguage.classifiers.behavior)" />
+    <import index="5ptl" ref="r:9ab45c0f-00bd-48bd-b230-479e451ac0d5(com.mbeddr.mpsutil.process.generator.template.main@generator)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
@@ -2504,10 +2505,6 @@
       <node concept="2tJIrI" id="rF8Sb8$PmN" role="jymVt" />
       <node concept="3Tm1VV" id="43jzEnWa5i7" role="1B3o_S" />
       <node concept="raruj" id="43jzEnWa5i_" role="lGtFl" />
-      <node concept="3y4P_M" id="6JByj2Cyuo5" role="lGtFl">
-        <ref role="3y4P_e" node="6JByj2Cymkr" resolve="class2Step_Export" />
-        <ref role="2rW$FS" node="6JByj2CuKDG" resolve="class2Process" />
-      </node>
       <node concept="17Uvod" id="43jzEnWa5j8" role="lGtFl">
         <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
         <property role="2qtEX9" value="name" />
@@ -2587,6 +2584,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3y4P_M" id="5fqMIVnztMI" role="lGtFl">
+        <ref role="3y4P_e" node="6JByj2Cymkr" resolve="class2Step_Export" />
       </node>
     </node>
   </node>
