@@ -678,6 +678,14 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="75_oBQVqnv2" role="3cqZAp">
+          <node concept="1rXfSq" id="75_oBQVqnv0" role="3clFbG">
+            <ref role="37wK5l" to="dbrf:~JTree.setRootVisible(boolean):void" resolve="setRootVisible" />
+            <node concept="3clFbT" id="75_oBQVqnLo" role="37wK5m">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7N6jGOB4uHl" role="3cqZAp">
           <node concept="1rXfSq" id="7N6jGOB4uHj" role="3clFbG">
             <ref role="37wK5l" to="mlq0:~MPSTree.rebuildLater():void" resolve="rebuildLater" />
@@ -2605,6 +2613,9 @@
                         <node concept="37vLTw" id="75_oBQVkEQd" role="37wK5m">
                           <ref role="3cqZAo" node="VPgi8e_kex" resolve="mpsProject" />
                         </node>
+                        <node concept="37vLTw" id="75_oBQVqRTo" role="37wK5m">
+                          <ref role="3cqZAo" node="75_oBQVeMgI" resolve="parentElement" />
+                        </node>
                         <node concept="16syzq" id="75_oBQVkEup" role="1pMfVU">
                           <ref role="16sUi3" node="3ZnFyBjvEXr" resolve="E" />
                         </node>
@@ -3425,6 +3436,16 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="75_oBQVqItQ" role="3cqZAp">
+          <node concept="37vLTI" id="75_oBQVqIvV" role="3clFbG">
+            <node concept="37vLTw" id="75_oBQVqIwH" role="37vLTx">
+              <ref role="3cqZAo" node="75_oBQVqIqe" resolve="parent" />
+            </node>
+            <node concept="37vLTw" id="75_oBQVqItO" role="37vLTJ">
+              <ref role="3cqZAo" node="3ZnFyBjwIPH" resolve="myParent" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="37vLTG" id="3ZnFyBjwIGG" role="3clF46">
         <property role="TrG5h" value="object" />
@@ -3442,6 +3463,12 @@
         <property role="TrG5h" value="project" />
         <node concept="3uibUv" id="XZKPulBpDF" role="1tU5fm">
           <ref role="3uigEE" to="vsqj:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="75_oBQVqIqe" role="3clF46">
+        <property role="TrG5h" value="parent" />
+        <node concept="3uibUv" id="75_oBQVqIrr" role="1tU5fm">
+          <ref role="3uigEE" node="3ZnFyBjwIpN" resolve="ViewElement" />
         </node>
       </node>
     </node>
