@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="com.mbeddr.mpsutil.projectview#8411785813236466884" uuid="a3049271-b3dd-4434-9b83-30c34057d5df">
+    <generator name="" generatorUID="com.mbeddr.mpsutil.projectview#8411785813236466884" uuid="a3049271-b3dd-4434-9b83-30c34057d5df">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -43,7 +43,22 @@
         <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="0" />
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
       </languageVersions>
-      <mapping-priorities />
+      <mapping-priorities>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="a3049271-b3dd-4434-9b83-30c34057d5df(com.mbeddr.mpsutil.projectview#8411785813236466884)" />
+            <external-mapping>
+              <mapping-node modelUID="r:171c7ad0-7a53-4e4c-aa18-283db7b4c4ee(com.mbeddr.mpsutil.projectview.generator.template.main@generator)" nodeID="650292813706070010" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="a3049271-b3dd-4434-9b83-30c34057d5df(com.mbeddr.mpsutil.projectview#8411785813236466884)" />
+            <external-mapping>
+              <mapping-node modelUID="r:171c7ad0-7a53-4e4c-aa18-283db7b4c4ee(com.mbeddr.mpsutil.projectview.generator.template.main@generator)" nodeID="8411785813236466885" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+      </mapping-priorities>
     </generator>
   </generators>
   <sourcePath />

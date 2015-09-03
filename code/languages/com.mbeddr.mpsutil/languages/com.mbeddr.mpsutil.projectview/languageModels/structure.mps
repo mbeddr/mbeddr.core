@@ -118,6 +118,12 @@
       <property role="20kJfa" value="isApplicable" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="$6jtTwUXNq" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="childTreeNodes" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7diJr$RulqU" resolve="TreeNodeElement" />
+    </node>
     <node concept="PrWs8" id="7diJr$Rurz1" role="PzmwI">
       <ref role="PrY4T" node="7diJr$Rulsw" resolve="IViewElement" />
     </node>
