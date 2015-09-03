@@ -129,74 +129,6 @@
       <concept id="1180964022718" name="jetbrains.mps.baseLanguage.collections.structure.ConcatOperation" flags="nn" index="3QWeyG" />
     </language>
   </registry>
-  <node concept="13h7C7" id="7diJr$Rwfzl">
-    <ref role="13h7C2" to="d04j:7diJr$Rusim" resolve="AbstractChildElement" />
-    <node concept="13hLZK" id="7diJr$Rwfzm" role="13h7CW">
-      <node concept="3clFbS" id="7diJr$Rwfzn" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="7diJr$RwiBf" role="13h7CS">
-      <property role="TrG5h" value="getAncestors" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="7diJr$RwhYl" resolve="getAncestors" />
-      <node concept="3Tm1VV" id="7diJr$RwiBg" role="1B3o_S" />
-      <node concept="3clFbS" id="7diJr$RwiBo" role="3clF47">
-        <node concept="3clFbF" id="7diJr$RwfCc" role="3cqZAp">
-          <node concept="3K4zz7" id="7diJr$RwgjN" role="3clFbG">
-            <node concept="2OqwBi" id="7diJr$RwkHS" role="3K4GZi">
-              <node concept="2ShNRf" id="7diJr$RwjAi" role="2Oq$k0">
-                <node concept="2HTt$P" id="7diJr$RwjH7" role="2ShVmc">
-                  <node concept="3Tqbb2" id="7diJr$Rwk4R" role="2HTBi0">
-                    <ref role="ehGHo" to="d04j:7diJr$Rulsw" resolve="IViewElement" />
-                  </node>
-                  <node concept="2OqwBi" id="7diJr$RwkcC" role="2HTEbv">
-                    <node concept="13iPFW" id="7diJr$Rwk9k" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="7diJr$Rwk$8" role="2OqNvi">
-                      <ref role="3Tt5mk" to="d04j:7diJr$RuzNF" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3QWeyG" id="7diJr$RwllO" role="2OqNvi">
-                <node concept="2OqwBi" id="7diJr$Rwm5f" role="576Qk">
-                  <node concept="2OqwBi" id="7diJr$RwlsN" role="2Oq$k0">
-                    <node concept="13iPFW" id="7diJr$RwloG" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="7diJr$RwlQa" role="2OqNvi">
-                      <ref role="3Tt5mk" to="d04j:7diJr$RuzNF" />
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="7diJr$Rwmpj" role="2OqNvi">
-                    <ref role="37wK5l" node="7diJr$RwhYl" resolve="getAncestors" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2ShNRf" id="7diJr$Rwglp" role="3K4E3e">
-              <node concept="kMnCb" id="7diJr$RwgrO" role="2ShVmc">
-                <node concept="3Tqbb2" id="7diJr$Rwgs3" role="kMuH3">
-                  <ref role="ehGHo" to="d04j:7diJr$Rulsw" resolve="IViewElement" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbC" id="7diJr$Rwgdq" role="3K4Cdx">
-              <node concept="10Nm6u" id="7diJr$Rwggs" role="3uHU7w" />
-              <node concept="2OqwBi" id="7diJr$RwfEx" role="3uHU7B">
-                <node concept="13iPFW" id="7diJr$RwfCb" role="2Oq$k0" />
-                <node concept="3TrEf2" id="7diJr$Rwg03" role="2OqNvi">
-                  <ref role="3Tt5mk" to="d04j:7diJr$RuzNF" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="A3Dl8" id="7diJr$RwiBp" role="3clF45">
-        <node concept="3Tqbb2" id="7diJr$RwiBq" role="A3Ik2">
-          <ref role="ehGHo" to="d04j:7diJr$Rulsw" resolve="IViewElement" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="13h7C7" id="7diJr$RwhVW">
     <ref role="13h7C2" to="d04j:7diJr$Rulsw" resolve="IViewElement" />
     <node concept="13i0hz" id="7diJr$RwhYl" role="13h7CS">
@@ -255,7 +187,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3ZnFyBjt72k">
-    <ref role="13h7C2" to="d04j:7diJr$RulqU" resolve="DynamicChildElement" />
+    <ref role="13h7C2" to="d04j:7diJr$RulqU" resolve="TreeNodeElement" />
     <node concept="13hLZK" id="3ZnFyBjt72l" role="13h7CW">
       <node concept="3clFbS" id="3ZnFyBjt72m" role="2VODD2" />
     </node>
@@ -358,6 +290,68 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7diJr$RwiBf" role="13h7CS">
+      <property role="TrG5h" value="getAncestors" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="7diJr$RwhYl" resolve="getAncestors" />
+      <node concept="3Tm1VV" id="7diJr$RwiBg" role="1B3o_S" />
+      <node concept="3clFbS" id="7diJr$RwiBo" role="3clF47">
+        <node concept="3clFbF" id="7diJr$RwfCc" role="3cqZAp">
+          <node concept="3K4zz7" id="7diJr$RwgjN" role="3clFbG">
+            <node concept="2OqwBi" id="7diJr$RwkHS" role="3K4GZi">
+              <node concept="2ShNRf" id="7diJr$RwjAi" role="2Oq$k0">
+                <node concept="2HTt$P" id="7diJr$RwjH7" role="2ShVmc">
+                  <node concept="3Tqbb2" id="7diJr$Rwk4R" role="2HTBi0">
+                    <ref role="ehGHo" to="d04j:7diJr$Rulsw" resolve="IViewElement" />
+                  </node>
+                  <node concept="2OqwBi" id="7diJr$RwkcC" role="2HTEbv">
+                    <node concept="13iPFW" id="7diJr$Rwk9k" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="7diJr$Rwk$8" role="2OqNvi">
+                      <ref role="3Tt5mk" to="d04j:7diJr$RuzNF" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3QWeyG" id="7diJr$RwllO" role="2OqNvi">
+                <node concept="2OqwBi" id="7diJr$Rwm5f" role="576Qk">
+                  <node concept="2OqwBi" id="7diJr$RwlsN" role="2Oq$k0">
+                    <node concept="13iPFW" id="7diJr$RwloG" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="7diJr$RwlQa" role="2OqNvi">
+                      <ref role="3Tt5mk" to="d04j:7diJr$RuzNF" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="7diJr$Rwmpj" role="2OqNvi">
+                    <ref role="37wK5l" node="7diJr$RwhYl" resolve="getAncestors" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2ShNRf" id="7diJr$Rwglp" role="3K4E3e">
+              <node concept="kMnCb" id="7diJr$RwgrO" role="2ShVmc">
+                <node concept="3Tqbb2" id="7diJr$Rwgs3" role="kMuH3">
+                  <ref role="ehGHo" to="d04j:7diJr$Rulsw" resolve="IViewElement" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="7diJr$Rwgdq" role="3K4Cdx">
+              <node concept="10Nm6u" id="7diJr$Rwggs" role="3uHU7w" />
+              <node concept="2OqwBi" id="7diJr$RwfEx" role="3uHU7B">
+                <node concept="13iPFW" id="7diJr$RwfCb" role="2Oq$k0" />
+                <node concept="3TrEf2" id="7diJr$Rwg03" role="2OqNvi">
+                  <ref role="3Tt5mk" to="d04j:7diJr$RuzNF" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="7diJr$RwiBp" role="3clF45">
+        <node concept="3Tqbb2" id="7diJr$RwiBq" role="A3Ik2">
+          <ref role="ehGHo" to="d04j:7diJr$Rulsw" resolve="IViewElement" />
         </node>
       </node>
     </node>
