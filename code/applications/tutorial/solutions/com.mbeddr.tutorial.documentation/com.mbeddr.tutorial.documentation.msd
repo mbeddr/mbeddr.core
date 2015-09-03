@@ -17,17 +17,6 @@
     <dependency reexport="false">c0c8a343-7b6c-4182-b027-e640e8d3bed3(com.mbeddr.tutorial.sample.buildProject)</dependency>
     <dependency reexport="false">b87ff58e-456e-4d51-9ed6-4090f4e7b51c(mbeddr.tutorial.main)</dependency>
   </dependencies>
-  <usedLanguages>
-    <usedLanguage>c9a5ade7-5f6a-41ae-a703-5d94a418cf4f(com.mbeddr.analyses.cbmc.components)</usedLanguage>
-    <usedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</usedLanguage>
-    <usedLanguage>97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)</usedLanguage>
-    <usedLanguage>bd640b8f-4be4-42b6-8dc0-2c94d1ddf606(com.mbeddr.ext.components.gen_nomw)</usedLanguage>
-    <usedLanguage>0d04a6cc-773e-4069-b9b0-11884b2ff1c8(com.mbeddr.ext.units)</usedLanguage>
-    <usedLanguage>c788b046-2019-4656-8b60-8bb9bbb177b5(com.mbeddr.mpsutil.review)</usedLanguage>
-    <usedLanguage>7a060fae-09e0-4372-be36-6696d6554c0e(com.mbeddr.mpsutil.review.annotation)</usedLanguage>
-    <usedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</usedLanguage>
-    <usedLanguage>e06345c7-da82-4f8b-bd44-1425fe158640(com.mbeddr.doc.meta)</usedLanguage>
-  </usedLanguages>
   <usedDevKits>
     <usedDevKit>315c0ec2-38ff-4e9c-9d15-fd0848b5f062(com.mbeddr.analyses.components)</usedDevKit>
     <usedDevKit>0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)</usedDevKit>

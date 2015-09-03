@@ -9,12 +9,6 @@
   <dependencies>
     <dependency reexport="false">~_PreferencesModule#com.mbeddr.core.__spreferences.PlatformTemplates(com.mbeddr.core.__spreferences.PlatformTemplates)</dependency>
   </dependencies>
-  <usedLanguages>
-    <usedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</usedLanguage>
-    <usedLanguage>f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)</usedLanguage>
-    <usedLanguage>2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)</usedLanguage>
-    <usedLanguage>c1c2a88a-323c-4605-a37d-9ab77a2ccbd2(com.mbeddr.mpsutil.suppresswarning)</usedLanguage>
-  </usedLanguages>
   <usedDevKits>
     <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
   </usedDevKits>

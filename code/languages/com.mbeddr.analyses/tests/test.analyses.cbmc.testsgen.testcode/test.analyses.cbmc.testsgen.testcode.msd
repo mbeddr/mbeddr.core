@@ -6,9 +6,6 @@
     </modelRoot>
   </models>
   <sourcePath />
-  <usedLanguages>
-    <usedLanguage>66fa30ae-4b73-4f2b-b199-9a072902ec06(com.mbeddr.analyses.cbmc.testsgen)</usedLanguage>
-  </usedLanguages>
   <usedDevKits>
     <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
     <usedDevKit>0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)</usedDevKit>
