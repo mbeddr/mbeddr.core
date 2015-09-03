@@ -155,12 +155,6 @@
       <concept id="5100083648679219672" name="com.mbeddr.core.debug.test.structure.ISteppingCommand" flags="ng" index="3qyFbm">
         <property id="610689949604310287" name="times" index="2qnp9" />
       </concept>
-      <concept id="8924761790438870478" name="com.mbeddr.core.debug.test.structure.ValidationReference" flags="ng" index="1rNp9u">
-        <reference id="8924761790438870480" name="validation" index="1rNp90" />
-      </concept>
-      <concept id="8924761790438756110" name="com.mbeddr.core.debug.test.structure.ValidationDeclaration" flags="ng" index="1rNX2u">
-        <child id="8924761790438855800" name="validations" index="1rNkJC" />
-      </concept>
       <concept id="105850086903379387" name="com.mbeddr.core.debug.test.structure.SteppingConfiguration" flags="ng" index="3savIG">
         <child id="105850086903379390" name="steppingElements" index="3savID" />
       </concept>
@@ -573,25 +567,6 @@
     <node concept="3qy1PH" id="2vLpZ7wjVcw" role="3qy1PE">
       <ref role="30ajXG" node="75iUP$Mbqly" resolve="GswitchTest" />
     </node>
-    <node concept="1rNX2u" id="2vLpZ7wjVcD" role="1zJi$$">
-      <property role="TrG5h" value="1stGSwitch" />
-      <node concept="1l46Ie" id="2vLpZ7wjVcE" role="1rNkJC">
-        <node concept="1IjokO" id="5YGS28LWmRO" role="1l4ezG">
-          <property role="TrG5h" value="a" />
-        </node>
-      </node>
-      <node concept="1l6n2J" id="2vLpZ7wjVcG" role="1rNkJC">
-        <node concept="1l6lqP" id="2vLpZ7wjVcL" role="1vsUJ9">
-          <property role="1l6lqL" value="doSomething" />
-        </node>
-        <node concept="1l6lqP" id="2vLpZ7wjVcJ" role="1vsUJ9">
-          <property role="1l6lqL" value="gswitchWithLiterals" />
-        </node>
-        <node concept="1l6lqP" id="2vLpZ7wjVcH" role="1vsUJ9">
-          <property role="1l6lqL" value="main" />
-        </node>
-      </node>
-    </node>
     <node concept="3sgmnF" id="2vLpZ7wjVcC" role="1zJi$$" />
     <node concept="3scrou" id="2vLpZ7wjVct" role="1zJi$$">
       <property role="TrG5h" value="suspendOnStmntWithGSwitch" />
@@ -608,8 +583,21 @@
             <ref role="3cQ7K8" node="2vLpZ7wjWK_" resolve="gSwitch" />
           </node>
         </node>
-        <node concept="1rNp9u" id="2vLpZ7wjVcN" role="3F5Y$9">
-          <ref role="1rNp90" node="2vLpZ7wjVcD" resolve="1stGSwitch" />
+        <node concept="1l46Ie" id="6k2tVLo$FSo" role="3F5Y$9">
+          <node concept="1IjokO" id="6k2tVLo$FSp" role="1l4ezG">
+            <property role="TrG5h" value="a" />
+          </node>
+        </node>
+        <node concept="1l6n2J" id="6k2tVLo$FSq" role="3F5Y$9">
+          <node concept="1l6lqP" id="6k2tVLo$FSr" role="1vsUJ9">
+            <property role="1l6lqL" value="doSomething" />
+          </node>
+          <node concept="1l6lqP" id="6k2tVLo$FSs" role="1vsUJ9">
+            <property role="1l6lqL" value="gswitchWithLiterals" />
+          </node>
+          <node concept="1l6lqP" id="6k2tVLo$FSt" role="1vsUJ9">
+            <property role="1l6lqL" value="main" />
+          </node>
         </node>
       </node>
     </node>
@@ -634,8 +622,21 @@
             <ref role="3cQ7K8" node="2vLpZ7wjVc5" resolve="1stCase" />
           </node>
         </node>
-        <node concept="1rNp9u" id="2vLpZ7wjVG0" role="3F5Y$9">
-          <ref role="1rNp90" node="2vLpZ7wjVcD" resolve="1stGSwitch" />
+        <node concept="1l46Ie" id="2vLpZ7wjVcE" role="3F5Y$9">
+          <node concept="1IjokO" id="5YGS28LWmRO" role="1l4ezG">
+            <property role="TrG5h" value="a" />
+          </node>
+        </node>
+        <node concept="1l6n2J" id="2vLpZ7wjVcG" role="3F5Y$9">
+          <node concept="1l6lqP" id="2vLpZ7wjVcL" role="1vsUJ9">
+            <property role="1l6lqL" value="doSomething" />
+          </node>
+          <node concept="1l6lqP" id="2vLpZ7wjVcJ" role="1vsUJ9">
+            <property role="1l6lqL" value="gswitchWithLiterals" />
+          </node>
+          <node concept="1l6lqP" id="2vLpZ7wjVcH" role="1vsUJ9">
+            <property role="1l6lqL" value="main" />
+          </node>
         </node>
       </node>
     </node>
@@ -659,8 +660,21 @@
             <ref role="3cQ7K8" node="2vLpZ7wjVci" resolve="5thCase" />
           </node>
         </node>
-        <node concept="1rNp9u" id="2vLpZ7wjVGb" role="3F5Y$9">
-          <ref role="1rNp90" node="2vLpZ7wjVcD" resolve="1stGSwitch" />
+        <node concept="1l46Ie" id="6k2tVLo$FTE" role="3F5Y$9">
+          <node concept="1IjokO" id="6k2tVLo$FTF" role="1l4ezG">
+            <property role="TrG5h" value="a" />
+          </node>
+        </node>
+        <node concept="1l6n2J" id="6k2tVLo$FTG" role="3F5Y$9">
+          <node concept="1l6lqP" id="6k2tVLo$FTH" role="1vsUJ9">
+            <property role="1l6lqL" value="doSomething" />
+          </node>
+          <node concept="1l6lqP" id="6k2tVLo$FTI" role="1vsUJ9">
+            <property role="1l6lqL" value="gswitchWithLiterals" />
+          </node>
+          <node concept="1l6lqP" id="6k2tVLo$FTJ" role="1vsUJ9">
+            <property role="1l6lqL" value="main" />
+          </node>
         </node>
       </node>
     </node>
@@ -684,8 +698,21 @@
             <ref role="3cQ7K8" node="2vLpZ7wjVcj" resolve="defCase" />
           </node>
         </node>
-        <node concept="1rNp9u" id="2vLpZ7wjVGm" role="3F5Y$9">
-          <ref role="1rNp90" node="2vLpZ7wjVcD" resolve="1stGSwitch" />
+        <node concept="1l46Ie" id="6k2tVLo$FTS" role="3F5Y$9">
+          <node concept="1IjokO" id="6k2tVLo$FTT" role="1l4ezG">
+            <property role="TrG5h" value="a" />
+          </node>
+        </node>
+        <node concept="1l6n2J" id="6k2tVLo$FTU" role="3F5Y$9">
+          <node concept="1l6lqP" id="6k2tVLo$FTV" role="1vsUJ9">
+            <property role="1l6lqL" value="doSomething" />
+          </node>
+          <node concept="1l6lqP" id="6k2tVLo$FTW" role="1vsUJ9">
+            <property role="1l6lqL" value="gswitchWithLiterals" />
+          </node>
+          <node concept="1l6lqP" id="6k2tVLo$FTX" role="1vsUJ9">
+            <property role="1l6lqL" value="main" />
+          </node>
         </node>
       </node>
     </node>
