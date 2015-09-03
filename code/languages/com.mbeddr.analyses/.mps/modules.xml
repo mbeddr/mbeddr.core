@@ -24,6 +24,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.lantest/com.mbeddr.analyses.lantest.mpl" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.stan/com.mbeddr.analyses.stan.mpl" folder="z3" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.utils/utils.msd" folder="base" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.z3.testing/com.mbeddr.analyses.z3.testing.mpl" folder="z3" />
       <modulePath path="$PROJECT_DIR$/languages/testing/com.mbeddr.analyses.cbmc.testing.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.acsl.cbmc.rt/com.mbeddr.analyses.acsl.cbmc.rt.msd" folder="acsl" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.components.pluginSolution/com.mbeddr.analyses.cbmc.components.pluginSolution.msd" folder="cbmc" />

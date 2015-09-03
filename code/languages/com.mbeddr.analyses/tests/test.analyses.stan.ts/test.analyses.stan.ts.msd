@@ -8,17 +8,25 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">e0dc4b58-6648-4617-8514-abfaa6d77043(com.mbeddr.analyses.stan)</dependency>
+    <dependency reexport="false">8577ff67-8aae-422e-b831-9d78b9a8045a(com.mbeddr.analyses.z3.testing)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)</usedLanguage>
     <usedLanguage>e0dc4b58-6648-4617-8514-abfaa6d77043(com.mbeddr.analyses.stan)</usedLanguage>
     <usedLanguage>8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)</usedLanguage>
+    <usedLanguage>8577ff67-8aae-422e-b831-9d78b9a8045a(com.mbeddr.analyses.z3.testing)</usedLanguage>
+    <usedLanguage>2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</usedLanguage>
+    <usedLanguage>6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</usedLanguage>
+    <usedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</usedLanguage>
+    <usedLanguage>2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)</usedLanguage>
+    <usedLanguage>a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
   </usedDevKits>
   <languageVersions>
     <language id="e0dc4b58-6648-4617-8514-abfaa6d77043" fqName="com.mbeddr.analyses.stan" version="0" />
+    <language id="8577ff67-8aae-422e-b831-9d78b9a8045a" fqName="com.mbeddr.analyses.z3.testing" version="-1" />
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" fqName="com.mbeddr.core.base" version="0" />
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" fqName="com.mbeddr.core.buildconfig" version="0" />
     <language id="b2da2e1a-b542-47f5-9be0-4dc21efe74a4" fqName="com.mbeddr.core.checks" version="0" />

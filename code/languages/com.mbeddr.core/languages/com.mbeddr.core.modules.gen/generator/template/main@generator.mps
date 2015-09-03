@@ -2,12 +2,12 @@
 <model ref="r:5f62df63-885f-42f0-80d6-e13ad6c51489(com.mbeddr.core.modules.gen.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
-    <use id="eba1dbb3-0bc4-4ce9-a184-05c9135353be" name="jetbrains.mps.lang.traceable.operations" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="eba1dbb3-0bc4-4ce9-a184-05c9135353be" name="jetbrains.mps.lang.traceable.operations" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
@@ -1551,15 +1551,15 @@
           <node concept="3clFbS" id="1$2SSyz_smb" role="2VODD2">
             <node concept="3clFbF" id="1$2SSyz_smh" role="3cqZAp">
               <node concept="2OqwBi" id="1$2SSyzAa6D" role="3clFbG">
+                <node concept="v3k3i" id="6jvaevO$09w" role="2OqNvi">
+                  <node concept="chp4Y" id="6jvaevO$09x" role="v3oSu">
+                    <ref role="cht4Q" to="x27k:5_l8w1EmTvw" resolve="FunctionPrototype" />
+                  </node>
+                </node>
                 <node concept="2OqwBi" id="1$2SSyz_YBm" role="2Oq$k0">
                   <node concept="30H73N" id="1$2SSyz_XXT" role="2Oq$k0" />
                   <node concept="2qgKlT" id="1$2SSyzA7jb" role="2OqNvi">
                     <ref role="37wK5l" to="qd6m:5DwX9xlFNJe" resolve="flattenedContents" />
-                  </node>
-                </node>
-                <node concept="v3k3i" id="6jvaevO$09w" role="2OqNvi">
-                  <node concept="chp4Y" id="6jvaevO$09x" role="v3oSu">
-                    <ref role="cht4Q" to="x27k:5_l8w1EmTvw" resolve="FunctionPrototype" />
                   </node>
                 </node>
               </node>
@@ -3590,12 +3590,6 @@
         <node concept="3cpWs8" id="3_DQCSSJNuE" role="3cqZAp">
           <node concept="3cpWsn" id="3_DQCSSJNuF" role="3cpWs9">
             <property role="TrG5h" value="copiedNodes" />
-            <node concept="3uibUv" id="3_DQCSSJNuG" role="1tU5fm">
-              <ref role="3uigEE" to="33ny:~List" resolve="List" />
-              <node concept="3uibUv" id="3_DQCSSJNuH" role="11_B2D">
-                <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-              </node>
-            </node>
             <node concept="2OqwBi" id="6jvaevOzJkq" role="33vP2m">
               <node concept="1iwH7S" id="6jvaevOzHaW" role="2Oq$k0" />
               <node concept="2QPPRi" id="6jvaevOzKmv" role="2OqNvi">
@@ -3605,6 +3599,12 @@
                   </node>
                   <node concept="ANE8D" id="1LMPBujOFV6" role="2OqNvi" />
                 </node>
+              </node>
+            </node>
+            <node concept="3uibUv" id="3_DQCSSJNuG" role="1tU5fm">
+              <ref role="3uigEE" to="33ny:~List" resolve="List" />
+              <node concept="3uibUv" id="3_DQCSSJNuH" role="11_B2D">
+                <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
               </node>
             </node>
           </node>

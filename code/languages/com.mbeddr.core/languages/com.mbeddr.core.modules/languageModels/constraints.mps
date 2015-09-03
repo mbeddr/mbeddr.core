@@ -2,9 +2,9 @@
 <model ref="r:dfbb97c1-bcef-47dd-a044-a2503489b0dd(com.mbeddr.core.modules.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -71,7 +71,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -1307,13 +1307,13 @@
                 <node concept="2qgKlT" id="8PQYyuknLC" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
                   <node concept="3TUQnm" id="8PQYyuko4j" role="37wK5m">
-                    <ref role="3TV0OU" to="x27k:8PQYytE9VE" resolve="PragmaDeclaration" />
+                    <ref role="3TV0OU" to="x27k:8PQYytE9VE" resolve="ModifierModuleContent" />
                   </node>
                 </node>
               </node>
               <node concept="v3k3i" id="8PQYyukoS5" role="2OqNvi">
                 <node concept="chp4Y" id="8PQYyukoWo" role="v3oSu">
-                  <ref role="cht4Q" to="x27k:8PQYytE9VE" resolve="PragmaDeclaration" />
+                  <ref role="cht4Q" to="x27k:8PQYytE9VE" resolve="ModifierModuleContent" />
                 </node>
               </node>
             </node>

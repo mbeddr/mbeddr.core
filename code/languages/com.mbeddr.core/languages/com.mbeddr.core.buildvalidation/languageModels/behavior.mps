@@ -2,7 +2,7 @@
 <model ref="r:a81d40ef-e0ca-4e82-b235-4b068157ec1c(com.mbeddr.core.buildvalidation.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -456,17 +456,17 @@
             <node concept="2OqwBi" id="5IpIYYkEhUD" role="33vP2m">
               <node concept="2OqwBi" id="5IpIYYkEhUE" role="2Oq$k0">
                 <node concept="2OqwBi" id="5IpIYYkEhUF" role="2Oq$k0">
+                  <node concept="v3k3i" id="6jvaevO$098" role="2OqNvi">
+                    <node concept="chp4Y" id="6jvaevO$099" role="v3oSu">
+                      <ref role="cht4Q" to="kdzh:1jjYQYSgYJt" resolve="BuildMps_Group" />
+                    </node>
+                  </node>
                   <node concept="2OqwBi" id="5IpIYYkEhUG" role="2Oq$k0">
                     <node concept="37vLTw" id="5IpIYYkEhUH" role="2Oq$k0">
                       <ref role="3cqZAo" node="5IpIYYkqmWm" resolve="bp" />
                     </node>
                     <node concept="3Tsc0h" id="5IpIYYkEhUI" role="2OqNvi">
                       <ref role="3TtcxE" to="3ior:6qcrfIJFfrM" />
-                    </node>
-                  </node>
-                  <node concept="v3k3i" id="6jvaevO$098" role="2OqNvi">
-                    <node concept="chp4Y" id="6jvaevO$099" role="v3oSu">
-                      <ref role="cht4Q" to="kdzh:1jjYQYSgYJt" resolve="BuildMps_Group" />
                     </node>
                   </node>
                 </node>
@@ -493,17 +493,17 @@
               </node>
               <node concept="4Tj9Z" id="5IpIYYkEhUT" role="2OqNvi">
                 <node concept="2OqwBi" id="5IpIYYkEhUU" role="576Qk">
+                  <node concept="v3k3i" id="6jvaevO$09a" role="2OqNvi">
+                    <node concept="chp4Y" id="6jvaevO$09b" role="v3oSu">
+                      <ref role="cht4Q" to="kdzh:hS0KzPONfF" resolve="BuildMps_AbstractModule" />
+                    </node>
+                  </node>
                   <node concept="2OqwBi" id="5IpIYYkEhUV" role="2Oq$k0">
                     <node concept="37vLTw" id="5IpIYYkEhUW" role="2Oq$k0">
                       <ref role="3cqZAo" node="5IpIYYkqmWm" resolve="bp" />
                     </node>
                     <node concept="3Tsc0h" id="5IpIYYkEhUX" role="2OqNvi">
                       <ref role="3TtcxE" to="3ior:6qcrfIJFfrM" />
-                    </node>
-                  </node>
-                  <node concept="v3k3i" id="6jvaevO$09a" role="2OqNvi">
-                    <node concept="chp4Y" id="6jvaevO$09b" role="v3oSu">
-                      <ref role="cht4Q" to="kdzh:hS0KzPONfF" resolve="BuildMps_AbstractModule" />
                     </node>
                   </node>
                 </node>

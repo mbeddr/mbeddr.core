@@ -2,15 +2,15 @@
 <model ref="r:0c020a2a-0fae-4359-90ba-63fdf45caa94(tests.ts.core.tests1@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="5e845763-f4ca-40bf-b31f-74e236ffed75" name="com.mbeddr.mpsutil.spreferences.context" version="-1" />
-    <use id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="5e845763-f4ca-40bf-b31f-74e236ffed75" name="com.mbeddr.mpsutil.spreferences.context" version="0" />
+    <use id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -90,7 +90,7 @@
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
@@ -5655,7 +5655,6 @@
           <node concept="7OXhh" id="knfPudfS2U" role="7EUXB" />
         </node>
         <node concept="2P5Msn" id="7NFOBxm4qR0" role="lGtFl">
-          <node concept="BCzjf" id="7NFOBxm4rmR" role="2P5Msk" />
           <node concept="2P5Msh" id="79g_UwK0GUR" role="2P5Msk" />
         </node>
       </node>
@@ -12449,6 +12448,19 @@
             </node>
             <node concept="3XISUE" id="4o71CbiuEHc" role="3XIRFZ" />
             <node concept="c0U19" id="3b1kLoLMm4c" role="3XIRFZ">
+              <node concept="3XIRFW" id="4o71CbiuBCP" role="c0U17">
+                <node concept="1_9egQ" id="4o71CbiuBCU" role="3XIRFZ">
+                  <node concept="EaqyJ" id="4o71CbiuBCV" role="1_9egR" />
+                </node>
+              </node>
+              <node concept="3TlM44" id="3b1kLoLMm4k" role="c0U16">
+                <node concept="1AkAhK" id="3b1kLoLMm4n" role="3TlMhJ">
+                  <ref role="1AkAhZ" node="16hhYved92Z" resolve="GREEN" />
+                </node>
+                <node concept="3ZVu4v" id="53$tGqOmGs0" role="3TlMhI">
+                  <ref role="3ZVs_2" node="1MqLrloibDx" resolve="c3" />
+                </node>
+              </node>
               <node concept="gg_gk" id="67XR4gQ7x4w" role="gg_kh">
                 <node concept="3XIRFW" id="67XR4gQ7x4x" role="gg_gl" />
                 <node concept="3TlM44" id="3b1kLoLMoyB" role="gg_gt">
@@ -12461,19 +12473,6 @@
                       <node concept="1TM$A" id="3b1kLoLMoyG" role="7EUXB" />
                     </node>
                   </node>
-                </node>
-              </node>
-              <node concept="3XIRFW" id="4o71CbiuBCP" role="c0U17">
-                <node concept="1_9egQ" id="4o71CbiuBCU" role="3XIRFZ">
-                  <node concept="EaqyJ" id="4o71CbiuBCV" role="1_9egR" />
-                </node>
-              </node>
-              <node concept="3TlM44" id="3b1kLoLMm4k" role="c0U16">
-                <node concept="1AkAhK" id="3b1kLoLMm4n" role="3TlMhJ">
-                  <ref role="1AkAhZ" node="16hhYved92Z" resolve="GREEN" />
-                </node>
-                <node concept="3ZVu4v" id="53$tGqOmGs0" role="3TlMhI">
-                  <ref role="3ZVs_2" node="1MqLrloibDx" resolve="c3" />
                 </node>
               </node>
             </node>

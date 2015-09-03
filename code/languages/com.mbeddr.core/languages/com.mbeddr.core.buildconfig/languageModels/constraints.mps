@@ -2,10 +2,10 @@
 <model ref="r:225ac65b-5c58-4d25-a31d-83d4ec0739e0(com.mbeddr.core.buildconfig.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
-    <use id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences" version="-1" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -144,6 +144,11 @@
         <node concept="3clFbS" id="2kkumeGQQ0t" role="2VODD2">
           <node concept="3clFbF" id="2kkumeGQQ0u" role="3cqZAp">
             <node concept="2OqwBi" id="2kkumeGQQ0L" role="3clFbG">
+              <node concept="v3k3i" id="6jvaevO$08m" role="2OqNvi">
+                <node concept="chp4Y" id="6jvaevO$08n" role="v3oSu">
+                  <ref role="cht4Q" to="51wr:2kkumeGQcAy" resolve="StaticLibrary" />
+                </node>
+              </node>
               <node concept="2OqwBi" id="2kkumeGQQ0G" role="2Oq$k0">
                 <node concept="2OqwBi" id="4nKop3QVFSD" role="2Oq$k0">
                   <node concept="1Q6Npb" id="2kkumeGQQ0v" role="2Oq$k0" />
@@ -153,11 +158,6 @@
                 </node>
                 <node concept="13MTOL" id="2kkumeGQQ0K" role="2OqNvi">
                   <ref role="13MTZf" to="51wr:4o9sgv8R$fb" />
-                </node>
-              </node>
-              <node concept="v3k3i" id="6jvaevO$08m" role="2OqNvi">
-                <node concept="chp4Y" id="6jvaevO$08n" role="v3oSu">
-                  <ref role="cht4Q" to="51wr:2kkumeGQcAy" resolve="StaticLibrary" />
                 </node>
               </node>
             </node>
