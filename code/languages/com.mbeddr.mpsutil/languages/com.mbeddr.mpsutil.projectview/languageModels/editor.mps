@@ -63,6 +63,12 @@
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
+        <property id="1088613081987" name="vertical" index="1QpmdY" />
+        <child id="1145918517974" name="alternationCondition" index="3e4ffs" />
+        <child id="1088612958265" name="ifTrueCellModel" index="1QoS34" />
+        <child id="1088612973955" name="ifFalseCellModel" index="1QoVPY" />
+      </concept>
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -191,8 +197,8 @@
             <node concept="3clFbF" id="3ZnFyBjrQ7J" role="3cqZAp">
               <node concept="2OqwBi" id="3ZnFyBjuGeZ" role="3clFbG">
                 <node concept="pncrf" id="3ZnFyBjuG9w" role="2Oq$k0" />
-                <node concept="2qgKlT" id="3ZnFyBjuGKi" role="2OqNvi">
-                  <ref role="37wK5l" to="os9e:3ZnFyBjuFOh" resolve="isAbstract" />
+                <node concept="2qgKlT" id="75_oBQVYmpt" role="2OqNvi">
+                  <ref role="37wK5l" to="os9e:75_oBQVYfcU" resolve="isAbstract" />
                 </node>
               </node>
             </node>
@@ -202,8 +208,26 @@
       <node concept="3F0A7n" id="7diJr$Rvhal" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
-      <node concept="3F0ifn" id="3ZnFyBjs8Al" role="3EZMnx">
-        <property role="3F0ifm" value="extends" />
+      <node concept="1QoScp" id="75_oBQVYn50" role="3EZMnx">
+        <property role="1QpmdY" value="true" />
+        <node concept="3F0ifn" id="75_oBQVYn52" role="1QoS34">
+          <property role="3F0ifm" value="overrides" />
+        </node>
+        <node concept="pkWqt" id="75_oBQVYn53" role="3e4ffs">
+          <node concept="3clFbS" id="75_oBQVYn55" role="2VODD2">
+            <node concept="3clFbF" id="75_oBQVYngF" role="3cqZAp">
+              <node concept="2OqwBi" id="75_oBQVYnlv" role="3clFbG">
+                <node concept="pncrf" id="75_oBQVYngE" role="2Oq$k0" />
+                <node concept="2qgKlT" id="75_oBQVYnJE" role="2OqNvi">
+                  <ref role="37wK5l" to="os9e:75_oBQVYcbH" resolve="isOverride" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3F0ifn" id="75_oBQVYnct" role="1QoVPY">
+          <property role="3F0ifm" value="extends" />
+        </node>
       </node>
       <node concept="1iCGBv" id="3ZnFyBjs8N$" role="3EZMnx">
         <ref role="1NtTu8" to="d04j:3ZnFyBjs8qn" />

@@ -84,7 +84,7 @@
     <node concept="1TJgyj" id="7diJr$RuzNF" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="parent" />
-      <ref role="20lvS9" node="7diJr$Rulsw" resolve="IViewElement" />
+      <ref role="20lvS9" node="7diJr$RulqU" resolve="TreeNodeElement" />
     </node>
     <node concept="1TJgyj" id="7diJr$Rvt2P" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
