@@ -370,6 +370,9 @@
     <property role="34LRSv" value="!" />
     <property role="R4oN_" value="logical not" />
     <ref role="1TJDcQ" node="6AJWN7GdLOh" resolve="UnaryLogicalExpression" />
+    <node concept="PrWs8" id="7NLP0MNzfc1" role="PzmwI">
+      <ref role="PrY4T" node="6mzZsELnskC" resolve="IBinaryLike" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5IYyAOzBgHk">
     <property role="TrG5h" value="CastExpression" />
@@ -488,7 +491,6 @@
     <property role="3GE5qa" value="expr.arith.unary" />
     <property role="TrG5h" value="PostDecrementExpression" />
     <property role="R4oN_" value="post decrement" />
-    <property role="34LRSv" value="--" />
     <ref role="1TJDcQ" node="6cGRlFfI5au" resolve="UnaryPrePosModificationExpression" />
     <node concept="PrWs8" id="5HxjapwgqN5" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -498,8 +500,10 @@
     <property role="3GE5qa" value="expr.arith.unary" />
     <property role="TrG5h" value="PreDecrementExpression" />
     <property role="R4oN_" value="pre decrement" />
-    <property role="34LRSv" value="--" />
     <ref role="1TJDcQ" node="6cGRlFfI5au" resolve="UnaryPrePosModificationExpression" />
+    <node concept="PrWs8" id="D40B170til" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3sKsqTsppde">
     <property role="3GE5qa" value="expr.arith.unary" />
@@ -578,7 +582,6 @@
     <property role="3GE5qa" value="expr.arith.unary" />
     <property role="TrG5h" value="PostIncrementExpression" />
     <property role="R4oN_" value="post increment" />
-    <property role="34LRSv" value="++" />
     <ref role="1TJDcQ" node="6cGRlFfI5au" resolve="UnaryPrePosModificationExpression" />
     <node concept="PrWs8" id="5HxjapwgqN8" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -588,8 +591,10 @@
     <property role="3GE5qa" value="expr.arith.unary" />
     <property role="TrG5h" value="PreIncrementExpression" />
     <property role="R4oN_" value="pre increment" />
-    <property role="34LRSv" value="++" />
     <ref role="1TJDcQ" node="6cGRlFfI5au" resolve="UnaryPrePosModificationExpression" />
+    <node concept="PrWs8" id="D40B170tip" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3MUk0N5szEG">
     <property role="3GE5qa" value="expr.arith.unary" />
@@ -1256,6 +1261,9 @@
     <node concept="PrWs8" id="6mzZsELoNWT" role="PzmwI">
       <ref role="PrY4T" node="6mzZsELnskC" resolve="IBinaryLike" />
     </node>
+    <node concept="PrWs8" id="D40B170fEk" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6ydhAa1uf6q">
     <property role="3GE5qa" value="expr" />
@@ -1441,14 +1449,14 @@
     <property role="3GE5qa" value="expr" />
     <property role="TrG5h" value="ExpressionList" />
     <ref role="1TJDcQ" node="7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="38UNetDMRQf" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
     <node concept="1TJgyj" id="58TcxRGi7E1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expressions" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="38UNetDMRQf" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="UslQeyQ5kC">
@@ -1474,6 +1482,9 @@
     <node concept="PrWs8" id="UslQezI$Gr" role="PrDN$">
       <ref role="PrY4T" to="vs0r:7RHXOmw3XK2" resolve="IRequiresHeaderImport" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="5y_zf_M4pZD">
+    <property role="TrG5h" value="IRestrictConstAndVolatile" />
   </node>
 </model>
 

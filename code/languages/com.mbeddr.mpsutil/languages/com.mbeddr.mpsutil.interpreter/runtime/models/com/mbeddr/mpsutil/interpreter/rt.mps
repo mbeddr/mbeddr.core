@@ -26,6 +26,7 @@
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
     <import index="cu2c" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
     <import index="rl4q" ref="r:72bc3a97-6a66-47f6-8cf2-f88ab2ada651(com.mbeddr.mpsutil.common.model)" />
+    <import index="epq1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.math(JDK/java.math@java_stub)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -3567,6 +3568,100 @@
                       </node>
                       <node concept="liA8E" id="M6L5HuRMYy" role="2OqNvi">
                         <ref role="37wK5l" to="e2lb:~Number.byteValue():byte" resolve="byteValue" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3eNFk2" id="7riAdT3LVyF" role="3eNLev">
+                <node concept="3clFbC" id="7riAdT3LWDB" role="3eO9$A">
+                  <node concept="3VsKOn" id="7riAdT3LX6N" role="3uHU7w">
+                    <ref role="3VsUkX" to="epq1:~BigInteger" resolve="BigInteger" />
+                  </node>
+                  <node concept="37vLTw" id="7riAdT3LWdM" role="3uHU7B">
+                    <ref role="3cqZAo" node="M6L5HuRfeb" resolve="targetType" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="7riAdT3LVyH" role="3eOfB_">
+                  <node concept="3clFbJ" id="7riAdT3LYbS" role="3cqZAp">
+                    <node concept="3clFbS" id="7riAdT3LYbU" role="3clFbx">
+                      <node concept="3cpWs6" id="7riAdT3LYMj" role="3cqZAp">
+                        <node concept="37vLTw" id="7riAdT3M1Zx" role="3cqZAk">
+                          <ref role="3cqZAo" node="M6L5HuRefT" resolve="input" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2ZW3vV" id="7riAdT3LY_W" role="3clFbw">
+                      <node concept="3uibUv" id="7riAdT3LYEO" role="2ZW6by">
+                        <ref role="3uigEE" to="epq1:~BigInteger" resolve="BigInteger" />
+                      </node>
+                      <node concept="37vLTw" id="7riAdT3M1Xc" role="2ZW6bz">
+                        <ref role="3cqZAo" node="M6L5HuRefT" resolve="input" />
+                      </node>
+                    </node>
+                    <node concept="9aQIb" id="7riAdT3LZmt" role="9aQIa">
+                      <node concept="3clFbS" id="7riAdT3LZmu" role="9aQI4">
+                        <node concept="3cpWs6" id="7riAdT3LZE2" role="3cqZAp">
+                          <node concept="2YIFZM" id="7riAdT3M0iv" role="3cqZAk">
+                            <ref role="37wK5l" to="epq1:~BigInteger.valueOf(long):java.math.BigInteger" resolve="valueOf" />
+                            <ref role="1Pybhc" to="epq1:~BigInteger" resolve="BigInteger" />
+                            <node concept="2OqwBi" id="7riAdT3M0S8" role="37wK5m">
+                              <node concept="37vLTw" id="7riAdT3M0Bb" role="2Oq$k0">
+                                <ref role="3cqZAo" node="M6L5HuRguY" resolve="numberInput" />
+                              </node>
+                              <node concept="liA8E" id="7riAdT3M1k$" role="2OqNvi">
+                                <ref role="37wK5l" to="e2lb:~Number.longValue():long" resolve="longValue" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3eNFk2" id="7riAdT3M2dn" role="3eNLev">
+                <node concept="3clFbC" id="7riAdT3M2AC" role="3eO9$A">
+                  <node concept="3VsKOn" id="7riAdT3M2Fa" role="3uHU7w">
+                    <ref role="3VsUkX" to="epq1:~BigDecimal" resolve="BigDecimal" />
+                  </node>
+                  <node concept="37vLTw" id="7riAdT3M2uA" role="3uHU7B">
+                    <ref role="3cqZAo" node="M6L5HuRfeb" resolve="targetType" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="7riAdT3M2dp" role="3eOfB_">
+                  <node concept="3clFbJ" id="7riAdT3M2Hk" role="3cqZAp">
+                    <node concept="3clFbS" id="7riAdT3M2Hl" role="3clFbx">
+                      <node concept="3cpWs6" id="7riAdT3M2P5" role="3cqZAp">
+                        <node concept="37vLTw" id="7riAdT3M2R2" role="3cqZAk">
+                          <ref role="3cqZAo" node="M6L5HuRefT" resolve="input" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2ZW3vV" id="7riAdT3M2Lg" role="3clFbw">
+                      <node concept="3uibUv" id="7riAdT3M2N3" role="2ZW6by">
+                        <ref role="3uigEE" to="epq1:~BigDecimal" resolve="BigDecimal" />
+                      </node>
+                      <node concept="37vLTw" id="7riAdT3M2Jm" role="2ZW6bz">
+                        <ref role="3cqZAo" node="M6L5HuRefT" resolve="input" />
+                      </node>
+                    </node>
+                    <node concept="9aQIb" id="7riAdT3M3yb" role="9aQIa">
+                      <node concept="3clFbS" id="7riAdT3M3yc" role="9aQI4">
+                        <node concept="3cpWs6" id="7riAdT3M3L6" role="3cqZAp">
+                          <node concept="2YIFZM" id="7riAdT3M4gy" role="3cqZAk">
+                            <ref role="37wK5l" to="epq1:~BigDecimal.valueOf(double):java.math.BigDecimal" resolve="valueOf" />
+                            <ref role="1Pybhc" to="epq1:~BigDecimal" resolve="BigDecimal" />
+                            <node concept="2OqwBi" id="7riAdT3M4J6" role="37wK5m">
+                              <node concept="37vLTw" id="7riAdT3M4w$" role="2Oq$k0">
+                                <ref role="3cqZAo" node="M6L5HuRguY" resolve="numberInput" />
+                              </node>
+                              <node concept="liA8E" id="7riAdT3M58L" role="2OqNvi">
+                                <ref role="37wK5l" to="e2lb:~Number.doubleValue():double" resolve="doubleValue" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>

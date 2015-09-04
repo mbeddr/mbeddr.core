@@ -33,7 +33,7 @@
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
     <import index="n7pc" ref="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
   </imports>
@@ -101,7 +101,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -12223,7 +12223,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="2qTj7CwNudj" role="2OqNvi">
-                              <ref role="37wK5l" to="e2lb:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                               <node concept="Xl_RD" id="2qTj7CwNudk" role="37wK5m">
                                 <property role="Xl_RC" value="true" />
                               </node>
@@ -12262,7 +12262,7 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="2qTj7CwNud_" role="2OqNvi">
-                                    <ref role="37wK5l" to="e2lb:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                                    <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                                     <node concept="Xl_RD" id="2qTj7CwNudA" role="37wK5m">
                                       <property role="Xl_RC" value="true" />
                                     </node>
@@ -12347,7 +12347,7 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="2qTj7CwNue4" role="2OqNvi">
-                                    <ref role="37wK5l" to="e2lb:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                                    <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                                     <node concept="Xl_RD" id="2qTj7CwNue5" role="37wK5m">
                                       <property role="Xl_RC" value="true" />
                                     </node>
@@ -12527,7 +12527,7 @@
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="2qTj7CwNufe" role="2OqNvi">
-                                      <ref role="37wK5l" to="e2lb:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                                      <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                                       <node concept="Xl_RD" id="2qTj7CwNuff" role="37wK5m">
                                         <property role="Xl_RC" value="true" />
                                       </node>
@@ -12603,7 +12603,7 @@
                                           </node>
                                         </node>
                                         <node concept="liA8E" id="2qTj7CwNufH" role="2OqNvi">
-                                          <ref role="37wK5l" to="e2lb:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                                          <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                                           <node concept="Xl_RD" id="2qTj7CwNufI" role="37wK5m">
                                             <property role="Xl_RC" value="true" />
                                           </node>
@@ -12927,7 +12927,7 @@
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="2qTj7CwNuhL" role="2OqNvi">
-                                      <ref role="37wK5l" to="e2lb:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                                      <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                                       <node concept="Xl_RD" id="2qTj7CwNuhM" role="37wK5m">
                                         <property role="Xl_RC" value="true" />
                                       </node>
@@ -13028,7 +13028,7 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="2qTj7CwNuio" role="2OqNvi">
-                                    <ref role="37wK5l" to="e2lb:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                                    <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                                     <node concept="Xl_RD" id="2qTj7CwNuip" role="37wK5m">
                                       <property role="Xl_RC" value="true" />
                                     </node>
@@ -13069,7 +13069,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="2qTj7CwNuiC" role="2OqNvi">
-                              <ref role="37wK5l" to="e2lb:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                               <node concept="Xl_RD" id="2qTj7CwNuiD" role="37wK5m">
                                 <property role="Xl_RC" value="true" />
                               </node>
@@ -13653,7 +13653,7 @@
               <node concept="YS8fn" id="1h0uThijOzi" role="3cqZAp">
                 <node concept="2ShNRf" id="1h0uThijOSP" role="YScLw">
                   <node concept="1pGfFk" id="1h0uThijPC7" role="2ShVmc">
-                    <ref role="37wK5l" to="e2lb:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
                     <node concept="Xl_RD" id="1h0uThijPWV" role="37wK5m">
                       <property role="Xl_RC" value="Stacks are not supported by the generator!" />
                     </node>
