@@ -9400,6 +9400,9 @@
         </node>
       </node>
     </node>
+    <node concept="2NXPZ9" id="7e09zBIcWSv" role="N3F5h">
+      <property role="TrG5h" value="empty_1440273546687_1" />
+    </node>
     <node concept="4WHVk" id="4b64BCbxu0b" role="N3F5h">
       <property role="TrG5h" value="SPIUMOSI" />
       <property role="2OOxQR" value="true" />
@@ -9417,7 +9420,7 @@
         <node concept="OjmMv" id="4b64BCbxu0d" role="1w35rA">
           <node concept="19SGf9" id="4b64BCbxu0e" role="OjmMu">
             <node concept="19SUe$" id="4b64BCbxu0f" role="19SJt6">
-              <property role="19SUeA" value="MOSI phase, SPI_FLASH_DOUT&#10;" />
+              <property role="19SUeA" value="MOSI phase, SPI_FLASH_DOUT" />
             </node>
           </node>
         </node>
@@ -9440,7 +9443,7 @@
         <node concept="OjmMv" id="4b64BCbxu0p" role="1w35rA">
           <node concept="19SGf9" id="4b64BCbxu0q" role="OjmMu">
             <node concept="19SUe$" id="4b64BCbxu0r" role="19SJt6">
-              <property role="19SUeA" value="SPI_USR_DUMMY_IDLE&#10;" />
+              <property role="19SUeA" value="SPI_USR_DUMMY_IDLE" />
             </node>
           </node>
         </node>
