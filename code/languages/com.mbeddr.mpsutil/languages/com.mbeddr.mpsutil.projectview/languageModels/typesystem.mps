@@ -6,7 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="jrbx" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.project(MPS.Platform/jetbrains.mps.project@java_stub)" />
+    <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
     <import index="os9e" ref="r:97eb5271-8e83-4b12-a8f1-f764eae13815(com.mbeddr.mpsutil.projectview.behavior)" implicit="true" />
     <import index="d04j" ref="r:904a58f9-8bb7-4ceb-b8a8-e6d7b5fc9126(com.mbeddr.mpsutil.projectview.structure)" implicit="true" />
@@ -105,7 +105,7 @@
         <node concept="mw_s8" id="7diJr$RuNOt" role="1ZfhKB">
           <node concept="2c44tf" id="7diJr$RuNOp" role="mwGJk">
             <node concept="3uibUv" id="7diJr$RuNTh" role="2c44tc">
-              <ref role="3uigEE" to="jrbx:~MPSProject" resolve="MPSProject" />
+              <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
             </node>
           </node>
         </node>
@@ -294,7 +294,7 @@
     </node>
     <node concept="1YaCAy" id="3ZnFyBjq5QV" role="1YuTPh">
       <property role="TrG5h" value="node" />
-      <ref role="1YaFvo" to="d04j:7diJr$RulqU" resolve="DynamicChildElement" />
+      <ref role="1YaFvo" to="d04j:7diJr$RulqU" resolve="TreeNodeElement" />
     </node>
   </node>
 </model>
