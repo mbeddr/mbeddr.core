@@ -258,7 +258,7 @@
   </registry>
   <node concept="14aYJB" id="7diJr$RurxA">
     <property role="TrG5h" value="LogicalViewClone" />
-    <property role="3aPfAI" value="10" />
+    <property role="3aPfAI" value="20" />
     <node concept="14aYG3" id="7diJr$RvF92" role="14aYEy">
       <property role="TrG5h" value="project" />
       <node concept="14a6R6" id="7diJr$RvF9F" role="14bQOc" />
@@ -915,7 +915,7 @@
       </node>
     </node>
     <node concept="Xl_RD" id="3ZnFyBjuF_j" role="3GFWDq">
-      <property role="Xl_RC" value="Logical View Clone" />
+      <property role="Xl_RC" value="Logical View Clone " />
     </node>
   </node>
   <node concept="312cEu" id="75_oBQVwQhb">
@@ -1273,7 +1273,7 @@
   </node>
   <node concept="14aYJB" id="$6jtTwOyRt">
     <property role="TrG5h" value="ByConcept" />
-    <property role="3aPfAI" value="11" />
+    <property role="3aPfAI" value="30" />
     <node concept="14aYG3" id="$6jtTwOyRu" role="14aYEy">
       <property role="TrG5h" value="project" />
       <node concept="14a6R6" id="$6jtTwOyRv" role="14bQOc" />
