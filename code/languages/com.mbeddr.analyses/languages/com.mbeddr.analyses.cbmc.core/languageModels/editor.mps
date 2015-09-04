@@ -13,7 +13,7 @@
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="b4h4" ref="r:d1d2f189-b1e7-4902-9fc0-3cfa1dc70519(com.mbeddr.analyses.cbmc.editor)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
-    <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -157,8 +157,8 @@
                   <ref role="37wK5l" to="r4b4:5gTlpakv6nY" resolve="HorizLineCell" />
                   <node concept="pncrf" id="2cCHKvAHyBt" role="37wK5m" />
                   <node concept="10M0yZ" id="2cCHKvAHyBu" role="37wK5m">
-                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                    <ref role="3cqZAo" to="1t7x:~Color.gray" resolve="gray" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
                   </node>
                 </node>
               </node>
@@ -171,13 +171,10 @@
         <node concept="VPM3Z" id="2cCHKvAHSi3" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
-        <node concept="PMmxH" id="56VLVOUvjr7" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:56VLVOUm_Oq" resolve="TimeoutSettings" />
-        </node>
-        <node concept="PMmxH" id="3x0R1LJfFf9" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:fjZ33TpCB9" resolve="CBMCSpecificSettings" />
-        </node>
         <node concept="2iRkQZ" id="2cCHKvAHSi6" role="2iSdaV" />
+        <node concept="PMmxH" id="5tDzxi6Rs1M" role="3EZMnx">
+          <ref role="PMmxG" to="b4h4:5tDzxi6RrTa" resolve="OptionalCBMCSettings" />
+        </node>
       </node>
     </node>
     <node concept="3EZMnI" id="3SmHfhJ0v4F" role="6VMZX">
@@ -196,11 +193,8 @@
         <node concept="l2Vlx" id="3SmHfhJ38VG" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="3SmHfhJ38VS" role="3EZMnx" />
-      <node concept="PMmxH" id="3SmHfhJ0vng" role="3EZMnx">
-        <ref role="PMmxG" to="b4h4:3SmHfhIZc__" resolve="TimeoutSettingsDoc" />
-      </node>
-      <node concept="PMmxH" id="3SmHfhJ3akC" role="3EZMnx">
-        <ref role="PMmxG" to="b4h4:3SmHfhJ39aB" resolve="CBMCSpecificSettingsDoc" />
+      <node concept="PMmxH" id="5tDzxi6Rs2B" role="3EZMnx">
+        <ref role="PMmxG" to="b4h4:5tDzxi6RrW3" resolve="OptionalCBMCSettingsDoc" />
       </node>
     </node>
   </node>
@@ -242,8 +236,8 @@
                   <ref role="37wK5l" to="r4b4:5gTlpakv6nY" resolve="HorizLineCell" />
                   <node concept="pncrf" id="2cCHKvAKplj" role="37wK5m" />
                   <node concept="10M0yZ" id="2cCHKvAKplk" role="37wK5m">
-                    <ref role="3cqZAo" to="1t7x:~Color.gray" resolve="gray" />
-                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
                   </node>
                 </node>
               </node>
@@ -276,10 +270,7 @@
           </node>
         </node>
         <node concept="PMmxH" id="56VLVOUuGU6" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:56VLVOUm_Oq" resolve="TimeoutSettings" />
-        </node>
-        <node concept="PMmxH" id="3x0R1LJfFfR" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:fjZ33TpCB9" resolve="CBMCSpecificSettings" />
+          <ref role="PMmxG" to="b4h4:5tDzxi6RrTa" resolve="OptionalCBMCSettings" />
         </node>
       </node>
     </node>
@@ -326,11 +317,8 @@
         <node concept="l2Vlx" id="3SmHfhJ96hF" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="3SmHfhJ96hY" role="3EZMnx" />
-      <node concept="PMmxH" id="3SmHfhJ96hZ" role="3EZMnx">
-        <ref role="PMmxG" to="b4h4:3SmHfhIZc__" resolve="TimeoutSettingsDoc" />
-      </node>
-      <node concept="PMmxH" id="3SmHfhJ96i0" role="3EZMnx">
-        <ref role="PMmxG" to="b4h4:3SmHfhJ39aB" resolve="CBMCSpecificSettingsDoc" />
+      <node concept="PMmxH" id="5tDzxi6RHeH" role="3EZMnx">
+        <ref role="PMmxG" to="b4h4:5tDzxi6RrW3" resolve="OptionalCBMCSettingsDoc" />
       </node>
     </node>
   </node>
@@ -372,8 +360,8 @@
                   <ref role="37wK5l" to="r4b4:5gTlpakv6nY" resolve="HorizLineCell" />
                   <node concept="pncrf" id="2hmLFg9OJPu" role="37wK5m" />
                   <node concept="10M0yZ" id="2hmLFg9OK3k" role="37wK5m">
-                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                    <ref role="3cqZAo" to="1t7x:~Color.gray" resolve="gray" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
                   </node>
                 </node>
               </node>
@@ -498,13 +486,10 @@
             </node>
           </node>
         </node>
-        <node concept="PMmxH" id="56VLVOUv7LX" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:56VLVOUm_Oq" resolve="TimeoutSettings" />
+        <node concept="PMmxH" id="5tDzxi6RHlq" role="3EZMnx">
+          <ref role="PMmxG" to="b4h4:5tDzxi6RrTa" resolve="OptionalCBMCSettings" />
         </node>
         <node concept="2iRkQZ" id="2hmLFg9Rmn2" role="2iSdaV" />
-        <node concept="PMmxH" id="3x0R1LJfFh8" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:fjZ33TpCB9" resolve="CBMCSpecificSettings" />
-        </node>
       </node>
     </node>
     <node concept="3EZMnI" id="3SmHfhJ6Tds" role="6VMZX">
@@ -615,11 +600,8 @@
         <node concept="l2Vlx" id="4vY$tOPOMf0" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="4vY$tOPOMdg" role="3EZMnx" />
-      <node concept="PMmxH" id="3SmHfhJ6Td_" role="3EZMnx">
-        <ref role="PMmxG" to="b4h4:3SmHfhIZc__" resolve="TimeoutSettingsDoc" />
-      </node>
-      <node concept="PMmxH" id="3SmHfhJ6TdA" role="3EZMnx">
-        <ref role="PMmxG" to="b4h4:3SmHfhJ39aB" resolve="CBMCSpecificSettingsDoc" />
+      <node concept="PMmxH" id="5tDzxi6RHn2" role="3EZMnx">
+        <ref role="PMmxG" to="b4h4:5tDzxi6RrW3" resolve="OptionalCBMCSettingsDoc" />
       </node>
     </node>
   </node>
@@ -675,8 +657,8 @@
                   <ref role="37wK5l" to="r4b4:5gTlpakv6nY" resolve="HorizLineCell" />
                   <node concept="pncrf" id="7yN$Xh8qhCq" role="37wK5m" />
                   <node concept="10M0yZ" id="7yN$Xh8qhCr" role="37wK5m">
-                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                    <ref role="3cqZAo" to="1t7x:~Color.gray" resolve="gray" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
                   </node>
                 </node>
               </node>
@@ -708,11 +690,8 @@
             </node>
           </node>
         </node>
-        <node concept="PMmxH" id="7yN$Xh8qhCA" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:56VLVOUm_Oq" resolve="TimeoutSettings" />
-        </node>
-        <node concept="PMmxH" id="7yN$Xh8qhCB" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:fjZ33TpCB9" resolve="CBMCSpecificSettings" />
+        <node concept="PMmxH" id="5tDzxi6RHg7" role="3EZMnx">
+          <ref role="PMmxG" to="b4h4:5tDzxi6RrTa" resolve="OptionalCBMCSettings" />
         </node>
       </node>
     </node>
@@ -746,11 +725,8 @@
         <node concept="l2Vlx" id="7yN$Xh8qi4a" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="7yN$Xh8qi4h" role="3EZMnx" />
-      <node concept="PMmxH" id="7yN$Xh8qi4i" role="3EZMnx">
-        <ref role="PMmxG" to="b4h4:3SmHfhIZc__" resolve="TimeoutSettingsDoc" />
-      </node>
-      <node concept="PMmxH" id="7yN$Xh8qi4j" role="3EZMnx">
-        <ref role="PMmxG" to="b4h4:3SmHfhJ39aB" resolve="CBMCSpecificSettingsDoc" />
+      <node concept="PMmxH" id="5tDzxi6RHgE" role="3EZMnx">
+        <ref role="PMmxG" to="b4h4:5tDzxi6RrW3" resolve="OptionalCBMCSettingsDoc" />
       </node>
     </node>
   </node>
@@ -792,8 +768,8 @@
                   <ref role="37wK5l" to="r4b4:5gTlpakv6nY" resolve="HorizLineCell" />
                   <node concept="pncrf" id="3AX70SQiMaM" role="37wK5m" />
                   <node concept="10M0yZ" id="3AX70SQiMaN" role="37wK5m">
-                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                    <ref role="3cqZAo" to="1t7x:~Color.gray" resolve="gray" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
                   </node>
                 </node>
               </node>
@@ -819,10 +795,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="PMmxH" id="3AX70SQiMaQ" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:56VLVOUm_Oq" resolve="TimeoutSettings" />
-        </node>
-        <node concept="PMmxH" id="3AX70SQiMaR" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:fjZ33TpCB9" resolve="CBMCSpecificSettings" />
+          <ref role="PMmxG" to="b4h4:5tDzxi6RrTa" resolve="OptionalCBMCSettings" />
         </node>
         <node concept="2iRkQZ" id="3AX70SQiMaS" role="2iSdaV" />
       </node>
@@ -844,10 +817,7 @@
       </node>
       <node concept="3F0ifn" id="3AX70SQiMR$" role="3EZMnx" />
       <node concept="PMmxH" id="3AX70SQiMR_" role="3EZMnx">
-        <ref role="PMmxG" to="b4h4:3SmHfhIZc__" resolve="TimeoutSettingsDoc" />
-      </node>
-      <node concept="PMmxH" id="3AX70SQiMRA" role="3EZMnx">
-        <ref role="PMmxG" to="b4h4:3SmHfhJ39aB" resolve="CBMCSpecificSettingsDoc" />
+        <ref role="PMmxG" to="b4h4:5tDzxi6RrW3" resolve="OptionalCBMCSettingsDoc" />
       </node>
     </node>
   </node>

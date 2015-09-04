@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
-    <import index="1t7x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="b4h4" ref="r:d1d2f189-b1e7-4902-9fc0-3cfa1dc70519(com.mbeddr.analyses.cbmc.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -15,7 +15,9 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
         <child id="1176795024817" name="cellProvider" index="3YsKMw" />
       </concept>
@@ -28,6 +30,7 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -122,8 +125,8 @@
                   <ref role="37wK5l" to="r4b4:5gTlpakv6nY" resolve="HorizLineCell" />
                   <node concept="pncrf" id="2hmLFg9OJPu" role="37wK5m" />
                   <node concept="10M0yZ" id="2hmLFg9OK3k" role="37wK5m">
-                    <ref role="3cqZAo" to="1t7x:~Color.gray" resolve="gray" />
-                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
                   </node>
                 </node>
               </node>
@@ -168,13 +171,57 @@
         <node concept="VPM3Z" id="2cCHKvAHUdR" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
-        <node concept="PMmxH" id="56VLVOUve7$" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:56VLVOUm_Oq" resolve="TimeoutSettings" />
+        <node concept="PMmxH" id="56VLVOUuGU6" role="3EZMnx">
+          <ref role="PMmxG" to="b4h4:5tDzxi6RrTa" resolve="OptionalCBMCSettings" />
         </node>
         <node concept="2iRkQZ" id="2cCHKvAHUdU" role="2iSdaV" />
-        <node concept="PMmxH" id="5hPfJKCsfYD" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:fjZ33TpCB9" resolve="CBMCSpecificSettings" />
+      </node>
+    </node>
+    <node concept="3EZMnI" id="3SmHfhJ96hn" role="6VMZX">
+      <node concept="2iRkQZ" id="3SmHfhJ96ho" role="2iSdaV" />
+      <node concept="3EZMnI" id="3SmHfhJ96hp" role="3EZMnx">
+        <node concept="VPM3Z" id="3SmHfhJ96hq" role="3F10Kt">
+          <property role="VOm3f" value="false" />
         </node>
+        <node concept="3F0ifn" id="3SmHfhJ96hr" role="3EZMnx">
+          <property role="3F0ifm" value="Summary:" />
+        </node>
+        <node concept="3F0ifn" id="3SmHfhJ96hs" role="3EZMnx">
+          <property role="3F0ifm" value="generate test vectors with a given coverage." />
+          <node concept="Vb9p2" id="3SmHfhJ96ht" role="3F10Kt" />
+        </node>
+        <node concept="l2Vlx" id="3SmHfhJ96hu" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="3SmHfhJ98rc" role="3EZMnx" />
+      <node concept="3EZMnI" id="3SmHfhJ96hw" role="3EZMnx">
+        <node concept="VPM3Z" id="3SmHfhJ96hx" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="3SmHfhJ96hy" role="3EZMnx">
+          <property role="3F0ifm" value="coverage criterion  " />
+        </node>
+        <node concept="3F0ifn" id="3SmHfhJ96hz" role="3EZMnx">
+          <property role="3F0ifm" value="- specifies the coverage criterion (e.g. branch coverage)" />
+          <node concept="Vb9p2" id="3SmHfhJ96h$" role="3F10Kt" />
+        </node>
+        <node concept="l2Vlx" id="3SmHfhJ96h_" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="3SmHfhJ96hA" role="3EZMnx">
+        <node concept="VPM3Z" id="3SmHfhJ96hB" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="3SmHfhJ96hC" role="3EZMnx">
+          <property role="3F0ifm" value="save into           " />
+        </node>
+        <node concept="3F0ifn" id="3SmHfhJ96hD" role="3EZMnx">
+          <property role="3F0ifm" value="- into which implementation module should the vectors be saved?" />
+          <node concept="Vb9p2" id="3SmHfhJ96hE" role="3F10Kt" />
+        </node>
+        <node concept="l2Vlx" id="3SmHfhJ96hF" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="3SmHfhJ96hY" role="3EZMnx" />
+      <node concept="PMmxH" id="3SmHfhJ96hZ" role="3EZMnx">
+        <ref role="PMmxG" to="b4h4:5tDzxi6RrW3" resolve="OptionalCBMCSettingsDoc" />
       </node>
     </node>
   </node>
