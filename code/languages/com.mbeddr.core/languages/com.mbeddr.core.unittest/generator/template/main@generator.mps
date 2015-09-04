@@ -51,7 +51,6 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
-      <concept id="1215695189714" name="jetbrains.mps.baseLanguage.structure.PlusAssignmentExpression" flags="nn" index="d57v9" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -199,7 +198,6 @@
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1195502100749" name="preMappingScript" index="1puA0r" />
-        <child id="1195502346405" name="postMappingScript" index="1pvy6N" />
       </concept>
       <concept id="1168559333462" name="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" flags="ln" index="j$656" />
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj">
@@ -2504,9 +2502,6 @@
       <ref role="2rTdP9" to="x27k:5_l8w1EmTvt" resolve="FunctionSignature" />
       <ref role="2rZz_L" to="x27k:5_l8w1EmTvx" resolve="Function" />
     </node>
-    <node concept="1puMqW" id="2dCF6FyLTRb" role="1pvy6N">
-      <ref role="1puQsG" node="2dCF6FyLIaI" resolve="rebindUnitTestMessages" />
-    </node>
   </node>
   <node concept="13MO4I" id="5so5TTr6V0Q">
     <property role="TrG5h" value="reduce_TestCase" />
@@ -2900,21 +2895,6 @@
                     <ref role="3cqZAo" node="2dCF6FyFvT0" resolve="orgModule" />
                   </node>
                   <node concept="1$rogu" id="5usoWIKpOUx" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="2dCF6FyPiWY" role="3cqZAp">
-              <node concept="d57v9" id="2dCF6FyPmeH" role="3clFbG">
-                <node concept="Xl_RD" id="2dCF6FyPmi3" role="37vLTx">
-                  <property role="Xl_RC" value="_copied" />
-                </node>
-                <node concept="2OqwBi" id="2dCF6FyPjAD" role="37vLTJ">
-                  <node concept="37vLTw" id="2dCF6FyPiWW" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5usoWIKpOUu" resolve="copiedModule" />
-                  </node>
-                  <node concept="3TrcHB" id="2dCF6FyPknj" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                  </node>
                 </node>
               </node>
             </node>

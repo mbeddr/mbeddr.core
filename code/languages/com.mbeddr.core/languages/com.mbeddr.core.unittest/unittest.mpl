@@ -78,52 +78,7 @@
             <external-mapping>
               <mapping-set>
                 <mapping-set-element>
-                  <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="745648737914842688" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="6209595569797561386" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="6591434695300502820" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="6307143892175869409" />
-                </mapping-set-element>
-                <mapping-set-element>
                   <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="4459718605982145266" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="3073566081777432964" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="3457272138385281818" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="4137387759417369761" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="6321794478503144507" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="857825425328359292" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="2054775350237623383" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="2054775350266403439" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="2054775350267975198" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="291293396419420809" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="758326141962762640" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="8646254455461558595" />
                 </mapping-set-element>
                 <mapping-set-element>
                   <mapping-node modelUID="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" nodeID="6313030504132844374" />
