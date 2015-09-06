@@ -239,6 +239,12 @@
             <ref role="3bR37D" node="6ucYLjoxZBc" resolve="com.mbeddr.platform" />
           </node>
         </node>
+        <node concept="1SiIV0" id="p_ylfA4luI" role="3bR37C">
+          <node concept="3bR9La" id="p_ylfA4luJ" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="2UI1wmC2YjE" resolve="com.mbeddr.debugger.tests.dev.build" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2coa6XmWDDt" role="2G$12L">
         <property role="BnDLt" value="true" />
