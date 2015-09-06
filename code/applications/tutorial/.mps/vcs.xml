@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
     <mapping directory="$sl-all$" vcs="Git" />
     <mapping directory="$sl-all$/diagram" vcs="Git" />
     <mapping directory="$sl-all$/mps-boolean-editor" vcs="Git" />
@@ -11,5 +10,6 @@
     <mapping directory="$sl-all$/mps-multiline" vcs="Git" />
     <mapping directory="$sl-all$/mps-richtext" vcs="Git" />
     <mapping directory="$sl-all$/mps-tables" vcs="Git" />
+    <mapping directory="$mbeddr.github.core.home$" vcs="Git" />
   </component>
 </project>
