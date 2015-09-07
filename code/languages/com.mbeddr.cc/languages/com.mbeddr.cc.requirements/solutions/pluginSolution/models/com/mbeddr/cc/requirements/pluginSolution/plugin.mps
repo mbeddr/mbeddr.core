@@ -13,11 +13,11 @@
   </languages>
   <imports>
     <import index="mi8d" ref="r:3424d837-c178-4d7b-8543-e9f3af3f6072(com.mbeddr.cc.requirements.refactorings)" />
-    <import index="1d7m" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.ide.editor(MPS.Editor/jetbrains.mps.ide.editor@java_stub)" />
+    <import index="k3nr" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor(MPS.Editor/)" />
     <import index="xvsr" ref="r:18791582-199a-4c4c-a282-6d61b7657294(com.mbeddr.cc.requirements.behavior)" />
     <import index="75wo" ref="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" />
-    <import index="nx1" ref="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.actionSystem(MPS.IDEA/com.intellij.openapi.actionSystem@java_stub)" />
-    <import index="srng" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
   </imports>
   <registry>
@@ -229,12 +229,12 @@
     <property role="3GE5qa" value="outline" />
     <node concept="1DS2jV" id="3slbD0C7$Ao" role="1NuT2Z">
       <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="nx1:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="3slbD0C7$Ap" role="1oa70y" />
     </node>
     <node concept="1DS2jV" id="3slbD0C7DL8" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="1d7m:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
+      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
       <node concept="1oajcY" id="3slbD0C7DL9" role="1oa70y" />
     </node>
     <node concept="2S4$dB" id="TFjNjj$ckN" role="1NuT2Z">
@@ -264,11 +264,11 @@
                 </node>
               </node>
               <node concept="liA8E" id="33WQfIVwLkr" role="2OqNvi">
-                <ref role="37wK5l" to="srng:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
               </node>
             </node>
             <node concept="liA8E" id="33WQfIVwTTR" role="2OqNvi">
-              <ref role="37wK5l" to="srng:~EditorComponent.update():void" resolve="update" />
+              <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
             </node>
           </node>
         </node>
@@ -314,12 +314,12 @@
     <property role="3GE5qa" value="outline" />
     <node concept="1DS2jV" id="3slbD0C6UdE" role="1NuT2Z">
       <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="nx1:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="3slbD0C6UdF" role="1oa70y" />
     </node>
     <node concept="1DS2jV" id="3slbD0C7DLv" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="1d7m:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
+      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
       <node concept="1oajcY" id="3slbD0C7DLw" role="1oa70y" />
     </node>
     <node concept="2S4$dB" id="TFjNjj$cmr" role="1NuT2Z">
@@ -347,11 +347,11 @@
                 </node>
               </node>
               <node concept="liA8E" id="TFjNjjzKQj" role="2OqNvi">
-                <ref role="37wK5l" to="srng:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
               </node>
             </node>
             <node concept="liA8E" id="TFjNjjzKQk" role="2OqNvi">
-              <ref role="37wK5l" to="srng:~EditorComponent.update():void" resolve="update" />
+              <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
             </node>
           </node>
         </node>
@@ -398,12 +398,12 @@
     <property role="3GE5qa" value="tracestatus" />
     <node concept="1DS2jV" id="3JD5OqKQTX7" role="1NuT2Z">
       <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="nx1:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="3JD5OqKQTX8" role="1oa70y" />
     </node>
     <node concept="1DS2jV" id="3JD5OqKQTX9" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="1d7m:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
+      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
       <node concept="1oajcY" id="3JD5OqKQTXa" role="1oa70y" />
     </node>
     <node concept="2S4$dB" id="3JD5OqKQTXb" role="1NuT2Z">
@@ -433,11 +433,11 @@
                 </node>
               </node>
               <node concept="liA8E" id="3JD5OqKQTXq" role="2OqNvi">
-                <ref role="37wK5l" to="srng:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
               </node>
             </node>
             <node concept="liA8E" id="3JD5OqKQTXr" role="2OqNvi">
-              <ref role="37wK5l" to="srng:~EditorComponent.update():void" resolve="update" />
+              <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
             </node>
           </node>
         </node>
@@ -483,12 +483,12 @@
     <property role="3GE5qa" value="tracestatus" />
     <node concept="1DS2jV" id="3JD5OqKQTY6" role="1NuT2Z">
       <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="nx1:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="3JD5OqKQTY7" role="1oa70y" />
     </node>
     <node concept="1DS2jV" id="3JD5OqKQTY8" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="1d7m:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
+      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
       <node concept="1oajcY" id="3JD5OqKQTY9" role="1oa70y" />
     </node>
     <node concept="2S4$dB" id="3JD5OqKQTYa" role="1NuT2Z">
@@ -516,11 +516,11 @@
                 </node>
               </node>
               <node concept="liA8E" id="3JD5OqKQTYp" role="2OqNvi">
-                <ref role="37wK5l" to="srng:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
               </node>
             </node>
             <node concept="liA8E" id="3JD5OqKQTYq" role="2OqNvi">
-              <ref role="37wK5l" to="srng:~EditorComponent.update():void" resolve="update" />
+              <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
             </node>
           </node>
         </node>

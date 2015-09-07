@@ -11,7 +11,7 @@
   <imports>
     <import index="26ao" ref="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" />
     <import index="y6af" ref="r:266125ed-2b05-4b4a-aa3e-7e3d1931d4cd(com.mbeddr.cc.trace.behavior)" />
-    <import index="srng" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -264,11 +264,11 @@
             <node concept="2OqwBi" id="7Vd878mvxJ4" role="2Oq$k0">
               <node concept="1XNTG" id="7Vd878mvxzA" role="2Oq$k0" />
               <node concept="liA8E" id="7Vd878mvyYE" role="2OqNvi">
-                <ref role="37wK5l" to="srng:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
               </node>
             </node>
             <node concept="liA8E" id="7Vd878mvzoW" role="2OqNvi">
-              <ref role="37wK5l" to="srng:~EditorComponent.update():void" resolve="update" />
+              <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
             </node>
           </node>
         </node>

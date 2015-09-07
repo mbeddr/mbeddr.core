@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="6pek" ref="r:f4cb7d35-a323-48d6-ad03-3ebdeae26d42(com.mbeddr.cc.requirements.wp.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -114,8 +114,8 @@
                 <node concept="3clFbS" id="vRfru3oPgE" role="SfCbr">
                   <node concept="3clFbF" id="vRfru3oPg1" role="3cqZAp">
                     <node concept="2YIFZM" id="vRfru3oPg4" role="3clFbG">
-                      <ref role="37wK5l" to="e2lb:~Float.valueOf(java.lang.String):java.lang.Float" resolve="valueOf" />
-                      <ref role="1Pybhc" to="e2lb:~Float" resolve="Float" />
+                      <ref role="37wK5l" to="wyt6:~Float.valueOf(java.lang.String):java.lang.Float" resolve="valueOf" />
+                      <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
                       <node concept="1Wqviy" id="vRfru3oPg5" role="37wK5m" />
                     </node>
                   </node>
@@ -129,7 +129,7 @@
                   <node concept="3cpWsn" id="vRfru3oPgH" role="TDEfY">
                     <property role="TrG5h" value="ex" />
                     <node concept="3uibUv" id="vRfru3oPgR" role="1tU5fm">
-                      <ref role="3uigEE" to="e2lb:~NumberFormatException" resolve="NumberFormatException" />
+                      <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="vRfru3oPgJ" role="TDEfX" />

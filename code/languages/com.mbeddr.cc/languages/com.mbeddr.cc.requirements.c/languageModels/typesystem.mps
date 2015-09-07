@@ -8,15 +8,15 @@
   <imports>
     <import index="3vkx" ref="r:1c91fcc2-cf14-47f5-a4d4-3b424626f0d4(com.mbeddr.cc.requirements.c.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="1v9t" ref="r:ad2e741a-fd00-4d35-bff4-cd40053b55fe(com.mbeddr.cc.requirements.c.intentions)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
-    <import index="hkt1" ref="r:c8eb480e-3a9c-4444-9a74-7da98d9d0a76(com.mbeddr.cc.requirements.c.behavior)" implicit="true" />
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" implicit="true" />
+    <import index="hkt1" ref="r:c8eb480e-3a9c-4444-9a74-7da98d9d0a76(com.mbeddr.cc.requirements.c.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -464,7 +464,7 @@
             <node concept="3cpWsn" id="35Kh8LWsSN4" role="3cpWs9">
               <property role="TrG5h" value="actual" />
               <node concept="3uibUv" id="1uZspiYy7D$" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
               </node>
               <node concept="2OqwBi" id="3iWeQsvoSqI" role="33vP2m">
                 <node concept="37vLTw" id="3iWeQsvoRGM" role="2Oq$k0">
@@ -500,7 +500,7 @@
             <node concept="3cpWsn" id="35Kh8LWsSNk" role="3cpWs9">
               <property role="TrG5h" value="exp" />
               <node concept="3uibUv" id="1uZspiYy8me" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
               </node>
               <node concept="2OqwBi" id="3iWeQsvp42O" role="33vP2m">
                 <node concept="37vLTw" id="3iWeQsvp3iz" role="2Oq$k0">
@@ -555,7 +555,7 @@
                   <ref role="3cqZAo" node="35Kh8LWsSN4" resolve="actual" />
                 </node>
                 <node concept="liA8E" id="1uZspiYytbt" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                   <node concept="37vLTw" id="1uZspiYytbu" role="37wK5m">
                     <ref role="3cqZAo" node="35Kh8LWsSNk" resolve="exp" />
                   </node>
@@ -568,7 +568,7 @@
           <node concept="3cpWsn" id="35Kh8LWt8n0" role="TDEfY">
             <property role="TrG5h" value="ex" />
             <node concept="3uibUv" id="35Kh8LWt8n4" role="1tU5fm">
-              <ref role="3uigEE" to="e2lb:~RuntimeException" resolve="RuntimeException" />
+              <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
             </node>
           </node>
           <node concept="3clFbS" id="35Kh8LWt8n2" role="TDEfX">
@@ -581,7 +581,7 @@
                         <ref role="3cqZAo" node="35Kh8LWt8n0" resolve="ex" />
                       </node>
                       <node concept="liA8E" id="35Kh8LWt8o0" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="35Kh8LWt8nd" role="3uHU7B">
