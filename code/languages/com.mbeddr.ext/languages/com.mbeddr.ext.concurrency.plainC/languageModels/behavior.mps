@@ -8,7 +8,7 @@
   <imports>
     <import index="qozy" ref="r:38fcb48b-92c2-41af-9039-dc087bb8b822(com.mbeddr.ext.concurrency.behavior)" />
     <import index="5wll" ref="r:8bfc0edf-00dc-40ce-9659-fb90c9bd31c8(com.mbeddr.ext.concurrency.structure)" />
-    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="izv8" ref="r:0f1bbf76-e39a-467c-9afd-098f51838591(com.mbeddr.ext.concurrency.plainC.structure)" implicit="true" />
   </imports>
   <registry>
@@ -167,11 +167,11 @@
         <node concept="3clFbF" id="1TgsdXP43Uw" role="3cqZAp">
           <node concept="2OqwBi" id="1TgsdXP43Uy" role="3clFbG">
             <node concept="2YIFZM" id="1TgsdXP43Uz" role="2Oq$k0">
-              <ref role="37wK5l" to="k7g3:~UUID.randomUUID():java.util.UUID" resolve="randomUUID" />
-              <ref role="1Pybhc" to="k7g3:~UUID" resolve="UUID" />
+              <ref role="37wK5l" to="33ny:~UUID.randomUUID():java.util.UUID" resolve="randomUUID" />
+              <ref role="1Pybhc" to="33ny:~UUID" resolve="UUID" />
             </node>
             <node concept="liA8E" id="1TgsdXP43U$" role="2OqNvi">
-              <ref role="37wK5l" to="k7g3:~UUID.toString():java.lang.String" resolve="toString" />
+              <ref role="37wK5l" to="33ny:~UUID.toString():java.lang.String" resolve="toString" />
             </node>
           </node>
         </node>

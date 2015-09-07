@@ -19,7 +19,7 @@
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="pry4" ref="r:0a0d7eec-6e5a-412b-8e16-e3ee5ed7fb95(jetbrains.mps.debug.api.programState)" />
     <import index="eup9" ref="r:ab391014-3e08-4918-9cc5-1c93e3a55c72(com.mbeddr.ext.components.behavior)" />
-    <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
@@ -305,7 +305,7 @@
           <node concept="2OqwBi" id="hDImLk4kQD" role="2QERvC">
             <node concept="13iPFW" id="hDImLk4kQE" role="2Oq$k0" />
             <node concept="2qgKlT" id="hDImLk4kQF" role="2OqNvi">
-              <ref role="37wK5l" to="eup9:5hYHEwZIiiW" resolve="IDName" />
+              <ref role="37wK5l" to="eup9:5hYHEwZIiiW" resolve="genLocalIDVarName" />
             </node>
           </node>
         </node>
@@ -314,7 +314,7 @@
           <node concept="2OqwBi" id="hDImLk71Il" role="2QERvC">
             <node concept="13iPFW" id="hDImLk71Im" role="2Oq$k0" />
             <node concept="2qgKlT" id="hDImLk72E$" role="2OqNvi">
-              <ref role="37wK5l" to="eup9:5hYHEwZIiiQ" resolve="componentIDName" />
+              <ref role="37wK5l" to="eup9:5hYHEwZIiiQ" resolve="genLocalCIDVarName" />
             </node>
           </node>
         </node>
@@ -344,7 +344,7 @@
       <node concept="37vLTG" id="hDImLk1bXs" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="hDImLk1bXt" role="1tU5fm">
-          <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
         </node>
       </node>
       <node concept="3cqZAl" id="hDImLk1bXu" role="3clF45" />

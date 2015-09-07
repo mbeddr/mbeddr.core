@@ -13,7 +13,7 @@
     <import index="ndfg" ref="r:8bc36bcc-e1fd-40bc-b05f-b4d974244d15(com.mbeddr.ext.units.util)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" implicit="true" />
-    <import index="srng" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" implicit="true" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -1109,7 +1109,7 @@
                 <node concept="2OqwBi" id="29E2s0GU_Dd" role="3clFbG">
                   <node concept="1XNTG" id="29E2s0GU_$7" role="2Oq$k0" />
                   <node concept="liA8E" id="29E2s0GUA8Y" role="2OqNvi">
-                    <ref role="37wK5l" to="srng:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
+                    <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
                     <node concept="2OqwBi" id="29E2s0GUAEf" role="37wK5m">
                       <node concept="2OqwBi" id="29E2s0GUAff" role="2Oq$k0">
                         <node concept="37vLTw" id="29E2s0GUAcs" role="2Oq$k0">

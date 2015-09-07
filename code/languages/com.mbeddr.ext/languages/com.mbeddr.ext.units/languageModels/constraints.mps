@@ -10,8 +10,8 @@
     <import index="ndfg" ref="r:8bc36bcc-e1fd-40bc-b05f-b4d974244d15(com.mbeddr.ext.units.util)" />
     <import index="lx0c" ref="r:12c76b04-7fd6-45a2-9d94-f0756fc5ad8f(com.mbeddr.ext.units.behavior)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -317,7 +317,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="1wGuEUwtQtA" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.trim():java.lang.String" resolve="trim" />
+                        <ref role="37wK5l" to="wyt6:~String.trim():java.lang.String" resolve="trim" />
                       </node>
                     </node>
                   </node>
@@ -355,18 +355,18 @@
               <node concept="2OqwBi" id="79uxL3R5lQB" role="3uHU7w">
                 <node concept="1Wqviy" id="79uxL3R5lra" role="2Oq$k0" />
                 <node concept="liA8E" id="79uxL3R5mPd" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.length():int" resolve="length" />
+                  <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
                 </node>
               </node>
               <node concept="2OqwBi" id="79uxL3R5jDh" role="3uHU7B">
                 <node concept="2OqwBi" id="79uxL3R5inQ" role="2Oq$k0">
                   <node concept="1Wqviy" id="79uxL3R5i7_" role="2Oq$k0" />
                   <node concept="liA8E" id="79uxL3R5jl6" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~String.trim():java.lang.String" resolve="trim" />
+                    <ref role="37wK5l" to="wyt6:~String.trim():java.lang.String" resolve="trim" />
                   </node>
                 </node>
                 <node concept="liA8E" id="79uxL3R5kDw" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.length():int" resolve="length" />
+                  <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
                 </node>
               </node>
             </node>
@@ -377,7 +377,7 @@
   </node>
   <node concept="1M2fIO" id="5W7baqyYDbC">
     <property role="3GE5qa" value="definition" />
-    <ref role="1M2myG" to="qlb5:5W7baqyQp0r" resolve="MetaUnitMapping" />
+    <ref role="1M2myG" to="qlb5:5W7baqyQp0r" resolve="GenericUnitMapping" />
     <node concept="1N5Pfh" id="5W7baqyhpUK" role="1Mr941">
       <ref role="1N5Vy1" to="qlb5:5W7baqyQp5n" />
       <node concept="1MUpDS" id="5W7baqyhq3q" role="1N6uqs">

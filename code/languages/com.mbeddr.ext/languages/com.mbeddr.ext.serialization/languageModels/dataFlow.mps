@@ -191,7 +191,7 @@
               </node>
               <node concept="1mIQ4w" id="2Or5PTUbx_p" role="2OqNvi">
                 <node concept="chp4Y" id="2Or5PTUbx_q" role="cj9EA">
-                  <ref role="cht4Q" to="jtc1:1LleiTPnd22" resolve="MessageContextType" />
+                  <ref role="cht4Q" to="jtc1:1LleiTPnd22" resolve="SerialContextType" />
                 </node>
               </node>
             </node>
@@ -213,7 +213,7 @@
             </node>
             <node concept="1mIQ4w" id="2Or5PTUbxTe" role="2OqNvi">
               <node concept="chp4Y" id="2Or5PTUbxTf" role="cj9EA">
-                <ref role="cht4Q" to="jtc1:1LleiTPnMXQ" resolve="MsgInitTarget" />
+                <ref role="cht4Q" to="jtc1:1LleiTPnMXQ" resolve="SerialInitTarget" />
               </node>
             </node>
           </node>

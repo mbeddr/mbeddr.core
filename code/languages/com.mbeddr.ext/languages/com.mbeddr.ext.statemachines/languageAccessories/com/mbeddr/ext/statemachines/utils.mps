@@ -7,7 +7,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="clqz" ref="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -139,7 +139,7 @@
               <ref role="3cqZAo" node="53JsLqwMa54" resolve="varName" />
             </node>
             <node concept="liA8E" id="53JsLqwMa50" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
               <node concept="37vLTw" id="53JsLqwMa51" role="37wK5m">
                 <ref role="3cqZAo" node="53JsLqwMa4E" resolve="EVENT_VAR_PREFIX" />
               </node>
@@ -166,13 +166,13 @@
               <ref role="3cqZAo" node="53JsLqwMa5i" resolve="varName" />
             </node>
             <node concept="liA8E" id="53JsLqwMa5c" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~String.substring(int):java.lang.String" resolve="substring" />
+              <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
               <node concept="2OqwBi" id="53JsLqwMa5d" role="37wK5m">
                 <node concept="37vLTw" id="53JsLqwMa5e" role="2Oq$k0">
                   <ref role="3cqZAo" node="53JsLqwMa4E" resolve="EVENT_VAR_PREFIX" />
                 </node>
                 <node concept="liA8E" id="53JsLqwMa5f" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.length():int" resolve="length" />
+                  <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
                 </node>
               </node>
             </node>
