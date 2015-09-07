@@ -11,7 +11,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="tpfp" ref="r:00000000-0000-4000-0000-011c89590519(jetbrains.mps.baseLanguage.regexp.jetbrains.mps.regexp.accessory)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -786,7 +786,7 @@
                 <node concept="2OqwBi" id="7FQUQ5ySXkX" role="3uHU7B">
                   <node concept="1Wqviy" id="7FQUQ5ySXkA" role="2Oq$k0" />
                   <node concept="liA8E" id="7FQUQ5ySXl3" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~String.length():int" resolve="length" />
+                    <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
                   </node>
                 </node>
               </node>
@@ -896,7 +896,7 @@
                                       <node concept="2OqwBi" id="2CeBpnxkpa3" role="3uHU7B">
                                         <node concept="1Wqviy" id="2CeBpnxkpa4" role="2Oq$k0" />
                                         <node concept="liA8E" id="2CeBpnxkpa5" role="2OqNvi">
-                                          <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                           <node concept="Xl_RD" id="2CeBpnxkpa6" role="37wK5m">
                                             <property role="Xl_RC" value="\\a" />
                                           </node>
@@ -905,7 +905,7 @@
                                       <node concept="2OqwBi" id="2CeBpnxkpa7" role="3uHU7w">
                                         <node concept="1Wqviy" id="2CeBpnxkpa8" role="2Oq$k0" />
                                         <node concept="liA8E" id="2CeBpnxkpa9" role="2OqNvi">
-                                          <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                           <node concept="Xl_RD" id="2CeBpnxkpaa" role="37wK5m">
                                             <property role="Xl_RC" value="\\b" />
                                           </node>
@@ -915,7 +915,7 @@
                                     <node concept="2OqwBi" id="2CeBpnxkpab" role="3uHU7w">
                                       <node concept="1Wqviy" id="2CeBpnxkpac" role="2Oq$k0" />
                                       <node concept="liA8E" id="2CeBpnxkpad" role="2OqNvi">
-                                        <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                         <node concept="Xl_RD" id="2CeBpnxkpae" role="37wK5m">
                                           <property role="Xl_RC" value="\\f" />
                                         </node>
@@ -925,7 +925,7 @@
                                   <node concept="2OqwBi" id="2CeBpnxkpaf" role="3uHU7w">
                                     <node concept="1Wqviy" id="2CeBpnxkpag" role="2Oq$k0" />
                                     <node concept="liA8E" id="2CeBpnxkpah" role="2OqNvi">
-                                      <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                       <node concept="Xl_RD" id="2CeBpnxkpai" role="37wK5m">
                                         <property role="Xl_RC" value="\\n" />
                                       </node>
@@ -935,7 +935,7 @@
                                 <node concept="2OqwBi" id="2CeBpnxkpaj" role="3uHU7w">
                                   <node concept="1Wqviy" id="2CeBpnxkpak" role="2Oq$k0" />
                                   <node concept="liA8E" id="2CeBpnxkpal" role="2OqNvi">
-                                    <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                     <node concept="Xl_RD" id="2CeBpnxkpam" role="37wK5m">
                                       <property role="Xl_RC" value="\\n" />
                                     </node>
@@ -945,7 +945,7 @@
                               <node concept="2OqwBi" id="2CeBpnxkpan" role="3uHU7w">
                                 <node concept="1Wqviy" id="2CeBpnxkpao" role="2Oq$k0" />
                                 <node concept="liA8E" id="2CeBpnxkpap" role="2OqNvi">
-                                  <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                   <node concept="Xl_RD" id="2CeBpnxkpaq" role="37wK5m">
                                     <property role="Xl_RC" value="\\r" />
                                   </node>
@@ -955,7 +955,7 @@
                             <node concept="2OqwBi" id="2CeBpnxkpar" role="3uHU7w">
                               <node concept="1Wqviy" id="2CeBpnxkpas" role="2Oq$k0" />
                               <node concept="liA8E" id="2CeBpnxkpat" role="2OqNvi">
-                                <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                 <node concept="Xl_RD" id="2CeBpnxkpau" role="37wK5m">
                                   <property role="Xl_RC" value="\\t" />
                                 </node>
@@ -965,7 +965,7 @@
                           <node concept="2OqwBi" id="2CeBpnxkpav" role="3uHU7w">
                             <node concept="1Wqviy" id="2CeBpnxkpaw" role="2Oq$k0" />
                             <node concept="liA8E" id="2CeBpnxkpax" role="2OqNvi">
-                              <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                               <node concept="Xl_RD" id="2CeBpnxkpay" role="37wK5m">
                                 <property role="Xl_RC" value="\\v" />
                               </node>
@@ -975,7 +975,7 @@
                         <node concept="2OqwBi" id="2CeBpnxkpaz" role="3uHU7w">
                           <node concept="1Wqviy" id="2CeBpnxkpa$" role="2Oq$k0" />
                           <node concept="liA8E" id="2CeBpnxkpa_" role="2OqNvi">
-                            <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                             <node concept="Xl_RD" id="2CeBpnxkpaA" role="37wK5m">
                               <property role="Xl_RC" value="\\'" />
                             </node>
@@ -985,7 +985,7 @@
                       <node concept="2OqwBi" id="2CeBpnxkpaB" role="3uHU7w">
                         <node concept="1Wqviy" id="2CeBpnxkpaC" role="2Oq$k0" />
                         <node concept="liA8E" id="2CeBpnxkpaD" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                           <node concept="Xl_RD" id="2CeBpnxkpaE" role="37wK5m">
                             <property role="Xl_RC" value="\\\&quot;" />
                           </node>
@@ -995,7 +995,7 @@
                     <node concept="2OqwBi" id="2CeBpnxkpaF" role="3uHU7w">
                       <node concept="1Wqviy" id="2CeBpnxkpaG" role="2Oq$k0" />
                       <node concept="liA8E" id="2CeBpnxkpaH" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                         <node concept="Xl_RD" id="2CeBpnxkpaI" role="37wK5m">
                           <property role="Xl_RC" value="\\?" />
                         </node>
@@ -1032,7 +1032,7 @@
                 <node concept="2OqwBi" id="2CeBpnxkps$" role="3clFbw">
                   <node concept="1Wqviy" id="2CeBpnxkpaY" role="2Oq$k0" />
                   <node concept="liA8E" id="2CeBpnxkpsE" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~String.matches(java.lang.String):boolean" resolve="matches" />
+                    <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                     <node concept="Xl_RD" id="2CeBpnxkpsF" role="37wK5m">
                       <property role="Xl_RC" value="\\\\([0-7]){1,3}" />
                     </node>
@@ -1055,7 +1055,7 @@
                 <node concept="2OqwBi" id="2CeBpnxkq7m" role="3clFbw">
                   <node concept="1Wqviy" id="2CeBpnxkq7n" role="2Oq$k0" />
                   <node concept="liA8E" id="2CeBpnxkq7o" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~String.matches(java.lang.String):boolean" resolve="matches" />
+                    <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                     <node concept="Xl_RD" id="2CeBpnxkq7p" role="37wK5m">
                       <property role="Xl_RC" value="\\\\([A-Fa-f0-9]){2}" />
                     </node>
@@ -1073,7 +1073,7 @@
                 <node concept="2OqwBi" id="2CeBpnxkq7u" role="3clFbw">
                   <node concept="1Wqviy" id="2CeBpnxkq7v" role="2Oq$k0" />
                   <node concept="liA8E" id="2CeBpnxkq7w" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~String.matches(java.lang.String):boolean" resolve="matches" />
+                    <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                     <node concept="Xl_RD" id="2CeBpnxkq7x" role="37wK5m">
                       <property role="Xl_RC" value="\\\\([A-Fa-f0-9]){4}" />
                     </node>
@@ -1084,7 +1084,7 @@
             <node concept="2OqwBi" id="2CeBpnxkp3g" role="3clFbw">
               <node concept="1Wqviy" id="2CeBpnxkp2T" role="2Oq$k0" />
               <node concept="liA8E" id="2CeBpnxkp3m" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                 <node concept="Xl_RD" id="2CeBpnxkp3n" role="37wK5m">
                   <property role="Xl_RC" value="\\" />
                 </node>
@@ -1101,7 +1101,7 @@
                   <node concept="2OqwBi" id="4OlFaNL4V7N" role="3uHU7B">
                     <node concept="1Wqviy" id="4OlFaNL4V7O" role="2Oq$k0" />
                     <node concept="liA8E" id="4OlFaNL4V7P" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~String.length():int" resolve="length" />
+                      <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
                     </node>
                   </node>
                 </node>
@@ -1406,7 +1406,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="3wl2bMUr97x" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                    <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                     <node concept="Xl_RD" id="3wl2bMUr97y" role="37wK5m">
                       <property role="Xl_RC" value="-" />
                     </node>

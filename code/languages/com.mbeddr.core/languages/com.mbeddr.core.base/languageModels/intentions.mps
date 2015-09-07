@@ -11,19 +11,19 @@
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
-    <import index="srng" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="dbrf" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="nu8v" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" />
-    <import index="2vit" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.message(MPS.Editor/jetbrains.mps.openapi.editor.message@java_stub)" />
-    <import index="nax5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.errors(MPS.Core/jetbrains.mps.errors@java_stub)" />
+    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
+    <import index="kpve" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.message(MPS.Editor/)" />
+    <import index="2gg1" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.errors(MPS.Core/)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
-    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -316,11 +316,11 @@
             <node concept="2OqwBi" id="3m8H$lmFM6S" role="2Oq$k0">
               <node concept="1XNTG" id="3m8H$lmFM6T" role="2Oq$k0" />
               <node concept="liA8E" id="3m8H$lmFM6U" role="2OqNvi">
-                <ref role="37wK5l" to="srng:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
               </node>
             </node>
             <node concept="liA8E" id="3m8H$lmFM6V" role="2OqNvi">
-              <ref role="37wK5l" to="srng:~EditorComponent.rebuildEditorContent():void" resolve="rebuildEditorContent" />
+              <ref role="37wK5l" to="cj4x:~EditorComponent.rebuildEditorContent():void" resolve="rebuildEditorContent" />
             </node>
           </node>
         </node>
@@ -686,7 +686,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="7ii2FhSH7Fa" role="2OqNvi">
-                              <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                               <node concept="37vLTw" id="7ii2FhSJdgk" role="37wK5m">
                                 <ref role="3cqZAo" node="7ii2FhSIKfq" resolve="curName" />
                               </node>
@@ -1076,11 +1076,11 @@
           <node concept="3cpWsn" id="5lKnBeB3Ex$" role="3cpWs9">
             <property role="TrG5h" value="fc" />
             <node concept="3uibUv" id="5lKnBeB3Ex_" role="1tU5fm">
-              <ref role="3uigEE" to="dbrf:~JFileChooser" resolve="JFileChooser" />
+              <ref role="3uigEE" to="dxuu:~JFileChooser" resolve="JFileChooser" />
             </node>
             <node concept="2ShNRf" id="5lKnBeB3EBH" role="33vP2m">
               <node concept="1pGfFk" id="5lKnBeB3EBG" role="2ShVmc">
-                <ref role="37wK5l" to="dbrf:~JFileChooser.&lt;init&gt;(java.lang.String)" resolve="JFileChooser" />
+                <ref role="37wK5l" to="dxuu:~JFileChooser.&lt;init&gt;(java.lang.String)" resolve="JFileChooser" />
                 <node concept="37vLTw" id="5lKnBeB4Zua" role="37wK5m">
                   <ref role="3cqZAo" node="5lKnBeB4Zu6" resolve="startPath" />
                 </node>
@@ -1096,10 +1096,10 @@
                   <ref role="3cqZAo" node="5lKnBeB3Ex$" resolve="fc" />
                 </node>
                 <node concept="liA8E" id="5lKnBeB4syX" role="2OqNvi">
-                  <ref role="37wK5l" to="dbrf:~JFileChooser.setFileSelectionMode(int):void" resolve="setFileSelectionMode" />
+                  <ref role="37wK5l" to="dxuu:~JFileChooser.setFileSelectionMode(int):void" resolve="setFileSelectionMode" />
                   <node concept="10M0yZ" id="5lKnBeB4sIb" role="37wK5m">
-                    <ref role="1PxDUh" to="dbrf:~JFileChooser" resolve="JFileChooser" />
-                    <ref role="3cqZAo" to="dbrf:~JFileChooser.DIRECTORIES_ONLY" resolve="DIRECTORIES_ONLY" />
+                    <ref role="1PxDUh" to="dxuu:~JFileChooser" resolve="JFileChooser" />
+                    <ref role="3cqZAo" to="dxuu:~JFileChooser.DIRECTORIES_ONLY" resolve="DIRECTORIES_ONLY" />
                   </node>
                 </node>
               </node>
@@ -1120,14 +1120,14 @@
               <node concept="3cpWsn" id="5lKnBeB4aqo" role="3cpWs9">
                 <property role="TrG5h" value="f" />
                 <node concept="3uibUv" id="5lKnBeB4aqp" role="1tU5fm">
-                  <ref role="3uigEE" to="fxg7:~File" resolve="File" />
+                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
                 </node>
                 <node concept="2OqwBi" id="5lKnBeB4btg" role="33vP2m">
                   <node concept="37vLTw" id="5lKnBeB4ayj" role="2Oq$k0">
                     <ref role="3cqZAo" node="5lKnBeB3Ex$" resolve="fc" />
                   </node>
                   <node concept="liA8E" id="5lKnBeB4gbW" role="2OqNvi">
-                    <ref role="37wK5l" to="dbrf:~JFileChooser.getSelectedFile():java.io.File" resolve="getSelectedFile" />
+                    <ref role="37wK5l" to="dxuu:~JFileChooser.getSelectedFile():java.io.File" resolve="getSelectedFile" />
                   </node>
                 </node>
               </node>
@@ -1141,7 +1141,7 @@
                     <ref role="3cqZAo" node="5lKnBeB4aqo" resolve="f" />
                   </node>
                   <node concept="liA8E" id="5lKnBeB4w0O" role="2OqNvi">
-                    <ref role="37wK5l" to="fxg7:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
                   </node>
                 </node>
               </node>
@@ -1153,7 +1153,7 @@
                     <ref role="3cqZAo" node="5lKnBeB4w0L" resolve="ap" />
                   </node>
                   <node concept="liA8E" id="5lKnBeB4Aoi" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~String.substring(int):java.lang.String" resolve="substring" />
+                    <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
                     <node concept="3cpWs3" id="5lKnBeB4FZB" role="37wK5m">
                       <node concept="3cmrfG" id="5lKnBeB4FZE" role="3uHU7w">
                         <property role="3cmrfH" value="1" />
@@ -1166,7 +1166,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="5lKnBeB4EUW" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.length():int" resolve="length" />
+                          <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
                         </node>
                       </node>
                     </node>
@@ -1183,15 +1183,15 @@
           </node>
           <node concept="3clFbC" id="5lKnBeB47Et" role="3clFbw">
             <node concept="10M0yZ" id="5lKnBeB4862" role="3uHU7w">
-              <ref role="1PxDUh" to="dbrf:~JFileChooser" resolve="JFileChooser" />
-              <ref role="3cqZAo" to="dbrf:~JFileChooser.APPROVE_OPTION" resolve="APPROVE_OPTION" />
+              <ref role="1PxDUh" to="dxuu:~JFileChooser" resolve="JFileChooser" />
+              <ref role="3cqZAo" to="dxuu:~JFileChooser.APPROVE_OPTION" resolve="APPROVE_OPTION" />
             </node>
             <node concept="2OqwBi" id="5lKnBeB3GCk" role="3uHU7B">
               <node concept="37vLTw" id="5lKnBeB3Gdz" role="2Oq$k0">
                 <ref role="3cqZAo" node="5lKnBeB3Ex$" resolve="fc" />
               </node>
               <node concept="liA8E" id="5lKnBeB3LOH" role="2OqNvi">
-                <ref role="37wK5l" to="dbrf:~JFileChooser.showOpenDialog(java.awt.Component):int" resolve="showOpenDialog" />
+                <ref role="37wK5l" to="dxuu:~JFileChooser.showOpenDialog(java.awt.Component):int" resolve="showOpenDialog" />
                 <node concept="10Nm6u" id="5lKnBeB3Vct" role="37wK5m" />
               </node>
             </node>
@@ -1463,17 +1463,17 @@
           <node concept="3cpWsn" id="2sSBlKpTdgf" role="3cpWs9">
             <property role="TrG5h" value="c" />
             <node concept="3uibUv" id="2sSBlKpTdgb" role="1tU5fm">
-              <ref role="3uigEE" to="nu8v:~EditorCell" resolve="EditorCell" />
+              <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
             </node>
             <node concept="2OqwBi" id="4aER8VTe57l" role="33vP2m">
               <node concept="2OqwBi" id="2sSBlKpTdgg" role="2Oq$k0">
                 <node concept="1XNTG" id="2sSBlKpTdgh" role="2Oq$k0" />
                 <node concept="liA8E" id="4aER8VTe4Z4" role="2OqNvi">
-                  <ref role="37wK5l" to="srng:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
                 </node>
               </node>
               <node concept="liA8E" id="4aER8VTe5sN" role="2OqNvi">
-                <ref role="37wK5l" to="srng:~EditorComponent.findNodeCell(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="findNodeCell" />
+                <ref role="37wK5l" to="cj4x:~EditorComponent.findNodeCell(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="findNodeCell" />
                 <node concept="2Sf5sV" id="4aER8VTe5_a" role="37wK5m" />
               </node>
             </node>
@@ -1483,9 +1483,9 @@
           <node concept="3cpWsn" id="2sSBlKpTdYr" role="3cpWs9">
             <property role="TrG5h" value="messages" />
             <node concept="3uibUv" id="2sSBlKpTdYd" role="1tU5fm">
-              <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+              <ref role="3uigEE" to="33ny:~List" resolve="List" />
               <node concept="3uibUv" id="2sSBlKpTdYg" role="11_B2D">
-                <ref role="3uigEE" to="2vit:~SimpleEditorMessage" resolve="SimpleEditorMessage" />
+                <ref role="3uigEE" to="kpve:~SimpleEditorMessage" resolve="SimpleEditorMessage" />
               </node>
             </node>
             <node concept="2OqwBi" id="2sSBlKpTdYs" role="33vP2m">
@@ -1493,7 +1493,7 @@
                 <ref role="3cqZAo" node="2sSBlKpTdgf" resolve="c" />
               </node>
               <node concept="liA8E" id="2sSBlKpTdYu" role="2OqNvi">
-                <ref role="37wK5l" to="nu8v:~EditorCell.getMessages():java.util.List" resolve="getMessages" />
+                <ref role="37wK5l" to="f4zo:~EditorCell.getMessages():java.util.List" resolve="getMessages" />
               </node>
             </node>
           </node>
@@ -1513,15 +1513,15 @@
               </node>
               <node concept="3clFbC" id="2sSBlKpTgL$" role="3clFbw">
                 <node concept="Rm8GO" id="2sSBlKpThhA" role="3uHU7w">
-                  <ref role="Rm8GQ" to="nax5:~MessageStatus.WARNING" resolve="WARNING" />
-                  <ref role="1Px2BO" to="nax5:~MessageStatus" resolve="MessageStatus" />
+                  <ref role="Rm8GQ" to="2gg1:~MessageStatus.WARNING" resolve="WARNING" />
+                  <ref role="1Px2BO" to="2gg1:~MessageStatus" resolve="MessageStatus" />
                 </node>
                 <node concept="2OqwBi" id="2sSBlKpTfHe" role="3uHU7B">
                   <node concept="2GrUjf" id="2sSBlKpTfCc" role="2Oq$k0">
                     <ref role="2Gs0qQ" node="2sSBlKpTfiv" resolve="m" />
                   </node>
                   <node concept="liA8E" id="2sSBlKpTggg" role="2OqNvi">
-                    <ref role="37wK5l" to="2vit:~SimpleEditorMessage.getStatus():jetbrains.mps.errors.MessageStatus" resolve="getStatus" />
+                    <ref role="37wK5l" to="kpve:~SimpleEditorMessage.getStatus():jetbrains.mps.errors.MessageStatus" resolve="getStatus" />
                   </node>
                 </node>
               </node>

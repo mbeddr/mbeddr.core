@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -427,7 +427,7 @@
                 <property role="TrG5h" value="elements" />
                 <node concept="A3Dl8" id="1yhDrW7s3LF" role="1tU5fm">
                   <node concept="3uibUv" id="1yhDrW7s3LI" role="A3Ik2">
-                    <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                    <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="1yhDrW7s3LT" role="33vP2m">
@@ -769,8 +769,8 @@
                 <property role="Xl_RC" value="" />
               </node>
               <node concept="2YIFZM" id="Ux_D7zzfgK" role="3uHU7B">
-                <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
-                <ref role="37wK5l" to="e2lb:~Integer.parseInt(java.lang.String,int):int" resolve="parseInt" />
+                <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String,int):int" resolve="parseInt" />
                 <node concept="2OqwBi" id="Ux_D7zzfgM" role="37wK5m">
                   <node concept="117lpO" id="Ux_D7zzfgL" role="2Oq$k0" />
                   <node concept="3TrcHB" id="Ux_D7zzfgQ" role="2OqNvi">

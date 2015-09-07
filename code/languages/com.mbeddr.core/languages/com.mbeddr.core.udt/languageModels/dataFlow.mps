@@ -10,7 +10,7 @@
   <imports>
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="9xhd" ref="r:2462c642-dc5b-476a-b684-01d77df4913e(com.mbeddr.core.modules.dataFlow)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
   </imports>
@@ -135,7 +135,7 @@
       <property role="TrG5h" value="initTypeMap" />
       <node concept="3Tm6S6" id="5lHQMoFTxv1" role="1B3o_S" />
       <node concept="3uibUv" id="5lHQMoFTxv3" role="1tU5fm">
-        <ref role="3uigEE" to="k7g3:~Map" resolve="Map" />
+        <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
         <node concept="3Tqbb2" id="5lHQMoFTxv6" role="11_B2D">
           <ref role="ehGHo" to="mj1l:7oI7FI6okEX" resolve="IOnlyInInitialization" />
         </node>
@@ -145,7 +145,7 @@
       </node>
       <node concept="2ShNRf" id="5lHQMoFTxva" role="33vP2m">
         <node concept="1pGfFk" id="5lHQMoFTxvc" role="2ShVmc">
-          <ref role="37wK5l" to="k7g3:~HashMap.&lt;init&gt;()" resolve="HashMap" />
+          <ref role="37wK5l" to="33ny:~HashMap.&lt;init&gt;()" resolve="HashMap" />
           <node concept="3Tqbb2" id="5lHQMoFTxve" role="1pMfVU">
             <ref role="ehGHo" to="mj1l:7oI7FI6okEX" resolve="IOnlyInInitialization" />
           </node>
@@ -167,7 +167,7 @@
               <ref role="3cqZAo" node="5lHQMoFTxv0" resolve="initTypeMap" />
             </node>
             <node concept="liA8E" id="5lHQMoFTxvG" role="2OqNvi">
-              <ref role="37wK5l" to="k7g3:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
               <node concept="3cpWs2" id="5lHQMoFTxvH" role="37wK5m">
                 <ref role="3cqZAo" node="5lHQMoFTxuX" resolve="initExpression" />
               </node>
@@ -210,7 +210,7 @@
                 <ref role="3cqZAo" node="5lHQMoFTxv0" resolve="initTypeMap" />
               </node>
               <node concept="liA8E" id="5lHQMoFTxwv" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
                 <node concept="3cpWs2" id="5lHQMoFTxww" role="37wK5m">
                   <ref role="3cqZAo" node="5lHQMoFTxvP" resolve="initExpression" />
                 </node>
@@ -224,7 +224,7 @@
               <ref role="3cqZAo" node="5lHQMoFTxv0" resolve="initTypeMap" />
             </node>
             <node concept="liA8E" id="5lHQMoFTxx1" role="2OqNvi">
-              <ref role="37wK5l" to="k7g3:~Map.remove(java.lang.Object):java.lang.Object" resolve="remove" />
+              <ref role="37wK5l" to="33ny:~Map.remove(java.lang.Object):java.lang.Object" resolve="remove" />
               <node concept="3cpWs2" id="5lHQMoFTxx2" role="37wK5m">
                 <ref role="3cqZAo" node="5lHQMoFTxvP" resolve="initExpression" />
               </node>

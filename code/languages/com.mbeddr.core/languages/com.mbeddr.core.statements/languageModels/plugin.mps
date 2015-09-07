@@ -13,7 +13,7 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="rcia" ref="r:bae7addc-e10d-4f29-a8ac-0448d3c5daaf(com.mbeddr.core.expressions.plugin)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -201,7 +201,7 @@
               <node concept="3cpWsn" id="3VM1o5wbxvw" role="3cpWs9">
                 <property role="TrG5h" value="result" />
                 <node concept="3uibUv" id="3VM1o5wbxvx" role="1tU5fm">
-                  <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
                 <node concept="10Nm6u" id="3VM1o5wbxvy" role="33vP2m" />
               </node>
@@ -393,7 +393,7 @@
                         </node>
                       </node>
                       <node concept="3uibUv" id="2dYcOjDikL7" role="10QFUM">
-                        <ref role="3uigEE" to="e2lb:~Boolean" resolve="Boolean" />
+                        <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
                       </node>
                     </node>
                   </node>

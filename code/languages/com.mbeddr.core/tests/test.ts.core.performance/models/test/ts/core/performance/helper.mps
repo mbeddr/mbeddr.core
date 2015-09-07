@@ -7,9 +7,9 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
   </languages>
   <imports>
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -287,8 +287,8 @@
                 <property role="TrG5h" value="start" />
                 <node concept="3cpWsb" id="4QsoB8VJJwK" role="1tU5fm" />
                 <node concept="2YIFZM" id="4QsoB8VJJwL" role="33vP2m">
-                  <ref role="37wK5l" to="e2lb:~System.nanoTime():long" resolve="nanoTime" />
-                  <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+                  <ref role="37wK5l" to="wyt6:~System.nanoTime():long" resolve="nanoTime" />
+                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                 </node>
               </node>
             </node>
@@ -305,8 +305,8 @@
                 <property role="TrG5h" value="stop" />
                 <node concept="3cpWsb" id="4QsoB8VJJwS" role="1tU5fm" />
                 <node concept="2YIFZM" id="4QsoB8VJJwT" role="33vP2m">
-                  <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
-                  <ref role="37wK5l" to="e2lb:~System.nanoTime():long" resolve="nanoTime" />
+                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                  <ref role="37wK5l" to="wyt6:~System.nanoTime():long" resolve="nanoTime" />
                 </node>
               </node>
             </node>
@@ -368,8 +368,8 @@
                 </node>
                 <node concept="3dhRuq" id="4QsoB8VJJxj" role="2OqNvi">
                   <node concept="2YIFZM" id="4QsoB8VJJxk" role="25WWJ7">
-                    <ref role="37wK5l" to="k7g3:~Collections.max(java.util.Collection):java.lang.Object" resolve="max" />
-                    <ref role="1Pybhc" to="k7g3:~Collections" resolve="Collections" />
+                    <ref role="37wK5l" to="33ny:~Collections.max(java.util.Collection):java.lang.Object" resolve="max" />
+                    <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
                     <node concept="37vLTw" id="4QsoB8VJJxl" role="37wK5m">
                       <ref role="3cqZAo" node="4QsoB8VJJw$" resolve="result" />
                     </node>
@@ -384,8 +384,8 @@
                 </node>
                 <node concept="3dhRuq" id="4QsoB8VJJxp" role="2OqNvi">
                   <node concept="2YIFZM" id="4QsoB8VJJxq" role="25WWJ7">
-                    <ref role="1Pybhc" to="k7g3:~Collections" resolve="Collections" />
-                    <ref role="37wK5l" to="k7g3:~Collections.min(java.util.Collection):java.lang.Object" resolve="min" />
+                    <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+                    <ref role="37wK5l" to="33ny:~Collections.min(java.util.Collection):java.lang.Object" resolve="min" />
                     <node concept="37vLTw" id="4QsoB8VJJxr" role="37wK5m">
                       <ref role="3cqZAo" node="4QsoB8VJJw$" resolve="result" />
                     </node>
@@ -444,8 +444,8 @@
             <property role="TrG5h" value="min" />
             <node concept="3cpWsb" id="4QsoB8VJJxL" role="1tU5fm" />
             <node concept="2YIFZM" id="4QsoB8VJJxM" role="33vP2m">
-              <ref role="37wK5l" to="k7g3:~Collections.min(java.util.Collection):java.lang.Object" resolve="min" />
-              <ref role="1Pybhc" to="k7g3:~Collections" resolve="Collections" />
+              <ref role="37wK5l" to="33ny:~Collections.min(java.util.Collection):java.lang.Object" resolve="min" />
+              <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
               <node concept="37vLTw" id="4QsoB8VJJxN" role="37wK5m">
                 <ref role="3cqZAo" node="4QsoB8VJJyg" resolve="runs" />
               </node>
@@ -457,8 +457,8 @@
             <property role="TrG5h" value="max" />
             <node concept="3cpWsb" id="4QsoB8VJJxQ" role="1tU5fm" />
             <node concept="2YIFZM" id="4QsoB8VJJxR" role="33vP2m">
-              <ref role="37wK5l" to="k7g3:~Collections.max(java.util.Collection):java.lang.Object" resolve="max" />
-              <ref role="1Pybhc" to="k7g3:~Collections" resolve="Collections" />
+              <ref role="37wK5l" to="33ny:~Collections.max(java.util.Collection):java.lang.Object" resolve="max" />
+              <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
               <node concept="37vLTw" id="4QsoB8VJJxS" role="37wK5m">
                 <ref role="3cqZAo" node="4QsoB8VJJyg" resolve="runs" />
               </node>
@@ -481,14 +481,14 @@
         <node concept="3clFbF" id="4QsoB8VSOyT" role="3cqZAp">
           <node concept="2OqwBi" id="4QsoB8VSOyP" role="3clFbG">
             <node concept="10M0yZ" id="4QsoB8VSOyQ" role="2Oq$k0">
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
             </node>
             <node concept="liA8E" id="4QsoB8VSOyR" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="2YIFZM" id="4QsoB8VSS57" role="37wK5m">
-                <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+                <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                 <node concept="Xl_RD" id="4QsoB8VST8M" role="37wK5m">
                   <property role="Xl_RC" value="##teamcity[buildStatisticValue key='%s' value='%f']" />
                 </node>
@@ -513,14 +513,14 @@
         <node concept="3clFbF" id="4QsoB8VT6OM" role="3cqZAp">
           <node concept="2OqwBi" id="4QsoB8VT6ON" role="3clFbG">
             <node concept="10M0yZ" id="4QsoB8VT6OO" role="2Oq$k0">
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
             </node>
             <node concept="liA8E" id="4QsoB8VT6OP" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="2YIFZM" id="4QsoB8VT6OQ" role="37wK5m">
-                <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+                <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                 <node concept="Xl_RD" id="4QsoB8VT6OR" role="37wK5m">
                   <property role="Xl_RC" value="##teamcity[buildStatisticValue key='%s' value='%f']" />
                 </node>
@@ -545,14 +545,14 @@
         <node concept="3clFbF" id="4QsoB8VT8qr" role="3cqZAp">
           <node concept="2OqwBi" id="4QsoB8VT8qs" role="3clFbG">
             <node concept="10M0yZ" id="4QsoB8VT8qt" role="2Oq$k0">
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
             </node>
             <node concept="liA8E" id="4QsoB8VT8qu" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="2YIFZM" id="4QsoB8VT8qv" role="37wK5m">
-                <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
-                <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
                 <node concept="Xl_RD" id="4QsoB8VT8qw" role="37wK5m">
                   <property role="Xl_RC" value="##teamcity[buildStatisticValue key='%s' value='%f']" />
                 </node>
@@ -727,11 +727,11 @@
             <property role="TrG5h" value="d" />
             <node concept="10P55v" id="4QsoB8VJJzk" role="1tU5fm" />
             <node concept="2YIFZM" id="4QsoB8VJJzl" role="33vP2m">
-              <ref role="1Pybhc" to="e2lb:~Math" resolve="Math" />
-              <ref role="37wK5l" to="e2lb:~Math.ceil(double):double" resolve="ceil" />
+              <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+              <ref role="37wK5l" to="wyt6:~Math.ceil(double):double" resolve="ceil" />
               <node concept="2YIFZM" id="4QsoB8VJJzm" role="37wK5m">
-                <ref role="1Pybhc" to="e2lb:~Math" resolve="Math" />
-                <ref role="37wK5l" to="e2lb:~Math.log10(double):double" resolve="log10" />
+                <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+                <ref role="37wK5l" to="wyt6:~Math.log10(double):double" resolve="log10" />
                 <node concept="3K4zz7" id="4QsoB8VJJzn" role="37wK5m">
                   <node concept="1ZRNhn" id="4QsoB8VJJzo" role="3K4E3e">
                     <node concept="37vLTw" id="4QsoB8VJJzp" role="2$L3a6">
@@ -781,8 +781,8 @@
             <property role="TrG5h" value="magnitude" />
             <node concept="10P55v" id="4QsoB8VJJzE" role="1tU5fm" />
             <node concept="2YIFZM" id="4QsoB8VJJzF" role="33vP2m">
-              <ref role="37wK5l" to="e2lb:~Math.pow(double,double):double" resolve="pow" />
-              <ref role="1Pybhc" to="e2lb:~Math" resolve="Math" />
+              <ref role="37wK5l" to="wyt6:~Math.pow(double,double):double" resolve="pow" />
+              <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
               <node concept="3cmrfG" id="4QsoB8VJJzG" role="37wK5m">
                 <property role="3cmrfH" value="10" />
               </node>
@@ -798,8 +798,8 @@
             <property role="TrG5h" value="shifted" />
             <node concept="3cpWsb" id="4QsoB8VJJzK" role="1tU5fm" />
             <node concept="2YIFZM" id="4QsoB8VJJzL" role="33vP2m">
-              <ref role="37wK5l" to="e2lb:~Math.round(double):long" resolve="round" />
-              <ref role="1Pybhc" to="e2lb:~Math" resolve="Math" />
+              <ref role="37wK5l" to="wyt6:~Math.round(double):long" resolve="round" />
+              <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
               <node concept="17qRlL" id="4QsoB8VJJzM" role="37wK5m">
                 <node concept="37vLTw" id="4QsoB8VJJzN" role="3uHU7w">
                   <ref role="3cqZAo" node="4QsoB8VJJzD" resolve="magnitude" />

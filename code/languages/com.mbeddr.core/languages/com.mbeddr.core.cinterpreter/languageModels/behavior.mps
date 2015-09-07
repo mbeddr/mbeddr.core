@@ -11,7 +11,7 @@
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="xi9i" ref="r:1a0a0fc6-4a62-41d0-9af4-610c85e7bcac(com.mbeddr.core.cinterpreter.structure)" />
     <import index="fac3" ref="r:5cb76491-cdbe-4d53-958c-9017fcd0ccc6(com.mbeddr.mpsutil.interpreter.test.behavior)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
   </imports>
   <registry>
@@ -250,7 +250,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="65E6xpGW7OQ" role="3clF45">
-        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
       </node>
       <node concept="3Tmbuc" id="65E6xpGW7OR" role="1B3o_S" />
     </node>
@@ -300,7 +300,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="2pogikRxvSO" role="3clF45">
-        <ref role="3uigEE" to="e2lb:~Boolean" resolve="Boolean" />
+        <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
       </node>
     </node>
     <node concept="13i0hz" id="2pogikRxvSR" role="13h7CS">

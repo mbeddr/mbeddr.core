@@ -70,7 +70,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -1793,7 +1793,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="8PQYyu8txo">
-    <ref role="WuzLi" to="x27k:8PQYytE9VE" resolve="PragmaDeclaration" />
+    <ref role="WuzLi" to="x27k:8PQYytE9VE" resolve="ModifierModuleContent" />
     <node concept="11bSqf" id="8PQYyu8txp" role="11c4hB">
       <node concept="3clFbS" id="8PQYyu8txq" role="2VODD2">
         <node concept="3SKdUt" id="8PQYyu8tyk" role="3cqZAp">
@@ -1969,7 +1969,7 @@
             <node concept="2OqwBi" id="IrwlmWyTkX" role="lb14g">
               <node concept="117lpO" id="IrwlmWyTkC" role="2Oq$k0" />
               <node concept="3TrcHB" id="IrwlmWyTl3" role="2OqNvi">
-                <ref role="3TsBF5" to="x27k:IrwlmWyLjw" resolve="pragmaString" />
+                <ref role="3TsBF5" to="x27k:IrwlmWyLjw" resolve="pragmaText" />
               </node>
             </node>
           </node>

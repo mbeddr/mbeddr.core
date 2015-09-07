@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="s5bn" ref="r:a92dafc6-eacf-4328-984c-d7620d951c7f(com.mbeddr.core.legacy.structure)" />
-    <import index="cu2c" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
   </imports>
   <registry>
@@ -109,8 +109,8 @@
       <node concept="3clFbS" id="RsLjUnMM9r" role="2VODD2">
         <node concept="3clFbF" id="5r4m0RhYcLU" role="3cqZAp">
           <node concept="2YIFZM" id="5r4m0RhYcLX" role="3clFbG">
-            <ref role="1Pybhc" to="cu2c:~SModelStereotype" resolve="SModelStereotype" />
-            <ref role="37wK5l" to="cu2c:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isGeneratorModel" />
+            <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
+            <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isGeneratorModel" />
             <node concept="2OqwBi" id="5r4m0RhYcMl" role="37wK5m">
               <node concept="nLn13" id="5r4m0RhYcLY" role="2Oq$k0" />
               <node concept="I4A8Y" id="5r4m0RhYcMu" role="2OqNvi" />

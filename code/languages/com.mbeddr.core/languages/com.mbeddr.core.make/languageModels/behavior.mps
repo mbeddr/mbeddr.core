@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="i2y7" ref="r:098cbe90-1cfd-414a-b5e8-aca28752df17(com.mbeddr.core.make.structure)" />
-    <import index="as9o" ref="f:java_stub#3f233e7f-b8a6-46d2-a57f-795d56775243#org.jetbrains.annotations(Annotations/org.jetbrains.annotations@java_stub)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -119,7 +119,7 @@
       <node concept="17QB3L" id="3s1LyzG7eNt" role="3clF45" />
       <node concept="3clFbS" id="3s1LyzG7eN2" role="3clF47" />
       <node concept="2AHcQZ" id="3s1LyzG7eNw" role="2AJF6D">
-        <ref role="2AI5Lk" to="as9o:~Nullable" resolve="Nullable" />
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
     </node>
     <node concept="13hLZK" id="3s1LyzGeK9X" role="13h7CW">
@@ -139,7 +139,7 @@
       </node>
       <node concept="3clFbS" id="3s1LyzGfrMO" role="3clF47" />
       <node concept="2AHcQZ" id="3s1LyzGfrMW" role="2AJF6D">
-        <ref role="2AI5Lk" to="as9o:~Nullable" resolve="Nullable" />
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
     </node>
     <node concept="13hLZK" id="3s1LyzGfrMJ" role="13h7CW">

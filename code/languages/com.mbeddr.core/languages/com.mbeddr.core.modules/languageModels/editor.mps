@@ -17,18 +17,18 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="vrqd" ref="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" />
     <import index="j4gk" ref="r:44b6f9b4-bfdb-4b99-b104-960ec485d777(com.mbeddr.core.statements.editor)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
-    <import index="srng" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="9a8" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1174,7 +1174,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="2I09F8VJWLf" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                     <node concept="Xl_RD" id="2I09F8VJWLg" role="37wK5m">
                       <property role="Xl_RC" value="Type" />
                     </node>
@@ -1546,12 +1546,12 @@
                   <node concept="3clFbF" id="2CEi94eH1Vs" role="3cqZAp">
                     <node concept="3K4zz7" id="2CEi94eH7$J" role="3clFbG">
                       <node concept="10M0yZ" id="y826GEysPZ" role="3K4E3e">
-                        <ref role="1PxDUh" to="9a8:~MPSFonts" resolve="MPSFonts" />
-                        <ref role="3cqZAo" to="9a8:~MPSFonts.ITALIC" resolve="ITALIC" />
+                        <ref role="1PxDUh" to="exr9:~MPSFonts" resolve="MPSFonts" />
+                        <ref role="3cqZAo" to="exr9:~MPSFonts.ITALIC" resolve="ITALIC" />
                       </node>
                       <node concept="10M0yZ" id="y826GEyudI" role="3K4GZi">
-                        <ref role="1PxDUh" to="9a8:~MPSFonts" resolve="MPSFonts" />
-                        <ref role="3cqZAo" to="9a8:~MPSFonts.PLAIN" resolve="PLAIN" />
+                        <ref role="1PxDUh" to="exr9:~MPSFonts" resolve="MPSFonts" />
+                        <ref role="3cqZAo" to="exr9:~MPSFonts.PLAIN" resolve="PLAIN" />
                       </node>
                       <node concept="2OqwBi" id="2CEi94eH4R2" role="3K4Cdx">
                         <node concept="2OqwBi" id="2CEi94eH2ba" role="2Oq$k0">
@@ -3107,7 +3107,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="7x9Z_y1SenE" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~Object.toString():java.lang.String" resolve="toString" />
+                          <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
                         </node>
                       </node>
                     </node>
@@ -3326,8 +3326,8 @@
                   <ref role="37wK5l" to="r4b4:6Ce4x7KQbw2" resolve="ColoredVerticalBarCell" />
                   <node concept="pncrf" id="2hmLFgaUO3p" role="37wK5m" />
                   <node concept="10M0yZ" id="2hmLFgaUPt4" role="37wK5m">
-                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                    <ref role="3cqZAo" to="1t7x:~Color.gray" resolve="gray" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
                   </node>
                   <node concept="3cmrfG" id="2hmLFgaUOaz" role="37wK5m">
                     <property role="3cmrfH" value="0" />
@@ -3729,8 +3729,8 @@
       <node concept="3clFbS" id="2$xXL4HmqJA" role="2VODD2">
         <node concept="3clFbF" id="2$xXL4HpNc1" role="3cqZAp">
           <node concept="2YIFZM" id="2$xXL4HpNJj" role="3clFbG">
-            <ref role="37wK5l" to="k7g3:~Collections.singleton(java.lang.Object):java.util.Set" resolve="singleton" />
-            <ref role="1Pybhc" to="k7g3:~Collections" resolve="Collections" />
+            <ref role="37wK5l" to="33ny:~Collections.singleton(java.lang.Object):java.util.Set" resolve="singleton" />
+            <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
             <node concept="jzRn0" id="2$xXL4HpO2D" role="37wK5m" />
           </node>
         </node>
@@ -3774,7 +3774,7 @@
       <node concept="37vLTG" id="2$xXL4HtRNh" role="3clF46">
         <property role="TrG5h" value="editorContext" />
         <node concept="3uibUv" id="2$xXL4HtRNi" role="1tU5fm">
-          <ref role="3uigEE" to="srng:~EditorContext" resolve="EditorContext" />
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
         </node>
       </node>
       <node concept="3Tqbb2" id="2$xXL4HtRNj" role="3clF45">
@@ -3790,7 +3790,7 @@
                 <ref role="3cqZAo" node="2$xXL4HtRNh" resolve="editorContext" />
               </node>
               <node concept="liA8E" id="2$xXL4HtRNq" role="2OqNvi">
-                <ref role="37wK5l" to="srng:~EditorContext.getSelectedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSelectedNode" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSelectedNode" />
               </node>
             </node>
           </node>
@@ -3887,8 +3887,8 @@
       <node concept="3clFbS" id="2$xXL4HtRNZ" role="2VODD2">
         <node concept="3clFbF" id="2$xXL4HtRO0" role="3cqZAp">
           <node concept="2YIFZM" id="2$xXL4HtRO1" role="3clFbG">
-            <ref role="1Pybhc" to="k7g3:~Collections" resolve="Collections" />
-            <ref role="37wK5l" to="k7g3:~Collections.singleton(java.lang.Object):java.util.Set" resolve="singleton" />
+            <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+            <ref role="37wK5l" to="33ny:~Collections.singleton(java.lang.Object):java.util.Set" resolve="singleton" />
             <node concept="jzRn0" id="2$xXL4HCxza" role="37wK5m" />
           </node>
         </node>
@@ -4147,7 +4147,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="4b64BCbUKHF" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~Object.toString():java.lang.String" resolve="toString" />
+                          <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
                         </node>
                       </node>
                     </node>
@@ -4997,7 +4997,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="4b64BCbUIHU" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~Object.toString():java.lang.String" resolve="toString" />
+                          <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
                         </node>
                       </node>
                     </node>

@@ -10,7 +10,7 @@
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
@@ -318,7 +318,7 @@
                 <property role="TrG5h" value="createSpecialTextGenString" />
                 <node concept="A3Dl8" id="6o2p2Z0JrAA" role="1tU5fm">
                   <node concept="3uibUv" id="6o2p2Z0JrAD" role="A3Ik2">
-                    <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                    <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="6o2p2Z0JrAO" role="33vP2m">
@@ -396,7 +396,7 @@
                       <node concept="YS8fn" id="6o2p2Z0JNHc" role="3cqZAp">
                         <node concept="2ShNRf" id="6o2p2Z0JNHy" role="YScLw">
                           <node concept="1pGfFk" id="6o2p2Z0JRm5" role="2ShVmc">
-                            <ref role="37wK5l" to="e2lb:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
+                            <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
                             <node concept="3cpWs3" id="6o2p2Z0JTLN" role="37wK5m">
                               <node concept="2OqwBi" id="6o2p2Z0JWP1" role="3uHU7w">
                                 <node concept="2OqwBi" id="6o2p2Z0JTSF" role="2Oq$k0">
@@ -404,11 +404,11 @@
                                     <ref role="2Gs0qQ" node="6o2p2Z0Juit" resolve="o" />
                                   </node>
                                   <node concept="liA8E" id="6o2p2Z0JVi5" role="2OqNvi">
-                                    <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
+                                    <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="6o2p2Z0JYM8" role="2OqNvi">
-                                  <ref role="37wK5l" to="e2lb:~Class.getName():java.lang.String" resolve="getName" />
+                                  <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
                                 </node>
                               </node>
                               <node concept="Xl_RD" id="6o2p2Z0JSt3" role="3uHU7B">
@@ -1571,7 +1571,7 @@
                     <property role="TrG5h" value="createSpecialTextGenString" />
                     <node concept="A3Dl8" id="58TcxRGEE_I" role="1tU5fm">
                       <node concept="3uibUv" id="58TcxRGEE_J" role="A3Ik2">
-                        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="58TcxRGEE_K" role="33vP2m">
@@ -1649,7 +1649,7 @@
                           <node concept="YS8fn" id="58TcxRGEEAk" role="3cqZAp">
                             <node concept="2ShNRf" id="58TcxRGEEAl" role="YScLw">
                               <node concept="1pGfFk" id="58TcxRGEEAm" role="2ShVmc">
-                                <ref role="37wK5l" to="e2lb:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
+                                <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
                                 <node concept="3cpWs3" id="58TcxRGEEAn" role="37wK5m">
                                   <node concept="2OqwBi" id="58TcxRGEEAo" role="3uHU7w">
                                     <node concept="2OqwBi" id="58TcxRGEEAp" role="2Oq$k0">
@@ -1657,11 +1657,11 @@
                                         <ref role="2Gs0qQ" node="58TcxRGEE_T" resolve="o" />
                                       </node>
                                       <node concept="liA8E" id="58TcxRGEEAr" role="2OqNvi">
-                                        <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
+                                        <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="58TcxRGEEAs" role="2OqNvi">
-                                      <ref role="37wK5l" to="e2lb:~Class.getName():java.lang.String" resolve="getName" />
+                                      <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
                                     </node>
                                   </node>
                                   <node concept="Xl_RD" id="58TcxRGEEAt" role="3uHU7B">
