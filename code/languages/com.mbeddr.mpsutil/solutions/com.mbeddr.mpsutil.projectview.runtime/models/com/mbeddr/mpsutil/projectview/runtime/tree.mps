@@ -92,6 +92,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -200,6 +201,7 @@
         <child id="1212687122400" name="typeParameter" index="1pMfVU" />
       </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
@@ -295,12 +297,24 @@
         <child id="1237731803878" name="copyFrom" index="I$8f6" />
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1237909114519" name="jetbrains.mps.baseLanguage.collections.structure.GetValuesOperation" flags="nn" index="T8wYR" />
+      <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
+      <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="4611582986551314327" name="jetbrains.mps.baseLanguage.collections.structure.OfTypeOperation" flags="nn" index="UnYns">
         <child id="4611582986551314344" name="requestedType" index="UnYnz" />
+      </concept>
+      <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
+      <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
+        <child id="1197683466920" name="keyType" index="3rvQeY" />
+        <child id="1197683475734" name="valueType" index="3rvSg0" />
       </concept>
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
+      <concept id="1197932370469" name="jetbrains.mps.baseLanguage.collections.structure.MapElement" flags="nn" index="3EllGN">
+        <child id="1197932505799" name="map" index="3ElQJh" />
+        <child id="1197932525128" name="key" index="3ElVtu" />
+      </concept>
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
@@ -2580,6 +2594,24 @@
                       <ref role="37wK5l" to="rgfa:~DefaultMutableTreeNode.removeAllChildren():void" resolve="removeAllChildren" />
                     </node>
                   </node>
+                  <node concept="3clFbH" id="1CDgnklJbh5" role="3cqZAp" />
+                  <node concept="3cpWs8" id="1CDgnklJ21W" role="3cqZAp">
+                    <node concept="3cpWsn" id="1CDgnklJ21Z" role="3cpWs9">
+                      <property role="TrG5h" value="children" />
+                      <node concept="_YKpA" id="1CDgnklJ21S" role="1tU5fm">
+                        <node concept="3uibUv" id="1CDgnklJ2yf" role="_ZDj9">
+                          <ref role="3uigEE" node="7diJr$Rkh9d" resolve="CustomTreeNode" />
+                        </node>
+                      </node>
+                      <node concept="2ShNRf" id="1CDgnklJ4B$" role="33vP2m">
+                        <node concept="Tc6Ow" id="1CDgnklJ4nd" role="2ShVmc">
+                          <node concept="3uibUv" id="1CDgnklJ4ne" role="HW$YZ">
+                            <ref role="3uigEE" node="7diJr$Rkh9d" resolve="CustomTreeNode" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                   <node concept="2Gpval" id="XZKPulBfje" role="3cqZAp">
                     <node concept="2GrKxI" id="XZKPulBfjf" role="2Gsz3X">
                       <property role="TrG5h" value="childDescriptor" />
@@ -2665,48 +2697,35 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbF" id="XZKPulBfjq" role="3cqZAp">
-                        <node concept="2OqwBi" id="XZKPulBfjr" role="3clFbG">
-                          <node concept="2OqwBi" id="XZKPulBfjs" role="2Oq$k0">
-                            <node concept="37vLTw" id="XZKPulBfjt" role="2Oq$k0">
-                              <ref role="3cqZAo" node="XZKPulBfji" resolve="elements" />
-                            </node>
-                            <node concept="3$u5V9" id="XZKPulBfju" role="2OqNvi">
-                              <node concept="1bVj0M" id="XZKPulBfjv" role="23t8la">
-                                <node concept="3clFbS" id="XZKPulBfjw" role="1bW5cS">
-                                  <node concept="3clFbF" id="XZKPulBfjx" role="3cqZAp">
-                                    <node concept="2ShNRf" id="XZKPulBfjy" role="3clFbG">
-                                      <node concept="1pGfFk" id="XZKPulBfjz" role="2ShVmc">
-                                        <ref role="37wK5l" node="VPgi8eh4ua" resolve="CustomTreeNode" />
-                                        <node concept="37vLTw" id="XZKPulBfj$" role="37wK5m">
-                                          <ref role="3cqZAo" node="XZKPulBfj_" resolve="it" />
+                      <node concept="3clFbF" id="1CDgnklJ5Je" role="3cqZAp">
+                        <node concept="2OqwBi" id="1CDgnklJ76M" role="3clFbG">
+                          <node concept="37vLTw" id="1CDgnklJ5Jc" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1CDgnklJ21Z" resolve="children" />
+                          </node>
+                          <node concept="X8dFx" id="1CDgnklJ9_G" role="2OqNvi">
+                            <node concept="2OqwBi" id="1CDgnklJ9Y$" role="25WWJ7">
+                              <node concept="37vLTw" id="1CDgnklJ9Y_" role="2Oq$k0">
+                                <ref role="3cqZAo" node="XZKPulBfji" resolve="elements" />
+                              </node>
+                              <node concept="3$u5V9" id="1CDgnklJ9YA" role="2OqNvi">
+                                <node concept="1bVj0M" id="1CDgnklJ9YB" role="23t8la">
+                                  <node concept="3clFbS" id="1CDgnklJ9YC" role="1bW5cS">
+                                    <node concept="3clFbF" id="1CDgnklJ9YD" role="3cqZAp">
+                                      <node concept="2ShNRf" id="1CDgnklJ9YE" role="3clFbG">
+                                        <node concept="1pGfFk" id="1CDgnklJ9YF" role="2ShVmc">
+                                          <ref role="37wK5l" node="VPgi8eh4ua" resolve="CustomTreeNode" />
+                                          <node concept="37vLTw" id="1CDgnklJ9YG" role="37wK5m">
+                                            <ref role="3cqZAo" node="1CDgnklJ9YH" resolve="it" />
+                                          </node>
                                         </node>
                                       </node>
                                     </node>
                                   </node>
-                                </node>
-                                <node concept="Rh6nW" id="XZKPulBfj_" role="1bW2Oz">
-                                  <property role="TrG5h" value="it" />
-                                  <node concept="2jxLKc" id="XZKPulBfjA" role="1tU5fm" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="2es0OD" id="XZKPulBfjB" role="2OqNvi">
-                            <node concept="1bVj0M" id="XZKPulBfjC" role="23t8la">
-                              <node concept="3clFbS" id="XZKPulBfjD" role="1bW5cS">
-                                <node concept="3clFbF" id="XZKPulBfjE" role="3cqZAp">
-                                  <node concept="1rXfSq" id="XZKPulBphx" role="3clFbG">
-                                    <ref role="37wK5l" to="rgfa:~DefaultMutableTreeNode.add(javax.swing.tree.MutableTreeNode):void" resolve="add" />
-                                    <node concept="37vLTw" id="XZKPulBpni" role="37wK5m">
-                                      <ref role="3cqZAo" node="XZKPulBfjJ" resolve="it" />
-                                    </node>
+                                  <node concept="Rh6nW" id="1CDgnklJ9YH" role="1bW2Oz">
+                                    <property role="TrG5h" value="it" />
+                                    <node concept="2jxLKc" id="1CDgnklJ9YI" role="1tU5fm" />
                                   </node>
                                 </node>
-                              </node>
-                              <node concept="Rh6nW" id="XZKPulBfjJ" role="1bW2Oz">
-                                <property role="TrG5h" value="it" />
-                                <node concept="2jxLKc" id="XZKPulBfjK" role="1tU5fm" />
                               </node>
                             </node>
                           </node>
@@ -2717,6 +2736,18 @@
                       <ref role="37wK5l" node="3h2ECaHX2CD" resolve="getChildDescriptors" />
                     </node>
                   </node>
+                  <node concept="3clFbF" id="1CDgnklK7Bd" role="3cqZAp">
+                    <node concept="2YIFZM" id="1CDgnklK7Z2" role="3clFbG">
+                      <ref role="37wK5l" node="1CDgnklK5W1" resolve="build" />
+                      <ref role="1Pybhc" node="1CDgnklJqNP" resolve="FolderStructureBuilder" />
+                      <node concept="37vLTw" id="1CDgnklK8ru" role="37wK5m">
+                        <ref role="3cqZAo" node="1CDgnklJ21Z" resolve="children" />
+                      </node>
+                      <node concept="Xjq3P" id="1CDgnklK93C" role="37wK5m" />
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="1CDgnklJbC0" role="3cqZAp" />
+                  <node concept="3clFbH" id="1CDgnklJaUf" role="3cqZAp" />
                   <node concept="3clFbF" id="XZKPulB4p4" role="3cqZAp">
                     <node concept="2OqwBi" id="XZKPulBbv1" role="3clFbG">
                       <node concept="1eOMI4" id="XZKPulBbry" role="2Oq$k0">
@@ -3512,6 +3543,511 @@
       <node concept="3clFbS" id="5TgxKE1YVG3" role="3clF47" />
     </node>
     <node concept="3Tm1VV" id="5TgxKE1YVzn" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="1CDgnklJqNP">
+    <property role="TrG5h" value="FolderStructureBuilder" />
+    <node concept="2tJIrI" id="1CDgnklJqO5" role="jymVt" />
+    <node concept="2YIFZL" id="1CDgnklK5W1" role="jymVt">
+      <property role="TrG5h" value="build" />
+      <property role="IEkAT" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="1CDgnklJqQj" role="3clF47">
+        <node concept="3cpWs8" id="1CDgnklK43U" role="3cqZAp">
+          <node concept="3cpWsn" id="1CDgnklK43V" role="3cpWs9">
+            <property role="TrG5h" value="rootFolder" />
+            <node concept="3uibUv" id="1CDgnklK43W" role="1tU5fm">
+              <ref role="3uigEE" node="1CDgnklJuSI" resolve="FolderStructureBuilder.Folder" />
+            </node>
+            <node concept="2ShNRf" id="1CDgnklK4gh" role="33vP2m">
+              <node concept="1pGfFk" id="1CDgnklK4gg" role="2ShVmc">
+                <ref role="37wK5l" node="1CDgnklJFT6" resolve="FolderStructureBuilder.Folder" />
+                <node concept="Xl_RD" id="1CDgnklK4iO" role="37wK5m">
+                  <property role="Xl_RC" value="root" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1CDgnklK3HJ" role="3cqZAp" />
+        <node concept="2Gpval" id="1CDgnklKH4T" role="3cqZAp">
+          <node concept="2GrKxI" id="1CDgnklKH4V" role="2Gsz3X">
+            <property role="TrG5h" value="node" />
+          </node>
+          <node concept="3clFbS" id="1CDgnklKH4X" role="2LFqv$">
+            <node concept="3cpWs8" id="1CDgnklJMp0" role="3cqZAp">
+              <node concept="3cpWsn" id="1CDgnklJMp1" role="3cpWs9">
+                <property role="TrG5h" value="folder" />
+                <node concept="3uibUv" id="1CDgnklJMp2" role="1tU5fm">
+                  <ref role="3uigEE" node="1CDgnklJuSI" resolve="FolderStructureBuilder.Folder" />
+                </node>
+                <node concept="37vLTw" id="1CDgnklK4QT" role="33vP2m">
+                  <ref role="3cqZAo" node="1CDgnklK43V" resolve="rootFolder" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="1CDgnklL6_4" role="3cqZAp">
+              <node concept="3cpWsn" id="1CDgnklL6_5" role="3cpWs9">
+                <property role="TrG5h" value="folders" />
+                <node concept="A3Dl8" id="1CDgnklL6$P" role="1tU5fm">
+                  <node concept="17QB3L" id="1CDgnklL6$S" role="A3Ik2" />
+                </node>
+                <node concept="2OqwBi" id="1CDgnklL6_6" role="33vP2m">
+                  <node concept="2OqwBi" id="1CDgnklL6_7" role="2Oq$k0">
+                    <node concept="2GrUjf" id="1CDgnklL6_8" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="1CDgnklKH4V" resolve="node" />
+                    </node>
+                    <node concept="liA8E" id="1CDgnklL6_9" role="2OqNvi">
+                      <ref role="37wK5l" node="75_oBQVsEDd" resolve="getElement" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1CDgnklL6_a" role="2OqNvi">
+                    <ref role="37wK5l" to="imq3:1CDgnklIKoD" resolve="getFolders" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="3iKg_Wfrgys" role="3cqZAp">
+              <node concept="3clFbS" id="3iKg_Wfrgyu" role="3clFbx">
+                <node concept="2Gpval" id="1CDgnklJM5T" role="3cqZAp">
+                  <node concept="2GrKxI" id="1CDgnklJM5U" role="2Gsz3X">
+                    <property role="TrG5h" value="folderName" />
+                  </node>
+                  <node concept="3clFbS" id="1CDgnklJM5V" role="2LFqv$">
+                    <node concept="3clFbJ" id="1CDgnklJNzF" role="3cqZAp">
+                      <node concept="3clFbS" id="1CDgnklJNzH" role="3clFbx">
+                        <node concept="3clFbF" id="1CDgnklJME0" role="3cqZAp">
+                          <node concept="37vLTI" id="1CDgnklJMFg" role="3clFbG">
+                            <node concept="2OqwBi" id="1CDgnklJMJj" role="37vLTx">
+                              <node concept="37vLTw" id="1CDgnklJMIO" role="2Oq$k0">
+                                <ref role="3cqZAo" node="1CDgnklJMp1" resolve="folder" />
+                              </node>
+                              <node concept="liA8E" id="1CDgnklJMRe" role="2OqNvi">
+                                <ref role="37wK5l" node="1CDgnklJxft" resolve="getOrCreateFolder" />
+                                <node concept="2GrUjf" id="1CDgnklJMYt" role="37wK5m">
+                                  <ref role="2Gs0qQ" node="1CDgnklJM5U" resolve="folderName" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="37vLTw" id="1CDgnklJMDZ" role="37vLTJ">
+                              <ref role="3cqZAo" node="1CDgnklJMp1" resolve="folder" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3y3z36" id="1CDgnklJNRP" role="3clFbw">
+                        <node concept="10Nm6u" id="1CDgnklJNXw" role="3uHU7w" />
+                        <node concept="2GrUjf" id="1CDgnklJNGp" role="3uHU7B">
+                          <ref role="2Gs0qQ" node="1CDgnklJM5U" resolve="folderName" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="1CDgnklL6_b" role="2GsD0m">
+                    <ref role="3cqZAo" node="1CDgnklL6_5" resolve="folders" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="3iKg_WfrgQH" role="3clFbw">
+                <node concept="10Nm6u" id="3iKg_WfrgTc" role="3uHU7w" />
+                <node concept="37vLTw" id="3iKg_WfrgF2" role="3uHU7B">
+                  <ref role="3cqZAo" node="1CDgnklL6_5" resolve="folders" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1CDgnklJN8C" role="3cqZAp">
+              <node concept="2OqwBi" id="1CDgnklJNfq" role="3clFbG">
+                <node concept="37vLTw" id="1CDgnklJN8A" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1CDgnklJMp1" resolve="folder" />
+                </node>
+                <node concept="liA8E" id="1CDgnklJNmI" role="2OqNvi">
+                  <ref role="37wK5l" node="1CDgnklJyPA" resolve="addNode" />
+                  <node concept="2GrUjf" id="1CDgnklKIu4" role="37wK5m">
+                    <ref role="2Gs0qQ" node="1CDgnklKH4V" resolve="node" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="1CDgnklKHiD" role="2GsD0m">
+            <ref role="3cqZAo" node="1CDgnklJqR0" resolve="nodes" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="1CDgnklJr1U" role="3cqZAp" />
+        <node concept="3clFbF" id="1CDgnklK3cB" role="3cqZAp">
+          <node concept="2OqwBi" id="1CDgnklK3l0" role="3clFbG">
+            <node concept="37vLTw" id="1CDgnklK4XM" role="2Oq$k0">
+              <ref role="3cqZAo" node="1CDgnklK43V" resolve="rootFolder" />
+            </node>
+            <node concept="liA8E" id="1CDgnklK3um" role="2OqNvi">
+              <ref role="37wK5l" node="1CDgnklJPNq" resolve="build" />
+              <node concept="37vLTw" id="1CDgnklK3z2" role="37wK5m">
+                <ref role="3cqZAo" node="1CDgnklJPel" resolve="parentNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="1CDgnklJqR0" role="3clF46">
+        <property role="TrG5h" value="nodes" />
+        <node concept="_YKpA" id="1CDgnklJqSy" role="1tU5fm">
+          <node concept="3uibUv" id="1CDgnklJr1t" role="_ZDj9">
+            <ref role="3uigEE" node="7diJr$Rkh9d" resolve="CustomTreeNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="1CDgnklJPel" role="3clF46">
+        <property role="TrG5h" value="parentNode" />
+        <node concept="3uibUv" id="1CDgnklJPtH" role="1tU5fm">
+          <ref role="3uigEE" to="7e8u:~MPSTreeNode" resolve="MPSTreeNode" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="1CDgnklJqQh" role="3clF45" />
+      <node concept="3Tm1VV" id="1CDgnklJqQi" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="1CDgnklJrkp" role="jymVt" />
+    <node concept="312cEu" id="1CDgnklJuSI" role="jymVt">
+      <property role="2bfB8j" value="false" />
+      <property role="TrG5h" value="Folder" />
+      <node concept="312cEg" id="1CDgnklJuY$" role="jymVt">
+        <property role="TrG5h" value="myName" />
+        <node concept="3Tm6S6" id="1CDgnklJuY_" role="1B3o_S" />
+        <node concept="17QB3L" id="1CDgnklJv1w" role="1tU5fm" />
+      </node>
+      <node concept="312cEg" id="1CDgnklJv4G" role="jymVt">
+        <property role="TrG5h" value="childFolders" />
+        <node concept="3Tm6S6" id="1CDgnklJv4H" role="1B3o_S" />
+        <node concept="3rvAFt" id="1CDgnklJvan" role="1tU5fm">
+          <node concept="17QB3L" id="1CDgnklJvdm" role="3rvQeY" />
+          <node concept="3uibUv" id="1CDgnklJviB" role="3rvSg0">
+            <ref role="3uigEE" node="1CDgnklJuSI" resolve="FolderStructureBuilder.Folder" />
+          </node>
+        </node>
+        <node concept="2ShNRf" id="1CDgnklJv_q" role="33vP2m">
+          <node concept="1pGfFk" id="1CDgnklJwxF" role="2ShVmc">
+            <ref role="37wK5l" to="33ny:~TreeMap.&lt;init&gt;()" resolve="TreeMap" />
+            <node concept="17QB3L" id="1CDgnklJwHj" role="1pMfVU" />
+            <node concept="3uibUv" id="1CDgnklJwWb" role="1pMfVU">
+              <ref role="3uigEE" node="1CDgnklJuSI" resolve="FolderStructureBuilder.Folder" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="312cEg" id="1CDgnklJy5y" role="jymVt">
+        <property role="TrG5h" value="childNodes" />
+        <node concept="3Tm6S6" id="1CDgnklJy5z" role="1B3o_S" />
+        <node concept="_YKpA" id="1CDgnklJydp" role="1tU5fm">
+          <node concept="3uibUv" id="1CDgnklJzmi" role="_ZDj9">
+            <ref role="3uigEE" to="7e8u:~MPSTreeNode" resolve="MPSTreeNode" />
+          </node>
+        </node>
+        <node concept="2ShNRf" id="1CDgnklJyrQ" role="33vP2m">
+          <node concept="Tc6Ow" id="1CDgnklJyrq" role="2ShVmc">
+            <node concept="3uibUv" id="1CDgnklJzwn" role="HW$YZ">
+              <ref role="3uigEE" to="7e8u:~MPSTreeNode" resolve="MPSTreeNode" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2tJIrI" id="1CDgnklJH0h" role="jymVt" />
+      <node concept="3clFbW" id="1CDgnklJFT6" role="jymVt">
+        <node concept="3cqZAl" id="1CDgnklJFT7" role="3clF45" />
+        <node concept="3Tm1VV" id="1CDgnklJFT8" role="1B3o_S" />
+        <node concept="3clFbS" id="1CDgnklJFTa" role="3clF47">
+          <node concept="3clFbF" id="1CDgnklJFTe" role="3cqZAp">
+            <node concept="37vLTI" id="1CDgnklJFTg" role="3clFbG">
+              <node concept="37vLTw" id="1CDgnklJFTk" role="37vLTJ">
+                <ref role="3cqZAo" node="1CDgnklJuY$" resolve="myName" />
+              </node>
+              <node concept="37vLTw" id="1CDgnklJFTl" role="37vLTx">
+                <ref role="3cqZAo" node="1CDgnklJFTd" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="37vLTG" id="1CDgnklJFTd" role="3clF46">
+          <property role="TrG5h" value="name" />
+          <node concept="17QB3L" id="1CDgnklJFTc" role="1tU5fm" />
+        </node>
+      </node>
+      <node concept="2tJIrI" id="1CDgnklJxXV" role="jymVt" />
+      <node concept="3clFb_" id="4GrfODAUnkx" role="jymVt">
+        <property role="TrG5h" value="getName" />
+        <node concept="17QB3L" id="4GrfODAUoQd" role="3clF45" />
+        <node concept="3Tm1VV" id="4GrfODAUnk$" role="1B3o_S" />
+        <node concept="3clFbS" id="4GrfODAUnk_" role="3clF47">
+          <node concept="3clFbF" id="4GrfODAUpoi" role="3cqZAp">
+            <node concept="37vLTw" id="4GrfODAUpoh" role="3clFbG">
+              <ref role="3cqZAo" node="1CDgnklJuY$" resolve="myName" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2tJIrI" id="4GrfODAUmQS" role="jymVt" />
+      <node concept="3clFb_" id="1CDgnklJxft" role="jymVt">
+        <property role="TrG5h" value="getOrCreateFolder" />
+        <node concept="37vLTG" id="1CDgnklJxJ$" role="3clF46">
+          <property role="TrG5h" value="name" />
+          <node concept="17QB3L" id="1CDgnklJxPc" role="1tU5fm" />
+        </node>
+        <node concept="3uibUv" id="1CDgnklJxUn" role="3clF45">
+          <ref role="3uigEE" node="1CDgnklJuSI" resolve="FolderStructureBuilder.Folder" />
+        </node>
+        <node concept="3Tm1VV" id="1CDgnklJxfw" role="1B3o_S" />
+        <node concept="3clFbS" id="1CDgnklJxfx" role="3clF47">
+          <node concept="3cpWs8" id="1CDgnklJB7o" role="3cqZAp">
+            <node concept="3cpWsn" id="1CDgnklJB7p" role="3cpWs9">
+              <property role="TrG5h" value="child" />
+              <node concept="3uibUv" id="1CDgnklJB7q" role="1tU5fm">
+                <ref role="3uigEE" node="1CDgnklJuSI" resolve="FolderStructureBuilder.Folder" />
+              </node>
+              <node concept="3EllGN" id="1CDgnklJBAW" role="33vP2m">
+                <node concept="37vLTw" id="1CDgnklJBGZ" role="3ElVtu">
+                  <ref role="3cqZAo" node="1CDgnklJxJ$" resolve="name" />
+                </node>
+                <node concept="37vLTw" id="1CDgnklJBjr" role="3ElQJh">
+                  <ref role="3cqZAo" node="1CDgnklJv4G" resolve="childFolders" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="1CDgnklJBVc" role="3cqZAp">
+            <node concept="3clFbS" id="1CDgnklJBVe" role="3clFbx">
+              <node concept="3clFbF" id="1CDgnklJChj" role="3cqZAp">
+                <node concept="37vLTI" id="1CDgnklJChY" role="3clFbG">
+                  <node concept="2ShNRf" id="1CDgnklJCmn" role="37vLTx">
+                    <node concept="1pGfFk" id="1CDgnklJIbI" role="2ShVmc">
+                      <ref role="37wK5l" node="1CDgnklJFT6" resolve="FolderStructureBuilder.Folder" />
+                      <node concept="37vLTw" id="1CDgnklJIfY" role="37wK5m">
+                        <ref role="3cqZAo" node="1CDgnklJxJ$" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="1CDgnklJChh" role="37vLTJ">
+                    <ref role="3cqZAo" node="1CDgnklJB7p" resolve="child" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="1CDgnklJIzp" role="3cqZAp">
+                <node concept="37vLTI" id="1CDgnklJIUI" role="3clFbG">
+                  <node concept="37vLTw" id="1CDgnklJJ8J" role="37vLTx">
+                    <ref role="3cqZAo" node="1CDgnklJB7p" resolve="child" />
+                  </node>
+                  <node concept="3EllGN" id="1CDgnklJINc" role="37vLTJ">
+                    <node concept="37vLTw" id="1CDgnklJISz" role="3ElVtu">
+                      <ref role="3cqZAo" node="1CDgnklJxJ$" resolve="name" />
+                    </node>
+                    <node concept="37vLTw" id="1CDgnklJIzn" role="3ElQJh">
+                      <ref role="3cqZAo" node="1CDgnklJv4G" resolve="childFolders" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="1CDgnklJC3E" role="3clFbw">
+              <node concept="10Nm6u" id="1CDgnklJC84" role="3uHU7w" />
+              <node concept="37vLTw" id="1CDgnklJC2X" role="3uHU7B">
+                <ref role="3cqZAo" node="1CDgnklJB7p" resolve="child" />
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="1CDgnklJJtg" role="3cqZAp">
+            <node concept="37vLTw" id="1CDgnklJJJg" role="3cqZAk">
+              <ref role="3cqZAo" node="1CDgnklJB7p" resolve="child" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2tJIrI" id="1CDgnklJyCN" role="jymVt" />
+      <node concept="3clFb_" id="1CDgnklJyPA" role="jymVt">
+        <property role="TrG5h" value="addNode" />
+        <node concept="37vLTG" id="1CDgnklJz8n" role="3clF46">
+          <property role="TrG5h" value="node" />
+          <node concept="3uibUv" id="1CDgnklJzA1" role="1tU5fm">
+            <ref role="3uigEE" to="7e8u:~MPSTreeNode" resolve="MPSTreeNode" />
+          </node>
+        </node>
+        <node concept="3cqZAl" id="1CDgnklJyPC" role="3clF45" />
+        <node concept="3Tm1VV" id="1CDgnklJyPD" role="1B3o_S" />
+        <node concept="3clFbS" id="1CDgnklJyPE" role="3clF47">
+          <node concept="3clFbF" id="1CDgnklJzJg" role="3cqZAp">
+            <node concept="2OqwBi" id="1CDgnklJ$2B" role="3clFbG">
+              <node concept="37vLTw" id="1CDgnklJzJf" role="2Oq$k0">
+                <ref role="3cqZAo" node="1CDgnklJy5y" resolve="childNodes" />
+              </node>
+              <node concept="TSZUe" id="1CDgnklJ_eT" role="2OqNvi">
+                <node concept="37vLTw" id="1CDgnklJ_lL" role="25WWJ7">
+                  <ref role="3cqZAo" node="1CDgnklJz8n" resolve="node" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2tJIrI" id="1CDgnklJx8m" role="jymVt" />
+      <node concept="3clFb_" id="1CDgnklJPNq" role="jymVt">
+        <property role="TrG5h" value="build" />
+        <node concept="37vLTG" id="1CDgnklJQQ8" role="3clF46">
+          <property role="TrG5h" value="thisFolderNode" />
+          <node concept="3uibUv" id="1CDgnklJR7J" role="1tU5fm">
+            <ref role="3uigEE" to="7e8u:~MPSTreeNode" resolve="MPSTreeNode" />
+          </node>
+        </node>
+        <node concept="3cqZAl" id="1CDgnklJPNs" role="3clF45" />
+        <node concept="3Tm1VV" id="1CDgnklJPNt" role="1B3o_S" />
+        <node concept="3clFbS" id="1CDgnklJPNu" role="3clF47">
+          <node concept="2Gpval" id="4GrfODATHbT" role="3cqZAp">
+            <node concept="2GrKxI" id="4GrfODATHbV" role="2Gsz3X">
+              <property role="TrG5h" value="childFolder" />
+            </node>
+            <node concept="3clFbS" id="4GrfODATHbX" role="2LFqv$">
+              <node concept="3cpWs8" id="1CDgnklK14C" role="3cqZAp">
+                <node concept="3cpWsn" id="1CDgnklK14D" role="3cpWs9">
+                  <property role="TrG5h" value="subfolder" />
+                  <node concept="3uibUv" id="1CDgnklK14E" role="1tU5fm">
+                    <ref role="3uigEE" node="1CDgnklJrtp" resolve="FolderTreeNode" />
+                  </node>
+                  <node concept="2ShNRf" id="1CDgnklJRUq" role="33vP2m">
+                    <node concept="1pGfFk" id="1CDgnklJRUp" role="2ShVmc">
+                      <ref role="37wK5l" node="1CDgnklJsM0" resolve="FolderTreeNode" />
+                      <node concept="2OqwBi" id="4GrfODAShKq" role="37wK5m">
+                        <node concept="2GrUjf" id="4GrfODATKNl" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="4GrfODATHbV" resolve="childFolder" />
+                        </node>
+                        <node concept="liA8E" id="4GrfODAUpxO" role="2OqNvi">
+                          <ref role="37wK5l" node="4GrfODAUnkx" resolve="getName" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="1CDgnklJUI_" role="3cqZAp">
+                <node concept="2OqwBi" id="1CDgnklJUMf" role="3clFbG">
+                  <node concept="2GrUjf" id="4GrfODATKSx" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="4GrfODATHbV" resolve="childFolder" />
+                  </node>
+                  <node concept="liA8E" id="1CDgnklJUUO" role="2OqNvi">
+                    <ref role="37wK5l" node="1CDgnklJPNq" resolve="build" />
+                    <node concept="37vLTw" id="1CDgnklK1cQ" role="37wK5m">
+                      <ref role="3cqZAo" node="1CDgnklK14D" resolve="subfolder" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="1CDgnklK1oz" role="3cqZAp">
+                <node concept="2OqwBi" id="1CDgnklK1zj" role="3clFbG">
+                  <node concept="37vLTw" id="1CDgnklK1ox" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1CDgnklJQQ8" resolve="thisFolderNode" />
+                  </node>
+                  <node concept="liA8E" id="1CDgnklK2gH" role="2OqNvi">
+                    <ref role="37wK5l" to="rgfa:~DefaultMutableTreeNode.add(javax.swing.tree.MutableTreeNode):void" resolve="add" />
+                    <node concept="37vLTw" id="1CDgnklK2nu" role="37wK5m">
+                      <ref role="3cqZAo" node="1CDgnklK14D" resolve="subfolder" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="4GrfODATIke" role="2GsD0m">
+              <node concept="37vLTw" id="4GrfODATI0k" role="2Oq$k0">
+                <ref role="3cqZAo" node="1CDgnklJv4G" resolve="childFolders" />
+              </node>
+              <node concept="T8wYR" id="4GrfODATILp" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="2Gpval" id="1CDgnklJVfz" role="3cqZAp">
+            <node concept="2GrKxI" id="1CDgnklJVf_" role="2Gsz3X">
+              <property role="TrG5h" value="childNode" />
+            </node>
+            <node concept="3clFbS" id="1CDgnklJVfB" role="2LFqv$">
+              <node concept="3clFbF" id="1CDgnklJVRN" role="3cqZAp">
+                <node concept="2OqwBi" id="1CDgnklJW1i" role="3clFbG">
+                  <node concept="37vLTw" id="1CDgnklK2$Z" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1CDgnklJQQ8" resolve="thisFolderNode" />
+                  </node>
+                  <node concept="liA8E" id="1CDgnklJWJx" role="2OqNvi">
+                    <ref role="37wK5l" to="rgfa:~DefaultMutableTreeNode.add(javax.swing.tree.MutableTreeNode):void" resolve="add" />
+                    <node concept="2GrUjf" id="1CDgnklJWQj" role="37wK5m">
+                      <ref role="2Gs0qQ" node="1CDgnklJVf_" resolve="childNode" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="1CDgnklJV$H" role="2GsD0m">
+              <ref role="3cqZAo" node="1CDgnklJy5y" resolve="childNodes" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1CDgnklJuSJ" role="1B3o_S" />
+    </node>
+    <node concept="3Tm1VV" id="1CDgnklJqNQ" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="1CDgnklJrtp">
+    <property role="TrG5h" value="FolderTreeNode" />
+    <node concept="2tJIrI" id="1CDgnklJsGp" role="jymVt" />
+    <node concept="312cEg" id="1CDgnklJsXg" role="jymVt">
+      <property role="TrG5h" value="myFolderName" />
+      <node concept="3Tm6S6" id="1CDgnklJsXh" role="1B3o_S" />
+      <node concept="17QB3L" id="1CDgnklJt3i" role="1tU5fm" />
+    </node>
+    <node concept="2tJIrI" id="1CDgnklJsGE" role="jymVt" />
+    <node concept="3Tm1VV" id="1CDgnklJrtq" role="1B3o_S" />
+    <node concept="3uibUv" id="1CDgnklJsek" role="1zkMxy">
+      <ref role="3uigEE" to="7e8u:~MPSTreeNode" resolve="MPSTreeNode" />
+    </node>
+    <node concept="3clFbW" id="1CDgnklJsM0" role="jymVt">
+      <node concept="3cqZAl" id="1CDgnklJsM1" role="3clF45" />
+      <node concept="3Tm1VV" id="1CDgnklJsM2" role="1B3o_S" />
+      <node concept="3clFbS" id="1CDgnklJsM4" role="3clF47">
+        <node concept="3clFbF" id="1CDgnklJtzE" role="3cqZAp">
+          <node concept="37vLTI" id="1CDgnklJtJt" role="3clFbG">
+            <node concept="37vLTw" id="1CDgnklJtWl" role="37vLTx">
+              <ref role="3cqZAo" node="1CDgnklJsS0" resolve="folderName" />
+            </node>
+            <node concept="37vLTw" id="1CDgnklJtzD" role="37vLTJ">
+              <ref role="3cqZAo" node="1CDgnklJsXg" resolve="myFolderName" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1CDgnklK9GX" role="3cqZAp" />
+        <node concept="3clFbF" id="1CDgnklKaFo" role="3cqZAp">
+          <node concept="1rXfSq" id="1CDgnklKaFm" role="3clFbG">
+            <ref role="37wK5l" to="7e8u:~MPSTreeNode.setText(java.lang.String):void" resolve="setText" />
+            <node concept="37vLTw" id="1CDgnklKaSM" role="37wK5m">
+              <ref role="3cqZAo" node="1CDgnklJsS0" resolve="folderName" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1CDgnklKb$A" role="3cqZAp">
+          <node concept="1rXfSq" id="1CDgnklKb$$" role="3clFbG">
+            <ref role="37wK5l" to="7e8u:~MPSTreeNode.setNodeIdentifier(java.lang.String):void" resolve="setNodeIdentifier" />
+            <node concept="37vLTw" id="1CDgnklKbMu" role="37wK5m">
+              <ref role="3cqZAo" node="1CDgnklJsS0" resolve="folderName" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="1CDgnklJsS0" role="3clF46">
+        <property role="TrG5h" value="folderName" />
+        <node concept="17QB3L" id="1CDgnklJsRZ" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1CDgnklJtWP" role="jymVt" />
+    <node concept="3clFb_" id="1CDgnklJu4O" role="jymVt">
+      <property role="TrG5h" value="getFolderName" />
+      <node concept="17QB3L" id="1CDgnklJuex" role="3clF45" />
+      <node concept="3Tm1VV" id="1CDgnklJu4R" role="1B3o_S" />
+      <node concept="3clFbS" id="1CDgnklJu4S" role="3clF47">
+        <node concept="3clFbF" id="1CDgnklJuJd" role="3cqZAp">
+          <node concept="37vLTw" id="1CDgnklJuJc" role="3clFbG">
+            <ref role="3cqZAo" node="1CDgnklJsXg" resolve="myFolderName" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

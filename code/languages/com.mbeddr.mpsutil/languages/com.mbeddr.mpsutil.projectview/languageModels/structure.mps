@@ -132,6 +132,9 @@
     <node concept="PrWs8" id="7diJr$Rurz1" role="PzmwI">
       <ref role="PrY4T" node="7diJr$Rulsw" resolve="IViewElement" />
     </node>
+    <node concept="PrWs8" id="1CDgnklRkUA" role="PzmwI">
+      <ref role="PrY4T" to="tpee:4H$HgYMZ7sw" resolve="IVariableDeclaration" />
+    </node>
   </node>
   <node concept="PlHQZ" id="7diJr$Rulsw">
     <property role="TrG5h" value="IViewElement" />
@@ -152,6 +155,9 @@
       <property role="20kJfa" value="element" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7diJr$RulqU" resolve="TreeNodeElement" />
+    </node>
+    <node concept="PrWs8" id="1CDgnklRkGz" role="PzmwI">
+      <ref role="PrY4T" to="tpee:SORzhOp6jM" resolve="IVariableReference" />
     </node>
   </node>
 </model>

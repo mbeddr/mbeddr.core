@@ -100,6 +100,11 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
+        <child id="1151689745422" name="elementType" index="A3Ik2" />
+      </concept>
+    </language>
   </registry>
   <node concept="1YbPZF" id="7diJr$RuNr6">
     <property role="TrG5h" value="typeof_MPSProjectExpression" />
@@ -377,6 +382,29 @@
           </node>
         </node>
       </node>
+      <node concept="1ZobV4" id="1CDgnklGWMU" role="3cqZAp">
+        <property role="3wDh2S" value="true" />
+        <node concept="mw_s8" id="1CDgnklGWMV" role="1ZfhKB">
+          <node concept="2c44tf" id="1CDgnklGWMW" role="mwGJk">
+            <node concept="A3Dl8" id="1CDgnklGXeu" role="2c44tc">
+              <node concept="17QB3L" id="1CDgnklGXeV" role="A3Ik2" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="1CDgnklGWMY" role="1ZfhK$">
+          <node concept="1Z2H0r" id="1CDgnklGWMZ" role="mwGJk">
+            <node concept="2OqwBi" id="1CDgnklGWN0" role="1Z2MuG">
+              <node concept="1YBJjd" id="1CDgnklGWN1" role="2Oq$k0">
+                <ref role="1YBMHb" node="3ZnFyBjq5QV" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="1CDgnklGXdy" role="2OqNvi">
+                <ref role="3Tt5mk" to="d04j:1CDgnklABGA" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="1CDgnklGVY3" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="3ZnFyBjq5QV" role="1YuTPh">
       <property role="TrG5h" value="node" />
