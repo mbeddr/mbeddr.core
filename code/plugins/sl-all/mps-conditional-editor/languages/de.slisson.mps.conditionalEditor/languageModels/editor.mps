@@ -337,5 +337,17 @@
       <node concept="2iRfu4" id="59YMGDNQGdv" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="1CDgnklDKZG">
+    <ref role="1XX52x" to="91fu:1CDgnklDKZ7" resolve="DummyWrapperCell" />
+    <node concept="3EZMnI" id="1CDgnklDKZI" role="2wV5jI">
+      <node concept="3F0ifn" id="1CDgnklDL01" role="3EZMnx">
+        <property role="3F0ifm" value="dummy wrapper" />
+      </node>
+      <node concept="3F1sOY" id="1CDgnklDL0j" role="3EZMnx">
+        <ref role="1NtTu8" to="91fu:1CDgnklDKZe" />
+      </node>
+      <node concept="2iRkQZ" id="1CDgnklDKZL" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

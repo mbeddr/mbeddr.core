@@ -107,5 +107,15 @@
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1CDgnklDKZ7">
+    <property role="TrG5h" value="DummyWrapperCell" />
+    <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
+    <node concept="1TJgyj" id="1CDgnklDKZe" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="cell" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
+    </node>
+  </node>
 </model>
 
