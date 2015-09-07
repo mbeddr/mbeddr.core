@@ -7,13 +7,13 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="dbrf" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
-    <import index="8q6x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.event(JDK/java.awt.event@java_stub)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="3zbh" ref="r:9027fe04-52c3-4416-aa88-4c72e7a422ed(mbeddr.tutorial.extreqref.behavior)" implicit="true" />
     <import index="2yyc" ref="r:79803cd7-885d-4e28-8672-973d389d71b6(mbeddr.tutorial.extreqref.structure)" implicit="true" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -351,11 +351,11 @@
               <node concept="3cpWsn" id="2juwowPkMHC" role="3cpWs9">
                 <property role="TrG5h" value="b" />
                 <node concept="3uibUv" id="2juwowPkMHD" role="1tU5fm">
-                  <ref role="3uigEE" to="dbrf:~JButton" resolve="JButton" />
+                  <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
                 </node>
                 <node concept="2ShNRf" id="2juwowPkNiB" role="33vP2m">
                   <node concept="1pGfFk" id="2juwowPkNQO" role="2ShVmc">
-                    <ref role="37wK5l" to="dbrf:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
+                    <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
                     <node concept="Xl_RD" id="2juwowPkO9M" role="37wK5m">
                       <property role="Xl_RC" value="Update Reference" />
                     </node>
@@ -369,13 +369,13 @@
                   <ref role="3cqZAo" node="2juwowPkMHC" resolve="b" />
                 </node>
                 <node concept="liA8E" id="2juwowPkTg4" role="2OqNvi">
-                  <ref role="37wK5l" to="dbrf:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+                  <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
                   <node concept="2ShNRf" id="2juwowPkT_u" role="37wK5m">
                     <node concept="YeOm9" id="2juwowPkUpQ" role="2ShVmc">
                       <node concept="1Y3b0j" id="2juwowPkUpT" role="YeSDq">
                         <property role="2bfB8j" value="true" />
-                        <ref role="1Y3XeK" to="8q6x:~ActionListener" resolve="ActionListener" />
-                        <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+                        <ref role="1Y3XeK" to="hyam:~ActionListener" resolve="ActionListener" />
+                        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                         <node concept="3Tm1VV" id="2juwowPkUpU" role="1B3o_S" />
                         <node concept="3clFb_" id="2juwowPkUpV" role="jymVt">
                           <property role="1EzhhJ" value="false" />
@@ -387,7 +387,7 @@
                           <node concept="37vLTG" id="2juwowPkUpZ" role="3clF46">
                             <property role="TrG5h" value="p0" />
                             <node concept="3uibUv" id="2juwowPkUq0" role="1tU5fm">
-                              <ref role="3uigEE" to="8q6x:~ActionEvent" resolve="ActionEvent" />
+                              <ref role="3uigEE" to="hyam:~ActionEvent" resolve="ActionEvent" />
                             </node>
                           </node>
                           <node concept="3clFbS" id="2juwowPkUq1" role="3clF47">
@@ -399,8 +399,8 @@
                                       <property role="TrG5h" value="s" />
                                       <node concept="17QB3L" id="2juwowPkZeC" role="1tU5fm" />
                                       <node concept="2YIFZM" id="2juwowPkYdd" role="33vP2m">
-                                        <ref role="1Pybhc" to="dbrf:~JOptionPane" resolve="JOptionPane" />
-                                        <ref role="37wK5l" to="dbrf:~JOptionPane.showInputDialog(java.awt.Component,java.lang.Object,java.lang.Object):java.lang.String" resolve="showInputDialog" />
+                                        <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                                        <ref role="37wK5l" to="dxuu:~JOptionPane.showInputDialog(java.awt.Component,java.lang.Object,java.lang.Object):java.lang.String" resolve="showInputDialog" />
                                         <node concept="10Nm6u" id="2juwowPkYde" role="37wK5m" />
                                         <node concept="Xl_RD" id="2juwowPkYdf" role="37wK5m">
                                           <property role="Xl_RC" value="Enter City Name" />

@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="bgic" ref="r:f8541cf4-6148-4458-a81b-adf49c8e050c(mbeddr.tutorial.blocks.structure)" />
-    <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -306,7 +306,7 @@
                   <node concept="3K4zz7" id="7wlBVIeFn87" role="3clFbG">
                     <node concept="2ShNRf" id="7wlBVIeFn8d" role="3K4E3e">
                       <node concept="1pGfFk" id="7wlBVIeFtlx" role="2ShVmc">
-                        <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                        <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
                         <node concept="3cmrfG" id="7wlBVIeFtly" role="37wK5m">
                           <property role="3cmrfH" value="4" />
                         </node>
@@ -320,7 +320,7 @@
                     </node>
                     <node concept="2ShNRf" id="7wlBVIeFtlW" role="3K4GZi">
                       <node concept="1pGfFk" id="7wlBVIeFtm7" role="2ShVmc">
-                        <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                        <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
                         <node concept="3cmrfG" id="7wlBVIeFtmh" role="37wK5m">
                           <property role="3cmrfH" value="4" />
                         </node>
