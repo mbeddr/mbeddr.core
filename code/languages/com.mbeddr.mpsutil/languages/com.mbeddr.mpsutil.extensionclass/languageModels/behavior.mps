@@ -13,7 +13,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -515,7 +515,7 @@
                           <node concept="2usRSg" id="6ffEDrb$ccw" role="2c44tc">
                             <node concept="10Q1$e" id="6ffEDrb$ccx" role="2usUpS">
                               <node concept="3uibUv" id="6ffEDrb$ccy" role="10Q1$1">
-                                <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                                <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                                 <node concept="2c44te" id="6ffEDrb$ccz" role="lGtFl">
                                   <node concept="2OqwBi" id="6ffEDrb$cc$" role="2c44t1">
                                     <node concept="2OqwBi" id="6ffEDrb$cc_" role="2Oq$k0">

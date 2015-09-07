@@ -7,9 +7,9 @@
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="gt8j" ref="r:d62dd985-922e-46d1-a30d-00dd9ec6278a(com.mbeddr.mpsutil.smodule.structure)" />
-    <import index="jrbx" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.project(MPS.Platform/jetbrains.mps.project@java_stub)" />
+    <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
   <registry>
@@ -105,7 +105,7 @@
               <node concept="2pIpSj" id="6X6$P3A2cge" role="2pJxcM">
                 <ref role="2pIpSl" to="tpee:g7uigIF" />
                 <node concept="36bGnv" id="lse_ua6cy9" role="2pJxcZ">
-                  <ref role="36bGnp" to="jrbx:~MPSProject" resolve="MPSProject" />
+                  <ref role="36bGnp" to="z1c4:~MPSProject" resolve="MPSProject" />
                 </node>
               </node>
             </node>
@@ -279,7 +279,7 @@
             <node concept="2pIpSj" id="lse_ua4Gsv" role="2pJxcM">
               <ref role="2pIpSl" to="tpee:g7uigIF" />
               <node concept="36bGnv" id="lse_ua4GxP" role="2pJxcZ">
-                <ref role="36bGnp" to="vsqj:~Solution" resolve="Solution" />
+                <ref role="36bGnp" to="z1c3:~Solution" resolve="Solution" />
               </node>
             </node>
           </node>

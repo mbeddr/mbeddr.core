@@ -33,10 +33,10 @@
     <import index="tpc2" ref="18bc6592-03a6-4e29-a83a-7ff23bde13ba/r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor/jetbrains.mps.lang.editor.structure)" />
     <import index="tpc5" ref="18bc6592-03a6-4e29-a83a-7ff23bde13ba/r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor/jetbrains.mps.lang.editor.editor)" />
     <import index="7a0s" ref="34e84b8f-afa8-4364-abcd-a279fddddbe7/r:2af017c2-293f-4ebb-99f3-81e353b3d6e6(jetbrains.mps.editor.runtime/jetbrains.mps.editor.runtime)" />
-    <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -859,7 +859,7 @@
   </node>
   <node concept="24kQdi" id="2Gxn7_QpCbI">
     <property role="3GE5qa" value="concept.type" />
-    <ref role="1XX52x" to="tp25:h3THzq0" resolve="SConceptType" />
+    <ref role="1XX52x" to="tp25:h3THzq0" resolve="ConceptNodeType" />
     <node concept="2aJ2om" id="2Gxn7_QpCbK" role="CpUAK">
       <ref role="2$4xQ3" node="7wFJH9cTZP" resolve="UniqueNames" />
     </node>
@@ -3710,7 +3710,7 @@
   </node>
   <node concept="24kQdi" id="KYwojibxv3">
     <property role="3GE5qa" value="concept.type" />
-    <ref role="1XX52x" to="tp25:5MFgGQnlLNI" resolve="SConceptTypeSConcept" />
+    <ref role="1XX52x" to="tp25:5MFgGQnlLNI" resolve="SConceptType" />
     <node concept="2aJ2om" id="KYwojibxvf" role="CpUAK">
       <ref role="2$4xQ3" node="7wFJH9cTZP" resolve="UniqueNames" />
     </node>

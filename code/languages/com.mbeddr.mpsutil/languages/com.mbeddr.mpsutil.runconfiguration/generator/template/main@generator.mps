@@ -9,7 +9,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="5w9u" ref="r:3b1b0eed-abdd-49b6-b35d-a5c00759e339(com.mbeddr.mpsutil.runconfiguration.structure)" implicit="true" />
   </imports>
   <registry>
@@ -83,7 +83,7 @@
           <node concept="37vLTG" id="VC7RuZUPwk" role="3clF46">
             <property role="TrG5h" value="debuggableNode" />
             <node concept="3uibUv" id="VC7RuZVFIh" role="1tU5fm">
-              <ref role="3uigEE" to="ec5l:~SNode" resolve="SNode" />
+              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
             </node>
           </node>
           <node concept="3cqZAl" id="VC7RuZUPw2" role="3clF45" />

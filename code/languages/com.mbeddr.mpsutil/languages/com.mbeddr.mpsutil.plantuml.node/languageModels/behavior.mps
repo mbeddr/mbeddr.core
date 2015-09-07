@@ -8,9 +8,9 @@
   </languages>
   <imports>
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
-    <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="abz6" ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3/r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.plugin)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -184,18 +184,18 @@
       <property role="TrG5h" value="project" />
       <node concept="3Tm6S6" id="2N1CSr$DAcg" role="1B3o_S" />
       <node concept="3uibUv" id="2N1CSr$DAci" role="1tU5fm">
-        <ref role="3uigEE" to="vsqj:~Project" resolve="Project" />
+        <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
       </node>
     </node>
     <node concept="312cEg" id="6xkj9mMqLD" role="jymVt">
       <property role="TrG5h" value="code" />
       <node concept="3Tm6S6" id="6xkj9mMqLE" role="1B3o_S" />
       <node concept="3uibUv" id="6xkj9mMqLG" role="1tU5fm">
-        <ref role="3uigEE" to="e2lb:~StringBuilder" resolve="StringBuilder" />
+        <ref role="3uigEE" to="wyt6:~StringBuilder" resolve="StringBuilder" />
       </node>
       <node concept="2ShNRf" id="6xkj9mMqLI" role="33vP2m">
         <node concept="1pGfFk" id="6xkj9mMqLJ" role="2ShVmc">
-          <ref role="37wK5l" to="e2lb:~StringBuilder.&lt;init&gt;()" resolve="StringBuilder" />
+          <ref role="37wK5l" to="wyt6:~StringBuilder.&lt;init&gt;()" resolve="StringBuilder" />
         </node>
       </node>
     </node>
@@ -226,7 +226,7 @@
               <ref role="3cqZAo" node="6xkj9mMqLD" resolve="code" />
             </node>
             <node concept="liA8E" id="4ppn3W9rLPU" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
               <node concept="Xl_RD" id="4ppn3W9rLPV" role="37wK5m">
                 <property role="Xl_RC" value="@startuml\n" />
               </node>
@@ -250,7 +250,7 @@
       <node concept="37vLTG" id="2N1CSr$D_TI" role="3clF46">
         <property role="TrG5h" value="project" />
         <node concept="3uibUv" id="2N1CSr$D_TH" role="1tU5fm">
-          <ref role="3uigEE" to="vsqj:~Project" resolve="Project" />
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
         </node>
       </node>
     </node>
@@ -265,7 +265,7 @@
           <node concept="37vLTI" id="CaPjC1BxCs" role="3clFbG">
             <node concept="2ShNRf" id="CaPjC1BxEX" role="37vLTx">
               <node concept="1pGfFk" id="CaPjC1By$h" role="2ShVmc">
-                <ref role="37wK5l" to="e2lb:~StringBuilder.&lt;init&gt;(java.lang.String)" resolve="StringBuilder" />
+                <ref role="37wK5l" to="wyt6:~StringBuilder.&lt;init&gt;(java.lang.String)" resolve="StringBuilder" />
                 <node concept="37vLTw" id="CaPjC1Bz6N" role="37wK5m">
                   <ref role="3cqZAo" node="CaPjC1BvXb" resolve="c" />
                 </node>
@@ -339,7 +339,7 @@
               <ref role="3cqZAo" node="6xkj9mMqLD" resolve="code" />
             </node>
             <node concept="liA8E" id="6xkj9mMqMt" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
               <node concept="3cpWs2" id="6xkj9mMqMu" role="37wK5m">
                 <ref role="3cqZAo" node="6xkj9mMqLO" resolve="s" />
               </node>
@@ -352,7 +352,7 @@
               <ref role="3cqZAo" node="6xkj9mMqLD" resolve="code" />
             </node>
             <node concept="liA8E" id="2DnVhjr$P8B" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
               <node concept="Xl_RD" id="2DnVhjr$MnO" role="37wK5m">
                 <property role="Xl_RC" value="\n" />
               </node>
@@ -412,7 +412,7 @@
                 <ref role="3cqZAo" node="6xkj9mMqLD" resolve="code" />
               </node>
               <node concept="liA8E" id="6xkj9mMqYZ" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~StringBuilder.toString():java.lang.String" resolve="toString" />
+                <ref role="37wK5l" to="wyt6:~StringBuilder.toString():java.lang.String" resolve="toString" />
               </node>
             </node>
           </node>
@@ -520,7 +520,7 @@
     <node concept="3clFb_" id="CaPjC1BBce" role="jymVt">
       <property role="TrG5h" value="getProject" />
       <node concept="3uibUv" id="CaPjC1BBcf" role="3clF45">
-        <ref role="3uigEE" to="vsqj:~Project" resolve="Project" />
+        <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
       </node>
       <node concept="3Tm1VV" id="CaPjC1BBcg" role="1B3o_S" />
       <node concept="3clFbS" id="CaPjC1BBch" role="3clF47">

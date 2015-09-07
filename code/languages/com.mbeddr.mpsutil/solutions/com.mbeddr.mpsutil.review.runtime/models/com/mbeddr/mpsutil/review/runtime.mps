@@ -7,11 +7,11 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
   </languages>
   <imports>
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="1t7x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
-    <import index="neyv" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#com.google.common.collect(MPS.Core/com.google.common.collect@java_stub)" />
-    <import index="nu8v" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" />
-    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
+    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="fvs5" ref="9ea6119e-d73d-42a8-8d7b-e60e0d7b845d/r:732be188-20bb-49ee-8e19-08268650a3e5(com.mbeddr.mpsutil.margincell.runtime/com.mbeddr.mpsutil.margincell.runtime)" />
   </imports>
   <registry>
@@ -192,7 +192,7 @@
             <ref role="3VsUkX" node="7lmVLrULCNA" resolve="ReviewMarginCellStyle" />
           </node>
           <node concept="liA8E" id="7lmVLrULCNI" role="2OqNvi">
-            <ref role="37wK5l" to="e2lb:~Class.getName():java.lang.String" resolve="getName" />
+            <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
           </node>
         </node>
       </node>
@@ -207,14 +207,14 @@
       <node concept="3rvAFt" id="7lmVLrULCNM" role="1tU5fm">
         <node concept="17QB3L" id="7lmVLrULCNN" role="3rvQeY" />
         <node concept="3uibUv" id="7lmVLrULCNO" role="3rvSg0">
-          <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+          <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
         </node>
       </node>
       <node concept="2ShNRf" id="7lmVLrULCNP" role="33vP2m">
         <node concept="32Fmki" id="7lmVLrULCNQ" role="2ShVmc">
           <node concept="17QB3L" id="7lmVLrULCNR" role="3rHrn6" />
           <node concept="3uibUv" id="7lmVLrULCNS" role="3rHtpV">
-            <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+            <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
           </node>
         </node>
       </node>
@@ -228,7 +228,7 @@
       <node concept="3Tmbuc" id="7lmVLrULCNV" role="1B3o_S" />
       <node concept="_YKpA" id="7lmVLrULCNW" role="1tU5fm">
         <node concept="3uibUv" id="7lmVLrULCNX" role="_ZDj9">
-          <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+          <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
         </node>
       </node>
       <node concept="2OqwBi" id="7lmVLrULCNY" role="33vP2m">
@@ -239,62 +239,62 @@
                 <node concept="2OqwBi" id="7lmVLrULCO3" role="2Oq$k0">
                   <node concept="2OqwBi" id="7lmVLrULCO4" role="2Oq$k0">
                     <node concept="2YIFZM" id="7lmVLrULCO5" role="2Oq$k0">
-                      <ref role="37wK5l" to="neyv:~ImmutableList.builder():com.google.common.collect.ImmutableList$Builder" resolve="builder" />
-                      <ref role="1Pybhc" to="neyv:~ImmutableList" resolve="ImmutableList" />
+                      <ref role="37wK5l" to="3o3z:~ImmutableList.builder():com.google.common.collect.ImmutableList$Builder" resolve="builder" />
+                      <ref role="1Pybhc" to="3o3z:~ImmutableList" resolve="ImmutableList" />
                       <node concept="3uibUv" id="7lmVLrULCO6" role="3PaCim">
-                        <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+                        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
                       </node>
                     </node>
                     <node concept="liA8E" id="7lmVLrULCO7" role="2OqNvi">
-                      <ref role="37wK5l" to="neyv:~ImmutableList$Builder.add(java.lang.Object...):com.google.common.collect.ImmutableList$Builder" resolve="add" />
+                      <ref role="37wK5l" to="3o3z:~ImmutableList$Builder.add(java.lang.Object...):com.google.common.collect.ImmutableList$Builder" resolve="add" />
                       <node concept="10M0yZ" id="7lmVLrULCO8" role="37wK5m">
-                        <ref role="3cqZAo" to="1t7x:~Color.BLUE" resolve="BLUE" />
-                        <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+                        <ref role="3cqZAo" to="z60i:~Color.BLUE" resolve="BLUE" />
+                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
                       </node>
                     </node>
                   </node>
                   <node concept="liA8E" id="7lmVLrULCO9" role="2OqNvi">
-                    <ref role="37wK5l" to="neyv:~ImmutableList$Builder.add(java.lang.Object...):com.google.common.collect.ImmutableList$Builder" resolve="add" />
+                    <ref role="37wK5l" to="3o3z:~ImmutableList$Builder.add(java.lang.Object...):com.google.common.collect.ImmutableList$Builder" resolve="add" />
                     <node concept="10M0yZ" id="7lmVLrULCOa" role="37wK5m">
-                      <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                      <ref role="3cqZAo" to="1t7x:~Color.CYAN" resolve="CYAN" />
+                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                      <ref role="3cqZAo" to="z60i:~Color.CYAN" resolve="CYAN" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="7lmVLrULCOb" role="2OqNvi">
-                  <ref role="37wK5l" to="neyv:~ImmutableList$Builder.add(java.lang.Object...):com.google.common.collect.ImmutableList$Builder" resolve="add" />
+                  <ref role="37wK5l" to="3o3z:~ImmutableList$Builder.add(java.lang.Object...):com.google.common.collect.ImmutableList$Builder" resolve="add" />
                   <node concept="10M0yZ" id="7lmVLrULCOc" role="37wK5m">
-                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                    <ref role="3cqZAo" to="1t7x:~Color.GREEN" resolve="GREEN" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.GREEN" resolve="GREEN" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="7lmVLrULCOd" role="2OqNvi">
-                <ref role="37wK5l" to="neyv:~ImmutableList$Builder.add(java.lang.Object...):com.google.common.collect.ImmutableList$Builder" resolve="add" />
+                <ref role="37wK5l" to="3o3z:~ImmutableList$Builder.add(java.lang.Object...):com.google.common.collect.ImmutableList$Builder" resolve="add" />
                 <node concept="10M0yZ" id="7lmVLrULCOe" role="37wK5m">
-                  <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                  <ref role="3cqZAo" to="1t7x:~Color.MAGENTA" resolve="MAGENTA" />
+                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                  <ref role="3cqZAo" to="z60i:~Color.MAGENTA" resolve="MAGENTA" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="7lmVLrULCOf" role="2OqNvi">
-              <ref role="37wK5l" to="neyv:~ImmutableList$Builder.add(java.lang.Object...):com.google.common.collect.ImmutableList$Builder" resolve="add" />
+              <ref role="37wK5l" to="3o3z:~ImmutableList$Builder.add(java.lang.Object...):com.google.common.collect.ImmutableList$Builder" resolve="add" />
               <node concept="10M0yZ" id="7lmVLrULCOg" role="37wK5m">
-                <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                <ref role="3cqZAo" to="1t7x:~Color.ORANGE" resolve="ORANGE" />
+                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                <ref role="3cqZAo" to="z60i:~Color.ORANGE" resolve="ORANGE" />
               </node>
             </node>
           </node>
           <node concept="liA8E" id="7lmVLrULCOh" role="2OqNvi">
-            <ref role="37wK5l" to="neyv:~ImmutableList$Builder.add(java.lang.Object...):com.google.common.collect.ImmutableList$Builder" resolve="add" />
+            <ref role="37wK5l" to="3o3z:~ImmutableList$Builder.add(java.lang.Object...):com.google.common.collect.ImmutableList$Builder" resolve="add" />
             <node concept="10M0yZ" id="7lmVLrULCOi" role="37wK5m">
-              <ref role="3cqZAo" to="1t7x:~Color.PINK" resolve="PINK" />
-              <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+              <ref role="3cqZAo" to="z60i:~Color.PINK" resolve="PINK" />
+              <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
             </node>
           </node>
         </node>
         <node concept="liA8E" id="7lmVLrULCOj" role="2OqNvi">
-          <ref role="37wK5l" to="neyv:~ImmutableList$Builder.build():com.google.common.collect.ImmutableList" resolve="build" />
+          <ref role="37wK5l" to="3o3z:~ImmutableList$Builder.build():com.google.common.collect.ImmutableList" resolve="build" />
         </node>
       </node>
     </node>
@@ -306,11 +306,11 @@
       <node concept="37vLTG" id="7lmVLrULCOn" role="3clF46">
         <property role="TrG5h" value="contentCell" />
         <node concept="3uibUv" id="7lmVLrULCOo" role="1tU5fm">
-          <ref role="3uigEE" to="nu8v:~EditorCell" resolve="EditorCell" />
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
         </node>
       </node>
       <node concept="3uibUv" id="7lmVLrULCOp" role="3clF45">
-        <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
       <node concept="3Tm1VV" id="7lmVLrULCOq" role="1B3o_S" />
       <node concept="3clFbS" id="7lmVLrULCOr" role="3clF47">
@@ -324,7 +324,7 @@
                   <ref role="3cqZAo" node="7lmVLrULCOn" resolve="contentCell" />
                 </node>
                 <node concept="liA8E" id="7lmVLrULCOy" role="2OqNvi">
-                  <ref role="37wK5l" to="nu8v:~EditorCell.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                  <ref role="37wK5l" to="f4zo:~EditorCell.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
                   <node concept="37vLTw" id="7lmVLrULCOz" role="37wK5m">
                     <ref role="3cqZAo" node="7lmVLrULCNB" resolve="CREATOR_KEY" />
                   </node>
@@ -389,11 +389,11 @@
                       <node concept="2OqwBi" id="7lmVLrULCP1" role="1y58nS">
                         <node concept="2ShNRf" id="7lmVLrULCP2" role="2Oq$k0">
                           <node concept="1pGfFk" id="7lmVLrULCP3" role="2ShVmc">
-                            <ref role="37wK5l" to="k7g3:~Random.&lt;init&gt;()" resolve="Random" />
+                            <ref role="37wK5l" to="33ny:~Random.&lt;init&gt;()" resolve="Random" />
                           </node>
                         </node>
                         <node concept="liA8E" id="7lmVLrULCP4" role="2OqNvi">
-                          <ref role="37wK5l" to="k7g3:~Random.nextInt(int):int" resolve="nextInt" />
+                          <ref role="37wK5l" to="33ny:~Random.nextInt(int):int" resolve="nextInt" />
                           <node concept="2OqwBi" id="7lmVLrULCP5" role="37wK5m">
                             <node concept="37vLTw" id="7lmVLrULCP6" role="2Oq$k0">
                               <ref role="3cqZAo" node="7lmVLrULCNU" resolve="availableCreatorColors" />
@@ -456,7 +456,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="7lmVLrULCPr" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3Tm1VV" id="7lmVLrULCPs" role="1B3o_S" />

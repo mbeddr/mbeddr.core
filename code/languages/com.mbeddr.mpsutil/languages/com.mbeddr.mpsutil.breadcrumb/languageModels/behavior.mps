@@ -6,12 +6,12 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="dbrf" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="jqcv" ref="r:3b5e5c58-5a2a-44f7-840e-bf72f3bd68f2(com.mbeddr.mpsutil.breadcrumb.runtime.plugin)" />
-    <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(java.awt@java_stub)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(java.lang@java_stub)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt()" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang()" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -131,7 +131,7 @@
       <property role="TrG5h" value="getBreadcrumbIcon" />
       <node concept="3Tm1VV" id="4lLcfuhLhr7" role="1B3o_S" />
       <node concept="3uibUv" id="4lLcfuhMFme" role="3clF45">
-        <ref role="3uigEE" to="dbrf:~Icon" resolve="Icon" />
+        <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
       </node>
       <node concept="3clFbS" id="4lLcfuhLhr9" role="3clF47">
         <node concept="3clFbF" id="1pmorAaw7mw" role="3cqZAp">
@@ -162,7 +162,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="4o4$mVTwnLG">
-    <ref role="13h7C2" to="570t:4o4$mVTwnFM" resolve="IBookmark" />
+    <ref role="13h7C2" to="570t:4o4$mVTwnFM" resolve="ISectionIndex" />
     <node concept="13i0hz" id="4o4$mVTwnPA" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
@@ -186,7 +186,7 @@
       <property role="TrG5h" value="getBookmarkIcon" />
       <node concept="3Tm1VV" id="4o4$mVTwnPJ" role="1B3o_S" />
       <node concept="3uibUv" id="4o4$mVTwnPK" role="3clF45">
-        <ref role="3uigEE" to="dbrf:~Icon" resolve="Icon" />
+        <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
       </node>
       <node concept="3clFbS" id="4o4$mVTwnPL" role="3clF47">
         <node concept="3clFbF" id="4o4$mVTwnPM" role="3cqZAp">
@@ -204,7 +204,7 @@
       <property role="TrG5h" value="getBookmarkColor" />
       <node concept="3Tm1VV" id="4o4$mVU9F$q" role="1B3o_S" />
       <node concept="3uibUv" id="4o4$mVU9FKc" role="3clF45">
-        <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
       <node concept="3clFbS" id="4o4$mVU9F$s" role="3clF47">
         <node concept="3cpWs8" id="3JErwPFxvFc" role="3cqZAp">
@@ -216,7 +216,7 @@
                 <ref role="37wK5l" node="4o4$mVTwnPA" resolve="getBookmarkText" />
               </node>
               <node concept="liA8E" id="3JErwPFxvFg" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~String.hashCode():int" resolve="hashCode" />
+                <ref role="37wK5l" to="wyt6:~String.hashCode():int" resolve="hashCode" />
               </node>
             </node>
           </node>
@@ -224,7 +224,7 @@
         <node concept="3clFbF" id="3JErwPFxwbo" role="3cqZAp">
           <node concept="2ShNRf" id="3JErwPFxwbi" role="3clFbG">
             <node concept="1pGfFk" id="3JErwPFxwO4" role="2ShVmc">
-              <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+              <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
               <node concept="2dk9JS" id="3JErwPFxGIV" role="37wK5m">
                 <node concept="2nou5x" id="3JErwPFxGJx" role="3uHU7w">
                   <property role="2noCCI" value="ff" />

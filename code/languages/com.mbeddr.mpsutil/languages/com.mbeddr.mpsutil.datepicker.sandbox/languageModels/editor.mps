@@ -9,8 +9,8 @@
   <imports>
     <import index="zh2l" ref="r:dc5899a3-fac3-4abc-ae22-e716260dc024(com.mbeddr.mpsutil.datepicker.sandbox.structure)" />
     <import index="k0h" ref="r:5369d8b1-f259-457c-8b3f-061c696f3d80(com.mbeddr.mpsutil.datepicker.runtime.model)" />
-    <import index="762z" ref="98a7bbe2-0ea1-4503-9fc1-9efb7b48c6ea/f:java_stub#98a7bbe2-0ea1-4503-9fc1-9efb7b48c6ea#com.michaelbaranov.microba.calendar(com.mbeddr.mpsutil.datepicker.runtime/com.michaelbaranov.microba.calendar@java_stub)" />
-    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="yzu" ref="98a7bbe2-0ea1-4503-9fc1-9efb7b48c6ea/java:com.michaelbaranov.microba.calendar(com.mbeddr.mpsutil.datepicker.runtime/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -485,10 +485,10 @@
                 <ref role="3cqZAo" node="35WzcHe260J" resolve="calendar" />
               </node>
               <node concept="liA8E" id="35WzcHe2mi8" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~Calendar.get(int):int" resolve="get" />
+                <ref role="37wK5l" to="33ny:~Calendar.get(int):int" resolve="get" />
                 <node concept="10M0yZ" id="35WzcHe2mjY" role="37wK5m">
-                  <ref role="1PxDUh" to="k7g3:~Calendar" resolve="Calendar" />
-                  <ref role="3cqZAo" to="k7g3:~Calendar.YEAR" resolve="YEAR" />
+                  <ref role="1PxDUh" to="33ny:~Calendar" resolve="Calendar" />
+                  <ref role="3cqZAo" to="33ny:~Calendar.YEAR" resolve="YEAR" />
                 </node>
               </node>
             </node>
@@ -509,10 +509,10 @@
                 <ref role="3cqZAo" node="35WzcHe260J" resolve="calendar" />
               </node>
               <node concept="liA8E" id="35WzcHe2mwI" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~Calendar.get(int):int" resolve="get" />
+                <ref role="37wK5l" to="33ny:~Calendar.get(int):int" resolve="get" />
                 <node concept="10M0yZ" id="35WzcHe2mwJ" role="37wK5m">
-                  <ref role="1PxDUh" to="k7g3:~Calendar" resolve="Calendar" />
-                  <ref role="3cqZAo" to="k7g3:~Calendar.MONTH" resolve="MONTH" />
+                  <ref role="1PxDUh" to="33ny:~Calendar" resolve="Calendar" />
+                  <ref role="3cqZAo" to="33ny:~Calendar.MONTH" resolve="MONTH" />
                 </node>
               </node>
             </node>
@@ -533,10 +533,10 @@
                 <ref role="3cqZAo" node="35WzcHe260J" resolve="calendar" />
               </node>
               <node concept="liA8E" id="35WzcHe2myI" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~Calendar.get(int):int" resolve="get" />
+                <ref role="37wK5l" to="33ny:~Calendar.get(int):int" resolve="get" />
                 <node concept="10M0yZ" id="35WzcHe2myJ" role="37wK5m">
-                  <ref role="1PxDUh" to="k7g3:~Calendar" resolve="Calendar" />
-                  <ref role="3cqZAo" to="k7g3:~Calendar.DAY_OF_MONTH" resolve="DAY_OF_MONTH" />
+                  <ref role="1PxDUh" to="33ny:~Calendar" resolve="Calendar" />
+                  <ref role="3cqZAo" to="33ny:~Calendar.DAY_OF_MONTH" resolve="DAY_OF_MONTH" />
                 </node>
               </node>
             </node>
@@ -557,10 +557,10 @@
                 <ref role="3cqZAo" node="35WzcHe260J" resolve="calendar" />
               </node>
               <node concept="liA8E" id="35WzcHe2m_b" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~Calendar.get(int):int" resolve="get" />
+                <ref role="37wK5l" to="33ny:~Calendar.get(int):int" resolve="get" />
                 <node concept="10M0yZ" id="35WzcHe2m_c" role="37wK5m">
-                  <ref role="1PxDUh" to="k7g3:~Calendar" resolve="Calendar" />
-                  <ref role="3cqZAo" to="k7g3:~Calendar.HOUR_OF_DAY" resolve="HOUR_OF_DAY" />
+                  <ref role="1PxDUh" to="33ny:~Calendar" resolve="Calendar" />
+                  <ref role="3cqZAo" to="33ny:~Calendar.HOUR_OF_DAY" resolve="HOUR_OF_DAY" />
                 </node>
               </node>
             </node>
@@ -581,10 +581,10 @@
                 <ref role="3cqZAo" node="35WzcHe260J" resolve="calendar" />
               </node>
               <node concept="liA8E" id="35WzcHe2mAs" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~Calendar.get(int):int" resolve="get" />
+                <ref role="37wK5l" to="33ny:~Calendar.get(int):int" resolve="get" />
                 <node concept="10M0yZ" id="35WzcHe2mAt" role="37wK5m">
-                  <ref role="1PxDUh" to="k7g3:~Calendar" resolve="Calendar" />
-                  <ref role="3cqZAo" to="k7g3:~Calendar.MINUTE" resolve="MINUTE" />
+                  <ref role="1PxDUh" to="33ny:~Calendar" resolve="Calendar" />
+                  <ref role="3cqZAo" to="33ny:~Calendar.MINUTE" resolve="MINUTE" />
                 </node>
               </node>
             </node>
@@ -605,10 +605,10 @@
                 <ref role="3cqZAo" node="35WzcHe260J" resolve="calendar" />
               </node>
               <node concept="liA8E" id="35WzcHe2mF4" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~Calendar.get(int):int" resolve="get" />
+                <ref role="37wK5l" to="33ny:~Calendar.get(int):int" resolve="get" />
                 <node concept="10M0yZ" id="35WzcHe2mF5" role="37wK5m">
-                  <ref role="1PxDUh" to="k7g3:~Calendar" resolve="Calendar" />
-                  <ref role="3cqZAo" to="k7g3:~Calendar.SECOND" resolve="SECOND" />
+                  <ref role="1PxDUh" to="33ny:~Calendar" resolve="Calendar" />
+                  <ref role="3cqZAo" to="33ny:~Calendar.SECOND" resolve="SECOND" />
                 </node>
               </node>
             </node>
@@ -634,13 +634,13 @@
       <node concept="37vLTG" id="6dzliVeCJ_0" role="3clF46">
         <property role="TrG5h" value="datePicker" />
         <node concept="3uibUv" id="6dzliVeDomP" role="1tU5fm">
-          <ref role="3uigEE" to="762z:~DatePicker" resolve="DatePicker" />
+          <ref role="3uigEE" to="yzu:~DatePicker" resolve="DatePicker" />
         </node>
       </node>
       <node concept="37vLTG" id="35WzcHe260J" role="3clF46">
         <property role="TrG5h" value="calendar" />
         <node concept="3uibUv" id="35WzcHe260K" role="1tU5fm">
-          <ref role="3uigEE" to="k7g3:~Calendar" resolve="Calendar" />
+          <ref role="3uigEE" to="33ny:~Calendar" resolve="Calendar" />
         </node>
       </node>
     </node>
@@ -659,13 +659,13 @@
       <node concept="37vLTG" id="6dzliVeDSHv" role="3clF46">
         <property role="TrG5h" value="datePicker" />
         <node concept="3uibUv" id="6dzliVeDSHw" role="1tU5fm">
-          <ref role="3uigEE" to="762z:~DatePicker" resolve="DatePicker" />
+          <ref role="3uigEE" to="yzu:~DatePicker" resolve="DatePicker" />
         </node>
       </node>
       <node concept="37vLTG" id="6dzliVeDSHR" role="3clF46">
         <property role="TrG5h" value="calendar" />
         <node concept="3uibUv" id="6dzliVeDSIe" role="1tU5fm">
-          <ref role="3uigEE" to="k7g3:~Calendar" resolve="Calendar" />
+          <ref role="3uigEE" to="33ny:~Calendar" resolve="Calendar" />
         </node>
       </node>
       <node concept="3clFbS" id="6dzliVeDz1C" role="3clF47">
@@ -680,10 +680,10 @@
                   <ref role="3cqZAo" node="6dzliVeDSHR" resolve="calendar" />
                 </node>
                 <node concept="liA8E" id="35WzcHe37Cx" role="2OqNvi">
-                  <ref role="37wK5l" to="k7g3:~Calendar.get(int):int" resolve="get" />
+                  <ref role="37wK5l" to="33ny:~Calendar.get(int):int" resolve="get" />
                   <node concept="10M0yZ" id="35WzcHe37IJ" role="37wK5m">
-                    <ref role="1PxDUh" to="k7g3:~Calendar" resolve="Calendar" />
-                    <ref role="3cqZAo" to="k7g3:~Calendar.DAY_OF_MONTH" resolve="DAY_OF_MONTH" />
+                    <ref role="1PxDUh" to="33ny:~Calendar" resolve="Calendar" />
+                    <ref role="3cqZAo" to="33ny:~Calendar.DAY_OF_MONTH" resolve="DAY_OF_MONTH" />
                   </node>
                 </node>
               </node>

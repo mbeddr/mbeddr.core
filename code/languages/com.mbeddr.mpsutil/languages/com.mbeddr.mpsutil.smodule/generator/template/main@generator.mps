@@ -9,11 +9,11 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
-    <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="8tyk" ref="r:eb0002ce-67d6-41e9-b36c-361c22b4de97(com.mbeddr.mpsutil.smodule.runtime.lib)" />
-    <import index="51te" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.extapi.model(MPS.Core/jetbrains.mps.extapi.model@java_stub)" />
-    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="g3l6" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.model(MPS.Core/)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="gt8j" ref="r:d62dd985-922e-46d1-a30d-00dd9ec6278a(com.mbeddr.mpsutil.smodule.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
@@ -187,7 +187,7 @@
       <node concept="gft3U" id="7Ynnt_O8XNQ" role="1lVwrX">
         <node concept="10QFUN" id="7Ynnt_O8XNW" role="gfFT$">
           <node concept="3uibUv" id="7Ynnt_O9JnW" role="10QFUM">
-            <ref role="3uigEE" to="vsqj:~DevKit" resolve="DevKit" />
+            <ref role="3uigEE" to="z1c3:~DevKit" resolve="DevKit" />
           </node>
           <node concept="3rM5sP" id="7Ynnt_O9Kdb" role="10QFUP">
             <property role="3rM5sR" value="847a3235-09f9-403c-b6a9-1c294a212e92" />
@@ -235,7 +235,7 @@
             </node>
           </node>
           <node concept="3uibUv" id="7Ynnt_Oa9e0" role="10QFUM">
-            <ref role="3uigEE" to="cu2c:~Language" resolve="Language" />
+            <ref role="3uigEE" to="w1kc:~Language" resolve="Language" />
           </node>
         </node>
       </node>
@@ -306,7 +306,7 @@
           <node concept="2ShNRf" id="7Ynnt_OaqjH" role="37wK5m">
             <node concept="Tc6Ow" id="7Ynnt_Oaswm" role="2ShVmc">
               <node concept="3uibUv" id="7Ynnt_OasJt" role="HW$YZ">
-                <ref role="3uigEE" to="vsqj:~DevKit" resolve="DevKit" />
+                <ref role="3uigEE" to="z1c3:~DevKit" resolve="DevKit" />
               </node>
               <node concept="10Nm6u" id="7Ynnt_OasKL" role="HW$Y0">
                 <node concept="2b32R4" id="7Ynnt_OasLv" role="lGtFl">
@@ -381,7 +381,7 @@
           <node concept="2ShNRf" id="7Ynnt_Oax76" role="37wK5m">
             <node concept="Tc6Ow" id="7Ynnt_OaAvR" role="2ShVmc">
               <node concept="3uibUv" id="7Ynnt_OaALS" role="HW$YZ">
-                <ref role="3uigEE" to="cu2c:~Language" resolve="Language" />
+                <ref role="3uigEE" to="w1kc:~Language" resolve="Language" />
               </node>
               <node concept="10Nm6u" id="7Ynnt_OaAQ8" role="HW$Y0">
                 <node concept="2b32R4" id="7Ynnt_OaASj" role="lGtFl">
@@ -456,7 +456,7 @@
           <node concept="2ShNRf" id="7Ynnt_OaENS" role="37wK5m">
             <node concept="Tc6Ow" id="7Ynnt_OaF2l" role="2ShVmc">
               <node concept="3uibUv" id="7Ynnt_OgL5K" role="HW$YZ">
-                <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+                <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
               </node>
               <node concept="10Nm6u" id="7Ynnt_OaFoz" role="HW$Y0">
                 <node concept="2b32R4" id="7Ynnt_OaFqI" role="lGtFl">
@@ -510,7 +510,7 @@
       <ref role="30HIoZ" to="gt8j:6X6$P3A2pc5" resolve="SolutionType" />
       <node concept="gft3U" id="7Ynnt_OizOZ" role="1lVwrX">
         <node concept="3uibUv" id="7Ynnt_OizP9" role="gfFT$">
-          <ref role="3uigEE" to="vsqj:~Solution" resolve="Solution" />
+          <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
         </node>
       </node>
     </node>
@@ -584,7 +584,7 @@
           <node concept="2ShNRf" id="7Ynnt_OiEQ6" role="37wK5m">
             <node concept="Tc6Ow" id="7Ynnt_OiEQ2" role="2ShVmc">
               <node concept="3uibUv" id="7Ynnt_OiEQ3" role="HW$YZ">
-                <ref role="3uigEE" to="vsqj:~DevKit" resolve="DevKit" />
+                <ref role="3uigEE" to="z1c3:~DevKit" resolve="DevKit" />
               </node>
               <node concept="10Nm6u" id="7Ynnt_OiEZB" role="HW$Y0">
                 <node concept="2b32R4" id="7Ynnt_OiF7$" role="lGtFl">
@@ -619,7 +619,7 @@
           <node concept="2ShNRf" id="7Ynnt_OiJ1O" role="37wK5m">
             <node concept="Tc6Ow" id="7Ynnt_OiJ1K" role="2ShVmc">
               <node concept="3uibUv" id="7Ynnt_OiJ1L" role="HW$YZ">
-                <ref role="3uigEE" to="cu2c:~Language" resolve="Language" />
+                <ref role="3uigEE" to="w1kc:~Language" resolve="Language" />
               </node>
               <node concept="10Nm6u" id="7Ynnt_OiJd6" role="HW$Y0">
                 <node concept="2b32R4" id="7Ynnt_OiJqL" role="lGtFl">
@@ -654,7 +654,7 @@
           <node concept="2ShNRf" id="7Ynnt_OiNpo" role="37wK5m">
             <node concept="Tc6Ow" id="7Ynnt_OiNpk" role="2ShVmc">
               <node concept="3uibUv" id="7Ynnt_OiNpl" role="HW$YZ">
-                <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+                <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
               </node>
               <node concept="10Nm6u" id="7Ynnt_OiNAs" role="HW$Y0">
                 <node concept="2b32R4" id="7Ynnt_OiNKH" role="lGtFl">

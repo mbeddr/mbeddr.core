@@ -9,7 +9,7 @@
   </languages>
   <imports>
     <import index="tpee" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.structure)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -1634,7 +1634,7 @@
                 <ref role="3cqZAo" node="5EJ7vKKimtD" resolve="map" />
               </node>
               <node concept="liA8E" id="5EJ7vKLstDw" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
+                <ref role="37wK5l" to="wyt6:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
                 <node concept="Xl_RD" id="5EJ7vKLstDx" role="37wK5m">
                   <property role="Xl_RC" value="," />
                 </node>
@@ -1659,7 +1659,7 @@
               <ref role="3cqZAo" node="5EJ7vKKimtI" resolve="reduce" />
             </node>
             <node concept="liA8E" id="5EJ7vKLsA4F" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+              <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
             </node>
           </node>
         </node>
@@ -1698,7 +1698,7 @@
               <property role="TrG5h" value="list" />
               <node concept="_YKpA" id="5EJ7vKLsCMq" role="1tU5fm">
                 <node concept="3uibUv" id="5EJ7vKLsCMt" role="_ZDj9">
-                  <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+                  <ref role="3uigEE" to="wyt6:~String" resolve="String" />
                 </node>
               </node>
               <node concept="1Ea1qx" id="5EJ7vKLsCMw" role="33vP2m">

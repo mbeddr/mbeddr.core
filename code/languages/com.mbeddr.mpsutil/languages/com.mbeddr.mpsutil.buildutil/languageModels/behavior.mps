@@ -9,11 +9,11 @@
     <import index="tpcu" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core/jetbrains.mps.lang.core.behavior)" />
     <import index="3ior" ref="798100da-4f0a-421a-b991-71f8c50ce5d2/r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build/jetbrains.mps.build.structure)" />
     <import index="o8zo" ref="2d3c70e9-aab2-4870-8d8d-6036800e4103/r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.kernel/jetbrains.mps.scope)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="fnbo" ref="692e0a46-0d23-4c8a-8ce0-ea4c2266672a/r:d89d60fc-e488-474b-a7de-9d6e3b77d10d(com.mbeddr.mpsutil.buildutil/com.mbeddr.mpsutil.buildutil.structure)" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="o3n2" ref="798100da-4f0a-421a-b991-71f8c50ce5d2/r:26eadcf0-f275-4e90-be37-e4432772a74d(jetbrains.mps.build/jetbrains.mps.build.util)" />
-    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="vbkb" ref="798100da-4f0a-421a-b991-71f8c50ce5d2/r:08f2b659-8469-4592-93bf-a6edb46ec86d(jetbrains.mps.build/jetbrains.mps.build.behavior)" />
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -157,7 +157,7 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3THzug" />
+      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug" />
       <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
         <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
@@ -250,7 +250,7 @@
                             <node concept="3cpWs6" id="1lMM4owGcQ3" role="3cqZAp">
                               <node concept="2OqwBi" id="7LmwlFdPtvX" role="3cqZAk">
                                 <node concept="liA8E" id="7LmwlFdPtw0" role="2OqNvi">
-                                  <ref role="37wK5l" to="ec5l:~SNode.getPresentation():java.lang.String" resolve="getPresentation" />
+                                  <ref role="37wK5l" to="mhbf:~SNode.getPresentation():java.lang.String" resolve="getPresentation" />
                                 </node>
                                 <node concept="2JrnkZ" id="7LmwlFdPtvY" role="2Oq$k0">
                                   <node concept="37vLTw" id="2BHiRxghfCk" role="2JrQYb">
@@ -313,7 +313,7 @@
                 <ref role="3cqZAo" node="5IpIYYko0Qt" resolve="role" />
               </node>
               <node concept="liA8E" id="5IpIYYkuxKd" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="prKvN" id="5IpIYYksn7j" role="37wK5m">
                   <ref role="prhl7" to="fnbo:5IpIYYknIp1" />
                   <ref role="prhl4" to="fnbo:5IpIYYkniKo" resolve="BuildConsistencyAnnotation" />
@@ -360,7 +360,7 @@
       <property role="TrG5h" value="toFile" />
       <node concept="3Tm1VV" id="5IpIYYkKTAL" role="1B3o_S" />
       <node concept="3uibUv" id="5IpIYYkKTAS" role="3clF45">
-        <ref role="3uigEE" to="fxg7:~File" resolve="File" />
+        <ref role="3uigEE" to="guwi:~File" resolve="File" />
       </node>
       <node concept="3clFbS" id="5IpIYYkKTAN" role="3clF47">
         <node concept="SfApY" id="5IpIYYkN1mQ" role="3cqZAp">
@@ -369,7 +369,7 @@
               <node concept="2OqwBi" id="5IpIYYkN1Ku" role="3cqZAk">
                 <node concept="2ShNRf" id="5IpIYYkN1Kv" role="2Oq$k0">
                   <node concept="1pGfFk" id="5IpIYYkN1Kw" role="2ShVmc">
-                    <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                     <node concept="2OqwBi" id="5IpIYYkN1Kx" role="37wK5m">
                       <node concept="2OqwBi" id="5IpIYYkN1Ky" role="2Oq$k0">
                         <node concept="13iPFW" id="5IpIYYkN1Kz" role="2Oq$k0" />
@@ -388,7 +388,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="5IpIYYkN1KB" role="2OqNvi">
-                  <ref role="37wK5l" to="fxg7:~File.getCanonicalFile():java.io.File" resolve="getCanonicalFile" />
+                  <ref role="37wK5l" to="guwi:~File.getCanonicalFile():java.io.File" resolve="getCanonicalFile" />
                 </node>
               </node>
             </node>
@@ -397,7 +397,7 @@
             <node concept="3cpWsn" id="5IpIYYkN1mT" role="TDEfY">
               <property role="TrG5h" value="ex" />
               <node concept="3uibUv" id="5IpIYYkN1XC" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
               </node>
             </node>
             <node concept="3clFbS" id="5IpIYYkN1mV" role="TDEfX">
@@ -407,7 +407,7 @@
                     <ref role="3cqZAo" node="5IpIYYkN1mT" resolve="ex" />
                   </node>
                   <node concept="liA8E" id="5IpIYYkN3JE" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>

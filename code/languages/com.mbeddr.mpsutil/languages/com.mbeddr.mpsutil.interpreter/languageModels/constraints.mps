@@ -12,7 +12,7 @@
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -679,7 +679,7 @@
                 <ref role="3cqZAo" node="5LSSDsNuLbH" resolve="result" />
               </node>
               <node concept="liA8E" id="5LSSDsNvi1R" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
+                <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
                 <node concept="2OqwBi" id="5LSSDsNuLbI" role="37wK5m">
                   <node concept="1Q6Npb" id="5LSSDsNuLbJ" role="2Oq$k0" />
                   <node concept="1j9C0f" id="5LSSDsNuLbK" role="2OqNvi">

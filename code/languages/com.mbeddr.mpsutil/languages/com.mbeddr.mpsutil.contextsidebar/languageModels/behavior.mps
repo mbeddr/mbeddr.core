@@ -7,12 +7,12 @@
   </languages>
   <imports>
     <import index="nwd3" ref="b1deed8c-68b2-424a-806a-664b47188e43/r:76cf7cce-8556-4192-bb11-38b013a3547b(com.mbeddr.mpsutil.contextsidebar/com.mbeddr.mpsutil.contextsidebar.structure)" />
-    <import index="dbrf" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="tpek" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.behavior)" />
     <import index="tpee" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" />
     <import index="1oap" ref="982eb8df-2c96-4bd7-9963-11712ea622e5/r:03d44d4c-3d65-461c-9085-0f48e9569e59(jetbrains.mps.lang.resources/jetbrains.mps.lang.resources.structure)" />
-    <import index="v2t1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons/org.apache.commons.lang3@java_stub)" />
+    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="xike" ref="r:698ffceb-aefa-44db-b54b-bfe095c94cee(com.mbeddr.mpsutil.contextsidebar.runtime.plugin)" />
   </imports>
   <registry>
@@ -118,7 +118,7 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3THzug">
+      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug">
         <reference id="1180481110358" name="conceptDeclaraton" index="3qa414" />
       </concept>
       <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
@@ -162,8 +162,8 @@
         <node concept="3clFbF" id="lRW__IwkNE" role="3cqZAp">
           <node concept="3cpWs3" id="lRW__IwlnF" role="3clFbG">
             <node concept="2YIFZM" id="lRW__Iwlgj" role="3uHU7B">
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="v2t1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
               <node concept="2OqwBi" id="lRW__IuOk9" role="37wK5m">
                 <node concept="13iPFW" id="lRW__IuOig" role="2Oq$k0" />
                 <node concept="3TrcHB" id="lRW__IuOuU" role="2OqNvi">
@@ -230,7 +230,7 @@
         <node concept="3clFbF" id="lRW__Iuf$l" role="3cqZAp">
           <node concept="2c44tf" id="535SrlQaP8U" role="3clFbG">
             <node concept="3uibUv" id="lRW__Iuf_0" role="2c44tc">
-              <ref role="3uigEE" to="dbrf:~JComponent" resolve="JComponent" />
+              <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
             </node>
           </node>
         </node>
@@ -460,8 +460,8 @@
         <node concept="3clFbF" id="lRW__IzZdX" role="3cqZAp">
           <node concept="3cpWs3" id="lRW__IzZdY" role="3clFbG">
             <node concept="2YIFZM" id="lRW__IzZdZ" role="3uHU7B">
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="v2t1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
               <node concept="2OqwBi" id="lRW__IzZe0" role="37wK5m">
                 <node concept="13iPFW" id="lRW__IzZe1" role="2Oq$k0" />
                 <node concept="3TrcHB" id="lRW__IzZe2" role="2OqNvi">
@@ -509,8 +509,8 @@
         <node concept="3clFbF" id="lRW__IzZnY" role="3cqZAp">
           <node concept="3cpWs3" id="lRW__IzZnZ" role="3clFbG">
             <node concept="2YIFZM" id="lRW__IzZo0" role="3uHU7B">
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="v2t1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
               <node concept="2OqwBi" id="lRW__IzZo1" role="37wK5m">
                 <node concept="13iPFW" id="lRW__IzZo2" role="2Oq$k0" />
                 <node concept="3TrcHB" id="lRW__IzZo3" role="2OqNvi">
@@ -561,8 +561,8 @@
         <node concept="3clFbF" id="lRW__IzZEg" role="3cqZAp">
           <node concept="3cpWs3" id="lRW__IzZEh" role="3clFbG">
             <node concept="2YIFZM" id="lRW__IzZEi" role="3uHU7B">
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="v2t1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
               <node concept="2OqwBi" id="lRW__IzZEj" role="37wK5m">
                 <node concept="13iPFW" id="lRW__IzZEk" role="2Oq$k0" />
                 <node concept="3TrcHB" id="lRW__IzZEl" role="2OqNvi">
@@ -595,8 +595,8 @@
         <node concept="3clFbF" id="lRW__IzZQ$" role="3cqZAp">
           <node concept="3cpWs3" id="lRW__IzZQ_" role="3clFbG">
             <node concept="2YIFZM" id="lRW__IzZQA" role="3uHU7B">
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="v2t1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
               <node concept="2OqwBi" id="lRW__IzZQB" role="37wK5m">
                 <node concept="13iPFW" id="lRW__IzZQC" role="2Oq$k0" />
                 <node concept="3TrcHB" id="lRW__IzZQD" role="2OqNvi">
@@ -773,8 +773,8 @@
         <node concept="3clFbF" id="4AhMPNYmFD5" role="3cqZAp">
           <node concept="3cpWs3" id="4AhMPNYmFD6" role="3clFbG">
             <node concept="2YIFZM" id="4AhMPNYmFD7" role="3uHU7B">
-              <ref role="37wK5l" to="v2t1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
               <node concept="2OqwBi" id="4AhMPNYmFD8" role="37wK5m">
                 <node concept="13iPFW" id="4AhMPNYmFD9" role="2Oq$k0" />
                 <node concept="3TrcHB" id="4AhMPNYmFDa" role="2OqNvi">

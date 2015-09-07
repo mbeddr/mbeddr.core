@@ -9,7 +9,7 @@
   </languages>
   <imports>
     <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
-    <import index="9a8" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="ih8q" ref="r:990d360b-3ac3-45fa-8ed3-0bbf017bba84(com.mbeddr.mpsutil.intentions.runtime)" />
   </imports>
   <registry>
@@ -137,7 +137,7 @@
                     <node concept="37vLTG" id="3pwG8PSjTLK" role="3clF46">
                       <property role="TrG5h" value="editorComponent" />
                       <node concept="3uibUv" id="3pwG8PSjTLL" role="1tU5fm">
-                        <ref role="3uigEE" to="9a8:~EditorComponent" resolve="EditorComponent" />
+                        <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
                       </node>
                     </node>
                     <node concept="3cqZAl" id="3pwG8PSjTLM" role="3clF45" />
@@ -161,7 +161,7 @@
                     <node concept="37vLTG" id="3pwG8PSjTLS" role="3clF46">
                       <property role="TrG5h" value="editorComponent" />
                       <node concept="3uibUv" id="3pwG8PSjTLT" role="1tU5fm">
-                        <ref role="3uigEE" to="9a8:~EditorComponent" resolve="EditorComponent" />
+                        <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
                       </node>
                     </node>
                     <node concept="3cqZAl" id="3pwG8PSjTLU" role="3clF45" />

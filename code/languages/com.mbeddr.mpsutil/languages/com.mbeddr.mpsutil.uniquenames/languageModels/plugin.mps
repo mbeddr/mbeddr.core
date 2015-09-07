@@ -8,9 +8,9 @@
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="v2t1" ref="f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons/org.apache.commons.lang3@java_stub)" />
+    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -287,7 +287,7 @@
       <node concept="2tJIrI" id="49195GpXx$S" role="jymVt" />
       <node concept="3Tmbuc" id="49195GpXqYA" role="1B3o_S" />
       <node concept="3uibUv" id="49195GpXx$s" role="1zkMxy">
-        <ref role="3uigEE" to="e2lb:~RuntimeException" resolve="RuntimeException" />
+        <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
       </node>
     </node>
     <node concept="2tJIrI" id="49195GpXn$j" role="jymVt" />
@@ -616,11 +616,11 @@
             <property role="TrG5h" value="indexOfDifference" />
             <node concept="10Oyi0" id="7wFJH9gkZ0" role="1tU5fm" />
             <node concept="2YIFZM" id="7lmVLrUKccD" role="33vP2m">
-              <ref role="1Pybhc" to="e2lb:~Math" resolve="Math" />
-              <ref role="37wK5l" to="e2lb:~Math.max(int,int):int" resolve="max" />
+              <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+              <ref role="37wK5l" to="wyt6:~Math.max(int,int):int" resolve="max" />
               <node concept="2YIFZM" id="7wFJH9gkZ5" role="37wK5m">
-                <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-                <ref role="37wK5l" to="v2t1:~StringUtils.indexOfDifference(java.lang.CharSequence...):int" resolve="indexOfDifference" />
+                <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+                <ref role="37wK5l" to="btm1:~StringUtils.indexOfDifference(java.lang.CharSequence...):int" resolve="indexOfDifference" />
                 <node concept="37vLTw" id="7wFJH9gkZ6" role="37wK5m">
                   <ref role="3cqZAo" node="7wFJH9fCe4" resolve="fqNames" />
                 </node>
@@ -672,7 +672,7 @@
                           <node concept="3AY5_j" id="7qMLXK8HUvd" role="2OqNvi" />
                         </node>
                         <node concept="liA8E" id="7qMLXK8HUve" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.substring(int):java.lang.String" resolve="substring" />
+                          <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
                           <node concept="37vLTw" id="7qMLXK8HUvf" role="37wK5m">
                             <ref role="3cqZAo" node="7wFJH9gkZ4" resolve="indexOfDifference" />
                           </node>
@@ -694,8 +694,8 @@
                             <ref role="3cqZAo" node="7qMLXK8HXcQ" resolve="differenceFirstPart" />
                           </node>
                           <node concept="2YIFZM" id="7qMLXK8HXcR" role="37vLTx">
-                            <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-                            <ref role="37wK5l" to="v2t1:~StringUtils.substringBefore(java.lang.String,java.lang.String):java.lang.String" resolve="substringBefore" />
+                            <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+                            <ref role="37wK5l" to="btm1:~StringUtils.substringBefore(java.lang.String,java.lang.String):java.lang.String" resolve="substringBefore" />
                             <node concept="37vLTw" id="7qMLXK8HXcS" role="37wK5m">
                               <ref role="3cqZAo" node="7qMLXK8HUv9" resolve="differenceToEnd" />
                             </node>
@@ -708,8 +708,8 @@
                       <node concept="3clFbF" id="2Gxn7_Qm$Ay" role="3cqZAp">
                         <node concept="37vLTI" id="2Gxn7_Qm_ey" role="3clFbG">
                           <node concept="2YIFZM" id="2Gxn7_QmAdz" role="37vLTx">
-                            <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-                            <ref role="37wK5l" to="v2t1:~StringUtils.substringAfter(java.lang.String,java.lang.String):java.lang.String" resolve="substringAfter" />
+                            <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+                            <ref role="37wK5l" to="btm1:~StringUtils.substringAfter(java.lang.String,java.lang.String):java.lang.String" resolve="substringAfter" />
                             <node concept="37vLTw" id="2Gxn7_QmAES" role="37wK5m">
                               <ref role="3cqZAo" node="7qMLXK8HUv9" resolve="differenceToEnd" />
                             </node>
@@ -1017,7 +1017,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="7wFJH9jkVK" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                       <node concept="2OqwBi" id="7wFJH9k8X3" role="37wK5m">
                         <node concept="2OqwBi" id="7wFJH9jl6_" role="2Oq$k0">
                           <node concept="37vLTw" id="7wFJH9jl4h" role="2Oq$k0">
@@ -1231,8 +1231,8 @@
                   <ref role="3cqZAo" node="7wFJH9kRac" resolve="nextPart" />
                 </node>
                 <node concept="2YIFZM" id="7wFJH9kSnO" role="37vLTx">
-                  <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-                  <ref role="37wK5l" to="v2t1:~StringUtils.substringBetween(java.lang.String,java.lang.String,java.lang.String):java.lang.String" resolve="substringBetween" />
+                  <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+                  <ref role="37wK5l" to="btm1:~StringUtils.substringBetween(java.lang.String,java.lang.String,java.lang.String):java.lang.String" resolve="substringBetween" />
                   <node concept="2OqwBi" id="7wFJH9kSnP" role="37wK5m">
                     <node concept="37vLTw" id="7wFJH9kSnQ" role="2Oq$k0">
                       <ref role="3cqZAo" node="7wFJH9kBXs" resolve="entry" />

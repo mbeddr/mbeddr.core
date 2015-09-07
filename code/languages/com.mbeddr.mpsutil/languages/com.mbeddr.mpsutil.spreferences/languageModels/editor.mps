@@ -8,12 +8,12 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="jsgz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
-    <import index="yla8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.application(MPS.IDEA/com.intellij.openapi.application@java_stub)" />
+    <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="60h8" ref="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1/r:857a6546-37fb-474e-832b-f04fdfe124ab(com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.behavior)" />
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tmud" ref="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1/r:8d0fa52a-32d1-4359-892e-669a9b66600c(com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.structure)" implicit="true" />
     <import index="tpco" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core/jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="tmud" ref="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1/r:8d0fa52a-32d1-4359-892e-669a9b66600c(com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -180,7 +180,7 @@
       </concept>
     </language>
     <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
-      <concept id="7122083600695857782" name="de.itemis.mps.editor.bool.structure.CellModel_BooleanText" flags="sg" index="2aMyGU">
+      <concept id="7122083600695857782" name="de.itemis.mps.editor.bool.structure.CellModel_BooleanText" flags="sg" stub="416014060004530854" index="2aMyGU">
         <property id="7122083600696909496" name="falseText" index="2aYyvO" />
         <property id="7122083600696906118" name="trueText" index="2aYyza" />
       </concept>
@@ -249,13 +249,13 @@
                     <node concept="1eOMI4" id="1m7X3OEA8BT" role="2Oq$k0">
                       <node concept="10QFUN" id="1m7X3OEA8BU" role="1eOMHV">
                         <node concept="3uibUv" id="1m7X3OEA8BV" role="10QFUM">
-                          <ref role="3uigEE" to="jsgz:~EditorCell_Label" resolve="EditorCell_Label" />
+                          <ref role="3uigEE" to="g51k:~EditorCell_Label" resolve="EditorCell_Label" />
                         </node>
                         <node concept="1Q80Hx" id="1m7X3OEA8BW" role="10QFUP" />
                       </node>
                     </node>
                     <node concept="liA8E" id="1m7X3OEAatu" role="2OqNvi">
-                      <ref role="37wK5l" to="jsgz:~EditorCell_Label.setDefaultText(java.lang.String):void" resolve="setDefaultText" />
+                      <ref role="37wK5l" to="g51k:~EditorCell_Label.setDefaultText(java.lang.String):void" resolve="setDefaultText" />
                       <node concept="2OqwBi" id="1m7X3OEAa$s" role="37wK5m">
                         <node concept="pncrf" id="1m7X3OEAawE" role="2Oq$k0" />
                         <node concept="2qgKlT" id="1m7X3OEAaVu" role="2OqNvi">
@@ -421,8 +421,8 @@
                           <node concept="3cpWs3" id="2bnm$tmhMxr" role="3uHU7B">
                             <node concept="3cpWs3" id="2bnm$tmhEsf" role="3uHU7B">
                               <node concept="2YIFZM" id="12e5qyQg7aI" role="3uHU7B">
-                                <ref role="37wK5l" to="yla8:~PathManager.getConfigPath():java.lang.String" resolve="getConfigPath" />
-                                <ref role="1Pybhc" to="yla8:~PathManager" resolve="PathManager" />
+                                <ref role="37wK5l" to="bd8o:~PathManager.getConfigPath():java.lang.String" resolve="getConfigPath" />
+                                <ref role="1Pybhc" to="bd8o:~PathManager" resolve="PathManager" />
                               </node>
                               <node concept="Xl_RD" id="2bnm$tmhEsk" role="3uHU7w">
                                 <property role="Xl_RC" value="/spreferences/" />
@@ -456,8 +456,8 @@
                                 <node concept="3cpWs3" id="2bnm$tmjZBB" role="3uHU7B">
                                   <node concept="3cpWs3" id="2bnm$tmjZBC" role="3uHU7B">
                                     <node concept="2YIFZM" id="2bnm$tmjZBD" role="3uHU7B">
-                                      <ref role="1Pybhc" to="yla8:~PathManager" resolve="PathManager" />
-                                      <ref role="37wK5l" to="yla8:~PathManager.getConfigPath():java.lang.String" resolve="getConfigPath" />
+                                      <ref role="1Pybhc" to="bd8o:~PathManager" resolve="PathManager" />
+                                      <ref role="37wK5l" to="bd8o:~PathManager.getConfigPath():java.lang.String" resolve="getConfigPath" />
                                     </node>
                                     <node concept="Xl_RD" id="2bnm$tmjZBE" role="3uHU7w">
                                       <property role="Xl_RC" value="/spreferences/&lt;project name&gt;/" />

@@ -6,7 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="m87u" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/f:java_stub#7f0984ac-9f5d-4001-9257-17f7d10f3fd5#javax.servlet.http(com.mbeddr.mpsutil.httpsupport.rt/javax.servlet.http@java_stub)" />
+    <import index="nwfd" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/java:javax.servlet.http(com.mbeddr.mpsutil.httpsupport.rt/)" />
     <import index="s4al" ref="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9/r:193e03e1-dca4-4048-aad0-de84622e3490(com.mbeddr.mpsutil.httpsupport/com.mbeddr.mpsutil.httpsupport.structure)" implicit="true" />
   </imports>
   <registry>
@@ -68,7 +68,7 @@
         <node concept="mw_s8" id="4PqLM5kXSG$" role="1ZfhKB">
           <node concept="2c44tf" id="4PqLM5kXSGw" role="mwGJk">
             <node concept="3uibUv" id="2VC4eVYd90q" role="2c44tc">
-              <ref role="3uigEE" to="m87u:~HttpServletRequest" resolve="HttpServletRequest" />
+              <ref role="3uigEE" to="nwfd:~HttpServletRequest" resolve="HttpServletRequest" />
             </node>
           </node>
         </node>
@@ -93,7 +93,7 @@
         <node concept="mw_s8" id="4PqLM5kXWdV" role="1ZfhKB">
           <node concept="2c44tf" id="4PqLM5kXWdW" role="mwGJk">
             <node concept="3uibUv" id="2VC4eVYexm5" role="2c44tc">
-              <ref role="3uigEE" to="m87u:~HttpServletResponse" resolve="HttpServletResponse" />
+              <ref role="3uigEE" to="nwfd:~HttpServletResponse" resolve="HttpServletResponse" />
             </node>
           </node>
         </node>

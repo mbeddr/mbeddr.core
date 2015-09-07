@@ -7,17 +7,17 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="3iid" ref="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)" />
-    <import index="v2t1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons/org.apache.commons.lang3@java_stub)" />
-    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" />
     <import index="tp4h" ref="443f4c36-fcf5-4eb6-9500-8d06ed259e3e/r:00000000-0000-4000-0000-011c8959036d(jetbrains.mps.baseLanguage.classifiers/jetbrains.mps.baseLanguage.classifiers.behavior)" />
     <import index="tp4f" ref="443f4c36-fcf5-4eb6-9500-8d06ed259e3e/r:00000000-0000-4000-0000-011c89590373(jetbrains.mps.baseLanguage.classifiers/jetbrains.mps.baseLanguage.classifiers.structure)" />
     <import index="tpee" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.structure)" />
     <import index="tpce" ref="c72da2b9-7cce-4447-8389-f407dc1158b7/r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure/jetbrains.mps.lang.structure.structure)" />
     <import index="tpek" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.behavior)" />
-    <import index="dbrf" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="tpcu" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core/jetbrains.mps.lang.core.behavior)" />
     <import index="rh18" ref="32addf6f-1f14-40cb-991d-e0fddb7506c1/r:7c73bcc0-050a-46cb-bba5-d10598f1b9f2(com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime)" />
   </imports>
@@ -160,7 +160,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3THzug">
+      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug">
         <reference id="1180481110358" name="conceptDeclaraton" index="3qa414" />
       </concept>
       <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
@@ -214,11 +214,11 @@
                 </node>
               </node>
               <node concept="liA8E" id="86yKXFJUJQ" role="2OqNvi">
-                <ref role="37wK5l" to="ec5l:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
               </node>
             </node>
             <node concept="liA8E" id="86yKXFJVKu" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~Object.toString():java.lang.String" resolve="toString" />
+              <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
             </node>
           </node>
         </node>
@@ -238,11 +238,11 @@
                 <node concept="13iPFW" id="86yKXFJVZt" role="2JrQYb" />
               </node>
               <node concept="liA8E" id="86yKXFJWk$" role="2OqNvi">
-                <ref role="37wK5l" to="ec5l:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
               </node>
             </node>
             <node concept="liA8E" id="86yKXFJWMB" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~Object.toString():java.lang.String" resolve="toString" />
+              <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
             </node>
           </node>
         </node>
@@ -264,11 +264,11 @@
                     <node concept="13iPFW" id="5YZamx7Brls" role="2JrQYb" />
                   </node>
                   <node concept="liA8E" id="5YZamx7Bsiv" role="2OqNvi">
-                    <ref role="37wK5l" to="ec5l:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
                   </node>
                 </node>
                 <node concept="liA8E" id="5YZamx7BsH3" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~Object.toString():java.lang.String" resolve="toString" />
+                  <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
                 </node>
               </node>
             </node>
@@ -382,7 +382,7 @@
       <node concept="3clFbS" id="5C8n8D5X4cq" role="3clF47">
         <node concept="3cpWs6" id="5C8n8D5X4fI" role="3cqZAp">
           <node concept="3B5_sB" id="5C8n8D5X4fJ" role="3cqZAk">
-            <ref role="3B5MYn" to="dbrf:~JTextField" resolve="JTextField" />
+            <ref role="3B5MYn" to="dxuu:~JTextField" resolve="JTextField" />
           </node>
         </node>
       </node>
@@ -433,7 +433,7 @@
       <node concept="3clFbS" id="5C8n8D5VA6s" role="3clF47">
         <node concept="3cpWs6" id="5C8n8D5VA9E" role="3cqZAp">
           <node concept="3B5_sB" id="5C8n8D5VAa4" role="3cqZAk">
-            <ref role="3B5MYn" to="dbrf:~JCheckBox" resolve="JCheckBox" />
+            <ref role="3B5MYn" to="dxuu:~JCheckBox" resolve="JCheckBox" />
           </node>
         </node>
       </node>
@@ -485,8 +485,8 @@
               <property role="Xl_RC" value="_Configurable" />
             </node>
             <node concept="2YIFZM" id="X7OD3Wy$iR" role="3uHU7B">
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="v2t1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
               <node concept="2OqwBi" id="X7OD3Wy$iS" role="37wK5m">
                 <node concept="13iPFW" id="X7OD3Wy$iT" role="2Oq$k0" />
                 <node concept="3TrcHB" id="X7OD3Wy$iU" role="2OqNvi">
@@ -509,8 +509,8 @@
               <property role="Xl_RC" value="_PreferencesComponent" />
             </node>
             <node concept="2YIFZM" id="86yKXFUB2N" role="3uHU7B">
-              <ref role="37wK5l" to="v2t1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
               <node concept="2OqwBi" id="86yKXFUB2O" role="37wK5m">
                 <node concept="13iPFW" id="86yKXFUB2P" role="2Oq$k0" />
                 <node concept="3TrcHB" id="86yKXFUB2Q" role="2OqNvi">
@@ -533,8 +533,8 @@
               <property role="Xl_RC" value="_Plugin" />
             </node>
             <node concept="2YIFZM" id="1DjGUwRg1up" role="3uHU7B">
-              <ref role="37wK5l" to="v2t1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
               <node concept="2OqwBi" id="1DjGUwRg1uq" role="37wK5m">
                 <node concept="13iPFW" id="1DjGUwRg1ur" role="2Oq$k0" />
                 <node concept="3TrcHB" id="1DjGUwRg1us" role="2OqNvi">
@@ -557,8 +557,8 @@
               <property role="Xl_RC" value="_State" />
             </node>
             <node concept="2YIFZM" id="41w3udzip3A" role="3uHU7B">
-              <ref role="37wK5l" to="v2t1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
               <node concept="2OqwBi" id="41w3udzip3B" role="37wK5m">
                 <node concept="13iPFW" id="41w3udzip3C" role="2Oq$k0" />
                 <node concept="3TrcHB" id="41w3udzip3D" role="2OqNvi">
@@ -581,8 +581,8 @@
               <property role="Xl_RC" value="_StorageId" />
             </node>
             <node concept="2YIFZM" id="41w3udzipEQ" role="3uHU7B">
-              <ref role="37wK5l" to="v2t1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.deleteWhitespace(java.lang.String):java.lang.String" resolve="deleteWhitespace" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
               <node concept="2OqwBi" id="41w3udzipER" role="37wK5m">
                 <node concept="13iPFW" id="41w3udzipES" role="2Oq$k0" />
                 <node concept="3TrcHB" id="41w3udzipET" role="2OqNvi">
@@ -1002,7 +1002,7 @@
       <node concept="3clFbS" id="46uejXd57Go" role="3clF47">
         <node concept="3cpWs6" id="46uejXd57KS" role="3cqZAp">
           <node concept="3B5_sB" id="46uejXd57KT" role="3cqZAk">
-            <ref role="3B5MYn" to="dbrf:~JFormattedTextField" resolve="JFormattedTextField" />
+            <ref role="3B5MYn" to="dxuu:~JFormattedTextField" resolve="JFormattedTextField" />
           </node>
         </node>
       </node>
@@ -1235,7 +1235,7 @@
       <node concept="3clFbS" id="77gEP6zgFHx" role="3clF47">
         <node concept="3cpWs6" id="77gEP6zgKV6" role="3cqZAp">
           <node concept="3B5_sB" id="77gEP6zgKVv" role="3cqZAk">
-            <ref role="3B5MYn" to="dbrf:~JComboBox" resolve="JComboBox" />
+            <ref role="3B5MYn" to="dxuu:~JComboBox" resolve="JComboBox" />
           </node>
         </node>
       </node>
@@ -1285,7 +1285,7 @@
       <node concept="3clFbS" id="fFi6Pdb5V" role="3clF47">
         <node concept="3cpWs6" id="fFi6Pdb5W" role="3cqZAp">
           <node concept="3B5_sB" id="fFi6Pdb5X" role="3cqZAk">
-            <ref role="3B5MYn" to="dbrf:~JPasswordField" resolve="JPasswordField" />
+            <ref role="3B5MYn" to="dxuu:~JPasswordField" resolve="JPasswordField" />
           </node>
         </node>
       </node>

@@ -43,19 +43,19 @@
       </node>
     </node>
     <node concept="3_ehVu" id="1m4fy7KJUsE" role="1MhHOB">
-      <ref role="EomxK" to="yv4j:3JErwPFIqFi" resolve="showBookmarks" />
+      <ref role="EomxK" to="yv4j:3JErwPFIqFi" resolve="showSectionIndices" />
       <node concept="3clFbT" id="1m4fy7KJUQr" role="3_eitr">
         <property role="3clFbU" value="false" />
       </node>
     </node>
     <node concept="3_ehVu" id="1m4fy7KNxKM" role="1MhHOB">
-      <ref role="EomxK" to="yv4j:3JErwPFIqFj" resolve="bookmarkPanelWidth" />
+      <ref role="EomxK" to="yv4j:3JErwPFIqFj" resolve="SectionIndexPanelWidth" />
       <node concept="3cmrfG" id="1m4fy7KNxLc" role="3_eitr">
         <property role="3cmrfH" value="200" />
       </node>
     </node>
     <node concept="3_ehVu" id="1m4fy7KNxLQ" role="1MhHOB">
-      <ref role="EomxK" to="yv4j:3JErwPFIqFg" resolve="showBookmarkIcons" />
+      <ref role="EomxK" to="yv4j:3JErwPFIqFg" resolve="showSectionIndexIcons" />
       <node concept="3clFbT" id="1m4fy7KNxMk" role="3_eitr">
         <property role="3clFbU" value="true" />
       </node>

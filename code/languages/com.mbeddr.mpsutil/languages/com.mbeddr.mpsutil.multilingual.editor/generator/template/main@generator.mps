@@ -14,7 +14,7 @@
     <import index="sxyo" ref="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" />
     <import index="tp5r" ref="r:3ef5075b-89c5-437c-8971-b29ab29bb322(com.mbeddr.mpsutil.multilingual.common.behavior)" />
     <import index="ja3n" ref="r:bafcba01-89cb-4401-a978-fdedcf69480e(com.mbeddr.mpsutil.multilingual.editor.behavior)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="fw73" ref="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)" />
     <import index="cixo" ref="r:c786bea3-0279-4249-85d3-b8ac44fb5e9a(com.mbeddr.mpsutil.multilingual.common.generator.template.main@generator)" />
@@ -631,12 +631,12 @@
       <property role="DiZV1" value="false" />
       <node concept="3Tm1VV" id="3J1G4nNkbAa" role="1B3o_S" />
       <node concept="3uibUv" id="3J1G4nNkbAb" role="3clF45">
-        <ref role="3uigEE" to="k7g3:~ResourceBundle" resolve="ResourceBundle" />
+        <ref role="3uigEE" to="33ny:~ResourceBundle" resolve="ResourceBundle" />
       </node>
       <node concept="37vLTG" id="3J1G4nNkbAc" role="3clF46">
         <property role="TrG5h" value="locale" />
         <node concept="3uibUv" id="3J1G4nNkbAd" role="1tU5fm">
-          <ref role="3uigEE" to="k7g3:~Locale" resolve="Locale" />
+          <ref role="3uigEE" to="33ny:~Locale" resolve="Locale" />
         </node>
       </node>
       <node concept="3clFbS" id="3J1G4nNkbAe" role="3clF47">

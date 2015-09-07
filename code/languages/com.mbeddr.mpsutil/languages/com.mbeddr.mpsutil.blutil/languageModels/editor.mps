@@ -12,13 +12,13 @@
     <import index="tpco" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core/jetbrains.mps.lang.core.editor)" />
     <import index="tp2u" ref="83888646-71ce-4f1c-9c53-c54016f6ad4f/r:00000000-0000-4000-0000-011c8959032a(jetbrains.mps.baseLanguage.collections/jetbrains.mps.baseLanguage.collections.editor)" />
     <import index="tpee" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.structure)" />
-    <import index="1t7x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
-    <import index="9a8" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" />
-    <import index="nu8v" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" />
-    <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
-    <import index="jsgz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
-    <import index="tpce" ref="c72da2b9-7cce-4447-8389-f407dc1158b7/r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure/jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
+    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpce" ref="c72da2b9-7cce-4447-8389-f407dc1158b7/r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure/jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -1762,8 +1762,8 @@
                   <node concept="3clFbS" id="4kSfyefw5ru" role="3clFbx">
                     <node concept="3cpWs6" id="2$_w8oMzGER" role="3cqZAp">
                       <node concept="10M0yZ" id="2$_w8oM$egS" role="3cqZAk">
-                        <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                        <ref role="3cqZAo" to="1t7x:~Color.lightGray" resolve="lightGray" />
+                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                        <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
                       </node>
                     </node>
                   </node>
@@ -1780,8 +1780,8 @@
                     <node concept="3clFbS" id="2$_w8oM$eUs" role="9aQI4">
                       <node concept="3cpWs6" id="2$_w8oM$f$e" role="3cqZAp">
                         <node concept="10M0yZ" id="2$_w8oM$ge6" role="3cqZAk">
-                          <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                          <ref role="3cqZAo" to="1t7x:~Color.red" resolve="red" />
+                          <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                          <ref role="3cqZAo" to="z60i:~Color.red" resolve="red" />
                         </node>
                       </node>
                     </node>
@@ -1799,8 +1799,8 @@
             </node>
             <node concept="3cpWs6" id="2$_w8oM$CAj" role="3cqZAp">
               <node concept="10M0yZ" id="2$_w8oM$Dhu" role="3cqZAk">
-                <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                <ref role="3cqZAo" to="1t7x:~Color.red" resolve="red" />
+                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                <ref role="3cqZAo" to="z60i:~Color.red" resolve="red" />
               </node>
             </node>
           </node>
@@ -2161,8 +2161,8 @@
                     <ref role="37wK5l" node="3d2YJYTUz8q" resolve="OpeningBracketCell" />
                     <node concept="pncrf" id="3d2YJYTUdjI" role="37wK5m" />
                     <node concept="10M0yZ" id="3d2YJYTUdjJ" role="37wK5m">
-                      <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                      <ref role="3cqZAo" to="1t7x:~Color.gray" resolve="gray" />
+                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                      <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
                     </node>
                   </node>
                 </node>
@@ -2189,8 +2189,8 @@
                     <ref role="37wK5l" node="3d2YJYTUz5N" resolve="ClosingBracketCell" />
                     <node concept="pncrf" id="3d2YJYTUdjU" role="37wK5m" />
                     <node concept="10M0yZ" id="3d2YJYTUdjV" role="37wK5m">
-                      <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                      <ref role="3cqZAo" to="1t7x:~Color.gray" resolve="gray" />
+                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                      <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
                     </node>
                   </node>
                 </node>
@@ -2226,7 +2226,7 @@
     <property role="TrG5h" value="ClosingBracketCell" />
     <node concept="3Tm1VV" id="3d2YJYTUz5v" role="1B3o_S" />
     <node concept="3uibUv" id="3d2YJYTUz5w" role="1zkMxy">
-      <ref role="3uigEE" to="9a8:~AbstractCellProvider" resolve="AbstractCellProvider" />
+      <ref role="3uigEE" to="exr9:~AbstractCellProvider" resolve="AbstractCellProvider" />
     </node>
     <node concept="312cEg" id="3d2YJYTUz5x" role="jymVt">
       <property role="TrG5h" value="myNode" />
@@ -2237,7 +2237,7 @@
       <property role="TrG5h" value="color" />
       <node concept="3Tm6S6" id="3d2YJYTUz5_" role="1B3o_S" />
       <node concept="3uibUv" id="3d2YJYTUz5A" role="1tU5fm">
-        <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
     </node>
     <node concept="3clFbW" id="3d2YJYTUz5B" role="jymVt">
@@ -2301,7 +2301,7 @@
       <node concept="37vLTG" id="3d2YJYTUz65" role="3clF46">
         <property role="TrG5h" value="c" />
         <node concept="3uibUv" id="3d2YJYTUz66" role="1tU5fm">
-          <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+          <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
         </node>
       </node>
     </node>
@@ -2312,12 +2312,12 @@
       <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="3d2YJYTUz68" role="1B3o_S" />
       <node concept="3uibUv" id="3d2YJYTUz69" role="3clF45">
-        <ref role="3uigEE" to="nu8v:~EditorCell" resolve="EditorCell" />
+        <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
       </node>
       <node concept="37vLTG" id="3d2YJYTUz6a" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="3d2YJYTUz6b" role="1tU5fm">
-          <ref role="3uigEE" to="srng:~EditorContext" resolve="EditorContext" />
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
         </node>
       </node>
       <node concept="3clFbS" id="3d2YJYTUz6c" role="3clF47">
@@ -2325,13 +2325,13 @@
           <node concept="3cpWsn" id="3d2YJYTUz6e" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="3uibUv" id="3d2YJYTUz6f" role="1tU5fm">
-              <ref role="3uigEE" to="jsgz:~EditorCell_Basic" resolve="EditorCell_Basic" />
+              <ref role="3uigEE" to="g51k:~EditorCell_Basic" resolve="EditorCell_Basic" />
             </node>
             <node concept="2ShNRf" id="3d2YJYTUz6g" role="33vP2m">
               <node concept="YeOm9" id="3d2YJYTUz6h" role="2ShVmc">
                 <node concept="1Y3b0j" id="3d2YJYTUz6i" role="YeSDq">
-                  <ref role="1Y3XeK" to="jsgz:~EditorCell_Basic" resolve="EditorCell_Basic" />
-                  <ref role="37wK5l" to="jsgz:~EditorCell_Basic.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode)" resolve="EditorCell_Basic" />
+                  <ref role="1Y3XeK" to="g51k:~EditorCell_Basic" resolve="EditorCell_Basic" />
+                  <ref role="37wK5l" to="g51k:~EditorCell_Basic.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode)" resolve="EditorCell_Basic" />
                   <node concept="3Tm1VV" id="3d2YJYTUz6j" role="1B3o_S" />
                   <node concept="37vLTw" id="3d2YJYTUz6k" role="37wK5m">
                     <ref role="3cqZAo" node="3d2YJYTUz6a" resolve="context" />
@@ -2350,13 +2350,13 @@
                     <node concept="37vLTG" id="3d2YJYTUz6r" role="3clF46">
                       <property role="TrG5h" value="g" />
                       <node concept="3uibUv" id="3d2YJYTUz6s" role="1tU5fm">
-                        <ref role="3uigEE" to="1t7x:~Graphics" resolve="Graphics" />
+                        <ref role="3uigEE" to="z60i:~Graphics" resolve="Graphics" />
                       </node>
                     </node>
                     <node concept="37vLTG" id="3d2YJYTUz6t" role="3clF46">
                       <property role="TrG5h" value="parentSettings" />
                       <node concept="3uibUv" id="3d2YJYTUz6u" role="1tU5fm">
-                        <ref role="3uigEE" to="jsgz:~ParentSettings" resolve="ParentSettings" />
+                        <ref role="3uigEE" to="g51k:~ParentSettings" resolve="ParentSettings" />
                       </node>
                     </node>
                     <node concept="3clFbS" id="3d2YJYTUz6v" role="3clF47">
@@ -2368,7 +2368,7 @@
                                 <ref role="3cqZAo" node="3d2YJYTUz6r" resolve="g" />
                               </node>
                               <node concept="liA8E" id="3d2YJYTUz6_" role="2OqNvi">
-                                <ref role="37wK5l" to="1t7x:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
+                                <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
                                 <node concept="37vLTw" id="3d2YJYTUz6A" role="37wK5m">
                                   <ref role="3cqZAo" node="3d2YJYTUz5$" resolve="color" />
                                 </node>
@@ -2390,10 +2390,10 @@
                                   <ref role="3cqZAo" node="3d2YJYTUz6r" resolve="g" />
                                 </node>
                                 <node concept="liA8E" id="3d2YJYTUz6J" role="2OqNvi">
-                                  <ref role="37wK5l" to="1t7x:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
+                                  <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
                                   <node concept="10M0yZ" id="3d2YJYTUz6K" role="37wK5m">
-                                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                                    <ref role="3cqZAo" to="1t7x:~Color.GRAY" resolve="GRAY" />
+                                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                                    <ref role="3cqZAo" to="z60i:~Color.GRAY" resolve="GRAY" />
                                   </node>
                                 </node>
                               </node>
@@ -2405,11 +2405,11 @@
                         <node concept="3cpWsn" id="3d2YJYTUz6M" role="3cpWs9">
                           <property role="TrG5h" value="parent" />
                           <node concept="3uibUv" id="3d2YJYTUz6N" role="1tU5fm">
-                            <ref role="3uigEE" to="nu8v:~EditorCell_Collection" resolve="EditorCell_Collection" />
+                            <ref role="3uigEE" to="f4zo:~EditorCell_Collection" resolve="EditorCell_Collection" />
                           </node>
                           <node concept="2OqwBi" id="3d2YJYTUz6O" role="33vP2m">
                             <node concept="liA8E" id="3d2YJYTUz6P" role="2OqNvi">
-                              <ref role="37wK5l" to="jsgz:~EditorCell_Basic.getParent():jetbrains.mps.nodeEditor.cells.EditorCell_Collection" resolve="getParent" />
+                              <ref role="37wK5l" to="g51k:~EditorCell_Basic.getParent():jetbrains.mps.nodeEditor.cells.EditorCell_Collection" resolve="getParent" />
                             </node>
                             <node concept="Xjq3P" id="3d2YJYTUz6Q" role="2Oq$k0" />
                           </node>
@@ -2420,7 +2420,7 @@
                           <property role="TrG5h" value="x" />
                           <node concept="10Oyi0" id="3d2YJYTUz6T" role="1tU5fm" />
                           <node concept="1rXfSq" id="3d2YJYTUz6U" role="33vP2m">
-                            <ref role="37wK5l" to="jsgz:~EditorCell_Basic.getX():int" resolve="getX" />
+                            <ref role="37wK5l" to="g51k:~EditorCell_Basic.getX():int" resolve="getX" />
                           </node>
                         </node>
                       </node>
@@ -2433,7 +2433,7 @@
                               <ref role="3cqZAo" node="3d2YJYTUz6M" resolve="parent" />
                             </node>
                             <node concept="liA8E" id="3d2YJYTUz70" role="2OqNvi">
-                              <ref role="37wK5l" to="nu8v:~EditorCell.getY():int" resolve="getY" />
+                              <ref role="37wK5l" to="f4zo:~EditorCell.getY():int" resolve="getY" />
                             </node>
                           </node>
                         </node>
@@ -2451,7 +2451,7 @@
                                 <ref role="3cqZAo" node="3d2YJYTUz6M" resolve="parent" />
                               </node>
                               <node concept="liA8E" id="3d2YJYTUz78" role="2OqNvi">
-                                <ref role="37wK5l" to="nu8v:~EditorCell.getHeight():int" resolve="getHeight" />
+                                <ref role="37wK5l" to="f4zo:~EditorCell.getHeight():int" resolve="getHeight" />
                               </node>
                             </node>
                           </node>
@@ -2463,7 +2463,7 @@
                             <ref role="3cqZAo" node="3d2YJYTUz6r" resolve="g" />
                           </node>
                           <node concept="liA8E" id="3d2YJYTUz7c" role="2OqNvi">
-                            <ref role="37wK5l" to="1t7x:~Graphics.fillRect(int,int,int,int):void" resolve="fillRect" />
+                            <ref role="37wK5l" to="z60i:~Graphics.fillRect(int,int,int,int):void" resolve="fillRect" />
                             <node concept="3cpWs3" id="3d2YJYTUz7d" role="37wK5m">
                               <node concept="3cmrfG" id="3d2YJYTUz7e" role="3uHU7w">
                                 <property role="3cmrfH" value="3" />
@@ -2495,7 +2495,7 @@
                             <ref role="3cqZAo" node="3d2YJYTUz6r" resolve="g" />
                           </node>
                           <node concept="liA8E" id="3d2YJYTUz7o" role="2OqNvi">
-                            <ref role="37wK5l" to="1t7x:~Graphics.fillRect(int,int,int,int):void" resolve="fillRect" />
+                            <ref role="37wK5l" to="z60i:~Graphics.fillRect(int,int,int,int):void" resolve="fillRect" />
                             <node concept="37vLTw" id="3d2YJYTUz7p" role="37wK5m">
                               <ref role="3cqZAo" node="3d2YJYTUz6S" resolve="x" />
                             </node>
@@ -2522,7 +2522,7 @@
                             <ref role="3cqZAo" node="3d2YJYTUz6r" resolve="g" />
                           </node>
                           <node concept="liA8E" id="3d2YJYTUz7y" role="2OqNvi">
-                            <ref role="37wK5l" to="1t7x:~Graphics.fillRect(int,int,int,int):void" resolve="fillRect" />
+                            <ref role="37wK5l" to="z60i:~Graphics.fillRect(int,int,int,int):void" resolve="fillRect" />
                             <node concept="37vLTw" id="3d2YJYTUz7z" role="37wK5m">
                               <ref role="3cqZAo" node="3d2YJYTUz6S" resolve="x" />
                             </node>
@@ -2567,7 +2567,7 @@
                           </node>
                           <node concept="2OqwBi" id="3d2YJYTUz7O" role="37vLTJ">
                             <node concept="2OwXpG" id="3d2YJYTUz7P" role="2OqNvi">
-                              <ref role="2Oxat5" to="jsgz:~EditorCell_Basic.myWidth" resolve="myWidth" />
+                              <ref role="2Oxat5" to="g51k:~EditorCell_Basic.myWidth" resolve="myWidth" />
                             </node>
                             <node concept="Xjq3P" id="3d2YJYTUz7Q" role="2Oq$k0" />
                           </node>
@@ -2577,7 +2577,7 @@
                         <node concept="37vLTI" id="3d2YJYTUz7S" role="3clFbG">
                           <node concept="2OqwBi" id="3d2YJYTUz7T" role="37vLTJ">
                             <node concept="2OwXpG" id="3d2YJYTUz7U" role="2OqNvi">
-                              <ref role="2Oxat5" to="jsgz:~EditorCell_Basic.myHeight" resolve="myHeight" />
+                              <ref role="2Oxat5" to="g51k:~EditorCell_Basic.myHeight" resolve="myHeight" />
                             </node>
                             <node concept="Xjq3P" id="3d2YJYTUz7V" role="2Oq$k0" />
                           </node>
@@ -2617,7 +2617,7 @@
     <property role="TrG5h" value="OpeningBracketCell" />
     <node concept="3Tm1VV" id="3d2YJYTUz86" role="1B3o_S" />
     <node concept="3uibUv" id="3d2YJYTUz87" role="1zkMxy">
-      <ref role="3uigEE" to="9a8:~AbstractCellProvider" resolve="AbstractCellProvider" />
+      <ref role="3uigEE" to="exr9:~AbstractCellProvider" resolve="AbstractCellProvider" />
     </node>
     <node concept="312cEg" id="3d2YJYTUz88" role="jymVt">
       <property role="TrG5h" value="myNode" />
@@ -2628,7 +2628,7 @@
       <property role="TrG5h" value="color" />
       <node concept="3Tm6S6" id="3d2YJYTUz8c" role="1B3o_S" />
       <node concept="3uibUv" id="3d2YJYTUz8d" role="1tU5fm">
-        <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
     </node>
     <node concept="3clFbW" id="3d2YJYTUz8e" role="jymVt">
@@ -2692,7 +2692,7 @@
       <node concept="37vLTG" id="3d2YJYTUz8G" role="3clF46">
         <property role="TrG5h" value="c" />
         <node concept="3uibUv" id="3d2YJYTUz8H" role="1tU5fm">
-          <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+          <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
         </node>
       </node>
     </node>
@@ -2703,12 +2703,12 @@
       <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="3d2YJYTUz8J" role="1B3o_S" />
       <node concept="3uibUv" id="3d2YJYTUz8K" role="3clF45">
-        <ref role="3uigEE" to="nu8v:~EditorCell" resolve="EditorCell" />
+        <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
       </node>
       <node concept="37vLTG" id="3d2YJYTUz8L" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="3d2YJYTUz8M" role="1tU5fm">
-          <ref role="3uigEE" to="srng:~EditorContext" resolve="EditorContext" />
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
         </node>
       </node>
       <node concept="3clFbS" id="3d2YJYTUz8N" role="3clF47">
@@ -2716,13 +2716,13 @@
           <node concept="3cpWsn" id="3d2YJYTUz8P" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="3uibUv" id="3d2YJYTUz8Q" role="1tU5fm">
-              <ref role="3uigEE" to="jsgz:~EditorCell_Basic" resolve="EditorCell_Basic" />
+              <ref role="3uigEE" to="g51k:~EditorCell_Basic" resolve="EditorCell_Basic" />
             </node>
             <node concept="2ShNRf" id="3d2YJYTUz8R" role="33vP2m">
               <node concept="YeOm9" id="3d2YJYTUz8S" role="2ShVmc">
                 <node concept="1Y3b0j" id="3d2YJYTUz8T" role="YeSDq">
-                  <ref role="1Y3XeK" to="jsgz:~EditorCell_Basic" resolve="EditorCell_Basic" />
-                  <ref role="37wK5l" to="jsgz:~EditorCell_Basic.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode)" resolve="EditorCell_Basic" />
+                  <ref role="1Y3XeK" to="g51k:~EditorCell_Basic" resolve="EditorCell_Basic" />
+                  <ref role="37wK5l" to="g51k:~EditorCell_Basic.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode)" resolve="EditorCell_Basic" />
                   <node concept="3Tm1VV" id="3d2YJYTUz8U" role="1B3o_S" />
                   <node concept="37vLTw" id="3d2YJYTUz8V" role="37wK5m">
                     <ref role="3cqZAo" node="3d2YJYTUz8L" resolve="context" />
@@ -2741,13 +2741,13 @@
                     <node concept="37vLTG" id="3d2YJYTUz92" role="3clF46">
                       <property role="TrG5h" value="g" />
                       <node concept="3uibUv" id="3d2YJYTUz93" role="1tU5fm">
-                        <ref role="3uigEE" to="1t7x:~Graphics" resolve="Graphics" />
+                        <ref role="3uigEE" to="z60i:~Graphics" resolve="Graphics" />
                       </node>
                     </node>
                     <node concept="37vLTG" id="3d2YJYTUz94" role="3clF46">
                       <property role="TrG5h" value="parentSettings" />
                       <node concept="3uibUv" id="3d2YJYTUz95" role="1tU5fm">
-                        <ref role="3uigEE" to="jsgz:~ParentSettings" resolve="ParentSettings" />
+                        <ref role="3uigEE" to="g51k:~ParentSettings" resolve="ParentSettings" />
                       </node>
                     </node>
                     <node concept="3clFbS" id="3d2YJYTUz96" role="3clF47">
@@ -2759,7 +2759,7 @@
                                 <ref role="3cqZAo" node="3d2YJYTUz92" resolve="g" />
                               </node>
                               <node concept="liA8E" id="3d2YJYTUz9c" role="2OqNvi">
-                                <ref role="37wK5l" to="1t7x:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
+                                <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
                                 <node concept="37vLTw" id="3d2YJYTUz9d" role="37wK5m">
                                   <ref role="3cqZAo" node="3d2YJYTUz8b" resolve="color" />
                                 </node>
@@ -2781,10 +2781,10 @@
                                   <ref role="3cqZAo" node="3d2YJYTUz92" resolve="g" />
                                 </node>
                                 <node concept="liA8E" id="3d2YJYTUz9m" role="2OqNvi">
-                                  <ref role="37wK5l" to="1t7x:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
+                                  <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
                                   <node concept="10M0yZ" id="3d2YJYTUz9n" role="37wK5m">
-                                    <ref role="3cqZAo" to="1t7x:~Color.GRAY" resolve="GRAY" />
-                                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+                                    <ref role="3cqZAo" to="z60i:~Color.GRAY" resolve="GRAY" />
+                                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
                                   </node>
                                 </node>
                               </node>
@@ -2796,11 +2796,11 @@
                         <node concept="3cpWsn" id="3d2YJYTUz9p" role="3cpWs9">
                           <property role="TrG5h" value="parent" />
                           <node concept="3uibUv" id="3d2YJYTUz9q" role="1tU5fm">
-                            <ref role="3uigEE" to="nu8v:~EditorCell_Collection" resolve="EditorCell_Collection" />
+                            <ref role="3uigEE" to="f4zo:~EditorCell_Collection" resolve="EditorCell_Collection" />
                           </node>
                           <node concept="2OqwBi" id="3d2YJYTUz9r" role="33vP2m">
                             <node concept="liA8E" id="3d2YJYTUz9s" role="2OqNvi">
-                              <ref role="37wK5l" to="jsgz:~EditorCell_Basic.getParent():jetbrains.mps.nodeEditor.cells.EditorCell_Collection" resolve="getParent" />
+                              <ref role="37wK5l" to="g51k:~EditorCell_Basic.getParent():jetbrains.mps.nodeEditor.cells.EditorCell_Collection" resolve="getParent" />
                             </node>
                             <node concept="Xjq3P" id="3d2YJYTUz9t" role="2Oq$k0" />
                           </node>
@@ -2811,7 +2811,7 @@
                           <property role="TrG5h" value="x" />
                           <node concept="10Oyi0" id="3d2YJYTUz9w" role="1tU5fm" />
                           <node concept="1rXfSq" id="3d2YJYTUz9x" role="33vP2m">
-                            <ref role="37wK5l" to="jsgz:~EditorCell_Basic.getX():int" resolve="getX" />
+                            <ref role="37wK5l" to="g51k:~EditorCell_Basic.getX():int" resolve="getX" />
                           </node>
                         </node>
                       </node>
@@ -2824,7 +2824,7 @@
                               <ref role="3cqZAo" node="3d2YJYTUz9p" resolve="parent" />
                             </node>
                             <node concept="liA8E" id="3d2YJYTUz9B" role="2OqNvi">
-                              <ref role="37wK5l" to="nu8v:~EditorCell.getY():int" resolve="getY" />
+                              <ref role="37wK5l" to="f4zo:~EditorCell.getY():int" resolve="getY" />
                             </node>
                           </node>
                         </node>
@@ -2839,7 +2839,7 @@
                                 <ref role="3cqZAo" node="3d2YJYTUz9p" resolve="parent" />
                               </node>
                               <node concept="liA8E" id="3d2YJYTUz9I" role="2OqNvi">
-                                <ref role="37wK5l" to="nu8v:~EditorCell.getHeight():int" resolve="getHeight" />
+                                <ref role="37wK5l" to="f4zo:~EditorCell.getHeight():int" resolve="getHeight" />
                               </node>
                             </node>
                             <node concept="3cmrfG" id="3d2YJYTUz9J" role="3uHU7w">
@@ -2854,7 +2854,7 @@
                             <ref role="3cqZAo" node="3d2YJYTUz92" resolve="g" />
                           </node>
                           <node concept="liA8E" id="3d2YJYTUz9N" role="2OqNvi">
-                            <ref role="37wK5l" to="1t7x:~Graphics.fillRect(int,int,int,int):void" resolve="fillRect" />
+                            <ref role="37wK5l" to="z60i:~Graphics.fillRect(int,int,int,int):void" resolve="fillRect" />
                             <node concept="37vLTw" id="3d2YJYTUz9O" role="37wK5m">
                               <ref role="3cqZAo" node="3d2YJYTUz9v" resolve="x" />
                             </node>
@@ -2881,7 +2881,7 @@
                             <ref role="3cqZAo" node="3d2YJYTUz92" resolve="g" />
                           </node>
                           <node concept="liA8E" id="3d2YJYTUz9X" role="2OqNvi">
-                            <ref role="37wK5l" to="1t7x:~Graphics.fillRect(int,int,int,int):void" resolve="fillRect" />
+                            <ref role="37wK5l" to="z60i:~Graphics.fillRect(int,int,int,int):void" resolve="fillRect" />
                             <node concept="37vLTw" id="3d2YJYTUz9Y" role="37wK5m">
                               <ref role="3cqZAo" node="3d2YJYTUz9v" resolve="x" />
                             </node>
@@ -2908,7 +2908,7 @@
                             <ref role="3cqZAo" node="3d2YJYTUz92" resolve="g" />
                           </node>
                           <node concept="liA8E" id="3d2YJYTUza7" role="2OqNvi">
-                            <ref role="37wK5l" to="1t7x:~Graphics.fillRect(int,int,int,int):void" resolve="fillRect" />
+                            <ref role="37wK5l" to="z60i:~Graphics.fillRect(int,int,int,int):void" resolve="fillRect" />
                             <node concept="37vLTw" id="3d2YJYTUza8" role="37wK5m">
                               <ref role="3cqZAo" node="3d2YJYTUz9v" resolve="x" />
                             </node>
@@ -2953,7 +2953,7 @@
                           </node>
                           <node concept="2OqwBi" id="3d2YJYTUzap" role="37vLTJ">
                             <node concept="2OwXpG" id="3d2YJYTUzaq" role="2OqNvi">
-                              <ref role="2Oxat5" to="jsgz:~EditorCell_Basic.myWidth" resolve="myWidth" />
+                              <ref role="2Oxat5" to="g51k:~EditorCell_Basic.myWidth" resolve="myWidth" />
                             </node>
                             <node concept="Xjq3P" id="3d2YJYTUzar" role="2Oq$k0" />
                           </node>
@@ -2963,7 +2963,7 @@
                         <node concept="37vLTI" id="3d2YJYTUzat" role="3clFbG">
                           <node concept="2OqwBi" id="3d2YJYTUzau" role="37vLTJ">
                             <node concept="2OwXpG" id="3d2YJYTUzav" role="2OqNvi">
-                              <ref role="2Oxat5" to="jsgz:~EditorCell_Basic.myHeight" resolve="myHeight" />
+                              <ref role="2Oxat5" to="g51k:~EditorCell_Basic.myHeight" resolve="myHeight" />
                             </node>
                             <node concept="Xjq3P" id="3d2YJYTUzaw" role="2Oq$k0" />
                           </node>

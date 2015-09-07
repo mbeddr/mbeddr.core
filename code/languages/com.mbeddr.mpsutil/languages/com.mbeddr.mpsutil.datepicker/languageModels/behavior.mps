@@ -10,10 +10,10 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="ric" ref="r:e5a76249-cb8e-4819-94c4-41ac88316cb8(com.mbeddr.mpsutil.datepicker.structure)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
-    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="k0h" ref="r:5369d8b1-f259-457c-8b3f-061c696f3d80(com.mbeddr.mpsutil.datepicker.runtime.model)" />
-    <import index="762z" ref="98a7bbe2-0ea1-4503-9fc1-9efb7b48c6ea/f:java_stub#98a7bbe2-0ea1-4503-9fc1-9efb7b48c6ea#com.michaelbaranov.microba.calendar(com.mbeddr.mpsutil.datepicker.runtime/com.michaelbaranov.microba.calendar@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="yzu" ref="98a7bbe2-0ea1-4503-9fc1-9efb7b48c6ea/java:com.michaelbaranov.microba.calendar(com.mbeddr.mpsutil.datepicker.runtime/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -64,7 +64,7 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3THzug">
+      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug">
         <reference id="1180481110358" name="conceptDeclaraton" index="3qa414" />
       </concept>
       <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
@@ -169,7 +169,7 @@
         <node concept="3clFbF" id="2nIaZ7iwtj7" role="3cqZAp">
           <node concept="2c44tf" id="2nIaZ7iwtj8" role="3clFbG">
             <node concept="3uibUv" id="2nIaZ7izmns" role="2c44tc">
-              <ref role="3uigEE" to="762z:~DatePicker" resolve="DatePicker" />
+              <ref role="3uigEE" to="yzu:~DatePicker" resolve="DatePicker" />
             </node>
           </node>
         </node>
@@ -238,7 +238,7 @@
         <node concept="3clFbF" id="2nIaZ7iwtjw" role="3cqZAp">
           <node concept="2c44tf" id="2nIaZ7iwtjx" role="3clFbG">
             <node concept="3uibUv" id="2nIaZ7iwtjy" role="2c44tc">
-              <ref role="3uigEE" to="k7g3:~Calendar" resolve="Calendar" />
+              <ref role="3uigEE" to="33ny:~Calendar" resolve="Calendar" />
             </node>
           </node>
         </node>
@@ -301,7 +301,7 @@
         <node concept="3clFbF" id="2nIaZ7iwtjR" role="3cqZAp">
           <node concept="2c44tf" id="2nIaZ7iwtjS" role="3clFbG">
             <node concept="3uibUv" id="2nIaZ7iwtjT" role="2c44tc">
-              <ref role="3uigEE" to="e2lb:~Boolean" resolve="Boolean" />
+              <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
             </node>
           </node>
         </node>

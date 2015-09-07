@@ -7,9 +7,9 @@
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="z8de" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.util(MPS.OpenAPI/org.jetbrains.mps.openapi.util@java_stub)" />
+    <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
     <import index="hbjw" ref="r:2ffefd76-4fe0-43c2-9fbd-203c67a47b34(com.mbeddr.mpsutil.process.structure)" />
-    <import index="8d8y" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.util(MPS.IDEA/com.intellij.openapi.util@java_stub)" />
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="tp4h" ref="r:00000000-0000-4000-0000-011c8959036d(jetbrains.mps.baseLanguage.classifiers.behavior)" implicit="true" />
     <import index="cw0" ref="r:792d18f6-5d8a-43f6-aca9-5e07a8586147(com.mbeddr.mpsutil.process.behavior)" implicit="true" />
   </imports>
@@ -458,7 +458,7 @@
         <node concept="mw_s8" id="1b4F2fo6ECT" role="1ZfhKB">
           <node concept="2c44tf" id="1b4F2fo6ECP" role="mwGJk">
             <node concept="3uibUv" id="1b4F2fo6EEZ" role="2c44tc">
-              <ref role="3uigEE" to="z8de:~ProgressMonitor" resolve="ProgressMonitor" />
+              <ref role="3uigEE" to="yyf4:~ProgressMonitor" resolve="ProgressMonitor" />
             </node>
           </node>
         </node>
@@ -633,7 +633,7 @@
               <node concept="2pIpSj" id="4biM00JbhJB" role="2pJxcM">
                 <ref role="2pIpSl" to="tpee:g7uigIF" />
                 <node concept="36bGnv" id="4biM00JbhKk" role="2pJxcZ">
-                  <ref role="36bGnp" to="8d8y:~AsyncResult" resolve="AsyncResult" />
+                  <ref role="36bGnp" to="zn9m:~AsyncResult" resolve="AsyncResult" />
                 </node>
               </node>
               <node concept="2pIpSj" id="4biM00JbhL5" role="2pJxcM">

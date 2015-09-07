@@ -6,7 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="v2t1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons/org.apache.commons.lang3@java_stub)" />
+    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="tpc2" ref="18bc6592-03a6-4e29-a83a-7ff23bde13ba/r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor/jetbrains.mps.lang.editor.structure)" />
   </imports>
   <registry>
@@ -90,8 +90,8 @@
         <node concept="1Wc70l" id="2bng37t2hFd" role="3clFbw">
           <node concept="3fqX7Q" id="2bng37t2hFe" role="3uHU7w">
             <node concept="2YIFZM" id="2bng37t2hFf" role="3fr31v">
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="v2t1:~StringUtils.isBlank(java.lang.CharSequence):boolean" resolve="isBlank" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.isBlank(java.lang.CharSequence):boolean" resolve="isBlank" />
               <node concept="2OqwBi" id="2bng37t2hFg" role="37wK5m">
                 <node concept="1YBJjd" id="2bng37t2hFh" role="2Oq$k0">
                   <ref role="1YBMHb" node="2bng37t2hFn" resolve="cellModel_Constant" />
@@ -103,8 +103,8 @@
             </node>
           </node>
           <node concept="2YIFZM" id="2bng37t2hFj" role="3uHU7B">
-            <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-            <ref role="37wK5l" to="v2t1:~StringUtils.isAlphaSpace(java.lang.CharSequence):boolean" resolve="isAlphaSpace" />
+            <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+            <ref role="37wK5l" to="btm1:~StringUtils.isAlphaSpace(java.lang.CharSequence):boolean" resolve="isAlphaSpace" />
             <node concept="2OqwBi" id="2bng37t2hFk" role="37wK5m">
               <node concept="1YBJjd" id="2bng37t2hFl" role="2Oq$k0">
                 <ref role="1YBMHb" node="2bng37t2hFn" resolve="cellModel_Constant" />

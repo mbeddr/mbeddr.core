@@ -24,9 +24,6 @@
   <node concept="j$yw0" id="52ZF9D3bsG8">
     <property role="TrG5h" value="Abc" />
     <property role="3vrRH0" value="ABC" />
-    <ref role="3v0tGR" node="52ZF9D3gyKX" resolve="A" />
-    <ref role="3v0tGR" node="52ZF9D3gyKX" resolve="A" />
-    <ref role="3v0tGR" node="52ZF9D3gyKX" resolve="A" />
     <ref role="3v0tGR" node="52ZF9D3gEGo" resolve="C" />
     <node concept="j$y_n" id="52ZF9D3gyKX" role="j$yIu">
       <property role="TrG5h" value="A" />

@@ -7,12 +7,12 @@
   </languages>
   <imports>
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
-    <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
-    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" />
-    <import index="jpli" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.kernel.model(MPS.Core/jetbrains.mps.kernel.model@java_stub)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="urda" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.kernel.model(MPS.Core/)" />
     <import index="szok" ref="r:66daf7bf-1a21-494f-a67b-89edb7cdf1b9(com.mbeddr.mpsutil.suppresswarning.gen.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -126,22 +126,22 @@
             <node concept="3cpWsn" id="79g_UwJZnWv" role="3cpWs9">
               <property role="TrG5h" value="conceptNames" />
               <node concept="3uibUv" id="79g_UwJZnWl" role="1tU5fm">
-                <ref role="3uigEE" to="k7g3:~Set" resolve="Set" />
+                <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
                 <node concept="17QB3L" id="79g_UwJZo6Z" role="11_B2D" />
               </node>
               <node concept="2OqwBi" id="79g_UwJZnWw" role="33vP2m">
                 <node concept="2YIFZM" id="79g_UwJZnWx" role="2Oq$k0">
-                  <ref role="37wK5l" to="cu2c:~LanguageHierarchyCache.getInstance():jetbrains.mps.smodel.LanguageHierarchyCache" resolve="getInstance" />
-                  <ref role="1Pybhc" to="cu2c:~LanguageHierarchyCache" resolve="LanguageHierarchyCache" />
+                  <ref role="37wK5l" to="w1kc:~LanguageHierarchyCache.getInstance():jetbrains.mps.smodel.LanguageHierarchyCache" resolve="getInstance" />
+                  <ref role="1Pybhc" to="w1kc:~LanguageHierarchyCache" resolve="LanguageHierarchyCache" />
                 </node>
                 <node concept="liA8E" id="79g_UwJZnWy" role="2OqNvi">
-                  <ref role="37wK5l" to="cu2c:~LanguageHierarchyCache.getAllDescendantsOfConcept(java.lang.String):java.util.Set" resolve="getAllDescendantsOfConcept" />
+                  <ref role="37wK5l" to="w1kc:~LanguageHierarchyCache.getAllDescendantsOfConcept(java.lang.String):java.util.Set" resolve="getAllDescendantsOfConcept" />
                   <node concept="2OqwBi" id="79g_UwJZnWz" role="37wK5m">
                     <node concept="35c_gC" id="79g_UwJZnW$" role="2Oq$k0">
                       <ref role="35c_gD" to="bdcd:7U3Fobb_8Ek" resolve="SuppressWarningKind" />
                     </node>
                     <node concept="liA8E" id="79g_UwJZnW_" role="2OqNvi">
-                      <ref role="37wK5l" to="t3eg:~SAbstractConcept.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
+                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
                     </node>
                   </node>
                 </node>
@@ -176,8 +176,8 @@
                   <property role="TrG5h" value="concept" />
                   <node concept="3Tqbb2" id="79g_UwJZwcp" role="1tU5fm" />
                   <node concept="2YIFZM" id="79g_UwJZtfz" role="33vP2m">
-                    <ref role="37wK5l" to="jpli:~SModelUtil.findConceptDeclaration(java.lang.String):org.jetbrains.mps.openapi.model.SNode" resolve="findConceptDeclaration" />
-                    <ref role="1Pybhc" to="jpli:~SModelUtil" resolve="SModelUtil" />
+                    <ref role="37wK5l" to="urda:~SModelUtil.findConceptDeclaration(java.lang.String):org.jetbrains.mps.openapi.model.SNode" resolve="findConceptDeclaration" />
+                    <ref role="1Pybhc" to="urda:~SModelUtil" resolve="SModelUtil" />
                     <node concept="2GrUjf" id="79g_UwJZtf$" role="37wK5m">
                       <ref role="2Gs0qQ" node="79g_UwJZsfs" resolve="conceptName" />
                     </node>

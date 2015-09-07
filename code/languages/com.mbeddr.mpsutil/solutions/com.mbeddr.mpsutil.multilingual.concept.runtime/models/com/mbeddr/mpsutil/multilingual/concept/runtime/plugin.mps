@@ -8,9 +8,9 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
   </languages>
   <imports>
-    <import index="oj08" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.ide.util(MPS.IDEA/com.intellij.ide.util@java_stub)" />
-    <import index="pt5l" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.project(MPS.Platform/jetbrains.mps.ide.project@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="jmi8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.util(MPS.IDEA/)" />
+    <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -176,14 +176,14 @@
           <node concept="3cpWsn" id="4gGXGcLKCJE" role="3cpWs9">
             <property role="TrG5h" value="propertiesComponent" />
             <node concept="3uibUv" id="4gGXGcLKCJF" role="1tU5fm">
-              <ref role="3uigEE" to="oj08:~PropertiesComponent" resolve="PropertiesComponent" />
+              <ref role="3uigEE" to="jmi8:~PropertiesComponent" resolve="PropertiesComponent" />
             </node>
             <node concept="2YIFZM" id="4gGXGcLKCJG" role="33vP2m">
-              <ref role="1Pybhc" to="oj08:~PropertiesComponent" resolve="PropertiesComponent" />
-              <ref role="37wK5l" to="oj08:~PropertiesComponent.getInstance(com.intellij.openapi.project.Project):com.intellij.ide.util.PropertiesComponent" resolve="getInstance" />
+              <ref role="1Pybhc" to="jmi8:~PropertiesComponent" resolve="PropertiesComponent" />
+              <ref role="37wK5l" to="jmi8:~PropertiesComponent.getInstance(com.intellij.openapi.project.Project):com.intellij.ide.util.PropertiesComponent" resolve="getInstance" />
               <node concept="2YIFZM" id="4gGXGcLKCJH" role="37wK5m">
-                <ref role="37wK5l" to="pt5l:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
-                <ref role="1Pybhc" to="pt5l:~ProjectHelper" resolve="ProjectHelper" />
+                <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
+                <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
                 <node concept="1KvdUw" id="4gGXGcLKCJI" role="37wK5m" />
               </node>
             </node>
@@ -202,7 +202,7 @@
                   <ref role="3cqZAo" node="4gGXGcLKCJE" resolve="propertiesComponent" />
                 </node>
                 <node concept="liA8E" id="4gGXGcLKCJQ" role="2OqNvi">
-                  <ref role="37wK5l" to="oj08:~PropertiesComponent.getBoolean(java.lang.String,boolean):boolean" resolve="getBoolean" />
+                  <ref role="37wK5l" to="jmi8:~PropertiesComponent.getBoolean(java.lang.String,boolean):boolean" resolve="getBoolean" />
                   <node concept="2YIFZM" id="4gGXGcLLxNx" role="37wK5m">
                     <ref role="37wK5l" node="4gGXGcLLxNf" resolve="concatKey" />
                     <ref role="1Pybhc" node="4gGXGcLLrvV" resolve="MultilingualConceptPluginHelper" />
@@ -242,14 +242,14 @@
           <node concept="3cpWsn" id="4gGXGcLKCK4" role="3cpWs9">
             <property role="TrG5h" value="propertiesComponent" />
             <node concept="3uibUv" id="4gGXGcLKCK5" role="1tU5fm">
-              <ref role="3uigEE" to="oj08:~PropertiesComponent" resolve="PropertiesComponent" />
+              <ref role="3uigEE" to="jmi8:~PropertiesComponent" resolve="PropertiesComponent" />
             </node>
             <node concept="2YIFZM" id="4gGXGcLKCK6" role="33vP2m">
-              <ref role="1Pybhc" to="oj08:~PropertiesComponent" resolve="PropertiesComponent" />
-              <ref role="37wK5l" to="oj08:~PropertiesComponent.getInstance(com.intellij.openapi.project.Project):com.intellij.ide.util.PropertiesComponent" resolve="getInstance" />
+              <ref role="1Pybhc" to="jmi8:~PropertiesComponent" resolve="PropertiesComponent" />
+              <ref role="37wK5l" to="jmi8:~PropertiesComponent.getInstance(com.intellij.openapi.project.Project):com.intellij.ide.util.PropertiesComponent" resolve="getInstance" />
               <node concept="2YIFZM" id="4gGXGcLKCK7" role="37wK5m">
-                <ref role="1Pybhc" to="pt5l:~ProjectHelper" resolve="ProjectHelper" />
-                <ref role="37wK5l" to="pt5l:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
+                <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+                <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
                 <node concept="1KvdUw" id="4gGXGcLKCK8" role="37wK5m" />
               </node>
             </node>
@@ -262,7 +262,7 @@
               <ref role="3cqZAo" node="4gGXGcLKCK4" resolve="propertiesComponent" />
             </node>
             <node concept="liA8E" id="4gGXGcLKCKd" role="2OqNvi">
-              <ref role="37wK5l" to="oj08:~PropertiesComponent.setValue(java.lang.String,java.lang.String):void" resolve="setValue" />
+              <ref role="37wK5l" to="jmi8:~PropertiesComponent.setValue(java.lang.String,java.lang.String):void" resolve="setValue" />
               <node concept="2YIFZM" id="4gGXGcLLxNy" role="37wK5m">
                 <ref role="37wK5l" node="4gGXGcLLxNf" resolve="concatKey" />
                 <ref role="1Pybhc" node="4gGXGcLLrvV" resolve="MultilingualConceptPluginHelper" />
@@ -275,8 +275,8 @@
                 </node>
               </node>
               <node concept="2YIFZM" id="4gGXGcLKCKj" role="37wK5m">
-                <ref role="37wK5l" to="e2lb:~Boolean.toString(boolean):java.lang.String" resolve="toString" />
-                <ref role="1Pybhc" to="e2lb:~Boolean" resolve="Boolean" />
+                <ref role="37wK5l" to="wyt6:~Boolean.toString(boolean):java.lang.String" resolve="toString" />
+                <ref role="1Pybhc" to="wyt6:~Boolean" resolve="Boolean" />
                 <node concept="2OqwBi" id="4gGXGcLKCKk" role="37wK5m">
                   <node concept="37vLTw" id="4gGXGcLKCKl" role="2Oq$k0">
                     <ref role="3cqZAo" node="4gGXGcLKCK0" resolve="translationProvider" />
@@ -311,11 +311,11 @@
                     <ref role="3cqZAo" node="4gGXGcLLxNt" resolve="context" />
                   </node>
                   <node concept="liA8E" id="4gGXGcLLxNo" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
+                    <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
                   </node>
                 </node>
                 <node concept="liA8E" id="4gGXGcLLxNp" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~Class.getName():java.lang.String" resolve="getName" />
+                  <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
                 </node>
               </node>
               <node concept="Xl_RD" id="4gGXGcLLxNq" role="3uHU7w">
@@ -330,7 +330,7 @@
       <node concept="37vLTG" id="4gGXGcLLxNt" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="4gGXGcLLxNu" role="1tU5fm">
-          <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
       </node>
       <node concept="37vLTG" id="4gGXGcLLxNv" role="3clF46">

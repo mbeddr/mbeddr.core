@@ -8,10 +8,10 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="64jm" ref="r:53fd5ad6-9dfd-4bea-bf25-c6cd1df32c73(com.mbeddr.mpsutil.modellisteners.sandboxlang.structure)" implicit="true" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -155,11 +155,11 @@
         <node concept="3clFbF" id="5iW7uqbONaC" role="3cqZAp">
           <node concept="2OqwBi" id="5iW7uqbONa_" role="3clFbG">
             <node concept="10M0yZ" id="5iW7uqbONaA" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="5iW7uqbONaB" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="5iW7uqbONcD" role="37wK5m">
                 <property role="Xl_RC" value="Added" />
               </node>
@@ -172,7 +172,7 @@
               <node concept="j_vvf" id="5iW7uqbOJs2" role="2JrQYb" />
             </node>
             <node concept="liA8E" id="5iW7uqbOK0q" role="2OqNvi">
-              <ref role="37wK5l" to="ec5l:~SNode.setReferenceTarget(org.jetbrains.mps.openapi.language.SReferenceLink,org.jetbrains.mps.openapi.model.SNode):void" resolve="setReferenceTarget" />
+              <ref role="37wK5l" to="mhbf:~SNode.setReferenceTarget(org.jetbrains.mps.openapi.language.SReferenceLink,org.jetbrains.mps.openapi.model.SNode):void" resolve="setReferenceTarget" />
               <node concept="3vtFuG" id="5iW7uqbOK1c" role="37wK5m" />
               <node concept="10Nm6u" id="5iW7uqbOK2V" role="37wK5m" />
             </node>
@@ -186,11 +186,11 @@
         <node concept="3clFbF" id="5iW7uqbONkx" role="3cqZAp">
           <node concept="2OqwBi" id="5iW7uqbONku" role="3clFbG">
             <node concept="10M0yZ" id="5iW7uqbONkv" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="5iW7uqbONkw" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="5iW7uqbONns" role="37wK5m">
                 <property role="Xl_RC" value="Removed" />
               </node>
@@ -224,11 +224,11 @@
         <node concept="3clFbF" id="5iW7uqbQmxl" role="3cqZAp">
           <node concept="2OqwBi" id="5iW7uqbQmxi" role="3clFbG">
             <node concept="10M0yZ" id="5iW7uqbQmxj" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="5iW7uqbQmxk" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="3cpWs3" id="5iW7uqbQo3U" role="37wK5m">
                 <node concept="3vqAZ7" id="5iW7uqbQoiC" role="3uHU7w" />
                 <node concept="3cpWs3" id="5iW7uqbQnB_" role="3uHU7B">
@@ -259,7 +259,7 @@
             <node concept="2EnYce" id="5iW7uqbR3c_" role="37vLTx">
               <node concept="3vqAZ7" id="5iW7uqbQXER" role="2Oq$k0" />
               <node concept="liA8E" id="5iW7uqbR2vc" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
               </node>
             </node>
             <node concept="2OqwBi" id="5iW7uqbQWPU" role="37vLTJ">
@@ -277,11 +277,11 @@
         <node concept="3clFbF" id="5iW7uqbXloF" role="3cqZAp">
           <node concept="2OqwBi" id="5iW7uqbXloC" role="3clFbG">
             <node concept="10M0yZ" id="5iW7uqbXloD" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="5iW7uqbXloE" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="5iW7uqbXlpr" role="37wK5m">
                 <property role="Xl_RC" value="root added" />
               </node>
@@ -295,11 +295,11 @@
         <node concept="3clFbF" id="5iW7uqbXm22" role="3cqZAp">
           <node concept="2OqwBi" id="5iW7uqbXm1Z" role="3clFbG">
             <node concept="10M0yZ" id="5iW7uqbXm20" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="5iW7uqbXm21" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="5iW7uqbXm2M" role="37wK5m">
                 <property role="Xl_RC" value="before root removed" />
               </node>
@@ -313,11 +313,11 @@
         <node concept="3clFbF" id="5iW7uqbXmIW" role="3cqZAp">
           <node concept="2OqwBi" id="5iW7uqbXmIT" role="3clFbG">
             <node concept="10M0yZ" id="5iW7uqbXmIU" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="5iW7uqbXmIV" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="5iW7uqbXmJG" role="37wK5m">
                 <property role="Xl_RC" value="root removed" />
               </node>

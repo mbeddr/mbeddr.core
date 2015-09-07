@@ -7,13 +7,13 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="cu2c" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="ua2a" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.typesystem.inference(MPS.Core/jetbrains.mps.typesystem.inference@java_stub)" />
+    <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
     <import index="7wpd" ref="r:fb1c47d7-a72e-4e01-92dc-1e9f2ba4a118(com.mbeddr.mpsutil.common.util)" />
@@ -1464,7 +1464,7 @@
                             <ref role="3cqZAo" node="7F2vPZ5Rwyf" resolve="result" />
                           </node>
                           <node concept="liA8E" id="7F2vPZ5VRt2" role="2OqNvi">
-                            <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                             <node concept="1rXfSq" id="7F2vPZ5VRP8" role="37wK5m">
                               <ref role="37wK5l" node="7F2vPZ5HCEU" resolve="getAliasOrName" />
                               <node concept="37vLTw" id="7F2vPZ5VRP9" role="37wK5m">
@@ -1756,7 +1756,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="53rYRk97lUp" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                    <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
                     <node concept="Xl_RD" id="53rYRk97lUq" role="37wK5m">
                       <property role="Xl_RC" value="node|&lt;|&gt;" />
                     </node>
@@ -2173,12 +2173,12 @@
                   <node concept="3cpWsn" id="5x677oPuE63" role="3cpWs9">
                     <property role="TrG5h" value="subtypingManager" />
                     <node concept="3uibUv" id="5x677oPuE5Z" role="1tU5fm">
-                      <ref role="3uigEE" to="ua2a:~SubtypingManager" resolve="SubtypingManager" />
+                      <ref role="3uigEE" to="u78q:~SubtypingManager" resolve="SubtypingManager" />
                     </node>
                     <node concept="2OqwBi" id="5x677oPuE64" role="33vP2m">
                       <node concept="2QUAEa" id="5x677oPuE65" role="2Oq$k0" />
                       <node concept="liA8E" id="5x677oPuE66" role="2OqNvi">
-                        <ref role="37wK5l" to="ua2a:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+                        <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
                       </node>
                     </node>
                   </node>
@@ -2192,7 +2192,7 @@
                         <ref role="3cqZAo" node="5x677oPuE63" resolve="subtypingManager" />
                       </node>
                       <node concept="liA8E" id="44jZT9pPY$N" role="2OqNvi">
-                        <ref role="37wK5l" to="ua2a:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
+                        <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
                         <node concept="37vLTw" id="44jZT9pPY$O" role="37wK5m">
                           <ref role="3cqZAo" node="5x677oPqxV6" resolve="thisType" />
                         </node>
@@ -2212,7 +2212,7 @@
                         <ref role="3cqZAo" node="5x677oPuE63" resolve="subtypingManager" />
                       </node>
                       <node concept="liA8E" id="44jZT9pQc37" role="2OqNvi">
-                        <ref role="37wK5l" to="ua2a:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
+                        <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
                         <node concept="37vLTw" id="44jZT9pQc38" role="37wK5m">
                           <ref role="3cqZAo" node="5x677oPqxVe" resolve="otherType" />
                         </node>
@@ -2290,7 +2290,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="EWig$goZMO" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~String.compareTo(java.lang.String):int" resolve="compareTo" />
+                      <ref role="37wK5l" to="wyt6:~String.compareTo(java.lang.String):int" resolve="compareTo" />
                       <node concept="2OqwBi" id="EWig$gp1XL" role="37wK5m">
                         <node concept="37vLTw" id="EWig$gp1yT" role="2Oq$k0">
                           <ref role="3cqZAo" node="5x677oPqxVe" resolve="otherType" />
@@ -2322,7 +2322,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="5x677oPqT$z" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.compareTo(java.lang.String):int" resolve="compareTo" />
+                  <ref role="37wK5l" to="wyt6:~String.compareTo(java.lang.String):int" resolve="compareTo" />
                   <node concept="2OqwBi" id="5x677oPqWCq" role="37wK5m">
                     <node concept="2OqwBi" id="5x677oPqUuR" role="2Oq$k0">
                       <node concept="37vLTw" id="5x677oPqUa8" role="2Oq$k0">
@@ -2591,7 +2591,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="5x677oPw3Aq" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.compareTo(java.lang.String):int" resolve="compareTo" />
+                  <ref role="37wK5l" to="wyt6:~String.compareTo(java.lang.String):int" resolve="compareTo" />
                   <node concept="2OqwBi" id="5x677oPw4Kp" role="37wK5m">
                     <node concept="37vLTw" id="5x677oPw4gI" role="2Oq$k0">
                       <ref role="3cqZAo" node="5x677oPqbO_" resolve="otherConceptEvaluator" />
@@ -2647,11 +2647,11 @@
         <node concept="3cpWs6" id="7ueT7DHWKb5" role="3cqZAp">
           <node concept="2OqwBi" id="7ueT7DHWKb7" role="3cqZAk">
             <node concept="2YIFZM" id="7ueT7DHWKb8" role="2Oq$k0">
-              <ref role="1Pybhc" to="cu2c:~SModelRepository" resolve="SModelRepository" />
-              <ref role="37wK5l" to="cu2c:~SModelRepository.getInstance():jetbrains.mps.smodel.SModelRepository" resolve="getInstance" />
+              <ref role="1Pybhc" to="w1kc:~SModelRepository" resolve="SModelRepository" />
+              <ref role="37wK5l" to="w1kc:~SModelRepository.getInstance():jetbrains.mps.smodel.SModelRepository" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="7ueT7DHWKb9" role="2OqNvi">
-              <ref role="37wK5l" to="cu2c:~SModelRepository.getModelDescriptor(java.lang.String):org.jetbrains.mps.openapi.model.SModel" resolve="getModelDescriptor" />
+              <ref role="37wK5l" to="w1kc:~SModelRepository.getModelDescriptor(java.lang.String):org.jetbrains.mps.openapi.model.SModel" resolve="getModelDescriptor" />
               <node concept="2OqwBi" id="7ueT7DHWKba" role="37wK5m">
                 <node concept="2OqwBi" id="7ueT7DHWKbb" role="2Oq$k0">
                   <node concept="13iPFW" id="7ueT7DHWKbc" role="2Oq$k0" />
@@ -3405,7 +3405,7 @@
               </node>
             </node>
             <node concept="liA8E" id="5x677oPr1QH" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~String.compareTo(java.lang.String):int" resolve="compareTo" />
+              <ref role="37wK5l" to="wyt6:~String.compareTo(java.lang.String):int" resolve="compareTo" />
               <node concept="2OqwBi" id="5x677oPr1Z0" role="37wK5m">
                 <node concept="37vLTw" id="5x677oPr1SZ" role="2Oq$k0">
                   <ref role="3cqZAo" node="5x677oPpPWj" resolve="other" />
@@ -3482,7 +3482,7 @@
               </node>
             </node>
             <node concept="liA8E" id="5x677oPrh5v" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~String.compareTo(java.lang.String):int" resolve="compareTo" />
+              <ref role="37wK5l" to="wyt6:~String.compareTo(java.lang.String):int" resolve="compareTo" />
               <node concept="2OqwBi" id="5x677oPrheu" role="37wK5m">
                 <node concept="37vLTw" id="5x677oPrh9x" role="2Oq$k0">
                   <ref role="3cqZAo" node="5x677oPoyg6" resolve="other" />
@@ -3653,12 +3653,12 @@
                               <node concept="34oBXx" id="7F2vPZ32A$P" role="2OqNvi" />
                             </node>
                             <node concept="3uibUv" id="7F2vPZ32A$Q" role="10QFUM">
-                              <ref role="3uigEE" to="e2lb:~Integer" resolve="Integer" />
+                              <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="7F2vPZ32A$R" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~Integer.compareTo(java.lang.Integer):int" resolve="compareTo" />
+                          <ref role="37wK5l" to="wyt6:~Integer.compareTo(java.lang.Integer):int" resolve="compareTo" />
                           <node concept="2OqwBi" id="7F2vPZ32A$S" role="37wK5m">
                             <node concept="37vLTw" id="7F2vPZ32A$T" role="2Oq$k0">
                               <ref role="3cqZAo" node="5x677oPoM_u" resolve="otherConstraints" />

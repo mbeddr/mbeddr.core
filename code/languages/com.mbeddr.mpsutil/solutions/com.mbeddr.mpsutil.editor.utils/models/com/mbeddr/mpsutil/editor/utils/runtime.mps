@@ -7,12 +7,12 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
   </languages>
   <imports>
-    <import index="nu8v" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" />
-    <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
-    <import index="jsgz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
-    <import index="b2mh" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.project(MPS.IDEA/com.intellij.openapi.project@java_stub)" />
-    <import index="vrix" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.fileEditor(MPS.IDEA/com.intellij.openapi.fileEditor@java_stub)" />
-    <import index="1d7m" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.ide.editor(MPS.Editor/jetbrains.mps.ide.editor@java_stub)" />
+    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
+    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
+    <import index="iwsx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.fileEditor(MPS.IDEA/)" />
+    <import index="k3nr" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor(MPS.Editor/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -138,7 +138,7 @@
               <ref role="3cqZAo" node="4gGXGcLQIkM" resolve="editorContext" />
             </node>
             <node concept="liA8E" id="5T3_DgSXhhP" role="2OqNvi">
-              <ref role="37wK5l" to="srng:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+              <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
             </node>
           </node>
         </node>
@@ -147,14 +147,14 @@
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="selectedCell" />
             <node concept="3uibUv" id="4gGXGcLQIkd" role="1tU5fm">
-              <ref role="3uigEE" to="nu8v:~EditorCell" resolve="EditorCell" />
+              <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
             </node>
             <node concept="2OqwBi" id="4gGXGcLQIke" role="33vP2m">
               <node concept="37vLTw" id="4gGXGcLQIkf" role="2Oq$k0">
                 <ref role="3cqZAo" node="4gGXGcLQIkM" resolve="editorContext" />
               </node>
               <node concept="liA8E" id="4gGXGcLQIkg" role="2OqNvi">
-                <ref role="37wK5l" to="srng:~EditorContext.getSelectedCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getSelectedCell" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getSelectedCell" />
               </node>
             </node>
           </node>
@@ -167,7 +167,7 @@
                 <ref role="3cqZAo" node="4gGXGcLQIkc" resolve="selectedCell" />
               </node>
               <node concept="3uibUv" id="4gGXGcLQIkm" role="2ZW6by">
-                <ref role="3uigEE" to="jsgz:~EditorCell_Label" resolve="EditorCell_Label" />
+                <ref role="3uigEE" to="g51k:~EditorCell_Label" resolve="EditorCell_Label" />
               </node>
             </node>
           </node>
@@ -183,12 +183,12 @@
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="editorCell" />
             <node concept="3uibUv" id="4gGXGcLQIkt" role="1tU5fm">
-              <ref role="3uigEE" to="jsgz:~EditorCell_Label" resolve="EditorCell_Label" />
+              <ref role="3uigEE" to="g51k:~EditorCell_Label" resolve="EditorCell_Label" />
             </node>
             <node concept="1eOMI4" id="4gGXGcLQIku" role="33vP2m">
               <node concept="10QFUN" id="4gGXGcLQIkv" role="1eOMHV">
                 <node concept="3uibUv" id="4gGXGcLQIkw" role="10QFUM">
-                  <ref role="3uigEE" to="jsgz:~EditorCell_Label" resolve="EditorCell_Label" />
+                  <ref role="3uigEE" to="g51k:~EditorCell_Label" resolve="EditorCell_Label" />
                 </node>
                 <node concept="37vLTw" id="4gGXGcLQIkx" role="10QFUP">
                   <ref role="3cqZAo" node="4gGXGcLQIkc" resolve="selectedCell" />
@@ -205,7 +205,7 @@
                 <ref role="3cqZAo" node="4gGXGcLQIks" resolve="editorCell" />
               </node>
               <node concept="liA8E" id="4gGXGcLQIkB" role="2OqNvi">
-                <ref role="37wK5l" to="jsgz:~EditorCell_Basic.isErrorState():boolean" resolve="isErrorState" />
+                <ref role="37wK5l" to="g51k:~EditorCell_Basic.isErrorState():boolean" resolve="isErrorState" />
               </node>
             </node>
           </node>
@@ -222,7 +222,7 @@
               <ref role="3cqZAo" node="4gGXGcLQIks" resolve="editorCell" />
             </node>
             <node concept="liA8E" id="4gGXGcLQIkJ" role="2OqNvi">
-              <ref role="37wK5l" to="jsgz:~EditorCell_Label.getRenderedText():java.lang.String" resolve="getRenderedText" />
+              <ref role="37wK5l" to="g51k:~EditorCell_Label.getRenderedText():java.lang.String" resolve="getRenderedText" />
             </node>
           </node>
         </node>
@@ -232,7 +232,7 @@
       <node concept="37vLTG" id="4gGXGcLQIkM" role="3clF46">
         <property role="TrG5h" value="editorContext" />
         <node concept="3uibUv" id="4gGXGcLQIkN" role="1tU5fm">
-          <ref role="3uigEE" to="srng:~EditorContext" resolve="EditorContext" />
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
         </node>
       </node>
     </node>
@@ -247,11 +247,11 @@
           <node concept="3cpWsn" id="5T3_DgSXdRl" role="3cpWs9">
             <property role="TrG5h" value="fileEditorManager" />
             <node concept="3uibUv" id="5T3_DgSXdRi" role="1tU5fm">
-              <ref role="3uigEE" to="vrix:~FileEditorManager" resolve="FileEditorManager" />
+              <ref role="3uigEE" to="iwsx:~FileEditorManager" resolve="FileEditorManager" />
             </node>
             <node concept="2YIFZM" id="5T3_DgSXdRm" role="33vP2m">
-              <ref role="37wK5l" to="vrix:~FileEditorManager.getInstance(com.intellij.openapi.project.Project):com.intellij.openapi.fileEditor.FileEditorManager" resolve="getInstance" />
-              <ref role="1Pybhc" to="vrix:~FileEditorManager" resolve="FileEditorManager" />
+              <ref role="37wK5l" to="iwsx:~FileEditorManager.getInstance(com.intellij.openapi.project.Project):com.intellij.openapi.fileEditor.FileEditorManager" resolve="getInstance" />
+              <ref role="1Pybhc" to="iwsx:~FileEditorManager" resolve="FileEditorManager" />
               <node concept="37vLTw" id="5T3_DgSXdRn" role="37wK5m">
                 <ref role="3cqZAo" node="5T3_DgSXdBS" resolve="ideaProject" />
               </node>
@@ -263,7 +263,7 @@
             <property role="TrG5h" value="editors" />
             <node concept="A3Dl8" id="5T3_DgSXfoR" role="1tU5fm">
               <node concept="3uibUv" id="5T3_DgSXfoU" role="A3Ik2">
-                <ref role="3uigEE" to="1d7m:~MPSFileNodeEditor" resolve="MPSFileNodeEditor" />
+                <ref role="3uigEE" to="k3nr:~MPSFileNodeEditor" resolve="MPSFileNodeEditor" />
               </node>
             </node>
             <node concept="2OqwBi" id="5T3_DgSXfpg" role="33vP2m">
@@ -273,14 +273,14 @@
                     <ref role="3cqZAo" node="5T3_DgSXdRl" resolve="fileEditorManager" />
                   </node>
                   <node concept="liA8E" id="5T3_DgSXfpk" role="2OqNvi">
-                    <ref role="37wK5l" to="vrix:~FileEditorManager.getAllEditors():com.intellij.openapi.fileEditor.FileEditor[]" resolve="getAllEditors" />
+                    <ref role="37wK5l" to="iwsx:~FileEditorManager.getAllEditors():com.intellij.openapi.fileEditor.FileEditor[]" resolve="getAllEditors" />
                   </node>
                 </node>
                 <node concept="39bAoz" id="5T3_DgSXfpl" role="2OqNvi" />
               </node>
               <node concept="UnYns" id="5T3_DgSXfpm" role="2OqNvi">
                 <node concept="3uibUv" id="5T3_DgSXfpn" role="UnYnz">
-                  <ref role="3uigEE" to="1d7m:~MPSFileNodeEditor" resolve="MPSFileNodeEditor" />
+                  <ref role="3uigEE" to="k3nr:~MPSFileNodeEditor" resolve="MPSFileNodeEditor" />
                 </node>
               </node>
             </node>
@@ -301,7 +301,7 @@
                         <ref role="3cqZAo" node="5T3_DgSXiuI" resolve="it" />
                       </node>
                       <node concept="liA8E" id="5T3_DgSXjLy" role="2OqNvi">
-                        <ref role="37wK5l" to="1d7m:~MPSFileNodeEditor.getNodeEditor():jetbrains.mps.openapi.editor.Editor" resolve="getNodeEditor" />
+                        <ref role="37wK5l" to="k3nr:~MPSFileNodeEditor.getNodeEditor():jetbrains.mps.openapi.editor.Editor" resolve="getNodeEditor" />
                       </node>
                     </node>
                   </node>
@@ -318,13 +318,13 @@
       <node concept="3Tm1VV" id="5T3_DgSXbpO" role="1B3o_S" />
       <node concept="A3Dl8" id="5T3_DgSXcTM" role="3clF45">
         <node concept="3uibUv" id="5T3_DgSXjRZ" role="A3Ik2">
-          <ref role="3uigEE" to="srng:~Editor" resolve="Editor" />
+          <ref role="3uigEE" to="cj4x:~Editor" resolve="Editor" />
         </node>
       </node>
       <node concept="37vLTG" id="5T3_DgSXdBS" role="3clF46">
         <property role="TrG5h" value="ideaProject" />
         <node concept="3uibUv" id="5T3_DgSXdBR" role="1tU5fm">
-          <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
+          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
         </node>
       </node>
     </node>
@@ -352,7 +352,7 @@
                         <ref role="3cqZAo" node="5T3_DgSXkFp" resolve="it" />
                       </node>
                       <node concept="liA8E" id="5T3_DgSXkWu" role="2OqNvi">
-                        <ref role="37wK5l" to="srng:~Editor.getCurrentEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getCurrentEditorComponent" />
+                        <ref role="37wK5l" to="cj4x:~Editor.getCurrentEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getCurrentEditorComponent" />
                       </node>
                     </node>
                   </node>
@@ -369,13 +369,13 @@
       <node concept="3Tm1VV" id="5T3_DgSXkmq" role="1B3o_S" />
       <node concept="A3Dl8" id="5T3_DgSXkpf" role="3clF45">
         <node concept="3uibUv" id="5T3_DgSXkpl" role="A3Ik2">
-          <ref role="3uigEE" to="srng:~EditorComponent" resolve="EditorComponent" />
+          <ref role="3uigEE" to="cj4x:~EditorComponent" resolve="EditorComponent" />
         </node>
       </node>
       <node concept="37vLTG" id="5T3_DgSXksw" role="3clF46">
         <property role="TrG5h" value="ideaProject" />
         <node concept="3uibUv" id="5T3_DgSXksv" role="1tU5fm">
-          <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
+          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
         </node>
       </node>
     </node>

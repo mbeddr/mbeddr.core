@@ -9,7 +9,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="fw73" ref="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="sxyo" ref="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" implicit="true" />
@@ -166,12 +166,12 @@
       <property role="DiZV1" value="false" />
       <node concept="3Tm1VV" id="15QjPzrkjBE" role="1B3o_S" />
       <node concept="3uibUv" id="15QjPzrkjBF" role="3clF45">
-        <ref role="3uigEE" to="k7g3:~ResourceBundle" resolve="ResourceBundle" />
+        <ref role="3uigEE" to="33ny:~ResourceBundle" resolve="ResourceBundle" />
       </node>
       <node concept="37vLTG" id="15QjPzrkjBG" role="3clF46">
         <property role="TrG5h" value="locale" />
         <node concept="3uibUv" id="15QjPzrkjBH" role="1tU5fm">
-          <ref role="3uigEE" to="k7g3:~Locale" resolve="Locale" />
+          <ref role="3uigEE" to="33ny:~Locale" resolve="Locale" />
         </node>
       </node>
       <node concept="3clFbS" id="15QjPzrkjBI" role="3clF47">

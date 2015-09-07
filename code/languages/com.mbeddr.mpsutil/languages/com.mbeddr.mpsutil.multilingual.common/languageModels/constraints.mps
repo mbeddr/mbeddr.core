@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="sxyo" ref="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" />
-    <import index="v2t1" ref="f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons/org.apache.commons.lang3@java_stub)" />
+    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="tp5r" ref="r:3ef5075b-89c5-437c-8971-b29ab29bb322(com.mbeddr.mpsutil.multilingual.common.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -85,8 +85,8 @@
           <node concept="3clFbF" id="vzhXZPAWNP" role="3cqZAp">
             <node concept="3fqX7Q" id="vzhXZPAWNQ" role="3clFbG">
               <node concept="2YIFZM" id="vzhXZPAWNR" role="3fr31v">
-                <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-                <ref role="37wK5l" to="v2t1:~StringUtils.containsWhitespace(java.lang.CharSequence):boolean" resolve="containsWhitespace" />
+                <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+                <ref role="37wK5l" to="btm1:~StringUtils.containsWhitespace(java.lang.CharSequence):boolean" resolve="containsWhitespace" />
                 <node concept="1Wqviy" id="vzhXZPAWNS" role="37wK5m" />
               </node>
             </node>
@@ -110,8 +110,8 @@
               </node>
             </node>
             <node concept="2YIFZM" id="vzhXZPAWO2" role="3clFbw">
-              <ref role="1Pybhc" to="v2t1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="v2t1:~StringUtils.isBlank(java.lang.CharSequence):boolean" resolve="isBlank" />
+              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+              <ref role="37wK5l" to="btm1:~StringUtils.isBlank(java.lang.CharSequence):boolean" resolve="isBlank" />
               <node concept="2OqwBi" id="vzhXZPAWO3" role="37wK5m">
                 <node concept="EsrRn" id="vzhXZPAWO4" role="2Oq$k0" />
                 <node concept="3TrcHB" id="vzhXZPAWO5" role="2OqNvi">

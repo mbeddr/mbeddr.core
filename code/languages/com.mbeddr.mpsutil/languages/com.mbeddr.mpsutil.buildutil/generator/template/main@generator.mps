@@ -14,7 +14,7 @@
     <import index="kdzh" ref="0cf935df-4699-4e9c-a132-fa109541cba3/r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps/jetbrains.mps.build.mps.structure)" />
     <import index="tken" ref="0cf935df-4699-4e9c-a132-fa109541cba3/r:38bad86e-d92c-4ea7-ad52-a111dc6c2457(jetbrains.mps.build.mps/jetbrains.mps.build.mps.util)" />
     <import index="fnbo" ref="692e0a46-0d23-4c8a-8ce0-ea4c2266672a/r:d89d60fc-e488-474b-a7de-9d6e3b77d10d(com.mbeddr.mpsutil.buildutil/com.mbeddr.mpsutil.buildutil.structure)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -375,7 +375,7 @@
                                   <ref role="3cqZAo" node="29PHHdm7eIS" resolve="ex" />
                                 </node>
                                 <node concept="liA8E" id="29PHHdm7eIY" role="2OqNvi">
-                                  <ref role="37wK5l" to="e2lb:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                                  <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
                                 </node>
                               </node>
                               <node concept="37vLTw" id="29PHHdm7eIZ" role="34bMjA">
