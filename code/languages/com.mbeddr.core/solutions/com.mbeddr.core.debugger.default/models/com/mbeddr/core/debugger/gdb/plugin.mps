@@ -4,19 +4,19 @@
   <languages>
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
   </languages>
   <imports>
     <import index="blwm" ref="r:61a45d85-604a-4af4-8729-16a36d455774(com.mbeddr.core.debug.plugin)" />
     <import index="x30c" ref="r:04a32be8-7074-4c9c-b2f8-77d4a01a19dc(com.mbeddr.core.debug.debugger)" />
-    <import index="wfqx" ref="f:java_stub#85d9f97b-1654-4692-b61c-fcc40db03653#org.eclipse.cdt.debug.core.cdi(Eclipse.Debugger/org.eclipse.cdt.debug.core.cdi@java_stub)" />
-    <import index="b2mh" ref="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.project(MPS.IDEA/com.intellij.openapi.project@java_stub)" />
-    <import index="y1xt" ref="f:java_stub#85d9f97b-1654-4692-b61c-fcc40db03653#org.eclipse.cdt.debug.mi.core(Eclipse.Debugger/org.eclipse.cdt.debug.mi.core@java_stub)" />
-    <import index="ubvy" ref="f:java_stub#85d9f97b-1654-4692-b61c-fcc40db03653#org.eclipse.cdt.debug.mi.core.command(Eclipse.Debugger/org.eclipse.cdt.debug.mi.core.command@java_stub)" />
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="ys5c" ref="85d9f97b-1654-4692-b61c-fcc40db03653/java:org.eclipse.cdt.debug.core.cdi(Eclipse.Debugger/)" />
+    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
+    <import index="52cq" ref="85d9f97b-1654-4692-b61c-fcc40db03653/java:org.eclipse.cdt.debug.mi.core(Eclipse.Debugger/)" />
+    <import index="xa4n" ref="85d9f97b-1654-4692-b61c-fcc40db03653/java:org.eclipse.cdt.debug.mi.core.command(Eclipse.Debugger/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="1l1h" ref="r:c02662c0-67c5-4c3a-8d3a-cd7ffe189340(jetbrains.mps.debug.api)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
@@ -175,7 +175,7 @@
               <node concept="1Y3b0j" id="7B__YhMRd$f" role="YeSDq">
                 <property role="2bfB8j" value="true" />
                 <ref role="1Y3XeK" to="blwm:7B__YhMLdfT" resolve="IDebuggerBackendProvider" />
-                <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+                <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                 <node concept="3Tm1VV" id="7B__YhMRd$g" role="1B3o_S" />
                 <node concept="3clFb_" id="7B__YhMRd$h" role="jymVt">
                   <property role="1EzhhJ" value="false" />
@@ -211,7 +211,7 @@
                     </node>
                   </node>
                   <node concept="3uibUv" id="7B__YhMRl42" role="3clF45">
-                    <ref role="3uigEE" to="wfqx:~ICDISession" resolve="ICDISession" />
+                    <ref role="3uigEE" to="ys5c:~ICDISession" resolve="ICDISession" />
                   </node>
                   <node concept="3Tm1VV" id="7B__YhMRd$t" role="1B3o_S" />
                   <node concept="3clFbS" id="7B__YhMRd$v" role="3clF47">
@@ -237,11 +237,11 @@
                           <node concept="3cpWsn" id="3WFvXLXBexN" role="3cpWs9">
                             <property role="TrG5h" value="plugin" />
                             <node concept="3uibUv" id="3WFvXLXBexO" role="1tU5fm">
-                              <ref role="3uigEE" to="y1xt:~MIPlugin" resolve="MIPlugin" />
+                              <ref role="3uigEE" to="52cq:~MIPlugin" resolve="MIPlugin" />
                             </node>
                             <node concept="2ShNRf" id="3WFvXLXBfSR" role="33vP2m">
                               <node concept="1pGfFk" id="3WFvXLXBlda" role="2ShVmc">
-                                <ref role="37wK5l" to="y1xt:~MIPlugin.&lt;init&gt;()" resolve="MIPlugin" />
+                                <ref role="37wK5l" to="52cq:~MIPlugin.&lt;init&gt;()" resolve="MIPlugin" />
                               </node>
                             </node>
                           </node>
@@ -250,11 +250,11 @@
                           <node concept="3cpWsn" id="3WFvXLXBsbF" role="3cpWs9">
                             <property role="TrG5h" value="mi" />
                             <node concept="3uibUv" id="3WFvXLXBsbD" role="1tU5fm">
-                              <ref role="3uigEE" to="y1xt:~MIPlugin" resolve="MIPlugin" />
+                              <ref role="3uigEE" to="52cq:~MIPlugin" resolve="MIPlugin" />
                             </node>
                             <node concept="2YIFZM" id="3WFvXLXBsbG" role="33vP2m">
-                              <ref role="37wK5l" to="y1xt:~MIPlugin.getDefault():org.eclipse.cdt.debug.mi.core.MIPlugin" resolve="getDefault" />
-                              <ref role="1Pybhc" to="y1xt:~MIPlugin" resolve="MIPlugin" />
+                              <ref role="37wK5l" to="52cq:~MIPlugin.getDefault():org.eclipse.cdt.debug.mi.core.MIPlugin" resolve="getDefault" />
+                              <ref role="1Pybhc" to="52cq:~MIPlugin" resolve="MIPlugin" />
                             </node>
                           </node>
                         </node>
@@ -264,7 +264,7 @@
                               <ref role="3cqZAo" node="3WFvXLXBsbF" resolve="mi" />
                             </node>
                             <node concept="liA8E" id="3WFvXLXBuaB" role="2OqNvi">
-                              <ref role="37wK5l" to="y1xt:~MIPlugin.createCSession(java.lang.String,java.lang.String,java.io.File,java.io.File,java.lang.String,org.eclipse.core.runtime.IProgressMonitor,int,int):org.eclipse.cdt.debug.mi.core.cdi.Session" resolve="createCSession" />
+                              <ref role="37wK5l" to="52cq:~MIPlugin.createCSession(java.lang.String,java.lang.String,java.io.File,java.io.File,java.lang.String,org.eclipse.core.runtime.IProgressMonitor,int,int):org.eclipse.cdt.debug.mi.core.cdi.Session" resolve="createCSession" />
                               <node concept="2OqwBi" id="7c6uq_OaMaW" role="37wK5m">
                                 <node concept="37vLTw" id="7c6uq_OaM58" role="2Oq$k0">
                                   <ref role="3cqZAo" node="7c6uq_OaDNu" resolve="settings" />
@@ -274,12 +274,12 @@
                                 </node>
                               </node>
                               <node concept="10M0yZ" id="3WFvXLXBLEy" role="37wK5m">
-                                <ref role="1PxDUh" to="ubvy:~MIVersion" resolve="MIVersion" />
-                                <ref role="3cqZAo" to="ubvy:~MIVersion.MI1" resolve="MI1" />
+                                <ref role="1PxDUh" to="xa4n:~MIVersion" resolve="MIVersion" />
+                                <ref role="3cqZAo" to="xa4n:~MIVersion.MI1" resolve="MI1" />
                               </node>
                               <node concept="2ShNRf" id="3WFvXLXBMaa" role="37wK5m">
                                 <node concept="1pGfFk" id="3WFvXLXBQP4" role="2ShVmc">
-                                  <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                                  <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                                   <node concept="2OqwBi" id="3WFvXLXBQQG" role="37wK5m">
                                     <node concept="37vLTw" id="7c6uq_OaO6q" role="2Oq$k0">
                                       <ref role="3cqZAo" node="7c6uq_OaDNu" resolve="settings" />
@@ -292,7 +292,7 @@
                               </node>
                               <node concept="2ShNRf" id="3WFvXLXBRgD" role="37wK5m">
                                 <node concept="1pGfFk" id="3WFvXLXBRNC" role="2ShVmc">
-                                  <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                                  <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                                   <node concept="Xl_RD" id="3WFvXLXBRQ0" role="37wK5m">
                                     <property role="Xl_RC" value="." />
                                   </node>
@@ -324,7 +324,7 @@
                         <node concept="3cpWsn" id="7B__YhMREiQ" role="TDEfY">
                           <property role="TrG5h" value="e" />
                           <node concept="3uibUv" id="7B__YhMRECd" role="1tU5fm">
-                            <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+                            <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
                           </node>
                         </node>
                         <node concept="3clFbS" id="7B__YhMREiU" role="TDEfX">
@@ -334,7 +334,7 @@
                                 <ref role="3cqZAo" node="7B__YhMREiQ" resolve="e" />
                               </node>
                               <node concept="liA8E" id="7B__YhMRFnb" role="2OqNvi">
-                                <ref role="37wK5l" to="e2lb:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                                <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
                               </node>
                             </node>
                           </node>
@@ -415,7 +415,7 @@
       <node concept="37vLTG" id="7B__YhMUq3P" role="3clF46">
         <property role="TrG5h" value="project" />
         <node concept="3uibUv" id="7B__YhMUq3Q" role="1tU5fm">
-          <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
+          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
         </node>
       </node>
       <node concept="37vLTG" id="7B__YhMUq3R" role="3clF46">

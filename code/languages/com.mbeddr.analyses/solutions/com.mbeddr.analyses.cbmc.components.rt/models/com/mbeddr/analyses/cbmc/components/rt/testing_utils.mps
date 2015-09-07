@@ -4,9 +4,9 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -15,13 +15,13 @@
     <import index="d8ej" ref="r:fde4fd08-2694-4f15-a5e5-88fa2c92442c(com.mbeddr.analyses.utils.testing_utils)" />
     <import index="v7ag" ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tzyt" ref="r:b35b0dd8-a38e-4607-ba37-cc8f7410b705(com.mbeddr.analyses.cbmc.rt.run)" />
     <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
-    <import index="fw3h" ref="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.progress(MPS.IDEA/com.intellij.openapi.progress@java_stub)" />
-    <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="c4ml" ref="r:965f5cbb-2e6c-4aa6-8166-554f0fb0053f(com.mbeddr.analyses.cbmc.components.structure)" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -281,7 +281,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="5KvlJsgh9pW" role="2OqNvi">
-                                <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                 <node concept="3cpWs2" id="5KvlJsgh9pX" role="37wK5m">
                                   <ref role="3cqZAo" node="5KvlJsgh9qC" resolve="componentName" />
                                 </node>
@@ -403,7 +403,7 @@
                       </node>
                       <node concept="2ShNRf" id="5uqRFp94VJn" role="37wK5m">
                         <node concept="1pGfFk" id="5uqRFp94VJo" role="2ShVmc">
-                          <ref role="37wK5l" to="fw3h:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+                          <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                         </node>
                       </node>
                     </node>
@@ -434,11 +434,11 @@
         <node concept="3clFbF" id="5kHkJcGIvEl" role="3cqZAp">
           <node concept="2OqwBi" id="5kHkJcGIvEi" role="3clFbG">
             <node concept="10M0yZ" id="5kHkJcGIvEj" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.err" resolve="err" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="5kHkJcGIvEk" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="3cpWs3" id="5kHkJcGIxhc" role="37wK5m">
                 <node concept="37vLTw" id="5kHkJcGIxjU" role="3uHU7w">
                   <ref role="3cqZAo" node="5KvlJsgh9pv" resolve="result" />
@@ -454,8 +454,8 @@
           <node concept="3clFbS" id="5kHkJcGFkJF" role="SfCbr">
             <node concept="3clFbF" id="5kHkJcGFjWa" role="3cqZAp">
               <node concept="2YIFZM" id="5kHkJcGFkBy" role="3clFbG">
-                <ref role="37wK5l" to="e2lb:~Thread.sleep(long):void" resolve="sleep" />
-                <ref role="1Pybhc" to="e2lb:~Thread" resolve="Thread" />
+                <ref role="37wK5l" to="wyt6:~Thread.sleep(long):void" resolve="sleep" />
+                <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
                 <node concept="3cmrfG" id="5kHkJcGFkEE" role="37wK5m">
                   <property role="3cmrfH" value="1000" />
                 </node>
@@ -470,7 +470,7 @@
                     <ref role="3cqZAo" node="5kHkJcGFkJC" resolve="e" />
                   </node>
                   <node concept="liA8E" id="5kHkJcGFp5L" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -478,7 +478,7 @@
             <node concept="3cpWsn" id="5kHkJcGFkJC" role="TDEfY">
               <property role="TrG5h" value="e" />
               <node concept="3uibUv" id="5kHkJcGFkJD" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~InterruptedException" resolve="InterruptedException" />
+                <ref role="3uigEE" to="wyt6:~InterruptedException" resolve="InterruptedException" />
               </node>
             </node>
           </node>
@@ -493,7 +493,7 @@
       <node concept="37vLTG" id="5KvlJsgh9q$" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="5KvlJsgh9q_" role="1tU5fm">
-          <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
         </node>
       </node>
       <node concept="37vLTG" id="5KvlJsgh9qA" role="3clF46">
@@ -593,7 +593,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="5KvlJsghgzC" role="2OqNvi">
-                                <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                 <node concept="3cpWs2" id="5KvlJsghgzD" role="37wK5m">
                                   <ref role="3cqZAo" node="5KvlJsghg$_" resolve="componentName" />
                                 </node>
@@ -708,7 +708,7 @@
                       </node>
                       <node concept="2ShNRf" id="5KvlJsgh9qm" role="37wK5m">
                         <node concept="1pGfFk" id="5KvlJsgh9qn" role="2ShVmc">
-                          <ref role="37wK5l" to="fw3h:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+                          <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                         </node>
                       </node>
                     </node>
@@ -740,8 +740,8 @@
           <node concept="3clFbS" id="5kHkJcGFrUX" role="SfCbr">
             <node concept="3clFbF" id="5kHkJcGFrUY" role="3cqZAp">
               <node concept="2YIFZM" id="5kHkJcGFrUZ" role="3clFbG">
-                <ref role="1Pybhc" to="e2lb:~Thread" resolve="Thread" />
-                <ref role="37wK5l" to="e2lb:~Thread.sleep(long):void" resolve="sleep" />
+                <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
+                <ref role="37wK5l" to="wyt6:~Thread.sleep(long):void" resolve="sleep" />
                 <node concept="3cmrfG" id="5kHkJcGFrV0" role="37wK5m">
                   <property role="3cmrfH" value="1000" />
                 </node>
@@ -756,7 +756,7 @@
                     <ref role="3cqZAo" node="5kHkJcGFrV7" resolve="e" />
                   </node>
                   <node concept="liA8E" id="5kHkJcGFrV6" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -764,7 +764,7 @@
             <node concept="3cpWsn" id="5kHkJcGFrV7" role="TDEfY">
               <property role="TrG5h" value="e" />
               <node concept="3uibUv" id="5kHkJcGFrV8" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~InterruptedException" resolve="InterruptedException" />
+                <ref role="3uigEE" to="wyt6:~InterruptedException" resolve="InterruptedException" />
               </node>
             </node>
           </node>
@@ -779,7 +779,7 @@
       <node concept="37vLTG" id="5KvlJsghg$x" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="5KvlJsghg$y" role="1tU5fm">
-          <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
         </node>
       </node>
       <node concept="37vLTG" id="5KvlJsghg$z" role="3clF46">

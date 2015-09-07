@@ -4,32 +4,22 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="3bdedd09-792a-4e15-a4db-83970df3ee86" name="de.itemis.mps.editor.collapsible" version="0" />
-    <use id="73736c50-f124-433b-b789-2828a15a0adc" name="jetbrains.mps.baseLanguage.collections.trove" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="0" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
   </languages>
   <imports>
     <import index="rpmx" ref="r:64720d49-3cb5-4469-81c5-0c62eda0a2cb(com.mbeddr.core.debug.test.structure)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="dm5s" ref="r:cc63f437-a3eb-4092-9c7c-2b5860f74f8d(com.mbeddr.core.debug.test.behavior)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
-    <import index="1t7x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
   </imports>
   <registry>
@@ -46,7 +36,7 @@
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
         <child id="1233141163694" name="separatorStyle" index="sWeuL" />
       </concept>
-      <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" index="gc7cB">
+      <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
         <child id="1176795024817" name="cellProvider" index="3YsKMw" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -64,7 +54,7 @@
       </concept>
       <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
-      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" index="PMmxH">
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
@@ -96,7 +86,7 @@
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1221062700015" name="jetbrains.mps.lang.editor.structure.QueryFunction_Underlined" flags="in" index="1d0yFN" />
-      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" index="1iCGBv">
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
       <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
@@ -122,7 +112,7 @@
         <child id="1198512004906" name="focusPolicyApplicable" index="cStSX" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
-      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" index="3EZMnI">
+      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
         <property id="1073389446425" name="vertical" index="3EZMnw" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -130,25 +120,25 @@
         <child id="7723470090030138869" name="foldedCellModel" index="AHCbl" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
-      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" index="3F0ifn">
+      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
         <property id="1082639509531" name="nullText" index="ilYzB" />
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
-      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" index="3F0A7n" />
+      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" index="3F1sOY" />
-      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" index="3F2HdR">
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR">
         <reference id="1173177718857" name="elementActionMap" index="APP_o" />
       </concept>
       <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
         <child id="1225898971709" name="getter" index="1Hhtcw" />
       </concept>
-      <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" index="1HlG4h">
+      <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
       </concept>
-      <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" index="1QoScp">
+      <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
         <property id="1088613081987" name="vertical" index="1QpmdY" />
         <child id="1145918517974" name="alternationCondition" index="3e4ffs" />
         <child id="1088612958265" name="ifTrueCellModel" index="1QoS34" />
@@ -213,7 +203,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -752,7 +742,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="13C5RDf_pKJ" role="2OqNvi">
-                      <ref role="37wK5l" to="k7g3:~List.size():int" resolve="size" />
+                      <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
                     </node>
                   </node>
                 </node>
@@ -807,7 +797,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="13C5RDf_pLo" role="2OqNvi">
-                      <ref role="37wK5l" to="k7g3:~List.size():int" resolve="size" />
+                      <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
                     </node>
                   </node>
                 </node>
@@ -838,14 +828,14 @@
                 <node concept="3cpWsn" id="4WqJ5ShrteL" role="3cpWs9">
                   <property role="TrG5h" value="sourceStackFrames" />
                   <node concept="3uibUv" id="4WqJ5ShrteG" role="1tU5fm">
-                    <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+                    <ref role="3uigEE" to="33ny:~List" resolve="List" />
                     <node concept="3uibUv" id="4WqJ5ShrteJ" role="11_B2D">
-                      <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                      <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                     </node>
                   </node>
                   <node concept="2YIFZM" id="4WqJ5ShrteM" role="33vP2m">
-                    <ref role="37wK5l" to="k7g3:~Arrays.asList(java.lang.Object...):java.util.List" resolve="asList" />
-                    <ref role="1Pybhc" to="k7g3:~Arrays" resolve="Arrays" />
+                    <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...):java.util.List" resolve="asList" />
+                    <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
                     <node concept="2OqwBi" id="4WqJ5ShrteN" role="37wK5m">
                       <node concept="2OqwBi" id="4WqJ5ShrteO" role="2Oq$k0">
                         <node concept="2OqwBi" id="4WqJ5ShrteP" role="2Oq$k0">
@@ -863,7 +853,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="4WqJ5ShrteV" role="2OqNvi">
-                        <ref role="37wK5l" to="k7g3:~List.toArray():java.lang.Object[]" resolve="toArray" />
+                        <ref role="37wK5l" to="33ny:~List.toArray():java.lang.Object[]" resolve="toArray" />
                       </node>
                     </node>
                   </node>
@@ -873,11 +863,11 @@
                 <node concept="3cpWsn" id="2s7Bv57PVpU" role="3cpWs9">
                   <property role="TrG5h" value="reversedStackFrames" />
                   <node concept="3uibUv" id="2s7Bv57PVpV" role="1tU5fm">
-                    <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+                    <ref role="3uigEE" to="33ny:~List" resolve="List" />
                   </node>
                   <node concept="2ShNRf" id="2s7Bv57PVqT" role="33vP2m">
                     <node concept="1pGfFk" id="2s7Bv57PVqX" role="2ShVmc">
-                      <ref role="37wK5l" to="k7g3:~ArrayList.&lt;init&gt;(java.util.Collection)" resolve="ArrayList" />
+                      <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;(java.util.Collection)" resolve="ArrayList" />
                       <node concept="37vLTw" id="4WqJ5Sh63u5" role="37wK5m">
                         <ref role="3cqZAo" node="4WqJ5ShrteL" resolve="sourceStackFrames" />
                       </node>
@@ -887,8 +877,8 @@
               </node>
               <node concept="3clFbF" id="2s7Bv57PVpG" role="3cqZAp">
                 <node concept="2YIFZM" id="2s7Bv57PVoI" role="3clFbG">
-                  <ref role="37wK5l" to="k7g3:~Collections.reverse(java.util.List):void" resolve="reverse" />
-                  <ref role="1Pybhc" to="k7g3:~Collections" resolve="Collections" />
+                  <ref role="37wK5l" to="33ny:~Collections.reverse(java.util.List):void" resolve="reverse" />
+                  <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
                   <node concept="37vLTw" id="4WqJ5Sh63uk" role="37wK5m">
                     <ref role="3cqZAo" node="2s7Bv57PVpU" resolve="reversedStackFrames" />
                   </node>
@@ -897,14 +887,14 @@
               <node concept="3clFbF" id="2s7Bv57PVoM" role="3cqZAp">
                 <node concept="37vLTI" id="2s7Bv57PVoZ" role="3clFbG">
                   <node concept="2YIFZM" id="2s7Bv57PVp9" role="37vLTx">
-                    <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
-                    <ref role="37wK5l" to="e2lb:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                    <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                    <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
                     <node concept="2OqwBi" id="2s7Bv57PVpp" role="37wK5m">
                       <node concept="37vLTw" id="4WqJ5Sh63N5" role="2Oq$k0">
                         <ref role="3cqZAo" node="2s7Bv57PVpU" resolve="reversedStackFrames" />
                       </node>
                       <node concept="liA8E" id="2s7Bv57PVpy" role="2OqNvi">
-                        <ref role="37wK5l" to="k7g3:~List.indexOf(java.lang.Object):int" resolve="indexOf" />
+                        <ref role="37wK5l" to="33ny:~List.indexOf(java.lang.Object):int" resolve="indexOf" />
                         <node concept="pncrf" id="2s7Bv57PVpB" role="37wK5m" />
                       </node>
                     </node>
@@ -2023,7 +2013,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="4WY_RKGunRk" role="2OqNvi">
-                      <ref role="37wK5l" to="k7g3:~List.size():int" resolve="size" />
+                      <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
                     </node>
                   </node>
                 </node>
@@ -2077,7 +2067,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="4WY_RKGuq1U" role="2OqNvi">
-                      <ref role="37wK5l" to="k7g3:~List.size():int" resolve="size" />
+                      <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
                     </node>
                   </node>
                 </node>
@@ -2190,7 +2180,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="13C5RDfAVMf" role="2OqNvi">
-                      <ref role="37wK5l" to="k7g3:~List.size():int" resolve="size" />
+                      <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
                     </node>
                   </node>
                 </node>
@@ -2231,7 +2221,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="13C5RDfAVMH" role="2OqNvi">
-                      <ref role="37wK5l" to="k7g3:~List.size():int" resolve="size" />
+                      <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
                     </node>
                   </node>
                 </node>
@@ -2720,8 +2710,8 @@
             <node concept="3clFbS" id="3ELV2aP4kWo" role="2VODD2">
               <node concept="3cpWs6" id="3ELV2aP4kWW" role="3cqZAp">
                 <node concept="2YIFZM" id="3ELV2aP4kWQ" role="3cqZAk">
-                  <ref role="37wK5l" to="e2lb:~String.valueOf(int):java.lang.String" resolve="valueOf" />
-                  <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+                  <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                  <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                   <node concept="2OqwBi" id="3uCwkM92YMZ" role="37wK5m">
                     <node concept="pncrf" id="3uCwkM92YCF" role="2Oq$k0" />
                     <node concept="2qgKlT" id="3uCwkM92Z50" role="2OqNvi">
@@ -3343,14 +3333,14 @@
                 <node concept="3cpWsn" id="4BPlEwEeSWs" role="3cpWs9">
                   <property role="TrG5h" value="sourceStackFrames" />
                   <node concept="3uibUv" id="4BPlEwEeSWt" role="1tU5fm">
-                    <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+                    <ref role="3uigEE" to="33ny:~List" resolve="List" />
                     <node concept="3uibUv" id="4BPlEwEeSWu" role="11_B2D">
-                      <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                      <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                     </node>
                   </node>
                   <node concept="2YIFZM" id="4BPlEwEeSWv" role="33vP2m">
-                    <ref role="1Pybhc" to="k7g3:~Arrays" resolve="Arrays" />
-                    <ref role="37wK5l" to="k7g3:~Arrays.asList(java.lang.Object...):java.util.List" resolve="asList" />
+                    <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
+                    <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...):java.util.List" resolve="asList" />
                     <node concept="2OqwBi" id="4BPlEwEeSWw" role="37wK5m">
                       <node concept="2OqwBi" id="4BPlEwEeSWx" role="2Oq$k0">
                         <node concept="2OqwBi" id="4BPlEwEeSWy" role="2Oq$k0">
@@ -3368,7 +3358,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="4BPlEwEeSWC" role="2OqNvi">
-                        <ref role="37wK5l" to="k7g3:~List.toArray():java.lang.Object[]" resolve="toArray" />
+                        <ref role="37wK5l" to="33ny:~List.toArray():java.lang.Object[]" resolve="toArray" />
                       </node>
                     </node>
                   </node>
@@ -3378,11 +3368,11 @@
                 <node concept="3cpWsn" id="4BPlEwEeSWE" role="3cpWs9">
                   <property role="TrG5h" value="reversedStackFrames" />
                   <node concept="3uibUv" id="4BPlEwEeSWF" role="1tU5fm">
-                    <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+                    <ref role="3uigEE" to="33ny:~List" resolve="List" />
                   </node>
                   <node concept="2ShNRf" id="4BPlEwEeSWG" role="33vP2m">
                     <node concept="1pGfFk" id="4BPlEwEeSWH" role="2ShVmc">
-                      <ref role="37wK5l" to="k7g3:~ArrayList.&lt;init&gt;(java.util.Collection)" resolve="ArrayList" />
+                      <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;(java.util.Collection)" resolve="ArrayList" />
                       <node concept="37vLTw" id="4BPlEwEeSWI" role="37wK5m">
                         <ref role="3cqZAo" node="4BPlEwEeSWs" resolve="sourceStackFrames" />
                       </node>
@@ -3392,8 +3382,8 @@
               </node>
               <node concept="3clFbF" id="4BPlEwEeSWJ" role="3cqZAp">
                 <node concept="2YIFZM" id="4BPlEwEeSWK" role="3clFbG">
-                  <ref role="1Pybhc" to="k7g3:~Collections" resolve="Collections" />
-                  <ref role="37wK5l" to="k7g3:~Collections.reverse(java.util.List):void" resolve="reverse" />
+                  <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+                  <ref role="37wK5l" to="33ny:~Collections.reverse(java.util.List):void" resolve="reverse" />
                   <node concept="37vLTw" id="4BPlEwEeSWL" role="37wK5m">
                     <ref role="3cqZAo" node="4BPlEwEeSWE" resolve="reversedStackFrames" />
                   </node>
@@ -3402,14 +3392,14 @@
               <node concept="3clFbF" id="4BPlEwEeSWM" role="3cqZAp">
                 <node concept="37vLTI" id="4BPlEwEeSWN" role="3clFbG">
                   <node concept="2YIFZM" id="4BPlEwEeSWO" role="37vLTx">
-                    <ref role="37wK5l" to="e2lb:~String.valueOf(int):java.lang.String" resolve="valueOf" />
-                    <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+                    <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                    <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                     <node concept="2OqwBi" id="4BPlEwEeSWP" role="37wK5m">
                       <node concept="37vLTw" id="4BPlEwEeSWQ" role="2Oq$k0">
                         <ref role="3cqZAo" node="4BPlEwEeSWE" resolve="reversedStackFrames" />
                       </node>
                       <node concept="liA8E" id="4BPlEwEeSWR" role="2OqNvi">
-                        <ref role="37wK5l" to="k7g3:~List.indexOf(java.lang.Object):int" resolve="indexOf" />
+                        <ref role="37wK5l" to="33ny:~List.indexOf(java.lang.Object):int" resolve="indexOf" />
                         <node concept="pncrf" id="4BPlEwEeSWS" role="37wK5m" />
                       </node>
                     </node>
@@ -3576,14 +3566,14 @@
                 <node concept="3cpWsn" id="6kCxLkRkLFs" role="3cpWs9">
                   <property role="TrG5h" value="sourceStackFrames" />
                   <node concept="3uibUv" id="6kCxLkRkLFt" role="1tU5fm">
-                    <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+                    <ref role="3uigEE" to="33ny:~List" resolve="List" />
                     <node concept="3uibUv" id="6kCxLkRkLFu" role="11_B2D">
-                      <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                      <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                     </node>
                   </node>
                   <node concept="2YIFZM" id="6kCxLkRkLFv" role="33vP2m">
-                    <ref role="1Pybhc" to="k7g3:~Arrays" resolve="Arrays" />
-                    <ref role="37wK5l" to="k7g3:~Arrays.asList(java.lang.Object...):java.util.List" resolve="asList" />
+                    <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
+                    <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...):java.util.List" resolve="asList" />
                     <node concept="2OqwBi" id="6kCxLkRkLFw" role="37wK5m">
                       <node concept="2OqwBi" id="6kCxLkRkLFx" role="2Oq$k0">
                         <node concept="2OqwBi" id="6kCxLkRkLFy" role="2Oq$k0">
@@ -3601,7 +3591,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="6kCxLkRkLFC" role="2OqNvi">
-                        <ref role="37wK5l" to="k7g3:~List.toArray():java.lang.Object[]" resolve="toArray" />
+                        <ref role="37wK5l" to="33ny:~List.toArray():java.lang.Object[]" resolve="toArray" />
                       </node>
                     </node>
                   </node>
@@ -3611,11 +3601,11 @@
                 <node concept="3cpWsn" id="6kCxLkRkLFE" role="3cpWs9">
                   <property role="TrG5h" value="reversedStackFrames" />
                   <node concept="3uibUv" id="6kCxLkRkLFF" role="1tU5fm">
-                    <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+                    <ref role="3uigEE" to="33ny:~List" resolve="List" />
                   </node>
                   <node concept="2ShNRf" id="6kCxLkRkLFG" role="33vP2m">
                     <node concept="1pGfFk" id="6kCxLkRkLFH" role="2ShVmc">
-                      <ref role="37wK5l" to="k7g3:~ArrayList.&lt;init&gt;(java.util.Collection)" resolve="ArrayList" />
+                      <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;(java.util.Collection)" resolve="ArrayList" />
                       <node concept="37vLTw" id="6kCxLkRkLFI" role="37wK5m">
                         <ref role="3cqZAo" node="6kCxLkRkLFs" resolve="sourceStackFrames" />
                       </node>
@@ -3625,8 +3615,8 @@
               </node>
               <node concept="3clFbF" id="6kCxLkRkLFJ" role="3cqZAp">
                 <node concept="2YIFZM" id="6kCxLkRkLFK" role="3clFbG">
-                  <ref role="1Pybhc" to="k7g3:~Collections" resolve="Collections" />
-                  <ref role="37wK5l" to="k7g3:~Collections.reverse(java.util.List):void" resolve="reverse" />
+                  <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+                  <ref role="37wK5l" to="33ny:~Collections.reverse(java.util.List):void" resolve="reverse" />
                   <node concept="37vLTw" id="6kCxLkRkLFL" role="37wK5m">
                     <ref role="3cqZAo" node="6kCxLkRkLFE" resolve="reversedStackFrames" />
                   </node>
@@ -3635,14 +3625,14 @@
               <node concept="3clFbF" id="6kCxLkRkLFM" role="3cqZAp">
                 <node concept="37vLTI" id="6kCxLkRkLFN" role="3clFbG">
                   <node concept="2YIFZM" id="6kCxLkRkLFO" role="37vLTx">
-                    <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
-                    <ref role="37wK5l" to="e2lb:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                    <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                    <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
                     <node concept="2OqwBi" id="6kCxLkRkLFP" role="37wK5m">
                       <node concept="37vLTw" id="6kCxLkRkLFQ" role="2Oq$k0">
                         <ref role="3cqZAo" node="6kCxLkRkLFE" resolve="reversedStackFrames" />
                       </node>
                       <node concept="liA8E" id="6kCxLkRkLFR" role="2OqNvi">
-                        <ref role="37wK5l" to="k7g3:~List.indexOf(java.lang.Object):int" resolve="indexOf" />
+                        <ref role="37wK5l" to="33ny:~List.indexOf(java.lang.Object):int" resolve="indexOf" />
                         <node concept="pncrf" id="6kCxLkRkLFS" role="37wK5m" />
                       </node>
                     </node>
@@ -3675,8 +3665,8 @@
             <node concept="3clFbS" id="6kCxLkR6T_X" role="2VODD2">
               <node concept="3cpWs6" id="6kCxLkR6W2l" role="3cqZAp">
                 <node concept="10M0yZ" id="6kCxLkR6W2m" role="3cqZAk">
-                  <ref role="3cqZAo" to="1t7x:~Color.WHITE" resolve="WHITE" />
-                  <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+                  <ref role="3cqZAo" to="z60i:~Color.WHITE" resolve="WHITE" />
+                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
                 </node>
               </node>
             </node>

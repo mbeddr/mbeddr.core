@@ -2,18 +2,18 @@
 <model ref="r:a30a2963-6ae8-4d92-a68a-8f80024f470c(com.mbeddr.core.unittest.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
-    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
+    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="yz9a" ref="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
-    <import index="srng" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
@@ -327,7 +327,7 @@
           <node concept="2OqwBi" id="anPxzp2NYs" role="3clFbG">
             <node concept="1XNTG" id="anPxzp2NYr" role="2Oq$k0" />
             <node concept="liA8E" id="anPxzp2P2d" role="2OqNvi">
-              <ref role="37wK5l" to="srng:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode):void" resolve="selectWRTFocusPolicy" />
+              <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode):void" resolve="selectWRTFocusPolicy" />
               <node concept="37vLTw" id="5HxjapwgHkJ" role="37wK5m">
                 <ref role="3cqZAo" node="anPxzp2LVO" resolve="a" />
               </node>
@@ -649,15 +649,15 @@
               <node concept="3fqX7Q" id="6GXPbpLjwjP" role="3clFbw">
                 <node concept="2OqwBi" id="6GXPbpLjwiD" role="3fr31v">
                   <node concept="2OqwBi" id="2MbfxrZIHTn" role="2Oq$k0">
+                    <node concept="v3k3i" id="6jvaevO$0bq" role="2OqNvi">
+                      <node concept="chp4Y" id="6jvaevO$0br" role="v3oSu">
+                        <ref role="cht4Q" to="yz9a:2MbfxrZIHSm" resolve="ICanBeExecutedAsTest" />
+                      </node>
+                    </node>
                     <node concept="2OqwBi" id="6GXPbpLjwid" role="2Oq$k0">
                       <node concept="2Sf5sV" id="6GXPbpLjwhS" role="2Oq$k0" />
                       <node concept="3Tsc0h" id="6GXPbpLjwij" role="2OqNvi">
                         <ref role="3TtcxE" to="yz9a:4VEDcE28GYo" />
-                      </node>
-                    </node>
-                    <node concept="v3k3i" id="4biM00J7odt" role="2OqNvi">
-                      <node concept="chp4Y" id="4biM00J7odu" role="v3oSu">
-                        <ref role="cht4Q" to="yz9a:2MbfxrZIHSm" resolve="ICanBeExecutedAsTest" />
                       </node>
                     </node>
                   </node>

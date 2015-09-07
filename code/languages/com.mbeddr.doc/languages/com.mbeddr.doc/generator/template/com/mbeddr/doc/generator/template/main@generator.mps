@@ -16,13 +16,13 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="4gky" ref="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="grvc" ref="r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node.behavior)" />
-    <import index="cu2c" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="a8zf" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/f:java_stub#c0488c1e-322f-4f38-92d4-5520a7ce96c1#net.sourceforge.plantuml(com.mbeddr.mpsutil.plantuml.pluginSolution/net.sourceforge.plantuml@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="81o" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:net.sourceforge.plantuml(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -236,7 +236,7 @@
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
@@ -798,7 +798,7 @@
                     <node concept="2OqwBi" id="2O6m5wPNuut" role="37wK5m">
                       <node concept="1Q79dO" id="2O6m5wPNuoc" role="2Oq$k0" />
                       <node concept="liA8E" id="2O6m5wPNuQx" role="2OqNvi">
-                        <ref role="37wK5l" to="cu2c:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
+                        <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
                       </node>
                     </node>
                   </node>
@@ -856,11 +856,11 @@
                       <node concept="3cpWsn" id="5pyBnOIETAw" role="3cpWs9">
                         <property role="TrG5h" value="reader" />
                         <node concept="3uibUv" id="5pyBnOIETAo" role="1tU5fm">
-                          <ref role="3uigEE" to="a8zf:~SourceStringReader" resolve="SourceStringReader" />
+                          <ref role="3uigEE" to="81o:~SourceStringReader" resolve="SourceStringReader" />
                         </node>
                         <node concept="2ShNRf" id="5pyBnOIETAx" role="33vP2m">
                           <node concept="1pGfFk" id="5pyBnOIETAy" role="2ShVmc">
-                            <ref role="37wK5l" to="a8zf:~SourceStringReader.&lt;init&gt;(java.lang.String)" resolve="SourceStringReader" />
+                            <ref role="37wK5l" to="81o:~SourceStringReader.&lt;init&gt;(java.lang.String)" resolve="SourceStringReader" />
                             <node concept="2OqwBi" id="5pyBnOIETAz" role="37wK5m">
                               <node concept="37vLTw" id="5pyBnOIETA$" role="2Oq$k0">
                                 <ref role="3cqZAo" node="2fGuOSYbJJF" resolve="g" />
@@ -889,10 +889,10 @@
                           <ref role="3cqZAo" node="5pyBnOIETAw" resolve="reader" />
                         </node>
                         <node concept="liA8E" id="5pyBnOIEUyU" role="2OqNvi">
-                          <ref role="37wK5l" to="a8zf:~SourceStringReader.generateImage(java.io.File):java.lang.String" resolve="generateImage" />
+                          <ref role="37wK5l" to="81o:~SourceStringReader.generateImage(java.io.File):java.lang.String" resolve="generateImage" />
                           <node concept="2ShNRf" id="5pyBnOIEW3n" role="37wK5m">
                             <node concept="1pGfFk" id="5pyBnOIEWn7" role="2ShVmc">
-                              <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                              <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                               <node concept="2OqwBi" id="5pyBnOIEX62" role="37wK5m">
                                 <node concept="37vLTw" id="5pyBnOIEWZs" role="2Oq$k0">
                                   <ref role="3cqZAo" node="2fGuOSYbJJU" resolve="path" />
@@ -924,7 +924,7 @@
                     <node concept="3cpWsn" id="2fGuOSYbJKs" role="TDEfY">
                       <property role="TrG5h" value="ex" />
                       <node concept="3uibUv" id="2fGuOSYbJKt" role="1tU5fm">
-                        <ref role="3uigEE" to="fxg7:~IOException" resolve="IOException" />
+                        <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
                       </node>
                     </node>
                     <node concept="3clFbS" id="2fGuOSYbJKu" role="TDEfX">
@@ -934,7 +934,7 @@
                             <ref role="3cqZAo" node="2fGuOSYbJKs" resolve="ex" />
                           </node>
                           <node concept="liA8E" id="2fGuOSYbJKy" role="2OqNvi">
-                            <ref role="37wK5l" to="e2lb:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                            <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
                           </node>
                         </node>
                       </node>
@@ -953,7 +953,9 @@
           <node concept="2OqwBi" id="2fGuOSYbJKA" role="2GsD0m">
             <node concept="1Q6Npb" id="2fGuOSYbJKB" role="2Oq$k0" />
             <node concept="2SmgA7" id="2fGuOSYbJKC" role="2OqNvi">
-              <ref role="2SmgA8" to="2c95:2fGuOSYbvYU" resolve="Visualization" />
+              <node concept="chp4Y" id="12zeRDvnbhv" role="1dBWTz">
+                <ref role="cht4Q" to="2c95:2fGuOSYbvYU" resolve="Visualization" />
+              </node>
             </node>
           </node>
         </node>
@@ -1192,7 +1194,9 @@
           <node concept="2OqwBi" id="5$bT90ZdhQr" role="2GsD0m">
             <node concept="1Q6Npb" id="5$bT90ZdhQs" role="2Oq$k0" />
             <node concept="2SmgA7" id="5$bT90ZdhQt" role="2OqNvi">
-              <ref role="2SmgA8" to="2c95:627_yy34G1b" resolve="ModelContentAsImageParagraph" />
+              <node concept="chp4Y" id="12zeRDvnbhx" role="1dBWTz">
+                <ref role="cht4Q" to="2c95:627_yy34G1b" resolve="ModelContentAsImageParagraph" />
+              </node>
             </node>
           </node>
         </node>

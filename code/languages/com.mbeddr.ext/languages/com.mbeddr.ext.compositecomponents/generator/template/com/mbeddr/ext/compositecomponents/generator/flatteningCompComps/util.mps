@@ -2,7 +2,7 @@
 <model ref="r:d53e44cc-259a-4153-924a-bef754cbe3b5(com.mbeddr.ext.compositecomponents.generator.flatteningCompComps.util)">
   <persistence version="9" />
   <languages>
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -11,7 +11,7 @@
     <import index="v7ag" ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" />
     <import index="g88q" ref="r:34a46663-c408-427f-8f72-90db466b797d(com.mbeddr.ext.compositecomponents.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -151,11 +151,9 @@
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
-        <child id="5858074156537516440" name="return" index="x79VK" />
-        <child id="8465538089690917625" name="param" index="TUOzN" />
-      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
@@ -774,19 +772,19 @@
             <property role="1dT_AB" value="Flattens composite components into a list of flat instances, i.e. it resolves the nesting." />
           </node>
         </node>
-        <node concept="TUZQ0" id="3ejBUtVm43l" role="TUOzN">
+        <node concept="TUZQ0" id="3ejBUtVm43l" role="3nqlJM">
           <property role="TUZQ4" value="the instance to flatten" />
           <node concept="zr_55" id="3ejBUtVm43m" role="zr_5Q">
             <ref role="zr_51" node="3ejBUtVm40F" resolve="instance" />
           </node>
         </node>
-        <node concept="TUZQ0" id="3ejBUtVm43n" role="TUOzN">
+        <node concept="TUZQ0" id="3ejBUtVm43n" role="3nqlJM">
           <property role="TUZQ4" value="the result list to wich the flattened components and connectors will be added" />
           <node concept="zr_55" id="3ejBUtVm43o" role="zr_5Q">
             <ref role="zr_51" node="3ejBUtVm40H" resolve="result" />
           </node>
         </node>
-        <node concept="TUZQ0" id="3ejBUtVm43p" role="TUOzN">
+        <node concept="TUZQ0" id="3ejBUtVm43p" role="3nqlJM">
           <property role="TUZQ4" value="the prefix repesents the namespace for all elements which are created in this method" />
           <node concept="zr_55" id="3ejBUtVm43q" role="zr_5Q">
             <ref role="zr_51" node="3ejBUtVm40J" resolve="namePrefix" />
@@ -1112,19 +1110,19 @@
         <node concept="TZ5HA" id="3ejBUtVm45c" role="TZ5H$">
           <node concept="1dT_AC" id="3ejBUtVm45d" role="1dT_Ay" />
         </node>
-        <node concept="TUZQ0" id="3ejBUtVm45e" role="TUOzN">
+        <node concept="TUZQ0" id="3ejBUtVm45e" role="3nqlJM">
           <property role="TUZQ4" value="the list of assembly connectors to correct" />
           <node concept="zr_55" id="3ejBUtVm45f" role="zr_5Q">
             <ref role="zr_51" node="3ejBUtVm43u" resolve="assemblyConnectors" />
           </node>
         </node>
-        <node concept="TUZQ0" id="3ejBUtVm45g" role="TUOzN">
+        <node concept="TUZQ0" id="3ejBUtVm45g" role="3nqlJM">
           <property role="TUZQ4" value="the namespace for resolving the targets" />
           <node concept="zr_55" id="3ejBUtVm45h" role="zr_5Q">
             <ref role="zr_51" node="3ejBUtVm43x" resolve="initialPrefix" />
           </node>
         </node>
-        <node concept="TUZQ0" id="3ejBUtVm45i" role="TUOzN">
+        <node concept="TUZQ0" id="3ejBUtVm45i" role="3nqlJM">
           <property role="TUZQ4" value="the list to which newly created connectors are added" />
           <node concept="zr_55" id="3ejBUtVm45j" role="zr_5Q">
             <ref role="zr_51" node="3ejBUtVm43z" resolve="result" />
@@ -1286,13 +1284,13 @@
             <property role="1dT_AB" value="safely get the first element in the list of targets." />
           </node>
         </node>
-        <node concept="TUZQ0" id="3ejBUtVm46d" role="TUOzN">
+        <node concept="TUZQ0" id="3ejBUtVm46d" role="3nqlJM">
           <property role="TUZQ4" value="the PortAdaper which needs to be corrected" />
           <node concept="zr_55" id="3ejBUtVm46e" role="zr_5Q">
             <ref role="zr_51" node="3ejBUtVm464" resolve="portAdapter" />
           </node>
         </node>
-        <node concept="TUZQ0" id="3ejBUtVm46f" role="TUOzN">
+        <node concept="TUZQ0" id="3ejBUtVm46f" role="3nqlJM">
           <property role="TUZQ4" value="the namespace in which this portAdapter lived" />
           <node concept="zr_55" id="3ejBUtVm46g" role="zr_5Q">
             <ref role="zr_51" node="3ejBUtVm466" resolve="initialPrefix" />
@@ -1521,19 +1519,19 @@
             <property role="1dT_AB" value="In case of an atomic compoent the port cannot be delegated, so we return an empty list" />
           </node>
         </node>
-        <node concept="TUZQ0" id="3ejBUtVm46P" role="TUOzN">
+        <node concept="TUZQ0" id="3ejBUtVm46P" role="3nqlJM">
           <property role="TUZQ4" value="the (composite) component to search for delegations in" />
           <node concept="zr_55" id="3ejBUtVm46Q" role="zr_5Q">
             <ref role="zr_51" node="3ejBUtVm46i" resolve="comp" />
           </node>
         </node>
-        <node concept="TUZQ0" id="3ejBUtVm46R" role="TUOzN">
+        <node concept="TUZQ0" id="3ejBUtVm46R" role="3nqlJM">
           <property role="TUZQ4" value="the port which is delegated" />
           <node concept="zr_55" id="3ejBUtVm46S" role="zr_5Q">
             <ref role="zr_51" node="3ejBUtVm46k" resolve="port" />
           </node>
         </node>
-        <node concept="x79VA" id="3ejBUtVm46T" role="x79VK">
+        <node concept="x79VA" id="3ejBUtVm46T" role="3nqlJM">
           <property role="x79VB" value="All instance/port pairs to wich the port is delegated to." />
         </node>
       </node>
@@ -1688,7 +1686,7 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="fLtBvqj1Dv" role="2OqNvi">
-                                    <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                     <node concept="2OqwBi" id="fLtBvqj1Dw" role="37wK5m">
                                       <node concept="37vLTw" id="fLtBvqj1Dx" role="2Oq$k0">
                                         <ref role="3cqZAo" node="3ejBUtVm46X" resolve="port" />
@@ -1979,25 +1977,25 @@
             <property role="1dT_AB" value="endpoints because of potentially several delegations for the same port" />
           </node>
         </node>
-        <node concept="TUZQ0" id="3ejBUtVm48A" role="TUOzN">
+        <node concept="TUZQ0" id="3ejBUtVm48A" role="3nqlJM">
           <property role="TUZQ4" value="the current instance" />
           <node concept="zr_55" id="3ejBUtVm48B" role="zr_5Q">
             <ref role="zr_51" node="3ejBUtVm46V" resolve="instance" />
           </node>
         </node>
-        <node concept="TUZQ0" id="3ejBUtVm48C" role="TUOzN">
+        <node concept="TUZQ0" id="3ejBUtVm48C" role="3nqlJM">
           <property role="TUZQ4" value="the port whose ultimate endpoint we try to find" />
           <node concept="zr_55" id="3ejBUtVm48D" role="zr_5Q">
             <ref role="zr_51" node="3ejBUtVm46X" resolve="port" />
           </node>
         </node>
-        <node concept="TUZQ0" id="3ejBUtVm48E" role="TUOzN">
+        <node concept="TUZQ0" id="3ejBUtVm48E" role="3nqlJM">
           <property role="TUZQ4" value="represents the name prefix built so far" />
           <node concept="zr_55" id="3ejBUtVm48F" role="zr_5Q">
             <ref role="zr_51" node="3ejBUtVm46Z" resolve="prefix" />
           </node>
         </node>
-        <node concept="x79VA" id="3ejBUtVm48G" role="x79VK">
+        <node concept="x79VA" id="3ejBUtVm48G" role="3nqlJM">
           <property role="x79VB" value="the sequence of instance name/port pairs resolved (so far)" />
         </node>
       </node>

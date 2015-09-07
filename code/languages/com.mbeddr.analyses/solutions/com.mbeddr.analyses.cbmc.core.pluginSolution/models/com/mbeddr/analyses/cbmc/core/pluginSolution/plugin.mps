@@ -5,16 +5,16 @@
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
   </languages>
   <imports>
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
-    <import index="nx1" ref="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.actionSystem(MPS.IDEA/com.intellij.openapi.actionSystem@java_stub)" />
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
-    <import index="5xh9" ref="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.actions(MPS.Platform/jetbrains.mps.ide.actions@java_stub)" />
+    <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="tzyt" ref="r:b35b0dd8-a38e-4607-ba37-cc8f7410b705(com.mbeddr.analyses.cbmc.rt.run)" />
     <import index="y0ek" ref="r:4a481070-9069-4483-af8e-37b7cdc689c8(com.mbeddr.analyses.cbmc.pluginSolution.plugin)" />
     <import index="7uhm" ref="r:5a6e4bc9-0a07-41cd-ab54-88993517e687(com.mbeddr.analyses.cbmc.core.rt.analyses.asserts)" />
@@ -213,7 +213,7 @@
     <property role="2uzpH1" value="Check Assertions (from this Function)" />
     <node concept="1DS2jV" id="3x0R1LJ5JY1" role="1NuT2Z">
       <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="nx1:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="3x0R1LJ5JY2" role="1oa70y" />
     </node>
     <node concept="2S4$dB" id="3x0R1LJ5JY3" role="1NuT2Z">
@@ -226,12 +226,12 @@
     </node>
     <node concept="1DS2jV" id="3x0R1LJ5JY9" role="1NuT2Z">
       <property role="TrG5h" value="model" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
       <node concept="1oajcY" id="3x0R1LJ5JYa" role="1oa70y" />
     </node>
     <node concept="1DS2jV" id="3x0R1LJ5JYb" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
       <node concept="1oajcY" id="3x0R1LJ5JYc" role="1oa70y" />
     </node>
     <node concept="tnohg" id="3x0R1LJ5JYf" role="tncku">
@@ -423,7 +423,7 @@
     </node>
     <node concept="1DS2jV" id="3x0R1LJ5JZO" role="1NuT2Z">
       <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="nx1:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="3x0R1LJ5JZP" role="1oa70y" />
     </node>
     <node concept="2S4$dB" id="3x0R1LJ5JZQ" role="1NuT2Z">
@@ -436,17 +436,17 @@
     </node>
     <node concept="1DS2jV" id="3x0R1LJ5JZW" role="1NuT2Z">
       <property role="TrG5h" value="modelDescriptor" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
       <node concept="1oajcY" id="3x0R1LJ5JZX" role="1oa70y" />
     </node>
     <node concept="1DS2jV" id="3x0R1LJ5JZY" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
       <node concept="1oajcY" id="3x0R1LJ5JZZ" role="1oa70y" />
     </node>
     <node concept="1DS2jV" id="3x0R1LJ5K00" role="1NuT2Z">
       <property role="TrG5h" value="editor" />
-      <ref role="1DUlNI" to="nx1:~PlatformDataKeys.FILE_EDITOR" resolve="FILE_EDITOR" />
+      <ref role="1DUlNI" to="qkt:~PlatformDataKeys.FILE_EDITOR" resolve="FILE_EDITOR" />
       <node concept="1oajcY" id="3x0R1LJ5K01" role="1oa70y" />
     </node>
     <node concept="tnohg" id="3x0R1LJ5K02" role="tncku">
@@ -574,7 +574,7 @@
     <property role="2uzpH1" value="Check Robustness (from this Function)" />
     <node concept="1DS2jV" id="3x0R1LJ5K1c" role="1NuT2Z">
       <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="nx1:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="3x0R1LJ5K1d" role="1oa70y" />
     </node>
     <node concept="2S4$dB" id="3x0R1LJ5K1e" role="1NuT2Z">
@@ -587,12 +587,12 @@
     </node>
     <node concept="1DS2jV" id="3x0R1LJ5K1k" role="1NuT2Z">
       <property role="TrG5h" value="model" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
       <node concept="1oajcY" id="3x0R1LJ5K1l" role="1oa70y" />
     </node>
     <node concept="1DS2jV" id="3x0R1LJ5K1m" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
       <node concept="1oajcY" id="3x0R1LJ5K1n" role="1oa70y" />
     </node>
     <node concept="tnohg" id="3x0R1LJ5K1q" role="tncku">
@@ -764,7 +764,7 @@
     <property role="2uzpH1" value="Verify GSwitchExpression (starting from 'main')" />
     <node concept="1DS2jV" id="7yN$Xh8pdGR" role="1NuT2Z">
       <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="nx1:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="7yN$Xh8pdGS" role="1oa70y" />
     </node>
     <node concept="2S4$dB" id="7yN$Xh8pdGT" role="1NuT2Z">
@@ -777,17 +777,17 @@
     </node>
     <node concept="1DS2jV" id="7yN$Xh8pdGX" role="1NuT2Z">
       <property role="TrG5h" value="modelDescriptor" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
       <node concept="1oajcY" id="7yN$Xh8pdGY" role="1oa70y" />
     </node>
     <node concept="1DS2jV" id="7yN$Xh8pdGZ" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
       <node concept="1oajcY" id="7yN$Xh8pdH0" role="1oa70y" />
     </node>
     <node concept="1DS2jV" id="7yN$Xh8pdH1" role="1NuT2Z">
       <property role="TrG5h" value="editor" />
-      <ref role="1DUlNI" to="nx1:~PlatformDataKeys.FILE_EDITOR" resolve="FILE_EDITOR" />
+      <ref role="1DUlNI" to="qkt:~PlatformDataKeys.FILE_EDITOR" resolve="FILE_EDITOR" />
       <node concept="1oajcY" id="7yN$Xh8pdH2" role="1oa70y" />
     </node>
     <node concept="tnohg" id="7yN$Xh8pdH3" role="tncku">

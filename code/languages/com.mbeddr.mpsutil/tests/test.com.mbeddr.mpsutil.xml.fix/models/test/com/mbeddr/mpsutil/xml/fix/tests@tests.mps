@@ -6,25 +6,25 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="a71fc24a-23c8-4871-87d3-e77b414b28d2" name="test.com.mbeddr.mpsutil.xml.fix.support" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="771359e3-76e1-4788-8a8b-4c991a9c4893" name="com.mbeddr.mpsutil.xml.fix" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
     <generationPart ref="771359e3-76e1-4788-8a8b-4c991a9c4893(com.mbeddr.mpsutil.xml.fix)" />
   </languages>
   <imports>
-    <import index="y5px" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator(MPS.Core/jetbrains.mps.generator@java_stub)" />
-    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
-    <import index="xjo8" ref="86441d7a-e194-42da-81a5-2161ec62a379/f:java_stub#86441d7a-e194-42da-81a5-2161ec62a379#jetbrains.mps.ide.generator(MPS.Workbench/jetbrains.mps.ide.generator@java_stub)" />
+    <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="o6ex" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.generator(MPS.Workbench/)" />
     <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" />
-    <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
-    <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
-    <import index="59et" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.vfs(MPS.Core/jetbrains.mps.vfs@java_stub)" />
-    <import index="p73q" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.io(org.apache.commons/org.apache.commons.io@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
+    <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -144,7 +144,7 @@
               <node concept="3cpWsn" id="bGV79Bu$Sq" role="3cpWs9">
                 <property role="TrG5h" value="module" />
                 <node concept="3uibUv" id="bGV79Bu$Sl" role="1tU5fm">
-                  <ref role="3uigEE" to="vsqj:~AbstractModule" resolve="AbstractModule" />
+                  <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
                 </node>
                 <node concept="1eOMI4" id="bGV79Bu$Sr" role="33vP2m">
                   <node concept="10QFUN" id="bGV79Bu$Ss" role="1eOMHV">
@@ -152,7 +152,7 @@
                       <property role="3rM5sR" value="6d3c26cb-5a54-45af-9595-ca1921bdbf09" />
                     </node>
                     <node concept="3uibUv" id="bGV79Bu$Sw" role="10QFUM">
-                      <ref role="3uigEE" to="vsqj:~AbstractModule" resolve="AbstractModule" />
+                      <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
                     </node>
                   </node>
                 </node>
@@ -167,7 +167,7 @@
                     <ref role="3cqZAo" node="bGV79Bu$Sq" resolve="module" />
                   </node>
                   <node concept="liA8E" id="bGV79Buy_p" role="2OqNvi">
-                    <ref role="37wK5l" to="vsqj:~AbstractModule.getTestsGeneratorOutputPath():java.lang.String" resolve="getTestsGeneratorOutputPath" />
+                    <ref role="37wK5l" to="z1c3:~AbstractModule.getTestsGeneratorOutputPath():java.lang.String" resolve="getTestsGeneratorOutputPath" />
                   </node>
                 </node>
               </node>
@@ -176,14 +176,14 @@
               <node concept="3cpWsn" id="bGV79BuWSg" role="3cpWs9">
                 <property role="TrG5h" value="file" />
                 <node concept="3uibUv" id="bGV79BuWSd" role="1tU5fm">
-                  <ref role="3uigEE" to="fxg7:~File" resolve="File" />
+                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
                 </node>
                 <node concept="2ShNRf" id="bGV79BuWSh" role="33vP2m">
                   <node concept="1pGfFk" id="bGV79BuWSi" role="2ShVmc">
-                    <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.io.File,java.lang.String)" resolve="File" />
+                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.io.File,java.lang.String)" resolve="File" />
                     <node concept="2ShNRf" id="bGV79BuWSj" role="37wK5m">
                       <node concept="1pGfFk" id="bGV79BuWSk" role="2ShVmc">
-                        <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                        <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                         <node concept="37vLTw" id="bGV79BuWSl" role="37wK5m">
                           <ref role="3cqZAo" node="bGV79Buy_h" resolve="outputPath" />
                         </node>
@@ -202,7 +202,7 @@
                           <node concept="LkI2h" id="bGV79BuWSp" role="2OqNvi" />
                         </node>
                         <node concept="liA8E" id="bGV79BuWSq" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                          <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
                           <node concept="Xl_RD" id="bGV79BuWSr" role="37wK5m">
                             <property role="Xl_RC" value="." />
                           </node>
@@ -221,11 +221,11 @@
                 <property role="TrG5h" value="content" />
                 <node concept="17QB3L" id="bGV79BurxX" role="1tU5fm" />
                 <node concept="2YIFZM" id="bGV79Buq4p" role="33vP2m">
-                  <ref role="37wK5l" to="p73q:~IOUtils.toString(java.io.InputStream):java.lang.String" resolve="toString" />
-                  <ref role="1Pybhc" to="p73q:~IOUtils" resolve="IOUtils" />
+                  <ref role="37wK5l" to="8oaq:~IOUtils.toString(java.io.InputStream):java.lang.String" resolve="toString" />
+                  <ref role="1Pybhc" to="8oaq:~IOUtils" resolve="IOUtils" />
                   <node concept="2ShNRf" id="bGV79BuX9Z" role="37wK5m">
                     <node concept="1pGfFk" id="bGV79BuXtj" role="2ShVmc">
-                      <ref role="37wK5l" to="fxg7:~FileInputStream.&lt;init&gt;(java.io.File)" resolve="FileInputStream" />
+                      <ref role="37wK5l" to="guwi:~FileInputStream.&lt;init&gt;(java.io.File)" resolve="FileInputStream" />
                       <node concept="37vLTw" id="bGV79BuXvJ" role="37wK5m">
                         <ref role="3cqZAo" node="bGV79BuWSg" resolve="file" />
                       </node>
@@ -252,7 +252,7 @@
                     <ref role="3cqZAo" node="bGV79Buqhk" resolve="e" />
                   </node>
                   <node concept="liA8E" id="bGV79Burwu" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -260,7 +260,7 @@
             <node concept="3cpWsn" id="bGV79Buqhk" role="TDEfY">
               <property role="TrG5h" value="e" />
               <node concept="3uibUv" id="bGV79BuQfd" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
               </node>
             </node>
           </node>

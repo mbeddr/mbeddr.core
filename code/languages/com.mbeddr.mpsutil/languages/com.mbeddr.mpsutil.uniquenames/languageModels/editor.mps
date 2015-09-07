@@ -4,11 +4,11 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
     <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -21,22 +21,22 @@
     <import index="tpco" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core/jetbrains.mps.lang.core.editor)" />
     <import index="tpce" ref="c72da2b9-7cce-4447-8389-f407dc1158b7/r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure/jetbrains.mps.lang.structure.structure)" />
     <import index="tpep" ref="7866978e-a0f0-4cc7-81bc-4d213d9375e1/r:00000000-0000-4000-0000-011c895902fd(jetbrains.mps.lang.smodel/jetbrains.mps.lang.smodel.editor)" />
-    <import index="msyo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.util(MPS.Core/jetbrains.mps.util@java_stub)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="tpch" ref="c72da2b9-7cce-4447-8389-f407dc1158b7/r:00000000-0000-4000-0000-011c8959028d(jetbrains.mps.lang.structure/jetbrains.mps.lang.structure.editor)" />
     <import index="iwwu" ref="2d3c70e9-aab2-4870-8d8d-6036800e4103/r:2c4d9270-b6d6-44af-aecd-e01a223680db(jetbrains.mps.kernel/jetbrains.mps.kernel.model)" />
     <import index="tpcc" ref="c72da2b9-7cce-4447-8389-f407dc1158b7/r:00000000-0000-4000-0000-011c89590290(jetbrains.mps.lang.structure/jetbrains.mps.lang.structure.plugin)" />
-    <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
-    <import index="88zw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" />
-    <import index="59et" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.vfs(MPS.Core/jetbrains.mps.vfs@java_stub)" />
-    <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
-    <import index="jsgz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="tpc2" ref="18bc6592-03a6-4e29-a83a-7ff23bde13ba/r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor/jetbrains.mps.lang.editor.structure)" />
     <import index="tpc5" ref="18bc6592-03a6-4e29-a83a-7ff23bde13ba/r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor/jetbrains.mps.lang.editor.editor)" />
     <import index="7a0s" ref="34e84b8f-afa8-4364-abcd-a279fddddbe7/r:2af017c2-293f-4ebb-99f3-81e353b3d6e6(jetbrains.mps.editor.runtime/jetbrains.mps.editor.runtime)" />
-    <import index="nu8v" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" implicit="true" />
-    <import index="qe67" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.style(MPS.Editor/jetbrains.mps.openapi.editor.style@java_stub)" implicit="true" />
+    <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
+    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -1207,14 +1207,14 @@
             <node concept="3cpWsn" id="6kzVPrVgy12" role="3cpWs9">
               <property role="TrG5h" value="cell2" />
               <node concept="3uibUv" id="6kzVPrVgy13" role="1tU5fm">
-                <ref role="3uigEE" to="jsgz:~EditorCell_Constant" resolve="EditorCell_Constant" />
+                <ref role="3uigEE" to="g51k:~EditorCell_Constant" resolve="EditorCell_Constant" />
               </node>
               <node concept="2ShNRf" id="6kzVPrVgyzn" role="33vP2m">
                 <node concept="YeOm9" id="6kzVPrVgHTz" role="2ShVmc">
                   <node concept="1Y3b0j" id="6kzVPrVgHTA" role="YeSDq">
                     <property role="2bfB8j" value="true" />
-                    <ref role="37wK5l" to="jsgz:~EditorCell_Constant.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="EditorCell_Constant" />
-                    <ref role="1Y3XeK" to="jsgz:~EditorCell_Constant" resolve="EditorCell_Constant" />
+                    <ref role="37wK5l" to="g51k:~EditorCell_Constant.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="EditorCell_Constant" />
+                    <ref role="1Y3XeK" to="g51k:~EditorCell_Constant" resolve="EditorCell_Constant" />
                     <node concept="3Tm1VV" id="6kzVPrVgHTB" role="1B3o_S" />
                     <node concept="1Q80Hx" id="6kzVPrVgHhR" role="37wK5m" />
                     <node concept="pncrf" id="6kzVPrVgHmI" role="37wK5m" />
@@ -1222,13 +1222,13 @@
                       <node concept="1eOMI4" id="6kzVPrVgXAu" role="2Oq$k0">
                         <node concept="10QFUN" id="6kzVPrVgXAr" role="1eOMHV">
                           <node concept="3uibUv" id="6kzVPrVgXNs" role="10QFUM">
-                            <ref role="3uigEE" to="jsgz:~EditorCell_Label" resolve="EditorCell_Label" />
+                            <ref role="3uigEE" to="g51k:~EditorCell_Label" resolve="EditorCell_Label" />
                           </node>
                           <node concept="1Q80Hy" id="6kzVPrVgY97" role="10QFUP" />
                         </node>
                       </node>
                       <node concept="liA8E" id="6kzVPrVgZwT" role="2OqNvi">
-                        <ref role="37wK5l" to="jsgz:~EditorCell_Label.getText():java.lang.String" resolve="getText" />
+                        <ref role="37wK5l" to="g51k:~EditorCell_Label.getText():java.lang.String" resolve="getText" />
                       </node>
                     </node>
                     <node concept="3clFb_" id="6kzVPrVgJ0a" role="jymVt">
@@ -1244,7 +1244,7 @@
                         </node>
                       </node>
                       <node concept="2AHcQZ" id="6kzVPrVgJ0l" role="2AJF6D">
-                        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                       </node>
                     </node>
                   </node>
@@ -1259,15 +1259,15 @@
                   <ref role="3cqZAo" node="6kzVPrVgy12" resolve="cell2" />
                 </node>
                 <node concept="liA8E" id="6kzVPrVgTNk" role="2OqNvi">
-                  <ref role="37wK5l" to="jsgz:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+                  <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
                 </node>
               </node>
               <node concept="liA8E" id="6kzVPrVgUDX" role="2OqNvi">
-                <ref role="37wK5l" to="qe67:~Style.putAll(jetbrains.mps.openapi.editor.style.Style):void" resolve="putAll" />
+                <ref role="37wK5l" to="hox0:~Style.putAll(jetbrains.mps.openapi.editor.style.Style):void" resolve="putAll" />
                 <node concept="2OqwBi" id="6kzVPrVgUVX" role="37wK5m">
                   <node concept="1Q80Hy" id="6kzVPrVgUR1" role="2Oq$k0" />
                   <node concept="liA8E" id="6kzVPrVgVl5" role="2OqNvi">
-                    <ref role="37wK5l" to="nu8v:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+                    <ref role="37wK5l" to="f4zo:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
                   </node>
                 </node>
               </node>
@@ -1325,14 +1325,14 @@
             <node concept="3cpWsn" id="6kzVPrVnnCL" role="3cpWs9">
               <property role="TrG5h" value="cell2" />
               <node concept="3uibUv" id="6kzVPrVnnCM" role="1tU5fm">
-                <ref role="3uigEE" to="jsgz:~EditorCell_Constant" resolve="EditorCell_Constant" />
+                <ref role="3uigEE" to="g51k:~EditorCell_Constant" resolve="EditorCell_Constant" />
               </node>
               <node concept="2ShNRf" id="6kzVPrVnnCN" role="33vP2m">
                 <node concept="YeOm9" id="6kzVPrVnnCO" role="2ShVmc">
                   <node concept="1Y3b0j" id="6kzVPrVnnCP" role="YeSDq">
                     <property role="2bfB8j" value="true" />
-                    <ref role="37wK5l" to="jsgz:~EditorCell_Constant.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="EditorCell_Constant" />
-                    <ref role="1Y3XeK" to="jsgz:~EditorCell_Constant" resolve="EditorCell_Constant" />
+                    <ref role="37wK5l" to="g51k:~EditorCell_Constant.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="EditorCell_Constant" />
+                    <ref role="1Y3XeK" to="g51k:~EditorCell_Constant" resolve="EditorCell_Constant" />
                     <node concept="3Tm1VV" id="6kzVPrVnnCQ" role="1B3o_S" />
                     <node concept="1Q80Hx" id="6kzVPrVnnCR" role="37wK5m" />
                     <node concept="pncrf" id="6kzVPrVnnCS" role="37wK5m" />
@@ -1340,13 +1340,13 @@
                       <node concept="1eOMI4" id="6kzVPrVnnCU" role="2Oq$k0">
                         <node concept="10QFUN" id="6kzVPrVnnCV" role="1eOMHV">
                           <node concept="3uibUv" id="6kzVPrVnnCW" role="10QFUM">
-                            <ref role="3uigEE" to="jsgz:~EditorCell_Label" resolve="EditorCell_Label" />
+                            <ref role="3uigEE" to="g51k:~EditorCell_Label" resolve="EditorCell_Label" />
                           </node>
                           <node concept="1Q80Hy" id="6kzVPrVnnCX" role="10QFUP" />
                         </node>
                       </node>
                       <node concept="liA8E" id="6kzVPrVnnCY" role="2OqNvi">
-                        <ref role="37wK5l" to="jsgz:~EditorCell_Label.getText():java.lang.String" resolve="getText" />
+                        <ref role="37wK5l" to="g51k:~EditorCell_Label.getText():java.lang.String" resolve="getText" />
                       </node>
                     </node>
                     <node concept="3clFb_" id="6kzVPrVnnCZ" role="jymVt">
@@ -1362,7 +1362,7 @@
                         </node>
                       </node>
                       <node concept="2AHcQZ" id="6kzVPrVnnD5" role="2AJF6D">
-                        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                       </node>
                     </node>
                   </node>
@@ -1377,15 +1377,15 @@
                   <ref role="3cqZAo" node="6kzVPrVnnCL" resolve="cell2" />
                 </node>
                 <node concept="liA8E" id="6kzVPrVnnDa" role="2OqNvi">
-                  <ref role="37wK5l" to="jsgz:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+                  <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
                 </node>
               </node>
               <node concept="liA8E" id="6kzVPrVnnDb" role="2OqNvi">
-                <ref role="37wK5l" to="qe67:~Style.putAll(jetbrains.mps.openapi.editor.style.Style):void" resolve="putAll" />
+                <ref role="37wK5l" to="hox0:~Style.putAll(jetbrains.mps.openapi.editor.style.Style):void" resolve="putAll" />
                 <node concept="2OqwBi" id="6kzVPrVnnDc" role="37wK5m">
                   <node concept="1Q80Hy" id="6kzVPrVnnDd" role="2Oq$k0" />
                   <node concept="liA8E" id="6kzVPrVnnDe" role="2OqNvi">
-                    <ref role="37wK5l" to="nu8v:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+                    <ref role="37wK5l" to="f4zo:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
                   </node>
                 </node>
               </node>
@@ -1433,14 +1433,14 @@
             <node concept="3cpWsn" id="6kzVPrVnve0" role="3cpWs9">
               <property role="TrG5h" value="cell2" />
               <node concept="3uibUv" id="6kzVPrVnve1" role="1tU5fm">
-                <ref role="3uigEE" to="jsgz:~EditorCell_Constant" resolve="EditorCell_Constant" />
+                <ref role="3uigEE" to="g51k:~EditorCell_Constant" resolve="EditorCell_Constant" />
               </node>
               <node concept="2ShNRf" id="6kzVPrVnve2" role="33vP2m">
                 <node concept="YeOm9" id="6kzVPrVnve3" role="2ShVmc">
                   <node concept="1Y3b0j" id="6kzVPrVnve4" role="YeSDq">
                     <property role="2bfB8j" value="true" />
-                    <ref role="1Y3XeK" to="jsgz:~EditorCell_Constant" resolve="EditorCell_Constant" />
-                    <ref role="37wK5l" to="jsgz:~EditorCell_Constant.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="EditorCell_Constant" />
+                    <ref role="1Y3XeK" to="g51k:~EditorCell_Constant" resolve="EditorCell_Constant" />
+                    <ref role="37wK5l" to="g51k:~EditorCell_Constant.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="EditorCell_Constant" />
                     <node concept="3Tm1VV" id="6kzVPrVnve5" role="1B3o_S" />
                     <node concept="1Q80Hx" id="6kzVPrVnve6" role="37wK5m" />
                     <node concept="pncrf" id="6kzVPrVnve7" role="37wK5m" />
@@ -1448,13 +1448,13 @@
                       <node concept="1eOMI4" id="6kzVPrVnve9" role="2Oq$k0">
                         <node concept="10QFUN" id="6kzVPrVnvea" role="1eOMHV">
                           <node concept="3uibUv" id="6kzVPrVnveb" role="10QFUM">
-                            <ref role="3uigEE" to="jsgz:~EditorCell_Label" resolve="EditorCell_Label" />
+                            <ref role="3uigEE" to="g51k:~EditorCell_Label" resolve="EditorCell_Label" />
                           </node>
                           <node concept="1Q80Hy" id="6kzVPrVnvec" role="10QFUP" />
                         </node>
                       </node>
                       <node concept="liA8E" id="6kzVPrVnved" role="2OqNvi">
-                        <ref role="37wK5l" to="jsgz:~EditorCell_Label.getText():java.lang.String" resolve="getText" />
+                        <ref role="37wK5l" to="g51k:~EditorCell_Label.getText():java.lang.String" resolve="getText" />
                       </node>
                     </node>
                     <node concept="3clFb_" id="6kzVPrVnvee" role="jymVt">
@@ -1470,7 +1470,7 @@
                         </node>
                       </node>
                       <node concept="2AHcQZ" id="6kzVPrVnvek" role="2AJF6D">
-                        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                       </node>
                     </node>
                   </node>
@@ -1485,15 +1485,15 @@
                   <ref role="3cqZAo" node="6kzVPrVnve0" resolve="cell2" />
                 </node>
                 <node concept="liA8E" id="6kzVPrVnvep" role="2OqNvi">
-                  <ref role="37wK5l" to="jsgz:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+                  <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
                 </node>
               </node>
               <node concept="liA8E" id="6kzVPrVnveq" role="2OqNvi">
-                <ref role="37wK5l" to="qe67:~Style.putAll(jetbrains.mps.openapi.editor.style.Style):void" resolve="putAll" />
+                <ref role="37wK5l" to="hox0:~Style.putAll(jetbrains.mps.openapi.editor.style.Style):void" resolve="putAll" />
                 <node concept="2OqwBi" id="6kzVPrVnver" role="37wK5m">
                   <node concept="1Q80Hy" id="6kzVPrVnves" role="2Oq$k0" />
                   <node concept="liA8E" id="6kzVPrVnvet" role="2OqNvi">
-                    <ref role="37wK5l" to="nu8v:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+                    <ref role="37wK5l" to="f4zo:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
                   </node>
                 </node>
               </node>
@@ -1959,7 +1959,7 @@
                 <node concept="3clFbF" id="5wEedBrXCXb" role="3cqZAp">
                   <node concept="2OqwBi" id="5wEedBrXCXc" role="3clFbG">
                     <node concept="liA8E" id="5wEedBrXCXd" role="2OqNvi">
-                      <ref role="37wK5l" to="88zw:~ModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
+                      <ref role="37wK5l" to="lui2:~ModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
                       <node concept="1bVj0M" id="5wEedBrXCXe" role="37wK5m">
                         <node concept="3clFbS" id="5wEedBrXCXf" role="1bW5cS">
                           <node concept="3clFbF" id="6UyJMA9G3Fb" role="3cqZAp">
@@ -1978,11 +1978,11 @@
                     </node>
                     <node concept="2OqwBi" id="5wEedBrXCXg" role="2Oq$k0">
                       <node concept="liA8E" id="5wEedBrXCXh" role="2OqNvi">
-                        <ref role="37wK5l" to="88zw:~SRepository.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
+                        <ref role="37wK5l" to="lui2:~SRepository.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
                       </node>
                       <node concept="2OqwBi" id="5wEedBrXCXi" role="2Oq$k0">
                         <node concept="liA8E" id="5wEedBrXCXj" role="2OqNvi">
-                          <ref role="37wK5l" to="srng:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                          <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                         </node>
                         <node concept="1Q80Hx" id="5wEedBrXCXk" role="2Oq$k0" />
                       </node>
@@ -2048,8 +2048,8 @@
                         <property role="TrG5h" value="name" />
                         <node concept="17QB3L" id="hP3azUF" role="1tU5fm" />
                         <node concept="2YIFZM" id="hhu$1IK" role="33vP2m">
-                          <ref role="1Pybhc" to="msyo:~NameUtil" resolve="NameUtil" />
-                          <ref role="37wK5l" to="msyo:~NameUtil.decapitalize(java.lang.String):java.lang.String" resolve="decapitalize" />
+                          <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                          <ref role="37wK5l" to="18ew:~NameUtil.decapitalize(java.lang.String):java.lang.String" resolve="decapitalize" />
                           <node concept="2OqwBi" id="hx3pF_G" role="37wK5m">
                             <node concept="2OqwBi" id="hx3pFA2" role="2Oq$k0">
                               <node concept="3GMtW1" id="hhu$21x" role="2Oq$k0" />
@@ -2071,8 +2071,8 @@
                         </node>
                         <node concept="X8dFx" id="hhuzaRK" role="2OqNvi">
                           <node concept="2YIFZM" id="hhuzbOE" role="25WWJ7">
-                            <ref role="37wK5l" to="msyo:~NameUtil.splitByCamels(java.lang.String):java.util.List" resolve="splitByCamels" />
-                            <ref role="1Pybhc" to="msyo:~NameUtil" resolve="NameUtil" />
+                            <ref role="37wK5l" to="18ew:~NameUtil.splitByCamels(java.lang.String):java.util.List" resolve="splitByCamels" />
+                            <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
                             <node concept="37vLTw" id="3GM_nagTuLg" role="37wK5m">
                               <ref role="3cqZAo" node="hhuzYV4" resolve="name" />
                             </node>
@@ -2483,17 +2483,17 @@
                     <node concept="2OqwBi" id="5wEedBrXv2c" role="3clFbG">
                       <node concept="2OqwBi" id="5wEedBrXuaa" role="2Oq$k0">
                         <node concept="liA8E" id="5wEedBrXuT6" role="2OqNvi">
-                          <ref role="37wK5l" to="88zw:~SRepository.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
+                          <ref role="37wK5l" to="lui2:~SRepository.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
                         </node>
                         <node concept="2OqwBi" id="5wEedBrXtHu" role="2Oq$k0">
                           <node concept="liA8E" id="5wEedBrXu3K" role="2OqNvi">
-                            <ref role="37wK5l" to="srng:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                            <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                           </node>
                           <node concept="1Q80Hx" id="5wEedBrXtC3" role="2Oq$k0" />
                         </node>
                       </node>
                       <node concept="liA8E" id="5wEedBrXwdF" role="2OqNvi">
-                        <ref role="37wK5l" to="88zw:~ModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
+                        <ref role="37wK5l" to="lui2:~ModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
                         <node concept="1bVj0M" id="5wEedBrXwfk" role="37wK5m">
                           <node concept="3clFbS" id="5wEedBrXwfl" role="1bW5cS">
                             <node concept="3clFbF" id="6UyJMA9G3E6" role="3cqZAp">
@@ -3070,7 +3070,7 @@
               <node concept="3cpWsn" id="gTqSnTV" role="3cpWs9">
                 <property role="TrG5h" value="l" />
                 <node concept="3uibUv" id="gTqSnTW" role="1tU5fm">
-                  <ref role="3uigEE" to="cu2c:~Language" resolve="Language" />
+                  <ref role="3uigEE" to="w1kc:~Language" resolve="Language" />
                 </node>
                 <node concept="2YIFZM" id="i1drmHk" role="33vP2m">
                   <ref role="1Pybhc" to="iwwu:i0YipgJ" resolve="SModelUtil" />
@@ -3098,14 +3098,14 @@
                 <node concept="17QB3L" id="hP3azYc" role="1tU5fm" />
                 <node concept="2OqwBi" id="hy079Lc" role="33vP2m">
                   <node concept="2YIFZM" id="6tm98vZifEl" role="2Oq$k0">
-                    <ref role="37wK5l" to="msyo:~MacrosFactory.forModule(jetbrains.mps.project.AbstractModule):jetbrains.mps.util.MacroHelper" resolve="forModule" />
-                    <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
+                    <ref role="37wK5l" to="18ew:~MacrosFactory.forModule(jetbrains.mps.project.AbstractModule):jetbrains.mps.util.MacroHelper" resolve="forModule" />
+                    <ref role="1Pybhc" to="18ew:~MacrosFactory" resolve="MacrosFactory" />
                     <node concept="37vLTw" id="3GM_nagTruw" role="37wK5m">
                       <ref role="3cqZAo" node="gTqSnTV" resolve="l" />
                     </node>
                   </node>
                   <node concept="liA8E" id="hy079Ld" role="2OqNvi">
-                    <ref role="37wK5l" to="msyo:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+                    <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
                     <node concept="2OqwBi" id="hx3pFyv" role="37wK5m">
                       <node concept="pncrf" id="gTqTEKX" role="2Oq$k0" />
                       <node concept="3TrcHB" id="gTqTFMr" role="2OqNvi">
@@ -3132,15 +3132,15 @@
             <node concept="3cpWs6" id="gTqTRg6" role="3cqZAp">
               <node concept="2OqwBi" id="hy079Ts" role="3cqZAk">
                 <node concept="liA8E" id="hy079Tt" role="2OqNvi">
-                  <ref role="37wK5l" to="59et:~IFile.exists():boolean" resolve="exists" />
+                  <ref role="37wK5l" to="3ju5:~IFile.exists():boolean" resolve="exists" />
                 </node>
                 <node concept="2OqwBi" id="4RnppgkkcW5" role="2Oq$k0">
                   <node concept="2YIFZM" id="4RnppgkkcW3" role="2Oq$k0">
-                    <ref role="1Pybhc" to="59et:~FileSystem" resolve="FileSystem" />
-                    <ref role="37wK5l" to="59et:~FileSystem.getInstance():jetbrains.mps.vfs.FileSystem" resolve="getInstance" />
+                    <ref role="1Pybhc" to="3ju5:~FileSystem" resolve="FileSystem" />
+                    <ref role="37wK5l" to="3ju5:~FileSystem.getInstance():jetbrains.mps.vfs.FileSystem" resolve="getInstance" />
                   </node>
                   <node concept="liA8E" id="4RnppgkkcW9" role="2OqNvi">
-                    <ref role="37wK5l" to="59et:~FileSystem.getFileByPath(java.lang.String):jetbrains.mps.vfs.IFile" resolve="getFileByPath" />
+                    <ref role="37wK5l" to="3ju5:~FileSystem.getFileByPath(java.lang.String):jetbrains.mps.vfs.IFile" resolve="getFileByPath" />
                     <node concept="37vLTw" id="3GM_nagTyHB" role="37wK5m">
                       <ref role="3cqZAo" node="gTqTi9T" resolve="s" />
                     </node>
@@ -3633,14 +3633,14 @@
             <node concept="3cpWsn" id="7G3D8bttRi" role="3cpWs9">
               <property role="TrG5h" value="cell2" />
               <node concept="3uibUv" id="7G3D8bttRj" role="1tU5fm">
-                <ref role="3uigEE" to="jsgz:~EditorCell_Constant" resolve="EditorCell_Constant" />
+                <ref role="3uigEE" to="g51k:~EditorCell_Constant" resolve="EditorCell_Constant" />
               </node>
               <node concept="2ShNRf" id="7G3D8bttRk" role="33vP2m">
                 <node concept="YeOm9" id="7G3D8bttRl" role="2ShVmc">
                   <node concept="1Y3b0j" id="7G3D8bttRm" role="YeSDq">
                     <property role="2bfB8j" value="true" />
-                    <ref role="37wK5l" to="jsgz:~EditorCell_Constant.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="EditorCell_Constant" />
-                    <ref role="1Y3XeK" to="jsgz:~EditorCell_Constant" resolve="EditorCell_Constant" />
+                    <ref role="37wK5l" to="g51k:~EditorCell_Constant.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="EditorCell_Constant" />
+                    <ref role="1Y3XeK" to="g51k:~EditorCell_Constant" resolve="EditorCell_Constant" />
                     <node concept="3Tm1VV" id="7G3D8bttRn" role="1B3o_S" />
                     <node concept="1Q80Hx" id="7G3D8bttRo" role="37wK5m" />
                     <node concept="pncrf" id="7G3D8bttRp" role="37wK5m" />
@@ -3648,13 +3648,13 @@
                       <node concept="1eOMI4" id="7G3D8bttRr" role="2Oq$k0">
                         <node concept="10QFUN" id="7G3D8bttRs" role="1eOMHV">
                           <node concept="3uibUv" id="7G3D8bttRt" role="10QFUM">
-                            <ref role="3uigEE" to="jsgz:~EditorCell_Label" resolve="EditorCell_Label" />
+                            <ref role="3uigEE" to="g51k:~EditorCell_Label" resolve="EditorCell_Label" />
                           </node>
                           <node concept="1Q80Hy" id="7G3D8bttRu" role="10QFUP" />
                         </node>
                       </node>
                       <node concept="liA8E" id="7G3D8bttRv" role="2OqNvi">
-                        <ref role="37wK5l" to="jsgz:~EditorCell_Label.getText():java.lang.String" resolve="getText" />
+                        <ref role="37wK5l" to="g51k:~EditorCell_Label.getText():java.lang.String" resolve="getText" />
                       </node>
                     </node>
                     <node concept="3clFb_" id="7G3D8bttRw" role="jymVt">
@@ -3670,7 +3670,7 @@
                         </node>
                       </node>
                       <node concept="2AHcQZ" id="7G3D8bttRA" role="2AJF6D">
-                        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                       </node>
                     </node>
                   </node>
@@ -3685,15 +3685,15 @@
                   <ref role="3cqZAo" node="7G3D8bttRi" resolve="cell2" />
                 </node>
                 <node concept="liA8E" id="7G3D8bttRF" role="2OqNvi">
-                  <ref role="37wK5l" to="jsgz:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+                  <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
                 </node>
               </node>
               <node concept="liA8E" id="7G3D8bttRG" role="2OqNvi">
-                <ref role="37wK5l" to="qe67:~Style.putAll(jetbrains.mps.openapi.editor.style.Style):void" resolve="putAll" />
+                <ref role="37wK5l" to="hox0:~Style.putAll(jetbrains.mps.openapi.editor.style.Style):void" resolve="putAll" />
                 <node concept="2OqwBi" id="7G3D8bttRH" role="37wK5m">
                   <node concept="1Q80Hy" id="7G3D8bttRI" role="2Oq$k0" />
                   <node concept="liA8E" id="7G3D8bttRJ" role="2OqNvi">
-                    <ref role="37wK5l" to="nu8v:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+                    <ref role="37wK5l" to="f4zo:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
                   </node>
                 </node>
               </node>

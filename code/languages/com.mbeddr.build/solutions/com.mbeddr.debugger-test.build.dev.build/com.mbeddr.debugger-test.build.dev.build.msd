@@ -11,12 +11,8 @@
     <dependency reexport="false">3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)</dependency>
     <dependency reexport="false">f1fb7b1c-ce0d-423c-9369-4a661d600029(de.slisson.mps.all.build)</dependency>
     <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>
+    <dependency reexport="false">2098f9e9-7b8d-4ee4-8e3f-46840f7fc3dd(com.mbeddr.debugger.tests.dev.build)</dependency>
   </dependencies>
-  <usedLanguages>
-    <usedLanguage>798100da-4f0a-421a-b991-71f8c50ce5d2(jetbrains.mps.build)</usedLanguage>
-    <usedLanguage>0cf935df-4699-4e9c-a132-fa109541cba3(jetbrains.mps.build.mps)</usedLanguage>
-    <usedLanguage>3600cb0a-44dd-4a5b-9968-22924406419e(jetbrains.mps.build.mps.tests)</usedLanguage>
-  </usedLanguages>
   <languageVersions>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" fqName="jetbrains.mps.build" version="0" />
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" fqName="jetbrains.mps.build.mps" version="1" />

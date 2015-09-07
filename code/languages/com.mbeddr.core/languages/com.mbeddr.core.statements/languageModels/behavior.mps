@@ -4,9 +4,9 @@
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -23,10 +23,10 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="if8w" ref="r:95397225-9080-48bc-b1aa-0ce7c4f3d2ce(jetbrains.mps.lang.traceable.behavior)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="mhbf" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
-    <import index="z60i" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
-    <import index="wyt6" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="guwi" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
@@ -559,8 +559,8 @@
             </node>
             <node concept="X8dFx" id="6viY8n1qFlT" role="2OqNvi">
               <node concept="2OqwBi" id="6viY8n1pb4p" role="25WWJ7">
-                <node concept="v3k3i" id="4biM00J7od3" role="2OqNvi">
-                  <node concept="chp4Y" id="4biM00J7od4" role="v3oSu">
+                <node concept="v3k3i" id="6jvaevO$0aO" role="2OqNvi">
+                  <node concept="chp4Y" id="6jvaevO$0aP" role="v3oSu">
                     <ref role="cht4Q" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
                   </node>
                 </node>
@@ -583,8 +583,8 @@
               <node concept="2OqwBi" id="6viY8n1tnpq" role="25WWJ7">
                 <node concept="2OqwBi" id="6viY8n1_mqS" role="2Oq$k0">
                   <node concept="2OqwBi" id="6viY8n1_mqT" role="2Oq$k0">
-                    <node concept="v3k3i" id="4biM00J7od5" role="2OqNvi">
-                      <node concept="chp4Y" id="4biM00J7od6" role="v3oSu">
+                    <node concept="v3k3i" id="6jvaevO$0aQ" role="2OqNvi">
+                      <node concept="chp4Y" id="6jvaevO$0aR" role="v3oSu">
                         <ref role="cht4Q" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
                       </node>
                     </node>

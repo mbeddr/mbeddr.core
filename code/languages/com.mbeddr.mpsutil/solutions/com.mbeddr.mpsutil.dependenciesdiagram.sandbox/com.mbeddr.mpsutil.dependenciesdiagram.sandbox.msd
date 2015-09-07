@@ -6,11 +6,6 @@
     </modelRoot>
   </models>
   <sourcePath />
-  <usedLanguages>
-    <usedLanguage>cab214f9-7127-4f03-923a-c64fb67fed05(com.mbeddr.mpsutil.dependenciesdiagram)</usedLanguage>
-    <usedLanguage>86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)</usedLanguage>
-    <usedLanguage>8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)</usedLanguage>
-  </usedLanguages>
   <languageVersions>
     <language id="cab214f9-7127-4f03-923a-c64fb67fed05" fqName="com.mbeddr.mpsutil.dependenciesdiagram" version="0" />
     <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" fqName="de.itemis.mps.editor.diagram.layout" version="0" />

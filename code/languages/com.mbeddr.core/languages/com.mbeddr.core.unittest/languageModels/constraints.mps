@@ -2,7 +2,7 @@
 <model ref="r:f379684c-f503-4278-b6e4-762eb5743504(com.mbeddr.core.unittest.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -291,6 +291,11 @@
         <node concept="3clFbS" id="2gAdhaBD_48" role="2VODD2">
           <node concept="3clFbF" id="2gAdhaBD_49" role="3cqZAp">
             <node concept="2OqwBi" id="2gAdhaBD_4a" role="3clFbG">
+              <node concept="v3k3i" id="6jvaevO$0bs" role="2OqNvi">
+                <node concept="chp4Y" id="6jvaevO$0bt" role="v3oSu">
+                  <ref role="cht4Q" to="k146:2lgwE2U2X_H" resolve="MessageDefinitionTable" />
+                </node>
+              </node>
               <node concept="2OqwBi" id="2gAdhaBD_4b" role="2Oq$k0">
                 <node concept="2OqwBi" id="2gAdhaBD_4c" role="2Oq$k0">
                   <node concept="21POm0" id="2gAdhaBD_4d" role="2Oq$k0" />
@@ -308,11 +313,6 @@
                   <node concept="3TUQnm" id="2gAdhaBD_4j" role="37wK5m">
                     <ref role="3TV0OU" to="k146:2lgwE2U2X_H" resolve="MessageDefinitionTable" />
                   </node>
-                </node>
-              </node>
-              <node concept="v3k3i" id="4biM00J7odv" role="2OqNvi">
-                <node concept="chp4Y" id="4biM00J7odw" role="v3oSu">
-                  <ref role="cht4Q" to="k146:2lgwE2U2X_H" resolve="MessageDefinitionTable" />
                 </node>
               </node>
             </node>
@@ -350,6 +350,11 @@
         <node concept="3clFbS" id="2gAdhaBDMhB" role="2VODD2">
           <node concept="3clFbF" id="2gAdhaBDMhC" role="3cqZAp">
             <node concept="2OqwBi" id="XaN6GmQzn" role="3clFbG">
+              <node concept="v3k3i" id="6jvaevO$0bu" role="2OqNvi">
+                <node concept="chp4Y" id="6jvaevO$0bv" role="v3oSu">
+                  <ref role="cht4Q" to="k146:2lgwE2U2X_H" resolve="MessageDefinitionTable" />
+                </node>
+              </node>
               <node concept="2OqwBi" id="2gAdhaBDMhE" role="2Oq$k0">
                 <node concept="2OqwBi" id="2gAdhaBDMhF" role="2Oq$k0">
                   <node concept="21POm0" id="2gAdhaBDMhG" role="2Oq$k0" />
@@ -367,11 +372,6 @@
                   <node concept="3TUQnm" id="2gAdhaBDMhM" role="37wK5m">
                     <ref role="3TV0OU" to="k146:2lgwE2U2X_H" resolve="MessageDefinitionTable" />
                   </node>
-                </node>
-              </node>
-              <node concept="v3k3i" id="4biM00J7odx" role="2OqNvi">
-                <node concept="chp4Y" id="4biM00J7ody" role="v3oSu">
-                  <ref role="cht4Q" to="k146:2lgwE2U2X_H" resolve="MessageDefinitionTable" />
                 </node>
               </node>
             </node>

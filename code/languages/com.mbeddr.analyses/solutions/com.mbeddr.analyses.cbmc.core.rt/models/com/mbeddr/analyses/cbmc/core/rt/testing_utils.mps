@@ -4,7 +4,7 @@
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -13,11 +13,11 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="d8ej" ref="r:fde4fd08-2694-4f15-a5e5-88fa2c92442c(com.mbeddr.analyses.utils.testing_utils)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tzyt" ref="r:b35b0dd8-a38e-4607-ba37-cc8f7410b705(com.mbeddr.analyses.cbmc.rt.run)" />
     <import index="of7m" ref="r:6b89ada8-2a97-4717-86bd-42be19241c03(com.mbeddr.analyses.cbmc.core.rt.analyses.robustness)" />
-    <import index="fw3h" ref="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.progress(MPS.IDEA/com.intellij.openapi.progress@java_stub)" />
-    <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="7uhm" ref="r:5a6e4bc9-0a07-41cd-ab54-88993517e687(com.mbeddr.analyses.cbmc.core.rt.analyses.asserts)" />
     <import index="72ct" ref="r:b940b44d-75f7-4e5e-a8c5-66b915fea907(com.mbeddr.analyses.cbmc.core.rt.analyses.decTab)" />
     <import index="yqjk" ref="r:a045cdc9-70eb-46cf-a69a-ffc7c55c8821(com.mbeddr.analyses.cbmc.core.rt.analyses.gswitch)" />
@@ -281,7 +281,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="6BM8NjXd_yx" role="2OqNvi">
-                                <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                 <node concept="3cpWs2" id="6BM8NjXd_yy" role="37wK5m">
                                   <ref role="3cqZAo" node="6BM8NjXd_zs" resolve="funName" />
                                 </node>
@@ -410,7 +410,7 @@
                       </node>
                       <node concept="2ShNRf" id="6BM8NjXd_ze" role="37wK5m">
                         <node concept="1pGfFk" id="6BM8NjXd_zf" role="2ShVmc">
-                          <ref role="37wK5l" to="fw3h:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+                          <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                         </node>
                       </node>
                     </node>
@@ -444,7 +444,7 @@
       <node concept="37vLTG" id="6BM8NjXd_zo" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="6BM8NjXd_zp" role="1tU5fm">
-          <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
         </node>
       </node>
       <node concept="37vLTG" id="6BM8NjXd_zq" role="3clF46">
@@ -514,7 +514,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="7MMcIPlrPko" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                         <node concept="37vLTw" id="7MMcIPlrPQi" role="37wK5m">
                           <ref role="3cqZAo" node="7MMcIPlrGt6" resolve="userFriendlyName" />
                         </node>
@@ -534,7 +534,7 @@
       <node concept="37vLTG" id="7MMcIPlrGiE" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="7MMcIPlrGiF" role="1tU5fm">
-          <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
         </node>
       </node>
       <node concept="37vLTG" id="7MMcIPlrGiG" role="3clF46">
@@ -586,7 +586,7 @@
       <node concept="37vLTG" id="6BM8NjXdBhx" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="6BM8NjXdBhy" role="1tU5fm">
-          <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
         </node>
       </node>
       <node concept="37vLTG" id="6BM8NjXdBhz" role="3clF46">
@@ -661,7 +661,7 @@
       <node concept="37vLTG" id="3Z5D5F2EVjY" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="3Z5D5F2EVjZ" role="1tU5fm">
-          <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
         </node>
       </node>
       <node concept="37vLTG" id="3Z5D5F2EVk0" role="3clF46">
@@ -770,7 +770,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="6BM8NjXdCCV" role="2OqNvi">
-                                <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                 <node concept="3cpWs2" id="6BM8NjXdCCW" role="37wK5m">
                                   <ref role="3cqZAo" node="6BM8NjXdCDO" resolve="funName" />
                                 </node>
@@ -884,7 +884,7 @@
                       </node>
                       <node concept="2ShNRf" id="5uqRFp94kpl" role="37wK5m">
                         <node concept="1pGfFk" id="5uqRFp94kpm" role="2ShVmc">
-                          <ref role="37wK5l" to="fw3h:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+                          <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                         </node>
                       </node>
                     </node>
@@ -917,7 +917,7 @@
       <node concept="37vLTG" id="6BM8NjXdCDK" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="6BM8NjXdCDL" role="1tU5fm">
-          <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
         </node>
       </node>
       <node concept="37vLTG" id="6BM8NjXdCDM" role="3clF46">
@@ -1023,7 +1023,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="17FqOSBEnPB" role="2OqNvi">
-                                <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                 <node concept="3cpWs2" id="17FqOSBEnPC" role="37wK5m">
                                   <ref role="3cqZAo" node="17FqOSBEnQA" resolve="funName" />
                                 </node>
@@ -1151,7 +1151,7 @@
                       </node>
                       <node concept="2ShNRf" id="5uqRFp94ooN" role="37wK5m">
                         <node concept="1pGfFk" id="5uqRFp94ooO" role="2ShVmc">
-                          <ref role="37wK5l" to="fw3h:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+                          <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                         </node>
                       </node>
                     </node>
@@ -1184,7 +1184,7 @@
       <node concept="37vLTG" id="17FqOSBEnQy" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="17FqOSBEnQz" role="1tU5fm">
-          <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
         </node>
       </node>
       <node concept="37vLTG" id="17FqOSBEnQ$" role="3clF46">
@@ -1284,7 +1284,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="7yN$Xh8otPI" role="2OqNvi">
-                                <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                 <node concept="3cpWs2" id="7yN$Xh8otPJ" role="37wK5m">
                                   <ref role="3cqZAo" node="7yN$Xh8otQM" resolve="funName" />
                                 </node>
@@ -1412,7 +1412,7 @@
                       </node>
                       <node concept="2ShNRf" id="5uqRFp94sik" role="37wK5m">
                         <node concept="1pGfFk" id="5uqRFp94sil" role="2ShVmc">
-                          <ref role="37wK5l" to="fw3h:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+                          <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                         </node>
                       </node>
                     </node>
@@ -1445,7 +1445,7 @@
       <node concept="37vLTG" id="7yN$Xh8otQI" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="7yN$Xh8otQJ" role="1tU5fm">
-          <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
         </node>
       </node>
       <node concept="37vLTG" id="7yN$Xh8otQK" role="3clF46">
@@ -1545,7 +1545,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="4QaxHToa8Qm" role="2OqNvi">
-                                <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                 <node concept="3cpWs2" id="4QaxHToa8Qn" role="37wK5m">
                                   <ref role="3cqZAo" node="4QaxHToa8Ri" resolve="funName" />
                                 </node>
@@ -1726,7 +1726,7 @@
                       </node>
                       <node concept="2ShNRf" id="4QaxHToa8R5" role="37wK5m">
                         <node concept="1pGfFk" id="4QaxHToa8R6" role="2ShVmc">
-                          <ref role="37wK5l" to="fw3h:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+                          <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                         </node>
                       </node>
                     </node>
@@ -1759,7 +1759,7 @@
       <node concept="37vLTG" id="4QaxHToa8Re" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="4QaxHToa8Rf" role="1tU5fm">
-          <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
         </node>
       </node>
       <node concept="37vLTG" id="4QaxHToa8Rg" role="3clF46">

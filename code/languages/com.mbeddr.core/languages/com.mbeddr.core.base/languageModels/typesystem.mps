@@ -5,18 +5,18 @@
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="ua2a" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.typesystem.inference(MPS.Core/jetbrains.mps.typesystem.inference@java_stub)" />
+    <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -445,8 +445,8 @@
                 <node concept="1Wc70l" id="1TNmgng1yv8" role="3clFbw">
                   <node concept="3fqX7Q" id="7uYRIghZpWK" role="3uHU7B">
                     <node concept="2YIFZM" id="7uYRIghZpWJ" role="3fr31v">
-                      <ref role="1Pybhc" to="e2lb:~Character" resolve="Character" />
-                      <ref role="37wK5l" to="e2lb:~Character.isLowerCase(char):boolean" resolve="isLowerCase" />
+                      <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
+                      <ref role="37wK5l" to="wyt6:~Character.isLowerCase(char):boolean" resolve="isLowerCase" />
                       <node concept="2OqwBi" id="7uYRIghZpWC" role="37wK5m">
                         <node concept="2OqwBi" id="7uYRIghZpWz" role="2Oq$k0">
                           <node concept="1YBJjd" id="7uYRIghZpWy" role="2Oq$k0">
@@ -457,7 +457,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="7uYRIghZpWG" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.charAt(int):char" resolve="charAt" />
+                          <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
                           <node concept="3cmrfG" id="7uYRIghZpWH" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
@@ -479,7 +479,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="1TNmgng1yvf" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.charAt(int):char" resolve="charAt" />
+                        <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
                         <node concept="3cmrfG" id="1TNmgng1yvg" role="37wK5m">
                           <property role="3cmrfH" value="0" />
                         </node>
@@ -557,7 +557,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="7uYRIghZq8H" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~String.substring(int):java.lang.String" resolve="substring" />
+                      <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
                       <node concept="3cmrfG" id="7uYRIghZq8I" role="37wK5m">
                         <property role="3cmrfH" value="1" />
                       </node>
@@ -574,7 +574,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="7uYRIghZpXw" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.substring(int,int):java.lang.String" resolve="substring" />
+                        <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
                         <node concept="3cmrfG" id="7uYRIghZpXx" role="37wK5m">
                           <property role="3cmrfH" value="0" />
                         </node>
@@ -584,7 +584,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="7uYRIghZq8r" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                      <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
                     </node>
                   </node>
                 </node>
@@ -625,7 +625,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="7uYRIghZq8Z" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~String.substring(int):java.lang.String" resolve="substring" />
+                      <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
                       <node concept="3cmrfG" id="7uYRIghZq90" role="37wK5m">
                         <property role="3cmrfH" value="1" />
                       </node>
@@ -642,7 +642,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="7uYRIghZq96" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.substring(int,int):java.lang.String" resolve="substring" />
+                        <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
                         <node concept="3cmrfG" id="7uYRIghZq97" role="37wK5m">
                           <property role="3cmrfH" value="0" />
                         </node>
@@ -652,7 +652,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="7uYRIghZq99" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                      <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
                     </node>
                   </node>
                 </node>
@@ -684,7 +684,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="7uYRIghZq9S" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                    <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="7uYRIghZq9n" role="37vLTJ">
@@ -751,8 +751,8 @@
                 <node concept="1Wc70l" id="1TNmgng1yvx" role="3clFbw">
                   <node concept="3fqX7Q" id="1TNmgng1yvy" role="3uHU7B">
                     <node concept="2YIFZM" id="1TNmgng1yvz" role="3fr31v">
-                      <ref role="37wK5l" to="e2lb:~Character.isLowerCase(char):boolean" resolve="isLowerCase" />
-                      <ref role="1Pybhc" to="e2lb:~Character" resolve="Character" />
+                      <ref role="37wK5l" to="wyt6:~Character.isLowerCase(char):boolean" resolve="isLowerCase" />
+                      <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
                       <node concept="2OqwBi" id="1TNmgng1yv$" role="37wK5m">
                         <node concept="2OqwBi" id="1TNmgng1yv_" role="2Oq$k0">
                           <node concept="1YBJjd" id="1TNmgng1yvS" role="2Oq$k0">
@@ -763,7 +763,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="1TNmgng1yvC" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.charAt(int):char" resolve="charAt" />
+                          <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
                           <node concept="3cmrfG" id="1TNmgng1yvD" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
@@ -785,7 +785,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="1TNmgng1yvK" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.charAt(int):char" resolve="charAt" />
+                        <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
                         <node concept="3cmrfG" id="1TNmgng1yvL" role="37wK5m">
                           <property role="3cmrfH" value="0" />
                         </node>
@@ -1288,7 +1288,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="7ii2FhSPkbQ" role="2OqNvi">
-                              <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                               <node concept="2OqwBi" id="7ii2FhSPkbR" role="37wK5m">
                                 <node concept="1YBJjd" id="7ii2FhSPkbS" role="2Oq$k0">
                                   <ref role="1YBMHb" node="7ii2FhSOKRZ" resolve="cnc" />
@@ -1494,7 +1494,7 @@
                           <ref role="1YBMHb" node="5lKnBeAusjM" resolve="afp" />
                         </node>
                         <node concept="2qgKlT" id="5lKnBeAW6Ab" role="2OqNvi">
-                          <ref role="37wK5l" to="hwgx:5lKnBeAIfOh" resolve="absoluteBasePath" />
+                          <ref role="37wK5l" to="hwgx:5lKnBeAIfOh" resolve="getPrefix" />
                         </node>
                       </node>
                     </node>
@@ -1537,7 +1537,7 @@
                             <ref role="1YBMHb" node="5lKnBeAusjM" resolve="afp" />
                           </node>
                           <node concept="2qgKlT" id="5lKnBeAuxmb" role="2OqNvi">
-                            <ref role="37wK5l" to="hwgx:5lKnBeAutg0" resolve="getErrorMessge" />
+                            <ref role="37wK5l" to="hwgx:5lKnBeAutg0" resolve="getErrorMessage" />
                           </node>
                         </node>
                         <node concept="1YBJjd" id="5lKnBeAuxog" role="2OEOjV">
@@ -1567,11 +1567,11 @@
                               <ref role="1YBMHb" node="5lKnBeAusjM" resolve="afp" />
                             </node>
                             <node concept="2qgKlT" id="3PuSfTTlg5_" role="2OqNvi">
-                              <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="makeAbsolute" />
+                              <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
                             </node>
                           </node>
                           <node concept="liA8E" id="3PuSfTTlh15" role="2OqNvi">
-                            <ref role="37wK5l" to="e2lb:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                            <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
                             <node concept="Xl_RD" id="3PuSfTTlh2i" role="37wK5m">
                               <property role="Xl_RC" value="\\" />
                             </node>
@@ -1604,7 +1604,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="5lKnBeB036O" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                      <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
                       <node concept="Xl_RD" id="5lKnBeB03go" role="37wK5m">
                         <property role="Xl_RC" value="/" />
                       </node>
@@ -1682,11 +1682,11 @@
           <node concept="3cpWsn" id="6sCGfm8seWT" role="3cpWs9">
             <property role="TrG5h" value="instance" />
             <node concept="3uibUv" id="6sCGfm8seWU" role="1tU5fm">
-              <ref role="3uigEE" to="ua2a:~TypeContextManager" resolve="TypeContextManager" />
+              <ref role="3uigEE" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
             </node>
             <node concept="2YIFZM" id="6sCGfm8seWV" role="33vP2m">
-              <ref role="37wK5l" to="ua2a:~TypeContextManager.getInstance():jetbrains.mps.typesystem.inference.TypeContextManager" resolve="getInstance" />
-              <ref role="1Pybhc" to="ua2a:~TypeContextManager" resolve="TypeContextManager" />
+              <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance():jetbrains.mps.typesystem.inference.TypeContextManager" resolve="getInstance" />
+              <ref role="1Pybhc" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
             </node>
           </node>
         </node>
@@ -1694,11 +1694,11 @@
           <node concept="3cpWsn" id="6sCGfm8seWX" role="3cpWs9">
             <property role="TrG5h" value="owner" />
             <node concept="3uibUv" id="6sCGfm8seWY" role="1tU5fm">
-              <ref role="3uigEE" to="ua2a:~DefaultTypecheckingContextOwner" resolve="DefaultTypecheckingContextOwner" />
+              <ref role="3uigEE" to="u78q:~DefaultTypecheckingContextOwner" resolve="DefaultTypecheckingContextOwner" />
             </node>
             <node concept="2ShNRf" id="6sCGfm8seWZ" role="33vP2m">
               <node concept="1pGfFk" id="6sCGfm8seX0" role="2ShVmc">
-                <ref role="37wK5l" to="ua2a:~DefaultTypecheckingContextOwner.&lt;init&gt;()" resolve="DefaultTypecheckingContextOwner" />
+                <ref role="37wK5l" to="u78q:~DefaultTypecheckingContextOwner.&lt;init&gt;()" resolve="DefaultTypecheckingContextOwner" />
               </node>
             </node>
           </node>
@@ -1711,7 +1711,7 @@
                   <ref role="3cqZAo" node="6sCGfm8seWT" resolve="instance" />
                 </node>
                 <node concept="liA8E" id="6sCGfm8seX4" role="2OqNvi">
-                  <ref role="37wK5l" to="ua2a:~TypeContextManager.runTypeCheckingAction(jetbrains.mps.typesystem.inference.ITypeContextOwner,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.ITypechecking$Action):void" resolve="runTypeCheckingAction" />
+                  <ref role="37wK5l" to="u78q:~TypeContextManager.runTypeCheckingAction(jetbrains.mps.typesystem.inference.ITypeContextOwner,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.ITypechecking$Action):void" resolve="runTypeCheckingAction" />
                   <node concept="37vLTw" id="6sCGfm8seX5" role="37wK5m">
                     <ref role="3cqZAo" node="6sCGfm8seWX" resolve="owner" />
                   </node>
@@ -1722,8 +1722,8 @@
                     <node concept="YeOm9" id="6sCGfm8seX8" role="2ShVmc">
                       <node concept="1Y3b0j" id="6sCGfm8seX9" role="YeSDq">
                         <property role="2bfB8j" value="true" />
-                        <ref role="1Y3XeK" to="ua2a:~ITypechecking$Action" resolve="ITypechecking.Action" />
-                        <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+                        <ref role="1Y3XeK" to="u78q:~ITypechecking$Action" resolve="ITypechecking.Action" />
+                        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                         <node concept="3Tm1VV" id="6sCGfm8seXa" role="1B3o_S" />
                         <node concept="3clFb_" id="6sCGfm8seXb" role="jymVt">
                           <property role="1EzhhJ" value="false" />
@@ -1735,7 +1735,7 @@
                           <node concept="37vLTG" id="6sCGfm8seXe" role="3clF46">
                             <property role="TrG5h" value="ctx" />
                             <node concept="3uibUv" id="6sCGfm8seXf" role="1tU5fm">
-                              <ref role="3uigEE" to="ua2a:~TypeCheckingContext" resolve="TypeCheckingContext" />
+                              <ref role="3uigEE" to="u78q:~TypeCheckingContext" resolve="TypeCheckingContext" />
                             </node>
                           </node>
                           <node concept="3clFbS" id="6sCGfm8seXg" role="3clF47">
@@ -1745,7 +1745,7 @@
                                   <ref role="3cqZAo" node="6sCGfm8seXe" resolve="ctx" />
                                 </node>
                                 <node concept="liA8E" id="6sCGfm8seXk" role="2OqNvi">
-                                  <ref role="37wK5l" to="ua2a:~TypeCheckingContext.checkRoot():void" resolve="checkRoot" />
+                                  <ref role="37wK5l" to="u78q:~TypeCheckingContext.checkRoot():void" resolve="checkRoot" />
                                 </node>
                               </node>
                             </node>

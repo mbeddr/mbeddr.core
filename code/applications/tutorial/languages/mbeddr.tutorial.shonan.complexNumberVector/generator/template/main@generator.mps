@@ -31,9 +31,9 @@
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="k70c" ref="r:122f5d34-6e32-4486-bf8d-4ad324aa3b1d(mbeddr.tutorial.shonan.complexNumberVector.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="9w0q" ref="r:53b3818c-04f2-432f-b16a-77fd1bc76004(mbeddr.tutorial.shonan.complexNumberVector.rt)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="c1zq" ref="r:a67b2d4b-eeac-43d0-8303-b0828f1b7a0f(mbeddr.tutorial.shonan.complexNumberVector.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -274,7 +274,7 @@
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
@@ -1675,7 +1675,9 @@
             <node concept="2OqwBi" id="3yoEvFptGYt" role="33vP2m">
               <node concept="1Q6Npb" id="3yoEvFpBGMP" role="2Oq$k0" />
               <node concept="2SmgA7" id="3yoEvFptGYv" role="2OqNvi">
-                <ref role="2SmgA8" to="d47x:7wlBVIeFwW3" resolve="ComplexType" />
+                <node concept="chp4Y" id="7E1iuqfWbKl" role="1dBWTz">
+                  <ref role="cht4Q" to="d47x:7wlBVIeFwW3" resolve="ComplexType" />
+                </node>
               </node>
             </node>
           </node>
@@ -1906,7 +1908,9 @@
                   <node concept="2OqwBi" id="3yoEvFptH08" role="2Oq$k0">
                     <node concept="1Q6Npb" id="3yoEvFpBHk_" role="2Oq$k0" />
                     <node concept="2SmgA7" id="3yoEvFptH0a" role="2OqNvi">
-                      <ref role="2SmgA8" to="vj37:4LP87XufKR$" resolve="CrossProductExpression" />
+                      <node concept="chp4Y" id="7E1iuqfWbKh" role="1dBWTz">
+                        <ref role="cht4Q" to="vj37:4LP87XufKR$" resolve="CrossProductExpression" />
+                      </node>
                     </node>
                   </node>
                   <node concept="3zZkjj" id="3yoEvFptH0b" role="2OqNvi">
@@ -2052,7 +2056,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="3yoEvFpBext" role="2OqNvi">
-                              <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                               <node concept="Xl_RD" id="3yoEvFpBexu" role="37wK5m">
                                 <property role="Xl_RC" value="crossProduct" />
                               </node>
@@ -2082,7 +2086,9 @@
                   <node concept="2OqwBi" id="3yoEvFptH0V" role="2Oq$k0">
                     <node concept="1Q6Npb" id="3yoEvFpBHr7" role="2Oq$k0" />
                     <node concept="2SmgA7" id="3yoEvFptH0X" role="2OqNvi">
-                      <ref role="2SmgA8" to="vj37:4LP87XufKR$" resolve="CrossProductExpression" />
+                      <node concept="chp4Y" id="7E1iuqfWbKj" role="1dBWTz">
+                        <ref role="cht4Q" to="vj37:4LP87XufKR$" resolve="CrossProductExpression" />
+                      </node>
                     </node>
                   </node>
                   <node concept="3zZkjj" id="3yoEvFptH0Y" role="2OqNvi">

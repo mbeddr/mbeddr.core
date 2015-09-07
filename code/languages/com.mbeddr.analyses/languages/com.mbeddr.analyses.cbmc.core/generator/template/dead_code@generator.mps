@@ -28,7 +28,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -162,7 +162,7 @@
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -234,7 +234,9 @@
             <node concept="2OqwBi" id="3AX70SQiXSp" role="33vP2m">
               <node concept="1Q6Npb" id="3AX70SQiXSq" role="2Oq$k0" />
               <node concept="2SmgA7" id="3AX70SQiXSr" role="2OqNvi">
-                <ref role="2SmgA8" to="hj5x:3AX70SQiKF$" resolve="DeadCodeAnalysis" />
+                <node concept="chp4Y" id="3oh9vETT$yM" role="1dBWTz">
+                  <ref role="cht4Q" to="hj5x:3AX70SQiKF$" resolve="DeadCodeAnalysis" />
+                </node>
               </node>
             </node>
           </node>

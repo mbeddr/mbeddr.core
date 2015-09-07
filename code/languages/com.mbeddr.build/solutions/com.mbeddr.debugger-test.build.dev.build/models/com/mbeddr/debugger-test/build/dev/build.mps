@@ -11,6 +11,7 @@
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
     <import index="p6ld" ref="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
+    <import index="a9ss" ref="r:346f24ce-56b5-4622-adc7-4452196677a2(com.mbeddr.debugger.tests.dev.build.build)" />
   </imports>
   <registry>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
@@ -182,7 +183,6 @@
     </node>
     <node concept="1wNqPr" id="2B1T7v1mSeY" role="3989C9">
       <property role="1wNuhc" value="true" />
-      <property role="1wNuhe" value="true" />
       <property role="1wNuhh" value="4" />
       <property role="1wOHq$" value="true" />
       <property role="3Ej$Sc" value="true" />
@@ -1209,6 +1209,9 @@
       <node concept="m$_yC" id="62XMcUo6GOd" role="m$_yJ">
         <ref role="m$_y1" node="62XMcUo5GnA" resolve="com.mbeddr.debugger.testing" />
       </node>
+      <node concept="m$_yC" id="3llkta9Na0n" role="m$_yJ">
+        <ref role="m$_y1" to="a9ss:7eF9rfAuv4q" resolve="com.mbeddr.debugger.tests" />
+      </node>
       <node concept="3_J27D" id="62XMcUo6GtL" role="m_cZH">
         <node concept="3Mxwew" id="62XMcUo6GtM" role="3MwsjC">
           <property role="3MwjfP" value="debugger.testing.tests.runtime" />
@@ -1339,6 +1342,12 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="3llkta9N9TE" role="3bR37C">
+          <node concept="3bR9La" id="3llkta9N9TF" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="a9ss:7eF9rfAuv4P" resolve="test.debugger.core" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2sgV4H" id="62XMcUo5H0W" role="1l3spa">
@@ -1367,6 +1376,9 @@
       <node concept="398BVA" id="4hvHh3QXPN1" role="2JcizS">
         <ref role="398BVh" node="4hvHh3QXPGa" resolve="sl.all" />
       </node>
+    </node>
+    <node concept="2sgV4H" id="3llkta9N9SP" role="1l3spa">
+      <ref role="1l3spb" to="a9ss:7eF9rfAuv3z" resolve="com.mbeddr.debugger.tests.build" />
     </node>
     <node concept="398rNT" id="62XMcUo5H0_" role="1l3spd">
       <property role="TrG5h" value="mps.home" />

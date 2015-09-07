@@ -11,7 +11,7 @@
   </languages>
   <imports>
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
-    <import index="v2t1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/f:java_stub#b0f8641f-bd77-4421-8425-30d9088a82f7#org.apache.commons.lang3(org.apache.commons/org.apache.commons.lang3@java_stub)" />
+    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -72,8 +72,11 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -109,7 +112,9 @@
             <node concept="2OqwBi" id="bGV79Bo2IX" role="2Oq$k0">
               <node concept="1Q6Npb" id="bGV79Bo27r" role="2Oq$k0" />
               <node concept="2SmgA7" id="bGV79Bo2Qg" role="2OqNvi">
-                <ref role="2SmgA8" to="iuxj:1q3yNZeAEkj" resolve="XmlText" />
+                <node concept="chp4Y" id="6jvaevOyEnc" role="1dBWTz">
+                  <ref role="cht4Q" to="iuxj:1q3yNZeAEkj" resolve="XmlText" />
+                </node>
               </node>
             </node>
             <node concept="2es0OD" id="bGV79BoheG" role="2OqNvi">
@@ -118,8 +123,8 @@
                   <node concept="3clFbF" id="bGV79Bohg_" role="3cqZAp">
                     <node concept="37vLTI" id="bGV79BosRX" role="3clFbG">
                       <node concept="2YIFZM" id="bGV79BosXo" role="37vLTx">
-                        <ref role="37wK5l" to="v2t1:~StringEscapeUtils.escapeXml10(java.lang.String):java.lang.String" resolve="escapeXml10" />
-                        <ref role="1Pybhc" to="v2t1:~StringEscapeUtils" resolve="StringEscapeUtils" />
+                        <ref role="37wK5l" to="btm1:~StringEscapeUtils.escapeXml10(java.lang.String):java.lang.String" resolve="escapeXml10" />
+                        <ref role="1Pybhc" to="btm1:~StringEscapeUtils" resolve="StringEscapeUtils" />
                         <node concept="2OqwBi" id="bGV79Bot4z" role="37wK5m">
                           <node concept="37vLTw" id="bGV79Bot03" role="2Oq$k0">
                             <ref role="3cqZAo" node="bGV79BoheK" resolve="it" />
@@ -153,7 +158,9 @@
             <node concept="2OqwBi" id="bGV79Botqx" role="2Oq$k0">
               <node concept="1Q6Npb" id="bGV79Botpa" role="2Oq$k0" />
               <node concept="2SmgA7" id="bGV79Botuk" role="2OqNvi">
-                <ref role="2SmgA8" to="iuxj:5M4a$b5jfOv" resolve="XmlTextValue" />
+                <node concept="chp4Y" id="6jvaevOyEne" role="1dBWTz">
+                  <ref role="cht4Q" to="iuxj:5M4a$b5jfOv" resolve="XmlTextValue" />
+                </node>
               </node>
             </node>
             <node concept="2es0OD" id="bGV79BoyAR" role="2OqNvi">
@@ -162,8 +169,8 @@
                   <node concept="3clFbF" id="bGV79BoyCJ" role="3cqZAp">
                     <node concept="37vLTI" id="bGV79Bozq5" role="3clFbG">
                       <node concept="2YIFZM" id="bGV79Bozvk" role="37vLTx">
-                        <ref role="37wK5l" to="v2t1:~StringEscapeUtils.escapeXml10(java.lang.String):java.lang.String" resolve="escapeXml10" />
-                        <ref role="1Pybhc" to="v2t1:~StringEscapeUtils" resolve="StringEscapeUtils" />
+                        <ref role="37wK5l" to="btm1:~StringEscapeUtils.escapeXml10(java.lang.String):java.lang.String" resolve="escapeXml10" />
+                        <ref role="1Pybhc" to="btm1:~StringEscapeUtils" resolve="StringEscapeUtils" />
                         <node concept="2OqwBi" id="bGV79Boz_Y" role="37wK5m">
                           <node concept="37vLTw" id="bGV79BozxT" role="2Oq$k0">
                             <ref role="3cqZAo" node="bGV79BoyAV" resolve="it" />

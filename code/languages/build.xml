@@ -249,7 +249,7 @@
 <target name="build-languages" >
  <antcall target="build-sl-all" />
  <antcall target="build-platform" />
- <antcall target="build-mbeddr" />  
+ <antcall target="build-mbeddr" />
  <antcall target="build-debugger-testing" />
 </target>	 
 

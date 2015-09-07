@@ -20,14 +20,14 @@
     <import index="jtc1" ref="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
-    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
-    <import index="qo4z" ref="r:7f740f35-8f26-41d8-ba3a-416c95e19832(com.mbeddr.ext.serialization.cmp)" implicit="true" />
-    <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
-    <import index="9g8w" ref="r:5ed6e5dc-ec13-45f6-960b-a889d781d323(com.mbeddr.core.unittest.messages)" implicit="true" />
-    <import index="umka" ref="r:4c0bb7c8-5675-435b-af13-ad7fb3936b56(com.mbeddr.ext.serialization.behavior)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
+    <import index="9g8w" ref="r:5ed6e5dc-ec13-45f6-960b-a889d781d323(com.mbeddr.core.unittest.messages)" implicit="true" />
+    <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
+    <import index="qo4z" ref="r:7f740f35-8f26-41d8-ba3a-416c95e19832(com.mbeddr.ext.serialization.cmp)" implicit="true" />
+    <import index="umka" ref="r:4c0bb7c8-5675-435b-af13-ad7fb3936b56(com.mbeddr.ext.serialization.behavior)" implicit="true" />
+    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -292,7 +292,7 @@
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
@@ -3700,7 +3700,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="7op4RkOAwx9" role="2OqNvi">
-                                  <ref role="37wK5l" to="e2lb:~String.length():int" resolve="length" />
+                                  <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
                                 </node>
                               </node>
                             </node>
@@ -4693,7 +4693,9 @@
                 <node concept="2OqwBi" id="5usoWIKpMnd" role="2Oq$k0">
                   <node concept="1Q6Npb" id="1LleiTP$JOb" role="2Oq$k0" />
                   <node concept="2SmgA7" id="5usoWIKpMnf" role="2OqNvi">
-                    <ref role="2SmgA8" to="jtc1:1LleiTP$Yt_" resolve="ISerialConstruct" />
+                    <node concept="chp4Y" id="31zYnCC2Dgr" role="1dBWTz">
+                      <ref role="cht4Q" to="jtc1:1LleiTP$Yt_" resolve="ISerialConstruct" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3$u5V9" id="5usoWIKpMng" role="2OqNvi">
@@ -4866,7 +4868,9 @@
               <node concept="2OqwBi" id="7op4RkOGCl8" role="2Oq$k0">
                 <node concept="1Q6Npb" id="7op4RkOGCgH" role="2Oq$k0" />
                 <node concept="2SmgA7" id="7op4RkOGCsr" role="2OqNvi">
-                  <ref role="2SmgA8" to="jtc1:7op4RkOrNAj" resolve="SerialDotTarget" />
+                  <node concept="chp4Y" id="31zYnCC2Dgv" role="1dBWTz">
+                    <ref role="cht4Q" to="jtc1:7op4RkOrNAj" resolve="SerialDotTarget" />
+                  </node>
                 </node>
               </node>
               <node concept="3$u5V9" id="7op4RkOGHjw" role="2OqNvi">
@@ -4931,7 +4935,9 @@
             <node concept="2OqwBi" id="1LleiTPP$jP" role="2Oq$k0">
               <node concept="1Q6Npb" id="1LleiTPP$jo" role="2Oq$k0" />
               <node concept="2SmgA7" id="1LleiTPP$r8" role="2OqNvi">
-                <ref role="2SmgA8" to="jtc1:3XvCV0Kypk7" resolve="WriteTarget" />
+                <node concept="chp4Y" id="31zYnCC2Dgx" role="1dBWTz">
+                  <ref role="cht4Q" to="jtc1:3XvCV0Kypk7" resolve="WriteTarget" />
+                </node>
               </node>
             </node>
             <node concept="2es0OD" id="1LleiTPPGA5" role="2OqNvi">
@@ -4976,7 +4982,9 @@
             <node concept="2OqwBi" id="7op4RkOVyr2" role="2Oq$k0">
               <node concept="1Q6Npb" id="7op4RkOVyr3" role="2Oq$k0" />
               <node concept="2SmgA7" id="7op4RkOVyr4" role="2OqNvi">
-                <ref role="2SmgA8" to="jtc1:3XvCV0Kz_Le" resolve="ReadTarget" />
+                <node concept="chp4Y" id="31zYnCC2Dgz" role="1dBWTz">
+                  <ref role="cht4Q" to="jtc1:3XvCV0Kz_Le" resolve="ReadTarget" />
+                </node>
               </node>
             </node>
             <node concept="2es0OD" id="7op4RkOVyr5" role="2OqNvi">
@@ -5024,7 +5032,9 @@
                 <node concept="2OqwBi" id="1LleiTPTWW1" role="2Oq$k0">
                   <node concept="1Q6Npb" id="1LleiTPTWW2" role="2Oq$k0" />
                   <node concept="2SmgA7" id="1LleiTPTWW3" role="2OqNvi">
-                    <ref role="2SmgA8" to="jtc1:1LleiTPLVn3" resolve="WriteStringArray" />
+                    <node concept="chp4Y" id="31zYnCC2Dgt" role="1dBWTz">
+                      <ref role="cht4Q" to="jtc1:1LleiTPLVn3" resolve="WriteStringArray" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3$u5V9" id="1LleiTPUbjg" role="2OqNvi">

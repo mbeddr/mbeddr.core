@@ -2,10 +2,10 @@
 <model ref="r:a97b0256-d67b-46d6-8dd5-fd70d5b31e78(com.mbeddr.core.util.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -18,10 +18,10 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" />
-    <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
-    <import index="ff4b" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.progress(MPS.Core/jetbrains.mps.progress@java_stub)" />
-    <import index="88zw" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" />
-    <import index="631u" ref="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps(MPS.Platform/jetbrains.mps@java_stub)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="mk8z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.progress(MPS.Core/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="fyhk" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps(MPS.Platform/)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="n7pc" ref="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" />
@@ -1270,6 +1270,11 @@
         <node concept="3clFbF" id="4itX8XVQVA4" role="3cqZAp">
           <node concept="2OqwBi" id="4itX8XVR9AF" role="3clFbG">
             <node concept="2OqwBi" id="4itX8XVR3ZA" role="2Oq$k0">
+              <node concept="v3k3i" id="6jvaevO$0bO" role="2OqNvi">
+                <node concept="chp4Y" id="6jvaevO$0bP" role="v3oSu">
+                  <ref role="cht4Q" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
+                </node>
+              </node>
               <node concept="2OqwBi" id="4itX8XVR0iD" role="2Oq$k0">
                 <node concept="2OqwBi" id="4itX8XVQVJC" role="2Oq$k0">
                   <node concept="2Sf5sV" id="4itX8XVQVA3" role="2Oq$k0" />
@@ -1286,11 +1291,6 @@
                   <node concept="3TUQnm" id="4itX8XVR2rM" role="37wK5m">
                     <ref role="3TV0OU" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
                   </node>
-                </node>
-              </node>
-              <node concept="v3k3i" id="4biM00J7odJ" role="2OqNvi">
-                <node concept="chp4Y" id="4biM00J7odK" role="v3oSu">
-                  <ref role="cht4Q" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
                 </node>
               </node>
             </node>
@@ -1357,19 +1357,19 @@
             <property role="TrG5h" value="resRefs" />
             <node concept="2hMVRd" id="i1A3j4m" role="1tU5fm">
               <node concept="3uibUv" id="i1A3j4n" role="2hN53Y">
-                <ref role="3uigEE" to="ec5l:~SReference" resolve="SReference" />
+                <ref role="3uigEE" to="mhbf:~SReference" resolve="SReference" />
               </node>
             </node>
             <node concept="2OqwBi" id="2AZbPfNYNRT" role="33vP2m">
               <node concept="2YIFZM" id="2AZbPfNYNLw" role="2Oq$k0">
-                <ref role="1Pybhc" to="88zw:~FindUsagesFacade" resolve="FindUsagesFacade" />
-                <ref role="37wK5l" to="88zw:~FindUsagesFacade.getInstance():org.jetbrains.mps.openapi.module.FindUsagesFacade" resolve="getInstance" />
+                <ref role="1Pybhc" to="lui2:~FindUsagesFacade" resolve="FindUsagesFacade" />
+                <ref role="37wK5l" to="lui2:~FindUsagesFacade.getInstance():org.jetbrains.mps.openapi.module.FindUsagesFacade" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="2AZbPfNYO$O" role="2OqNvi">
-                <ref role="37wK5l" to="88zw:~FindUsagesFacade.findUsages(org.jetbrains.mps.openapi.module.SearchScope,java.util.Set,org.jetbrains.mps.openapi.util.ProgressMonitor):java.util.Set" resolve="findUsages" />
+                <ref role="37wK5l" to="lui2:~FindUsagesFacade.findUsages(org.jetbrains.mps.openapi.module.SearchScope,java.util.Set,org.jetbrains.mps.openapi.util.ProgressMonitor):java.util.Set" resolve="findUsages" />
                 <node concept="2ShNRf" id="1M41OHuLHxP" role="37wK5m">
                   <node concept="1pGfFk" id="1M41OHuMr0h" role="2ShVmc">
-                    <ref role="37wK5l" to="631u:~FilteredGlobalScope.&lt;init&gt;()" resolve="FilteredGlobalScope" />
+                    <ref role="37wK5l" to="fyhk:~FilteredGlobalScope.&lt;init&gt;()" resolve="FilteredGlobalScope" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="1M41OHuL2NQ" role="37wK5m">
@@ -1377,7 +1377,7 @@
                 </node>
                 <node concept="2ShNRf" id="2AZbPfNYPkY" role="37wK5m">
                   <node concept="1pGfFk" id="2AZbPfNYQ94" role="2ShVmc">
-                    <ref role="37wK5l" to="ff4b:~EmptyProgressMonitor.&lt;init&gt;()" resolve="EmptyProgressMonitor" />
+                    <ref role="37wK5l" to="mk8z:~EmptyProgressMonitor.&lt;init&gt;()" resolve="EmptyProgressMonitor" />
                   </node>
                 </node>
               </node>
@@ -1401,7 +1401,7 @@
                     <ref role="2Gs0qQ" node="1M41OHuL4m8" resolve="ref" />
                   </node>
                   <node concept="liA8E" id="2k491iBGlr_" role="2OqNvi">
-                    <ref role="37wK5l" to="ec5l:~SReference.getSourceNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSourceNode" />
+                    <ref role="37wK5l" to="mhbf:~SReference.getSourceNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSourceNode" />
                   </node>
                 </node>
               </node>
@@ -1619,6 +1619,11 @@
           <node concept="2OqwBi" id="1M41OHuN9xk" role="3clFbG">
             <node concept="2OqwBi" id="1M41OHuMSMR" role="2Oq$k0">
               <node concept="2OqwBi" id="1M41OHuMSMS" role="2Oq$k0">
+                <node concept="v3k3i" id="6jvaevO$0bQ" role="2OqNvi">
+                  <node concept="chp4Y" id="6jvaevO$0bR" role="v3oSu">
+                    <ref role="cht4Q" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
+                  </node>
+                </node>
                 <node concept="2OqwBi" id="1M41OHuMSMT" role="2Oq$k0">
                   <node concept="37vLTw" id="19NiPfv3mlx" role="2Oq$k0">
                     <ref role="3cqZAo" node="19NiPfv3mlr" resolve="vep" />
@@ -1628,11 +1633,6 @@
                     <node concept="3TUQnm" id="1M41OHuMSN0" role="37wK5m">
                       <ref role="3TV0OU" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
                     </node>
-                  </node>
-                </node>
-                <node concept="v3k3i" id="4biM00J7odL" role="2OqNvi">
-                  <node concept="chp4Y" id="4biM00J7odM" role="v3oSu">
-                    <ref role="cht4Q" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
                   </node>
                 </node>
               </node>
@@ -2207,6 +2207,11 @@
           <node concept="2OqwBi" id="1YMKWAVyWgt" role="3clFbG">
             <node concept="2OqwBi" id="1YMKWAVyWgu" role="2Oq$k0">
               <node concept="2OqwBi" id="1YMKWAVyWgv" role="2Oq$k0">
+                <node concept="v3k3i" id="6jvaevO$0bS" role="2OqNvi">
+                  <node concept="chp4Y" id="6jvaevO$0bT" role="v3oSu">
+                    <ref role="cht4Q" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
+                  </node>
+                </node>
                 <node concept="2OqwBi" id="1YMKWAVyWgw" role="2Oq$k0">
                   <node concept="2OqwBi" id="1YMKWAVyWgx" role="2Oq$k0">
                     <node concept="2Sf5sV" id="1YMKWAVyWgy" role="2Oq$k0" />
@@ -2223,11 +2228,6 @@
                     <node concept="3TUQnm" id="1YMKWAVyWgB" role="37wK5m">
                       <ref role="3TV0OU" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
                     </node>
-                  </node>
-                </node>
-                <node concept="v3k3i" id="4biM00J7odN" role="2OqNvi">
-                  <node concept="chp4Y" id="4biM00J7odO" role="v3oSu">
-                    <ref role="cht4Q" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
                   </node>
                 </node>
               </node>

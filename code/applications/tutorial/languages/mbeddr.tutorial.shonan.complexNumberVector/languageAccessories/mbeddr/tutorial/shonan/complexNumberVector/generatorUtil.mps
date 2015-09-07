@@ -11,7 +11,7 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="k70c" ref="r:122f5d34-6e32-4486-bf8d-4ad324aa3b1d(mbeddr.tutorial.shonan.complexNumberVector.structure)" implicit="true" />
     <import index="vj37" ref="r:4c272460-99ea-4d39-8c9a-f1bc63f0c386(mbeddr.tutorial.vectors.structure)" implicit="true" />
     <import index="af99" ref="r:16538061-0464-406e-bfe4-35690468b8db(mbeddr.tutorial.complex.behavior)" implicit="true" />
@@ -134,7 +134,7 @@
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
@@ -214,7 +214,9 @@
                 <ref role="3cqZAo" node="3yoEvFpu4rR" resolve="model" />
               </node>
               <node concept="2SmgA7" id="3yoEvFptGYv" role="2OqNvi">
-                <ref role="2SmgA8" to="d47x:7wlBVIeFwW3" resolve="ComplexType" />
+                <node concept="chp4Y" id="7E1iuqfWbK9" role="1dBWTz">
+                  <ref role="cht4Q" to="d47x:7wlBVIeFwW3" resolve="ComplexType" />
+                </node>
               </node>
             </node>
           </node>
@@ -425,7 +427,9 @@
                       <ref role="3cqZAo" node="3yoEvFpu4rR" resolve="model" />
                     </node>
                     <node concept="2SmgA7" id="3yoEvFptH0a" role="2OqNvi">
-                      <ref role="2SmgA8" to="vj37:4LP87XufKR$" resolve="CrossProductExpression" />
+                      <node concept="chp4Y" id="7E1iuqfWbK5" role="1dBWTz">
+                        <ref role="cht4Q" to="vj37:4LP87XufKR$" resolve="CrossProductExpression" />
+                      </node>
                     </node>
                   </node>
                   <node concept="3zZkjj" id="3yoEvFptH0b" role="2OqNvi">
@@ -571,7 +575,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="3yoEvFpBext" role="2OqNvi">
-                              <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                               <node concept="Xl_RD" id="3yoEvFpBexu" role="37wK5m">
                                 <property role="Xl_RC" value="crossProduct" />
                               </node>
@@ -603,7 +607,9 @@
                       <ref role="3cqZAo" node="3yoEvFpu4rR" resolve="model" />
                     </node>
                     <node concept="2SmgA7" id="3yoEvFptH0X" role="2OqNvi">
-                      <ref role="2SmgA8" to="vj37:4LP87XufKR$" resolve="CrossProductExpression" />
+                      <node concept="chp4Y" id="7E1iuqfWbK7" role="1dBWTz">
+                        <ref role="cht4Q" to="vj37:4LP87XufKR$" resolve="CrossProductExpression" />
+                      </node>
                     </node>
                   </node>
                   <node concept="3zZkjj" id="3yoEvFptH0Y" role="2OqNvi">

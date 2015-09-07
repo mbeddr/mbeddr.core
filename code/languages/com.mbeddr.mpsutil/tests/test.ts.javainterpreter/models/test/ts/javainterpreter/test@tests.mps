@@ -7,13 +7,22 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="2a99790c-a7e4-470f-9488-b37851ebf826" name="com.mbeddr.mpsutil.javainterpreter.test" version="-1" />
   </languages>
-  <imports />
+  <imports>
+    <import index="tpeh" ref="r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)" />
+  </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1215511704609" name="jetbrains.mps.lang.test.structure.NodeWarningCheckOperation" flags="ng" index="29bkU">
+        <child id="8489045168660938635" name="warningRef" index="3lydCh" />
+      </concept>
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
       <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
+      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
+        <reference id="8333855927540250453" name="declaration" index="39XzEq" />
+      </concept>
+      <concept id="4531408400486526326" name="jetbrains.mps.lang.test.structure.WarningStatementReference" flags="ng" index="2PQEqo" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -387,6 +396,13 @@
                   </node>
                   <node concept="3clFbT" id="41Fzz2aASI2" role="3K4Cdx">
                     <property role="3clFbU" value="true" />
+                    <node concept="7CXmI" id="5eqDFGU$9cv" role="lGtFl">
+                      <node concept="29bkU" id="5eqDFGU$9cw" role="7EUXB">
+                        <node concept="2PQEqo" id="5eqDFGU$asw" role="3lydCh">
+                          <ref role="39XzEq" to="tpeh:2uD2ny$N6xA" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                   <node concept="3QrIoU" id="41Fzz2aAU$b" role="lGtFl">
                     <node concept="3cmrfG" id="41Fzz2aAU_f" role="3QrI88">

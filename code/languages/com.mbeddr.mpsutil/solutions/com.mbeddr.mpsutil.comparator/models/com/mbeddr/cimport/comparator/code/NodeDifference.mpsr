@@ -2,8 +2,8 @@
 <model ref="r:ec874b45-e888-42e6-995a-a298cefdff55(com.mbeddr.cimport.comparator.code)" content="root">
   <persistence version="9" />
   <imports>
-    <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" implicit="true" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -300,7 +300,7 @@
               <node concept="2yIwOk" id="1rBPbD3Ii6G" role="2OqNvi" />
             </node>
             <node concept="liA8E" id="1rBPbD3IieE" role="2OqNvi">
-              <ref role="37wK5l" to="t3eg:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+              <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
             </node>
           </node>
         </node>
@@ -350,7 +350,7 @@
               <node concept="2yIwOk" id="1rBPbD3IiqH" role="2OqNvi" />
             </node>
             <node concept="liA8E" id="1rBPbD3IiyF" role="2OqNvi">
-              <ref role="37wK5l" to="t3eg:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+              <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
             </node>
           </node>
         </node>
@@ -377,14 +377,14 @@
             <node concept="YS8fn" id="DYlgnA$vt_" role="3cqZAp">
               <node concept="2ShNRf" id="DYlgnA$vtA" role="YScLw">
                 <node concept="1pGfFk" id="DYlgnA$vtB" role="2ShVmc">
-                  <ref role="37wK5l" to="e2lb:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
                   <node concept="3cpWs3" id="DYlgnA$vtC" role="37wK5m">
                     <node concept="2OqwBi" id="DYlgnA$vtD" role="3uHU7w">
                       <node concept="3VsKOn" id="DYlgnA$vtE" role="2Oq$k0">
                         <ref role="3VsUkX" node="DYlgnA$AQM" resolve="ChildDifference" />
                       </node>
                       <node concept="liA8E" id="DYlgnA$vtF" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
+                        <ref role="37wK5l" to="wyt6:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="DYlgnA$vtG" role="3uHU7B">
@@ -429,14 +429,14 @@
             <node concept="YS8fn" id="DYlgnA$vtW" role="3cqZAp">
               <node concept="2ShNRf" id="DYlgnA$vtX" role="YScLw">
                 <node concept="1pGfFk" id="DYlgnA$vtY" role="2ShVmc">
-                  <ref role="37wK5l" to="e2lb:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
                   <node concept="3cpWs3" id="DYlgnA$vtZ" role="37wK5m">
                     <node concept="2OqwBi" id="DYlgnA$vu0" role="3uHU7w">
                       <node concept="3VsKOn" id="DYlgnA$vu1" role="2Oq$k0">
                         <ref role="3VsUkX" node="DYlgnAAHoa" resolve="PropertyDifference" />
                       </node>
                       <node concept="liA8E" id="DYlgnA$vu2" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
+                        <ref role="37wK5l" to="wyt6:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="DYlgnA$vu3" role="3uHU7B">
@@ -481,14 +481,14 @@
             <node concept="YS8fn" id="DYlgnA$vuj" role="3cqZAp">
               <node concept="2ShNRf" id="DYlgnA$vuk" role="YScLw">
                 <node concept="1pGfFk" id="DYlgnA$vul" role="2ShVmc">
-                  <ref role="37wK5l" to="e2lb:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
                   <node concept="3cpWs3" id="DYlgnA$vum" role="37wK5m">
                     <node concept="2OqwBi" id="DYlgnA$vun" role="3uHU7w">
                       <node concept="3VsKOn" id="DYlgnA$vuo" role="2Oq$k0">
                         <ref role="3VsUkX" node="DYlgnAAPA1" resolve="ReferenceDifference" />
                       </node>
                       <node concept="liA8E" id="DYlgnA$vup" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
+                        <ref role="37wK5l" to="wyt6:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="DYlgnA$vuq" role="3uHU7B">

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -64,11 +64,6 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="17217465924316850" name="com.mbeddr.mpsutil.blutil.structure.FilterOperation" flags="ng" index="2Gpcm3">
-        <reference id="17217465924316851" name="concept" index="2Gpcm2" />
-      </concept>
-    </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="1148934636683" name="jetbrains.mps.lang.constraints.structure.ConceptParameter_ReferentSearchScope_enclosingNode" flags="nn" index="21POm0" />
       <concept id="1202989531578" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="nKS2y" />
@@ -106,6 +101,9 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -186,8 +184,10 @@
                   <ref role="37wK5l" to="eup9:5fn4FV$aPPc" resolve="ports" />
                 </node>
               </node>
-              <node concept="2Gpcm3" id="XaN6GnhME" role="2OqNvi">
-                <ref role="2Gpcm2" to="v7ag:3TmmsQkD8YC" resolve="ProvidedPort" />
+              <node concept="v3k3i" id="6jvaevO$GPd" role="2OqNvi">
+                <node concept="chp4Y" id="6jvaevO$GPe" role="v3oSu">
+                  <ref role="cht4Q" to="v7ag:3TmmsQkD8YC" resolve="ProvidedPort" />
+                </node>
               </node>
             </node>
           </node>
@@ -385,8 +385,10 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2Gpcm3" id="XaN6GnhMg" role="2OqNvi">
-                  <ref role="2Gpcm2" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+                <node concept="v3k3i" id="6jvaevO$GPf" role="2OqNvi">
+                  <node concept="chp4Y" id="6jvaevO$GPg" role="v3oSu">
+                    <ref role="cht4Q" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+                  </node>
                 </node>
               </node>
               <node concept="3goQfb" id="20McjG52RSa" role="2OqNvi">

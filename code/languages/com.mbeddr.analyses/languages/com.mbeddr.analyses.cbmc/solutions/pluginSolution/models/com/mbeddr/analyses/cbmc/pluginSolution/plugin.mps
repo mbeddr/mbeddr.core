@@ -4,28 +4,28 @@
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
   </languages>
   <imports>
-    <import index="5xh9" ref="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.actions(MPS.Platform/jetbrains.mps.ide.actions@java_stub)" />
+    <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="tzyt" ref="r:b35b0dd8-a38e-4607-ba37-cc8f7410b705(com.mbeddr.analyses.cbmc.rt.run)" />
-    <import index="jwd7" ref="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.tools(MPS.Platform/jetbrains.mps.ide.tools@java_stub)" />
+    <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" />
     <import index="p8vh" ref="r:774ac595-6c08-4ec5-a945-c0e06119d39d(com.mbeddr.analyses.cbmc.rt.ui)" />
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
-    <import index="vsqj" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
-    <import index="b2mh" ref="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.project(MPS.IDEA/com.intellij.openapi.project@java_stub)" />
-    <import index="nx1" ref="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.actionSystem(MPS.IDEA/com.intellij.openapi.actionSystem@java_stub)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="ood5" ref="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="6ae5" ref="r:547f7db0-7ae9-4903-962d-d0cb86588a65(com.mbeddr.analyses.cbmc.rt.results_cacher)" />
     <import index="rbq9" ref="r:e9339685-9249-4681-a8f5-318d0236a4a8(com.mbeddr.analyses.cbmc.rt.counterexample.raw)" />
-    <import index="jrbx" ref="f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.project(MPS.Platform/jetbrains.mps.project@java_stub)" />
+    <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -385,7 +385,7 @@
       <property role="TrG5h" value="project" />
       <node concept="3Tm1VV" id="3My0e4qMqM8" role="1B3o_S" />
       <node concept="3uibUv" id="3My0e4qMqM9" role="1tU5fm">
-        <ref role="3uigEE" to="vsqj:~Project" resolve="Project" />
+        <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
       </node>
     </node>
     <node concept="2XrIbr" id="3Hq87cj$2XP" role="2XNbBy">
@@ -470,7 +470,7 @@
       <node concept="37vLTG" id="4_pSipqVBmB" role="3clF46">
         <property role="TrG5h" value="project" />
         <node concept="3uibUv" id="2AZbPfP6I7n" role="1tU5fm">
-          <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
+          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
         </node>
       </node>
     </node>
@@ -526,7 +526,7 @@
     <property role="2uzpH1" value="Verify analysis configuration" />
     <node concept="1DS2jV" id="5BkFC2yhAHn" role="1NuT2Z">
       <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="nx1:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="5BkFC2yhAHo" role="1oa70y" />
     </node>
     <node concept="2S4$dB" id="5BkFC2yhAHp" role="1NuT2Z">
@@ -539,12 +539,12 @@
     </node>
     <node concept="1DS2jV" id="5BkFC2yhAHv" role="1NuT2Z">
       <property role="TrG5h" value="model" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
       <node concept="1oajcY" id="5BkFC2yhAHw" role="1oa70y" />
     </node>
     <node concept="1DS2jV" id="5BkFC2yhAHx" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
       <node concept="1oajcY" id="5BkFC2yhAHy" role="1oa70y" />
     </node>
     <node concept="tnohg" id="5BkFC2yhAH_" role="tncku">
@@ -730,7 +730,7 @@
     <property role="2uzpH1" value="Verify analysis configuration" />
     <node concept="1DS2jV" id="6w9LZ1hC3Vm" role="1NuT2Z">
       <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="nx1:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="6w9LZ1hC3Vn" role="1oa70y" />
     </node>
     <node concept="2S4$dB" id="6w9LZ1hC3Vo" role="1NuT2Z">
@@ -743,12 +743,12 @@
     </node>
     <node concept="1DS2jV" id="6w9LZ1hC3Vu" role="1NuT2Z">
       <property role="TrG5h" value="model" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
       <node concept="1oajcY" id="6w9LZ1hC3Vv" role="1oa70y" />
     </node>
     <node concept="1DS2jV" id="6w9LZ1hC3Vw" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
       <node concept="1oajcY" id="6w9LZ1hC3Vx" role="1oa70y" />
     </node>
     <node concept="tnohg" id="6w9LZ1hC3V$" role="tncku">
@@ -911,7 +911,7 @@
     <property role="2uzpH1" value="Load Analysis Configuration Results" />
     <node concept="1DS2jV" id="EVDykUCb6r" role="1NuT2Z">
       <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="nx1:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="EVDykUCb6s" role="1oa70y" />
     </node>
     <node concept="2S4$dB" id="EVDykUCksa" role="1NuT2Z">
@@ -924,22 +924,22 @@
     </node>
     <node concept="1DS2jV" id="EVDykUCksf" role="1NuT2Z">
       <property role="TrG5h" value="module" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.CONTEXT_MODULE" resolve="CONTEXT_MODULE" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODULE" resolve="CONTEXT_MODULE" />
       <node concept="1oajcY" id="EVDykUCksg" role="1oa70y" />
     </node>
     <node concept="1DS2jV" id="EVDykUCksh" role="1NuT2Z">
       <property role="TrG5h" value="modelDescriptor" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
       <node concept="1oajcY" id="EVDykUCksi" role="1oa70y" />
     </node>
     <node concept="1DS2jV" id="EVDykUCksj" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.OPERATION_CONTEXT" resolve="OPERATION_CONTEXT" />
       <node concept="1oajcY" id="EVDykUCksk" role="1oa70y" />
     </node>
     <node concept="1DS2jV" id="EVDykUCksl" role="1NuT2Z">
       <property role="TrG5h" value="editor" />
-      <ref role="1DUlNI" to="nx1:~PlatformDataKeys.FILE_EDITOR" resolve="FILE_EDITOR" />
+      <ref role="1DUlNI" to="qkt:~PlatformDataKeys.FILE_EDITOR" resolve="FILE_EDITOR" />
       <node concept="1oajcY" id="EVDykUCksm" role="1oa70y" />
     </node>
     <node concept="tnohg" id="EVDykUC7Sj" role="tncku">
@@ -1188,7 +1188,7 @@
       <node concept="37vLTG" id="4arT0cn$zry" role="3clF46">
         <property role="TrG5h" value="proj" />
         <node concept="3uibUv" id="4arT0cn$zrz" role="1tU5fm">
-          <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
+          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
         </node>
       </node>
     </node>
@@ -1256,7 +1256,7 @@
       <node concept="37vLTG" id="7F8$WoVMWR7" role="3clF46">
         <property role="TrG5h" value="proj" />
         <node concept="3uibUv" id="7F8$WoVMX1o" role="1tU5fm">
-          <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
+          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
         </node>
       </node>
     </node>
@@ -1299,7 +1299,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="7F8$WoVVmUn" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="7F8$WoW2$45" role="jymVt" />
@@ -1317,7 +1317,7 @@
                   <ref role="3cqZAo" node="2UdJgvD7uBU" resolve="cbmcLiftedResultsTool" />
                 </node>
                 <node concept="liA8E" id="7F8$WoW2Ap2" role="2OqNvi">
-                  <ref role="37wK5l" to="jwd7:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
                   <node concept="3clFbT" id="7F8$WoW2Ar5" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -1331,7 +1331,7 @@
                 <ref role="3cqZAo" node="2UdJgvD7uBU" resolve="cbmcLiftedResultsTool" />
               </node>
               <node concept="liA8E" id="5TmSwGor88u" role="2OqNvi">
-                <ref role="37wK5l" to="jwd7:~BaseTool.toolIsOpened():boolean" resolve="toolIsOpened" />
+                <ref role="37wK5l" to="71xd:~BaseTool.toolIsOpened():boolean" resolve="toolIsOpened" />
               </node>
             </node>
           </node>
@@ -1344,7 +1344,7 @@
                   <ref role="3cqZAo" node="6izRX53r81V" resolve="rawResultTool" />
                 </node>
                 <node concept="liA8E" id="6izRX53r8Hx" role="2OqNvi">
-                  <ref role="37wK5l" to="jwd7:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
                   <node concept="3clFbT" id="6izRX53r8Hy" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -1359,7 +1359,7 @@
                   <ref role="3cqZAo" node="6izRX53r81V" resolve="rawResultTool" />
                 </node>
                 <node concept="liA8E" id="6izRX53r8HA" role="2OqNvi">
-                  <ref role="37wK5l" to="jwd7:~BaseTool.toolIsOpened():boolean" resolve="toolIsOpened" />
+                  <ref role="37wK5l" to="71xd:~BaseTool.toolIsOpened():boolean" resolve="toolIsOpened" />
                 </node>
               </node>
             </node>
@@ -1378,7 +1378,7 @@
       <node concept="3Tm1VV" id="7F8$WoW2$AQ" role="1B3o_S" />
       <node concept="3cqZAl" id="7F8$WoW2$AR" role="3clF45" />
       <node concept="2AHcQZ" id="7F8$WoW2$AU" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="2UdJgvCNHo4" role="jymVt" />
@@ -1408,7 +1408,7 @@
       <node concept="3Tm1VV" id="2UdJgvCNFea" role="1B3o_S" />
       <node concept="3cqZAl" id="2UdJgvCNFeb" role="3clF45" />
       <node concept="2AHcQZ" id="2UdJgvCNFec" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="2UdJgvD7wtL" role="jymVt" />
@@ -1448,7 +1448,7 @@
               <node concept="2OqwBi" id="4eArAUVty3v" role="2Oq$k0">
                 <node concept="1KvdUw" id="4eArAUVty3w" role="2Oq$k0" />
                 <node concept="liA8E" id="4eArAUVty3x" role="2OqNvi">
-                  <ref role="37wK5l" to="jrbx:~MPSProject.getProject():com.intellij.openapi.project.Project" resolve="getProject" />
+                  <ref role="37wK5l" to="z1c4:~MPSProject.getProject():com.intellij.openapi.project.Project" resolve="getProject" />
                 </node>
               </node>
               <node concept="LR4Ub" id="4eArAUVty3y" role="2OqNvi">
@@ -2640,7 +2640,7 @@
       <node concept="37vLTG" id="3Ymokd9FakG" role="3clF46">
         <property role="TrG5h" value="p" />
         <node concept="3uibUv" id="3Ymokd9FakF" role="1tU5fm">
-          <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
+          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
         </node>
       </node>
       <node concept="37vLTG" id="3Ymokd9FqyH" role="3clF46">
@@ -2680,7 +2680,7 @@
       <node concept="37vLTG" id="5C7jL_4BpLk" role="3clF46">
         <property role="TrG5h" value="p" />
         <node concept="3uibUv" id="5C7jL_4BpLl" role="1tU5fm">
-          <ref role="3uigEE" to="b2mh:~Project" resolve="Project" />
+          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
         </node>
       </node>
       <node concept="37vLTG" id="5C7jL_4Bp_o" role="3clF46">

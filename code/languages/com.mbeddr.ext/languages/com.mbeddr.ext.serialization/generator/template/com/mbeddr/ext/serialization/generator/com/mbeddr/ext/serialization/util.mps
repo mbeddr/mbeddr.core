@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,7 +14,7 @@
     <import index="2rho" ref="r:4e770e63-2ef5-4a0d-b2e8-c5c1a1565703(com.mbeddr.core.udt.behavior)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="umka" ref="r:4c0bb7c8-5675-435b-af13-ad7fb3936b56(com.mbeddr.ext.serialization.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -360,7 +360,7 @@
               <node concept="YS8fn" id="1LleiTPYfn$" role="3cqZAp">
                 <node concept="2ShNRf" id="1LleiTPYfog" role="YScLw">
                   <node concept="1pGfFk" id="1LleiTPYfum" role="2ShVmc">
-                    <ref role="37wK5l" to="e2lb:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
                     <node concept="3cpWs3" id="1LleiTPYfXI" role="37wK5m">
                       <node concept="37vLTw" id="1LleiTPYfZ$" role="3uHU7w">
                         <ref role="3cqZAo" node="1LleiTPYda0" resolve="msgType" />
@@ -1242,7 +1242,7 @@
               <node concept="YS8fn" id="7op4RkOV$6l" role="3cqZAp">
                 <node concept="2ShNRf" id="7op4RkOV$6m" role="YScLw">
                   <node concept="1pGfFk" id="7op4RkOV$6n" role="2ShVmc">
-                    <ref role="37wK5l" to="e2lb:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
                     <node concept="3cpWs3" id="7op4RkOV$6o" role="37wK5m">
                       <node concept="37vLTw" id="7op4RkOV$6p" role="3uHU7w">
                         <ref role="3cqZAo" node="7op4RkOV$5H" resolve="msgType" />

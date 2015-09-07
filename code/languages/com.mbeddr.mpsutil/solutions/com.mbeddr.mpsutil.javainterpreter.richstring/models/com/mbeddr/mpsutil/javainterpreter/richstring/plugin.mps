@@ -4,14 +4,14 @@
   <languages>
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="1" />
   </languages>
   <imports>
     <import index="esvi" ref="r:b71bf399-7fda-4c70-b141-468408de8cc3(com.mbeddr.mpsutil.richstring.plugin)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="7k10" ref="r:6de0fec9-28ce-4092-a00d-c37c6ae81d03(com.mbeddr.mpsutil.javainterpreter.plugin)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -280,7 +280,7 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="eval" />
       <node concept="3uibUv" id="M6L5HuGAGx" role="3clF45">
-        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
       </node>
       <node concept="3Tm1VV" id="M6L5HuGAGy" role="1B3o_S" />
       <node concept="37vLTG" id="M6L5HuGAG$" role="3clF46">
@@ -288,7 +288,7 @@
         <node concept="3Tqbb2" id="M6L5HuGAG_" role="1tU5fm" />
       </node>
       <node concept="3uibUv" id="M6L5HuGAGA" role="Sfmx6">
-        <ref role="3uigEE" to="e2lb:~UnsupportedOperationException" resolve="UnsupportedOperationException" />
+        <ref role="3uigEE" to="wyt6:~UnsupportedOperationException" resolve="UnsupportedOperationException" />
       </node>
       <node concept="3clFbS" id="M6L5HuGAGB" role="3clF47">
         <node concept="3clFbJ" id="M6L5HuGE3S" role="3cqZAp">
@@ -296,7 +296,7 @@
             <node concept="YS8fn" id="M6L5HuGEtj" role="3cqZAp">
               <node concept="2ShNRf" id="M6L5HuGEw_" role="YScLw">
                 <node concept="1pGfFk" id="M6L5HuGEFN" role="2ShVmc">
-                  <ref role="37wK5l" to="e2lb:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
+                  <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
                   <node concept="Xl_RD" id="M6L5HuGEJf" role="37wK5m">
                     <property role="Xl_RC" value="Only baseLanguage expressions can be evaluated" />
                   </node>
@@ -365,7 +365,7 @@
               <node concept="YS8fn" id="5rU7RIwxDci" role="3cqZAp">
                 <node concept="2ShNRf" id="5rU7RIwxDgS" role="YScLw">
                   <node concept="1pGfFk" id="5rU7RIwxTFa" role="2ShVmc">
-                    <ref role="37wK5l" to="e2lb:~UnsupportedOperationException.&lt;init&gt;(java.lang.Throwable)" resolve="UnsupportedOperationException" />
+                    <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.Throwable)" resolve="UnsupportedOperationException" />
                     <node concept="37vLTw" id="5rU7RIwxTJW" role="37wK5m">
                       <ref role="3cqZAo" node="5rU7RIwxCAr" resolve="e" />
                     </node>
@@ -376,7 +376,7 @@
             <node concept="3cpWsn" id="5rU7RIwxCAr" role="TDEfY">
               <property role="TrG5h" value="e" />
               <node concept="3uibUv" id="5rU7RIwxD4s" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~RuntimeException" resolve="RuntimeException" />
+                <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
               </node>
             </node>
           </node>

@@ -4,14 +4,14 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
   </languages>
   <imports>
     <import index="tpce" ref="c72da2b9-7cce-4447-8389-f407dc1158b7/r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure/jetbrains.mps.lang.structure.structure)" />
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" />
-    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -65,7 +65,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
@@ -274,14 +274,14 @@
           <node concept="3cpWsn" id="7sjDQ2_oZDW" role="3cpWs9">
             <property role="TrG5h" value="rnd" />
             <node concept="3uibUv" id="7sjDQ2_oZDX" role="1tU5fm">
-              <ref role="3uigEE" to="k7g3:~Random" resolve="Random" />
+              <ref role="3uigEE" to="33ny:~Random" resolve="Random" />
             </node>
             <node concept="2ShNRf" id="7sjDQ2_oZDY" role="33vP2m">
               <node concept="1pGfFk" id="7sjDQ2_oZDZ" role="2ShVmc">
-                <ref role="37wK5l" to="k7g3:~Random.&lt;init&gt;(long)" resolve="Random" />
+                <ref role="37wK5l" to="33ny:~Random.&lt;init&gt;(long)" resolve="Random" />
                 <node concept="2YIFZM" id="7sjDQ2_oZE0" role="37wK5m">
-                  <ref role="37wK5l" to="e2lb:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
-                  <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+                  <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                 </node>
               </node>
             </node>
@@ -298,7 +298,7 @@
                   <ref role="3cqZAo" node="7sjDQ2_oZDW" resolve="rnd" />
                 </node>
                 <node concept="liA8E" id="7sjDQ2_oZE7" role="2OqNvi">
-                  <ref role="37wK5l" to="k7g3:~Random.nextInt(int):int" resolve="nextInt" />
+                  <ref role="37wK5l" to="33ny:~Random.nextInt(int):int" resolve="nextInt" />
                   <node concept="3cpWsd" id="7sjDQ2_oZE8" role="37wK5m">
                     <node concept="3cmrfG" id="7sjDQ2_oZE9" role="3uHU7w">
                       <property role="3cmrfH" value="1" />

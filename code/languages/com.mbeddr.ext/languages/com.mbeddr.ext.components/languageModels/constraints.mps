@@ -4,7 +4,7 @@
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -16,7 +16,7 @@
     <import index="eup9" ref="r:ab391014-3e08-4918-9cc5-1c93e3a55c72(com.mbeddr.ext.components.behavior)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -105,11 +105,6 @@
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="17217465924316850" name="com.mbeddr.mpsutil.blutil.structure.FilterOperation" flags="ng" index="2Gpcm3">
-        <reference id="17217465924316851" name="concept" index="2Gpcm2" />
-      </concept>
-    </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="1148934636683" name="jetbrains.mps.lang.constraints.structure.ConceptParameter_ReferentSearchScope_enclosingNode" flags="nn" index="21POm0" />
       <concept id="1202989531578" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="nKS2y" />
@@ -160,6 +155,9 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -1559,8 +1557,10 @@
                   </node>
                 </node>
               </node>
-              <node concept="2Gpcm3" id="XaN6Gnc91" role="2OqNvi">
-                <ref role="2Gpcm2" to="v7ag:3TmmsQkC_PR" resolve="Interface" />
+              <node concept="v3k3i" id="6jvaevO$GQ7" role="2OqNvi">
+                <node concept="chp4Y" id="6jvaevO$GQ8" role="v3oSu">
+                  <ref role="cht4Q" to="v7ag:3TmmsQkC_PR" resolve="Interface" />
+                </node>
               </node>
             </node>
           </node>
@@ -1595,8 +1595,10 @@
                   </node>
                 </node>
               </node>
-              <node concept="2Gpcm3" id="XaN6Gnc7N" role="2OqNvi">
-                <ref role="2Gpcm2" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+              <node concept="v3k3i" id="6jvaevO$GQ9" role="2OqNvi">
+                <node concept="chp4Y" id="6jvaevO$GQa" role="v3oSu">
+                  <ref role="cht4Q" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+                </node>
               </node>
             </node>
           </node>
@@ -1929,8 +1931,10 @@
                   </node>
                 </node>
               </node>
-              <node concept="2Gpcm3" id="XaN6Gnc5p" role="2OqNvi">
-                <ref role="2Gpcm2" to="k146:2lgwE2U2X_H" resolve="MessageDefinitionTable" />
+              <node concept="v3k3i" id="6jvaevO$GQb" role="2OqNvi">
+                <node concept="chp4Y" id="6jvaevO$GQc" role="v3oSu">
+                  <ref role="cht4Q" to="k146:2lgwE2U2X_H" resolve="MessageDefinitionTable" />
+                </node>
               </node>
             </node>
           </node>
@@ -1982,8 +1986,10 @@
                   </node>
                 </node>
               </node>
-              <node concept="2Gpcm3" id="XaN6Gnc5N" role="2OqNvi">
-                <ref role="2Gpcm2" to="k146:2lgwE2U2X_H" resolve="MessageDefinitionTable" />
+              <node concept="v3k3i" id="6jvaevO$GQd" role="2OqNvi">
+                <node concept="chp4Y" id="6jvaevO$GQe" role="v3oSu">
+                  <ref role="cht4Q" to="k146:2lgwE2U2X_H" resolve="MessageDefinitionTable" />
+                </node>
               </node>
             </node>
           </node>
@@ -2115,8 +2121,10 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2Gpcm3" id="XaN6Gnc8d" role="2OqNvi">
-                  <ref role="2Gpcm2" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+                <node concept="v3k3i" id="6jvaevO$GQf" role="2OqNvi">
+                  <node concept="chp4Y" id="6jvaevO$GQg" role="v3oSu">
+                    <ref role="cht4Q" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+                  </node>
                 </node>
               </node>
               <node concept="3zZkjj" id="4v7hlN6uJLJ" role="2OqNvi">
@@ -2373,7 +2381,7 @@
                         <ref role="3cqZAo" node="JY3sAlfgl7" resolve="name" />
                       </node>
                       <node concept="liA8E" id="JY3sAlfglh" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.substring(int):java.lang.String" resolve="substring" />
+                        <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
                         <node concept="3cmrfG" id="JY3sAlfgli" role="37wK5m">
                           <property role="3cmrfH" value="1" />
                         </node>
@@ -2385,7 +2393,7 @@
                           <ref role="3cqZAo" node="JY3sAlfgl7" resolve="name" />
                         </node>
                         <node concept="liA8E" id="JY3sAlfglm" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.substring(int,int):java.lang.String" resolve="substring" />
+                          <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
                           <node concept="3cmrfG" id="JY3sAlfgln" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
@@ -2395,7 +2403,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="JY3sAlfglp" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                        <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
                       </node>
                     </node>
                   </node>
@@ -2443,8 +2451,10 @@
                   </node>
                 </node>
               </node>
-              <node concept="2Gpcm3" id="XaN6Gnc9P" role="2OqNvi">
-                <ref role="2Gpcm2" to="v7ag:3TmmsQkC_PR" resolve="Interface" />
+              <node concept="v3k3i" id="6jvaevO$GQh" role="2OqNvi">
+                <node concept="chp4Y" id="6jvaevO$GQi" role="v3oSu">
+                  <ref role="cht4Q" to="v7ag:3TmmsQkC_PR" resolve="Interface" />
+                </node>
               </node>
             </node>
           </node>
@@ -2490,7 +2500,7 @@
                         <ref role="3cqZAo" node="JY3sAlfg81" resolve="name" />
                       </node>
                       <node concept="liA8E" id="JY3sAlfgl1" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.substring(int):java.lang.String" resolve="substring" />
+                        <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
                         <node concept="3cmrfG" id="JY3sAlfgl2" role="37wK5m">
                           <property role="3cmrfH" value="1" />
                         </node>
@@ -2502,7 +2512,7 @@
                           <ref role="3cqZAo" node="JY3sAlfg81" resolve="name" />
                         </node>
                         <node concept="liA8E" id="JY3sAlfgjx" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.substring(int,int):java.lang.String" resolve="substring" />
+                          <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
                           <node concept="3cmrfG" id="JY3sAlfgjB" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
@@ -2512,7 +2522,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="JY3sAlfgke" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                        <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
                       </node>
                     </node>
                   </node>
@@ -2561,8 +2571,10 @@
                   </node>
                 </node>
               </node>
-              <node concept="2Gpcm3" id="XaN6Gnc9r" role="2OqNvi">
-                <ref role="2Gpcm2" to="v7ag:3TmmsQkC_PR" resolve="Interface" />
+              <node concept="v3k3i" id="6jvaevO$GQj" role="2OqNvi">
+                <node concept="chp4Y" id="6jvaevO$GQk" role="v3oSu">
+                  <ref role="cht4Q" to="v7ag:3TmmsQkC_PR" resolve="Interface" />
+                </node>
               </node>
             </node>
           </node>
@@ -2829,8 +2841,10 @@
                   </node>
                 </node>
               </node>
-              <node concept="2Gpcm3" id="XaN6Gnc71" role="2OqNvi">
-                <ref role="2Gpcm2" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+              <node concept="v3k3i" id="6jvaevO$GQl" role="2OqNvi">
+                <node concept="chp4Y" id="6jvaevO$GQm" role="v3oSu">
+                  <ref role="cht4Q" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+                </node>
               </node>
             </node>
           </node>
@@ -2964,8 +2978,10 @@
                   </node>
                 </node>
               </node>
-              <node concept="2Gpcm3" id="XaN6Gnc8B" role="2OqNvi">
-                <ref role="2Gpcm2" to="v7ag:3TmmsQkC_PR" resolve="Interface" />
+              <node concept="v3k3i" id="6jvaevO$GQn" role="2OqNvi">
+                <node concept="chp4Y" id="6jvaevO$GQo" role="v3oSu">
+                  <ref role="cht4Q" to="v7ag:3TmmsQkC_PR" resolve="Interface" />
+                </node>
               </node>
             </node>
           </node>
@@ -3001,8 +3017,10 @@
                   </node>
                 </node>
               </node>
-              <node concept="2Gpcm3" id="XaN6Gnc6A" role="2OqNvi">
-                <ref role="2Gpcm2" to="v7ag:3TmmsQkCzn9" resolve="Component" />
+              <node concept="v3k3i" id="6jvaevO$GQp" role="2OqNvi">
+                <node concept="chp4Y" id="6jvaevO$GQq" role="v3oSu">
+                  <ref role="cht4Q" to="v7ag:3TmmsQkCzn9" resolve="Component" />
+                </node>
               </node>
             </node>
           </node>
@@ -3038,8 +3056,10 @@
                   </node>
                 </node>
               </node>
-              <node concept="2Gpcm3" id="XaN6Gnc6d" role="2OqNvi">
-                <ref role="2Gpcm2" to="v7ag:3TmmsQkCzn9" resolve="Component" />
+              <node concept="v3k3i" id="6jvaevO$GQr" role="2OqNvi">
+                <node concept="chp4Y" id="6jvaevO$GQs" role="v3oSu">
+                  <ref role="cht4Q" to="v7ag:3TmmsQkCzn9" resolve="Component" />
+                </node>
               </node>
             </node>
           </node>

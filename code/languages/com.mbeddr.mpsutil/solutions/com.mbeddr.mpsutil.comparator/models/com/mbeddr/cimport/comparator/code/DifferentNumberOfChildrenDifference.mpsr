@@ -2,7 +2,7 @@
 <model ref="r:ec874b45-e888-42e6-995a-a298cefdff55(com.mbeddr.cimport.comparator.code)" content="root">
   <persistence version="9" />
   <imports>
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -238,7 +238,7 @@
                                     <node concept="13GOg" id="1rBPbD3KFjw" role="2OqNvi" />
                                   </node>
                                   <node concept="liA8E" id="DYlgnACN5w" role="2OqNvi">
-                                    <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                     <node concept="37vLTw" id="DYlgnACN5x" role="37wK5m">
                                       <ref role="3cqZAo" node="DYlgnA_739" resolve="link" />
                                     </node>
@@ -285,7 +285,7 @@
                             <node concept="13GOg" id="1rBPbD3KGp1" role="2OqNvi" />
                           </node>
                           <node concept="liA8E" id="DYlgnACOV1" role="2OqNvi">
-                            <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                             <node concept="37vLTw" id="DYlgnACOV2" role="37wK5m">
                               <ref role="3cqZAo" node="DYlgnA_739" resolve="link" />
                             </node>

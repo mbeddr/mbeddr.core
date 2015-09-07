@@ -156,9 +156,12 @@
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
@@ -403,7 +406,9 @@
           <node concept="2OqwBi" id="5$bT90ZdhQr" role="2GsD0m">
             <node concept="1Q6Npb" id="5$bT90ZdhQs" role="2Oq$k0" />
             <node concept="2SmgA7" id="5$bT90ZdhQt" role="2OqNvi">
-              <ref role="2SmgA8" to="z5ox:5$bT90ZcZti" resolve="SectionAsImageParagraph" />
+              <node concept="chp4Y" id="12zeRDvnbhj" role="1dBWTz">
+                <ref role="cht4Q" to="z5ox:5$bT90ZcZti" resolve="SectionAsImageParagraph" />
+              </node>
             </node>
           </node>
         </node>

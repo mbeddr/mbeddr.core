@@ -3,13 +3,13 @@
   <persistence version="9" />
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
   </languages>
   <imports>
-    <import index="glhf" ref="f:java_stub#d280cd6b-3d77-4bf2-b70d-fe049ab4c77e#org.sat4j.specs(com.mbeddr.analyses.sat4j/org.sat4j.specs@java_stub)" />
+    <import index="j6po" ref="d280cd6b-3d77-4bf2-b70d-fe049ab4c77e/java:org.sat4j.specs(com.mbeddr.analyses.sat4j/)" />
     <import index="vy7l" ref="r:86500bb5-b61d-4584-98de-8e87c2a6a247(com.mbeddr.analyses.sat4j.fm.analyses)" />
-    <import index="88zw" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="ky9n" ref="r:02fd962e-fdec-4ce8-ac08-1e36622f718b(com.mbeddr.analyses.sat4j.fm.model)" />
   </imports>
   <registry>
@@ -132,7 +132,7 @@
         <property role="TrG5h" value="solution" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="1X8myJOLmWk" role="1tU5fm">
-          <ref role="3uigEE" to="88zw:~SModule" resolve="SModule" />
+          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
         </node>
       </node>
       <node concept="3clFbS" id="1X8myJOLdq6" role="3clF47">
@@ -168,7 +168,7 @@
                       <ref role="3cqZAo" node="1X8myJOLmZc" resolve="solution" />
                     </node>
                     <node concept="liA8E" id="4XJOimFNXBY" role="2OqNvi">
-                      <ref role="37wK5l" to="88zw:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+                      <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="1X8myJOLnl9" role="2LFqv$">
@@ -261,7 +261,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="1X8myJOLdqN" role="Sfmx6">
-        <ref role="3uigEE" to="glhf:~TimeoutException" resolve="TimeoutException" />
+        <ref role="3uigEE" to="j6po:~TimeoutException" resolve="TimeoutException" />
       </node>
     </node>
     <node concept="3Tm1VV" id="1X8myJOLdqO" role="1B3o_S" />

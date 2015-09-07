@@ -4,7 +4,7 @@
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -91,11 +91,6 @@
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
-    </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="17217465924316850" name="com.mbeddr.mpsutil.blutil.structure.FilterOperation" flags="ng" index="2Gpcm3">
-        <reference id="17217465924316851" name="concept" index="2Gpcm2" />
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
@@ -286,8 +281,10 @@
                         <ref role="13MTZf" to="qqyh:5USXI9KzkZL" />
                       </node>
                     </node>
-                    <node concept="2Gpcm3" id="7tA49iWELp$" role="2OqNvi">
-                      <ref role="2Gpcm2" to="qqyh:5USXI9Kzbaq" resolve="FeatureModel" />
+                    <node concept="v3k3i" id="6jvaevO$JW6" role="2OqNvi">
+                      <node concept="chp4Y" id="6jvaevO$JW7" role="v3oSu">
+                        <ref role="cht4Q" to="qqyh:5USXI9Kzbaq" resolve="FeatureModel" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -387,8 +384,10 @@
                           <ref role="13MTZf" to="qqyh:5USXI9KzkZL" />
                         </node>
                       </node>
-                      <node concept="2Gpcm3" id="XaN6GmWtl" role="2OqNvi">
-                        <ref role="2Gpcm2" to="qqyh:5USXI9Kzba8" resolve="ConfigurationModel" />
+                      <node concept="v3k3i" id="6jvaevO$JW8" role="2OqNvi">
+                        <node concept="chp4Y" id="6jvaevO$JW9" role="v3oSu">
+                          <ref role="cht4Q" to="qqyh:5USXI9Kzba8" resolve="ConfigurationModel" />
+                        </node>
                       </node>
                     </node>
                     <node concept="3zZkjj" id="7tA49iWEY8N" role="2OqNvi">
@@ -1266,8 +1265,10 @@
                         <ref role="13MTZf" to="qqyh:5USXI9KzkZL" />
                       </node>
                     </node>
-                    <node concept="2Gpcm3" id="10hF$bDHVB" role="2OqNvi">
-                      <ref role="2Gpcm2" to="qqyh:5USXI9Kzbaq" resolve="FeatureModel" />
+                    <node concept="v3k3i" id="6jvaevO$JWa" role="2OqNvi">
+                      <node concept="chp4Y" id="6jvaevO$JWb" role="v3oSu">
+                        <ref role="cht4Q" to="qqyh:5USXI9Kzbaq" resolve="FeatureModel" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -1373,8 +1374,10 @@
                           <ref role="13MTZf" to="qqyh:5USXI9KzkZL" />
                         </node>
                       </node>
-                      <node concept="2Gpcm3" id="10hF$bDIUY" role="2OqNvi">
-                        <ref role="2Gpcm2" to="qqyh:5USXI9Kzba8" resolve="ConfigurationModel" />
+                      <node concept="v3k3i" id="6jvaevO$JWc" role="2OqNvi">
+                        <node concept="chp4Y" id="6jvaevO$JWd" role="v3oSu">
+                          <ref role="cht4Q" to="qqyh:5USXI9Kzba8" resolve="ConfigurationModel" />
+                        </node>
                       </node>
                     </node>
                     <node concept="3zZkjj" id="10hF$bDIUZ" role="2OqNvi">

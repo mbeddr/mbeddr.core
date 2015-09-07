@@ -18,7 +18,7 @@
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="1i04" ref="r:3270011d-8b2d-4938-8dff-d256a759e017(jetbrains.mps.lang.behavior.structure)" />
     <import index="tpf3" ref="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" implicit="true" />
   </imports>
   <registry>
@@ -188,7 +188,7 @@
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
@@ -818,7 +818,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="XyAj1BppBL" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                           <node concept="37vLTw" id="XyAj1BppBM" role="37wK5m">
                             <ref role="3cqZAo" node="7ZfoUOqOHSu" resolve="labelName" />
                           </node>
@@ -1199,7 +1199,9 @@
                 <node concept="I4A8Y" id="7ZfoUOqOSIq" role="2OqNvi" />
               </node>
               <node concept="2SmgA7" id="7ZfoUOqOU44" role="2OqNvi">
-                <ref role="2SmgA8" to="tpf8:fWbUwhP" resolve="MappingConfiguration" />
+                <node concept="chp4Y" id="2A84N_PNBVX" role="1dBWTz">
+                  <ref role="cht4Q" to="tpf8:fWbUwhP" resolve="MappingConfiguration" />
+                </node>
               </node>
             </node>
             <node concept="ANE8D" id="7ZfoUOqOZjk" role="2OqNvi" />
@@ -1902,7 +1904,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="2dCF6Fx9lps" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                           <node concept="37vLTw" id="2dCF6Fx9lpt" role="37wK5m">
                             <ref role="3cqZAo" node="7ZfoUOqSbeY" resolve="labelName" />
                           </node>
@@ -2576,7 +2578,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="7ZfoUOqSjyp" role="2OqNvi">
-                          <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                           <node concept="37vLTw" id="7ZfoUOqSjyq" role="37wK5m">
                             <ref role="3cqZAo" node="2dCF6Fx9lq5" resolve="labelName" />
                           </node>

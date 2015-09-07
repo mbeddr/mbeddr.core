@@ -3,18 +3,16 @@
   <persistence version="9" />
   <languages>
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
-    <use id="e840b8ae-64d9-4b5b-b3b4-eca3f222d4da" name="com.mbeddr.mpsutil.iconchar" version="-1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="i0j2" ref="r:ac910013-4472-4dc2-a9a9-59a46aac5d5b(com.mbeddr.mpsutil.iconchar.structure)" />
-    <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
-    <import index="a2je" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.image(JDK/java.awt.image@java_stub)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image(JDK/)" />
     <import index="y9r1" ref="r:dda7c98f-41be-4c29-91ee-2a67f73dbf1c(com.mbeddr.mpsutil.iconchar.behavior)" />
-    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -86,12 +84,15 @@
       <concept id="1217026863835" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalInputModel" flags="nn" index="1st3f0" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
     </language>
@@ -125,7 +126,9 @@
             <node concept="2OqwBi" id="7GaZbxS0VwT" role="2Oq$k0">
               <node concept="1Q6Npb" id="7GaZbxS0VwU" role="2Oq$k0" />
               <node concept="2SmgA7" id="7GaZbxS0VwV" role="2OqNvi">
-                <ref role="2SmgA8" to="i0j2:7GaZbxRVe7Q" resolve="IconChar" />
+                <node concept="chp4Y" id="6jvaevOyEn4" role="1dBWTz">
+                  <ref role="cht4Q" to="i0j2:7GaZbxRVe7Q" resolve="IconChar" />
+                </node>
               </node>
             </node>
             <node concept="2es0OD" id="7GaZbxS0VwW" role="2OqNvi">
@@ -135,7 +138,7 @@
                     <node concept="3cpWsn" id="5L7BF$C8kjB" role="3cpWs9">
                       <property role="TrG5h" value="bi" />
                       <node concept="3uibUv" id="5L7BF$C8kjz" role="1tU5fm">
-                        <ref role="3uigEE" to="a2je:~BufferedImage" resolve="BufferedImage" />
+                        <ref role="3uigEE" to="jan3:~BufferedImage" resolve="BufferedImage" />
                       </node>
                       <node concept="2OqwBi" id="5L7BF$C8kjC" role="33vP2m">
                         <node concept="37vLTw" id="5L7BF$C8kjD" role="2Oq$k0">
@@ -166,11 +169,11 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="5L7BF$C5Vrq" role="2OqNvi">
-                              <ref role="37wK5l" to="ec5l:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                              <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
                             </node>
                           </node>
                           <node concept="3uibUv" id="5L7BF$C5Vrr" role="10QFUM">
-                            <ref role="3uigEE" to="vsqj:~AbstractModule" resolve="AbstractModule" />
+                            <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
                           </node>
                         </node>
                       </node>
