@@ -99,12 +99,6 @@
                   <mapping-node modelUID="r:5502bfb4-a967-4ca4-be6d-8754034c6d99(com.mbeddr.core.buildconfig.generator.template.main@generator)" nodeID="7717755763392579407" />
                 </external-mapping>
               </mapping-set-element>
-              <mapping-set-element>
-                <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
-                <external-mapping>
-                  <mapping-node modelUID="r:5f62df63-885f-42f0-80d6-e13ad6c51489(com.mbeddr.core.modules.gen.generator.template.main@generator)" nodeID="1758019824472882133" />
-                </external-mapping>
-              </mapping-set-element>
             </mapping-set>
           </lesser-priority-mapping>
         </mapping-priority-rule>
