@@ -8,7 +8,7 @@
   <imports>
     <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
     <import index="d04j" ref="r:904a58f9-8bb7-4ceb-b8a8-e6d7b5fc9126(com.mbeddr.mpsutil.projectview.structure)" />
-    <import index="vyt2" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.scope(MPS.Core/jetbrains.mps.scope@java_stub)" />
+    <import index="35tq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.scope(MPS.Core/)" />
     <import index="os9e" ref="r:97eb5271-8e83-4b12-a8f1-f764eae13815(com.mbeddr.mpsutil.projectview.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -35,6 +35,9 @@
       </concept>
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
@@ -82,6 +85,9 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -150,6 +156,46 @@
               <node concept="3clFbS" id="7diJr$RwrzL" role="9aQI4">
                 <node concept="3cpWs6" id="7diJr$RwrC4" role="3cqZAp">
                   <node concept="10Nm6u" id="7diJr$Rws4A" role="3cqZAk" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1CDgnklGOYa">
+    <ref role="1M2myG" to="d04j:7diJr$RulqU" resolve="TreeNodeElement" />
+    <node concept="1N5Pfh" id="1CDgnklGOYh" role="1Mr941">
+      <ref role="1N5Vy1" to="d04j:7diJr$RuzNF" />
+      <node concept="13QW63" id="1CDgnklGOYt" role="1N6uqs">
+        <node concept="3clFbS" id="1CDgnklGOYv" role="2VODD2">
+          <node concept="3clFbF" id="1CDgnklGP81" role="3cqZAp">
+            <node concept="2ShNRf" id="1CDgnklGP7Z" role="3clFbG">
+              <node concept="1pGfFk" id="1CDgnklGQ7H" role="2ShVmc">
+                <ref role="37wK5l" to="6xgk:7lHSllLpTWM" resolve="NamedElementsScope" />
+                <node concept="2OqwBi" id="1CDgnklGQTy" role="37wK5m">
+                  <node concept="2OqwBi" id="1CDgnklGQua" role="2Oq$k0">
+                    <node concept="2OqwBi" id="1CDgnklGQb6" role="2Oq$k0">
+                      <node concept="2rP1CM" id="1CDgnklGQ8w" role="2Oq$k0" />
+                      <node concept="2Xjw5R" id="1CDgnklGQl8" role="2OqNvi">
+                        <node concept="1xMEDy" id="1CDgnklGQla" role="1xVPHs">
+                          <node concept="chp4Y" id="1CDgnklGQoh" role="ri$Ld">
+                            <ref role="cht4Q" to="d04j:7diJr$Rulpu" resolve="ProjectView" />
+                          </node>
+                        </node>
+                        <node concept="1xIGOp" id="1CDgnklGQre" role="1xVPHs" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="1CDgnklGQJ_" role="2OqNvi">
+                      <ref role="37wK5l" to="os9e:1CDgnklGEeJ" resolve="getVisibleElements" />
+                    </node>
+                  </node>
+                  <node concept="v3k3i" id="1CDgnklGRhN" role="2OqNvi">
+                    <node concept="chp4Y" id="1CDgnklGR_H" role="v3oSu">
+                      <ref role="cht4Q" to="d04j:7diJr$RulqU" resolve="TreeNodeElement" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
