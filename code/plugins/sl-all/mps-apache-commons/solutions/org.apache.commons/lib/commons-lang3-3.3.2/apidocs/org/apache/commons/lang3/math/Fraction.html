@@ -1,0 +1,1085 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>Fraction (Apache Commons Lang 3.3.2 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Fraction (Apache Commons Lang 3.3.2 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Fraction.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../org/apache/commons/lang3/math/IEEE754rUtils.html" title="class in org.apache.commons.lang3.math"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/lang3/math/Fraction.html" target="_top">Frames</a></li>
+<li><a href="Fraction.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.commons.lang3.math</div>
+<h2 title="Class Fraction" class="title">Class Fraction</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">java.lang.Number</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.commons.lang3.math.Fraction</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&gt;</dd>
+</dl>
+<hr>
+<br>
+<pre>public final class <span class="strong">Fraction</span>
+extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>
+implements <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&gt;</pre>
+<div class="block"><p><code>Fraction</code> is a <code>Number</code> implementation that
+ stores fractions accurately.</p>
+
+ <p>This class is immutable, and interoperable with most methods that accept
+ a <code>Number</code>.</p>
+
+ <p>Note that this class is intended for common use cases, it is <i>int</i>
+ based and thus suffers from various overflow issues. For a BigInteger based 
+ equivalent, please see the Commons Math BigFraction class. </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>2.0</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>$Id: Fraction.java 1583482 2014-03-31 22:54:57Z niallp $</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../serialized-form.html#org.apache.commons.lang3.math.Fraction">Serialized Form</a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#FOUR_FIFTHS">FOUR_FIFTHS</a></strong></code>
+<div class="block"><code>Fraction</code> representation of 4/5.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#ONE">ONE</a></strong></code>
+<div class="block"><code>Fraction</code> representation of 1.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#ONE_FIFTH">ONE_FIFTH</a></strong></code>
+<div class="block"><code>Fraction</code> representation of 1/5.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#ONE_HALF">ONE_HALF</a></strong></code>
+<div class="block"><code>Fraction</code> representation of 1/2.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#ONE_QUARTER">ONE_QUARTER</a></strong></code>
+<div class="block"><code>Fraction</code> representation of 1/4.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#ONE_THIRD">ONE_THIRD</a></strong></code>
+<div class="block"><code>Fraction</code> representation of 1/3.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#THREE_FIFTHS">THREE_FIFTHS</a></strong></code>
+<div class="block"><code>Fraction</code> representation of 3/5.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#THREE_QUARTERS">THREE_QUARTERS</a></strong></code>
+<div class="block"><code>Fraction</code> representation of 3/4.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#TWO_FIFTHS">TWO_FIFTHS</a></strong></code>
+<div class="block"><code>Fraction</code> representation of 2/5.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#TWO_QUARTERS">TWO_QUARTERS</a></strong></code>
+<div class="block"><code>Fraction</code> representation of 2/4.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#TWO_THIRDS">TWO_THIRDS</a></strong></code>
+<div class="block"><code>Fraction</code> representation of 2/3.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#ZERO">ZERO</a></strong></code>
+<div class="block"><code>Fraction</code> representation of 0.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#abs()">abs</a></strong>()</code>
+<div class="block">Gets a fraction that is the positive equivalent of this one.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#add(org.apache.commons.lang3.math.Fraction)">add</a></strong>(<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;fraction)</code>
+<div class="block">Adds the value of this fraction to another, returning the result in reduced form.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#compareTo(org.apache.commons.lang3.math.Fraction)">compareTo</a></strong>(<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;other)</code>
+<div class="block">Compares this object to another based on size.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#divideBy(org.apache.commons.lang3.math.Fraction)">divideBy</a></strong>(<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;fraction)</code>
+<div class="block">Divide the value of this fraction by another.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#doubleValue()">doubleValue</a></strong>()</code>
+<div class="block">Gets the fraction as a <code>double</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#equals(java.lang.Object)">equals</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code>
+<div class="block">Compares this fraction to another object to test if they are equal.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#floatValue()">floatValue</a></strong>()</code>
+<div class="block">Gets the fraction as a <code>float</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#getDenominator()">getDenominator</a></strong>()</code>
+<div class="block">Gets the denominator part of the fraction.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#getFraction(double)">getFraction</a></strong>(double&nbsp;value)</code>
+<div class="block">Creates a <code>Fraction</code> instance from a <code>double</code> value.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#getFraction(int, int)">getFraction</a></strong>(int&nbsp;numerator,
+           int&nbsp;denominator)</code>
+<div class="block">Creates a <code>Fraction</code> instance with the 2 parts
+ of a fraction Y/Z.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#getFraction(int, int, int)">getFraction</a></strong>(int&nbsp;whole,
+           int&nbsp;numerator,
+           int&nbsp;denominator)</code>
+<div class="block">Creates a <code>Fraction</code> instance with the 3 parts
+ of a fraction X Y/Z.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#getFraction(java.lang.String)">getFraction</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</code>
+<div class="block">Creates a Fraction from a <code>String</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#getNumerator()">getNumerator</a></strong>()</code>
+<div class="block">Gets the numerator part of the fraction.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#getProperNumerator()">getProperNumerator</a></strong>()</code>
+<div class="block">Gets the proper numerator, always positive.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#getProperWhole()">getProperWhole</a></strong>()</code>
+<div class="block">Gets the proper whole part of the fraction.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#getReducedFraction(int, int)">getReducedFraction</a></strong>(int&nbsp;numerator,
+                  int&nbsp;denominator)</code>
+<div class="block">Creates a reduced <code>Fraction</code> instance with the 2 parts
+ of a fraction Y/Z.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#hashCode()">hashCode</a></strong>()</code>
+<div class="block">Gets a hashCode for the fraction.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#intValue()">intValue</a></strong>()</code>
+<div class="block">Gets the fraction as an <code>int</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#invert()">invert</a></strong>()</code>
+<div class="block">Gets a fraction that is the inverse (1/fraction) of this one.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#longValue()">longValue</a></strong>()</code>
+<div class="block">Gets the fraction as a <code>long</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#multiplyBy(org.apache.commons.lang3.math.Fraction)">multiplyBy</a></strong>(<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;fraction)</code>
+<div class="block">Multiplies the value of this fraction by another, returning the 
+ result in reduced form.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#negate()">negate</a></strong>()</code>
+<div class="block">Gets a fraction that is the negative (-fraction) of this one.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#pow(int)">pow</a></strong>(int&nbsp;power)</code>
+<div class="block">Gets a fraction that is raised to the passed in power.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#reduce()">reduce</a></strong>()</code>
+<div class="block">Reduce the fraction to the smallest values for the numerator and
+ denominator, returning the result.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#subtract(org.apache.commons.lang3.math.Fraction)">subtract</a></strong>(<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;fraction)</code>
+<div class="block">Subtracts the value of another fraction from the value of this one, 
+ returning the result in reduced form.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#toProperString()">toProperString</a></strong>()</code>
+<div class="block">Gets the fraction as a proper <code>String</code> in the format X Y/Z.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/math/Fraction.html#toString()">toString</a></strong>()</code>
+<div class="block">Gets the fraction as a <code>String</code>.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Number">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a></h3>
+<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#byteValue()" title="class or interface in java.lang">byteValue</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#shortValue()" title="class or interface in java.lang">shortValue</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="ZERO">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ZERO</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a> ZERO</pre>
+<div class="block"><code>Fraction</code> representation of 0.</div>
+</li>
+</ul>
+<a name="ONE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ONE</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a> ONE</pre>
+<div class="block"><code>Fraction</code> representation of 1.</div>
+</li>
+</ul>
+<a name="ONE_HALF">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ONE_HALF</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a> ONE_HALF</pre>
+<div class="block"><code>Fraction</code> representation of 1/2.</div>
+</li>
+</ul>
+<a name="ONE_THIRD">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ONE_THIRD</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a> ONE_THIRD</pre>
+<div class="block"><code>Fraction</code> representation of 1/3.</div>
+</li>
+</ul>
+<a name="TWO_THIRDS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TWO_THIRDS</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a> TWO_THIRDS</pre>
+<div class="block"><code>Fraction</code> representation of 2/3.</div>
+</li>
+</ul>
+<a name="ONE_QUARTER">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ONE_QUARTER</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a> ONE_QUARTER</pre>
+<div class="block"><code>Fraction</code> representation of 1/4.</div>
+</li>
+</ul>
+<a name="TWO_QUARTERS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TWO_QUARTERS</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a> TWO_QUARTERS</pre>
+<div class="block"><code>Fraction</code> representation of 2/4.</div>
+</li>
+</ul>
+<a name="THREE_QUARTERS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>THREE_QUARTERS</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a> THREE_QUARTERS</pre>
+<div class="block"><code>Fraction</code> representation of 3/4.</div>
+</li>
+</ul>
+<a name="ONE_FIFTH">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ONE_FIFTH</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a> ONE_FIFTH</pre>
+<div class="block"><code>Fraction</code> representation of 1/5.</div>
+</li>
+</ul>
+<a name="TWO_FIFTHS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TWO_FIFTHS</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a> TWO_FIFTHS</pre>
+<div class="block"><code>Fraction</code> representation of 2/5.</div>
+</li>
+</ul>
+<a name="THREE_FIFTHS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>THREE_FIFTHS</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a> THREE_FIFTHS</pre>
+<div class="block"><code>Fraction</code> representation of 3/5.</div>
+</li>
+</ul>
+<a name="FOUR_FIFTHS">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>FOUR_FIFTHS</h4>
+<pre>public static final&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a> FOUR_FIFTHS</pre>
+<div class="block"><code>Fraction</code> representation of 4/5.</div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getFraction(int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFraction</h4>
+<pre>public static&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;getFraction(int&nbsp;numerator,
+                   int&nbsp;denominator)</pre>
+<div class="block"><p>Creates a <code>Fraction</code> instance with the 2 parts
+ of a fraction Y/Z.</p>
+
+ <p>Any negative signs are resolved to be on the numerator.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>numerator</code> - the numerator, for example the three in 'three sevenths'</dd><dd><code>denominator</code> - the denominator, for example the seven in 'three sevenths'</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new fraction instance</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ArithmeticException.html?is-external=true" title="class or interface in java.lang">ArithmeticException</a></code> - if the denominator is <code>zero</code>
+ or the denominator is <code>negative</code> and the numerator is <code>Integer#MIN_VALUE</code></dd></dl>
+</li>
+</ul>
+<a name="getFraction(int, int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFraction</h4>
+<pre>public static&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;getFraction(int&nbsp;whole,
+                   int&nbsp;numerator,
+                   int&nbsp;denominator)</pre>
+<div class="block"><p>Creates a <code>Fraction</code> instance with the 3 parts
+ of a fraction X Y/Z.</p>
+
+ <p>The negative sign must be passed in on the whole number part.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>whole</code> - the whole number, for example the one in 'one and three sevenths'</dd><dd><code>numerator</code> - the numerator, for example the three in 'one and three sevenths'</dd><dd><code>denominator</code> - the denominator, for example the seven in 'one and three sevenths'</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new fraction instance</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ArithmeticException.html?is-external=true" title="class or interface in java.lang">ArithmeticException</a></code> - if the denominator is <code>zero</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ArithmeticException.html?is-external=true" title="class or interface in java.lang">ArithmeticException</a></code> - if the denominator is negative</dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ArithmeticException.html?is-external=true" title="class or interface in java.lang">ArithmeticException</a></code> - if the numerator is negative</dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ArithmeticException.html?is-external=true" title="class or interface in java.lang">ArithmeticException</a></code> - if the resulting numerator exceeds 
+  <code>Integer.MAX_VALUE</code></dd></dl>
+</li>
+</ul>
+<a name="getReducedFraction(int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getReducedFraction</h4>
+<pre>public static&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;getReducedFraction(int&nbsp;numerator,
+                          int&nbsp;denominator)</pre>
+<div class="block"><p>Creates a reduced <code>Fraction</code> instance with the 2 parts
+ of a fraction Y/Z.</p>
+
+ <p>For example, if the input parameters represent 2/4, then the created
+ fraction will be 1/2.</p>
+
+ <p>Any negative signs are resolved to be on the numerator.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>numerator</code> - the numerator, for example the three in 'three sevenths'</dd><dd><code>denominator</code> - the denominator, for example the seven in 'three sevenths'</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new fraction instance, with the numerator and denominator reduced</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ArithmeticException.html?is-external=true" title="class or interface in java.lang">ArithmeticException</a></code> - if the denominator is <code>zero</code></dd></dl>
+</li>
+</ul>
+<a name="getFraction(double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFraction</h4>
+<pre>public static&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;getFraction(double&nbsp;value)</pre>
+<div class="block"><p>Creates a <code>Fraction</code> instance from a <code>double</code> value.</p>
+
+ <p>This method uses the <a href="http://archives.math.utk.edu/articles/atuyl/confrac/">
+  continued fraction algorithm</a>, computing a maximum of
+  25 convergents and bounding the denominator by 10,000.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>value</code> - the double value to convert</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new fraction instance that is close to the value</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ArithmeticException.html?is-external=true" title="class or interface in java.lang">ArithmeticException</a></code> - if <code>|value| &gt; Integer.MAX_VALUE</code> 
+  or <code>value = NaN</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ArithmeticException.html?is-external=true" title="class or interface in java.lang">ArithmeticException</a></code> - if the calculated denominator is <code>zero</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ArithmeticException.html?is-external=true" title="class or interface in java.lang">ArithmeticException</a></code> - if the the algorithm does not converge</dd></dl>
+</li>
+</ul>
+<a name="getFraction(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFraction</h4>
+<pre>public static&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;getFraction(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;str)</pre>
+<div class="block"><p>Creates a Fraction from a <code>String</code>.</p>
+
+ <p>The formats accepted are:</p>
+
+ <ol>
+  <li><code>double</code> String containing a dot</li>
+  <li>'X Y/Z'</li>
+  <li>'Y/Z'</li>
+  <li>'X' (a simple whole number)</li>
+ </ol>
+ <p>and a .</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the string to parse, must not be <code>null</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the new <code>Fraction</code> instance</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the string is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/NumberFormatException.html?is-external=true" title="class or interface in java.lang">NumberFormatException</a></code> - if the number format is invalid</dd></dl>
+</li>
+</ul>
+<a name="getNumerator()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNumerator</h4>
+<pre>public&nbsp;int&nbsp;getNumerator()</pre>
+<div class="block"><p>Gets the numerator part of the fraction.</p>
+
+ <p>This method may return a value greater than the denominator, an
+ improper fraction, such as the seven in 7/4.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the numerator fraction part</dd></dl>
+</li>
+</ul>
+<a name="getDenominator()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDenominator</h4>
+<pre>public&nbsp;int&nbsp;getDenominator()</pre>
+<div class="block"><p>Gets the denominator part of the fraction.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the denominator fraction part</dd></dl>
+</li>
+</ul>
+<a name="getProperNumerator()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProperNumerator</h4>
+<pre>public&nbsp;int&nbsp;getProperNumerator()</pre>
+<div class="block"><p>Gets the proper numerator, always positive.</p>
+
+ <p>An improper fraction 7/4 can be resolved into a proper one, 1 3/4.
+ This method returns the 3 from the proper fraction.</p>
+
+ <p>If the fraction is negative such as -7/4, it can be resolved into
+ -1 3/4, so this method returns the positive proper numerator, 3.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the numerator fraction part of a proper fraction, always positive</dd></dl>
+</li>
+</ul>
+<a name="getProperWhole()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProperWhole</h4>
+<pre>public&nbsp;int&nbsp;getProperWhole()</pre>
+<div class="block"><p>Gets the proper whole part of the fraction.</p>
+
+ <p>An improper fraction 7/4 can be resolved into a proper one, 1 3/4.
+ This method returns the 1 from the proper fraction.</p>
+
+ <p>If the fraction is negative such as -7/4, it can be resolved into
+ -1 3/4, so this method returns the positive whole part -1.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the whole fraction part of a proper fraction, that includes the sign</dd></dl>
+</li>
+</ul>
+<a name="intValue()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>intValue</h4>
+<pre>public&nbsp;int&nbsp;intValue()</pre>
+<div class="block"><p>Gets the fraction as an <code>int</code>. This returns the whole number
+ part of the fraction.</p></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#intValue()" title="class or interface in java.lang">intValue</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the whole number fraction part</dd></dl>
+</li>
+</ul>
+<a name="longValue()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>longValue</h4>
+<pre>public&nbsp;long&nbsp;longValue()</pre>
+<div class="block"><p>Gets the fraction as a <code>long</code>. This returns the whole number
+ part of the fraction.</p></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#longValue()" title="class or interface in java.lang">longValue</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the whole number fraction part</dd></dl>
+</li>
+</ul>
+<a name="floatValue()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>floatValue</h4>
+<pre>public&nbsp;float&nbsp;floatValue()</pre>
+<div class="block"><p>Gets the fraction as a <code>float</code>. This calculates the fraction
+ as the numerator divided by denominator.</p></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#floatValue()" title="class or interface in java.lang">floatValue</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the fraction as a <code>float</code></dd></dl>
+</li>
+</ul>
+<a name="doubleValue()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>doubleValue</h4>
+<pre>public&nbsp;double&nbsp;doubleValue()</pre>
+<div class="block"><p>Gets the fraction as a <code>double</code>. This calculates the fraction
+ as the numerator divided by denominator.</p></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true#doubleValue()" title="class or interface in java.lang">doubleValue</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the fraction as a <code>double</code></dd></dl>
+</li>
+</ul>
+<a name="reduce()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reduce</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;reduce()</pre>
+<div class="block"><p>Reduce the fraction to the smallest values for the numerator and
+ denominator, returning the result.</p>
+ 
+ <p>For example, if this fraction represents 2/4, then the result
+ will be 1/2.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a new reduced fraction instance, or this if no simplification possible</dd></dl>
+</li>
+</ul>
+<a name="invert()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>invert</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;invert()</pre>
+<div class="block"><p>Gets a fraction that is the inverse (1/fraction) of this one.</p>
+ 
+ <p>The returned fraction is not reduced.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a new fraction instance with the numerator and denominator
+         inverted.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ArithmeticException.html?is-external=true" title="class or interface in java.lang">ArithmeticException</a></code> - if the fraction represents zero.</dd></dl>
+</li>
+</ul>
+<a name="negate()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>negate</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;negate()</pre>
+<div class="block"><p>Gets a fraction that is the negative (-fraction) of this one.</p>
+
+ <p>The returned fraction is not reduced.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a new fraction instance with the opposite signed numerator</dd></dl>
+</li>
+</ul>
+<a name="abs()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>abs</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;abs()</pre>
+<div class="block"><p>Gets a fraction that is the positive equivalent of this one.</p>
+ <p>More precisely: <code>(fraction &gt;= 0 ? this : -fraction)</code></p>
+
+ <p>The returned fraction is not reduced.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd><code>this</code> if it is positive, or a new positive fraction
+  instance with the opposite signed numerator</dd></dl>
+</li>
+</ul>
+<a name="pow(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>pow</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;pow(int&nbsp;power)</pre>
+<div class="block"><p>Gets a fraction that is raised to the passed in power.</p>
+
+ <p>The returned fraction is in reduced form.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>power</code> - the power to raise the fraction to</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>this</code> if the power is one, <code>ONE</code> if the power
+ is zero (even if the fraction equals ZERO) or a new fraction instance 
+ raised to the appropriate power</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ArithmeticException.html?is-external=true" title="class or interface in java.lang">ArithmeticException</a></code> - if the resulting numerator or denominator exceeds
+  <code>Integer.MAX_VALUE</code></dd></dl>
+</li>
+</ul>
+<a name="add(org.apache.commons.lang3.math.Fraction)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;add(<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;fraction)</pre>
+<div class="block"><p>Adds the value of this fraction to another, returning the result in reduced form.
+ The algorithm follows Knuth, 4.5.1.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>fraction</code> - the fraction to add, must not be <code>null</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a <code>Fraction</code> instance with the resulting values</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the fraction is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ArithmeticException.html?is-external=true" title="class or interface in java.lang">ArithmeticException</a></code> - if the resulting numerator or denominator exceeds
+  <code>Integer.MAX_VALUE</code></dd></dl>
+</li>
+</ul>
+<a name="subtract(org.apache.commons.lang3.math.Fraction)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>subtract</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;subtract(<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;fraction)</pre>
+<div class="block"><p>Subtracts the value of another fraction from the value of this one, 
+ returning the result in reduced form.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>fraction</code> - the fraction to subtract, must not be <code>null</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a <code>Fraction</code> instance with the resulting values</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the fraction is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ArithmeticException.html?is-external=true" title="class or interface in java.lang">ArithmeticException</a></code> - if the resulting numerator or denominator
+   cannot be represented in an <code>int</code>.</dd></dl>
+</li>
+</ul>
+<a name="multiplyBy(org.apache.commons.lang3.math.Fraction)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>multiplyBy</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;multiplyBy(<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;fraction)</pre>
+<div class="block"><p>Multiplies the value of this fraction by another, returning the 
+ result in reduced form.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>fraction</code> - the fraction to multiply by, must not be <code>null</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a <code>Fraction</code> instance with the resulting values</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the fraction is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ArithmeticException.html?is-external=true" title="class or interface in java.lang">ArithmeticException</a></code> - if the resulting numerator or denominator exceeds
+  <code>Integer.MAX_VALUE</code></dd></dl>
+</li>
+</ul>
+<a name="divideBy(org.apache.commons.lang3.math.Fraction)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>divideBy</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;divideBy(<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;fraction)</pre>
+<div class="block"><p>Divide the value of this fraction by another.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>fraction</code> - the fraction to divide by, must not be <code>null</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a <code>Fraction</code> instance with the resulting values</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the fraction is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ArithmeticException.html?is-external=true" title="class or interface in java.lang">ArithmeticException</a></code> - if the fraction to divide by is zero</dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ArithmeticException.html?is-external=true" title="class or interface in java.lang">ArithmeticException</a></code> - if the resulting numerator or denominator exceeds
+  <code>Integer.MAX_VALUE</code></dd></dl>
+</li>
+</ul>
+<a name="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</pre>
+<div class="block"><p>Compares this fraction to another object to test if they are equal.</p>.
+
+ <p>To be equal, both values must be equal. Thus 2/4 is not equal to 1/2.</p></div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>obj</code> - the reference object with which to compare</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>true</code> if this object is equal</dd></dl>
+</li>
+</ul>
+<a name="hashCode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<div class="block"><p>Gets a hashCode for the fraction.</p></div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a hash code value for this object</dd></dl>
+</li>
+</ul>
+<a name="compareTo(org.apache.commons.lang3.math.Fraction)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>compareTo</h4>
+<pre>public&nbsp;int&nbsp;compareTo(<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&nbsp;other)</pre>
+<div class="block"><p>Compares this object to another based on size.</p>
+
+ <p>Note: this class has a natural ordering that is inconsistent
+ with equals, because, for example, equals treats 1/2 and 2/4 as
+ different, whereas compareTo treats them as equal.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true#compareTo(T)" title="class or interface in java.lang">compareTo</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../../org/apache/commons/lang3/math/Fraction.html" title="class in org.apache.commons.lang3.math">Fraction</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>other</code> - the object to compare to</dd>
+<dt><span class="strong">Returns:</span></dt><dd>-1 if this is less, 0 if equal, +1 if greater</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ClassCastException.html?is-external=true" title="class or interface in java.lang">ClassCastException</a></code> - if the object is not a <code>Fraction</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the object is <code>null</code></dd></dl>
+</li>
+</ul>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block"><p>Gets the fraction as a <code>String</code>.</p>
+
+ <p>The format used is '<i>numerator</i>/<i>denominator</i>' always.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a <code>String</code> form of the fraction</dd></dl>
+</li>
+</ul>
+<a name="toProperString()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>toProperString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toProperString()</pre>
+<div class="block"><p>Gets the fraction as a proper <code>String</code> in the format X Y/Z.</p>
+
+ <p>The format used in '<i>wholeNumber</i> <i>numerator</i>/<i>denominator</i>'.
+ If the whole number is zero it will be omitted. If the numerator is zero,
+ only the whole number is returned.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a <code>String</code> form of the fraction</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Fraction.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../org/apache/commons/lang3/math/IEEE754rUtils.html" title="class in org.apache.commons.lang3.math"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/lang3/math/Fraction.html" target="_top">Frames</a></li>
+<li><a href="Fraction.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2014 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

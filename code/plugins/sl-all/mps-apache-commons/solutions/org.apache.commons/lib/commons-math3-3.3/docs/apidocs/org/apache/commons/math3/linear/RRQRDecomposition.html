@@ -1,0 +1,425 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>RRQRDecomposition (Apache Commons Math 3.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="RRQRDecomposition (Apache Commons Math 3.3 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/RRQRDecomposition.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/math3/linear/RectangularCholeskyDecomposition.html" title="class in org.apache.commons.math3.linear"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/commons/math3/linear/SingularMatrixException.html" title="class in org.apache.commons.math3.linear"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/math3/linear/RRQRDecomposition.html" target="_top">Frames</a></li>
+<li><a href="RRQRDecomposition.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.commons.math3.linear</div>
+<h2 title="Class RRQRDecomposition" class="title">Class RRQRDecomposition</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../org/apache/commons/math3/linear/QRDecomposition.html" title="class in org.apache.commons.math3.linear">org.apache.commons.math3.linear.QRDecomposition</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.commons.math3.linear.RRQRDecomposition</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="strong">RRQRDecomposition</span>
+extends <a href="../../../../../org/apache/commons/math3/linear/QRDecomposition.html" title="class in org.apache.commons.math3.linear">QRDecomposition</a></pre>
+<div class="block">Calculates the rank-revealing QR-decomposition of a matrix, with column pivoting.
+ <p>The rank-revealing QR-decomposition of a matrix A consists of three matrices Q,
+ R and P such that AP=QR.  Q is orthogonal (Q<sup>T</sup>Q = I), and R is upper triangular.
+ If A is m&times;n, Q is m&times;m and R is m&times;n and P is n&times;n.</p>
+ <p>QR decomposition with column pivoting produces a rank-revealing QR
+ decomposition and the <a href="../../../../../org/apache/commons/math3/linear/RRQRDecomposition.html#getRank(double)"><code>getRank(double)</code></a> method may be used to return the rank of the
+ input matrix A.</p>
+ <p>This class compute the decomposition using Householder reflectors.</p>
+ <p>For efficiency purposes, the decomposition in packed form is transposed.
+ This allows inner loop to iterate inside rows, which is much more cache-efficient
+ in Java.</p>
+ <p>This class is based on the class with similar name from the
+ <a href="http://math.nist.gov/javanumerics/jama/">JAMA</a> library, with the
+ following changes:</p>
+ <ul>
+   <li>a <a href="../../../../../org/apache/commons/math3/linear/QRDecomposition.html#getQT()"><code>getQT</code></a> method has been added,</li>
+   <li>the <code>solve</code> and <code>isFullRank</code> methods have been replaced
+   by a <a href="../../../../../org/apache/commons/math3/linear/RRQRDecomposition.html#getSolver()"><code>getSolver</code></a> method and the equivalent methods
+   provided by the returned <a href="../../../../../org/apache/commons/math3/linear/DecompositionSolver.html" title="interface in org.apache.commons.math3.linear"><code>DecompositionSolver</code></a>.</li>
+ </ul></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.2</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>$Id: RRQRDecomposition.java 1570994 2014-02-23 11:10:41Z luc $</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="http://mathworld.wolfram.com/QRDecomposition.html">MathWorld</a>, 
+<a href="http://en.wikipedia.org/wiki/QR_decomposition">Wikipedia</a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/RRQRDecomposition.html#RRQRDecomposition(org.apache.commons.math3.linear.RealMatrix)">RRQRDecomposition</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a>&nbsp;matrix)</code>
+<div class="block">Calculates the QR-decomposition of the given matrix.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/linear/RRQRDecomposition.html#RRQRDecomposition(org.apache.commons.math3.linear.RealMatrix, double)">RRQRDecomposition</a></strong>(<a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a>&nbsp;matrix,
+                 double&nbsp;threshold)</code>
+<div class="block">Calculates the QR-decomposition of the given matrix.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/RRQRDecomposition.html#decompose(double[][])">decompose</a></strong>(double[][]&nbsp;qrt)</code>
+<div class="block">Decompose matrix.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/RRQRDecomposition.html#getP()">getP</a></strong>()</code>
+<div class="block">Returns the pivot matrix, P, used in the QR Decomposition of matrix A such that AP = QR.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/RRQRDecomposition.html#getRank(double)">getRank</a></strong>(double&nbsp;dropThreshold)</code>
+<div class="block">Return the effective numerical matrix rank.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/math3/linear/DecompositionSolver.html" title="interface in org.apache.commons.math3.linear">DecompositionSolver</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/RRQRDecomposition.html#getSolver()">getSolver</a></strong>()</code>
+<div class="block">Get a solver for finding the A &times; X = B solution in least square sense.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/linear/RRQRDecomposition.html#performHouseholderReflection(int, double[][])">performHouseholderReflection</a></strong>(int&nbsp;minor,
+                            double[][]&nbsp;qrt)</code>
+<div class="block">Perform Householder reflection for a minor A(minor, minor) of A.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.apache.commons.math3.linear.QRDecomposition">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.apache.commons.math3.linear.<a href="../../../../../org/apache/commons/math3/linear/QRDecomposition.html" title="class in org.apache.commons.math3.linear">QRDecomposition</a></h3>
+<code><a href="../../../../../org/apache/commons/math3/linear/QRDecomposition.html#getH()">getH</a>, <a href="../../../../../org/apache/commons/math3/linear/QRDecomposition.html#getQ()">getQ</a>, <a href="../../../../../org/apache/commons/math3/linear/QRDecomposition.html#getQT()">getQT</a>, <a href="../../../../../org/apache/commons/math3/linear/QRDecomposition.html#getR()">getR</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="RRQRDecomposition(org.apache.commons.math3.linear.RealMatrix)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RRQRDecomposition</h4>
+<pre>public&nbsp;RRQRDecomposition(<a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a>&nbsp;matrix)</pre>
+<div class="block">Calculates the QR-decomposition of the given matrix.
+ The singularity threshold defaults to zero.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>matrix</code> - The matrix to decompose.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/linear/RRQRDecomposition.html#RRQRDecomposition(org.apache.commons.math3.linear.RealMatrix, double)"><code>RRQRDecomposition(RealMatrix, double)</code></a></dd></dl>
+</li>
+</ul>
+<a name="RRQRDecomposition(org.apache.commons.math3.linear.RealMatrix, double)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>RRQRDecomposition</h4>
+<pre>public&nbsp;RRQRDecomposition(<a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a>&nbsp;matrix,
+                 double&nbsp;threshold)</pre>
+<div class="block">Calculates the QR-decomposition of the given matrix.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>matrix</code> - The matrix to decompose.</dd><dd><code>threshold</code> - Singularity threshold.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/linear/RRQRDecomposition.html#RRQRDecomposition(org.apache.commons.math3.linear.RealMatrix)"><code>RRQRDecomposition(RealMatrix)</code></a></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="decompose(double[][])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>decompose</h4>
+<pre>protected&nbsp;void&nbsp;decompose(double[][]&nbsp;qrt)</pre>
+<div class="block">Decompose matrix.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/QRDecomposition.html#decompose(double[][])">decompose</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/QRDecomposition.html" title="class in org.apache.commons.math3.linear">QRDecomposition</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>qrt</code> - transposed matrix</dd></dl>
+</li>
+</ul>
+<a name="performHouseholderReflection(int, double[][])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>performHouseholderReflection</h4>
+<pre>protected&nbsp;void&nbsp;performHouseholderReflection(int&nbsp;minor,
+                                double[][]&nbsp;qrt)</pre>
+<div class="block">Perform Householder reflection for a minor A(minor, minor) of A.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/QRDecomposition.html#performHouseholderReflection(int, double[][])">performHouseholderReflection</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/QRDecomposition.html" title="class in org.apache.commons.math3.linear">QRDecomposition</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>minor</code> - minor index</dd><dd><code>qrt</code> - transposed matrix</dd></dl>
+</li>
+</ul>
+<a name="getP()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getP</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/RealMatrix.html" title="interface in org.apache.commons.math3.linear">RealMatrix</a>&nbsp;getP()</pre>
+<div class="block">Returns the pivot matrix, P, used in the QR Decomposition of matrix A such that AP = QR.
+
+ If no pivoting is used in this decomposition then P is equal to the identity matrix.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a permutation matrix.</dd></dl>
+</li>
+</ul>
+<a name="getRank(double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRank</h4>
+<pre>public&nbsp;int&nbsp;getRank(double&nbsp;dropThreshold)</pre>
+<div class="block">Return the effective numerical matrix rank.
+ <p>The effective numerical rank is the number of non-negligible
+ singular values.</p>
+ <p>This implementation looks at Frobenius norms of the sequence of
+ bottom right submatrices.  When a large fall in norm is seen,
+ the rank is returned. The drop is computed as:</p>
+ <pre>
+   (thisNorm/lastNorm) * rNorm < dropThreshold
+ </pre>
+ <p>
+ where thisNorm is the Frobenius norm of the current submatrix,
+ lastNorm is the Frobenius norm of the previous submatrix,
+ rNorm is is the Frobenius norm of the complete matrix
+ </p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>dropThreshold</code> - threshold triggering rank computation</dd>
+<dt><span class="strong">Returns:</span></dt><dd>effective numerical matrix rank</dd></dl>
+</li>
+</ul>
+<a name="getSolver()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getSolver</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/math3/linear/DecompositionSolver.html" title="interface in org.apache.commons.math3.linear">DecompositionSolver</a>&nbsp;getSolver()</pre>
+<div class="block">Get a solver for finding the A &times; X = B solution in least square sense.
+ <p>
+ Least Square sense means a solver can be computed for an overdetermined system,
+ (i.e. a system with more equations than unknowns, which corresponds to a tall A
+ matrix with more rows than columns). In any case, if the matrix is singular
+ within the tolerance set at <a href="../../../../../org/apache/commons/math3/linear/RRQRDecomposition.html#RRQRDecomposition(org.apache.commons.math3.linear.RealMatrix, double)"><code>construction</code></a>, an error will be triggered when
+ the <a href="../../../../../org/apache/commons/math3/linear/DecompositionSolver.html#solve(org.apache.commons.math3.linear.RealVector)"><code>solve</code></a> method will be called.
+ </p></div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/linear/QRDecomposition.html#getSolver()">getSolver</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/commons/math3/linear/QRDecomposition.html" title="class in org.apache.commons.math3.linear">QRDecomposition</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a solver</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/RRQRDecomposition.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/math3/linear/RectangularCholeskyDecomposition.html" title="class in org.apache.commons.math3.linear"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/commons/math3/linear/SingularMatrixException.html" title="class in org.apache.commons.math3.linear"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/math3/linear/RRQRDecomposition.html" target="_top">Frames</a></li>
+<li><a href="RRQRDecomposition.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2003&#x2013;2014 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

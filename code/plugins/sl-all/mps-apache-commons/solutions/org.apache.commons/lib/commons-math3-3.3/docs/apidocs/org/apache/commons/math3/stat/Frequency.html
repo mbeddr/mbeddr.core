@@ -1,0 +1,1037 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>Frequency (Apache Commons Math 3.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Frequency (Apache Commons Math 3.3 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Frequency.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../org/apache/commons/math3/stat/StatUtils.html" title="class in org.apache.commons.math3.stat"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/math3/stat/Frequency.html" target="_top">Frames</a></li>
+<li><a href="Frequency.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.commons.math3.stat</div>
+<h2 title="Class Frequency" class="title">Class Frequency</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.commons.math3.stat.Frequency</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">Frequency</span>
+extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="http://docs.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></pre>
+<div class="block">Maintains a frequency distribution.
+ <p>
+ Accepts int, long, char or Comparable values.  New values added must be
+ comparable to those that have been added, otherwise the add method will
+ throw an IllegalArgumentException.</p>
+ <p>
+ Integer values (int, long, Integer, Long) are not distinguished by type --
+ i.e. <code>addValue(Long.valueOf(2)), addValue(2), addValue(2l)</code> all have
+ the same effect (similarly for arguments to <code>getCount,</code> etc.).</p>
+ <p>NOTE: byte and short values will be implicitly converted to int values
+ by the compiler, thus there are no explicit overloaded methods for these
+ primitive types.</p>
+ <p>
+ char values are converted by <code>addValue</code> to Character instances.
+ As such, these values are not comparable to integral values, so attempts
+ to combine integral types with chars in a frequency distribution will fail.
+ </p>
+ <p>
+ Float is not coerced to Double.
+ Since they are not Comparable with each other the user must do any necessary coercion.
+ Float.NaN and Double.NaN are not treated specially; they may occur in input and will
+ occur in output if appropriate.
+ </b>
+ <p>
+ The values are ordered using the default (natural order), unless a
+ <code>Comparator</code> is supplied in the constructor.</p></div>
+<dl><dt><span class="strong">Version:</span></dt>
+  <dd>$Id: Frequency.java 1519820 2013-09-03 19:58:03Z tn $</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../serialized-form.html#org.apache.commons.math3.stat.Frequency">Serialized Form</a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#Frequency()">Frequency</a></strong>()</code>
+<div class="block">Default constructor.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#Frequency(java.util.Comparator)">Frequency</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">Comparator</a>&lt;?&gt;&nbsp;comparator)</code>
+<div class="block">Constructor allowing values Comparator to be specified.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#addValue(char)">addValue</a></strong>(char&nbsp;v)</code>
+<div class="block">Adds 1 to the frequency count for v.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#addValue(java.lang.Comparable)">addValue</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;?&gt;&nbsp;v)</code>
+<div class="block">Adds 1 to the frequency count for v.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#addValue(int)">addValue</a></strong>(int&nbsp;v)</code>
+<div class="block">Adds 1 to the frequency count for v.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#addValue(long)">addValue</a></strong>(long&nbsp;v)</code>
+<div class="block">Adds 1 to the frequency count for v.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#clear()">clear</a></strong>()</code>
+<div class="block">Clears the frequency table</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&lt;<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util">Map.Entry</a>&lt;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;?&gt;,<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#entrySetIterator()">entrySetIterator</a></strong>()</code>
+<div class="block">Return an Iterator over the set of keys and values that have been added.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#equals(java.lang.Object)">equals</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#getCount(char)">getCount</a></strong>(char&nbsp;v)</code>
+<div class="block">Returns the number of values equal to v.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#getCount(java.lang.Comparable)">getCount</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;?&gt;&nbsp;v)</code>
+<div class="block">Returns the number of values equal to v.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#getCount(int)">getCount</a></strong>(int&nbsp;v)</code>
+<div class="block">Returns the number of values equal to v.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#getCount(long)">getCount</a></strong>(long&nbsp;v)</code>
+<div class="block">Returns the number of values equal to v.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#getCumFreq(char)">getCumFreq</a></strong>(char&nbsp;v)</code>
+<div class="block">Returns the cumulative frequency of values less than or equal to v.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#getCumFreq(java.lang.Comparable)">getCumFreq</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;?&gt;&nbsp;v)</code>
+<div class="block">Returns the cumulative frequency of values less than or equal to v.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#getCumFreq(int)">getCumFreq</a></strong>(int&nbsp;v)</code>
+<div class="block">Returns the cumulative frequency of values less than or equal to v.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#getCumFreq(long)">getCumFreq</a></strong>(long&nbsp;v)</code>
+<div class="block">Returns the cumulative frequency of values less than or equal to v.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#getCumPct(char)">getCumPct</a></strong>(char&nbsp;v)</code>
+<div class="block">Returns the cumulative percentage of values less than or equal to v
+ (as a proportion between 0 and 1).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#getCumPct(java.lang.Comparable)">getCumPct</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;?&gt;&nbsp;v)</code>
+<div class="block">Returns the cumulative percentage of values less than or equal to v
+ (as a proportion between 0 and 1).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#getCumPct(int)">getCumPct</a></strong>(int&nbsp;v)</code>
+<div class="block">Returns the cumulative percentage of values less than or equal to v
+ (as a proportion between 0 and 1).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#getCumPct(long)">getCumPct</a></strong>(long&nbsp;v)</code>
+<div class="block">Returns the cumulative percentage of values less than or equal to v
+ (as a proportion between 0 and 1).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;?&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#getMode()">getMode</a></strong>()</code>
+<div class="block">Returns the mode value(s) in comparator order.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#getPct(char)">getPct</a></strong>(char&nbsp;v)</code>
+<div class="block">Returns the percentage of values that are equal to v
+ (as a proportion between 0 and 1).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#getPct(java.lang.Comparable)">getPct</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;?&gt;&nbsp;v)</code>
+<div class="block">Returns the percentage of values that are equal to v
+ (as a proportion between 0 and 1).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#getPct(int)">getPct</a></strong>(int&nbsp;v)</code>
+<div class="block">Returns the percentage of values that are equal to v
+ (as a proportion between 0 and 1).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#getPct(long)">getPct</a></strong>(long&nbsp;v)</code>
+<div class="block">Returns the percentage of values that are equal to v
+ (as a proportion between 0 and 1).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#getSumFreq()">getSumFreq</a></strong>()</code>
+<div class="block">Returns the sum of all frequencies.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#getUniqueCount()">getUniqueCount</a></strong>()</code>
+<div class="block">Returns the number of values in the frequency table.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#hashCode()">hashCode</a></strong>()</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#incrementValue(char, long)">incrementValue</a></strong>(char&nbsp;v,
+              long&nbsp;increment)</code>
+<div class="block">Increments the frequency count for v.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#incrementValue(java.lang.Comparable, long)">incrementValue</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;?&gt;&nbsp;v,
+              long&nbsp;increment)</code>
+<div class="block">Increments the frequency count for v.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#incrementValue(int, long)">incrementValue</a></strong>(int&nbsp;v,
+              long&nbsp;increment)</code>
+<div class="block">Increments the frequency count for v.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#incrementValue(long, long)">incrementValue</a></strong>(long&nbsp;v,
+              long&nbsp;increment)</code>
+<div class="block">Increments the frequency count for v.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#merge(java.util.Collection)">merge</a></strong>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../org/apache/commons/math3/stat/Frequency.html" title="class in org.apache.commons.math3.stat">Frequency</a>&gt;&nbsp;others)</code>
+<div class="block">Merge a <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> of <a href="../../../../../org/apache/commons/math3/stat/Frequency.html" title="class in org.apache.commons.math3.stat"><code>Frequency</code></a> objects into this instance.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#merge(org.apache.commons.math3.stat.Frequency)">merge</a></strong>(<a href="../../../../../org/apache/commons/math3/stat/Frequency.html" title="class in org.apache.commons.math3.stat">Frequency</a>&nbsp;other)</code>
+<div class="block">Merge another Frequency object's counts into this instance.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#toString()">toString</a></strong>()</code>
+<div class="block">Return a string representation of this frequency distribution.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&lt;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;?&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#valuesIterator()">valuesIterator</a></strong>()</code>
+<div class="block">Returns an Iterator over the set of values that have been added.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="Frequency()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Frequency</h4>
+<pre>public&nbsp;Frequency()</pre>
+<div class="block">Default constructor.</div>
+</li>
+</ul>
+<a name="Frequency(java.util.Comparator)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Frequency</h4>
+<pre>public&nbsp;Frequency(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">Comparator</a>&lt;?&gt;&nbsp;comparator)</pre>
+<div class="block">Constructor allowing values Comparator to be specified.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>comparator</code> - Comparator used to order values</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block">Return a string representation of this frequency distribution.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a string representation.</dd></dl>
+</li>
+</ul>
+<a name="addValue(java.lang.Comparable)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addValue</h4>
+<pre>public&nbsp;void&nbsp;addValue(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;?&gt;&nbsp;v)
+              throws <a href="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</a></pre>
+<div class="block">Adds 1 to the frequency count for v.
+ <p>
+ If other objects have already been added to this Frequency, v must
+ be comparable to those that have already been added.
+ </p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to add.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</a></code> - if <code>v</code> is not comparable with previous entries</dd></dl>
+</li>
+</ul>
+<a name="addValue(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addValue</h4>
+<pre>public&nbsp;void&nbsp;addValue(int&nbsp;v)
+              throws <a href="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</a></pre>
+<div class="block">Adds 1 to the frequency count for v.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to add.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</a></code> - if the table contains entries not
+ comparable to Long</dd></dl>
+</li>
+</ul>
+<a name="addValue(long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addValue</h4>
+<pre>public&nbsp;void&nbsp;addValue(long&nbsp;v)
+              throws <a href="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</a></pre>
+<div class="block">Adds 1 to the frequency count for v.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to add.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</a></code> - if the table contains entries not
+ comparable to Long</dd></dl>
+</li>
+</ul>
+<a name="addValue(char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addValue</h4>
+<pre>public&nbsp;void&nbsp;addValue(char&nbsp;v)
+              throws <a href="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</a></pre>
+<div class="block">Adds 1 to the frequency count for v.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to add.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</a></code> - if the table contains entries not
+ comparable to Char</dd></dl>
+</li>
+</ul>
+<a name="incrementValue(java.lang.Comparable, long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>incrementValue</h4>
+<pre>public&nbsp;void&nbsp;incrementValue(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;?&gt;&nbsp;v,
+                  long&nbsp;increment)
+                    throws <a href="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</a></pre>
+<div class="block">Increments the frequency count for v.
+ <p>
+ If other objects have already been added to this Frequency, v must
+ be comparable to those that have already been added.
+ </p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to add.</dd><dd><code>increment</code> - the amount by which the value should be incremented</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</a></code> - if <code>v</code> is not comparable with previous entries</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.1</dd></dl>
+</li>
+</ul>
+<a name="incrementValue(int, long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>incrementValue</h4>
+<pre>public&nbsp;void&nbsp;incrementValue(int&nbsp;v,
+                  long&nbsp;increment)
+                    throws <a href="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</a></pre>
+<div class="block">Increments the frequency count for v.
+ <p>
+ If other objects have already been added to this Frequency, v must
+ be comparable to those that have already been added.
+ </p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to add.</dd><dd><code>increment</code> - the amount by which the value should be incremented</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</a></code> - if the table contains entries not
+ comparable to Long</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.3</dd></dl>
+</li>
+</ul>
+<a name="incrementValue(long, long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>incrementValue</h4>
+<pre>public&nbsp;void&nbsp;incrementValue(long&nbsp;v,
+                  long&nbsp;increment)
+                    throws <a href="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</a></pre>
+<div class="block">Increments the frequency count for v.
+ <p>
+ If other objects have already been added to this Frequency, v must
+ be comparable to those that have already been added.
+ </p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to add.</dd><dd><code>increment</code> - the amount by which the value should be incremented</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</a></code> - if the table contains entries not
+ comparable to Long</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.3</dd></dl>
+</li>
+</ul>
+<a name="incrementValue(char, long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>incrementValue</h4>
+<pre>public&nbsp;void&nbsp;incrementValue(char&nbsp;v,
+                  long&nbsp;increment)
+                    throws <a href="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</a></pre>
+<div class="block">Increments the frequency count for v.
+ <p>
+ If other objects have already been added to this Frequency, v must
+ be comparable to those that have already been added.
+ </p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to add.</dd><dd><code>increment</code> - the amount by which the value should be incremented</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</a></code> - if the table contains entries not
+ comparable to Char</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.3</dd></dl>
+</li>
+</ul>
+<a name="clear()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clear</h4>
+<pre>public&nbsp;void&nbsp;clear()</pre>
+<div class="block">Clears the frequency table</div>
+</li>
+</ul>
+<a name="valuesIterator()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>valuesIterator</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&lt;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;?&gt;&gt;&nbsp;valuesIterator()</pre>
+<div class="block">Returns an Iterator over the set of values that have been added.
+ <p>
+ If added values are integral (i.e., integers, longs, Integers, or Longs),
+ they are converted to Longs when they are added, so the objects returned
+ by the Iterator will in this case be Longs.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>values Iterator</dd></dl>
+</li>
+</ul>
+<a name="entrySetIterator()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>entrySetIterator</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&lt;<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util">Map.Entry</a>&lt;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;?&gt;,<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&gt;&nbsp;entrySetIterator()</pre>
+<div class="block">Return an Iterator over the set of keys and values that have been added.
+ Using the entry set to iterate is more efficient in the case where you
+ need to access respective counts as well as values, since it doesn't
+ require a "get" for every key...the value is provided in the Map.Entry.
+ <p>
+ If added values are integral (i.e., integers, longs, Integers, or Longs),
+ they are converted to Longs when they are added, so the values of the
+ map entries returned by the Iterator will in this case be Longs.</p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>entry set Iterator</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.1</dd></dl>
+</li>
+</ul>
+<a name="getSumFreq()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSumFreq</h4>
+<pre>public&nbsp;long&nbsp;getSumFreq()</pre>
+<div class="block">Returns the sum of all frequencies.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the total frequency count.</dd></dl>
+</li>
+</ul>
+<a name="getCount(java.lang.Comparable)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCount</h4>
+<pre>public&nbsp;long&nbsp;getCount(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;?&gt;&nbsp;v)</pre>
+<div class="block">Returns the number of values equal to v.
+ Returns 0 if the value is not comparable.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to lookup.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the frequency of v.</dd></dl>
+</li>
+</ul>
+<a name="getCount(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCount</h4>
+<pre>public&nbsp;long&nbsp;getCount(int&nbsp;v)</pre>
+<div class="block">Returns the number of values equal to v.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to lookup.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the frequency of v.</dd></dl>
+</li>
+</ul>
+<a name="getCount(long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCount</h4>
+<pre>public&nbsp;long&nbsp;getCount(long&nbsp;v)</pre>
+<div class="block">Returns the number of values equal to v.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to lookup.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the frequency of v.</dd></dl>
+</li>
+</ul>
+<a name="getCount(char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCount</h4>
+<pre>public&nbsp;long&nbsp;getCount(char&nbsp;v)</pre>
+<div class="block">Returns the number of values equal to v.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to lookup.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the frequency of v.</dd></dl>
+</li>
+</ul>
+<a name="getUniqueCount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUniqueCount</h4>
+<pre>public&nbsp;int&nbsp;getUniqueCount()</pre>
+<div class="block">Returns the number of values in the frequency table.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the number of unique values that have been added to the frequency table.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/math3/stat/Frequency.html#valuesIterator()"><code>valuesIterator()</code></a></dd></dl>
+</li>
+</ul>
+<a name="getPct(java.lang.Comparable)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPct</h4>
+<pre>public&nbsp;double&nbsp;getPct(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;?&gt;&nbsp;v)</pre>
+<div class="block">Returns the percentage of values that are equal to v
+ (as a proportion between 0 and 1).
+ <p>
+ Returns <code>Double.NaN</code> if no values have been added.
+ Returns 0 if at least one value has been added, but v is not comparable
+ to the values set.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to lookup</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the proportion of values equal to v</dd></dl>
+</li>
+</ul>
+<a name="getPct(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPct</h4>
+<pre>public&nbsp;double&nbsp;getPct(int&nbsp;v)</pre>
+<div class="block">Returns the percentage of values that are equal to v
+ (as a proportion between 0 and 1).</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to lookup</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the proportion of values equal to v</dd></dl>
+</li>
+</ul>
+<a name="getPct(long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPct</h4>
+<pre>public&nbsp;double&nbsp;getPct(long&nbsp;v)</pre>
+<div class="block">Returns the percentage of values that are equal to v
+ (as a proportion between 0 and 1).</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to lookup</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the proportion of values equal to v</dd></dl>
+</li>
+</ul>
+<a name="getPct(char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPct</h4>
+<pre>public&nbsp;double&nbsp;getPct(char&nbsp;v)</pre>
+<div class="block">Returns the percentage of values that are equal to v
+ (as a proportion between 0 and 1).</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to lookup</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the proportion of values equal to v</dd></dl>
+</li>
+</ul>
+<a name="getCumFreq(java.lang.Comparable)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCumFreq</h4>
+<pre>public&nbsp;long&nbsp;getCumFreq(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;?&gt;&nbsp;v)</pre>
+<div class="block">Returns the cumulative frequency of values less than or equal to v.
+ <p>
+ Returns 0 if v is not comparable to the values set.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to lookup.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the proportion of values equal to v</dd></dl>
+</li>
+</ul>
+<a name="getCumFreq(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCumFreq</h4>
+<pre>public&nbsp;long&nbsp;getCumFreq(int&nbsp;v)</pre>
+<div class="block">Returns the cumulative frequency of values less than or equal to v.
+ <p>
+ Returns 0 if v is not comparable to the values set.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to lookup</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the proportion of values equal to v</dd></dl>
+</li>
+</ul>
+<a name="getCumFreq(long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCumFreq</h4>
+<pre>public&nbsp;long&nbsp;getCumFreq(long&nbsp;v)</pre>
+<div class="block">Returns the cumulative frequency of values less than or equal to v.
+ <p>
+ Returns 0 if v is not comparable to the values set.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to lookup</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the proportion of values equal to v</dd></dl>
+</li>
+</ul>
+<a name="getCumFreq(char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCumFreq</h4>
+<pre>public&nbsp;long&nbsp;getCumFreq(char&nbsp;v)</pre>
+<div class="block">Returns the cumulative frequency of values less than or equal to v.
+ <p>
+ Returns 0 if v is not comparable to the values set.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to lookup</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the proportion of values equal to v</dd></dl>
+</li>
+</ul>
+<a name="getCumPct(java.lang.Comparable)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCumPct</h4>
+<pre>public&nbsp;double&nbsp;getCumPct(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;?&gt;&nbsp;v)</pre>
+<div class="block">Returns the cumulative percentage of values less than or equal to v
+ (as a proportion between 0 and 1).
+ <p>
+ Returns <code>Double.NaN</code> if no values have been added.
+ Returns 0 if at least one value has been added, but v is not comparable
+ to the values set.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to lookup</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the proportion of values less than or equal to v</dd></dl>
+</li>
+</ul>
+<a name="getCumPct(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCumPct</h4>
+<pre>public&nbsp;double&nbsp;getCumPct(int&nbsp;v)</pre>
+<div class="block">Returns the cumulative percentage of values less than or equal to v
+ (as a proportion between 0 and 1).
+ <p>
+ Returns 0 if v is not comparable to the values set.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to lookup</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the proportion of values less than or equal to v</dd></dl>
+</li>
+</ul>
+<a name="getCumPct(long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCumPct</h4>
+<pre>public&nbsp;double&nbsp;getCumPct(long&nbsp;v)</pre>
+<div class="block">Returns the cumulative percentage of values less than or equal to v
+ (as a proportion between 0 and 1).
+ <p>
+ Returns 0 if v is not comparable to the values set.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to lookup</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the proportion of values less than or equal to v</dd></dl>
+</li>
+</ul>
+<a name="getCumPct(char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCumPct</h4>
+<pre>public&nbsp;double&nbsp;getCumPct(char&nbsp;v)</pre>
+<div class="block">Returns the cumulative percentage of values less than or equal to v
+ (as a proportion between 0 and 1).
+ <p>
+ Returns 0 if v is not comparable to the values set.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>v</code> - the value to lookup</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the proportion of values less than or equal to v</dd></dl>
+</li>
+</ul>
+<a name="getMode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMode</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;?&gt;&gt;&nbsp;getMode()</pre>
+<div class="block">Returns the mode value(s) in comparator order.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a list containing the value(s) which appear most often.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.3</dd></dl>
+</li>
+</ul>
+<a name="merge(org.apache.commons.math3.stat.Frequency)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>merge</h4>
+<pre>public&nbsp;void&nbsp;merge(<a href="../../../../../org/apache/commons/math3/stat/Frequency.html" title="class in org.apache.commons.math3.stat">Frequency</a>&nbsp;other)
+           throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></pre>
+<div class="block">Merge another Frequency object's counts into this instance.
+ This Frequency's counts will be incremented (or set when not already set)
+ by the counts represented by other.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>other</code> - the other <a href="../../../../../org/apache/commons/math3/stat/Frequency.html" title="class in org.apache.commons.math3.stat"><code>Frequency</code></a> object to be merged</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if <code>other</code> is null</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.1</dd></dl>
+</li>
+</ul>
+<a name="merge(java.util.Collection)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>merge</h4>
+<pre>public&nbsp;void&nbsp;merge(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../org/apache/commons/math3/stat/Frequency.html" title="class in org.apache.commons.math3.stat">Frequency</a>&gt;&nbsp;others)
+           throws <a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></pre>
+<div class="block">Merge a <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> of <a href="../../../../../org/apache/commons/math3/stat/Frequency.html" title="class in org.apache.commons.math3.stat"><code>Frequency</code></a> objects into this instance.
+ This Frequency's counts will be incremented (or set when not already set)
+ by the counts represented by each of the others.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>others</code> - the other <a href="../../../../../org/apache/commons/math3/stat/Frequency.html" title="class in org.apache.commons.math3.stat"><code>Frequency</code></a> objects to be merged</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></code> - if the collection is null</dd><dt><span class="strong">Since:</span></dt>
+  <dd>3.1</dd></dl>
+</li>
+</ul>
+<a name="hashCode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Frequency.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../org/apache/commons/math3/stat/StatUtils.html" title="class in org.apache.commons.math3.stat"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/math3/stat/Frequency.html" target="_top">Frames</a></li>
+<li><a href="Frequency.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2003&#x2013;2014 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

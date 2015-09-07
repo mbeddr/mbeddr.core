@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="9lvj" modelUID="r:96ef99ad-4777-4e07-b5ac-713fe7c8396a(de.itemis.mps.nativelibs.structure)" version="-1" />
+    </dependencies>
+    <rename id="9lvj.3127003635836719880" type="CONCEPT" from="Library" to="NativeLibrary" />
+  </StructureModification>
+</history>
+

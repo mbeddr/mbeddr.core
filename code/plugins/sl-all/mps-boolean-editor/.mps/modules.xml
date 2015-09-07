@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.bool.demolang/de.itemis.mps.editor.bool.demolang.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.bool/de.itemis.mps.editor.bool.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.editor.bool.runtime/de.itemis.mps.editor.bool.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.editor.bool.sandbox/de.itemis.mps.editor.bool.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>

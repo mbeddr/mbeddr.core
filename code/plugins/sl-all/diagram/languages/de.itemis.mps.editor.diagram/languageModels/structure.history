@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="-1" />
+    </dependencies>
+    <rename id="2qld.5712445629353393305" type="CONCEPT" from="Function_SetNode" to="Function_SetConnectionEndpoint" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="0" />
+    </dependencies>
+    <rename id="2qld.6237710625713942002" type="CONCEPT" from="Function_GetContentNodes" to="Content_BLQuery" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="1" />
+    </dependencies>
+    <rename id="2qld.3155126767690989914" type="CONCEPT" from="Content_Transformation" to="Content_GenericBlockQuery" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="2" />
+    </dependencies>
+    <rename id="2qld.8963411245958754161" type="CONCEPT" from="Content_Transformation_ParameterObject" to="Content_GenericBlockQuery_ParameterObject" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="3" />
+    </dependencies>
+    <rename id="2qld.8963411245957652387" type="CONCEPT" from="Content_Transformation_Query" to="Content_GenericBlockQuery_Query" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="4" />
+    </dependencies>
+    <rename id="2qld.8963411245957652387" type="CONCEPT" from="Content_GenericBlockQuery_Query" to="Content_GenericElementQuery_Query" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="5" />
+    </dependencies>
+    <rename id="2qld.3155126767690989914" type="CONCEPT" from="Content_GenericBlockQuery" to="Content_GenericBoxQuery" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="6" />
+    </dependencies>
+    <rename id="2qld.8963411245958754161" type="CONCEPT" from="Content_GenericBlockQuery_ParameterObject" to="Content_GenericElementQuery_ParameterObject" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="7" />
+    </dependencies>
+    <rename id="2qld.6554619383001456685" type="CONCEPT" from="IEndpoint" to="IEndpointReference" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="8" />
+    </dependencies>
+    <rename id="2qld.6554619383001456740" type="CONCEPT" from="BoxEndpoint" to="BoxEndpointReference" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="9" />
+    </dependencies>
+    <rename id="2qld.6554619383001705551" type="CONCEPT" from="ConditionalEndpoint" to="ConditionalEndpointReference" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="10" />
+    </dependencies>
+    <rename id="2qld.6554619383001456866" type="CONCEPT" from="PortEndpoint" to="PortEndpointReference" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="11" />
+    </dependencies>
+    <rename id="2qld.6554619383001456685" type="CONCEPT" from="IEndpointReference" to="IEndpointTarget" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="12" />
+    </dependencies>
+    <rename id="2qld.6554619383001456866" type="CONCEPT" from="PortEndpointReference" to="PortEndpointTarget" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="13" />
+    </dependencies>
+    <rename id="2qld.6554619383001705551" type="CONCEPT" from="ConditionalEndpointReference" to="ConditionalEndpointTarget" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="14" />
+    </dependencies>
+    <rename id="2qld.6554619383001456740" type="CONCEPT" from="BoxEndpointReference" to="BoxEndpointTarget" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="15" />
+    </dependencies>
+    <rename id="2qld.5490129062795541784" type="CONCEPT" from="Function_GetSubstituteInfo" to="PaletteSource_Query" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="16" />
+    </dependencies>
+    <rename id="2qld.6554619383003875357" type="CONCEPT" from="Content_GenericElementQuery_InlineEditorComponent" to="InlineEditorComponent" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="17" />
+    </dependencies>
+    <rename id="2qld.5725606875425248008" type="CHILD" from="deleteHandler" to="delete" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="18" />
+    </dependencies>
+    <rename id="2qld.9064581101900865530" type="CONCEPT" from="Content_GenericEdgeQuery_CanCreate" to="EdgeEditor_CanCreate" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="2qld" modelUID="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" version="19" />
+    </dependencies>
+    <rename id="2qld.9064581101900865529" type="CONCEPT" from="Content_GenericEdgeQuery_CreateHandler" to="EdgeEditor_CreateHandler" />
+  </StructureModification>
+</history>
+

@@ -1,0 +1,650 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>Uses of Interface org.apache.commons.math3.exception.util.ExceptionContextProvider (Apache Commons Math 3.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Interface org.apache.commons.math3.exception.util.ExceptionContextProvider (Apache Commons Math 3.3 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/apache/commons/math3/exception/util/class-use/ExceptionContextProvider.html" target="_top">Frames</a></li>
+<li><a href="ExceptionContextProvider.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<div class="header">
+<h2 title="Uses of Interface org.apache.commons.math3.exception.util.ExceptionContextProvider" class="title">Uses of Interface<br>org.apache.commons.math3.exception.util.ExceptionContextProvider</h2>
+</div>
+<div class="classUseContainer">
+<ul class="blockList">
+<li class="blockList">
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing packages, and an explanation">
+<caption><span>Packages that use <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Package</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.commons.math3.exception">org.apache.commons.math3.exception</a></td>
+<td class="colLast">
+<div class="block">Specialized exceptions for algorithms errors.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.commons.math3.fraction">org.apache.commons.math3.fraction</a></td>
+<td class="colLast">
+<div class="block">Fraction number type and fraction number formatting.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.commons.math3.genetics">org.apache.commons.math3.genetics</a></td>
+<td class="colLast">
+<div class="block">This package provides Genetic Algorithms components and implementations.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.commons.math3.geometry.euclidean.oned">org.apache.commons.math3.geometry.euclidean.oned</a></td>
+<td class="colLast">
+<div class="block">
+ This package provides basic 1D geometry components.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.commons.math3.geometry.euclidean.threed">org.apache.commons.math3.geometry.euclidean.threed</a></td>
+<td class="colLast">
+<div class="block">
+ This package provides basic 3D geometry components.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.commons.math3.geometry.spherical.oned">org.apache.commons.math3.geometry.spherical.oned</a></td>
+<td class="colLast">
+<div class="block">
+ This package provides basic geometry components on the 1-sphere.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.commons.math3.linear">org.apache.commons.math3.linear</a></td>
+<td class="colLast">
+<div class="block">Linear algebra support.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.commons.math3.ode">org.apache.commons.math3.ode</a></td>
+<td class="colLast">
+<div class="block">
+ This package provides classes to solve Ordinary Differential Equations problems.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.commons.math3.optimization.linear">org.apache.commons.math3.optimization.linear</a></td>
+<td class="colLast">
+<div class="block">This package provides optimization algorithms for linear constrained problems.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.commons.math3.stat.regression">org.apache.commons.math3.stat.regression</a></td>
+<td class="colLast">
+<div class="block">Statistical routines involving multivariate data.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<ul class="blockList">
+<li class="blockList"><a name="org.apache.commons.math3.exception">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a> in <a href="../../../../../../../org/apache/commons/math3/exception/package-summary.html">org.apache.commons.math3.exception</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../../../org/apache/commons/math3/exception/package-summary.html">org.apache.commons.math3.exception</a> that implement <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/ConvergenceException.html" title="class in org.apache.commons.math3.exception">ConvergenceException</a></strong></code>
+<div class="block">Error thrown when a numerical computation can not be performed because the
+ numerical result failed to converge to a finite value.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></strong></code>
+<div class="block">Exception to be thrown when two dimensions differ.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/InsufficientDataException.html" title="class in org.apache.commons.math3.exception">InsufficientDataException</a></strong></code>
+<div class="block">Exception to be thrown when there is insufficient data to perform a computation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/MathArithmeticException.html" title="class in org.apache.commons.math3.exception">MathArithmeticException</a></strong></code>
+<div class="block">Base class for arithmetic exceptions.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/MathIllegalArgumentException.html" title="class in org.apache.commons.math3.exception">MathIllegalArgumentException</a></strong></code>
+<div class="block">Base class for all preconditions violation exceptions.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/MathIllegalNumberException.html" title="class in org.apache.commons.math3.exception">MathIllegalNumberException</a></strong></code>
+<div class="block">Base class for exceptions raised by a wrong number.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/MathIllegalStateException.html" title="class in org.apache.commons.math3.exception">MathIllegalStateException</a></strong></code>
+<div class="block">Base class for all exceptions that signal a mismatch between the
+ current state and the user's expectations.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/MathInternalError.html" title="class in org.apache.commons.math3.exception">MathInternalError</a></strong></code>
+<div class="block">Exception triggered when something that shouldn't happen does happen.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/MathParseException.html" title="class in org.apache.commons.math3.exception">MathParseException</a></strong></code>
+<div class="block">Class to signal parse failures.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/MathRuntimeException.html" title="class in org.apache.commons.math3.exception">MathRuntimeException</a></strong></code>
+<div class="block">As of release 4.0, all exceptions thrown by the Commons Math code (except
+ <a href="../../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception"><code>NullArgumentException</code></a>) inherit from this class.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/MathUnsupportedOperationException.html" title="class in org.apache.commons.math3.exception">MathUnsupportedOperationException</a></strong></code>
+<div class="block">Base class for all unsupported features.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/MaxCountExceededException.html" title="class in org.apache.commons.math3.exception">MaxCountExceededException</a></strong></code>
+<div class="block">Exception to be thrown when some counter maximum value is exceeded.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/MultiDimensionMismatchException.html" title="class in org.apache.commons.math3.exception">MultiDimensionMismatchException</a></strong></code>
+<div class="block">Exception to be thrown when two sets of dimensions differ.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/NoBracketingException.html" title="class in org.apache.commons.math3.exception">NoBracketingException</a></strong></code>
+<div class="block">Exception to be thrown when function values have the same sign at both
+ ends of an interval.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/NoDataException.html" title="class in org.apache.commons.math3.exception">NoDataException</a></strong></code>
+<div class="block">Exception to be thrown when the required data is missing.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/NonMonotonicSequenceException.html" title="class in org.apache.commons.math3.exception">NonMonotonicSequenceException</a></strong></code>
+<div class="block">Exception to be thrown when the a sequence of values is not monotonically
+ increasing or decreasing.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/NotANumberException.html" title="class in org.apache.commons.math3.exception">NotANumberException</a></strong></code>
+<div class="block">Exception to be thrown when a number is not a number.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/NotFiniteNumberException.html" title="class in org.apache.commons.math3.exception">NotFiniteNumberException</a></strong></code>
+<div class="block">Exception to be thrown when a number is not finite.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/NotPositiveException.html" title="class in org.apache.commons.math3.exception">NotPositiveException</a></strong></code>
+<div class="block">Exception to be thrown when the argument is negative.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/NotStrictlyPositiveException.html" title="class in org.apache.commons.math3.exception">NotStrictlyPositiveException</a></strong></code>
+<div class="block">Exception to be thrown when the argument is not greater than 0.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/NullArgumentException.html" title="class in org.apache.commons.math3.exception">NullArgumentException</a></strong></code>
+<div class="block">All conditions checks that fail due to a <code>null</code> argument must throw
+ this exception.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/NumberIsTooLargeException.html" title="class in org.apache.commons.math3.exception">NumberIsTooLargeException</a></strong></code>
+<div class="block">Exception to be thrown when a number is too large.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/NumberIsTooSmallException.html" title="class in org.apache.commons.math3.exception">NumberIsTooSmallException</a></strong></code>
+<div class="block">Exception to be thrown when a number is too small.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/OutOfRangeException.html" title="class in org.apache.commons.math3.exception">OutOfRangeException</a></strong></code>
+<div class="block">Exception to be thrown when some argument is out of range.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/TooManyEvaluationsException.html" title="class in org.apache.commons.math3.exception">TooManyEvaluationsException</a></strong></code>
+<div class="block">Exception to be thrown when the maximal number of evaluations is exceeded.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/TooManyIterationsException.html" title="class in org.apache.commons.math3.exception">TooManyIterationsException</a></strong></code>
+<div class="block">Exception to be thrown when the maximal number of iterations is exceeded.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/exception/ZeroException.html" title="class in org.apache.commons.math3.exception">ZeroException</a></strong></code>
+<div class="block">Exception to be thrown when zero is provided where it is not allowed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.commons.math3.fraction">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a> in <a href="../../../../../../../org/apache/commons/math3/fraction/package-summary.html">org.apache.commons.math3.fraction</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../../../org/apache/commons/math3/fraction/package-summary.html">org.apache.commons.math3.fraction</a> that implement <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/fraction/FractionConversionException.html" title="class in org.apache.commons.math3.fraction">FractionConversionException</a></strong></code>
+<div class="block">Error thrown when a double value cannot be converted to a fraction
+ in the allowed number of iterations.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.commons.math3.genetics">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a> in <a href="../../../../../../../org/apache/commons/math3/genetics/package-summary.html">org.apache.commons.math3.genetics</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../../../org/apache/commons/math3/genetics/package-summary.html">org.apache.commons.math3.genetics</a> that implement <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/genetics/InvalidRepresentationException.html" title="class in org.apache.commons.math3.genetics">InvalidRepresentationException</a></strong></code>
+<div class="block">Exception indicating that the representation of a chromosome is not valid.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.commons.math3.geometry.euclidean.oned">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a> in <a href="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/package-summary.html">org.apache.commons.math3.geometry.euclidean.oned</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/package-summary.html">org.apache.commons.math3.geometry.euclidean.oned</a> that implement <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/geometry/euclidean/oned/Euclidean1D.NoSubSpaceException.html" title="class in org.apache.commons.math3.geometry.euclidean.oned">Euclidean1D.NoSubSpaceException</a></strong></code>
+<div class="block">Specialized exception for inexistent sub-space.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.commons.math3.geometry.euclidean.threed">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a> in <a href="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/package-summary.html">org.apache.commons.math3.geometry.euclidean.threed</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/package-summary.html">org.apache.commons.math3.geometry.euclidean.threed</a> that implement <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/CardanEulerSingularityException.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">CardanEulerSingularityException</a></strong></code>
+<div class="block">This class represents exceptions thrown while extractiong Cardan
+ or Euler angles from a rotation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/geometry/euclidean/threed/NotARotationMatrixException.html" title="class in org.apache.commons.math3.geometry.euclidean.threed">NotARotationMatrixException</a></strong></code>
+<div class="block">This class represents exceptions thrown while building rotations
+ from matrices.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.commons.math3.geometry.spherical.oned">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a> in <a href="../../../../../../../org/apache/commons/math3/geometry/spherical/oned/package-summary.html">org.apache.commons.math3.geometry.spherical.oned</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../../../org/apache/commons/math3/geometry/spherical/oned/package-summary.html">org.apache.commons.math3.geometry.spherical.oned</a> that implement <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/geometry/spherical/oned/ArcsSet.InconsistentStateAt2PiWrapping.html" title="class in org.apache.commons.math3.geometry.spherical.oned">ArcsSet.InconsistentStateAt2PiWrapping</a></strong></code>
+<div class="block">Specialized exception for inconsistent BSP tree state inconsistency.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/geometry/spherical/oned/Sphere1D.NoSubSpaceException.html" title="class in org.apache.commons.math3.geometry.spherical.oned">Sphere1D.NoSubSpaceException</a></strong></code>
+<div class="block">Specialized exception for inexistent sub-space.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.commons.math3.linear">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a> in <a href="../../../../../../../org/apache/commons/math3/linear/package-summary.html">org.apache.commons.math3.linear</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../../../org/apache/commons/math3/linear/package-summary.html">org.apache.commons.math3.linear</a> that implement <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/linear/IllConditionedOperatorException.html" title="class in org.apache.commons.math3.linear">IllConditionedOperatorException</a></strong></code>
+<div class="block">An exception to be thrown when the condition number of a
+ <a href="../../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear"><code>RealLinearOperator</code></a> is too high.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/linear/MatrixDimensionMismatchException.html" title="class in org.apache.commons.math3.linear">MatrixDimensionMismatchException</a></strong></code>
+<div class="block">Exception to be thrown when either the number of rows or the number of
+ columns of a matrix do not match the expected values.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/linear/NonPositiveDefiniteMatrixException.html" title="class in org.apache.commons.math3.linear">NonPositiveDefiniteMatrixException</a></strong></code>
+<div class="block">Exception to be thrown when a positive definite matrix is expected.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/linear/NonPositiveDefiniteOperatorException.html" title="class in org.apache.commons.math3.linear">NonPositiveDefiniteOperatorException</a></strong></code>
+<div class="block">Exception to be thrown when a symmetric, definite positive
+ <a href="../../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear"><code>RealLinearOperator</code></a> is expected.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/linear/NonSelfAdjointOperatorException.html" title="class in org.apache.commons.math3.linear">NonSelfAdjointOperatorException</a></strong></code>
+<div class="block">Exception to be thrown when a self-adjoint <a href="../../../../../../../org/apache/commons/math3/linear/RealLinearOperator.html" title="class in org.apache.commons.math3.linear"><code>RealLinearOperator</code></a>
+ is expected.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/linear/NonSquareMatrixException.html" title="class in org.apache.commons.math3.linear">NonSquareMatrixException</a></strong></code>
+<div class="block">Exception to be thrown when a square matrix is expected.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/linear/NonSquareOperatorException.html" title="class in org.apache.commons.math3.linear">NonSquareOperatorException</a></strong></code>
+<div class="block">Exception to be thrown when a square linear operator is expected.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/linear/NonSymmetricMatrixException.html" title="class in org.apache.commons.math3.linear">NonSymmetricMatrixException</a></strong></code>
+<div class="block">Exception to be thrown when a symmetric matrix is expected.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/linear/SingularMatrixException.html" title="class in org.apache.commons.math3.linear">SingularMatrixException</a></strong></code>
+<div class="block">Exception to be thrown when a non-singular matrix is expected.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/linear/SingularOperatorException.html" title="class in org.apache.commons.math3.linear">SingularOperatorException</a></strong></code>
+<div class="block">Exception to be thrown when trying to invert a singular operator.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.commons.math3.ode">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a> in <a href="../../../../../../../org/apache/commons/math3/ode/package-summary.html">org.apache.commons.math3.ode</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../../../org/apache/commons/math3/ode/package-summary.html">org.apache.commons.math3.ode</a> that implement <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/ode/JacobianMatrices.MismatchedEquations.html" title="class in org.apache.commons.math3.ode">JacobianMatrices.MismatchedEquations</a></strong></code>
+<div class="block">Special exception for equations mismatch.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/ode/UnknownParameterException.html" title="class in org.apache.commons.math3.ode">UnknownParameterException</a></strong></code>
+<div class="block">Exception to be thrown when a parameter is unknown.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.commons.math3.optimization.linear">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a> in <a href="../../../../../../../org/apache/commons/math3/optimization/linear/package-summary.html">org.apache.commons.math3.optimization.linear</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../../../org/apache/commons/math3/optimization/linear/package-summary.html">org.apache.commons.math3.optimization.linear</a> that implement <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/optimization/linear/NoFeasibleSolutionException.html" title="class in org.apache.commons.math3.optimization.linear">NoFeasibleSolutionException</a></strong></code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>As of 3.1 (to be removed in 4.0).</i></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/optimization/linear/UnboundedSolutionException.html" title="class in org.apache.commons.math3.optimization.linear">UnboundedSolutionException</a></strong></code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>As of 3.1 (to be removed in 4.0).</i></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.commons.math3.stat.regression">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a> in <a href="../../../../../../../org/apache/commons/math3/stat/regression/package-summary.html">org.apache.commons.math3.stat.regression</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../../../org/apache/commons/math3/stat/regression/package-summary.html">org.apache.commons.math3.stat.regression</a> that implement <a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">ExceptionContextProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/commons/math3/stat/regression/ModelSpecificationException.html" title="class in org.apache.commons.math3.stat.regression">ModelSpecificationException</a></strong></code>
+<div class="block">Exception thrown when a regression model is not correctly specified.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../../../../../../../org/apache/commons/math3/exception/util/ExceptionContextProvider.html" title="interface in org.apache.commons.math3.exception.util">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/apache/commons/math3/exception/util/class-use/ExceptionContextProvider.html" target="_top">Frames</a></li>
+<li><a href="ExceptionContextProvider.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2003&#x2013;2014 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

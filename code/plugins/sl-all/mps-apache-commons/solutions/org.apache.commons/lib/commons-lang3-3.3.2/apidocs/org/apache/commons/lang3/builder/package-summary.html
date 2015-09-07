@@ -1,0 +1,251 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>org.apache.commons.lang3.builder (Apache Commons Lang 3.3.2 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="org.apache.commons.lang3.builder (Apache Commons Lang 3.3.2 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li class="navBarCell1Rev">Package</li>
+<li>Class</li>
+<li><a href="package-use.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/lang3/package-summary.html">Prev Package</a></li>
+<li><a href="../../../../../org/apache/commons/lang3/concurrent/package-summary.html">Next Package</a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/lang3/builder/package-summary.html" target="_top">Frames</a></li>
+<li><a href="package-summary.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<div class="header">
+<h1 title="Package" class="title">Package&nbsp;org.apache.commons.lang3.builder</h1>
+<div class="docSummary">
+<div class="block">Assists in creating consistent <code>equals(Object)</code>, <code>toString()</code>, <code>hashCode()</code>, and <code>compareTo(Object)</code> methods.</div>
+</div>
+<p>See:&nbsp;<a href="#package_description">Description</a></p>
+</div>
+<div class="contentContainer">
+<ul class="blockList">
+<li class="blockList">
+<table class="packageSummary" border="0" cellpadding="3" cellspacing="0" summary="Interface Summary table, listing interfaces, and an explanation">
+<caption><span>Interface Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/lang3/builder/Builder.html" title="interface in org.apache.commons.lang3.builder">Builder</a>&lt;T&gt;</td>
+<td class="colLast">
+<div class="block">
+ The Builder interface is designed to designate a class as a <em>builder</em> 
+ object in the Builder design pattern.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/lang3/builder/Diffable.html" title="interface in org.apache.commons.lang3.builder">Diffable</a>&lt;T&gt;</td>
+<td class="colLast">
+<div class="block"><code>Diffable</code> classes can be compared with other objects
+ for differences.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="packageSummary" border="0" cellpadding="3" cellspacing="0" summary="Class Summary table, listing classes, and an explanation">
+<caption><span>Class Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/lang3/builder/CompareToBuilder.html" title="class in org.apache.commons.lang3.builder">CompareToBuilder</a></td>
+<td class="colLast">
+<div class="block">Assists in implementing <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true#compareTo(T)" title="class or interface in java.lang"><code>Comparable.compareTo(Object)</code></a> methods.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/lang3/builder/Diff.html" title="class in org.apache.commons.lang3.builder">Diff</a>&lt;T&gt;</td>
+<td class="colLast">
+<div class="block">
+ A <code>Diff</code> contains the differences between two <a href="../../../../../org/apache/commons/lang3/builder/Diffable.html" title="interface in org.apache.commons.lang3.builder"><code>Diffable</code></a> class
+ fields.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/lang3/builder/DiffBuilder.html" title="class in org.apache.commons.lang3.builder">DiffBuilder</a></td>
+<td class="colLast">
+<div class="block">
+ Assists in implementing <a href="../../../../../org/apache/commons/lang3/builder/Diffable.html#diff(T)"><code>Diffable.diff(Object)</code></a> methods.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/lang3/builder/DiffResult.html" title="class in org.apache.commons.lang3.builder">DiffResult</a></td>
+<td class="colLast">
+<div class="block">
+ A <code>DiffResult</code> contains a collection of the differences between two
+ <a href="../../../../../org/apache/commons/lang3/builder/Diffable.html" title="interface in org.apache.commons.lang3.builder"><code>Diffable</code></a> objects.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/lang3/builder/EqualsBuilder.html" title="class in org.apache.commons.lang3.builder">EqualsBuilder</a></td>
+<td class="colLast">
+<div class="block">Assists in implementing <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang"><code>Object.equals(Object)</code></a> methods.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/lang3/builder/HashCodeBuilder.html" title="class in org.apache.commons.lang3.builder">HashCodeBuilder</a></td>
+<td class="colLast">
+<div class="block">
+ Assists in implementing <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang"><code>Object.hashCode()</code></a> methods.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/lang3/builder/RecursiveToStringStyle.html" title="class in org.apache.commons.lang3.builder">RecursiveToStringStyle</a></td>
+<td class="colLast">
+<div class="block">Works with <a href="../../../../../org/apache/commons/lang3/builder/ToStringBuilder.html" title="class in org.apache.commons.lang3.builder"><code>ToStringBuilder</code></a> to create a "deep" <code>toString</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/lang3/builder/ReflectionToStringBuilder.html" title="class in org.apache.commons.lang3.builder">ReflectionToStringBuilder</a></td>
+<td class="colLast">
+<div class="block">
+ Assists in implementing <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang"><code>Object.toString()</code></a> methods using reflection.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/lang3/builder/StandardToStringStyle.html" title="class in org.apache.commons.lang3.builder">StandardToStringStyle</a></td>
+<td class="colLast">
+<div class="block">Works with <a href="../../../../../org/apache/commons/lang3/builder/ToStringBuilder.html" title="class in org.apache.commons.lang3.builder"><code>ToStringBuilder</code></a> to create a <code>toString</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/lang3/builder/ToStringBuilder.html" title="class in org.apache.commons.lang3.builder">ToStringBuilder</a></td>
+<td class="colLast">
+<div class="block">Assists in implementing <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang"><code>Object.toString()</code></a> methods.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/commons/lang3/builder/ToStringStyle.html" title="class in org.apache.commons.lang3.builder">ToStringStyle</a></td>
+<td class="colLast">
+<div class="block">Controls <code>String</code> formatting for <a href="../../../../../org/apache/commons/lang3/builder/ToStringBuilder.html" title="class in org.apache.commons.lang3.builder"><code>ToStringBuilder</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<a name="package_description">
+<!--   -->
+</a>
+<h2 title="Package org.apache.commons.lang3.builder Description">Package org.apache.commons.lang3.builder Description</h2>
+<div class="block"><p>Assists in creating consistent <code>equals(Object)</code>, <code>toString()</code>, <code>hashCode()</code>, and <code>compareTo(Object)</code> methods.
+ These classes are not thread-safe.</p>
+
+ <p>When you write a <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang"><code>hashCode()</code></a>, do you check Bloch's Effective Java? No?
+ You just hack in a quick number?
+ Well <a href="../../../../../org/apache/commons/lang3/builder/HashCodeBuilder.html" title="class in org.apache.commons.lang3.builder"><code>HashCodeBuilder</code></a> will save your day.
+ It, and its buddies (<a href="../../../../../org/apache/commons/lang3/builder/EqualsBuilder.html" title="class in org.apache.commons.lang3.builder"><code>EqualsBuilder</code></a>, <a href="../../../../../org/apache/commons/lang3/builder/CompareToBuilder.html" title="class in org.apache.commons.lang3.builder"><code>CompareToBuilder</code></a>, <a href="../../../../../org/apache/commons/lang3/builder/ToStringBuilder.html" title="class in org.apache.commons.lang3.builder"><code>ToStringBuilder</code></a>), take care of the nasty bits while you focus on the important bits, like which fields will go into making up the hashcode.</p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>1.0</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>$Id: package-info.java 1559146 2014-01-17 15:23:19Z britter $</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang"><code>Object.equals(Object)</code></a>, 
+<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang"><code>Object.toString()</code></a>, 
+<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang"><code>Object.hashCode()</code></a>, 
+<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true#compareTo(T)" title="class or interface in java.lang"><code>Comparable.compareTo(Object)</code></a></dd></dl>
+</div>
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li class="navBarCell1Rev">Package</li>
+<li>Class</li>
+<li><a href="package-use.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/lang3/package-summary.html">Prev Package</a></li>
+<li><a href="../../../../../org/apache/commons/lang3/concurrent/package-summary.html">Next Package</a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/lang3/builder/package-summary.html" target="_top">Frames</a></li>
+<li><a href="package-summary.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2014 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

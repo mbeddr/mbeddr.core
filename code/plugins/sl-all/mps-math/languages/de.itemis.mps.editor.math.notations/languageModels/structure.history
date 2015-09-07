@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="diuo" modelUID="r:98c96203-129a-452b-86c3-5a06ed0a0d9e(de.itemis.mps.editor.math.notations.structure)" version="0" />
+    </dependencies>
+    <rename id="diuo.8658283006839229761" type="CHILD" from="base" to="nomal" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="diuo" modelUID="r:98c96203-129a-452b-86c3-5a06ed0a0d9e(de.itemis.mps.editor.math.notations.structure)" version="1" />
+    </dependencies>
+    <rename id="diuo.8658283006839229766" type="CHILD" from="exponent" to="superscript" />
+  </StructureModification>
+</history>
+

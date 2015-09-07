@@ -1,0 +1,429 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>ImmutablePair (Apache Commons Lang 3.3.2 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ImmutablePair (Apache Commons Lang 3.3.2 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ImmutablePair.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../org/apache/commons/lang3/tuple/ImmutableTriple.html" title="class in org.apache.commons.lang3.tuple"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/lang3/tuple/ImmutablePair.html" target="_top">Frames</a></li>
+<li><a href="ImmutablePair.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.commons.lang3.tuple</div>
+<h2 title="Class ImmutablePair" class="title">Class ImmutablePair&lt;L,R&gt;</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../org/apache/commons/lang3/tuple/Pair.html" title="class in org.apache.commons.lang3.tuple">org.apache.commons.lang3.tuple.Pair</a>&lt;L,R&gt;</li>
+<li>
+<ul class="inheritance">
+<li>org.apache.commons.lang3.tuple.ImmutablePair&lt;L,R&gt;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>L</code> - the left element type</dd><dd><code>R</code> - the right element type</dd></dl>
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../../org/apache/commons/lang3/tuple/Pair.html" title="class in org.apache.commons.lang3.tuple">Pair</a>&lt;L,R&gt;&gt;, <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util">Map.Entry</a>&lt;L,R&gt;</dd>
+</dl>
+<hr>
+<br>
+<pre>public final class <span class="strong">ImmutablePair&lt;L,R&gt;</span>
+extends <a href="../../../../../org/apache/commons/lang3/tuple/Pair.html" title="class in org.apache.commons.lang3.tuple">Pair</a>&lt;L,R&gt;</pre>
+<div class="block"><p>An immutable pair consisting of two <code>Object</code> elements.</p>
+ 
+ <p>Although the implementation is immutable, there is no restriction on the objects
+ that may be stored. If mutable objects are stored in the pair, then the pair
+ itself effectively becomes mutable. The class is also not <code>final</code>, so a subclass
+ could add undesirable behaviour.</p>
+ 
+ <p>#ThreadSafe# if both paired objects are thread-safe</p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Lang 3.0</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>$Id: ImmutablePair.java 1436768 2013-01-22 07:07:42Z ggregory $</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../serialized-form.html#org.apache.commons.lang3.tuple.ImmutablePair">Serialized Form</a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">L</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html#left">left</a></strong></code>
+<div class="block">Left object</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">R</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html#right">right</a></strong></code>
+<div class="block">Right object</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html#ImmutablePair(L, R)">ImmutablePair</a></strong>(<a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">L</a>&nbsp;left,
+             <a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">R</a>&nbsp;right)</code>
+<div class="block">Create a new pair instance.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">L</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html#getLeft()">getLeft</a></strong>()</code>
+<div class="block">Gets the left element from this pair.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">R</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html#getRight()">getRight</a></strong>()</code>
+<div class="block">Gets the right element from this pair.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;L,R&gt;&nbsp;<a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="class in org.apache.commons.lang3.tuple">ImmutablePair</a>&lt;L,R&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html#of(L, R)">of</a></strong>(L&nbsp;left,
+  R&nbsp;right)</code>
+<div class="block">Obtains an immutable pair of from two objects inferring the generic types.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">R</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html#setValue(R)">setValue</a></strong>(<a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">R</a>&nbsp;value)</code>
+<div class="block">Throws <code>UnsupportedOperationException</code>.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.apache.commons.lang3.tuple.Pair">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.apache.commons.lang3.tuple.<a href="../../../../../org/apache/commons/lang3/tuple/Pair.html" title="class in org.apache.commons.lang3.tuple">Pair</a></h3>
+<code><a href="../../../../../org/apache/commons/lang3/tuple/Pair.html#compareTo(org.apache.commons.lang3.tuple.Pair)">compareTo</a>, <a href="../../../../../org/apache/commons/lang3/tuple/Pair.html#equals(java.lang.Object)">equals</a>, <a href="../../../../../org/apache/commons/lang3/tuple/Pair.html#getKey()">getKey</a>, <a href="../../../../../org/apache/commons/lang3/tuple/Pair.html#getValue()">getValue</a>, <a href="../../../../../org/apache/commons/lang3/tuple/Pair.html#hashCode()">hashCode</a>, <a href="../../../../../org/apache/commons/lang3/tuple/Pair.html#toString()">toString</a>, <a href="../../../../../org/apache/commons/lang3/tuple/Pair.html#toString(java.lang.String)">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="left">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>left</h4>
+<pre>public final&nbsp;<a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">L</a> left</pre>
+<div class="block">Left object</div>
+</li>
+</ul>
+<a name="right">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>right</h4>
+<pre>public final&nbsp;<a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">R</a> right</pre>
+<div class="block">Right object</div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="ImmutablePair(java.lang.Object,java.lang.Object)">
+<!--   -->
+</a><a name="ImmutablePair(L, R)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ImmutablePair</h4>
+<pre>public&nbsp;ImmutablePair(<a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">L</a>&nbsp;left,
+             <a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">R</a>&nbsp;right)</pre>
+<div class="block">Create a new pair instance.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>left</code> - the left value, may be null</dd><dd><code>right</code> - the right value, may be null</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="of(java.lang.Object,java.lang.Object)">
+<!--   -->
+</a><a name="of(L, R)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>of</h4>
+<pre>public static&nbsp;&lt;L,R&gt;&nbsp;<a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="class in org.apache.commons.lang3.tuple">ImmutablePair</a>&lt;L,R&gt;&nbsp;of(L&nbsp;left,
+                          R&nbsp;right)</pre>
+<div class="block"><p>Obtains an immutable pair of from two objects inferring the generic types.</p>
+ 
+ <p>This factory allows the pair to be created using inference to
+ obtain the generic types.</p></div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>L</code> - the left element type</dd><dd><code>R</code> - the right element type</dd><dt><span class="strong">Parameters:</span></dt><dd><code>left</code> - the left element, may be null</dd><dd><code>right</code> - the right element, may be null</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a pair formed from the two parameters, not null</dd></dl>
+</li>
+</ul>
+<a name="getLeft()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLeft</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">L</a>&nbsp;getLeft()</pre>
+<div class="block"><p>Gets the left element from this pair.</p>
+ 
+ <p>When treated as a key-value pair, this is the key.</p></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/lang3/tuple/Pair.html#getLeft()">getLeft</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/commons/lang3/tuple/Pair.html" title="class in org.apache.commons.lang3.tuple">Pair</a>&lt;<a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">L</a>,<a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">R</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the left element, may be null</dd></dl>
+</li>
+</ul>
+<a name="getRight()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRight</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">R</a>&nbsp;getRight()</pre>
+<div class="block"><p>Gets the right element from this pair.</p>
+ 
+ <p>When treated as a key-value pair, this is the value.</p></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/lang3/tuple/Pair.html#getRight()">getRight</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/commons/lang3/tuple/Pair.html" title="class in org.apache.commons.lang3.tuple">Pair</a>&lt;<a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">L</a>,<a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">R</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the right element, may be null</dd></dl>
+</li>
+</ul>
+<a name="setValue(java.lang.Object)">
+<!--   -->
+</a><a name="setValue(R)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setValue</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">R</a>&nbsp;setValue(<a href="../../../../../org/apache/commons/lang3/tuple/ImmutablePair.html" title="type parameter in ImmutablePair">R</a>&nbsp;value)</pre>
+<div class="block"><p>Throws <code>UnsupportedOperationException</code>.</p>
+ 
+ <p>This pair is immutable, so this operation is not supported.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>value</code> - the value to set</dd>
+<dt><span class="strong">Returns:</span></dt><dd>never</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang">UnsupportedOperationException</a></code> - as this operation is not supported</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ImmutablePair.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../org/apache/commons/lang3/tuple/ImmutableTriple.html" title="class in org.apache.commons.lang3.tuple"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/lang3/tuple/ImmutablePair.html" target="_top">Frames</a></li>
+<li><a href="ImmutablePair.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2014 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

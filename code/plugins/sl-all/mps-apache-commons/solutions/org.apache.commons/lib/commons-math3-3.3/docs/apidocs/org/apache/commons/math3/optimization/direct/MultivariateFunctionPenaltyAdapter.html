@@ -1,0 +1,367 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>MultivariateFunctionPenaltyAdapter (Apache Commons Math 3.3 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="MultivariateFunctionPenaltyAdapter (Apache Commons Math 3.3 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/MultivariateFunctionPenaltyAdapter.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/apache/commons/math3/optimization/direct/MultivariateFunctionMappingAdapter.html" title="class in org.apache.commons.math3.optimization.direct"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/apache/commons/math3/optimization/direct/NelderMeadSimplex.html" title="class in org.apache.commons.math3.optimization.direct"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/apache/commons/math3/optimization/direct/MultivariateFunctionPenaltyAdapter.html" target="_top">Frames</a></li>
+<li><a href="MultivariateFunctionPenaltyAdapter.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.commons.math3.optimization.direct</div>
+<h2 title="Class MultivariateFunctionPenaltyAdapter" class="title">Class MultivariateFunctionPenaltyAdapter</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.commons.math3.optimization.direct.MultivariateFunctionPenaltyAdapter</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</a></dd>
+</dl>
+<hr>
+<div class="block"><strong>Deprecated.</strong>&nbsp;
+<div class="block"><i>As of 3.1 (to be removed in 4.0).</i></div>
+</div>
+<br>
+<pre><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public class <span class="strong">MultivariateFunctionPenaltyAdapter</span>
+extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</a></pre>
+<div class="block"><p>Adapter extending bounded <a href="../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis"><code>MultivariateFunction</code></a> to an unbouded
+ domain using a penalty function.</p>
+
+ <p>
+ This adapter can be used to wrap functions subject to simple bounds on
+ parameters so they can be used by optimizers that do <em>not</em> directly
+ support simple bounds.
+ </p>
+ <p>
+ The principle is that the user function that will be wrapped will see its
+ parameters bounded as required, i.e when its <code>value</code> method is called
+ with argument array <code>point</code>, the elements array will fulfill requirement
+ <code>lower[i] &lt;= point[i] &lt;= upper[i]</code> for all i. Some of the components
+ may be unbounded or bounded only on one side if the corresponding bound is
+ set to an infinite value. The optimizer will not manage the user function by
+ itself, but it will handle this adapter and it is this adapter that will take
+ care the bounds are fulfilled. The adapter <a href="../../../../../../org/apache/commons/math3/optimization/direct/MultivariateFunctionPenaltyAdapter.html#value(double[])"><code>value(double[])</code></a> method will
+ be called by the optimizer with unbound parameters, and the adapter will check
+ if the parameters is within range or not. If it is in range, then the underlying
+ user function will be called, and if it is not the value of a penalty function
+ will be returned instead.
+ </p>
+ <p>
+ This adapter is only a poor man solution to simple bounds optimization constraints
+ that can be used with simple optimizers like <a href="../../../../../../org/apache/commons/math3/optimization/direct/SimplexOptimizer.html" title="class in org.apache.commons.math3.optimization.direct"><code>SimplexOptimizer</code></a> with <a href="../../../../../../org/apache/commons/math3/optimization/direct/NelderMeadSimplex.html" title="class in org.apache.commons.math3.optimization.direct"><code>NelderMeadSimplex</code></a> or <a href="../../../../../../org/apache/commons/math3/optimization/direct/MultiDirectionalSimplex.html" title="class in org.apache.commons.math3.optimization.direct"><code>MultiDirectionalSimplex</code></a>. A better solution is to use
+ an optimizer that directly supports simple bounds like <a href="../../../../../../org/apache/commons/math3/optimization/direct/CMAESOptimizer.html" title="class in org.apache.commons.math3.optimization.direct"><code>CMAESOptimizer</code></a> or
+ <a href="../../../../../../org/apache/commons/math3/optimization/direct/BOBYQAOptimizer.html" title="class in org.apache.commons.math3.optimization.direct"><code>BOBYQAOptimizer</code></a>. One caveat of this poor man solution is that if start point
+ or start simplex is completely outside of the allowed range, only the penalty function
+ is used, and the optimizer may converge without ever entering the range.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>3.0</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>$Id: MultivariateFunctionPenaltyAdapter.java 1422230 2012-12-15 12:11:13Z erans $</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../org/apache/commons/math3/optimization/direct/MultivariateFunctionMappingAdapter.html" title="class in org.apache.commons.math3.optimization.direct"><code>MultivariateFunctionMappingAdapter</code></a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/apache/commons/math3/optimization/direct/MultivariateFunctionPenaltyAdapter.html#MultivariateFunctionPenaltyAdapter(org.apache.commons.math3.analysis.MultivariateFunction, double[], double[], double, double[])">MultivariateFunctionPenaltyAdapter</a></strong>(<a href="../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</a>&nbsp;bounded,
+                                  double[]&nbsp;lower,
+                                  double[]&nbsp;upper,
+                                  double&nbsp;offset,
+                                  double[]&nbsp;scale)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+<div class="block">Simple constructor.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/commons/math3/optimization/direct/MultivariateFunctionPenaltyAdapter.html#value(double[])">value</a></strong>(double[]&nbsp;point)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+<div class="block">Compute the underlying function value from an unbounded point.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="MultivariateFunctionPenaltyAdapter(org.apache.commons.math3.analysis.MultivariateFunction, double[], double[], double, double[])">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>MultivariateFunctionPenaltyAdapter</h4>
+<pre>public&nbsp;MultivariateFunctionPenaltyAdapter(<a href="../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</a>&nbsp;bounded,
+                                  double[]&nbsp;lower,
+                                  double[]&nbsp;upper,
+                                  double&nbsp;offset,
+                                  double[]&nbsp;scale)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<div class="block">Simple constructor.
+ <p>
+ When the optimizer provided points are out of range, the value of the
+ penalty function will be used instead of the value of the underlying
+ function. In order for this penalty to be effective in rejecting this
+ point during the optimization process, the penalty function value should
+ be defined with care. This value is computed as:
+ <pre>
+   penalty(point) = offset + &sum;<sub>i</sub>[scale[i] * &radic;|point[i]-boundary[i]|]
+ </pre>
+ where indices i correspond to all the components that violates their boundaries.
+ </p>
+ <p>
+ So when attempting a function minimization, offset should be larger than
+ the maximum expected value of the underlying function and scale components
+ should all be positive. When attempting a function maximization, offset
+ should be lesser than the minimum expected value of the underlying function
+ and scale components should all be negative.
+ minimization, and lesser than the minimum expected value of the underlying
+ function when attempting maximization.
+ </p>
+ <p>
+ These choices for the penalty function have two properties. First, all out
+ of range points will return a function value that is worse than the value
+ returned by any in range point. Second, the penalty is worse for large
+ boundaries violation than for small violations, so the optimizer has an hint
+ about the direction in which it should search for acceptable points.
+ </p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>bounded</code> - bounded function</dd><dd><code>lower</code> - lower bounds for each element of the input parameters array
+ (some elements may be set to <code>Double.NEGATIVE_INFINITY</code> for
+ unbounded values)</dd><dd><code>upper</code> - upper bounds for each element of the input parameters array
+ (some elements may be set to <code>Double.POSITIVE_INFINITY</code> for
+ unbounded values)</dd><dd><code>offset</code> - base offset of the penalty function</dd><dd><code>scale</code> - scale of the penalty function</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/commons/math3/exception/DimensionMismatchException.html" title="class in org.apache.commons.math3.exception">DimensionMismatchException</a></code> - if lower bounds, upper bounds and
+ scales are not consistent, either according to dimension or to bounadary
+ values</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="value(double[])">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>value</h4>
+<pre>public&nbsp;double&nbsp;value(double[]&nbsp;point)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+<div class="block">Compute the underlying function value from an unbounded point.
+ <p>
+ This method simply returns the value of the underlying function
+ if the unbounded point already fulfills the bounds, and compute
+ a replacement value using the offset and scale if bounds are
+ violated, without calling the function at all.
+ </p></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html#value(double[])">value</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/commons/math3/analysis/MultivariateFunction.html" title="interface in org.apache.commons.math3.analysis">MultivariateFunction</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>point</code> - unbounded point</dd>
+<dt><span class="strong">Returns:</span></dt><dd>either underlying function value or penalty function value</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/MultivariateFunctionPenaltyAdapter.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/apache/commons/math3/optimization/direct/MultivariateFunctionMappingAdapter.html" title="class in org.apache.commons.math3.optimization.direct"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/apache/commons/math3/optimization/direct/NelderMeadSimplex.html" title="class in org.apache.commons.math3.optimization.direct"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/apache/commons/math3/optimization/direct/MultivariateFunctionPenaltyAdapter.html" target="_top">Frames</a></li>
+<li><a href="MultivariateFunctionPenaltyAdapter.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2003&#x2013;2014 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

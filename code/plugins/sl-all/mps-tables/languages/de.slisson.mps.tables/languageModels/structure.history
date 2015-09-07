@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="-1" />
+    </dependencies>
+    <rename id="bnk3.1397920687864864269" type="CONCEPT" from="IColumnHeader" to="IHeader" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="0" />
+    </dependencies>
+    <rename id="bnk3.1397920687864864270" type="CONCEPT" from="StaticColumnHeader" to="StaticHeader" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="1" />
+    </dependencies>
+    <rename id="bnk3.1397920687864997163" type="CONCEPT" from="Column" to="StaticColumn" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="2" />
+    </dependencies>
+    <rename id="bnk3.1397920687864997153" type="CONCEPT" from="Row" to="StaticRow" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="3" />
+    </dependencies>
+    <rename id="bnk3.1397920687865064415" type="CONCEPT" from="ChildColumns" to="ChildColumn" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="4" />
+    </dependencies>
+    <rename id="bnk3.1397920687864997197" type="CONCEPT" from="ChildsRows" to="ChildsRow" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="5" />
+    </dependencies>
+    <rename id="bnk3.1397920687866011705" type="CONCEPT" from="HeaderQueryParameter_Node" to="QueryParameter_Node" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="6" />
+    </dependencies>
+    <rename id="bnk3.1397920687865064415" type="CONCEPT" from="ChildColumn" to="ChildsColumn" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="7" />
+    </dependencies>
+    <rename id="bnk3.1397920687865064415" type="CONCEPT" from="ChildsColumn" to="ChildColumn" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="8" />
+    </dependencies>
+    <rename id="bnk3.1397920687865064415" type="CONCEPT" from="ChildColumn" to="ChildsColumn" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="9" />
+    </dependencies>
+    <rename id="bnk3.1397920687865064415" type="CONCEPT" from="ChildColumn" to="ChildsColumn" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="10" />
+    </dependencies>
+    <rename id="bnk3.1397920687865111420" type="CHILD" from="header" to="columnHeader" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="11" />
+    </dependencies>
+    <rename id="bnk3.1397920687865064415" type="CONCEPT" from="ChildsColumn" to="ChildsVertical" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="12" />
+    </dependencies>
+    <rename id="bnk3.1397920687864997197" type="CONCEPT" from="ChildsRow" to="ChildsHorizontal" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="13" />
+    </dependencies>
+    <rename id="bnk3.1397920687864997163" type="CONCEPT" from="StaticColumn" to="StaticVertical" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="14" />
+    </dependencies>
+    <rename id="bnk3.1397920687864997153" type="CONCEPT" from="StaticRow" to="StaticHorizontal" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="15" />
+    </dependencies>
+    <rename id="bnk3.1118639624532200049" type="CONCEPT" from="TableCellQueryCanCreate" to="CanCreate_Query" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="16" />
+    </dependencies>
+    <rename id="bnk3.3981577588227981882" type="CONCEPT" from="CellCreateExpression" to="CellCreateOperation" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="bnk3" modelUID="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" version="17" />
+    </dependencies>
+    <rename id="bnk3.3981577588228006907" type="CONCEPT" from="CellCreateExpressionInlineEditor" to="CellCreateOperationInlineEditor" />
+  </StructureModification>
+</history>
+

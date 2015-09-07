@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.math.demolang/de.itemis.mps.editor.math.demolang.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.math.java/de.itemis.mps.editor.math.java.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.math.notations/de.itemis.mps.editor.math.notations.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.math/de.itemis.mps.editor.math.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.editor.math.runtime/de.itemis.mps.editor.math.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.editor.math.sandbox/de.itemis.mps.editor.math.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.editor.math.symbols/de.itemis.mps.editor.math.symbols.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
