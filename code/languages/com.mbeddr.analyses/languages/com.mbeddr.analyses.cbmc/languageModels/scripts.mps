@@ -9,7 +9,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="q46j" ref="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" />
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
-    <import index="ec5l" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" implicit="true" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -262,7 +262,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="1Qze4b3hpUC" role="2OqNvi">
-                <ref role="37wK5l" to="ec5l:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
+                <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
                 <node concept="Xl_RD" id="1Qze4b3hpVk" role="37wK5m">
                   <property role="Xl_RC" value="useCbmc" />
                 </node>
@@ -278,7 +278,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="1Qze4b3hq6R" role="2OqNvi">
-                <ref role="37wK5l" to="ec5l:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
+                <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
                 <node concept="Xl_RD" id="1Qze4b3hq6S" role="37wK5m">
                   <property role="Xl_RC" value="hasSpecifiedTimeout" />
                 </node>
@@ -294,7 +294,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="1Qze4b3hqoL" role="2OqNvi">
-                <ref role="37wK5l" to="ec5l:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
+                <ref role="37wK5l" to="mhbf:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
                 <node concept="Xl_RD" id="1Qze4b3hqoM" role="37wK5m">
                   <property role="Xl_RC" value="showUnwindingDepthInfo" />
                 </node>
@@ -325,7 +325,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="7hNQJ9lMdVt" role="2OqNvi">
-                    <ref role="37wK5l" to="ec5l:~SNode.hasProperty(java.lang.String):boolean" resolve="hasProperty" />
+                    <ref role="37wK5l" to="mhbf:~SNode.hasProperty(java.lang.String):boolean" resolve="hasProperty" />
                     <node concept="Xl_RD" id="7hNQJ9lMdVu" role="37wK5m">
                       <property role="Xl_RC" value="useCbmc" />
                     </node>
@@ -338,7 +338,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="7hNQJ9lMiqR" role="2OqNvi">
-                    <ref role="37wK5l" to="ec5l:~SNode.hasProperty(java.lang.String):boolean" resolve="hasProperty" />
+                    <ref role="37wK5l" to="mhbf:~SNode.hasProperty(java.lang.String):boolean" resolve="hasProperty" />
                     <node concept="Xl_RD" id="7hNQJ9lMiqS" role="37wK5m">
                       <property role="Xl_RC" value="hasSpecifiedTimeout" />
                     </node>
@@ -352,7 +352,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="7hNQJ9lMjm8" role="2OqNvi">
-                  <ref role="37wK5l" to="ec5l:~SNode.hasProperty(java.lang.String):boolean" resolve="hasProperty" />
+                  <ref role="37wK5l" to="mhbf:~SNode.hasProperty(java.lang.String):boolean" resolve="hasProperty" />
                   <node concept="Xl_RD" id="7hNQJ9lMjm9" role="37wK5m">
                     <property role="Xl_RC" value="showUnwindingDepthInfo" />
                   </node>

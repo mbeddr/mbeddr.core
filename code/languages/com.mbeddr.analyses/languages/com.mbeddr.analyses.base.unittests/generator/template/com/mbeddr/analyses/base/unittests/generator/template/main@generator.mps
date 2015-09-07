@@ -7,10 +7,10 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
-    <import index="vsqj" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="1b9n" ref="r:95fb8574-9ce6-4567-a8e8-253c9bdeb164(com.mbeddr.analyses.base.unittests.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -196,19 +196,19 @@
                   <node concept="3cpWs3" id="29wNbl2ioQx" role="3uHU7B">
                     <node concept="2OqwBi" id="29wNbl2ioQz" role="3uHU7B">
                       <node concept="2YIFZM" id="1ZmYe$2Wv4H" role="2Oq$k0">
-                        <ref role="37wK5l" to="vsqj:~PathMacros.getInstance():jetbrains.mps.project.PathMacros" resolve="getInstance" />
-                        <ref role="1Pybhc" to="vsqj:~PathMacros" resolve="PathMacros" />
+                        <ref role="37wK5l" to="z1c3:~PathMacros.getInstance():jetbrains.mps.project.PathMacros" resolve="getInstance" />
+                        <ref role="1Pybhc" to="z1c3:~PathMacros" resolve="PathMacros" />
                       </node>
                       <node concept="liA8E" id="29wNbl2ioQ_" role="2OqNvi">
-                        <ref role="37wK5l" to="vsqj:~PathMacros.getValue(java.lang.String):java.lang.String" resolve="getValue" />
+                        <ref role="37wK5l" to="z1c3:~PathMacros.getValue(java.lang.String):java.lang.String" resolve="getValue" />
                         <node concept="Xl_RD" id="29wNbl2ioQA" role="37wK5m">
                           <property role="Xl_RC" value="mbeddr.github.core.home" />
                         </node>
                       </node>
                     </node>
                     <node concept="10M0yZ" id="3iRIfZ2n2df" role="3uHU7w">
-                      <ref role="1PxDUh" to="fxg7:~File" resolve="File" />
-                      <ref role="3cqZAo" to="fxg7:~File.separator" resolve="separator" />
+                      <ref role="1PxDUh" to="guwi:~File" resolve="File" />
+                      <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="3iRIfZ2n2dl" role="3uHU7w">
@@ -240,14 +240,14 @@
                   <node concept="3cpWsn" id="3iRIfZ2mvD3" role="3cpWs9">
                     <property role="TrG5h" value="br" />
                     <node concept="3uibUv" id="3iRIfZ2mvD4" role="1tU5fm">
-                      <ref role="3uigEE" to="fxg7:~BufferedReader" resolve="BufferedReader" />
+                      <ref role="3uigEE" to="guwi:~BufferedReader" resolve="BufferedReader" />
                     </node>
                     <node concept="2ShNRf" id="3iRIfZ2mvD6" role="33vP2m">
                       <node concept="1pGfFk" id="3iRIfZ2mvD8" role="2ShVmc">
-                        <ref role="37wK5l" to="fxg7:~BufferedReader.&lt;init&gt;(java.io.Reader)" resolve="BufferedReader" />
+                        <ref role="37wK5l" to="guwi:~BufferedReader.&lt;init&gt;(java.io.Reader)" resolve="BufferedReader" />
                         <node concept="2ShNRf" id="3iRIfZ2mvD9" role="37wK5m">
                           <node concept="1pGfFk" id="3iRIfZ2mvDb" role="2ShVmc">
-                            <ref role="37wK5l" to="fxg7:~FileReader.&lt;init&gt;(java.lang.String)" resolve="FileReader" />
+                            <ref role="37wK5l" to="guwi:~FileReader.&lt;init&gt;(java.lang.String)" resolve="FileReader" />
                             <node concept="3cpWsa" id="3iRIfZ2mvDc" role="37wK5m">
                               <ref role="3cqZAo" node="29wNbl2ioQv" resolve="pathToEnum" />
                             </node>
@@ -289,7 +289,7 @@
                             <ref role="3cqZAo" node="3iRIfZ2mvD3" resolve="br" />
                           </node>
                           <node concept="liA8E" id="3iRIfZ2mxE4" role="2OqNvi">
-                            <ref role="37wK5l" to="fxg7:~BufferedReader.readLine():java.lang.String" resolve="readLine" />
+                            <ref role="37wK5l" to="guwi:~BufferedReader.readLine():java.lang.String" resolve="readLine" />
                           </node>
                         </node>
                       </node>
@@ -377,7 +377,7 @@
                 <node concept="3cpWsn" id="3iRIfZ2mvDl" role="TDEfY">
                   <property role="TrG5h" value="e" />
                   <node concept="3uibUv" id="3iRIfZ2mvDq" role="1tU5fm">
-                    <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+                    <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
                   </node>
                 </node>
                 <node concept="3clFbS" id="3iRIfZ2mvDn" role="TDEfX">
@@ -389,7 +389,7 @@
                             <ref role="3cqZAo" node="3iRIfZ2mvDl" resolve="e" />
                           </node>
                           <node concept="liA8E" id="3iRIfZ2mxIW" role="2OqNvi">
-                            <ref role="37wK5l" to="e2lb:~Throwable.toString():java.lang.String" resolve="toString" />
+                            <ref role="37wK5l" to="wyt6:~Throwable.toString():java.lang.String" resolve="toString" />
                           </node>
                         </node>
                         <node concept="Xl_RD" id="3iRIfZ2mvDt" role="3uHU7B">

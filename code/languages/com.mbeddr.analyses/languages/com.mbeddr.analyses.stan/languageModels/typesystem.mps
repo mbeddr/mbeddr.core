@@ -9,13 +9,13 @@
   </languages>
   <imports>
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
-    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="nemf" ref="r:25031baa-17b8-457a-9a77-5e0160aafd16(com.mbeddr.analyses.z3.run)" />
-    <import index="y7no" ref="88063d90-aa0a-4f17-8757-92c0f1692f3d/f:java_stub#88063d90-aa0a-4f17-8757-92c0f1692f3d#com.microsoft.z3(com.mbeddr.analyses.z3.rt/com.microsoft.z3@java_stub)" />
+    <import index="f7eu" ref="88063d90-aa0a-4f17-8757-92c0f1692f3d/java:com.microsoft.z3(com.mbeddr.analyses.z3.rt/)" />
     <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -244,13 +244,13 @@
         <node concept="2OqwBi" id="4gj0JzqxLg" role="3clFbG">
           <node concept="2ShNRf" id="4gj0Jzqxi6" role="2Oq$k0">
             <node concept="1pGfFk" id="4gj0JzqxxH" role="2ShVmc">
-              <ref role="37wK5l" to="e2lb:~Thread.&lt;init&gt;(java.lang.Runnable)" resolve="Thread" />
+              <ref role="37wK5l" to="wyt6:~Thread.&lt;init&gt;(java.lang.Runnable)" resolve="Thread" />
               <node concept="2ShNRf" id="4gj0JzqxxY" role="37wK5m">
                 <node concept="YeOm9" id="4gj0JzqxHU" role="2ShVmc">
                   <node concept="1Y3b0j" id="4gj0JzqxHX" role="YeSDq">
                     <property role="2bfB8j" value="true" />
-                    <ref role="1Y3XeK" to="e2lb:~Runnable" resolve="Runnable" />
-                    <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+                    <ref role="1Y3XeK" to="wyt6:~Runnable" resolve="Runnable" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                     <node concept="3Tm1VV" id="4gj0JzqxHY" role="1B3o_S" />
                     <node concept="3clFb_" id="4gj0JzqxHZ" role="jymVt">
                       <property role="1EzhhJ" value="false" />
@@ -283,7 +283,7 @@
             </node>
           </node>
           <node concept="liA8E" id="4gj0Jzqy3n" role="2OqNvi">
-            <ref role="37wK5l" to="e2lb:~Thread.start():void" resolve="start" />
+            <ref role="37wK5l" to="wyt6:~Thread.start():void" resolve="start" />
           </node>
         </node>
       </node>
