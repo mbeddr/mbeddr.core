@@ -121,9 +121,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
@@ -207,7 +210,9 @@
                     <ref role="3cqZAo" node="1b4F2fn_Ygp" resolve="model" />
                   </node>
                   <node concept="2SmgA7" id="1b4F2fn_YZK" role="2OqNvi">
-                    <ref role="2SmgA8" to="hba4:XaN6GmuUM" resolve="FilterOperation" />
+                    <node concept="chp4Y" id="3VRd66s0_16" role="1dBWTz">
+                      <ref role="cht4Q" to="hba4:XaN6GmuUM" resolve="FilterOperation" />
+                    </node>
                   </node>
                 </node>
                 <node concept="2es0OD" id="1b4F2fnA68V" role="2OqNvi">
