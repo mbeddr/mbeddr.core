@@ -38,7 +38,6 @@
     <import index="3s16" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.workbench(MPS.Platform/)" />
     <import index="kz9k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.navigation(MPS.Editor/)" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -4527,35 +4526,6 @@
                         <node concept="2jxLKc" id="6Dkeomkshq_" role="1tU5fm" />
                       </node>
                     </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4q1XnPG245d" role="3cqZAp">
-          <node concept="2OqwBi" id="4q1XnPG245a" role="3clFbG">
-            <node concept="10M0yZ" id="4q1XnPG245b" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="4q1XnPG245c" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="4q1XnPG251M" role="37wK5m">
-                <node concept="37vLTw" id="4q1XnPG25hz" role="3uHU7w">
-                  <ref role="3cqZAo" node="6Dkeomkshqk" resolve="result" />
-                </node>
-                <node concept="3cpWs3" id="4q1XnPG24n3" role="3uHU7B">
-                  <node concept="3cpWs3" id="4q1XnPG24xL" role="3uHU7B">
-                    <node concept="Xl_RD" id="4q1XnPG24_E" role="3uHU7B">
-                      <property role="Xl_RC" value="possible types " />
-                    </node>
-                    <node concept="1rXfSq" id="4q1XnPG24kn" role="3uHU7w">
-                      <ref role="37wK5l" node="4_hSy2Us$Sd" resolve="getDescriptorId" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="4q1XnPG24pT" role="3uHU7w">
-                    <property role="Xl_RC" value=": " />
                   </node>
                 </node>
               </node>
